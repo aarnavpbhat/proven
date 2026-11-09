@@ -129,7 +129,7 @@ main { padding: var(--sp-3) var(--sp-4) var(--sp-5); }
 .toolbar-title { font-size: var(--fs-lg); align-self: center; margin-right: var(--sp-3); }
 .field { display: flex; flex-direction: column; gap: 2px; }
 .field-label { font-size: var(--fs-xs); color: var(--text-3); }
-select, input[type="number"], textarea {
+select, input[type="number"], input[type="text"], textarea {
   font: inherit; font-size: var(--fs-sm); color: var(--text);
   background: var(--surface); border: var(--border-w) solid var(--border-strong);
   border-radius: var(--radius); padding: 5px var(--sp-2);
@@ -263,6 +263,18 @@ table.data .nowrap { white-space: nowrap; }
 .resolve { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr) auto; gap: var(--sp-2); align-items: start; }
 .resolve textarea { min-height: 34px; height: 34px; resize: vertical; width: 100%; }
 .resolve select { min-width: 0; width: 100%; }
+.teach { grid-column: 1 / -1; display: grid; gap: var(--sp-2); margin: 0; padding: var(--sp-2) var(--sp-3); border: var(--border-w) solid var(--border); border-radius: var(--radius); background: var(--surface-2); }
+.teach[hidden] { display: none; }
+.teach legend { padding: 0 var(--sp-1); font-size: var(--fs-xs); font-weight: var(--fw-bold); color: var(--text-2); }
+.teach input[type="text"] { width: 100%; }
+.check { font-size: var(--fs-xs); color: var(--text-2); display: flex; gap: var(--sp-2); align-items: flex-start; }
+.learned-terms { color: var(--accent); }
+.notice { margin: 0 0 var(--sp-3); padding: var(--sp-2) var(--sp-3); border: var(--border-w) solid var(--accent); background: var(--mark); border-radius: var(--radius); font-size: var(--fs-sm); }
+.notice[hidden] { display: none; }
+.lesson { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--sp-3); padding: var(--sp-2) 0; border-top: var(--border-w) solid var(--border); }
+.lesson:first-child { border-top: 0; }
+.lesson p { margin: 0; overflow-wrap: anywhere; }
+.lesson-rule { font-size: var(--fs-sm); }
 .resolve-status { font-size: var(--fs-xs); color: var(--text-3); grid-column: 1 / -1; }
 .resolve-status.ok { color: var(--pass); }
 .resolve-status.err { color: var(--fail); }

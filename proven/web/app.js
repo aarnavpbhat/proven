@@ -69,10 +69,16 @@
  *   ground_truth: {family: string, requirement: string, labels: GroundLabel[]}|null}} Scenario
  */
 /** @typedef {{id: string, label: string, help: string, reduces_review: boolean}} Action */
+/**
+ * @typedef {{id: string, created_at: string, triggers: string[], terms: string[],
+ *   provenance: {run_id: string, claim_id: string, quote: string, action: string, note: string}}} Lesson
+ */
+/** @typedef {{ok: boolean, lesson?: Lesson, verdict_before?: Verdict, verdict_after?: Verdict}} Recorded */
 /** @typedef {{id: string, label: string, available: boolean, reason: string}} ExtractorInfo */
 /**
  * @typedef {{version: string, network: {allowed: boolean, guard_installed: boolean},
- *   extractors: ExtractorInfo[], policy: Record<string, number>, actions: Action[]}} Config
+ *   extractors: ExtractorInfo[], policy: Record<string, number>, actions: Action[],
+ *   learned: {active: number}}} Config
  */
 /**
  * @typedef {{family: string, kind: string, requirement: string, expected_codes: string[], n: number,
@@ -154,7 +160,7 @@ function monthLabel(period) {
 const rate = (value) => `${(value * 100).toFixed(1)}%`;
 
 const STRENGTH = { full: "the whole movement", majority: "most of the movement", partial: "part of the movement" };
-const ORIGIN = { quote: "written", lexicon: "lexicon", model: "model" };
+const ORIGIN = { quote: "written", lexicon: "lexicon", learned: "learned", model: "model" };
 /** @type {Record<string, string>} */
 const OUTCOME_CLASS = {
   agree: "good", supported: "good", clear: "good",
@@ -199,6 +205,8 @@ const state = {
   /** @type {string | null} */ active: null,
   /** @type {Record<string, number>} */ openedAt: {},
   /** @type {Record<string, string>} */ resolved: {},
+  /** @type {Lesson[]} */ lessons: [],
+  /** @type {string | null} */ lessonNotice: null,
   /** @type {Record<string, Benchmark>} */ bench: {},
   /** @type {"seen" | "heldout"} */ benchPhrasing: "seen",
 };
@@ -224,6 +232,9 @@ const el = {
   coverage: byId("coverage"),
   claims: byId("claims"),
   unextracted: byId("unextracted"),
+  lessonNotice: byId("lesson-notice"),
+  lessons: byId("lessons"),
+  lessonCount: byId("lesson-count"),
   benchForm: /** @type {HTMLFormElement} */ (byId("bench-form")),
   benchSplit: /** @type {HTMLSelectElement} */ (byId("bench-split")),
   benchN: /** @type {HTMLInputElement} */ (byId("bench-n")),
@@ -245,6 +256,7 @@ async function loadScenario(/** @type {string} */ id) {
   /** @type {Scenario} */
   const scenario = await api(`/api/scenario?id=${encodeURIComponent(id)}`);
   state.scenario = scenario;
+  state.lessonNotice = null;
   state.upload = null;
   state.resolved = {};
   el.editor.value = scenario.explanation;
@@ -262,8 +274,9 @@ async function loadScenario(/** @type {string} */ id) {
   await verify();
 }
 
+/** @returns {Promise<boolean>} whether a new report is on screen */
 async function verify() {
-  if (!state.scenario) return;
+  if (!state.scenario) return false;
   const body = {
     explanation: el.editor.value,
     extractor: el.extractor.value,
@@ -282,8 +295,10 @@ async function verify() {
     setEditing(false);
     showError(null);
     render(performance.now() - started);
+    return true;
   } catch (error) {
     showError(error instanceof Error ? error.message : String(error));
+    return false;
   } finally {
     el.verify.disabled = false;
     el.verify.textContent = "Verify";
@@ -318,6 +333,8 @@ function render(elapsed) {
   renderCoverage(report.coverage);
   renderClaims(report);
   renderUnextracted(report);
+  el.lessonNotice.hidden = !state.lessonNotice;
+  el.lessonNotice.textContent = state.lessonNotice || "";
 }
 
 /** @param {VerifyReport} report */
@@ -464,9 +481,10 @@ function reconstruction(result, report) {
     /** @type {Record<string, string[]>} */
     const groups = {};
     for (const term of claim.terms) (groups[term.origin] = groups[term.origin] || []).push(term.text);
-    row("Searched", Object.keys(groups).length
-      ? Object.entries(groups).map(([origin, words]) => `${words.join(", ")} (${ORIGIN[/** @type {keyof typeof ORIGIN} */ (origin)] || origin})`).join("; ")
-      : "no searchable words");
+    row("Searched", ...(Object.keys(groups).length
+      ? Object.entries(groups).map(([origin, words]) => h("span", { class: origin === "learned" ? "learned-terms" : null },
+        `${words.join(", ")} (${ORIGIN[/** @type {keyof typeof ORIGIN} */ (origin)] || origin})`)).flatMap((node, i) => (i ? ["; ", node] : [node]))
+      : ["no searchable words"]));
     const driver = recon.driver;
     if (driver && recon.change) {
       row("Matched", h("span", { class: "mono" },
@@ -541,32 +559,65 @@ function notesSection(result) {
     h("ul", { class: "unextracted-list" }, ...notes.map((n) => h("li", {}, n))));
 }
 
+/** @param {string} text @returns {string[]} */
+const splitWords = (text) => text.split(/[,;\n]/).map((w) => w.trim()).filter(Boolean);
+
 /** @param {ClaimResult} result @param {VerifyReport} report */
 function resolveSection(result, report) {
   if (result.verdict === "PASS" || !state.config) return null;
   const id = result.claim.claim_id;
+  const claim = result.claim;
   const select = /** @type {HTMLSelectElement} */ (h("select", { "aria-label": "Resolution" },
     ...state.config.actions.map((a) => h("option", { value: a.id, title: a.help }, a.label))));
   const note = /** @type {HTMLTextAreaElement} */ (h("textarea", { "aria-label": "Reason for the resolution", placeholder: "Why? (required)", rows: 1 }));
   const status = h("p", { class: "resolve-status", "aria-live": "polite" }, state.resolved[id] ? `Recorded: ${state.resolved[id]}` : (state.config.actions[0].help));
+
+  // "Teach Proven": only for the actions that teach, and only when there is a stated reason to learn from.
+  const trigger = /** @type {HTMLInputElement} */ (h("input", { type: "text", "aria-label": "When the stated reason contains", value: claim.driver || "" }));
+  const words = /** @type {HTMLInputElement} */ (h("input", {
+    type: "text", "aria-label": "Ledger words it corresponds to", placeholder: "e.g. flights, hotel",
+    value: claim.terms.filter((t) => t.origin === "model").map((t) => t.text).join(", "),
+  }));
+  const confirm = /** @type {HTMLInputElement} */ (h("input", { type: "checkbox", id: `confirm-${id}` }));
+  const teach = h("fieldset", { class: "teach", hidden: true },
+    h("legend", {}, "Teach Proven"),
+    h("label", { class: "field" }, h("span", { class: "field-label" }, "When the stated reason says"), trigger),
+    h("label", { class: "field" }, h("span", { class: "field-label" }, "search the ledger for (comma separated; pick words from the transaction memos above)"), words),
+    h("label", { class: "check" }, confirm, " If this turns the claim into a PASS: I checked that the matched transactions really are this cause."),
+    h("p", { class: "hint" }, "Leave the words empty to record the decision without teaching. A lesson applies to every close until you remove it from the Learned list."));
+  /** @param {string} actionId */
+  const teaches = (actionId) => Boolean(claim.driver) && Boolean(state.config?.actions.find((a) => a.id === actionId)?.reduces_review);
   select.addEventListener("change", () => {
     const action = state.config?.actions.find((a) => a.id === select.value);
     status.className = "resolve-status";
     status.textContent = action ? action.help : "";
+    teach.hidden = !teaches(select.value);
   });
   const button = /** @type {HTMLButtonElement} */ (h("button", { type: "submit", class: "button" }, "Record"));
-  const form = h("form", { class: "resolve" }, select, note, button, status);
+  const form = h("form", { class: "resolve" }, select, note, button, teach, status);
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     button.disabled = true;
     try {
       const opened = state.openedAt[id];
-      await api("/api/resolutions", {
-        run_id: report.run.run_id, claim_id: id, quote: result.claim.quote, verdict: result.verdict,
+      const lesson = teaches(select.value) && splitWords(words.value).length
+        ? { triggers: splitWords(trigger.value), terms: splitWords(words.value), confirm_pass: confirm.checked }
+        : undefined;
+      /** @type {Recorded} */
+      const saved = await api("/api/resolutions", {
+        run_id: report.run.run_id, claim_id: id, quote: claim.quote, verdict: result.verdict,
         action: select.value, note: note.value,
         seconds_on_claim: opened ? Math.round((Date.now() - opened) / 1000) : null,
+        ...(lesson ? {
+          learn: lesson, explanation: report.explanation, extractor: "rules",
+          ...(state.upload ? { ledger_csv: state.upload.text, entity: state.upload.name } : { scenario_id: state.scenario?.id }),
+        } : {}),
       });
       const label = select.options[select.selectedIndex].text;
+      if (saved.lesson) {
+        await afterLesson(claim.quote, label, saved);
+        return;
+      }
       state.resolved[id] = label;
       status.className = "resolve-status ok";
       status.textContent = `Recorded: ${label}, appended to the resolutions log.`;
@@ -578,6 +629,64 @@ function resolveSection(result, report) {
     }
   });
   return h("section", { class: "claim-section" }, h("h3", {}, "Resolve"), form);
+}
+
+/**
+ * Re-run Verify so the reviewer sees what the lesson did to this claim.
+ * @param {string} quote @param {string} label @param {Recorded} saved
+ */
+async function afterLesson(quote, label, saved) {
+  await refreshLessons();
+  const text = `Taught Proven (${label}): “${saved.lesson?.triggers.join(" / ")}” → ${saved.lesson?.terms.join(", ")}. ` +
+    `This claim: ${saved.verdict_before} → ${saved.verdict_after}.`;
+  state.lessonNotice = text;
+  if (!(await verify()) || !state.report) return;
+  const now = state.report.claims.find((c) => c.claim.quote === quote);
+  if (now) {
+    state.active = now.claim.claim_id;
+    if (now.verdict === "PASS") state.filter = "all";
+    state.resolved[now.claim.claim_id] = label;
+    renderAnnotated(state.report);
+    renderLedger(state.report);
+    renderClaims(state.report);
+  }
+  document.getElementById(`claim-${state.active}`)?.scrollIntoView({ block: "nearest" });
+}
+
+// ── learned lexicon ──────────────────────────────────────────────────────
+
+async function refreshLessons() {
+  const data = /** @type {{entries: Lesson[]}} */ (await api("/api/lexicon"));
+  state.lessons = data.entries;
+  renderLessons();
+}
+
+function renderLessons() {
+  el.lessonCount.textContent = state.lessons.length ? String(state.lessons.length) : "";
+  if (!state.lessons.length) {
+    replace(el.lessons, h("p", { class: "hint" }, "Nothing taught yet. Choose Wrong evidence, Misread sentence or Accept convention on a claim and give Proven the ledger words for its reason."));
+    return;
+  }
+  replace(el.lessons, ...state.lessons.map((lesson) => h("div", { class: "lesson" },
+    h("div", {},
+      h("p", { class: "lesson-rule" }, `“${lesson.triggers.join("” or “")}” → ${lesson.terms.join(", ")}`),
+      h("p", { class: "hint" }, `${lesson.created_at.replace("T", " ").replace(/\+.*$/, "")} UTC · from “${lesson.provenance.quote}” · ${lesson.provenance.note}`)),
+    h("button", {
+      type: "button", class: "button small", "aria-label": `Remove lesson ${lesson.terms.join(", ")}`,
+      onclick: () => removeLesson(lesson.id),
+    }, "Remove"))));
+}
+
+/** @param {string} id */
+async function removeLesson(id) {
+  try {
+    await api("/api/lexicon/remove", { id });
+    await refreshLessons();
+    state.lessonNotice = "Lesson removed. Claims re-checked without it.";
+    await verify();
+  } catch (error) {
+    showError(error instanceof Error ? error.message : String(error));
+  }
 }
 
 /** @param {VerifyReport} report */
@@ -695,7 +804,7 @@ function showView(view) {
 }
 
 function wire() {
-  el.toolbar.addEventListener("submit", (e) => { e.preventDefault(); verify(); });
+  el.toolbar.addEventListener("submit", (e) => { e.preventDefault(); state.lessonNotice = null; verify(); });
   el.scenario.addEventListener("change", () => loadScenario(el.scenario.value).catch((e) => showError(String(e.message || e))));
   el.edit.addEventListener("click", () => setEditing(!state.editing));
   el.editor.addEventListener("keydown", (e) => { if ((e.metaKey || e.ctrlKey) && e.key === "Enter") verify(); });
@@ -741,6 +850,7 @@ async function init() {
       h("optgroup", { label: "Showcase" }, ...list.scenarios.filter((s) => s.kind === "showcase").map((s) => h("option", { value: s.id }, s.title))),
       h("optgroup", { label: "Synthetic, held-out split" }, ...list.scenarios.filter((s) => s.kind !== "showcase").map((s) => h("option", { value: s.id }, `${s.title} (${s.id})`))));
     renderBenchmark();
+    await refreshLessons();
     await loadScenario(list.scenarios[0].id);
   } catch (error) {
     showError(error instanceof Error ? error.message : String(error));
