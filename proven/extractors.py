@@ -11,7 +11,7 @@ from proven.budget import Budget
 from proven.cache import CachedExtractor
 from proven.extract import RuleExtractor
 
-NAMES = ("rules", "claude")
+NAMES = ("rules", "claude", "openweight")
 
 
 def build(name: str = "rules", *, model: str | None = None, budget: Budget | None = None,
@@ -24,6 +24,9 @@ def build(name: str = "rules", *, model: str | None = None, budget: Budget | Non
         from proven.llm import MODEL, ClaudeExtractor
         inner = ClaudeExtractor(model=model or os.environ.get("PROVEN_CLAUDE_MODEL") or MODEL,
                                 budget=budget or Budget())
+    elif name == "openweight":
+        from proven.openweight import OpenWeightExtractor
+        inner = OpenWeightExtractor(model=model, budget=budget or Budget())
     else:
         raise ValueError(f"unknown extractor {name!r}; choose from {', '.join(NAMES)}")
     return CachedExtractor(inner, cache_dir) if cache_dir else inner
