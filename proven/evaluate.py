@@ -30,11 +30,14 @@ correct flag.
 from __future__ import annotations
 
 from collections import defaultdict
+from collections.abc import Callable
 from dataclasses import dataclass
 
 from proven import __version__
-from proven.report import run
-from proven.synth import FAMILIES, FAMILY_BY_NAME, Label, generate_split
+from proven.claims import ClaimProposal
+from proven.ledger import Ledger
+from proven.report import Extractor, run
+from proven.synth import FAMILIES, FAMILY_BY_NAME, Label, Scenario, generate_split
 from proven.verify import Policy
 
 UNSAFE_PASS = -1.0
@@ -99,15 +102,44 @@ def score_claim(label: Label, result: dict | None) -> dict:
             "reward": reward(verdict, cited, label)}
 
 
+class OracleExtractor:
+    """Returns the generator's gold proposals: the ceiling a perfect model extractor reaches.
+
+    Its search terms are admitted with origin "model", exactly as a real model's would be,
+    so the guard treats it like any other model. It never sees the ledger."""
+
+    name = "oracle"
+    version = "0.1"
+
+    def __init__(self, scenario: Scenario):
+        self.scenario = scenario
+
+    def propose(self, text: str, ledger: Ledger) -> list[ClaimProposal]:
+        return [proposal_from_gold(label.gold) for label in self.scenario.labels]
+
+
+def proposal_from_gold(gold: dict) -> ClaimProposal:
+    """A gold object (the JSON schema in llm.py) as the ClaimProposal llm.py would build."""
+    return ClaimProposal(
+        quote=gold["quote"], account=gold["account"] or None,
+        change_text=gold["change_text"] or None, percent_text=gold["percent_text"] or None,
+        prior_text=gold["prior_text"] or None, current_text=gold["current_text"] or None,
+        driver_text=gold["reason_text"] or None,
+        driver_terms=tuple(gold["search_terms"]), direction=gold["direction"] or None,
+        extractor="oracle")
+
+
 def evaluate(split: str = "test", n: int = 220, policy: Policy | None = None,
-             phrasing: str = "seen") -> dict:
+             phrasing: str = "seen",
+             extractor_for: Callable[[Scenario], Extractor] | None = None) -> dict:
     scenarios = generate_split(split, n, phrasing)
     tallies: dict[str, _Tally] = defaultdict(_Tally)
     failures: list[dict] = []
     claims = decided = 0
 
     for scenario in scenarios:
-        report = run(scenario.explanation, scenario.ledger, policy=policy)
+        report = run(scenario.explanation, scenario.ledger, policy=policy,
+                      extractor=extractor_for(scenario) if extractor_for else None)
         by_quote = {c["claim"]["quote"]: c for c in report["claims"]}
         for label in scenario.labels:
             result = by_quote.get(label.quote)

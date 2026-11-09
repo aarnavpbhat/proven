@@ -141,8 +141,8 @@ class App:
     def benchmark(self, body: dict) -> dict:
         split = body.get("split", "test")
         phrasing = body.get("phrasing", "seen")
-        if split not in ("test", "train") or phrasing not in ("seen", "heldout"):
-            raise BadRequest("split must be test|train and phrasing seen|heldout")
+        if split not in ("test", "train") or phrasing not in ("seen", "heldout", "paraphrase"):
+            raise BadRequest("split must be test|train and phrasing seen|heldout|paraphrase")
         n = int(body.get("n", 220))
         if not 1 <= n <= 2000:
             raise BadRequest("n must be between 1 and 2000")
