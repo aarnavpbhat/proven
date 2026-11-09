@@ -132,6 +132,8 @@ def main(argv: list[str] | None = None) -> int:
         elif args.extractor != "rules":
             if args.allow_network:
                 netguard.allow_network()
+            else:
+                netguard.install()      # loopback model servers still work; anything else is refused
             extractor = build(args.extractor, model=args.model, budget=Budget(args.token_budget, args.usd_budget),
                               cache_dir=None if args.no_cache else ".proven/cache")
         try:
