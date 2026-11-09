@@ -33,9 +33,15 @@
           <span class="field-label">Extractor</span>
           <select id="extractor"></select>
         </label>
+        <label class="field" id="model-field" hidden>
+          <span class="field-label">Model</span>
+          <input type="text" id="model" list="model-list" autocomplete="off" spellcheck="false">
+          <datalist id="model-list"></datalist>
+        </label>
         <button type="submit" class="button primary" id="verify">Verify</button>
         <span class="run-meta" id="run-meta"></span>
       </form>
+      <p class="hint" id="extractor-note"></p>
 
       <div class="layout">
         <div class="col">
@@ -76,6 +82,12 @@
             <dl class="stats" id="coverage"></dl>
           </section>
 
+          <section class="panel" id="answer-key-panel" aria-labelledby="key-heading" hidden>
+            <div class="panel-head"><h2 id="key-heading">Answer key</h2></div>
+            <p class="hint" id="answer-key-summary"></p>
+            <ol class="key-list" id="answer-key"></ol>
+          </section>
+
           <section class="panel" aria-labelledby="claims-heading">
             <div class="panel-head">
               <h2 id="claims-heading">Claims</h2>
@@ -110,13 +122,17 @@
           <span class="field-label">Closes</span>
           <input id="bench-n" type="number" min="11" max="2000" step="11" value="440">
         </label>
-        <button type="submit" class="button primary" id="bench-run">Run both phrasings</button>
+        <label class="field">
+          <span class="field-label">Extractor</span>
+          <select id="bench-extractor"><option value="rules">Rules</option></select>
+        </label>
+        <button type="submit" class="button primary" id="bench-run">Run all phrasings</button>
         <span class="run-meta" id="bench-meta"></span>
       </form>
       <div class="layout single">
         <section class="panel">
           <div class="panel-head"><h2>Summary</h2></div>
-          <p class="hint">Each close is generated with a known cause and, for defect families, exactly one injected error. <strong>Seen</strong> phrasing uses wording the lexicon covers; <strong>held-out</strong> phrasing describes the same causes in words it has never seen. The generator, lexicon and checker share an author, so these numbers are a consistency check, not evidence of accuracy on real commentary.</p>
+          <p class="hint">Each close is generated with a known cause and, for defect families, exactly one injected error. <strong>Seen</strong> phrasing uses wording the lexicon covers; <strong>held-out</strong> phrasing describes the same causes in words it has never seen; <strong>paraphrase</strong> rewrites the sentences themselves. The <strong>oracle</strong> extractor hands the checker the generator's own claims, so it shows the ceiling a perfect extractor would reach. Only offline extractors run here; benchmarking a model extractor is a command-line job (<code>python -m proven benchmark --extractor …</code>) so nothing in this tab can spend money. The generator, lexicon and checker share an author, so these numbers are a consistency check, not evidence of accuracy on real commentary.</p>
           <div class="table-wrap"><table class="data" id="bench-summary"></table></div>
         </section>
         <section class="panel">
@@ -125,6 +141,7 @@
             <div class="segmented" role="group" aria-label="Phrasing">
               <button type="button" class="seg" data-phrasing="seen" aria-pressed="true">Seen</button>
               <button type="button" class="seg" data-phrasing="heldout" aria-pressed="false">Held-out</button>
+              <button type="button" class="seg" data-phrasing="paraphrase" aria-pressed="false">Paraphrase</button>
             </div>
           </div>
           <div class="table-wrap"><table class="data" id="bench-families"></table></div>

@@ -68,7 +68,8 @@ class Harness:
         response = conn.getresponse()
         raw = response.read()
         conn.close()
-        return response.status, json.loads(raw)
+        ctype = response.getheader("Content-Type", "")
+        return response.status, (json.loads(raw) if "json" in ctype else raw.decode())
 
     def close(self):
         self.server.shutdown()

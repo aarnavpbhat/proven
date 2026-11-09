@@ -57,7 +57,8 @@
 /**
  * @typedef {{run: RunInfo, explanation: string, ledger: LedgerSummary, coverage: Coverage,
  *   claims: ClaimResult[], unextracted: {start: number, end: number, text: string}[],
- *   rejected: {quote: string, reason: string, extractor: string}[], transactions: Record<string, Txn>}} VerifyReport
+ *   rejected: {quote: string, reason: string, extractor: string}[], transactions: Record<string, Txn>,
+ *   usage?: Usage, answer_key?: KeyRow[]}} VerifyReport
  */
 /** @typedef {{id: string, kind: string, title: string, family?: string}} ScenarioRef */
 /**
@@ -66,7 +67,8 @@
  */
 /**
  * @typedef {{id: string, title: string, explanation: string,
- *   ground_truth: {family: string, requirement: string, labels: GroundLabel[]}|null}} Scenario
+ *   ground_truth: {family: string, requirement: string, labels: GroundLabel[]}|null,
+ *   answer_key?: KeyRow[]}} Scenario
  */
 /** @typedef {{id: string, label: string, help: string, reduces_review: boolean}} Action */
 /**
@@ -74,11 +76,23 @@
  *   provenance: {run_id: string, claim_id: string, quote: string, action: string, note: string}}} Lesson
  */
 /** @typedef {{ok: boolean, lesson?: Lesson, verdict_before?: Verdict, verdict_after?: Verdict}} Recorded */
-/** @typedef {{id: string, label: string, available: boolean, reason: string}} ExtractorInfo */
+/**
+ * @typedef {{id: string, label: string, available: boolean, reason: string, uses_model: boolean,
+ *   default_model: string, models: string[]}} ExtractorInfo
+ */
+/**
+ * @typedef {{extractor: string, model: string, calls: number, input_tokens: number, output_tokens: number,
+ *   tokens: number, max_tokens: number, usd: number, max_usd: number|null,
+ *   cache: {hits: number, misses: number}}} Usage
+ */
+/**
+ * @typedef {{quote: string, requirement: string, defective: boolean, why: string, culprits: string[],
+ *   defect: string|null, verdict: string, met: boolean, claim_id: string|null}} KeyRow
+ */
 /**
  * @typedef {{version: string, network: {allowed: boolean, guard_installed: boolean},
  *   extractors: ExtractorInfo[], policy: Record<string, number>, actions: Action[],
- *   learned: {active: number}}} Config
+ *   benchmark_extractors: string[], learned: {active: number}}} Config
  */
 /**
  * @typedef {{family: string, kind: string, requirement: string, expected_codes: string[], n: number,
@@ -86,7 +100,7 @@
  *   evidence_precision: number|null, verdicts: Record<string, number>, mean_reward: number}} FamilyRow
  */
 /**
- * @typedef {{split: string, phrasing: string, scenarios: number, claims: number, families: FamilyRow[],
+ * @typedef {{extractor: string, split: string, phrasing: string, scenarios: number, claims: number, families: FamilyRow[],
  *   controls: {n: number, passed: number, false_alarms: number, fails: number},
  *   defects: {n: number, caught: number, flagged: number, unsafe_passes: number, missed: number},
  *   coverage: {claims: number, decided: number, decided_share: number}, mean_reward: number}} Benchmark
@@ -207,8 +221,10 @@ const state = {
   /** @type {Record<string, string>} */ resolved: {},
   /** @type {Lesson[]} */ lessons: [],
   /** @type {string | null} */ lessonNotice: null,
-  /** @type {Record<string, Benchmark>} */ bench: {},
-  /** @type {"seen" | "heldout"} */ benchPhrasing: "seen",
+  /** @type {Record<string, Benchmark>} */ bench: {},     // keyed "extractor:phrasing"
+  /** @type {"seen" | "heldout" | "paraphrase"} */ benchPhrasing: "seen",
+  benchExtractor: "rules",
+  /** @type {Record<string, string>} */ models: {},        // the model typed for each extractor
 };
 
 const el = {
@@ -217,6 +233,14 @@ const el = {
   toolbar: /** @type {HTMLFormElement} */ (byId("toolbar")),
   scenario: /** @type {HTMLSelectElement} */ (byId("scenario")),
   extractor: /** @type {HTMLSelectElement} */ (byId("extractor")),
+  modelField: byId("model-field"),
+  model: /** @type {HTMLInputElement} */ (byId("model")),
+  modelList: byId("model-list"),
+  extractorNote: byId("extractor-note"),
+  keyPanel: byId("answer-key-panel"),
+  keySummary: byId("answer-key-summary"),
+  keyList: byId("answer-key"),
+  benchExtractor: /** @type {HTMLSelectElement} */ (byId("bench-extractor")),
   verify: /** @type {HTMLButtonElement} */ (byId("verify")),
   runMeta: byId("run-meta"),
   annotated: byId("annotated"),
@@ -263,7 +287,11 @@ async function loadScenario(/** @type {string} */ id) {
   el.download.href = `/api/ledger.csv?id=${encodeURIComponent(id)}`;
   el.download.setAttribute("download", `${id}-ledger.csv`);
   const truth = scenario.ground_truth;
-  el.groundTruth.hidden = !truth;
+  el.groundTruth.hidden = !truth && !scenario.answer_key;
+  if (!truth && scenario.answer_key) {
+    replace(el.groundTruth, h("strong", {}, "Hand-written example: "),
+      "the answer key was written from the ledger before Proven was run on it; see the Answer key panel.");
+  }
   if (truth) {
     const target = truth.labels[0];
     replace(el.groundTruth, h("strong", {}, "Ground truth (synthetic): "),
@@ -280,6 +308,7 @@ async function verify() {
   const body = {
     explanation: el.editor.value,
     extractor: el.extractor.value,
+    ...(selectedExtractor()?.uses_model && el.model.value.trim() ? { model: el.model.value.trim() } : {}),
     ...(state.upload ? { ledger_csv: state.upload.text, entity: state.upload.name } : { scenario_id: state.scenario.id }),
   };
   el.verify.disabled = true;
@@ -328,6 +357,8 @@ function render(elapsed) {
     sent.length
       ? ` · sent ${sent.reduce((n, t) => n + t.bytes, 0).toLocaleString()} bytes to ${sent[0].provider} (${sent[0].sent.join(", ")}; no transactions)`
       : " · nothing left this machine");
+  if (report.usage) el.runMeta.append(h("br"), h("span", { class: "usage" }, usageText(report.usage)));
+  renderAnswerKey(report);
   renderAnnotated(report);
   renderLedger(report);
   renderCoverage(report.coverage);
@@ -335,6 +366,62 @@ function render(elapsed) {
   renderUnextracted(report);
   el.lessonNotice.hidden = !state.lessonNotice;
   el.lessonNotice.textContent = state.lessonNotice || "";
+}
+
+/** @param {Usage} usage */
+function usageText(usage) {
+  const cache = `cache ${usage.cache.hits} hit${usage.cache.hits === 1 ? "" : "s"} / ${usage.cache.misses} miss${usage.cache.misses === 1 ? "" : "es"}`;
+  const what = `${usage.extractor}${usage.model ? ` ${usage.model}` : ""}`;
+  if (!usage.calls) return `${what}: answered from the proposal cache, no request made, 0 tokens · ${cache}`;
+  const budget = `${usage.tokens.toLocaleString()} of ${usage.max_tokens.toLocaleString()} token budget`;
+  return `${what}: ${usage.calls} request${usage.calls === 1 ? "" : "s"}, ${usage.input_tokens.toLocaleString()} in + ` +
+    `${usage.output_tokens.toLocaleString()} out tokens (${budget}) · $${usage.usd.toFixed(4)}` +
+    `${usage.max_usd === null ? "" : ` of $${usage.max_usd.toFixed(2)}`} · ${cache}`;
+}
+
+/** @returns {ExtractorInfo | undefined} */
+function selectedExtractor() {
+  return state.config?.extractors.find((x) => x.id === el.extractor.value);
+}
+
+/** Show the model field for a model extractor, and say why any extractor is unavailable. */
+function updateExtractorUi() {
+  const config = state.config;
+  if (!config) return;
+  const chosen = selectedExtractor();
+  el.modelField.hidden = !chosen?.uses_model;
+  if (chosen?.uses_model) {
+    el.model.value = state.models[chosen.id] ?? chosen.default_model;
+    replace(el.modelList, ...chosen.models.map((m) => h("option", { value: m })));
+    el.model.placeholder = chosen.default_model || "model id";
+  }
+  const unavailable = config.extractors.filter((x) => !x.available);
+  const sends = chosen?.available && chosen.uses_model
+    ? `${chosen.id === "claude" ? "Claude" : "The model server"} receives the explanation text and chart of accounts only, never transactions.`
+    : "";
+  replace(el.extractorNote,
+    ...unavailable.map((x, i) => h("span", {}, i ? " · " : "", h("strong", {}, x.label), `: ${x.reason}`)),
+    sends ? ` ${sends}` : "");
+}
+
+/** @param {VerifyReport} report */
+function renderAnswerKey(report) {
+  const key = report.answer_key;
+  el.keyPanel.hidden = !key;
+  if (!key) return;
+  const met = key.filter((row) => row.met).length;
+  const edited = state.scenario && report.explanation !== state.scenario.explanation;
+  replace(el.keySummary,
+    `${met} of ${key.length} sentences end where the key says they should (PASS where the key says PASS, FAIL or REVIEW where it says the sentence cannot pass). `,
+    edited ? "The text was edited; the key describes the original commentary, so edited sentences show as not extracted." : "");
+  replace(el.keyList, ...key.map((row) => h("li", { class: `key-item ${row.met ? "met" : "unmet"}` },
+    h("div", { class: "key-row" },
+      h("span", { class: `verdict v-${row.verdict}` }, row.verdict === "MISSED" ? "NO CLAIM" : row.verdict),
+      h("span", { class: "key-tag" }, `key: ${row.requirement === "NOT_PASS" ? "not PASS" : row.requirement === "NO_CLAIM" ? "no claim" : row.requirement}`),
+      h("span", { class: "key-tag" }, row.met ? "agrees" : "differs"),
+      row.claim_id ? h("button", { type: "button", class: "button small", onclick: () => focusClaim(/** @type {string} */ (row.claim_id)) }, `Open ${row.claim_id}`) : null),
+    h("p", {}, row.quote),
+    h("p", { class: "key-why" }, row.why, row.culprits.length ? ` Culprits: ${row.culprits.join(", ")}.` : ""))));
 }
 
 /** @param {VerifyReport} report */
@@ -438,7 +525,7 @@ function claimItem(result, report, open) {
     h("summary", {},
       h("span", { class: `verdict v-${result.verdict}` }, result.verdict),
       h("span", { class: "claim-quote" }, h("span", { class: "claim-id" }, id), claim.quote),
-      h("span", { class: "claim-reason" }, result.reason, state.resolved[id] ? h("span", { class: "muted" }, ` · resolved: ${state.resolved[id]}`) : null)),
+      h("span", { class: "claim-reason" }, result.reason, keyTag(report, id), state.resolved[id] ? h("span", { class: "muted" }, ` · resolved: ${state.resolved[id]}`) : null)),
     h("div", { class: "claim-body" },
       reconstruction(result, report),
       checksSection(result.checks),
@@ -451,6 +538,12 @@ function claimItem(result, report, open) {
     if (details.open) state.openedAt[id] = Date.now();
   });
   return h("li", { class: `claim${state.active === id ? " active" : ""}`, id: `claim-${id}` }, details);
+}
+
+/** @param {VerifyReport} report @param {string} claimId */
+function keyTag(report, claimId) {
+  const row = report.answer_key?.find((r) => r.claim_id === claimId);
+  return row ? h("span", { class: "muted" }, ` · key: ${row.requirement === "NOT_PASS" ? "not PASS" : row.requirement}`) : null;
 }
 
 /** @param {ClaimResult} result @param {VerifyReport} report */
@@ -721,19 +814,26 @@ function focusClaim(id) {
 
 // ── benchmark ────────────────────────────────────────────────────────────
 
+const PHRASINGS = /** @type {const} */ (["seen", "heldout", "paraphrase"]);
+const PHRASING_LABEL = { seen: "Seen phrasing", heldout: "Held-out phrasing", paraphrase: "Paraphrase" };
+
+/** @param {string} extractor @param {string} phrasing */
+const benchKey = (extractor, phrasing) => `${extractor}:${phrasing}`;
+
 async function runBenchmark() {
   const n = Math.max(11, Math.min(2000, Number(el.benchN.value) || 440));
+  const extractor = el.benchExtractor.value || "rules";
   el.benchRun.disabled = true;
   try {
-    for (const phrasing of /** @type {const} */ (["seen", "heldout"])) {
-      el.benchMeta.textContent = `Running ${n} ${el.benchSplit.value} closes, ${phrasing === "seen" ? "seen" : "held-out"} phrasing…`;
+    for (const phrasing of PHRASINGS) {
+      el.benchMeta.textContent = `Running ${n} ${el.benchSplit.value} closes with ${extractor}, ${phrasing} phrasing…`;
       const started = performance.now();
-      state.bench[phrasing] = await api("/api/benchmark", { split: el.benchSplit.value, n, phrasing });
+      state.bench[benchKey(extractor, phrasing)] = await api("/api/benchmark", { split: el.benchSplit.value, n, phrasing, extractor });
       el.benchMeta.textContent = `${phrasing} done in ${Math.round(performance.now() - started)} ms`;
       renderBenchmark();
     }
-    const seen = state.bench.seen;
-    el.benchMeta.textContent = `${seen.scenarios} closes · ${seen.claims} claims per phrasing · split ${seen.split}`;
+    const first = state.bench[benchKey(extractor, "seen")];
+    el.benchMeta.textContent = `${first.extractor} · ${first.scenarios} closes · ${first.claims} claims per phrasing · split ${first.split}`;
     showError(null);
   } catch (error) {
     showError(error instanceof Error ? error.message : String(error));
@@ -743,7 +843,7 @@ async function runBenchmark() {
 }
 
 function renderBenchmark() {
-  const columns = /** @type {const} */ (["seen", "heldout"]);
+  state.benchExtractor = el.benchExtractor.value || "rules";
   /** @type {[string, (b: Benchmark) => Child, string][]} */
   const metrics = [
     ["Controls passed", (b) => `${b.controls.passed} / ${b.controls.n}`, "correct explanations left alone"],
@@ -754,19 +854,24 @@ function renderBenchmark() {
     ["Decided without a person", (b) => rate(b.coverage.decided_share), "coverage, reported separately"],
     ["Mean reward", (b) => b.mean_reward.toFixed(3), "the training signal, in [-1, 1]"],
   ];
+  /** @param {string} phrasing @returns {Benchmark | undefined} */
+  const current = (phrasing) => state.bench[benchKey(state.benchExtractor, phrasing)];
   replace(el.benchSummary,
     h("thead", {}, h("tr", {}, h("th", { scope: "col" }, "Measure"),
-      ...columns.map((c) => h("th", { scope: "col", class: "num" }, c === "seen" ? "Seen phrasing" : "Held-out phrasing")),
+      ...PHRASINGS.map((c) => h("th", { scope: "col", class: "num" }, PHRASING_LABEL[c])),
       h("th", { scope: "col" }, "Meaning"))),
     h("tbody", {}, ...metrics.map(([label, get, meaning]) => h("tr", {},
       h("th", { scope: "row" }, label),
-      ...columns.map((c) => h("td", { class: "num" }, state.bench[c] ? get(state.bench[c]) : "—")),
+      ...PHRASINGS.map((c) => {
+        const bench = current(c);
+        return h("td", { class: "num" }, bench ? get(bench) : "—");
+      }),
       h("td", { class: "muted wrap" }, meaning)))));
 
   for (const button of document.querySelectorAll("[data-phrasing]")) {
     button.setAttribute("aria-pressed", String(button.getAttribute("data-phrasing") === state.benchPhrasing));
   }
-  const bench = state.bench[state.benchPhrasing];
+  const bench = current(state.benchPhrasing);
   if (!bench) {
     replace(el.benchFamilies, h("tbody", {}, h("tr", {}, h("td", { class: "empty" }, "Run the benchmark to see per-family results."))));
     return;
@@ -800,7 +905,7 @@ function showView(view) {
   byId("view-review").hidden = view !== "review";
   byId("view-benchmark").hidden = view !== "benchmark";
   document.title = `Proven · ${view === "review" ? "Review" : "Benchmark"}`;
-  if (view === "benchmark" && !state.bench.seen) runBenchmark();
+  if (view === "benchmark" && !state.bench[benchKey(el.benchExtractor.value || "rules", "seen")]) runBenchmark();
 }
 
 function wire() {
@@ -826,10 +931,14 @@ function wire() {
   el.benchForm.addEventListener("submit", (e) => { e.preventDefault(); runBenchmark(); });
   for (const button of document.querySelectorAll("[data-phrasing]")) {
     button.addEventListener("click", () => {
-      state.benchPhrasing = button.getAttribute("data-phrasing") === "heldout" ? "heldout" : "seen";
+      const wanted = button.getAttribute("data-phrasing");
+      state.benchPhrasing = wanted === "heldout" || wanted === "paraphrase" ? wanted : "seen";
       renderBenchmark();
     });
   }
+  el.benchExtractor.addEventListener("change", renderBenchmark);
+  el.extractor.addEventListener("change", updateExtractorUi);
+  el.model.addEventListener("input", () => { state.models[el.extractor.value] = el.model.value; });
 }
 
 async function init() {
@@ -846,9 +955,13 @@ async function init() {
       config.network.guard_installed ? " (enforced)" : "", ` · v${config.version}`);
     replace(el.extractor, ...config.extractors.map((x) =>
       h("option", { value: x.id, disabled: !x.available, title: x.reason || null }, x.available ? x.label : `${x.label} — unavailable`)));
+    replace(el.benchExtractor, ...config.benchmark_extractors.map((id) =>
+      h("option", { value: id }, id === "oracle" ? "Oracle (generator's own claims)" : "Rules")));
+    updateExtractorUi();
     replace(el.scenario,
       h("optgroup", { label: "Showcase" }, ...list.scenarios.filter((s) => s.kind === "showcase").map((s) => h("option", { value: s.id }, s.title))),
-      h("optgroup", { label: "Synthetic, held-out split" }, ...list.scenarios.filter((s) => s.kind !== "showcase").map((s) => h("option", { value: s.id }, `${s.title} (${s.id})`))));
+      h("optgroup", { label: "Hand-written example" }, ...list.scenarios.filter((s) => s.kind === "example").map((s) => h("option", { value: s.id }, s.title))),
+      h("optgroup", { label: "Synthetic, held-out split" }, ...list.scenarios.filter((s) => s.kind === "synthetic").map((s) => h("option", { value: s.id }, `${s.title} (${s.id})`))));
     renderBenchmark();
     await refreshLessons();
     await loadScenario(list.scenarios[0].id);
