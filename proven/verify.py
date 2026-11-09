@@ -39,7 +39,7 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass, field
 from enum import Enum
 
-from proven.claims import Claim, Strength, Term, declared_terms, term_pattern
+from proven.claims import Claim, Strength, Term, _account_tokens, declared_terms, term_pattern
 from proven.ledger import TOTAL, Contribution, Ledger, Transaction
 from proven.money import Figure, compare, fmt_money, fmt_pct, fmt_signed
 
@@ -59,6 +59,11 @@ class Policy:
     wrong_cause_share: float = 0.25      # below this the stated reason is the wrong cause
     vendor_home_min_count: int = 3       # history needed before a vendor has a "usual" account
     vendor_home_min_share: float = 0.80  # and how consistent that history must be
+    # Off by default: a model's search terms then support no verdict at all. When on, a
+    # model term that is specific (see `_specific_model_terms`) may support a PASS. It
+    # may never support a FAIL, with the flag on or off.
+    model_terms_anchor: bool = False
+    model_term_max_share: float = 0.25   # a specific term matches at most this share of the account
 
     def required_share(self, strength: Strength) -> float:
         return {Strength.FULL: self.full_share, Strength.MAJORITY: self.majority_share,
@@ -326,8 +331,10 @@ def verify_claim(claim: Claim, ledger: Ledger, policy: Policy | None = None) -> 
         anchored = [t for t in terms if t.origin != "model"]
         matched = match_reason(ledger, account, terms)
         matched_anchored = match_reason(ledger, account, anchored)
+        specific = _specific_model_terms(claim, ledger, policy)
+        matched_specific = match_reason(ledger, account, specific)
         attribution = _attribute(claim, ledger, policy, change, movers, matched,
-                                 matched_anchored, terms, where)
+                                 matched_anchored, terms, where, matched_specific)
         checks.append(attribution[0])
         recon["driver"] = attribution[1]
         recon["residual"] = attribution[1].get("residual") if attribution[1] else None
@@ -351,7 +358,35 @@ def verify_claim(claim: Claim, ledger: Ledger, policy: Policy | None = None) -> 
     return _finish(claim, checks, findings, decisive, recon, policy)
 
 
-def _attribute(claim, ledger, policy, change, movers, matched, matched_anchored, terms, where):
+def _specific_model_terms(claim: Claim, ledger: Ledger, policy: Policy) -> list[Term]:
+    """The model's terms that are particular enough to count as evidence for a PASS.
+
+    Only when the policy allows it. A term is specific when it is not a word from the
+    account's own name or aliases, and it matches no more than a small share of the
+    account's transactions in scope: "insurance" in the Insurance account, or "policy"
+    where every invoice is a policy, says nothing about which cause moved.
+    """
+    if not policy.model_terms_anchor:
+        return []
+    scope = ledger.in_scope(claim.account)
+    if not scope:
+        return []
+    account_words = _account_tokens(claim.account, ledger)
+    limit = max(1, int(policy.model_term_max_share * len(scope)))
+    out = []
+    for term in claim.terms:
+        if term.origin != "model" or set(term.text.split()) & account_words:
+            continue
+        pattern = term_pattern(term.text)
+        hits = sum(1 for t in scope if pattern.search(t.searchable))
+        if 0 < hits <= limit:
+            out.append(term)
+    return out
+
+
+def _attribute(claim, ledger, policy, change, movers, matched, matched_anchored, terms, where,
+               matched_specific=None):
+    matched_specific = matched_specific or {}
     prior, current = _movement(ledger, matched)
     driver_change = current - prior
     share = driver_change / change
@@ -386,7 +421,34 @@ def _attribute(claim, ledger, policy, change, movers, matched, matched_anchored,
                         f"The reason may be real and recorded in other words; a person should look.",
                         _mover_txns(ledger, all_movers)))
 
+    def outcome(value: float) -> str:
+        if value >= required or abs(change - value * change) <= policy.materiality:
+            return "supported"
+        return "wrong_cause" if value < min(policy.wrong_cause_share, required) else "partial"
+
+    explained = (f"Transactions matching the reason moved {fmt_signed(driver_change)} "
+                 f"({fmt_money(prior)} → {fmt_money(current)}), {fmt_pct(share)} of the "
+                 f"{fmt_signed(change)} change")
+
     weak = _weak_binding(ledger, claim.account, terms)
+
+    # The words written in the sentence do not bind on their own (nothing matched, or the
+    # match is weak). Specific model terms, when the policy allows them, may then carry a
+    # PASS by themselves; the weakly matched transactions are left out of that sum.
+    if (weak or not matched_anchored) and matched_specific:
+        s_prior, s_current = _movement(ledger, matched_specific)
+        s_change = s_current - s_prior
+        if outcome(s_change / change) == "supported":
+            words = ", ".join(sorted({term.text for _t, term in matched_specific.values()}))
+            info["anchored_by_model_terms"] = sorted({term.text for _t, term in matched_specific.values()})
+            return (Check("attribution", True, "supported",
+                          f"Transactions matching the reason moved {fmt_signed(s_change)} "
+                          f"({fmt_money(s_prior)} → {fmt_money(s_current)}), "
+                          f"{fmt_pct(s_change / change)} of the {fmt_signed(change)} change; "
+                          f"the wording {wording} (needs {fmt_pct(required)}); found through "
+                          f"model-proposed terms specific to this cause ({words})"),
+                    info, None)
+
     if weak:
         unmatched, hit = weak
         return (Check("attribution", True, "weak_match",
@@ -403,19 +465,21 @@ def _attribute(claim, ledger, policy, change, movers, matched, matched_anchored,
                         f"{'; '.join(_describe(t) for t, _ in list(matched.values())[:3])}.",
                         list(matched)))
 
-    def outcome(value: float) -> str:
-        if value >= required or abs(change - value * change) <= policy.materiality:
-            return "supported"
-        return "wrong_cause" if value < min(policy.wrong_cause_share, required) else "partial"
-
-    explained = (f"Transactions matching the reason moved {fmt_signed(driver_change)} "
-                 f"({fmt_money(prior)} → {fmt_money(current)}), {fmt_pct(share)} of the "
-                 f"{fmt_signed(change)} change")
     if outcome(share_anchored) == "supported":
         note = "" if share <= 1.25 else (f"; other movements offset {fmt_signed(residual)}")
         return (Check("attribution", True, "supported",
                       f"{explained}; the wording {wording} (needs {fmt_pct(required)}){note}"),
                 info, None)
+    if matched_anchored and matched_specific:
+        both = {**matched_anchored, **matched_specific}
+        b_prior, b_current = _movement(ledger, both)
+        if outcome((b_current - b_prior) / change) == "supported":
+            words = ", ".join(sorted({term.text for _t, term in matched_specific.values()}))
+            info["anchored_by_model_terms"] = sorted({term.text for _t, term in matched_specific.values()})
+            return (Check("attribution", True, "supported",
+                          f"{explained}; the wording {wording} (needs {fmt_pct(required)}); "
+                          f"completed by model-proposed terms specific to this cause ({words})"),
+                    info, None)
     if outcome(share) == "supported":
         model_terms = ", ".join(t.text for t in terms if t.origin == "model")
         return (Check("attribution", True, "model_only", explained),
@@ -427,6 +491,24 @@ def _attribute(claim, ledger, policy, change, movers, matched, matched_anchored,
                         f"lexicon it is {fmt_pct(share_anchored)}. Confirm those transactions "
                         f"belong to the stated reason.",
                         list(matched)))
+
+    if not matched_anchored:
+        # Every matched transaction was found through a term the model proposed, and those
+        # transactions do not account for the movement. That may mean the stated cause is
+        # wrong, or only that the model guessed the wrong words. A model's vocabulary is
+        # never the reason a sentence fails.
+        model_terms = ", ".join(t.text for t in terms if t.origin == "model")
+        all_movers = _movers(ledger, claim.account, sign, policy)
+        return (Check("attribution", True, "model_only", explained),
+                info,
+                Finding("REASON_FOUND_ONLY_BY_MODEL_TERMS", ADVISORY,
+                        "The stated reason was found only through search terms a model proposed, "
+                        "and those transactions do not account for the movement.",
+                        f"{explained}, matched only by the model's terms ({model_terms}); no word "
+                        f"written in the sentence or declared in the lexicon matched anything. "
+                        f"This neither supports nor refutes the reason. The movement came from: "
+                        f"{_movers_text(ledger, all_movers)}.",
+                        list(matched) + _mover_txns(ledger, all_movers)))
 
     result = outcome(share)
     matched_ids = list(matched)

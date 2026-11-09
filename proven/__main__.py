@@ -86,6 +86,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--token-budget", type=int, default=None,
                    help="stop sending requests after this many tokens (default 300,000)")
     p.add_argument("--no-cache", action="store_true", help="do not reuse or store model proposals")
+    p.add_argument("--anchor-model-terms", action="store_true",
+                   help="experimental: let specific model-proposed terms support a PASS")
 
     p = sub.add_parser("generate", help="write a labelled synthetic dataset")
     p.add_argument("--split", default="train", choices=("test", "train"))
@@ -111,6 +113,7 @@ def main(argv: list[str] | None = None) -> int:
         from proven.budget import Budget, BudgetExceeded
         from proven.evaluate import evaluate
         from proven.extractors import build
+        from proven.verify import Policy
         extractor = None
         if args.extractor != "rules":
             if args.allow_network:
@@ -119,7 +122,8 @@ def main(argv: list[str] | None = None) -> int:
                               cache_dir=None if args.no_cache else ".proven/cache")
         try:
             for phrasing in (("seen", "heldout") if args.phrasing == "both" else (args.phrasing,)):
-                _print_benchmark(evaluate(args.split, args.n, phrasing=phrasing,
+                policy = Policy(model_terms_anchor=True) if args.anchor_model_terms else None
+                _print_benchmark(evaluate(args.split, args.n, policy=policy, phrasing=phrasing,
                                           extractor=extractor, workers=args.workers))
                 print()
         except (BudgetExceeded, RuntimeError) as exc:
