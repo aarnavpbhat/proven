@@ -105,15 +105,24 @@ def evaluate(split: str = "test", n: int = 220, policy: Policy | None = None,
     """`extractor` defaults to the rules. With `workers` > 1 the extractor is called for
     every close up front, in parallel; that only helps one that caches its proposals."""
     scenarios = generate_split(split, n, phrasing)
+    per_scenario = extractor
     if extractor is not None and workers > 1:
         with ThreadPoolExecutor(max_workers=workers) as pool:
-            list(pool.map(lambda s: extractor.propose(s.explanation, s.ledger), scenarios))
+            fetched = list(pool.map(lambda s: extractor.propose(s.explanation, s.ledger), scenarios))
+        # Reuse what was fetched: calling the extractor again would re-send every close
+        # whose answer the cache does not keep (an empty one).
+        per_scenario = _Prefetched(extractor, {id(s): p for s, p in zip(scenarios, fetched)})
     tallies: dict[str, _Tally] = defaultdict(_Tally)
     failures: list[dict] = []
+    rejected: dict[str, int] = defaultdict(int)
     claims = decided = 0
 
     for scenario in scenarios:
-        report = run(scenario.explanation, scenario.ledger, policy=policy, extractor=extractor)
+        if isinstance(per_scenario, _Prefetched):
+            per_scenario.current = id(scenario)
+        report = run(scenario.explanation, scenario.ledger, policy=policy, extractor=per_scenario)
+        for rejection in report["rejected"]:
+            rejected[rejection["reason"]] += 1
         by_quote = {c["claim"]["quote"]: c for c in report["claims"]}
         for label in scenario.labels:
             result = by_quote.get(label.quote)
@@ -179,5 +188,21 @@ def evaluate(split: str = "test", n: int = 220, policy: Policy | None = None,
         "coverage": {"claims": claims, "decided": decided,
                      "decided_share": round(decided / claims, 4) if claims else 0.0},
         "mean_reward": round(total_reward / claims, 4) if claims else 0.0,
+        "rejected": dict(sorted(rejected.items())),
         "failures": failures,
     }
+
+
+class _Prefetched:
+    """Hands `run()` the proposals already fetched for the scenario being scored."""
+
+    def __init__(self, inner, proposals: dict[int, list]):
+        self.inner, self.proposals, self.current = inner, proposals, 0
+        self.name, self.version = inner.name, inner.version
+
+    @property
+    def transmissions(self) -> list[dict]:
+        return list(getattr(self.inner, "transmissions", []))
+
+    def propose(self, text, ledger):
+        return list(self.proposals[self.current])

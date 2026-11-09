@@ -53,6 +53,9 @@ def _print_benchmark(result: dict) -> None:
           f"{d['unsafe_passes']} unsafe PASS (must be 0)")
     print(f"coverage: {result['coverage']['decided_share']:.1%} decided without a person;  "
           f"mean reward {result['mean_reward']:.3f}")
+    if result.get("rejected"):
+        print("rejected proposals: " + ", ".join(f"{reason} {count}"
+                                                 for reason, count in result["rejected"].items()))
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -85,6 +88,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--workers", type=int, default=1, help="parallel requests to a model extractor")
     p.add_argument("--token-budget", type=int, default=None,
                    help="stop sending requests after this many tokens (default 300,000)")
+    p.add_argument("--usd-budget", type=float, default=None,
+                   help="stop sending requests after this many US dollars (default $PROVEN_USD_BUDGET)")
     p.add_argument("--no-cache", action="store_true", help="do not reuse or store model proposals")
 
     p = sub.add_parser("generate", help="write a labelled synthetic dataset")
@@ -115,7 +120,7 @@ def main(argv: list[str] | None = None) -> int:
         if args.extractor != "rules":
             if args.allow_network:
                 netguard.allow_network()
-            extractor = build(args.extractor, model=args.model, budget=Budget(args.token_budget),
+            extractor = build(args.extractor, model=args.model, budget=Budget(args.token_budget, args.usd_budget),
                               cache_dir=None if args.no_cache else ".proven/cache")
         try:
             for phrasing in (("seen", "heldout") if args.phrasing == "both" else (args.phrasing,)):
@@ -130,8 +135,10 @@ def main(argv: list[str] | None = None) -> int:
         finally:
             budget = getattr(extractor, "budget", None)
             if budget is not None:
+                usd_cap = "" if budget.max_usd is None else f" of ${budget.max_usd:.2f}"
                 print(f"model usage: {budget.calls} request(s), {budget.input_tokens:,} input + "
                       f"{budget.output_tokens:,} output tokens (budget {budget.max_tokens:,}); "
+                      f"${budget.usd:.4f}{usd_cap}; "
                       f"cache {getattr(extractor, 'hits', 0)} hit(s)", file=sys.stderr)
     elif args.command == "generate":
         from proven.synth import generate_split
