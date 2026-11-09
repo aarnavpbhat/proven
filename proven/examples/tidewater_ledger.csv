@@ -1,0 +1,110 @@
+id,date,account,vendor,memo,amount
+GL-0001,2026-08-01,Rent & Occupancy,Harlan Properties,Rent - 2210 Marine View Dr Unit B,9800.00
+GL-0002,2026-08-02,Insurance,Pemberton Mutual,GL + property premium Aug,1380.00
+GL-0003,2026-08-03,Professional Services,Hartwell & Boyd CPAs,Monthly bookkeeping Aug,2400.00
+GL-0004,2026-08-03,Professional Services,Kline Employment Law,Retainer Aug,1500.00
+GL-0005,2026-08-04,Rent & Occupancy,Evergreen Janitorial,Cleaning svc Aug,640.00
+GL-0006,2026-08-05,Packaging,Sunrise Pouch Co,12oz kraft stand-up pouch 5k,2650.00
+GL-0007,2026-08-05,Packaging,Sunrise Pouch Co,2lb valve bags 2k,1180.00
+GL-0008,2026-08-05,Benefits & Payroll Taxes,Regence,Group health prem Aug,8420.00
+GL-0009,2026-08-06,Marketing,Meta Ads,IG boosts Aug,1800.00
+GL-0010,2026-08-07,Freight & Delivery,UPS,Inv 4417 wk32 ground,2184.10
+GL-0011,2026-08-08,Marketing,Cascadia Cyclists Assn,Sponsorship - monthly ride series,1500.00
+GL-0012,2026-08-09,Marketing,Mailchimp,Standard plan,210.00
+GL-0013,2026-08-10,Utilities,Seattle City Light,Elec acct 4410-22 Aug,2716.30
+GL-0014,2026-08-11,Software & IT,Shopify,Plus plan Aug,399.00
+GL-0015,2026-08-11,Software & IT,Intuit,QBO Advanced Aug,200.00
+GL-0016,2026-08-12,Roaster Maintenance,Probat Service,PM visit roaster #1 quarterly,1150.00
+GL-0017,2026-08-12,Utilities,Puget Sound Energy,Gas acct 7781-03 Aug,1905.77
+GL-0018,2026-08-13,Software & IT,Microsoft,M365 8 seats,96.00
+GL-0019,2026-08-14,Freight & Delivery,FedEx,FDX 7741-1180 express wholesale,1402.00
+GL-0020,2026-08-15,Utilities,SPU,Water/sewer Aug,410.20
+GL-0021,2026-08-15,Benefits & Payroll Taxes,ADP,Payroll taxes ER share 08/15,9120.44
+GL-0022,2026-08-18,Packaging,LabelWorks,Roll labels 4x6 x10,640.00
+GL-0023,2026-08-19,Roaster Maintenance,Ace Industrial Supply,"PO 2231 belts, filters",312.48
+GL-0024,2026-08-20,Professional Services,Norris Brand Counsel,TM filing - class 30 coffee,2150.00
+GL-0025,2026-08-21,Freight & Delivery,UPS,Inv 4452 wk34 ground,2310.55
+GL-0026,2026-08-24,Packaging,Corrugated Direct,Shipper cartons x200,912.50
+GL-0027,2026-08-25,Marketing,Studio Nine,Photo shoot - new origins,1200.00
+GL-0028,2026-08-26,Freight & Delivery,Pacific Coast Freight,PCF pallet LTL SEA-PDX,880.00
+GL-0029,2026-08-28,Benefits & Payroll Taxes,Guideline,401k ER match Aug,1949.75
+GL-0030,2026-08-30,Bank & Merchant Fees,Stripe,Processing fees Aug,2244.18
+GL-0031,2026-08-31,Benefits & Payroll Taxes,ADP,Payroll taxes ER share 08/31,9141.90
+GL-0032,2026-08-31,Bank & Merchant Fees,Chase,Acct analysis fee,85.00
+GL-0033,2026-09-01,Rent & Occupancy,Harlan Properties,Rent - 2210 Marine View Dr Unit B,9800.00
+GL-0034,2026-09-02,Insurance,Pemberton Mutual,GL + property premium Sep,1380.00
+GL-0035,2026-09-03,Professional Services,Hartwell & Boyd CPAs,Monthly bookkeeping Sep,2400.00
+GL-0036,2026-09-03,Professional Services,Kline Employment Law,Retainer Sep,1500.00
+GL-0037,2026-09-04,Packaging,Sunrise Pouch Co,12oz kraft stand-up pouch 5k,2690.00
+GL-0038,2026-09-04,Packaging,Sunrise Pouch Co,2lb valve bags 2k,1180.00
+GL-0039,2026-09-04,Rent & Occupancy,Evergreen Janitorial,Cleaning svc Sep,640.00
+GL-0040,2026-09-05,Benefits & Payroll Taxes,Regence,Group health prem Sep,8420.00
+GL-0041,2026-09-06,Marketing,Meta Ads,IG boosts Sep,1750.00
+GL-0042,2026-09-08,Roaster Maintenance,Ace Industrial Supply,PO 2290 chaff collector bags,287.15
+GL-0043,2026-09-08,Marketing,Cascadia Cyclists Assn,Sponsorship - monthly ride series,1500.00
+GL-0044,2026-09-09,Freight & Delivery,UPS,Inv 4490 wk36 ground,2246.90
+GL-0045,2026-09-09,Marketing,Mailchimp,Standard plan,210.00
+GL-0046,2026-09-10,Utilities,Seattle City Light,Elec acct 4410-22 Sep,2688.12
+GL-0047,2026-09-11,Software & IT,Shopify,Plus plan Sep,399.00
+GL-0048,2026-09-11,Software & IT,Intuit,QBO Advanced Sep,200.00
+GL-0049,2026-09-12,Utilities,Puget Sound Energy,Gas acct 7781-03 Sep,1988.40
+GL-0050,2026-09-13,Software & IT,Microsoft,M365 8 seats,96.00
+GL-0051,2026-09-15,Utilities,SPU,Water/sewer Sep,395.80
+GL-0052,2026-09-15,Benefits & Payroll Taxes,ADP,Payroll taxes ER share 09/15,9214.33
+GL-0053,2026-09-16,Freight & Delivery,FedEx,FDX 7741-1612 express wholesale,1388.20
+GL-0054,2026-09-17,Professional Services,Norris Brand Counsel,TM office action response,3800.00
+GL-0055,2026-09-19,Packaging,LabelWorks,Roll labels 4x6 x10,640.00
+GL-0056,2026-09-22,Roaster Maintenance,Probat Service,Svc call - cooling tray motor,640.00
+GL-0057,2026-09-23,Freight & Delivery,UPS,Inv 4531 wk38 ground,2201.35
+GL-0058,2026-09-25,Packaging,Corrugated Direct,Shipper cartons x200,925.00
+GL-0059,2026-09-28,Freight & Delivery,Pacific Coast Freight,PCF pallet LTL SEA-PDX,860.00
+GL-0060,2026-09-28,Benefits & Payroll Taxes,Guideline,401k ER match Sep,1975.20
+GL-0061,2026-09-30,Professional Services,Hartwell & Boyd CPAs,ACCR yr-end audit prep (est),3000.00
+GL-0062,2026-09-30,Benefits & Payroll Taxes,ADP,Payroll taxes ER share 09/30,9188.07
+GL-0063,2026-09-30,Bank & Merchant Fees,Stripe,Processing fees Sep,2301.66
+GL-0064,2026-09-30,Bank & Merchant Fees,Chase,Acct analysis fee,85.00
+GL-0065,2026-10-01,Professional Services,Hartwell & Boyd CPAs,REV ACCR yr-end audit prep (est),-3000.00
+GL-0066,2026-10-01,Rent & Occupancy,Harlan Properties,Rent - 2210 Marine View Dr Unit B,9800.00
+GL-0067,2026-10-02,Packaging,Sunrise Pouch Co,12oz compostable film bags 3k NEW SKU,4150.00
+GL-0068,2026-10-02,Packaging,Sunrise Pouch Co,2lb valve bags 2k,1180.00
+GL-0069,2026-10-02,Insurance,Pemberton Mutual,GL + property premium Oct,1380.00
+GL-0070,2026-10-04,Packaging,Sunrise Pouch Co,12oz kraft stand-up pouch 5k,2690.00
+GL-0071,2026-10-04,Rent & Occupancy,Evergreen Janitorial,Cleaning svc Oct,640.00
+GL-0072,2026-10-05,Professional Services,Hartwell & Boyd CPAs,Monthly bookkeeping Oct,2400.00
+GL-0073,2026-10-05,Professional Services,Kline Employment Law,Retainer Oct,1500.00
+GL-0074,2026-10-05,Benefits & Payroll Taxes,Regence,Group health prem Oct,8420.00
+GL-0075,2026-10-06,Roaster Maintenance,Ace Industrial Supply,PO 2347 gaskets,198.60
+GL-0076,2026-10-06,Marketing,Meta Ads,IG boosts Oct,1900.00
+GL-0077,2026-10-07,Freight & Delivery,UPS,Inv 4577 wk40 ground,2398.75
+GL-0078,2026-10-08,Marketing,Cascadia Cyclists Assn,Sponsorship - monthly ride series,1500.00
+GL-0079,2026-10-09,Marketing,Mailchimp,Standard plan,210.00
+GL-0080,2026-10-09,Software & IT,Cin7 Core,Inventory mgmt sub - Oct,349.00
+GL-0081,2026-10-09,Software & IT,Cin7 Core,Onboarding / implementation (one-time),1800.00
+GL-0082,2026-10-11,Software & IT,Shopify,Plus plan Oct,399.00
+GL-0083,2026-10-11,Software & IT,Intuit,QBO Advanced Oct,200.00
+GL-0084,2026-10-12,Utilities,Seattle City Light,Elec acct 4410-22 Oct,2931.55
+GL-0085,2026-10-13,Freight & Delivery,FedEx,FDX 7741-2290 express wholesale,1415.60
+GL-0086,2026-10-13,Utilities,Puget Sound Energy,Gas acct 7781-03 Oct,3740.25
+GL-0087,2026-10-13,Software & IT,Microsoft,M365 8 seats,96.00
+GL-0088,2026-10-14,Roaster Maintenance,Probat Service,PM visit roaster #1 quarterly,1150.00
+GL-0089,2026-10-15,Utilities,SPU,Water/sewer Oct,402.15
+GL-0090,2026-10-15,Marketing,Blue Heron Creative,Q4 wholesale catalog design + print inv 1187,6200.00
+GL-0091,2026-10-15,Benefits & Payroll Taxes,ADP,Payroll taxes ER share 10/15,9305.10
+GL-0092,2026-10-16,Packaging,LabelWorks,Roll labels 4x6 x10,640.00
+GL-0093,2026-10-17,Packaging,LabelWorks,Reprint - new origin text rev B (40 rolls),3950.00
+GL-0094,2026-10-18,Insurance,Pemberton Mutual,Endorsement - added location rider,1240.00
+GL-0095,2026-10-19,Freight & Delivery,FedEx,Holiday gift box program - pallets (HGB) Q4,5940.00
+GL-0096,2026-10-20,Rent & Occupancy,Harlan Properties,CAM reconciliation 2025 true-up,1650.00
+GL-0097,2026-10-21,Freight & Delivery,UPS,Inv 4620 wk42 ground,2455.10
+GL-0098,2026-10-22,Roaster Maintenance,Probat Service,ROASTER #2 DRUM BEARING REPL - labor+parts,11480.00
+GL-0099,2026-10-23,Packaging,Corrugated Direct,Holiday shipper cartons x800,3100.00
+GL-0100,2026-10-24,Marketing,Blue Heron Creative,Holiday email series retainer,2400.00
+GL-0101,2026-10-26,Professional Services,Hartwell & Boyd CPAs,Audit prep fieldwork inv 6620,3400.00
+GL-0102,2026-10-27,Freight & Delivery,Pacific Coast Freight,PCF pallet LTL SEA-PDX,870.00
+GL-0103,2026-10-28,Freight & Delivery,UPS,Inv 4658 wk44 ground,2611.80
+GL-0104,2026-10-28,Benefits & Payroll Taxes,Guideline,401k ER match Oct,2010.45
+GL-0105,2026-10-29,Freight & Delivery,Pacific Coast Freight,HGB LTL x2 to Reno DC,1720.00
+GL-0106,2026-10-30,Freight & Delivery,FedEx,CR MEMO late deliv refund inv 7741-2290,-112.40
+GL-0107,2026-10-30,Benefits & Payroll Taxes,ADP,Payroll taxes ER share 10/30,9260.88
+GL-0108,2026-10-30,Bank & Merchant Fees,Stripe,Processing fees Oct,3012.40
+GL-0109,2026-10-31,Bank & Merchant Fees,Chase,Acct analysis fee,85.00
