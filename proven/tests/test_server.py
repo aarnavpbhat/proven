@@ -49,7 +49,7 @@ def test_config_reports_network_off_and_the_closed_action_set(api):
 def test_scenarios_cover_the_showcase_and_every_family(api):
     _, data = api("GET", "/api/scenarios")
     ids = [s["id"] for s in data["scenarios"]]
-    assert ids[0] == "showcase" and len(ids) == 12
+    assert ids[:2] == ["showcase", "tidewater"] and len(ids) == 13
     status, scenario = api("GET", f"/api/scenario?id={ids[3]}")
     assert status == 200 and scenario["ground_truth"]["labels"]
 

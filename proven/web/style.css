@@ -223,6 +223,19 @@ table.data .nowrap { white-space: nowrap; }
 .verdict.v-PASS { color: var(--pass); background: var(--pass-bg); }
 .verdict.v-FAIL { color: var(--fail); background: var(--fail-bg); }
 .verdict.v-REVIEW { color: var(--review); background: var(--review-bg); }
+.verdict.v-MISSED { color: var(--text-3); background: var(--surface-2); }
+
+/* ── answer key (hand-written example) ───────────────────── */
+
+.key-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-2); }
+.key-item { border-left: 3px solid var(--border-strong); padding-left: var(--sp-3); font-size: var(--fs-sm); }
+.key-item.met { border-left-color: var(--pass); }
+.key-item.unmet { border-left-color: var(--fail); }
+.key-row { display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; }
+.key-item p { margin: var(--sp-1) 0 0; overflow-wrap: anywhere; }
+.key-why { color: var(--text-2); font-size: var(--fs-xs); }
+.key-tag { font-size: var(--fs-xs); color: var(--text-3); }
+.usage { font-family: var(--font-mono); }
 
 /* ── claims ──────────────────────────────────────────────── */
 
