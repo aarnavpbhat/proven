@@ -14,3 +14,7 @@ dist/
 # Vercel build output and local link.
 public/
 .vercel/
+
+# Local agent tooling.
+.claude/
+.playwright-mcp/
