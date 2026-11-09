@@ -207,6 +207,23 @@ LEXICON: tuple[tuple[str, tuple[str, ...], tuple[str, ...]], ...] = (
 #: Every word the lexicon declares as a trace a cause leaves in the ledger.
 LEXICON_TERMS = frozenset(term for _name, _triggers, terms in LEXICON for term in terms)
 
+#: Entries a reviewer confirmed, in the same (name, triggers, terms) shape as LEXICON.
+#: Empty unless `set_learned()` is called, so the benchmark and the tests never depend
+#: on what happens to be on disk.
+LEARNED: list[tuple[str, tuple[str, ...], tuple[str, ...]]] = []
+
+
+def set_learned(entries: list[tuple[str, tuple[str, ...], tuple[str, ...]]]) -> None:
+    """Replace the reviewer-confirmed entries. Their terms get the origin "learned"."""
+    LEARNED[:] = [(name, tuple(t.lower() for t in triggers), tuple(t.lower() for t in terms))
+                  for name, triggers, terms in entries]
+
+
+def declared_terms() -> frozenset[str]:
+    """Every term vouched for by the built-in lexicon or by a reviewer."""
+    return LEXICON_TERMS | {term for _name, _triggers, terms in LEARNED for term in terms}
+
+
 STOPWORDS = frozenset("""
 a an and as at by for from in into of on onto or over than that the their these this those
 to under with our its we us company team not fewer
@@ -229,7 +246,7 @@ _TOKEN = re.compile(r"[a-z0-9][a-z0-9&'\-]*")
 @dataclass(frozen=True)
 class Term:
     text: str
-    origin: str      # "quote" | "lexicon" | "model"
+    origin: str      # "quote" | "lexicon" | "learned" | "model"
 
     def to_dict(self) -> dict:
         return {"text": self.text, "origin": self.origin}
@@ -269,6 +286,12 @@ def anchored_terms(driver: str, account: str | None, ledger: Ledger) -> list[Ter
                 if expansion not in seen:
                     seen.add(expansion)
                     terms.append(Term(expansion, "lexicon"))
+    for _name, triggers, expansions in LEARNED:
+        if any(re.search(rf"(?<![a-z0-9]){re.escape(t)}", lower) for t in triggers):
+            for expansion in expansions:
+                if expansion not in seen:
+                    seen.add(expansion)
+                    terms.append(Term(expansion, "learned"))
     return terms
 
 

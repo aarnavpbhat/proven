@@ -13,7 +13,7 @@ import json
 import sys
 from pathlib import Path
 
-from proven import showcase
+from proven import env, showcase
 from proven.ledger import Ledger
 from proven.report import run
 
@@ -78,6 +78,14 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--split", default="test", choices=("test", "train"))
     p.add_argument("--n", type=int, default=440)
     p.add_argument("--phrasing", default="both", choices=("seen", "heldout", "both"))
+    p.add_argument("--extractor", default="rules", help="rules (default) or a model extractor")
+    p.add_argument("--model", default=None, help="model id for a model extractor")
+    p.add_argument("--allow-network", action="store_true",
+                   help="permit a model extractor to send narrative text off this machine")
+    p.add_argument("--workers", type=int, default=1, help="parallel requests to a model extractor")
+    p.add_argument("--token-budget", type=int, default=None,
+                   help="stop sending requests after this many tokens (default 300,000)")
+    p.add_argument("--no-cache", action="store_true", help="do not reuse or store model proposals")
 
     p = sub.add_parser("generate", help="write a labelled synthetic dataset")
     p.add_argument("--split", default="train", choices=("test", "train"))
@@ -86,6 +94,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--out", required=True)
 
     args = parser.parse_args(argv)
+    env.load()
 
     if args.command == "serve":
         from proven.server import serve
@@ -98,10 +107,32 @@ def main(argv: list[str] | None = None) -> int:
         report = run(Path(args.explanation).read_text(encoding="utf-8"), book)
         print(json.dumps(report, indent=2)) if args.json else _print_report(report)
     elif args.command == "benchmark":
+        from proven import netguard
+        from proven.budget import Budget, BudgetExceeded
         from proven.evaluate import evaluate
-        for phrasing in (("seen", "heldout") if args.phrasing == "both" else (args.phrasing,)):
-            _print_benchmark(evaluate(args.split, args.n, phrasing=phrasing))
-            print()
+        from proven.extractors import build
+        extractor = None
+        if args.extractor != "rules":
+            if args.allow_network:
+                netguard.allow_network()
+            extractor = build(args.extractor, model=args.model, budget=Budget(args.token_budget),
+                              cache_dir=None if args.no_cache else ".proven/cache")
+        try:
+            for phrasing in (("seen", "heldout") if args.phrasing == "both" else (args.phrasing,)):
+                _print_benchmark(evaluate(args.split, args.n, phrasing=phrasing,
+                                          extractor=extractor, workers=args.workers))
+                print()
+        except (BudgetExceeded, RuntimeError) as exc:
+            if extractor is None:
+                raise
+            print(f"stopped: {exc}", file=sys.stderr)
+            return 1
+        finally:
+            budget = getattr(extractor, "budget", None)
+            if budget is not None:
+                print(f"model usage: {budget.calls} request(s), {budget.input_tokens:,} input + "
+                      f"{budget.output_tokens:,} output tokens (budget {budget.max_tokens:,}); "
+                      f"cache {getattr(extractor, 'hits', 0)} hit(s)", file=sys.stderr)
     elif args.command == "generate":
         from proven.synth import generate_split
         with open(args.out, "w", encoding="utf-8") as handle:

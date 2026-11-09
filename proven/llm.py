@@ -42,6 +42,7 @@ from datetime import datetime, timezone
 from typing import Any
 
 from proven import netguard
+from proven.budget import Budget
 from proven.claims import ClaimProposal
 from proven.ledger import Ledger
 
@@ -120,18 +121,30 @@ class ClaudeExtractor:
     name = NAME
     version = VERSION
 
-    def __init__(self, client: Any | None = None, model: str = MODEL):
+    def __init__(self, client: Any | None = None, model: str = MODEL,
+                 budget: Budget | None = None):
         self._client = client
         self.model = model
+        self.budget = budget
         self.transmissions: list[dict] = []
+
+    @property
+    def fingerprint(self) -> str:
+        """Changes whenever the prompt or schema does, so cached proposals are not reused."""
+        material = SYSTEM + json.dumps(SCHEMA, sort_keys=True)
+        return hashlib.sha256(material.encode("utf-8")).hexdigest()[:16]
 
     def propose(self, text: str, ledger: Ledger) -> list[ClaimProposal]:
         if not netguard.network_allowed():
             raise NetworkDisabled(
                 "the Claude extractor sends the explanation text off this machine; start the "
                 "server with --allow-network to permit it, or use the offline rules extractor")
+        if self.budget is not None:
+            self.budget.check()       # raises before anything is sent
         content = payload(text, ledger)
-        client = self._client or _default_client()
+        if self._client is None:
+            self._client = _default_client()
+        client = self._client
         response = client.beta.messages.create(
             model=self.model,
             max_tokens=16000,
@@ -151,6 +164,11 @@ class ClaudeExtractor:
             "not_sent": ["transactions", "vendors", "memos", "amounts", "balances"],
             "stop_reason": getattr(response, "stop_reason", None),
         }
+        usage = getattr(response, "usage", None)
+        record["input_tokens"] = int(getattr(usage, "input_tokens", 0) or 0)
+        record["output_tokens"] = int(getattr(usage, "output_tokens", 0) or 0)
+        if self.budget is not None:
+            self.budget.add(record["input_tokens"], record["output_tokens"])
         self.transmissions.append(record)
         if record["stop_reason"] == "refusal":
             return []

@@ -39,7 +39,7 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass, field
 from enum import Enum
 
-from proven.claims import LEXICON_TERMS, Claim, Strength, Term, term_pattern
+from proven.claims import Claim, Strength, Term, declared_terms, term_pattern
 from proven.ledger import TOTAL, Contribution, Ledger, Transaction
 from proven.money import Figure, compare, fmt_money, fmt_pct, fmt_signed
 
@@ -464,8 +464,9 @@ def _weak_binding(ledger: Ledger, account: str,
     def hits(term: Term) -> bool:
         pattern = term_pattern(term.text)
         return any(pattern.search(t.searchable) for t in scope)
-    declared = [t for t in terms if t.origin == "lexicon" or
-                (t.origin == "quote" and t.text in LEXICON_TERMS)]
+    vouched = declared_terms()
+    declared = [t for t in terms if t.origin in ("lexicon", "learned") or
+                (t.origin == "quote" and t.text in vouched)]
     if any(hits(t) for t in declared):
         return None
     written = [t for t in terms if t.origin == "quote"]

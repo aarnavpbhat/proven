@@ -30,6 +30,7 @@ correct flag.
 from __future__ import annotations
 
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 
 from proven import __version__
@@ -100,14 +101,19 @@ def score_claim(label: Label, result: dict | None) -> dict:
 
 
 def evaluate(split: str = "test", n: int = 220, policy: Policy | None = None,
-             phrasing: str = "seen") -> dict:
+             phrasing: str = "seen", extractor=None, workers: int = 1) -> dict:
+    """`extractor` defaults to the rules. With `workers` > 1 the extractor is called for
+    every close up front, in parallel; that only helps one that caches its proposals."""
     scenarios = generate_split(split, n, phrasing)
+    if extractor is not None and workers > 1:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            list(pool.map(lambda s: extractor.propose(s.explanation, s.ledger), scenarios))
     tallies: dict[str, _Tally] = defaultdict(_Tally)
     failures: list[dict] = []
     claims = decided = 0
 
     for scenario in scenarios:
-        report = run(scenario.explanation, scenario.ledger, policy=policy)
+        report = run(scenario.explanation, scenario.ledger, policy=policy, extractor=extractor)
         by_quote = {c["claim"]["quote"]: c for c in report["claims"]}
         for label in scenario.labels:
             result = by_quote.get(label.quote)
@@ -153,6 +159,7 @@ def evaluate(split: str = "test", n: int = 220, policy: Policy | None = None,
     total_reward = sum(t.reward for t in tallies.values())
     return {
         "version": __version__, "split": split, "phrasing": phrasing,
+        "extractor": f"{extractor.name}/{extractor.version}" if extractor else "rules/0.1",
         "scenarios": len(scenarios), "claims": claims,
         "policy": (policy or Policy()).to_dict(),
         "families": rows,
