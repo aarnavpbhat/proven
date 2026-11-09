@@ -124,3 +124,11 @@ def test_rule_extractor_proposes_one_claim_per_assertion():
     text = "October commentary.\nLegal costs rose $90K because of our funding round.\nThanks."
     proposals = RuleExtractor().propose(text, LEDGER)
     assert len(proposals) == 1 and proposals[0].change_text == "$90K"
+
+
+def test_bare_because_states_a_reason():
+    # "because X grew" used to read as no reason at all, so the cause was never checked
+    # and a wrong one passed on the amount alone.
+    from proven.claims import split_reason
+    _head, reason, _strength = split_reason("Marketing rose $8.8K because the sponsorship grew.")
+    assert reason and "sponsorship" in reason

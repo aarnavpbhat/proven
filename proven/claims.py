@@ -50,7 +50,7 @@ _HEDGE = r"(?:primarily|mainly|largely|mostly|partly|partially|chiefly|principal
 _CONNECTOR = re.compile(
     rf"(?:\b(?P<pre>{_HEDGE})\s+)?"
     rf"\b(?P<conn>due\s+(?:(?P<mid1>{_HEDGE})\s+)?to"
-    rf"|because\s+of"
+    rf"|because(?:\s+of)?"
     rf"|driven\s+(?:(?P<mid2>{_HEDGE})\s+)?by"
     rf"|as\s+a\s+result\s+of"
     rf"|reflecting|attributable\s+to|owing\s+to|thanks\s+to|on\s+the\s+back\s+of"
