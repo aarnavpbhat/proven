@@ -16,6 +16,17 @@ def heldout():
     return evaluate("test", 220, phrasing="heldout")
 
 
+@pytest.fixture(scope="module")
+def paraphrase():
+    return evaluate("test", 220, phrasing="paraphrase")
+
+
+def test_paraphrase_tier_is_safe_and_as_hard_as_heldout(paraphrase):
+    assert paraphrase["controls"]["fails"] == 0
+    assert paraphrase["defects"]["unsafe_passes"] == 0
+    assert paraphrase["coverage"]["decided_share"] < 0.3
+
+
 def test_no_control_ever_fails(seen, heldout):
     # Aptio's kill criterion K3, applied under both phrasings.
     assert seen["controls"]["fails"] == 0

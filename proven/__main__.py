@@ -78,7 +78,7 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("benchmark", help="per-family results on synthetic closes")
     p.add_argument("--split", default="test", choices=("test", "train"))
     p.add_argument("--n", type=int, default=440)
-    p.add_argument("--phrasing", default="both", choices=("seen", "heldout", "both"))
+    p.add_argument("--phrasing", default="both", choices=("seen", "heldout", "paraphrase", "both"))
     p.add_argument("--extractor", default="rules", help="rules (default) or a model extractor")
     p.add_argument("--model", default=None, help="model id for a model extractor")
     p.add_argument("--allow-network", action="store_true",
@@ -93,7 +93,9 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("generate", help="write a labelled synthetic dataset")
     p.add_argument("--split", default="train", choices=("test", "train"))
     p.add_argument("--n", type=int, default=1000)
-    p.add_argument("--phrasing", default="seen", choices=("seen", "heldout"))
+    p.add_argument("--phrasing", default="seen", choices=("seen", "heldout", "paraphrase"))
+    p.add_argument("--format", default="scenarios", choices=("scenarios", "chat"),
+                   help="scenarios: labelled closes; chat: one {messages} training example per close")
     p.add_argument("--out", required=True)
 
     p = sub.add_parser("replay", help="re-verify the cases reviewers taught lessons from")
@@ -118,8 +120,11 @@ def main(argv: list[str] | None = None) -> int:
         from proven.evaluate import evaluate
         from proven.extractors import build
         from proven.verify import Policy
-        extractor = None
-        if args.extractor != "rules":
+        extractor = extractor_for = None
+        if args.extractor == "oracle":
+            from proven.evaluate import OracleExtractor
+            extractor_for = OracleExtractor
+        elif args.extractor != "rules":
             if args.allow_network:
                 netguard.allow_network()
             extractor = build(args.extractor, model=args.model, budget=Budget(args.token_budget),
@@ -128,7 +133,8 @@ def main(argv: list[str] | None = None) -> int:
             for phrasing in (("seen", "heldout") if args.phrasing == "both" else (args.phrasing,)):
                 policy = Policy(model_terms_anchor=True) if args.anchor_model_terms else None
                 _print_benchmark(evaluate(args.split, args.n, policy=policy, phrasing=phrasing,
-                                          extractor=extractor, workers=args.workers))
+                                          extractor=extractor, workers=args.workers,
+                                          extractor_for=extractor_for))
                 print()
         except (BudgetExceeded, RuntimeError) as exc:
             if extractor is None:
@@ -156,8 +162,9 @@ def main(argv: list[str] | None = None) -> int:
         from proven.synth import generate_split
         with open(args.out, "w", encoding="utf-8") as handle:
             for scenario in generate_split(args.split, args.n, args.phrasing):
-                handle.write(json.dumps(scenario.to_dict()) + "\n")
-        print(f"wrote {args.n} {args.split} scenarios ({args.phrasing} phrasing) to {args.out}")
+                row = scenario.to_chat() if args.format == "chat" else scenario.to_dict()
+                handle.write(json.dumps(row) + "\n")
+        print(f"wrote {args.n} {args.split} scenarios ({args.phrasing} phrasing, {args.format}) to {args.out}")
     return 0
 
 

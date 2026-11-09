@@ -81,6 +81,10 @@ def test_benchmark(api):
     status, result = api("POST", "/api/benchmark", {"split": "test", "n": 22, "phrasing": "seen"})
     assert status == 200 and result["defects"]["unsafe_passes"] == 0
     assert api("POST", "/api/benchmark", {"n": 99999})[0] == 400
+    status, result = api("POST", "/api/benchmark", {"split": "train", "n": 22,
+                                                     "phrasing": "paraphrase"})
+    assert status == 200 and result["phrasing"] == "paraphrase"
+    assert api("POST", "/api/benchmark", {"phrasing": "slang"})[0] == 400
 
 
 def test_resolutions_need_a_closed_action_and_a_reason(api):
