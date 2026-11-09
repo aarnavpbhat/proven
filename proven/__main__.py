@@ -5,6 +5,7 @@
     verify      check an explanation file against a ledger CSV or JSON
     benchmark   per-family results on held-out synthetic closes
     generate    write a labelled synthetic dataset (JSON lines) for training
+    replay      re-run every case a reviewer taught Proven from; non-zero if any verdict moved
 """
 from __future__ import annotations
 
@@ -95,6 +96,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--phrasing", default="seen", choices=("seen", "heldout"))
     p.add_argument("--out", required=True)
 
+    p = sub.add_parser("replay", help="re-verify the cases reviewers taught lessons from")
+    p.add_argument("--data-dir", default=".proven")
+
     args = parser.parse_args(argv)
     env.load()
 
@@ -137,6 +141,17 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"model usage: {budget.calls} request(s), {budget.input_tokens:,} input + "
                       f"{budget.output_tokens:,} output tokens (budget {budget.max_tokens:,}); "
                       f"cache {getattr(extractor, 'hits', 0)} hit(s)", file=sys.stderr)
+    elif args.command == "replay":
+        from proven import learned
+        results = learned.replay(args.data_dir)
+        for r in results:
+            note = "" if r["lesson_active"] else "  (its lesson has been removed)"
+            print(f"[{'ok' if r['ok'] else 'CHANGED':7s}] {r['quote']}\n"
+                  f"          lesson {r['lesson_id']}: {r['before']} -> {r['expected']} when taught; "
+                  f"now {r['actual']}{note}")
+        bad = [r for r in results if not r["ok"]]
+        print(f"\n{len(results)} case(s), {len(bad)} changed")
+        return 1 if bad else 0
     elif args.command == "generate":
         from proven.synth import generate_split
         with open(args.out, "w", encoding="utf-8") as handle:

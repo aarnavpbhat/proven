@@ -5,6 +5,16 @@ same code the server installs at start-up — so a test that tried to reach a
 provider would fail rather than spend money. The Claude extractor is tested
 against a fake client; its network check is monkeypatched where a test needs it.
 """
-from proven import netguard
+import pytest
+
+from proven import claims, netguard
 
 netguard.install()
+
+
+@pytest.fixture(autouse=True)
+def _no_learned_terms_leak():
+    """A console that starts with lessons on disk applies them process-wide (that is the
+    point of it); no test may leave any behind for the next one."""
+    yield
+    claims.set_learned([])

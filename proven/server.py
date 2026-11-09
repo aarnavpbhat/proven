@@ -14,13 +14,16 @@ needed to find out whether the checks are worth deploying.
     POST /api/verify             explanation + ledger -> report
     POST /api/benchmark          {split, n, phrasing} -> per-family results
     GET  /api/resolutions        resolutions recorded so far
-    POST /api/resolutions        record one reviewer decision
+    POST /api/resolutions        record one reviewer decision (optionally with a `learn` lesson)
+    GET  /api/lexicon            lessons reviewers have taught, with where each came from
+    POST /api/lexicon/remove     {id} -> forget one lesson (DELETE /api/lexicon?id= also works)
 """
 from __future__ import annotations
 
 import importlib.util
 import json
 import sys
+import threading
 import traceback
 from datetime import datetime, timezone
 from http import HTTPStatus
@@ -28,7 +31,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-from proven import __version__, netguard, showcase
+from proven import __version__, learned, netguard, showcase
 from proven.evaluate import evaluate
 from proven.extract import RuleExtractor
 from proven.ledger import Ledger
@@ -61,6 +64,8 @@ ACTIONS = (
      "help": "The ledger supplied does not contain what is needed.", "reduces_review": False},
 )
 ACTION_IDS = {a["id"] for a in ACTIONS}
+#: The actions that say "Proven should have known this". Only these may carry a lesson.
+TEACHING_ACTIONS = frozenset(a["id"] for a in ACTIONS if a["reduces_review"])
 MIN_NOTE = 10
 
 
@@ -98,6 +103,8 @@ class App:
     def __init__(self, data_dir: Path):
         self.data_dir = data_dir
         self.resolutions = data_dir / "resolutions.jsonl"
+        self._lock = threading.RLock()
+        self.lexicon: list[dict] = learned.apply(data_dir)   # the only place lessons are loaded
 
     # ── handlers ──
     def config(self) -> dict:
@@ -111,7 +118,8 @@ class App:
                 "extractors": [{"id": "rules", "label": "Rules (offline)", "available": True, "reason": ""},
                                {"id": "claude", "label": "Claude (sends narrative only)",
                                 "available": claude_ok, "reason": reason}],
-                "policy": Policy().to_dict(), "actions": list(ACTIONS)}
+                "policy": Policy().to_dict(), "actions": list(ACTIONS),
+                "learned": {"active": len(self.lexicon)}}
 
     def verify(self, body: dict) -> dict:
         text = str(body.get("explanation", ""))
@@ -134,7 +142,8 @@ class App:
         else:
             raise BadRequest(f"unknown extractor {extractor_id!r}")
         try:
-            return run(text, book, extractor=extractor, network_allowed=netguard.network_allowed())
+            with self._lock, learned.lexicon(self.lexicon):
+                return run(text, book, extractor=extractor, network_allowed=netguard.network_allowed())
         except NetworkDisabled as exc:
             raise BadRequest(str(exc)) from None
 
@@ -146,7 +155,9 @@ class App:
         n = int(body.get("n", 220))
         if not 1 <= n <= 2000:
             raise BadRequest("n must be between 1 and 2000")
-        return evaluate(split, n, phrasing=phrasing)
+        # The benchmark measures the built-in lexicon; a reviewer's lessons never enter it.
+        with self._lock, learned.lexicon([]):
+            return evaluate(split, n, phrasing=phrasing)
 
     def record(self, body: dict) -> dict:
         action = body.get("action")
@@ -156,16 +167,85 @@ class App:
         if len(note) < MIN_NOTE:
             raise BadRequest("a resolution needs a reason of at least 10 characters — "
                              "a decision nobody can re-read cannot become a regression test")
+        lesson_in = body.get("learn")
+        if lesson_in is not None and action not in TEACHING_ACTIONS:
+            raise BadRequest("only Wrong evidence, Misread sentence and Accept convention can teach "
+                             "Proven something; remove the lesson or choose one of those actions")
         entry = {"recorded_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                  "run_id": str(body.get("run_id", "")), "claim_id": str(body.get("claim_id", "")),
                  "quote": str(body.get("quote", "")), "verdict": str(body.get("verdict", "")),
                  "action": action, "note": note,
                  "seconds_on_claim": body.get("seconds_on_claim"),
                  "reduces_review": next(a["reduces_review"] for a in ACTIONS if a["id"] == action)}
-        self.data_dir.mkdir(parents=True, exist_ok=True)
-        with self.resolutions.open("a", encoding="utf-8") as handle:
-            handle.write(json.dumps(entry) + "\n")
-        return {"ok": True, "resolution": entry}
+        with self._lock:
+            lesson = None
+            if lesson_in is not None:
+                lesson, case = self._teach(body, lesson_in, entry)
+                entry.update({"lesson_id": lesson["id"], "case": case})
+            self.data_dir.mkdir(parents=True, exist_ok=True)
+            with self.resolutions.open("a", encoding="utf-8") as handle:
+                handle.write(json.dumps(entry) + "\n")
+        out: dict = {"ok": True, "resolution": entry}
+        if lesson is not None:
+            out["lesson"] = lesson
+            out["verdict_before"] = entry["case"]["verdict_before"]
+            out["verdict_after"] = entry["case"]["verdict_after"]
+        return out
+
+    def _teach(self, body: dict, lesson_in: object, entry: dict) -> tuple[dict, dict]:
+        """Validate, dry-run, store and activate one lesson. Returns (lesson, regression case)."""
+        if not isinstance(lesson_in, dict):
+            raise BadRequest("learn must be an object {triggers: [...], terms: [...]}")
+        explanation, quote = str(body.get("explanation", "")), entry["quote"]
+        if not explanation.strip() or not quote:
+            raise BadRequest("a lesson needs the explanation text and the claim's quote, so it can "
+                             "be re-run as a regression case")
+        case: dict = {"explanation": explanation, "quote": quote}
+        if body.get("ledger_csv"):
+            case.update(ledger_csv=str(body["ledger_csv"]), entity=str(body.get("entity") or "Uploaded ledger"))
+        elif body.get("scenario_id"):
+            load_scenario(str(body["scenario_id"]))   # raises BadRequest if unknown
+            case["scenario_id"] = str(body["scenario_id"])
+        else:
+            raise BadRequest("a lesson needs the scenario_id or ledger_csv the claim was checked against")
+        try:
+            lesson = learned.make_entry(
+                lesson_in.get("triggers"), lesson_in.get("terms"), note=entry["note"],
+                run_id=entry["run_id"], claim_id=entry["claim_id"], quote=quote, action=entry["action"])
+            before = learned.case_verdict(case, self.lexicon)
+            after = learned.case_verdict(case, self.lexicon + [lesson])
+        except learned.LessonRefused as exc:
+            raise BadRequest(f"Proven will not learn this: {exc}") from None
+        except (ValueError, KeyError) as exc:
+            raise BadRequest(f"could not re-run the claim: {exc}") from None
+        if before is None:
+            raise BadRequest("this claim was not found when the sentence is re-read by the offline "
+                             "rules, so a lesson about it could not be replayed; fix the sentence or "
+                             "resolve it without teaching")
+        if after == "PASS" and before != "PASS" and lesson_in.get("confirm_pass") is not True:
+            raise BadRequest(
+                f"This lesson would turn the claim from {before} to PASS. Check that the matched "
+                "transactions really are the stated cause, then send it again with confirm_pass: true.")
+        try:
+            learned.append(self.data_dir, lesson)
+        except learned.LessonRefused as exc:
+            raise BadRequest(f"Proven will not learn this: {exc}") from None
+        self.lexicon = learned.apply(self.data_dir)
+        case.update(verdict_before=before, verdict_after=after)
+        return lesson, case
+
+    def list_lexicon(self) -> dict:
+        with self._lock:
+            return {"entries": list(self.lexicon)}
+
+    def forget(self, lesson_id: str) -> dict:
+        with self._lock:
+            try:
+                gone = learned.remove(self.data_dir, lesson_id)
+            except KeyError:
+                raise BadRequest(f"no learned entry {lesson_id!r}") from None
+            self.lexicon = learned.apply(self.data_dir)
+            return {"ok": True, "removed": gone, "active": len(self.lexicon)}
 
     def list_resolutions(self) -> dict:
         if not self.resolutions.exists():
@@ -243,17 +323,28 @@ def make_handler(app: App):
                            {"Content-Disposition": f'attachment; filename="{s["id"]}-ledger.csv"'})
             elif url.path == "/api/resolutions":
                 self._guard(app.list_resolutions)
+            elif url.path == "/api/lexicon":
+                self._guard(app.list_lexicon)
             else:
                 self._json(HTTPStatus.NOT_FOUND, {"error": f"no such route {url.path}"})
 
         def do_POST(self):  # noqa: N802
             routes = {"/api/verify": app.verify, "/api/benchmark": app.benchmark,
-                      "/api/resolutions": app.record}
+                      "/api/resolutions": app.record,
+                      "/api/lexicon/remove": lambda body: app.forget(str(body.get("id", "")))}
             handler = routes.get(urlparse(self.path).path)
             if handler is None:
                 self._json(HTTPStatus.NOT_FOUND, {"error": "no such route"})
                 return
             self._guard(lambda: handler(self._body()))
+
+        def do_DELETE(self):  # noqa: N802
+            url = urlparse(self.path)
+            if url.path != "/api/lexicon":
+                self._json(HTTPStatus.NOT_FOUND, {"error": "no such route"})
+                return
+            lesson_id = parse_qs(url.query).get("id", [""])[0]
+            self._guard(lambda: app.forget(lesson_id))
 
     return Handler
 
@@ -275,6 +366,7 @@ def serve(host: str = "127.0.0.1", port: int = 8765, allow_network: bool = False
     print(f"Proven {__version__} — reviewer console at http://{host}:{server.server_address[1]}/")
     print(f"network: {mode}")
     print(f"resolutions: {Path(data_dir) / 'resolutions.jsonl'}")
+    print(f"learned lexicon: {learned.path(data_dir)} ({len(learned.load(data_dir))} active)")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
