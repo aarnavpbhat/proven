@@ -370,7 +370,43 @@ amount and direction checks still decide. Binding a reason to transactions by wo
 decides almost nothing. It degrades *safely*: everything goes to REVIEW, with zero unsafe PASSes
 and zero false FAILs.
 
-That gap is the case for the model-assisted extractor and for training it.
+That gap is the case for the model-assisted extractor. The next section measures how much of
+it a model can close.
+
+### With a model proposing
+
+Same 440-close test split, held-out phrasing. The Claude rows replay cached answers from one
+live run of `claude-sonnet-5-5` (`--extractor claude --model claude-sonnet-5-5`). The oracle
+(`--extractor oracle`) feeds the generator's own gold proposals through the checker, so it is the
+ceiling for any model.
+
+| Proposer | Guard | Decided | Mean reward | Correct passed | Correct **failed** | **Unsafe PASS** |
+|---|---|---:|---:|---:|---:|---:|
+| Rules | default | 11.0% | 0.164 | 0 / 810 | 0 | 0 |
+| Claude Sonnet | default | 11.0% | 0.180 | 0 / 810 | 0 | 0 |
+| Oracle | default | 11.0% | 0.186 | 0 / 810 | 0 | 0 |
+| Claude Sonnet | `--anchor-model-terms` | 38.1% | 0.431 | 283 / 810 | 0 | **12** |
+| Oracle | `--anchor-model-terms` | 60.7% | 0.690 | 542 / 810 | 0 | 0 |
+
+Three things follow.
+
+- **A model's terms may not fail a claim either.** Before the guard covered FAIL, the same Sonnet
+  run failed 68 correct explanations, every one on model-proposed terms that caught only one of
+  a cause's two invoices. Those claims now go to REVIEW (`REASON_FOUND_ONLY_BY_MODEL_TERMS`).
+- **Letting model terms anchor a PASS is unsafe with a real model.** The experimental
+  `--anchor-model-terms` policy is clean on gold terms and produces 12 unsafe PASSes on Sonnet's:
+  six where a vague reason ("the second location") drew a term that matched a neighbouring
+  cause's invoices, six where the terms covered the change and hid a misbooked transaction. It is
+  off by default and should stay off.
+- **The route across the gap is a person, once.** In the Sonnet run 710 of the 810 correct
+  explanations sit in REVIEW only because their support rests on model terms. A reviewer who
+  confirms such a term teaches it to the learned lexicon (`learned.py`, "Teach Proven" in the
+  console); from then on the written words bind and the ledger decides.
+
+There is also a `paraphrase` tier (`--phrasing paraphrase`) whose train and test phrases are
+disjoint from each other and from the held-out tier, and a hand-written close
+(`proven/examples/`, a coffee roaster) whose answer key was committed before Proven ran on it.
+No defective sentence in it passes; several correct ones go to REVIEW over one unmatched word.
 
 **What this does not show.** The generator, the lexicon and the checker share an author, so the
 seen-phrasing numbers are a **consistency check, not evidence of accuracy** on real commentary.
@@ -381,8 +417,9 @@ Other limits:
 - One claim per sentence.
 - Two periods.
 - Expense accounts only; no accruals or reversals logic.
-- The Claude extractor is tested against a fake client. This build has not been run against the
-  live API.
+- The Claude extractor has been run live once (Haiku, Sonnet and Opus on 40 closes; Sonnet on
+  440). The open-weight extractor runs against a local Ollama server but has no benchmark
+  numbers here yet.
 
 ---
 
@@ -397,7 +434,8 @@ What exists:
 
 - **Data.** `python -m proven generate` writes labelled closes as JSON lines: ledger,
   explanation, and per-claim family, requirement, expected finding and culprit transactions.
-  Train and test splits are disjoint, with seen and held-out phrasings.
+  Train and test splits are disjoint, with seen, held-out and paraphrase phrasings. Every label
+  carries a gold proposal, and `--format chat` writes chat-format fine-tuning examples.
 - **Reward.** `evaluate.reward()` is in [−1, 1] and asymmetric:
 
   | Outcome | Reward |
@@ -410,10 +448,14 @@ What exists:
 - **Baseline and target.** The rule extractor scores 0.962 on seen phrasing and 0.164 on held-out
   phrasing. Held-out mean reward, with unsafe PASS held at zero, is the number a trained proposer
   has to move.
-- **Safety by construction.** The guard means a better proposer can only raise coverage. Its
-  terms alone can never turn a claim into a PASS.
+- **Safety by construction.** A proposer's terms alone can never turn a claim into a PASS or a
+  FAIL.
+- **Ceiling.** That same guard caps what training can buy: with it on, a perfect proposer
+  reaches 0.186 mean reward on held-out phrasing, against 0.164 for the rules. Relaxing it is what a real
+  model cannot be trusted with.
 
-What does not exist yet: a training run.
+What does not exist yet: a training run. Given the ceiling, the more promising use of the
+proposer is suggesting vocabulary for a reviewer to confirm.
 
 ---
 
@@ -449,11 +491,27 @@ A ledger CSV needs the columns `id, date, account, vendor, memo, amount`; amount
 thousands separators or accounting parentheses. The two most recent months become the prior and
 current periods.
 
+Settings are read from a `.env` file if one exists (`ANTHROPIC_API_KEY`, `PROVEN_CLAUDE_MODEL`,
+`PROVEN_OPENAI_BASE_URL`, `PROVEN_OPENAI_API_KEY`, `PROVEN_OPENAI_MODEL`, `PROVEN_TOKEN_BUDGET`,
+`PROVEN_USD_BUDGET`); the real environment wins.
+
 The optional Claude extractor needs `pip install anthropic` and an API key, and must be enabled
 explicitly:
 
 ```bash
 python -m proven serve --allow-network
+python -m proven benchmark --extractor claude --model claude-sonnet-5-5 --allow-network \
+    --phrasing heldout --n 40 --usd-budget 1
+```
+
+Every request is checked against a token and dollar budget before it is sent, and proposals are
+cached in `.proven/cache`, so a repeated run costs nothing.
+
+The open-weight extractor talks to any OpenAI-compatible endpoint. A local Ollama server is on
+loopback, so it needs no network permission:
+
+```bash
+python -m proven benchmark --extractor openweight --model qwen2.5:14b --phrasing heldout --n 40
 ```
 
 ### Tests
@@ -462,7 +520,7 @@ python -m proven serve --allow-network
 python -m pytest proven/tests -q
 ```
 
-140 tests, including negative controls (inputs that must *not* be flagged), the benchmark floors,
+236 tests, including negative controls (inputs that must *not* be flagged), the benchmark floors,
 an AST check that the package imports nothing outside the standard library, the HTTP API, and the
 Vercel entry point. If the TypeScript compiler (`tsc`) is installed, the console's script is
 also type-checked under `--strict`.
@@ -496,6 +554,13 @@ proven/
   claims.py     proposals, admit(), deterministic readers, the lexicon
   extract.py    the rule extractor
   llm.py        the optional Claude extractor (proposes only)
+  openweight.py the optional open-weight extractor (OpenAI-compatible endpoint)
+  extractors.py builds an extractor by name, with budget and cache
+  budget.py     token and dollar limit, checked before every request
+  cache.py      proposals cached on disk
+  env.py        reads .env
+  learned.py    reviewer-confirmed vocabulary
+  examples/     a hand-written close with its answer key
   verify.py     the checks and the verdict algebra
   report.py     one run: coverage, verdicts, evidence, run record
   synth.py      synthetic closes with known causes
@@ -504,7 +569,7 @@ proven/
   netguard.py   network-off, enforced
   server.py     stdlib HTTP server + JSON API
   web/          the reviewer console (HTML, CSS, JS checked by tsc --strict)
-  tests/        140 tests
+  tests/        236 tests
 api/index.py    the Vercel function (wraps the same request handler)
 vercel.json     static console from the CDN, /api/* to the function
 docs/           the screenshots in this README
@@ -517,5 +582,7 @@ docs/           the screenshots in this README
 | GET | `/api/scenario?id=` | a close's ledger, explanation and (synthetic) ground truth |
 | GET | `/api/ledger.csv?id=` | a close's ledger as a CSV |
 | POST | `/api/verify` | explanation + scenario or CSV ledger → full report |
-| POST | `/api/benchmark` | `{split, n, phrasing}` → per-family results |
+| POST | `/api/benchmark` | `{split, n, phrasing, extractor}` (rules or oracle) → per-family results |
+| GET | `/api/lexicon` | reviewer-confirmed vocabulary |
+| POST | `/api/lexicon/remove` | `{id}` → forget one lesson |
 | GET, POST | `/api/resolutions` | list or record reviewer decisions |
