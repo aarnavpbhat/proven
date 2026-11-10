@@ -39,7 +39,8 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass, field
 from enum import Enum
 
-from proven.claims import Claim, Strength, Term, _account_tokens, declared_terms, term_pattern
+from proven.claims import (Claim, Strength, Term, _account_tokens, declared_terms,
+                           term_pattern, unread)
 from proven.ledger import TOTAL, Contribution, Ledger, Transaction
 from proven.money import Figure, compare, fmt_money, fmt_pct, fmt_signed
 
@@ -243,7 +244,7 @@ def verify_claim(claim: Claim, ledger: Ledger, policy: Policy | None = None) -> 
             f"or add an alias to the chart."))
         for name in ("direction", "change", "attribution", "classification"):
             checks.append(Check(name, False, "", "no account to check against"))
-        return _finish(claim, checks, findings, decisive, {}, policy)
+        return _finish(claim, checks, findings, decisive, {}, policy, ledger)
 
     account = claim.account
     var = ledger.variance(account)
@@ -355,7 +356,7 @@ def verify_claim(claim: Claim, ledger: Ledger, policy: Policy | None = None) -> 
                             else "no expense matching the reason is booked against its vendor's usual account"))
         findings.extend(found)
 
-    return _finish(claim, checks, findings, decisive, recon, policy)
+    return _finish(claim, checks, findings, decisive, recon, policy, ledger)
 
 
 def _specific_model_terms(claim: Claim, ledger: Ledger, policy: Policy) -> list[Term]:
@@ -616,7 +617,7 @@ def _classification(claim, ledger, policy):
 
 
 def _finish(claim: Claim, checks: list[Check], findings: list[Finding], decisive: list[str],
-            recon: dict, policy: Policy) -> ClaimResult:
+            recon: dict, policy: Policy, ledger: Ledger) -> ClaimResult:
     confirmed = [f for f in findings if f.severity == CONFIRMED]
     advisory = [f for f in findings if f.severity == ADVISORY]
     if confirmed:
@@ -636,6 +637,16 @@ def _finish(claim: Claim, checks: list[Check], findings: list[Finding], decisive
             f"Would have been {computed.value}, but the account ({claim.account}) was mapped "
             f"by the model, not by an alias written in the sentence. Confirm the mapping.")
         reason = f"Account mapping proposed by the model; would otherwise be {computed.value}."
+
+    # A PASS says the whole sentence agrees with the ledger, so it is withheld when any
+    # part of the sentence went unread. A FAIL stands: one thing shown wrong is enough.
+    if verdict is Verdict.PASS:
+        gaps = unread(claim, ledger)
+        if gaps:
+            verdict = Verdict.REVIEW
+            adjustments.append("Would have been PASS, but part of the sentence was not "
+                               "read: " + "; ".join(gaps) + ".")
+            reason = f"What was checked agrees with the ledger, but {gaps[0]}."
 
     return ClaimResult(claim=claim, verdict=verdict, computed_verdict=computed, reason=reason,
                        checks=checks, findings=findings, reconstruction=recon,
