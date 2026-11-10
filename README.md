@@ -403,6 +403,37 @@ Three things follow.
   confirms such a term teaches it to the learned lexicon (`learned.py`, "Teach Proven" in the
   console); from then on the written words bind and the ledger decides.
 
+### What confirmed lessons buy
+
+`python3 -m proven teach-sim` plays that reviewer. It teaches from the first 220 test closes and
+measures the other 220 with the **rules alone**: no model runs at check time. A claim is taught
+from only if its label says the explanation is right, it sits in REVIEW solely because its support
+rests on model terms, and confirming the terms that matched transactions turns it into a PASS.
+Held-out phrasing, terms proposed by Sonnet (replayed from cache):
+
+| Closes taught from | Lessons | Decided | Reward | Controls passed | Control FAIL | Unsafe PASS |
+|---|---|---|---|---|---|---|
+| 0 | 0 | 11.1% | 0.165 | 0/402 | 0 | 0 |
+| 10 | 12 | 39.3% | 0.446 | 136/402 | 0 | 0 |
+| 20 | 22 | 60.2% | 0.653 | 242/402 | 0 | 0 |
+| 55 | 34 | 84.0% | 0.895 | 357/402 | 0 | 0 |
+| 110 | 36 | 88.6% | 0.942 | 380/402 | 0 | 0 |
+
+With gold terms (the default, `--extractor oracle`, fully offline) the same loop reaches 92.6%
+decided on held-out phrasing and 87.1% on the paraphrase tier after 220 closes, again with no
+unsafe PASS and no control FAIL.
+
+Read this as an upper bound, not a forecast. The simulated reviewer reads the label, so it never
+confirms a wrong explanation; a person can. The synthetic phrasings come from a finite pool (a few dozen
+held-out reasons), so the curve saturates far sooner than real commentary would. What it does show
+is the shape of the system: the model's job is to draft lessons, a person confirms each once, and
+after that the deterministic rules decide.
+
+The first run of this simulation passed three wrong explanations. A correct lesson
+("board coverage" → d&o) left the stray word "coverage" free to match an unrelated cyber-coverage
+invoice, and together they covered a movement the stated reason only half explained. A lesson now
+replaces its trigger's words instead of adding to them (`claims.anchored_terms`).
+
 There is also a `paraphrase` tier (`--phrasing paraphrase`) whose train and test phrases are
 disjoint from each other and from the held-out tier, and a hand-written close
 (`proven/examples/`, a coffee roaster) whose answer key was committed before Proven ran on it.
@@ -520,7 +551,7 @@ python -m proven benchmark --extractor openweight --model qwen2.5:14b --phrasing
 python -m pytest proven/tests -q
 ```
 
-236 tests, including negative controls (inputs that must *not* be flagged), the benchmark floors,
+240 tests, including negative controls (inputs that must *not* be flagged), the benchmark floors,
 an AST check that the package imports nothing outside the standard library, the HTTP API, and the
 Vercel entry point. If the TypeScript compiler (`tsc`) is installed, the console's script is
 also type-checked under `--strict`.
@@ -560,6 +591,7 @@ proven/
   cache.py      proposals cached on disk
   env.py        reads .env
   learned.py    reviewer-confirmed vocabulary
+  teachsim.py   simulated reviewer loop: what confirmed lessons buy on untaught closes
   examples/     a hand-written close with its answer key
   verify.py     the checks and the verdict algebra
   report.py     one run: coverage, verdicts, evidence, run record
@@ -569,7 +601,7 @@ proven/
   netguard.py   network-off, enforced
   server.py     stdlib HTTP server + JSON API
   web/          the reviewer console (HTML, CSS, JS checked by tsc --strict)
-  tests/        236 tests
+  tests/        240 tests
 api/index.py    the Vercel function (wraps the same request handler)
 vercel.json     static console from the CDN, /api/* to the function
 docs/           the screenshots in this README
