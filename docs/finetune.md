@@ -398,7 +398,15 @@ grammar-constrained decoding. What is specific here is that the constraint is ex
 admission rule the checker applies afterwards, so the decoder and the verifier agree on what a
 well-formed proposal is.
 
-CD_RESULT
+**Result on the unseen suite.** All 1,100 taught closes were decoded under the constraint
+by the rebuilt-target model: none needed the unconstrained fallback, none left the grammar,
+and none came back without a proposal, at 2.28 s per close. The teaching result is the same
+as without it: 54.4% decided on held-out phrasing (185 lessons) and 40.9% on paraphrase (254
+lessons, against 40.7% and 251), 0 control FAIL and 0 unsafe PASS. That is the expected
+outcome and worth stating plainly: the fine-tuned model already kept its promises (one reply
+in 1,100 failed to parse without the constraint), so the constraint turns "almost always"
+into "always" and moves no score. It does not touch the search terms, which is where this
+model loses.
 
 ## 8. Pooling sampled replies
 
