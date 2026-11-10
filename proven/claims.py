@@ -374,6 +374,90 @@ class Claim:
         }
 
 
+# ── What a PASS may not leave unread ─────────────────────────────────────
+
+#: Every word the deterministic readers understand outside a stated reason. A sentence
+#: that says anything else outside its reason says something no check looked at, and
+#: an unread word is exactly where a wrong explanation hides: "slid" for "fell",
+#: "fueled by" for "due to", "below" for a sign. The list is closed on purpose and
+#: holds no negation.
+READ_WORDS = frozenset("""
+a an the and of in to for from at by on with over as its our this that
+was were is are came went has had have been
+rose risen increased increase grew grown growth climbed jumped rise higher up
+fell fallen decreased decrease declined decline dropped drop lower reduction reduced shrank down
+approximately about roughly around nearly
+compared versus vs relative month months quarter year prior previous last period
+january february march april may june july august september october november december
+jan feb mar apr jun jul aug sep sept oct nov dec
+due because driven result reflecting attributable owing thanks back
+primarily mainly largely mostly chiefly principally predominantly large part partly partially
+cost costs spend spending expense expenses fee fees total balance
+""".split())
+
+_NEGATION = re.compile(
+    r"\b(?:not|no|never|nor|neither|without|except|excluding|despite|unrelated|versus|vs"
+    r"|rather\s+than|instead\s+of|other\s+than|as\s+opposed\s+to)\b|n't", re.IGNORECASE)
+_WORDED_AMOUNT = re.compile(
+    r"\b(?:hundred|thousand|million|billion|grand|doubled?|tripled?|halved|twice|twofold)\b",
+    re.IGNORECASE)
+_WORD = re.compile(r"[a-z][a-z&'\-]*")
+
+
+def unread(claim: "Claim", ledger: Ledger) -> list[str]:
+    """Reasons this sentence cannot be passed: what it says that no check read.
+
+    A FAIL needs one thing shown wrong. A PASS needs everything the sentence asserts
+    to have been looked at, so this is consulted only before a PASS."""
+    quote = claim.quote
+    problems: list[str] = []
+
+    checked = {f.text for f in (claim.change, claim.percent, claim.prior, claim.current) if f}
+    stray = [f.text for f in find_money(quote) + find_percents(quote) if f.text not in checked]
+    if stray:
+        problems.append(f"a figure in the sentence was not checked ({', '.join(stray)})")
+    worded = _WORDED_AMOUNT.search(quote)
+    if worded:
+        problems.append(f"an amount is written in words (“{worded.group(0)}”)")
+
+    rest = quote
+    if claim.driver:
+        rest = quote.replace(claim.driver, " ", 1)
+        negation = _NEGATION.search(claim.driver)
+        if negation:
+            problems.append(f"the stated reason contains a negation or contrast "
+                            f"(“{negation.group(0)}”) that is not read")
+    else:
+        problems.append("no stated reason was read")
+    if claim.direction is None:
+        problems.append("no direction word was read, so the amount was compared without its sign")
+    elif _UP.search(rest) and _DOWN.search(rest):
+        problems.append("the sentence uses both a rise word and a fall word")
+
+    for figure in find_money(rest) + find_percents(rest):
+        rest = rest.replace(figure.text, " ")
+    lower = rest.lower()
+    named: set[str] = set()
+    known = set(READ_WORDS)
+    candidates = [(alias, TOTAL) for alias in TOTAL_ALIASES]
+    for account in ledger.accounts:
+        candidates.append((account.name, account.name))
+        candidates.extend((alias, account.name) for alias in account.aliases)
+    for alias, name in candidates:
+        known.update(_WORD.findall(alias.lower()))
+        if re.search(rf"(?<![a-z0-9]){re.escape(alias.lower())}(?![a-z0-9])", lower):
+            named.add(name)
+    if len(named) > 1:
+        problems.append(f"the sentence names more than one account ({', '.join(sorted(named))})")
+    if re.search(r"\d", re.sub(r"\b(?:19|20)\d\d\b|\b[qh][1-4]\b", " ", lower)):
+        problems.append("a number in the sentence was not read as a figure")
+    words = [w.strip("-'") for w in _WORD.findall(lower)]
+    unknown = sorted({w for w in words if w and w not in known})
+    if unknown:
+        problems.append(f"words outside the stated reason were not read ({', '.join(unknown)})")
+    return problems
+
+
 def _figure_in(quote: str, text: str | None, parser) -> tuple[Figure | None, str | None]:
     """A proposed figure, if the quote really states it; else the reason it does not."""
     if not text:
