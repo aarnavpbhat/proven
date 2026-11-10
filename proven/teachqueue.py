@@ -139,10 +139,16 @@ def close_key(explanation: str, scenario_id: str = "", ledger_csv: str = "") -> 
 
 
 def record_run(data_dir: Path | str, body: dict, report: dict) -> int:
-    """Store the run's waiting claims, if any. Returns how many were stored.
+    """Store a model run's waiting claims, if any. Returns how many were stored.
 
-    A run with nothing waiting is stored only if it replaces an earlier run of the same
-    close (so a re-check after teaching empties that close's entries)."""
+    A model run with nothing waiting is stored only if it replaces an earlier run of the
+    same close (so a re-check after teaching empties that close's entries). A rules run is
+    never stored."""
+    if report["run"]["versions"]["extractor"].startswith("rules/"):
+        # The rules propose no terms, so their run says nothing about what waits on a model's
+        # words; it must not replace a stored model run (re-opening a queued close re-checks
+        # it with the rules).
+        return 0
     claims = waiting_in(report)
     scenario_id = "" if body.get("ledger_csv") else str(body.get("scenario_id") or "")
     ledger_csv = str(body.get("ledger_csv") or "")

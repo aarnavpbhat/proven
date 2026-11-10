@@ -261,6 +261,7 @@ def impact(lesson: dict, active: list[dict], cases: list[Probe] | None = None, *
             reg["examples"].append(_example(probe, b, a))
 
     accepted = not blocking
+    blocking.sort(key=lambda b: b["after"] != "PASS")     # a wrong explanation passing leads
     return {
         "lesson": {"triggers": list(lesson["triggers"]), "terms": list(lesson["terms"])},
         "accepted": accepted,
