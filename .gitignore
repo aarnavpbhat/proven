@@ -18,3 +18,9 @@ public/
 # Local agent tooling.
 .claude/
 .playwright-mcp/
+
+# Fine-tuning artefacts: datasets, adapters and model weights stay out of git.
+training/data/
+training/adapters/
+*.safetensors
+*.gguf
