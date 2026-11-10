@@ -210,7 +210,10 @@ amount).
 companies (brightline, keystone, lumen_loom, halvorsen) and measures the other half with rules
 plus lessons, then the other way round. It uses the `teachsim.py` rule: teach only from a
 correct claim in REVIEW because its support rests on model terms, where confirming those terms
-makes it PASS.
+makes it PASS. Since `0798d4e` the confirmed words are those `learned.trim_terms` keeps
+(docs/teaching.md, "Lessons keep only the words their cause needs"). Re-run with that rule, the
+"after fixes" rows below are unchanged; the earlier code states taught no lesson, so the rule
+cannot change them.
 
 | Code | Taught on | Lessons | Held half: decided before → after | Unsafe PASS | Control FAIL |
 |---|---|---:|---|---:|---:|
@@ -226,7 +229,8 @@ confirming their terms would make each a FAIL, not a PASS. For RB-03, "pantry" m
 2 of 6 grant payees whose names contain it (33%). For NSF-02, "fuel card" carries 73% of a
 price-and-volume change. A wider, scratch-only reviewer, run on pre-guard code, also confirmed
 `WEAK_REASON_MATCH` controls. It taught 10 + 5 lessons. They changed nothing with the rules
-and moved one control to PASS in each direction with Sonnet. The reason is structural: a
+and moved one control to PASS in each direction with Sonnet. (That scratch run predates the
+lesson-trimming rule and was not repeated.) The reason is structural: a
 lesson triggers on a stated reason's exact wording, and eight companies never word a cause the
 same way. Lessons might transfer from one month to the next within a company, which this
 suite cannot measure.

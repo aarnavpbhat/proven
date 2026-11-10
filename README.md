@@ -188,7 +188,10 @@ Proven** under the Resolve menu. A lesson is a phrase and the ledger words it st
 - **Record.** The same check runs again when you press **Record**; a refused lesson is not
   stored, and the refusal appears in the form. A lesson that turns the claim into a PASS also
   needs the tick box confirming you checked the matched transactions. A sentence you recorded
-  as **Confirm defect** becomes a known-wrong case: no later lesson may make it pass.
+  as **Confirm defect** becomes a known-wrong case: no later lesson may make it pass. A lesson
+  is also refused when one of its words matches only this account's routine, unmoved lines or
+  is not needed for the claim to pass; the refusal names the words to teach instead
+  ([why](docs/teaching.md#lessons-keep-only-the-words-their-cause-needs)).
 - **Lessons.** **Learned → Lessons** lists what was taught, with the sentence it came from and
   **Remove**. A lesson applies to every close until it is removed.
 - **Teach next.** When a model extractor's words are the only support for a claim's reason, the
@@ -467,10 +470,10 @@ Held-out phrasing, terms proposed by Sonnet (replayed from cache):
 | Closes taught from | Lessons | Decided | Reward | Controls passed | Control FAIL | Unsafe PASS |
 |---|---|---|---|---|---|---|
 | 0 | 0 | 11.1% | 0.165 | 0/402 | 0 | 0 |
-| 10 | 12 | 39.3% | 0.446 | 136/402 | 0 | 0 |
-| 20 | 22 | 60.2% | 0.653 | 242/402 | 0 | 0 |
-| 55 | 34 | 84.0% | 0.895 | 357/402 | 0 | 0 |
-| 110 | 36 | 88.6% | 0.942 | 380/402 | 0 | 0 |
+| 10 | 12 | 38.9% | 0.447 | 136/402 | 0 | 0 |
+| 20 | 22 | 59.8% | 0.654 | 242/402 | 0 | 0 |
+| 55 | 34 | 83.6% | 0.896 | 357/402 | 0 | 0 |
+| 110 | 36 | 88.2% | 0.943 | 380/402 | 0 | 0 |
 
 With gold terms (the default, `--extractor oracle`, fully offline) the same loop reaches 92.6%
 decided on held-out phrasing and 87.1% on the paraphrase tier after 220 closes, again with no
@@ -502,7 +505,11 @@ fine-tuned model would pay.
 The first run of this simulation passed three wrong explanations. A correct lesson
 ("board coverage" → d&o) left the stray word "coverage" free to match an unrelated cyber-coverage
 invoice, and together they covered a movement the stated reason only half explained. A lesson now
-replaces its trigger's words instead of adding to them (`claims.anchored_terms`).
+replaces its trigger's words instead of adding to them (`claims.anchored_terms`). It also keeps
+only the ledger words its own claim's PASS needs (`learned.trim_terms`), after a guessed vendor
+name, confirmed along with the right word, later carried two wrong explanations to PASS on a
+new suite; the rule, that incident and its cost are in
+[docs/teaching.md](docs/teaching.md#lessons-keep-only-the-words-their-cause-needs).
 
 There is also a `paraphrase` tier (`--phrasing paraphrase`) whose train and test phrases are
 disjoint from each other and from the held-out tier, and a hand-written close
@@ -554,8 +561,45 @@ What exists:
   reaches 0.186 mean reward on held-out phrasing, against 0.164 for the rules. Relaxing it is what a real
   model cannot be trusted with.
 
-What does not exist yet: a training run. Given the ceiling, the more promising use of the
-proposer is suggesting vocabulary for a reviewer to confirm.
+Given the ceiling, the useful job for a trained proposer is drafting vocabulary for a
+reviewer to confirm, and that is what was trained and measured.
+
+### What was trained, and what it showed
+
+The full account, with every table and the commands, is in
+[`docs/finetune.md`](docs/finetune.md). In short:
+
+- **A small local model does not beat the hosted one on companies it has not seen.** A 3B
+  open-weight model (Qwen2.5-3B, 4-bit, LoRA adapters, trained with `mlx-lm` on a 24 GB laptop)
+  was fine-tuned as the proposer. On eleven "unseen" worlds (new industries, written by a
+  different model from the 91 training worlds, protocol fixed before any model was scored) its
+  lessons leave 54.4% of held claims decided on held-out phrasing. Claude Sonnet's leave 81.7%,
+  and the ceiling is 89.3%. It loses in all eleven worlds. Control FAIL and unsafe PASS are 0
+  for every proposer.
+- **In the one world it was first trained on it scores at the ceiling, by memorising.** 92.5%
+  against Sonnet's 88.3%, and an ablation with four cause families removed shows the model
+  had learned which words go with which of that world's causes. The unseen-worlds benchmark
+  exists because of that result.
+- **The loss was diagnosed to one measurable thing.** A proposer has to guess, blind, a word
+  the books really use. Sonnet's guesses find the cause for 84% of true claims; the first
+  multi-world model's found 33%, because its training targets named vendors no request
+  predicts. Targets rebuilt as "guessable and true" doubled its rate on the dev worlds. An
+  untuned 3B model finds 3% and an untuned 7B model 33%: what is left is knowledge of how
+  businesses describe what they buy, which is what a larger model has.
+- **The benchmark found a safety gap in Proven.** On a second suite kept unopened, lessons
+  drafted from Sonnet's guesses let 2 wrong explanations PASS. A lesson now keeps only the
+  words its PASS needs ([`docs/teaching.md`](docs/teaching.md)); the unsafe PASSes are gone
+  and the bars moved by under a point.
+- **Replies are admissible by construction.** `training/constrain.py` decodes under a
+  byte-level automaton, so a reply is always the schema's JSON, quotes and figures are always
+  substrings of the explanation, and accounts always come from the chart, at 0.73 ms per
+  decoding step. Search terms stay free, because constraining them to the ledger would leak
+  the answer.
+- **Reinforcement learning** against the checker's reward (`training/rl.py`, RLOO) is
+  implemented. No RL result is claimed.
+
+What does not exist yet: a fine-tuned model that is worth using in place of the hosted one,
+and any measurement on a real company's books.
 
 ---
 

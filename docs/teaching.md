@@ -2,9 +2,10 @@
 
 A claim whose stated reason is supported only by the model's search terms waits in REVIEW
 (`SUPPORT_RESTS_ON_MODEL_TERMS`) until a reviewer confirms the phrase → terms mapping as a
-lesson. This note covers three additions to that loop:
+lesson. This note covers these additions to that loop:
 
-- a **safety gate** that replays every lesson before it is stored (`proven/gate.py`);
+- a **safety gate** that replays every lesson before it is stored (`proven/gate.py`), and a
+  rule that keeps only the ledger words a lesson's claim needs (`learned.trim_terms`);
 - a **teaching order**, with the reviewer's time counted in confirmations (`teachsim.curve`);
 - a **teaching queue** in the console: what to confirm next across stored runs
   (`proven/teachqueue.py`, `GET /api/queue`, the "Teach next" card in Learned).
@@ -12,9 +13,12 @@ lesson. This note covers three additions to that loop:
 Every number below was produced offline on the merged `integration` code (the unread-content
 guard included), and produced again, identical apart from timings, after merging the
 independent-suite fixes (`integration` at e81f98a): rules extractor, the oracle, or Sonnet 5.5
-proposals replayed from the proposal cache with no request sent (0 cache misses). The standard benchmark is unchanged
-(`benchmark --phrasing seen`: 90.1% decided, 0 unsafe PASS, 0 control FAIL), and so is the
-README's teach-sim table (36 lessons, 88.6% decided, 0 / 0).
+proposals replayed from the proposal cache with no request sent (0 cache misses). The
+simulation numbers were produced once more after the lesson-trimming rule (`0798d4e`, "Lessons
+keep only the words their cause needs" below); the ones that moved are updated. The standard
+benchmark is unchanged (`benchmark --phrasing seen`: 90.1% decided, 0 unsafe PASS, 0 control
+FAIL). The README's teach-sim table now ends at 36 lessons, 88.2% decided, 0 / 0 (88.6% before
+the trimming rule).
 
 ## 1. The safety gate
 
@@ -50,7 +54,8 @@ dry run, nothing stored), every previewed row of `GET /api/queue`, and `teach-si
 starts it in a background thread at `serve`). After that a check takes 20–500 ms on a quiet
 machine: median 277 ms over the 36 Sonnet lessons, 297 ms over the 36 oracle lessons, 182 ms
 over 67 paraphrase lessons. On a second run while other jobs loaded the machine the medians
-were 250–360 ms and the slowest check 704 ms.
+were 250–360 ms and the slowest check 704 ms. (These timings predate the lesson-trimming rule
+and were not measured again.)
 
 ### Deliberately bad lessons
 
@@ -89,20 +94,90 @@ Lessons a careful reviewer (one who reads the label) confirms on correct explana
 
 | Lessons from | Lessons | Refused by the gate |
 |---|---:|---:|
-| Sonnet, held-out (the README's 36, in teaching order) | 36 | **1** ("board coverage" → d&o, liability) |
+| Sonnet, held-out (the README's 36, in teaching order) | 36 | **0** (1 before the trimming rule) |
 | Oracle, held-out | 36 | 0 |
 | Oracle, paraphrase | 67 | 0 |
 
-So 1 of 139 (0.7%); 1 of 36 (2.8%) on real model terms. That one lesson is right for its own
-phrase, but its term "liability" also vouches for the written word "liability" everywhere, so
-correct paraphrase sentences about "liability cover for our board members" bind to the
+So 0 of 139. Before the trimming rule it was 1 of 139 (0.7%), 1 of 36 (2.8%) on real model
+terms: "board coverage" → d&o, liability. That lesson is right for its own phrase, but its
+term "liability" also vouches for the written word "liability" everywhere, so correct
+paraphrase sentences about "liability cover for our board members" bind to the
 general-liability retainer and FAIL (27 of them), and 2 wrong explanations PASS. The held-out
-measurement never sees that side effect, which is why the simulation counts it as a false
-refusal. With the gate on, the arrival-order simulation still teaches 36 lessons (d&o is taught
-from a later claim) and ends at **88.4% decided instead of 88.6%**, 0 / 0 either way.
+measurement never sees that side effect, which is why the simulation counted it as a false
+refusal. The claim it is taught from passes on "d&o" alone, so the trimming rule now drops
+"liability" before the gate sees the lesson, and "board coverage" → d&o is accepted. With the
+gate on, the arrival-order simulation teaches the same 36 lessons as with it off and ends at
+**88.2% decided either way**, 0 / 0 (before the rule: 88.4% with the gate, 88.6% without).
 
 The side effect itself (a learned term vouches for a single written word in every sentence) is
-a property of `verify._weak_binding`, which this stream did not change.
+a property of `verify._weak_binding`, which this stream did not change. The trimming rule only
+keeps such a word out of a lesson when the lesson's own claim does not need it.
+
+### Lessons keep only the words their cause needs
+
+**The rule** (`learned.trim_terms`, tests in `proven/tests/test_trim.py`). It is applied
+wherever a lesson is confirmed: `teach-sim` in every mode, the console's teaching queue,
+`POST /api/resolutions` with a lesson, and `teach-sim --suite independent`. When the lesson
+makes its claim PASS, the claim's own close is read twice:
+
+1. **Routine only.** A word whose every match in the account is a routine line (the same
+   vendor and memo in both periods) that moved by less than materiality ($1,000) is dropped.
+   It found the bill that recurs, not what moved. A recurring bill that did move keeps its word.
+2. **Not needed.** Every remaining word the PASS does not need is dropped, trying first the word
+   whose matches moved least.
+
+A lesson that does not make its claim PASS is left as it is, and the gate replays it whole. If
+no word is left, or the PASS rested on a dropped routine word, the lesson is not learned.
+
+**Why.** On a new 9-world suite (the sealed suite), lessons drafted from Claude Sonnet's blind
+terms let 2 wrong explanations PASS. Sonnet had guessed a recurring contractor's name. In the
+teaching close that word matched only the contractor's flat monthly line; the PASS did not
+need it, and the simulated reviewer confirmed it along with the right term. In a later close
+the same contractor's other job moved, the learned name bound it, and the lesson carried a
+PASS for the wrong cause. `docs/finetune.md` §9 has the details.
+
+**In the console.** A lesson that would be narrowed is refused, not narrowed silently, so what
+is stored is exactly what the reviewer confirmed. The refusal names each dropped word with its
+reason and the lesson to teach instead ("Teach the lesson with only …"), and the 400 body
+carries them in `impact.trim`. The teaching queue suggests only the words that survive the
+rule on the claim's own close.
+
+**What it costs.** Decided share on the untaught closes, before and after the rule, all from
+the proposal cache:
+
+| Run | Decided before | Decided after | Unsafe PASS after | Control FAIL after |
+|---|---:|---:|---:|---:|
+| Sealed suite, Sonnet, held-out | 80.9% | 80.5% | **0** (2 before) | 0 |
+| Sealed suite, Sonnet, paraphrase | 62.5% | 62.2% | 0 | 0 |
+| Unseen suite, Sonnet, held-out | 82.3% | 81.7% | 0 | 0 |
+| Unseen suite, Sonnet, paraphrase | 63.5% | 63.3% | 0 | 0 |
+| Unseen suite, oracle, held-out | 89.5% | 89.3% | 0 | 0 |
+| Unseen suite, oracle, paraphrase | 76.1% | 76.0% | 0 | 0 |
+| Default world, Sonnet, held-out, n = 440 | 88.6% | 88.2% | 0 | 0 |
+| Default world, Sonnet, paraphrase, n = 220 | 74.0% | 73.2% (2 fewer controls passed) | 0 | 0 |
+
+The other default-world cells at n = 220 are unchanged, and so is the oracle at n = 440 (92.6%
+held-out, 87.1% paraphrase). Every careless-reviewer run with the gate on (§2) still ends at
+0 / 0, and `benchmark --phrasing seen` is unchanged (90.1%, 0 / 0).
+
+```bash
+# the --worlds runs: once with --phrasing heldout and once with --phrasing paraphrase
+python -m proven teach-sim --extractor claude --model claude-sonnet-5-5 --worlds sealed --phrasing heldout
+python -m proven teach-sim --extractor claude --model claude-sonnet-5-5 --worlds unseen --phrasing heldout
+python -m proven teach-sim --extractor oracle --worlds unseen --phrasing heldout
+python -m proven teach-sim --extractor claude --model claude-sonnet-5-5 --phrasing heldout --n 440
+python -m proven teach-sim --extractor claude --model claude-sonnet-5-5 --phrasing paraphrase --n 220
+```
+
+**What it does not fix.**
+
+- The gate's regression set cannot test vocabulary it has never seen. A lesson whose phrase and
+  words no known claim uses is accepted as **not tested**; an untested lesson is not a safe one.
+  The trimming rule reads only the teaching close, so a word that close needs can still bind
+  another cause somewhere else.
+- A person can still confirm a wrong explanation. The rule reads the ledger, never the label: it
+  trims a careless lesson the same way as a careful one, and keeps whatever words make the wrong
+  claim PASS.
 
 ## 2. A careless reviewer, with and without the gate
 
@@ -121,12 +196,12 @@ the other 220 (402 correct claims, 140 wrong ones). P = 1 is deterministic; P = 
 | | 0.5 | on | 3 (12 refused) | **0** | **0** | 88.2% |
 | | 0.25 | off | 7 | **7** | **14** | 88.9% |
 | | 0.25 | on | 3 (5 refused) | **0** | **0** | 88.2% |
-| any REVIEW claim with model matches (harder) | 1 | off | 8 | **4** | **14** | 91.7% |
-| | 1 | on | 4 (8 refused) | **0** | **0** | 88.4% |
-| | 0.5 | off | 26 | **5** | **70** | 91.4% mean |
-| | 0.5 | on | 12 (19 refused) | **0** | **0** | 88.4% |
-| | 0.25 | off | 13 | **2** | **56** | 90.8% |
-| | 0.25 | on | 4 (12 refused) | **0** | **0** | 88.4% |
+| any REVIEW claim with model matches (harder) | 1 | off | 9 | **4** | **14** | 91.3% |
+| | 1 | on | 5 (8 refused) | **0** | **0** | 88.2% |
+| | 0.5 | off | 28 | **5** | **70** | 91.1% mean |
+| | 0.5 | on | 16 (19 refused) | **0** | **0** | 88.2% |
+| | 0.25 | off | 15 | **2** | **56** | 90.5% |
+| | 0.25 | on | 6 (12 refused) | **0** | **0** | 88.2% |
 
 **Headline: a reviewer who confirms every wrong explanation the queue shows them causes 4 unsafe
 PASSes and 14 failed correct explanations on untaught closes without the gate, and 0 and 0 with
@@ -134,9 +209,11 @@ it.** Over every careless run (22 with the gate, 22 without) the gate held both 
 zero; without it 17 of the 22 runs broke at least one. The decided share without the gate is
 higher only because it includes the wrong FAILs.
 
-The careless lessons the gate let through did no measured harm (0 / 0). In the harder queue the
-gate also refused the one right lesson "protecting our directors" → d&o, liability in every run
-(the false refusal above); the narrower d&o lesson was taught instead.
+The careless lessons the gate let through did no measured harm (0 / 0). Before the trimming
+rule, the gate in the harder queue also refused the one right lesson "protecting our directors"
+→ d&o, liability in every run (the false refusal above). The rule now drops "liability" before
+the gate sees it, so the gate refused no lesson from a right explanation in any run, and the
+harder queue ends at 88.2% with the gate instead of 88.4%.
 
 The queue offers a careless reviewer few chances: in the console's queue only 6–8 of the waiting
 claims in the teaching pool are on wrong explanations, because a wrong explanation rarely sits in
@@ -153,7 +230,7 @@ number of questions put to the reviewer (`asks`, including declines) where it di
 
 | Proposer, phrasing | Order | 0 | 5 | 10 | 20 | 40 | all |
 |---|---|---:|---:|---:|---:|---:|---:|
-| Sonnet, held-out | arrival | 11.1% | 20.8% | 32.3% | 56.5% (21 asks) | — | 88.6% (36 lessons, 44 asks) |
+| Sonnet, held-out | arrival | 11.1% | 20.7% | 32.1% | 56.1% (21 asks) | — | 88.2% (36 lessons, 44 asks) |
 | | frequency | 11.1% | 18.8% | 31.4% | 54.6% (22) | — | 88.2% (34, 40) |
 | | *hindsight bound* | 11.1% | 26.2% | 39.5% | 64.2% | — | 88.2% |
 | Oracle, held-out | arrival | 11.1% | 20.7% | 32.1% | 58.3% | — | 92.6% (36, 39) |
@@ -221,7 +298,9 @@ Checked in a browser (Playwright, Chromium) on a scratch data directory seeded w
 Sonnet runs (107 waiting claims), port 8771, after the merge with the redesigned console: light
 and dark themes, 1440 px and 390 px wide (no horizontal scroll); opening a row, recording a
 safe lesson (queue 107 → 98 waiting, the claim turns PASS, the notice carries the gate's
-summary), and recording a refused lesson (refusal shown in the form, nothing stored).
+summary), and recording a refused lesson (refusal shown in the form, nothing stored). This
+browser check predates the lesson-trimming rule and was not repeated; since the rule, the
+queue's rows carry only the words that survive it (§1).
 
 ## 5. Limits
 
