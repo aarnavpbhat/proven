@@ -11,11 +11,14 @@ simulated reviewer do with that reply. Nothing here reads a gold proposal.
 
 THE UPDATE (RLOO: REINFORCE with a leave-one-out baseline)
 
-For each close, K replies are sampled at temperature T. Reply i's advantage is its reward
-minus the mean reward of the other K-1 replies to the same close, so a close on which every
-sample scores the same contributes no gradient (and is skipped). The loss for a close is
+Closes are screened with the greedy reply first; only those it does not already solve
+(`--hard-below`) are trained on. For such a close, K replies are sampled at temperature T
+and the greedy reply is added as one more rollout. Reply i's advantage is its reward minus
+the mean reward of the other replies to the same close, so a close on which every reply
+scores the same contributes no gradient (and is skipped). The step is plain SGD on a
+norm-clipped gradient. The loss for a close is
 
-    -(1/K) * sum_i  advantage_i * mean_t log pi(token_t | prompt, tokens_<t)
+    -(1/(K+1)) * sum_i  advantage_i * mean_t log pi(token_t | prompt, tokens_<t)
 
 computed on the sampled tokens (and the end-of-turn token) only. `--batch` closes are
 accumulated per optimizer step.
@@ -120,7 +123,11 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--batch", type=int, default=2, help="closes per optimizer step")
     p.add_argument("--samples", type=int, default=4, help="sampled replies per close (K)")
     p.add_argument("--temp", type=float, default=0.8)
-    p.add_argument("--lr", type=float, default=2e-5)
+    p.add_argument("--lr", type=float, default=0.5, help="SGD step on the clipped gradient")
+    p.add_argument("--clip", type=float, default=0.02, help="gradient-norm ceiling")
+    p.add_argument("--screen", type=int, default=8, help="closes screened greedily at a time")
+    p.add_argument("--hard-below", type=float, default=0.95,
+                   help="a close is trained on only if the greedy reply scores below this")
     p.add_argument("--max-tokens", type=int, default=700)
     p.add_argument("--valid", type=int, default=48)
     p.add_argument("--eval-every", type=int, default=25)
@@ -160,45 +167,64 @@ def main(argv: list[str] | None = None) -> int:
     best = base["reward"]
     save_adapter(model, args.init, args.out, {**config, "best_step": 0, "best_valid": base})
 
-    optimizer = optim.Adam(learning_rate=args.lr)
+    # Plain SGD on a norm-clipped gradient. Adam is wrong here: the supervised policy is so
+    # peaked that the gradient is tiny, and Adam rescales it to a full-size step in every
+    # one of 13M adapter weights (two such steps left the model unable to write JSON).
+    optimizer = optim.SGD(learning_rate=args.lr)
     grad_fn = nn.value_and_grad(model, rloo_loss)
-    cursor = 0
+    cursor, hard_seen, greedy_sum, greedy_n = 0, 0, 0.0, 0
+    queue: list = []                      # closes the greedy reply does not solve
     for step in range(1, args.steps + 1):
-        grads, used, rewards, skipped = None, 0, [], 0
+        grads, used, rewards, skipped, norm = None, 0, [], 0, 0.0
         while used < args.batch:
-            scenario = episode(pool[cursor % len(pool)], args.phrasing)
-            cursor += 1
+            while not queue:              # screen 8 fresh closes with the greedy reply
+                part = [episode(s, args.phrasing) for s in
+                        (pool[(cursor + j) % len(pool)] for j in range(args.screen))]
+                cursor += args.screen
+                model.eval()
+                texts, tokens = sample(model, tokenizer, [prompt_ids(tokenizer, s) for s in part],
+                                       0.0, args.max_tokens)
+                for s, text, t in zip(part, texts, tokens):
+                    r = score_reply(s, text).reward
+                    greedy_sum, greedy_n = greedy_sum + r, greedy_n + 1
+                    if r < args.hard_below:
+                        queue.append((s, r, list(t)))
+            scenario, greedy_r, greedy_t = queue.pop(0)
+            hard_seen += 1
             ids = prompt_ids(tokenizer, scenario)
             model.eval()
             texts, tokens = sample(model, tokenizer, [ids] * args.samples, args.temp, args.max_tokens)
-            rs = [score_reply(scenario, t).reward for t in texts]
+            rs = [greedy_r] + [score_reply(scenario, t).reward for t in texts]
+            tokens = [greedy_t] + [list(t) for t in tokens]
             rewards += rs
             if max(rs) - min(rs) < 1e-6:
                 skipped += 1
-                if skipped >= 12:       # the policy is consistent here; move on
-                    break
                 continue
             k = len(rs)
             adv = [r - (sum(rs) - r) / (k - 1) for r in rs]
             # a reply cut off at the token limit did not choose to stop: no end token for it
-            rows = [ids + list(t) + ([end_token] if len(t) < args.max_tokens else [])
-                    for t in tokens]
-            width = max(len(r) for r in rows)
-            batch = mx.array([r + [end_token] * (width - len(r)) for r in rows])
-            starts = mx.array([len(ids)] * k)
-            ends = mx.array([len(r) for r in rows])
+            rows = [ids + t + ([end_token] if len(t) < args.max_tokens else []) for t in tokens]
             model.train()
-            _, g = grad_fn(model, batch, starts, ends, mx.array(adv))
-            grads = g if grads is None else tree_map(lambda a, b: a + b, grads, g)
-            mx.eval(grads)
+            for i in range(0, k, 2):      # two replies at a time keeps memory flat
+                part_rows = rows[i:i + 2]
+                width = max(len(r) for r in part_rows)
+                batch = mx.array([r + [end_token] * (width - len(r)) for r in part_rows])
+                starts = mx.array([len(ids)] * len(part_rows))
+                ends = mx.array([len(r) for r in part_rows])
+                weights = mx.array(adv[i:i + 2]) * (len(part_rows) / k)
+                _, g = grad_fn(model, batch, starts, ends, weights)
+                grads = g if grads is None else tree_map(lambda a, b: a + b, grads, g)
+                mx.eval(grads)
             used += 1
         if grads is not None:
             grads = tree_map(lambda a: a / used, grads)
+            grads, norm = optim.clip_grad_norm(grads, args.clip)
             optimizer.update(model, grads)
             mx.eval(model.parameters(), optimizer.state)
-        emit({"event": "step", "step": step, "closes_seen": cursor, "updated_on": used,
+        emit({"event": "step", "step": step, "closes_screened": cursor, "hard_closes": hard_seen,
+              "greedy_reward_so_far": round(greedy_sum / max(greedy_n, 1), 4),
               "skipped": skipped, "mean_sample_reward": round(sum(rewards) / len(rewards), 4),
-              "seconds": round(time.time() - start)})
+              "grad_norm": round(float(norm), 5), "seconds": round(time.time() - start)})
         mx.clear_cache()
         if step % args.eval_every == 0 or step == args.steps:
             result = evaluate(model, tokenizer, valid, args.max_tokens)
