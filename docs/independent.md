@@ -13,14 +13,77 @@ python -m proven teach-sim --suite independent --extractor claude --model claude
 python benchmarks/independent/check_key.py                                       # the key's arithmetic
 ```
 
-**The short version.** On hand-written commentary the rules extractor **broke the unsafe-PASS kill
-criterion 12 times out of 30 wrong explanations, and failed 2 of 57 correct ones**. Every unsafe
-PASS has the same mechanism: the sentence states its cause with a word the rules do not treat
-as introducing a reason ("on our", "for", "as", ", the", "mostly"), so the cause is never read
-and the claim passes on its figures alone. Its 81.6% "decided" mostly measures figure checks:
-1 of its 44 control PASSes had the stated cause checked against transactions. With Sonnet
-proposing (default guard), there were **0 unsafe PASSes and 3 control FAILs**, at 42.5% decided.
-The reviewer-lesson loop taught **0 lessons** and changed nothing on the held-out half.
+## Results first
+
+There are three code states. They differ only in `claims.py` and `verify.py`; the suite,
+key and Sonnet answers are the same in all three.
+
+1. **Before the guard** (blind): the code the suite was written against (`cfd9c91`).
+2. **Guarded** (blind): with the unread-content guard (`f597068`, "withhold PASS when part of
+   the sentence went unread"). It was committed at 17:06 on 9 November, before the suite
+   existed (`1e33dd3`, 17:20), so it was not tuned on it.
+3. **After fixes, no longer blind** (`495f82d`): three general fixes for the control FAILs this
+   suite exposed (§3). They were made *after seeing the set*, so these numbers can no longer
+   count as an independent measurement.
+
+| Extractor | Code | Decided | Controls passed | **Control FAIL** | Defects caught (FAIL) | Flagged | **Unsafe PASS** | Not extracted |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| Rules | before the guard | 81.6% | 44/57 | **2** | 13/30 | 18/30 | **12** | 5 |
+| Rules | guarded | 17.2% | 0/57 | **2** | 13/30 | 30/30 | **0** | 5 |
+| Rules | after fixes, no longer blind | 14.9% | 0/57 | **0** | 13/30 | 30/30 | **0** | 5 |
+| Sonnet, default guard | before the guard | 42.5% | 16/57 | **3** | 18/30 | 30/30 | **0** | 2 |
+| Sonnet, default guard | guarded | 29.9% | 5/57 | **3** | 18/30 | 30/30 | **0** | 2 |
+| Sonnet, default guard | after fixes, no longer blind | 26.4% | 5/57 | **0** | 18/30 | 30/30 | **0** | 2 |
+| Sonnet, `--anchor-model-terms` | before the guard | 57.5% | 29/57 | **3** | 18/30 | 30/30 | **0** | 2 |
+| Sonnet, `--anchor-model-terms` | guarded | 41.4% | 15/57 | **3** | 18/30 | 30/30 | **0** | 2 |
+| Sonnet, `--anchor-model-terms` | after fixes, no longer blind | 37.9% | 15/57 | **0** | 18/30 | 30/30 | **0** | 2 |
+
+The Sonnet rows replay one live run of `claude-sonnet-5-5` (8 requests, $0.1543). Every later
+run was served from the cache with the network refused.
+
+**The trade-off now.** On guarded code, no wrong explanation passes, in any configuration.
+The price is that **the rules pass none of the 57 correct explanations**: they decide only by
+failing (13 FAILs, all on wrong explanations), and 52 of the 57 correct ones go to a person.
+With Sonnet proposing, 5 of the 57 pass. The fixes in §3 removed the three control FAILs
+without changing any defect verdict. They also lowered "decided", because each removed FAIL
+became a REVIEW.
+
+### What sends each correct explanation to REVIEW (after fixes)
+
+This counts the primary cause per control: the first advisory finding, or else the gap the
+unread-content guard withheld the PASS for. "Cause stated" means the key's sentence asserts a
+cause; "no cause" covers totals and "flat at" sentences, which assert none.
+
+| Primary cause | Rules (52 in REVIEW) | Sonnet, default guard (50) |
+|---|---:|---:|
+| Guard: no stated reason was read, though the sentence states one | **34** | 0 |
+| Guard: no stated reason was read, and the sentence states none (totals, "flat at") | 7 | 7 |
+| Guard: a figure in the sentence was not checked | 4 | 0 |
+| Guard: words outside the reason were not read | 1 | 3 |
+| Guard: negation or contrast in the reason ("no repeat of …") | 0 | 1 |
+| Guard: the sentence names two accounts | 0 | 1 |
+| `WEAK_REASON_MATCH` (some written words of the reason match no memo) | 4 | **33** |
+| `REASON_NOT_FOUND` | 2 | 1 |
+| `REASON_FOUND_ONLY_BY_MODEL_TERMS` | 0 | 2 |
+| Account mapped only by the model ("Total costs" is not an alias) | 0 | 2 |
+
+Two blocks dominate.
+
+- **For the rules, the guard's "no stated reason was read" (41).** In 34 of those, the
+  sentence does state a cause, introduced by a word the rules do not treat as a connector
+  ("on our", "for", "as", ", the", ", mostly", a colon). Before the guard, those same claims
+  passed on their figures alone, which is how 12 wrong ones passed. In the other 7, no cause
+  is stated at all ("Total opex was $857K, up 10%."; "Occupancy was flat at $41.3K."). The
+  guard makes such a sentence impossible to PASS, by design, since there is nothing to bind.
+  The README never says so, and on real commentary those sentences are common.
+- **For Sonnet, `WEAK_REASON_MATCH` (33).** Sonnet supplies the reason span. The written words
+  then bind to transactions, but at least one word of the cause matches no memo ("the crane
+  pick at Mercy Ridge" against a memo that says "Job 2417"; "workers' comp audit true-up"
+  against "WC final audit"). Real memos abbreviate and use job numbers, so nearly every
+  correct cause leaves at least one unmatched word.
+
+`--anchor-model-terms` lets specific model terms complete those bindings: 10 more controls
+pass, with no new unsafe PASS on this set (§2d).
 
 ## 1. How the set was written
 
@@ -44,7 +107,7 @@ lexicon, the author:
    cited transactions, and asserts that the label follows from them (rules in its docstring).
    It reported 0 errors. A mutation test (12 deliberate key corruptions) was flagged 12/12;
 5. committed it all as `1e33dd3 test: independent closes, written blind`, **before the first
-   checker run**. The runner and every result come after it (`8c38c5c` onwards).
+   checker run**.
 
 Before the commentary was written, the ledgers were changed for realism or volume only: more
 noise lines so every period has at least 80 transactions, fictional names in place of real
@@ -52,8 +115,7 @@ vendor names, and a July summer volume lift on Ember & Rye's beverage lines. Non
 changes was made after a checker run.
 
 **The companies.** Each ledger has one history month (so vendors have a "usual account"),
-then the prior and current periods, with 81–168 transactions a month (tested: at least 80 in
-each compared period).
+then the prior and current periods, with 81–168 transactions a month.
 
 | Company | Industry | Periods | Claims (correct / wrong) |
 |---|---|---|---|
@@ -71,7 +133,7 @@ Wrong explanations by defect: wrong amount 7, cause too small for the wording 4,
 (right amount, the stated cause is not what moved it) 4, wrong direction 3, wrong account 3,
 cause in the other period 3, cause contradicted by a credit 3, fabricated cause (no such
 transactions) 3. The commentary also has 15 sentences that are not ledger claims (ARR,
-headcount, visits, backlog, forecasts). The rules turned three of them into claims, all REVIEW.
+headcount, visits, backlog, forecasts). The rules turn three of them into claims, all REVIEW.
 
 **The mess it contains.** It includes accruals and reversals: a legal accrual replaced by the
 invoice, an insulation sub's accrue, reverse, bill and re-accrue cycle, and a year-end audit
@@ -81,8 +143,7 @@ credit. It has a reclass journal, prepaid amortisation on renewal, a late invoic
 third biweekly pay date in a month, one-offs against recurring lines, causes split across two
 or three vendors, and FX (GBP, EUR and CAD). The commentary rounds ("~$31k", "about 13%",
 "roughly doubled"), abbreviates (R&M, 3PD, CME, med mal), uses passive voice and business
-language ("onboarding the Meridian Health account") rather than memo vocabulary, and puts two
-claims in one sentence three times.
+language rather than memo vocabulary, and puts two claims in one sentence three times.
 
 **Labelling rule.** A claim is CORRECT when the direction is right and every stated figure is
 right at its written precision (change within 7%, percent within 1.5 points, balance within
@@ -95,73 +156,53 @@ wrong claim's ideal is FAIL, REVIEW is acceptable, and PASS is an unsafe pass.
 ### Limits of the protocol
 
 - **The author is an AI model, not a controller,** and had read the README, including its
-  thresholds (75% / 50% / 10%) and the finding codes. The labelling rule above is close to the
-  README's on purpose, so that a disagreement is about reading the text, not about policy.
-  "driven by" is the exception: Proven reads it as *full* and the key as *main driver*. No key
-  claim depends on that difference.
-- **The ledgers are designed, not exported.** The noise is random but well-behaved, every event
-  is clean, and vendor names are consistent. Real GL exports have messier memos, split lines
-  and partial data.
+  thresholds and finding codes.
+- **The ledgers are designed, not exported.** The noise is well-behaved, every event is clean,
+  and vendor names are consistent.
 - **One author wrote both the commentary and the key.** The key was verified arithmetically by
   a script, not by a second person.
-- **87 claims is small.** One claim moves a rate by 1.1 to 3.3 points. The counts are reported
-  as counts.
+- **87 claims is small.** One claim moves a rate by 1.1 to 3.3 points.
+- **The fixed rows are not independent.** The three fixes in §3 were written after seeing which
+  sentences failed. They are general reading rules, tested on ledgers of their own and checked
+  against the synthetic benchmark, but a fresh blind set is needed to measure them.
 
-## 2. Results
+## 2. Detail
 
-`decided` is PASS or FAIL over all 87 keyed claims. `cause checked` counts the control PASSes
-whose attribution check ran and was supported; the rest passed on their figures alone.
-`caught` is FAIL on a wrong explanation, and `flagged` is FAIL or REVIEW. A keyed claim no
-admitted claim covers is `not extracted`.
+### Per company (after fixes)
 
-| Configuration | Decided | Controls passed | cause checked | **Control FAIL** | Defects caught | Flagged | **Unsafe PASS** | Not extracted |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| (a) Rules | 81.6% | 44/57 | 1 | **2** | 13/30 | 18/30 | **12** | 5 |
-| (b) Sonnet proposer, default guard | 42.5% | 16/57 | 9 | **3** | 18/30 | 30/30 | **0** | 2 |
-| (d) Sonnet, `--anchor-model-terms` | 57.5% | 29/57 | 22 | **3** | 18/30 | 30/30 | **0** | 2 |
+| Company | n | Rules decided | Rules caught | Sonnet decided | Sonnet controls passed | Sonnet caught |
+|---|---:|---:|---:|---:|---:|---:|
+| brightline | 11 | 9.1% | 1/3 | 18.2% | 1/8 | 1/3 |
+| ember_rye | 12 | 16.7% | 2/5 | 25.0% | 0/7 | 3/5 |
+| keystone | 11 | 9.1% | 1/4 | 18.2% | 0/7 | 2/4 |
+| cedar_valley | 12 | 16.7% | 2/3 | 25.0% | 1/9 | 2/3 |
+| lumen_loom | 10 | 10.0% | 1/3 | 20.0% | 1/7 | 1/3 |
+| riverbend | 10 | 0.0% | 0/3 | 20.0% | 1/7 | 1/3 |
+| halvorsen | 10 | 20.0% | 2/4 | 30.0% | 0/6 | 3/4 |
+| northstar | 11 | 36.4% | 4/5 | 54.5% | 1/6 | 5/5 |
 
-(b) and (d) use the same 8 Sonnet answers: one live run of `claude-sonnet-5-5` ($0.1543), then
-cache hits with the network refused.
+Unsafe PASS and control FAIL are 0 for every company, in every configuration, after the fixes.
 
-### Per company
+### Per defect type: FAIL / REVIEW / PASS / not extracted
 
-| Company | n | Rules decided | Rules unsafe | Rules ctl FAIL | Sonnet decided | Sonnet unsafe | Sonnet ctl FAIL |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| brightline | 11 | 90.9% | 2 | 0 | 63.6% | 0 | 1 |
-| ember_rye | 12 | 58.3% | 1 | 0 | 33.3% | 0 | 0 |
-| keystone | 11 | 81.8% | 3 | 0 | 18.2% | 0 | 0 |
-| cedar_valley | 12 | 91.7% | 0 | 0 | 33.3% | 0 | 0 |
-| lumen_loom | 10 | 70.0% | 1 | 1 | 40.0% | 0 | 1 |
-| riverbend | 10 | 90.0% | 2 | 0 | 40.0% | 0 | 0 |
-| halvorsen | 10 | 80.0% | 2 | 0 | 40.0% | 0 | 0 |
-| northstar | 11 | 90.9% | 1 | 1 | 72.7% | 0 | 1 |
+| Family | n | Rules, before the guard | Rules, guarded and after fixes | Sonnet (every state) |
+|---|---:|---|---|---|
+| wrong_amount | 7 | 7 / 0 / 0 / 0 | 7 / 0 / 0 / 0 | 7 / 0 / 0 / 0 |
+| wrong_account | 3 | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 | 3 / 0 / 0 / 0 |
+| wrong_direction | 3 | 2 / 0 / **1** / 0 | 2 / 1 / 0 / 0 | 2 / 1 / 0 / 0 |
+| contradicted_by_credit | 3 | 1 / 0 / **2** / 0 | 1 / 2 / 0 / 0 | 2 / 1 / 0 / 0 |
+| cause_in_other_period | 3 | 0 / 1 / **2** / 0 | 0 / 3 / 0 / 0 | 2 / 1 / 0 / 0 |
+| cause_too_small | 4 | 0 / 0 / **4** / 0 | 0 / 4 / 0 / 0 | 2 / 2 / 0 / 0 |
+| wrong_cause | 4 | 0 / 2 / **2** / 0 | 0 / 4 / 0 / 0 | 0 / 4 / 0 / 0 |
+| fabricated_cause | 3 | 0 / 2 / **1** / 0 | 0 / 3 / 0 / 0 | 0 / 3 / 0 / 0 |
+| control (correct) | 57 | 2 / 6 / 44 / 5 | guarded 2 / 50 / 0 / 5; fixed 0 / 52 / 0 / 5 | guarded 3 / 47 / 5 / 2; fixed 0 / 50 / 5 / 2 |
 
-### Per defect type
-
-| Family | n | Rules: FAIL / REVIEW / **PASS** | Sonnet: FAIL / REVIEW / **PASS** |
-|---|---:|---|---|
-| wrong_amount | 7 | 7 / 0 / **0** | 7 / 0 / **0** |
-| wrong_account | 3 | 3 / 0 / **0** | 3 / 0 / **0** |
-| wrong_direction | 3 | 2 / 0 / **1** | 2 / 1 / **0** |
-| contradicted_by_credit | 3 | 1 / 0 / **2** | 2 / 1 / **0** |
-| cause_in_other_period | 3 | 0 / 1 / **2** | 2 / 1 / **0** |
-| cause_too_small | 4 | 0 / 0 / **4** | 2 / 2 / **0** |
-| wrong_cause | 4 | 0 / 2 / **2** | 0 / 4 / **0** |
-| fabricated_cause | 3 | 0 / 2 / **1** | 0 / 3 / **0** |
-| control (correct) | 57 | 2 FAIL / 6 REVIEW / 44 PASS / 5 missed | 3 FAIL / 36 REVIEW / 16 PASS / 2 missed |
-
-**Read with the synthetic numbers.** On the generator's held-out phrasing the README reports 0
-unsafe PASS and 0 control FAIL for the rules, at 11% decided. Here the rules decide 81.6%, and
-that figure is not good news. The checks that decide amounts and directions work on this
-commentary: all 7 wrong amounts and all 3 wrong accounts are caught by both extractors. The
-checks that decide causes almost never ran under the rules (14 of 82 extracted claims had a
-reason read). When a cause is not read, the rules do not send the claim to a person. They pass
-it.
-
-With Sonnet proposing, the model supplies the reason span for nearly every sentence. Once a
-reason is read, the guard sends most of them to REVIEW: 31 of the 36 control REVIEWs are
-`WEAK_REASON_MATCH`, where some written words of the reason match nothing in the memos. That
-removes the unsafe PASSes but leaves 16 of 57 correct explanations passed.
+Amounts, directions and accounts are decided on this commentary: all 7 wrong amounts and all
+3 wrong accounts FAIL in every configuration. No wrong cause and no fabricated cause is ever
+FAILed: those go to a person, which is acceptable but means none of the cause-level defects
+is decided by the checker alone. Of the 17 cause-level defects (other period, too small,
+credit, wrong cause, fabricated), Sonnet FAILs 6; the rules FAIL 1 (a credit claim, on its
+amount).
 
 ### (c) The reviewer loop
 
@@ -171,43 +212,45 @@ plus lessons, then the other way round. It uses the `teachsim.py` rule: teach on
 correct claim in REVIEW because its support rests on model terms, where confirming those terms
 makes it PASS.
 
-| Taught on | Lessons | Held half: decided before → after | Unsafe PASS | Control FAIL |
-|---|---:|---|---:|---:|
-| brightline, keystone, lumen_loom, halvorsen | 0 | 82.2% → 82.2% | 4 → 4 | 1 → 1 |
-| ember_rye, cedar_valley, riverbend, northstar | 0 | 81.0% → 81.0% | 8 → 8 | 1 → 1 |
+| Code | Taught on | Lessons | Held half: decided before → after | Unsafe PASS | Control FAIL |
+|---|---|---:|---|---:|---:|
+| before the guard | first half | 0 | 82.2% → 82.2% | 4 → 4 | 1 → 1 |
+| before the guard | second half | 0 | 81.0% → 81.0% | 8 → 8 | 1 → 1 |
+| guarded | first half | 0 | 20.0% → 20.0% | 0 → 0 | 1 → 1 |
+| guarded | second half | 0 | 14.3% → 14.3% | 0 → 0 | 1 → 1 |
+| after fixes, no longer blind | first half | 0 | 17.8% → 17.8% | 0 → 0 | 0 → 0 |
+| after fixes, no longer blind | second half | 0 | 11.9% → 11.9% | 0 → 0 | 0 → 0 |
 
-No lesson qualified. Only two correct claims sat in REVIEW on model terms, and confirming their
-terms would have made each a FAIL, not a PASS. For RB-03, "pantry" matches the 2 of 6 grant
-payees whose names contain it (33%). For NSF-02, "fuel card" carries 73% of a price-and-volume
-change. A wider, scratch-only reviewer that also confirms `WEAK_REASON_MATCH` controls (the
-script stays in `.proven/`, uncommitted) taught 10 + 5 lessons. They changed nothing with the
-rules on the held half and moved one control to PASS in each direction with Sonnet, with no
-new FAIL or unsafe PASS. I did not trace which lesson fired. The reason is structural: a lesson
-triggers on a stated reason's exact wording, and eight companies never word a cause the same
-way. Lessons might transfer from one month to the next within a company. This suite cannot
-measure that, since it has one month per company. The README's 88.6% after lessons depends on
-the generator's finite phrase pool repeating, which real commentary does not.
+No lesson qualified in any state. Only two correct claims sit in REVIEW on model terms, and
+confirming their terms would make each a FAIL, not a PASS. For RB-03, "pantry" matches the
+2 of 6 grant payees whose names contain it (33%). For NSF-02, "fuel card" carries 73% of a
+price-and-volume change. A wider, scratch-only reviewer, run on pre-guard code, also confirmed
+`WEAK_REASON_MATCH` controls. It taught 10 + 5 lessons. They changed nothing with the rules
+and moved one control to PASS in each direction with Sonnet. The reason is structural: a
+lesson triggers on a stated reason's exact wording, and eight companies never word a cause the
+same way. Lessons might transfer from one month to the next within a company, which this
+suite cannot measure.
 
-### (d) Why `--anchor-model-terms` stays off: not shown here
+### (d) `--anchor-model-terms`
 
-On this set the experimental policy raised decided from 42.5% to 57.5% (13 more controls
-passed) **without** an unsafe PASS. The README's 12 unsafe PASSes under this policy came from
-synthetic closes. This suite does not reproduce them, and 30 wrong claims cannot show the
+On this set the experimental policy passes 10 more correct explanations (15/57 against 5/57)
+with no unsafe PASS, in every code state. The README's 12 unsafe PASSes under this policy came
+from synthetic closes. This suite does not reproduce them, and 30 wrong claims cannot show the
 policy is safe. The case for keeping it off still rests on the synthetic evidence.
 
 ## 3. Every unsafe PASS and control FAIL
 
 Ledger facts are from the key (`proven/examples/independent/*/key.json`) and are verified by
-`check_key.py`. "Rules" is `extract.py` plus `claims.read_sentence`.
+`check_key.py`.
 
-### Rules: 12 unsafe PASSes, one mechanism with a variant
+### Before the guard: 12 unsafe PASSes with the rules (fixed by `f597068`)
 
-**Mechanism A: an unread reason is treated as no reason (11 claims).** `claims.split_reason`
+**Mechanism A: an unread reason was treated as no reason (11 claims).** `claims.split_reason`
 recognises a reason only after `due to`, `because (of)`, `driven by`, `as a result of`,
 `reflecting`, `attributable to`, `owing to`, `thanks to`, `on the back of`, or `on` directly
-followed by `higher/lower/increased/decreased/additional`. Otherwise `driver` is `None`, the
-attribution check is skipped ("no reason stated"), and the verdict comes from direction and
-amount alone. Each sentence below states a cause the ledger contradicts:
+followed by `higher/lower/increased/decreased/additional`. Otherwise no reason is read, the
+attribution check is skipped, and before the guard the verdict came from direction and amount
+alone.
 
 | Id | Sentence | What the ledger shows | Connector not read |
 |---|---|---|---|
@@ -223,110 +266,87 @@ amount alone. Each sentence below states a cause the ledger contradicts:
 | LL-04 | Affiliate & influencer spend rose $5.2K, mostly FX on the euro-denominated creator retainer. | FX is +$447 (LL-200130 → LL-200227), 8.5%; affiliate commissions +$4,800 | ", mostly …" |
 | BRT-11 | Rent & facilities were up $2.6K for the new 4th-floor storage lease. | no storage lease exists; carpet cleaning (JE-104795) and electricity (JE-104749) | "for" |
 
-The README promises that "a reason we cannot find is REVIEW, never FAIL". Here the reason is
-never looked for, and the outcome is PASS. The synthetic phrasing always used a connector the
-rules know, so the generator could not expose this.
-
 **Mechanism A′: unread direction plus magnitude-only comparison (BRT-06).** *"Contractor spend
 ticked up about $2.8K with Polaris QA coming on."* Contractors fell by $2,794.25: Ana Ribeiro's
-contract ended (JE-104682, −$6,200), and the new Polaris QA SOW is $3,800 (JE-104791).
-`_UP`/`_DOWN` have no "ticked up", so the direction is `None` and the direction check is
-skipped. `verify_claim` then compares the stated $2.8K with `abs(change)`, so the change check
-agrees. "with" is not a connector, so no reason is read either. Verdict: PASS, *"Agrees with
-the ledger: amount."* A figure with no readable direction is checked by magnitude and can
-pass a claim whose direction is wrong.
+contract ended (JE-104682), and Polaris QA is new (JE-104791). "ticked up" is not a direction
+word, so the stated $2.8K was compared with the change's magnitude and agreed.
 
-**Suggested fixes (not made: `claims.py`/`verify.py` belong to other streams).**
+**On guarded code** all 12 are REVIEW. The guard withholds a PASS when no reason or no
+direction was read. These are regression tests in `proven/tests/test_independent.py`
+(`test_unread_reason_does_not_pass[...]`, `test_unread_direction_does_not_pass`). They are
+still not *caught*: the reason goes unread and a person must decide. Reading those connectors
+would let the checker FAIL them; it would also let it PASS the 34 correct controls now stuck
+on "no stated reason was read". That work remains.
 
-1. When the head of a sentence ends in a figure and the rest of the sentence still has content
-   words (after `on`, `for`, `as`, `with`, `after`, `from`, a comma-apposition, a colon,
-   `mostly/nearly all/all of it`), either read that remainder as the reason or raise an
-   advisory `REASON_NOT_READ`. Either way the claim cannot PASS on its figures alone.
-2. Do not let a change check pass on magnitude when no direction was read. Or add "ticked
-   up/down", "came down", "eased", "edged" to the direction words. The first is the safer fix.
-3. More generally: count a PASS on figures alone separately from a PASS with its cause checked,
-   in the report and the benchmark (this suite's `cause checked` column).
+### Control FAILs on guarded code, and the fixes (after fixes, no longer blind)
 
-Strict expected-failure tests pin each of these in `proven/tests/test_independent.py`
-(`test_unread_reason_does_not_pass[...]`, `test_unread_direction_does_not_pass`,
-`test_no_unsafe_pass_with_rules`).
+All three are general reading errors. Each fix is tested on a small ledger of its own in
+`proven/tests/test_figure_roles.py`. Seven of its tests fail on the code before the fixes; the
+other four check that a genuinely wrong claim still FAILs.
 
-### Rules: 2 control FAILs
+**LL-02: a figure belonging to another account's claim (rules and Sonnet).** *"Paid social was
+up ~72% as we put spend behind the Hearth fall launch on SocialReach and Clipstream, funded in
+part by pulling about $4K out of search."* Both halves are right (paid social +71.8%, paid
+search −$4,050). The reader resolved the first alias (Paid Social) and took the first money
+figure in the sentence ($4K, search's) as its change: `WRONG_AMOUNT`, so FAIL.
+*Fix (`claims.read_figures`, `admit`):* a figure belongs to the account its own clause names.
+A figure whose clause (between commas, semicolons, colons, brackets or dashes) names another
+account, and not this one, is not read as this claim's, either by the rules or from a
+proposal. It is then an unchecked figure, so the guard sends the claim to REVIEW.
 
-**LL-02: two claims in one sentence.** *"Paid social was up ~72% as we put spend behind the
-Hearth fall launch on SocialReach and Clipstream, funded in part by pulling about $4K out of
-search."* Both halves are right: paid social +71.8%, paid search −$4,050. The rules make one
-claim per sentence and resolve the first alias (Paid Social). `read_figures` then takes the
-first money figure in the sentence ($4K, which belongs to search) as paid social's change.
-Result: `WRONG_AMOUNT` (confirmed), so FAIL. *Fix:* a money figure that follows a second
-account's alias should not be attributed to the first. When a sentence names two accounts,
-assign figures by position or go to REVIEW. Pinned by
-`test_second_accounts_figure_is_not_the_firsts`.
+**NSF-11: "flat at about $9K", a balance read as a change (rules and Sonnet).** Tolls &
+permits went from $9,060 to $9,200 (+$140). The balance cue needed "at" right before the
+figure, so the hedge "about" broke it, and $9K was read as the change. Under Sonnet the
+proposal correctly said `current_text="$9K"`, but `admit()` also kept the rules' reading of
+the same figure as the change ("never subtract"). *Fix:* hedges (about, approximately,
+roughly, around, nearly, almost, some, just over/under, ~) may sit between a balance cue
+(to, at, reached, was/were, from) and its figure. When a proposal and the deterministic
+reading put one written figure in two different roles, `admit()` checks it in neither and
+records `figure_conflicts`, which the guard treats as unread. The claim can then be REVIEW,
+never PASS, so a proposer cannot dodge a failing change check by relabelling it as a balance.
 
-**NSF-11: "flat at about $9K".** Tolls & permits went from $9,060 to $9,200 (+$140). The
-balance cue `_CURRENT_CUE` needs "at" right before the figure, so the hedge "about" breaks it.
-"$9K" is read as the change, and the change check fails ($9K against +$140). Ember's
-"Occupancy was flat at $41.3K." passes because no hedge intervenes. "Flat" is not read as a
-direction either. *Fix:* allow hedges (about, roughly, approximately, ~) between a balance cue
-and its figure, and treat "flat/unchanged" as a stated direction of zero. Pinned by
-`test_flat_at_about_is_a_balance`.
+**BRT-02: a coordinated cause with one side unmatched (Sonnet).** *"Hosting & infrastructure
+was up ~$31k (roughly 50%) as onboarding the Meridian Health account drove both compute and
+warehouse usage."* Correct: the compute bill (+$21,832) plus the warehouse bill (+$9,264) is
+99.6% of +$31,234. The lexicon-vouched written word "compute" bound only the compute bill.
+"warehouse" matched nothing (the memo says "Capacity credits"). Because a declared term
+vouched for the binding, `WEAK_REASON_MATCH` stood aside, and the 70% share produced
+`PARTIAL_EXPLANATION` (confirmed), so FAIL. *Fix (`verify._unbound_written_words`):* before
+a FAIL on the reason, if the reason coordinates two causes (`and`, `plus`, `as well as`, ` & `)
+and the written word on one side matched while the other matched nothing, the finding is
+`WEAK_REASON_MATCH` (advisory) instead. A first, broader version of this fix applied whenever
+any written word went unmatched. It cut seen-phrasing decided from 90.1% to 88.3% by sending
+lexicon-matched wrong causes ("the product launch campaign": "product" unmatched) to REVIEW.
+It was narrowed to coordinated causes before committing.
 
-### Sonnet (default guard): 0 unsafe PASSes, 3 control FAILs
+### What the fixes did to the synthetic benchmark (measured before and after)
 
-Every one of the 12 rules unsafe PASSes was FAIL or REVIEW with Sonnet: KMC-09, ER-11, RB-07,
-HPC-08 and NSF-10 FAIL; the rest REVIEW. The protection came from the model **proposing the
-reason span**: `admit()` keeps it because it is a span of the sentence, and from then on the
-written words decide. It did not come from the model's search terms. The safety therefore
-depends on the model finding every reason. Where a proposal leaves the reason out and the rules
-cannot read it either, "a proposal can add to the reading, never subtract from it" protects
-nothing, because there is nothing to keep, and the claim falls back to mechanism A.
+| Run (test split, n = 440) | Before: decided / control FAIL / unsafe PASS | After |
+|---|---|---|
+| rules, seen | 90.1% / 0 / 0 (783/810 controls passed, 279/280 met) | identical |
+| rules, heldout | 11.0% / 0 / 0 | identical |
+| rules, paraphrase | 11.0% / 0 / 0 | identical |
+| oracle, heldout | 11.0% / 0 / 0 | identical |
+| oracle, paraphrase | 11.0% / 0 / 0 | identical |
+| Sonnet (cached, 440/440 hits), heldout | 11.0% / 0 / 0 | identical |
 
-**LL-02** fails as under the rules. Sonnet also reads the sentence as one claim, and admit()
-keeps the rules' $4K.
-
-**NSF-11** fails a second way. Sonnet proposed `current_text="$9K"` (right: a balance).
-`admit()` then saw that the rules read the same "$9K" as a change, which the proposal had left
-out, and **kept it as the change too** (note: "change figure written in the sentence was left
-out of the proposal; kept"). The current check agrees and the change check FAILs. The "never
-subtract" rule, meant to stop a model from dropping a figure, here turns the model's correct
-reading into a control FAIL. *Fix:* when a proposal places a figure's exact span in one role,
-do not also keep the rules' reading of that span in another role. Pinned by
-`test_balance_proposal_is_not_also_a_change`.
-
-**BRT-02: a cause split across two vendors.** *"Hosting & infrastructure was up ~$31k (roughly
-50%) as onboarding the Meridian Health account drove both compute and warehouse usage."*
-Correct: compute (JE-104614 → JE-104718, +$21,832) plus data warehouse (JE-104620 → JE-104723,
-+$9,264) is 99.6% of +$31,234. The rules read no reason ("as") and passed it. With Sonnet's
-reason span, the written word "compute" matches the compute bills, and it is a lexicon term
-(`cloud_usage`). "warehouse" matches nothing: the warehouse bill's memo says "Capacity
-credits" and the vendor is Glacier Data Cloud. Because a declared lexicon term vouched for the
-match, `WEAK_REASON_MATCH` did not fire. The bound transactions carry 70%, under the 75% that
-"as" (read as full) needs, so the claim got `PARTIAL_EXPLANATION` (confirmed) and FAILed. This
-is the README's "single word binds one of a cause's invoices" mechanism, reached through a
-*lexicon* term rather than a model term. The FAIL guard covers only model terms. *Fix:* when a
-reason has other content words that match nothing (here "warehouse"), a partial share from a
-lexicon-vouched subset should be advisory (REVIEW), not confirmed. Pinned by
-`test_split_vendor_cause_does_not_fail`.
-
-### Key corrections made after the first checker run
-
-None. No commentary, key or ledger was changed after `1e33dd3`. The changes listed in §1 were
-all made before it.
+The printed benchmark output for the rules runs is byte-identical before and after.
 
 ## 4. What a real pilot would still need
 
 - **Real books and real commentary**: a GL export and the controller's own variance memo for
   several months of at least three companies, labelled by someone who did not write either.
-  This suite is a stand-in written by an AI model that had read the README.
-- **Fix mechanisms A and A′ first.** On real commentary an unread reason is the common case,
-  not the edge case. Until then, the rules extractor's PASS means "the figures agree", and the
-  report should say so.
+- **A fresh blind set** to measure the post-fix code. The fixed rows above are not independent.
+- **Reading more connectors, safely.** On real commentary a cause introduced by "on", "for",
+  "as" or an apposition is the common case. The guard makes those claims safe but leaves them
+  all to a person: 34 of 57 correct explanations here.
+- **A policy for sentences with no cause**: totals and "flat at" statements can never PASS under
+  the guard. That may be right, but it should be a stated choice.
+- **Memo vocabulary.** With a model reading the reason, the binding fails mostly on single
+  words that real memos abbreviate or replace with job numbers (33 of 50 control REVIEWs).
 - **Month-over-month lesson measurement within one company**, the only setting where verbatim
-  lessons can transfer, and the one this suite cannot test.
-- **Two-claim sentences and balances written with hedges**, both common in real memos and both
-  sources of control FAILs here.
-- **Second-reader labels.** One author wrote the commentary and the key, and a script checked
-  only the arithmetic.
+  lessons can transfer.
+- **Second-reader labels.**
 
 ## Files
 
@@ -334,5 +354,6 @@ all made before it.
   `suite.json`: the suite.
 - `benchmarks/independent/build_ledgers.py`, `tb.py`, `check_key.py`: builder, trial balance,
   key verifier (no `proven` imports).
-- `proven/independent.py`: loader, matcher, scorer, teach-and-measure.
-- `proven/tests/test_independent.py`: offline tests and the strict expected failures.
+- `proven/independent.py`: loader, matcher, scorer (including REVIEW causes), teach-and-measure.
+- `proven/tests/test_independent.py`: the key's soundness, the pinned result, regression tests
+  for every mechanism above. `proven/tests/test_figure_roles.py`: unit tests for the three fixes.
