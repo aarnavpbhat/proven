@@ -1,0 +1,293 @@
+{
+  "company": "lumen_loom",
+  "claims": [
+    {
+      "id": "LL-01",
+      "quote": "Opex came in at $299.2K, up 15%.",
+      "account": "TOTAL",
+      "stated": {
+        "direction": "up",
+        "pct": 15,
+        "current": 299200
+      },
+      "strength": "none",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "All accounts went from $259,250.85 to $299,195.04: +$39,944.19, +15.4%. No cause is stated.",
+      "evidence": [],
+      "cause_txns": [],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "LL-02",
+      "quote": "Paid social was up ~72% as we put spend behind the Hearth fall launch on SocialReach and Clipstream",
+      "account": "Paid Social",
+      "stated": {
+        "direction": "up",
+        "pct": 72
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Paid social went from $42,500.00 to $73,000.00: +$30,500.00, +71.8%. SocialReach threshold charges rose from 17 to 26 (+$22,500) and Clipstream's HEARTH_FALL26 campaign is new ($8,000). The SocialReach charges carry no campaign name, so only the Clipstream part names the launch.",
+      "evidence": [
+        "LL-200234",
+        "LL-200262",
+        "LL-200294",
+        "LL-200318"
+      ],
+      "cause_txns": [],
+      "share_note": "The launch spend is the whole increase in both vendors; SocialReach bills by threshold with no campaign in the memo, so no transaction set isolates it.",
+      "mess": [
+        "split_across_vendors",
+        "business_language"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "LL-03",
+      "quote": "funded in part by pulling about $4K out of search.",
+      "account": "Paid Search",
+      "stated": {
+        "direction": "down",
+        "change": -4000
+      },
+      "strength": "none",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Paid search went from $18,399.90 to $14,349.90: -$4,050.00. Second claim of a two-claim sentence, stated as an action ('pulling ... out of search') rather than with a direction verb.",
+      "evidence": [],
+      "cause_txns": [],
+      "mess": [
+        "two_claims_one_sentence",
+        "business_language"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "LL-04",
+      "quote": "Affiliate & influencer spend rose $5.2K, mostly FX on the euro-denominated creator retainer.",
+      "account": "Affiliates & Influencers",
+      "stated": {
+        "direction": "up",
+        "change": 5200
+      },
+      "strength": "most",
+      "truth": "WRONG",
+      "defect": "cause_too_small",
+      "why": "Affiliates & influencers went from $9,993.00 to $15,240.00: +$5,247.00, so the amount is right. FX is real but small: the EUR 6,000 retainer cost $6,543.00 at 1.0905 and $6,990.00 at 1.1650, +$447.00, 8.5% of the change. The driver is Affinity Network affiliate commissions (+$4,800) on launch sales.",
+      "evidence": [
+        "LL-200130",
+        "LL-200227",
+        "LL-200117",
+        "LL-200217"
+      ],
+      "cause_txns": [
+        "LL-200130",
+        "LL-200227"
+      ],
+      "mess": [
+        "fx"
+      ],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "LL-05",
+      "quote": "Creative fell $12.7K as the Hearth shoot was a September cost.",
+      "account": "Content & Photography",
+      "stated": {
+        "direction": "down",
+        "change": -12700
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Content & photography went from $15,700.00 to $3,000.00: -$12,700.00. The Hearth campaign shoot ($14,500) was in September; October has $1,800 of Hearth retouching. Net of the two: -$12,700, 100%.",
+      "evidence": [
+        "LL-200154",
+        "LL-200240"
+      ],
+      "cause_txns": [
+        "LL-200154",
+        "LL-200240"
+      ],
+      "mess": [
+        "prior_period_cause",
+        "one_off"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "LL-06",
+      "quote": "3PL costs rose $7.5K, driven by storage as we built inventory ahead of Q4 (412 pallets vs. 286 in September).",
+      "account": "3PL Fulfillment",
+      "stated": {
+        "direction": "up",
+        "change": 7500
+      },
+      "strength": "most",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "3PL went from $34,851.10 to $42,392.66: +$7,541.56. Storage went from 286 to 412 pallets at $45 ($12,870 -> $18,540): +$5,670, 75% of the change; the rest is pick/pack volume and receiving. The pallet counts are not dollar figures.",
+      "evidence": [
+        "LL-200202",
+        "LL-200323"
+      ],
+      "cause_txns": [
+        "LL-200202",
+        "LL-200323"
+      ],
+      "mess": [
+        "non_money_numbers"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "LL-07",
+      "quote": "Outbound shipping rose $6.2K, largely the carrier demand surcharges that kicked in this month.",
+      "account": "Outbound Shipping",
+      "stated": {
+        "direction": "up",
+        "change": 6200
+      },
+      "strength": "most",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Outbound shipping went from $29,451.63 to $35,683.16: +$6,231.53. Three Harbor Parcel 'Demand surcharge - residential' lines are $4,920, 79% of the change.",
+      "evidence": [
+        "LL-200254",
+        "LL-200284",
+        "LL-200312"
+      ],
+      "cause_txns": [
+        "LL-200254",
+        "LL-200284",
+        "LL-200312"
+      ],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "LL-08",
+      "quote": "Returns costs fell $2.3K thanks to the self-service returns portal we launched.",
+      "account": "Returns & Refund Costs",
+      "stated": {
+        "direction": "down",
+        "change": -2300
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "fabricated_cause",
+      "why": "Returns went from $5,881.88 to $3,614.53: -$2,267.35, so the amount is right. No portal appears anywhere in the ledger (no app, no setup fee) and return-label spend is flat (+$32.65). The fall is September's one-off freight of returns pallets to a liquidator ($2,300).",
+      "evidence": [
+        "LL-200171"
+      ],
+      "cause_txns": [],
+      "absent_terms": [
+        "portal",
+        "self-service"
+      ],
+      "absent_scope": "ledger",
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "LL-09",
+      "quote": "Processing fees were up ~$1K with the higher sales.",
+      "account": "Payment Processing",
+      "stated": {
+        "direction": "up",
+        "change": 1000
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_amount",
+      "why": "Payment processing went from $11,480.00 to $14,585.00: +$3,105.00, not ~$1K (understated by two thirds).",
+      "evidence": [
+        "LL-200112",
+        "LL-200212"
+      ],
+      "cause_txns": [
+        "LL-200112",
+        "LL-200212"
+      ],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "LL-10",
+      "quote": "Platform and apps rose $6K on the annual renewal of our on-site search app.",
+      "account": "Ecommerce Platform & Apps",
+      "stated": {
+        "direction": "up",
+        "change": 6000
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Platform & apps went from $4,748.00 to $10,736.00: +$5,988.00, exactly the 'Searchlight Pro - annual plan renewal' invoice. The sentence describes the app rather than naming it.",
+      "evidence": [
+        "LL-200246"
+      ],
+      "cause_txns": [
+        "LL-200246"
+      ],
+      "mess": [
+        "one_off",
+        "business_language"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    }
+  ],
+  "non_claims": [
+    {
+      "quote": "October revenue was $1.48M, up 24%, with Hearth at 31% of sales; gross margin held at 61%.",
+      "why": "Revenue and margin are not expense accounts."
+    },
+    {
+      "quote": "We expect social to stay elevated through Black Friday.",
+      "why": "A forecast."
+    }
+  ]
+}

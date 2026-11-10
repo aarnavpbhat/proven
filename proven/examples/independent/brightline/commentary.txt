@@ -1,0 +1,11 @@
+Brightline Analytics - October 2026 opex commentary (vs. September)
+
+October was a strong month: we closed the Meridian Health expansion and ARR ended at $14.2M. Total opex was $857K, up 10% on September.
+
+Hosting & infrastructure was up ~$31k (roughly 50%) as onboarding the Meridian Health account drove both compute and warehouse usage. We expect hosting to step down once the Meridian historical backfill completes in November. Software subscriptions increased $14.9K, nearly all of it the Voxly annual license, which was expensed on payment; we will move it to prepaid in November.
+
+People costs: payroll was up about $9K, almost entirely the two backend engineers who started Oct 13. Recruiting jumped $34.5K: two agency placement fees for the backend hires, against one in September. Contractor spend ticked up about $2.8K with Polaris QA coming on. Commissions fell $25K because the Q3 accelerator true-up hit in September and did not repeat.
+
+Go-to-market: Marketing programs rose $18K on the DataOps World sponsorship. T&E dropped roughly $24K, or about 60%, with no repeat of September's Sonoma offsite.
+
+G&A: Legal and professional fees rose $8.3K, driven by the first SOC 2 progress billing; the September Haldane Pryce accrual reversed and was replaced by the actual invoice. Rent & facilities were up $2.6K for the new 4th-floor storage lease. Insurance, merchant fees and office costs were immaterial. Headcount ended the month at 63.

@@ -1,0 +1,326 @@
+id,date,account,vendor,memo,amount
+LL-200001,2026-08-01,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200002,2026-08-01,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200003,2026-08-01,Ecommerce Platform & Apps,Storefront Plus,Plus plan - Aug,2300.00
+LL-200004,2026-08-01,Rent,Foundry Row Studios,Studio/office rent,6400.00
+LL-200005,2026-08-01,General & Admin,Officemart,Office supplies,76.17
+LL-200006,2026-08-02,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200007,2026-08-02,Payment Processing,CartPay Payments,Processing fees - Aug,10980.00
+LL-200008,2026-08-02,Payment Processing,CartPay Payments,Chargeback fees,225.00
+LL-200009,2026-08-02,Customer Support,Helpline Desk,Helpdesk seats (12),720.00
+LL-200010,2026-08-03,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200011,2026-08-03,Affiliates & Influencers,Affinity Network,Affiliate commissions - Aug,2950.00
+LL-200012,2026-08-03,Affiliates & Influencers,Affinity Network,Network fee,350.00
+LL-200013,2026-08-03,Ecommerce Platform & Apps,Mailwise,Email/SMS - 120k profiles,1800.00
+LL-200014,2026-08-03,General & Admin,Juniper Kitchen,Team lunch,55.73
+LL-200015,2026-08-03,General & Admin,SignPad,E-sign plan,207.14
+LL-200016,2026-08-04,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200017,2026-08-04,Packaging,Boxwell Packaging,Mailers 14x19,360.51
+LL-200018,2026-08-04,Ecommerce Platform & Apps,Reviewly,Reviews app,499.00
+LL-200019,2026-08-04,Ecommerce Platform & Apps,Bundlr,Bundles app,149.00
+LL-200020,2026-08-04,General & Admin,Officemart,Printer ink,24.71
+LL-200021,2026-08-05,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200022,2026-08-05,Affiliates & Influencers,Marta Ferreira Studio,"EUR 6,000.00 @1.0840 - creator retainer Aug",6504.00
+LL-200023,2026-08-05,General & Admin,Metro Rideshare,Ride - 3PL visit,159.05
+LL-200024,2026-08-05,General & Admin,Officemart,Office supplies,34.63
+LL-200025,2026-08-06,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200026,2026-08-06,Outbound Shipping,Harbor Parcel,Weekly parcel invoice - ground,6885.70
+LL-200027,2026-08-06,Returns & Refund Costs,Harbor Parcel,Return labels - weekly,885.23
+LL-200028,2026-08-07,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200029,2026-08-07,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200030,2026-08-07,3PL Fulfillment,Ridgeline Fulfillment,Pick/pack - weekly orders,5294.42
+LL-200031,2026-08-08,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200032,2026-08-08,Packaging,Boxwell Packaging,Boxes 18x14x6,519.07
+LL-200033,2026-08-08,Packaging,Boxwell Packaging,Mailers 14x19,595.42
+LL-200034,2026-08-09,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200035,2026-08-09,Packaging,Boxwell Packaging,Boxes 18x14x6,394.85
+LL-200036,2026-08-10,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200037,2026-08-10,General & Admin,SignPad,E-sign plan,150.24
+LL-200038,2026-08-10,General & Admin,Juniper Kitchen,Team lunch,132.62
+LL-200039,2026-08-11,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200040,2026-08-12,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200041,2026-08-12,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200042,2026-08-12,General & Admin,Metro Rideshare,Ride - 3PL visit,195.37
+LL-200043,2026-08-12,General & Admin,Officemart,Office supplies,39.35
+LL-200044,2026-08-13,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200045,2026-08-13,Outbound Shipping,Harbor Parcel,Weekly parcel invoice - ground,6876.25
+LL-200046,2026-08-13,Packaging,Boxwell Packaging,Mailers 14x19,383.45
+LL-200047,2026-08-13,Returns & Refund Costs,Harbor Parcel,Return labels - weekly,907.43
+LL-200048,2026-08-13,General & Admin,Metro Rideshare,Ride - 3PL visit,117.59
+LL-200049,2026-08-14,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200050,2026-08-14,3PL Fulfillment,Ridgeline Fulfillment,Pick/pack - weekly orders,5334.44
+LL-200051,2026-08-15,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200052,2026-08-15,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200053,2026-08-15,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200054,2026-08-15,Customer Support,Harbor CX,Agent hours 1st-15th,4826.03
+LL-200055,2026-08-15,Salaries,Gridline Payroll,Payroll 8/15,31515.22
+LL-200056,2026-08-16,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200057,2026-08-16,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200058,2026-08-16,Packaging,Boxwell Packaging,Mailers 14x19,521.46
+LL-200059,2026-08-16,Packaging,Boxwell Packaging,Boxes 18x14x6,353.03
+LL-200060,2026-08-17,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200061,2026-08-17,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200062,2026-08-17,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200063,2026-08-18,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200064,2026-08-18,Packaging,Boxwell Packaging,Boxes 18x14x6,310.21
+LL-200065,2026-08-19,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200066,2026-08-19,Content & Photography,Studio Nove,Lifestyle stills - Aug drops,2900.00
+LL-200067,2026-08-20,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200068,2026-08-20,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200069,2026-08-20,3PL Fulfillment,Ridgeline Fulfillment,Inbound receiving,450.00
+LL-200070,2026-08-20,Outbound Shipping,Harbor Parcel,Weekly parcel invoice - ground,6863.42
+LL-200071,2026-08-20,Returns & Refund Costs,Harbor Parcel,Return labels - weekly,894.50
+LL-200072,2026-08-20,General & Admin,SignPad,E-sign plan,106.33
+LL-200073,2026-08-21,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200074,2026-08-21,3PL Fulfillment,Ridgeline Fulfillment,Pick/pack - weekly orders,5271.50
+LL-200075,2026-08-22,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200076,2026-08-22,General & Admin,Metro Rideshare,Ride - 3PL visit,35.77
+LL-200077,2026-08-23,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200078,2026-08-23,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200079,2026-08-23,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200080,2026-08-24,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200081,2026-08-24,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200082,2026-08-24,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200083,2026-08-24,Packaging,Boxwell Packaging,Tissue + stickers,440.60
+LL-200084,2026-08-25,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200085,2026-08-25,Content & Photography,Ivy Park Copy,Freelance copy - Aug,1200.00
+LL-200086,2026-08-26,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200087,2026-08-27,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200088,2026-08-27,Outbound Shipping,Harbor Parcel,Weekly parcel invoice - ground,6884.04
+LL-200089,2026-08-27,Returns & Refund Costs,Harbor Parcel,Return labels - weekly,903.72
+LL-200090,2026-08-28,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200091,2026-08-28,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200092,2026-08-28,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200093,2026-08-28,3PL Fulfillment,Ridgeline Fulfillment,Pick/pack - weekly orders,5283.49
+LL-200094,2026-08-28,General & Admin,Officemart,Printer ink,108.61
+LL-200095,2026-08-28,General & Admin,SignPad,E-sign plan,156.97
+LL-200096,2026-08-29,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200097,2026-08-30,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200098,2026-08-30,Outbound Shipping,National Post ePostage,ePostage - lightweight,1450.00
+LL-200099,2026-08-31,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,583.87
+LL-200100,2026-08-31,3PL Fulfillment,Ridgeline Fulfillment,Storage - 270 pallets @ $45,12150.00
+LL-200101,2026-08-31,Customer Support,Harbor CX,Agent hours 16th-EOM,4791.00
+LL-200102,2026-08-31,Salaries,Gridline Payroll,Payroll 8/31,31518.72
+LL-200103,2026-09-01,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200104,2026-09-01,Ecommerce Platform & Apps,Storefront Plus,Plus plan - Sep,2300.00
+LL-200105,2026-09-01,Rent,Foundry Row Studios,Studio/office rent,6400.00
+LL-200106,2026-09-01,General & Admin,Officemart,Office supplies,101.93
+LL-200107,2026-09-02,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200108,2026-09-02,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200109,2026-09-02,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200110,2026-09-02,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200111,2026-09-02,Packaging,Boxwell Packaging,Mailers 14x19,368.21
+LL-200112,2026-09-02,Payment Processing,CartPay Payments,Processing fees - Sep,11240.00
+LL-200113,2026-09-02,Payment Processing,CartPay Payments,Chargeback fees,240.00
+LL-200114,2026-09-02,Customer Support,Helpline Desk,Helpdesk seats (12),720.00
+LL-200115,2026-09-02,General & Admin,SignPad,E-sign plan,126.99
+LL-200116,2026-09-03,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200117,2026-09-03,Affiliates & Influencers,Affinity Network,Affiliate commissions - Sep,3100.00
+LL-200118,2026-09-03,Affiliates & Influencers,Affinity Network,Network fee,350.00
+LL-200119,2026-09-03,Packaging,Boxwell Packaging,Mailers 14x19,539.23
+LL-200120,2026-09-03,Ecommerce Platform & Apps,Mailwise,Email/SMS - 120k profiles,1800.00
+LL-200121,2026-09-03,General & Admin,Metro Rideshare,Ride - 3PL visit,98.99
+LL-200122,2026-09-03,General & Admin,Officemart,Printer ink,42.59
+LL-200123,2026-09-04,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200124,2026-09-04,Ecommerce Platform & Apps,Reviewly,Reviews app,499.00
+LL-200125,2026-09-04,Ecommerce Platform & Apps,Bundlr,Bundles app,149.00
+LL-200126,2026-09-05,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200127,2026-09-05,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200128,2026-09-05,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200129,2026-09-05,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200130,2026-09-05,Affiliates & Influencers,Marta Ferreira Studio,"EUR 6,000.00 @1.0905 - creator retainer Sep",6543.00
+LL-200131,2026-09-06,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200132,2026-09-06,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200133,2026-09-06,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200134,2026-09-06,Outbound Shipping,Harbor Parcel,Weekly parcel invoice - ground,6949.78
+LL-200135,2026-09-06,Returns & Refund Costs,Harbor Parcel,Return labels - weekly,911.29
+LL-200136,2026-09-06,General & Admin,Juniper Kitchen,Team lunch,136.29
+LL-200137,2026-09-07,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200138,2026-09-07,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200139,2026-09-07,3PL Fulfillment,Ridgeline Fulfillment,Pick/pack - weekly orders,5449.44
+LL-200140,2026-09-08,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200141,2026-09-08,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200142,2026-09-08,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200143,2026-09-09,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200144,2026-09-09,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200145,2026-09-10,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200146,2026-09-11,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200147,2026-09-11,General & Admin,Metro Rideshare,Ride - 3PL visit,48.87
+LL-200148,2026-09-11,General & Admin,Officemart,Printer ink,46.85
+LL-200149,2026-09-11,General & Admin,Juniper Kitchen,Team lunch,85.22
+LL-200150,2026-09-12,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200151,2026-09-12,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200152,2026-09-12,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200153,2026-09-12,Packaging,Boxwell Packaging,Boxes 18x14x6,335.39
+LL-200154,2026-09-12,Content & Photography,Studio Nove,"Hearth campaign shoot - 2 days, stills + video",14500.00
+LL-200155,2026-09-12,General & Admin,Metro Rideshare,Ride - 3PL visit,214.99
+LL-200156,2026-09-13,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200157,2026-09-13,Outbound Shipping,Harbor Parcel,Weekly parcel invoice - ground,7059.05
+LL-200158,2026-09-13,Returns & Refund Costs,Harbor Parcel,Return labels - weekly,890.57
+LL-200159,2026-09-14,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200160,2026-09-14,3PL Fulfillment,Ridgeline Fulfillment,Pick/pack - weekly orders,5370.64
+LL-200161,2026-09-14,Packaging,Boxwell Packaging,Mailers 14x19,589.02
+LL-200162,2026-09-15,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200163,2026-09-15,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200164,2026-09-15,Customer Support,Harbor CX,Agent hours 1st-15th,4911.45
+LL-200165,2026-09-15,Salaries,Gridline Payroll,Payroll 9/15,31495.44
+LL-200166,2026-09-16,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200167,2026-09-16,General & Admin,Metro Rideshare,Ride - 3PL visit,224.12
+LL-200168,2026-09-16,General & Admin,Metro Rideshare,Ride - 3PL visit,119.83
+LL-200169,2026-09-17,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200170,2026-09-17,Packaging,Boxwell Packaging,Tissue + stickers,694.55
+LL-200171,2026-09-17,Returns & Refund Costs,Liquidity Freight Co,Freight - returns pallets to liquidator,2300.00
+LL-200172,2026-09-18,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200173,2026-09-18,Packaging,Boxwell Packaging,Boxes 18x14x6,466.03
+LL-200174,2026-09-19,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200175,2026-09-19,Packaging,Boxwell Packaging,Tissue + stickers,462.72
+LL-200176,2026-09-20,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200177,2026-09-20,3PL Fulfillment,Ridgeline Fulfillment,Inbound receiving,450.00
+LL-200178,2026-09-20,Outbound Shipping,Harbor Parcel,Weekly parcel invoice - ground,6957.88
+LL-200179,2026-09-20,Packaging,Boxwell Packaging,Mailers 14x19,331.72
+LL-200180,2026-09-20,Returns & Refund Costs,Harbor Parcel,Return labels - weekly,899.93
+LL-200181,2026-09-21,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200182,2026-09-21,3PL Fulfillment,Ridgeline Fulfillment,Pick/pack - weekly orders,5361.55
+LL-200183,2026-09-21,General & Admin,SignPad,E-sign plan,76.38
+LL-200184,2026-09-22,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200185,2026-09-22,Packaging,Boxwell Packaging,Mailers 14x19,521.60
+LL-200186,2026-09-23,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200187,2026-09-24,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200188,2026-09-24,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200189,2026-09-24,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200190,2026-09-24,Packaging,Boxwell Packaging,Tissue + stickers,492.09
+LL-200191,2026-09-25,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200192,2026-09-25,Content & Photography,Ivy Park Copy,Freelance copy - Sep,1200.00
+LL-200193,2026-09-26,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200194,2026-09-26,General & Admin,Metro Rideshare,Ride - 3PL visit,187.96
+LL-200195,2026-09-27,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200196,2026-09-27,Outbound Shipping,Harbor Parcel,Weekly parcel invoice - ground,7004.92
+LL-200197,2026-09-27,Returns & Refund Costs,Harbor Parcel,Return labels - weekly,880.09
+LL-200198,2026-09-28,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200199,2026-09-28,3PL Fulfillment,Ridgeline Fulfillment,Pick/pack - weekly orders,5349.47
+LL-200200,2026-09-29,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200201,2026-09-30,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,613.33
+LL-200202,2026-09-30,3PL Fulfillment,Ridgeline Fulfillment,Storage - 286 pallets @ $45,12870.00
+LL-200203,2026-09-30,Outbound Shipping,National Post ePostage,ePostage - lightweight,1480.00
+LL-200204,2026-09-30,Customer Support,Harbor CX,Agent hours 16th-EOM,4898.36
+LL-200205,2026-09-30,Salaries,Gridline Payroll,Payroll 9/30,31508.52
+LL-200206,2026-10-01,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200207,2026-10-01,Ecommerce Platform & Apps,Storefront Plus,Plus plan - Oct,2300.00
+LL-200208,2026-10-01,Rent,Foundry Row Studios,Studio/office rent,6400.00
+LL-200209,2026-10-02,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200210,2026-10-02,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200211,2026-10-02,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200212,2026-10-02,Payment Processing,CartPay Payments,Processing fees - Oct,14330.00
+LL-200213,2026-10-02,Payment Processing,CartPay Payments,Chargeback fees,255.00
+LL-200214,2026-10-02,Customer Support,Helpline Desk,Helpdesk seats (12),720.00
+LL-200215,2026-10-03,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200216,2026-10-03,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200217,2026-10-03,Affiliates & Influencers,Affinity Network,Affiliate commissions - Oct,7900.00
+LL-200218,2026-10-03,Affiliates & Influencers,Affinity Network,Network fee,350.00
+LL-200219,2026-10-03,Ecommerce Platform & Apps,Mailwise,Email/SMS - 120k profiles,1800.00
+LL-200220,2026-10-04,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200221,2026-10-04,Ecommerce Platform & Apps,Reviewly,Reviews app,499.00
+LL-200222,2026-10-04,Ecommerce Platform & Apps,Bundlr,Bundles app,149.00
+LL-200223,2026-10-04,General & Admin,SignPad,E-sign plan,130.53
+LL-200224,2026-10-05,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200225,2026-10-05,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200226,2026-10-05,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200227,2026-10-05,Affiliates & Influencers,Marta Ferreira Studio,"EUR 6,000.00 @1.1650 - creator retainer Oct",6990.00
+LL-200228,2026-10-06,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200229,2026-10-06,Outbound Shipping,Harbor Parcel,Weekly parcel invoice - ground,7320.56
+LL-200230,2026-10-06,Returns & Refund Costs,Harbor Parcel,Return labels - weekly,913.86
+LL-200231,2026-10-07,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200232,2026-10-07,3PL Fulfillment,Ridgeline Fulfillment,Pick/pack - weekly orders,5819.99
+LL-200233,2026-10-08,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200234,2026-10-08,Paid Social,Clipstream Ads,Campaign HEARTH_FALL26 - prepaid top-up,2000.00
+LL-200235,2026-10-08,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200236,2026-10-08,General & Admin,Officemart,Printer ink,217.41
+LL-200237,2026-10-09,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200238,2026-10-09,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200239,2026-10-09,Packaging,Boxwell Packaging,Mailers 14x19,637.89
+LL-200240,2026-10-09,Content & Photography,Studio Nove,Retouching - Hearth selects,1800.00
+LL-200241,2026-10-09,General & Admin,Metro Rideshare,Ride - 3PL visit,26.80
+LL-200242,2026-10-10,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200243,2026-10-11,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200244,2026-10-11,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200245,2026-10-11,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200246,2026-10-11,Ecommerce Platform & Apps,Searchlight Apps,Searchlight Pro - annual plan renewal,5988.00
+LL-200247,2026-10-11,General & Admin,SignPad,E-sign plan,146.41
+LL-200248,2026-10-12,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200249,2026-10-12,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200250,2026-10-13,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200251,2026-10-13,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200252,2026-10-13,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200253,2026-10-13,Outbound Shipping,Harbor Parcel,Weekly parcel invoice - ground,7322.98
+LL-200254,2026-10-13,Outbound Shipping,Harbor Parcel,Demand surcharge - residential,1640.00
+LL-200255,2026-10-13,Packaging,Boxwell Packaging,Boxes 18x14x6,549.63
+LL-200256,2026-10-13,Packaging,Boxwell Packaging,Boxes 18x14x6,380.55
+LL-200257,2026-10-13,Returns & Refund Costs,Harbor Parcel,Return labels - weekly,917.60
+LL-200258,2026-10-14,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200259,2026-10-14,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200260,2026-10-14,3PL Fulfillment,Ridgeline Fulfillment,Pick/pack - weekly orders,5837.20
+LL-200261,2026-10-15,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200262,2026-10-15,Paid Social,Clipstream Ads,Campaign HEARTH_FALL26 - prepaid top-up,2000.00
+LL-200263,2026-10-15,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200264,2026-10-15,Customer Support,Harbor CX,Agent hours 1st-15th,5090.15
+LL-200265,2026-10-15,Salaries,Gridline Payroll,Payroll 10/15,31475.61
+LL-200266,2026-10-15,General & Admin,SignPad,E-sign plan,238.47
+LL-200267,2026-10-16,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200268,2026-10-16,General & Admin,Metro Rideshare,Ride - 3PL visit,225.37
+LL-200269,2026-10-16,General & Admin,Juniper Kitchen,Team lunch,88.65
+LL-200270,2026-10-17,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200271,2026-10-17,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200272,2026-10-17,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200273,2026-10-18,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200274,2026-10-18,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200275,2026-10-18,Packaging,Boxwell Packaging,Tissue + stickers,544.05
+LL-200276,2026-10-18,Packaging,Boxwell Packaging,Boxes 18x14x6,347.52
+LL-200277,2026-10-18,General & Admin,Metro Rideshare,Ride - 3PL visit,201.95
+LL-200278,2026-10-19,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200279,2026-10-19,General & Admin,Juniper Kitchen,Team lunch,31.76
+LL-200280,2026-10-19,General & Admin,Metro Rideshare,Ride - 3PL visit,147.55
+LL-200281,2026-10-20,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200282,2026-10-20,3PL Fulfillment,Ridgeline Fulfillment,Inbound receiving,650.00
+LL-200283,2026-10-20,Outbound Shipping,Harbor Parcel,Weekly parcel invoice - ground,7296.25
+LL-200284,2026-10-20,Outbound Shipping,Harbor Parcel,Demand surcharge - residential,1640.00
+LL-200285,2026-10-20,Returns & Refund Costs,Harbor Parcel,Return labels - weekly,893.82
+LL-200286,2026-10-20,General & Admin,Metro Rideshare,Ride - 3PL visit,53.59
+LL-200287,2026-10-21,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200288,2026-10-21,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200289,2026-10-21,3PL Fulfillment,Ridgeline Fulfillment,Pick/pack - weekly orders,5748.00
+LL-200290,2026-10-21,Packaging,Boxwell Packaging,Mailers 14x19,692.32
+LL-200291,2026-10-22,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200292,2026-10-22,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200293,2026-10-22,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200294,2026-10-22,Paid Social,Clipstream Ads,Campaign HEARTH_FALL26 - prepaid top-up,2000.00
+LL-200295,2026-10-22,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200296,2026-10-22,General & Admin,Officemart,Office supplies,226.44
+LL-200297,2026-10-22,General & Admin,Officemart,Printer ink,158.43
+LL-200298,2026-10-23,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200299,2026-10-24,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200300,2026-10-24,Packaging,Boxwell Packaging,Tissue + stickers,308.45
+LL-200301,2026-10-24,General & Admin,Metro Rideshare,Ride - 3PL visit,95.63
+LL-200302,2026-10-25,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200303,2026-10-25,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200304,2026-10-25,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200305,2026-10-25,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200306,2026-10-25,Packaging,Boxwell Packaging,Tissue + stickers,693.55
+LL-200307,2026-10-25,Content & Photography,Ivy Park Copy,Freelance copy - Oct,1200.00
+LL-200308,2026-10-26,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200309,2026-10-26,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200310,2026-10-27,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200311,2026-10-27,Outbound Shipping,Harbor Parcel,Weekly parcel invoice - ground,7303.37
+LL-200312,2026-10-27,Outbound Shipping,Harbor Parcel,Demand surcharge - residential,1640.00
+LL-200313,2026-10-27,Returns & Refund Costs,Harbor Parcel,Return labels - weekly,889.25
+LL-200314,2026-10-28,Paid Social,SocialReach Ads,Ad charges - acct 2231 (threshold),2500.00
+LL-200315,2026-10-28,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200316,2026-10-28,3PL Fulfillment,Ridgeline Fulfillment,Pick/pack - weekly orders,5797.47
+LL-200317,2026-10-28,General & Admin,Metro Rideshare,Ride - 3PL visit,143.54
+LL-200318,2026-10-29,Paid Social,Clipstream Ads,Campaign HEARTH_FALL26 - prepaid top-up,2000.00
+LL-200319,2026-10-29,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200320,2026-10-30,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200321,2026-10-30,Outbound Shipping,National Post ePostage,ePostage - lightweight,1520.00
+LL-200322,2026-10-31,Paid Search,SearchReach Ads,Search + shopping campaigns - daily,462.90
+LL-200323,2026-10-31,3PL Fulfillment,Ridgeline Fulfillment,Storage - 412 pallets @ $45,18540.00
+LL-200324,2026-10-31,Customer Support,Harbor CX,Agent hours 16th-EOM,5085.20
+LL-200325,2026-10-31,Salaries,Gridline Payroll,Payroll 10/31,31536.34

@@ -1,0 +1,319 @@
+id,date,account,vendor,memo,amount
+JE-104501,2026-08-01,Rent & Facilities,Pier 70 Holdings LLC,Suite 400 rent - Aug 2026,18450.00
+JE-104502,2026-08-01,Software Subscriptions,Suite Mail & Docs,Business Std Aug,1836.00
+JE-104503,2026-08-01,Benefits & Payroll Taxes,Golden State Health Plan,Group medical/dental/vision Aug,31200.00
+JE-104504,2026-08-01,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,174.71
+JE-104505,2026-08-01,Travel & Entertainment,Metro Rideshare,Ride - airport,626.39
+JE-104506,2026-08-01,Travel & Entertainment,Metro Rideshare,Ride - airport,286.48
+JE-104507,2026-08-02,Software Subscriptions,Chatterbox Workspace,Business+ 96 seats,2880.00
+JE-104508,2026-08-02,Software Subscriptions,Trellis Dev Tools,Issue tracker + wiki cloud Aug,3150.00
+JE-104509,2026-08-02,Marketing Programs,PeerGrid,Profile listing Aug,1650.00
+JE-104510,2026-08-02,Travel & Entertainment,Westwind Airlines,OAK-BOS,579.94
+JE-104511,2026-08-02,Merchant & Bank Fees,Payflow Processing,Card processing fees Aug,2835.92
+JE-104512,2026-08-03,Hosting & Infrastructure,Nimbus Cloud Services,Compute + storage usage Aug - acct 4471-2290,41212.55
+JE-104513,2026-08-03,Software Subscriptions,CodeHarbor,Team plan Aug,1470.00
+JE-104514,2026-08-03,Travel & Entertainment,Westwind Airlines,SFO-JFK,306.28
+JE-104515,2026-08-03,Travel & Entertainment,Westwind Airlines,SFO-ORD rt,432.09
+JE-104516,2026-08-03,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,187.59
+JE-104517,2026-08-03,Travel & Entertainment,Metro Rideshare,Ride - airport,125.50
+JE-104518,2026-08-03,Merchant & Bank Fees,Harbor Commerce Bank,Analysis fees,85.00
+JE-104519,2026-08-04,Hosting & Infrastructure,Glacier Data Cloud,Capacity credits - Aug (on-demand overage incl.),9804.00
+JE-104520,2026-08-04,Travel & Entertainment,Juniper Kitchen,Team lunch,320.32
+JE-104521,2026-08-04,Travel & Entertainment,Westwind Airlines,SFO-JFK,383.53
+JE-104522,2026-08-04,Recruiting,Talentloop ATS,ATS subscription Aug,1150.00
+JE-104523,2026-08-04,Recruiting,ProNet Ads,Recruiter Lite seats (4),2400.00
+JE-104524,2026-08-04,Office & Supplies,Supplyhub,Office supplies,377.81
+JE-104525,2026-08-04,Office & Supplies,Supplyhub,Office supplies,256.56
+JE-104526,2026-08-05,Rent & Facilities,Bayside Facility Services,Janitorial svc Aug,1240.00
+JE-104527,2026-08-05,Travel & Entertainment,Westwind Airlines,SFO-ORD rt,517.84
+JE-104528,2026-08-05,Travel & Entertainment,Juniper Kitchen,Team lunch,604.33
+JE-104529,2026-08-06,Hosting & Infrastructure,Watchtower Monitoring,Infra + APM hosts Aug,6282.00
+JE-104530,2026-08-07,Hosting & Infrastructure,EdgeShield,Pro plan + Argo Aug,1250.00
+JE-104531,2026-08-07,Travel & Entertainment,Metro Rideshare,Ride - airport,208.21
+JE-104532,2026-08-07,Office & Supplies,Supplyhub,Snacks,278.64
+JE-104533,2026-08-08,Software Subscriptions,MeetLine Video,Business 40 licenses,610.00
+JE-104534,2026-08-08,Travel & Entertainment,Harborview Hotel,Lodging 3 nts,207.32
+JE-104535,2026-08-09,Hosting & Infrastructure,OnCall Alerts,Business plan 14 users,588.00
+JE-104536,2026-08-10,Software Subscriptions,Notebook HQ,Team plan,480.00
+JE-104537,2026-08-10,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,33.17
+JE-104538,2026-08-10,Travel & Entertainment,Cityline Taxi,Taxi,175.39
+JE-104539,2026-08-10,Travel & Entertainment,Metro Rideshare,Ride,594.28
+JE-104540,2026-08-10,Travel & Entertainment,Metro Rideshare,Ride - airport,396.39
+JE-104541,2026-08-10,Legal & Professional,Larkspur CPAs,Monthly close + tax provision support,4500.00
+JE-104542,2026-08-11,Software Subscriptions,Funnelwise,Marketing Hub Pro Aug,3200.00
+JE-104543,2026-08-11,Travel & Entertainment,Harborview Hotel,Lodging 2 nts,695.21
+JE-104544,2026-08-11,Travel & Entertainment,Cityline Taxi,Taxi,296.46
+JE-104545,2026-08-11,Travel & Entertainment,Juniper Kitchen,Customer dinner,437.01
+JE-104546,2026-08-12,Rent & Facilities,Bay Area Power & Light,Electric acct 88-1024 Aug,1082.17
+JE-104547,2026-08-13,Travel & Entertainment,Harborview Hotel,Lodging 2 nts,691.05
+JE-104548,2026-08-14,Travel & Entertainment,Juniper Kitchen,Customer dinner,420.71
+JE-104549,2026-08-14,Office & Supplies,Supplyhub,Snacks,246.45
+JE-104550,2026-08-15,Rent & Facilities,Cascade Fiber,Fiber 1G circuit Aug,389.00
+JE-104551,2026-08-15,Salaries & Wages,PayBridge Payroll,Payroll 08/15/26 - Engineering,117983.79
+JE-104552,2026-08-15,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 08/15/26 - Engineering,8400.45
+JE-104553,2026-08-15,Benefits & Payroll Taxes,Nestegg 401k,401k match 08/15 - Engineering,3539.51
+JE-104554,2026-08-15,Salaries & Wages,PayBridge Payroll,Payroll 08/15/26 - Sales,46001.44
+JE-104555,2026-08-15,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 08/15/26 - Sales,3275.30
+JE-104556,2026-08-15,Benefits & Payroll Taxes,Nestegg 401k,401k match 08/15 - Sales,1380.04
+JE-104557,2026-08-15,Salaries & Wages,PayBridge Payroll,Payroll 08/15/26 - Customer Success,21007.34
+JE-104558,2026-08-15,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 08/15/26 - Customer Success,1495.72
+JE-104559,2026-08-15,Benefits & Payroll Taxes,Nestegg 401k,401k match 08/15 - Customer Success,630.22
+JE-104560,2026-08-15,Salaries & Wages,PayBridge Payroll,Payroll 08/15/26 - G&A,27465.31
+JE-104561,2026-08-15,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 08/15/26 - G&A,1955.53
+JE-104562,2026-08-15,Benefits & Payroll Taxes,Nestegg 401k,401k match 08/15 - G&A,823.96
+JE-104563,2026-08-15,Travel & Entertainment,Harborview Hotel,Lodging 2 nts,388.20
+JE-104564,2026-08-15,Travel & Entertainment,Westwind Airlines,SFO-SEA,310.68
+JE-104565,2026-08-15,Travel & Entertainment,Juniper Kitchen,Customer dinner,71.71
+JE-104566,2026-08-16,Travel & Entertainment,Westwind Airlines,OAK-BOS,706.45
+JE-104567,2026-08-16,Travel & Entertainment,Juniper Kitchen,Customer dinner,320.81
+JE-104568,2026-08-16,Travel & Entertainment,Cityline Taxi,Taxi,388.85
+JE-104569,2026-08-16,Travel & Entertainment,Westwind Airlines,SFO-SEA,513.67
+JE-104570,2026-08-17,Legal & Professional,Haldane Pryce LLP,Inv 22-0817 - commercial contracts,6200.00
+JE-104571,2026-08-17,Office & Supplies,Desk & Dock,Keyboard,356.52
+JE-104572,2026-08-18,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,504.01
+JE-104573,2026-08-20,Contractors,Kestrel Dev Studio Ltd,"GBP 9,500.00 @1.2712 - Aug sprint retainer",12076.40
+JE-104574,2026-08-21,Travel & Entertainment,Cityline Taxi,Taxi,223.35
+JE-104575,2026-08-22,Travel & Entertainment,Metro Rideshare,Ride,338.72
+JE-104576,2026-08-24,Travel & Entertainment,Metro Rideshare,Ride,319.27
+JE-104577,2026-08-24,Travel & Entertainment,Metro Rideshare,Ride,139.35
+JE-104578,2026-08-24,Travel & Entertainment,Metro Rideshare,Ride,77.72
+JE-104579,2026-08-24,Office & Supplies,Supplyhub,Office supplies,138.61
+JE-104580,2026-08-25,Contractors,Ana Ribeiro Design,Product design - Aug,6200.00
+JE-104581,2026-08-25,Travel & Entertainment,Harborview Hotel,Lodging 2 nts,383.89
+JE-104582,2026-08-25,Travel & Entertainment,Metro Rideshare,Ride - airport,262.46
+JE-104583,2026-08-27,Travel & Entertainment,Cityline Taxi,Taxi,518.39
+JE-104584,2026-08-27,Office & Supplies,Desk & Dock,Dock,83.86
+JE-104585,2026-08-28,Sales Commissions,PayBridge Payroll,Commissions - Aug base plan,17400.00
+JE-104586,2026-08-28,Travel & Entertainment,Juniper Kitchen,Customer dinner,59.05
+JE-104587,2026-08-28,Travel & Entertainment,Metro Rideshare,Ride - airport,156.15
+JE-104588,2026-08-29,Marketing Programs,ProNet Ads,Sponsored content Aug,7500.00
+JE-104589,2026-08-30,Marketing Programs,SearchReach Ads,Search campaigns Aug,8900.00
+JE-104590,2026-08-31,Software Subscriptions,Pipeline CRM,Prepaid amort - Pipeline CRM FY26 contract 11/12,4950.00
+JE-104591,2026-08-31,Salaries & Wages,PayBridge Payroll,Payroll 08/31/26 - Engineering,118005.62
+JE-104592,2026-08-31,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 08/31/26 - Engineering,8402.00
+JE-104593,2026-08-31,Benefits & Payroll Taxes,Nestegg 401k,401k match 08/31 - Engineering,3540.17
+JE-104594,2026-08-31,Salaries & Wages,PayBridge Payroll,Payroll 08/31/26 - Sales,46023.90
+JE-104595,2026-08-31,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 08/31/26 - Sales,3276.90
+JE-104596,2026-08-31,Benefits & Payroll Taxes,Nestegg 401k,401k match 08/31 - Sales,1380.72
+JE-104597,2026-08-31,Salaries & Wages,PayBridge Payroll,Payroll 08/31/26 - Customer Success,21024.61
+JE-104598,2026-08-31,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 08/31/26 - Customer Success,1496.95
+JE-104599,2026-08-31,Benefits & Payroll Taxes,Nestegg 401k,401k match 08/31 - Customer Success,630.74
+JE-104600,2026-08-31,Salaries & Wages,PayBridge Payroll,Payroll 08/31/26 - G&A,27455.35
+JE-104601,2026-08-31,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 08/31/26 - G&A,1954.82
+JE-104602,2026-08-31,Benefits & Payroll Taxes,Nestegg 401k,401k match 08/31 - G&A,823.66
+JE-104603,2026-08-31,Insurance,Halyard Insurance Brokers,Prepaid amort - D&O / cyber,3950.00
+JE-104604,2026-09-01,Rent & Facilities,Pier 70 Holdings LLC,Suite 400 rent - Sep 2026,18450.00
+JE-104605,2026-09-01,Software Subscriptions,Suite Mail & Docs,Business Std Sep,1836.00
+JE-104606,2026-09-01,Benefits & Payroll Taxes,Golden State Health Plan,Group medical/dental/vision Sep,31200.00
+JE-104607,2026-09-01,Travel & Entertainment,Cityline Taxi,Taxi,309.58
+JE-104608,2026-09-01,Travel & Entertainment,Metro Rideshare,Ride - airport,193.81
+JE-104609,2026-09-02,Software Subscriptions,Chatterbox Workspace,Business+ 96 seats,2880.00
+JE-104610,2026-09-02,Software Subscriptions,Trellis Dev Tools,Issue tracker + wiki cloud Sep,3150.00
+JE-104611,2026-09-02,Marketing Programs,PeerGrid,Profile listing Sep,1650.00
+JE-104612,2026-09-02,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,577.35
+JE-104613,2026-09-02,Merchant & Bank Fees,Payflow Processing,Card processing fees Sep,2835.62
+JE-104614,2026-09-03,Hosting & Infrastructure,Nimbus Cloud Services,Compute + storage usage Sep - acct 4471-2290,42048.10
+JE-104615,2026-09-03,Software Subscriptions,CodeHarbor,Team plan Sep,1470.00
+JE-104616,2026-09-03,Travel & Entertainment,Westwind Airlines,OAK-BOS,406.81
+JE-104617,2026-09-03,Travel & Entertainment,Cityline Taxi,Taxi,244.06
+JE-104618,2026-09-03,Merchant & Bank Fees,Harbor Commerce Bank,Analysis fees,85.00
+JE-104619,2026-09-03,Office & Supplies,Desk & Dock,Monitor,164.19
+JE-104620,2026-09-04,Hosting & Infrastructure,Glacier Data Cloud,Capacity credits - Sep (on-demand overage incl.),10152.00
+JE-104621,2026-09-04,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,637.06
+JE-104622,2026-09-04,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,568.16
+JE-104623,2026-09-04,Recruiting,Talentloop ATS,ATS subscription Sep,1150.00
+JE-104624,2026-09-04,Recruiting,ProNet Ads,Recruiter Lite seats (4),2400.00
+JE-104625,2026-09-04,Office & Supplies,Desk & Dock,Monitor,54.23
+JE-104626,2026-09-05,Rent & Facilities,Bayside Facility Services,Janitorial svc Sep,1240.00
+JE-104627,2026-09-05,Office & Supplies,Desk & Dock,Monitor,110.12
+JE-104628,2026-09-06,Hosting & Infrastructure,Watchtower Monitoring,Infra + APM hosts Sep,6322.59
+JE-104629,2026-09-06,Travel & Entertainment,Harborview Hotel,Lodging 2 nts,550.99
+JE-104630,2026-09-06,Office & Supplies,Supplyhub,Office supplies,416.31
+JE-104631,2026-09-07,Hosting & Infrastructure,EdgeShield,Pro plan + Argo Sep,1250.00
+JE-104632,2026-09-07,Travel & Entertainment,Metro Rideshare,Ride - airport,181.51
+JE-104633,2026-09-07,Travel & Entertainment,Harborview Hotel,Lodging 2 nts,122.84
+JE-104634,2026-09-07,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,598.45
+JE-104635,2026-09-08,Software Subscriptions,MeetLine Video,Business 40 licenses,610.00
+JE-104636,2026-09-09,Hosting & Infrastructure,OnCall Alerts,Business plan 14 users,588.00
+JE-104637,2026-09-09,Travel & Entertainment,Juniper Kitchen,Customer dinner,603.32
+JE-104638,2026-09-09,Travel & Entertainment,Westwind Airlines,SFO-JFK,498.00
+JE-104639,2026-09-10,Software Subscriptions,Notebook HQ,Team plan,480.00
+JE-104640,2026-09-10,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,124.26
+JE-104641,2026-09-10,Travel & Entertainment,Harborview Hotel,Lodging 2 nts,497.91
+JE-104642,2026-09-10,Legal & Professional,Larkspur CPAs,Monthly close + tax provision support,4500.00
+JE-104643,2026-09-11,Software Subscriptions,Funnelwise,Marketing Hub Pro Sep,3200.00
+JE-104644,2026-09-11,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,674.63
+JE-104645,2026-09-11,Travel & Entertainment,Metro Rideshare,Ride - airport,489.47
+JE-104646,2026-09-12,Rent & Facilities,Bay Area Power & Light,Electric acct 88-1024 Sep,1045.90
+JE-104647,2026-09-12,Travel & Entertainment,Harborview Hotel,Lodging 2 nts,502.75
+JE-104648,2026-09-14,Office & Supplies,Desk & Dock,Keyboard,174.74
+JE-104649,2026-09-15,Rent & Facilities,Cascade Fiber,Fiber 1G circuit Sep,389.00
+JE-104650,2026-09-15,Salaries & Wages,PayBridge Payroll,Payroll 09/15/26 - Engineering,117907.21
+JE-104651,2026-09-15,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 09/15/26 - Engineering,8394.99
+JE-104652,2026-09-15,Benefits & Payroll Taxes,Nestegg 401k,401k match 09/15 - Engineering,3537.22
+JE-104653,2026-09-15,Salaries & Wages,PayBridge Payroll,Payroll 09/15/26 - Sales,45924.68
+JE-104654,2026-09-15,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 09/15/26 - Sales,3269.84
+JE-104655,2026-09-15,Benefits & Payroll Taxes,Nestegg 401k,401k match 09/15 - Sales,1377.74
+JE-104656,2026-09-15,Salaries & Wages,PayBridge Payroll,Payroll 09/15/26 - Customer Success,21026.01
+JE-104657,2026-09-15,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 09/15/26 - Customer Success,1497.05
+JE-104658,2026-09-15,Benefits & Payroll Taxes,Nestegg 401k,401k match 09/15 - Customer Success,630.78
+JE-104659,2026-09-15,Salaries & Wages,PayBridge Payroll,Payroll 09/15/26 - G&A,27521.28
+JE-104660,2026-09-15,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 09/15/26 - G&A,1959.52
+JE-104661,2026-09-15,Benefits & Payroll Taxes,Nestegg 401k,401k match 09/15 - G&A,825.64
+JE-104662,2026-09-15,Travel & Entertainment,Westwind Airlines,SFO-JFK,464.68
+JE-104663,2026-09-16,Marketing Programs,Lumen Webcasts,Webinar series production - Q3,3000.00
+JE-104664,2026-09-16,Travel & Entertainment,Westwind Airlines,SFO-JFK,188.85
+JE-104665,2026-09-16,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,648.53
+JE-104666,2026-09-17,Travel & Entertainment,Metro Rideshare,Ride,550.10
+JE-104667,2026-09-18,Recruiting,Talent Bridge Partners,Placement fee - Enterprise AE (M. Chen),24000.00
+JE-104668,2026-09-19,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,333.96
+JE-104669,2026-09-19,Travel & Entertainment,Harborview Hotel,Lodging 3 nts,243.23
+JE-104670,2026-09-19,Office & Supplies,Supplyhub,Office supplies,91.09
+JE-104671,2026-09-20,Contractors,Kestrel Dev Studio Ltd,"GBP 9,500.00 @1.3105 - Sep sprint retainer",12449.75
+JE-104672,2026-09-20,Travel & Entertainment,Westwind Airlines,SFO-JFK,362.74
+JE-104673,2026-09-20,Travel & Entertainment,Westwind Airlines,SFO-JFK,85.34
+JE-104674,2026-09-21,Travel & Entertainment,Metro Rideshare,Ride - airport,584.56
+JE-104675,2026-09-21,Travel & Entertainment,Juniper Kitchen,Team lunch,493.78
+JE-104676,2026-09-21,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,691.34
+JE-104677,2026-09-22,Travel & Entertainment,Cityline Taxi,Taxi,291.63
+JE-104678,2026-09-22,Travel & Entertainment,Harborview Hotel,Lodging 3 nts,373.83
+JE-104679,2026-09-23,Travel & Entertainment,Cityline Taxi,Taxi,153.58
+JE-104680,2026-09-24,Travel & Entertainment,Vintners Ridge Resort,Q4 SKO offsite - lodging + F&B,21300.00
+JE-104681,2026-09-24,Travel & Entertainment,Napa Valley Coach Lines,Q4 SKO offsite - shuttle,2400.00
+JE-104682,2026-09-25,Contractors,Ana Ribeiro Design,Product design - Sep,6200.00
+JE-104683,2026-09-26,Travel & Entertainment,Metro Rideshare,Ride,708.97
+JE-104684,2026-09-27,Travel & Entertainment,Harborview Hotel,Lodging 2 nts,520.74
+JE-104685,2026-09-27,Travel & Entertainment,Harborview Hotel,Lodging 2 nts,107.85
+JE-104686,2026-09-27,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,251.04
+JE-104687,2026-09-28,Sales Commissions,PayBridge Payroll,Commissions - Sep base plan,18000.00
+JE-104688,2026-09-28,Travel & Entertainment,Westwind Airlines,OAK-BOS,681.53
+JE-104689,2026-09-28,Travel & Entertainment,Westwind Airlines,OAK-BOS,425.24
+JE-104690,2026-09-29,Marketing Programs,ProNet Ads,Sponsored content Sep,7480.00
+JE-104691,2026-09-30,Software Subscriptions,Pipeline CRM,Prepaid amort - Pipeline CRM FY26 contract 12/12,4950.00
+JE-104692,2026-09-30,Salaries & Wages,PayBridge Payroll,Payroll 09/30/26 - Engineering,117783.77
+JE-104693,2026-09-30,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 09/30/26 - Engineering,8386.20
+JE-104694,2026-09-30,Benefits & Payroll Taxes,Nestegg 401k,401k match 09/30 - Engineering,3533.51
+JE-104695,2026-09-30,Salaries & Wages,PayBridge Payroll,Payroll 09/30/26 - Sales,46088.72
+JE-104696,2026-09-30,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 09/30/26 - Sales,3281.52
+JE-104697,2026-09-30,Benefits & Payroll Taxes,Nestegg 401k,401k match 09/30 - Sales,1382.66
+JE-104698,2026-09-30,Salaries & Wages,PayBridge Payroll,Payroll 09/30/26 - Customer Success,21039.04
+JE-104699,2026-09-30,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 09/30/26 - Customer Success,1497.98
+JE-104700,2026-09-30,Benefits & Payroll Taxes,Nestegg 401k,401k match 09/30 - Customer Success,631.17
+JE-104701,2026-09-30,Salaries & Wages,PayBridge Payroll,Payroll 09/30/26 - G&A,27516.93
+JE-104702,2026-09-30,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 09/30/26 - G&A,1959.21
+JE-104703,2026-09-30,Benefits & Payroll Taxes,Nestegg 401k,401k match 09/30 - G&A,825.51
+JE-104704,2026-09-30,Sales Commissions,PayBridge Payroll,Q3 accelerator true-up - AE team,26400.00
+JE-104705,2026-09-30,Marketing Programs,SearchReach Ads,Search campaigns Sep,9150.00
+JE-104706,2026-09-30,Legal & Professional,Haldane Pryce LLP,Accrued legal fees - Sep (est.) MSA negotiations,15000.00
+JE-104707,2026-09-30,Insurance,Halyard Insurance Brokers,Prepaid amort - D&O / cyber,3950.00
+JE-104708,2026-10-01,Rent & Facilities,Pier 70 Holdings LLC,Suite 400 rent - Oct 2026,18450.00
+JE-104709,2026-10-01,Software Subscriptions,Suite Mail & Docs,Business Std Oct,1836.00
+JE-104710,2026-10-01,Benefits & Payroll Taxes,Golden State Health Plan,Group medical/dental/vision Oct,31200.00
+JE-104711,2026-10-01,Legal & Professional,Haldane Pryce LLP,Reverse Sep accrual - legal fees,-15000.00
+JE-104712,2026-10-01,Office & Supplies,Desk & Dock,Keyboard,306.39
+JE-104713,2026-10-02,Software Subscriptions,Chatterbox Workspace,Business+ 96 seats,2880.00
+JE-104714,2026-10-02,Software Subscriptions,Trellis Dev Tools,Issue tracker + wiki cloud Oct,3240.00
+JE-104715,2026-10-02,Marketing Programs,PeerGrid,Profile listing Oct,1650.00
+JE-104716,2026-10-02,Travel & Entertainment,Westwind Airlines,OAK-BOS,266.02
+JE-104717,2026-10-02,Merchant & Bank Fees,Payflow Processing,Card processing fees Oct,3047.12
+JE-104718,2026-10-03,Hosting & Infrastructure,Nimbus Cloud Services,Compute + storage usage Oct - acct 4471-2290,63880.42
+JE-104719,2026-10-03,Software Subscriptions,CodeHarbor,Team plan Oct,1470.00
+JE-104720,2026-10-03,Travel & Entertainment,Juniper Kitchen,Team lunch,400.50
+JE-104721,2026-10-03,Travel & Entertainment,Metro Rideshare,Ride - airport,315.50
+JE-104722,2026-10-03,Merchant & Bank Fees,Harbor Commerce Bank,Analysis fees,85.00
+JE-104723,2026-10-04,Hosting & Infrastructure,Glacier Data Cloud,Capacity credits - Oct (on-demand overage incl.),19416.00
+JE-104724,2026-10-04,Travel & Entertainment,Cityline Taxi,Taxi,94.32
+JE-104725,2026-10-04,Travel & Entertainment,Juniper Kitchen,Team lunch,534.32
+JE-104726,2026-10-04,Recruiting,Talentloop ATS,ATS subscription Oct,1150.00
+JE-104727,2026-10-04,Recruiting,ProNet Ads,Recruiter Lite seats (4),2400.00
+JE-104728,2026-10-05,Rent & Facilities,Bayside Facility Services,Janitorial svc Oct,1240.00
+JE-104729,2026-10-06,Hosting & Infrastructure,Watchtower Monitoring,Infra + APM hosts Oct,6460.35
+JE-104730,2026-10-06,Software Subscriptions,Voxly Inc,Voxly annual license 10/26-10/27 (24 seats) - paid on card,14400.00
+JE-104731,2026-10-06,Travel & Entertainment,Westwind Airlines,SFO-SEA,503.74
+JE-104732,2026-10-06,Office & Supplies,Supplyhub,Snacks,212.50
+JE-104733,2026-10-07,Hosting & Infrastructure,EdgeShield,Pro plan + Argo Oct,1250.00
+JE-104734,2026-10-07,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,528.14
+JE-104735,2026-10-07,Travel & Entertainment,Westwind Airlines,SFO-JFK,325.96
+JE-104736,2026-10-07,Travel & Entertainment,Cityline Taxi,Taxi,617.03
+JE-104737,2026-10-08,Software Subscriptions,MeetLine Video,Business 40 licenses,610.00
+JE-104738,2026-10-08,Marketing Programs,Summit Collective LLC,DataOps World 2026 - Gold sponsorship,24000.00
+JE-104739,2026-10-08,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,313.23
+JE-104740,2026-10-08,Travel & Entertainment,Metro Rideshare,Ride,504.05
+JE-104741,2026-10-09,Hosting & Infrastructure,OnCall Alerts,Business plan 14 users,588.00
+JE-104742,2026-10-09,Travel & Entertainment,Harborview Hotel,Lodging 2 nts,270.47
+JE-104743,2026-10-09,Travel & Entertainment,Cityline Taxi,Taxi,493.20
+JE-104744,2026-10-09,Travel & Entertainment,Juniper Kitchen,Customer dinner,356.48
+JE-104745,2026-10-10,Software Subscriptions,Notebook HQ,Team plan,480.00
+JE-104746,2026-10-10,Legal & Professional,Larkspur CPAs,Monthly close + tax provision support,4500.00
+JE-104747,2026-10-11,Software Subscriptions,Funnelwise,Marketing Hub Pro Oct,3200.00
+JE-104748,2026-10-11,Travel & Entertainment,Metro Rideshare,Ride - airport,651.62
+JE-104749,2026-10-12,Rent & Facilities,Bay Area Power & Light,Electric acct 88-1024 Oct,1698.33
+JE-104750,2026-10-13,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,340.85
+JE-104751,2026-10-13,Travel & Entertainment,Cityline Taxi,Taxi,401.44
+JE-104752,2026-10-13,Office & Supplies,Desk & Dock,Monitor,269.85
+JE-104753,2026-10-14,Travel & Entertainment,Metro Rideshare,Ride,377.19
+JE-104754,2026-10-14,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,401.35
+JE-104755,2026-10-14,Recruiting,Talent Bridge Partners,Placement fee - Sr Backend Eng (J. Okafor),30000.00
+JE-104756,2026-10-15,Rent & Facilities,Cascade Fiber,Fiber 1G circuit Oct,389.00
+JE-104757,2026-10-15,Salaries & Wages,PayBridge Payroll,Payroll 10/15/26 - Engineering,119369.55
+JE-104758,2026-10-15,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 10/15/26 - Engineering,8499.11
+JE-104759,2026-10-15,Benefits & Payroll Taxes,Nestegg 401k,401k match 10/15 - Engineering,3581.09
+JE-104760,2026-10-15,Salaries & Wages,PayBridge Payroll,Payroll 10/15/26 - Sales,45936.98
+JE-104761,2026-10-15,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 10/15/26 - Sales,3270.71
+JE-104762,2026-10-15,Benefits & Payroll Taxes,Nestegg 401k,401k match 10/15 - Sales,1378.11
+JE-104763,2026-10-15,Salaries & Wages,PayBridge Payroll,Payroll 10/15/26 - Customer Success,20959.26
+JE-104764,2026-10-15,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 10/15/26 - Customer Success,1492.30
+JE-104765,2026-10-15,Benefits & Payroll Taxes,Nestegg 401k,401k match 10/15 - Customer Success,628.78
+JE-104766,2026-10-15,Salaries & Wages,PayBridge Payroll,Payroll 10/15/26 - G&A,27503.12
+JE-104767,2026-10-15,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 10/15/26 - G&A,1958.22
+JE-104768,2026-10-15,Benefits & Payroll Taxes,Nestegg 401k,401k match 10/15 - G&A,825.09
+JE-104769,2026-10-16,Travel & Entertainment,Metro Rideshare,Ride,719.88
+JE-104770,2026-10-16,Legal & Professional,Haldane Pryce LLP,"Inv 22-0931 - Sep svcs: MSA negotiations, DPA review",16800.00
+JE-104771,2026-10-17,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,682.57
+JE-104772,2026-10-17,Travel & Entertainment,Juniper Kitchen,Team lunch,603.50
+JE-104773,2026-10-17,Travel & Entertainment,Cityline Taxi,Taxi,425.36
+JE-104774,2026-10-17,Travel & Entertainment,Westwind Airlines,OAK-BOS,405.36
+JE-104775,2026-10-17,Travel & Entertainment,Juniper Kitchen,Team lunch,104.94
+JE-104776,2026-10-17,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,46.04
+JE-104777,2026-10-17,Office & Supplies,Supplyhub,Office supplies,163.00
+JE-104778,2026-10-18,Travel & Entertainment,Harborview Hotel,Lodging 2 nts,301.53
+JE-104779,2026-10-18,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,395.44
+JE-104780,2026-10-19,Marketing Programs,ExhibitPro,"Booth build, drayage + shipping - DataOps World",6850.00
+JE-104781,2026-10-19,Travel & Entertainment,Juniper Kitchen,Customer dinner,552.91
+JE-104782,2026-10-19,Office & Supplies,Desk & Dock,Keyboard,112.56
+JE-104783,2026-10-20,Contractors,Kestrel Dev Studio Ltd,"GBP 9,500.00 @1.2690 - Oct sprint retainer",12055.50
+JE-104784,2026-10-20,Travel & Entertainment,Juniper Kitchen,Customer dinner,668.44
+JE-104785,2026-10-20,Travel & Entertainment,Cityline Taxi,Taxi,190.53
+JE-104786,2026-10-21,Travel & Entertainment,Metro Rideshare,Ride,289.99
+JE-104787,2026-10-21,Travel & Entertainment,Cityline Taxi,Taxi,349.96
+JE-104788,2026-10-21,Travel & Entertainment,Cityline Taxi,Taxi,390.72
+JE-104789,2026-10-21,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,652.85
+JE-104790,2026-10-21,Recruiting,Talent Bridge Partners,Placement fee - Backend Eng (R. Sato),28500.00
+JE-104791,2026-10-22,Contractors,Polaris QA Labs,Regression test pod - Oct (new SOW),3800.00
+JE-104792,2026-10-23,Travel & Entertainment,Bluebird Coffee,Coffee w/ prospect,177.17
+JE-104793,2026-10-23,Travel & Entertainment,Metro Rideshare,Ride,54.58
+JE-104794,2026-10-23,Legal & Professional,Ardent Assurance LLC,SOC 2 Type II - progress bill 1 of 2,12500.00
+JE-104795,2026-10-24,Rent & Facilities,Bayside Facility Services,Carpet extraction + window washing (one-time),1950.00
+JE-104796,2026-10-24,Travel & Entertainment,Harborview Hotel,Lodging 3 nts,198.68
+JE-104797,2026-10-25,Travel & Entertainment,Juniper Kitchen,Team lunch,366.34
+JE-104798,2026-10-26,Office & Supplies,Supplyhub,Printer toner,372.74
+JE-104799,2026-10-26,Office & Supplies,Desk & Dock,Dock,146.22
+JE-104800,2026-10-28,Sales Commissions,PayBridge Payroll,Commissions - Oct base plan,19150.00
+JE-104801,2026-10-28,Travel & Entertainment,Westwind Airlines,SFO-SEA,525.21
+JE-104802,2026-10-29,Marketing Programs,ProNet Ads,Sponsored content Oct,7610.00
+JE-104803,2026-10-30,Marketing Programs,SearchReach Ads,Search campaigns Oct,9420.00
+JE-104804,2026-10-31,Software Subscriptions,Pipeline CRM,Prepaid amort - Pipeline CRM FY27 contract 1/12,5395.50
+JE-104805,2026-10-31,Salaries & Wages,PayBridge Payroll,Payroll 10/31/26 - Engineering,125392.11
+JE-104806,2026-10-31,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 10/31/26 - Engineering,8927.92
+JE-104807,2026-10-31,Benefits & Payroll Taxes,Nestegg 401k,401k match 10/31 - Engineering,3761.76
+JE-104808,2026-10-31,Salaries & Wages,PayBridge Payroll,Payroll 10/31/26 - Sales,45943.00
+JE-104809,2026-10-31,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 10/31/26 - Sales,3271.14
+JE-104810,2026-10-31,Benefits & Payroll Taxes,Nestegg 401k,401k match 10/31 - Sales,1378.29
+JE-104811,2026-10-31,Salaries & Wages,PayBridge Payroll,Payroll 10/31/26 - Customer Success,20978.32
+JE-104812,2026-10-31,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 10/31/26 - Customer Success,1493.66
+JE-104813,2026-10-31,Benefits & Payroll Taxes,Nestegg 401k,401k match 10/31 - Customer Success,629.35
+JE-104814,2026-10-31,Salaries & Wages,PayBridge Payroll,Payroll 10/31/26 - G&A,27448.31
+JE-104815,2026-10-31,Benefits & Payroll Taxes,PayBridge Payroll,ER taxes 10/31/26 - G&A,1954.32
+JE-104816,2026-10-31,Benefits & Payroll Taxes,Nestegg 401k,401k match 10/31 - G&A,823.45
+JE-104817,2026-10-31,Legal & Professional,Haldane Pryce LLP,Accrued legal fees - Oct (est.),9000.00
+JE-104818,2026-10-31,Insurance,Halyard Insurance Brokers,Prepaid amort - D&O / cyber (renewed 10/1),4610.00

@@ -1,0 +1,119 @@
+{
+  "entity": "Ember & Rye Hospitality Group",
+  "industry": "Restaurant group (3 locations)",
+  "history_periods": [
+    "2026-05"
+  ],
+  "prior_period": "2026-06",
+  "current_period": "2026-07",
+  "accounts": [
+    {
+      "name": "Food Cost",
+      "aliases": [
+        "food cost",
+        "food",
+        "food purchases"
+      ]
+    },
+    {
+      "name": "Beverage Cost",
+      "aliases": [
+        "beverage cost",
+        "beverage",
+        "bev cost"
+      ]
+    },
+    {
+      "name": "Hourly Labor",
+      "aliases": [
+        "hourly labor",
+        "hourly wages",
+        "labor"
+      ]
+    },
+    {
+      "name": "Management Salaries",
+      "aliases": [
+        "management salaries",
+        "management"
+      ]
+    },
+    {
+      "name": "Payroll Taxes & Benefits",
+      "aliases": [
+        "payroll taxes & benefits",
+        "payroll taxes",
+        "benefits"
+      ]
+    },
+    {
+      "name": "Repairs & Maintenance",
+      "aliases": [
+        "repairs & maintenance",
+        "repairs and maintenance",
+        "r&m",
+        "repairs"
+      ]
+    },
+    {
+      "name": "Utilities",
+      "aliases": [
+        "utilities"
+      ]
+    },
+    {
+      "name": "Occupancy",
+      "aliases": [
+        "occupancy",
+        "rent"
+      ]
+    },
+    {
+      "name": "Smallwares & Supplies",
+      "aliases": [
+        "smallwares & supplies",
+        "smallwares",
+        "supplies"
+      ]
+    },
+    {
+      "name": "Linen & Laundry",
+      "aliases": [
+        "linen & laundry",
+        "linen",
+        "laundry"
+      ]
+    },
+    {
+      "name": "Card Processing Fees",
+      "aliases": [
+        "card processing fees",
+        "card fees",
+        "processing fees"
+      ]
+    },
+    {
+      "name": "Third-Party Delivery",
+      "aliases": [
+        "third-party delivery",
+        "3pd",
+        "delivery commissions"
+      ]
+    },
+    {
+      "name": "Marketing",
+      "aliases": [
+        "marketing"
+      ]
+    },
+    {
+      "name": "Entertainment & Events",
+      "aliases": [
+        "entertainment & events",
+        "entertainment and events",
+        "entertainment",
+        "events"
+      ]
+    }
+  ]
+}
