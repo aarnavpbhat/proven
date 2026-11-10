@@ -55,27 +55,32 @@ claim, the ledger evidence, the reconstruction, the verdict and the reason on on
 
 | Area | What it shows |
 |---|---|
-| **Top bar** | The **Review** and **Benchmark** tabs. On the right, the network status ("Network off") and the version. |
-| **Toolbar** | **Close**: which month-end close to check (the showcase, or a synthetic close). **Extractor**: how sentences are read ("Rules (offline)"; the Claude option shows as unavailable unless enabled). **Verify** re-runs the check. Beside it: the run ID, the extractor and verifier versions, the time taken, and "nothing left this machine". |
-| **Explanation** (left) | The commentary being checked. Each checked sentence is underlined in its verdict's colour and tagged with its claim number (C1, C2, …). A dashed underline marks a sentence that states a figure but could not be checked. Click any underlined sentence to open its claim. |
-| **Ledger** (left) | Every account's balance in the prior and current month, the change and the % change, plus a total row. The account of the claim you selected is highlighted. Above it: the company, the transaction count and the ledger's fingerprint (sha256). |
-| **Coverage** (right) | **Claims checked** (out of sentences with figures), **Decided** (the share that reached PASS or FAIL without a person), **Pass · Fail**, and **Need review** (with any sentences not extracted). |
-| **Claims** (right) | One card per claim. **Exceptions** (the default) shows FAIL cards first, then REVIEW; **All** adds the passes. Below the cards: sentences that were not extracted, and any proposals the extractor made that the text did not support. |
+| **Sidebar** | The four sections: **Review**, **Ledger**, **Learned** (with the number of active lessons) and **Benchmark**. |
+| **Top bar** | The **Close** menu: which month-end close to check (the showcase, a hand-written example with an answer key, or a synthetic close), then the section you are in. On the right, the network status ("Network off") and the version. |
+| **Review header** | The close's name and, under it, the run ID, the extractor and verifier versions, the time taken, and "nothing left this machine". On the right, **Extractor**: how sentences are read ("Rules (offline)"; the Claude and open-weight options show as unavailable unless enabled, with the reason on the line below). **Verify** re-runs the check. |
+| **Coverage** | **Claims checked** (out of sentences with figures), **Pass**, **Fail**, **Need review** (with any sentences not extracted) and **Decided** (the share that reached PASS or FAIL without a person). The bar beneath shows the same counts as proportions. |
+| **Claims list** (left card) | One row per claim: verdict, claim number (C1, C2, …), account, the ledger's change, the sentence and a one-line reason. **Exceptions** (the default) shows FAIL rows first, then REVIEW; **All** adds the passes. Below the rows: sentences that were not extracted, and any proposals the extractor made that the text did not support. |
+| **Explanation** (tab of the left card) | The commentary being checked. Each checked sentence is underlined in its verdict's colour and tagged with its claim number. A dashed underline marks a sentence that states a figure but could not be checked. Click any underlined sentence to select its claim. |
+| **Claim detail** (right card) | The working for the selected claim: the reason, the verdict, the sentence, then Reconstruction, Checks, Findings, the largest movements and Resolve. The arrows in its header step to the previous and next claim. |
+| **Ledger** (its own section) | Every account's balance in the prior and current month, the change and the % change, plus a total row. The account of the claim you selected is highlighted. Above it: the company, the transaction count and the ledger's fingerprint (sha256), with **Download CSV** and **Upload CSV**. |
+| **Learned** (its own section) | **Teach next**, the queue of lessons waiting for a confirmation, and **Lessons**, the vocabulary already taught. |
 
-On a laptop, the left column stays in view while you scroll the claims, so the source is always
-beside the claim you are reading.
+On a laptop, the claim detail stays in view while you scroll the list, so the working is always
+beside the claim you picked.
 
 ### Reviewing a close, step by step
 
 1. **Choose a close and let it run.** The page checks the selected close as soon as it loads. To
-   check another, pick it under **Close**; it verifies automatically.
+   check another, pick it in the **Close** menu in the top bar; it verifies automatically.
 2. **Read Coverage before the verdicts.** It tells you how much of the explanation was actually
-   checked. On the showcase: 9 claims out of 10 sentences with figures, 7 decided (77.8%),
-   4 pass · 3 fail, 2 need review, and 1 sentence not extracted.
+   checked. On the showcase: 9 claims out of 10 sentences with figures, 4 pass, 3 fail,
+   2 need review, 1 sentence not extracted, and 77.8% decided (7 of 9).
 3. **Work through the exceptions.** The Claims list opens on **Exceptions**, FAILs first, with
-   the first one expanded. Each card's header shows the verdict, the sentence and a one-line
-   reason. Click a header to open or close it.
-4. **Read an open card top to bottom.** It always has the same sections:
+   the first one selected and its working shown in the claim detail. Each row shows the
+   verdict, the account, the sentence and a one-line reason. Click a row to select it, or use
+   the arrows in the detail header ("1 of 5").
+4. **Read the claim detail top to bottom.** Under the reason, the verdict and the quoted
+   sentence, it always has the same sections:
    - **Reconstruction**: what the sentence claimed beside what the ledger shows (row by row
      below).
    - **Checks**: each check that ran, with its outcome, and the ones that were skipped and why.
@@ -86,15 +91,17 @@ beside the claim you are reading.
    - **Adjustments and notes**: anything the guards changed, and anything the reading dropped.
    - **Resolve**: your decision (FAIL and REVIEW cards only).
 5. **Check the evidence against the source.** The transaction IDs in a finding are real rows of
-   the ledger. The highlighted row in the Ledger table is the account the claim is about.
-   Clicking a sentence in the explanation jumps to its card, and clicking a PASS sentence
-   switches the list to **All** so you can audit it.
+   the ledger. The **Ledger** section shows every account, with the row of the selected claim's
+   account highlighted. The **Explanation** tab shows the sentence in context: clicking an
+   underlined sentence selects its claim, and clicking a PASS sentence switches the list to
+   **All** so you can audit it.
 6. **Record a decision.** In **Resolve**, choose what is true, write *why* (at least 10
    characters; a decision nobody can re-read cannot become a test), and press **Record**. The
    section confirms "Recorded: …". The time you spent on the claim is recorded with it.
-7. **Change the inputs and re-check.** **Edit text** turns the explanation into an editable box;
-   change a figure or a reason, then press **Verify** (or Ctrl/Cmd+Enter). **Show checked text**
-   returns to the underlined view. **Upload CSV** checks the explanation against your own ledger
+7. **Change the inputs and re-check.** On the **Explanation** tab, **Edit text** turns the
+   explanation into an editable box; change a figure or a reason, then press **Verify** (or
+   Ctrl/Cmd+Enter). **Show checked text** returns to the underlined view without re-checking.
+   In the **Ledger** section, **Upload CSV** checks the explanation against your own ledger
    export, **Use scenario ledger** switches back, and **Download CSV** gives you the selected
    close's ledger, which doubles as a template for the format.
 
@@ -106,8 +113,8 @@ beside the claim you are reading.
 | **FAIL** | The ledger contradicts the sentence: wrong amount or direction, a cause that did not move, or a cause that explains less than the wording claims. | Confirm it, or record why Proven is wrong. |
 | **REVIEW** | The ledger cannot settle it: the cause was not found, the match is weak, an expense may be misbooked, or the amount is close but outside tolerance. | Look at the evidence and decide. |
 
-Underline colours follow the verdict (green PASS, red FAIL, amber REVIEW). The verdict is always
-also written out in text, so nothing relies on colour alone.
+Underline colours follow the verdict (lime green PASS, red FAIL, amber REVIEW). The verdict is
+always also written out in text, so nothing relies on colour alone.
 
 ### The Reconstruction rows
 
@@ -117,7 +124,7 @@ also written out in text, so nothing relies on colour alone.
 | **Ledger** | Prior balance → current balance, the change and the % change. |
 | **Stated** | What the sentence claims: rose/fell, the change, a percentage, "to" a balance, "from" a balance. |
 | **Reason** | The stated cause, and how much of the movement the wording claims for it: "the whole movement" (*because of*, *due to*), "most of the movement" (*primarily*) or "part of the movement" (*partly*). |
-| **Searched** | The words looked for in vendor names and memos, labelled by origin: *written* (in the sentence), *lexicon* (declared synonyms) or *model* (proposed by the Claude extractor). |
+| **Searched** | The words looked for in vendor names and memos, labelled by origin: *written* (in the sentence), *lexicon* (declared synonyms), *learned* (a lesson a reviewer confirmed) or *model* (proposed by a model extractor). |
 | **Matched** | How many transactions matched, how much they moved, and what share of the account's change that is, against the share the wording needs (75% for *because of*, 50% for *primarily*, 10% for *partly*). |
 | **If reclassified** | The account's change if the possibly misbooked expenses were moved back. |
 
@@ -165,10 +172,40 @@ stated", or a movement below the $1,000 materiality threshold.
 Locally, resolutions are appended to `.proven/resolutions.jsonl`. On the hosted demo they are
 temporary.
 
+### Teaching Proven, and the lesson check
+
+Choosing one of the three teaching actions on a claim with a stated reason opens **Teach
+Proven** under the Resolve menu. A lesson is a phrase and the ledger words it stands for:
+"When the stated reason says" (filled in with the claim's reason) and "search the ledger for"
+(your words, comma separated). Leave the words empty to record the decision without teaching.
+
+- **Check before you confirm.** **Check with the safety gate** replays the lesson against
+  explanations known to be wrong or right, and stores nothing. The answer is in words:
+  **Gate: safe** (with how many known claims it replayed), **Gate refuses** (with an example
+  sentence that would wrongly pass or fail) or **Not tested** (nothing known uses the phrase,
+  so check the transactions yourself). It ends with the effect here: "This claim: REVIEW →
+  PASS".
+- **Record.** The same check runs again when you press **Record**; a refused lesson is not
+  stored, and the refusal appears in the form. A lesson that turns the claim into a PASS also
+  needs the tick box confirming you checked the matched transactions. A sentence you recorded
+  as **Confirm defect** becomes a known-wrong case: no later lesson may make it pass.
+- **Lessons.** **Learned → Lessons** lists what was taught, with the sentence it came from and
+  **Remove**. A lesson applies to every close until it is removed.
+- **Teach next.** When a model extractor's words are the only support for a claim's reason, the
+  claim waits in REVIEW and its run is stored. **Learned → Teach next** groups these pending
+  claims by the lesson that would settle them, the one reaching the most waiting claims first.
+  Each row shows the phrase and proposed words, how many claims wait, how many the rules would
+  then decide, and the gate's verdict. **Open** loads the run into Review with the Teach form
+  filled in; it does not confirm anything. With the Rules extractor alone the queue is empty
+  ("Nothing waits yet.").
+
+Locally, lessons are kept in `.proven/lexicon.jsonl` and pending runs in `.proven/pending.jsonl`.
+The gate's method and its measured limits are in [docs/teaching.md](docs/teaching.md).
+
 ### Checking Proven against an answer key
 
 The **Close** menu also lists synthetic closes from the held-out test split, one per error type.
-Each has a line under the explanation, for example:
+Each has a line under the text on the **Explanation** tab, for example:
 
 > Ground truth (synthetic): wrong cause — must fail; culprit transactions TX-1057, TX-1046. The
 > other 2 claim(s) are correct.
@@ -176,37 +213,49 @@ Each has a line under the explanation, for example:
 Check that the target claim got the required verdict, that its finding cites those transaction
 IDs, and that the other claims passed.
 
+The hand-written example (Tidewater Coffee Roasters) adds an **Answer key** tab beside Claims
+and Explanation. For each sentence it shows Proven's verdict, what the key requires, whether
+the two agree ("agrees" / "differs"), the key's reasoning, and a button to open the claim.
+
 ### The Benchmark tab
 
 It runs the full synthetic benchmark on the server: choose the **Split** (the held-out test
-split by default) and the number of **Closes** (440 by default), then **Run both phrasings**.
-It runs automatically the first time you open the tab and takes a few seconds.
+split by default), the number of **Closes** (440 by default) and the **Extractor** (Rules, or
+the Oracle, which is handed the generator's own claims), then **Run all phrasings**. It runs
+automatically the first time you open the tab and takes a few seconds.
 
-- **Summary** compares *seen* phrasing (wording the lexicon covers) with *held-out* phrasing (the
-  same causes in words it has never seen). The rows to watch are **Controls failed** and
-  **Unsafe PASS**, which must both be 0. **Decided without a person** is coverage, reported
-  separately on purpose.
-- **By family** breaks the results down by error type. Use **Seen** / **Held-out** to switch
-  phrasing. **Met** is the share meeting the family's requirement, shown in red below 90%.
+- **Summary** compares *seen* phrasing (wording the lexicon covers), *held-out* phrasing (the
+  same causes in words it has never seen) and *paraphrase* (the sentences themselves
+  rewritten). The rows to watch are **Controls failed** and **Unsafe PASS**, which must both
+  be 0. **Decided without a person** is coverage, reported separately on purpose.
+- **By family** breaks the results down by error type. Use **Seen** / **Held-out** /
+  **Paraphrase** to switch phrasing. **Met** is the share meeting the family's requirement,
+  shown in red below 90%.
   **Finding raised** is whether the expected finding appeared, and **Evidence recall** is
   whether the culprit transactions were cited.
 
 ### A three-minute walkthrough of the demo close
 
 1. **Coverage:** 9 claims, 4 PASS, 3 FAIL, 2 REVIEW, and one sentence ("…$1.2M quarterly
-   run-rate") listed as not extracted rather than hidden.
-2. **Legal (FAIL):** wrong amount, and the finding below it explains why: a misbooked invoice,
-   shown in the evidence as "(other account)". "If reclassified" shows +$90,000.
-3. **Marketing (FAIL):** the amount is right, but DevSummit is only 33% of it. The rest is the
-   same misbooked legal invoice, flagged from this side too.
-4. **Contractors (FAIL):** the redesign cost $11,000 in both months, so it moved $0. The
+   run-rate") listed under the claims as not extracted rather than hidden.
+2. **Legal (FAIL, C1, already selected):** wrong amount, and the finding below it explains why:
+   a misbooked invoice, shown in the evidence as "(other account)". "If reclassified" shows
+   +$90,000.
+3. **Marketing (FAIL, C2):** click its row. The amount is right, but DevSummit is only 33% of
+   it. The rest is the same misbooked legal invoice, flagged from this side too.
+4. **Contractors (FAIL, C5):** the redesign cost $11,000 in both months, so it moved $0. The
    increase is a $22,300 mobile-app contract.
-5. **Travel (REVIEW):** no transaction mentions customer visits. September's company offsite is
-   shown as the actual mover; Proven does not call it wrong, because the cause may be recorded
-   in other words.
-6. **Edit the text:** change "$90K" to "$45K" in the Legal sentence and press **Verify**. Legal
-   turns to REVIEW: the amount now matches the books, but the misbooked invoice is still flagged.
-7. **Benchmark tab:** 0 unsafe PASS and 0 failed controls under both phrasings, and coverage
+5. **Travel (REVIEW, C7):** no transaction mentions customer visits. September's company
+   offsite is shown as the actual mover; Proven does not call it wrong, because the cause may
+   be recorded in other words.
+6. **Try a bad lesson:** on Travel, choose **Accept convention**, enter "offsite" as the ledger
+   word and press **Check with the safety gate**. It reports the effect ("This claim: REVIEW →
+   PASS") without storing anything. Record **Confirm defect** on the claim instead, check the
+   same lesson again, and the answer becomes **Gate refuses**.
+7. **Edit the text:** on the **Explanation** tab press **Edit text**, change "$90K" to "$45K"
+   in the Legal sentence and press **Verify**. Back on **Claims**, Legal is now REVIEW: the
+   amount matches the books, but the misbooked invoice is still flagged.
+8. **Benchmark:** 0 unsafe PASS and 0 failed controls under all three phrasings, and coverage
    falling from 90% to 11% on unseen wording, which is what the model-assisted extractor is for.
 
 ---
@@ -571,9 +620,9 @@ python -m proven benchmark --extractor openweight --model qwen2.5:14b --phrasing
 python -m pytest proven/tests -q
 ```
 
-241 tests, including negative controls (inputs that must *not* be flagged), the benchmark floors,
-an AST check that the package imports nothing outside the standard library, the HTTP API, and the
-Vercel entry point. If the TypeScript compiler (`tsc`) is installed, the console's script is
+316 tests (315 pass, 1 skipped), including negative controls (inputs that must *not* be
+flagged), the benchmark floors, an AST check that the package imports nothing outside the
+standard library, the HTTP API, and the Vercel entry point. If the TypeScript compiler (`tsc`) is installed, the console's script is
 also type-checked under `--strict`.
 
 ### On Vercel
@@ -621,7 +670,7 @@ proven/
   netguard.py   network-off, enforced
   server.py     stdlib HTTP server + JSON API
   web/          the reviewer console (HTML, CSS, JS checked by tsc --strict)
-  tests/        241 tests
+  tests/        316 tests
 api/index.py    the Vercel function (wraps the same request handler)
 vercel.json     static console from the CDN, /api/* to the function
 docs/           the screenshots in this README
