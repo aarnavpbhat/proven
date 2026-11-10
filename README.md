@@ -671,7 +671,7 @@ python -m proven benchmark --extractor openweight --model qwen2.5:14b --phrasing
 python -m pytest proven/tests -q
 ```
 
-316 tests (315 pass, 1 skipped), including negative controls (inputs that must *not* be
+412 tests (411 pass, 1 skipped): 357 for the checker in `proven/tests` and 55 for the training tools in `training/`. They include negative controls (inputs that must *not* be
 flagged), the benchmark floors, an AST check that the package imports nothing outside the
 standard library, the HTTP API, and the Vercel entry point. If the TypeScript compiler (`tsc`) is installed, the console's script is
 also type-checked under `--strict`.
@@ -721,7 +721,7 @@ proven/
   netguard.py   network-off, enforced
   server.py     stdlib HTTP server + JSON API
   web/          the reviewer console (HTML, CSS, JS checked by tsc --strict)
-  tests/        316 tests
+  tests/        357 tests
 api/index.py    the Vercel function (wraps the same request handler)
 vercel.json     static console from the CDN, /api/* to the function
 docs/           the screenshots in this README
