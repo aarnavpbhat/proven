@@ -441,7 +441,9 @@ three sampled at temperature 0.8, saved once and re-pooled offline with `trainin
 A vote of four finds 3.6 and 4.5 points more causes than the greedy reply, at 7 to 8 s per
 close where one reply takes about 1.6 s. A sampled reply alone is worse than the greedy one,
 and cutting the pooled list to five terms gives the gain back, so what helps is breadth
-within the cap of eight. The gain is real and small next to a 40-point gap. It was not run on
+within the cap of eight. In the full teaching run on the dev worlds the vote of four decides 61.4% of held claims on
+held-out phrasing against 55.2% for the greedy reply (64 lessons against 58), 0 control FAIL
+and 0 unsafe PASS. The gain is real and small next to Sonnet's 82.8% there. It was not run on
 the measured suites (about two and a half hours for the unseen suite), so no measured result
 uses pooling.
 
