@@ -5,17 +5,18 @@ fine_tune_type: lora
 optimizer: adam
 seed: 0
 num_layers: 16            # LoRA on the last 16 transformer blocks
-batch_size: 4
-iters: 250                # overridden per run with --iters
+batch_size: 2
+grad_accumulation_steps: 2   # effective batch 4, half the memory
+iters: 500                # overridden per run with --iters
 learning_rate: 1.0e-4
 lr_schedule:
   name: cosine_decay
-  warmup: 20
-  arguments: [1.0e-4, 250, 1.0e-6]   # [init, decay_steps, end]; train.sh keeps decay_steps = iters
-val_batches: 15           # 60 validation rows / batch 4
+  warmup: 40
+  arguments: [1.0e-4, 500, 1.0e-6]   # [init, decay_steps, end]; train.sh keeps decay_steps = iters
+val_batches: 30           # 60 validation rows / batch 2
 steps_per_report: 10
-steps_per_eval: 50
-save_every: 50
+steps_per_eval: 100
+save_every: 100
 max_seq_length: 2048      # longest example is ~1,170 tokens; nothing is truncated
 mask_prompt: true         # loss on the assistant JSON only
 grad_checkpoint: false

@@ -22,6 +22,6 @@ config["lr_schedule"]["arguments"][1] = iters
 yaml.safe_dump(config, open(dst, "w"), sort_keys=False)
 EOF
 start=$(date +%s)
-/usr/bin/time -l "$MLX_PY" -m mlx_lm.lora --config "$ADAPTER/run-config.yaml" \
+/usr/bin/time -l "$MLX_PY" "$HERE/memguard.py" mlx_lm.lora --config "$ADAPTER/run-config.yaml" \
     --model "$MODEL" --data "$DATA" --adapter-path "$ADAPTER" 2>&1 | tee "$ADAPTER/train.log"
 echo "wall_seconds=$(( $(date +%s) - start ))" | tee -a "$ADAPTER/train.log"

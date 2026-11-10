@@ -15,7 +15,7 @@ HERE=$(cd "$(dirname "$0")" && pwd)
 UPSTREAM=$((PORT + 100))
 ARGS=(--model "$MODEL" --host 127.0.0.1 --port "$UPSTREAM" --max-tokens 2048 --temp 0)
 [[ -n "$ADAPTER" ]] && ARGS+=(--adapter-path "$ADAPTER")
-"$MLX_PY" -m mlx_lm.server "${ARGS[@]}" &
+"$MLX_PY" "$HERE/memguard.py" mlx_lm.server "${ARGS[@]}" &
 SERVER=$!
 PROXY_ARGS=(--port "$PORT" --upstream "http://127.0.0.1:$UPSTREAM" --name "$NAME")
 [[ -n "${REPAIR:-}" ]] && PROXY_ARGS+=(--repair-bare-objects)   # base-model measurement aid only
