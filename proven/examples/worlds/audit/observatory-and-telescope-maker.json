@@ -1,0 +1,800 @@
+{
+ "slug": "observatory-and-telescope-maker",
+ "industry": "observatory and telescope maker",
+ "entities": [
+  "Sidereal Optics Works",
+  "Cassegrain & Coudé Instruments",
+  "Pinnacle Dome Systems",
+  "Lodestar Astronomical Corp",
+  "Nightwatch Telescope Company"
+ ],
+ "accounts": [
+  {
+   "name": "Optical Glass Blanks",
+   "aliases": [
+    "glass blanks",
+    "optical glass",
+    "blank purchases",
+    "glass spend",
+    "substrate costs"
+   ],
+   "narrative": [
+    "Glass blanks",
+    "Optical glass",
+    "Substrate costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Corvane Glassworks",
+     "base": 18500,
+     "memo": "Borosilicate mirror blanks — Tucson grinding shop"
+    },
+    {
+     "vendor": "Lindqvist Optical Materials",
+     "base": 9200,
+     "memo": "Fused silica stock — lens cell line"
+    }
+   ],
+   "events": [
+    {
+     "key": "meniscus_pour",
+     "vendor": "Corvane Glassworks",
+     "memos": [
+      "Ceramic meniscus pour — 1.2m primary, Tucson",
+      "Ceramic meniscus pour — annealing oven time"
+     ],
+     "cross_memo": "Ceramic meniscus pour — inspection crating",
+     "plain": [
+      "the ceramic meniscus pour",
+      "the extra ceramic meniscus pour",
+      "a ceramic meniscus pour run"
+     ],
+     "oblique": [
+      "casting the big telescope's main substrate",
+      "a one-time large casting",
+      "the observatory-class casting job",
+      "low-expansion material for the flagship scope",
+      "the large-aperture build's raw substrate",
+      "a custom cast for the university contract",
+      "the heavy casting",
+      "material for the four-foot reflector",
+      "replacing the cracked flagship substrate",
+      "the special order for the summit customer",
+      "a thermally stable disc for the flagship",
+      "the one-off casting",
+      "getting the flagship's substrate made",
+      "the unusually large disc order",
+      "the casting for the research customer",
+      "zero-expansion material for the new instrument"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "fluoride_boules",
+     "vendor": "Halvorsen Crystal Foundry",
+     "memos": [
+      "Calcium fluoride boules — apochromat refractor line",
+      "Calcium fluoride boules — expedited growth"
+     ],
+     "cross_memo": "Calcium fluoride boules — customs brokerage",
+     "plain": [
+      "the calcium fluoride boules",
+      "calcium fluoride boules from the new supplier",
+      "the calcium fluoride boules order"
+     ],
+     "oblique": [
+      "low-dispersion element material",
+      "the premium triplet substrate",
+      "a new overseas material source",
+      "the color-correcting element order",
+      "rush supply for the triplet scopes",
+      "material for the high-end astrograph",
+      "the chromatic-correction element buy",
+      "the triplet order",
+      "sourcing from a second supplier",
+      "the hurry-up order for triplet elements",
+      "the dispersion-free element purchase",
+      "material for the astrophotography flagship",
+      "a supplier switch for triplet elements",
+      "the backlog-clearing element order",
+      "importing the specialty element material",
+      "what the triplet program needed"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Mirror Coating Services",
+   "aliases": [
+    "coating",
+    "coatings",
+    "mirror coating",
+    "coating services",
+    "aluminizing spend"
+   ],
+   "narrative": [
+    "Coating services",
+    "Mirror coating",
+    "Coatings"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pellucid Thin Films",
+     "base": 12400,
+     "memo": "Aluminizing and overcoat — 0.3m to 0.6m primaries"
+    },
+    {
+     "vendor": "Brightline Vacuum Coaters",
+     "base": 6800,
+     "memo": "Dielectric diagonal coatings — assembly dept"
+    }
+   ],
+   "events": [
+    {
+     "key": "silver_recoat",
+     "vendor": "Pellucid Thin Films",
+     "memos": [
+      "Protected silver recoat — Ridgecrest Observatory 2.0m",
+      "Protected silver recoat — chamber strip and clean"
+     ],
+     "cross_memo": "Protected silver recoat — mirror cell transport",
+     "plain": [
+      "the protected silver recoat",
+      "a protected silver recoat job",
+      "the protected silver recoat for the university"
+     ],
+     "oblique": [
+      "redoing the reflective layer on the university's big scope",
+      "refurbishing the customer's tarnished reflector",
+      "the 2-meter refurb",
+      "high-reflectivity work for the research client",
+      "restoring reflectivity at the mountaintop site",
+      "a warranty refinish",
+      "the tarnish fix",
+      "bringing the big reflector back to spec",
+      "the summit telescope refinish",
+      "work on the oxidized reflector",
+      "a one-time refinishing job",
+      "refreshing the flagship's reflective surface",
+      "the client's degraded reflector fix",
+      "returning the big reflector to full brightness",
+      "the reflectivity restoration",
+      "the refinish under warranty"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "ion_sputter",
+     "vendor": "Orrery Ion Beam Labs",
+     "memos": [
+      "Ion beam sputter — narrowband filter batch",
+      "Ion beam sputter — witness sample testing"
+     ],
+     "cross_memo": "Ion beam sputter — filter housing machining",
+     "plain": [
+      "the ion beam sputter work",
+      "an ion beam sputter run",
+      "the ion beam sputter order"
+     ],
+     "oblique": [
+      "the custom imaging passband order",
+      "layers for the hydrogen-alpha product launch",
+      "precision deposition for the new emission-line product",
+      "a one-off deposition run",
+      "outsourced precision deposition",
+      "the solar scope etalon layers",
+      "deposition for the spectroscopy kit",
+      "specialty layer stacks for the imager range",
+      "the emission-line product launch",
+      "hard-oxide layers we cannot do in-house",
+      "the new astro-imaging passbands",
+      "deposition for the nebula imaging accessory",
+      "the outside deposition specialist",
+      "high-durability layers for the solar product",
+      "the passband stack development",
+      "first articles for the emission-line range"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Outsourced Precision Machining",
+   "aliases": [
+    "machining",
+    "outside machining",
+    "machined parts",
+    "machine shop spend",
+    "cnc subcontract"
+   ],
+   "narrative": [
+    "Outside machining",
+    "Machined parts",
+    "Machining"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tallgrass CNC Works",
+     "base": 21000,
+     "memo": "Mount gear housings — equatorial mount line"
+    },
+    {
+     "vendor": "Kessler Tool & Die",
+     "base": 8700,
+     "memo": "Focuser bodies and tube rings — assembly floor"
+    }
+   ],
+   "events": [
+    {
+     "key": "worm_wheel",
+     "vendor": "Tallgrass CNC Works",
+     "memos": [
+      "Worm wheel rework — EQ8 mount batch",
+      "Worm wheel rework — hobbing setup"
+     ],
+     "cross_memo": "Worm wheel rework — QC inspection overtime",
+     "plain": [
+      "the worm wheel rework",
+      "worm wheel rework on returned units",
+      "the worm wheel rework job"
+     ],
+     "oblique": [
+      "fixing tracking error on returned units",
+      "the periodic-error fix",
+      "redoing drive components that failed spec",
+      "remaking the defective drive parts",
+      "a quality escape on the drive train",
+      "correcting the out-of-tolerance drive teeth",
+      "the recall fix",
+      "customer complaints about tracking",
+      "the drive-train quality fix",
+      "replacement drive components",
+      "the tracking accuracy fix",
+      "warranty returns on the heavy-payload product",
+      "making good on the defective drive lot",
+      "re-cutting the drive teeth",
+      "the precision fix for smooth tracking",
+      "the bad drive lot"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "fork_prototype",
+     "vendor": "Brennan Fork Fabrication",
+     "memos": [
+      "Fork arm prototype — 1m observatory telescope",
+      "Fork arm prototype — five-axis program"
+     ],
+     "cross_memo": "Fork arm prototype — design consultant hours",
+     "plain": [
+      "the fork arm prototype",
+      "a fork arm prototype build",
+      "the fork arm prototype parts"
+     ],
+     "oblique": [
+      "the new large-scope yoke",
+      "first-article parts for the research product",
+      "the big-scope development build",
+      "early parts for the professional instrument",
+      "a one-off development job",
+      "the yoke for the new flagship",
+      "trial hardware for the university bid",
+      "development pieces for the next product",
+      "building the first heavy-duty yoke",
+      "sample parts ahead of the contract award",
+      "the new-product trial build",
+      "first pieces for the alt-az flagship",
+      "pilot parts",
+      "the engineering sample yoke",
+      "early hardware for the summit customer",
+      "the pre-production yoke"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Dome & Enclosure Maintenance",
+   "aliases": [
+    "dome maintenance",
+    "enclosure upkeep",
+    "dome repairs",
+    "enclosure costs",
+    "dome service"
+   ],
+   "narrative": [
+    "Dome maintenance",
+    "Enclosure upkeep",
+    "Dome repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Skyshell Enclosure Service",
+     "base": 9800,
+     "memo": "Shutter and rotation service — customer site contracts"
+    },
+    {
+     "vendor": "Prairie Sealants Co",
+     "base": 2400,
+     "memo": "Seam sealing — demo observatory, Flagstaff"
+    }
+   ],
+   "events": [
+    {
+     "key": "azimuth_motor",
+     "vendor": "Skyshell Enclosure Service",
+     "memos": [
+      "Azimuth drive motor — replacement, Cerro Alto site",
+      "Azimuth drive motor — crane lift"
+     ],
+     "cross_memo": "Azimuth drive motor — field tech travel",
+     "plain": [
+      "the azimuth drive motor",
+      "a failed azimuth drive motor",
+      "the azimuth drive motor swap"
+     ],
+     "oblique": [
+      "getting the dome turning again at the Chilean installation",
+      "the stuck dome in Chile",
+      "fixing the dome that would not turn",
+      "a burned-out turning mechanism",
+      "the Chilean client's dome outage",
+      "heavy-lift work to swap the dome's turning gear",
+      "restoring dome movement for the Andes client",
+      "the seized slewing hardware",
+      "the dome breakdown abroad",
+      "an emergency fix on a client's dome",
+      "the Andean dome failure",
+      "new turning hardware",
+      "the dome that stopped slewing",
+      "bringing the overseas dome back online",
+      "unplanned dome mechanics",
+      "the Chilean dome emergency"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "hail_damage",
+     "vendor": "Northwind Storm Restoration",
+     "memos": [
+      "Hail damage repair — roll-off roof, Bluewater showroom",
+      "Hail damage repair — panel replacement"
+     ],
+     "cross_memo": "Hail damage repair — insurance adjuster fee",
+     "plain": [
+      "the hail damage repair",
+      "hail damage repair at the display site",
+      "the hail damage repair work"
+     ],
+     "oblique": [
+      "weather fallout at the display building",
+      "fixing the dented sliding cover",
+      "the freak weather event",
+      "a battered sliding cover at the display facility",
+      "weather cleanup",
+      "putting the display facility back together",
+      "the aftermath of the severe weather",
+      "the dented cladding fix",
+      "work the insurer will partly cover",
+      "making the display building watertight again",
+      "new cladding sections",
+      "the summer weather incident",
+      "ice-pellet dents",
+      "the sliding cover rebuild",
+      "weather-related cladding work",
+      "the dented display building"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Metrology & Calibration",
+   "aliases": [
+    "metrology",
+    "calibration",
+    "test and measurement",
+    "calibration services",
+    "metrology costs"
+   ],
+   "narrative": [
+    "Metrology",
+    "Calibration services",
+    "Metrology costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Fringeworks Interferometry",
+     "base": 7600,
+     "memo": "Interferometer service contract — optics lab"
+    },
+    {
+     "vendor": "Veritas Gauge Labs",
+     "base": 3100,
+     "memo": "Gauge and torque tool certification — QC dept"
+    }
+   ],
+   "events": [
+    {
+     "key": "null_corrector",
+     "vendor": "Fringeworks Interferometry",
+     "memos": [
+      "Null corrector fabrication — f/3 primary program",
+      "Null corrector — alignment verification"
+     ],
+     "cross_memo": "Null corrector — test tower rigging",
+     "plain": [
+      "the null corrector",
+      "a null corrector build",
+      "the null corrector for the flagship"
+     ],
+     "oblique": [
+      "a reference lens for the deep-curve mirror",
+      "custom shape-checking hardware",
+      "checking the steep curve on the new mirror",
+      "the deep-curve measurement fixture",
+      "hardware to confirm mirror shape",
+      "the bespoke figure-checking element",
+      "an aid for measuring the fast parabola",
+      "parabola checking equipment",
+      "the reference lens order",
+      "the steep-mirror inspection aid",
+      "making sure the new parabola is right",
+      "special measuring glass for the flagship mirror",
+      "the figure-check lens",
+      "tooling to prove the steep mirror shape",
+      "what the opticians needed to measure the fast mirror",
+      "the deep-curve figure check"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "iso_audit",
+     "vendor": "Osterhout Standards Institute",
+     "memos": [
+      "ISO accreditation audit — Tucson plant",
+      "ISO accreditation audit — pre-assessment"
+     ],
+     "cross_memo": "ISO accreditation audit — document control software",
+     "plain": [
+      "the ISO accreditation audit",
+      "an ISO accreditation audit visit",
+      "the ISO accreditation audit fees"
+     ],
+     "oblique": [
+      "the quality-system review",
+      "getting quality-system approval",
+      "the external quality review",
+      "registrar fees",
+      "the external assessors' visit",
+      "what the government lab customers demanded",
+      "qualifying as a national-lab supplier",
+      "the outside quality assessors",
+      "the third-party quality review",
+      "compliance work for the federal bid",
+      "the quality-management registration",
+      "the external compliance review",
+      "the registrar's on-site visit",
+      "earning the quality badge",
+      "getting registered for government work",
+      "the registrar engagement"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Clean Room Operations",
+   "aliases": [
+    "clean room",
+    "cleanroom",
+    "clean room ops",
+    "contamination control",
+    "clean room costs"
+   ],
+   "narrative": [
+    "Clean room costs",
+    "Contamination control",
+    "Clean room ops"
+   ],
+   "recurring": [
+    {
+     "vendor": "AeroPure Filtration",
+     "base": 5400,
+     "memo": "HEPA filter changeout — coating bay"
+    },
+    {
+     "vendor": "Sterling Garment Services",
+     "base": 2900,
+     "memo": "Bunny suit laundering — optics assembly"
+    },
+    {
+     "vendor": "Coldstream HVAC",
+     "base": 4200,
+     "memo": "Humidity and pressure control — Class 1000 room"
+    }
+   ],
+   "events": [
+    {
+     "key": "laminar_hood",
+     "vendor": "AeroPure Filtration",
+     "memos": [
+      "Laminar flow hood — collimation bench",
+      "Laminar flow hood — install and certification"
+     ],
+     "cross_memo": "Laminar flow hood — electrical circuit work",
+     "plain": [
+      "the laminar flow hood",
+      "a new laminar flow hood",
+      "the laminar flow hood purchase"
+     ],
+     "oblique": [
+      "a dust-free station for the alignment team",
+      "the new particle-free workstation",
+      "extra ultraclean air at the alignment station",
+      "the alignment team's sterile enclosure",
+      "new benchtop air purification",
+      "an ultraclean station for aligning scopes",
+      "the downdraft cabinet",
+      "added air purity for final alignment",
+      "the benchtop sterile cabinet the alignment lead requested",
+      "a localized ultraclean zone",
+      "new sterile cabinet",
+      "upgrading air quality where scopes get aligned",
+      "the particle-free cabinet purchase",
+      "the alignment station upgrade",
+      "keeping dust off scopes during alignment",
+      "sterile air for the alignment crew"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "outgassing_cleanup",
+     "vendor": "Pristine Surface Decon",
+     "memos": [
+      "Outgassing incident cleanup — vacuum chamber area",
+      "Outgassing incident cleanup — wipe-down and resampling"
+     ],
+     "cross_memo": "Outgassing incident cleanup — scrapped mirror coatings",
+     "plain": [
+      "the outgassing incident cleanup",
+      "outgassing incident cleanup costs",
+      "the outgassing incident cleanup crew"
+     ],
+     "oblique": [
+      "decontaminating after the lubricant release",
+      "the residue spill",
+      "the volatile residue event",
+      "a hazy film on finished reflectors",
+      "fogged reflectors",
+      "the haze event near the deposition rig",
+      "throwing out tainted parts",
+      "the residue that hazed the reflectors",
+      "decontamination after a seal failed",
+      "the sealant vapor event",
+      "airborne residue response",
+      "the facility-wide scrub",
+      "lost product from the haze",
+      "requalifying the space after the leak",
+      "the vapor residue problem",
+      "the haze contamination response"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Facility Rent",
+   "aliases": [
+    "rent",
+    "facility rent",
+    "lease costs",
+    "occupancy",
+    "building lease"
+   ],
+   "narrative": [
+    "Rent",
+    "Lease costs",
+    "Occupancy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Saguaro Industrial Properties",
+     "base": 26000,
+     "memo": "Base rent — Tucson manufacturing building"
+    },
+    {
+     "vendor": "Desert Bloom Holdings",
+     "base": 6500,
+     "memo": "Showroom lease — Sedona retail gallery"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam_reconciliation",
+     "vendor": "Saguaro Industrial Properties",
+     "memos": [
+      "Common area reconciliation — prior year shortfall",
+      "Common area reconciliation — property tax share"
+     ],
+     "cross_memo": "Common area reconciliation — landscaping recharge",
+     "plain": [
+      "the common area reconciliation",
+      "a common area reconciliation bill",
+      "the annual common area reconciliation"
+     ],
+     "oblique": [
+      "the landlord's annual true-up",
+      "the landlord's catch-up bill",
+      "the annual operating-cost settlement",
+      "last cycle's under-billed charges",
+      "the landlord billing what estimates missed",
+      "the shared-cost adjustment",
+      "a catch-up on pass-through expenses",
+      "the landlord's settlement statement",
+      "higher levies passed through by the landlord",
+      "under-estimated pass-throughs",
+      "the yearly settle-up",
+      "a one-time landlord adjustment",
+      "pass-through costs the landlord under-collected",
+      "the settle-up from the owner",
+      "the owner's cost recovery",
+      "an assessment increase passed along"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "overflow_warehouse",
+     "vendor": "Mesa Ridge Storage",
+     "memos": [
+      "Overflow warehouse space — dome kit inventory",
+      "Overflow warehouse space — short-term lot B"
+     ],
+     "cross_memo": "Overflow warehouse space — forklift rental",
+     "plain": [
+      "the overflow warehouse space",
+      "overflow warehouse space for backlog",
+      "the overflow warehouse space deal"
+     ],
+     "oblique": [
+      "temporary extra square footage",
+      "a stopgap place to park finished enclosures",
+      "the interim offsite facility",
+      "holding finished goods offsite",
+      "temporary offsite room for backlog",
+      "the stopgap facility",
+      "extra square footage while the backlog clears",
+      "parking product we could not fit",
+      "the offsite unit",
+      "temporary finished-goods holding",
+      "a second site for the backlog",
+      "room for the pile-up of unshipped orders",
+      "the interim facility the plant manager asked for",
+      "offsite holding",
+      "taking on more square footage",
+      "spillover footage"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Engineering Software",
+   "aliases": [
+    "software",
+    "engineering software",
+    "cad licenses",
+    "design tools",
+    "software subscriptions"
+   ],
+   "narrative": [
+    "Software",
+    "Engineering software",
+    "Design tools"
+   ],
+   "recurring": [
+    {
+     "vendor": "Vectorform Systems",
+     "base": 4800,
+     "memo": "SolidCAD seats — mechanical engineering"
+    },
+    {
+     "vendor": "Lumen Optic Design",
+     "base": 3600,
+     "memo": "Ray-trace licenses — optical design team"
+    },
+    {
+     "vendor": "Cloudvault IT",
+     "base": 1900,
+     "memo": "PDM hosting — all departments"
+    }
+   ],
+   "events": [
+    {
+     "key": "finite_element",
+     "vendor": "Vectorform Systems",
+     "memos": [
+      "Finite element module — structures group add-on",
+      "Finite element module — onboarding training"
+     ],
+     "cross_memo": "Finite element module — workstation upgrade",
+     "plain": [
+      "the finite element module",
+      "a finite element module add",
+      "the new finite element module"
+     ],
+     "oblique": [
+      "stress simulation capability",
+      "simulating flex in the big mounts",
+      "the new structural simulation tool",
+      "deflection modeling for heavy tubes",
+      "the simulation package the mount engineers asked for",
+      "the FEA tool",
+      "modeling how the trusses sag",
+      "better sag prediction",
+      "simulation access for the truss work",
+      "the added simulation capability",
+      "checking flexure digitally",
+      "virtual load testing",
+      "replacing hand calcs with simulation",
+      "the flexure modeling tool",
+      "simulation tools",
+      "a deflection solver"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "stray_light",
+     "vendor": "Stellarforge Analytics",
+     "memos": [
+      "Stray light analysis — baffle study, 0.5m astrograph",
+      "Stray light analysis — perpetual license"
+     ],
+     "cross_memo": "Stray light analysis — contractor hours",
+     "plain": [
+      "the stray light analysis",
+      "a stray light analysis package",
+      "the stray light analysis work"
+     ],
+     "oblique": [
+      "glare modeling for the new imaging scope",
+      "the scattered-glare simulation",
+      "a one-time buy of ghosting tools",
+      "predicting unwanted reflections",
+      "ghost-image modeling",
+      "the outside scatter specialist",
+      "tools to kill ghost reflections",
+      "the glare simulation purchase",
+      "scatter modeling",
+      "the internal-reflection investigation",
+      "modeling halos in the imaging scope",
+      "halo prediction",
+      "figuring out where the glare came from",
+      "the imaging scope glare fix",
+      "an outright scatter-modeling buy",
+      "contrast improvement work"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

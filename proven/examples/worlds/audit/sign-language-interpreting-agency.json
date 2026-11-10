@@ -1,0 +1,805 @@
+{
+ "slug": "sign-language-interpreting-agency",
+ "industry": "sign language interpreting agency",
+ "entities": [
+  "Clearview Signing Partners",
+  "Open Palm Interpreting Group",
+  "Silverline ASL Services",
+  "Meridian Access Interpreters",
+  "Kindred Hands Communication Co"
+ ],
+ "accounts": [
+  {
+   "name": "Freelance Interpreter Fees",
+   "aliases": [
+    "freelance fees",
+    "freelance interpreters",
+    "contractor interpreter pay",
+    "freelancer payouts",
+    "1099 interpreter costs"
+   ],
+   "narrative": [
+    "Freelance fees",
+    "Freelancer payouts",
+    "Contractor interpreter pay"
+   ],
+   "recurring": [
+    {
+     "vendor": "Marisol Vega Interpreting LLC",
+     "base": 14000,
+     "memo": "Freelance interpreting hours — monthly invoice"
+    },
+    {
+     "vendor": "Hands Forward Interpreters",
+     "base": 9500,
+     "memo": "Contract interpreter assignments"
+    },
+    {
+     "vendor": "Northgate ASL Collective",
+     "base": 6200,
+     "memo": "Per-assignment interpreter billing"
+    }
+   ],
+   "events": [
+    {
+     "key": "trial_team",
+     "vendor": "Hands Forward Interpreters",
+     "memos": [
+      "Federal trial team — interpreter pair",
+      "Federal trial team — overtime"
+     ],
+     "cross_memo": "Federal trial team — hotel nights",
+     "plain": [
+      "the federal trial team",
+      "federal trial team overtime",
+      "the federal trial team staffing"
+     ],
+     "oblique": [
+      "the courthouse case",
+      "a lengthy jury proceeding",
+      "staffing a weeks-long courtroom matter",
+      "the big court case",
+      "courtroom coverage",
+      "the prosecution's witness schedule",
+      "a long criminal proceeding",
+      "the judge's request for doubled-up coverage",
+      "extra signers for the courthouse",
+      "covering testimony days",
+      "the legal case downtown",
+      "court-ordered communication access",
+      "the jury proceedings",
+      "late courtroom sessions",
+      "the lengthy legal matter",
+      "coverage for the defendant's proceedings"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "deafblind_retreat",
+     "vendor": "Tactile Bridge Services",
+     "memos": [
+      "DeafBlind retreat — tactile interpreting support",
+      "DeafBlind retreat — support providers"
+     ],
+     "cross_memo": "DeafBlind retreat — lodge mileage",
+     "plain": [
+      "the DeafBlind retreat",
+      "DeafBlind retreat staffing",
+      "the DeafBlind retreat program"
+     ],
+     "oblique": [
+      "the camp weekend for clients with vision and hearing loss",
+      "hand-under-hand signing at the camp",
+      "the summer camp",
+      "staffing the weekend getaway",
+      "the vision-loss gathering",
+      "specialized touch signing",
+      "the client gathering upstate",
+      "guides for blind attendees",
+      "the nonprofit's camp program",
+      "the weekend event for low-vision members",
+      "a camp-style gathering",
+      "the specialist touch-signing crew",
+      "guide staff for the weekend",
+      "the advocacy group's getaway",
+      "the multi-day camp",
+      "touch-based communication at the camp"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "VRI Platform Costs",
+   "aliases": [
+    "vri platform",
+    "video remote fees",
+    "vri costs",
+    "remote video interpreting spend",
+    "vri usage"
+   ],
+   "narrative": [
+    "VRI costs",
+    "Video remote fees",
+    "VRI usage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearline Video Systems",
+     "base": 7800,
+     "memo": "VRI platform subscription and minutes"
+    },
+    {
+     "vendor": "StreamSign Networks",
+     "base": 4300,
+     "memo": "Video relay bandwidth"
+    },
+    {
+     "vendor": "Brightpoint Hosting",
+     "base": 1900,
+     "memo": "Server hosting"
+    }
+   ],
+   "events": [
+    {
+     "key": "tablet_rollout",
+     "vendor": "Clearline Video Systems",
+     "memos": [
+      "Hospital tablet rollout — device licenses",
+      "Hospital tablet rollout — setup fee"
+     ],
+     "cross_memo": "Hospital tablet rollout — staff training",
+     "plain": [
+      "the hospital tablet rollout",
+      "hospital tablet rollout charges",
+      "the hospital tablet rollout costs"
+     ],
+     "oblique": [
+      "putting screens in the medical center",
+      "the new health-system contract",
+      "on-demand access for the clinic network",
+      "the ER screens",
+      "iPads for the medical client",
+      "equipping patient rooms",
+      "the health-system go-live",
+      "more connected carts for the clinics",
+      "onboarding the medical center",
+      "the new healthcare customer",
+      "bedside access equipment",
+      "the emergency department deployment",
+      "carts for patient floors",
+      "the clinic network launch",
+      "expanding to the regional medical group",
+      "new units for patient care"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "failover_migration",
+     "vendor": "Kestrel Encoding Labs",
+     "memos": [
+      "Failover migration — encoding cutover",
+      "Failover migration — weekend engineering"
+     ],
+     "cross_memo": "Failover migration — consultant travel",
+     "plain": [
+      "the failover migration",
+      "failover migration work",
+      "the failover migration project"
+     ],
+     "oblique": [
+      "moving to a backup data center",
+      "the redundancy project",
+      "switching providers after the outage",
+      "standing up a second site",
+      "outage-proofing the calls",
+      "the resiliency effort",
+      "fallout from last quarter's downtime",
+      "the disaster-recovery build",
+      "keeping calls up during outages",
+      "the backup infrastructure",
+      "the call pipeline rebuild",
+      "the uptime project",
+      "contractor help on redundancy",
+      "outside specialists on reliability",
+      "the fix for dropped calls",
+      "redundant capacity"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Interpreter Credentialing & Training",
+   "aliases": [
+    "credentialing",
+    "training costs",
+    "ceu spend",
+    "certification fees",
+    "professional development"
+   ],
+   "narrative": [
+    "Credentialing",
+    "Training costs",
+    "Certification fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit CEU Academy",
+     "base": 2400,
+     "memo": "Monthly CEU workshop seats"
+    },
+    {
+     "vendor": "Keystone Mentoring Group",
+     "base": 3100,
+     "memo": "Mentor sessions for newer staff"
+    }
+   ],
+   "events": [
+    {
+     "key": "specialization_cohort",
+     "vendor": "Keystone Mentoring Group",
+     "memos": [
+      "Medical specialization cohort — tuition",
+      "Medical specialization cohort — materials"
+     ],
+     "cross_memo": "Medical specialization cohort — substitute coverage",
+     "plain": [
+      "the medical specialization cohort",
+      "medical specialization cohort tuition",
+      "the medical specialization cohort program"
+     ],
+     "oblique": [
+      "upskilling for healthcare work",
+      "the clinical terminology course",
+      "preparing signers for hospital jobs",
+      "healthcare-focused learning",
+      "the program for clinic assignments",
+      "a class in patient-care vocabulary",
+      "the healthcare track",
+      "teaching anatomy signs",
+      "readiness for the hospital contract",
+      "the six-week clinical program",
+      "healthcare competency building",
+      "deepening clinical skills",
+      "the enrollment in health classes",
+      "the clinic-ready curriculum",
+      "learning for health settings",
+      "the patient-care course"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "board_exam",
+     "vendor": "Pinecrest Testing Center",
+     "memos": [
+      "Board exam vouchers — batch purchase",
+      "Board exam prep — proctored mock"
+     ],
+     "cross_memo": "Board exam — candidate mileage",
+     "plain": [
+      "the board exam",
+      "board exam vouchers",
+      "the board exam prep"
+     ],
+     "oblique": [
+      "getting more people nationally certified",
+      "the NIC push",
+      "sponsoring national licensure",
+      "the push to license our signers",
+      "sitting fees for national licensure",
+      "practice rounds before licensure",
+      "the licensure drive",
+      "qualifying signers for state rosters",
+      "meeting the state's licensure mandate",
+      "helping the junior bench qualify",
+      "the qualification push",
+      "the state's new licensure requirement",
+      "assessment fees",
+      "the qualifying assessments",
+      "paying for national credentials",
+      "funding licensure attempts"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "CART Captioning Subcontracts",
+   "aliases": [
+    "cart",
+    "captioning",
+    "captioner fees",
+    "real-time captioning costs",
+    "cart subcontracts"
+   ],
+   "narrative": [
+    "Captioning",
+    "Captioner fees",
+    "CART subcontracts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Verbatim Steno Partners",
+     "base": 5200,
+     "memo": "Realtime captioning sessions"
+    },
+    {
+     "vendor": "Lumen Captions Co",
+     "base": 3600,
+     "memo": "Remote CART coverage"
+    }
+   ],
+   "events": [
+    {
+     "key": "university_commencement",
+     "vendor": "Verbatim Steno Partners",
+     "memos": [
+      "University commencement — onstage captioner",
+      "University commencement — rehearsal"
+     ],
+     "cross_memo": "University commencement — ASL interpreter pair",
+     "plain": [
+      "the university commencement",
+      "university commencement fees",
+      "the university commencement booking"
+     ],
+     "oblique": [
+      "graduation day",
+      "the college's graduation ceremony",
+      "the campus ceremony",
+      "text display for the graduates",
+      "the diploma ceremony",
+      "the school's big ceremony",
+      "the walk-through before graduation",
+      "the degree conferral event",
+      "stadium ceremony support",
+      "the college contract's biggest day",
+      "graduation weekend",
+      "the dean's office request",
+      "the campus event in the stadium",
+      "screens for the graduating class",
+      "the ceremony at the arena",
+      "the college's annual send-off"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "council_archive",
+     "vendor": "Quillfeather Transcription",
+     "memos": [
+      "City council archive — backlog transcripts",
+      "City council archive — rush files"
+     ],
+     "cross_memo": "City council archive — storage upload",
+     "plain": [
+      "the city council archive",
+      "council archive transcripts",
+      "the city council archive backlog"
+     ],
+     "oblique": [
+      "old meeting recordings",
+      "the municipal records project",
+      "making the town's past hearings accessible",
+      "the government accessibility complaint",
+      "catching up on public meeting videos",
+      "the ADA settlement",
+      "municipal hearing text",
+      "the mayor's office request",
+      "years of public meetings",
+      "written versions of old hearings",
+      "the accessibility remediation",
+      "the town's compliance deadline",
+      "retroactive text for hearings",
+      "the municipal contract",
+      "public hearing records",
+      "the legislative video library"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Professional Liability Insurance",
+   "aliases": [
+    "liability insurance",
+    "e&o coverage",
+    "malpractice premium",
+    "insurance premiums",
+    "professional liability"
+   ],
+   "narrative": [
+    "Liability insurance",
+    "Insurance premiums",
+    "Malpractice premium"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborview Mutual",
+     "base": 2800,
+     "memo": "Monthly E&O premium installment"
+    },
+    {
+     "vendor": "Calder Risk Brokers",
+     "base": 900,
+     "memo": "Broker service fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "court_rider",
+     "vendor": "Harborview Mutual",
+     "memos": [
+      "Court rider endorsement — legal assignments",
+      "Court rider — pro rata"
+     ],
+     "cross_memo": "Court rider — certificate filing",
+     "plain": [
+      "the court rider",
+      "the court rider endorsement",
+      "court rider charges"
+     ],
+     "oblique": [
+      "extra protection for judicial jobs",
+      "the add-on for courtroom jobs",
+      "the judiciary's requirement",
+      "raising limits for law-related jobs",
+      "the add-on policy for the courthouse",
+      "higher limits demanded by the judiciary",
+      "protection for testimony jobs",
+      "the clerk's office demand",
+      "bumped limits",
+      "the policy add-on",
+      "courtroom job protection",
+      "the addition for depositions",
+      "deposition protection",
+      "new judicial contract terms",
+      "requirements from the public defender",
+      "higher limits for criminal cases"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "privacy_claim",
+     "vendor": "Ashgrove Claims Counsel",
+     "memos": [
+      "Privacy claim — deductible",
+      "Privacy claim — defense retainer"
+     ],
+     "cross_memo": "Privacy claim — notification mailing",
+     "plain": [
+      "the privacy claim",
+      "privacy claim costs",
+      "the privacy claim deductible"
+     ],
+     "oblique": [
+      "the HIPAA complaint",
+      "the patient-data incident",
+      "a leaked appointment record",
+      "the confidentiality breach",
+      "lawyers for the breach",
+      "the lawsuit over disclosed information",
+      "paying our share after the breach",
+      "the data exposure",
+      "the misdirected email incident",
+      "legal help after the leak",
+      "the confidentiality dispute",
+      "a client's grievance about disclosure",
+      "the breach response",
+      "fallout from the exposed records",
+      "attorney fees on the leak",
+      "what we owed under the policy"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Interpreter Travel Reimbursement",
+   "aliases": [
+    "travel",
+    "interpreter travel",
+    "mileage reimbursement",
+    "trip costs",
+    "travel reimbursements"
+   ],
+   "narrative": [
+    "Travel",
+    "Trip costs",
+    "Mileage reimbursement"
+   ],
+   "recurring": [
+    {
+     "vendor": "RoadLedger Mileage Services",
+     "base": 4100,
+     "memo": "Interpreter mileage reimbursements"
+    },
+    {
+     "vendor": "Wayfarer Corporate Travel",
+     "base": 2600,
+     "memo": "Airfare and lodging bookings"
+    },
+    {
+     "vendor": "Cityline Parking",
+     "base": 900,
+     "memo": "Parking and tolls"
+    }
+   ],
+   "events": [
+    {
+     "key": "tribal_outreach",
+     "vendor": "Wayfarer Corporate Travel",
+     "memos": [
+      "Tribal outreach — charter flight",
+      "Tribal outreach — motel block"
+     ],
+     "cross_memo": "Tribal outreach — interpreter day rates",
+     "plain": [
+      "the tribal outreach",
+      "tribal outreach flights",
+      "the tribal outreach visits"
+     ],
+     "oblique": [
+      "visiting the reservation communities",
+      "the nation's health fair",
+      "the remote reservation visits",
+      "flying signers out to rural clinics",
+      "the sovereign nation contract",
+      "staffing the powwow health event",
+      "the visit to Indigenous communities",
+      "getting staff to remote northern towns",
+      "the reservation health fair",
+      "reaching remote Native communities",
+      "the bush-plane hops",
+      "the trips north",
+      "the tribe's request",
+      "community events on the reservation",
+      "small-plane hops to remote villages",
+      "the Indigenous health partnership"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "conference_shuttle",
+     "vendor": "Glenmoor Rail & Coach",
+     "memos": [
+      "Conference shuttle — airport runs",
+      "Conference shuttle — driver standby"
+     ],
+     "cross_memo": "Conference shuttle — registration fees",
+     "plain": [
+      "the conference shuttle",
+      "conference shuttle runs",
+      "the conference shuttle service"
+     ],
+     "oblique": [
+      "getting signers to the convention",
+      "ground transport for the national convention",
+      "the deaf expo",
+      "vans for the expo",
+      "moving staff between venues",
+      "the convention logistics",
+      "transport at the expo",
+      "the event bus",
+      "the national gathering",
+      "the big expo out of town",
+      "hauling teams between hotels",
+      "pickups for staff",
+      "the summit logistics",
+      "the van service",
+      "transfers between the venue and hotels",
+      "rides for the convention crew"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Scheduling Software",
+   "aliases": [
+    "scheduling software",
+    "booking system",
+    "dispatch software",
+    "scheduling tools",
+    "saas fees"
+   ],
+   "narrative": [
+    "Scheduling software",
+    "Booking system",
+    "Dispatch software"
+   ],
+   "recurring": [
+    {
+     "vendor": "Interlace Scheduling Inc",
+     "base": 3400,
+     "memo": "Dispatch and booking platform subscription"
+    },
+    {
+     "vendor": "Pallet Cloud",
+     "base": 1200,
+     "memo": "Document storage"
+    }
+   ],
+   "events": [
+    {
+     "key": "billing_module",
+     "vendor": "Interlace Scheduling Inc",
+     "memos": [
+      "Billing module add-on — implementation",
+      "Billing module — data import"
+     ],
+     "cross_memo": "Billing module — temp bookkeeper",
+     "plain": [
+      "the billing module",
+      "billing module implementation",
+      "the billing module add-on"
+     ],
+     "oblique": [
+      "automating our invoicing",
+      "the invoicing upgrade",
+      "linking jobs to customer invoices",
+      "replacing spreadsheet invoicing",
+      "the accounts-receivable automation",
+      "getting invoices out faster",
+      "moving off manual invoices",
+      "the finance team's request",
+      "connecting timesheets to invoices",
+      "the receivables project",
+      "new invoicing features",
+      "the go-live of automated invoices",
+      "retiring the old invoicing workbook",
+      "cleaning up how we charge clients",
+      "the AR upgrade",
+      "the customer invoicing overhaul"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "penetration_test",
+     "vendor": "Brightwater Security Group",
+     "memos": [
+      "Penetration test — external scope",
+      "Penetration test — remediation report"
+     ],
+     "cross_memo": "Penetration test — insurer questionnaire",
+     "plain": [
+      "the penetration test",
+      "penetration test fees",
+      "the penetration test engagement"
+     ],
+     "oblique": [
+      "the hacking assessment",
+      "what the hospital client demanded for cyber",
+      "the cyber review",
+      "probing our systems for holes",
+      "the vulnerability audit",
+      "proving we're safe to the health clients",
+      "ethical hackers",
+      "the annual cyber checkup",
+      "checking for weak spots",
+      "the HIPAA safeguards review",
+      "the customer's cyber requirement",
+      "the outside hackers",
+      "finding gaps before a breach",
+      "the vulnerability findings",
+      "the cyber attestation",
+      "hardening the portal"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Office Rent",
+   "aliases": [
+    "rent",
+    "office rent",
+    "lease costs",
+    "occupancy",
+    "premises"
+   ],
+   "narrative": [
+    "Rent",
+    "Office rent",
+    "Occupancy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Larchmont Properties",
+     "base": 8200,
+     "memo": "Main office lease"
+    },
+    {
+     "vendor": "Eastside Commons",
+     "base": 2100,
+     "memo": "Satellite suite rent"
+    }
+   ],
+   "events": [
+    {
+     "key": "booth_buildout",
+     "vendor": "Larchmont Properties",
+     "memos": [
+      "Booth buildout — soundproof panels",
+      "Booth buildout — electrical work"
+     ],
+     "cross_memo": "Booth buildout — camera kits",
+     "plain": [
+      "the booth buildout",
+      "booth buildout costs",
+      "the booth buildout project"
+     ],
+     "oblique": [
+      "the new video studios",
+      "quiet rooms for remote calls",
+      "converting storage space into call studios",
+      "the studio construction",
+      "acoustic upgrades",
+      "sound dampening for remote jobs",
+      "the landlord's improvements for our studios",
+      "adding private call rooms",
+      "the recording-room project",
+      "wiring for the new studios",
+      "letting signers take calls in house",
+      "the studio expansion",
+      "contractor fees for the studios",
+      "building dedicated call rooms",
+      "the quiet-room conversion",
+      "tenant improvements"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "headquarters_move",
+     "vendor": "Fairhaven Movers",
+     "memos": [
+      "Headquarters move — packing crew",
+      "Headquarters move — truck rental"
+     ],
+     "cross_memo": "Headquarters move — phone reinstall",
+     "plain": [
+      "the headquarters move",
+      "headquarters move costs",
+      "the headquarters move crew"
+     ],
+     "oblique": [
+      "relocating to the new building",
+      "leaving the old floor",
+      "the relocation",
+      "changing buildings",
+      "boxing everything up",
+      "getting out of the old space",
+      "the transition to the larger floor",
+      "the relocation weekend",
+      "hauling furniture",
+      "the new address",
+      "shifting operations downtown",
+      "vacating the old building",
+      "the transfer of desks and files",
+      "the furniture haul",
+      "setting up at the new location",
+      "the changeover to the new space"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

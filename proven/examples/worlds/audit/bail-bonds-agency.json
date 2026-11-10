@@ -1,0 +1,790 @@
+{
+ "slug": "bail-bonds-agency",
+ "industry": "bail bonds agency",
+ "entities": [
+  "Liberty Gate Bail Bonds",
+  "Second Chance Surety Group",
+  "Iron Key Bonding Co",
+  "Courthouse Row Bail Services",
+  "Freedom Line Bonding LLC"
+ ],
+ "accounts": [
+  {
+   "name": "Fugitive Recovery Fees",
+   "aliases": [
+    "recovery fees",
+    "fugitive recovery",
+    "recovery agent costs",
+    "bounty hunter fees",
+    "skip recovery spend"
+   ],
+   "narrative": [
+    "Recovery fees",
+    "Fugitive recovery",
+    "Bounty hunter fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironside Recovery Agents",
+     "base": 14000,
+     "memo": "Mnt retainer - FTA apprehension svc"
+    },
+    {
+     "vendor": "Lone Pine Fugitive Services",
+     "base": 6500,
+     "memo": "Inv - contract recovery, Region 2"
+    }
+   ],
+   "events": [
+    {
+     "key": "interstate_extradition",
+     "vendor": "Ironside Recovery Agents",
+     "memos": [
+      "Interstate extradition - Nevada transport",
+      "Interstate extradition - per diem"
+     ],
+     "cross_memo": "Interstate extradition - airfare",
+     "plain": [
+      "the interstate extradition",
+      "interstate extradition costs",
+      "an interstate extradition"
+     ],
+     "oblique": [
+      "hauling a skipped defendant back across state lines",
+      "returning a bail jumper caught out west",
+      "the cross-border pickup",
+      "bringing a runaway client home from another state",
+      "a long-distance capture",
+      "escorting one absconder back to our county",
+      "the desert pickup",
+      "flying staff out to collect a skipped client",
+      "one far-flung capture",
+      "a multi-state chase",
+      "the out-west retrieval",
+      "getting one absconder returned to local custody",
+      "travel costs tied to one capture far away",
+      "meals plus lodging for staff on one long chase",
+      "a single expensive capture",
+      "recapturing a defendant who fled the state"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "warrant_sweep",
+     "vendor": "Granite Ridge Tactical Group",
+     "memos": [
+      "Warrant sweep - tactical team",
+      "Warrant sweep - overtime crew"
+     ],
+     "cross_memo": "Warrant sweep - vehicle rental",
+     "plain": [
+      "the warrant sweep",
+      "a warrant sweep",
+      "warrant sweep costs"
+     ],
+     "oblique": [
+      "the mass roundup",
+      "rounding up several no-shows at once",
+      "a coordinated push on missed court dates",
+      "clearing a backlog of absconders",
+      "bringing in an outside squad",
+      "the extra boots on the street",
+      "one big push to recapture skippers",
+      "hiring outside muscle",
+      "a weekend blitz on defaulted clients",
+      "the forfeiture-deadline crackdown",
+      "locating several jumpers before forfeiture",
+      "a joint effort with local deputies",
+      "temporary manpower",
+      "the citywide dragnet",
+      "surge staffing on open cases",
+      "cleaning up old failures to appear"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Court Filing & Forfeiture Costs",
+   "aliases": [
+    "court costs",
+    "filing fees",
+    "forfeiture costs",
+    "court filing spend",
+    "clerk fees"
+   ],
+   "narrative": [
+    "Court costs",
+    "Filing fees",
+    "Forfeiture costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harlan County Clerk of Court",
+     "base": 2200,
+     "memo": "Mnt filing fees - bond postings"
+    },
+    {
+     "vendor": "Dellwood Courier & Process",
+     "base": 1800,
+     "memo": "Svc - courthouse runs, process service"
+    }
+   ],
+   "events": [
+    {
+     "key": "remission_petition",
+     "vendor": "Harlan County Clerk of Court",
+     "memos": [
+      "Remission petition - filing",
+      "Remission petition - certified copies"
+     ],
+     "cross_memo": "Remission petition - attorney review",
+     "plain": [
+      "the remission petition",
+      "a remission petition",
+      "remission petition charges"
+     ],
+     "oblique": [
+      "seeking refund of forfeited money",
+      "clawing back money a judge kept",
+      "the refund request",
+      "getting a judge to reverse a forfeiture",
+      "paperwork to recover forfeited money",
+      "motions after a defendant was returned",
+      "the post-surrender motion",
+      "a request to vacate judgment",
+      "the reinstatement motion",
+      "recouping a forfeited liability",
+      "asking for leniency on a late surrender",
+      "a motion to set aside",
+      "the paperwork after one skipper resurfaced",
+      "stamped duplicates of judgments",
+      "one appeal to recover money",
+      "undoing a forfeiture after recapture"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "transcript_order",
+     "vendor": "Talbot Stenographic Reporting",
+     "memos": [
+      "Transcript order - default hearing",
+      "Transcript order - expedite fee"
+     ],
+     "cross_memo": "Transcript order - paralegal time",
+     "plain": [
+      "the transcript order",
+      "a transcript order",
+      "transcript order charges"
+     ],
+     "oblique": [
+      "getting proceedings typed up",
+      "verbatim records from a judge's session",
+      "the rushed proceedings record",
+      "word-for-word records needed at short notice",
+      "documentation of what was said at a bench session",
+      "the typist bill",
+      "written minutes of a contested session",
+      "preparing evidence of what the bench decided",
+      "a verbatim record",
+      "records needed to fight one ruling",
+      "the rushed paperwork from a contested ruling",
+      "documenting a disputed ruling",
+      "typed proceedings",
+      "one urgent records request",
+      "backing up our challenge to a ruling",
+      "official minutes of one session"
+     ],
+     "low": 10000,
+     "high": 21000
+    }
+   ]
+  },
+  {
+   "name": "Surety Underwriting Fees",
+   "aliases": [
+    "surety fees",
+    "underwriting fees",
+    "insurer premiums",
+    "surety premium spend",
+    "paper fees"
+   ],
+   "narrative": [
+    "Surety fees",
+    "Underwriting fees",
+    "Insurer premiums"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Mutual Surety",
+     "base": 18000,
+     "memo": "Mnt premium remit - bonds written"
+    },
+    {
+     "vendor": "Atlas Indemnity Co",
+     "base": 4500,
+     "memo": "Inv - BUF contribution"
+    }
+   ],
+   "events": [
+    {
+     "key": "audit_adjustment",
+     "vendor": "Keystone Mutual Surety",
+     "memos": [
+      "Audit adjustment - prior period",
+      "Audit adjustment - true-up"
+     ],
+     "cross_memo": "Audit adjustment - CPA hours",
+     "plain": [
+      "the audit adjustment",
+      "an audit adjustment",
+      "audit adjustment charges"
+     ],
+     "oblique": [
+      "a catch-up on underpaid amounts",
+      "the insurer's examination findings",
+      "settling up old shortfalls",
+      "correcting last year's reporting gaps",
+      "back charges from the carrier",
+      "money owed from earlier filings",
+      "a retroactive reconciliation",
+      "squaring up with the carrier",
+      "the carrier's examination",
+      "fixing misreported liability",
+      "shortfalls the carrier found",
+      "a backbilled correction",
+      "closing out historic discrepancies",
+      "the reconciliation",
+      "making good on old undercharges",
+      "a one-time catch-up bill"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "excess_layer",
+     "vendor": "Pinnacle Reinsurance Partners",
+     "memos": [
+      "Excess layer - high-limit coverage",
+      "Excess layer - placement charge"
+     ],
+     "cross_memo": "Excess layer - broker commission",
+     "plain": [
+      "the excess layer",
+      "an excess layer",
+      "excess layer coverage"
+     ],
+     "oblique": [
+      "backing a seven-figure release",
+      "extra protection on one very large release",
+      "spreading risk on a big client",
+      "the million-dollar posting",
+      "ceding part of a huge exposure",
+      "topping up capacity",
+      "the jumbo case",
+      "insuring our largest single release",
+      "capacity beyond our usual cap",
+      "a big-ticket defendant",
+      "offloading risk on one huge case",
+      "additional backing on a murder-charge release",
+      "the extra capacity",
+      "outside support on one massive release",
+      "sharing exposure with another carrier",
+      "protecting against one enormous loss"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Electronic Monitoring",
+   "aliases": [
+    "gps monitoring",
+    "ankle monitors",
+    "monitoring costs",
+    "tracking devices",
+    "defendant tracking"
+   ],
+   "narrative": [
+    "Ankle monitors",
+    "Monitoring costs",
+    "Defendant tracking"
+   ],
+   "recurring": [
+    {
+     "vendor": "TrackSure Devices",
+     "base": 7200,
+     "memo": "Mnt lease - GPS units"
+    },
+    {
+     "vendor": "Vigil Alert Center",
+     "base": 3100,
+     "memo": "Svc - 24hr alert desk"
+    }
+   ],
+   "events": [
+    {
+     "key": "tamper_replacement",
+     "vendor": "TrackSure Devices",
+     "memos": [
+      "Tamper replacement - damaged straps",
+      "Tamper replacement - swap"
+     ],
+     "cross_memo": "Tamper replacement - field tech mileage",
+     "plain": [
+      "the tamper replacement",
+      "tamper replacement charges",
+      "a tamper replacement batch"
+     ],
+     "oblique": [
+      "cut bracelets",
+      "defendants cutting off their bracelets",
+      "replacing broken anklets",
+      "hardware destroyed by wearers",
+      "a run of sabotaged equipment",
+      "fixing gear clients broke",
+      "new bands after vandalism",
+      "sabotage by wearers",
+      "the broken bracelets",
+      "clients ripping off their anklets",
+      "restocking anklets",
+      "lost hardware",
+      "replacing destroyed equipment",
+      "a spate of cut bands",
+      "wearer-inflicted breakage",
+      "the vandalized anklets"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "alcohol_sensor",
+     "vendor": "Sobrieta Testing Labs",
+     "memos": [
+      "Alcohol sensor - startup kits",
+      "Alcohol sensor - calibration"
+     ],
+     "cross_memo": "Alcohol sensor - staff training",
+     "plain": [
+      "the alcohol sensor rollout",
+      "alcohol sensor kits",
+      "an alcohol sensor program"
+     ],
+     "oblique": [
+      "drink-detection bracelets for DUI clients",
+      "a judge's order to watch drinking",
+      "DUI release conditions",
+      "breath-free intoxication checks",
+      "transdermal anklets",
+      "court-ordered abstinence checks",
+      "drinking checks for DUI defendants",
+      "abstinence compliance",
+      "transdermal gear",
+      "monitoring drinking on release",
+      "a new judge requirement on DUI cases",
+      "the DUI conditions",
+      "intoxication tracking",
+      "booze detection",
+      "keeping DUI clients dry",
+      "setting up abstinence enforcement"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Skip Tracing & Data",
+   "aliases": [
+    "skip tracing",
+    "data services",
+    "locator searches",
+    "database subscriptions",
+    "tracing costs"
+   ],
+   "narrative": [
+    "Skip tracing",
+    "Data services",
+    "Locator searches"
+   ],
+   "recurring": [
+    {
+     "vendor": "Nexpoint Locate",
+     "base": 2600,
+     "memo": "Mnt subscription - person search"
+    },
+    {
+     "vendor": "Clearwire Records",
+     "base": 1400,
+     "memo": "Inv - batch phone lookups"
+    }
+   ],
+   "events": [
+    {
+     "key": "bulk_append",
+     "vendor": "Nexpoint Locate",
+     "memos": [
+      "Bulk append - address refresh",
+      "Bulk append - overage"
+     ],
+     "cross_memo": "Bulk append - IT import hours",
+     "plain": [
+      "the bulk append",
+      "a bulk append",
+      "bulk append overage"
+     ],
+     "oblique": [
+      "updating contact info on every open client",
+      "a full database cleanup",
+      "rerunning our whole book",
+      "going over plan limits on queries",
+      "updated whereabouts on all defendants",
+      "data hygiene",
+      "the portfolio-wide scrub",
+      "exceeding our query allowance",
+      "a mass update of client details",
+      "freshening stale client info",
+      "cleaning up outdated residences",
+      "the annual scrub",
+      "more queries than our plan covers",
+      "pulling new contact data across the book",
+      "one big data pass",
+      "verifying where clients live now"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "social_media_scan",
+     "vendor": "Haverford Social Intel",
+     "memos": [
+      "Social media scan - license",
+      "Social media scan - analyst setup"
+     ],
+     "cross_memo": "Social media scan - investigator OT",
+     "plain": [
+      "the social media scan",
+      "a social media scan",
+      "social media scan fees"
+     ],
+     "oblique": [
+      "watching online profiles of absconders",
+      "online footprint checks",
+      "tracking skippers through their posts",
+      "a new web-based locator tool",
+      "combing posts for clues",
+      "internet sleuthing",
+      "following runaways online",
+      "an online-presence platform",
+      "checking defendants' feeds",
+      "a pilot to find jumpers via posts",
+      "the internet profile tool",
+      "web footprint research",
+      "trawling public posts",
+      "cyber sleuthing on skippers",
+      "digital footprint work",
+      "reading what fugitives post"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Office Rent",
+   "aliases": [
+    "rent",
+    "office rent",
+    "lease costs",
+    "occupancy",
+    "premises"
+   ],
+   "narrative": [
+    "Office rent",
+    "Occupancy",
+    "Lease costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Courthouse Square Properties",
+     "base": 5200,
+     "memo": "Mnt rent - Main St storefront"
+    },
+    {
+     "vendor": "Jailside Plaza LLC",
+     "base": 3400,
+     "memo": "Mnt rent - satellite office"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam_reconciliation",
+     "vendor": "Courthouse Square Properties",
+     "memos": [
+      "CAM reconciliation - year-end",
+      "CAM reconciliation - tax pass-through"
+     ],
+     "cross_memo": "CAM reconciliation - utilities share",
+     "plain": [
+      "the CAM reconciliation",
+      "a CAM reconciliation",
+      "CAM reconciliation charges"
+     ],
+     "oblique": [
+      "landlord true-up of building costs",
+      "common-area charges billed late",
+      "the landlord's annual catch-up",
+      "back-billed upkeep of shared hallways",
+      "property levies passed on",
+      "our slice of building upkeep",
+      "landlord's operating cost settle-up",
+      "parking repaving costs passed along",
+      "a building expense true-up",
+      "higher assessed levies on our building",
+      "the yearly landlord bill",
+      "maintenance charges from the landlord",
+      "shared-space upkeep",
+      "landlord recovering overruns",
+      "extra building charges",
+      "the annual settle-up"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "window_repair",
+     "vendor": "Brightline Sign & Glass",
+     "memos": [
+      "Window repair - shattered pane",
+      "Window repair - boarding"
+     ],
+     "cross_memo": "Window repair - alarm reset",
+     "plain": [
+      "the window repair",
+      "a window repair",
+      "window repair work"
+     ],
+     "oblique": [
+      "fixing the break-in damage",
+      "the vandalism at our front",
+      "a smashed front entry",
+      "cleanup after someone threw a brick",
+      "the burglary",
+      "break-in damage",
+      "replacing the busted frontage",
+      "securing the premises after vandalism",
+      "emergency fixes after a break-in",
+      "a rock through the front",
+      "the night of vandalism",
+      "patching up after an attempted burglary",
+      "making the lobby secure again",
+      "security fixes after intruders",
+      "the forced entry",
+      "intruder damage"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Collateral Storage & Appraisal",
+   "aliases": [
+    "collateral storage",
+    "appraisal costs",
+    "collateral handling",
+    "pledged asset storage",
+    "vault fees"
+   ],
+   "narrative": [
+    "Collateral storage",
+    "Appraisal costs",
+    "Vault fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "SafeHold Storage Yards",
+     "base": 2400,
+     "memo": "Mnt bay rental - pledged vehicles"
+    },
+    {
+     "vendor": "Merriweather Appraisers",
+     "base": 1500,
+     "memo": "Inv - jewelry/title valuations"
+    }
+   ],
+   "events": [
+    {
+     "key": "towing_impound",
+     "vendor": "SafeHold Storage Yards",
+     "memos": [
+      "Towing impound - seized trucks",
+      "Towing impound - lot overflow"
+     ],
+     "cross_memo": "Towing impound - lien search",
+     "plain": [
+      "the towing impound",
+      "towing impound charges",
+      "a towing impound run"
+     ],
+     "oblique": [
+      "hauling in repossessed pickups",
+      "repossessing cars from defaulted signers",
+      "extra parking for repossessed autos",
+      "taking possession of collateral cars",
+      "a wave of repossessions",
+      "hauling forfeited autos",
+      "repo costs on cosigner cars",
+      "bringing in cars from indemnitors",
+      "the repo wave",
+      "recovering cars after defaults",
+      "more space for repossessed autos",
+      "collecting signers' cars",
+      "a batch of repossessed pickups",
+      "the fleet of repos",
+      "auto repossessions",
+      "grabbing cars from cosigners who defaulted"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "estate_liquidation",
+     "vendor": "Quarry Hill Auction House",
+     "memos": [
+      "Estate liquidation - auction commission",
+      "Estate liquidation - cataloging"
+     ],
+     "cross_memo": "Estate liquidation - legal notice",
+     "plain": [
+      "the estate liquidation",
+      "an estate liquidation",
+      "estate liquidation costs"
+     ],
+     "oblique": [
+      "selling off a cosigner's property",
+      "the property sale",
+      "turning a forfeited deed into cash",
+      "disposing of collateral after a default",
+      "cashing out a defaulted cosigner",
+      "the fire sale",
+      "getting rid of forfeited belongings",
+      "selling off a skipper's possessions",
+      "monetizing collateral",
+      "the sell-off",
+      "unloading forfeited assets",
+      "a public sale of forfeited goods",
+      "selling a family's furnishings",
+      "clearing out a defaulted indemnitor's goods",
+      "recouping losses by selling assets",
+      "the bidder fees"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "After-Hours Call Center",
+   "aliases": [
+    "call center",
+    "answering service",
+    "after-hours phones",
+    "overnight call coverage",
+    "hotline costs"
+   ],
+   "narrative": [
+    "Call center",
+    "Answering service",
+    "Hotline costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "NightOwl Reception",
+     "base": 3800,
+     "memo": "Mnt svc - 24/7 intake line"
+    },
+    {
+     "vendor": "Relaymark Telecom",
+     "base": 1200,
+     "memo": "Inv - toll-free minutes"
+    }
+   ],
+   "events": [
+    {
+     "key": "bilingual_staffing",
+     "vendor": "NightOwl Reception",
+     "memos": [
+      "Bilingual staffing - Spanish agents",
+      "Bilingual staffing - script build"
+     ],
+     "cross_memo": "Bilingual staffing - translated forms",
+     "plain": [
+      "the bilingual staffing",
+      "bilingual staffing costs",
+      "a bilingual staffing add-on"
+     ],
+     "oblique": [
+      "operators who speak two languages",
+      "coverage for non-English callers",
+      "serving Latino families at night",
+      "language access",
+      "a request from our Hispanic clientele",
+      "hiring dual-language operators",
+      "interpreters on overnight shifts",
+      "callers needing another language",
+      "multilingual coverage",
+      "accommodating families who don't speak English",
+      "the language upgrade",
+      "two-language operators",
+      "expanding to non-English households",
+      "interpreter coverage",
+      "Latino market outreach",
+      "a dual-language desk"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "recording_archive",
+     "vendor": "Vantage Recording Systems",
+     "memos": [
+      "Recording archive - retention setup",
+      "Recording archive - cloud tier"
+     ],
+     "cross_memo": "Recording archive - consultant review",
+     "plain": [
+      "the recording archive",
+      "a recording archive",
+      "recording archive fees"
+     ],
+     "oblique": [
+      "saving every conversation for regulators",
+      "keeping taped conversations per the insurance department",
+      "a regulator's demand to keep conversations",
+      "conversation logs the state now wants",
+      "storing audio of client conversations",
+      "the new tape-keeping requirement",
+      "preserving audio evidence",
+      "proof of what callers were told",
+      "documenting disclosures made over the phone",
+      "audio evidence keeping",
+      "compliance with a new disclosure rule",
+      "holding years of conversations",
+      "the regulator's audio mandate",
+      "protecting us in disputes with cosigners",
+      "taped disclosures",
+      "keeping evidence of every promise made by phone"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

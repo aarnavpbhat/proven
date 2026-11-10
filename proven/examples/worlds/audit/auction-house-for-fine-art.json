@@ -1,0 +1,830 @@
+{
+ "slug": "auction-house-for-fine-art",
+ "industry": "auction house for fine art",
+ "entities": [
+  "Ravensworth & Pike Auctioneers",
+  "Halloran Fine Art Sales",
+  "Marlowe Gate Auctions",
+  "Esterbrook Salerooms",
+  "Vellacourt Auction Galleries"
+ ],
+ "accounts": [
+  {
+   "name": "Fine Art Shipping & Crating",
+   "aliases": [
+    "shipping",
+    "crating",
+    "art shipping",
+    "shipping and crating",
+    "freight spend"
+   ],
+   "narrative": [
+    "Shipping",
+    "Crating",
+    "Art shipping"
+   ],
+   "recurring": [
+    {
+     "vendor": "Halvorsen Fine Art Logistics",
+     "base": 14500,
+     "memo": "Consignment pickups — monthly route PO 2210"
+    },
+    {
+     "vendor": "Brightcase Crate Works",
+     "base": 6200,
+     "memo": "Custom crates — standard sizes"
+    },
+    {
+     "vendor": "Meridian Courier Services",
+     "base": 2400,
+     "memo": "Courier runs — docs/small lots"
+    }
+   ],
+   "events": [
+    {
+     "key": "museum_loan_return",
+     "vendor": "Halvorsen Fine Art Logistics",
+     "memos": [
+      "Museum loan return — climate truck PO 2291",
+      "Museum loan return — handling crew"
+     ],
+     "cross_memo": "Museum loan return — transit cover rider",
+     "plain": [
+      "the museum loan return",
+      "museum loan return trucking",
+      "the museum loan return handling"
+     ],
+     "oblique": [
+      "sending borrowed paintings back to the institution",
+      "the exhibition wind-down",
+      "repatriating lent pieces",
+      "closing out the borrowed show",
+      "getting the lent canvases home",
+      "the gallery exhibition breakdown",
+      "deinstallation",
+      "temperature-controlled haulage",
+      "the lender repatriation",
+      "wrapping up the retrospective",
+      "honoring our obligation to the lending institution",
+      "packing up the retrospective",
+      "the exhibition close",
+      "a one-time haul for the lender",
+      "end of the borrowed exhibition",
+      "sending pieces back to the institution after the show"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "asia_sale_airfreight",
+     "vendor": "Skyward Cargo Partners",
+     "memos": [
+      "Hong Kong airfreight — outbound AWB 618-2231",
+      "Hong Kong airfreight — export permits"
+     ],
+     "cross_memo": "Hong Kong airfreight — specialist escort airfare",
+     "plain": [
+      "the Hong Kong airfreight",
+      "Hong Kong airfreight charges",
+      "airfreight to Hong Kong"
+     ],
+     "oblique": [
+      "flying inventory to the Asian saleroom",
+      "the Asia sale move",
+      "air shipping for the overseas auction",
+      "getting property to the Far East sale",
+      "the overseas sale",
+      "the Asian auction season",
+      "sending paintings by plane to Asia",
+      "jet shipment of sale property",
+      "the international auction transfer",
+      "preparing the Asia evening sale",
+      "the cross-border auction move",
+      "flying property abroad",
+      "the Far East auction",
+      "overseas sale preparations",
+      "a rush to stock the Asian saleroom",
+      "paintings flown east"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Catalogue Production",
+   "aliases": [
+    "catalogues",
+    "catalogue printing",
+    "catalog costs",
+    "sale catalogues",
+    "print production"
+   ],
+   "narrative": [
+    "Catalogues",
+    "Catalogue printing",
+    "Sale catalogues"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lindqvist Press",
+     "base": 18000,
+     "memo": "Sale catalogue print run PO 3105"
+    },
+    {
+     "vendor": "Atelier Photo Studio",
+     "base": 5500,
+     "memo": "Lot photography — monthly shoot"
+    },
+    {
+     "vendor": "Corbel Design Group",
+     "base": 3800,
+     "memo": "Layout/typesetting retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "foil_reprint",
+     "vendor": "Lindqvist Press",
+     "memos": [
+      "Foil cover reprint — 2400 copies PO 3188",
+      "Foil cover reprint — rush binding"
+     ],
+     "cross_memo": "Foil cover reprint — expedited mailing",
+     "plain": [
+      "the foil cover reprint",
+      "foil cover reprint costs",
+      "a foil cover reprint"
+     ],
+     "oblique": [
+      "redoing the evening book after an error",
+      "the second impression",
+      "fixing the flawed book",
+      "correcting a wrong estimate in the book",
+      "the corrected impression",
+      "replacing books with a typo",
+      "the errata reissue",
+      "reissuing the flagship book",
+      "a botched first impression",
+      "the misattributed painting correction",
+      "pulping and redoing the books",
+      "the do-over job",
+      "metallic stamping redone",
+      "the reissued evening book",
+      "fixing a mistake on the front",
+      "the consignor-requested correction"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "clamshell_edition",
+     "vendor": "Halcyon Bindery & Box",
+     "memos": [
+      "Clamshell collector edition — case making",
+      "Clamshell collector edition — slipcase proofs"
+     ],
+     "cross_memo": "Clamshell collector edition — launch dinner",
+     "plain": [
+      "the clamshell collector edition",
+      "clamshell collector edition costs",
+      "a clamshell collector edition"
+     ],
+     "oblique": [
+      "the deluxe hardbound volume for top clients",
+      "a premium keepsake book",
+      "luxury books for VIP bidders",
+      "the limited presentation volume",
+      "gift books for major consignors",
+      "the high-end keepsake",
+      "a bespoke archival volume",
+      "presentation sets for patrons",
+      "the VIP book project",
+      "keepsakes for the estate's heirs",
+      "a premium hardback for the estate",
+      "the luxury volume",
+      "top-client gifting books",
+      "the commemorative volume",
+      "archival-quality gift volumes",
+      "a showpiece book for the single-owner auction"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Wall-to-Wall Insurance",
+   "aliases": [
+    "insurance",
+    "wall-to-wall insurance",
+    "insurance premiums",
+    "specie cover",
+    "premiums"
+   ],
+   "narrative": [
+    "Insurance",
+    "Insurance premiums",
+    "Specie cover"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ashcombe Specie Underwriters",
+     "base": 22000,
+     "memo": "Wall-to-wall policy — monthly premium"
+    },
+    {
+     "vendor": "Tessaro Risk Brokers",
+     "base": 2100,
+     "memo": "Broker fee — portfolio"
+    },
+    {
+     "vendor": "Vantage Valuation Survey",
+     "base": 1800,
+     "memo": "Schedule valuation update"
+    }
+   ],
+   "events": [
+    {
+     "key": "single_lot_endorsement",
+     "vendor": "Ashcombe Specie Underwriters",
+     "memos": [
+      "Single-lot endorsement — PO 5512 binder",
+      "Single-lot endorsement — terrorism extension"
+     ],
+     "cross_memo": "Single-lot endorsement — armed guard detail",
+     "plain": [
+      "the single-lot endorsement",
+      "single-lot endorsement charges",
+      "a single-lot endorsement"
+     ],
+     "oblique": [
+      "extra coverage on the star painting",
+      "insuring the headline masterpiece",
+      "topping up limits for one trophy work",
+      "raising limits for the top estimate",
+      "added protection for the marquee consignment",
+      "the masterpiece coverage",
+      "a bespoke add-on for the star painting",
+      "covering the eight-figure canvas",
+      "increased limits for the headline piece",
+      "the higher sum insured",
+      "protecting the marquee picture",
+      "the trophy canvas surcharge",
+      "coverage for an exceptionally valuable painting",
+      "the top-estimate uplift",
+      "the headline painting's coverage",
+      "what the insurer charged to accept the masterpiece"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "flood_deductible",
+     "vendor": "Kestrel Loss Adjusting",
+     "memos": [
+      "Flood claim deductible — storeroom B",
+      "Flood claim deductible — adjuster invoice"
+     ],
+     "cross_memo": "Flood claim deductible — water remediation",
+     "plain": [
+      "the flood claim deductible",
+      "flood claim deductible costs",
+      "a flood claim deductible"
+     ],
+     "oblique": [
+      "the basement leak",
+      "our share of the leak damage",
+      "the burst pipe",
+      "the out-of-pocket portion of the leak",
+      "paying our retention on the damaged stock",
+      "the self-insured portion after the pipe burst",
+      "the excess we bore on the damaged works",
+      "the plumbing failure in storage",
+      "leak damage below the retention",
+      "the uninsured slice of the incident",
+      "the warehouse leak",
+      "costs we keep after the burst",
+      "the self-retained damage",
+      "the pipe failure",
+      "assessing the soaked paintings",
+      "the leak in the vault"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Conservation & Restoration",
+   "aliases": [
+    "conservation",
+    "restoration",
+    "conservation costs",
+    "restorer fees",
+    "condition work"
+   ],
+   "narrative": [
+    "Conservation",
+    "Restoration",
+    "Restorer fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Marchetti Paintings Conservancy",
+     "base": 9500,
+     "memo": "Condition reports — monthly batch"
+    },
+    {
+     "vendor": "Okafor Frame Restorers",
+     "base": 4200,
+     "memo": "Frame repairs — gilding touch-ups"
+    },
+    {
+     "vendor": "Pellucid Varnish Supply",
+     "base": 1300,
+     "memo": "Solvents/varnish stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "canvas_relining",
+     "vendor": "Marchetti Paintings Conservancy",
+     "memos": [
+      "Canvas relining — wax-resin WO 7720",
+      "Canvas relining — stretcher replacement"
+     ],
+     "cross_memo": "Canvas relining — re-shoot images",
+     "plain": [
+      "the canvas relining",
+      "canvas relining work",
+      "a canvas relining"
+     ],
+     "oblique": [
+      "backing the torn picture with new support",
+      "structural stabilization of a fragile oil",
+      "reinforcing a flaking old master",
+      "structural work on the old master",
+      "stabilizing the damaged oil before the sale",
+      "making the cracked oil saleable",
+      "the consignor-approved structural fix",
+      "shoring up a brittle seventeenth-century picture",
+      "the backing reinforcement",
+      "fixing the tear in the Dutch picture",
+      "readying the fragile oil for viewing",
+      "the big structural job",
+      "mending a tear before the preview",
+      "support reinforcement",
+      "a new backing for the brittle oil",
+      "the old master rescue"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "foxing_treatment",
+     "vendor": "Thornfield Paper Conservators",
+     "memos": [
+      "Foxing treatment — 38 sheets",
+      "Foxing treatment — humidification chamber"
+     ],
+     "cross_memo": "Foxing treatment — archival mats",
+     "plain": [
+      "the foxing treatment",
+      "foxing treatment costs",
+      "a foxing treatment"
+     ],
+     "oblique": [
+      "cleaning up spotted drawings",
+      "the drawings rescue",
+      "removing brown spots from the prints",
+      "brightening discoloured drawings",
+      "fixing age spots on the sketches",
+      "rescuing a group of mottled watercolours",
+      "the watercolour cleanup",
+      "spot removal on old drawings",
+      "getting the sketchbook pages presentable",
+      "dealing with mildew on the drawings",
+      "the estate drawings cleanup",
+      "the sketch archive cleanup",
+      "bringing discoloured watercolours up to standard",
+      "the mottled drawings",
+      "a big drawings intake needing attention",
+      "the drawings cleanup"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Provenance Research",
+   "aliases": [
+    "provenance",
+    "provenance research",
+    "due diligence",
+    "title checks",
+    "authentication"
+   ],
+   "narrative": [
+    "Provenance",
+    "Provenance research",
+    "Due diligence"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lanyard Archive Services",
+     "base": 5200,
+     "memo": "Archive searches — PO 6040"
+    },
+    {
+     "vendor": "Clearmark Title Registry",
+     "base": 2600,
+     "memo": "Stolen-art database checks"
+    },
+    {
+     "vendor": "Dr. Hannelore Veit",
+     "base": 3400,
+     "memo": "Scholar opinion retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "attribution_dossier",
+     "vendor": "Dr. Hannelore Veit",
+     "memos": [
+      "Attribution dossier — Flemish panel",
+      "Attribution dossier — travel to Antwerp"
+     ],
+     "cross_memo": "Attribution dossier — infrared photography",
+     "plain": [
+      "the attribution dossier",
+      "attribution dossier fees",
+      "an attribution dossier"
+     ],
+     "oblique": [
+      "confirming who painted the old master",
+      "the expert's study of the disputed picture",
+      "establishing authorship",
+      "an expert write-up on the contested work",
+      "settling the authorship question",
+      "the authorship study",
+      "a deep-dive into who made the picture",
+      "the specialist's trip to Belgium",
+      "upgrading the picture from workshop to master",
+      "the authorship upgrade",
+      "expert fieldwork in Belgium",
+      "supporting a higher estimate with expert backing",
+      "the hand-of-the-master question",
+      "a written expert case for the old master",
+      "the authorship write-up",
+      "the disputed picture's authorship"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "pigment_analysis",
+     "vendor": "Northgate Spectroscopy Lab",
+     "memos": [
+      "Pigment analysis — XRF sampling",
+      "Pigment analysis — lab report"
+     ],
+     "cross_memo": "Pigment analysis — courier transport",
+     "plain": [
+      "the pigment analysis",
+      "pigment analysis fees",
+      "a pigment analysis"
+     ],
+     "oblique": [
+      "testing the paint chemistry",
+      "scientific testing",
+      "checking whether the colours are period-correct",
+      "materials testing on the suspect canvas",
+      "forgery screening",
+      "dating the paint",
+      "the scientific forgery check",
+      "chemical testing",
+      "verifying the paint predates the artist's death",
+      "scientific examination of a doubtful painting",
+      "the materials study",
+      "ruling out a modern fake",
+      "the paint-chemistry work",
+      "anachronism testing",
+      "elemental testing of the paint layers",
+      "fake detection"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Auction Marketing & Advertising",
+   "aliases": [
+    "marketing",
+    "advertising",
+    "auction promotion",
+    "ad spend",
+    "marketing spend"
+   ],
+   "narrative": [
+    "Marketing",
+    "Advertising",
+    "Ad spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Quillon Media Buying",
+     "base": 12000,
+     "memo": "Print/digital placements — PO 8120"
+    },
+    {
+     "vendor": "Saltmarsh PR",
+     "base": 4500,
+     "memo": "PR retainer"
+    },
+    {
+     "vendor": "Ostrander Digital",
+     "base": 3200,
+     "memo": "Paid social — bidder acquisition"
+    }
+   ],
+   "events": [
+    {
+     "key": "billboard_takeover",
+     "vendor": "Quillon Media Buying",
+     "memos": [
+      "Billboard takeover — station concourse 4wk",
+      "Billboard takeover — creative production"
+     ],
+     "cross_memo": "Billboard takeover — permit fees",
+     "plain": [
+      "the billboard takeover",
+      "billboard takeover costs",
+      "a billboard takeover"
+     ],
+     "oblique": [
+      "outdoor ads for the marquee auction",
+      "the big outdoor push",
+      "giant posters at the rail hub",
+      "the outdoor campaign",
+      "blanketing the transit hub with posters",
+      "street-level visibility for the evening auction",
+      "the out-of-home blitz",
+      "large-format signage",
+      "plastering the city with the cover painting",
+      "the commuter poster campaign",
+      "outdoor signage",
+      "a splashy public campaign",
+      "putting the masterpiece on giant screens",
+      "brand visibility at the train hub",
+      "the poster blitz",
+      "out-of-home spend"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "preview_gala",
+     "vendor": "Lumen & Vale Events",
+     "memos": [
+      "Preview gala — venue hire",
+      "Preview gala — catering 300 covers"
+     ],
+     "cross_memo": "Preview gala — extra security staff",
+     "plain": [
+      "the preview gala",
+      "preview gala costs",
+      "a preview gala"
+     ],
+     "oblique": [
+      "the opening night party",
+      "hosting top collectors before the auction",
+      "the pre-auction reception",
+      "the cocktail evening",
+      "entertaining VIP clients",
+      "the launch party for the evening auction",
+      "a black-tie evening for consignors",
+      "the client soirée",
+      "the champagne reception",
+      "wining and dining major buyers",
+      "the exhibition opening party",
+      "a party to build buzz",
+      "the VIP reception",
+      "the black-tie dinner",
+      "hospitality for top clients",
+      "the collectors' cocktail night"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Salesroom Rent & Occupancy",
+   "aliases": [
+    "rent",
+    "occupancy",
+    "premises",
+    "salesroom rent",
+    "building costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Premises"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kingsbridge Estates",
+     "base": 28000,
+     "memo": "Salesroom lease — base rent"
+    },
+    {
+     "vendor": "Harrow Facilities Management",
+     "base": 5600,
+     "memo": "Building services — FM contract"
+    },
+    {
+     "vendor": "Crestline HVAC",
+     "base": 2200,
+     "memo": "Climate control maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam_trueup",
+     "vendor": "Kingsbridge Estates",
+     "memos": [
+      "CAM year-end true-up — 2023 shortfall",
+      "CAM year-end true-up — property tax share"
+     ],
+     "cross_memo": "CAM year-end true-up — insurance recharge",
+     "plain": [
+      "the CAM year-end true-up",
+      "a CAM year-end true-up",
+      "CAM year-end true-up charges"
+     ],
+     "oblique": [
+      "the landlord's annual settlement",
+      "catching up on underbilled common-area costs",
+      "the landlord's catch-up bill",
+      "the annual common-area settlement",
+      "our portion of shared upkeep",
+      "the landlord settling up",
+      "a retroactive landlord bill",
+      "underpaid common charges",
+      "back-billed common area costs",
+      "the landlord's look-back",
+      "the annual landlord catch-up",
+      "levies passed through by the landlord",
+      "a prior-period landlord adjustment",
+      "shared-area cost overruns",
+      "the landlord's backdated charge",
+      "a landlord bill for last period"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "partition_rebuild",
+     "vendor": "Pallister Shopfitting",
+     "memos": [
+      "Gallery partition rebuild — drywall WO 9031",
+      "Gallery partition rebuild — lighting track"
+     ],
+     "cross_memo": "Gallery partition rebuild — temporary storage",
+     "plain": [
+      "the gallery partition rebuild",
+      "gallery partition rebuild costs",
+      "a gallery partition rebuild"
+     ],
+     "oblique": [
+      "reconfiguring the viewing rooms",
+      "new walls for the exhibition space",
+      "the viewing-room refit",
+      "reshaping the display floor",
+      "the showroom refit",
+      "fit-out work ahead of the evening auction",
+      "moving walls to hang larger pictures",
+      "the display wall overhaul",
+      "the refit",
+      "carpentry in the viewing rooms",
+      "redoing the hanging walls",
+      "the floor-plan change",
+      "a new layout for the viewing rooms",
+      "remodelling the exhibition floor",
+      "joinery work upstairs",
+      "the viewing floor makeover"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Software Subscriptions",
+   "aliases": [
+    "software",
+    "saas",
+    "subscriptions",
+    "software licences",
+    "tech stack"
+   ],
+   "narrative": [
+    "Software",
+    "Subscriptions",
+    "Software licences"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gavelstream Online Bidding",
+     "base": 9800,
+     "memo": "Live bidding platform — monthly"
+    },
+    {
+     "vendor": "Provenio Collections Cloud",
+     "base": 4600,
+     "memo": "CRM/lot database seats"
+    },
+    {
+     "vendor": "Ledgerly ERP",
+     "base": 2900,
+     "memo": "ERP licence — 40 users"
+    }
+   ],
+   "events": [
+    {
+     "key": "streaming_overage",
+     "vendor": "Gavelstream Online Bidding",
+     "memos": [
+      "Streaming overage — concurrent viewers",
+      "Streaming overage — CDN bandwidth"
+     ],
+     "cross_memo": "Streaming overage — AV crew overtime",
+     "plain": [
+      "the streaming overage",
+      "streaming overage charges",
+      "a streaming overage"
+     ],
+     "oblique": [
+      "the record remote audience",
+      "exceeding our webcast allowance",
+      "a huge remote audience for the evening auction",
+      "usage above the plan cap",
+      "the webcast spike",
+      "heavier-than-planned remote watching",
+      "excess video traffic",
+      "the surge in internet watchers",
+      "going over the plan limit",
+      "extra usage charges",
+      "the webcast going viral",
+      "remote audience above allowance",
+      "more people watching from home",
+      "usage beyond the tier",
+      "the video traffic surge",
+      "the webcast blowout"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "phishing_response",
+     "vendor": "Fennick Cyber Forensics",
+     "memos": [
+      "Phishing incident response — forensic imaging",
+      "Phishing incident response — mailbox audit"
+     ],
+     "cross_memo": "Phishing incident response — legal counsel",
+     "plain": [
+      "the phishing incident response",
+      "phishing incident response fees",
+      "a phishing incident response"
+     ],
+     "oblique": [
+      "the email breach investigation",
+      "cleaning up after the fake invoice scam",
+      "the email compromise",
+      "investigating the spoofed wire request",
+      "the security breach",
+      "the hacked inbox cleanup",
+      "outside experts after the email scam",
+      "containing the account takeover",
+      "the scam investigation",
+      "checking what the attackers accessed",
+      "the breach",
+      "post-hack review",
+      "the spoofed-email fraud attempt",
+      "locking down compromised accounts",
+      "the hack",
+      "the business email compromise"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

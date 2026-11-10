@@ -1,0 +1,790 @@
+{
+ "slug": "hot-air-balloon-ride-company",
+ "industry": "hot air balloon ride company",
+ "entities": [
+  "High Plains Balloon Flights",
+  "Dawnrise Aeronauts LLC",
+  "Copper Mesa Balloon Adventures",
+  "Lantern Sky Ballooning Co.",
+  "Meadowlark Air Tours"
+ ],
+ "accounts": [
+  {
+   "name": "Propane Fuel",
+   "aliases": [
+    "propane",
+    "propane fuel",
+    "fuel burn",
+    "propane spend",
+    "burner fuel"
+   ],
+   "narrative": [
+    "Propane spend",
+    "Fuel burn",
+    "Burner fuel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Valley Flame Propane Co.",
+     "base": 14000,
+     "memo": "Bulk propane delivery — launch site tank"
+    },
+    {
+     "vendor": "Cylinder Exchange Partners",
+     "base": 2200,
+     "memo": "Cylinder refill — balloon tanks"
+    }
+   ],
+   "events": [
+    {
+     "key": "vessel_recert",
+     "vendor": "Valley Flame Propane Co.",
+     "memos": [
+      "Storage vessel recertification — hydrostatic test",
+      "Storage vessel recertification — valve kit"
+     ],
+     "cross_memo": "Storage vessel recertification — crane hire",
+     "plain": [
+      "the storage vessel recertification",
+      "storage vessel recertification charges",
+      "a storage vessel recertification"
+     ],
+     "oblique": [
+      "the pressure inspection on our main reservoir",
+      "regulator-required safety checks on fixed gas holding",
+      "the five-year reservoir inspection",
+      "getting our big gas container signed off",
+      "compliance work on fixed gas equipment",
+      "the mandated pressure inspection",
+      "safety sign-off from the fire marshal",
+      "keeping our fixed reservoir legal to fill",
+      "inspector-ordered work at the yard",
+      "the overdue compliance inspection",
+      "replacing worn relief fittings on our reservoir",
+      "the regulator's periodic check",
+      "inspection work",
+      "required gas reservoir paperwork",
+      "certifying our main holding container",
+      "the safety audit of fixed gas infrastructure"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "winter_surcharge",
+     "vendor": "Highridge Energy Brokers",
+     "memos": [
+      "Winter price surcharge — peak allocation",
+      "Winter price surcharge — rush top-off"
+     ],
+     "cross_memo": "Winter price surcharge — heater fuel hangar",
+     "plain": [
+      "the winter price surcharge",
+      "winter price surcharge billing",
+      "a winter price surcharge"
+     ],
+     "oblique": [
+      "cold-season cost spikes",
+      "paying more per gallon when demand climbed",
+      "seasonal gas markups",
+      "a spot-market supplier we had to use",
+      "emergency sourcing when our usual supplier ran short",
+      "higher seasonal rates",
+      "the gallon premium from a backup supplier",
+      "buying on short notice",
+      "a second supplier at premium rates",
+      "the cold snap demand premium",
+      "market-rate gas from an outside dealer",
+      "expedited orders when supply tightened",
+      "inflated per-gallon costs",
+      "covering a regional supply shortage",
+      "backup sourcing",
+      "costlier gas during a shortage"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Envelope & Basket Maintenance",
+   "aliases": [
+    "envelope maintenance",
+    "basket repairs",
+    "fabric and wicker upkeep",
+    "envelope and basket",
+    "aircraft upkeep"
+   ],
+   "narrative": [
+    "Envelope maintenance",
+    "Basket repairs",
+    "Aircraft upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Skyloft Fabric Repair",
+     "base": 6500,
+     "memo": "Envelope panel patching — monthly"
+    },
+    {
+     "vendor": "Wickerworks Aero",
+     "base": 2800,
+     "memo": "Basket rim and leather trim service"
+    }
+   ],
+   "events": [
+    {
+     "key": "parachute_vent",
+     "vendor": "Skyloft Fabric Repair",
+     "memos": [
+      "Parachute vent replacement — new top cap",
+      "Parachute vent replacement — line set"
+     ],
+     "cross_memo": "Parachute vent replacement — downtime ride refunds",
+     "plain": [
+      "the parachute vent replacement",
+      "parachute vent replacement work",
+      "a parachute vent replacement"
+     ],
+     "oblique": [
+      "swapping out the worn deflation port",
+      "fixing how the balloons dump hot air",
+      "a heat-damaged crown section",
+      "the deflation system overhaul",
+      "restoring the crown closure",
+      "heat damage at the crown",
+      "the crown work",
+      "rebuilding a scorched closure flap",
+      "pilot-requested fixes to the release mechanism",
+      "getting a grounded aircraft flying again",
+      "the scorched crown",
+      "upper closure rebuild",
+      "fixing a release mechanism the pilots flagged",
+      "work on how we collapse balloons after landing",
+      "the heat-worn cords at the crown",
+      "a crown overhaul on our largest balloon"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "airworthiness_inspection",
+     "vendor": "Ridgeway Airworthiness Group",
+     "memos": [
+      "Annual airworthiness inspection — burner frame",
+      "Annual airworthiness inspection — logbook signoff"
+     ],
+     "cross_memo": "Annual airworthiness inspection — chase trailer check",
+     "plain": [
+      "the annual airworthiness inspection",
+      "annual airworthiness inspection fees",
+      "an annual airworthiness inspection"
+     ],
+     "oblique": [
+      "the yearly regulator sign-off",
+      "FAA compliance review",
+      "the twelve-month certification visit",
+      "mandatory flight-worthiness review",
+      "keeping our certificates current",
+      "the regulator-required audit",
+      "an outside examiner's yearly visit",
+      "recertifying the fleet to fly",
+      "certification fees",
+      "the yearly compliance audit",
+      "paperwork to stay legally flyable",
+      "an examiner going over every aircraft",
+      "the once-a-year certification",
+      "federal compliance work",
+      "renewing each aircraft's legal status",
+      "the outside audit of our fleet"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Chase Crew Vehicles",
+   "aliases": [
+    "chase vehicles",
+    "chase crew",
+    "retrieval trucks",
+    "chase fleet",
+    "pickup vans"
+   ],
+   "narrative": [
+    "Chase vehicles",
+    "Retrieval trucks",
+    "Chase fleet"
+   ],
+   "recurring": [
+    {
+     "vendor": "Mesa Fleet Leasing",
+     "base": 5200,
+     "memo": "Truck lease — three crew pickups"
+    },
+    {
+     "vendor": "Roadrunner Auto Care",
+     "base": 1800,
+     "memo": "Oil change and tire rotation"
+    }
+   ],
+   "events": [
+    {
+     "key": "transmission_rebuild",
+     "vendor": "Roadrunner Auto Care",
+     "memos": [
+      "Transmission rebuild — torque converter",
+      "Transmission rebuild — tow charge"
+     ],
+     "cross_memo": "Transmission rebuild — loaner van rental",
+     "plain": [
+      "the transmission rebuild",
+      "a transmission rebuild",
+      "transmission rebuild costs"
+     ],
+     "oblique": [
+      "a gearbox failure on a retrieval vehicle",
+      "major drivetrain work",
+      "getting a broken-down chase vehicle back on the road",
+      "the gearbox overhaul",
+      "fixing a vehicle that stalled mid-retrieval",
+      "drivetrain repairs",
+      "an unplanned mechanical breakdown",
+      "hauling a dead vehicle back from a field",
+      "keeping retrievals running while one vehicle sat in the shop",
+      "the slipping gears problem",
+      "a costly gearbox job",
+      "mechanical failure on our oldest vehicle",
+      "shifting problems the mechanic finally fixed",
+      "the stranded vehicle",
+      "a failed drivetrain",
+      "substitute wheels during the shop visit"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "hitch_upgrade",
+     "vendor": "Desert Hitch Fabrication",
+     "memos": [
+      "Trailer hitch upgrade — gooseneck mount",
+      "Trailer hitch upgrade — wiring harness"
+     ],
+     "cross_memo": "Trailer hitch upgrade — basket cradle",
+     "plain": [
+      "the trailer hitch upgrade",
+      "trailer hitch upgrade work",
+      "a trailer hitch upgrade"
+     ],
+     "oblique": [
+      "heavier pulling capacity for retrievals",
+      "fitting our vehicles to haul bigger gondolas",
+      "the coupling retrofit",
+      "new couplers for the larger gondola",
+      "rigging improvements",
+      "custom welding on our vehicles",
+      "retrofitting for heavier loads",
+      "making room for the bigger aircraft",
+      "the coupler retrofit",
+      "a welding job",
+      "electrical work so brake lights function behind vehicles",
+      "heavier-duty coupling gear",
+      "outfitting vehicles for the twenty-passenger gondola",
+      "custom metalwork",
+      "the retrofit requested by our chief pilot",
+      "getting vehicles ready to pull heavier loads"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Aviation Insurance",
+   "aliases": [
+    "aviation insurance",
+    "hull and liability",
+    "insurance premiums",
+    "flight coverage",
+    "passenger liability cover"
+   ],
+   "narrative": [
+    "Aviation insurance",
+    "Insurance premiums",
+    "Flight coverage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Skyward Aviation Underwriters",
+     "base": 9000,
+     "memo": "Hull and liability premium — monthly installment"
+    },
+    {
+     "vendor": "Pinnacle Risk Brokerage",
+     "base": 1200,
+     "memo": "Broker service fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "midterm_endorsement",
+     "vendor": "Skyward Aviation Underwriters",
+     "memos": [
+      "Midterm endorsement — added gondola",
+      "Midterm endorsement — pilot rider"
+     ],
+     "cross_memo": "Midterm endorsement — gondola registration",
+     "plain": [
+      "the midterm endorsement",
+      "a midterm endorsement",
+      "midterm endorsement charges"
+     ],
+     "oblique": [
+      "bringing a newly bought balloon onto our policy",
+      "extra cover for a newly certified aviator",
+      "a mid-year policy change",
+      "policy adjustments for fleet growth",
+      "insuring our newest aircraft",
+      "putting a third aircraft on cover",
+      "the coverage bump",
+      "scheduling another aircraft on the policy",
+      "a prorated policy amendment",
+      "expanding our insured fleet",
+      "cover for a recently hired aviator",
+      "the policy amendment",
+      "a higher insured value after expansion",
+      "an amendment the carrier required",
+      "prorated cover",
+      "growth in what we insure"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "hard_landing",
+     "vendor": "Harborline Claims Adjusters",
+     "memos": [
+      "Hard landing deductible — passenger injury",
+      "Hard landing deductible — adjuster report"
+     ],
+     "cross_memo": "Hard landing deductible — basket damage",
+     "plain": [
+      "the hard landing deductible",
+      "a hard landing deductible",
+      "hard landing deductible costs"
+     ],
+     "oblique": [
+      "our share of the rough touchdown",
+      "the out-of-pocket portion after an accident",
+      "a bumpy arrival that hurt a guest",
+      "the accident in the field",
+      "an uninsured portion of an incident",
+      "costs from a guest who got hurt",
+      "the retained loss",
+      "our retention on an incident",
+      "a guest hurt on touchdown",
+      "the rough-arrival incident",
+      "self-insured losses",
+      "fallout from a bad touchdown",
+      "the field accident",
+      "our portion of an accident payout",
+      "a guest's medical bills",
+      "costs left with us after an accident"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Landowner Access Fees",
+   "aliases": [
+    "landowner fees",
+    "landing rights",
+    "field access",
+    "landowner payments",
+    "crop access"
+   ],
+   "narrative": [
+    "Landowner fees",
+    "Landing rights",
+    "Field access"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hollister Family Farms",
+     "base": 2400,
+     "memo": "Landing rights — north pasture"
+    },
+    {
+     "vendor": "Cedar Creek Ranch",
+     "base": 1600,
+     "memo": "Field access stipend — east fields"
+    }
+   ],
+   "events": [
+    {
+     "key": "soybean_settlement",
+     "vendor": "Hollister Family Farms",
+     "memos": [
+      "Trampled soybean settlement — acreage loss",
+      "Trampled soybean settlement — appraisal"
+     ],
+     "cross_memo": "Trampled soybean settlement — chase vehicle cleanup",
+     "plain": [
+      "the trampled soybean settlement",
+      "a trampled soybean settlement",
+      "trampled soybean settlement payments"
+     ],
+     "oblique": [
+      "paying a farmer for ruined beans",
+      "reimbursing a grower whose harvest we flattened",
+      "harvest losses where a balloon came down",
+      "making good with an upset farmer",
+      "the flattened row crops",
+      "compensating a grower",
+      "a goodwill payment to keep a farmer happy",
+      "the ruined beans",
+      "restitution for harvest damage",
+      "keeping good relations with growers after a mishap",
+      "a grower's claim",
+      "yield lost under a deflated envelope",
+      "repaying a neighbor for wrecked plants",
+      "the farmer payout",
+      "a negotiated payment after an off-target touchdown",
+      "harvest restitution"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "seasonal_launch_lease",
+     "vendor": "Prairie Wind Grazing Co",
+     "memos": [
+      "Seasonal launch lease — spring meadow",
+      "Seasonal launch lease — gate key deposit"
+     ],
+     "cross_memo": "Seasonal launch lease — portable toilets",
+     "plain": [
+      "the seasonal launch lease",
+      "a seasonal launch lease",
+      "seasonal launch lease costs"
+     ],
+     "oblique": [
+      "a new takeoff ground for the busy months",
+      "renting another departure paddock",
+      "extra takeoff space",
+      "securing a second departure point",
+      "upfront payment for a takeoff paddock",
+      "a bigger staging area for more flights",
+      "expanding where we take off",
+      "the new departure paddock",
+      "a rented staging ground",
+      "capacity for added flights",
+      "the takeoff paddock agreement",
+      "upfront rent on extra ground",
+      "more room to inflate",
+      "a second staging area near town",
+      "the extra departure site",
+      "securing ground for weekend flights"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Passenger Catering",
+   "aliases": [
+    "catering",
+    "champagne toasts",
+    "post-flight breakfast",
+    "guest refreshments",
+    "flight brunch"
+   ],
+   "narrative": [
+    "Catering",
+    "Champagne toasts",
+    "Guest refreshments"
+   ],
+   "recurring": [
+    {
+     "vendor": "Golden Bubbles Wine Supply",
+     "base": 3200,
+     "memo": "Sparkling wine cases — landing toasts"
+    },
+    {
+     "vendor": "Sunrise Bakehouse",
+     "base": 2600,
+     "memo": "Pastry platters — post-flight breakfast"
+    }
+   ],
+   "events": [
+    {
+     "key": "festival_tent",
+     "vendor": "Sunrise Bakehouse",
+     "memos": [
+      "Festival hospitality tent — sponsor buffet",
+      "Festival hospitality tent — serving staff"
+     ],
+     "cross_memo": "Festival hospitality tent — canopy rental",
+     "plain": [
+      "the festival hospitality tent",
+      "a festival hospitality tent",
+      "festival hospitality tent costs"
+     ],
+     "oblique": [
+      "hosting VIPs at the balloon fiesta",
+      "feeding sponsors at the big event",
+      "the fiesta guest lounge",
+      "event-week food for partners",
+      "entertaining corporate partners at the fiesta",
+      "a one-time partner lunch",
+      "the VIP area at the regional rally",
+      "food at the rally",
+      "hosting partners during fiesta week",
+      "extra hands at the event",
+      "the fiesta",
+      "VIP meals at the rally",
+      "our marketing team's event spread",
+      "partner entertainment at the gathering",
+      "the big rally weekend",
+      "a catered lounge at the fiesta"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "flute_order",
+     "vendor": "Vintner's Row Glassworks",
+     "memos": [
+      "Commemorative flute order — etched glasses",
+      "Commemorative flute order — gift boxes"
+     ],
+     "cross_memo": "Commemorative flute order — shipping",
+     "plain": [
+      "the commemorative flute order",
+      "a commemorative flute order",
+      "commemorative flute order costs"
+     ],
+     "oblique": [
+      "keepsake stemware for guests",
+      "branded souvenirs",
+      "custom-engraved drinkware",
+      "take-home mementos for riders",
+      "the souvenir stemware",
+      "a merchandise buy marketing asked for",
+      "logo crystal for anniversary flights",
+      "personalized keepsakes",
+      "engraved stemware",
+      "giveaways for honeymoon packages",
+      "souvenir drinkware",
+      "a premium keepsake program",
+      "the logo crystal",
+      "upgraded mementos for premium packages",
+      "a stock of keepsakes",
+      "branded crystal"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Hangar Rent",
+   "aliases": [
+    "hangar rent",
+    "hangar lease",
+    "storage facility",
+    "hangar costs",
+    "facility rent"
+   ],
+   "narrative": [
+    "Hangar rent",
+    "Hangar lease",
+    "Facility rent"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightfield Properties",
+     "base": 7800,
+     "memo": "Hangar lease — Building C"
+    },
+    {
+     "vendor": "Tri-County Utilities",
+     "base": 1400,
+     "memo": "Electric and water — hangar"
+    }
+   ],
+   "events": [
+    {
+     "key": "roof_membrane",
+     "vendor": "Brightfield Properties",
+     "memos": [
+      "Roof membrane repair — leak section",
+      "Roof membrane repair — flashing"
+     ],
+     "cross_memo": "Roof membrane repair — soaked equipment drying",
+     "plain": [
+      "the roof membrane repair",
+      "a roof membrane repair",
+      "roof membrane repair costs"
+     ],
+     "oblique": [
+      "fixing where rain was getting in",
+      "the overhead patch job",
+      "storm damage up top",
+      "keeping our stored balloons dry",
+      "a ceiling drip over the fabric bay",
+      "weatherproofing overhead",
+      "the landlord's pass-through for storm fixes",
+      "resealing the top of our space",
+      "a drip our crew noticed after storms",
+      "overhead weatherproofing",
+      "storm fixes",
+      "work to stop rain reaching stored gear",
+      "resealing work",
+      "the ceiling problem",
+      "a storm-damaged top cover",
+      "tenant share of overhead fixes"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "sprinkler_retrofit",
+     "vendor": "Keystone Fire Protection",
+     "memos": [
+      "Sprinkler system retrofit — riser upgrade",
+      "Sprinkler system retrofit — permit"
+     ],
+     "cross_memo": "Sprinkler system retrofit — insurance inspection",
+     "plain": [
+      "the sprinkler system retrofit",
+      "a sprinkler system retrofit",
+      "sprinkler system retrofit work"
+     ],
+     "oblique": [
+      "upgraded suppression for the storage space",
+      "bringing extinguishing coverage up to code",
+      "the code-compliance work",
+      "safety work the marshal ordered",
+      "overhead suppression heads",
+      "life-safety improvements",
+      "meeting the new code",
+      "better suppression coverage",
+      "the marshal's mandate",
+      "code compliance",
+      "a carrier-required safety improvement",
+      "extinguishing gear for our stored propane",
+      "the safety mandate",
+      "plumbing for suppression",
+      "work the local code office required",
+      "protecting stored balloons from flames"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Booking Software",
+   "aliases": [
+    "booking software",
+    "reservation system",
+    "booking platform",
+    "ticketing software",
+    "online booking"
+   ],
+   "narrative": [
+    "Booking software",
+    "Reservation system",
+    "Booking platform"
+   ],
+   "recurring": [
+    {
+     "vendor": "FlightDeck Reservations",
+     "base": 1500,
+     "memo": "Booking platform subscription"
+    },
+    {
+     "vendor": "Clearpay Merchant Services",
+     "base": 2100,
+     "memo": "Card processing fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "weather_module",
+     "vendor": "FlightDeck Reservations",
+     "memos": [
+      "Weather reschedule module — setup",
+      "Weather reschedule module — staff training"
+     ],
+     "cross_memo": "Weather reschedule module — SMS credits",
+     "plain": [
+      "the weather reschedule module",
+      "a weather reschedule module",
+      "weather reschedule module fees"
+     ],
+     "oblique": [
+      "automating flight cancellations when winds pick up",
+      "a tool to move guests after scrubbed flights",
+      "the cancellation add-on",
+      "handling cancellations from bad forecasts",
+      "an add-on for scrubbed flights",
+      "the rain-out feature",
+      "letting guests pick a new date themselves",
+      "teaching the office team the new feature",
+      "a feature for grounded days",
+      "automated guest notices on cancellations",
+      "the scrub-day tool",
+      "fewer phone calls on windy mornings",
+      "configuring the cancellation feature",
+      "the rain-out tool",
+      "self-serve date changes",
+      "a fix for no-fly days"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "voucher_migration",
+     "vendor": "Northgate Data Migration",
+     "memos": [
+      "Gift voucher migration — legacy import",
+      "Gift voucher migration — reconciliation"
+     ],
+     "cross_memo": "Gift voucher migration — audit hours",
+     "plain": [
+      "the gift voucher migration",
+      "a gift voucher migration",
+      "gift voucher migration work"
+     ],
+     "oblique": [
+      "moving prepaid certificates off the old site",
+      "carrying over outstanding certificates",
+      "the certificate transfer project",
+      "cleaning up unredeemed prepaid rides",
+      "transferring prepaid balances",
+      "a one-time conversion project",
+      "matching outstanding certificate balances",
+      "contract help moving certificates",
+      "the prepaid balance cleanup",
+      "consolidating holiday certificates",
+      "conversion work",
+      "outside contractors moving customer records",
+      "retiring the old certificate tool",
+      "the certificate cleanup",
+      "porting unredeemed balances",
+      "a contractor engagement"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

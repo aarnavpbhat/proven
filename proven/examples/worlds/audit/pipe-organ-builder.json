@@ -1,0 +1,830 @@
+{
+ "slug": "pipe-organ-builder",
+ "industry": "pipe organ builder",
+ "entities": [
+  "Ashcombe & Vey Organ Builders",
+  "Thornfield Pipe Organ Company",
+  "Langridge Organworks",
+  "St. Cuthbert Organ Craftsmen",
+  "Merrow Valley Organ Builders"
+ ],
+ "accounts": [
+  {
+   "name": "Pipe Metal & Alloy",
+   "aliases": [
+    "pipe metal",
+    "metal stock",
+    "alloy purchases",
+    "tin and lead",
+    "pipe metal spend"
+   ],
+   "narrative": [
+    "Pipe metal",
+    "Metal stock",
+    "Alloy purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harrowgate Smelting Co.",
+     "base": 14000,
+     "memo": "Op. 52 Trinity Chapel — spotted metal ingot supply"
+    },
+    {
+     "vendor": "Bexley Sheet & Strip",
+     "base": 6500,
+     "memo": "Shop stock — zinc sheet for bass resonators"
+    },
+    {
+     "vendor": "Calder Assay Services",
+     "base": 1200,
+     "memo": "Monthly alloy assay — tin content certification"
+    }
+   ],
+   "events": [
+    {
+     "key": "casting_table_reline",
+     "vendor": "Harrowgate Smelting Co.",
+     "memos": [
+      "Op. 52 Trinity Chapel — casting table reline — linen and sand",
+      "Casting table reline — refractory bed labor"
+     ],
+     "cross_memo": "Casting table reline — kiln electrician callout",
+     "plain": [
+      "the casting table reline",
+      "casting table reline work",
+      "the reline of the casting table"
+     ],
+     "oblique": [
+      "relining the pour surface",
+      "redoing the mold for pouring",
+      "the pouring bench refurbishment",
+      "fixing where we pour molten material",
+      "a worn-out pour surface",
+      "pouring area upkeep",
+      "renewing the surface the lead is poured onto",
+      "the pour bench fix",
+      "maintenance in the hot room",
+      "redoing the cloth-covered pouring slab",
+      "getting the pour line usable again",
+      "replacing the cracked pouring surface",
+      "the overdue pouring slab job",
+      "repairs the pipe makers asked for",
+      "a rebuilt pour bench",
+      "restoring the molten lead workstation"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "display_rank_remelt",
+     "vendor": "Pennine Foundry Refiners",
+     "memos": [
+      "Op. 49 St. Wilfrid — display rank remelt — reclaimed lots",
+      "Display rank remelt — dross disposal"
+     ],
+     "cross_memo": "Display rank remelt — salvage crating",
+     "plain": [
+      "the display rank remelt",
+      "display rank remelt charges",
+      "remelt of the display rank"
+     ],
+     "oblique": [
+      "recycling the old front case pipes",
+      "turning scrapped pipework into usable raw material",
+      "the scrap recovery",
+      "processing scrap from a church we dismantled",
+      "the scrapped case front",
+      "purifying old organ pipework",
+      "outside reprocessing of scrapped pipes",
+      "recovering usable pewter",
+      "the old facade pipes",
+      "clearing out the retired front pipes",
+      "a one-off scrap job",
+      "having the dismantled instrument's pipes reprocessed",
+      "the pipe recycling",
+      "getting value out of the retired front pipes",
+      "reprocessing what came out of the north transept",
+      "scrap reprocessing"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Tonewood & Lumber",
+   "aliases": [
+    "tonewood",
+    "lumber",
+    "timber purchases",
+    "wood stock",
+    "tonewood and lumber"
+   ],
+   "narrative": [
+    "Tonewood",
+    "Lumber",
+    "Timber purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northfork Hardwoods",
+     "base": 9000,
+     "memo": "Op. 52 Trinity Chapel — quartersawn white oak casework boards"
+    },
+    {
+     "vendor": "Alpine Spruce Traders",
+     "base": 4200,
+     "memo": "Shop inventory — spruce for wooden flue pipes"
+    },
+    {
+     "vendor": "Glenmoor Veneers",
+     "base": 1800,
+     "memo": "Monthly veneer delivery — walnut and mahogany"
+    }
+   ],
+   "events": [
+    {
+     "key": "warped_lot_replacement",
+     "vendor": "Northfork Hardwoods",
+     "memos": [
+      "Op. 52 Trinity Chapel — warped lot replacement — expedited",
+      "Warped lot replacement — resawing charge"
+     ],
+     "cross_memo": "Warped lot replacement — extra glue-up labor",
+     "plain": [
+      "the warped lot replacement",
+      "warped lot replacement charges",
+      "replacement of the warped lot"
+     ],
+     "oblique": [
+      "re-buying timber that twisted while drying",
+      "the bowed stock swap",
+      "a bad shipment",
+      "making good on twisted planks",
+      "re-sourcing the cupped stock",
+      "the supplier's defective shipment",
+      "rework after the planks moved",
+      "planks that failed inspection",
+      "redoing the case panels after they distorted",
+      "a rushed reorder",
+      "making up for unusable stock",
+      "the twisted plank problem",
+      "a reorder the cabinetmakers requested",
+      "unusable timber",
+      "the distorted plank reorder",
+      "rush-buying sound stock"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "shade_tracery_carving",
+     "vendor": "Castellan Carving Studio",
+     "memos": [
+      "Op. 50 Holy Rood — shade tracery carving — gilding",
+      "Shade tracery carving — design drawings"
+     ],
+     "cross_memo": "Shade tracery carving — installation scaffold",
+     "plain": [
+      "the shade tracery carving",
+      "shade tracery carving work",
+      "carving of the shade tracery"
+     ],
+     "oblique": [
+      "the decorative woodwork above the facade",
+      "ornamental fretwork",
+      "the hand-cut ornament the parish asked for",
+      "gold-leafed decoration",
+      "commissioned sculpture for the case top",
+      "the fretwork commission",
+      "a specialist woodcarver",
+      "ornament for the frontage",
+      "decorative crestings",
+      "the ornament package",
+      "bespoke openwork panels",
+      "sculpted crests the client requested",
+      "fancy woodwork",
+      "outsourced ornamental sculpting",
+      "the gold-leaf ornament",
+      "decoration requested by the parish council"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Leather & Pneumatic Materials",
+   "aliases": [
+    "leather",
+    "leather supplies",
+    "pneumatic materials",
+    "pouch leather",
+    "leather and pneumatics"
+   ],
+   "narrative": [
+    "Leather",
+    "Pneumatic materials",
+    "Pouch leather"
+   ],
+   "recurring": [
+    {
+     "vendor": "Wexford Tannery",
+     "base": 3800,
+     "memo": "Op. 52 Trinity Chapel — zephyr skin for pouches"
+    },
+    {
+     "vendor": "Halcyon Hide & Felt",
+     "base": 2100,
+     "memo": "Monthly felt and bushing cloth order"
+    },
+    {
+     "vendor": "Morrow Adhesives",
+     "base": 950,
+     "memo": "Hot hide glue and adhesive restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "bellows_recovering",
+     "vendor": "Wexford Tannery",
+     "memos": [
+      "Op. 47 St. Aldhelm — bellows recovering — kangaroo hides",
+      "Bellows recovering — gusset cutting"
+     ],
+     "cross_memo": "Bellows recovering — onsite crew lodging",
+     "plain": [
+      "the bellows recovering",
+      "bellows recovering work",
+      "recovering of the bellows"
+     ],
+     "oblique": [
+      "redoing the wind storage",
+      "the wind chest rework",
+      "new leathering on the wind supply",
+      "rebuilding the air reservoirs",
+      "wind restoration for a church client",
+      "replacing cracked wind leather",
+      "the double-rise reservoir rebuild",
+      "fixing the leaking air supply",
+      "wind leaks the tuner flagged",
+      "a restoration the parish requested",
+      "relining the main wind reservoir",
+      "the air supply overhaul",
+      "worn wind leather",
+      "a historic instrument's reservoir job",
+      "stopping the wind loss",
+      "the regulator rebuild"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "moth_infestation",
+     "vendor": "Brightwater Pest Control",
+     "memos": [
+      "Op. 44 Grace Cathedral — moth infestation treatment",
+      "Moth infestation treatment — fumigation tenting"
+     ],
+     "cross_memo": "Moth infestation treatment — damaged action stock disposal",
+     "plain": [
+      "the moth infestation treatment",
+      "moth infestation work",
+      "treatment of the moth infestation"
+     ],
+     "oblique": [
+      "insects in a church instrument",
+      "the bug problem",
+      "larvae eating the wool in the action",
+      "exterminator fees",
+      "clearing out the vermin",
+      "a sanitizing visit at a client church",
+      "bugs found during tuning",
+      "dealing with the insect damage",
+      "an infested instrument",
+      "the vermin callout",
+      "gassing the case",
+      "sealing and gassing the organ case",
+      "bug eradication",
+      "a cleanup the dean asked for",
+      "the insect outbreak",
+      "protecting the wool from larvae"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Voicing & Tuning Contractors",
+   "aliases": [
+    "voicing",
+    "tuning contractors",
+    "voicers",
+    "tuning and voicing",
+    "contract voicing"
+   ],
+   "narrative": [
+    "Voicing",
+    "Tuning contractors",
+    "Contract voicing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ashdown Voicing Associates",
+     "base": 12000,
+     "memo": "Op. 52 Trinity Chapel — flue regulation day rate"
+    },
+    {
+     "vendor": "Kessler Tuning Service",
+     "base": 5500,
+     "memo": "Maintenance contract tuning — route rounds"
+    },
+    {
+     "vendor": "Marlow Reed Works",
+     "base": 3000,
+     "memo": "Reed tongue curving and regulation"
+    }
+   ],
+   "events": [
+    {
+     "key": "dedication_recital_prep",
+     "vendor": "Ashdown Voicing Associates",
+     "memos": [
+      "Op. 50 Holy Rood — dedication recital prep — final finishing",
+      "Dedication recital prep — overtime nights"
+     ],
+     "cross_memo": "Dedication recital prep — hotel for voicers",
+     "plain": [
+      "the dedication recital prep",
+      "dedication recital prep work",
+      "prep for the dedication recital"
+     ],
+     "oblique": [
+      "getting the instrument concert-ready",
+      "last-minute tonal polishing",
+      "readying the organ for the opening concert",
+      "the push before the blessing service",
+      "extra evenings in the church",
+      "late tonal adjustments",
+      "the opening-concert crunch",
+      "work the organist requested before the inauguration",
+      "the inaugural concert",
+      "evening sessions at the church",
+      "polishing the sound for the bishop's visit",
+      "the inauguration push",
+      "a rush to hit the handover",
+      "pre-handover tonal touch-ups",
+      "the consecration deadline",
+      "weekend sessions on the new instrument"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "reverberation_survey",
+     "vendor": "Fenwick Acoustic Consulting",
+     "memos": [
+      "Op. 53 St. Columba — reverberation survey — room measurements",
+      "Reverberation survey — impulse response report"
+     ],
+     "cross_memo": "Reverberation survey — consultant airfare",
+     "plain": [
+      "the reverberation survey",
+      "reverberation survey fees",
+      "the impulse reverberation survey"
+     ],
+     "oblique": [
+      "an acoustics study",
+      "measuring how the building sounds",
+      "the echo analysis",
+      "an outside acoustician",
+      "testing the building's sound decay",
+      "acoustic modeling for the next commission",
+      "the study the architect requested",
+      "sound testing in the nave",
+      "echo measurements",
+      "an acoustic assessment",
+      "planning the scaling around the building's acoustics",
+      "the acoustician's fee",
+      "a pre-design sound study",
+      "checking the hall's resonance",
+      "the nave acoustics work",
+      "specialist sound analysis"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Blower & Wind System Parts",
+   "aliases": [
+    "blowers",
+    "wind system parts",
+    "blower parts",
+    "wind parts",
+    "blower and wind"
+   ],
+   "narrative": [
+    "Blowers",
+    "Wind system parts",
+    "Blower parts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tormead Fan Engineering",
+     "base": 4500,
+     "memo": "Op. 52 Trinity Chapel — centrifugal blower unit progress billing"
+    },
+    {
+     "vendor": "Ridgeway Motor & Bearing",
+     "base": 1600,
+     "memo": "Shop spares — bearings and belts"
+    },
+    {
+     "vendor": "Selby Ductwork",
+     "base": 2200,
+     "memo": "Galvanized wind trunk sections"
+    }
+   ],
+   "events": [
+    {
+     "key": "rotor_seizure_rebuild",
+     "vendor": "Tormead Fan Engineering",
+     "memos": [
+      "Op. 41 St. Bride — rotor seizure rebuild — rewind",
+      "Rotor seizure rebuild — dynamic balancing"
+     ],
+     "cross_memo": "Rotor seizure rebuild — temporary rental blower",
+     "plain": [
+      "the rotor seizure rebuild",
+      "rotor seizure rebuild charges",
+      "rebuild after the rotor seizure"
+     ],
+     "oblique": [
+      "the seized impeller",
+      "fixing the jammed air pump",
+      "a failure at a church client",
+      "getting the organ breathing again",
+      "the impeller repair",
+      "an emergency callout after the air supply died",
+      "repairing burnt-out coils",
+      "the dead air pump",
+      "restoring air to a mute instrument",
+      "the stuck impeller job",
+      "a repair the sexton called in",
+      "breakdown repairs",
+      "keeping the parish's services going",
+      "the burnt coils",
+      "repairs to the air pump's spinning assembly",
+      "an emergency fix"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "silencing_cabinet",
+     "vendor": "Quietline Enclosures",
+     "memos": [
+      "Op. 51 Westmere Abbey — silencing cabinet — acoustic panels",
+      "Silencing cabinet — vibration isolation mounts"
+     ],
+     "cross_memo": "Silencing cabinet — electrician conduit rework",
+     "plain": [
+      "the silencing cabinet",
+      "silencing cabinet work",
+      "the new silencing cabinet"
+     ],
+     "oblique": [
+      "quieting the air pump",
+      "the noise complaint fix",
+      "boxing in the noisy machinery",
+      "noise reduction the vestry requested",
+      "a sound-deadening housing",
+      "hush measures",
+      "stopping the hum in the chancel",
+      "dampening the machine room noise",
+      "the noise remediation",
+      "an insulated housing",
+      "muffling the hum",
+      "a quieter machine room",
+      "the hum complaint",
+      "keeping the hum out of the recordings",
+      "noise control",
+      "a housing for the air pump"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Console Electronics & Relays",
+   "aliases": [
+    "console electronics",
+    "relays",
+    "combination action",
+    "console parts",
+    "electronics and relays"
+   ],
+   "narrative": [
+    "Console electronics",
+    "Relays",
+    "Combination action"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lyndhurst Organ Controls",
+     "base": 7500,
+     "memo": "Op. 52 Trinity Chapel — solid-state switching boards"
+    },
+    {
+     "vendor": "Pemberton Drawknob Co.",
+     "base": 2600,
+     "memo": "Engraved stop knobs and tablets"
+    },
+    {
+     "vendor": "Carrick Wire & Cable",
+     "base": 1100,
+     "memo": "Multi-core cable and connectors"
+    }
+   ],
+   "events": [
+    {
+     "key": "lightning_strike",
+     "vendor": "Lyndhurst Organ Controls",
+     "memos": [
+      "Op. 38 Saint Mungo — lightning strike — capture system replacement",
+      "Lightning strike — surge board swap"
+     ],
+     "cross_memo": "Lightning strike — insurance adjuster report",
+     "plain": [
+      "the lightning strike",
+      "lightning strike repairs",
+      "the lightning strike at the church"
+     ],
+     "oblique": [
+      "storm damage",
+      "the storm-fried electronics",
+      "electrical damage from the thunderstorm",
+      "a power spike at a church client",
+      "replacing fried circuitry",
+      "the thunderstorm repairs",
+      "restoring the memory levels after the storm",
+      "a weather-related claim",
+      "fried piston memory",
+      "storm repairs the rector reported",
+      "burnt-out logic cards",
+      "an electrical spike",
+      "the bolt from the storm",
+      "getting the pistons working after the storm",
+      "weather damage to the console",
+      "the storm claim"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "recording_interface_retrofit",
+     "vendor": "Hartwell MIDI Integration",
+     "memos": [
+      "Op. 46 Kingsgate Minster — recording interface retrofit",
+      "Recording interface retrofit — sequencer firmware"
+     ],
+     "cross_memo": "Recording interface retrofit — onsite commissioning",
+     "plain": [
+      "the recording interface retrofit",
+      "recording interface retrofit work",
+      "the retrofit of the recording interface"
+     ],
+     "oblique": [
+      "digital playback capability",
+      "adding a computer hookup",
+      "letting the church archive performances",
+      "the playback upgrade",
+      "a digital link the music director wanted",
+      "streaming readiness",
+      "computer control for the instrument",
+      "the livestream add-on",
+      "making the console talk to a laptop",
+      "playback hardware",
+      "a digital upgrade at the cathedral",
+      "software for automated playback",
+      "the livestream project",
+      "adding self-playing capability",
+      "a laptop hookup",
+      "the playback feature the choirmaster requested"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Workshop Rent",
+   "aliases": [
+    "rent",
+    "workshop rent",
+    "erecting room lease",
+    "premises",
+    "occupancy"
+   ],
+   "narrative": [
+    "Rent",
+    "Workshop rent",
+    "Occupancy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Millbrook Properties LLC",
+     "base": 18000,
+     "memo": "Monthly lease — Unit 4 erecting hall"
+    },
+    {
+     "vendor": "Dunmore Estates",
+     "base": 3200,
+     "memo": "Pipe shop annex lease"
+    },
+    {
+     "vendor": "Corrigan Facility Services",
+     "base": 1400,
+     "memo": "Common area maintenance charge"
+    }
+   ],
+   "events": [
+    {
+     "key": "skylight_reglazing",
+     "vendor": "Millbrook Properties LLC",
+     "memos": [
+      "Skylight reglazing — tenant share",
+      "Skylight reglazing — water damage cleanup"
+     ],
+     "cross_memo": "Skylight reglazing — ruined tonewood write-off",
+     "plain": [
+      "the skylight reglazing",
+      "skylight reglazing costs",
+      "reglazing of the skylight"
+     ],
+     "oblique": [
+      "fixing the roof glass",
+      "replacing cracked roof glass over the assembly floor",
+      "the landlord's roof repair passthrough",
+      "rooflight repairs",
+      "a leaking roof",
+      "our portion of the roof work",
+      "drying out after the roof leaked",
+      "new glass in the roof lights",
+      "the roof repair bill",
+      "leaks over the voicing room",
+      "repairs the landlord billed back",
+      "the roof glass job",
+      "patching the roof after the storm",
+      "rain coming through the roof",
+      "roof work",
+      "the rooflight fix"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "overflow_container",
+     "vendor": "Stanbridge Storage Yard",
+     "memos": [
+      "Op. 52 Trinity Chapel — overflow container storage — staging",
+      "Overflow container — mobilization"
+     ],
+     "cross_memo": "Overflow container — forklift hire",
+     "plain": [
+      "the overflow container",
+      "overflow container charges",
+      "renting the overflow container"
+     ],
+     "oblique": [
+      "extra space for a finished instrument",
+      "parking a completed organ before delivery",
+      "temporary warehousing",
+      "holding space while the church finished renovations",
+      "off-site space",
+      "somewhere to keep crated parts",
+      "the warehousing stopgap",
+      "space for parts awaiting shipment",
+      "renting room for a delayed install",
+      "the delayed church handover",
+      "temporary outdoor space",
+      "keeping finished parts out of the assembly floor",
+      "a stopgap while the client's building was unready",
+      "off-site holding",
+      "spillover space",
+      "boxes waiting for installation"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Freight & Installation Rigging",
+   "aliases": [
+    "freight",
+    "rigging",
+    "installation freight",
+    "organ moving",
+    "shipping and rigging"
+   ],
+   "narrative": [
+    "Freight",
+    "Rigging",
+    "Installation freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brennan Specialty Haulage",
+     "base": 8500,
+     "memo": "Op. 52 Trinity Chapel — air-ride van, case sections"
+    },
+    {
+     "vendor": "Kittredge Crane & Hoist",
+     "base": 3500,
+     "memo": "Lift equipment hire — loft hoisting"
+    },
+    {
+     "vendor": "Halloran Crating",
+     "base": 1900,
+     "memo": "Custom pipe crates and padding"
+    }
+   ],
+   "events": [
+    {
+     "key": "transatlantic_consignment",
+     "vendor": "Brennan Specialty Haulage",
+     "memos": [
+      "Op. 48 Ste. Genevieve Montreal — transatlantic consignment — ocean leg",
+      "Transatlantic consignment — customs brokerage"
+     ],
+     "cross_memo": "Transatlantic consignment — export packing timber",
+     "plain": [
+      "the transatlantic consignment",
+      "transatlantic consignment charges",
+      "the transatlantic consignment costs"
+     ],
+     "oblique": [
+      "shipping an instrument overseas",
+      "sending the Quebec organ by sea",
+      "the overseas delivery",
+      "getting the Canadian contract across the water",
+      "international shipping",
+      "the sea crossing",
+      "moving a finished organ to Canada",
+      "border paperwork and port fees",
+      "the Quebec delivery",
+      "an overseas client's shipment",
+      "the long-haul overseas move",
+      "freighting the Quebec order",
+      "port charges",
+      "a container voyage",
+      "delivering abroad",
+      "the Canadian shipment"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "tower_scaffold",
+     "vendor": "Pinnacle Scaffold Systems",
+     "memos": [
+      "Op. 45 St. Kentigern — tower scaffold erection",
+      "Tower scaffold — inspection and dismantle"
+     ],
+     "cross_memo": "Tower scaffold — safety netting",
+     "plain": [
+      "the tower scaffold",
+      "tower scaffold charges",
+      "erection of the tower scaffold"
+     ],
+     "oblique": [
+      "access for the gallery install",
+      "staging to reach the high gallery",
+      "working platforms in the steeple",
+      "temporary access structures",
+      "getting the crew up to the west gallery",
+      "a longer stay for the access staging",
+      "high-level access",
+      "the gallery platforms",
+      "staging the cathedral required",
+      "access gear for the installation",
+      "climbing structures for the install",
+      "temporary platforms",
+      "working at height",
+      "staging rental",
+      "reaching the upper gallery",
+      "access equipment the site manager demanded"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

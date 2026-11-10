@@ -549,6 +549,28 @@ vocabulary its regression set has never seen, so "untested" should not be read a
 Lessons already stored are not re-checked when loaded. And the simulated reviewer still reads
 the label; a person can confirm a wrong explanation.
 
+**An independent test, registered in advance** (`training/certificate.py`,
+`training/industries-audit.txt`, `proven/examples/worlds/audit/`). To answer the caveat above,
+a third suite was registered before it existed: 16 industries used nowhere else and the bound
+below were committed (`a5b1e2f`) with the checker and lesson rules frozen at `468605b`. Opus
+then wrote the worlds (13 validated, 3 refused by the generator's rules), Sonnet was asked
+about the taught halves, and the suite was scored once. Nothing was changed afterwards.
+
+| Proposer, phrasing | Decided | Control FAIL | Unsafe PASS | Unsafe-PASS rate, 95% upper bound (claims) | (worlds) |
+|---|---:|---:|---:|---:|---:|
+| oracle, heldout | 86.7% | 0 of 1,193 | 0 of 429 | 0.70% | 20.6% |
+| Sonnet, heldout | 78.5% | 0 of 1,193 | 0 of 429 | 0.70% | 20.6% |
+| Sonnet, paraphrase | 59.3% | 0 of 1,193 | 0 of 429 | 0.70% | 20.6% |
+
+Both criteria are also 0 at every teaching step (0, 10, 25 and 50 closes). The bound is the
+exact one-sided Clopper-Pearson limit: with 0 breaches in n trials, 1 - 0.05^(1/n). Counting
+claims as trials gives 0.70% for unsafe PASS and 0.25% for control FAIL, and is optimistic
+because claims in one world share its books. Counting a world as one trial needs no such
+assumption and gives 20.6%, which is wide because 13 worlds is few. The honest reading: on
+13 companies the rules were not written from, no wrong approval and no wrong rejection; the
+claim-level rate is very likely under 1%; these are still synthetic books from one generator.
+Cost: $5.04 to write the worlds and $9.44 for Sonnet's proposals.
+
 ## 10. An idea that was tried and rejected: recalling confirmed words
 
 A cause is described many ways and a lesson binds one of them. `training/recall_experiment.py`
