@@ -1,7 +1,7 @@
 """Ask a hosted model to write world files (see `proven/worlds.py`), and keep the valid ones.
 
     python training/author_worlds.py --role train --model claude-sonnet-5-5 \
-        --industries training/industries-train.txt --out training/worlds/train --usd-budget 8
+        --industries training/industries-train-a.txt --out training/worlds/train --usd-budget 8
 
 One request per industry. The reply is parsed, run through `proven.worlds.build` (which
 drops phrases and accounts that break the generator's rules, and refuses thin worlds) and

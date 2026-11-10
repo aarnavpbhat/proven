@@ -224,8 +224,10 @@ def load(path: str | Path, role: str = "measure") -> World:
 
 
 def suite(name: str = "unseen", root: Path | None = None) -> list[World]:
-    """The measured worlds shipped under `examples/worlds/<name>/`, in file-name order."""
-    folder = (root or HERE) / name
+    """The measured worlds shipped under `examples/worlds/<name>/`, in file-name order.
+    `PROVEN_WORLDS_DIR` points it at another directory of suites (the dev worlds, say)."""
+    import os
+    folder = (root or Path(os.environ.get("PROVEN_WORLDS_DIR") or HERE)) / name
     files = sorted(folder.glob("*.json"))
     if not files:
         raise FileNotFoundError(f"no world files in {folder}")
