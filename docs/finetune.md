@@ -252,8 +252,15 @@ needs no teaching run and is answered from the proposal cache.
 | Qwen2.5-3B, multi-world, gold targets | unseen, heldout | 1,062 | 33.1% | 230 | 473 | 8 |
 | Claude Sonnet 5.5 | unseen, paraphrase | 1,062 | 76.5% | 115 | 135 | 0 |
 | Qwen2.5-3B, multi-world, gold targets | unseen, paraphrase | 1,062 | 31.3% | 237 | 486 | 7 |
+| Qwen2.5-3B, single-world | unseen, heldout | 1,062 | 10.2% | 130 | 734 | 90 |
+| Qwen2.5-3B, multi-world, rebuilt targets | unseen, heldout | 1,062 | 45.3% | 215 | 362 | 4 |
+| Qwen2.5-3B, multi-world, rebuilt targets | unseen, paraphrase | 1,062 | 42.4% | 232 | 378 | 2 |
+| Claude Sonnet 5.5 | sealed, heldout | 864 | 81.8% | 82 | 75 | 0 |
+| Qwen2.5-3B, multi-world, rebuilt targets | sealed, heldout | 864 | 46.1% | 184 | 280 | 2 |
 
-Teaching turns "cause found" into lessons almost one for one, so this table is the whole gap.
+Teaching turns "cause found" into lessons almost one for one, so this table is the whole gap. (The
+rebuilt-target rows were added after that model was scored; the diagnosis was made from the
+first four.)
 
 **The cause: targets no request predicts.** The generator's gold `search_terms` are the words
 a cause really left in the books, most frequent first, and they include the vendor's name
