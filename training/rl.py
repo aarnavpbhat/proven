@@ -136,7 +136,9 @@ def main(argv: list[str] | None = None) -> int:
     model.freeze()
     load_adapters(model, str(args.init))
     eos = tokenizer.eos_token_ids
-    end_token = next(iter(eos)) if not isinstance(eos, int) else eos
+    eos = {eos} if isinstance(eos, int) else set(eos)
+    turn_end = tokenizer.convert_tokens_to_ids("<|im_end|>")
+    end_token = turn_end if turn_end in eos else next(iter(eos))
 
     train_seeds = seeds("train", FIRST_RL_SEED_INDEX + 20000)[FIRST_RL_SEED_INDEX:]
     valid = [episode(s, args.phrasing) for s in train_seeds[:args.valid]]
@@ -178,7 +180,9 @@ def main(argv: list[str] | None = None) -> int:
                 continue
             k = len(rs)
             adv = [r - (sum(rs) - r) / (k - 1) for r in rs]
-            rows = [ids + list(t) + [end_token] for t in tokens]
+            # a reply cut off at the token limit did not choose to stop: no end token for it
+            rows = [ids + list(t) + ([end_token] if len(t) < args.max_tokens else [])
+                    for t in tokens]
             width = max(len(r) for r in rows)
             batch = mx.array([r + [end_token] * (width - len(r)) for r in rows])
             starts = mx.array([len(ids)] * k)
