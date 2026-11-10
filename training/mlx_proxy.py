@@ -10,6 +10,9 @@ started with) and forwards everything else unchanged: the same messages, `temper
 and `response_format`, which `mlx_lm.server` ignores (it has no constrained decoding, so the
 reply is validated only by openweight's own parser, as for any server).
 
+With `--name`, `GET /v1/models` answers with that one id, so the console lists the
+proposer under the name its cache entries use.
+
 It also appends one line per request to `--log` (wall time, prompt and completion tokens),
 which is where the latency and tokens/sec figures in docs/finetune.md come from.
 
@@ -26,7 +29,7 @@ import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 
-def make_handler(upstream: str, log_path: str | None, lock: threading.Lock):
+def make_handler(upstream: str, log_path: str | None, lock: threading.Lock, name: str | None = None):
     opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
 
     class Handler(BaseHTTPRequestHandler):
@@ -46,6 +49,15 @@ def make_handler(upstream: str, log_path: str | None, lock: threading.Lock):
             return status, data
 
         def do_GET(self) -> None:  # noqa: N802
+            if name and self.path.rstrip("/").endswith("/models"):
+                data = json.dumps({"object": "list", "data": [
+                    {"id": name, "object": "model", "owned_by": "local"}]}).encode()
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json")
+                self.send_header("Content-Length", str(len(data)))
+                self.end_headers()
+                self.wfile.write(data)
+                return
             self._forward("GET", None)
 
         def do_POST(self) -> None:  # noqa: N802
@@ -87,9 +99,12 @@ def main() -> None:
     parser.add_argument("--port", type=int, default=8090)
     parser.add_argument("--upstream", default="http://127.0.0.1:8190")
     parser.add_argument("--log", default=None)
+    parser.add_argument("--name", default=None,
+                        help="the one model id GET /v1/models reports (what the console lists)")
     args = parser.parse_args()
     server = ThreadingHTTPServer(("127.0.0.1", args.port),
-                                 make_handler(args.upstream.rstrip("/"), args.log, threading.Lock()))
+                                 make_handler(args.upstream.rstrip("/"), args.log, threading.Lock(),
+                                              args.name))
     print(f"proxy on http://127.0.0.1:{args.port}/v1 -> {args.upstream}", flush=True)
     server.serve_forever()
 
