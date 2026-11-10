@@ -1,0 +1,815 @@
+{
+ "slug": "helicopter-air-tour-operator",
+ "industry": "helicopter air tour operator",
+ "entities": [
+  "Kaimana Heli Tours",
+  "Ridgeline Rotorcraft Excursions",
+  "Blue Crater Helicopters",
+  "Seacliff Air Safaris",
+  "Volcanic Vista Aviation"
+ ],
+ "accounts": [
+  {
+   "name": "Aircraft Maintenance",
+   "aliases": [
+    "maintenance",
+    "aircraft maintenance",
+    "mx costs",
+    "maintenance spend",
+    "fleet upkeep"
+   ],
+   "narrative": [
+    "Maintenance",
+    "Mx costs",
+    "Fleet upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pacific Rotor Services",
+     "base": 18000,
+     "memo": "Scheduled 100-hour inspections"
+    },
+    {
+     "vendor": "Skyline Aero Parts",
+     "base": 6500,
+     "memo": "Consumables and filters"
+    },
+    {
+     "vendor": "Turbine Care Co",
+     "base": 9000,
+     "memo": "Engine trend monitoring contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "tail_gearbox",
+     "vendor": "Pacific Rotor Services",
+     "memos": [
+      "Tail gearbox replacement — unit",
+      "Tail gearbox replacement — labor"
+     ],
+     "cross_memo": "Tail gearbox replacement — ferry flight fuel",
+     "plain": [
+      "the tail gearbox replacement",
+      "a tail gearbox swap",
+      "tail gearbox work"
+     ],
+     "oblique": [
+      "the drivetrain overhaul on one helicopter",
+      "a back-end transmission swap",
+      "the anti-torque drive fix",
+      "grounding one ship until the new component arrived",
+      "the chip light finding",
+      "drivetrain repairs",
+      "putting a grounded aircraft back on the line",
+      "the metal-in-oil discovery",
+      "an unplanned component change",
+      "the mechanic's emergency call on one helicopter",
+      "the anti-torque system overhaul",
+      "fixing the vibration the pilots reported",
+      "an expensive drivetrain component",
+      "the grounding of our busiest ship",
+      "the chip detector problem",
+      "the AOG repair"
+     ],
+     "low": 22000,
+     "high": 45000
+    },
+    {
+     "key": "main_blade_refinish",
+     "vendor": "Kona Composite Works",
+     "memos": [
+      "Main blade refinish — erosion strips",
+      "Main blade refinish — balancing"
+     ],
+     "cross_memo": "Main blade refinish — loaner set freight",
+     "plain": [
+      "the main blade refinish",
+      "main blade refinishing",
+      "a main blade refinish job"
+     ],
+     "oblique": [
+      "the leading-edge restoration",
+      "sanding and repainting the airfoils",
+      "fixing sand damage on the airfoils",
+      "restoring worn leading edges",
+      "airfoil restoration",
+      "the sandblasting damage from beach landings",
+      "the leading-edge wear repair",
+      "the coastal grit damage",
+      "restoring the lift surfaces",
+      "an outside shop's airfoil job",
+      "the salt-air wear on the airfoils",
+      "the leading-edge tape and paint",
+      "the off-island airfoil shop",
+      "abrasion damage from dusty landing zones",
+      "the airfoil surface rework",
+      "fixing pitted leading edges"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Aviation Fuel",
+   "aliases": [
+    "fuel",
+    "jet-a",
+    "fuel burn",
+    "fuel spend",
+    "jet fuel"
+   ],
+   "narrative": [
+    "Fuel",
+    "Fuel burn",
+    "Jet fuel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harbor Aviation Fuels",
+     "base": 24000,
+     "memo": "Jet-A uplift at home base"
+    },
+    {
+     "vendor": "Island Petroleum Supply",
+     "base": 5500,
+     "memo": "Into-plane fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "price_spike",
+     "vendor": "Harbor Aviation Fuels",
+     "memos": [
+      "Price spike surcharge — tanker delivery",
+      "Price spike surcharge — true-up"
+     ],
+     "cross_memo": "Price spike surcharge — ground vehicle diesel",
+     "plain": [
+      "the price spike surcharge",
+      "a price spike",
+      "the price spike surcharge billing"
+     ],
+     "oblique": [
+      "our main vendor passing along higher costs",
+      "a jump in per-gallon cost",
+      "the refinery outage pass-through",
+      "costlier kerosene",
+      "the rate hike from our main vendor",
+      "higher contract rates",
+      "the energy market jump",
+      "per-gallon increases",
+      "an emergency rate adjustment",
+      "crude oil climbing",
+      "the vendor's added charge for scarcity",
+      "the shortage premium",
+      "a shipping disruption passed on to us",
+      "the extra cost per gallon",
+      "rising kerosene costs",
+      "the barge delay premium"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "remote_cache",
+     "vendor": "Volcano Rim Refuelers",
+     "memos": [
+      "Remote cache drums — positioning",
+      "Remote cache drums — hauling"
+     ],
+     "cross_memo": "Remote cache drums — hazmat permit",
+     "plain": [
+      "the remote cache drums",
+      "stocking the remote cache",
+      "remote cache drums positioning"
+     ],
+     "oblique": [
+      "prepositioned barrels at the summit pad",
+      "staging stock for the crater tours",
+      "a field depot for the new tour",
+      "flying barrels out to the backcountry",
+      "the backcountry depot setup",
+      "a forward refill point",
+      "stocking the outlying landing site",
+      "the summit staging setup",
+      "barrels flown out ahead of the season",
+      "the new route's support depot",
+      "a satellite tank site",
+      "keeping barrels at the far pad",
+      "outlying pad logistics",
+      "forward stock for long routes",
+      "dangerous goods paperwork and trucking",
+      "the far-site barrel program"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Hull & Liability Insurance",
+   "aliases": [
+    "insurance",
+    "hull insurance",
+    "liability cover",
+    "premiums",
+    "insurance cost"
+   ],
+   "narrative": [
+    "Insurance",
+    "Premiums",
+    "Hull insurance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Aviation Underwriters",
+     "base": 14000,
+     "memo": "Monthly hull and liability premium"
+    },
+    {
+     "vendor": "Coastline Risk Brokers",
+     "base": 1800,
+     "memo": "Broker service fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "fleet_endorsement",
+     "vendor": "Meridian Aviation Underwriters",
+     "memos": [
+      "Fleet endorsement — added airframe",
+      "Fleet endorsement — pro rata"
+     ],
+     "cross_memo": "Fleet endorsement — registration filing",
+     "plain": [
+      "the fleet endorsement",
+      "a fleet endorsement charge",
+      "the fleet endorsement billing"
+     ],
+     "oblique": [
+      "bringing the new helicopter onto the policy",
+      "covering the newly acquired ship",
+      "the policy change for our sixth aircraft",
+      "a mid-term coverage increase",
+      "insuring the new arrival",
+      "the extra tail number on the policy",
+      "putting the leased helicopter on cover",
+      "a backdated coverage charge",
+      "the higher insured value",
+      "coverage for the expansion aircraft",
+      "the policy add-on",
+      "insuring the extra ship",
+      "the growth of the insured roster",
+      "coverage catch-up for the new machine",
+      "the mid-year policy change",
+      "the cost of insuring another helicopter"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "hard_landing_deductible",
+     "vendor": "Summit Claims Adjusters",
+     "memos": [
+      "Hard landing deductible — skid damage",
+      "Hard landing deductible — adjuster fee"
+     ],
+     "cross_memo": "Hard landing deductible — towing",
+     "plain": [
+      "the hard landing deductible",
+      "a hard landing deductible",
+      "paying the hard landing deductible"
+     ],
+     "oblique": [
+      "our share of the incident costs",
+      "the uninsured portion of the mishap",
+      "the gusty-day mishap",
+      "what the insurer didn't cover",
+      "the incident at the beach pad",
+      "our portion of the accident bill",
+      "the self-retained loss",
+      "the bumpy touchdown incident",
+      "the mishap retention",
+      "the out-of-pocket hit after the incident",
+      "settling our share of the mishap",
+      "the uncovered accident costs",
+      "the rough arrival at the cliff pad",
+      "the incident excess",
+      "the loss we keep on our books",
+      "the training-ship mishap"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Pilot Training & Checkrides",
+   "aliases": [
+    "training",
+    "pilot training",
+    "checkrides",
+    "recurrent training",
+    "training spend"
+   ],
+   "narrative": [
+    "Training",
+    "Pilot training",
+    "Recurrent training"
+   ],
+   "recurring": [
+    {
+     "vendor": "Windward Flight Academy",
+     "base": 7000,
+     "memo": "Recurrent ground school"
+    },
+    {
+     "vendor": "Apex Simulator Center",
+     "base": 9500,
+     "memo": "Simulator time block"
+    },
+    {
+     "vendor": "Kalani Check Airmen",
+     "base": 2500,
+     "memo": "Part 135 checkride fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "night_vision",
+     "vendor": "Apex Simulator Center",
+     "memos": [
+      "Night vision course — instructor",
+      "Night vision course — goggles"
+     ],
+     "cross_memo": "Night vision course — hotel lodging",
+     "plain": [
+      "the night vision course",
+      "night vision qualification",
+      "the night vision instruction"
+     ],
+     "oblique": [
+      "after-dark qualification",
+      "getting pilots NVG-qualified",
+      "the NVG upgrade for the evening product",
+      "preparing for twilight tours",
+      "certifying captains to fly after sundown",
+      "the evening tour rollout",
+      "the low-light rating",
+      "NVG certification",
+      "qualifying the line for dusk departures",
+      "the after-sundown capability push",
+      "the low-light syllabus",
+      "dark-hours proficiency",
+      "the regulator's NVG requirement",
+      "the move into evening sightseeing",
+      "an NVG endorsement for every captain",
+      "the darkness ops upgrade"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "upset_recovery",
+     "vendor": "Caldera Upset Recovery LLC",
+     "memos": [
+      "Upset recovery program — new hires",
+      "Upset recovery program — aircraft rental"
+     ],
+     "cross_memo": "Upset recovery program — pilot travel",
+     "plain": [
+      "the upset recovery program",
+      "upset recovery instruction",
+      "an upset recovery program"
+     ],
+     "oblique": [
+      "teaching pilots to handle unusual attitudes",
+      "the loss-of-control syllabus",
+      "spatial disorientation drills",
+      "the safety refresher after the near miss",
+      "the LOC-I curriculum",
+      "the insurer-requested aerobatic refresher",
+      "unusual attitude drills",
+      "the post-incident safety push",
+      "extra stick time in aerobatic planes",
+      "the onboarding safety module",
+      "the insurer's control-loss requirement",
+      "the disorientation workshop",
+      "emergency handling refreshers",
+      "the aerobatic coaching",
+      "attitude-loss exercises",
+      "the safety standdown follow-up"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Heliport & Landing Fees",
+   "aliases": [
+    "landing fees",
+    "heliport fees",
+    "pad fees",
+    "airport charges",
+    "landing charges"
+   ],
+   "narrative": [
+    "Landing fees",
+    "Pad fees",
+    "Airport charges"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kaimana Airport Authority",
+     "base": 6000,
+     "memo": "Monthly landing and parking"
+    },
+    {
+     "vendor": "Makai Point Heliport",
+     "base": 3500,
+     "memo": "Pad use fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "noise_abatement",
+     "vendor": "Kaimana Airport Authority",
+     "memos": [
+      "Noise abatement assessment — quarterly",
+      "Noise abatement assessment — penalty"
+     ],
+     "cross_memo": "Noise abatement assessment — consultant study",
+     "plain": [
+      "the noise abatement assessment",
+      "a noise abatement penalty",
+      "noise abatement charges"
+     ],
+     "oblique": [
+      "the community complaints about rotor sound",
+      "the neighborhood sound complaints",
+      "the residents' petition over overflights",
+      "the decibel levels over the subdivision",
+      "the field's new levy on loud operators",
+      "our share of the quiet-skies program",
+      "the overflight complaint program",
+      "residents pushing back on helicopter racket",
+      "the sound monitoring charge",
+      "a fine for flying too low over homes",
+      "the quiet-hours violation",
+      "loud-aircraft levies",
+      "the town's crackdown on overflights",
+      "the decibel exceedance",
+      "the curfew infraction",
+      "sound mitigation levies"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "festival_site",
+     "vendor": "Bayfront Events Co",
+     "memos": [
+      "Festival site permit — temporary helipad",
+      "Festival site permit — fire watch"
+     ],
+     "cross_memo": "Festival site permit — staff overtime",
+     "plain": [
+      "the festival site permit",
+      "festival site costs",
+      "the festival site permit charges"
+     ],
+     "oblique": [
+      "the county fair rides",
+      "the summer celebration operation",
+      "flying sightseeing hops at the fair",
+      "the one-weekend pop-up base",
+      "setting up shop at the waterfront celebration",
+      "the fairgrounds pop-up",
+      "the holiday carnival hops",
+      "the short-term launch spot at the fair",
+      "the county's paperwork for the pop-up",
+      "safety crews at the carnival",
+      "the waterfront celebration",
+      "a pop-up operation for the regatta",
+      "the fairgrounds operation",
+      "the regatta weekend",
+      "the carnival activation",
+      "a weekend of joyrides at the fair"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Passenger Amenities",
+   "aliases": [
+    "amenities",
+    "guest amenities",
+    "passenger supplies",
+    "cabin supplies",
+    "guest costs"
+   ],
+   "narrative": [
+    "Amenities",
+    "Guest amenities",
+    "Cabin supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Trade Wind Provisions",
+     "base": 2200,
+     "memo": "Bottled water and snacks"
+    },
+    {
+     "vendor": "Clearview Headset Co",
+     "base": 1500,
+     "memo": "Headset ear cushions and covers"
+    },
+    {
+     "vendor": "Islander Print Shop",
+     "base": 900,
+     "memo": "Boarding photo prints"
+    }
+   ],
+   "events": [
+    {
+     "key": "narration_system",
+     "vendor": "Clearview Headset Co",
+     "memos": [
+      "Narration system upgrade — receivers",
+      "Narration system upgrade — install"
+     ],
+     "cross_memo": "Narration system upgrade — avionics shop wiring",
+     "plain": [
+      "the narration system upgrade",
+      "a new narration system",
+      "narration system receivers"
+     ],
+     "oblique": [
+      "the multilingual commentary in the cabins",
+      "recorded tour commentary",
+      "piped-in guided commentary",
+      "the new audio guide for guests",
+      "multi-language audio tours",
+      "the in-cabin storytelling feature",
+      "the audio tour rollout",
+      "putting a recorded guide in every ship",
+      "the Japanese and Korean commentary option",
+      "the cabin audio refresh",
+      "better in-flight sound for guests",
+      "the recorded pilot talk track",
+      "the onboard audio guide",
+      "multilingual guest audio",
+      "the commentary hardware",
+      "replacing the old intercom audio"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "souvenir_video",
+     "vendor": "Lava Glow Media",
+     "memos": [
+      "Souvenir video package — editing",
+      "Souvenir video package — cameras"
+     ],
+     "cross_memo": "Souvenir video package — website hosting",
+     "plain": [
+      "the souvenir video package",
+      "souvenir video costs",
+      "launching the souvenir video package"
+     ],
+     "oblique": [
+      "the keepsake footage offering",
+      "selling guests a recording of their flight",
+      "the onboard filming program",
+      "flight keepsake clips",
+      "the memento upsell",
+      "giving guests a highlight reel",
+      "the cockpit-mounted filming kit",
+      "the take-home footage product",
+      "the highlight reel launch",
+      "guest flight films",
+      "the new merchandise line of flight clips",
+      "the memento footage",
+      "filming every tour",
+      "the onboard footage upsell",
+      "the digital keepsake",
+      "the shareable flight movie"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Marketing & Booking Commissions",
+   "aliases": [
+    "marketing",
+    "commissions",
+    "booking commissions",
+    "ad spend",
+    "promotion costs"
+   ],
+   "narrative": [
+    "Marketing",
+    "Commissions",
+    "Ad spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Wavecrest Travel Agents",
+     "base": 8000,
+     "memo": "Third-party booking commissions"
+    },
+    {
+     "vendor": "Pinnacle Search Ads",
+     "base": 4500,
+     "memo": "Pay-per-click campaigns"
+    },
+    {
+     "vendor": "Cruise Port Kiosk Partners",
+     "base": 3000,
+     "memo": "Kiosk desk commissions"
+    }
+   ],
+   "events": [
+    {
+     "key": "familiarization_trip",
+     "vendor": "Wavecrest Travel Agents",
+     "memos": [
+      "Familiarization trip — agent flights",
+      "Familiarization trip — luncheon"
+     ],
+     "cross_memo": "Familiarization trip — fuel for comp flights",
+     "plain": [
+      "the familiarization trip",
+      "a familiarization trip",
+      "the familiarization trip luncheon"
+     ],
+     "oblique": [
+      "hosting resellers on free tours",
+      "the fam tour for the resellers",
+      "wining and dining the concierges",
+      "the hotel concierge appreciation outing",
+      "showing resellers the product firsthand",
+      "the reseller education outing",
+      "free seats for concierges",
+      "the trade hospitality program",
+      "comping seats for hotel concierges",
+      "the partner appreciation outing",
+      "the concierge outreach",
+      "reseller goodwill spending",
+      "the trade sales push",
+      "entertaining hotel concierges",
+      "the wholesaler showcase",
+      "the industry hospitality afternoon"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "brand_film",
+     "vendor": "Silversword Studios",
+     "memos": [
+      "Brand film shoot — crew day",
+      "Brand film shoot — aerial drone"
+     ],
+     "cross_memo": "Brand film shoot — helicopter time",
+     "plain": [
+      "the brand film shoot",
+      "a brand film",
+      "the brand film shoot crew"
+     ],
+     "oblique": [
+      "the new promotional video",
+      "the cinematic ad production",
+      "a commercial for the website relaunch",
+      "the sizzle reel",
+      "producing a TV spot",
+      "the hero video for the homepage",
+      "the cinematography contract",
+      "new footage for social media",
+      "the creative agency's production",
+      "the video ad production",
+      "the rebrand launch content",
+      "the promo video",
+      "filming the commercial",
+      "the social media content production",
+      "the marquee advertisement",
+      "the storytelling video"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Software Subscriptions",
+   "aliases": [
+    "software",
+    "saas",
+    "subscriptions",
+    "software costs",
+    "tech stack"
+   ],
+   "narrative": [
+    "Software",
+    "Subscriptions",
+    "Software costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "FlightDeck Reservations",
+     "base": 3200,
+     "memo": "Booking platform license"
+    },
+    {
+     "vendor": "RotorLog Systems",
+     "base": 1400,
+     "memo": "Maintenance tracking app"
+    },
+    {
+     "vendor": "Cloudbank Office Suite",
+     "base": 900,
+     "memo": "Email and office seats"
+    }
+   ],
+   "events": [
+    {
+     "key": "dynamic_pricing",
+     "vendor": "FlightDeck Reservations",
+     "memos": [
+      "Dynamic pricing module — setup",
+      "Dynamic pricing module — annual"
+     ],
+     "cross_memo": "Dynamic pricing module — staff onboarding",
+     "plain": [
+      "the dynamic pricing module",
+      "dynamic pricing setup",
+      "adding dynamic pricing"
+     ],
+     "oblique": [
+      "yield management",
+      "demand-based fares",
+      "letting fares float with demand",
+      "the revenue management add-on",
+      "surge fares for peak days",
+      "the yield tool",
+      "automated fare adjustments",
+      "smarter fare optimization",
+      "the revenue optimization rollout",
+      "fare algorithms from our existing vendor",
+      "the peak-hour fare tool",
+      "the yield engine",
+      "flexible fares",
+      "the revenue team's new fare tool",
+      "demand fares",
+      "the up-front fee for the fare engine"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "ransomware_cleanup",
+     "vendor": "Kestrel Secure IT",
+     "memos": [
+      "Ransomware cleanup — forensics",
+      "Ransomware cleanup — backup restore"
+     ],
+     "cross_memo": "Ransomware cleanup — rebooking refunds",
+     "plain": [
+      "the ransomware cleanup",
+      "ransomware cleanup costs",
+      "the ransomware cleanup forensics"
+     ],
+     "oblique": [
+      "the cyberattack",
+      "recovering from the hack",
+      "the security breach",
+      "getting our computers back after the attack",
+      "the incident response firm",
+      "the data breach recovery",
+      "the malware attack",
+      "the encrypted-files incident",
+      "the hacker incident",
+      "the IT emergency",
+      "the breach response",
+      "the extortion attempt on our network",
+      "the cyber incident",
+      "the locked-out week",
+      "the network compromise",
+      "the phishing fallout"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

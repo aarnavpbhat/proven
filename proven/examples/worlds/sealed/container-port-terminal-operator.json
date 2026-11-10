@@ -1,0 +1,830 @@
+{
+ "slug": "container-port-terminal-operator",
+ "industry": "container port terminal operator",
+ "entities": [
+  "Meridian Quay Terminals",
+  "Saltmarsh Container Gateway",
+  "Brightwater Box Port Holdings",
+  "Corvane Harbour Terminals",
+  "Eastreach Intermodal Docks"
+ ],
+ "accounts": [
+  {
+   "name": "Quay Crane Maintenance",
+   "aliases": [
+    "crane maintenance",
+    "crane costs",
+    "quay crane upkeep",
+    "crane spend",
+    "sts crane maintenance"
+   ],
+   "narrative": [
+    "Crane maintenance",
+    "Crane costs",
+    "Quay crane upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborlift Engineering Services",
+     "base": 18500,
+     "memo": "STS crane preventive maintenance — monthly contract"
+    },
+    {
+     "vendor": "Gantrytech Spares Ltd",
+     "base": 6200,
+     "memo": "Crane spare parts — wire rope and brake pads"
+    },
+    {
+     "vendor": "Meridian Lubricants Supply",
+     "base": 2400,
+     "memo": "Crane lubrication and grease supply"
+    }
+   ],
+   "events": [
+    {
+     "key": "spreader_rebuild",
+     "vendor": "Harborlift Engineering Services",
+     "memos": [
+      "Spreader rebuild — twistlock assemblies",
+      "Spreader rebuild — hydraulic labor"
+     ],
+     "cross_memo": "Spreader rebuild — telescopic beam freight",
+     "plain": [
+      "the spreader rebuild",
+      "spreader rebuild work",
+      "the spreader rebuild project"
+     ],
+     "oblique": [
+      "the attachment refurbishment",
+      "renewing the container grab heads",
+      "fixing the locking pins that kept jamming",
+      "the headblock refurbishment",
+      "overhauling the frames that grip the boxes",
+      "getting the gripping gear back to spec",
+      "the berth-side attachment refit",
+      "replacing worn corner locks on the frames",
+      "the refit operations asked for after the jamming",
+      "restoring the box-handling heads",
+      "the frame refurb",
+      "fixing the gear that grabs containers",
+      "the attachment overhaul ops flagged",
+      "renewing pins and cylinders on the heads",
+      "the grab-frame refit",
+      "bringing the jammed heads back online"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "boom_hoist_certification",
+     "vendor": "Kestrel Lifting Surveyors",
+     "memos": [
+      "Boom hoist certification — load test",
+      "Boom hoist certification — gearbox survey"
+     ],
+     "cross_memo": "Boom hoist certification — vessel delay standby",
+     "plain": [
+      "the boom hoist certification",
+      "boom hoist certification costs",
+      "the boom hoist certification program"
+     ],
+     "oblique": [
+      "the statutory sign-off",
+      "the regulator-mandated inspection",
+      "proving the main arm is safe to operate",
+      "the annual compliance review of the quayside giants",
+      "the safety sign-off",
+      "renewing the operating permit for the ship-to-shore units",
+      "the third-party compliance audit",
+      "the insurer-required inspection",
+      "verifying the raising mechanism meets code",
+      "the periodic regulatory check",
+      "the compliance inspection the harbour authority demanded",
+      "requalifying the big machines for service",
+      "the code inspection",
+      "keeping our operating licence current",
+      "the outside assessors' safety review",
+      "the mandatory structural inspection"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Yard Equipment Fuel",
+   "aliases": [
+    "fuel",
+    "diesel",
+    "yard fuel",
+    "fuel spend",
+    "equipment fuel costs"
+   ],
+   "narrative": [
+    "Fuel",
+    "Diesel",
+    "Yard fuel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Coastline Petroleum Distributors",
+     "base": 27000,
+     "memo": "Bulk diesel delivery — yard tank"
+    },
+    {
+     "vendor": "Portside Fuel Cards Inc",
+     "base": 3200,
+     "memo": "Fleet card purchases — terminal vehicles"
+    },
+    {
+     "vendor": "TerraMarine Additives",
+     "base": 1600,
+     "memo": "DEF fluid supply — straddle carriers"
+    }
+   ],
+   "events": [
+    {
+     "key": "peak_season_surcharge",
+     "vendor": "Coastline Petroleum Distributors",
+     "memos": [
+      "Peak season surcharge — emergency top-up",
+      "Peak season surcharge — weekend delivery"
+     ],
+     "cross_memo": "Peak season surcharge — overtime driver hours",
+     "plain": [
+      "the peak season surcharge",
+      "peak season surcharge amounts",
+      "the peak season surcharge billing"
+     ],
+     "oblique": [
+      "the busy-period premium",
+      "rush pricing during the volume spike",
+      "extra fills to keep up with record throughput",
+      "the holiday rush premium",
+      "paying more to restock fast",
+      "the high-volume period markup",
+      "short-notice replenishment",
+      "the shipping rush pricing",
+      "added fill-ups when vessel calls bunched up",
+      "the supplier's congestion premium",
+      "out-of-hours restocking",
+      "keeping the machines running through the backlog",
+      "the rush-period markups",
+      "premium pricing on urgent replenishment",
+      "the volume surge premium",
+      "unscheduled refills"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "hvo_pilot_blend",
+     "vendor": "Bluewater Biofuels Trading",
+     "memos": [
+      "HVO pilot blend — first tanker load",
+      "HVO pilot blend — storage tank cleaning"
+     ],
+     "cross_memo": "HVO pilot blend — engine compatibility check",
+     "plain": [
+      "the HVO pilot blend",
+      "HVO pilot blend volumes",
+      "the HVO pilot blend program"
+     ],
+     "oblique": [
+      "the sustainability trial",
+      "testing a greener alternative",
+      "the low-carbon experiment",
+      "trialling renewable product in the machines",
+      "the emissions-reduction initiative",
+      "the board's decarbonisation push",
+      "switching some units to a cleaner option",
+      "the green energy experiment",
+      "proving out a lower-emission alternative",
+      "the climate initiative",
+      "the trial of vegetable-based product",
+      "the carbon-cutting experiment",
+      "the ESG trial",
+      "sampling a renewable substitute",
+      "the cleaner-burning experiment",
+      "the shift toward greener operations"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Dredging & Berth Maintenance",
+   "aliases": [
+    "dredging",
+    "berth maintenance",
+    "dredging costs",
+    "berth upkeep",
+    "channel dredging"
+   ],
+   "narrative": [
+    "Dredging",
+    "Berth maintenance",
+    "Dredging costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Silt Harbour Marine Contractors",
+     "base": 24000,
+     "memo": "Maintenance dredging — berth pockets"
+    },
+    {
+     "vendor": "Tidewater Hydrographics",
+     "base": 4500,
+     "memo": "Monthly bathymetric survey"
+    },
+    {
+     "vendor": "Quaywall Diving Services",
+     "base": 3800,
+     "memo": "Underwater inspection — quay wall"
+    }
+   ],
+   "events": [
+    {
+     "key": "fender_replacement",
+     "vendor": "Silt Harbour Marine Contractors",
+     "memos": [
+      "Fender replacement — Berth 4 cone units",
+      "Fender replacement — crane barge hire"
+     ],
+     "cross_memo": "Fender replacement — vessel scheduling disruption",
+     "plain": [
+      "the fender replacement",
+      "fender replacement works",
+      "the fender replacement project"
+     ],
+     "oblique": [
+      "swapping out the crushed bumpers",
+      "the bumper renewal",
+      "replacing the rubber cushions ships moor against",
+      "the impact-absorber refit",
+      "renewing worn docking buffers",
+      "the buffer swap after the ship strike",
+      "fixing damage from the hard docking",
+      "new rubber along the mooring line",
+      "the cushioning refit",
+      "replacing buffers a ship crushed",
+      "the docking buffer project",
+      "the rubber bumper work",
+      "restoring the shock absorbers on the wharf",
+      "post-allision repairs",
+      "the mooring cushion upgrade",
+      "making the wharf safe to dock against"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "scour_protection",
+     "vendor": "Northreach Scour Engineering",
+     "memos": [
+      "Scour protection — rock armour placement",
+      "Scour protection — geotextile mats"
+     ],
+     "cross_memo": "Scour protection — environmental monitoring",
+     "plain": [
+      "the scour protection",
+      "scour protection works",
+      "the scour protection project"
+     ],
+     "oblique": [
+      "shoring up the seabed",
+      "the erosion work",
+      "stopping propeller wash undercutting the wharf",
+      "the seabed stabilisation",
+      "laying stone along the toe of the wharf",
+      "the anti-erosion project",
+      "safeguarding foundations from propeller wash",
+      "the toe stabilisation works",
+      "the bed-erosion fix",
+      "keeping thrusters from digging out the wharf base",
+      "the subsea stabilisation",
+      "reinforcing the seafloor",
+      "the propeller-wash mitigation",
+      "erosion control",
+      "the foundation-securing works the consultants called for",
+      "the seabed reinforcement"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Stevedoring Contract Labor",
+   "aliases": [
+    "stevedoring",
+    "longshore labor",
+    "contract labor",
+    "gang labor",
+    "stevedore costs"
+   ],
+   "narrative": [
+    "Stevedoring",
+    "Longshore labor",
+    "Contract labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "Anchorpoint Stevedoring Co",
+     "base": 29000,
+     "memo": "Vessel gang labor — weekly roster"
+    },
+    {
+     "vendor": "Dockhand Staffing Solutions",
+     "base": 8500,
+     "memo": "Casual lashers — shift backfill"
+    },
+    {
+     "vendor": "Seawall Payroll Services",
+     "base": 1800,
+     "memo": "Union dues and payroll processing"
+    }
+   ],
+   "events": [
+    {
+     "key": "neptune_star_call",
+     "vendor": "Anchorpoint Stevedoring Co",
+     "memos": [
+      "Neptune Star call — additional gangs",
+      "Neptune Star call — meal penalties"
+     ],
+     "cross_memo": "Neptune Star call — berth tug assist",
+     "plain": [
+      "the Neptune Star call",
+      "Neptune Star call crewing",
+      "the Neptune Star call surge"
+     ],
+     "oblique": [
+      "the giant ship's visit",
+      "working the biggest ship we've handled",
+      "extra crews for the ultra-large arrival",
+      "the record-size discharge",
+      "manning up for the record-size ship",
+      "round-the-clock crews for one huge ship",
+      "the jumbo ship turnaround",
+      "the overtime on the flagship arrival",
+      "the ULCV turnaround",
+      "crewing the oversized ship",
+      "the big ship weekend",
+      "the ship the alliance rerouted to us",
+      "a surge of boxes from one arrival",
+      "the oversized discharge and load",
+      "the extra crews",
+      "handling the alliance's largest ship"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "safety_induction",
+     "vendor": "Hartwell Training Academy",
+     "memos": [
+      "Safety induction — new hire cohort",
+      "Safety induction — instructor fees"
+     ],
+     "cross_memo": "Safety induction — PPE kits",
+     "plain": [
+      "the safety induction",
+      "safety induction sessions",
+      "the safety induction program"
+     ],
+     "oblique": [
+      "onboarding the recruits",
+      "the orientation courses",
+      "getting recent recruits certified to work the quay",
+      "the onboarding program",
+      "mandatory orientation for the expansion crews",
+      "the compliance courses",
+      "teaching recruits the site rules",
+      "the onboarding courses the regulator required",
+      "the hazard awareness classes",
+      "classroom time for the recruits",
+      "orientation",
+      "the workforce expansion onboarding",
+      "certifying the incoming dockworkers",
+      "the site-rules classes",
+      "preparing the incoming workforce",
+      "the accident-prevention courses"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Terminal Security Services",
+   "aliases": [
+    "security",
+    "terminal security",
+    "guard services",
+    "security costs",
+    "gate security"
+   ],
+   "narrative": [
+    "Security",
+    "Terminal security",
+    "Security costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bulwark Protective Group",
+     "base": 21000,
+     "memo": "Guard force — 24/7 perimeter patrol"
+    },
+    {
+     "vendor": "Sentinel Access Systems",
+     "base": 3400,
+     "memo": "Access control system support"
+    },
+    {
+     "vendor": "Watchtower CCTV Monitoring",
+     "base": 2600,
+     "memo": "Remote video monitoring — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "customs_exam_escort",
+     "vendor": "Bulwark Protective Group",
+     "memos": [
+      "Customs exam escort — extra officers",
+      "Customs exam escort — overnight detail"
+     ],
+     "cross_memo": "Customs exam escort — container devanning",
+     "plain": [
+      "the customs exam escort",
+      "customs exam escort hours",
+      "the customs exam escort detail"
+     ],
+     "oblique": [
+      "the border agency inspections",
+      "accompanying government inspectors",
+      "the inspection blitz by border authorities",
+      "staffing the government box checks",
+      "the border crackdown",
+      "minding the inspection area during the crackdown",
+      "watching boxes held for inspection",
+      "the enforcement sweep",
+      "standing by while officials opened boxes",
+      "the narcotics crackdown",
+      "the border sweep",
+      "supervising government searches",
+      "the anti-smuggling operation",
+      "the inspection surge the authorities ordered",
+      "keeping watch over seized boxes",
+      "agency-led searches"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "fence_breach_repair",
+     "vendor": "Ironclad Fencing Works",
+     "memos": [
+      "Fence breach repair — razor wire section",
+      "Fence breach repair — emergency callout"
+     ],
+     "cross_memo": "Fence breach repair — stolen cargo claim",
+     "plain": [
+      "the fence breach repair",
+      "fence breach repair costs",
+      "the fence breach repair job"
+     ],
+     "oblique": [
+      "the break-in",
+      "patching the hole the thieves cut",
+      "the intrusion at the north boundary",
+      "fixing the damaged barrier after the theft",
+      "the burglary aftermath",
+      "restoring the boundary after intruders got in",
+      "the theft incident",
+      "closing the gap thieves used",
+      "the trespass damage",
+      "rebuilding the boundary line",
+      "the intrusion cleanup",
+      "making the boundary secure again",
+      "the burglars' entry point",
+      "the break-in fix",
+      "hardening the boundary the insurer flagged",
+      "the trespasser damage"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Shore Power & Electricity",
+   "aliases": [
+    "electricity",
+    "power",
+    "utilities",
+    "shore power",
+    "power costs"
+   ],
+   "narrative": [
+    "Electricity",
+    "Power costs",
+    "Shore power"
+   ],
+   "recurring": [
+    {
+     "vendor": "Coastal Grid Energy",
+     "base": 26000,
+     "memo": "Terminal electricity — monthly usage"
+    },
+    {
+     "vendor": "Voltharbor Reefer Services",
+     "base": 5200,
+     "memo": "Reefer plug monitoring"
+    },
+    {
+     "vendor": "Gridline Demand Analytics",
+     "base": 1200,
+     "memo": "Demand management subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "substation_upgrade",
+     "vendor": "Coastal Grid Energy",
+     "memos": [
+      "Substation upgrade — transformer swap",
+      "Substation upgrade — outage switching"
+     ],
+     "cross_memo": "Substation upgrade — generator rental",
+     "plain": [
+      "the substation upgrade",
+      "substation upgrade costs",
+      "the substation upgrade project"
+     ],
+     "oblique": [
+      "the electrical infrastructure works",
+      "beefing up the incoming supply",
+      "the high-voltage refit",
+      "making room for electric cranes on the network",
+      "the power intake modernisation",
+      "replacing the old step-down gear",
+      "the HV works",
+      "readying the site for electrification",
+      "the supplier-side works",
+      "new kit at the main intake",
+      "the step-down equipment replacement",
+      "the electrification enabling works",
+      "expanding incoming megawatts",
+      "the high-voltage kit refresh",
+      "the network reinforcement",
+      "preparing for the electric fleet"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "capacity_overrun_penalty",
+     "vendor": "Ferrolink Utility Brokers",
+     "memos": [
+      "Capacity overrun penalty — billing period",
+      "Capacity overrun penalty — ratchet charge"
+     ],
+     "cross_memo": "Capacity overrun penalty — temporary generator fuel",
+     "plain": [
+      "the capacity overrun penalty",
+      "capacity overrun penalty charges",
+      "the capacity overrun penalty fees"
+     ],
+     "oblique": [
+      "blowing through our contracted ceiling",
+      "the fine for exceeding the agreed draw",
+      "the heatwave consumption spike",
+      "exceeding the contracted maximum",
+      "the excess-draw fees",
+      "going over our agreed limit",
+      "the tariff breach",
+      "pulling more than the contract allows",
+      "the over-limit fees",
+      "extra fridge-box consumption tripping the threshold",
+      "the threshold breach",
+      "the contract-limit fees",
+      "exceeding allowed peak draw",
+      "the excess consumption fees",
+      "breaching the supply agreement ceiling",
+      "the heatwave"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Port Liability Insurance",
+   "aliases": [
+    "insurance",
+    "insurance premiums",
+    "liability cover",
+    "port liability",
+    "cover costs"
+   ],
+   "narrative": [
+    "Insurance",
+    "Insurance premiums",
+    "Liability cover"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harbormark Underwriters",
+     "base": 14000,
+     "memo": "Terminal operator liability — monthly premium"
+    },
+    {
+     "vendor": "Keelstone Insurance Brokers",
+     "base": 2200,
+     "memo": "Broker fee — policy administration"
+    },
+    {
+     "vendor": "Anchorage Mutual P&I Club",
+     "base": 6500,
+     "memo": "Cargo handling P&I installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "claims_deductible",
+     "vendor": "Harbormark Underwriters",
+     "memos": [
+      "Claims deductible — dropped container incident",
+      "Claims deductible — reefer spoilage"
+     ],
+     "cross_memo": "Claims deductible — loss adjuster fees",
+     "plain": [
+      "the claims deductible",
+      "claims deductible payments",
+      "the claims deductible charges"
+     ],
+     "oblique": [
+      "our share of the accident payouts",
+      "the excess we owe on the box drop",
+      "the self-insured portion of recent mishaps",
+      "absorbing the first layer of the damage",
+      "the out-of-pocket on the spoiled shipment",
+      "the box that fell off the stack",
+      "the excess payments",
+      "paying the first slice of the damages",
+      "the uninsured portion",
+      "funding the excess on two mishaps",
+      "the mishap excess",
+      "retained damages",
+      "the retention on the yard accident",
+      "what we pay before the carrier kicks in",
+      "the self-retained damage",
+      "the accident excess"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "windstorm_endorsement",
+     "vendor": "Fathom Risk Surveyors",
+     "memos": [
+      "Windstorm endorsement — named storm cover",
+      "Windstorm endorsement — risk survey fee"
+     ],
+     "cross_memo": "Windstorm endorsement — tie-down equipment",
+     "plain": [
+      "the windstorm endorsement",
+      "windstorm endorsement costs",
+      "the windstorm endorsement add-on"
+     ],
+     "oblique": [
+      "the hurricane add-on",
+      "extending protection for the cyclone months",
+      "the extra typhoon coverage",
+      "the gale rider",
+      "buying hurricane protection before the season",
+      "the cyclone rider the lenders required",
+      "topping up weather protection",
+      "the extreme weather rider",
+      "the hurricane coverage",
+      "adding typhoon protection mid-term",
+      "the lender-mandated weather rider",
+      "severe weather coverage",
+      "the gale coverage",
+      "protection against hurricanes",
+      "the cyclone add-on",
+      "the weather rider"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Terminal Operating System Software",
+   "aliases": [
+    "software",
+    "tos licences",
+    "it subscriptions",
+    "software costs",
+    "tos"
+   ],
+   "narrative": [
+    "Software",
+    "Software costs",
+    "IT subscriptions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Berthware Systems",
+     "base": 16000,
+     "memo": "TOS licence — monthly subscription"
+    },
+    {
+     "vendor": "Cloudquay Hosting",
+     "base": 4800,
+     "memo": "Cloud hosting — production environment"
+    },
+    {
+     "vendor": "Optiyard Analytics",
+     "base": 2100,
+     "memo": "Yard planning optimisation module"
+    }
+   ],
+   "events": [
+    {
+     "key": "gate_automation_module",
+     "vendor": "Berthware Systems",
+     "memos": [
+      "Gate automation module — OCR integration",
+      "Gate automation module — go-live support"
+     ],
+     "cross_memo": "Gate automation module — kiosk hardware",
+     "plain": [
+      "the gate automation module",
+      "gate automation module rollout",
+      "the gate automation module project"
+     ],
+     "oblique": [
+      "the truck-entry self-service project",
+      "letting trucks check in without a clerk",
+      "the plate-reading rollout",
+      "cutting truck queues at the entrance",
+      "the driverless entry lanes",
+      "the camera-based truck processing",
+      "digitising the truck entrance",
+      "the self-service entry rollout",
+      "the paperless truck processing the board approved",
+      "the entry lane upgrade",
+      "reducing clerks at the entrance",
+      "the truck turn-time initiative",
+      "the unmanned entry",
+      "the plate-recognition add-on",
+      "the lane digitisation",
+      "speeding up truck arrivals"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "ransomware_remediation",
+     "vendor": "Redline Cyber Defense",
+     "memos": [
+      "Ransomware remediation — forensic investigation",
+      "Ransomware remediation — data restore"
+     ],
+     "cross_memo": "Ransomware remediation — manual checker overtime",
+     "plain": [
+      "the ransomware remediation",
+      "ransomware remediation work",
+      "the ransomware remediation effort"
+     ],
+     "oblique": [
+      "the hack",
+      "recovering from the hack",
+      "cleaning up after the breach",
+      "the extortion attack",
+      "rebuilding servers after the attack",
+      "the post-attack cleanup",
+      "getting servers back after the hackers",
+      "the security incident response",
+      "the hack recovery",
+      "the encrypted-servers crisis",
+      "the extortion incident",
+      "recovery work after the intrusion",
+      "the outage the hackers caused",
+      "the IT crisis",
+      "the breach response the insurer required",
+      "the malware cleanup"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

@@ -1,0 +1,16 @@
+# A second measured suite, written after the first one had been scored once, and never
+# inspected: see docs/finetune.md. Disjoint from every other list here.
+geothermal power plant operator
+airline catering kitchen
+horse racing track
+container port terminal operator
+prosthetics and orthotics clinic
+planetarium and science center
+offshore salmon farm
+court reporting and transcription agency
+helicopter air tour operator
+luxury watch repair and resale house
+stadium and arena operator
+seed and crop genetics company
+mushroom farm
+theme park

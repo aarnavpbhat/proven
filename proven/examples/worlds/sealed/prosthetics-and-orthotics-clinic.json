@@ -1,0 +1,830 @@
+{
+ "slug": "prosthetics-and-orthotics-clinic",
+ "industry": "prosthetics and orthotics clinic",
+ "entities": [
+  "Stridewell Prosthetics & Orthotics",
+  "Cedarline Limb & Brace",
+  "Northfork O&P Associates",
+  "Halcyon Mobility Clinics",
+  "Tidewater Orthotic Group"
+ ],
+ "accounts": [
+  {
+   "name": "Prosthetic Components",
+   "aliases": [
+    "prosthetic components",
+    "componentry",
+    "components",
+    "prosthetic parts",
+    "component spend"
+   ],
+   "narrative": [
+    "Prosthetic components",
+    "Componentry",
+    "Component spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Limb Supply",
+     "base": 18500,
+     "memo": "Monthly Inv — gel liners, pylons"
+    },
+    {
+     "vendor": "Northgate Orthomed",
+     "base": 12400,
+     "memo": "Inv — prosthetic feet stock"
+    },
+    {
+     "vendor": "Arcadia Mobility Parts",
+     "base": 6200,
+     "memo": "Svc parts order — adapters, pyramids"
+    }
+   ],
+   "events": [
+    {
+     "key": "microprocessor_knee",
+     "vendor": "Keystone Limb Supply",
+     "memos": [
+      "Microprocessor knee — Inv 4471",
+      "Microprocessor knee — programming kit"
+     ],
+     "cross_memo": "Microprocessor knee — clinician training",
+     "plain": [
+      "the microprocessor knee purchase",
+      "a new microprocessor knee",
+      "microprocessor knee upgrades"
+     ],
+     "oblique": [
+      "a computerized joint",
+      "a smart leg",
+      "upgrading one transfemoral patient",
+      "the VA-approved high-tech leg",
+      "a powered joint replacing an older mechanical one",
+      "the sensor-driven joint swap",
+      "outfitting an above-amputation patient with stance control",
+      "higher-tech joints",
+      "a premium leg build",
+      "an insurer-approved leg upgrade",
+      "replacing a worn hydraulic joint",
+      "the battery-powered leg",
+      "one costly transfemoral case",
+      "a smart-joint authorization",
+      "stance-control hardware",
+      "advanced lower-extremity tech"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "myoelectric_hand",
+     "vendor": "Vantera Bionics",
+     "memos": [
+      "Myoelectric hand — Inv VB-208",
+      "Myoelectric hand — electrode set"
+     ],
+     "cross_memo": "Myoelectric hand — fitting travel",
+     "plain": [
+      "the myoelectric hand",
+      "a myoelectric hand purchase",
+      "myoelectric hand costs"
+     ],
+     "oblique": [
+      "an upper-extremity case",
+      "a muscle-signal arm device",
+      "outfitting a below-elbow amputee",
+      "the powered grip device",
+      "an arm patient's terminal device",
+      "upper-body tech",
+      "a workers-comp arm case",
+      "replacing a body-powered hook",
+      "the multi-grip terminal device",
+      "a wrist-level fit",
+      "sensors reading forearm muscles",
+      "one forearm amputee",
+      "a grip upgrade",
+      "the robotic arm",
+      "a powered wrist rotator",
+      "the arm amputee's new device"
+     ],
+     "low": 28000,
+     "high": 56000
+    }
+   ]
+  },
+  {
+   "name": "Orthotic Materials & Thermoplastics",
+   "aliases": [
+    "orthotic materials",
+    "materials",
+    "thermoplastics",
+    "materials spend",
+    "raw materials"
+   ],
+   "narrative": [
+    "Orthotic materials",
+    "Materials spend",
+    "Raw materials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Polyform Sheet Co",
+     "base": 9800,
+     "memo": "Inv — polypropylene sheet"
+    },
+    {
+     "vendor": "Delmar Casting Supply",
+     "base": 3400,
+     "memo": "Plaster bandage restock"
+    },
+    {
+     "vendor": "Tri-County Foam Works",
+     "base": 2600,
+     "memo": "Mnt foam liner order"
+    }
+   ],
+   "events": [
+    {
+     "key": "carbon_prepreg",
+     "vendor": "Polyform Sheet Co",
+     "memos": [
+      "Carbon prepreg — Inv 9120",
+      "Carbon prepreg — roll lot"
+     ],
+     "cross_memo": "Carbon prepreg — oven cure batch",
+     "plain": [
+      "the carbon prepreg buy",
+      "carbon prepreg rolls",
+      "a carbon prepreg purchase"
+     ],
+     "oblique": [
+      "lightweight composite stock",
+      "material for AFO laminations",
+      "stiffer layup material",
+      "a bulk fiber purchase",
+      "switching sports AFOs to composite",
+      "resin-impregnated fiber",
+      "material ahead of a large composite job",
+      "pricier lightweight layups",
+      "the athlete AFO program",
+      "high-strength fabric inputs",
+      "stocking up on fiber",
+      "the composite push",
+      "graphite layup material",
+      "composite inputs requested by the lead orthotist",
+      "a vendor price lock on fiber",
+      "fiber for dynamic ankle devices"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "scoliosis_brace",
+     "vendor": "Halvern Scoliosis Labs",
+     "memos": [
+      "Scoliosis brace — blanks Inv H-55",
+      "Scoliosis brace — pads"
+     ],
+     "cross_memo": "Scoliosis brace — scan session",
+     "plain": [
+      "the scoliosis brace program",
+      "scoliosis brace stock",
+      "a scoliosis brace order"
+     ],
+     "oblique": [
+      "spinal TLSO stock",
+      "a pediatric spine program",
+      "the new adolescent spinal clinic",
+      "curvature correction devices",
+      "torso jackets for kids",
+      "TLSO shells",
+      "the school screening referrals",
+      "spinal orthoses",
+      "kid spinal cases",
+      "a children's hospital contract",
+      "trunk orthosis material",
+      "starting the spine program",
+      "molded torso shells",
+      "a wave of pediatric spine referrals",
+      "spinal deformity work",
+      "correction jackets"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Central Fabrication Services",
+   "aliases": [
+    "central fab",
+    "outsourced fabrication",
+    "fab services",
+    "central fab charges",
+    "outside fab"
+   ],
+   "narrative": [
+    "Central fab",
+    "Outsourced fabrication",
+    "Outside fab"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Central Fab",
+     "base": 21000,
+     "memo": "Svc — AFO fabrication"
+    },
+    {
+     "vendor": "Copperleaf O&P Lab",
+     "base": 14500,
+     "memo": "Inv — socket fabrication"
+    },
+    {
+     "vendor": "Summit Custom Orthotics",
+     "base": 7800,
+     "memo": "Mnt — foot orthotic pairs"
+    }
+   ],
+   "events": [
+    {
+     "key": "rush_turnaround",
+     "vendor": "Ridgeline Central Fab",
+     "memos": [
+      "Rush turnaround — expedite fee",
+      "Rush turnaround — weekend shift"
+     ],
+     "cross_memo": "Rush turnaround — overnight courier",
+     "plain": [
+      "rush turnaround fees",
+      "the rush turnaround charges",
+      "a rush turnaround surcharge"
+     ],
+     "oblique": [
+      "paying to jump the queue",
+      "faster delivery of devices",
+      "speeding up delivery",
+      "premiums to hit discharge dates",
+      "accelerated builds",
+      "hospital discharge pressure",
+      "devices needed sooner than standard",
+      "after-hours production",
+      "jumping the line on device builds",
+      "catching up on a backlog",
+      "accelerated delivery after a staffing gap",
+      "meeting tight discharge deadlines",
+      "premium pricing on quick builds",
+      "the surgeon-requested fast-track",
+      "quicker device delivery",
+      "compressed lead times"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "trial_shells",
+     "vendor": "Brightwater Thermoform",
+     "memos": [
+      "Clear trial shells — Inv BW-31",
+      "Clear trial shells — remake"
+     ],
+     "cross_memo": "Clear trial shells — casting time",
+     "plain": [
+      "the clear trial shells",
+      "clear trial shells volume",
+      "clear trial shells charges"
+     ],
+     "oblique": [
+      "see-through test fits",
+      "transparent diagnostic fittings",
+      "extra fit checks before definitive builds",
+      "redoing preliminary fittings",
+      "new amputee volume changes",
+      "a run of poor-fitting test devices",
+      "interim fit verification",
+      "more preliminary prototypes",
+      "transparent prototypes",
+      "fit-check iterations",
+      "patients whose residual limbs kept changing",
+      "pre-definitive try-ons",
+      "the new vendor's prototypes",
+      "redone fit tests",
+      "iterative fitting prototypes",
+      "volume fluctuation cases"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Digital Scanning & CAD/CAM",
+   "aliases": [
+    "cad/cam",
+    "scanning",
+    "digital scanning",
+    "3d scanning",
+    "cad cam costs"
+   ],
+   "narrative": [
+    "CAD/CAM",
+    "Digital scanning",
+    "Scanning"
+   ],
+   "recurring": [
+    {
+     "vendor": "Formscape Digital",
+     "base": 4200,
+     "memo": "Mnt — scanner subscription"
+    },
+    {
+     "vendor": "Lattice Carve Systems",
+     "base": 3100,
+     "memo": "Svc — milling software license"
+    },
+    {
+     "vendor": "Oriel 3D Print",
+     "base": 2400,
+     "memo": "Inv — print filament"
+    }
+   ],
+   "events": [
+    {
+     "key": "lidar_wand",
+     "vendor": "Formscape Digital",
+     "memos": [
+      "Lidar wand upgrade — hardware",
+      "Lidar wand upgrade — calibration"
+     ],
+     "cross_memo": "Lidar wand upgrade — staff onboarding",
+     "plain": [
+      "the lidar wand upgrade",
+      "lidar wand upgrade costs",
+      "a lidar wand upgrade"
+     ],
+     "oblique": [
+      "new imaging gear",
+      "better shape-capture tools",
+      "replacing our aging capture device",
+      "a sharper measuring device",
+      "the shape-capture refresh",
+      "moving clinicians off plaster casting",
+      "laser-based measurement equipment",
+      "a tool refresh our lead clinician pushed for",
+      "higher-resolution limb imaging",
+      "the new measurement device",
+      "retiring the old capture unit",
+      "a precision imaging purchase",
+      "getting accurate residual-limb models",
+      "imaging equipment",
+      "better virtual impressions",
+      "an equipment refresh at the main office"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "sintering_cell",
+     "vendor": "Kestrel Additive",
+     "memos": [
+      "Sintering cell — install",
+      "Sintering cell — powder Inv K-12"
+     ],
+     "cross_memo": "Sintering cell — electrical rewire",
+     "plain": [
+      "the sintering cell",
+      "sintering cell setup",
+      "a sintering cell install"
+     ],
+     "oblique": [
+      "bringing 3D production in-house",
+      "an in-house production machine",
+      "laser-fused nylon parts setup",
+      "standing up in-house manufacturing",
+      "the new production machine",
+      "site prep in our back room",
+      "moving device output in-house",
+      "the industrial build machine",
+      "materials for in-house builds",
+      "a manufacturing pilot",
+      "our own device production line",
+      "plumbing in new manufacturing gear",
+      "the in-house build project",
+      "nylon build stock",
+      "launching on-site manufacturing",
+      "a capital-light production trial"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Clinic Rent & Occupancy",
+   "aliases": [
+    "rent",
+    "occupancy",
+    "clinic rent",
+    "facilities",
+    "lease costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Clinic rent"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborview Medical Plaza LLC",
+     "base": 24000,
+     "memo": "Mnt rent — Suite 210"
+    },
+    {
+     "vendor": "Elmstead Property Group",
+     "base": 9500,
+     "memo": "Satellite clinic rent"
+    },
+    {
+     "vendor": "Cleanline Janitorial",
+     "base": 1800,
+     "memo": "Svc — nightly cleaning"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam_reconciliation",
+     "vendor": "Harborview Medical Plaza LLC",
+     "memos": [
+      "CAM reconciliation — prior yr true-up",
+      "CAM reconciliation — tax share"
+     ],
+     "cross_memo": "CAM reconciliation — utility pass-through",
+     "plain": [
+      "the CAM reconciliation",
+      "a CAM reconciliation true-up",
+      "CAM reconciliation charges"
+     ],
+     "oblique": [
+      "the landlord's annual common-area billing",
+      "last year's common-area overage",
+      "a landlord catch-up bill",
+      "higher building operating costs billed back",
+      "the year-end landlord settlement",
+      "property levy increases",
+      "common-area overages",
+      "the annual landlord settle-up",
+      "shared building expenses",
+      "landlord billbacks",
+      "back-billed operating expenses",
+      "higher snow removal at the building",
+      "the landlord's expense audit",
+      "a retroactive building charge",
+      "our pro-rata building costs",
+      "landlord operating expense catch-up"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "ramp_retrofit",
+     "vendor": "Bramble ADA Builders",
+     "memos": [
+      "Ramp retrofit — demo",
+      "Ramp retrofit — concrete Inv 77"
+     ],
+     "cross_memo": "Ramp retrofit — permit fees",
+     "plain": [
+      "the ramp retrofit",
+      "ramp retrofit work",
+      "a ramp retrofit project"
+     ],
+     "oblique": [
+      "accessibility work at the entrance",
+      "rebuilding the wheelchair approach",
+      "making the front entrance compliant",
+      "the entry accessibility project",
+      "work flagged by an accessibility inspection",
+      "a new wheelchair access slope",
+      "entryway rebuild",
+      "replacing the crumbling entry walk",
+      "accessibility upgrades",
+      "patients struggling at the front door",
+      "the handrail and slope project",
+      "entrance work",
+      "a code-compliance fix at the entrance",
+      "regrading the walkway",
+      "the accessible entry",
+      "fixing the walkway our amputee patients use"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Practice Management Software",
+   "aliases": [
+    "software",
+    "pm software",
+    "ehr",
+    "practice software",
+    "emr subscriptions"
+   ],
+   "narrative": [
+    "Software",
+    "Practice software",
+    "EHR"
+   ],
+   "recurring": [
+    {
+     "vendor": "Opalnote Health Systems",
+     "base": 5600,
+     "memo": "Mnt EHR subscription"
+    },
+    {
+     "vendor": "ClaimBridge",
+     "base": 2200,
+     "memo": "Svc — clearinghouse fees"
+    },
+    {
+     "vendor": "Tallyhub",
+     "base": 900,
+     "memo": "Inv — scheduling seats"
+    }
+   ],
+   "events": [
+    {
+     "key": "data_migration",
+     "vendor": "Opalnote Health Systems",
+     "memos": [
+      "Data migration — phase one",
+      "Data migration — legacy charts"
+     ],
+     "cross_memo": "Data migration — temp scanning clerks",
+     "plain": [
+      "the data migration",
+      "data migration fees",
+      "a data migration project"
+     ],
+     "oblique": [
+      "moving old patient records onto the new platform",
+      "converting paper files",
+      "the system switchover",
+      "bringing old records into the new platform",
+      "the conversion project",
+      "retiring the old record system",
+      "transferring years of patient files",
+      "a records conversion",
+      "importing archived patient history",
+      "the platform cutover",
+      "moving off our old vendor's platform",
+      "onboarding the new record platform",
+      "converting archived visit notes",
+      "the records cutover",
+      "porting historical files",
+      "the switch to a new clinical platform"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "penetration_test",
+     "vendor": "Northpass Cyber",
+     "memos": [
+      "Penetration test — Inv NP-4",
+      "Penetration test — remediation"
+     ],
+     "cross_memo": "Penetration test — firewall replacement",
+     "plain": [
+      "the penetration test",
+      "a penetration test engagement",
+      "penetration test remediation"
+     ],
+     "oblique": [
+      "a security assessment",
+      "the HIPAA security audit",
+      "fixing gaps found by hackers-for-hire",
+      "an outside security review",
+      "security work the insurer required",
+      "closing security holes",
+      "an ethical hacking engagement",
+      "the breach-readiness review",
+      "a vulnerability assessment",
+      "the security hardening",
+      "insurance-mandated security work",
+      "patching exposed servers",
+      "an attack simulation",
+      "hardening our network",
+      "the compliance security sweep",
+      "a hacker simulation"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Payer Credentialing & Billing Services",
+   "aliases": [
+    "credentialing",
+    "billing services",
+    "rcm",
+    "revenue cycle",
+    "payer enrollment"
+   ],
+   "narrative": [
+    "Credentialing",
+    "Revenue cycle",
+    "Billing services"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearpath RCM Partners",
+     "base": 16000,
+     "memo": "Svc — outsourced billing"
+    },
+    {
+     "vendor": "Medivault Credentialing",
+     "base": 2800,
+     "memo": "Mnt payer enrollment"
+    },
+    {
+     "vendor": "Westbrook Coding Co",
+     "base": 3500,
+     "memo": "Inv — coding review"
+    }
+   ],
+   "events": [
+    {
+     "key": "denial_appeals",
+     "vendor": "Clearpath RCM Partners",
+     "memos": [
+      "Denial appeals — backlog batch",
+      "Denial appeals — Medicare L-codes"
+     ],
+     "cross_memo": "Denial appeals — records copying",
+     "plain": [
+      "denial appeals work",
+      "the denial appeals push",
+      "denial appeals fees"
+     ],
+     "oblique": [
+      "fighting rejected claims",
+      "contesting rejected claims",
+      "working old rejected claims",
+      "chasing unpaid insurer claims",
+      "recovering rejected device claims",
+      "a push to overturn rejections",
+      "rejected-claim rework",
+      "the claim-rejection cleanup",
+      "contesting insurer rejections on prosthetic devices",
+      "reprocessing rejected federal claims",
+      "overturning prior-auth rejections",
+      "cleanup of aged receivables",
+      "rework on unpaid claims",
+      "a reimbursement recovery project",
+      "challenging insurer refusals",
+      "getting paid on long-stuck claims"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "rac_audit",
+     "vendor": "Fairmount Audit Defense",
+     "memos": [
+      "RAC audit — response prep",
+      "RAC audit — Inv FD-90"
+     ],
+     "cross_memo": "RAC audit — legal consult",
+     "plain": [
+      "the RAC audit",
+      "RAC audit support",
+      "a RAC audit engagement"
+     ],
+     "oblique": [
+      "a federal recovery contractor inquiry",
+      "responding to a government claims inquiry",
+      "outside help with a government reviewer",
+      "the federal documentation request",
+      "defending past claims",
+      "a government recovery inquiry",
+      "the compliance inquiry",
+      "consultants preparing documentation packets",
+      "a claims examination by federal contractors",
+      "documentation work",
+      "a clawback threat",
+      "protecting prior reimbursements",
+      "the government lookback",
+      "the federal reviewer's request",
+      "specialists handling a post-payment inquiry",
+      "compliance support"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Lab Equipment Maintenance",
+   "aliases": [
+    "equipment maintenance",
+    "lab equipment",
+    "shop maintenance",
+    "equipment upkeep",
+    "lab machinery"
+   ],
+   "narrative": [
+    "Equipment maintenance",
+    "Lab equipment",
+    "Shop maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tecvac Service Group",
+     "base": 3200,
+     "memo": "Mnt — vacuum former PM"
+    },
+    {
+     "vendor": "Ironhill Tool Repair",
+     "base": 1900,
+     "memo": "Svc — router, sander tune"
+    },
+    {
+     "vendor": "Puretek Air",
+     "base": 1200,
+     "memo": "Qtr dust collection filter"
+    }
+   ],
+   "events": [
+    {
+     "key": "oven_element",
+     "vendor": "Tecvac Service Group",
+     "memos": [
+      "Oven element — replacement",
+      "Oven element — thermocouple"
+     ],
+     "cross_memo": "Oven element — scrapped sheet goods",
+     "plain": [
+      "the oven element",
+      "an oven element swap",
+      "oven element repairs"
+     ],
+     "oblique": [
+      "fixing the plastic heating unit",
+      "a failed heating coil in the shop",
+      "getting thermoforming back online",
+      "the heating unit breakdown",
+      "restoring heat-molding capacity",
+      "repairs after the shop heater failed",
+      "a burned-out heating coil",
+      "temperature control parts",
+      "the thermoforming outage",
+      "fixing uneven heating that warped plastics",
+      "emergency heating repairs",
+      "a shop heater fix",
+      "heat-molding downtime",
+      "new heating coils",
+      "getting brace plastic heating working again",
+      "temperature probe and coil work"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "compressor_rebuild",
+     "vendor": "Grayline Compressor Co",
+     "memos": [
+      "Compressor rebuild — Inv GC-3",
+      "Compressor rebuild — tank inspection"
+     ],
+     "cross_memo": "Compressor rebuild — rental unit",
+     "plain": [
+      "the compressor rebuild",
+      "a compressor rebuild",
+      "compressor rebuild costs"
+     ],
+     "oblique": [
+      "fixing shop pneumatics",
+      "the pressurized line overhaul",
+      "restoring shop pressure",
+      "pneumatic system repairs",
+      "work on the pressurized lines",
+      "getting pneumatic tools running again",
+      "a seized pump in the back shop",
+      "replacing worn piston seals",
+      "the shop pneumatic outage",
+      "pressure vessel certification",
+      "an overdue pneumatic overhaul",
+      "keeping power tools supplied",
+      "pump overhaul",
+      "after the pneumatic system quit",
+      "shop pressure repairs",
+      "work the insurer's safety examiner required"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

@@ -1,0 +1,790 @@
+{
+ "slug": "geothermal-power-plant-operator",
+ "industry": "geothermal power plant operator",
+ "entities": [
+  "Magmawell Energy",
+  "Steamvent Power Partners",
+  "Hotrock Generation LLC",
+  "Calderon Geothermal",
+  "Fumaro Renewables"
+ ],
+ "accounts": [
+  {
+   "name": "Wellfield Maintenance",
+   "aliases": [
+    "wellfield",
+    "wellfield costs",
+    "well maintenance",
+    "wellfield upkeep",
+    "wellfield spend"
+   ],
+   "narrative": [
+    "Wellfield costs",
+    "Well maintenance",
+    "Wellfield upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Basalt Ridge Drilling Services",
+     "base": 22000,
+     "memo": "Monthly wellhead servicing — field crew"
+    },
+    {
+     "vendor": "Cinder Valve Supply",
+     "base": 6500,
+     "memo": "Valve inspection contract — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "casing_patch",
+     "vendor": "Basalt Ridge Drilling Services",
+     "memos": [
+      "Casing patch job — workover rig",
+      "Casing patch job — cement squeeze"
+     ],
+     "cross_memo": "Casing patch job — mud logging",
+     "plain": [
+      "the casing patch job",
+      "casing patch work",
+      "the casing patch"
+     ],
+     "oblique": [
+      "the downhole repair",
+      "fixing a leaking bore",
+      "sealing a breach in a steel liner",
+      "restoring integrity of a damaged borehole",
+      "a pipe leak deep underground",
+      "emergency downhole remediation",
+      "the borehole integrity fix",
+      "repairing a corroded liner string",
+      "keeping a damaged bore online",
+      "the regulator-requested bore repair",
+      "work to stop gas migrating underground",
+      "the liner breach",
+      "repairs after a pressure test failed",
+      "remediating a compromised hot bore",
+      "shoring up an aging bore",
+      "the subsurface leak"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "scale_cleanout",
+     "vendor": "Tephra Descaling Co",
+     "memos": [
+      "Scale cleanout — production well 7",
+      "Scale cleanout — acid flush"
+     ],
+     "cross_memo": "Scale cleanout — brine sampling",
+     "plain": [
+      "the scale cleanout",
+      "scale cleanout work",
+      "a scale cleanout"
+     ],
+     "oblique": [
+      "mineral buildup removal",
+      "clearing deposits from a clogged bore",
+      "restoring flow at a choked bore",
+      "the deposit removal",
+      "chemical treatment to unclog a hot-water bore",
+      "clearing silica crust downhole",
+      "unblocking a fouled bore",
+      "the silica buildup",
+      "getting output back from a plugged bore",
+      "a mineral fouling treatment",
+      "recovering lost flow",
+      "the deposit treatment",
+      "dissolving mineral crust in a bore",
+      "a throughput recovery effort",
+      "reopening a choked borehole",
+      "the anti-fouling treatment the reservoir team asked for"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Turbine & Generator Maintenance",
+   "aliases": [
+    "turbine maintenance",
+    "turbine costs",
+    "generator upkeep",
+    "turbine spend",
+    "power block maintenance"
+   ],
+   "narrative": [
+    "Turbine maintenance",
+    "Turbine costs",
+    "Generator upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Halden Rotating Equipment",
+     "base": 18000,
+     "memo": "Turbine service agreement — monthly"
+    },
+    {
+     "vendor": "Ferrovolt Electrical",
+     "base": 7200,
+     "memo": "Generator monitoring — monthly fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "blade_set",
+     "vendor": "Halden Rotating Equipment",
+     "memos": [
+      "Blade set replacement — stage 3 rotor",
+      "Blade set replacement — balancing"
+     ],
+     "cross_memo": "Blade set replacement — crane hire",
+     "plain": [
+      "the blade set replacement",
+      "a new blade set",
+      "blade set work"
+     ],
+     "oblique": [
+      "swapping out eroded airfoils",
+      "new airfoils",
+      "the airfoil swap",
+      "fixing erosion damage inside the machine",
+      "worn wheel hardware",
+      "restoring efficiency lost to erosion",
+      "the erosion repair",
+      "renewing worn airfoils on a spinning unit",
+      "the work the OEM recommended after a borescope",
+      "borescope findings",
+      "erosion found during a borescope",
+      "rebuilding a worn wheel",
+      "the heat-rate recovery work",
+      "fixing steam-path wear",
+      "restoring lost megawatts",
+      "the steam-path refurbishment"
+     ],
+     "low": 35000,
+     "high": 70000
+    },
+    {
+     "key": "exciter_rewind",
+     "vendor": "Quellstone Winding Works",
+     "memos": [
+      "Exciter rewind — field coils",
+      "Exciter rewind — insulation test"
+     ],
+     "cross_memo": "Exciter rewind — outage labor",
+     "plain": [
+      "the exciter rewind",
+      "an exciter rewind",
+      "exciter rewind costs"
+     ],
+     "oblique": [
+      "the magnetizing system repair",
+      "fixing a failed magnetizing unit",
+      "replacing burnt copper",
+      "the copper repair",
+      "restoring voltage control",
+      "a ground fault fix",
+      "fixing a shorted electromagnet",
+      "the ground fault",
+      "repairing a burnt-out magnetizer",
+      "voltage regulation problems",
+      "the electromagnet rebuild",
+      "copper work after a ground fault tripped a unit",
+      "the shop job on a scorched magnet assembly",
+      "reconditioning a scorched magnet assembly",
+      "the trip investigation fix",
+      "restoring reactive power capability"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Cooling Tower Operations",
+   "aliases": [
+    "cooling tower",
+    "cooling tower costs",
+    "tower ops",
+    "cooling spend",
+    "tower upkeep"
+   ],
+   "narrative": [
+    "Cooling tower costs",
+    "Tower ops",
+    "Tower upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Mistral Water Treatment",
+     "base": 9800,
+     "memo": "Biocide dosing program — monthly"
+    },
+    {
+     "vendor": "Updraft Fan Services",
+     "base": 5400,
+     "memo": "Fan gearbox lubrication — routine"
+    }
+   ],
+   "events": [
+    {
+     "key": "legionella_remediation",
+     "vendor": "Mistral Water Treatment",
+     "memos": [
+      "Legionella remediation — shock chlorination",
+      "Legionella remediation — lab analysis"
+     ],
+     "cross_memo": "Legionella remediation — temporary bypass",
+     "plain": [
+      "the legionella remediation",
+      "legionella remediation work",
+      "a legionella remediation"
+     ],
+     "oblique": [
+      "bacteria cleanup",
+      "the bacterial outbreak",
+      "killing off a bacterial bloom",
+      "a public-health scare",
+      "disinfecting basins after positive cultures",
+      "the health department's demand",
+      "pathogen control",
+      "the bacteria scare",
+      "sanitizing basins after a positive culture",
+      "an outbreak response",
+      "the disinfection campaign",
+      "positive cultures at a cell",
+      "clearing a pathogen hit",
+      "meeting health-authority orders",
+      "the microbe problem",
+      "emergency disinfection"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "fill_media",
+     "vendor": "Drift Pak Fabricators",
+     "memos": [
+      "Fill media retrofit — PVC packs",
+      "Fill media retrofit — installation crew"
+     ],
+     "cross_memo": "Fill media retrofit — scaffolding",
+     "plain": [
+      "the fill media retrofit",
+      "a fill media retrofit",
+      "fill media retrofit costs"
+     ],
+     "oblique": [
+      "new heat-exchange surface",
+      "replacing collapsed internals",
+      "the internals upgrade",
+      "swapping out sagging honeycomb",
+      "honeycomb replacement",
+      "restoring cell efficiency",
+      "the cell rebuild",
+      "upgrading heat-rejection surface in two cells",
+      "fixing collapsed honeycomb",
+      "better evaporative performance",
+      "the honeycomb job",
+      "renewing worn internals that sagged",
+      "an efficiency upgrade",
+      "improving summer heat rejection",
+      "rebuilding degraded cells",
+      "replacing fouled internal surfaces"
+     ],
+     "low": 28000,
+     "high": 56000
+    }
+   ]
+  },
+  {
+   "name": "Brine Reinjection",
+   "aliases": [
+    "reinjection",
+    "reinjection costs",
+    "injection pumping",
+    "reinjection spend",
+    "injection ops"
+   ],
+   "narrative": [
+    "Reinjection costs",
+    "Injection pumping",
+    "Injection ops"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pelion Pump Services",
+     "base": 14000,
+     "memo": "Injection pump maintenance — monthly"
+    },
+    {
+     "vendor": "Graywacke Pipeline Co",
+     "base": 6000,
+     "memo": "Pipeline patrol — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "bearing_failure",
+     "vendor": "Pelion Pump Services",
+     "memos": [
+      "Motor bearing failure — emergency callout",
+      "Motor bearing failure — parts"
+     ],
+     "cross_memo": "Motor bearing failure — vibration analysis",
+     "plain": [
+      "the bearing failure",
+      "a bearing failure",
+      "bearing failure repairs"
+     ],
+     "oblique": [
+      "a seized drive",
+      "the drive breakdown",
+      "fixing a seized drive shaft",
+      "an overheating drive",
+      "the shaft seizure",
+      "after-hours repair of a failed drive",
+      "restoring flow to a disposal bore",
+      "a burned-out drive",
+      "the unplanned drive repair",
+      "replacing worn rolling elements",
+      "the overnight breakdown",
+      "a shaft seizure at the reinjection site",
+      "getting a disposal line running again",
+      "an overheated shaft",
+      "the drive seizure",
+      "unplanned downtime on a disposal train"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "spool_relining",
+     "vendor": "Karst Coatings Ltd",
+     "memos": [
+      "Spool relining — epoxy coating",
+      "Spool relining — hydrotest"
+     ],
+     "cross_memo": "Spool relining — nitrogen purge",
+     "plain": [
+      "the spool relining",
+      "spool relining work",
+      "a spool relining"
+     ],
+     "oblique": [
+      "internal lining of a corroded section",
+      "corrosion protection",
+      "lining corroded piping",
+      "the corrosion fix",
+      "protecting a pitted line section",
+      "restoring wall integrity",
+      "the lining job",
+      "rehabilitating a thinned segment",
+      "corrosion repairs",
+      "the anti-corrosion work",
+      "fixing pitted piping",
+      "lining a thinned run",
+      "the pitting repair",
+      "extending life of a corroded line",
+      "a wall-loss remediation",
+      "keeping corrosion from causing a rupture"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Steam Gathering System",
+   "aliases": [
+    "steam gathering",
+    "gathering system",
+    "steamfield piping",
+    "gathering costs",
+    "steam lines"
+   ],
+   "narrative": [
+    "Steam gathering",
+    "Gathering costs",
+    "Steam lines"
+   ],
+   "recurring": [
+    {
+     "vendor": "Fumarole Mechanical",
+     "base": 12500,
+     "memo": "Separator inspection — monthly"
+    },
+    {
+     "vendor": "Ashcroft Insulation",
+     "base": 4300,
+     "memo": "Lagging repairs — routine"
+    }
+   ],
+   "events": [
+    {
+     "key": "expansion_loop",
+     "vendor": "Fumarole Mechanical",
+     "memos": [
+      "Expansion loop rebuild — welding",
+      "Expansion loop rebuild — pipe supports"
+     ],
+     "cross_memo": "Expansion loop rebuild — NDT",
+     "plain": [
+      "the expansion loop rebuild",
+      "an expansion loop rebuild",
+      "expansion loop work"
+     ],
+     "oblique": [
+      "thermal growth damage",
+      "fixing a buckled line section",
+      "the buckled run",
+      "restoring flexibility in a hot line",
+      "a cracked bend",
+      "the bend repair",
+      "refabricating a buckled bend",
+      "stress cracking at a bend",
+      "the anchor failure",
+      "rework after an anchor failed",
+      "thermal stress cracking",
+      "replacing a cracked bend",
+      "the fabrication work",
+      "restoring line movement",
+      "a buckling problem",
+      "the thermal movement fix"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "rupture_disc",
+     "vendor": "Solfatara Safety Systems",
+     "memos": [
+      "Rupture disc changeout — relief valves",
+      "Rupture disc changeout — certification"
+     ],
+     "cross_memo": "Rupture disc changeout — permit fee",
+     "plain": [
+      "the rupture disc changeout",
+      "a rupture disc changeout",
+      "rupture disc work"
+     ],
+     "oblique": [
+      "overpressure protection",
+      "the overpressure devices",
+      "bursting membranes",
+      "renewing burst membranes",
+      "the statutory pressure check",
+      "an insurer-requested pressure check",
+      "overpressure device renewal",
+      "the protective device swap",
+      "pressure protection upgrades",
+      "the five-year statutory check",
+      "burst membranes",
+      "replacing spent overpressure devices",
+      "an insurer's requirement",
+      "the boiler code obligation",
+      "pressure-device renewal",
+      "keeping overpressure gear current"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Environmental Compliance",
+   "aliases": [
+    "environmental",
+    "environmental compliance",
+    "emissions monitoring",
+    "enviro costs",
+    "compliance spend"
+   ],
+   "narrative": [
+    "Environmental compliance",
+    "Emissions monitoring",
+    "Enviro costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Obsidian Air Labs",
+     "base": 7600,
+     "memo": "H2S stack testing — monthly"
+    },
+    {
+     "vendor": "Lahar Groundwater Consulting",
+     "base": 5200,
+     "memo": "Groundwater sampling — quarterly accrual"
+    }
+   ],
+   "events": [
+    {
+     "key": "abatement_audit",
+     "vendor": "Obsidian Air Labs",
+     "memos": [
+      "Abatement audit — sulfur scrubber",
+      "Abatement audit — report"
+     ],
+     "cross_memo": "Abatement audit — agency fee",
+     "plain": [
+      "the abatement audit",
+      "an abatement audit",
+      "abatement audit costs"
+     ],
+     "oblique": [
+      "the odor complaint review",
+      "a regulator review of gas controls",
+      "proving emissions controls work",
+      "the emissions review",
+      "a third-party controls check",
+      "odor complaints from neighbors",
+      "verifying hydrogen-sulfide removal",
+      "the permit renewal review",
+      "regulator scrutiny",
+      "the compliance check",
+      "an independent emissions examination",
+      "neighbor odor complaints",
+      "showing regulators the controls work",
+      "a permit condition review",
+      "the stinky-gas investigation",
+      "an emissions verification"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "microseismic_array",
+     "vendor": "Tremorline Geophysics",
+     "memos": [
+      "Microseismic array — sensor install",
+      "Microseismic array — data processing"
+     ],
+     "cross_memo": "Microseismic array — land access",
+     "plain": [
+      "the microseismic array",
+      "a microseismic array",
+      "microseismic array work"
+     ],
+     "oblique": [
+      "quake monitoring",
+      "earthquake monitoring",
+      "tremor detection",
+      "the induced-quake study",
+      "a ground-shaking survey",
+      "a quake study the county asked for",
+      "new earthquake detectors",
+      "tracking induced tremors",
+      "the tremor network",
+      "listening for small quakes",
+      "a quake-risk study",
+      "induced seismicity tracking",
+      "the earthquake study",
+      "monitoring ground motion near reinjection",
+      "community quake concerns",
+      "a seismic hazard survey"
+     ],
+     "low": 30000,
+     "high": 60000
+    }
+   ]
+  },
+  {
+   "name": "Rent & Facilities",
+   "aliases": [
+    "rent",
+    "office rent",
+    "facilities",
+    "facility costs",
+    "lease costs"
+   ],
+   "narrative": [
+    "Office rent",
+    "Facilities",
+    "Lease costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pumice Plaza Properties",
+     "base": 9500,
+     "memo": "Office lease — HQ"
+    },
+    {
+     "vendor": "Caldera Janitorial",
+     "base": 1800,
+     "memo": "Cleaning contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "roof_leak",
+     "vendor": "Pumice Plaza Properties",
+     "memos": [
+      "Roof leak repair — tenant chargeback",
+      "Roof leak repair — ceiling tiles"
+     ],
+     "cross_memo": "Roof leak repair — IT equipment",
+     "plain": [
+      "the roof leak",
+      "a roof leak",
+      "roof leak repairs"
+     ],
+     "oblique": [
+      "water damage upstairs",
+      "storm damage",
+      "the storm damage",
+      "fixing water intrusion",
+      "drying out after heavy rain",
+      "the landlord's pass-through",
+      "water-damaged overhead panels",
+      "rain getting into headquarters",
+      "the water intrusion",
+      "a landlord pass-through",
+      "waterproofing the building top",
+      "the rainstorm cleanup",
+      "patching after a storm",
+      "mold prevention",
+      "the flooding upstairs",
+      "damage from a winter storm"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "control_room_refit",
+     "vendor": "Vent Hollow Interiors",
+     "memos": [
+      "Control room refit — consoles",
+      "Control room refit — cabling"
+     ],
+     "cross_memo": "Control room refit — workstations",
+     "plain": [
+      "the control room refit",
+      "a control room refit",
+      "control room refit costs"
+     ],
+     "oblique": [
+      "the operator desk upgrade",
+      "new operator desks",
+      "modernizing where operators sit",
+      "the dispatch center upgrade",
+      "an ergonomic upgrade",
+      "redoing the operations hub",
+      "the operations hub makeover",
+      "new desks",
+      "upgrading the plant's nerve center",
+      "the nerve center makeover",
+      "relocating operators",
+      "an operator ergonomics project",
+      "the hub fit-out",
+      "a new dispatch layout",
+      "the redesign operators requested",
+      "furnishing a new operations space"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Software Subscriptions",
+   "aliases": [
+    "software",
+    "software licenses",
+    "saas",
+    "software spend",
+    "subscriptions"
+   ],
+   "narrative": [
+    "Software spend",
+    "Software licenses",
+    "Subscriptions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Geodata Cloud Systems",
+     "base": 6800,
+     "memo": "SCADA historian license — monthly"
+    },
+    {
+     "vendor": "Ledgerline Apps",
+     "base": 2400,
+     "memo": "ERP seats — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "reservoir_model",
+     "vendor": "Geodata Cloud Systems",
+     "memos": [
+      "Reservoir model module — implementation",
+      "Reservoir model module — training"
+     ],
+     "cross_memo": "Reservoir model module — consultant travel",
+     "plain": [
+      "the reservoir model module",
+      "a reservoir model module",
+      "reservoir model rollout"
+     ],
+     "oblique": [
+      "the simulation add-on",
+      "a new simulation tool",
+      "subsurface forecasting",
+      "the forecasting upgrade",
+      "simulating underground heat",
+      "a tool the geoscience team wanted",
+      "onboarding the simulation tool",
+      "better decline forecasting",
+      "the geoscience tool",
+      "heat-depletion forecasting",
+      "new forecasting capability",
+      "the decline-curve add-on",
+      "setting up subsurface simulation",
+      "a geoscience upgrade",
+      "underground heat forecasting",
+      "the simulation rollout"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "cyber_hardening",
+     "vendor": "Bastion Grid Security",
+     "memos": [
+      "Cyber hardening — OT firewall",
+      "Cyber hardening — penetration test"
+     ],
+     "cross_memo": "Cyber hardening — incident drill",
+     "plain": [
+      "the cyber hardening",
+      "cyber hardening work",
+      "a cyber hardening project"
+     ],
+     "oblique": [
+      "network protection",
+      "the hacking defenses",
+      "locking down plant controls",
+      "an attack simulation",
+      "ransomware defenses",
+      "the ransomware readiness work",
+      "protecting plant controls from intruders",
+      "an ethical hacking exercise",
+      "the insurer-required protections",
+      "tightening plant network defenses",
+      "the defensive upgrade",
+      "hacker protection",
+      "closing gaps an auditor found",
+      "segmenting plant networks",
+      "the intrusion defenses",
+      "a breach-readiness effort"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

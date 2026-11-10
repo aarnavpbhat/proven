@@ -1,0 +1,825 @@
+{
+ "slug": "airline-catering-kitchen",
+ "industry": "airline catering kitchen",
+ "entities": [
+  "Skyline Galley Provisions",
+  "AeroTable Flight Kitchens",
+  "Jetstream Inflight Catering",
+  "Cloudport Culinary Services",
+  "Northwind Airside Kitchens"
+ ],
+ "accounts": [
+  {
+   "name": "Food Ingredients",
+   "aliases": [
+    "food cost",
+    "ingredients",
+    "raw food",
+    "food purchases",
+    "ingredient spend"
+   ],
+   "narrative": [
+    "Food cost",
+    "Ingredients",
+    "Food purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harbor Valley Produce",
+     "base": 18000,
+     "memo": "Produce delivery wkly PO 4410"
+    },
+    {
+     "vendor": "Northgate Proteins",
+     "base": 24000,
+     "memo": "Protein order PO 4412"
+    },
+    {
+     "vendor": "Silverline Dairy Co",
+     "base": 9000,
+     "memo": "Dairy std order"
+    }
+   ],
+   "events": [
+    {
+     "key": "premium_wagyu",
+     "vendor": "Northgate Proteins",
+     "memos": [
+      "Premium wagyu upgrade PO 4471",
+      "Premium wagyu surcharge"
+     ],
+     "cross_memo": "Premium wagyu presentation boxes",
+     "plain": [
+      "the premium wagyu upgrade",
+      "premium wagyu surcharges",
+      "the premium wagyu menu"
+     ],
+     "oblique": [
+      "the business-class steak rollout",
+      "pricier beef for the front cabin",
+      "the luxury meat program",
+      "costlier cuts for first class",
+      "the new top-tier entree",
+      "a carrier request for higher-grade beef",
+      "the long-haul menu refresh",
+      "Japanese beef on flagship routes",
+      "fancier steaks",
+      "the elevated cabin dining launch",
+      "higher meat grades for one airline client",
+      "the flagship lounge-style entree",
+      "more expensive marbled beef",
+      "the beef spec change",
+      "a richer first-class main course",
+      "the client-mandated meat swap"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "lobster_tail",
+     "vendor": "Pacific Rim Seafood Traders",
+     "memos": [
+      "Lobster tail spot buy INV 88213",
+      "Lobster tail freight"
+     ],
+     "cross_memo": "Lobster tail — dry ice",
+     "plain": [
+      "the lobster tail spot buy",
+      "lobster tail freight",
+      "the lobster tail purchase"
+     ],
+     "oblique": [
+      "the shellfish special",
+      "a holiday crustacean promotion",
+      "emergency shellfish sourcing",
+      "the festive-season entree",
+      "pricey crustaceans for a charter",
+      "a one-time shellfish run",
+      "the celebratory menu item",
+      "an airline promotion on transatlantic flights",
+      "flown-in shellfish",
+      "the anniversary flight menu",
+      "last-minute crustacean sourcing from overseas",
+      "the gala charter catering",
+      "imported shellfish",
+      "a marketing-led menu feature",
+      "the seasonal luxury dish",
+      "short-notice sourcing for a VIP charter"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Packaging & Disposables",
+   "aliases": [
+    "packaging",
+    "disposables",
+    "packaging costs",
+    "serviceware",
+    "disposable supplies"
+   ],
+   "narrative": [
+    "Packaging",
+    "Disposables",
+    "Packaging costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cobalt Pack Solutions",
+     "base": 12000,
+     "memo": "Meal trays foil lids PO 5520"
+    },
+    {
+     "vendor": "Meridian Paper Goods",
+     "base": 6500,
+     "memo": "Napkins cups std"
+    },
+    {
+     "vendor": "Clearform Plastics",
+     "base": 4800,
+     "memo": "Cutlery kits"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand_artwork",
+     "vendor": "Cobalt Pack Solutions",
+     "memos": [
+      "Rebrand artwork plates INV 7731",
+      "Rebrand artwork rush print"
+     ],
+     "cross_memo": "Rebrand artwork — obsolete stock writeoff",
+     "plain": [
+      "the rebrand artwork",
+      "rebrand artwork rush print",
+      "the rebrand artwork changeover"
+     ],
+     "oblique": [
+      "an airline's new logo",
+      "the carrier's livery change",
+      "reprinting with the updated brand",
+      "new visual identity materials",
+      "the client's identity refresh",
+      "updated logos on everything",
+      "a design change requested by a carrier",
+      "the new look",
+      "branding updates",
+      "swapping out items bearing the old logo",
+      "the marketing makeover",
+      "freshly designed tableware",
+      "the redesign",
+      "custom-labelled items for the relaunch",
+      "a carrier's corporate identity overhaul",
+      "the expedited redesign run"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "compostable_clamshells",
+     "vendor": "GreenLeaf Compostables",
+     "memos": [
+      "Compostable clamshells trial PO 5590",
+      "Compostable clamshells bulk lot"
+     ],
+     "cross_memo": "Compostable clamshells — compost haul",
+     "plain": [
+      "the compostable clamshells trial",
+      "compostable clamshells",
+      "the compostable clamshells switch"
+     ],
+     "oblique": [
+      "the sustainability pilot",
+      "an eco-friendly container switch",
+      "the green initiative",
+      "biodegradable containers",
+      "the carrier's environmental pledge",
+      "plant-based food boxes",
+      "the zero-waste push",
+      "eco materials",
+      "an environmental mandate from one airline",
+      "testing earth-friendly takeaway shells",
+      "the switch to renewable fiber",
+      "sugarcane-fiber containers",
+      "the carbon-reduction effort",
+      "pricier sustainable materials",
+      "the ESG commitment",
+      "the move away from petroleum-based containers"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Galley Equipment Maintenance",
+   "aliases": [
+    "galley equipment",
+    "equipment repairs",
+    "galley maintenance",
+    "kitchen equipment upkeep",
+    "equipment maintenance"
+   ],
+   "narrative": [
+    "Galley equipment",
+    "Equipment repairs",
+    "Galley maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Apex Galley Service",
+     "base": 7500,
+     "memo": "Trolley repair WO 3301"
+    },
+    {
+     "vendor": "Thermatek Industrial",
+     "base": 5200,
+     "memo": "Oven PM contract"
+    },
+    {
+     "vendor": "Brightwash Systems",
+     "base": 3800,
+     "memo": "Dishmachine service"
+    }
+   ],
+   "events": [
+    {
+     "key": "blast_chiller",
+     "vendor": "Thermatek Industrial",
+     "memos": [
+      "Blast chiller rebuild WO 3387",
+      "Blast chiller rebuild parts"
+     ],
+     "cross_memo": "Blast chiller rebuild — temp rental unit",
+     "plain": [
+      "the blast chiller rebuild",
+      "blast chiller rebuild parts",
+      "the blast chiller rebuild work"
+     ],
+     "oblique": [
+      "fixing the rapid-cooling machine",
+      "restoring quick-chill capacity",
+      "the food-safety cooling fix",
+      "a failed compressor on the cook-chill line",
+      "getting cooked food cooled fast again",
+      "the refrigeration breakdown",
+      "emergency cooling work",
+      "the cook-chill line outage",
+      "a major cold-equipment overhaul",
+      "worn compressors",
+      "the HACCP-critical cooler fix",
+      "work flagged by the health inspector",
+      "the cooling bottleneck",
+      "bringing the chill room back online",
+      "a refurbishment of aging refrigeration",
+      "the overdue cooling refurbishment"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "steam_kettle",
+     "vendor": "Steamline Boiler Works",
+     "memos": [
+      "Steam kettle replacement PO 3420",
+      "Steam kettle install"
+     ],
+     "cross_memo": "Steam kettle — plumbing hookup",
+     "plain": [
+      "the steam kettle replacement",
+      "the steam kettle install",
+      "a new steam kettle"
+     ],
+     "oblique": [
+      "the new soup cauldron",
+      "swapping out the corroded braising vessel",
+      "a large-batch cooking pot",
+      "the sauce station upgrade",
+      "new bulk cooking capacity",
+      "the jacketed vessel purchase",
+      "retiring the old stockpot",
+      "new kitchen hardware for stews",
+      "the hot-kitchen expansion",
+      "bigger batch cookers",
+      "the soup line overhaul",
+      "a cracked cooking vessel",
+      "fitting a new braising pan",
+      "the stock-making equipment",
+      "adding gravy capacity",
+      "a corroded cooker that had to go"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Ramp Vehicle Fleet",
+   "aliases": [
+    "hi-lift trucks",
+    "catering trucks",
+    "ramp fleet",
+    "truck costs",
+    "highloader spend"
+   ],
+   "narrative": [
+    "Hi-lift trucks",
+    "Catering trucks",
+    "Ramp fleet"
+   ],
+   "recurring": [
+    {
+     "vendor": "Skyward GSE Leasing",
+     "base": 22000,
+     "memo": "Hi-lift lease monthly"
+    },
+    {
+     "vendor": "FuelPoint Aviation Supply",
+     "base": 8000,
+     "memo": "Diesel airside fuel"
+    },
+    {
+     "vendor": "Torque Mobile Mechanics",
+     "base": 4500,
+     "memo": "Truck PM WO 6102"
+    }
+   ],
+   "events": [
+    {
+     "key": "scissor_hydraulics",
+     "vendor": "Torque Mobile Mechanics",
+     "memos": [
+      "Scissor hydraulics rebuild WO 6188",
+      "Scissor hydraulics seals"
+     ],
+     "cross_memo": "Scissor hydraulics — spare truck rental",
+     "plain": [
+      "the scissor hydraulics rebuild",
+      "scissor hydraulics seals",
+      "the scissor hydraulics work"
+     ],
+     "oblique": [
+      "fixing the lifting mechanism on the loaders",
+      "leaking rams on the high-loaders",
+      "the elevating box failures",
+      "getting grounded loaders back in service",
+      "the platform raise failures",
+      "safety-tagged loaders",
+      "fluid leaks on the elevating platforms",
+      "the out-of-service vehicles",
+      "a ground-handling safety finding",
+      "jammed cabin-height platforms",
+      "the loader breakdowns",
+      "work the safety audit demanded",
+      "stuck elevating bodies",
+      "emergency loader work",
+      "a failed lifting cylinder",
+      "the vehicle downtime fix"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "brake_overhaul",
+     "vendor": "Brightway Tire & Brake",
+     "memos": [
+      "Brake overhaul fleetwide INV 2290",
+      "Brake overhaul tires"
+     ],
+     "cross_memo": "Brake overhaul — driver overtime",
+     "plain": [
+      "the brake overhaul",
+      "the fleetwide brake overhaul",
+      "brake overhaul tires"
+     ],
+     "oblique": [
+      "stopping-system work across the vehicles",
+      "new rubber all round",
+      "the annual roadworthiness push",
+      "worn wheels and pads",
+      "an airport authority vehicle inspection",
+      "new pads and rotors",
+      "a safety recall on stopping parts",
+      "the wheel-end refresh",
+      "keeping the vans road-legal",
+      "work the airport inspector ordered",
+      "the stopping-distance failures",
+      "a batch of worn treads",
+      "full wheel servicing",
+      "the inspection-prompted vehicle work",
+      "new pads on every van",
+      "the apron safety compliance sweep"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Kitchen Utilities",
+   "aliases": [
+    "utilities",
+    "energy",
+    "power and gas",
+    "utility bills",
+    "energy costs"
+   ],
+   "narrative": [
+    "Utilities",
+    "Energy costs",
+    "Utility bills"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Power & Light",
+     "base": 16000,
+     "memo": "Electric acct 4471 monthly"
+    },
+    {
+     "vendor": "Riverbend Gas",
+     "base": 7000,
+     "memo": "Natural gas service"
+    },
+    {
+     "vendor": "Clearwater Municipal",
+     "base": 3000,
+     "memo": "Water sewer"
+    }
+   ],
+   "events": [
+    {
+     "key": "meter_reconciliation",
+     "vendor": "Riverbend Gas",
+     "memos": [
+      "Meter reconciliation backbill",
+      "Meter reconciliation true-up"
+     ],
+     "cross_memo": "Meter reconciliation — audit fee",
+     "plain": [
+      "the meter reconciliation backbill",
+      "the meter reconciliation true-up",
+      "meter reconciliation charges"
+     ],
+     "oblique": [
+      "an underbilled period being caught up",
+      "the utility's catch-up invoice",
+      "prior-period usage corrections",
+      "a misread gauge",
+      "billing errors from earlier quarters",
+      "the provider's retroactive adjustment",
+      "old consumption finally invoiced",
+      "correcting estimated readings",
+      "a lump-sum catch-up",
+      "back charges for underestimated usage",
+      "the stale estimates",
+      "years of low estimates corrected",
+      "a retro charge",
+      "the faulty reading fix",
+      "the supplier's billing cleanup",
+      "previously unbilled consumption"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "generator_rental",
+     "vendor": "Voltreserve Rentals",
+     "memos": [
+      "Generator rental grid outage",
+      "Generator rental diesel"
+     ],
+     "cross_memo": "Generator rental — spoiled stock writeoff",
+     "plain": [
+      "the generator rental",
+      "generator rental diesel",
+      "the generator rental during the outage"
+     ],
+     "oblique": [
+      "keeping the kitchen running through the blackout",
+      "temporary on-site electricity",
+      "the storm-related shutdown",
+      "emergency standby units",
+      "a substation failure",
+      "the multi-day blackout",
+      "portable gensets",
+      "fuel for emergency units",
+      "continuity measures after the storm",
+      "hired backup capacity",
+      "the utility failure contingency",
+      "standby electricity while the lines were down",
+      "a hurricane contingency",
+      "emergency site electrification",
+      "the brownout response",
+      "keeping the freezers cold through the storm"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Sanitation & Food Safety",
+   "aliases": [
+    "sanitation",
+    "food safety",
+    "cleaning chemicals",
+    "hygiene",
+    "sanitation spend"
+   ],
+   "narrative": [
+    "Sanitation",
+    "Food safety",
+    "Hygiene"
+   ],
+   "recurring": [
+    {
+     "vendor": "PureGuard Chemical",
+     "base": 6000,
+     "memo": "Sanitizer detergent drums"
+    },
+    {
+     "vendor": "Ecolim Pest Defense",
+     "base": 1800,
+     "memo": "Pest control monthly"
+    },
+    {
+     "vendor": "LabTrue Microbiology",
+     "base": 3200,
+     "memo": "Swab testing PO 7710"
+    }
+   ],
+   "events": [
+    {
+     "key": "listeria_investigation",
+     "vendor": "LabTrue Microbiology",
+     "memos": [
+      "Listeria investigation environmental panel",
+      "Listeria investigation retest"
+     ],
+     "cross_memo": "Listeria investigation — product hold",
+     "plain": [
+      "the listeria investigation",
+      "listeria investigation retests",
+      "the listeria investigation follow-up"
+     ],
+     "oblique": [
+      "the pathogen scare",
+      "a positive bacterial finding",
+      "extra lab work after a contamination hit",
+      "the outbreak response",
+      "intensified sampling on the cold line",
+      "a carrier-requested contamination probe",
+      "the bacteria follow-up",
+      "chasing a positive result in the salad room",
+      "microbe hunting",
+      "the contamination workup",
+      "re-sampling after the failed result",
+      "a food-borne illness scare",
+      "a look into drain contamination",
+      "pathogen sampling demanded by the client",
+      "the quality incident",
+      "verifying the line was sanitary again"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "duct_degreasing",
+     "vendor": "Sterling Deep Clean Services",
+     "memos": [
+      "Duct degreasing hood exhaust",
+      "Duct degreasing after hours"
+     ],
+     "cross_memo": "Duct degreasing — overtime supervision",
+     "plain": [
+      "the duct degreasing",
+      "duct degreasing of the hood exhaust",
+      "the duct degreasing job"
+     ],
+     "oblique": [
+      "the fire-code grease removal",
+      "scrubbing the ventilation system",
+      "a fire marshal's citation",
+      "grease buildup in the vents",
+      "the insurer-mandated vent work",
+      "the semiannual fire-risk scrub",
+      "removing flammable residue above the fryers",
+      "a ventilation scour",
+      "the kitchen fire-hazard abatement",
+      "overnight vent work",
+      "fat residue removal",
+      "the inspection-required ventilation job",
+      "a grease fire near-miss",
+      "flue scrubbing",
+      "the ventilation hygiene job",
+      "the extraction-system scrub"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Airside Security & Badging",
+   "aliases": [
+    "security",
+    "badging",
+    "airside security",
+    "seal and screening",
+    "security costs"
+   ],
+   "narrative": [
+    "Security",
+    "Badging",
+    "Security costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Aviation Guard",
+     "base": 14000,
+     "memo": "Guard services monthly"
+    },
+    {
+     "vendor": "TamperLok Seals",
+     "base": 2500,
+     "memo": "Trolley seals"
+    },
+    {
+     "vendor": "Airport Credential Office",
+     "base": 1200,
+     "memo": "Badge renewals"
+    }
+   ],
+   "events": [
+    {
+     "key": "regulator_surge",
+     "vendor": "Sentinel Aviation Guard",
+     "memos": [
+      "Regulator surge staffing",
+      "Regulator surge screening overtime"
+     ],
+     "cross_memo": "Regulator surge — CCTV upgrade",
+     "plain": [
+      "the regulator surge",
+      "regulator surge staffing",
+      "the regulator surge period"
+     ],
+     "oblique": [
+      "the heightened threat level",
+      "extra officers after a government directive",
+      "the national alert",
+      "added checkpoint personnel",
+      "an authority crackdown",
+      "tighter inspection of outgoing carts",
+      "the security posture increase",
+      "more people inspecting outbound meals",
+      "the elevated alert period",
+      "a mandated search of every cart",
+      "temporary extra patrols",
+      "the post-incident tightening",
+      "additional bag inspections for staff",
+      "the threat-level response",
+      "doubling checkpoint coverage",
+      "a government-ordered clampdown"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "vetting_backlog",
+     "vendor": "Ironclad Background Check Co",
+     "memos": [
+      "Vetting backlog rescreen batch",
+      "Vetting backlog fingerprinting"
+     ],
+     "cross_memo": "Vetting backlog — idle labor",
+     "plain": [
+      "the vetting backlog",
+      "vetting backlog fingerprinting",
+      "clearing the vetting backlog"
+     ],
+     "oblique": [
+      "re-clearing new hires",
+      "the pile-up of pending clearances",
+      "criminal-history reviews for the new crew",
+      "onboarding clearances",
+      "the hiring-wave clearances",
+      "a rule change requiring fresh clearances",
+      "biometric enrollment for recruits",
+      "pre-employment clearances",
+      "the seasonal hiring clearances",
+      "clearance processing for temps",
+      "re-clearing the whole workforce",
+      "an expired-clearance cleanup",
+      "the recruitment push clearances",
+      "clearing the queue of new starters",
+      "the authority's fresh clearance mandate",
+      "identity verification for new joiners"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Facility Rent",
+   "aliases": [
+    "rent",
+    "facility rent",
+    "lease costs",
+    "occupancy",
+    "building rent"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Lease costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Runway Park Properties",
+     "base": 28000,
+     "memo": "Base rent Bldg C"
+    },
+    {
+     "vendor": "Airfield Estates CAM",
+     "base": 4200,
+     "memo": "CAM charges"
+    }
+   ],
+   "events": [
+    {
+     "key": "roof_assessment",
+     "vendor": "Airfield Estates CAM",
+     "memos": [
+      "Roof assessment special levy",
+      "Roof assessment pro rata"
+     ],
+     "cross_memo": "Roof assessment — leak damage stock",
+     "plain": [
+      "the roof assessment",
+      "the roof assessment levy",
+      "our roof assessment share"
+     ],
+     "oblique": [
+      "the landlord's pass-through for overhead repairs",
+      "a one-time building improvement recharge",
+      "our share of the new covering on the warehouse",
+      "storm repairs passed on by the owner",
+      "the owner's capital recovery bill",
+      "a common-area improvement allocation",
+      "the waterproofing project",
+      "landlord recoveries for structural work",
+      "the top-of-building replacement",
+      "a tenant contribution to the membrane project",
+      "the building owner's one-off recharge",
+      "weatherproofing the hangar-side building",
+      "structural repairs billed back",
+      "the owner's catch-up recharge",
+      "our portion of the landlord's capex",
+      "a lease-clause recovery"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "overflow_freezer",
+     "vendor": "Northfield Cold Storage LLC",
+     "memos": [
+      "Overflow freezer space wk 1-4",
+      "Overflow freezer space pallet fees"
+     ],
+     "cross_memo": "Overflow freezer space — shuttle van",
+     "plain": [
+      "the overflow freezer space",
+      "overflow freezer space pallet fees",
+      "renting overflow freezer space"
+     ],
+     "oblique": [
+      "renting extra frozen capacity offsite",
+      "a temporary offsite warehouse",
+      "short-term sub-zero warehousing",
+      "the holiday inventory buildup",
+      "parking product at a third-party depot",
+      "outside frozen warehousing",
+      "extra room while the main building was repaired",
+      "a stopgap offsite depot",
+      "the seasonal inventory spillover",
+      "third-party frozen holding",
+      "additional racks rented elsewhere",
+      "warehousing during the renovation",
+      "the offsite inventory arrangement",
+      "leased chilled capacity across town",
+      "surplus frozen meals kept offsite",
+      "a short lease on a nearby depot"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

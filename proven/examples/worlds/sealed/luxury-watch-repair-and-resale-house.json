@@ -1,0 +1,825 @@
+{
+ "slug": "luxury-watch-repair-and-resale-house",
+ "industry": "luxury watch repair and resale house",
+ "entities": [
+  "Kessler & Vane Horology",
+  "Maison Ardent Timepieces",
+  "Castellan Watch Atelier",
+  "Halberd Fine Watches",
+  "Orrery Row Horlogers"
+ ],
+ "accounts": [
+  {
+   "name": "Watchmaker Bench Labor",
+   "aliases": [
+    "bench labor",
+    "watchmaker labor",
+    "contract watchmakers",
+    "bench costs",
+    "outside watchmaking"
+   ],
+   "narrative": [
+    "Bench labor",
+    "Watchmaker labor",
+    "Contract watchmakers"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brandt Horological Services",
+     "base": 18000,
+     "memo": "Monthly contract servicing — overhaul queue"
+    },
+    {
+     "vendor": "Lemaire Bench Partners",
+     "base": 9500,
+     "memo": "Retainer — complication repairs"
+    },
+    {
+     "vendor": "Okafor Precision Finishing",
+     "base": 4200,
+     "memo": "Case and bracelet refinishing"
+    }
+   ],
+   "events": [
+    {
+     "key": "chronograph_backlog",
+     "vendor": "Brandt Horological Services",
+     "memos": [
+      "Chronograph backlog surge — overtime hours",
+      "Chronograph backlog surge — weekend shifts"
+     ],
+     "cross_memo": "Chronograph backlog surge — rush parts freight",
+     "plain": [
+      "the chronograph backlog surge",
+      "chronograph backlog surge billing",
+      "the chronograph backlog"
+     ],
+     "oblique": [
+      "extra time paid to clear the pileup",
+      "the stopwatch-function job pile",
+      "catching up on delayed customer jobs",
+      "longer workdays at the atelier",
+      "Saturday and Sunday staffing",
+      "pay premiums to get through the pileup",
+      "the turnaround crunch",
+      "clearing late timer-function orders",
+      "work that slipped from earlier periods",
+      "an influx of sports-model tune-up requests",
+      "keeping promised delivery dates",
+      "premium pay for our outside craftsmen",
+      "the seasonal intake spike",
+      "catching up after the holiday intake",
+      "time-and-a-half billing",
+      "the customer wait-list cleanup"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "tourbillon_specialist",
+     "vendor": "Vautrin Fine Mechanics",
+     "memos": [
+      "Tourbillon restoration engagement — specialist fee",
+      "Tourbillon restoration engagement — travel stipend"
+     ],
+     "cross_memo": "Tourbillon restoration engagement — insured transit",
+     "plain": [
+      "the tourbillon restoration engagement",
+      "tourbillon restoration work",
+      "the tourbillon restoration"
+     ],
+     "oblique": [
+      "bringing in an outside master for one rare piece",
+      "the rare cage movement job",
+      "a visiting expert's invoice",
+      "reviving a collector's rotating-cage heirloom",
+      "the one-off master craftsman",
+      "hiring a flown-in expert",
+      "the heirloom revival project",
+      "expert help on a client's vintage piece",
+      "a museum-grade rebuild",
+      "the consultant from Geneva",
+      "work we couldn't do in-house",
+      "a single high-value client commission",
+      "outside expertise for the vintage rebuild",
+      "bringing a master craftsman on site",
+      "the antique piece revival",
+      "the guest expert's lodging"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Movement Parts & Components",
+   "aliases": [
+    "movement parts",
+    "watch parts",
+    "components",
+    "spare parts",
+    "parts inventory spend"
+   ],
+   "narrative": [
+    "Movement parts",
+    "Watch parts",
+    "Spare parts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Jura Calibre Supply",
+     "base": 14000,
+     "memo": "Monthly mainsprings and gaskets order"
+    },
+    {
+     "vendor": "Kestrel Crystal Works",
+     "base": 5200,
+     "memo": "Sapphire crystals replenishment"
+    },
+    {
+     "vendor": "Alpenwerk Dial Studio",
+     "base": 3800,
+     "memo": "Dial and hand stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "obsolete_balance_buyout",
+     "vendor": "Jura Calibre Supply",
+     "memos": [
+      "Obsolete balance wheels buyout — lot A",
+      "Obsolete balance wheels buyout — lot B"
+     ],
+     "cross_memo": "Obsolete balance wheels buyout — appraisal",
+     "plain": [
+      "the obsolete balance wheels",
+      "obsolete balance wheels buyout",
+      "the obsolete balance wheels purchase"
+     ],
+     "oblique": [
+      "buying up discontinued regulating organs",
+      "the last-chance purchase of hard-to-find spares",
+      "hoarding end-of-life oscillators",
+      "a manufacturer's final clearance",
+      "securing spares before they vanish",
+      "the discontinued spares grab",
+      "locking in out-of-production parts",
+      "a bulk deal on legacy timekeeping pieces",
+      "the end-of-line purchase",
+      "protecting future vintage servicing",
+      "regulating components nobody makes anymore",
+      "the legacy spares opportunity",
+      "a one-time bulk acquisition",
+      "insurance against future shortages",
+      "the out-of-production component haul",
+      "beating collectors to scarce spares"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "pivot_staff_tooling",
+     "vendor": "Ferrand Pivot Foundry",
+     "memos": [
+      "Custom pivot staffs — tooling setup",
+      "Custom pivot staffs — first run"
+     ],
+     "cross_memo": "Custom pivot staffs — inspection microscope",
+     "plain": [
+      "the custom pivot staffs",
+      "custom pivot staffs tooling",
+      "the custom pivot staffs run"
+     ],
+     "oblique": [
+      "commissioning bespoke axles for old movements",
+      "having axles machined to order",
+      "a made-to-measure machining job",
+      "the bespoke axle program",
+      "replacing unobtainable arbors",
+      "paying a machinist to recreate antique axles",
+      "the new machine shop relationship",
+      "fabrication of irreplaceable arbors",
+      "one-off micro-machining",
+      "the arbor fabrication project",
+      "getting antique axles remade",
+      "a small-batch machining commission",
+      "outsourced micro-turning",
+      "the cost to recreate unavailable arbors",
+      "a new machinist's startup charges",
+      "bespoke watch arbors"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Authentication & Certification",
+   "aliases": [
+    "authentication",
+    "certification fees",
+    "provenance checks",
+    "auth costs",
+    "cert spend"
+   ],
+   "narrative": [
+    "Authentication",
+    "Certification fees",
+    "Provenance checks"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Provenance Labs",
+     "base": 7800,
+     "memo": "Pre-sale authenticity reports"
+    },
+    {
+     "vendor": "Ledgerline Archive Registry",
+     "base": 2400,
+     "memo": "Serial number registry lookups"
+    },
+    {
+     "vendor": "Cartographe Gemological",
+     "base": 3100,
+     "memo": "Bezel stone grading"
+    }
+   ],
+   "events": [
+    {
+     "key": "estate_intake",
+     "vendor": "Sentinel Provenance Labs",
+     "memos": [
+      "Estate collection intake — batch review",
+      "Estate collection intake — x-ray analysis"
+     ],
+     "cross_memo": "Estate collection intake — courier pickup",
+     "plain": [
+      "the estate collection intake",
+      "estate collection intake reviews",
+      "the estate collection"
+     ],
+     "oblique": [
+      "vetting a deceased collector's watches",
+      "checking the inherited trove",
+      "the big inheritance consignment",
+      "verifying dozens of pieces from one family",
+      "the bequest vetting",
+      "a large heirloom consignment",
+      "confirming genuineness of a whole trove",
+      "the family trove",
+      "vetting before the big consignment",
+      "checks on the inherited pieces",
+      "a widow's consignment",
+      "the probate consignment",
+      "vetting forty inherited pieces",
+      "the inheritance trove checks",
+      "screening an entire bequest",
+      "work on the heirloom consignment"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "counterfeit_dispute",
+     "vendor": "Aurelian Forensic Metrology",
+     "memos": [
+      "Counterfeit dispute — forensic teardown",
+      "Counterfeit dispute — expert witness report"
+     ],
+     "cross_memo": "Counterfeit dispute — legal retainer",
+     "plain": [
+      "the counterfeit dispute",
+      "counterfeit dispute work",
+      "the counterfeit dispute teardown"
+     ],
+     "oblique": [
+      "proving a returned piece was fake",
+      "the buyer's claim of a fraudulent purchase",
+      "defending a deal challenged by a client",
+      "the fake watch allegation",
+      "a customer complaint over genuineness",
+      "lab work for the chargeback fight",
+      "the contested deal",
+      "fighting a refund demand",
+      "evidence for the arbitration",
+      "the arbitration case",
+      "disproving a buyer's fraud claim",
+      "the replica accusation",
+      "backing up our deal in arbitration",
+      "a challenged resale",
+      "protecting our name after a fraud claim",
+      "the chargeback defense"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Insured Shipping & Courier",
+   "aliases": [
+    "shipping",
+    "armored courier",
+    "insured freight",
+    "courier costs",
+    "postage and transit"
+   ],
+   "narrative": [
+    "Shipping",
+    "Armored courier",
+    "Insured freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brinwell Armored Logistics",
+     "base": 11000,
+     "memo": "Weekly armored pickups"
+    },
+    {
+     "vendor": "Parcelguard Secure Post",
+     "base": 4600,
+     "memo": "Registered declared-value parcels"
+    },
+    {
+     "vendor": "Meridian Air Couriers",
+     "base": 6200,
+     "memo": "Client delivery hand-carry"
+    }
+   ],
+   "events": [
+    {
+     "key": "basel_show",
+     "vendor": "Meridian Air Couriers",
+     "memos": [
+      "Basel trade show — outbound leg",
+      "Basel trade show — return leg"
+     ],
+     "cross_memo": "Basel trade show — booth rental",
+     "plain": [
+      "the basel trade show",
+      "basel trade show freight",
+      "the basel trade show legs"
+     ],
+     "oblique": [
+      "getting inventory to the Swiss exhibition and back",
+      "the exhibition",
+      "flying stock to the spring fair in Switzerland",
+      "moving display pieces for the industry expo",
+      "the expo logistics",
+      "carrying our showcase pieces abroad",
+      "the international dealer fair",
+      "exhibiting in Switzerland",
+      "transporting the expo inventory",
+      "getting showcase watches to the convention",
+      "the dealer convention trip",
+      "presence at the big industry gathering",
+      "expo transport",
+      "bringing display stock overseas",
+      "sending the showcase collection abroad",
+      "the annual horology expo"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "lost_package",
+     "vendor": "Northgate Claims Recovery",
+     "memos": [
+      "Lost package trace — investigator fee",
+      "Lost package trace — replacement shipment"
+     ],
+     "cross_memo": "Lost package trace — insurance deductible",
+     "plain": [
+      "the lost package trace",
+      "lost package trace costs",
+      "the lost package"
+     ],
+     "oblique": [
+      "a parcel that went missing",
+      "tracking down a vanished box",
+      "the missing watch search",
+      "re-sending a piece that never arrived",
+      "the disappeared consignment",
+      "hunting for a misrouted box",
+      "a misplaced customer order",
+      "locating a piece stolen en route",
+      "the misrouted watch",
+      "sending a substitute after the first went missing",
+      "the vanished box",
+      "a carrier mishap",
+      "the misrouting incident",
+      "making good on a piece that went astray",
+      "chasing a carrier about a missing watch",
+      "the en-route disappearance"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Vault Security & Monitoring",
+   "aliases": [
+    "vault security",
+    "security",
+    "alarm monitoring",
+    "guarding",
+    "safe room costs"
+   ],
+   "narrative": [
+    "Vault security",
+    "Security",
+    "Alarm monitoring"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironward Guard Services",
+     "base": 8400,
+     "memo": "Showroom guard coverage"
+    },
+    {
+     "vendor": "Halcyon Alarm Monitoring",
+     "base": 1900,
+     "memo": "24/7 central station feed"
+    },
+    {
+     "vendor": "Bastion Safe Works",
+     "base": 1200,
+     "memo": "Safe maintenance contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "biometric_upgrade",
+     "vendor": "Halcyon Alarm Monitoring",
+     "memos": [
+      "Biometric access upgrade — readers",
+      "Biometric access upgrade — installation"
+     ],
+     "cross_memo": "Biometric access upgrade — staff badge software",
+     "plain": [
+      "the biometric access upgrade",
+      "biometric access upgrade work",
+      "the biometric access readers"
+     ],
+     "oblique": [
+      "fingerprint locks on the strongroom",
+      "replacing key-based entry",
+      "the fingerprint scanners",
+      "modernizing how people get into the strongroom",
+      "insurer-requested entry controls",
+      "the new door hardware",
+      "retiring physical keys",
+      "tighter entry control after the audit",
+      "fingerprint entry",
+      "the strongroom door retrofit",
+      "who-goes-in tracking for the underwriter",
+      "palm and fingerprint scanning",
+      "the entry system overhaul",
+      "controls our underwriter asked for",
+      "locking down strongroom entry",
+      "the key replacement project"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "window_breach",
+     "vendor": "Corvane Risk Response",
+     "memos": [
+      "Window breach repair — laminated glazing",
+      "Window breach repair — emergency boarding"
+     ],
+     "cross_memo": "Window breach repair — inventory recount",
+     "plain": [
+      "the window breach repair",
+      "window breach repair work",
+      "the window breach"
+     ],
+     "oblique": [
+      "the attempted robbery",
+      "fixing damage from the attempted theft",
+      "cleanup after the overnight intrusion",
+      "the shattered storefront",
+      "hardening the front of the store",
+      "the burglary attempt",
+      "securing the shop after the attempted heist",
+      "smashed display frontage",
+      "the night someone tried to get in",
+      "putting the storefront back together",
+      "theft-attempt damage",
+      "stronger pane replacements",
+      "the after-hours intrusion",
+      "making the facade burglar-resistant",
+      "the robbery attempt cleanup",
+      "temporary cover for the broken frontage"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Marketplace & Auction Fees",
+   "aliases": [
+    "marketplace fees",
+    "auction fees",
+    "listing fees",
+    "platform commissions",
+    "commission costs"
+   ],
+   "narrative": [
+    "Marketplace fees",
+    "Auction fees",
+    "Listing fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tempora Online Exchange",
+     "base": 9200,
+     "memo": "Seller commission statement"
+    },
+    {
+     "vendor": "Gavel & Hart House",
+     "base": 6800,
+     "memo": "Consignor premium"
+    },
+    {
+     "vendor": "Luxlist Promotions",
+     "base": 1500,
+     "memo": "Featured listing slots"
+    }
+   ],
+   "events": [
+    {
+     "key": "spring_evening_sale",
+     "vendor": "Gavel & Hart House",
+     "memos": [
+      "Spring evening sale — catalogue photography",
+      "Spring evening sale — preview reception"
+     ],
+     "cross_memo": "Spring evening sale — lot shipping",
+     "plain": [
+      "the spring evening sale",
+      "spring evening sale costs",
+      "the spring evening sale catalogue"
+     ],
+     "oblique": [
+      "the headline auction night",
+      "putting our best pieces under the hammer",
+      "the marquee auction",
+      "glossy brochure shoots and a cocktail event",
+      "the flagship bidding event",
+      "marketing the hammer night",
+      "our largest batch going to auction",
+      "the gala auction",
+      "a big night at the auction house",
+      "pictures and party for the auction",
+      "the showcase auction",
+      "staging the top-tier auction",
+      "costs around the major auction",
+      "the bidding gala",
+      "advertising the big auction lineup",
+      "hosting collectors before the auction"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "storefront_migration",
+     "vendor": "Vitrine Digital Bazaar",
+     "memos": [
+      "Storefront migration — bulk relisting",
+      "Storefront migration — photo reshoot"
+     ],
+     "cross_memo": "Storefront migration — integration consultant",
+     "plain": [
+      "the storefront migration",
+      "storefront migration work",
+      "the storefront migration reshoot"
+     ],
+     "oblique": [
+      "moving our inventory to a new web channel",
+      "switching to a different resale site",
+      "the channel switch",
+      "re-uploading every piece onto the new site",
+      "onboarding with a new e-commerce venue",
+      "the move off the old marketplace",
+      "joining a second sales channel",
+      "the web shop changeover",
+      "fresh product imagery for the new site",
+      "setup costs on the new resale portal",
+      "the e-commerce move",
+      "replatforming our web inventory",
+      "entering a new resale venue",
+      "the new channel's onboarding",
+      "getting the inventory live on another site",
+      "the switch of web venues"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Showroom Rent",
+   "aliases": [
+    "rent",
+    "occupancy",
+    "lease",
+    "showroom lease",
+    "premises costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Premises costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Whitcombe Street Properties",
+     "base": 24000,
+     "memo": "Monthly showroom lease"
+    },
+    {
+     "vendor": "Linden Arcade Management",
+     "base": 3200,
+     "memo": "Common area charges"
+    }
+   ],
+   "events": [
+    {
+     "key": "tax_true_up",
+     "vendor": "Whitcombe Street Properties",
+     "memos": [
+      "Tax escalation true-up — prior year",
+      "Tax escalation true-up — current year estimate"
+     ],
+     "cross_memo": "Tax escalation true-up — accountant review",
+     "plain": [
+      "the tax escalation true-up",
+      "tax escalation true-up billing",
+      "the tax escalation"
+     ],
+     "oblique": [
+      "the landlord's property levy pass-through",
+      "higher municipal assessments passed on to us",
+      "catching up on last period's levy",
+      "the assessment catch-up",
+      "an increase in the building's levies",
+      "our share of the higher assessment",
+      "a retroactive landlord bill",
+      "the levy pass-through",
+      "the city reassessing the building",
+      "backbilled assessments",
+      "billing for the building's higher valuation",
+      "the reassessment",
+      "property levies the owner passed through",
+      "a reconciliation from the landlord",
+      "the municipal reassessment",
+      "a back bill from the owner"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "workshop_buildout",
+     "vendor": "Fairmount Fitout Builders",
+     "memos": [
+      "Workshop expansion buildout — swing space",
+      "Workshop expansion buildout — partition works"
+     ],
+     "cross_memo": "Workshop expansion buildout — bench lighting",
+     "plain": [
+      "the workshop expansion buildout",
+      "workshop expansion buildout costs",
+      "the workshop expansion"
+     ],
+     "oblique": [
+      "making room for more watchmakers",
+      "a bigger atelier",
+      "renting interim premises during construction",
+      "the atelier enlargement",
+      "growing the repair floor",
+      "temporary quarters while the back room is rebuilt",
+      "adding craftsman seats",
+      "the back-of-house enlargement",
+      "interim premises",
+      "the repair room renovation",
+      "doubling atelier capacity",
+      "the construction project out back",
+      "new walls for the repair floor",
+      "room for two more craftsmen",
+      "the renovation",
+      "relocating technicians during construction"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Software & Subscriptions",
+   "aliases": [
+    "software",
+    "subscriptions",
+    "saas",
+    "it subscriptions",
+    "systems spend"
+   ],
+   "narrative": [
+    "Software",
+    "Subscriptions",
+    "Systems spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tickwise Repair Tracker",
+     "base": 2800,
+     "memo": "Job ticket platform seats"
+    },
+    {
+     "vendor": "Quillmark Inventory Cloud",
+     "base": 1900,
+     "memo": "Stock and serial tracking"
+    },
+    {
+     "vendor": "Pricepulse Market Data",
+     "base": 1400,
+     "memo": "Resale price index feed"
+    }
+   ],
+   "events": [
+    {
+     "key": "customer_portal",
+     "vendor": "Tickwise Repair Tracker",
+     "memos": [
+      "Customer portal module — activation",
+      "Customer portal module — data import"
+     ],
+     "cross_memo": "Customer portal module — staff training",
+     "plain": [
+      "the customer portal module",
+      "customer portal module setup",
+      "the customer portal"
+     ],
+     "oblique": [
+      "letting clients follow their watch online",
+      "self-service status updates for owners",
+      "the client-facing web app",
+      "fewer phone calls asking about progress",
+      "an owner login feature",
+      "the client self-service add-on",
+      "online status lookups for owners",
+      "giving owners visibility into progress",
+      "the new client app",
+      "a status-checking feature for patrons",
+      "the self-service rollout",
+      "cutting down status calls",
+      "the patron login rollout",
+      "an add-on so owners can check progress",
+      "client visibility features",
+      "online progress updates"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "erp_cutover",
+     "vendor": "Ostrava Integration Partners",
+     "memos": [
+      "ERP cutover — implementation",
+      "ERP cutover — license prepayment"
+     ],
+     "cross_memo": "ERP cutover — accounting overtime",
+     "plain": [
+      "the erp cutover",
+      "erp cutover costs",
+      "the erp cutover implementation"
+     ],
+     "oblique": [
+      "replacing the old general ledger",
+      "the new finance suite",
+      "moving finance onto one suite",
+      "retiring the legacy bookkeeping tool",
+      "the finance system replacement",
+      "go-live of the new back office",
+      "consolidating our finance tools",
+      "the back-office modernization",
+      "switching general ledgers",
+      "upfront fees for the finance suite",
+      "the year-long back-office project",
+      "rolling out enterprise planning tools",
+      "the switchover",
+      "a new financial backbone",
+      "consultants for the finance changeover",
+      "the ledger replacement"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

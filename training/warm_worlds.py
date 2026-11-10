@@ -31,12 +31,17 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--workers", type=int, default=4)
     p.add_argument("--allow-network", action="store_true")
     p.add_argument("--usd-budget", type=float, default=None)
+    p.add_argument("--taught-only", action="store_true",
+                   help="only the first half of each split: the closes teach-sim shows a proposer")
     args = p.parse_args(argv)
     env.load()
     netguard.allow_network() if args.allow_network else netguard.install()
     proposer = build(args.extractor, model=args.model, budget=Budget(None, args.usd_budget))
-    closes = [s for world in worlds.suite(args.suite) for phrasing in args.phrasings
-              for s in generate_split("test", args.n, phrasing, world=world)]
+    closes = []
+    for world in worlds.suite(args.suite):
+        for phrasing in args.phrasings:
+            split = generate_split("test", args.n, phrasing, world=world)
+            closes += split[:len(split) // 2] if args.taught_only else split
     start, failed = time.time(), 0
 
     def one(scenario) -> int:
