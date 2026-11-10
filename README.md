@@ -601,8 +601,8 @@ The full account, with every table and the commands, is in
   substrings of the explanation, and accounts always come from the chart, at 0.73 ms per
   decoding step. Search terms stay free, because constraining them to the ledger would leak
   the answer.
-- **Reinforcement learning** against the checker's reward (`training/rl.py`, RLOO) is
-  implemented. No RL result is claimed.
+- **Reinforcement learning** against the checker's reward (`training/rl.py`, RLOO) runs on
+  multi-world episodes. A 20-step run changed nothing measurable. No RL result is claimed.
 
 What does not exist yet: a fine-tuned model that is worth using in place of the hosted one,
 and any measurement on a real company's books.

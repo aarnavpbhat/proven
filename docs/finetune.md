@@ -37,6 +37,10 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
 - **Constrained decoding** makes every reply admissible by construction (valid schema, copied
   fields are substrings of the explanation, accounts come from the chart) at 0.73 ms per
   decoding step (section 7).
+- **Also measured, and small or null:** pooling four sampled replies by a blind vote finds 3.6
+  to 4.5 points more causes on the dev worlds (section 8); twenty steps of multi-world RL
+  changed nothing measurable (section 11); re-offering confirmed words to the proposer helps a
+  lot and breaks the kill criteria, so it was rejected (section 10).
 - Not done: a 7B result, RL at any scale that would mean something, a real company's books.
 
 ## 1. The task, and what the proposer sees
@@ -577,7 +581,25 @@ validation reward was 0.8394 on 32 closes. It was stopped by hand after 4 steps,
 step took about 9 minutes and it was optimising the wrong target (the memorised world). No
 validation was run after step 0. **No RL result is claimed.**
 
-RL_RESULT
+**A short multi-world run, and what it showed.** After the code was reworked to draw episodes
+round-robin from the 91 training worlds and validate on the dev worlds, RL was run for 20
+optimizer steps from the rebuilt-target adapter (2 closes a step, 4 samples each at
+temperature 1.0; 144 closes screened, 77 of them not already solved by the greedy reply). It
+took 28 minutes, about 85 s a step.
+
+| | Validation reward (32 dev closes) | Lessons | Cause found, dev heldout (382 claims) |
+|---|---:|---:|---:|
+| before (step 0) | 0.486 | 21 | 37.7% |
+| step 10 | 0.469 | 20 | |
+| step 20 | 0.490 | 21 | 37.4% |
+
+Nothing moved: the differences are inside the noise of 32 closes, and no kill criterion was
+touched (0 unsafe, 0 control FAIL in validation). Twenty steps of plain SGD on a clipped
+gradient is far too little to say whether RL helps; the run shows that the loop works on
+multi-world episodes and what a step costs, and nothing else. **No RL result is claimed.**
+There is also a reason to expect little from it at this model size: the reward can only
+reinforce guesses the model already samples, and section 6 shows that even four samples of a
+larger untuned model, pooled with no cap, find fewer than half the causes.
 
 ## 12. What went wrong
 
