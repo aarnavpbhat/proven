@@ -66,6 +66,18 @@ def test_a_lesson_that_does_not_pass_the_claim_is_left_as_it_is():
     assert (out.kept, out.dropped, out.verdict) == (["leak", "roofing"], [], "FAIL")
 
 
+def test_a_lesson_that_covers_part_of_a_job_is_refused():
+    # "membrane" finds one of the repair vendor's two new charges in October, not the other.
+    with pytest.raises(learned.LessonRefused, match="only part of Harbor Waterproofing Co's new charges"):
+        learned.trim_terms(["membrane"], book(), ACCOUNT, passes_with("membrane"))
+
+
+def test_a_word_is_not_dropped_if_that_would_leave_part_of_a_job():
+    # Either word alone passes, but alone each covers half of the repair: both stay.
+    out = learned.trim_terms(["membrane", "drain"], book(), ACCOUNT, passes_with("membrane", "drain"))
+    assert out.kept == ["membrane", "drain"] and out.dropped == []
+
+
 # ── where they apply ──
 
 TRAVEL = "Travel fell $12K, reflecting fewer customer visits."

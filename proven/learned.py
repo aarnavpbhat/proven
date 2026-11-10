@@ -200,7 +200,7 @@ def trim_terms(terms: list[str], ledger: Ledger, account: str | None,
     guesses words such as a contractor's name; in the teaching close that word matched only
     the contractor's monthly servicing, the PASS did not need it, and in a later close it
     bound the same contractor's other job (the account's other cause) and passed a wrong
-    explanation. When the lesson makes the claim PASS, two rules apply to that close:
+    explanation. When the lesson makes the claim PASS, three rules apply to that close:
 
       (a) ROUTINE ONLY. A word whose every match in the account is a routine line (the
           same vendor and memo in both periods) that moved by less than `materiality` is
@@ -211,12 +211,21 @@ def trim_terms(terms: list[str], ledger: Ledger, account: str | None,
           the word whose matches moved least. A word the PASS rests on has to be there; any
           other is a guess nothing in this close checked, and in a close where it matches
           another cause it would decide the claim.
+      (c) PART OF A JOB. The kept words must cover all of a vendor's new charges (material,
+          not routine) in a period, or none of them. A word that matches one of a vendor's
+          two new charges that month found part of a job: the PASS then leaned on a second
+          word, which matched part of the account's other cause, to clear the threshold of
+          a hedged "primarily due to". Later, a "because of" sentence about the whole job
+          matched only that part and FAILed as a partial explanation, and an explanation
+          whose other charge was booked to the wrong account passed. Such a lesson is
+          refused; no word can be dropped to mend it. Removing a word under (b) is likewise
+          not allowed to leave part of a job uncovered.
 
     A lesson that does not make the claim PASS is left as it is: no word of it is hidden
     behind a PASS, and the safety gate replays it. `verdict(terms)` is the claim's verdict
     with the lesson holding those terms; the result's verdict is the one with the kept
     words, and is not PASS when the PASS rested on a dropped routine word (the caller
-    refuses the lesson then). Raises `LessonRefused` when no word is left."""
+    refuses the lesson then). Raises `LessonRefused` when no word is left, or under (c)."""
     if materiality is None:
         from proven.verify import Policy            # local: keeps `import proven.learned` cheap
         materiality = Policy().materiality
@@ -243,10 +252,35 @@ def trim_terms(terms: list[str], ledger: Ledger, account: str | None,
         if len(kept) == 1:
             break
         trial = [t for t in kept if t != term]
-        if verdict(trial) == "PASS":
+        if (_part_of_a_job(ledger, account, trial, routine, materiality) is None
+                and verdict(trial) == "PASS"):
             kept = trial
             dropped.append({"term": term, "reason": NOT_NEEDED})
+    split = _part_of_a_job(ledger, account, kept, routine, materiality)
+    if split:
+        raise LessonRefused(split)
     return Trimmed(kept, dropped, result)
+
+
+def _part_of_a_job(ledger: Ledger, account: str, words: list[str], routine: set[str],
+                   materiality: float) -> str | None:
+    """Why `words` cover only part of a vendor's new charges in a period, or None (rule c)."""
+    new = [t for t in ledger.in_scope(account)
+           if t.id not in routine and abs(t.amount) >= materiality]
+    found: dict[str, str] = {}
+    for word in words:
+        for txn in _hits(ledger, account, word):
+            found.setdefault(txn.id, word)
+    for txn in new:
+        if txn.id in found:
+            continue
+        sibling = next((t for t in new if t.id in found and t.vendor == txn.vendor
+                        and t.period == txn.period), None)
+        if sibling is not None:
+            return (f"\u201c{found[sibling.id]}\u201d matches only part of {txn.vendor}'s new charges "
+                    f"in {txn.period} (not \u201c{txn.memo}\u201d): a lesson must cover all of a "
+                    "job or none of it")
+    return None
 
 
 def trim_text(trimmed: Trimmed) -> str:
