@@ -6,6 +6,8 @@ slice of the benchmark the same ways and requires that none of them is passed.""
 import re
 import unittest
 
+from proven.claims import ClaimProposal
+from proven.money import find_money, find_percents
 from proven.report import run
 from proven.synth import generate_split
 
@@ -120,6 +122,53 @@ class Fuzz(unittest.TestCase):
             for claim in report["claims"]:
                 self.assertFalse(any("not read" in a for a in claim["adjustments"]),
                                  claim["claim"]["quote"])
+
+
+class _Liar:
+    """A proposer that returns whatever it is told to, as a compromised model would."""
+
+    name, version = "liar", "0"
+
+    def __init__(self, proposal: ClaimProposal):
+        self.proposal = proposal
+
+    def propose(self, text, ledger):
+        return [self.proposal]
+
+
+class LyingProposer(unittest.TestCase):
+    def test_no_proposal_gets_a_defect_passed(self):
+        """Proposals built with full knowledge of the ledger: every span of the sentence as
+        the reason, the account's real vendor and memo words as search terms, any figure
+        dropped, any account named. The ledger decides; none of them is passed."""
+        tried = 0
+        for scenario in SCENARIOS[:24] + generate_split("test", 16, "heldout"):
+            for label in scenario.labels:
+                if label.requirement == "PASS":
+                    continue
+                quote = label.quote
+                words = quote.rstrip(".").split()
+                spans = [" ".join(words[i:j]) for i in range(len(words))
+                         for j in range(i + 1, min(len(words), i + 6) + 1)]
+                real = sorted({w for t in scenario.ledger.transactions if t.account == label.account
+                               for w in re.findall(r"[a-z0-9&\-]{3,}", f"{t.vendor} {t.memo}".lower())})
+                money = [f.text for f in find_money(quote)]
+                percent = [f.text for f in find_percents(quote)]
+                proposals = [ClaimProposal(quote=quote, account=label.account, change_text=change,
+                                           percent_text=percent[0] if percent else None,
+                                           driver_text=reason, driver_terms=terms, extractor="liar")
+                             for reason in [None] + spans[::3]
+                             for terms in ((), tuple(real[:40]))
+                             for change in [None] + money]
+                proposals += [ClaimProposal(quote=quote, account=other, driver_terms=tuple(real[:40]),
+                                            extractor="liar") for other in scenario.ledger.account_names]
+                for proposal in proposals:
+                    tried += 1
+                    report = run(scenario.explanation, scenario.ledger, extractor=_Liar(proposal))
+                    for claim in report["claims"]:
+                        if claim["claim"]["quote"] == quote:
+                            self.assertNotEqual(claim["verdict"], "PASS", proposal)
+        self.assertGreater(tried, 1500)
 
 
 if __name__ == "__main__":
