@@ -11,7 +11,8 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
   advance) the best local model, a 3B model with LoRA adapters, leaves 54.4% of held claims
   decided on held-out phrasing and 40.7% on the paraphrase tier. Sonnet leaves 81.7% and 63.3%;
   the ceiling is 89.3% and 76.0%. The local model loses in all eleven worlds. No run of any
-  proposer has a control FAIL or an unsafe PASS under the current rules.
+  proposer has a control FAIL or an unsafe PASS under the current lesson rules, which were
+  tightened twice during this work because runs on new worlds did have them (section 9).
 - **In the world it was trained on, the same base model scores at the ceiling, and that is
   memorisation.** Trained on 1,000 closes of the default world it decides 92.5% and 82.3%
   against Sonnet's 88.3% and 73.2%. A copy trained with four cause families removed decided
@@ -26,11 +27,13 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
 - **What remains is knowledge, not format.** Asked for terms only, the untuned 3B base finds
   2.6% of causes and the untuned 7B base 32.7%, against Sonnet's 80.1%. A 7B fine-tune was
   attempted and failed numerically. Section 6 has the numbers.
-- **A second suite, kept unopened, found a safety gap in Proven itself.** Lessons drafted from
-  Sonnet's proposals let 2 wrong explanations PASS: a guessed word that matched only a routine
-  monthly line was confirmed with the right word and later vouched for a different cause. A
-  lesson now keeps only the words its PASS needs (section 9). Every table here uses that rule;
-  it cost the bars 0.0 to 0.8 points.
+- **A second suite, kept unopened, found two safety gaps in Proven itself.** Lessons drafted
+  from Sonnet's proposals let 2 wrong explanations PASS, and lessons drafted from the local
+  model's failed 2 correct ones and passed 1 wrong one. In both, a guessed word that matched
+  the wrong lines was confirmed along with a right one. A lesson now keeps only the words its
+  PASS needs, none that matched only routine lines, and must cover all of a vendor's new
+  charges or none (section 9). Every table here uses those rules; they cost the bars 0.0 to
+  0.8 points.
 - **Constrained decoding** makes every reply admissible by construction (valid schema, copied
   fields are substrings of the explanation, accounts come from the chart) at 0.73 ms per
   decoding step (section 7).
@@ -202,12 +205,12 @@ Fully taught (50 closes per world), under the lesson rule of section 9:
 | Claude Sonnet 5.5 | heldout | 306 | 81.7% | 0.883 | 871/998 | 0 | 0 | 349/363 | 67.2%..90.0% |
 | Qwen2.5-3B, single-world | heldout | SFT_H |
 | Qwen2.5-3B, multi-world, gold targets | heldout | 141 | 44.8% | 0.507 | 419/998 | 0 | 0 | 301/363 | 24.2%..63.4% |
-| Qwen2.5-3B, multi-world, rebuilt targets | heldout | 186 | 54.4% | 0.603 | 528/998 | 0 | 0 | 321/363 | 31.7%..69.5% |
+| Qwen2.5-3B, multi-world, rebuilt targets | heldout | 185 | 54.4% | 0.603 | 528/998 | 0 | 0 | 321/363 | 31.7%..69.5% |
 | Oracle (ceiling) | paraphrase | 536 | 76.0% | 0.827 | 799/998 | 0 | 0 | 346/363 | 72.5%..81.4% |
 | Claude Sonnet 5.5 | paraphrase | 444 | 63.3% | 0.698 | 644/998 | 0 | 0 | 326/363 | 54.3%..71.1% |
 | Qwen2.5-3B, single-world | paraphrase | SFT_P |
 | Qwen2.5-3B, multi-world, gold targets | paraphrase | 198 | 33.4% | 0.391 | 269/998 | 0 | 0 | 292/363 | 20.0%..41.6% |
-| Qwen2.5-3B, multi-world, rebuilt targets | paraphrase | 252 | 40.7% | 0.468 | 364/998 | 0 | 0 | 299/363 | 16.7%..56.2% |
+| Qwen2.5-3B, multi-world, rebuilt targets | paraphrase | 251 | 40.7% | 0.468 | 364/998 | 0 | 0 | 299/363 | 16.7%..56.2% |
 
 Sonnet sits 7.6 points under the ceiling on held-out phrasing and 12.7 points under it on the
 paraphrase tier, a wider gap than in the default world, and its weakest worlds
@@ -317,6 +320,12 @@ the tuned 3B, and pooling every term from four 7B samples with no cap still find
 (In the full teaching run on these dev worlds the rebuilt 3B model decides 55.2% of held
 claims, Sonnet 83.0% and the oracle 90.7%.)
 
+**Back in the default world** the rebuilt model decides 89.1% (held-out, 35 lessons, 186/195
+controls) and 77.4% (paraphrase, 59 lessons, 158/195) on the 220-close test of section 3,
+0 control FAIL and 0 unsafe PASS. That is above Sonnet there (88.3% and 73.2%) and below the
+single-world model (92.5% and 82.3%), with 94 of its 3,176 training rows from that world: it
+gave up some of the memorised score and kept most of it.
+
 **The 7B attempt failed.** Fine-tuning `Qwen2.5-7B-Instruct-4bit` on the rebuilt set was tried
 three times. At learning rates 1e-4 and 4e-5 the loss became NaN between iterations 40 and
 50. With the gradient norm clipped at 1.0 (`training/lora_clip.py`) it stayed finite but rose
@@ -336,12 +345,17 @@ halves hold 820 controls and 297 defects.
 |---|---|---:|---:|---:|---:|---:|---|
 | Oracle (ceiling) | sealed, heldout | 273 | 88.9% | 787/820 | 0 | 0 | 86.7%..91.7% |
 | Claude Sonnet 5.5 | sealed, heldout | 255 | 80.5% | 700/820 | 0 | 0 | 74.4%..89.2% |
-| Qwen2.5-3B, rebuilt targets | sealed, heldout | SEALED_H |
+| Qwen2.5-3B, rebuilt targets | sealed, heldout | 163 | 57.8% | 481/820 | 0 | 0 | 38.3%..68.0% |
 | Oracle (ceiling) | sealed, paraphrase | 449 | 76.1% | 655/820 | 0 | 0 | 72.5%..84.9% |
 | Claude Sonnet 5.5 | sealed, paraphrase | 374 | 62.2% | 517/820 | 0 | 0 | 54.2%..73.0% |
-| Qwen2.5-3B, rebuilt targets | sealed, paraphrase | SEALED_P |
+| Qwen2.5-3B, rebuilt targets | sealed, paraphrase | 238 | 44.0% | 335/820 | 0 | 0 | 27.5%..55.3% |
 
-SEALED_TEXT
+The sealed suite agrees with the unseen one. The local model is 22.7 points under Sonnet on
+held-out phrasing (95% interval -29.6 to -16.4) and 18.1 under on paraphrase (-23.7 to -12.6),
+and loses all 9 worlds on both tiers. Its zeros in this table are not a blind result: when it
+was first scored here, under the two-rule version of section 9, its lessons failed 2 correct
+explanations on each tier and passed 1 wrong one on the paraphrase tier. Section 9 has what
+that was and the third rule it led to; the decided shares moved by 0.2 and 0.3 points.
 
 ## 7. Constrained decoding: replies that are admissible by construction
 
@@ -401,7 +415,7 @@ vote with a cap of three terms had no more such cases than a single reply.
 
 K4_RESULT
 
-## 9. A safety gap the second suite exposed, and its fix
+## 9. Two safety gaps the second suite exposed, and the fixes
 
 The first score on the sealed suite was Sonnet's, and it broke a kill criterion: 2 unsafe
 PASSes on held-out phrasing (0 on the unseen suite, 0 for the oracle on both).
@@ -423,7 +437,7 @@ Sonnet's 1,379 lessons held a term that also matched the account's other cause. 
 suite's zero was luck: none of its measured halves happened to contain the wrong-cause
 sentence that would have triggered one.
 
-**Fix** (`learned.trim_terms`, commit `0798d4e`), applied wherever a lesson is confirmed:
+**Fix** (`learned.trim_terms`, commit `0798d4e`; rules 1 and 2), applied wherever a lesson is confirmed:
 the simulator, the console's teaching queue and teach endpoint, the hand-written suite and
 the training reward. When a lesson makes its claim PASS, two rules are applied to that close:
 
@@ -448,14 +462,45 @@ Other cells are unchanged (sealed oracle, default-world oracle, default-world So
 heldout), control FAIL is 0 everywhere, and `benchmark --phrasing seen` is unchanged at
 90.1%. The lost decisions are wrong explanations that move from FAIL to REVIEW, except in the
 default-world paraphrase cell, where 2 controls are lost because a lesson that depended on a
-routine-only word is no longer taught. **Every table in this note uses the fixed rule**; the
+routine-only word is no longer taught. **Every table in this note uses the current rules**; the
 unseen suite's original bars (82.3% and 63.5% for Sonnet, 89.5% and 76.1% for the oracle)
 were fixed under the old one and are given here so the change is visible. The bars moved
 down, by 0.1 to 0.6 points, not up.
 
-Two things this does not fix. The gate still cannot test vocabulary its regression set has
-never seen, so "untested" should not be read as "safe". And the simulated reviewer still
-reads the label; a person can confirm a wrong explanation.
+**A second gap, from the weaker proposer.** Scoring the local model on the sealed suite under
+those two rules gave 2 control FAILs on each tier and 1 unsafe PASS on the paraphrase tier
+(and, looking back, 1 control FAIL at the 10- and 25-close steps of its unseen run, and the 1
+control FAIL in Sonnet's dev-worlds run that had been put down to something else). All of
+them come from one kind of lesson. It is taught from a hedged sentence ("primarily due to
+X"), where the stated cause is 60 to 70% of the movement and the account's other cause also
+moved. One proposed word matches one of the stated cause's two new charges; another matches
+part of the other cause. Neither clears the hedged threshold of 50% alone, together they do,
+the claim passes and both words are needed, so rule 2 keeps them. Later a plain "because of
+X" about the same cause, which needs 75%, matches the one charge, reaches 49 to 60% and FAILs
+as a partial explanation. And an explanation whose second charge was booked to another
+account passes, because the one charge the lesson knows explains all of what is left in the
+account and the lesson's words do not find the misbooked one.
+
+3. (commit `814b2d5`) a lesson whose words cover only part of a vendor's new charges in a
+   period (material, not routine) is refused, and rule 2 may not drop a word if that would
+   leave such a part.
+
+With all three rules every proposer cached here (the oracle, Sonnet, and three local models)
+has 0 control FAIL and 0 unsafe PASS at every teaching step (0, 10, 25 and 50 closes) on the
+unseen, sealed and dev suites, and at every step of the default world. The third rule moved
+the local model's sealed results from 58.0% to 57.8% and from 44.3% to 44.0%, Sonnet's dev
+result from 83.0% to 82.8%, and nothing else. `benchmark --phrasing seen` is unchanged.
+
+What this does not establish. The three rules were written from breaches these suites
+showed, the last one on the sealed suite itself, so the zeros above are the rules fitting
+what they were written for, not an independent test. They are heuristics about what a
+teaching close can show; other ways for a lesson to bind the wrong charges may exist that
+these suites do not exercise. Rule 3 reads "a vendor's new charges in a period" as one job,
+which is how these synthetic books are built and is only roughly true of real ones (where it
+errs it refuses a lesson, and the claim stays with a person). The gate still cannot test
+vocabulary its regression set has never seen, so "untested" should not be read as "safe".
+Lessons already stored are not re-checked when loaded. And the simulated reviewer still reads
+the label; a person can confirm a wrong explanation.
 
 ## 10. An idea that was tried and rejected: recalling confirmed words
 
@@ -475,9 +520,8 @@ trimmed). On the dev worlds, held-out phrasing:
 It closes much of the gap between proposers, which says the gap is about finding each cause
 once. It also breaks both kill criteria with the weaker proposer and multiplies the wrong
 explanations a reviewer is shown as "supported" by five to ten. It is not in the product and
-no result in this note uses it. (Sonnet's one control FAIL without recall is a lesson taught
-from a close where only part of the cause's lines were present; it is a known gap in what a
-single close can show, and is listed under limits.)
+no result in this note uses it. (This table was measured before the third rule of section 9, which removes Sonnet's one
+control FAIL without recall. The experiment was not repeated.)
 
 ## 11. Reinforcement learning: status
 
@@ -524,10 +568,6 @@ RL_RESULT
 - **Vocabulary overlaps** (section 5): 28 of 168 measured causes have no term new to training.
 - **The hand-written suite is tiny**, and no fine-tuned model has been run on it. No real
   company's commentary has been checked.
-- **One close can under-show a cause.** On the dev worlds one of Sonnet's lessons was taught
-  from a close where only part of a cause's lines were present, and a later correct
-  explanation of the same cause then FAILed as a partial explanation (1 control FAIL in 384).
-  The trimming rule does not address this, and it did not occur on either measured suite.
 - **The safety gate cannot test words its regression set has never seen** (section 9).
 - **One seed, one base model, one recipe.** No run was repeated, so no variance is known, and
   differences of a point or two between rows mean little. Measured halves are 110 closes in
