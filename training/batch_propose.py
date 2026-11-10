@@ -16,6 +16,8 @@ is answered from the cache. `--suite default` covers the default world's test sp
 `--taught-only` answers just the half of each split that `teachsim.simulate` shows a proposer
 (the other half is measured with the rules, so a proposer never sees it). `--constrain` decodes
 under `training/constrain.py`'s grammar (valid JSON, copied fields, chart accounts).
+`--samples K` pools the greedy reply with K-1 replies sampled at `--temp` by a ledger-blind
+vote (`training/consensus.py:merge_votes`), keeping at most `--max-terms` terms per claim.
 The raw replies are also written to `--replies` (JSON lines), so a run can be re-scored.
 """
 from __future__ import annotations
@@ -37,6 +39,7 @@ from mlx_lm.sample_utils import make_sampler  # noqa: E402
 
 import memguard  # noqa: E402
 import constrain  # noqa: E402
+from repool import content_key, pooled_reply  # noqa: E402
 from proven import worlds  # noqa: E402
 from proven.cache import CachedExtractor  # noqa: E402
 from proven.llm import SYSTEM, payload  # noqa: E402
@@ -81,6 +84,9 @@ def main(argv: list[str] | None = None) -> int:
                    help="only the first half of each split: the closes a proposer is shown")
     p.add_argument("--constrain", action="store_true", help="grammar-constrained decoding")
     p.add_argument("--temp", type=float, default=0.0)
+    p.add_argument("--samples", type=int, default=1,
+                   help="pool the greedy reply with K-1 replies sampled at --temp (a blind vote)")
+    p.add_argument("--max-terms", type=int, default=3, help="terms kept per claim when pooling")
     p.add_argument("--cache-dir", default=os.environ.get("PROVEN_CACHE_DIR") or ".proven/cache")
     args = p.parse_args(argv)
 
@@ -115,25 +121,38 @@ def main(argv: list[str] | None = None) -> int:
         raw = tokenizer._tokenizer if hasattr(tokenizer, "_tokenizer") else tokenizer
         vocab = constrain.Vocab(constrain.token_bytes(raw), tokenizer.convert_tokens_to_ids("<|im_end|>"))
     sampler = make_sampler(temp=args.temp) if args.temp > 0 else None
+    if args.samples > 1 and not sampler:
+        p.error("--samples needs --temp above 0")
+
+    def constraints(contents):
+        made = [constrain.Constraint(vocab, *constrain.accounts_of(c)) for c in contents]
+        return [c if c.grammar.supported else None for c in made]
     for i in range(0, len(todo), args.batch):
         part = todo[i:i + args.batch]
         contents = [payload(s.explanation, s.ledger) for s in part]
         prompts = [tokenizer.apply_chat_template(
             [{"role": "system", "content": SYSTEM}, {"role": "user", "content": c}],
             add_generation_prompt=True, tokenize=True) for c in contents]
-        processors = None
-        if vocab is not None:
-            processors = [constrain.Constraint(vocab, *constrain.accounts_of(c)) for c in contents]
-            processors = [c if c.grammar.supported else None for c in processors]
-            unconstrained += processors.count(None)
-        texts = generate(model, tokenizer, prompts, args.max_tokens, processors, sampler)
+        processors = constraints(contents) if vocab is not None else None
+        unconstrained += (processors or []).count(None)
+        pooling = args.samples > 1
+        texts = generate(model, tokenizer, prompts, args.max_tokens, processors, None if pooling else sampler)
         broken += sum(bool(c and c.broken) for c in processors or [])
-        for scenario, content, text in zip(part, contents, texts):
+        raw = [[t] for t in texts]
+        for _ in range(args.samples - 1):
+            processors = constraints(contents) if vocab is not None else None
+            for mine, t in zip(raw, generate(model, tokenizer, prompts, args.max_tokens, processors, sampler)):
+                mine.append(t)
+            broken += sum(bool(c and c.broken) for c in processors or [])
+        if pooling:
+            texts = [pooled_reply(mine, args.max_terms) for mine in raw]
+        for scenario, content, text, mine in zip(part, contents, texts, raw):
             replies[content] = text
             proposals = extractor.propose(scenario.explanation, scenario.ledger)
             empty += not proposals
             if out:
-                out.write(json.dumps({"id": scenario.scenario_id, "reply": text}) + "\n")
+                out.write(json.dumps({"id": scenario.scenario_id, "key": content_key(content), "reply": text,
+                                      **({"samples": mine} if pooling else {})}) + "\n")
         done = i + len(part)
         if (i // args.batch) % 10 == 0 or done == len(todo):
             rate = (time.time() - start) / done
