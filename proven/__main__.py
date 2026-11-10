@@ -93,6 +93,16 @@ def _teach_curves(args, proposer) -> int:
     return 0 if ok else 1
 
 
+def _usage(extractor) -> None:
+    budget = getattr(extractor, "budget", None)
+    if budget is not None:
+        usd_cap = "" if budget.max_usd is None else f" of ${budget.max_usd:.2f}"
+        print(f"model usage: {budget.calls} request(s), {budget.input_tokens:,} input + "
+              f"{budget.output_tokens:,} output tokens (budget {budget.max_tokens:,}); "
+              f"${budget.usd:.4f}{usd_cap}; "
+              f"cache {getattr(extractor, 'hits', 0)} hit(s)", file=sys.stderr)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="python -m proven", description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -128,6 +138,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--no-cache", action="store_true", help="do not reuse or store model proposals")
     p.add_argument("--anchor-model-terms", action="store_true",
                    help="experimental: let specific model-proposed terms support a PASS")
+    p.add_argument("--suite", default=None, choices=("independent",),
+                   help="score a hand-written suite against its answer key instead of synthetic closes")
+    p.add_argument("--json", default=None, help="with --suite: also write the full result to this file")
 
     p = sub.add_parser("teach-sim", help="simulate a reviewer confirming model terms as lessons")
     p.add_argument("--n", type=int, default=440, help="closes: first half taught from, second half measured")
@@ -154,6 +167,9 @@ def main(argv: list[str] | None = None) -> int:
                         "those whose support rests on them (a harder test for --careless)")
     p.add_argument("--checkpoints", default="0,5,10,20,40",
                    help="report after these many confirmations (and after all of them)")
+    p.add_argument("--suite", default=None, choices=("independent",),
+                   help="teach from half of a hand-written suite (key-reading reviewer), measure the other half")
+    p.add_argument("--json", default=None, help="with --suite: also write the full result to this file")
 
     p = sub.add_parser("generate", help="write a labelled synthetic dataset")
     p.add_argument("--split", default="train", choices=("test", "train"))
@@ -196,6 +212,23 @@ def main(argv: list[str] | None = None) -> int:
                 netguard.install()      # loopback model servers still work; anything else is refused
             extractor = build(args.extractor, model=args.model, budget=Budget(args.token_budget, args.usd_budget),
                               cache_dir=None if args.no_cache else ".proven/cache")
+        if args.suite:
+            if args.extractor == "oracle":
+                print("the oracle needs generator gold; a hand-written suite has none", file=sys.stderr)
+                return 2
+            from proven import independent
+            try:
+                policy = Policy(model_terms_anchor=True) if args.anchor_model_terms else None
+                result = independent.benchmark(args.suite, extractor=extractor, policy=policy)
+                print(independent.format_result(result))
+                if args.json:
+                    Path(args.json).write_text(json.dumps(result, indent=2), encoding="utf-8")
+            except (BudgetExceeded, RuntimeError) as exc:
+                print(f"stopped: {exc}", file=sys.stderr)
+                return 1
+            finally:
+                _usage(extractor)
+            return 0
         try:
             for phrasing in (("seen", "heldout") if args.phrasing == "both" else (args.phrasing,)):
                 policy = Policy(model_terms_anchor=True) if args.anchor_model_terms else None
@@ -209,13 +242,7 @@ def main(argv: list[str] | None = None) -> int:
             print(f"stopped: {exc}", file=sys.stderr)
             return 1
         finally:
-            budget = getattr(extractor, "budget", None)
-            if budget is not None:
-                usd_cap = "" if budget.max_usd is None else f" of ${budget.max_usd:.2f}"
-                print(f"model usage: {budget.calls} request(s), {budget.input_tokens:,} input + "
-                      f"{budget.output_tokens:,} output tokens (budget {budget.max_tokens:,}); "
-                      f"${budget.usd:.4f}{usd_cap}; "
-                      f"cache {getattr(extractor, 'hits', 0)} hit(s)", file=sys.stderr)
+            _usage(extractor)
     elif args.command == "teach-sim":
         from proven import teachsim
         proposer = None
@@ -227,6 +254,19 @@ def main(argv: list[str] | None = None) -> int:
             proposer = build(args.extractor, model=args.model, budget=Budget(None, args.usd_budget))
         if args.order or args.careless or args.gate or args.skew or args.any_model_match:
             return _teach_curves(args, proposer)
+        if args.suite:
+            if proposer is None:
+                print("teach-sim --suite needs a model proposer (e.g. --extractor claude)", file=sys.stderr)
+                return 2
+            from proven import independent
+            out = independent.teach_and_measure(args.suite, proposer)
+            print(independent.format_teach(out))
+            if args.json:
+                Path(args.json).write_text(json.dumps(out, indent=2), encoding="utf-8")
+            _usage(proposer)
+            ok = all(r["summary"]["defects"]["unsafe_passes"] == 0 and r["summary"]["controls"]["fails"] == 0
+                     for direction in out["directions"] for r in (direction["before"], direction["after"]))
+            return 0 if ok else 1
         result = teachsim.simulate(args.n, args.phrasing, proposer)
         print(f"proposer={result['proposer']} phrasing={result['phrasing']}; "
               f"measured with the rules on {result['held_closes']} closes never taught from")

@@ -1,0 +1,366 @@
+{
+  "company": "cedar_valley",
+  "claims": [
+    {
+      "id": "CV-01",
+      "quote": "Total operating expenses were $401.6K, up 9.7% from September.",
+      "account": "TOTAL",
+      "stated": {
+        "direction": "up",
+        "pct": 9.7,
+        "current": 401600
+      },
+      "strength": "none",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "All accounts went from $365,966.96 to $401,554.37: +$35,587.41, +9.7%. No cause is stated.",
+      "evidence": [],
+      "cause_txns": [],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "CV-02",
+      "quote": "Locum costs of $28.8K are new this month, covering Dr. Alvarez's leave.",
+      "account": "Locum Tenens",
+      "stated": {
+        "direction": "up",
+        "change": 28800
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Locum tenens went from $0.00 to $28,800.00: four weekly Summit Locums invoices of $7,200 for Dr. Ingram 'for Dr. Alvarez'. The sentence states a level that is also the change, since September was zero.",
+      "evidence": [
+        "CV10184",
+        "CV10217",
+        "CV10229",
+        "CV10237"
+      ],
+      "cause_txns": [
+        "CV10184",
+        "CV10217",
+        "CV10229",
+        "CV10237"
+      ],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "CV-03",
+      "quote": "Provider compensation was down about $18K with Dr. Alvarez on leave.",
+      "account": "Provider Compensation",
+      "stated": {
+        "direction": "down",
+        "change": -18000
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_amount",
+      "why": "Provider compensation went from $115,400.00 to $106,200.00: -$9,200.00, not -$18K (about twice the real fall). Dr. Alvarez's pay did fall $18,800, but the quarterly Q3 quality incentive ($9,600) paid on 10/31 offsets half of it.",
+      "evidence": [
+        "CV10108",
+        "CV10143",
+        "CV10197",
+        "CV10255"
+      ],
+      "cause_txns": [
+        "CV10108",
+        "CV10143",
+        "CV10197"
+      ],
+      "mess": [
+        "one_off"
+      ],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "CV-04",
+      "quote": "Clinical wages were up 5% on overtime for the Saturday flu clinics.",
+      "account": "Clinical Wages",
+      "stated": {
+        "direction": "up",
+        "pct": 5
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Clinical wages went from $76,828.09 to $80,783.90: +$3,955.81, +5.1%. Saturday flu clinic overtime was $900 in September and $4,750 in October: +$3,850, 97% of the change.",
+      "evidence": [
+        "CV10162",
+        "CV10216",
+        "CV10256"
+      ],
+      "cause_txns": [
+        "CV10162",
+        "CV10216",
+        "CV10256"
+      ],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "CV-05",
+      "quote": "Payroll taxes and benefits eased about $1.2K with Dr. Alvarez off payroll.",
+      "account": "Payroll Taxes & Benefits",
+      "stated": {
+        "direction": "down",
+        "change": -1200
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Payroll taxes & benefits went from $29,956.68 to $28,799.85: -$1,156.83. Employer taxes on Dr. Alvarez fell from $1,426.00 to $260.40 (-$1,165.60), 101% of the change. 'Eased' is the direction word.",
+      "evidence": [
+        "CV10109",
+        "CV10144",
+        "CV10198"
+      ],
+      "cause_txns": [
+        "CV10109",
+        "CV10144",
+        "CV10198"
+      ],
+      "mess": [
+        "business_language"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "CV-06",
+      "quote": "Vaccines were up $13K as the second, larger flu pre-book shipment landed in October.",
+      "account": "Vaccines",
+      "stated": {
+        "direction": "up",
+        "change": 13000
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Vaccines went from $27,730.29 to $40,930.63: +$13,200.34. Flu pre-book shipment 1 ($21,600) was in September and shipment 2 ($34,800) in October: +$13,200, 100% of the change.",
+      "evidence": [
+        "CV10106",
+        "CV10179"
+      ],
+      "cause_txns": [
+        "CV10106",
+        "CV10179"
+      ],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "CV-07",
+      "quote": "Lab fees fell $12.5K, entirely the clean-up of September's duplicate Valley Reference invoice.",
+      "account": "Reference Lab Fees",
+      "stated": {
+        "direction": "down",
+        "change": -12500
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Lab fees went from $12,800.00 to $300.00: -$12,500.00. Invoice 88213 ($6,400) was posted twice in September and credited in October (-$6,400): the duplicate accounts for -$12,800 of the change (102%); the regular monthly bill rose $300.",
+      "evidence": [
+        "CV10102",
+        "CV10132",
+        "CV10191",
+        "CV10225"
+      ],
+      "cause_txns": [
+        "CV10132",
+        "CV10225"
+      ],
+      "mess": [
+        "duplicate",
+        "credit_memo"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "CV-08",
+      "quote": "Medical supplies were up $3.1K on the new sharps disposal program.",
+      "account": "Medical Supplies",
+      "stated": {
+        "direction": "up",
+        "change": 3100
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_account",
+      "why": "Medical supplies went from $6,865.13 to $6,716.46: -$148.67. The sharps mail-back program ($3,100) is real but is booked to Medical Waste & Janitorial, which rose exactly $3,100.",
+      "evidence": [
+        "CV10185"
+      ],
+      "cause_txns": [
+        "CV10185"
+      ],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "CV-09",
+      "quote": "Billing service fees rose $2.3K due to the clearinghouse price increase.",
+      "account": "Billing Service",
+      "stated": {
+        "direction": "up",
+        "change": 2300
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "fabricated_cause",
+      "why": "Billing service went from $15,669.50 to $17,993.00: +$2,323.50, so the amount is right. No transaction is a clearinghouse charge or price change: the rate is still 5.5%, applied to higher September collections ($312,600 vs $284,900, +$1,523.50), plus an $800 credentialing fee.",
+      "evidence": [
+        "CV10100",
+        "CV10187",
+        "CV10227"
+      ],
+      "cause_txns": [],
+      "absent_terms": [
+        "clearinghouse",
+        "price increase"
+      ],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "CV-10",
+      "quote": "EHR and IT were up roughly $3.6K: the one-time patient portal implementation, net of a service credit for September's network outage.",
+      "account": "EHR & IT",
+      "stated": {
+        "direction": "up",
+        "change": 3600
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "EHR & IT went from $5,839.00 to $9,439.00: +$3,600.00. Portal implementation $4,500 less the Bluestone SLA credit $900 = $3,600, exactly the change.",
+      "evidence": [
+        "CV10195",
+        "CV10226"
+      ],
+      "cause_txns": [
+        "CV10195",
+        "CV10226"
+      ],
+      "mess": [
+        "credit_memo",
+        "one_off"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "CV-11",
+      "quote": "Med mal rose $770 on the October 1 renewal.",
+      "account": "Malpractice Insurance",
+      "stated": {
+        "direction": "up",
+        "change": 770
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Malpractice went from $9,350.00 to $10,120.00: +$770.00, the monthly amortisation of the new 26-27 policy against the old one. Immaterial (below $1,000).",
+      "evidence": [
+        "CV10163",
+        "CV10257"
+      ],
+      "cause_txns": [
+        "CV10163",
+        "CV10257"
+      ],
+      "mess": [
+        "prepaid_amortisation",
+        "immaterial",
+        "abbreviation"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "CV-12",
+      "quote": "CME rose $3.2K for Dr. Kim's trip to the FMX conference.",
+      "account": "Continuing Education",
+      "stated": {
+        "direction": "up",
+        "change": 3200
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Continuing education went from $150.00 to $3,395.00: +$3,245.00. FMX registration $1,195, airfare $640 and hotel $1,410 for Dr. Kim = $3,245, 100%.",
+      "evidence": [
+        "CV10170",
+        "CV10173",
+        "CV10236"
+      ],
+      "cause_txns": [
+        "CV10170",
+        "CV10173",
+        "CV10236"
+      ],
+      "mess": [
+        "split_across_vendors",
+        "abbreviation"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    }
+  ],
+  "non_claims": [
+    {
+      "quote": "Visits were 4,180 for the month, up 6%, and September collections of $312.6K were our best this year.",
+      "why": "Visits and collections are not expense accounts."
+    },
+    {
+      "quote": "We will budget locum coverage through mid-January.",
+      "why": "A plan."
+    }
+  ]
+}

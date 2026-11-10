@@ -22,7 +22,7 @@ proven = "proven.__main__:main"
 include = ["proven*"]
 
 [tool.setuptools.package-data]
-proven = ["web/*", "examples/*"]
+proven = ["web/*", "examples/*", "examples/independent/*", "examples/independent/*/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["proven/tests"]

@@ -36,6 +36,7 @@ adjustment is recorded beside the verdict that would otherwise have stood.
 """
 from __future__ import annotations
 
+import re
 from dataclasses import asdict, dataclass, field
 from enum import Enum
 
@@ -513,6 +514,26 @@ def _attribute(claim, ledger, policy, change, movers, matched, matched_anchored,
 
     result = outcome(share)
     matched_ids = list(matched)
+    # A FAIL on the stated reason needs every cause it names to have been looked for. When
+    # the reason coordinates two causes and only one of them matched ("compute and
+    # warehouse usage" binding the compute bill, not the warehouse bill), the shortfall is
+    # not a contradiction; a person decides.
+    unbound = _unbound_written_words(ledger, claim.account, terms, claim.driver)
+    if unbound:
+        hit = sorted({term.text for _t, term in matched.values()})
+        return (Check("attribution", True, "weak_match",
+                      f"{explained}; but {', '.join(unbound)} found nothing"),
+                info,
+                Finding("WEAK_REASON_MATCH", ADVISORY,
+                        f"Only part of the stated reason appears in the ledger: "
+                        f"\u201c{', '.join(unbound)}\u201d matches nothing.",
+                        f"{explained}. The sentence {wording}, which needs at least "
+                        f"{fmt_pct(required)}, but the match rests on {', '.join(hit)}, and "
+                        f"{', '.join(unbound)} from \u201c{claim.driver}\u201d appear in no vendor "
+                        f"or memo in scope. The shortfall may be a part of the stated cause "
+                        f"recorded in other words, so it is not treated as a contradiction. "
+                        f"Unexplained movement: {_movers_text(ledger, unexplained)}.",
+                        matched_ids + _mover_txns(ledger, unexplained)))
     if result == "wrong_cause":
         return (Check("attribution", True, "wrong_cause", explained), info,
                 Finding("WRONG_CAUSE", CONFIRMED,
@@ -531,6 +552,43 @@ def _attribute(claim, ledger, policy, change, movers, matched, matched_anchored,
                     f"{fmt_pct(required)}. Unexplained movement: "
                     f"{_movers_text(ledger, unexplained)}.",
                     _mover_txns(ledger, unexplained)))
+
+
+_COORDINATOR = re.compile(r"\s+(?:and|plus|as\s+well\s+as)\s+|\s+&\s+", re.IGNORECASE)
+_WORDS = re.compile(r"[a-z0-9][a-z0-9'\-]*")
+
+
+def _unbound_written_words(ledger: Ledger, account: str, terms: list[Term],
+                           driver: str | None) -> list[str]:
+    """A cause the reason names beside the one that matched, which matches nothing.
+
+    Only consulted before a FAIL on the reason. The reason coordinates two causes
+    ("compute and warehouse usage", "the audit plus the recalibration"); the written word
+    next to the coordinator matches transactions on one side and nothing on the other,
+    while a declared term vouched for the match (otherwise `_weak_binding` already sent
+    the claim to a person). The matched transactions are then one of the stated causes,
+    and their shortfall says nothing about the other."""
+    if not driver:
+        return []
+    scope = ledger.in_scope(account)
+    written = {t.text: t for t in terms if t.origin == "quote"}
+
+    def hits(text: str) -> bool:
+        pattern = term_pattern(text)
+        return any(pattern.search(t.searchable) for t in scope)
+
+    unbound: list[str] = []
+    lower = driver.lower()
+    for match in _COORDINATOR.finditer(lower):
+        before = [w for w in _WORDS.findall(lower[:match.start()]) if w in written]
+        after = [w for w in _WORDS.findall(lower[match.end():]) if w in written]
+        if not before or not after:
+            continue
+        left, right = before[-1], after[0]
+        left_hit, right_hit = hits(left), hits(right)
+        if left_hit != right_hit:
+            unbound.append(right if left_hit else left)
+    return unbound
 
 
 def _weak_binding(ledger: Ledger, account: str,

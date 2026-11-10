@@ -1,0 +1,301 @@
+{
+  "company": "halvorsen",
+  "claims": [
+    {
+      "id": "HPC-01",
+      "quote": "Total spend was up $108.9K (30%) to $473.1K.",
+      "account": "TOTAL",
+      "stated": {
+        "direction": "up",
+        "change": 108900,
+        "pct": 30,
+        "current": 473100
+      },
+      "strength": "none",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "All accounts went from $364,166.99 to $473,086.15: +$108,919.16, +29.9%. No cause is stated.",
+      "evidence": [],
+      "cause_txns": [],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "HPC-02",
+      "quote": "Raw materials were up $42.8K (44%), mainly the Aerovane bracket program ramp, net of a $7.2K credit for out-of-tolerance bar.",
+      "account": "Raw Materials",
+      "stated": {
+        "direction": "up",
+        "change": 42800,
+        "pct": 44
+      },
+      "strength": "most",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Raw materials went from $96,473.04 to $139,243.13: +$42,770.09, +44.3%. Three AV-220 purchase orders ($18,600 + $14,900 + $11,400 = $44,900; only the first memo says 'Aerovane') less the $7,200 RMA credit = $37,700, 88% of the change.",
+      "evidence": [
+        "GL004177",
+        "GL004201",
+        "GL004231",
+        "GL004240"
+      ],
+      "cause_txns": [
+        "GL004177",
+        "GL004201",
+        "GL004231",
+        "GL004240"
+      ],
+      "mess": [
+        "credit_memo",
+        "abbreviation"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "HPC-03",
+      "quote": "Direct labor rose about 10% as we built out the second shift for Aerovane.",
+      "account": "Direct Labor",
+      "stated": {
+        "direction": "up",
+        "pct": 10
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Direct labor went from $151,008.47 to $165,642.25: +$14,633.78, +9.7%. The weekly '2nd shift' payroll lines went from $24,781.64 to $39,707.09: +$14,925.45, 102% of the change.",
+      "evidence": [
+        "GL004106",
+        "GL004124",
+        "GL004146",
+        "GL004161",
+        "GL004183",
+        "GL004206",
+        "GL004226",
+        "GL004246"
+      ],
+      "cause_txns": [
+        "GL004106",
+        "GL004124",
+        "GL004146",
+        "GL004161",
+        "GL004183",
+        "GL004206",
+        "GL004226",
+        "GL004246"
+      ],
+      "mess": [
+        "abbreviation"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "HPC-04",
+      "quote": "Outside processing roughly doubled, mostly anodizing on the Aerovane brackets.",
+      "account": "Outside Processing",
+      "stated": {
+        "direction": "up",
+        "pct": 100
+      },
+      "strength": "most",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Outside processing went from $11,400.00 to $22,800.00: +$11,400.00, +100.0%. Lakeshore Anodizing went from $9,000 to $20,400: +$11,400, 100%. The memo ('Anodize lots - Sep') does not name the customer; 'roughly doubled' is a percentage stated in words.",
+      "evidence": [
+        "GL004159",
+        "GL004253"
+      ],
+      "cause_txns": [
+        "GL004159",
+        "GL004253"
+      ],
+      "mess": [
+        "business_language",
+        "figure_in_words"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "HPC-05",
+      "quote": "Machine maintenance jumped $18.3K: the Mill 3 spindle rebuild plus a full coolant system flush.",
+      "account": "Machine Maintenance",
+      "stated": {
+        "direction": "up",
+        "change": 18300
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Machine maintenance went from $1,868.51 to $20,185.31: +$18,316.80. Spindle rebuild $14,800 plus coolant flush $3,900 = $18,700, 102% of the change; routine service fell $383.20.",
+      "evidence": [
+        "GL004210",
+        "GL004230"
+      ],
+      "cause_txns": [
+        "GL004210",
+        "GL004230"
+      ],
+      "mess": [
+        "split_across_vendors",
+        "one_off"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "HPC-06",
+      "quote": "Shop supplies were up $3.9K for the coolant flush.",
+      "account": "Shop Supplies",
+      "stated": {
+        "direction": "up",
+        "change": 3900
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_account",
+      "why": "Shop supplies went from $3,285.45 to $3,216.93: -$68.52. The coolant flush ($3,900) is booked to Machine Maintenance. The vendor, Crestline Industrial Fluids, also sells the monthly coolant concentrate that is booked to Shop Supplies (flat at $1,180).",
+      "evidence": [
+        "GL004230"
+      ],
+      "cause_txns": [
+        "GL004230"
+      ],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "HPC-07",
+      "quote": "Plant utilities rose $3.4K on summer peak-demand charges.",
+      "account": "Plant Utilities",
+      "stated": {
+        "direction": "up",
+        "change": 3400
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_cause",
+      "why": "Plant utilities went from $18,130.00 to $21,560.00: +$3,430.00, so the amount is right. The demand charge is $3,100 in both months. The increase is a $3,300 back-bill for a meter misread June-August (96%).",
+      "evidence": [
+        "GL004111",
+        "GL004194",
+        "GL004216"
+      ],
+      "cause_txns": [
+        "GL004111",
+        "GL004194"
+      ],
+      "driver_txns": [
+        "GL004216"
+      ],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "HPC-08",
+      "quote": "Quality costs rose $11.6K for the AS9100 surveillance audit.",
+      "account": "Quality & Certification",
+      "stated": {
+        "direction": "up",
+        "change": 11600
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "cause_too_small",
+      "why": "Quality & certification went from $600.00 to $12,200.00: +$11,600.00, so the amount is right. The AS9100D surveillance audit is $5,500, 47%; the larger part is the CMM recalibration and probe replacement ($6,100).",
+      "evidence": [
+        "GL004200",
+        "GL004249"
+      ],
+      "cause_txns": [
+        "GL004200"
+      ],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "HPC-09",
+      "quote": "Inbound freight rose $6.5K because we had to air-freight stainless bar after the mill shipped late.",
+      "account": "Freight In",
+      "stated": {
+        "direction": "up",
+        "change": 6500
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Freight in went from $3,757.50 to $10,300.62: +$6,543.12. The SkyBridge expedite of 17-4 SS bar ($6,350) is 97%. The memo says 'SS', not 'stainless'.",
+      "evidence": [
+        "GL004220"
+      ],
+      "cause_txns": [
+        "GL004220"
+      ],
+      "mess": [
+        "one_off",
+        "abbreviation"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "HPC-10",
+      "quote": "Outbound freight was down about $1.5K on fewer customer shipments.",
+      "account": "Freight Out",
+      "stated": {
+        "direction": "down",
+        "change": -1500
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_direction",
+      "why": "Freight out went from $5,185.85 to $6,765.79: +$1,579.94, up, not down. Shipment count was the same (8); the cost per shipment rose with the Aerovane loads.",
+      "evidence": [],
+      "cause_txns": [],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    }
+  ],
+  "non_claims": [
+    {
+      "quote": "Shipments to Aerovane started on 9/22 and first article inspection passed; on-time delivery was 91% and scrap fell to 2.1%.",
+      "why": "Operational KPIs, not ledger movements."
+    }
+  ]
+}

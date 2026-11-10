@@ -1,0 +1,259 @@
+id,date,account,vendor,memo,amount
+GL004001,2026-07-01,Shop Supplies,Fastline Industrial,Fasteners,187.41
+GL004002,2026-07-01,Equipment Leases,Ironbridge Equipment Finance,Lease pmt - Mill 1 (VF-2),2150.00
+GL004003,2026-07-01,Equipment Leases,Ironbridge Equipment Finance,Lease pmt - Mill 3 (VF-4),2890.00
+GL004004,2026-07-01,Equipment Leases,Ironbridge Equipment Finance,Lease pmt - Lathe 2 (ST-20),2420.00
+GL004005,2026-07-01,Plant Rent,Lakeview Industrial Park LLC,Plant rent - 2400 Commerce Dr,16500.00
+GL004006,2026-07-02,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,7075.57
+GL004007,2026-07-02,Raw Materials,Alcove Metals Service Center,PO - 7075 plate,4061.16
+GL004008,2026-07-02,Raw Materials,Alcove Metals Service Center,PO - 6061-T6 bar,4865.71
+GL004009,2026-07-02,Quality & Certification,Metrology Partners,Gauge calibration - monthly contract,600.00
+GL004010,2026-07-03,Raw Materials,Keller Specialty Steel,PO - 304 SS sheet,4744.53
+GL004011,2026-07-03,Direct Labor,Northwoods Payroll,Payroll WE 07/03 - Direct - 1st shift,31554.21
+GL004012,2026-07-03,Direct Labor,Northwoods Payroll,Payroll WE 07/03 - Direct - 2nd shift,6071.23
+GL004013,2026-07-03,Indirect Labor,Northwoods Payroll,"Payroll WE 07/03 - Indirect (QC, maint, shipping)",8692.21
+GL004014,2026-07-03,Tooling & Inserts,Ridgeway Cutting Tools,Face mill inserts,738.82
+GL004015,2026-07-03,Freight Out,Midwest LTL,Outbound - customer shipment,637.51
+GL004016,2026-07-05,Machine Maintenance,Apex Machine Service,Tool changer adj.,486.26
+GL004017,2026-07-05,Shop Supplies,Crestline Industrial Fluids,Coolant concentrate (2 drums),1180.00
+GL004018,2026-07-05,Freight In,Midwest LTL,Inbound - tooling,333.09
+GL004019,2026-07-05,Freight In,Midwest LTL,Inbound - tooling,296.76
+GL004020,2026-07-05,Freight In,Midwest LTL,Inbound - bar stock,271.74
+GL004021,2026-07-06,Raw Materials,Alcove Metals Service Center,PO - 6061-T6 bar,3821.93
+GL004022,2026-07-06,Shop Supplies,Packline Supply,Boxes + foam,164.24
+GL004023,2026-07-07,Freight Out,Midwest LTL,Outbound - customer shipment,631.91
+GL004024,2026-07-08,Raw Materials,Alcove Metals Service Center,PO - 6061-T6 bar,5187.74
+GL004025,2026-07-08,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,4882.86
+GL004026,2026-07-08,Tooling & Inserts,Carbide Edge Tooling,Drills carbide,369.53
+GL004027,2026-07-08,Machine Maintenance,Apex Machine Service,Way lube pump,439.61
+GL004028,2026-07-08,Plant Utilities,Northern Power Cooperative,Energy - acct 55-0912,14260.00
+GL004029,2026-07-08,Plant Utilities,Northern Power Cooperative,Demand charge - acct 55-0912,3100.00
+GL004030,2026-07-08,Freight In,Midwest LTL,Inbound - tooling,503.16
+GL004031,2026-07-09,Tooling & Inserts,Carbide Edge Tooling,End mills 1/2 4fl,830.96
+GL004032,2026-07-09,Shop Supplies,Fastline Industrial,Fasteners,144.48
+GL004033,2026-07-10,Direct Labor,Northwoods Payroll,Payroll WE 07/10 - Direct - 1st shift,31611.71
+GL004034,2026-07-10,Direct Labor,Northwoods Payroll,Payroll WE 07/10 - Direct - 2nd shift,6107.24
+GL004035,2026-07-10,Indirect Labor,Northwoods Payroll,"Payroll WE 07/10 - Indirect (QC, maint, shipping)",8690.04
+GL004036,2026-07-10,Freight Out,Midwest LTL,Outbound - customer shipment,642.04
+GL004037,2026-07-12,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,4302.86
+GL004038,2026-07-12,Raw Materials,Alcove Metals Service Center,PO - 6061-T6 bar,4442.01
+GL004039,2026-07-12,Tooling & Inserts,Carbide Edge Tooling,Inserts CNMG,1085.50
+GL004040,2026-07-12,Shop Supplies,Fastline Industrial,Shop rags,89.84
+GL004041,2026-07-13,Raw Materials,Alcove Metals Service Center,PO - 6061-T6 bar,4660.94
+GL004042,2026-07-13,Shop Supplies,Fastline Industrial,Fasteners,62.24
+GL004043,2026-07-13,Freight In,Midwest LTL,Inbound - tooling,449.11
+GL004044,2026-07-14,Plant Utilities,Lakeside Gas,Gas service,640.00
+GL004045,2026-07-14,Freight Out,Midwest LTL,Outbound - customer shipment,639.38
+GL004046,2026-07-16,Tooling & Inserts,Carbide Edge Tooling,Inserts CNMG,815.67
+GL004047,2026-07-16,Freight In,Midwest LTL,Inbound - tooling,246.84
+GL004048,2026-07-17,Direct Labor,Northwoods Payroll,Payroll WE 07/17 - Direct - 1st shift,31350.42
+GL004049,2026-07-17,Direct Labor,Northwoods Payroll,Payroll WE 07/17 - Direct - 2nd shift,6114.05
+GL004050,2026-07-17,Indirect Labor,Northwoods Payroll,"Payroll WE 07/17 - Indirect (QC, maint, shipping)",8713.18
+GL004051,2026-07-17,Tooling & Inserts,Carbide Edge Tooling,Inserts CNMG,860.86
+GL004052,2026-07-17,Freight Out,Midwest LTL,Outbound - customer shipment,650.70
+GL004053,2026-07-18,Raw Materials,Keller Specialty Steel,PO - 304 SS sheet,7095.99
+GL004054,2026-07-18,Outside Processing,Northline Heat Treat,Heat treat - 17-4 H1025,2400.00
+GL004055,2026-07-19,Tooling & Inserts,Carbide Edge Tooling,Inserts CNMG,1056.50
+GL004056,2026-07-20,Tooling & Inserts,Ridgeway Cutting Tools,Taps + reamers,713.42
+GL004057,2026-07-21,Raw Materials,Keller Specialty Steel,PO - 304 SS sheet,8960.06
+GL004058,2026-07-21,Shop Supplies,Packline Supply,Stretch wrap,116.60
+GL004059,2026-07-21,Freight Out,Midwest LTL,Outbound - customer shipment,635.29
+GL004060,2026-07-22,Tooling & Inserts,Ridgeway Cutting Tools,Taps + reamers,433.13
+GL004061,2026-07-22,Freight In,Midwest LTL,Inbound - bar stock,575.92
+GL004062,2026-07-23,Raw Materials,Alcove Metals Service Center,PO - 7075 plate,4339.03
+GL004063,2026-07-23,Tooling & Inserts,Ridgeway Cutting Tools,Face mill inserts,442.49
+GL004064,2026-07-24,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,5529.53
+GL004065,2026-07-24,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,7338.26
+GL004066,2026-07-24,Direct Labor,Northwoods Payroll,Payroll WE 07/24 - Direct - 1st shift,31451.27
+GL004067,2026-07-24,Direct Labor,Northwoods Payroll,Payroll WE 07/24 - Direct - 2nd shift,6093.70
+GL004068,2026-07-24,Indirect Labor,Northwoods Payroll,"Payroll WE 07/24 - Indirect (QC, maint, shipping)",8704.64
+GL004069,2026-07-24,Tooling & Inserts,Carbide Edge Tooling,End mills 1/2 4fl,274.95
+GL004070,2026-07-24,Shop Supplies,Packline Supply,Stretch wrap,118.62
+GL004071,2026-07-24,Shop Supplies,Fastline Industrial,Shop rags,297.86
+GL004072,2026-07-24,Freight Out,Midwest LTL,Outbound - customer shipment,644.54
+GL004073,2026-07-26,Machine Maintenance,Apex Machine Service,Tool changer adj.,836.31
+GL004074,2026-07-27,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,5060.95
+GL004075,2026-07-27,Shop Supplies,Packline Supply,Stretch wrap,277.42
+GL004076,2026-07-27,Outside Processing,Lakeshore Anodizing,Anodize lots - Jul,8700.00
+GL004077,2026-07-28,Tooling & Inserts,Ridgeway Cutting Tools,Face mill inserts,352.74
+GL004078,2026-07-28,Tooling & Inserts,Ridgeway Cutting Tools,Taps + reamers,596.97
+GL004079,2026-07-28,Freight In,Midwest LTL,Inbound - tooling,268.18
+GL004080,2026-07-28,Freight Out,Midwest LTL,Outbound - customer shipment,645.16
+GL004081,2026-07-30,Raw Materials,Alcove Metals Service Center,Alloy surcharge - Jul,1480.00
+GL004082,2026-07-30,Insurance,Halvorsen Prepaid JE,Prepaid amort - property/GL/product liability,4250.00
+GL004083,2026-07-31,Direct Labor,Northwoods Payroll,Payroll WE 07/31 - Direct - 1st shift,31529.08
+GL004084,2026-07-31,Direct Labor,Northwoods Payroll,Payroll WE 07/31 - Direct - 2nd shift,6087.85
+GL004085,2026-07-31,Indirect Labor,Northwoods Payroll,"Payroll WE 07/31 - Indirect (QC, maint, shipping)",8677.36
+GL004086,2026-08-01,Raw Materials,Alcove Metals Service Center,PO - 7075 plate,4153.59
+GL004087,2026-08-01,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,6423.74
+GL004088,2026-08-01,Tooling & Inserts,Carbide Edge Tooling,End mills 1/2 4fl,830.75
+GL004089,2026-08-01,Shop Supplies,Fastline Industrial,Fasteners,291.99
+GL004090,2026-08-01,Equipment Leases,Ironbridge Equipment Finance,Lease pmt - Mill 1 (VF-2),2150.00
+GL004091,2026-08-01,Equipment Leases,Ironbridge Equipment Finance,Lease pmt - Mill 3 (VF-4),2890.00
+GL004092,2026-08-01,Equipment Leases,Ironbridge Equipment Finance,Lease pmt - Lathe 2 (ST-20),2420.00
+GL004093,2026-08-01,Plant Rent,Lakeview Industrial Park LLC,Plant rent - 2400 Commerce Dr,16500.00
+GL004094,2026-08-02,Quality & Certification,Metrology Partners,Gauge calibration - monthly contract,600.00
+GL004095,2026-08-03,Shop Supplies,Packline Supply,Stretch wrap,50.21
+GL004096,2026-08-03,Freight Out,Midwest LTL,Outbound - customer shipment,650.07
+GL004097,2026-08-04,Raw Materials,Alcove Metals Service Center,PO - 6061-T6 bar,4747.76
+GL004098,2026-08-04,Tooling & Inserts,Carbide Edge Tooling,End mills 1/2 4fl,435.69
+GL004099,2026-08-05,Shop Supplies,Crestline Industrial Fluids,Coolant concentrate (2 drums),1180.00
+GL004100,2026-08-05,Freight In,Midwest LTL,Inbound - bar stock,305.74
+GL004101,2026-08-06,Tooling & Inserts,Carbide Edge Tooling,Inserts CNMG,1183.27
+GL004102,2026-08-06,Shop Supplies,Packline Supply,Stretch wrap,236.17
+GL004103,2026-08-06,Shop Supplies,Fastline Industrial,Deburr tools,166.86
+GL004104,2026-08-07,Raw Materials,Alcove Metals Service Center,PO - 7075 plate,6687.81
+GL004105,2026-08-07,Direct Labor,Northwoods Payroll,Payroll WE 08/07 - Direct - 1st shift,31629.81
+GL004106,2026-08-07,Direct Labor,Northwoods Payroll,Payroll WE 08/07 - Direct - 2nd shift,6169.85
+GL004107,2026-08-07,Indirect Labor,Northwoods Payroll,"Payroll WE 08/07 - Indirect (QC, maint, shipping)",8717.20
+GL004108,2026-08-07,Shop Supplies,Packline Supply,Stretch wrap,278.60
+GL004109,2026-08-07,Freight Out,Midwest LTL,Outbound - customer shipment,641.07
+GL004110,2026-08-08,Plant Utilities,Northern Power Cooperative,Energy - acct 55-0912,14420.00
+GL004111,2026-08-08,Plant Utilities,Northern Power Cooperative,Demand charge - acct 55-0912,3100.00
+GL004112,2026-08-10,Raw Materials,Keller Specialty Steel,PO - 304 SS sheet,6580.17
+GL004113,2026-08-10,Raw Materials,Keller Specialty Steel,PO - 304 SS sheet,4998.32
+GL004114,2026-08-10,Freight Out,Midwest LTL,Outbound - customer shipment,650.71
+GL004115,2026-08-11,Raw Materials,Keller Specialty Steel,PO - 304 SS sheet,5559.13
+GL004116,2026-08-11,Tooling & Inserts,Ridgeway Cutting Tools,Taps + reamers,1060.05
+GL004117,2026-08-11,Tooling & Inserts,Ridgeway Cutting Tools,Taps + reamers,806.93
+GL004118,2026-08-11,Tooling & Inserts,Ridgeway Cutting Tools,Face mill inserts,1006.95
+GL004119,2026-08-12,Machine Maintenance,Apex Machine Service,PM - lathe 2,568.17
+GL004120,2026-08-12,Freight In,Midwest LTL,Inbound - bar stock,625.24
+GL004121,2026-08-12,Freight In,Midwest LTL,Inbound - bar stock,541.34
+GL004122,2026-08-13,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,5322.50
+GL004123,2026-08-14,Direct Labor,Northwoods Payroll,Payroll WE 08/14 - Direct - 1st shift,31655.50
+GL004124,2026-08-14,Direct Labor,Northwoods Payroll,Payroll WE 08/14 - Direct - 2nd shift,6206.35
+GL004125,2026-08-14,Indirect Labor,Northwoods Payroll,"Payroll WE 08/14 - Indirect (QC, maint, shipping)",8678.75
+GL004126,2026-08-14,Shop Supplies,Fastline Industrial,Fasteners,78.33
+GL004127,2026-08-14,Plant Utilities,Lakeside Gas,Gas service,610.00
+GL004128,2026-08-14,Freight Out,Midwest LTL,Outbound - customer shipment,659.35
+GL004129,2026-08-15,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,7224.10
+GL004130,2026-08-15,Tooling & Inserts,Ridgeway Cutting Tools,Face mill inserts,281.89
+GL004131,2026-08-16,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,7359.60
+GL004132,2026-08-16,Shop Supplies,Fastline Industrial,Deburr tools,191.66
+GL004133,2026-08-17,Machine Maintenance,Apex Machine Service,Chip conveyor repair,1300.34
+GL004134,2026-08-17,Shop Supplies,Packline Supply,Boxes + foam,274.67
+GL004135,2026-08-17,Freight Out,Midwest LTL,Outbound - customer shipment,648.16
+GL004136,2026-08-18,Raw Materials,Alcove Metals Service Center,PO - 6061-T6 bar,7219.78
+GL004137,2026-08-18,Tooling & Inserts,Ridgeway Cutting Tools,Face mill inserts,415.59
+GL004138,2026-08-18,Shop Supplies,Packline Supply,Stretch wrap,297.18
+GL004139,2026-08-18,Outside Processing,Northline Heat Treat,Heat treat - 17-4 H1025,2400.00
+GL004140,2026-08-19,Shop Supplies,Packline Supply,Stretch wrap,239.78
+GL004141,2026-08-19,Freight In,Midwest LTL,Inbound - tooling,369.22
+GL004142,2026-08-20,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,6613.71
+GL004143,2026-08-20,Tooling & Inserts,Ridgeway Cutting Tools,Face mill inserts,577.39
+GL004144,2026-08-20,Tooling & Inserts,Ridgeway Cutting Tools,Face mill inserts,294.53
+GL004145,2026-08-21,Direct Labor,Northwoods Payroll,Payroll WE 08/21 - Direct - 1st shift,31510.45
+GL004146,2026-08-21,Direct Labor,Northwoods Payroll,Payroll WE 08/21 - Direct - 2nd shift,6193.96
+GL004147,2026-08-21,Indirect Labor,Northwoods Payroll,"Payroll WE 08/21 - Indirect (QC, maint, shipping)",8740.62
+GL004148,2026-08-21,Tooling & Inserts,Ridgeway Cutting Tools,Taps + reamers,759.83
+GL004149,2026-08-21,Freight In,Midwest LTL,Inbound - tooling,301.97
+GL004150,2026-08-21,Freight Out,Midwest LTL,Outbound - customer shipment,643.43
+GL004151,2026-08-24,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,4224.48
+GL004152,2026-08-24,Freight In,Midwest LTL,Inbound - bar stock,627.16
+GL004153,2026-08-24,Freight Out,Midwest LTL,Outbound - customer shipment,653.01
+GL004154,2026-08-25,Raw Materials,Alcove Metals Service Center,PO - 6061-T6 bar,5663.45
+GL004155,2026-08-26,Tooling & Inserts,Carbide Edge Tooling,Inserts CNMG,844.86
+GL004156,2026-08-26,Freight In,Midwest LTL,Inbound - bar stock,572.15
+GL004157,2026-08-27,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,5985.90
+GL004158,2026-08-27,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,6189.00
+GL004159,2026-08-27,Outside Processing,Lakeshore Anodizing,Anodize lots - Aug,9000.00
+GL004160,2026-08-28,Direct Labor,Northwoods Payroll,Payroll WE 08/28 - Direct - 1st shift,31431.07
+GL004161,2026-08-28,Direct Labor,Northwoods Payroll,Payroll WE 08/28 - Direct - 2nd shift,6211.48
+GL004162,2026-08-28,Indirect Labor,Northwoods Payroll,"Payroll WE 08/28 - Indirect (QC, maint, shipping)",8691.98
+GL004163,2026-08-28,Tooling & Inserts,Carbide Edge Tooling,Inserts CNMG,921.89
+GL004164,2026-08-28,Freight In,Midwest LTL,Inbound - tooling,414.68
+GL004165,2026-08-28,Freight Out,Midwest LTL,Outbound - customer shipment,640.05
+GL004166,2026-08-30,Raw Materials,Alcove Metals Service Center,Alloy surcharge - Aug,1520.00
+GL004167,2026-08-30,Insurance,Halvorsen Prepaid JE,Prepaid amort - property/GL/product liability,4250.00
+GL004168,2026-09-01,Tooling & Inserts,Carbide Edge Tooling,Inserts CNMG,1022.86
+GL004169,2026-09-01,Tooling & Inserts,Ridgeway Cutting Tools,Taps + reamers,181.40
+GL004170,2026-09-01,Equipment Leases,Ironbridge Equipment Finance,Lease pmt - Mill 1 (VF-2),2150.00
+GL004171,2026-09-01,Equipment Leases,Ironbridge Equipment Finance,Lease pmt - Mill 3 (VF-4),2890.00
+GL004172,2026-09-01,Equipment Leases,Ironbridge Equipment Finance,Lease pmt - Lathe 2 (ST-20),2420.00
+GL004173,2026-09-01,Plant Rent,Lakeview Industrial Park LLC,Plant rent - 2400 Commerce Dr,16500.00
+GL004174,2026-09-02,Freight In,Midwest LTL,Inbound - tooling,465.02
+GL004175,2026-09-02,Freight In,Midwest LTL,Inbound - tooling,482.14
+GL004176,2026-09-02,Quality & Certification,Metrology Partners,Gauge calibration - monthly contract,600.00
+GL004177,2026-09-03,Raw Materials,Alcove Metals Service Center,PO 7790 - 6061-T6 plate 1.5in - Aerovane AV-220 brackets,18600.00
+GL004178,2026-09-03,Tooling & Inserts,Ridgeway Cutting Tools,Face mill inserts,638.91
+GL004179,2026-09-03,Tooling & Inserts,Ridgeway Cutting Tools,Taps + reamers,511.69
+GL004180,2026-09-03,Freight In,Midwest LTL,Inbound - bar stock,447.87
+GL004181,2026-09-03,Freight Out,Midwest LTL,Outbound - customer shipment,840.43
+GL004182,2026-09-04,Direct Labor,Northwoods Payroll,Payroll WE 09/04 - Direct - 1st shift,31520.01
+GL004183,2026-09-04,Direct Labor,Northwoods Payroll,Payroll WE 09/04 - Direct - 2nd shift,9953.27
+GL004184,2026-09-04,Indirect Labor,Northwoods Payroll,"Payroll WE 09/04 - Indirect (QC, maint, shipping)",8749.94
+GL004185,2026-09-05,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,6970.01
+GL004186,2026-09-05,Tooling & Inserts,Ridgeway Cutting Tools,Taps + reamers,551.14
+GL004187,2026-09-05,Shop Supplies,Crestline Industrial Fluids,Coolant concentrate (2 drums),1180.00
+GL004188,2026-09-05,Shop Supplies,Packline Supply,Boxes + foam,131.36
+GL004189,2026-09-07,Tooling & Inserts,Ridgeway Cutting Tools,Taps + reamers,801.33
+GL004190,2026-09-07,Freight In,Midwest LTL,Inbound - tooling,494.47
+GL004191,2026-09-07,Freight Out,Midwest LTL,Outbound - customer shipment,850.77
+GL004192,2026-09-08,Shop Supplies,Fastline Industrial,Gloves,268.48
+GL004193,2026-09-08,Plant Utilities,Northern Power Cooperative,Energy - acct 55-0912,14510.00
+GL004194,2026-09-08,Plant Utilities,Northern Power Cooperative,Demand charge - acct 55-0912,3100.00
+GL004195,2026-09-09,Raw Materials,Alcove Metals Service Center,PO - 6061-T6 bar,4356.58
+GL004196,2026-09-09,Tooling & Inserts,Carbide Edge Tooling,End mills 1/2 4fl,906.57
+GL004197,2026-09-09,Tooling & Inserts,Ridgeway Cutting Tools,Taps + reamers,260.70
+GL004198,2026-09-09,Freight In,Midwest LTL,Inbound - bar stock,360.69
+GL004199,2026-09-09,Freight In,Midwest LTL,Inbound - bar stock,559.66
+GL004200,2026-09-09,Quality & Certification,Meridian Registrar Services,AS9100D surveillance audit - 2 days,5500.00
+GL004201,2026-09-10,Raw Materials,Alcove Metals Service Center,PO 7801 - 6061-T6 bar 2in - AV-220,14900.00
+GL004202,2026-09-10,Freight Out,Midwest LTL,Outbound - customer shipment,851.80
+GL004203,2026-09-11,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,4689.89
+GL004204,2026-09-11,Raw Materials,Keller Specialty Steel,PO - 304 SS sheet,6527.46
+GL004205,2026-09-11,Direct Labor,Northwoods Payroll,Payroll WE 09/11 - Direct - 1st shift,31640.51
+GL004206,2026-09-11,Direct Labor,Northwoods Payroll,Payroll WE 09/11 - Direct - 2nd shift,9917.31
+GL004207,2026-09-11,Indirect Labor,Northwoods Payroll,"Payroll WE 09/11 - Indirect (QC, maint, shipping)",8729.89
+GL004208,2026-09-11,Freight In,Midwest LTL,Inbound - bar stock,265.46
+GL004209,2026-09-12,Machine Maintenance,Apex Machine Service,Chip conveyor repair,831.10
+GL004210,2026-09-12,Machine Maintenance,Precision Spindle Service,"Spindle rebuild - Mill 3 (VF-4), incl. bearings",14800.00
+GL004211,2026-09-12,Freight In,Midwest LTL,Inbound - bar stock,608.62
+GL004212,2026-09-14,Plant Utilities,Lakeside Gas,Gas service,650.00
+GL004213,2026-09-14,Freight Out,Midwest LTL,Outbound - customer shipment,855.27
+GL004214,2026-09-15,Tooling & Inserts,Carbide Edge Tooling,End mills 1/2 4fl,1018.36
+GL004215,2026-09-15,Shop Supplies,Fastline Industrial,Gloves,165.91
+GL004216,2026-09-15,Plant Utilities,Northern Power Cooperative,Back-bill - meter misread Jun-Aug (acct 55-0912),3300.00
+GL004217,2026-09-16,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,7393.58
+GL004218,2026-09-16,Tooling & Inserts,Carbide Edge Tooling,Inserts CNMG,736.44
+GL004219,2026-09-16,Shop Supplies,Fastline Industrial,Gloves,284.78
+GL004220,2026-09-16,Freight In,SkyBridge Expedite,Air freight - expedite 17-4 SS bar (Keller shipped late),6350.00
+GL004221,2026-09-17,Raw Materials,Alcove Metals Service Center,PO - 7075 plate,4816.13
+GL004222,2026-09-17,Raw Materials,Alcove Metals Service Center,PO - 6061-T6 bar,7160.66
+GL004223,2026-09-17,Freight Out,Midwest LTL,Outbound - customer shipment,837.16
+GL004224,2026-09-18,Raw Materials,Alcove Metals Service Center,PO - 6061-T6 bar,5785.04
+GL004225,2026-09-18,Direct Labor,Northwoods Payroll,Payroll WE 09/18 - Direct - 1st shift,31434.40
+GL004226,2026-09-18,Direct Labor,Northwoods Payroll,Payroll WE 09/18 - Direct - 2nd shift,9948.68
+GL004227,2026-09-18,Indirect Labor,Northwoods Payroll,"Payroll WE 09/18 - Indirect (QC, maint, shipping)",8749.51
+GL004228,2026-09-18,Outside Processing,Northline Heat Treat,Heat treat - 17-4 H1025,2400.00
+GL004229,2026-09-19,Raw Materials,Alcove Metals Service Center,PO - 7075 plate,5537.22
+GL004230,2026-09-19,Machine Maintenance,Crestline Industrial Fluids,Coolant system flush + recharge - all mills,3900.00
+GL004231,2026-09-21,Raw Materials,Alcove Metals Service Center,PO 7815 - 6061 plate - AV-220 run 2,11400.00
+GL004232,2026-09-21,Tooling & Inserts,Ridgeway Cutting Tools,Face mill inserts,335.21
+GL004233,2026-09-21,Machine Maintenance,Apex Machine Service,Way lube pump,654.21
+GL004234,2026-09-21,Shop Supplies,Packline Supply,Boxes + foam,269.38
+GL004235,2026-09-21,Freight Out,Midwest LTL,Outbound - customer shipment,843.66
+GL004236,2026-09-22,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,6475.55
+GL004237,2026-09-23,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,5016.33
+GL004238,2026-09-24,Raw Materials,Alcove Metals Service Center,PO - 6061-T6 bar,6301.00
+GL004239,2026-09-24,Raw Materials,Keller Specialty Steel,PO - 17-4 PH bar,8571.50
+GL004240,2026-09-24,Raw Materials,Alcove Metals Service Center,"RMA credit - 6061 bar out of tolerance, PO 7782",-7200.00
+GL004241,2026-09-24,Shop Supplies,Fastline Industrial,Deburr tools,295.16
+GL004242,2026-09-24,Shop Supplies,Packline Supply,Boxes + foam,155.79
+GL004243,2026-09-24,Shop Supplies,Packline Supply,Boxes + foam,177.56
+GL004244,2026-09-24,Freight Out,Midwest LTL,Outbound - customer shipment,843.08
+GL004245,2026-09-25,Direct Labor,Northwoods Payroll,Payroll WE 09/25 - Direct - 1st shift,31340.24
+GL004246,2026-09-25,Direct Labor,Northwoods Payroll,Payroll WE 09/25 - Direct - 2nd shift,9887.83
+GL004247,2026-09-25,Indirect Labor,Northwoods Payroll,"Payroll WE 09/25 - Indirect (QC, maint, shipping)",8663.85
+GL004248,2026-09-26,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,6875.87
+GL004249,2026-09-26,Quality & Certification,Metrology Partners,CMM recalibration + probe replacement,6100.00
+GL004250,2026-09-27,Raw Materials,Alcove Metals Service Center,PO - 6061 plate drops,4716.76
+GL004251,2026-09-27,Raw Materials,Keller Specialty Steel,PO - 304 SS sheet,8789.55
+GL004252,2026-09-27,Shop Supplies,Packline Supply,Stretch wrap,288.51
+GL004253,2026-09-27,Outside Processing,Lakeshore Anodizing,Anodize lots - Sep,20400.00
+GL004254,2026-09-28,Tooling & Inserts,Carbide Edge Tooling,Drills carbide,1104.32
+GL004255,2026-09-28,Freight In,Midwest LTL,Inbound - tooling,266.69
+GL004256,2026-09-28,Freight Out,Midwest LTL,Outbound - customer shipment,843.62
+GL004257,2026-09-30,Raw Materials,Alcove Metals Service Center,Alloy surcharge - Sep,1560.00
+GL004258,2026-09-30,Insurance,Halvorsen Prepaid JE,Prepaid amort - property/GL/product liability,4250.00
