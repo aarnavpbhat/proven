@@ -63,6 +63,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--n", type=int, default=100)
     p.add_argument("--samples", type=int, default=4)
     p.add_argument("--max-terms", type=int, default=3)
+    p.add_argument("--pick", type=int, default=None,
+                   help="use only the saved reply at this index (0 is the greedy one), unpooled")
     p.add_argument("--cache-dir", default=os.environ.get("PROVEN_CACHE_DIR") or ".proven/cache")
     args = p.parse_args(argv)
 
@@ -93,7 +95,8 @@ def main(argv: list[str] | None = None) -> int:
             missing += 1
             continue
         short += len(texts) < args.samples
-        replies[content] = pooled_reply(texts[:args.samples], args.max_terms)
+        chosen = texts[:args.samples] if args.pick is None else texts[args.pick:args.pick + 1]
+        replies[content] = pooled_reply(chosen, args.max_terms)
         extractor.propose(s.explanation, s.ledger)
         done += 1
     print(f"{done} closes pooled as {args.name} (samples {args.samples}, max terms {args.max_terms}); "
