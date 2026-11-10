@@ -666,14 +666,21 @@ function resolveSection(result, report) {
   const status = h("p", { class: "resolve-status", "aria-live": "polite" }, state.resolved[id] ? `Recorded: ${state.resolved[id]}` : (state.config.actions[0].help));
 
   // "Teach Proven": only for the actions that teach, and only when there is a stated reason to learn from.
+  // The model's words that actually matched ledger transactions are offered for confirmation; when
+  // they are the only thing between this claim and a PASS, the form opens ready to confirm them.
+  const matchedByModel = (result.reconstruction.driver?.matched || []).filter((m) => m.origin === "model");
+  const proposed = [...new Set(matchedByModel.map((m) => m.term))];
+  const awaitsConfirmation = proposed.length > 0 && result.findings.some((f) => f.code === "SUPPORT_RESTS_ON_MODEL_TERMS");
   const trigger = /** @type {HTMLInputElement} */ (h("input", { type: "text", "aria-label": "When the stated reason contains", value: claim.driver || "" }));
   const words = /** @type {HTMLInputElement} */ (h("input", {
     type: "text", "aria-label": "Ledger words it corresponds to", placeholder: "e.g. flights, hotel",
-    value: claim.terms.filter((t) => t.origin === "model").map((t) => t.text).join(", "),
+    value: proposed.join(", "),
   }));
   const confirm = /** @type {HTMLInputElement} */ (h("input", { type: "checkbox", id: `confirm-${id}` }));
   const teach = h("fieldset", { class: "teach", hidden: true },
     h("legend", {}, "Teach Proven"),
+    awaitsConfirmation ? h("p", { class: "hint" },
+      `The model proposed ${proposed.map((w) => `“${w}”`).join(", ")}, which matched ${matchedByModel.length} transaction${matchedByModel.length === 1 ? "" : "s"} (listed under Findings). Proven will not rely on a model's words alone. If those transactions really are this cause, record it and Proven will know this phrase from now on, with no model needed.`) : null,
     h("label", { class: "field" }, h("span", { class: "field-label" }, "When the stated reason says"), trigger),
     h("label", { class: "field" }, h("span", { class: "field-label" }, "search the ledger for (comma separated; pick words from the transaction memos above)"), words),
     h("label", { class: "check" }, confirm, " If this turns the claim into a PASS: I checked that the matched transactions really are this cause."),
@@ -686,6 +693,10 @@ function resolveSection(result, report) {
     status.textContent = action ? action.help : "";
     teach.hidden = !teaches(select.value);
   });
+  if (awaitsConfirmation && teaches("accept_convention")) {
+    select.value = "accept_convention";
+    teach.hidden = false;
+  }
   const button = /** @type {HTMLButtonElement} */ (h("button", { type: "submit", class: "button" }, "Record"));
   const form = h("form", { class: "resolve" }, select, note, button, teach, status);
   form.addEventListener("submit", async (event) => {

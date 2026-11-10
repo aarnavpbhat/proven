@@ -95,6 +95,15 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--anchor-model-terms", action="store_true",
                    help="experimental: let specific model-proposed terms support a PASS")
 
+    p = sub.add_parser("teach-sim", help="simulate a reviewer confirming model terms as lessons")
+    p.add_argument("--n", type=int, default=440, help="closes: first half taught from, second half measured")
+    p.add_argument("--phrasing", default="heldout", choices=("seen", "heldout", "paraphrase"))
+    p.add_argument("--extractor", default="oracle", help="who proposes the terms: oracle (default) or a model extractor")
+    p.add_argument("--model", default=None, help="model id for a model extractor")
+    p.add_argument("--allow-network", action="store_true",
+                   help="let a hosted model be called; without it only cached answers and loopback servers work")
+    p.add_argument("--usd-budget", type=float, default=None)
+
     p = sub.add_parser("generate", help="write a labelled synthetic dataset")
     p.add_argument("--split", default="train", choices=("test", "train"))
     p.add_argument("--n", type=int, default=1000)
@@ -156,6 +165,25 @@ def main(argv: list[str] | None = None) -> int:
                       f"{budget.output_tokens:,} output tokens (budget {budget.max_tokens:,}); "
                       f"${budget.usd:.4f}{usd_cap}; "
                       f"cache {getattr(extractor, 'hits', 0)} hit(s)", file=sys.stderr)
+    elif args.command == "teach-sim":
+        from proven import teachsim
+        proposer = None
+        if args.extractor != "oracle":
+            from proven import netguard
+            from proven.budget import Budget
+            from proven.extractors import build
+            netguard.allow_network() if args.allow_network else netguard.install()
+            proposer = build(args.extractor, model=args.model, budget=Budget(None, args.usd_budget))
+        result = teachsim.simulate(args.n, args.phrasing, proposer)
+        print(f"proposer={result['proposer']} phrasing={result['phrasing']}; "
+              f"measured with the rules on {result['held_closes']} closes never taught from")
+        print("taught  lessons  decided  reward  controls passed  control FAIL  unsafe PASS  defects caught")
+        for r in result["rows"]:
+            print(f"{r['taught_closes']:>6}  {r['lessons']:>7}  {r['decided_share']:>7.1%}  {r['mean_reward']:>6.3f}  "
+                  f"{r['controls_passed']:>7}/{r['controls']:<7}  {r['control_fails']:>12}  "
+                  f"{r['unsafe_passes']:>11}  {r['defects_caught']:>6}/{r['defects']}")
+        ok = all(r["unsafe_passes"] == 0 and r["control_fails"] == 0 for r in result["rows"])
+        return 0 if ok else 1
     elif args.command == "replay":
         from proven import learned
         results = learned.replay(args.data_dir)

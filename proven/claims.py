@@ -271,13 +271,21 @@ def anchored_terms(driver: str, account: str | None, ledger: Ledger) -> list[Ter
     """Search terms derived from the stated reason itself, without a model."""
     lower = driver.lower()
     excluded = _account_tokens(account, ledger)
+    # A lesson says what its trigger phrase means in the ledger, so the phrase's own words
+    # are not also searched one by one: "board coverage" -> d&o must not let "coverage"
+    # bind the claim to an unrelated cyber-coverage invoice as well.
+    fired = [(expansions, [t for t in triggers if re.search(rf"(?<![a-z0-9]){re.escape(t)}", lower)])
+             for _name, triggers, expansions in LEARNED]
+    fired = [(expansions, hits) for expansions, hits in fired if hits]
+    replaced = {tok for expansions, hits in fired for hit in hits
+                for tok in _TOKEN.findall(hit) if tok not in expansions}
     terms: list[Term] = []
     seen: set[str] = set()
     for token in _TOKEN.findall(lower):
         token = token.strip("-'")
         if token.endswith("'s"):
             token = token[:-2]
-        if _usable(token, excluded) and token not in seen:
+        if _usable(token, excluded) and token not in seen and token not in replaced:
             seen.add(token)
             terms.append(Term(token, "quote"))
     for _name, triggers, expansions in LEXICON:
@@ -286,12 +294,11 @@ def anchored_terms(driver: str, account: str | None, ledger: Ledger) -> list[Ter
                 if expansion not in seen:
                     seen.add(expansion)
                     terms.append(Term(expansion, "lexicon"))
-    for _name, triggers, expansions in LEARNED:
-        if any(re.search(rf"(?<![a-z0-9]){re.escape(t)}", lower) for t in triggers):
-            for expansion in expansions:
-                if expansion not in seen:
-                    seen.add(expansion)
-                    terms.append(Term(expansion, "learned"))
+    for expansions, _hits in fired:
+        for expansion in expansions:
+            if expansion not in seen:
+                seen.add(expansion)
+                terms.append(Term(expansion, "learned"))
     return terms
 
 
