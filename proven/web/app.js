@@ -848,6 +848,7 @@ function resolveSection(result, report) {
   if ((awaitsConfirmation || prefill) && teaches("accept_convention")) {
     select.value = "accept_convention";
     teach.hidden = false;
+    if (!state.resolved[id]) status.textContent = state.config.actions.find((a) => a.id === "accept_convention")?.help || "";
   }
   if (prefill) runCheck();
   const button = /** @type {HTMLButtonElement} */ (h("button", { type: "submit", class: "button" }, "Record"));
