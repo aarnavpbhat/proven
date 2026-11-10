@@ -18,6 +18,7 @@ ARGS=(--model "$MODEL" --host 127.0.0.1 --port "$UPSTREAM" --max-tokens 2048 --t
 "$MLX_PY" -m mlx_lm.server "${ARGS[@]}" &
 SERVER=$!
 PROXY_ARGS=(--port "$PORT" --upstream "http://127.0.0.1:$UPSTREAM" --name "$NAME")
+[[ -n "${REPAIR:-}" ]] && PROXY_ARGS+=(--repair-bare-objects)   # base-model measurement aid only
 [[ -n "$LOG" ]] && PROXY_ARGS+=(--log "$LOG")
 "$MLX_PY" "$HERE/mlx_proxy.py" "${PROXY_ARGS[@]}" &
 PROXY=$!
