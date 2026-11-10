@@ -10,8 +10,9 @@ lesson. This note covers three additions to that loop:
   (`proven/teachqueue.py`, `GET /api/queue`, the "Teach next" card in Learned).
 
 Every number below was produced offline on the merged `integration` code (the unread-content
-guard included): rules extractor, the oracle, or Sonnet 5.5 proposals replayed from the proposal
-cache with no request sent (0 cache misses). The standard benchmark is unchanged
+guard included), and produced again, identical apart from timings, after merging the
+independent-suite fixes (`integration` at e81f98a): rules extractor, the oracle, or Sonnet 5.5
+proposals replayed from the proposal cache with no request sent (0 cache misses). The standard benchmark is unchanged
 (`benchmark --phrasing seen`: 90.1% decided, 0 unsafe PASS, 0 control FAIL), and so is the
 README's teach-sim table (36 lessons, 88.6% decided, 0 / 0).
 
@@ -45,10 +46,11 @@ says so in amber instead of calling it safe.
 the whole `impact` report; an accepted lesson returns it too), `POST /api/lexicon/check` (a
 dry run, nothing stored), every previewed row of `GET /api/queue`, and `teach-sim --gate on`.
 
-**Latency.** Building the regression set takes about 2.9 s once per process (the console
-starts it in a background thread at `serve`). After that a check takes 20–491 ms; median
-277 ms over the 36 Sonnet lessons, 297 ms over the 36 oracle lessons, 182 ms over 67
-paraphrase lessons; the largest seen was 491 ms.
+**Latency.** Building the regression set takes about 3 s once per process (the console
+starts it in a background thread at `serve`). After that a check takes 20–500 ms on a quiet
+machine: median 277 ms over the 36 Sonnet lessons, 297 ms over the 36 oracle lessons, 182 ms
+over 67 paraphrase lessons. On a second run while other jobs loaded the machine the medians
+were 250–360 ms and the slowest check 704 ms.
 
 ### Deliberately bad lessons
 
