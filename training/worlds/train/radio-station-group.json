@@ -1,0 +1,728 @@
+{
+ "slug": "radio-station-group",
+ "industry": "radio station group",
+ "entities": [
+  "Harborlight Broadcasting Group",
+  "Copperline Media Partners",
+  "Tidewater Airwaves Inc",
+  "Silverpine Radio Holdings",
+  "Northgate Signal Communications"
+ ],
+ "accounts": [
+  {
+   "name": "Music Licensing & Royalties",
+   "aliases": [
+    "music licensing",
+    "royalties",
+    "licensing fees",
+    "performance rights",
+    "music rights costs"
+   ],
+   "narrative": [
+    "Music licensing",
+    "Royalties",
+    "Performance rights"
+   ],
+   "recurring": [
+    {
+     "vendor": "Blanket Rights Collective",
+     "base": 18500,
+     "memo": "Monthly performance rights blanket fee"
+    },
+    {
+     "vendor": "Digital Stream Royalty Board",
+     "base": 6200,
+     "memo": "Online simulcast royalty remittance"
+    },
+    {
+     "vendor": "Cue Sheet Reporting Services",
+     "base": 1400,
+     "memo": "Airplay logging and reporting"
+    }
+   ],
+   "events": [
+    {
+     "key": "tariffaudit",
+     "vendor": "Blanket Rights Collective",
+     "memos": [
+      "Tariff audit settlement - three year lookback",
+      "Tariff audit settlement - underreported revenue true-up"
+     ],
+     "cross_memo": "Tariff audit settlement - outside counsel review",
+     "plain": [
+      "the tariff audit settlement",
+      "the tariff audit lookback",
+      "the audit settlement true-up"
+     ],
+     "oblique": [
+      "a catch-up bill for years we underpaid",
+      "what the rights body said we owed after digging through old filings",
+      "the retroactive adjustment",
+      "a surprise bill from the past",
+      "back charges",
+      "the correction for earlier reporting gaps",
+      "an unwelcome letter about prior periods",
+      "the shortfall owed after their review",
+      "money owed for earlier years",
+      "the result of their examination of our books",
+      "a one-time penalty-free catch-up",
+      "the gap between what we paid and what they wanted",
+      "reconciling old payments",
+      "the demand covering previous seasons",
+      "a bill nobody had accrued for",
+      "the outcome of their review of our past submissions"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "jinglepack",
+     "vendor": "Brightwave Jingle Works",
+     "memos": [
+      "Brightwave jingle pack - sonic rebrand library",
+      "Brightwave jingle pack - exclusive station imaging"
+     ],
+     "cross_memo": "Brightwave jingle pack - voice talent session",
+     "plain": [
+      "the Brightwave jingle pack",
+      "the jingle pack rebrand library",
+      "the exclusive jingle pack imaging"
+     ],
+     "oblique": [
+      "the new on-air sound package",
+      "refreshing how we sound between songs",
+      "what the program director wanted for the autumn relaunch",
+      "custom audio identity",
+      "a fresh set of station sweepers",
+      "the signature audio we bought for the format flip",
+      "the short musical branding pieces",
+      "new sonic identity",
+      "something to replace the old stingers",
+      "the creative audio we commissioned",
+      "what plays between tracks now",
+      "the new audio branding",
+      "a one-off purchase of branded audio assets",
+      "the package the morning show asked for",
+      "music beds and drop-ins for the new look",
+      "the bought-in station sound"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Transmitter Site Rent & Utilities",
+   "aliases": [
+    "tower rent",
+    "site rent",
+    "transmitter site costs",
+    "tower site",
+    "site utilities"
+   ],
+   "narrative": [
+    "Tower rent",
+    "Site rent",
+    "Transmitter site costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeback Tower Holdings",
+     "base": 9800,
+     "memo": "Monthly tower space lease"
+    },
+    {
+     "vendor": "Valley Electric Co-op",
+     "base": 4100,
+     "memo": "Transmitter building electric"
+    },
+    {
+     "vendor": "Summit Propane Supply",
+     "base": 900,
+     "memo": "Backup heat fuel"
+    }
+   ],
+   "events": [
+    {
+     "key": "guywire",
+     "vendor": "Ridgeback Tower Holdings",
+     "memos": [
+      "Guywire retensioning - Mount Calloway tower",
+      "Guywire retensioning - structural climb crew"
+     ],
+     "cross_memo": "Guywire retensioning - FAA lighting recheck",
+     "plain": [
+      "the guywire retensioning",
+      "the Calloway guywire work",
+      "the guywire climb crew"
+     ],
+     "oblique": [
+      "keeping the mast from leaning after the windstorm",
+      "the steel cable maintenance",
+      "work done by crews at height",
+      "making the structure safe again",
+      "the inspection that flagged slack",
+      "a safety fix on the mountain",
+      "the high-altitude repair visit",
+      "tightening up the supports",
+      "what the landlord required",
+      "a structural maintenance event",
+      "the follow-up to the engineering report",
+      "work on the thing that holds our antenna up",
+      "emergency structural attention",
+      "the crew that climbed the mast",
+      "a mandatory stability correction",
+      "post-storm remediation"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "gensetswap",
+     "vendor": "Ironvale Power Systems",
+     "memos": [
+      "Ironvale diesel genset replacement - 150kW unit",
+      "Ironvale diesel genset replacement - transfer switch install"
+     ],
+     "cross_memo": "Ironvale diesel genset replacement - crane hire",
+     "plain": [
+      "the Ironvale diesel genset replacement",
+      "the genset transfer switch install",
+      "the 150kW genset unit"
+     ],
+     "oblique": [
+      "new backup power for when the grid fails",
+      "replacing the machine that died during the outage",
+      "keeping us on air through blackouts",
+      "the emergency power overhaul",
+      "what we bought after the failed test run",
+      "standby energy equipment",
+      "insurance against another dark night",
+      "the unit that kicks in automatically",
+      "a capital-sized purchase for resilience",
+      "power we generate ourselves",
+      "the old unit's retirement",
+      "redundancy for the building",
+      "what lets us broadcast without the utility",
+      "the machine in the shed out back",
+      "post-failure equipment replacement",
+      "upgrading our fallback electricity"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Syndicated Programming Fees",
+   "aliases": [
+    "syndication",
+    "programming fees",
+    "syndicated shows",
+    "talent syndication",
+    "show fees"
+   ],
+   "narrative": [
+    "Syndication",
+    "Programming fees",
+    "Syndicated shows"
+   ],
+   "recurring": [
+    {
+     "vendor": "Nationwide Talk Network",
+     "base": 14500,
+     "memo": "Weekday talk block syndication"
+    },
+    {
+     "vendor": "Weekend Countdown Productions",
+     "base": 3800,
+     "memo": "Weekend countdown show fee"
+    },
+    {
+     "vendor": "Sportsline Audio Feed",
+     "base": 5200,
+     "memo": "Network sports feed fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "morningbuyout",
+     "vendor": "Nationwide Talk Network",
+     "memos": [
+      "Morning host contract buyout - early termination",
+      "Morning host contract buyout - remaining term payout"
+     ],
+     "cross_memo": "Morning host contract buyout - legal fees",
+     "plain": [
+      "the morning host contract buyout",
+      "the host buyout early termination",
+      "the morning contract payout"
+     ],
+     "oblique": [
+      "paying someone to leave before their deal ended",
+      "the exit package for a departing voice",
+      "what it cost to part ways early",
+      "ending an agreement ahead of schedule",
+      "a severance-style settlement with the network",
+      "clearing the slot for the new lineup",
+      "the price of changing the dawn lineup",
+      "the payout that freed the time slot",
+      "a negotiated departure",
+      "what we owed for walking away",
+      "unwinding a commitment",
+      "a termination cost",
+      "the cheque that closed out the old arrangement",
+      "money paid for nothing aired",
+      "getting out of the long obligation",
+      "the cost of the format shakeup"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "playoffrights",
+     "vendor": "Gridiron Broadcast Rights",
+     "memos": [
+      "Gridiron playoff rights - regional championship package",
+      "Gridiron playoff rights - exclusive game window"
+     ],
+     "cross_memo": "Gridiron playoff rights - remote broadcast line",
+     "plain": [
+      "the Gridiron playoff rights",
+      "the regional championship package",
+      "the exclusive game window rights"
+     ],
+     "oblique": [
+      "carrying the big postseason games",
+      "the high school finals coverage",
+      "what we paid to air the biggest matchups",
+      "a seasonal sports add-on",
+      "the extra games the sales team wanted",
+      "exclusive coverage of the tournament run",
+      "a short-run premium sports purchase",
+      "the fall sports splurge",
+      "airing the title contests live",
+      "getting the local team's late-season games",
+      "a one-time sports buy",
+      "the deal that landed us the crowd-drawing events",
+      "play-by-play for the deep run",
+      "game coverage that sponsors had asked for",
+      "limited-window sports content",
+      "the special event sports package"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "On-Air Promotions & Contests",
+   "aliases": [
+    "promotions",
+    "contests",
+    "on-air promos",
+    "giveaways",
+    "station promotions"
+   ],
+   "narrative": [
+    "Promotions",
+    "Contest spend",
+    "Giveaways"
+   ],
+   "recurring": [
+    {
+     "vendor": "Prizeline Fulfillment",
+     "base": 4200,
+     "memo": "Contest prize fulfillment"
+    },
+    {
+     "vendor": "Street Team Staffing",
+     "base": 3100,
+     "memo": "Event staffing for remotes"
+    },
+    {
+     "vendor": "Promo Print Shop",
+     "base": 1800,
+     "memo": "Banners and window decals"
+    }
+   ],
+   "events": [
+    {
+     "key": "cashcabana",
+     "vendor": "Prizeline Fulfillment",
+     "memos": [
+      "Cash cabana summer giveaway - grand prize payout",
+      "Cash cabana summer giveaway - weekly winner checks"
+     ],
+     "cross_memo": "Cash cabana summer giveaway - tax withholding on winners",
+     "plain": [
+      "the cash cabana giveaway",
+      "the cabana grand prize payout",
+      "the cash cabana weekly winners"
+     ],
+     "oblique": [
+      "the big summer jackpot game",
+      "the listener sweepstakes that ran for weeks",
+      "money handed out to people who called in",
+      "the headline contest of the season",
+      "what we promised winners on air",
+      "a seasonal cash prize campaign",
+      "the ratings-period stunt",
+      "the games that drove the book",
+      "the contest that ran all quarter",
+      "cash prizes for the audience",
+      "the big-money listener game",
+      "what the sales department sold as a sponsor tie-in",
+      "the largest prize pool of the year",
+      "the on-air game with the big payoff",
+      "money awarded to callers",
+      "the summer ratings push"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "festivalstage",
+     "vendor": "Lakeshore Event Rentals",
+     "memos": [
+      "Lakeshore main stage rental - harbor festival weekend",
+      "Lakeshore main stage rental - sound barrier fencing"
+     ],
+     "cross_memo": "Lakeshore main stage rental - city permit",
+     "plain": [
+      "the Lakeshore main stage rental",
+      "the harbor festival stage",
+      "the stage rental fencing"
+     ],
+     "oblique": [
+      "the waterfront concert we hosted",
+      "our big outdoor community weekend",
+      "the live event downtown",
+      "where the bands played",
+      "a one-time public show",
+      "the platform the headliners stood on",
+      "hosting thousands of listeners at the pier",
+      "the annual open-air party",
+      "what we rented for the crowd event",
+      "the festival we sponsored and ran",
+      "a weekend of live music in the park",
+      "the staging for our own show",
+      "the outdoor spectacle",
+      "the event the whole market attended",
+      "the setup for the artists",
+      "the signature community gathering"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Traffic & Billing System Fees",
+   "aliases": [
+    "traffic system",
+    "billing system",
+    "scheduling software",
+    "traffic and billing",
+    "ad scheduling platform"
+   ],
+   "narrative": [
+    "Traffic system",
+    "Billing system",
+    "Scheduling software"
+   ],
+   "recurring": [
+    {
+     "vendor": "AirSked Systems",
+     "base": 7600,
+     "memo": "Ad scheduling platform subscription"
+    },
+    {
+     "vendor": "InvoiceStream",
+     "base": 2300,
+     "memo": "Advertiser invoicing module"
+    },
+    {
+     "vendor": "Logbook Archive Co",
+     "base": 1100,
+     "memo": "Aired spot log retention"
+    }
+   ],
+   "events": [
+    {
+     "key": "airskedmigrate",
+     "vendor": "AirSked Systems",
+     "memos": [
+      "Platform migration - cloud cutover weekend",
+      "Platform migration - historical data import"
+     ],
+     "cross_memo": "Platform migration - temporary parallel licensing",
+     "plain": [
+      "the platform migration",
+      "the cloud cutover weekend",
+      "the historical data import"
+     ],
+     "oblique": [
+      "moving everything off the old servers",
+      "the changeover to hosted infrastructure",
+      "a one-time lift of years of records",
+      "the switch we scheduled around the holiday",
+      "retiring the machine in the closet",
+      "relocating our data",
+      "what IT arranged to modernise",
+      "the conversion project",
+      "getting off the aging hardware",
+      "a project with a hard go-live date",
+      "the big technology changeover",
+      "the transition nobody enjoyed",
+      "carrying over old files",
+      "the upgrade path we finally took",
+      "shifting where the system lives",
+      "the big move of our records"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "agencyportal",
+     "vendor": "Orbit Media Exchange",
+     "memos": [
+      "Orbit agency portal setup - buyer self-service build",
+      "Orbit agency portal setup - rate card integration"
+     ],
+     "cross_memo": "Orbit agency portal setup - staff training",
+     "plain": [
+      "the Orbit agency portal setup",
+      "the buyer self-service build",
+      "the rate card integration"
+     ],
+     "oblique": [
+      "letting ad buyers order on their own",
+      "a website for the agencies we sell to",
+      "the tool that cuts phone calls from planners",
+      "the project sales leadership championed",
+      "an online front door for clients",
+      "the new ordering experience",
+      "what we built so clients stop emailing",
+      "self-serve for advertisers",
+      "a customer-facing project",
+      "the new way for buyers to place orders",
+      "something agencies requested for years",
+      "the online storefront",
+      "a revenue-enablement build",
+      "what the sales team asked for",
+      "the client access project",
+      "one-time development for advertisers"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Studio & Broadcast Equipment Maintenance",
+   "aliases": [
+    "studio maintenance",
+    "equipment repairs",
+    "broadcast equipment",
+    "studio gear upkeep",
+    "engineering repairs"
+   ],
+   "narrative": [
+    "Studio maintenance",
+    "Equipment repairs",
+    "Engineering repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Soundstage Service Group",
+     "base": 5400,
+     "memo": "Studio console maintenance contract"
+    },
+    {
+     "vendor": "Pinnacle Antenna Services",
+     "base": 2800,
+     "memo": "Quarterly antenna system check"
+    },
+    {
+     "vendor": "Spare Parts Depot",
+     "base": 1600,
+     "memo": "Consumable cables and connectors"
+    }
+   ],
+   "events": [
+    {
+     "key": "exciterfail",
+     "vendor": "Pinnacle Antenna Services",
+     "memos": [
+      "FM exciter failure - emergency replacement",
+      "FM exciter failure - overnight courier unit"
+     ],
+     "cross_memo": "FM exciter failure - lost airtime make-goods",
+     "plain": [
+      "the FM exciter failure",
+      "the exciter emergency replacement",
+      "the overnight courier exciter"
+     ],
+     "oblique": [
+      "the night we went off the air",
+      "rushing a part to get back on the dial",
+      "a sudden breakdown of the signal generating gear",
+      "what died at three in the morning",
+      "the outage that made the engineer drive out",
+      "an unplanned dark period",
+      "the urgent fix for silence",
+      "getting the signal restored",
+      "the unit that cooked itself",
+      "costly speed to restore the broadcast",
+      "a crisis repair",
+      "what we paid to get back on",
+      "expedited shipping of a critical component",
+      "the unexpected failure",
+      "a dead-air emergency",
+      "the equipment that quit"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "consolereplace",
+     "vendor": "Tracewood Audio Installations",
+     "memos": [
+      "Tracewood studio B rebuild - new mixing console",
+      "Tracewood studio B rebuild - acoustic panel install"
+     ],
+     "cross_memo": "Tracewood studio B rebuild - cabling and wiring",
+     "plain": [
+      "the Tracewood studio B rebuild",
+      "the new mixing console install",
+      "the acoustic panel install"
+     ],
+     "oblique": [
+      "gutting the second room and starting over",
+      "the new room the news team moves into",
+      "a full renovation of a control room",
+      "modernising the space where hosts sit",
+      "the construction project down the hall",
+      "the refit that took three weeks",
+      "a makeover for the production area",
+      "the new look and feel of the booth",
+      "replacing what was installed in the nineties",
+      "the room where shows originate",
+      "upgrading the workspace",
+      "a capital-style project for the building",
+      "the overhaul of the studio suite",
+      "fresh equipment where the old stood",
+      "a rebuild of our second on-air space",
+      "the renovation we budgeted for years"
+     ],
+     "low": 24000,
+     "high": 48000
+    }
+   ]
+  },
+  {
+   "name": "Market Ratings & Research",
+   "aliases": [
+    "ratings",
+    "audience research",
+    "market research",
+    "ratings subscriptions",
+    "audience measurement"
+   ],
+   "narrative": [
+    "Ratings",
+    "Audience research",
+    "Market research"
+   ],
+   "recurring": [
+    {
+     "vendor": "Listener Metrics Bureau",
+     "base": 11200,
+     "memo": "Monthly audience measurement subscription"
+    },
+    {
+     "vendor": "Demographic Insights Group",
+     "base": 3500,
+     "memo": "Market demographic data license"
+    },
+    {
+     "vendor": "Survey Panel Partners",
+     "base": 2000,
+     "memo": "Listener panel maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "perceptualstudy",
+     "vendor": "Listener Metrics Bureau",
+     "memos": [
+      "Perceptual study - format fit analysis",
+      "Perceptual study - competitor tracking wave"
+     ],
+     "cross_memo": "Perceptual study - focus group facilitation",
+     "plain": [
+      "the perceptual study",
+      "the format fit analysis",
+      "the competitor tracking wave"
+     ],
+     "oblique": [
+      "asking people what they think of us versus rivals",
+      "a deep dive into how the market sees the brand",
+      "what consultants delivered about audience attitudes",
+      "a custom survey project",
+      "the one-time effort to understand our position",
+      "insights gathered before the strategy meeting",
+      "a rare large-scale opinion project",
+      "the study management commissioned",
+      "what we learned about preferences",
+      "work that informed programming decisions",
+      "a snapshot of perceptions",
+      "outside opinion gathering",
+      "comparing ourselves to others in town",
+      "a research initiative beyond the routine",
+      "the big listener attitude project",
+      "a point-in-time inquiry"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "musictest",
+     "vendor": "Callout Insight Labs",
+     "memos": [
+      "Callout Insight auditorium music test - hook sampling",
+      "Callout Insight auditorium music test - respondent incentives"
+     ],
+     "cross_memo": "Callout Insight auditorium music test - venue booking",
+     "plain": [
+      "the Callout Insight auditorium music test",
+      "the hook sampling test",
+      "the respondent incentives for the music test"
+     ],
+     "oblique": [
+      "playing song clips to a roomful of recruited fans",
+      "figuring out which tunes to keep in rotation",
+      "scoring the playlist with real listeners",
+      "the gathering where people rated hits",
+      "a one-time review of our song library",
+      "what the music director ordered before the book",
+      "audience reaction to short snippets",
+      "deciding which songs get dropped",
+      "a session to vet the library",
+      "paying people to listen and vote",
+      "evidence for playlist changes",
+      "the room full of respondents",
+      "the project behind the new rotation",
+      "testing the catalog against the crowd",
+      "sampling tracks live",
+      "the evening where strangers judged our songs"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

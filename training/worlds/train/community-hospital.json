@@ -1,0 +1,728 @@
+{
+ "slug": "community-hospital",
+ "industry": "community hospital",
+ "entities": [
+  "Harborview Community Hospital",
+  "Maple Ridge Medical Center",
+  "Cedar Falls Regional Hospital",
+  "Lakeshore Community Health",
+  "Pine Valley Memorial Hospital"
+ ],
+ "accounts": [
+  {
+   "name": "Medical Supplies",
+   "aliases": [
+    "medical supplies",
+    "med supplies",
+    "clinical supplies",
+    "supply spend",
+    "patient care supplies"
+   ],
+   "narrative": [
+    "Medical supplies",
+    "Clinical supplies",
+    "Supply spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northfield Medical Distribution",
+     "base": 18500,
+     "memo": "Med-surg consumables PO 44120"
+    },
+    {
+     "vendor": "Brightline Surgical Supply",
+     "base": 12200,
+     "memo": "OR disposables standing order"
+    },
+    {
+     "vendor": "Pacific Glove & Gown Co",
+     "base": 4300,
+     "memo": "PPE replenishment"
+    }
+   ],
+   "events": [
+    {
+     "key": "sterilizer",
+     "vendor": "Northfield Medical Distribution",
+     "memos": [
+      "Autoclave validation kits — sterilizer qualification PO 44871",
+      "Autoclave validation kits — sterilizer biological indicators"
+     ],
+     "cross_memo": "Autoclave validation kits — sterilizer contract tech visit",
+     "plain": [
+      "the autoclave validation kits",
+      "the sterilizer qualification",
+      "the sterilizer biological indicators"
+     ],
+     "oblique": [
+      "getting central processing re-certified",
+      "the inspector's findings on instrument cleaning",
+      "what the state surveyors required after their visit",
+      "reprocessing room compliance",
+      "proving the cleaning cycle works",
+      "the accreditation scare",
+      "instrument turnaround fixes",
+      "re-testing after the failed audit",
+      "extra checks in the back-of-house instrument area",
+      "safety paperwork for reusable tools",
+      "the remediation push",
+      "tightening up how tools get reprocessed",
+      "documented proof of germ kill",
+      "a regulator-driven redo",
+      "the quality team's retesting push",
+      "what we had to buy to keep the OR open"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "orthoimplants",
+     "vendor": "Meridian Orthopedic Implants",
+     "memos": [
+      "Meridian Orthopedic Implants — joint program launch tray set PO 45002",
+      "Meridian Orthopedic Implants — joint program launch consignment"
+     ],
+     "cross_memo": "Meridian Orthopedic Implants — joint program launch surgeon training",
+     "plain": [
+      "the joint program launch",
+      "the Meridian Orthopedic Implants tray set",
+      "the joint program consignment"
+     ],
+     "oblique": [
+      "the new hip and knee service line",
+      "stocking the surgeons' preferred hardware",
+      "what we bought ahead of the first replacement cases",
+      "the new surgical specialty starting up",
+      "upfront inventory for the new lineup",
+      "getting the bone and joint team ready",
+      "the surgeons we recruited this spring",
+      "opening day inventory for the new service",
+      "the expansion into elective procedures",
+      "building shelf stock for a brand new offering",
+      "startup stock for the surgery growth plan",
+      "preparing for a higher volume of operations",
+      "our entry into artificial joints",
+      "the board-approved clinical expansion",
+      "launch-week purchases for the new surgical area",
+      "metal and titanium inventory for the new program"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Pharmaceutical Costs",
+   "aliases": [
+    "pharmacy",
+    "pharmaceutical costs",
+    "drug spend",
+    "pharmacy costs",
+    "formulary spend"
+   ],
+   "narrative": [
+    "Pharmacy",
+    "Drug spend",
+    "Pharmacy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Wholesale Drug",
+     "base": 29000,
+     "memo": "Wholesale drug order weekly sweep"
+    },
+    {
+     "vendor": "Valor IV Solutions",
+     "base": 9800,
+     "memo": "IV fluids and admixtures"
+    },
+    {
+     "vendor": "Clearwater Sterile Compounding",
+     "base": 6400,
+     "memo": "Compounded sterile products"
+    }
+   ],
+   "events": [
+    {
+     "key": "biologic",
+     "vendor": "Keystone Wholesale Drug",
+     "memos": [
+      "Infliximab biosimilar switch — initial loading stock PO 46310",
+      "Infliximab biosimilar switch — infusion center order"
+     ],
+     "cross_memo": "Infliximab biosimilar switch — nursing education hours",
+     "plain": [
+      "the infliximab biosimilar switch",
+      "the infliximab loading stock",
+      "the infliximab infusion center order"
+     ],
+     "oblique": [
+      "moving patients to a cheaper equivalent therapy",
+      "the rheumatology clinic's new protocol",
+      "what the formulary committee approved",
+      "converting our autoimmune patients",
+      "the infusion suite's heavier schedule",
+      "a one-time stock-up on the replacement product",
+      "payer pressure to change treatments",
+      "the gastro patients who had to be moved over",
+      "front-loading the new product",
+      "the changeover our specialists pushed for",
+      "stocking up before the old agreement lapsed",
+      "the shift in what we give chronic-condition patients",
+      "the committee's cost-saving swap",
+      "how many patients we re-dosed at once",
+      "the clinic-driven therapy change",
+      "what the specialty pharmacists ordered"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "shortage",
+     "vendor": "Lumen Emergency Pharma Brokers",
+     "memos": [
+      "Lumen Emergency Pharma Brokers — saline backorder spot buy PO 46455",
+      "Lumen Emergency Pharma Brokers — saline backorder expedite freight"
+     ],
+     "cross_memo": "Lumen Emergency Pharma Brokers — saline backorder overnight courier",
+     "plain": [
+      "the saline backorder spot buy",
+      "the Lumen Emergency Pharma Brokers expedite",
+      "the saline backorder freight"
+     ],
+     "oblique": [
+      "the national fluid scarcity",
+      "paying premium prices to keep patients hydrated",
+      "gray-market procurement",
+      "what happened when our usual channel dried up",
+      "the supply chain crisis that hit everyone",
+      "emergency sourcing from outside our normal channel",
+      "scrambling for basic bedside solutions",
+      "the factory shutdown that rippled to us",
+      "the weeks we couldn't get standard product",
+      "pricey one-off purchases to avoid cancelling surgeries",
+      "stopgap buying",
+      "making sure the floors didn't run out",
+      "the manufacturer's plant problem",
+      "avoiding a stoppage on the wards",
+      "shortage-era purchasing",
+      "the unplanned premium we paid for a commodity"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Clinical Staffing Agencies",
+   "aliases": [
+    "agency labor",
+    "agency staffing",
+    "travel nurses",
+    "contract labor",
+    "temp clinical staff"
+   ],
+   "narrative": [
+    "Agency labor",
+    "Travel nurses",
+    "Contract labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Nurse Partners",
+     "base": 26000,
+     "memo": "RN weekly contract hours"
+    },
+    {
+     "vendor": "CareBridge Allied Staffing",
+     "base": 14500,
+     "memo": "Respiratory and lab techs hours"
+    },
+    {
+     "vendor": "Tidewater Locums Group",
+     "base": 11000,
+     "memo": "Physician coverage shifts"
+    }
+   ],
+   "events": [
+    {
+     "key": "unitopening",
+     "vendor": "Summit Nurse Partners",
+     "memos": [
+      "Telemetry annex ramp-up — orientation block WO 7781",
+      "Telemetry annex ramp-up — premium night differential"
+     ],
+     "cross_memo": "Telemetry annex ramp-up — badge and onboarding fees",
+     "plain": [
+      "the telemetry annex ramp-up",
+      "the telemetry annex orientation block",
+      "the telemetry annex night differential"
+     ],
+     "oblique": [
+      "opening the new cardiac wing",
+      "staffing a unit before we'd hired permanent people",
+      "the added beds that came online",
+      "bridging until our own hires start",
+      "extra coverage for the expansion floor",
+      "the first weeks of a freshly built ward",
+      "a bulge in headcount for the heart patients",
+      "getting a new floor staffed from day one",
+      "the capacity increase administration approved",
+      "covering a ward with no permanent team yet",
+      "the construction project finishing early",
+      "patients we could finally admit upstairs",
+      "the added monitored beds",
+      "onboarding crowd for the new space",
+      "the opening weekend crowd of temps",
+      "a floor that needed bodies right away"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "flu",
+     "vendor": "Redwood Surge Staffing",
+     "memos": [
+      "Redwood Surge Staffing — respiratory season crisis pool PO 47220",
+      "Redwood Surge Staffing — respiratory season crisis bonuses"
+     ],
+     "cross_memo": "Redwood Surge Staffing — respiratory season crisis housing stipend",
+     "plain": [
+      "the respiratory season crisis pool",
+      "the Redwood Surge Staffing bonuses",
+      "the respiratory season crisis staffing"
+     ],
+     "oblique": [
+      "the wave of sick patients in the winter",
+      "the flu rush that filled every bed",
+      "hallway gurneys and overflow",
+      "the weeks the emergency room was swamped",
+      "a spike in admissions across the region",
+      "calling in outside help for the peak",
+      "the community-wide outbreak",
+      "an unusually harsh cold season",
+      "a census we hadn't planned for",
+      "the seasonal crush",
+      "extra hands when everybody was ill",
+      "the viral surge",
+      "patient volume beyond our normal capacity",
+      "the holiday-time crowd of coughing patients",
+      "what the cold weather brought through our doors",
+      "more people sick than our own team could handle"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Medical Equipment Maintenance",
+   "aliases": [
+    "equipment maintenance",
+    "biomed",
+    "biomed service",
+    "equipment repairs",
+    "device service contracts"
+   ],
+   "narrative": [
+    "Equipment maintenance",
+    "Biomed",
+    "Device service contracts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Apex Biomedical Services",
+     "base": 15500,
+     "memo": "Preventive maintenance contract"
+    },
+    {
+     "vendor": "Sonic Imaging Service Group",
+     "base": 9200,
+     "memo": "Ultrasound service agreement"
+    },
+    {
+     "vendor": "Vitalcore Monitor Repair",
+     "base": 3800,
+     "memo": "Bedside monitor repairs"
+    }
+   ],
+   "events": [
+    {
+     "key": "mri",
+     "vendor": "Sonic Imaging Service Group",
+     "memos": [
+      "Magnet quench recovery — helium refill WO 5521",
+      "Magnet quench recovery — coil replacement"
+     ],
+     "cross_memo": "Magnet quench recovery — loaner scanner rental",
+     "plain": [
+      "the magnet quench recovery",
+      "the quench helium refill",
+      "the quench coil replacement"
+     ],
+     "oblique": [
+      "the scanner going dark for two weeks",
+      "the big imaging machine failure",
+      "getting radiology back up",
+      "the outage that sent patients elsewhere",
+      "an unexpected breakdown in the department with the tube",
+      "what it took to revive the scanner",
+      "our most expensive diagnostic machine failing",
+      "the vendor engineers flown in on short notice",
+      "the unplanned failure of a million-dollar asset",
+      "bringing the scanning suite back online",
+      "the cold-head problem",
+      "a lost fortnight of body scans",
+      "emergency repair on the diagnostic centerpiece",
+      "the equipment crash radiology reported",
+      "repairs after the sudden shutdown",
+      "an unscheduled fix on our biggest machine"
+     ],
+     "low": 24000,
+     "high": 48000
+    },
+    {
+     "key": "sterileceiling",
+     "vendor": "Crestline Environmental Controls",
+     "memos": [
+      "Crestline Environmental Controls — airflow recertification suite PO 5602",
+      "Crestline Environmental Controls — airflow recertification filters"
+     ],
+     "cross_memo": "Crestline Environmental Controls — airflow recertification downtime coverage",
+     "plain": [
+      "the airflow recertification suite",
+      "the Crestline Environmental Controls filters",
+      "the airflow recertification work"
+     ],
+     "oblique": [
+      "making sure the operating rooms meet air quality rules",
+      "the annual inspection of surgical ventilation",
+      "what the facilities director flagged",
+      "overdue upkeep on the building systems",
+      "clean-room compliance work",
+      "the pressure readings that failed",
+      "protecting patients from airborne contamination",
+      "getting our theaters back within spec",
+      "what the engineers found above the ceilings",
+      "a mandatory environmental check",
+      "filters and ductwork for the surgical wing",
+      "keeping infection numbers down through the building itself",
+      "the rules for positive pressure rooms",
+      "an overdue catch-up on building air handling",
+      "the code-driven overhaul",
+      "what safety required before reopening the rooms"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Patient Food Services",
+   "aliases": [
+    "dietary",
+    "food services",
+    "patient meals",
+    "cafeteria costs",
+    "nutrition services"
+   ],
+   "narrative": [
+    "Dietary",
+    "Food services",
+    "Patient meals"
+   ],
+   "recurring": [
+    {
+     "vendor": "Orchard Fresh Foodservice",
+     "base": 13800,
+     "memo": "Produce and dairy weekly delivery"
+    },
+    {
+     "vendor": "Granite State Provisions",
+     "base": 9600,
+     "memo": "Dry goods and protein"
+    },
+    {
+     "vendor": "Nourish Therapeutic Diets",
+     "base": 3500,
+     "memo": "Tube feeding and supplements"
+    }
+   ],
+   "events": [
+    {
+     "key": "kitchenfire",
+     "vendor": "Orchard Fresh Foodservice",
+     "memos": [
+      "Walk-in cooler failure — product loss replacement PO 8814",
+      "Walk-in cooler failure — emergency restock"
+     ],
+     "cross_memo": "Walk-in cooler failure — mobile refrigeration lease",
+     "plain": [
+      "the walk-in cooler failure",
+      "the cooler product loss replacement",
+      "the cooler emergency restock"
+     ],
+     "oblique": [
+      "spoiled groceries we had to throw out",
+      "the overnight power fault in the cold storage",
+      "a weekend when the chilled goods warmed up",
+      "replacing everything that went bad",
+      "the health inspector making us start over",
+      "the loss of a week of inventory",
+      "food that couldn't be served",
+      "the rush order to refill shelves",
+      "the breakdown in the back kitchen",
+      "the equipment trouble that ruined our stock",
+      "an emergency reorder from our produce supplier",
+      "tossing out perishables",
+      "the day the thermostat quit",
+      "what we rebuilt after the kitchen incident",
+      "meals we had to source in a hurry",
+      "cold chain trouble in the basement"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "catering",
+     "vendor": "Bellwether Event Catering",
+     "memos": [
+      "Bellwether Event Catering — dedication gala service PO 8830",
+      "Bellwether Event Catering — dedication gala banquet staff"
+     ],
+     "cross_memo": "Bellwether Event Catering — dedication gala linen rental",
+     "plain": [
+      "the dedication gala service",
+      "the Bellwether Event Catering banquet staff",
+      "the dedication gala catering"
+     ],
+     "oblique": [
+      "the foundation's fundraising evening",
+      "feeding donors at the new building celebration",
+      "the ribbon-cutting reception",
+      "an event the board hosted for benefactors",
+      "dinner for the big contributors",
+      "the community open house meal",
+      "outside caterers for a one-night affair",
+      "the party for supporters of the capital campaign",
+      "hospitality for hundreds of guests",
+      "what development office spent on the night",
+      "a formal supper marking the new wing",
+      "the philanthropic celebration",
+      "hosting local dignitaries",
+      "a buffet for the opening ceremony",
+      "entertaining donors",
+      "the evening we thanked our patrons"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Medical Waste and Laundry",
+   "aliases": [
+    "waste and laundry",
+    "biohazard disposal",
+    "linen service",
+    "medical waste",
+    "laundry costs"
+   ],
+   "narrative": [
+    "Waste and laundry",
+    "Biohazard disposal",
+    "Linen service"
+   ],
+   "recurring": [
+    {
+     "vendor": "SafeCycle Medical Waste",
+     "base": 7200,
+     "memo": "Regulated medical waste pickup"
+    },
+    {
+     "vendor": "CleanWeave Healthcare Linen",
+     "base": 16800,
+     "memo": "Scrubs and bed linen weekly"
+    },
+    {
+     "vendor": "Sharps Solutions Inc",
+     "base": 2900,
+     "memo": "Sharps container exchange"
+    }
+   ],
+   "events": [
+    {
+     "key": "pharmwaste",
+     "vendor": "SafeCycle Medical Waste",
+     "memos": [
+      "Chemo drug incineration — hazardous manifest HW-3391",
+      "Chemo drug incineration — oncology pharmaceutical pickup"
+     ],
+     "cross_memo": "Chemo drug incineration — spill kit replacement",
+     "plain": [
+      "the chemo drug incineration",
+      "the chemo hazardous manifest",
+      "the chemo oncology pickup"
+     ],
+     "oblique": [
+      "clearing out expired cancer treatments",
+      "the cleanup after we closed the infusion program",
+      "disposal of cytotoxic leftovers",
+      "a one-time purge of unused medicines",
+      "regulatory mandated destruction",
+      "what the environmental agency made us dispose of",
+      "specially licensed hauling of dangerous materials",
+      "getting rid of high-risk inventory",
+      "the pharmacy clean-out",
+      "special handling for toxic compounds",
+      "a pickup well beyond the normal schedule",
+      "shipping dangerous remnants for burning",
+      "the oncology unit's discarded stock",
+      "a high-hazard haul",
+      "the cost of getting rid of poison-grade drugs",
+      "compliance with strict disposal law"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "laundryvendor",
+     "vendor": "Evergreen Textile Rental",
+     "memos": [
+      "Evergreen Textile Rental — bedbug remediation linen replacement PO 9102",
+      "Evergreen Textile Rental — bedbug remediation heat treatment"
+     ],
+     "cross_memo": "Evergreen Textile Rental — bedbug remediation mattress covers",
+     "plain": [
+      "the bedbug remediation linen replacement",
+      "the Evergreen Textile Rental heat treatment",
+      "the bedbug remediation work"
+     ],
+     "oblique": [
+      "the infestation on the third floor",
+      "replacing every sheet in an affected wing",
+      "pests found in patient rooms",
+      "an outbreak of unwelcome insects",
+      "the exterminator's recommendations",
+      "treating rooms and swapping out the bedding",
+      "what housekeeping reported on the east unit",
+      "quarantining a hallway of beds",
+      "a bug problem we had to stamp out",
+      "rooms closed for a week and fumigated",
+      "discarding soft goods that couldn't be saved",
+      "the complaint from a family member",
+      "stripping and re-outfitting patient beds",
+      "sanitation emergency",
+      "expense of eliminating the vermin",
+      "pest-driven textile replacement"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Health IT and Clinical Systems",
+   "aliases": [
+    "clinical IT",
+    "EHR costs",
+    "health IT",
+    "clinical systems",
+    "IT licensing"
+   ],
+   "narrative": [
+    "Clinical IT",
+    "EHR costs",
+    "Health IT"
+   ],
+   "recurring": [
+    {
+     "vendor": "Praxis Health Records",
+     "base": 28000,
+     "memo": "EHR subscription monthly"
+    },
+    {
+     "vendor": "Cloudvault Backup",
+     "base": 5600,
+     "memo": "Hosted PACS archive"
+    },
+    {
+     "vendor": "Sentinel Cyber Services",
+     "base": 8200,
+     "memo": "Managed security monitoring"
+    }
+   ],
+   "events": [
+    {
+     "key": "ransomware",
+     "vendor": "Sentinel Cyber Services",
+     "memos": [
+      "Forensics retainer — intrusion response engagement INC-7714",
+      "Forensics retainer — intrusion response overtime"
+     ],
+     "cross_memo": "Forensics retainer — intrusion response credit monitoring",
+     "plain": [
+      "the forensics retainer",
+      "the intrusion response engagement",
+      "the intrusion response overtime"
+     ],
+     "oblique": [
+      "the hackers locking our files",
+      "the weekend our network went down",
+      "a criminal attack on our servers",
+      "paper charting for days",
+      "outside investigators we had to bring in",
+      "the breach notification letters",
+      "getting systems cleaned and restored",
+      "the malicious software incident",
+      "an attack nobody saw coming",
+      "the break-in at our data center",
+      "the extortion demand",
+      "lawyers and responders working around the clock",
+      "what we paid to prove no records left the building",
+      "the cyber event",
+      "rebuilding trust after the compromise",
+      "hostile code that shut us down"
+     ],
+     "low": 30000,
+     "high": 60000
+    },
+    {
+     "key": "telehealth",
+     "vendor": "Quillon Virtual Care Platforms",
+     "memos": [
+      "Quillon Virtual Care Platforms — remote visit rollout license PO 9477",
+      "Quillon Virtual Care Platforms — remote visit rollout configuration"
+     ],
+     "cross_memo": "Quillon Virtual Care Platforms — remote visit rollout tablets",
+     "plain": [
+      "the remote visit rollout license",
+      "the Quillon Virtual Care Platforms configuration",
+      "the remote visit rollout"
+     ],
+     "oblique": [
+      "letting patients see doctors from their couch",
+      "the new video appointment option",
+      "serving rural patients without a drive",
+      "the push for access outside our walls",
+      "a new way to reach people at home",
+      "what the clinics asked for after the pandemic",
+      "expanding care beyond the campus",
+      "screens and software for webcam appointments",
+      "the digital front door project",
+      "the outpatient team's request for online consults",
+      "getting providers set up to work from anywhere",
+      "an initiative to cut no-shows",
+      "connecting with homebound seniors",
+      "adding a channel for follow-up appointments",
+      "the strategy committee's modernization item",
+      "bringing visits onto the internet"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

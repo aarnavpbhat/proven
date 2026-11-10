@@ -1,0 +1,693 @@
+{
+ "slug": "insurance-brokerage",
+ "industry": "insurance brokerage",
+ "entities": [
+  "Harborline Risk Partners",
+  "Cedarbrook Insurance Group",
+  "Northgate Benefits Advisors",
+  "Pinecrest Underwriting Services",
+  "Larkspur Commercial Brokers"
+ ],
+ "accounts": [
+  {
+   "name": "Errors & Omissions Insurance",
+   "aliases": [
+    "e&o",
+    "e&o premiums",
+    "professional liability",
+    "liability coverage",
+    "e&o coverage cost"
+   ],
+   "narrative": [
+    "E&O",
+    "E&O premiums",
+    "Professional liability"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Specialty Underwriters",
+     "base": 14500,
+     "memo": "Monthly installment, agency professional policy"
+    },
+    {
+     "vendor": "Stonebridge Surplus Lines",
+     "base": 6200,
+     "memo": "Excess layer installment, brokerage policy"
+    }
+   ],
+   "events": [
+    {
+     "key": "cyberendorse",
+     "vendor": "Meridian Specialty Underwriters",
+     "memos": [
+      "Cyber extension endorsement - Dallas office",
+      "Cyber extension endorsement - pro-rata premium"
+     ],
+     "cross_memo": "Cyber extension endorsement - broker fee",
+     "plain": [
+      "the cyber extension endorsement",
+      "the Dallas cyber extension",
+      "the cyber extension premium"
+     ],
+     "oblique": [
+      "added protection against hacking losses",
+      "the new rider after the phishing scare",
+      "coverage for stolen client data",
+      "what the carrier charged to widen our policy",
+      "the mid-term policy expansion",
+      "extra digital security cover",
+      "the rider our lender requested",
+      "insurance against ransom demands",
+      "protection for online breaches",
+      "the supplement we bought after the audit",
+      "wider scope on the existing policy",
+      "a tail on network intrusions",
+      "the add-on our largest client insisted upon",
+      "safeguards against computer fraud",
+      "one more layer of tech cover",
+      "the mid-year buy-up"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "prioracts",
+     "vendor": "Whitlock Run-Off Services",
+     "memos": [
+      "Prior acts tail - Tampa retiring principals",
+      "Prior acts tail - run-off certificate"
+     ],
+     "cross_memo": "Prior acts tail - legal review",
+     "plain": [
+      "the prior acts tail",
+      "the Tampa prior acts tail",
+      "the prior acts run-off certificate"
+     ],
+     "oblique": [
+      "protection for partners who left",
+      "covering past work of departed staff",
+      "the retirement-related coverage extension",
+      "what we paid so retirees stay covered",
+      "insuring claims that surface years later",
+      "the leavers' exposure buyout",
+      "a safety net for former owners",
+      "closing out historical liability",
+      "the legacy cover for exiting principals",
+      "keeping old files protected",
+      "paying to cover decades-old placements",
+      "the sunset arrangement for veterans",
+      "after the founders stepped away",
+      "continuing shelter for earlier clients",
+      "the handover of long-tail risk",
+      "what retiring brokers asked us to buy"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Carrier Contingent Commission Chargebacks",
+   "aliases": [
+    "chargebacks",
+    "commission chargebacks",
+    "clawbacks",
+    "commission reversals",
+    "carrier clawbacks"
+   ],
+   "narrative": [
+    "Chargebacks",
+    "Commission clawbacks",
+    "Carrier reversals"
+   ],
+   "recurring": [
+    {
+     "vendor": "Atlas Mutual Commission Desk",
+     "base": 5200,
+     "memo": "Standard cancellation chargebacks, personal lines"
+    },
+    {
+     "vendor": "Redwood National Carrier Services",
+     "base": 3800,
+     "memo": "Return commission on mid-term cancels"
+    }
+   ],
+   "events": [
+    {
+     "key": "blockbook",
+     "vendor": "Atlas Mutual Commission Desk",
+     "memos": [
+      "Book rollover reversal - Sacramento farm accounts",
+      "Book rollover reversal - nonrenewal batch"
+     ],
+     "cross_memo": "Book rollover reversal - producer advance writeback",
+     "plain": [
+      "the book rollover reversal",
+      "the Sacramento book rollover",
+      "the rollover reversal batch"
+     ],
+     "oblique": [
+      "a carrier pulling a whole segment",
+      "money returned after a large nonrenewal wave",
+      "agricultural policies leaving at once",
+      "what we owed back when the insurer exited",
+      "the farm business that walked",
+      "a bulk loss of paid revenue",
+      "the unwinding of last year's big win",
+      "reclaimed earnings on departed insureds",
+      "the exit of an entire territory",
+      "payback after the carrier changed appetite",
+      "a one-time giveback on lost policies",
+      "the departure of our rural clients",
+      "fallout from a major underwriting decision",
+      "reimbursements demanded after the pullout",
+      "an abrupt end to a profitable block",
+      "the withdrawal from the countryside"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "fraudcancel",
+     "vendor": "Pelham Claims Audit Group",
+     "memos": [
+      "Premium fraud rescission - Orlando contractor group",
+      "Premium fraud rescission - forfeited commission"
+     ],
+     "cross_memo": "Premium fraud rescission - investigator invoice",
+     "plain": [
+      "the premium fraud rescission",
+      "the Orlando contractor rescission",
+      "the forfeited fraud commission"
+     ],
+     "oblique": [
+      "policies voided after misstatements",
+      "a builder cohort that lied on applications",
+      "reclaimed income from tainted business",
+      "what we returned after the carrier found deception",
+      "the cancellation of fake payroll policies",
+      "the sweep that undid bogus sales",
+      "one bad client set that unraveled",
+      "lost earnings after the underwriter's review",
+      "payback on contrived coverage",
+      "the retroactive voiding of questionable files",
+      "unwinding applications that misrepresented risk",
+      "the trades group with falsified figures",
+      "claims of cheating that reversed our revenue",
+      "a retroactive wipeout of one customer cluster",
+      "what the insurer took back after the probe",
+      "the cleanup of dishonest submissions"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Producer Licensing & Continuing Education",
+   "aliases": [
+    "licensing",
+    "ce costs",
+    "license renewals",
+    "producer licensing",
+    "education and licensing"
+   ],
+   "narrative": [
+    "Licensing",
+    "CE costs",
+    "License renewals"
+   ],
+   "recurring": [
+    {
+     "vendor": "StateBoard Licensing Portal",
+     "base": 2100,
+     "memo": "Producer license renewal fees, multi-state"
+    },
+    {
+     "vendor": "Keystone CE Academy",
+     "base": 1800,
+     "memo": "Online continuing education subscriptions"
+    }
+   ],
+   "events": [
+    {
+     "key": "nonresident",
+     "vendor": "StateBoard Licensing Portal",
+     "memos": [
+      "Nonresident expansion filings - Texas Florida Georgia",
+      "Nonresident expansion filings - appointment fees"
+     ],
+     "cross_memo": "Nonresident expansion filings - background check bundle",
+     "plain": [
+      "the nonresident expansion filings",
+      "the Texas Florida nonresident filings",
+      "the nonresident appointment fees"
+     ],
+     "oblique": [
+      "getting our people authorized in new regions",
+      "a wave of paperwork for crossing borders",
+      "entering three more markets",
+      "what regulators charged for our growth push",
+      "the push to sell outside our home area",
+      "approvals for out-of-area sales staff",
+      "the geographic stretch of our team",
+      "a multi-territory credentialing sprint",
+      "the push into the Sun Belt",
+      "registrations that let advisors work remotely",
+      "the opening of fresh territories",
+      "qualification of staff to write elsewhere",
+      "a burst of government permits",
+      "a cross-country authority drive",
+      "what it cost to sell in other places",
+      "the footprint widening effort"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "complianceboot",
+     "vendor": "Sentinel Ethics Training Co",
+     "memos": [
+      "Ethics bootcamp - mandatory all-hands session",
+      "Ethics bootcamp - facilitator fee"
+     ],
+     "cross_memo": "Ethics bootcamp - venue catering",
+     "plain": [
+      "the ethics bootcamp",
+      "the mandatory ethics session",
+      "the bootcamp facilitator fee"
+     ],
+     "oblique": [
+      "a required day of conduct training",
+      "what we spent after the regulator's letter",
+      "the intensive for every advisor",
+      "a compulsory workshop on right behavior",
+      "teaching staff about acceptable practices",
+      "the remedial course following the inquiry",
+      "a company-wide seminar on integrity",
+      "the instructor we hired for a full-team meeting",
+      "learning requirements after the exam findings",
+      "a one-time sitdown on professional standards",
+      "the retraining mandated by leadership",
+      "getting everyone back to class",
+      "the session imposed after the complaint",
+      "the day devoted to rules and honesty",
+      "a forced refresher for the whole firm",
+      "what the board asked us to do about conduct"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Carrier Portal & Rating Software",
+   "aliases": [
+    "rating software",
+    "portal fees",
+    "comparative rater",
+    "rater subscriptions",
+    "quoting tools"
+   ],
+   "narrative": [
+    "Rating software",
+    "Portal fees",
+    "Quoting tools"
+   ],
+   "recurring": [
+    {
+     "vendor": "QuoteMatrix Systems",
+     "base": 9800,
+     "memo": "Comparative rater seats, commercial lines"
+    },
+    {
+     "vendor": "BindLink Technologies",
+     "base": 4300,
+     "memo": "Carrier API connectivity subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "ratingmigrate",
+     "vendor": "QuoteMatrix Systems",
+     "memos": [
+      "Platform migration - legacy rater cutover",
+      "Platform migration - data mapping services"
+     ],
+     "cross_memo": "Platform migration - overtime IT contractor",
+     "plain": [
+      "the platform migration",
+      "the legacy rater cutover",
+      "the migration data mapping"
+     ],
+     "oblique": [
+      "moving off the old system",
+      "the switchover to the newer engine",
+      "shifting our quotes to a modern base",
+      "what it took to retire the ancient tool",
+      "the changeover our vendor required",
+      "relocating our records into the new environment",
+      "an overhaul of how we generate prices",
+      "the sunsetting of an aging product",
+      "transferring a decade of history",
+      "the upgrade nobody enjoyed",
+      "the weekend we flipped everything",
+      "redoing how agents see numbers",
+      "the forced move to the vendor's new version",
+      "a crossover project with heavy lifting",
+      "the replacement of outdated infrastructure",
+      "porting our workflow onto fresh technology"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "biometric",
+     "vendor": "Verivault Identity Labs",
+     "memos": [
+      "Identity verification pilot - client onboarding kiosk",
+      "Identity verification pilot - licensing fee"
+     ],
+     "cross_memo": "Identity verification pilot - hardware scanners",
+     "plain": [
+      "the identity verification pilot",
+      "the onboarding kiosk pilot",
+      "the identity pilot licensing fee"
+     ],
+     "oblique": [
+      "a trial to confirm who clients really are",
+      "an experiment in faster signups",
+      "the test of face matching for new customers",
+      "a short run of automated screening",
+      "what we paid to try out a gadget",
+      "an early look at passwordless access",
+      "the proof of concept for onboarding speed",
+      "a small test aimed at curbing impersonation",
+      "an exploratory deployment in the lobby",
+      "testing a self-service check-in approach",
+      "a limited rollout of anti-fraud tech",
+      "the sandbox we opened for fresh clients",
+      "a trial offered to the new-business team",
+      "what innovation cost this quarter",
+      "a proof run before a wider decision",
+      "the pilot our security lead championed"
+     ],
+     "low": 10000,
+     "high": 21000
+    }
+   ]
+  },
+  {
+   "name": "Producer Commissions & Splits",
+   "aliases": [
+    "commissions",
+    "producer pay",
+    "commission splits",
+    "agent compensation",
+    "producer commissions"
+   ],
+   "narrative": [
+    "Commissions",
+    "Producer pay",
+    "Agent compensation"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Producer Payroll",
+     "base": 28000,
+     "memo": "Monthly producer split payout, commercial book"
+    },
+    {
+     "vendor": "Evergreen Sub-Agent Network",
+     "base": 12500,
+     "memo": "Sub-producer override commissions"
+    }
+   ],
+   "events": [
+    {
+     "key": "megadeal",
+     "vendor": "Summit Producer Payroll",
+     "memos": [
+      "Anchor account bonus - Hartwell Logistics placement",
+      "Anchor account bonus - accelerated split"
+     ],
+     "cross_memo": "Anchor account bonus - first-year retention reserve",
+     "plain": [
+      "the anchor account bonus",
+      "the Hartwell placement bonus",
+      "the accelerated anchor split"
+     ],
+     "oblique": [
+      "a reward for landing our biggest client",
+      "extra payout on a trophy win",
+      "what we owed the rainmaker",
+      "a celebratory payment on a huge sale",
+      "compensation for closing the whale",
+      "the windfall paid to a top seller",
+      "a premium over normal rates for a standout win",
+      "a one-time incentive tied to a marquee customer",
+      "the jackpot for our star performer",
+      "additional pay for an exceptional close",
+      "a special arrangement on one transaction",
+      "the headline sale's payout",
+      "rewarding the person who brought in the freight company",
+      "an enhanced rate nobody expected",
+      "what the largest signing cost us",
+      "our best quarter's top payment"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "recruitsign",
+     "vendor": "Crestline Talent Bridge",
+     "memos": [
+      "Lateral hire guarantee - Chicago employee benefits team",
+      "Lateral hire guarantee - sign-on advance"
+     ],
+     "cross_memo": "Lateral hire guarantee - placement agency fee",
+     "plain": [
+      "the lateral hire guarantee",
+      "the Chicago benefits team guarantee",
+      "the lateral sign-on advance"
+     ],
+     "oblique": [
+      "bringing in seasoned people from competitors",
+      "money to lure a team away",
+      "a cushion for newcomers while books transfer",
+      "the raid on a rival's staff",
+      "what we promised the experienced arrivals",
+      "payments that protected recruits' income",
+      "an inducement for a group to switch",
+      "the hiring blitz in the Midwest",
+      "financial security offered to poached talent",
+      "guaranteeing earnings during the ramp period",
+      "a down payment on future production",
+      "securing a department from another firm",
+      "what we offered to win over veterans",
+      "the staffing coup of the spring",
+      "a bridge for people changing employers",
+      "paying for a ready-made group"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Client Entertainment & Events",
+   "aliases": [
+    "client events",
+    "entertainment",
+    "client entertainment",
+    "hospitality spend",
+    "relationship events"
+   ],
+   "narrative": [
+    "Client events",
+    "Entertainment",
+    "Hospitality spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brass Rail Steakhouse",
+     "base": 1900,
+     "memo": "Client dinners, commercial prospects"
+    },
+    {
+     "vendor": "Lakeshore Sports Suites",
+     "base": 2800,
+     "memo": "Season suite allocation, key accounts"
+    }
+   ],
+   "events": [
+    {
+     "key": "harvestgala",
+     "vendor": "Lakeshore Sports Suites",
+     "memos": [
+      "Harvest gala sponsorship - charity auction table",
+      "Harvest gala sponsorship - tent rental"
+     ],
+     "cross_memo": "Harvest gala sponsorship - signage and printing",
+     "plain": [
+      "the harvest gala sponsorship",
+      "the harvest gala auction table",
+      "the gala tent rental"
+     ],
+     "oblique": [
+      "our presence at the fall fundraiser",
+      "a table at the autumn benefit",
+      "what we paid to be seen at the big charity night",
+      "community visibility with a black-tie crowd",
+      "the annual show of generosity",
+      "an evening to be noticed by local leaders",
+      "the sponsored dinner for a good cause",
+      "a prominent seat at the hospital foundation event",
+      "goodwill spending in front of prospects",
+      "the brand-building night out",
+      "a donation that came with perks",
+      "the formal affair downtown",
+      "our contribution to the philanthropic season",
+      "getting our name on the program",
+      "the fancy autumn fundraiser",
+      "the splash we made with donors"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "retreatpeak",
+     "vendor": "Aspen Ridge Lodge",
+     "memos": [
+      "Top producer retreat - Park City lodge deposit",
+      "Top producer retreat - guided activities"
+     ],
+     "cross_memo": "Top producer retreat - charter transfers",
+     "plain": [
+      "the top producer retreat",
+      "the Park City lodge deposit",
+      "the producer retreat activities"
+     ],
+     "oblique": [
+      "a mountain trip for our best earners",
+      "rewarding sales leaders with a getaway",
+      "the incentive weekend in the high country",
+      "an outing meant to retain star talent",
+      "what we spent thanking our stars",
+      "a recognition trip for high performers",
+      "time away with carrier partners",
+      "the perk that comes with hitting targets",
+      "the winter break for the elite",
+      "an invitation-only escape",
+      "a morale boost for our top tier",
+      "the annual reward for volume leaders",
+      "company-paid time in the mountains",
+      "bonding among the strongest contributors",
+      "the getaway that keeps people loyal",
+      "a premium holiday for the leaders"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Premium Trust & Bank Fees",
+   "aliases": [
+    "trust fees",
+    "fiduciary account charges",
+    "premium financing fees",
+    "bank charges",
+    "trust account costs"
+   ],
+   "narrative": [
+    "Trust fees",
+    "Fiduciary account charges",
+    "Bank charges"
+   ],
+   "recurring": [
+    {
+     "vendor": "Corporate Trust Bank NA",
+     "base": 2600,
+     "memo": "Fiduciary account analysis fees"
+    },
+    {
+     "vendor": "Payflow Merchant Services",
+     "base": 3400,
+     "memo": "Card processing, premium collections"
+    }
+   ],
+   "events": [
+    {
+     "key": "wirefraud",
+     "vendor": "Corporate Trust Bank NA",
+     "memos": [
+      "Misdirected wire recall - invoice spoofing incident",
+      "Misdirected wire recall - recall processing fee"
+     ],
+     "cross_memo": "Misdirected wire recall - outside forensic counsel",
+     "plain": [
+      "the misdirected wire recall",
+      "the invoice spoofing incident",
+      "the wire recall processing fee"
+     ],
+     "oblique": [
+      "recovering money sent to the wrong party",
+      "the scam that fooled our payables clerk",
+      "a fake request that tricked us",
+      "what we paid to chase a stolen transfer",
+      "a lost payment we tried to retrieve",
+      "the impersonation that cost us",
+      "efforts to claw back a fraudulent payout",
+      "an email hoax involving a vendor",
+      "the theft that needed bank intervention",
+      "tracing funds that vanished overseas",
+      "a criminal's forged instruction",
+      "damage control after a bogus payment",
+      "the incident that sent controls into review",
+      "charges from trying to reverse a transfer",
+      "cleanup following a swindle",
+      "the con that targeted our finance team"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "escheat",
+     "vendor": "Meadowvale Unclaimed Property Advisors",
+     "memos": [
+      "Unclaimed property audit - dormant refund checks",
+      "Unclaimed property audit - state filing penalty"
+     ],
+     "cross_memo": "Unclaimed property audit - reconciliation consultant",
+     "plain": [
+      "the unclaimed property audit",
+      "the dormant refund checks audit",
+      "the unclaimed property filing penalty"
+     ],
+     "oblique": [
+      "a state review of old uncashed items",
+      "the obligation to turn over forgotten balances",
+      "what regulators assessed for stale funds",
+      "a look-back at money owed to former clients",
+      "the sweep of aging returned amounts",
+      "an examination of lapsed credits",
+      "government scrutiny of our unreturned money",
+      "penalties for tardy reporting of old balances",
+      "a retrospective required by the treasurer's office",
+      "years of untouched customer money",
+      "a catch-up exercise on overdue remittances",
+      "the discovery of funds nobody collected",
+      "what the comptroller demanded",
+      "the reconciliation forced by an official inquiry",
+      "closing out balances left sitting for years",
+      "the sanctions for sloppy record keeping"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

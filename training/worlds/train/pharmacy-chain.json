@@ -1,0 +1,820 @@
+{
+ "slug": "pharmacy-chain",
+ "industry": "pharmacy chain",
+ "entities": [
+  "Harborpoint Pharmacy Group",
+  "Willowbrook Drug Stores",
+  "Summit Apothecary Partners",
+  "Meridian Rx Holdings",
+  "Cedar & Vine Pharmacies"
+ ],
+ "accounts": [
+  {
+   "name": "Cold Chain Logistics",
+   "aliases": [
+    "cold chain",
+    "cold chain costs",
+    "refrigerated shipping",
+    "temperature-controlled freight",
+    "cold chain spend"
+   ],
+   "narrative": [
+    "Cold chain costs",
+    "Refrigerated shipping",
+    "Temperature-controlled freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Arctic Lane Freight",
+     "base": 18500,
+     "memo": "Monthly refrigerated lane haulage"
+    },
+    {
+     "vendor": "FrostPoint Couriers",
+     "base": 7200,
+     "memo": "Temperature-logged store courier service"
+    },
+    {
+     "vendor": "CoolPath Monitoring",
+     "base": 2400,
+     "memo": "Transit sensor subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "snowstorm",
+     "vendor": "Arctic Lane Freight",
+     "memos": [
+      "Blizzard Reroute Surcharge — detour mileage",
+      "Blizzard Reroute Surcharge — driver layover"
+     ],
+     "cross_memo": "Blizzard Reroute Surcharge — emergency dry ice",
+     "plain": [
+      "the blizzard reroute surcharge",
+      "the blizzard reroute",
+      "blizzard reroute costs"
+     ],
+     "oblique": [
+      "the winter weather delays",
+      "extra miles from closed highways",
+      "detours around the closed interstate",
+      "the January storm response",
+      "longer routes to reach stranded stores",
+      "drivers stuck waiting out the weather",
+      "ice and snow disruptions",
+      "the weather scramble",
+      "getting insulin shipments through the freeze",
+      "emergency measures for deliveries stuck on the road",
+      "rerouting trucks around impassable roads",
+      "the cold snap fallout",
+      "storm-related delivery headaches",
+      "keeping vaccines viable during the delays",
+      "paying crews to wait out the snowfall",
+      "road closures in the northern region"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "vaxdepot",
+     "vendor": "Glacier Peak Storage",
+     "memos": [
+      "Vaccine Depot Standby — freezer bay lease",
+      "Vaccine Depot Standby — generator fuel"
+     ],
+     "cross_memo": "Vaccine Depot Standby — security detail",
+     "plain": [
+      "the vaccine depot standby",
+      "vaccine depot standby fees",
+      "the depot standby arrangement"
+     ],
+     "oblique": [
+      "the seasonal shot rollout",
+      "temporary space for the flu campaign",
+      "extra warehousing ahead of the fall season",
+      "a stopgap facility for peak inoculation demand",
+      "overflow capacity we rented short term",
+      "holding product near the busiest clinics",
+      "the pop-up staging site",
+      "preparing for the immunization surge",
+      "a backup location for deep-frozen inventory",
+      "power backup for the temporary site",
+      "guarding the additional stock",
+      "the short-term lease nobody planned on",
+      "capacity we needed before the campaign began",
+      "storing doses closer to patients",
+      "the interim site for seasonal demand",
+      "extra freezer room for the autumn push"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Controlled Substance Compliance",
+   "aliases": [
+    "controlled substances",
+    "narcotics compliance",
+    "dea compliance",
+    "controlled substance spend",
+    "scheduled drug compliance"
+   ],
+   "narrative": [
+    "Controlled substances",
+    "Narcotics compliance",
+    "DEA compliance"
+   ],
+   "recurring": [
+    {
+     "vendor": "SafeVault Armored Services",
+     "base": 9800,
+     "memo": "Armored pickup and vault storage"
+    },
+    {
+     "vendor": "Sentinel Audit Partners",
+     "base": 6500,
+     "memo": "Perpetual inventory reconciliation"
+    },
+    {
+     "vendor": "Lockwell Cabinets",
+     "base": 1800,
+     "memo": "Secure cabinet maintenance plan"
+    }
+   ],
+   "events": [
+    {
+     "key": "diversion",
+     "vendor": "Sentinel Audit Partners",
+     "memos": [
+      "Opioid Shortage Investigation — forensic review",
+      "Opioid Shortage Investigation — interview support"
+     ],
+     "cross_memo": "Opioid Shortage Investigation — outside counsel",
+     "plain": [
+      "the opioid shortage investigation",
+      "opioid shortage investigation fees",
+      "the shortage investigation work"
+     ],
+     "oblique": [
+      "the missing pills inquiry",
+      "looking into unexplained inventory gaps",
+      "the probe at the Westgate location",
+      "answering the regulator's questions",
+      "figuring out where the tablets went",
+      "a deep dive into discrepancies in the count",
+      "the internal review of lost stock",
+      "work prompted by an unusual loss report",
+      "tracing losses back to a single site",
+      "the special review ordered by the board",
+      "examining records for a store that came up short",
+      "consultants digging through dispensing logs",
+      "the loss inquiry",
+      "reconstructing the history of a vanished supply",
+      "the pharmacist misconduct follow-up",
+      "uncovering why the numbers never reconciled"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "vaultupgrade",
+     "vendor": "Ironclad Safeworks",
+     "memos": [
+      "Schedule II Vault Retrofit — steel door install",
+      "Schedule II Vault Retrofit — alarm wiring"
+     ],
+     "cross_memo": "Schedule II Vault Retrofit — permit filing",
+     "plain": [
+      "the schedule II vault retrofit",
+      "vault retrofit costs",
+      "the vault retrofit project"
+     ],
+     "oblique": [
+      "hardening the back room",
+      "a new walk-in safe at the flagship",
+      "upgrades the inspector demanded",
+      "physical security improvements",
+      "reinforcing the storage area after the audit",
+      "a bigger lockbox for the high-volume store",
+      "new locks and sensors",
+      "building work behind the counter",
+      "a stronger enclosure for restricted inventory",
+      "the construction crew in the stockroom",
+      "upgrading to meet the updated state rules",
+      "tamper-proof storage we installed",
+      "a capital-style project hitting expense",
+      "beefing up protection for the priciest drugs",
+      "the barrier improvements at three stores",
+      "replacing the old cage with something sturdier"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Pharmacy Licensing and Permits",
+   "aliases": [
+    "licensing",
+    "pharmacy licenses",
+    "permits and licensing",
+    "license fees",
+    "state board fees"
+   ],
+   "narrative": [
+    "Licensing",
+    "Pharmacy licenses",
+    "State board fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "State Board Renewal Services",
+     "base": 4200,
+     "memo": "Rolling pharmacy license renewals"
+    },
+    {
+     "vendor": "Clearfile Regulatory",
+     "base": 3100,
+     "memo": "Permit tracking and filing service"
+    }
+   ],
+   "events": [
+    {
+     "key": "newstate",
+     "vendor": "Clearfile Regulatory",
+     "memos": [
+      "Tri-County Expansion Filing — application prep",
+      "Tri-County Expansion Filing — jurisdiction fees"
+     ],
+     "cross_memo": "Tri-County Expansion Filing — notary and courier",
+     "plain": [
+      "the tri-county expansion filing",
+      "tri-county expansion filing fees",
+      "the expansion filing package"
+     ],
+     "oblique": [
+      "opening in new territory",
+      "paperwork for the three new markets",
+      "getting approved to operate across the border",
+      "entry fees for fresh jurisdictions",
+      "the application wave for our growth plan",
+      "clearance to serve additional regions",
+      "the lawyers handling our next footprint",
+      "costs of becoming legal in unfamiliar places",
+      "approvals needed before the grand openings",
+      "registering our pharmacists in the new area",
+      "startup fees tied to the geographic push",
+      "the regulatory side of going regional",
+      "authorizations for sites not yet opened",
+      "the cost of planting flags elsewhere",
+      "bureaucratic hurdles of the northern move",
+      "credentialing for stores yet to open"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "latefine",
+     "vendor": "Pinnacle Compliance Law",
+     "memos": [
+      "Expired Registration Penalty — board settlement",
+      "Expired Registration Penalty — reinstatement fee"
+     ],
+     "cross_memo": "Expired Registration Penalty — attorney retainer",
+     "plain": [
+      "the expired registration penalty",
+      "expired registration penalty costs",
+      "the registration penalty settlement"
+     ],
+     "oblique": [
+      "the fine for a missed deadline",
+      "paying up after the lapse",
+      "a settlement with the regulator over a late filing",
+      "making things right after we slipped",
+      "the cost of an administrative oversight",
+      "reinstating the Eastside store's good standing",
+      "the penalty nobody wanted to see",
+      "what we owed for operating without paperwork",
+      "clearing a violation notice",
+      "a bill for lateness",
+      "the board's financial slap on the wrist",
+      "correcting a clerical miss that got expensive",
+      "getting our status restored",
+      "money paid to close out the violation",
+      "the expensive reminder to watch dates",
+      "resolving the notice of noncompliance"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Prescription Fulfillment Operations",
+   "aliases": [
+    "rx fulfillment",
+    "fulfillment operations",
+    "dispensing operations",
+    "central fill",
+    "prescription fulfillment spend"
+   ],
+   "narrative": [
+    "Rx fulfillment",
+    "Central fill",
+    "Dispensing operations"
+   ],
+   "recurring": [
+    {
+     "vendor": "PillPack Automation Co",
+     "base": 14500,
+     "memo": "Robotic dispensing lease"
+    },
+    {
+     "vendor": "Labelwise Supplies",
+     "base": 5600,
+     "memo": "Vials caps and label stock"
+    },
+    {
+     "vendor": "BlisterRight Packaging",
+     "base": 8900,
+     "memo": "Adherence blister card production"
+    }
+   ],
+   "events": [
+    {
+     "key": "robotreplace",
+     "vendor": "PillPack Automation Co",
+     "memos": [
+      "Carousel Robot Overhaul — servo replacement",
+      "Carousel Robot Overhaul — recalibration labor"
+     ],
+     "cross_memo": "Carousel Robot Overhaul — temporary manual staffing",
+     "plain": [
+      "the carousel robot overhaul",
+      "carousel robot overhaul costs",
+      "the robot overhaul"
+     ],
+     "oblique": [
+      "the machine that went down",
+      "getting the automation back to speed",
+      "repairs on the big dispensing unit",
+      "the breakdown at the central site",
+      "parts and technicians for the failed equipment",
+      "restoring throughput after the stoppage",
+      "fixing the line that jammed for a week",
+      "engineers flown in to revive the system",
+      "the mechanical failure response",
+      "keeping orders moving while the hardware was out",
+      "the unplanned maintenance event",
+      "swapping worn components in the main cell",
+      "what it took to get the system humming again",
+      "downtime recovery work",
+      "the costly glitch in the automated equipment",
+      "bringing the packing floor back online"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "mailorder",
+     "vendor": "Parcelwave Logistics",
+     "memos": [
+      "Home Delivery Pilot — last mile courier fees",
+      "Home Delivery Pilot — insulated tote purchase"
+     ],
+     "cross_memo": "Home Delivery Pilot — marketing mailer",
+     "plain": [
+      "the home delivery pilot",
+      "home delivery pilot costs",
+      "the delivery pilot program"
+     ],
+     "oblique": [
+      "bringing meds to patients' doorsteps",
+      "our experiment with direct shipping",
+      "a trial for customers who dislike coming in",
+      "the test program in two cities",
+      "reaching homebound patients",
+      "a new service line we are testing",
+      "shipping orders straight to people",
+      "the rollout for those who want it brought to them",
+      "courier charges from the new offering",
+      "an initiative aimed at convenience",
+      "early-stage costs of a fresh channel",
+      "testing whether mailing prescriptions works",
+      "boxes and carriers for the trial",
+      "the outreach to customers who prefer staying home",
+      "a limited launch of at-home service",
+      "expenses of the pilot region"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Professional Liability and Malpractice",
+   "aliases": [
+    "malpractice insurance",
+    "professional liability",
+    "pharmacist liability",
+    "liability premiums",
+    "pl coverage"
+   ],
+   "narrative": [
+    "Malpractice insurance",
+    "Professional liability",
+    "Liability premiums"
+   ],
+   "recurring": [
+    {
+     "vendor": "Caduceus Mutual",
+     "base": 22000,
+     "memo": "Pharmacist professional liability premium"
+    },
+    {
+     "vendor": "Brightshield Risk Advisors",
+     "base": 3800,
+     "memo": "Risk management advisory retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "claimsettle",
+     "vendor": "Caduceus Mutual",
+     "memos": [
+      "Dosage Error Claim — deductible payment",
+      "Dosage Error Claim — adjuster fees"
+     ],
+     "cross_memo": "Dosage Error Claim — expert witness",
+     "plain": [
+      "the dosage error claim",
+      "dosage error claim costs",
+      "the dosage claim deductible"
+     ],
+     "oblique": [
+      "the patient injury case",
+      "settling what happened in the Riverside store",
+      "our share of the payout",
+      "a lawsuit that finally resolved",
+      "money owed after a wrong prescription went out",
+      "the incident involving a customer's hospital stay",
+      "the case the insurer closed",
+      "what we paid to put the matter to rest",
+      "a mistake at the counter that became a claim",
+      "retained portion of the settlement",
+      "the legal fallout from a filling mistake",
+      "the out-of-pocket piece of the resolution",
+      "expenses tied to the harmed customer",
+      "the resolved complaint from last spring",
+      "the lawsuit we chose not to fight",
+      "the bill for a pharmacist's slip"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "cyberrider",
+     "vendor": "Ledgerlock Underwriters",
+     "memos": [
+      "Data Breach Rider — endorsement premium",
+      "Data Breach Rider — forensic scan"
+     ],
+     "cross_memo": "Data Breach Rider — notification mailing",
+     "plain": [
+      "the data breach rider",
+      "data breach rider premium",
+      "the breach rider endorsement"
+     ],
+     "oblique": [
+      "extra coverage for stolen patient records",
+      "the policy add-on after the hack scare",
+      "protection against a cyber incident",
+      "insurance for leaked customer files",
+      "the new endorsement the board requested",
+      "a safeguard against hackers",
+      "what the carrier charged to widen our cover",
+      "additional protection for digital exposure",
+      "buying peace of mind about the servers",
+      "the security-minded insurance purchase",
+      "a premium bump for online risk",
+      "coverage extension that came with testing",
+      "the policy enhancement after the industry scare",
+      "guarding against ransom demands",
+      "insurance sweetener for our electronic systems",
+      "the expanded umbrella for information theft"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Store Front Merchandising",
+   "aliases": [
+    "front store",
+    "merchandising",
+    "front-end merchandising",
+    "retail displays",
+    "front of store spend"
+   ],
+   "narrative": [
+    "Front store",
+    "Merchandising",
+    "Retail displays"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shelfsmart Displays",
+     "base": 6800,
+     "memo": "Planogram fixtures and signage"
+    },
+    {
+     "vendor": "AisleCraft Design",
+     "base": 4500,
+     "memo": "Seasonal endcap assembly"
+    },
+    {
+     "vendor": "Brightmark Printing",
+     "base": 2900,
+     "memo": "Shelf talkers and circular printing"
+    }
+   ],
+   "events": [
+    {
+     "key": "remodel",
+     "vendor": "Shelfsmart Displays",
+     "memos": [
+      "Boutique Beauty Wall — gondola install",
+      "Boutique Beauty Wall — lighting rig"
+     ],
+     "cross_memo": "Boutique Beauty Wall — product sampling kits",
+     "plain": [
+      "the boutique beauty wall",
+      "boutique beauty wall costs",
+      "the beauty wall build"
+     ],
+     "oblique": [
+      "the cosmetics area makeover",
+      "a new section aimed at skincare shoppers",
+      "upgrading the look of the flagship's front",
+      "the glamorous corner we added",
+      "fixtures for the upscale product push",
+      "a bold bet on premium personal care",
+      "redesigning how customers browse lipstick",
+      "the high-margin category expansion",
+      "building a destination within the store",
+      "the shiny new area near the entrance",
+      "fixturing for the luxury line",
+      "revamping where perfume lives",
+      "the store-within-a-store concept",
+      "a showcase for higher-end offerings",
+      "the modernization of the cosmetics aisle",
+      "trying to lure browsers who skip the pharmacy"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "recallpull",
+     "vendor": "Redline Reverse Logistics",
+     "memos": [
+      "Sunscreen Recall Sweep — shelf pull labor",
+      "Sunscreen Recall Sweep — disposal fees"
+     ],
+     "cross_memo": "Sunscreen Recall Sweep — customer notice postage",
+     "plain": [
+      "the sunscreen recall sweep",
+      "sunscreen recall sweep costs",
+      "the recall sweep labor"
+     ],
+     "oblique": [
+      "clearing a tainted product from every store",
+      "the benzene scare cleanup",
+      "pulling items off shelves overnight",
+      "the manufacturer's safety notice response",
+      "staff hours spent removing affected stock",
+      "getting dangerous merchandise out of circulation",
+      "hauling away what we could no longer sell",
+      "the urgent withdrawal across all locations",
+      "a contamination alert that hit summer sales",
+      "cleanup after the supplier's warning",
+      "crews sweeping aisles for flagged lots",
+      "the product that had to disappear",
+      "an FDA-prompted purge of inventory",
+      "the regulatory pullback of seasonal goods",
+      "disposing of thousands of units",
+      "the unexpected removal of a bestseller"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Clinical Services and Immunizations",
+   "aliases": [
+    "clinical services",
+    "immunization program",
+    "vaccination services",
+    "pharmacist clinics",
+    "clinical programs"
+   ],
+   "narrative": [
+    "Clinical services",
+    "Immunization program",
+    "Pharmacist clinics"
+   ],
+   "recurring": [
+    {
+     "vendor": "VitalPoint Training",
+     "base": 5200,
+     "memo": "Pharmacist certification coursework"
+    },
+    {
+     "vendor": "ClinicSupply Direct",
+     "base": 7400,
+     "memo": "Syringes gloves and exam supplies"
+    },
+    {
+     "vendor": "CareLink Scheduling",
+     "base": 3300,
+     "memo": "Appointment booking platform"
+    }
+   ],
+   "events": [
+    {
+     "key": "testkits",
+     "vendor": "ClinicSupply Direct",
+     "memos": [
+      "Strep Screening Rollout — rapid test cartridges",
+      "Strep Screening Rollout — analyzer units"
+     ],
+     "cross_memo": "Strep Screening Rollout — staff training stipend",
+     "plain": [
+      "the strep screening rollout",
+      "strep screening rollout costs",
+      "the screening rollout supplies"
+     ],
+     "oblique": [
+      "our new walk-in diagnostic offering",
+      "testing sore throats on site",
+      "equipment for in-store sickness checks",
+      "launching a point-of-care option",
+      "the stock needed to swab patients",
+      "bringing lab-style results to the counter",
+      "a service we began offering this quarter",
+      "the machines and cartridges we ordered",
+      "a way to treat common infections quickly",
+      "the diagnostic push in family-heavy stores",
+      "kits to detect illness before dispensing antibiotics",
+      "what we spent to start screening",
+      "the in-house testing expansion",
+      "investment in same-day answers for kids",
+      "tools that let pharmacists diagnose",
+      "the clinic upgrade for respiratory season"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "mobileclinic",
+     "vendor": "Roadside Wellness Fleet",
+     "memos": [
+      "Community Health Van Season — vehicle lease",
+      "Community Health Van Season — driver wages"
+     ],
+     "cross_memo": "Community Health Van Season — event permits",
+     "plain": [
+      "the community health van season",
+      "community health van costs",
+      "the health van season"
+     ],
+     "oblique": [
+      "taking shots to senior centers",
+      "the outreach vehicle we leased",
+      "bringing care out to neighborhoods",
+      "a rolling clinic for rural towns",
+      "events at churches and schools",
+      "meeting patients where they live",
+      "the traveling program that ran all spring",
+      "a vehicle that parked at fairs and festivals",
+      "a mobile presence in underserved zip codes",
+      "the goodwill campaign on wheels",
+      "outreach aimed at those without transport",
+      "pop-up appointments across the county",
+      "the seasonal push beyond store walls",
+      "serving farm communities",
+      "a program with high visibility and low margin",
+      "wheels and staff for the wellness tour"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Pharmacy Technology and Dispensing Software",
+   "aliases": [
+    "pharmacy systems",
+    "dispensing software",
+    "pharmacy it",
+    "rx platform",
+    "pharmacy tech stack"
+   ],
+   "narrative": [
+    "Pharmacy systems",
+    "Dispensing software",
+    "Rx platform"
+   ],
+   "recurring": [
+    {
+     "vendor": "ScriptCore Systems",
+     "base": 26000,
+     "memo": "Pharmacy management platform license"
+    },
+    {
+     "vendor": "ClaimBridge Networks",
+     "base": 9500,
+     "memo": "Insurance adjudication gateway fees"
+    },
+    {
+     "vendor": "Netwell Hosting",
+     "base": 6700,
+     "memo": "Cloud hosting and backups"
+    }
+   ],
+   "events": [
+    {
+     "key": "ehrintegration",
+     "vendor": "ScriptCore Systems",
+     "memos": [
+      "Hospital Interface Build — HL7 connector",
+      "Hospital Interface Build — custom mapping hours"
+     ],
+     "cross_memo": "Hospital Interface Build — test environment",
+     "plain": [
+      "the hospital interface build",
+      "hospital interface build costs",
+      "the HL7 interface work"
+     ],
+     "oblique": [
+      "connecting to the medical center's records",
+      "letting doctors send orders electronically to us",
+      "developer time for a partner integration",
+      "a data pipeline with the clinic network",
+      "linking systems so discharge meds flow in",
+      "engineering for the health system deal",
+      "custom work that unlocked a referral channel",
+      "making two computer systems talk",
+      "the bespoke connection requested by the hospital",
+      "coding hours billed for the new partnership",
+      "building a bridge to outside charts",
+      "technical work required by our contract",
+      "the integration our largest account insisted on",
+      "programming that let prescribers reach us directly",
+      "a project that took months of consultants",
+      "syncing patient histories across organizations"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "outage",
+     "vendor": "Rapidrestore Recovery Group",
+     "memos": [
+      "Ransomware Lockout Recovery — decryption services",
+      "Ransomware Lockout Recovery — emergency rebuild"
+     ],
+     "cross_memo": "Ransomware Lockout Recovery — overtime pharmacists",
+     "plain": [
+      "the ransomware lockout recovery",
+      "ransomware lockout recovery costs",
+      "the lockout recovery effort"
+     ],
+     "oblique": [
+      "the attack that froze our stores",
+      "bringing servers back from a hostile takeover",
+      "specialists called in during the crisis",
+      "a weekend when nobody could fill orders",
+      "paying experts to unlock our files",
+      "restoring operations after criminals struck",
+      "the cyber emergency response",
+      "the all-hands scramble to get systems running",
+      "fallout from a malicious intrusion",
+      "what we spent to get counters working again",
+      "the incident that made the news",
+      "rebuilding machines that had been scrambled",
+      "a security event that halted dispensing",
+      "extortion-related cleanup",
+      "reviving the network after the hackers",
+      "the worst week for our technology team"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

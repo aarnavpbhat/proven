@@ -1,0 +1,705 @@
+{
+ "slug": "plumbing-and-hvac-service-company",
+ "industry": "plumbing and HVAC service company",
+ "entities": [
+  "Cascade Flow Mechanical",
+  "Brightline Comfort Services",
+  "Ridgeway Pipe & Air Co",
+  "Northgate Thermal Works",
+  "Harborview Plumbing Group"
+ ],
+ "accounts": [
+  {
+   "name": "Service Van Fleet",
+   "aliases": [
+    "fleet",
+    "van costs",
+    "fleet maintenance spend",
+    "service vehicles",
+    "van upkeep",
+    "truck spend"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Van costs",
+    "Service vehicles"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Auto Care",
+     "base": 6200,
+     "memo": "Monthly fleet maintenance contract, 22 vans"
+    },
+    {
+     "vendor": "Metro Fuel Cards",
+     "base": 14800,
+     "memo": "Fuel card billing, service vans"
+    },
+    {
+     "vendor": "Lakeside Tire Depot",
+     "base": 1900,
+     "memo": "Tire rotation and tread service"
+    }
+   ],
+   "events": [
+    {
+     "key": "alternator_recall",
+     "vendor": "Keystone Auto Care",
+     "memos": [
+      "Alternator recall campaign — Ford Transit bays",
+      "Alternator recall campaign — parts and labor"
+     ],
+     "cross_memo": "Alternator recall campaign — loaner van rental",
+     "plain": [
+      "the alternator recall campaign",
+      "alternator recall work",
+      "the recall campaign alternators"
+     ],
+     "oblique": [
+      "getting the vans charging again after the manufacturer notice",
+      "the electrical fix the factory requested",
+      "replacing the failing generators on the work trucks",
+      "the mandated repair on the Transit fleet",
+      "charging-system work nobody planned for",
+      "the manufacturer-ordered rework of the cranking parts",
+      "keeping the crews rolling while the vehicles sat",
+      "the regulator-driven service on our vehicles",
+      "work the dealership pushed on us in spring",
+      "the cold-start failures we had to clear out",
+      "the mid-year overhaul of the power units",
+      "the forced replacement of charging hardware",
+      "covering the crews while their vans were in the bay",
+      "bringing the vans back to a safe charge state",
+      "the campaign the maker mailed us about",
+      "the parts swap the warranty bulletin demanded"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "hydro_jet_rental",
+     "vendor": "Northern Equipment Rentals",
+     "memos": [
+      "Hydro jet rental — sewer main clearing",
+      "Hydro jet rental — hose and nozzle kit"
+     ],
+     "cross_memo": "Hydro jet rental — dump trailer hauling",
+     "plain": [
+      "the hydro jet rental",
+      "hydro jet rentals",
+      "the jet rental charges"
+     ],
+     "oblique": [
+      "the high-pressure line cleaner we borrowed for the big job",
+      "the outside equipment we leased to clear the city line",
+      "the water blaster the crew needed for a week",
+      "extra kit we hired when the backup crew was stuck",
+      "the sewer work we subcontracted machinery for",
+      "the pressure washer on the commercial main",
+      "gear hired to flush the drain for the apartment block",
+      "the heavy cleaning tool we paid by the day",
+      "the machine that cleared the clog we could not handle",
+      "the piece of kit from the rental yard",
+      "the spring line-cleaning equipment we leased",
+      "machinery we brought in for the drain emergency",
+      "the dump hauling we arranged for the debris",
+      "a week of renting out a cleaner",
+      "the spare nozzles and hose we tacked on",
+      "the leased unit for the storm backup"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Refrigerant Inventory",
+   "aliases": [
+    "refrigerant",
+    "refrigerant stock",
+    "gas cylinders",
+    "refrigerant purchases",
+    "coolant spend",
+    "r-410a"
+   ],
+   "narrative": [
+    "Refrigerant stock",
+    "Refrigerant purchases",
+    "Gas cylinders"
+   ],
+   "recurring": [
+    {
+     "vendor": "Coolwave Gas Distributors",
+     "base": 9400,
+     "memo": "R-410A cylinder restock"
+    },
+    {
+     "vendor": "Ambient Supply Co",
+     "base": 2300,
+     "memo": "Recovery machine consumables"
+    }
+   ],
+   "events": [
+    {
+     "key": "r32_changeover",
+     "vendor": "Coolwave Gas Distributors",
+     "memos": [
+      "R-32 changeover stock — 50lb cylinders",
+      "R-32 changeover stock — recovery tanks"
+     ],
+     "cross_memo": "R-32 changeover stock — technician training",
+     "plain": [
+      "the R-32 changeover stock",
+      "R-32 changeover purchases",
+      "the changeover refrigerant"
+     ],
+     "oblique": [
+      "stocking the new low-impact coolant for the switch",
+      "buying the replacement gas ahead of the rule change",
+      "the cylinders for the next generation of units",
+      "building our supply for the transition year",
+      "the bulk order to match the new equipment mandate",
+      "stock we pulled in before the phase-out date",
+      "the coolant upgrade inventory",
+      "ordering the gas the new condensers call for",
+      "filling the shelves before the compliance deadline",
+      "the switch-over order the owner approved",
+      "the early load of the next standard gas",
+      "pre-buying what the new systems will use",
+      "shifting our cylinder mix toward the successor product",
+      "the stock build for the year of changeover",
+      "the forward purchase tied to the regulation",
+      "the cylinder run for the coming refrigerant"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "leak_detector_sensors",
+     "vendor": "Vantage Instrument Labs",
+     "memos": [
+      "Leak detector sensors — calibration kits",
+      "Leak detector sensors — replacement heads"
+     ],
+     "cross_memo": "Leak detector sensors — warehouse shelving",
+     "plain": [
+      "the leak detector sensors",
+      "leak detector purchases",
+      "the sensor replacement order"
+     ],
+     "oblique": [
+      "the gear that finds escaping coolant in the lines",
+      "instruments the techs use to check for seepage",
+      "tools we bought after the inspection flagged our kit",
+      "the pricey probes we swapped in the shop",
+      "replacing aging diagnostic hardware on the trucks",
+      "the monitoring equipment for the shop floor",
+      "the handheld checkers the crews carry out",
+      "buying the gadgets that test sealed systems",
+      "what we purchased to catch small gas losses",
+      "the sensing units the auditor wanted updated",
+      "the calibrated devices for field inspections",
+      "the new tester fleet for the service team",
+      "the detection kit approved by the safety lead",
+      "equipment for the quarterly leak checks",
+      "gear to replace the drifting handheld units",
+      "the probes that keep us compliant on the job"
+     ],
+     "low": 10000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Job Site Dumpsters",
+   "aliases": [
+    "dumpsters",
+    "waste hauling",
+    "debris removal",
+    "disposal costs",
+    "roll-off bins",
+    "job waste"
+   ],
+   "narrative": [
+    "Waste hauling",
+    "Debris removal",
+    "Disposal costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenline Waste Hauling",
+     "base": 4100,
+     "memo": "Roll-off bin rental, monthly service"
+    },
+    {
+     "vendor": "Tri-County Recycling",
+     "base": 1200,
+     "memo": "Copper and scrap pickup"
+    }
+   ],
+   "events": [
+    {
+     "key": "ductwork_demolition",
+     "vendor": "Greenline Waste Hauling",
+     "memos": [
+      "Duct demolition haul — hospital wing",
+      "Duct demolition haul — extra roll-off pulls"
+     ],
+     "cross_memo": "Duct demolition haul — crew overtime",
+     "plain": [
+      "the duct demolition haul",
+      "the demolition hauling",
+      "the ductwork removal bills"
+     ],
+     "oblique": [
+      "carting away the old air shafts after the renovation",
+      "the removal of the legacy vent runs from the wing",
+      "the cleanup after we tore out the sheet metal",
+      "bins filled with the old trunk lines",
+      "the bulk clearing of the hospital's old ventilation",
+      "getting rid of the scrap ducting from the job",
+      "the heavy loads we moved off the floor",
+      "hauling the retired metal from the mechanical room",
+      "the debris from taking out the old supply plenums",
+      "the extra pulls we ordered for the teardown",
+      "the trip-count surge on the commercial retrofit",
+      "clearing out the rusted ventilation stock",
+      "the dump run for the decommissioned units",
+      "the overflow from the big gut job",
+      "the heavy lifting of old components off site",
+      "emptying the bins from the renovation project"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "asbestos_abatement",
+     "vendor": "Safeguard Environmental Partners",
+     "memos": [
+      "Asbestos abatement disposal — boiler room",
+      "Asbestos abatement disposal — manifest fees"
+     ],
+     "cross_memo": "Asbestos abatement disposal — permit filing",
+     "plain": [
+      "the asbestos abatement disposal",
+      "asbestos abatement fees",
+      "the abatement disposal charges"
+     ],
+     "oblique": [
+      "the hazardous material removal from the old boiler",
+      "the regulated insulation we had to take away",
+      "the licensed crew that handled the old pipe wrap",
+      "specialist removal of the material that failed testing",
+      "the containment work that required certified haulers",
+      "the protected disposal of the boiler lagging",
+      "the sealed-bag removal the inspector ordered",
+      "fees for the controlled teardown near the heating plant",
+      "the hazardous cleanup that set our schedule back",
+      "the special handling for the older building",
+      "the certified pickup of the insulated jacketing",
+      "the tightly regulated disposal we paid up front",
+      "what the safety officer required before the job continued",
+      "the hazmat step we could not skip",
+      "the licensed transport of the flagged waste",
+      "the restricted-material removal from the plant room"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Tool Calibration Lab",
+   "aliases": [
+    "tool calibration",
+    "calibration",
+    "instrument calibration",
+    "tool certs",
+    "gauge calibration",
+    "instrument upkeep"
+   ],
+   "narrative": [
+    "Tool calibration",
+    "Instrument calibration",
+    "Gauge calibration"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Metrology Services",
+     "base": 2600,
+     "memo": "Quarterly gauge calibration batch"
+    },
+    {
+     "vendor": "Apex Tool Repair",
+     "base": 1500,
+     "memo": "Torque wrench service and certification"
+    }
+   ],
+   "events": [
+    {
+     "key": "manometer_recert",
+     "vendor": "Precision Metrology Services",
+     "memos": [
+      "Manometer recertification — digital gauges",
+      "Manometer recertification — traceable certificates"
+     ],
+     "cross_memo": "Manometer recertification — shop bench upgrade",
+     "plain": [
+      "the manometer recertification",
+      "manometer recert fees",
+      "the recertification of manometers"
+     ],
+     "oblique": [
+      "checking the pressure readers against a reference standard",
+      "getting our airflow meters back to spec",
+      "the outside lab work on our draft gauges",
+      "the reference testing on the balance instruments",
+      "proving our readings are accurate for the inspectors",
+      "the traceable paperwork for the measuring kit",
+      "bringing the meter fleet up to the current standard",
+      "outside verification of the pressure tools",
+      "what the auditor asked us to certify on the devices",
+      "the accuracy work that keeps our readings honest",
+      "the specification check the customer requested",
+      "the validation run on our draft measuring kit",
+      "the lab signoff on the gauges we use daily",
+      "the cert cycle for the test equipment",
+      "the annual proof that our readings hold",
+      "the external sign-off on the balancing instruments"
+     ],
+     "low": 10000,
+     "high": 19000
+    },
+    {
+     "key": "infrared_camera_purchase",
+     "vendor": "Thermaline Imaging Supply",
+     "memos": [
+      "Infrared camera rental — thermal scanning",
+      "Infrared camera rental — lens and tripod set"
+     ],
+     "cross_memo": "Infrared camera rental — training course",
+     "plain": [
+      "the infrared camera rental",
+      "infrared camera fees",
+      "the thermal camera rental"
+     ],
+     "oblique": [
+      "the heat-sensing unit we leased for the building audits",
+      "borrowing the imaging gear for the energy survey",
+      "the outside thermal device we hired for the week",
+      "the scanner the energy contractor insisted on",
+      "gear that shows hot spots in the duct runs",
+      "the optics package we paid to use",
+      "the leased lens kit for the diagnostic visits",
+      "the temporary upgrade in scanning tools",
+      "what we rented to find the heat loss",
+      "the imaging service the client requested",
+      "the short-term hire of the detection camera",
+      "the borrowed gear for the mechanical survey",
+      "the temperature-reading machine for the inspection",
+      "the kit we leased when the owned unit broke",
+      "the surveys that needed the sensing hardware",
+      "the camera time we bought from the vendor"
+     ],
+     "low": 11000,
+     "high": 23000
+    }
+   ]
+  },
+  {
+   "name": "Commercial Contract Insurance",
+   "aliases": [
+    "liability insurance",
+    "insurance premiums",
+    "coverage costs",
+    "insurance spend",
+    "policy costs",
+    "bonding"
+   ],
+   "narrative": [
+    "Insurance premiums",
+    "Liability coverage",
+    "Policy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Mutual Insurance",
+     "base": 18500,
+     "memo": "General liability premium installment"
+    },
+    {
+     "vendor": "Harbor Surety Bonds",
+     "base": 3200,
+     "memo": "Contractor license bond fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "pollution_endorsement",
+     "vendor": "Summit Mutual Insurance",
+     "memos": [
+      "Pollution endorsement — refrigerant release",
+      "Pollution endorsement — audit surcharge"
+     ],
+     "cross_memo": "Pollution endorsement — broker commission",
+     "plain": [
+      "the pollution endorsement",
+      "pollution endorsement charges",
+      "the endorsement premium"
+     ],
+     "oblique": [
+      "the add-on covering accidental gas discharge",
+      "the extra cover we bought for environmental mishaps",
+      "the rider our broker recommended after the scare",
+      "the coverage for contamination at customer sites",
+      "the policy extension the lender demanded",
+      "the broader cover for leaks at job sites",
+      "what we paid to extend the liability cover",
+      "the surcharge the carrier added at renewal",
+      "the added protection the underwriter required",
+      "the upgrade to our general cover for chemical risk",
+      "the endorsement tied to our handling of coolant",
+      "the mid-term addition to the policy",
+      "the expanded cover the big client wanted",
+      "the risk add-on for the commercial accounts",
+      "the premium bump after the loss review",
+      "the extra layer we had to bind"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "workers_comp_audit",
+     "vendor": "Ledgerline Payroll Audit",
+     "memos": [
+      "Workers comp payroll audit — premium adjustment",
+      "Workers comp payroll audit — audit fee"
+     ],
+     "cross_memo": "Workers comp payroll audit — overtime reconciliation",
+     "plain": [
+      "the workers comp audit",
+      "workers comp audit charges",
+      "the payroll audit adjustment"
+     ],
+     "oblique": [
+      "the true-up the carrier billed after the year closed",
+      "reconciling the hours we reported against actual crew time",
+      "the outside review of our labor classifications",
+      "the audit bill that followed the annual payroll count",
+      "the adjustment for the field technicians we underreported",
+      "the retroactive charge tied to the crew count",
+      "the review of how we classed the installers",
+      "the extra premium from the headcount recheck",
+      "what the examiners charged for the reconciliation",
+      "the surcharge from the hours verification",
+      "the adjustment for the crews working out of region",
+      "the closing settlement with the insurer",
+      "the fee for the outside examiner on our books",
+      "the reclassification charge from the carrier",
+      "the true-up on our field payroll totals",
+      "the balance owed after the payroll examination"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Shop Utilities",
+   "aliases": [
+    "utilities",
+    "power and water",
+    "shop electric",
+    "utility bills",
+    "energy costs",
+    "shop utilities"
+   ],
+   "narrative": [
+    "Utility bills",
+    "Energy costs",
+    "Power and water"
+   ],
+   "recurring": [
+    {
+     "vendor": "Riverbend Electric Cooperative",
+     "base": 2900,
+     "memo": "Shop electricity, Bay 1-4"
+    },
+    {
+     "vendor": "Municipal Water Authority",
+     "base": 800,
+     "memo": "Water and sewer, shop site"
+    }
+   ],
+   "events": [
+    {
+     "key": "compressor_surge",
+     "vendor": "Riverbend Electric Cooperative",
+     "memos": [
+      "Demand surcharge — air compressor load",
+      "Demand surcharge — peak interval adjustment"
+     ],
+     "cross_memo": "Demand surcharge — generator standby",
+     "plain": [
+      "the demand surcharge",
+      "demand surcharge charges",
+      "the compressor demand fees"
+     ],
+     "oblique": [
+      "the peak-hour penalty from running the shop machines",
+      "the extra charge for heavy draw on the lines",
+      "what the utility billed for our spike in usage",
+      "the premium for drawing too much at once",
+      "the penalty when the shop equipment ran hard",
+      "the high-draw fee from the grid operator",
+      "the spike charge after the big test cycle",
+      "fees for pulling a lot of power at the wrong hour",
+      "the rate hit from the mid-afternoon load",
+      "the overage on the shop's heavy machinery",
+      "the charge that came with the rush of testing",
+      "the cost of the spike our machines caused",
+      "the peak charge the cooperative added",
+      "extra billing for the brief power surge",
+      "the demand penalty on the monthly bill",
+      "the bump from concentrated shop draw"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "transformer_upgrade",
+     "vendor": "Clearwater Electrical Contractors",
+     "memos": [
+      "Transformer upgrade — service entrance",
+      "Transformer upgrade — conduit and breakers"
+     ],
+     "cross_memo": "Transformer upgrade — permit and inspection",
+     "plain": [
+      "the transformer upgrade",
+      "transformer upgrade work",
+      "the service entrance upgrade"
+     ],
+     "oblique": [
+      "replacing the old feed box at the yard",
+      "the electrical rework that expanded our service",
+      "the new step-down unit the crew installed",
+      "work the contractor did on the incoming supply",
+      "the upgrade that finally gave the shop more capacity",
+      "the wiring overhaul at the property line",
+      "the replacement of the outdated power equipment",
+      "the infrastructure job tied to the building expansion",
+      "the large electrical project the landlord approved",
+      "the heavier feed we had installed",
+      "bringing the incoming power up to current code",
+      "the new supply hardware for the bays",
+      "the capacity increase we paid for",
+      "the power gear swap at the back lot",
+      "the crew that rebuilt our incoming electrical",
+      "the wiring job that let the shop run more machines"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Vehicle Fuel Surcharges",
+   "aliases": [
+    "fuel",
+    "gas costs",
+    "diesel",
+    "fuel spend",
+    "fuel surcharges",
+    "fuel expense"
+   ],
+   "narrative": [
+    "Fuel expense",
+    "Gas costs",
+    "Diesel spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Fuel Cards",
+     "base": 9800,
+     "memo": "Fuel card billing, service fleet"
+    },
+    {
+     "vendor": "Highway Diesel Supply",
+     "base": 3600,
+     "memo": "Bulk diesel for generators and trucks"
+    }
+   ],
+   "events": [
+    {
+     "key": "price_spike_hedge",
+     "vendor": "Metro Fuel Cards",
+     "memos": [
+      "Fuel price adjustment — fleet cards",
+      "Fuel price adjustment — hedge settlement"
+     ],
+     "cross_memo": "Fuel price adjustment — card processing",
+     "plain": [
+      "the fuel price adjustment",
+      "fuel price adjustments",
+      "the price adjustment on fuel"
+     ],
+     "oblique": [
+      "the swing in what we paid at the pump this month",
+      "the hit from the market moving against us",
+      "the extra cost of the fuel rally in the period",
+      "settling the contract that tracked the wholesale price",
+      "the bump that came with the fuel index",
+      "what the pump price cost us above plan",
+      "the gap between budget and actual gas prices",
+      "the adjustment our supplier made to the index",
+      "the difference owed when the market climbed",
+      "the financial settlement on the price protection",
+      "the pass-through of the higher wholesale costs",
+      "the surcharge from the pricing run-up",
+      "the amount we settled on the fuel commitment",
+      "the drag from unfavorable market movement",
+      "the true-up for the spike in fuel rates",
+      "the extra cost we absorbed on the price path"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "bulk_tank_leak",
+     "vendor": "Eastfield Environmental Remediation",
+     "memos": [
+      "Bulk tank leak cleanup — yard containment",
+      "Bulk tank leak cleanup — soil removal"
+     ],
+     "cross_memo": "Bulk tank leak cleanup — regulator filing",
+     "plain": [
+      "the bulk tank leak cleanup",
+      "tank leak cleanup costs",
+      "the leak remediation work"
+     ],
+     "oblique": [
+      "the crew that cleaned up the seepage at the yard",
+      "the soil work after the storage unit failed",
+      "the emergency response to the spill on the lot",
+      "digging out contaminated ground near the depot",
+      "the outside contractor who fixed our storage problem",
+      "the hazardous mess we cleaned from the pad",
+      "removing soaked earth under the fuel island",
+      "the response to the release from our site",
+      "what we spent containing the storage failure",
+      "the groundwork after the reservoir gave way",
+      "the remediation our regulator demanded",
+      "the unplanned cleanup at the depot",
+      "the land repair after the storage event",
+      "the spill response the fire marshal ordered",
+      "the work to scrub the ground at the yard",
+      "the sealing and excavation we paid for"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-haiku-5-5"
+}

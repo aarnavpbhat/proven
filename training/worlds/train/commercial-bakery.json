@@ -1,0 +1,830 @@
+{
+ "slug": "commercial-bakery",
+ "industry": "commercial bakery",
+ "entities": [
+  "Goldencrust Wholesale Baking",
+  "Harvest Hearth Industrial Bakery",
+  "Millstone & Rye Commercial Bakers",
+  "Sunrise Crumb Foods",
+  "Copperpan Bakery Group"
+ ],
+ "accounts": [
+  {
+   "name": "Flour and Dry Ingredients",
+   "aliases": [
+    "flour",
+    "dry goods",
+    "dry ingredients",
+    "flour and grain",
+    "milling costs"
+   ],
+   "narrative": [
+    "Flour costs",
+    "Dry goods spend",
+    "Dry ingredients"
+   ],
+   "recurring": [
+    {
+     "vendor": "Prairie Gold Milling",
+     "base": 28000,
+     "memo": "Bread flour bulk delivery - Plant 1 silo"
+    },
+    {
+     "vendor": "Sweetfield Sugar Co",
+     "base": 9500,
+     "memo": "Granulated sugar pallets - Plant 1"
+    },
+    {
+     "vendor": "Redmill Yeast & Leaven",
+     "base": 4200,
+     "memo": "Instant yeast cases - Plant 2"
+    }
+   ],
+   "events": [
+    {
+     "key": "spelt",
+     "vendor": "Prairie Gold Milling",
+     "memos": [
+      "Heritage spelt trial lot - Plant 2 test",
+      "Heritage spelt trial lot - sample milling"
+     ],
+     "cross_memo": "Heritage spelt trial lot - freight and storage",
+     "plain": [
+      "the heritage spelt trial",
+      "the heritage spelt lot",
+      "heritage spelt purchases"
+     ],
+     "oblique": [
+      "the old-world grain our product team wanted to test",
+      "a new line of rustic loaves",
+      "an ancient wheat variety bought in small batches",
+      "the experimental grain order",
+      "what the R&D kitchen requested",
+      "a limited run of specialty loaves",
+      "the grain we are evaluating for a premium range",
+      "that pilot purchase for the artisan line",
+      "an unfamiliar cereal sourced for tasting panels",
+      "the trial of a niche raw material",
+      "a speculative buy for new product development",
+      "an unusual crop sourced from small growers",
+      "the throwaway batch for the product launch",
+      "testing a product we may never sell",
+      "an exploratory purchase of unusual wheat",
+      "the sample milling run for new recipes"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "cocoa_surge",
+     "vendor": "Bayfront Cacao Traders",
+     "memos": [
+      "Cocoa surcharge spot buy - Plant 1 chocolate line",
+      "Cocoa surcharge spot buy - emergency tonnage"
+     ],
+     "cross_memo": "Cocoa surcharge spot buy - expedited customs fee",
+     "plain": [
+      "the cocoa surcharge spot buy",
+      "the cocoa surcharge",
+      "cocoa spot buying"
+     ],
+     "oblique": [
+      "the scramble to cover chocolate supply",
+      "a commodity price spike on the confectionery side",
+      "buying at whatever the market asked",
+      "the shortfall we had to fill at short notice",
+      "an unplanned purchase for the brownie line",
+      "paying up to keep the dark-flavored products running",
+      "what the market did to our chocolate inputs",
+      "the rush order to avoid a stockout",
+      "a bad week in the commodity markets",
+      "last-minute sourcing for the indulgent range",
+      "the premium we paid to keep production going",
+      "when our regular supplier ran dry",
+      "an urgent top-up of a key raw material",
+      "the price shock on a core flavoring",
+      "filling a gap in the pantry at spot prices",
+      "the extra tonnage we could not plan for"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Oven Gas and Plant Utilities",
+   "aliases": [
+    "gas",
+    "oven fuel",
+    "plant utilities",
+    "energy",
+    "natural gas"
+   ],
+   "narrative": [
+    "Gas costs",
+    "Oven fuel",
+    "Plant utilities"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Gas & Power",
+     "base": 26000,
+     "memo": "Natural gas tunnel ovens - Plant 1"
+    },
+    {
+     "vendor": "Municipal Water Authority",
+     "base": 3800,
+     "memo": "Process water and sewer - Plant 1"
+    },
+    {
+     "vendor": "Northgrid Electric",
+     "base": 14500,
+     "memo": "Electricity - Plant 2 proofing rooms"
+    }
+   ],
+   "events": [
+    {
+     "key": "steam",
+     "vendor": "Ridgeline Gas & Power",
+     "memos": [
+      "Boiler steam header rupture - emergency gas burn",
+      "Boiler steam header rupture - Plant 1 overage"
+     ],
+     "cross_memo": "Boiler steam header rupture - temporary generator hire",
+     "plain": [
+      "the boiler steam header rupture",
+      "the steam header rupture",
+      "the boiler rupture"
+     ],
+     "oblique": [
+      "the incident that sent our consumption through the roof",
+      "a failure in the heat distribution system",
+      "running things inefficiently for a few weeks",
+      "the week the line was limping along",
+      "wasted heat from a broken pipe",
+      "what it cost to keep the plant warm",
+      "a breakdown in the plumbing of the factory",
+      "the unplanned burn rate",
+      "the emergency fix that drove up usage",
+      "when the pressure system gave out",
+      "a failure we had to work around",
+      "the extra heat needed during the breakdown",
+      "the utility spike after the incident",
+      "how much we spent while it was being repaired",
+      "an infrastructure fault that cost us dearly",
+      "making do while the damaged part was replaced"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "solar",
+     "vendor": "Brightarray Energy Partners",
+     "memos": [
+      "Rooftop solar interconnection - Plant 2 grid tie",
+      "Rooftop solar interconnection - inspection fees"
+     ],
+     "cross_memo": "Rooftop solar interconnection - crane lift and install",
+     "plain": [
+      "the rooftop solar interconnection",
+      "the solar interconnection",
+      "rooftop solar fees"
+     ],
+     "oblique": [
+      "the green energy project at the second site",
+      "connecting our new panels to the grid",
+      "the sustainability initiative the board approved",
+      "what we paid to start generating our own power",
+      "a one-time charge for going renewable",
+      "the upfront cost of cutting future bills",
+      "the work to plug into the utility network",
+      "the environmental project's startup costs",
+      "installing power sources on the roof",
+      "the paperwork and permits for the clean energy plan",
+      "a capital-like charge that hit the expense line",
+      "our first step toward self-generation",
+      "the hookup work done by the utility",
+      "the compliance steps for the new power setup",
+      "getting the sun-powered system approved and live",
+      "the costs of the decarbonization push"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Packaging and Bread Bags",
+   "aliases": [
+    "packaging",
+    "bags and film",
+    "bread packaging",
+    "wrap and film",
+    "packaging materials"
+   ],
+   "narrative": [
+    "Packaging costs",
+    "Bag and film spend",
+    "Bread packaging"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearwrap Films",
+     "base": 17000,
+     "memo": "Polyfilm bread bags - Plant 1 bagger lines"
+    },
+    {
+     "vendor": "Boxline Corrugated",
+     "base": 11500,
+     "memo": "Shipping cartons - Plant 2 packout"
+    },
+    {
+     "vendor": "Tagwell Labels",
+     "base": 3600,
+     "memo": "Date code labels - all plants"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "Clearwrap Films",
+     "memos": [
+      "Heritage label relaunch - new bag artwork run",
+      "Heritage label relaunch - obsolete film writeoff"
+     ],
+     "cross_memo": "Heritage label relaunch - design agency fee",
+     "plain": [
+      "the heritage label relaunch",
+      "the heritage relaunch",
+      "heritage bag artwork"
+     ],
+     "oblique": [
+      "the new look for our flagship loaf",
+      "a refresh of how the product appears on shelves",
+      "what marketing asked for on the redesign",
+      "scrapping old stock to make way for the new",
+      "the visual overhaul of our consumer line",
+      "a design change that left unused inventory",
+      "the update to our retail appearance",
+      "the changeover that wasted old supplies",
+      "new graphics rolled out across the range",
+      "when the brand team changed the look",
+      "a revamp of the shelf presence",
+      "dumping the previous version after the switch",
+      "the creative refresh of the product line",
+      "an aesthetic update requested by sales",
+      "new artwork replacing the old design",
+      "the cost of looking different at retail"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "allergen",
+     "vendor": "Safeseal Specialty Packaging",
+     "memos": [
+      "Peanut-free line segregation - dedicated film order",
+      "Peanut-free line segregation - sealed tray inserts"
+     ],
+     "cross_memo": "Peanut-free line segregation - signage and floor marking",
+     "plain": [
+      "the peanut-free line segregation",
+      "peanut-free segregation",
+      "the peanut-free line"
+     ],
+     "oblique": [
+      "keeping one product family safe for sensitive customers",
+      "what a major retailer demanded of us",
+      "the separation requirement from a key account",
+      "the changes needed to win allergy-conscious business",
+      "a compliance step for a store contract",
+      "special wrapping to prevent cross-contact",
+      "the new rule on how certain goods are packed",
+      "extra protection for the health-restricted range",
+      "what the grocery chain's audit required",
+      "the segregated production for a special customer",
+      "materials for the contamination-free launch",
+      "an upgrade to satisfy a food-safety review",
+      "our response to a customer's quality standard",
+      "the special order stock for the guarded recipe",
+      "meeting a buyer's allergen policy",
+      "the dedicated supplies for risk-controlled goods"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Delivery Fleet Operating Costs",
+   "aliases": [
+    "fleet",
+    "delivery fleet",
+    "route trucks",
+    "fleet costs",
+    "fleet maintenance"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Delivery fleet spend",
+    "Route truck costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmaster Fuel Cards",
+     "base": 22000,
+     "memo": "Diesel fuel cards - route trucks Depot A"
+    },
+    {
+     "vendor": "Axle & Tire Service",
+     "base": 8200,
+     "memo": "Tire rotation and brakes - Depot B vans"
+    },
+    {
+     "vendor": "Fleetguard Insurance Brokers",
+     "base": 6500,
+     "memo": "Commercial auto premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "reefer",
+     "vendor": "Axle & Tire Service",
+     "memos": [
+      "Reefer unit overhaul - compressor swap Truck 14",
+      "Reefer unit overhaul - labor Depot B"
+     ],
+     "cross_memo": "Reefer unit overhaul - rental trailer",
+     "plain": [
+      "the reefer unit overhaul",
+      "the reefer overhaul",
+      "reefer unit repairs"
+     ],
+     "oblique": [
+      "getting the cold-chain trailers back in service",
+      "the refrigeration repairs",
+      "fixing the cooling equipment that failed inspection",
+      "what it took to keep the chilled loads moving",
+      "the work on the temperature-controlled vehicles",
+      "a mechanical fix after the health inspector's visit",
+      "the downtime on our cold trucks",
+      "the cooling gear that quit on us",
+      "repairs so perishable goods stayed fresh in transit",
+      "the fix for vehicles that could not hold temperature",
+      "making the refrigerated rigs roadworthy again",
+      "the compressor trouble on the cream-filled routes",
+      "catch-up maintenance on the chilled vehicles",
+      "the overhaul of the units that keep deliveries cold",
+      "what the dairy-product trucks needed",
+      "restoring the chill on the delivery vehicles"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "telematics",
+     "vendor": "Routelogic Systems",
+     "memos": [
+      "Driver telematics rollout - GPS hardware Depot A",
+      "Driver telematics rollout - installation labor"
+     ],
+     "cross_memo": "Driver telematics rollout - dashboard software license",
+     "plain": [
+      "the driver telematics rollout",
+      "the telematics rollout",
+      "driver telematics hardware"
+     ],
+     "oblique": [
+      "tracking where the trucks are at all times",
+      "the monitoring gadgets put in every cab",
+      "a safety initiative the insurer pushed",
+      "equipment to watch how people drive",
+      "the program to cut idling and speeding",
+      "installing devices to observe our routes",
+      "what the insurance carrier asked us to add",
+      "a new way of seeing the vehicles on the map",
+      "the in-cab boxes installed over a weekend",
+      "the effort to reduce accidents and fuel burn",
+      "technology for supervising drivers remotely",
+      "the project that lets dispatch see every stop",
+      "gear that records braking and acceleration",
+      "the rollout meant to lower our premiums",
+      "our move to data-driven route oversight",
+      "putting sensors on every delivery vehicle"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Sanitation and Food Safety",
+   "aliases": [
+    "sanitation",
+    "food safety",
+    "cleaning",
+    "pest control",
+    "hygiene costs"
+   ],
+   "narrative": [
+    "Sanitation costs",
+    "Food safety spend",
+    "Cleaning and hygiene"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightline Sanitation Crew",
+     "base": 13500,
+     "memo": "Nightly wash-down crew - Plant 1"
+    },
+    {
+     "vendor": "Chemwash Supply",
+     "base": 5200,
+     "memo": "Sanitizer and degreaser drums - Plant 2"
+    },
+    {
+     "vendor": "Pestgate Control",
+     "base": 2400,
+     "memo": "Monthly rodent and insect service - all plants"
+    }
+   ],
+   "events": [
+    {
+     "key": "recall",
+     "vendor": "Brightline Sanitation Crew",
+     "memos": [
+      "Metal fragment recall cleanup - deep clean Plant 1",
+      "Metal fragment recall cleanup - overtime crew"
+     ],
+     "cross_memo": "Metal fragment recall cleanup - product disposal haul",
+     "plain": [
+      "the metal fragment recall cleanup",
+      "the fragment recall cleanup",
+      "metal fragment recall costs"
+     ],
+     "oblique": [
+      "the incident where a customer found something in a loaf",
+      "pulling product off store shelves",
+      "the shutdown after the contamination scare",
+      "what we paid after the complaint from a retailer",
+      "the emergency response to a safety failure",
+      "an unplanned stop to inspect everything",
+      "the weekend we spent scrubbing every line",
+      "the aftermath of a quality escape",
+      "the effort to reassure our largest buyer",
+      "scrapping and replacing a day's output",
+      "the crisis team's overtime",
+      "a failure that required us to start over clean",
+      "tearing down the machines to find the cause",
+      "the problem that made the news",
+      "the corrective work demanded by the regulator",
+      "reacting to a customer injury claim"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "audit",
+     "vendor": "Gold Seal Certification",
+     "memos": [
+      "Third-party BRC audit prep - consultant days",
+      "Third-party BRC audit prep - mock inspection"
+     ],
+     "cross_memo": "Third-party BRC audit prep - document binder printing",
+     "plain": [
+      "the third-party BRC audit prep",
+      "the BRC audit prep",
+      "BRC audit consultants"
+     ],
+     "oblique": [
+      "getting ready for the annual certification visit",
+      "the preparation to keep our retail accreditation",
+      "what the outside examiners will look for",
+      "the rehearsal before the real inspection",
+      "paying experts to find gaps in advance",
+      "the standards body's yearly checkup",
+      "keeping our license to supply the big chains",
+      "the lead-up to a high-stakes evaluation",
+      "the work to pass the scheme review",
+      "hired help for the compliance exam",
+      "a practice run for the grade we need",
+      "the readiness push before the assessor arrives",
+      "ensuring we hold on to the top rating",
+      "the paperwork marathon behind our certificate",
+      "making sure the plant would score well",
+      "the annual hurdle to stay on approved supplier lists"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Production Labor and Overtime",
+   "aliases": [
+    "production labor",
+    "overtime",
+    "line labor",
+    "bakery wages",
+    "shift pay"
+   ],
+   "narrative": [
+    "Production labor",
+    "Overtime spend",
+    "Line labor costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Payroll - Plant 1 Hourly",
+     "base": 30000,
+     "memo": "Hourly bakers and packers - Plant 1"
+    },
+    {
+     "vendor": "Payroll - Plant 2 Hourly",
+     "base": 24000,
+     "memo": "Hourly line crew - Plant 2"
+    },
+    {
+     "vendor": "Crewstream Staffing",
+     "base": 9000,
+     "memo": "Temp laborers - weekly invoices"
+    }
+   ],
+   "events": [
+    {
+     "key": "holiday",
+     "vendor": "Crewstream Staffing",
+     "memos": [
+      "Thanksgiving pie surge - extra temp shifts",
+      "Thanksgiving pie surge - night differential"
+     ],
+     "cross_memo": "Thanksgiving pie surge - holiday premium pay",
+     "plain": [
+      "the Thanksgiving pie surge",
+      "the pie surge",
+      "Thanksgiving pie shifts"
+     ],
+     "oblique": [
+      "the seasonal rush in the last quarter",
+      "an annual spike in orders from grocers",
+      "bringing in extra hands for the festive period",
+      "the busiest stretch of the calendar",
+      "a late-autumn demand wave",
+      "the long hours the crew put in before the feast",
+      "what retail customers wanted for family gatherings",
+      "the added headcount we need each year around then",
+      "the weekend work for dessert orders",
+      "a predictable peak that we staff for",
+      "extra people to meet the end-of-year orders",
+      "the premium we pay when everyone wants the same thing",
+      "the crunch of the holiday calendar",
+      "our biggest push of the year",
+      "the shifts added at the last minute for big orders",
+      "the festive demand that stretched our people"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "newline",
+     "vendor": "Lineworks Training Institute",
+     "memos": [
+      "Spiral oven line commissioning - operator training",
+      "Spiral oven line commissioning - trial shifts"
+     ],
+     "cross_memo": "Spiral oven line commissioning - vendor technician days",
+     "plain": [
+      "the spiral oven line commissioning",
+      "spiral oven commissioning",
+      "the spiral line training"
+     ],
+     "oblique": [
+      "teaching the crew how to run the new machinery",
+      "the ramp-up after the equipment arrived",
+      "paying people while the plant learned the system",
+      "the learning curve on a major capital install",
+      "time spent getting new staff up to speed",
+      "the practice runs before real production began",
+      "skill building for the expansion project",
+      "what it costs to learn a different process",
+      "wages without output during startup",
+      "the early weeks of the expansion",
+      "getting the team certified on the big purchase",
+      "the transition period for the upgraded plant",
+      "payroll for a line that was not yet making product",
+      "the phase when nothing sold but everyone was paid",
+      "onboarding people to the capital project",
+      "the shakedown period for equipment we just installed"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Repairs and Maintenance",
+   "aliases": [
+    "maintenance",
+    "equipment repairs",
+    "oven maintenance",
+    "plant repairs",
+    "machine upkeep"
+   ],
+   "narrative": [
+    "Maintenance costs",
+    "Equipment repairs",
+    "Machine upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironbake Service Techs",
+     "base": 16000,
+     "memo": "Preventive maintenance contract - ovens Plant 1"
+    },
+    {
+     "vendor": "Gearhead Industrial Supply",
+     "base": 6800,
+     "memo": "Belts bearings and chains - Plant 2"
+    },
+    {
+     "vendor": "Sparkwire Electrical",
+     "base": 4500,
+     "memo": "Panel and motor repairs - all plants"
+    }
+   ],
+   "events": [
+    {
+     "key": "mixer",
+     "vendor": "Ironbake Service Techs",
+     "memos": [
+      "Planetary mixer gearbox failure - emergency callout",
+      "Planetary mixer gearbox failure - replacement parts"
+     ],
+     "cross_memo": "Planetary mixer gearbox failure - expedited freight",
+     "plain": [
+      "the planetary mixer gearbox failure",
+      "the mixer gearbox failure",
+      "planetary mixer repairs"
+     ],
+     "oblique": [
+      "the breakdown that stopped dough production",
+      "a machine failure on the busiest night",
+      "the weekend callout for a seized machine",
+      "what it cost to get the dough room going",
+      "an unplanned stoppage upstream of the ovens",
+      "the part that gave out without warning",
+      "an expensive fix to our biggest blending asset",
+      "the emergency call to the service team",
+      "a mechanical failure at the front of the line",
+      "dough could not be made until the repair finished",
+      "the old machine finally quitting",
+      "parts we had to fly in",
+      "a costly surprise in the mixing area",
+      "what it took to restart the plant",
+      "the failed drive that held up everything",
+      "the urgent work on the heavy-duty kneading equipment"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "conveyor",
+     "vendor": "Beltway Conveyor Engineering",
+     "memos": [
+      "Cooling conveyor rebuild - Plant 2 spiral cooler",
+      "Cooling conveyor rebuild - new drive motors"
+     ],
+     "cross_memo": "Cooling conveyor rebuild - weekend contractor crew",
+     "plain": [
+      "the cooling conveyor rebuild",
+      "the conveyor rebuild",
+      "cooling conveyor motors"
+     ],
+     "oblique": [
+      "the work on the system that moves loaves after baking",
+      "a major refurbishment of aging equipment",
+      "what it took to extend the life of the line",
+      "an overdue project the engineers pushed for",
+      "replacing the worn components of a key asset",
+      "upgrades to the path between oven and packaging",
+      "a scheduled shutdown for heavy repair",
+      "the long-planned fix at the second site",
+      "modernizing a piece of the process",
+      "restoring a machine that had been patched for years",
+      "the contractor project over the long weekend",
+      "overhauling the track that carries product",
+      "extensive work on the part that cools our bread",
+      "refitting equipment that had been limping",
+      "making the tail end of the line reliable again",
+      "the engineering fix to avoid recurring jams"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Rent and Facilities",
+   "aliases": [
+    "rent",
+    "facilities",
+    "building costs",
+    "lease costs",
+    "occupancy"
+   ],
+   "narrative": [
+    "Rent costs",
+    "Facilities spend",
+    "Occupancy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Oakridge Industrial Properties",
+     "base": 29000,
+     "memo": "Monthly lease - Plant 1 and warehouse"
+    },
+    {
+     "vendor": "Clearview Facility Services",
+     "base": 5500,
+     "memo": "Landscaping and snow removal - Plant 2"
+    },
+    {
+     "vendor": "Summit Property Tax Services",
+     "base": 3200,
+     "memo": "Property tax installment accrual"
+    }
+   ],
+   "events": [
+    {
+     "key": "roof",
+     "vendor": "Oakridge Industrial Properties",
+     "memos": [
+      "Warehouse roof membrane replacement - tenant share",
+      "Warehouse roof membrane replacement - CAM true-up"
+     ],
+     "cross_memo": "Warehouse roof membrane replacement - interior water damage",
+     "plain": [
+      "the warehouse roof membrane replacement",
+      "the roof membrane replacement",
+      "warehouse roof membrane costs"
+     ],
+     "oblique": [
+      "the landlord's work on the top of the storage building",
+      "what we owe for the building repair after the storm",
+      "leaks that finally forced a big fix",
+      "our portion of the structural project",
+      "the pass-through charge from the property owner",
+      "dealing with the water coming in over the pallets",
+      "the reconciliation we got at year end",
+      "protecting inventory from weather",
+      "a capital project on the lessor's side billed back to us",
+      "the cost of keeping the stockroom dry",
+      "the building owner's invoice for the shared project",
+      "a share of the upgrade we did not plan",
+      "the long-delayed repair on the overhead cover",
+      "what the lease says we have to pay",
+      "fixing the part of the property that keeps the rain out",
+      "the rebilled work on the shell of the facility"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "newdc",
+     "vendor": "Westgate Logistics Realty",
+     "memos": [
+      "Satellite cross-dock lease - Depot C opening",
+      "Satellite cross-dock lease - deposit and fit-out"
+     ],
+     "cross_memo": "Satellite cross-dock lease - racking and dock levelers",
+     "plain": [
+      "the satellite cross-dock lease",
+      "the cross-dock lease",
+      "Depot C opening costs"
+     ],
+     "oblique": [
+      "the new transfer point we opened closer to customers",
+      "a small distribution spot in another city",
+      "the expansion of our reach into a neighboring market",
+      "the staging site that shortens routes",
+      "space taken to serve the new accounts",
+      "the first months of an additional location",
+      "what we paid to get a foothold in a fresh territory",
+      "the startup of a satellite site",
+      "extra square footage for last-mile handoffs",
+      "the outpost that lets trucks turn faster",
+      "a lease signed to support growth",
+      "our newest address on the books",
+      "the preparation of a site before it was productive",
+      "the cost of a regional hub just getting going",
+      "setting up a place where loads change vehicles",
+      "paying rent on a building that was still empty"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

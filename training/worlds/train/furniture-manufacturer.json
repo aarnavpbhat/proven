@@ -1,0 +1,723 @@
+{
+ "slug": "furniture-manufacturer",
+ "industry": "furniture manufacturer",
+ "entities": [
+  "Oakridge Casegoods Works",
+  "Harlow & Finch Furniture Co.",
+  "Birchwood Seating Manufacturing",
+  "Tillman Ridge Millwork & Furniture",
+  "Lakeshore Joinery Group"
+ ],
+ "accounts": [
+  {
+   "name": "Hardwood Lumber Purchases",
+   "aliases": [
+    "lumber",
+    "hardwood",
+    "lumber purchases",
+    "timber buying",
+    "wood stock spend"
+   ],
+   "narrative": [
+    "Lumber",
+    "Hardwood",
+    "Lumber purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Appalachian Hardwood Supply",
+     "base": 28000,
+     "memo": "Kiln-dried oak and maple lumber - Plant 1"
+    },
+    {
+     "vendor": "Northern Timber Partners",
+     "base": 16500,
+     "memo": "Cherry and walnut boards - Plant 2"
+    },
+    {
+     "vendor": "Delmar Sawmill Co.",
+     "base": 9800,
+     "memo": "Poplar secondary stock - Plant 1"
+    }
+   ],
+   "events": [
+    {
+     "key": "walnutspot",
+     "vendor": "Appalachian Hardwood Supply",
+     "memos": [
+      "Black walnut spot buy - Heritage Dining line",
+      "Black walnut spot buy - expedited freight to Plant 1"
+     ],
+     "cross_memo": "Black walnut spot buy - inbound freight insurance",
+     "plain": [
+      "the black walnut spot buy",
+      "the walnut spot purchase",
+      "the black walnut spot order"
+     ],
+     "oblique": [
+      "the premium dark timber we grabbed on short notice",
+      "stocking up for the flagship dining collection",
+      "a rush purchase of costly imported-grade boards",
+      "scrambling for material for the new showroom range",
+      "the one-time buy ahead of the price increase",
+      "an opportunistic grab at a supplier's overstock",
+      "the rare species we needed fast",
+      "material for the launch collection",
+      "a big one-off wood order",
+      "securing raw boards before competitors did",
+      "the premium wood run",
+      "filling a gap in the upcoming catalog",
+      "extra boards for the signature line",
+      "the unplanned stock-up",
+      "an expensive urgent timber order",
+      "dark-grained boards for the flagship launch"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "cedarmill",
+     "vendor": "Pinecrest Veneer Traders",
+     "memos": [
+      "Quartersawn sycamore veneer lot - Plant 2",
+      "Quartersawn sycamore veneer lot - bulk surcharge"
+     ],
+     "cross_memo": "Quartersawn sycamore veneer lot - cold storage rack rental",
+     "plain": [
+      "the quartersawn sycamore veneer lot",
+      "the sycamore veneer lot",
+      "the quartersawn veneer lot"
+     ],
+     "oblique": [
+      "thin decorative sheets for the new accent panels",
+      "a one-time batch of surface-finish material",
+      "the layered facing stock for the retail redesign",
+      "a large purchase of cosmetic overlay sheets",
+      "covering for a shortfall from our usual source",
+      "paneling skins for the boutique order",
+      "an uncommon wood-skin shipment",
+      "the premium surface material for a custom contract",
+      "a single oversized lot of fine sheeting",
+      "decorative facing for hotel casework",
+      "the stock bought for a designer collaboration",
+      "a once-only batch of face material",
+      "sheeting bought outside our regular channel",
+      "the specialty skins nobody had pre-ordered",
+      "finishing sheets for a rush commercial job",
+      "an outsized one-off facing purchase"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Upholstery Fabric and Foam",
+   "aliases": [
+    "upholstery",
+    "fabric and foam",
+    "foam and fabric",
+    "seating materials",
+    "cushion stock"
+   ],
+   "narrative": [
+    "Upholstery",
+    "Fabric and foam",
+    "Seating materials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Carolina Textile Mills",
+     "base": 19000,
+     "memo": "Performance fabric rolls - Seating Plant"
+    },
+    {
+     "vendor": "SoftCore Foam Industries",
+     "base": 12500,
+     "memo": "High-resilience foam blocks - Cut Shop"
+    },
+    {
+     "vendor": "Marlow Leather & Hide",
+     "base": 8200,
+     "memo": "Top-grain leather hides - Sofa Line"
+    }
+   ],
+   "events": [
+    {
+     "key": "flameproof",
+     "vendor": "Carolina Textile Mills",
+     "memos": [
+      "Fire-retardant backcoating run - contract seating",
+      "Fire-retardant backcoating run - retreatment of rolls"
+     ],
+     "cross_memo": "Fire-retardant backcoating run - compliance lab testing",
+     "plain": [
+      "the fire-retardant backcoating run",
+      "the fire-retardant coating run",
+      "the backcoating run"
+     ],
+     "oblique": [
+      "making hospitality fabric pass the burn rules",
+      "the safety treatment demanded by a hotel client",
+      "re-processing cloth so it meets flame standards",
+      "the compliance finish on commercial rolls",
+      "the extra step an inspector insisted on",
+      "getting textiles certified for public venues",
+      "a protective treatment applied after the fact",
+      "the regulatory finishing work",
+      "reworking stock for a code-bound customer",
+      "the burn-resistance upgrade",
+      "what the fire marshal required of our cloth",
+      "treating rolls so a lobby order could ship",
+      "a safety-driven reprocessing of material",
+      "the certification-related rework",
+      "a client mandate on flammability",
+      "extra processing for a contract that had strict codes"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "velvetcrush",
+     "vendor": "Bellweather Mills Ltd.",
+     "memos": [
+      "Crushed velvet bolt order - Spring Lounge Collection",
+      "Crushed velvet bolt order - air freight from importer"
+     ],
+     "cross_memo": "Crushed velvet bolt order - sample swatch books",
+     "plain": [
+      "the crushed velvet bolt order",
+      "the velvet bolt order",
+      "the crushed velvet order"
+     ],
+     "oblique": [
+      "plush cloth for the seasonal lounge range",
+      "a trend-driven pile fabric purchase",
+      "the soft imported goods merchandising wanted",
+      "material chosen for the spring catalog shoot",
+      "a fashion-forward textile gamble",
+      "the luxe cloth sales asked us to source",
+      "a flown-in shipment to hit the launch date",
+      "the fabric behind the new color story",
+      "a big buy of tactile cover material",
+      "what design picked for the trend refresh",
+      "the showroom-driven cloth purchase",
+      "an overseas lot that had to arrive quickly",
+      "stock for the lounge chairs that debuted at market",
+      "a one-time bet on a popular texture",
+      "the stylish covering for the new collection",
+      "the imported goods that missed the slow boat"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Finishing Chemicals and Coatings",
+   "aliases": [
+    "finishing",
+    "coatings",
+    "stains and lacquers",
+    "finish shop supplies",
+    "finishing chemicals"
+   ],
+   "narrative": [
+    "Finishing",
+    "Coatings",
+    "Stains and lacquers"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sherrod Coatings Inc.",
+     "base": 14500,
+     "memo": "Catalyzed lacquer drums - Finishing Line A"
+    },
+    {
+     "vendor": "ColorWorks Stain Supply",
+     "base": 7600,
+     "memo": "Wiping stains and glazes - Finish Shop"
+    },
+    {
+     "vendor": "Prairie Solvents Co.",
+     "base": 3200,
+     "memo": "Thinners and cleanup solvents - Spray Booth 2"
+    }
+   ],
+   "events": [
+    {
+     "key": "waterborne",
+     "vendor": "Sherrod Coatings Inc.",
+     "memos": [
+      "Waterborne topcoat conversion trial - Line A",
+      "Waterborne topcoat conversion trial - pilot drums"
+     ],
+     "cross_memo": "Waterborne topcoat conversion trial - booth airflow retrofit",
+     "plain": [
+      "the waterborne topcoat conversion trial",
+      "the waterborne topcoat trial",
+      "the topcoat conversion trial"
+     ],
+     "oblique": [
+      "switching to a low-emission formula",
+      "the environmental permit-driven change",
+      "testing a greener product on one line",
+      "a pilot aimed at cutting air pollutants",
+      "what the regulator nudged us toward",
+      "the experiment with cleaner chemistry",
+      "a low-odor recipe evaluation",
+      "our move away from solvent-heavy product",
+      "a sustainability initiative in the paint area",
+      "the pilot that replaced the old formula",
+      "the clean-air compliance experiment",
+      "an eco-minded process change",
+      "trialing a new generation of liquid",
+      "a test run to satisfy emission limits",
+      "the shop's first step toward cleaner spraying",
+      "reformulating what we apply to the pieces"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "crackle",
+     "vendor": "Antiquer Specialty Finishes",
+     "memos": [
+      "Hand-distressed crackle glaze program - Farmhouse series",
+      "Hand-distressed crackle glaze program - artisan kits"
+     ],
+     "cross_memo": "Hand-distressed crackle glaze program - artisan overtime",
+     "plain": [
+      "the hand-distressed crackle glaze program",
+      "the crackle glaze program",
+      "the distressed glaze program"
+     ],
+     "oblique": [
+      "the aged look requested by retail buyers",
+      "an old-world appearance for the rustic range",
+      "the weathered effect on a new product family",
+      "what made new pieces look decades old",
+      "a decorative treatment sales promised a big account",
+      "the vintage-style surface work",
+      "a limited run of artisan-styled pieces",
+      "the textured look our biggest customer wanted",
+      "an add-on that made items appear antique",
+      "a special visual effect for the country collection",
+      "the worn-in character applied by hand",
+      "a handcrafted aesthetic request",
+      "material for the rustic line extension",
+      "the specialty appearance program",
+      "a stylistic request from merchandising",
+      "the cosmetic aging process"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Plant Machinery Maintenance",
+   "aliases": [
+    "machinery maintenance",
+    "equipment repairs",
+    "shop equipment upkeep",
+    "plant maintenance",
+    "machine repairs"
+   ],
+   "narrative": [
+    "Machinery maintenance",
+    "Equipment repairs",
+    "Plant maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Industrial Service",
+     "base": 11000,
+     "memo": "Preventive maintenance contract - Plant 1 saws"
+    },
+    {
+     "vendor": "Brandt CNC Support",
+     "base": 8700,
+     "memo": "Router calibration and service - CNC Cell 3"
+    },
+    {
+     "vendor": "Allied Bearing & Belt",
+     "base": 2400,
+     "memo": "Bearings and drive belts - Mill Room"
+    }
+   ],
+   "events": [
+    {
+     "key": "edgebander",
+     "vendor": "Brandt CNC Support",
+     "memos": [
+      "Edgebander gluepot rebuild - Cell 4",
+      "Edgebander gluepot rebuild - emergency technician callout"
+     ],
+     "cross_memo": "Edgebander gluepot rebuild - overtime to recover schedule",
+     "plain": [
+      "the edgebander gluepot rebuild",
+      "the gluepot rebuild",
+      "the edgebander rebuild"
+     ],
+     "oblique": [
+      "the breakdown that idled the trim station",
+      "an urgent fix after a seizure on the line",
+      "getting the panel-sealing unit running again",
+      "the failure that stalled production for days",
+      "a technician flown in on short notice",
+      "what stopped the strip-applying equipment",
+      "the heated reservoir that gave out",
+      "an emergency repair in the panel area",
+      "restoring a stalled line before a shipment deadline",
+      "the costly weekend repair",
+      "the machine failure nobody had budgeted",
+      "rebuilding the glue-handling assembly",
+      "a critical repair on the laminate machine",
+      "the stoppage in cell four",
+      "the overhaul of a worn-out heated tank",
+      "the fix that cleared a backlog"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "dustcollect",
+     "vendor": "Cyclone Air Systems",
+     "memos": [
+      "Baghouse dust collector fan replacement - Mill Room",
+      "Baghouse dust collector fan replacement - duct realignment"
+     ],
+     "cross_memo": "Baghouse dust collector fan replacement - crane rental",
+     "plain": [
+      "the baghouse dust collector fan replacement",
+      "the dust collector fan replacement",
+      "the baghouse fan replacement"
+     ],
+     "oblique": [
+      "the airflow gear that clears sawdust",
+      "swapping out a worn-out extraction component",
+      "the shop-wide suction system overhaul",
+      "an air-quality fix after an inspection",
+      "replacing the large blower on the roof",
+      "the sawdust handling equipment we had to renew",
+      "a safety-related upgrade to the air handling",
+      "the part that failed and left the room hazy",
+      "an update demanded by the insurance carrier",
+      "a big mechanical swap outside the building",
+      "what keeps fine particles out of the plant",
+      "the extraction unit that died mid-shift",
+      "restoring suction to the milling area",
+      "an urgent change to our particulate control",
+      "the heavy equipment brought in for a lift",
+      "clearing the air in the machining hall"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Packaging and Crating",
+   "aliases": [
+    "packaging",
+    "crating",
+    "cartons and crating",
+    "packing materials",
+    "shipping supplies"
+   ],
+   "narrative": [
+    "Packaging",
+    "Crating",
+    "Packing materials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Corrugated Packaging",
+     "base": 13500,
+     "memo": "Corrugated cartons and dividers - Shipping Dock"
+    },
+    {
+     "vendor": "EdgeGuard Protective Products",
+     "base": 5200,
+     "memo": "Corner protectors and foam wrap - Pack Line"
+    },
+    {
+     "vendor": "Lowell Pallet & Skid",
+     "base": 4100,
+     "memo": "Pallets and skids - Warehouse B"
+    }
+   ],
+   "events": [
+    {
+     "key": "exportcrate",
+     "vendor": "Lowell Pallet & Skid",
+     "memos": [
+      "Heat-treated export crates - Gulf hospitality order",
+      "Heat-treated export crates - fumigation certificates"
+     ],
+     "cross_memo": "Heat-treated export crates - customs broker fees",
+     "plain": [
+      "the heat-treated export crates",
+      "the export crates order",
+      "the heat-treated crates"
+     ],
+     "oblique": [
+      "wooden boxes built for an overseas hotel project",
+      "containers meeting foreign import rules",
+      "packaging for the shipment crossing the ocean",
+      "the sturdy shells required by a distant buyer",
+      "what the destination country's agriculture rules demanded",
+      "the shipping boxes that had to be certified",
+      "protective housing for a far-off installation",
+      "a large international delivery's wrappers",
+      "the special enclosures for long-haul freight",
+      "boxing up a sizeable foreign contract",
+      "the custom-built shells for a one-time overseas job",
+      "packing requirements set by a port authority",
+      "the pest-control stamped boxes",
+      "the heavy-duty boxing for sea freight",
+      "what let the project clear a foreign border",
+      "containers built to survive weeks at sea"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "ecopack",
+     "vendor": "GreenWrap Solutions",
+     "memos": [
+      "Molded pulp packaging pilot - Pack Line 2",
+      "Molded pulp packaging pilot - tooling charge"
+     ],
+     "cross_memo": "Molded pulp packaging pilot - customer sample reshipping",
+     "plain": [
+      "the molded pulp packaging pilot",
+      "the pulp packaging pilot",
+      "the molded pulp pilot"
+     ],
+     "oblique": [
+      "replacing plastic cushioning with something compostable",
+      "a retailer's demand for plastic-free shipping",
+      "the trial of recycled fiber protection",
+      "an environmental promise made to a big account",
+      "a test of fibrous inserts on one line",
+      "what sustainability reporting pushed us to try",
+      "the greener way of cradling products",
+      "an experiment in biodegradable cushioning",
+      "a one-off startup cost for new insert shapes",
+      "the effort to drop foam from deliveries",
+      "a customer scorecard requirement",
+      "trialing earth-friendly protection",
+      "the new molds we paid for up front",
+      "cutting landfill waste from our outbound goods",
+      "a pilot that swapped out styrofoam",
+      "the initiative to ship with less plastic"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Showroom and Trade Show Costs",
+   "aliases": [
+    "showroom",
+    "trade shows",
+    "market events",
+    "showroom spend",
+    "exhibit costs"
+   ],
+   "narrative": [
+    "Showroom",
+    "Trade shows",
+    "Market events"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hightower Showroom Leasing",
+     "base": 18000,
+     "memo": "High Point showroom space rent"
+    },
+    {
+     "vendor": "Display Dynamics",
+     "base": 3800,
+     "memo": "Showroom lighting and staging upkeep"
+    }
+   ],
+   "events": [
+    {
+     "key": "marketbooth",
+     "vendor": "Display Dynamics",
+     "memos": [
+      "Spring Market booth buildout - 40x60 island",
+      "Spring Market booth buildout - union labor"
+     ],
+     "cross_memo": "Spring Market booth buildout - freight to venue",
+     "plain": [
+      "the Spring Market booth buildout",
+      "the market booth buildout",
+      "the island booth buildout"
+     ],
+     "oblique": [
+      "our presence at the big industry gathering",
+      "constructing the temporary exhibit hall space",
+      "the semiannual buyer event expenses",
+      "the large footprint we reserved for the expo",
+      "building a stand to meet dealers",
+      "the temporary structure assembled for visitors",
+      "what we spent to be seen by retailers",
+      "carpenters and electricians hired for the fair",
+      "the splashy setup for the buying season",
+      "an elaborate display erected for a week",
+      "the cost of showing the new collection to buyers",
+      "erecting a stand at the convention center",
+      "the pop-up space used to take orders",
+      "the stagecraft behind our launch week",
+      "a temporary structure that came down after five days",
+      "the fair stand and its installation crew"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "vrconfig",
+     "vendor": "Immersive Spaces Studio",
+     "memos": [
+      "Virtual showroom configurator - 3D asset capture",
+      "Virtual showroom configurator - web platform setup"
+     ],
+     "cross_memo": "Virtual showroom configurator - photographer retainer",
+     "plain": [
+      "the virtual showroom configurator",
+      "the showroom configurator project",
+      "the 3D configurator project"
+     ],
+     "oblique": [
+      "letting dealers browse the catalog online",
+      "digital replicas of our products",
+      "a web tool for customers who cannot travel",
+      "the interactive viewer for buyers",
+      "scanning the whole line for screens",
+      "an online way to mix finishes and sizes",
+      "the technology push for remote selling",
+      "a digital twin of every model",
+      "software that renders custom orders on demand",
+      "the initiative to reach buyers without a visit",
+      "modeling pieces for virtual walkthroughs",
+      "capturing every product from all angles",
+      "an e-commerce enhancement for trade customers",
+      "a screen-based experience replacing printed swatches",
+      "the build-out of our online display",
+      "an investment in remote presentation tools"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Outbound Freight and Delivery",
+   "aliases": [
+    "freight",
+    "outbound shipping",
+    "delivery costs",
+    "trucking",
+    "white glove delivery"
+   ],
+   "narrative": [
+    "Freight",
+    "Outbound shipping",
+    "Delivery costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Interstate Furniture Express",
+     "base": 30000,
+     "memo": "LTL furniture freight - Southeast region"
+    },
+    {
+     "vendor": "Whitaker White Glove Delivery",
+     "base": 15500,
+     "memo": "In-home delivery and setup - Metro stores"
+    },
+    {
+     "vendor": "Redline Parcel Services",
+     "base": 4300,
+     "memo": "Small parcel shipments - replacement parts"
+    }
+   ],
+   "events": [
+    {
+     "key": "backhaul",
+     "vendor": "Interstate Furniture Express",
+     "memos": [
+      "Dedicated truckload surge - holiday retailer reset",
+      "Dedicated truckload surge - driver detention fees"
+     ],
+     "cross_memo": "Dedicated truckload surge - warehouse overtime loading",
+     "plain": [
+      "the dedicated truckload surge",
+      "the truckload surge",
+      "the dedicated truckload run"
+     ],
+     "oblique": [
+      "the pre-holiday rush for a chain customer",
+      "moving inventory to stores before a deadline",
+      "extra trailers hired when the usual lanes filled up",
+      "a retailer's refresh of floor displays nationwide",
+      "the seasonal volume spike",
+      "a big customer reorganizing its shelves",
+      "hauling a mountain of product in a short window",
+      "the compressed delivery timetable",
+      "trucks waiting around at receiving docks",
+      "an unusually concentrated shipping week",
+      "what a partner's remodel required of our carriers",
+      "the crush of end-of-year deliveries",
+      "buying capacity at premium rates",
+      "the bulk move ahead of a promotional event",
+      "moving a quarter's worth of orders in days",
+      "sudden demand that overwhelmed our usual carriers"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "damageclaim",
+     "vendor": "Pacific Coast Drayage",
+     "memos": [
+      "Port drayage reroute - Savannah congestion",
+      "Port drayage reroute - container storage fees"
+     ],
+     "cross_memo": "Port drayage reroute - expedited customs release",
+     "plain": [
+      "the port drayage reroute",
+      "the drayage reroute",
+      "the Savannah drayage reroute"
+     ],
+     "oblique": [
+      "containers stuck behind a backed-up harbor",
+      "the detour imposed by a clogged terminal",
+      "extra days of boxes sitting idle on the ground",
+      "the scramble to get imported goods inland",
+      "a logistics disruption beyond our control",
+      "what we paid when ships were late",
+      "getting inbound sea cargo moved by another route",
+      "a snarl at the waterfront",
+      "demurrage that piled up while we waited",
+      "the workaround for overseas hardware shipments",
+      "an overwhelmed gateway that slowed everything",
+      "rerouting imported components across states",
+      "the penalties for leaving cargo unclaimed too long",
+      "a supply-chain jam at the coast",
+      "the cost of unsticking delayed inbound shipments",
+      "trucks rebooked to rescue stranded shipments"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

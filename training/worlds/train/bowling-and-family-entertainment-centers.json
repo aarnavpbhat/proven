@@ -1,0 +1,728 @@
+{
+ "slug": "bowling-and-family-entertainment-centers",
+ "industry": "bowling and family entertainment centers",
+ "entities": [
+  "Strike Zone Entertainment Holdings",
+  "Pinnacle Lanes & Fun Centers",
+  "Rolling Thunder Family Entertainment",
+  "Golden Gutter Recreation Group",
+  "Starlight Bowl & Arcade Co"
+ ],
+ "accounts": [
+  {
+   "name": "Lane Maintenance & Pinsetter Repairs",
+   "aliases": [
+    "lane maintenance",
+    "pinsetter repairs",
+    "pinspotter upkeep",
+    "lane repair costs",
+    "mechanical upkeep"
+   ],
+   "narrative": [
+    "Lane maintenance",
+    "Pinsetter repairs",
+    "Mechanical upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brunswick Parts Depot",
+     "base": 9500,
+     "memo": "Pinsetter wear parts - all centers"
+    },
+    {
+     "vendor": "Keglers Mechanical Services",
+     "base": 6800,
+     "memo": "Monthly mechanic service contract"
+    },
+    {
+     "vendor": "Oakline Lane Care",
+     "base": 3200,
+     "memo": "Lane conditioner and cleaning supplies"
+    }
+   ],
+   "events": [
+    {
+     "key": "resurface",
+     "vendor": "Oakline Lane Care",
+     "memos": [
+      "Synthetic overlay resurfacing - Westgate Lanes 1-24",
+      "Overlay resurfacing - Westgate Lanes 25-40"
+     ],
+     "cross_memo": "Synthetic overlay resurfacing - Westgate temporary closure signage",
+     "plain": [
+      "the synthetic overlay resurfacing",
+      "the Westgate overlay resurfacing",
+      "the overlay resurfacing project"
+     ],
+     "oblique": [
+      "replacing the playing surface on the old lanes",
+      "the surface work at our oldest location",
+      "fixing the worn boards that league bowlers complained about",
+      "a floor refresh",
+      "the big renovation of the main playing area",
+      "new coating for the approaches and decks",
+      "the tournament director's demand for fair ball reaction",
+      "work that kept half the building dark for a week",
+      "what replaced the thirty-year-old finish",
+      "the upgrade requested by the league secretaries",
+      "a full-site facelift for the sport side",
+      "the project that needed contractors on weekends",
+      "getting the old boards smooth again",
+      "the fix for uneven ball tracks",
+      "a one-time refinishing job",
+      "the capital-style work expensed this period"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "gearbox",
+     "vendor": "Ridgecrest Drivetrain Rebuilders",
+     "memos": [
+      "Gearbox rebuild kits - Eastside machines",
+      "Drivetrain rebuild labor - Eastside Lanes"
+     ],
+     "cross_memo": "Gearbox rebuild - loaner machine freight Eastside",
+     "plain": [
+      "the gearbox rebuild kits",
+      "the Eastside gearbox rebuild",
+      "the drivetrain rebuild work"
+     ],
+     "oblique": [
+      "getting the sweep bars moving again",
+      "a cluster of machines that kept jamming",
+      "the fix for the pin-clearing mechanisms at the east site",
+      "outside specialists brought in on a rush basis",
+      "rebuilding the heart of the machines",
+      "what the mechanic recommended after repeated stoppages",
+      "a batch of lanes that sat idle for weeks",
+      "terse overhaul work",
+      "the overhaul of motors and gears on aging equipment",
+      "specialist labor beyond our in-house crew",
+      "a one-time restoration of tired hardware",
+      "the reason a third of the house was closed",
+      "parts shipped in from out of state",
+      "the machines that failed the weekend league nights",
+      "a catch-up job after deferred servicing",
+      "equipment revival"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Food & Beverage Cost of Sales",
+   "aliases": [
+    "food cost",
+    "f&b cost",
+    "kitchen purchases",
+    "snack bar purchases",
+    "cost of food"
+   ],
+   "narrative": [
+    "Food cost",
+    "F&B cost",
+    "Kitchen purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Foodservice Supply",
+     "base": 24000,
+     "memo": "Weekly grocery and fryer oil delivery"
+    },
+    {
+     "vendor": "Frostline Beverage Distributors",
+     "base": 14500,
+     "memo": "Soda syrup and draft beer kegs"
+    },
+    {
+     "vendor": "Sunrise Bakery Wholesale",
+     "base": 4200,
+     "memo": "Pizza dough and buns"
+    }
+   ],
+   "events": [
+    {
+     "key": "cheesewave",
+     "vendor": "Metro Foodservice Supply",
+     "memos": [
+      "Mozzarella price surge surcharge - all snack bars",
+      "Mozzarella surcharge - pizza program"
+     ],
+     "cross_memo": "Mozzarella surge - menu reprint costs",
+     "plain": [
+      "the mozzarella price surge",
+      "the mozzarella surcharge",
+      "the mozzarella surge"
+     ],
+     "oblique": [
+      "dairy inflation hitting our top seller",
+      "what the cheese market did to us",
+      "the cost spike on our most popular slice",
+      "a supplier-imposed markup on one ingredient",
+      "the commodity jump nobody budgeted",
+      "terse pricing shock",
+      "a squeeze on pizza margins",
+      "a pass-through the distributor announced mid-month",
+      "the dairy side of the menu",
+      "the item every birthday party orders",
+      "a pricing event outside our control",
+      "pressure on the kitchen from upstream",
+      "the single ingredient that moved the line",
+      "an ingredient-level price hike",
+      "what the buyer flagged in the weekly call",
+      "the reason we reconsidered the lunch special"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "lunchcamp",
+     "vendor": "Harborview Catering Partners",
+     "memos": [
+      "Summer camp lunch program - boxed meals Lakeshore",
+      "Camp lunch program - boxed meals and juice"
+     ],
+     "cross_memo": "Summer camp lunch program - staff overtime Lakeshore",
+     "plain": [
+      "the summer camp lunch program",
+      "the Lakeshore camp lunch program",
+      "the camp lunch program"
+     ],
+     "oblique": [
+      "feeding the kids who spend weekdays with us",
+      "a school-holiday contract for packed meals",
+      "the youth outing deal signed with the parks department",
+      "meals for hundreds of children on weekday mornings",
+      "a new daytime revenue stream with its own groceries",
+      "the arrangement for the seasonal visitors",
+      "food for the vacation crowd",
+      "something the sales team landed in spring",
+      "outsourced meal prep for large groups",
+      "a temporary program with an outside kitchen",
+      "terse youth meals",
+      "the boxed-lunch business",
+      "weekday volume we never had before",
+      "the partnership that filled the dead hours",
+      "food bought for a one-season group",
+      "the daytime guests who brought their own schedules"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Arcade Games & Redemption Prizes",
+   "aliases": [
+    "arcade costs",
+    "redemption prizes",
+    "prize cost",
+    "game room spend",
+    "arcade inventory"
+   ],
+   "narrative": [
+    "Arcade costs",
+    "Prize cost",
+    "Game room spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Prizeland Novelty Wholesale",
+     "base": 11000,
+     "memo": "Redemption counter prize restock"
+    },
+    {
+     "vendor": "CoinWorks Game Service",
+     "base": 7500,
+     "memo": "Game repair and board swaps"
+    },
+    {
+     "vendor": "Ticketline Supply",
+     "base": 2600,
+     "memo": "Ticket rolls and card stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "claw",
+     "vendor": "Prizeland Novelty Wholesale",
+     "memos": [
+      "Plush mascot licensing buy - Dino Pals collection",
+      "Dino Pals plush bulk order - all arcades"
+     ],
+     "cross_memo": "Dino Pals promo display fixtures",
+     "plain": [
+      "the Dino Pals plush buy",
+      "the Dino Pals collection order",
+      "the Dino Pals bulk order"
+     ],
+     "oblique": [
+      "stuffed toys tied to a hit children's film",
+      "the licensed characters the kids kept asking for",
+      "a movie tie-in that cleared the shelves",
+      "stocking up ahead of a release weekend",
+      "the character merchandise purchase",
+      "a trend-driven restock",
+      "what the marketing manager insisted on carrying",
+      "soft toys in big quantity",
+      "a single large inventory commitment",
+      "the order that filled the back storeroom",
+      "a fad that pulled forward our buying",
+      "the giveaway items parents noticed first",
+      "a licensing-linked stocking decision",
+      "toys for the top prize shelf",
+      "the seasonal hero product",
+      "one blockbuster purchase order"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "vrpod",
+     "vendor": "Nexus Immersive Systems",
+     "memos": [
+      "VR pod installation - Skyline Family Fun Center",
+      "Immersive pod hardware and setup - Skyline"
+     ],
+     "cross_memo": "VR pod installation - electrical upgrade Skyline",
+     "plain": [
+      "the VR pod installation",
+      "the Skyline VR pods",
+      "the immersive pod hardware"
+     ],
+     "oblique": [
+      "a headset-based attraction at our flagship",
+      "the high-tech newcomer on the game floor",
+      "something teens lined up for on opening night",
+      "an experiment in virtual experiences",
+      "a new attraction from a startup supplier",
+      "what the regional manager pitched at the retreat",
+      "the shiny addition near the entrance",
+      "a bet on older customers",
+      "new equipment that needed a technician on site",
+      "terse game floor refresh",
+      "a premium-priced pay-per-play offering",
+      "the first of its kind for our company",
+      "hardware that arrived on three pallets",
+      "the attraction replacing two retired cabinets",
+      "a showpiece for the grand reopening",
+      "a technology pilot"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Party & Group Event Expenses",
+   "aliases": [
+    "party costs",
+    "birthday party expense",
+    "group event spend",
+    "party packages",
+    "event costs"
+   ],
+   "narrative": [
+    "Party costs",
+    "Birthday party expense",
+    "Group event spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Confetti Party Supply Co",
+     "base": 5200,
+     "memo": "Party decorations, plates and favors"
+    },
+    {
+     "vendor": "Sweet Tooth Cake Studio",
+     "base": 4100,
+     "memo": "Birthday cakes and cupcakes"
+    },
+    {
+     "vendor": "Funtime Entertainers Guild",
+     "base": 3600,
+     "memo": "Party host and mascot staffing"
+    }
+   ],
+   "events": [
+    {
+     "key": "corpgala",
+     "vendor": "Funtime Entertainers Guild",
+     "memos": [
+      "Corporate gala talent - Bayfront Lanes entertainers",
+      "Gala emcee and performers - Bayfront"
+     ],
+     "cross_memo": "Corporate gala talent - sound equipment rental Bayfront",
+     "plain": [
+      "the corporate gala talent",
+      "the Bayfront gala performers",
+      "the gala emcee and performers"
+     ],
+     "oblique": [
+      "a company-wide celebration for a local employer",
+      "the evening a big client booked the whole building",
+      "paid performers for an adults-only night",
+      "a sales team reward hosted by us",
+      "entertainment beyond our usual hosts",
+      "an after-hours booking by a bank",
+      "what the events coordinator arranged for the buyout",
+      "the largest private rental of the quarter",
+      "a high-touch evening with live acts",
+      "terse buyout costs",
+      "the one night we closed to the public",
+      "staffing for a formal-dress crowd",
+      "an outside company's thank-you party",
+      "specialist hosts for an upscale booking",
+      "the single booking that stretched our team",
+      "an executive-level affair"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "fundraiser",
+     "vendor": "Lakeside Rental & Tents",
+     "memos": [
+      "Charity fundraiser tent and tables - Meadowbrook Bowl",
+      "Fundraiser rental package - Meadowbrook"
+     ],
+     "cross_memo": "Charity fundraiser tent - parking lot permits Meadowbrook",
+     "plain": [
+      "the charity fundraiser tent",
+      "the Meadowbrook fundraiser rentals",
+      "the fundraiser rental package"
+     ],
+     "oblique": [
+      "a benefit event for the local school",
+      "the community night that spilled onto the lot",
+      "temporary structures set up outdoors",
+      "what the mayor's office asked us to host",
+      "a giving event with an overflow crowd",
+      "extra seating for a crowd the building couldn't hold",
+      "an outdoor extension of the venue",
+      "a good-will evening we subsidized",
+      "space for silent auction tables",
+      "an event with canopies in the rain forecast",
+      "terse outdoor setup",
+      "rentals hauled in by truck on Friday",
+      "a nonprofit partnership",
+      "the evening we sponsored at cost",
+      "one-off furnishings for an outside crowd",
+      "a neighborhood tradition we revived"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Liquor & Bar Licensing and Compliance",
+   "aliases": [
+    "liquor compliance",
+    "bar licensing",
+    "alcohol permits",
+    "license fees",
+    "bar compliance costs"
+   ],
+   "narrative": [
+    "Liquor compliance",
+    "Bar licensing",
+    "Alcohol permits"
+   ],
+   "recurring": [
+    {
+     "vendor": "State Beverage Control Board",
+     "base": 2400,
+     "memo": "Monthly license assessment fees"
+    },
+    {
+     "vendor": "SafeServe Training Institute",
+     "base": 1200,
+     "memo": "Responsible server training"
+    },
+    {
+     "vendor": "Barrelhouse Audit Group",
+     "base": 1800,
+     "memo": "Quarterly inventory reconciliation"
+    }
+   ],
+   "events": [
+    {
+     "key": "cityfine",
+     "vendor": "State Beverage Control Board",
+     "memos": [
+      "Underage sale citation settlement - Crestview Lanes",
+      "Citation penalty and hearing fee - Crestview"
+     ],
+     "cross_memo": "Underage sale citation - legal counsel Crestview",
+     "plain": [
+      "the underage sale citation",
+      "the Crestview citation settlement",
+      "the citation penalty"
+     ],
+     "oblique": [
+      "a regulator's finding after a sting operation",
+      "what happened when an inspector sent in a young decoy",
+      "a penalty for a checking lapse at the bar",
+      "the blemish on our record at one site",
+      "a settlement that avoided a suspension",
+      "money paid to keep the doors open",
+      "the result of a front-line mistake",
+      "a hearing at the state capital",
+      "terse enforcement outcome",
+      "a compliance failure nobody wants to repeat",
+      "what the district manager called a wake-up call",
+      "a government-imposed charge",
+      "the consequence of one weekend shift",
+      "a fine that triggered retraining",
+      "the incident the board asked about",
+      "a one-time sanction"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "expansionlic",
+     "vendor": "Meridian Licensing Consultants",
+     "memos": [
+      "Full liquor license application - Harbor Point new bar",
+      "Application prep and filing - Harbor Point"
+     ],
+     "cross_memo": "Full liquor license application - architect floor plan Harbor Point",
+     "plain": [
+      "the full liquor license application",
+      "the Harbor Point license application",
+      "the license application filing"
+     ],
+     "oblique": [
+      "getting permission to pour at the new location",
+      "paperwork for a bar we hadn't had before",
+      "outside advisors who handled the government forms",
+      "what had to happen before the grand opening",
+      "a hurdle for the expansion project",
+      "the approval chase for the waterfront site",
+      "an expensive wait for a signature",
+      "costs of adding a drinks program",
+      "consultants who knew the local board",
+      "the front-end cost of a new revenue line",
+      "terse start-up paperwork",
+      "a requirement spelled out in the lease",
+      "hearings attended by our lawyer",
+      "something the owner pushed to finish early",
+      "a one-time entry fee for a new market",
+      "the step that unlocked weekend revenue"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Utilities - Electric, Gas & Water",
+   "aliases": [
+    "utilities",
+    "power and water",
+    "utility bills",
+    "energy costs",
+    "electric and gas"
+   ],
+   "narrative": [
+    "Utilities",
+    "Energy costs",
+    "Power and water"
+   ],
+   "recurring": [
+    {
+     "vendor": "Regional Power & Light",
+     "base": 28000,
+     "memo": "Electric service - all centers"
+    },
+    {
+     "vendor": "Citywide Gas Co",
+     "base": 9000,
+     "memo": "Natural gas - kitchens and heating"
+    },
+    {
+     "vendor": "Aquaflow Municipal Water",
+     "base": 3800,
+     "memo": "Water and sewer service"
+    }
+   ],
+   "events": [
+    {
+     "key": "demandcharge",
+     "vendor": "Regional Power & Light",
+     "memos": [
+      "Peak demand charge adjustment - Northpoint Lanes",
+      "Demand ratchet billing - Northpoint"
+     ],
+     "cross_memo": "Peak demand charge - energy audit Northpoint",
+     "plain": [
+      "the peak demand charge",
+      "the Northpoint demand ratchet",
+      "the demand charge adjustment"
+     ],
+     "oblique": [
+      "a billing rule that punished a single hot afternoon",
+      "what happened when every machine ran at once",
+      "a tariff quirk at one site",
+      "the surprise line on the provider's statement",
+      "a retroactive recalculation",
+      "the result of a heat wave and a full house",
+      "a pricing mechanism we hadn't modeled",
+      "a one-time true-up from the supplier",
+      "terse tariff effect",
+      "the cost of a record-setting hour",
+      "a clause buried in the service agreement",
+      "what the facilities manager asked to dispute",
+      "charges tied to our highest moment",
+      "the aftermath of a tournament weekend",
+      "an unexpected rate-structure hit",
+      "a month when everything ran flat out"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "pipeburst",
+     "vendor": "Drydock Restoration Services",
+     "memos": [
+      "Frozen pipe burst cleanup - Millbrook Lanes",
+      "Water extraction and dehumidifying - Millbrook"
+     ],
+     "cross_memo": "Frozen pipe burst - carpet replacement Millbrook",
+     "plain": [
+      "the frozen pipe burst cleanup",
+      "the Millbrook pipe burst",
+      "the water extraction work"
+     ],
+     "oblique": [
+      "an overnight winter emergency",
+      "flooding that reached the concourse",
+      "what the opening manager found on arriving",
+      "crews called in at midnight",
+      "a cold snap that caught us unprepared",
+      "emergency drying equipment humming for days",
+      "damage no insurance check had yet covered",
+      "a closure that cost us a league night",
+      "the incident that made local news",
+      "terse disaster response",
+      "outside contractors working around the clock",
+      "an unplanned repair that stopped the schedule",
+      "the day we mopped before open",
+      "a failure in the building's hidden plumbing",
+      "a freak occurrence at our oldest site",
+      "one bad night in January"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Marketing & Promotions",
+   "aliases": [
+    "marketing",
+    "advertising spend",
+    "promo costs",
+    "league promotions",
+    "campaign spend"
+   ],
+   "narrative": [
+    "Marketing",
+    "Advertising spend",
+    "Promo costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "BrightPath Digital Ads",
+     "base": 8500,
+     "memo": "Search and social ad spend"
+    },
+    {
+     "vendor": "Coupon Cove Mailers",
+     "base": 3200,
+     "memo": "Direct mail and coupon books"
+    },
+    {
+     "vendor": "Local Radio Network",
+     "base": 4500,
+     "memo": "Radio spots - weekday drive time"
+    }
+   ],
+   "events": [
+    {
+     "key": "billboard",
+     "vendor": "Local Radio Network",
+     "memos": [
+      "Highway billboard blitz - Cosmic Bowl glow nights",
+      "Billboard flight co-op - Cosmic Bowl promotion"
+     ],
+     "cross_memo": "Billboard blitz - Cosmic Bowl poster printing",
+     "plain": [
+      "the highway billboard blitz",
+      "the Cosmic Bowl billboard flight",
+      "the billboard blitz"
+     ],
+     "oblique": [
+      "large roadside signs along the commuter route",
+      "a push for the late-night black-light offering",
+      "a campaign aimed at young adults",
+      "what the agency recommended for the autumn lull",
+      "advertising that reached drivers on the interstate",
+      "a one-quarter outdoor advertising effort",
+      "terse outdoor ads",
+      "spend meant to move Friday traffic",
+      "a visibility play against a competitor",
+      "the creative everyone saw on the way to work",
+      "something the regional director championed",
+      "space rented along a busy stretch",
+      "an awareness campaign for a rebranded night",
+      "the burst of spending before the holidays",
+      "a campaign larger than any we ran last year",
+      "one expensive stunt"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "influencer",
+     "vendor": "Spark Social Collective",
+     "memos": [
+      "Influencer partnership - Pinwheel Park summer launch",
+      "Influencer video series - Pinwheel Park"
+     ],
+     "cross_memo": "Influencer partnership - giveaway wristbands Pinwheel Park",
+     "plain": [
+      "the influencer partnership",
+      "the Pinwheel Park influencer series",
+      "the influencer video series"
+     ],
+     "oblique": [
+      "content creators visiting the new park",
+      "short films posted to followers",
+      "paid personalities with large online audiences",
+      "what the younger staff said we needed",
+      "a launch push for the new outdoor attraction",
+      "sponsored posts across several platforms",
+      "an agency we tried for the first time",
+      "a social-first experiment",
+      "terse creator deals",
+      "the campaign that went viral for a weekend",
+      "free passes handed to influencers",
+      "a bet on teenage attention",
+      "spend tracked by clicks instead of coupons",
+      "the summer kickoff buzz",
+      "videos filmed on the grand opening",
+      "a modern alternative to radio"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

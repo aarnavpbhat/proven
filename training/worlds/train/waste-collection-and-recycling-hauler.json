@@ -1,0 +1,703 @@
+{
+ "slug": "waste-collection-and-recycling-hauler",
+ "industry": "waste collection and recycling hauler",
+ "entities": [
+  "Cinderline Waste Services LLC",
+  "Ridgeback Recycling Holdings",
+  "Tallow Creek Hauling Co",
+  "Brightpile Materials Recovery Inc",
+  "Pelham Transfer Group"
+ ],
+ "accounts": [
+  {
+   "name": "Fleet Maintenance",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "truck upkeep",
+    "vehicle repairs",
+    "fleet maintenance spend"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Truck upkeep",
+    "Vehicle repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Diesel Parts",
+     "base": 9400,
+     "memo": "Parts and consumables, collection fleet"
+    },
+    {
+     "vendor": "Mariner Tire & Wheel",
+     "base": 3200,
+     "memo": "Tire service, rear-loader units"
+    },
+    {
+     "vendor": "Overland Lube Systems",
+     "base": 1800,
+     "memo": "Oil and filter service, transfer tractors"
+    }
+   ],
+   "events": [
+    {
+     "key": "packer_rebuild",
+     "vendor": "Keystone Diesel Parts",
+     "memos": [
+      "Hydraulic packer rebuild — Unit 14 ram cylinder",
+      "Hydraulic packer rebuild — Unit 22 pump assembly"
+     ],
+     "cross_memo": "Hydraulic packer rebuild — rental loader",
+     "plain": [
+      "the hydraulic packer rebuild",
+      "the packer rebuild work",
+      "the rebuilt packer units"
+     ],
+     "oblique": [
+      "getting the compaction trucks lifting again",
+      "the costly ram work on two rear loaders",
+      "restoring squeeze power to the garbage bodies",
+      "the bench overhaul of tipping gear",
+      "fixing the crushing mechanism that stalled",
+      "bringing the compactor arms back online",
+      "the shop job on loading cylinders",
+      "replacing worn lifting pistons",
+      "the pressure system rebuild that crews demanded",
+      "reviving the stalled loader bodies at the yard",
+      "the mechanical revival of two trucks",
+      "the lift cylinder replacement for the north routes",
+      "reconditioning the squeeze pumps",
+      "the body refurbishment everyone pushed for",
+      "hydraulics brought back after the breakdown",
+      "the emergency repair on the tipping rams"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "cng_conversion",
+     "vendor": "Verdant Fuel Retrofit LLC",
+     "memos": [
+      "Natural gas engine conversion — Truck 31 fuel system",
+      "Natural gas engine conversion — Truck 33 fuel system"
+     ],
+     "cross_memo": "Natural gas engine conversion — rental tractor",
+     "plain": [
+      "the natural gas engine conversion",
+      "the gas conversion job",
+      "the converted engines"
+     ],
+     "oblique": [
+      "switching two haulers off diesel",
+      "the clean-burning retrofit the council wanted",
+      "moving the big rigs to a cleaner fuel",
+      "the fuel-system swap for the yard trucks",
+      "the emissions compliance upgrade on heavy units",
+      "cutting exhaust on the north fleet",
+      "outfitting the packers for a greener tank",
+      "the tank install for the new fuel mandate",
+      "the upgrade that answered the air permit",
+      "adapting engines to run on the alternative supply",
+      "the powertrain changeover for two routes",
+      "retooling intake and tanks in the bay",
+      "the cleaner burning kit installed in spring",
+      "equipping the haulers for the regulator's rule",
+      "the fuel line rework on two tractors",
+      "the green fleet retrofit from the vendor"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Landfill Tipping Fees",
+   "aliases": [
+    "tipping fees",
+    "disposal fees",
+    "landfill charges",
+    "dump fees",
+    "tipping costs"
+   ],
+   "narrative": [
+    "Tipping fees",
+    "Disposal fees",
+    "Landfill charges"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greywater Regional Landfill",
+     "base": 22000,
+     "memo": "Tipping fees, municipal residuals, gate tons"
+    },
+    {
+     "vendor": "Sable Hill Disposal Authority",
+     "base": 6800,
+     "memo": "Tipping fees, commercial roll-off loads"
+    }
+   ],
+   "events": [
+    {
+     "key": "cell_closure",
+     "vendor": "Greywater Regional Landfill",
+     "memos": [
+      "Special surcharge — Cell 4 closure assessment",
+      "Special surcharge — Cell 4 cap material"
+     ],
+     "cross_memo": "Special surcharge — hauler reimbursement",
+     "plain": [
+      "the Cell 4 surcharge",
+      "the closure surcharge",
+      "the Cell 4 closure assessment"
+     ],
+     "oblique": [
+      "the charge for sealing an old dump bay",
+      "the extra levy the operator imposed on this quarter",
+      "capping a full section of the site",
+      "the regulator-mandated work on the spent area",
+      "the one-time fee for shutting down a bay",
+      "the operator's assessment for end-of-life works",
+      "the cover placed on a filled pit",
+      "the surcharge for putting a lid on a finished zone",
+      "the closeout cost for the older sector",
+      "the infrastructure bill for the retired portion",
+      "paying for the cap on the exhausted quarter",
+      "the levy tied to finishing a section",
+      "the closeout billing for the old pit",
+      "the pass-through for ending use of a bay",
+      "the fee the operator raised for sealing work",
+      "the capital recovery charge on the spent cell"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "scale_recalibration",
+     "vendor": "Ironbridge Weighing Systems",
+     "memos": [
+      "Scale calibration service — inbound certification",
+      "Scale calibration service — outbound weighbridge"
+     ],
+     "cross_memo": "Scale calibration service — yard inspection",
+     "plain": [
+      "the scale calibration service",
+      "the weighbridge calibration",
+      "the inbound scale certification"
+     ],
+     "oblique": [
+      "the inspector's visit to verify the gate weights",
+      "re-checking the tonnage readings after a complaint",
+      "the metrology visit for the inbound platform",
+      "bringing the weigh station up to legal accuracy",
+      "the technician out to certify load readings",
+      "the fee for proving the tonnage counts were right",
+      "the yard reweigh the auditors required",
+      "trimming a weigh error the customers disputed",
+      "the compliance check on the weigh gear",
+      "the outside tech who tuned the platform",
+      "resetting the platform after a faulty reading",
+      "testing the measure at the entrance",
+      "the trip to validate outbound loads",
+      "the standards visit for the gate",
+      "making the weights defensible to buyers",
+      "the annual proof of the platform accuracy"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Container Repair and Replacement",
+   "aliases": [
+    "dumpster repair",
+    "container costs",
+    "bin repair",
+    "container replacement",
+    "cart maintenance"
+   ],
+   "narrative": [
+    "Dumpster repair",
+    "Container costs",
+    "Bin repair"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brackenridge Steel Works",
+     "base": 4100,
+     "memo": "Container body repair, front-load dumpsters"
+    },
+    {
+     "vendor": "Lantern Cart & Lid",
+     "base": 2300,
+     "memo": "Cart lids and wheels, residential carts"
+    },
+    {
+     "vendor": "Fenwick Paint & Decal",
+     "base": 900,
+     "memo": "Container refinishing, route numbers"
+    }
+   ],
+   "events": [
+    {
+     "key": "bin_recall",
+     "vendor": "Lantern Cart & Lid",
+     "memos": [
+      "Recall replacement — residential cart lot 88",
+      "Recall replacement — residential cart lot 91"
+     ],
+     "cross_memo": "Recall replacement — commercial lids",
+     "plain": [
+      "the recall replacement",
+      "the cart recall",
+      "the lot 88 replacement"
+     ],
+     "oblique": [
+      "swapping out a defective batch the maker admitted to",
+      "the warranty redo the supplier agreed to cover",
+      "pulling faulty carts off the routes",
+      "making good the hinge defect across a run",
+      "the new lids for a flawed production run",
+      "the mandated exchange of the bad batch",
+      "the supplier-funded reissue of the carts",
+      "replacing carts that cracked in cold weather",
+      "the forced swap after the defect notice",
+      "the customer-facing bin changeout",
+      "reissuing a whole run that failed",
+      "the goods returned and reshipped",
+      "the units recalled from households",
+      "rebuying the bad lot at no profit",
+      "the wheel and lid exchange after the notice",
+      "fixing the faulty production lot"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "steel_dumpster_order",
+     "vendor": "Corvan Industrial Containers",
+     "memos": [
+      "Capital container order — 40 yard front-load boxes",
+      "Capital container order — 30 yard roll-off boxes"
+     ],
+     "cross_memo": "Capital container order — drop-off delivery",
+     "plain": [
+      "the container order",
+      "the front-load box order",
+      "the 40 yard boxes"
+     ],
+     "oblique": [
+      "fleshing out the commercial box inventory",
+      "the bulk purchase for the new contract",
+      "buying the large boxes for the growth account",
+      "stocking the yard for the expanded route",
+      "the replacement inventory for worn steel",
+      "the outlay for boxes that were already promised",
+      "the purchase to cover the new client",
+      "filling the gap in the box pool",
+      "the big spend on roll-offs for the district",
+      "adding capacity for the commercial customer",
+      "the procurement the sales team forced",
+      "the new boxes shipped to the north depot",
+      "replenishing worn boxes at the yard",
+      "the scale-up buy for the contract win",
+      "the cost of sourcing extra bins",
+      "the order for capacity the business needed"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Diesel and Fuel",
+   "aliases": [
+    "fuel",
+    "diesel costs",
+    "fuel spend",
+    "gas and diesel",
+    "fuel expense"
+   ],
+   "narrative": [
+    "Fuel spend",
+    "Diesel costs",
+    "Gas and diesel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harrow Fuel Cooperative",
+     "base": 17500,
+     "memo": "Bulk diesel, fleet fuel cards"
+    },
+    {
+     "vendor": "Ostrava Petro Supply",
+     "base": 4200,
+     "memo": "Off-road diesel, equipment fueling"
+    }
+   ],
+   "events": [
+    {
+     "key": "fuel_tax_refund",
+     "vendor": "Harrow Fuel Cooperative",
+     "memos": [
+      "Fuel credit — excise tax reclaim, Q2",
+      "Fuel credit — excise tax reclaim, Q3"
+     ],
+     "cross_memo": "Fuel credit — off-road refund",
+     "plain": [
+      "the excise tax reclaim",
+      "the fuel tax credit",
+      "the Q2 reclaim"
+     ],
+     "oblique": [
+      "the government rebate on road taxes paid",
+      "money returned for taxes on fuel burned off public roads",
+      "a catch-up credit from the revenue office",
+      "the one-time reimbursement from the treasury",
+      "the amount recovered on last year's levies",
+      "an overpayment handed back by the authority",
+      "the claim processed for prior duties",
+      "the credit issued after the filing review",
+      "cash returned for duties we had overpaid",
+      "the refund of the tax portion on the bulk load",
+      "the back-dated allowance the agency approved",
+      "the retroactive relief on our haulage fuel",
+      "a payout from the duty recovery program",
+      "the recovered levy from the filed return",
+      "money coming back from the fuel authority",
+      "the settled claim from the tax office"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "tank_leak",
+     "vendor": "Kestrel Environmental Remediation",
+     "memos": [
+      "Remediation invoice — yard tank leak cleanup",
+      "Remediation invoice — soil sampling, north yard"
+     ],
+     "cross_memo": "Remediation invoice — secondary containment",
+     "plain": [
+      "the tank leak cleanup",
+      "the yard remediation invoice",
+      "the soil sampling charge"
+     ],
+     "oblique": [
+      "the crew that cleaned up the spill at the depot",
+      "the contamination work after the underground failure",
+      "digging out the ground where product seeped",
+      "the hazmat response on the storage site",
+      "the testing the agency required after the incident",
+      "the cleanup contractor's emergency call-out",
+      "removing impacted earth near the pumps",
+      "the environmental bill from the breach",
+      "the response team we had to bring in overnight",
+      "cleaning the lot where the fuel escaped",
+      "the consultant's bill for measuring the damage",
+      "the site restoration after the failure",
+      "the emergency crew at the storage area",
+      "paying for the mess left by the failed vessel",
+      "the regulator-driven groundwork on the lot",
+      "the unplanned environmental remedy"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Route Software and Telematics",
+   "aliases": [
+    "software",
+    "telematics",
+    "routing platform",
+    "route tech",
+    "gps and software"
+   ],
+   "narrative": [
+    "Software",
+    "Telematics",
+    "Routing platform"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lodestar Routing Systems",
+     "base": 5600,
+     "memo": "Route optimization licenses, dispatch seats"
+    },
+    {
+     "vendor": "Beacon Fleet Telemetry",
+     "base": 3100,
+     "memo": "GPS hardware subscription, truck units"
+    }
+   ],
+   "events": [
+    {
+     "key": "dispatch_migration",
+     "vendor": "Lodestar Routing Systems",
+     "memos": [
+      "Implementation fee — dispatch platform migration",
+      "Implementation fee — dispatch data load"
+     ],
+     "cross_memo": "Implementation fee — training seats",
+     "plain": [
+      "the dispatch migration",
+      "the platform migration fee",
+      "the dispatch data load"
+     ],
+     "oblique": [
+      "moving the scheduling tool onto a new system",
+      "the consultants who carried over the old records",
+      "the switchover that dispatch asked for",
+      "the one-time setup for the replacement scheduler",
+      "the labor to port the crew history across",
+      "the professional services to shift our planning",
+      "the costly cutover of the planning database",
+      "the change to a modern booking engine",
+      "the onboarding push to retire the legacy board",
+      "the vendor's project team for the rollout",
+      "the transfer of routing history to the cloud",
+      "the setup charge for the new console",
+      "the data move that closed out the old contract",
+      "the rewrite of the pickup calendars",
+      "the project for replacing the paper board",
+      "the cutover labor on the new planner"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "sensor_retrofit",
+     "vendor": "Quillon Sensor Works",
+     "memos": [
+      "Hardware retrofit — bin weight sensors, pilot routes",
+      "Hardware retrofit — on-board cameras, rear loaders"
+     ],
+     "cross_memo": "Hardware retrofit — mounting brackets",
+     "plain": [
+      "the sensor retrofit",
+      "the camera hardware retrofit",
+      "the weight sensor install"
+     ],
+     "oblique": [
+      "fitting the trucks with eyes for the crew",
+      "the pilot gear the vendor installed on the routes",
+      "monitoring devices bolted onto the rear packers",
+      "the equipment that tracks the lift counts",
+      "the new recording units for driver safety",
+      "the upgraded instrumentation on the cab",
+      "the hardware the insurer demanded",
+      "outfitting the packers with watch equipment",
+      "the monitoring rollout from the field office",
+      "the gear that reads how much each bin held",
+      "the installed kit for the pilot zone",
+      "fitting the first trial units on the trucks",
+      "the instruments added to the lift arms",
+      "the add-on gear for the safety program",
+      "the kit the drivers were asked to accept",
+      "the field fit-out of the monitoring units"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Recycling Commodity Processing",
+   "aliases": [
+    "processing",
+    "sorting costs",
+    "mrf costs",
+    "recycling processing",
+    "commodity handling"
+   ],
+   "narrative": [
+    "Processing costs",
+    "Sorting costs",
+    "Recycling processing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Halcyon Materials Processing",
+     "base": 12800,
+     "memo": "MRF sort labor, single-stream line"
+    },
+    {
+     "vendor": "Tidewell Baler & Conveyor",
+     "base": 2700,
+     "memo": "Equipment service, balers and conveyors"
+    }
+   ],
+   "events": [
+    {
+     "key": "line_rebuild",
+     "vendor": "Halcyon Materials Processing",
+     "memos": [
+      "Equipment overhaul — sort line conveyor rebuild",
+      "Equipment overhaul — optical sorter recalibration"
+     ],
+     "cross_memo": "Equipment overhaul — sort line rental",
+     "plain": [
+      "the sort line overhaul",
+      "the conveyor rebuild",
+      "the optical sorter recalibration"
+     ],
+     "oblique": [
+      "the shutdown work on the material line",
+      "getting the sorting belt running clean again",
+      "the machinery rehab after the failures",
+      "tuning the eye that separates plastics",
+      "the work that cut sorting jams and downtime",
+      "rebuilding the moving parts on the floor",
+      "the specialist crew on the separation equipment",
+      "the mechanical refit the plant demanded",
+      "repairs that restored line throughput",
+      "the belt work the processor billed us for",
+      "the recalibration that halted rejects",
+      "bringing the separation gear back up to rate",
+      "the shop labor on the main drive",
+      "the refurbishment of the plant's core kit",
+      "fixing the sorter that kept rejecting bottles",
+      "the repair program on the processing floor"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "contamination_penalty",
+     "vendor": "Eastmark Commodity Buyers",
+     "memos": [
+      "Contamination charge — outbound bale rejections",
+      "Contamination charge — load rejection, fiber grade"
+     ],
+     "cross_memo": "Contamination charge — freight redirect",
+     "plain": [
+      "the contamination charge",
+      "the bale rejection charge",
+      "the fiber grade penalty"
+     ],
+     "oblique": [
+      "the deduction the buyer took for dirty loads",
+      "the price cut on material that came back",
+      "the buyer's fee for poor quality product",
+      "the amount the market docked for impurities",
+      "the clawback on the shipped commodities",
+      "the penalty for the bales that arrived spoiled",
+      "the reduction in what the purchaser paid",
+      "the invoice netted for below-spec material",
+      "the adjustment after the grade audit",
+      "the offset taken on returned tonnage",
+      "the dock the buyer applied after inspection",
+      "the discount triggered by the purity review",
+      "the carry-back on quality shortfalls",
+      "the price deduction from the mill",
+      "the settlement reduction after quality disputes",
+      "the chargeback for failing the spec"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Claims",
+   "aliases": [
+    "claims",
+    "insurance",
+    "liability costs",
+    "auto claims",
+    "insurance premium"
+   ],
+   "narrative": [
+    "Claims",
+    "Insurance",
+    "Liability costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stonebridge Mutual Casualty",
+     "base": 14200,
+     "memo": "Commercial auto liability premium, monthly installment"
+    },
+    {
+     "vendor": "Halden Workers Comp Pool",
+     "base": 6500,
+     "memo": "Workers compensation installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "bodily_injury_claim",
+     "vendor": "Stonebridge Mutual Casualty",
+     "memos": [
+      "Claim deductible — bodily injury, route 9 incident",
+      "Claim deductible — bodily injury, medical reimbursement"
+     ],
+     "cross_memo": "Claim deductible — third party counsel",
+     "plain": [
+      "the bodily injury deductible",
+      "the route 9 claim",
+      "the injury deductible"
+     ],
+     "oblique": [
+      "the payout we owed after a driver's accident",
+      "the uninsured share of a pedestrian settlement",
+      "our retention on the crash that injured a passerby",
+      "the amount we covered before the carrier paid",
+      "the self-insured piece of the incident",
+      "the bill for the collision on the depot road",
+      "the cost of resolving a claim by the curb",
+      "the portion the policy left with us after the wreck",
+      "the excess owed on the crew member's harm",
+      "the settlement share the policy would not pay",
+      "the outlay on the morning incident",
+      "the first-dollar cost of the accident",
+      "our share of the damages after the crash",
+      "the retained loss on the claim filed in spring",
+      "the amount paid out of pocket on the hit",
+      "the self-retained layer of the claim"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "cyber_policy_endorsement",
+     "vendor": "Corrigan Specialty Underwriters",
+     "memos": [
+      "Policy endorsement — cyber rider, dispatch systems",
+      "Policy endorsement — cyber rider, billing portal"
+     ],
+     "cross_memo": "Policy endorsement — cyber rider, scale data",
+     "plain": [
+      "the cyber rider",
+      "the cyber endorsement",
+      "the dispatch cyber rider"
+     ],
+     "oblique": [
+      "the extra cover the broker sold us for hacking",
+      "the add-on protection for the data systems",
+      "the new policy language the lender demanded",
+      "the endorsement for network breach exposure",
+      "the rider the underwriter insisted on",
+      "the additional premium for the digital risk",
+      "the coverage upgrade after the phishing scare",
+      "the protection extension the bank required",
+      "the premium that covers computer intrusions",
+      "the amendment that adds online exposure",
+      "the policy change tied to the portal launch",
+      "the endorsement the reinsurer wanted",
+      "the broadened terms for electronic records",
+      "the extra layer for the information systems",
+      "the rider on the network infrastructure",
+      "the amendment that followed the security review"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-haiku-5-5"
+}

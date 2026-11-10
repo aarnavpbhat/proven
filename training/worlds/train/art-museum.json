@@ -1,0 +1,708 @@
+{
+ "slug": "art-museum",
+ "industry": "art museum",
+ "entities": [
+  "Halloran Museum of Art",
+  "Brightwater Contemporary",
+  "Ashcombe Gallery Trust",
+  "Pellam Foundation for the Arts",
+  "Verdant Hill Museum"
+ ],
+ "accounts": [
+  {
+   "name": "Exhibition Fabrication",
+   "aliases": [
+    "exhibition fabrication",
+    "gallery builds",
+    "display construction",
+    "fabrication spend",
+    "exhibit build costs"
+   ],
+   "narrative": [
+    "Exhibition fabrication",
+    "Gallery builds",
+    "Display construction"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northlight Fabrication Works",
+     "base": 18500,
+     "memo": "Monthly millwork and panel production"
+    },
+    {
+     "vendor": "Corbel & Finch Display",
+     "base": 9200,
+     "memo": "Standard vitrine upkeep and parts"
+    }
+   ],
+   "events": [
+    {
+     "key": "quarrytour",
+     "vendor": "Northlight Fabrication Works",
+     "memos": [
+      "Quarry Light retrospective — oversized plinths",
+      "Quarry Light retrospective — curved wall system"
+     ],
+     "cross_memo": "Quarry Light retrospective — crate storage",
+     "plain": [
+      "the Quarry Light retrospective",
+      "the Quarry Light build",
+      "the Quarry Light plinths and walls"
+     ],
+     "oblique": [
+      "the big spring show for the sculptor",
+      "the headline exhibition opening in April",
+      "building out the east wing for the touring artist",
+      "what the director asked for the donor preview",
+      "the large-scale installation",
+      "the showpiece for the new season",
+      "the architect-designed gallery layout",
+      "rooms reconfigured for the visiting collection",
+      "construction ahead of the press opening",
+      "the signature show we staged",
+      "the one the board championed",
+      "extra carpentry for the loan works",
+      "a major monographic presentation",
+      "space reworked for heavy bronze pieces",
+      "the flagship attraction",
+      "the retrospective staging"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "emberglass",
+     "vendor": "Tessaly Glassworks Studio",
+     "memos": [
+      "Ember Glass commission — blown vessel cases",
+      "Ember Glass commission — annealing rack"
+     ],
+     "cross_memo": "Ember Glass commission — artist travel crating",
+     "plain": [
+      "the Ember Glass commission",
+      "the Ember Glass cases",
+      "the Ember Glass annealing rack"
+     ],
+     "oblique": [
+      "the custom pieces made by the visiting studio",
+      "enclosures for fragile molten-formed works",
+      "the residency project in the courtyard",
+      "fresh work created on site",
+      "protective housings for delicate vessels",
+      "the guest maker's special order",
+      "hand-shaped objects displayed in new boxes",
+      "something we commissioned from a craftsperson",
+      "the live demonstration program",
+      "units built to hold heated-and-cooled pieces",
+      "the temporary workshop setup",
+      "one-off commissioned artworks",
+      "cabinets designed for transparent sculpture",
+      "the collaboration with the visiting artisan",
+      "an unusual request from curatorial",
+      "the new made-to-order installation"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Art Handling and Transport",
+   "aliases": [
+    "art handling",
+    "art transport",
+    "fine art shipping",
+    "handling costs",
+    "crating and freight"
+   ],
+   "narrative": [
+    "Art handling",
+    "Fine art shipping",
+    "Crating and freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sable Row Fine Art Logistics",
+     "base": 14000,
+     "memo": "Monthly local art movement and courier"
+    },
+    {
+     "vendor": "Lindqvist Crate & Pack",
+     "base": 6800,
+     "memo": "Routine crate builds and repairs"
+    },
+    {
+     "vendor": "Okafor Installation Crew",
+     "base": 8400,
+     "memo": "Weekly installer labor"
+    }
+   ],
+   "events": [
+    {
+     "key": "airlift",
+     "vendor": "Sable Row Fine Art Logistics",
+     "memos": [
+      "Lisbon loan airlift — climate cargo hold",
+      "Lisbon loan airlift — courier escort"
+     ],
+     "cross_memo": "Lisbon loan airlift — insurance rider",
+     "plain": [
+      "the Lisbon loan airlift",
+      "the Lisbon airlift cargo",
+      "the Lisbon loan escort"
+     ],
+     "oblique": [
+      "bringing the paintings over from Portugal",
+      "the overseas shipment of masterworks",
+      "an international lending arrangement",
+      "flying the canvases in by plane",
+      "getting the borrowed pieces across the ocean",
+      "the cross-border delivery for the spring show",
+      "long-haul moves of priceless works",
+      "what we paid to import the exhibit",
+      "the transatlantic leg",
+      "a partner institution's generous lend",
+      "customs-heavy shipment",
+      "moving valuables by air",
+      "a one-time European consignment",
+      "the pieces we borrowed from abroad",
+      "a pricey delivery by jet",
+      "the foreign collection's arrival"
+     ],
+     "low": 26000,
+     "high": 52000
+    },
+    {
+     "key": "vaultmove",
+     "vendor": "Harrowgate Relocation Partners",
+     "memos": [
+      "Annex vault relocation — rack dismantling",
+      "Annex vault relocation — overnight convoy"
+     ],
+     "cross_memo": "Annex vault relocation — temporary shelving rental",
+     "plain": [
+      "the Annex vault relocation",
+      "the Annex vault convoy",
+      "the Annex vault rack dismantling"
+     ],
+     "oblique": [
+      "emptying the old basement storage",
+      "shifting thousands of works to the new facility",
+      "the permanent collection's big move",
+      "closing out the lease on the warehouse",
+      "an overnight procession of trucks",
+      "transferring holdings to the new building",
+      "clearing out the former repository",
+      "the move our registrar scheduled for months",
+      "relocating the reserve holdings",
+      "a massive logistics exercise after the sale of the property",
+      "putting everything somewhere safer",
+      "getting stored pieces out before the deadline",
+      "the storage consolidation",
+      "moving the unseen part of the collection",
+      "a once-a-decade transfer",
+      "the shift to purpose-built storage"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Conservation and Restoration",
+   "aliases": [
+    "conservation",
+    "restoration",
+    "conservation work",
+    "object treatment",
+    "restoration spend"
+   ],
+   "narrative": [
+    "Conservation",
+    "Restoration spend",
+    "Object treatment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Wren & Aldous Conservation Studio",
+     "base": 16500,
+     "memo": "Monthly paintings conservator retainer"
+    },
+    {
+     "vendor": "Pellucid Paper Lab",
+     "base": 5200,
+     "memo": "Works on paper stabilization"
+    }
+   ],
+   "events": [
+    {
+     "key": "triptych",
+     "vendor": "Wren & Aldous Conservation Studio",
+     "memos": [
+      "Saint Aurelian triptych — panel consolidation",
+      "Saint Aurelian triptych — gilding repair"
+     ],
+     "cross_memo": "Saint Aurelian triptych — scaffold hire",
+     "plain": [
+      "the Saint Aurelian triptych",
+      "the Saint Aurelian panel work",
+      "the Saint Aurelian gilding repair"
+     ],
+     "oblique": [
+      "the medieval altarpiece",
+      "the devotional work with the flaking gold",
+      "a fragile piece from the cathedral loan",
+      "what the registrar flagged as urgent",
+      "the three-part wooden masterpiece",
+      "a priority rescue from the vault",
+      "an old religious artwork in rough shape",
+      "the treatment our trustees backed",
+      "the winter emergency project",
+      "the centerpiece of the early collection",
+      "an ancient object with cracked boards",
+      "a delicate five-hundred-year-old painting",
+      "the campaign to save the altar painting",
+      "the big treatment on the east gallery's anchor",
+      "a very old painted shrine",
+      "the stabilization of our oldest holding"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "moldsurvey",
+     "vendor": "Bracken Environmental Sciences",
+     "memos": [
+      "Annex mold remediation — spore testing",
+      "Annex mold remediation — textile quarantine"
+     ],
+     "cross_memo": "Annex mold remediation — air scrubber rental",
+     "plain": [
+      "the Annex mold remediation",
+      "the Annex mold testing",
+      "the Annex mold quarantine"
+     ],
+     "oblique": [
+      "the fungus scare in storage",
+      "a humidity incident that spread to the fabrics",
+      "an outbreak found during a routine walkthrough",
+      "microbial growth on the tapestries",
+      "isolating affected pieces",
+      "the damp-related problem in the lower level",
+      "an unwelcome discovery in the back rooms",
+      "cleaning up after a leak in the cellar",
+      "the biological contamination",
+      "emergency air quality work",
+      "what we found growing on the cloth",
+      "the infestation on the woven collection",
+      "a mildew event",
+      "tests on the suspect crates",
+      "an environmental clean-up we hadn't planned",
+      "the problem with moisture in the reserve"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Collections Insurance",
+   "aliases": [
+    "collections insurance",
+    "fine art insurance",
+    "coverage costs",
+    "insurance premiums",
+    "policy spend"
+   ],
+   "narrative": [
+    "Collections insurance",
+    "Coverage costs",
+    "Policy spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granitewell Specialty Underwriters",
+     "base": 24000,
+     "memo": "Monthly fine art floater premium"
+    },
+    {
+     "vendor": "Ostrander Risk Advisors",
+     "base": 3600,
+     "memo": "Broker service fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "valuation",
+     "vendor": "Granitewell Specialty Underwriters",
+     "memos": [
+      "Permanent collection revaluation — premium true-up",
+      "Permanent collection revaluation — appraisal surcharge"
+     ],
+     "cross_memo": "Permanent collection revaluation — appraiser fees",
+     "plain": [
+      "the permanent collection revaluation",
+      "the collection revaluation true-up",
+      "the revaluation surcharge"
+     ],
+     "oblique": [
+      "the market jump in what our holdings are worth",
+      "an updated assessment of everything on the walls",
+      "higher declared worth following auction results",
+      "a catch-up for underinsured items",
+      "adjusting coverage to current prices",
+      "the markup after the independent assessment",
+      "what the underwriter wanted after the review",
+      "our upgraded estimate of total worth",
+      "an annual reset to reflect inflation",
+      "the board's decision to cover more",
+      "increased limits on the policy",
+      "new numbers handed to the carrier",
+      "the reappraisal exercise",
+      "a bump after a strong year for the art market",
+      "coverage that finally matched the real values",
+      "the broker's recommendation to raise limits"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "hailclaim",
+     "vendor": "Fairbourne Claims Adjusters",
+     "memos": [
+      "Skylight breach claim — adjuster inspection",
+      "Skylight breach claim — deductible payment"
+     ],
+     "cross_memo": "Skylight breach claim — emergency tarping",
+     "plain": [
+      "the Skylight breach claim",
+      "the Skylight claim deductible",
+      "the Skylight adjuster inspection"
+     ],
+     "oblique": [
+      "storm damage to the roof glass",
+      "the loss we filed after the big weather event",
+      "a dispute over what the carrier would pay",
+      "what we owed before reimbursement",
+      "the hailstorm in late spring",
+      "an incident that let rain into the galleries",
+      "our out-of-pocket share of the damage",
+      "the paperwork after glass shattered overhead",
+      "the claim that took weeks to settle",
+      "a costly afternoon of severe weather",
+      "damage to the atrium ceiling",
+      "the uncovered portion of the loss",
+      "an adjuster's visit after the storm",
+      "the water intrusion event",
+      "a one-off casualty claim",
+      "the share we absorbed on the roof incident"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Gallery Climate and Lighting",
+   "aliases": [
+    "climate control",
+    "gallery lighting",
+    "environmental systems",
+    "hvac and lighting",
+    "gallery environment costs"
+   ],
+   "narrative": [
+    "Climate control",
+    "Gallery lighting",
+    "Environmental systems"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stillwater HVAC Services",
+     "base": 11200,
+     "memo": "Monthly humidity and temperature system maintenance"
+    },
+    {
+     "vendor": "Brightline Lighting Techs",
+     "base": 4300,
+     "memo": "Track lamp replacement and aiming"
+    },
+    {
+     "vendor": "Metroline Electric",
+     "base": 9800,
+     "memo": "Gallery electricity"
+    }
+   ],
+   "events": [
+    {
+     "key": "chillerswap",
+     "vendor": "Stillwater HVAC Services",
+     "memos": [
+      "Rooftop chiller replacement — unit install",
+      "Rooftop chiller replacement — crane lift"
+     ],
+     "cross_memo": "Rooftop chiller replacement — temporary spot coolers",
+     "plain": [
+      "the rooftop chiller replacement",
+      "the rooftop chiller install",
+      "the rooftop chiller crane lift"
+     ],
+     "oblique": [
+      "the cooling plant that finally quit",
+      "a big mechanical swap on the upper deck",
+      "the equipment that kept the galleries at a steady temperature",
+      "replacing the aging machinery",
+      "an overdue capital item",
+      "what failed in the heat wave",
+      "a piece of heavy gear lifted into place",
+      "the thing the engineer warned about for years",
+      "new equipment for the whole building",
+      "an emergency during the warmest week",
+      "the fix that required closing a floor",
+      "hardware at the end of its life",
+      "the major plant upgrade",
+      "a total changeout of the main cooler",
+      "what kept the paintings safe in summer",
+      "a large mechanical purchase"
+     ],
+     "low": 28000,
+     "high": 56000
+    },
+    {
+     "key": "ledconv",
+     "vendor": "Aurelia Illumination Group",
+     "memos": [
+      "Gallery LED retrofit — fixture supply",
+      "Gallery LED retrofit — dimmer controls install"
+     ],
+     "cross_memo": "Gallery LED retrofit — ceiling patching",
+     "plain": [
+      "the gallery LED retrofit",
+      "the LED retrofit fixtures",
+      "the LED retrofit dimmer controls"
+     ],
+     "oblique": [
+      "swapping out old bulbs for efficient ones",
+      "the sustainability initiative",
+      "a project to cut the power bill",
+      "softer and cooler illumination for the art",
+      "what the grant covered",
+      "updating how we light the walls",
+      "an energy-saving program",
+      "the upgrade curators had requested",
+      "a change that protects pigments from fading",
+      "new fittings across three floors",
+      "lower heat output over the paintings",
+      "the green building commitment",
+      "what replaced the halogen spots",
+      "a lighting overhaul",
+      "the facilities plan for lower consumption",
+      "the new way we light the collection"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Public Programs and Education",
+   "aliases": [
+    "public programs",
+    "education programs",
+    "school programs",
+    "community programming",
+    "education spend"
+   ],
+   "narrative": [
+    "Public programs",
+    "Education programs",
+    "Community programming"
+   ],
+   "recurring": [
+    {
+     "vendor": "Larkspur Teaching Artists",
+     "base": 7600,
+     "memo": "Monthly studio workshop instructors"
+    },
+    {
+     "vendor": "Tallis Youth Outreach",
+     "base": 4800,
+     "memo": "School visit coordination"
+    }
+   ],
+   "events": [
+    {
+     "key": "summerfest",
+     "vendor": "Larkspur Teaching Artists",
+     "memos": [
+      "Riverfront Family Day — extra instructors",
+      "Riverfront Family Day — craft supplies"
+     ],
+     "cross_memo": "Riverfront Family Day — tent and stage rental",
+     "plain": [
+      "the Riverfront Family Day",
+      "the Riverfront Family Day instructors",
+      "the Riverfront Family Day supplies"
+     ],
+     "oblique": [
+      "the annual outdoor festival",
+      "a free weekend event for neighborhood kids",
+      "the summer celebration we open to everyone",
+      "a big turnout at the park",
+      "our largest day of community engagement",
+      "an event sponsored by the city",
+      "what we staged outside the building",
+      "the all-ages gathering",
+      "an afternoon of hands-on making",
+      "the signature kids' occasion",
+      "extra staffing for a crowded Saturday",
+      "outreach that drew thousands",
+      "the open-air party",
+      "an expanded version of the usual workshops",
+      "the one day everyone attends",
+      "a heavily promoted public weekend"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "lecturecycle",
+     "vendor": "Quillon Speakers Bureau",
+     "memos": [
+      "Modernism Now lecture series — speaker honoraria",
+      "Modernism Now lecture series — hall setup"
+     ],
+     "cross_memo": "Modernism Now lecture series — livestream production",
+     "plain": [
+      "the Modernism Now lecture series",
+      "the Modernism Now speaker honoraria",
+      "the Modernism Now hall setup"
+     ],
+     "oblique": [
+      "a run of evening talks by visiting scholars",
+      "the intellectual programming our members like",
+      "fees for guest authors and critics",
+      "a season of talks tied to the new show",
+      "the thought-leadership initiative",
+      "paid appearances by famous academics",
+      "what the trustees wanted to elevate our profile",
+      "a sequence of seated events with Q and A",
+      "sessions that sold out early",
+      "a six-week speaking circuit",
+      "the scholarly offering",
+      "experts we flew in to speak",
+      "the winter discussion calendar",
+      "a stack of guest appearances",
+      "an effort to attract older patrons",
+      "the program aimed at serious collectors"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Visitor Services and Security",
+   "aliases": [
+    "visitor services",
+    "gallery security",
+    "guard services",
+    "front of house",
+    "security spend"
+   ],
+   "narrative": [
+    "Visitor services",
+    "Gallery security",
+    "Front of house"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironbridge Guard Services",
+     "base": 29000,
+     "memo": "Monthly gallery guard contract"
+    },
+    {
+     "vendor": "Clearpoint Ticketing",
+     "base": 3900,
+     "memo": "Ticketing platform and card fees"
+    },
+    {
+     "vendor": "Hollis Visitor Staffing",
+     "base": 8800,
+     "memo": "Front desk and floor attendants"
+    }
+   ],
+   "events": [
+    {
+     "key": "galaopening",
+     "vendor": "Ironbridge Guard Services",
+     "memos": [
+      "Founders Night gala — added armed detail",
+      "Founders Night gala — coat check attendants"
+     ],
+     "cross_memo": "Founders Night gala — valet contractor",
+     "plain": [
+      "the Founders Night gala",
+      "the Founders Night armed detail",
+      "the Founders Night coat check"
+     ],
+     "oblique": [
+      "the black-tie fundraiser",
+      "an evening for major donors",
+      "extra protection for a high-profile party",
+      "our biggest social night of the year",
+      "the formal dinner in the rotunda",
+      "what we staffed for the benefit",
+      "heightened coverage for wealthy guests",
+      "the party that raises money for acquisitions",
+      "a late event with hundreds in attendance",
+      "the annual charity affair",
+      "additional personnel after hours",
+      "an evening with dignitaries on the guest list",
+      "more people at the doors that night",
+      "the donor-focused celebration",
+      "the special occasion with jewels and cameras",
+      "the fundraising event"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "surveillance",
+     "vendor": "Vantiq Camera Systems",
+     "memos": [
+      "Camera network overhaul — IP dome units",
+      "Camera network overhaul — storage server"
+     ],
+     "cross_memo": "Camera network overhaul — cabling labor",
+     "plain": [
+      "the camera network overhaul",
+      "the camera network dome units",
+      "the camera network storage server"
+     ],
+     "oblique": [
+      "the monitoring upgrade after the audit",
+      "replacing grainy analog equipment",
+      "a recommendation from our insurer on coverage",
+      "new electronic eyes across the floors",
+      "the technology refresh in the control room",
+      "a modernization of how we watch the rooms",
+      "what the auditors said was out of date",
+      "sharper footage for investigations",
+      "a purchase tied to a near-miss incident",
+      "the digital recording backbone",
+      "upgraded surveillance",
+      "gear that stores footage for months",
+      "the system that keeps watch overnight",
+      "a capital project for protection",
+      "new devices mounted in every gallery",
+      "the response to the stolen-item scare"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

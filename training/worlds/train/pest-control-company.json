@@ -1,0 +1,718 @@
+{
+ "slug": "pest-control-company",
+ "industry": "pest control company",
+ "entities": [
+  "Sentinel Pest Solutions",
+  "GreenShield Exterminators",
+  "Ironbark Pest Management",
+  "Crestline Critter Control",
+  "Meridian Bug and Rodent Co"
+ ],
+ "accounts": [
+  {
+   "name": "Chemical and Pesticide Supplies",
+   "aliases": [
+    "chemicals",
+    "pesticide supplies",
+    "product spend",
+    "chemical purchases",
+    "material costs"
+   ],
+   "narrative": [
+    "Chemicals",
+    "Pesticide supplies",
+    "Product spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hartwell Agricultural Supply",
+     "base": 14500,
+     "memo": "Monthly liquid pesticide concentrate order"
+    },
+    {
+     "vendor": "Pinnacle Bait Distributors",
+     "base": 6200,
+     "memo": "Rodent bait blocks and stations restock"
+    },
+    {
+     "vendor": "Northfield Chemical Wholesale",
+     "base": 3800,
+     "memo": "Granular insecticide and dust"
+    }
+   ],
+   "events": [
+    {
+     "key": "termite_foam",
+     "vendor": "Hartwell Agricultural Supply",
+     "memos": [
+      "Subterranean foam barrier — bulk drums",
+      "Subterranean foam barrier — injection tips"
+     ],
+     "cross_memo": "Subterranean foam barrier — rented compressor",
+     "plain": [
+      "the subterranean foam barrier",
+      "the foam barrier drums",
+      "the subterranean barrier purchase"
+     ],
+     "oblique": [
+      "the big wood-destroyer treatment contract",
+      "stocking up for the underground colony job",
+      "the apartment complex remediation project",
+      "what we used on the condo association",
+      "the soil-side protection for new construction",
+      "heavy treatment of the foundation perimeters",
+      "a single large customer's structural problem",
+      "the bulk buy for the spring swarm season",
+      "preparing for the housing developer's order",
+      "the extra material for the lakeside homes",
+      "insect colonies under slabs",
+      "the large-scale foundation work",
+      "a one-time stock build",
+      "what the builder asked us to apply",
+      "the pre-construction soil protection",
+      "wood pest prevention at the new subdivision"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "fumigant",
+     "vendor": "Cascade Gas Technologies",
+     "memos": [
+      "Vikane fumigant tanks — warehouse job",
+      "Vikane fumigant tanks — safety seals"
+     ],
+     "cross_memo": "Vikane fumigant tanks — tarp crew overtime",
+     "plain": [
+      "the Vikane fumigant tanks",
+      "the fumigant tank order",
+      "the Vikane warehouse tanks"
+     ],
+     "oblique": [
+      "gassing the grain storage building",
+      "the sealed-structure treatment for the food distributor",
+      "clearing the whole distribution center",
+      "the one-time treatment of the cold storage facility",
+      "tenting that large commercial site",
+      "a mass elimination at the customer's depot",
+      "the emergency order from the grocery chain",
+      "treating the building end to end",
+      "what the inspector's failure notice required",
+      "the entire-building eradication",
+      "a client's infestation of stored goods",
+      "clearing out the produce wholesaler",
+      "the weekend lockdown treatment",
+      "airtight treatment of the freight building",
+      "a single large industrial site",
+      "the overnight job at the packing plant"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Fleet Fuel and Vehicle Maintenance",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "vehicle costs",
+    "truck expenses",
+    "fleet maintenance spend"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Vehicle costs",
+    "Truck expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadway Fuel Cards",
+     "base": 11200,
+     "memo": "Monthly fuel card statement"
+    },
+    {
+     "vendor": "Driftwood Auto Service",
+     "base": 4300,
+     "memo": "Routine oil changes and tire rotation"
+    },
+    {
+     "vendor": "Summit Tire and Brake",
+     "base": 2100,
+     "memo": "Brake pads and tire replacements"
+    }
+   ],
+   "events": [
+    {
+     "key": "sprayrig",
+     "vendor": "Driftwood Auto Service",
+     "memos": [
+      "Spray rig pump rebuild — tank liner",
+      "Spray rig pump rebuild — hydraulic hoses"
+     ],
+     "cross_memo": "Spray rig pump rebuild — replacement sprayer lease",
+     "plain": [
+      "the spray rig pump rebuild",
+      "the rig pump rebuild",
+      "the spray rig liner work"
+     ],
+     "oblique": [
+      "getting the big application truck working again",
+      "the machine that applies treatments to lawns",
+      "repairs to our largest piece of equipment",
+      "what broke down in the middle of peak season",
+      "the downtime on the commercial applicator",
+      "restoring the work vehicle that carries the tank",
+      "the mid-season breakdown",
+      "the overhaul of the heavy equipment",
+      "fixing the unit that was leaking in the yard",
+      "keeping the crews on their routes",
+      "the costly shop visit in the summer",
+      "the rebuild our technician flagged",
+      "what failed the state inspection of the truck",
+      "work on the bulk liquid carrier",
+      "the repair bill for the flagship vehicle",
+      "reconditioning the oldest application vehicle"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "vanwrap",
+     "vendor": "Brightline Graphics",
+     "memos": [
+      "Fleet rebrand decals — vinyl wraps",
+      "Fleet rebrand decals — installation labor"
+     ],
+     "cross_memo": "Fleet rebrand decals — new logo design fee",
+     "plain": [
+      "the fleet rebrand decals",
+      "the rebrand vinyl wraps",
+      "the fleet decal installation"
+     ],
+     "oblique": [
+      "making the vans look new again",
+      "the change in how we appear on the road",
+      "the new look after the ownership change",
+      "a fresh image for the service vehicles",
+      "what marketing wanted on the sides of the vans",
+      "the visual refresh of every vehicle",
+      "the company's new identity on the street",
+      "updating the paint scheme",
+      "moving to the new color palette",
+      "the project the owner approved in the winter",
+      "redoing the appearance of the whole lineup",
+      "the branding overhaul on wheels",
+      "what we did after the merger announcement",
+      "getting rid of the old graphics",
+      "making the trucks match the new website",
+      "the cosmetic upgrade for every route vehicle"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Technician Payroll and Overtime",
+   "aliases": [
+    "tech payroll",
+    "technician wages",
+    "field labor",
+    "overtime costs",
+    "tech overtime spend"
+   ],
+   "narrative": [
+    "Tech payroll",
+    "Field labor",
+    "Overtime costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Paylink Payroll Services",
+     "base": 28000,
+     "memo": "Biweekly technician wages"
+    },
+    {
+     "vendor": "Apex Staffing Partners",
+     "base": 5400,
+     "memo": "Seasonal temp technicians"
+    }
+   ],
+   "events": [
+    {
+     "key": "hornet",
+     "vendor": "Paylink Payroll Services",
+     "memos": [
+      "Hornet nest surge — weekend crew pay",
+      "Hornet nest surge — hazard premium"
+     ],
+     "cross_memo": "Hornet nest surge — protective suits purchase",
+     "plain": [
+      "the hornet nest surge",
+      "the hornet surge crew pay",
+      "the hornet hazard premium"
+     ],
+     "oblique": [
+      "the late-summer stinging insect calls",
+      "a wave of urgent customer requests",
+      "the weekend shifts we had to staff",
+      "extra hours after the heat wave",
+      "the flood of emergency calls from homeowners",
+      "paying people more for dangerous work",
+      "the rush of aerial colony removals",
+      "calls that came in faster than we could book",
+      "what the call center escalated to dispatch",
+      "working through two straight Saturdays",
+      "a spike in service requests after the storm",
+      "danger pay for ladder work at height",
+      "the unscheduled jobs that crowded the board",
+      "responding to the neighborhood warnings",
+      "the pile of rush appointments",
+      "the seasonal onslaught nobody forecast"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "cert",
+     "vendor": "Evergreen Training Institute",
+     "memos": [
+      "Applicator license recertification — classroom fees",
+      "Applicator license recertification — exam proctoring"
+     ],
+     "cross_memo": "Applicator license recertification — travel to testing center",
+     "plain": [
+      "the applicator license recertification",
+      "the license recertification classes",
+      "the applicator exam proctoring"
+     ],
+     "oblique": [
+      "the state's required credential renewals",
+      "getting every technician legal to work",
+      "what the regulator demanded this cycle",
+      "paid time away from routes for coursework",
+      "the compliance deadline for the whole team",
+      "keeping our staff certified",
+      "the education requirement that came due",
+      "sending the crew back to school",
+      "ensuring nobody was sidelined for lack of paperwork",
+      "the mandatory refresher for field staff",
+      "what the licensing board changed this year",
+      "wages while employees sat in a classroom",
+      "the cost of staying in good standing",
+      "the biennial professional upkeep",
+      "training hours we owed the agency",
+      "the once-every-two-years obligation"
+     ],
+     "low": 9500,
+     "high": 19000
+    }
+   ]
+  },
+  {
+   "name": "Liability and Workers Compensation Insurance",
+   "aliases": [
+    "insurance",
+    "liability coverage",
+    "workers comp",
+    "insurance premiums",
+    "coverage costs"
+   ],
+   "narrative": [
+    "Insurance",
+    "Liability coverage",
+    "Workers comp"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bedrock Mutual Insurance",
+     "base": 9800,
+     "memo": "General liability premium installment"
+    },
+    {
+     "vendor": "Guardian Risk Partners",
+     "base": 6700,
+     "memo": "Workers compensation premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "claim",
+     "vendor": "Bedrock Mutual Insurance",
+     "memos": [
+      "Drift damage claim — policy deductible",
+      "Drift damage claim — adjuster inspection fee"
+     ],
+     "cross_memo": "Drift damage claim — neighbor shrubbery replacement",
+     "plain": [
+      "the drift damage claim",
+      "the drift claim deductible",
+      "the drift damage adjuster fee"
+     ],
+     "oblique": [
+      "the neighbor's complaint about their garden",
+      "what we owed after the wind carried product",
+      "the incident at the residential job",
+      "a homeowner's dispute over dead plants",
+      "the out-of-pocket share on a loss",
+      "an accident that triggered our policy",
+      "the customer who threatened a lawsuit",
+      "paying our portion of the settlement",
+      "the mishap that got reported to the carrier",
+      "the first claim we filed this year",
+      "a property damage complaint outside our work area",
+      "the investigator who visited the property",
+      "a windy afternoon gone wrong",
+      "the amount we absorbed before coverage kicked in",
+      "what the carrier asked us to cover first",
+      "a problem on a customer's lawn"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "audit",
+     "vendor": "Lakeshore Risk Consultants",
+     "memos": [
+      "Safety program audit — consultant engagement",
+      "Safety program audit — OSHA gap analysis"
+     ],
+     "cross_memo": "Safety program audit — respirator fit testing",
+     "plain": [
+      "the safety program audit",
+      "the OSHA gap analysis",
+      "the safety audit consultant"
+     ],
+     "oblique": [
+      "the outside review our insurer required",
+      "what we paid to lower our rates next year",
+      "an independent look at our workplace practices",
+      "the assessment after the injury report",
+      "hiring someone to inspect how we operate",
+      "the study that the underwriter asked for",
+      "proof that we follow federal rules",
+      "the gaps a reviewer found in our procedures",
+      "a prerequisite to renewing our policy",
+      "the evaluation of how crews handle hazards",
+      "what the carrier wanted before quoting",
+      "checking our written procedures against the rules",
+      "the consultant who walked the warehouse",
+      "a third-party report on worker protection",
+      "the formal examination of our practices",
+      "what leadership commissioned after the near miss"
+     ],
+     "low": 8500,
+     "high": 17000
+    }
+   ]
+  },
+  {
+   "name": "Equipment and Protective Gear",
+   "aliases": [
+    "equipment",
+    "tools and gear",
+    "application equipment",
+    "protective gear",
+    "gear purchases"
+   ],
+   "narrative": [
+    "Equipment",
+    "Tools and gear",
+    "Protective gear"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Sprayer Supply",
+     "base": 4800,
+     "memo": "Sprayer nozzles and replacement parts"
+    },
+    {
+     "vendor": "SafeWorks Outfitters",
+     "base": 2600,
+     "memo": "Gloves and coveralls restock"
+    },
+    {
+     "vendor": "Tidewater Trap Company",
+     "base": 1900,
+     "memo": "Glue boards and snap traps"
+    }
+   ],
+   "events": [
+    {
+     "key": "thermal",
+     "vendor": "Ridgeline Sprayer Supply",
+     "memos": [
+      "Thermal imaging cameras — four units",
+      "Thermal imaging cameras — calibration kits"
+     ],
+     "cross_memo": "Thermal imaging cameras — operator training course",
+     "plain": [
+      "the thermal imaging cameras",
+      "the thermal camera units",
+      "the thermal calibration kits"
+     ],
+     "oblique": [
+      "devices that see heat behind walls",
+      "the new way of finding hidden nests",
+      "technology the owner wanted for inspections",
+      "a gadget upgrade for the inspection team",
+      "what lets us detect problems without opening drywall",
+      "the high-tech purchase approved in budget season",
+      "a capital outlay to win larger contracts",
+      "seeing inside structures noninvasively",
+      "the investment that set us apart from competitors",
+      "handheld scanners for the senior crew",
+      "what the sales team demonstrated to prospects",
+      "the upgrade to our diagnostic toolkit",
+      "new detection hardware for field staff",
+      "the modern inspection kit",
+      "an expensive batch of electronics",
+      "gear that finds activity we cannot see"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "respirator",
+     "vendor": "Alder Industrial Safety",
+     "memos": [
+      "Powered air respirators — full-face units",
+      "Powered air respirators — filter cartridges"
+     ],
+     "cross_memo": "Powered air respirators — fit test service",
+     "plain": [
+      "the powered air respirators",
+      "the full-face respirator units",
+      "the respirator filter cartridges"
+     ],
+     "oblique": [
+      "breathing protection for the fumigation team",
+      "what keeps our people safe around vapors",
+      "the safety upgrade after the near incident",
+      "masks that cost far more than the old ones",
+      "a regulator-driven replacement of worn kits",
+      "the protective purchase for hazardous work",
+      "what the new rules forced us to buy",
+      "equipment to keep lungs clean on site",
+      "the upgrade from disposable masks",
+      "a one-time outlay for crew wellbeing",
+      "the gear that went to the specialty techs",
+      "new head-and-face protection",
+      "a required swap of aging safety items",
+      "what the safety committee pushed for",
+      "clean-air packs for the interior jobs",
+      "the replacement of expired protective items"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Lead Generation",
+   "aliases": [
+    "marketing",
+    "advertising",
+    "lead gen",
+    "customer acquisition",
+    "promo spend"
+   ],
+   "narrative": [
+    "Marketing",
+    "Advertising",
+    "Lead gen"
+   ],
+   "recurring": [
+    {
+     "vendor": "ClickHarbor Digital",
+     "base": 7500,
+     "memo": "Monthly search ad campaign management"
+    },
+    {
+     "vendor": "Neighborly Leads Network",
+     "base": 3900,
+     "memo": "Pay-per-lead referral fees"
+    },
+    {
+     "vendor": "Printwell Direct Mail",
+     "base": 2400,
+     "memo": "Door hanger and postcard printing"
+    }
+   ],
+   "events": [
+    {
+     "key": "billboard",
+     "vendor": "ClickHarbor Digital",
+     "memos": [
+      "Highway billboard blitz — digital placements",
+      "Highway billboard blitz — creative production"
+     ],
+     "cross_memo": "Highway billboard blitz — permit fees",
+     "plain": [
+      "the highway billboard blitz",
+      "the billboard blitz placements",
+      "the billboard creative production"
+     ],
+     "oblique": [
+      "the big roadside push near the interstate",
+      "what we bought to be seen by commuters",
+      "an advertising splash timed for spring",
+      "the campaign aimed at drivers",
+      "a visibility play in the metro area",
+      "the loud promotion the owner championed",
+      "giant signs on the main route",
+      "a burst of spending to win market share",
+      "the outdoor campaign for the new territory",
+      "what we ran against the national competitor",
+      "reaching people stuck in traffic",
+      "the large-format ads over the freeway",
+      "a seasonal awareness drive",
+      "the splashy launch of our rodent season offer",
+      "media spend with a short window",
+      "a high-profile attempt at brand recall"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "sponsor",
+     "vendor": "Riverbend Youth League",
+     "memos": [
+      "Little league sponsorship — team jerseys",
+      "Little league sponsorship — field banner"
+     ],
+     "cross_memo": "Little league sponsorship — tournament entry gift",
+     "plain": [
+      "the little league sponsorship",
+      "the league team jerseys",
+      "the league field banner"
+     ],
+     "oblique": [
+      "goodwill spending in the community",
+      "what we gave to the neighborhood kids",
+      "a local giving commitment for the year",
+      "name recognition at the weekend games",
+      "supporting youth athletics in our service area",
+      "the partnership the regional manager signed",
+      "an outreach tied to families",
+      "spending to be known as the hometown company",
+      "the uniforms we paid for",
+      "a civic gesture with a logo attached",
+      "our presence at the ballpark",
+      "what the owner promised the coach",
+      "investing in the people who become customers",
+      "a community tie-in rather than direct ads",
+      "the charity-style arrangement",
+      "backing a spring athletic program"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Facilities and Warehouse",
+   "aliases": [
+    "facilities",
+    "warehouse costs",
+    "branch expenses",
+    "building costs",
+    "shop and yard spend"
+   ],
+   "narrative": [
+    "Facilities",
+    "Warehouse costs",
+    "Branch expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Oakmont Commercial Realty",
+     "base": 12500,
+     "memo": "Branch office and warehouse rent"
+    },
+    {
+     "vendor": "Metro Utility Authority",
+     "base": 2200,
+     "memo": "Electric water and gas"
+    },
+    {
+     "vendor": "Spotless Janitorial",
+     "base": 1100,
+     "memo": "Weekly office cleaning"
+    }
+   ],
+   "events": [
+    {
+     "key": "roof",
+     "vendor": "Oakmont Commercial Realty",
+     "memos": [
+      "Warehouse roof replacement — membrane install",
+      "Warehouse roof replacement — drainage repair"
+     ],
+     "cross_memo": "Warehouse roof replacement — chemical storage relocation",
+     "plain": [
+      "the warehouse roof replacement",
+      "the roof membrane install",
+      "the roof drainage repair"
+     ],
+     "oblique": [
+      "the leak that ruined inventory",
+      "what the landlord passed through to us",
+      "overhead repairs after the hailstorm",
+      "the structural work above our storage area",
+      "a big capital item on the lease",
+      "protecting the product from rain",
+      "the top-of-building project",
+      "the lender-mandated improvement",
+      "water coming in during the thunderstorms",
+      "what facilities warned about last year",
+      "repairs our landlord billed back",
+      "the overhead fix that stopped the dripping",
+      "covering the building against weather",
+      "a major shell repair on the property",
+      "the work that closed the aisle for a week",
+      "the one expense that dwarfed all others at the site"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "alarm",
+     "vendor": "Sentry Lockdown Systems",
+     "memos": [
+      "Chemical cage security upgrade — keypad locks",
+      "Chemical cage security upgrade — camera install"
+     ],
+     "cross_memo": "Chemical cage security upgrade — guard patrol contract",
+     "plain": [
+      "the chemical cage security upgrade",
+      "the cage keypad locks",
+      "the chemical cage camera install"
+     ],
+     "oblique": [
+      "tightening access to dangerous stock",
+      "what the fire marshal recommended on his visit",
+      "preventing theft of restricted products",
+      "the compliance fix after the surprise inspection",
+      "locking down the back room",
+      "monitoring who enters the storeroom",
+      "a requirement from the licensing authority",
+      "surveillance of the most sensitive inventory",
+      "the upgrade following a break-in nearby",
+      "protecting regulated materials from outsiders",
+      "electronic gatekeeping for the restricted area",
+      "what the insurer insisted on",
+      "a mandated improvement to safeguards",
+      "the tamper-proof hardware",
+      "an expense that came from a regulator's checklist",
+      "making sure only licensed staff get in"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

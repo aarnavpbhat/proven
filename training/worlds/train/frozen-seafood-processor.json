@@ -1,0 +1,723 @@
+{
+ "slug": "frozen-seafood-processor",
+ "industry": "frozen seafood processor",
+ "entities": [
+  "Northcove Seafoods Inc.",
+  "Glacier Bay Provisions LLC",
+  "Harborline Frozen Foods Co.",
+  "Tidewater Cold Catch Ltd.",
+  "Silverfin Processing Group"
+ ],
+ "accounts": [
+  {
+   "name": "Cold Storage & Refrigeration",
+   "aliases": [
+    "cold storage",
+    "refrigeration",
+    "freezer costs",
+    "cold chain upkeep",
+    "freezer operations"
+   ],
+   "narrative": [
+    "Cold storage",
+    "Refrigeration",
+    "Freezer costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Arctic Ammonia Services",
+     "base": 14500,
+     "memo": "Mnt Svc ammonia system monthly"
+    },
+    {
+     "vendor": "Polar Rack Leasing",
+     "base": 9800,
+     "memo": "Pallet rack lease Inv monthly"
+    },
+    {
+     "vendor": "Subzero Monitoring Co",
+     "base": 1900,
+     "memo": "Temp sensor monitoring Svc"
+    }
+   ],
+   "events": [
+    {
+     "key": "compressor",
+     "vendor": "Arctic Ammonia Services",
+     "memos": [
+      "Compressor rebuild — evaporator coil replacement",
+      "Compressor rebuild — valve labor"
+     ],
+     "cross_memo": "Compressor rebuild — temporary power generator",
+     "plain": [
+      "the compressor rebuild",
+      "the evaporator coil replacement",
+      "the compressor rebuild labor"
+     ],
+     "oblique": [
+      "getting the cooling plant running again",
+      "the repairs after the winter breakdown",
+      "what we paid to revive the machinery in the freezing hall",
+      "the emergency work on the chilling equipment",
+      "fixing what failed inspection",
+      "the mid-year overhaul of the big cold engines",
+      "an urgent fix",
+      "work the insurer asked us to finish",
+      "the plant-room overhaul",
+      "restoring the deep-freeze capacity",
+      "keeping the product from thawing",
+      "the contractor's multi-day callout",
+      "the machinery rescue",
+      "an unplanned equipment revival",
+      "bringing the freezing system back to spec",
+      "the costly mechanical failure at the plant"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "defrostfloor",
+     "vendor": "Glacier Floor Systems",
+     "memos": [
+      "Freezer floor heave remediation — slab recoat",
+      "Freezer floor heave remediation — glycol loop Inv"
+     ],
+     "cross_memo": "Freezer floor heave remediation — forklift downtime rental",
+     "plain": [
+      "the freezer floor heave remediation",
+      "the slab recoat",
+      "the glycol loop work"
+     ],
+     "oblique": [
+      "repairing the ground that buckled under the racks",
+      "the structural fix beneath the warehouse",
+      "the problem with the concrete underfoot",
+      "what it took to level the building base",
+      "the civil works in the big chilled room",
+      "a major construction repair",
+      "the ground-level rescue project",
+      "stabilizing the base of the building",
+      "the heaving that closed two aisles",
+      "work the engineer recommended",
+      "the soil-related repair",
+      "the contractor crew on site for weeks",
+      "reinforcing what the pallets stand on",
+      "a one-time capital-style fix",
+      "the repair that shut part of the facility",
+      "the buckling issue"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Raw Product Freight-In",
+   "aliases": [
+    "inbound freight",
+    "freight in",
+    "landing freight",
+    "raw freight",
+    "dock-to-plant shipping"
+   ],
+   "narrative": [
+    "Inbound freight",
+    "Freight in",
+    "Landing freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pacific Reefer Lines",
+     "base": 21000,
+     "memo": "Reefer haul Inv wk charges"
+    },
+    {
+     "vendor": "Dockside Drayage Inc",
+     "base": 7400,
+     "memo": "Port drayage Svc"
+    },
+    {
+     "vendor": "Bering Customs Brokers",
+     "base": 3100,
+     "memo": "Customs entry fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "tariffsurge",
+     "vendor": "Bering Customs Brokers",
+     "memos": [
+      "Emergency airlift surcharge — salmon shortfall",
+      "Emergency airlift surcharge — expedite fee"
+     ],
+     "cross_memo": "Emergency airlift surcharge — overtime receiving crew",
+     "plain": [
+      "the emergency airlift surcharge",
+      "the salmon shortfall expedite",
+      "the airlift expedite fee"
+     ],
+     "oblique": [
+      "flying product in when the boats came up short",
+      "the rush to cover a supply gap",
+      "paying extra to get fish on time",
+      "the scramble for inventory",
+      "what it cost to avoid missing a customer order",
+      "moving goods by plane instead of ship",
+      "a short-notice sourcing fix",
+      "the premium for speed",
+      "the supply hiccup",
+      "bridging the gap before the season opened",
+      "an expensive one-off delivery method",
+      "the quick turnaround for the big buyer",
+      "rushing the shipment",
+      "getting stock here in days",
+      "the stopgap sourcing move",
+      "paying to beat the deadline"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "detention",
+     "vendor": "Harbor Chassis Pool",
+     "memos": [
+      "Port congestion detention — chassis demurrage",
+      "Port congestion detention — container storage Inv"
+     ],
+     "cross_memo": "Port congestion detention — plant overtime",
+     "plain": [
+      "the port congestion detention",
+      "the chassis demurrage",
+      "the container storage"
+     ],
+     "oblique": [
+      "boxes sitting at the terminal too long",
+      "waiting on the harbor backlog",
+      "the ships stacking up offshore",
+      "fees for equipment held past the free window",
+      "the labor slowdown abroad",
+      "the delay getting cargo off the pier",
+      "paying rent on idle steel boxes",
+      "what the strike cost us",
+      "penalties for late pickup",
+      "the clogged gateway",
+      "holding charges at the wharf",
+      "the weeks lost in the queue",
+      "the jam that delayed our fish",
+      "the backlog that was not our fault",
+      "extra days of waiting",
+      "a month of stalled arrivals"
+     ],
+     "low": 12000,
+     "high": 25000
+    }
+   ]
+  },
+  {
+   "name": "Packaging & Glazing Supplies",
+   "aliases": [
+    "packaging",
+    "packaging supplies",
+    "glaze and cartons",
+    "box and film",
+    "packing materials"
+   ],
+   "narrative": [
+    "Packaging",
+    "Packaging supplies",
+    "Packing materials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northwind Carton Co",
+     "base": 16500,
+     "memo": "Master cartons Inv"
+    },
+    {
+     "vendor": "ClearSeal Film LLC",
+     "base": 8200,
+     "memo": "Vacuum pouch film Inv"
+    },
+    {
+     "vendor": "IceGuard Glaze Additives",
+     "base": 4600,
+     "memo": "Glaze additive monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "retailredesign",
+     "vendor": "Northwind Carton Co",
+     "memos": [
+      "Retail rebrand — new printed sleeves",
+      "Retail rebrand — plate setup Inv"
+     ],
+     "cross_memo": "Retail rebrand — designer agency fee",
+     "plain": [
+      "the retail rebrand",
+      "the new printed sleeves",
+      "the rebrand plate setup"
+     ],
+     "oblique": [
+      "the new look for the grocery line",
+      "what we spent refreshing the shelf appearance",
+      "artwork for the supermarket customers",
+      "the visual update the buyers wanted",
+      "updating how the product looks in stores",
+      "the new design rollout",
+      "a customer-requested redesign",
+      "the change that retired the old graphics",
+      "a one-time launch cost for the new range",
+      "getting ready for the chain store reset",
+      "the fresh branding push",
+      "the print run for the new look",
+      "a marketing-led switch",
+      "the makeover",
+      "what we paid to modernize the consumer image",
+      "changing the face of the line"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "recyclefilm",
+     "vendor": "GreenTide Materials",
+     "memos": [
+      "Compostable film trial — pilot rolls",
+      "Compostable film trial — sealer retool Inv"
+     ],
+     "cross_memo": "Compostable film trial — lab testing",
+     "plain": [
+      "the compostable film trial",
+      "the pilot rolls",
+      "the sealer retool"
+     ],
+     "oblique": [
+      "testing an eco-friendly wrap",
+      "the sustainability experiment",
+      "a green alternative we sampled",
+      "what it cost to try a plastic-free option",
+      "the environmental pilot a retailer requested",
+      "a small run of the new material",
+      "trialing something kinder to landfills",
+      "the earth-friendly packaging test",
+      "changing machines to handle a new substance",
+      "a one-off investigation into greener inputs",
+      "the proof-of-concept batch",
+      "the pilot for a big customer's mandate",
+      "a trial that may or may not continue",
+      "the test of a different wrap",
+      "an experiment with new materials",
+      "the sustainability initiative"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Vessel & Catch Fees",
+   "aliases": [
+    "catch fees",
+    "vessel fees",
+    "landing fees",
+    "fishery costs",
+    "boat charges"
+   ],
+   "narrative": [
+    "Catch fees",
+    "Vessel fees",
+    "Landing fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kodiak Landing Authority",
+     "base": 12800,
+     "memo": "Landing dues Svc"
+    },
+    {
+     "vendor": "Seabird Fleet Agents",
+     "base": 9100,
+     "memo": "Fleet agent commission"
+    }
+   ],
+   "events": [
+    {
+     "key": "quotaswap",
+     "vendor": "Seabird Fleet Agents",
+     "memos": [
+      "Quota lease top-up — cod allocation",
+      "Quota lease top-up — broker commission Inv"
+     ],
+     "cross_memo": "Quota lease top-up — compliance audit",
+     "plain": [
+      "the quota lease top-up",
+      "the cod allocation",
+      "the quota broker commission"
+     ],
+     "oblique": [
+      "buying extra rights to harvest more",
+      "the extra permission we needed mid-season",
+      "what we paid to stay legal on volume",
+      "the rights purchase to keep boats working",
+      "extending our entitlement",
+      "an allowance we ran out of early",
+      "paying someone else for their share",
+      "the regulatory ceiling we hit",
+      "the added headroom for the busy months",
+      "a one-time rights transaction",
+      "securing more fishing privileges",
+      "the scramble to avoid idle vessels",
+      "exceeding the original cap",
+      "a purchase from another holder",
+      "the permit shortfall",
+      "keeping the fleet at sea longer"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "observer",
+     "vendor": "Aleutian Marine Observers",
+     "memos": [
+      "Mandatory observer deployment — bycatch monitoring",
+      "Mandatory observer deployment — travel Inv"
+     ],
+     "cross_memo": "Mandatory observer deployment — lodging",
+     "plain": [
+      "the mandatory observer deployment",
+      "the bycatch monitoring",
+      "the observer travel"
+     ],
+     "oblique": [
+      "the government-required onboard monitors",
+      "people placed on boats by regulators",
+      "the oversight crew the agency assigned",
+      "costs of having inspectors ride along",
+      "what the rule change forced upon us",
+      "the new compliance staffing",
+      "paying for third-party watchers at sea",
+      "regulator-ordered coverage",
+      "a policy shift that added people aboard",
+      "the compulsory scrutiny program",
+      "the officials we had to host",
+      "the mandate that arrived this season",
+      "enforcement-driven headcount",
+      "the new federal requirement",
+      "the extra people on deck",
+      "the outside monitors we had to fund"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Plant Sanitation & Food Safety",
+   "aliases": [
+    "sanitation",
+    "food safety",
+    "plant cleaning",
+    "haccp costs",
+    "hygiene program"
+   ],
+   "narrative": [
+    "Sanitation",
+    "Food safety",
+    "Plant cleaning"
+   ],
+   "recurring": [
+    {
+     "vendor": "CleanWave Industrial",
+     "base": 11200,
+     "memo": "Nightly sanitation crew Svc"
+    },
+    {
+     "vendor": "SafeCatch Labs",
+     "base": 5600,
+     "memo": "Micro testing Inv monthly"
+    },
+    {
+     "vendor": "Bright Drain Chemicals",
+     "base": 2400,
+     "memo": "Sanitizer chemicals"
+    }
+   ],
+   "events": [
+    {
+     "key": "listeria",
+     "vendor": "SafeCatch Labs",
+     "memos": [
+      "Pathogen swab investigation — environmental sampling",
+      "Pathogen swab investigation — lab rush Inv"
+     ],
+     "cross_memo": "Pathogen swab investigation — line shutdown labor",
+     "plain": [
+      "the pathogen swab investigation",
+      "the environmental sampling",
+      "the lab rush"
+     ],
+     "oblique": [
+      "the positive result that stopped production",
+      "chasing down a contamination scare",
+      "extra scrutiny after a failed screen",
+      "the scare that triggered a deep dive",
+      "finding the source of the problem on the floor",
+      "what a bad result forced us to do",
+      "the testing blitz after an alert",
+      "investigating a worrying finding",
+      "an unplanned look into plant conditions",
+      "the all-hands response to an alarm",
+      "urgent checks the customer demanded",
+      "the expense of proving we were clean",
+      "a precautionary hunt",
+      "the weeks of repeated checking",
+      "clearing our name with the buyer",
+      "the incident review"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "auditprep",
+     "vendor": "Meridian Certification Group",
+     "memos": [
+      "BRC recertification — gap assessment",
+      "BRC recertification — consultant days Inv"
+     ],
+     "cross_memo": "BRC recertification — document binders",
+     "plain": [
+      "the BRC recertification",
+      "the gap assessment",
+      "the consultant days"
+     ],
+     "oblique": [
+      "renewing our third-party credential",
+      "the outside grader's yearly visit",
+      "preparing for the big inspection",
+      "getting our papers in order for retailers",
+      "the standard we must hold to sell to chains",
+      "what we paid advisers before the examiners came",
+      "the credential renewal cycle",
+      "passing the external scoring",
+      "a once-a-year seal of approval",
+      "the hired coaches ahead of the review",
+      "the gap-closing effort",
+      "work to keep our accreditation",
+      "the evaluation required by supermarkets",
+      "the audit season spend",
+      "assurance paperwork",
+      "being found worthy again"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Plant Utilities",
+   "aliases": [
+    "utilities",
+    "power and water",
+    "plant energy",
+    "electric and water",
+    "energy costs"
+   ],
+   "narrative": [
+    "Utilities",
+    "Power and water",
+    "Plant energy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Coastal Electric Cooperative",
+     "base": 28000,
+     "memo": "Electric service Inv"
+    },
+    {
+     "vendor": "Harbor Water District",
+     "base": 6900,
+     "memo": "Water and sewer Qtr"
+    },
+    {
+     "vendor": "Blue Flame Gas",
+     "base": 3300,
+     "memo": "Natural gas Svc"
+    }
+   ],
+   "events": [
+    {
+     "key": "peakdemand",
+     "vendor": "Coastal Electric Cooperative",
+     "memos": [
+      "Demand ratchet penalty — heatwave peak",
+      "Demand ratchet penalty — surcharge Inv"
+     ],
+     "cross_memo": "Demand ratchet penalty — standby generator fuel",
+     "plain": [
+      "the demand ratchet penalty",
+      "the heatwave peak",
+      "the ratchet surcharge"
+     ],
+     "oblique": [
+      "the brutal stretch of hot weather",
+      "a spike in how much we drew at once",
+      "paying for a single bad afternoon",
+      "the grid operator's extra fee for peaks",
+      "running everything flat out during the scorching week",
+      "the tariff clause that bit us",
+      "a price lock we did not expect",
+      "a short burst of maximum load",
+      "the summer strain",
+      "what the utility charged for high usage moments",
+      "a temporary overload",
+      "the weather event that hurt the bill",
+      "a pricing rule that stays for months",
+      "the penalty hiding in the rate sheet",
+      "the unusual demand episode",
+      "one hot week"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "wastewater",
+     "vendor": "EcoBrine Treatment Partners",
+     "memos": [
+      "Effluent permit exceedance — brine hauling",
+      "Effluent permit exceedance — pretreatment Inv"
+     ],
+     "cross_memo": "Effluent permit exceedance — fine settlement",
+     "plain": [
+      "the effluent permit exceedance",
+      "the brine hauling",
+      "the pretreatment work"
+     ],
+     "oblique": [
+      "discharge that went over the allowed limit",
+      "the salty runoff the city objected to",
+      "waste the municipality complained about",
+      "carting away what the sewer would not accept",
+      "the environmental citation",
+      "handling plant outflow another way",
+      "a regulator's warning about our drains",
+      "the local authority's notice",
+      "a pollution-related headache",
+      "what we did after the letter from the city",
+      "treating water before it leaves",
+      "the discharge problem",
+      "a compliance fix for the pipes",
+      "the violation we cured",
+      "the runoff trouble",
+      "trucking away the problem liquid"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Repairs & Spares",
+   "aliases": [
+    "repairs",
+    "equipment repairs",
+    "spares",
+    "line maintenance",
+    "machine upkeep"
+   ],
+   "narrative": [
+    "Repairs",
+    "Equipment repairs",
+    "Line maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "IronGill Machine Works",
+     "base": 10500,
+     "memo": "Fillet line Mnt Svc"
+    },
+    {
+     "vendor": "Pacific Blade Supply",
+     "base": 4800,
+     "memo": "Knives and blades Inv"
+    },
+    {
+     "vendor": "Conveyor Dynamics Inc",
+     "base": 6300,
+     "memo": "Belt and bearing spares"
+    }
+   ],
+   "events": [
+    {
+     "key": "ibfreezer",
+     "vendor": "IronGill Machine Works",
+     "memos": [
+      "Spiral freezer belt replacement — stainless mesh",
+      "Spiral freezer belt replacement — install labor"
+     ],
+     "cross_memo": "Spiral freezer belt replacement — lost production overtime",
+     "plain": [
+      "the spiral freezer belt replacement",
+      "the stainless mesh",
+      "the belt install labor"
+     ],
+     "oblique": [
+      "swapping the worn track inside the blast tunnel",
+      "the conveyor that wore through",
+      "a long-planned renewal of the main chilling line",
+      "the part that finally gave out",
+      "a machine-bottleneck repair",
+      "work on our busiest production asset",
+      "the shutdown to renew a major component",
+      "replacing what had been patched for years",
+      "the key throughput fix",
+      "the big wear-and-tear item",
+      "a weekend of heavy installation",
+      "the equipment life-cycle expense",
+      "the lines that stopped moving",
+      "an oversized maintenance job",
+      "the renewal the vendor warned us about",
+      "the mechanical swap"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "scalecal",
+     "vendor": "Precision Weigh Systems",
+     "memos": [
+      "Checkweigher upgrade — metrology certification",
+      "Checkweigher upgrade — software license Inv"
+     ],
+     "cross_memo": "Checkweigher upgrade — trial downtime",
+     "plain": [
+      "the checkweigher upgrade",
+      "the metrology certification",
+      "the checkweigher software license"
+     ],
+     "oblique": [
+      "new scales that catch underweight packs",
+      "the accuracy project a customer pushed",
+      "a fix for giveaway on fill weights",
+      "precision instruments the inspectors approved",
+      "the hardware refresh at the end of the line",
+      "measuring what leaves the plant more tightly",
+      "investment in getting weights right",
+      "a response to short-pack complaints",
+      "the retailer's compliance request",
+      "the calibration-related purchase",
+      "equipment to reduce overfill",
+      "a modernization of the grading station",
+      "new devices on the packing floor",
+      "the tightening of tolerances",
+      "the weighing station overhaul",
+      "a one-time capital-like purchase"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

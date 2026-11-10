@@ -1,0 +1,708 @@
+{
+ "slug": "taxi-and-ride-hail-fleet",
+ "industry": "taxi and ride-hail fleet",
+ "entities": [
+  "Harborline Cab Co",
+  "Brightmeter Mobility",
+  "Cedar Street Taxi Group",
+  "Northgate Ride Partners",
+  "Silverlane Fleet Services"
+ ],
+ "accounts": [
+  {
+   "name": "Vehicle Maintenance & Repairs",
+   "aliases": [
+    "maintenance",
+    "fleet maintenance",
+    "repairs",
+    "vehicle upkeep",
+    "shop costs"
+   ],
+   "narrative": [
+    "Maintenance",
+    "Fleet maintenance",
+    "Repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Axle & Anchor Auto Service",
+     "base": 18500,
+     "memo": "Routine PM service - fleet units WO batch"
+    },
+    {
+     "vendor": "Tread Depot Tire Supply",
+     "base": 9200,
+     "memo": "Tire replacement and rotation"
+    },
+    {
+     "vendor": "Brakeline Parts Wholesale",
+     "base": 6400,
+     "memo": "Brake pads and rotors PO stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "hybridbattery",
+     "vendor": "Axle & Anchor Auto Service",
+     "memos": [
+      "Hybrid traction battery pack replacement WO 44817",
+      "Hybrid traction battery pack - cell balancing labor WO 44823"
+     ],
+     "cross_memo": "Hybrid traction battery pack - core disposal fee",
+     "plain": [
+      "the hybrid traction battery pack replacements",
+      "the hybrid battery pack swaps",
+      "the traction battery pack work"
+     ],
+     "oblique": [
+      "the powertrain energy storage failures in our older sedans",
+      "getting the aging cars back on the road",
+      "warranty expirations on the first batch of green vehicles",
+      "the costly under-floor component swaps",
+      "cars that would not hold a charge",
+      "big-ticket drivetrain fixes",
+      "a wave of dead-power-source breakdowns",
+      "replacing the heavy unit that stores electricity",
+      "the repairs that sidelined a third of the older cars",
+      "expiring coverage on early eco models",
+      "keeping the low-emission cars earning",
+      "the expensive swap-outs on the oldest eco cars",
+      "unplanned downtime on the efficient models",
+      "fixes the manufacturer would no longer cover",
+      "what it took to revive the stalled eco sedans",
+      "the pricey component that powers the electric assist"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "windshield",
+     "vendor": "ClearView Glassworks",
+     "memos": [
+      "Windshield replacement - ADAS recalibration PO 90211",
+      "Windshield replacement - cracked glass batch WO 51190"
+     ],
+     "cross_memo": "Windshield replacement - rental car during repair",
+     "plain": [
+      "the windshield replacement batch",
+      "the windshield replacement program",
+      "the windshield replacement and ADAS recalibration"
+     ],
+     "oblique": [
+      "road debris damage across the fleet",
+      "a hailstorm that hit the parking yard",
+      "the front-facing safety sensors needing realignment",
+      "cars sitting out of service for glass",
+      "a rough stretch of gravel-strewn highway work",
+      "the string of cracked front panes",
+      "the camera-aiming procedures that follow",
+      "sudden damage from a storm last week",
+      "vehicles pulled for visibility defects",
+      "a spike in claims from stones kicked up by trucks",
+      "inspection failures on the see-through front panel",
+      "the lane-keeping camera resets required afterward",
+      "an unusually hard season for road hazards",
+      "the outside shop we hired for the cars hit worst",
+      "what it cost to see clearly again",
+      "vehicles that failed the annual visual check"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Fuel & Charging",
+   "aliases": [
+    "fuel",
+    "fuel and charging",
+    "energy costs",
+    "gas and charging",
+    "pump spend"
+   ],
+   "narrative": [
+    "Fuel",
+    "Energy costs",
+    "Fuel and charging"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinecrest Fuel Card Services",
+     "base": 29500,
+     "memo": "Fleet fuel card statement"
+    },
+    {
+     "vendor": "VoltLoop Charging Network",
+     "base": 8300,
+     "memo": "EV charging sessions - fleet depot"
+    }
+   ],
+   "events": [
+    {
+     "key": "surcharge",
+     "vendor": "Pinecrest Fuel Card Services",
+     "memos": [
+      "Refinery outage surcharge - regional pricing adj INV 7731",
+      "Refinery outage surcharge - retro billing INV 7745"
+     ],
+     "cross_memo": "Refinery outage surcharge - dispatch idle-time credit",
+     "plain": [
+      "the refinery outage surcharge",
+      "the refinery outage pricing adjustment",
+      "the refinery outage retro billing"
+     ],
+     "oblique": [
+      "a supply disruption at the processing plant",
+      "pump prices spiking across the region",
+      "the price jump nobody forecast",
+      "an emergency in the oil supply chain",
+      "costs passed down from upstream",
+      "a temporary premium on every gallon",
+      "a shortage that hit our card rates",
+      "the weeks when gas stations ran dry",
+      "what the supplier tacked on after the shutdown",
+      "an unplanned production halt hundreds of miles away",
+      "the rate spike drivers complained about",
+      "our exposure to wholesale volatility",
+      "a sudden jump in what each fill-up cost",
+      "a one-time hit from the upstream shutdown",
+      "the premium we paid for scarce product",
+      "costs that rippled through the whole region"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "depotpower",
+     "vendor": "Gridwave Energy Partners",
+     "memos": [
+      "Depot fast-charger demand charge - peak kW INV 3302",
+      "Depot fast-charger demand charge - utility true-up INV 3309"
+     ],
+     "cross_memo": "Depot fast-charger demand charge - transformer upgrade deposit",
+     "plain": [
+      "the depot fast-charger demand charge",
+      "the fast-charger demand charge true-up",
+      "the depot demand charge"
+     ],
+     "oblique": [
+      "everyone plugging in at the same hour",
+      "the utility billing us for our highest moment of draw",
+      "a bad scheduling habit at the yard",
+      "too many cars topping up at shift change",
+      "the electric bill that spiked on one afternoon",
+      "power company penalties for concentrated usage",
+      "the new overnight lot we opened",
+      "cars all returning at once after the airport rush",
+      "what the grid operator assessed on our peak",
+      "a pricing structure that punishes bunching",
+      "the one half-hour that set the whole bill",
+      "electricity costs from our busiest evening",
+      "stacking up vehicles on the same circuit",
+      "the cost of fast-filling the whole lineup together",
+      "an adjustment from the power provider",
+      "our heaviest single stretch of consumption"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Driver Insurance & Claims",
+   "aliases": [
+    "insurance",
+    "fleet insurance",
+    "claims",
+    "liability costs",
+    "coverage spend"
+   ],
+   "narrative": [
+    "Insurance",
+    "Fleet insurance",
+    "Claims"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Commercial Underwriters",
+     "base": 27000,
+     "memo": "Monthly commercial auto premium installment"
+    },
+    {
+     "vendor": "Keystone Risk Administrators",
+     "base": 4800,
+     "memo": "TPA claims handling fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "settlement",
+     "vendor": "Keystone Risk Administrators",
+     "memos": [
+      "Passenger injury settlement - Docket 22-1187",
+      "Passenger injury settlement - defense counsel fees Docket 22-1187"
+     ],
+     "cross_memo": "Passenger injury settlement - medical lien payoff",
+     "plain": [
+      "the passenger injury settlement",
+      "the passenger injury settlement payout",
+      "the passenger injury settlement docket"
+     ],
+     "oblique": [
+      "a rider who got hurt in a crash",
+      "the lawsuit we chose to resolve",
+      "paying to make a legal dispute go away",
+      "a collision that ended up in court",
+      "lawyers on both sides finally agreeing",
+      "a bad night on the expressway",
+      "what the plaintiff walked away with",
+      "a case we decided not to try",
+      "money we owed after an accident",
+      "the lengthy dispute that finally closed",
+      "outside attorneys billing hours on one matter",
+      "an old incident that finally wrapped up",
+      "a claim that exceeded our deductible",
+      "the legal wrap-up of a serious wreck",
+      "costs from a crash involving a customer",
+      "the negotiated end of a courtroom fight"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "telematics",
+     "vendor": "DriveSafe Analytics Group",
+     "memos": [
+      "Dashcam telematics rollout - install labor WO 6120",
+      "Dashcam telematics rollout - hardware units PO 6121"
+     ],
+     "cross_memo": "Dashcam telematics rollout - premium discount credit",
+     "plain": [
+      "the dashcam telematics rollout",
+      "the dashcam telematics hardware",
+      "the dashcam telematics install"
+     ],
+     "oblique": [
+      "cameras watching the road and the driver",
+      "a program meant to lower our premiums",
+      "the carrier asking for better evidence",
+      "monitoring devices going into every windshield mount",
+      "a safety initiative from the underwriter",
+      "proving fault when something goes wrong",
+      "tracking harsh braking across the fleet",
+      "the technology we adopted to cut accident rates",
+      "an outside firm wiring up the cars",
+      "what we spent to document trips",
+      "new gadgets recording each shift",
+      "an effort to coach drivers on habits",
+      "equipment that pays for itself in claims",
+      "the pilot expanded to every vehicle",
+      "a data-gathering project aimed at cheaper cover",
+      "installing recorders in each unit"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Driver Payments & Incentives",
+   "aliases": [
+    "driver pay",
+    "driver incentives",
+    "payouts",
+    "driver bonuses",
+    "earnings guarantees"
+   ],
+   "narrative": [
+    "Driver pay",
+    "Driver incentives",
+    "Payouts"
+   ],
+   "recurring": [
+    {
+     "vendor": "PayRoad Settlement Services",
+     "base": 29800,
+     "memo": "Weekly driver settlement batch"
+    },
+    {
+     "vendor": "Roadwise Benefits Co-op",
+     "base": 7600,
+     "memo": "Driver health stipend funding"
+    }
+   ],
+   "events": [
+    {
+     "key": "airportbonus",
+     "vendor": "PayRoad Settlement Services",
+     "memos": [
+      "Airport surge guarantee bonus - promo code AP24",
+      "Airport surge guarantee bonus - top-up batch 18"
+     ],
+     "cross_memo": "Airport surge guarantee bonus - promo marketing spend",
+     "plain": [
+      "the airport surge guarantee bonus",
+      "the airport surge guarantee top-up",
+      "the airport surge guarantee promo"
+     ],
+     "oblique": [
+      "paying extra to get cars to the terminals",
+      "a lure for drivers during the holiday rush",
+      "too few cars waiting where the travelers were",
+      "the premium we offered to fill late-night gaps",
+      "making sure arrivals never waited",
+      "a short-term sweetener for long queue hours",
+      "money to move supply to a hot spot",
+      "what we paid to keep the flights covered",
+      "a promotion run during the busiest travel week",
+      "drivers chasing the guaranteed minimum",
+      "a competitive response to a rival's offer",
+      "topping up earnings so people showed up",
+      "the cost of fixing a shortage of vehicles",
+      "a temporary pay boost for one location",
+      "extra pay that pulled cars toward the runways",
+      "an offer designed to end customer complaints about waits"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "referral",
+     "vendor": "HireHarbor Recruiting",
+     "memos": [
+      "New driver referral bounty - cohort 7 INV 88120",
+      "New driver referral bounty - onboarding bonus INV 88131"
+     ],
+     "cross_memo": "New driver referral bounty - background check batch",
+     "plain": [
+      "the new driver referral bounty",
+      "the driver referral bounty cohort",
+      "the referral bounty onboarding bonus"
+     ],
+     "oblique": [
+      "a hiring push after several resignations",
+      "paying people to bring in their friends",
+      "the recruiting drive that filled empty seats",
+      "attrition we had to replace quickly",
+      "a campaign to grow our roster before the season",
+      "incentives for signing up fresh talent",
+      "an outside agency finding us warm bodies",
+      "the cost of rebuilding headcount",
+      "a staffing shortfall following the winter",
+      "cash rewards for word-of-mouth hiring",
+      "training the newest batch to be road-ready",
+      "what we paid to expand capacity",
+      "an effort to staff the new suburban zone",
+      "enticing people to join our ranks",
+      "the group that started working for us last month",
+      "a wave of recruits we paid to attract"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Vehicle Leases & Financing",
+   "aliases": [
+    "leases",
+    "vehicle leases",
+    "fleet financing",
+    "lease payments",
+    "car notes"
+   ],
+   "narrative": [
+    "Leases",
+    "Vehicle leases",
+    "Lease payments"
+   ],
+   "recurring": [
+    {
+     "vendor": "Capstone Auto Leasing",
+     "base": 30000,
+     "memo": "Monthly lease payments - sedan block"
+    },
+    {
+     "vendor": "Meridian Equipment Finance",
+     "base": 14500,
+     "memo": "Installment note - minivan units"
+    }
+   ],
+   "events": [
+    {
+     "key": "earlyreturn",
+     "vendor": "Capstone Auto Leasing",
+     "memos": [
+      "Lease termination penalty - early return Lot C",
+      "Lease termination penalty - excess wear assessment Lot C"
+     ],
+     "cross_memo": "Lease termination penalty - remarketing transport",
+     "plain": [
+      "the lease termination penalty",
+      "the lease termination early return",
+      "the lease termination wear assessment"
+     ],
+     "oblique": [
+      "handing back cars before the contract ended",
+      "a decision to shrink the active roster",
+      "fees for leaving the arrangement ahead of schedule",
+      "scratches and dents the owner charged us for",
+      "downsizing after demand softened",
+      "getting out from under underused vehicles",
+      "an audit of the returned cars' condition",
+      "what we owed for walking away early",
+      "a strategic retreat from an expensive batch",
+      "cars coming back with more mileage than allowed",
+      "unwinding a commitment we no longer needed",
+      "charges after the lessor inspected the lot",
+      "reducing capacity in a slow quarter",
+      "cost of cutting ties with older units",
+      "a cleanup of the books after returning units",
+      "consequences of ending the agreement too soon"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "medallion",
+     "vendor": "Cityhall Licensing Brokers",
+     "memos": [
+      "Medallion transfer financing - closing costs Ref 5501",
+      "Medallion transfer financing - broker fee Ref 5502"
+     ],
+     "cross_memo": "Medallion transfer financing - title and filing",
+     "plain": [
+      "the medallion transfer financing",
+      "the medallion transfer closing costs",
+      "the medallion transfer broker fee"
+     ],
+     "oblique": [
+      "buying the right to operate additional cabs",
+      "a purchase that took months of paperwork",
+      "a municipal permit changing hands",
+      "acquiring operating authority from a retiring owner",
+      "the middleman who arranged the sale",
+      "costs attached to expanding our legal footprint",
+      "a regulated asset we bought outright",
+      "paperwork at the city office",
+      "the price of adding licensed capacity",
+      "an investment in our right to pick up street hails",
+      "a seller exiting the business and us stepping in",
+      "fees for brokering a license deal",
+      "one of the larger one-time acquisitions this year",
+      "what it cost to own another permit",
+      "a closing that finally went through",
+      "the arrangement to grow our authorized count"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Dispatch & Platform Technology",
+   "aliases": [
+    "dispatch",
+    "dispatch software",
+    "platform fees",
+    "app costs",
+    "tech stack"
+   ],
+   "narrative": [
+    "Dispatch",
+    "Platform fees",
+    "Tech stack"
+   ],
+   "recurring": [
+    {
+     "vendor": "RouteMind Dispatch Systems",
+     "base": 12500,
+     "memo": "Dispatch platform license - monthly"
+    },
+    {
+     "vendor": "Nimbus Cloud Hosting",
+     "base": 5200,
+     "memo": "Cloud hosting - booking app"
+    },
+    {
+     "vendor": "PingCall Telecom",
+     "base": 3100,
+     "memo": "Driver radio and data plans"
+    }
+   ],
+   "events": [
+    {
+     "key": "appredesign",
+     "vendor": "RouteMind Dispatch Systems",
+     "memos": [
+      "Rider app v4 build - custom development SOW 12",
+      "Rider app v4 build - QA sprint hours SOW 12"
+     ],
+     "cross_memo": "Rider app v4 build - app store developer fees",
+     "plain": [
+      "the rider app v4 build",
+      "the rider app v4 development",
+      "the rider app v4 QA sprint"
+     ],
+     "oblique": [
+      "a fresh look for the customer-facing screens",
+      "engineers working through weekends",
+      "complaints about the old booking experience",
+      "a ground-up rewrite of how people hail us",
+      "contractor hours piled up on one project",
+      "getting competitive with the big apps",
+      "what we spent making ordering simpler",
+      "our customer interface overhaul",
+      "a launch date that kept slipping",
+      "testing the redesigned ordering flow",
+      "the biggest software project of the year",
+      "modernizing what passengers tap on their phones",
+      "feature requests finally getting built",
+      "a project the board pushed for last spring",
+      "upgrading the front end riders see",
+      "an overhaul of the mobile experience"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "cyberbreach",
+     "vendor": "Bastion Security Response",
+     "memos": [
+      "Incident response retainer - ransomware event IR-904",
+      "Incident response retainer - forensic imaging IR-904"
+     ],
+     "cross_memo": "Incident response retainer - customer notification mailing",
+     "plain": [
+      "the incident response ransomware event",
+      "the ransomware forensic imaging",
+      "the incident response retainer"
+     ],
+     "oblique": [
+      "an attack that locked our booking system for a day",
+      "outside experts brought in on short notice",
+      "criminals demanding money from us",
+      "the weekend the whole network went dark",
+      "an emergency call to a security firm",
+      "recovering files from backups",
+      "what we paid to understand how someone got in",
+      "a breach we had to disclose",
+      "hours billed by investigators around the clock",
+      "the scramble to restore bookings",
+      "an intrusion discovered on a Monday",
+      "the cost of cleaning up after hackers",
+      "notifying people whose records were exposed",
+      "an unplanned expense nobody budgeted",
+      "our worst day for the servers",
+      "bringing in specialists to contain an attack"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Depot Facilities & Yard",
+   "aliases": [
+    "depot",
+    "yard costs",
+    "facilities",
+    "garage rent",
+    "lot expenses"
+   ],
+   "narrative": [
+    "Depot costs",
+    "Yard costs",
+    "Facilities"
+   ],
+   "recurring": [
+    {
+     "vendor": "Riverside Industrial Properties",
+     "base": 22000,
+     "memo": "Depot and garage lease - monthly rent"
+    },
+    {
+     "vendor": "CityLine Utilities",
+     "base": 3900,
+     "memo": "Electric water gas - depot"
+    },
+    {
+     "vendor": "SparkleClean Janitorial",
+     "base": 1800,
+     "memo": "Janitorial - dispatch office"
+    }
+   ],
+   "events": [
+    {
+     "key": "lotresurface",
+     "vendor": "Riverside Industrial Properties",
+     "memos": [
+      "Asphalt repaving - north lot pass-through INV 9402",
+      "Asphalt repaving - striping and drainage INV 9406"
+     ],
+     "cross_memo": "Asphalt repaving - temporary parking rental",
+     "plain": [
+      "the asphalt repaving pass-through",
+      "the asphalt repaving striping",
+      "the asphalt repaving drainage work"
+     ],
+     "oblique": [
+      "potholes that were damaging our tires",
+      "the landlord fixing the ground cars park on",
+      "puddles that never drained after storms",
+      "construction crews at the yard for a week",
+      "a long-deferred property improvement",
+      "cars having to park elsewhere for days",
+      "a charge the lease lets the owner pass to us",
+      "the surface drivers kept complaining about",
+      "work on the grounds outside the garage",
+      "contractors tearing up the area behind the building",
+      "repair of a deteriorating outdoor space",
+      "a capital project billed back to tenants",
+      "bumpy surfaces that rattled the cabs",
+      "making the lot safe to walk across",
+      "the improvement that closed half the lot",
+      "a repair the owner insisted could not wait"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "fuelpump",
+     "vendor": "Granite State Tank Services",
+     "memos": [
+      "Underground storage tank removal - permit EPA-3318",
+      "Underground storage tank removal - soil remediation EPA-3318"
+     ],
+     "cross_memo": "Underground storage tank removal - environmental consultant",
+     "plain": [
+      "the underground storage tank removal",
+      "the underground tank soil remediation",
+      "the underground storage tank permit work"
+     ],
+     "oblique": [
+      "an old on-site gasoline reservoir finally retired",
+      "compliance with a regulator's deadline",
+      "digging up something buried decades ago",
+      "contaminated dirt hauled away",
+      "the inspector who flagged our legacy equipment",
+      "closing out an environmental liability",
+      "a project the city required before renewal",
+      "heavy machinery excavating the back corner",
+      "cleanup of ground that might have leaked",
+      "retiring our former in-house pumping setup",
+      "specialists hauling away what was underneath",
+      "an obligation inherited with the property",
+      "testing the earth for traces of petroleum",
+      "a sizable one-off for regulatory peace of mind",
+      "clearing a hazard before the sale of adjacent land",
+      "the removal job that kept the yard fenced off"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

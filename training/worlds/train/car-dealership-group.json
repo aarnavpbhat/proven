@@ -1,0 +1,718 @@
+{
+ "slug": "car-dealership-group",
+ "industry": "car dealership group",
+ "entities": [
+  "Summit Ridge Auto Group",
+  "Harborview Motors Holdings",
+  "Crestline Dealer Partners",
+  "Ironwood Automotive Group",
+  "Bluegrass Motor Retail Co"
+ ],
+ "accounts": [
+  {
+   "name": "Floor Plan Interest",
+   "aliases": [
+    "floor plan",
+    "floorplan interest",
+    "inventory financing",
+    "lot financing",
+    "stocking interest"
+   ],
+   "narrative": [
+    "Floor plan",
+    "Inventory financing",
+    "Lot financing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Captive Finance",
+     "base": 28000,
+     "memo": "Monthly floor plan interest new vehicle inventory"
+    },
+    {
+     "vendor": "Tri-County Bank Wholesale Lending",
+     "base": 14500,
+     "memo": "Monthly floor plan interest used vehicle inventory"
+    }
+   ],
+   "events": [
+    {
+     "key": "auctionbuy",
+     "vendor": "Tri-County Bank Wholesale Lending",
+     "memos": [
+      "Wholesale auction buy — advance draw",
+      "Wholesale auction buy — curtailment fee"
+     ],
+     "cross_memo": "Wholesale auction buy — transport fees",
+     "plain": [
+      "the wholesale auction buy",
+      "the auction buy advance",
+      "the wholesale auction purchases"
+     ],
+     "oblique": [
+      "stocking up the used lot ahead of the spring rush",
+      "the big block of pre-owned units we picked up in bulk",
+      "extra cars sitting on the lot waiting for buyers",
+      "a one-time inventory splash",
+      "our trip to buy trade-ins by the truckload",
+      "loading up on late-model pre-owned stock",
+      "the used-car buying spree",
+      "filling the back row with cheap units",
+      "units we bought to hit the sales target",
+      "the early purchase of a pile of vehicles",
+      "what the used manager grabbed in volume",
+      "a surge of cars sitting unsold",
+      "building up supply before the holiday weekend",
+      "the bulk pickup of lightly driven trade-ins",
+      "the larger pool of cars we are carrying",
+      "the sourcing push by the pre-owned director"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "rateresets",
+     "vendor": "Lakeshore Credit Facility Services",
+     "memos": [
+      "Prime rate reset — adjustment charge",
+      "Prime rate reset — lender true-up"
+     ],
+     "cross_memo": "Prime rate reset — audit fee",
+     "plain": [
+      "the prime rate reset",
+      "the rate reset adjustment",
+      "the prime reset true-up"
+     ],
+     "oblique": [
+      "the lender bumping what we pay on borrowed money",
+      "a jump in the cost of carrying debt",
+      "the central bank move",
+      "higher borrowing costs across the board",
+      "the benchmark moving up a notch",
+      "what the credit committee passed along to us",
+      "pricier money from our funding partner",
+      "a change in the lending terms",
+      "the cost of capital going up",
+      "a bump in what we owe on balances",
+      "the market tightening on credit",
+      "how the bank repriced our line",
+      "a hike in the underlying index",
+      "the cost to keep cars on credit lines",
+      "a shift in the borrowing environment",
+      "what the finance partner charged us on the revised schedule"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Demo and Loaner Vehicle Expense",
+   "aliases": [
+    "demo fleet",
+    "loaner cars",
+    "demo expense",
+    "courtesy vehicles",
+    "loaner program"
+   ],
+   "narrative": [
+    "Loaner program",
+    "Demo fleet",
+    "Courtesy vehicles"
+   ],
+   "recurring": [
+    {
+     "vendor": "Apex Fleet Leasing",
+     "base": 9500,
+     "memo": "Monthly lease payments demo vehicles"
+    },
+    {
+     "vendor": "RoadSafe Insurance Agency",
+     "base": 3200,
+     "memo": "Monthly insurance premium demo and loaner units"
+    },
+    {
+     "vendor": "Quick Turn Detailing",
+     "base": 1800,
+     "memo": "Weekly detail on loaner vehicles"
+    }
+   ],
+   "events": [
+    {
+     "key": "hailstorm",
+     "vendor": "Quick Turn Detailing",
+     "memos": [
+      "Hail damage repair — paintless dent removal",
+      "Hail damage repair — windshield replacements"
+     ],
+     "cross_memo": "Hail damage repair — insurance deductible",
+     "plain": [
+      "the hail damage repair",
+      "the hail repair work",
+      "the hail damage cleanup"
+     ],
+     "oblique": [
+      "the storm that hit the back lot overnight",
+      "cosmetic fixes on cars that sat outside",
+      "dimples across the roofs and hoods",
+      "the weather event in late afternoon",
+      "getting the units showroom-ready again",
+      "the bodywork on our courtesy cars",
+      "what the sky did to our fleet",
+      "the cleanup after the freak weather",
+      "restoring the cars that got pelted",
+      "insurance work on the pocked panels",
+      "the storm claim on our units",
+      "smoothing out the roofs",
+      "getting the glass swapped on a dozen vehicles",
+      "damage that came from the sky",
+      "reconditioning cars that were left uncovered",
+      "the aftermath of the severe weather alert"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "evpilot",
+     "vendor": "Voltway Mobility Partners",
+     "memos": [
+      "Electric vehicle pilot — charger install",
+      "Electric vehicle pilot — lease prepay"
+     ],
+     "cross_memo": "Electric vehicle pilot — electrical permit",
+     "plain": [
+      "the electric vehicle pilot",
+      "the EV pilot charger install",
+      "the electric pilot lease prepay"
+     ],
+     "oblique": [
+      "trying out battery-powered cars for customers",
+      "the green initiative the owner wanted",
+      "a test of zero-emission rides",
+      "plugging in new models for service guests",
+      "the sustainability experiment",
+      "the corporate push toward low-emission options",
+      "what we set up to attract eco-minded shoppers",
+      "our first batch of plug-in units",
+      "the new power hookups out back",
+      "a trial run with the manufacturer rep",
+      "the program to loan out cleaner vehicles",
+      "wiring for the next-generation cars",
+      "the early adopter program",
+      "the manufacturer-sponsored trial",
+      "the shift toward next-generation propulsion",
+      "a small experiment to see how guests respond"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Service Department Parts and Supplies",
+   "aliases": [
+    "shop supplies",
+    "service parts",
+    "fixed ops supplies",
+    "parts and supplies",
+    "service department consumables"
+   ],
+   "narrative": [
+    "Shop supplies",
+    "Service parts",
+    "Fixed ops supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northline OEM Parts Distribution",
+     "base": 22000,
+     "memo": "Monthly parts order replenishment"
+    },
+    {
+     "vendor": "Garage Gear Supply",
+     "base": 4500,
+     "memo": "Shop towels gloves and cleaning chemicals"
+    },
+    {
+     "vendor": "ClearFlow Fluids Inc",
+     "base": 5600,
+     "memo": "Bulk oil and coolant delivery"
+    }
+   ],
+   "events": [
+    {
+     "key": "recallwave",
+     "vendor": "Northline OEM Parts Distribution",
+     "memos": [
+      "Brake actuator recall — kit order",
+      "Brake actuator recall — expedited freight"
+     ],
+     "cross_memo": "Brake actuator recall — technician overtime",
+     "plain": [
+      "the brake actuator recall",
+      "the actuator recall kit order",
+      "the brake recall freight"
+     ],
+     "oblique": [
+      "the safety notice from the manufacturer",
+      "a flood of customers needing the same fix",
+      "the mandatory campaign on one model line",
+      "what the factory told us to repair at no charge",
+      "a rush of identical jobs",
+      "the corrective program mandated by regulators",
+      "the parts crunch on a single component",
+      "when the whole lot had to come in for one repair",
+      "the factory bulletin that backed up the shop",
+      "the nationwide notice",
+      "the cars we had to call back",
+      "a batch of warranty work all at once",
+      "the unexpected demand on one part number",
+      "the campaign the carmaker announced",
+      "a wave of appointments for the same problem",
+      "the stockpile of identical components we needed"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "liftupgrade",
+     "vendor": "Pinnacle Shop Equipment",
+     "memos": [
+      "Two-post lift upgrade — hydraulic units",
+      "Two-post lift upgrade — anchor bolts"
+     ],
+     "cross_memo": "Two-post lift upgrade — concrete cutting",
+     "plain": [
+      "the two-post lift upgrade",
+      "the lift upgrade hydraulics",
+      "the two-post lift anchor work"
+     ],
+     "oblique": [
+      "modernizing the bays where techs raise vehicles",
+      "new equipment for the garage floor",
+      "replacing the old hoists that failed inspection",
+      "the capital refresh in the back shop",
+      "getting the technicians better tools",
+      "the shop expansion project",
+      "what the service director asked for last quarter",
+      "the machinery that holds cars aloft",
+      "upgrading the stalls for heavier trucks",
+      "the swap of aging hardware",
+      "the safety audit finding on the equipment",
+      "the buildout for the new bay",
+      "hardware for the extra capacity",
+      "the project to handle larger vehicles",
+      "what the insurer insisted we replace",
+      "the new gear in the workshop"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Dealer Advertising and Lead Generation",
+   "aliases": [
+    "advertising",
+    "marketing spend",
+    "lead gen",
+    "ad spend",
+    "dealer marketing"
+   ],
+   "narrative": [
+    "Advertising",
+    "Marketing spend",
+    "Lead gen"
+   ],
+   "recurring": [
+    {
+     "vendor": "DriveClick Digital Marketing",
+     "base": 18000,
+     "memo": "Monthly search and display campaign management"
+    },
+    {
+     "vendor": "AutoMatch Listings",
+     "base": 7200,
+     "memo": "Third party vehicle listing subscriptions"
+    },
+    {
+     "vendor": "Valley Broadcast Media",
+     "base": 9400,
+     "memo": "Local radio and TV spots"
+    }
+   ],
+   "events": [
+    {
+     "key": "truckmonth",
+     "vendor": "DriveClick Digital Marketing",
+     "memos": [
+      "Truck month blowout — creative production",
+      "Truck month blowout — boosted ad budget"
+     ],
+     "cross_memo": "Truck month blowout — sales staff spiffs",
+     "plain": [
+      "the truck month blowout",
+      "the blowout creative production",
+      "the truck month ad boost"
+     ],
+     "oblique": [
+      "the big seasonal promotion on pickups",
+      "our annual push to move heavy-duty inventory",
+      "the factory incentive weekend",
+      "the sales event the GM planned",
+      "a monthlong promo with extra airtime",
+      "what we spent to get the lot buzzing",
+      "the campaign tied to quarter-end targets",
+      "a themed sale with louder messaging",
+      "the holiday offers push",
+      "increased exposure around a manufacturer promotion",
+      "the loud event we hosted for buyers",
+      "a short burst of high-visibility offers",
+      "what the regional rep requested for volume",
+      "the limited-time offers we advertised",
+      "the surge in promos to draw foot traffic",
+      "the extra budget for a themed event"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "rebrandsign",
+     "vendor": "Brightline Signage and Graphics",
+     "memos": [
+      "Showroom rebrand — monument sign",
+      "Showroom rebrand — vinyl wraps"
+     ],
+     "cross_memo": "Showroom rebrand — permit fees",
+     "plain": [
+      "the showroom rebrand",
+      "the rebrand monument sign",
+      "the showroom rebrand wraps"
+     ],
+     "oblique": [
+      "the new look the manufacturer required",
+      "refreshing how the building appears from the road",
+      "the corporate identity update",
+      "what the brand standards team mandated",
+      "updating the face of the store",
+      "the image overhaul at our flagship",
+      "the new logo going up out front",
+      "the facelift for our highway visibility",
+      "a response to the OEM image program",
+      "the redesign of the storefront",
+      "getting the visual style current",
+      "what customers see when they drive by",
+      "the compliance push with the franchisor",
+      "the changeover from the old colors",
+      "exterior updates at the main location",
+      "the new colors on everything outside"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Floor Staff Commissions and Spiffs",
+   "aliases": [
+    "commissions",
+    "sales commissions",
+    "spiffs",
+    "sales pay",
+    "salesperson incentives"
+   ],
+   "narrative": [
+    "Commissions",
+    "Sales pay",
+    "Spiffs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Payroll Partners Processing",
+     "base": 30000,
+     "memo": "Monthly salesperson commissions per payroll register"
+    },
+    {
+     "vendor": "ProMotive Incentives",
+     "base": 2500,
+     "memo": "Monthly sales contest prizes"
+    }
+   ],
+   "events": [
+    {
+     "key": "bonusquarter",
+     "vendor": "Payroll Partners Processing",
+     "memos": [
+      "Record quarter payout — manager bonus pool",
+      "Record quarter payout — true-up commissions"
+     ],
+     "cross_memo": "Record quarter payout — employer payroll tax",
+     "plain": [
+      "the record quarter payout",
+      "the record payout bonus pool",
+      "the record quarter true-up"
+     ],
+     "oblique": [
+      "the best stretch we ever had",
+      "hitting every volume target",
+      "extra pay for hitting goals",
+      "what the owner promised the team",
+      "the windfall for the sales floor",
+      "the top-performer awards",
+      "strong numbers across all brands",
+      "a stretch where everyone exceeded plan",
+      "the generous reward for the crew",
+      "the milestone achievement celebration",
+      "rewarding the closers",
+      "unusually high deliveries",
+      "the outcome of an unmatched stretch",
+      "what the finance office paid out after targets were beaten",
+      "the bumper crop of deals",
+      "cash to the people who moved metal"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "newhires",
+     "vendor": "Elite Talent Recruiters",
+     "memos": [
+      "Sales team expansion — recruiter placement fees",
+      "Sales team expansion — signing guarantees"
+     ],
+     "cross_memo": "Sales team expansion — training materials",
+     "plain": [
+      "the sales team expansion",
+      "the expansion placement fees",
+      "the sales expansion signing guarantees"
+     ],
+     "oblique": [
+      "adding heads to the showroom floor",
+      "the hiring surge ahead of the new franchise",
+      "getting fresh faces on the team",
+      "what we paid to find new people",
+      "staffing up for the second location",
+      "the recruiting drive in the fall",
+      "guaranteed pay for new folks learning the ropes",
+      "bringing in talent from competitors",
+      "building out the team before launch",
+      "the cost of filling open positions",
+      "the headcount push",
+      "new colleagues with minimum pay promises",
+      "the agency we hired to fill seats",
+      "onboarding a larger group at once",
+      "the talent search the GM approved",
+      "welcoming a cohort of newcomers"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Reconditioning and Detail Costs",
+   "aliases": [
+    "recon",
+    "reconditioning",
+    "recon costs",
+    "detail and prep",
+    "used car prep"
+   ],
+   "narrative": [
+    "Recon",
+    "Reconditioning",
+    "Used car prep"
+   ],
+   "recurring": [
+    {
+     "vendor": "ProFinish Auto Body",
+     "base": 12000,
+     "memo": "Body shop work on used inventory"
+    },
+    {
+     "vendor": "Tread Masters Tire",
+     "base": 6800,
+     "memo": "Tires for used units before sale"
+    },
+    {
+     "vendor": "Shine Station Detail",
+     "base": 5200,
+     "memo": "Detail and prep service lot cars"
+    }
+   ],
+   "events": [
+    {
+     "key": "floodcars",
+     "vendor": "ProFinish Auto Body",
+     "memos": [
+      "Flood vehicle salvage — interior extraction",
+      "Flood vehicle salvage — electrical dry-out"
+     ],
+     "cross_memo": "Flood vehicle salvage — title processing",
+     "plain": [
+      "the flood vehicle salvage",
+      "the flood salvage interior work",
+      "the flood vehicle dry-out"
+     ],
+     "oblique": [
+      "the cars that sat in high water",
+      "damage from the storm surge",
+      "rescuing units that were submerged",
+      "what the waterlogged cars needed",
+      "the insurance buyback batch",
+      "cleanup on soaked carpets and wiring",
+      "the swampy pre-owned group",
+      "vehicles pulled from the river overflow",
+      "getting wet cars sellable again",
+      "a recovery effort after the weather",
+      "the unlucky shipment from the coast",
+      "saving inventory from moisture",
+      "restoring stock that went underwater",
+      "what the claims adjuster flagged",
+      "the batch the auction warned us about",
+      "units we had to rehabilitate completely"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "certprogram",
+     "vendor": "Keystone Certification Services",
+     "memos": [
+      "Certified pre-owned program — inspection audit",
+      "Certified pre-owned program — badge kits"
+     ],
+     "cross_memo": "Certified pre-owned program — warranty reserve",
+     "plain": [
+      "the certified pre-owned program",
+      "the certified program inspection audit",
+      "the certified pre-owned badge kits"
+     ],
+     "oblique": [
+      "the premium used-car tier we launched",
+      "a more rigorous check on late-model units",
+      "the manufacturer-backed resale initiative",
+      "upgrading how we market our best used cars",
+      "the standards that earn a longer coverage promise",
+      "what customers get for paying more",
+      "the inspection regimen we now follow",
+      "our elevated resale offering",
+      "a program that lifts used margins",
+      "the credentialing of the better inventory",
+      "getting approved to sell the top tier",
+      "the stamp of approval for gently used cars",
+      "a higher bar for what we put on the front line",
+      "the rollout the regional office pushed",
+      "the added assurance for shoppers",
+      "the new label on the best units"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Dealer Insurance and Garage Liability",
+   "aliases": [
+    "dealer insurance",
+    "garage liability",
+    "insurance premiums",
+    "garagekeepers coverage",
+    "liability coverage"
+   ],
+   "narrative": [
+    "Dealer insurance",
+    "Garage liability",
+    "Liability coverage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Dealer Insurance",
+     "base": 16000,
+     "memo": "Monthly garage liability premium"
+    },
+    {
+     "vendor": "Cornerstone Workers Comp",
+     "base": 8500,
+     "memo": "Monthly workers compensation premium"
+    },
+    {
+     "vendor": "Shield Property Underwriters",
+     "base": 4800,
+     "memo": "Property and inventory coverage premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "theftclaim",
+     "vendor": "Sentinel Dealer Insurance",
+     "memos": [
+      "Catalytic converter theft — claim deductible",
+      "Catalytic converter theft — surcharge"
+     ],
+     "cross_memo": "Catalytic converter theft — security cameras",
+     "plain": [
+      "the catalytic converter theft",
+      "the converter theft deductible",
+      "the catalytic theft surcharge"
+     ],
+     "oblique": [
+      "the break-in on the back lot",
+      "what thieves took from our parked cars",
+      "the crime wave in our neighborhood",
+      "extra patrols and lighting after the incident",
+      "parts stolen from the inventory overnight",
+      "the police report we had to file",
+      "a higher premium after the loss",
+      "the insurer reacting to repeated losses",
+      "vandalism that stripped vehicles underneath",
+      "the cost of the criminals' visit",
+      "getting the lot locked down",
+      "the aftermath of the weekend heist",
+      "what the claims adjuster counted",
+      "stolen exhaust components",
+      "securing the fence line",
+      "the incident that prompted new safeguards"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "cyberbreach",
+     "vendor": "Fortress Cyber Risk Group",
+     "memos": [
+      "Data incident response — forensic review",
+      "Data incident response — notification mailing"
+     ],
+     "cross_memo": "Data incident response — credit monitoring",
+     "plain": [
+      "the data incident response",
+      "the incident forensic review",
+      "the data incident notification mailing"
+     ],
+     "oblique": [
+      "the hacker who got into customer records",
+      "what we had to tell buyers about exposed information",
+      "an intrusion into our network",
+      "the compromised credit applications",
+      "investigating who accessed the files",
+      "mandatory outreach to affected people",
+      "the security lapse the vendor reported",
+      "protecting folks whose details leaked",
+      "the ransomware scare",
+      "what the lawyers advised after the leak",
+      "tightening the systems that failed",
+      "a stolen laptop with sensitive files",
+      "the cleanup after the digital attack",
+      "regulatory obligations after exposure",
+      "the call from the finance manager about stolen identities",
+      "an unwelcome break into our systems"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

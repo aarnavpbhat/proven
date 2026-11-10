@@ -1,0 +1,718 @@
+{
+ "slug": "glass-and-window-installer",
+ "industry": "glass and window installer",
+ "entities": [
+  "Clearview Glazing Works",
+  "Pinnacle Pane & Frame Co.",
+  "Harborlight Window Installers",
+  "Meridian Glass & Glazing",
+  "Brightside Fenestration Group"
+ ],
+ "accounts": [
+  {
+   "name": "Glass & Glazing Materials",
+   "aliases": [
+    "glass",
+    "glass purchases",
+    "glazing materials",
+    "glass stock",
+    "materials spend"
+   ],
+   "narrative": [
+    "Glass purchases",
+    "Glazing materials",
+    "Glass stock"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pacific Float Glass Supply",
+     "base": 28000,
+     "memo": "Inv float glass 1/4in clear sheets"
+    },
+    {
+     "vendor": "Apex IGU Fabricators",
+     "base": 19500,
+     "memo": "Insulated glass units - std order"
+    },
+    {
+     "vendor": "Tri-State Sealants & Gaskets",
+     "base": 6200,
+     "memo": "Silicone, setting blocks, gaskets"
+    }
+   ],
+   "events": [
+    {
+     "key": "laminate",
+     "vendor": "Pacific Float Glass Supply",
+     "memos": [
+      "Laminated safety lite - Tower Annex",
+      "Interlayer PVB upcharge - Tower Annex"
+     ],
+     "cross_memo": "Laminated safety lite - Tower Annex rigging crane",
+     "plain": [
+      "the laminated safety lite",
+      "the Tower Annex laminated glass",
+      "the Tower Annex interlayer"
+     ],
+     "oblique": [
+      "the hurricane-rated panes for the waterfront high-rise",
+      "stronger glazing the city demanded",
+      "a specialty order for the tall building job",
+      "shatter-resistant panels the architect specified",
+      "the premium product on our biggest bid",
+      "upgraded panels for the coastal tower",
+      "impact-proof units",
+      "the expensive spec change",
+      "what the insurer made the owner buy",
+      "the heavy storm-resistant order",
+      "glass that holds together when struck",
+      "special-order lites with long lead times",
+      "the high-rise client's upgraded specification",
+      "pricier units than the quote assumed",
+      "anti-break glazing for the new wing",
+      "the safety-rated order"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "fritted",
+     "vendor": "Cascade Architectural Coatings",
+     "memos": [
+      "Fritted ceramic print - Lakeside Atrium",
+      "Silkscreen pattern tooling - Lakeside Atrium"
+     ],
+     "cross_memo": "Fritted ceramic print - Lakeside Atrium sample mockups",
+     "plain": [
+      "the fritted ceramic print",
+      "the Lakeside Atrium silkscreen",
+      "the Lakeside Atrium pattern tooling"
+     ],
+     "oblique": [
+      "decorative dotted panes for the museum lobby",
+      "the custom artwork on the big entry glass",
+      "patterns that cut solar glare",
+      "a one-off design commissioned by the designer",
+      "the stylized panels for the showpiece building",
+      "an artist's look on the windows",
+      "the bespoke visual treatment",
+      "tooling we will never reuse",
+      "a special finish ordered by the client's architect",
+      "samples we made before approval",
+      "the shaded-look panels for the sunroom",
+      "decorative work outsourced to a coater",
+      "the look the owner wanted for the front elevation",
+      "a boutique printing job",
+      "visual patterning on the facade",
+      "the high-end cosmetic order"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Installation Crew Subcontractors",
+   "aliases": [
+    "subs",
+    "subcontractors",
+    "sub labor",
+    "install subs",
+    "crew subcontractors"
+   ],
+   "narrative": [
+    "Subcontractors",
+    "Sub labor",
+    "Install subs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northgate Glazing Crews LLC",
+     "base": 24000,
+     "memo": "Svc install labor - weekly crew"
+    },
+    {
+     "vendor": "Ironline Rigging & Hoist",
+     "base": 9500,
+     "memo": "Mnt rigging support - monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "overtime",
+     "vendor": "Northgate Glazing Crews LLC",
+     "memos": [
+      "Weekend premium shift - Harbor Hospital",
+      "Night crew surcharge - Harbor Hospital"
+     ],
+     "cross_memo": "Weekend premium shift - Harbor Hospital security escorts",
+     "plain": [
+      "the weekend premium shift",
+      "the Harbor Hospital night surcharge",
+      "the Harbor Hospital premium shift"
+     ],
+     "oblique": [
+      "work done outside normal business hours at the clinic",
+      "off-hours labor so patients were not disturbed",
+      "rush pay to meet the opening date",
+      "extra pay for graveyard work",
+      "the schedule squeeze at the medical campus",
+      "paying people more to finish sooner",
+      "after-dark installation",
+      "the accelerated timeline",
+      "premium rates our crew lead negotiated",
+      "catching up on a delayed schedule",
+      "the crunch before the inspection",
+      "working while the building was empty",
+      "the cost of speed on the healthcare job",
+      "unsociable-hours labor",
+      "extra pay to hit the deadline",
+      "the compressed schedule at the medical site"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "steelcurtain",
+     "vendor": "Redwood Curtain Wall Erectors",
+     "memos": [
+      "Unitized curtain wall erection - Civic Plaza",
+      "Stick-built mullion setup - Civic Plaza"
+     ],
+     "cross_memo": "Unitized curtain wall erection - Civic Plaza scaffold lease",
+     "plain": [
+      "the unitized curtain wall erection",
+      "the Civic Plaza mullion setup",
+      "the Civic Plaza curtain wall work"
+     ],
+     "oblique": [
+      "outside specialists brought in for the government building",
+      "skills our own people lack",
+      "the large facade assembly team",
+      "extra hands for the municipal contract",
+      "a specialist crew for the big envelope",
+      "the outsourced portion of the city job",
+      "work our regulars could not staff",
+      "the exterior wall subcontract",
+      "a one-time engagement for the public project",
+      "borrowed expertise on the tall facade",
+      "the team from out of town",
+      "the outside erector hired for the plaza",
+      "specialized assembly of the building skin",
+      "the city project's outsourced scope",
+      "labor beyond our headcount",
+      "the municipal job's special crew"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Fleet & Glass Transport",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "trucks",
+    "vehicle costs",
+    "delivery fleet"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Truck expense",
+    "Delivery fleet"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Fleet Fuel Cards",
+     "base": 8800,
+     "memo": "Fuel card statement - 14 vehicles"
+    },
+    {
+     "vendor": "Allied A-Frame Truck Service",
+     "base": 4300,
+     "memo": "Mnt A-frame racks and trucks"
+    },
+    {
+     "vendor": "Summit Commercial Insurance",
+     "base": 3600,
+     "memo": "Qtr auto liability premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "liftgate",
+     "vendor": "Allied A-Frame Truck Service",
+     "memos": [
+      "Hydraulic liftgate rebuild - Unit 7",
+      "Cylinder reseal and valve swap - Unit 7"
+     ],
+     "cross_memo": "Hydraulic liftgate rebuild - Unit 7 loaner van",
+     "plain": [
+      "the hydraulic liftgate rebuild",
+      "the Unit 7 cylinder reseal",
+      "the Unit 7 valve swap"
+     ],
+     "oblique": [
+      "getting the heavy hauler lifting again",
+      "repairs after the truck failed on a jobsite",
+      "the big vehicle that was out of action",
+      "fixing the thing that raises panels onto the bed",
+      "downtime on our main delivery rig",
+      "the mechanical failure we did not budget",
+      "restoring the loading mechanism",
+      "work on the truck that carries oversize panes",
+      "the breakdown last month",
+      "overhaul of the machinery on the rear of the truck",
+      "an unplanned shop visit for the largest vehicle",
+      "costly repair on a key asset",
+      "making the loader work again",
+      "the equipment that stopped working at the dock",
+      "a mechanical fix we could not defer",
+      "reviving the truck's lifting gear"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "wrap",
+     "vendor": "Bayline Vehicle Graphics",
+     "memos": [
+      "Full vinyl rebrand wrap - 6 trucks",
+      "Decal removal and reprint - 6 trucks"
+     ],
+     "cross_memo": "Full vinyl rebrand wrap - 6 trucks design proofs",
+     "plain": [
+      "the full vinyl rebrand wrap",
+      "the 6 trucks decal reprint",
+      "the 6 trucks design proofs"
+     ],
+     "oblique": [
+      "new logos on the vehicles",
+      "the corporate image refresh on the road",
+      "repainting our public face",
+      "marketing on wheels",
+      "the new look for our fleet",
+      "getting the old name off the vehicles",
+      "the visual identity update",
+      "advertising we carry down the road",
+      "a one-time cosmetic project",
+      "the redesign the owner approved",
+      "updated artwork for our service vehicles",
+      "the branding project",
+      "making the trucks match the new website",
+      "the cost of changing how we appear",
+      "a facelift for the rolling stock",
+      "sticker work after the name change"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Shop Equipment & Tooling",
+   "aliases": [
+    "shop equipment",
+    "tooling",
+    "equipment costs",
+    "shop tools",
+    "cutting equipment"
+   ],
+   "narrative": [
+    "Shop equipment",
+    "Tooling costs",
+    "Equipment spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Diamond Edge Tool Supply",
+     "base": 3800,
+     "memo": "Cutting wheels, suction cups, bits"
+    },
+    {
+     "vendor": "Precision CNC Service Co",
+     "base": 5200,
+     "memo": "Mnt glass cutting table - monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "waterjet",
+     "vendor": "Precision CNC Service Co",
+     "memos": [
+      "Waterjet pump replacement - intensifier",
+      "Abrasive feed retrofit - intensifier"
+     ],
+     "cross_memo": "Waterjet pump replacement - intensifier expedited freight",
+     "plain": [
+      "the waterjet pump replacement",
+      "the intensifier retrofit",
+      "the waterjet abrasive feed"
+     ],
+     "oblique": [
+      "restoring the machine that cuts shapes in thick panels",
+      "the big fabrication machine that went down",
+      "repairs to our most expensive shop asset",
+      "high-pressure cutter overhaul",
+      "fixing the unit behind our custom orders",
+      "the equipment we could not run without",
+      "a failure in the core production tool",
+      "the water-powered cutting system",
+      "emergency work on the shop's centerpiece",
+      "getting custom curved shapes back on schedule",
+      "the pressure system replacement",
+      "an urgent fix on the cutter",
+      "the pump that gave out",
+      "machinery that quit mid-order",
+      "the heavy capital repair",
+      "restart of our specialty cutting line"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "temperfurnace",
+     "vendor": "Lakeshore Thermal Systems",
+     "memos": [
+      "Tempering oven element kit - 12 zones",
+      "Rollers and conveyor refit - 12 zones"
+     ],
+     "cross_memo": "Tempering oven element kit - 12 zones calibration visit",
+     "plain": [
+      "the tempering oven element kit",
+      "the 12 zones conveyor refit",
+      "the 12 zones rollers"
+     ],
+     "oblique": [
+      "heat-strengthening line refurbishment",
+      "the furnace that toughens our panes",
+      "upgrade of the equipment that makes safety glass",
+      "maintenance the manufacturer insisted on",
+      "the baking line overhaul",
+      "the capital refresh in the back of the shop",
+      "keeping production certified",
+      "the hot equipment we depend on",
+      "reconditioning that was overdue",
+      "making our own strengthened product again",
+      "the oven restoration",
+      "a refurbishment after years of wear",
+      "the line that hardens finished panes",
+      "scheduled heavy servicing of production gear",
+      "the glowing machinery rebuild",
+      "parts to keep the strengthening process running"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Insurance & Bonding",
+   "aliases": [
+    "insurance",
+    "bonding",
+    "bonds and insurance",
+    "coverage costs",
+    "surety"
+   ],
+   "narrative": [
+    "Insurance",
+    "Bonding costs",
+    "Coverage costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite State General Liability",
+     "base": 7400,
+     "memo": "Mo GL premium installment"
+    },
+    {
+     "vendor": "Sentinel Workers Comp Group",
+     "base": 9100,
+     "memo": "Mo WC premium installment"
+    },
+    {
+     "vendor": "Anchor Surety Services",
+     "base": 2100,
+     "memo": "Mo bond maintenance fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "claimdeduct",
+     "vendor": "Granite State General Liability",
+     "memos": [
+      "Deductible reimbursement - breakage claim",
+      "Loss adjuster fee - breakage claim"
+     ],
+     "cross_memo": "Deductible reimbursement - breakage claim temporary board-up",
+     "plain": [
+      "the breakage claim deductible",
+      "the breakage claim adjuster fee",
+      "the breakage claim reimbursement"
+     ],
+     "oblique": [
+      "our share of the accident costs",
+      "what we owed after the carrier paid",
+      "the shattered storefront incident",
+      "the cost of an installer's mistake",
+      "a customer's loss we had to cover",
+      "the payout after the pane fell",
+      "money we owed the insurer after a mishap",
+      "a one-time out-of-pocket hit",
+      "the damaged lobby incident",
+      "the portion the policy left to us",
+      "the dropped panel episode",
+      "paying for something that went wrong on site",
+      "a settlement we absorbed",
+      "the unfortunate accident at the retail job",
+      "losses we could not pass on",
+      "the liability event"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "bondpremium",
+     "vendor": "Beacon Surety Partners",
+     "memos": [
+      "Performance bond premium - County Courthouse",
+      "Payment bond issuance - County Courthouse"
+     ],
+     "cross_memo": "Performance bond premium - County Courthouse legal review",
+     "plain": [
+      "the performance bond premium",
+      "the County Courthouse payment bond",
+      "the County Courthouse bond issuance"
+     ],
+     "oblique": [
+      "guarantees the public owner required",
+      "the paperwork to win the government contract",
+      "financial assurance for the new award",
+      "a cost of bidding on public work",
+      "the security demanded before we could start",
+      "pledging our credit for a big job",
+      "the price of qualifying for a large project",
+      "a one-time fee for a government customer",
+      "protection required by the county",
+      "what the contract documents obligated us to buy",
+      "the guaranty for the courthouse renovation",
+      "assurance we would finish the work",
+      "the cost of the municipal award",
+      "upfront charges tied to a new public contract",
+      "backing the owner asked for",
+      "the surety placement"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Job Site Permits & Safety",
+   "aliases": [
+    "permits",
+    "permit fees",
+    "site safety",
+    "jobsite compliance",
+    "safety costs"
+   ],
+   "narrative": [
+    "Permit fees",
+    "Site safety",
+    "Compliance costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "City Building Dept Fees",
+     "base": 2400,
+     "memo": "Permit fees - various jobsites"
+    },
+    {
+     "vendor": "SafeLift Training Institute",
+     "base": 1800,
+     "memo": "Svc OSHA refresher course"
+    },
+    {
+     "vendor": "Guardian PPE Supply",
+     "base": 2900,
+     "memo": "Harnesses, gloves, eyewear"
+    }
+   ],
+   "events": [
+    {
+     "key": "fallprotect",
+     "vendor": "Guardian PPE Supply",
+     "memos": [
+      "Engineered fall arrest anchors - Summit Tower",
+      "Lifeline cable system rental - Summit Tower"
+     ],
+     "cross_memo": "Engineered fall arrest anchors - Summit Tower inspection fee",
+     "plain": [
+      "the engineered fall arrest anchors",
+      "the Summit Tower lifeline cable",
+      "the Summit Tower anchor rental"
+     ],
+     "oblique": [
+      "gear to keep people from dropping off the high building",
+      "tie-off hardware for the roofline work",
+      "protection for workers on the tallest job",
+      "the harness infrastructure at the skyscraper",
+      "a jobsite requirement from the general contractor",
+      "equipment our crews clip into",
+      "what the inspector made us add",
+      "safeguards for elevation work",
+      "the ropes and anchors for the facade crew",
+      "height safety investment",
+      "a one-time protective setup",
+      "keeping installers alive at altitude",
+      "the safety plan for the big structure",
+      "extra precautions we hadn't planned",
+      "the gear that went up with the scaffolding",
+      "what keeps workers from falling"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "osharesponse",
+     "vendor": "Meridian Compliance Consulting",
+     "memos": [
+      "Citation abatement plan - silica exposure",
+      "Air monitoring study - silica exposure"
+     ],
+     "cross_memo": "Citation abatement plan - silica exposure ventilation retrofit",
+     "plain": [
+      "the citation abatement plan",
+      "the silica exposure study",
+      "the silica exposure air monitoring"
+     ],
+     "oblique": [
+      "the regulator's visit and its aftermath",
+      "fixing what the inspector flagged",
+      "a government finding we had to remedy",
+      "the dust problem in the cutting area",
+      "outside experts hired after a complaint",
+      "the cost of getting back in good standing",
+      "the enforcement action",
+      "air quality testing in the shop",
+      "a fine-avoidance project",
+      "what the agency required us to document",
+      "corrective work after the audit",
+      "the unexpected agency findings",
+      "consultants we brought in to respond",
+      "the breathing hazard cleanup",
+      "the formal notice we received",
+      "keeping our certification intact"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Showroom & Marketing",
+   "aliases": [
+    "showroom",
+    "marketing",
+    "advertising",
+    "showroom costs",
+    "lead generation"
+   ],
+   "narrative": [
+    "Marketing",
+    "Showroom costs",
+    "Advertising spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightpath Digital Advertising",
+     "base": 4600,
+     "memo": "Mo search and social ads"
+    },
+    {
+     "vendor": "Harbor Street Properties",
+     "base": 6500,
+     "memo": "Showroom lease - monthly"
+    },
+    {
+     "vendor": "Lumen Lead Network",
+     "base": 2300,
+     "memo": "Qualified leads - homeowner"
+    }
+   ],
+   "events": [
+    {
+     "key": "homeshow",
+     "vendor": "Brightpath Digital Advertising",
+     "memos": [
+      "Regional Home Expo booth - 20x20 island",
+      "Banner and demo glass kit - Regional Home Expo"
+     ],
+     "cross_memo": "Regional Home Expo booth - 20x20 island staff hotel",
+     "plain": [
+      "the Regional Home Expo booth",
+      "the Regional Home Expo demo kit",
+      "the Regional Home Expo banner"
+     ],
+     "oblique": [
+      "a big weekend in front of homeowners",
+      "the convention appearance",
+      "a trade-floor presence",
+      "where we met a thousand prospects face to face",
+      "our annual consumer event",
+      "staffing a stand at the arena",
+      "the spring marketing push",
+      "money spent to be seen by buyers",
+      "display and giveaways at the public fair",
+      "the event that fills our pipeline",
+      "a stand with samples and brochures",
+      "a once-a-year outlay for exposure",
+      "demonstrating products live to the public",
+      "our presence at the exhibition hall",
+      "the promotional weekend",
+      "the show where homeowners browse contractors"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "showroomreno",
+     "vendor": "Crestline Interior Builders",
+     "memos": [
+      "Display wall remodel - Northside Showroom",
+      "Lighting and floor refresh - Northside Showroom"
+     ],
+     "cross_memo": "Display wall remodel - Northside Showroom temporary signage",
+     "plain": [
+      "the display wall remodel",
+      "the Northside Showroom floor refresh",
+      "the Northside Showroom lighting"
+     ],
+     "oblique": [
+      "making the store look new again",
+      "sprucing up where customers walk in",
+      "a facelift of the customer-facing space",
+      "the renovation to impress walk-in traffic",
+      "upgrading how we present product",
+      "construction in the retail space",
+      "where customers pick out their windows",
+      "a refresh we had postponed for years",
+      "improving the first impression",
+      "the buildout of our sales floor",
+      "redecorating the place clients visit",
+      "cosmetic work to boost conversions",
+      "a capital project on the front of house",
+      "where the samples are displayed",
+      "the makeover of the walk-in space",
+      "spending to modernize the customer experience"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

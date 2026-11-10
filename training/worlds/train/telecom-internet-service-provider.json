@@ -1,0 +1,810 @@
+{
+ "slug": "telecom-internet-service-provider",
+ "industry": "telecom internet service provider",
+ "entities": [
+  "Northbeam Broadband",
+  "Cedar Ridge Fiber Networks",
+  "Halcyon Wireless Internet",
+  "Tidewater Connect",
+  "Pinnacle Valley Telecom"
+ ],
+ "accounts": [
+  {
+   "name": "Backbone Transit & Peering",
+   "aliases": [
+    "transit",
+    "upstream bandwidth",
+    "peering costs",
+    "ip transit spend",
+    "backbone costs"
+   ],
+   "narrative": [
+    "Transit",
+    "Upstream bandwidth",
+    "Peering costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Carrier Services",
+     "base": 28000,
+     "memo": "IP transit 10G commit — monthly"
+    },
+    {
+     "vendor": "Stratus Exchange Partners",
+     "base": 9500,
+     "memo": "Internet exchange port fees — monthly"
+    },
+    {
+     "vendor": "Corvane Backbone Inc",
+     "base": 14200,
+     "memo": "Regional backbone wavelength — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "burstoverage",
+     "vendor": "Meridian Carrier Services",
+     "memos": [
+      "Sapphire cable cut — emergency burst capacity",
+      "Sapphire cable cut — overage true-up"
+     ],
+     "cross_memo": "Sapphire cable cut — field splice crew",
+     "plain": [
+      "the sapphire cable cut",
+      "the sapphire cable cut outage",
+      "the sapphire cable cut response"
+     ],
+     "oblique": [
+      "the undersea fault that knocked out our main path",
+      "extra capacity we leased on short notice",
+      "rerouting traffic after the break",
+      "the severed line",
+      "paying for temporary headroom",
+      "a damaged long-haul link",
+      "the scramble to keep customers online",
+      "the emergency lease of spare lanes",
+      "the outage on our primary route",
+      "what we paid to stay up during the repair",
+      "the break in the ocean crossing",
+      "temporary rerouting",
+      "carrying traffic the long way around",
+      "the cut that hit our main carrier",
+      "sudden demand for alternate pipes",
+      "the fault that took out our main route"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "ixmigrate",
+     "vendor": "Lumenreach Interconnect",
+     "memos": [
+      "Harborgate datacenter move — cross-connect install",
+      "Harborgate datacenter move — dual-port turn-up"
+     ],
+     "cross_memo": "Harborgate datacenter move — rack relocation labor",
+     "plain": [
+      "the harborgate datacenter move",
+      "the harborgate datacenter relocation",
+      "the harborgate datacenter project"
+     ],
+     "oblique": [
+      "relocating our peering presence to a new building",
+      "a facility change for our exchange gear",
+      "moving where we meet other networks",
+      "the new site for interconnection",
+      "shifting our edge to another campus",
+      "a lease running out at the old location",
+      "setting up links in a fresh building",
+      "our switch to a different colo",
+      "the transfer of our exchange footprint",
+      "new physical connections at the destination",
+      "the building swap",
+      "getting our carriers reconnected elsewhere",
+      "the shift to a new meet-me room",
+      "the upheaval of changing premises for peering",
+      "standing up duplicate paths in the new home",
+      "a one-time facility transition"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Fiber Plant Maintenance",
+   "aliases": [
+    "plant maintenance",
+    "fiber repairs",
+    "outside plant",
+    "network repairs",
+    "plant upkeep"
+   ],
+   "narrative": [
+    "Plant maintenance",
+    "Fiber repairs",
+    "Outside plant"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Splice & Cable",
+     "base": 16500,
+     "memo": "Contract splicing and repair — monthly"
+    },
+    {
+     "vendor": "Alder Pole Services",
+     "base": 6800,
+     "memo": "Pole inspection and tagging — monthly"
+    },
+    {
+     "vendor": "Brightpath Locate Co",
+     "base": 3400,
+     "memo": "Utility locate tickets — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "icestorm",
+     "vendor": "Ridgeline Splice & Cable",
+     "memos": [
+      "Glacier week storm — aerial strand restoration",
+      "Glacier week storm — overtime crews"
+     ],
+     "cross_memo": "Glacier week storm — generator fuel",
+     "plain": [
+      "the glacier week storm",
+      "the glacier week storm restoration",
+      "the glacier week storm cleanup"
+     ],
+     "oblique": [
+      "weather damage to the lines on poles",
+      "fixing what the freezing rain brought down",
+      "crews working through the weekend",
+      "the wintry blast that took down spans",
+      "restoring service after the deep freeze",
+      "fallen limbs and sagging wire",
+      "the cleanup after the cold snap",
+      "after hours labor to get customers back",
+      "ice loading on our overhead routes",
+      "a harsh few days for the network",
+      "repairs forced by severe winter conditions",
+      "trees across the lines",
+      "the emergency callouts",
+      "reconnecting neighborhoods that lost service",
+      "a rough patch of weather",
+      "urgent work to hang cable again"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "roadwiden",
+     "vendor": "Kestrel Utility Boring",
+     "memos": [
+      "Route 9 widening — conduit relocation",
+      "Route 9 widening — directional bore"
+     ],
+     "cross_memo": "Route 9 widening — traffic control permits",
+     "plain": [
+      "the route 9 widening",
+      "the route 9 widening relocation",
+      "the route 9 widening project"
+     ],
+     "oblique": [
+      "the highway authority making us move our lines",
+      "a public works project that displaced our duct",
+      "shifting buried facilities out of the way",
+      "the state asking us to relocate",
+      "underground work forced by a construction job",
+      "moving cable to clear new lanes",
+      "a mandate from the transportation department",
+      "the corridor expansion that hit our path",
+      "digging again to avoid new pavement",
+      "government driven rerouting underground",
+      "relocating facilities at our own expense",
+      "the road project next to our fiber",
+      "a required move of buried assets",
+      "rebuilding a stretch of route",
+      "changes forced by a municipal build",
+      "clearing space for the contractor"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Tower & Site Leases",
+   "aliases": [
+    "tower leases",
+    "site rent",
+    "rooftop leases",
+    "tower rent",
+    "wireless site costs"
+   ],
+   "narrative": [
+    "Tower leases",
+    "Site rent",
+    "Rooftop leases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Skyhold Tower Holdings",
+     "base": 22000,
+     "memo": "Tower colocation rent — monthly"
+    },
+    {
+     "vendor": "Dunmore Properties LLC",
+     "base": 7200,
+     "memo": "Rooftop access lease — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "towerreinforce",
+     "vendor": "Skyhold Tower Holdings",
+     "memos": [
+      "Mast structural audit — load analysis fee",
+      "Mast structural audit — reinforcement surcharge"
+     ],
+     "cross_memo": "Mast structural audit — climbing crew",
+     "plain": [
+      "the mast structural audit",
+      "the mast structural audit fees",
+      "the mast structural audit findings"
+     ],
+     "oblique": [
+      "the landlord requiring we beef up the steel",
+      "an engineering review of weight on the structure",
+      "added antennas pushing past the rated limit",
+      "the inspection that came back with demands",
+      "a fee for strengthening the supports",
+      "extra charges after new equipment went up",
+      "safety paperwork for the tall structure",
+      "an owner imposed upgrade",
+      "proving the pole can hold our gear",
+      "the assessment of wind and weight",
+      "paying for the owner's engineers",
+      "a compliance step on elevated sites",
+      "the surcharge for heavier radios",
+      "what the lessor billed after checking the tower",
+      "structural sign off we needed",
+      "costs tied to adding sectors upstairs"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "newsiterent",
+     "vendor": "Oakmere Land Trust",
+     "memos": [
+      "Bellwood hilltop site — lease signing fee",
+      "Bellwood hilltop site — first quarter advance"
+     ],
+     "cross_memo": "Bellwood hilltop site — access road grading",
+     "plain": [
+      "the bellwood hilltop site",
+      "the bellwood hilltop site lease",
+      "the bellwood hilltop site launch"
+     ],
+     "oblique": [
+      "a new location for coverage expansion",
+      "a landowner we signed with this period",
+      "upfront money to secure ground for a radio",
+      "extending service to an unserved area",
+      "the elevated parcel we picked up",
+      "paying ahead to lock in the spot",
+      "the community we started reaching",
+      "an added transmitter location",
+      "initial charges on a fresh agreement",
+      "the new rural footprint",
+      "opening up a gap in our map",
+      "a deposit to hold the property",
+      "a one-time cost of acquiring space on a ridge",
+      "where we planted our newest antenna",
+      "onboarding another landlord",
+      "the start of a long rental"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Customer Premises Equipment",
+   "aliases": [
+    "cpe",
+    "modems and routers",
+    "customer equipment",
+    "cpe costs",
+    "install hardware"
+   ],
+   "narrative": [
+    "CPE",
+    "Modems and routers",
+    "Customer equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Vantiv Networks Supply",
+     "base": 26000,
+     "memo": "Residential gateways — monthly shipment"
+    },
+    {
+     "vendor": "Pixelwave Devices",
+     "base": 11000,
+     "memo": "ONT units — monthly shipment"
+    },
+    {
+     "vendor": "Greyline Logistics",
+     "base": 4200,
+     "memo": "Hardware freight and handling — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "wifi7swap",
+     "vendor": "Vantiv Networks Supply",
+     "memos": [
+      "Aurora gateway refresh — bulk unit order",
+      "Aurora gateway refresh — expedite premium"
+     ],
+     "cross_memo": "Aurora gateway refresh — truck roll credits",
+     "plain": [
+      "the aurora gateway refresh",
+      "the aurora gateway refresh order",
+      "the aurora gateway refresh program"
+     ],
+     "oblique": [
+      "swapping out older boxes in subscriber homes",
+      "a faster standard we rolled out to the base",
+      "a big purchase to replace aging devices",
+      "upgrading what customers have on the wall",
+      "the new generation of home units",
+      "paying extra to get shipments sooner",
+      "a campaign to modernize the installed base",
+      "retiring legacy hardware",
+      "the wireless upgrade offered to existing users",
+      "a large one-time buy of newer devices",
+      "demand for speedier in-home coverage",
+      "trading in the old for the new",
+      "a hardware cycle that arrived early",
+      "stocking up before a price change",
+      "replacing what we handed out years ago",
+      "a push to improve home signal"
+     ],
+     "low": 24000,
+     "high": 48000
+    },
+    {
+     "key": "recall",
+     "vendor": "Tessaly Electronics",
+     "memos": [
+      "Powerbrick recall — replacement adapters",
+      "Powerbrick recall — return shipping labels"
+     ],
+     "cross_memo": "Powerbrick recall — customer notice mailing",
+     "plain": [
+      "the powerbrick recall",
+      "the powerbrick recall adapters",
+      "the powerbrick recall campaign"
+     ],
+     "oblique": [
+      "a safety notice on a component we shipped",
+      "swapping out a faulty part at no charge",
+      "a manufacturer defect that reached homes",
+      "getting dangerous items out of customers' hands",
+      "a regulator driven correction",
+      "a batch that overheated",
+      "fixing a problem we did not cause",
+      "mailing fresh parts to affected subscribers",
+      "an issue flagged by the supplier",
+      "a quality failure on accessories",
+      "cleanup after a bad production run",
+      "a fire risk we had to address",
+      "the fault in the supply that went out last year",
+      "replacements shipped to thousands of households",
+      "a defect that triggered a mass exchange",
+      "paying to make customers whole"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Network Operations Center",
+   "aliases": [
+    "noc",
+    "noc costs",
+    "network monitoring",
+    "noc operations",
+    "monitoring spend"
+   ],
+   "narrative": [
+    "NOC",
+    "NOC costs",
+    "Network monitoring"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearview Telemetry",
+     "base": 8800,
+     "memo": "Network monitoring platform — monthly"
+    },
+    {
+     "vendor": "Nightwatch Staffing",
+     "base": 19000,
+     "memo": "Overnight NOC contractors — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "ddos",
+     "vendor": "Clearview Telemetry",
+     "memos": [
+      "Typhon attack mitigation — scrubbing surge fee",
+      "Typhon attack mitigation — extended retention"
+     ],
+     "cross_memo": "Typhon attack mitigation — forensic consultant",
+     "plain": [
+      "the typhon attack mitigation",
+      "the typhon attack mitigation fees",
+      "the typhon attack mitigation effort"
+     ],
+     "oblique": [
+      "a flood of hostile traffic aimed at our customers",
+      "the malicious barrage we had to absorb",
+      "paying for cleaning up bad packets",
+      "an assault that lasted several days",
+      "extra capacity bought mid incident",
+      "the hostile campaign against our network",
+      "filtering junk during an intrusion",
+      "a security episode",
+      "unplanned protective services",
+      "the hit from outside actors",
+      "a burst of unwelcome traffic",
+      "defending subscribers from an onslaught",
+      "what we spent to stay online while targeted",
+      "rapid purchase of protective services",
+      "an event that tripped our alarms for days",
+      "the cyber incident"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "nocmove",
+     "vendor": "Halvard Systems Integration",
+     "memos": [
+      "Dashboard consolidation — integration labor",
+      "Dashboard consolidation — license migration"
+     ],
+     "cross_memo": "Dashboard consolidation — training sessions",
+     "plain": [
+      "the dashboard consolidation",
+      "the dashboard consolidation labor",
+      "the dashboard consolidation project"
+     ],
+     "oblique": [
+      "merging several screens into one view",
+      "an effort to simplify how engineers watch the network",
+      "a tooling cleanup",
+      "bringing separate systems together",
+      "a project to reduce swivel chair work",
+      "moving data from old tools to a single pane",
+      "one time services for a platform change",
+      "unifying how alarms are displayed",
+      "contractors brought in for a systems project",
+      "fewer tools for the team to learn",
+      "a cutover of our visibility stack",
+      "porting historical records",
+      "the rework of our watchfloor setup",
+      "consolidating what operators look at",
+      "a once off integration push",
+      "simplifying the control room"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Regulatory Fees & Licenses",
+   "aliases": [
+    "regulatory fees",
+    "licenses",
+    "spectrum fees",
+    "compliance fees",
+    "franchise fees"
+   ],
+   "narrative": [
+    "Regulatory fees",
+    "Licenses",
+    "Spectrum fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "State Telecom Commission",
+     "base": 5200,
+     "memo": "Annual certificate amortization — monthly"
+    },
+    {
+     "vendor": "Pellham Spectrum Registry",
+     "base": 9000,
+     "memo": "Wireless license fees — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "auction",
+     "vendor": "Pellham Spectrum Registry",
+     "memos": [
+      "Band 12 auction — upfront deposit",
+      "Band 12 auction — bidder qualification fee"
+     ],
+     "cross_memo": "Band 12 auction — legal counsel retainer",
+     "plain": [
+      "the band 12 auction",
+      "the band 12 auction deposit",
+      "the band 12 auction participation"
+     ],
+     "oblique": [
+      "bidding for new airwaves",
+      "a government sale of frequencies we wanted",
+      "money posted to be eligible to compete",
+      "expanding our wireless reach through a competitive process",
+      "the federal sale of radio rights",
+      "qualifying for the chance to buy channels",
+      "the contest for more bandwidth in the air",
+      "a one time move to secure future capacity",
+      "funds put up as a bidder",
+      "our shot at licensed frequencies",
+      "a strategic purchase attempt",
+      "the sale run by regulators",
+      "what it cost to get a seat at the table",
+      "paying to enter a competitive sale",
+      "new frequencies for rural coverage",
+      "the bidding event"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "audit",
+     "vendor": "Hargrove Compliance Advisors",
+     "memos": [
+      "Universal service audit — response preparation",
+      "Universal service audit — document review"
+     ],
+     "cross_memo": "Universal service audit — outside counsel",
+     "plain": [
+      "the universal service audit",
+      "the universal service audit response",
+      "the universal service audit review"
+     ],
+     "oblique": [
+      "a federal inquiry into subsidy filings",
+      "answering questions about our reported figures",
+      "paperwork demanded by an agency",
+      "outside help digging through old records",
+      "a review of money we received for rural service",
+      "being examined by officials",
+      "preparing materials for investigators",
+      "the inspection of our support program claims",
+      "a look back at several years of submissions",
+      "specialists hired to defend our filings",
+      "gathering evidence for the government",
+      "a formal check on eligibility",
+      "time spent assembling backup for regulators",
+      "a probe of how we reported lines",
+      "the examination of our grant paperwork",
+      "reconstructing historical documentation"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Customer Support & Billing",
+   "aliases": [
+    "support costs",
+    "call center",
+    "billing operations",
+    "customer care",
+    "help desk spend"
+   ],
+   "narrative": [
+    "Support costs",
+    "Call center",
+    "Customer care"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightline BPO",
+     "base": 30000,
+     "memo": "Outsourced tier-1 agents — monthly"
+    },
+    {
+     "vendor": "Payvale Billing Systems",
+     "base": 12500,
+     "memo": "Billing platform subscription — monthly"
+    },
+    {
+     "vendor": "Ringforge Telephony",
+     "base": 5600,
+     "memo": "Contact center telephony — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "billerror",
+     "vendor": "Brightline BPO",
+     "memos": [
+      "Invoice mixup campaign — surge staffing",
+      "Invoice mixup campaign — callback queue"
+     ],
+     "cross_memo": "Invoice mixup campaign — credit memo processing",
+     "plain": [
+      "the invoice mixup campaign",
+      "the invoice mixup campaign staffing",
+      "the invoice mixup campaign callbacks"
+     ],
+     "oblique": [
+      "subscribers phoning about wrong amounts",
+      "a spike in complaints after a mistake",
+      "extra agents for angry callers",
+      "the fallout from charging people incorrectly",
+      "handling a wave of inquiries",
+      "a flood of inbound contacts",
+      "overtime to answer the phones",
+      "an error that prompted lots of questions",
+      "a temporary team to ease the backlog",
+      "customers upset about last cycle's statements",
+      "working through a queue of unhappy accounts",
+      "the outreach we made to fix our mistake",
+      "answering for a data problem",
+      "a short term swell in call volume",
+      "remedying what went out wrong",
+      "extra hands on the lines"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "portal",
+     "vendor": "Quillon Digital Studio",
+     "memos": [
+      "Selfserve app relaunch — design and build",
+      "Selfserve app relaunch — usability testing"
+     ],
+     "cross_memo": "Selfserve app relaunch — app store fees",
+     "plain": [
+      "the selfserve app relaunch",
+      "the selfserve app relaunch build",
+      "the selfserve app relaunch testing"
+     ],
+     "oblique": [
+      "a mobile tool so subscribers can help themselves",
+      "rebuilding how customers manage their accounts",
+      "an effort to reduce calls by giving people options",
+      "a fresh look for our digital front door",
+      "outside developers on a customer facing project",
+      "a modern interface we shipped",
+      "deflecting contacts through technology",
+      "the redesign of what users see on phones",
+      "a one time creative and engineering engagement",
+      "making payments easier online",
+      "the overhaul of our digital channel",
+      "a new way for people to check their plan",
+      "a project aimed at fewer tickets",
+      "redoing the experience for logging in",
+      "building something customers touch every day",
+      "the launch of an improved portal"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Fleet & Field Operations",
+   "aliases": [
+    "fleet",
+    "field ops",
+    "truck costs",
+    "fleet maintenance spend",
+    "installer vehicles"
+   ],
+   "narrative": [
+    "Fleet",
+    "Field ops",
+    "Truck costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmark Fleet Leasing",
+     "base": 18000,
+     "memo": "Installer van leases — monthly"
+    },
+    {
+     "vendor": "Fuelwise Card Services",
+     "base": 7500,
+     "memo": "Fleet fuel cards — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "bucketreplace",
+     "vendor": "Roadmark Fleet Leasing",
+     "memos": [
+      "Aerial lift replacement — emergency lease swap",
+      "Aerial lift replacement — early return penalty"
+     ],
+     "cross_memo": "Aerial lift replacement — operator recertification",
+     "plain": [
+      "the aerial lift replacement",
+      "the aerial lift replacement lease",
+      "the aerial lift replacement penalty"
+     ],
+     "oblique": [
+      "a boom truck that failed and had to be exchanged",
+      "getting crews back up on the poles",
+      "a machine that no longer passed safety checks",
+      "a swap forced by a mechanical failure",
+      "the penalty for handing back equipment early",
+      "a stopgap vehicle while the old one sat idle",
+      "the high reach unit that gave out",
+      "replacing the rig linemen depend on",
+      "paying to get out of a bad contract",
+      "downtime for the tall truck",
+      "a breakdown of our key vehicle",
+      "a costly changeover of heavy equipment",
+      "a unit that was condemned",
+      "an urgent substitution for crews",
+      "exchanging a worn out piece of heavy gear",
+      "the vehicle the inspectors red tagged"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "telematics",
+     "vendor": "Trackhaven Systems",
+     "memos": [
+      "Dashcam rollout — device installation",
+      "Dashcam rollout — cloud storage setup"
+     ],
+     "cross_memo": "Dashcam rollout — driver safety training",
+     "plain": [
+      "the dashcam rollout",
+      "the dashcam rollout installation",
+      "the dashcam rollout program"
+     ],
+     "oblique": [
+      "cameras mounted facing the road in every vehicle",
+      "an insurer driven safety initiative",
+      "recording what happens behind the wheel",
+      "equipment added to lower accident claims",
+      "a program to coach drivers",
+      "technology that watches how crews drive",
+      "a response to rising premiums",
+      "gear fitted across the whole vehicle base",
+      "video evidence for incident disputes",
+      "a one time installation effort",
+      "the monitoring hardware we put in trucks",
+      "outfitting every installer's ride",
+      "an effort to protect against liability",
+      "new onboard recording equipment",
+      "a safety push in the garage",
+      "retrofitting each van with sensors"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

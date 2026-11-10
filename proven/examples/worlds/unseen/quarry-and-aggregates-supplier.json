@@ -1,0 +1,820 @@
+{
+ "slug": "quarry-and-aggregates-supplier",
+ "industry": "quarry and aggregates supplier",
+ "entities": [
+  "Granite Ridge Aggregates",
+  "Blackstone Valley Quarries",
+  "Cobalt Creek Stone Co",
+  "Harmon Hill Sand & Gravel",
+  "Ledgeview Crushed Stone"
+ ],
+ "accounts": [
+  {
+   "name": "Drilling and Blasting",
+   "aliases": [
+    "blasting",
+    "blasting costs",
+    "drill and blast",
+    "shot costs",
+    "blasting spend"
+   ],
+   "narrative": [
+    "Blasting costs",
+    "Drill and blast",
+    "Shot costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Explosives Supply",
+     "base": 22000,
+     "memo": "Monthly emulsion bulk delivery"
+    },
+    {
+     "vendor": "Hartwell Drilling Services",
+     "base": 14000,
+     "memo": "Production drilling bench footage"
+    },
+    {
+     "vendor": "Summit Detonator Co",
+     "base": 3500,
+     "memo": "Nonel detonators caps stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "presplit_wall",
+     "vendor": "Ridgeline Explosives Supply",
+     "memos": [
+      "Presplit wall shot — east highwall emulsion",
+      "Presplit wall shot — packaged product"
+     ],
+     "cross_memo": "Presplit wall shot — survey crew",
+     "plain": [
+      "the presplit wall shot",
+      "presplit wall costs",
+      "the east presplit wall"
+     ],
+     "oblique": [
+      "final slope stabilisation",
+      "controlled perimeter cuts",
+      "smoothing the pit limit",
+      "a geotechnical request to protect the slope",
+      "reducing overbreak along the quarry edge",
+      "safer finished faces",
+      "the slope stability program",
+      "keeping loose rock away from the ramp",
+      "reshaping the north pit boundary",
+      "the engineer's face design",
+      "perimeter blasting ahead of reclamation",
+      "trimming the pit outline",
+      "cleaner rock faces at the limit",
+      "the batter angle correction",
+      "ground control near the final edge",
+      "protecting the lower working levels"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "seismic_monitoring",
+     "vendor": "Vibraguard Seismic Monitoring LLC",
+     "memos": [
+      "Seismic monitoring — neighbor complaint geophones",
+      "Seismic monitoring — vibration report"
+     ],
+     "cross_memo": "Seismic monitoring — legal review",
+     "plain": [
+      "the seismic monitoring",
+      "seismic monitoring fees",
+      "added seismic monitoring"
+     ],
+     "oblique": [
+      "ground shake readings",
+      "tracking blast effects on nearby houses",
+      "the homeowner grievances",
+      "measuring tremors at property lines",
+      "instruments at adjacent residences",
+      "proof that blasts stay within limits",
+      "an outside consultant after resident calls",
+      "the township's request for data",
+      "airblast recordings",
+      "answering concerns from people living nearby",
+      "third-party documentation of ground motion",
+      "the community relations effort",
+      "sensors placed along the road",
+      "rattled windows down the lane",
+      "a county inquiry into tremors",
+      "documenting impacts near residential lots"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Crusher Wear Parts",
+   "aliases": [
+    "wear parts",
+    "crusher wear",
+    "liners and mantles",
+    "wear parts spend",
+    "crusher consumables"
+   ],
+   "narrative": [
+    "Wear parts",
+    "Crusher wear",
+    "Crusher consumables"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironjaw Wear Components",
+     "base": 18000,
+     "memo": "Cone crusher mantle bowl liners"
+    },
+    {
+     "vendor": "Keystone Screen Media",
+     "base": 7500,
+     "memo": "Screen deck panels"
+    },
+    {
+     "vendor": "Tri-County Bearing Supply",
+     "base": 2600,
+     "memo": "Bearings belts idlers"
+    }
+   ],
+   "events": [
+    {
+     "key": "primary_toggle",
+     "vendor": "Ironjaw Wear Components",
+     "memos": [
+      "Primary toggle failure — replacement plate",
+      "Primary toggle failure — pitman seat"
+     ],
+     "cross_memo": "Primary toggle failure — outside millwrights",
+     "plain": [
+      "the primary toggle failure",
+      "primary toggle repairs",
+      "the failed primary toggle"
+     ],
+     "oblique": [
+      "the head-end breakdown",
+      "a snapped linkage at the first stage",
+      "emergency parts after the jam",
+      "getting initial reduction running again",
+      "a cracked component on the big breaker",
+      "the unplanned shutdown at the feed end",
+      "fixing the first-stage machine",
+      "a mechanical break at intake",
+      "overnight shipping on critical spares",
+      "the stoppage at the front of the plant",
+      "rush components after tramp metal got through",
+      "restoring capacity at the top of the circuit",
+      "the breakdown that halted production",
+      "unexpected repairs on the main reducer",
+      "a damaged linkage assembly",
+      "keeping the feed end online"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "scalper_grizzly",
+     "vendor": "Bedrock Grizzly Fabricators",
+     "memos": [
+      "Scalper grizzly bars — hardfaced set",
+      "Scalper grizzly bars — install hardware"
+     ],
+     "cross_memo": "Scalper grizzly bars — crane hire",
+     "plain": [
+      "the scalper grizzly bars",
+      "new scalper grizzly",
+      "the scalper grizzly upgrade"
+     ],
+     "oblique": [
+      "new oversize rejection at the feeder",
+      "stronger rails over the dump pocket",
+      "upgraded rock separation at intake",
+      "keeping boulders out of the circuit",
+      "the dump hopper upgrade",
+      "abrasion-resistant steel at the feed",
+      "the feeder modification",
+      "renewing worn rails on the dump",
+      "tougher steel over the pocket",
+      "stopping oversize rock at the hopper",
+      "the truck dump improvement",
+      "a sturdier oversize separator",
+      "fewer jams from big rock",
+      "the plant superintendent's intake change",
+      "reinforcing the receiving station",
+      "upgrading the loading point"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Mobile Equipment Repairs",
+   "aliases": [
+    "equipment repairs",
+    "mobile fleet",
+    "yellow iron repairs",
+    "loader and truck repairs",
+    "heavy equipment upkeep"
+   ],
+   "narrative": [
+    "Equipment repairs",
+    "Mobile fleet",
+    "Heavy equipment upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cascade Heavy Machinery",
+     "base": 16000,
+     "memo": "Service contract haul trucks loaders"
+    },
+    {
+     "vendor": "Prairie Hydraulics",
+     "base": 4200,
+     "memo": "Hose fittings cylinder reseals"
+    },
+    {
+     "vendor": "Sentinel Tire Service",
+     "base": 6800,
+     "memo": "Off-road tire repairs rotation"
+    }
+   ],
+   "events": [
+    {
+     "key": "final_drive",
+     "vendor": "Cascade Heavy Machinery",
+     "memos": [
+      "Final drive rebuild — unit 14 excavator",
+      "Final drive rebuild — sprocket kit"
+     ],
+     "cross_memo": "Final drive rebuild — lowboy transport",
+     "plain": [
+      "the final drive rebuild",
+      "final drive work",
+      "the excavator final drive"
+     ],
+     "oblique": [
+      "the big digger's gearbox overhaul",
+      "restoring propulsion on the main digger",
+      "a gear reduction breakdown",
+      "the drivetrain teardown",
+      "getting the primary digging machine moving again",
+      "a planetary gear breakdown on the shovel",
+      "outside shop work on the backhoe",
+      "propel motor problems",
+      "the gearbox job",
+      "replacing worn planetary gears",
+      "downtime on the pit digging machine",
+      "a seized travel gearbox",
+      "the mechanic's teardown findings",
+      "keeping the stripping machine productive",
+      "major component work on the shovel",
+      "the drivetrain overhaul"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "track_chain",
+     "vendor": "Northfork Undercarriage Specialists",
+     "memos": [
+      "Track chain swap — dozer D9",
+      "Track chain swap — pads rollers"
+     ],
+     "cross_memo": "Track chain swap — operator overtime",
+     "plain": [
+      "the track chain swap",
+      "new track chains",
+      "the dozer track chain"
+     ],
+     "oblique": [
+      "the crawler overhaul",
+      "new crawler links on the push tractor",
+      "the push tractor's running gear",
+      "replacing worn running gear",
+      "getting the ripping machine back",
+      "the stockpile pusher's crawler work",
+      "an outside crawler shop",
+      "worn links and idler wheels",
+      "crawler wear on the ripping tractor",
+      "the pushing tractor's crawler job",
+      "restoring traction on the stripping tractor",
+      "running gear wear",
+      "the crawler job",
+      "a running gear package",
+      "work on the stockpile tractor",
+      "fixing worn crawler links before they broke"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Diesel Fuel",
+   "aliases": [
+    "diesel",
+    "fuel",
+    "fuel spend",
+    "diesel costs",
+    "off-road diesel"
+   ],
+   "narrative": [
+    "Diesel costs",
+    "Fuel spend",
+    "Off-road diesel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Plains Petroleum Distributors",
+     "base": 28000,
+     "memo": "Dyed diesel bulk tank fill"
+    },
+    {
+     "vendor": "Ridgecrest Lubricants",
+     "base": 3200,
+     "memo": "Engine oil grease drums"
+    },
+    {
+     "vendor": "FleetCard Fueling Network",
+     "base": 1800,
+     "memo": "Pickup gasoline cards"
+    }
+   ],
+   "events": [
+    {
+     "key": "contamination_flush",
+     "vendor": "Plains Petroleum Distributors",
+     "memos": [
+      "Water contamination flush — bad load remediation",
+      "Water contamination flush — filter cartridges"
+     ],
+     "cross_memo": "Water contamination flush — injector repairs",
+     "plain": [
+      "the contamination flush",
+      "the water contamination flush",
+      "contamination flush charges"
+     ],
+     "oblique": [
+      "an off-spec delivery",
+      "cleaning out a tainted shipment",
+      "the tainted shipment cleanup",
+      "draining and refilling storage",
+      "moisture in the supply",
+      "purging fouled product from the system",
+      "a supplier quality problem",
+      "the off-spec shipment",
+      "scrubbing out the fouled reservoir",
+      "protecting machines from dirty product",
+      "the fouled delivery cleanup",
+      "replacing an unusable shipment",
+      "lab checks after sputtering machines",
+      "the dispute over a dirty shipment",
+      "clean-up after a substandard delivery",
+      "polishing the stored supply"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "skid_station",
+     "vendor": "Westbrook Skid Rentals",
+     "memos": [
+      "Skid station setup — north pit",
+      "Skid station setup — containment berm"
+     ],
+     "cross_memo": "Skid station setup — electrical hookup",
+     "plain": [
+      "the skid station setup",
+      "a new skid station",
+      "skid station costs"
+     ],
+     "oblique": [
+      "a second dispensing point closer to the face",
+      "shorter trips to get topped up",
+      "temporary dispensing near the new cut",
+      "putting a dispenser near the expansion area",
+      "the satellite dispensing point",
+      "spill protection around a new dispenser",
+      "cutting travel time for haul units",
+      "a mobile dispensing unit",
+      "the expansion-area dispenser",
+      "permits and pads for a dispenser",
+      "a dispenser at the far quarry",
+      "the new top-up point",
+      "short-term dispensing equipment",
+      "spill pans around the dispenser",
+      "a second dispensing location",
+      "reducing deadhead trips to the yard"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Plant Electricity",
+   "aliases": [
+    "power",
+    "electricity",
+    "plant power",
+    "utility power",
+    "power costs"
+   ],
+   "narrative": [
+    "Plant power",
+    "Power costs",
+    "Electricity"
+   ],
+   "recurring": [
+    {
+     "vendor": "Valley Rural Electric Cooperative",
+     "base": 24000,
+     "memo": "Plant meter kWh usage"
+    },
+    {
+     "vendor": "Grid Analytics Partners",
+     "base": 1500,
+     "memo": "Demand monitoring subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "peak_ratchet",
+     "vendor": "Valley Rural Electric Cooperative",
+     "memos": [
+      "Peak ratchet penalty — summer billing",
+      "Peak ratchet penalty — true-up"
+     ],
+     "cross_memo": "Peak ratchet penalty — consultant review",
+     "plain": [
+      "the peak ratchet penalty",
+      "a peak ratchet charge",
+      "the peak ratchet true-up"
+     ],
+     "oblique": [
+      "a charge for exceeding our contracted load",
+      "the high-draw surcharge",
+      "running every crusher at once",
+      "a spike in simultaneous startups",
+      "the utility's maximum-load fee",
+      "a twelve-month carryforward of a high reading",
+      "starting all motors together during the backlog",
+      "a tariff surcharge",
+      "the coincident load charge",
+      "exceeding contracted capacity",
+      "a costly hot-weather spike",
+      "the rate-schedule surcharge",
+      "simultaneous motor starts",
+      "the utility's capacity charge",
+      "a load spike flagged by the co-op",
+      "the high-load adjustment"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "substation_transformer",
+     "vendor": "Ironwood Transformer Services",
+     "memos": [
+      "Substation transformer repair — oil testing",
+      "Substation transformer repair — bushing replacement"
+     ],
+     "cross_memo": "Substation transformer repair — generator rental",
+     "plain": [
+      "the substation transformer repair",
+      "substation transformer work",
+      "the failed substation transformer"
+     ],
+     "oblique": [
+      "fixing the yard's main step-down unit",
+      "work at the incoming power yard",
+      "an emergency fix on high-voltage gear",
+      "the step-down unit breakdown",
+      "restoring incoming supply",
+      "high-voltage switchgear work",
+      "a lightning strike on the incoming line",
+      "the step-down unit fix",
+      "dielectric fluid sampling",
+      "a cracked insulator on the high side",
+      "the high-voltage outage",
+      "keeping crushers energised after the outage",
+      "the storm damage in the switchyard",
+      "the switchyard emergency",
+      "high-side insulator work",
+      "the lightning damage"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Environmental Compliance",
+   "aliases": [
+    "environmental",
+    "compliance",
+    "environmental costs",
+    "permit compliance",
+    "environmental spend"
+   ],
+   "narrative": [
+    "Environmental costs",
+    "Compliance",
+    "Permit compliance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenhaven Environmental Consulting",
+     "base": 6500,
+     "memo": "Stormwater sampling lab analysis"
+    },
+    {
+     "vendor": "Clearview Dust Control",
+     "base": 5200,
+     "memo": "Water truck dust suppression"
+    },
+    {
+     "vendor": "Aspen Air Testing",
+     "base": 1800,
+     "memo": "Monthly opacity readings"
+    }
+   ],
+   "events": [
+    {
+     "key": "turbidity_exceedance",
+     "vendor": "Greenhaven Environmental Consulting",
+     "memos": [
+      "Turbidity exceedance — corrective action plan",
+      "Turbidity exceedance — resample event"
+     ],
+     "cross_memo": "Turbidity exceedance — pump rental",
+     "plain": [
+      "the turbidity exceedance",
+      "turbidity exceedance follow-up",
+      "the turbidity exceedance response"
+     ],
+     "oblique": [
+      "muddy runoff leaving the site",
+      "cloudy discharge at the outfall",
+      "the state's notice about our settling ponds",
+      "a failed discharge limit",
+      "silt in the creek",
+      "remediation after a storm washout",
+      "the outfall violation response",
+      "fixing the settling ponds after heavy rain",
+      "regulator follow-up on our discharge",
+      "a sediment problem downstream",
+      "the outfall response",
+      "agency-required fixes at the ponds",
+      "cleaning up after the creek complaint",
+      "the discharge violation",
+      "a second round of outfall checks",
+      "the silt issue"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "berm_reseeding",
+     "vendor": "Hollis Reclamation Contractors",
+     "memos": [
+      "Berm reseeding — hydroseed mix",
+      "Berm reseeding — erosion matting"
+     ],
+     "cross_memo": "Berm reseeding — loader hours",
+     "plain": [
+      "the berm reseeding",
+      "berm reseeding work",
+      "reseeding the berm"
+     ],
+     "oblique": [
+      "revegetating the perimeter mounds",
+      "grass cover on the screening mounds",
+      "the slope stabilization planting",
+      "stopping washouts on the perimeter mounds",
+      "a county order to green up the mounds",
+      "planting the visual buffer",
+      "the landscaping push",
+      "restoring vegetation along the boundary",
+      "the permit renewal planting",
+      "seed and straw on bare slopes",
+      "fixing gullies on the perimeter embankment",
+      "the buffer planting",
+      "greening the noise mounds",
+      "a vegetation requirement from the inspector",
+      "covering bare ground before winter",
+      "the replanting work"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Scale House Operations",
+   "aliases": [
+    "scale house",
+    "scales",
+    "weighbridge",
+    "scale house costs",
+    "ticketing"
+   ],
+   "narrative": [
+    "Scale house costs",
+    "Weighbridge",
+    "Ticketing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Truckweigh Systems",
+     "base": 2400,
+     "memo": "Scale software license ticket printers"
+    },
+    {
+     "vendor": "Midstate Calibration Labs",
+     "base": 1200,
+     "memo": "Quarterly certification accrual"
+    },
+    {
+     "vendor": "Prism Office Supply",
+     "base": 900,
+     "memo": "Ticket paper toner"
+    }
+   ],
+   "events": [
+    {
+     "key": "load_cell",
+     "vendor": "Truckweigh Systems",
+     "memos": [
+      "Load cell failure — deck sensor set",
+      "Load cell failure — junction box"
+     ],
+     "cross_memo": "Load cell failure — trucker credits",
+     "plain": [
+      "the load cell failure",
+      "load cell repairs",
+      "the failed load cell"
+     ],
+     "oblique": [
+      "a weighing outage at the gate",
+      "inaccurate truck weights",
+      "the broken platform transducer",
+      "lightning damage under the platform",
+      "trucks weighed wrong for days",
+      "the weighing outage",
+      "a faulty strain gauge",
+      "the inbound platform breakdown",
+      "fixing under-platform electronics",
+      "a weights-and-measures problem",
+      "the customer weight disputes",
+      "restoring legal-for-trade weighing",
+      "water intrusion beneath the platform",
+      "the platform electronics fix",
+      "bad readings at the outbound lane",
+      "getting weighing back online"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "unattended_kiosk",
+     "vendor": "Brightline Kiosk Integrators",
+     "memos": [
+      "Unattended kiosk install — card readers",
+      "Unattended kiosk install — camera mount"
+     ],
+     "cross_memo": "Unattended kiosk install — network cabling",
+     "plain": [
+      "the unattended kiosk install",
+      "an unattended kiosk",
+      "the unattended kiosk project"
+     ],
+     "oblique": [
+      "self-serve truck check-in",
+      "after-hours customer pickup",
+      "automating the gate",
+      "the driver self-service station",
+      "letting haulers check in without staff",
+      "the night loading pilot",
+      "a self-serve terminal at the inbound lane",
+      "cutting attendant hours at the gate",
+      "the automation project at the entrance",
+      "drivers badging in themselves",
+      "the self-serve rollout",
+      "after-hours access for contractors",
+      "the gate automation",
+      "a touchscreen station for drivers",
+      "around-the-clock dispatch capability",
+      "reducing lines at the entrance"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Pit Dewatering",
+   "aliases": [
+    "dewatering",
+    "pumping",
+    "pit pumping",
+    "dewatering costs",
+    "sump pumping"
+   ],
+   "narrative": [
+    "Dewatering costs",
+    "Pit pumping",
+    "Sump pumping"
+   ],
+   "recurring": [
+    {
+     "vendor": "Deepwell Pump Rentals",
+     "base": 8500,
+     "memo": "Submersible pump rental"
+    },
+    {
+     "vendor": "Riverside Hose Pipe",
+     "base": 1600,
+     "memo": "Discharge line fittings"
+    }
+   ],
+   "events": [
+    {
+     "key": "flood_recovery",
+     "vendor": "Deepwell Pump Rentals",
+     "memos": [
+      "Flood recovery — standby trash pumps",
+      "Flood recovery — overnight attendants"
+     ],
+     "cross_memo": "Flood recovery — haul road regrading",
+     "plain": [
+      "the flood recovery",
+      "flood recovery costs",
+      "the flood recovery effort"
+     ],
+     "oblique": [
+      "getting the bottom bench dry after the storm",
+      "the cloudburst",
+      "extra capacity after the deluge",
+      "the deluge cleanup",
+      "keeping the floor workable after heavy rain",
+      "emergency water removal",
+      "a hundred-year rainfall",
+      "the inundated lower level",
+      "restoring access to the submerged floor",
+      "storm response",
+      "round-the-clock coverage after the downpour",
+      "the downpour",
+      "bailing out the lowest working level",
+      "after-storm water removal",
+      "the rainfall emergency",
+      "draining the inundated floor"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "relief_well",
+     "vendor": "Copperline Well Drillers",
+     "memos": [
+      "Relief well — south slope boring",
+      "Relief well — casing screen"
+     ],
+     "cross_memo": "Relief well — geologist review",
+     "plain": [
+      "the relief well",
+      "a new relief well",
+      "relief well work"
+     ],
+     "oblique": [
+      "lowering groundwater behind the highwall",
+      "easing pressure behind the face",
+      "a geotechnical drawdown measure",
+      "the groundwater drawdown project",
+      "seepage control on the far face",
+      "reducing pore pressure in the rock mass",
+      "the engineer's seepage fix",
+      "boreholes to drain the aquifer",
+      "the aquifer drawdown",
+      "stopping springs from weeping into the cut",
+      "a permanent groundwater outlet",
+      "the drawdown boreholes",
+      "slowing inflow through the face",
+      "tapping the perched aquifer",
+      "seepage reduction",
+      "keeping the far face from slumping"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

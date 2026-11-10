@@ -1,0 +1,810 @@
+{
+ "slug": "municipal-water-utility",
+ "industry": "municipal water utility",
+ "entities": [
+  "Clearbrook Municipal Water Authority",
+  "Riverbend Regional Water District",
+  "Stonehaven Public Water Works",
+  "Marlow Valley Water Commission",
+  "Eastport Consolidated Water Utility"
+ ],
+ "accounts": [
+  {
+   "name": "Chemical Treatment Supplies",
+   "aliases": [
+    "chemicals",
+    "chemical costs",
+    "treatment chemicals",
+    "chemical spend",
+    "treatment supplies"
+   ],
+   "narrative": [
+    "Chemicals",
+    "Chemical costs",
+    "Treatment chemicals"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bayline Chemical Distributors",
+     "base": 14500,
+     "memo": "Sodium hypochlorite — bulk delivery"
+    },
+    {
+     "vendor": "Northfork Coagulants Inc",
+     "base": 9200,
+     "memo": "Ferric chloride — tanker load"
+    },
+    {
+     "vendor": "Clearwell Fluoride Supply",
+     "base": 3100,
+     "memo": "Fluorosilicic acid — drums"
+    }
+   ],
+   "events": [
+    {
+     "key": "algae_bloom",
+     "vendor": "Bayline Chemical Distributors",
+     "memos": [
+      "Algae bloom response — powdered activated carbon",
+      "Algae bloom response — emergency dosing"
+     ],
+     "cross_memo": "Algae bloom response — reservoir sampling overtime",
+     "plain": [
+      "the algae bloom response",
+      "algae bloom dosing",
+      "an algae bloom"
+     ],
+     "oblique": [
+      "taste and odor complaints from the lake",
+      "green water at the intake",
+      "the summer lake problem",
+      "fighting a musty taste in tap water",
+      "cyanotoxin precautions",
+      "extra filtration work after the lake turned green",
+      "the toxin scare",
+      "keeping microcystin out of drinking water",
+      "odor control at the plant",
+      "the cyanobacteria outbreak",
+      "protecting customers from earthy-tasting water",
+      "what the health department flagged at the intake",
+      "a lake turnover event",
+      "the green-water episode",
+      "taste problems",
+      "warm-weather source water trouble"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "polymer_trial",
+     "vendor": "Pinecrest Polymer Solutions",
+     "memos": [
+      "Polymer trial — cationic blend",
+      "Polymer trial — jar testing"
+     ],
+     "cross_memo": "Polymer trial — onsite chemist hours",
+     "plain": [
+      "the polymer trial",
+      "a polymer trial",
+      "polymer trial jar testing"
+     ],
+     "oblique": [
+      "trying a new settling aid",
+      "the clarifier pilot",
+      "a pilot to cut sludge volumes",
+      "evaluating a cheaper flocculant",
+      "the supplier switch pilot",
+      "bench-scale experiments on settling",
+      "the turbidity improvement project",
+      "a proposal from operations to lower turbidity",
+      "pilot work at the clarifiers",
+      "the flocculation study",
+      "sludge reduction efforts",
+      "a new product evaluation",
+      "the operations team's settling experiment",
+      "lab work on a replacement flocculant",
+      "engineering's clarifier experiment",
+      "the clarity pilot"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Pump Station Maintenance",
+   "aliases": [
+    "pump stations",
+    "pump station upkeep",
+    "lift station costs",
+    "pumping maintenance",
+    "station repairs"
+   ],
+   "narrative": [
+    "Pump station upkeep",
+    "Lift station costs",
+    "Pump stations"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeway Pump Services",
+     "base": 11800,
+     "memo": "Monthly preventive maintenance — booster stations"
+    },
+    {
+     "vendor": "Hollis Electrical Contractors",
+     "base": 4200,
+     "memo": "Motor control panel inspection"
+    },
+    {
+     "vendor": "Tri-County Generator Co",
+     "base": 2600,
+     "memo": "Standby generator service contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "impeller_rebuild",
+     "vendor": "Ridgeway Pump Services",
+     "memos": [
+      "Impeller rebuild — Station 4 parts",
+      "Impeller rebuild — crane labor"
+     ],
+     "cross_memo": "Impeller rebuild — bypass hose rental",
+     "plain": [
+      "the impeller rebuild",
+      "an impeller rebuild",
+      "impeller rebuild parts"
+     ],
+     "oblique": [
+      "getting a failed unit back online",
+      "the worn-out spinning assembly",
+      "fixing low output at the hilltop lift",
+      "restoring pressure in the north zone",
+      "the overhaul of a cavitating unit",
+      "a big mechanical fix",
+      "refurbishing the main hilltop unit",
+      "the vibration problem",
+      "worn internals",
+      "the north-zone outage fix",
+      "bringing capacity back up on the hill",
+      "an overdue teardown",
+      "what operations found during the vibration alarm",
+      "lost flow at the hilltop",
+      "the cavitation damage",
+      "getting redundancy restored on the hill"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "check_valve",
+     "vendor": "Cascade Valve & Actuator",
+     "memos": [
+      "Check valve replacement — 12-inch",
+      "Check valve replacement — installation"
+     ],
+     "cross_memo": "Check valve replacement — SCADA reprogramming",
+     "plain": [
+      "the check valve replacement",
+      "a check valve swap",
+      "check valve work"
+     ],
+     "oblique": [
+      "stopping backflow on the discharge line",
+      "the water-hammer fix",
+      "a failed non-return fitting",
+      "swapping out a leaking backflow device",
+      "pressure surge protection",
+      "the slamming noise at the plant",
+      "fixing reverse flow",
+      "new hardware on the discharge header",
+      "the surge problem",
+      "a fitting that wouldn't seat",
+      "what engineering ordered after the surge event",
+      "the backflow upgrade",
+      "a one-time hardware swap",
+      "stopping water hammer",
+      "the discharge line upgrade",
+      "remote telemetry updates"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Distribution Main Repairs",
+   "aliases": [
+    "main breaks",
+    "main repairs",
+    "distribution repairs",
+    "pipe repairs",
+    "leak repairs"
+   ],
+   "narrative": [
+    "Main breaks",
+    "Pipe repairs",
+    "Leak repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gravelline Excavating",
+     "base": 18500,
+     "memo": "Leak repair crew — on-call"
+    },
+    {
+     "vendor": "Metro Paving Partners",
+     "base": 6400,
+     "memo": "Trench restoration — asphalt patching"
+    },
+    {
+     "vendor": "Dellwood Pipe & Fittings",
+     "base": 5300,
+     "memo": "Repair clamps — couplings stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "oakridge_washout",
+     "vendor": "Gravelline Excavating",
+     "memos": [
+      "Oakridge Avenue washout — night excavation",
+      "Oakridge Avenue washout — shoring"
+     ],
+     "cross_memo": "Oakridge Avenue washout — traffic flagging",
+     "plain": [
+      "the Oakridge Avenue washout",
+      "an Oakridge Avenue washout",
+      "Oakridge Avenue washout cleanup"
+     ],
+     "oblique": [
+      "the sinkhole downtown",
+      "a burst under a busy road",
+      "the big rupture near the hospital",
+      "emergency digging after the collapse",
+      "a ruptured transmission line",
+      "the road collapse",
+      "after-hours work on the burst",
+      "the cave-in that closed four lanes",
+      "a sixteen-inch rupture",
+      "storm-related ground failure",
+      "the downtown sinkhole response",
+      "a failure that flooded basements",
+      "a council-flagged road collapse",
+      "what public works called a catastrophic burst",
+      "the hospital district outage",
+      "undermined roadway"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "acoustic_survey",
+     "vendor": "Sentinel Hydrophone Group",
+     "memos": [
+      "Acoustic survey — correlator deployment",
+      "Acoustic survey — field report"
+     ],
+     "cross_memo": "Acoustic survey — GIS mapping update",
+     "plain": [
+      "the acoustic survey",
+      "an acoustic survey",
+      "acoustic survey fieldwork"
+     ],
+     "oblique": [
+      "listening for hidden losses",
+      "the non-revenue water study",
+      "a proactive loss audit",
+      "finding unseen drips before they burst",
+      "the audit the state requested",
+      "water-loss hunting in older neighborhoods",
+      "the loss-reduction program",
+      "sound-based pinpointing",
+      "a one-off loss study",
+      "proactive detection work",
+      "the unaccounted-for water push",
+      "consultant work on system losses",
+      "pinpointing hidden underground losses",
+      "the state-mandated loss assessment",
+      "a sweep of cast-iron neighborhoods",
+      "the water audit"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Laboratory Testing",
+   "aliases": [
+    "lab testing",
+    "lab fees",
+    "water quality testing",
+    "compliance sampling",
+    "lab costs"
+   ],
+   "narrative": [
+    "Lab testing",
+    "Lab fees",
+    "Compliance sampling"
+   ],
+   "recurring": [
+    {
+     "vendor": "Coastline Analytical Labs",
+     "base": 7800,
+     "memo": "Bacteriological panel — routine samples"
+    },
+    {
+     "vendor": "Harbor Environmental Testing",
+     "base": 3400,
+     "memo": "Disinfection byproducts — monthly batch"
+    }
+   ],
+   "events": [
+    {
+     "key": "lead_copper",
+     "vendor": "Coastline Analytical Labs",
+     "memos": [
+      "Lead copper round — residential kits",
+      "Lead copper round — ICP analysis"
+     ],
+     "cross_memo": "Lead copper round — courier pickups",
+     "plain": [
+      "the lead copper round",
+      "a lead copper round",
+      "lead copper round kits"
+     ],
+     "oblique": [
+      "the triennial household tap program",
+      "checking older homes for metals",
+      "the regulator-required household program",
+      "the triennial compliance cycle",
+      "metals monitoring at customer taps",
+      "the federal tap rule cycle",
+      "home tap checks",
+      "first-draw bottles from homeowners",
+      "the corrosion control verification",
+      "service-line risk monitoring",
+      "the state's every-three-years requirement",
+      "homeowner tap program",
+      "extra metals work",
+      "outside work for the corrosion study",
+      "a regulatory tap campaign",
+      "older-housing compliance checks"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "pfas_screening",
+     "vendor": "Meridian PFAS Laboratory",
+     "memos": [
+      "PFAS screening — EPA 533 method",
+      "PFAS screening — wellfield sets"
+     ],
+     "cross_memo": "PFAS screening — sample shipping coolers",
+     "plain": [
+      "the PFAS screening",
+      "PFAS screening",
+      "a PFAS screening"
+     ],
+     "oblique": [
+      "forever chemicals checks",
+      "the new federal contaminant rule",
+      "fluorinated compound monitoring",
+      "groundwater contaminant work",
+      "checking the wells near the airbase",
+      "the emerging-contaminant program",
+      "a new outside specialist",
+      "forever-chemical baseline",
+      "council questions about firefighting foam",
+      "the airbase plume concern",
+      "baseline data ahead of the new limit",
+      "specialty contaminant work",
+      "the foam contamination question",
+      "a groundwater baseline",
+      "new-rule readiness",
+      "perfluorinated compound results"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Meter Reading Services",
+   "aliases": [
+    "meter reading",
+    "meter reads",
+    "amr costs",
+    "reading services",
+    "meter route costs"
+   ],
+   "narrative": [
+    "Meter reading",
+    "Meter reads",
+    "Reading services"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pathfinder Field Readers",
+     "base": 9600,
+     "memo": "Route reads — contract readers"
+    },
+    {
+     "vendor": "Signalpoint AMR Network",
+     "base": 5200,
+     "memo": "Radio network hosting — endpoint fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "estimated_bill_audit",
+     "vendor": "Pathfinder Field Readers",
+     "memos": [
+      "Estimated bill audit — reread visits",
+      "Estimated bill audit — exception handling"
+     ],
+     "cross_memo": "Estimated bill audit — customer letters",
+     "plain": [
+      "the estimated bill audit",
+      "an estimated bill audit",
+      "estimated bill audit visits"
+     ],
+     "oblique": [
+      "chasing complaints about high invoices",
+      "re-checking guessed consumption",
+      "the high-usage complaint backlog",
+      "a door-to-door verification sweep",
+      "fixing guessed usage after the outage",
+      "the council's billing review",
+      "a ratepayer complaint push",
+      "correcting inaccurate accounts",
+      "the post-outage cleanup of guessed usage",
+      "manual verification of suspicious consumption",
+      "the ombudsman inquiry",
+      "verifying flagged accounts",
+      "a backlog of disputed charges",
+      "the sticker-shock complaints",
+      "door knocks on disputed accounts",
+      "the usage dispute cleanup"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "battery_swapout",
+     "vendor": "Brightwater Transmitter Co",
+     "memos": [
+      "Battery swapout — MIU batteries",
+      "Battery swapout — installer labor"
+     ],
+     "cross_memo": "Battery swapout — truck rental",
+     "plain": [
+      "the battery swapout",
+      "a battery swapout",
+      "battery swapout labor"
+     ],
+     "oblique": [
+      "the dead-unit backlog",
+      "end-of-life power cells",
+      "a fleet-wide power refresh",
+      "units that went silent",
+      "the ten-year cell failure wave",
+      "restoring signal from dark units",
+      "power cell renewals across the east side",
+      "the aging-device problem",
+      "getting dark meters talking again",
+      "a mass device refresh",
+      "silent-unit repairs",
+      "the power cell program",
+      "lost signals on older devices",
+      "end-of-life device work",
+      "the dark-meter cleanup",
+      "the vendor-warned depletion issue"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Pumping Power",
+   "aliases": [
+    "pumping power",
+    "power costs",
+    "electricity",
+    "electric bills",
+    "energy spend"
+   ],
+   "narrative": [
+    "Power costs",
+    "Electricity",
+    "Energy spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Valley Electric Cooperative",
+     "base": 28000,
+     "memo": "Plant electricity — kWh usage"
+    },
+    {
+     "vendor": "Summit Gas & Light",
+     "base": 6200,
+     "memo": "Booster sites — demand charges"
+    }
+   ],
+   "events": [
+    {
+     "key": "peak_ratchet",
+     "vendor": "Valley Electric Cooperative",
+     "memos": [
+      "Peak ratchet penalty — intake site",
+      "Peak ratchet penalty — rebill"
+     ],
+     "cross_memo": "Peak ratchet penalty — standby diesel",
+     "plain": [
+      "the peak ratchet penalty",
+      "a peak ratchet penalty",
+      "peak ratchet rebill"
+     ],
+     "oblique": [
+      "running every pump at once during the heat wave",
+      "a twelve-month surcharge from one hot afternoon",
+      "the heat-wave load spike",
+      "a billing tier we tripped",
+      "the max-load surcharge",
+      "all pumps running during the fire",
+      "the wildfire draw-down",
+      "an expensive afternoon of full pumping",
+      "a contract tier triggered by the heat",
+      "the highest-load hour",
+      "the surcharge from the fire flows",
+      "tariff escalation after record pumping",
+      "simultaneous pump starts",
+      "one bad hour on the meter",
+      "the heat-wave tariff hit",
+      "a load-management miss"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "interconnection_study",
+     "vendor": "Northgate Grid Services",
+     "memos": [
+      "Interconnection study — solar array",
+      "Interconnection study — utility review fee"
+     ],
+     "cross_memo": "Interconnection study — engineering consultant",
+     "plain": [
+      "the interconnection study",
+      "an interconnection study",
+      "interconnection study fees"
+     ],
+     "oblique": [
+      "the rooftop panels project",
+      "renewables groundwork",
+      "getting the photovoltaic project approved",
+      "the green energy feasibility work",
+      "permitting for the panels on the reservoir roof",
+      "an outside look at hooking up renewables",
+      "the photovoltaic paperwork",
+      "the clean-energy initiative",
+      "council's renewable goal",
+      "a feasibility assessment for panels",
+      "the carbon-reduction project",
+      "pre-construction design for renewables",
+      "the sustainability push",
+      "net-metering application costs",
+      "the reservoir roof project",
+      "a decarbonization assessment"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Software Subscriptions",
+   "aliases": [
+    "software",
+    "software subscriptions",
+    "saas",
+    "licenses",
+    "it subscriptions"
+   ],
+   "narrative": [
+    "Software",
+    "Software subscriptions",
+    "Licenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tidewater CIS Systems",
+     "base": 12500,
+     "memo": "Customer billing platform — hosted"
+    },
+    {
+     "vendor": "Lumenroute Asset Cloud",
+     "base": 4800,
+     "memo": "Work order module — seats"
+    },
+    {
+     "vendor": "Fieldnote Mobile",
+     "base": 1200,
+     "memo": "Tablet app — crew users"
+    }
+   ],
+   "events": [
+    {
+     "key": "rate_table_migration",
+     "vendor": "Tidewater CIS Systems",
+     "memos": [
+      "Rate table migration — configuration",
+      "Rate table migration — data validation"
+     ],
+     "cross_memo": "Rate table migration — staff overtime",
+     "plain": [
+      "the rate table migration",
+      "a rate table migration",
+      "rate table migration configuration"
+     ],
+     "oblique": [
+      "loading the new tariffs approved by council",
+      "the tiered pricing change",
+      "setting up next year's prices",
+      "implementing the board-approved increase",
+      "new tiers in the invoicing engine",
+      "the pricing overhaul",
+      "getting the increase live",
+      "the council's new tariff schedule",
+      "a pricing restructure",
+      "drought surcharge setup",
+      "putting the new conservation tiers into production",
+      "the tariff changeover",
+      "vendor hours to install new pricing",
+      "a one-time pricing project",
+      "the increase rollout",
+      "conservation pricing setup"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "ransomware_hardening",
+     "vendor": "Ironclad Cyber Defense",
+     "memos": [
+      "Ransomware hardening — endpoint agents",
+      "Ransomware hardening — penetration test"
+     ],
+     "cross_memo": "Ransomware hardening — backup appliance",
+     "plain": [
+      "the ransomware hardening",
+      "ransomware hardening",
+      "a ransomware hardening project"
+     ],
+     "oblique": [
+      "security upgrades after the neighboring city got hit",
+      "the insurer's security requirements",
+      "locking down the control network",
+      "a security audit",
+      "protecting operational technology",
+      "the federal security directive",
+      "intrusion prevention",
+      "shoring up protections",
+      "the security push",
+      "the extortion-attack precautions",
+      "what the insurer demanded",
+      "hacker-proofing the plant controls",
+      "outside security specialists",
+      "the security gap fixes",
+      "an attack simulation",
+      "SCADA protections"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Office Rent",
+   "aliases": [
+    "rent",
+    "office rent",
+    "lease costs",
+    "occupancy",
+    "facility rent"
+   ],
+   "narrative": [
+    "Rent",
+    "Office rent",
+    "Occupancy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Row Properties",
+     "base": 16000,
+     "memo": "Administration building — base rent"
+    },
+    {
+     "vendor": "Lakeshore Storage Yards",
+     "base": 3800,
+     "memo": "Pipe yard lease — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam_reconciliation",
+     "vendor": "Granite Row Properties",
+     "memos": [
+      "CAM reconciliation — prior year true-up",
+      "CAM reconciliation — property tax share"
+     ],
+     "cross_memo": "CAM reconciliation — janitorial adjustment",
+     "plain": [
+      "the CAM reconciliation",
+      "a CAM reconciliation",
+      "CAM reconciliation charges"
+     ],
+     "oblique": [
+      "the landlord's annual catch-up bill",
+      "common-area charges from last period",
+      "the landlord's settle-up",
+      "higher assessments passed through by the owner",
+      "common-area maintenance overages",
+      "the operating-expense pass-through",
+      "what the landlord billed after closing their books",
+      "a retroactive landlord charge",
+      "levy increases passed on to tenants",
+      "the landlord's annual statement",
+      "cleaning and upkeep overruns",
+      "common-area overruns",
+      "the owner's expense recovery",
+      "a pass-through from the landlord",
+      "landlord back-billing",
+      "shared-area cost recovery"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "lobby_buildout",
+     "vendor": "Bramblewood Interiors",
+     "memos": [
+      "Lobby buildout — payment counter",
+      "Lobby buildout — ADA ramp"
+     ],
+     "cross_memo": "Lobby buildout — furniture",
+     "plain": [
+      "the lobby buildout",
+      "a lobby buildout",
+      "lobby buildout work"
+     ],
+     "oblique": [
+      "the new customer service area",
+      "accessibility upgrades at headquarters",
+      "remodeling the front entrance",
+      "the walk-in center refresh",
+      "wheelchair access work",
+      "the reception renovation",
+      "a customer-facing remodel",
+      "front-desk improvements",
+      "the headquarters entrance remodel",
+      "making the front door accessible",
+      "the cashier window redesign",
+      "renovations the mayor wanted",
+      "fit-out of the public area",
+      "the welcome area makeover",
+      "accessibility compliance work",
+      "a front-of-house refresh"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

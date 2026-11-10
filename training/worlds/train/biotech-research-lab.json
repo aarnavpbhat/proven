@@ -1,0 +1,825 @@
+{
+ "slug": "biotech-research-lab",
+ "industry": "biotech research lab",
+ "entities": [
+  "Helixbridge Therapeutics",
+  "Corvane Biosciences",
+  "Nuvexa Genomics",
+  "Ardent Cellworks",
+  "Quillon Bioresearch"
+ ],
+ "accounts": [
+  {
+   "name": "Laboratory Consumables",
+   "aliases": [
+    "lab consumables",
+    "consumables",
+    "bench supplies",
+    "lab supplies",
+    "disposables"
+   ],
+   "narrative": [
+    "Lab consumables",
+    "Bench supplies",
+    "Disposables"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Scientific Supply",
+     "base": 14200,
+     "memo": "Pipette tips and tubes - Building A wet labs"
+    },
+    {
+     "vendor": "Pinecrest Plasticware",
+     "base": 6300,
+     "memo": "Culture plates and flasks - Cell Culture Suite"
+    },
+    {
+     "vendor": "Norvale Chemicals",
+     "base": 4100,
+     "memo": "Buffers and solvents - Core Chemistry"
+    }
+   ],
+   "events": [
+    {
+     "key": "autoclave",
+     "vendor": "Meridian Scientific Supply",
+     "memos": [
+      "Autoclave bag stockpile - Building B sterilization",
+      "Autoclave bag stockpile - biohazard waste liners"
+     ],
+     "cross_memo": "Autoclave bag stockpile - temporary storage racking",
+     "plain": [
+      "the autoclave bag stockpile",
+      "the autoclave bag buy",
+      "the autoclave bag order"
+     ],
+     "oblique": [
+      "stocking up ahead of the supplier price hike",
+      "the bulk purchase the sterilization team pushed for",
+      "a year of waste handling materials bought at once",
+      "pre-buying for the audit season",
+      "the safety team's large order",
+      "replacement of what the flood ruined",
+      "the early restock",
+      "extra protective liners for the new wing",
+      "a one-time hoarding of sterile goods",
+      "the volume deal we signed",
+      "keeping the decontamination room fully stocked",
+      "getting ahead of the shortage",
+      "supplies for the inspector's visit",
+      "the oversized shipment to the loading dock",
+      "the contamination cleanup materials",
+      "the surge in waste handling needs"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "cryovial",
+     "vendor": "Zephyrine Cryogenics",
+     "memos": [
+      "Cryovial recall replacement - lot 4471 freezer rack",
+      "Cryovial recall replacement - Freezer Room 2 sample transfer"
+     ],
+     "cross_memo": "Cryovial recall replacement - courier overnight shipping",
+     "plain": [
+      "the cryovial recall replacement",
+      "the cryovial recall",
+      "the cryovial lot swap"
+     ],
+     "oblique": [
+      "swapping out the faulty storage tubes",
+      "the manufacturer's defect notice",
+      "moving frozen samples into safe containers",
+      "what we had to redo after the quality alert",
+      "the do-over on specimen containers",
+      "a flaw in the sample storage hardware",
+      "the supplier's mistake that landed on us",
+      "emergency re-housing of the archive",
+      "the leaking ones we had to retire",
+      "an urgent changeover for the biobank",
+      "protecting years of stored material",
+      "the fix after the failed batch",
+      "the vendor's faulty production run",
+      "the scramble to save the specimens",
+      "replacing the cracked tubes",
+      "the corrective action on our inventory"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Reagents and Assay Kits",
+   "aliases": [
+    "reagents",
+    "assay kits",
+    "reagent spend",
+    "kits and reagents",
+    "assay costs"
+   ],
+   "narrative": [
+    "Reagents",
+    "Assay kits",
+    "Reagent spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Biovance Reagents",
+     "base": 22500,
+     "memo": "Antibodies and enzymes - Immunology Group"
+    },
+    {
+     "vendor": "Sequoia Assay Systems",
+     "base": 15800,
+     "memo": "ELISA kits - Translational Screening"
+    },
+    {
+     "vendor": "Altamira Molecular",
+     "base": 9400,
+     "memo": "PCR master mix - Genomics Core"
+    }
+   ],
+   "events": [
+    {
+     "key": "organoid",
+     "vendor": "Biovance Reagents",
+     "memos": [
+      "Organoid matrix pilot - Matrigel alternative trial",
+      "Organoid matrix pilot - growth factor cocktail Lab 3"
+     ],
+     "cross_memo": "Organoid matrix pilot - ultra-low attachment dishes",
+     "plain": [
+      "the organoid matrix pilot",
+      "the organoid pilot",
+      "the organoid matrix trial"
+     ],
+     "oblique": [
+      "the three-dimensional tissue experiment",
+      "the new growth scaffold study",
+      "testing a cheaper way to grow mini organs",
+      "a side project the oncology team requested",
+      "the exploratory work on lab-grown tissue",
+      "the trial run before committing to a platform",
+      "something the principal investigator wanted to try",
+      "the small-scale feasibility effort",
+      "a proof of concept for the grant renewal",
+      "the new culturing approach",
+      "the experiment that may replace our current method",
+      "early spending on a possible new workflow",
+      "work to model tumors outside the body",
+      "a speculative research push",
+      "the head of discovery's pet initiative",
+      "the evaluation of a novel substrate"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "rnaseq",
+     "vendor": "Quantica Diagnostics",
+     "memos": [
+      "Spike-in control rush - RNAseq batch 88 rerun",
+      "Spike-in control rush - library prep kits Genomics Core"
+     ],
+     "cross_memo": "Spike-in control rush - dry ice expedited delivery",
+     "plain": [
+      "the spike-in control rush",
+      "the spike-in rush",
+      "the spike-in control rerun"
+     ],
+     "oblique": [
+      "redoing the sequencing run that failed quality checks",
+      "the repeat of a ruined experiment",
+      "an unplanned second attempt",
+      "scrambling to meet the submission deadline",
+      "the do-over for the partner's data package",
+      "work we had to repeat at our own expense",
+      "the batch that did not pass review",
+      "an urgent redo for the clinical collaborator",
+      "fixing the flawed library results",
+      "the second pass on poor-quality output",
+      "getting the cohort data publishable",
+      "the repeat processing the core facility flagged",
+      "the recovery effort after the bad readout",
+      "a rerun forced by contamination",
+      "the costly repeat of last month's work",
+      "rework demanded by the reviewing statistician"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Animal Care and Vivarium",
+   "aliases": [
+    "vivarium",
+    "animal care",
+    "vivarium costs",
+    "animal facility",
+    "rodent care"
+   ],
+   "narrative": [
+    "Vivarium costs",
+    "Animal care",
+    "Animal facility"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harbor Rodent Supply",
+     "base": 18700,
+     "memo": "Mouse chow and bedding - barrier facility"
+    },
+    {
+     "vendor": "Greenfield Veterinary Partners",
+     "base": 12400,
+     "memo": "Contract veterinary coverage - Vivarium East"
+    },
+    {
+     "vendor": "Clearwater Cage Wash",
+     "base": 7200,
+     "memo": "Cage processing - sanitation service"
+    }
+   ],
+   "events": [
+    {
+     "key": "sentinel",
+     "vendor": "Greenfield Veterinary Partners",
+     "memos": [
+      "Sentinel colony quarantine - pathogen screening Room V4",
+      "Sentinel colony quarantine - necropsy panel"
+     ],
+     "cross_memo": "Sentinel colony quarantine - Lab Services diagnostic testing",
+     "plain": [
+      "the sentinel colony quarantine",
+      "the sentinel quarantine",
+      "the sentinel colony screening"
+     ],
+     "oblique": [
+      "the health scare in the animal rooms",
+      "isolating a suspect group of mice",
+      "the outbreak response",
+      "testing for an infection that was found",
+      "locking down one wing of the facility",
+      "the disease alert that halted transfers",
+      "protecting the breeding stock",
+      "the unplanned diagnostics after a positive result",
+      "containing the contamination in the housing area",
+      "the emergency checks the veterinarian ordered",
+      "what we spent when the inspectors found a problem",
+      "the precaution that froze several studies",
+      "the urgent screening of the whole population",
+      "the infection containment effort",
+      "a pause on animal movement while we investigated",
+      "the health monitoring surge"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "hvacrack",
+     "vendor": "Tidewater Environmental Controls",
+     "memos": [
+      "Ventilated rack retrofit - IVC blower units Vivarium West",
+      "Ventilated rack retrofit - HEPA filter installation"
+     ],
+     "cross_memo": "Ventilated rack retrofit - electrical panel upgrade",
+     "plain": [
+      "the ventilated rack retrofit",
+      "the rack retrofit",
+      "the ventilated rack upgrade"
+     ],
+     "oblique": [
+      "improving air handling around the cages",
+      "the housing equipment modernization",
+      "upgrading how the animals are kept comfortable",
+      "the airflow improvements the accreditation body wanted",
+      "new hardware for the mouse rooms",
+      "bringing the facility up to standard",
+      "a capital-style project hitting the operating books",
+      "the overhaul of our caging hardware",
+      "the compliance work on the east wing",
+      "what replaced the aging units",
+      "the upgrade requested by the animal welfare committee",
+      "modernizing the housing setup",
+      "a one-time facility improvement",
+      "reducing allergen exposure for technicians",
+      "the contractor's installation work",
+      "the equipment refresh before the audit"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Service Contracts",
+   "aliases": [
+    "equipment service",
+    "instrument maintenance",
+    "service contracts",
+    "instrument service",
+    "maintenance contracts"
+   ],
+   "narrative": [
+    "Equipment service",
+    "Instrument maintenance",
+    "Service contracts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Instrument Care",
+     "base": 16500,
+     "memo": "Annual PM - mass spectrometers"
+    },
+    {
+     "vendor": "Lumina Optical Service",
+     "base": 8800,
+     "memo": "Microscope calibration - Imaging Core"
+    },
+    {
+     "vendor": "CryoTech Maintenance",
+     "base": 5900,
+     "memo": "Ultra-low freezer monitoring - Building A"
+    }
+   ],
+   "events": [
+    {
+     "key": "sequencer",
+     "vendor": "Precision Instrument Care",
+     "memos": [
+      "Flow cell module replacement - NovaSeq bay 2 emergency",
+      "Flow cell module replacement - laser alignment"
+     ],
+     "cross_memo": "Flow cell module replacement - reagent write-off",
+     "plain": [
+      "the flow cell module replacement",
+      "the flow cell replacement",
+      "the flow cell module swap"
+     ],
+     "oblique": [
+      "the sequencing machine breakdown",
+      "getting the genomics platform running again",
+      "the failure of our most expensive instrument",
+      "an unplanned repair on the core facility workhorse",
+      "the downtime that backed up every project",
+      "the engineer's emergency visit",
+      "fixing the machine that stopped mid-run",
+      "the breakdown that idled the sequencing team",
+      "parts for the broken analyzer",
+      "the urgent fix that could not wait for budget season",
+      "restoring capacity after the fault",
+      "the out-of-warranty repair bill",
+      "what it cost to revive the main instrument",
+      "the technician's rush call-out",
+      "resolving the hardware fault in the genomics bay",
+      "the repair that delayed three studies"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "cleanroom",
+     "vendor": "Aerolux Validation Services",
+     "memos": [
+      "Cleanroom requalification - ISO 7 suite certification",
+      "Cleanroom requalification - particle counter recalibration"
+     ],
+     "cross_memo": "Cleanroom requalification - gowning supply restock",
+     "plain": [
+      "the cleanroom requalification",
+      "the cleanroom certification",
+      "the cleanroom requalification visit"
+     ],
+     "oblique": [
+      "the periodic check on the sterile manufacturing area",
+      "proving the controlled space still meets the standard",
+      "the regulator-mandated retest",
+      "the paperwork and testing to keep operating",
+      "a compliance exercise for the production suite",
+      "reconfirming air quality in the clean area",
+      "the third-party sign-off we needed",
+      "the biennial inspection costs",
+      "staying eligible to make clinical material",
+      "the validation work before the batch release",
+      "what the quality group scheduled",
+      "the outside assessor's fees",
+      "testing that allowed manufacturing to resume",
+      "the re-approval of the controlled environment",
+      "the audit-readiness step",
+      "the annual proof our rooms are fit for use"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Clinical Trial Costs",
+   "aliases": [
+    "clinical trials",
+    "trial costs",
+    "clinical spend",
+    "trial operations",
+    "study costs"
+   ],
+   "narrative": [
+    "Clinical trials",
+    "Trial costs",
+    "Study costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Orchard Clinical Research",
+     "base": 28500,
+     "memo": "CRO monitoring fees - Phase II oncology study"
+    },
+    {
+     "vendor": "Summit Site Partners",
+     "base": 13200,
+     "memo": "Site payments - Protocol HB-204"
+    },
+    {
+     "vendor": "DataSure Biostatistics",
+     "base": 9600,
+     "memo": "Statistical analysis support - trial data"
+    }
+   ],
+   "events": [
+    {
+     "key": "amendment",
+     "vendor": "Orchard Clinical Research",
+     "memos": [
+      "Protocol amendment 5 - eligibility criteria revision",
+      "Protocol amendment 5 - investigator retraining sessions"
+     ],
+     "cross_memo": "Protocol amendment 5 - regulatory resubmission legal fees",
+     "plain": [
+      "the protocol amendment 5",
+      "the amendment 5 changes",
+      "the protocol amendment 5 rollout"
+     ],
+     "oblique": [
+      "changing who can enroll in the study",
+      "the rules rewrite the safety board requested",
+      "updating every hospital on the new requirements",
+      "the scope change to the patient criteria",
+      "additional site training after the design shift",
+      "redoing the paperwork across all locations",
+      "the study redesign following interim results",
+      "a change order from the sponsor",
+      "reworking how patients qualify",
+      "what it took to alter the study mid-flight",
+      "the revised approach to selecting participants",
+      "new instructions sent to every investigator",
+      "the regulators' feedback requiring changes",
+      "extra coordination across the participating clinics",
+      "a mid-trial adjustment to who is eligible",
+      "the costs of rewriting the rulebook"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "recruitment",
+     "vendor": "Lantern Patient Outreach",
+     "memos": [
+      "Rare cohort enrollment push - Midwest advocacy campaign",
+      "Rare cohort enrollment push - patient travel stipends"
+     ],
+     "cross_memo": "Rare cohort enrollment push - lodging reimbursements",
+     "plain": [
+      "the rare cohort enrollment push",
+      "the rare cohort campaign",
+      "the rare cohort enrollment drive"
+     ],
+     "oblique": [
+      "finding enough volunteers for the study",
+      "a marketing effort to fill empty slots",
+      "reaching patients with an uncommon condition",
+      "the recruiting shortfall we had to fix",
+      "the campaign aimed at catching up on sign-ups",
+      "helping participants get to the clinic",
+      "outreach through patient support groups",
+      "the behind-schedule enrollment recovery",
+      "paying people to take part",
+      "the awareness effort in several states",
+      "advertising to reach eligible individuals",
+      "the scramble to hit our headcount target",
+      "getting people through the door",
+      "the stipends we offered to boost turnout",
+      "what we spent to close the gap on volunteers",
+      "the community engagement initiative"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Regulatory and Compliance",
+   "aliases": [
+    "regulatory fees",
+    "compliance",
+    "regulatory affairs",
+    "compliance costs",
+    "regulatory spend"
+   ],
+   "narrative": [
+    "Regulatory fees",
+    "Compliance costs",
+    "Regulatory affairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Veritas Regulatory Consulting",
+     "base": 11800,
+     "memo": "Retainer - FDA submissions support"
+    },
+    {
+     "vendor": "Granite Quality Assurance",
+     "base": 7500,
+     "memo": "GLP audit support - quality systems"
+    }
+   ],
+   "events": [
+    {
+     "key": "ind",
+     "vendor": "Veritas Regulatory Consulting",
+     "memos": [
+      "IND resubmission package - module 3 CMC rewrite",
+      "IND resubmission package - nonclinical summary editing"
+     ],
+     "cross_memo": "IND resubmission package - publishing and courier fees",
+     "plain": [
+      "the IND resubmission package",
+      "the IND resubmission",
+      "the IND package rewrite"
+     ],
+     "oblique": [
+      "answering the agency's hold letter",
+      "the redo of our application to begin human testing",
+      "the response to the federal reviewers",
+      "fixing the deficiencies they cited",
+      "rewriting the filing for the lead candidate",
+      "the second attempt at clearance",
+      "consultants working through the weekend",
+      "the agency's request for more manufacturing detail",
+      "the overhaul of our dossier",
+      "getting the drug program unstuck",
+      "the paperwork that lifted the clinical hold",
+      "the revised submission to the government",
+      "what it cost to satisfy the reviewers",
+      "the late-night drafting marathon",
+      "rewriting the sections they rejected",
+      "the regulatory rework on our flagship compound"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "biosafety",
+     "vendor": "Northgate Safety Audits",
+     "memos": [
+      "BSL-2 inspection remediation - Building C deficiencies",
+      "BSL-2 inspection remediation - eyewash station replacement"
+     ],
+     "cross_memo": "BSL-2 inspection remediation - signage and labeling",
+     "plain": [
+      "the BSL-2 inspection remediation",
+      "the BSL-2 remediation",
+      "the BSL-2 deficiency fixes"
+     ],
+     "oblique": [
+      "correcting the items the inspector flagged",
+      "the safety citations we had to clear",
+      "fixing what failed the walkthrough",
+      "the corrective work after the surprise visit",
+      "bringing our containment rooms up to code",
+      "closing out the findings from the site review",
+      "the follow-up the oversight board required",
+      "repairs the safety officer demanded",
+      "the penalty avoidance work",
+      "responding to the audit report",
+      "the punch list from the biosafety committee",
+      "upgrades to keep our permit in good standing",
+      "the fixes needed before the re-inspection",
+      "what it cost to resolve the violations",
+      "the compliance gaps we were told to close",
+      "the urgent safety upgrades"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Contract Research Services",
+   "aliases": [
+    "outsourced research",
+    "contract research",
+    "CRO services",
+    "external research",
+    "outsourced studies"
+   ],
+   "narrative": [
+    "Outsourced research",
+    "Contract research",
+    "External research"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kestrel Preclinical Labs",
+     "base": 26000,
+     "memo": "Toxicology studies - Compound HB-77"
+    },
+    {
+     "vendor": "Brightwater Bioanalytics",
+     "base": 14500,
+     "memo": "PK/PD sample analysis - outsourced bioanalysis"
+    },
+    {
+     "vendor": "Stonebridge Histology",
+     "base": 6800,
+     "memo": "Tissue sectioning and staining - pathology"
+    }
+   ],
+   "events": [
+    {
+     "key": "primate",
+     "vendor": "Kestrel Preclinical Labs",
+     "memos": [
+      "Nonhuman primate extension - 28-day dosing cohort",
+      "Nonhuman primate extension - expanded necropsy"
+     ],
+     "cross_memo": "Nonhuman primate extension - animal transport and quarantine",
+     "plain": [
+      "the nonhuman primate extension",
+      "the primate extension",
+      "the nonhuman primate dosing cohort"
+     ],
+     "oblique": [
+      "the additional safety study the agency wanted",
+      "the larger animal test of our lead drug",
+      "the added months of dosing",
+      "the expansion of the toxicity work",
+      "what was tacked on after the review meeting",
+      "the bigger study the board approved",
+      "a follow-on to confirm earlier findings",
+      "the late addition to the preclinical plan",
+      "the extended safety evaluation",
+      "the costly step before human trials",
+      "the supplemental testing request",
+      "a broadening of the study design",
+      "additional animals added to the protocol",
+      "the longer observation period",
+      "the big-ticket add-on to the outsourced program",
+      "the investigational new test series"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "crispr",
+     "vendor": "Evergreen Gene Editing Services",
+     "memos": [
+      "Guide RNA library screen - genome-wide knockout panel",
+      "Guide RNA library screen - lentiviral packaging"
+     ],
+     "cross_memo": "Guide RNA library screen - sequencing deconvolution",
+     "plain": [
+      "the guide RNA library screen",
+      "the guide RNA screen",
+      "the guide RNA library project"
+     ],
+     "oblique": [
+      "the large-scale gene knockout experiment",
+      "the discovery effort farmed out to specialists",
+      "the hunt for new drug targets",
+      "the outside team's genetic survey",
+      "work the in-house group lacked capacity to do",
+      "a one-time exploratory outsourcing",
+      "the target identification campaign",
+      "the thousands of edits tested at once",
+      "the partnership with the editing specialists",
+      "a bet on finding novel pathways",
+      "the broad search across the genome",
+      "the discovery sprint we contracted out",
+      "what the strategy committee approved for early research",
+      "a short-term external screening engagement",
+      "the data generation project for the next pipeline candidate",
+      "the high-throughput hunt for vulnerabilities"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Facilities and Utilities",
+   "aliases": [
+    "facilities",
+    "lab utilities",
+    "utilities",
+    "building operations",
+    "facility costs"
+   ],
+   "narrative": [
+    "Lab utilities",
+    "Facility costs",
+    "Building operations"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Power and Light",
+     "base": 24800,
+     "memo": "Electricity - Building A and B labs"
+    },
+    {
+     "vendor": "PureFlow Water Systems",
+     "base": 5200,
+     "memo": "Deionized water service - Core Facility"
+    },
+    {
+     "vendor": "Summit Waste Solutions",
+     "base": 4600,
+     "memo": "Biohazard waste pickup - all sites"
+    }
+   ],
+   "events": [
+    {
+     "key": "generator",
+     "vendor": "Metro Power and Light",
+     "memos": [
+      "Backup generator load test - Building A transfer switch",
+      "Backup generator load test - fuel surcharge"
+     ],
+     "cross_memo": "Backup generator load test - temporary power rental",
+     "plain": [
+      "the backup generator load test",
+      "the generator load test",
+      "the backup generator test"
+     ],
+     "oblique": [
+      "the outage drill",
+      "proving we can ride out a blackout",
+      "the power continuity exercise",
+      "the insurance-required resilience check",
+      "making sure the freezers survive a grid failure",
+      "a simulated loss of mains supply",
+      "the emergency readiness trial",
+      "what the storm season preparation cost",
+      "testing the fallback for the sample archive",
+      "the planned interruption of normal service",
+      "the annual contingency verification",
+      "a rehearsal for losing electricity",
+      "checking the safety net for critical equipment",
+      "the capacity demonstration the insurer insisted on",
+      "the resilience audit of our energy supply",
+      "protecting the cold storage from a power cut"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "pestcontrol",
+     "vendor": "Sentinel Pest Management",
+     "memos": [
+      "Vermin abatement - Annex B mezzanine infestation",
+      "Vermin abatement - structural sealing and traps"
+     ],
+     "cross_memo": "Vermin abatement - cleanroom decontamination",
+     "plain": [
+      "the vermin abatement",
+      "the vermin abatement work",
+      "the vermin infestation response"
+     ],
+     "oblique": [
+      "getting rid of the unwelcome visitors",
+      "the unexpected exterminator bills",
+      "what we paid when critters got into the storage area",
+      "the cleanup after the discovery in the supply room",
+      "pest problems near the loading area",
+      "the emergency call to the extermination crew",
+      "closing gaps where creatures got inside",
+      "the sanitation scare",
+      "dealing with droppings found by the inspector",
+      "rodents and insects in the annex",
+      "the urgent eradication job",
+      "sealing up the old part of the building",
+      "the hygiene problem that delayed shipments",
+      "the contractor who set traps for weeks",
+      "an infestation nobody budgeted for",
+      "what it cost to evict the intruders"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

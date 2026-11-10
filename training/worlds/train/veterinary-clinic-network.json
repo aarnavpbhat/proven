@@ -1,0 +1,723 @@
+{
+ "slug": "veterinary-clinic-network",
+ "industry": "veterinary clinic network",
+ "entities": [
+  "Harborlight Veterinary Group",
+  "Pawprint Animal Hospitals",
+  "Evergreen Pet Health Partners",
+  "Copperfield Veterinary Alliance",
+  "Riverbend Animal Care Network"
+ ],
+ "accounts": [
+  {
+   "name": "Veterinary Medical Supplies",
+   "aliases": [
+    "medical supplies",
+    "vet supplies",
+    "clinical consumables",
+    "exam room supplies",
+    "medical supply spend"
+   ],
+   "narrative": [
+    "Medical supplies",
+    "Clinical consumables",
+    "Vet supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Veterinary Supply",
+     "base": 18500,
+     "memo": "Monthly clinical consumables order"
+    },
+    {
+     "vendor": "Kestrel Surgical Products",
+     "base": 9200,
+     "memo": "Sutures and surgical packs standing order"
+    },
+    {
+     "vendor": "NorthStar Animal Health Distribution",
+     "base": 6400,
+     "memo": "Syringes needles and bandage restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "parvo",
+     "vendor": "Meridian Veterinary Supply",
+     "memos": [
+      "Parvovirus outbreak — isolation ward kits",
+      "Parvovirus outbreak — IV fluid stockpile"
+     ],
+     "cross_memo": "Parvovirus outbreak — temporary kennel disinfection crew",
+     "plain": [
+      "the parvovirus outbreak",
+      "parvovirus isolation ward kits",
+      "the parvovirus fluid stockpile"
+     ],
+     "oblique": [
+      "the sick puppy cluster at the east clinics",
+      "emergency stocking for contagious canine cases",
+      "quarantine setups for infected young dogs",
+      "a spike in gravely ill litters",
+      "the contagious illness that swept through the shelters",
+      "protective gear for staff handling infected patients",
+      "extra bags and lines for dehydrated pups",
+      "a surge of dogs needing round-the-clock hydration",
+      "the disease scare in the adoption partner network",
+      "isolating newly arrived strays",
+      "the unusual number of lethargic puppies",
+      "containing a fast-moving gut infection",
+      "emergency purchasing ordered by the medical director",
+      "an unplanned wave of critical intakes",
+      "outbreak response in the suburban locations",
+      "keeping infected animals apart from healthy ones"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "orthosuite",
+     "vendor": "Tidewater Orthopedic Implants",
+     "memos": [
+      "Orthosuite launch — bone plate inventory",
+      "Orthosuite launch — surgical drill sets"
+     ],
+     "cross_memo": "Orthosuite launch — surgeon certification course",
+     "plain": [
+      "the orthosuite launch",
+      "orthosuite bone plate inventory",
+      "the orthosuite drill sets"
+     ],
+     "oblique": [
+      "the new joint repair service line",
+      "stocking up for fracture surgeries",
+      "opening the specialty bone surgery offering",
+      "hardware for broken leg repairs",
+      "equipping the flagship surgical center",
+      "expanding what we can operate on in-house",
+      "kneecap and hip procedure readiness",
+      "metal fixation parts for the new service",
+      "the surgery expansion at the downtown hospital",
+      "implants bought ahead of the first cases",
+      "tooling for the specialty surgeons",
+      "the move to stop referring out bone cases",
+      "initial stock for the advanced surgery program",
+      "setting up the operating rooms for complex fractures",
+      "the board-approved surgical growth initiative",
+      "supplies for the new surgical specialists"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Pharmaceuticals and Vaccines",
+   "aliases": [
+    "pharmacy",
+    "drug costs",
+    "vaccines",
+    "pharmacy spend",
+    "medication costs"
+   ],
+   "narrative": [
+    "Pharmacy",
+    "Drug costs",
+    "Medication costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Allied Veterinary Pharmacy Wholesale",
+     "base": 28500,
+     "memo": "Prescription drug replenishment"
+    },
+    {
+     "vendor": "Brightwell Biologics",
+     "base": 12800,
+     "memo": "Core vaccine monthly shipment"
+    },
+    {
+     "vendor": "Greenfield Parasite Control",
+     "base": 7600,
+     "memo": "Flea tick and heartworm preventives"
+    }
+   ],
+   "events": [
+    {
+     "key": "rabiesclinic",
+     "vendor": "Brightwell Biologics",
+     "memos": [
+      "Rabies drive — discounted dose allotment",
+      "Rabies drive — county tag batch"
+     ],
+     "cross_memo": "Rabies drive — mobile van fuel and staffing",
+     "plain": [
+      "the rabies drive",
+      "rabies drive dose allotment",
+      "the rabies drive tag batch"
+     ],
+     "oblique": [
+      "the low-cost shot event for the community",
+      "an outreach day for neighborhood pets",
+      "the county partnership for mass immunization",
+      "huge turnout at the weekend pop-up",
+      "protecting animals in the outlying towns",
+      "a government-backed public health push",
+      "the discount program that drew long lines",
+      "bulk ordering ahead of a health department mandate",
+      "the free-shot weekends in the parking lots",
+      "getting the region's pets covered",
+      "an unusually large order placed in a hurry",
+      "the campaign promoted on local radio",
+      "extra cold storage for the big batch",
+      "a partnership with the municipal animal control office",
+      "the goodwill event for new clients",
+      "one-time volume tied to a civic program"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "insulinshortage",
+     "vendor": "Ravenscroft Compounding Labs",
+     "memos": [
+      "Insulin backorder — compounded glargine run",
+      "Insulin backorder — specialty pen cartridges"
+     ],
+     "cross_memo": "Insulin backorder — overnight cold courier",
+     "plain": [
+      "the insulin backorder",
+      "insulin backorder compounded glargine",
+      "the insulin backorder pen cartridges"
+     ],
+     "oblique": [
+      "the manufacturer supply gap for diabetic cat medication",
+      "sourcing from an alternate lab when the usual one ran dry",
+      "a scramble to keep chronic patients on therapy",
+      "premium pricing for hard-to-find treatment",
+      "the national shortage hitting our regular channel",
+      "special-order product for glucose management",
+      "paying more to avoid interrupting care",
+      "the stockout that forced us elsewhere",
+      "replacement supply for dependent pets",
+      "an urgent workaround ordered by the pharmacy lead",
+      "the shortage that sent buyers to a compounder",
+      "extra expense to keep diabetic animals stable",
+      "a ninety-day disruption in our usual source",
+      "costly substitution for an unavailable product",
+      "meeting refill demand with nonstandard sourcing",
+      "the scarcity that pushed unit costs up"
+     ],
+     "low": 10000,
+     "high": 21000
+    }
+   ]
+  },
+  {
+   "name": "Diagnostic Lab and Imaging Fees",
+   "aliases": [
+    "lab fees",
+    "diagnostics",
+    "imaging costs",
+    "outside lab spend",
+    "lab and imaging"
+   ],
+   "narrative": [
+    "Lab fees",
+    "Diagnostics",
+    "Imaging costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearview Reference Laboratories",
+     "base": 21000,
+     "memo": "Outside bloodwork and pathology"
+    },
+    {
+     "vendor": "Sonoma Teleradiology Partners",
+     "base": 8800,
+     "memo": "Remote radiograph interpretation"
+    },
+    {
+     "vendor": "Pinecrest Cytology Services",
+     "base": 4200,
+     "memo": "Biopsy and cytology panels"
+    }
+   ],
+   "events": [
+    {
+     "key": "mriunit",
+     "vendor": "Sonoma Teleradiology Partners",
+     "memos": [
+      "Magnetom install — scan reading backlog",
+      "Magnetom install — contrast agent supply"
+     ],
+     "cross_memo": "Magnetom install — shielded room buildout",
+     "plain": [
+      "the magnetom install",
+      "magnetom scan reading backlog",
+      "the magnetom contrast supply"
+     ],
+     "oblique": [
+      "bringing advanced scanning in-house at the flagship",
+      "the neurology referral center coming online",
+      "a wave of first-month soft tissue studies",
+      "outsourced interpretation while our own radiologist ramped up",
+      "the big equipment purchase showing up in usage",
+      "brain and spine cases arriving all at once",
+      "the technology upgrade championed by the medical board",
+      "catching up on a queue of deferred studies",
+      "dye and consumables for the new machine",
+      "the specialty imaging capability we just opened",
+      "clients who had been waiting for this service",
+      "extra reads during the trial period",
+      "the capital project reaching patients",
+      "the high-end scanner finally taking cases",
+      "startup volume on the new modality",
+      "pent-up demand for cross-sectional studies"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "pathaudit",
+     "vendor": "Hollis Quality Assurance Labs",
+     "memos": [
+      "Proficiency audit — duplicate panel reruns",
+      "Proficiency audit — blinded sample testing"
+     ],
+     "cross_memo": "Proficiency audit — accreditation filing fee",
+     "plain": [
+      "the proficiency audit",
+      "proficiency audit panel reruns",
+      "the proficiency audit blinded testing"
+     ],
+     "oblique": [
+      "the accreditor's review of our testing accuracy",
+      "re-running results to confirm they were reliable",
+      "a regulator-driven check of our methods",
+      "quality verification before renewing our credentials",
+      "double processing of earlier specimens",
+      "the external examiners who came through in the spring",
+      "proving our numbers matched a reference standard",
+      "a compliance exercise requested by the insurer",
+      "testing done only to satisfy outside reviewers",
+      "a requirement tied to our certification",
+      "paying a third party to grade our work",
+      "the periodic standards check that came due",
+      "cross-checking outcomes at two sites",
+      "demonstrating competence to the oversight board",
+      "an obligation we could not defer",
+      "unplanned retesting before the deadline"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Emergency and Specialist Referral Fees",
+   "aliases": [
+    "referral fees",
+    "specialist referrals",
+    "er referral costs",
+    "outside specialist spend",
+    "emergency referrals"
+   ],
+   "narrative": [
+    "Referral fees",
+    "Specialist referrals",
+    "Emergency referrals"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lakeshore Emergency Veterinary Hospital",
+     "base": 15500,
+     "memo": "After-hours emergency transfer cases"
+    },
+    {
+     "vendor": "Summit Veterinary Oncology Group",
+     "base": 9800,
+     "memo": "Oncology consult referrals"
+    },
+    {
+     "vendor": "Cascade Cardiology Associates",
+     "base": 5600,
+     "memo": "Cardiac consult referrals"
+    }
+   ],
+   "events": [
+    {
+     "key": "hurricaneevac",
+     "vendor": "Lakeshore Emergency Veterinary Hospital",
+     "memos": [
+      "Tropical storm Delia — overflow boarding transfers",
+      "Tropical storm Delia — trauma stabilization cases"
+     ],
+     "cross_memo": "Tropical storm Delia — generator rental at coastal sites",
+     "plain": [
+      "tropical storm delia",
+      "delia overflow boarding transfers",
+      "delia trauma stabilization cases"
+     ],
+     "oblique": [
+      "the weather event that knocked out power at two hospitals",
+      "patients rerouted when our buildings were closed",
+      "the flooding that sent injured animals to outside facilities",
+      "a regional emergency declared by the governor",
+      "pets hurt in the high winds",
+      "sending critical cases elsewhere for a week",
+      "the coastal closures that pushed volume away",
+      "after the roads reopened and the backlog cleared",
+      "a natural disaster that overwhelmed local capacity",
+      "the evacuation of animals from low-lying clinics",
+      "outside facilities carrying our load",
+      "displaced patients from shuttered locations",
+      "the aftermath of the severe weather",
+      "unavoidable transfers while we were dark",
+      "the surge in injuries across the service area",
+      "handing off cases we could not safely treat"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "dentalspecialist",
+     "vendor": "Redwood Veterinary Dental Surgery",
+     "memos": [
+      "Maxillofacial backlog — jaw reconstruction referrals",
+      "Maxillofacial backlog — complex extraction cases"
+     ],
+     "cross_memo": "Maxillofacial backlog — loaner dental equipment",
+     "plain": [
+      "the maxillofacial backlog",
+      "maxillofacial jaw reconstruction referrals",
+      "the maxillofacial extraction cases"
+     ],
+     "oblique": [
+      "clearing the long waitlist of mouth surgery patients",
+      "our in-house dentist being out on leave",
+      "sending face and jaw procedures to a specialist",
+      "the accumulation of complicated oral cases",
+      "patients who had been waiting months for treatment",
+      "an unusual cluster of fractured teeth in large dogs",
+      "the vacancy in our dental department",
+      "outsourcing difficult cases we normally handle ourselves",
+      "oral surgery volume exceeding our capacity",
+      "a catch-up push to treat deferred patients",
+      "the gap before our new hire started",
+      "complex bite injuries needing a specialist",
+      "the sudden uptick in tooth-related referrals",
+      "making up for a paused service line",
+      "hard cases handed to an outside surgeon",
+      "reducing a queue that clients had complained about"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Clinic Staff Scrubs and Uniforms",
+   "aliases": [
+    "uniforms",
+    "scrubs",
+    "staff apparel",
+    "uniform service",
+    "clinic linens and scrubs"
+   ],
+   "narrative": [
+    "Uniforms",
+    "Scrubs",
+    "Staff apparel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crisp Linen and Uniform Rental",
+     "base": 4800,
+     "memo": "Weekly scrub laundering service"
+    },
+    {
+     "vendor": "Marlowe Medical Apparel",
+     "base": 2400,
+     "memo": "Replacement scrubs and lab coats"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "Marlowe Medical Apparel",
+     "memos": [
+      "Bluebird refresh — embroidered scrub tops",
+      "Bluebird refresh — new logo lab coats"
+     ],
+     "cross_memo": "Bluebird refresh — exterior signage replacement",
+     "plain": [
+      "the bluebird refresh",
+      "bluebird embroidered scrub tops",
+      "the bluebird logo lab coats"
+     ],
+     "oblique": [
+      "the company-wide visual identity change",
+      "new look for everyone on the floor",
+      "replacing every garment staff wore",
+      "the marketing department's updated image",
+      "a fresh color palette rolled out to all sites",
+      "outfitting hundreds of employees in one go",
+      "the corporate decision to modernize",
+      "the change that made old stock obsolete",
+      "consistent appearance across the network",
+      "the launch that required everyone to be reissued",
+      "new embroidery on all front-line clothing",
+      "the identity project championed by leadership",
+      "reissuing wardrobe at every location",
+      "the update customers would notice immediately",
+      "the one-time swap of the whole inventory",
+      "what we paid after the creative agency finished"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "hygienerecall",
+     "vendor": "Halcyon Textile Care",
+     "memos": [
+      "Infection control reset — barrier gown purchase",
+      "Infection control reset — disposable cap order"
+     ],
+     "cross_memo": "Infection control reset — staff training session",
+     "plain": [
+      "the infection control reset",
+      "infection control barrier gowns",
+      "the infection control cap order"
+     ],
+     "oblique": [
+      "the protocol revision after a ward contamination",
+      "protective clothing for all surgical teams",
+      "the health inspector's recommendation",
+      "a tightened standard for how staff dress in procedures",
+      "single-use garments replacing washable ones",
+      "the policy change that came from the clinical director",
+      "precautions put in place after a scare",
+      "covering personnel who work with sick patients",
+      "the mandate to limit cross-contamination",
+      "new rules for sterile rooms",
+      "bulk disposables ordered ahead of the rollout",
+      "switching how we protect our people",
+      "the review that found gaps in our practices",
+      "a safety upgrade across every hospital",
+      "stock for the revised procedure",
+      "what we spent complying with the new guidelines"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Biomedical Equipment Maintenance",
+   "aliases": [
+    "equipment maintenance",
+    "biomed",
+    "equipment service contracts",
+    "device repairs",
+    "maintenance of medical equipment"
+   ],
+   "narrative": [
+    "Equipment maintenance",
+    "Biomed",
+    "Device repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Biomedical Services",
+     "base": 11200,
+     "memo": "Quarterly anesthesia machine servicing"
+    },
+    {
+     "vendor": "Vantage Imaging Service Co",
+     "base": 8700,
+     "memo": "X-ray and ultrasound service contract"
+    },
+    {
+     "vendor": "Autoclave Specialists Inc",
+     "base": 3900,
+     "memo": "Sterilizer preventive maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "xraydetector",
+     "vendor": "Vantage Imaging Service Co",
+     "memos": [
+      "Flatpanel failure — detector replacement",
+      "Flatpanel failure — recalibration visit"
+     ],
+     "cross_memo": "Flatpanel failure — loaner radiography rental",
+     "plain": [
+      "the flatpanel failure",
+      "flatpanel detector replacement",
+      "the flatpanel recalibration visit"
+     ],
+     "oblique": [
+      "the picture-taking machine that quit working mid-week",
+      "a cracked sensor that could not be patched",
+      "cases delayed while the room sat idle",
+      "the repair that cost more than the warranty covered",
+      "fixing the hospital's main imaging station",
+      "an unexpected breakdown at the busiest location",
+      "the part that arrived from overseas",
+      "technicians flown in to restore service",
+      "a crash that took out the radiology suite",
+      "what it cost to get back up and running",
+      "the device dropped by a technician",
+      "fault found during a routine shift",
+      "the urgent call to the manufacturer",
+      "a high-ticket component swap",
+      "revenue-blocking downtime at the flagship",
+      "getting the room certified again"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "surgerylights",
+     "vendor": "Lumen Operating Room Systems",
+     "memos": [
+      "Theatre relight — overhead surgical fixtures",
+      "Theatre relight — ceiling boom retrofit"
+     ],
+     "cross_memo": "Theatre relight — electrical panel upgrade",
+     "plain": [
+      "the theatre relight",
+      "theatre relight overhead fixtures",
+      "the theatre relight boom retrofit"
+     ],
+     "oblique": [
+      "better illumination in the operating suites",
+      "the surgeons' complaint about shadows during procedures",
+      "modernizing the fixtures hanging over the tables",
+      "an upgrade requested by the lead veterinarians",
+      "work done while the rooms were closed for a weekend",
+      "replacing aging equipment mounted overhead",
+      "a retrofit scheduled around the surgical calendar",
+      "the project that brightened every procedure room",
+      "swapping out fifteen-year-old hardware",
+      "safety improvement for long operations",
+      "the facilities plan approved last quarter",
+      "work done at three hospitals in sequence",
+      "what we paid to modernize the rooms",
+      "an overdue refresh of critical infrastructure",
+      "the change staff had been asking for",
+      "new arms and lamps for the surgery floor"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Client Communication and Reminder Services",
+   "aliases": [
+    "client communications",
+    "reminder services",
+    "pet owner outreach",
+    "appointment reminders",
+    "client engagement spend"
+   ],
+   "narrative": [
+    "Client communications",
+    "Reminder services",
+    "Pet owner outreach"
+   ],
+   "recurring": [
+    {
+     "vendor": "Chirpwell Messaging Platform",
+     "base": 3600,
+     "memo": "Text and email reminder platform"
+    },
+    {
+     "vendor": "Petal Postcard Printing",
+     "base": 2100,
+     "memo": "Annual wellness mailer postage"
+    },
+    {
+     "vendor": "Warmline Answering Services",
+     "base": 5200,
+     "memo": "After-hours phone answering"
+    }
+   ],
+   "events": [
+    {
+     "key": "puppypack",
+     "vendor": "Petal Postcard Printing",
+     "memos": [
+      "Wagtail welcome — new owner starter kits",
+      "Wagtail welcome — printed puppy guides"
+     ],
+     "cross_memo": "Wagtail welcome — breeder partnership stipend",
+     "plain": [
+      "the wagtail welcome",
+      "wagtail new owner starter kits",
+      "the wagtail puppy guides"
+     ],
+     "oblique": [
+      "the program for people who just adopted a young dog",
+      "handouts given at the first visit",
+      "a campaign designed to keep new clients for life",
+      "packets mailed after a first appointment",
+      "the loyalty initiative from the marketing team",
+      "materials explaining care for new arrivals",
+      "outreach to first-time pet parents",
+      "the giveaway that boosted retention",
+      "booklets and samples in a branded bag",
+      "building relationships with breeders and shelters",
+      "what we spent to win over new households",
+      "a promotional push during the spring season",
+      "the onboarding experience for fresh patients",
+      "goodwill items delivered to the door",
+      "an investment in future wellness visits",
+      "the welcome campaign that went to every new household"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "portaloutage",
+     "vendor": "Beacon Crisis Communications",
+     "memos": [
+      "Rollover incident — apology mailing campaign",
+      "Rollover incident — hotline surge staffing"
+     ],
+     "cross_memo": "Rollover incident — credit monitoring offer",
+     "plain": [
+      "the rollover incident",
+      "rollover apology mailing campaign",
+      "the rollover hotline staffing"
+     ],
+     "oblique": [
+      "the data mishap that exposed owner contact details",
+      "telling affected families what went wrong",
+      "the unplanned all-hands response to a mistake",
+      "calls from worried customers after the notice",
+      "the notification we were obligated to send",
+      "paying temps to field angry callers",
+      "damage control after a vendor error",
+      "the legal team's required outreach",
+      "a breach response coordinated with counsel",
+      "reassuring clients their records were safe",
+      "the embarrassing lapse we had to address publicly",
+      "extra mailing volume beyond the normal schedule",
+      "a crisis handled by an outside firm",
+      "communication triggered by a security slip",
+      "the large one-off notice sent to the full list",
+      "the cost of rebuilding trust with pet owners"
+     ],
+     "low": 12000,
+     "high": 25000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

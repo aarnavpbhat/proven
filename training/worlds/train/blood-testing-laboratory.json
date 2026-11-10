@@ -1,0 +1,830 @@
+{
+ "slug": "blood-testing-laboratory",
+ "industry": "blood testing laboratory",
+ "entities": [
+  "Meridian Diagnostics Network",
+  "Brightvale Clinical Laboratories",
+  "Ostrander Pathology Partners",
+  "Halcyon Blood Sciences",
+  "Redwater Reference Labs"
+ ],
+ "accounts": [
+  {
+   "name": "Reagents and Assay Kits",
+   "aliases": [
+    "reagents",
+    "assay kits",
+    "reagent spend",
+    "lab chemistry supplies",
+    "consumable assays"
+   ],
+   "narrative": [
+    "Reagents",
+    "Assay kits",
+    "Reagent spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Corvane Biochemicals",
+     "base": 28000,
+     "memo": "Monthly chemistry reagent order"
+    },
+    {
+     "vendor": "Tessellate Diagnostics Supply",
+     "base": 14500,
+     "memo": "Immunoassay kit replenishment"
+    },
+    {
+     "vendor": "Pellam Control Materials",
+     "base": 3200,
+     "memo": "QC control standards"
+    }
+   ],
+   "events": [
+    {
+     "key": "hemoglobin_recall",
+     "vendor": "Corvane Biochemicals",
+     "memos": [
+      "Lot 47B hemoglobin A1c reagent replacement - recall exchange",
+      "Hemoglobin A1c recall exchange - emergency rush shipment"
+     ],
+     "cross_memo": "Hemoglobin A1c recall exchange - courier overnight charge",
+     "plain": [
+      "the hemoglobin A1c recall exchange",
+      "the lot 47B recall exchange",
+      "the A1c recall replacement shipment"
+     ],
+     "oblique": [
+      "replacing product the manufacturer pulled from the market",
+      "a safety withdrawal of one of our busiest tests",
+      "swapping out bad inventory at the vendor's expense of speed",
+      "the defective batch we had to cycle out",
+      "an urgent restock after the manufacturer's notice",
+      "product that could not be used on patient samples",
+      "making the shelves whole again after a withdrawal",
+      "an unplanned replacement order",
+      "the pulled lot",
+      "what the supplier told us to stop running",
+      "buying twice for the same testing menu",
+      "stock we were told to quarantine and discard",
+      "the notice from the maker about suspect material",
+      "emergency resupply",
+      "clearing out unusable inventory and refilling fast",
+      "the manufacturer's stop-use instruction"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "vitamin_panel",
+     "vendor": "Lumenfield Assay Technologies",
+     "memos": [
+      "Vitamin D expanded panel launch - initial kit stock",
+      "Vitamin D expanded panel launch - validation reagent set"
+     ],
+     "cross_memo": "Vitamin D expanded panel launch - training materials",
+     "plain": [
+      "the vitamin D expanded panel launch",
+      "the vitamin D panel launch kit stock",
+      "the expanded vitamin D launch"
+     ],
+     "oblique": [
+      "a new test offering for wellness-minded patients",
+      "the menu addition that physicians requested",
+      "stocking up for a service we had never offered before",
+      "getting a fresh product line ready for customers",
+      "the initial build for a brand new test",
+      "what it took to start offering something extra",
+      "opening the door to nutrition screening",
+      "the front-loaded purchase for a debut",
+      "expanding what clinics can order from us",
+      "a new revenue line's start-up inventory",
+      "the first fill of shelves for a new service",
+      "preparing to take on orders we could not accept before",
+      "the pilot supply for an added screening",
+      "the rollout of an additional offering",
+      "launch-phase stocking",
+      "the doctors' request for broader screening"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Courier and Specimen Transport",
+   "aliases": [
+    "courier",
+    "specimen transport",
+    "specimen couriers",
+    "sample logistics",
+    "pickup routes"
+   ],
+   "narrative": [
+    "Courier costs",
+    "Specimen transport",
+    "Sample logistics"
+   ],
+   "recurring": [
+    {
+     "vendor": "Swiftline Medical Couriers",
+     "base": 18000,
+     "memo": "Daily clinic pickup routes"
+    },
+    {
+     "vendor": "Arbor Cold Chain Logistics",
+     "base": 9500,
+     "memo": "Temperature-controlled specimen runs"
+    },
+    {
+     "vendor": "Dunmore Fuel Card Services",
+     "base": 4800,
+     "memo": "Courier vehicle fuel"
+    }
+   ],
+   "events": [
+    {
+     "key": "blizzard",
+     "vendor": "Swiftline Medical Couriers",
+     "memos": [
+      "Blizzard surge routing - extra drivers",
+      "Blizzard surge routing - weekend overtime pay"
+     ],
+     "cross_memo": "Blizzard surge routing - hotel rooms for drivers",
+     "plain": [
+      "the blizzard surge routing",
+      "the blizzard routing extra drivers",
+      "the blizzard surge overtime"
+     ],
+     "oblique": [
+      "the winter storm that shut down the highways",
+      "getting samples through when roads were closed",
+      "extra hands during the worst weather of the season",
+      "paying people to work around the clock in bad conditions",
+      "the emergency staffing for impassable streets",
+      "keeping the lab fed with specimens despite the snow",
+      "an unusual weather event",
+      "the days nobody could drive normally",
+      "the extraordinary effort to reach rural clinics",
+      "covering the gap while the region was iced over",
+      "longer hours for the road crew",
+      "the freeze that stranded our vehicles",
+      "what the forecast did to our schedule",
+      "storm-related scrambling",
+      "reaching remote offices in terrible conditions",
+      "the cost of beating the weather"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "hospital_contract",
+     "vendor": "Northgate Express Delivery",
+     "memos": [
+      "Kestrel Hospital onboarding - dedicated STAT runner",
+      "Kestrel Hospital onboarding - route setup fee"
+     ],
+     "cross_memo": "Kestrel Hospital onboarding - ID badge and access fees",
+     "plain": [
+      "the Kestrel Hospital onboarding",
+      "the Kestrel Hospital STAT runner",
+      "the Kestrel Hospital route setup"
+     ],
+     "oblique": [
+      "winning a large new institutional customer",
+      "the new health system that signed with us",
+      "a big account coming aboard mid-quarter",
+      "the first weeks of serving a major client",
+      "setting up a priority lane for urgent samples",
+      "what it took to start a major relationship",
+      "the arrival of our newest partner",
+      "the startup cost of an expanded footprint",
+      "a customer whose samples cannot wait",
+      "the sales win that required new logistics",
+      "the dedicated service we promised the signing party",
+      "a one-time fee to begin service at a large site",
+      "bringing a fresh high-volume source online",
+      "the commitment made in the new agreement",
+      "getting a prestigious site connected",
+      "what we owed to start up the new relationship"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Instrument Service Contracts",
+   "aliases": [
+    "instrument service",
+    "analyzer maintenance",
+    "service contracts",
+    "equipment servicing",
+    "analyzer upkeep"
+   ],
+   "narrative": [
+    "Instrument service",
+    "Analyzer maintenance",
+    "Service contracts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Veritas Analyzer Services",
+     "base": 22000,
+     "memo": "Chemistry analyzer annual service plan monthly"
+    },
+    {
+     "vendor": "Hollis Hematology Systems",
+     "base": 11500,
+     "memo": "Hematology analyzer service agreement"
+    },
+    {
+     "vendor": "Pinecrest Calibration Labs",
+     "base": 2900,
+     "memo": "Quarterly pipette calibration"
+    }
+   ],
+   "events": [
+    {
+     "key": "centrifuge",
+     "vendor": "Veritas Analyzer Services",
+     "memos": [
+      "Rotor failure at accessioning - emergency replacement visit",
+      "Rotor failure at accessioning - expedited parts"
+     ],
+     "cross_memo": "Rotor failure at accessioning - loaner spinner rental",
+     "plain": [
+      "the rotor failure at accessioning",
+      "the accessioning rotor replacement visit",
+      "the rotor failure expedited parts"
+     ],
+     "oblique": [
+      "a machine that broke at the worst possible moment",
+      "the unit that spun apart in the front room",
+      "an equipment failure that halted intake",
+      "the breakdown that backed up the morning's work",
+      "getting the front-end gear running again fast",
+      "what happened to our busiest workstation",
+      "an after-hours repair callout",
+      "the premium we paid to skip the parts queue",
+      "the failure nobody scheduled for",
+      "urgent fixing of the sample prep gear",
+      "the stoppage that held up the whole line",
+      "a mechanical casualty at the start of the process",
+      "the unplanned technician dispatch",
+      "what we paid to be running by morning",
+      "damage to the device that separates blood components",
+      "the early-morning crisis in receiving"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "mass_spec",
+     "vendor": "Quillon Spectrometry Partners",
+     "memos": [
+      "Triple quad relocation - rigging and requalification",
+      "Triple quad relocation - vacuum system recertification"
+     ],
+     "cross_memo": "Triple quad relocation - electrical contractor hours",
+     "plain": [
+      "the triple quad relocation",
+      "the triple quad requalification",
+      "the triple quad vacuum recertification"
+     ],
+     "oblique": [
+      "moving our most delicate instrument to a new room",
+      "the shift of heavy equipment across the building",
+      "getting a sensitive machine trusted again after a move",
+      "the new layout for the toxicology area",
+      "the reconfiguration that followed the floor plan change",
+      "proving the unit still works after it traveled",
+      "specialists who handle high-value gear",
+      "the project that freed up space for another team",
+      "making the relocated unit produce valid results again",
+      "relocating the lab's crown jewel",
+      "the transfer of expensive hardware",
+      "what the facilities rearrangement cost us",
+      "paperwork and testing after the shift",
+      "the careful handling of a very costly device",
+      "the walls-and-floors project for our precision hardware",
+      "rearranging the benches for the new workflow"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Biohazard and Waste Disposal",
+   "aliases": [
+    "biohazard disposal",
+    "medical waste",
+    "waste disposal",
+    "sharps and waste",
+    "hazmat pickup"
+   ],
+   "narrative": [
+    "Biohazard disposal",
+    "Medical waste",
+    "Waste disposal"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenlock Medical Waste",
+     "base": 6800,
+     "memo": "Red bag pickup monthly"
+    },
+    {
+     "vendor": "Sentry Sharps Containers",
+     "base": 2400,
+     "memo": "Sharps container exchange"
+    },
+    {
+     "vendor": "Clearpath Chemical Disposal",
+     "base": 3900,
+     "memo": "Solvent waste manifest pickup"
+    }
+   ],
+   "events": [
+    {
+     "key": "freezer_failure",
+     "vendor": "Greenlock Medical Waste",
+     "memos": [
+      "Walk-in freezer failure - spoiled specimen incineration",
+      "Walk-in freezer failure - archive sample destruction"
+     ],
+     "cross_memo": "Walk-in freezer failure - dry ice emergency purchase",
+     "plain": [
+      "the walk-in freezer failure",
+      "the freezer failure incineration",
+      "the freezer failure sample destruction"
+     ],
+     "oblique": [
+      "a power problem that ruined stored material",
+      "losing months of retained patient material overnight",
+      "the cold storage that stopped being cold",
+      "having to dispose of everything that thawed",
+      "the unit that quit over a long weekend",
+      "an overnight outage in the archive room",
+      "discarding what could no longer be tested again",
+      "the loss of retained samples to temperature",
+      "a mechanical shutdown with an expensive aftermath",
+      "getting rid of ruined inventory in bulk",
+      "what happened to the archive when the compressor stopped",
+      "the day we found the storage room warm",
+      "a breakdown that turned samples into waste",
+      "clearing out the spoiled contents",
+      "the discovery on Monday morning",
+      "retention stock we could not keep"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "decommission",
+     "vendor": "Ashford Environmental Remediation",
+     "memos": [
+      "Old annex closure - radiological source removal",
+      "Old annex closure - contaminated cabinet disposal"
+     ],
+     "cross_memo": "Old annex closure - hazmat transport permit fees",
+     "plain": [
+      "the old annex closure",
+      "the old annex source removal",
+      "the old annex cabinet disposal"
+     ],
+     "oblique": [
+      "emptying out the building we no longer use",
+      "giving up a legacy space and cleaning it out",
+      "the end of an older site's life",
+      "what regulators required before we could hand back keys",
+      "clearing hazardous leftovers from a former work area",
+      "decades of accumulated material finally leaving",
+      "shutting the book on the original location",
+      "consolidating into fewer buildings",
+      "the exit cost for a retired workspace",
+      "specialist crews for materials nobody else would take",
+      "the lease return obligations",
+      "the final sweep of the previous home",
+      "making a space safe for the next occupant",
+      "stuff from the past that needed proper handling",
+      "the wind-down of the secondary location",
+      "cleanup that the landlord demanded"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Accreditation and Proficiency Testing",
+   "aliases": [
+    "accreditation",
+    "proficiency testing",
+    "compliance fees",
+    "certification costs",
+    "external quality programs"
+   ],
+   "narrative": [
+    "Accreditation",
+    "Proficiency testing",
+    "Compliance fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Standard College of Pathologists",
+     "base": 4500,
+     "memo": "Annual accreditation fee installment"
+    },
+    {
+     "vendor": "Equinox Proficiency Programs",
+     "base": 3800,
+     "memo": "Quarterly PT survey shipment"
+    },
+    {
+     "vendor": "Ledgerwood Regulatory Consulting",
+     "base": 2500,
+     "memo": "Monthly compliance advisory retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "inspection_findings",
+     "vendor": "Ledgerwood Regulatory Consulting",
+     "memos": [
+      "Citation response project - corrective action plan drafting",
+      "Citation response project - mock reinspection"
+     ],
+     "cross_memo": "Citation response project - overtime for documentation staff",
+     "plain": [
+      "the citation response project",
+      "the citation corrective action plan",
+      "the citation mock reinspection"
+     ],
+     "oblique": [
+      "answering the surveyors' list of deficiencies",
+      "fixing what the outside auditors flagged",
+      "the paperwork scramble after a rough visit",
+      "proving to the authorities that we corrected our practices",
+      "the weeks after the unannounced walkthrough",
+      "the remediation we promised in writing",
+      "preparing for the return of the examiners",
+      "buying expert help after failing to meet standards",
+      "the consequences of an unfavorable report",
+      "a rehearsal for the second look",
+      "rewriting procedures under a deadline",
+      "demonstrating compliance to people who doubted it",
+      "the team effort to close out findings",
+      "outside experts hired to save our standing",
+      "tightening up after the surveyors left",
+      "what we spent to keep our license in good standing"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "new_scope",
+     "vendor": "Orchard Genomics Credentialing",
+     "memos": [
+      "Molecular scope extension - assessor travel and fees",
+      "Molecular scope extension - method validation package"
+     ],
+     "cross_memo": "Molecular scope extension - reference materials purchase",
+     "plain": [
+      "the molecular scope extension",
+      "the molecular scope assessor fees",
+      "the molecular scope validation package"
+     ],
+     "oblique": [
+      "getting permission to run a whole new category of tests",
+      "broadening what our credentials let us perform",
+      "the gate we had to pass to offer genetic work",
+      "a bigger authorization for the lab",
+      "the paperwork to be recognized for advanced testing",
+      "approval to take on a different kind of sample",
+      "growth that required outsiders to sign off",
+      "proving competence in a field we just entered",
+      "what the evaluators charged for coming out",
+      "the price of being allowed to expand",
+      "documentation showing our methods are sound",
+      "the first step toward a premium service line",
+      "qualifying for work that pays better",
+      "the sign-off needed before we could bill for new tests",
+      "stepping into a more technical specialty",
+      "the external review of our new capability"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Phlebotomy Supplies and Collection",
+   "aliases": [
+    "phlebotomy supplies",
+    "collection supplies",
+    "draw station supplies",
+    "specimen collection",
+    "patient service center supplies"
+   ],
+   "narrative": [
+    "Phlebotomy supplies",
+    "Collection supplies",
+    "Draw station supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Vantage Vacutainer Distribution",
+     "base": 9800,
+     "memo": "Collection tubes and needles"
+    },
+    {
+     "vendor": "Brisa Patient Care Products",
+     "base": 3100,
+     "memo": "Gauze bandages and tourniquets"
+    },
+    {
+     "vendor": "Oakline Labeling Systems",
+     "base": 1800,
+     "memo": "Barcode specimen labels"
+    }
+   ],
+   "events": [
+    {
+     "key": "tube_shortage",
+     "vendor": "Vantage Vacutainer Distribution",
+     "memos": [
+      "Tube allocation crisis - premium spot purchase",
+      "Tube allocation crisis - alternate size substitution"
+     ],
+     "cross_memo": "Tube allocation crisis - broker expediting fee",
+     "plain": [
+      "the tube allocation crisis",
+      "the tube allocation spot purchase",
+      "the tube allocation substitution"
+     ],
+     "oblique": [
+      "a nationwide scarcity of an item we use every day",
+      "paying more because the usual supply dried up",
+      "hunting for whatever we could find on short notice",
+      "the industry-wide squeeze on a basic product",
+      "competing with every other lab for scarce goods",
+      "scrambling to keep the draw stations stocked",
+      "a shortfall that no one had forecast",
+      "the premium for getting goods when nobody had any",
+      "a supply chain problem far outside our control",
+      "finding substitutes so patients could still be seen",
+      "buying from unusual sources to avoid turning people away",
+      "what the shortage cost us per unit",
+      "the dearth that hit every collection site",
+      "urgent buying from secondary markets",
+      "scarcity pricing",
+      "the mad dash to avoid running out"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "mobile_clinic",
+     "vendor": "Trailhead Mobile Health Outfitters",
+     "memos": [
+      "Corporate wellness van program - portable draw chairs",
+      "Corporate wellness van program - cooler and centrifuge kits"
+     ],
+     "cross_memo": "Corporate wellness van program - vehicle wrap and signage",
+     "plain": [
+      "the corporate wellness van program",
+      "the wellness van draw chairs",
+      "the wellness van cooler kits"
+     ],
+     "oblique": [
+      "taking our service on the road to employers",
+      "a pilot for drawing blood at customers' workplaces",
+      "equipping a vehicle to visit large offices",
+      "the outfitting needed for off-site health screenings",
+      "a new way to reach patients away from our centers",
+      "what it took to set up a roving operation",
+      "gear for serving people where they work",
+      "the initial investment in a traveling service",
+      "a contract that required us to go to them",
+      "fitting out a rig for events and campuses",
+      "the start-up expense for in-field collection",
+      "mobile capability that we did not have before",
+      "the equipment behind a marketing experiment",
+      "supporting an on-location offering",
+      "building a rolling station",
+      "gear for the vehicle that now visits employers"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Laboratory Information System Fees",
+   "aliases": [
+    "LIS fees",
+    "lab information system",
+    "interface fees",
+    "LIS hosting",
+    "results reporting platform"
+   ],
+   "narrative": [
+    "LIS fees",
+    "Lab information system costs",
+    "Interface fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cardinal Lab Systems",
+     "base": 16500,
+     "memo": "LIS hosting and license monthly"
+    },
+    {
+     "vendor": "Interlink HL7 Services",
+     "base": 4200,
+     "memo": "EHR interface maintenance"
+    },
+    {
+     "vendor": "Patchwork Secure Backup",
+     "base": 2200,
+     "memo": "Offsite database backup"
+    }
+   ],
+   "events": [
+    {
+     "key": "portal_migration",
+     "vendor": "Cardinal Lab Systems",
+     "memos": [
+      "Version 9 upgrade cutover - weekend on-site engineers",
+      "Version 9 upgrade cutover - data conversion services"
+     ],
+     "cross_memo": "Version 9 upgrade cutover - parallel testing temp staff",
+     "plain": [
+      "the version 9 upgrade cutover",
+      "the version 9 cutover on-site engineers",
+      "the version 9 data conversion"
+     ],
+     "oblique": [
+      "moving to the newest release of the core software",
+      "a big technical changeover over a weekend",
+      "the project that touched every record we hold",
+      "bringing in vendor staff to flip the switch",
+      "converting years of history into a new format",
+      "the big-bang transition our IT team planned for months",
+      "modernizing the backbone system",
+      "people on site to catch problems during the switch",
+      "the effort to keep results flowing during the changeover",
+      "an upgrade the vendor said was mandatory",
+      "shifting everything to a newer platform",
+      "the delicate hours when old gave way to new",
+      "extra hands while the system was down",
+      "the migration our contract required eventually",
+      "making sure nothing was lost in the move",
+      "the one-time cost of staying current"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "cyber_incident",
+     "vendor": "Bastion Incident Response Group",
+     "memos": [
+      "Ransomware attempt containment - forensic investigation",
+      "Ransomware attempt containment - credit monitoring notification"
+     ],
+     "cross_memo": "Ransomware attempt containment - outside counsel retainer",
+     "plain": [
+      "the ransomware attempt containment",
+      "the ransomware forensic investigation",
+      "the ransomware notification services"
+     ],
+     "oblique": [
+      "a hostile intrusion that we caught partway through",
+      "hiring specialists after someone tried to lock our files",
+      "the security scare that put leadership on alert",
+      "expert detectives for a digital break-in",
+      "the obligation to tell patients their data may have been exposed",
+      "what outsiders charged to clean up the mess",
+      "the attack we managed to stop before real damage",
+      "cost of finding out how the criminals got in",
+      "an emergency engagement with security responders",
+      "legal and notification duties after a breach attempt",
+      "the hackers who nearly succeeded",
+      "a threat that required immediate outside help",
+      "the weekend we spent isolating infected machines",
+      "making sure no stolen information left the building",
+      "the response bill for an attack on our systems",
+      "the aftermath of a malicious email"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Cleanroom and Facility Utilities",
+   "aliases": [
+    "facility utilities",
+    "lab utilities",
+    "cleanroom costs",
+    "power and water",
+    "environmental controls"
+   ],
+   "narrative": [
+    "Facility utilities",
+    "Lab utilities",
+    "Power and water"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-County Power Cooperative",
+     "base": 19500,
+     "memo": "Electric service main lab"
+    },
+    {
+     "vendor": "Clearbrook Water Authority",
+     "base": 3400,
+     "memo": "Water and deionized supply"
+    },
+    {
+     "vendor": "Altair HVAC Maintenance",
+     "base": 5600,
+     "memo": "Air handler filter service"
+    }
+   ],
+   "events": [
+    {
+     "key": "generator",
+     "vendor": "Tri-County Power Cooperative",
+     "memos": [
+      "Grid curtailment event - demand charge assessment",
+      "Grid curtailment event - peak rate surcharge"
+     ],
+     "cross_memo": "Grid curtailment event - fuel for standby generator",
+     "plain": [
+      "the grid curtailment event",
+      "the grid curtailment demand charge",
+      "the grid curtailment peak surcharge"
+     ],
+     "oblique": [
+      "a summer heat wave that strained the electric supply",
+      "being penalized for drawing too much at the wrong hour",
+      "the utility's extra billing during a scarcity period",
+      "a utility's rules for the busiest afternoons",
+      "paying more because everyone ran air conditioning at once",
+      "power company charges tied to a record day",
+      "a pricing rule that punished our usage pattern",
+      "the premium for consuming during a crunch",
+      "an emergency declared by the regional operator",
+      "the electric company's response to high demand",
+      "keeping instruments alive while rates spiked",
+      "a penalty for peak consumption",
+      "the bill that arrived after the hottest week",
+      "an unwelcome line item from the energy provider",
+      "the few hours that cost us far more than usual",
+      "a surcharge triggered by outside conditions"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "cleanroom_buildout",
+     "vendor": "Pristine Environments Contracting",
+     "memos": [
+      "PCR suite buildout - positive pressure room construction",
+      "PCR suite buildout - HEPA filtration installation"
+     ],
+     "cross_memo": "PCR suite buildout - architect change order",
+     "plain": [
+      "the PCR suite buildout",
+      "the PCR suite pressure room",
+      "the PCR suite filtration installation"
+     ],
+     "oblique": [
+      "constructing a sealed space for sensitive amplification work",
+      "a new contamination-controlled room",
+      "the walls and air systems for molecular testing",
+      "carving out a dedicated zone for delicate procedures",
+      "the construction project behind our genetic offering",
+      "a purpose-built space that keeps stray particles out",
+      "contractors who specialize in controlled environments",
+      "the physical expansion that supports advanced analysis",
+      "special airflow to protect results from contamination",
+      "a facility improvement tied to a new service",
+      "building a room that must stay cleaner than the rest",
+      "the capital-style project we expensed this month",
+      "the infrastructure for a more demanding test family",
+      "sealing off an area and cleaning its air",
+      "the carpentry and ducting for the new work area",
+      "the isolated lab space we added"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

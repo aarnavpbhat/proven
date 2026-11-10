@@ -1,0 +1,703 @@
+{
+ "slug": "camping-gear-retailer",
+ "industry": "camping gear retailer",
+ "entities": [
+  "Ridgeline Outfitters",
+  "Timberwolf Trail Supply",
+  "Basecamp & Bough Co.",
+  "Summit Hollow Gear",
+  "Juniper Fork Outdoors"
+ ],
+ "accounts": [
+  {
+   "name": "Outbound Freight & Carrier Fees",
+   "aliases": [
+    "freight",
+    "outbound freight",
+    "carrier fees",
+    "shipping costs",
+    "freight spend"
+   ],
+   "narrative": [
+    "Outbound freight",
+    "Carrier fees",
+    "Shipping costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northline Parcel Express",
+     "base": 18500,
+     "memo": "Monthly parcel carrier invoice"
+    },
+    {
+     "vendor": "Redrock LTL Partners",
+     "base": 12400,
+     "memo": "LTL store replenishment linehaul"
+    }
+   ],
+   "events": [
+    {
+     "key": "hazmat",
+     "vendor": "Northline Parcel Express",
+     "memos": [
+      "Fuel canister compliance surcharge — hazmat labeling",
+      "Fuel canister compliance surcharge — ground restriction fee"
+     ],
+     "cross_memo": "Fuel canister compliance surcharge — safety data sheets",
+     "plain": [
+      "the fuel canister compliance surcharge",
+      "the canister compliance surcharge fees",
+      "the fuel canister compliance charges"
+     ],
+     "oblique": [
+      "extra charges for shipping pressurized stove gas",
+      "what the carrier added for flammable cargo",
+      "rules on shipping flammable goods",
+      "the dangerous-goods handling premium",
+      "paperwork and labels for risky shipments",
+      "new restrictions on pressurized products",
+      "the pricier handling of stove supplies",
+      "regulatory costs for volatile items",
+      "carrier penalties for improperly marked boxes",
+      "special handling of burnable merchandise",
+      "the cost of moving combustible stock",
+      "flammable cargo premiums",
+      "safety-driven shipping add-ons",
+      "the gas-powered product shipping rules",
+      "extra fees for anything under pressure",
+      "compliance burden on hot-selling stove season"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "peakrelay",
+     "vendor": "Cascade Freight Brokers",
+     "memos": [
+      "Peakrelay holiday overflow — spot truckload moves",
+      "Peakrelay holiday overflow — dock expedite fees"
+     ],
+     "cross_memo": "Peakrelay holiday overflow — temporary yard storage",
+     "plain": [
+      "the peakrelay holiday overflow",
+      "the peakrelay overflow moves",
+      "the peakrelay holiday spot loads"
+     ],
+     "oblique": [
+      "a late-year surge in orders that outran our regular trucks",
+      "hiring one-off brokers for the seasonal crush",
+      "getting gift-season orders out the door",
+      "emergency capacity during the busiest weeks",
+      "demand we did not plan lanes for",
+      "scrambling to move backlog before year-end",
+      "extra trucks booked on short notice",
+      "the rush when everyone shops at once",
+      "paying up for last-minute capacity",
+      "clearing the warehouse during the shopping peak",
+      "a spike in volume nobody forecast",
+      "unplanned shipments during the gifting frenzy",
+      "buying truck space at spot rates",
+      "moves arranged outside our normal contracts",
+      "the end-of-year order crunch",
+      "speed premiums to hit delivery promises"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Tent & Sleeping Gear Inventory Shrink",
+   "aliases": [
+    "shrink",
+    "inventory shrink",
+    "tent shrink",
+    "gear losses",
+    "shrinkage"
+   ],
+   "narrative": [
+    "Inventory shrink",
+    "Gear losses",
+    "Shrinkage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Guardpost Loss Prevention",
+     "base": 6200,
+     "memo": "Monthly loss prevention monitoring"
+    },
+    {
+     "vendor": "Tallyright Cycle Counts",
+     "base": 4800,
+     "memo": "Scheduled cycle count labor"
+    }
+   ],
+   "events": [
+    {
+     "key": "mildew",
+     "vendor": "Tallyright Cycle Counts",
+     "memos": [
+      "Warehouse 4 mildew writedown — canvas tent audit",
+      "Warehouse 4 mildew writedown — sleeping bag disposal"
+     ],
+     "cross_memo": "Warehouse 4 mildew writedown — remediation crew",
+     "plain": [
+      "the warehouse 4 mildew writedown",
+      "the mildew writedown audit",
+      "the warehouse mildew disposal"
+     ],
+     "oblique": [
+      "stock ruined by dampness in the storage building",
+      "fabric goods we could no longer sell after the leak",
+      "a roof problem that spoiled merchandise",
+      "wet conditions that wrecked textile inventory",
+      "moisture damage found on a routine walk",
+      "products tossed after a humidity event",
+      "spoiled bedding and shelters",
+      "the fallout from water getting into the stockroom",
+      "goods pulled from sale for smelling off",
+      "losses from a building that stayed too wet",
+      "unsellable canvas items",
+      "discarding goods that grew spots",
+      "what the rainy stretch did to our shelves",
+      "a plumbing failure that cost us product",
+      "writing off soggy stock",
+      "cleanup of a damp storage area"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "lockshift",
+     "vendor": "Ironvale Security Services",
+     "memos": [
+      "Lockshift night break-in — stolen backpack pallets",
+      "Lockshift night break-in — forced dock door loss"
+     ],
+     "cross_memo": "Lockshift night break-in — emergency door repair",
+     "plain": [
+      "the lockshift night break-in",
+      "the lockshift stolen pallets",
+      "the lockshift break-in loss"
+     ],
+     "oblique": [
+      "thieves hitting the loading area after hours",
+      "a burglary that cleaned out premium merchandise",
+      "items taken while the building was empty",
+      "criminals driving off with a pallet of packs",
+      "the overnight theft at the distribution center",
+      "stolen goods we had to claim",
+      "intruders who got past the back entrance",
+      "losses from someone breaking in",
+      "a robbery of high-value stock",
+      "the police report we filed on missing inventory",
+      "unauthorized entry that emptied a rack",
+      "what the crooks carried away",
+      "theft that tested our alarm system",
+      "goods that vanished in the early hours",
+      "an outside crew stealing from our dock",
+      "insurance paperwork after the heist"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Seasonal Store Labor",
+   "aliases": [
+    "seasonal labor",
+    "store labor",
+    "seasonal staffing",
+    "temp labor",
+    "seasonal payroll"
+   ],
+   "narrative": [
+    "Seasonal labor",
+    "Temp labor",
+    "Seasonal staffing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Trailhead Staffing Group",
+     "base": 22000,
+     "memo": "Weekly temp associate billing"
+    },
+    {
+     "vendor": "Pinecrest Payroll Services",
+     "base": 3800,
+     "memo": "Payroll processing fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "gearfitters",
+     "vendor": "Trailhead Staffing Group",
+     "memos": [
+      "Pack gearfitters certification — trainer wages",
+      "Pack gearfitters certification — premium shift pay"
+     ],
+     "cross_memo": "Pack gearfitters certification — course materials",
+     "plain": [
+      "the pack gearfitters certification",
+      "the gearfitters certification wages",
+      "the pack gearfitters training premium"
+     ],
+     "oblique": [
+      "teaching floor staff to size equipment for customers",
+      "a skills program for fitting hikers properly",
+      "paying people to learn before the rush",
+      "upskilling the sales floor",
+      "coaching associates on expert advice",
+      "extra hours spent in classroom sessions",
+      "a credential push for the busy season",
+      "wages for time not spent selling",
+      "getting newcomers ready to advise on load carrying",
+      "the knowledge drive for new hires",
+      "tutoring staff on technical products",
+      "premium rates for trained specialists",
+      "an investment in service quality",
+      "the cost of making rookies competent",
+      "education time on the payroll",
+      "readying the team for expert-level questions"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "snowmelt",
+     "vendor": "Alpenglow Workforce Solutions",
+     "memos": [
+      "Snowmelt sale surge — weekend crew agency fees",
+      "Snowmelt sale surge — overtime reimbursements"
+     ],
+     "cross_memo": "Snowmelt sale surge — signage installers",
+     "plain": [
+      "the snowmelt sale surge",
+      "the snowmelt weekend crew",
+      "the snowmelt sale overtime"
+     ],
+     "oblique": [
+      "a clearance event that packed every store",
+      "extra bodies needed when winter stock got marked down",
+      "a promotion that drew unusually large crowds",
+      "staffing up for the discount frenzy",
+      "long lines at registers during a markdown event",
+      "hiring on short notice for a big sale",
+      "after-hours work to restock between customers",
+      "getting through the busiest bargain weekend",
+      "the traffic bump from deep discounts",
+      "lines out the door at clearance time",
+      "covering shifts during an end-of-season blowout",
+      "people brought in to handle the crowd",
+      "overtime from a heavily advertised price cut",
+      "help for the days shelves emptied fast",
+      "a one-time promotion that overwhelmed the floor",
+      "scrambling to cover registers"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Vendor Chargebacks & Returns Processing",
+   "aliases": [
+    "returns",
+    "returns processing",
+    "chargebacks",
+    "return costs",
+    "reverse logistics"
+   ],
+   "narrative": [
+    "Returns processing",
+    "Chargebacks",
+    "Return costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Loopback Reverse Logistics",
+     "base": 9400,
+     "memo": "Return center processing fees"
+    },
+    {
+     "vendor": "Clearwater Refurb Works",
+     "base": 5600,
+     "memo": "Open-box refurbishment labor"
+    }
+   ],
+   "events": [
+    {
+     "key": "zipperlot",
+     "vendor": "Clearwater Refurb Works",
+     "memos": [
+      "Zipperlot jacket defect — rework batch",
+      "Zipperlot jacket defect — inspection overtime"
+     ],
+     "cross_memo": "Zipperlot jacket defect — supplier claim filing",
+     "plain": [
+      "the zipperlot jacket defect",
+      "the zipperlot rework batch",
+      "the zipperlot defect inspections"
+     ],
+     "oblique": [
+      "a faulty closure that sent shells back in droves",
+      "customers bringing back coats that came apart",
+      "a manufacturing flaw in one outerwear line",
+      "a quality escape from the factory",
+      "sorting through returned winter garments",
+      "correcting a fastener failure after launch",
+      "the fix for a problem our supplier caused",
+      "apparel coming home with a broken pull",
+      "sewing teams repairing returned outerwear",
+      "a production mistake discovered by buyers",
+      "hundreds of damaged parkas",
+      "inspecting coats for the same fault",
+      "what it cost to repair what the maker got wrong",
+      "warranty traffic after a weak batch",
+      "a faulty run of rain shells",
+      "time spent catching bad garments before resale"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "ovenrecall",
+     "vendor": "Sparkwright Compliance Partners",
+     "memos": [
+      "Ovenrecall camp stove — notice mailing",
+      "Ovenrecall camp stove — customer refund handling"
+     ],
+     "cross_memo": "Ovenrecall camp stove — retrieval freight",
+     "plain": [
+      "the ovenrecall camp stove notice",
+      "the ovenrecall refund handling",
+      "the ovenrecall camp stove program"
+     ],
+     "oblique": [
+      "a government-ordered pullback of a cooking product",
+      "refunds issued after a safety bulletin",
+      "contacting buyers about a hazardous burner",
+      "a manufacturer warning that forced us to refund",
+      "pulling dangerous items off shelves and out of homes",
+      "paying customers back for a unit that could ignite",
+      "regulator-driven removal of a popular item",
+      "the cost of unwinding sales of a flawed device",
+      "a safety agency notice about a flame problem",
+      "notifying everyone who bought the flagged model",
+      "money back on gear deemed unsafe",
+      "an official stop-sale on a heating appliance",
+      "the work of tracking down purchasers",
+      "reversing revenue on a risky product",
+      "the paperwork after a danger was reported",
+      "cleanup after a product safety alert"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Trail Marketing & Outdoor Events",
+   "aliases": [
+    "marketing",
+    "trail marketing",
+    "event marketing",
+    "outdoor events",
+    "promo spend"
+   ],
+   "narrative": [
+    "Trail marketing",
+    "Event marketing",
+    "Promo spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Wildpath Creative Agency",
+     "base": 14500,
+     "memo": "Monthly creative retainer"
+    },
+    {
+     "vendor": "Summitview Media Buying",
+     "base": 19000,
+     "memo": "Digital and print media placements"
+    },
+    {
+     "vendor": "Fieldnote Email Studio",
+     "base": 2400,
+     "memo": "Email platform and campaign fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "dawnhike",
+     "vendor": "Wildpath Creative Agency",
+     "memos": [
+      "Dawnhike community series — video production",
+      "Dawnhike community series — influencer stipends"
+     ],
+     "cross_memo": "Dawnhike community series — permit and trailhead fees",
+     "plain": [
+      "the dawnhike community series",
+      "the dawnhike video production",
+      "the dawnhike influencer stipends"
+     ],
+     "oblique": [
+      "a string of guided outings meant to build a local following",
+      "content shot on morning treks",
+      "paying personalities to walk with customers",
+      "a brand-building run of group excursions",
+      "films promoting our expeditions",
+      "a loyalty push through shared adventures",
+      "creators hired to amplify our name",
+      "public outings we organized for goodwill",
+      "a campaign built around sunrise walks",
+      "the video crew that followed our guides",
+      "an ambassador program with outdoor personalities",
+      "community engagement beyond ordinary ads",
+      "an experiential push that got filmed",
+      "hosting customers on organized walks",
+      "the social media payoff of group trips",
+      "the festival-style outreach we sponsored"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "crestline",
+     "vendor": "Bannerfall Exhibits",
+     "memos": [
+      "Crestline trade expo — booth fabrication",
+      "Crestline trade expo — shipping and drayage"
+     ],
+     "cross_memo": "Crestline trade expo — staff lodging",
+     "plain": [
+      "the crestline trade expo",
+      "the crestline booth fabrication",
+      "the crestline expo drayage"
+     ],
+     "oblique": [
+      "a major industry convention where we showed off new lines",
+      "building a display for wholesale buyers",
+      "our presence at the annual buyers gathering",
+      "a showroom designed for a national conference",
+      "pitching to retail partners in person",
+      "costs of exhibiting in front of the whole sector",
+      "a stand constructed to attract purchasing agents",
+      "moving display fixtures across the country",
+      "the yearly gathering of brands and stores",
+      "a presentation space for next season's lineup",
+      "the fixtures we crated for the big show",
+      "networking with vendors at a hall downtown",
+      "a one-off stage to win shelf space",
+      "our turn on the convention floor",
+      "the splash we made at the sector meeting",
+      "show-floor construction and setup"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Store Facilities & Utilities",
+   "aliases": [
+    "facilities",
+    "store utilities",
+    "utilities",
+    "building costs",
+    "facilities spend"
+   ],
+   "narrative": [
+    "Facilities spend",
+    "Store utilities",
+    "Building costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Evergreen Property Management",
+     "base": 26000,
+     "memo": "Monthly common area and lease charges"
+    },
+    {
+     "vendor": "Brightgrid Energy",
+     "base": 11200,
+     "memo": "Electricity and gas usage"
+    },
+    {
+     "vendor": "Cleanstone Janitorial",
+     "base": 4900,
+     "memo": "Nightly cleaning service"
+    }
+   ],
+   "events": [
+    {
+     "key": "rooftop",
+     "vendor": "Evergreen Property Management",
+     "memos": [
+      "Rooftop hvac replacement — unit install",
+      "Rooftop hvac replacement — crane lift fee"
+     ],
+     "cross_memo": "Rooftop hvac replacement — electrical retrofit",
+     "plain": [
+      "the rooftop hvac replacement",
+      "the rooftop hvac install",
+      "the rooftop hvac crane lift"
+     ],
+     "oblique": [
+      "a new climate system for the flagship location",
+      "swapping out the old heating and cooling machine",
+      "equipment that died and had to be replaced",
+      "getting the store comfortable again",
+      "a major mechanical upgrade overhead",
+      "hoisting heavy equipment up to the building top",
+      "what it cost when the air handling quit",
+      "a capital-sized fix for temperature control",
+      "the unit that failed during the heat wave",
+      "installing modern ventilation machinery",
+      "replacing machinery past its working life",
+      "an aging system finally giving out",
+      "a contractor with a crane at the back lot",
+      "keeping shoppers cool through summer",
+      "the big-ticket mechanical swap",
+      "a one-time upgrade to indoor comfort"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "gladeview",
+     "vendor": "Terrafirm Paving Contractors",
+     "memos": [
+      "Gladeview lot resurfacing — asphalt milling",
+      "Gladeview lot resurfacing — restriping crew"
+     ],
+     "cross_memo": "Gladeview lot resurfacing — drainage correction",
+     "plain": [
+      "the gladeview lot resurfacing",
+      "the gladeview asphalt milling",
+      "the gladeview lot restriping"
+     ],
+     "oblique": [
+      "redoing the parking area outside the store",
+      "fixing the cracks and potholes customers drive over",
+      "a new surface for cars at the main location",
+      "outdoor paving work after a rough winter",
+      "repairing the ground shoppers park on",
+      "a contractor tearing up the entrance",
+      "the lines painted fresh for stalls",
+      "maintenance on the exterior driving area",
+      "smoothing out the approach to the front doors",
+      "a resurfacing job that closed part of the lot",
+      "upgrading the vehicle area after complaints",
+      "tarmac renewal at our busiest site",
+      "addressing hazards for incoming traffic",
+      "one-off pavement work beyond routine upkeep",
+      "the bill for outdoor ground repairs",
+      "getting the lot ready for the busy season"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Merchant & Payment Processing Fees",
+   "aliases": [
+    "merchant fees",
+    "card fees",
+    "payment processing",
+    "processing costs",
+    "interchange costs"
+   ],
+   "narrative": [
+    "Merchant fees",
+    "Card fees",
+    "Payment processing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Paystone Merchant Services",
+     "base": 28500,
+     "memo": "Card interchange and assessment fees"
+    },
+    {
+     "vendor": "Tillworks POS Systems",
+     "base": 7800,
+     "memo": "Point of sale terminal subscriptions"
+    }
+   ],
+   "events": [
+    {
+     "key": "chipshift",
+     "vendor": "Tillworks POS Systems",
+     "memos": [
+      "Chipshift terminal rollout — reader hardware",
+      "Chipshift terminal rollout — installer visits"
+     ],
+     "cross_memo": "Chipshift terminal rollout — network cabling",
+     "plain": [
+      "the chipshift terminal rollout",
+      "the chipshift reader hardware",
+      "the chipshift installer visits"
+     ],
+     "oblique": [
+      "replacing checkout devices across all locations",
+      "equipment customers tap and insert cards on",
+      "a technology refresh at the registers",
+      "new gadgets at every counter",
+      "upgrading how shoppers pay in the store",
+      "technicians visiting each location to swap machines",
+      "a security-driven change at the tills",
+      "modernizing the front-end of every sale",
+      "a network-wide hardware changeover",
+      "readiness for newer card standards",
+      "devices installed ahead of a deadline",
+      "the cost of swapping payment equipment",
+      "getting every lane on newer machines",
+      "a compliance push affecting checkout lines",
+      "hardware our processor required us to adopt",
+      "rolling out fresh terminals chain-wide"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "fraudwave",
+     "vendor": "Shieldpoint Dispute Recovery",
+     "memos": [
+      "Fraudwave dispute surge — chargeback representment",
+      "Fraudwave dispute surge — card testing losses"
+     ],
+     "cross_memo": "Fraudwave dispute surge — fraud analyst retainer",
+     "plain": [
+      "the fraudwave dispute surge",
+      "the fraudwave chargeback representment",
+      "the fraudwave card testing losses"
+     ],
+     "oblique": [
+      "a flood of contested online orders",
+      "criminals using stolen numbers on our website",
+      "buyers disputing purchases they never made",
+      "paying to fight reversals on web sales",
+      "bad actors probing the checkout page",
+      "a wave of illicit transactions",
+      "money lost to scams on the storefront",
+      "specialists hired to contest false claims",
+      "stolen credentials used on our online shop",
+      "an attack that left us holding the bag",
+      "unauthorized orders shipped before detection",
+      "the cost of defending against fake buyers",
+      "reversals that piled up in a few weeks",
+      "consultants brought in after abuse spiked",
+      "a bot-driven buying spree with stolen cards",
+      "cleanup after thieves used our site"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

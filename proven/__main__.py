@@ -169,6 +169,9 @@ def main(argv: list[str] | None = None) -> int:
                    help="report after these many confirmations (and after all of them)")
     p.add_argument("--suite", default=None, choices=("independent",),
                    help="teach from half of a hand-written suite (key-reading reviewer), measure the other half")
+    p.add_argument("--worlds", default=None, metavar="SUITE",
+                   help="run in every world of a suite under proven/examples/worlds/ (e.g. unseen): "
+                        "other charts, vendors, memos and causes; --n is closes per world (default 100)")
     p.add_argument("--json", default=None, help="with --suite: also write the full result to this file")
 
     p = sub.add_parser("generate", help="write a labelled synthetic dataset")
@@ -267,6 +270,28 @@ def main(argv: list[str] | None = None) -> int:
             ok = all(r["summary"]["defects"]["unsafe_passes"] == 0 and r["summary"]["controls"]["fails"] == 0
                      for direction in out["directions"] for r in (direction["before"], direction["after"]))
             return 0 if ok else 1
+        if args.worlds:
+            result = teachsim.simulate_worlds(args.worlds, args.n if args.n != 440 else 100,
+                                              args.phrasing, proposer)
+            last = result["rows"][-1]
+            print(f"proposer={result['proposer']} phrasing={result['phrasing']} suite={result['suite']}: "
+                  f"{len(result['worlds'])} worlds, {result['closes_per_world']} closes each, half taught "
+                  f"from and half measured with the rules; every world taught separately")
+            print("taught  lessons  decided  reward  controls passed  control FAIL  unsafe PASS  "
+                  "defects caught  worst..best world")
+            for r in result["rows"]:
+                print(f"{r['taught_closes']:>6}  {r['lessons']:>7}  {r['decided_share']:>7.1%}  "
+                      f"{r['mean_reward']:>6.3f}  {r['controls_passed']:>7}/{r['controls']:<7}  "
+                      f"{r['control_fails']:>12}  {r['unsafe_passes']:>11}  "
+                      f"{r['defects_caught']:>6}/{r['defects']:<7}  {r['worst_world']:.1%}..{r['best_world']:.1%}")
+            print("per world, fully taught: " + ", ".join(
+                f"{w['world']} {w['rows'][-1]['decided_share']:.0%}" for w in result["worlds"]))
+            if args.json:
+                Path(args.json).write_text(json.dumps(result, indent=2), encoding="utf-8")
+            if proposer is not None:
+                _usage(proposer)
+            return 0 if all(r["unsafe_passes"] == 0 and r["control_fails"] == 0
+                            for r in result["rows"]) else 1
         result = teachsim.simulate(args.n, args.phrasing, proposer)
         print(f"proposer={result['proposer']} phrasing={result['phrasing']}; "
               f"measured with the rules on {result['held_closes']} closes never taught from")

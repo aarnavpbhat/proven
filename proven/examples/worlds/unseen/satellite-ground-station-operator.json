@@ -1,0 +1,790 @@
+{
+ "slug": "satellite-ground-station-operator",
+ "industry": "satellite ground station operator",
+ "entities": [
+  "Polar Relay Teleports",
+  "Cascade Gateway Networks",
+  "Northlight Ground Systems",
+  "Vantage Uplink Services",
+  "Halden Earthlink"
+ ],
+ "accounts": [
+  {
+   "name": "Antenna Maintenance",
+   "aliases": [
+    "antenna upkeep",
+    "dish maintenance",
+    "antenna maintenance",
+    "antenna costs",
+    "dish upkeep spend"
+   ],
+   "narrative": [
+    "Antenna upkeep",
+    "Dish maintenance",
+    "Antenna costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Orbitline Field Services",
+     "base": 18000,
+     "memo": "Monthly preventive service — 9m reflectors"
+    },
+    {
+     "vendor": "Kestrel Mechanical",
+     "base": 4200,
+     "memo": "Pedestal lubrication contract — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "feedhorn_realignment",
+     "vendor": "Orbitline Field Services",
+     "memos": [
+      "Feedhorn realignment — Bay 3 survey",
+      "Feedhorn realignment — technician hours"
+     ],
+     "cross_memo": "Feedhorn realignment — calibration rig hire",
+     "plain": [
+      "the feedhorn realignment",
+      "feedhorn realignment work",
+      "a feedhorn realignment"
+     ],
+     "oblique": [
+      "pointing drift fixes",
+      "the beam alignment job",
+      "correcting tracking errors on the large dish",
+      "getting the uplink back on target",
+      "the alignment check after the storm",
+      "a pointing accuracy fix",
+      "work the operations team requested after signal loss",
+      "dish aiming corrections",
+      "restoring link margin on the main antenna",
+      "the tracking accuracy project",
+      "beam pointing adjustments",
+      "fixing degraded signal strength at the gateway",
+      "the dish tune after high winds",
+      "an extra engineering visit to retune the dish",
+      "aiming work requested by the network operations center",
+      "recovering lost decibels on the downlink"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "radome_panels",
+     "vendor": "Tundra Radome Works",
+     "memos": [
+      "Radome panel replacement — fiberglass sections",
+      "Radome panel replacement — install crew"
+     ],
+     "cross_memo": "Radome panel replacement — site scaffolding",
+     "plain": [
+      "the radome panel replacement",
+      "radome panel replacement work",
+      "a radome panel replacement"
+     ],
+     "oblique": [
+      "storm damage to the dish cover",
+      "the weather shield fix",
+      "a new protective dome skin",
+      "swapping cracked enclosure segments",
+      "the cover repair after hail",
+      "hail damage",
+      "patching the dome over the big antenna",
+      "the enclosure rebuild insurers flagged",
+      "weatherproofing the main dish",
+      "the dome repair",
+      "fixing leaks in the antenna shelter",
+      "new composite skin on the dome",
+      "the protective shell work",
+      "restoring the weather enclosure after the winter storm",
+      "dome resurfacing",
+      "the cover upgrade the landlord required"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Spectrum Licensing Fees",
+   "aliases": [
+    "spectrum fees",
+    "licensing fees",
+    "spectrum licensing",
+    "frequency license costs",
+    "regulatory spectrum spend"
+   ],
+   "narrative": [
+    "Spectrum fees",
+    "Licensing fees",
+    "Spectrum licensing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Frequency Registry",
+     "base": 9500,
+     "memo": "Ka-band earth station license — monthly installment"
+    },
+    {
+     "vendor": "Calloway Regulatory Counsel",
+     "base": 3500,
+     "memo": "Retainer — filings support"
+    }
+   ],
+   "events": [
+    {
+     "key": "coordination_dispute",
+     "vendor": "Calloway Regulatory Counsel",
+     "memos": [
+      "Coordination dispute — interference hearing prep",
+      "Coordination dispute — expert testimony"
+     ],
+     "cross_memo": "Coordination dispute — RF measurement campaign",
+     "plain": [
+      "the coordination dispute",
+      "coordination dispute costs",
+      "a coordination dispute"
+     ],
+     "oblique": [
+      "the fight with a neighboring operator",
+      "legal work over a signal clash",
+      "defending our orbital slot rights",
+      "the contested slot case",
+      "lawyers defending our position before the commission",
+      "the neighbor operator conflict",
+      "legal fees on the overlap claim",
+      "the signal complaint from abroad",
+      "defending our access to the channel",
+      "the regulator proceeding",
+      "litigation over channel overlap",
+      "a legal challenge from a competitor",
+      "the jamming complaint case",
+      "outside lawyers on the slot contest",
+      "the commission proceeding the board approved",
+      "legal costs from the neighbor complaint"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "gateway_permit",
+     "vendor": "Halcyon Allocation Partners",
+     "memos": [
+      "Gateway expansion permit — application fee",
+      "Gateway expansion permit — environmental review"
+     ],
+     "cross_memo": "Gateway expansion permit — site survey",
+     "plain": [
+      "the gateway expansion permit",
+      "gateway expansion permit costs",
+      "a gateway expansion permit"
+     ],
+     "oblique": [
+      "approvals for the new dish",
+      "government clearance for added capacity",
+      "getting authority to transmit from a second terminal",
+      "the build out approval",
+      "clearing the new uplink with officials",
+      "paperwork for the second antenna",
+      "the growth project approvals",
+      "zoning approvals",
+      "the new terminal clearance",
+      "official consent for more uplink capacity",
+      "the capacity add approvals sales pushed for",
+      "an ecological assessment for the new dish",
+      "agency consent to broadcast from the new pad",
+      "the new antenna approval process",
+      "one time government charges for growth",
+      "approvals tied to the new customer contract"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Fiber Backhaul Circuits",
+   "aliases": [
+    "backhaul",
+    "fiber backhaul",
+    "backhaul circuits",
+    "terrestrial links",
+    "circuit costs"
+   ],
+   "narrative": [
+    "Backhaul",
+    "Fiber backhaul",
+    "Terrestrial links"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Path Networks",
+     "base": 22000,
+     "memo": "10G wave — teleport to POP"
+    },
+    {
+     "vendor": "Lakeshore Telecom",
+     "base": 6000,
+     "memo": "Diverse path lease — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "emergency_reroute",
+     "vendor": "Granite Path Networks",
+     "memos": [
+      "Emergency reroute — temporary circuit",
+      "Emergency reroute — splicing labor"
+     ],
+     "cross_memo": "Emergency reroute — overtime NOC staffing",
+     "plain": [
+      "the emergency reroute",
+      "emergency reroute charges",
+      "an emergency reroute"
+     ],
+     "oblique": [
+      "the cable cut on the highway",
+      "a backhoe severing our line",
+      "keeping traffic flowing after the outage",
+      "the outage workaround",
+      "restoring connectivity after construction damage",
+      "the stopgap link while the trunk was repaired",
+      "a dug up cable",
+      "bypassing the damaged span",
+      "the construction crew accident",
+      "keeping customers online during the break",
+      "the line break",
+      "urgent traffic detours",
+      "a contractor hitting our buried cable",
+      "the stopgap connection",
+      "detour capacity during the repair",
+      "service continuity after the trench accident"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "capacity_upgrade",
+     "vendor": "Silverbay Carrier Solutions",
+     "memos": [
+      "Capacity upgrade — 100G optics",
+      "Capacity upgrade — install charge"
+     ],
+     "cross_memo": "Capacity upgrade — router line cards",
+     "plain": [
+      "the capacity upgrade",
+      "capacity upgrade costs",
+      "a capacity upgrade"
+     ],
+     "oblique": [
+      "more bandwidth to the internet exchange",
+      "the bandwidth increase",
+      "fatter pipes for the new customer",
+      "growing throughput ahead of the video contract",
+      "a faster connection to the exchange",
+      "the throughput boost",
+      "speeding up the link to the data center",
+      "new transceivers",
+      "raising the link speed",
+      "handling more traffic",
+      "the bandwidth project sales requested",
+      "headroom for peak downlinks",
+      "a hundred gigabit buildout",
+      "more throughput to the data center",
+      "the speed increase",
+      "added bandwidth for the broadcast customer"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Site Power & Generators",
+   "aliases": [
+    "site power",
+    "power costs",
+    "generator costs",
+    "electricity and fuel",
+    "utility spend"
+   ],
+   "narrative": [
+    "Site power",
+    "Power costs",
+    "Generator costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northfork Electric Cooperative",
+     "base": 14000,
+     "memo": "Demand charges — main teleport"
+    },
+    {
+     "vendor": "Ridgeway Fuel Supply",
+     "base": 3800,
+     "memo": "Diesel delivery — standby tanks"
+    }
+   ],
+   "events": [
+    {
+     "key": "grid_outage",
+     "vendor": "Ridgeway Fuel Supply",
+     "memos": [
+      "Grid outage — extra tank refills",
+      "Grid outage — weekend dispatch"
+     ],
+     "cross_memo": "Grid outage — rental load bank",
+     "plain": [
+      "the grid outage",
+      "grid outage costs",
+      "a grid outage"
+     ],
+     "oblique": [
+      "running on backup for days",
+      "the blackout",
+      "a multi day blackout",
+      "keeping the gensets running through the ice storm",
+      "the ice storm",
+      "topping up the generators repeatedly",
+      "operating off the gensets after the substation failed",
+      "the substation failure",
+      "power loss at the county level",
+      "burning through backup reserves",
+      "the long blackout in the valley",
+      "generator runtime during the storm",
+      "the utility failure",
+      "keeping the antennas powered through the blackout",
+      "more gallons burned",
+      "the power cut ops had to ride out"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "ups_refresh",
+     "vendor": "Volta Switchgear Services",
+     "memos": [
+      "UPS battery refresh — string replacement",
+      "UPS battery refresh — disposal"
+     ],
+     "cross_memo": "UPS battery refresh — HVAC rebalance",
+     "plain": [
+      "the UPS battery refresh",
+      "UPS battery refresh work",
+      "a UPS battery refresh"
+     ],
+     "oblique": [
+      "new cells for the backup system",
+      "swapping aging cells",
+      "the end of life cell swap",
+      "the uninterruptible power overhaul",
+      "worn out cells",
+      "recycling old lead acid units",
+      "the cell swap the insurer asked for",
+      "renewing the ride through power system",
+      "keeping the backup power reliable",
+      "failed cells found in testing",
+      "the backup power project",
+      "new energy storage modules",
+      "the power protection upgrade",
+      "cells past their rated life",
+      "the uninterruptible system work",
+      "storage cells for the server room"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "RF Equipment Repairs",
+   "aliases": [
+    "rf repairs",
+    "amplifier repairs",
+    "rf equipment",
+    "rf gear fixes",
+    "transmit chain repairs"
+   ],
+   "narrative": [
+    "RF repairs",
+    "Amplifier repairs",
+    "RF equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cobalt Microwave Labs",
+     "base": 12000,
+     "memo": "HPA depot maintenance — monthly"
+    },
+    {
+     "vendor": "Sentry Spares Logistics",
+     "base": 2500,
+     "memo": "Spares pool fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "twta_rebuild",
+     "vendor": "Cobalt Microwave Labs",
+     "memos": [
+      "TWTA rebuild — tube replacement",
+      "TWTA rebuild — bench testing"
+     ],
+     "cross_memo": "TWTA rebuild — loaner amplifier",
+     "plain": [
+      "the TWTA rebuild",
+      "TWTA rebuild costs",
+      "a TWTA rebuild"
+     ],
+     "oblique": [
+      "a failed high power transmitter",
+      "the transmitter failure",
+      "fixing the uplink power stage",
+      "the big amp overhaul",
+      "the burnt out traveling wave unit",
+      "restoring transmit power on the main uplink",
+      "an aged power stage giving out",
+      "the transmitter overhaul",
+      "keeping the broadcast uplink on air",
+      "repair of the gateway transmitter",
+      "the uplink outage repair",
+      "a worn vacuum device in the transmitter",
+      "getting full output back",
+      "the power stage failure ops flagged",
+      "transmitter refurbishment",
+      "the output drop on the uplink"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "buc_swap",
+     "vendor": "Brightline Converter Co",
+     "memos": [
+      "Block upconverter swap — Ku units",
+      "Block upconverter swap — freight"
+     ],
+     "cross_memo": "Block upconverter swap — spectrum analyzer rental",
+     "plain": [
+      "the block upconverter swap",
+      "block upconverter costs",
+      "a block upconverter swap"
+     ],
+     "oblique": [
+      "new frequency translators",
+      "frequency translation gear",
+      "the outdoor electronics on the dish",
+      "a failed mixer stage",
+      "the frequency shifting hardware",
+      "dish mounted electronics that died in the heat",
+      "the heat failures on the feed electronics",
+      "new outdoor RF modules",
+      "the transmit electronics upgrade",
+      "shipping heavy hardware overnight",
+      "the mixer failures",
+      "outdoor gear fried by the heatwave",
+      "the electronics that move signals up in frequency",
+      "new mast head hardware",
+      "the heat damage",
+      "electronics refresh on two dishes"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Teleport Facility Rent",
+   "aliases": [
+    "rent",
+    "facility rent",
+    "teleport rent",
+    "occupancy",
+    "lease costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Facility rent",
+    "Occupancy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harrowgate Land Trust",
+     "base": 26000,
+     "memo": "Base rent — antenna farm parcel"
+    },
+    {
+     "vendor": "Pinecrest Property Management",
+     "base": 4500,
+     "memo": "CAM charges — operations building"
+    }
+   ],
+   "events": [
+    {
+     "key": "easement_amendment",
+     "vendor": "Harrowgate Land Trust",
+     "memos": [
+      "Easement amendment — access road",
+      "Easement amendment — legal reimbursement"
+     ],
+     "cross_memo": "Easement amendment — survey crew",
+     "plain": [
+      "the easement amendment",
+      "easement amendment costs",
+      "an easement amendment"
+     ],
+     "oblique": [
+      "the right of way deal with the landowner",
+      "renegotiating the route to the gate",
+      "paying the landlord lawyers",
+      "the new driveway agreement",
+      "a revised path agreement",
+      "the entry route renegotiation",
+      "terms for the new driveway",
+      "our share of the owner attorney costs",
+      "settling the gate dispute",
+      "the driveway rights deal",
+      "a contract change with the owner",
+      "the passage agreement",
+      "the cost of a new lane to the dishes",
+      "landlord paperwork",
+      "rights for trucks to reach the new pad",
+      "the lane renegotiation"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "stormwater_remediation",
+     "vendor": "Riverbend Earthworks",
+     "memos": [
+      "Stormwater remediation — grading",
+      "Stormwater remediation — culvert install"
+     ],
+     "cross_memo": "Stormwater remediation — fence repair",
+     "plain": [
+      "the stormwater remediation",
+      "stormwater remediation work",
+      "a stormwater remediation"
+     ],
+     "oblique": [
+      "flooding at the dish field",
+      "the drainage fix",
+      "fixing runoff that pooled under the pads",
+      "the flood cleanup",
+      "drainage work the county ordered",
+      "reshaping the slope",
+      "erosion control",
+      "the washout",
+      "drainage improvements",
+      "keeping water away from the equipment shelters",
+      "the county drainage order",
+      "spring flooding",
+      "the erosion problem",
+      "new ditches on the field",
+      "standing water near the dishes",
+      "flood prevention"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Software Subscriptions",
+   "aliases": [
+    "software",
+    "saas",
+    "software subscriptions",
+    "software tools",
+    "app subscriptions"
+   ],
+   "narrative": [
+    "Software",
+    "SaaS",
+    "Software tools"
+   ],
+   "recurring": [
+    {
+     "vendor": "Apogee Orbital Systems",
+     "base": 9000,
+     "memo": "Pass scheduling platform — monthly seats"
+    },
+    {
+     "vendor": "Stratus Monitoring Cloud",
+     "base": 4000,
+     "memo": "NMS hosting — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "constellation_onboarding",
+     "vendor": "Apogee Orbital Systems",
+     "memos": [
+      "Constellation onboarding — integration services",
+      "Constellation onboarding — custom TLE feeds"
+     ],
+     "cross_memo": "Constellation onboarding — engineer travel",
+     "plain": [
+      "the constellation onboarding",
+      "constellation onboarding fees",
+      "a constellation onboarding"
+     ],
+     "oblique": [
+      "setting up the new LEO customer",
+      "bringing a new fleet of satellites into our tooling",
+      "the new LEO client setup",
+      "connecting a new operator to our tracking software",
+      "the customer go live",
+      "adding hundreds of satellites to our tools",
+      "the LEO customer launch",
+      "vendor work for the new contract",
+      "setup fees for the new account",
+      "configuring orbit data for the new client",
+      "the new satellite operator deal",
+      "the professional work sales promised",
+      "the LEO go live",
+      "getting the new spacecraft fleet trackable",
+      "implementation fees",
+      "the client ramp"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "pen_test",
+     "vendor": "Ironclad Cyber Assurance",
+     "memos": [
+      "Penetration test — ground segment",
+      "Penetration test — remediation retest"
+     ],
+     "cross_memo": "Penetration test — firewall licences",
+     "plain": [
+      "the penetration test",
+      "penetration test fees",
+      "a penetration test"
+     ],
+     "oblique": [
+      "the security audit",
+      "hackers hired to probe our network",
+      "the security assessment the customer demanded",
+      "ethical hacking",
+      "proving our defenses to the government client",
+      "a mandated security review",
+      "the vulnerability hunt",
+      "attack simulation",
+      "the security exercise",
+      "checking how exposed the control network is",
+      "compliance work for the defense contract",
+      "the red team exercise",
+      "the insurer required security probe",
+      "vulnerability scanning",
+      "fixing gaps the auditors found",
+      "the annual security check"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Field Staff Travel",
+   "aliases": [
+    "travel",
+    "field travel",
+    "staff travel",
+    "trips",
+    "travel spend"
+   ],
+   "narrative": [
+    "Travel",
+    "Field travel",
+    "Staff travel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northstar Corporate Travel",
+     "base": 7000,
+     "memo": "Agency bookings — remote site rotations"
+    },
+    {
+     "vendor": "Summit Lodging Group",
+     "base": 3000,
+     "memo": "Crew housing — monthly block"
+    }
+   ],
+   "events": [
+    {
+     "key": "arctic_deployment",
+     "vendor": "Northstar Corporate Travel",
+     "memos": [
+      "Arctic deployment — charter flights",
+      "Arctic deployment — change fees"
+     ],
+     "cross_memo": "Arctic deployment — per diem",
+     "plain": [
+      "the arctic deployment",
+      "arctic deployment costs",
+      "an arctic deployment"
+     ],
+     "oblique": [
+      "sending engineers up north",
+      "the polar station trip",
+      "getting technicians to the high latitude dish",
+      "the northern visit",
+      "flying a team to the polar station",
+      "staffing the far north build",
+      "the trip to the new northern antenna",
+      "airfare to the far north",
+      "the polar trip",
+      "small plane hire to reach the island station",
+      "the expedition",
+      "getting people to the high north installation",
+      "the commissioning trip up north",
+      "rebooked tickets after weather delays",
+      "the northern commissioning visit",
+      "moving the install team north"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "industry_conference",
+     "vendor": "Keystone Expo Bureau",
+     "memos": [
+      "Industry conference — exhibitor registration",
+      "Industry conference — hotel nights"
+     ],
+     "cross_memo": "Industry conference — demo hardware shipping",
+     "plain": [
+      "the industry conference",
+      "industry conference costs",
+      "an industry conference"
+     ],
+     "oblique": [
+      "the trade show",
+      "sending sales to the satellite show",
+      "marketing presence at the annual space event",
+      "the show in Washington",
+      "the space symposium",
+      "a big sales trip",
+      "staff attending the satellite show",
+      "the trade show booth",
+      "putting the team in front of customers",
+      "the annual space gathering",
+      "a marketing trip",
+      "networking at the space event",
+      "the sales push at the show",
+      "our stand at the space symposium",
+      "the event marketing asked for",
+      "the yearly satellite exhibition"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

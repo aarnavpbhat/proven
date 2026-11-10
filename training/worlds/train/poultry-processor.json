@@ -1,0 +1,728 @@
+{
+ "slug": "poultry-processor",
+ "industry": "poultry processor",
+ "entities": [
+  "Redfeather Poultry Processing",
+  "Cluckridge Foods",
+  "Meadowbrook Poultry Co",
+  "Tallgrass Processing",
+  "Harvest Hollow Poultry"
+ ],
+ "accounts": [
+  {
+   "name": "Live Haul & Catching",
+   "aliases": [
+    "live haul",
+    "catching crews",
+    "bird transport",
+    "live bird logistics",
+    "grower hauling"
+   ],
+   "narrative": [
+    "Live haul",
+    "Catching crews",
+    "Bird transport"
+   ],
+   "recurring": [
+    {
+     "vendor": "Delmarva Catch Crew LLC",
+     "base": 18500,
+     "memo": "Catching crew labor wk ending PO 44102"
+    },
+    {
+     "vendor": "Ozark Livehaul Transport",
+     "base": 24000,
+     "memo": "Live bird trucking per load"
+    },
+    {
+     "vendor": "Pinecrest Fuel Card",
+     "base": 6200,
+     "memo": "Fuel card live haul fleet"
+    }
+   ],
+   "events": [
+    {
+     "key": "cratefleet",
+     "vendor": "Ozark Livehaul Transport",
+     "memos": [
+      "Crate fleet expansion - leased modules WO 7731",
+      "Crate fleet expansion - lease true-up"
+     ],
+     "cross_memo": "Crate fleet expansion - yard storage fees",
+     "plain": [
+      "the crate fleet expansion",
+      "the added crate fleet",
+      "crate fleet expansion costs"
+     ],
+     "oblique": [
+      "extra capacity hauling birds in peak season",
+      "adding to the roster of units we move flocks in",
+      "the equipment we leased to keep up with volume",
+      "more rolling stock for the busy stretch",
+      "what we paid to carry larger flock counts",
+      "the capacity build requested by operations",
+      "stacking more containers onto the trucks",
+      "the growth in how many birds we shuttle at once",
+      "added hauling gear before the holiday surge",
+      "units rented to meet the bigger placement schedule",
+      "the scale-up of our moving equipment",
+      "extra carriers",
+      "the peak-season capacity push",
+      "gear brought in so no flock waits at the farm",
+      "the bump in fleet size operations asked for",
+      "additional transport units"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "nightcatch",
+     "vendor": "Blue Ridge Harvest Staffing",
+     "memos": [
+      "Night shift catch premium - staffing inv 2208",
+      "Night shift catch premium - overtime pass-through"
+     ],
+     "cross_memo": "Night shift catch premium - plant dock labor",
+     "plain": [
+      "the night shift catch premium",
+      "night shift catch premium pay",
+      "the night shift catch"
+     ],
+     "oblique": [
+      "working flocks after dark",
+      "the shift change to avoid summer heat stress",
+      "a crew schedule moved to the cool hours",
+      "paying extra to pull birds before sunrise",
+      "the heat-driven change in when crews work",
+      "off-hour premiums for the people loading birds",
+      "overnight work to protect flock weight",
+      "moving the work window earlier",
+      "pay bumps for unsociable hours",
+      "the heat-wave scheduling fix",
+      "what it cost to keep birds from overheating",
+      "after-midnight crews",
+      "a schedule flipped around the weather",
+      "premium pay for graveyard work in the barns",
+      "cool-weather timing for pulling flocks",
+      "extra pay to get birds in before dawn"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Plant Utilities",
+   "aliases": [
+    "utilities",
+    "plant utilities",
+    "power and water",
+    "plant energy",
+    "utility spend"
+   ],
+   "narrative": [
+    "Utilities",
+    "Plant utilities",
+    "Power and water"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-County Electric Cooperative",
+     "base": 29000,
+     "memo": "Electric service main plant acct 5521"
+    },
+    {
+     "vendor": "Riverbend Municipal Water",
+     "base": 9800,
+     "memo": "Water and sewer processing floor"
+    },
+    {
+     "vendor": "Summit Natural Gas",
+     "base": 7400,
+     "memo": "Gas scald tank boilers"
+    }
+   ],
+   "events": [
+    {
+     "key": "boilerrebuild",
+     "vendor": "Summit Natural Gas",
+     "memos": [
+      "Steam header requalification - surcharge inv 9014",
+      "Steam header requalification - pressure test gas"
+     ],
+     "cross_memo": "Steam header requalification - inspector fees",
+     "plain": [
+      "the steam header requalification",
+      "steam header requalification charges",
+      "the header requalification"
+     ],
+     "oblique": [
+      "getting the heat distribution system recertified",
+      "the safety sign-off on our hot-water piping",
+      "a regulator-mandated recheck of the pressure side",
+      "the compliance retest on the heating loop",
+      "what the state required before we could restart",
+      "proving the pipes could still hold pressure",
+      "the retest of high-heat plumbing",
+      "extra fuel burned while the system was verified",
+      "the recertification the insurer demanded",
+      "the mandated safety check",
+      "a test run that burned more fuel",
+      "re-approval of our scalding heat source",
+      "the inspection-driven fuel bump",
+      "verification that the heating network is sound",
+      "the annual-turned-biennial heat system exam",
+      "the permit renewal on our hot side"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "solararray",
+     "vendor": "Brightfield Energy Partners",
+     "memos": [
+      "Rooftop PV power purchase - PPA inv 331",
+      "Rooftop PV power purchase - metering setup"
+     ],
+     "cross_memo": "Rooftop PV power purchase - interconnect study",
+     "plain": [
+      "the rooftop PV power purchase",
+      "rooftop PV purchase charges",
+      "the PV power purchase"
+     ],
+     "oblique": [
+      "buying electricity generated on our own roof",
+      "the green energy contract signed this year",
+      "power we now buy from panels above the plant",
+      "the sustainability commitment finance approved",
+      "a new supplier alongside the grid",
+      "sunlight-sourced electricity",
+      "the clean-power agreement",
+      "energy from a third-party generator on site",
+      "the renewable contract startup costs",
+      "a supply deal meant to cut our carbon footprint",
+      "payments to a non-utility for kilowatts",
+      "the pilot to lower our grid reliance",
+      "the first billing on the energy deal",
+      "panels we do not own but pay for",
+      "the alternative supply arrangement",
+      "the corporate sustainability goal in action"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Packaging & Film",
+   "aliases": [
+    "packaging",
+    "packaging and film",
+    "poly and film",
+    "pack materials",
+    "wrap and trays"
+   ],
+   "narrative": [
+    "Packaging",
+    "Pack materials",
+    "Wrap and trays"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Poly Films",
+     "base": 21000,
+     "memo": "Barrier bag film roll stock PO 8801"
+    },
+    {
+     "vendor": "Greenline Tray Corp",
+     "base": 13500,
+     "memo": "Foam tray case lots"
+    },
+    {
+     "vendor": "Ardmore Corrugated",
+     "base": 16800,
+     "memo": "Master cartons shipping boxes"
+    }
+   ],
+   "events": [
+    {
+     "key": "labelrecall",
+     "vendor": "Keystone Poly Films",
+     "memos": [
+      "Sleeve relabel campaign - reprint run PO 8933",
+      "Sleeve relabel campaign - expedited freight"
+     ],
+     "cross_memo": "Sleeve relabel campaign - temp relabeling labor",
+     "plain": [
+      "the sleeve relabel campaign",
+      "sleeve relabel campaign costs",
+      "the relabel campaign"
+     ],
+     "oblique": [
+      "redoing the printed wrappers after the ingredient claim changed",
+      "a reprint forced by a regulator wording update",
+      "fixing consumer-facing text on finished goods",
+      "new art that had to replace what shipped",
+      "the wording fix on retail product",
+      "stickers and prints done over",
+      "correcting what the customer reads on the pack",
+      "the fast turnaround on corrected prints",
+      "the government-triggered text revision",
+      "redone printing that cost us expedite premiums",
+      "what a labeling mistake cost us",
+      "the claim language correction",
+      "reprints rushed to meet a retailer deadline",
+      "the compliance-driven art change",
+      "replacement printed material",
+      "a do-over on consumer markings"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "ovenbags",
+     "vendor": "Lakeshore Specialty Pack",
+     "memos": [
+      "Steam-in bag trial - retailer pilot WO 118",
+      "Steam-in bag trial - tooling charge"
+     ],
+     "cross_memo": "Steam-in bag trial - test kitchen supplies",
+     "plain": [
+      "the steam-in bag trial",
+      "steam-in bag trial costs",
+      "the bag trial"
+     ],
+     "oblique": [
+      "a new cook-at-home format for a grocery chain",
+      "the experiment with microwave-ready retail product",
+      "a pilot requested by our biggest store customer",
+      "development spend on a convenience line",
+      "new tooling for a different consumer format",
+      "testing a ready-to-heat offering",
+      "the innovation project in the retail line",
+      "trial runs of something shoppers have not seen",
+      "an exploratory packaging concept",
+      "the product-development sample batch",
+      "what we spent trying a value-added idea",
+      "prototype runs for a supermarket buyer",
+      "the new-format pilot",
+      "the convenience-meal experiment",
+      "a package we may or may not launch",
+      "early work on a different shelf offering"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Cold Storage & Freight",
+   "aliases": [
+    "cold storage",
+    "freight out",
+    "refrigerated freight",
+    "cold chain spend",
+    "outbound logistics"
+   ],
+   "narrative": [
+    "Cold storage",
+    "Freight out",
+    "Outbound logistics"
+   ],
+   "recurring": [
+    {
+     "vendor": "Arctic Harbor Warehousing",
+     "base": 26500,
+     "memo": "Frozen storage pallet positions"
+    },
+    {
+     "vendor": "Coldline Carriers Inc",
+     "base": 28000,
+     "memo": "Reefer linehaul outbound loads"
+    },
+    {
+     "vendor": "Metro Drayage Services",
+     "base": 4800,
+     "memo": "Port drayage export containers"
+    }
+   ],
+   "events": [
+    {
+     "key": "exportreroute",
+     "vendor": "Coldline Carriers Inc",
+     "memos": [
+      "Port strike reroute - detour mileage BOL 7745",
+      "Port strike reroute - demurrage pass-through"
+     ],
+     "cross_memo": "Port strike reroute - extra storage days",
+     "plain": [
+      "the port strike reroute",
+      "port strike reroute charges",
+      "the strike reroute"
+     ],
+     "oblique": [
+      "a labor action that sent shipments the long way",
+      "walkouts at the docks and the scramble that followed",
+      "sending containers through a different gateway",
+      "the delay penalties on overseas orders",
+      "a work stoppage somewhere else hurting us",
+      "longer driving to reach a working terminal",
+      "what it cost to keep exports moving",
+      "boxes sitting idle while the harbor was shut",
+      "the disruption to our shipping lane",
+      "paying to avoid a blocked terminal",
+      "a shutdown outside our control",
+      "extra days and miles on foreign-bound loads",
+      "the contingency routing",
+      "the shipping snag overseas buyers noticed",
+      "fees accrued while containers waited",
+      "a diversion around trouble at the waterfront"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "overflowvault",
+     "vendor": "Polar Vault Logistics",
+     "memos": [
+      "Overflow freezer lease - short term pallets inv 6620",
+      "Overflow freezer lease - handling in and out"
+     ],
+     "cross_memo": "Overflow freezer lease - shuttle trucking",
+     "plain": [
+      "the overflow freezer lease",
+      "overflow freezer lease costs",
+      "the freezer lease"
+     ],
+     "oblique": [
+      "somewhere else to park product when our own space filled",
+      "the holiday inventory build",
+      "renting room because production outran demand",
+      "a stockpile ahead of a big promotion",
+      "extra space for surplus finished goods",
+      "storage beyond our walls",
+      "inventory that could not be sold fast enough",
+      "the buildup before the contract start",
+      "temporary holding capacity",
+      "a space crunch",
+      "what it cost to hold unsold stock",
+      "parking product offsite",
+      "the bulge in inventory levels",
+      "capacity borrowed from a neighbor",
+      "pallets with no home",
+      "the seasonal stock-up"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Sanitation & Wastewater",
+   "aliases": [
+    "sanitation",
+    "wastewater",
+    "plant cleaning",
+    "sanitation and wastewater",
+    "wastewater treatment"
+   ],
+   "narrative": [
+    "Sanitation",
+    "Wastewater",
+    "Plant cleaning"
+   ],
+   "recurring": [
+    {
+     "vendor": "CleanSweep Night Crews",
+     "base": 23000,
+     "memo": "Overnight sanitation labor contract"
+    },
+    {
+     "vendor": "Hydrochem Supply",
+     "base": 8700,
+     "memo": "Quat sanitizer and chlorine drums"
+    },
+    {
+     "vendor": "Aquarite Treatment Services",
+     "base": 11200,
+     "memo": "Wastewater plant operation fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "dafupgrade",
+     "vendor": "Aquarite Treatment Services",
+     "memos": [
+      "Flotation cell repair - skimmer rebuild WO 5590",
+      "Flotation cell repair - polymer surcharge"
+     ],
+     "cross_memo": "Flotation cell repair - sludge hauling",
+     "plain": [
+      "the flotation cell repair",
+      "flotation cell repair costs",
+      "the cell repair"
+     ],
+     "oblique": [
+      "getting effluent back under the permit limits",
+      "fixing the equipment that strips fat from discharge",
+      "a failure at the treatment end of the plant",
+      "the city's notice about what we released",
+      "restoring the process that cleans outgoing water",
+      "the breakdown that nearly cost us a fine",
+      "a pretreatment machine that stopped working",
+      "extra chemical to compensate while down",
+      "the discharge compliance scramble",
+      "what it took to pass the sampling",
+      "the repair of a key cleaning stage",
+      "avoiding a municipal penalty",
+      "fixing the thing that removes grease",
+      "extra hauling of solids during the outage",
+      "the outflow quality problem",
+      "emergency work on our pretreatment"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "pathogenaudit",
+     "vendor": "Sterile Path Consultants",
+     "memos": [
+      "Listeria swab program - lab fees inv 4417",
+      "Listeria swab program - corrective deep clean"
+     ],
+     "cross_memo": "Listeria swab program - line downtime labor",
+     "plain": [
+      "the listeria swab program",
+      "listeria swab program costs",
+      "the swab program"
+     ],
+     "oblique": [
+      "the positive result that triggered extra testing",
+      "a food-safety scare on a production line",
+      "going through every surface after a bad lab report",
+      "a customer audit finding that needed follow-up",
+      "verification work demanded by our biggest buyer",
+      "intensified germ checks",
+      "the investigation into a contamination hit",
+      "what it cost to prove the plant was clean",
+      "hold-and-test rounds after a failed sample",
+      "outside experts brought in on an urgent basis",
+      "the aftermath of a microbiology alert",
+      "proving a negative",
+      "heightened hygiene verification",
+      "the corrective push after an inspection note",
+      "specialists called in to find the source",
+      "the safety recheck that stopped a line for a bit"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Repairs & Maintenance",
+   "aliases": [
+    "repairs and maintenance",
+    "plant maintenance",
+    "line repairs",
+    "equipment upkeep",
+    "machine maintenance"
+   ],
+   "narrative": [
+    "Repairs and maintenance",
+    "Plant maintenance",
+    "Equipment upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironworks Industrial Service",
+     "base": 19500,
+     "memo": "Contract mechanics line repair T&M"
+    },
+    {
+     "vendor": "Bearing & Belt Supply",
+     "base": 7800,
+     "memo": "Conveyor belts bearings stock replenish"
+    },
+    {
+     "vendor": "Precision Blade Sharpening",
+     "base": 4300,
+     "memo": "Knife and shackle blade service"
+    }
+   ],
+   "events": [
+    {
+     "key": "evisceratorswap",
+     "vendor": "Ironworks Industrial Service",
+     "memos": [
+      "Evisceration line retrofit - crane rigging WO 9012",
+      "Evisceration line retrofit - weekend crew"
+     ],
+     "cross_memo": "Evisceration line retrofit - spare parts kit",
+     "plain": [
+      "the evisceration line retrofit",
+      "evisceration line retrofit costs",
+      "the line retrofit"
+     ],
+     "oblique": [
+      "rebuilding the section where birds are opened and cleaned",
+      "swapping out old machinery for newer units",
+      "a weekend shutdown to install upgraded gear",
+      "the project to lift yield per bird",
+      "what we paid to modernize the middle of the process",
+      "new machines replacing aging ones",
+      "the capital-style overhaul run through expense",
+      "an installation done while the plant was idle",
+      "updating the part of the floor that slows us down",
+      "heavy lifting and fitting of replacement units",
+      "work done outside normal shifts",
+      "the throughput improvement effort",
+      "rebuilt equipment to hit higher line speed",
+      "the planned upgrade over a quiet weekend",
+      "a major mechanical refresh",
+      "the machine replacement project"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "chillerfail",
+     "vendor": "Frostbite Mechanical",
+     "memos": [
+      "Ammonia compressor emergency call - PO 6671",
+      "Ammonia compressor emergency call - parts overnighted"
+     ],
+     "cross_memo": "Ammonia compressor emergency call - lost product writeoff",
+     "plain": [
+      "the ammonia compressor emergency call",
+      "ammonia compressor emergency costs",
+      "the compressor emergency"
+     ],
+     "oblique": [
+      "the breakdown that threatened a whole shift of product",
+      "a sudden failure of the thing that keeps meat cold",
+      "urgent after-hours work to save inventory",
+      "parts flown in overnight",
+      "the unplanned stoppage in the freezing side",
+      "what it cost to avoid a spoilage event",
+      "a middle-of-the-night callout",
+      "rush repairs to restore temperature control",
+      "the outage nobody budgeted",
+      "a scramble to keep product below threshold",
+      "emergency vendor response",
+      "the cooling failure on a holiday weekend",
+      "expedited fixes with premium pricing",
+      "the unexpected loss of refrigeration capacity",
+      "a technician summoned in a hurry",
+      "the crisis with our chilling system"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Veterinary & Flock Services",
+   "aliases": [
+    "vet services",
+    "flock health",
+    "veterinary spend",
+    "bird health services",
+    "grower support"
+   ],
+   "narrative": [
+    "Vet services",
+    "Flock health",
+    "Grower support"
+   ],
+   "recurring": [
+    {
+     "vendor": "AgriVet Associates",
+     "base": 12400,
+     "memo": "Flock health monitoring retainer"
+    },
+    {
+     "vendor": "NutriBlend Feed Additives",
+     "base": 9600,
+     "memo": "Vitamin premix and probiotic supply"
+    },
+    {
+     "vendor": "Growers Advisory Network",
+     "base": 5600,
+     "memo": "Contract grower field service visits"
+    }
+   ],
+   "events": [
+    {
+     "key": "avianflu",
+     "vendor": "AgriVet Associates",
+     "memos": [
+      "HPAI response testing - barn sampling PO 3340",
+      "HPAI response testing - rapid PCR panels"
+     ],
+     "cross_memo": "HPAI response testing - quarantine disposal haul",
+     "plain": [
+      "the HPAI response testing",
+      "HPAI response testing costs",
+      "the response testing"
+     ],
+     "oblique": [
+      "the outbreak scare in a neighboring state",
+      "extra screening of flocks after a regional alert",
+      "what it cost to prove our birds were clear",
+      "state-mandated checks of nearby farms",
+      "precautions taken after a disease report",
+      "lab work done on a rush basis",
+      "the animal-disease emergency",
+      "paying to keep shipments moving despite a warning",
+      "surveillance forced on us by officials",
+      "a scare that turned out to be a false alarm",
+      "testing hundreds of samples in days",
+      "the biosecurity push",
+      "clearance work so the plant stayed open",
+      "the epidemic protocol",
+      "enhanced checks on every barn",
+      "the contagious illness watch"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "welfaretrain",
+     "vendor": "Humane Handling Institute",
+     "memos": [
+      "Welfare certification course - seminar fee inv 782",
+      "Welfare certification course - auditor travel"
+     ],
+     "cross_memo": "Welfare certification course - supervisor backfill labor",
+     "plain": [
+      "the welfare certification course",
+      "welfare certification course fees",
+      "the certification course"
+     ],
+     "oblique": [
+      "a customer requirement for ethical treatment standards",
+      "training the people who work with live birds",
+      "a third-party credential our buyers want",
+      "the animal-care audit preparation",
+      "paying to meet a restaurant chain's sourcing policy",
+      "classroom sessions for crews and supervisors",
+      "an outside seal of approval",
+      "the retailer-driven standards program",
+      "teaching staff the new handling rules",
+      "what we spent to stay on an approved supplier list",
+      "the humane-practice upgrade",
+      "the credentialing effort",
+      "audit readiness for animal treatment",
+      "education for the barn and dock teams",
+      "a brand-protection investment",
+      "the compassion standards push"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

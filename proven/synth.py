@@ -484,15 +484,6 @@ PARAPHRASE_TEST: dict[str, tuple[str, ...]] = {
 PHRASINGS = ("seen", "heldout", "paraphrase")
 
 
-def phrases_for(event: "Event", phrasing: str, split: str) -> tuple[str, ...]:
-    """The phrases a writer may use for `event` under a phrasing tier and split."""
-    if phrasing == "heldout":
-        return HELDOUT[event.key]
-    if phrasing == "paraphrase":
-        return (PARAPHRASE_TEST if split == "test" else PARAPHRASE_TRAIN)[event.key]
-    return event.phrases
-
-
 ENTITIES = ("Arcadia Labs", "Brightfield Health", "Cobalt Freight", "Driftwood Analytics",
             "Ember Payments", "Fathom Bio", "Granite Data", "Halcyon Energy", "Ironwood Systems",
             "Juniper Logistics")
@@ -524,6 +515,39 @@ DISTRACTOR = Family("control_distractor", "control", "PASS", ())
 FAMILY_BY_NAME = {f.name: f for f in FAMILIES + (DISTRACTOR,)}
 
 
+@dataclass(frozen=True)
+class World:
+    """Everything the generator draws on: the accounts, who bills them, what can happen to
+    them and how a writer may describe it. `DEFAULT` is the world this module was built
+    around; `proven.worlds` loads others (different accounts, vendors, memos and causes),
+    so a result can be checked somewhere the checker's author did not write."""
+    name: str
+    specs: tuple[AccountSpec, ...]
+    entities: tuple[str, ...]
+    heldout: dict[str, tuple[str, ...]] = field(hash=False)
+    paraphrase_train: dict[str, tuple[str, ...]] = field(hash=False)
+    paraphrase_test: dict[str, tuple[str, ...]] = field(hash=False)
+
+    @property
+    def chart(self) -> tuple[Account, ...]:
+        return tuple(Account(spec.name, spec.aliases) for spec in self.specs)
+
+    def phrases_for(self, event: Event, phrasing: str, split: str) -> tuple[str, ...]:
+        if phrasing == "heldout":
+            return self.heldout[event.key]
+        if phrasing == "paraphrase":
+            return (self.paraphrase_test if split == "test" else self.paraphrase_train)[event.key]
+        return event.phrases
+
+
+DEFAULT = World("default", WORLD, ENTITIES, HELDOUT, PARAPHRASE_TRAIN, PARAPHRASE_TEST)
+
+
+def phrases_for(event: Event, phrasing: str, split: str, world: World = DEFAULT) -> tuple[str, ...]:
+    """The phrases a writer may use for `event` under a phrasing tier and split."""
+    return world.phrases_for(event, phrasing, split)
+
+
 @dataclass
 class Label:
     quote: str
@@ -550,6 +574,7 @@ class Scenario:
     ledger: Ledger
     explanation: str
     labels: list[Label] = field(default_factory=list)
+    world: str = "default"
 
     def to_dict(self, include_labels: bool = True) -> dict:
         data = {"scenario_id": self.scenario_id, "seed": self.seed, "split": self.split,
@@ -646,7 +671,7 @@ class _Builder:
         self.rows.append((f"{period}-{day:02d}", account, vendor, memo, round(amount, 2)))
         return len(self.rows) - 1
 
-    def build(self, entity: str) -> tuple[Ledger, list[str]]:
+    def build(self, entity: str, chart: tuple[Account, ...] = CHART) -> tuple[Ledger, list[str]]:
         order = sorted(range(len(self.rows)), key=lambda i: (self.rows[i][0], i))
         ids = [""] * len(self.rows)
         transactions = []
@@ -654,11 +679,11 @@ class _Builder:
             ids[index] = f"TX-{1001 + n}"
             date, account, vendor, memo, amount = self.rows[index]
             transactions.append(Transaction(ids[index], date, account, vendor, memo, amount))
-        return (Ledger(entity, PRIOR, CURRENT, CHART, tuple(transactions)), ids)
+        return (Ledger(entity, PRIOR, CURRENT, chart, tuple(transactions)), ids)
 
 
-def _baseline(builder: _Builder) -> None:
-    for spec in WORLD:
+def _baseline(builder: _Builder, specs: tuple[AccountSpec, ...] = WORLD) -> None:
+    for spec in specs:
         for item in spec.recurring:
             for period in PERIODS:
                 builder.add(period, spec.name, item.vendor, item.memo,
@@ -708,16 +733,19 @@ def sentence(rng: random.Random, alias: str, direction: int, amount: str, phrase
 
 # ── the generator ────────────────────────────────────────────────────────
 
-def generate(seed: int, family: Family | None = None, phrasing: str = "seen") -> Scenario:
+def generate(seed: int, family: Family | None = None, phrasing: str = "seen",
+             world: World | None = None) -> Scenario:
+    world = world or DEFAULT
+    specs = world.specs
     rng = random.Random(seed)
     family = family or family_of(seed)
     builder = _Builder(rng)
-    _baseline(builder)
+    _baseline(builder, specs)
 
-    order = list(range(len(WORLD)))
+    order = list(range(len(specs)))
     rng.shuffle(order)
-    target = WORLD[order[0]]
-    spare = [WORLD[i] for i in order[1:]]
+    target = specs[order[0]]
+    spare = [specs[i] for i in order[1:]]
     other = spare.pop()                     # receives a misbooking or a cross-account charge
     distractors = spare[:rng.choice((1, 2))]
 
@@ -767,7 +795,7 @@ def generate(seed: int, family: Family | None = None, phrasing: str = "seen") ->
         _inject(builder, spec.name, chosen, rng.uniform(chosen.low, chosen.high), CURRENT)
         distractor_events.append((spec, chosen))
 
-    ledger, ids = builder.build(rng.choice(ENTITIES))
+    ledger, ids = builder.build(rng.choice(world.entities), world.chart)
     culprit_ids = [ids[i] for i in culprits]
 
     # ── the commentary ──
@@ -785,7 +813,7 @@ def generate(seed: int, family: Family | None = None, phrasing: str = "seen") ->
     pct = ledger.variance(target.name).change_pct
     percent = f"{abs(pct):.0f}%" if pct is not None and family.name != "wrong_amount" else None
     split = split_of(seed)
-    phrase = rng.choice(phrases_for(cited, phrasing, split))
+    phrase = rng.choice(world.phrases_for(cited, phrasing, split))
     alias = rng.choice(target.narrative)
     main_amount = money_text(stated_change, rng, mode)
     main = sentence(rng, alias, direction, main_amount, phrase,
@@ -802,7 +830,7 @@ def generate(seed: int, family: Family | None = None, phrasing: str = "seen") ->
         dphrase_direction = 1 if dchange >= 0 else -1
         dalias = rng.choice(spec.narrative)       # draw order matters: it is the pinned stream
         damount = money_text(dchange, rng, rng.choice(("exact", "rounded")))
-        dphrase = rng.choice(phrases_for(chosen, phrasing, split))
+        dphrase = rng.choice(world.phrases_for(chosen, phrasing, split))
         text = sentence(rng, dalias, dphrase_direction, damount, dphrase)
         labels.append(Label(text, DISTRACTOR.name, DISTRACTOR.kind, DISTRACTOR.requirement,
                             [], [], spec.name,
@@ -814,9 +842,11 @@ def generate(seed: int, family: Family | None = None, phrasing: str = "seen") ->
         [f"October 2026 close — operating expense commentary for {ledger.entity}."]
         + lines + ["All other accounts were broadly in line with September."])
 
-    return Scenario(f"syn-{seed:05d}", seed, split_of(seed), family.name, ledger,
-                    explanation, labels)
+    prefix = "syn" if world is DEFAULT else world.name
+    return Scenario(f"{prefix}-{seed:05d}", seed, split_of(seed), family.name, ledger,
+                    explanation, labels, world.name)
 
 
-def generate_split(split: str, n: int, phrasing: str = "seen") -> list[Scenario]:
-    return [generate(seed, phrasing=phrasing) for seed in seeds(split, n)]
+def generate_split(split: str, n: int, phrasing: str = "seen",
+                   world: World | None = None) -> list[Scenario]:
+    return [generate(seed, phrasing=phrasing, world=world) for seed in seeds(split, n)]

@@ -1,0 +1,825 @@
+{
+ "slug": "charter-fishing-and-whale-watching-tours",
+ "industry": "charter fishing and whale-watching tours",
+ "entities": [
+  "Harborlight Charters LLC",
+  "Tidewalker Expeditions Inc",
+  "Breakwater Whale & Fish Co",
+  "Saltmarsh Sea Tours Ltd",
+  "Pelican Point Marine Adventures"
+ ],
+ "accounts": [
+  {
+   "name": "Vessel Fuel & Lubricants",
+   "aliases": [
+    "fuel",
+    "fuel costs",
+    "diesel spend",
+    "vessel fuel",
+    "dock fueling"
+   ],
+   "narrative": [
+    "Fuel costs",
+    "Diesel spend",
+    "Vessel fuel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bayfront Marine Fuel Dock",
+     "base": 18500,
+     "memo": "Inv diesel fill - dockside"
+    },
+    {
+     "vendor": "Keelson Lubricants Supply",
+     "base": 2400,
+     "memo": "Svc engine oil & filters"
+    },
+    {
+     "vendor": "Marlin Energy Services",
+     "base": 3200,
+     "memo": "Mnt fuel polishing monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "bunkering",
+     "vendor": "Bayfront Marine Fuel Dock",
+     "memos": [
+      "Emergency bulk diesel delivery — Farallon relocation",
+      "Surcharge after-hours pumping — Farallon relocation"
+     ],
+     "cross_memo": "Farallon relocation — pilot boat escort",
+     "plain": [
+      "the Farallon relocation",
+      "the Farallon relocation fuel run",
+      "the Farallon relocation delivery"
+     ],
+     "oblique": [
+      "moving the whole fleet to the offshore sanctuary",
+      "topping up tanks ahead of the long southern haul",
+      "the one-time repositioning of our boats for the season",
+      "extra tanks filled outside normal hours",
+      "the trip to the far island grounds",
+      "hauling the vessels to a distant home port",
+      "the late-night pumping crunch",
+      "shifting operations out to the rocks",
+      "an unplanned stockpile of marine diesel",
+      "getting every hull ready for the open-water move",
+      "the long transit with no refueling stops",
+      "a rush order placed by the captains",
+      "relocating where the boats sleep",
+      "the offshore staging effort",
+      "a single big delivery to the fleet",
+      "our boats steaming to a new base"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "spillcleanup",
+     "vendor": "Cormorant Environmental Response",
+     "memos": [
+      "Inv bilge discharge remediation — Slip 14 sheen",
+      "Svc absorbent boom & disposal — Slip 14 sheen"
+     ],
+     "cross_memo": "Slip 14 sheen — harbor authority fine",
+     "plain": [
+      "the Slip 14 sheen",
+      "the Slip 14 sheen cleanup",
+      "the Slip 14 sheen remediation"
+     ],
+     "oblique": [
+      "the oily film spotted beside the pier",
+      "a petroleum leak that reached the water",
+      "containing the slick at our berth",
+      "the cleanup crew called out by the port",
+      "an overnight mess on the water surface",
+      "a regulator-mandated clean-up",
+      "soaking up what escaped from a hull",
+      "the mishap near our mooring",
+      "absorbing a pollution scare",
+      "hiring specialists to stop the spreading rainbow",
+      "the environmental incident at the marina",
+      "a leak nobody noticed until morning",
+      "the response team brought in after a sighting",
+      "an accidental discharge into the harbor",
+      "clearing the water of contaminants",
+      "the shoreline watchdog's complaint"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Hull & Engine Maintenance",
+   "aliases": [
+    "maintenance",
+    "hull repairs",
+    "engine upkeep",
+    "boat maintenance",
+    "fleet repairs"
+   ],
+   "narrative": [
+    "Maintenance",
+    "Hull repairs",
+    "Engine upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Anchor & Gear Boatworks",
+     "base": 9800,
+     "memo": "Mnt scheduled service - fleet"
+    },
+    {
+     "vendor": "Westcoast Diesel Marine",
+     "base": 6200,
+     "memo": "Inv engine parts & labor"
+    },
+    {
+     "vendor": "Zinc & Prop Supply",
+     "base": 1500,
+     "memo": "Inv anodes and props"
+    }
+   ],
+   "events": [
+    {
+     "key": "repower",
+     "vendor": "Westcoast Diesel Marine",
+     "memos": [
+      "Inv twin outboard repower — Sea Otter",
+      "Svc engine removal & installation — Sea Otter"
+     ],
+     "cross_memo": "Sea Otter repower — crane lift rental",
+     "plain": [
+      "the Sea Otter repower",
+      "the Sea Otter repower job",
+      "the Sea Otter repower work"
+     ],
+     "oblique": [
+      "putting new motors on our flagship",
+      "swapping out the worn power plants",
+      "the replacement of tired propulsion units",
+      "our biggest boat's mid-life overhaul",
+      "a pair of new drives hung on the transom",
+      "retiring the old engines for good",
+      "the overdue mechanical refresh",
+      "installing quieter and thriftier machinery",
+      "the work that kept a vessel out of the water for weeks",
+      "a major investment in horsepower",
+      "pulling out the engines that kept failing",
+      "a boat going back to sea with new hearts",
+      "the largest single shop invoice of the year",
+      "upgrading what pushes the boat",
+      "a costly mechanical swap",
+      "the refit that cured our reliability worries"
+     ],
+     "low": 22000,
+     "high": 40000
+    },
+    {
+     "key": "haulout",
+     "vendor": "Driftwood Shipyard",
+     "memos": [
+      "Inv unplanned haul-out — Gray Fin keel crack",
+      "Svc fiberglass structural repair — Gray Fin keel crack"
+     ],
+     "cross_memo": "Gray Fin keel crack — surveyor fee",
+     "plain": [
+      "the Gray Fin keel crack",
+      "the Gray Fin keel crack repair",
+      "the Gray Fin keel crack haul-out"
+     ],
+     "oblique": [
+      "a split discovered along the bottom of our newest boat",
+      "the surprise lift out of the water",
+      "a structural flaw found after a grounding",
+      "the emergency dry-dock stay",
+      "fixing damage from striking a submerged log",
+      "an unscheduled yard visit",
+      "a hull defect that grounded a vessel",
+      "the safety fix demanded by inspectors",
+      "patching a boat's underside after a hard bump",
+      "the unexpected shipyard bill",
+      "a damaged boat lifted for repair",
+      "correcting a fracture below the waterline",
+      "the sidelined vessel's restoration",
+      "structural work nobody budgeted",
+      "a collision with something unseen",
+      "our boat spending days on stands"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Marine Insurance",
+   "aliases": [
+    "insurance",
+    "hull insurance",
+    "liability coverage",
+    "marine coverage",
+    "policy premiums"
+   ],
+   "narrative": [
+    "Insurance",
+    "Hull insurance",
+    "Policy premiums"
+   ],
+   "recurring": [
+    {
+     "vendor": "Seawall Underwriters",
+     "base": 14500,
+     "memo": "Qtr hull & P&I premium"
+    },
+    {
+     "vendor": "Coastal Charter Assurance",
+     "base": 5200,
+     "memo": "Inv passenger liability"
+    }
+   ],
+   "events": [
+    {
+     "key": "claimsurcharge",
+     "vendor": "Seawall Underwriters",
+     "memos": [
+      "Inv premium adjustment — loss-history surcharge",
+      "Svc mid-term endorsement — loss-history surcharge"
+     ],
+     "cross_memo": "Loss-history surcharge — broker fee",
+     "plain": [
+      "the loss-history surcharge",
+      "the loss-history surcharge adjustment",
+      "the loss-history surcharge endorsement"
+     ],
+     "oblique": [
+      "a higher rate after last year's incidents",
+      "the carrier penalizing our past claims",
+      "an upward repricing from our track record",
+      "the insurer's response to prior accidents",
+      "a policy repriced mid-year",
+      "the premium bump triggered by earlier payouts",
+      "our worse risk rating",
+      "the added charge on the renewal",
+      "the underwriters' reaction to our claims",
+      "paying more for being less lucky",
+      "a rate hike nobody negotiated",
+      "the cost of previous damage reports",
+      "our standing with the carrier slipping",
+      "the extra premium after a bad stretch",
+      "adjustments tied to what we've filed before",
+      "a jump on the policy statement"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "newcoverage",
+     "vendor": "Pacific Rim Specialty Risk",
+     "memos": [
+      "Inv kelp-bed pollution rider — new policy",
+      "Svc whale-strike coverage binder — new policy"
+     ],
+     "cross_memo": "New policy — wildlife regulation counsel",
+     "plain": [
+      "the kelp-bed pollution rider",
+      "the whale-strike coverage binder",
+      "the new policy binder"
+     ],
+     "oblique": [
+      "extra protection for animal encounters",
+      "a fresh layer of cover bought this spring",
+      "the add-on that satisfies our lender",
+      "insurance for incidents with marine mammals",
+      "a new line of protection from a specialist",
+      "safeguards against eco-related claims",
+      "coverage we didn't carry before",
+      "the shield requested by the permit office",
+      "an added risk transfer",
+      "the endorsement purchased after the sanctuary rules changed",
+      "buying peace of mind for sensitive waters",
+      "cover for the unusual scenarios",
+      "a new carrier added alongside the old",
+      "protection for the new offshore routes",
+      "the additional paperwork from a specialist underwriter",
+      "our response to tougher regulations"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Crew Wages & Captain Fees",
+   "aliases": [
+    "crew",
+    "crew pay",
+    "deckhand wages",
+    "captain fees",
+    "crew costs"
+   ],
+   "narrative": [
+    "Crew pay",
+    "Deckhand wages",
+    "Captain fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tidewater Staffing Co-op",
+     "base": 24000,
+     "memo": "Inv deckhand payroll - biweekly"
+    },
+    {
+     "vendor": "Licensed Masters Pool",
+     "base": 16500,
+     "memo": "Svc captain day rates"
+    },
+    {
+     "vendor": "Naturalist Guides Collective",
+     "base": 6800,
+     "memo": "Inv onboard naturalist fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "holidaybonus",
+     "vendor": "Licensed Masters Pool",
+     "memos": [
+      "Inv holiday-peak premium pay — Thanksgiving weekend",
+      "Svc double-time captain shifts — Thanksgiving weekend"
+     ],
+     "cross_memo": "Thanksgiving weekend — extra hotel block",
+     "plain": [
+      "the Thanksgiving weekend premium",
+      "the Thanksgiving weekend shifts",
+      "the Thanksgiving weekend pay"
+     ],
+     "oblique": [
+      "the autumn holiday rush",
+      "double pay for the long family break",
+      "staffing the busiest days of the fall",
+      "extra incentive to work the festive stretch",
+      "what we paid skippers to give up their dinners",
+      "the big end-of-November crowds",
+      "peak-day wage premiums",
+      "a surge in bookings requiring additional hands",
+      "overtime tied to a national feast",
+      "the cost of crewing every departure",
+      "holiday pay for the captains",
+      "our busiest few days on the water",
+      "the extra tour slots we sold",
+      "the reward for working a family holiday",
+      "the weekend we ran sold-out trips",
+      "paying a premium to fill the roster"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "certification",
+     "vendor": "Mariners Academy NW",
+     "memos": [
+      "Inv STCW recertification — crew cohort",
+      "Svc CPR & first-aid training — crew cohort"
+     ],
+     "cross_memo": "Crew cohort — certificate filing fees",
+     "plain": [
+      "the STCW recertification",
+      "the crew cohort training",
+      "the crew cohort certification"
+     ],
+     "oblique": [
+      "getting everyone's papers renewed",
+      "a class the coast guard requires",
+      "the safety refresher for the staff",
+      "licensing upkeep for the whole team",
+      "paying for a classroom week",
+      "qualification costs for our people",
+      "the credentials that let us keep sailing",
+      "an every-few-years education bill",
+      "training that ensures regulatory compliance",
+      "the course our deckhands completed",
+      "sending the whole gang back to school",
+      "fees to keep mariners legal",
+      "a mandated skills refresh",
+      "the tuition for the new hires",
+      "emergency-response education",
+      "preparing staff for the next inspection"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Bait, Tackle & Chum",
+   "aliases": [
+    "bait",
+    "tackle",
+    "bait and tackle",
+    "chum",
+    "fishing supplies"
+   ],
+   "narrative": [
+    "Bait costs",
+    "Tackle spend",
+    "Chum purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Silver Tide Bait Wholesale",
+     "base": 7500,
+     "memo": "Inv frozen anchovy & squid"
+    },
+    {
+     "vendor": "Reelworks Tackle Distributors",
+     "base": 4300,
+     "memo": "Inv rods, line, terminal gear"
+    },
+    {
+     "vendor": "Dockside Ice & Cold Storage",
+     "base": 1900,
+     "memo": "Svc ice delivery weekly"
+    }
+   ],
+   "events": [
+    {
+     "key": "tunarun",
+     "vendor": "Silver Tide Bait Wholesale",
+     "memos": [
+      "Inv live sardine tank rental — bluefin season",
+      "Svc premium bait surcharge — bluefin season"
+     ],
+     "cross_memo": "Bluefin season — tank transport truck",
+     "plain": [
+      "the bluefin season bait",
+      "the bluefin season surcharge",
+      "the bluefin season tanks"
+     ],
+     "oblique": [
+      "the giant-fish migration",
+      "a run of huge pelagic predators",
+      "stocking up for a trophy-catch window",
+      "the weeks when anglers wanted record fish",
+      "extra live feed to attract the big ones",
+      "the demand spike for premium offerings",
+      "gear for the heavyweight sport fish",
+      "seasonal appetite among the clients",
+      "our upsold deep-sea trips",
+      "the special rigs and live feed used on trophy hunts",
+      "a sudden need for fresher feed",
+      "elevated live-stock handling",
+      "the time of year the huge fish arrive",
+      "preparations for the marquee catch",
+      "what the fussy species required",
+      "an unusually bait-hungry period"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "tackleupgrade",
+     "vendor": "Gaffhook Outfitters",
+     "memos": [
+      "Inv electric reel set — fleet gear refresh",
+      "Svc rod holder retrofit — fleet gear refresh"
+     ],
+     "cross_memo": "Fleet gear refresh — shipping and duties",
+     "plain": [
+      "the fleet gear refresh",
+      "the electric reel set",
+      "the fleet gear refresh retrofit"
+     ],
+     "oblique": [
+      "replacing worn equipment across our boats",
+      "the long-overdue equipment renewal",
+      "modernizing what clients hold in their hands",
+      "a one-time investment in better rods",
+      "the new motorized reels",
+      "retiring the battered old poles",
+      "upgrading the equipment guests complained about",
+      "a capital-like purchase booked as supplies",
+      "re-outfitting every deck",
+      "the complete gear overhaul for the season",
+      "new mounts bolted to every rail",
+      "a bulk order from an outfitter",
+      "fresh equipment for the charter clients",
+      "what we bought to improve catch rates",
+      "the supply refresh for all vessels",
+      "our biggest equipment buy in years"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Permits, Licenses & Marine Park Fees",
+   "aliases": [
+    "permits",
+    "licenses",
+    "park fees",
+    "regulatory fees",
+    "permit costs"
+   ],
+   "narrative": [
+    "Permits",
+    "Park fees",
+    "Regulatory fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "State Fish & Wildlife Licensing",
+     "base": 2800,
+     "memo": "Inv commercial passenger fishing vessel permits"
+    },
+    {
+     "vendor": "Marine Sanctuary Access Office",
+     "base": 3600,
+     "memo": "Qtr whale-watch access fee"
+    },
+    {
+     "vendor": "Port Authority Berthing",
+     "base": 5400,
+     "memo": "Mnt slip & mooring fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "sanctuaryexpansion",
+     "vendor": "Marine Sanctuary Access Office",
+     "memos": [
+      "Inv expanded zone access fee — Northbank extension",
+      "Svc new vessel monitoring tag — Northbank extension"
+     ],
+     "cross_memo": "Northbank extension — compliance consultant",
+     "plain": [
+      "the Northbank extension",
+      "the Northbank extension fee",
+      "the Northbank extension tags"
+     ],
+     "oblique": [
+      "the enlarged protected area",
+      "new rules covering waters we'd visited freely",
+      "the regulator pushing its boundary north",
+      "charges for entering a newly restricted zone",
+      "monitoring equipment we now must carry",
+      "what the government asked for after redrawing the map",
+      "paying to keep visiting our best viewing grounds",
+      "the larger footprint of the reserve",
+      "a new category of toll",
+      "compliance with the updated chart",
+      "tracking hardware required for our boats",
+      "expanded jurisdiction bringing extra fees",
+      "an official decision made last winter",
+      "fees tied to the redrawn borders",
+      "what it costs to stay near the whales",
+      "access we had to pay extra to retain"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "permitappeal",
+     "vendor": "Tern & Associates Maritime Law",
+     "memos": [
+      "Inv legal fees — permit denial appeal",
+      "Svc hearing preparation — permit denial appeal"
+     ],
+     "cross_memo": "Permit denial appeal — filing and court costs",
+     "plain": [
+      "the permit denial appeal",
+      "the permit denial appeal hearing",
+      "the permit denial appeal fees"
+     ],
+     "oblique": [
+      "fighting a rejected application",
+      "lawyers hired after the agency said no",
+      "contesting a decision that blocked a route",
+      "the administrative dispute over our paperwork",
+      "our attorneys' time on a regulatory fight",
+      "challenging the ruling in front of a panel",
+      "the bill for a bureaucratic battle",
+      "the rejection we refused to accept",
+      "preparing arguments for a review board",
+      "our counsel's hours",
+      "defending our right to operate a tour",
+      "a legal skirmish with the licensing office",
+      "the case we filed in the spring",
+      "hiring outside advocates",
+      "an expensive disagreement with regulators",
+      "the fight to reverse an agency's finding"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Marketing & Booking Platforms",
+   "aliases": [
+    "marketing",
+    "advertising",
+    "booking fees",
+    "online listings",
+    "promotion spend"
+   ],
+   "narrative": [
+    "Marketing",
+    "Advertising",
+    "Booking fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "TripReel Booking Marketplace",
+     "base": 8200,
+     "memo": "Inv commission on bookings"
+    },
+    {
+     "vendor": "Searchlight Digital Ads",
+     "base": 5600,
+     "memo": "Mnt paid search campaigns"
+    },
+    {
+     "vendor": "Harbor Guide Print Media",
+     "base": 1200,
+     "memo": "Inv brochure racks & ad"
+    }
+   ],
+   "events": [
+    {
+     "key": "videoshoot",
+     "vendor": "Searchlight Digital Ads",
+     "memos": [
+      "Inv drone footage production — Humpback reel",
+      "Svc video editing & licensing — Humpback reel"
+     ],
+     "cross_memo": "Humpback reel — influencer hosting",
+     "plain": [
+      "the Humpback reel",
+      "the Humpback reel production",
+      "the Humpback reel footage"
+     ],
+     "oblique": [
+      "a promotional film shot from the air",
+      "the viral clip showing breaching giants",
+      "content created to lift summer sales",
+      "a creative production for social channels",
+      "the aerial footage of our tours",
+      "a showpiece made by a camera crew",
+      "what we commissioned to stand out online",
+      "our new brand video",
+      "the film edit that took weeks",
+      "a flashy piece that cost more than expected",
+      "the cinematic push for the season",
+      "visual material for our website",
+      "a media asset our competitors lacked",
+      "the filmmaker's invoice",
+      "the creative project that launched in May",
+      "an investment in storytelling"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "travelfair",
+     "vendor": "Pacific Travel Expo Group",
+     "memos": [
+      "Inv exhibitor booth — Coastal Adventure Expo",
+      "Svc display build & shipping — Coastal Adventure Expo"
+     ],
+     "cross_memo": "Coastal Adventure Expo — staff lodging",
+     "plain": [
+      "the Coastal Adventure Expo",
+      "the Coastal Adventure Expo booth",
+      "the Coastal Adventure Expo display"
+     ],
+     "oblique": [
+      "a trade show appearance in the city",
+      "renting space where tour operators meet buyers",
+      "our stand at the big travel gathering",
+      "the convention weekend",
+      "pitching group sales face to face",
+      "the exhibition hall presence",
+      "sponsorship of an industry event",
+      "a booth designed to draw crowds",
+      "what we paid to be seen by agents",
+      "trade-event spending aimed at corporate groups",
+      "our pop-up showroom",
+      "staffing a table among competitors",
+      "the in-person marketing push",
+      "a pavilion with banners and brochures",
+      "the fair where we signed contracts",
+      "exposure to wholesalers and planners"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Safety & Onboard Equipment",
+   "aliases": [
+    "safety gear",
+    "safety equipment",
+    "onboard equipment",
+    "life-saving gear",
+    "compliance gear"
+   ],
+   "narrative": [
+    "Safety gear",
+    "Onboard equipment",
+    "Life-saving gear"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lifeline Marine Safety",
+     "base": 3800,
+     "memo": "Mnt PFD & flare inspection"
+    },
+    {
+     "vendor": "Beacon Electronics",
+     "base": 2600,
+     "memo": "Svc radio & radar service"
+    },
+    {
+     "vendor": "FirstResponse Medical Kits",
+     "base": 900,
+     "memo": "Inv medical kit restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "liferaft",
+     "vendor": "Lifeline Marine Safety",
+     "memos": [
+      "Inv raft replacement & hydrostatic release — SOLAS audit",
+      "Svc EPIRB battery swap — SOLAS audit"
+     ],
+     "cross_memo": "SOLAS audit — inspector re-visit fee",
+     "plain": [
+      "the SOLAS audit",
+      "the SOLAS audit raft replacement",
+      "the SOLAS audit EPIRB work"
+     ],
+     "oblique": [
+      "the inspection that found expired items",
+      "inflatable survival craft we had to replace",
+      "what the examiner made us buy",
+      "a failed check that required quick action",
+      "the outcome of an official walkthrough",
+      "emergency beacons that no longer met standard",
+      "paying to pass a government review",
+      "life-saving equipment past its date",
+      "gear swapped before the authorities returned",
+      "the surveyor's list of deficiencies",
+      "compliance fixes completed before sailing again",
+      "an annual check that went badly",
+      "the follow-up visit's required purchases",
+      "aging rescue equipment pulled from service",
+      "what the coast guard flagged",
+      "replacing what we should have renewed sooner"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "camerasystem",
+     "vendor": "Wavelength Whale Watch Tech",
+     "memos": [
+      "Inv hydrophone array install — acoustic detection kit",
+      "Svc spotter camera mount — acoustic detection kit"
+     ],
+     "cross_memo": "Acoustic detection kit — mounting labor",
+     "plain": [
+      "the acoustic detection kit",
+      "the acoustic detection hydrophone array",
+      "the acoustic detection spotter camera"
+     ],
+     "oblique": [
+      "underwater microphones to locate animals",
+      "technology that helps avoid collisions with marine life",
+      "the gadgets on the bow that listen to the sea",
+      "a new system for sensing nearby whales",
+      "the electronics project funded by our conservation pledge",
+      "detection tools installed on the flagship",
+      "sensors that guide captains away from danger",
+      "an upgrade promised to the sanctuary",
+      "the listening equipment we mounted",
+      "hardware bought to spot wildlife earlier",
+      "a scientific add-on to the boats",
+      "the pilot program with researchers",
+      "what we added to reduce ship strikes",
+      "tech that makes sightings more reliable",
+      "an innovation for guest experience and safety",
+      "equipment ordered from a niche supplier"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

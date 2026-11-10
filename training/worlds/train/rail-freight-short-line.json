@@ -1,0 +1,703 @@
+{
+ "slug": "rail-freight-short-line",
+ "industry": "rail freight short line",
+ "entities": [
+  "Ironvale Short Line Railroad",
+  "Cobble Creek & Eastern Railway",
+  "Harlan Prairie Rail Co.",
+  "Tallgrass Junction Railroad",
+  "Summit Ridge Terminal Railway"
+ ],
+ "accounts": [
+  {
+   "name": "Locomotive Maintenance",
+   "aliases": [
+    "locomotive maintenance",
+    "loco maintenance",
+    "engine maintenance",
+    "locomotive shop costs",
+    "power maintenance"
+   ],
+   "narrative": [
+    "Locomotive maintenance",
+    "Loco maintenance",
+    "Engine maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Diesel Services",
+     "base": 14500,
+     "memo": "Svc Inv monthly diesel shop labor"
+    },
+    {
+     "vendor": "Copperhead Parts Supply",
+     "base": 6200,
+     "memo": "Inv filters, lube oil, brake shoes"
+    }
+   ],
+   "events": [
+    {
+     "key": "turbocharger",
+     "vendor": "Ridgeline Diesel Services",
+     "memos": [
+      "Turbocharger replacement — SD40 unit 2214",
+      "Turbocharger replacement — core charge and install"
+     ],
+     "cross_memo": "Turbocharger replacement — crane rental lift",
+     "plain": [
+      "the turbocharger replacement",
+      "the SD40 turbocharger replacement",
+      "turbocharger replacement on the SD40"
+     ],
+     "oblique": [
+      "getting the lead engine back on the road",
+      "the big repair on our oldest road unit",
+      "a failed air-boost component on the main engine",
+      "unplanned shop time for the lead unit",
+      "the fix after the engine lost power on the grade",
+      "replacing a worn part that kept the engine from pulling full tonnage",
+      "the lead unit repair",
+      "the emergency swap on the road power",
+      "what it took to restore horsepower",
+      "the engine that kept derating",
+      "a costly part swap that sidelined our best machine",
+      "the power shortage fix",
+      "rebuilding the unit that failed on the hill",
+      "the mainline engine breakdown",
+      "parts and labor to revive the sick engine",
+      "the overhaul of a single faulty assembly"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "traction",
+     "vendor": "Pinnacle Armature Works",
+     "memos": [
+      "Traction motor rewind — Pinnacle Armature Works",
+      "Traction motor rewind — four armatures shipped"
+     ],
+     "cross_memo": "Traction motor rewind — freight to Pinnacle",
+     "plain": [
+      "the traction motor rewind",
+      "traction motor rewind work",
+      "the armature rewind program"
+     ],
+     "oblique": [
+      "sending the drive units out to be rebuilt",
+      "the wheel-drive electrical refurbishment",
+      "restoring the units that pull the axles",
+      "outsourced rebuild of the electrical drive gear",
+      "the repair of burned-out drive windings",
+      "getting the wheelset drives back in shape",
+      "the shipped-out rebuild job",
+      "the spinning-gear restoration",
+      "contracted electrical rebuild on four units",
+      "the outside shop repair of the axle drives",
+      "work done off-site on the electric pullers",
+      "the refurbishment of the units that turn the wheels",
+      "a batch of rebuilds sent to a specialist",
+      "the drive refurbishment backlog",
+      "the electrical refresh on the road power",
+      "the specialist rebuild of the drive hardware"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Track Maintenance",
+   "aliases": [
+    "track maintenance",
+    "track upkeep",
+    "roadbed maintenance",
+    "track costs",
+    "maintenance of way"
+   ],
+   "narrative": [
+    "Track maintenance",
+    "Track upkeep",
+    "Maintenance of way"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Bed Ballast Co.",
+     "base": 9800,
+     "memo": "Inv ballast and crushed stone delivery"
+    },
+    {
+     "vendor": "Redline Section Crew Contractors",
+     "base": 16000,
+     "memo": "Svc monthly section gang labor"
+    },
+    {
+     "vendor": "Timberland Tie Supply",
+     "base": 5400,
+     "memo": "Inv crossties and spikes"
+    }
+   ],
+   "events": [
+    {
+     "key": "washout",
+     "vendor": "Redline Section Crew Contractors",
+     "memos": [
+      "Mile 41 washout — emergency crew overtime",
+      "Mile 41 washout — culvert rebuild labor"
+     ],
+     "cross_memo": "Mile 41 washout — detour trucking of cars",
+     "plain": [
+      "the mile 41 washout",
+      "mile 41 washout repairs",
+      "the washout at mile 41"
+     ],
+     "oblique": [
+      "the storm damage on the south end",
+      "reopening the line after the flood",
+      "the night and weekend scramble after the creek rose",
+      "rebuilding the drainage pipe that gave way",
+      "the high-water emergency",
+      "getting trains moving again after heavy rain",
+      "the cleanup after the embankment collapsed",
+      "the outage caused by the river overflowing",
+      "the emergency repair after the storm",
+      "fixing the roadbed the creek carried off",
+      "the weather event that closed the line",
+      "restoring the stretch the flood undermined",
+      "the rushed overtime to reopen the route",
+      "the repair of a gap where the ground disappeared",
+      "what the storm did to our right of way",
+      "the hurried job to patch the ground under the rails"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "rerail",
+     "vendor": "Anvil Rail Grinding Inc.",
+     "memos": [
+      "Rail grinding program — Anvil Rail Grinding Inc.",
+      "Rail grinding program — curve profile pass"
+     ],
+     "cross_memo": "Rail grinding program — flagging escort",
+     "plain": [
+      "the rail grinding program",
+      "rail grinding program work",
+      "the Anvil grinding program"
+     ],
+     "oblique": [
+      "smoothing the steel surface on the curves",
+      "the preventive surface treatment of the running steel",
+      "a specialist contractor reshaping the rail head",
+      "the pass that cuts wheel noise and wear",
+      "extending the life of the old steel",
+      "the scheduled surface restoration",
+      "a machine trundling over the line shaping the metal",
+      "the profile correction on tight bends",
+      "the outside contractor's smoothing run",
+      "grinding sparks on the main",
+      "the work to quiet and level the steel",
+      "upkeep of the metal our wheels ride on",
+      "the corrective shaping of worn steel",
+      "a one-time program to refresh the running surface",
+      "reshaping where the flanges bite",
+      "the treatment that postpones replacing steel"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Fuel and Lubricants",
+   "aliases": [
+    "fuel",
+    "diesel fuel",
+    "fuel and lubricants",
+    "fuel costs",
+    "fuel spend"
+   ],
+   "narrative": [
+    "Fuel costs",
+    "Diesel fuel",
+    "Fuel spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Prairie Petroleum Distributors",
+     "base": 28000,
+     "memo": "Inv bulk ULSD delivered to yard tank"
+    },
+    {
+     "vendor": "Slickrail Lubricants",
+     "base": 2800,
+     "memo": "Inv flange lube and journal oil"
+    }
+   ],
+   "events": [
+    {
+     "key": "surcharge",
+     "vendor": "Prairie Petroleum Distributors",
+     "memos": [
+      "Spot purchase surcharge — fuel price spike",
+      "Spot purchase surcharge — rush top-off Inv"
+     ],
+     "cross_memo": "Spot purchase surcharge — hauler detention fee",
+     "plain": [
+      "the spot purchase surcharge",
+      "spot purchase surcharge charges",
+      "the fuel spot surcharge"
+     ],
+     "oblique": [
+      "the market jump in what we pay per gallon",
+      "buying outside our contract at a worse rate",
+      "the price run-up during the supply squeeze",
+      "an unexpected premium on emergency volume",
+      "the shortage-driven premium",
+      "filling up on short notice at a steep markup",
+      "the cost of running low and scrambling",
+      "paying more than the locked rate",
+      "the rate shock at the pump",
+      "the emergency refill at market pricing",
+      "the premium we paid when the tank ran near empty",
+      "a one-off price hit from the wholesale market",
+      "the unplanned volume bought off-contract",
+      "a steep rate on late-night deliveries",
+      "the price swing on the commodity",
+      "what the refinery disruption cost us"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "spill",
+     "vendor": "Bluewater Environmental Response",
+     "memos": [
+      "Yard tank leak cleanup — Bluewater Environmental Response",
+      "Yard tank leak cleanup — soil removal and disposal"
+     ],
+     "cross_memo": "Yard tank leak cleanup — state fine filing",
+     "plain": [
+      "the yard tank leak cleanup",
+      "tank leak cleanup work",
+      "the Bluewater leak cleanup"
+     ],
+     "oblique": [
+      "remediating the ground after the storage failure",
+      "the environmental mess at the terminal",
+      "hauling away contaminated dirt",
+      "the hazmat crew visit after the seepage",
+      "regulatory cleanup of the stained lot",
+      "the dig-out following the breached container",
+      "making the site compliant again",
+      "the outside crew that scrubbed the site",
+      "the pollution incident response",
+      "getting the soil tested and carted off",
+      "the reclamation of the spoiled area",
+      "the mess left when the vessel gave out",
+      "the agency-mandated site restoration",
+      "paying specialists to undo the damage",
+      "the safety response to escaped product",
+      "the disposal charges for tainted earth"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Crew Wages and Overtime",
+   "aliases": [
+    "crew wages",
+    "train crew pay",
+    "crew overtime",
+    "operating payroll",
+    "crew costs"
+   ],
+   "narrative": [
+    "Crew wages",
+    "Train crew pay",
+    "Crew costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Paychex Rail Payroll Services",
+     "base": 30000,
+     "memo": "Svc semi-monthly engineer and conductor payroll"
+    },
+    {
+     "vendor": "Brotherhood Benefit Trust",
+     "base": 8800,
+     "memo": "Inv crew health and welfare premiums"
+    }
+   ],
+   "events": [
+    {
+     "key": "hoursofservice",
+     "vendor": "Paychex Rail Payroll Services",
+     "memos": [
+      "Relief crew call-outs — hours expiry dogcatch",
+      "Relief crew call-outs — deadhead taxi and lodging"
+     ],
+     "cross_memo": "Relief crew call-outs — hotel block for stranded crew",
+     "plain": [
+      "the relief crew call-outs",
+      "relief crew call-out costs",
+      "the call-outs for relief crews"
+     ],
+     "oblique": [
+      "sending fresh people to replace those who timed out",
+      "the cost of extra staffing when trains stalled on the main",
+      "the scramble to move trains that were stuck",
+      "paying folks to rescue a stranded movement",
+      "last-minute staffing after the legal clock ran out",
+      "the extra bodies we sent to finish a run",
+      "overtime from trains that outlasted their shift",
+      "the premium on unplanned staffing",
+      "what it cost to get a stopped train home",
+      "a bad week of unexpected callbacks",
+      "the labor needed after the train went dead on the line",
+      "the replacement team dispatched in the night",
+      "the penalty hours for off-schedule work",
+      "staff pulled in off their days off",
+      "the added payroll from late departures",
+      "moving the freight that got hung up"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "training",
+     "vendor": "Keystone Safety Institute",
+     "memos": [
+      "Annual recertification clinic — Keystone Safety Institute",
+      "Annual recertification clinic — instructor and materials"
+     ],
+     "cross_memo": "Annual recertification clinic — backfill pay for attendees",
+     "plain": [
+      "the annual recertification clinic",
+      "recertification clinic fees",
+      "the Keystone recertification clinic"
+     ],
+     "oblique": [
+      "the yearly refresher required by the regulator",
+      "sending the whole staff back to the classroom",
+      "the compliance schooling for operating employees",
+      "paying outside teachers to renew licences",
+      "the mandatory skills update",
+      "the cost of getting everyone current on the rulebook",
+      "the knowledge refresh our people had to sit through",
+      "backfilling while the staff were in class",
+      "the yearly credential renewal",
+      "the instruction session for engineers and conductors",
+      "what we pay to keep qualifications valid",
+      "the safety schooling week",
+      "the periodic retraining requirement",
+      "a block of paid time in the training room",
+      "the compliance exercise for those who run the trains",
+      "the outside curriculum our crews attended"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Car Hire and Per Diem",
+   "aliases": [
+    "car hire",
+    "per diem",
+    "car hire and per diem",
+    "foreign car rent",
+    "railcar rental"
+   ],
+   "narrative": [
+    "Car hire",
+    "Per diem",
+    "Railcar rental"
+   ],
+   "recurring": [
+    {
+     "vendor": "Interline Car Accounting Bureau",
+     "base": 19000,
+     "memo": "Svc monthly per diem settlement"
+    },
+    {
+     "vendor": "Boxcar Lease Partners",
+     "base": 7400,
+     "memo": "Inv Qtr covered hopper lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "detention",
+     "vendor": "Interline Car Accounting Bureau",
+     "memos": [
+      "Customer car detention — grain elevator backlog",
+      "Customer car detention — extra car days billed"
+     ],
+     "cross_memo": "Customer car detention — demurrage credit offset",
+     "plain": [
+      "the customer car detention",
+      "car detention charges",
+      "the grain elevator detention"
+     ],
+     "oblique": [
+      "equipment sitting loaded while the shipper dawdled",
+      "cars stuck waiting to be emptied",
+      "the pile-up of idle hoppers at the customer's door",
+      "paying for equipment we could not return",
+      "the slowdown at the receiving facility",
+      "wheels that stood still while the meter ran",
+      "time the cars spent parked and unavailable",
+      "the harvest-season congestion",
+      "extra days that railcars sat unreleased",
+      "an unusually long dwell at one location",
+      "what the late unloading cost",
+      "owner rent that kept accruing on idle freight cars",
+      "the bottleneck at the consignee",
+      "a stretch when empties failed to come back",
+      "the lag in returning borrowed equipment",
+      "interchange partners billing us for slow turns"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "lease",
+     "vendor": "Redwood Equipment Leasing",
+     "memos": [
+      "Tank car lease buyout — Redwood Equipment Leasing",
+      "Tank car lease buyout — early termination fee"
+     ],
+     "cross_memo": "Tank car lease buyout — title transfer and inspection",
+     "plain": [
+      "the tank car lease buyout",
+      "tank car buyout payment",
+      "the Redwood lease buyout"
+     ],
+     "oblique": [
+      "closing out the rental agreement ahead of schedule",
+      "taking ownership of equipment we had been renting",
+      "the penalty for ending the contract early",
+      "the one-time payment to stop monthly rental",
+      "acquiring the units instead of returning them",
+      "a financing arrangement unwound",
+      "the cost of walking away from the old agreement",
+      "what we paid to own the fleet segment outright",
+      "retiring the rental obligation",
+      "the termination premium",
+      "moving from renting to owning",
+      "a lump sum that ended the monthly charges",
+      "the settlement with the lessor",
+      "buying out the contract on those cars",
+      "the payout that freed us from the rental terms",
+      "a break fee on the hired equipment"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Terminal and Yard Operations",
+   "aliases": [
+    "yard operations",
+    "terminal costs",
+    "yard costs",
+    "terminal operations",
+    "switching yard expense"
+   ],
+   "narrative": [
+    "Yard operations",
+    "Terminal costs",
+    "Yard costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cinderfield Switching Services",
+     "base": 11000,
+     "memo": "Svc monthly industrial switching contract"
+    },
+    {
+     "vendor": "Hatchway Utilities",
+     "base": 3200,
+     "memo": "Inv yard lighting and power"
+    },
+    {
+     "vendor": "Clearpath Snow and Debris",
+     "base": 2600,
+     "memo": "Svc yard clearing and vegetation control"
+    }
+   ],
+   "events": [
+    {
+     "key": "derailment",
+     "vendor": "Cinderfield Switching Services",
+     "memos": [
+      "East yard derailment — rerailing crane crew",
+      "East yard derailment — switch point repair"
+     ],
+     "cross_memo": "East yard derailment — damaged lading claim",
+     "plain": [
+      "the east yard derailment",
+      "east yard derailment recovery",
+      "the derailment in the east yard"
+     ],
+     "oblique": [
+      "the incident that put cars off the steel",
+      "getting overturned equipment back upright",
+      "the accident that blocked the ladder track",
+      "the mishap that tied up the main classification area",
+      "recovery after the cars left the rails",
+      "the crane that had to come lift things",
+      "the wreck near the receiving tracks",
+      "cleanup following a bad shove",
+      "the on-site disaster that stopped switching",
+      "the costly mishap during a routine move",
+      "an incident that shut half the facility",
+      "righting cars after the accident",
+      "the day yard traffic ground to a halt",
+      "the aftermath of the pile-up",
+      "damage to the tracks from the mishap",
+      "the crew hours spent clearing the wreckage"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "transload",
+     "vendor": "Northgate Bulk Handling",
+     "memos": [
+      "Transload pad expansion — Northgate Bulk Handling",
+      "Transload pad expansion — grading and paving"
+     ],
+     "cross_memo": "Transload pad expansion — surveyor and permit",
+     "plain": [
+      "the transload pad expansion",
+      "transload pad expansion work",
+      "the Northgate pad expansion"
+     ],
+     "oblique": [
+      "a larger paved area for moving cargo between modes",
+      "preparing more ground for truck-to-rail transfers",
+      "the capacity addition for a new customer",
+      "the site work to handle bigger volumes",
+      "the extra loading surface we poured",
+      "growth spending on the east side lot",
+      "a space built so freight can change vehicles",
+      "the site preparation for added business",
+      "the expansion that lets us move commodities faster",
+      "contractor work on the cargo handling area",
+      "laying surface for a new shipper's product",
+      "ground work paid for by a new contract",
+      "the construction behind our new volume",
+      "an outside firm enlarging the handling area",
+      "the build-out that adds throughput",
+      "clearing and surfacing the new loading area"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Claims",
+   "aliases": [
+    "insurance",
+    "claims",
+    "insurance and claims",
+    "liability premiums",
+    "claims expense"
+   ],
+   "narrative": [
+    "Insurance costs",
+    "Claims expense",
+    "Liability premiums"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Rail Underwriters",
+     "base": 12500,
+     "memo": "Inv Qtr accrual railroad liability premium"
+    },
+    {
+     "vendor": "Sentinel Property Mutual",
+     "base": 4800,
+     "memo": "Inv property and equipment coverage"
+    }
+   ],
+   "events": [
+    {
+     "key": "crossing",
+     "vendor": "Meridian Rail Underwriters",
+     "memos": [
+      "Grade crossing collision — Hwy 9 settlement",
+      "Grade crossing collision — deductible paid"
+     ],
+     "cross_memo": "Grade crossing collision — legal counsel retainer",
+     "plain": [
+      "the grade crossing collision",
+      "grade crossing collision settlement",
+      "the Hwy 9 collision"
+     ],
+     "oblique": [
+      "the accident involving a truck on the road",
+      "the incident where a vehicle met our train",
+      "paying out after a motorist was hurt",
+      "the settlement for the highway mishap",
+      "the share we owed before coverage kicked in",
+      "a claim from the day a car met a locomotive",
+      "the injury matter that was finally resolved",
+      "what we owed when the case closed",
+      "the payment tied to the roadway accident",
+      "the lawsuit we resolved",
+      "the cost of an accident at the public road",
+      "a third-party injury payout",
+      "the portion of the loss we had to absorb",
+      "the dispute that ended with a cheque",
+      "what an unlucky afternoon cost us",
+      "the result of the vehicle strike"
+     ],
+     "low": 25000,
+     "high": 40000
+    },
+    {
+     "key": "audit",
+     "vendor": "Larkspur Risk Consulting",
+     "memos": [
+      "Cargo loss survey — Larkspur Risk Consulting",
+      "Cargo loss survey — field adjuster fees"
+     ],
+     "cross_memo": "Cargo loss survey — salvage disposal",
+     "plain": [
+      "the cargo loss survey",
+      "cargo loss survey fees",
+      "the Larkspur loss survey"
+     ],
+     "oblique": [
+      "an outsider's review of what went missing",
+      "the investigation into damaged shipments",
+      "the specialist assessment of what happened to goods",
+      "paying adjusters to inspect the shipper's complaint",
+      "the examination after the customer reported shortage",
+      "the inquiry into spoiled freight",
+      "reviewing how product was spoiled in transit",
+      "an evaluation for the underwriters",
+      "the professional look at the loss",
+      "the independent examiner's bill",
+      "the fact-finding after the damage claim",
+      "an expert opinion on who was responsible",
+      "the assessment that supports our claim",
+      "outside experts inspecting the affected freight",
+      "determining how much was ruined",
+      "the inspection ordered by the carrier"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

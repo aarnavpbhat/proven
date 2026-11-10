@@ -1,0 +1,830 @@
+{
+ "slug": "orthopedic-surgery-center",
+ "industry": "orthopedic surgery center",
+ "entities": [
+  "Ridgecrest Orthopedic Surgery Center",
+  "Bayfront Joint & Spine ASC",
+  "Granite Peak Surgical Partners",
+  "Willow Creek Ortho Surgery Center",
+  "Copperline Sports Medicine Surgicenter"
+ ],
+ "accounts": [
+  {
+   "name": "Implant & Prosthesis Supplies",
+   "aliases": [
+    "implants",
+    "implant costs",
+    "prosthesis spend",
+    "implant supplies",
+    "joint implants"
+   ],
+   "narrative": [
+    "Implant costs",
+    "Prosthesis spend",
+    "Implant supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Orthopedic Devices",
+     "base": 28000,
+     "memo": "Consigned knee components - monthly usage"
+    },
+    {
+     "vendor": "Meridian Spine Systems",
+     "base": 18000,
+     "memo": "Pedicle screw sets - usage bill"
+    },
+    {
+     "vendor": "Harborview Bone Graft Co",
+     "base": 6500,
+     "memo": "Allograft tissue - restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "nav_tracker_kit",
+     "vendor": "Keystone Orthopedic Devices",
+     "memos": [
+      "Navigation tracker kit — PO 44817",
+      "Navigation tracker kit — calibration arrays"
+     ],
+     "cross_memo": "Navigation tracker kit — rep training hours",
+     "plain": [
+      "the navigation tracker kit",
+      "navigation tracker kit purchases",
+      "the new navigation tracker kit"
+     ],
+     "oblique": [
+      "computer-guided surgery gear",
+      "the robot-assisted alignment equipment",
+      "camera-based positioning tools",
+      "intraoperative guidance hardware",
+      "setting up guided joint alignment",
+      "optical guidance sensors",
+      "the precision-placement system surgeons requested",
+      "equipment to improve implant placement accuracy",
+      "digital alignment aids",
+      "the surgical guidance rollout",
+      "real-time positioning instruments",
+      "upgrading how cuts get lined up",
+      "infrared sensing hardware",
+      "the guided-surgery pilot",
+      "smart alignment tools",
+      "operating theater positioning add-ons"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "revision_hip",
+     "vendor": "Pinnacle Revision Solutions",
+     "memos": [
+      "Revision hip cases — modular stems",
+      "Revision hip cases — acetabular cups"
+     ],
+     "cross_memo": "Revision hip cases — extra OR staffing",
+     "plain": [
+      "the revision hip cases",
+      "revision hip cases volume",
+      "a run of revision hip cases"
+     ],
+     "oblique": [
+      "redo surgeries",
+      "replacing worn-out artificial joints",
+      "a cluster of complex redo procedures",
+      "failed femoral hardware swapped out",
+      "patients returning after earlier replacements loosened",
+      "pricier salvage hardware",
+      "second-time joint operations",
+      "the surgeons taking on harder redo work",
+      "trays of specialty pieces ordered per patient",
+      "complex reconstructions",
+      "longer-than-usual femur and pelvis rebuilds",
+      "a referral surge from outside surgeons",
+      "salvage operations on loosened joints",
+      "high-acuity referrals",
+      "specialty socket and shaft pieces",
+      "restoring patients whose earlier implants wore out"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Sterile Processing Services",
+   "aliases": [
+    "sterile processing",
+    "spd",
+    "sterilization costs",
+    "tray reprocessing",
+    "sterile services spend"
+   ],
+   "narrative": [
+    "Sterile processing",
+    "Sterilization costs",
+    "Tray reprocessing"
+   ],
+   "recurring": [
+    {
+     "vendor": "ClearCycle Sterilization Partners",
+     "base": 14000,
+     "memo": "Outsourced tray turns - contract"
+    },
+    {
+     "vendor": "Bayline Instrument Repair",
+     "base": 3200,
+     "memo": "Instrument sharpening/repair - monthly"
+    },
+    {
+     "vendor": "AquaPure Lab Water",
+     "base": 1800,
+     "memo": "RO water service"
+    }
+   ],
+   "events": [
+    {
+     "key": "loaner_backlog",
+     "vendor": "ClearCycle Sterilization Partners",
+     "memos": [
+      "Weekend loaner backlog — WO 3391",
+      "Weekend loaner backlog — expedite fee"
+     ],
+     "cross_memo": "Weekend loaner backlog — courier runs",
+     "plain": [
+      "the weekend loaner backlog",
+      "weekend loaner backlog surcharges",
+      "a weekend loaner backlog"
+     ],
+     "oblique": [
+      "Saturday overflow at the offsite processor",
+      "rushing borrowed vendor sets",
+      "the borrowed-set pileup",
+      "surgeon-requested borrowed sets arriving late",
+      "an off-hours rush to clean borrowed sets",
+      "the queue of unreturned vendor sets",
+      "premium same-day turnaround",
+      "catch-up cleaning after a heavy Saturday",
+      "the processing queue overflow",
+      "speed charges",
+      "extra pickups and deliveries",
+      "borrowed sets",
+      "faster turnaround demanded by surgeons",
+      "the end-of-week crunch",
+      "a pile of sets awaiting cleaning",
+      "accelerated handling"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "autoclave_requal",
+     "vendor": "Northgate Biomedical Testing",
+     "memos": [
+      "Autoclave chamber requalification — biological indicators",
+      "Autoclave chamber requalification — PO 52260"
+     ],
+     "cross_memo": "Autoclave chamber requalification — rental sterilizer",
+     "plain": [
+      "the autoclave chamber requalification",
+      "autoclave chamber requalification work",
+      "an autoclave chamber requalification"
+     ],
+     "oblique": [
+      "proving the steam unit safe again after it failed",
+      "steam unit recertification",
+      "spore-strip validation cycles",
+      "getting the in-house steam cycle back to compliance",
+      "an outside inspection of steam equipment",
+      "recertifying the pressure vessel",
+      "a failed cycle investigation",
+      "infection-control signoff on the steam unit",
+      "the post-failure validation",
+      "compliance rechecks",
+      "third-party verification of kill cycles",
+      "the steam unit going down",
+      "proof cycles after a door seal fault",
+      "accreditation-required equipment checks",
+      "the infection prevention team's demand for revalidation",
+      "bringing the steam unit back online"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Anesthesia Services",
+   "aliases": [
+    "anesthesia",
+    "anesthesia fees",
+    "anesthesia coverage",
+    "crna costs",
+    "anesthesia staffing"
+   ],
+   "narrative": [
+    "Anesthesia fees",
+    "Anesthesia coverage",
+    "CRNA costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Anesthesia Group",
+     "base": 26000,
+     "memo": "Daily OR coverage stipend"
+    },
+    {
+     "vendor": "Lakeshore Pain Associates",
+     "base": 9000,
+     "memo": "Regional block coverage"
+    },
+    {
+     "vendor": "Cascade Anesthetic Supply",
+     "base": 4200,
+     "memo": "Agents and circuits"
+    }
+   ],
+   "events": [
+    {
+     "key": "locum_shifts",
+     "vendor": "Summit Anesthesia Group",
+     "memos": [
+      "Locum physician shifts — wk 2",
+      "Locum physician shifts — travel stipend"
+     ],
+     "cross_memo": "Locum physician shifts — hotel lodging",
+     "plain": [
+      "the locum physician shifts",
+      "extra locum physician shifts",
+      "locum physician shifts billed"
+     ],
+     "oblique": [
+      "fill-in doctors while staff were on leave",
+      "temporary clinicians",
+      "backfilling a vacant partner slot",
+      "outside doctors brought in",
+      "covering vacation gaps",
+      "agency doctors",
+      "short-term contractors at the head of the bed",
+      "the staffing shortfall",
+      "a resignation in the sedation team",
+      "premium fill-in rates",
+      "keeping rooms open while a partner was out",
+      "flying in replacement providers",
+      "visiting providers",
+      "bridge staffing until a new hire starts",
+      "sedation gaps filled externally",
+      "interim doctors"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "mh_cart",
+     "vendor": "Velora Pharma Distribution",
+     "memos": [
+      "Malignant hyperthermia cart — dantrolene vials",
+      "Malignant hyperthermia cart — PO 61904"
+     ],
+     "cross_memo": "Malignant hyperthermia cart — cooling packs",
+     "plain": [
+      "the malignant hyperthermia cart",
+      "restocking the malignant hyperthermia cart",
+      "malignant hyperthermia cart replenishment"
+     ],
+     "oblique": [
+      "replacing expired emergency rescue drugs",
+      "the crisis-drug restock",
+      "an expiring antidote stockpile",
+      "emergency reaction kits",
+      "outdated rescue medication",
+      "the fever-crisis readiness requirement",
+      "survey-ready emergency drug stock",
+      "a rare reaction antidote",
+      "swapping out expired rescue medication",
+      "accreditation readiness on emergency meds",
+      "the antidote that hit its expiry",
+      "pricey rescue drug replacement",
+      "emergency preparedness stock",
+      "the surveyor's finding on outdated meds",
+      "a mandated crisis drug refresh",
+      "replenishing emergency drug inventory"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Imaging Equipment Maintenance",
+   "aliases": [
+    "imaging maintenance",
+    "c-arm service",
+    "imaging service contracts",
+    "radiology equipment upkeep",
+    "imaging upkeep"
+   ],
+   "narrative": [
+    "Imaging maintenance",
+    "Imaging upkeep",
+    "Imaging service contracts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Fluorotech Service Co",
+     "base": 7800,
+     "memo": "C-arm PM contract"
+    },
+    {
+     "vendor": "Brightline MRI Services",
+     "base": 12500,
+     "memo": "Extremity MRI service agreement"
+    },
+    {
+     "vendor": "Dosimetry Northwest",
+     "base": 900,
+     "memo": "Badge monitoring"
+    }
+   ],
+   "events": [
+    {
+     "key": "helium_refill",
+     "vendor": "Brightline MRI Services",
+     "memos": [
+      "Cryogen helium refill — WO 7720",
+      "Cryogen helium refill — boil-off top up"
+     ],
+     "cross_memo": "Cryogen helium refill — chiller electrical",
+     "plain": [
+      "the cryogen helium refill",
+      "a cryogen helium refill",
+      "cryogen helium refill costs"
+     ],
+     "oblique": [
+      "the magnet coolant replenishment",
+      "keeping the magnet cold",
+      "liquid gas for the scanner",
+      "a coolant loss after a power outage",
+      "magnet quench recovery",
+      "restoring the superconducting coolant",
+      "noble gas price spike",
+      "a low-level alarm on the magnet",
+      "the scanner's cooling gas",
+      "inert gas restocking",
+      "keeping the scanner from going warm",
+      "coolant losses",
+      "the cold head failure aftermath",
+      "gas delivery to the scanner room",
+      "the magnet nearly losing field",
+      "supercooled gas"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "tube_housing",
+     "vendor": "Corvane Radiologic Parts",
+     "memos": [
+      "Tube housing replacement — PO 80315",
+      "Tube housing replacement — install labor"
+     ],
+     "cross_memo": "Tube housing replacement — loaner unit rental",
+     "plain": [
+      "the tube housing replacement",
+      "tube housing replacement parts",
+      "tube housing replacement costs"
+     ],
+     "oblique": [
+      "the burned-out radiation source in the fluoro machine",
+      "a failed x-ray generator component",
+      "swapping the dead emitter",
+      "getting the intraoperative scanner working again",
+      "a major fluoroscopy breakdown",
+      "the scanner's core part failing",
+      "a costly out-of-warranty fix",
+      "glare and dropout on intraoperative images",
+      "the emitter failure",
+      "a new radiation source",
+      "the fluoroscopy outage",
+      "a big-ticket scanner fix",
+      "restoring live x-ray guidance in theater",
+      "the aging emitter giving out",
+      "a non-covered scanner breakdown",
+      "a hardware failure flagged by the physicist"
+     ],
+     "low": 30000,
+     "high": 60000
+    }
+   ]
+  },
+  {
+   "name": "Medical Gases & Oxygen",
+   "aliases": [
+    "medical gas",
+    "med gas",
+    "oxygen costs",
+    "gas supply",
+    "cylinder gases"
+   ],
+   "narrative": [
+    "Medical gas",
+    "Oxygen costs",
+    "Med gas"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pioneer Medical Gas Supply",
+     "base": 3800,
+     "memo": "Bulk O2 delivery"
+    },
+    {
+     "vendor": "Tristate Cylinder Exchange",
+     "base": 1600,
+     "memo": "Nitrous/CO2 cylinders rent"
+    },
+    {
+     "vendor": "Aero Pipeline Services",
+     "base": 1200,
+     "memo": "Manifold inspection"
+    }
+   ],
+   "events": [
+    {
+     "key": "cryo_vessel",
+     "vendor": "Pioneer Medical Gas Supply",
+     "memos": [
+      "Cryo vessel upgrade — setup",
+      "Cryo vessel upgrade — WO 2218"
+     ],
+     "cross_memo": "Cryo vessel upgrade — concrete pad",
+     "plain": [
+      "the cryo vessel upgrade",
+      "cryo vessel upgrade setup",
+      "the cryo vessel upgrade project"
+     ],
+     "oblique": [
+      "a bigger liquid storage unit",
+      "replacing the outdoor reservoir with a larger one",
+      "added on-site storage capacity",
+      "fewer emergency top-ups going forward",
+      "the larger outdoor reservoir",
+      "capacity expansion for the new ORs",
+      "moving to a larger liquid reservoir",
+      "an on-site storage expansion",
+      "the storage yard project",
+      "growth in case volume needing more capacity",
+      "the reservoir swap",
+      "installing a larger liquid reservoir",
+      "the outdoor storage changeover",
+      "more on-site liquid capacity",
+      "a new outdoor reservoir",
+      "the storage expansion surgeons' volume required"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "zone_valve",
+     "vendor": "Keller Flow Controls",
+     "memos": [
+      "Zone valve retrofit — boxes x4",
+      "Zone valve retrofit — PO 91127"
+     ],
+     "cross_memo": "Zone valve retrofit — after-hours facilities OT",
+     "plain": [
+      "the zone valve retrofit",
+      "zone valve retrofit work",
+      "a zone valve retrofit"
+     ],
+     "oblique": [
+      "shutoff points the fire marshal required",
+      "life-safety code corrections",
+      "new emergency shutoffs in each wing",
+      "bringing the piped system up to code",
+      "an accreditation finding on emergency isolation",
+      "replacing outdated shutoff hardware",
+      "the code-compliance work",
+      "isolation hardware ahead of the survey",
+      "a surveyor citation on shutoff access",
+      "modernizing the shutoff points",
+      "safety isolation improvements",
+      "work the state surveyor flagged",
+      "new isolation panels near the operating rooms",
+      "fire-code remediation",
+      "emergency isolation hardware",
+      "code fixes on the piped oxygen network"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Regulated Waste Disposal",
+   "aliases": [
+    "medical waste",
+    "biohazard disposal",
+    "waste hauling",
+    "sharps disposal",
+    "red bag costs"
+   ],
+   "narrative": [
+    "Medical waste",
+    "Biohazard disposal",
+    "Sharps disposal"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenway Medical Waste",
+     "base": 4200,
+     "memo": "Red bag pickup - weekly"
+    },
+    {
+     "vendor": "Sharpsafe Container Service",
+     "base": 2100,
+     "memo": "Sharps container exchange"
+    },
+    {
+     "vendor": "Evergreen Shredding",
+     "base": 900,
+     "memo": "Secure shred bins"
+    }
+   ],
+   "events": [
+    {
+     "key": "pharma_purge",
+     "vendor": "Greenway Medical Waste",
+     "memos": [
+      "Expired pharmaceutical purge — manifest 0412",
+      "Expired pharmaceutical purge — RCRA handling"
+     ],
+     "cross_memo": "Expired pharmaceutical purge — pharmacy overtime",
+     "plain": [
+      "the expired pharmaceutical purge",
+      "an expired pharmaceutical purge",
+      "expired pharmaceutical purge fees"
+     ],
+     "oblique": [
+      "clearing out outdated drugs",
+      "disposal of stale medications",
+      "the out-of-date medication sweep",
+      "a backlog of unusable meds",
+      "dumping old inventory before the survey",
+      "hazardous drug destruction",
+      "the medication storeroom clear-out",
+      "incinerating outdated drugs",
+      "old anesthetic stock disposal",
+      "a drug-disposal project ahead of inspection",
+      "getting rid of lapsed medication stock",
+      "the drug storeroom tidy-up",
+      "stale controlled-substance destruction",
+      "the meds that aged out",
+      "lapsed inventory destruction",
+      "unused drug stock sent for incineration"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "formalin_spill",
+     "vendor": "Delmar Environmental",
+     "memos": [
+      "Formalin spill cleanup — hazmat crew",
+      "Formalin spill cleanup — WO 5583"
+     ],
+     "cross_memo": "Formalin spill cleanup — replacement flooring",
+     "plain": [
+      "the formalin spill cleanup",
+      "formalin spill cleanup costs",
+      "a formalin spill cleanup"
+     ],
+     "oblique": [
+      "the leak of tissue preservative in pathology prep",
+      "a chemical accident in the specimen room",
+      "emergency remediation after a fixative leak",
+      "the specimen-room incident",
+      "decontaminating the pathology alcove",
+      "a broken jug of tissue fixative",
+      "the chemical exposure incident",
+      "outside responders called after a leak",
+      "the fixative leak",
+      "remediation of a toxic preservative release",
+      "an OSHA-reportable chemical event",
+      "the specimen storage accident",
+      "air testing and decon after the leak",
+      "toxic fume abatement",
+      "a lab chemical mishap",
+      "decontamination after a preservative leak"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Facility Rent & Occupancy",
+   "aliases": [
+    "rent",
+    "occupancy",
+    "lease costs",
+    "building occupancy",
+    "facility lease"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Lease costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crestmark Medical Properties",
+     "base": 30000,
+     "memo": "Base rent - Suite 100"
+    },
+    {
+     "vendor": "Crestmark CAM Services",
+     "base": 4500,
+     "memo": "CAM charges"
+    },
+    {
+     "vendor": "Brightway Janitorial",
+     "base": 3200,
+     "memo": "Nightly cleaning"
+    }
+   ],
+   "events": [
+    {
+     "key": "escalation_recon",
+     "vendor": "Crestmark Medical Properties",
+     "memos": [
+      "Annual escalation reconciliation — prior yr",
+      "Annual escalation reconciliation — opex share"
+     ],
+     "cross_memo": "Annual escalation reconciliation — insurance pass-through",
+     "plain": [
+      "the annual escalation reconciliation",
+      "annual escalation reconciliation billing",
+      "an annual escalation reconciliation"
+     ],
+     "oblique": [
+      "the landlord's year-end catch-up bill",
+      "a lease operating cost true-up",
+      "landlord catch-up billing",
+      "higher facility expenses passed along",
+      "the yearly landlord settlement",
+      "property tax increases billed back",
+      "the lease clause allowing cost recovery",
+      "under-billed facility costs from last year",
+      "a landlord settle-up",
+      "the owner's expense recovery",
+      "retroactive facility expense billing",
+      "landlord recovery of tax hikes",
+      "the yearly lease true-up",
+      "catch-up billing on facility costs",
+      "the lease's cost recovery clause",
+      "back-billed facility expenses"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "pacu_buildout",
+     "vendor": "Oakfield Builders",
+     "memos": [
+      "PACU bay buildout — TI draw 2",
+      "PACU bay buildout — permits"
+     ],
+     "cross_memo": "PACU bay buildout — patient monitors",
+     "plain": [
+      "the PACU bay buildout",
+      "PACU bay buildout costs",
+      "a PACU bay buildout"
+     ],
+     "oblique": [
+      "adding post-anesthesia space",
+      "construction of more post-op stretcher spots",
+      "the tenant improvement work on the wake-up area",
+      "expanding the wake-up area",
+      "new post-surgical slots for higher volume",
+      "the construction project",
+      "contractor progress billing",
+      "remodeling the post-op wing",
+      "renovation to add stretcher space",
+      "the post-anesthesia expansion",
+      "carpentry and electrical for more post-op spots",
+      "added stretcher capacity",
+      "the construction requested by nursing",
+      "the remodel",
+      "framing extra wake-up stations",
+      "space expansion next to the operating rooms"
+     ],
+     "low": 35000,
+     "high": 70000
+    }
+   ]
+  },
+  {
+   "name": "Practice Management Software",
+   "aliases": [
+    "software",
+    "ehr",
+    "practice software",
+    "it subscriptions",
+    "software licenses"
+   ],
+   "narrative": [
+    "Software",
+    "Practice software",
+    "Software licenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Orbis Health Systems",
+     "base": 9500,
+     "memo": "EHR subscription - 42 users"
+    },
+    {
+     "vendor": "ClaimBridge RCM",
+     "base": 3800,
+     "memo": "Clearinghouse fees"
+    },
+    {
+     "vendor": "Northstar IT Managed",
+     "base": 5200,
+     "memo": "Managed IT - helpdesk"
+    }
+   ],
+   "events": [
+    {
+     "key": "pacs_interface",
+     "vendor": "Orbis Health Systems",
+     "memos": [
+      "PACS interface build — SOW 118",
+      "PACS interface build — HL7 mapping"
+     ],
+     "cross_memo": "PACS interface build — imaging vendor fee",
+     "plain": [
+      "the PACS interface build",
+      "PACS interface build work",
+      "a PACS interface build"
+     ],
+     "oblique": [
+      "connecting scans to the chart",
+      "linking radiology images with patient records",
+      "the scanner-to-chart connection",
+      "integration work surgeons asked for",
+      "getting x-rays to show up in the medical record",
+      "one-time integration engineering",
+      "a data feed between radiology and charting",
+      "the radiology integration",
+      "custom integration programming",
+      "image viewing inside the chart",
+      "connecting the x-ray archive",
+      "developer hours for a new data link",
+      "the archive integration project",
+      "plumbing between two clinical applications",
+      "integration setup",
+      "letting surgeons pull films from the record"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "ransomware_forensics",
+     "vendor": "Sentinel Cyber Response",
+     "memos": [
+      "Ransomware incident forensics — retainer",
+      "Ransomware incident forensics — PO 30551"
+     ],
+     "cross_memo": "Ransomware incident forensics — breach notification mailing",
+     "plain": [
+      "the ransomware incident forensics",
+      "ransomware incident forensics work",
+      "ransomware incident forensics costs"
+     ],
+     "oblique": [
+      "the cyberattack investigation",
+      "outside security experts after the attack",
+      "a hack",
+      "recovering from encrypted servers",
+      "the security investigation",
+      "digital investigators brought in by counsel",
+      "cleanup after the network compromise",
+      "the malicious encryption event",
+      "an attack that locked our files",
+      "post-attack investigation",
+      "restoring servers after the hack",
+      "the network compromise",
+      "a hacker extortion attempt",
+      "security investigators",
+      "the extortion attack",
+      "insurer-required security review"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

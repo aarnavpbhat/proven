@@ -1,0 +1,825 @@
+{
+ "slug": "moving-and-relocation-company",
+ "industry": "moving and relocation company",
+ "entities": [
+  "Haulwell Movers",
+  "Brightpath Relocation",
+  "Ironbridge Van Lines",
+  "Marigold Moving & Storage",
+  "Tallgrass Transit Co"
+ ],
+ "accounts": [
+  {
+   "name": "Fleet Fuel and Maintenance",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "truck costs",
+    "vehicle upkeep",
+    "fleet maintenance spend"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Truck costs",
+    "Vehicle upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinnacle Fuel Cards",
+     "base": 24000,
+     "memo": "Diesel fleet card charges - Denver depot"
+    },
+    {
+     "vendor": "Redline Truck Service",
+     "base": 9500,
+     "memo": "Scheduled oil and brake service - 26ft box trucks"
+    },
+    {
+     "vendor": "Summit Tire Supply",
+     "base": 3200,
+     "memo": "Replacement tires - Route 12 trucks"
+    }
+   ],
+   "events": [
+    {
+     "key": "liftgate",
+     "vendor": "Redline Truck Service",
+     "memos": [
+      "Liftgate hydraulic overhaul - Unit 214 Aurora yard",
+      "Liftgate hydraulic overhaul - pump and cylinder replacement"
+     ],
+     "cross_memo": "Liftgate hydraulic overhaul - loaner truck lease",
+     "plain": [
+      "the liftgate hydraulic overhaul",
+      "the liftgate hydraulic work",
+      "the liftgate overhaul on Unit 214"
+     ],
+     "oblique": [
+      "getting the tailgate lifters working again on our tallest trucks",
+      "a rebuilt lifting mechanism",
+      "the repair that kept loaders from carrying pianos by hand",
+      "fixing the platform that raises heavy furniture",
+      "the shop visit after the lifting gear failed inspection",
+      "emergency work on the lifting hardware",
+      "the pump and ram fix",
+      "getting the lift platforms certified for service again",
+      "mechanical work on equipment for heavy items",
+      "a repair that sidelined one of the larger rigs",
+      "rebuilding the loading assist equipment",
+      "the fix on the raising platform",
+      "hydraulics repair on the biggest truck",
+      "the shop bill for the broken lifting system",
+      "restoring the heavy-item loading capability",
+      "work on the apparatus that hoists cargo"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "transmission",
+     "vendor": "Gearbox Heavy Duty Repair",
+     "memos": [
+      "Transmission replacement - Unit 305 Phoenix branch",
+      "Transmission replacement - remanufactured unit and install"
+     ],
+     "cross_memo": "Transmission replacement - tow to Gearbox Heavy Duty bay",
+     "plain": [
+      "the transmission replacement",
+      "the Unit 305 transmission replacement",
+      "the remanufactured transmission install"
+     ],
+     "oblique": [
+      "a drivetrain failure on the long-haul rig",
+      "the new gearset for the truck that wouldn't shift",
+      "the big mechanical failure out west",
+      "swapping out the power transfer components on our oldest tractor",
+      "a breakdown that parked a cross-country rig for two weeks",
+      "the engine-to-wheels hardware that quit on the highway",
+      "a major repair on the truck stranded in the desert",
+      "the costly shop job on the interstate hauler",
+      "gears that stripped under a full load",
+      "the vehicle that needed a rebuilt drive system",
+      "a mechanical failure on a heavily loaded rig",
+      "the repair that kept a tractor off the road",
+      "the powertrain rebuild for the Southwest route",
+      "a haul-away and rebuild for the stranded rig",
+      "the biggest single repair this quarter",
+      "the expensive fix on the old tractor"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Driver and Crew Wages",
+   "aliases": [
+    "crew pay",
+    "labor",
+    "driver wages",
+    "crew labor",
+    "field payroll"
+   ],
+   "narrative": [
+    "Crew pay",
+    "Driver wages",
+    "Field payroll"
+   ],
+   "recurring": [
+    {
+     "vendor": "Paylane Payroll Services",
+     "base": 28000,
+     "memo": "Hourly mover payroll - all branches"
+    },
+    {
+     "vendor": "Roadmark Driver Staffing",
+     "base": 14500,
+     "memo": "Contract CDL drivers - weekly"
+    },
+    {
+     "vendor": "TeamLift Labor Pool",
+     "base": 9800,
+     "memo": "Day laborers - Dallas branch"
+    }
+   ],
+   "events": [
+    {
+     "key": "peakseason",
+     "vendor": "TeamLift Labor Pool",
+     "memos": [
+      "Surge crew bonus - Memorial Day weekend rush",
+      "Surge crew bonus - overtime premiums Dallas"
+     ],
+     "cross_memo": "Surge crew bonus - parking permits for holiday jobs",
+     "plain": [
+      "the surge crew bonus",
+      "the Memorial Day surge crew bonus",
+      "the surge bonus for the weekend rush"
+     ],
+     "oblique": [
+      "extra pay to get people to work the busiest stretch",
+      "incentives that kept the holiday schedule staffed",
+      "the premium we offered to fill the calendar",
+      "money to keep workers from turning down shifts",
+      "the cost of covering every booked job over the long weekend",
+      "sweeteners for the rush",
+      "what we paid to avoid canceling customer moves",
+      "the extra hours our teams logged",
+      "a spike in per-hour rates for a few days",
+      "premium rates during the highest demand days",
+      "the added cost of staffing a packed calendar",
+      "lures for part-timers to take weekend work",
+      "a one-time push to meet customer commitments",
+      "overtime during the busiest days of the year",
+      "the bump in labor rates during peak demand",
+      "paying more to fully staff every truck"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "safetyretrain",
+     "vendor": "Cornerstone Safety Institute",
+     "memos": [
+      "Lifting injury retraining - mandatory crew sessions Atlanta",
+      "Lifting injury retraining - certification fees and instructor"
+     ],
+     "cross_memo": "Lifting injury retraining - back brace kits issued",
+     "plain": [
+      "the lifting injury retraining",
+      "the mandatory lifting retraining",
+      "the lifting injury certification sessions"
+     ],
+     "oblique": [
+      "classes we required after workers got hurt",
+      "the instruction program that followed a rise in claims",
+      "education to cut down on strains",
+      "the compliance course for the whole workforce",
+      "time on the clock spent in a classroom instead of on jobs",
+      "what the insurer asked us to put our people through",
+      "coaching on proper technique",
+      "the safety push after the audit",
+      "paying people to sit through training",
+      "the corrective program mandated by our carrier",
+      "sessions that took crews off the schedule",
+      "the cost of getting everyone recertified",
+      "a response to a spike in workplace claims",
+      "the course that every mover had to complete",
+      "teaching proper handling to field staff",
+      "the program launched to reduce on-the-job injuries"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse Rent and Storage Facilities",
+   "aliases": [
+    "warehouse",
+    "storage facilities",
+    "warehouse rent",
+    "depot leases",
+    "storage space"
+   ],
+   "narrative": [
+    "Warehouse rent",
+    "Storage space",
+    "Depot leases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crestline Industrial Properties",
+     "base": 30000,
+     "memo": "Monthly lease - Denver main warehouse"
+    },
+    {
+     "vendor": "Parkside Self Storage Partners",
+     "base": 6500,
+     "memo": "Overflow storage units - Aurora"
+    },
+    {
+     "vendor": "Metro Power & Gas",
+     "base": 4200,
+     "memo": "Utilities - Denver warehouse"
+    }
+   ],
+   "events": [
+    {
+     "key": "sprinkler",
+     "vendor": "Crestline Industrial Properties",
+     "memos": [
+      "Sprinkler system retrofit - Denver bay 3 and 4",
+      "Sprinkler system retrofit - landlord pass-through charge"
+     ],
+     "cross_memo": "Sprinkler system retrofit - fire marshal reinspection fee",
+     "plain": [
+      "the sprinkler system retrofit",
+      "the bay 3 sprinkler retrofit",
+      "the sprinkler retrofit pass-through"
+     ],
+     "oblique": [
+      "the landlord's bill for new fire suppression piping",
+      "a building upgrade we were billed for",
+      "changes demanded by the local inspector",
+      "the water-based safety installation in the big building",
+      "a required code improvement passed to the tenant",
+      "costs forwarded to us after the owner modernized the property",
+      "protection against blazes in the stockroom",
+      "an upgrade that cleared our occupancy paperwork",
+      "the capital improvement we were invoiced for",
+      "what the owner charged us for a safety overhaul",
+      "a compliance fix on the leased facility",
+      "work in the loading bays that the city required",
+      "the ceiling-mounted safety equipment",
+      "an unplanned charge related to the building's safety rating",
+      "a mandated improvement to the premises",
+      "pipework added overhead in two of the bays"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "flood",
+     "vendor": "DryShield Restoration",
+     "memos": [
+      "Water damage remediation - Phoenix warehouse east wall",
+      "Water damage remediation - dehumidifiers and drywall"
+     ],
+     "cross_memo": "Water damage remediation - customer goods claim credit",
+     "plain": [
+      "the water damage remediation",
+      "the Phoenix water damage remediation",
+      "the water damage cleanup on the east wall"
+     ],
+     "oblique": [
+      "the storm that got into the building",
+      "drying out the facility after the monsoon",
+      "repairs after the roof let rain in",
+      "cleaning up after the soaked stockroom",
+      "a weather event that left our stored inventory wet",
+      "the mess left by heavy rain",
+      "restoration work after a leak",
+      "getting the place habitable again after the downpour",
+      "the cost of a flooded floor",
+      "an emergency crew called in over a weekend",
+      "a once-in-years weather hit on the desert site",
+      "fans and pumps running for days",
+      "rebuilding wallboard that got soaked",
+      "the bill following a roof failure",
+      "the aftermath of the severe thunderstorm",
+      "an unbudgeted cleanup at the Arizona location"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Packing Materials and Supplies",
+   "aliases": [
+    "packing supplies",
+    "boxes and wrap",
+    "materials",
+    "packing materials",
+    "consumables"
+   ],
+   "narrative": [
+    "Packing supplies",
+    "Boxes and wrap",
+    "Consumables"
+   ],
+   "recurring": [
+    {
+     "vendor": "BoxWorks Corrugated",
+     "base": 11500,
+     "memo": "Moving boxes - assorted sizes"
+    },
+    {
+     "vendor": "StretchPro Packaging",
+     "base": 4800,
+     "memo": "Shrink wrap and pads - monthly standing order"
+    },
+    {
+     "vendor": "Tapeline Supply Co",
+     "base": 1900,
+     "memo": "Packing tape and markers"
+    }
+   ],
+   "events": [
+    {
+     "key": "wardrobe",
+     "vendor": "BoxWorks Corrugated",
+     "memos": [
+      "Wardrobe carton bulk order - Hilton corporate relocation",
+      "Wardrobe carton bulk order - hanging bar kits"
+     ],
+     "cross_memo": "Wardrobe carton bulk order - expedited freight Seattle",
+     "plain": [
+      "the wardrobe carton bulk order",
+      "the Hilton wardrobe carton order",
+      "the wardrobe carton hanging bar kits"
+     ],
+     "oblique": [
+      "a huge purchase of tall containers for clothing",
+      "what we stocked up on for the hotel chain's staff transfers",
+      "the inventory build for a big corporate client",
+      "hundreds of hanging-garment containers",
+      "preparation for a large account's employee moves",
+      "a one-time restock of specialized containers",
+      "the volume buy that supported an enterprise contract",
+      "the supplies bought ahead of a multi-week project",
+      "gear to move closets without folding",
+      "a purchase sized for a single client's workforce",
+      "the stock we laid in for the hospitality account",
+      "tall cartons with rails inside",
+      "the bulk purchase tied to a signed contract",
+      "an up-front buy for white-collar relocations",
+      "materials stockpiled for the corporate job",
+      "specialty packaging for a very large customer"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "crating",
+     "vendor": "Meridian Art Crating",
+     "memos": [
+      "Museum crating - Gallery Row fine art custom crates",
+      "Museum crating - climate foam inserts"
+     ],
+     "cross_memo": "Museum crating - insurance rider for fine art",
+     "plain": [
+      "the museum crating",
+      "the Gallery Row custom crates",
+      "the museum crating foam inserts"
+     ],
+     "oblique": [
+      "handmade wooden enclosures for priceless paintings",
+      "packaging for an exhibition's valuables",
+      "bespoke protective cases for delicate works",
+      "the shipping preparation for a cultural institution",
+      "specialist containers built to measure",
+      "protection for irreplaceable pieces headed across the country",
+      "woodworking for one high-value account",
+      "the artisan boxes for a collector's pieces",
+      "custom-built shells for oddly shaped items",
+      "packing for a client with insurance requirements",
+      "one-off protective builds",
+      "fabricating containers instead of using standard stock",
+      "carpentry for sensitive cargo",
+      "purpose-built transit cases",
+      "the premium handling of an unusual commission",
+      "made-to-order enclosures for a gallery client"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Cargo and Liability Insurance",
+   "aliases": [
+    "insurance",
+    "cargo coverage",
+    "liability premiums",
+    "claims and coverage",
+    "risk coverage"
+   ],
+   "narrative": [
+    "Cargo coverage",
+    "Liability premiums",
+    "Risk coverage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Commercial Insurance",
+     "base": 18500,
+     "memo": "Motor cargo premium - monthly installment"
+    },
+    {
+     "vendor": "Bluewater Risk Advisors",
+     "base": 5200,
+     "memo": "General liability premium installment"
+    },
+    {
+     "vendor": "Crown Workers Comp Trust",
+     "base": 12800,
+     "memo": "Workers comp premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "damageclaim",
+     "vendor": "Sentinel Commercial Insurance",
+     "memos": [
+      "Piano damage claim deductible - Ostrander household move",
+      "Piano damage claim deductible - appraiser fee"
+     ],
+     "cross_memo": "Piano damage claim deductible - repair shop invoice",
+     "plain": [
+      "the piano damage claim deductible",
+      "the Ostrander piano claim",
+      "the piano damage appraiser fee"
+     ],
+     "oblique": [
+      "a customer's shattered heirloom",
+      "what we owed out of pocket on a big loss",
+      "the portion of a settlement we absorbed",
+      "a household item broken in transit",
+      "the share of a payout the carrier made us cover",
+      "a costly mishap on a residential job",
+      "a single incident that hit our retention",
+      "a musical instrument that did not survive the trip",
+      "a claim that reached our self-insured limit",
+      "an unfortunate accident in a stairwell",
+      "the first slice of a major payout",
+      "compensating a family for a ruined belonging",
+      "what we wrote the check for before coverage kicked in",
+      "a very pricey breakage",
+      "a customer's complaint that turned into a settlement",
+      "the loss on a treasured item"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "audit",
+     "vendor": "Northgate Premium Auditors",
+     "memos": [
+      "Payroll classification audit - retroactive premium adjustment",
+      "Payroll classification audit - 2023 policy year true-up"
+     ],
+     "cross_memo": "Payroll classification audit - consultant review fee",
+     "plain": [
+      "the payroll classification audit",
+      "the retroactive premium adjustment",
+      "the policy year true-up audit"
+     ],
+     "oblique": [
+      "a bill from the carrier after they reviewed our books",
+      "a catch-up charge for prior coverage",
+      "the carrier saying we had underreported",
+      "an invoice reaching back to last year",
+      "a correction that raised what we owed",
+      "the insurer's reexamination of job categories",
+      "a surprise assessment after the review",
+      "a retroactive charge nobody planned for",
+      "the difference between estimated and actual exposure",
+      "backdated billing from the underwriter",
+      "an adjustment landing months after the fact",
+      "the result of a records inspection",
+      "a charge that reclassified some of our employees",
+      "money owed on a policy that had already ended",
+      "a true-up that exceeded the estimate",
+      "the fallout of a review by the policy provider"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Customer Acquisition and Lead Costs",
+   "aliases": [
+    "marketing",
+    "lead generation",
+    "advertising",
+    "customer acquisition",
+    "lead costs"
+   ],
+   "narrative": [
+    "Lead generation",
+    "Advertising",
+    "Customer acquisition"
+   ],
+   "recurring": [
+    {
+     "vendor": "MoveMatch Leads",
+     "base": 16000,
+     "memo": "Pay-per-lead moving inquiries"
+    },
+    {
+     "vendor": "Searchlight Digital",
+     "base": 8500,
+     "memo": "Paid search campaigns - residential"
+    },
+    {
+     "vendor": "Roadside Media",
+     "base": 3500,
+     "memo": "Truck wrap and billboard rental - I-25 corridor"
+    }
+   ],
+   "events": [
+    {
+     "key": "expo",
+     "vendor": "Roadside Media",
+     "memos": [
+      "Home and Garden Expo booth - Colorado Convention Center",
+      "Home and Garden Expo booth - banner stands and giveaways"
+     ],
+     "cross_memo": "Home and Garden Expo booth - temp staff and parking",
+     "plain": [
+      "the Home and Garden Expo booth",
+      "the Expo booth giveaways",
+      "the Colorado Home and Garden Expo"
+     ],
+     "oblique": [
+      "a weekend trade show presence",
+      "handing out branded items to the public in a big hall",
+      "setting up a stand where homebuyers browse",
+      "an in-person event aimed at new homeowners",
+      "the cost of being seen at a regional fair",
+      "a table at a consumer gathering",
+      "face-to-face outreach at a convention venue",
+      "display materials and freebies for attendees",
+      "our appearance at the annual showcase for house shoppers",
+      "the booth that drew foot traffic",
+      "a physical promotion rather than an online one",
+      "a three-day event where we collected business cards",
+      "space rental at the downtown venue",
+      "the splash at a big public event",
+      "showing up where buyers and sellers gather",
+      "in-person marketing at a large exhibition"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "rebrand",
+     "vendor": "Lumen Creative Studio",
+     "memos": [
+      "Brand refresh - new logo and livery design",
+      "Brand refresh - website relaunch and style guide"
+     ],
+     "cross_memo": "Brand refresh - truck repainting at Aurora yard",
+     "plain": [
+      "the brand refresh",
+      "the new logo and livery design",
+      "the brand refresh style guide"
+     ],
+     "oblique": [
+      "a makeover of how the company looks to the public",
+      "new visual identity work from an outside shop",
+      "the redesign of our look",
+      "updating graphics across every touchpoint",
+      "creative agency fees for a new image",
+      "modernizing our appearance after years",
+      "a fresh visual direction launched this year",
+      "changes to the colors and lettering on our trucks",
+      "the studio's invoice for artwork",
+      "an overhaul of how customers recognize us",
+      "designers hired to reinvent our identity",
+      "the project to modernize our public face",
+      "a one-time creative investment",
+      "redrawing the emblem and typography",
+      "the new look rolled out across the fleet and web",
+      "paying professionals to reshape our image"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Equipment and Tools",
+   "aliases": [
+    "moving equipment",
+    "dollies and tools",
+    "equipment purchases",
+    "gear",
+    "handling equipment"
+   ],
+   "narrative": [
+    "Moving equipment",
+    "Dollies and tools",
+    "Handling equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hauler Gear Supply",
+     "base": 6800,
+     "memo": "Dollies, straps and furniture pads"
+    },
+    {
+     "vendor": "Apex Tool Rental",
+     "base": 2400,
+     "memo": "Hand tool replacements - all branches"
+    }
+   ],
+   "events": [
+    {
+     "key": "stairclimber",
+     "vendor": "Hauler Gear Supply",
+     "memos": [
+      "Stair-climbing hand truck purchase - 12 units Chicago branch",
+      "Stair-climbing hand truck purchase - battery packs and chargers"
+     ],
+     "cross_memo": "Stair-climbing hand truck purchase - operator certification course",
+     "plain": [
+      "the stair-climbing hand truck purchase",
+      "the 12 stair-climbing hand trucks",
+      "the stair-climbing truck battery packs"
+     ],
+     "oblique": [
+      "motorized carts for walk-up apartments",
+      "a dozen machines that haul loads up steps",
+      "gear aimed at high-rise and brownstone jobs",
+      "powered lifting aids for the Midwest crews",
+      "new devices meant to spare workers' backs",
+      "an investment in labor-saving machines",
+      "battery-driven tools for tough access jobs",
+      "a purchase that opened up third-floor walk-up business",
+      "a fleet addition for the Illinois branch",
+      "the new wheeled helpers we bought in bulk",
+      "rolling equipment that tackles staircases",
+      "a capital outlay for urban residential work",
+      "the devices we outfitted a branch with",
+      "a one-time buy of rechargeable carrying gear",
+      "equipment so crews could skip stair carries",
+      "a batch of motorized haulers"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "scanners",
+     "vendor": "Tracklink Systems",
+     "memos": [
+      "Barcode inventory scanners - Atlanta warehouse rollout",
+      "Barcode inventory scanners - label printers and tags"
+     ],
+     "cross_memo": "Barcode inventory scanners - installation labor",
+     "plain": [
+      "the barcode inventory scanners",
+      "the Atlanta scanner rollout",
+      "the barcode label printers and tags"
+     ],
+     "oblique": [
+      "handheld readers that log every item as it moves",
+      "technology to cut down on lost cargo",
+      "gadgets for tracking each customer box",
+      "a modernization of how we count belongings",
+      "devices that tell us where things are in the building",
+      "a one-time hardware push at one site",
+      "the equipment behind our new tracking process",
+      "tools to prove delivery of every piece",
+      "a pilot to eliminate paper checklists",
+      "the hardware that ties shipments to records",
+      "electronics for check-in and check-out",
+      "a technology buy for item-level visibility",
+      "a project intended to reduce missing-item claims",
+      "devices handed to the dock team",
+      "reading guns and their supplies",
+      "the setup of a digital tracking process"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Licensing, Permits and Tolls",
+   "aliases": [
+    "permits",
+    "tolls and fees",
+    "licensing",
+    "regulatory fees",
+    "road fees"
+   ],
+   "narrative": [
+    "Regulatory fees",
+    "Road fees",
+    "Tolls and fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Western Toll Authority",
+     "base": 5800,
+     "memo": "Toll transponder charges - interstate routes"
+    },
+    {
+     "vendor": "DOT Compliance Services",
+     "base": 2900,
+     "memo": "Operating authority and USDOT filings"
+    },
+    {
+     "vendor": "CityPermit Express",
+     "base": 1800,
+     "memo": "Residential parking and curb permits"
+    }
+   ],
+   "events": [
+    {
+     "key": "hazmat",
+     "vendor": "DOT Compliance Services",
+     "memos": [
+      "Hazmat endorsement fees - Group 2 driver certification",
+      "Hazmat endorsement fees - background check batch"
+     ],
+     "cross_memo": "Hazmat endorsement fees - training course tuition",
+     "plain": [
+      "the hazmat endorsement fees",
+      "the hazmat driver certification fees",
+      "the hazmat background check batch"
+     ],
+     "oblique": [
+      "credentials that let drivers carry restricted cargo",
+      "the paperwork to haul regulated goods",
+      "expanded licensing for our driving staff",
+      "a government-mandated qualification round",
+      "screening of a group of employees for sensitive loads",
+      "fees tied to carrying dangerous materials",
+      "new privileges added to commercial licenses",
+      "the cost of letting drivers take specialty jobs",
+      "a regulatory step that opened a new service line",
+      "credentialing of a dozen operators",
+      "a state requirement for certain shipments",
+      "documents needed to move chemicals or lab equipment",
+      "the process of qualifying drivers for risky freight",
+      "official approvals bought for the team",
+      "authorization to transport restricted items",
+      "licensing work done for a laboratory contract"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "fines",
+     "vendor": "Interstate Weight Enforcement",
+     "memos": [
+      "Overweight citation settlement - Kansas scale station",
+      "Overweight citation settlement - reduced penalty and court fee"
+     ],
+     "cross_memo": "Overweight citation settlement - load redistribution labor",
+     "plain": [
+      "the overweight citation settlement",
+      "the Kansas overweight citation",
+      "the overweight penalty and court fee"
+     ],
+     "oblique": [
+      "a penalty after a roadside inspection",
+      "what the state charged for a truck that was too heavy",
+      "an enforcement action out on the plains",
+      "a fine tied to one loaded rig",
+      "the price of a stop at a highway checkpoint",
+      "a trucker's run-in with the scales",
+      "a legal resolution of a roadside ticket",
+      "the court's invoice for a trip gone wrong",
+      "a single incident that landed us a bill from the state",
+      "settling a dispute with highway authorities",
+      "the cost of hauling too much on one axle",
+      "a penalty stemming from a long-haul trip",
+      "money paid to close out a violation",
+      "the result of a heavy load being caught",
+      "a ticket we negotiated down",
+      "a regulatory slap on one interstate run"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

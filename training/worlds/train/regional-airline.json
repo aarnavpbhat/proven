@@ -1,0 +1,805 @@
+{
+ "slug": "regional-airline",
+ "industry": "regional airline",
+ "entities": [
+  "Skylark Regional Air",
+  "Prairie Wing Airlines",
+  "Tidewater Air Connect",
+  "Cascade Hopper Airways",
+  "Ridgeline Commuter Air"
+ ],
+ "accounts": [
+  {
+   "name": "Aircraft Maintenance",
+   "aliases": [
+    "maintenance",
+    "fleet maintenance",
+    "hangar work",
+    "airframe upkeep",
+    "mx spend"
+   ],
+   "narrative": [
+    "Maintenance",
+    "Fleet maintenance",
+    "Hangar work"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Aero Services",
+     "base": 24000,
+     "memo": "Line maintenance — scheduled checks"
+    },
+    {
+     "vendor": "Altus Component Repair",
+     "base": 12500,
+     "memo": "Component repair — rotable pool"
+    },
+    {
+     "vendor": "Granite Tooling Supply",
+     "base": 3200,
+     "memo": "Shop consumables — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "gearswap",
+     "vendor": "Summit Aero Services",
+     "memos": [
+      "Dash 8 gear swap — actuator replacement",
+      "Dash 8 gear swap — hydraulic labor"
+     ],
+     "cross_memo": "Dash 8 gear swap — ferry flight crew",
+     "plain": [
+      "the Dash 8 gear swap",
+      "the gear swap",
+      "the Dash 8 gear swap work"
+     ],
+     "oblique": [
+      "landing hardware that wore out early",
+      "the turboprop that sat grounded for weeks",
+      "replacing parts the manufacturer recalled",
+      "an unplanned shop visit for one tail number",
+      "wheels and struts on the older plane",
+      "a failed inspection finding",
+      "the aircraft pulled from the schedule",
+      "work the mechanics flagged during a walkaround",
+      "a safety directive from regulators",
+      "swapping out worn undercarriage pieces",
+      "an expensive repair on a single airplane",
+      "the long hangar stay",
+      "parts shipped overnight to fix a grounded plane",
+      "unscheduled airframe repairs",
+      "the older turboprop returning to service",
+      "corrective work after a hard landing"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "cabinrefit",
+     "vendor": "Meridian Interiors Group",
+     "memos": [
+      "Cabin refresh program — seat recovering",
+      "Meridian Interiors Group — cabin refresh program, panel refinish"
+     ],
+     "cross_memo": "Cabin refresh program — passenger comms notice",
+     "plain": [
+      "the cabin refresh program",
+      "the cabin refresh",
+      "the cabin refresh program invoices"
+     ],
+     "oblique": [
+      "new upholstery for passengers",
+      "making the interiors look nicer",
+      "a cosmetic upgrade across the fleet",
+      "what the marketing team asked for",
+      "fabric and foam replacements",
+      "brightening the inside of the planes",
+      "seat covers wearing out",
+      "a customer satisfaction initiative",
+      "the interior makeover",
+      "refurbishing where travelers sit",
+      "a look-and-feel project",
+      "improving comfort for flyers",
+      "work done overnight between rotations",
+      "refreshing the aging aircraft",
+      "the sprucing up of older jets",
+      "a plan approved after survey complaints"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Aircraft Fuel",
+   "aliases": [
+    "fuel",
+    "jet fuel",
+    "fuel burn",
+    "avgas and jet-a",
+    "fuel costs"
+   ],
+   "narrative": [
+    "Fuel",
+    "Jet fuel",
+    "Fuel costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Horizon Petroleum Supply",
+     "base": 29000,
+     "memo": "Jet-A uplift — monthly invoice"
+    },
+    {
+     "vendor": "Delta Fuel Logistics",
+     "base": 9500,
+     "memo": "Into-plane fueling fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "hedgeunwind",
+     "vendor": "Horizon Petroleum Supply",
+     "memos": [
+      "Forward contract settlement — hedge unwind",
+      "Forward contract settlement — basis adjustment"
+     ],
+     "cross_memo": "Forward contract settlement — broker commission",
+     "plain": [
+      "the forward contract settlement",
+      "the forward contract hedge unwind",
+      "the hedge unwind settlement"
+     ],
+     "oblique": [
+      "closing out our price protection early",
+      "a bet on prices that went against us",
+      "the financial position we exited",
+      "unwinding what treasury locked in last year",
+      "paying to get out of a commitment",
+      "a market swing that hurt",
+      "the protection we bought and gave up",
+      "a deal the CFO wanted ended",
+      "what we paid to walk away from the arrangement",
+      "prices moving the wrong way",
+      "a treasury decision",
+      "early exit from a price lock",
+      "the cost of ending a long-term pricing deal",
+      "a derivatives wind-down",
+      "settling up on a bet",
+      "what finance negotiated with the supplier"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "tankerdetour",
+     "vendor": "Coastline Bulk Haulers",
+     "memos": [
+      "Tanker truck detour — emergency resupply",
+      "Tanker truck detour — overtime drivers"
+     ],
+     "cross_memo": "Tanker truck detour — airport storage rental",
+     "plain": [
+      "the tanker truck detour",
+      "the emergency tanker resupply",
+      "the tanker detour"
+     ],
+     "oblique": [
+      "a pipeline outage that forced trucking",
+      "getting product to the remote airfield",
+      "storm damage that cut off the usual supply",
+      "a scramble to keep planes flying",
+      "road delivery instead of the normal route",
+      "a shortage at the outstation",
+      "the weekend rush to restock",
+      "contingency supply for a stranded station",
+      "paying extra to avoid cancellations",
+      "what operations demanded when tanks ran low",
+      "a supplier failure at one airport",
+      "rerouted deliveries",
+      "the late-night haul",
+      "keeping a small airport open",
+      "extra miles driven by contractors",
+      "a cutoff in the regular delivery"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Flight Crew Costs",
+   "aliases": [
+    "crew",
+    "crew costs",
+    "pilot pay",
+    "flight crew",
+    "aircrew expense"
+   ],
+   "narrative": [
+    "Crew",
+    "Crew costs",
+    "Pilot pay"
+   ],
+   "recurring": [
+    {
+     "vendor": "Aviator Staffing Partners",
+     "base": 18000,
+     "memo": "Contract first officers — monthly"
+    },
+    {
+     "vendor": "Crewline Per Diem Services",
+     "base": 7800,
+     "memo": "Crew per diem and layover meals"
+    },
+    {
+     "vendor": "Northwind Training Center",
+     "base": 4500,
+     "memo": "Recurrent training — monthly seats"
+    }
+   ],
+   "events": [
+    {
+     "key": "cadetbonus",
+     "vendor": "Aviator Staffing Partners",
+     "memos": [
+      "Cadet retention bonus — first tranche",
+      "Cadet retention bonus — signing true-up"
+     ],
+     "cross_memo": "Cadet retention bonus — payroll tax accrual",
+     "plain": [
+      "the cadet retention bonus",
+      "the cadet bonus tranche",
+      "the cadet retention bonus payout"
+     ],
+     "oblique": [
+      "keeping young pilots from leaving",
+      "a lump payment to staff the majors want",
+      "money to stop poaching",
+      "an incentive negotiated with the union",
+      "paying people to stay put",
+      "the offer made after resignations spiked",
+      "a one-time sweetener",
+      "what HR proposed to fill the seats",
+      "competition for new hires",
+      "a payout that retained the junior ranks",
+      "a response to hiring by bigger carriers",
+      "the loyalty payment",
+      "a cheque handed out to newer aviators",
+      "extra compensation for early-career flyers",
+      "what management approved after exit interviews",
+      "a payment to hold onto the training pipeline"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "stormreposition",
+     "vendor": "Lakeshore Hotel Partners",
+     "memos": [
+      "Blizzard crew stranding — hotel block",
+      "Blizzard crew stranding — meal vouchers"
+     ],
+     "cross_memo": "Blizzard crew stranding — ground transport",
+     "plain": [
+      "the blizzard crew stranding",
+      "the blizzard stranding",
+      "the blizzard hotel block"
+     ],
+     "oblique": [
+      "a winter storm that closed the airport",
+      "staff stuck away from their home base",
+      "rooms booked at the last minute",
+      "cancelled flights leaving employees stranded",
+      "a snowfall that shut things down",
+      "weather that disrupted the whole weekend",
+      "putting people up overnight",
+      "an unexpected extended layover",
+      "the freeze that grounded the network",
+      "shelter for workers when planes could not fly",
+      "bad conditions across the region",
+      "a three-day delay for our staff",
+      "accommodations for stuck employees",
+      "what happened when roads iced over",
+      "a storm response plan",
+      "the scramble to feed and house people"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Airport Fees and Landing Charges",
+   "aliases": [
+    "airport fees",
+    "landing fees",
+    "station costs",
+    "gate charges",
+    "terminal costs"
+   ],
+   "narrative": [
+    "Airport fees",
+    "Landing fees",
+    "Station costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Airport Authority",
+     "base": 21000,
+     "memo": "Landing and parking fees — monthly"
+    },
+    {
+     "vendor": "Regional Terminal Operators",
+     "base": 9200,
+     "memo": "Gate lease — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "rateresetting",
+     "vendor": "Metro Airport Authority",
+     "memos": [
+      "Rates and charges reset — retroactive billing",
+      "Rates and charges reset — runway surcharge"
+     ],
+     "cross_memo": "Rates and charges reset — audit fee",
+     "plain": [
+      "the rates and charges reset",
+      "the retroactive billing reset",
+      "the rates reset"
+     ],
+     "oblique": [
+      "a new pricing schedule imposed on all carriers",
+      "back-billing from the landlord",
+      "a policy change we had no say in",
+      "what the authority decided at its board meeting",
+      "charges applied to past periods",
+      "an adjustment for prior months",
+      "a reassessment that cost us more",
+      "higher tariffs across the board",
+      "a notice we got from the city",
+      "a ruling on what carriers owe",
+      "the true-up for earlier activity",
+      "the airport raising what it charges",
+      "the catch-up payment",
+      "a formula that changed midyear",
+      "what other airlines also faced",
+      "an unfavorable review"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "concourseexpand",
+     "vendor": "Pinnacle Gate Builders",
+     "memos": [
+      "Concourse expansion — tenant improvements",
+      "Concourse expansion — signage install"
+     ],
+     "cross_memo": "Concourse expansion — baggage belt relocation",
+     "plain": [
+      "the concourse expansion",
+      "the concourse expansion project",
+      "the concourse tenant improvements"
+     ],
+     "oblique": [
+      "a larger waiting area for our flights",
+      "building out new space at the hub",
+      "a growth initiative",
+      "making room for added departures",
+      "construction at the busiest terminal",
+      "an upgrade for passenger flow",
+      "work on the building where we operate",
+      "a lease addition",
+      "more gates for our schedule",
+      "a project the landlord required us to fund",
+      "new counters and lounges",
+      "expanding our footprint",
+      "the buildout we signed up for",
+      "improvements to the shared facility",
+      "a facilities investment",
+      "contractors working through the night"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Aircraft Lease and Rotable Costs",
+   "aliases": [
+    "aircraft leases",
+    "lease expense",
+    "tail leases",
+    "equipment rentals",
+    "fleet leasing"
+   ],
+   "narrative": [
+    "Aircraft leases",
+    "Lease expense",
+    "Tail leases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Arcturus Aviation Capital",
+     "base": 30000,
+     "memo": "Aircraft operating lease — monthly rent"
+    },
+    {
+     "vendor": "Keystone Engine Leasing",
+     "base": 14000,
+     "memo": "Engine lease — monthly rent"
+    }
+   ],
+   "events": [
+    {
+     "key": "wetlease",
+     "vendor": "Arcturus Aviation Capital",
+     "memos": [
+      "Interim airframe supply — ACMI wet lease",
+      "Interim airframe supply — crew premium"
+     ],
+     "cross_memo": "Interim airframe supply — insurance rider",
+     "plain": [
+      "the interim airframe supply",
+      "the ACMI wet lease",
+      "the interim airframe wet lease"
+     ],
+     "oblique": [
+      "borrowing a plane with pilots included",
+      "covering a gap in our schedule",
+      "a short-term stopgap",
+      "an aircraft we did not own for a few weeks",
+      "what operations arranged when two jets were down",
+      "renting capacity from another carrier",
+      "emergency capacity",
+      "a stand-in for the grounded fleet",
+      "a temporary substitute",
+      "the loaner arrangement",
+      "keeping routes alive during repairs",
+      "a contract signed in a hurry",
+      "an all-inclusive rental",
+      "a seasonal boost in capacity",
+      "extra seats on short notice",
+      "bridging until deliveries arrived"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "enginereturn",
+     "vendor": "Redwood Engine Inspectors",
+     "memos": [
+      "Engine return conditions — borescope survey",
+      "Engine return conditions — compliance records"
+     ],
+     "cross_memo": "Engine return conditions — shipping crate",
+     "plain": [
+      "the engine return conditions",
+      "the engine return survey",
+      "the engine return compliance"
+     ],
+     "oblique": [
+      "meeting terms of the contract on hand-back",
+      "giving equipment back to its owner",
+      "what the lessor demanded at lease end",
+      "paperwork and inspections before turn-in",
+      "restoring something to its original state",
+      "a checklist from the other party",
+      "proving the unit was in good shape",
+      "a condition we agreed to years ago",
+      "the cost of ending a rental",
+      "an owner's audit",
+      "documentation requests",
+      "what we owed when handing it over",
+      "the inspector's visit",
+      "cleanup before the owner took it back",
+      "the exit requirements",
+      "the close-out of an old agreement"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Passenger Services and Distribution",
+   "aliases": [
+    "passenger services",
+    "distribution costs",
+    "ticketing costs",
+    "booking fees",
+    "customer service spend"
+   ],
+   "narrative": [
+    "Passenger services",
+    "Distribution costs",
+    "Booking fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Farelink Reservations",
+     "base": 15500,
+     "memo": "GDS booking fees — monthly"
+    },
+    {
+     "vendor": "Swiftcard Payment Processing",
+     "base": 11000,
+     "memo": "Card processing fees — monthly"
+    },
+    {
+     "vendor": "Brightline Call Center",
+     "base": 8500,
+     "memo": "Customer care outsourcing — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "irregops",
+     "vendor": "Brightline Call Center",
+     "memos": [
+      "Meltdown recovery — surge staffing",
+      "Meltdown recovery — overflow hotline"
+     ],
+     "cross_memo": "Meltdown recovery — passenger compensation vouchers",
+     "plain": [
+      "the meltdown recovery",
+      "the meltdown surge staffing",
+      "the meltdown recovery effort"
+     ],
+     "oblique": [
+      "a flood of angry travelers calling in",
+      "a bad week for the schedule",
+      "extra hands answering phones",
+      "fallout from a systemwide disruption",
+      "a wave of rebooking requests",
+      "what we paid to handle complaints",
+      "the weekend when nothing flew on time",
+      "help desks working overtime",
+      "an operational breakdown that hit customers",
+      "the fix for long hold times",
+      "staffing up for a crisis",
+      "the surge in inbound contacts",
+      "a service failure that made headlines",
+      "goodwill gestures to unhappy flyers",
+      "a rough stretch for the brand",
+      "reaction to mass cancellations"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "loyaltyrelaunch",
+     "vendor": "Evergreen Digital Studio",
+     "memos": [
+      "Rewards relaunch — app development",
+      "Rewards relaunch — partner onboarding"
+     ],
+     "cross_memo": "Rewards relaunch — mailer printing",
+     "plain": [
+      "the rewards relaunch",
+      "the rewards relaunch app",
+      "the rewards relaunch rollout"
+     ],
+     "oblique": [
+      "a new frequent flyer scheme",
+      "rebuilding how members earn miles",
+      "a customer retention push",
+      "software for repeat travelers",
+      "what marketing launched last quarter",
+      "a program refresh for loyal customers",
+      "partnerships with hotels and cards",
+      "the points overhaul",
+      "a mobile experience for members",
+      "an effort to win back regulars",
+      "incentives for those who fly often",
+      "redesigning perks",
+      "a digital build by an outside studio",
+      "tiers and status changes",
+      "our answer to competitors' programs",
+      "an initiative announced at the town hall"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Ground Handling and Ramp Services",
+   "aliases": [
+    "ground handling",
+    "ramp services",
+    "ground ops",
+    "baggage handling",
+    "turnaround services"
+   ],
+   "narrative": [
+    "Ground handling",
+    "Ramp services",
+    "Baggage handling"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tarmac Ground Partners",
+     "base": 19500,
+     "memo": "Ramp and baggage handling — monthly"
+    },
+    {
+     "vendor": "Clearwater De-Ice Services",
+     "base": 6800,
+     "memo": "Aircraft de-icing — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "beltoutage",
+     "vendor": "Tarmac Ground Partners",
+     "memos": [
+      "Sorter failure — manual baggage sort",
+      "Sorter failure — extra loader shifts"
+     ],
+     "cross_memo": "Sorter failure — lost bag claims",
+     "plain": [
+      "the sorter failure",
+      "the manual baggage sort",
+      "the sorter failure shifts"
+     ],
+     "oblique": [
+      "machinery breaking down at the hub",
+      "bags moved by hand for days",
+      "a mechanical breakdown in the terminal",
+      "people doing what a machine normally does",
+      "luggage that went missing",
+      "a conveyor problem",
+      "workers hired for a stopgap",
+      "equipment that failed at peak travel",
+      "the claims that followed",
+      "a technical fault we could not control",
+      "backlog in the baggage hall",
+      "extra labor to keep flights on time",
+      "a facility malfunction",
+      "repair delays outside our control",
+      "the sorting mess",
+      "the late bags problem"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "newstation",
+     "vendor": "Bluff Harbor Aviation Services",
+     "memos": [
+      "Outstation launch — handling setup",
+      "Outstation launch — equipment mobilization"
+     ],
+     "cross_memo": "Outstation launch — tug lease",
+     "plain": [
+      "the outstation launch",
+      "the outstation handling setup",
+      "the outstation launch mobilization"
+     ],
+     "oblique": [
+      "a new destination we began serving",
+      "starting service in a smaller city",
+      "network growth",
+      "the first flights to a market we added",
+      "opening up another route",
+      "a city we had never flown to",
+      "expansion approved by the board",
+      "getting the basics in place at a new airport",
+      "equipment brought to a distant field",
+      "the start-up of a new base",
+      "a market entry",
+      "what it cost to begin operating somewhere new",
+      "a route announcement",
+      "the debut flights",
+      "setting up shop in another town",
+      "a build-out for added service"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Regulatory Compliance",
+   "aliases": [
+    "insurance",
+    "aviation insurance",
+    "compliance costs",
+    "regulatory spend",
+    "safety and compliance"
+   ],
+   "narrative": [
+    "Insurance",
+    "Compliance costs",
+    "Regulatory spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Aviation Underwriters",
+     "base": 16000,
+     "memo": "Hull and liability premium — monthly"
+    },
+    {
+     "vendor": "Compass Safety Consulting",
+     "base": 5200,
+     "memo": "Safety management system support"
+    }
+   ],
+   "events": [
+    {
+     "key": "auditfinding",
+     "vendor": "Compass Safety Consulting",
+     "memos": [
+      "Certificate audit — corrective action plan",
+      "Certificate audit — records remediation"
+     ],
+     "cross_memo": "Certificate audit — legal review",
+     "plain": [
+      "the certificate audit",
+      "the certificate audit corrective plan",
+      "the certificate audit remediation"
+     ],
+     "oblique": [
+      "an inspector's visit that found gaps",
+      "fixing what the government flagged",
+      "paperwork we had to redo",
+      "a letter from the authorities",
+      "something we were told to correct",
+      "the examination of our operating license",
+      "a deadline set by the agency",
+      "work to avoid penalties",
+      "a finding that required a response",
+      "outside help to satisfy an examiner",
+      "the follow-up to a review",
+      "tightening procedures after a citation",
+      "closing out the findings",
+      "lawyers and advisors for a probe",
+      "an official review that did not go well",
+      "an unexpected demand from oversight"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "claimsurcharge",
+     "vendor": "Pacific Risk Brokers",
+     "memos": [
+      "Loss history surcharge — premium adjustment",
+      "Loss history surcharge — broker fee"
+     ],
+     "cross_memo": "Loss history surcharge — deductible reimbursement",
+     "plain": [
+      "the loss history surcharge",
+      "the loss history premium adjustment",
+      "the loss history surcharge fee"
+     ],
+     "oblique": [
+      "higher pricing after an incident",
+      "what the carrier charged after a bird strike",
+      "a penalty for past claims",
+      "an increase at renewal",
+      "a rate hike we could not avoid",
+      "the cost of a prior accident",
+      "a mark against our record",
+      "underwriters reacting to events",
+      "extra premium on our policy",
+      "a notice from the insurer",
+      "a renewal that came in high",
+      "a premium for claims experience",
+      "a negotiated outcome with the broker",
+      "an expense that followed a damaged wing",
+      "the unfavorable renewal quote",
+      "what the market demanded of us"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,733 @@
+{
+ "slug": "online-fashion-retailer",
+ "industry": "online fashion retailer",
+ "entities": [
+  "Threadline Commerce Inc.",
+  "Velvet Hanger Co.",
+  "Northloom Apparel Online",
+  "Saffron & Seam Retail",
+  "Driftwood Denim Direct"
+ ],
+ "accounts": [
+  {
+   "name": "Outbound Shipping & Postage",
+   "aliases": [
+    "outbound shipping",
+    "postage",
+    "parcel costs",
+    "shipping spend",
+    "carrier fees"
+   ],
+   "narrative": [
+    "Outbound shipping",
+    "Parcel costs",
+    "Carrier fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "SwiftParcel Logistics",
+     "base": 28500,
+     "memo": "Ground parcel invoice wk batch"
+    },
+    {
+     "vendor": "Meridian Postal Services",
+     "base": 12400,
+     "memo": "Lightweight mail class postage"
+    },
+    {
+     "vendor": "CityDash Couriers",
+     "base": 3800,
+     "memo": "Same-day metro delivery"
+    }
+   ],
+   "events": [
+    {
+     "key": "expedited",
+     "vendor": "SwiftParcel Logistics",
+     "memos": [
+      "Expedited air upgrade — holiday guarantee PO 44712",
+      "Expedited air upgrade — surcharge overage"
+     ],
+     "cross_memo": "Expedited air upgrade — packaging reinforcement",
+     "plain": [
+      "the expedited air upgrade",
+      "expedited air upgrade charges",
+      "the holiday expedited air upgrade"
+     ],
+     "oblique": [
+      "promising delivery before the gift deadline",
+      "paying extra to move parcels by plane",
+      "the rush we offered shoppers",
+      "faster transit for late orders",
+      "priority handling during peak weeks",
+      "an upgraded service tier for guaranteed arrival",
+      "the extra we paid to beat the cutoff",
+      "speedier delivery promises",
+      "special treatment of time-sensitive orders",
+      "paying to move boxes overnight",
+      "last-minute urgency on gift orders",
+      "the premium for faster arrival",
+      "a guarantee to customers about arrival dates",
+      "overnight movement of seasonal sales",
+      "accelerating delivery for the busiest stretch",
+      "shipping upgrades demanded by marketing"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "dimweight",
+     "vendor": "Harborline Freight Audit",
+     "memos": [
+      "Dimweight reclassification — oversize audit INV 9087",
+      "Dimweight reclassification — retroactive adjustment"
+     ],
+     "cross_memo": "Dimweight reclassification — carton redesign",
+     "plain": [
+      "the dimweight reclassification",
+      "dimweight reclassification fees",
+      "the oversize dimweight reclassification"
+     ],
+     "oblique": [
+      "the carrier changing how it measures box size",
+      "bills for packages deemed too bulky",
+      "a retroactive recalculation of parcel dimensions",
+      "paying more for air inside boxes",
+      "an audit that found our cartons oversized",
+      "carrier rules on volume versus weight",
+      "correcting how bulky parcels were priced",
+      "a billing true-up from last quarter",
+      "penalties for large empty space in packages",
+      "a dispute over how big our boxes were",
+      "the carrier remeasuring our cartons",
+      "new size-based pricing applied backward",
+      "catching up on undercharged packages",
+      "an after-the-fact invoice for box dimensions",
+      "fees tied to cube rather than mass",
+      "a review that exposed packaging inefficiency"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Returns Processing",
+   "aliases": [
+    "returns processing",
+    "returns handling",
+    "reverse logistics",
+    "returns costs",
+    "return labor"
+   ],
+   "narrative": [
+    "Returns processing",
+    "Reverse logistics",
+    "Return labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "ReLoop Fulfillment Partners",
+     "base": 24000,
+     "memo": "Inbound return inspection labor"
+    },
+    {
+     "vendor": "PrepaidLabel Network",
+     "base": 9500,
+     "memo": "Prepaid return label fees"
+    },
+    {
+     "vendor": "Garment Refresh Services",
+     "base": 6200,
+     "memo": "Steam and repackage returned units"
+    }
+   ],
+   "events": [
+    {
+     "key": "bracketing",
+     "vendor": "ReLoop Fulfillment Partners",
+     "memos": [
+      "Bracketing wave cleanup — overtime WO 3318",
+      "Bracketing wave cleanup — temp crew"
+     ],
+     "cross_memo": "Bracketing wave cleanup — extra pallet storage",
+     "plain": [
+      "the bracketing wave cleanup",
+      "bracketing wave cleanup labor",
+      "the bracketing wave cleanup crew"
+     ],
+     "oblique": [
+      "shoppers ordering several sizes and sending most back",
+      "the flood of multi-size sendbacks",
+      "an unusual pile of parcels coming home",
+      "staff working weekends on the backlog",
+      "a spike in customers keeping only one item",
+      "processing a mountain of unwanted sizes",
+      "the extra hands brought in for the surge",
+      "the mess after a viral sizing promotion",
+      "seasonal volume of unwanted merchandise",
+      "a backlog that outran the regular team",
+      "customers hedging on fit",
+      "clearing a queue of undone work",
+      "overtime to restock the pile",
+      "a rush of unopened and tried-on goods",
+      "handling the surplus that came back at once",
+      "workers hired short-term for the glut"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "photoremed",
+     "vendor": "Lumen Quality Imaging",
+     "memos": [
+      "Photo remediation project — defect documentation INV 5521",
+      "Photo remediation project — claims evidence"
+     ],
+     "cross_memo": "Photo remediation project — supplier chargeback filing",
+     "plain": [
+      "the photo remediation project",
+      "photo remediation project costs",
+      "the photo remediation project invoices"
+     ],
+     "oblique": [
+      "proving which goods arrived damaged",
+      "building evidence for refund disputes",
+      "documenting flaws on sent-back merchandise",
+      "a visual record to win claims against makers",
+      "pictures showing what was wrong with items",
+      "the paper trail we built for disputes",
+      "gathering proof of faulty stitching",
+      "pursuing credits from factories",
+      "recording why shoppers rejected items",
+      "support for chargebacks to manufacturers",
+      "an effort to recover money on bad lots",
+      "showing the real condition of returns",
+      "imagery to back up our complaints",
+      "a campaign to reclaim cost of defective stock",
+      "visual proof requested by suppliers",
+      "a quality investigation with a camera crew"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Influencer & Affiliate Marketing",
+   "aliases": [
+    "influencer spend",
+    "affiliate marketing",
+    "creator payouts",
+    "influencer costs",
+    "affiliate commissions"
+   ],
+   "narrative": [
+    "Influencer spend",
+    "Creator payouts",
+    "Affiliate commissions"
+   ],
+   "recurring": [
+    {
+     "vendor": "CreatorBridge Agency",
+     "base": 22000,
+     "memo": "Monthly creator retainer fees"
+    },
+    {
+     "vendor": "LinkTrail Affiliates",
+     "base": 15500,
+     "memo": "Affiliate commission settlement"
+    },
+    {
+     "vendor": "Gifted Closet Seeding",
+     "base": 4800,
+     "memo": "Product seeding shipments to creators"
+    }
+   ],
+   "events": [
+    {
+     "key": "capsule",
+     "vendor": "CreatorBridge Agency",
+     "memos": [
+      "Capsule drop collaboration — talent fee SOW 227",
+      "Capsule drop collaboration — usage rights"
+     ],
+     "cross_memo": "Capsule drop collaboration — sample production",
+     "plain": [
+      "the capsule drop collaboration",
+      "capsule drop collaboration fees",
+      "the capsule drop collaboration payments"
+     ],
+     "oblique": [
+      "a limited line designed with a famous face",
+      "teaming up with a celebrity on exclusive pieces",
+      "the partnership that launched a special collection",
+      "paying a star for the right to use their image",
+      "a one-time tie-in with a social personality",
+      "co-branded merchandise rollout",
+      "buying a big name's endorsement",
+      "the headline partnership of the quarter",
+      "licensing someone's likeness for ads",
+      "a high-profile joint launch",
+      "fees owed to a personality for exclusive designs",
+      "the marquee creator deal",
+      "a celebrity-backed product release",
+      "the talent contract behind our biggest campaign",
+      "guest designer arrangement",
+      "a premium endorsement agreement"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "tiktokshop",
+     "vendor": "Pulsewave Social Studio",
+     "memos": [
+      "Livestream shopping pilot — host booking PO 6603",
+      "Livestream shopping pilot — studio rental"
+     ],
+     "cross_memo": "Livestream shopping pilot — ad boosting",
+     "plain": [
+      "the livestream shopping pilot",
+      "livestream shopping pilot fees",
+      "the livestream shopping pilot invoices"
+     ],
+     "oblique": [
+      "selling clothes on camera in real time",
+      "an experiment with broadcast-style commerce",
+      "hosts presenting outfits to a live audience",
+      "testing a new way to reach younger buyers",
+      "the trial of watch-and-buy events",
+      "a studio set built for on-air selling",
+      "paid presenters hawking new arrivals",
+      "trying out interactive video sales",
+      "an early bet on streamed retail",
+      "the broadcast test our growth team asked for",
+      "real-time selling to a chat audience",
+      "a pilot channel that might scale",
+      "production costs for on-screen demos",
+      "scheduled shows promoting the new line",
+      "experimenting with entertainment-led sales",
+      "a pop-up video program"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Photography & Content Production",
+   "aliases": [
+    "photo production",
+    "content production",
+    "studio shoots",
+    "creative production",
+    "lookbook costs"
+   ],
+   "narrative": [
+    "Photo production",
+    "Content production",
+    "Studio shoots"
+   ],
+   "recurring": [
+    {
+     "vendor": "Apex Studio Rentals",
+     "base": 13500,
+     "memo": "Studio day-rate rental"
+    },
+    {
+     "vendor": "Model Roster Collective",
+     "base": 18000,
+     "memo": "Model talent booking fees"
+    },
+    {
+     "vendor": "PixelPolish Retouching",
+     "base": 7200,
+     "memo": "Image retouching batch"
+    }
+   ],
+   "events": [
+    {
+     "key": "locationshoot",
+     "vendor": "Model Roster Collective",
+     "memos": [
+      "Lisbon coastal campaign — travel buyout WO 889",
+      "Lisbon coastal campaign — talent per diem"
+     ],
+     "cross_memo": "Lisbon coastal campaign — permits and logistics",
+     "plain": [
+      "the Lisbon coastal campaign",
+      "Lisbon coastal campaign talent costs",
+      "the Lisbon coastal campaign trip"
+     ],
+     "oblique": [
+      "taking the crew abroad for the summer collection",
+      "a shoot far from our usual set",
+      "filming against a seaside backdrop overseas",
+      "flights and lodging for the creative team",
+      "the destination photography trip",
+      "working outdoors in another country",
+      "a scenic production the brand director wanted",
+      "a faraway setting for the season launch",
+      "a sunny overseas production",
+      "moving the whole production team across the ocean",
+      "the big outdoor campaign shoot",
+      "travel-heavy photography for the new line",
+      "a location choice that raised daily costs",
+      "a trip that replaced our usual indoor set",
+      "a sprawling shoot at a picturesque site",
+      "the glamorous overseas assignment"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "nftvideo",
+     "vendor": "Northbeam Motion Works",
+     "memos": [
+      "Brand film production — director fee INV 7712",
+      "Brand film production — post and color"
+     ],
+     "cross_memo": "Brand film production — licensed score",
+     "plain": [
+      "the brand film production",
+      "brand film production invoices",
+      "the brand film production work"
+     ],
+     "oblique": [
+      "a cinematic piece for the website homepage",
+      "the short movie we commissioned",
+      "moving-image storytelling about our label",
+      "a polished video for the fall launch",
+      "a hired director producing a narrative piece",
+      "high-end motion content for broadcast",
+      "a mini-documentary about our founders",
+      "the showpiece video marketing wanted",
+      "filming a story rather than stills",
+      "editing and grading of a long-form video",
+      "a splashy anniversary video",
+      "a production with actors and a crew",
+      "a flagship moving picture",
+      "video content that outclassed our usual output",
+      "an ambitious piece of film storytelling",
+      "the video centerpiece of the season"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Payment Processing Fees",
+   "aliases": [
+    "payment fees",
+    "card processing",
+    "merchant fees",
+    "processing costs",
+    "payment processing"
+   ],
+   "narrative": [
+    "Payment fees",
+    "Card processing",
+    "Merchant fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "ClearTender Payments",
+     "base": 30000,
+     "memo": "Card acquiring fees"
+    },
+    {
+     "vendor": "PayLater Partners",
+     "base": 14500,
+     "memo": "Buy-now-pay-later merchant discount"
+    },
+    {
+     "vendor": "WalletLink Gateway",
+     "base": 5600,
+     "memo": "Digital wallet transaction fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "chargeback",
+     "vendor": "ClearTender Payments",
+     "memos": [
+      "Dispute surge penalty — fraud ring batch REF 31-A",
+      "Dispute surge penalty — network assessment"
+     ],
+     "cross_memo": "Dispute surge penalty — investigator retainer",
+     "plain": [
+      "the dispute surge penalty",
+      "dispute surge penalty assessments",
+      "the dispute surge penalty bills"
+     ],
+     "oblique": [
+      "a wave of stolen-card orders",
+      "fraudsters hitting us with fake purchases",
+      "fines for too many reversed transactions",
+      "criminals using bogus identities on our checkout",
+      "penalties from the card networks for our loss rate",
+      "an organized scam against our storefront",
+      "shoppers disputing charges they did not make",
+      "a ring that exploited our promo codes",
+      "the cost of crooks gaming our site",
+      "consequences of weak screening",
+      "reversals piling up past the allowed threshold",
+      "an attack that slipped past our filters",
+      "network discipline for excessive reversals",
+      "illicit purchases we later had to refund",
+      "a fraud episode that triggered sanctions",
+      "bad actors who abused free-shipping offers"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "fxconversion",
+     "vendor": "Tidewater Currency Desk",
+     "memos": [
+      "Multicurrency launch — conversion spread PO 9204",
+      "Multicurrency launch — setup onboarding"
+     ],
+     "cross_memo": "Multicurrency launch — localized checkout build",
+     "plain": [
+      "the multicurrency launch",
+      "multicurrency launch fees",
+      "the multicurrency launch costs"
+     ],
+     "oblique": [
+      "letting overseas shoppers pay in their own money",
+      "opening the store to foreign customers",
+      "spreads on exchange when selling abroad",
+      "a new market entry across the Atlantic",
+      "pricing in euros and pounds for the first time",
+      "supporting buyers who live elsewhere",
+      "the onboarding of international sales",
+      "an expansion that needed local pricing",
+      "charges for translating payments into other denominations",
+      "a project to reach shoppers outside the country",
+      "the rollout to non-domestic customers",
+      "global checkout capability",
+      "the fee for switching on worldwide selling",
+      "a decision to sell beyond our borders",
+      "cross-border commerce going live",
+      "exchange costs from our first abroad promotion"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse & Fulfillment Operations",
+   "aliases": [
+    "warehouse costs",
+    "fulfillment operations",
+    "dc operations",
+    "pick and pack",
+    "warehouse spend"
+   ],
+   "narrative": [
+    "Warehouse costs",
+    "Fulfillment operations",
+    "Pick and pack"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightstone Industrial Properties",
+     "base": 29000,
+     "memo": "Distribution center lease"
+    },
+    {
+     "vendor": "FlexStaff Labor Solutions",
+     "base": 26500,
+     "memo": "Temp pickers and packers"
+    },
+    {
+     "vendor": "PolyPack Supply",
+     "base": 8900,
+     "memo": "Mailers poly bags and tissue"
+    },
+    {
+     "vendor": "Volt Utilities",
+     "base": 4300,
+     "memo": "DC electricity and HVAC"
+    }
+   ],
+   "events": [
+    {
+     "key": "slotting",
+     "vendor": "FlexStaff Labor Solutions",
+     "memos": [
+      "Rebin relocation sprint — weekend crew WO 5150",
+      "Rebin relocation sprint — forklift lease"
+     ],
+     "cross_memo": "Rebin relocation sprint — rack hardware",
+     "plain": [
+      "the rebin relocation sprint",
+      "rebin relocation sprint labor",
+      "the rebin relocation sprint crew"
+     ],
+     "oblique": [
+      "reorganizing where inventory sits on the shelves",
+      "moving stock closer to the packing stations",
+      "a weekend project to rearrange the floor",
+      "rethinking the layout so pickers walk less",
+      "shifting thousands of items to new locations",
+      "a reshuffle ahead of peak season",
+      "the effort to speed up order assembly",
+      "extra hands for a one-time warehouse shuffle",
+      "changing the map of where products live",
+      "relocating bestsellers near the front",
+      "a layout overhaul that paused normal work",
+      "bringing in workers for the big move",
+      "a spatial reset of the building",
+      "rearranging merchandise by sales velocity",
+      "the operations team's reorganization",
+      "an internal move of goods across the facility"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "sortrobot",
+     "vendor": "Cobalt Autonomy Systems",
+     "memos": [
+      "Autonomous sorter trial — robot lease PO 7741",
+      "Autonomous sorter trial — integration engineering"
+     ],
+     "cross_memo": "Autonomous sorter trial — conveyor retrofit",
+     "plain": [
+      "the autonomous sorter trial",
+      "autonomous sorter trial charges",
+      "the autonomous sorter trial invoices"
+     ],
+     "oblique": [
+      "testing machines that route parcels without people",
+      "a pilot of mechanized order handling",
+      "trying out self-driving carts in the building",
+      "an experiment with automation on the floor",
+      "equipment rented to evaluate labor savings",
+      "a robotics proof of concept",
+      "paying engineers to wire new machinery into our systems",
+      "evaluating whether machines can replace manual sorting",
+      "a short-term trial of robotic helpers",
+      "the technology bet from the operations chief",
+      "rented hardware that scurries between aisles",
+      "modifying belts so devices can navigate",
+      "a test of futuristic equipment",
+      "our first dip into warehouse robotics",
+      "an investigation into labor-free handling",
+      "the modernization pilot"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Seasonal Inventory Markdown Support",
+   "aliases": [
+    "markdown support",
+    "clearance costs",
+    "liquidation expense",
+    "end of season clearance",
+    "overstock handling"
+   ],
+   "narrative": [
+    "Markdown support",
+    "Clearance costs",
+    "Liquidation expense"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironclad Storage Solutions",
+     "base": 11000,
+     "memo": "Overflow inventory storage"
+    },
+    {
+     "vendor": "Remnant Wholesale Buyers",
+     "base": 7400,
+     "memo": "Surplus lot handling fees"
+    },
+    {
+     "vendor": "SignFlash Pricing Labels",
+     "base": 2100,
+     "memo": "Relabeling and price tickets"
+    }
+   ],
+   "events": [
+    {
+     "key": "outlet",
+     "vendor": "Remnant Wholesale Buyers",
+     "memos": [
+      "Warehouse sale popup — event staffing PO 6120",
+      "Warehouse sale popup — venue rental"
+     ],
+     "cross_memo": "Warehouse sale popup — security and signage",
+     "plain": [
+      "the warehouse sale popup",
+      "warehouse sale popup staffing",
+      "the warehouse sale popup venue"
+     ],
+     "oblique": [
+      "a temporary in-person event to move leftover stock",
+      "opening our doors to local bargain hunters",
+      "a one-weekend physical sales day",
+      "clearing last year's goods face to face",
+      "staffing a short-lived shop",
+      "an in-person blowout for surplus items",
+      "renting a hall to sell excess pieces",
+      "our first live event with real customers",
+      "a clearance gathering open to the public",
+      "turning unsold seasonal goods into a crowd draw",
+      "a brick-and-mortar experiment lasting days",
+      "selling directly to the neighborhood",
+      "the weekend we sold overstock in person",
+      "a promotional occasion for deep discounts",
+      "crowd management and cashiers hired for the occasion",
+      "an offline event for stale inventory"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "writeoff",
+     "vendor": "Pinecrest Appraisal Group",
+     "memos": [
+      "Aged stock audit — valuation review INV 2290",
+      "Aged stock audit — lot disposal certificates"
+     ],
+     "cross_memo": "Aged stock audit — donation processing",
+     "plain": [
+      "the aged stock audit",
+      "aged stock audit fees",
+      "the aged stock audit report"
+     ],
+     "oblique": [
+      "an outside review of what unsold goods were worth",
+      "independent appraisers pricing our dead inventory",
+      "checking whether we overvalued old merchandise",
+      "a year-end look at items nobody wanted",
+      "paperwork for getting rid of unsellable pieces",
+      "finance asking an outsider to bless the reserve",
+      "documentation for charity handoffs",
+      "sizing how much merchandise was effectively worthless",
+      "an examination demanded by lenders",
+      "valuing what sat in the back for too long",
+      "assessments backing a larger reserve",
+      "the third-party opinion on stale goods",
+      "verifying quantities before disposal",
+      "a formal count of items past their prime",
+      "a review that supported the inventory writedown",
+      "the controller's request for expert pricing"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

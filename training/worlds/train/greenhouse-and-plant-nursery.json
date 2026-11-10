@@ -1,0 +1,728 @@
+{
+ "slug": "greenhouse-and-plant-nursery",
+ "industry": "greenhouse and plant nursery",
+ "entities": [
+  "Fernhollow Growers LLC",
+  "Brightleaf Nursery Co",
+  "Marrow Creek Greenhouses",
+  "Tallgrass Plant Farms",
+  "Verdant Bay Propagation"
+ ],
+ "accounts": [
+  {
+   "name": "Growing Media and Substrates",
+   "aliases": [
+    "growing media",
+    "potting mix",
+    "substrate costs",
+    "soil and media",
+    "media purchases"
+   ],
+   "narrative": [
+    "Growing media",
+    "Potting mix",
+    "Substrate costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Peatland Supply Co",
+     "base": 14200,
+     "memo": "Peat moss bales monthly delivery"
+    },
+    {
+     "vendor": "Perlite Direct",
+     "base": 5600,
+     "memo": "Perlite and vermiculite blend"
+    },
+    {
+     "vendor": "Coir Traders Inc",
+     "base": 3900,
+     "memo": "Coconut coir bricks"
+    }
+   ],
+   "events": [
+    {
+     "key": "bark_shortage",
+     "vendor": "Peatland Supply Co",
+     "memos": [
+      "Pine bark fines rush order — spot market premium",
+      "Pine bark fines rush order — expedited freight"
+     ],
+     "cross_memo": "Pine bark fines rush order — temporary storage tarp",
+     "plain": [
+      "the pine bark fines rush order",
+      "the pine bark rush purchase",
+      "the bark fines premium order"
+     ],
+     "oblique": [
+      "scrambling for an ingredient when our usual source ran dry",
+      "the emergency buy at inflated rates",
+      "a supplier gap that forced us onto the open market",
+      "the last-minute sourcing scramble",
+      "paying up to keep the potting lines running",
+      "a shortfall in a key raw input",
+      "what we paid to avoid a production stoppage",
+      "the stopgap purchase",
+      "the premium we absorbed for fast delivery",
+      "an unplanned buy from a new source",
+      "covering a gap in our blending inputs",
+      "the rush to keep filling pots",
+      "an input we could not get through normal channels",
+      "the surcharge on short-notice supply",
+      "a spot purchase at above-contract pricing",
+      "securing material we ran out of early"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "mycorrhizal",
+     "vendor": "Rootzone Biologicals",
+     "memos": [
+      "Mycorrhizal inoculant trial — shrub block",
+      "Mycorrhizal inoculant trial — application rig rental"
+     ],
+     "cross_memo": "Mycorrhizal inoculant trial — lab tissue analysis",
+     "plain": [
+      "the mycorrhizal inoculant trial",
+      "the inoculant trial",
+      "the mycorrhizal trial"
+     ],
+     "oblique": [
+      "an experiment to boost root establishment",
+      "the pilot on a beneficial fungus product",
+      "testing whether a biological additive cuts losses",
+      "a small-scale test requested by the head grower",
+      "the side-by-side comparison on one block of stock",
+      "a new product evaluation for plant vigor",
+      "trying something to improve survival after transplant",
+      "the agronomy team's experiment",
+      "an R&D style test on a single section",
+      "a pilot meant to lower replacement rates",
+      "evaluating a possible change in our growing method",
+      "the trial we ran on a subset of plants",
+      "a one-time test of an unproven input",
+      "what we spent to see if the new approach worked",
+      "a proof of concept run in the field",
+      "the evaluation of a soil-health product"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Plant Stock and Liners",
+   "aliases": [
+    "plant stock",
+    "liners",
+    "young plants",
+    "plugs and liners",
+    "stock purchases"
+   ],
+   "narrative": [
+    "Plant stock",
+    "Liners",
+    "Young plants"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sunrise Propagators",
+     "base": 22000,
+     "memo": "Perennial plug flats"
+    },
+    {
+     "vendor": "Lakeshore Liners",
+     "base": 16500,
+     "memo": "Woody ornamental liners"
+    },
+    {
+     "vendor": "Pinnacle Seed House",
+     "base": 4800,
+     "memo": "Annual seed packets"
+    }
+   ],
+   "events": [
+    {
+     "key": "hydrangea",
+     "vendor": "Sunrise Propagators",
+     "memos": [
+      "Hydrangea paniculata crash order — replacement lot",
+      "Hydrangea paniculata crash order — air freight"
+     ],
+     "cross_memo": "Hydrangea paniculata crash order — cold room rental",
+     "plain": [
+      "the hydrangea paniculata crash order",
+      "the hydrangea crash order",
+      "the paniculata replacement lot"
+     ],
+     "oblique": [
+      "restocking a bestseller after a wipeout",
+      "the second purchase to cover customer demand",
+      "replacing a batch lost to bad weather",
+      "a flagship item nearly selling out",
+      "the scramble to fill spring commitments",
+      "a repeat buy of our top shrub",
+      "making up a shortfall before the retail rush",
+      "the lost crop we had to rebuy",
+      "covering a big contract with a late order",
+      "a stock gap discovered in the middle of the season",
+      "the emergency restock for the garden centers",
+      "buying back inventory we should have grown",
+      "what it cost to rescue a key product line",
+      "the unplanned purchase after a failed batch",
+      "filling holes in the availability list",
+      "a late addition to our buying plan"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "orchid",
+     "vendor": "Tropica Tissue Labs",
+     "memos": [
+      "Phalaenopsis tissue culture start — deflasking batch",
+      "Phalaenopsis tissue culture start — sterile media kits"
+     ],
+     "cross_memo": "Phalaenopsis tissue culture start — humidity dome supplies",
+     "plain": [
+      "the phalaenopsis tissue culture start",
+      "the phalaenopsis culture batch",
+      "the tissue culture deflasking"
+     ],
+     "oblique": [
+      "our first foray into a high-margin houseplant",
+      "a new product line the owner wanted",
+      "breaking into the indoor flowering market",
+      "a bet on a premium category",
+      "the expansion into something we never grew before",
+      "a long-lead item that will pay off next year",
+      "the startup of a specialty crop",
+      "what we invested to diversify the catalog",
+      "a delicate crop begun from the lab stage",
+      "getting a high-end offering off the ground",
+      "buying in the earliest stage of a slow crop",
+      "the initiative from the sales team for upscale customers",
+      "an experiment in a more profitable segment",
+      "the beginning of a multi-year growing cycle",
+      "a stretch into a more technical crop",
+      "the up-front cost of a new category"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Greenhouse Utilities and Heating",
+   "aliases": [
+    "greenhouse heating",
+    "utilities",
+    "gas and electric",
+    "energy costs",
+    "heating fuel"
+   ],
+   "narrative": [
+    "Greenhouse heating",
+    "Energy costs",
+    "Utilities"
+   ],
+   "recurring": [
+    {
+     "vendor": "Prairie Gas and Power",
+     "base": 28000,
+     "memo": "Natural gas monthly boiler usage"
+    },
+    {
+     "vendor": "County Electric Co-op",
+     "base": 11500,
+     "memo": "Electric service grow lights and fans"
+    },
+    {
+     "vendor": "Clearwater Municipal",
+     "base": 3200,
+     "memo": "Water and sewer service"
+    }
+   ],
+   "events": [
+    {
+     "key": "polar_vortex",
+     "vendor": "Prairie Gas and Power",
+     "memos": [
+      "Arctic blast surge pricing — spot gas adjustment",
+      "Arctic blast surge pricing — peak demand charge"
+     ],
+     "cross_memo": "Arctic blast surge pricing — portable heater fuel",
+     "plain": [
+      "the arctic blast surge pricing",
+      "the arctic surge gas adjustment",
+      "the blast peak demand charge"
+     ],
+     "oblique": [
+      "a stretch of brutal cold weather",
+      "keeping the houses warm during a freeze",
+      "the week when temperatures plunged",
+      "an unusually harsh stretch of winter",
+      "protecting crops from frost damage",
+      "the extra burn during a cold snap",
+      "a weather event that strained the grid",
+      "the sharp jump in heating needs",
+      "what we paid to avoid losing the stock",
+      "a few nights of extreme lows",
+      "market spikes during a regional deep freeze",
+      "the emergency need for added warmth",
+      "an abnormal run of subzero nights",
+      "the unusual cold that hit the region",
+      "what the weather did to our fuel bill",
+      "a short but costly deep-winter episode"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "led_retrofit",
+     "vendor": "Photonics Retrofit Group",
+     "memos": [
+      "Full spectrum diode fixture install — bay four",
+      "Full spectrum diode fixture install — electrician labor"
+     ],
+     "cross_memo": "Full spectrum diode fixture install — scissor lift rental",
+     "plain": [
+      "the full spectrum diode fixture install",
+      "the diode fixture install",
+      "the full spectrum fixture project"
+     ],
+     "oblique": [
+      "swapping out old lighting for efficient units",
+      "an upgrade meant to lower power consumption over time",
+      "the capital project on one section of the range",
+      "modernizing how we light the seedlings",
+      "a conversion the utility rebate encouraged",
+      "replacing aging lamps that were failing",
+      "a pilot of newer illumination technology",
+      "the improvement that should shrink future bills",
+      "work done at the request of operations",
+      "outfitting a growing area with better equipment",
+      "a changeover from the legacy setup",
+      "the efficiency project in the propagation bay",
+      "what we spent to cut long-run costs",
+      "the installation that kept crews on site for days",
+      "a one-section overhaul of overhead lighting",
+      "an investment in better light for the crop"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Irrigation and Water Treatment",
+   "aliases": [
+    "irrigation",
+    "water treatment",
+    "irrigation supplies",
+    "watering systems",
+    "water management"
+   ],
+   "narrative": [
+    "Irrigation",
+    "Water treatment",
+    "Watering systems"
+   ],
+   "recurring": [
+    {
+     "vendor": "AquaDrip Supply",
+     "base": 6200,
+     "memo": "Drip emitters and tubing"
+    },
+    {
+     "vendor": "PureFlow Chemicals",
+     "base": 3400,
+     "memo": "Water pH adjusters and sanitizer"
+    },
+    {
+     "vendor": "Sprinkler Source",
+     "base": 2100,
+     "memo": "Overhead nozzles and fittings"
+    }
+   ],
+   "events": [
+    {
+     "key": "well_pump",
+     "vendor": "AquaDrip Supply",
+     "memos": [
+      "Submersible well pump failure — emergency motor",
+      "Submersible well pump failure — pull rig service"
+     ],
+     "cross_memo": "Submersible well pump failure — hauled water tanker",
+     "plain": [
+      "the submersible well pump failure",
+      "the well pump motor replacement",
+      "the submersible pump pull service"
+     ],
+     "oblique": [
+      "the day the source of our water quit working",
+      "an unexpected breakdown deep underground",
+      "keeping the plants wet while we fixed the supply",
+      "a failure nobody saw coming",
+      "the dry spell caused by equipment trouble",
+      "paying for emergency repair at a bad time",
+      "an outage that put thousands of plants at risk",
+      "a mechanical failure at the property edge",
+      "the repair crew we had to call overnight",
+      "what we spent to get the water flowing again",
+      "the unexpected loss of our main supply",
+      "a critical component giving out",
+      "bringing in outside help during an outage",
+      "the urgent fix before the crop wilted",
+      "the sudden need for a replacement part",
+      "a failure that threatened the whole production"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "reverse_osmosis",
+     "vendor": "Membrane Works Ltd",
+     "memos": [
+      "Osmosis filtration skid commissioning — membrane set",
+      "Osmosis filtration skid commissioning — plumbing tie in"
+     ],
+     "cross_memo": "Osmosis filtration skid commissioning — operator training",
+     "plain": [
+      "the osmosis filtration skid commissioning",
+      "the osmosis skid membrane set",
+      "the filtration skid tie in"
+     ],
+     "oblique": [
+      "cleaning up the supply for sensitive crops",
+      "a purchase prompted by salty source water",
+      "the new system for purifying what we feed the plants",
+      "a fix for leaf burn on delicate varieties",
+      "equipment requested by the head grower",
+      "an installation that took a week to finish",
+      "the upgrade to remove dissolved minerals",
+      "a response to quality complaints from buyers",
+      "what we spent to improve water purity",
+      "the skid that arrived on a flatbed",
+      "a capital item that will serve for years",
+      "the project that started after lab results came back",
+      "treating the supply before it reaches the benches",
+      "a one-time build out in the pump house",
+      "the equipment that stripped out impurities",
+      "a long-planned improvement to our feed water"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Crop Protection and Pest Control",
+   "aliases": [
+    "crop protection",
+    "pest control",
+    "ipm supplies",
+    "pesticide spend",
+    "plant health"
+   ],
+   "narrative": [
+    "Crop protection",
+    "Pest control",
+    "Plant health"
+   ],
+   "recurring": [
+    {
+     "vendor": "BioGuard Supply",
+     "base": 7800,
+     "memo": "Beneficial insects monthly shipment"
+    },
+    {
+     "vendor": "Greenshield Agrochem",
+     "base": 5200,
+     "memo": "Fungicide and miticide stock"
+    },
+    {
+     "vendor": "StickyTrap Co",
+     "base": 1400,
+     "memo": "Yellow sticky cards"
+    }
+   ],
+   "events": [
+    {
+     "key": "thrips_outbreak",
+     "vendor": "BioGuard Supply",
+     "memos": [
+      "Western flower thrips outbreak — extra predator mites",
+      "Western flower thrips outbreak — weekly scouting"
+     ],
+     "cross_memo": "Western flower thrips outbreak — quarantine labels",
+     "plain": [
+      "the western flower thrips outbreak",
+      "the thrips outbreak predator mites",
+      "the flower thrips scouting"
+     ],
+     "oblique": [
+      "a tiny insect infestation that spread fast",
+      "the bug problem in the bedding section",
+      "an invasion we caught late in the season",
+      "the extra beneficials we ordered to fight a swarm",
+      "a pest flare up that hit the flowering crops",
+      "containing an infestation before it reached customers",
+      "what it took to stop the spread",
+      "a surge of damage on the blooms",
+      "the weeks spent chasing a pest across the range",
+      "a pressure spike that overwhelmed our usual program",
+      "an outbreak noticed during a routine walk",
+      "the unplanned treatment of several houses",
+      "a pest event that demanded daily attention",
+      "extra monitoring after the first sighting",
+      "the battle to save a block of annuals",
+      "a infestation that outran our normal controls"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "boxwood_blight",
+     "vendor": "Sentinel Plant Diagnostics",
+     "memos": [
+      "Calonectria blight lab confirmation — sample panel",
+      "Calonectria blight lab confirmation — state inspector visit"
+     ],
+     "cross_memo": "Calonectria blight lab confirmation — destroyed stock disposal",
+     "plain": [
+      "the calonectria blight lab confirmation",
+      "the calonectria sample panel",
+      "the blight lab confirmation"
+     ],
+     "oblique": [
+      "a disease scare that required outside testing",
+      "the regulators arriving to look at our shrubs",
+      "a fungal problem on a valuable evergreen",
+      "the cost of proving what we were dealing with",
+      "a sick block that had to be isolated",
+      "an inspection prompted by suspicious leaf spots",
+      "the diagnosis that kept shipments on hold",
+      "a compliance issue with the state agency",
+      "paperwork and testing after a bad sign",
+      "what we paid to find out if the plants were infected",
+      "the quarantine period that froze sales",
+      "a health problem threatening a whole product line",
+      "the lab work behind a stop sale order",
+      "an official visit that followed our own report",
+      "the plants we had to burn after confirmation",
+      "confirming a serious disease in one section"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Packaging and Containers",
+   "aliases": [
+    "packaging",
+    "containers",
+    "pots and trays",
+    "nursery containers",
+    "pot costs"
+   ],
+   "narrative": [
+    "Packaging",
+    "Containers",
+    "Pots and trays"
+   ],
+   "recurring": [
+    {
+     "vendor": "PotMasters Plastics",
+     "base": 13500,
+     "memo": "Injection molded nursery pots"
+    },
+    {
+     "vendor": "FlatPack Trays",
+     "base": 6900,
+     "memo": "Propagation trays and inserts"
+    },
+    {
+     "vendor": "TagWorks Labels",
+     "base": 2600,
+     "memo": "Plant tags and care labels"
+    }
+   ],
+   "events": [
+    {
+     "key": "biodegradable_pots",
+     "vendor": "PotMasters Plastics",
+     "memos": [
+      "Compostable fiber pot launch — first production run",
+      "Compostable fiber pot launch — custom mold tooling"
+     ],
+     "cross_memo": "Compostable fiber pot launch — retail display racks",
+     "plain": [
+      "the compostable fiber pot launch",
+      "the compostable pot production run",
+      "the fiber pot mold tooling"
+     ],
+     "oblique": [
+      "a greener alternative requested by big box buyers",
+      "the switch away from the usual material",
+      "a sustainability push from the marketing side",
+      "an upfront cost for an environmentally friendlier line",
+      "what we paid to meet a customer mandate",
+      "the retooling needed for a new product format",
+      "a response to shoppers asking for plastic free",
+      "the premium for a more eco minded offering",
+      "trial quantities of a different style of vessel",
+      "the start of a program we hope will grow",
+      "a customer driven change in what we ship in",
+      "one time setup for a brand refresh",
+      "the investment aimed at winning a new account",
+      "a pilot of an alternative material",
+      "preparing a limited release for spring",
+      "the dies and first batch for an upstart line"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "holiday_gift",
+     "vendor": "Ribbon and Crate Co",
+     "memos": [
+      "Poinsettia gift sleeve and basket — seasonal wrap",
+      "Poinsettia gift sleeve and basket — foil pot covers"
+     ],
+     "cross_memo": "Poinsettia gift sleeve and basket — holiday display crates",
+     "plain": [
+      "the poinsettia gift sleeve and basket",
+      "the poinsettia seasonal wrap",
+      "the poinsettia foil pot covers"
+     ],
+     "oblique": [
+      "dressing up the winter crop for the retail rush",
+      "the decorative extras added in the fall",
+      "the festive presentation for year end shoppers",
+      "a short run of packaging for a single holiday",
+      "the finishing touches that raise the shelf price",
+      "what we spent to make the product gift ready",
+      "wrap that only lasts a few weeks",
+      "the seasonal bump ahead of the big sales window",
+      "the extra cost of making plants look giftable",
+      "a peak season requirement from the stores",
+      "the dressing and trimming of finished plants",
+      "presentation materials that arrive once a year",
+      "the cost of making the display pop",
+      "last minute orders before the holiday deadline",
+      "embellishments for the cold weather season",
+      "the added layer around each finished pot"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Delivery and Freight",
+   "aliases": [
+    "freight",
+    "delivery costs",
+    "outbound shipping",
+    "trucking",
+    "distribution costs"
+   ],
+   "narrative": [
+    "Freight",
+    "Delivery costs",
+    "Trucking"
+   ],
+   "recurring": [
+    {
+     "vendor": "Green Mile Trucking",
+     "base": 18000,
+     "memo": "Weekly outbound LTL to garden centers"
+    },
+    {
+     "vendor": "Coastline Parcel",
+     "base": 4500,
+     "memo": "Small order parcel shipping"
+    },
+    {
+     "vendor": "Valley Fuel Cards",
+     "base": 3800,
+     "memo": "Delivery van fuel"
+    }
+   ],
+   "events": [
+    {
+     "key": "reefer_overhaul",
+     "vendor": "Green Mile Trucking",
+     "memos": [
+      "Climate van refrigeration rebuild — compressor swap",
+      "Climate van refrigeration rebuild — technician labor"
+     ],
+     "cross_memo": "Climate van refrigeration rebuild — loaner trailer rental",
+     "plain": [
+      "the climate van refrigeration rebuild",
+      "the climate van compressor swap",
+      "the van refrigeration technician labor"
+     ],
+     "oblique": [
+      "getting the cold chain vehicles back on the road",
+      "repairs to keep plants from overheating in transit",
+      "an equipment failure that grounded part of the fleet",
+      "the work required after a failed inspection",
+      "what we spent to keep deliveries on schedule",
+      "the breakdown that forced us to borrow capacity",
+      "a mechanical overhaul of aging rolling stock",
+      "the downtime we had to cover",
+      "fixing temperature control on the trucks",
+      "the sudden need to rent replacements",
+      "a repair project that dragged on for weeks",
+      "the shop bill for keeping the haulers certified",
+      "a big ticket repair on delivery equipment",
+      "the loss of vehicles at the worst time",
+      "the work done at the transport depot",
+      "what it cost to protect live cargo en route"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "big_box_reset",
+     "vendor": "Cascade Dedicated Lines",
+     "memos": [
+      "Spring reset store blitz — dedicated route",
+      "Spring reset store blitz — liftgate surcharge"
+     ],
+     "cross_memo": "Spring reset store blitz — merchandiser overtime",
+     "plain": [
+      "the spring reset store blitz",
+      "the store blitz dedicated route",
+      "the reset liftgate surcharge"
+     ],
+     "oblique": [
+      "a flood of deliveries ahead of the retail season",
+      "the customer's big restocking push",
+      "a compressed window for getting product onto shelves",
+      "extra runs requested by our largest account",
+      "the one week that tripled our shipments",
+      "the logistical crunch of a nationwide rollout",
+      "a surge in stops across the region",
+      "what we paid for a rented carrier during the peak",
+      "the spring wave of trucks to the chain stores",
+      "a customer deadline that forced special routing",
+      "the temporary lane we ran for one buyer",
+      "a short sprint of heavy outbound volume",
+      "the seasonal bulge in outgoing loads",
+      "a one-time push into hundreds of locations",
+      "the added cost of meeting a tight launch date",
+      "the opening week demand from the retailer"
+     ],
+     "low": 17000,
+     "high": 34000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

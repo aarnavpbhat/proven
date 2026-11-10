@@ -1,0 +1,815 @@
+{
+ "slug": "data-center-colocation-provider",
+ "industry": "data center colocation provider",
+ "entities": [
+  "Meridian Colocation Partners",
+  "Vantage Ridge Data Centers",
+  "Cobalt Harbor Hosting",
+  "Nimbus Forge Facilities",
+  "Ironpine Digital Infrastructure"
+ ],
+ "accounts": [
+  {
+   "name": "Utility Power",
+   "aliases": [
+    "utility power",
+    "power costs",
+    "electricity spend",
+    "grid power",
+    "power bills"
+   ],
+   "narrative": [
+    "Utility power",
+    "Power costs",
+    "Electricity spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Great Basin Electric Cooperative",
+     "base": 28000,
+     "memo": "Metered grid electricity — campus A"
+    },
+    {
+     "vendor": "Summit Natural Gas Services",
+     "base": 3200,
+     "memo": "Natural gas — heating loop"
+    },
+    {
+     "vendor": "Tri-County Water Authority",
+     "base": 1800,
+     "memo": "Municipal water — cooling makeup"
+    }
+   ],
+   "events": [
+    {
+     "key": "substation",
+     "vendor": "Great Basin Electric Cooperative",
+     "memos": [
+      "Substation tie-in — interconnection surcharge",
+      "Substation tie-in — peak demand adjustment"
+     ],
+     "cross_memo": "Substation tie-in — switchgear permit fees",
+     "plain": [
+      "the substation tie-in",
+      "the substation tie-in surcharge",
+      "the substation tie-in charges"
+     ],
+     "oblique": [
+      "the new high-voltage hookup",
+      "the expansion of our feed from the grid",
+      "what the electric co-op charged us to join the second line",
+      "extra capacity for the new hall",
+      "the utility upgrade for phase two",
+      "a one-time connection fee",
+      "the larger service we asked for",
+      "bringing more megawatts onto the campus",
+      "the cost of getting a second source of supply",
+      "the build-out of our incoming feed",
+      "connection fees from the co-op",
+      "a retroactive true-up on our maximum draw",
+      "the surcharge for exceeding contracted capacity",
+      "what the co-op billed to wire in additional load",
+      "the hookup work at the edge of the property",
+      "paying to widen our service entrance"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "brownout",
+     "vendor": "Ostrander Energy Brokers",
+     "memos": [
+      "Brownout hedge — spot market purchase",
+      "Brownout hedge — emergency curtailment fee"
+     ],
+     "cross_memo": "Brownout hedge — generator fuel reimbursement",
+     "plain": [
+      "the brownout hedge",
+      "the brownout hedge purchase",
+      "the brownout hedge fees"
+     ],
+     "oblique": [
+      "buying electricity on short notice",
+      "the regional supply crunch",
+      "a scramble for energy during the heat wave",
+      "emergency purchases when supply ran short",
+      "the price spike across the region",
+      "covering a shortfall from our normal supplier",
+      "paying up to keep the halls lit",
+      "last-minute buying on the open market",
+      "the scarcity pricing we absorbed",
+      "a broker we hired to find extra supply",
+      "protecting against rolling cuts",
+      "the fees for going off our usual contract",
+      "a week of expensive replacement energy",
+      "what we paid when the grid was strained",
+      "the hedging we did after the warning",
+      "unplanned purchases to stay online"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Generator Fuel and Maintenance",
+   "aliases": [
+    "generator upkeep",
+    "backup generators",
+    "genset costs",
+    "generator fuel",
+    "standby power maintenance"
+   ],
+   "narrative": [
+    "Generator upkeep",
+    "Backup generators",
+    "Genset costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Redline Diesel Supply",
+     "base": 4500,
+     "memo": "Diesel delivery — day tanks"
+    },
+    {
+     "vendor": "Cascadia Power Systems",
+     "base": 6800,
+     "memo": "Quarterly service contract — standby units"
+    }
+   ],
+   "events": [
+    {
+     "key": "loadbank",
+     "vendor": "Cascadia Power Systems",
+     "memos": [
+      "Loadbank certification — resistive test rental",
+      "Loadbank certification — technician overtime"
+     ],
+     "cross_memo": "Loadbank certification — insurance audit filing",
+     "plain": [
+      "the loadbank certification",
+      "the loadbank certification rental",
+      "the loadbank certification overtime"
+     ],
+     "oblique": [
+      "proving the machines can carry a full load",
+      "the annual capacity proof for the insurer",
+      "a day of running everything flat out",
+      "the test the auditors required",
+      "verifying our emergency capability",
+      "rented equipment to simulate demand",
+      "the paperwork and trial for our carrier",
+      "weekend crews for the stress run",
+      "showing the units hold up under pressure",
+      "what we spent to satisfy the underwriter",
+      "the full-burn exercise on the pads",
+      "a compliance exercise for coverage renewal",
+      "the heavy trial run",
+      "the endurance check mandated this year",
+      "simulated outage demonstration costs",
+      "getting signed off on readiness"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "turbocharger",
+     "vendor": "Halvorsen Engine Rebuilders",
+     "memos": [
+      "Turbocharger rebuild — unit 4 teardown",
+      "Turbocharger rebuild — replacement bearings"
+     ],
+     "cross_memo": "Turbocharger rebuild — crane rental",
+     "plain": [
+      "the turbocharger rebuild",
+      "the turbocharger rebuild teardown",
+      "the turbocharger rebuild parts"
+     ],
+     "oblique": [
+      "the engine that wouldn't boost",
+      "a failed air-intake component on unit four",
+      "restoring a sick machine to health",
+      "the repair that needed heavy lifting",
+      "pulling apart a failing motor",
+      "an overhaul after the vibration alarm",
+      "the worn rotating assembly",
+      "bringing a disabled engine back",
+      "parts and labor for the sidelined unit",
+      "what the shop charged to fix the diesel",
+      "a major repair on one of our big units",
+      "the fix after it lost pressure",
+      "an unscheduled shop visit",
+      "rescuing the machine that tripped out",
+      "replacing worn internals",
+      "the costly engine repair"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Cooling and Mechanical Maintenance",
+   "aliases": [
+    "cooling maintenance",
+    "hvac costs",
+    "mechanical upkeep",
+    "chiller costs",
+    "cooling plant spend"
+   ],
+   "narrative": [
+    "Cooling maintenance",
+    "HVAC costs",
+    "Mechanical upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Polar Dynamics Service",
+     "base": 9500,
+     "memo": "Chiller plant PM contract"
+    },
+    {
+     "vendor": "ClearFlow Treatment Co",
+     "base": 2100,
+     "memo": "Condenser loop chemical treatment"
+    },
+    {
+     "vendor": "AirSense Filtration",
+     "base": 1600,
+     "memo": "Filter replacement — CRAH units"
+    }
+   ],
+   "events": [
+    {
+     "key": "economizer",
+     "vendor": "Polar Dynamics Service",
+     "memos": [
+      "Economizer retrofit — damper actuator install",
+      "Economizer retrofit — controls commissioning"
+     ],
+     "cross_memo": "Economizer retrofit — electrical subpanel",
+     "plain": [
+      "the economizer retrofit",
+      "the economizer retrofit install",
+      "the economizer retrofit commissioning"
+     ],
+     "oblique": [
+      "using outside air to save energy",
+      "the efficiency upgrade on the mechanical side",
+      "swapping parts so we can cool for free in winter",
+      "a project to cut our power ratio",
+      "new actuators on the intake louvers",
+      "tuning the system for cold weather",
+      "the green initiative on the roof",
+      "improvements that lower the overhead",
+      "work to reduce compressor hours",
+      "the conversion of old air handling",
+      "installing smarter vents",
+      "changes the sustainability team championed",
+      "upgrading how we reject heat",
+      "the energy savings project",
+      "reconfiguring the intake path",
+      "automation work on the air side"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "legionella",
+     "vendor": "Aquaward Environmental",
+     "memos": [
+      "Legionella remediation — tower disinfection",
+      "Legionella remediation — lab sampling"
+     ],
+     "cross_memo": "Legionella remediation — temporary hauled water",
+     "plain": [
+      "the legionella remediation",
+      "the legionella remediation disinfection",
+      "the legionella remediation sampling"
+     ],
+     "oblique": [
+      "a bacteria scare in the rooftop towers",
+      "the health department notice",
+      "cleaning the water systems after a positive test",
+      "an outbreak risk we had to contain",
+      "emergency decontamination of the open loop",
+      "the lab results that came back bad",
+      "a safety shutdown of the evaporative units",
+      "scrubbing the cooling water",
+      "the contamination finding",
+      "hiring specialists after the alert",
+      "testing and sanitizing everything wet",
+      "what we spent to reopen the towers",
+      "a regulatory matter involving microbes",
+      "the biological cleanup",
+      "the outside firm brought in for water hygiene",
+      "protecting the neighbors from airborne risk"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Network Carrier and Transit",
+   "aliases": [
+    "carrier costs",
+    "transit spend",
+    "bandwidth costs",
+    "network circuits",
+    "upstream connectivity"
+   ],
+   "narrative": [
+    "Carrier costs",
+    "Transit spend",
+    "Bandwidth costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lumenar Backbone",
+     "base": 24000,
+     "memo": "IP transit — 100G commit"
+    },
+    {
+     "vendor": "FiberBridge Metro",
+     "base": 11500,
+     "memo": "Dark fiber lease — ring segments"
+    },
+    {
+     "vendor": "PeerPoint Exchange",
+     "base": 3800,
+     "memo": "IX port and cross-connect fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "burstoverage",
+     "vendor": "Lumenar Backbone",
+     "memos": [
+      "Burst overage — 95th percentile true-up",
+      "Burst overage — excess commit billing"
+     ],
+     "cross_memo": "Burst overage — emergency port upsell",
+     "plain": [
+      "the burst overage",
+      "the burst overage true-up",
+      "the burst overage billing"
+     ],
+     "oblique": [
+      "a traffic surge that blew past our plan",
+      "the viral event on a tenant's site",
+      "paying for volume we hadn't contracted",
+      "a spike in customer demand",
+      "the assault of junk packets that hit us",
+      "heavier usage than forecast",
+      "a month of unusually heavy flows",
+      "what the backbone charged for going over",
+      "an attack that inflated our consumption",
+      "one client's launch day",
+      "the penalty rates for excess",
+      "unexpected popularity of a hosted service",
+      "a flood of requests",
+      "the measured peak that set our price",
+      "an ugly percentile reading",
+      "traffic we didn't budget for"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "subsea",
+     "vendor": "Pacifica Landing Networks",
+     "memos": [
+      "Subsea landing — capacity IRU purchase",
+      "Subsea landing — cable station fees"
+     ],
+     "cross_memo": "Subsea landing — backhaul cross-connects",
+     "plain": [
+      "the subsea landing",
+      "the subsea landing purchase",
+      "the subsea landing fees"
+     ],
+     "oblique": [
+      "reaching customers across the ocean",
+      "a new route to Asia",
+      "capacity bought for the overseas contract",
+      "the long-haul link to another continent",
+      "a route diversity play",
+      "getting a seat on the undersea system",
+      "what we paid to land international traffic",
+      "the cable consortium buy-in",
+      "the deal that lets us sell global reach",
+      "an expansion for our multinational clients",
+      "a landing station arrangement",
+      "the trans-Pacific agreement",
+      "buying rights to a wet path",
+      "the overseas connectivity win",
+      "the rights-of-use payment",
+      "extending our footprint abroad"
+     ],
+     "low": 25000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Physical Security and Access Control",
+   "aliases": [
+    "security costs",
+    "guard services",
+    "access control spend",
+    "site security",
+    "physical security"
+   ],
+   "narrative": [
+    "Security costs",
+    "Guard services",
+    "Site security"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Guard Group",
+     "base": 18000,
+     "memo": "24x7 staffed guard post"
+    },
+    {
+     "vendor": "BadgeWorks Systems",
+     "base": 2400,
+     "memo": "Access control platform license"
+    },
+    {
+     "vendor": "ClearView Surveillance",
+     "base": 1900,
+     "memo": "Camera retention and monitoring"
+    }
+   ],
+   "events": [
+    {
+     "key": "mantrap",
+     "vendor": "BadgeWorks Systems",
+     "memos": [
+      "Mantrap upgrade — biometric reader install",
+      "Mantrap upgrade — turnstile hardware"
+     ],
+     "cross_memo": "Mantrap upgrade — lobby millwork",
+     "plain": [
+      "the mantrap upgrade",
+      "the mantrap upgrade install",
+      "the mantrap upgrade hardware"
+     ],
+     "oblique": [
+      "tightening who can walk into the data halls",
+      "the request from our financial clients",
+      "fingerprint entry at the doors",
+      "a compliance demand for stricter entry",
+      "new gates in the front lobby",
+      "making tailgating impossible",
+      "the audit finding about entry controls",
+      "stronger identity checks at the door",
+      "a one-person-at-a-time vestibule",
+      "the refit of the entrance area",
+      "what a bank customer insisted on",
+      "improving how visitors are screened",
+      "revolving barriers we hadn't had before",
+      "the front-door overhaul",
+      "the controlled entry project",
+      "hardware to stop piggybacking"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "perimeter",
+     "vendor": "Ironclad Fencing Contractors",
+     "memos": [
+      "Perimeter hardening — anti-ram bollards",
+      "Perimeter hardening — vehicle barrier install"
+     ],
+     "cross_memo": "Perimeter hardening — civil engineering survey",
+     "plain": [
+      "the perimeter hardening",
+      "the perimeter hardening bollards",
+      "the perimeter hardening barrier"
+     ],
+     "oblique": [
+      "stopping trucks from crashing the building",
+      "the insurer's recommendation after the incident nearby",
+      "concrete posts along the driveway",
+      "a government client's requirement",
+      "protecting the front from a vehicle attack",
+      "the heavy-duty work around the lot",
+      "what the site assessment flagged",
+      "walls and posts for the outer edge",
+      "preventing a drive-through breach",
+      "the safety improvements outside",
+      "fortifying the property line",
+      "a threat review recommendation",
+      "new posts where the road meets the property",
+      "defending against ramming",
+      "the exterior protective works",
+      "a gap the consultants found"
+     ],
+     "low": 17000,
+     "high": 34000
+    }
+   ]
+  },
+  {
+   "name": "Fire Suppression and Life Safety",
+   "aliases": [
+    "fire protection",
+    "suppression costs",
+    "life safety spend",
+    "fire systems",
+    "clean agent costs"
+   ],
+   "narrative": [
+    "Fire protection",
+    "Suppression costs",
+    "Life safety spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ember Safeguard Inc",
+     "base": 5200,
+     "memo": "Quarterly inspection — pre-action systems"
+    },
+    {
+     "vendor": "VESDA Monitoring Partners",
+     "base": 1700,
+     "memo": "Aspirating smoke detection monitoring"
+    }
+   ],
+   "events": [
+    {
+     "key": "cleanagent",
+     "vendor": "Ember Safeguard Inc",
+     "memos": [
+      "Clean agent recharge — FM-200 cylinder refill",
+      "Clean agent recharge — nozzle replacement"
+     ],
+     "cross_memo": "Clean agent recharge — hall decontamination",
+     "plain": [
+      "the clean agent recharge",
+      "the clean agent recharge refill",
+      "the clean agent recharge nozzles"
+     ],
+     "oblique": [
+      "after the gas discharged in hall three",
+      "the accidental release",
+      "restocking the canisters that emptied",
+      "a false trip that cost us",
+      "getting the room protected again",
+      "the cylinders we had to reload",
+      "what it took to be insured again after the discharge",
+      "a mishap from a dusty sensor",
+      "replacing the stuff that went off",
+      "returning the space to a covered state",
+      "the dump of extinguishing gas",
+      "an unintended activation",
+      "refilling what was spent",
+      "the post-incident restoration",
+      "the fire marshal's required restocking",
+      "an expensive nuisance trip"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "sprinklerrelocate",
+     "vendor": "Brightwater Fire Protection",
+     "memos": [
+      "Pipe reroute — pre-action sprinkler relocation",
+      "Pipe reroute — hydrostatic testing"
+     ],
+     "cross_memo": "Pipe reroute — ceiling tile reinstall",
+     "plain": [
+      "the pipe reroute",
+      "the pipe reroute relocation",
+      "the pipe reroute testing"
+     ],
+     "oblique": [
+      "moving the overhead lines for the new racks",
+      "a layout change in the white space",
+      "shifting water lines after the floor plan changed",
+      "work to clear space above a new cage",
+      "the pressure proof after modifications",
+      "adjusting protection to fit a customer build",
+      "what the redesign of the hall required",
+      "relocating heads to match the new aisle layout",
+      "the plumbing shuffle above the cabinets",
+      "a rework triggered by a tenant expansion",
+      "redirecting the dry pipes",
+      "the inspector's retest",
+      "changes overhead to suit new equipment",
+      "altering the sprinklers' footprint",
+      "the pipe shifting job",
+      "post-modification verification work"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Customer Equipment Remote Hands",
+   "aliases": [
+    "remote hands",
+    "smart hands costs",
+    "tenant support labor",
+    "hands-on services",
+    "onsite tech support"
+   ],
+   "narrative": [
+    "Remote hands",
+    "Smart hands costs",
+    "Tenant support labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "TechBridge Staffing",
+     "base": 14000,
+     "memo": "Contract technicians — remote hands pool"
+    },
+    {
+     "vendor": "RackRight Tools",
+     "base": 900,
+     "memo": "Cabling consumables and tools"
+    }
+   ],
+   "events": [
+    {
+     "key": "migration",
+     "vendor": "TechBridge Staffing",
+     "memos": [
+      "Tenant migration — weekend crew surge",
+      "Tenant migration — overtime premium"
+     ],
+     "cross_memo": "Tenant migration — freight and crating",
+     "plain": [
+      "the tenant migration",
+      "the tenant migration crew",
+      "the tenant migration overtime"
+     ],
+     "oblique": [
+      "a big customer moving into the building",
+      "the move-in of our largest new client",
+      "extra bodies for a forklift-heavy weekend",
+      "a client relocating hundreds of cabinets",
+      "racking and stacking at scale",
+      "the arrival of a hyperscaler's gear",
+      "hiring temps for a short crunch",
+      "the onboarding of a major account",
+      "bulk installation labor",
+      "weekend shifts to meet a cutover date",
+      "rolling in boxes of servers",
+      "what the rush deployment demanded",
+      "staffing the freight dock",
+      "the deadline-driven install push",
+      "labor for a customer's big shift",
+      "help to unpack and mount equipment"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "cablerecert",
+     "vendor": "Fiberline Test Labs",
+     "memos": [
+      "Plant recertification — fiber loss testing",
+      "Plant recertification — copper tester calibration"
+     ],
+     "cross_memo": "Plant recertification — relabeling supplies",
+     "plain": [
+      "the plant recertification",
+      "the plant recertification testing",
+      "the plant recertification calibration"
+     ],
+     "oblique": [
+      "checking every strand under the floor",
+      "proving the wiring still meets spec",
+      "an audit of our structured infrastructure",
+      "measuring signal quality across the halls",
+      "the standards body's periodic review",
+      "verifying the integrity of old runs",
+      "a customer's complaint about errors",
+      "the inventory and validation of links",
+      "documenting the quality of the runs",
+      "what the lab charged to measure light loss",
+      "a sweep of the interconnect pathways",
+      "testing that satisfied a tenant contract",
+      "the survey of all the lines",
+      "an examination of the physical layer",
+      "quality assurance for the old halls",
+      "a campaign to find marginal links"
+     ],
+     "low": 10000,
+     "high": 19000
+    }
+   ]
+  },
+  {
+   "name": "Facility Insurance and Compliance",
+   "aliases": [
+    "insurance costs",
+    "compliance spend",
+    "audit and certification",
+    "soc audits",
+    "regulatory costs"
+   ],
+   "narrative": [
+    "Insurance costs",
+    "Compliance spend",
+    "Audit and certification"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborline Insurance Brokers",
+     "base": 16000,
+     "memo": "Property and business interruption premium installment"
+    },
+    {
+     "vendor": "Veritas Assurance LLP",
+     "base": 4200,
+     "memo": "SOC 2 monitoring retainer"
+    },
+    {
+     "vendor": "Greenway Environmental Services",
+     "base": 1200,
+     "memo": "Environmental permit maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "pcidss",
+     "vendor": "Veritas Assurance LLP",
+     "memos": [
+      "PCI attestation — onsite assessor visit",
+      "PCI attestation — gap remediation review"
+     ],
+     "cross_memo": "PCI attestation — penetration test firm",
+     "plain": [
+      "the PCI attestation",
+      "the PCI attestation visit",
+      "the PCI attestation review"
+     ],
+     "oblique": [
+      "a payments customer's demand for proof",
+      "the card industry's yearly checkup",
+      "qualifying to host retail clients",
+      "paperwork for a credit processor",
+      "an assessor walking the floor",
+      "what the new merchant account required",
+      "proving our controls to a big payments tenant",
+      "the scrutiny that came with a new contract",
+      "an examination we hadn't done before",
+      "meeting a banking partner's checklist",
+      "the third-party exam for card data",
+      "a certification that opens up sales",
+      "verifying that we protect cardholder information",
+      "showing the processor we pass muster",
+      "the independent examiner's engagement",
+      "a prerequisite for the retail deal"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "floodcover",
+     "vendor": "Anchorpoint Risk Advisors",
+     "memos": [
+      "Flood rider — supplemental coverage binder",
+      "Flood rider — floodplain survey"
+     ],
+     "cross_memo": "Flood rider — mortgage lender escrow",
+     "plain": [
+      "the flood rider",
+      "the flood rider binder",
+      "the flood rider survey"
+     ],
+     "oblique": [
+      "the new maps that put us in a high-risk zone",
+      "extra protection against rising water",
+      "a lender's insistence after remapping",
+      "a policy add-on for the river nearby",
+      "the covering we bought after the storm season",
+      "what the bank demanded for the refinance",
+      "the water damage protection purchase",
+      "the revised elevation certificate",
+      "a wider safety net for the basement gear",
+      "the surveyor's visit to measure ground height",
+      "additional coverage for wet-weather losses",
+      "a hedge against the heavy rains",
+      "the endorsement our underwriter required",
+      "protection for the lower level",
+      "the risk transfer we added mid-term",
+      "the cost of insuring against inundation"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

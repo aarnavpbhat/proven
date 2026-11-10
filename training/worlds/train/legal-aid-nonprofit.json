@@ -1,0 +1,807 @@
+{
+ "slug": "legal-aid-nonprofit",
+ "industry": "legal aid nonprofit",
+ "entities": [
+  "Harborlight Legal Aid Society",
+  "Cedar Valley Justice Project",
+  "Northgate Community Law Center",
+  "Riverbend Tenant & Family Advocates",
+  "Summit Ridge Legal Services"
+ ],
+ "accounts": [
+  {
+   "name": "Court Filing & Service Fees",
+   "aliases": [
+    "filing fees",
+    "court costs",
+    "service of process",
+    "filing and service spend"
+   ],
+   "narrative": [
+    "Filing fees",
+    "Court costs",
+    "Service of process"
+   ],
+   "recurring": [
+    {
+     "vendor": "County Clerk Payment Portal",
+     "base": 6200,
+     "memo": "Civil filing fees - housing and family dockets"
+    },
+    {
+     "vendor": "Metro Process Servers LLC",
+     "base": 3400,
+     "memo": "Summons and subpoena service - monthly batch"
+    }
+   ],
+   "events": [
+    {
+     "key": "classaction",
+     "vendor": "County Clerk Payment Portal",
+     "memos": [
+      "Consolidated tenant action - bulk plaintiff filings",
+      "Consolidated tenant action - amended complaints"
+     ],
+     "cross_memo": "Consolidated tenant action - overtime paralegal intake",
+     "plain": [
+      "the consolidated tenant action",
+      "the consolidated action filings",
+      "the consolidated tenant case"
+     ],
+     "oblique": [
+      "the mass lawsuit on behalf of apartment residents",
+      "a wave of paperwork for dozens of clients at once",
+      "the joint litigation over building conditions",
+      "a coordinated push to sue one landlord",
+      "all those plaintiffs joining together",
+      "the group claim that landed at the courthouse",
+      "the big housing case",
+      "a single dispute involving many households",
+      "the surge of lawsuits from one complex",
+      "litigation filed jointly by neighbors",
+      "the collective suit against the property owner",
+      "dozens of families suing as one",
+      "the multiplied court submissions",
+      "a sweeping legal challenge from renters",
+      "the combined claims against the management firm",
+      "the large-scale suit"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "ironclad",
+     "vendor": "Ironclad Warrant Retrieval Inc",
+     "memos": [
+      "Ironclad Warrant Retrieval - out-of-state witness location",
+      "Ironclad Warrant Retrieval - rush service Franklin Annex"
+     ],
+     "cross_memo": "Ironclad Warrant Retrieval - witness travel lodging",
+     "plain": [
+      "the Ironclad warrant retrieval",
+      "the Ironclad witness location",
+      "the Ironclad rush service"
+     ],
+     "oblique": [
+      "tracking down a person who moved away",
+      "urgent delivery of papers to a distant resident",
+      "the hunt for an elusive defendant",
+      "locating someone across state lines",
+      "a hurried effort to reach a missing party",
+      "finding a key person who had left town",
+      "the emergency search for a hard-to-find individual",
+      "last-minute outreach to a far-off person",
+      "chasing down a person who dodged contact",
+      "the expedited location of an absent party",
+      "reaching someone hundreds of miles away",
+      "the scramble to find a vanished participant",
+      "a rushed trace of a relocated person",
+      "delivering notices to somebody out of the area",
+      "the pursuit of an unreachable individual",
+      "unusually hasty paper delivery"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Client Interpreter & Translation",
+   "aliases": [
+    "interpreters",
+    "language access",
+    "translation costs",
+    "interpretation spend"
+   ],
+   "narrative": [
+    "Interpreters",
+    "Language access",
+    "Translation costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "LinguaBridge Interpreting",
+     "base": 5800,
+     "memo": "On-demand phone interpreting - intake line"
+    },
+    {
+     "vendor": "ClearWord Document Translation",
+     "base": 2900,
+     "memo": "Written translation of client notices"
+    },
+    {
+     "vendor": "Pacific Sign Language Services",
+     "base": 1800,
+     "memo": "ASL interpreter hours - clinic appointments"
+    }
+   ],
+   "events": [
+    {
+     "key": "asylum",
+     "vendor": "LinguaBridge Interpreting",
+     "memos": [
+      "Asylum surge week - Mandarin and Tigrinya interpreters",
+      "Asylum surge week - Eastridge shelter hearings"
+     ],
+     "cross_memo": "Asylum surge week - shelter van transport",
+     "plain": [
+      "the asylum surge week",
+      "the asylum surge interpreters",
+      "the asylum surge hearings"
+     ],
+     "oblique": [
+      "an influx of newly arrived families needing help",
+      "the sudden crush of people fleeing their home countries",
+      "an unexpected wave of migrants at the shelter",
+      "extra staffing for rare languages",
+      "a spike in demand from recent arrivals",
+      "the rush of newcomers seeking protection",
+      "additional voices for uncommon tongues",
+      "the emergency response to border arrivals",
+      "a sharp jump in people seeking refuge",
+      "the crowd of displaced applicants",
+      "urgent coverage for languages we seldom hear",
+      "hurried arrangements for people just off the bus",
+      "the big intake of refugees",
+      "the sudden call for speakers of minor dialects",
+      "a pileup of hearings for new arrivals",
+      "the flood of cases from the camp"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "braille",
+     "vendor": "TactileWorks Accessible Media",
+     "memos": [
+      "TactileWorks braille conversion - benefits handbook",
+      "TactileWorks large-print reissue - Westfield clinic"
+     ],
+     "cross_memo": "TactileWorks braille conversion - courier rush",
+     "plain": [
+      "the TactileWorks braille conversion",
+      "the TactileWorks large-print reissue",
+      "the TactileWorks handbook conversion"
+     ],
+     "oblique": [
+      "making our guides readable by blind clients",
+      "reformatting materials for people with low vision",
+      "the accessibility overhaul of our printed guides",
+      "raised-dot versions of the program booklet",
+      "an obligation to serve clients who cannot see standard text",
+      "new copies in formats for visually impaired people",
+      "the accommodation request from the advocacy coalition",
+      "redoing the booklets so everyone can read them",
+      "a compliance fix for our written guides",
+      "the tactile edition of the manual",
+      "bigger lettering for older clients",
+      "adapting publications for sight-limited readers",
+      "the one-time reissue of the guide",
+      "converted paper materials for disabled readers",
+      "reprinting everything in alternate formats",
+      "the inclusive publishing project"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Pro Bono Attorney Support",
+   "aliases": [
+    "pro bono support",
+    "volunteer attorney costs",
+    "pro bono program",
+    "volunteer lawyer support"
+   ],
+   "narrative": [
+    "Pro bono support",
+    "Volunteer attorney costs",
+    "Pro bono program"
+   ],
+   "recurring": [
+    {
+     "vendor": "Barrister Malpractice Cover Group",
+     "base": 7500,
+     "memo": "Volunteer attorney malpractice coverage"
+    },
+    {
+     "vendor": "LawLink CLE Provider",
+     "base": 2200,
+     "memo": "CLE credits for volunteer lawyers"
+    }
+   ],
+   "events": [
+    {
+     "key": "gala",
+     "vendor": "LawLink CLE Provider",
+     "memos": [
+      "Annual Justice Gala - volunteer recognition dinner",
+      "Annual Justice Gala - awards and venue"
+     ],
+     "cross_memo": "Annual Justice Gala - auction catering",
+     "plain": [
+      "the annual justice gala",
+      "the justice gala dinner",
+      "the justice gala awards"
+     ],
+     "oblique": [
+      "the evening to thank our unpaid lawyers",
+      "a fancy night honoring the volunteers",
+      "the yearly celebration for those who give time",
+      "a banquet to appreciate our helpers",
+      "the formal gathering at the hotel ballroom",
+      "our big thank-you event",
+      "a night of speeches and plaques",
+      "the party for people who donate hours",
+      "an event to retain our unpaid counsel",
+      "the dinner we hold each spring",
+      "hospitality for supporters who work for free",
+      "the black-tie appreciation evening",
+      "a celebration with trophies",
+      "the stand-up reception for our benefactors",
+      "a ceremony with catered plates",
+      "the yearly fete for friendly attorneys"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "mentorship",
+     "vendor": "Sterling Trial Academy",
+     "memos": [
+      "Sterling Trial Academy - eviction defense bootcamp",
+      "Sterling Trial Academy - faculty fees Oakmont"
+     ],
+     "cross_memo": "Sterling Trial Academy - printed workbooks",
+     "plain": [
+      "the Sterling trial academy",
+      "the Sterling eviction bootcamp",
+      "the Sterling faculty fees"
+     ],
+     "oblique": [
+      "a crash course for new volunteers on courtroom skills",
+      "hands-on instruction for rookies defending tenants",
+      "coaching for lawyers who rarely litigate",
+      "training that readied helpers for hearings",
+      "the intensive workshop with seasoned instructors",
+      "teaching newcomers to argue before judges",
+      "a skills clinic over several weekends",
+      "preparing part-time counsel for real appearances",
+      "the practical education session for helpers",
+      "a series of mock hearings with guest teachers",
+      "instruction on defending people facing removal from homes",
+      "the boot camp for unseasoned advocates",
+      "an outside tutoring program",
+      "bringing in experts to school our helpers",
+      "a short intensive for corporate lawyers lending a hand",
+      "the practice-oriented seminar"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Client Emergency Assistance",
+   "aliases": [
+    "emergency assistance",
+    "client aid funds",
+    "emergency client support",
+    "hardship fund"
+   ],
+   "narrative": [
+    "Emergency assistance",
+    "Client aid funds",
+    "Hardship fund"
+   ],
+   "recurring": [
+    {
+     "vendor": "SafeStay Motel Voucher Program",
+     "base": 4600,
+     "memo": "Motel vouchers - clients in DV cases"
+    },
+    {
+     "vendor": "Greenleaf Grocery Cards",
+     "base": 1500,
+     "memo": "Grocery gift cards - families in crisis"
+    },
+    {
+     "vendor": "CityRide Transit Passes",
+     "base": 1100,
+     "memo": "Transit passes for court appearances"
+    }
+   ],
+   "events": [
+    {
+     "key": "floodrelief",
+     "vendor": "SafeStay Motel Voucher Program",
+     "memos": [
+      "Riverside flood displacement - extended motel stays",
+      "Riverside flood displacement - emergency lodging block"
+     ],
+     "cross_memo": "Riverside flood displacement - legal clinic pop-up",
+     "plain": [
+      "the Riverside flood displacement",
+      "the Riverside flood lodging",
+      "the Riverside displacement stays"
+     ],
+     "oblique": [
+      "families driven from homes by rising water",
+      "the weather disaster that left residents homeless",
+      "a natural calamity near the waterfront",
+      "housing for people whose houses were ruined",
+      "the storm that damaged many apartments",
+      "an unexpected catastrophe in one neighborhood",
+      "longer shelter for those with nowhere to return",
+      "the overflowing creek that wrecked basements",
+      "temporary rooms for victims of the deluge",
+      "an act of nature that displaced households",
+      "the emergency created by heavy rain",
+      "putting storm victims somewhere dry",
+      "a large number of people suddenly without a place to live",
+      "the disaster response",
+      "the washed-out streets crisis",
+      "the wet-weather catastrophe"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "utilitycutoff",
+     "vendor": "Brightline Utility Relief Partners",
+     "memos": [
+      "Brightline utility shutoff relief - winter arrears",
+      "Brightline utility shutoff relief - heating assistance Hartwell"
+     ],
+     "cross_memo": "Brightline utility shutoff relief - caseworker overtime",
+     "plain": [
+      "the Brightline utility shutoff relief",
+      "the Brightline winter arrears",
+      "the Brightline heating assistance"
+     ],
+     "oblique": [
+      "paying overdue power bills for cold-weather clients",
+      "keeping furnaces on in the deep freeze",
+      "helping households avoid losing electricity",
+      "the seasonal push to prevent disconnections",
+      "covering unpaid energy balances",
+      "a stopgap for families behind on what they owe the power company",
+      "staying warm through the coldest weeks",
+      "payments that kept lights burning",
+      "the campaign against service terminations",
+      "settling old balances with the supplier",
+      "aid so homes did not go dark",
+      "assistance when temperatures plunged",
+      "the fund to prevent frozen pipes and dark rooms",
+      "the effort to restore interrupted service",
+      "relief for people who could not pay to stay heated",
+      "clearing what clients owed on their accounts"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Case Management & Records",
+   "aliases": [
+    "case management",
+    "records and storage",
+    "case files",
+    "case management spend"
+   ],
+   "narrative": [
+    "Case management",
+    "Records and storage",
+    "Case files"
+   ],
+   "recurring": [
+    {
+     "vendor": "JusticeTrack Software",
+     "base": 9800,
+     "memo": "Case management system subscription"
+    },
+    {
+     "vendor": "SecureVault Document Storage",
+     "base": 3100,
+     "memo": "Offsite closed-file storage"
+    },
+    {
+     "vendor": "ShredRight Services",
+     "base": 600,
+     "memo": "Confidential shredding pickups"
+    }
+   ],
+   "events": [
+    {
+     "key": "migration",
+     "vendor": "JusticeTrack Software",
+     "memos": [
+      "Platform cutover - legacy data migration",
+      "Platform cutover - historical import Lakeside office"
+     ],
+     "cross_memo": "Platform cutover - weekend staff overtime",
+     "plain": [
+      "the platform cutover",
+      "the platform cutover migration",
+      "the legacy data import"
+     ],
+     "oblique": [
+      "moving old information onto the new system",
+      "transferring decades of client history",
+      "the one-time switch to a newer tool",
+      "porting everything over from the aging database",
+      "the weekend we flipped to the replacement",
+      "consolidating inherited information in one place",
+      "bringing past entries into the modern setup",
+      "the big conversion project",
+      "retiring the outdated product",
+      "reloading every old entry",
+      "a large technical changeover",
+      "shifting archives across software",
+      "the move that left staff working late",
+      "upgrade work that touched every record",
+      "translating the old formats",
+      "rebuilding our digital backbone"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "officefire",
+     "vendor": "Phoenix Restoration & Recovery",
+     "memos": [
+      "Phoenix Restoration - fire damaged file room Eastgate",
+      "Phoenix Restoration - water-damaged paper salvage"
+     ],
+     "cross_memo": "Phoenix Restoration - temporary file relocation",
+     "plain": [
+      "the Phoenix restoration",
+      "the Phoenix file room salvage",
+      "the Phoenix paper salvage"
+     ],
+     "oblique": [
+      "rescuing documents after the blaze at the branch",
+      "drying out soaked folders",
+      "the incident in the basement archive",
+      "recovering paperwork from smoky cabinets",
+      "damage control after the sprinklers went off",
+      "saving clients' original papers from ruin",
+      "the cleanup in the records room",
+      "an accident that threatened irreplaceable materials",
+      "specialists who rescued the charred boxes",
+      "getting sodden files back to usable condition",
+      "the blaze that spoiled storage shelves",
+      "emergency response when pipes burst above the cabinets",
+      "reclaiming stacks of ruined originals",
+      "the aftermath of a small disaster",
+      "treating burned and wet case papers",
+      "cleanup crews in the lower level"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Community Outreach & Clinics",
+   "aliases": [
+    "outreach",
+    "community clinics",
+    "outreach events",
+    "clinic outreach spend"
+   ],
+   "narrative": [
+    "Outreach",
+    "Community clinics",
+    "Outreach events"
+   ],
+   "recurring": [
+    {
+     "vendor": "Neighborhood Print & Signs",
+     "base": 1900,
+     "memo": "Know-your-rights flyers and posters"
+    },
+    {
+     "vendor": "MobileClinic Van Leasing",
+     "base": 4200,
+     "memo": "Mobile legal clinic van lease"
+    },
+    {
+     "vendor": "CommunityVoice Radio Spots",
+     "base": 1300,
+     "memo": "Radio public service announcements"
+    }
+   ],
+   "events": [
+    {
+     "key": "townhall",
+     "vendor": "CommunityVoice Radio Spots",
+     "memos": [
+      "Eviction Moratorium Town Hall - radio and billboard blitz",
+      "Eviction Moratorium Town Hall - Delmar library venue"
+     ],
+     "cross_memo": "Eviction Moratorium Town Hall - childcare coverage",
+     "plain": [
+      "the eviction moratorium town hall",
+      "the moratorium town hall blitz",
+      "the town hall venue"
+     ],
+     "oblique": [
+      "the public meeting about a pending rule change",
+      "a big gathering to inform residents of new protections",
+      "the advertising push before the forum",
+      "a rally-style session for renters worried about losing homes",
+      "spreading the word about a policy ending soon",
+      "an assembly held at the neighborhood branch",
+      "the awareness drive ahead of the deadline",
+      "a large briefing open to everybody",
+      "our response to the expiring protection",
+      "the mass information night",
+      "an open community forum",
+      "publicity for the session on tenant rights",
+      "reaching the public before the law changed",
+      "the audience-building campaign",
+      "a crowded evening session with questions from the floor",
+      "outreach tied to a legislative cliff"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "vanbreakdown",
+     "vendor": "Redwood Fleet Mechanics",
+     "memos": [
+      "Redwood Fleet - clinic van transmission replacement",
+      "Redwood Fleet - emergency tow Pineville route"
+     ],
+     "cross_memo": "Redwood Fleet - rental sprinter during repair",
+     "plain": [
+      "the Redwood fleet transmission replacement",
+      "the Redwood fleet emergency tow",
+      "the Redwood fleet repair"
+     ],
+     "oblique": [
+      "the vehicle that quit on the highway",
+      "an expensive mechanical failure",
+      "the breakdown that canceled rural stops",
+      "a major repair on our rolling office",
+      "getting the stranded vehicle running again",
+      "the drivetrain problem",
+      "the costly fix after the engine trouble",
+      "wheels that would not turn",
+      "a stalled clinic on the road",
+      "the garage bill for our oldest ride",
+      "hauling a dead vehicle back",
+      "the unexpected shop visit",
+      "parts and labor on the heavy-duty ride",
+      "an emergency pickup of a disabled coach",
+      "repairing the mobile office",
+      "the roadside disaster"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Staff Wellness & Retention",
+   "aliases": [
+    "staff wellness",
+    "retention costs",
+    "employee support",
+    "wellness and retention spend"
+   ],
+   "narrative": [
+    "Staff wellness",
+    "Retention costs",
+    "Employee support"
+   ],
+   "recurring": [
+    {
+     "vendor": "MindWell Counseling Network",
+     "base": 3800,
+     "memo": "Vicarious trauma counseling - attorney staff"
+    },
+    {
+     "vendor": "LoanRelief Benefits Admin",
+     "base": 5200,
+     "memo": "Loan repayment assistance program"
+    }
+   ],
+   "events": [
+    {
+     "key": "retreat",
+     "vendor": "MindWell Counseling Network",
+     "memos": [
+      "Burnout Recovery Retreat - facilitated sessions",
+      "Burnout Recovery Retreat - Cascade lodge group rate"
+     ],
+     "cross_memo": "Burnout Recovery Retreat - coverage temp staffing",
+     "plain": [
+      "the burnout recovery retreat",
+      "the burnout retreat sessions",
+      "the recovery retreat lodge"
+     ],
+     "oblique": [
+      "a break to reset the exhausted team",
+      "time away for everyone to recharge",
+      "the offsite getaway in the mountains",
+      "the response to people nearing exhaustion",
+      "a restorative trip for tired advocates",
+      "a weekend meant to heal weary colleagues",
+      "the planned escape from the office grind",
+      "a getaway after a punishing quarter",
+      "group time in the woods",
+      "the effort to keep our people from quitting",
+      "a pause for those worn thin",
+      "an outing aimed at morale",
+      "the stress-relief excursion",
+      "rest for caseworkers at the end of their rope",
+      "a chance to unwind together",
+      "the leadership's answer to fatigue"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "signing",
+     "vendor": "Meridian Talent Partners",
+     "memos": [
+      "Meridian Talent - executive search deputy director",
+      "Meridian Talent - candidate relocation Brookhaven"
+     ],
+     "cross_memo": "Meridian Talent - background screening",
+     "plain": [
+      "the Meridian talent search",
+      "the Meridian deputy director search",
+      "the Meridian candidate relocation"
+     ],
+     "oblique": [
+      "hiring a new second-in-command",
+      "the recruiting firm that found our next leader",
+      "filling the vacancy at the top",
+      "a headhunter's fee for a senior post",
+      "moving a new executive across the country",
+      "finding the successor to the departed manager",
+      "the staffing agency we engaged",
+      "our hunt for senior leadership",
+      "a high-level appointment",
+      "the costly recruitment campaign",
+      "bringing in a leader from out of state",
+      "help locating a qualified candidate for the vacancy",
+      "a placement fee for an important position",
+      "paying for professional scouting",
+      "the search that ended in a hire",
+      "the leadership transition expense"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Facilities & Satellite Offices",
+   "aliases": [
+    "facilities",
+    "satellite offices",
+    "office occupancy",
+    "office space costs"
+   ],
+   "narrative": [
+    "Facilities",
+    "Satellite offices",
+    "Office occupancy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hargrove Property Management",
+     "base": 24000,
+     "memo": "Main office rent - downtown"
+    },
+    {
+     "vendor": "Westfield Commons Landlord",
+     "base": 8500,
+     "memo": "Satellite office rent - Westfield"
+    },
+    {
+     "vendor": "CleanSweep Janitorial",
+     "base": 2400,
+     "memo": "Janitorial services - all sites"
+    }
+   ],
+   "events": [
+    {
+     "key": "relocation",
+     "vendor": "Hargrove Property Management",
+     "memos": [
+      "Courthouse Annex Relocation - tenant improvement buildout",
+      "Courthouse Annex Relocation - lease termination penalty"
+     ],
+     "cross_memo": "Courthouse Annex Relocation - mover crews",
+     "plain": [
+      "the courthouse annex relocation",
+      "the annex relocation buildout",
+      "the annex lease termination"
+     ],
+     "oblique": [
+      "moving closer to where hearings take place",
+      "a change of address for the main team",
+      "the construction work in the new suite",
+      "an early exit from our old space",
+      "renovating the space we are taking over",
+      "the shift of operations across the plaza",
+      "packing up and heading elsewhere",
+      "fees for ending our previous agreement",
+      "the new location near the judges",
+      "walls and wiring for the replacement premises",
+      "transitioning the staff to a fresh setting",
+      "the big move",
+      "finishing out our new quarters",
+      "penalties for leaving early",
+      "the upheaval of changing headquarters",
+      "a physical transfer of the whole office"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "accessibility",
+     "vendor": "Evergreen Builders Collective",
+     "memos": [
+      "Evergreen Builders - ADA ramp and restroom retrofit",
+      "Evergreen Builders - automatic door install Northgate"
+     ],
+     "cross_memo": "Evergreen Builders - permit and inspection fees",
+     "plain": [
+      "the Evergreen builders ramp retrofit",
+      "the Evergreen builders restroom retrofit",
+      "the Evergreen builders door install"
+     ],
+     "oblique": [
+      "making the entrance usable for wheelchairs",
+      "a legally required upgrade for disabled visitors",
+      "construction that widened passages",
+      "changes demanded after a complaint",
+      "a renovation so every client can get inside",
+      "fixing barriers at the front of the building",
+      "work responding to a compliance notice",
+      "the one-time modification to the lobby",
+      "retrofitting the old structure",
+      "removing obstacles at the doorway",
+      "carpenters adjusting the facility for mobility needs",
+      "the inclusion-focused remodel",
+      "bringing the premises up to code",
+      "structural changes for people who cannot climb steps",
+      "the access improvement project",
+      "upgrades to meet the law"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

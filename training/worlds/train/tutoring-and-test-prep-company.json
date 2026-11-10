@@ -1,0 +1,693 @@
+{
+ "slug": "tutoring-and-test-prep-company",
+ "industry": "tutoring and test prep company",
+ "entities": [
+  "Ascend Tutoring Partners",
+  "Keystone Prep Collective",
+  "Summit Scholars Learning",
+  "Ironwood Test Academy",
+  "Lumen Study Works"
+ ],
+ "accounts": [
+  {
+   "name": "Tutor Contractor Payouts",
+   "aliases": [
+    "tutor pay",
+    "contractor payouts",
+    "tutor payroll",
+    "instructor fees",
+    "tutor stipends"
+   ],
+   "narrative": [
+    "Tutor pay",
+    "Contractor payouts",
+    "Instructor fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinecrest Payroll Services",
+     "base": 22000,
+     "memo": "Inv 4471 tutor batch payout"
+    },
+    {
+     "vendor": "Harbor Remit Clearing",
+     "base": 6400,
+     "memo": "Svc fee contractor disbursement"
+    }
+   ],
+   "events": [
+    {
+     "key": "bilingual_cohort",
+     "vendor": "Pinecrest Payroll Services",
+     "memos": [
+      "Bilingual cohort stipend — Spanish tier",
+      "Bilingual cohort stipend — retention bonus"
+     ],
+     "cross_memo": "Bilingual cohort stipend — curriculum translation",
+     "plain": [
+      "the bilingual cohort stipend",
+      "bilingual cohort stipends",
+      "the bilingual cohort payouts"
+     ],
+     "oblique": [
+      "paying the instructors who staffed the Spanish-language classes",
+      "extra money for teachers running the second-language sessions",
+      "compensation for the tutors who took on the immigrant families",
+      "the premium owed to educators working outside English",
+      "keeping the multilingual faculty from leaving",
+      "rewarding the staff who covered the new Spanish cohort",
+      "the added pay for language specialists this term",
+      "covering teachers who moved into the translated program",
+      "the bonus for tutors serving families who need interpreters",
+      "pay for instructors who ran the newly opened track",
+      "retaining the people who speak the second language",
+      "the supplemental wages for the Spanish-speaking team",
+      "payments to educators who volunteered for the extra sections",
+      "covering the premium for the cross-language faculty",
+      "money for teachers who kept the program staffed",
+      "the incentive paid to instructors in the expanded offering"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "sat_retake_surge",
+     "vendor": "Quillsmith Proctoring Co",
+     "memos": [
+      "Proctor svc — SAT retake surge — weekend",
+      "Proctor svc — SAT retake surge — rooms"
+     ],
+     "cross_memo": "SAT retake surge — facility rental",
+     "plain": [
+      "the SAT retake surge",
+      "SAT retake surges",
+      "the surge in retake proctoring"
+     ],
+     "oblique": [
+      "staffing the extra exam rooms after a flood of rescheduled test takers",
+      "hiring monitors for the surprise weekend sittings",
+      "supervising the make-up candidates who sat again",
+      "covering a rush of students retesting this quarter",
+      "the spike in people wanting another attempt",
+      "extra invigilators for the crowded morning sessions",
+      "monitors brought in on short notice for the reschedules",
+      "paying supervisors to run overflow testing days",
+      "the demand from students chasing a higher score",
+      "temporary staff for the sudden wave of resits",
+      "invigilation for the second-chance candidates",
+      "watching over the additional examinees this season",
+      "the sudden crowd of applicants wanting to retest",
+      "supervision costs when enrollment spiked for retakes",
+      "monitors needed for the packed testing calendar",
+      "the influx of repeat examinees across the region"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Digital Platform Hosting",
+   "aliases": [
+    "hosting",
+    "platform hosting",
+    "cloud hosting",
+    "server costs",
+    "site infrastructure"
+   ],
+   "narrative": [
+    "Hosting",
+    "Platform hosting",
+    "Cloud hosting"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cobalt Cloud Systems",
+     "base": 9800,
+     "memo": "Inv CC-20931 compute tier 2"
+    },
+    {
+     "vendor": "Vantage CDN Networks",
+     "base": 1900,
+     "memo": "Mnt bandwidth overage"
+    }
+   ],
+   "events": [
+    {
+     "key": "video_lesson_migration",
+     "vendor": "Cobalt Cloud Systems",
+     "memos": [
+      "Video lesson migration — storage egress",
+      "Video lesson migration — transcoding hours"
+     ],
+     "cross_memo": "Video lesson migration — archive retrieval",
+     "plain": [
+      "the video lesson migration",
+      "video lesson migrations",
+      "the migration of the lesson videos"
+     ],
+     "oblique": [
+      "moving the recorded lectures to the new servers",
+      "the cost of shifting classes off the old system",
+      "transferring the instructional clips to new storage",
+      "the one-time charges from relocating our library",
+      "re-encoding the tutorial footage for the new player",
+      "getting the course recordings onto the upgraded platform",
+      "the bills tied to rehousing our archived sessions",
+      "the spike from pulling every old lesson across",
+      "work to reformat the coursework for streaming",
+      "the heavy traffic from copying the back catalog",
+      "charges for processing the instructional media",
+      "the effort of relocating the whole video collection",
+      "retiring the legacy hosting for the lessons",
+      "bringing the old session files into the modern setup",
+      "the surge from moving instruction archives",
+      "costs of repackaging our recorded teaching"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "phishing_breach_response",
+     "vendor": "Sentinel Ridge Forensics",
+     "memos": [
+      "Incident response retainer — account lockdown",
+      "Incident response retainer — credential reset"
+     ],
+     "cross_memo": "Incident response retainer — customer notices",
+     "plain": [
+      "the phishing breach response",
+      "phishing breach responses",
+      "the response to the phishing breach"
+     ],
+     "oblique": [
+      "the forensic team called in after the credentials were stolen",
+      "hiring outside investigators when accounts were compromised",
+      "emergency work to lock out the intruders",
+      "the rush job after a fake login page fooled staff",
+      "cleaning up after an attacker reached student records",
+      "the outside experts we paid to contain the intrusion",
+      "urgent security work following the email scam",
+      "the specialists who traced how the access got out",
+      "the cost of sealing off the compromised logins",
+      "fees for the investigators who reviewed the incident",
+      "after-hours containment for the attack on our portal",
+      "outside examiners brought in to audit the damage",
+      "the emergency retainer activated this month",
+      "specialists who handled the unauthorised access event",
+      "the incident team hired to clear the mess",
+      "the response effort after our staff were tricked"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Practice Test Content Licensing",
+   "aliases": [
+    "content licensing",
+    "question bank licenses",
+    "item bank fees",
+    "curriculum licensing",
+    "content subscriptions"
+   ],
+   "narrative": [
+    "Content licensing",
+    "Question bank licenses",
+    "Item bank fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Assessment Libraries",
+     "base": 14500,
+     "memo": "Qtr item bank license renewal"
+    },
+    {
+     "vendor": "Oakmont Curriculum Press",
+     "base": 3100,
+     "memo": "Svc monthly textbook seat fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "diagnostic_bank_expansion",
+     "vendor": "Meridian Assessment Libraries",
+     "memos": [
+      "Diagnostic bank expansion — adaptive module",
+      "Diagnostic bank expansion — item calibration"
+     ],
+     "cross_memo": "Diagnostic bank expansion — analytics add-on",
+     "plain": [
+      "the diagnostic bank expansion",
+      "diagnostic bank expansions",
+      "the expansion of the diagnostic bank"
+     ],
+     "oblique": [
+      "buying more pre-test questions for the placement quizzes",
+      "adding a larger pool of starting assessments",
+      "the upgrade to our entry-level evaluation library",
+      "licensing extra screening material for new students",
+      "expanding what we can use to gauge incoming skill",
+      "the added question sets for initial benchmarking",
+      "new placement content purchased this cycle",
+      "widening our bank of intake evaluations",
+      "the extra licensed material for baseline testing",
+      "payment for the bigger starting-point question pool",
+      "unlocking more intake quizzes for the team",
+      "the additional entry exams we licensed",
+      "growing the library used to size up applicants",
+      "the purchase that broadened our readiness checks",
+      "extra pre-enrollment assessment material",
+      "the licence increase for intake screening"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "esl_curriculum_license",
+     "vendor": "Ardent Language Publishing",
+     "memos": [
+      "ESL curriculum license — tier upgrade",
+      "ESL curriculum license — teacher seats"
+     ],
+     "cross_memo": "ESL curriculum license — onboarding workshop",
+     "plain": [
+      "the ESL curriculum license",
+      "ESL curriculum licenses",
+      "the English-learning curriculum license"
+     ],
+     "oblique": [
+      "buying rights to teach English to newcomers",
+      "the upgraded package for language learners",
+      "seats purchased for the foreign-student teaching staff",
+      "the new materials for non-native speakers",
+      "renewing access for the speaking-skills programme",
+      "the broader rights to the learner workbooks",
+      "paying to unlock the newcomer lesson sets",
+      "the higher tier for second-language coursework",
+      "licensing the grammar and conversation materials",
+      "the expanded access for teachers of overseas students",
+      "rights for the beginner-level instruction set",
+      "buying the additional classroom seats for our language staff",
+      "the extra permissions for multilingual lessons",
+      "the learning package for arriving students",
+      "the spend to cover our language-acquisition titles",
+      "the step-up in our foreign-language materials"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Facility Lease and Study Space",
+   "aliases": [
+    "rent",
+    "premises",
+    "lease costs",
+    "study space",
+    "office rent"
+   ],
+   "narrative": [
+    "Rent",
+    "Premises costs",
+    "Lease costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Row Property Trust",
+     "base": 18500,
+     "memo": "Inv 0812 Suite 200 base rent"
+    },
+    {
+     "vendor": "Meadowbrook Facilities Mgmt",
+     "base": 2600,
+     "memo": "Svc CAM reconciliation"
+    }
+   ],
+   "events": [
+    {
+     "key": "satellite_campus_fitout",
+     "vendor": "Granite Row Property Trust",
+     "memos": [
+      "Satellite campus fit-out — tenant improvements",
+      "Satellite campus fit-out — permit deposit"
+     ],
+     "cross_memo": "Satellite campus fit-out — temporary furniture",
+     "plain": [
+      "the satellite campus fit-out",
+      "satellite campus fit-outs",
+      "the fit-out of the satellite site"
+     ],
+     "oblique": [
+      "outfitting the new second location for classes",
+      "the build-out of a branch we opened across town",
+      "the interior work to ready the extra teaching floor",
+      "converting raw space into a working learning center",
+      "the construction charges for our expansion site",
+      "making the newly leased wing usable for students",
+      "the renovation of the additional tutoring rooms",
+      "finishing out the additional storefront for lessons",
+      "the improvements that prepared the second site",
+      "the landlord charges for readying the annex",
+      "the work to equip the new branch",
+      "setting up the additional campus we took on",
+      "the spending that made the second center open",
+      "preparing the leased suite across the river",
+      "the expense of getting the annex ready",
+      "the buildout for the branch that came online"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "flood_damage_repair",
+     "vendor": "Riverside Restoration Group",
+     "memos": [
+      "Water damage mitigation — flooring replacement",
+      "Water damage mitigation — drywall remediation"
+     ],
+     "cross_memo": "Water damage mitigation — mold testing",
+     "plain": [
+      "the water damage mitigation",
+      "water damage mitigations",
+      "the mitigation of the flood damage"
+     ],
+     "oblique": [
+      "the crew that pumped out the basement after the storm",
+      "fixing the rooms ruined by the overnight deluge",
+      "pulling up the soaked carpet and panels",
+      "the emergency crew who dried the lower floor",
+      "repairs after the pipes burst over the weekend",
+      "the contractors who stripped the waterlogged walls",
+      "the team that cleaned up the sewer backup",
+      "getting the classrooms usable again after the leak",
+      "the restoration bill from the storm surge",
+      "the crews who hauled out the ruined materials",
+      "the emergency pump-out and repair work",
+      "cleanup after the rain got inside the building",
+      "the specialists who handled the soaked interior",
+      "repairs to the studios after the inundation",
+      "the work to dry out the affected suite",
+      "the restoration of the rooms hit by the flood"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Student Acquisition and Marketing",
+   "aliases": [
+    "marketing",
+    "lead generation",
+    "ad spend",
+    "student acquisition",
+    "promotions"
+   ],
+   "narrative": [
+    "Marketing",
+    "Lead generation",
+    "Ad spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Beacon Digital Ads",
+     "base": 8200,
+     "memo": "Inv BDA-5520 search campaign"
+    },
+    {
+     "vendor": "Spotlight Social Agency",
+     "base": 3500,
+     "memo": "Svc monthly content retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "referral_drive",
+     "vendor": "Beacon Digital Ads",
+     "memos": [
+      "Referral drive — rewards catalog",
+      "Referral drive — fulfillment hold"
+     ],
+     "cross_memo": "Referral drive — gift card promotion",
+     "plain": [
+      "the referral drive",
+      "referral drives",
+      "the referral drive campaign"
+     ],
+     "oblique": [
+      "the reward program that paid families for recommendations",
+      "bonuses for students who brought friends in",
+      "the incentive push that rewarded word of mouth",
+      "gifts handed to families who sent us new clients",
+      "the campaign that thanked people for introductions",
+      "paying out for every new enrollment referred by a parent",
+      "the spring program that rewarded loyal families",
+      "the bounty scheme for recommendations",
+      "prizes for the families spreading the word",
+      "the thank-you rewards for enrollment introductions",
+      "the push to get current students recruiting",
+      "the gift set we sent to recommenders",
+      "perks for those who vouched for us",
+      "the rewards bundle sent to introducers",
+      "the initiative that encouraged families to recommend us",
+      "the goodwill payouts for sending new applicants"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "influencer_partnership",
+     "vendor": "Juniper Creator Network",
+     "memos": [
+      "Creator partnership — sponsored video",
+      "Creator partnership — usage rights"
+     ],
+     "cross_memo": "Creator partnership — affiliate payout",
+     "plain": [
+      "the creator partnership",
+      "creator partnerships",
+      "the influencer partnership"
+     ],
+     "oblique": [
+      "paying online personalities to promote the program",
+      "sponsored posts from well-known study accounts",
+      "the fee for a popular educator's endorsement",
+      "the deal with a video maker who reviewed our service",
+      "content from outside personalities about our classes",
+      "the paid collaboration with a study vlogger",
+      "buying the right to reuse a creator's clips",
+      "the endorsement fees for the platform stars",
+      "compensation to outside voices who spoke for us",
+      "the sponsorship that put our name in front of viewers",
+      "the arrangement with a social media educator",
+      "rights to a third-party reviewer's footage",
+      "paying a popular account to feature our tutoring",
+      "money for online figures who vouched for the brand",
+      "the sponsored content from a study community leader",
+      "the agreement with an independent creator"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Assessment Proctoring and Exam Fees",
+   "aliases": [
+    "exam fees",
+    "proctoring",
+    "test center fees",
+    "testing fees",
+    "exam admin"
+   ],
+   "narrative": [
+    "Exam fees",
+    "Proctoring",
+    "Test center fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Quillsmith Proctoring Co",
+     "base": 9400,
+     "memo": "Svc monthly proctor roster"
+    },
+    {
+     "vendor": "Testward Registration Svc",
+     "base": 1800,
+     "memo": "Inv TRS-0077 candidate portal"
+    }
+   ],
+   "events": [
+    {
+     "key": "remote_proctor_license",
+     "vendor": "Quillsmith Proctoring Co",
+     "memos": [
+      "Remote proctoring — platform license",
+      "Remote proctoring — camera module"
+     ],
+     "cross_memo": "Remote proctoring — onboarding training",
+     "plain": [
+      "the remote proctoring license",
+      "remote proctoring licenses",
+      "the remote proctoring platform"
+     ],
+     "oblique": [
+      "the software to watch exams from home",
+      "buying the online monitoring tool",
+      "the new system for supervising students at home",
+      "the annual access for the virtual invigilation tool",
+      "the subscription that lets us supervise from afar",
+      "the upgrade for at-home exam monitoring",
+      "the webcam software package we licensed",
+      "paying for the tool that observes remote test takers",
+      "the new suite for checking candidates online",
+      "the cost of the virtual supervision seats",
+      "the service that keeps an eye on home exams",
+      "the monitoring layer added to our online testing",
+      "the access we bought for distance examinations",
+      "the extra seats for observing online sittings",
+      "renewal of the at-home invigilation system",
+      "the licence that covers distant candidates"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "accessibility_accommodations",
+     "vendor": "Pathways Access Services",
+     "memos": [
+      "Accommodation services — extended time scribes",
+      "Accommodation services — assistive technology"
+     ],
+     "cross_memo": "Accommodation services — assessor fees",
+     "plain": [
+      "the accommodation services",
+      "accommodation services",
+      "the accommodations program"
+     ],
+     "oblique": [
+      "the scribes who helped students who needed support",
+      "the adaptive equipment for candidates with disabilities",
+      "extra time arranged for test takers with conditions",
+      "the specialists who arranged fair access to exams",
+      "the aids provided for students with learning needs",
+      "outside help for candidates who require adjustments",
+      "the cost of making exams usable for everyone",
+      "the reader and note-taker support we arranged",
+      "the assistive gear loaned to applicants",
+      "arrangements that let every candidate sit comfortably",
+      "the fees for the equity support staff",
+      "the adjustments made for students with special requirements",
+      "the help hired for candidates needing aid",
+      "support paid so students can take their exams",
+      "the workarounds for applicants with impairments",
+      "the inclusion measures for the testing day"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Tutor Recruiting and Background Checks",
+   "aliases": [
+    "recruiting",
+    "hiring costs",
+    "tutor screening",
+    "background checks",
+    "talent acquisition"
+   ],
+   "narrative": [
+    "Recruiting",
+    "Hiring costs",
+    "Tutor screening"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crestline Screening Labs",
+     "base": 2400,
+     "memo": "Inv CSL-3190 background batch"
+    },
+    {
+     "vendor": "Northgate Staffing Partners",
+     "base": 4100,
+     "memo": "Svc recruiter placement fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "tutor_surge_hiring",
+     "vendor": "Northgate Staffing Partners",
+     "memos": [
+      "Mass hiring event — placement fees",
+      "Mass hiring event — onboarding kits"
+     ],
+     "cross_memo": "Mass hiring event — travel reimbursement",
+     "plain": [
+      "the mass hiring event",
+      "mass hiring events",
+      "the hiring event surge"
+     ],
+     "oblique": [
+      "the flood of applicants we interviewed this quarter",
+      "bringing on a large new group of instructors fast",
+      "the recruiting push to fill every open teaching slot",
+      "the bulk onboarding of fresh staff",
+      "the drive to add teachers for the busy season",
+      "the intake of a big class of new faculty",
+      "the rapid expansion of our teaching bench",
+      "the sourcing blitz that filled the calendar",
+      "the recruiter fees for the crowded hiring weeks",
+      "bringing a wave of part-time teachers aboard",
+      "getting many new people ready to teach at once",
+      "the quick turnaround on staffing requests",
+      "the extra headhunting we did for instructors",
+      "the big intake of tutors for the season",
+      "the mass sourcing we completed in one month",
+      "the surge in people we brought into the team"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "phishing_candidate_fraud",
+     "vendor": "Vigil Identity Verify",
+     "memos": [
+      "Identity verification — expedited checks",
+      "Identity verification — fraud review"
+     ],
+     "cross_memo": "Identity verification — applicant refunds",
+     "plain": [
+      "the identity verification",
+      "identity verifications",
+      "the identity verification review"
+     ],
+     "oblique": [
+      "the extra checks on applicants who seemed fake",
+      "the rush screening of suspicious candidate profiles",
+      "confirming that the people applying were real",
+      "the due diligence on bogus applications",
+      "the audit of applicants using stolen papers",
+      "the review triggered by fraudulent sign-ups",
+      "the costly vetting after impostors got through",
+      "the investigation of candidates with forged credentials",
+      "the checks run on every doubtful file",
+      "the work to weed out fake applicants",
+      "the screening of profiles that did not match",
+      "the scrutiny of people posing as teachers",
+      "the emergency verification run this month",
+      "the cleanup of applicants we could not trust",
+      "the fees for confirming who was really applying",
+      "the sweep to remove dishonest candidates"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-haiku-5-5"
+}

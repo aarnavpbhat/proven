@@ -1,0 +1,830 @@
+{
+ "slug": "organic-grocery-chain",
+ "industry": "organic grocery chain",
+ "entities": [
+  "Greenfurrow Market Co",
+  "Wildroot Organics Inc",
+  "Harvest Hollow Grocers",
+  "Sunsprout Natural Foods LLC",
+  "Meadowbrook Whole Pantry"
+ ],
+ "accounts": [
+  {
+   "name": "Cold Chain & Refrigeration",
+   "aliases": [
+    "cold chain",
+    "refrigeration",
+    "cooler upkeep",
+    "cold storage costs",
+    "chiller maintenance"
+   ],
+   "narrative": [
+    "Cold chain",
+    "Refrigeration",
+    "Cooler upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Arctic Pine Service Co",
+     "base": 14500,
+     "memo": "Monthly refrigeration service contract"
+    },
+    {
+     "vendor": "Frostline Monitoring",
+     "base": 3200,
+     "memo": "Temp sensor monitoring subscription"
+    },
+    {
+     "vendor": "CoolGrid Energy Partners",
+     "base": 9800,
+     "memo": "Walk-in cooler energy surcharge"
+    }
+   ],
+   "events": [
+    {
+     "key": "glassdoor",
+     "vendor": "Arctic Pine Service Co",
+     "memos": [
+      "Glass door retrofit — reach-in cases WO 48821",
+      "Glass door retrofit — gasket and hinge kits PO 77310"
+     ],
+     "cross_memo": "Glass door retrofit — floor protection and cleanup",
+     "plain": [
+      "the glass door retrofit",
+      "the glass door retrofit program",
+      "glass door retrofit work"
+     ],
+     "oblique": [
+      "swapping open dairy cases for enclosed units",
+      "the energy-saving case upgrade",
+      "closing up the open-front displays",
+      "upgrades that cut our power draw",
+      "the capital-style fix for lost cold air",
+      "what the utility rebate application required",
+      "the display refit across the stores",
+      "enclosing the cases at the flagship",
+      "a sustainability pledge to lower consumption",
+      "the project corporate approved in the spring",
+      "new enclosures for the produce wall",
+      "cutting waste from warm air spilling out",
+      "the make-over of the dairy aisle",
+      "the retrofit our regional ops lead pushed for",
+      "work that went in after the audit",
+      "the fix for chronically warm shelves"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "ammonia",
+     "vendor": "Polarbridge Industrial LLC",
+     "memos": [
+      "Ammonia leak response — emergency pump-out WO 50233",
+      "Ammonia leak response — hazmat certification PO 81207"
+     ],
+     "cross_memo": "Ammonia leak response — temporary store closure supplies",
+     "plain": [
+      "the ammonia leak response",
+      "ammonia leak response costs",
+      "the ammonia leak"
+     ],
+     "oblique": [
+      "the emergency at the distribution hub",
+      "the safety incident in the loading area",
+      "what the fire marshal required us to do",
+      "clearing the building overnight",
+      "the unplanned shutdown of the big freezer",
+      "a scare that sent staff home",
+      "the compliance visit that followed the accident",
+      "specialists called in on a weekend",
+      "the expensive night in the warehouse",
+      "fallout from the failed line",
+      "an event we reported to the state",
+      "the contractor crew who sealed it off",
+      "what our insurer asked us to document",
+      "the hazardous episode at the depot",
+      "the urgent job nobody budgeted for",
+      "cleaning up after the pipe failure"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Produce Sourcing & Freight",
+   "aliases": [
+    "produce freight",
+    "inbound freight",
+    "farm freight",
+    "produce logistics",
+    "sourcing freight"
+   ],
+   "narrative": [
+    "Produce freight",
+    "Inbound freight",
+    "Farm freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Valleyline Trucking",
+     "base": 26000,
+     "memo": "Weekly farm-to-DC linehaul"
+    },
+    {
+     "vendor": "Orchard Route Logistics",
+     "base": 12400,
+     "memo": "Regional produce delivery"
+    },
+    {
+     "vendor": "CrateWorks Pooling",
+     "base": 4100,
+     "memo": "Reusable crate pool rental"
+    }
+   ],
+   "events": [
+    {
+     "key": "hailstorm",
+     "vendor": "Valleyline Trucking",
+     "memos": [
+      "Hailstorm reroute — northern growers expedite PO 66012",
+      "Hailstorm reroute — detour mileage surcharge WO 66013"
+     ],
+     "cross_memo": "Hailstorm reroute — spoiled load disposal",
+     "plain": [
+      "the hailstorm reroute",
+      "hailstorm reroute charges",
+      "the hailstorm reroute surcharge"
+     ],
+     "oblique": [
+      "the weather event up north",
+      "scrambling to find alternate growers",
+      "longer trips to reach other farms",
+      "a crop disaster that shifted our supply",
+      "the emergency rebuild of the berry supply chain",
+      "trucks sent hundreds of miles out of the way",
+      "last-minute pickups from distant suppliers",
+      "the scramble after the orchards were damaged",
+      "extra miles to keep shelves full",
+      "a sudden change in where fruit came from",
+      "paying premium rates to cover shortfalls",
+      "rerouting around the damaged region",
+      "what we paid to avoid empty shelves",
+      "unexpected sourcing from a second state",
+      "a rush job to replace lost harvests",
+      "the detours our buyers requested"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "kelpco",
+     "vendor": "Tidewater Sea Greens Co",
+     "memos": [
+      "Seaweed pilot shipments — Pacific kelp trial PO 70441",
+      "Seaweed pilot shipments — chilled air freight WO 70442"
+     ],
+     "cross_memo": "Seaweed pilot shipments — specialty packaging",
+     "plain": [
+      "the seaweed pilot shipments",
+      "seaweed pilot shipment costs",
+      "the seaweed pilot"
+     ],
+     "oblique": [
+      "a test run of an unfamiliar category",
+      "the experiment our merchants launched",
+      "bringing in something from the coast",
+      "samples flown in to gauge demand",
+      "the trial that marketing wanted",
+      "a new supplier we were trying out",
+      "testing whether shoppers would buy it",
+      "the one-time shipment from the ocean",
+      "a small bet on a trending item",
+      "the exploratory order for three stores",
+      "what we spent proving out a concept",
+      "a speculative purchase from overseas",
+      "the product line we may not keep",
+      "an initiative from the category team",
+      "expedited deliveries for a limited launch",
+      "the pilot our CEO championed"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Store Shrink & Spoilage Disposal",
+   "aliases": [
+    "shrink",
+    "spoilage",
+    "waste disposal",
+    "food waste",
+    "shrink and spoilage"
+   ],
+   "narrative": [
+    "Shrink",
+    "Spoilage",
+    "Food waste"
+   ],
+   "recurring": [
+    {
+     "vendor": "Compost Circle Hauling",
+     "base": 7600,
+     "memo": "Organic waste pickup all stores"
+    },
+    {
+     "vendor": "Gleanwell Food Rescue",
+     "base": 2400,
+     "memo": "Surplus donation coordination fee"
+    },
+    {
+     "vendor": "Binwise Services",
+     "base": 3900,
+     "memo": "Dumpster and compactor rental"
+    }
+   ],
+   "events": [
+    {
+     "key": "powercut",
+     "vendor": "Compost Circle Hauling",
+     "memos": [
+      "Blackout inventory writeoff — hauling extra loads WO 31090",
+      "Blackout inventory writeoff — dairy dumpster pulls PO 31091"
+     ],
+     "cross_memo": "Blackout inventory writeoff — generator fuel",
+     "plain": [
+      "the blackout inventory writeoff",
+      "blackout inventory writeoff hauling",
+      "the blackout writeoff"
+     ],
+     "oblique": [
+      "the grid failure that hit three stores",
+      "food we threw out after the outage",
+      "a storm that knocked out electricity",
+      "everything that warmed up and was lost",
+      "the claim we filed with our carrier",
+      "a long weekend without service",
+      "the utility problem in the east region",
+      "product that couldn't be saved",
+      "a loss event the insurers reviewed",
+      "the disposal tied to the failed supply of electricity",
+      "a regional emergency declaration",
+      "tossing the contents of the coolers",
+      "the aftermath of the severe weather",
+      "stores dark for two days",
+      "pallets of perishables carted away",
+      "an unforeseen disaster in the south"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "recall",
+     "vendor": "Cleanharbor Disposal Group",
+     "memos": [
+      "Sprout recall destruction — certified landfill WO 32555",
+      "Sprout recall destruction — chain-of-custody docs PO 32556"
+     ],
+     "cross_memo": "Sprout recall destruction — customer notice mailing",
+     "plain": [
+      "the sprout recall destruction",
+      "sprout recall destruction fees",
+      "the sprout recall"
+     ],
+     "oblique": [
+      "the safety notice from a grower",
+      "product pulled at the regulator's request",
+      "a contamination scare involving a supplier",
+      "the withdrawal of an item from every shelf",
+      "what the health department told us to do",
+      "cleanup after a supplier's failed testing",
+      "items we couldn't legally sell",
+      "the federal notice in the fall",
+      "returning shoppers' purchases and disposing of stock",
+      "a food safety episode",
+      "the lot numbers flagged by the lab",
+      "a vendor-caused problem we absorbed",
+      "purging the affected packages",
+      "a mandated destruction",
+      "the regulatory clean-out",
+      "something our quality team escalated"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Bulk Bin & Packaging Supplies",
+   "aliases": [
+    "bulk bins",
+    "packaging",
+    "bulk supplies",
+    "bags and containers",
+    "packaging supplies"
+   ],
+   "narrative": [
+    "Bulk bins",
+    "Packaging",
+    "Bags and containers"
+   ],
+   "recurring": [
+    {
+     "vendor": "Leafwrap Packaging",
+     "base": 11200,
+     "memo": "Compostable bags and film"
+    },
+    {
+     "vendor": "Scoopwell Fixtures",
+     "base": 3600,
+     "memo": "Bulk bin scoops and gravity bins"
+    },
+    {
+     "vendor": "Jarhouse Supply",
+     "base": 5800,
+     "memo": "Glass jars and lids bulk aisle"
+    }
+   ],
+   "events": [
+    {
+     "key": "refill",
+     "vendor": "Jarhouse Supply",
+     "memos": [
+      "Bring-your-own-jar launch — deposit jars WO 12044",
+      "Bring-your-own-jar launch — scale tare labels PO 12045"
+     ],
+     "cross_memo": "Bring-your-own-jar launch — shelf signage",
+     "plain": [
+      "the bring-your-own-jar launch",
+      "bring-your-own-jar launch supplies",
+      "the jar launch"
+     ],
+     "oblique": [
+      "the zero-waste initiative rolled out in spring",
+      "letting shoppers bring their own containers",
+      "a program meant to cut single-use items",
+      "the eco campaign in the flagship stores",
+      "what we bought to start the reuse scheme",
+      "the green pledge we made publicly",
+      "a customer-requested option",
+      "the rollout the sustainability team ran",
+      "upfront stock for a new service",
+      "an investment in reuse",
+      "the pilot for refillable shopping",
+      "setting up the in-store refill concept",
+      "materials for the environmental push",
+      "a promise from our annual report",
+      "the new way of buying staples",
+      "our board's environmental goal"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "plasticban",
+     "vendor": "Evergreen Paper Mills Ltd",
+     "memos": [
+      "Statewide film ban conversion — paper sacks PO 12980",
+      "Statewide film ban conversion — rush air cargo WO 12981"
+     ],
+     "cross_memo": "Statewide film ban conversion — checkout bag stock",
+     "plain": [
+      "the statewide film ban conversion",
+      "film ban conversion costs",
+      "the film ban conversion"
+     ],
+     "oblique": [
+      "the new law that took effect",
+      "a legal change affecting every register",
+      "what lawmakers forced on us",
+      "switching materials ahead of a deadline",
+      "replacing what we used to hand out",
+      "a compliance deadline that arrived early",
+      "the mandated material swap",
+      "an ordinance that caught suppliers short",
+      "emergency orders after the legislation passed",
+      "the sudden shift in what's allowed",
+      "a statute with a hard start date",
+      "rush purchasing at higher prices",
+      "the change our counsel flagged",
+      "an unplanned supply scramble",
+      "new rules at the checkout lane",
+      "the government-driven changeover"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Merchandising & Fixtures",
+   "aliases": [
+    "merchandising",
+    "fixtures",
+    "store displays",
+    "shelving costs",
+    "display fixtures"
+   ],
+   "narrative": [
+    "Merchandising",
+    "Fixtures",
+    "Store displays"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shelfcraft Fixtures",
+     "base": 8300,
+     "memo": "Gondola shelving maintenance"
+    },
+    {
+     "vendor": "Chalkboard Signs Studio",
+     "base": 2100,
+     "memo": "Price tag and signage printing"
+    },
+    {
+     "vendor": "DisplayRoot Merchandising",
+     "base": 9600,
+     "memo": "Seasonal endcap setup"
+    }
+   ],
+   "events": [
+    {
+     "key": "remodel",
+     "vendor": "Shelfcraft Fixtures",
+     "memos": [
+      "Maple Street reset — new gondolas WO 90112",
+      "Maple Street reset — install labor PO 90113"
+     ],
+     "cross_memo": "Maple Street reset — overnight crew meals",
+     "plain": [
+      "the maple street reset",
+      "maple street reset costs",
+      "the maple street reset work"
+     ],
+     "oblique": [
+      "the single-store overhaul",
+      "redoing the aisles at our busiest location",
+      "a layout change meant to lift sales",
+      "the full redesign of one store",
+      "what the flagship needed to modernize",
+      "the walls we moved over a weekend",
+      "reworking how shoppers flow through",
+      "a store we are showcasing to investors",
+      "the makeover at the downtown unit",
+      "relocating departments inside the building",
+      "the reconfiguration the district manager asked for",
+      "new shelving across the whole floor",
+      "the project that closed the store briefly",
+      "an experiment in floor planning",
+      "refreshing the oldest location",
+      "the layout trial in one market"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "holidaypop",
+     "vendor": "Lumina Festive Displays",
+     "memos": [
+      "Harvest festival pop-up — hay bale displays PO 91088",
+      "Harvest festival pop-up — lighting rental WO 91089"
+     ],
+     "cross_memo": "Harvest festival pop-up — staff costumes",
+     "plain": [
+      "the harvest festival pop-up",
+      "harvest festival pop-up displays",
+      "the festival pop-up"
+     ],
+     "oblique": [
+      "the autumn event for shoppers",
+      "a seasonal activation in the parking lots",
+      "the fall promotion marketing planned",
+      "decorations for a community gathering",
+      "a one-weekend spectacle",
+      "the celebration we hosted for neighbors",
+      "a themed push before the holidays",
+      "what we staged outside the stores",
+      "a promotion with local farmers",
+      "temporary setups for a customer party",
+      "the event that drew crowds",
+      "theatrical touches for the season",
+      "an annual tradition we revived",
+      "props and lighting for a promotion",
+      "a limited-time attraction",
+      "our fall marketing calendar highlight"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Store Labor Agency & Training",
+   "aliases": [
+    "agency labor",
+    "temp staffing",
+    "store training",
+    "contract labor",
+    "staffing agency fees"
+   ],
+   "narrative": [
+    "Agency labor",
+    "Temp staffing",
+    "Contract labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shiftbridge Staffing",
+     "base": 24500,
+     "memo": "Temp stockers and cashiers"
+    },
+    {
+     "vendor": "Fresh Skills Academy",
+     "base": 3800,
+     "memo": "Produce and cheese training modules"
+    },
+    {
+     "vendor": "Nightcrew Cleaning Co",
+     "base": 9900,
+     "memo": "Overnight store cleaning"
+    }
+   ],
+   "events": [
+    {
+     "key": "strike",
+     "vendor": "Shiftbridge Staffing",
+     "memos": [
+      "Warehouse picket coverage — replacement pickers WO 55410",
+      "Warehouse picket coverage — premium shift rates PO 55411"
+     ],
+     "cross_memo": "Warehouse picket coverage — security guards",
+     "plain": [
+      "the warehouse picket coverage",
+      "warehouse picket coverage staffing",
+      "the picket coverage"
+     ],
+     "oblique": [
+      "the labor dispute at the depot",
+      "filling in for people who walked out",
+      "an unexpected work stoppage",
+      "the standoff between management and the union",
+      "keeping product moving during a walkout",
+      "the weeks when employees were out",
+      "emergency headcount during negotiations",
+      "an escalation we hadn't planned for",
+      "bridging the gap in our logistics team",
+      "the premium we paid for willing hands",
+      "a contract fight that disrupted operations",
+      "what HR arranged during the impasse",
+      "covering absent staff at higher pay",
+      "the bargaining breakdown",
+      "extra bodies for the loading dock",
+      "the disruption in our supply hub"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "cheesemonger",
+     "vendor": "Alpine Fromage Institute",
+     "memos": [
+      "Artisan cheese certification — instructor fees WO 56120",
+      "Artisan cheese certification — tasting kits PO 56121"
+     ],
+     "cross_memo": "Artisan cheese certification — travel to seminar",
+     "plain": [
+      "the artisan cheese certification",
+      "artisan cheese certification fees",
+      "the cheese certification"
+     ],
+     "oblique": [
+      "the specialty credentials our deli staff earned",
+      "upskilling the counter team",
+      "a professional course for select employees",
+      "education we bought for the dairy experts",
+      "the program that lets us advertise expertise",
+      "a credential that supports premium pricing",
+      "schooling for a handful of people",
+      "an investment in staff knowledge",
+      "a corporate learning initiative",
+      "the workshop series in the spring",
+      "a qualification our competitors already hold",
+      "coaching led by outside instructors",
+      "teaching staff about aging and flavor",
+      "the credentialing push from merchandising",
+      "a quality-focused training drive",
+      "what we spent on professional development"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Loyalty & Local Marketing",
+   "aliases": [
+    "loyalty program",
+    "local marketing",
+    "community marketing",
+    "member rewards",
+    "customer marketing"
+   ],
+   "narrative": [
+    "Loyalty program",
+    "Local marketing",
+    "Member rewards"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sproutclub Rewards Platform",
+     "base": 7900,
+     "memo": "Loyalty app license and hosting"
+    },
+    {
+     "vendor": "Neighborly Print & Mail",
+     "base": 4300,
+     "memo": "Weekly circular printing"
+    },
+    {
+     "vendor": "FarmFriend Media",
+     "base": 5200,
+     "memo": "Local radio and social ads"
+    }
+   ],
+   "events": [
+    {
+     "key": "doublepoints",
+     "vendor": "Sproutclub Rewards Platform",
+     "memos": [
+      "Double points weekend — liability true-up WO 22071",
+      "Double points weekend — extra API calls PO 22072"
+     ],
+     "cross_memo": "Double points weekend — email blast",
+     "plain": [
+      "the double points weekend",
+      "double points weekend costs",
+      "the double points promotion"
+     ],
+     "oblique": [
+      "a promotion that doubled shopper earnings",
+      "the surge in redemptions that followed",
+      "what the rewards giveaway cost us",
+      "an incentive aimed at winning back lapsed members",
+      "the frenzy at registers over a holiday",
+      "a limited-time boost for app users",
+      "extra generosity toward customers",
+      "the stunt that spiked traffic",
+      "a campaign that overran its forecast",
+      "what we paid to drive foot traffic",
+      "the sale event our CMO approved",
+      "a marketing gamble for members",
+      "an accounting adjustment tied to unclaimed perks",
+      "a short burst of enhanced benefits",
+      "the deal that brought in new sign-ups",
+      "a customer thank-you effort"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "farmtour",
+     "vendor": "Bramblefield Events Co",
+     "memos": [
+      "Farm-to-table tour series — bus charters PO 23305",
+      "Farm-to-table tour series — guest chef stipends WO 23306"
+     ],
+     "cross_memo": "Farm-to-table tour series — grower gift baskets",
+     "plain": [
+      "the farm-to-table tour series",
+      "farm-to-table tour costs",
+      "the tour series"
+     ],
+     "oblique": [
+      "outings we hosted for our best shoppers",
+      "visits to the fields where food grows",
+      "an experiential program for loyal customers",
+      "the day trips that built brand affinity",
+      "events letting members meet suppliers",
+      "a series of excursions in summer",
+      "hospitality for invited guests",
+      "a community-building initiative",
+      "rides out to local farms",
+      "the storytelling campaign with growers",
+      "an immersive way to promote sourcing",
+      "curated gatherings with chefs",
+      "a goodwill outreach project",
+      "the weekend programs marketing arranged",
+      "tastings held out in the countryside",
+      "an effort to show where products originate"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Facilities & Utilities",
+   "aliases": [
+    "facilities",
+    "utilities",
+    "store occupancy",
+    "rent and utilities",
+    "occupancy costs"
+   ],
+   "narrative": [
+    "Facilities",
+    "Utilities",
+    "Store occupancy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightwater Properties",
+     "base": 30000,
+     "memo": "Monthly lease payments HQ and DC"
+    },
+    {
+     "vendor": "Summit Power & Gas",
+     "base": 18700,
+     "memo": "Electric and gas all locations"
+    },
+    {
+     "vendor": "Cityflow Water Authority",
+     "base": 2900,
+     "memo": "Water and sewer charges"
+    }
+   ],
+   "events": [
+    {
+     "key": "solar",
+     "vendor": "Summit Power & Gas",
+     "memos": [
+      "Rooftop solar interconnect — grid permit fees WO 40890",
+      "Rooftop solar interconnect — metering upgrade PO 40891"
+     ],
+     "cross_memo": "Rooftop solar interconnect — roof inspection",
+     "plain": [
+      "the rooftop solar interconnect",
+      "rooftop solar interconnect fees",
+      "the solar interconnect"
+     ],
+     "oblique": [
+      "tying our own power generation into the network",
+      "paperwork to feed energy back",
+      "the clean energy installation's final step",
+      "what the utility charged to flip the switch",
+      "getting panels approved to go live",
+      "a green-power project we completed",
+      "fees tied to producing our own electricity",
+      "the step before savings begin",
+      "the environmental investment at the warehouse",
+      "a hookup our engineers scheduled",
+      "regulatory costs for the renewable build",
+      "connecting new equipment to the street lines",
+      "the energy initiative from corporate",
+      "readying the roof array for operation",
+      "what it took to start generating",
+      "the net-metering setup"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "pestcontrol",
+     "vendor": "Pinnacle Pest Defense",
+     "memos": [
+      "Rodent exclusion overhaul — dock sealing WO 41300",
+      "Rodent exclusion overhaul — monitoring stations PO 41301"
+     ],
+     "cross_memo": "Rodent exclusion overhaul — product quarantine",
+     "plain": [
+      "the rodent exclusion overhaul",
+      "rodent exclusion overhaul work",
+      "the rodent overhaul"
+     ],
+     "oblique": [
+      "the infestation scare at the receiving dock",
+      "an inspector's citation we had to answer",
+      "keeping unwelcome critters out",
+      "the sealing of gaps around the building",
+      "a hygiene problem we fixed fast",
+      "what the health authority required",
+      "measures after sightings in the stockroom",
+      "a threat to our food safety score",
+      "expert crews brought in for weeks",
+      "a cleanliness failure flagged in an audit",
+      "blocking entry points at the back of the store",
+      "the urgent project after a complaint",
+      "a battle against pests in the warehouse",
+      "the remediation our compliance team scoped",
+      "traps and barriers along the loading area",
+      "the follow-up to a failed inspection"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

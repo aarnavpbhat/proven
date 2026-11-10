@@ -1,0 +1,723 @@
+{
+ "slug": "dog-boarding-and-daycare-chain",
+ "industry": "dog boarding and daycare chain",
+ "entities": [
+  "Tailwind Pet Resorts",
+  "Happy Haven Dog Lodges",
+  "Bark & Bunk Co.",
+  "Paws Ridge Daycare Group",
+  "Waggle Lodge Holdings"
+ ],
+ "accounts": [
+  {
+   "name": "Kennel Supplies & Bedding",
+   "aliases": [
+    "kennel supplies",
+    "bedding spend",
+    "supplies and bedding",
+    "kennel consumables",
+    "bedding and linens"
+   ],
+   "narrative": [
+    "Kennel supplies",
+    "Bedding spend",
+    "Kennel consumables"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cozy Crate Supply",
+     "base": 9200,
+     "memo": "Monthly raised cot and bedding restock"
+    },
+    {
+     "vendor": "LinenLoop Services",
+     "base": 6400,
+     "memo": "Weekly linen laundering all sites"
+    },
+    {
+     "vendor": "Chewline Distributors",
+     "base": 3100,
+     "memo": "Toys and enrichment items restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "mattress",
+     "vendor": "Cozy Crate Supply",
+     "memos": [
+      "Orthopedic mattress swap — senior suites Denver",
+      "Orthopedic mattress swap — foam cores Aurora"
+     ],
+     "cross_memo": "Orthopedic mattress swap — disposal hauling",
+     "plain": [
+      "the orthopedic mattress swap",
+      "the mattress swap in the senior suites",
+      "the orthopedic mattress swap program"
+     ],
+     "oblique": [
+      "replacing worn sleeping surfaces for older guests",
+      "a refresh of the comfort gear for aging pets",
+      "the upgrade to joint-friendly rest gear",
+      "new beds for elderly boarders",
+      "retiring the flattened sleeping pads",
+      "a comfort overhaul for geriatric guests",
+      "what we bought after owners complained about stiff dogs",
+      "the special order for premium rest gear",
+      "swapping out lumpy pads",
+      "the senior guest comfort project",
+      "new cushions",
+      "the replacement of tired sleep surfaces at two locations",
+      "an upgrade requested by the veterinary partners",
+      "refreshing the gear that supports achy hips",
+      "the one-time purchase for our oldest clientele",
+      "the sleeping gear refresh"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "flea",
+     "vendor": "PestGuard Biologicals",
+     "memos": [
+      "Flea outbreak response — kennel treatment Tulsa",
+      "Flea outbreak response — facility fogging Tulsa"
+     ],
+     "cross_memo": "Flea outbreak response — temporary closure credits",
+     "plain": [
+      "the flea outbreak response",
+      "the flea outbreak treatment in Tulsa",
+      "the flea outbreak cleanup"
+     ],
+     "oblique": [
+      "dealing with the parasite scare at one site",
+      "the emergency bug eradication effort",
+      "clearing out the itchy infestation",
+      "the sanitizing push after guests brought in pests",
+      "an unplanned deep disinfecting campaign",
+      "the pest scare that shut down some runs",
+      "chemical treatments done on short notice",
+      "getting rid of the biting insects",
+      "the sudden need to disinfect every suite",
+      "the response to a customer complaint about scratching",
+      "emergency extermination work",
+      "the cleanup after the infestation was found",
+      "the pest control emergency",
+      "keeping the critters from spreading to other locations",
+      "the facility-wide sanitizing job",
+      "specialist treatment for the invasion"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Pet Food & Treats",
+   "aliases": [
+    "pet food",
+    "food and treats",
+    "feeding costs",
+    "meal program",
+    "food spend"
+   ],
+   "narrative": [
+    "Pet food",
+    "Feeding costs",
+    "Food spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kibble Kingdom Wholesale",
+     "base": 18500,
+     "memo": "Standard kibble bulk order all sites"
+    },
+    {
+     "vendor": "Fresh Fetch Meals",
+     "base": 11200,
+     "memo": "Fresh-cooked meal add-on supply"
+    },
+    {
+     "vendor": "Biscuit Barn Bakery",
+     "base": 2400,
+     "memo": "Daily treat bags for daycare"
+    }
+   ],
+   "events": [
+    {
+     "key": "grainfree",
+     "vendor": "Kibble Kingdom Wholesale",
+     "memos": [
+      "Grain-free recall replacement — lot swap Omaha",
+      "Grain-free recall replacement — expedited freight"
+     ],
+     "cross_memo": "Grain-free recall replacement — customer refunds",
+     "plain": [
+      "the grain-free recall replacement",
+      "the grain-free lot swap",
+      "the recall replacement stock"
+     ],
+     "oblique": [
+      "pulling a tainted batch and restocking",
+      "the supplier safety notice and its fallout",
+      "buying again what we had to throw away",
+      "making guests whole after contaminated bags were found",
+      "the emergency re-order of the affected line",
+      "the safety withdrawal of one product line",
+      "discarding stock the manufacturer warned about",
+      "the hurried reorder from another source",
+      "what it cost to replace condemned inventory",
+      "the manufacturer's warning on one formula",
+      "a regulatory notice that emptied our shelves",
+      "the scramble to feed guests after a bad shipment",
+      "a quality problem upstream",
+      "replacing unusable inventory",
+      "the withdrawal of a popular formula",
+      "an unexpected restock after a safety alert"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "holiday",
+     "vendor": "Gourmet Gnaw Co.",
+     "memos": [
+      "Holiday feast boxes — turkey toppers all sites",
+      "Holiday feast boxes — seasonal gift packaging"
+     ],
+     "cross_memo": "Holiday feast boxes — promo postage",
+     "plain": [
+      "the holiday feast boxes",
+      "the holiday feast turkey toppers",
+      "the holiday feast gift program"
+     ],
+     "oblique": [
+      "the festive meals we served in December-style peak season",
+      "special seasonal dinners for boarders",
+      "a celebratory dining promotion",
+      "the extra-special menu for guests staying over the winter break",
+      "gift-ready treats sent home with owners",
+      "our year-end hospitality gesture",
+      "the premium seasonal menu",
+      "a marketing-flavored dining perk",
+      "fancy dinners offered to peak-stay clients",
+      "the winter dining extravaganza",
+      "what we spent to make stays feel festive",
+      "a one-time culinary splurge for loyal customers",
+      "upscale plates for four-legged guests",
+      "the special banquet offering",
+      "the end-of-year goodwill meals",
+      "the ceremonial dinner program"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Veterinary & Health Services",
+   "aliases": [
+    "vet services",
+    "veterinary costs",
+    "health services",
+    "vet spend",
+    "medical costs"
+   ],
+   "narrative": [
+    "Vet services",
+    "Veterinary costs",
+    "Medical costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northside Veterinary Partners",
+     "base": 14500,
+     "memo": "On-call vet coverage all sites"
+    },
+    {
+     "vendor": "VaxPoint Labs",
+     "base": 4800,
+     "memo": "Vaccination verification and titer tests"
+    },
+    {
+     "vendor": "CareCrate Pharmacy",
+     "base": 3600,
+     "memo": "Prescription meds dispensed to boarders"
+    }
+   ],
+   "events": [
+    {
+     "key": "kennelcough",
+     "vendor": "Northside Veterinary Partners",
+     "memos": [
+      "Bordetella surge — emergency clinic hours Phoenix",
+      "Bordetella surge — antibiotic courses Phoenix"
+     ],
+     "cross_memo": "Bordetella surge — isolation ward bedding",
+     "plain": [
+      "the Bordetella surge",
+      "the Bordetella surge clinic hours",
+      "the Bordetella surge treatments"
+     ],
+     "oblique": [
+      "a respiratory illness running through one location",
+      "extra doctor hours after guests started coughing",
+      "a contagious cough cluster",
+      "the sick-dog wave at one site",
+      "quarantining and treating hacking boarders",
+      "unplanned medical attention for a sudden outbreak",
+      "the late-night clinic calls",
+      "a spike in sick guests",
+      "the airborne bug that swept the runs",
+      "antibiotics for dozens of dogs",
+      "the contagious illness event",
+      "paying the doctors to come in extra",
+      "what we spent when too many guests got sick at once",
+      "an infection that needed urgent care",
+      "the health scare in the desert",
+      "the coughing episode"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "dental",
+     "vendor": "BrightBite Mobile Dental",
+     "memos": [
+      "Dental day pilot — scaling sessions Austin",
+      "Dental day pilot — anesthesia monitors Austin"
+     ],
+     "cross_memo": "Dental day pilot — marketing flyers",
+     "plain": [
+      "the dental day pilot",
+      "the dental day scaling sessions",
+      "the dental day pilot in Austin"
+     ],
+     "oblique": [
+      "a new add-on service we trialed for teeth cleaning",
+      "the experiment with mobile oral care",
+      "a revenue-minded test of a new offering",
+      "cleaning the pearly whites on site",
+      "a trial of a mouth hygiene service",
+      "the new service line we tried at one location",
+      "a pilot that brought in outside clinicians",
+      "hiring a traveling team to clean teeth",
+      "an expansion of our wellness menu",
+      "the test run of a premium wellness option",
+      "what we paid to try a new revenue idea",
+      "a one-location experiment",
+      "scraping tartar off guests",
+      "the oral hygiene trial",
+      "an outside team brought in for a day",
+      "an add-on offering we tested"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Facility Cleaning & Sanitation",
+   "aliases": [
+    "cleaning costs",
+    "sanitation",
+    "facility cleaning",
+    "janitorial spend",
+    "kennel sanitation"
+   ],
+   "narrative": [
+    "Cleaning costs",
+    "Sanitation",
+    "Janitorial spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "SparkleHound Janitorial",
+     "base": 12800,
+     "memo": "Nightly kennel floor sanitation all sites"
+    },
+    {
+     "vendor": "EnviroPaws Chemicals",
+     "base": 4300,
+     "memo": "Disinfectant concentrate monthly supply"
+    },
+    {
+     "vendor": "Drain Doctors LLC",
+     "base": 1800,
+     "memo": "Routine drain jetting"
+    }
+   ],
+   "events": [
+    {
+     "key": "floorreseal",
+     "vendor": "SparkleHound Janitorial",
+     "memos": [
+      "Epoxy floor reseal — play yard slab Raleigh",
+      "Epoxy floor reseal — curing crew overtime"
+     ],
+     "cross_memo": "Epoxy floor reseal — temporary daycare closure",
+     "plain": [
+      "the epoxy floor reseal",
+      "the epoxy floor reseal in Raleigh",
+      "the epoxy floor reseal crew"
+     ],
+     "oblique": [
+      "recoating the ground surface where dogs run",
+      "a one-site flooring renovation",
+      "fixing the cracked concrete finish",
+      "the refinishing of the main play area",
+      "work that kept a section shut for days",
+      "the surface restoration after wear showed",
+      "a seamless coating job",
+      "redoing the slab underfoot",
+      "the weekend project nobody saw coming",
+      "a renovation that improved traction",
+      "the surfacing contractor's work",
+      "bringing the play area surface back to standard",
+      "a durability upgrade to the ground",
+      "the resurfacing",
+      "the finishing work on the yard slab",
+      "a facility upkeep project"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "mold",
+     "vendor": "AirWise Remediation",
+     "memos": [
+      "Mold remediation — HVAC duct scrub Seattle",
+      "Mold remediation — humidity monitors Seattle"
+     ],
+     "cross_memo": "Mold remediation — guest relocation fees",
+     "plain": [
+      "the mold remediation",
+      "the mold remediation duct scrub",
+      "the mold remediation in Seattle"
+     ],
+     "oblique": [
+      "clearing out the damp growth behind the walls",
+      "an indoor air quality emergency",
+      "specialists called in after a musty smell was reported",
+      "the rainy-climate moisture problem",
+      "a health inspection finding we had to fix",
+      "the fungus found in the ventilation",
+      "cleaning the air handling system",
+      "a wet-weather facility issue",
+      "outside contractors who scrubbed the vents",
+      "what we paid to fix the damp problem",
+      "the building's moisture crisis",
+      "relocating guests while air was cleaned",
+      "the compliance fix after an inspector's visit",
+      "the spore cleanup",
+      "the humidity-related repair",
+      "the ventilation cleanup"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Staff Training & Certification",
+   "aliases": [
+    "training costs",
+    "staff training",
+    "certifications",
+    "handler training",
+    "training spend"
+   ],
+   "narrative": [
+    "Training costs",
+    "Staff training",
+    "Handler training"
+   ],
+   "recurring": [
+    {
+     "vendor": "CanineCare Academy",
+     "base": 5200,
+     "memo": "Monthly pet first aid and CPR classes"
+    },
+    {
+     "vendor": "BehaviorBridge Institute",
+     "base": 3800,
+     "memo": "Handler behavior-reading workshops"
+    }
+   ],
+   "events": [
+    {
+     "key": "fearfree",
+     "vendor": "BehaviorBridge Institute",
+     "memos": [
+      "Fear Free certification — site cohort Nashville",
+      "Fear Free certification — exam proctoring fees"
+     ],
+     "cross_memo": "Fear Free certification — shift backfill labor",
+     "plain": [
+      "the Fear Free certification",
+      "the Fear Free certification cohort",
+      "the Fear Free exam fees"
+     ],
+     "oblique": [
+      "a credential push for low-stress handling",
+      "sending teams to earn a gentle-handling badge",
+      "an industry credential we chose to pursue",
+      "the cohort that qualified in anxiety reduction",
+      "a marketing-friendly credential",
+      "a program that made our handlers more calming",
+      "the accreditation drive at one site",
+      "exam costs for the Tennessee team",
+      "paying other staff to cover while colleagues studied",
+      "a nationally recognized stamp of approval",
+      "the course that taught softer restraint methods",
+      "credentialing for the calming approach",
+      "a differentiator in our sales pitch",
+      "getting the team officially recognized",
+      "the learning initiative",
+      "the certificate program"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "aggression",
+     "vendor": "Pack Leader Consulting",
+     "memos": [
+      "Aggression protocol rollout — consultant onsite Portland",
+      "Aggression protocol rollout — playgroup assessments"
+     ],
+     "cross_memo": "Aggression protocol rollout — incident reporting software",
+     "plain": [
+      "the aggression protocol rollout",
+      "the aggression protocol consultant",
+      "the aggression protocol assessments"
+     ],
+     "oblique": [
+      "a safety overhaul after a fight between guests",
+      "outside experts brought in to stop scuffles",
+      "the new rules for playgroup safety",
+      "an insurance carrier request for better procedures",
+      "the response to a bite incident",
+      "redrawing how dogs get matched for play",
+      "an external review of how we separate guests",
+      "a consultant's recommendations implemented",
+      "tightening the rules after a claim",
+      "a risk management effort",
+      "what we paid to prevent another injury",
+      "a behavior safety project",
+      "improving how we screen temperaments",
+      "the reaction to a nasty altercation",
+      "a guest safety program",
+      "the new playgroup safeguards"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Vehicle & Transport Expense",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "pet taxi costs",
+    "transport spend",
+    "van expenses"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Pet taxi costs",
+    "Van expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "PetVan Leasing Corp",
+     "base": 16200,
+     "memo": "Monthly pet taxi van lease payments"
+    },
+    {
+     "vendor": "Roadrunner Fuel Cards",
+     "base": 7400,
+     "memo": "Fuel card charges all vans"
+    },
+    {
+     "vendor": "Fleetwise Maintenance",
+     "base": 3900,
+     "memo": "Scheduled oil and tire service"
+    }
+   ],
+   "events": [
+    {
+     "key": "hvacvan",
+     "vendor": "Fleetwise Maintenance",
+     "memos": [
+      "Climate system retrofit — van AC compressors Phoenix",
+      "Climate system retrofit — cabin temperature sensors"
+     ],
+     "cross_memo": "Climate system retrofit — rental vans during downtime",
+     "plain": [
+      "the climate system retrofit",
+      "the climate system retrofit on the vans",
+      "the climate system compressors"
+     ],
+     "oblique": [
+      "keeping guests cool in transit",
+      "an upgrade for the desert heat",
+      "a safety fix after a hot-ride complaint",
+      "work on the vans' air handling",
+      "making sure the cabin stays comfortable",
+      "the cooling work on pickup vehicles",
+      "a summer readiness effort",
+      "after a customer reported a sweltering ride",
+      "equipment installed to monitor interior heat",
+      "the heat-protection project",
+      "what we paid to prevent heat stress en route",
+      "improvements to ride comfort",
+      "the temperature control project",
+      "an animal welfare upgrade",
+      "outfitting the pickup vehicles for hotter weather",
+      "the cabin comfort overhaul"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "wrapvan",
+     "vendor": "VividWrap Graphics",
+     "memos": [
+      "Rebrand vehicle wraps — vinyl application twelve vans",
+      "Rebrand vehicle wraps — design proofs"
+     ],
+     "cross_memo": "Rebrand vehicle wraps — logo trademark filing",
+     "plain": [
+      "the rebrand vehicle wraps",
+      "the rebrand vehicle wraps on twelve vans",
+      "the rebrand vinyl wraps"
+     ],
+     "oblique": [
+      "putting our new look on the road",
+      "a marketing refresh visible on our rolling billboards",
+      "the new paint-style treatment for pickup vehicles",
+      "a visual identity update",
+      "the new logo appearing on the street",
+      "outside designers working on our outer appearance",
+      "the image makeover for the transport side",
+      "adhesive graphics applied to the entire group",
+      "a branding project that touched our rides",
+      "the cosmetic refresh",
+      "a corporate identity update",
+      "rolling advertising refresh",
+      "the new colors going on the road",
+      "the fresh look",
+      "the exterior beautification project",
+      "a campaign to make our rides stand out"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Facility Rent & Utilities",
+   "aliases": [
+    "rent",
+    "occupancy",
+    "rent and utilities",
+    "facility costs",
+    "utilities spend"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy costs",
+    "Utilities spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Property Group",
+     "base": 28500,
+     "memo": "Monthly lease payments all sites"
+    },
+    {
+     "vendor": "CityGrid Power & Water",
+     "base": 14800,
+     "memo": "Electric and water utilities all sites"
+    },
+    {
+     "vendor": "Waste Hauler Co.",
+     "base": 2900,
+     "memo": "Weekly waste pickup"
+    }
+   ],
+   "events": [
+    {
+     "key": "expansion",
+     "vendor": "Meridian Property Group",
+     "memos": [
+      "Annex lease buildout — adjoining bay Minneapolis",
+      "Annex lease buildout — tenant improvement allowance"
+     ],
+     "cross_memo": "Annex lease buildout — permit fees",
+     "plain": [
+      "the annex lease buildout",
+      "the annex lease bay in Minneapolis",
+      "the annex lease improvements"
+     ],
+     "oblique": [
+      "taking over extra space next door",
+      "a site growth initiative",
+      "the added square footage we agreed to take",
+      "a landlord-negotiated expansion",
+      "carving out room for more guests",
+      "a capacity increase at the busiest location",
+      "getting a bigger footprint",
+      "the neighboring unit we took on",
+      "an investment in room to grow",
+      "the extended premises",
+      "what we paid for more space",
+      "the growth bet in the Midwest",
+      "the extra building we moved into",
+      "a negotiated space addition",
+      "the move to enlarge one site",
+      "construction on the added room"
+     ],
+     "low": 22000,
+     "high": 40000
+    },
+    {
+     "key": "heatwave",
+     "vendor": "Summit Cooling Rentals",
+     "memos": [
+      "Emergency chiller rental — heat dome week Dallas",
+      "Emergency chiller rental — generator fuel Dallas"
+     ],
+     "cross_memo": "Emergency chiller rental — overtime electrical crew",
+     "plain": [
+      "the emergency chiller rental",
+      "the emergency chiller rental in Dallas",
+      "the emergency chiller generator fuel"
+     ],
+     "oblique": [
+      "a brutal weather stretch that overwhelmed our systems",
+      "hauling in temporary equipment to keep guests safe",
+      "the record temperatures at one location",
+      "portable cooling we needed on short notice",
+      "power costs from running extra gear",
+      "the weather event that taxed the building",
+      "the short-term air conditioning rescue",
+      "whatever it took to keep the dogs comfortable in extreme weather",
+      "a one-week utility spike",
+      "the scorching conditions",
+      "paying electricians after hours",
+      "an unforecast climate challenge",
+      "temporary machines on loan",
+      "a fix for failing building systems in sweltering conditions",
+      "the Texas weather problem",
+      "an urgent comfort measure"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

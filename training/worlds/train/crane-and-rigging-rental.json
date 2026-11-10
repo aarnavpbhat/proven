@@ -1,0 +1,805 @@
+{
+ "slug": "crane-and-rigging-rental",
+ "industry": "crane and rigging rental",
+ "entities": [
+  "Ironcrest Lift & Rigging",
+  "Summit Heavy Lift Partners",
+  "Tidewater Crane Services",
+  "Bluegrass Rigging Co.",
+  "Redline Hoist & Haul"
+ ],
+ "accounts": [
+  {
+   "name": "Crane Fleet Maintenance",
+   "aliases": [
+    "fleet maintenance",
+    "crane upkeep",
+    "fleet repairs",
+    "maintenance spend",
+    "crane maintenance"
+   ],
+   "narrative": [
+    "Fleet maintenance",
+    "Crane upkeep",
+    "Maintenance spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Apex Hydraulics Supply",
+     "base": 9200,
+     "memo": "Hydraulic hoses and fittings — monthly stock"
+    },
+    {
+     "vendor": "Ridgeline Tire & Axle",
+     "base": 6400,
+     "memo": "Tire service — mobile unit"
+    },
+    {
+     "vendor": "Keystone Lube Distributors",
+     "base": 2300,
+     "memo": "Lubricants and filters — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "boomrebuild",
+     "vendor": "Apex Hydraulics Supply",
+     "memos": [
+      "Telescopic boom overhaul — cylinder reseal",
+      "Telescopic boom overhaul — wear pad kit"
+     ],
+     "cross_memo": "Telescopic boom overhaul — transport escort",
+     "plain": [
+      "the telescopic boom overhaul",
+      "the boom overhaul on the all-terrain unit",
+      "the telescopic overhaul project"
+     ],
+     "oblique": [
+      "getting the big all-terrain machine reaching full height again",
+      "the extension mechanism work on the 200-ton unit",
+      "repairs after the lift stalled mid-extension",
+      "the work that cleared the unit for the inspector",
+      "restoring the main reach system",
+      "rebuilding the arm that wouldn't extend",
+      "the major shop job on our largest machine",
+      "getting a sidelined asset back earning",
+      "the seal replacement program",
+      "the arm refurbishment",
+      "work ordered after the failed load test",
+      "a long stay in the service bay",
+      "the fix for the telescoping problem",
+      "rework on the extension assembly",
+      "the repair that took our top unit offline",
+      "what the safety inspector flagged on the main arm"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "swingbearing",
+     "vendor": "Granite State Slew Works",
+     "memos": [
+      "Slew ring replacement — turntable bearing",
+      "Slew ring replacement — gear alignment"
+     ],
+     "cross_memo": "Slew ring replacement — heavy haul permit",
+     "plain": [
+      "the slew ring replacement",
+      "the slew ring swap",
+      "the replacement of the slew ring"
+     ],
+     "oblique": [
+      "the rotation system failure on the crawler",
+      "getting the machine turning smoothly again",
+      "the major component swap on the older unit",
+      "work that followed the grinding noise",
+      "replacing the part that lets the cab pivot",
+      "the biggest single repair of the quarter",
+      "an unplanned shutdown of a crawler",
+      "the circular mechanism that wore out",
+      "a specialist crew working at the yard",
+      "the repair nobody budgeted for",
+      "the turning mechanism overhaul",
+      "an expensive part flown in from overseas",
+      "fixing what the operator reported as jerky movement",
+      "the structural repair on the base of the machine",
+      "a teardown of the oldest crawler",
+      "work to avoid retiring the unit early"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Rigging Gear & Hardware",
+   "aliases": [
+    "rigging gear",
+    "rigging hardware",
+    "slings and shackles",
+    "gear purchases",
+    "rigging supplies"
+   ],
+   "narrative": [
+    "Rigging gear",
+    "Slings and shackles",
+    "Rigging supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cableworks Industrial",
+     "base": 7800,
+     "memo": "Wire rope and slings — replenishment"
+    },
+    {
+     "vendor": "Harbor Forge & Fastener",
+     "base": 4100,
+     "memo": "Shackles and hooks — monthly order"
+    }
+   ],
+   "events": [
+    {
+     "key": "spreaderbars",
+     "vendor": "Cableworks Industrial",
+     "memos": [
+      "Spreader beam fabrication — custom 40 ton",
+      "Spreader beam fabrication — certification test"
+     ],
+     "cross_memo": "Spreader beam fabrication — engineering stamp",
+     "plain": [
+      "the spreader beam fabrication",
+      "the custom spreader beam build",
+      "the spreader beam order"
+     ],
+     "oblique": [
+      "equipment built for the refinery contract",
+      "tooling a single customer specified",
+      "new lifting frames made to drawing",
+      "what we needed to win the bridge job",
+      "the purpose-built items for one client",
+      "a one-time manufacturing order",
+      "hardware that did not exist off the shelf",
+      "the engineered pieces for the oversize load",
+      "items with a stamped load rating",
+      "an upfront investment for new work",
+      "a shop build commissioned in the spring",
+      "the specialty frames our crews requested",
+      "tools made once and kept for reuse",
+      "the custom pieces the engineer designed",
+      "the fabrication done at an outside shop",
+      "assets added for a signed contract"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "synthrope",
+     "vendor": "Northwind Fiber Technologies",
+     "memos": [
+      "Synthetic roundsling restock — fleet recall",
+      "Synthetic roundsling restock — damaged batch"
+     ],
+     "cross_memo": "Synthetic roundsling restock — disposal fee",
+     "plain": [
+      "the synthetic roundsling restock",
+      "the roundsling recall replacement",
+      "the fleet recall restock"
+     ],
+     "oblique": [
+      "a safety notice that pulled soft lifting straps",
+      "replacing the batch that failed review",
+      "the manufacturer's warning about a bad lot",
+      "everything we had to scrap and rebuy",
+      "a purge of equipment crews could no longer use",
+      "the lot number that tested weak",
+      "pulling flagged inventory from every truck",
+      "a supplier defect we had to absorb",
+      "refreshing the stock after the notice",
+      "the cost of removing suspect straps",
+      "new stock bought on a rush basis",
+      "an alert that emptied our shelves",
+      "the compliance-driven reorder",
+      "unplanned replacement of lifting textiles",
+      "what we spent after the bulletin",
+      "the recall response across the yard"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Operator Wages & Overtime",
+   "aliases": [
+    "operator wages",
+    "operator labor",
+    "overtime pay",
+    "crew overtime",
+    "operator payroll"
+   ],
+   "narrative": [
+    "Operator wages",
+    "Overtime pay",
+    "Crew overtime"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Staffing Partners",
+     "base": 22000,
+     "memo": "Certified operator labor — weekly billing"
+    },
+    {
+     "vendor": "Lakeshore Benefits Administration",
+     "base": 8500,
+     "memo": "Operator benefits and insurance — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "nightshift",
+     "vendor": "Summit Staffing Partners",
+     "memos": [
+      "Turbine hall lift campaign — night premium",
+      "Turbine hall lift campaign — weekend crews"
+     ],
+     "cross_memo": "Turbine hall lift campaign — crew lodging",
+     "plain": [
+      "the turbine hall lift campaign",
+      "the turbine hall night premium",
+      "the turbine hall crews"
+     ],
+     "oblique": [
+      "the power plant outage window",
+      "work squeezed into a tight shutdown",
+      "staff pulled in after normal hours",
+      "the schedule the utility imposed",
+      "round-the-clock coverage at one site",
+      "a deadline with penalties attached",
+      "extra shifts for the generation client",
+      "people working while the plant was dark",
+      "the rush to finish before restart",
+      "premium pay for unsociable hours",
+      "a compressed timeline on a big contract",
+      "what it cost to run two crews at once",
+      "the demanding outage job out of state",
+      "staffing up for a short intense stretch",
+      "the days when everyone was on call",
+      "hours stacked up during the shutdown"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "hazardtrain",
+     "vendor": "Crestline Safety Academy",
+     "memos": [
+      "NCCCO recertification block — written exams",
+      "NCCCO recertification block — practical testing"
+     ],
+     "cross_memo": "NCCCO recertification block — travel to test site",
+     "plain": [
+      "the NCCCO recertification block",
+      "the NCCCO exam sessions",
+      "the NCCCO testing round"
+     ],
+     "oblique": [
+      "keeping our people licensed",
+      "the credentials that were about to lapse",
+      "a classroom week for the whole crew",
+      "the renewals everyone needed at once",
+      "time off the job to sit for exams",
+      "qualifications required by clients",
+      "an outside school we sent staff to",
+      "the paperwork our insurers insisted on",
+      "five-year renewals that bunched together",
+      "what it took to keep operators eligible",
+      "a training push before the busy season",
+      "the tests that gate who can run a machine",
+      "licensing costs for the senior operators",
+      "certifications due this period",
+      "the cost of staying compliant on tickets",
+      "a scheduled round of re-qualification"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Heavy Haul Transport",
+   "aliases": [
+    "heavy haul",
+    "haulage costs",
+    "transport spend",
+    "low-boy trucking",
+    "machine transport"
+   ],
+   "narrative": [
+    "Heavy haul",
+    "Haulage costs",
+    "Transport spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Longview Lowboy Carriers",
+     "base": 18500,
+     "memo": "Lowboy hauling — scheduled moves"
+    },
+    {
+     "vendor": "Pinnacle Escort Services",
+     "base": 5200,
+     "memo": "Pilot car escorts — monthly"
+    },
+    {
+     "vendor": "Stateline Permit Brokers",
+     "base": 2600,
+     "memo": "Oversize permits — filings"
+    }
+   ],
+   "events": [
+    {
+     "key": "mountainmove",
+     "vendor": "Longview Lowboy Carriers",
+     "memos": [
+      "Alpine pass relocation — dismantled crane move",
+      "Alpine pass relocation — counterweight shuttles"
+     ],
+     "cross_memo": "Alpine pass relocation — road closure standby",
+     "plain": [
+      "the alpine pass relocation",
+      "the alpine crane move",
+      "the alpine counterweight shuttles"
+     ],
+     "oblique": [
+      "getting a big machine over the mountains",
+      "the long-distance mobilization to the new yard",
+      "a cross-country transfer of a disassembled unit",
+      "moving everything to the far-off project",
+      "the multi-truck convoy last month",
+      "a trip that needed many loads",
+      "what it cost to reposition equipment",
+      "the journey to the wind farm site",
+      "hauling pieces of one machine separately",
+      "an out-of-region deployment",
+      "delays waiting on weather",
+      "the shipment of the largest asset",
+      "relocating a unit for a distant customer",
+      "bringing gear to a remote worksite",
+      "a mobilization that crossed state lines",
+      "an expensive trip with a long route"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "bridgeclosure",
+     "vendor": "Meridian Rail Freight",
+     "memos": [
+      "Rail flatcar charter — girder delivery",
+      "Rail flatcar charter — offloading crew"
+     ],
+     "cross_memo": "Rail flatcar charter — yard demurrage",
+     "plain": [
+      "the rail flatcar charter",
+      "the flatcar girder delivery",
+      "the flatcar offloading"
+     ],
+     "oblique": [
+      "bringing in steel that was too long for roads",
+      "the alternative to trucking on the highway",
+      "a freight option we used once",
+      "the beams arriving by train",
+      "an unusual shipping choice for the bridge job",
+      "shipping that avoided road restrictions",
+      "the workaround for the weight limits",
+      "a one-time logistics arrangement",
+      "moving giant pieces without permits",
+      "the cargo that rode the tracks",
+      "what we paid to get the spans to site",
+      "a special delivery for the river crossing",
+      "the long pieces from the fabricator",
+      "transport that skipped the interstate",
+      "an outside carrier brought in for the job",
+      "the shipping solution for oversize members"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Insurance & Inspection",
+   "aliases": [
+    "equipment insurance",
+    "inspection costs",
+    "insurance premiums",
+    "load testing",
+    "compliance spend"
+   ],
+   "narrative": [
+    "Equipment insurance",
+    "Inspection costs",
+    "Insurance premiums"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Marine & Industrial Underwriters",
+     "base": 14000,
+     "memo": "Inland marine policy — monthly installment"
+    },
+    {
+     "vendor": "Bridgepoint Inspection Group",
+     "base": 3800,
+     "memo": "Annual crane inspections — accrual"
+    }
+   ],
+   "events": [
+    {
+     "key": "claimdeduct",
+     "vendor": "Sentinel Marine & Industrial Underwriters",
+     "memos": [
+      "Outrigger collapse claim — deductible",
+      "Outrigger collapse claim — adjuster fees"
+     ],
+     "cross_memo": "Outrigger collapse claim — salvage recovery",
+     "plain": [
+      "the outrigger collapse claim",
+      "the outrigger claim deductible",
+      "the outrigger adjuster fees"
+     ],
+     "oblique": [
+      "our share of the accident settlement",
+      "what we owed after the insured loss",
+      "the incident at the quarry",
+      "the amount the carrier did not cover",
+      "an out-of-pocket hit following the mishap",
+      "investigation costs after the machine tipped",
+      "paperwork and review after the damage",
+      "a ground failure under one machine",
+      "the part of the loss we retained",
+      "expenses tied to last quarter's accident",
+      "the assessor's visit to the site",
+      "a mishap that triggered an insurer review",
+      "the portion of the claim on our side",
+      "costs following the unit going over",
+      "a payout threshold we had to meet",
+      "what we absorbed after the tip-over"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "loadtest",
+     "vendor": "Vanguard Testing Laboratories",
+     "memos": [
+      "Third-party proof load program — 12 units",
+      "Third-party proof load program — certificates"
+     ],
+     "cross_memo": "Third-party proof load program — test weights rental",
+     "plain": [
+      "the third-party proof load program",
+      "the proof load testing of twelve units",
+      "the proof load certificates"
+     ],
+     "oblique": [
+      "the regulator's demand to re-verify capacity",
+      "a sweep of the older machines",
+      "evidence for the new insurance terms",
+      "the audit our broker pushed for",
+      "proving that old units still hold their rating",
+      "a bulk exercise done before renewal",
+      "outside experts weighing our assets",
+      "the verification our largest customer required",
+      "work done on a fixed deadline",
+      "tests that unlocked lower rates",
+      "a program covering half the fleet",
+      "hanging heavy blocks from every old hook",
+      "the documentation behind our ratings",
+      "a compliance sweep with a third party",
+      "the capacity checks done at the yard",
+      "what the underwriter asked us to demonstrate"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Yard & Depot Operations",
+   "aliases": [
+    "yard operations",
+    "depot costs",
+    "yard expenses",
+    "site upkeep",
+    "depot operations"
+   ],
+   "narrative": [
+    "Yard operations",
+    "Depot costs",
+    "Yard expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cornerstone Property Management",
+     "base": 16000,
+     "memo": "Yard lease — monthly rent"
+    },
+    {
+     "vendor": "Gulfstream Fuel Distributors",
+     "base": 11000,
+     "memo": "Diesel fuel — bulk delivery"
+    },
+    {
+     "vendor": "Evergreen Utilities Cooperative",
+     "base": 2900,
+     "memo": "Electricity and water — depot"
+    }
+   ],
+   "events": [
+    {
+     "key": "gravelpad",
+     "vendor": "Cornerstone Property Management",
+     "memos": [
+      "Compacted stone laydown pad — grading",
+      "Compacted stone laydown pad — drainage install"
+     ],
+     "cross_memo": "Compacted stone laydown pad — surveyor fee",
+     "plain": [
+      "the compacted stone laydown pad",
+      "the stone pad grading",
+      "the laydown pad drainage"
+     ],
+     "oblique": [
+      "firm ground for parking the heaviest machines",
+      "the surface upgrade out back",
+      "a ruts problem after the wet season",
+      "ground work so the big units could be staged",
+      "an improvement to the part of the lot that sank",
+      "construction at the edge of the property",
+      "fixing the soft spot where cranes sat",
+      "earthworks the landlord agreed to",
+      "space made usable for assembly",
+      "a project that kept trucks from sinking",
+      "the lot reconfiguration last month",
+      "a facilities upgrade for safer staging",
+      "preparing land for the new fleet arrivals",
+      "work that needed excavators and fill",
+      "the area we paved for storage",
+      "dirt moving ahead of the new contract"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "gantryfire",
+     "vendor": "Redwood Fire & Safety Systems",
+     "memos": [
+      "Weld shop suppression retrofit — foam system",
+      "Weld shop suppression retrofit — alarm panel"
+     ],
+     "cross_memo": "Weld shop suppression retrofit — fire marshal permit",
+     "plain": [
+      "the weld shop suppression retrofit",
+      "the suppression foam system",
+      "the weld shop alarm panel"
+     ],
+     "oblique": [
+      "a requirement from the local fire officials",
+      "upgrades our landlord and insurer demanded",
+      "protection installed in the fabrication building",
+      "the follow-up to a failed walkthrough",
+      "new equipment to satisfy a code citation",
+      "a building improvement we did not plan",
+      "safety hardware mounted on the ceiling",
+      "the response to the inspection notice",
+      "making the workshop compliant",
+      "what the authorities required of us",
+      "installation work done over a weekend",
+      "a capital item that landed in operating spend",
+      "the cost of keeping the shop open",
+      "a hazard control project",
+      "tighter rules for hot work areas",
+      "an upgrade to avoid shutting the bay"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Site Mobilization & Setup",
+   "aliases": [
+    "site setup",
+    "mobilization costs",
+    "job setup",
+    "crane assembly",
+    "site prep"
+   ],
+   "narrative": [
+    "Site setup",
+    "Mobilization costs",
+    "Job setup"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ballast & Mat Rentals",
+     "base": 6700,
+     "memo": "Crane mats and outrigger pads — rental"
+    },
+    {
+     "vendor": "Foundry Street Assembly Crew",
+     "base": 9300,
+     "memo": "Assist crane and rigging crew — setup"
+    }
+   ],
+   "events": [
+    {
+     "key": "towercrane",
+     "vendor": "Ballast & Mat Rentals",
+     "memos": [
+      "Tower crane erection — anchor bolt cage",
+      "Tower crane erection — climbing frame"
+     ],
+     "cross_memo": "Tower crane erection — street closure permit",
+     "plain": [
+      "the tower crane erection",
+      "the tower crane anchor cage",
+      "the tower crane climbing frame"
+     ],
+     "oblique": [
+      "raising a tall structure at the downtown site",
+      "the skyline project's first phase",
+      "getting the high-rise contractor operating",
+      "a build that began with the foundation work",
+      "the vertical machine installed in the city core",
+      "setup of the tallest asset we have",
+      "work that required closing lanes",
+      "the start of the condo development",
+      "a multi-day assembly in a tight space",
+      "bringing in outside specialists to stand it up",
+      "the machine permanently placed on the pad",
+      "what it took to get to start-up",
+      "a big installation for a long contract",
+      "embedding an anchor in new concrete",
+      "an assembly using a second crane",
+      "the jump-start of the residential tower"
+     ],
+     "low": 30000,
+     "high": 60000
+    },
+    {
+     "key": "offshoredeck",
+     "vendor": "Marlin Dock & Barge Co.",
+     "memos": [
+      "Barge-mounted lift staging — deck reinforcement",
+      "Barge-mounted lift staging — mooring crew"
+     ],
+     "cross_memo": "Barge-mounted lift staging — harbor pilot",
+     "plain": [
+      "the barge-mounted lift staging",
+      "the barge deck reinforcement",
+      "the barge mooring crew"
+     ],
+     "oblique": [
+      "working from the water at the port",
+      "a job where the ground was not available",
+      "a floating platform for the pier repair",
+      "the waterfront contract requiring marine support",
+      "lifts from the harbor side",
+      "preparations for a project at sea level",
+      "a setup involving tides and anchors",
+      "the dockside bridge pier work",
+      "special support for a river-based assignment",
+      "an assignment off the shoreline",
+      "making a ship carry our machine",
+      "the change of scenery for the crane",
+      "reinforcement so the vessel could take the load",
+      "extra marine labor for the pier job",
+      "where the machine sat during the lift",
+      "a site that needed boats to reach"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Fleet Telematics & Software",
+   "aliases": [
+    "telematics",
+    "fleet software",
+    "tracking systems",
+    "dispatch software",
+    "software spend"
+   ],
+   "narrative": [
+    "Telematics",
+    "Fleet software",
+    "Software spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Trackline Fleet Systems",
+     "base": 4800,
+     "memo": "GPS and load sensor subscriptions"
+    },
+    {
+     "vendor": "Dispatchly",
+     "base": 1900,
+     "memo": "Dispatch and scheduling platform — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "sensorretrofit",
+     "vendor": "Trackline Fleet Systems",
+     "memos": [
+      "Load moment indicator retrofit — sensor kits",
+      "Load moment indicator retrofit — installation labor"
+     ],
+     "cross_memo": "Load moment indicator retrofit — crane downtime",
+     "plain": [
+      "the load moment indicator retrofit",
+      "the indicator sensor kits",
+      "the indicator installation labor"
+     ],
+     "oblique": [
+      "giving older machines the safety electronics newer ones have",
+      "hardware our insurer asked us to add",
+      "upgrading the cabs with monitoring gear",
+      "a hardware campaign across the legacy units",
+      "wiring work performed in the shop",
+      "a push to bring every unit up to standard",
+      "devices that warn operators before overloading",
+      "the project that touched dozens of machines",
+      "the instrumentation we bought in bulk",
+      "a safety technology rollout",
+      "installing the readouts in the cab",
+      "the technology investment after the near miss",
+      "hours spent fitting devices to booms",
+      "modernizing the older machines",
+      "kit purchases that went on every truck crane",
+      "the electronic aids that prevent tip-overs"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "erpmigration",
+     "vendor": "Quarrybrook Consulting",
+     "memos": [
+      "Billing platform migration — data conversion",
+      "Billing platform migration — staff onboarding"
+     ],
+     "cross_memo": "Billing platform migration — parallel run licenses",
+     "plain": [
+      "the billing platform migration",
+      "the billing data conversion",
+      "the billing platform onboarding"
+     ],
+     "oblique": [
+      "moving off the old system we outgrew",
+      "the changeover in the back office",
+      "a project run by outside consultants",
+      "switching how we invoice customers",
+      "transferring years of records",
+      "an initiative to modernize the finance function",
+      "new tools replacing spreadsheets",
+      "the finance team learning a new application",
+      "a cutover weekend that went into overtime",
+      "the consultant who led the transition",
+      "retiring a decades-old program",
+      "an undertaking that stretched over a quarter",
+      "what we paid to change systems",
+      "getting the books onto a modern platform",
+      "the project sponsored by the controller",
+      "work to consolidate two legacy databases"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

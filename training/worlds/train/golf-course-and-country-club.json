@@ -1,0 +1,825 @@
+{
+ "slug": "golf-course-and-country-club",
+ "industry": "golf course and country club",
+ "entities": [
+  "Fairway Hollow Country Club",
+  "Pinecrest Ridge Golf & Country Club",
+  "Marlow Bend Golf Holdings",
+  "Cedar Glen Links Company",
+  "Harborview Greens Club Inc."
+ ],
+ "accounts": [
+  {
+   "name": "Turf & Agronomy Supplies",
+   "aliases": [
+    "turf supplies",
+    "agronomy",
+    "turf inputs",
+    "course chemicals",
+    "greens supplies"
+   ],
+   "narrative": [
+    "Turf supplies",
+    "Agronomy spend",
+    "Turf inputs"
+   ],
+   "recurring": [
+    {
+     "vendor": "GreenBlade Turf Supply",
+     "base": 14500,
+     "memo": "Fertilizer and topdressing sand — monthly delivery"
+    },
+    {
+     "vendor": "Summit Agronomics",
+     "base": 9800,
+     "memo": "Fungicide and herbicide program — monthly application"
+    },
+    {
+     "vendor": "Clearwater Seed Co",
+     "base": 3200,
+     "memo": "Overseeding blend — standing order"
+    }
+   ],
+   "events": [
+    {
+     "key": "dollarspot",
+     "vendor": "Summit Agronomics",
+     "memos": [
+      "Dollar spot rescue spray — emergency curative",
+      "Dollar spot rescue spray — extra tank mixes"
+     ],
+     "cross_memo": "Dollar spot rescue spray — contract applicator overtime",
+     "plain": [
+      "the dollar spot rescue spray",
+      "the dollar spot rescue",
+      "the dollar spot spraying"
+     ],
+     "oblique": [
+      "the fungus outbreak on the putting surfaces",
+      "an unplanned disease treatment on the greens",
+      "what the superintendent needed after the humid stretch",
+      "the brown patches spreading across the greens",
+      "emergency plant health treatment",
+      "protecting the greens before the member tournament",
+      "the blight that showed up overnight",
+      "curative work on stressed grass",
+      "the mid-summer turf disease scare",
+      "extra product rushed out after the superintendent's alarm",
+      "the outbreak that threatened tournament conditions",
+      "an urgent fix for sick putting surfaces",
+      "disease pressure on the fine grass",
+      "the unscheduled plant treatment",
+      "patching up damaged playing surfaces",
+      "the fungal flare-up on the closely mown areas"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "bentgrass",
+     "vendor": "Tallgrass Sod Farms",
+     "memos": [
+      "Bentgrass sod replacement — tee complex",
+      "Bentgrass sod replacement — pallets and delivery"
+     ],
+     "cross_memo": "Bentgrass sod replacement — sod cutter rental",
+     "plain": [
+      "the bentgrass sod replacement",
+      "the bentgrass sod",
+      "the bentgrass replacement"
+     ],
+     "oblique": [
+      "relaying turf on the hole nine tee boxes",
+      "new grass rolled out where the old one died",
+      "resurfacing the teeing grounds",
+      "refreshing the worn launch areas",
+      "the project to restore the damaged tee surfaces",
+      "fresh rolls of grass for the front nine",
+      "getting rid of the thin and patchy ground",
+      "a facelift for the driving areas",
+      "replacing the grass that did not survive winter",
+      "ground restoration ahead of the member-guest",
+      "new living carpet for the tee boxes",
+      "the green rollout on the outbound holes",
+      "rebuilding the tired grassy platforms",
+      "what the committee approved for the worn spots",
+      "installing mature grass in place of failed areas",
+      "the surface renewal near the first holes"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Golf Cart Fleet Costs",
+   "aliases": [
+    "cart fleet",
+    "fleet",
+    "cart costs",
+    "golf carts",
+    "fleet lease and repair"
+   ],
+   "narrative": [
+    "Cart fleet",
+    "Fleet costs",
+    "Golf carts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Eagle Mobility Leasing",
+     "base": 18500,
+     "memo": "Electric cart lease — monthly installment"
+    },
+    {
+     "vendor": "FairLine Cart Service",
+     "base": 3400,
+     "memo": "Routine cart servicing — monthly retainer"
+    },
+    {
+     "vendor": "Volt Charge Systems",
+     "base": 1800,
+     "memo": "Charging station maintenance — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "lithium",
+     "vendor": "Eagle Mobility Leasing",
+     "memos": [
+      "Lithium battery retrofit — pack conversion",
+      "Lithium battery retrofit — install labor"
+     ],
+     "cross_memo": "Lithium battery retrofit — charger upgrade electrical",
+     "plain": [
+      "the lithium battery retrofit",
+      "the lithium retrofit",
+      "the lithium battery conversion"
+     ],
+     "oblique": [
+      "swapping out the power units on the carts",
+      "upgrading what keeps the vehicles running all day",
+      "the energy overhaul on the rolling stock",
+      "new power sources for the older buggies",
+      "the project to stop mid-round shutdowns",
+      "longer range for the whole transport pool",
+      "replacing worn-out power cells",
+      "modernizing the carts' power supply",
+      "the green initiative on the vehicles",
+      "what we did to cut downtime on busy weekends",
+      "extended runtime for the members' rides",
+      "the conversion approved after the dead-vehicle complaints",
+      "fresh energy storage in the vehicles",
+      "upgrades that cut charging time",
+      "refitting aging vehicles with newer power",
+      "the change to how the vehicles hold charge"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "gpsunits",
+     "vendor": "CourseVista Technologies",
+     "memos": [
+      "Course GPS units — dash screen replacement",
+      "Course GPS units — mounting hardware"
+     ],
+     "cross_memo": "Course GPS units — annual mapping license",
+     "plain": [
+      "the course GPS units",
+      "the course GPS screens",
+      "the course GPS replacement"
+     ],
+     "oblique": [
+      "new yardage screens bolted to the dashboards",
+      "distance displays for the players",
+      "the touchscreen swap members kept asking for",
+      "replacing the dead tablets on the vehicles",
+      "hole layout displays that finally work",
+      "the technology refresh for yardage and pin placement",
+      "upgraded navigation for golfers",
+      "screens that show distances to the flag",
+      "the electronics order after complaints about slow pace",
+      "fresh displays that track pace of play",
+      "handheld-style guidance built into every ride",
+      "the devices that tell players where they stand",
+      "what replaced the cracked screens",
+      "pin position tools for the fairways",
+      "the updated tablet package for the vehicles",
+      "on-board distance technology"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Pro Shop Cost of Goods",
+   "aliases": [
+    "pro shop",
+    "pro shop inventory",
+    "merchandise cost",
+    "retail cogs",
+    "shop purchases"
+   ],
+   "narrative": [
+    "Pro shop",
+    "Merchandise cost",
+    "Shop purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Birdie Brands Apparel",
+     "base": 12500,
+     "memo": "Logo apparel — monthly replenishment"
+    },
+    {
+     "vendor": "Titan Shaft Golf Distribution",
+     "base": 9000,
+     "memo": "Clubs and balls — standing reorder"
+    },
+    {
+     "vendor": "SoleMate Footwear Wholesale",
+     "base": 4200,
+     "memo": "Golf shoes — monthly order"
+    }
+   ],
+   "events": [
+    {
+     "key": "clubfitting",
+     "vendor": "Titan Shaft Golf Distribution",
+     "memos": [
+      "Demo fleet launch — premier iron sets",
+      "Demo fleet launch — fitting shafts"
+     ],
+     "cross_memo": "Demo fleet launch — launch monitor lease",
+     "plain": [
+      "the demo fleet launch",
+      "the demo fleet",
+      "the demo fleet rollout"
+     ],
+     "oblique": [
+      "a new rotation of try-before-you-buy equipment",
+      "samples members can swing before they buy",
+      "the stock we put out to let people test products",
+      "trial equipment for the spring season",
+      "the manufacturer's preview program",
+      "getting the latest gear in golfers' hands",
+      "display units for members to evaluate",
+      "what we ordered to drive higher sales",
+      "the loaner set that rolled out this quarter",
+      "test-drive inventory for the practice area",
+      "new product sampling for the membership",
+      "the equipment brand's showcase event",
+      "clubs set aside for customer tryouts",
+      "a sample pool aimed at converting browsers to buyers",
+      "hands-on inventory we do not intend to resell at first",
+      "the preview program the head professional pushed"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "signaturepolo",
+     "vendor": "Stitchworks Embroidery",
+     "memos": [
+      "Centennial polo run — embroidered shirts",
+      "Centennial polo run — packaging"
+     ],
+     "cross_memo": "Centennial polo run — commemorative bag tags",
+     "plain": [
+      "the centennial polo run",
+      "the centennial polos",
+      "the centennial shirt run"
+     ],
+     "oblique": [
+      "the anniversary apparel order",
+      "special garments marking the club's big birthday",
+      "a limited run for the milestone year",
+      "one-time merchandise celebrating our history",
+      "clothing made for the founders' celebration",
+      "commemorative wearables for members",
+      "a hundred years of the club on a shirt",
+      "the heritage clothing drop",
+      "the memorable collection tied to the gala",
+      "limited-edition tops we expect to sell out",
+      "souvenir clothing for the milestone",
+      "what the membership committee requested for the party",
+      "special embroidery for the big occasion",
+      "collectible garments for the club's history",
+      "a keepsake line for loyal members",
+      "the one-off clothing launch for the landmark year"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Food & Beverage Costs",
+   "aliases": [
+    "f&b",
+    "food and beverage",
+    "food cost",
+    "grill room costs",
+    "dining supplies"
+   ],
+   "narrative": [
+    "F&B",
+    "Food and beverage",
+    "Food cost"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harvest Table Foodservice",
+     "base": 22000,
+     "memo": "Produce and proteins — weekly deliveries billed monthly"
+    },
+    {
+     "vendor": "Foam & Hops Beverage Distributing",
+     "base": 11500,
+     "memo": "Draft beer and wine — monthly delivery"
+    },
+    {
+     "vendor": "Brightside Dairy & Bakery",
+     "base": 4800,
+     "memo": "Bread and dairy — standing order"
+    }
+   ],
+   "events": [
+    {
+     "key": "lobsterbake",
+     "vendor": "Harvest Table Foodservice",
+     "memos": [
+      "Lobster bake gala — live lobsters",
+      "Lobster bake gala — shellfish overnight freight"
+     ],
+     "cross_memo": "Lobster bake gala — tent staffing",
+     "plain": [
+      "the lobster bake gala",
+      "the lobster bake",
+      "the lobster gala"
+     ],
+     "oblique": [
+      "the seaside-themed members' dinner",
+      "the signature summer banquet",
+      "shellfish for the annual outdoor feast",
+      "an upscale buffet for four hundred guests",
+      "the premium dining event on the lawn",
+      "the catered evening that sold out in a day",
+      "special seafood flown in for the party",
+      "the black-tie style dinner by the water hazard",
+      "extravagant menu items for the big night",
+      "the featured meal at the end-of-season party",
+      "food for the member appreciation night",
+      "one night of imported delicacies",
+      "the high-end spread for the charity night",
+      "costly proteins ordered for the banquet",
+      "dinner for the largest crowd we host",
+      "the premium plated event the chef planned"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "wineroom",
+     "vendor": "Vintner's Cellar Imports",
+     "memos": [
+      "Reserve cellar buyout — estate vintages",
+      "Reserve cellar buyout — bonded storage"
+     ],
+     "cross_memo": "Reserve cellar buyout — racking installation",
+     "plain": [
+      "the reserve cellar buyout",
+      "the reserve cellar",
+      "the reserve cellar purchase"
+     ],
+     "oblique": [
+      "acquiring a collection from a retiring member",
+      "bottles purchased from a private collector",
+      "bringing in rare bottles for the dining room",
+      "the big acquisition of fine liquid inventory",
+      "a one-time stock-up on prized vintages",
+      "the upgrade to the dining room's offerings",
+      "what the sommelier convinced us to buy",
+      "a trove of aged bottles added to the list",
+      "the collector's estate sale we took advantage of",
+      "premium drinks for the members' lounge",
+      "a large wine lot picked up below market",
+      "the deal on high-end bottles",
+      "expanding the premium by-the-glass program",
+      "the purchase that doubled our top shelf",
+      "an inherited collection we bought out",
+      "rare liquid assets bought in a single order"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Course Equipment Repairs",
+   "aliases": [
+    "equipment repairs",
+    "mower repairs",
+    "maintenance shop",
+    "course machinery",
+    "shop repairs"
+   ],
+   "narrative": [
+    "Equipment repairs",
+    "Mower repairs",
+    "Course machinery"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironhorse Parts & Supply",
+     "base": 6500,
+     "memo": "Blades, belts and filters — monthly parts"
+    },
+    {
+     "vendor": "Redline Hydraulic Services",
+     "base": 3800,
+     "memo": "Hydraulic hose and fluid service — monthly"
+    },
+    {
+     "vendor": "Greensmith Reel Grinding",
+     "base": 2200,
+     "memo": "Reel sharpening — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "fairwaymower",
+     "vendor": "Ironhorse Parts & Supply",
+     "memos": [
+      "Triplex reel overhaul — bedknife kit",
+      "Triplex reel overhaul — bearing replacement"
+     ],
+     "cross_memo": "Triplex reel overhaul — rental unit freight",
+     "plain": [
+      "the triplex reel overhaul",
+      "the triplex overhaul",
+      "the triplex reel rebuild"
+     ],
+     "oblique": [
+      "bringing the three-wheeled cutting units back to life",
+      "the big rebuild on the greens mowers",
+      "getting the machines ready for spring",
+      "a full teardown of the machine that stopped cutting clean",
+      "the refurbishment of the putting surface cutters",
+      "major work on the machines the crew relies on",
+      "restoring the core of our mowing fleet",
+      "the shop's most expensive job this quarter",
+      "what the mechanic said couldn't wait",
+      "the work that kept the mowers from being scrapped",
+      "reconditioning machines past their service hours",
+      "a complete refresh of the cutting heads",
+      "bringing aging machines back to spec",
+      "the seasonal catch-up on tired equipment",
+      "the rebuild approved after the quality-of-cut complaints",
+      "overhauling the units that mow the putting surfaces"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "irrigpump",
+     "vendor": "Aquaflow Pump Specialists",
+     "memos": [
+      "Pump station rebuild — impeller and motor",
+      "Pump station rebuild — control panel"
+     ],
+     "cross_memo": "Pump station rebuild — crane service",
+     "plain": [
+      "the pump station rebuild",
+      "the pump station",
+      "the pump station repair"
+     ],
+     "oblique": [
+      "restoring the machinery that pushes water to the sprinklers",
+      "the failure of the main watering system's engine",
+      "getting the water delivery back online",
+      "repair of the heart of the irrigation setup",
+      "the unplanned fix to the lake-side equipment",
+      "what went wrong the week the sprinklers lost pressure",
+      "the emergency to keep the course from drying out",
+      "reviving the equipment that feeds the lines",
+      "the mechanical failure on the supply side",
+      "a costly breakdown during peak watering season",
+      "replacing worn internals on the water mover",
+      "the work done after the pressure alarm",
+      "bringing the water supply machinery back",
+      "the outage that put the whole property at risk",
+      "a major mechanical fix in the building by the pond",
+      "repair of what moves water out to the grass"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Golf Course Maintenance Labor",
+   "aliases": [
+    "course labor",
+    "grounds crew",
+    "maintenance labor",
+    "greenkeeping payroll",
+    "crew costs"
+   ],
+   "narrative": [
+    "Course labor",
+    "Grounds crew",
+    "Crew costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Evergreen Staffing Partners",
+     "base": 16500,
+     "memo": "Seasonal crew placement — monthly billing"
+    },
+    {
+     "vendor": "Fairway Payroll Services",
+     "base": 8200,
+     "memo": "Hourly payroll processing and taxes — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "tournamentprep",
+     "vendor": "Evergreen Staffing Partners",
+     "memos": [
+      "Invitational setup crew — overtime crew",
+      "Invitational setup crew — weekend shifts"
+     ],
+     "cross_memo": "Invitational setup crew — safety gear issue",
+     "plain": [
+      "the invitational setup crew",
+      "the invitational crew",
+      "the invitational setup labor"
+     ],
+     "oblique": [
+      "extra hands to get the property ready for guests",
+      "the staff we added for the big weekend",
+      "overtime to meet the pre-event deadline",
+      "additional workers for the championship",
+      "hourly bump ahead of the visiting players",
+      "labor to get things perfect on short notice",
+      "bringing in help for the prestigious event",
+      "the crew that mowed through the night",
+      "early morning shifts before the first tee time",
+      "the labor push before the big competition",
+      "what it took to host the regional event",
+      "after-hours work prepping the grounds",
+      "temporary workers added for the visiting field",
+      "double shifts the head of grounds approved",
+      "the stretched-out schedule before opening day",
+      "extra bodies on the property for the marquee weekend"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "stormcleanup",
+     "vendor": "Timberline Tree & Debris",
+     "memos": [
+      "Windstorm debris clearing — fallen timber",
+      "Windstorm debris clearing — chipper crew"
+     ],
+     "cross_memo": "Windstorm debris clearing — hauling fees",
+     "plain": [
+      "the windstorm debris clearing",
+      "the windstorm cleanup",
+      "the windstorm debris removal"
+     ],
+     "oblique": [
+      "recovering after the severe weather",
+      "the aftermath of the night the big oaks came down",
+      "cleanup of branches and limbs across the property",
+      "removing what the gale left behind",
+      "emergency work to reopen the closed holes",
+      "the hurricane-style blow that closed us for two days",
+      "getting the grounds back to playable",
+      "after the damaging gust event",
+      "clearing the property so members could return",
+      "the unplanned cleanup bill from the weather",
+      "specialty crews hired to haul away downed trees",
+      "sawing and hauling after the overnight tempest",
+      "restoring access to the blocked cart paths",
+      "what followed the severe weather front",
+      "the labor to put things right after nature hit",
+      "the mess left across the fairways after the squall"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Clubhouse Utilities & Irrigation Water",
+   "aliases": [
+    "utilities",
+    "water and power",
+    "irrigation water",
+    "energy costs",
+    "utility bills"
+   ],
+   "narrative": [
+    "Utilities",
+    "Irrigation water",
+    "Energy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-County Water Authority",
+     "base": 13500,
+     "memo": "Raw water usage — monthly meter charge"
+    },
+    {
+     "vendor": "Meridian Electric Cooperative",
+     "base": 9500,
+     "memo": "Clubhouse and pump electricity — monthly"
+    },
+    {
+     "vendor": "BlueFlame Gas Company",
+     "base": 2400,
+     "memo": "Natural gas — kitchen and heating"
+    }
+   ],
+   "events": [
+    {
+     "key": "droughtsurcharge",
+     "vendor": "Tri-County Water Authority",
+     "memos": [
+      "Stage three restriction penalty — overage surcharge",
+      "Stage three restriction penalty — tiered rate adjustment"
+     ],
+     "cross_memo": "Stage three restriction penalty — compliance audit fee",
+     "plain": [
+      "the stage three restriction penalty",
+      "the stage three penalty",
+      "the stage three surcharge"
+     ],
+     "oblique": [
+      "running over our allowed allotment during the dry spell",
+      "the fine for exceeding the cap",
+      "a rate hike triggered by the arid summer",
+      "the higher bracket we landed in",
+      "what the authority charged when rainfall disappeared",
+      "the penalty for overwatering during the shortage",
+      "extra fees after the municipality tightened limits",
+      "paying more because the reservoir ran low",
+      "the cost of keeping the grass alive in a drought",
+      "rising rates for heavy users in dry months",
+      "the premium tier we crossed on the meter",
+      "a consequence of the hot dry stretch",
+      "the bill that arrived after the usage warning letter",
+      "a steeper price per thousand gallons",
+      "the penalty hit for staying green",
+      "charges tied to the scarcity declared by the county"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "solarbuy",
+     "vendor": "Sunridge Energy Solutions",
+     "memos": [
+      "Rooftop solar array — panel financing",
+      "Rooftop solar array — interconnection fee"
+     ],
+     "cross_memo": "Rooftop solar array — roof reinforcement",
+     "plain": [
+      "the rooftop solar array",
+      "the rooftop solar",
+      "the rooftop solar project"
+     ],
+     "oblique": [
+      "the sustainability project the board supported",
+      "generating our own electricity on the clubhouse building",
+      "panels on the roof to cut the monthly power bill",
+      "the green energy initiative",
+      "a long-term play to lower our power costs",
+      "the change meant to offset grid purchases",
+      "the new source of electricity above the dining room",
+      "what the energy consultant recommended",
+      "clean power installation for the main building",
+      "a capital-style project hitting expense this month",
+      "the environmental push by the green committee",
+      "the effort to be less dependent on the local grid",
+      "switching to sunshine as an energy source",
+      "the system that will pay for itself in time",
+      "onsite generation work above the ballroom",
+      "the upfront cost of producing our own power"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Membership & Event Marketing",
+   "aliases": [
+    "membership marketing",
+    "event marketing",
+    "marketing",
+    "member acquisition",
+    "promotions"
+   ],
+   "narrative": [
+    "Membership marketing",
+    "Event marketing",
+    "Promotions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clubhouse Creative Agency",
+     "base": 7500,
+     "memo": "Retainer — monthly brand and newsletter"
+    },
+    {
+     "vendor": "Peak Digital Media",
+     "base": 4500,
+     "memo": "Social ads and search — monthly spend"
+    },
+    {
+     "vendor": "Greenview Print & Mail",
+     "base": 2100,
+     "memo": "Direct mail and printing — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "junioracademy",
+     "vendor": "Clubhouse Creative Agency",
+     "memos": [
+      "Junior academy campaign — video production",
+      "Junior academy campaign — billboard buy"
+     ],
+     "cross_memo": "Junior academy campaign — free clinic equipment",
+     "plain": [
+      "the junior academy campaign",
+      "the junior academy push",
+      "the junior academy promotion"
+     ],
+     "oblique": [
+      "the outreach aimed at young families",
+      "an effort to attract the next generation of members",
+      "the youth recruitment push",
+      "advertising for kids who might take up the sport",
+      "the drive to get children onto the grounds",
+      "what the membership director launched for local parents",
+      "pitching to households with school-age kids",
+      "a strategy to refresh our aging roster",
+      "the promotional blitz targeting parents",
+      "the effort to fill summer youth programs",
+      "a bid to bring in younger golfers",
+      "the family-focused awareness work",
+      "paid exposure for the after-school program",
+      "advertising to people under forty",
+      "the campaign to lower our average member age",
+      "reaching the neighborhood's households with children"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "hostcity",
+     "vendor": "Summit Sports Promotions",
+     "memos": [
+      "Pro-am sponsorship drive — sponsor packages",
+      "Pro-am sponsorship drive — banner production"
+     ],
+     "cross_memo": "Pro-am sponsorship drive — hospitality tent",
+     "plain": [
+      "the pro-am sponsorship drive",
+      "the pro-am sponsorship",
+      "the pro-am drive"
+     ],
+     "oblique": [
+      "raising money from local businesses for the charity event",
+      "the outreach to corporate partners",
+      "lining up backers for the celebrity round",
+      "signage and packages for companies putting up cash",
+      "courting area firms to underwrite the fundraiser",
+      "the program to find commercial supporters",
+      "the effort that brought in company logos on the course",
+      "materials prepared for the donor round",
+      "what the events chair pursued among local merchants",
+      "presenting opportunities to businesses",
+      "an annual push for outside funding",
+      "the printed pieces for potential financial backers",
+      "fundraising collateral for the benefit tournament",
+      "the pitch deck for area employers",
+      "the push to attract name-brand support",
+      "courting partners for the invitational charity round"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

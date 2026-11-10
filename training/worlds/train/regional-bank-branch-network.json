@@ -1,0 +1,728 @@
+{
+ "slug": "regional-bank-branch-network",
+ "industry": "regional bank branch network",
+ "entities": [
+  "Prairie Crest Bancorp",
+  "Lakeshore Community Bank",
+  "Ironwood Savings & Trust",
+  "Cedar Valley Banking Group",
+  "Summit Ridge Financial"
+ ],
+ "accounts": [
+  {
+   "name": "Armored Transport & Cash Logistics",
+   "aliases": [
+    "armored",
+    "cash logistics",
+    "armored car spend",
+    "cash transport",
+    "courier and vault runs"
+   ],
+   "narrative": [
+    "Armored spend",
+    "Cash logistics",
+    "Cash transport"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brinkwell Armored Services",
+     "base": 14500,
+     "memo": "Svc Inv - scheduled branch cash pickups"
+    },
+    {
+     "vendor": "Tallgrass Courier Co",
+     "base": 4200,
+     "memo": "Inv - inter-branch document courier"
+    },
+    {
+     "vendor": "Redstone Vault Partners",
+     "base": 6800,
+     "memo": "Mnt - vault cash processing fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "holidaysurge",
+     "vendor": "Brinkwell Armored Services",
+     "memos": [
+      "Brinkwell Inv - Holiday Currency Surge - extra route runs",
+      "Brinkwell Inv - Holiday Currency Surge - overtime crews"
+     ],
+     "cross_memo": "Holiday Currency Surge - temporary cash insurance rider",
+     "plain": [
+      "the holiday currency surge",
+      "the holiday currency surge runs",
+      "extra holiday currency surge pickups"
+     ],
+     "oblique": [
+      "the extra runs we added for seasonal cash demand",
+      "heavier shipments of bills ahead of the festive weeks",
+      "added crews hauling money to the lobbies",
+      "the pre-season push to stock every location with notes",
+      "busier pickup schedules during the gift-buying rush",
+      "seasonal demand for small denominations",
+      "stocking tellers for the shopping peak",
+      "additional truck routes at year end",
+      "the spike in customer withdrawals before the celebrations",
+      "overtime for the guards on those added routes",
+      "topping up the machines before the long weekend",
+      "emergency restocking of the lobby drawers",
+      "expanded delivery windows for bundled currency",
+      "extra visits requested by operations leads",
+      "the seasonal bump in physical money movement",
+      "a wave of unscheduled deliveries to the counters"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "gatewayrelo",
+     "vendor": "Gateway Safeguard Movers",
+     "memos": [
+      "Gateway Safeguard Movers Inv - Eastside Safe Relocation - crane lift",
+      "Gateway Safeguard Movers Inv - Eastside Safe Relocation - floor reinforcement"
+     ],
+     "cross_memo": "Eastside Safe Relocation - permit and inspection",
+     "plain": [
+      "the eastside safe relocation",
+      "the eastside safe relocation lift",
+      "eastside safe relocation work"
+     ],
+     "oblique": [
+      "moving the heavy steel box to the new building",
+      "the shift of our largest strongroom fixture",
+      "hauling the old deposit chest across town",
+      "rigging crews for the oversized steel unit",
+      "the closure and reopening of the east office",
+      "what it took to get the big container out the door",
+      "specialty hauling of a multi-ton item",
+      "structural work so the floor could hold the weight",
+      "the relocation project ops requested last quarter",
+      "a one-time heavy move for the consolidated site",
+      "getting the old fixture out before the lease ended",
+      "professional riggers brought in for the transfer",
+      "transporting the legacy strongroom equipment",
+      "the consolidation of two offices into one",
+      "a single oversized haul with crane support",
+      "reinforcing the new space for what we carried in"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "ATM & Kiosk Network Maintenance",
+   "aliases": [
+    "atm",
+    "atm maintenance",
+    "kiosk upkeep",
+    "machine servicing",
+    "atm fleet costs"
+   ],
+   "narrative": [
+    "ATM maintenance",
+    "Machine servicing",
+    "Kiosk upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "NovaCash Field Services",
+     "base": 19000,
+     "memo": "Svc Qtr - ATM preventive maintenance"
+    },
+    {
+     "vendor": "Pinecrest Terminal Parts",
+     "base": 5600,
+     "memo": "Inv - replacement terminal components"
+    },
+    {
+     "vendor": "Clearline Network Monitoring",
+     "base": 3100,
+     "memo": "Mnt - ATM uptime monitoring subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "skimmer",
+     "vendor": "NovaCash Field Services",
+     "memos": [
+      "NovaCash Inv - Skimmer Sweep Campaign - device inspection",
+      "NovaCash Inv - Skimmer Sweep Campaign - anti-tamper retrofit"
+     ],
+     "cross_memo": "Skimmer Sweep Campaign - fraud reimbursement claims",
+     "plain": [
+      "the skimmer sweep campaign",
+      "skimmer sweep campaign retrofits",
+      "the skimmer sweep inspections"
+     ],
+     "oblique": [
+      "checking every card slot for planted hardware",
+      "the security push after customers reported stolen data",
+      "retrofitting machines against tampering",
+      "an unplanned audit of all outdoor terminals",
+      "hardening the readers following the fraud alerts",
+      "the crackdown prompted by compliance",
+      "inspections ordered after the regulator's note",
+      "adding protective shields to the card readers",
+      "tamper-proofing across the whole footprint",
+      "the response to criminals attaching devices",
+      "a rushed inspection of every walk-up machine",
+      "upgrades requested by the risk committee",
+      "technicians visiting each location twice",
+      "hardware swaps to stop data theft",
+      "the emergency review of exterior units",
+      "protective upgrades after the incident reports"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "driveupconv",
+     "vendor": "Harbor Lane Construction",
+     "memos": [
+      "Harbor Lane Construction Inv - Drive-Up Lane Conversion - concrete pad",
+      "Harbor Lane Construction Inv - Drive-Up Lane Conversion - canopy install"
+     ],
+     "cross_memo": "Drive-Up Lane Conversion - signage and striping",
+     "plain": [
+      "the drive-up lane conversion",
+      "drive-up lane conversion construction",
+      "the drive-up lane conversion canopy"
+     ],
+     "oblique": [
+      "turning a walk-up spot into a car-friendly one",
+      "the new stand where motorists pull alongside",
+      "building a pad and roof for the vehicle-side unit",
+      "what we spent so customers can stay in their cars",
+      "the branch that now serves people behind the wheel",
+      "construction at the Millbrook location",
+      "new covered access for the cash machine",
+      "the project that added a lane for autos",
+      "a concrete slab poured last spring",
+      "the relocation of the machine to the curb side",
+      "paving and cover for the new setup",
+      "an exterior build requested by the market manager",
+      "bringing the unit out to the parking area",
+      "the overhead cover that went up beside the lot",
+      "contractor work to open another way to withdraw",
+      "adapting the site for motorists"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Branch Security & Surveillance",
+   "aliases": [
+    "security",
+    "branch security",
+    "surveillance",
+    "alarm and camera costs",
+    "guard services"
+   ],
+   "narrative": [
+    "Branch security",
+    "Surveillance costs",
+    "Guard services"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Watch Systems",
+     "base": 9800,
+     "memo": "Svc Mnt - alarm monitoring all branches"
+    },
+    {
+     "vendor": "Bluehawk Guard Group",
+     "base": 12400,
+     "memo": "Inv - contract guard hours"
+    },
+    {
+     "vendor": "ClearView Camera Leasing",
+     "base": 5300,
+     "memo": "Lease - CCTV equipment monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "nightdrop",
+     "vendor": "Sentinel Watch Systems",
+     "memos": [
+      "Sentinel Inv - Night Depository Hardening - reinforced chute",
+      "Sentinel Inv - Night Depository Hardening - sensor install"
+     ],
+     "cross_memo": "Night Depository Hardening - structural engineer review",
+     "plain": [
+      "the night depository hardening",
+      "night depository hardening installs",
+      "the night depository hardening sensors"
+     ],
+     "oblique": [
+      "making the after-hours drop slot tougher to break into",
+      "upgrades following the attempted break-in",
+      "stronger protection for evening deposits",
+      "what it cost to harden the slot businesses use",
+      "the response to the burglary at the north office",
+      "new steel and detectors at the wall opening",
+      "a safety fix demanded by our insurer",
+      "protecting merchants who bring bags after closing",
+      "the retrofit the carrier required",
+      "added shielding where deposits go in",
+      "securing the chute that thieves targeted",
+      "tightened defenses for late-day cash",
+      "a rework of how overnight money is received",
+      "counter-theft improvements at three offices",
+      "what the underwriter asked us to reinforce",
+      "installing alarms inside the wall slot"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "protest",
+     "vendor": "Ridgeline Event Protection",
+     "memos": [
+      "Ridgeline Event Protection Inv - Downtown Rally Coverage - armed detail",
+      "Ridgeline Event Protection Inv - Downtown Rally Coverage - barricade rental"
+     ],
+     "cross_memo": "Downtown Rally Coverage - lost-hours staff pay",
+     "plain": [
+      "the downtown rally coverage",
+      "downtown rally coverage guards",
+      "the downtown rally coverage barricades"
+     ],
+     "oblique": [
+      "extra people standing outside during the demonstration",
+      "temporary protection while crowds gathered nearby",
+      "the large gathering by our flagship office",
+      "hiring outside help for the weekend of unrest",
+      "precautions taken when marchers came through",
+      "fencing placed around the entrance",
+      "a short-notice request from the regional president",
+      "staffing up because of the city event",
+      "temporary barriers in front of the glass",
+      "outside personnel posted overnight",
+      "what we paid to keep the doors safe during the crowds",
+      "the public gathering that passed our windows",
+      "a surge of uniformed presence for two days",
+      "preparedness for civil disturbance",
+      "the added shifts when the plaza filled up",
+      "insurance-driven coverage while the street was busy"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Loan Servicing & Collections",
+   "aliases": [
+    "servicing",
+    "loan servicing",
+    "collections",
+    "collection agency fees",
+    "default handling"
+   ],
+   "narrative": [
+    "Loan servicing",
+    "Collections",
+    "Collection agency fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Loan Processing",
+     "base": 24000,
+     "memo": "Svc Inv - monthly loan boarding and payment processing"
+    },
+    {
+     "vendor": "Ashford Recovery Partners",
+     "base": 8700,
+     "memo": "Fee - delinquent account recovery"
+    },
+    {
+     "vendor": "Keystone Title Search",
+     "base": 3900,
+     "memo": "Inv - lien and title searches"
+    }
+   ],
+   "events": [
+    {
+     "key": "portfolio",
+     "vendor": "Meridian Loan Processing",
+     "memos": [
+      "Meridian Inv - Auto Portfolio Boarding - data conversion",
+      "Meridian Inv - Auto Portfolio Boarding - parallel run"
+     ],
+     "cross_memo": "Auto Portfolio Boarding - legal document review",
+     "plain": [
+      "the auto portfolio boarding",
+      "auto portfolio boarding conversion",
+      "the auto portfolio boarding run"
+     ],
+     "oblique": [
+      "bringing the acquired vehicle loans onto our system",
+      "migrating records from the purchased book",
+      "onboarding thousands of car notes at once",
+      "the transfer of accounts we bought from another lender",
+      "testing both platforms side by side",
+      "what it took to absorb the new loan pool",
+      "mapping fields from the seller's files",
+      "cleanup of the inherited borrower data",
+      "a one-time load of purchased paper",
+      "the integration of the acquired book",
+      "coordination with the selling institution's staff",
+      "converting payment histories into our format",
+      "the project tied to the spring purchase",
+      "dual processing until balances matched",
+      "making the foreign records readable",
+      "the effort around the inherited vehicle financing"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "floodrelief",
+     "vendor": "Crestwater Disaster Advisors",
+     "memos": [
+      "Crestwater Disaster Advisors Inv - Riverbend Flood Forbearance - borrower outreach",
+      "Crestwater Disaster Advisors Inv - Riverbend Flood Forbearance - call center overflow"
+     ],
+     "cross_memo": "Riverbend Flood Forbearance - waived late-fee adjustments",
+     "plain": [
+      "the riverbend flood forbearance",
+      "riverbend flood forbearance outreach",
+      "the riverbend flood forbearance calls"
+     ],
+     "oblique": [
+      "helping borrowers hit by the storm water",
+      "extra staffing to phone affected customers",
+      "payment pauses offered after the disaster",
+      "the response to the rising river in the spring",
+      "temporary phone help for stricken households",
+      "outreach to families who lost property",
+      "relief programs for the damaged neighborhoods",
+      "a surge of calls after the natural catastrophe",
+      "consultants who guided us on hardship plans",
+      "the weeks when customers could not pay",
+      "the special program approved by the board",
+      "contacting homeowners near the water",
+      "overflow handling of anxious callers",
+      "accommodations for people displaced by the emergency",
+      "what we spent to be a good neighbor after the deluge",
+      "advisors hired for the regional emergency"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Card & Payments Processing",
+   "aliases": [
+    "card processing",
+    "payments",
+    "interchange costs",
+    "debit and credit processing",
+    "card network fees"
+   ],
+   "narrative": [
+    "Card processing",
+    "Payments costs",
+    "Network fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Paymark Network Services",
+     "base": 28000,
+     "memo": "Inv - card network assessments"
+    },
+    {
+     "vendor": "Veritrax Authorization Gateway",
+     "base": 9500,
+     "memo": "Svc - transaction authorization fees"
+    },
+    {
+     "vendor": "Plumline Card Embossing",
+     "base": 4800,
+     "memo": "Inv - plastic card production"
+    }
+   ],
+   "events": [
+    {
+     "key": "chipreissue",
+     "vendor": "Plumline Card Embossing",
+     "memos": [
+      "Plumline Inv - Contactless Card Reissue - mass mailing",
+      "Plumline Inv - Contactless Card Reissue - tap chip premium"
+     ],
+     "cross_memo": "Contactless Card Reissue - customer postage",
+     "plain": [
+      "the contactless card reissue",
+      "contactless card reissue mailing",
+      "the contactless card reissue run"
+     ],
+     "oblique": [
+      "replacing every customer's plastic with a newer kind",
+      "the swap to wave-and-pay cards",
+      "a mailing that hit the whole customer base",
+      "the technology refresh of what people carry in wallets",
+      "new cards sent to all account holders",
+      "the upgrade program the product team launched",
+      "stock bought for a one-time replacement drive",
+      "faster checkout hardware for cardholders",
+      "printing and shipping a fresh generation of plastic",
+      "the cycle that retired older chips",
+      "a wave of envelopes to households",
+      "the premium paid for the newer embedded technology",
+      "getting current cards out of circulation",
+      "a product change requested last year",
+      "the batch order that cleared our warehouse",
+      "moving customers to the newer tap standard"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "chargebackwave",
+     "vendor": "Lockstep Dispute Resolution",
+     "memos": [
+      "Lockstep Dispute Resolution Inv - Merchant Breach Disputes - case handling",
+      "Lockstep Dispute Resolution Inv - Merchant Breach Disputes - forensic review"
+     ],
+     "cross_memo": "Merchant Breach Disputes - provisional credits issued",
+     "plain": [
+      "the merchant breach disputes",
+      "merchant breach disputes handling",
+      "the merchant breach disputes review"
+     ],
+     "oblique": [
+      "a flood of customer claims after a retailer was hacked",
+      "contesting fraudulent purchases en masse",
+      "the clean-up after a store's systems were compromised",
+      "outside help sorting thousands of complaints",
+      "investigating where stolen numbers came from",
+      "unauthorized spending traced to one source",
+      "specialists brought in for the incident",
+      "reimbursing cardholders hit by criminals",
+      "a backlog of claims from a single event",
+      "what it cost to unwind the fake transactions",
+      "the cluster of complaints in early summer",
+      "analysts examining the compromised data trail",
+      "temporary staff to work the claims queue",
+      "responding to the large-scale theft of numbers",
+      "the investigation we paid for after the leak",
+      "a spike in contested charges tied to one incident"
+     ],
+     "low": 17000,
+     "high": 34000
+    }
+   ]
+  },
+  {
+   "name": "Regulatory Compliance & Examination",
+   "aliases": [
+    "compliance",
+    "regulatory costs",
+    "exam fees",
+    "bsa and aml spend",
+    "audit and exam support"
+   ],
+   "narrative": [
+    "Compliance costs",
+    "Regulatory spend",
+    "Exam support"
+   ],
+   "recurring": [
+    {
+     "vendor": "Fairbanks Regulatory Advisory",
+     "base": 11500,
+     "memo": "Svc Retainer - compliance advisory"
+    },
+    {
+     "vendor": "Northgate AML Screening",
+     "base": 7200,
+     "memo": "Inv - transaction monitoring subscription"
+    },
+    {
+     "vendor": "Calloway Audit Partners",
+     "base": 9000,
+     "memo": "Qtr Inv - internal audit support"
+    }
+   ],
+   "events": [
+    {
+     "key": "consentorder",
+     "vendor": "Fairbanks Regulatory Advisory",
+     "memos": [
+      "Fairbanks Inv - Lookback Remediation Project - file review",
+      "Fairbanks Inv - Lookback Remediation Project - testing team"
+     ],
+     "cross_memo": "Lookback Remediation Project - temp analyst staffing",
+     "plain": [
+      "the lookback remediation project",
+      "lookback remediation project reviews",
+      "the lookback remediation testing"
+     ],
+     "oblique": [
+      "revisiting old files after the examiners raised concerns",
+      "the cleanup demanded by our supervisors",
+      "fixing past mistakes found in the review",
+      "an extended review of historical customer records",
+      "the corrective plan we agreed to with the agency",
+      "going back over years of account openings",
+      "work required before the agency would lift its concern",
+      "extra reviewers hired to re-check prior activity",
+      "the findings we had to resolve by deadline",
+      "a retroactive examination of old transactions",
+      "the mandate to repair earlier gaps",
+      "reconstructing documentation that was missing",
+      "the effort tied to the written agreement",
+      "teams re-verifying identity records",
+      "what the formal action required of us",
+      "a look-back covering prior periods"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "newcharter",
+     "vendor": "Orchard Street Law Group",
+     "memos": [
+      "Orchard Street Law Group Inv - Thornfield Merger Filing - counsel fees",
+      "Orchard Street Law Group Inv - Thornfield Merger Filing - application prep"
+     ],
+     "cross_memo": "Thornfield Merger Filing - agency application fee",
+     "plain": [
+      "the thornfield merger filing",
+      "thornfield merger filing counsel",
+      "the thornfield merger filing prep"
+     ],
+     "oblique": [
+      "paperwork to combine with a smaller bank",
+      "legal work to join forces with a neighbor",
+      "the regulatory application for the acquisition",
+      "attorneys handling the deal's approvals",
+      "getting permission to absorb another institution",
+      "documents submitted to the banking agencies",
+      "the transaction we announced in the fall",
+      "outside lawyers on the combination",
+      "packaging the request for supervisory consent",
+      "what it cost to seek approval to expand",
+      "the corporate marriage we pursued",
+      "the strategic purchase of a rival's charter",
+      "submissions requiring several rounds of edits",
+      "counsel hired for the buyout",
+      "an application tied to growth through acquisition",
+      "approvals needed before closing the deal"
+     ],
+     "low": 21000,
+     "high": 42000
+    }
+   ]
+  },
+  {
+   "name": "Branch Facilities & Lobby Operations",
+   "aliases": [
+    "facilities",
+    "branch facilities",
+    "lobby operations",
+    "building upkeep",
+    "branch maintenance"
+   ],
+   "narrative": [
+    "Facilities",
+    "Branch maintenance",
+    "Building upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenfield Janitorial Co",
+     "base": 8400,
+     "memo": "Svc - nightly branch cleaning"
+    },
+    {
+     "vendor": "Altair HVAC Services",
+     "base": 6100,
+     "memo": "Mnt - heating and cooling contract"
+    },
+    {
+     "vendor": "Brightwell Utilities Management",
+     "base": 13800,
+     "memo": "Inv - electric gas water all branches"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "Altair HVAC Services",
+     "memos": [
+      "Altair Inv - Teller Pod Refresh - ductwork reroute",
+      "Altair Inv - Teller Pod Refresh - vent relocation"
+     ],
+     "cross_memo": "Teller Pod Refresh - furniture and millwork",
+     "plain": [
+      "the teller pod refresh",
+      "teller pod refresh ductwork",
+      "the teller pod refresh vents"
+     ],
+     "oblique": [
+      "remodeling the service counters to an open layout",
+      "moving air handling to suit the new floor plan",
+      "the redesign of the lobby workspaces",
+      "a modernization requested by the retail head",
+      "taking down the old glass barriers",
+      "changes to the look of where staff greet people",
+      "reworking airflow around the new stations",
+      "the update that replaced old-style windows",
+      "a design change at our busiest offices",
+      "what it cost to reconfigure the front of house",
+      "comfort adjustments after the layout change",
+      "relocating registers closer to customers",
+      "a remodel following the brand guidelines",
+      "tearing out partitions between desks",
+      "a refreshed interior at pilot offices",
+      "construction in the public area"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "roofleak",
+     "vendor": "Stonebridge Roofing & Restoration",
+     "memos": [
+      "Stonebridge Roofing & Restoration Inv - Hailstorm Roof Repair - membrane replacement",
+      "Stonebridge Roofing & Restoration Inv - Hailstorm Roof Repair - interior drywall"
+     ],
+     "cross_memo": "Hailstorm Roof Repair - insurance deductible",
+     "plain": [
+      "the hailstorm roof repair",
+      "hailstorm roof repair membrane",
+      "the hailstorm roof repair drywall"
+     ],
+     "oblique": [
+      "damage from the violent weather in late spring",
+      "patching the top of the Westfield building",
+      "water coming in after the ice stones fell",
+      "contractors fixing what the sky broke",
+      "the claim that our carrier partly covered",
+      "replacing damaged covering above the vault area",
+      "restoring ceilings that were soaked",
+      "an unplanned fix to the building envelope",
+      "storm aftermath at the downtown location",
+      "the repair that closed the lobby for a week",
+      "ceiling tiles and plaster that had to be redone",
+      "emergency work to stop the dripping",
+      "weather-related reconstruction costs",
+      "the unexpected bill for the pounding we took",
+      "bringing the damaged structure back to normal",
+      "tradesmen working overtime after the severe weather"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

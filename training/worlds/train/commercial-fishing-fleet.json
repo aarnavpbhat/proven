@@ -1,0 +1,708 @@
+{
+ "slug": "commercial-fishing-fleet",
+ "industry": "commercial fishing fleet",
+ "entities": [
+  "Cold Harbor Seafoods LLC",
+  "Pelican Reach Trawlers Inc",
+  "Gannet Bank Fisheries",
+  "Saltmarsh Provision Fleet Co",
+  "Driftwood Point Marine Group"
+ ],
+ "accounts": [
+  {
+   "name": "Vessel Fuel & Lubricants",
+   "aliases": [
+    "fuel",
+    "diesel",
+    "fuel costs",
+    "fuel spend",
+    "vessel fuel"
+   ],
+   "narrative": [
+    "Fuel costs",
+    "Diesel",
+    "Vessel fuel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborline Fuel Dock",
+     "base": 28000,
+     "memo": "Marine diesel bulk delivery"
+    },
+    {
+     "vendor": "Anchor Lube Supply",
+     "base": 3200,
+     "memo": "Engine oil and hydraulic fluid"
+    }
+   ],
+   "events": [
+    {
+     "key": "bunkerspike",
+     "vendor": "Harborline Fuel Dock",
+     "memos": [
+      "Distant grounds surcharge - bunker premium",
+      "Distant grounds surcharge - remote delivery"
+     ],
+     "cross_memo": "Distant grounds surcharge - fuel barge charter",
+     "plain": [
+      "the distant grounds surcharge",
+      "the distant grounds bunker premium",
+      "the distant grounds remote delivery"
+     ],
+     "oblique": [
+      "the longer steaming to where the fish moved",
+      "extra miles run offshore",
+      "burning more to chase the schedule",
+      "the trip out past the usual banks",
+      "pricier refills far from port",
+      "the boats traveling much farther than planned",
+      "the fleet working waters well outside the normal range",
+      "a costly relocation of operations",
+      "chasing the catch",
+      "extended runs during the shifted season",
+      "higher cost of resupplying at sea",
+      "the long haul to productive water",
+      "hauling fuel out to where the boats were working",
+      "operating well beyond home waters",
+      "the roving pattern this quarter",
+      "a season spent far from the dock"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "scrubberretro",
+     "vendor": "Tidewater Emissions Labs",
+     "memos": [
+      "Exhaust scrubber retrofit - catalyst media",
+      "Exhaust scrubber retrofit - installation"
+     ],
+     "cross_memo": "Exhaust scrubber retrofit - dry dock berth",
+     "plain": [
+      "the exhaust scrubber retrofit",
+      "the scrubber retrofit catalyst media",
+      "the exhaust scrubber installation"
+     ],
+     "oblique": [
+      "meeting the new air quality rules",
+      "cleaning up what the stacks put out",
+      "the regulator-mandated upgrade",
+      "getting the older boats compliant",
+      "pollution control work on the engines",
+      "hardware to satisfy the harbor authority",
+      "work that let us keep sailing into the port",
+      "the environmental fix on the oldest hulls",
+      "what the inspectors demanded",
+      "cutting emissions to stay licensed",
+      "a compliance project on the aging boats",
+      "upgrades required before the permit renewal",
+      "making the engines pass the smell test",
+      "the green mandate",
+      "an add-on to old machinery",
+      "something the port made us do"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Fishing Gear & Nets",
+   "aliases": [
+    "gear",
+    "nets",
+    "gear costs",
+    "net spend",
+    "fishing gear"
+   ],
+   "narrative": [
+    "Gear costs",
+    "Net spend",
+    "Fishing gear"
+   ],
+   "recurring": [
+    {
+     "vendor": "Seine & Twine Co",
+     "base": 9500,
+     "memo": "Net mending twine and floats"
+    },
+    {
+     "vendor": "Brightwater Tackle Wholesale",
+     "base": 4200,
+     "memo": "Hooks, longlines and swivels"
+    },
+    {
+     "vendor": "Corkline Buoys",
+     "base": 1800,
+     "memo": "Buoys and marker lines"
+    }
+   ],
+   "events": [
+    {
+     "key": "trawldoors",
+     "vendor": "Seine & Twine Co",
+     "memos": [
+      "Otter board replacement - steel doors",
+      "Otter board replacement - warp hardware"
+     ],
+     "cross_memo": "Otter board replacement - welding crew",
+     "plain": [
+      "the otter board replacement",
+      "the otter board steel doors",
+      "the otter board warp hardware"
+     ],
+     "oblique": [
+      "new spreaders for the big trawl",
+      "parts that keep the net mouth open",
+      "what we lost when the cable snapped",
+      "gear lost on the seabed",
+      "swapping out the heavy plates dragging along the bottom",
+      "equipment hung up on a wreck",
+      "the pair of towed panels",
+      "replacing worn-out heavy kit",
+      "an expensive snag",
+      "steel we towed for years and retired",
+      "the heavy end of the rig",
+      "what took the net down with it",
+      "the dragging apparatus",
+      "parts for the bottom-towing setup",
+      "the big-ticket hardware swap",
+      "metal that wore through"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "squidjigs",
+     "vendor": "Pacifica Jig Works",
+     "memos": [
+      "Squid jigger conversion - LED lamp arrays",
+      "Squid jigger conversion - automated reels"
+     ],
+     "cross_memo": "Squid jigger conversion - generator upgrade",
+     "plain": [
+      "the squid jigger conversion",
+      "the squid jigger LED lamp arrays",
+      "the squid jigger automated reels"
+     ],
+     "oblique": [
+      "a new target species for the winter",
+      "lights that draw the catch at night",
+      "the boat we repurposed for a different fishery",
+      "machinery that does the work crews used to do",
+      "the diversification push",
+      "gear for the market that opened up",
+      "the retooling of one hull",
+      "a bet on a hot export product",
+      "what we bought to chase a fresh quota",
+      "new rigging for after-dark fishing",
+      "the change of strategy on the smaller vessel",
+      "equipment installed before the opening day",
+      "the pivot away from our usual catch",
+      "hardware to fish in the dark",
+      "automation of the hand lines",
+      "a switch in what the boat goes after"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Vessel Repairs & Drydock",
+   "aliases": [
+    "repairs",
+    "drydock",
+    "repair costs",
+    "yard spend",
+    "vessel maintenance"
+   ],
+   "narrative": [
+    "Repairs",
+    "Drydock",
+    "Vessel maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keel & Plank Shipwrights",
+     "base": 15000,
+     "memo": "Routine hull and deck repairs"
+    },
+    {
+     "vendor": "Bilge Pump Services",
+     "base": 2600,
+     "memo": "Pump and plumbing service calls"
+    }
+   ],
+   "events": [
+    {
+     "key": "propshaft",
+     "vendor": "Keel & Plank Shipwrights",
+     "memos": [
+      "Propeller shaft realignment - machining",
+      "Propeller shaft realignment - bearing set"
+     ],
+     "cross_memo": "Propeller shaft realignment - tug assist",
+     "plain": [
+      "the propeller shaft realignment",
+      "the propeller shaft machining",
+      "the propeller shaft bearing set"
+     ],
+     "oblique": [
+      "the vibration that shook the stern",
+      "the drive line going out of true",
+      "what stopped the boat from making speed",
+      "a mechanical fault below the waterline",
+      "the rear running gear coming apart",
+      "trouble with the part that turns the screw",
+      "the old girl limping home",
+      "unexpected work on the engine's output end",
+      "a breakdown that cut the season short",
+      "the grinding noise fix",
+      "getting the boat moving straight again",
+      "an emergency haul-out for a drivetrain problem",
+      "what the survey flagged on the aft end",
+      "parts that spin wearing unevenly",
+      "the costly rotating-gear job",
+      "an urgent mechanical overhaul after a rough trip"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "hullcrack",
+     "vendor": "Salt Flat Welding",
+     "memos": [
+      "Hull plating renewal - steel fabrication",
+      "Hull plating renewal - ultrasound survey"
+     ],
+     "cross_memo": "Hull plating renewal - crane hire",
+     "plain": [
+      "the hull plating renewal",
+      "the hull plating steel fabrication",
+      "the hull plating ultrasound survey"
+     ],
+     "oblique": [
+      "corrosion eating through the old boat",
+      "a thin spot that made the insurer nervous",
+      "the classification society's demand",
+      "new skin for the oldest vessel",
+      "metal that rusted past its limit",
+      "work needed before the certificate was renewed",
+      "the survey finding on thickness",
+      "replacing wasted steel",
+      "what the surveyor made us fix",
+      "patching the oldest ship's sides",
+      "rot discovered during the last haul-out",
+      "the cost of keeping a veteran boat afloat",
+      "a structural fix that couldn't wait",
+      "reinforcing the outer shell",
+      "scraping and replacing worn sections",
+      "the seaworthiness requirement"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Crew Wages & Shares",
+   "aliases": [
+    "crew",
+    "crew pay",
+    "crew wages",
+    "share payouts",
+    "labor"
+   ],
+   "narrative": [
+    "Crew pay",
+    "Crew wages",
+    "Share payouts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Deckhand Payroll Services",
+     "base": 30000,
+     "memo": "Crew base wages and shares"
+    },
+    {
+     "vendor": "Mariners Benefit Trust",
+     "base": 6800,
+     "memo": "Crew health and pension contributions"
+    },
+    {
+     "vendor": "Sea Legs Staffing",
+     "base": 3500,
+     "memo": "Relief deckhand placement"
+    }
+   ],
+   "events": [
+    {
+     "key": "signingbonus",
+     "vendor": "Sea Legs Staffing",
+     "memos": [
+      "Engineer retention premium - signing bonus",
+      "Engineer retention premium - relocation stipend"
+     ],
+     "cross_memo": "Engineer retention premium - recruiter retainer",
+     "plain": [
+      "the engineer retention premium",
+      "the engineer retention signing bonus",
+      "the engineer retention relocation stipend"
+     ],
+     "oblique": [
+      "keeping our mechanics from leaving for competitors",
+      "a sweetener to hold on to skilled hands",
+      "a scramble to fill the technical roles",
+      "pay to stop a poaching raid",
+      "the cost of a tight labor market",
+      "what it took to land the machinists",
+      "an offer to make people stay",
+      "bonus money for key personnel",
+      "the competition for qualified officers",
+      "moving someone across the country to join us",
+      "hiring pressure in the engine rooms",
+      "a payment to lock in talent",
+      "incentives for the people who run the machinery",
+      "a one-off to keep the best crew",
+      "paying up for hard-to-find skills",
+      "the staffing crunch on the senior side"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "stormdelay",
+     "vendor": "Rough Water Crew Relief",
+     "memos": [
+      "Typhoon standby pay - idle crew wages",
+      "Typhoon standby pay - hotel lodging"
+     ],
+     "cross_memo": "Typhoon standby pay - meal allowance",
+     "plain": [
+      "the typhoon standby pay",
+      "the typhoon idle crew wages",
+      "the typhoon hotel lodging"
+     ],
+     "oblique": [
+      "paying people to wait out the weather",
+      "the fleet tied up at the dock",
+      "days nobody could sail",
+      "wages for work that never happened",
+      "what we owed crews while the sea was too rough",
+      "a prolonged stay ashore",
+      "the unplanned layover",
+      "the cost of bad forecasts",
+      "salary with no catch to show for it",
+      "a week of sitting around",
+      "guaranteed minimums during the closure",
+      "the harbor shutdown",
+      "holding the men in town",
+      "the storm that kept us in port",
+      "money out with nothing coming in",
+      "the idle stretch before the fleet could leave"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Bait, Ice & Provisions",
+   "aliases": [
+    "bait",
+    "ice",
+    "provisions",
+    "bait and ice",
+    "supplies"
+   ],
+   "narrative": [
+    "Bait and ice",
+    "Provisions",
+    "Supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Frostbite Ice House",
+     "base": 7400,
+     "memo": "Flake ice for hold loading"
+    },
+    {
+     "vendor": "Chum Line Bait Co",
+     "base": 5200,
+     "memo": "Frozen herring and squid bait"
+    },
+    {
+     "vendor": "Galley Stores Wholesale",
+     "base": 3100,
+     "memo": "Crew groceries and galley stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "baitshortage",
+     "vendor": "Chum Line Bait Co",
+     "memos": [
+      "Mackerel emergency lot - spot purchase",
+      "Mackerel emergency lot - air freight"
+     ],
+     "cross_memo": "Mackerel emergency lot - cold storage overflow",
+     "plain": [
+      "the mackerel emergency lot",
+      "the mackerel spot purchase",
+      "the mackerel air freight"
+     ],
+     "oblique": [
+      "a supply gap when our usual product ran out",
+      "paying top price for a rushed order",
+      "what we scrambled to find the week before departure",
+      "bringing in stock from far away overnight",
+      "the shortage that threatened the trip",
+      "last-minute buying at inflated rates",
+      "a backup source when the contract failed",
+      "something we couldn't wait for by boat",
+      "the crisis in the lines of supply",
+      "fast delivery of what we ran out of",
+      "an expensive stopgap",
+      "filling the gap by plane",
+      "the premium we paid to avoid a delay",
+      "stock we needed yesterday",
+      "the scramble before leaving the dock",
+      "the panic purchase for the boats"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "slurryplant",
+     "vendor": "Glacier Point Refrigeration",
+     "memos": [
+      "Slurry ice machine commissioning - unit install",
+      "Slurry ice machine commissioning - piping"
+     ],
+     "cross_memo": "Slurry ice machine commissioning - electrical hookup",
+     "plain": [
+      "the slurry ice machine commissioning",
+      "the slurry ice machine unit install",
+      "the slurry ice machine piping"
+     ],
+     "oblique": [
+      "a better way to keep the catch chilled",
+      "new equipment for the dock to freeze product faster",
+      "the upgrade that raises the quality of landed fish",
+      "a capital project in the cooling area",
+      "gear bought to fetch a higher price at auction",
+      "the first of its kind on our pier",
+      "an investment in freshness",
+      "the modernization of the shore side",
+      "a machine that replaced the old block maker",
+      "preservation technology we hadn't had before",
+      "what the buyers kept asking for",
+      "fresher product reaching the market",
+      "the plant that makes our fish last longer",
+      "the new slushy chiller",
+      "the project to get premium grades",
+      "the cold-handling improvement"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Fisheries Permits & Quota",
+   "aliases": [
+    "permits",
+    "quota",
+    "licenses",
+    "permit fees",
+    "quota costs"
+   ],
+   "narrative": [
+    "Permit fees",
+    "Quota costs",
+    "Licenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "State Marine Resources Dept",
+     "base": 6000,
+     "memo": "Annual vessel license fees"
+    },
+    {
+     "vendor": "Quota Exchange Partners",
+     "base": 8800,
+     "memo": "Monthly quota lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "halibutquota",
+     "vendor": "Quota Exchange Partners",
+     "memos": [
+      "Halibut allocation purchase - permanent shares",
+      "Halibut allocation purchase - transfer fee"
+     ],
+     "cross_memo": "Halibut allocation purchase - broker commission",
+     "plain": [
+      "the halibut allocation purchase",
+      "the halibut permanent shares",
+      "the halibut transfer fee"
+     ],
+     "oblique": [
+      "buying the right to land more of a valuable species",
+      "expanding what we may legally catch",
+      "a long-term position we acquired",
+      "an entitlement acquired from a retiring owner",
+      "growing our slice of the regulated total",
+      "ownership of future harvest rights",
+      "a strategic buy of fishing privilege",
+      "what we paid to stop leasing every year",
+      "a bigger share of the pie",
+      "the licence to take more of a premium fish",
+      "cost of locking in access",
+      "a deal with an exiting operator",
+      "paying to catch more",
+      "an investment in the right to sail for it",
+      "locking in what had been rented",
+      "the one-time acquisition of harvest entitlement"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "observerfines",
+     "vendor": "Pacific Compliance Board",
+     "memos": [
+      "Bycatch violation penalty - civil fine",
+      "Bycatch violation penalty - observer deployment"
+     ],
+     "cross_memo": "Bycatch violation penalty - legal counsel",
+     "plain": [
+      "the bycatch violation penalty",
+      "the bycatch civil fine",
+      "the bycatch observer deployment"
+     ],
+     "oblique": [
+      "a regulatory slap after an inspection",
+      "a fine for landing something we shouldn't have",
+      "the enforcement action against one boat",
+      "penalty for the wrong animals in the nets",
+      "paying the government for a rules breach",
+      "a monitored trip the agency ordered",
+      "consequences of the audit finding",
+      "the compliance trouble last winter",
+      "what the officers cited us for",
+      "trouble with the authorities",
+      "money owed after a ruling",
+      "an unwelcome notice from the agency",
+      "the cost of an incident at sea",
+      "sanctions that followed the boarding",
+      "the price of an infraction",
+      "a government-imposed charge"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Marine Insurance",
+   "aliases": [
+    "insurance",
+    "marine cover",
+    "premiums",
+    "insurance costs",
+    "hull coverage"
+   ],
+   "narrative": [
+    "Insurance",
+    "Premiums",
+    "Hull coverage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lloyd Harbor Underwriters",
+     "base": 12500,
+     "memo": "Hull and machinery premium installment"
+    },
+    {
+     "vendor": "Protection Mutual Club",
+     "base": 4800,
+     "memo": "Crew liability premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "claimsurcharge",
+     "vendor": "Lloyd Harbor Underwriters",
+     "memos": [
+      "Casualty loss deductible - fire in engine room",
+      "Casualty loss deductible - adjuster fee"
+     ],
+     "cross_memo": "Casualty loss deductible - salvage tow",
+     "plain": [
+      "the casualty loss deductible",
+      "the casualty loss engine room fire",
+      "the casualty loss adjuster fee"
+     ],
+     "oblique": [
+      "our share of what the incident cost",
+      "what we absorbed before the insurer paid",
+      "an accident that took a boat out of service",
+      "the amount the policy didn't cover",
+      "a blaze aboard the older vessel",
+      "the out-of-pocket part of the claim",
+      "self-funded portion of the damage",
+      "the incident last quarter",
+      "a mishap below decks",
+      "money we owed even with coverage in place",
+      "the portion we bore after the loss",
+      "our half of a bad day",
+      "what sat between us and the payout",
+      "a smoky emergency",
+      "the net cost after the underwriter stepped in",
+      "the unhappy event offshore"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "p&imembership",
+     "vendor": "Atlantic Seafarers Risk Pool",
+     "memos": [
+      "Supplementary pollution cover - oil spill rider",
+      "Supplementary pollution cover - pool entry fee"
+     ],
+     "cross_memo": "Supplementary pollution cover - risk survey",
+     "plain": [
+      "the supplementary pollution cover",
+      "the supplementary pollution oil spill rider",
+      "the supplementary pollution pool entry fee"
+     ],
+     "oblique": [
+      "extra protection for a rare but ruinous event",
+      "a new requirement from our lenders",
+      "buying peace of mind about a leak",
+      "what the bank asked us to add",
+      "protection against cleanup liability",
+      "a policy extension that wasn't there before",
+      "broader protection at renewal",
+      "the added shield for the bigger vessels",
+      "what the charter customer made us carry",
+      "a safeguard beyond the standard package",
+      "fresh coverage for environmental risk",
+      "an addition to the program",
+      "cover for harm to the shoreline",
+      "the risk-transfer step",
+      "extra paper to protect the balance sheet",
+      "a bolt-on to the basic policy"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

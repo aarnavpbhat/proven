@@ -1,0 +1,728 @@
+{
+ "slug": "cement-and-concrete-plant",
+ "industry": "cement and concrete plant",
+ "entities": [
+  "Granite Ridge Cement Works",
+  "Blue Mesa Concrete Co",
+  "Ironbridge Aggregates & Ready-Mix",
+  "Prairie Kiln Materials",
+  "Summit Valley Concrete Products"
+ ],
+ "accounts": [
+  {
+   "name": "Kiln Fuel & Energy",
+   "aliases": [
+    "fuel",
+    "kiln fuel",
+    "energy costs",
+    "kiln energy spend",
+    "fuel and energy"
+   ],
+   "narrative": [
+    "Kiln fuel",
+    "Energy costs",
+    "Fuel and energy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Plains Petcoke Supply",
+     "base": 28000,
+     "memo": "Petcoke delivery Inv"
+    },
+    {
+     "vendor": "Ridgeline Natural Gas",
+     "base": 14000,
+     "memo": "Gas svc plant main"
+    },
+    {
+     "vendor": "Tri-County Electric Coop",
+     "base": 22000,
+     "memo": "Electric svc crusher & mill"
+    }
+   ],
+   "events": [
+    {
+     "key": "coalswitch",
+     "vendor": "Plains Petcoke Supply",
+     "memos": [
+      "Petcoke surcharge — burner conversion",
+      "Petcoke trial lots — burner conversion"
+     ],
+     "cross_memo": "Burner conversion — nozzle fabrication",
+     "plain": [
+      "the burner conversion",
+      "the burner conversion surcharge",
+      "the petcoke burner conversion"
+     ],
+     "oblique": [
+      "moving off the old solid fuel blend",
+      "the test run of a cheaper input",
+      "switching what feeds the flame",
+      "the trial of an alternate supply",
+      "a pilot of lower-grade stock",
+      "the changeover to a new feed source",
+      "testing a fuel substitute at the heat end",
+      "the experiment ordered by the plant manager",
+      "adapting the firing end for new material",
+      "a one-time swap in what we burn",
+      "the cost-saving fuel experiment",
+      "extra loads hauled in for evaluation",
+      "the trial program at the hot end",
+      "what it took to try a different input",
+      "the pilot for lowering heat costs",
+      "new feedstock testing"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "peakdemand",
+     "vendor": "Northfork Power Brokers",
+     "memos": [
+      "Demand penalty — curtailment breach",
+      "Grid event fee — curtailment breach"
+     ],
+     "cross_memo": "Curtailment breach — generator rental",
+     "plain": [
+      "the curtailment breach",
+      "the curtailment breach penalty",
+      "the curtailment breach fee"
+     ],
+     "oblique": [
+      "running past our allowed grid draw",
+      "the utility penalizing a heat-wave afternoon",
+      "exceeding what we agreed to pull",
+      "a spike in usage during a shortage",
+      "being caught using power when asked not to",
+      "the fine from the power provider",
+      "a bad few hours on the grid",
+      "overuse when supply was tight",
+      "the charge for ignoring the utility's call to cut load",
+      "a mid-summer power crunch",
+      "the premium for peak-hour consumption",
+      "the penalty for drawing too much at the wrong time",
+      "an expensive afternoon on the line",
+      "the regulator-driven surcharge",
+      "what we owed for not scaling back",
+      "an electricity overage"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Quarry & Raw Materials",
+   "aliases": [
+    "quarry",
+    "raw materials",
+    "limestone costs",
+    "quarry spend",
+    "raw material purchases"
+   ],
+   "narrative": [
+    "Quarry spend",
+    "Raw materials",
+    "Limestone costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hollis Limestone Haulage",
+     "base": 19000,
+     "memo": "Limestone haul Inv"
+    },
+    {
+     "vendor": "Sandhill Aggregates",
+     "base": 12500,
+     "memo": "Sand & gravel purchases"
+    },
+    {
+     "vendor": "Cobalt Gypsum Co",
+     "base": 6000,
+     "memo": "Gypsum bulk Inv"
+    }
+   ],
+   "events": [
+    {
+     "key": "blastclaim",
+     "vendor": "Hollis Limestone Haulage",
+     "memos": [
+      "Overburden removal — bench expansion",
+      "Extra haul crews — bench expansion"
+     ],
+     "cross_memo": "Bench expansion — survey stakeout",
+     "plain": [
+      "the bench expansion",
+      "the overburden bench expansion",
+      "the bench expansion haul"
+     ],
+     "oblique": [
+      "opening up a new working face",
+      "clearing material off the deposit",
+      "getting at the next layer of rock",
+      "the dig to reach fresh stone",
+      "moving dirt to expose more reserves",
+      "enlarging the area we mine",
+      "prep work ahead of extraction",
+      "uncovering the next stretch of ore body",
+      "the earthmoving on the north side",
+      "stripping what sat above the good stone",
+      "widening where the crews work",
+      "a push to reach new reserves",
+      "readying ground for the shovels",
+      "the groundwork the geologist recommended",
+      "the extra digging before summer",
+      "more terrain cleared for production"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "flyash",
+     "vendor": "Marlow Pozzolan Partners",
+     "memos": [
+      "Fly ash spot buy — shortage cover",
+      "Pozzolan emergency lots — shortage cover"
+     ],
+     "cross_memo": "Shortage cover — rail demurrage",
+     "plain": [
+      "the shortage cover",
+      "the fly ash shortage cover",
+      "the shortage cover purchase"
+     ],
+     "oblique": [
+      "scrambling for an additive when the usual source dried up",
+      "paying extra to keep the mixes going",
+      "the supplier outage",
+      "buying on the open market at a premium",
+      "a gap in supply from the power plants",
+      "stopgap purchases of a supplementary binder",
+      "the scarcity that hit our cementitious blends",
+      "covering a hole in deliveries",
+      "the last-minute order to avoid downtime",
+      "an unplanned buy from a new seller",
+      "what we paid to keep batching",
+      "ingredients bought at spot prices",
+      "the interruption upstream",
+      "a rush purchase of mineral filler",
+      "the emergency sourcing",
+      "extra spend to avoid a stoppage"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Mobile Fleet & Mixer Trucks",
+   "aliases": [
+    "fleet",
+    "mixer fleet",
+    "truck costs",
+    "fleet maintenance spend",
+    "drum trucks"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Mixer fleet",
+    "Truck costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Redline Diesel Service",
+     "base": 11000,
+     "memo": "Svc & Mnt mixer trucks"
+    },
+    {
+     "vendor": "Keystone Tire & Axle",
+     "base": 5500,
+     "memo": "Tires Inv fleet"
+    },
+    {
+     "vendor": "FleetPay Fuel Cards",
+     "base": 24000,
+     "memo": "Diesel card stmt"
+    }
+   ],
+   "events": [
+    {
+     "key": "drumrebuild",
+     "vendor": "Redline Diesel Service",
+     "memos": [
+      "Drum refurbishment — blade retrofit",
+      "Hydraulic motors — blade retrofit"
+     ],
+     "cross_memo": "Blade retrofit — loaner truck lease",
+     "plain": [
+      "the blade retrofit",
+      "the drum blade retrofit",
+      "the mixer blade retrofit"
+     ],
+     "oblique": [
+      "rebuilding the spinning barrels on older rigs",
+      "getting aging units back to spec",
+      "refitting the interior of the oldest vehicles",
+      "upgrades after the quality complaints",
+      "work to stop loads from coming out uneven",
+      "the inspection findings on our truck bodies",
+      "overhauling the haulers' internals",
+      "renewing worn equipment on the road units",
+      "what the shop did over the winter",
+      "bringing the old vehicles up to standard",
+      "the fix for inconsistent discharge",
+      "restoring the units that failed audit",
+      "a big maintenance push on the heavy rigs",
+      "the refit program for tired vehicles",
+      "major work on the tumbling equipment",
+      "correcting the problem customers flagged"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "emissionsfine",
+     "vendor": "Cascade Fleet Compliance",
+     "memos": [
+      "Retrofit filters — particulate mandate",
+      "Emissions testing — particulate mandate"
+     ],
+     "cross_memo": "Particulate mandate — registration penalty",
+     "plain": [
+      "the particulate mandate",
+      "the particulate mandate filters",
+      "the particulate mandate retrofit"
+     ],
+     "oblique": [
+      "new state rules on exhaust",
+      "getting older engines to pass inspection",
+      "what the regulator required of diesel units",
+      "clean-air compliance work",
+      "a government rule change on the trucks",
+      "the deadline for cleaner operation",
+      "fitting devices so we can keep driving",
+      "meeting the environmental agency's demand",
+      "the air-quality law",
+      "upgrades needed to stay legal on the road",
+      "what the state forced us to install",
+      "the compliance bill for the whole lot",
+      "tailpipe requirements",
+      "the regulatory catch-up",
+      "a mandated retrofit program",
+      "the cleaner-running requirement"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Plant Maintenance & Wear Parts",
+   "aliases": [
+    "plant maintenance",
+    "wear parts",
+    "maintenance spend",
+    "mill repairs",
+    "plant repairs"
+   ],
+   "narrative": [
+    "Plant maintenance",
+    "Wear parts",
+    "Mill repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Anvil Industrial Supply",
+     "base": 9500,
+     "memo": "MRO parts Inv"
+    },
+    {
+     "vendor": "Brightweld Contractors",
+     "base": 7800,
+     "memo": "Mnt labor weekly"
+    },
+    {
+     "vendor": "Ashgrove Refractory",
+     "base": 13000,
+     "memo": "Brick & castable Inv"
+    }
+   ],
+   "events": [
+    {
+     "key": "millliner",
+     "vendor": "Anvil Industrial Supply",
+     "memos": [
+      "Liner plates — ball mill relining",
+      "Grinding media top-up — ball mill relining"
+     ],
+     "cross_memo": "Ball mill relining — crane hire",
+     "plain": [
+      "the ball mill relining",
+      "the mill relining",
+      "the ball mill liner plates"
+     ],
+     "oblique": [
+      "replacing the steel inside the big grinder",
+      "the scheduled overhaul of the biggest rotating machine",
+      "worn components finally swapped out",
+      "the heavy equipment shutdown",
+      "what the engineers recommended after the inspection",
+      "new internal surfaces for the finishing equipment",
+      "the long-planned replacement of consumable steel",
+      "the major job during the outage",
+      "restoring the pulverizer",
+      "fresh protective plating",
+      "the multi-week stoppage work",
+      "the replacement cycle that came due",
+      "a once-every-few-years renewal",
+      "the heavy-duty refit in the grinding area",
+      "swapping out what had worn thin",
+      "the reconditioning of our largest asset"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "cooleroutage",
+     "vendor": "Delmar Thermal Services",
+     "memos": [
+      "Grate plate replacement — clinker cooler outage",
+      "Inspection crew — clinker cooler outage"
+     ],
+     "cross_memo": "Clinker cooler outage — temp labor",
+     "plain": [
+      "the clinker cooler outage",
+      "the cooler outage grate plates",
+      "the clinker cooler outage work"
+     ],
+     "oblique": [
+      "the unplanned stoppage after the hot product jammed",
+      "downtime at the discharge end of the furnace",
+      "getting the heat exchanger running again",
+      "the emergency shutdown in March's slow period",
+      "a breakdown that halted output",
+      "fixing equipment that handles the glowing product",
+      "the failure nobody scheduled",
+      "a sudden halt to production",
+      "the repair after the alarm tripped",
+      "specialist crews called in overnight",
+      "unexpected work at the back end of the line",
+      "restoring the unit that chills the finished nodules",
+      "a costly interruption",
+      "the equipment failure on the production line",
+      "the weekend call-out",
+      "the surprise failure"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Dust Control & Environmental Compliance",
+   "aliases": [
+    "environmental",
+    "dust control",
+    "compliance costs",
+    "emissions compliance",
+    "environmental spend"
+   ],
+   "narrative": [
+    "Environmental spend",
+    "Dust control",
+    "Compliance costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearair Monitoring Labs",
+     "base": 4800,
+     "memo": "Qtr stack testing Svc"
+    },
+    {
+     "vendor": "Baghouse Solutions Inc",
+     "base": 8200,
+     "memo": "Filter bags Inv"
+    },
+    {
+     "vendor": "Stillwater Waste Haulers",
+     "base": 3500,
+     "memo": "Kiln dust disposal"
+    }
+   ],
+   "events": [
+    {
+     "key": "stackviolation",
+     "vendor": "Clearair Monitoring Labs",
+     "memos": [
+      "Retest campaign — opacity exceedance",
+      "Corrective sampling — opacity exceedance"
+     ],
+     "cross_memo": "Opacity exceedance — legal counsel retainer",
+     "plain": [
+      "the opacity exceedance",
+      "the opacity exceedance retest",
+      "the opacity exceedance sampling"
+     ],
+     "oblique": [
+      "the notice from the state agency",
+      "proving we were back within limits",
+      "a failed reading from the chimney",
+      "the follow-up the regulator demanded",
+      "additional measurements after a bad result",
+      "clearing our name with the authorities",
+      "the smoke that looked too dark",
+      "repeat visits by the technicians",
+      "a citation and its aftermath",
+      "verifying the fix actually worked",
+      "the reading that put us in trouble",
+      "what it cost to demonstrate compliance again",
+      "the regulatory letter",
+      "resampling to satisfy the inspector",
+      "the black mark on the permit file",
+      "extra testing nobody budgeted"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "settlingpond",
+     "vendor": "Riverbend Earthworks",
+     "memos": [
+      "Sediment pond dredging — stormwater permit renewal",
+      "Liner repair — stormwater permit renewal"
+     ],
+     "cross_memo": "Stormwater permit renewal — engineering fees",
+     "plain": [
+      "the stormwater permit renewal",
+      "the permit renewal dredging",
+      "the stormwater permit renewal liner"
+     ],
+     "oblique": [
+      "cleaning out the runoff basin",
+      "getting approval to keep discharging",
+      "the muck removed from the retention area",
+      "the agency's requirement for continued operation",
+      "the water that leaves the site",
+      "emptying the collection lagoon",
+      "work needed before the license could be extended",
+      "fixing the lining that leaked",
+      "a once-in-five-years paperwork-driven project",
+      "the rain-related obligations",
+      "scooping out the sludge",
+      "the wet-weather runoff program",
+      "the site-drainage work the county required",
+      "restoring capacity in the catch basin",
+      "maintaining our right to release water",
+      "the lagoon cleanup"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Packaging & Bulk Loadout",
+   "aliases": [
+    "packaging",
+    "bagging",
+    "bulk loadout",
+    "bag costs",
+    "loadout spend"
+   ],
+   "narrative": [
+    "Bagging costs",
+    "Bulk loadout",
+    "Packaging spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Paperlink Sack Mfg",
+     "base": 16000,
+     "memo": "Valve bags Inv"
+    },
+    {
+     "vendor": "Palletworks Co",
+     "base": 4200,
+     "memo": "Pallets & stretch wrap"
+    },
+    {
+     "vendor": "Trueweigh Scale Service",
+     "base": 2400,
+     "memo": "Mnt weigh systems"
+    }
+   ],
+   "events": [
+    {
+     "key": "bagprint",
+     "vendor": "Paperlink Sack Mfg",
+     "memos": [
+      "Custom print run — rebrand artwork",
+      "Plate setup fee — rebrand artwork"
+     ],
+     "cross_memo": "Rebrand artwork — signage refresh",
+     "plain": [
+      "the rebrand artwork",
+      "the rebrand artwork print run",
+      "the rebrand artwork plates"
+     ],
+     "oblique": [
+      "new look on our product sacks",
+      "the marketing team's new logo",
+      "redesigned graphics for the retail line",
+      "a fresh visual identity",
+      "what the sales group requested for shelf appeal",
+      "changing how our products appear to customers",
+      "the design change after the merger",
+      "updated appearance on everything we ship",
+      "the one-time printing setup",
+      "the artwork the agency delivered",
+      "a revamp of our visual style",
+      "new colors and lettering",
+      "the creative refresh",
+      "what the brand committee approved",
+      "getting the logo change onto our goods",
+      "the cosmetic overhaul"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "packerfire",
+     "vendor": "Rotary Packer Services",
+     "memos": [
+      "Spout assembly replacement — packer machine rebuild",
+      "Controls retrofit — packer machine rebuild"
+     ],
+     "cross_memo": "Packer machine rebuild — contract labor",
+     "plain": [
+      "the packer machine rebuild",
+      "the packer rebuild spouts",
+      "the packer machine rebuild controls"
+     ],
+     "oblique": [
+      "restoring the line that fills the sacks",
+      "after the machine jammed for weeks",
+      "getting the filling carousel working again",
+      "the repair that stopped retail shipments",
+      "specialist work on the old equipment",
+      "a major fix on the one machine we can't replace",
+      "the bagging line's long overdue refurbishment",
+      "work done by the original manufacturer's technicians",
+      "a seized unit at the end of the line",
+      "extra spending to restart output of small bags",
+      "the stalled sack production",
+      "renovating the oldest filling station",
+      "what it took to resume small-unit shipments",
+      "the complete overhaul",
+      "the hardware we needed from overseas",
+      "bringing back the retail line"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Batch Plant & Admixtures",
+   "aliases": [
+    "admixtures",
+    "batch plant",
+    "batching costs",
+    "chemical additives",
+    "batch plant supplies"
+   ],
+   "narrative": [
+    "Admixtures",
+    "Batch plant costs",
+    "Chemical additives"
+   ],
+   "recurring": [
+    {
+     "vendor": "Polymix Chemical",
+     "base": 15500,
+     "memo": "Water reducer Inv"
+    },
+    {
+     "vendor": "Coldcure Additives",
+     "base": 6800,
+     "memo": "Accelerator drums"
+    },
+    {
+     "vendor": "Calibrate Controls",
+     "base": 3200,
+     "memo": "Mnt batch controller"
+    }
+   ],
+   "events": [
+    {
+     "key": "fibertrial",
+     "vendor": "Polymix Chemical",
+     "memos": [
+      "Specialty polymer lots — precast pilot",
+      "Technical rep visits — precast pilot"
+     ],
+     "cross_memo": "Precast pilot — mold fabrication",
+     "plain": [
+      "the precast pilot",
+      "the precast pilot polymer lots",
+      "the precast pilot trial"
+     ],
+     "oblique": [
+      "a new product line we are testing",
+      "the customer who asked for factory-made panels",
+      "the experiment with a different business segment",
+      "trial pours for a prospective buyer",
+      "what sales requested to win a bid",
+      "new material tried for a potential contract",
+      "expanding into something unfamiliar",
+      "the test batches for the architect",
+      "a sample program",
+      "what we spent to prove capability",
+      "the proof-of-concept for a large order",
+      "the bid-related testing",
+      "our entry into off-site fabrication",
+      "the trial work for a developer",
+      "special mixes that may never repeat",
+      "the venture into prefabricated shapes"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "silostorm",
+     "vendor": "Highmark Silo Repair",
+     "memos": [
+      "Cement silo roof reconstruction — hail damage",
+      "Aeration pad replacement — hail damage"
+     ],
+     "cross_memo": "Hail damage — insurance deductible",
+     "plain": [
+      "the hail damage",
+      "the silo hail damage",
+      "the hail damage reconstruction"
+     ],
+     "oblique": [
+      "the storm in the spring",
+      "what the weather did to our storage towers",
+      "the insurance claim from the severe weather",
+      "dents and holes in the tall structures",
+      "the cleanup after ice fell from the sky",
+      "repairs to the overhead panels",
+      "the damage we reported to the carrier",
+      "restoring what the squall broke",
+      "an act of nature",
+      "the roof work on the tallest structures",
+      "the rebuild following the freak event",
+      "the emergency tarping and later permanent fix",
+      "what an adjuster inspected in April",
+      "weather-related reconstruction",
+      "protecting stored product from moisture",
+      "unexpected repairs at the loading area"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

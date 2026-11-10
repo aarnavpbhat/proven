@@ -93,12 +93,12 @@ def measure(pool: list[Scenario], lessons: list[dict],
 
 
 def simulate(n: int = 440, phrasing: str = "heldout", proposer=None,
-             steps: tuple[int, ...] = STEPS) -> dict:
+             steps: tuple[int, ...] = STEPS, world=None) -> dict:
     """Teach from the first half of the test split, measure the second half with the rules.
 
     `proposer` is a model extractor (its answers should be cached); the default is the
     oracle, whose terms are the generator's gold ones and are treated as a model's."""
-    scenarios = generate_split("test", n, phrasing)
+    scenarios = generate_split("test", n, phrasing, world=world)
     half = len(scenarios) // 2
     pool, held = scenarios[:half], scenarios[half:]
     proposer_for = (lambda s: proposer) if proposer is not None else OracleExtractor
@@ -111,6 +111,35 @@ def simulate(n: int = 440, phrasing: str = "heldout", proposer=None,
     return {"phrasing": phrasing, "held_closes": len(held),
             "proposer": f"{proposer.name}/{proposer.version}" if proposer is not None else "oracle/0.1",
             "rows": rows}
+
+
+WORLD_STEPS = (0, 10, 25, 50)
+_COUNTS = ("claims", "decided", "controls", "controls_passed", "control_fails", "defects",
+           "defects_caught", "unsafe_passes", "lessons")
+
+
+def simulate_worlds(suite: str = "unseen", n: int = 100, phrasing: str = "heldout", proposer=None,
+                    steps: tuple[int, ...] = WORLD_STEPS) -> dict:
+    """`simulate` in every world of a suite, each taught and measured on its own: a lesson
+    confirmed in one company's books is never carried to another's. The pooled rows add the
+    counts up; the reward is weighted by claims."""
+    from proven import worlds
+    per_world = []
+    for world in worlds.suite(suite):
+        result = simulate(n, phrasing, proposer, steps, world=world)
+        per_world.append({"world": world.name, "accounts": len(world.specs), "rows": result["rows"]})
+    pooled = []
+    for i, step in enumerate(per_world[0]["rows"]):
+        rows = [w["rows"][i] for w in per_world]
+        row = {"taught_closes": step["taught_closes"], **{k: sum(r[k] for r in rows) for k in _COUNTS}}
+        row["decided_share"] = round(row["decided"] / row["claims"], 4)
+        row["mean_reward"] = round(sum(r["mean_reward"] * r["claims"] for r in rows) / row["claims"], 4)
+        shares = sorted(r["decided_share"] for r in rows)
+        row["worst_world"], row["best_world"] = shares[0], shares[-1]
+        pooled.append(row)
+    return {"suite": suite, "phrasing": phrasing, "closes_per_world": n,
+            "proposer": f"{proposer.name}/{proposer.version}" if proposer is not None else "oracle/0.1",
+            "worlds": per_world, "rows": pooled}
 
 
 # ── a reviewer's time, counted in confirmations ─────────────────────────

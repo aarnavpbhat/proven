@@ -1,0 +1,815 @@
+{
+ "slug": "industrial-machine-shop",
+ "industry": "industrial machine shop",
+ "entities": [
+  "Ironbridge Precision Machining",
+  "Calloway Tool & Die",
+  "Northfork Machine Works",
+  "Tamarack Fabrication Group",
+  "Redline CNC Services"
+ ],
+ "accounts": [
+  {
+   "name": "Cutting Tools & Inserts",
+   "aliases": [
+    "cutting tools",
+    "tooling consumables",
+    "carbide inserts",
+    "insert spend",
+    "tooling costs"
+   ],
+   "narrative": [
+    "Cutting tools",
+    "Tooling consumables",
+    "Insert spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Halvorsen Carbide Supply",
+     "base": 14500,
+     "memo": "Carbide inserts assorted PO 44120"
+    },
+    {
+     "vendor": "Brightedge Tooling Co",
+     "base": 8200,
+     "memo": "Endmills and drills monthly replenishment"
+    },
+    {
+     "vendor": "Pinnacle Toolholders Inc",
+     "base": 3100,
+     "memo": "Collets and holders restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "titanium",
+     "vendor": "Halvorsen Carbide Supply",
+     "memos": [
+      "Titanium roughing campaign — PCD insert lot WO 7731",
+      "Titanium roughing campaign — chip breaker grades"
+     ],
+     "cross_memo": "Titanium roughing campaign — coolant filtration",
+     "plain": [
+      "the titanium roughing campaign",
+      "the titanium roughing insert lots",
+      "the titanium roughing run"
+     ],
+     "oblique": [
+      "the aerospace bracket job",
+      "the exotic alloy order",
+      "wearing through blades on hard metal",
+      "the new defense customer work",
+      "that aircraft part contract",
+      "trying a difficult material for the first time",
+      "the pricey material one customer demanded",
+      "faster blade burnout on the new job",
+      "the lightweight alloy parts",
+      "the program the sales team landed",
+      "stocking up for tough cutting",
+      "the airframe supplier order",
+      "the hard-to-cut stock we quoted",
+      "unexpected wear on the new work",
+      "the jet component launch",
+      "the higher-spec blades we had to buy"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "gundrill",
+     "vendor": "Vantage Deepbore Systems",
+     "memos": [
+      "Gundrill reorder — deep-hole tooling PO 45502",
+      "Gundrill reorder — carbide-tipped bits expedite"
+     ],
+     "cross_memo": "Gundrill reorder — freight air",
+     "plain": [
+      "the gundrill reorder",
+      "the gundrill deep-hole tooling",
+      "the gundrill bits"
+     ],
+     "oblique": [
+      "boring long narrow channels",
+      "the hydraulic manifold block order",
+      "rush shipment of specialty bits",
+      "the oil-field customer request",
+      "replacing worn spares in a hurry",
+      "holes that run the full length of a part",
+      "the new supplier we tried",
+      "a customer who needs extra-deep cavities",
+      "restocking after the scrap incident",
+      "the long-bore orders that piled up",
+      "getting lengthy drilling gear on the shelf",
+      "the pressure-valve body work",
+      "the specialty order we ran short on",
+      "a one-time purchase from a fresh source",
+      "the barrel-length hole requirement",
+      "the expedited drilling kit"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Cutting Fluids & Coolants",
+   "aliases": [
+    "coolant",
+    "coolants",
+    "machine fluids",
+    "cutting fluids",
+    "fluid spend"
+   ],
+   "narrative": [
+    "Coolant",
+    "Machine fluids",
+    "Cutting fluids"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearflow Lubricants",
+     "base": 6800,
+     "memo": "Soluble oil concentrate drum delivery"
+    },
+    {
+     "vendor": "Sumpmaster Service Co",
+     "base": 2400,
+     "memo": "Sump maintenance monthly route"
+    }
+   ],
+   "events": [
+    {
+     "key": "bacterial",
+     "vendor": "Clearflow Lubricants",
+     "memos": [
+      "Bacterial bloom remediation — biocide dosing WO 8820",
+      "Bacterial bloom remediation — full sump recharge"
+     ],
+     "cross_memo": "Bacterial bloom remediation — hazmat disposal",
+     "plain": [
+      "the bacterial bloom remediation",
+      "the bacterial bloom biocide dosing",
+      "the bacterial bloom recharge"
+     ],
+     "oblique": [
+      "the smell on the shop floor",
+      "operators complaining about rashes",
+      "treating the contaminated tanks",
+      "the foul odor episode",
+      "a microbe problem in the reservoirs",
+      "draining and refilling every machine",
+      "the health-and-safety complaint",
+      "unwanted growth in the liquid",
+      "scrubbing out the whole system",
+      "the emergency chemical treatment",
+      "the sour batch we had to dump",
+      "the staff illness reports",
+      "cleaning up after the slime outbreak",
+      "the spoiled liquid across the cell",
+      "the sanitizing push last quarter",
+      "the stinking tank crisis"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "synthetic",
+     "vendor": "Aquaterra Fluid Labs",
+     "memos": [
+      "Synthetic changeover — chlorine-free trial PO 46017",
+      "Synthetic changeover — Aquaterra pilot drums"
+     ],
+     "cross_memo": "Synthetic changeover — dispensing skid rental",
+     "plain": [
+      "the synthetic changeover",
+      "the synthetic chlorine-free trial",
+      "the synthetic pilot drums"
+     ],
+     "oblique": [
+      "switching to a greener formula",
+      "the environmental compliance push",
+      "a pilot with an untested supplier",
+      "moving off the old product line",
+      "the customer audit requirement",
+      "testing a cleaner chemistry",
+      "the sustainability initiative",
+      "replacing the legacy mix",
+      "the regulator's new rule",
+      "trialing something new on two machines",
+      "the supplier we have never used",
+      "the eco-friendly experiment",
+      "a recipe change for all cells",
+      "new additive we are evaluating",
+      "the corporate environmental goal",
+      "the formula swap"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "CNC Machine Maintenance",
+   "aliases": [
+    "machine maintenance",
+    "cnc maintenance",
+    "machine repairs",
+    "maintenance spend",
+    "equipment upkeep"
+   ],
+   "narrative": [
+    "Machine maintenance",
+    "CNC maintenance",
+    "Equipment upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precisionwerks Field Service",
+     "base": 12500,
+     "memo": "PM contract CNC mills and lathes"
+    },
+    {
+     "vendor": "Axis Calibration Labs",
+     "base": 3800,
+     "memo": "Laser alignment quarterly accrual"
+    },
+    {
+     "vendor": "Dunmore Hydraulics",
+     "base": 2900,
+     "memo": "Hydraulic service call monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "spindle",
+     "vendor": "Precisionwerks Field Service",
+     "memos": [
+      "Spindle bearing failure — Mazak VMC rebuild WO 9904",
+      "Spindle bearing failure — cartridge swap labor"
+     ],
+     "cross_memo": "Spindle bearing failure — contract machining outsourced",
+     "plain": [
+      "the spindle bearing failure",
+      "the spindle bearing rebuild",
+      "the spindle bearing cartridge swap"
+     ],
+     "oblique": [
+      "the mill that went down hard",
+      "a crash that stopped our busiest machine",
+      "weeks of lost capacity on one asset",
+      "the grinding noise that ended in seizure",
+      "our main vertical machine being out",
+      "emergency work on the workhorse",
+      "the breakdown nobody saw coming",
+      "getting the big mill running again",
+      "the expensive heart of the machine",
+      "an unplanned stoppage",
+      "the failed rotating assembly",
+      "parts flown in from overseas",
+      "the machine that missed deliveries",
+      "overnight technician callout",
+      "rebuilding the core of the milling center",
+      "the top-priority repair"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "chiller",
+     "vendor": "Glacier Thermal Services",
+     "memos": [
+      "Chiller loop replacement — Glacier install PO 47233",
+      "Chiller loop replacement — pump and manifold"
+     ],
+     "cross_memo": "Chiller loop replacement — electrician hookup",
+     "plain": [
+      "the chiller loop replacement",
+      "the chiller loop pump and manifold",
+      "the chiller loop install"
+     ],
+     "oblique": [
+      "the temperature control upgrade",
+      "keeping the shop's machines from overheating",
+      "the thermal drift problem",
+      "replacing the old plumbing for cooling water",
+      "parts coming out of tolerance in summer",
+      "a new vendor for climate gear",
+      "the heat-related quality complaints",
+      "stabilizing temperatures across the floor",
+      "the water-cooling overhaul",
+      "the pipes that finally gave out",
+      "fixing dimensional drift on precision parts",
+      "the cold-water circuit project",
+      "the cooling system that was end of life",
+      "the facility cooling upgrade",
+      "the equipment that kept tripping alarms",
+      "the shared cooling infrastructure fix"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Outside Processing",
+   "aliases": [
+    "outside processing",
+    "subcontract processing",
+    "outsourced finishing",
+    "outside services",
+    "finishing subcontract"
+   ],
+   "narrative": [
+    "Outside processing",
+    "Subcontract processing",
+    "Outsourced finishing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Heat Treat",
+     "base": 16500,
+     "memo": "Heat treat lots per traveler"
+    },
+    {
+     "vendor": "Brightside Anodizing",
+     "base": 9200,
+     "memo": "Anodize Type II batches"
+    },
+    {
+     "vendor": "Meridian NDT Inspection",
+     "base": 4300,
+     "memo": "Dye penetrant inspection per lot"
+    }
+   ],
+   "events": [
+    {
+     "key": "nadcap",
+     "vendor": "Keystone Heat Treat",
+     "memos": [
+      "Nadcap requalification batch — special process audit PO 48110",
+      "Nadcap requalification batch — witness coupons"
+     ],
+     "cross_memo": "Nadcap requalification batch — auditor travel",
+     "plain": [
+      "the nadcap requalification batch",
+      "the nadcap requalification audit",
+      "the nadcap requalification coupons"
+     ],
+     "oblique": [
+      "the accreditation renewal",
+      "proving ourselves to the prime contractor",
+      "samples we had to cut and send in",
+      "the outside assessors' visit",
+      "retesting to keep our certificate",
+      "the compliance paperwork exercise",
+      "what the quality team had to redo",
+      "maintaining our status with aerospace buyers",
+      "the credential we nearly lost",
+      "extra test pieces for the examiners",
+      "the cost of staying qualified",
+      "a recheck demanded by the customer",
+      "the periodic proof we owe",
+      "the standards body's requirement",
+      "retained approval work",
+      "the sample-heavy review"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "plating",
+     "vendor": "Corvane Surface Technologies",
+     "memos": [
+      "Electroless nickel rework — Corvane strip and replate WO 6127",
+      "Electroless nickel rework — Corvane adhesion failures"
+     ],
+     "cross_memo": "Electroless nickel rework — replacement blanks",
+     "plain": [
+      "the electroless nickel rework",
+      "the electroless nickel strip and replate",
+      "the electroless nickel adhesion failures"
+     ],
+     "oblique": [
+      "redoing the coating on rejected parts",
+      "the vendor we had never tried",
+      "a batch the customer bounced",
+      "coating that peeled during testing",
+      "stripping and starting over",
+      "salvaging a big shipment",
+      "the finish that did not stick",
+      "parts that came back from the buyer",
+      "the corrective job on a full lot",
+      "getting a metallic layer applied again",
+      "the surface treatment fiasco",
+      "an expensive second pass",
+      "the plating shop mix-up",
+      "fixing flaky layering on a pallet",
+      "the lot that failed inspection",
+      "paying twice for the same finish"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Raw Material Stock",
+   "aliases": [
+    "raw material",
+    "bar stock",
+    "material stock",
+    "metal stock",
+    "material purchases"
+   ],
+   "narrative": [
+    "Raw material",
+    "Bar stock",
+    "Material purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Allegheny Alloy Distributors",
+     "base": 28000,
+     "memo": "Aluminum and steel bar stock PO 50021"
+    },
+    {
+     "vendor": "Summit Plate & Sheet",
+     "base": 11500,
+     "memo": "Plate cut-to-size per release"
+    }
+   ],
+   "events": [
+    {
+     "key": "inconel",
+     "vendor": "Allegheny Alloy Distributors",
+     "memos": [
+      "Inconel 718 forging buy — mill cert lot WO 5560",
+      "Inconel 718 forging buy — oversize billets"
+     ],
+     "cross_memo": "Inconel 718 forging buy — expedite freight",
+     "plain": [
+      "the inconel 718 forging buy",
+      "the inconel 718 oversize billets",
+      "the inconel 718 mill cert lot"
+     ],
+     "oblique": [
+      "nickel superalloy for the turbine job",
+      "locking in price before the market jumped",
+      "the pricey stock for the energy customer",
+      "the premium metal we pre-bought",
+      "the hot-section component order",
+      "material that costs many times steel",
+      "one big purchase ahead of the contract",
+      "the high-temperature alloy commitment",
+      "stocking up for a long program",
+      "the raw metal that was hard to source",
+      "prepaying for the power plant parts",
+      "the exotic bar we bought early",
+      "a supply hedge on rising metal prices",
+      "the customer-directed material",
+      "the costly blanks for the new award",
+      "the heavy upfront metal outlay"
+     ],
+     "low": 25000,
+     "high": 40000
+    },
+    {
+     "key": "brass",
+     "vendor": "Rosewood Copper & Brass",
+     "memos": [
+      "Naval brass allotment — Rosewood spot buy PO 50388",
+      "Naval brass allotment — marine fitting rounds"
+     ],
+     "cross_memo": "Naval brass allotment — saw cut surcharge",
+     "plain": [
+      "the naval brass allotment",
+      "the naval brass spot buy",
+      "the naval brass fitting rounds"
+     ],
+     "oblique": [
+      "the shipyard order",
+      "corrosion-proof stock for seawater service",
+      "a one-off buy from a new supplier",
+      "the harbor equipment contract",
+      "metal for boats and docks",
+      "the yellow metal purchase",
+      "the vessel fitting program",
+      "a spike in copper-alloy prices",
+      "material for the coastal customer",
+      "the unfamiliar supplier's lot",
+      "the saltwater-rated rounds",
+      "the quick purchase to win a quote",
+      "the maritime job's materials",
+      "a seasonal order from the marine buyer",
+      "non-rusting bar for fittings",
+      "the specialty metal we do not usually carry"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Shop Tooling & Fixtures",
+   "aliases": [
+    "fixtures",
+    "workholding",
+    "shop tooling",
+    "fixture spend",
+    "jigs and fixtures"
+   ],
+   "narrative": [
+    "Fixtures",
+    "Workholding",
+    "Jigs and fixtures"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gripwell Workholding",
+     "base": 5400,
+     "memo": "Vises and soft jaws replenishment"
+    },
+    {
+     "vendor": "Datum Fixture Plates",
+     "base": 3600,
+     "memo": "Subplates and tombstones monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "pallet",
+     "vendor": "Gripwell Workholding",
+     "memos": [
+      "Zero-point pallet system — horizontal cell build PO 51240",
+      "Zero-point pallet system — clamping modules"
+     ],
+     "cross_memo": "Zero-point pallet system — installation labor",
+     "plain": [
+      "the zero-point pallet system",
+      "the zero-point pallet clamping modules",
+      "the zero-point pallet cell build"
+     ],
+     "oblique": [
+      "the automation project for night shifts",
+      "quick-change setup gear",
+      "the lights-out production initiative",
+      "cutting changeover time on the big cell",
+      "a capital-like purchase run through expense",
+      "the efficiency program the plant manager pushed",
+      "hardware that lets us swap jobs in seconds",
+      "the retrofit on our busiest horizontal",
+      "unmanned running preparation",
+      "the setup-reduction investment",
+      "the productivity upgrade",
+      "holding parts while robots load them",
+      "the lean initiative's centerpiece",
+      "the equipment tied to the new contract",
+      "the quick-load plates",
+      "setup time savings we promised"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "turbine",
+     "vendor": "Orbitek Custom Fixtures",
+     "memos": [
+      "Turbine casing fixture — Orbitek design and build WO 5172",
+      "Turbine casing fixture — vacuum chuck prototype"
+     ],
+     "cross_memo": "Turbine casing fixture — CMM verification",
+     "plain": [
+      "the turbine casing fixture",
+      "the turbine casing vacuum chuck",
+      "the turbine casing design and build"
+     ],
+     "oblique": [
+      "a one-of-a-kind holding device for the new part",
+      "the engineering house we hired",
+      "a thin-walled housing that kept warping",
+      "custom hardware for a single customer",
+      "prototype tooling for a trial order",
+      "the large ring-shaped workpiece problem",
+      "a design we outsourced",
+      "the first-article build requirement",
+      "a part too delicate for standard clamps",
+      "the contractor's custom engineering",
+      "bespoke gear to win the quote",
+      "something no catalog carries",
+      "the special-purpose clamp",
+      "engineering fees for tool design",
+      "gear for the energy customer's casting",
+      "the project with a long lead time"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Quality & Metrology",
+   "aliases": [
+    "metrology",
+    "quality spend",
+    "inspection costs",
+    "gauging",
+    "calibration and inspection"
+   ],
+   "narrative": [
+    "Metrology",
+    "Quality spend",
+    "Inspection costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tolerance Gauge Works",
+     "base": 4700,
+     "memo": "Gage calibration cycle per schedule"
+    },
+    {
+     "vendor": "Helix CMM Service",
+     "base": 3300,
+     "memo": "CMM maintenance agreement"
+    },
+    {
+     "vendor": "Trueform Standards Lab",
+     "base": 1800,
+     "memo": "ISO 17025 cal certs"
+    }
+   ],
+   "events": [
+    {
+     "key": "scanner",
+     "vendor": "Helix CMM Service",
+     "memos": [
+      "Blue-light scanner upgrade — probe head retrofit WO 3398",
+      "Blue-light scanner upgrade — software license"
+     ],
+     "cross_memo": "Blue-light scanner upgrade — operator training",
+     "plain": [
+      "the blue-light scanner upgrade",
+      "the blue-light scanner probe head",
+      "the blue-light scanner license"
+     ],
+     "oblique": [
+      "measuring complex curved surfaces faster",
+      "the customer's demand for full-surface data",
+      "new capability for reverse engineering",
+      "a faster way to check sculpted parts",
+      "the equipment refresh in the inspection room",
+      "tools for the quality manager's wish list",
+      "the upgrade that cut inspection hours",
+      "digitizing our checking process",
+      "a technology step for compliance reports",
+      "the retrofit that unlocked new work",
+      "point-cloud ability we lacked",
+      "capturing shape data without touching parts",
+      "a quote requirement on form verification",
+      "the lab modernization",
+      "the optical measurement addition",
+      "what the new customer's spec called for"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "escape",
+     "vendor": "Sentinel Metallurgical Labs",
+     "memos": [
+      "Customer escape investigation — Sentinel lab analysis PO 52077",
+      "Customer escape investigation — sectioning and hardness"
+     ],
+     "cross_memo": "Customer escape investigation — sorting inspectors",
+     "plain": [
+      "the customer escape investigation",
+      "the customer escape lab analysis",
+      "the customer escape sectioning"
+     ],
+     "oblique": [
+      "a bad part reaching the field",
+      "the corrective action request",
+      "finding out why a defective piece shipped",
+      "the complaint from the prime",
+      "third-party forensic work",
+      "root cause analysis for a returned lot",
+      "the nonconformance that slipped through",
+      "a formal 8D response",
+      "bringing in outside experts after the failure",
+      "examining cut-up samples",
+      "the embarrassing return",
+      "making sure it never happens again",
+      "the incident that triggered a sort",
+      "the investigation we owed our buyer",
+      "proving what went wrong",
+      "the quality failure's cleanup"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Utilities & Compressed Air",
+   "aliases": [
+    "utilities",
+    "power and air",
+    "shop utilities",
+    "electricity",
+    "compressed air"
+   ],
+   "narrative": [
+    "Utilities",
+    "Power and air",
+    "Shop utilities"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-County Electric Cooperative",
+     "base": 22000,
+     "memo": "Electric service main meter"
+    },
+    {
+     "vendor": "Piedmont Natural Gas",
+     "base": 5600,
+     "memo": "Gas service furnace and heat"
+    },
+    {
+     "vendor": "Mainline Air Compressor Service",
+     "base": 1900,
+     "memo": "Compressor route maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "demand",
+     "vendor": "Tri-County Electric Cooperative",
+     "memos": [
+      "Peak demand penalty — coincident 15-min spike WO 2201",
+      "Peak demand penalty — ratchet clause true-up"
+     ],
+     "cross_memo": "Peak demand penalty — emergency load study",
+     "plain": [
+      "the peak demand penalty",
+      "the peak demand ratchet true-up",
+      "the peak demand spike charge"
+     ],
+     "oblique": [
+      "running every machine at once",
+      "a heat wave on the grid",
+      "the surcharge for a brief usage burst",
+      "the tariff clause nobody read",
+      "a single bad quarter hour",
+      "the rate structure's sting",
+      "starting up the whole floor together",
+      "the pricing rule that locks in high rates",
+      "load that hit all at once",
+      "the charge that stays for a year",
+      "the cost of power-hungry startups",
+      "a billing trap",
+      "the afternoon everything ran together",
+      "a bump from the co-op's formula",
+      "the usage jump on one hot day",
+      "the meter reading we should have managed"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "scroll",
+     "vendor": "Cascadia Compressed Systems",
+     "memos": [
+      "Scroll compressor replacement — Cascadia install PO 53119",
+      "Scroll compressor replacement — dryer and receiver"
+     ],
+     "cross_memo": "Scroll compressor replacement — rental unit",
+     "plain": [
+      "the scroll compressor replacement",
+      "the scroll compressor dryer and receiver",
+      "the scroll compressor install"
+     ],
+     "oblique": [
+      "the pneumatic supply going down",
+      "losing pressure to every tool",
+      "the shop's air supply upgrade",
+      "the old machine that finally quit",
+      "a new vendor for plant air gear",
+      "rented equipment while we waited",
+      "the outage that idled the floor",
+      "fixing what powers the air tools",
+      "a failure on the compressed supply",
+      "the equipment room's main project",
+      "retiring the 20-year-old unit",
+      "the failed pressure source",
+      "a modern energy-saving replacement",
+      "what feeds the pneumatic fixtures",
+      "the leaky system's end of life",
+      "the facilities project of the quarter"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

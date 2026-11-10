@@ -1,0 +1,805 @@
+{
+ "slug": "optometry-and-eyewear-chain",
+ "industry": "optometry and eyewear chain",
+ "entities": [
+  "ClearView Optical Group",
+  "Brightside Eye Care Partners",
+  "Lumen Vision Centers",
+  "Sightline Eyewear Co.",
+  "Harborlight Optometry Group"
+ ],
+ "accounts": [
+  {
+   "name": "Frame and Lens Cost of Goods",
+   "aliases": [
+    "frames and lenses",
+    "lens costs",
+    "eyewear inventory spend",
+    "product cogs",
+    "frame purchasing"
+   ],
+   "narrative": [
+    "Frames and lenses",
+    "Lens costs",
+    "Product COGS"
+   ],
+   "recurring": [
+    {
+     "vendor": "Veridian Frame Distributors",
+     "base": 28000,
+     "memo": "Monthly frame replenishment — assorted SKUs"
+    },
+    {
+     "vendor": "Optilab Wholesale Lens Co.",
+     "base": 22000,
+     "memo": "Prescription lens blanks — monthly order"
+    },
+    {
+     "vendor": "Corvane Contact Supply",
+     "base": 9500,
+     "memo": "Contact lens stock — standing order"
+    }
+   ],
+   "events": [
+    {
+     "key": "designerlaunch",
+     "vendor": "Veridian Frame Distributors",
+     "memos": [
+      "Atelier Noir capsule collection — opening buy",
+      "Atelier Noir capsule collection — display stock"
+     ],
+     "cross_memo": "Atelier Noir capsule collection — launch signage",
+     "plain": [
+      "the Atelier Noir capsule collection",
+      "the Atelier Noir launch",
+      "the Atelier Noir buy"
+     ],
+     "oblique": [
+      "the premium designer line we introduced this season",
+      "a high-end fashion partnership rollout",
+      "stocking up on luxury styles",
+      "the new couture brand tie-up",
+      "our push into upscale fashion",
+      "the exclusive label the merchants signed",
+      "a big bet on trendy high-fashion looks",
+      "the designer deal that marketing championed",
+      "getting prestige names onto the walls",
+      "the boutique-style assortment expansion",
+      "the splashy brand debut",
+      "an upmarket range for flagship locations",
+      "a limited run from a fashion house",
+      "the fashion-forward addition to the assortment",
+      "new status brands on the floor",
+      "the exclusive designer arrangement"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "photochromic",
+     "vendor": "Helix Optics Labs",
+     "memos": [
+      "Transitional shield lens program — initial batch",
+      "Transitional shield lens program — rush freight"
+     ],
+     "cross_memo": "Transitional shield lens program — training collateral",
+     "plain": [
+      "the transitional shield lens program",
+      "the transitional shield rollout",
+      "the shield lens program"
+     ],
+     "oblique": [
+      "a new light-adaptive lens product we began offering",
+      "the sun-reactive upgrade for patients",
+      "a premium add-on that darkens outdoors",
+      "the brand-new specialty lens offering",
+      "an upsell option to boost average ticket",
+      "the glare-reducing technology we launched",
+      "a fresh high-margin lens category",
+      "the lens upgrade that the doctors recommended",
+      "a supplier we onboarded for a new product",
+      "the rollout of an upgraded lens tier",
+      "an outdoor-friendly lens we introduced",
+      "the lens line aimed at drivers and hikers",
+      "a new item in our lens menu",
+      "the adaptive tint offering",
+      "launching a second lens vendor",
+      "the specialty coatings expansion"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Optometrist Professional Fees",
+   "aliases": [
+    "doctor fees",
+    "optometrist pay",
+    "provider compensation",
+    "od contractor costs",
+    "exam doctor spend"
+   ],
+   "narrative": [
+    "Doctor fees",
+    "Provider compensation",
+    "Optometrist pay"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Locum Doctors LLC",
+     "base": 26000,
+     "memo": "Contract optometrist coverage — monthly"
+    },
+    {
+     "vendor": "Eyecare Providers Alliance",
+     "base": 14000,
+     "memo": "Independent doctor fees — per-exam"
+    }
+   ],
+   "events": [
+    {
+     "key": "locumsurge",
+     "vendor": "Meridian Locum Doctors LLC",
+     "memos": [
+      "Willowbrook vacancy bridge — extended shifts",
+      "Willowbrook vacancy bridge — weekend premium"
+     ],
+     "cross_memo": "Willowbrook vacancy bridge — travel lodging",
+     "plain": [
+      "the Willowbrook vacancy bridge",
+      "the Willowbrook bridge coverage",
+      "the Willowbrook vacancy"
+     ],
+     "oblique": [
+      "covering the empty doctor chair at our suburban office",
+      "paying extra to keep exam rooms open",
+      "a staffing gap we had to plug quickly",
+      "the departure that left a location short",
+      "temporary help for a clinic without a doctor",
+      "premium rates for last-minute coverage",
+      "the resignation we had to backfill",
+      "keeping appointments from being cancelled",
+      "a shortage of full-time clinicians",
+      "stopgap staffing at one site",
+      "the hole in the schedule after someone left",
+      "weekend work to avoid lost visits",
+      "importing clinicians from out of town",
+      "the unfilled position at a satellite location",
+      "paying a premium so patients still got seen",
+      "interim medical coverage"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "dryeyeclinic",
+     "vendor": "Nuvia Specialty Consultants",
+     "memos": [
+      "Ocular surface clinic launch — specialist retainer",
+      "Ocular surface clinic launch — protocol development"
+     ],
+     "cross_memo": "Ocular surface clinic launch — diagnostic device lease",
+     "plain": [
+      "the ocular surface clinic launch",
+      "the ocular surface clinic",
+      "the ocular surface specialist launch"
+     ],
+     "oblique": [
+      "a new advanced service line for chronic discomfort patients",
+      "bringing in an outside expert to set up a medical offering",
+      "building a revenue stream beyond glasses",
+      "the specialty care program the owners approved",
+      "designing clinical pathways for a new service",
+      "expanding into treatment rather than just prescriptions",
+      "a consultant hired to teach our doctors new skills",
+      "the medical-eye-care push",
+      "a higher-acuity patient offering",
+      "setting up the practice for insurance-billed treatments",
+      "a fresh clinical specialty",
+      "the upskilling effort for our clinicians",
+      "the new revenue-diversification initiative",
+      "an outside advisor for a new treatment line",
+      "the move toward therapeutic services",
+      "preparing doctors for complex cases"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Store Occupancy",
+   "aliases": [
+    "rent",
+    "store rent",
+    "occupancy costs",
+    "lease expense",
+    "mall rent"
+   ],
+   "narrative": [
+    "Rent",
+    "Store rent",
+    "Occupancy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Peak Retail Properties",
+     "base": 30000,
+     "memo": "Base rent — retail portfolio"
+    },
+    {
+     "vendor": "Crossroads Mall Management",
+     "base": 12000,
+     "memo": "Common area maintenance — monthly"
+    },
+    {
+     "vendor": "Summit Property Holdings",
+     "base": 8500,
+     "memo": "Percentage rent accrual — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "relocation",
+     "vendor": "Granite Peak Retail Properties",
+     "memos": [
+      "Eastgate store relocation — lease termination fee",
+      "Eastgate store relocation — holdover rent"
+     ],
+     "cross_memo": "Eastgate store relocation — buildout allowance",
+     "plain": [
+      "the Eastgate store relocation",
+      "the Eastgate relocation",
+      "the Eastgate move"
+     ],
+     "oblique": [
+      "leaving our old spot for a better-trafficked storefront",
+      "penalties for exiting a lease early",
+      "paying two landlords at once",
+      "the shift to a busier shopping corridor",
+      "breaking an agreement ahead of schedule",
+      "overlap while we transitioned between sites",
+      "a unit we vacated before the term ended",
+      "moving to a space with better visibility",
+      "the transition between premises",
+      "the site change the real estate team pushed",
+      "a double-rent period",
+      "the exit from a poorly performing address",
+      "an early-termination settlement",
+      "shifting the shop across town",
+      "the landlord's charge for leaving",
+      "upgrading to a new retail address"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "kiosk",
+     "vendor": "Pinecrest Pop-Up Ventures",
+     "memos": [
+      "Holiday seasonal kiosk — short-term license",
+      "Holiday seasonal kiosk — staging fees"
+     ],
+     "cross_memo": "Holiday seasonal kiosk — temporary fixtures",
+     "plain": [
+      "the holiday seasonal kiosk",
+      "the seasonal kiosk license",
+      "the holiday kiosk"
+     ],
+     "oblique": [
+      "a temporary booth in a high-traffic walkway",
+      "short-term floor space for gift shoppers",
+      "a cart set up for the year-end rush",
+      "an experiment with a tiny storefront",
+      "reaching crowds who never visit our shops",
+      "a limited-run retail presence",
+      "the stand we opened in the atrium",
+      "a pilot for non-traditional selling space",
+      "temporary real estate for the busy season",
+      "a pop-up we tested near the food court",
+      "extra sales spots during peak shopping weeks",
+      "the compact selling station",
+      "a trial in a new format",
+      "an impermanent retail footprint",
+      "the short-lease presence at the mall hub",
+      "a temporary outpost for gift buyers"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Insurance Billing and Claims Processing",
+   "aliases": [
+    "claims processing",
+    "billing costs",
+    "insurance admin",
+    "payer processing",
+    "vision plan billing"
+   ],
+   "narrative": [
+    "Claims processing",
+    "Billing costs",
+    "Payer processing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Claimwise Clearinghouse",
+     "base": 11000,
+     "memo": "Electronic claim submission — monthly"
+    },
+    {
+     "vendor": "Vantage Revenue Cycle Services",
+     "base": 16000,
+     "memo": "Outsourced billing staff — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "denialcleanup",
+     "vendor": "Vantage Revenue Cycle Services",
+     "memos": [
+      "Backlog denial cleanup — resubmission project",
+      "Backlog denial cleanup — overtime billing"
+     ],
+     "cross_memo": "Backlog denial cleanup — records retrieval",
+     "plain": [
+      "the backlog denial cleanup",
+      "the denial cleanup project",
+      "the backlog denial"
+     ],
+     "oblique": [
+      "chasing down unpaid reimbursements from past quarters",
+      "a push to recover money insurers had rejected",
+      "the pile of old rejected submissions",
+      "clearing out stale unresolved receivables",
+      "extra hours to rework bounced paperwork",
+      "an effort to collect on aged accounts",
+      "the catch-up on payer pushback",
+      "getting paid for work we already performed",
+      "a cash recovery sprint",
+      "working through months of turned-down requests",
+      "the revenue team's mop-up exercise",
+      "reprocessing items the carriers wouldn't pay",
+      "a one-time effort to reclaim revenue",
+      "correcting errors from an earlier period",
+      "the audit of unpaid submissions",
+      "reworking stalled payments"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "payerportal",
+     "vendor": "Alderline Health Systems",
+     "memos": [
+      "Payer portal migration — integration build",
+      "Payer portal migration — data mapping"
+     ],
+     "cross_memo": "Payer portal migration — staff certification",
+     "plain": [
+      "the payer portal migration",
+      "the portal migration project",
+      "the payer portal build"
+     ],
+     "oblique": [
+      "switching to a new system for insurer interactions",
+      "moving our eligibility checks onto different technology",
+      "the changeover mandated by a major carrier",
+      "connecting our practice software to new endpoints",
+      "a technical overhaul of how we verify coverage",
+      "rewiring the connection to health plans",
+      "the conversion that the plans required",
+      "building links to updated insurer platforms",
+      "transferring records into a fresh environment",
+      "the compliance-driven system swap",
+      "reworking how front-desk staff confirm benefits",
+      "a forced upgrade of our insurer connectivity",
+      "the project to keep up with plan requirements",
+      "changing the digital gateway for coverage verification",
+      "a tech cutover for authorizations",
+      "the integration effort with outside plans"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Maintenance and Calibration",
+   "aliases": [
+    "equipment upkeep",
+    "exam equipment",
+    "calibration costs",
+    "optical machinery",
+    "diagnostic equipment service"
+   ],
+   "narrative": [
+    "Equipment upkeep",
+    "Calibration costs",
+    "Diagnostic equipment service"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Ophthalmic Service Co.",
+     "base": 9000,
+     "memo": "Preventive maintenance contract — exam lanes"
+    },
+    {
+     "vendor": "EdgeCraft Lab Technicians",
+     "base": 6500,
+     "memo": "Lens edger servicing — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "oct",
+     "vendor": "Precision Ophthalmic Service Co.",
+     "memos": [
+      "Retinal imager recall — component replacement",
+      "Retinal imager recall — field technician"
+     ],
+     "cross_memo": "Retinal imager recall — loaner unit rental",
+     "plain": [
+      "the retinal imager recall",
+      "the imager recall repair",
+      "the retinal imager"
+     ],
+     "oblique": [
+      "a manufacturer notice requiring a fix to a key scanner",
+      "the safety-driven repair of a flagship device",
+      "replacing parts the maker told us were faulty",
+      "getting an expensive diagnostic machine back to spec",
+      "a mandatory fix on a high-value unit",
+      "the defect notice on our scanning gear",
+      "work ordered by the equipment maker",
+      "keeping a critical exam tool compliant",
+      "the vendor-mandated rework",
+      "a repair we had no choice about",
+      "the faulty module on a pricey instrument",
+      "restoring a diagnostic workhorse",
+      "a technician visit prompted by a safety bulletin",
+      "the correction of a known flaw",
+      "the downtime for a major machine",
+      "an unplanned fix on imaging hardware"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "edgerupgrade",
+     "vendor": "Fabrique Industrial Systems",
+     "memos": [
+      "Automated surfacing line install — equipment commissioning",
+      "Automated surfacing line install — facility electrical"
+     ],
+     "cross_memo": "Automated surfacing line install — operator training",
+     "plain": [
+      "the automated surfacing line install",
+      "the surfacing line commissioning",
+      "the automated surfacing line"
+     ],
+     "oblique": [
+      "bringing lens production in-house at the central lab",
+      "a machine that grinds prescriptions on site",
+      "the factory-floor modernization",
+      "setting up equipment so we can cut our own lenses",
+      "an investment to shorten customer wait times",
+      "a new production capability at the hub",
+      "the robotic fabrication setup",
+      "the capital project to reduce outsourcing",
+      "getting the lab ready for faster turnaround",
+      "installing manufacturing gear at headquarters",
+      "the automated production upgrade",
+      "making glasses ourselves rather than buying finished lenses",
+      "a significant build-out of our workshop",
+      "an electrical and mechanical project for the lab",
+      "adding throughput at the central workshop",
+      "the technology leap in our fabrication area"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Patient Marketing and Recall",
+   "aliases": [
+    "marketing",
+    "recall campaigns",
+    "advertising spend",
+    "patient outreach",
+    "promo costs"
+   ],
+   "narrative": [
+    "Marketing",
+    "Recall campaigns",
+    "Patient outreach"
+   ],
+   "recurring": [
+    {
+     "vendor": "Beacon Digital Media",
+     "base": 15000,
+     "memo": "Paid search and social — monthly retainer"
+    },
+    {
+     "vendor": "Reminda Patient Messaging",
+     "base": 5500,
+     "memo": "Appointment reminder texts — monthly"
+    },
+    {
+     "vendor": "Printwell Direct Mail",
+     "base": 8000,
+     "memo": "Postcard recall mailers — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "backtoschool",
+     "vendor": "Beacon Digital Media",
+     "memos": [
+      "Scholar Sight campaign — creative production",
+      "Scholar Sight campaign — extra media buy"
+     ],
+     "cross_memo": "Scholar Sight campaign — school flyer printing",
+     "plain": [
+      "the Scholar Sight campaign",
+      "the Scholar Sight media buy",
+      "the Scholar Sight promotion"
+     ],
+     "oblique": [
+      "the late-summer push aimed at parents of young children",
+      "a seasonal promotion for kids' exams",
+      "extra ad dollars during the busy family season",
+      "outreach to households before classes resume",
+      "the youth-focused advertising burst",
+      "a themed effort targeting families",
+      "our annual drive for pediatric appointments",
+      "getting kids in the chair before autumn",
+      "the family-oriented advertising wave",
+      "a short-term spike in ad exposure",
+      "a promotional blitz tied to the academic calendar",
+      "creative work for a seasonal theme",
+      "the parents' outreach effort",
+      "boosting awareness among caregivers",
+      "a time-limited audience-building push",
+      "the end-of-vacation promotional surge"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "loyaltyapp",
+     "vendor": "Tessera Mobile Studio",
+     "memos": [
+      "Rewards app launch — development milestone",
+      "Rewards app launch — app store promotion"
+     ],
+     "cross_memo": "Rewards app launch — in-store counter displays",
+     "plain": [
+      "the rewards app launch",
+      "the rewards app milestone",
+      "the rewards app promotion"
+     ],
+     "oblique": [
+      "a smartphone program to keep customers coming back",
+      "the digital initiative for retaining shoppers",
+      "building something patients can carry in their pocket",
+      "a tech product the CEO wanted for engagement",
+      "points and perks delivered electronically",
+      "an effort to encourage repeat purchases",
+      "the new mobile presence for our brand",
+      "a customer-retention technology bet",
+      "developing software for our patient base",
+      "the points-based offering we debuted",
+      "the digital storefront for returning clients",
+      "an innovation meant to increase visit frequency",
+      "the new channel for staying in touch with buyers",
+      "a downloadable tool for members",
+      "the project that engineering delivered for the marketing team",
+      "getting patients to engage between visits"
+     ],
+     "low": 17000,
+     "high": 34000
+    }
+   ]
+  },
+  {
+   "name": "Dispensary Staff Training and Licensing",
+   "aliases": [
+    "opticians training",
+    "licensing fees",
+    "staff certification",
+    "dispensing education",
+    "credentialing costs"
+   ],
+   "narrative": [
+    "Opticians training",
+    "Licensing fees",
+    "Staff certification"
+   ],
+   "recurring": [
+    {
+     "vendor": "Guild of Dispensing Opticians",
+     "base": 3200,
+     "memo": "Continuing education subscriptions — monthly"
+    },
+    {
+     "vendor": "State Board Licensing Services",
+     "base": 1800,
+     "memo": "License renewals — monthly processing"
+    }
+   ],
+   "events": [
+    {
+     "key": "apprenticeship",
+     "vendor": "Guild of Dispensing Opticians",
+     "memos": [
+      "Fitters Academy cohort — tuition block",
+      "Fitters Academy cohort — exam proctoring"
+     ],
+     "cross_memo": "Fitters Academy cohort — trainee wages",
+     "plain": [
+      "the Fitters Academy cohort",
+      "the Fitters Academy tuition",
+      "the Fitters Academy program"
+     ],
+     "oblique": [
+      "bringing newcomers up to speed in a skilled craft",
+      "a group of recruits learning the trade",
+      "an investment in growing our own talent",
+      "a formal schooling track for new hires",
+      "paying for beginners to earn credentials",
+      "the pipeline of future frame stylists",
+      "a structured learning effort for entry-level people",
+      "sponsoring a class of trainees",
+      "the groundwork for staffing our expansion",
+      "a cohort of new employees pursuing certification",
+      "the program to fill shortages in skilled roles",
+      "building bench strength through education",
+      "funding classroom time for recent hires",
+      "our answer to a scarce labor market",
+      "developing junior team members",
+      "preparing new staff to pass state tests"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "compliance",
+     "vendor": "Redstone Regulatory Advisors",
+     "memos": [
+      "Contact lens rule audit — compliance review",
+      "Contact lens rule audit — remediation plan"
+     ],
+     "cross_memo": "Contact lens rule audit — policy rewrite",
+     "plain": [
+      "the contact lens rule audit",
+      "the contact lens rule review",
+      "the contact lens rule remediation"
+     ],
+     "oblique": [
+      "an outside review of how we follow federal prescription release requirements",
+      "the regulatory examination we had to answer",
+      "a legal-driven look at our procedures",
+      "reacting to an inquiry from authorities",
+      "confirming we meet patient-rights mandates",
+      "a third-party check on our practices",
+      "the work required after a government letter",
+      "consultants checking our paperwork habits",
+      "an exercise to avoid fines",
+      "the fix for gaps an inspector pointed out",
+      "getting our processes into line with the law",
+      "a careful look at how we hand out prescriptions",
+      "an outside advisor on statutory obligations",
+      "the response to a regulator",
+      "the exposure we wanted to close",
+      "a review of our patient-handoff rules"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Shrinkage and Warranty Replacement",
+   "aliases": [
+    "breakage",
+    "warranty costs",
+    "shrink",
+    "remakes and replacements",
+    "damaged goods"
+   ],
+   "narrative": [
+    "Breakage",
+    "Warranty costs",
+    "Remakes and replacements"
+   ],
+   "recurring": [
+    {
+     "vendor": "Assurant Optical Warranty Services",
+     "base": 7500,
+     "memo": "Warranty claims fulfillment — monthly"
+    },
+    {
+     "vendor": "ReMake Lens Lab",
+     "base": 5800,
+     "memo": "Remake lens orders — standard"
+    }
+   ],
+   "events": [
+    {
+     "key": "hingerecall",
+     "vendor": "ReMake Lens Lab",
+     "memos": [
+      "Titanium Flex hinge defect — replacement lenses",
+      "Titanium Flex hinge defect — rework labor"
+     ],
+     "cross_memo": "Titanium Flex hinge defect — customer goodwill credits",
+     "plain": [
+      "the Titanium Flex hinge defect",
+      "the Titanium Flex defect replacements",
+      "the Titanium Flex hinge rework"
+     ],
+     "oblique": [
+      "a flaw in a popular frame that made temples snap",
+      "customers returning broken glasses in droves",
+      "a manufacturing problem on a best-selling style",
+      "free fixes we offered after a supplier issue",
+      "the product quality failure affecting many pairs",
+      "making things right for unhappy wearers",
+      "a batch of faulty merchandise",
+      "the supplier's mistake we absorbed",
+      "replacements we gave out at no charge",
+      "an unexpected wave of returns",
+      "the bad lot that came back",
+      "a spike in complaints about a specific model",
+      "restitution to shoppers for defective goods",
+      "the cost of a vendor's quality slip",
+      "an issue that forced us to replace finished orders",
+      "a widespread durability problem"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "theft",
+     "vendor": "Sentinel Loss Prevention Group",
+     "memos": [
+      "Organized retail theft response — investigation fees",
+      "Organized retail theft response — security guard shifts"
+     ],
+     "cross_memo": "Organized retail theft response — stolen inventory write-off",
+     "plain": [
+      "the organized retail theft response",
+      "the organized theft investigation",
+      "the organized retail theft guard shifts"
+     ],
+     "oblique": [
+      "a coordinated group clearing our shelves of expensive frames",
+      "the break-ins that spooked the district managers",
+      "hiring watchers after a string of losses",
+      "an incident involving crews targeting our stock",
+      "a crime wave at several of our sites",
+      "the effort to protect merchandise from repeat offenders",
+      "stepping up protection after missing product",
+      "a series of thefts that prompted outside help",
+      "a spike in vanishing inventory",
+      "the protective measures put in after a bad spell",
+      "extra eyes on the floor following losses",
+      "our reaction to multiple burglaries",
+      "investigators looking into missing goods",
+      "the cost of fending off thieves",
+      "a security scare at high-risk locations",
+      "hired coverage after merchandise went missing"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

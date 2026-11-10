@@ -1,0 +1,728 @@
+{
+ "slug": "pet-food-manufacturer",
+ "industry": "pet food manufacturer",
+ "entities": [
+  "Harvest Bowl Pet Nutrition",
+  "Tailwind Kibble Works",
+  "Copper Creek Pet Foods",
+  "Northfield Paws Provisions",
+  "Maple Ridge Animal Nutrition"
+ ],
+ "accounts": [
+  {
+   "name": "Raw Protein Procurement",
+   "aliases": [
+    "protein",
+    "protein buying",
+    "meat purchasing",
+    "raw protein spend",
+    "protein costs"
+   ],
+   "narrative": [
+    "Protein buying",
+    "Meat purchasing",
+    "Raw protein spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Prairie Gold Poultry Co-op",
+     "base": 28000,
+     "memo": "Chicken meal, weekly loads"
+    },
+    {
+     "vendor": "Blue Basin Fisheries",
+     "base": 14500,
+     "memo": "Whitefish meal, standing order"
+    },
+    {
+     "vendor": "Redwood Rendering",
+     "base": 9800,
+     "memo": "Beef tallow and by-product meal"
+    }
+   ],
+   "events": [
+    {
+     "key": "salmonrecall",
+     "vendor": "Blue Basin Fisheries",
+     "memos": [
+      "Salmon lot swap — rejected batch replacement",
+      "Salmon lot swap — expedited rebooking"
+     ],
+     "cross_memo": "Salmon lot swap — lab retest fees",
+     "plain": [
+      "the salmon lot swap",
+      "the salmon lot swap costs",
+      "the salmon lot swap premium"
+     ],
+     "oblique": [
+      "replacing a shipment that failed intake checks",
+      "a rush rebuy of fish after a bad delivery",
+      "the do-over on an unusable load",
+      "emergency resupply from our seafood source",
+      "a rejected delivery that had to be rebought",
+      "making up for product we could not use",
+      "the scramble to cover a production gap",
+      "pricier spot purchases to keep lines running",
+      "a supplier mistake that we paid twice for",
+      "the redo of an entire inbound order",
+      "unplanned sourcing at short notice",
+      "catching up after a failed receiving inspection",
+      "fish we had to buy a second time",
+      "an inbound quality miss",
+      "the substitute order placed overnight",
+      "buying twice for one production run"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "turkeyforward",
+     "vendor": "Heartland Turkey Growers",
+     "memos": [
+      "Turkey forward contract — prepaid tonnage",
+      "Turkey forward contract — deposit installment"
+     ],
+     "cross_memo": "Turkey forward contract — cold storage reservation",
+     "plain": [
+      "the turkey forward contract",
+      "the turkey forward contract deposit",
+      "the turkey forward contract prepayment"
+     ],
+     "oblique": [
+      "locking in prices ahead of the holiday season",
+      "an advance commitment to a new grower",
+      "paying early to secure future volume",
+      "a hedge against rising commodity costs",
+      "the up-front money for next quarter supply",
+      "guaranteeing supply before the market tightens",
+      "a deal struck with a first-time source",
+      "reserving future output at a fixed rate",
+      "our bet on where prices are heading",
+      "early payment in exchange for a better rate",
+      "a buying strategy meant to smooth costs",
+      "the pre-purchase negotiated by procurement",
+      "a protective move against price swings",
+      "money sent out well before delivery",
+      "a long-range sourcing agreement",
+      "the supply guarantee signed this period"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Grain and Carbohydrate Ingredients",
+   "aliases": [
+    "grains",
+    "grain buying",
+    "carb ingredients",
+    "starch ingredients",
+    "grain and rice costs"
+   ],
+   "narrative": [
+    "Grain buying",
+    "Carb ingredients",
+    "Starch ingredients"
+   ],
+   "recurring": [
+    {
+     "vendor": "Golden Acre Milling",
+     "base": 22000,
+     "memo": "Ground corn and wheat middlings"
+    },
+    {
+     "vendor": "Delta Rice Growers",
+     "base": 11500,
+     "memo": "Brewers rice, bulk"
+    },
+    {
+     "vendor": "Sunrise Oat Partners",
+     "base": 7200,
+     "memo": "Rolled oats and barley"
+    }
+   ],
+   "events": [
+    {
+     "key": "sorghumshift",
+     "vendor": "Golden Acre Milling",
+     "memos": [
+      "Sorghum trial blend — pilot milling run",
+      "Sorghum trial blend — extra screening"
+     ],
+     "cross_memo": "Sorghum trial blend — test kitchen labor",
+     "plain": [
+      "the sorghum trial blend",
+      "the sorghum trial blend run",
+      "the sorghum trial blend work"
+     ],
+     "oblique": [
+      "an experiment with a cheaper base ingredient",
+      "testing a recipe change for the budget line",
+      "a small production test of an alternative crop",
+      "trying out a different cereal for next year",
+      "the pilot behind a possible reformulation",
+      "a limited run to see if customers notice",
+      "work to cut costs on our value brand",
+      "an R&D request from product development",
+      "a batch made only for evaluation",
+      "exploring a replacement for our usual filler",
+      "the sample production for marketing review",
+      "a one-time test that never went to scale",
+      "a formula tweak under evaluation",
+      "a short run requested by the nutrition team",
+      "trial quantities for palatability testing",
+      "the lab-to-plant scale-up exercise"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "floodreroute",
+     "vendor": "Riverbend Commodity Brokers",
+     "memos": [
+      "Flood reroute premium — barge diversion",
+      "Flood reroute premium — emergency trucking"
+     ],
+     "cross_memo": "Flood reroute premium — demurrage charges",
+     "plain": [
+      "the flood reroute premium",
+      "the flood reroute premium charges",
+      "the flood reroute premium shipments"
+     ],
+     "oblique": [
+      "the washed-out river crossing",
+      "extra cost to get raw material around a closure",
+      "weather that cut off our usual supply lane",
+      "a broker scrambling to move product another way",
+      "paying more to keep deliveries coming",
+      "the storm that stalled inbound product",
+      "an act of nature on the waterway",
+      "replacement transport booked on short notice",
+      "a regional disaster that hit our suppliers",
+      "pricey alternate shipping for a few weeks",
+      "the premium for beating a deadline",
+      "high water that shut down a key route",
+      "a broker fee for finding another path",
+      "logistics fallout from severe rain",
+      "inbound product detoured at a steep markup",
+      "the extra legs added to each delivery"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Vitamins and Functional Additives",
+   "aliases": [
+    "premix",
+    "additives",
+    "vitamin premix",
+    "supplements and additives",
+    "micro-ingredients"
+   ],
+   "narrative": [
+    "Vitamin premix",
+    "Micro-ingredients",
+    "Supplements and additives"
+   ],
+   "recurring": [
+    {
+     "vendor": "NutriCore Blends",
+     "base": 9200,
+     "memo": "Vitamin and mineral premix"
+    },
+    {
+     "vendor": "Probiotic Partners Inc",
+     "base": 5600,
+     "memo": "Coated probiotic culture"
+    },
+    {
+     "vendor": "Omega Source Labs",
+     "base": 3900,
+     "memo": "Fish oil and omega powder"
+    }
+   ],
+   "events": [
+    {
+     "key": "joint",
+     "vendor": "NutriCore Blends",
+     "memos": [
+      "Glucosamine upgrade — senior formula premix",
+      "Glucosamine upgrade — added chondroitin"
+     ],
+     "cross_memo": "Glucosamine upgrade — revised label artwork",
+     "plain": [
+      "the glucosamine upgrade",
+      "the glucosamine upgrade premix",
+      "the glucosamine upgrade formula"
+     ],
+     "oblique": [
+      "the stronger mobility recipe for older animals",
+      "a richer blend for aging customers",
+      "what we put into the senior line",
+      "a nutrition boost that marketing pushed for",
+      "improving the formula our vets recommended",
+      "a new claim we wanted on the bag",
+      "the enhanced version of a core product",
+      "extra active content in each batch",
+      "a response to competitor claims",
+      "a reformulation approved by the nutrition board",
+      "more of the expensive stuff in every tonne",
+      "the revised recipe for our premium tier",
+      "a change meant to justify a higher price",
+      "the heavier dosing rolled out this period",
+      "supporting hips and joints in the older pets line",
+      "an ingredient enrichment project"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "taurinestock",
+     "vendor": "Cellbridge Biochemicals",
+     "memos": [
+      "Taurine safety stock — bulk drum purchase",
+      "Taurine safety stock — expedited freight"
+     ],
+     "cross_memo": "Taurine safety stock — climate warehouse rental",
+     "plain": [
+      "the taurine safety stock",
+      "the taurine safety stock buy",
+      "the taurine safety stock order"
+     ],
+     "oblique": [
+      "building a cushion against a shortage",
+      "an essential amino acid we bought in volume",
+      "a scare about overseas availability",
+      "stockpiling for fear of a supply interruption",
+      "a precaution after news from abroad",
+      "hoarding a critical feline nutrient",
+      "our insurance against a tight market",
+      "a big one-time order of an item with one source",
+      "a stocking decision made by operations",
+      "enough inventory to last through the year",
+      "the purchase that tied up working capital",
+      "buying ahead of a rumored export restriction",
+      "a defensive purchase for cat recipes",
+      "extra drums sitting in our storeroom",
+      "a risk-management buy",
+      "getting ahead of a looming scarcity"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Extrusion Line Maintenance",
+   "aliases": [
+    "extruder upkeep",
+    "line maintenance",
+    "extrusion repairs",
+    "plant equipment maintenance",
+    "production line upkeep"
+   ],
+   "narrative": [
+    "Extruder upkeep",
+    "Line maintenance",
+    "Production line upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironwell Industrial Services",
+     "base": 12500,
+     "memo": "Scheduled PM, extruders and dryers"
+    },
+    {
+     "vendor": "Precision Die and Screw",
+     "base": 6800,
+     "memo": "Wear parts, screws and barrels"
+    },
+    {
+     "vendor": "Kettle Valve Supply",
+     "base": 2900,
+     "memo": "Steam fittings and gaskets"
+    }
+   ],
+   "events": [
+    {
+     "key": "gearbox",
+     "vendor": "Ironwell Industrial Services",
+     "memos": [
+      "Main gearbox rebuild — shaft replacement",
+      "Main gearbox rebuild — bearing set and labor"
+     ],
+     "cross_memo": "Main gearbox rebuild — overtime crew",
+     "plain": [
+      "the main gearbox rebuild",
+      "the main gearbox rebuild work",
+      "the main gearbox rebuild invoice"
+     ],
+     "oblique": [
+      "the breakdown that idled our biggest line",
+      "a failure nobody scheduled",
+      "getting the heart of the line turning again",
+      "a major mechanical casualty",
+      "the repair that took a week",
+      "a catastrophic part failure",
+      "fixing what stopped output cold",
+      "an unplanned shutdown of key machinery",
+      "work done around the clock to resume output",
+      "the costly fix for a seized drive",
+      "a long-overdue overhaul that finally became urgent",
+      "what we paid after the equipment gave out",
+      "a serious wear problem finally addressed",
+      "the emergency job on our primary equipment",
+      "restoring power transmission to the line",
+      "an outage that cost us production days"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "cutterknife",
+     "vendor": "Sharpline Tooling Group",
+     "memos": [
+      "Pelletizer blade retrofit — carbide cutters",
+      "Pelletizer blade retrofit — install kit"
+     ],
+     "cross_memo": "Pelletizer blade retrofit — operator retraining",
+     "plain": [
+      "the pelletizer blade retrofit",
+      "the pelletizer blade retrofit kit",
+      "the pelletizer blade retrofit install"
+     ],
+     "oblique": [
+      "a tooling upgrade meant to last longer",
+      "swapping to harder-wearing cutting edges",
+      "a capital-style improvement run through expense",
+      "the modification aimed at cleaner product shape",
+      "a change that should reduce future replacements",
+      "new hardware fitted during a planned stop",
+      "an efficiency project from the engineering team",
+      "upgrading the part that trims each piece",
+      "the fix for uneven kibble size",
+      "a new supplier on our cutting side",
+      "an investment in fewer changeovers",
+      "the redesign of a consumable component",
+      "an upgrade recommended after a quality audit",
+      "retooling to improve product consistency",
+      "the project that cut scrap rates",
+      "longer-life cutting equipment installed this period"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Packaging Materials",
+   "aliases": [
+    "packaging",
+    "bags and film",
+    "packaging supplies",
+    "pouches and cartons",
+    "packaging spend"
+   ],
+   "narrative": [
+    "Bags and film",
+    "Packaging supplies",
+    "Pouches and cartons"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Flexible Packaging",
+     "base": 26000,
+     "memo": "Printed kibble bags, multiwall"
+    },
+    {
+     "vendor": "Cardinal Corrugate",
+     "base": 13500,
+     "memo": "Shipping cartons and trays"
+    },
+    {
+     "vendor": "ClearSeal Film Co",
+     "base": 6400,
+     "memo": "Pouch film and zippers"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "Summit Flexible Packaging",
+     "memos": [
+      "Heritage line redesign — new printing plates",
+      "Heritage line redesign — obsolete bag write-off"
+     ],
+     "cross_memo": "Heritage line redesign — agency artwork fees",
+     "plain": [
+      "the heritage line redesign",
+      "the heritage line redesign plates",
+      "the heritage line redesign bags"
+     ],
+     "oblique": [
+      "a fresh look for the flagship brand",
+      "the visual refresh approved by marketing",
+      "scrapping old stock after a style change",
+      "a new face on the shelf for our top product",
+      "the update that made previous inventory worthless",
+      "a brand makeover launched this period",
+      "costs of changing what the customer sees",
+      "retail-driven changes to the outer appearance",
+      "the transition from old graphics to new",
+      "a creative overhaul by the outside studio",
+      "the switch that left leftover supplies unusable",
+      "throwing out the previous design run",
+      "the roll-out of a modernized brand identity",
+      "shelf appeal improvements",
+      "new printing setup for a relaunched product",
+      "an image refresh ahead of a retail reset"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "resinsurcharge",
+     "vendor": "Polymer Direct Resources",
+     "memos": [
+      "Resin surcharge — petrochemical index adjustment",
+      "Resin surcharge — spot lamination film"
+     ],
+     "cross_memo": "Resin surcharge — freight fuel adder",
+     "plain": [
+      "the resin surcharge",
+      "the resin surcharge adjustment",
+      "the resin surcharge film"
+     ],
+     "oblique": [
+      "an oil price spike passed along by a supplier",
+      "a market-driven increase outside our control",
+      "extra cost on plastic-based inputs",
+      "a mid-quarter notice about higher pricing",
+      "fallout from a refinery outage",
+      "a pass-through of upstream inflation",
+      "costs rising on petroleum-linked goods",
+      "an unexpected line on the supplier invoice",
+      "the temporary markup on laminates",
+      "commodity volatility showing up in our bills",
+      "pricing pressure from the chemicals sector",
+      "a fee added to compensate for raw material swings",
+      "what the vendor said was a temporary adder",
+      "the price jump on wrap and liner",
+      "inflation on synthetic materials",
+      "a supplier-imposed premium"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Cold Chain and Outbound Freight",
+   "aliases": [
+    "freight",
+    "outbound freight",
+    "shipping costs",
+    "distribution freight",
+    "cold chain freight"
+   ],
+   "narrative": [
+    "Outbound freight",
+    "Shipping costs",
+    "Distribution freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Longhaul Express Lines",
+     "base": 24000,
+     "memo": "Dry van loads to distribution centers"
+    },
+    {
+     "vendor": "FrostLine Logistics",
+     "base": 10500,
+     "memo": "Refrigerated loads, fresh and frozen"
+    },
+    {
+     "vendor": "Coastal Intermodal",
+     "base": 7300,
+     "memo": "Rail container moves, west region"
+    }
+   ],
+   "events": [
+    {
+     "key": "portstrike",
+     "vendor": "Coastal Intermodal",
+     "memos": [
+      "Dock labor action — container storage fees",
+      "Dock labor action — truck waiting time"
+     ],
+     "cross_memo": "Dock labor action — alternate port drayage",
+     "plain": [
+      "the dock labor action",
+      "the dock labor action fees",
+      "the dock labor action delays"
+     ],
+     "oblique": [
+      "a walkout that stranded our containers",
+      "a work stoppage at the waterfront",
+      "a labor dispute we had no part in",
+      "goods sitting while negotiations dragged on",
+      "charges that piled up from waiting",
+      "an industry-wide disruption",
+      "a standoff that froze overseas shipments",
+      "extra days of holding fees",
+      "a regional shutdown that slowed exports",
+      "delays outside our control at the terminal",
+      "costs of rerouting around a blocked facility",
+      "a jam that backed up deliveries",
+      "fees tied to a stalled export order",
+      "lost time at the harbor",
+      "a breakdown in negotiations between unions and carriers",
+      "container holds that lasted weeks"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "retailerfine",
+     "vendor": "Brightway Last Mile",
+     "memos": [
+      "Missed appointment penalty — chain account chargeback",
+      "Missed appointment penalty — redelivery run"
+     ],
+     "cross_memo": "Missed appointment penalty — customer deduction",
+     "plain": [
+      "the missed appointment penalty",
+      "the missed appointment penalty chargeback",
+      "the missed appointment penalty redelivery"
+     ],
+     "oblique": [
+      "a big-box customer docking our payment",
+      "a punishment for arriving outside the window",
+      "what the retailer billed for a late truck",
+      "a compliance failure flagged by a buyer",
+      "a deduction taken straight from remittance",
+      "our scorecard problem with a major account",
+      "a service-level miss that became expensive",
+      "the tab for a delivery that landed on the wrong day",
+      "a customer demanding compensation for lateness",
+      "a fee imposed on us under a vendor agreement",
+      "the cost of failing a routing guide",
+      "an on-time metric we fell short of",
+      "a second trip made at our expense",
+      "what the grocery chain charged back",
+      "the fallout from a scheduling mix-up",
+      "a retail partner enforcing its rules"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Quality Assurance and Regulatory",
+   "aliases": [
+    "QA",
+    "quality assurance",
+    "food safety compliance",
+    "lab and regulatory",
+    "testing and compliance"
+   ],
+   "narrative": [
+    "Food safety compliance",
+    "Lab and regulatory",
+    "Testing and compliance"
+   ],
+   "recurring": [
+    {
+     "vendor": "TrueAssay Laboratories",
+     "base": 8800,
+     "memo": "Weekly pathogen and nutrient testing"
+    },
+    {
+     "vendor": "Greenfield Audit Partners",
+     "base": 4200,
+     "memo": "Third-party GMP audit retainer"
+    },
+    {
+     "vendor": "Statehouse Feed Control",
+     "base": 1800,
+     "memo": "Feed registration fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "aafcoreview",
+     "vendor": "TrueAssay Laboratories",
+     "memos": [
+      "Complete diet validation — feeding trial protocol",
+      "Complete diet validation — kennel study fees"
+     ],
+     "cross_memo": "Complete diet validation — veterinary oversight",
+     "plain": [
+      "the complete diet validation",
+      "the complete diet validation trial",
+      "the complete diet validation study"
+     ],
+     "oblique": [
+      "proving a new recipe meets standards",
+      "an animal study required before launch",
+      "the research behind a claim on the bag",
+      "proof demanded by a retail buyer",
+      "work to back up our marketing language",
+      "the multi-week test with live subjects",
+      "documentation for a regulator review",
+      "an expensive prerequisite to a product introduction",
+      "clinical evidence for the new formula",
+      "what we had to complete before shipping a new item",
+      "a mandatory step for a new recipe",
+      "the cost of showing a product is nutritionally sound",
+      "a scientific justification for the label",
+      "the credentials we needed to sell a new line",
+      "a third-party study behind the formulation",
+      "a gate that had to be cleared"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "mycotoxin",
+     "vendor": "Sentinel Environmental Testing",
+     "memos": [
+      "Aflatoxin incident — retained lot analysis",
+      "Aflatoxin incident — confirmatory screening"
+     ],
+     "cross_memo": "Aflatoxin incident — disposal of held inventory",
+     "plain": [
+      "the aflatoxin incident",
+      "the aflatoxin incident screening",
+      "the aflatoxin incident analysis"
+     ],
+     "oblique": [
+      "a contamination scare in a corn shipment",
+      "the hold placed on suspect finished goods",
+      "a problem discovered by routine sampling",
+      "extra checks after a worrying result",
+      "a natural toxin turning up where it should not",
+      "the investigation into a tainted lot",
+      "quarantined product awaiting results",
+      "a close call that never reached customers",
+      "precautionary testing across several batches",
+      "the cost of making certain nothing escaped the plant",
+      "a harvest-related hazard",
+      "a food safety event we handled quietly",
+      "sampling far beyond our normal schedule",
+      "verifying that shipped product was clean",
+      "the incident team working through the weekend",
+      "an unexpected risk traced back to the field"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

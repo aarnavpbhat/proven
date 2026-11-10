@@ -1,0 +1,810 @@
+{
+ "slug": "tire-retailer-and-auto-service",
+ "industry": "tire retailer and auto service",
+ "entities": [
+  "Treadwell Tire & Auto Holdings",
+  "Ridgeline Wheel and Service Co",
+  "Blue Mesa Tire Centers",
+  "Harborview Auto Care Group",
+  "Summit Rubber & Brake Inc"
+ ],
+ "accounts": [
+  {
+   "name": "Tire Inventory Carrying Costs",
+   "aliases": [
+    "tire carrying",
+    "inventory carrying",
+    "tire holding costs",
+    "stock carrying costs",
+    "tire storage spend"
+   ],
+   "narrative": [
+    "Tire carrying",
+    "Inventory carrying",
+    "Tire holding costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Basalt Cold Storage Partners",
+     "base": 14200,
+     "memo": "Svc warehouse storage Mnt fee"
+    },
+    {
+     "vendor": "Corvane Inventory Insurance",
+     "base": 6800,
+     "memo": "Mnt stock coverage premium"
+    },
+    {
+     "vendor": "Pinion Pallet & Handling",
+     "base": 3900,
+     "memo": "Inv pallet handling charges"
+    }
+   ],
+   "events": [
+    {
+     "key": "sidewall_recall",
+     "vendor": "Basalt Cold Storage Partners",
+     "memos": [
+      "Inv Sidewall recall — quarantine bay rental",
+      "Svc Sidewall recall — relabel and sort"
+     ],
+     "cross_memo": "Sidewall recall — returns freight to manufacturer",
+     "plain": [
+      "the sidewall recall",
+      "the sidewall recall quarantine",
+      "the sidewall recall sorting work"
+     ],
+     "oblique": [
+      "pulling defective product off the floor",
+      "the manufacturer pulling a production batch",
+      "segregating suspect stock",
+      "sending bad units back upstream",
+      "a safety notice on one product line",
+      "holding goods that could not be sold",
+      "relabeling and sorting affected goods",
+      "the supplier admitting a flaw",
+      "extra space for held units",
+      "a defect announced by our main supplier",
+      "cordoning off a section of the building",
+      "what we paid to isolate faulty merchandise",
+      "tracking down every affected batch",
+      "getting problem items out of circulation",
+      "a stop-sale order on certain items",
+      "the supplier's quality failure"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "overflow_yard",
+     "vendor": "Tallgrass Container Leasing",
+     "memos": [
+      "Inv Overflow yard — trailer rental",
+      "Svc Overflow yard — gate security"
+     ],
+     "cross_memo": "Overflow yard — forklift hire",
+     "plain": [
+      "the overflow yard",
+      "the overflow yard trailers",
+      "the overflow yard setup"
+     ],
+     "oblique": [
+      "a temporary parking lot full of boxes",
+      "extra room for the pre-winter stockup",
+      "storage we rented off-site",
+      "the early bulk buy outgrowing our space",
+      "a lot across town used as a stopgap",
+      "containers dropped on a leased lot",
+      "the big seasonal purchase landing early",
+      "guarding goods kept outdoors",
+      "space shortage at peak buying time",
+      "a short-term outdoor holding area",
+      "where the extra pallets ended up",
+      "making room for the discounted truckload",
+      "stock that would not fit indoors",
+      "a quick fix for a crowded building",
+      "the supply deal that exceeded capacity",
+      "fenced ground for surplus goods"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Alignment and Balancing Equipment",
+   "aliases": [
+    "alignment gear",
+    "balancing equipment",
+    "shop machines",
+    "bay equipment",
+    "alignment machines"
+   ],
+   "narrative": [
+    "Alignment gear",
+    "Shop machines",
+    "Bay equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gyrotek Calibration Services",
+     "base": 4600,
+     "memo": "Svc rack calibration Mnt"
+    },
+    {
+     "vendor": "Marlow Equipment Finance",
+     "base": 9800,
+     "memo": "Qtr lease pmt machines"
+    }
+   ],
+   "events": [
+    {
+     "key": "laser_rack",
+     "vendor": "Gyrotek Calibration Services",
+     "memos": [
+      "Inv Laser rack upgrade — sensor array",
+      "Svc Laser rack upgrade — install labor"
+     ],
+     "cross_memo": "Laser rack upgrade — tech training seminar",
+     "plain": [
+      "the laser rack upgrade",
+      "the laser rack sensor array",
+      "the laser rack upgrade labor"
+     ],
+     "oblique": [
+      "newer measuring technology in the bays",
+      "replacing the aging precision tools",
+      "a retrofit meant to speed up each job",
+      "keeping pace with newer vehicle designs",
+      "what the manufacturer required for warranty work",
+      "modernizing how we check wheel angles",
+      "hardware swapped on the main floor",
+      "a capability gap we had to close",
+      "the shop's biggest hardware refresh",
+      "parts and fitting for improved accuracy",
+      "gear for late-model cars",
+      "new sensing hardware",
+      "bringing old machines up to spec",
+      "an investment in measurement accuracy",
+      "making sure complex vehicles could be serviced",
+      "a technician-requested modernization"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "hoist_failure",
+     "vendor": "Redstone Lift Repair",
+     "memos": [
+      "Inv Hoist failure — hydraulic cylinder replace",
+      "Svc Hoist failure — emergency callout"
+     ],
+     "cross_memo": "Hoist failure — loaner bay rental",
+     "plain": [
+      "the hoist failure",
+      "the hoist failure cylinder",
+      "the hoist failure callout"
+     ],
+     "oblique": [
+      "a lift that stopped working mid-job",
+      "the breakdown that idled two bays",
+      "a weekend crisis in the garage",
+      "fluid-pressure parts giving out",
+      "an urgent repair call after hours",
+      "a car stuck in the air",
+      "losing a work position for days",
+      "the unexpected equipment outage",
+      "paying a premium to get back to work",
+      "a mechanical casualty on the shop floor",
+      "a vehicle lifting system going dead",
+      "the technician crew standing idle",
+      "rushed replacement of a worn component",
+      "a safety shutdown ordered by the manager",
+      "repair work that could not wait",
+      "when the garage lost capacity"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Mobile Service Fleet",
+   "aliases": [
+    "mobile fleet",
+    "service vans",
+    "roadside fleet",
+    "van fleet",
+    "mobile service vehicles"
+   ],
+   "narrative": [
+    "Mobile fleet",
+    "Service vans",
+    "Van fleet"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northgate Fuel Cards",
+     "base": 11500,
+     "memo": "Mnt fuel card billing"
+    },
+    {
+     "vendor": "Dunmore Fleet Insurance",
+     "base": 7200,
+     "memo": "Qtr commercial auto premium"
+    },
+    {
+     "vendor": "Quillon Telematics",
+     "base": 2400,
+     "memo": "Svc GPS tracking subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "van_wrap",
+     "vendor": "Dunmore Fleet Insurance",
+     "memos": [
+      "Inv Rebrand van wrap — policy rider",
+      "Svc Rebrand van wrap — graphics endorsement"
+     ],
+     "cross_memo": "Rebrand van wrap — vinyl printing",
+     "plain": [
+      "the rebrand van wrap",
+      "the rebrand van wrap rider",
+      "the rebrand van wrap endorsement"
+     ],
+     "oblique": [
+      "new logos on every vehicle",
+      "the visual refresh on our trucks",
+      "covering the repainted exteriors",
+      "a marketing push on wheels",
+      "insuring decorative changes",
+      "the identity change hitting the road",
+      "redoing how our vehicles look",
+      "a fresh look for the whole lineup",
+      "coverage for added exterior graphics",
+      "paperwork tied to the new image",
+      "a corporate makeover reaching the garage",
+      "what the carrier charged for cosmetic changes",
+      "after the company changed its colors",
+      "the change in public appearance",
+      "a campaign to be more visible",
+      "altered appearance of every unit"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "transmission_swap",
+     "vendor": "Kestrel Drivetrain Works",
+     "memos": [
+      "Inv Transmission swap — van 14 remanufactured unit",
+      "Svc Transmission swap — drivetrain labor"
+     ],
+     "cross_memo": "Transmission swap — tow to shop",
+     "plain": [
+      "the transmission swap",
+      "the transmission swap remanufactured unit",
+      "the transmission swap labor"
+     ],
+     "oblique": [
+      "a van that would no longer shift",
+      "the costly repair on our oldest truck",
+      "gearbox trouble taking a vehicle offline",
+      "fixing the power-delivery failure",
+      "a major mechanical overhaul on one unit",
+      "keeping a route covered after a breakdown",
+      "replacing a core component of the drivetrain",
+      "a vehicle sidelined for most of the month",
+      "the big-ticket repair nobody budgeted",
+      "a rebuilt part going into a work truck",
+      "when one vehicle died on a call",
+      "an expensive fix on high-mileage equipment",
+      "getting a stranded vehicle back running",
+      "a repair bigger than expected",
+      "mechanical failure on a service vehicle",
+      "the cost of keeping an aging truck alive"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Tire Disposal and Environmental Fees",
+   "aliases": [
+    "disposal fees",
+    "scrap tire fees",
+    "environmental fees",
+    "tire recycling costs",
+    "waste tire spend"
+   ],
+   "narrative": [
+    "Disposal fees",
+    "Scrap tire fees",
+    "Tire recycling costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenloop Tire Recovery",
+     "base": 8700,
+     "memo": "Mnt scrap tire pickup"
+    },
+    {
+     "vendor": "Statewide Waste Authority",
+     "base": 2100,
+     "memo": "Qtr state disposal levy"
+    }
+   ],
+   "events": [
+    {
+     "key": "stockpile_cleanup",
+     "vendor": "Greenloop Tire Recovery",
+     "memos": [
+      "Inv Lot cleanup haul — legacy pile removal",
+      "Svc Lot cleanup haul — extra truck runs"
+     ],
+     "cross_memo": "Lot cleanup haul — site grading",
+     "plain": [
+      "the lot cleanup haul",
+      "the lot cleanup haul legacy pile",
+      "the lot cleanup haul truck runs"
+     ],
+     "oblique": [
+      "clearing out an old mountain of casings",
+      "a backlog that had been growing for years",
+      "the compliance inspector's demand",
+      "getting rid of what piled up behind the building",
+      "a one-time purge of old rubber",
+      "tidying the grounds before a deadline",
+      "a mountain finally removed",
+      "the inherited mess from an acquired store",
+      "hauling away a decade of accumulation",
+      "an agency notice about the back lot",
+      "extra trips to empty the yard",
+      "a deep clean of the property",
+      "catching up on neglected removal",
+      "what the regulator told us to fix",
+      "an old problem finally addressed",
+      "emptying the heap by the fence"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "hazmat_audit",
+     "vendor": "Ironvale Compliance Group",
+     "memos": [
+      "Inv Hazmat audit — fluid disposal review",
+      "Svc Hazmat audit — manifest correction"
+     ],
+     "cross_memo": "Hazmat audit — state penalty fee",
+     "plain": [
+      "the hazmat audit",
+      "the hazmat audit fluid review",
+      "the hazmat audit manifest correction"
+     ],
+     "oblique": [
+      "an inspector examining how we handle used oils",
+      "paperwork errors found by a state visit",
+      "the regulatory review of our chemical handling",
+      "fixing records that did not match",
+      "a surprise visit from an agency",
+      "penalties and cleanup after a finding",
+      "consultants brought in to fix our files",
+      "what we paid after a failed walk-through",
+      "remedial work on our logs",
+      "a review of how we discard fluids",
+      "checking the books on waste shipments",
+      "an official finding that needed correcting",
+      "the cost of getting back in good standing",
+      "outside experts reviewing our handling",
+      "a compliance gap that had to be closed",
+      "a government-driven examination"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Technician Training and Certification",
+   "aliases": [
+    "tech training",
+    "certification costs",
+    "technician certs",
+    "training spend",
+    "mechanic education"
+   ],
+   "narrative": [
+    "Tech training",
+    "Certification costs",
+    "Training spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Apex Automotive Institute",
+     "base": 5400,
+     "memo": "Mnt online course subscription"
+    },
+    {
+     "vendor": "Brightpath Safety Seminars",
+     "base": 2800,
+     "memo": "Qtr safety refresher"
+    }
+   ],
+   "events": [
+    {
+     "key": "ev_certification",
+     "vendor": "Apex Automotive Institute",
+     "memos": [
+      "Inv High-voltage cert program — instructor fees",
+      "Svc High-voltage cert program — exam vouchers"
+     ],
+     "cross_memo": "High-voltage cert program — insulated tool kits",
+     "plain": [
+      "the high-voltage cert program",
+      "the high-voltage cert instructor fees",
+      "the high-voltage cert exam vouchers"
+     ],
+     "oblique": [
+      "getting our crew qualified on electric cars",
+      "skills for battery-powered vehicles",
+      "the push to service newer models",
+      "a credential our customers started asking about",
+      "preparing staff for a changing market",
+      "specialist schooling for the whole team",
+      "what the manufacturer required to touch these cars",
+      "an upskilling push across all locations",
+      "the latest wave of coursework",
+      "tests that the whole crew had to pass",
+      "opening a new line of business",
+      "getting ready for zero-emission customers",
+      "the shift away from combustion vehicles",
+      "qualifying for a growing segment",
+      "expanded instruction for the workshop staff",
+      "a competitive necessity in our trade"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "onboarding_cohort",
+     "vendor": "Lakeshore Trade Academy",
+     "memos": [
+      "Inv Apprentice cohort — tuition sponsorship",
+      "Svc Apprentice cohort — mentoring stipends"
+     ],
+     "cross_memo": "Apprentice cohort — starter toolbox",
+     "plain": [
+      "the apprentice cohort",
+      "the apprentice cohort tuition",
+      "the apprentice cohort stipends"
+     ],
+     "oblique": [
+      "a batch of new hires learning the trade",
+      "our bet on young talent",
+      "the graduating class joining the shops",
+      "paying for school on behalf of recruits",
+      "investing in the next generation of staff",
+      "a hiring pipeline we funded",
+      "the group starting from zero experience",
+      "a program to fill open bays",
+      "a labor shortage response",
+      "tuition covered for newcomers",
+      "senior staff paid to guide beginners",
+      "building our own workforce",
+      "a school partnership we underwrote",
+      "getting rookies up to speed",
+      "what we paid to grow our bench",
+      "the recruitment drive for entry-level mechanics"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Showroom and Store Occupancy",
+   "aliases": [
+    "store rent",
+    "showroom lease",
+    "occupancy costs",
+    "location rent",
+    "retail lease costs"
+   ],
+   "narrative": [
+    "Store rent",
+    "Occupancy costs",
+    "Location rent"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crestline Property Management",
+     "base": 28000,
+     "memo": "Mnt base rent main store"
+    },
+    {
+     "vendor": "Eastbrook Realty Holdings",
+     "base": 19500,
+     "memo": "Mnt base rent east location"
+    },
+    {
+     "vendor": "Harlan Utility Services",
+     "base": 4300,
+     "memo": "Inv electric and water"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam_reconciliation",
+     "vendor": "Crestline Property Management",
+     "memos": [
+      "Inv Common area true-up — prior year reconciliation",
+      "Svc Common area true-up — snow removal share"
+     ],
+     "cross_memo": "Common area true-up — parking lot resurfacing assessment",
+     "plain": [
+      "the common area true-up",
+      "the common area prior year reconciliation",
+      "the common area snow share"
+     ],
+     "oblique": [
+      "a landlord's catch-up billing",
+      "charges for last year finally arriving",
+      "our share of shared grounds expenses",
+      "an adjustment letter from the property owner",
+      "costs that were estimated too low",
+      "the annual settlement with the owner",
+      "a bill that arrived long after the fact",
+      "shared upkeep we had underpaid",
+      "the difference between estimates and actuals",
+      "what the building manager said we owed",
+      "a retroactive charge",
+      "payment for upkeep of the outdoor areas",
+      "a settlement for the prior twelve months",
+      "an unexpected statement from management",
+      "the other tenants' portion of costs",
+      "a true-up nobody budgeted"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "new_location_buildout",
+     "vendor": "Foxglove Construction Services",
+     "memos": [
+      "Inv Westside buildout — bay partition framing",
+      "Svc Westside buildout — signage installation"
+     ],
+     "cross_memo": "Westside buildout — permit fees",
+     "plain": [
+      "the westside buildout",
+      "the westside buildout partition framing",
+      "the westside buildout signage"
+     ],
+     "oblique": [
+      "opening our newest location",
+      "construction at the site we just leased",
+      "converting an empty building into a shop",
+      "preparing the new branch for customers",
+      "walls and fixtures going up",
+      "work to get a storefront open",
+      "the expansion into another neighborhood",
+      "a ribbon-cutting we were preparing for",
+      "finishing the space before the grand opening",
+      "contractors working on the fresh site",
+      "the growth plan taking physical shape",
+      "readying the latest outpost",
+      "the outlay to launch another store",
+      "the construction crew's invoice",
+      "turning bare floor into a working garage",
+      "our expansion beyond the existing footprint"
+     ],
+     "low": 25000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Customer Warranty and Road Hazard Claims",
+   "aliases": [
+    "warranty claims",
+    "road hazard costs",
+    "customer claims",
+    "adjustments and warranty",
+    "claims spend"
+   ],
+   "narrative": [
+    "Warranty claims",
+    "Road hazard costs",
+    "Customer claims"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Claims Administration",
+     "base": 6100,
+     "memo": "Mnt claims processing fee"
+    },
+    {
+     "vendor": "Tidewater Casualty Reinsurance",
+     "base": 9300,
+     "memo": "Qtr warranty reinsurance"
+    }
+   ],
+   "events": [
+    {
+     "key": "batch_defect_claims",
+     "vendor": "Sentinel Claims Administration",
+     "memos": [
+      "Inv Lot 7742 claims wave — customer refunds",
+      "Svc Lot 7742 claims wave — adjuster overtime"
+     ],
+     "cross_memo": "Lot 7742 claims wave — goodwill gift cards",
+     "plain": [
+      "the lot 7742 claims wave",
+      "the lot 7742 customer refunds",
+      "the lot 7742 adjuster overtime"
+     ],
+     "oblique": [
+      "a flood of complaints about one shipment",
+      "customers all returning with the same issue",
+      "a spike in refund requests",
+      "staff working extra hours on complaints",
+      "making unhappy drivers whole",
+      "the fallout from a bad production run",
+      "a surge in people wanting money back",
+      "repairing our reputation with buyers",
+      "the same defect showing up repeatedly",
+      "a sudden pile of tickets to resolve",
+      "appeasing the affected shoppers",
+      "problem units that reached the public",
+      "paying out for faulty goods",
+      "the wave of dissatisfied clients",
+      "a cluster of identical failures",
+      "reimbursing the people who bought bad product"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "hailstorm_event",
+     "vendor": "Corbin Auto Glass and Body",
+     "memos": [
+      "Inv Hailstorm response — lot vehicle repairs",
+      "Svc Hailstorm response — dent removal"
+     ],
+     "cross_memo": "Hailstorm response — tarp and cover supplies",
+     "plain": [
+      "the hailstorm response",
+      "the hailstorm lot vehicle repairs",
+      "the hailstorm response dent removal"
+     ],
+     "oblique": [
+      "damage from a freak weather system",
+      "dented cars in our parking area",
+      "cleaning up after the overnight sky assault",
+      "repairs on customer vehicles left with us",
+      "the storm that battered the entire block",
+      "fixing what fell from the heavens",
+      "a natural disaster affecting vehicles on site",
+      "body work on cars we were holding",
+      "an act of nature we ended up paying for",
+      "ice stones wrecking exteriors",
+      "the aftermath of a violent afternoon",
+      "repairs after severe weather rolled through",
+      "a weather catastrophe in our neighborhood",
+      "covering the cost of customers' damaged autos",
+      "the unplanned bodywork bill",
+      "making good on vehicles caught in the storm"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Shop Supplies and Consumables",
+   "aliases": [
+    "shop supplies",
+    "consumables",
+    "wheel weights and valve stems",
+    "bay supplies",
+    "workshop materials"
+   ],
+   "narrative": [
+    "Shop supplies",
+    "Consumables",
+    "Bay supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hexagon Industrial Supply",
+     "base": 7400,
+     "memo": "Inv lug nuts valve stems misc hardware"
+    },
+    {
+     "vendor": "Bolt & Anvil Distribution",
+     "base": 5200,
+     "memo": "Mnt wheel weights sealant"
+    },
+    {
+     "vendor": "Clearwater Chemical Co",
+     "base": 2600,
+     "memo": "Inv lubricants cleaners"
+    }
+   ],
+   "events": [
+    {
+     "key": "nitrogen_rollout",
+     "vendor": "Hexagon Industrial Supply",
+     "memos": [
+      "Inv Nitrogen fill rollout — generator purchase",
+      "Svc Nitrogen fill rollout — plumbing hookup"
+     ],
+     "cross_memo": "Nitrogen fill rollout — point-of-sale signage",
+     "plain": [
+      "the nitrogen fill rollout",
+      "the nitrogen fill generator purchase",
+      "the nitrogen fill plumbing hookup"
+     ],
+     "oblique": [
+      "a new inflation upsell for customers",
+      "equipment letting us offer a premium option",
+      "a gas service launched across stores",
+      "the machines behind our new add-on",
+      "an offering aimed at raising ticket size",
+      "a fresh revenue idea for the bays",
+      "hardware for a service we had never sold",
+      "the pilot program for an extra service",
+      "what it took to start selling a new item",
+      "pipes and tanks installed for customers",
+      "a menu expansion at the counter",
+      "investment in an upsell product line",
+      "a service differentiator against competitors",
+      "making a rare air offering available",
+      "the launch of a new line item on invoices",
+      "installing the means to sell something novel"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "fire_extinguisher_recert",
+     "vendor": "Pelham Safety Outfitters",
+     "memos": [
+      "Inv Fire safety refit — extinguisher replacements",
+      "Svc Fire safety refit — sprinkler inspection"
+     ],
+     "cross_memo": "Fire safety refit — exit signage",
+     "plain": [
+      "the fire safety refit",
+      "the fire safety extinguisher replacements",
+      "the fire safety sprinkler inspection"
+     ],
+     "oblique": [
+      "the marshal's list of required fixes",
+      "upgrades needed to pass an official visit",
+      "protective gear replaced across locations",
+      "a citation we had to resolve quickly",
+      "what the insurer demanded to renew coverage",
+      "readiness for emergencies in our buildings",
+      "an inspector's checklist coming due",
+      "replacing expired emergency equipment",
+      "making each building meet code",
+      "life-safety work in all the shops",
+      "an overdue compliance project",
+      "hardware that hangs on the wall for emergencies",
+      "the city's requirement we could not defer",
+      "precautions against flames in the garage",
+      "the insurance carrier's condition for staying covered",
+      "bringing every site up to regulation"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

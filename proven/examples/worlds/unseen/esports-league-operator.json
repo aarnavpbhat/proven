@@ -1,0 +1,810 @@
+{
+ "slug": "esports-league-operator",
+ "industry": "esports league operator",
+ "entities": [
+  "Apex Circuit Gaming Ltd",
+  "Nexus Arena League Inc",
+  "Vanguard Pro Series LLC",
+  "Ironclad Esports Holdings",
+  "Starfall Competitive Media"
+ ],
+ "accounts": [
+  {
+   "name": "Broadcast Production",
+   "aliases": [
+    "broadcast",
+    "broadcast production",
+    "production costs",
+    "stream production",
+    "broadcast spend"
+   ],
+   "narrative": [
+    "Broadcast production",
+    "Production costs",
+    "Stream production"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lumenwave Studios",
+     "base": 24000,
+     "memo": "Monthly studio crew retainer"
+    },
+    {
+     "vendor": "Signalpath Encoding",
+     "base": 6500,
+     "memo": "Encoder service subscription"
+    },
+    {
+     "vendor": "Kestrel Graphics",
+     "base": 4200,
+     "memo": "On-air graphics package fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "grand_final",
+     "vendor": "Lumenwave Studios",
+     "memos": [
+      "Grand Final remote truck - WO 4471",
+      "Grand Final camera ops overtime"
+     ],
+     "cross_memo": "Grand Final venue power hookup",
+     "plain": [
+      "the grand final remote truck",
+      "grand final camera overtime",
+      "the grand final shoot"
+     ],
+     "oblique": [
+      "the championship match coverage",
+      "extra hours for the filming team",
+      "outside broadcast vehicle hire",
+      "the season-ending showcase",
+      "covering the title decider live",
+      "playoff climax coverage",
+      "a mobile control room for the championship",
+      "longer shifts behind the lenses",
+      "the trophy match production push",
+      "championship weekend",
+      "staffing the big finale",
+      "the year's marquee match",
+      "additional shooters for the title event",
+      "on-site gallery for the decider",
+      "heavier coverage of the championship",
+      "the season finale"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "caster_booth",
+     "vendor": "Halcyon Audio Rentals",
+     "memos": [
+      "Caster booth rebuild - acoustic panels PO 8812",
+      "Caster booth rebuild - mixing console"
+     ],
+     "cross_memo": "Caster booth rebuild - electrical contractor",
+     "plain": [
+      "the caster booth rebuild",
+      "caster booth rebuild work",
+      "the caster booth rebuild project"
+     ],
+     "oblique": [
+      "soundproofing the commentator desk",
+      "new commentator desk",
+      "commentary space refurbishment",
+      "redoing where the analysts talk",
+      "the talent room overhaul",
+      "better sound isolation for commentators",
+      "a new sound desk",
+      "the commentary room upgrade",
+      "fixing echo on the broadcast desk",
+      "rewiring the talent area",
+      "the analyst desk refit",
+      "quieter commentary space",
+      "refurbishing the play-by-play room",
+      "upgraded commentary gear",
+      "sound treatment for the talent",
+      "redoing the analyst set"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Tournament Venue Hire",
+   "aliases": [
+    "venue hire",
+    "venues",
+    "arena hire",
+    "venue costs",
+    "arena bookings"
+   ],
+   "narrative": [
+    "Venue hire",
+    "Arena hire",
+    "Venue costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Riverside Expo Hall",
+     "base": 21000,
+     "memo": "Weekly match night booking"
+    },
+    {
+     "vendor": "Brightline Security",
+     "base": 5800,
+     "memo": "Door guard staffing"
+    }
+   ],
+   "events": [
+    {
+     "key": "overflow_seating",
+     "vendor": "Riverside Expo Hall",
+     "memos": [
+      "Overflow seating - bleacher install",
+      "Overflow seating - extra ushers"
+     ],
+     "cross_memo": "Overflow seating - ticketing fees",
+     "plain": [
+      "the overflow seating",
+      "overflow seating costs",
+      "adding overflow seating"
+     ],
+     "oblique": [
+      "a sold-out crowd",
+      "more fans than the room holds",
+      "added capacity for demand",
+      "the stands we bolted on",
+      "bigger attendance",
+      "accommodating a larger audience",
+      "spectator demand above plan",
+      "additional benches for spectators",
+      "more floor attendants",
+      "a crowd larger than forecast",
+      "expanded capacity",
+      "packing more spectators in",
+      "the surge in attendance",
+      "making room for walk-up fans",
+      "higher turnout",
+      "the attendance spike"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "temp_chillers",
+     "vendor": "Coldharbor Climate Rentals",
+     "memos": [
+      "Temporary chillers - HVAC failure PO 3390",
+      "Temporary chillers - generator fuel"
+     ],
+     "cross_memo": "Temporary chillers - concession spoilage",
+     "plain": [
+      "the temporary chillers",
+      "temporary chillers on site",
+      "temporary chillers after the outage"
+     ],
+     "oblique": [
+      "the air conditioning breakdown",
+      "keeping the building cool",
+      "cooling backup",
+      "broken air conditioning",
+      "emergency cooling",
+      "a heatwave fix",
+      "portable cooling units",
+      "keeping players' rigs from overheating",
+      "the AC outage",
+      "stopgap cooling for the building",
+      "the cooling breakdown",
+      "running backup power for cooling",
+      "replacing ruined snacks",
+      "cold-air units on loan",
+      "the overheating scare",
+      "an air handler outage"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Prize Pool Contributions",
+   "aliases": [
+    "prize pool",
+    "prize money",
+    "player winnings",
+    "prize funding",
+    "purse contributions"
+   ],
+   "narrative": [
+    "Prize pool",
+    "Prize money",
+    "Player winnings"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tallis Escrow Trust",
+     "base": 30000,
+     "memo": "Monthly purse escrow deposit"
+    },
+    {
+     "vendor": "Meridian Payouts",
+     "base": 1800,
+     "memo": "Winner disbursement processing"
+    }
+   ],
+   "events": [
+    {
+     "key": "stretch_goal",
+     "vendor": "Tallis Escrow Trust",
+     "memos": [
+      "Stretch goal - sponsor match PO 5520",
+      "Stretch goal - battle pass share"
+     ],
+     "cross_memo": "Stretch goal - campaign artwork",
+     "plain": [
+      "the stretch goal",
+      "stretch goal deposits",
+      "hitting the stretch goal"
+     ],
+     "oblique": [
+      "fan-funded increases to the pot",
+      "the community-raised boost",
+      "in-game sales feeding the award",
+      "a bigger championship reward",
+      "crowd contributions crossing the threshold",
+      "the fan milestone being reached",
+      "a partner matching fan money",
+      "the digital item revenue split",
+      "topping up the reward fund",
+      "community spending unlocking more cash",
+      "the fan-backed boost",
+      "higher championship stakes",
+      "the bonus level being unlocked",
+      "a richer reward for competitors",
+      "the community target",
+      "fans pushing the total higher"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "withholding_fix",
+     "vendor": "Brookvale Tax Advisors",
+     "memos": [
+      "Withholding correction - foreign players",
+      "Withholding correction - gross-up"
+     ],
+     "cross_memo": "Withholding correction - advisory hours",
+     "plain": [
+      "the withholding correction",
+      "withholding correction amounts",
+      "the withholding correction filing"
+     ],
+     "oblique": [
+      "a remittance error for overseas competitors",
+      "covering amounts we failed to deduct",
+      "the international pro levy issue",
+      "making competitors whole after a deduction error",
+      "the overseas remittance fix",
+      "back payments to revenue authorities",
+      "the deduction mistake",
+      "an under-deduction catch-up",
+      "settling with the revenue service",
+      "cross-border compliance cleanup",
+      "the cross-border levy fix",
+      "absorbing the shortfall on non-resident pros",
+      "a compliance catch-up",
+      "the audit finding on non-resident pros",
+      "repaying the authorities",
+      "the remittance shortfall"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Team Revenue Share",
+   "aliases": [
+    "team share",
+    "franchise payments",
+    "team stipends",
+    "club distributions",
+    "franchise share"
+   ],
+   "narrative": [
+    "Team stipends",
+    "Franchise payments",
+    "Club distributions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Corvid Gaming Club",
+     "base": 15000,
+     "memo": "Stipend draw - roster support"
+    },
+    {
+     "vendor": "Ashgrove Esports",
+     "base": 15000,
+     "memo": "Stipend draw - roster support"
+    },
+    {
+     "vendor": "Pinecrest Pro Team",
+     "base": 15000,
+     "memo": "Stipend draw"
+    }
+   ],
+   "events": [
+    {
+     "key": "relocation_grant",
+     "vendor": "Corvid Gaming Club",
+     "memos": [
+      "Relocation grant - new market move",
+      "Relocation grant - housing"
+     ],
+     "cross_memo": "Relocation grant - legal review",
+     "plain": [
+      "the relocation grant",
+      "the relocation grant payout",
+      "relocation grant instalments"
+     ],
+     "oblique": [
+      "an organisation heading to another city",
+      "paying to shift a side to a fresh city",
+      "the city switch",
+      "helping a squad change cities",
+      "player apartments in the destination city",
+      "lawyers vetting the transfer",
+      "the hometown change",
+      "incentives to change home base",
+      "costs of changing headquarters",
+      "the franchise's city change",
+      "the agreed incentive for changing home city",
+      "uprooting a squad",
+      "the home base change",
+      "accommodation for transferred players",
+      "an approved hometown switch",
+      "helping one side resettle"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "expansion_slot",
+     "vendor": "Fallowmere Esports Collective",
+     "memos": [
+      "Expansion slot - onboarding advance",
+      "Expansion slot - jersey kit"
+     ],
+     "cross_memo": "Expansion slot - announcement promo",
+     "plain": [
+      "the expansion slot",
+      "expansion slot onboarding",
+      "expansion slot advances"
+     ],
+     "oblique": [
+      "admitting a fresh franchise",
+      "the league's latest entrant",
+      "welcoming an additional organisation",
+      "uniforms for the newcomers",
+      "the newcomer's startup cash",
+      "bringing a debut side up to speed",
+      "the added franchise",
+      "a ninth organisation joining",
+      "launch hype for the latest entrant",
+      "the league growing by one",
+      "startup funding for the debut side",
+      "uniforms and branding for the entrant",
+      "the newest member organisation",
+      "growing the league",
+      "the debut franchise",
+      "the entrant's first-season cash"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Anti-Cheat & Integrity",
+   "aliases": [
+    "anti-cheat",
+    "integrity",
+    "integrity monitoring",
+    "anti-cheat spend",
+    "match integrity"
+   ],
+   "narrative": [
+    "Anti-cheat spend",
+    "Integrity monitoring",
+    "Match integrity"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Trace Labs",
+     "base": 9500,
+     "memo": "Client licence - league seats"
+    },
+    {
+     "vendor": "Ostrava Data Watch",
+     "base": 4000,
+     "memo": "Betting feed monitoring"
+    }
+   ],
+   "events": [
+    {
+     "key": "kernel_driver",
+     "vendor": "Sentinel Trace Labs",
+     "memos": [
+      "Kernel driver audit - WO 1182",
+      "Kernel driver patch rollout"
+     ],
+     "cross_memo": "Kernel driver - player hardware swaps",
+     "plain": [
+      "the kernel driver audit",
+      "kernel driver patch work",
+      "the kernel driver rollout"
+     ],
+     "oblique": [
+      "the low-level security review",
+      "hardening the cheat detection software",
+      "replacing pros' PCs that failed checks",
+      "the detection upgrade",
+      "a deeper system-level scan",
+      "closing an exploit",
+      "the vulnerability fix",
+      "competitor machines that wouldn't pass",
+      "a security code review",
+      "pushing the fix to every competitor",
+      "the exploit remediation",
+      "an emergency software update",
+      "tightening detection",
+      "new gaming rigs for flagged pros",
+      "the protection layer upgrade",
+      "the bypass discovery"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "westbrook_inquiry",
+     "vendor": "Greyfield Forensic Partners",
+     "memos": [
+      "Westbrook inquiry - interviews",
+      "Westbrook inquiry - device imaging"
+     ],
+     "cross_memo": "Westbrook inquiry - outside counsel",
+     "plain": [
+      "the westbrook inquiry",
+      "westbrook inquiry costs",
+      "the westbrook inquiry interviews"
+     ],
+     "oblique": [
+      "the suspected throwing case",
+      "investigating a rigged series",
+      "the corruption investigation",
+      "lawyers on the fixing allegations",
+      "examining phones of suspended pros",
+      "the throwing scandal",
+      "questioning the suspended roster",
+      "a cheating scandal",
+      "the allegations against one squad",
+      "digital evidence collection",
+      "the wagering scandal",
+      "investigators on the rigged series",
+      "the suspension case",
+      "evidence gathering on suspected throwers",
+      "external lawyers",
+      "the corruption case"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Bootcamp & Player Housing",
+   "aliases": [
+    "bootcamp",
+    "player housing",
+    "bootcamp costs",
+    "team housing",
+    "gaming house costs"
+   ],
+   "narrative": [
+    "Bootcamp costs",
+    "Player housing",
+    "Team housing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborlight Residences",
+     "base": 18000,
+     "memo": "Gaming house lease - unit 4B"
+    },
+    {
+     "vendor": "Tidewell Catering",
+     "base": 7200,
+     "memo": "Resident meal service"
+    },
+    {
+     "vendor": "Northgate Cleaning",
+     "base": 1600,
+     "memo": "Weekly housekeeping"
+    }
+   ],
+   "events": [
+    {
+     "key": "nutrition_program",
+     "vendor": "Tidewell Catering",
+     "memos": [
+      "Nutrition program - dietitian plan",
+      "Nutrition program - supplement order"
+     ],
+     "cross_memo": "Nutrition program - gym passes",
+     "plain": [
+      "the nutrition program",
+      "nutrition program rollout",
+      "nutrition program costs"
+     ],
+     "oblique": [
+      "healthier eating for the pros",
+      "the diet overhaul",
+      "fitness memberships",
+      "vitamins and protein powder",
+      "the wellness initiative",
+      "better food for the squads",
+      "the performance diet push",
+      "fitness and food for the pros",
+      "healthier menus",
+      "the conditioning push",
+      "protein shakes",
+      "the health kick management wanted",
+      "workout memberships",
+      "diet counselling",
+      "player wellness spending",
+      "the physical conditioning initiative"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "offseason_retreat",
+     "vendor": "Saltmarsh Retreat Lodge",
+     "memos": [
+      "Offseason retreat - lodging block",
+      "Offseason retreat - charter coach"
+     ],
+     "cross_memo": "Offseason retreat - flights",
+     "plain": [
+      "the offseason retreat",
+      "offseason retreat lodging",
+      "the team offseason retreat"
+     ],
+     "oblique": [
+      "the team-building getaway",
+      "a preseason trip to the mountains",
+      "the out-of-town camp",
+      "rooms for the whole roster",
+      "bus hire for the trip",
+      "the annual getaway",
+      "taking the squads out of town",
+      "a week away before the season",
+      "the mountain camp",
+      "airfare for the getaway",
+      "the bonding trip",
+      "the remote training camp",
+      "a scheduled break before the split",
+      "hotel rooms for the roster",
+      "the strategy camp up north",
+      "time away for the rosters"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Platform & Streaming Distribution",
+   "aliases": [
+    "distribution",
+    "streaming distribution",
+    "cdn",
+    "platform fees",
+    "bandwidth costs"
+   ],
+   "narrative": [
+    "Streaming distribution",
+    "Platform fees",
+    "Bandwidth costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Skyrelay Networks",
+     "base": 12500,
+     "memo": "CDN egress - monthly commit"
+    },
+    {
+     "vendor": "Quillstream Media",
+     "base": 8000,
+     "memo": "Platform carriage fee"
+    },
+    {
+     "vendor": "Ordway Cloud",
+     "base": 5400,
+     "memo": "Transcode compute"
+    }
+   ],
+   "events": [
+    {
+     "key": "overage_tier",
+     "vendor": "Skyrelay Networks",
+     "memos": [
+      "Overage tier - viral clip surge",
+      "Overage tier - burst pricing"
+     ],
+     "cross_memo": "Overage tier - extra moderators",
+     "plain": [
+      "the overage tier",
+      "overage tier charges",
+      "the overage tier billing"
+     ],
+     "oblique": [
+      "a highlight that blew up online",
+      "traffic far above our contracted volume",
+      "the spike in viewers",
+      "exceeding the contracted volume",
+      "a record audience night",
+      "the unexpected viewership peak",
+      "going over our data allowance",
+      "heavier traffic than contracted",
+      "a moment that went everywhere",
+      "chat staff for the flood of viewers",
+      "the bandwidth spike",
+      "usage above the cap",
+      "the record concurrency night",
+      "higher delivery volume",
+      "the traffic blowout",
+      "a breakout highlight"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "korean_simulcast",
+     "vendor": "Lanternfly Localization",
+     "memos": [
+      "Korean simulcast - dubbing",
+      "Korean simulcast - subtitle feed"
+     ],
+     "cross_memo": "Korean simulcast - regional ads",
+     "plain": [
+      "the korean simulcast",
+      "the korean simulcast launch",
+      "korean simulcast dubbing"
+     ],
+     "oblique": [
+      "the Seoul-language broadcast",
+      "launching coverage for Asian fans",
+      "translated commentary",
+      "voiceover work for the new market",
+      "captions for overseas viewers",
+      "the Asia expansion",
+      "a second-language version of the show",
+      "reaching viewers in Seoul",
+      "translated captions",
+      "local-language voiceover",
+      "the APAC launch",
+      "adding a Hangul stream",
+      "translation work",
+      "the foreign-language version",
+      "promotion in Asia",
+      "native-language commentary"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Officiating & Referee Services",
+   "aliases": [
+    "officiating",
+    "referees",
+    "referee services",
+    "admin crew",
+    "officials"
+   ],
+   "narrative": [
+    "Officiating",
+    "Referee services",
+    "Officials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Fairplay Adjudication Guild",
+     "base": 11000,
+     "memo": "Referee pool - match days"
+    },
+    {
+     "vendor": "Clearcall Rules Desk",
+     "base": 2500,
+     "memo": "Rules hotline retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "ruleset_cert",
+     "vendor": "Fairplay Adjudication Guild",
+     "memos": [
+      "Ruleset certification - trainer days",
+      "Ruleset certification - exam fees"
+     ],
+     "cross_memo": "Ruleset certification - venue rooms",
+     "plain": [
+      "the ruleset certification",
+      "ruleset certification exams",
+      "ruleset certification training"
+     ],
+     "oblique": [
+      "qualifying our officials",
+      "retraining after the patch changes",
+      "officials sitting tests",
+      "accreditation for the umpires",
+      "the umpire qualification drive",
+      "training for officials",
+      "getting the umpires accredited",
+      "the officiating upskill",
+      "new-season standards training",
+      "testing every umpire",
+      "updating judges on the season handbook",
+      "the umpire accreditation cycle",
+      "a refresher course for officials",
+      "instructors for the officials",
+      "the annual qualification",
+      "accreditation testing"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "instant_replay",
+     "vendor": "Brightmoor Replay Systems",
+     "memos": [
+      "Instant replay rig - install WO 7720",
+      "Instant replay licence"
+     ],
+     "cross_memo": "Instant replay - broadcast integration",
+     "plain": [
+      "the instant replay rig",
+      "instant replay setup",
+      "the instant replay licence"
+     ],
+     "oblique": [
+      "video review",
+      "the review booth hardware",
+      "letting officials rewatch disputed plays",
+      "the disputed-call technology",
+      "playback equipment for officials",
+      "the video review rollout",
+      "second-look technology",
+      "the tool for overturning bad calls",
+      "a review station at each event",
+      "the new playback setup",
+      "video review software",
+      "rewatch capability",
+      "the slow-motion review tech",
+      "disputed-call playback",
+      "video-assisted officiating",
+      "the review tech for officials"
+     ],
+     "low": 17000,
+     "high": 34000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

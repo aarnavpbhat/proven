@@ -1,0 +1,708 @@
+{
+ "slug": "pool-construction-and-service-company",
+ "industry": "pool construction and service company",
+ "entities": [
+  "Bluewater Pool Builders LLC",
+  "Sunspire Aquatics Inc.",
+  "Cobalt Cove Pools & Spa",
+  "Meridian Splash Construction",
+  "Palmetto Blue Pool Service"
+ ],
+ "accounts": [
+  {
+   "name": "Pool Chemicals and Water Treatment",
+   "aliases": [
+    "chemicals",
+    "pool chemicals",
+    "chemical spend",
+    "water treatment",
+    "chemical supplies"
+   ],
+   "narrative": [
+    "Chemicals",
+    "Pool chemicals",
+    "Water treatment"
+   ],
+   "recurring": [
+    {
+     "vendor": "AquaPure Distributors",
+     "base": 14500,
+     "memo": "Liquid chlorine and stabilizer - route trucks"
+    },
+    {
+     "vendor": "ClearFlow Supply Co",
+     "base": 6200,
+     "memo": "Test kits and pH reagents - service dept"
+    },
+    {
+     "vendor": "Oasis Bulk Chemical",
+     "base": 9800,
+     "memo": "Muriatic acid and algaecide - warehouse stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "saltconv",
+     "vendor": "AquaPure Distributors",
+     "memos": [
+      "Saltcell conversion - Harlow HOA salt pallets",
+      "Saltcell conversion - Harlow HOA start-up dosing"
+     ],
+     "cross_memo": "Saltcell conversion - Harlow HOA crane rental",
+     "plain": [
+      "the saltcell conversion",
+      "the Harlow saltcell conversion",
+      "the Harlow HOA saltcell work"
+     ],
+     "oblique": [
+      "switching the clubhouse pools off traditional sanitizer",
+      "the homeowner association retrofit",
+      "a neighborhood's request to go gentler on swimmers",
+      "the changeover at the big residential community",
+      "moving a client base to a different sanitizing method",
+      "the one-off project for the subdivision board",
+      "replacing the old dosing approach at the gated community",
+      "a customer-driven shift in how the water is kept clean",
+      "the amenity center upgrade",
+      "extra product for the neighborhood switch",
+      "the pallets staged for a single large client",
+      "the changeover our biggest association asked for",
+      "a retrofit for the residents' pools",
+      "the new sanitizing system rollout at one development",
+      "what the board of the planned community wanted",
+      "the start-up of a different disinfecting method"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "greenpool",
+     "vendor": "Tidewell Treatment Labs",
+     "memos": [
+      "Greenpool remediation - Foxglove Estates shock treatment",
+      "Greenpool remediation - Foxglove Estates enzyme dosing"
+     ],
+     "cross_memo": "Greenpool remediation - Foxglove Estates debris haul",
+     "plain": [
+      "the greenpool remediation",
+      "the Foxglove greenpool cleanup",
+      "the Foxglove Estates remediation"
+     ],
+     "oblique": [
+      "rescuing the neglected swimming pools after the foreclosures",
+      "a backlog of murky water at the vacant homes",
+      "the cleanup of abandoned backyards",
+      "reviving the algae-choked basins",
+      "getting the bank-owned properties presentable",
+      "the emergency restoration after months of no upkeep",
+      "a bulk job for a real estate liquidator",
+      "bringing back clarity to dozens of stagnant pools",
+      "the neglected-property cleanup contract",
+      "the mass recovery effort at the empty subdivision",
+      "work ordered by the lender before listing",
+      "emergency product for the overgrown sites",
+      "the sweep through the vacant lots",
+      "heavy treatment for abandoned properties",
+      "a one-time restoration push",
+      "what the property manager asked us to fix before the sale"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Fleet Vehicle Operating Costs",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "truck costs",
+    "vehicle expense",
+    "fleet maintenance spend"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Truck costs",
+    "Vehicle expense"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmaster Fuel Cards",
+     "base": 18500,
+     "memo": "Fuel card - service routes and dump trucks"
+    },
+    {
+     "vendor": "Keystone Fleet Repair",
+     "base": 7400,
+     "memo": "Preventive maintenance - route trucks"
+    },
+    {
+     "vendor": "Allied Tire and Brake",
+     "base": 3100,
+     "memo": "Tires and brakes - service vans"
+    }
+   ],
+   "events": [
+    {
+     "key": "hydrohoist",
+     "vendor": "Keystone Fleet Repair",
+     "memos": [
+      "Hydrohoist retrofit - Unit 14 dump bed cylinders",
+      "Hydrohoist retrofit - Unit 15 dump bed seals"
+     ],
+     "cross_memo": "Hydrohoist retrofit - Unit 14 loaner tractor",
+     "plain": [
+      "the hydrohoist retrofit",
+      "the Unit 14 hydrohoist work",
+      "the hydrohoist cylinder retrofit"
+     ],
+     "oblique": [
+      "getting the excavation haulers tipping properly again",
+      "the heavy trucks that wouldn't unload",
+      "repairs after a safety inspector flagged the rigs",
+      "fixing the dumping mechanism on two haulers",
+      "what it took to put the spoil trucks back on site",
+      "the lifting gear that gave out mid-project",
+      "downtime on the big trucks hauling dirt",
+      "an inspection-driven fix for earthmoving trucks",
+      "the mechanical overhaul of the spoil haulers",
+      "a pair of trucks that couldn't tip their loads",
+      "emergency work on the dirt-moving vehicles",
+      "the tipping-bed repairs",
+      "getting the excavation crew's trucks running",
+      "hydraulic trouble on the haulers",
+      "the shop bill for the two trucks that failed inspection",
+      "work on trucks that carry away the pit excavation"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "windshield",
+     "vendor": "Gridline Telematics",
+     "memos": [
+      "Telematics rollout - GPS tracker install 22 vans",
+      "Telematics rollout - dashcam licenses crew leads"
+     ],
+     "cross_memo": "Telematics rollout - tablet mounts for dispatch",
+     "plain": [
+      "the telematics rollout",
+      "the GPS tracker install",
+      "the dashcam telematics rollout"
+     ],
+     "oblique": [
+      "putting tracking gear in every service van",
+      "the insurer's push for driver monitoring",
+      "new cameras watching the road",
+      "equipping the route crews with location devices",
+      "a safety program the carrier requested",
+      "the technology upgrade across the vans",
+      "keeping tabs on where the trucks go",
+      "a response to rising premiums and accident claims",
+      "the dispatch visibility project",
+      "outfitting the vehicles with monitoring hardware",
+      "a one-time installation across the route fleet",
+      "what operations wanted to cut idle time",
+      "the driver-behavior program launch",
+      "hardware and licenses for the new tracking system",
+      "the onboard monitoring initiative",
+      "setup costs for watching our drivers"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Excavation and Earthwork Subcontractors",
+   "aliases": [
+    "excavation",
+    "dig costs",
+    "earthwork subs",
+    "excavation subs",
+    "earthmoving spend"
+   ],
+   "narrative": [
+    "Excavation",
+    "Earthwork subs",
+    "Dig costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bedrock Dig Partners",
+     "base": 28000,
+     "memo": "Pool excavation - active build sites"
+    },
+    {
+     "vendor": "Highline Grading LLC",
+     "base": 12500,
+     "memo": "Site grading and backfill - residential builds"
+    }
+   ],
+   "events": [
+    {
+     "key": "rockchip",
+     "vendor": "Bedrock Dig Partners",
+     "memos": [
+      "Rockchip hammering - Ridgecrest lot 9 granite ledge",
+      "Rockchip hammering - Ridgecrest lot 9 hydraulic breaker"
+     ],
+     "cross_memo": "Rockchip hammering - Ridgecrest lot 9 haul-off",
+     "plain": [
+      "the rockchip hammering",
+      "the Ridgecrest rockchip work",
+      "the lot 9 rockchip hammering"
+     ],
+     "oblique": [
+      "an unexpected stone shelf under the yard",
+      "breaking through what the survey missed",
+      "the hard ground that stalled the project",
+      "extra effort when the soil turned out to be solid",
+      "the change order for unforeseen subsurface conditions",
+      "a job that took weeks longer than quoted",
+      "pounding through the hillside lot",
+      "what we hit a few feet down",
+      "the geological surprise on the hillside build",
+      "the equipment brought in to split the bedrock",
+      "delays and overruns on the hilltop site",
+      "the tough-ground premium",
+      "heavy tools needed for the dense terrain",
+      "the stubborn mountain-side dig",
+      "a site condition no one priced in",
+      "the unforeseen obstruction beneath the future pool"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "dewater",
+     "vendor": "Sump and Surge Pumping",
+     "memos": [
+      "Dewatering crew - Lakeview Terrace high water table",
+      "Dewatering crew - Lakeview Terrace wellpoint system"
+     ],
+     "cross_memo": "Dewatering crew - Lakeview Terrace discharge permit",
+     "plain": [
+      "the dewatering crew",
+      "the Lakeview dewatering work",
+      "the Lakeview Terrace wellpoint system"
+     ],
+     "oblique": [
+      "keeping the hole dry after the storms",
+      "groundwater that kept flooding the pit",
+      "pumping out the site around the clock",
+      "the saturated lot that wouldn't drain",
+      "a rainy stretch that threatened the schedule",
+      "the wet-weather protection for the open dig",
+      "extra equipment to hold back seepage",
+      "the permit and rental package for the soggy lot",
+      "a build stalled by rising subsurface moisture",
+      "draining the work area near the lake",
+      "the around-the-clock pump rentals",
+      "the water problem on the waterfront development",
+      "what we paid to keep the structure from floating",
+      "controlling the flood at the construction pit",
+      "emergency drying of the excavation",
+      "the standing-water headache"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Gunite, Shotcrete and Concrete Materials",
+   "aliases": [
+    "gunite",
+    "shell materials",
+    "concrete",
+    "shotcrete spend",
+    "shell costs"
+   ],
+   "narrative": [
+    "Gunite",
+    "Shell materials",
+    "Concrete"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Ready-Mix",
+     "base": 24000,
+     "memo": "Shotcrete and gunite loads - active shells"
+    },
+    {
+     "vendor": "Steelworks Rebar Supply",
+     "base": 9500,
+     "memo": "Rebar cages and tie wire - active shells"
+    },
+    {
+     "vendor": "Cornerstone Aggregates",
+     "base": 5200,
+     "memo": "Sand and gravel base - build sites"
+    }
+   ],
+   "events": [
+    {
+     "key": "cantilever",
+     "vendor": "Steelworks Rebar Supply",
+     "memos": [
+      "Cantilever coping - Westbrook Estate engineered steel",
+      "Cantilever coping - Westbrook Estate custom forms"
+     ],
+     "cross_memo": "Cantilever coping - Westbrook Estate engineer stamp",
+     "plain": [
+      "the cantilever coping",
+      "the Westbrook cantilever coping",
+      "the Westbrook Estate cantilever job"
+     ],
+     "oblique": [
+      "the overhanging deck edge on the showpiece property",
+      "a design that demanded special reinforcement",
+      "the architect's dramatic ledge",
+      "custom work for a high-end client",
+      "the engineered edge detail on the luxury build",
+      "a signature feature requiring bespoke fabrication",
+      "the extended lip the homeowner insisted on",
+      "structural extras for the estate project",
+      "the unusual shape that needed a licensed review",
+      "a jutting deck design that cost extra steel",
+      "the premium project's special forming work",
+      "the daring perimeter treatment on the mansion pool",
+      "a one-off feature for a wealthy customer",
+      "engineering-heavy additions to a flagship job",
+      "the showy edge treatment",
+      "what the designer drew that nobody could pour normally"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "coldjoint",
+     "vendor": "Titan Structural Repair",
+     "memos": [
+      "Coldjoint remediation - Pinewood Commons shell crack injection",
+      "Coldjoint remediation - Pinewood Commons epoxy sealing"
+     ],
+     "cross_memo": "Coldjoint remediation - Pinewood Commons engineer report",
+     "plain": [
+      "the coldjoint remediation",
+      "the Pinewood coldjoint repair",
+      "the Pinewood Commons remediation"
+     ],
+     "oblique": [
+      "fixing leaks in a finished basin",
+      "the warranty claim on a cracked shell",
+      "repairs after the walls started seeping",
+      "a rework job we owed the customer",
+      "the corrective work on a flawed pour",
+      "a defect that surfaced after the fill",
+      "sealing what failed during pressure testing",
+      "the callback on the completed community pool",
+      "the costly do-over at the condominium",
+      "an expensive fix of our own workmanship",
+      "patching the structure after the inspection failed",
+      "the quality problem on the shared amenity",
+      "leak chasing in the new concrete",
+      "what we had to repair at our own expense",
+      "the unplanned rework of the poured walls",
+      "structural damage control on the townhome project"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Pool Equipment and Plumbing Supplies",
+   "aliases": [
+    "equipment",
+    "pool equipment",
+    "pumps and filters",
+    "plumbing supplies",
+    "equipment purchases"
+   ],
+   "narrative": [
+    "Equipment",
+    "Pool equipment",
+    "Pumps and filters"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hydrotek Wholesale",
+     "base": 16500,
+     "memo": "Pumps, filters and heaters - build inventory"
+    },
+    {
+     "vendor": "PipeWorks Direct",
+     "base": 7800,
+     "memo": "PVC fittings and valves - build and repair stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "variablespeed",
+     "vendor": "Hydrotek Wholesale",
+     "memos": [
+      "Variablespeed mandate - retrofit pump stock 60 units",
+      "Variablespeed mandate - energy rebate paperwork"
+     ],
+     "cross_memo": "Variablespeed mandate - warehouse racking",
+     "plain": [
+      "the variablespeed mandate",
+      "the variablespeed pump stock",
+      "the variablespeed retrofit stock"
+     ],
+     "oblique": [
+      "the new state energy rule for circulation motors",
+      "a regulation forcing us to swap old units",
+      "stocking up before the efficiency law took effect",
+      "the government-required upgrade wave",
+      "legislation that obsoleted our inventory",
+      "bulk purchases ahead of a compliance deadline",
+      "the greener motors every customer now needs",
+      "a rule change that sent us shopping",
+      "preparing for the ban on single-speed models",
+      "the efficiency standard rollout",
+      "a statewide requirement hitting our parts shelves",
+      "the compliance buy",
+      "inventory built to meet the new law",
+      "what the legislature made us carry",
+      "the replacement drive for outdated motors",
+      "the energy-code driven stocking order"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "automation",
+     "vendor": "Smartwave Controls",
+     "memos": [
+      "Smartwave automation - app controller bundles 35 homes",
+      "Smartwave automation - salt and lighting modules"
+     ],
+     "cross_memo": "Smartwave automation - installer training",
+     "plain": [
+      "the Smartwave automation",
+      "the Smartwave controller bundles",
+      "the smartwave automation modules"
+     ],
+     "oblique": [
+      "phone-operated control packages for customers",
+      "the tech upsell that took off",
+      "remote-management gear for new builds",
+      "a popular add-on selling faster than forecast",
+      "the connected-home option",
+      "bundles for homeowners who want to run things from their couch",
+      "the surge in demand for wireless operation",
+      "a product line launched this spring",
+      "stocking the high-margin gadgets",
+      "the smart-home push by sales",
+      "hardware purchased for a marketing promotion",
+      "the premium upgrade package",
+      "what customers asked for in the showroom",
+      "gear tied to the new customer app",
+      "electronics bought ahead of the peak season",
+      "the intelligent control add-on"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Field Labor and Crew Overtime",
+   "aliases": [
+    "field labor",
+    "crew labor",
+    "overtime",
+    "labor costs",
+    "crew overtime spend"
+   ],
+   "narrative": [
+    "Field labor",
+    "Crew labor",
+    "Overtime"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crewline Staffing",
+     "base": 22000,
+     "memo": "Temp laborers - build crews"
+    },
+    {
+     "vendor": "Ironclad Payroll Services",
+     "base": 9000,
+     "memo": "Payroll processing and burden - field staff"
+    }
+   ],
+   "events": [
+    {
+     "key": "blitz",
+     "vendor": "Crewline Staffing",
+     "memos": [
+      "Springblitz surge - weekend crews 12 builds",
+      "Springblitz surge - double-shift plaster team"
+     ],
+     "cross_memo": "Springblitz surge - portable restroom rentals",
+     "plain": [
+      "the springblitz surge",
+      "the springblitz weekend crews",
+      "the springblitz double-shift team"
+     ],
+     "oblique": [
+      "a rush to finish before the season opener",
+      "the push to meet holiday weekend deadlines",
+      "extra hands when too many customers wanted water by May",
+      "a backlog of installations",
+      "the weekend work to catch up",
+      "the premium pay to keep the schedule",
+      "an overbooked calendar we had to honor",
+      "deadline pressure from dozens of open jobs",
+      "people brought in to beat the heat",
+      "pulling crews in early and keeping them late",
+      "the scramble to deliver on promised dates",
+      "the compression of many builds into a few weeks",
+      "extra shifts to satisfy impatient owners",
+      "the seasonal crunch",
+      "a promise to customers that needed muscle",
+      "the stretch where every job was behind"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "osha",
+     "vendor": "SafeSite Compliance Group",
+     "memos": [
+      "Trenchsafety program - OSHA excavation certification 40 staff",
+      "Trenchsafety program - shoring equipment training"
+     ],
+     "cross_memo": "Trenchsafety program - lost-time crew backfill",
+     "plain": [
+      "the trenchsafety program",
+      "the OSHA trenchsafety certification",
+      "the trenchsafety shoring training"
+     ],
+     "oblique": [
+      "classes the whole field team had to attend",
+      "the regulator's demand for credentials",
+      "covering for people sitting in a classroom",
+      "a citation that pushed us to retrain",
+      "the mandatory qualification effort",
+      "wages paid while workers were off the job",
+      "the learning requirement after the inspection",
+      "the credentialing push for crew leads",
+      "what the insurer demanded after the near-miss",
+      "time away from work for new certifications",
+      "a government-driven education program",
+      "the course fees and lost productivity",
+      "making sure nobody gets buried in a dig",
+      "the compliance schooling",
+      "the stand-down for instruction",
+      "requalifying the entire staff"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Permits, Inspections and Engineering",
+   "aliases": [
+    "permits",
+    "permit fees",
+    "inspections",
+    "engineering fees",
+    "permitting spend"
+   ],
+   "narrative": [
+    "Permits",
+    "Permit fees",
+    "Engineering fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "County Building Department",
+     "base": 4800,
+     "memo": "Building permit fees - new pools"
+    },
+    {
+     "vendor": "Sterling Engineering Group",
+     "base": 6500,
+     "memo": "Structural plan review - residential pools"
+    }
+   ],
+   "events": [
+    {
+     "key": "floodplain",
+     "vendor": "Sterling Engineering Group",
+     "memos": [
+      "Floodplain variance - Riverbend lot 4 hydrology study",
+      "Floodplain variance - Riverbend lot 4 elevation survey"
+     ],
+     "cross_memo": "Floodplain variance - Riverbend lot 4 attorney fees",
+     "plain": [
+      "the floodplain variance",
+      "the Riverbend floodplain variance",
+      "the Riverbend hydrology study"
+     ],
+     "oblique": [
+      "approval to build near the creek",
+      "the studies required by the water authority",
+      "a regulatory hurdle on the riverside parcel",
+      "the red tape that nearly killed the contract",
+      "special permission for a risky site",
+      "proof the pool won't worsen flooding",
+      "what the county demanded before allowing construction",
+      "lawyers and surveyors for a difficult property",
+      "the paperwork battle on the low-lying lot",
+      "an exception we had to request",
+      "costs of getting the green light for the waterfront job",
+      "consultants hired to satisfy the county",
+      "the approvals saga",
+      "the process of convincing officials to let us dig",
+      "the drainage justification package",
+      "expert reports on high-water risk"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "fencecode",
+     "vendor": "Barrier Code Consultants",
+     "memos": [
+      "Fencecode audit - 28 open jobs barrier compliance",
+      "Fencecode audit - gate latch redesign review"
+     ],
+     "cross_memo": "Fencecode audit - re-inspection fees",
+     "plain": [
+      "the fencecode audit",
+      "the fencecode barrier compliance",
+      "the fencecode gate latch review"
+     ],
+     "oblique": [
+      "the child-safety sweep of in-progress projects",
+      "a rule change on enclosures around backyards",
+      "a review of every unfinished site against the new standard",
+      "the consultant we hired after the municipality updated requirements",
+      "making sure no one can wander into a pool",
+      "paying for second looks from inspectors",
+      "the new protective-barrier law",
+      "a safety audit prompted by a drowning near us",
+      "redesign work for self-closing hardware",
+      "the city's tougher requirements on enclosures",
+      "proving each open job meets the revised ordinance",
+      "re-checking dozens of builds",
+      "retroactive compliance work",
+      "the outside reviewer brought in for the safety push",
+      "what the new municipal ordinance cost us",
+      "verifying that every yard is secured"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

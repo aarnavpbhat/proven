@@ -1,0 +1,830 @@
+{
+ "slug": "commercial-printing-press",
+ "industry": "commercial printing press",
+ "entities": [
+  "Inkwell Ridge Press",
+  "Calloway Offset Graphics",
+  "Brightmark Print Works",
+  "Harbor Lane Lithographers",
+  "Summit Plate & Press"
+ ],
+ "accounts": [
+  {
+   "name": "Paper & Substrate Purchases",
+   "aliases": [
+    "paper",
+    "paper costs",
+    "paper stock spend",
+    "substrate purchases",
+    "stock purchases"
+   ],
+   "narrative": [
+    "Paper costs",
+    "Paper stock spend",
+    "Substrate purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northfield Paper Merchants",
+     "base": 28000,
+     "memo": "Coated sheet stock - monthly standing order"
+    },
+    {
+     "vendor": "Greyhound Board Supply",
+     "base": 14500,
+     "memo": "Cover board and folding carton stock"
+    },
+    {
+     "vendor": "Larkspur Envelope Converters",
+     "base": 6200,
+     "memo": "Envelope blanks PO 44012"
+    }
+   ],
+   "events": [
+    {
+     "key": "cottonstock",
+     "vendor": "Northfield Paper Merchants",
+     "memos": [
+      "Cotton rag stock - wedding suite order WO 88231",
+      "Cotton rag stock - premium rush shipment"
+     ],
+     "cross_memo": "Cotton rag stock - freight surcharge",
+     "plain": [
+      "the cotton rag stock order",
+      "the cotton rag stock shipment",
+      "the cotton rag stock purchase"
+     ],
+     "oblique": [
+      "a luxury invitation job for a hotel client",
+      "the high-end stationery commission",
+      "a boutique client's textured sheet request",
+      "premium wedding work that came in late",
+      "specialty papers ordered on short notice",
+      "the upscale social stationery run",
+      "one demanding customer's paper specification",
+      "pricey sheets sourced from overseas mills",
+      "the prestige mailing for a gala",
+      "a wedding planner's rush request",
+      "heavyweight tactile sheets for a showpiece job",
+      "the handmade-feel paper we had to special order",
+      "what the art director insisted on",
+      "a one-off bridal commission",
+      "expensive imported sheets for a single client",
+      "the fancy invitation project"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "recycledpivot",
+     "vendor": "Evergreen Pulp Partners",
+     "memos": [
+      "Post-consumer recycled web rolls - retailer mandate PO 51770",
+      "Post-consumer recycled web rolls - FSC audit lot"
+     ],
+     "cross_memo": "Post-consumer recycled web rolls - cert filing",
+     "plain": [
+      "the post-consumer recycled web rolls",
+      "the recycled web rolls mandate",
+      "the post-consumer recycled web order"
+     ],
+     "oblique": [
+      "a grocery chain's sustainability requirement",
+      "switching a flyer program to greener sheets",
+      "the eco-friendly circular contract",
+      "what the retail customer demanded for its catalog",
+      "environmentally certified inventory",
+      "the green sourcing commitment",
+      "new stock to satisfy a corporate pledge",
+      "a client's waste-reduction policy",
+      "the sustainable weekly insert program",
+      "greener material for the supermarket account",
+      "a third-party certification requirement",
+      "changing the material mix for one large buyer",
+      "the climate-friendly supply switch",
+      "replacing our usual virgin fiber",
+      "eco certified weekly circulars",
+      "the sustainability-driven material change"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Ink, Coatings & Chemistry",
+   "aliases": [
+    "ink",
+    "ink costs",
+    "pressroom chemistry",
+    "coatings spend",
+    "ink and coatings"
+   ],
+   "narrative": [
+    "Ink costs",
+    "Pressroom chemistry",
+    "Coatings spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pigment Valley Inks",
+     "base": 17500,
+     "memo": "Process ink CMYK drums"
+    },
+    {
+     "vendor": "Fountain Solutions Co",
+     "base": 4800,
+     "memo": "Fountain solution and alcohol substitute"
+    },
+    {
+     "vendor": "ClearGloss Coatings",
+     "base": 7300,
+     "memo": "Aqueous coating totes"
+    }
+   ],
+   "events": [
+    {
+     "key": "metallicink",
+     "vendor": "Pigment Valley Inks",
+     "memos": [
+      "Metallic gold ink - foil-look special WO 90417",
+      "Metallic gold ink - extra press wash-ups"
+     ],
+     "cross_memo": "Metallic gold ink - expedited freight",
+     "plain": [
+      "the metallic gold ink job",
+      "the metallic gold ink run",
+      "the metallic gold ink purchase"
+     ],
+     "oblique": [
+      "a cosmetics client's shimmering packaging",
+      "a shiny finish for a perfume carton",
+      "the glittery brand colour a customer insisted on",
+      "sparkle effects on a holiday campaign",
+      "an expensive shiny colour for one account",
+      "the glam packaging order",
+      "a luxury brand's signature shade",
+      "special lustrous pigment sourced for one client",
+      "the bling on a boxed gift set",
+      "a prestige label that needed a precious look",
+      "what the beauty brand specified",
+      "a premium holiday promotion",
+      "the reflective brand shade",
+      "the costly shimmer effect",
+      "an upmarket carton program",
+      "a one-time deluxe appearance request"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "uvspill",
+     "vendor": "Halogen Cure Systems",
+     "memos": [
+      "UV-curable ink reorder - lamp retrofit trial",
+      "UV-curable ink reorder - rejected lot replacement"
+     ],
+     "cross_memo": "UV-curable ink reorder - hazmat disposal",
+     "plain": [
+      "the UV-curable ink reorder",
+      "the UV-curable ink retrofit trial",
+      "the UV-curable ink replacement lot"
+     ],
+     "oblique": [
+      "the quick-dry trial on the new line",
+      "a trial of instant-hardening technology",
+      "replacing a batch that failed quality checks",
+      "a test of faster turnaround chemistry",
+      "the pilot for lighter-footprint drying",
+      "a supplier mistake we had to redo",
+      "stuff that cured wrong and had to be replaced",
+      "experimentation with next-generation drying",
+      "a pilot program on one press",
+      "the first run of the faster-drying process",
+      "re-buying a faulty shipment",
+      "the new hardening method we tested",
+      "what we did after the bad delivery",
+      "a technology evaluation at the plant",
+      "fresh product after the lot was refused",
+      "the pilot that ate budget"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Press Maintenance & Repairs",
+   "aliases": [
+    "press maintenance",
+    "press repairs",
+    "maintenance",
+    "press upkeep",
+    "machine repair spend"
+   ],
+   "narrative": [
+    "Press maintenance",
+    "Press repairs",
+    "Machine repair spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Heidelrock Service Group",
+     "base": 12500,
+     "memo": "Service contract - sheetfed presses"
+    },
+    {
+     "vendor": "Rollerworks Reconditioning",
+     "base": 5400,
+     "memo": "Roller recovering and blanket supply"
+    },
+    {
+     "vendor": "Axle & Gear Industrial",
+     "base": 3100,
+     "memo": "Spare parts PO 60233"
+    }
+   ],
+   "events": [
+    {
+     "key": "gripperbar",
+     "vendor": "Heidelrock Service Group",
+     "memos": [
+      "Gripper bar rebuild - Press 3 WO 70518",
+      "Gripper bar rebuild - alignment recalibration"
+     ],
+     "cross_memo": "Gripper bar rebuild - crane rental",
+     "plain": [
+      "the gripper bar rebuild",
+      "the gripper bar recalibration",
+      "the gripper bar rebuild on Press 3"
+     ],
+     "oblique": [
+      "getting the number three machine feeding sheets again",
+      "fixing the mechanism that kept dropping paper",
+      "the breakdown that idled our flagship line",
+      "an unplanned shutdown of one unit",
+      "what went wrong with the sheet handling",
+      "the failure that caused misregistered jobs",
+      "the emergency fix on the older line",
+      "an overhaul prompted by repeated jams",
+      "the engineer's multi-day visit",
+      "the machine that wouldn't hold sheets steady",
+      "restoring a unit after a crash",
+      "the costly mid-month stoppage",
+      "work on the equipment that kept wasting paper",
+      "a major mechanical fix",
+      "the technician call-out that ran long",
+      "repair of the paper-carrying components"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "dampener",
+     "vendor": "Aquaflow Press Technics",
+     "memos": [
+      "Dampening system replacement - Press 5 PO 71102",
+      "Dampening system replacement - install labor"
+     ],
+     "cross_memo": "Dampening system replacement - water loop piping",
+     "plain": [
+      "the dampening system replacement",
+      "the dampening system install",
+      "the dampening system replacement on Press 5"
+     ],
+     "oblique": [
+      "swapping out the moisture delivery on the fifth unit",
+      "the new water-control equipment",
+      "what replaced the worn-out wetting hardware",
+      "an upgrade to fix streaky output",
+      "the retrofit to stop scumming problems",
+      "a component change on the older web line",
+      "the installation crew's week on site",
+      "the new unit that handles dampness",
+      "a modernization of one press section",
+      "fixing the issue behind poor print density",
+      "a capital-style replacement expensed through repairs",
+      "the equipment swap on the fifth line",
+      "dealing with ghosting on long runs",
+      "the planned change-out of ageing hardware",
+      "a vendor-installed upgrade",
+      "the water management refit"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Prepress & Plate Costs",
+   "aliases": [
+    "prepress",
+    "plates",
+    "plate costs",
+    "prepress spend",
+    "platemaking"
+   ],
+   "narrative": [
+    "Prepress",
+    "Plate costs",
+    "Platemaking"
+   ],
+   "recurring": [
+    {
+     "vendor": "Thermalite Plate Supply",
+     "base": 9800,
+     "memo": "CTP plates monthly"
+    },
+    {
+     "vendor": "Proofline Digital",
+     "base": 3500,
+     "memo": "Contract proofs and color match"
+    },
+    {
+     "vendor": "Chromatic Imaging Software",
+     "base": 2200,
+     "memo": "RIP maintenance license"
+    }
+   ],
+   "events": [
+    {
+     "key": "flexoconversion",
+     "vendor": "Thermalite Plate Supply",
+     "memos": [
+      "Photopolymer relief plates - label conversion WO 82004",
+      "Photopolymer relief plates - trial sets"
+     ],
+     "cross_memo": "Photopolymer relief plates - mounting tape",
+     "plain": [
+      "the photopolymer relief plates",
+      "the photopolymer relief conversion",
+      "the photopolymer relief trial sets"
+     ],
+     "oblique": [
+      "moving a customer's labels to our narrow web line",
+      "a new product category we're testing",
+      "the pilot for adhesive-backed work",
+      "bringing a client's sticker program in-house",
+      "branching into a different printing method",
+      "the sample sets for the packaging prospect",
+      "tooling for the first non-sheet contract",
+      "work to win the beverage account",
+      "start-up expense on the label venture",
+      "the shift from flat sheets to rolls for one buyer",
+      "cylinders and tooling for a new offering",
+      "the experimental line of business",
+      "one-time tooling for a fresh customer",
+      "what we sunk into the sticker pilot",
+      "preparation for a new market",
+      "a diversification effort"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "colorcalib",
+     "vendor": "Spectrum Standards Lab",
+     "memos": [
+      "G7 certification - spectrophotometer calibration PO 83310",
+      "G7 certification - consultant onsite"
+     ],
+     "cross_memo": "G7 certification - training seats",
+     "plain": [
+      "the G7 certification",
+      "the G7 spectrophotometer calibration",
+      "the G7 certification consultant"
+     ],
+     "oblique": [
+      "an audit by a major brand's quality team",
+      "earning the badge our biggest buyer requires",
+      "the outside expert's two-day visit",
+      "proving our colour consistency to a customer",
+      "a requirement for staying on a vendor list",
+      "accreditation work before a contract renewal",
+      "the standards body's inspection",
+      "what a retailer demanded before awarding work",
+      "tuning instruments so hues match across plants",
+      "a one-off quality compliance push",
+      "the credential we needed to keep the account",
+      "measurement equipment adjustments",
+      "external review of colour accuracy",
+      "the credential drive",
+      "the process validation project",
+      "customer-mandated quality paperwork"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Bindery & Finishing",
+   "aliases": [
+    "bindery",
+    "finishing",
+    "bindery costs",
+    "finishing spend",
+    "post-press"
+   ],
+   "narrative": [
+    "Bindery costs",
+    "Finishing spend",
+    "Post-press"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stitchline Wire & Glue",
+     "base": 6400,
+     "memo": "Binding wire PUR adhesive supplies"
+    },
+    {
+     "vendor": "Crease & Fold Outsourcing",
+     "base": 8900,
+     "memo": "Overflow folding and trimming"
+    },
+    {
+     "vendor": "Pallet Pack Wrap Supply",
+     "base": 2600,
+     "memo": "Shrink film and bands"
+    }
+   ],
+   "events": [
+    {
+     "key": "diecutrush",
+     "vendor": "Crease & Fold Outsourcing",
+     "memos": [
+      "Custom die cutting - pop-up display WO 91550",
+      "Custom die cutting - weekend overtime shift"
+     ],
+     "cross_memo": "Custom die cutting - steel rule dies",
+     "plain": [
+      "the custom die cutting",
+      "the custom die cutting weekend shift",
+      "the custom die cutting display order"
+     ],
+     "oblique": [
+      "a retail display rush before a launch",
+      "shapes cut for a store promotion",
+      "the in-store standee order",
+      "overnight work on a point-of-sale deadline",
+      "an odd-shaped promotional piece",
+      "extra shifts to ship displays on time",
+      "cardboard stand-ups for a product release",
+      "the shop-floor merchandising job",
+      "irregular contours for a cereal brand",
+      "an urgent shelf-talker program",
+      "weekend crews finishing a retail rollout",
+      "the three-dimensional marketing pieces",
+      "an expedited promotional campaign",
+      "a client's launch-week deadline",
+      "cut-out designs nobody anticipated",
+      "the seasonal retail display rush"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "perfectbind",
+     "vendor": "Spine Masters Ltd",
+     "memos": [
+      "Perfect binding line rental - textbook run PO 92118",
+      "Perfect binding line rental - operator contract"
+     ],
+     "cross_memo": "Perfect binding line rental - transport",
+     "plain": [
+      "the perfect binding line rental",
+      "the perfect binding textbook run",
+      "the perfect binding operator contract"
+     ],
+     "oblique": [
+      "a school district's reading material order",
+      "a publisher's fall semester volume",
+      "books we couldn't assemble ourselves",
+      "a borrowed machine for a large print order",
+      "the academic title press run",
+      "outside capacity for hardcopy volumes",
+      "a university press contract",
+      "what we rented to meet the back-to-school deadline",
+      "temporary equipment and crew for one publisher",
+      "the spine-glued paperback program",
+      "our own line being booked solid",
+      "a seasonal surge in educational titles",
+      "additional hands for the curriculum job",
+      "contract help for a large book project",
+      "an overflow of bound volumes",
+      "the once-a-year learning materials crunch"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Freight, Delivery & Mailing",
+   "aliases": [
+    "freight",
+    "delivery",
+    "shipping costs",
+    "mailing spend",
+    "freight and delivery"
+   ],
+   "narrative": [
+    "Freight costs",
+    "Delivery spend",
+    "Mailing spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Redline Freight Carriers",
+     "base": 15200,
+     "memo": "LTL pallets outbound"
+    },
+    {
+     "vendor": "MetroCourier Express",
+     "base": 4100,
+     "memo": "Same-day proofs and rush runs"
+    },
+    {
+     "vendor": "Postal Presort Services",
+     "base": 9300,
+     "memo": "Presort and postage deposits"
+    }
+   ],
+   "events": [
+    {
+     "key": "directmail",
+     "vendor": "Postal Presort Services",
+     "memos": [
+      "Bulk mail drop - political mailer 2.4M pieces PO 97001",
+      "Bulk mail drop - address hygiene run"
+     ],
+     "cross_memo": "Bulk mail drop - variable data programming",
+     "plain": [
+      "the bulk mail drop",
+      "the bulk mail political mailer",
+      "the bulk mail address hygiene run"
+     ],
+     "oblique": [
+      "the election season campaign pieces",
+      "a candidate's voter outreach",
+      "the million-piece push before the vote",
+      "a large advocacy campaign",
+      "one big postal wave for a committee",
+      "ballot-season literature",
+      "an organization's constituent letters",
+      "the surge in postcard volume",
+      "what the campaign headquarters ordered",
+      "paid outreach to households",
+      "an unusually large postage deposit",
+      "the get-out-the-vote project",
+      "a single enormous distribution",
+      "the seasonal political work",
+      "residential saturation programs",
+      "a one-time grassroots effort"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "expeditedair",
+     "vendor": "SkyBridge Air Cargo",
+     "memos": [
+      "Air freight charter - trade show banners WO 98422",
+      "Air freight charter - customs brokerage"
+     ],
+     "cross_memo": "Air freight charter - overweight pallet fee",
+     "plain": [
+      "the air freight charter",
+      "the air freight trade show banners",
+      "the air freight customs brokerage"
+     ],
+     "oblique": [
+      "getting exhibit graphics to the convention on time",
+      "a missed deadline we paid to fix",
+      "the flight we booked for a client's expo",
+      "last-minute overseas event materials",
+      "flying product across the ocean",
+      "rescuing a promotion headed for a conference",
+      "a customer's convention booth needs",
+      "emergency handling after a production delay",
+      "what we spent to avoid a contract penalty",
+      "the airborne shipment of signage",
+      "a decision to skip ground transport",
+      "the show-floor graphics emergency",
+      "urgent international delivery",
+      "paying premium rates to hit an event date",
+      "a client's exhibition in another country",
+      "the rush to get displays across borders"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Pressroom Labor & Contract Staff",
+   "aliases": [
+    "pressroom labor",
+    "labor costs",
+    "contract staff",
+    "overtime",
+    "temp labor spend"
+   ],
+   "narrative": [
+    "Pressroom labor",
+    "Contract staff",
+    "Temp labor spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shiftworks Staffing",
+     "base": 18500,
+     "memo": "Temp press assistants weekly billing"
+    },
+    {
+     "vendor": "Journeyman Trades Union Benefits",
+     "base": 11200,
+     "memo": "Union health and pension remittance"
+    },
+    {
+     "vendor": "SafeHands Training Co",
+     "base": 1800,
+     "memo": "Operator safety refreshers"
+    }
+   ],
+   "events": [
+    {
+     "key": "nightshift",
+     "vendor": "Shiftworks Staffing",
+     "memos": [
+      "Third shift crew - catalog season ramp PO 99103",
+      "Third shift crew - premium differential"
+     ],
+     "cross_memo": "Third shift crew - security guard coverage",
+     "plain": [
+      "the third shift crew",
+      "the third shift catalog ramp",
+      "the third shift premium differential"
+     ],
+     "oblique": [
+      "running the plant around the clock for a retail client",
+      "the holiday catalog deadline crunch",
+      "extra people overnight for peak demand",
+      "a surge of department store work",
+      "staffing for the busiest weeks of the year",
+      "the late-hours push to finish mailers",
+      "additional hands before the seasonal deadline",
+      "what we paid to keep presses running while others slept",
+      "a client's tight in-home date",
+      "the peak-season labor premium",
+      "the overnight workforce we hired for the rush",
+      "the autumn production spike",
+      "the pre-holiday print blitz",
+      "bringing in people for the late-hours work",
+      "the seasonal workforce expansion",
+      "covering a mountain of retail orders"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "colorcrew",
+     "vendor": "Apex Technical Recruiters",
+     "memos": [
+      "Press operator placement - retirement backfill PO 99440",
+      "Press operator placement - recruiter fee"
+     ],
+     "cross_memo": "Press operator placement - relocation stipend",
+     "plain": [
+      "the press operator placement",
+      "the press operator retirement backfill",
+      "the press operator recruiter fee"
+     ],
+     "oblique": [
+      "replacing our longtime veteran who left",
+      "finding someone to fill an experienced pressman's shoes",
+      "the search that took months",
+      "a fee for locating skilled talent",
+      "succession planning at the plant",
+      "hiring a specialist from out of state",
+      "the departure of a senior employee",
+      "what the headhunters charged",
+      "bringing a replacement on board",
+      "a hard-to-find skillset",
+      "the agency commission for a single hire",
+      "covering a vacancy on the main line",
+      "an experienced hand from another city",
+      "the cost of finding a new lead",
+      "a retirement that left a gap",
+      "the talent acquisition push"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Facility Utilities & Compliance",
+   "aliases": [
+    "utilities",
+    "plant utilities",
+    "compliance",
+    "environmental compliance",
+    "facility costs"
+   ],
+   "narrative": [
+    "Plant utilities",
+    "Compliance costs",
+    "Facility costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gridline Power & Light",
+     "base": 19800,
+     "memo": "Electric service - plant meter"
+    },
+    {
+     "vendor": "CleanAir Solvent Recovery",
+     "base": 3600,
+     "memo": "Solvent and waste pickup"
+    },
+    {
+     "vendor": "Citywater Utility",
+     "base": 2400,
+     "memo": "Water and sewer"
+    }
+   ],
+   "events": [
+    {
+     "key": "voccontrol",
+     "vendor": "CleanAir Solvent Recovery",
+     "memos": [
+      "Thermal oxidizer service - emissions permit renewal WO 101221",
+      "Thermal oxidizer service - stack testing"
+     ],
+     "cross_memo": "Thermal oxidizer service - permit filing fee",
+     "plain": [
+      "the thermal oxidizer service",
+      "the thermal oxidizer emissions permit",
+      "the thermal oxidizer stack testing"
+     ],
+     "oblique": [
+      "the regulator's annual air quality review",
+      "keeping our operating licence current",
+      "an inspector's required measurements",
+      "demonstrating we stay within pollution limits",
+      "environmental paperwork and testing",
+      "the state agency's mandated check",
+      "what we paid to remain legally allowed to run",
+      "a fumes-related obligation",
+      "the visit from the environmental authority",
+      "the cost of proving clean exhaust",
+      "pollution-control equipment upkeep",
+      "a renewal that cannot be skipped",
+      "the government-required emissions check",
+      "the annual clean-air obligation",
+      "monitoring of what leaves the roof",
+      "the permit-driven expense"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "hvacchill",
+     "vendor": "CoolStream Mechanical",
+     "memos": [
+      "Pressroom chiller replacement - humidity control PO 102005",
+      "Pressroom chiller replacement - crane lift"
+     ],
+     "cross_memo": "Pressroom chiller replacement - electrical upgrade",
+     "plain": [
+      "the pressroom chiller replacement",
+      "the pressroom chiller humidity control",
+      "the pressroom chiller crane lift"
+     ],
+     "oblique": [
+      "keeping the plant's air at the right dampness",
+      "summer heat that was warping sheets",
+      "the cooling unit that finally gave out",
+      "stabilizing conditions so paper behaves",
+      "a mechanical failure during a heatwave",
+      "climate equipment that reached end of life",
+      "the new unit hoisted onto the roof",
+      "fixing the temperature swings on the floor",
+      "the air handling emergency",
+      "what we spent so paper stops curling",
+      "a large mechanical contractor's invoice",
+      "environmental control for the production hall",
+      "replacement of ageing refrigeration plant",
+      "the building's cooling system",
+      "stopping static and curl problems",
+      "a breakdown at the peak of summer"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

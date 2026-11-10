@@ -1,0 +1,810 @@
+{
+ "slug": "security-guard-company",
+ "industry": "security guard company",
+ "entities": [
+  "Ironclad Protective Services",
+  "Bluewater Guard Group",
+  "Meridian Patrol & Security",
+  "Falconridge Security Partners",
+  "Northgate Sentinel Corp"
+ ],
+ "accounts": [
+  {
+   "name": "Guard Uniforms & Equipment",
+   "aliases": [
+    "uniforms",
+    "guard gear",
+    "uniform and equipment spend",
+    "duty gear",
+    "equipment costs"
+   ],
+   "narrative": [
+    "Uniforms",
+    "Guard gear",
+    "Duty gear"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tactical Threads Supply",
+     "base": 6200,
+     "memo": "Monthly uniform shirts and trousers"
+    },
+    {
+     "vendor": "Patrolline Equipment Co",
+     "base": 3400,
+     "memo": "Flashlights, radios and belts replenishment"
+    }
+   ],
+   "events": [
+    {
+     "key": "bodyarmor",
+     "vendor": "Tactical Threads Supply",
+     "memos": [
+      "Ballistic vest order — Level IIIA panels",
+      "Ballistic vest order — custom fitting"
+     ],
+     "cross_memo": "Ballistic vest order — training stipend",
+     "plain": [
+      "the ballistic vest order",
+      "the ballistic vest purchase",
+      "the ballistic vest panels"
+     ],
+     "oblique": [
+      "protective armor for the armed team",
+      "the safety upgrade for the night shift",
+      "stopping-power protection for officers",
+      "equipment the bank client insisted on",
+      "a contract requirement for armed posts",
+      "new torso protection",
+      "gear for the armored transport detail",
+      "the contractual safety refresh",
+      "outfitting the high-risk sites",
+      "what the insurer wanted on the guards",
+      "the protective kit overhaul",
+      "replacing expired body protection",
+      "a five-year renewal cycle coming due",
+      "shielding for officers on cash runs",
+      "the client-mandated protection upgrade",
+      "new defensive wear for the armed roster"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "stormgear",
+     "vendor": "Harborlight Outfitters",
+     "memos": [
+      "Foul weather parkas — hurricane season",
+      "Foul weather parkas — rain boots and ponchos"
+     ],
+     "cross_memo": "Foul weather parkas — storm overtime",
+     "plain": [
+      "the foul weather parkas",
+      "the foul weather gear order",
+      "the foul weather outfitting"
+     ],
+     "oblique": [
+      "outerwear for the coastal posts",
+      "protection against the seasonal downpours",
+      "kit for guards standing outside all night",
+      "a rush buy before the big blow",
+      "clothing for the waterfront sites",
+      "keeping officers dry on exposed posts",
+      "the seasonal clothing top-up",
+      "a reaction to the forecast",
+      "extra layers for the dock contract",
+      "what the harbor client requested",
+      "gear for the open-air patrols",
+      "staying on post during bad conditions",
+      "the coastal weather preparation",
+      "warm and waterproof outfitting",
+      "a pre-winter wardrobe push",
+      "outfitting the outdoor teams"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Patrol Vehicle Fleet",
+   "aliases": [
+    "fleet",
+    "patrol vehicles",
+    "vehicle costs",
+    "fleet maintenance spend",
+    "patrol cars"
+   ],
+   "narrative": [
+    "Fleet",
+    "Vehicle costs",
+    "Patrol cars"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crestview Fleet Fuel",
+     "base": 9800,
+     "memo": "Fuel cards for patrol vehicles"
+    },
+    {
+     "vendor": "Allied Auto Care",
+     "base": 4100,
+     "memo": "Routine servicing and oil changes"
+    },
+    {
+     "vendor": "Summit Vehicle Leasing",
+     "base": 12500,
+     "memo": "Monthly lease payments on patrol SUVs"
+    }
+   ],
+   "events": [
+    {
+     "key": "lightbars",
+     "vendor": "Allied Auto Care",
+     "memos": [
+      "Emergency lightbar retrofit — LED strips",
+      "Emergency lightbar retrofit — wiring labor"
+     ],
+     "cross_memo": "Emergency lightbar retrofit — permit filing",
+     "plain": [
+      "the emergency lightbar retrofit",
+      "the lightbar retrofit work",
+      "the emergency lightbar project"
+     ],
+     "oblique": [
+      "making the cars more visible at night",
+      "a flashier look for the marked units",
+      "what the municipality now requires",
+      "upgrading the roof equipment",
+      "getting the vehicles compliant with the new ordinance",
+      "brighter warning signals",
+      "a visibility improvement across the vehicles",
+      "the city's new rules on marked cars",
+      "modernizing the overhead signaling",
+      "work done at the shop on every unit",
+      "a regulatory fix on the roofs",
+      "the visible-presence initiative",
+      "keeping our cars street legal",
+      "an enhancement requested by the mall client",
+      "swapping out old amber units",
+      "the compliance retrofit"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "hailclaim",
+     "vendor": "Redstone Collision Works",
+     "memos": [
+      "Hail damage repairs — body panel replacement",
+      "Hail damage repairs — windshield glass"
+     ],
+     "cross_memo": "Hail damage repairs — loaner rental",
+     "plain": [
+      "the hail damage repairs",
+      "the hail damage claim",
+      "the hail damage cleanup"
+     ],
+     "oblique": [
+      "the freak storm that dented our cars",
+      "pounding from falling ice",
+      "an act of weather hitting the parking lot",
+      "getting the dinged units road ready",
+      "fixing cosmetic and structural dings",
+      "the afternoon the sky turned on us",
+      "an insurance deductible event",
+      "the aftermath of the severe weather",
+      "bodywork after the overnight storm",
+      "units pulled off the road for panel work",
+      "restoring the damaged cruisers",
+      "the storm cleanup at the lot",
+      "vehicles out of service for body shop time",
+      "repairing what nature did to the fleet",
+      "dent removal across a dozen cars",
+      "the unlucky Tuesday afternoon"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Guard Training & Certification",
+   "aliases": [
+    "training",
+    "certifications",
+    "guard training",
+    "licensing and training spend",
+    "training costs"
+   ],
+   "narrative": [
+    "Training",
+    "Certifications",
+    "Guard training"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinnacle Safety Institute",
+     "base": 5600,
+     "memo": "Monthly CPR and first aid classes"
+    },
+    {
+     "vendor": "State Licensing Bureau",
+     "base": 2300,
+     "memo": "Guard card renewals and fingerprinting"
+    }
+   ],
+   "events": [
+    {
+     "key": "firearms",
+     "vendor": "Pinnacle Safety Institute",
+     "memos": [
+      "Firearms qualification range — ammunition",
+      "Firearms qualification range — instructor time"
+     ],
+     "cross_memo": "Firearms qualification range — overtime backfill",
+     "plain": [
+      "the firearms qualification range",
+      "the firearms qualification session",
+      "the firearms qualification requirement"
+     ],
+     "oblique": [
+      "live-fire testing for armed officers",
+      "annual proof of marksmanship",
+      "the shooting requirement for the armed roster",
+      "time on the outdoor course",
+      "passing the state's skill standards",
+      "keeping weapons permits current",
+      "the yearly shooting recertification",
+      "what the armed posts need before renewal",
+      "an obligation for officers who carry",
+      "the sidearm proficiency exam",
+      "getting the whole armed team cleared",
+      "the gun-handling check",
+      "target practice mandated by the regulator",
+      "the annual weapons assessment",
+      "range day for the carry-permit holders",
+      "the sharpshooting exam cycle"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "deescalate",
+     "vendor": "Calmpoint Learning Group",
+     "memos": [
+      "Conflict de-escalation workshop — facilitator fee",
+      "Conflict de-escalation workshop — course materials"
+     ],
+     "cross_memo": "Conflict de-escalation workshop — shift coverage",
+     "plain": [
+      "the conflict de-escalation workshop",
+      "the conflict de-escalation course",
+      "the conflict de-escalation program"
+     ],
+     "oblique": [
+      "teaching officers to defuse tense situations",
+      "soft-skills coaching after the complaint",
+      "a response to the incident at the stadium",
+      "a client demand for gentler guard behavior",
+      "learning to talk people down",
+      "customer-relations coaching for the front desk teams",
+      "the people-handling seminar",
+      "what the hospital contract asked us to do",
+      "an effort to reduce use-of-force reports",
+      "classroom time off the schedule",
+      "a one-time all-hands session",
+      "calm communication coaching",
+      "the behavioral skills push",
+      "a reputation repair effort",
+      "verbal judo for the whole roster",
+      "the outreach after the bad press"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Alarm Monitoring & Technology",
+   "aliases": [
+    "monitoring",
+    "alarm monitoring",
+    "security tech",
+    "technology spend",
+    "monitoring center costs"
+   ],
+   "narrative": [
+    "Monitoring",
+    "Alarm monitoring",
+    "Security tech"
+   ],
+   "recurring": [
+    {
+     "vendor": "Beacon Central Station",
+     "base": 14200,
+     "memo": "Monthly 24/7 alarm monitoring contract"
+    },
+    {
+     "vendor": "Datasure Cloud Video",
+     "base": 7800,
+     "memo": "Cloud video storage subscription"
+    },
+    {
+     "vendor": "Linkwave Telecom",
+     "base": 2900,
+     "memo": "Dispatch line and cellular data plans"
+    }
+   ],
+   "events": [
+    {
+     "key": "camerarefresh",
+     "vendor": "Datasure Cloud Video",
+     "memos": [
+      "Thermal camera refresh — hardware units",
+      "Thermal camera refresh — install labor"
+     ],
+     "cross_memo": "Thermal camera refresh — scaffold rental",
+     "plain": [
+      "the thermal camera refresh",
+      "the thermal camera hardware",
+      "the thermal camera install"
+     ],
+     "oblique": [
+      "seeing intruders in total darkness",
+      "new eyes on the perimeter",
+      "modernizing the night surveillance",
+      "a pitch the warehouse client accepted",
+      "heat-sensing devices going up on poles",
+      "the upgraded perimeter sensing",
+      "gear that spots people after sunset",
+      "replacing the old grainy video setup",
+      "a capital project at the distribution yard",
+      "improved after-hours detection",
+      "the client-funded surveillance upgrade",
+      "tech installed at the fence line",
+      "a response to repeated break-ins",
+      "the visual detection overhaul",
+      "more reliable nighttime monitoring",
+      "what the property manager asked for after the theft"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "relocate",
+     "vendor": "Vaultline Data Migrations",
+     "memos": [
+      "Dispatch console migration — server cutover",
+      "Dispatch console migration — consultant days"
+     ],
+     "cross_memo": "Dispatch console migration — duplicate licensing",
+     "plain": [
+      "the dispatch console migration",
+      "the dispatch console cutover",
+      "the dispatch console move"
+     ],
+     "oblique": [
+      "moving operations to the new control room",
+      "switching the call-taking platform",
+      "a changeover that ran in parallel for weeks",
+      "retiring the old command software",
+      "relocating the nerve center",
+      "the transition off legacy systems",
+      "the overnight switchover",
+      "a project the operations director championed",
+      "the platform replacement",
+      "consultants helping with the handoff",
+      "a technology transition at headquarters",
+      "double paying while both systems ran",
+      "what the vendor sunset forced on us",
+      "the new hub going live",
+      "upgrading how calls get routed",
+      "the big back-office cutover"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Insurance & Bonding",
+   "aliases": [
+    "insurance",
+    "bonding",
+    "liability coverage",
+    "insurance costs",
+    "premiums"
+   ],
+   "narrative": [
+    "Insurance",
+    "Bonding",
+    "Premiums"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shieldpoint Underwriters",
+     "base": 18500,
+     "memo": "General liability premium installment"
+    },
+    {
+     "vendor": "Keystone Surety Bonds",
+     "base": 3200,
+     "memo": "Fidelity bond monthly premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "claimsettle",
+     "vendor": "Shieldpoint Underwriters",
+     "memos": [
+      "Wrongful detention claim — deductible payment",
+      "Wrongful detention claim — adjuster fees"
+     ],
+     "cross_memo": "Wrongful detention claim — outside counsel",
+     "plain": [
+      "the wrongful detention claim",
+      "the wrongful detention deductible",
+      "the wrongful detention settlement"
+     ],
+     "oblique": [
+      "a lawsuit from a shopper at the retail site",
+      "the incident the carrier made us pay toward",
+      "our share of a legal matter",
+      "an accusation of overstepping authority",
+      "a customer who said we held them improperly",
+      "a self-insured portion of a dispute",
+      "what we owed before coverage kicked in",
+      "the case that settled out of court",
+      "fallout from a guard's decision at the mall",
+      "paying our part of a resolved complaint",
+      "a one-time outlay after the allegation",
+      "the retention on the lawsuit",
+      "a costly misunderstanding at the entrance",
+      "a legal matter wrapped up this period",
+      "the dispute closed with a payout",
+      "the carrier billing us for our piece"
+     ],
+     "low": 22000,
+     "high": 40000
+    },
+    {
+     "key": "cyberpolicy",
+     "vendor": "Harbor Mutual Specialty",
+     "memos": [
+      "Cyber liability rider — first year premium",
+      "Cyber liability rider — broker fee"
+     ],
+     "cross_memo": "Cyber liability rider — security audit",
+     "plain": [
+      "the cyber liability rider",
+      "the cyber liability premium",
+      "the cyber liability coverage"
+     ],
+     "oblique": [
+      "protection against hackers",
+      "new coverage the largest client insisted on",
+      "a policy addition after the vendor questionnaire",
+      "safeguarding our digital records",
+      "an endorsement for data breaches",
+      "what the bank contract's fine print demanded",
+      "a gap in our program finally closed",
+      "coverage for the online side of the business",
+      "the new line on our risk portfolio",
+      "an add-on triggered by contract renewal",
+      "insurance for ransomware exposure",
+      "extending protection beyond physical incidents",
+      "the broker's recommendation we followed",
+      "safeguards for client personnel files",
+      "a policy purchased ahead of the audit",
+      "guarding against stolen data claims"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Client Site Supplies",
+   "aliases": [
+    "site supplies",
+    "post supplies",
+    "site costs",
+    "supplies",
+    "field supplies"
+   ],
+   "narrative": [
+    "Site supplies",
+    "Post supplies",
+    "Field supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightway Janitorial & Office",
+     "base": 1800,
+     "memo": "Coffee, paper goods and post stationery"
+    },
+    {
+     "vendor": "Ridgeline Safety Products",
+     "base": 2600,
+     "memo": "Visitor badges, logbooks and traffic cones"
+    }
+   ],
+   "events": [
+    {
+     "key": "gatehouse",
+     "vendor": "Ridgeline Safety Products",
+     "memos": [
+      "Portable guard booth — heated shelter units",
+      "Portable guard booth — delivery and setup"
+     ],
+     "cross_memo": "Portable guard booth — crane hire",
+     "plain": [
+      "the portable guard booth",
+      "the portable guard booth units",
+      "the portable guard booth setup"
+     ],
+     "oblique": [
+      "a place for officers to stand out of the elements",
+      "shelter for the construction entrance",
+      "temporary housing at the new job site",
+      "a small building dropped at the gate",
+      "somewhere to sit during twelve-hour shifts",
+      "the new post's physical structure",
+      "equipment for the highway project",
+      "an enclosure bought for the outdoor checkpoint",
+      "what the developer required at the entry",
+      "a freestanding workstation for the officer",
+      "structures hauled out to the lot",
+      "protection from heat and cold on shift",
+      "the lone-worker welfare purchase",
+      "a hut for the access control point",
+      "kit supporting the new contract start-up",
+      "the little cabins at the front gate"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "eventkits",
+     "vendor": "Marquee Crowd Solutions",
+     "memos": [
+      "Stadium crowd barriers — rental package",
+      "Stadium crowd barriers — wristband stock"
+     ],
+     "cross_memo": "Stadium crowd barriers — extra traffic wands",
+     "plain": [
+      "the stadium crowd barriers",
+      "the stadium crowd package",
+      "the stadium crowd supplies"
+     ],
+     "oblique": [
+      "gear for the big concert weekend",
+      "queue management for the arena",
+      "hardware to channel thousands of fans",
+      "a one-off sports contract",
+      "items bought for the playoff series",
+      "what the venue operator needed to control entry",
+      "fencing to steer large groups",
+      "a temporary build-out for game days",
+      "the stadium client's special order",
+      "supplies tied to a single marquee event",
+      "controlling foot traffic at the sold-out show",
+      "the seasonal championship run",
+      "materials for managing spectators",
+      "the festival staffing add-on",
+      "equipment for the arena's busiest week",
+      "stuff rented by the weekend for the big crowds"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Payroll Taxes & Benefits",
+   "aliases": [
+    "payroll taxes",
+    "benefits",
+    "labor burden",
+    "employer taxes",
+    "guard benefits"
+   ],
+   "narrative": [
+    "Payroll taxes",
+    "Benefits",
+    "Labor burden"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ledgerline Payroll Services",
+     "base": 28000,
+     "memo": "Employer payroll tax deposits"
+    },
+    {
+     "vendor": "Wellspan Health Plans",
+     "base": 19500,
+     "memo": "Group medical premium for guards"
+    },
+    {
+     "vendor": "Meridian Workers Comp",
+     "base": 11800,
+     "memo": "Workers compensation monthly premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "wcaudit",
+     "vendor": "Meridian Workers Comp",
+     "memos": [
+      "Premium audit true-up — reclassified payroll",
+      "Premium audit true-up — prior year adjustment"
+     ],
+     "cross_memo": "Premium audit true-up — late filing penalty",
+     "plain": [
+      "the premium audit true-up",
+      "the premium audit adjustment",
+      "the premium audit bill"
+     ],
+     "oblique": [
+      "a retroactive charge from the carrier",
+      "an invoice for last year's underestimated exposure",
+      "the insurer revisiting our headcount",
+      "a surprise bill after the annual review",
+      "a correction nobody had accrued",
+      "what the carrier found when they looked back",
+      "catching up on under-reported wages",
+      "the settlement of the policy year",
+      "a bump after the carrier reclassified roles",
+      "the annual reckoning with the underwriter",
+      "an extra amount owed for previous coverage",
+      "the bill that arrived after the review",
+      "a differential on armed versus unarmed rates",
+      "the retroactive rate change",
+      "an adjustment hitting all at once",
+      "the carrier's look-back"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "retention",
+     "vendor": "Evergreen Benefits Advisors",
+     "memos": [
+      "Holiday retention bonus — guard roster payout",
+      "Holiday retention bonus — employer match taxes"
+     ],
+     "cross_memo": "Holiday retention bonus — recruiter credits",
+     "plain": [
+      "the holiday retention bonus",
+      "the holiday retention payout",
+      "the holiday retention program"
+     ],
+     "oblique": [
+      "a thank-you to officers who stayed through year end",
+      "cash given to reduce turnover",
+      "the incentive for staying on the schedule",
+      "money to keep people from jumping to competitors",
+      "a reward at the close of the season",
+      "the loyalty payment to long-serving staff",
+      "a response to the hiring crunch",
+      "employee appreciation money",
+      "a gesture of goodwill from management",
+      "extra pay tied to tenure",
+      "what we did to keep the night crews",
+      "the stay-with-us incentive",
+      "a seasonal gift to the workforce",
+      "a lump sum pushed through payroll",
+      "the year-end sweetener for field staff",
+      "the cost of holding on to our people"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Facilities & Dispatch Center",
+   "aliases": [
+    "facilities",
+    "office costs",
+    "dispatch center",
+    "rent and utilities",
+    "headquarters spend"
+   ],
+   "narrative": [
+    "Facilities",
+    "Office costs",
+    "Headquarters spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Oakmont Commercial Properties",
+     "base": 15000,
+     "memo": "Monthly HQ and dispatch center rent"
+    },
+    {
+     "vendor": "Citywide Power & Light",
+     "base": 3100,
+     "memo": "Electricity and internet service"
+    },
+    {
+     "vendor": "Greenfield Cleaning Co",
+     "base": 1200,
+     "memo": "Nightly office cleaning"
+    }
+   ],
+   "events": [
+    {
+     "key": "generator",
+     "vendor": "Oakmont Commercial Properties",
+     "memos": [
+      "Backup generator install — transfer switch",
+      "Backup generator install — electrician hours"
+     ],
+     "cross_memo": "Backup generator install — fuel tank rental",
+     "plain": [
+      "the backup generator install",
+      "the backup generator project",
+      "the backup generator work"
+     ],
+     "oblique": [
+      "keeping the control room running through blackouts",
+      "insurance against grid failures",
+      "a resiliency project at the command center",
+      "ensuring dispatchers never lose power",
+      "work the landlord billed back to us",
+      "after the long outage last winter",
+      "a contingency for utility interruptions",
+      "equipment humming in the yard behind the building",
+      "the continuity-of-operations upgrade",
+      "new emergency electricity capacity",
+      "a lesson learned from the storm",
+      "the standby power addition",
+      "making the building self-sufficient",
+      "protecting the call center from outages",
+      "a facility improvement tied to the lease",
+      "the no-downtime promise to clients"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "breakroom",
+     "vendor": "Cornerstone Build-Outs",
+     "memos": [
+      "Rest area renovation — lockers and benches",
+      "Rest area renovation — flooring and paint"
+     ],
+     "cross_memo": "Rest area renovation — temporary trailer",
+     "plain": [
+      "the rest area renovation",
+      "the rest area remodel",
+      "the rest area refresh"
+     ],
+     "oblique": [
+      "a better place for officers between shifts",
+      "a morale investment at headquarters",
+      "giving the roster a more comfortable space",
+      "the overdue refurbishment",
+      "sprucing up where staff check in",
+      "a quarter of drywall and fresh finishes",
+      "a recruiting tool for new hires",
+      "an investment in the guards' comfort",
+      "the sleepy back room getting a facelift",
+      "workspace improvements for the field team",
+      "what we promised after the engagement survey",
+      "tearing out the old furniture",
+      "a project finished over two weekends",
+      "upgrading the muster room",
+      "a place to eat lunch that isn't a parking lot",
+      "the gathering space overhaul"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

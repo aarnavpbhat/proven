@@ -1,0 +1,728 @@
+{
+ "slug": "elevator-maintenance-company",
+ "industry": "elevator maintenance company",
+ "entities": [
+  "Vertex Lift Services",
+  "Highrise Vertical Care",
+  "Ascendant Elevator Co",
+  "Summit Cab & Hoist",
+  "Corbel Vertical Maintenance"
+ ],
+ "accounts": [
+  {
+   "name": "Field Technician Labor",
+   "aliases": [
+    "field labor",
+    "technician payroll",
+    "mechanic labor",
+    "route labor",
+    "field crew costs"
+   ],
+   "narrative": [
+    "Field labor",
+    "Technician payroll",
+    "Route labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "Apex Staffing Partners",
+     "base": 18500,
+     "memo": "Contract mechanic hours WK"
+    },
+    {
+     "vendor": "Union Local 14 Benefits Fund",
+     "base": 9200,
+     "memo": "Mechanic benefit remittance"
+    },
+    {
+     "vendor": "RoadReady Payroll Services",
+     "base": 2400,
+     "memo": "Payroll processing fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "stormcallouts",
+     "vendor": "Apex Staffing Partners",
+     "memos": [
+      "Apex Staffing WO 55102 — hurricane Delmar standby",
+      "Apex Staffing PO 88231 — hurricane Delmar overtime"
+     ],
+     "cross_memo": "Hurricane Delmar standby — hotel block rooms",
+     "plain": [
+      "the hurricane Delmar standby",
+      "hurricane Delmar overtime",
+      "the hurricane Delmar response"
+     ],
+     "oblique": [
+      "the weather emergency that kept crews on call overnight",
+      "extra shifts during the coastal storm",
+      "after-hours rescues of people trapped in cabs",
+      "a regional disaster response",
+      "all hands on deck for a week",
+      "emergency callouts",
+      "the surge of entrapment calls",
+      "paying crews to sleep near the job sites",
+      "a natural calamity hitting our service area",
+      "premium pay for off-hours work",
+      "the outage wave across the harbor district",
+      "keeping teams ready around the clock",
+      "the flooding that knocked out building power",
+      "skeleton crews staffed through the weekend",
+      "a big weather event",
+      "calls to free stuck passengers"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "codecert",
+     "vendor": "Meridian Safety Training Institute",
+     "memos": [
+      "Meridian Safety Training PO 77410 — QEI recertification cohort",
+      "Meridian Safety Training INV 3391 — QEI exam proctoring"
+     ],
+     "cross_memo": "QEI recertification cohort — travel lodging Albany",
+     "plain": [
+      "the QEI recertification cohort",
+      "QEI exam proctoring",
+      "the QEI recertification"
+     ],
+     "oblique": [
+      "getting inspectors their licenses renewed",
+      "state-mandated credential upkeep",
+      "classroom time for the senior crew",
+      "keeping our people legally allowed to sign off work",
+      "the regulator's renewal cycle",
+      "exam fees for the field team",
+      "a certification push",
+      "sending mechanics back to school",
+      "paperwork that lets us inspect lifts",
+      "the licensing deadline",
+      "required credential renewals",
+      "time off the route for coursework",
+      "tests our people must pass every few years",
+      "compliance education",
+      "professional accreditation upkeep",
+      "the examiner's requirements"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Replacement Parts and Components",
+   "aliases": [
+    "parts",
+    "component spend",
+    "replacement parts",
+    "repair parts",
+    "parts inventory"
+   ],
+   "narrative": [
+    "Parts",
+    "Component spend",
+    "Repair parts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Otisford Components Supply",
+     "base": 14200,
+     "memo": "Stock replenishment PO"
+    },
+    {
+     "vendor": "Brightline Electrical Wholesale",
+     "base": 6100,
+     "memo": "Relays and contactors"
+    },
+    {
+     "vendor": "Hatch & Sill Hardware",
+     "base": 3300,
+     "memo": "Door hardware assorted"
+    }
+   ],
+   "events": [
+    {
+     "key": "geartrain",
+     "vendor": "Otisford Components Supply",
+     "memos": [
+      "Otisford PO 61877 — Bayview Tower gearless machine rebuild",
+      "Otisford WO 40920 — Bayview Tower sheave and rope set"
+     ],
+     "cross_memo": "Bayview Tower gearless machine rebuild — crane lift",
+     "plain": [
+      "the Bayview Tower gearless machine rebuild",
+      "Bayview Tower sheave and rope set",
+      "the Bayview Tower machine"
+     ],
+     "oblique": [
+      "replacing the heavy hoisting drive at the downtown high-rise",
+      "a major overhaul of the main lifting equipment",
+      "the big rebuild on the tallest account",
+      "swapping out worn cables and wheels",
+      "one customer's lengthy shutdown work",
+      "a capital-style repair on a single property",
+      "new motor and pulley assembly",
+      "restoring a skyscraper's primary drive",
+      "the large job at the waterfront office building",
+      "expensive rotating equipment",
+      "a once-a-decade mechanical refresh",
+      "what the engineer recommended after the failed test",
+      "the penthouse machine room project",
+      "heavy steel and cable purchases",
+      "getting a flagship property moving again",
+      "a major mechanical rework"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "obsolete",
+     "vendor": "Quillon Legacy Parts Foundry",
+     "memos": [
+      "Quillon Legacy Foundry PO 90118 — Dover Series 7 board fabrication",
+      "Quillon Legacy Foundry INV 2204 — Dover Series 7 custom casting"
+     ],
+     "cross_memo": "Dover Series 7 board fabrication — expedited freight",
+     "plain": [
+      "the Dover Series 7 board fabrication",
+      "Dover Series 7 custom casting",
+      "the Dover Series 7 fabrication"
+     ],
+     "oblique": [
+      "one-off pieces for discontinued equipment",
+      "made-to-order items nobody stocks anymore",
+      "keeping an ancient installation alive",
+      "custom manufacturing for a vintage building",
+      "replacements the original maker no longer sells",
+      "machining parts from drawings",
+      "antique lift support",
+      "specialty items with long lead times",
+      "bespoke fabrication for old controls",
+      "sourcing what is out of production",
+      "a heritage property's needs",
+      "hard-to-find circuitry",
+      "reproducing worn originals",
+      "a small shop making unique pieces",
+      "orphaned equipment support",
+      "spares that cost a fortune"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Service Vehicle Fleet",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "van fleet",
+    "vehicle spend",
+    "truck costs"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Vehicle spend",
+    "Truck costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "PetroFleet Fuel Cards",
+     "base": 11800,
+     "memo": "Fuel card statement"
+    },
+    {
+     "vendor": "Lakeshore Vehicle Leasing",
+     "base": 16500,
+     "memo": "Monthly van lease"
+    },
+    {
+     "vendor": "TruckGuard Insurance Agency",
+     "base": 4100,
+     "memo": "Commercial auto premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "brakerecall",
+     "vendor": "Lakeshore Vehicle Leasing",
+     "memos": [
+      "Lakeshore Leasing WO 71332 — Transit 250 brake line recall",
+      "Lakeshore Leasing INV 5518 — Transit 250 recall loaner vans"
+     ],
+     "cross_memo": "Transit 250 brake line recall — technician downtime",
+     "plain": [
+      "the Transit 250 brake line recall",
+      "Transit 250 recall loaner vans",
+      "the Transit 250 recall"
+     ],
+     "oblique": [
+      "a manufacturer safety notice on our work vans",
+      "pulling a chunk of vehicles off the road",
+      "stopgap rides while repairs were done",
+      "the defect the carrier warned about",
+      "a batch of vehicles grounded for stopping-power faults",
+      "temporary replacements for the crew",
+      "a vehicle safety campaign",
+      "units sidelined at the dealership",
+      "a mandatory fix across the lineup",
+      "borrowed transportation for technicians",
+      "the factory's urgent bulletin",
+      "vans sitting idle awaiting parts",
+      "a widespread mechanical defect",
+      "cost of keeping routes covered",
+      "an order from the maker to inspect everything",
+      "a safety problem we did not cause"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "wrapdecal",
+     "vendor": "Signal Peak Graphics",
+     "memos": [
+      "Signal Peak Graphics PO 66045 — rebrand livery fleet wrap",
+      "Signal Peak Graphics INV 1187 — rebrand livery decal removal"
+     ],
+     "cross_memo": "Rebrand livery fleet wrap — design agency proof",
+     "plain": [
+      "the rebrand livery fleet wrap",
+      "rebrand livery decal removal",
+      "the rebrand livery"
+     ],
+     "oblique": [
+      "giving every truck the new look",
+      "repainting our public image on wheels",
+      "the marketing refresh visible on the road",
+      "new logos on the whole lineup",
+      "stripping off the old company colors",
+      "a visual identity change",
+      "the mobile advertising update",
+      "a fresh appearance for service trucks",
+      "what the new logo launch required",
+      "cosmetic work across dozens of units",
+      "branding that customers see in parking lots",
+      "retiring the old emblem",
+      "the image makeover",
+      "adhesive film and labor",
+      "stickers and vinyl on vehicles",
+      "the executive team's identity project"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Elevator Inspection and Compliance Fees",
+   "aliases": [
+    "inspection fees",
+    "compliance costs",
+    "permit fees",
+    "code compliance",
+    "regulatory spend"
+   ],
+   "narrative": [
+    "Inspection fees",
+    "Compliance costs",
+    "Permit fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "State Dept of Buildings Elevator Unit",
+     "base": 5200,
+     "memo": "Annual certificate fees"
+    },
+    {
+     "vendor": "Tri-County Third Party Inspectors",
+     "base": 7800,
+     "memo": "Third-party inspection batch"
+    },
+    {
+     "vendor": "CodeTrack Records Service",
+     "base": 1100,
+     "memo": "Compliance database subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "citycrackdown",
+     "vendor": "State Dept of Buildings Elevator Unit",
+     "memos": [
+      "State Bldgs Elev Unit INV 9021 — Ordinance 44-B penalty assessment",
+      "State Bldgs Elev Unit INV 9034 — Ordinance 44-B reinspection fees"
+     ],
+     "cross_memo": "Ordinance 44-B penalty assessment — legal counsel retainer",
+     "plain": [
+      "the Ordinance 44-B penalty assessment",
+      "Ordinance 44-B reinspection fees",
+      "the Ordinance 44-B penalties"
+     ],
+     "oblique": [
+      "fines levied after a surprise city sweep",
+      "a government clampdown on overdue units",
+      "paying for missed paperwork deadlines",
+      "the authorities catching up with us",
+      "a regulator's enforcement push",
+      "second visits by officials",
+      "citations on neglected equipment",
+      "punishment for lapsed certificates",
+      "an audit that found violations",
+      "the municipality's tougher stance",
+      "extra government visits to retest lifts",
+      "money owed after failed walkthroughs",
+      "a wave of tickets across our portfolio",
+      "the agency cracking down",
+      "what we owed for late filings",
+      "officials returning to verify fixes"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "newstandard",
+     "vendor": "Northgate Code Consulting",
+     "memos": [
+      "Northgate Code Consulting PO 82290 — ASME A17.1 gap analysis",
+      "Northgate Code Consulting INV 4410 — ASME A17.1 readiness workshop"
+     ],
+     "cross_memo": "ASME A17.1 gap analysis — training materials print",
+     "plain": [
+      "the ASME A17.1 gap analysis",
+      "ASME A17.1 readiness workshop",
+      "the ASME A17.1 readiness work"
+     ],
+     "oblique": [
+      "preparing for the updated industry rulebook",
+      "outside advisors reviewing our procedures",
+      "getting ahead of a standards revision",
+      "a consultant's report on where we fall short",
+      "classroom sessions on the new requirements",
+      "adapting our practices to changed expectations",
+      "expert guidance before the effective date",
+      "an assessment of how our work measures up",
+      "workshops for supervisors",
+      "a specialist engaged for readiness",
+      "reviewing every checklist against the latest edition",
+      "the profession's periodic rewrite",
+      "a head start on future mandates",
+      "paying an adviser to audit our habits",
+      "education for management on upcoming rules",
+      "a document review by outsiders"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Shop and Warehouse Facilities",
+   "aliases": [
+    "shop costs",
+    "warehouse",
+    "facilities",
+    "yard and shop",
+    "depot spend"
+   ],
+   "narrative": [
+    "Shop costs",
+    "Warehouse spend",
+    "Depot spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Ridge Industrial Properties",
+     "base": 19500,
+     "memo": "Warehouse lease monthly"
+    },
+    {
+     "vendor": "Metro Power & Gas",
+     "base": 3800,
+     "memo": "Utilities shop"
+    },
+    {
+     "vendor": "CleanSweep Janitorial",
+     "base": 1400,
+     "memo": "Shop cleaning service"
+    }
+   ],
+   "events": [
+    {
+     "key": "roofleak",
+     "vendor": "Granite Ridge Industrial Properties",
+     "memos": [
+      "Granite Ridge Props INV 7740 — Bay 3 skylight reseal chargeback",
+      "Granite Ridge Props INV 7752 — Bay 3 skylight water remediation"
+     ],
+     "cross_memo": "Bay 3 skylight water remediation — inventory dry-out",
+     "plain": [
+      "the Bay 3 skylight reseal chargeback",
+      "Bay 3 skylight water remediation",
+      "the Bay 3 skylight"
+     ],
+     "oblique": [
+      "rainwater getting into the building",
+      "landlord billing us for a leak",
+      "drying out wet stock",
+      "damage from a bad storm overhead",
+      "repairs to the ceiling above the workbenches",
+      "mold prevention work",
+      "a soaked corner of the building",
+      "cleanup after water intrusion",
+      "what the property owner passed along",
+      "fixing the roof opening",
+      "restoring a flooded work area",
+      "a sodden stretch of concrete",
+      "the cost of moisture damage",
+      "emergency drying crews",
+      "the part of the structure that failed",
+      "an unplanned building repair"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "racking",
+     "vendor": "Steelmark Storage Systems",
+     "memos": [
+      "Steelmark Storage PO 93371 — pallet rack expansion install",
+      "Steelmark Storage INV 6029 — pallet rack seismic anchors"
+     ],
+     "cross_memo": "Pallet rack expansion install — forklift rental",
+     "plain": [
+      "the pallet rack expansion install",
+      "pallet rack seismic anchors",
+      "the pallet rack expansion"
+     ],
+     "oblique": [
+      "room to hold more inventory",
+      "new shelving going up in the depot",
+      "fitting more stock into the same footprint",
+      "a layout upgrade for storage",
+      "steel uprights bolted to the slab",
+      "capacity growth for spare materials",
+      "reorganizing where we keep things",
+      "building vertical storage",
+      "what the warehouse manager requested",
+      "a bigger stockroom setup",
+      "metal frames and beams",
+      "a physical build-out for stockpiling",
+      "preparations for bulk purchasing",
+      "tie-downs required by the insurer",
+      "more places to put heavy items",
+      "construction crews in the back"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Tools and Safety Equipment",
+   "aliases": [
+    "tools",
+    "safety gear",
+    "equipment spend",
+    "shop tools",
+    "ppe and tools"
+   ],
+   "narrative": [
+    "Tool spend",
+    "Safety gear",
+    "Equipment spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "ToolCrib Industrial Supply",
+     "base": 4600,
+     "memo": "Hand tools and consumables"
+    },
+    {
+     "vendor": "Guardian PPE Direct",
+     "base": 2900,
+     "memo": "Harnesses gloves hardhats"
+    },
+    {
+     "vendor": "Calibrate-It Metrology",
+     "base": 1200,
+     "memo": "Meter calibration service"
+    }
+   ],
+   "events": [
+    {
+     "key": "diagtablet",
+     "vendor": "ToolCrib Industrial Supply",
+     "memos": [
+      "ToolCrib PO 58812 — Zephyr handheld diagnostic tablets",
+      "ToolCrib INV 8803 — Zephyr tablet ruggedized cases"
+     ],
+     "cross_memo": "Zephyr handheld diagnostic tablets — device management license",
+     "plain": [
+      "the Zephyr handheld diagnostic tablets",
+      "Zephyr tablet ruggedized cases",
+      "the Zephyr tablets"
+     ],
+     "oblique": [
+      "putting new gadgets in every technician's hands",
+      "modernizing how crews troubleshoot controllers",
+      "a device refresh across the route staff",
+      "electronics that read fault codes",
+      "hardware to replace paper manuals",
+      "the digital kit rollout",
+      "screens for the field team",
+      "a technology upgrade for mechanics",
+      "bulk gadget purchase for the crew",
+      "protective shells for rough handling",
+      "laptops' smaller cousins",
+      "connecting technicians to controller data",
+      "equipment the operations head championed",
+      "a mass issuance of devices",
+      "handhelds that talk to the lift brain",
+      "gear that stores service history"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "fallarrest",
+     "vendor": "Highline Rescue Outfitters",
+     "memos": [
+      "Highline Rescue Outfitters PO 47120 — lanyard retirement lot replacement",
+      "Highline Rescue Outfitters INV 3318 — lanyard retirement anchor straps"
+     ],
+     "cross_memo": "Lanyard retirement lot replacement — safety stand-down",
+     "plain": [
+      "the lanyard retirement lot replacement",
+      "lanyard retirement anchor straps",
+      "the lanyard retirement"
+     ],
+     "oblique": [
+      "pulling expired lifelines from service",
+      "gear that hit its end-of-life date",
+      "protective equipment aged out by the maker",
+      "swapping out worn restraint webbing",
+      "a safety officer's directive on old straps",
+      "what our hoistway climbers wear",
+      "a purge of outdated protection",
+      "new belts for people working at height",
+      "equipment past its shelf life",
+      "the inspector's finding on frayed webbing",
+      "a lot that failed a pull test",
+      "scheduled disposal of fall protection",
+      "an urgent safety buy",
+      "everything that keeps people from falling",
+      "one batch of gear going in the trash",
+      "mandatory turnover of climbing kit"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Claims",
+   "aliases": [
+    "insurance",
+    "claims spend",
+    "liability costs",
+    "risk costs",
+    "coverage and claims"
+   ],
+   "narrative": [
+    "Insurance",
+    "Claims spend",
+    "Liability costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sterling Mutual General Liability",
+     "base": 13400,
+     "memo": "GL premium monthly"
+    },
+    {
+     "vendor": "Covenant Workers Comp Carrier",
+     "base": 15800,
+     "memo": "Workers comp premium"
+    },
+    {
+     "vendor": "Brokerage Atlas Risk",
+     "base": 2200,
+     "memo": "Broker service fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "cabdrop",
+     "vendor": "Sterling Mutual General Liability",
+     "memos": [
+      "Sterling Mutual GL INV 6612 — Parkside Plaza cab incident deductible",
+      "Sterling Mutual GL INV 6640 — Parkside Plaza cab incident settlement share"
+     ],
+     "cross_memo": "Parkside Plaza cab incident deductible — adjuster site visit",
+     "plain": [
+      "the Parkside Plaza cab incident deductible",
+      "Parkside Plaza cab incident settlement share",
+      "the Parkside Plaza incident"
+     ],
+     "oblique": [
+      "our share of a passenger injury payout",
+      "a rider getting hurt in a building we serve",
+      "the out-of-pocket portion before coverage kicked in",
+      "a lawsuit-related payment",
+      "what we owed after an accident on site",
+      "a customer's mishap",
+      "money paid to resolve a bodily injury dispute",
+      "the retention we absorb on bigger losses",
+      "an insured event at a commercial property",
+      "resolving someone's complaint about a fall",
+      "compensation to settle a dispute",
+      "the carrier's bill for its portion",
+      "a liability matter that closed",
+      "a negotiated resolution",
+      "an accident that triggered our policy",
+      "what the insurer asked us to cover"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "cyberpolicy",
+     "vendor": "Fortis Specialty Underwriters",
+     "memos": [
+      "Fortis Specialty Underwriters PO 29004 — network breach rider binder",
+      "Fortis Specialty Underwriters INV 1450 — network breach rider premium"
+     ],
+     "cross_memo": "Network breach rider binder — IT security audit",
+     "plain": [
+      "the network breach rider binder",
+      "network breach rider premium",
+      "the network breach rider"
+     ],
+     "oblique": [
+      "protection against hackers",
+      "new coverage for digital threats",
+      "a policy line the board asked for",
+      "insuring our customer data",
+      "an extra layer after a competitor got hit",
+      "safeguards for online systems",
+      "cover against ransom demands",
+      "a financial backstop for computer attacks",
+      "the broker's recommendation on technology risk",
+      "a line item that did not exist before",
+      "hedging against a data event",
+      "coverage our lenders required",
+      "a new type of protection purchased",
+      "safety net for stolen records",
+      "premium for a fresh policy",
+      "underwriting of an emerging exposure"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

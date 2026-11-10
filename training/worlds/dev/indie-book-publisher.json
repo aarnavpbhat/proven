@@ -1,0 +1,713 @@
+{
+ "slug": "indie-book-publisher",
+ "industry": "indie book publisher",
+ "entities": [
+  "Inkwell & Fable Press",
+  "Marsh Lantern Books",
+  "Gravel Road Editions",
+  "Paper Heron Publishing",
+  "Fennel Street Press"
+ ],
+ "accounts": [
+  {
+   "name": "Freelance Editorial Services",
+   "aliases": [
+    "editorial",
+    "freelance editors",
+    "editorial spend",
+    "editing costs",
+    "copyedit budget"
+   ],
+   "narrative": [
+    "Editorial",
+    "Freelance editors",
+    "Editing costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightline Copyediting",
+     "base": 6200,
+     "memo": "Copyedit batch - spring list"
+    },
+    {
+     "vendor": "Corvid Proofreading Collective",
+     "base": 3400,
+     "memo": "Proofreading pass - monthly retainer"
+    },
+    {
+     "vendor": "Nell Okafor Developmental Editing",
+     "base": 4800,
+     "memo": "Developmental edit - manuscript review"
+    }
+   ],
+   "events": [
+    {
+     "key": "sensitivity",
+     "vendor": "Brightline Copyediting",
+     "memos": [
+      "Sensitivity read panel - memoir title",
+      "Sensitivity read panel - reader honoraria"
+     ],
+     "cross_memo": "Sensitivity read panel - legal consult",
+     "plain": [
+      "the sensitivity read panel",
+      "the sensitivity read panel costs",
+      "sensitivity read panel fees"
+     ],
+     "oblique": [
+      "extra vetting of a touchy memoir",
+      "outside readers checking the book for cultural missteps",
+      "the added review before a risky release",
+      "a fresh set of eyes on delicate subject matter",
+      "pre-release scrutiny of the personal story",
+      "reviewers brought in at the author's agent's urging",
+      "making sure the book would not offend anyone",
+      "the extra reading round",
+      "precautionary reviews",
+      "paying specialists to vet content",
+      "the memoir's added vetting stage",
+      "a cautious review step nobody had planned",
+      "consultants weighing in on sensitive passages",
+      "the vetting we added late",
+      "outside opinions on tone and portrayal",
+      "reader feedback bought ahead of launch"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "translation_rescue",
+     "vendor": "Halvorsen Language Studio",
+     "memos": [
+      "Translation rescue job - Norwegian novel",
+      "Translation rescue job - re-translation of chapters"
+     ],
+     "cross_memo": "Translation rescue job - rights extension",
+     "plain": [
+      "the translation rescue job",
+      "translation rescue job charges",
+      "the Norwegian novel translation rescue"
+     ],
+     "oblique": [
+      "redoing a botched foreign-language manuscript",
+      "fixing the imported novel that read badly",
+      "replacing the first translator's work",
+      "a rescue of the overseas title",
+      "starting the foreign book over with new hands",
+      "the do-over on the imported fiction",
+      "repairing awkward prose in the foreign edition",
+      "a late scramble to salvage the acquired title",
+      "bringing in a second linguist",
+      "the poor first draft we inherited",
+      "work to make the acquired book readable",
+      "cleaning up an unusable rendering",
+      "a redo of the Nordic acquisition",
+      "the replacement linguist's hours",
+      "salvage work on a purchased property",
+      "getting the imported book into shape"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Cover Art & Illustration",
+   "aliases": [
+    "cover art",
+    "illustration",
+    "cover design",
+    "art commissions",
+    "jacket art"
+   ],
+   "narrative": [
+    "Cover art",
+    "Illustration",
+    "Cover design"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pixelmoth Studio",
+     "base": 5200,
+     "memo": "Cover design - front list titles"
+    },
+    {
+     "vendor": "Odalys Reyes Illustration",
+     "base": 3800,
+     "memo": "Interior spot illustrations"
+    }
+   ],
+   "events": [
+    {
+     "key": "foilcover",
+     "vendor": "Pixelmoth Studio",
+     "memos": [
+      "Holographic foil redesign - anniversary edition",
+      "Holographic foil redesign - proofing plates"
+     ],
+     "cross_memo": "Holographic foil redesign - press setup",
+     "plain": [
+      "the holographic foil redesign",
+      "holographic foil redesign work",
+      "the holographic foil redesign proofs"
+     ],
+     "oblique": [
+      "a flashier look for the milestone reissue",
+      "making the special edition shimmer",
+      "the upscale makeover of the jubilee release",
+      "dressing up the commemorative printing",
+      "a premium appearance for the celebration run",
+      "fancier packaging for the collector crowd",
+      "the glitzy treatment",
+      "a new face for the old bestseller",
+      "the eye-catching rework",
+      "spiffing up the throwback title",
+      "an upgrade meant to justify a higher price",
+      "visual refresh for the birthday release",
+      "a showier outer look",
+      "the gift-market makeover",
+      "reimagining the exterior for superfans",
+      "extra polish on the commemorative book"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "muralmap",
+     "vendor": "Teasel & Quill Cartography",
+     "memos": [
+      "Fantasy world atlas - hand-inked continents",
+      "Fantasy world atlas - labeling pass"
+     ],
+     "cross_memo": "Fantasy world atlas - fold-out printing",
+     "plain": [
+      "the fantasy world atlas",
+      "fantasy world atlas commission",
+      "the hand-inked fantasy world atlas"
+     ],
+     "oblique": [
+      "drawn geography for the epic series",
+      "imaginary-land charts for the trilogy",
+      "the fold-out chart readers kept asking for",
+      "a chart of the invented realm",
+      "visuals mapping the saga's setting",
+      "a pull-out for the fans of the series",
+      "commissioned geography of the made-up kingdom",
+      "the large chart tucked into the box set",
+      "reader-requested territory drawings",
+      "inked terrain for the sequel",
+      "something to orient readers in the story world",
+      "the pictorial guide to the series' setting",
+      "a showpiece for the boxed collection",
+      "drawings of the book's invented lands",
+      "the illustrated companion sheet",
+      "a gift-edition extra with illustrated places"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Printing & Binding",
+   "aliases": [
+    "print costs",
+    "printing",
+    "press runs",
+    "binding",
+    "manufacturing"
+   ],
+   "narrative": [
+    "Print costs",
+    "Printing",
+    "Manufacturing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greywater Offset Printing",
+     "base": 24000,
+     "memo": "Offset print run - backlist reprints"
+    },
+    {
+     "vendor": "Stitchwell Bindery",
+     "base": 8500,
+     "memo": "Perfect binding - monthly orders"
+    },
+    {
+     "vendor": "Clearpage Digital Print",
+     "base": 6100,
+     "memo": "Short-run digital - POD stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "sprayededges",
+     "vendor": "Stitchwell Bindery",
+     "memos": [
+      "Sprayed edge finishing - special edition",
+      "Sprayed edge finishing - extra labor"
+     ],
+     "cross_memo": "Sprayed edge finishing - freight to warehouse",
+     "plain": [
+      "the sprayed edge finishing",
+      "sprayed edge finishing labor",
+      "the sprayed edge finishing run"
+     ],
+     "oblique": [
+      "colored page ends on the deluxe copies",
+      "a decorative flourish on the book's side",
+      "the pigmented page trim",
+      "extra handwork on the limited run",
+      "the visual flair along the paper stack",
+      "tinted borders on the collector's copies",
+      "an embellishment readers noticed on the shelf",
+      "the dyed finish applied by hand",
+      "a fancy touch in the production line",
+      "slowing the line for a prettier product",
+      "additional steps on the premium copies",
+      "special treatment of the cut paper sides",
+      "crafty detailing for the pre-order buyers",
+      "the upscale craft work",
+      "the ornamental trim job",
+      "a boutique production flourish"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "papershortage",
+     "vendor": "Larkmoor Paper Merchants",
+     "memos": [
+      "Emergency paper purchase - uncoated cream stock",
+      "Emergency paper purchase - mill surcharge"
+     ],
+     "cross_memo": "Emergency paper purchase - courier expedite",
+     "plain": [
+      "the emergency paper purchase",
+      "emergency paper purchase costs",
+      "the uncoated cream stock purchase"
+     ],
+     "oblique": [
+      "scrambling for raw material at a premium",
+      "a supply crunch at the mill",
+      "the hurried buy when our usual source ran dry",
+      "stock we had to grab at spot prices",
+      "an unplanned sourcing scramble",
+      "the shortage that hit just before a big run",
+      "paying extra to keep presses fed",
+      "last-minute material buying",
+      "the rush to avoid a delayed release",
+      "stock bought through a middleman",
+      "costs from the supplier's capacity problems",
+      "an unbudgeted stockpiling move",
+      "the pinch in the supply chain",
+      "securing substrate under deadline pressure",
+      "the premium we paid to keep the schedule",
+      "buying sheets we had not planned on"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Author Advances",
+   "aliases": [
+    "advances",
+    "author advances paid",
+    "advance payments",
+    "signing payments",
+    "advance spend"
+   ],
+   "narrative": [
+    "Advances",
+    "Author advances",
+    "Signing payments"
+   ],
+   "recurring": [
+    {
+     "vendor": "Debut Authors Pool",
+     "base": 15000,
+     "memo": "First-novel advances - installment"
+    },
+    {
+     "vendor": "Midlist Authors Account",
+     "base": 12000,
+     "memo": "Midlist advance - installment on delivery"
+    }
+   ],
+   "events": [
+    {
+     "key": "auction",
+     "vendor": "Debut Authors Pool",
+     "memos": [
+      "Multi-house auction win - literary debut",
+      "Multi-house auction win - signing installment"
+     ],
+     "cross_memo": "Multi-house auction win - agent commission",
+     "plain": [
+      "the multi-house auction win",
+      "multi-house auction win payment",
+      "the multi-house auction win installment"
+     ],
+     "oblique": [
+      "outbidding bigger competitors for a first-time writer",
+      "a bidding war we came out on top of",
+      "the premium for a hot new voice",
+      "winning a manuscript others wanted",
+      "money to land a buzzy first book",
+      "the competitive grab for a promising newcomer",
+      "an agent-driven bidding frenzy",
+      "paying up to secure a prized property",
+      "the fight over a much-chased acquisition",
+      "what it took to beat rival imprints",
+      "a splashy signing",
+      "overpaying a little for the privilege",
+      "the sought-after debut we snagged",
+      "a contested acquisition",
+      "landing the book everyone was chasing",
+      "the heated race for new talent"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "celebmemoir",
+     "vendor": "Rook & Finch Literary Agency",
+     "memos": [
+      "Retired astronaut deal - ghostwriter share",
+      "Retired astronaut deal - upfront guarantee"
+     ],
+     "cross_memo": "Retired astronaut deal - travel for interviews",
+     "plain": [
+      "the retired astronaut deal",
+      "retired astronaut deal guarantee",
+      "the retired astronaut deal payment"
+     ],
+     "oblique": [
+      "a high-profile personality's life story",
+      "signing a famous name for a tell-all",
+      "the guaranteed money for a household figure",
+      "an as-told-to book with a well-known voice",
+      "a headline-grabbing acquisition",
+      "spend on a title built for talk shows",
+      "the big-name nonfiction bet",
+      "paying for fame to move copies",
+      "a celebrity-led book we took a swing on",
+      "the star-powered project",
+      "landing a known figure's recollections",
+      "a mass-market-minded memoir deal",
+      "hiring a writer behind the scenes for a notable person",
+      "a commercial play on name recognition",
+      "space-related autobiography financing",
+      "the splashy nonfiction signing"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Marketing & Publicity",
+   "aliases": [
+    "marketing",
+    "publicity",
+    "book promotion",
+    "launch spend",
+    "promo costs"
+   ],
+   "narrative": [
+    "Marketing",
+    "Publicity",
+    "Launch spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Loudspeaker Book Publicity",
+     "base": 4500,
+     "memo": "Publicity retainer - media outreach"
+    },
+    {
+     "vendor": "Pageturn Ads",
+     "base": 3200,
+     "memo": "Online ads - social and search"
+    },
+    {
+     "vendor": "Shelf Awareness Placements",
+     "base": 1800,
+     "memo": "Newsletter placements"
+    }
+   ],
+   "events": [
+    {
+     "key": "bustour",
+     "vendor": "Loudspeaker Book Publicity",
+     "memos": [
+      "Coastal indie store tour - author travel",
+      "Coastal indie store tour - event staffing"
+     ],
+     "cross_memo": "Coastal indie store tour - signed stock shipping",
+     "plain": [
+      "the coastal indie store tour",
+      "coastal indie store tour expenses",
+      "the coastal indie store tour events"
+     ],
+     "oblique": [
+      "sending the writer on the road to meet booksellers",
+      "a circuit of readings at neighborhood shops",
+      "the multi-city swing along the seaboard",
+      "in-person appearances at small retailers",
+      "the author's traveling roadshow",
+      "visits to local shops by our headliner",
+      "a string of signings far from home",
+      "hand-selling trips",
+      "the physical outreach push",
+      "the personal appearances we organized",
+      "stops at independent stores",
+      "taking the writer out to face readers",
+      "the barnstorming effort",
+      "a bookseller charm offensive",
+      "an itinerary of live readings",
+      "the person-to-person promotion trip"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "awardcampaign",
+     "vendor": "Gilt Laurel Consultants",
+     "memos": [
+      "Prize shortlist campaign - judges mailing",
+      "Prize shortlist campaign - consultant fee"
+     ],
+     "cross_memo": "Prize shortlist campaign - gala table",
+     "plain": [
+      "the prize shortlist campaign",
+      "prize shortlist campaign fees",
+      "the prize shortlist campaign mailing"
+     ],
+     "oblique": [
+      "lobbying for a literary honor",
+      "a bid to win recognition for a title",
+      "courting the jury of a major contest",
+      "pushing a book toward critical acclaim",
+      "an effort to land a medal sticker",
+      "awards-season positioning",
+      "chasing a laurel for the lead title",
+      "the pursuit of a trophy",
+      "campaigning among tastemakers",
+      "outreach aimed at the people who pick winners",
+      "hoping for prestige that sells copies",
+      "seeking validation from a panel",
+      "the glory-seeking initiative",
+      "steps to get noticed by a selection committee",
+      "a prestige play",
+      "the honor hunt"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse & Fulfillment",
+   "aliases": [
+    "fulfillment",
+    "warehouse",
+    "distribution",
+    "shipping and storage",
+    "logistics"
+   ],
+   "narrative": [
+    "Fulfillment",
+    "Warehouse",
+    "Distribution"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northgate Book Logistics",
+     "base": 9400,
+     "memo": "Pick and pack - monthly"
+    },
+    {
+     "vendor": "Swiftpost Freight",
+     "base": 5600,
+     "memo": "Freight to wholesalers"
+    },
+    {
+     "vendor": "Stackhouse Storage",
+     "base": 3800,
+     "memo": "Pallet storage fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "returnsflood",
+     "vendor": "Northgate Book Logistics",
+     "memos": [
+      "Holiday returns surge - restock handling",
+      "Holiday returns surge - overtime labor"
+     ],
+     "cross_memo": "Holiday returns surge - damaged goods writeoff",
+     "plain": [
+      "the holiday returns surge",
+      "holiday returns surge handling",
+      "the holiday returns surge labor"
+     ],
+     "oblique": [
+      "a wave of unsold copies coming back from stores",
+      "retailers sending back more than expected",
+      "the post-season pile of bounced stock",
+      "extra hours to process what bookstores rejected",
+      "an avalanche of cartons at the dock",
+      "the seasonal reversal of shipments",
+      "stock flowing in the wrong direction",
+      "a glut of incoming cartons",
+      "handling copies that failed to sell through",
+      "after-the-rush paperwork and sorting",
+      "a spike in goods heading back",
+      "the backlog of cartons from accounts",
+      "reverse logistics at its worst",
+      "clearing the dock of unsold inventory",
+      "the January dock pileup",
+      "clearing out what customers did not buy"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "relocation",
+     "vendor": "Birchway Moving Crews",
+     "memos": [
+      "Warehouse aisle reconfiguration - racking install",
+      "Warehouse aisle reconfiguration - crew labor"
+     ],
+     "cross_memo": "Warehouse aisle reconfiguration - forklift lease",
+     "plain": [
+      "the warehouse aisle reconfiguration",
+      "warehouse aisle reconfiguration crew",
+      "the warehouse aisle reconfiguration install"
+     ],
+     "oblique": [
+      "rearranging how the stock is laid out",
+      "a rebuild of the storage footprint",
+      "reshuffling shelves to fit more pallets",
+      "reorganizing the stockroom floor plan",
+      "moving things around to speed up picking",
+      "a rework of the physical space",
+      "reconfiguring the storage setup",
+      "the facility makeover",
+      "relayout of the storage areas",
+      "new shelving and spacing",
+      "reshaping the back-of-house layout",
+      "an efficiency project on the floor",
+      "changing where each title lives",
+      "the overhaul of how goods are stored",
+      "a tidy-up of the building's interior",
+      "shifting the inventory home base around"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Rights & Permissions",
+   "aliases": [
+    "permissions",
+    "rights fees",
+    "licensing costs",
+    "rights and permissions",
+    "clearance costs"
+   ],
+   "narrative": [
+    "Permissions",
+    "Rights fees",
+    "Licensing costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Copyright Clearance Desk",
+     "base": 2800,
+     "memo": "Permissions processing - monthly"
+    },
+    {
+     "vendor": "Estate Liaison Services",
+     "base": 2100,
+     "memo": "Estate correspondence retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "songlyrics",
+     "vendor": "Copyright Clearance Desk",
+     "memos": [
+      "Song lyric quotations - anthology fee",
+      "Song lyric quotations - music publisher invoices"
+     ],
+     "cross_memo": "Song lyric quotations - legal review",
+     "plain": [
+      "the song lyric quotations",
+      "song lyric quotations fees",
+      "the song lyric quotations invoices"
+     ],
+     "oblique": [
+      "paying for the right to print words from hit records",
+      "music-industry charges for reprinting verses",
+      "fees from record companies for excerpts",
+      "clearing tunes quoted in the anthology",
+      "payments to musicians' representatives",
+      "what the music world billed us for quoting",
+      "getting permission to reprint popular chorus lines",
+      "charges for printing someone else's poetry in song form",
+      "royalty-style fees on quoted material",
+      "citing famous refrains cost real money",
+      "bills from the sound business",
+      "quoting famous numbers in the text",
+      "the toll for borrowed verse",
+      "fees to clear what the characters sing",
+      "charges tied to the book's soundtrack references",
+      "the cost of using words from albums"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "archivephotos",
+     "vendor": "Meridian Image Archive",
+     "memos": [
+      "Wartime photograph licenses - museum collection",
+      "Wartime photograph licenses - high-res scans"
+     ],
+     "cross_memo": "Wartime photograph licenses - credit line audit",
+     "plain": [
+      "the wartime photograph licenses",
+      "wartime photograph license fees",
+      "the wartime photograph licenses scans"
+     ],
+     "oblique": [
+      "paying a museum to reproduce old pictures",
+      "fees to show historical images in the book",
+      "the cost of period imagery for the history title",
+      "buying the right to print archival pictures",
+      "picture-clearing bills for the nonfiction release",
+      "charges from the keepers of vintage prints",
+      "what institutions asked to let us print their pictures",
+      "imagery for the illustrated chronicle",
+      "costs of getting the visual record of the conflict",
+      "licensing of the black-and-white plates",
+      "fees tied to the pictorial insert",
+      "copyright dues on aged photographs",
+      "visuals borrowed from a collection",
+      "paying the holders of old negatives",
+      "payments to the curators who owned the images",
+      "the price of showing yesterday's events"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

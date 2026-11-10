@@ -1,0 +1,800 @@
+{
+ "slug": "precision-agriculture-equipment-dealer",
+ "industry": "precision agriculture equipment dealer",
+ "entities": [
+  "Prairieline Precision Ag",
+  "Bluestem Guidance Equipment",
+  "Smoky River Ag Technologies",
+  "Cottonwood Precision Implements",
+  "High Plains Farm Systems"
+ ],
+ "accounts": [
+  {
+   "name": "Demo Equipment Maintenance",
+   "aliases": [
+    "demo fleet",
+    "demo upkeep",
+    "demo machine repairs",
+    "demo equipment costs",
+    "demo maintenance spend"
+   ],
+   "narrative": [
+    "Demo fleet",
+    "Demo upkeep",
+    "Demo machine repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Prairie Hydraulics Service",
+     "base": 6200,
+     "memo": "Demo planter hydraulic inspection — Salina yard"
+    },
+    {
+     "vendor": "Heartland Lube Supply",
+     "base": 2400,
+     "memo": "Grease oil filters — Salina demo tractors"
+    },
+    {
+     "vendor": "Midstate Tire Works",
+     "base": 3100,
+     "memo": "Tire rotation — Hays demo sprayer"
+    }
+   ],
+   "events": [
+    {
+     "key": "boom_rebuild",
+     "vendor": "Prairie Hydraulics Service",
+     "memos": [
+      "Boom section rebuild — Hays unit 14 cylinders",
+      "Boom section rebuild — shop labor"
+     ],
+     "cross_memo": "Boom section rebuild — freight on seals",
+     "plain": [
+      "the boom section rebuild",
+      "a boom section rebuild on unit 14",
+      "boom section rebuild costs"
+     ],
+     "oblique": [
+      "arm repairs",
+      "wing work",
+      "fixing a damaged applicator wing",
+      "restoring the chemical rig after a field trial mishap",
+      "the applicator that came back bent from a customer showing",
+      "putting the self-propelled applicator back in working order",
+      "the bent folding arms",
+      "repairs after a gate collision at a grower trial",
+      "rig damage from a customer walkaround",
+      "the cracked actuators on the chemical rig",
+      "getting our showcase applicator ready again",
+      "the folding mechanism failure",
+      "mechanical damage to a showroom machine",
+      "repairing the outer wings before spring",
+      "a costly fix to the trial applicator",
+      "the wing actuator replacement"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "autosteer_kit",
+     "vendor": "Northfield Retrofit Partners",
+     "memos": [
+      "Autosteer kit install — combine 22",
+      "Autosteer kit install — calibration"
+     ],
+     "cross_memo": "Autosteer kit install — technician travel",
+     "plain": [
+      "the autosteer kit install",
+      "an autosteer kit install on combine 22",
+      "autosteer kit install charges"
+     ],
+     "oblique": [
+      "hands-free steering on a harvester",
+      "upgrading a harvester to self-driving",
+      "steering automation",
+      "adding automatic guidance to our showcase harvester",
+      "the hands-free driving upgrade a grower requested",
+      "a navigation package on the harvester",
+      "fitting satellite steering",
+      "bringing an older harvester up to current guidance standards",
+      "the guidance upgrade",
+      "a steering controller fitted ahead of harvest showings",
+      "modernizing a used harvester before resale",
+      "the auto-guidance add-on",
+      "making the trade-in harvester steer itself",
+      "receiver mounting on a grain machine",
+      "a precision steering package",
+      "harvester automation work"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "RTK Correction Network Fees",
+   "aliases": [
+    "rtk fees",
+    "correction subscriptions",
+    "rtk network",
+    "base station fees",
+    "correction signal costs"
+   ],
+   "narrative": [
+    "RTK fees",
+    "Correction subscriptions",
+    "Base station fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "SkyFix Correction Services",
+     "base": 8400,
+     "memo": "RTK subscription — Dodge City tower"
+    },
+    {
+     "vendor": "Plainsview Cellular",
+     "base": 2100,
+     "memo": "Modem data plan — Garden City repeater"
+    }
+   ],
+   "events": [
+    {
+     "key": "mast_relocation",
+     "vendor": "SkyFix Correction Services",
+     "memos": [
+      "Mast relocation — Liberal site crane",
+      "Mast relocation — antenna remount"
+     ],
+     "cross_memo": "Mast relocation — electrician hookup",
+     "plain": [
+      "the mast relocation",
+      "a mast relocation at Liberal",
+      "mast relocation work"
+     ],
+     "oblique": [
+      "moving a reference station",
+      "shifting our signal equipment to a new spot",
+      "the reference station move",
+      "moving receiving hardware after a landowner lease ended",
+      "the station move west",
+      "taking down and reerecting our broadcast pole",
+      "a forced move of the signal pole",
+      "lifting equipment hire to shift the reference pole",
+      "pulling the beacon off a grain elevator",
+      "the elevator owner's eviction of our gear",
+      "re-siting the base receiver",
+      "a new home for the reference receiver",
+      "climbing work on the signal structure",
+      "the beacon move",
+      "shifting broadcast gear across the county",
+      "restoring signal reach after losing the old location"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "benchmark_resurvey",
+     "vendor": "Cimarron Geodetic Surveys",
+     "memos": [
+      "Benchmark resurvey — Meade coverage zone",
+      "Benchmark resurvey — field crew"
+     ],
+     "cross_memo": "Benchmark resurvey — truck mileage",
+     "plain": [
+      "the benchmark resurvey",
+      "a benchmark resurvey near Meade",
+      "benchmark resurvey fees"
+     ],
+     "oblique": [
+      "re-measuring control points",
+      "the accuracy audit",
+      "checking our reference coordinates against federal markers",
+      "a positional accuracy review after grower complaints",
+      "recalibrating the network's known points",
+      "land surveyor fees",
+      "verifying station coordinates",
+      "the drift investigation",
+      "a precision check requested by a large seed customer",
+      "confirming position accuracy across the county",
+      "measuring work after the earthquake drift warning",
+      "the coordinate audit",
+      "an outside accuracy study",
+      "pinning down why rows were drifting",
+      "geospatial verification",
+      "redoing reference point measurements"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Service Truck Fuel",
+   "aliases": [
+    "truck fuel",
+    "service fuel",
+    "diesel spend",
+    "road truck fuel",
+    "field fuel"
+   ],
+   "narrative": [
+    "Truck fuel",
+    "Service fuel",
+    "Diesel spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Flint Hills Fuel Card",
+     "base": 9800,
+     "memo": "Fleet card diesel — Emporia service trucks"
+    },
+    {
+     "vendor": "Kaw Valley Cooperative",
+     "base": 3600,
+     "memo": "Bulk diesel delivery — Manhattan shop tank"
+    }
+   ],
+   "events": [
+    {
+     "key": "harvest_surge",
+     "vendor": "Flint Hills Fuel Card",
+     "memos": [
+      "Harvest surge coverage — night calls",
+      "Harvest surge coverage — weekend calls"
+     ],
+     "cross_memo": "Harvest surge coverage — tech overtime",
+     "plain": [
+      "harvest surge coverage",
+      "the harvest surge coverage",
+      "extra harvest surge coverage"
+     ],
+     "oblique": [
+      "the busy-season callout spike",
+      "round-the-clock breakdown support for growers",
+      "more miles driven during combining",
+      "emergency repair runs in the fall",
+      "after-hours mechanic driving",
+      "peak-season roadside repairs",
+      "keeping crews rolling through the grain rush",
+      "extended dispatch hours",
+      "the fall rush",
+      "more breakdown visits at grower farms",
+      "longer routes to outlying customers during cutting",
+      "the autumn workload",
+      "seven-day dispatch",
+      "busy-season mileage",
+      "extra repair trips",
+      "emergency mechanic dispatches across the territory"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "spill_cleanup",
+     "vendor": "Osage Environmental Response",
+     "memos": [
+      "Spill cleanup — Junction City yard",
+      "Spill cleanup — absorbent disposal"
+     ],
+     "cross_memo": "Spill cleanup — state filing fee",
+     "plain": [
+      "the spill cleanup",
+      "a spill cleanup at Junction City",
+      "spill cleanup charges"
+     ],
+     "oblique": [
+      "a leak from an overfilled container",
+      "the contamination mop-up",
+      "soil remediation",
+      "hazmat crews after a hose burst",
+      "the leaked product",
+      "digging out tainted gravel",
+      "regulator-ordered ground restoration",
+      "the hose rupture",
+      "hazardous materials handling",
+      "remediating soaked ground behind the building",
+      "lost product plus contractor mop-up",
+      "the contamination incident",
+      "excavation of soaked soil",
+      "a broken nozzle incident at the pump",
+      "groundwater protection work",
+      "the leak"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Inbound Parts Freight",
+   "aliases": [
+    "parts freight",
+    "inbound freight",
+    "freight in",
+    "parts shipping",
+    "freight costs"
+   ],
+   "narrative": [
+    "Parts freight",
+    "Inbound freight",
+    "Parts shipping"
+   ],
+   "recurring": [
+    {
+     "vendor": "Great Plains LTL Carriers",
+     "base": 7200,
+     "memo": "LTL freight — OEM parts depot to Salina"
+    },
+    {
+     "vendor": "Bluestem Courier",
+     "base": 1900,
+     "memo": "Next-day courier — Wichita parts counter"
+    }
+   ],
+   "events": [
+    {
+     "key": "hot_shot",
+     "vendor": "Bluestem Courier",
+     "memos": [
+      "Hot shot run — Pratt header bearings",
+      "Hot shot run — Kingman gearbox"
+     ],
+     "cross_memo": "Hot shot run — driver per diem",
+     "plain": [
+      "the hot shot runs",
+      "hot shot run charges",
+      "a hot shot run to Pratt"
+     ],
+     "oblique": [
+      "rush deliveries",
+      "emergency expedites for down machines",
+      "same-hour dispatches to stranded harvesters",
+      "urgent drops at grower fields",
+      "expedited shipments",
+      "getting components to a stalled harvester fast",
+      "breakdown expediting",
+      "urgent replacement components",
+      "paying premium speed to avoid machine downtime",
+      "rush charges",
+      "emergency trips across the south territory",
+      "a string of urgent breakdown orders",
+      "expedites requested by service managers",
+      "the rush shipments in cutting season",
+      "premium speed",
+      "urgent drives with replacement components"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "flatbed_haul",
+     "vendor": "Sunflower Heavy Haul",
+     "memos": [
+      "Flatbed haul — Ulysses warehouse stock transfer",
+      "Flatbed haul — permit escort"
+     ],
+     "cross_memo": "Flatbed haul — tarp straps",
+     "plain": [
+      "the flatbed haul",
+      "a flatbed haul from Ulysses",
+      "flatbed haul charges"
+     ],
+     "oblique": [
+      "moving inventory between branches",
+      "the branch consolidation shipment",
+      "oversize loads",
+      "relocating spare inventory west",
+      "shifting whole-goods attachments to the new store",
+      "oversized truckloads",
+      "the inventory rebalance",
+      "trucking surplus attachments between locations",
+      "a one-time inventory move",
+      "wide-load trucking",
+      "consolidating spares after closing a branch",
+      "the branch closeout move",
+      "wide-load pilot cars",
+      "trucking for the inventory rebalance",
+      "bulk repositioning of attachments",
+      "moving surplus implements"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Technician Certification Training",
+   "aliases": [
+    "tech training",
+    "certification training",
+    "training spend",
+    "technician schooling",
+    "cert courses"
+   ],
+   "narrative": [
+    "Tech training",
+    "Certification training",
+    "Training spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "AgTech Learning Institute",
+     "base": 4200,
+     "memo": "Online module seats — Salina technicians"
+    },
+    {
+     "vendor": "Prairie Electronics Academy",
+     "base": 2600,
+     "memo": "ISOBUS course — Hays tech cohort"
+    }
+   ],
+   "events": [
+    {
+     "key": "drone_pilot",
+     "vendor": "Prairie Electronics Academy",
+     "memos": [
+      "Drone pilot licensing — Garden City sales",
+      "Drone pilot licensing — exam fees"
+     ],
+     "cross_memo": "Drone pilot licensing — airfare",
+     "plain": [
+      "the drone pilot licensing",
+      "drone pilot licensing costs",
+      "drone pilot licensing for Garden City"
+     ],
+     "oblique": [
+      "getting staff legally cleared to fly aerial sprayers",
+      "aviation credentials",
+      "aerial applicator credentials",
+      "flight certification for the UAV team",
+      "unmanned aircraft qualifications",
+      "preparing reps to operate aerial units",
+      "the flight testing",
+      "remote aircraft credentials for our crop-scouting reps",
+      "aviation qualifications",
+      "getting the new aerial program staffed",
+      "flight lessons",
+      "UAV operator testing",
+      "credentialing reps on unmanned aircraft",
+      "aerial program qualifications",
+      "the aviation tests",
+      "rules-required flight credentials"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "combine_clinic",
+     "vendor": "Redhawk Harvest School",
+     "memos": [
+      "Combine clinic tuition — Grand Island",
+      "Combine clinic tuition — lodging"
+     ],
+     "cross_memo": "Combine clinic tuition — per diem",
+     "plain": [
+      "the combine clinic tuition",
+      "combine clinic tuition costs",
+      "a combine clinic tuition bill"
+     ],
+     "oblique": [
+      "harvester training out of state",
+      "the threshing machine bootcamp",
+      "sending mechanics to a manufacturer workshop",
+      "a week of grain-machine instruction",
+      "harvester bootcamp",
+      "factory instruction on the new rotor models",
+      "preseason harvester instruction",
+      "the manufacturer bootcamp",
+      "rotor diagnostics instruction ahead of fall",
+      "hands-on harvester classes",
+      "sending four mechanics to the factory",
+      "grain machine workshops",
+      "out-of-state harvester instruction",
+      "a manufacturer-run workshop on threshing systems",
+      "rotor classes",
+      "factory workshop attendance"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Floorplan Interest",
+   "aliases": [
+    "floorplan",
+    "floor plan interest",
+    "stock financing",
+    "floorplan charges",
+    "wholegoods interest"
+   ],
+   "narrative": [
+    "Floorplan",
+    "Stock financing",
+    "Floorplan charges"
+   ],
+   "recurring": [
+    {
+     "vendor": "Midwest Equipment Credit",
+     "base": 18500,
+     "memo": "Floorplan interest — new tractors"
+    },
+    {
+     "vendor": "Cornerstone Ag Finance",
+     "base": 6200,
+     "memo": "Used equipment line — curtailment interest"
+    }
+   ],
+   "events": [
+    {
+     "key": "aged_surcharge",
+     "vendor": "Midwest Equipment Credit",
+     "memos": [
+      "Aged inventory surcharge — Wichita sprayer lot",
+      "Aged inventory surcharge — Hays planter row"
+     ],
+     "cross_memo": "Aged inventory surcharge — lot insurance",
+     "plain": [
+      "the aged inventory surcharge",
+      "aged inventory surcharge on sprayers",
+      "aged inventory surcharges"
+     ],
+     "oblique": [
+      "penalties on slow-selling machines",
+      "the stale-machine penalty",
+      "carrying cost on units that sat too long",
+      "a lender fee on unsold rigs past their grace period",
+      "slow turns",
+      "machines that missed the twelve-month window",
+      "the over-age fee",
+      "lender penalties on unsold applicators",
+      "a grace-period expiry",
+      "fees on lingering stock from last season",
+      "unsold rigs crossing the age threshold",
+      "lender penalty",
+      "older stock incurring extra charges",
+      "the slow-mover fee",
+      "expiry of the zero-rate term",
+      "unsold machines past term"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "collateral_audit",
+     "vendor": "Bison Bank Advisory",
+     "memos": [
+      "Collateral audit — Emporia branch count",
+      "Collateral audit — serial verification"
+     ],
+     "cross_memo": "Collateral audit — staff overtime",
+     "plain": [
+      "the collateral audit",
+      "a collateral audit at Emporia",
+      "collateral audit fees"
+     ],
+     "oblique": [
+      "the lender's physical check of our machines",
+      "walking the yard to prove what we hold",
+      "a financier inspection",
+      "proving every pledged machine is on site",
+      "the lender walkthrough",
+      "examiner fees",
+      "the annual security review by our financier",
+      "checking VINs against loan records",
+      "pledged-asset inspection",
+      "a surprise lender visit",
+      "the financier's field examination",
+      "confirming pledged machines exist",
+      "an outside examination of our holdings",
+      "lender examiners",
+      "the security check",
+      "an asset tally requested by the financier"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Branch Facility Rent",
+   "aliases": [
+    "rent",
+    "facility rent",
+    "branch rent",
+    "occupancy",
+    "lease costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Branch rent"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cottonwood Properties",
+     "base": 14000,
+     "memo": "Monthly lease — Salina dealership"
+    },
+    {
+     "vendor": "Smoky Hill Realty",
+     "base": 6500,
+     "memo": "Monthly lease — Hays service bay"
+    }
+   ],
+   "events": [
+    {
+     "key": "common_area",
+     "vendor": "Cottonwood Properties",
+     "memos": [
+      "Common area reconciliation — Salina lot paving",
+      "Common area reconciliation — snow removal"
+     ],
+     "cross_memo": "Common area reconciliation — legal review",
+     "plain": [
+      "the common area reconciliation",
+      "common area reconciliation charges",
+      "a common area reconciliation bill"
+     ],
+     "oblique": [
+      "year-end landlord true-up of shared expenses",
+      "the landlord's annual pass-through bill",
+      "shared upkeep billed back by the landlord",
+      "resurfacing the customer parking",
+      "pass-through charges",
+      "the landlord true-up",
+      "winter plowing costs passed on to tenants",
+      "parking repairs at the main store",
+      "our share of the property upkeep",
+      "the yearly tenant settle-up",
+      "asphalt work billed by the landlord",
+      "plowing",
+      "shared-space upkeep",
+      "a catch-up on tenant expenses",
+      "landlord pass-throughs for asphalt and plowing",
+      "the annual tenant billing"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "farm_show",
+     "vendor": "Tri-County Fairgrounds Authority",
+     "memos": [
+      "Farm show booth — Hutchinson exhibit hall",
+      "Farm show booth — power drop"
+     ],
+     "cross_memo": "Farm show booth — demo trucking",
+     "plain": [
+      "the farm show booth",
+      "a farm show booth at Hutchinson",
+      "farm show booth rental"
+     ],
+     "oblique": [
+      "renting space at the state fair",
+      "the expo stall",
+      "floor space at a regional ag exposition",
+      "a trade fair stand",
+      "event space for the spring expo",
+      "the expo footprint",
+      "rented display space",
+      "our stand at the regional ag expo",
+      "a temporary sales pavilion",
+      "expo rental",
+      "renting a stand to launch the new sprayer line",
+      "the pavilion rental",
+      "a short-term event space",
+      "display square footage at the state fair",
+      "grower expo space",
+      "the trade fair"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Dealer Management Software",
+   "aliases": [
+    "dms",
+    "software",
+    "dealer software",
+    "business systems",
+    "it subscriptions"
+   ],
+   "narrative": [
+    "Software",
+    "Dealer software",
+    "Business systems"
+   ],
+   "recurring": [
+    {
+     "vendor": "FieldLedger Systems",
+     "base": 5400,
+     "memo": "DMS license — 42 users"
+    },
+    {
+     "vendor": "Granary Cloud Hosting",
+     "base": 1800,
+     "memo": "Server hosting — parts catalog"
+    },
+    {
+     "vendor": "Tallgrass Telematics",
+     "base": 3200,
+     "memo": "Telematics portal — customer fleet"
+    }
+   ],
+   "events": [
+    {
+     "key": "data_migration",
+     "vendor": "FieldLedger Systems",
+     "memos": [
+      "Data migration — warranty claims history",
+      "Data migration — consultant hours"
+     ],
+     "cross_memo": "Data migration — temp staff overtime",
+     "plain": [
+      "the data migration",
+      "data migration work",
+      "a data migration project"
+     ],
+     "oblique": [
+      "moving records off the old platform",
+      "converting legacy records",
+      "the conversion project",
+      "porting years of repair records to the new platform",
+      "cutover work",
+      "the system cutover",
+      "moving old service records",
+      "outside help importing legacy files",
+      "legacy conversion",
+      "the platform switchover",
+      "importing old repair records into the new platform",
+      "file conversion",
+      "cleaning up legacy records before go-live",
+      "the go-live effort",
+      "record conversion requested by the service manager",
+      "switching platforms"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "ransomware",
+     "vendor": "Lockridge Cyber Defense",
+     "memos": [
+      "Ransomware remediation — Emporia branch PCs",
+      "Ransomware remediation — forensic review"
+     ],
+     "cross_memo": "Ransomware remediation — replacement laptops",
+     "plain": [
+      "the ransomware remediation",
+      "ransomware remediation at Emporia",
+      "ransomware remediation fees"
+     ],
+     "oblique": [
+      "the security incident",
+      "recovering from the network attack",
+      "the malware outbreak",
+      "cleaning infected machines",
+      "an extortion attack on our network",
+      "restoring locked computers",
+      "the hack",
+      "incident response after encrypted files",
+      "rebuilding compromised workstations",
+      "the breach",
+      "post-attack recovery",
+      "malicious encryption of the store computers",
+      "security experts after the breach",
+      "unlocking encrypted workstations",
+      "the outbreak cleanup",
+      "hardening after the attack"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

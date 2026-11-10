@@ -1,0 +1,708 @@
+{
+ "slug": "ferry-operator",
+ "industry": "ferry operator",
+ "entities": [
+  "Harborline Ferry Co.",
+  "Tidewater Crossings LLC",
+  "Saltmarsh Island Lines",
+  "Cormorant Bay Transit",
+  "Northgate Passage Ferries"
+ ],
+ "accounts": [
+  {
+   "name": "Fuel and Lubricants",
+   "aliases": [
+    "fuel",
+    "fuel costs",
+    "fuel spend",
+    "diesel",
+    "bunkers"
+   ],
+   "narrative": [
+    "Fuel costs",
+    "Diesel spend",
+    "Bunker costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pacific Marine Fuel Supply",
+     "base": 28000,
+     "memo": "Marine diesel delivery - monthly bunkering"
+    },
+    {
+     "vendor": "Seabright Lubricants",
+     "base": 3200,
+     "memo": "Engine oil and filters - fleet resupply"
+    }
+   ],
+   "events": [
+    {
+     "key": "emissions",
+     "vendor": "Pacific Marine Fuel Supply",
+     "memos": [
+      "Scrubber washwater additive - caustic dosing surcharge",
+      "Scrubber washwater additive - tank cleanout"
+     ],
+     "cross_memo": "Scrubber washwater additive - disposal haul",
+     "plain": [
+      "the scrubber washwater additive",
+      "the washwater additive dosing",
+      "the scrubber additive tank cleanout"
+     ],
+     "oblique": [
+      "the new sulfur compliance requirement",
+      "what the port authority demanded after the audit",
+      "cleaning up exhaust treatment",
+      "the cost of staying inside the emissions limits",
+      "a regulator's surprise inspection result",
+      "treating the stack gases",
+      "meeting the clean-air rule on the northern route",
+      "the retrofit our engineers recommended last winter",
+      "extra consumables for the pollution controls",
+      "the environmental office's directive",
+      "keeping the exhaust legal",
+      "chemical dosing for the exhaust cleaners",
+      "the compliance push",
+      "what we added to pass the air quality review",
+      "waste that had to be trucked off",
+      "the mandate on stack output"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "coldsnap",
+     "vendor": "Glacier Cove Heating Oil",
+     "memos": [
+      "Frostline emergency heating - tanker delivery",
+      "Frostline emergency heating - terminal boilers"
+     ],
+     "cross_memo": "Frostline emergency heating - portable heaters rental",
+     "plain": [
+      "the frostline emergency heating",
+      "the frostline heating tanker delivery",
+      "the frostline terminal boilers"
+     ],
+     "oblique": [
+      "the unusually harsh week of weather",
+      "keeping the waiting rooms warm",
+      "the freeze that hit the whole coast",
+      "extra burn to keep pipes from icing",
+      "an arctic blast in January",
+      "staying open when temperatures plunged",
+      "shelter for stranded passengers",
+      "the deep chill",
+      "a sudden cold spell",
+      "keeping the docks ice-free",
+      "making sure the cabins stayed livable",
+      "the record low temperatures",
+      "protecting the plumbing from freezing",
+      "what we spent to ride out the storm front",
+      "heat for the shore facilities",
+      "the winter emergency"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Vessel Maintenance and Drydock",
+   "aliases": [
+    "fleet maintenance",
+    "drydock",
+    "vessel repairs",
+    "fleet upkeep",
+    "maintenance"
+   ],
+   "narrative": [
+    "Fleet maintenance",
+    "Drydock costs",
+    "Vessel repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Anchorage Marine Services",
+     "base": 18000,
+     "memo": "Routine engine room maintenance - monthly"
+    },
+    {
+     "vendor": "Bluewater Paint and Coatings",
+     "base": 4500,
+     "memo": "Hull touch-up supplies"
+    },
+    {
+     "vendor": "Keelson Electrical",
+     "base": 5200,
+     "memo": "Onboard electrical service contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "thruster",
+     "vendor": "Anchorage Marine Services",
+     "memos": [
+      "Bowfin propulsion overhaul - gearbox rebuild",
+      "Bowfin propulsion overhaul - shaft alignment"
+     ],
+     "cross_memo": "Bowfin propulsion overhaul - crane barge hire",
+     "plain": [
+      "the Bowfin propulsion overhaul",
+      "the Bowfin gearbox rebuild",
+      "the Bowfin shaft alignment"
+     ],
+     "oblique": [
+      "getting the flagship moving properly again",
+      "the vibration problem sailors kept reporting",
+      "replacing worn drivetrain parts",
+      "the unit that quit during crossing",
+      "work the classification society insisted on",
+      "an expensive repair on our oldest hull",
+      "the breakdown that pulled a vessel off the schedule",
+      "fixing what turned out to be a major failure",
+      "heavy lifting to pull components out",
+      "a mid-year fix on the biggest boat",
+      "what the engineers found when they opened it up",
+      "the mechanical failure in the spring",
+      "bringing back full power",
+      "restoring reliability to the main route",
+      "the long yard stay",
+      "the unplanned machinery work"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "hullcrack",
+     "vendor": "Orca Shipyard Ltd.",
+     "memos": [
+      "Marlin dockside weld repair - plating renewal",
+      "Marlin dockside weld repair - survey fees"
+     ],
+     "cross_memo": "Marlin dockside weld repair - temporary berth charge",
+     "plain": [
+      "the Marlin dockside weld repair",
+      "the Marlin plating renewal",
+      "the Marlin weld survey fees"
+     ],
+     "oblique": [
+      "damage from the bump against the pier",
+      "the collision last fall",
+      "patching the side after the incident",
+      "hull trouble found at inspection",
+      "fixing the dent from the rough landing",
+      "what happened in the fog",
+      "the crew's report of a leak",
+      "insurance deductible work",
+      "closing up the breach",
+      "making the ship watertight again",
+      "a contact with the breakwater",
+      "steel work after the accident",
+      "what the surveyor flagged",
+      "repairing the scrape along the waterline",
+      "the damage claim",
+      "getting the vessel certified to sail again"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Crew Wages and Benefits",
+   "aliases": [
+    "crew pay",
+    "crew wages",
+    "crew costs",
+    "deckhand payroll",
+    "crewing"
+   ],
+   "narrative": [
+    "Crew pay",
+    "Crew costs",
+    "Crewing spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Payroll Services",
+     "base": 30000,
+     "memo": "Bi-weekly crew payroll processing"
+    },
+    {
+     "vendor": "Seafarers Health Trust",
+     "base": 9500,
+     "memo": "Crew medical premium - monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "relief",
+     "vendor": "Meridian Payroll Services",
+     "memos": [
+      "Summer relief roster - overtime premium",
+      "Summer relief roster - holiday coverage"
+     ],
+     "cross_memo": "Summer relief roster - hotel lodging",
+     "plain": [
+      "the summer relief roster",
+      "the relief roster overtime premium",
+      "the summer roster holiday coverage"
+     ],
+     "oblique": [
+      "staffing gaps when people called out sick",
+      "extra shifts to cover the busy weekends",
+      "crew shortages at the peak of tourist season",
+      "paying people to fill in",
+      "the shortage of licensed hands",
+      "work done outside normal hours",
+      "bringing in temporary help",
+      "stretching thin during the festival",
+      "vacancies we could not fill",
+      "all the double shifts",
+      "keeping the sailings fully manned",
+      "absences on the roster",
+      "the scramble to cover the schedule",
+      "time-and-a-half pay",
+      "the labor crunch",
+      "coverage for holidays"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "unionpact",
+     "vendor": "Tri-Harbor Labor Counsel",
+     "memos": [
+      "Contract ratification bonus - signing payout",
+      "Contract ratification bonus - arbitration fees"
+     ],
+     "cross_memo": "Contract ratification bonus - mediator travel",
+     "plain": [
+      "the contract ratification bonus",
+      "the ratification signing payout",
+      "the ratification arbitration fees"
+     ],
+     "oblique": [
+      "the new deal with the union",
+      "what we agreed to after the strike vote",
+      "a one-time thank-you to the workforce",
+      "settling the labor dispute",
+      "a lump sum handed out to staff",
+      "the negotiated package",
+      "getting the deal across the line",
+      "the long bargaining process",
+      "a gesture to end the standoff",
+      "what the lawyers charged",
+      "agreeing on terms with the guild",
+      "a payout for avoiding a walkout",
+      "retroactive pay in the agreement",
+      "the settlement with our people",
+      "talks that dragged on for months",
+      "one-time payments to employees"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Terminal and Dock Operations",
+   "aliases": [
+    "terminals",
+    "terminal costs",
+    "dock operations",
+    "dock costs",
+    "landings"
+   ],
+   "narrative": [
+    "Terminal costs",
+    "Dock operations",
+    "Landing costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pierpoint Property Management",
+     "base": 14000,
+     "memo": "Terminal lease and common area charges"
+    },
+    {
+     "vendor": "Shoreline Janitorial",
+     "base": 3800,
+     "memo": "Terminal cleaning - monthly"
+    },
+    {
+     "vendor": "Gatekeeper Security",
+     "base": 6200,
+     "memo": "Terminal security patrol"
+    }
+   ],
+   "events": [
+    {
+     "key": "pilings",
+     "vendor": "Pierpoint Property Management",
+     "memos": [
+      "Slip Four piling replacement - timber supply",
+      "Slip Four piling replacement - pile driver crew"
+     ],
+     "cross_memo": "Slip Four piling replacement - diver inspection",
+     "plain": [
+      "the Slip Four piling replacement",
+      "the Slip Four timber supply",
+      "the Slip Four pile driver crew"
+     ],
+     "oblique": [
+      "rot discovered under the boarding area",
+      "the structural condition of the berth",
+      "getting the landing safe for vehicles",
+      "what the engineer condemned",
+      "underwater damage from teredo worms",
+      "shoring up the waterfront",
+      "a failing foundation",
+      "repairs to the dock deck structure",
+      "a section that had to be closed",
+      "what the harbormaster required",
+      "rebuilding the south slip",
+      "the inspection report on the landing",
+      "replacing posts that gave way",
+      "the aged wharf",
+      "heavy construction at the water's edge",
+      "keeping the loading apron open"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "gangway",
+     "vendor": "Lighthouse Accessibility Design",
+     "memos": [
+      "Ramp access upgrade - hydraulic lift install",
+      "Ramp access upgrade - permit review"
+     ],
+     "cross_memo": "Ramp access upgrade - signage and tactile paving",
+     "plain": [
+      "the ramp access upgrade",
+      "the ramp hydraulic lift install",
+      "the ramp upgrade permit review"
+     ],
+     "oblique": [
+      "making boarding easier for wheelchair users",
+      "a response to the complaint from riders",
+      "meeting the disability rules",
+      "an inclusion project at the main landing",
+      "what the advocacy group requested",
+      "easier loading for passengers with limited mobility",
+      "the compliance letter from the federal office",
+      "improving barrier-free entry",
+      "an equipment upgrade for those who cannot take stairs",
+      "a legal settlement outcome",
+      "the folks who need assistance",
+      "universal boarding",
+      "work ordered after the audit",
+      "the lift for the walkway",
+      "inclusive design work",
+      "a long-promised improvement"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Liability",
+   "aliases": [
+    "marine insurance",
+    "insurance",
+    "hull cover",
+    "liability cover",
+    "premiums"
+   ],
+   "narrative": [
+    "Marine insurance",
+    "Insurance costs",
+    "Premium spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lloyd Hartwell Underwriters",
+     "base": 22000,
+     "memo": "Hull and machinery premium - monthly installment"
+    },
+    {
+     "vendor": "Commonwealth P&I Club",
+     "base": 8800,
+     "memo": "Protection and indemnity call"
+    }
+   ],
+   "events": [
+    {
+     "key": "claimsurge",
+     "vendor": "Lloyd Hartwell Underwriters",
+     "memos": [
+      "Loss history adjustment - retroactive surcharge",
+      "Loss history adjustment - renewal true-up"
+     ],
+     "cross_memo": "Loss history adjustment - broker commission",
+     "plain": [
+      "the loss history adjustment",
+      "the loss history retroactive surcharge",
+      "the loss history renewal true-up"
+     ],
+     "oblique": [
+      "the insurer penalizing us for the bad year",
+      "a bump after the incidents we reported",
+      "higher rates at renewal",
+      "what the underwriter said about our record",
+      "a catch-up charge on last period",
+      "risk reassessed upward",
+      "the carrier's view of our safety performance",
+      "paying more because of claims",
+      "an after-the-fact bill",
+      "an increase nobody budgeted",
+      "the audit by the insurer",
+      "how the market priced us",
+      "adjusted cover terms",
+      "a charge reflecting past mishaps",
+      "the renewal negotiation outcome",
+      "our worsened rating"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "cyberpolicy",
+     "vendor": "Fathom Specialty Risk",
+     "memos": [
+      "Ransomware rider - new policy binder",
+      "Ransomware rider - forensic readiness audit"
+     ],
+     "cross_memo": "Ransomware rider - legal retainer",
+     "plain": [
+      "the ransomware rider",
+      "the ransomware policy binder",
+      "the ransomware forensic readiness audit"
+     ],
+     "oblique": [
+      "protection from hackers",
+      "a new line of coverage the board approved",
+      "the booking system outage that spooked everyone",
+      "an agreement requiring digital safeguards",
+      "coverage for a possible data breach",
+      "what the lender wanted in place",
+      "guarding against online extortion",
+      "the first policy of its kind for us",
+      "a security review before the cover started",
+      "insuring the ticketing platform",
+      "what the directors asked after the news",
+      "protection for the reservation servers",
+      "new cover for technology failures",
+      "shielding us from criminals on the network",
+      "the extra cover purchased this year",
+      "a response to the industry attacks"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Port Fees and Navigation",
+   "aliases": [
+    "port fees",
+    "harbor dues",
+    "navigation costs",
+    "pilotage",
+    "berthing fees"
+   ],
+   "narrative": [
+    "Port fees",
+    "Harbor dues",
+    "Navigation costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Port Authority of Bayhaven",
+     "base": 16000,
+     "memo": "Harbor dues and wharfage - monthly"
+    },
+    {
+     "vendor": "Narrows Pilots Association",
+     "base": 7400,
+     "memo": "Pilotage services - scheduled"
+    }
+   ],
+   "events": [
+    {
+     "key": "dredging",
+     "vendor": "Port Authority of Bayhaven",
+     "memos": [
+      "Channel depth assessment - maintenance dredge levy",
+      "Channel depth assessment - sediment survey share"
+     ],
+     "cross_memo": "Channel depth assessment - tug standby",
+     "plain": [
+      "the channel depth assessment",
+      "the channel depth dredge levy",
+      "the channel depth sediment survey share"
+     ],
+     "oblique": [
+      "silt building up near the entrance",
+      "a charge for deeper water",
+      "the shared cost of clearing the approach",
+      "keeping the passage navigable at low tide",
+      "the mud that kept grounding our boats",
+      "our portion of the clearing work",
+      "what all the carriers split",
+      "waterway upkeep",
+      "the sandbar problem",
+      "dirt removed from the seabed",
+      "the authority's bill for scraping the bottom",
+      "making room under the keel",
+      "what the harbor board assessed us",
+      "a seasonal buildup",
+      "the shallow spots",
+      "opening the route for larger vessels"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "storm",
+     "vendor": "Seacoast Salvage and Towing",
+     "memos": [
+      "Gale diversion - tow assistance",
+      "Gale diversion - alternate harbor fees"
+     ],
+     "cross_memo": "Gale diversion - passenger rebooking",
+     "plain": [
+      "the gale diversion",
+      "the gale diversion tow assistance",
+      "the gale diversion alternate harbor fees"
+     ],
+     "oblique": [
+      "the weather event that rerouted several sailings",
+      "landing somewhere else after the wind picked up",
+      "help getting a vessel off the rocks",
+      "an unplanned stop at the neighboring port",
+      "what the squall cost us",
+      "getting home safely in rough seas",
+      "the boat that could not dock",
+      "a rescue on the open water",
+      "the emergency call",
+      "the detour forced by conditions",
+      "extra charges at a harbor we do not normally use",
+      "the night the swell closed our slip",
+      "the dangerous crossing",
+      "assistance from outside the fleet",
+      "getting passengers to shore anyway",
+      "the storm weekend"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Onboard Services and Concessions",
+   "aliases": [
+    "galley",
+    "onboard services",
+    "concessions",
+    "catering",
+    "food and beverage"
+   ],
+   "narrative": [
+    "Galley costs",
+    "Onboard services",
+    "Concession spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harvest Table Foodservice",
+     "base": 11000,
+     "memo": "Galley provisions - weekly deliveries"
+    },
+    {
+     "vendor": "CleanWake Linen",
+     "base": 2600,
+     "memo": "Linen and uniform laundering"
+    },
+    {
+     "vendor": "Brewline Coffee Roasters",
+     "base": 1900,
+     "memo": "Coffee bar supplies"
+    }
+   ],
+   "events": [
+    {
+     "key": "galleyfit",
+     "vendor": "Harvest Table Foodservice",
+     "memos": [
+      "Lounge deck refit - kitchen equipment",
+      "Lounge deck refit - freezer installation"
+     ],
+     "cross_memo": "Lounge deck refit - contractor accommodations",
+     "plain": [
+      "the lounge deck refit",
+      "the lounge deck kitchen equipment",
+      "the lounge deck freezer installation"
+     ],
+     "oblique": [
+      "a new look for the passenger cabin",
+      "the renovation that kept a boat out of service",
+      "modernizing where people eat",
+      "what the marketing team wanted for the premium crossings",
+      "new appliances on the flagship",
+      "upgrading the dining space",
+      "an overhaul of the passenger amenities",
+      "the facelift on the upper level",
+      "cooking gear that replaced worn-out units",
+      "a bigger menu requiring more kit",
+      "investing in the traveler experience",
+      "the design project completed in winter",
+      "the revamp of the cafe area",
+      "state of the art cooking equipment",
+      "getting the seating area redone",
+      "the expansion of what we serve"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "festival",
+     "vendor": "Driftwood Event Caterers",
+     "memos": [
+      "Regatta weekend charter - catering package",
+      "Regatta weekend charter - staffing surcharge"
+     ],
+     "cross_memo": "Regatta weekend charter - tent rental",
+     "plain": [
+      "the regatta weekend charter",
+      "the regatta charter catering package",
+      "the regatta weekend staffing surcharge"
+     ],
+     "oblique": [
+      "the special sailings for the sailing races",
+      "a big crowd of spectators",
+      "extra food for a sold-out weekend",
+      "serving the thousands who came for the competition",
+      "a private booking for the yacht club",
+      "the party boat arrangement",
+      "a one-off hospitality gig",
+      "what we laid on for the visiting sponsors",
+      "the annual sporting event on the water",
+      "hosting guests on deck",
+      "an outside group renting our boat",
+      "meals for the VIP guests",
+      "a local celebration",
+      "the event we promoted heavily",
+      "entertaining a large group",
+      "the busiest two days of the year"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

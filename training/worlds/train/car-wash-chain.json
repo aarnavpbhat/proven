@@ -1,0 +1,800 @@
+{
+ "slug": "car-wash-chain",
+ "industry": "car wash chain",
+ "entities": [
+  "Bubbleline Auto Spas",
+  "Tunnel Vision Car Wash Group",
+  "Crestwave Express Washes",
+  "Sparkroad Wash Partners",
+  "Harborfoam Detail Co"
+ ],
+ "accounts": [
+  {
+   "name": "Water and Sewer",
+   "aliases": [
+    "water",
+    "water and sewer",
+    "water costs",
+    "utilities water",
+    "sewer charges"
+   ],
+   "narrative": [
+    "Water costs",
+    "Water and sewer",
+    "Sewer charges"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Municipal Water District",
+     "base": 18500,
+     "memo": "Monthly metered water usage all sites"
+    },
+    {
+     "vendor": "Clearbrook Sewer Authority",
+     "base": 9200,
+     "memo": "Sewer discharge fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "backflow",
+     "vendor": "Metro Municipal Water District",
+     "memos": [
+      "Backflow valve retrofit — city mandate",
+      "Backflow valve retrofit — inspection fee"
+     ],
+     "cross_memo": "Backflow valve retrofit — plumber labor",
+     "plain": [
+      "the backflow valve retrofit",
+      "the backflow retrofit mandate",
+      "backflow valve retrofit costs"
+     ],
+     "oblique": [
+      "the new city requirement on pipe protection",
+      "what the utility made us install at the tunnels",
+      "compliance work on the incoming lines",
+      "a regulatory order",
+      "the safety device installation",
+      "mandated plumbing upgrades",
+      "the inspector's punch list",
+      "city-ordered hardware",
+      "the protection against contaminated flow",
+      "an unplanned install at three sites",
+      "what the municipality required",
+      "pipe safeguards",
+      "the permit-driven changes",
+      "the mandate from the utility",
+      "keeping our service connections legal",
+      "the fix demanded after the audit"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "hydrant",
+     "vendor": "Riverbend Hydrant Rentals",
+     "memos": [
+      "Hydrant meter lease — Riverbend",
+      "Hydrant meter lease — grand opening fill"
+     ],
+     "cross_memo": "Hydrant meter lease — tanker haul",
+     "plain": [
+      "the hydrant meter lease",
+      "hydrant lease for the opening",
+      "the Riverbend hydrant lease"
+     ],
+     "oblique": [
+      "temporary supply for the new location",
+      "what we needed before the lines were hooked up",
+      "getting the new site running",
+      "startup supply at the fresh build",
+      "the stopgap for the site with no connection",
+      "opening week logistics",
+      "bridging the gap until service arrived",
+      "the borrowed flow at the newest site",
+      "filling the reclaim tanks early",
+      "the launch of the newest store",
+      "interim supply arrangements",
+      "a site that was not yet connected",
+      "the ribbon-cutting week supply",
+      "pre-launch needs",
+      "hauling in what the pipes could not yet give",
+      "the new build's first weeks"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Wash Chemicals and Soaps",
+   "aliases": [
+    "chemicals",
+    "chemical costs",
+    "soaps",
+    "wash chemistry",
+    "chemical spend"
+   ],
+   "narrative": [
+    "Chemical costs",
+    "Wash chemicals",
+    "Soap spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Foamworks Chemical Supply",
+     "base": 24000,
+     "memo": "Presoak and detergent drums"
+    },
+    {
+     "vendor": "ShineCoat Products",
+     "base": 11500,
+     "memo": "Tire shine and wax concentrate"
+    },
+    {
+     "vendor": "Brightline Drying Agents",
+     "base": 6800,
+     "memo": "Rinse aid totes"
+    }
+   ],
+   "events": [
+    {
+     "key": "ceramic",
+     "vendor": "ShineCoat Products",
+     "memos": [
+      "Ceramic sealant launch — premium bulk order",
+      "Ceramic sealant launch — sample cases"
+     ],
+     "cross_memo": "Ceramic sealant launch — signage printing",
+     "plain": [
+      "the ceramic sealant launch",
+      "ceramic sealant launch stock",
+      "the ceramic launch order"
+     ],
+     "oblique": [
+      "the new top-tier package",
+      "stocking up for the upsell",
+      "the premium menu item customers asked for",
+      "an added protective finish offering",
+      "the product we rolled out in spring",
+      "inventory for the upgraded option",
+      "the glossy new service",
+      "what marketing wanted on the board",
+      "a higher-margin add-on",
+      "front-loaded supply for the promotion",
+      "the flagship upgrade",
+      "the extra coating tier",
+      "the new offering at the pay station",
+      "initial stock for the rollout",
+      "the ticket-price boost",
+      "the long-lasting shield treatment"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "recall",
+     "vendor": "Pureclean Industrial Blends",
+     "memos": [
+      "Pureclean replacement lot — defective batch",
+      "Pureclean replacement lot — expedited freight"
+     ],
+     "cross_memo": "Pureclean replacement lot — paint damage claim",
+     "plain": [
+      "the Pureclean replacement lot",
+      "the defective batch replacement",
+      "Pureclean defective batch costs"
+     ],
+     "oblique": [
+      "the shipment that went bad",
+      "what we had to buy twice",
+      "the supplier mix-up",
+      "product that failed at the tunnels",
+      "a re-buy after the problem surfaced",
+      "the faulty drums",
+      "emergency restocking",
+      "an unplanned second purchase",
+      "the stuff that left spots on cars",
+      "the fix for a ruined delivery",
+      "customers complaining about streaks",
+      "replacing unusable inventory",
+      "the quality failure upstream",
+      "rush replenishment",
+      "the batch we pulled off the line",
+      "paying again for supply we could not use"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Conveyor and Tunnel Equipment Repairs",
+   "aliases": [
+    "tunnel repairs",
+    "conveyor repairs",
+    "equipment repairs",
+    "tunnel maintenance",
+    "conveyor upkeep"
+   ],
+   "narrative": [
+    "Tunnel repairs",
+    "Conveyor upkeep",
+    "Equipment repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Driveline Conveyor Service",
+     "base": 15500,
+     "memo": "Scheduled chain and roller service"
+    },
+    {
+     "vendor": "Apex Tunnel Controls",
+     "base": 7400,
+     "memo": "PLC and sensor maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "gearbox",
+     "vendor": "Driveline Conveyor Service",
+     "memos": [
+      "Main drive gearbox rebuild — Eastgate tunnel",
+      "Main drive gearbox rebuild — crane rental"
+     ],
+     "cross_memo": "Main drive gearbox rebuild — lost wash revenue credit",
+     "plain": [
+      "the main drive gearbox rebuild",
+      "gearbox rebuild at Eastgate",
+      "the Eastgate gearbox rebuild"
+     ],
+     "oblique": [
+      "the breakdown at our busiest location",
+      "what took the line down for a week",
+      "the heavy overhaul of the motor assembly",
+      "a failure on a Saturday morning",
+      "the big mechanical casualty",
+      "getting the belt moving again",
+      "the costly stoppage",
+      "power transmission trouble",
+      "an unplanned shutdown",
+      "the part that seized",
+      "hoisting out the heavy unit",
+      "the repair nobody budgeted",
+      "restoring the line to operation",
+      "the major failure at the flagship",
+      "mechanical failure in the drive train",
+      "a week of dark bays"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "brushes",
+     "vendor": "Cleartrack Fabrication",
+     "memos": [
+      "Cloth curtain replacement — all Northside tunnels",
+      "Cloth curtain replacement — install crew"
+     ],
+     "cross_memo": "Cloth curtain replacement — disposal of old rolls",
+     "plain": [
+      "the cloth curtain replacement",
+      "Northside cloth curtain costs",
+      "the curtain replacement project"
+     ],
+     "oblique": [
+      "swapping out the worn fabric strips",
+      "refreshing the soft-touch components",
+      "what contacts the car body",
+      "the scheduled changeout of wear items",
+      "a full set of new hanging material",
+      "the tired-looking fringe",
+      "bringing the tunnels back to like-new",
+      "the Northside refresh",
+      "replacing what had frayed",
+      "the overdue renewal",
+      "upgrading the parts that touch paint",
+      "what the district manager flagged",
+      "the batch of consumable swaps",
+      "new material across three locations",
+      "the long-deferred swap",
+      "getting rid of ragged strips"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Vacuum and Detail Bay Supplies",
+   "aliases": [
+    "vacuum costs",
+    "detail supplies",
+    "vacuum bay",
+    "vacuums",
+    "detail bay spend"
+   ],
+   "narrative": [
+    "Vacuum costs",
+    "Detail supplies",
+    "Vacuum bay"
+   ],
+   "recurring": [
+    {
+     "vendor": "TurboVac Systems",
+     "base": 5200,
+     "memo": "Vacuum motor service plan"
+    },
+    {
+     "vendor": "Interior Pro Supply",
+     "base": 3800,
+     "memo": "Microfiber towels and interior cleaners"
+    }
+   ],
+   "events": [
+    {
+     "key": "turbine",
+     "vendor": "TurboVac Systems",
+     "memos": [
+      "Turbine upgrade program — 40 stations",
+      "Turbine upgrade program — electrical rewiring"
+     ],
+     "cross_memo": "Turbine upgrade program — power draw surcharge",
+     "plain": [
+      "the turbine upgrade program",
+      "turbine upgrade stations",
+      "the 40 station turbine upgrade"
+     ],
+     "oblique": [
+      "stronger suction for customers",
+      "replacing the old units across the lots",
+      "the self-serve refresh",
+      "what customers kept complaining was weak",
+      "the capital refresh of the free amenity",
+      "more powerful machines at the pavilions",
+      "the fleet-wide swap of the motors",
+      "improving the do-it-yourself experience",
+      "the sweeping change to the outdoor stalls",
+      "newer hardware under the canopies",
+      "the multi-site rollout of better machines",
+      "reviews calling out poor performance",
+      "the amenity improvement",
+      "a bigger-ticket modernization",
+      "the equipment our guests use themselves",
+      "an overhaul of the free-use area"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "odor",
+     "vendor": "FreshAir Remediation",
+     "memos": [
+      "Odor remediation — Lakeshore detail bay",
+      "Odor remediation — ozone treatment"
+     ],
+     "cross_memo": "Odor remediation — mold testing",
+     "plain": [
+      "the odor remediation",
+      "Lakeshore odor remediation",
+      "the ozone odor treatment"
+     ],
+     "oblique": [
+      "the smell problem in the building",
+      "the cleanup after the damp spell",
+      "what we did about complaints from staff",
+      "dealing with the funk in the finishing area",
+      "a mustiness issue at one location",
+      "the air quality fix",
+      "a health department concern",
+      "the lingering stench",
+      "the closed-off room we could not use",
+      "what the manager escalated",
+      "getting the space habitable again",
+      "an unpleasant surprise after the flood",
+      "clearing the air",
+      "the sanitation scare",
+      "the pungent situation",
+      "bringing back a usable workspace"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Reclaim and Wastewater Treatment",
+   "aliases": [
+    "reclaim",
+    "reclaim system",
+    "wastewater",
+    "water treatment",
+    "reclaim costs"
+   ],
+   "narrative": [
+    "Reclaim costs",
+    "Wastewater treatment",
+    "Reclaim system"
+   ],
+   "recurring": [
+    {
+     "vendor": "AquaCycle Treatment Services",
+     "base": 13800,
+     "memo": "Reclaim tank service and filter changes"
+    },
+    {
+     "vendor": "Greenflow Sludge Hauling",
+     "base": 4900,
+     "memo": "Monthly sludge pickup"
+    }
+   ],
+   "events": [
+    {
+     "key": "oilsep",
+     "vendor": "AquaCycle Treatment Services",
+     "memos": [
+      "Oil separator replacement — Westfield site",
+      "Oil separator replacement — excavation"
+     ],
+     "cross_memo": "Oil separator replacement — concrete repair",
+     "plain": [
+      "the oil separator replacement",
+      "Westfield oil separator costs",
+      "the separator replacement"
+     ],
+     "oblique": [
+      "digging up the lot to swap the buried unit",
+      "what failed the discharge test",
+      "a regulatory near-miss",
+      "the underground equipment that quit",
+      "tearing up the pavement",
+      "a notice from the environmental agency",
+      "the cure for a failed sample",
+      "the heavy civil work at one location",
+      "what kept us from being fined",
+      "replacing the part that traps contaminants",
+      "the corrective action plan",
+      "an expensive hole in the ground",
+      "the buried tank problem",
+      "upgrade of the screening equipment",
+      "a compliance headache",
+      "trenching in the wash lot"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "flood",
+     "vendor": "Stormguard Pumping",
+     "memos": [
+      "Emergency pump-out — storm surge",
+      "Emergency pump-out — overnight crew"
+     ],
+     "cross_memo": "Emergency pump-out — dumpster loads",
+     "plain": [
+      "the emergency pump-out",
+      "storm surge pump-out",
+      "the overnight pump-out crew"
+     ],
+     "oblique": [
+      "the weather event that overran the tanks",
+      "when the rain was too much",
+      "clearing out after the downpour",
+      "a night of heavy storms",
+      "the overflow situation",
+      "the all-hands cleanup at midnight",
+      "water where it should not be",
+      "a pit that filled past capacity",
+      "the call we made at two in the morning",
+      "relief for the flooded basement",
+      "nature's invoice",
+      "the severe forecast aftermath",
+      "dealing with standing water",
+      "sucking out the excess",
+      "a day when the lot was a pond",
+      "the contractor we rushed in"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Uniforms and Crew Supplies",
+   "aliases": [
+    "uniforms",
+    "crew uniforms",
+    "crew supplies",
+    "uniform costs",
+    "staff apparel"
+   ],
+   "narrative": [
+    "Uniform costs",
+    "Crew supplies",
+    "Staff apparel"
+   ],
+   "recurring": [
+    {
+     "vendor": "CleanStitch Linen Service",
+     "base": 6100,
+     "memo": "Weekly uniform rental and laundering"
+    },
+    {
+     "vendor": "Bayfront Safety Gear",
+     "base": 2400,
+     "memo": "Gloves and rain jackets"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "CleanStitch Linen Service",
+     "memos": [
+      "Rebrand uniform rollout — new logo polos",
+      "Rebrand uniform rollout — embroidery setup"
+     ],
+     "cross_memo": "Rebrand uniform rollout — signage wraps",
+     "plain": [
+      "the rebrand uniform rollout",
+      "new logo polos",
+      "the rebrand rollout"
+     ],
+     "oblique": [
+      "the identity refresh",
+      "what the new look required of the crew",
+      "outfitting everyone in the updated colors",
+      "a marketing-led change",
+      "the visual overhaul",
+      "all the team in new shirts",
+      "the company's new image",
+      "a fresh brand face",
+      "the creative department's project",
+      "matching the new look across sites",
+      "an image-driven expense",
+      "the logo change",
+      "getting every team member re-dressed",
+      "the head office initiative",
+      "reflecting the updated identity",
+      "a one-time wardrobe swap"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "winter",
+     "vendor": "Northpeak Outerwear",
+     "memos": [
+      "Insulated parka order — cold season",
+      "Insulated parka order — thermal liners"
+     ],
+     "cross_memo": "Insulated parka order — heater rentals",
+     "plain": [
+      "the insulated parka order",
+      "cold season parka costs",
+      "the thermal liner purchase"
+     ],
+     "oblique": [
+      "keeping the team warm outside",
+      "gear for the frigid months",
+      "what the staff asked for after the freeze",
+      "protection from the cold snap",
+      "winter readiness",
+      "clothing for working in the sleet",
+      "the seasonal outfitting",
+      "a response to turnover complaints",
+      "the retention measure for outdoor staff",
+      "what we bought before December",
+      "coverage for sub-zero shifts",
+      "a morale investment",
+      "the layers our attendants needed",
+      "preparing for the long chill",
+      "relief for shivering crews",
+      "the early-season purchase"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Loyalty Program and Membership Billing",
+   "aliases": [
+    "loyalty",
+    "membership billing",
+    "unlimited club",
+    "loyalty program",
+    "membership costs"
+   ],
+   "narrative": [
+    "Loyalty costs",
+    "Membership billing",
+    "Unlimited club expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "PassGate RFID Systems",
+     "base": 9500,
+     "memo": "Monthly tag and gate platform fees"
+    },
+    {
+     "vendor": "RecurPay Processing",
+     "base": 8700,
+     "memo": "Subscription card processing fees"
+    },
+    {
+     "vendor": "Loyalbird CRM",
+     "base": 3600,
+     "memo": "Customer app hosting"
+    }
+   ],
+   "events": [
+    {
+     "key": "chargeback",
+     "vendor": "RecurPay Processing",
+     "memos": [
+      "Dispute surge fees — duplicate billing batch",
+      "Dispute surge fees — card network penalty"
+     ],
+     "cross_memo": "Dispute surge fees — refund processing labor",
+     "plain": [
+      "the dispute surge fees",
+      "duplicate billing batch fees",
+      "the card network penalty"
+     ],
+     "oblique": [
+      "customers being charged twice",
+      "the mistake in the monthly run",
+      "what happened when the file went out wrong",
+      "money going back to angry members",
+      "the billing glitch",
+      "an error that hit thousands of accounts",
+      "the day the system misfired",
+      "fallout from a bad run",
+      "the penalty for too many reversals",
+      "a clerical slip at scale",
+      "the cost of fixing a bad cycle",
+      "members calling to complain",
+      "a faulty submission",
+      "the overcharge incident",
+      "cleaning up after the glitch",
+      "returning funds en masse"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "promo",
+     "vendor": "Sunburst Mobile Marketing",
+     "memos": [
+      "First month free promo — text blast",
+      "First month free promo — redemption credits"
+     ],
+     "cross_memo": "First month free promo — flyer printing",
+     "plain": [
+      "the first month free promo",
+      "free promo text blast",
+      "the promo redemption credits"
+     ],
+     "oblique": [
+      "the campaign to win new subscribers",
+      "giveaways to drive sign-ups",
+      "the spring membership drive",
+      "an acquisition push",
+      "what we spent to grow the base",
+      "giving away the trial period",
+      "attracting fresh members",
+      "the marketing offer that worked",
+      "a surge in enrollments",
+      "incentives for newcomers",
+      "the push to beat a competitor",
+      "the sign-up incentive",
+      "a temporary price cut",
+      "the growth initiative",
+      "the outreach that got customers in the door",
+      "the offer we ran across all sites"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Fleet and Service Vehicles",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "fleet maintenance",
+    "service vehicles",
+    "vehicle costs"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Vehicle costs",
+    "Service vehicle spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmaster Fleet Leasing",
+     "base": 7800,
+     "memo": "Service van lease payments"
+    },
+    {
+     "vendor": "Pumpline Fuel Cards",
+     "base": 3100,
+     "memo": "Fuel for supply vans"
+    }
+   ],
+   "events": [
+    {
+     "key": "brakes",
+     "vendor": "Roadmaster Fleet Leasing",
+     "memos": [
+      "Fleet brake recall — pad and rotor service",
+      "Fleet brake recall — loaner vans"
+     ],
+     "cross_memo": "Fleet brake recall — towing charges",
+     "plain": [
+      "the fleet brake recall",
+      "pad and rotor service",
+      "the brake recall loaner vans"
+     ],
+     "oblique": [
+      "the safety notice from the manufacturer",
+      "what we had to fix on every van",
+      "stopping power problems",
+      "a mandatory fix across the lineup",
+      "the defect that grounded the trucks",
+      "pulling vehicles off the road",
+      "an issue the maker flagged",
+      "the campaign that sidelined our rides",
+      "a warranty-type repair we paid for anyway",
+      "getting wheels back on the street",
+      "the notice in the mail",
+      "an urgent service bulletin",
+      "the delivery vans sitting idle",
+      "making the vehicles safe to drive",
+      "corrective work on every unit",
+      "the grounded supply run"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "wrap",
+     "vendor": "Vividgraphics Wraps",
+     "memos": [
+      "Vehicle wrap refresh — district vans",
+      "Vehicle wrap refresh — decal removal"
+     ],
+     "cross_memo": "Vehicle wrap refresh — design proofs",
+     "plain": [
+      "the vehicle wrap refresh",
+      "district van wrap costs",
+      "the wrap decal removal"
+     ],
+     "oblique": [
+      "making the vans look sharp again",
+      "the paint-like covering on the trucks",
+      "rolling billboards updated",
+      "what the regional manager wanted before the anniversary",
+      "a cosmetic upgrade",
+      "new graphics across the lineup",
+      "a facelift for the roadside presence",
+      "peeling vinyl replaced",
+      "advertising on four wheels",
+      "the appearance project",
+      "vehicle branding",
+      "the redo of our moving ads",
+      "a visual touch-up for the district",
+      "upgrade of the exterior look",
+      "a mobile marketing refresh",
+      "the shiny new exteriors"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}
