@@ -433,6 +433,23 @@ held-out reasons), so the curve saturates far sooner than real commentary would.
 is the shape of the system: the model's job is to draft lessons, a person confirms each once, and
 after that the deterministic rules decide.
 
+Local open-weight models, through Ollama on an M5 Pro, on 40 held-out closes (77 controls, 24
+defects). No model run broke a kill criterion; what differs is how many usable lessons each
+drafts from the same 40 closes, and what those lessons do on the next 40:
+
+| Proposer | Decided, default guard | Control FAIL | Unsafe PASS | Lessons from 40 closes | Decided on the next 40 after teaching |
+|---|---|---|---|---|---|
+| llama3.1:8b | 10.9% | 0 | 0 | 1 | 10.6% |
+| qwen2.5:7b | 10.9% | 0 | 0 | 4 | 17.3% |
+| qwen2.5:14b | 10.9% | 0 | 0 | 7 | 22.1% |
+| qwen3.5:9b (q4) | 9.9% | 0 | 0 | 7 | 24.0% |
+| Claude Sonnet | 10.9% | 0 | 0 | 31 | 71.2% |
+
+(Untaught, the next 40 closes sit at 9.6% decided. qwen3.5:9b failed to extract 3 of the 24
+defective claims at all; those count as missed, not passed.) So the proposer's quality matters
+after all, but as a drafter of lessons rather than as a judge: that is the place a stronger or
+fine-tuned model would pay.
+
 The first run of this simulation passed three wrong explanations. A correct lesson
 ("board coverage" → d&o) left the stray word "coverage" free to match an unrelated cyber-coverage
 invoice, and together they covered a movement the stated reason only half explained. A lesson now
@@ -453,8 +470,7 @@ Other limits:
 - Two periods.
 - Expense accounts only; no accruals or reversals logic.
 - The Claude extractor has been run live once (Haiku, Sonnet and Opus on 40 closes; Sonnet on
-  440). The open-weight extractor runs against a local Ollama server but has no benchmark
-  numbers here yet.
+  440). The open-weight extractor has been run on 40 closes per model, which is a small sample.
 
 ---
 
