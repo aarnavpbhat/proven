@@ -190,7 +190,8 @@ Proven** under the Resolve menu. A lesson is a phrase and the ledger words it st
   needs the tick box confirming you checked the matched transactions. A sentence you recorded
   as **Confirm defect** becomes a known-wrong case: no later lesson may make it pass. A lesson
   is also refused when one of its words matches only this account's routine, unmoved lines or
-  is not needed for the claim to pass; the refusal names the words to teach instead
+  is not needed for the claim to pass, and when its words cover only some of a vendor's new
+  charges that month; the refusal names the words
   ([why](docs/teaching.md#lessons-keep-only-the-words-their-cause-needs)).
 - **Lessons.** **Learned → Lessons** lists what was taught, with the sentence it came from and
   **Remove**. A lesson applies to every close until it is removed.
@@ -508,7 +509,8 @@ invoice, and together they covered a movement the stated reason only half explai
 replaces its trigger's words instead of adding to them (`claims.anchored_terms`). It also keeps
 only the ledger words its own claim's PASS needs (`learned.trim_terms`), after a guessed vendor
 name, confirmed along with the right word, later carried two wrong explanations to PASS on a
-new suite; the rule, that incident and its cost are in
+new suite. A third rule refuses a lesson whose words cover only part of a vendor's new charges.
+The rules, the incidents behind them and their cost are in
 [docs/teaching.md](docs/teaching.md#lessons-keep-only-the-words-their-cause-needs).
 
 There is also a `paraphrase` tier (`--phrasing paraphrase`) whose train and test phrases are
@@ -578,18 +580,22 @@ The full account, with every table and the commands, is in
   for every proposer.
 - **In the one world it was first trained on it scores at the ceiling, by memorising.** 92.5%
   against Sonnet's 88.3%, and an ablation with four cause families removed shows the model
-  had learned which words go with which of that world's causes. The unseen-worlds benchmark
-  exists because of that result.
+  had learned which words go with which of that world's causes. On the unseen worlds that
+  model decides 20.9%. The unseen-worlds benchmark exists because of the ablation.
 - **The loss was diagnosed to one measurable thing.** A proposer has to guess, blind, a word
   the books really use. Sonnet's guesses find the cause for 84% of true claims; the first
   multi-world model's found 33%, because its training targets named vendors no request
   predicts. Targets rebuilt as "guessable and true" doubled its rate on the dev worlds. An
   untuned 3B model finds 3% and an untuned 7B model 33%: what is left is knowledge of how
   businesses describe what they buy, which is what a larger model has.
-- **The benchmark found a safety gap in Proven.** On a second suite kept unopened, lessons
-  drafted from Sonnet's guesses let 2 wrong explanations PASS. A lesson now keeps only the
-  words its PASS needs ([`docs/teaching.md`](docs/teaching.md)); the unsafe PASSes are gone
-  and the bars moved by under a point.
+- **The benchmark found two safety gaps in Proven.** On a second suite of nine worlds kept
+  unopened (where the local model again loses, 57.8% to Sonnet's 80.5%), lessons drafted from
+  Sonnet's guesses let 2 wrong explanations PASS, and lessons drafted from the local model's
+  failed 2 correct ones and passed 1 wrong one. A lesson now keeps only the words its PASS
+  needs, none that matched only routine lines, and must cover all of a vendor's new charges
+  or none ([`docs/teaching.md`](docs/teaching.md)). With those rules no cached proposer
+  breaks a kill criterion at any teaching step, and the bars moved by under a point. The
+  rules were written from the breaches found, so that is a fit, not a proof.
 - **Replies are admissible by construction.** `training/constrain.py` decodes under a
   byte-level automaton, so a reply is always the schema's JSON, quotes and figures are always
   substrings of the explanation, and accounts always come from the chart, at 0.73 ms per

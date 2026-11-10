@@ -211,9 +211,9 @@ companies (brightline, keystone, lumen_loom, halvorsen) and measures the other h
 plus lessons, then the other way round. It uses the `teachsim.py` rule: teach only from a
 correct claim in REVIEW because its support rests on model terms, where confirming those terms
 makes it PASS. Since `0798d4e` the confirmed words are those `learned.trim_terms` keeps
-(docs/teaching.md, "Lessons keep only the words their cause needs"). Re-run with that rule, the
-"after fixes" rows below are unchanged; the earlier code states taught no lesson, so the rule
-cannot change them.
+(docs/teaching.md, "Lessons keep only the words their cause needs"). Re-run with those rules
+(again after the third, `814b2d5`), the "after fixes" rows below are unchanged; the earlier
+code states taught no lesson, so the rules cannot change them.
 
 | Code | Taught on | Lessons | Held half: decided before → after | Unsafe PASS | Control FAIL |
 |---|---|---:|---|---:|---:|

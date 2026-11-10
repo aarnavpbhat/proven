@@ -190,15 +190,15 @@ Rule 3, measured after rules 1 and 2 the same way:
 | Sealed suite, local model, held-out | 58.0% | 57.8% | 166 → 163 | 0 | 0 |
 | Sealed suite, local model, paraphrase | 44.3% | 44.0% | | 0 | 0 |
 | Unseen suite, local model, held-out | 54.4% | 54.4% | 186 → 185 | 0 | 0 |
-| Dev worlds, Sonnet, held-out | 83.0% | 82.8% | | 0 (1 control FAIL before) | 0 |
+| Dev worlds, Sonnet, held-out | 83.0% | 82.8% | | 0 | 0 (1 before) |
 
 With rules 1 to 3, every cached proposer (the oracle, Sonnet and the local models) is at 0
 control FAIL and 0 unsafe PASS at every taught step on the unseen, sealed, dev and default
 suites. Sonnet and the oracle on the unseen and sealed suites are unchanged by rule 3, as are
 the default-world n = 220 runs (oracle, Sonnet and the single-world local model), Sonnet at
-n = 440 (36 lessons, 88.2%) and `benchmark --phrasing seen` (90.1%). Every number in this note
-was produced again under rule 3 and none moved: the same 36 Sonnet lessons, the same careless
-runs and refusals, the same order and skew curves.
+n = 440 (36 lessons, 88.2%) and `benchmark --phrasing seen` (90.1%). Every teach-sim number
+elsewhere in this note was produced again under rule 3 and none moved: the same 36 Sonnet
+lessons, the same careless runs and refusals, the same order and skew curves.
 
 ```bash
 # the local model: once with --phrasing heldout and once with --phrasing paraphrase
