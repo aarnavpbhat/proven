@@ -411,6 +411,11 @@ def admit(proposal: ClaimProposal, text: str, ledger: Ledger, claim_id: str,
             return Rejection(quote, "figure_not_in_quote", proposal.extractor)
         if problem:
             notes.append(f"{name} figure dropped: {problem}")
+        if figure is None and getattr(reading, name) is not None:
+            # A proposal may add to what the sentence plainly says, never take away from it:
+            # a figure or reason the model leaves out would otherwise go unchecked.
+            figure = getattr(reading, name)
+            notes.append(f"{name} figure written in the sentence was left out of the proposal; kept")
         figures[name] = figure
 
     names = set(ledger.account_names) | {TOTAL}
@@ -430,6 +435,9 @@ def admit(proposal: ClaimProposal, text: str, ledger: Ledger, claim_id: str,
     if driver and driver not in quote:
         notes.append(f"proposed reason {driver!r} dropped: not a span of the sentence")
         driver = None
+    if driver is None and reading.driver:
+        driver = reading.driver
+        notes.append("the sentence states a reason the proposal left out; kept as written")
 
     terms: list[Term] = []
     if driver:

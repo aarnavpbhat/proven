@@ -87,11 +87,20 @@ def test_a_hallucinated_reason_is_dropped_and_model_terms_are_marked():
     proposal = ClaimProposal(quote=TEXT, change_text="$90K", driver_text="the lawsuit",
                              extractor="model")
     claim = admit(proposal, TEXT, LEDGER, "C1", set())
-    assert claim.driver is None and any("not a span" in n for n in claim.notes)
+    assert any("not a span" in n for n in claim.notes)
+    assert claim.driver == "our Series B funding round"      # the reason the sentence does state
     proposal = ClaimProposal(quote=TEXT, change_text="$90K", driver_text="our Series B funding round",
                              driver_terms=("closing documents",), extractor="model")
     claim = admit(proposal, TEXT, LEDGER, "C1", set())
     assert {"text": "closing documents", "origin": "model"} in [t.to_dict() for t in claim.terms]
+
+
+def test_a_proposal_cannot_remove_the_reason_or_figure_the_sentence_states():
+    """A model that leaves the reason out would otherwise get the claim checked on its amount alone."""
+    claim = admit(ClaimProposal(quote=TEXT, extractor="model"), TEXT, LEDGER, "C1", set())
+    assert claim.driver == "our Series B funding round"
+    assert claim.change is not None and claim.change.text == "$90K"
+    assert any("left out" in n for n in claim.notes)
 
 
 def test_an_alias_in_the_sentence_overrides_a_model_mapping():
