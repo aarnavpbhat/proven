@@ -426,7 +426,24 @@ produced a PASS or FAIL by itself under the default policy, because support that
 model terms always waits in REVIEW. **It is kept as study code and is not used.** The blind
 vote with a cap of three terms had no more such cases than a single reply.
 
-K4_RESULT
+**Result with real samples** (dev worlds, the rebuilt-target model, the greedy reply plus
+three sampled at temperature 0.8, saved once and re-pooled offline with `training/repool.py`;
+382 true claims per tier):
+
+| Policy | Cause found, heldout | Cause found, paraphrase |
+|---|---:|---:|
+| greedy reply | 38.0% | 29.8% |
+| one sampled reply | 32.5% | 25.9% |
+| vote of 2, up to 8 terms | 38.5% | 30.9% |
+| vote of 4, up to 8 terms | 41.6% | 34.3% |
+| vote of 4, up to 5 terms | 35.3% | 26.7% |
+
+A vote of four finds 3.6 and 4.5 points more causes than the greedy reply, at 7 to 8 s per
+close where one reply takes about 1.6 s. A sampled reply alone is worse than the greedy one,
+and cutting the pooled list to five terms gives the gain back, so what helps is breadth
+within the cap of eight. The gain is real and small next to a 40-point gap. It was not run on
+the measured suites (about two and a half hours for the unseen suite), so no measured result
+uses pooling.
 
 ## 9. Two safety gaps the second suite exposed, and the fixes
 
