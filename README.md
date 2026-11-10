@@ -575,7 +575,8 @@ The full account, with every table and the commands, is in
   open-weight model (Qwen2.5-3B, 4-bit, LoRA adapters, trained with `mlx-lm` on a 24 GB laptop)
   was fine-tuned as the proposer. On eleven "unseen" worlds (new industries, written by a
   different model from the 91 training worlds, protocol fixed before any model was scored) its
-  lessons leave 54.4% of held claims decided on held-out phrasing. Claude Sonnet's leave 81.7%,
+  lessons leave 54.4% of held claims decided on held-out phrasing (61.3% when four sampled
+  replies are pooled). Claude Sonnet's leave 81.7%,
   and the ceiling is 89.3%. It loses in all eleven worlds. Control FAIL and unsafe PASS are 0
   for every proposer.
 - **In the one world it was first trained on it scores at the ceiling, by memorising.** 92.5%

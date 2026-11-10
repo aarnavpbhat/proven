@@ -9,7 +9,8 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
 - **No fine-tuned model here beats Claude Sonnet 5.5 on worlds it was not trained on.** On
   eleven unseen worlds (new industries, written by a different model, protocol fixed in
   advance) the best local model, a 3B model with LoRA adapters, leaves 54.4% of held claims
-  decided on held-out phrasing and 40.7% on the paraphrase tier. Sonnet leaves 81.7% and 63.3%;
+  decided on held-out phrasing and 40.7% on the paraphrase tier (61.3% on held-out when four
+  sampled replies are pooled). Sonnet leaves 81.7% and 63.3%;
   the ceiling is 89.3% and 76.0%. The local model loses in all eleven worlds. No run of any
   proposer has a control FAIL or an unsafe PASS under the current lesson rules, which were
   tightened twice during this work because runs on new worlds did have them (section 9).
@@ -37,8 +38,8 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
 - **Constrained decoding** makes every reply admissible by construction (valid schema, copied
   fields are substrings of the explanation, accounts come from the chart) at 0.73 ms per
   decoding step (section 7).
-- **Also measured, and small or null:** pooling four sampled replies by a blind vote finds 3.6
-  to 4.5 points more causes on the dev worlds (section 8); twenty steps of multi-world RL
+- **Also measured, and small or null:** pooling four sampled replies by a blind vote adds 6.9
+  points on the unseen suite at five times the inference cost (section 8); twenty steps of multi-world RL
   changed nothing measurable (section 11); re-offering confirmed words to the proposer helps a
   lot and breaks the kill criteria, so it was rejected (section 10).
 - Not done: a 7B result, RL at any scale that would mean something, a real company's books.
@@ -210,6 +211,7 @@ Fully taught (50 closes per world), under the lesson rule of section 9:
 | Qwen2.5-3B, single-world | heldout | 43 | 20.9% | 0.268 | 125/998 | 0 | 0 | 269/363 | 12.4%..29.2% |
 | Qwen2.5-3B, multi-world, gold targets | heldout | 141 | 44.8% | 0.507 | 419/998 | 0 | 0 | 301/363 | 24.2%..63.4% |
 | Qwen2.5-3B, multi-world, rebuilt targets | heldout | 185 | 54.4% | 0.603 | 528/998 | 0 | 0 | 321/363 | 31.7%..69.5% |
+| Qwen2.5-3B, rebuilt targets, vote of 4 samples (section 8) | heldout | 210 | 61.3% | 0.673 | 614/998 | 0 | 0 | 327/363 | 41.1%..76.6% |
 | Oracle (ceiling) | paraphrase | 536 | 76.0% | 0.827 | 799/998 | 0 | 0 | 346/363 | 72.5%..81.4% |
 | Claude Sonnet 5.5 | paraphrase | 444 | 63.3% | 0.698 | 644/998 | 0 | 0 | 326/363 | 54.3%..71.1% |
 | Qwen2.5-3B, single-world | paraphrase | 55 | 17.5% | 0.233 | 83/998 | 0 | 0 | 265/363 | 10.9%..22.8% |
@@ -454,9 +456,11 @@ close where one reply takes about 1.6 s. A sampled reply alone is worse than the
 and cutting the pooled list to five terms gives the gain back, so what helps is breadth
 within the cap of eight. In the full teaching run on the dev worlds the vote of four decides 61.4% of held claims on
 held-out phrasing against 55.2% for the greedy reply (64 lessons against 58), 0 control FAIL
-and 0 unsafe PASS. The gain is real and small next to Sonnet's 82.8% there. It was not run on
-the measured suites (about two and a half hours for the unseen suite), so no measured result
-uses pooling.
+and 0 unsafe PASS. The gain is real and small next to Sonnet's 82.8% there. Chosen on the dev worlds, the vote of four was then run once on the unseen suite's held-out
+tier (550 closes, 73 minutes): 61.3% decided with 210 lessons, against 54.4% and 185 for the
+greedy reply, 0 control FAIL and 0 unsafe PASS at every teaching step. That is the best local
+result in this note, and it is 20.5 points under Sonnet (95% interval -26.2 to -15.3), losing
+all 11 worlds. The paraphrase tier and the sealed suite were not run with pooling.
 
 ## 9. Two safety gaps the second suite exposed, and the fixes
 
