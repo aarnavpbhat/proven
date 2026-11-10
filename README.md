@@ -398,6 +398,10 @@ Three things follow.
   six where a vague reason ("the second location") drew a term that matched a neighbouring
   cause's invoices, six where the terms covered the change and hid a misbooked transaction. It is
   off by default and should stay off.
+- **A model must not be able to remove what a sentence says.** A local 7B model sometimes returned
+  a claim with the stated reason left out; the claim was then checked on its amount alone, and two
+  wrong explanations passed. `admit()` now keeps any reason or figure the rules can read in the
+  sentence when a proposal omits it. A proposal can add to the reading, never subtract from it.
 - **The route across the gap is a person, once.** In the Sonnet run 710 of the 810 correct
   explanations sit in REVIEW only because their support rests on model terms. A reviewer who
   confirms such a term teaches it to the learned lexicon (`learned.py`, "Teach Proven" in the
@@ -551,7 +555,7 @@ python -m proven benchmark --extractor openweight --model qwen2.5:14b --phrasing
 python -m pytest proven/tests -q
 ```
 
-240 tests, including negative controls (inputs that must *not* be flagged), the benchmark floors,
+241 tests, including negative controls (inputs that must *not* be flagged), the benchmark floors,
 an AST check that the package imports nothing outside the standard library, the HTTP API, and the
 Vercel entry point. If the TypeScript compiler (`tsc`) is installed, the console's script is
 also type-checked under `--strict`.
@@ -601,7 +605,7 @@ proven/
   netguard.py   network-off, enforced
   server.py     stdlib HTTP server + JSON API
   web/          the reviewer console (HTML, CSS, JS checked by tsc --strict)
-  tests/        240 tests
+  tests/        241 tests
 api/index.py    the Vercel function (wraps the same request handler)
 vercel.json     static console from the CDN, /api/* to the function
 docs/           the screenshots in this README
