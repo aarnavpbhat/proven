@@ -20,12 +20,17 @@ import json
 import re
 import threading
 import uuid
+from collections.abc import Callable
 from contextlib import contextmanager
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Iterator
+from typing import TYPE_CHECKING, Iterator
 
 from proven import claims
+
+if TYPE_CHECKING:
+    from proven.ledger import Ledger
 
 LEXICON_FILE = "lexicon.jsonl"
 RESOLUTIONS_FILE = "resolutions.jsonl"
@@ -148,6 +153,112 @@ def make_entry(triggers: object, terms: object, *, note: str = "", run_id: str =
                            "action": action, "note": note}}
 
 
+# ── which ledger words a lesson may keep ─────────────────────────────────
+
+ROUTINE_ONLY = ("matches only routine lines in this account (the same vendor and memo in both "
+                "periods) that did not move")
+NOT_NEEDED = "is not needed for this claim to pass"
+
+
+@dataclass(frozen=True)
+class Trimmed:
+    """A lesson's ledger words after `trim_terms`: the ones kept, the ones dropped (each
+    {"term", "reason"}), and the claim's verdict with the kept ones."""
+
+    kept: list[str]
+    dropped: list[dict]
+    verdict: str | None
+
+
+def routine_ids(ledger: Ledger, account: str) -> set[str]:
+    """Transactions in the account whose vendor and memo also appear in the other period:
+    the account's routine spending, the same bill in both months."""
+    periods: dict[tuple[str, str], set[str]] = {}
+    scope = ledger.in_scope(account)
+    for txn in scope:
+        periods.setdefault((txn.vendor, txn.memo), set()).add(txn.period)
+    return {t.id for t in scope if len(periods[(t.vendor, t.memo)]) > 1}
+
+
+def _hits(ledger: Ledger, account: str, term: str) -> list:
+    pattern = claims.term_pattern(term)
+    return [t for t in ledger.in_scope(account) if pattern.search(t.searchable)]
+
+
+def _moved(ledger: Ledger, hits: list) -> float:
+    return abs(sum(t.amount if t.period == ledger.current_period else -t.amount for t in hits))
+
+
+def trim_terms(terms: list[str], ledger: Ledger, account: str | None,
+               verdict: Callable[[list[str]], str | None],
+               materiality: float | None = None) -> Trimmed:
+    """The ledger words of a lesson that name its cause, read off the close it is taught on.
+
+    A lesson's terms are anchored once learned: they bind every later claim whose reason
+    fires the trigger, and can carry a PASS there. Confirming every term that matched
+    something, because the claim then passes, is not enough. A model blind to the ledger
+    guesses words such as a contractor's name; in the teaching close that word matched only
+    the contractor's monthly servicing, the PASS did not need it, and in a later close it
+    bound the same contractor's other job (the account's other cause) and passed a wrong
+    explanation. When the lesson makes the claim PASS, two rules apply to that close:
+
+      (a) ROUTINE ONLY. A word whose every match in the account is a routine line (the
+          same vendor and memo in both periods) that moved by less than `materiality` is
+          dropped: it found the bill that recurs, not what moved, so it says nothing about
+          the stated cause. A recurring bill that did move ("the same bill, simply larger")
+          is a cause, and its word is kept.
+      (b) NOT NEEDED. Every remaining word the PASS does not need is dropped, trying first
+          the word whose matches moved least. A word the PASS rests on has to be there; any
+          other is a guess nothing in this close checked, and in a close where it matches
+          another cause it would decide the claim.
+
+    A lesson that does not make the claim PASS is left as it is: no word of it is hidden
+    behind a PASS, and the safety gate replays it. `verdict(terms)` is the claim's verdict
+    with the lesson holding those terms; the result's verdict is the one with the kept
+    words, and is not PASS when the PASS rested on a dropped routine word (the caller
+    refuses the lesson then). Raises `LessonRefused` when no word is left."""
+    if materiality is None:
+        from proven.verify import Policy            # local: keeps `import proven.learned` cheap
+        materiality = Policy().materiality
+    terms = list(terms)
+    full = verdict(terms)
+    if full != "PASS" or not account:
+        return Trimmed(terms, [], full)
+    kept: list[str] = []
+    dropped: list[dict] = []
+    routine = routine_ids(ledger, account)
+    for term in terms:
+        hits = _hits(ledger, account, term)
+        if hits and {t.id for t in hits} <= routine and _moved(ledger, hits) < materiality:
+            dropped.append({"term": term, "reason": ROUTINE_ONLY})
+        else:
+            kept.append(term)
+    if not kept:
+        raise LessonRefused("every word " + ROUTINE_ONLY + "; none of them names the stated cause")
+    result = verdict(kept) if dropped else full
+    if result != "PASS":
+        return Trimmed(kept, dropped, result)
+    moved = {t: _moved(ledger, _hits(ledger, account, t)) for t in kept}
+    for term in sorted(kept, key=lambda t: moved[t]):     # stable: ties keep their order
+        if len(kept) == 1:
+            break
+        trial = [t for t in kept if t != term]
+        if verdict(trial) == "PASS":
+            kept = trial
+            dropped.append({"term": term, "reason": NOT_NEEDED})
+    return Trimmed(kept, dropped, result)
+
+
+def trim_text(trimmed: Trimmed) -> str:
+    """Why a lesson's words were dropped, and what to teach instead, for the reviewer."""
+    parts = "; ".join(f"\u201c{d['term']}\u201d {d['reason']}" for d in trimmed.dropped)
+    if trimmed.verdict != "PASS":
+        return (f"{parts}, and without it the claim does not pass ({trimmed.verdict}): "
+                "the pass rests on a bill that did not move.")
+    keep = ", ".join(f"\u201c{t}\u201d" for t in trimmed.kept)
+    return f"{parts}. Teach the lesson with only {keep}."
+
+
 def append(data_dir: Path | str, entry: dict) -> dict:
     """Store a made entry, refusing one that duplicates a stored lesson."""
     with _lock:
@@ -195,21 +306,52 @@ def case_verdict(case: dict, lexicon_entries: list[dict] | None = None) -> str |
 
     Always uses the offline rule extractor: a regression case must be deterministic.
     """
-    from proven.extract import RuleExtractor   # local: keeps `import proven.learned` cheap
-    from proven.ledger import Ledger
-    from proven.report import run
+    result = case_result(case, lexicon_entries)
+    return None if result is None else result["verdict"]
+
+
+def case_ledger(case: dict) -> Ledger:
+    """The ledger a case's claim was checked against."""
+    from proven.ledger import Ledger            # local: keeps `import proven.learned` cheap
     from proven.server import load_scenario
 
     if case.get("ledger_csv"):
-        book = Ledger.from_csv(case["ledger_csv"], entity=case.get("entity") or "Uploaded ledger")
-    else:
-        book = load_scenario(case["scenario_id"])["ledger"]
+        return Ledger.from_csv(case["ledger_csv"], entity=case.get("entity") or "Uploaded ledger")
+    return load_scenario(case["scenario_id"])["ledger"]
+
+
+def case_result(case: dict, lexicon_entries: list[dict] | None = None,
+                book: Ledger | None = None) -> dict | None:
+    """The case's claim, checked by the offline rule extractor with the given lexicon."""
+    from proven.extract import RuleExtractor
+    from proven.report import run
+
+    book = book if book is not None else case_ledger(case)
     with lexicon(lexicon_entries or []):
         report = run(case["explanation"], book, extractor=RuleExtractor())
-    for result in report["claims"]:
-        if result["claim"]["quote"] == case["quote"]:
-            return result["verdict"]
-    return None
+    return next((r for r in report["claims"] if r["claim"]["quote"] == case["quote"]), None)
+
+
+def trim_case(case: dict, triggers: list[str], terms: list[str],
+              lexicon_entries: list[dict]) -> Trimmed:
+    """`trim_terms` for a lesson taught on a case, judged as the console judges it: the
+    rule extractor reading the case with the lessons already held plus this one."""
+    book = case_ledger(case)
+    seen: dict[tuple[str, ...], dict | None] = {}
+
+    def result(words: list[str]) -> dict | None:
+        key = tuple(words)
+        if key not in seen:
+            seen[key] = case_result(case, lexicon_entries + [make_entry(triggers, words)], book)
+        return seen[key]
+
+    def verdict(words: list[str]) -> str | None:
+        found = result(words)
+        return None if found is None else found["verdict"]
+
+    first = result(list(terms))
+    account = first["claim"].get("account") if first else None
+    return trim_terms(list(terms), book, account, verdict)
 
 
 def cases(data_dir: Path | str) -> list[dict]:

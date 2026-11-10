@@ -138,20 +138,49 @@ def close_key(explanation: str, scenario_id: str = "", ledger_csv: str = "") -> 
     return _sha(json.dumps([explanation, scenario_id, _sha(ledger_csv) if ledger_csv else ""]))[:16]
 
 
-def record_run(data_dir: Path | str, body: dict, report: dict) -> int:
+def trim_waiting(claims: list[dict], case: dict, lexicon: list[dict]) -> list[dict]:
+    """The waiting claims with the terms the console would let a reviewer confirm.
+
+    Each claim's terms go through `learned.trim_case` on its own close, so the queue never
+    suggests a word that matches only the account's routine lines or that the PASS does
+    not need. A claim left with no word keeps an empty `terms` (the queue skips it) and
+    says why in `dropped`."""
+    out = []
+    for item in claims:
+        item = dict(item)
+        try:
+            trimmed = learned.trim_case({**case, "quote": item["quote"]}, [item["driver"]],
+                                        list(item["terms"]), lexicon)
+        except learned.LessonRefused as exc:
+            item.update(terms=[], dropped=[{"term": t, "reason": str(exc)} for t in item["terms"]])
+        except (ValueError, KeyError):
+            pass        # the close cannot be re-read offline; keep the model's words as they are
+        else:
+            item["terms"] = trimmed.kept
+            if trimmed.dropped:
+                item["dropped"] = trimmed.dropped
+        out.append(item)
+    return out
+
+
+def record_run(data_dir: Path | str, body: dict, report: dict,
+               lexicon: list[dict] | None = None) -> int:
     """Store a model run's waiting claims, if any. Returns how many were stored.
 
-    A model run with nothing waiting is stored only if it replaces an earlier run of the
-    same close (so a re-check after teaching empties that close's entries). A rules run is
-    never stored."""
+    The claims' terms are trimmed (`trim_waiting`) with `lexicon`, the lessons active when
+    the run was checked. A model run with nothing waiting is stored only if it replaces an
+    earlier run of the same close (so a re-check after teaching empties that close's
+    entries). A rules run is never stored."""
     if report["run"]["versions"]["extractor"].startswith("rules/"):
         # The rules propose no terms, so their run says nothing about what waits on a model's
         # words; it must not replace a stored model run (re-opening a queued close re-checks
         # it with the rules).
         return 0
-    claims = waiting_in(report)
     scenario_id = "" if body.get("ledger_csv") else str(body.get("scenario_id") or "")
     ledger_csv = str(body.get("ledger_csv") or "")
+    case = {"explanation": report["explanation"], "scenario_id": scenario_id, "ledger_csv": ledger_csv,
+            "entity": str(body.get("entity") or "Uploaded ledger")}
+    claims = trim_waiting(waiting_in(report), case, lexicon or [])
     key = close_key(report["explanation"], scenario_id, ledger_csv)
     with _lock:
         if not claims and key not in {r["key"] for r in load_runs(data_dir)}:

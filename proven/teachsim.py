@@ -7,8 +7,9 @@ lesson. This module plays that reviewer over the synthetic benchmark:
   * on each TEACHING close, a claim is taught from only if the generator's label says the
     explanation is right, the claim sits in REVIEW for that one reason, and confirming the
     terms that matched ledger transactions turns it into a PASS;
-  * the lesson is "the stated reason, verbatim -> those terms", validated by
-    `learned.make_entry` exactly as the console's would be;
+  * the lesson is "the stated reason, verbatim -> those terms", trimmed by
+    `learned.trim_terms` (no word that matches only routine lines that did not move, none
+    the PASS does not need) and validated by `learned.make_entry`, as the console's would be;
   * the lessons are then measured on the HELD closes (the second half of the split),
     which no lesson was taught from.
 
@@ -32,8 +33,34 @@ MODEL_SUPPORT = "SUPPORT_RESTS_ON_MODEL_TERMS"
 STEPS = (0, 10, 20, 55, 110, 220)
 
 
+def trimmed_lesson(scenario: Scenario, lessons: list[dict], result: dict, terms: list[str],
+                   extractor: Extractor) -> tuple[dict, str | None] | None:
+    """The lesson confirmed from one claim, with only the words `learned.trim_terms` keeps,
+    and the claim's verdict with it; None when Proven would not learn it."""
+    quote, driver = result["claim"]["quote"], result["claim"]["driver"]
+
+    def verdict(words: list[str]) -> str | None:
+        with learned.lexicon(lessons + [learned.make_entry([driver], words)]):
+            after = run(scenario.explanation, scenario.ledger, extractor=extractor)
+        return next((r["verdict"] for r in after["claims"] if r["claim"]["quote"] == quote), None)
+
+    try:
+        _triggers, words = learned.validate([driver], terms)
+        trimmed = learned.trim_terms(list(words), scenario.ledger, result["claim"].get("account"),
+                                     verdict)
+        entry = learned.make_entry([driver], trimmed.kept, quote=quote, action="simulated",
+                                   note="teachsim")
+    except learned.LessonRefused:
+        return None
+    return entry, trimmed.verdict
+
+
 def teach(pool: list[Scenario], proposer_for: Callable[[Scenario], Extractor]) -> list[dict]:
-    """The lessons a label-reading reviewer would confirm, working through `pool` in order."""
+    """The lessons a label-reading reviewer would confirm, working through `pool` in order.
+
+    A reviewer reading the label knows the explanation is right, not that every word the
+    model proposed belongs to its cause: the confirmed words are those `learned.trim_terms`
+    keeps (none that match only routine lines that did not move, none the PASS does not need)."""
     lessons: list[dict] = []
     known: set[tuple[tuple[str, ...], tuple[str, ...]]] = set()
     for scenario in pool:
@@ -49,17 +76,12 @@ def teach(pool: list[Scenario], proposer_for: Callable[[Scenario], Extractor]) -
                 continue
             matched = (result["reconstruction"].get("driver") or {}).get("matched", [])
             terms = sorted({m["term"] for m in matched if m["origin"] == "model"})
-            try:
-                entry = learned.make_entry([result["claim"]["driver"]], terms, quote=quote,
-                                           action="simulated", note="teachsim")
-            except learned.LessonRefused:
+            made = trimmed_lesson(scenario, lessons, result, terms, proposer_for(scenario))
+            if made is None or made[1] != "PASS":
                 continue
+            entry = made[0]
             key = (tuple(entry["triggers"]), tuple(entry["terms"]))
-            if key in known:
-                continue
-            with learned.lexicon(lessons + [entry]):
-                after = run(scenario.explanation, scenario.ledger, extractor=proposer_for(scenario))
-            if any(r["verdict"] == "PASS" for r in after["claims"] if r["claim"]["quote"] == quote):
+            if key not in known:
                 known.add(key)
                 lessons.append(entry)
     return lessons
@@ -181,8 +203,10 @@ def curve(n: int = 440, phrasing: str = "heldout", proposer=None, *, order: str 
     re-ranked after every lesson. Asked about a claim, it decides with the label:
 
       * a RIGHT explanation: it confirms the model's matched terms if that turns the claim
-        into a PASS (the careful reviewer of `teach`);
-      * a WRONG explanation: with probability `careless` it confirms the terms anyway;
+        into a PASS (the careful reviewer of `teach`, with the words `learned.trim_terms`
+        keeps);
+      * a WRONG explanation: with probability `careless` it confirms the terms anyway
+        (trimmed the same way: the trim reads the ledger, never the label);
         otherwise it records "Confirm defect", which becomes a stored case for the gate.
 
     With `use_gate`, every confirmation goes through `gate.impact` (the train-split
@@ -261,19 +285,18 @@ def curve(n: int = 440, phrasing: str = "heldout", proposer=None, *, order: str 
                 "known": "wrong", "source": "case", "family": "confirm_defect", "phrasing": phrasing,
                 "ref": pool[i].scenario_id})]))
             continue
-        try:
-            entry = learned.make_entry([best.driver], list(best.terms), quote=quote,
-                                       action="simulated", note="teachsim")
-        except learned.LessonRefused:
+        claim = next((r for r in reports[i]["claims"] if r["claim"]["quote"] == quote), None)
+        if claim is None:
             continue
+        made = trimmed_lesson(pool[i], lessons, claim, list(best.terms), proposer_for(pool[i]))
+        if made is None:
+            continue
+        entry, verdict_after = made
         key = (tuple(entry["triggers"]), tuple(entry["terms"]))
         if key in known:
             continue
-        if right:
-            with learned.lexicon(lessons + [entry]):
-                after = run(pool[i].explanation, pool[i].ledger, extractor=proposer_for(pool[i]))
-            if not any(r["verdict"] == "PASS" for r in after["claims"] if r["claim"]["quote"] == quote):
-                continue
+        if right and verdict_after != "PASS":
+            continue
         if use_gate:
             verdict = gate.impact(entry, lessons, cases)
             stats["gate_ms"] += verdict["elapsed_ms"]

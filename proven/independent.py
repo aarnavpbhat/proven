@@ -267,7 +267,8 @@ def teach(proposer: Extractor, companies: list[str], suite: str = "independent")
 
     A claim is taught from only if the key says the explanation is correct, the checker
     sent it to REVIEW because its support rests on the model's terms, and confirming the
-    model terms that matched transactions turns it into a PASS."""
+    model terms that matched transactions turns it into a PASS. The confirmed words are
+    those `learned.trim_terms` keeps, as in `teachsim.teach`."""
     lessons: list[dict] = []
     known: set[tuple[tuple[str, ...], tuple[str, ...]]] = set()
     for close in load(suite):
@@ -286,8 +287,19 @@ def teach(proposer: Extractor, companies: list[str], suite: str = "independent")
             terms = sorted({m["term"] for m in matched if m["origin"] == "model"})
             if not terms or not result["claim"]["driver"]:
                 continue
+            driver = result["claim"]["driver"]
+
+            def verdict(words: list[str], driver: str = driver, key: str = k.id) -> str | None:
+                with learned.lexicon(lessons + [learned.make_entry([driver], words)]):
+                    after = run(close.commentary, close.ledger, extractor=proposer)
+                again, _ = match(close, after)
+                return again[key]["verdict"] if again[key] is not None else None
+
             try:
-                entry = learned.make_entry([result["claim"]["driver"]], terms,
+                _triggers, words = learned.validate([driver], terms)
+                trimmed = learned.trim_terms(list(words), close.ledger,
+                                             result["claim"].get("account"), verdict)
+                entry = learned.make_entry([driver], trimmed.kept,
                                            quote=result["claim"]["quote"], action="simulated",
                                            note=f"independent teach {k.id}")
             except learned.LessonRefused:
@@ -295,10 +307,7 @@ def teach(proposer: Extractor, companies: list[str], suite: str = "independent")
             lesson_key = (tuple(entry["triggers"]), tuple(entry["terms"]))
             if lesson_key in known:
                 continue
-            with learned.lexicon(lessons + [entry]):
-                after = run(close.commentary, close.ledger, extractor=proposer)
-            again, _ = match(close, after)
-            if again[k.id] is not None and again[k.id]["verdict"] == "PASS":
+            if trimmed.verdict == "PASS":
                 known.add(lesson_key)
                 entry["provenance"]["keyed_claim"] = k.id
                 lessons.append(entry)

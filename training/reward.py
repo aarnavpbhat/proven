@@ -68,7 +68,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from proven import claims, learned, worlds as _worlds  # noqa: E402
+from proven import claims, learned, teachsim, worlds as _worlds  # noqa: E402
 from proven.claims import ClaimProposal  # noqa: E402
 from proven.evaluate import proposal_from_gold, score_claim  # noqa: E402
 from proven.extract import RuleExtractor  # noqa: E402
@@ -129,11 +129,10 @@ def _teach(scenario: Scenario, proposer: Fixed) -> tuple[list[dict], dict, dict]
         label = labels.get(quote)
         if label is None or label.requirement != "PASS" or not _waiting_on_model(result):
             continue
-        try:
-            entry = learned.make_entry([result["claim"]["driver"]], _model_terms(result),
-                                       quote=quote, action="simulated", note="teachsim")
-        except learned.LessonRefused:
+        made = teachsim.trimmed_lesson(scenario, lessons, result, _model_terms(result), proposer)
+        if made is None or made[1] != "PASS":      # the same trimmed lesson teachsim confirms
             continue
+        entry = made[0]
         key = (tuple(entry["triggers"]), tuple(entry["terms"]))
         if key in known:
             continue

@@ -27,7 +27,11 @@ needed to find out whether the checks are worth deploying.
 Every lesson passes the safety gate (`gate.py`) before it is stored: it is replayed against
 a built-in regression set of synthetic train-split closes and the directory's own recorded
 cases, and refused if it would pass an explanation known to be wrong or fail one known to
-be right. A refusal returns 400 with the reason and the full `impact` report.
+be right. A refusal returns 400 with the reason and the full `impact` report. A lesson is
+also refused when one of its words, in the claim's own close, matches only the account's
+routine lines or is not needed for the claim to pass (`learned.trim_terms`); the refusal
+names the words and the narrower lesson (`impact.trim`), and the queue suggests only the
+words that survive.
 """
 from __future__ import annotations
 
@@ -252,7 +256,7 @@ class App:
         if body.get("scenario_id") == "tidewater" and not body.get("ledger_csv"):
             report["answer_key"] = answer_key(report)
         with self._lock:     # claims waiting on a confirmation join the teaching queue
-            teachqueue.record_run(self.data_dir, body, report)
+            teachqueue.record_run(self.data_dir, body, report, self.lexicon)
         return report
 
     @staticmethod
@@ -374,6 +378,20 @@ class App:
         impact["claim"] = {"quote": quote, "before": before, "after": after}
         if not impact["accepted"]:
             raise LessonBlocked(impact["refusal"], impact)
+        # A lesson that makes this claim PASS must name its cause in this close: no word that
+        # matches only routine lines that did not move, none the PASS does not need
+        # (`learned.trim_terms`). Such a lesson is refused with the narrower one, not silently
+        # narrowed: what is stored is exactly what the reviewer confirmed.
+        try:
+            trimmed = learned.trim_case(case, lesson["triggers"], lesson["terms"], self.lexicon)
+        except learned.LessonRefused as exc:
+            impact["trim"] = {"kept": [], "dropped": [{"term": t, "reason": str(exc)}
+                                                      for t in lesson["terms"]]}
+            raise LessonBlocked(f"Proven will not learn this: {exc}.", impact) from None
+        if trimmed.dropped:
+            impact["trim"] = {"kept": trimmed.kept, "dropped": trimmed.dropped}
+            raise LessonBlocked("Proven will not learn this as written: "
+                                + learned.trim_text(trimmed), impact)
         if after == "PASS" and before != "PASS" and lesson_in.get("confirm_pass") is not True:
             raise LessonBlocked(
                 f"This lesson would turn the claim from {before} to PASS. Check that the matched "
