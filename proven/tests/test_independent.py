@@ -4,10 +4,10 @@ The first group checks the test set itself (offline, no checker involved in the 
 the key loads, every quote is verbatim, every cited transaction exists, and the key's
 arithmetic holds against the ledger CSVs (`benchmarks/independent/check_key.py`).
 
-The second group pins what the rules extractor does on the suite today, and marks the
-mechanisms behind its unsafe PASSes and control FAILs as expected failures (`strict`), so
-that a fix to `claims.py` / `verify.py` flips them and has to be acknowledged here.
-See docs/independent.md for the write-ups.
+The second group pins what the checker does on the suite, and keeps each mechanism the
+suite exposed as a regression test: the 12 unsafe PASSes of the unguarded rules (fixed by
+the unread-content guard, f597068) and the 3 control FAILs (fixed after the suite was
+seen, so these numbers are no longer blind). See docs/independent.md for the write-ups.
 """
 from __future__ import annotations
 
@@ -113,27 +113,26 @@ def test_cli_runs_the_suite(tmp_path, capsys):
     assert out.is_file()
 
 
-# ── what the rules extractor does on it today ─────────────────────────────
+# ── what the checker does on it (after fixes, no longer blind) ─────────────
 
 def test_rules_result_as_measured(rules_result):
     """Pinned so that any change to these numbers is noticed and written up."""
     s = rules_result["summary"]
     assert s["claims"] == 87
-    assert s["controls"]["passed"] == 44
-    assert s["controls"]["fails"] == 2
+    assert s["controls"]["passed"] == 0
+    assert s["controls"]["fails"] == 0
     assert s["defects"]["caught"] == 13
-    assert s["defects"]["unsafe_passes"] == 12
+    assert s["defects"]["unsafe_passes"] == 0
     assert s["not_extracted"] == 5
+    assert s["controls"]["review_primary"] == {
+        "UNREAD:no_reason": 41, "WEAK_REASON_MATCH": 4, "UNREAD:unchecked_figure": 4,
+        "REASON_NOT_FOUND": 2, "UNREAD:unread_words": 1}
 
 
-@pytest.mark.xfail(strict=True, reason="kill criterion broken on hand-written commentary: "
-                   "12 wrong explanations pass when their reason is not read (docs/independent.md)")
 def test_no_unsafe_pass_with_rules(rules_result):
     assert rules_result["summary"]["defects"]["unsafe_passes"] == 0
 
 
-@pytest.mark.xfail(strict=True, reason="two correct explanations fail: a second account's figure, "
-                   "and 'flat at about $9K' read as a change")
 def test_no_control_fail_with_rules(rules_result):
     assert rules_result["summary"]["controls"]["fails"] == 0
 
@@ -145,31 +144,29 @@ def _verdict(close, quote, extractor=None):
     return assigned[k.id]["verdict"] if assigned[k.id] else "MISSED"
 
 
-@pytest.mark.xfail(strict=True, reason="a reason introduced by ', the', 'for', 'as' or 'on our' "
-                   "is not read, so the claim is decided on its figures alone")
-@pytest.mark.parametrize("claim_id", ["KMC-09", "KMC-11", "ER-11", "RB-07", "RB-10", "HPC-08"])
+@pytest.mark.parametrize("claim_id", ["KMC-09", "KMC-11", "ER-11", "RB-07", "RB-10", "HPC-08",
+                                      "KMC-03", "LL-04", "HPC-07", "NSF-10", "BRT-11"])
 def test_unread_reason_does_not_pass(closes, claim_id):
+    """A reason introduced by ', the', 'for', 'as', 'on our' or ', mostly' was not read, and
+    the claim used to pass on its figures alone."""
     close, k = _keyed(closes, claim_id)
     assert _verdict(close, k.quote) != "PASS"
 
 
-@pytest.mark.xfail(strict=True, reason="'ticked up' is not a direction word, and the stated "
-                   "change is compared by magnitude, so a wrong direction passes")
 def test_unread_direction_does_not_pass(closes):
+    """'ticked up' is not a direction word; the change was compared by magnitude only."""
     close, k = _keyed(closes, "BRT-06")
     assert _verdict(close, k.quote) != "PASS"
 
 
-@pytest.mark.xfail(strict=True, reason="'flat at about $9K': the hedge between 'at' and the "
-                   "figure stops it being read as a balance, so it is read as the change")
 def test_flat_at_about_is_a_balance(closes):
+    """'flat at about $9K': the hedge used to stop it being read as a balance."""
     close, k = _keyed(closes, "NSF-11")
     assert _verdict(close, k.quote) != "FAIL"
 
 
-@pytest.mark.xfail(strict=True, reason="two claims in one sentence: the second account's "
-                   "figure ($4K of search) is checked against the first account (paid social)")
 def test_second_accounts_figure_is_not_the_firsts(closes):
+    """Two claims in one sentence: search's $4K used to be checked as paid social's change."""
     close, k = _keyed(closes, "LL-02")
     assert _verdict(close, k.quote) != "FAIL"
 
@@ -186,21 +183,20 @@ class _OneProposal:
         return [self.proposal]
 
 
-@pytest.mark.xfail(strict=True, reason="a cause split across two vendors: a lexicon-vouched "
-                   "written word ('compute') binds one bill, the other ('warehouse') matches "
-                   "nothing, and the partial share FAILs a correct explanation")
 def test_split_vendor_cause_does_not_fail(closes):
+    """'compute and warehouse usage': the lexicon-vouched 'compute' bound one bill, the
+    warehouse bill matched nothing, and the 70% share used to FAIL a correct sentence."""
     close, k = _keyed(closes, "BRT-02")
     proposal = ClaimProposal(
         quote=k.quote, account="Hosting & Infrastructure", change_text="$31k", percent_text="50%",
         driver_text="onboarding the Meridian Health account drove both compute and warehouse usage",
         driver_terms=("meridian health", "backfill"), extractor="fixture")
-    assert _verdict(close, k.quote, _OneProposal(proposal)) != "FAIL"
+    assert _verdict(close, k.quote, _OneProposal(proposal)) == "REVIEW"
 
 
-@pytest.mark.xfail(strict=True, reason="a proposal reads '$9K' as the balance; admit() also keeps "
-                   "the rules' reading of the same figure as the change, which then FAILs")
 def test_balance_proposal_is_not_also_a_change(closes):
+    """A proposal reads '$9K' as the balance; admit() used to keep the rules' reading of the
+    same figure as the change too, which then FAILed."""
     close, k = _keyed(closes, "NSF-11")
     proposal = ClaimProposal(quote=k.quote, account="Tolls & Permits", current_text="$9K",
                              extractor="fixture")

@@ -133,6 +133,38 @@ def match(close: Close, report: dict) -> tuple[dict[str, dict | None], list[dict
     return assigned, extra
 
 
+_GAPS = (("no stated reason was read", "UNREAD:no_reason"),
+         ("words outside the stated reason", "UNREAD:unread_words"),
+         ("no direction word was read", "UNREAD:no_direction"),
+         ("a figure in the sentence was not checked", "UNREAD:unchecked_figure"),
+         ("a figure's role is ambiguous", "UNREAD:figure_role"),
+         ("the stated reason contains a negation", "UNREAD:negation"),
+         ("the sentence names more than one account", "UNREAD:two_accounts"),
+         ("a number in the sentence was not read", "UNREAD:unread_number"),
+         ("an amount is written in words", "UNREAD:worded_amount"),
+         ("the sentence uses both a rise word", "UNREAD:rise_and_fall"))
+
+
+def review_causes(result: dict | None) -> list[str]:
+    """Why a claim is in REVIEW: its advisory finding codes, else what the unread guard
+    withheld the PASS for, else that nothing could be checked. First entry is primary."""
+    if result is None or result["verdict"] != "REVIEW":
+        return []
+    codes = [f["code"] for f in result["findings"] if f["severity"] == "advisory"]
+    if codes:
+        return codes
+    causes = []
+    for note in result["adjustments"]:
+        if "was not read:" in note:
+            for gap in note.split("was not read:", 1)[1].split(";"):
+                gap = gap.strip()
+                causes.append(next((c for prefix, c in _GAPS if gap.startswith(prefix)),
+                                   "UNREAD:other"))
+        elif "mapped by the model" in note:
+            causes.append("ACCOUNT_MAPPED_BY_MODEL")
+    return causes or ["NOTHING_CHECKED"]
+
+
 def score(k: KeyedClaim, result: dict | None) -> dict:
     verdict = result["verdict"] if result else "MISSED"
     findings = result["findings"] if result else []
@@ -154,6 +186,7 @@ def score(k: KeyedClaim, result: dict | None) -> dict:
         "attribution": next((ch["outcome"] or "skipped" for ch in result["checks"]
                              if ch["name"] == "attribution"), None) if result else None,
         "codes": [f["code"] for f in findings],
+        "review_causes": review_causes(result),
         "evidence_recall": (len(set(cited) & set(k.evidence)) / len(k.evidence)
                             if k.evidence and result else None),
     }
@@ -162,6 +195,13 @@ def score(k: KeyedClaim, result: dict | None) -> dict:
 def _tally(rows: list[dict]) -> dict:
     controls = [r for r in rows if r["truth"] == "CORRECT"]
     defects = [r for r in rows if r["truth"] == "WRONG"]
+    primary: dict[str, int] = defaultdict(int)
+    every: dict[str, int] = defaultdict(int)
+    for r in controls:
+        if r["review_causes"]:
+            primary[r["review_causes"][0]] += 1
+            for cause in set(r["review_causes"]):
+                every[cause] += 1
     count = lambda rs, v: sum(r["verdict"] == v for r in rs)  # noqa: E731
     decided = sum(r["verdict"] in ("PASS", "FAIL") for r in rows)
     return {
@@ -173,6 +213,8 @@ def _tally(rows: list[dict]) -> dict:
                      "passed_cause_checked": sum(r["verdict"] == "PASS" and r["attribution"] == "supported"
                                                  for r in controls),
                      "review": count(controls, "REVIEW"), "fails": count(controls, "FAIL"),
+                     "review_primary": dict(sorted(primary.items(), key=lambda kv: -kv[1])),
+                     "review_any": dict(sorted(every.items(), key=lambda kv: -kv[1])),
                      "missed": count(controls, "MISSED")},
         "defects": {"n": len(defects), "caught": count(defects, "FAIL"),
                     "flagged": count(defects, "FAIL") + count(defects, "REVIEW"),
@@ -328,6 +370,8 @@ def format_result(result: dict, *, detail: bool = True) -> str:
         out.append(line(fam, t))
     out.append(f"\ncontrols passed with the stated cause checked against transactions: "
                f"{s['controls']['passed_cause_checked']} of {s['controls']['passed']}")
+    out.append("controls in REVIEW, by primary cause: " + ", ".join(
+        f"{k} {v}" for k, v in s["controls"]["review_primary"].items()))
     out.append(f"account misread on {s['account_misread']} matched claim(s); "
                f"{len(result['spurious'])} checker claim(s) on no keyed claim; "
                f"rejected proposals: {result['rejected'] or 'none'}")
