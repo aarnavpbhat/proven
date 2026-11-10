@@ -19,13 +19,14 @@ reviewer, measured with the same kill criteria as the benchmark.
 """
 from __future__ import annotations
 
+import random
 from collections.abc import Callable
 
 from proven import learned
 from proven.evaluate import OracleExtractor, score_claim
 from proven.extract import RuleExtractor
 from proven.report import Extractor, run
-from proven.synth import Scenario, generate_split
+from proven.synth import Scenario, generate, generate_split
 
 MODEL_SUPPORT = "SUPPORT_RESTS_ON_MODEL_TERMS"
 STEPS = (0, 10, 20, 55, 110, 220)
@@ -110,3 +111,171 @@ def simulate(n: int = 440, phrasing: str = "heldout", proposer=None,
     return {"phrasing": phrasing, "held_closes": len(held),
             "proposer": f"{proposer.name}/{proposer.version}" if proposer is not None else "oracle/0.1",
             "rows": rows}
+
+
+# ── a reviewer's time, counted in confirmations ─────────────────────────
+
+CHECKPOINTS = (0, 5, 10, 20, 40)
+ORDERS = ("arrival", "frequency", "hindsight")
+
+
+def skewed_split(n: int, phrasing: str, skew: float, seed: int = 0) -> list[Scenario]:
+    """`n` test closes whose main sentence's phrase follows a Zipf law with exponent `skew`.
+
+    The generator draws a cause's phrase uniformly; real commentary repeats a few phrases
+    far more often than the rest. Each phrase of the tier gets a rank (a seeded shuffle) and
+    weight 1 / rank**skew, and test closes are kept with probability weight / max weight, in
+    seed order, until `n` are kept. Deterministic for a given (n, phrasing, skew, seed)."""
+    from proven.synth import WORLD, phrases_for, seeds
+    phrases = sorted({p for spec in WORLD for event in spec.events
+                      for p in phrases_for(event, phrasing, "test")})
+    rng = random.Random(seed)
+    rng.shuffle(phrases)
+    weight = {p: 1.0 / (rank + 1) ** skew for rank, p in enumerate(phrases)}
+    out: list[Scenario] = []
+    for s in seeds("test", 40 * n):
+        scenario = generate(s, phrasing=phrasing)
+        if rng.random() < weight.get(scenario.labels[0].gold["reason_text"], 0.0):
+            out.append(scenario)
+            if len(out) == n:
+                break
+    return out
+
+
+def curve(n: int = 440, phrasing: str = "heldout", proposer=None, *, order: str = "frequency",
+          checkpoints: tuple[int, ...] = CHECKPOINTS, careless: float = 0.0, use_gate: bool = False,
+          seed: int = 0, max_asks: int | None = None, skew: float = 0.0,
+          any_model_match: bool = False) -> dict:
+    """Decided share on the untaught half after k confirmations, for one teaching order.
+
+    The reviewer works down a queue of waiting claims (`teachqueue`), ranked by `order` and
+    re-ranked after every lesson. Asked about a claim, it decides with the label:
+
+      * a RIGHT explanation: it confirms the model's matched terms if that turns the claim
+        into a PASS (the careful reviewer of `teach`);
+      * a WRONG explanation: with probability `careless` it confirms the terms anyway;
+        otherwise it records "Confirm defect", which becomes a stored case for the gate.
+
+    With `use_gate`, every confirmation goes through `gate.impact` (the train-split
+    regression set plus the cases recorded so far in this run) and a refused lesson is not
+    stored. Confirmations are the x-axis: one per lesson stored. Every question put to the
+    reviewer, confirmed or not, is counted in `asks`.
+
+    `order` "hindsight" ranks by the measured half itself: not a policy a reviewer could
+    follow, but the bound on what any order of the same lessons reaches. `skew` > 0 draws
+    the closes from `skewed_split` instead of the plain test split (oracle only: a model's
+    proposals are cached for the plain split). `any_model_match` puts every REVIEW claim
+    whose model terms matched transactions in the queue, not only those whose support rests
+    on them: more wrong explanations for a careless reviewer to confirm."""
+    from proven import gate, teachqueue
+    if order not in ORDERS:
+        raise ValueError(f"order must be one of {', '.join(ORDERS)}")
+    if skew and proposer is not None:
+        raise ValueError("a skewed population is generated afresh; use the oracle proposer with it")
+    rng = random.Random(seed)
+    scenarios = skewed_split(n, phrasing, skew) if skew else generate_split("test", n, phrasing)
+    half = len(scenarios) // 2
+    pool, held = scenarios[:half], scenarios[half:]
+    proposer_for = (lambda s: proposer) if proposer is not None else OracleExtractor
+    rules = RuleExtractor()
+    labels = [{label.quote: label for label in s.labels} for s in pool]
+    lessons: list[dict] = []
+    cases: list = []
+    known: set[tuple[tuple[str, ...], tuple[str, ...]]] = set()
+    asked: set[tuple] = set()
+    ranker = teachqueue.Ranker()
+    stats = {"asks": 0, "confirmations": 0, "careful": 0, "careless": 0, "refused_right": 0,
+             "refused_wrong": 0, "declined_wrong": 0, "gate_ms": 0.0, "gate_calls": 0}
+    refusals: list[dict] = []
+    score = None
+    if order == "hindsight":
+        # Not a policy: it ranks by the measured half, which no reviewer can see. It is the
+        # bound on what any ordering of the same lessons could reach.
+        held_drivers = [(p.driver_text or "").lower() for s in held
+                        for p in rules.propose(s.explanation, s.ledger) if p.driver_text]
+        score = lambda trigger: sum(gate.fires(trigger, d) for d in held_drivers)  # noqa: E731
+
+    def report_for(i: int) -> dict:
+        with learned.lexicon(lessons):
+            return run(pool[i].explanation, pool[i].ledger, extractor=proposer_for(pool[i]))
+
+    reports = [report_for(i) for i in range(len(pool))]
+    drivers = [[(c["claim"].get("driver") or "").lower() for c in r["claims"]] for r in reports]
+    rows: list[dict] = []
+
+    def checkpoint(label: str) -> None:
+        rows.append({"confirmations": stats["confirmations"], "label": label, "asks": stats["asks"],
+                     "lessons": len(lessons), "careless_lessons": stats["careless"],
+                     **measure(held, lessons, lambda _s: rules)})
+
+    checkpoint("0")
+    wanted = {c for c in checkpoints if c > 0}
+    while max_asks is None or stats["asks"] < max_asks:
+        waiting = []
+        for i, report in enumerate(reports):
+            for position, item in enumerate(teachqueue.waiting_in(report, any_model_match=any_model_match)):
+                key = (i, item["quote"])
+                if key not in asked:
+                    waiting.append(teachqueue.Waiting(key, i * 100 + position, item["quote"],
+                                                      item["driver"], tuple(item["terms"])))
+        if not waiting:
+            break
+        best = ranker.rank(waiting, "frequency" if score else order, score)[0]["members"][0]
+        asked.add(best.key)
+        stats["asks"] += 1
+        i, quote = best.key
+        label = labels[i].get(quote)
+        right = label is not None and label.requirement == "PASS"
+        if not right and rng.random() >= careless:
+            stats["declined_wrong"] += 1
+            cases.extend(gate.probes_for(pool[i].explanation, pool[i].ledger, [(quote, {
+                "known": "wrong", "source": "case", "family": "confirm_defect", "phrasing": phrasing,
+                "ref": pool[i].scenario_id})]))
+            continue
+        try:
+            entry = learned.make_entry([best.driver], list(best.terms), quote=quote,
+                                       action="simulated", note="teachsim")
+        except learned.LessonRefused:
+            continue
+        key = (tuple(entry["triggers"]), tuple(entry["terms"]))
+        if key in known:
+            continue
+        if right:
+            with learned.lexicon(lessons + [entry]):
+                after = run(pool[i].explanation, pool[i].ledger, extractor=proposer_for(pool[i]))
+            if not any(r["verdict"] == "PASS" for r in after["claims"] if r["claim"]["quote"] == quote):
+                continue
+        if use_gate:
+            verdict = gate.impact(entry, lessons, cases)
+            stats["gate_ms"] += verdict["elapsed_ms"]
+            stats["gate_calls"] += 1
+            if not verdict["accepted"]:
+                stats["refused_right" if right else "refused_wrong"] += 1
+                refusals.append({"trigger": entry["triggers"][0], "terms": entry["terms"],
+                                 "explanation_right": right,
+                                 "family": label.family if label is not None else None,
+                                 "blocking": verdict["blocking_count"],
+                                 "example": verdict["blocking"][0] if verdict["blocking"] else None})
+                continue
+        known.add(key)
+        lessons.append(entry)
+        stats["confirmations"] += 1
+        stats["careful" if right else "careless"] += 1
+        if right:
+            cases.extend(gate.probes_for(pool[i].explanation, pool[i].ledger, [(quote, {
+                "known": "right", "source": "case", "family": "accept_convention",
+                "phrasing": phrasing, "ref": pool[i].scenario_id, "expected": "PASS"})]))
+        for j, lows in enumerate(drivers):
+            if any(gate.touches(entry, low) for low in lows if low):
+                reports[j] = report_for(j)
+        if stats["confirmations"] in wanted:
+            checkpoint(str(stats["confirmations"]))
+    if rows[-1]["confirmations"] == stats["confirmations"] and len(rows) > 1:
+        rows[-1]["label"] += " (all)"
+    else:
+        checkpoint("all")
+    stats["gate_ms"] = round(stats["gate_ms"], 1)
+    return {"phrasing": phrasing, "order": order, "careless": careless, "gate": use_gate, "seed": seed,
+            "skew": skew, "any_model_match": any_model_match, "held_closes": len(held),
+            "proposer": f"{proposer.name}/{proposer.version}" if proposer is not None else "oracle/0.1",
+            "stats": stats, "refusals": refusals, "rows": rows}

@@ -101,6 +101,15 @@
             <div id="unextracted"></div>
           </section>
 
+          <section class="panel" aria-labelledby="queue-heading">
+            <div class="panel-head">
+              <h2 id="queue-heading">Teach next <span class="muted" id="queue-count"></span></h2>
+              <button type="button" class="button small" id="queue-refresh">Refresh</button>
+            </div>
+            <p class="hint" id="queue-meta">Claims that wait only because their support rests on the model's words, across the runs stored here, grouped by the lesson that would settle them. The lesson that reaches the most waiting claims is first. Each lesson is checked by the safety gate before you see it.</p>
+            <ol class="queue" id="queue"></ol>
+          </section>
+
           <section class="panel" aria-labelledby="learned-heading">
             <div class="panel-head">
               <h2 id="learned-heading">Learned <span class="muted" id="lesson-count"></span></h2>

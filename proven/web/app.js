@@ -75,7 +75,36 @@
  * @typedef {{id: string, created_at: string, triggers: string[], terms: string[],
  *   provenance: {run_id: string, claim_id: string, quote: string, action: string, note: string}}} Lesson
  */
-/** @typedef {{ok: boolean, lesson?: Lesson, verdict_before?: Verdict, verdict_after?: Verdict}} Recorded */
+/**
+ * @typedef {{accepted: boolean, refusal: string|null, tested: boolean, new_unsafe_passes: number,
+ *   new_control_fails: number, newly_passed_right: number, newly_failed_wrong: number, touched: number,
+ *   cases_changed: number, elapsed_ms: number}} GateSummary
+ */
+/**
+ * @typedef {{touched: number, touched_wrong: number, touched_right: number, new_unsafe_passes: number,
+ *   new_control_fails: number, newly_passed_right: number, newly_failed_wrong: number, unpassed_right: number}} GateRegression
+ */
+/** @typedef {{quote: string, before: string|null, after: string|null}} VerdictChange */
+/**
+ * @typedef {{accepted: boolean, refusal: string|null, tested: boolean, regression: GateRegression,
+ *   cases: {n: number, touched: number, changed: VerdictChange[], new_unsafe_passes: number, new_control_fails: number},
+ *   regression_set: {claims?: number, closes?: number}, elapsed_ms: number, claim?: VerdictChange}} GateReport
+ */
+/**
+ * @typedef {{key: string, run_id: string, quote: string, driver: string, scenario_id: string, uploaded: boolean,
+ *   entity: string, extractor: string}} QueueExample
+ */
+/**
+ * @typedef {{trigger: string, terms: string[], waiting: number, proposing: number, runs: number,
+ *   example: QueueExample, unlocks: number|null, impact: GateSummary|null}} QueueItem
+ */
+/** @typedef {{items: QueueItem[], waiting: number, runs: number}} TeachQueue */
+/**
+ * @typedef {{key: string, run_id: string, explanation: string, scenario_id: string, ledger_csv: string,
+ *   entity: string, extractor: string, created_at: string}} PendingRun
+ */
+/** @typedef {{quote: string, triggers: string[], terms: string[], item: QueueItem}} Prefill */
+/** @typedef {{ok: boolean, lesson?: Lesson, verdict_before?: Verdict, verdict_after?: Verdict, impact?: GateReport}} Recorded */
 /**
  * @typedef {{id: string, label: string, available: boolean, reason: string, uses_model: boolean,
  *   default_model: string, models: string[]}} ExtractorInfo
@@ -185,6 +214,15 @@ const ORDER = { FAIL: 0, REVIEW: 1, PASS: 2 };
 
 // ── API ──────────────────────────────────────────────────────────────────
 
+/** A refused request, with the server's whole answer (a refused lesson carries the gate's report). */
+class ApiError extends Error {
+  /** @param {string} message @param {{error?: string, impact?: GateReport}} data */
+  constructor(message, data) {
+    super(message);
+    this.data = data;
+  }
+}
+
 /**
  * @template T
  * @param {string} path
@@ -202,7 +240,7 @@ async function api(path, body) {
     throw new Error("The Proven server is not reachable. Is `python -m proven serve` still running?");
   }
   const data = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(data.error || `Request failed (${response.status})`);
+  if (!response.ok) throw new ApiError(data.error || `Request failed (${response.status})`, data);
   return /** @type {T} */ (data);
 }
 
@@ -221,6 +259,8 @@ const state = {
   /** @type {Record<string, string>} */ resolved: {},
   /** @type {Lesson[]} */ lessons: [],
   /** @type {string | null} */ lessonNotice: null,
+  /** @type {TeachQueue | null} */ queue: null,
+  /** @type {Prefill | null} */ prefill: null,     // a Teach form opened from the queue
   /** @type {Record<string, Benchmark>} */ bench: {},     // keyed "extractor:phrasing"
   /** @type {"seen" | "heldout" | "paraphrase"} */ benchPhrasing: "seen",
   benchExtractor: "rules",
@@ -259,6 +299,10 @@ const el = {
   lessonNotice: byId("lesson-notice"),
   lessons: byId("lessons"),
   lessonCount: byId("lesson-count"),
+  queue: byId("queue"),
+  queueCount: byId("queue-count"),
+  queueMeta: byId("queue-meta"),
+  queueRefresh: /** @type {HTMLButtonElement} */ (byId("queue-refresh")),
   benchForm: /** @type {HTMLFormElement} */ (byId("bench-form")),
   benchSplit: /** @type {HTMLSelectElement} */ (byId("bench-split")),
   benchN: /** @type {HTMLInputElement} */ (byId("bench-n")),
@@ -277,10 +321,17 @@ function showError(message) {
 // ── review: loading and running ──────────────────────────────────────────
 
 async function loadScenario(/** @type {string} */ id) {
+  await prepareScenario(id);
+  await verify();
+}
+
+/** Fetch a close and put its text, ledger link and ground truth on screen, without verifying. */
+async function prepareScenario(/** @type {string} */ id) {
   /** @type {Scenario} */
   const scenario = await api(`/api/scenario?id=${encodeURIComponent(id)}`);
   state.scenario = scenario;
   state.lessonNotice = null;
+  state.prefill = null;
   state.upload = null;
   state.resolved = {};
   el.editor.value = scenario.explanation;
@@ -299,7 +350,6 @@ async function loadScenario(/** @type {string} */ id) {
       target.culprits.length ? `; culprit transactions ${target.culprits.join(", ")}` : "",
       `. The other ${truth.labels.length - 1} claim(s) are correct.`);
   }
-  await verify();
 }
 
 /** @returns {Promise<boolean>} whether a new report is on screen */
@@ -316,7 +366,9 @@ async function verify() {
   document.body.classList.add("loading");
   const started = performance.now();
   try {
-    state.report = await api("/api/verify", body);
+    /** @type {VerifyReport} */
+    const fresh = await api("/api/verify", body);
+    state.report = fresh;
     // Resolutions belong to a run; claim ids are re-issued by every run.
     state.resolved = {};
     state.openedAt = {};
@@ -324,6 +376,8 @@ async function verify() {
     setEditing(false);
     showError(null);
     render(performance.now() - started);
+    // A model run may have added claims that wait for a confirmation.
+    if (!fresh.run.versions.extractor.startsWith("rules/")) refreshQueue();
     return true;
   } catch (error) {
     showError(error instanceof Error ? error.message : String(error));
@@ -671,18 +725,48 @@ function resolveSection(result, report) {
   const matchedByModel = (result.reconstruction.driver?.matched || []).filter((m) => m.origin === "model");
   const proposed = [...new Set(matchedByModel.map((m) => m.term))];
   const awaitsConfirmation = proposed.length > 0 && result.findings.some((f) => f.code === "SUPPORT_RESTS_ON_MODEL_TERMS");
-  const trigger = /** @type {HTMLInputElement} */ (h("input", { type: "text", "aria-label": "When the stated reason contains", value: claim.driver || "" }));
+  // Opened from the teaching queue: the stored run's model words, re-checked here with the rules.
+  const prefill = state.prefill && state.prefill.quote === claim.quote ? state.prefill : null;
+  const trigger = /** @type {HTMLInputElement} */ (h("input", {
+    type: "text", "aria-label": "When the stated reason contains", value: prefill ? prefill.triggers.join(", ") : claim.driver || "",
+  }));
   const words = /** @type {HTMLInputElement} */ (h("input", {
     type: "text", "aria-label": "Ledger words it corresponds to", placeholder: "e.g. flights, hotel",
-    value: proposed.join(", "),
+    value: prefill ? prefill.terms.join(", ") : proposed.join(", "),
   }));
   const confirm = /** @type {HTMLInputElement} */ (h("input", { type: "checkbox", id: `confirm-${id}` }));
+  const gateOut = h("div", { class: "gate", "aria-live": "polite" }, "Not checked yet. Every lesson is checked when you record it.");
+  /** @returns {Record<string, string>} where the claim was checked */
+  const ledgerRef = () => (state.upload ? { ledger_csv: state.upload.text, entity: state.upload.name } : { scenario_id: state.scenario?.id || "" });
+  const checkButton = /** @type {HTMLButtonElement} */ (h("button", { type: "button", class: "button small" }, "Check with the safety gate"));
+  const runCheck = async () => {
+    checkButton.disabled = true;
+    replace(gateOut, "Replaying the lesson against known answers…");
+    gateOut.className = "gate";
+    try {
+      /** @type {GateReport} */
+      const gateReport = await api("/api/lexicon/check", {
+        triggers: splitWords(trigger.value), terms: splitWords(words.value),
+        explanation: report.explanation, quote: claim.quote, ...ledgerRef(),
+      });
+      showGate(gateOut, gateSummary(gateReport), gateReport.claim);
+    } catch (error) {
+      gateOut.className = "gate refused";
+      replace(gateOut, h("strong", {}, "Refused"), ` · ${error instanceof Error ? error.message : String(error)}`);
+    } finally {
+      checkButton.disabled = false;
+    }
+  };
+  checkButton.addEventListener("click", runCheck);
   const teach = h("fieldset", { class: "teach", hidden: true },
     h("legend", {}, "Teach Proven"),
-    awaitsConfirmation ? h("p", { class: "hint" },
-      `The model proposed ${proposed.map((w) => `“${w}”`).join(", ")}, which matched ${matchedByModel.length} transaction${matchedByModel.length === 1 ? "" : "s"} (listed under Findings). Proven will not rely on a model's words alone. If those transactions really are this cause, record it and Proven will know this phrase from now on, with no model needed.`) : null,
+    prefill ? h("p", { class: "hint" },
+      `From the teaching queue: in run ${prefill.item.example.run_id} (${prefill.item.example.extractor}) the model proposed ${prefill.terms.map((w) => `“${w}”`).join(", ")} for this reason, and ${prefill.item.waiting} waiting claim${prefill.item.waiting === 1 ? "" : "s"} use the same phrase. This close was re-checked with the rules alone, so the model's matches are not listed under Findings; check the transactions in Largest movements before you confirm.`)
+      : awaitsConfirmation ? h("p", { class: "hint" },
+        `The model proposed ${proposed.map((w) => `“${w}”`).join(", ")}, which matched ${matchedByModel.length} transaction${matchedByModel.length === 1 ? "" : "s"} (listed under Findings). Proven will not rely on a model's words alone. If those transactions really are this cause, record it and Proven will know this phrase from now on, with no model needed.`) : null,
     h("label", { class: "field" }, h("span", { class: "field-label" }, "When the stated reason says"), trigger),
     h("label", { class: "field" }, h("span", { class: "field-label" }, "search the ledger for (comma separated; pick words from the transaction memos above)"), words),
+    h("div", { class: "gate-row" }, gateOut, checkButton),
     h("label", { class: "check" }, confirm, " If this turns the claim into a PASS: I checked that the matched transactions really are this cause."),
     h("p", { class: "hint" }, "Leave the words empty to record the decision without teaching. A lesson applies to every close until you remove it from the Learned list."));
   /** @param {string} actionId */
@@ -693,10 +777,11 @@ function resolveSection(result, report) {
     status.textContent = action ? action.help : "";
     teach.hidden = !teaches(select.value);
   });
-  if (awaitsConfirmation && teaches("accept_convention")) {
+  if ((awaitsConfirmation || prefill) && teaches("accept_convention")) {
     select.value = "accept_convention";
     teach.hidden = false;
   }
+  if (prefill) runCheck();
   const button = /** @type {HTMLButtonElement} */ (h("button", { type: "submit", class: "button" }, "Record"));
   const form = h("form", { class: "resolve" }, select, note, button, teach, status);
   form.addEventListener("submit", async (event) => {
@@ -708,14 +793,14 @@ function resolveSection(result, report) {
         ? { triggers: splitWords(trigger.value), terms: splitWords(words.value), confirm_pass: confirm.checked }
         : undefined;
       /** @type {Recorded} */
+      // The text and ledger go with every decision, so the safety gate can replay it later
+      // ("Confirm defect" becomes a known-wrong case no lesson may pass).
       const saved = await api("/api/resolutions", {
         run_id: report.run.run_id, claim_id: id, quote: claim.quote, verdict: result.verdict,
         action: select.value, note: note.value,
         seconds_on_claim: opened ? Math.round((Date.now() - opened) / 1000) : null,
-        ...(lesson ? {
-          learn: lesson, explanation: report.explanation, extractor: "rules",
-          ...(state.upload ? { ledger_csv: state.upload.text, entity: state.upload.name } : { scenario_id: state.scenario?.id }),
-        } : {}),
+        explanation: report.explanation, ...ledgerRef(),
+        ...(lesson ? { learn: lesson, extractor: "rules" } : {}),
       });
       const label = select.options[select.selectedIndex].text;
       if (saved.lesson) {
@@ -725,9 +810,12 @@ function resolveSection(result, report) {
       state.resolved[id] = label;
       status.className = "resolve-status ok";
       status.textContent = `Recorded: ${label}, appended to the resolutions log.`;
+      refreshQueue();
     } catch (error) {
       status.className = "resolve-status err";
       status.textContent = error instanceof Error ? error.message : String(error);
+      const impact = error instanceof ApiError ? error.data.impact : undefined;
+      if (impact) showGate(gateOut, gateSummary(impact), impact.claim);
     } finally {
       button.disabled = false;
     }
@@ -741,9 +829,12 @@ function resolveSection(result, report) {
  */
 async function afterLesson(quote, label, saved) {
   await refreshLessons();
+  const gate = saved.impact ? ` ${gateSentence(gateSummary(saved.impact))}` : "";
   const text = `Taught Proven (${label}): “${saved.lesson?.triggers.join(" / ")}” → ${saved.lesson?.terms.join(", ")}. ` +
-    `This claim: ${saved.verdict_before} → ${saved.verdict_after}.`;
+    `This claim: ${saved.verdict_before} → ${saved.verdict_after}.${gate}`;
   state.lessonNotice = text;
+  state.prefill = null;
+  refreshQueue();
   if (!(await verify()) || !state.report) return;
   const now = state.report.claims.find((c) => c.claim.quote === quote);
   if (now) {
@@ -755,6 +846,116 @@ async function afterLesson(quote, label, saved) {
     renderClaims(state.report);
   }
   document.getElementById(`claim-${state.active}`)?.scrollIntoView({ block: "nearest" });
+}
+
+// ── the safety gate and the teaching queue ──────────────────────────────
+
+/** @param {GateReport} report @returns {GateSummary} */
+function gateSummary(report) {
+  return {
+    accepted: report.accepted, refusal: report.refusal, tested: report.tested,
+    new_unsafe_passes: report.regression.new_unsafe_passes + report.cases.new_unsafe_passes,
+    new_control_fails: report.regression.new_control_fails + report.cases.new_control_fails,
+    newly_passed_right: report.regression.newly_passed_right,
+    newly_failed_wrong: report.regression.newly_failed_wrong,
+    touched: report.regression.touched + report.cases.touched,
+    cases_changed: report.cases.changed.length, elapsed_ms: report.elapsed_ms,
+  };
+}
+
+/** One line on what the gate found, for a notice. @param {GateSummary} g */
+function gateSentence(g) {
+  if (!g.accepted) return g.refusal || "The safety gate refused this lesson.";
+  if (!g.tested) return "Not tested by the safety gate: no known claim uses this phrase or these words.";
+  return `Safety gate: replayed on ${g.touched} known claim${g.touched === 1 ? "" : "s"}; no wrong explanation passes and no right one fails` +
+    `; ${g.newly_passed_right} correct claim${g.newly_passed_right === 1 ? "" : "s"} newly pass` +
+    `${g.newly_failed_wrong ? `, ${g.newly_failed_wrong} wrong one${g.newly_failed_wrong === 1 ? "" : "s"} newly fail` : ""}` +
+    `${g.cases_changed ? `; ${g.cases_changed} of your recorded decisions change verdict` : ""}.`;
+}
+
+/**
+ * Render a gate result into `target`: refused (red), untested (amber) or safe (green), always in words.
+ * @param {HTMLElement} target @param {GateSummary} g @param {VerdictChange} [claim]
+ */
+function showGate(target, g, claim) {
+  const kind = !g.accepted ? "refused" : !g.tested ? "untested" : "safe";
+  target.className = `gate ${kind}`;
+  const label = { refused: "Gate refuses", untested: "Not tested", safe: "Gate: safe" }[kind];
+  const detail = kind === "refused" ? (g.refusal || "")
+    : kind === "untested" ? "no claim in the regression set or your recorded decisions uses this phrase or these words, so nothing known could catch a mistake. Check the transactions yourself."
+    : gateSentence(g).replace(/^Safety gate: /, "");
+  replace(target, h("strong", {}, label), ` · ${detail}`,
+    claim && claim.before ? ` This claim: ${claim.before} → ${claim.after}.` : "",
+    g.elapsed_ms ? h("span", { class: "muted" }, ` (${Math.round(g.elapsed_ms)} ms)`) : null);
+}
+
+async function refreshQueue() {
+  el.queueRefresh.disabled = true;
+  try {
+    state.queue = /** @type {TeachQueue} */ (await api("/api/queue"));
+    renderQueue();
+  } catch (error) {
+    replace(el.queue, h("li", { class: "empty" }, error instanceof Error ? error.message : String(error)));
+  } finally {
+    el.queueRefresh.disabled = false;
+  }
+}
+
+function renderQueue() {
+  const queue = state.queue;
+  if (!queue) return;
+  el.queueCount.textContent = queue.waiting ? String(queue.waiting) : "";
+  if (!queue.items.length) {
+    replace(el.queue, h("li", { class: "empty" },
+      queue.runs ? "Nothing waits for a confirmation in the stored runs." :
+        "Nothing waits yet. A claim joins this list when a model extractor's words are the only support for its reason; each such run is stored in the data directory."));
+    return;
+  }
+  replace(el.queue, ...queue.items.map((item, index) => {
+    const gate = h("div", { class: "gate" }, "Not previewed (outside the first rows).");
+    if (item.impact) showGate(gate, item.impact);
+    const counts = [
+      `${item.waiting} waiting claim${item.waiting === 1 ? "" : "s"} use this phrase`,
+      item.unlocks === null ? null : `${item.unlocks} would be decided by the rules`,
+      `${item.runs} run${item.runs === 1 ? "" : "s"}`,
+    ].filter(Boolean).join(" · ");
+    return h("li", { class: "queue-item" },
+      h("span", { class: "queue-rank" }, `${index + 1}.`),
+      h("div", {},
+        h("p", { class: "queue-rule" }, `“${item.trigger}” → `, h("span", { class: "terms" }, item.terms.join(", "))),
+        h("p", { class: "queue-counts" }, counts)),
+      h("button", {
+        type: "button", class: "button small", "aria-label": `Open the Teach form for “${item.trigger}”`,
+        onclick: () => openQueued(item),
+      }, "Open"),
+      gate);
+  }));
+}
+
+/**
+ * Open a queued lesson: load its stored run, re-check it, and open its claim with the Teach form filled in.
+ * @param {QueueItem} item
+ */
+async function openQueued(item) {
+  try {
+    /** @type {PendingRun} */
+    const run = await api(`/api/pending?key=${encodeURIComponent(item.example.key)}`);
+    const scenarioId = run.scenario_id || state.scenario?.id || "showcase";
+    await prepareScenario(scenarioId);
+    if (!el.scenario.querySelector(`option[value="${CSS.escape(scenarioId)}"]`)) {
+      el.scenario.append(h("option", { value: scenarioId }, `Stored run · ${scenarioId}`));
+    }
+    el.scenario.value = scenarioId;
+    state.upload = run.ledger_csv ? { name: run.entity || "Uploaded ledger", text: run.ledger_csv } : null;
+    el.editor.value = run.explanation;
+    state.prefill = { quote: item.example.quote, triggers: [item.example.driver], terms: item.terms, item };
+    state.lessonNotice = `Opened from Teach next: run ${run.run_id} (${run.extractor}), re-checked with the ${el.extractor.value} extractor. The claim's Teach form is filled in below.`;
+    if (!(await verify()) || !state.report) return;
+    const found = state.report.claims.find((c) => c.claim.quote === item.example.quote);
+    if (found) focusClaim(found.claim.claim_id);
+  } catch (error) {
+    showError(error instanceof Error ? error.message : String(error));
+  }
 }
 
 // ── learned lexicon ──────────────────────────────────────────────────────
@@ -788,6 +989,7 @@ async function removeLesson(id) {
     await refreshLessons();
     state.lessonNotice = "Lesson removed. Claims re-checked without it.";
     await verify();
+    refreshQueue();
   } catch (error) {
     showError(error instanceof Error ? error.message : String(error));
   }
@@ -948,6 +1150,7 @@ function wire() {
     });
   }
   el.benchExtractor.addEventListener("change", renderBenchmark);
+  el.queueRefresh.addEventListener("click", () => { refreshQueue(); });
   el.extractor.addEventListener("change", updateExtractorUi);
   el.model.addEventListener("input", () => { state.models[el.extractor.value] = el.model.value; });
 }
@@ -975,6 +1178,7 @@ async function init() {
       h("optgroup", { label: "Synthetic, held-out split" }, ...list.scenarios.filter((s) => s.kind === "synthetic").map((s) => h("option", { value: s.id }, `${s.title} (${s.id})`))));
     renderBenchmark();
     await refreshLessons();
+    refreshQueue();
     await loadScenario(list.scenarios[0].id);
   } catch (error) {
     showError(error instanceof Error ? error.message : String(error));

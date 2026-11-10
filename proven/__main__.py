@@ -59,6 +59,40 @@ def _print_benchmark(result: dict) -> None:
                                                  for reason, count in result["rejected"].items()))
 
 
+def _teach_curves(args, proposer) -> int:
+    """`teach-sim --order/--careless/--gate`: decided share against confirmations."""
+    from proven import teachsim
+    orders = ("arrival", "frequency") if args.order == "both" else (args.order or "frequency",)
+    gates = {"off": (False,), "on": (True,), "both": (False, True)}[
+        args.gate or ("both" if args.careless else "off")]
+    checkpoints = tuple(int(c) for c in args.checkpoints.split(",") if c.strip())
+    ok = True
+    for order in orders:
+        for use_gate in gates:
+            result = teachsim.curve(args.n, args.phrasing, proposer, order=order, checkpoints=checkpoints,
+                                    careless=args.careless, use_gate=use_gate, seed=args.seed, skew=args.skew,
+                                    any_model_match=args.any_model_match)
+            s = result["stats"]
+            print(f"proposer={result['proposer']} phrasing={result['phrasing']} order={order} "
+                  f"gate={'on' if use_gate else 'off'} careless={args.careless:g}"
+                  f"{f' skew={args.skew:g}' if args.skew else ''}"
+                  f"{' queue=any-model-match' if args.any_model_match else ''}; measured with the rules on "
+                  f"{result['held_closes']} closes never taught from")
+            print("confirmations  asks  careless  decided  reward  controls passed  control FAIL  unsafe PASS")
+            for r in result["rows"]:
+                print(f"{r['label']:>13}  {r['asks']:>4}  {r['careless_lessons']:>8}  {r['decided_share']:>7.1%}  "
+                      f"{r['mean_reward']:>6.3f}  {r['controls_passed']:>7}/{r['controls']:<7}  "
+                      f"{r['control_fails']:>12}  {r['unsafe_passes']:>11}")
+            gate_note = (f"; gate: {s['gate_calls']} checks, {s['gate_ms'] / max(1, s['gate_calls']):.0f} ms each, "
+                         f"refused {s['refused_wrong']} lesson(s) from wrong explanations and "
+                         f"{s['refused_right']} from right ones") if use_gate else ""
+            print(f"lessons from right explanations {s['careful']}, from wrong ones {s['careless']}; "
+                  f"wrong explanations declined {s['declined_wrong']}{gate_note}\n")
+            if use_gate or not args.careless:
+                ok &= all(r["unsafe_passes"] == 0 and r["control_fails"] == 0 for r in result["rows"])
+    return 0 if ok else 1
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="python -m proven", description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -103,6 +137,23 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--allow-network", action="store_true",
                    help="let a hosted model be called; without it only cached answers and loopback servers work")
     p.add_argument("--usd-budget", type=float, default=None)
+    p.add_argument("--order", default=None, choices=("arrival", "frequency", "both", "hindsight"),
+                   help="count the reviewer's time in confirmations, asking in this order "
+                        "(both: arrival and frequency; hindsight: the bound, ranked by the measured half)")
+    p.add_argument("--careless", type=float, default=0.0, metavar="P",
+                   help="the reviewer also confirms terms on WRONG explanations with probability P; "
+                        "reported without and with the safety gate")
+    p.add_argument("--gate", default=None, choices=("off", "on", "both"),
+                   help="replay each lesson through the safety gate before storing it "
+                        "(default: off, or both with --careless)")
+    p.add_argument("--seed", type=int, default=0, help="seed for the careless reviewer")
+    p.add_argument("--skew", type=float, default=0.0,
+                   help="draw closes whose phrases follow a Zipf law with this exponent (oracle only)")
+    p.add_argument("--any-model-match", action="store_true",
+                   help="queue every REVIEW claim whose model terms matched transactions, not only "
+                        "those whose support rests on them (a harder test for --careless)")
+    p.add_argument("--checkpoints", default="0,5,10,20,40",
+                   help="report after these many confirmations (and after all of them)")
 
     p = sub.add_parser("generate", help="write a labelled synthetic dataset")
     p.add_argument("--split", default="train", choices=("test", "train"))
@@ -174,6 +225,8 @@ def main(argv: list[str] | None = None) -> int:
             from proven.extractors import build
             netguard.allow_network() if args.allow_network else netguard.install()
             proposer = build(args.extractor, model=args.model, budget=Budget(None, args.usd_budget))
+        if args.order or args.careless or args.gate or args.skew or args.any_model_match:
+            return _teach_curves(args, proposer)
         result = teachsim.simulate(args.n, args.phrasing, proposer)
         print(f"proposer={result['proposer']} phrasing={result['phrasing']}; "
               f"measured with the rules on {result['held_closes']} closes never taught from")

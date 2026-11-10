@@ -20,6 +20,14 @@ needed to find out whether the checks are worth deploying.
     POST /api/resolutions        record one reviewer decision (optionally with a `learn` lesson)
     GET  /api/lexicon            lessons reviewers have taught, with where each came from
     POST /api/lexicon/remove     {id} -> forget one lesson (DELETE /api/lexicon?id= also works)
+    POST /api/lexicon/check      {triggers, terms} -> the safety gate's impact report, nothing stored
+    GET  /api/queue              what to confirm next across stored runs, ranked, with the gate's preview
+    GET  /api/pending?key=       one stored run's inputs, to open it in the console
+
+Every lesson passes the safety gate (`gate.py`) before it is stored: it is replayed against
+a built-in regression set of synthetic train-split closes and the directory's own recorded
+cases, and refused if it would pass an explanation known to be wrong or fail one known to
+be right. A refusal returns 400 with the reason and the full `impact` report.
 """
 from __future__ import annotations
 
@@ -36,7 +44,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-from proven import __version__, examples, extractors, learned, netguard, showcase
+from proven import __version__, examples, extractors, gate, learned, netguard, showcase, teachqueue
 from proven.budget import Budget, BudgetExceeded
 from proven.evaluate import OracleExtractor, evaluate, requirement_met
 from proven.ledger import Ledger
@@ -77,6 +85,14 @@ MIN_NOTE = 10
 
 class BadRequest(ValueError):
     pass
+
+
+class LessonBlocked(BadRequest):
+    """The safety gate refused a lesson. Carries the gate's impact report for the reviewer."""
+
+    def __init__(self, message: str, impact: dict):
+        super().__init__(message)
+        self.impact = impact
 
 
 #: Benchmarks the console may run. Both are offline and free; a model extractor is a paid (or at
@@ -159,12 +175,15 @@ def load_scenario(scenario_id: str) -> dict:
 
 
 class App:
-    def __init__(self, data_dir: Path, build=extractors.build, probe=probe_openweight):
+    def __init__(self, data_dir: Path, build=extractors.build, probe=probe_openweight,
+                 warm_gate: bool = False):
         self.build, self.probe = build, probe       # injectable, so tests never reach a model
         self.data_dir = data_dir
         self.resolutions = data_dir / "resolutions.jsonl"
         self._lock = threading.RLock()
         self.lexicon: list[dict] = learned.apply(data_dir)   # the only place lessons are loaded
+        if warm_gate:   # build the gate's regression set now, so the first lesson does not wait
+            threading.Thread(target=gate.regression_set, daemon=True).start()
 
     # ── handlers ──
     def config(self) -> dict:
@@ -232,6 +251,8 @@ class App:
                 raise BadRequest(f"the {extractor_id} extractor returned nothing usable: {failed[0]}")
         if body.get("scenario_id") == "tidewater" and not body.get("ledger_csv"):
             report["answer_key"] = answer_key(report)
+        with self._lock:     # claims waiting on a confirmation join the teaching queue
+            teachqueue.record_run(self.data_dir, body, report)
         return report
 
     @staticmethod
@@ -287,10 +308,14 @@ class App:
                  "seconds_on_claim": body.get("seconds_on_claim"),
                  "reduces_review": next(a["reduces_review"] for a in ACTIONS if a["id"] == action)}
         with self._lock:
-            lesson = None
+            lesson = impact = None
             if lesson_in is not None:
-                lesson, case = self._teach(body, lesson_in, entry)
+                lesson, case, impact = self._teach(body, lesson_in, entry)
                 entry.update({"lesson_id": lesson["id"], "case": case})
+            else:
+                case = self._case(body, entry["quote"])
+                if case is not None:      # kept so the safety gate can replay this decision
+                    entry["case"] = {**case, "verdict_before": entry["verdict"]}
             self.data_dir.mkdir(parents=True, exist_ok=True)
             with self.resolutions.open("a", encoding="utf-8") as handle:
                 handle.write(json.dumps(entry) + "\n")
@@ -299,16 +324,15 @@ class App:
             out["lesson"] = lesson
             out["verdict_before"] = entry["case"]["verdict_before"]
             out["verdict_after"] = entry["case"]["verdict_after"]
+            out["impact"] = impact
         return out
 
-    def _teach(self, body: dict, lesson_in: object, entry: dict) -> tuple[dict, dict]:
-        """Validate, dry-run, store and activate one lesson. Returns (lesson, regression case)."""
-        if not isinstance(lesson_in, dict):
-            raise BadRequest("learn must be an object {triggers: [...], terms: [...]}")
-        explanation, quote = str(body.get("explanation", "")), entry["quote"]
+    @staticmethod
+    def _case(body: dict, quote: str) -> dict | None:
+        """The inputs that let a decision be re-run later, or None if the request lacks them."""
+        explanation = str(body.get("explanation", ""))
         if not explanation.strip() or not quote:
-            raise BadRequest("a lesson needs the explanation text and the claim's quote, so it can "
-                             "be re-run as a regression case")
+            return None
         case: dict = {"explanation": explanation, "quote": quote}
         if body.get("ledger_csv"):
             case.update(ledger_csv=str(body["ledger_csv"]), entity=str(body.get("entity") or "Uploaded ledger"))
@@ -316,6 +340,21 @@ class App:
             load_scenario(str(body["scenario_id"]))   # raises BadRequest if unknown
             case["scenario_id"] = str(body["scenario_id"])
         else:
+            return None
+        return case
+
+    def _teach(self, body: dict, lesson_in: object, entry: dict) -> tuple[dict, dict, dict]:
+        """Validate, gate, dry-run, store and activate one lesson.
+
+        Returns (lesson, regression case, the gate's impact report)."""
+        if not isinstance(lesson_in, dict):
+            raise BadRequest("learn must be an object {triggers: [...], terms: [...]}")
+        quote = entry["quote"]
+        if not str(body.get("explanation", "")).strip() or not quote:
+            raise BadRequest("a lesson needs the explanation text and the claim's quote, so it can "
+                             "be re-run as a regression case")
+        case = self._case(body, quote)
+        if case is None:
             raise BadRequest("a lesson needs the scenario_id or ledger_csv the claim was checked against")
         try:
             lesson = learned.make_entry(
@@ -331,17 +370,51 @@ class App:
             raise BadRequest("this claim was not found when the sentence is re-read by the offline "
                              "rules, so a lesson about it could not be replayed; fix the sentence or "
                              "resolve it without teaching")
+        impact = gate.impact(lesson, self.lexicon, gate.stored_cases(self.data_dir))
+        impact["claim"] = {"quote": quote, "before": before, "after": after}
+        if not impact["accepted"]:
+            raise LessonBlocked(impact["refusal"], impact)
         if after == "PASS" and before != "PASS" and lesson_in.get("confirm_pass") is not True:
-            raise BadRequest(
+            raise LessonBlocked(
                 f"This lesson would turn the claim from {before} to PASS. Check that the matched "
-                "transactions really are the stated cause, then send it again with confirm_pass: true.")
+                "transactions really are the stated cause, then send it again with confirm_pass: true.",
+                impact)
         try:
             learned.append(self.data_dir, lesson)
         except learned.LessonRefused as exc:
             raise BadRequest(f"Proven will not learn this: {exc}") from None
         self.lexicon = learned.apply(self.data_dir)
         case.update(verdict_before=before, verdict_after=after)
-        return lesson, case
+        return lesson, case, impact
+
+    def check_lesson(self, body: dict) -> dict:
+        """The gate's impact report for a lesson, without storing anything.
+
+        With the claim's `explanation`, `quote` and `scenario_id` (or `ledger_csv`) the report
+        also says what the lesson does to that claim."""
+        try:
+            lesson = learned.make_entry(body.get("triggers"), body.get("terms"))
+        except learned.LessonRefused as exc:
+            raise BadRequest(f"Proven will not learn this: {exc}") from None
+        with self._lock:
+            impact = gate.impact(lesson, self.lexicon, gate.stored_cases(self.data_dir))
+            case = self._case(body, str(body.get("quote", "")))
+            if case is not None:
+                impact["claim"] = {"quote": case["quote"],
+                                   "before": learned.case_verdict(case, self.lexicon),
+                                   "after": learned.case_verdict(case, self.lexicon + [lesson])}
+        return impact
+
+    def queue(self) -> dict:
+        with self._lock:
+            return teachqueue.build_queue(self.data_dir, self.lexicon)
+
+    def pending(self, key: str) -> dict:
+        run = teachqueue.find_run(self.data_dir, key)
+        if run is None:
+            raise BadRequest(f"no stored run {key!r}")
+        return {k: run.get(k, "") for k in ("key", "run_id", "explanation", "scenario_id",
+                                             "ledger_csv", "entity", "extractor", "created_at")}
 
     def list_lexicon(self) -> dict:
         with self._lock:
@@ -387,6 +460,8 @@ def make_handler(app: App):
         def _guard(self, fn):
             try:
                 self._json(HTTPStatus.OK, fn())
+            except LessonBlocked as exc:
+                self._json(HTTPStatus.BAD_REQUEST, {"error": str(exc), "impact": exc.impact})
             except BadRequest as exc:
                 self._json(HTTPStatus.BAD_REQUEST, {"error": str(exc)})
             except Exception:  # noqa: BLE001 — the reviewer sees a message, the log sees the trace
@@ -434,12 +509,16 @@ def make_handler(app: App):
                 self._guard(app.list_resolutions)
             elif url.path == "/api/lexicon":
                 self._guard(app.list_lexicon)
+            elif url.path == "/api/queue":
+                self._guard(app.queue)
+            elif url.path == "/api/pending":
+                self._guard(lambda: app.pending(query.get("key", "")))
             else:
                 self._json(HTTPStatus.NOT_FOUND, {"error": f"no such route {url.path}"})
 
         def do_POST(self):  # noqa: N802
             routes = {"/api/verify": app.verify, "/api/benchmark": app.benchmark,
-                      "/api/resolutions": app.record,
+                      "/api/resolutions": app.record, "/api/lexicon/check": app.check_lesson,
                       "/api/lexicon/remove": lambda body: app.forget(str(body.get("id", "")))}
             handler = routes.get(urlparse(self.path).path)
             if handler is None:
@@ -469,7 +548,7 @@ def serve(host: str = "127.0.0.1", port: int = 8765, allow_network: bool = False
         netguard.allow_network()
     else:
         netguard.install()
-    server = create_server(host, port, data_dir)
+    server = create_server(host, port, data_dir, warm_gate=True)
     mode = "ALLOWED (the Claude extractor may send narrative text)" if allow_network \
         else "OFF (enforced: outbound connections are refused)"
     print(f"Proven {__version__} — reviewer console at http://{host}:{server.server_address[1]}/")

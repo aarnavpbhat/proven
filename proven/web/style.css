@@ -288,6 +288,28 @@ table.data .nowrap { white-space: nowrap; }
 .lesson:first-child { border-top: 0; }
 .lesson p { margin: 0; overflow-wrap: anywhere; }
 .lesson-rule { font-size: var(--fs-sm); }
+/* ── teaching queue and the safety gate ──────────────────── */
+
+.queue { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.queue-item { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 2px var(--sp-3); align-items: start; padding: var(--sp-2) 0; border-top: var(--border-w) solid var(--border); }
+.queue-item:first-child { border-top: 0; }
+.queue-item p { margin: 0; overflow-wrap: anywhere; }
+.queue-rank { font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--text-3); min-width: 20px; padding-top: 1px; }
+.queue-rule { font-size: var(--fs-sm); }
+.queue-rule .terms { color: var(--accent); }
+.queue-counts { font-size: var(--fs-xs); color: var(--text-2); font-variant-numeric: tabular-nums; }
+.queue-item .gate { grid-column: 2 / -1; }
+.gate { font-size: var(--fs-xs); color: var(--text-2); border-left: 3px solid var(--border-strong); padding-left: var(--sp-2); }
+.gate strong { font-weight: var(--fw-bold); }
+.gate.safe { border-left-color: var(--pass); }
+.gate.safe strong { color: var(--pass); }
+.gate.refused { border-left-color: var(--fail); }
+.gate.refused strong { color: var(--fail); }
+.gate.untested { border-left-color: var(--review); }
+.gate.untested strong { color: var(--review); }
+.teach .gate-row { display: flex; gap: var(--sp-2); align-items: flex-start; }
+.teach .gate-row .gate { flex: 1 1 auto; }
+
 .resolve-status { font-size: var(--fs-xs); color: var(--text-3); grid-column: 1 / -1; }
 .resolve-status.ok { color: var(--pass); }
 .resolve-status.err { color: var(--fail); }
@@ -311,6 +333,8 @@ table.data .nowrap { white-space: nowrap; }
   .toolbar .field { flex: 1 1 200px; }
   .layout > .col:first-child { position: static; max-height: none; overflow: visible; }
   .resolve { grid-template-columns: minmax(0, 1fr); }
+  .queue-item { grid-template-columns: auto minmax(0, 1fr); }
+  .queue-item > .button { grid-column: 2; justify-self: start; }
   .checks li { grid-template-columns: max-content minmax(0, 1fr); column-gap: var(--sp-3); }
   .checks li > span:last-child { grid-column: 1 / -1; color: var(--text-2); }
   .claim-body table.data { min-width: 520px; }
