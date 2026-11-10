@@ -1,0 +1,322 @@
+{
+  "company": "keystone",
+  "claims": [
+    {
+      "id": "KMC-01",
+      "quote": "Total costs were $490K for the month, up 16%.",
+      "account": "TOTAL",
+      "stated": {
+        "direction": "up",
+        "pct": 16,
+        "current": 490000
+      },
+      "strength": "none",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "All accounts went from $421,635.60 to $490,144.20: +$68,508.60, +16.2%. No cause is stated.",
+      "evidence": [],
+      "cause_txns": [],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "KMC-02",
+      "quote": "Materials were up $54K, primarily the three rooftop units for Mercy Ridge, partly offset by the copper return credit.",
+      "account": "Job Materials",
+      "stated": {
+        "direction": "up",
+        "change": 54000
+      },
+      "strength": "most",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Job materials went from $109,966.09 to $164,277.44: +$54,311.35. The three 25-ton RTUs for Job 2417 (Mercy Ridge) are $86,400, more than the whole change; offsets are the $6,850 copper return credit and August's $22,000 bulk copper order not repeating. Memo says 'RTUs', not 'rooftop units'.",
+      "evidence": [
+        "AP-30190",
+        "AP-30236",
+        "AP-30115"
+      ],
+      "cause_txns": [
+        "AP-30190"
+      ],
+      "mess": [
+        "credit_memo",
+        "abbreviation"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "KMC-03",
+      "quote": "Subcontractor costs fell ~$30K as the August insulation accrual reversed.",
+      "account": "Subcontractors",
+      "stated": {
+        "direction": "down",
+        "change": -30000
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_cause",
+      "why": "Subcontractors went from $80,000.00 to $50,450.00: -$29,550.00, so the amount is right. The -$18,000 reversal of August's insulation accrual is offset by the actual invoice for that work ($19,250) and September's own accrual ($17,500): Rocky Mountain Insulation's net change is +$750. The fall is Front Range Sheet Metal finishing the Belmar ductwork ($41,000 -> $9,200, -$31,800).",
+      "evidence": [
+        "GJ-30163",
+        "GJ-30167",
+        "AP-30208",
+        "GJ-30254",
+        "AP-30155",
+        "AP-30251"
+      ],
+      "cause_txns": [
+        "GJ-30163",
+        "GJ-30167",
+        "AP-30208",
+        "GJ-30254"
+      ],
+      "driver_txns": [
+        "AP-30155",
+        "AP-30251"
+      ],
+      "share_note": "The cause is the insulation accrual, so its transactions are the whole accrual cycle (accrue, reverse, bill, re-accrue), not the reversal line alone, which by itself is 61% of the change.",
+      "mess": [
+        "accrual_reversal"
+      ],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "KMC-04",
+      "quote": "Field labor rose about 5% on overtime to hit the Mercy Ridge set date.",
+      "account": "Field Labor",
+      "stated": {
+        "direction": "up",
+        "pct": 5
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Field labor went from $156,903.20 to $164,425.27: +$7,522.07, +4.8%. The two 'OT premium - Mercy Ridge set' lines are $7,500, 99.7% of the change.",
+      "evidence": [
+        "PR-30197",
+        "PR-30224"
+      ],
+      "cause_txns": [
+        "PR-30197",
+        "PR-30224"
+      ],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "KMC-05",
+      "quote": "Equipment rental rose ~$10K on the crane pick at Mercy Ridge; a second pick is scheduled for October.",
+      "account": "Equipment Rental",
+      "stated": {
+        "direction": "up",
+        "change": 10000
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Equipment rental went from $4,200.00 to $14,420.00: +$10,220.00. The Summit Crane pick for the RTUs ($9,800, memo 'Job 2417', not 'Mercy Ridge') is 96%.",
+      "evidence": [
+        "AP-30211"
+      ],
+      "cause_txns": [
+        "AP-30211"
+      ],
+      "mess": [
+        "one_off"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "KMC-06",
+      "quote": "Fuel rose $3.5K on higher diesel prices.",
+      "account": "Fuel",
+      "stated": {
+        "direction": "up",
+        "change": 3500
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_amount",
+      "why": "Fuel went from $9,160.00 to $9,760.00: +$600.00, not $3.5K (more than five times too high).",
+      "evidence": [
+        "AP-30131",
+        "AP-30160",
+        "AP-30214",
+        "AP-30252"
+      ],
+      "cause_txns": [],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "KMC-07",
+      "quote": "Vehicle repairs rose $6.9K, mostly the transmission rebuild on Truck 14 (reclassed out of small tools)",
+      "account": "Vehicle Repairs",
+      "stated": {
+        "direction": "up",
+        "change": 6900
+      },
+      "strength": "most",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Vehicle repairs went from $819.40 to $7,753.24: +$6,933.84. The Truck 14 transmission rebuild ($6,850) was keyed to Small Tools on the vendor invoice and moved here by a reclass journal: 99% of the change. Memo says 'trans rebuild'.",
+      "evidence": [
+        "GJ-30257",
+        "AP-30187",
+        "GJ-30256"
+      ],
+      "cause_txns": [
+        "GJ-30257"
+      ],
+      "mess": [
+        "reclass",
+        "abbreviation"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "KMC-08",
+      "quote": "small tools were down about $1.1K.",
+      "account": "Small Tools & Consumables",
+      "stated": {
+        "direction": "down",
+        "change": -1100
+      },
+      "strength": "none",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Small tools went from $2,960.49 to $1,846.71: -$1,113.78. The $6,850 rebuild booked here and reclassed out nets to zero. Second claim in a two-claim sentence; no cause.",
+      "evidence": [
+        "AP-30187",
+        "GJ-30256"
+      ],
+      "cause_txns": [],
+      "mess": [
+        "reclass",
+        "two_claims_one_sentence"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "KMC-09",
+      "quote": "Permits and inspections were up $2.2K, the Mercy Ridge mechanical permit.",
+      "account": "Permits & Inspections",
+      "stated": {
+        "direction": "up",
+        "change": 2200
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "cause_in_other_period",
+      "why": "Permits went from $2,200.00 to $4,400.00: +$2,200.00, so the amount is right. The Mercy Ridge mechanical permit ($1,900) was pulled in August, the prior period. September's increase is the Cherry Creek Lofts plumbing permits ($2,350) and Belmar backflow certifications ($1,600).",
+      "evidence": [
+        "AP-30096",
+        "AP-30191",
+        "AP-30241"
+      ],
+      "cause_txns": [
+        "AP-30096"
+      ],
+      "mess": [
+        "prior_period_cause"
+      ],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "KMC-10",
+      "quote": "Insurance jumped $11.3K on the workers' comp audit true-up for the 2025-26 policy year.",
+      "account": "Insurance",
+      "stated": {
+        "direction": "up",
+        "change": 11300
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Insurance went from $13,200.00 to $24,500.00: +$11,300.00. The Front Range Mutual 'WC final audit 25-26 - additional premium' is exactly the change. Memo abbreviates workers' comp and the policy year.",
+      "evidence": [
+        "AP-30218"
+      ],
+      "cause_txns": [
+        "AP-30218"
+      ],
+      "mess": [
+        "abbreviation"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "KMC-11",
+      "quote": "Safety & training up $5.3K for the foremen's OSHA 30 class.",
+      "account": "Safety & Training",
+      "stated": {
+        "direction": "up",
+        "change": 5300
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "cause_too_small",
+      "why": "Safety & training went from $650.00 to $5,950.00: +$5,300.00, so the amount is right. The OSHA 30 class is $2,100, 40% of it; the larger part is eight fall-protection kits ($3,200).",
+      "evidence": [
+        "AP-30234",
+        "AP-30238"
+      ],
+      "cause_txns": [
+        "AP-30234"
+      ],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    }
+  ],
+  "non_claims": [
+    {
+      "quote": "Mercy Ridge is now 38% complete and backlog stands at $6.2M.",
+      "why": "Percent complete and backlog are not ledger accounts."
+    }
+  ]
+}

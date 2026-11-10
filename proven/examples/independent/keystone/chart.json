@@ -1,0 +1,113 @@
+{
+  "entity": "Keystone Mechanical Contractors, LLC",
+  "industry": "Construction subcontractor (HVAC/plumbing)",
+  "history_periods": [
+    "2026-07"
+  ],
+  "prior_period": "2026-08",
+  "current_period": "2026-09",
+  "accounts": [
+    {
+      "name": "Job Materials",
+      "aliases": [
+        "job materials",
+        "materials"
+      ]
+    },
+    {
+      "name": "Subcontractors",
+      "aliases": [
+        "subcontractors",
+        "subcontract costs",
+        "subcontractor costs",
+        "subs"
+      ]
+    },
+    {
+      "name": "Field Labor",
+      "aliases": [
+        "field labor",
+        "field payroll"
+      ]
+    },
+    {
+      "name": "Equipment Rental",
+      "aliases": [
+        "equipment rental",
+        "rentals"
+      ]
+    },
+    {
+      "name": "Fuel",
+      "aliases": [
+        "fuel"
+      ]
+    },
+    {
+      "name": "Vehicle Repairs",
+      "aliases": [
+        "vehicle repairs",
+        "fleet repairs",
+        "truck repairs"
+      ]
+    },
+    {
+      "name": "Small Tools & Consumables",
+      "aliases": [
+        "small tools & consumables",
+        "small tools",
+        "consumables"
+      ]
+    },
+    {
+      "name": "Permits & Inspections",
+      "aliases": [
+        "permits & inspections",
+        "permits and inspections",
+        "permits"
+      ]
+    },
+    {
+      "name": "Insurance",
+      "aliases": [
+        "insurance"
+      ]
+    },
+    {
+      "name": "Office Salaries",
+      "aliases": [
+        "office salaries",
+        "office payroll"
+      ]
+    },
+    {
+      "name": "Office Rent",
+      "aliases": [
+        "office rent"
+      ]
+    },
+    {
+      "name": "Professional Fees",
+      "aliases": [
+        "professional fees"
+      ]
+    },
+    {
+      "name": "Safety & Training",
+      "aliases": [
+        "safety & training",
+        "safety and training",
+        "safety",
+        "training"
+      ]
+    },
+    {
+      "name": "Waste & Disposal",
+      "aliases": [
+        "waste & disposal",
+        "disposal",
+        "dumpsters"
+      ]
+    }
+  ]
+}

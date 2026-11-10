@@ -1,0 +1,295 @@
+{
+  "company": "northstar",
+  "claims": [
+    {
+      "id": "NSF-01",
+      "quote": "Total operating expenses rose 18% to $754K.",
+      "account": "TOTAL",
+      "stated": {
+        "direction": "up",
+        "pct": 18,
+        "current": 754000
+      },
+      "strength": "none",
+      "truth": "WRONG",
+      "defect": "wrong_amount",
+      "why": "All accounts went from $676,995.82 to $754,350.31: +$77,354.49, +11.4%, not 18%. The balance ($754K) is right; the percentage is not.",
+      "evidence": [],
+      "cause_txns": [],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "NSF-02",
+      "quote": "Fuel rose ~$19.5K (about 12%) on higher diesel prices and the extra Winnipeg miles.",
+      "account": "Fuel",
+      "stated": {
+        "direction": "up",
+        "change": 19500,
+        "pct": 12
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Fuel went from $167,589.04 to $187,098.65: +$19,509.61, +11.6%. US fleet-card fuel rose $14,270.18 (daily spend up about 5% on price and miles) and Manitoba fuel billed in CAD rose $5,239.43 (eight Brandon MB fills against five, at a stronger CAD). Price and volume leave no single transaction.",
+      "evidence": [],
+      "cause_txns": [],
+      "share_note": "A price-and-volume cause spread over 74 fuel lines; the Manitoba lines carry the 'Winnipeg miles' part as CAD conversions.",
+      "mess": [
+        "fx",
+        "business_language"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "NSF-03",
+      "quote": "Driver wages were up 6% on the higher mileage.",
+      "account": "Driver Wages",
+      "stated": {
+        "direction": "up",
+        "pct": 6
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Driver wages went from $182,457.81 to $193,547.53: +$11,089.72, +6.1%. Drivers are paid by the mile; both semi-monthly settlements rose about 6%.",
+      "evidence": [],
+      "cause_txns": [],
+      "share_note": "A rate-times-volume cause across the two settlement lines.",
+      "mess": [
+        "business_language"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "NSF-04",
+      "quote": "Purchased transportation was up 25%, or about $40K, as we brokered out the peak overflow on the Harlow Foods account.",
+      "account": "Purchased Transportation",
+      "stated": {
+        "direction": "up",
+        "change": 40000,
+        "pct": 25
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_amount",
+      "why": "Purchased transportation went from $149,511.34 to $177,400.00: +$27,888.66, +18.7%. Both stated figures are too high ($40K is 43% over; 25% against 18.7%).",
+      "evidence": [],
+      "cause_txns": [],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "NSF-05",
+      "quote": "Maintenance came in about $11K lower: September carried the in-frame overhaul on unit 2207, partly offset by this month's DPF cleaning program.",
+      "account": "Tractor & Trailer Maintenance",
+      "stated": {
+        "direction": "down",
+        "change": -11000
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Maintenance went from $28,156.23 to $17,162.42: -$10,993.81. September's in-frame overhaul ($18,500) did not recur and October's DPF cleaning ($6,600) is new: net -$11,900, 108% of the change.",
+      "evidence": [
+        "NSF-55158",
+        "NSF-55268"
+      ],
+      "cause_txns": [
+        "NSF-55158",
+        "NSF-55268"
+      ],
+      "mess": [
+        "prior_period_cause",
+        "one_off"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "NSF-06",
+      "quote": "Tires were up about $10K on the winter steer-tire program (14 tractors).",
+      "account": "Tires",
+      "stated": {
+        "direction": "up",
+        "change": 10000
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Tires went from $2,800.00 to $12,840.00: +$10,040.00. 'Steer tire replacement - 14 tractors (winter program)' is $9,940, 99%.",
+      "evidence": [
+        "NSF-55245"
+      ],
+      "cause_txns": [
+        "NSF-55245"
+      ],
+      "mess": [
+        "non_money_numbers"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "NSF-07",
+      "quote": "Dispatch software was up $3.3K with the trailer trackers going live.",
+      "account": "Dispatch & ELD Software",
+      "stated": {
+        "direction": "up",
+        "change": 3300
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_account",
+      "why": "Dispatch & ELD software went from $3,930.00 to $4,000.00: +$70.00. The trailer trackers ($3,300, TrackPoint Telematics) are booked to Equipment Leases, which rose exactly $3,300.",
+      "evidence": [
+        "NSF-55258"
+      ],
+      "cause_txns": [
+        "NSF-55258"
+      ],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "NSF-08",
+      "quote": "Insurance increased $5.6K, all of it the October 1 renewal of the auto liability and cargo program.",
+      "account": "Insurance",
+      "stated": {
+        "direction": "up",
+        "change": 5600
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Insurance went from $38,100.00 to $43,700.00: +$5,600.00. The monthly prepaid amortisation for auto liability and cargo went from $31,200 (2025 policy) to $36,800 (renewal 10/1/26): 100%.",
+      "evidence": [
+        "NSF-55188",
+        "NSF-55293"
+      ],
+      "cause_txns": [
+        "NSF-55188",
+        "NSF-55293"
+      ],
+      "mess": [
+        "prepaid_amortisation",
+        "abbreviation"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "NSF-09",
+      "quote": "Cargo claims rose $12.4K on the Harlow Foods water damage claim.",
+      "account": "Cargo Claims",
+      "stated": {
+        "direction": "up",
+        "change": 12400
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "contradicted_by_credit",
+      "why": "Cargo claims went from $600.00 to $3,000.00: +$2,400.00. The Harlow Foods claim ($12,400) was largely recovered from the cargo underwriter in the same month (-$9,400): net $3,000, the deductible. The sentence quotes the gross claim as the variance.",
+      "evidence": [
+        "NSF-55231",
+        "NSF-55284"
+      ],
+      "cause_txns": [
+        "NSF-55231",
+        "NSF-55284"
+      ],
+      "mess": [
+        "credit_memo"
+      ],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "NSF-10",
+      "quote": "Driver recruiting rose $7.6K on the expanded job-board campaign.",
+      "account": "Driver Recruiting",
+      "stated": {
+        "direction": "up",
+        "change": 7600
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "cause_too_small",
+      "why": "Driver recruiting went from $1,600.00 to $9,200.00: +$7,600.00, so the amount is right. The job-board campaign rose $2,900 (38%); the larger part is CDL school tuition reimbursement for two hires ($4,700).",
+      "evidence": [
+        "NSF-55128",
+        "NSF-55226",
+        "NSF-55275"
+      ],
+      "cause_txns": [
+        "NSF-55128",
+        "NSF-55226"
+      ],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "NSF-11",
+      "quote": "Tolls and permits were flat at about $9K.",
+      "account": "Tolls & Permits",
+      "stated": {
+        "direction": "flat",
+        "current": 9000
+      },
+      "strength": "none",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Tolls & permits went from $9,060.00 to $9,200.00: +$140.00 (+1.5%), flat in any reading, at about $9K.",
+      "evidence": [],
+      "cause_txns": [],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    }
+  ],
+  "non_claims": [
+    {
+      "quote": "Loaded miles were up 6.4% to 1.21M, revenue per loaded mile held at $2.71, and the operating ratio improved to 93.8%.",
+      "why": "Operating statistics, not ledger accounts."
+    }
+  ]
+}

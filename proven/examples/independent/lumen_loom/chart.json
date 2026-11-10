@@ -1,0 +1,122 @@
+{
+  "entity": "Lumen & Loom Home Co.",
+  "industry": "E-commerce (DTC home textiles)",
+  "history_periods": [
+    "2026-08"
+  ],
+  "prior_period": "2026-09",
+  "current_period": "2026-10",
+  "accounts": [
+    {
+      "name": "Paid Social",
+      "aliases": [
+        "paid social",
+        "social ads"
+      ]
+    },
+    {
+      "name": "Paid Search",
+      "aliases": [
+        "paid search",
+        "search",
+        "sem"
+      ]
+    },
+    {
+      "name": "Affiliates & Influencers",
+      "aliases": [
+        "affiliates & influencers",
+        "affiliate & influencer",
+        "affiliates and influencers",
+        "affiliates",
+        "influencers"
+      ]
+    },
+    {
+      "name": "3PL Fulfillment",
+      "aliases": [
+        "3pl fulfillment",
+        "3pl",
+        "fulfillment"
+      ]
+    },
+    {
+      "name": "Outbound Shipping",
+      "aliases": [
+        "outbound shipping",
+        "shipping",
+        "postage"
+      ]
+    },
+    {
+      "name": "Packaging",
+      "aliases": [
+        "packaging"
+      ]
+    },
+    {
+      "name": "Payment Processing",
+      "aliases": [
+        "payment processing",
+        "processing fees",
+        "merchant fees"
+      ]
+    },
+    {
+      "name": "Returns & Refund Costs",
+      "aliases": [
+        "returns & refund costs",
+        "returns costs",
+        "returns"
+      ]
+    },
+    {
+      "name": "Ecommerce Platform & Apps",
+      "aliases": [
+        "ecommerce platform & apps",
+        "platform & apps",
+        "platform and apps",
+        "platform",
+        "apps"
+      ]
+    },
+    {
+      "name": "Customer Support",
+      "aliases": [
+        "customer support",
+        "cx",
+        "support"
+      ]
+    },
+    {
+      "name": "Content & Photography",
+      "aliases": [
+        "content & photography",
+        "content",
+        "photography",
+        "creative"
+      ]
+    },
+    {
+      "name": "Salaries",
+      "aliases": [
+        "salaries",
+        "payroll"
+      ]
+    },
+    {
+      "name": "Rent",
+      "aliases": [
+        "rent",
+        "office rent"
+      ]
+    },
+    {
+      "name": "General & Admin",
+      "aliases": [
+        "general & admin",
+        "g&a"
+      ]
+    }
+  ]
+}

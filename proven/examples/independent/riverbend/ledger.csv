@@ -1,0 +1,263 @@
+id,date,account,vendor,memo,amount
+RB-0001,2026-04-01,Program Supplies,Packline Supply,Gloves/hairnets,373.95
+RB-0002,2026-04-01,Program Supplies,Shipline West,Banana boxes,240.86
+RB-0003,2026-04-01,Benefits & Payroll Taxes,Northwest Nonprofit Health Trust,Group health,11200.00
+RB-0004,2026-04-01,Warehouse Occupancy,Riverside Industrial Partners,Warehouse rent - Bldg C,9600.00
+RB-0005,2026-04-01,Warehouse Occupancy,Riverside Industrial Partners,CAM estimate,1150.00
+RB-0006,2026-04-01,Technology,TechBridge Managed IT,Managed IT - Apr,1450.00
+RB-0007,2026-04-01,Office & Admin,Officemart,Toner,158.14
+RB-0008,2026-04-01,Office & Admin,Officemart,Office supplies,121.37
+RB-0009,2026-04-02,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,2936.22
+RB-0010,2026-04-02,Food Purchases,Valley Fresh Produce,Produce - weekly,2467.98
+RB-0011,2026-04-02,Volunteer Program,Bulkmart Business Ctr,Volunteer snacks/water,154.48
+RB-0012,2026-04-02,Office & Admin,Breakroom Co,Coffee service,106.73
+RB-0013,2026-04-03,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,3039.90
+RB-0014,2026-04-03,Technology,Officeline 365,Nonprofit seats (22),220.00
+RB-0015,2026-04-03,Volunteer Program,VolunteerLink,Scheduling app,117.16
+RB-0016,2026-04-03,Office & Admin,Officemart,Office supplies,108.21
+RB-0017,2026-04-03,Office & Admin,Officemart,Toner,135.79
+RB-0018,2026-04-04,Office & Admin,Postal Annex,Postage - donor receipts,159.15
+RB-0019,2026-04-05,Program Supplies,Packline Supply,Tape + labels,251.08
+RB-0020,2026-04-05,Office & Admin,Breakroom Co,Coffee service,109.05
+RB-0021,2026-04-06,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,3066.73
+RB-0022,2026-04-06,Office & Admin,Breakroom Co,Coffee service,107.53
+RB-0023,2026-04-07,Volunteer Program,Shirt Shack Printing,Volunteer t-shirts,131.90
+RB-0024,2026-04-07,Office & Admin,Breakroom Co,Coffee service,152.21
+RB-0025,2026-04-08,Program Supplies,Packline Supply,Gloves/hairnets,94.76
+RB-0026,2026-04-08,Professional Fees,Hollis & Grant CPAs,Bookkeeping + payroll filings,2500.00
+RB-0027,2026-04-08,Office & Admin,Breakroom Co,Coffee service,110.21
+RB-0028,2026-04-09,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,2987.29
+RB-0029,2026-04-09,Food Purchases,Valley Fresh Produce,Produce - weekly,2389.84
+RB-0030,2026-04-09,Utilities,Clark County PUD,Electric - warehouse + cold storage,3820.00
+RB-0031,2026-04-09,Utilities,Clark County PUD,Water,210.00
+RB-0032,2026-04-09,Office & Admin,Postal Annex,Postage - donor receipts,47.87
+RB-0033,2026-04-09,Office & Admin,Postal Annex,Postage - donor receipts,147.90
+RB-0034,2026-04-09,Office & Admin,Breakroom Co,Coffee service,112.04
+RB-0035,2026-04-10,Program Supplies,Packline Supply,Tape + labels,311.37
+RB-0036,2026-04-10,Program Supplies,Shipline West,Pallet wrap,197.38
+RB-0037,2026-04-10,Program Supplies,Packline Supply,Gloves/hairnets,304.89
+RB-0038,2026-04-11,Volunteer Program,VolunteerLink,Scheduling app,126.12
+RB-0039,2026-04-12,Volunteer Program,VolunteerLink,Scheduling app,172.51
+RB-0040,2026-04-12,Office & Admin,Officemart,Toner,47.24
+RB-0041,2026-04-12,Office & Admin,Officemart,Office supplies,120.37
+RB-0042,2026-04-13,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,3062.92
+RB-0043,2026-04-13,Office & Admin,Postal Annex,Postage - donor receipts,158.52
+RB-0044,2026-04-14,Printing & Postage,Millrace Print & Mail,"Gala save-the-dates - 1,800 pcs",1400.00
+RB-0045,2026-04-14,Office & Admin,Officemart,Toner,43.28
+RB-0046,2026-04-15,Program Salaries,Evergreen Nonprofit Payroll,Payroll 4/15 - program staff,38829.48
+RB-0047,2026-04-15,Admin Salaries,Evergreen Nonprofit Payroll,Payroll 4/15 - admin,14213.62
+RB-0048,2026-04-15,Benefits & Payroll Taxes,Evergreen Nonprofit Payroll,ER taxes 4/15,4057.80
+RB-0049,2026-04-15,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 1, 1st-15th",413.63
+RB-0050,2026-04-15,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 2, 1st-15th",404.08
+RB-0051,2026-04-15,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 3, 1st-15th",419.40
+RB-0052,2026-04-15,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 4, 1st-15th",416.80
+RB-0053,2026-04-15,Office & Admin,Breakroom Co,Coffee service,27.15
+RB-0054,2026-04-16,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,3018.24
+RB-0055,2026-04-16,Food Purchases,Valley Fresh Produce,Produce - weekly,2357.34
+RB-0056,2026-04-18,Fleet & Fuel,Northline Truck Service,PM service - rotating unit,420.00
+RB-0057,2026-04-18,Volunteer Program,VolunteerLink,Scheduling app,244.48
+RB-0058,2026-04-19,Volunteer Program,Shirt Shack Printing,Volunteer t-shirts,224.61
+RB-0059,2026-04-19,Volunteer Program,VolunteerLink,Scheduling app,109.14
+RB-0060,2026-04-20,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,2951.52
+RB-0061,2026-04-20,Program Supplies,Shipline West,Banana boxes,374.04
+RB-0062,2026-04-20,Utilities,Waste Connections NW,Organics + cardboard hauling,690.00
+RB-0063,2026-04-21,Office & Admin,Postal Annex,Postage - donor receipts,138.74
+RB-0064,2026-04-22,Special Events,BidHive,Auction platform - setup,400.00
+RB-0065,2026-04-22,Office & Admin,Officemart,Toner,147.82
+RB-0066,2026-04-22,Office & Admin,Postal Annex,Postage - donor receipts,57.30
+RB-0067,2026-04-23,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,2930.96
+RB-0068,2026-04-23,Food Purchases,Valley Fresh Produce,Produce - weekly,2333.04
+RB-0069,2026-04-23,Program Supplies,Shipline West,Produce bags,402.33
+RB-0070,2026-04-24,Program Supplies,Shipline West,Produce bags,218.14
+RB-0071,2026-04-24,Office & Admin,Breakroom Co,Coffee service,67.91
+RB-0072,2026-04-24,Office & Admin,Postal Annex,Postage - donor receipts,147.68
+RB-0073,2026-04-27,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,2943.45
+RB-0074,2026-04-30,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,2990.92
+RB-0075,2026-04-30,Food Purchases,Valley Fresh Produce,Produce - weekly,2341.75
+RB-0076,2026-04-30,Program Salaries,Evergreen Nonprofit Payroll,Payroll 4/30 - program staff,38781.54
+RB-0077,2026-04-30,Admin Salaries,Evergreen Nonprofit Payroll,Payroll 4/30 - admin,14196.37
+RB-0078,2026-04-30,Benefits & Payroll Taxes,Evergreen Nonprofit Payroll,ER taxes 4/30,4052.81
+RB-0079,2026-04-30,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 1, 16th-EOM",408.03
+RB-0080,2026-04-30,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 2, 16th-EOM",407.70
+RB-0081,2026-04-30,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 3, 16th-EOM",423.32
+RB-0082,2026-04-30,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 4, 16th-EOM",405.09
+RB-0083,2026-05-01,Benefits & Payroll Taxes,Northwest Nonprofit Health Trust,Group health,11200.00
+RB-0084,2026-05-01,Warehouse Occupancy,Riverside Industrial Partners,Warehouse rent - Bldg C,9600.00
+RB-0085,2026-05-01,Warehouse Occupancy,Riverside Industrial Partners,CAM estimate,1150.00
+RB-0086,2026-05-01,Technology,TechBridge Managed IT,Managed IT - May,1450.00
+RB-0087,2026-05-01,Office & Admin,Postal Annex,Postage - donor receipts,125.86
+RB-0088,2026-05-01,Office & Admin,Officemart,Office supplies,30.08
+RB-0089,2026-05-02,Special Events,Columbia Ballroom at the Hallett,Harvest Table Gala - venue + rentals,14000.00
+RB-0090,2026-05-02,Office & Admin,Postal Annex,Postage - donor receipts,62.53
+RB-0091,2026-05-03,Technology,Officeline 365,Nonprofit seats (22),220.00
+RB-0092,2026-05-03,Office & Admin,Postal Annex,Postage - donor receipts,38.98
+RB-0093,2026-05-04,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,2985.11
+RB-0094,2026-05-04,Volunteer Program,Bulkmart Business Ctr,Volunteer snacks/water,136.99
+RB-0095,2026-05-05,Program Supplies,Shipline West,Produce bags,164.77
+RB-0096,2026-05-05,Program Supplies,Packline Supply,Tape + labels,298.13
+RB-0097,2026-05-05,Printing & Postage,Millrace Print & Mail,"Gala invitations + RSVP cards - 1,800 pcs",2900.00
+RB-0098,2026-05-05,Office & Admin,Officemart,Office supplies,134.46
+RB-0099,2026-05-06,Program Supplies,Shipline West,Banana boxes,221.20
+RB-0100,2026-05-06,Printing & Postage,Postmaster - Vancouver,Permit 112 postage - gala invitations,600.00
+RB-0101,2026-05-06,Office & Admin,Officemart,Office supplies,138.58
+RB-0102,2026-05-07,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,2971.23
+RB-0103,2026-05-07,Food Purchases,Valley Fresh Produce,Produce - weekly,2454.96
+RB-0104,2026-05-07,Office & Admin,Postal Annex,Postage - donor receipts,119.51
+RB-0105,2026-05-08,Professional Fees,Hollis & Grant CPAs,Bookkeeping + payroll filings,2500.00
+RB-0106,2026-05-09,Utilities,Clark County PUD,Electric - warehouse + cold storage,3905.00
+RB-0107,2026-05-09,Utilities,Clark County PUD,Water,215.00
+RB-0108,2026-05-09,Special Events,Fireside Catering Co,Gala catering - deposit (85%),12300.00
+RB-0109,2026-05-09,Office & Admin,Breakroom Co,Coffee service,17.36
+RB-0110,2026-05-10,Volunteer Program,VolunteerLink,Scheduling app,53.80
+RB-0111,2026-05-10,Office & Admin,Breakroom Co,Coffee service,136.76
+RB-0112,2026-05-10,Office & Admin,Breakroom Co,Coffee service,87.62
+RB-0113,2026-05-10,Office & Admin,Postal Annex,Postage - donor receipts,21.01
+RB-0114,2026-05-11,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,3022.49
+RB-0115,2026-05-11,Office & Admin,Officemart,Toner,87.68
+RB-0116,2026-05-11,Office & Admin,Breakroom Co,Coffee service,60.80
+RB-0117,2026-05-12,Program Supplies,Shipline West,Produce bags,405.79
+RB-0118,2026-05-12,Volunteer Program,VolunteerLink,Scheduling app,30.43
+RB-0119,2026-05-12,Office & Admin,Postal Annex,Postage - donor receipts,76.78
+RB-0120,2026-05-12,Office & Admin,Officemart,Toner,76.11
+RB-0121,2026-05-14,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,2926.91
+RB-0122,2026-05-14,Food Purchases,Valley Fresh Produce,Produce - weekly,2458.65
+RB-0123,2026-05-14,Office & Admin,Breakroom Co,Coffee service,124.92
+RB-0124,2026-05-15,Program Salaries,Evergreen Nonprofit Payroll,Payroll 5/15 - program staff,38762.23
+RB-0125,2026-05-15,Admin Salaries,Evergreen Nonprofit Payroll,Payroll 5/15 - admin,14197.96
+RB-0126,2026-05-15,Benefits & Payroll Taxes,Evergreen Nonprofit Payroll,ER taxes 5/15,4051.45
+RB-0127,2026-05-15,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 1, 1st-15th",424.00
+RB-0128,2026-05-15,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 2, 1st-15th",412.92
+RB-0129,2026-05-15,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 3, 1st-15th",422.38
+RB-0130,2026-05-15,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 4, 1st-15th",406.41
+RB-0131,2026-05-16,Special Events,Brightstage AV,Gala AV + lighting,3800.00
+RB-0132,2026-05-17,Program Supplies,Shipline West,Produce bags,148.82
+RB-0133,2026-05-17,Program Supplies,Packline Supply,Gloves/hairnets,80.93
+RB-0134,2026-05-17,Volunteer Program,Bulkmart Business Ctr,Volunteer snacks/water,92.60
+RB-0135,2026-05-17,Office & Admin,Officemart,Toner,49.05
+RB-0136,2026-05-18,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,2949.09
+RB-0137,2026-05-18,Fleet & Fuel,Northline Truck Service,PM service - rotating unit,455.00
+RB-0138,2026-05-18,Volunteer Program,Bulkmart Business Ctr,Volunteer snacks/water,114.40
+RB-0139,2026-05-20,Program Supplies,Packline Supply,Tape + labels,315.10
+RB-0140,2026-05-20,Program Supplies,Shipline West,Pallet wrap,275.72
+RB-0141,2026-05-20,Utilities,Waste Connections NW,Organics + cardboard hauling,690.00
+RB-0142,2026-05-20,Special Events,BidHive,Auction platform - event fee,650.00
+RB-0143,2026-05-21,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,3035.02
+RB-0144,2026-05-21,Food Purchases,Valley Fresh Produce,Produce - weekly,2349.99
+RB-0145,2026-05-21,Program Supplies,Shipline West,Banana boxes,337.64
+RB-0146,2026-05-22,Program Supplies,Packline Supply,Tape + labels,253.70
+RB-0147,2026-05-23,Volunteer Program,Shirt Shack Printing,Volunteer t-shirts,219.61
+RB-0148,2026-05-24,Office & Admin,Postal Annex,Postage - donor receipts,124.19
+RB-0149,2026-05-24,Office & Admin,Postal Annex,Postage - donor receipts,39.15
+RB-0150,2026-05-25,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,2925.98
+RB-0151,2026-05-26,Office & Admin,Officemart,Office supplies,71.85
+RB-0152,2026-05-26,Office & Admin,Breakroom Co,Coffee service,147.04
+RB-0153,2026-05-26,Office & Admin,Postal Annex,Postage - donor receipts,47.41
+RB-0154,2026-05-27,Program Supplies,Shipline West,Pallet wrap,404.93
+RB-0155,2026-05-27,Office & Admin,Officemart,Office supplies,62.01
+RB-0156,2026-05-28,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,2980.64
+RB-0157,2026-05-28,Food Purchases,Valley Fresh Produce,Produce - weekly,2467.53
+RB-0158,2026-05-28,Program Supplies,Shipline West,Banana boxes,131.83
+RB-0159,2026-05-28,Office & Admin,Officemart,Office supplies,107.83
+RB-0160,2026-05-31,Program Salaries,Evergreen Nonprofit Payroll,Payroll 5/31 - program staff,38809.12
+RB-0161,2026-05-31,Admin Salaries,Evergreen Nonprofit Payroll,Payroll 5/31 - admin,14187.18
+RB-0162,2026-05-31,Benefits & Payroll Taxes,Evergreen Nonprofit Payroll,ER taxes 5/31,4054.22
+RB-0163,2026-05-31,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 1, 16th-EOM",403.72
+RB-0164,2026-05-31,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 2, 16th-EOM",412.67
+RB-0165,2026-05-31,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 3, 16th-EOM",410.35
+RB-0166,2026-05-31,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 4, 16th-EOM",417.37
+RB-0167,2026-06-01,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,3046.28
+RB-0168,2026-06-01,Benefits & Payroll Taxes,Northwest Nonprofit Health Trust,Group health,11200.00
+RB-0169,2026-06-01,Warehouse Occupancy,Riverside Industrial Partners,Warehouse rent - Bldg C,9600.00
+RB-0170,2026-06-01,Warehouse Occupancy,Riverside Industrial Partners,CAM estimate,1150.00
+RB-0171,2026-06-01,Technology,TechBridge Managed IT,Managed IT - Jun,1450.00
+RB-0172,2026-06-01,Office & Admin,Officemart,Toner,44.20
+RB-0173,2026-06-01,Office & Admin,Officemart,Office supplies,59.63
+RB-0174,2026-06-02,Program Supplies,Shipline West,Pallet wrap,325.61
+RB-0175,2026-06-02,Volunteer Program,Bulkmart Business Ctr,Volunteer snacks/water,30.01
+RB-0176,2026-06-02,Office & Admin,Postal Annex,Postage - donor receipts,63.25
+RB-0177,2026-06-03,Technology,Officeline 365,Nonprofit seats (22),220.00
+RB-0178,2026-06-03,Technology,GiveTrack CRM,Annual subscription FY27,4400.00
+RB-0179,2026-06-04,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,3039.63
+RB-0180,2026-06-04,Food Purchases,Valley Fresh Produce,Produce - weekly,2421.71
+RB-0181,2026-06-04,Special Events,Fireside Catering Co,Final balance - Harvest Table Gala (5/16),4200.00
+RB-0182,2026-06-04,Office & Admin,Officemart,Toner,116.24
+RB-0183,2026-06-04,Office & Admin,Postal Annex,Postage - donor receipts,101.64
+RB-0184,2026-06-07,Office & Admin,Postal Annex,Postage - donor receipts,129.84
+RB-0185,2026-06-07,Office & Admin,Officemart,Office supplies,134.23
+RB-0186,2026-06-08,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,2983.33
+RB-0187,2026-06-08,Professional Fees,Hollis & Grant CPAs,Bookkeeping + payroll filings,2500.00
+RB-0188,2026-06-08,Volunteer Program,Shirt Shack Printing,Volunteer t-shirts,205.90
+RB-0189,2026-06-09,Utilities,Clark County PUD,Electric - warehouse + cold storage,4110.00
+RB-0190,2026-06-09,Utilities,Clark County PUD,Water,240.00
+RB-0191,2026-06-09,Office & Admin,Postal Annex,Postage - donor receipts,133.47
+RB-0192,2026-06-10,Printing & Postage,Millrace Print & Mail,"Spring appeal mailing - 12,400 pcs (print + mailhouse)",4700.00
+RB-0193,2026-06-10,Office & Admin,Postal Annex,Postage - donor receipts,64.47
+RB-0194,2026-06-11,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,3073.02
+RB-0195,2026-06-11,Food Purchases,Valley Fresh Produce,Produce - weekly,2333.88
+RB-0196,2026-06-11,Fleet & Fuel,Cascade Truck & Reefer,Reefer unit repair - Truck 3 (compressor),5600.00
+RB-0197,2026-06-11,Office & Admin,Postal Annex,Postage - donor receipts,27.28
+RB-0198,2026-06-11,Office & Admin,Postal Annex,Postage - donor receipts,33.42
+RB-0199,2026-06-11,Office & Admin,Breakroom Co,Coffee service,60.53
+RB-0200,2026-06-12,Program Supplies,Shipline West,Pallet wrap,250.16
+RB-0201,2026-06-12,Printing & Postage,Postmaster - Vancouver,Nonprofit permit postage - spring appeal,2000.00
+RB-0202,2026-06-12,Technology,GiveTrack CRM,Credit - invoice issued in error (nonprofit grant applied),-4400.00
+RB-0203,2026-06-13,Volunteer Program,Bulkmart Business Ctr,Volunteer snacks/water,259.11
+RB-0204,2026-06-13,Office & Admin,Officemart,Toner,88.33
+RB-0205,2026-06-15,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,2990.27
+RB-0206,2026-06-15,Food Purchases,Sunrise Meal Kits,Summer meals kits - wk of 6/15,5800.00
+RB-0207,2026-06-15,Program Supplies,Shipline West,Pallet wrap,309.92
+RB-0208,2026-06-15,Program Salaries,Evergreen Nonprofit Payroll,Payroll 6/15 - program staff,38768.38
+RB-0209,2026-06-15,Admin Salaries,Evergreen Nonprofit Payroll,Payroll 6/15 - admin,14227.11
+RB-0210,2026-06-15,Benefits & Payroll Taxes,Evergreen Nonprofit Payroll,ER taxes 6/15,4054.15
+RB-0211,2026-06-15,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 1, 1st-15th",422.29
+RB-0212,2026-06-15,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 2, 1st-15th",424.10
+RB-0213,2026-06-15,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 3, 1st-15th",421.19
+RB-0214,2026-06-15,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 4, 1st-15th",420.49
+RB-0215,2026-06-15,Office & Admin,Postal Annex,Postage - donor receipts,52.69
+RB-0216,2026-06-16,Technology,TechBridge Refurb,Refurb laptops x6 (warehouse + intake),4350.00
+RB-0217,2026-06-17,Office & Admin,Officemart,Toner,132.66
+RB-0218,2026-06-17,Office & Admin,Postal Annex,Postage - donor receipts,90.57
+RB-0219,2026-06-17,Office & Admin,Breakroom Co,Coffee service,107.43
+RB-0220,2026-06-18,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,2978.70
+RB-0221,2026-06-18,Food Purchases,Valley Fresh Produce,Produce - weekly,2444.41
+RB-0222,2026-06-18,Program Supplies,Shipline West,Banana boxes,234.02
+RB-0223,2026-06-18,Program Supplies,Packline Supply,Tape + labels,202.87
+RB-0224,2026-06-18,Program Supplies,Shipline West,Banana boxes,317.78
+RB-0225,2026-06-18,Fleet & Fuel,Northline Truck Service,PM service - rotating unit,430.00
+RB-0226,2026-06-18,Warehouse Occupancy,Riverside Industrial Partners,CAM reconciliation 2025 - credit,-2200.00
+RB-0227,2026-06-18,Office & Admin,Breakroom Co,Coffee service,93.30
+RB-0228,2026-06-19,Program Supplies,Shipline West,Pallet wrap,84.58
+RB-0229,2026-06-19,Volunteer Program,VolunteerLink,Scheduling app,159.03
+RB-0230,2026-06-19,Office & Admin,Breakroom Co,Coffee service,72.32
+RB-0231,2026-06-20,Utilities,Waste Connections NW,Organics + cardboard hauling,690.00
+RB-0232,2026-06-20,Partner Agency Grants,Eastside Neighbors Pantry,Grant - Q4 FY26 distribution support,8000.00
+RB-0233,2026-06-20,Partner Agency Grants,Orchards Family Pantry,Grant - Q4 FY26 distribution support,8000.00
+RB-0234,2026-06-20,Volunteer Program,Shirt Shack Printing,Volunteer t-shirts,57.82
+RB-0235,2026-06-21,Partner Agency Grants,Hazel Dell Food Shelf,Grant - Q4 FY26 distribution support,8000.00
+RB-0236,2026-06-21,Partner Agency Grants,Fruit Valley Community Table,Grant - Q4 FY26 distribution support,8000.00
+RB-0237,2026-06-22,Food Purchases,Northwest Grocers Cooperative,Staples order - Mon,3053.40
+RB-0238,2026-06-22,Food Purchases,Sunrise Meal Kits,Summer meals kits - wk of 6/22,5800.00
+RB-0239,2026-06-22,Program Supplies,Packline Supply,Gloves/hairnets,396.44
+RB-0240,2026-06-22,Partner Agency Grants,St. Brigid Outreach,Grant - Q4 FY26 distribution support,8000.00
+RB-0241,2026-06-22,Partner Agency Grants,Battle Ground Helping Hands,Grant - Q4 FY26 distribution support,8000.00
+RB-0242,2026-06-23,Volunteer Program,Bulkmart Business Ctr,Volunteer snacks/water,209.24
+RB-0243,2026-06-23,Office & Admin,Postal Annex,Postage - donor receipts,77.71
+RB-0244,2026-06-24,Program Supplies,Packline Supply,Gloves/hairnets,70.72
+RB-0245,2026-06-24,Program Supplies,Shipline West,Pallet wrap,327.49
+RB-0246,2026-06-24,Office & Admin,Postal Annex,Postage - donor receipts,94.26
+RB-0247,2026-06-25,Food Purchases,Northwest Grocers Cooperative,Staples order - Thu,2925.43
+RB-0248,2026-06-25,Food Purchases,Valley Fresh Produce,Produce - weekly,2378.34
+RB-0249,2026-06-25,Office & Admin,Breakroom Co,Coffee service,137.84
+RB-0250,2026-06-25,Office & Admin,Breakroom Co,Coffee service,75.68
+RB-0251,2026-06-26,Office & Admin,Officemart,Office supplies,79.45
+RB-0252,2026-06-29,Food Purchases,Sunrise Meal Kits,Summer meals kits - wk of 6/29,5800.00
+RB-0253,2026-06-30,Program Salaries,Evergreen Nonprofit Payroll,Payroll 6/30 - program staff,38713.02
+RB-0254,2026-06-30,Admin Salaries,Evergreen Nonprofit Payroll,Payroll 6/30 - admin,14223.68
+RB-0255,2026-06-30,Benefits & Payroll Taxes,Evergreen Nonprofit Payroll,ER taxes 6/30,4049.66
+RB-0256,2026-06-30,Program Salaries,Evergreen Nonprofit Payroll,Payroll 6/30 - summer meals seasonal (8),9800.00
+RB-0257,2026-06-30,Benefits & Payroll Taxes,Evergreen Nonprofit Payroll,ER taxes 6/30 - seasonal,749.70
+RB-0258,2026-06-30,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 1, 16th-EOM",407.85
+RB-0259,2026-06-30,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 2, 16th-EOM",413.70
+RB-0260,2026-06-30,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 3, 16th-EOM",406.09
+RB-0261,2026-06-30,Fleet & Fuel,Coastline Fleet Card,"Fuel - Truck 4, 16th-EOM",407.17
+RB-0262,2026-06-30,Professional Fees,Whitcomb Nonprofit Audit LLP,Accrue FY26 audit - est. per engagement letter,18000.00

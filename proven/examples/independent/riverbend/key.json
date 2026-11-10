@@ -1,0 +1,316 @@
+{
+  "company": "riverbend",
+  "claims": [
+    {
+      "id": "RB-01",
+      "quote": "Total expenses were $300.7K for June, up 35% over May.",
+      "account": "TOTAL",
+      "stated": {
+        "direction": "up",
+        "pct": 35,
+        "current": 300700
+      },
+      "strength": "none",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "All accounts went from $222,208.54 to $300,728.12: +$78,519.58, +35.3%. No cause is stated.",
+      "evidence": [],
+      "cause_txns": [],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "RB-02",
+      "quote": "Food purchases rose $18K, reflecting the produce price increases we flagged last quarter.",
+      "account": "Food Purchases",
+      "stated": {
+        "direction": "up",
+        "change": 18000
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_cause",
+      "why": "Food purchases went from $33,527.60 to $51,068.40: +$17,540.80, so the amount is right. Produce did not move: Valley Fresh Produce went from $9,731.13 to $9,578.34 (-$152.79). The increase is the new summer meals kits from Sunrise Meal Kits ($17,400, 99%).",
+      "evidence": [
+        "RB-0206",
+        "RB-0238",
+        "RB-0252"
+      ],
+      "cause_txns": [
+        "RB-0103",
+        "RB-0122",
+        "RB-0144",
+        "RB-0157",
+        "RB-0180",
+        "RB-0195",
+        "RB-0221",
+        "RB-0248"
+      ],
+      "driver_txns": [
+        "RB-0206",
+        "RB-0238",
+        "RB-0252"
+      ],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "RB-03",
+      "quote": "Grants to partner agencies rose $48K with the Q4 disbursement to our six partner pantries.",
+      "account": "Partner Agency Grants",
+      "stated": {
+        "direction": "up",
+        "change": 48000
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Partner agency grants went from $0.00 to $48,000.00: six 'Grant - Q4 FY26 distribution support' payments of $8,000. The vendors are the pantries' own names.",
+      "evidence": [
+        "RB-0232",
+        "RB-0233",
+        "RB-0235",
+        "RB-0236",
+        "RB-0240",
+        "RB-0241"
+      ],
+      "cause_txns": [
+        "RB-0232",
+        "RB-0233",
+        "RB-0235",
+        "RB-0236",
+        "RB-0240",
+        "RB-0241"
+      ],
+      "mess": [
+        "split_across_vendors"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "RB-04",
+      "quote": "Program salaries were up about 13% on seasonal summer meals staff.",
+      "account": "Program Salaries",
+      "stated": {
+        "direction": "up",
+        "pct": 13
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Program salaries went from $77,571.35 to $87,281.40: +$9,710.05, +12.5%. The 6/30 'summer meals seasonal (8)' payroll is $9,800, 101% of the change.",
+      "evidence": [
+        "RB-0256"
+      ],
+      "cause_txns": [
+        "RB-0256"
+      ],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "RB-05",
+      "quote": "Fleet costs rose about $5.5K, nearly all of it the reefer repair on Truck 3.",
+      "account": "Fleet & Fuel",
+      "stated": {
+        "direction": "up",
+        "change": 5500
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Fleet & fuel went from $3,764.82 to $9,352.88: +$5,588.06. The reefer compressor repair on Truck 3 ($5,600) is 100% of it.",
+      "evidence": [
+        "RB-0196"
+      ],
+      "cause_txns": [
+        "RB-0196"
+      ],
+      "mess": [
+        "one_off"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "RB-06",
+      "quote": "Special events were down $26.6K with the gala behind us in May; the $4.2K Fireside balance that came in this month is the gala's final bill.",
+      "account": "Special Events",
+      "stated": {
+        "direction": "down",
+        "change": -26600
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Special events went from $30,750.00 to $4,200.00: -$26,550.00. May held the Harvest Table gala (venue $14,000, catering deposit $12,300, AV $3,800, auction fee $650); June has only the caterer's final balance ($4,200). The gala's transactions net to -$26,550, 100%. The second figure ($4.2K) is a fact about one invoice, not a variance.",
+      "evidence": [
+        "RB-0089",
+        "RB-0108",
+        "RB-0131",
+        "RB-0142",
+        "RB-0181"
+      ],
+      "cause_txns": [
+        "RB-0089",
+        "RB-0108",
+        "RB-0131",
+        "RB-0142",
+        "RB-0181"
+      ],
+      "mess": [
+        "prior_period_cause",
+        "timing"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "RB-07",
+      "quote": "Printing and postage rose $3.2K on the gala invitations.",
+      "account": "Printing & Postage",
+      "stated": {
+        "direction": "up",
+        "change": 3200
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "cause_in_other_period",
+      "why": "Printing & postage went from $3,500.00 to $6,700.00: +$3,200.00, so the amount is right. The gala invitations and their postage ($2,900 + $600) were in May, the prior period. June's increase is the spring appeal mailing ($4,700 print + $2,000 postage).",
+      "evidence": [
+        "RB-0097",
+        "RB-0100",
+        "RB-0192",
+        "RB-0201"
+      ],
+      "cause_txns": [
+        "RB-0097",
+        "RB-0100"
+      ],
+      "mess": [
+        "prior_period_cause"
+      ],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "RB-08",
+      "quote": "Professional fees were up $18K, the year-end accrual for the FY26 audit.",
+      "account": "Professional Fees",
+      "stated": {
+        "direction": "up",
+        "change": 18000
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Professional fees went from $2,500.00 to $20,500.00: +$18,000.00, exactly the 'Accrue FY26 audit - est. per engagement letter' entry.",
+      "evidence": [
+        "RB-0262"
+      ],
+      "cause_txns": [
+        "RB-0262"
+      ],
+      "mess": [
+        "accrual"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "RB-09",
+      "quote": "Warehouse occupancy fell $2.2K on the landlord's CAM reconciliation credit.",
+      "account": "Warehouse Occupancy",
+      "stated": {
+        "direction": "down",
+        "change": -2200
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Warehouse occupancy went from $10,750.00 to $8,550.00: -$2,200.00, exactly the 'CAM reconciliation 2025 - credit'.",
+      "evidence": [
+        "RB-0226"
+      ],
+      "cause_txns": [
+        "RB-0226"
+      ],
+      "mess": [
+        "credit_memo"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "RB-10",
+      "quote": "Technology rose $4.4K for the new donor CRM.",
+      "account": "Technology",
+      "stated": {
+        "direction": "up",
+        "change": 4400
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "contradicted_by_credit",
+      "why": "Technology went from $1,670.00 to $6,020.00: +$4,350.00, so the amount is right. The GiveTrack CRM invoice ($4,400) was credited in full nine days later (grant applied): net $0. The increase is six refurbished laptops ($4,350).",
+      "evidence": [
+        "RB-0178",
+        "RB-0202",
+        "RB-0216"
+      ],
+      "cause_txns": [
+        "RB-0178",
+        "RB-0202"
+      ],
+      "mess": [
+        "credit_memo"
+      ],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    }
+  ],
+  "non_claims": [
+    {
+      "quote": "We distributed 1.9 million pounds of food in FY26, a record, and the board approved the FY27 budget of $4.1M on June 24.",
+      "why": "Pounds distributed and the budget are not ledger movements."
+    },
+    {
+      "quote": "Volunteer hours were 3,420 in June.",
+      "why": "Not in the ledger."
+    }
+  ]
+}

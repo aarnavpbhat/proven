@@ -1,0 +1,260 @@
+id,date,account,vendor,memo,amount
+AP-30001,2026-07-01,Job Materials,Allied Pipe & Supply,Ticket - Job 2411 valves,1737.12
+AP-30002,2026-07-01,Small Tools & Consumables,Toolcrib Direct,Sawzall blades,509.33
+AP-30003,2026-07-01,Office Rent,Arapahoe Flex Space LLC,Office/shop rent,8900.00
+AP-30004,2026-07-02,Job Materials,Mountain States HVAC Supply,Job 2398 - line sets,2345.57
+AP-30005,2026-07-02,Small Tools & Consumables,Toolcrib Direct,Drill bits,146.70
+AP-30006,2026-07-03,Job Materials,Allied Pipe & Supply,Ticket - shop stock,685.58
+AP-30007,2026-07-03,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,2786.83
+AP-30008,2026-07-03,Job Materials,Mountain States HVAC Supply,Job 2398 - line sets,6301.64
+PR-30009,2026-07-03,Field Labor,Keystone Payroll Svc,Field payroll WE 07/03 - Crew A,9769.92
+PR-30010,2026-07-03,Field Labor,Keystone Payroll Svc,Field payroll WE 07/03 - Crew B,9828.35
+PR-30011,2026-07-03,Field Labor,Keystone Payroll Svc,Field payroll WE 07/03 - Crew C,9721.67
+PR-30012,2026-07-03,Field Labor,Keystone Payroll Svc,Field payroll WE 07/03 - Crew D,9823.19
+AP-30013,2026-07-03,Permits & Inspections,Colorado State Electrical Board,Contractor license renewals,300.00
+AP-30014,2026-07-03,Safety & Training,SafetyFirst Consulting,Monthly safety program,650.00
+AP-30015,2026-07-04,Waste & Disposal,Alpine Waste & Recycling,Roll-off 20yd swap,638.47
+AP-30016,2026-07-05,Insurance,Front Range Mutual,WC installment,5400.00
+AP-30017,2026-07-07,Waste & Disposal,Alpine Waste & Recycling,Roll-off 20yd swap,600.31
+AP-30018,2026-07-09,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,735.15
+AP-30019,2026-07-09,Permits & Inspections,City of Denver - CPD,Mechanical permit - Job 2411,1250.00
+PR-30020,2026-07-10,Field Labor,Keystone Payroll Svc,Field payroll WE 07/10 - Crew A,9749.08
+PR-30021,2026-07-10,Field Labor,Keystone Payroll Svc,Field payroll WE 07/10 - Crew B,9787.83
+PR-30022,2026-07-10,Field Labor,Keystone Payroll Svc,Field payroll WE 07/10 - Crew C,9876.15
+PR-30023,2026-07-10,Field Labor,Keystone Payroll Svc,Field payroll WE 07/10 - Crew D,9887.23
+AP-30024,2026-07-10,Small Tools & Consumables,Allied Pipe & Supply,Thread sealant,67.12
+AP-30025,2026-07-11,Job Materials,Allied Pipe & Supply,Ticket - Job 2411 valves,511.92
+AP-30026,2026-07-11,Small Tools & Consumables,Allied Pipe & Supply,Thread sealant,202.54
+AP-30027,2026-07-12,Job Materials,Allied Pipe & Supply,Ticket - shop stock,3542.17
+AP-30028,2026-07-12,Job Materials,Mountain States HVAC Supply,Job 2398 - line sets,1778.90
+AP-30029,2026-07-12,Professional Fees,Brenner & Lowe CPAs,Monthly accounting + WIP schedule,2800.00
+AP-30030,2026-07-13,Job Materials,Allied Pipe & Supply,Ticket - shop stock,2086.73
+AP-30031,2026-07-13,Job Materials,Mountain States HVAC Supply,Job 2398 - line sets,1272.80
+AP-30032,2026-07-13,Small Tools & Consumables,Toolcrib Direct,Sawzall blades,363.72
+AP-30033,2026-07-14,Job Materials,Front Range Electric Supply,Controls wire,1391.54
+AP-30034,2026-07-15,Job Materials,Allied Pipe & Supply,Ticket - shop stock,798.89
+AP-30035,2026-07-15,Subcontractors,Rocky Mountain Insulation,Inv 5402 - Jun/Jul insulation Belmar,16000.00
+PR-30036,2026-07-15,Office Salaries,Keystone Payroll Svc,Office payroll 07/15,14200.00
+AP-30037,2026-07-16,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,1209.52
+AP-30038,2026-07-16,Job Materials,Mountain States HVAC Supply,Job 2422 - furnaces (2),6171.69
+AP-30039,2026-07-16,Fuel,FleetOne Card Services,Fleet fuel 1st-15th,4480.00
+AP-30040,2026-07-16,Small Tools & Consumables,Toolcrib Direct,Hand tools,220.53
+AP-30041,2026-07-17,Job Materials,Allied Pipe & Supply,Ticket - shop stock,639.48
+AP-30042,2026-07-17,Job Materials,Mountain States HVAC Supply,Job 2405 - flex duct + registers,6837.88
+AP-30043,2026-07-17,Job Materials,Front Range Electric Supply,Thermostat wire,1092.05
+PR-30044,2026-07-17,Field Labor,Keystone Payroll Svc,Field payroll WE 07/17 - Crew A,9780.25
+PR-30045,2026-07-17,Field Labor,Keystone Payroll Svc,Field payroll WE 07/17 - Crew B,9842.05
+PR-30046,2026-07-17,Field Labor,Keystone Payroll Svc,Field payroll WE 07/17 - Crew C,9812.19
+PR-30047,2026-07-17,Field Labor,Keystone Payroll Svc,Field payroll WE 07/17 - Crew D,9772.87
+AP-30048,2026-07-17,Small Tools & Consumables,Allied Pipe & Supply,Solder/flux,318.20
+AP-30049,2026-07-19,Job Materials,Front Range Electric Supply,Controls wire,996.40
+AP-30050,2026-07-20,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,1474.67
+AP-30051,2026-07-20,Job Materials,Mountain States HVAC Supply,Job 2422 - furnaces (2),6025.95
+AP-30052,2026-07-20,Vehicle Repairs,Mile High Fleet Service,Wiper/lamp,182.04
+AP-30053,2026-07-20,Small Tools & Consumables,Allied Pipe & Supply,Thread sealant,463.47
+AP-30054,2026-07-21,Job Materials,Allied Pipe & Supply,Ticket - Job 2411 valves,2063.42
+AP-30055,2026-07-21,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,3466.95
+AP-30056,2026-07-21,Job Materials,Allied Pipe & Supply,Ticket - Job 2411 valves,660.72
+AP-30057,2026-07-21,Vehicle Repairs,Mile High Fleet Service,Oil change + PM,250.04
+AP-30058,2026-07-21,Vehicle Repairs,Mile High Fleet Service,Brake pads,255.78
+AP-30059,2026-07-22,Job Materials,Allied Pipe & Supply,Ticket - shop stock,2682.54
+AP-30060,2026-07-22,Small Tools & Consumables,Allied Pipe & Supply,Thread sealant,425.25
+AP-30061,2026-07-23,Job Materials,Mountain States HVAC Supply,Job 2411 - mini-split heads,6072.47
+AP-30062,2026-07-23,Job Materials,Mountain States HVAC Supply,Job 2411 - mini-split heads,2682.11
+AP-30063,2026-07-23,Waste & Disposal,Alpine Waste & Recycling,Roll-off 30yd haul,524.13
+AP-30064,2026-07-24,Job Materials,Allied Pipe & Supply,Ticket - Job 2411 valves,3058.09
+AP-30065,2026-07-24,Job Materials,Mountain States HVAC Supply,Job 2405 - flex duct + registers,3374.33
+PR-30066,2026-07-24,Field Labor,Keystone Payroll Svc,Field payroll WE 07/24 - Crew A,9702.22
+PR-30067,2026-07-24,Field Labor,Keystone Payroll Svc,Field payroll WE 07/24 - Crew B,9694.49
+PR-30068,2026-07-24,Field Labor,Keystone Payroll Svc,Field payroll WE 07/24 - Crew C,9716.70
+PR-30069,2026-07-24,Field Labor,Keystone Payroll Svc,Field payroll WE 07/24 - Crew D,9781.10
+AP-30070,2026-07-25,Subcontractors,Precision Controls Inc,Controls progress bill - Job 2398,20000.00
+AP-30071,2026-07-27,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,3166.50
+AP-30072,2026-07-27,Job Materials,Allied Pipe & Supply,Ticket - Job 2411 valves,2201.30
+AP-30073,2026-07-27,Small Tools & Consumables,Toolcrib Direct,Sawzall blades,465.35
+AP-30074,2026-07-28,Subcontractors,Front Range Sheet Metal,Ductwork progress bill 3 - Belmar,38500.00
+AP-30075,2026-07-28,Fuel,FleetOne Card Services,Fleet fuel 16th-EOM,4390.00
+AP-30076,2026-07-28,Vehicle Repairs,Mile High Fleet Service,Tires rotate/balance,434.63
+AP-30077,2026-07-30,Equipment Rental,Peak Equipment Rentals,Scissor/boom lifts - monthly,3900.00
+PR-30078,2026-07-31,Field Labor,Keystone Payroll Svc,Field payroll WE 07/31 - Crew A,9751.07
+PR-30079,2026-07-31,Field Labor,Keystone Payroll Svc,Field payroll WE 07/31 - Crew B,9726.57
+PR-30080,2026-07-31,Field Labor,Keystone Payroll Svc,Field payroll WE 07/31 - Crew C,9751.70
+PR-30081,2026-07-31,Field Labor,Keystone Payroll Svc,Field payroll WE 07/31 - Crew D,9762.63
+GJ-30082,2026-07-31,Insurance,Accrual JE,Prepaid amort - GL/auto/umbrella policy 26-27,7800.00
+PR-30083,2026-07-31,Office Salaries,Keystone Payroll Svc,Office payroll 07/31,14200.00
+AP-30084,2026-08-01,Office Rent,Arapahoe Flex Space LLC,Office/shop rent,8900.00
+AP-30085,2026-08-02,Job Materials,Allied Pipe & Supply,Ticket - shop stock,945.28
+AP-30086,2026-08-03,Job Materials,Allied Pipe & Supply,Ticket - Job 2411 valves,576.92
+AP-30087,2026-08-03,Small Tools & Consumables,Allied Pipe & Supply,Solder/flux,139.42
+AP-30088,2026-08-03,Permits & Inspections,Colorado State Electrical Board,Contractor license renewals,300.00
+AP-30089,2026-08-03,Safety & Training,SafetyFirst Consulting,Monthly safety program,650.00
+AP-30090,2026-08-05,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,825.43
+AP-30091,2026-08-05,Vehicle Repairs,Mile High Fleet Service,Tires rotate/balance,108.08
+AP-30092,2026-08-05,Small Tools & Consumables,Allied Pipe & Supply,Solder/flux,425.31
+AP-30093,2026-08-05,Insurance,Front Range Mutual,WC installment,5400.00
+AP-30094,2026-08-06,Job Materials,Mountain States HVAC Supply,Job 2411 - mini-split heads,5742.51
+AP-30095,2026-08-06,Job Materials,Mountain States HVAC Supply,Job 2405 - flex duct + registers,4813.18
+AP-30096,2026-08-06,Permits & Inspections,City of Denver - CPD,"Mechanical permit - Mercy Ridge, Job 2417",1900.00
+AP-30097,2026-08-07,Job Materials,Allied Pipe & Supply,Ticket - Job 2411 valves,3945.61
+AP-30098,2026-08-07,Job Materials,Mountain States HVAC Supply,Job 2398 - line sets,3679.99
+PR-30099,2026-08-07,Field Labor,Keystone Payroll Svc,Field payroll WE 08/07 - Crew A,9861.34
+PR-30100,2026-08-07,Field Labor,Keystone Payroll Svc,Field payroll WE 08/07 - Crew B,9871.77
+PR-30101,2026-08-07,Field Labor,Keystone Payroll Svc,Field payroll WE 08/07 - Crew C,9869.27
+PR-30102,2026-08-07,Field Labor,Keystone Payroll Svc,Field payroll WE 08/07 - Crew D,9815.22
+AP-30103,2026-08-08,Job Materials,Mountain States HVAC Supply,Job 2411 - mini-split heads,3802.31
+AP-30104,2026-08-08,Small Tools & Consumables,Toolcrib Direct,Drill bits,513.98
+AP-30105,2026-08-08,Waste & Disposal,Alpine Waste & Recycling,Roll-off 20yd swap,558.91
+AP-30106,2026-08-09,Job Materials,Allied Pipe & Supply,Ticket - shop stock,1235.09
+AP-30107,2026-08-09,Job Materials,Allied Pipe & Supply,Ticket - shop stock,1232.49
+AP-30108,2026-08-09,Job Materials,Front Range Electric Supply,Thermostat wire,702.31
+AP-30109,2026-08-09,Small Tools & Consumables,Allied Pipe & Supply,Thread sealant,438.24
+AP-30110,2026-08-09,Small Tools & Consumables,Toolcrib Direct,Drill bits,183.98
+AP-30111,2026-08-09,Waste & Disposal,Alpine Waste & Recycling,Roll-off 30yd haul,508.24
+AP-30112,2026-08-10,Job Materials,Mountain States HVAC Supply,Job 2411 - mini-split heads,6856.50
+AP-30113,2026-08-11,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,1044.43
+AP-30114,2026-08-12,Job Materials,Allied Pipe & Supply,Ticket - Job 2411 valves,3902.16
+AP-30115,2026-08-12,Job Materials,Allied Pipe & Supply,Job 2398 Belmar Apts - 4in type L copper + fittings (bulk),22000.00
+AP-30116,2026-08-12,Small Tools & Consumables,Toolcrib Direct,Hand tools,289.04
+AP-30117,2026-08-12,Professional Fees,Brenner & Lowe CPAs,Monthly accounting + WIP schedule,2800.00
+AP-30118,2026-08-13,Job Materials,Allied Pipe & Supply,Ticket - shop stock,1602.21
+AP-30119,2026-08-14,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,1757.91
+PR-30120,2026-08-14,Field Labor,Keystone Payroll Svc,Field payroll WE 08/14 - Crew A,9692.54
+PR-30121,2026-08-14,Field Labor,Keystone Payroll Svc,Field payroll WE 08/14 - Crew B,9876.88
+PR-30122,2026-08-14,Field Labor,Keystone Payroll Svc,Field payroll WE 08/14 - Crew C,9867.24
+PR-30123,2026-08-14,Field Labor,Keystone Payroll Svc,Field payroll WE 08/14 - Crew D,9709.21
+AP-30124,2026-08-14,Small Tools & Consumables,Toolcrib Direct,Hand tools,266.16
+AP-30125,2026-08-14,Small Tools & Consumables,Toolcrib Direct,Hand tools,102.07
+AP-30126,2026-08-15,Job Materials,Front Range Electric Supply,Disconnects + whip,1071.51
+AP-30127,2026-08-15,Job Materials,Front Range Electric Supply,Thermostat wire,580.30
+PR-30128,2026-08-15,Office Salaries,Keystone Payroll Svc,Office payroll 08/15,14200.00
+AP-30129,2026-08-16,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,3879.51
+AP-30130,2026-08-16,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,950.23
+AP-30131,2026-08-16,Fuel,FleetOne Card Services,Fleet fuel 1st-15th,4550.00
+AP-30132,2026-08-17,Vehicle Repairs,Mile High Fleet Service,Brake pads,207.45
+AP-30133,2026-08-17,Small Tools & Consumables,Allied Pipe & Supply,Solder/flux,252.11
+AP-30134,2026-08-17,Small Tools & Consumables,Toolcrib Direct,Drill bits,350.18
+AP-30135,2026-08-19,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,1252.05
+AP-30136,2026-08-20,Job Materials,Mountain States HVAC Supply,Job 2398 - line sets,5567.81
+AP-30137,2026-08-21,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,4015.06
+AP-30138,2026-08-21,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,1477.56
+PR-30139,2026-08-21,Field Labor,Keystone Payroll Svc,Field payroll WE 08/21 - Crew A,9739.08
+PR-30140,2026-08-21,Field Labor,Keystone Payroll Svc,Field payroll WE 08/21 - Crew B,9789.21
+PR-30141,2026-08-21,Field Labor,Keystone Payroll Svc,Field payroll WE 08/21 - Crew C,9732.02
+PR-30142,2026-08-21,Field Labor,Keystone Payroll Svc,Field payroll WE 08/21 - Crew D,9916.15
+AP-30143,2026-08-21,Vehicle Repairs,Mile High Fleet Service,Brake pads,385.39
+AP-30144,2026-08-22,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,1028.68
+AP-30145,2026-08-22,Job Materials,Mountain States HVAC Supply,Job 2398 - line sets,3642.09
+AP-30146,2026-08-23,Job Materials,Allied Pipe & Supply,Ticket - shop stock,3810.45
+AP-30147,2026-08-24,Job Materials,Allied Pipe & Supply,Ticket - Job 2411 valves,3977.07
+AP-30148,2026-08-24,Job Materials,Mountain States HVAC Supply,Job 2398 - line sets,1293.60
+AP-30149,2026-08-24,Waste & Disposal,Alpine Waste & Recycling,Roll-off 20yd swap,409.27
+AP-30150,2026-08-25,Job Materials,Mountain States HVAC Supply,Job 2422 - furnaces (2),4227.10
+AP-30151,2026-08-25,Subcontractors,Precision Controls Inc,Controls progress bill - Job 2398/2405,21000.00
+AP-30152,2026-08-26,Job Materials,Mountain States HVAC Supply,Job 2422 - furnaces (2),3467.60
+AP-30153,2026-08-26,Job Materials,Mountain States HVAC Supply,Job 2405 - flex duct + registers,1926.64
+AP-30154,2026-08-28,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,3134.50
+AP-30155,2026-08-28,Subcontractors,Front Range Sheet Metal,Ductwork progress bill 4 - Belmar,41000.00
+PR-30156,2026-08-28,Field Labor,Keystone Payroll Svc,Field payroll WE 08/28 - Crew A,9830.53
+PR-30157,2026-08-28,Field Labor,Keystone Payroll Svc,Field payroll WE 08/28 - Crew B,9816.67
+PR-30158,2026-08-28,Field Labor,Keystone Payroll Svc,Field payroll WE 08/28 - Crew C,9740.63
+PR-30159,2026-08-28,Field Labor,Keystone Payroll Svc,Field payroll WE 08/28 - Crew D,9775.44
+AP-30160,2026-08-28,Fuel,FleetOne Card Services,Fleet fuel 16th-EOM,4610.00
+AP-30161,2026-08-28,Vehicle Repairs,Mile High Fleet Service,Battery,118.48
+AP-30162,2026-08-30,Equipment Rental,Peak Equipment Rentals,Scissor/boom lifts - monthly,4200.00
+GJ-30163,2026-08-31,Subcontractors,Rocky Mountain Insulation,Accrue Aug insulation - Mercy Ridge (not yet billed),18000.00
+GJ-30164,2026-08-31,Insurance,Accrual JE,Prepaid amort - GL/auto/umbrella policy 26-27,7800.00
+PR-30165,2026-08-31,Office Salaries,Keystone Payroll Svc,Office payroll 08/31,14200.00
+AP-30166,2026-09-01,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,574.22
+GJ-30167,2026-09-01,Subcontractors,Rocky Mountain Insulation,Reverse Aug accrual - insulation,-18000.00
+AP-30168,2026-09-01,Office Rent,Arapahoe Flex Space LLC,Office/shop rent,8900.00
+AP-30169,2026-09-03,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,1345.08
+AP-30170,2026-09-03,Permits & Inspections,Colorado State Electrical Board,Contractor license renewals,300.00
+AP-30171,2026-09-03,Safety & Training,SafetyFirst Consulting,Monthly safety program,650.00
+AP-30172,2026-09-04,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,2622.80
+AP-30173,2026-09-04,Job Materials,Mountain States HVAC Supply,Job 2411 - mini-split heads,2361.85
+AP-30174,2026-09-04,Job Materials,Mountain States HVAC Supply,Job 2398 - line sets,2240.11
+PR-30175,2026-09-04,Field Labor,Keystone Payroll Svc,Field payroll WE 09/04 - Crew A,9811.22
+PR-30176,2026-09-04,Field Labor,Keystone Payroll Svc,Field payroll WE 09/04 - Crew B,9864.37
+PR-30177,2026-09-04,Field Labor,Keystone Payroll Svc,Field payroll WE 09/04 - Crew C,9762.29
+PR-30178,2026-09-04,Field Labor,Keystone Payroll Svc,Field payroll WE 09/04 - Crew D,9781.79
+AP-30179,2026-09-04,Small Tools & Consumables,Toolcrib Direct,Hand tools,278.92
+AP-30180,2026-09-05,Job Materials,Allied Pipe & Supply,Ticket - shop stock,3364.33
+AP-30181,2026-09-05,Vehicle Repairs,Mile High Fleet Service,Oil change + PM,309.82
+AP-30182,2026-09-05,Insurance,Front Range Mutual,WC installment,5400.00
+AP-30183,2026-09-07,Small Tools & Consumables,Toolcrib Direct,Hand tools,440.42
+AP-30184,2026-09-07,Small Tools & Consumables,Toolcrib Direct,Drill bits,208.24
+AP-30185,2026-09-07,Waste & Disposal,Alpine Waste & Recycling,Roll-off 30yd haul,562.72
+AP-30186,2026-09-08,Job Materials,Mountain States HVAC Supply,Job 2405 - flex duct + registers,1371.36
+AP-30187,2026-09-08,Small Tools & Consumables,Mile High Fleet Service,Inv 30981 - Truck 14 trans rebuild,6850.00
+AP-30188,2026-09-09,Job Materials,Allied Pipe & Supply,Ticket - shop stock,1676.44
+AP-30189,2026-09-09,Job Materials,Mountain States HVAC Supply,Job 2405 - flex duct + registers,5491.88
+AP-30190,2026-09-09,Job Materials,Mountain States HVAC Supply,Job 2417 Mercy Ridge - (3) 25-ton RTUs,86400.00
+AP-30191,2026-09-10,Permits & Inspections,City of Aurora - Building Div,"Plumbing permits (12 units) - Cherry Creek Lofts, Job 2422",2350.00
+AP-30192,2026-09-11,Job Materials,Allied Pipe & Supply,Ticket - shop stock,3373.05
+PR-30193,2026-09-11,Field Labor,Keystone Payroll Svc,Field payroll WE 09/11 - Crew A,9760.95
+PR-30194,2026-09-11,Field Labor,Keystone Payroll Svc,Field payroll WE 09/11 - Crew B,9796.94
+PR-30195,2026-09-11,Field Labor,Keystone Payroll Svc,Field payroll WE 09/11 - Crew C,9757.72
+PR-30196,2026-09-11,Field Labor,Keystone Payroll Svc,Field payroll WE 09/11 - Crew D,9739.72
+PR-30197,2026-09-11,Field Labor,Keystone Payroll Svc,OT premium WE 09/11 - Mercy Ridge set,3400.00
+AP-30198,2026-09-11,Vehicle Repairs,Mile High Fleet Service,Wiper/lamp,123.28
+AP-30199,2026-09-11,Small Tools & Consumables,Allied Pipe & Supply,Thread sealant,60.62
+AP-30200,2026-09-11,Waste & Disposal,Alpine Waste & Recycling,Roll-off 30yd haul,542.56
+AP-30201,2026-09-12,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,4001.09
+AP-30202,2026-09-12,Job Materials,Allied Pipe & Supply,Ticket - shop stock,2259.01
+AP-30203,2026-09-12,Vehicle Repairs,Mile High Fleet Service,Tires rotate/balance,273.82
+AP-30204,2026-09-12,Vehicle Repairs,Mile High Fleet Service,Tires rotate/balance,196.32
+AP-30205,2026-09-12,Professional Fees,Brenner & Lowe CPAs,Monthly accounting + WIP schedule,2800.00
+AP-30206,2026-09-13,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,2624.77
+AP-30207,2026-09-14,Job Materials,Allied Pipe & Supply,Ticket - shop stock,3447.79
+AP-30208,2026-09-14,Subcontractors,Rocky Mountain Insulation,Inv 5521 - Aug insulation Mercy Ridge,19250.00
+AP-30209,2026-09-14,Waste & Disposal,Alpine Waste & Recycling,Roll-off 30yd haul,554.03
+AP-30210,2026-09-15,Job Materials,Allied Pipe & Supply,Ticket - Job 2411 valves,1333.29
+AP-30211,2026-09-15,Equipment Rental,Summit Crane & Rigging,"Crane pick - RTUs 9/14, Job 2417",9800.00
+PR-30212,2026-09-15,Office Salaries,Keystone Payroll Svc,Office payroll 09/15,14200.00
+AP-30213,2026-09-16,Job Materials,Front Range Electric Supply,Disconnects + whip,1207.49
+AP-30214,2026-09-16,Fuel,FleetOne Card Services,Fleet fuel 1st-15th,5150.00
+AP-30215,2026-09-16,Small Tools & Consumables,Allied Pipe & Supply,Solder/flux,238.45
+AP-30216,2026-09-16,Waste & Disposal,Alpine Waste & Recycling,Roll-off 30yd haul,602.23
+AP-30217,2026-09-17,Job Materials,Mountain States HVAC Supply,Job 2411 - mini-split heads,3758.72
+AP-30218,2026-09-17,Insurance,Front Range Mutual,WC final audit 25-26 - additional premium,11300.00
+AP-30219,2026-09-18,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,1271.38
+PR-30220,2026-09-18,Field Labor,Keystone Payroll Svc,Field payroll WE 09/18 - Crew A,9814.39
+PR-30221,2026-09-18,Field Labor,Keystone Payroll Svc,Field payroll WE 09/18 - Crew B,9895.02
+PR-30222,2026-09-18,Field Labor,Keystone Payroll Svc,Field payroll WE 09/18 - Crew C,9906.42
+PR-30223,2026-09-18,Field Labor,Keystone Payroll Svc,Field payroll WE 09/18 - Crew D,9904.71
+PR-30224,2026-09-18,Field Labor,Keystone Payroll Svc,OT premium WE 09/18 - Mercy Ridge set,4100.00
+AP-30225,2026-09-19,Job Materials,Allied Pipe & Supply,Ticket - Job 2411 valves,3144.83
+AP-30226,2026-09-19,Job Materials,Allied Pipe & Supply,Ticket - Job 2405 PVC + hangers,1637.30
+AP-30227,2026-09-19,Job Materials,Mountain States HVAC Supply,Job 2411 - mini-split heads,3204.62
+AP-30228,2026-09-19,Small Tools & Consumables,Allied Pipe & Supply,Solder/flux,113.69
+AP-30229,2026-09-19,Small Tools & Consumables,Allied Pipe & Supply,Solder/flux,91.21
+AP-30230,2026-09-19,Permits & Inspections,City of Denver - CPD,Re-inspection fee - Belmar,150.00
+AP-30231,2026-09-20,Job Materials,Mountain States HVAC Supply,Job 2422 - furnaces (2),6821.27
+AP-30232,2026-09-21,Job Materials,Allied Pipe & Supply,Ticket - shop stock,2711.75
+AP-30233,2026-09-21,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,2415.59
+AP-30234,2026-09-21,Safety & Training,Rocky Mountain Safety Council,OSHA 30 Construction - 6 foremen,2100.00
+AP-30235,2026-09-22,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,4010.71
+AP-30236,2026-09-22,Job Materials,Allied Pipe & Supply,"CM - returned 4in type L copper, Job 2398",-6850.00
+AP-30237,2026-09-23,Small Tools & Consumables,Toolcrib Direct,Press tool jaws,145.75
+AP-30238,2026-09-23,Safety & Training,Industrial Safety Supply,Fall protection kits (harness + SRL) x8,3200.00
+AP-30239,2026-09-24,Job Materials,Mountain States HVAC Supply,Job 2411 - mini-split heads,4294.50
+AP-30240,2026-09-24,Job Materials,Mountain States HVAC Supply,Job 2405 - flex duct + registers,2751.95
+AP-30241,2026-09-24,Permits & Inspections,Backflow Testers of Colorado,Backflow test certs - Belmar (24),1600.00
+AP-30242,2026-09-25,Job Materials,Mountain States HVAC Supply,Job 2405 - flex duct + registers,5718.97
+AP-30243,2026-09-25,Job Materials,Front Range Electric Supply,Thermostat wire,1314.65
+AP-30244,2026-09-25,Subcontractors,Precision Controls Inc,Controls progress bill - Job 2405/2417,22500.00
+PR-30245,2026-09-25,Field Labor,Keystone Payroll Svc,Field payroll WE 09/25 - Crew A,9765.55
+PR-30246,2026-09-25,Field Labor,Keystone Payroll Svc,Field payroll WE 09/25 - Crew B,9906.57
+PR-30247,2026-09-25,Field Labor,Keystone Payroll Svc,Field payroll WE 09/25 - Crew C,9713.44
+PR-30248,2026-09-25,Field Labor,Keystone Payroll Svc,Field payroll WE 09/25 - Crew D,9744.17
+AP-30249,2026-09-26,Job Materials,Front Range Electric Supply,Controls wire,228.19
+AP-30250,2026-09-27,Job Materials,Allied Pipe & Supply,Ticket - Job 2398 copper/fittings,2148.45
+AP-30251,2026-09-28,Subcontractors,Front Range Sheet Metal,Final ductwork bill 5 - Belmar,9200.00
+AP-30252,2026-09-28,Fuel,FleetOne Card Services,Fleet fuel 16th-EOM,4610.00
+AP-30253,2026-09-28,Small Tools & Consumables,Toolcrib Direct,Hand tools,269.41
+GJ-30254,2026-09-30,Subcontractors,Rocky Mountain Insulation,Accrue Sep insulation - Mercy Ridge (not yet billed),17500.00
+AP-30255,2026-09-30,Equipment Rental,Peak Equipment Rentals,Scissor/boom lifts - monthly,4620.00
+GJ-30256,2026-09-30,Small Tools & Consumables,Reclass JE,Reclass Truck 14 trans rebuild to vehicle repairs,-6850.00
+GJ-30257,2026-09-30,Vehicle Repairs,Reclass JE,Reclass Truck 14 trans rebuild from small tools,6850.00
+GJ-30258,2026-09-30,Insurance,Accrual JE,Prepaid amort - GL/auto/umbrella policy 26-27,7800.00
+PR-30259,2026-09-30,Office Salaries,Keystone Payroll Svc,Office payroll 09/30,14200.00

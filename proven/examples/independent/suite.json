@@ -1,0 +1,7 @@
+{
+  "name": "independent",
+  "about": "Eight fictional companies, each with a hand-designed ledger (chart.json + ledger.csv: one history month, then the prior and current periods), month-end variance commentary written controller-style (commentary.txt), and an answer key (key.json). Written without reading proven/synth.py, extract.py, claims.py, verify.py or any lexicon, and committed before Proven was first run on it. The ledgers come from benchmarks/independent/build_ledgers.py (imports nothing from proven); the key's arithmetic is checked by benchmarks/independent/check_key.py from CSV sums alone.",
+  "verdicts": "A CORRECT claim: PASS is ideal, REVIEW is acceptable, FAIL is a control failure. A WRONG claim: FAIL is ideal, REVIEW is acceptable, PASS is an unsafe pass.",
+  "labelling": "CORRECT means the direction is right, every stated figure is right at the precision written (change within 7%, percent within 1.5 points, balance within 3%), and the stated cause carries the share of the movement the wording claims (unqualified 'due to/on/for/as' or 'nearly all': 75%; 'driven by/mainly/primarily/mostly/largely': 50%), or, for timing, volume and price causes, explains it economically as set out in share_note. Defects: wrong_amount, wrong_direction, wrong_account, wrong_cause, cause_too_small, cause_in_other_period, contradicted_by_credit, fabricated_cause.",
+  "companies": ["brightline", "ember_rye", "keystone", "cedar_valley", "lumen_loom", "riverbend", "halvorsen", "northstar"]
+}
