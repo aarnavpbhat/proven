@@ -118,32 +118,46 @@ keeps such a word out of a lesson when the lesson's own claim does not need it.
 **The rule** (`learned.trim_terms`, tests in `proven/tests/test_trim.py`). It is applied
 wherever a lesson is confirmed: `teach-sim` in every mode, the console's teaching queue,
 `POST /api/resolutions` with a lesson, and `teach-sim --suite independent`. When the lesson
-makes its claim PASS, the claim's own close is read twice:
+makes its claim PASS, three rules are applied to the claim's own close:
 
 1. **Routine only.** A word whose every match in the account is a routine line (the same
    vendor and memo in both periods) that moved by less than materiality ($1,000) is dropped.
    It found the bill that recurs, not what moved. A recurring bill that did move keeps its word.
 2. **Not needed.** Every remaining word the PASS does not need is dropped, trying first the word
-   whose matches moved least.
+   whose matches moved least. A word is not dropped if that would break rule 3.
+3. **Part of a job** (`814b2d5`). The kept words must cover all of a vendor's new charges
+   (material, not routine) in a period, or none of them. A lesson whose words match only some
+   of them is refused; no word can be dropped to mend it.
 
 A lesson that does not make its claim PASS is left as it is, and the gate replays it whole. If
-no word is left, or the PASS rested on a dropped routine word, the lesson is not learned.
+no word is left, if the PASS rested on a dropped routine word, or if rule 3 applies, the lesson
+is not learned.
 
 **Why.** On a new 9-world suite (the sealed suite), lessons drafted from Claude Sonnet's blind
 terms let 2 wrong explanations PASS. Sonnet had guessed a recurring contractor's name. In the
 teaching close that word matched only the contractor's flat monthly line; the PASS did not
 need it, and the simulated reviewer confirmed it along with the right term. In a later close
 the same contractor's other job moved, the learned name bound it, and the lesson carried a
-PASS for the wrong cause. `docs/finetune.md` §9 has the details.
+PASS for the wrong cause. Rules 1 and 2 (`0798d4e`) came from that breach.
+
+Rule 3 came from the next one. Scored on the sealed suite under rules 1 and 2, a weak local
+proposer (`proven-qwen3b-worlds2`) gave 2 control FAILs and 1 unsafe PASS. All three came from
+lessons taught on hedged closes ("primarily due to"). In each, one word matched one of the
+cause's two new charges, another matched part of the account's other cause, and only together
+did they clear the hedged threshold. Later, a plain "because of" sentence about the same cause
+matched half of it and FAILed as a partial explanation, and an explanation whose other charge
+was misbooked passed. `docs/finetune.md` §9 has the details of both.
 
 **In the console.** A lesson that would be narrowed is refused, not narrowed silently, so what
 is stored is exactly what the reviewer confirmed. The refusal names each dropped word with its
 reason and the lesson to teach instead ("Teach the lesson with only …"), and the 400 body
-carries them in `impact.trim`. The teaching queue suggests only the words that survive the
-rule on the claim's own close.
+carries them in `impact.trim`. A lesson refused under rule 3 names the word and the vendor
+charge it leaves out ("… a lesson must cover all of a job or none of it"). The teaching queue
+suggests only the words that survive the rules on the claim's own close, and skips a claim
+left with none.
 
-**What it costs.** Decided share on the untaught closes, before and after the rule, all from
-the proposal cache:
+**What it costs.** Decided share on the untaught closes, before and after rules 1 and 2, all
+from the proposal cache:
 
 | Run | Decided before | Decided after | Unsafe PASS after | Control FAIL after |
 |---|---:|---:|---:|---:|
@@ -168,6 +182,33 @@ python -m proven teach-sim --extractor oracle --worlds unseen --phrasing heldout
 python -m proven teach-sim --extractor claude --model claude-sonnet-5-5 --phrasing heldout --n 440
 python -m proven teach-sim --extractor claude --model claude-sonnet-5-5 --phrasing paraphrase --n 220
 ```
+
+Rule 3, measured after rules 1 and 2 the same way:
+
+| Run | Decided before | Decided after | Lessons | Unsafe PASS after | Control FAIL after |
+|---|---:|---:|---|---:|---:|
+| Sealed suite, local model, held-out | 58.0% | 57.8% | 166 → 163 | 0 | 0 |
+| Sealed suite, local model, paraphrase | 44.3% | 44.0% | | 0 | 0 |
+| Unseen suite, local model, held-out | 54.4% | 54.4% | 186 → 185 | 0 | 0 |
+| Dev worlds, Sonnet, held-out | 83.0% | 82.8% | | 0 (1 control FAIL before) | 0 |
+
+With rules 1 to 3, every cached proposer (the oracle, Sonnet and the local models) is at 0
+control FAIL and 0 unsafe PASS at every taught step on the unseen, sealed, dev and default
+suites. Sonnet and the oracle on the unseen and sealed suites are unchanged by rule 3, as are
+the default-world n = 220 runs (oracle, Sonnet and the single-world local model), Sonnet at
+n = 440 (36 lessons, 88.2%) and `benchmark --phrasing seen` (90.1%). Every number in this note
+was produced again under rule 3 and none moved: the same 36 Sonnet lessons, the same careless
+runs and refusals, the same order and skew curves.
+
+```bash
+# the local model: once with --phrasing heldout and once with --phrasing paraphrase
+python -m proven teach-sim --extractor openweight --model proven-qwen3b-worlds2 --worlds sealed --phrasing heldout
+python -m proven teach-sim --extractor openweight --model proven-qwen3b-worlds2 --worlds unseen --phrasing heldout
+PROVEN_WORLDS_DIR=training/worlds python -m proven teach-sim --extractor claude --model claude-sonnet-5-5 --worlds dev --phrasing heldout
+```
+
+The three rules were written from the breaches these suites showed. They are heuristics about
+the teaching close, not a proof that a lesson is safe.
 
 **What it does not fix.**
 

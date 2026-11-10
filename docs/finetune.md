@@ -14,7 +14,7 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
   proposer has a control FAIL or an unsafe PASS under the current lesson rules, which were
   tightened twice during this work because runs on new worlds did have them (section 9).
 - **In the world it was trained on, the same base model scores at the ceiling, and that is
-  memorisation.** Trained on 1,000 closes of the default world it decides 92.5% and 82.3%
+  memorisation.** On the unseen worlds that single-world model decides 20.9%. Trained on 1,000 closes of the default world it decides 92.5% and 82.3%
   against Sonnet's 88.3% and 73.2%. A copy trained with four cause families removed decided
   about 30% of those causes' claims against about 95% for the model that had seen them
   (section 4). The unseen-worlds benchmark was built because of that finding.
@@ -203,12 +203,12 @@ Fully taught (50 closes per world), under the lesson rule of section 9:
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
 | Oracle (ceiling) | heldout | 325 | 89.3% | 0.960 | 963/998 | 0 | 0 | 363/363 | 86.4%..92.2% |
 | Claude Sonnet 5.5 | heldout | 306 | 81.7% | 0.883 | 871/998 | 0 | 0 | 349/363 | 67.2%..90.0% |
-| Qwen2.5-3B, single-world | heldout | SFT_H |
+| Qwen2.5-3B, single-world | heldout | 43 | 20.9% | 0.268 | 125/998 | 0 | 0 | 269/363 | 12.4%..29.2% |
 | Qwen2.5-3B, multi-world, gold targets | heldout | 141 | 44.8% | 0.507 | 419/998 | 0 | 0 | 301/363 | 24.2%..63.4% |
 | Qwen2.5-3B, multi-world, rebuilt targets | heldout | 185 | 54.4% | 0.603 | 528/998 | 0 | 0 | 321/363 | 31.7%..69.5% |
 | Oracle (ceiling) | paraphrase | 536 | 76.0% | 0.827 | 799/998 | 0 | 0 | 346/363 | 72.5%..81.4% |
 | Claude Sonnet 5.5 | paraphrase | 444 | 63.3% | 0.698 | 644/998 | 0 | 0 | 326/363 | 54.3%..71.1% |
-| Qwen2.5-3B, single-world | paraphrase | SFT_P |
+| Qwen2.5-3B, single-world | paraphrase | 55 | 17.5% | 0.233 | 83/998 | 0 | 0 | 265/363 | 10.9%..22.8% |
 | Qwen2.5-3B, multi-world, gold targets | paraphrase | 198 | 33.4% | 0.391 | 269/998 | 0 | 0 | 292/363 | 20.0%..41.6% |
 | Qwen2.5-3B, multi-world, rebuilt targets | paraphrase | 251 | 40.7% | 0.468 | 364/998 | 0 | 0 | 299/363 | 16.7%..56.2% |
 
@@ -216,6 +216,11 @@ Sonnet sits 7.6 points under the ceiling on held-out phrasing and 12.7 points un
 paraphrase tier, a wider gap than in the default world, and its weakest worlds
 (`municipal-water-utility` at 67% on held-out, `quarry-and-aggregates-supplier` at 54% on
 paraphrase) are well below its best.
+
+**The single-world model barely moves the needle here.** The model that scores at the ceiling
+in its own world decides 20.9% and 17.5%, about ten points over no lessons at all (10.5%),
+and returned no proposal for 69 of the 1,100 closes it was shown. That is the control section
+4 asked for: what it had learned was one world.
 
 **The multi-world model lost, in every world.** Trained on the generator's gold targets it
 decided 44.8% of held claims against Sonnet's 81.7% on held-out phrasing and 33.4% against
