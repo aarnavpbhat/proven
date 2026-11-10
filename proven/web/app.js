@@ -253,6 +253,7 @@ const state = {
   /** @type {VerifyReport | null} */ report: null,
   /** @type {{name: string, text: string} | null} */ upload: null,
   /** @type {"exceptions" | "all"} */ filter: "exceptions",
+  /** @type {"claims" | "explanation" | "key"} */ pane: "claims",
   editing: false,
   /** @type {string | null} */ active: null,
   /** @type {Record<string, number>} */ openedAt: {},
@@ -277,7 +278,11 @@ const el = {
   model: /** @type {HTMLInputElement} */ (byId("model")),
   modelList: byId("model-list"),
   extractorNote: byId("extractor-note"),
-  keyPanel: byId("answer-key-panel"),
+  heading: byId("review-heading"),
+  keyTab: byId("answer-key-tab"),
+  detail: byId("claim-detail"),
+  coverageBar: byId("coverage-bar"),
+  crumbView: byId("crumb-view"),
   keySummary: byId("answer-key-summary"),
   keyList: byId("answer-key"),
   benchExtractor: /** @type {HTMLSelectElement} */ (byId("bench-extractor")),
@@ -301,7 +306,6 @@ const el = {
   lessonCount: byId("lesson-count"),
   queue: byId("queue"),
   queueCount: byId("queue-count"),
-  queueMeta: byId("queue-meta"),
   queueRefresh: /** @type {HTMLButtonElement} */ (byId("queue-refresh")),
   benchForm: /** @type {HTMLFormElement} */ (byId("bench-form")),
   benchSplit: /** @type {HTMLSelectElement} */ (byId("bench-split")),
@@ -335,6 +339,7 @@ async function prepareScenario(/** @type {string} */ id) {
   state.upload = null;
   state.resolved = {};
   el.editor.value = scenario.explanation;
+  el.heading.textContent = scenario.title;
   el.download.href = `/api/ledger.csv?id=${encodeURIComponent(id)}`;
   el.download.setAttribute("download", `${id}-ledger.csv`);
   const truth = scenario.ground_truth;
@@ -461,7 +466,9 @@ function updateExtractorUi() {
 /** @param {VerifyReport} report */
 function renderAnswerKey(report) {
   const key = report.answer_key;
-  el.keyPanel.hidden = !key;
+  el.keyTab.hidden = !key;
+  if (!key && state.pane === "key") state.pane = "claims";
+  showPane();
   if (!key) return;
   const met = key.filter((row) => row.met).length;
   const edited = state.scenario && report.explanation !== state.scenario.explanation;
@@ -536,13 +543,23 @@ function renderLedger(report) {
 
 /** @param {Coverage} coverage */
 function renderCoverage(coverage) {
-  /** @param {string} label @param {Child} value @param {Child} [sub] */
-  const stat = (label, value, sub) => h("div", {}, h("dt", {}, label), h("dd", {}, value, sub ? h("small", {}, sub) : null));
+  /** @param {string} label @param {Child} value @param {Child} [sub] @param {string} [tone] */
+  const stat = (label, value, sub, tone) => h("div", { class: tone ? `stat v-${tone}` : "stat" },
+    h("dt", {}, label), h("dd", {}, value, sub ? h("small", {}, sub) : null));
+  const { PASS, FAIL, REVIEW } = coverage.verdicts;
   replace(el.coverage,
     stat("Claims checked", coverage.claims, `of ${coverage.sentences_with_figures} with figures`),
-    stat("Decided", rate(coverage.decided_share), `${coverage.decided} of ${coverage.claims}`),
-    stat("Pass · Fail", `${coverage.verdicts.PASS} · ${coverage.verdicts.FAIL}`),
-    stat("Need review", coverage.verdicts.REVIEW, coverage.unextracted ? `+${coverage.unextracted} not extracted` : ""));
+    stat("Pass", PASS, "", "PASS"),
+    stat("Fail", FAIL, "", "FAIL"),
+    stat("Need review", REVIEW, coverage.unextracted ? `+${coverage.unextracted} not extracted` : "", "REVIEW"),
+    stat("Decided", rate(coverage.decided_share), `${coverage.decided} of ${coverage.claims}`));
+  // The same counts as proportions; the numbers above remain the record.
+  /** @type {[string, number][]} */
+  const parts = [["PASS", PASS], ["FAIL", FAIL], ["REVIEW", REVIEW], ["MISSED", coverage.unextracted]];
+  el.coverageBar.setAttribute("aria-label",
+    `${PASS} pass, ${FAIL} fail, ${REVIEW} need review, ${coverage.unextracted} not extracted`);
+  replace(el.coverageBar, ...parts.filter(([, n]) => n > 0).map(([tone, n]) =>
+    h("span", { class: `outcome-seg v-${tone}`, style: `flex-grow:${n}` })));
 }
 
 /** @param {VerifyReport} report */
@@ -557,41 +574,92 @@ function renderClaims(report) {
   if (!report.claims.length) {
     replace(el.claims, h("li", { class: "empty" },
       "No claims were extracted. A checkable sentence names an account and states a change, a percentage or a balance."));
+    renderDetail(report, null, []);
     return;
   }
   if (!claims.length) {
     replace(el.claims, h("li", { class: "empty" }, `No exceptions: all ${report.claims.length} claims passed.`));
+    renderDetail(report, null, []);
     return;
   }
-  const firstOpen = state.active || claims[0].claim.claim_id;
-  replace(el.claims, ...claims.map((result) => claimItem(result, report, result.claim.claim_id === firstOpen && result.verdict !== "PASS" || result.claim.claim_id === state.active)));
+  // The list is the index; the selected claim's working is shown in the detail pane beside it.
+  const selected = claims.find((c) => c.claim.claim_id === state.active) || claims[0];
+  replace(el.claims, ...claims.map((result) => claimItem(result, report, result === selected)));
+  renderDetail(report, selected, claims);
 }
 
 /**
+ * One row of the claims list.
  * @param {ClaimResult} result
  * @param {VerifyReport} report
- * @param {boolean} open
+ * @param {boolean} selected
  */
-function claimItem(result, report, open) {
+function claimItem(result, report, selected) {
   const claim = result.claim;
   const id = claim.claim_id;
-  const details = /** @type {HTMLDetailsElement} */ (h("details", { open },
-    h("summary", {},
-      h("span", { class: `verdict v-${result.verdict}` }, result.verdict),
-      h("span", { class: "claim-quote" }, h("span", { class: "claim-id" }, id), claim.quote),
-      h("span", { class: "claim-reason" }, result.reason, keyTag(report, id), state.resolved[id] ? h("span", { class: "muted" }, ` · resolved: ${state.resolved[id]}`) : null)),
-    h("div", { class: "claim-body" },
+  const change = result.reconstruction.change;
+  return h("li", { class: `claim${selected ? " active" : ""}`, id: `claim-${id}` },
+    h("button", { type: "button", class: "claim-row", "aria-current": selected ? "true" : null, onclick: () => focusClaim(id) },
+      h("span", { class: "claim-top" },
+        h("span", { class: `verdict v-${result.verdict}` }, result.verdict),
+        h("span", { class: "claim-id" }, id),
+        h("span", { class: "claim-account" }, claim.account || "No account identified"),
+        change === undefined ? null : h("span", { class: "claim-change num" }, signed(change))),
+      h("span", { class: "claim-quote" }, claim.quote),
+      h("span", { class: "claim-reason" }, result.reason, keyTag(report, id),
+        state.resolved[id] ? h("span", { class: "muted" }, ` · resolved: ${state.resolved[id]}`) : null)));
+}
+
+/**
+ * The detail pane: reason, reconstruction, checks, cited transactions, adjustments, resolution.
+ * @param {VerifyReport} report
+ * @param {ClaimResult | null} result
+ * @param {ClaimResult[]} claims the list as shown, for previous / next
+ */
+function renderDetail(report, result, claims) {
+  if (!result) {
+    replace(el.detail, h("p", { class: "empty" }, "No claim selected. A claim's reconstruction, checks and evidence appear here."));
+    return;
+  }
+  const claim = result.claim;
+  const id = claim.claim_id;
+  const at = claims.indexOf(result);
+  /** @param {string} label @param {string} glyph @param {ClaimResult | undefined} target */
+  const step = (label, glyph, target) => h("button", {
+    type: "button", class: "button small icon-only", "aria-label": label, title: label, disabled: !target,
+    onclick: () => { if (target) focusClaim(target.claim.claim_id); },
+  }, glyph);
+  state.openedAt[id] = state.openedAt[id] || Date.now();
+  replace(el.detail,
+    h("header", { class: "detail-head" },
+      h("h2", {}, h("span", { class: "claim-id" }, id), claim.account || "No account identified"),
+      h("div", { class: "detail-nav" },
+        h("span", { class: "muted" }, `${at + 1} of ${claims.length}`),
+        step("Previous claim", "↑", claims[at - 1]),
+        step("Next claim", "↓", claims[at + 1]))),
+    h("div", { class: "detail-body" },
+      h("div", { class: "detail-lead" },
+        h("p", { class: "detail-reason" }, result.reason),
+        h("p", { class: "detail-chips" },
+          h("span", { class: `verdict v-${result.verdict}` }, result.verdict), keyTag(report, id),
+          state.resolved[id] ? h("span", { class: "muted" }, ` · resolved: ${state.resolved[id]}`) : null),
+        h("blockquote", { class: "detail-quote" }, claim.quote)),
       reconstruction(result, report),
       checksSection(result.checks),
       findingsSection(result, report),
       moversSection(result, report),
       notesSection(result),
-      resolveSection(result, report))));
-  if (open) state.openedAt[id] = state.openedAt[id] || Date.now();
-  details.addEventListener("toggle", () => {
-    if (details.open) state.openedAt[id] = Date.now();
-  });
-  return h("li", { class: `claim${state.active === id ? " active" : ""}`, id: `claim-${id}` }, details);
+      resolveSection(result, report)));
+}
+
+/** Show one of the list pane's views: the claims, the explanation in context, or the answer key. */
+function showPane() {
+  for (const tab of document.querySelectorAll("[data-pane]")) {
+    tab.setAttribute("aria-pressed", String(tab.getAttribute("data-pane") === state.pane));
+  }
+  for (const part of /** @type {NodeListOf<HTMLElement>} */ (document.querySelectorAll("[data-pane-body], [data-pane-tools]"))) {
+    part.hidden = (part.getAttribute("data-pane-body") || part.getAttribute("data-pane-tools")) !== state.pane;
+  }
 }
 
 /** @param {VerifyReport} report @param {string} claimId */
@@ -761,7 +829,7 @@ function resolveSection(result, report) {
   const teach = h("fieldset", { class: "teach", hidden: true },
     h("legend", {}, "Teach Proven"),
     prefill ? h("p", { class: "hint" },
-      `From the teaching queue: in run ${prefill.item.example.run_id} (${prefill.item.example.extractor}) the model proposed ${prefill.terms.map((w) => `“${w}”`).join(", ")} for this reason, and ${prefill.item.waiting} waiting claim${prefill.item.waiting === 1 ? "" : "s"} use the same phrase. This close was re-checked with the rules alone, so the model's matches are not listed under Findings; check the transactions in Largest movements before you confirm.`)
+      `From Teach next: in run ${prefill.item.example.run_id} (${prefill.item.example.extractor}) the model proposed ${prefill.terms.map((w) => `“${w}”`).join(", ")} for this reason, and ${prefill.item.waiting} waiting claim${prefill.item.waiting === 1 ? "" : "s"} use the same phrase. This close was re-checked with the rules alone, so the model's matches are not listed under Findings; check the transactions in Largest movements before you confirm.`)
       : awaitsConfirmation ? h("p", { class: "hint" },
         `The model proposed ${proposed.map((w) => `“${w}”`).join(", ")}, which matched ${matchedByModel.length} transaction${matchedByModel.length === 1 ? "" : "s"} (listed under Findings). Proven will not rely on a model's words alone. If those transactions really are this cause, record it and Proven will know this phrase from now on, with no model needed.`) : null,
     h("label", { class: "field" }, h("span", { class: "field-label" }, "When the stated reason says"), trigger),
@@ -874,7 +942,7 @@ function gateSentence(g) {
 }
 
 /**
- * Render a gate result into `target`: refused (red), untested (amber) or safe (green), always in words.
+ * Render a gate result into `target`: refused, untested or safe, always in words as well as colour.
  * @param {HTMLElement} target @param {GateSummary} g @param {VerdictChange} [claim]
  */
 function showGate(target, g, claim) {
@@ -904,7 +972,7 @@ async function refreshQueue() {
 function renderQueue() {
   const queue = state.queue;
   if (!queue) return;
-  el.queueCount.textContent = queue.waiting ? String(queue.waiting) : "";
+  el.queueCount.textContent = queue.waiting ? `${queue.waiting} waiting` : "";
   if (!queue.items.length) {
     replace(el.queue, h("li", { class: "empty" },
       queue.runs ? "Nothing waits for a confirmation in the stored runs." :
@@ -920,20 +988,20 @@ function renderQueue() {
       `${item.runs} run${item.runs === 1 ? "" : "s"}`,
     ].filter(Boolean).join(" · ");
     return h("li", { class: "queue-item" },
-      h("span", { class: "queue-rank" }, `${index + 1}.`),
-      h("div", {},
-        h("p", { class: "queue-rule" }, `“${item.trigger}” → `, h("span", { class: "terms" }, item.terms.join(", "))),
-        h("p", { class: "queue-counts" }, counts)),
+      h("span", { class: "queue-rank num" }, `${index + 1}.`),
+      h("div", { class: "queue-main" },
+        h("p", { class: "queue-rule" }, `“${item.trigger}” → `, h("span", { class: "learned-terms" }, item.terms.join(", "))),
+        h("p", { class: "hint" }, counts),
+        gate),
       h("button", {
         type: "button", class: "button small", "aria-label": `Open the Teach form for “${item.trigger}”`,
         onclick: () => openQueued(item),
-      }, "Open"),
-      gate);
+      }, "Open"));
   }));
 }
 
 /**
- * Open a queued lesson: load its stored run, re-check it, and open its claim with the Teach form filled in.
+ * Open a queued lesson: load its stored run, re-check it, and select its claim with the Teach form filled in.
  * @param {QueueItem} item
  */
 async function openQueued(item) {
@@ -950,6 +1018,7 @@ async function openQueued(item) {
     el.editor.value = run.explanation;
     state.prefill = { quote: item.example.quote, triggers: [item.example.driver], terms: item.terms, item };
     state.lessonNotice = `Opened from Teach next: run ${run.run_id} (${run.extractor}), re-checked with the ${el.extractor.value} extractor. The claim's Teach form is filled in below.`;
+    showView("review");
     if (!(await verify()) || !state.report) return;
     const found = state.report.claims.find((c) => c.claim.quote === item.example.quote);
     if (found) focusClaim(found.claim.claim_id);
@@ -1023,6 +1092,8 @@ function focusClaim(id) {
   renderLedger(report);
   renderClaims(report);
   document.getElementById(`claim-${id}`)?.scrollIntoView({ block: "nearest" });
+  // Stacked layout (narrow screens): the detail pane is below the list, so bring it into view.
+  if (el.detail.getBoundingClientRect().top > window.innerHeight * 0.6) el.detail.scrollIntoView({ block: "start" });
 }
 
 // ── benchmark ────────────────────────────────────────────────────────────
@@ -1099,7 +1170,7 @@ function renderBenchmark() {
       h("td", {}, row.kind),
       h("td", {}, row.requirement === "NOT_PASS" ? "not PASS" : row.requirement),
       h("td", { class: "num" }, row.n),
-      h("td", { class: `num${row.met_rate < 0.9 ? " neg" : ""}` }, rate(row.met_rate)),
+      h("td", { class: `num${row.met_rate < 0.9 ? " low" : ""}` }, rate(row.met_rate)),
       h("td", { class: "num" }, opt(row.codes_rate)),
       h("td", { class: "num" }, opt(row.evidence_recall)),
       h("td", { class: "num" }, row.verdicts.PASS),
@@ -1109,15 +1180,21 @@ function renderBenchmark() {
 
 // ── views and wiring ─────────────────────────────────────────────────────
 
+/** @type {Record<string, string>} */
+const VIEW_NAME = { review: "Review", ledger: "Ledger", learned: "Learned", benchmark: "Benchmark" };
+
 /** @param {string} view */
 function showView(view) {
   for (const tab of document.querySelectorAll(".tab")) {
     if (tab.getAttribute("data-view") === view) tab.setAttribute("aria-current", "page");
     else tab.removeAttribute("aria-current");
   }
-  byId("view-review").hidden = view !== "review";
-  byId("view-benchmark").hidden = view !== "benchmark";
-  document.title = `Proven · ${view === "review" ? "Review" : "Benchmark"}`;
+  for (const section of /** @type {NodeListOf<HTMLElement>} */ (document.querySelectorAll(".view"))) {
+    section.hidden = section.id !== `view-${view}`;
+  }
+  const name = VIEW_NAME[view] || VIEW_NAME.review;
+  el.crumbView.textContent = name;
+  document.title = `Proven · ${name}`;
   if (view === "benchmark" && !state.bench[benchKey(el.benchExtractor.value || "rules", "seen")]) runBenchmark();
 }
 
@@ -1140,6 +1217,13 @@ function wire() {
   }
   for (const tab of document.querySelectorAll(".tab")) {
     tab.addEventListener("click", () => showView(tab.getAttribute("data-view") || "review"));
+  }
+  for (const tab of document.querySelectorAll("[data-pane]")) {
+    tab.addEventListener("click", () => {
+      const wanted = tab.getAttribute("data-pane");
+      state.pane = wanted === "explanation" || wanted === "key" ? wanted : "claims";
+      showPane();
+    });
   }
   el.benchForm.addEventListener("submit", (e) => { e.preventDefault(); runBenchmark(); });
   for (const button of document.querySelectorAll("[data-phrasing]")) {
