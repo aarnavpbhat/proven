@@ -639,6 +639,14 @@ larger untuned model, pooled with no cap, find fewer than half the causes.
 - The diagnosis of that loss read replies on the unseen suite. The sealed suite exists because
   of it.
 - Three 7B training runs failed (section 6).
+- Larger untuned open models were probed on the dev worlds with the teacher's prompt (cause found, held-out
+  phrasing, greedy / vote of 4 / all terms of 4 samples): Qwen2.5-14B 38.5% / 44.0% / 57.3%, Qwen2.5-7B
+  32.7% / 38.5% / 45.3%, Phi-4 26.4% / 28.8% / 51.8%, Gemma-3 12B 20.7% / 19.9% / 37.2%, Mistral-Nemo
+  15.7% / 17.0% / 21.7%. Sonnet finds 80.1%.
+- Fine-tuning the 14B model on the rebuilt targets made it worse. The first run ran out of memory; the
+  second (400 iterations, 8 layers, batch 1, learning rate 5e-5, gradient norm clipped at 1.0) trained
+  cleanly (validation loss 0.364 at iteration 200) and found the cause for 29.3% of the 382 dev claims,
+  below the same model untuned (38.5%). It was not scored on a measured suite.
 - Sonnet's lessons passed two wrong explanations on the sealed suite before the rule of
   section 9; the unseen suite had not shown it only because the triggering sentence was absent.
 - A waiting loop in a job script was given a ten-minute limit by mistake and was restarted;
