@@ -24,3 +24,9 @@ training/data/
 training/adapters/
 *.safetensors
 *.gguf
+
+# Editor and OS files.
+.DS_Store
+.idea/
+.vscode/
+*.swp

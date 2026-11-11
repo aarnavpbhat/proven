@@ -1,6 +1,6 @@
 import pytest
 
-from proven.ledger import TOTAL, Account, Ledger, Transaction, default_aliases
+from proven.ledger import TOTAL, Account, Ledger, Transaction, Variance, default_aliases
 
 
 def small() -> Ledger:
@@ -72,3 +72,9 @@ def test_hash_changes_with_content():
 def test_default_aliases_are_mechanical():
     aliases = default_aliases("Legal & Professional Fees")
     assert "legal" in aliases and "professional" in aliases and "legal & professional fees" in aliases
+
+
+def test_a_new_account_has_no_percentage_change():
+    # Nothing to divide by: the honest answer is "no percentage", never 0% or infinity.
+    variance = Variance(prior=0, current=500)
+    assert variance.change == 500 and variance.change_pct is None

@@ -160,6 +160,7 @@ _ROWS: tuple[tuple[str, str, str, str, float], ...] = (
 
 
 def ledger() -> Ledger:
+    """The demo close's ledger: 78 transactions over August, September and October 2026."""
     order = sorted(range(len(_ROWS)), key=lambda i: (_ROWS[i][0], i))
     transactions = tuple(
         Transaction(f"TX-{2001 + n}", *_ROWS[i]) for n, i in enumerate(order))

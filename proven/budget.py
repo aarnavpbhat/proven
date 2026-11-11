@@ -19,6 +19,7 @@ class BudgetExceeded(RuntimeError):
 
 
 class Budget:
+    """A cap on tokens and dollars for one run; a request past the cap raises BudgetExceeded."""
     def __init__(self, max_tokens: int | None = None, max_usd: float | None = None):
         if max_tokens is None:
             max_tokens = int(os.environ.get("PROVEN_TOKEN_BUDGET") or DEFAULT_MAX_TOKENS)

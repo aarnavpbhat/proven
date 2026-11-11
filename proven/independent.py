@@ -46,6 +46,7 @@ MODEL_SUPPORT = ("SUPPORT_RESTS_ON_MODEL_TERMS", "REASON_FOUND_ONLY_BY_MODEL_TER
 
 @dataclass(frozen=True)
 class KeyedClaim:
+    """One hand-keyed claim of the independent suite and the answer it should get."""
     id: str
     quote: str
     account: str
@@ -68,6 +69,7 @@ class KeyedClaim:
 
 @dataclass(frozen=True)
 class Close:
+    """One hand-written close: its ledger, commentary and keyed claims."""
     slug: str
     industry: str
     ledger: Ledger
@@ -88,6 +90,7 @@ def _ledger(folder: Path) -> tuple[Ledger, str]:
 
 
 def load(suite: str = "independent") -> list[Close]:
+    """Load every close of the named hand-written suite."""
     if suite not in SUITES:
         raise ValueError(f"unknown suite {suite!r}; choose from {', '.join(SUITES)}")
     manifest = json.loads((HERE / "suite.json").read_text(encoding="utf-8"))
@@ -166,6 +169,7 @@ def review_causes(result: dict | None) -> list[str]:
 
 
 def score(k: KeyedClaim, result: dict | None) -> dict:
+    """Compare one claim's result with its key: verdict, cited evidence and whether it is safe."""
     verdict = result["verdict"] if result else "MISSED"
     findings = result["findings"] if result else []
     cited = sorted({t for f in findings for t in f["evidence"]})
@@ -338,6 +342,7 @@ def teach_and_measure(suite: str, proposer: Extractor) -> dict:
 
 
 def format_teach(out: dict) -> str:
+    """The teaching experiment as text: lessons from one half, measured on the other."""
     lines = [f"suite={out['suite']} proposer={out['proposer']}; lessons taught on one half, "
              f"measured with the rules on the other"]
     for d in out["directions"]:
@@ -357,6 +362,7 @@ def format_teach(out: dict) -> str:
 # ── printing ───────────────────────────────────────────────────────────────
 
 def format_result(result: dict, *, detail: bool = True) -> str:
+    """A suite result as text: the summary, then each claim when `detail` is set."""
     out = []
     s = result["summary"]
     out.append(f"suite={result['suite']} extractor={result['extractor']} lessons={result['lessons']} "

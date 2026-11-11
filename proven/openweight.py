@@ -66,6 +66,7 @@ _LOOPBACK_NAMES = {"localhost", "::1", "0.0.0.0", ""}
 
 
 def is_loopback(host: str) -> bool:
+    """True when `host` is this machine (localhost or a 127.x address)."""
     host = (host or "").strip("[]").lower()
     return host in _LOOPBACK_NAMES or host.startswith("127.")
 
@@ -106,6 +107,7 @@ def _text(value: Any) -> str:
 
 
 def proposals_from(data: dict[str, Any]) -> list[ClaimProposal]:
+    """Claim proposals from a parsed model reply; items without a quote are skipped."""
     proposals = []
     for item in data["claims"]:
         if not isinstance(item, dict) or not _text(item.get("quote")).strip():
@@ -139,6 +141,7 @@ def _urllib_transport(timeout: float, direct: bool) -> Transport:
 
 
 class OpenWeightExtractor:
+    """Proposes claims with an open-weight model behind an OpenAI-compatible endpoint on this machine."""
     name = NAME
     version = VERSION
 

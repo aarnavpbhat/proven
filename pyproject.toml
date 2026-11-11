@@ -4,16 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "proven"
-version = "0.1.0"
+version = "0.1.1"
 description = "Checks the reasons in month-end variance explanations against the general ledger."
 readme = "README.md"
 requires-python = ">=3.10"
+keywords = ["accounting", "variance analysis", "month-end close", "verification", "general ledger"]
 # The core needs nothing outside the standard library (asserted by proven/tests/test_isolation.py).
 dependencies = []
 
 [project.optional-dependencies]
 claude = ["anthropic"]   # only for the opt-in Claude extractor
 dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://proven-lac.vercel.app"
+Repository = "https://github.com/Quack22e/proven"
 
 [project.scripts]
 proven = "proven.__main__:main"

@@ -25,6 +25,7 @@ from proven.verify import Policy, Verdict, verify_claim
 
 
 class Extractor(Protocol):
+    """Anything that turns an explanation into claim proposals: the rule extractor or the Claude one."""
     name: str
     version: str
 
@@ -36,6 +37,7 @@ def _sha(text: str) -> str:
 
 
 def ledger_summary(ledger: Ledger) -> dict:
+    """Every account's prior, current and change, plus a total row, for the console's ledger table."""
     rows = []
     for name in ledger.account_names + [TOTAL]:
         var = ledger.variance(name)
@@ -50,6 +52,12 @@ def ledger_summary(ledger: Ledger) -> dict:
 
 def run(text: str, ledger: Ledger, *, extractor: Extractor | None = None,
         policy: Policy | None = None, network_allowed: bool = False) -> dict:
+    """Check an explanation against a ledger and return the full report as plain data.
+
+    Extracts proposals, admits or rejects each, verifies the admitted claims, and
+    records coverage, the unextracted sentences, the evidence transactions and the
+    run record (input hashes, versions, policy, anything transmitted).
+    """
     extractor = extractor or RuleExtractor()
     policy = policy or Policy()
 

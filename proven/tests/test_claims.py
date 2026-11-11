@@ -141,3 +141,8 @@ def test_bare_because_states_a_reason():
     from proven.claims import split_reason
     _head, reason, _strength = split_reason("Marketing rose $8.8K because the sponsorship grew.")
     assert reason and "sponsorship" in reason
+
+
+def test_in_large_part_reads_as_a_majority_claim():
+    _head, driver, strength = split_reason("Legal rose $90K, in large part due to the fundraise.")
+    assert (driver, strength) == ("the fundraise", Strength.MAJORITY)

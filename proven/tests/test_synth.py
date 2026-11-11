@@ -130,3 +130,10 @@ def test_paraphrase_splits_never_share_a_phrase():
 def test_paraphrase_is_deterministic():
     a, b = generate(123, phrasing="paraphrase"), generate(123, phrasing="paraphrase")
     assert a.explanation == b.explanation
+
+
+def test_heldout_phrasing_changes_only_the_wording():
+    seen, held = generate(123), generate(123, phrasing="heldout")
+    assert held.explanation == generate(123, phrasing="heldout").explanation
+    assert held.ledger.sha256() == seen.ledger.sha256()
+    assert held.explanation != seen.explanation

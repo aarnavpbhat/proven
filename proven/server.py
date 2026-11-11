@@ -64,8 +64,7 @@ STATIC = {"/": ("index.html", "text/html; charset=utf-8"),
           "/style.css": ("style.css", "text/css; charset=utf-8")}
 MAX_BODY = 4 * 1024 * 1024
 
-#: The closed set of things a reviewer can conclude about one exception, carried over from
-#: Aptio's review design.
+#: The closed set of things a reviewer can conclude about one exception.
 #: The record *is* the decision — there is no form to fill in afterwards.
 ACTIONS = (
     {"id": "confirm_defect", "label": "Confirm defect",
@@ -88,6 +87,7 @@ MIN_NOTE = 10
 
 
 class BadRequest(ValueError):
+    """A request the reviewer can fix; returned as HTTP 400 with the message."""
     pass
 
 
@@ -126,6 +126,7 @@ def probe_openweight() -> tuple[bool, str, list[str]]:
 
 
 def scenarios() -> list[dict]:
+    """The showcase close and one held-out synthetic close per family, for the Close menu."""
     out = [{"id": "showcase", "kind": "showcase",
             "title": f"{showcase.ENTITY} — October 2026 close"},
            {"id": "tidewater", "kind": "example",
@@ -157,6 +158,7 @@ def answer_key(report: dict) -> list[dict]:
 
 
 def load_scenario(scenario_id: str) -> dict:
+    """A close by id: the showcase, or `syn-<seed>`. Raises BadRequest for anything else."""
     if scenario_id == "showcase":
         return {"id": "showcase", "title": f"{showcase.ENTITY} — October 2026 close",
                 "explanation": showcase.EXPLANATION, "ledger": showcase.ledger(),
@@ -179,6 +181,7 @@ def load_scenario(scenario_id: str) -> dict:
 
 
 class App:
+    """The API's behaviour, independent of HTTP: verify, benchmark, config and resolutions."""
     def __init__(self, data_dir: Path, build=extractors.build, probe=probe_openweight,
                  warm_gate: bool = False):
         self.build, self.probe = build, probe       # injectable, so tests never reach a model
@@ -455,6 +458,7 @@ class App:
 
 
 def make_handler(app: App):
+    """A request-handler class bound to one App, for `http.server` or Vercel."""
     class Handler(BaseHTTPRequestHandler):
         server_version = f"proven/{__version__}"
 
@@ -557,11 +561,13 @@ def make_handler(app: App):
 
 def create_server(host: str = "127.0.0.1", port: int = 8765,
                   data_dir: Path | str = ".proven", **app_options) -> ThreadingHTTPServer:
+    """A threaded HTTP server for the console. Port 0 picks a free port (used by the tests)."""
     return ThreadingHTTPServer((host, port), make_handler(App(Path(data_dir), **app_options)))
 
 
 def serve(host: str = "127.0.0.1", port: int = 8765, allow_network: bool = False,
           data_dir: str = ".proven") -> None:
+    """Run the console until interrupted. Installs the network guard unless `allow_network`."""
     if allow_network:
         netguard.allow_network()
     else:

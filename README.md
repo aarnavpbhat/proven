@@ -14,6 +14,18 @@ explanations, and a correct amount can come with the wrong reason. Proven reads 
 finds each claim, and checks it against the general ledger: amount, direction, and whether the
 stated cause actually accounts for the movement. Every flag cites the transactions behind it.
 
+**At a glance**
+
+- **Three verdicts per claim.** PASS when the ledger agrees, FAIL when it contradicts the
+  sentence, REVIEW when the ledger cannot settle it.
+- **Evidence, not opinion.** Every flag names the transactions behind it, by ID.
+- **No model makes the call.** An optional language model may help read sentences; every verdict
+  comes from arithmetic over the ledger.
+- **Runs offline.** Python's standard library only, and the local server refuses outbound
+  connections.
+- **Status:** a working demo, tested on synthetic data only. See [Results](#results) for what the
+  numbers do and do not show.
+
 Team **Oski's Back Office** (UC Berkeley): Julien Bergeron-Palmer (data generation
 infrastructure), Aarnav Bhat (ML / RL architecture), Arun Yama.
 
@@ -296,7 +308,7 @@ automatically the first time you open the tab and takes a few seconds.
 A vendor has a "usual account" once at least 3 of its other transactions exist and at least 80%
 of them land in one account.
 
-**Verdict algebra**, carried over unchanged from Aptio:
+**Verdict algebra:**
 
 - any confirmed finding → **FAIL**;
 - else any advisory finding → **REVIEW**;
@@ -328,9 +340,8 @@ whether a booking is wrong is an accounting judgement. FAIL is reserved for cont
 re-executing arithmetic establishes on its own.
 
 **3. Compare at the precision a figure was written to.** "$90K" for a movement of $91,240 is not
-an error. Aptio's verifier once flagged 34 sound financial items by forgetting this. Figures keep
-their text, and the comparison uses the half-unit of the last written digit plus a declared
-tolerance.
+an error, and a checker that flags it is worse than no checker. Figures keep their text, and the
+comparison uses the half-unit of the last written digit plus a declared tolerance.
 
 **4. Evidence is transaction IDs, chosen deliberately.** A finding that cannot say what was
 claimed, what the ledger shows, and which lines prove it is just a number disagreeing with
@@ -388,12 +399,6 @@ and the demo ledger) plus one page:
 
 Each of those can be added when a real deployment needs it. None was needed to find out whether
 the checks work.
-
-**9. Built on Aptio.** Proven is a condensed, self-contained build of the Aptio verification
-architecture: the three-valued verdict algebra, the propose/admit extraction boundary,
-written-precision comparison, the runtime network guard, and the closed set of reviewer actions.
-Aptio checks the arithmetic in AI-produced financial work; Proven applies the same discipline to
-the *reasons*.
 
 ---
 
@@ -636,7 +641,8 @@ python -m proven verify --ledger my_gl_export.csv --explanation commentary.txt
 python -m proven generate --split train --n 5000 --out train.jsonl
 ```
 
-`pip install .` also installs these as a `proven` command (`proven serve`, `proven showcase`, …).
+`pip install .` also installs these as a `proven` command (`proven serve`, `proven showcase`, …),
+and `--version` prints the installed version.
 
 A ledger CSV needs the columns `id, date, account, vendor, memo, amount`; amounts may use
 thousands separators or accounting parentheses. The two most recent months become the prior and
@@ -671,10 +677,19 @@ python -m proven benchmark --extractor openweight --model qwen2.5:14b --phrasing
 python -m pytest proven/tests -q
 ```
 
-412 tests (411 pass, 1 skipped): 357 for the checker in `proven/tests` and 55 for the training tools in `training/`. They include negative controls (inputs that must *not* be
+425 tests (424 pass, 1 skipped): 370 for the checker in `proven/tests` and 55 for the training tools in `training/`. They include negative controls (inputs that must *not* be
 flagged), the benchmark floors, an AST check that the package imports nothing outside the
 standard library, the HTTP API, and the Vercel entry point. If the TypeScript compiler (`tsc`) is installed, the console's script is
 also type-checked under `--strict`.
+
+### Changing the checks
+
+- Every new check needs a negative control: a correct explanation it must *not* flag. A check
+  that flags sound work costs more than it catches.
+- Re-run `python -m proven benchmark` and report the seen and held-out columns separately.
+  Unsafe PASS and failed controls must stay at 0; coverage is reported on its own, never folded
+  into a single score.
+- Thresholds live in `Policy` (`proven/verify.py`). Change them there, not in the checks.
 
 ### On Vercel
 
@@ -721,7 +736,7 @@ proven/
   netguard.py   network-off, enforced
   server.py     stdlib HTTP server + JSON API
   web/          the reviewer console (HTML, CSS, JS checked by tsc --strict)
-  tests/        357 tests
+  tests/        370 tests
 api/index.py    the Vercel function (wraps the same request handler)
 vercel.json     static console from the CDN, /api/* to the function
 docs/           the screenshots in this README

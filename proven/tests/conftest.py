@@ -18,3 +18,8 @@ def _no_learned_terms_leak():
     point of it); no test may leave any behind for the next one."""
     yield
     claims.set_learned([])
+
+
+def pytest_report_header(config):  # noqa: ARG001
+    """Say in the run header that the guard is on, so nobody has to take it on trust."""
+    return "proven: network off (proven.netguard installed for this session)"

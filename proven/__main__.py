@@ -14,7 +14,7 @@ import json
 import sys
 from pathlib import Path
 
-from proven import env, showcase
+from proven import __version__, env, showcase
 from proven.ledger import Ledger
 from proven.report import run
 
@@ -104,8 +104,10 @@ def _usage(extractor) -> None:
 
 
 def main(argv: list[str] | None = None) -> int:
+    """Parse the command line and run one command; returns the process exit code."""
     parser = argparse.ArgumentParser(prog="python -m proven", description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--version", action="version", version=f"proven {__version__}")
     sub = parser.add_subparsers(dest="command", required=True)
 
     p = sub.add_parser("serve", help="run the reviewer console")

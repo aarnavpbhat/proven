@@ -10,8 +10,8 @@ line rather than a setting someone can leave on.
 Loopback stays allowed: the reviewer console is served on 127.0.0.1, and a
 loopback connection cannot reach a third party.
 
-This is the same guard Aptio's test suite uses to prove its results cost $0,
-moved from CI into the product, which is where the pivot plan said it belonged.
+The test suite runs under the same guard (`proven/tests/conftest.py`), so no
+test can reach a provider either.
 """
 from __future__ import annotations
 
@@ -82,8 +82,10 @@ def allow_network() -> None:
 
 
 def network_allowed() -> bool:
+    """True only if this process explicitly allowed the network and the guard is not installed."""
     return bool(_state["network_allowed"]) and not _state["installed"]
 
 
 def installed() -> bool:
+    """Whether the guard is active in this process."""
     return bool(_state["installed"])

@@ -1,5 +1,7 @@
 """Vercel entry point: the console's JSON API as one Python serverless function.
 
+Live at https://proven-lac.vercel.app; every push to `main` redeploys it.
+
 On Vercel the console's static files (index.html, app.js, style.css) are copied
 from `proven/web/` into `public/` at build time and served from the CDN; every
 `/api/*` request is routed here. The request handler is the same class

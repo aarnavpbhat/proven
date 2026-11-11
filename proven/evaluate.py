@@ -6,12 +6,11 @@ WHAT IS REPORTED, AND WHAT IS NEVER COMBINED
     expected finding was raised, and whether the findings cited the culprit
     transactions (evidence recall and precision);
   * controls: the false-alarm rate (a correct explanation not passed) and,
-    separately, the FAIL count on controls — Aptio's kill criterion K3 is that
-    any negative control failing means the checker is not ready to be pointed
-    at anybody's work;
+    separately, the FAIL count on controls, which must be zero: a checker
+    that fails correct work is not ready to be pointed at anybody's work;
   * defects: the catch rate and, separately, the unsafe-PASS count — a PASS on
-    an explanation known to be wrong. K2 is the one number no amount of
-    coverage compensates for;
+    an explanation known to be wrong, the one number no amount of coverage
+    compensates for;
   * coverage: the share of claims decided (PASS or FAIL) without a person.
 
 There is no single quality score. A checker that decides 5% of claims and one
@@ -46,6 +45,7 @@ FALSE_FAIL = -0.5
 
 
 def requirement_met(requirement: str, verdict: str) -> bool:
+    """Whether a verdict satisfies a family's requirement (PASS, FAIL or NOT_PASS)."""
     if requirement == "PASS":
         return verdict == "PASS"
     if requirement == "FAIL":
@@ -54,6 +54,7 @@ def requirement_met(requirement: str, verdict: str) -> bool:
 
 
 def evidence_scores(cited: set[str], culprits: list[str]) -> tuple[float | None, float | None]:
+    """(recall, precision) of the cited transactions against the culprits, or (None, None)."""
     if not culprits:
         return None, None
     hits = len(cited & set(culprits))
@@ -92,6 +93,7 @@ class _Tally:
 
 
 def score_claim(label: Label, result: dict | None) -> dict:
+    """Verdict, requirement, finding, evidence and reward for one labelled claim."""
     verdict = result["verdict"] if result else "MISSED"
     findings = result["findings"] if result else []
     codes = {f["code"] for f in findings}
@@ -133,7 +135,12 @@ def proposal_from_gold(gold: dict) -> ClaimProposal:
 def evaluate(split: str = "test", n: int = 220, policy: Policy | None = None,
              phrasing: str = "seen", extractor=None, workers: int = 1,
              extractor_for: Callable[[Scenario], Extractor] | None = None) -> dict:
-    """`extractor` defaults to the rules; `extractor_for` builds one per close (the oracle).
+    """Run the benchmark over `n` synthetic closes of one split and phrasing.
+
+    Returns per-family rows plus controls, defects and coverage, each reported
+    separately; there is deliberately no single overall score.
+
+    `extractor` defaults to the rules; `extractor_for` builds one per close (the oracle).
     With `workers` > 1 the extractor is called for every close up front, in parallel; that
     only helps one that caches its proposals."""
     scenarios = generate_split(split, n, phrasing)

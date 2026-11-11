@@ -114,6 +114,7 @@ def split_reason(sentence: str) -> tuple[str, str | None, Strength]:
 
 
 def read_direction(head: str) -> int | None:
+    """+1 if the head says the account rose, -1 if it fell, None if it says neither."""
     up, down = _UP.search(head), _DOWN.search(head)
     if up and (not down or up.start() < down.start()):
         return 1
@@ -195,6 +196,7 @@ def read_figures(head: str, account: str | None = None, ledger: Ledger | None = 
 
 
 def read_sentence(sentence: str, ledger: Ledger) -> Reading:
+    """Everything `admit()` and the rule extractor read from one sentence, without a model."""
     head, driver, strength = split_reason(sentence)
     account = resolve_account(head, ledger)
     change, percent, prior, current = read_figures(head, account, ledger)
@@ -204,6 +206,7 @@ def read_sentence(sentence: str, ledger: Ledger) -> Reading:
 
 
 def has_figures(sentence: str) -> bool:
+    """Whether a sentence states any money figure or percentage at all."""
     return bool(find_money(sentence) or find_percents(sentence))
 
 
@@ -212,8 +215,8 @@ def has_figures(sentence: str) -> bool:
 #: A declared calibration table: how a writer refers to a cause, and the words
 #: that cause leaves in a ledger's memo and vendor fields. It is data, it is
 #: reviewed like code, and every entry is exercised by a test. Adding to it is
-#: the in-product version of Aptio's calibration rule — and like one, an entry
-#: that makes sound explanations fail is a regression.
+#: a calibration decision, and an entry that makes sound explanations fail is a
+#: regression.
 LEXICON: tuple[tuple[str, tuple[str, ...], tuple[str, ...]], ...] = (
     # (name, phrases a writer uses, words the cause leaves in vendor/memo fields)
     ("financing", ("funding", "financing", "fundrais", "series a", "series b", "series c",
@@ -295,6 +298,7 @@ _TOKEN = re.compile(r"[a-z0-9][a-z0-9&'\-]*")
 
 @dataclass(frozen=True)
 class Term:
+    """One search term for a stated reason, and where it came from (quote, lexicon or model)."""
     text: str
     origin: str      # "quote" | "lexicon" | "learned" | "model"
 
@@ -382,6 +386,7 @@ class ClaimProposal:
 
 @dataclass(frozen=True)
 class Rejection:
+    """A proposal `admit()` refused, and why. Reported in the run, never silently dropped."""
     quote: str
     reason: str
     extractor: str
@@ -392,6 +397,7 @@ class Rejection:
 
 @dataclass(frozen=True)
 class Claim:
+    """An admitted claim: what one sentence asserts, read deterministically. Carries no verdict."""
     claim_id: str
     start: int
     end: int

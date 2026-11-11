@@ -29,3 +29,10 @@ def test_the_legal_finding_names_the_misbooked_invoice():
     txn = report["transactions"][txn_id]
     assert txn["account"] == "Marketing & Advertising" and txn["amount"] == 45100
     assert "agrees with the stated $90K" in misclass["detail"]
+
+
+def test_the_demo_ledger_is_pinned():
+    # Any change to the demo's data changes this fingerprint; update it deliberately.
+    book = ledger()
+    assert len(book.transactions) == 78
+    assert book.sha256() == "26ff2a271b2662436cf84463df91bcbb76049e1bfd142fdb86577950bba0ec41"

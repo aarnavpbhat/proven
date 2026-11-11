@@ -46,3 +46,19 @@ def test_outbound_connections_are_refused_and_loopback_is_not():
 def test_the_tests_themselves_run_with_the_guard_installed():
     from proven import netguard
     assert netguard.installed() and not netguard.network_allowed()
+
+
+def test_installing_twice_is_harmless_and_still_blocks():
+    result = run_snippet("""
+        import socket
+        from proven import netguard
+        netguard.install()
+        netguard.install()
+        try:
+            socket.create_connection(("example.com", 80), timeout=2)
+            print("LEAKED")
+        except netguard.NetworkBlocked:
+            print("blocked")
+    """)
+    assert result.returncode == 0, result.stderr
+    assert result.stdout.split() == ["blocked"]

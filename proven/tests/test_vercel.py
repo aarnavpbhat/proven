@@ -64,3 +64,11 @@ def test_build_command_copies_exactly_the_files_the_page_loads(tmp_path):
     subprocess.run(config["buildCommand"], shell=True, cwd=tmp_path, check=True)
     assert {p.name for p in (tmp_path / config["outputDirectory"]).iterdir()} == copied
     assert config["rewrites"] == [{"source": "/api/(.*)", "destination": "/api/index"}]
+
+
+def test_function_limits_and_security_headers():
+    config = json.loads(CONFIG.read_text(encoding="utf-8"))
+    function = config["functions"]["api/index.py"]
+    assert function["maxDuration"] <= 60 and "proven/tests/**" in function["excludeFiles"]
+    headers = {h["key"]: h["value"] for rule in config["headers"] for h in rule["headers"]}
+    assert headers == {"X-Content-Type-Options": "nosniff", "Referrer-Policy": "same-origin"}

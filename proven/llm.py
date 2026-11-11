@@ -266,6 +266,11 @@ def request_params(model: str, content: str, effort: str = EFFORT,
 
 
 class ClaudeExtractor:
+    """Proposes claims with Claude; `admit()` and the checks decide everything else.
+
+    Pass `client` to inject a fake in tests. Every request is recorded in
+    `transmissions`, which the run report carries.
+    """
     name = NAME
     version = VERSION
 

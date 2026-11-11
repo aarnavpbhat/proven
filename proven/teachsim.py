@@ -89,6 +89,7 @@ def teach(pool: list[Scenario], proposer_for: Callable[[Scenario], Extractor]) -
 
 def measure(pool: list[Scenario], lessons: list[dict],
             extractor_for: Callable[[Scenario], Extractor]) -> dict:
+    """Run the checker over `pool` with `lessons` applied and count decided claims, controls and defects."""
     out = {"claims": 0, "decided": 0, "controls": 0, "controls_passed": 0, "control_fails": 0,
            "defects": 0, "defects_caught": 0, "unsafe_passes": 0}
     total = 0.0

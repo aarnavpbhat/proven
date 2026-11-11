@@ -877,6 +877,9 @@ function resolveSection(result, report) {
         return;
       }
       state.resolved[id] = label;
+      // Show the decision in the card's header now, not only after the list re-renders.
+      const headerNote = document.querySelector(`#claim-${id} .resolved-note`);
+      if (headerNote) headerNote.textContent = ` · resolved: ${label}`;
       status.className = "resolve-status ok";
       status.textContent = `Recorded: ${label}, appended to the resolutions log.`;
       refreshQueue();

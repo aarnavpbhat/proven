@@ -29,6 +29,7 @@ VERSION = "0.1"
 
 @dataclass(frozen=True)
 class Sentence:
+    """A sentence of the explanation, with its character offsets."""
     start: int
     end: int
     text: str
@@ -55,6 +56,7 @@ def sentences(text: str) -> list[Sentence]:
 
 
 class RuleExtractor:
+    """The default, offline extractor: at most one proposal per sentence, read by rule."""
     name = NAME
     version = VERSION
 

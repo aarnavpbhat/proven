@@ -110,6 +110,7 @@ def validate(triggers: object, terms: object) -> tuple[tuple[str, ...], tuple[st
 # ── storage ──────────────────────────────────────────────────────────────
 
 def path(data_dir: Path | str) -> Path:
+    """Where the learned lexicon is stored under `data_dir`."""
     return Path(data_dir) / LEXICON_FILE
 
 
@@ -133,6 +134,7 @@ def load(data_dir: Path | str) -> list[dict]:
 
 
 def as_lexicon(entries: list[dict]) -> list[tuple[str, tuple[str, ...], tuple[str, ...]]]:
+    """Learned entries in the lexicon's (name, triggers, terms) form."""
     return [(f"learned-{e['id']}", tuple(e["triggers"]), tuple(e["terms"])) for e in entries]
 
 
@@ -145,6 +147,7 @@ def apply(data_dir: Path | str) -> list[dict]:
 
 def make_entry(triggers: object, terms: object, *, note: str = "", run_id: str = "",
                claim_id: str = "", quote: str = "", action: str = "") -> dict:
+    """A validated learned entry with an id, a timestamp and where it came from."""
     trig, term = validate(triggers, terms)
     return {"id": uuid.uuid4().hex[:10],
             "created_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),

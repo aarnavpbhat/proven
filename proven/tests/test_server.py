@@ -96,3 +96,15 @@ def test_resolutions_need_a_closed_action_and_a_reason(api):
     assert status == 200 and saved["resolution"]["reduces_review"] is False
     _, listed = api("GET", "/api/resolutions")
     assert listed["resolutions"][-1]["seconds_on_claim"] == 42
+
+
+def test_the_command_line_reports_its_version():
+    import subprocess
+    import sys
+    from pathlib import Path
+
+    from proven import __version__
+    root = Path(__file__).resolve().parents[2]
+    result = subprocess.run([sys.executable, "-m", "proven", "--version"], cwd=root,
+                            capture_output=True, text=True, timeout=60)
+    assert result.returncode == 0 and result.stdout.strip() == f"proven {__version__}"

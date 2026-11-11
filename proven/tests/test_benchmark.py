@@ -28,13 +28,13 @@ def test_paraphrase_tier_is_safe_and_as_hard_as_heldout(paraphrase):
 
 
 def test_no_control_ever_fails(seen, heldout):
-    # Aptio's kill criterion K3, applied under both phrasings.
+    # A FAIL on correct work means the checker is not ready, under either phrasing.
     assert seen["controls"]["fails"] == 0
     assert heldout["controls"]["fails"] == 0
 
 
 def test_no_defect_is_ever_passed(seen, heldout):
-    # K2: the number no amount of coverage compensates for.
+    # A PASS on wrong work: the number no amount of coverage compensates for.
     assert seen["defects"]["unsafe_passes"] == 0
     assert heldout["defects"]["unsafe_passes"] == 0
     assert seen["defects"]["missed"] == 0
@@ -66,3 +66,9 @@ def test_reward_is_asymmetric():
     assert reward("FAIL", {"T1"}, label("FAIL")) == 1.0           # right verdict, right evidence
     assert reward("FAIL", {"T9"}, label("FAIL")) == 0.5           # right verdict, wrong evidence
     assert reward("REVIEW", {"T1"}, label("FAIL")) == 0.25        # flagged, not decided
+
+
+def test_train_split_holds_the_same_floors():
+    train = evaluate("train", 110)
+    assert train["controls"]["fails"] == 0
+    assert train["defects"]["unsafe_passes"] == 0

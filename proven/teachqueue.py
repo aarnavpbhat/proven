@@ -217,6 +217,7 @@ def load_runs(data_dir: Path | str) -> list[dict]:
 
 
 def find_run(data_dir: Path | str, key: str) -> dict | None:
+    """The stored run with this key, or None."""
     return next((r for r in load_runs(data_dir) if r["key"] == key), None)
 
 

@@ -9,10 +9,9 @@ vendor (does this invoice usually land in this account?).
 WHAT IS DECLARED, NOT INFERRED
 
 The chart of accounts — names and the aliases a writer may use for them — is
-supplied with the ledger. Aptio's consulting reconciler inferred relationships
-from column names and reached a measured precision of 0.0; the lesson carried
-here is that what an account is called is a fact someone states, never a guess
-the checker makes. `default_aliases()` exists only for an uploaded CSV that
+supplied with the ledger. A checker that infers what an account is from column
+names or wording manufactures findings out of its own guesses, so here what an
+account is called is a fact someone states, never a guess the checker makes. `default_aliases()` exists only for an uploaded CSV that
 carries no chart, and it is mechanical (the name, lower-cased and split on "&").
 """
 from __future__ import annotations
@@ -35,6 +34,7 @@ TOTAL_ALIASES = (
 
 @dataclass(frozen=True)
 class Transaction:
+    """One posted transaction. `amount` is positive for an expense, negative for a credit."""
     id: str
     date: str          # ISO date, "2026-10-14"
     account: str
@@ -56,6 +56,7 @@ class Transaction:
 
 @dataclass(frozen=True)
 class Account:
+    """An account in the chart, with the aliases a writer may use for it."""
     name: str
     aliases: tuple[str, ...] = ()
 
@@ -65,6 +66,7 @@ class Account:
 
 @dataclass(frozen=True)
 class Variance:
+    """An account's balance in the prior and current period, and the change between them."""
     prior: float
     current: float
 
@@ -123,6 +125,11 @@ def default_aliases(name: str) -> tuple[str, ...]:
 
 @dataclass
 class Ledger:
+    """A company's transactions, its chart of accounts, and the two periods being compared.
+
+    Validated on construction: every transaction must book to an account in the
+    chart, and transaction ids must be unique.
+    """
     entity: str
     prior_period: str      # "2026-09"
     current_period: str    # "2026-10"

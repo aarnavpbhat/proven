@@ -10,6 +10,7 @@ from pathlib import Path
 
 
 def parse(text: str) -> dict[str, str]:
+    """Read KEY=VALUE lines into a dict; blank lines and comments are skipped."""
     values: dict[str, str] = {}
     for raw in text.splitlines():
         line = raw.strip()

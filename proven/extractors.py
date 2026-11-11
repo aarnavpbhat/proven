@@ -16,6 +16,7 @@ NAMES = ("rules", "claude", "openweight")
 
 def build(name: str = "rules", *, model: str | None = None, budget: Budget | None = None,
           cache_dir: str | None = ".proven/cache"):
+    """Build the named extractor (rules, claude or an open-weight model), cached unless `cache_dir` is None."""
     if cache_dir == ".proven/cache":
         cache_dir = os.environ.get("PROVEN_CACHE_DIR") or cache_dir
     if name == "rules":

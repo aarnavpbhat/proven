@@ -62,6 +62,7 @@ class WorldRefused(ValueError):
 
 @dataclass
 class Report:
+    """What validation kept and dropped when a world was built."""
     slug: str
     accounts_kept: int = 0
     accounts_dropped: list[str] = field(default_factory=list)
@@ -220,6 +221,7 @@ def build(data: dict, role: str = "measure") -> tuple[World, Report]:
 
 
 def load(path: str | Path, role: str = "measure") -> World:
+    """Load one world file and build it for the given role."""
     return build(json.loads(Path(path).read_text(encoding="utf-8")), role)[0]
 
 

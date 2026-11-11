@@ -21,6 +21,7 @@ from proven.ledger import Ledger
 
 
 class CachedExtractor:
+    """Wraps an extractor and stores its proposals on disk, so a repeated close makes no request."""
     def __init__(self, inner, directory: str | Path = ".proven/cache"):
         self.inner = inner
         self.name = inner.name

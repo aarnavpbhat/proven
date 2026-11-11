@@ -6,6 +6,7 @@ dependency at all. That lazy import is the single allowed exception, and it is
 named here rather than tolerated silently.
 """
 import ast
+import re
 import sys
 from pathlib import Path
 
@@ -35,7 +36,19 @@ def test_only_stdlib_and_self():
     assert not offenders, offenders
 
 
-def test_proven_does_not_reach_into_the_aptio_repository():
+def test_every_public_function_and_class_is_documented():
+    missing = []
     for path in sorted(PACKAGE.glob("*.py")):
-        roots = {root for _node, root in imports(path)}
-        assert not roots & {"aptio", "core", "pipeline", "schemas", "storage", "providers"}, path
+        tree = ast.parse(path.read_text(encoding="utf-8"))
+        if ast.get_docstring(tree) is None:
+            missing.append(path.name)
+        missing += [f"{path.name}:{node.name}" for node in tree.body
+                    if isinstance(node, (ast.FunctionDef, ast.ClassDef))
+                    and not node.name.startswith("_") and ast.get_docstring(node) is None]
+    assert not missing, missing
+
+
+def test_package_and_pyproject_agree_on_the_version():
+    from proven import __version__
+    pyproject = (PACKAGE.parent / "pyproject.toml").read_text(encoding="utf-8")
+    assert re.search(r'^version = "([^"]+)"', pyproject, re.M).group(1) == __version__
