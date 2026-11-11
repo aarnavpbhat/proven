@@ -1,0 +1,42 @@
+{
+  "name": "proven-demo-v3",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "preview": "remotion studio src/index.ts",
+    "still": "remotion still src/index.ts Demo --concurrency=1",
+    "render": "remotion render src/index.ts Demo out/proven-demo-2min.mp4 --codec=h264 --concurrency=2",
+    "typecheck": "tsc --noEmit",
+    "purity": "tsx scripts/purity.ts",
+    "check-data": "tsx scripts/check-data.ts",
+    "contact-sheet": "tsx scripts/contact-sheet.ts",
+    "dead-time": "tsx scripts/dead-time.ts",
+    "text-check": "tsx scripts/text-check.ts",
+    "cut-check": "tsx scripts/cut-check.ts",
+    "frames": "tsx scripts/frames.ts",
+    "stills": "tsx scripts/stills.ts",
+    "checks": "npm run typecheck && npm run purity && npm run check-data",
+    "capture": "tsx scripts/capture-console.ts"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.537",
+    "@remotion/cli": "4.0.537",
+    "@remotion/google-fonts": "4.0.537",
+    "@remotion/layout-utils": "4.0.537",
+    "@remotion/renderer": "4.0.537",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.537"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "@types/pngjs": "6.0.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "playwright-core": "1.63.0",
+    "pngjs": "7.0.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}
