@@ -1,0 +1,825 @@
+{
+ "slug": "private-k-12-school",
+ "industry": "private K-12 school",
+ "entities": [
+  "Maplecrest Academies",
+  "Fairhaven Day School Group",
+  "Ridgeview Preparatory Schools",
+  "Lakeshore Learning Partners",
+  "Cedar Hollow Independent Schools"
+ ],
+ "accounts": [
+  {
+   "name": "Student Transportation",
+   "aliases": [
+    "busing",
+    "student transport",
+    "bus operations",
+    "bus costs",
+    "transportation spend"
+   ],
+   "narrative": [
+    "Busing",
+    "Student transport",
+    "Bus operations"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenline Coach Lines",
+     "base": 18500,
+     "memo": "Monthly contracted route service"
+    },
+    {
+     "vendor": "Pinnacle Fuel Supply",
+     "base": 6200,
+     "memo": "Diesel fuel card statement"
+    },
+    {
+     "vendor": "Roadwise Fleet Care",
+     "base": 3400,
+     "memo": "Scheduled bus inspections and oil service"
+    }
+   ],
+   "events": [
+    {
+     "key": "wheelchair_lift",
+     "vendor": "Roadwise Fleet Care",
+     "memos": [
+      "Wheelchair lift retrofit — hydraulic ramp install",
+      "Wheelchair lift retrofit — door frame rework"
+     ],
+     "cross_memo": "Wheelchair lift retrofit — compliance paperwork filing",
+     "plain": [
+      "the wheelchair lift retrofit",
+      "the hydraulic ramp install",
+      "the wheelchair lift project"
+     ],
+     "oblique": [
+      "making the buses accessible for students with mobility needs",
+      "the accessibility upgrade",
+      "modifying vehicles after a parent request",
+      "equipment so every rider can board",
+      "the disability access work on the older vehicles",
+      "the retrofit the district required",
+      "adapting the fleet for a newly enrolled student",
+      "a safety mandate for riders who cannot climb steps",
+      "the boarding assistance installation",
+      "the change that let a child join the afternoon run",
+      "the mobility accommodation",
+      "what the family's advocate pushed us to fund",
+      "modifying three vehicles for equal access",
+      "outfitting the rolling stock for a new enrollee",
+      "the inclusion work on our oldest units",
+      "the access improvements"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "snowroute",
+     "vendor": "Alpine Plowing Services",
+     "memos": [
+      "Snowroute contingency — private lot plowing",
+      "Snowroute contingency — salt spreading crew"
+     ],
+     "cross_memo": "Snowroute contingency — overtime for facilities crew",
+     "plain": [
+      "the snowroute contingency",
+      "the snowroute plowing",
+      "the snowroute salt crew"
+     ],
+     "oblique": [
+      "the January storm cleanup",
+      "clearing the pickup areas after the blizzard",
+      "winter weather response",
+      "keeping the campus loop passable",
+      "the cost of the heavy snowfall",
+      "emergency clearing so classes could open",
+      "an unusually harsh cold season",
+      "removing ice from the departure zones",
+      "the freeze that closed the access road",
+      "hiring outside help during the storm",
+      "what the weather forced us to buy",
+      "extra work during the deep freeze",
+      "getting the lanes open before the morning arrival",
+      "a bad stretch of winter",
+      "the blizzard response",
+      "clearing drifts so families could drop off"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Instructional Materials",
+   "aliases": [
+    "textbooks",
+    "curriculum materials",
+    "classroom supplies",
+    "course materials",
+    "learning resources"
+   ],
+   "narrative": [
+    "Textbooks",
+    "Curriculum materials",
+    "Classroom supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Scholastic Source Distributors",
+     "base": 9800,
+     "memo": "Standing order for classroom reading sets"
+    },
+    {
+     "vendor": "Lumen Education Supply",
+     "base": 5600,
+     "memo": "Consumable workbooks and lab kits"
+    },
+    {
+     "vendor": "Penmark Paper Co",
+     "base": 2100,
+     "memo": "Copy paper and art stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "mathadoption",
+     "vendor": "Lumen Education Supply",
+     "memos": [
+      "Mathematics adoption — grade 6 to 8 student editions",
+      "Mathematics adoption — teacher licenses"
+     ],
+     "cross_memo": "Mathematics adoption — trainer stipend",
+     "plain": [
+      "the mathematics adoption",
+      "the mathematics adoption editions",
+      "the mathematics adoption licenses"
+     ],
+     "oblique": [
+      "replacing the old numeracy program",
+      "the board-approved switch for middle grades",
+      "new books after the review committee decided",
+      "a full refresh of what upper grades use for figures",
+      "the overhaul of how we teach quantitative skills",
+      "the program the department head championed",
+      "cycle replacement of aging sets",
+      "the new pedagogy rollout",
+      "swapping out the series that was seven years old",
+      "the purchase that followed the curriculum vote",
+      "what the faculty chose after piloting alternatives",
+      "stocking every adolescent with updated volumes",
+      "the new sequence for algebra readiness",
+      "the refresh we planned over the summer",
+      "upgrading what students open each morning",
+      "the large purchase before fall"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "scienceexpo",
+     "vendor": "Vertex Scientific Outfitters",
+     "memos": [
+      "Science expo — microscope slide sets",
+      "Science expo — safety goggles and aprons"
+     ],
+     "cross_memo": "Science expo — judging panel lunch",
+     "plain": [
+      "the science expo",
+      "the science expo slides",
+      "the science expo safety gear"
+     ],
+     "oblique": [
+      "the annual showcase of student experiments",
+      "gear for the spring exhibition",
+      "the event where families view projects",
+      "stocking up for the hands-on fair",
+      "the exhibition our fifth graders prepare for",
+      "supplies for the competition weekend",
+      "the evening open to the community",
+      "what the lab teachers requested for demonstrations",
+      "preparing the gym for student displays",
+      "the inquiry festival",
+      "extra items for young investigators",
+      "the showcase that draws visiting judges",
+      "what parents see on display night",
+      "the fair tied to our accreditation visit",
+      "the hands-on exhibit program",
+      "materials for the end of year display"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Faculty Professional Development",
+   "aliases": [
+    "teacher training",
+    "pd spend",
+    "faculty development",
+    "staff training",
+    "teacher development"
+   ],
+   "narrative": [
+    "Teacher training",
+    "PD spend",
+    "Faculty development"
+   ],
+   "recurring": [
+    {
+     "vendor": "Educator Growth Institute",
+     "base": 4800,
+     "memo": "Monthly coaching subscription"
+    },
+    {
+     "vendor": "Summit Peer Network",
+     "base": 1500,
+     "memo": "Membership dues for consortium"
+    }
+   ],
+   "events": [
+    {
+     "key": "accreditreview",
+     "vendor": "Educator Growth Institute",
+     "memos": [
+      "Accreditation self-study — facilitator workshop",
+      "Accreditation self-study — evaluator prep sessions"
+     ],
+     "cross_memo": "Accreditation self-study — binder printing",
+     "plain": [
+      "the accreditation self-study",
+      "the accreditation self-study workshop",
+      "the accreditation self-study prep"
+     ],
+     "oblique": [
+      "the regional quality audit",
+      "preparing for the visiting evaluators",
+      "the five-year compliance cycle",
+      "getting our credentials renewed",
+      "the external inspection of our academic standards",
+      "what the review team asked us to document",
+      "the sessions that readied faculty for questioning",
+      "the certification we cannot skip",
+      "a once-in-a-cycle review of our program",
+      "coaching for the site team",
+      "the quality assurance milestone",
+      "the outside assessors coming in the spring",
+      "ensuring we keep our standing with the regional body",
+      "the periodic recognition process",
+      "the staff sessions required before the panel arrives",
+      "meeting the benchmark for continued approval"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "retreatkeynote",
+     "vendor": "Harborview Conference Center",
+     "memos": [
+      "Leadership retreat — two night lodging block",
+      "Leadership retreat — keynote speaker fee"
+     ],
+     "cross_memo": "Leadership retreat — shuttle van rental",
+     "plain": [
+      "the leadership retreat",
+      "the leadership retreat lodging",
+      "the leadership retreat speaker"
+     ],
+     "oblique": [
+      "the offsite gathering for department heads",
+      "a two day strategy session out of town",
+      "the planning getaway for administrators",
+      "bringing in a motivational headliner",
+      "the off campus summit for our senior team",
+      "the annual outing for the principals",
+      "an overnight meeting by the coast",
+      "hosting the management group away from the building",
+      "the visionary talk we booked",
+      "the time set aside for goal setting",
+      "the gathering where we mapped next year",
+      "a pricey week for the executive group",
+      "the convening of the head of school's cabinet",
+      "booking rooms for our top managers",
+      "the yearly planning excursion",
+      "what the board approved for senior staff bonding"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Athletics and Extracurriculars",
+   "aliases": [
+    "athletics",
+    "sports program",
+    "extracurricular spend",
+    "team costs",
+    "activities budget"
+   ],
+   "narrative": [
+    "Athletics",
+    "Sports program",
+    "Activities budget"
+   ],
+   "recurring": [
+    {
+     "vendor": "Varsity Edge Sports Supply",
+     "base": 4200,
+     "memo": "Equipment replenishment and uniforms"
+    },
+    {
+     "vendor": "Metro Officials Association",
+     "base": 2800,
+     "memo": "Game referees and scorekeepers"
+    },
+    {
+     "vendor": "Clubhouse Arts Collective",
+     "base": 1900,
+     "memo": "After school club instructors"
+    }
+   ],
+   "events": [
+    {
+     "key": "turfresurface",
+     "vendor": "Varsity Edge Sports Supply",
+     "memos": [
+      "Turf resurfacing — infill replacement",
+      "Turf resurfacing — seam repair labor"
+     ],
+     "cross_memo": "Turf resurfacing — drainage inspection",
+     "plain": [
+      "the turf resurfacing",
+      "the turf resurfacing infill",
+      "the turf resurfacing seam work"
+     ],
+     "oblique": [
+      "restoring the playing field",
+      "the worn surface the coaches complained about",
+      "fixing the field before the season",
+      "safety work on the football grounds",
+      "getting the artificial grass back to standard",
+      "what the insurer flagged on the stadium",
+      "a refurbishment of our main pitch",
+      "the project that closed the field for two weeks",
+      "the outdoor facility renewal",
+      "making the ground safe for varsity matches",
+      "the repair that prevented injuries",
+      "the fall prep on the athletic grounds",
+      "upgrades our league inspector required",
+      "bringing the home field up to code",
+      "the big ticket item on the sports side",
+      "the multi-year wear catching up with us"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "tournamenthost",
+     "vendor": "Lakeside Event Rentals",
+     "memos": [
+      "Regional invitational — tent and staging rental",
+      "Regional invitational — concession permits"
+     ],
+     "cross_memo": "Regional invitational — hospitality suite catering",
+     "plain": [
+      "the regional invitational",
+      "the regional invitational tents",
+      "the regional invitational permits"
+     ],
+     "oblique": [
+      "hosting visiting schools for a weekend",
+      "the multi team competition we organized",
+      "opening our grounds to rival programs",
+      "the championship weekend at home",
+      "setting up for crowds from other districts",
+      "what it cost to be the host campus",
+      "the spring tournament we won the bid for",
+      "accommodating hundreds of visiting families",
+      "the big weekend of competition",
+      "a sporting event on our campus",
+      "staging for out of town squads",
+      "the showcase tied to league standings",
+      "providing temporary structures for spectators",
+      "the three day event with brackets",
+      "the hosting duty rotated to us",
+      "bringing in teams from across the state"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Student Meals and Food Service",
+   "aliases": [
+    "food service",
+    "cafeteria costs",
+    "lunch program",
+    "meal program",
+    "dining services"
+   ],
+   "narrative": [
+    "Food service",
+    "Cafeteria costs",
+    "Lunch program"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harvest Table Catering",
+     "base": 26000,
+     "memo": "Daily lunch service contract"
+    },
+    {
+     "vendor": "Fresh Route Produce",
+     "base": 7400,
+     "memo": "Weekly produce deliveries"
+    },
+    {
+     "vendor": "Cascade Dairy Supply",
+     "base": 3100,
+     "memo": "Milk and yogurt standing order"
+    }
+   ],
+   "events": [
+    {
+     "key": "allergenprotocol",
+     "vendor": "Harvest Table Catering",
+     "memos": [
+      "Allergen safeguards — dedicated prep station",
+      "Allergen safeguards — staff certification course"
+     ],
+     "cross_memo": "Allergen safeguards — nurse signage and kits",
+     "plain": [
+      "the allergen safeguards",
+      "the allergen safeguards prep station",
+      "the allergen safeguards certification"
+     ],
+     "oblique": [
+      "the kitchen changes after a student reaction",
+      "separating certain ingredients from the rest",
+      "protecting children with dietary restrictions",
+      "what the health inspector asked us to add",
+      "a response to a frightening incident at lunch",
+      "the new rules for handling peanut exposure",
+      "training the line staff on cross contact",
+      "building a protected area in the kitchen",
+      "the parent coalition's demand for safer meals",
+      "making sure sensitive kids can eat safely",
+      "the corrective plan after the close call",
+      "the investment in medical readiness",
+      "the upgrade that follows the district guideline",
+      "a precaution for children with serious reactions",
+      "the equipment and instruction for safe serving",
+      "how we answered the families who complained"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "gardenpilot",
+     "vendor": "Sprout Collective Farms",
+     "memos": [
+      "Garden pilot — raised bed construction",
+      "Garden pilot — seedling and soil delivery"
+     ],
+     "cross_memo": "Garden pilot — student apron order",
+     "plain": [
+      "the garden pilot",
+      "the garden pilot raised beds",
+      "the garden pilot seedlings"
+     ],
+     "oblique": [
+      "growing vegetables on campus",
+      "the hands-on nutrition experiment",
+      "a farm to table trial with students",
+      "the outdoor planting initiative",
+      "bringing agriculture into the curriculum",
+      "what the wellness committee proposed",
+      "produce the kids harvest themselves",
+      "the green space project near the kitchen",
+      "a pilot connecting lunch to learning",
+      "the new plots behind the cafeteria",
+      "starting a school farm",
+      "homegrown ingredients for our salad bar",
+      "the grant-matched outdoor initiative",
+      "teaching where food comes from",
+      "the planting effort tied to science classes",
+      "the sustainable sourcing trial"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Student Information and Learning Technology",
+   "aliases": [
+    "edtech",
+    "student technology",
+    "learning platforms",
+    "classroom tech",
+    "device program"
+   ],
+   "narrative": [
+    "Edtech",
+    "Student technology",
+    "Learning platforms"
+   ],
+   "recurring": [
+    {
+     "vendor": "Classwire Systems",
+     "base": 14500,
+     "memo": "Learning management platform subscription"
+    },
+    {
+     "vendor": "Chromebase Leasing",
+     "base": 9600,
+     "memo": "Student laptop lease payments"
+    },
+    {
+     "vendor": "NetSure Managed IT",
+     "base": 5200,
+     "memo": "Help desk and network monitoring"
+    }
+   ],
+   "events": [
+    {
+     "key": "wifidensity",
+     "vendor": "NetSure Managed IT",
+     "memos": [
+      "Wireless densification — access point install",
+      "Wireless densification — cabling labor"
+     ],
+     "cross_memo": "Wireless densification — ceiling tile replacement",
+     "plain": [
+      "the wireless densification",
+      "the wireless densification install",
+      "the wireless densification cabling"
+     ],
+     "oblique": [
+      "fixing the dead zones in classrooms",
+      "the signal upgrade after online testing failed",
+      "making connectivity reliable in every room",
+      "what we did after teachers complained about dropped sessions",
+      "the buildout supporting assessments for the whole grade",
+      "expanding coverage so tablets work everywhere",
+      "the infrastructure push before the state exams",
+      "improving reception in the older wing",
+      "a response to overloaded airwaves",
+      "the network overhaul the technology director requested",
+      "strengthening the backbone for one to one devices",
+      "the project that stopped the lag",
+      "getting every hallway online",
+      "readying the buildings for heavier traffic",
+      "the capacity fix for a larger student body",
+      "the connectivity improvements"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "dataprivacy",
+     "vendor": "Lockstep Security Advisors",
+     "memos": [
+      "Privacy audit — vulnerability assessment",
+      "Privacy audit — remediation consulting"
+     ],
+     "cross_memo": "Privacy audit — legal review of vendor contracts",
+     "plain": [
+      "the privacy audit",
+      "the privacy audit assessment",
+      "the privacy audit consulting"
+     ],
+     "oblique": [
+      "protecting student records after the industry breach news",
+      "the outside review of how we guard information",
+      "a response to the insurer's questionnaire",
+      "closing the gaps found in a penetration test",
+      "what the board demanded after a phishing scare",
+      "hiring experts to test our defenses",
+      "meeting new state rules on children's data",
+      "tightening who can see grades and health files",
+      "the cyber readiness effort",
+      "a precaution against ransomware",
+      "the independent check of our systems",
+      "strengthening safeguards on enrollment files",
+      "complying with the new regulation",
+      "the review that followed a near miss",
+      "securing sensitive family information",
+      "getting ahead of an incident"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Campus Facilities and Grounds",
+   "aliases": [
+    "facilities",
+    "building maintenance",
+    "campus upkeep",
+    "grounds",
+    "plant operations"
+   ],
+   "narrative": [
+    "Facilities",
+    "Building maintenance",
+    "Campus upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "BrightClean Janitorial",
+     "base": 15800,
+     "memo": "Nightly custodial services"
+    },
+    {
+     "vendor": "Evergreen Landscape Co",
+     "base": 4300,
+     "memo": "Mowing and grounds contract"
+    },
+    {
+     "vendor": "Summit HVAC Services",
+     "base": 3900,
+     "memo": "Quarterly heating and cooling service plan"
+    }
+   ],
+   "events": [
+    {
+     "key": "roofleak",
+     "vendor": "Summit HVAC Services",
+     "memos": [
+      "Gymnasium roof leak — emergency membrane patch",
+      "Gymnasium roof leak — water extraction"
+     ],
+     "cross_memo": "Gymnasium roof leak — flooring dehumidifiers",
+     "plain": [
+      "the gymnasium roof leak",
+      "the gymnasium roof patch",
+      "the gymnasium roof water extraction"
+     ],
+     "oblique": [
+      "the storm damage over the sports hall",
+      "fixing the ceiling after the downpour",
+      "urgent work when rain came through",
+      "the overhead failure above the basketball court",
+      "drying out after the flood",
+      "the unplanned repair that closed the arena",
+      "what the heavy rainfall did to our building",
+      "repairs after water pooled on the hardwood",
+      "the emergency call during the weekend",
+      "an unexpected breach in the upper covering",
+      "the mitigation after the soaking",
+      "saving the court surface from further harm",
+      "the sudden call-out after the cloudburst",
+      "the leak that interrupted physical education",
+      "cleanup from the indoor flooding",
+      "the weather related building emergency"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "playgroundsafety",
+     "vendor": "KidSafe Installations",
+     "memos": [
+      "Playground safety renovation — surfacing replacement",
+      "Playground safety renovation — swing set anchoring"
+     ],
+     "cross_memo": "Playground safety renovation — permit and inspection fee",
+     "plain": [
+      "the playground safety renovation",
+      "the playground safety surfacing",
+      "the playground safety anchoring"
+     ],
+     "oblique": [
+      "modernizing the recess area for younger children",
+      "the update after the insurance inspector's report",
+      "softer ground under the climbing equipment",
+      "what the lower school principal lobbied for",
+      "reducing injuries at the elementary yard",
+      "replacing play structures that had worn out",
+      "the upgrade to outdoor equipment for little ones",
+      "a project the parent association helped fund",
+      "bringing the kindergarten yard up to standard",
+      "new fall cushioning where kids run",
+      "the refresh of the early grades outdoor space",
+      "the fix that followed a scraped knee complaint",
+      "compliance work on equipment for tots",
+      "rebuilding where the youngest play",
+      "the safety driven refurbishment of the yard",
+      "the recess area makeover"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Student Services and Enrollment",
+   "aliases": [
+    "admissions",
+    "enrollment marketing",
+    "student services",
+    "recruiting spend",
+    "family outreach"
+   ],
+   "narrative": [
+    "Admissions",
+    "Enrollment marketing",
+    "Student services"
+   ],
+   "recurring": [
+    {
+     "vendor": "Enrollwise CRM",
+     "base": 3600,
+     "memo": "Admissions database subscription"
+    },
+    {
+     "vendor": "Bridgepoint Counseling Partners",
+     "base": 8200,
+     "memo": "Contracted counseling hours"
+    },
+    {
+     "vendor": "Northstar Print and Mail",
+     "base": 2400,
+     "memo": "Brochures and mailing services"
+    }
+   ],
+   "events": [
+    {
+     "key": "openhouse",
+     "vendor": "Northstar Print and Mail",
+     "memos": [
+      "Fall open house — welcome banners and signage",
+      "Fall open house — printed viewbooks"
+     ],
+     "cross_memo": "Fall open house — tour guide stipends",
+     "plain": [
+      "the fall open house",
+      "the fall open house banners",
+      "the fall open house viewbooks"
+     ],
+     "oblique": [
+      "the campus tour event for prospective families",
+      "welcoming new applicants on a Saturday",
+      "the day we show off the school",
+      "recruitment drive aimed at kindergarten parents",
+      "materials handed to visitors considering enrollment",
+      "the evening where staff pitch the program",
+      "what we spent to attract fresh applicants",
+      "the marketing push before application season",
+      "the showcase for curious households",
+      "displaying our classrooms to the public",
+      "the effort to fill next year's seats",
+      "the invitation only gathering for applicants",
+      "the annual pitch to families on the fence",
+      "first impressions for people touring",
+      "the outreach event that anchors our funnel",
+      "getting enrollment numbers up"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "scholarshipaudit",
+     "vendor": "Clarity Financial Aid Services",
+     "memos": [
+      "Tuition assistance review — need analysis software",
+      "Tuition assistance review — third party verification"
+     ],
+     "cross_memo": "Tuition assistance review — appeals committee stipend",
+     "plain": [
+      "the tuition assistance review",
+      "the tuition assistance analysis software",
+      "the tuition assistance verification"
+     ],
+     "oblique": [
+      "evaluating which families qualify for discounts",
+      "the outside check on household income claims",
+      "a fairer method for awarding aid",
+      "what the board requested after complaints of inconsistency",
+      "the new process to decide grants",
+      "independent validation of applicants' finances",
+      "the reform of our need based awards",
+      "bringing in specialists to size up hardship cases",
+      "the policy overhaul on discounts",
+      "a tool for ranking family circumstances",
+      "the support that stabilizes our discount budget",
+      "what the development office suggested for equity",
+      "checking the paperwork families submit",
+      "the study of who gets help",
+      "the improved way of assessing eligibility",
+      "a response to the audit committee's recommendation"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

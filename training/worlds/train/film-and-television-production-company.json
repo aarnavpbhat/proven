@@ -1,0 +1,693 @@
+{
+ "slug": "film-and-television-production-company",
+ "industry": "film and television production company",
+ "entities": [
+  "Harborlight Pictures LLC",
+  "Northfield Story Works Inc",
+  "Copperline Studios Ltd",
+  "Blue Heron Productions",
+  "Meridian Frame Entertainment"
+ ],
+ "accounts": [
+  {
+   "name": "Camera & Lighting Equipment Rental",
+   "aliases": [
+    "camera rentals",
+    "gear rental",
+    "camera and lighting spend",
+    "equipment rentals",
+    "grip and lighting"
+   ],
+   "narrative": [
+    "Camera rentals",
+    "Gear rental",
+    "Equipment rentals"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sunset Optics Rental House",
+     "base": 18500,
+     "memo": "Camera package rental PO 4410"
+    },
+    {
+     "vendor": "Brightline Grip & Electric",
+     "base": 12200,
+     "memo": "Grip and electric truck rental WO 2217"
+    }
+   ],
+   "events": [
+    {
+     "key": "anamorphic",
+     "vendor": "Sunset Optics Rental House",
+     "memos": [
+      "Anamorphic lens set — special order PO 4488",
+      "Anamorphic lens set — calibration fee"
+     ],
+     "cross_memo": "Anamorphic lens set — insurance rider",
+     "plain": [
+      "the anamorphic lens set",
+      "anamorphic lens set costs",
+      "the anamorphic lens calibration"
+     ],
+     "oblique": [
+      "the widescreen glass the director insisted on",
+      "the vintage cinema optics",
+      "special glass for the desert sequences",
+      "the look the director wanted for the flashbacks",
+      "hand-picked lenses flown in from overseas",
+      "the stretched-frame look",
+      "a last-minute upgrade to the main unit kit",
+      "the boutique lens order",
+      "what the cinematographer asked us to rent",
+      "lenses with the oval flares",
+      "the premium glass upgrade",
+      "an expensive swap for the hero scenes",
+      "the director's visual style request",
+      "imported optics for the second unit",
+      "the pricey wide-format glass",
+      "specialty glass for the finale shoot"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "nightstudio",
+     "vendor": "Redwood Luminary Partners",
+     "memos": [
+      "Night exterior balloon lights WO 9031",
+      "Night exterior balloon lights — generator hire"
+     ],
+     "cross_memo": "Night exterior balloon lights — street permit",
+     "plain": [
+      "the night exterior balloon lights",
+      "night exterior balloon light hire",
+      "the balloon lights generator hire"
+     ],
+     "oblique": [
+      "lighting up the entire backlot after dark",
+      "the big overnight street scene",
+      "soft overhead glow for the chase sequence",
+      "illuminating the city block for the climax",
+      "the large floating lamps",
+      "the all-night outdoor shoot setup",
+      "lighting an entire intersection",
+      "the huge after-sunset sequence",
+      "what it took to shoot the riot scene",
+      "the giant lamps hovering over the set",
+      "a full block of artificial moonlight",
+      "the overnight location work",
+      "lights for the late-shift crowd scenes",
+      "the nocturnal street shoot",
+      "helium-lifted fixtures for the downtown scene",
+      "the sequence that ran until sunrise"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Location Fees & Permits",
+   "aliases": [
+    "location fees",
+    "permits",
+    "location costs",
+    "shooting permits",
+    "site fees"
+   ],
+   "narrative": [
+    "Location fees",
+    "Permits",
+    "Location costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "CityFilm Permit Office",
+     "base": 6200,
+     "memo": "Monthly film permit fees"
+    },
+    {
+     "vendor": "Oakridge Property Holdings",
+     "base": 9800,
+     "memo": "Stage lot facility fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "lighthouse",
+     "vendor": "Oakridge Property Holdings",
+     "memos": [
+      "Lighthouse exterior buyout — Cape Marrow",
+      "Lighthouse exterior buyout — damage deposit"
+     ],
+     "cross_memo": "Lighthouse exterior buyout — catering tent rental",
+     "plain": [
+      "the lighthouse exterior buyout",
+      "lighthouse exterior buyout fees",
+      "the lighthouse buyout deposit"
+     ],
+     "oblique": [
+      "closing the whole coastline for three days",
+      "renting out the remote shoreline",
+      "exclusive access to the seaside landmark",
+      "the cliffside setting we locked up",
+      "keeping tourists away from the shoot",
+      "the windswept shoreline we took over",
+      "paying to have the headland to ourselves",
+      "the ocean-view scene in the finale",
+      "the picturesque cove booking",
+      "what the owners charged for exclusivity",
+      "the signature coastal backdrop",
+      "our trip to the far peninsula",
+      "the old navigation tower shoot",
+      "the beacon on the rocks",
+      "privacy for the storm sequence",
+      "the remote seaside weekend"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "subway",
+     "vendor": "Metro Transit Authority Services",
+     "memos": [
+      "Platform filming access — Line 4 overnight",
+      "Platform filming access — union escort hours"
+     ],
+     "cross_memo": "Platform filming access — crowd extras shuttle",
+     "plain": [
+      "the platform filming access",
+      "platform filming access charges",
+      "the union escort hours"
+     ],
+     "oblique": [
+      "shooting underground after the trains stop",
+      "the commuter rail scene",
+      "use of the city's underground network",
+      "the late-night tunnel sequence",
+      "working in a public transit space",
+      "the municipal agency's charges for the chase",
+      "getting the trains to hold while we rolled",
+      "our rush-hour recreation",
+      "the scene set among turnstiles",
+      "the transit authority's invoice",
+      "shoot time on the rails",
+      "what the city billed to film below street level",
+      "the overnight commuter hub work",
+      "the busy station scene",
+      "tracks and tiles at two in the morning",
+      "closing the stop for our crew"
+     ],
+     "low": 10000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Cast & Talent Fees",
+   "aliases": [
+    "cast fees",
+    "talent costs",
+    "actor payroll",
+    "talent spend",
+    "above-the-line cast"
+   ],
+   "narrative": [
+    "Cast fees",
+    "Talent costs",
+    "Talent spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Entertainment Partners Payroll",
+     "base": 28000,
+     "memo": "Weekly cast payroll processing"
+    },
+    {
+     "vendor": "Starline Talent Services",
+     "base": 14500,
+     "memo": "Principal cast scale fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "cameo",
+     "vendor": "Starline Talent Services",
+     "memos": [
+      "Guest cameo appearance — Mercer day rate",
+      "Guest cameo appearance — first class travel rider"
+     ],
+     "cross_memo": "Guest cameo appearance — security detail",
+     "plain": [
+      "the guest cameo appearance",
+      "guest cameo appearance fees",
+      "the cameo appearance rider"
+     ],
+     "oblique": [
+      "a famous face dropping in for a day",
+      "the surprise celebrity walk-on",
+      "an A-list name for one scene",
+      "a headline name we booked for a day",
+      "the star who showed up for the party scene",
+      "a big name for a brief appearance",
+      "the marquee performer's one-day stint",
+      "the famous visitor on set",
+      "an award winner's quick shoot",
+      "the publicity-friendly booking",
+      "the well-known actor we flew in",
+      "the high-profile walk-through",
+      "a veteran name for the finale",
+      "the short-notice celebrity gig",
+      "the headline guest",
+      "an iconic performer's single day"
+     ],
+     "low": 25000,
+     "high": 40000
+    },
+    {
+     "key": "stunt",
+     "vendor": "Ironwood Action Coordinators",
+     "memos": [
+      "Fall rig stunt double — WO 7720",
+      "Fall rig stunt double — medic standby"
+     ],
+     "cross_memo": "Fall rig stunt double — wire harness rental",
+     "plain": [
+      "the fall rig stunt double",
+      "fall rig stunt double fees",
+      "the stunt double medic standby"
+     ],
+     "oblique": [
+      "the rooftop plunge sequence",
+      "hiring a replacement for the dangerous jump",
+      "the risky leap off the building",
+      "the action performer for the high drop",
+      "the professional who took the hits",
+      "paying for someone to fall safely",
+      "the dangerous sequence in the climax",
+      "the body double for the daring scenes",
+      "the specialists keeping our lead safe",
+      "what the plunge cost",
+      "the thrill sequence performers",
+      "a trained professional for the plummet",
+      "the stand-in for the daredevil shots",
+      "the airborne tumble work",
+      "the people who do our falling",
+      "the high-risk scene crew"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Post-Production & Editing",
+   "aliases": [
+    "post production",
+    "editing costs",
+    "post spend",
+    "finishing costs",
+    "editorial and post"
+   ],
+   "narrative": [
+    "Post production",
+    "Editing costs",
+    "Finishing costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cutroom Editorial Services",
+     "base": 16000,
+     "memo": "Offline editorial suite hire"
+    },
+    {
+     "vendor": "Soundstage Mix Facility",
+     "base": 11500,
+     "memo": "Audio post mixing hours"
+    }
+   ],
+   "events": [
+    {
+     "key": "reshoot",
+     "vendor": "Cutroom Editorial Services",
+     "memos": [
+      "Pickup reshoot cut — emergency turnaround",
+      "Pickup reshoot cut — weekend overtime"
+     ],
+     "cross_memo": "Pickup reshoot cut — courier drives",
+     "plain": [
+      "the pickup reshoot cut",
+      "pickup reshoot cut turnaround",
+      "the pickup reshoot overtime"
+     ],
+     "oblique": [
+      "fixing the ending after the test screening",
+      "the re-edit the studio demanded",
+      "rushing the revised conclusion",
+      "extra work after the early audience feedback",
+      "the new footage we had to integrate",
+      "reworking the third act on short notice",
+      "the changes requested by the network",
+      "cutting in the added scenes",
+      "the late fix to the final reel",
+      "the extra weekend work on the finale",
+      "an urgent redo for the premiere",
+      "the push to meet the delivery date",
+      "stitching in what we filmed later",
+      "the studio's notes on the last act",
+      "the revised ending",
+      "making the new scenes fit"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "vfxdragon",
+     "vendor": "Pixelforge Visual Effects",
+     "memos": [
+      "Creature composite shots — batch 3 PO 5512",
+      "Creature composite shots — render farm hours"
+     ],
+     "cross_memo": "Creature composite shots — reference scan session",
+     "plain": [
+      "the creature composite shots",
+      "creature composite shot renders",
+      "the creature composite batch"
+     ],
+     "oblique": [
+      "the computer-generated monster work",
+      "digital beast animation",
+      "the fantasy sequences added in the computer",
+      "bringing the imaginary animal to life",
+      "the heavy rendering for the big battle",
+      "virtual character work",
+      "the pixel artists' monster scenes",
+      "the elaborate screen magic",
+      "the computer-made menace",
+      "the largest graphics order of the season",
+      "what the effects house billed for the finale",
+      "digital wildlife for the third act",
+      "the mythical animal sequences",
+      "processing power for the fantasy scenes",
+      "the outsourced digital artistry",
+      "artists building our imaginary foe"
+     ],
+     "low": 22000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Set Construction & Art Department",
+   "aliases": [
+    "set construction",
+    "art department",
+    "set build costs",
+    "construction spend",
+    "scenic and props"
+   ],
+   "narrative": [
+    "Set construction",
+    "Art department",
+    "Set build costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Anvil Scenic Fabrication",
+     "base": 19000,
+     "memo": "Scenic carpentry labor PO 3301"
+    },
+    {
+     "vendor": "Prop House Collective",
+     "base": 7400,
+     "memo": "Prop purchases and rentals"
+    }
+   ],
+   "events": [
+    {
+     "key": "submarine",
+     "vendor": "Anvil Scenic Fabrication",
+     "memos": [
+      "Submarine interior set — hull panels WO 8814",
+      "Submarine interior set — gimbal base"
+     ],
+     "cross_memo": "Submarine interior set — crane move",
+     "plain": [
+      "the submarine interior set",
+      "submarine interior set panels",
+      "the submarine gimbal base"
+     ],
+     "oblique": [
+      "the underwater vessel build",
+      "the cramped steel corridor we constructed",
+      "the vessel that rocks on hydraulics",
+      "the war movie's main interior",
+      "the sea-bound craft interior",
+      "the tilting claustrophobic space",
+      "a full-size boat cabin",
+      "the naval stage construction",
+      "the rolling hull scenes",
+      "the big metal cylinder on the stage",
+      "the below-decks sequence",
+      "the oceangoing vehicle recreation",
+      "the tube-shaped build",
+      "the claustrophobic thriller setting",
+      "what we built for the deep-sea chapter",
+      "the machine-operated pitching room"
+     ],
+     "low": 24000,
+     "high": 40000
+    },
+    {
+     "key": "fireburn",
+     "vendor": "Phoenix Pyro Specialists",
+     "memos": [
+      "Controlled burn farmhouse — WO 6102",
+      "Controlled burn farmhouse — fire marshal standby"
+     ],
+     "cross_memo": "Controlled burn farmhouse — rebuild materials",
+     "plain": [
+      "the controlled burn farmhouse",
+      "controlled burn farmhouse costs",
+      "the farmhouse fire marshal standby"
+     ],
+     "oblique": [
+      "torching the rural building on camera",
+      "the blaze we staged in the countryside",
+      "building something just to set it alight",
+      "the old homestead that goes up in flames",
+      "the safe inferno",
+      "the dramatic ending of the countryside house",
+      "the sequence that destroys our own construction",
+      "the flames in the second act",
+      "the pyrotechnic spectacle",
+      "paying firefighters to watch us light it",
+      "the smoke-filled agricultural scene",
+      "a purposeful blaze",
+      "the burning set",
+      "the rural conflagration shot",
+      "specialists who handle the flames",
+      "the one-take destruction scene"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Wardrobe & Makeup",
+   "aliases": [
+    "wardrobe",
+    "costume costs",
+    "makeup and hair",
+    "wardrobe spend",
+    "costume department"
+   ],
+   "narrative": [
+    "Wardrobe",
+    "Costume costs",
+    "Wardrobe spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Threadworks Costume Rentals",
+     "base": 8600,
+     "memo": "Costume rental and alterations"
+    },
+    {
+     "vendor": "Glamour Lab Makeup Supply",
+     "base": 4200,
+     "memo": "Makeup and hair supplies"
+    }
+   ],
+   "events": [
+    {
+     "key": "armor",
+     "vendor": "Threadworks Costume Rentals",
+     "memos": [
+      "Medieval plate armor — custom fitting PO 6620",
+      "Medieval plate armor — duplicate stunt sets"
+     ],
+     "cross_memo": "Medieval plate armor — armorer on set",
+     "plain": [
+      "the medieval plate armor",
+      "medieval plate armor fittings",
+      "the medieval armor duplicate sets"
+     ],
+     "oblique": [
+      "metal outfits for the knights",
+      "the battle gear for the army",
+      "period combat attire",
+      "the shining suits for the soldiers",
+      "outfitting the warriors in steel",
+      "costumes that clank",
+      "the historic fighting uniforms",
+      "protective outfits for the war scenes",
+      "the heavy suits for the cavalry",
+      "gear for the kingdom's fighters",
+      "the castle-era wardrobe",
+      "the tin-can look for the extras",
+      "the age-of-chivalry outfitting",
+      "clothing for the siege sequences",
+      "fitted metal for the lead actors",
+      "the crusader-style kit"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "prosthetics",
+     "vendor": "Latex Alchemy Studio",
+     "memos": [
+      "Zombie prosthetic appliances — 40 extras",
+      "Zombie prosthetic appliances — application crew"
+     ],
+     "cross_memo": "Zombie prosthetic appliances — silicone molds",
+     "plain": [
+      "the zombie prosthetic appliances",
+      "zombie prosthetic appliance application",
+      "the zombie prosthetic crew"
+     ],
+     "oblique": [
+      "turning the background actors into the undead",
+      "the gory transformations",
+      "the horror scenes' makeup effects",
+      "creature skin work",
+      "the rotting faces",
+      "special effects for the crowd",
+      "hours in the makeup chair for the extras",
+      "the walking-corpse look",
+      "the rubber faces",
+      "the scary character design work",
+      "the grisly make-overs",
+      "extras made to look dead",
+      "the monster makeover crew",
+      "the ghoulish extras",
+      "the specialty skin and gore",
+      "the nightmare faces"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Catering & Craft Services",
+   "aliases": [
+    "catering",
+    "craft services",
+    "set meals",
+    "crew food",
+    "craft service spend"
+   ],
+   "narrative": [
+    "Catering",
+    "Craft services",
+    "Crew food"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hearthside Set Catering",
+     "base": 15500,
+     "memo": "Daily crew meals PO 1190"
+    },
+    {
+     "vendor": "Snackwagon Craft Services",
+     "base": 5800,
+     "memo": "Craft service table supplies"
+    }
+   ],
+   "events": [
+    {
+     "key": "desertmeals",
+     "vendor": "Hearthside Set Catering",
+     "memos": [
+      "Remote basecamp feeding — Mojave unit",
+      "Remote basecamp feeding — water tanker haul"
+     ],
+     "cross_memo": "Remote basecamp feeding — generator fuel",
+     "plain": [
+      "the remote basecamp feeding",
+      "remote basecamp feeding costs",
+      "the basecamp water tanker haul"
+     ],
+     "oblique": [
+      "feeding the crew in the middle of nowhere",
+      "the dusty location's food logistics",
+      "meals far from any town",
+      "providing lunch where there are no roads",
+      "the arid shoot's provisions",
+      "hauling food into the sand",
+      "the faraway unit's dining",
+      "keeping everyone fed in the heat",
+      "the isolated filming week",
+      "sustenance for the barren stretch",
+      "trucking in meals and drinks",
+      "the scorching outpost shoot",
+      "what it costs to eat out in the wilderness",
+      "supplies for the hot dry location",
+      "the outback style outing",
+      "logistics of lunch away from civilization"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "wrapparty",
+     "vendor": "Velvet Table Events",
+     "memos": [
+      "Season wrap gala — buffet service PO 7745",
+      "Season wrap gala — bar staffing"
+     ],
+     "cross_memo": "Season wrap gala — venue decor",
+     "plain": [
+      "the season wrap gala",
+      "season wrap gala buffet",
+      "the wrap gala bar staffing"
+     ],
+     "oblique": [
+      "the cast and crew's end-of-shoot celebration",
+      "the big party for finishing principal photography",
+      "thanking the team with a dinner",
+      "the closing night festivities",
+      "the send-off event",
+      "the celebratory evening",
+      "the party we threw to mark completion",
+      "the last day soiree",
+      "a reward for the crew",
+      "the final-day social",
+      "drinks and appetizers for the whole team",
+      "the banquet after the last shot",
+      "festivities for hitting the milestone",
+      "the farewell evening",
+      "the cheers at the end of filming",
+      "the big finish gathering"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

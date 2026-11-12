@@ -1,0 +1,728 @@
+{
+ "slug": "snack-food-distributor",
+ "industry": "snack food distributor",
+ "entities": [
+  "Crunchline Snack Distribution",
+  "Saltmarsh Provisions Co",
+  "Bagwell & Pike Wholesale Foods",
+  "Tumbleweed Pantry Supply",
+  "Harvest Lantern Distributors"
+ ],
+ "accounts": [
+  {
+   "name": "Refrigerated Fleet Operations",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "fleet operations",
+    "truck operating costs",
+    "delivery fleet spend"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Truck operating costs",
+    "Delivery fleet spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northway Diesel Card Services",
+     "base": 21500,
+     "memo": "FUEL CARD SETTLEMENT PERIOD"
+    },
+    {
+     "vendor": "Axle & Tire Depot",
+     "base": 6800,
+     "memo": "TIRE SVC CONTRACT MONTHLY"
+    },
+    {
+     "vendor": "Highline Truck Maintenance",
+     "base": 9400,
+     "memo": "PM SCHEDULE SVC WO-RECUR"
+    }
+   ],
+   "events": [
+    {
+     "key": "reefer_overhaul",
+     "vendor": "Highline Truck Maintenance",
+     "memos": [
+      "Reefer unit overhaul — compressor swap WO-48213",
+      "Reefer unit overhaul — evaporator labor WO-48214"
+     ],
+     "cross_memo": "Reefer unit overhaul — rental trailer PO-77120",
+     "plain": [
+      "the reefer unit overhaul",
+      "the reefer overhaul work",
+      "the overhaul of the reefer units"
+     ],
+     "oblique": [
+      "getting the cold-chain trailers back in service",
+      "the refrigeration repairs",
+      "fixing the cooling equipment that failed inspection",
+      "cooling system rebuilds",
+      "the temperature-control repairs on the straight trucks",
+      "bringing the chilled vehicles up to standard",
+      "work on equipment that keeps product cold in transit",
+      "emergency refit of the climate gear",
+      "the repairs the health inspector demanded",
+      "getting chilled routes running again",
+      "the trailer cooling fix",
+      "rebuilding the chill machinery",
+      "restoring temperature control on the fleet",
+      "the cold-chain equipment shutdown",
+      "repairs after the spoiled-load incident",
+      "the refrigeration breakdown"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "telematics",
+     "vendor": "Gridpoint Telematics Group",
+     "memos": [
+      "Telematics rollout — gateway install PO-61877",
+      "Telematics rollout — driver tablet provisioning PO-61878"
+     ],
+     "cross_memo": "Telematics rollout — training stipend PO-61879",
+     "plain": [
+      "the telematics rollout",
+      "the telematics install",
+      "the gateway rollout"
+     ],
+     "oblique": [
+      "putting trackers in every cab",
+      "the GPS project",
+      "monitoring where trucks are at all times",
+      "the route-visibility initiative",
+      "outfitting vehicles with connected devices",
+      "the driver-scoring system launch",
+      "the in-cab technology project",
+      "hardware for watching driver behavior",
+      "the tracking equipment we bolted in",
+      "real-time location tooling",
+      "the dispatch visibility upgrade",
+      "installing boxes behind the dashboards",
+      "the connected-vehicle program",
+      "the project the insurer pushed for",
+      "new devices for the drivers",
+      "the live fleet-map system"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse Pallet & Rack Costs",
+   "aliases": [
+    "warehouse",
+    "warehouse costs",
+    "pallet costs",
+    "racking and pallets",
+    "dc handling spend"
+   ],
+   "narrative": [
+    "Warehouse costs",
+    "Pallet costs",
+    "DC handling spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenbridge Pallet Pooling",
+     "base": 14200,
+     "memo": "PALLET POOL RENTAL MONTHLY"
+    },
+    {
+     "vendor": "Stackwell Forklift Leasing",
+     "base": 8900,
+     "memo": "LIFT TRUCK LEASE SCHEDULE"
+    },
+    {
+     "vendor": "Cleanfloor Sanitation Crew",
+     "base": 4300,
+     "memo": "DC SANITATION CONTRACT"
+    }
+   ],
+   "events": [
+    {
+     "key": "rackcollapse",
+     "vendor": "Stackwell Forklift Leasing",
+     "memos": [
+      "Aisle nine rack collapse — beam replacement WO-30551",
+      "Aisle nine rack collapse — salvage crew WO-30552"
+     ],
+     "cross_memo": "Aisle nine rack collapse — product writeoff JE-9921",
+     "plain": [
+      "the aisle nine rack collapse",
+      "the rack collapse cleanup",
+      "the collapse in aisle nine"
+     ],
+     "oblique": [
+      "the structural failure in the storage bays",
+      "the shelving that gave way",
+      "cleanup after the fallen steel",
+      "repairs to the high storage frames",
+      "the incident that shut down a pick zone",
+      "rebuilding the load-bearing uprights",
+      "emergency work after the pallets came down",
+      "the safety stand-down in the stockroom",
+      "the damaged shelving bay",
+      "getting the tall storage section reopened",
+      "the engineer-ordered structural repairs",
+      "reinstalling the steel frames",
+      "the accident near the loading end",
+      "work to certify the shelving again",
+      "the toppled storage section",
+      "the post-accident reconstruction"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "lumper_surge",
+     "vendor": "Quickhand Temp Staffing",
+     "memos": [
+      "Holiday lumper surge — seasonal crew PO-55410",
+      "Holiday lumper surge — overtime premium PO-55411"
+     ],
+     "cross_memo": "Holiday lumper surge — dock overflow trailers PO-55412",
+     "plain": [
+      "the holiday lumper surge",
+      "the lumper surge crews",
+      "the surge in holiday lumpers"
+     ],
+     "oblique": [
+      "extra hands for the peak season",
+      "the year-end labor crunch",
+      "temporary dock workers",
+      "the rush of seasonal help",
+      "additional people to move the volume",
+      "the busy-period crew",
+      "hiring to handle the gift-basket orders",
+      "staffing for the festive volume spike",
+      "the short-term workforce we brought on",
+      "people hired for the crunch weeks",
+      "the labor for the big shipping window",
+      "unloading help during the peak",
+      "the temporary loading team",
+      "extra bodies during the rush",
+      "the extra shifts we paid premium for",
+      "labor we borrowed for the busy stretch"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Retailer Slotting & Trade Spend",
+   "aliases": [
+    "slotting",
+    "trade spend",
+    "retail slotting fees",
+    "shelf placement costs",
+    "chain promotions"
+   ],
+   "narrative": [
+    "Slotting fees",
+    "Trade spend",
+    "Shelf placement costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metroshelf Grocers Coop",
+     "base": 26000,
+     "memo": "SLOTTING FEE ALLOWANCE MONTHLY"
+    },
+    {
+     "vendor": "ValueCart Retail Group",
+     "base": 18500,
+     "memo": "TRADE PROMO ACCRUAL SETTLE"
+    },
+    {
+     "vendor": "Corner Pantry Chain",
+     "base": 7200,
+     "memo": "END-CAP DISPLAY FEE"
+    }
+   ],
+   "events": [
+    {
+     "key": "megamart_reset",
+     "vendor": "Metroshelf Grocers Coop",
+     "memos": [
+      "Megamart planogram reset — new item fees INV-8812",
+      "Megamart planogram reset — shelf strip charge INV-8813"
+     ],
+     "cross_memo": "Megamart planogram reset — merchandiser hours PO-40199",
+     "plain": [
+      "the megamart planogram reset",
+      "the planogram reset fees",
+      "the megamart reset"
+     ],
+     "oblique": [
+      "the big-box shelf reshuffle",
+      "new-product entry charges at the national chain",
+      "the store layout overhaul by our largest customer",
+      "paying for our items to be re-listed",
+      "the category review outcome",
+      "charges tied to the annual shelf redesign",
+      "the buyer-mandated rearrangement",
+      "fees to keep our space in the snack aisle",
+      "the reorganized aisle at the superstore chain",
+      "the chain's category realignment",
+      "what the grocer wanted to put us back on shelves",
+      "the rebuilt snack section",
+      "the account's biggest merchandising event",
+      "the aisle remodel across the nationwide stores",
+      "entry costs for the freshly drawn shelf maps",
+      "the reshuffled display plan"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "coupon_blitz",
+     "vendor": "Clipsmart Promotions LLC",
+     "memos": [
+      "Spring coupon blitz — FSI circular placement INV-2291",
+      "Spring coupon blitz — redemption clearing INV-2292"
+     ],
+     "cross_memo": "Spring coupon blitz — handling fee PO-40240",
+     "plain": [
+      "the spring coupon blitz",
+      "the coupon blitz placements",
+      "the coupon blitz redemptions"
+     ],
+     "oblique": [
+      "the money-off campaign",
+      "discount offers we pushed to shoppers",
+      "the newspaper insert push",
+      "savings promotions for consumers",
+      "the paper offer drive",
+      "the couponing effort that moved volume",
+      "price-cut vouchers redeemed at checkout",
+      "the consumer deal program",
+      "the circular advertising wave",
+      "the redemption bills from the offers",
+      "the shopper incentive campaign",
+      "the promotion that brought customers in",
+      "the savings flyers",
+      "buy-one-get-one style incentives",
+      "the mailer-based discount drive",
+      "the short promotional burst"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Product Spoilage & Recall Costs",
+   "aliases": [
+    "spoilage",
+    "shrink",
+    "product losses",
+    "recall costs",
+    "expired inventory writeoffs"
+   ],
+   "narrative": [
+    "Spoilage",
+    "Product losses",
+    "Expired inventory writeoffs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Reclaim Organics Hauling",
+     "base": 3800,
+     "memo": "EXPIRED PRODUCT DISPOSAL MONTHLY"
+    },
+    {
+     "vendor": "Lotwatch Inventory Audit",
+     "base": 2900,
+     "memo": "CYCLE COUNT SVC"
+    },
+    {
+     "vendor": "Pestguard Sanitation Services",
+     "base": 1800,
+     "memo": "PEST CONTROL CONTRACT"
+    }
+   ],
+   "events": [
+    {
+     "key": "nutrecall",
+     "vendor": "Reclaim Organics Hauling",
+     "memos": [
+      "Cashew lot recall — destruction manifest WO-71002",
+      "Cashew lot recall — hazmat handling WO-71003"
+     ],
+     "cross_memo": "Cashew lot recall — customer credit memos CM-6650",
+     "plain": [
+      "the cashew lot recall",
+      "the cashew recall destruction",
+      "the recall of the cashew lot"
+     ],
+     "oblique": [
+      "pulling a tainted batch off every shelf",
+      "the supplier contamination scare",
+      "product retrieved after the allergen warning",
+      "the withdrawal ordered by regulators",
+      "the pulled nuts",
+      "the quality incident with the imported goods",
+      "everything we had to take back from stores",
+      "the safety notice that emptied the warehouse",
+      "destroying a whole production batch",
+      "the shipment we had to claw back",
+      "the contaminated shipment fallout",
+      "the health-agency requested pullback",
+      "the batch that failed lab testing",
+      "the retrieval campaign",
+      "getting suspect goods out of the market",
+      "the mislabeled-allergen problem"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "heatwave",
+     "vendor": "Coldsnap Emergency Storage",
+     "memos": [
+      "Heatwave melt loss — chocolate pallet writedown JE-5518",
+      "Heatwave melt loss — offsite cooler storage INV-3307"
+     ],
+     "cross_memo": "Heatwave melt loss — insurance deductible JE-5519",
+     "plain": [
+      "the heatwave melt loss",
+      "the melt loss writedown",
+      "the heatwave chocolate loss"
+     ],
+     "oblique": [
+      "goods ruined by the hot spell",
+      "the summer temperature excursion",
+      "product that turned to goo",
+      "losses when the air conditioning failed",
+      "the scorching week's damage",
+      "candy that couldn't be sold after the weather",
+      "the spoiled sweets",
+      "what the extreme weather cost us",
+      "the outdoor-temperature mishap",
+      "stock that softened beyond saving",
+      "the hot-weather write-off",
+      "inventory spoiled by high temperatures",
+      "the damaged confectionery",
+      "the emergency cold space we rented to save stock",
+      "the deductible we ate after the claim",
+      "the unseasonable warmth fallout"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Co-Packer & Private Label Fees",
+   "aliases": [
+    "co-packer",
+    "co-packing fees",
+    "private label costs",
+    "contract packing spend",
+    "repack charges"
+   ],
+   "narrative": [
+    "Co-packer fees",
+    "Private label costs",
+    "Contract packing spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightpack Contract Packaging",
+     "base": 24500,
+     "memo": "CO-PACK RUN CHARGES MONTHLY"
+    },
+    {
+     "vendor": "Kettlewood Foods Manufacturing",
+     "base": 19800,
+     "memo": "PRIVATE LABEL PRODUCTION RUN"
+    },
+    {
+     "vendor": "Printwell Label & Film",
+     "base": 6100,
+     "memo": "FILM AND LABEL STOCK"
+    }
+   ],
+   "events": [
+    {
+     "key": "kettlecorn_launch",
+     "vendor": "Kettlewood Foods Manufacturing",
+     "memos": [
+      "Smokehouse kettlecorn launch — tooling setup WO-22040",
+      "Smokehouse kettlecorn launch — first-run minimums WO-22041"
+     ],
+     "cross_memo": "Smokehouse kettlecorn launch — listing fee INV-1190",
+     "plain": [
+      "the smokehouse kettlecorn launch",
+      "the kettlecorn launch tooling",
+      "the kettlecorn launch minimums"
+     ],
+     "oblique": [
+      "bringing the new flavored popcorn line to market",
+      "the debut of the seasonal product",
+      "setup costs for the novelty item",
+      "the new item introduction",
+      "getting a fresh SKU into production",
+      "initial order commitments for the trial item",
+      "equipment prep for the unfamiliar recipe",
+      "the first batch of our newest offering",
+      "the product we added to the lineup",
+      "the line extension",
+      "the start-up costs for something we had never made",
+      "minimum quantities for a new recipe",
+      "the debut run",
+      "the test product's initial production",
+      "what it took to get a novelty snack off the ground",
+      "the new variety's inaugural production"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "allergen_changeover",
+     "vendor": "Sterilyze Plant Services",
+     "memos": [
+      "Allergen changeover validation — line swab testing WO-34412",
+      "Allergen changeover validation — deep clean crew WO-34413"
+     ],
+     "cross_memo": "Allergen changeover validation — idle line penalty INV-5503",
+     "plain": [
+      "the allergen changeover validation",
+      "the changeover validation testing",
+      "the allergen changeover clean"
+     ],
+     "oblique": [
+      "scrubbing and proving the lines clean between product types",
+      "the cross-contact prevention work",
+      "verifying nothing carried over from the prior batch",
+      "sanitation steps required by the auditor",
+      "the lab checks on the equipment",
+      "extra cleaning to keep peanuts away from other goods",
+      "the compliance scrub-down",
+      "downtime while the plant was decontaminated",
+      "the certification protocol after the schedule change",
+      "the sanitation requirement from the retailer's quality team",
+      "proof that the machinery was free of residue",
+      "the safety validation we paid a specialist for",
+      "special cleaning crews after the switch",
+      "the contamination-avoidance routine",
+      "lab-confirmed cleanliness work",
+      "the penalty for lines sitting unused"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Route Sales & Merchandising Labor",
+   "aliases": [
+    "route sales",
+    "merchandising",
+    "route labor",
+    "store service costs",
+    "driver sales pay"
+   ],
+   "narrative": [
+    "Route sales costs",
+    "Merchandising labor",
+    "Store service costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shelfready Merchandising Services",
+     "base": 16800,
+     "memo": "IN-STORE MERCH VISITS MONTHLY"
+    },
+    {
+     "vendor": "Roadmark Handheld Ordering",
+     "base": 3900,
+     "memo": "HANDHELD ORDER SYSTEM LICENSE"
+    },
+    {
+     "vendor": "Dayline Route Commission Payroll",
+     "base": 22000,
+     "memo": "ROUTE COMMISSION PAYOUT"
+    }
+   ],
+   "events": [
+    {
+     "key": "sales_kickoff",
+     "vendor": "Dayline Route Commission Payroll",
+     "memos": [
+      "Annual sales kickoff — spiff bonus payout PR-1180",
+      "Annual sales kickoff — awards dinner INV-6620"
+     ],
+     "cross_memo": "Annual sales kickoff — venue deposit INV-6621",
+     "plain": [
+      "the annual sales kickoff",
+      "the kickoff spiff bonuses",
+      "the sales kickoff awards"
+     ],
+     "oblique": [
+      "the yearly rally for the reps",
+      "incentive payments to top performers",
+      "the gathering where we announced targets",
+      "rewards for the field team",
+      "the celebratory event for the sales crew",
+      "bonuses handed out at the big meeting",
+      "the get-together to start the year",
+      "recognition spending for the routes",
+      "the off-site meeting for the whole field force",
+      "the motivational event",
+      "payouts to the people who hit quota",
+      "the gala for our drivers and reps",
+      "prize money and hospitality",
+      "the all-hands for the people on the road",
+      "the yearly team celebration",
+      "the annual rep gathering"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "gridiron_display",
+     "vendor": "Tailgate Displays Inc",
+     "memos": [
+      "Gridiron endcap build — football display units PO-80315",
+      "Gridiron endcap build — install crew PO-80316"
+     ],
+     "cross_memo": "Gridiron endcap build — freight surcharge INV-4488",
+     "plain": [
+      "the gridiron endcap build",
+      "the gridiron display units",
+      "the gridiron install crew"
+     ],
+     "oblique": [
+      "the game-day themed shelf fixtures",
+      "the sports-season floor displays",
+      "the stand-alone cardboard towers",
+      "what we put up in time for the big game",
+      "special fixtures for the autumn sports promotion",
+      "the in-store setups tied to the season opener",
+      "freestanding units for the stadium-snack push",
+      "the seasonal retail fixtures",
+      "the built-out store displays",
+      "the crews that assembled merchandising units",
+      "the themed stands we shipped to stores",
+      "the temporary showpieces in the aisles",
+      "the corrugated pop-up units",
+      "the football-season set pieces",
+      "the displays ordered for the playoff run",
+      "the promotional stands"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Facility Rent & Occupancy",
+   "aliases": [
+    "rent",
+    "facility rent",
+    "occupancy",
+    "warehouse lease",
+    "building costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Facility rent",
+    "Occupancy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Eastgate Industrial Properties",
+     "base": 29500,
+     "memo": "DC LEASE MONTHLY BASE RENT"
+    },
+    {
+     "vendor": "Municipal Power & Water",
+     "base": 7400,
+     "memo": "UTILITIES MONTHLY"
+    },
+    {
+     "vendor": "Parkside Cross-Dock Partners",
+     "base": 9800,
+     "memo": "CROSS-DOCK LEASE MONTHLY"
+    }
+   ],
+   "events": [
+    {
+     "key": "roof_repair",
+     "vendor": "Eastgate Industrial Properties",
+     "memos": [
+      "Docksouth roof membrane — CAM reconciliation true-up INV-9051",
+      "Docksouth roof membrane — leak mitigation INV-9052"
+     ],
+     "cross_memo": "Docksouth roof membrane — tarped inventory move JE-7731",
+     "plain": [
+      "the docksouth roof membrane",
+      "the roof membrane true-up",
+      "the docksouth membrane leak work"
+     ],
+     "oblique": [
+      "the overhead weatherproofing job",
+      "the landlord's passed-through building charge",
+      "water getting in from above",
+      "the covering that needed replacing on the south side",
+      "expenses from the leaking ceiling",
+      "the year-end pass-through bill from the property owner",
+      "repairs to the top of the building",
+      "the rain-damage repairs",
+      "shared-cost adjustment for the capital project",
+      "fixing the leaks over the loading area",
+      "what the owner billed for the big repair",
+      "the storm-related building work",
+      "the one-time charge after the annual reconciliation",
+      "the building envelope fix",
+      "moving stock away from the dripping area",
+      "the upper-structure remediation"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "fire_inspection",
+     "vendor": "Safeguard Fire Systems",
+     "memos": [
+      "Sprinkler recertification — riser retrofit WO-90214",
+      "Sprinkler recertification — marshal inspection fee WO-90215"
+     ],
+     "cross_memo": "Sprinkler recertification — after-hours standby PO-17702",
+     "plain": [
+      "the sprinkler recertification",
+      "the sprinkler riser retrofit",
+      "the sprinkler inspection fee"
+     ],
+     "oblique": [
+      "the fire-safety compliance upgrade",
+      "what the insurer required before renewing",
+      "bringing the water-suppression gear up to code",
+      "the officer-mandated safety work",
+      "the life-safety project",
+      "updating the overhead fire protection",
+      "the code-enforcement visit costs",
+      "pipes and valves we had to replace",
+      "the approval process for our protective systems",
+      "the paperwork and hardware for the fire authority",
+      "the compliance bill from the municipality",
+      "the emergency upgrade ahead of the deadline",
+      "the retrofit that kept our coverage",
+      "the standby crew during the work",
+      "making the building pass the annual safety review",
+      "fixing what the marshal flagged"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

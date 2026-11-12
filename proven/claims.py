@@ -50,7 +50,7 @@ _HEDGE = r"(?:primarily|mainly|largely|mostly|partly|partially|chiefly|principal
 _CONNECTOR = re.compile(
     rf"(?:\b(?P<pre>{_HEDGE})\s+)?"
     rf"\b(?P<conn>due\s+(?:(?P<mid1>{_HEDGE})\s+)?to"
-    rf"|because\s+of"
+    rf"|because(?:\s+of)?"
     rf"|driven\s+(?:(?P<mid2>{_HEDGE})\s+)?by"
     rf"|as\s+a\s+result\s+of"
     rf"|reflecting|attributable\s+to|owing\s+to|thanks\s+to|on\s+the\s+back\s+of"
@@ -70,8 +70,14 @@ _DOWN = re.compile(
     r"\b(fell|fallen|decreased|decrease|declined|decline|dropped|drop|lower|reduction|"
     r"reduced|shrank|(?:was|were|went|is|came\s+in)\s+down)\b", re.IGNORECASE)
 
-_CURRENT_CUE = re.compile(r"\b(?:to|at|reached|totaled|totalled|were|was)\s*$", re.IGNORECASE)
-_PRIOR_CUE = re.compile(r"\bfrom\s*$", re.IGNORECASE)
+#: A hedge may sit between a balance cue and its figure: "flat at about $9K" states a
+#: balance, not a change, exactly as "flat at $9K" does.
+_CUE_HEDGE = r"(?:(?:about|approximately|approx\.?|roughly|around|nearly|almost|some|just\s+(?:over|under))\s+|~\s*)?"
+_CURRENT_CUE = re.compile(rf"\b(?:to|at|reached|totaled|totalled|were|was)\s*{_CUE_HEDGE}$", re.IGNORECASE)
+_PRIOR_CUE = re.compile(rf"\bfrom\s*{_CUE_HEDGE}$", re.IGNORECASE)
+
+#: Where a clause of a sentence ends. A figure belongs to the account its own clause names.
+_CLAUSE_BREAK = re.compile(r"[,;:()]|\s[—–-]\s")
 
 
 @dataclass(frozen=True)
@@ -131,10 +137,52 @@ def resolve_account(head: str, ledger: Ledger) -> str | None:
     return min(hits)[2] if hits else None
 
 
-def read_figures(head: str) -> tuple[Figure | None, Figure | None, Figure | None, Figure | None]:
-    """(change, percent, prior, current) as stated in the head of a sentence."""
+def _alias_hits(text: str, ledger: Ledger) -> set[str]:
+    """Every account (or the total) an alias written in `text` names."""
+    lower = text.lower()
+    named: set[str] = set()
+    candidates = [(alias, TOTAL) for alias in TOTAL_ALIASES]
+    for account in ledger.accounts:
+        candidates.append((account.name.lower(), account.name))
+        candidates.extend((alias.lower(), account.name) for alias in account.aliases)
+    for alias, name in candidates:
+        if re.search(rf"(?<![a-z0-9]){re.escape(alias)}(?![a-z0-9])", lower):
+            named.add(name)
+    return named
+
+
+def clause_at(text: str, position: int) -> str:
+    """The clause of `text` (between commas, semicolons, colons, brackets, dashes) at `position`."""
+    start = 0
+    for match in _CLAUSE_BREAK.finditer(text):
+        if match.end() <= position:
+            start = match.end()
+        elif match.start() >= position:
+            return text[start:match.start()]
+    return text[start:]
+
+
+def belongs_elsewhere(text: str, position: int, account: str | None, ledger: Ledger | None) -> bool:
+    """True when the figure at `position` sits in a clause naming another account, not this one.
+
+    "Paid social was up ~72% ..., funded in part by pulling about $4K out of search": the
+    $4K is search's, and checking it as paid social's change fails a correct sentence."""
+    if account is None or ledger is None:
+        return False
+    named = _alias_hits(clause_at(text, position), ledger)
+    return bool(named) and account not in named
+
+
+def read_figures(head: str, account: str | None = None, ledger: Ledger | None = None,
+                 ) -> tuple[Figure | None, Figure | None, Figure | None, Figure | None]:
+    """(change, percent, prior, current) as stated in the head of a sentence.
+
+    With `account` and `ledger`, a figure whose own clause names a different account is
+    not read as this account's: it belongs to another claim in the same sentence."""
     change = prior = current = None
     for figure in find_money(head):
+        if belongs_elsewhere(head, figure.start, account, ledger):
+            continue
         before = head[:figure.start]
         if _PRIOR_CUE.search(before) and prior is None:
             prior = figure
@@ -142,16 +190,18 @@ def read_figures(head: str) -> tuple[Figure | None, Figure | None, Figure | None
             current = figure
         elif change is None:
             change = figure
-    percents = find_percents(head)
+    percents = [p for p in find_percents(head)
+                if not belongs_elsewhere(head, p.start, account, ledger)]
     return change, (percents[0] if percents else None), prior, current
 
 
 def read_sentence(sentence: str, ledger: Ledger) -> Reading:
     """Everything `admit()` and the rule extractor read from one sentence, without a model."""
     head, driver, strength = split_reason(sentence)
-    change, percent, prior, current = read_figures(head)
+    account = resolve_account(head, ledger)
+    change, percent, prior, current = read_figures(head, account, ledger)
     return Reading(head=head, driver=driver, direction=read_direction(head),
-                   strength=strength, account=resolve_account(head, ledger),
+                   strength=strength, account=account,
                    change=change, percent=percent, prior=prior, current=current)
 
 
@@ -210,6 +260,23 @@ LEXICON: tuple[tuple[str, tuple[str, ...], tuple[str, ...]], ...] = (
 #: Every word the lexicon declares as a trace a cause leaves in the ledger.
 LEXICON_TERMS = frozenset(term for _name, _triggers, terms in LEXICON for term in terms)
 
+#: Entries a reviewer confirmed, in the same (name, triggers, terms) shape as LEXICON.
+#: Empty unless `set_learned()` is called, so the benchmark and the tests never depend
+#: on what happens to be on disk.
+LEARNED: list[tuple[str, tuple[str, ...], tuple[str, ...]]] = []
+
+
+def set_learned(entries: list[tuple[str, tuple[str, ...], tuple[str, ...]]]) -> None:
+    """Replace the reviewer-confirmed entries. Their terms get the origin "learned"."""
+    LEARNED[:] = [(name, tuple(t.lower() for t in triggers), tuple(t.lower() for t in terms))
+                  for name, triggers, terms in entries]
+
+
+def declared_terms() -> frozenset[str]:
+    """Every term vouched for by the built-in lexicon or by a reviewer."""
+    return LEXICON_TERMS | {term for _name, _triggers, terms in LEARNED for term in terms}
+
+
 STOPWORDS = frozenset("""
 a an and as at by for from in into of on onto or over than that the their these this those
 to under with our its we us company team not fewer
@@ -233,7 +300,7 @@ _TOKEN = re.compile(r"[a-z0-9][a-z0-9&'\-]*")
 class Term:
     """One search term for a stated reason, and where it came from (quote, lexicon or model)."""
     text: str
-    origin: str      # "quote" | "lexicon" | "model"
+    origin: str      # "quote" | "lexicon" | "learned" | "model"
 
     def to_dict(self) -> dict:
         return {"text": self.text, "origin": self.origin}
@@ -258,13 +325,21 @@ def anchored_terms(driver: str, account: str | None, ledger: Ledger) -> list[Ter
     """Search terms derived from the stated reason itself, without a model."""
     lower = driver.lower()
     excluded = _account_tokens(account, ledger)
+    # A lesson says what its trigger phrase means in the ledger, so the phrase's own words
+    # are not also searched one by one: "board coverage" -> d&o must not let "coverage"
+    # bind the claim to an unrelated cyber-coverage invoice as well.
+    fired = [(expansions, [t for t in triggers if re.search(rf"(?<![a-z0-9]){re.escape(t)}", lower)])
+             for _name, triggers, expansions in LEARNED]
+    fired = [(expansions, hits) for expansions, hits in fired if hits]
+    replaced = {tok for expansions, hits in fired for hit in hits
+                for tok in _TOKEN.findall(hit) if tok not in expansions}
     terms: list[Term] = []
     seen: set[str] = set()
     for token in _TOKEN.findall(lower):
         token = token.strip("-'")
         if token.endswith("'s"):
             token = token[:-2]
-        if _usable(token, excluded) and token not in seen:
+        if _usable(token, excluded) and token not in seen and token not in replaced:
             seen.add(token)
             terms.append(Term(token, "quote"))
     for _name, triggers, expansions in LEXICON:
@@ -273,6 +348,11 @@ def anchored_terms(driver: str, account: str | None, ledger: Ledger) -> list[Ter
                 if expansion not in seen:
                     seen.add(expansion)
                     terms.append(Term(expansion, "lexicon"))
+    for expansions, _hits in fired:
+        for expansion in expansions:
+            if expansion not in seen:
+                seen.add(expansion)
+                terms.append(Term(expansion, "learned"))
     return terms
 
 
@@ -334,6 +414,7 @@ class Claim:
     strength: Strength
     extractor: str
     notes: tuple[str, ...] = field(default=())
+    figure_conflicts: tuple[str, ...] = field(default=())
 
     def to_dict(self) -> dict:
         def fig(f: Figure | None) -> dict | None:
@@ -348,6 +429,92 @@ class Claim:
             "strength": self.strength.value, "extractor": self.extractor,
             "notes": list(self.notes),
         }
+
+
+# ── What a PASS may not leave unread ─────────────────────────────────────
+
+#: Every word the deterministic readers understand outside a stated reason. A sentence
+#: that says anything else outside its reason says something no check looked at, and
+#: an unread word is exactly where a wrong explanation hides: "slid" for "fell",
+#: "fueled by" for "due to", "below" for a sign. The list is closed on purpose and
+#: holds no negation.
+READ_WORDS = frozenset("""
+a an the and of in to for from at by on with over as its our this that
+was were is are came went has had have been
+rose risen increased increase grew grown growth climbed jumped rise higher up
+fell fallen decreased decrease declined decline dropped drop lower reduction reduced shrank down
+approximately about roughly around nearly
+compared versus vs relative month months quarter year prior previous last period
+january february march april may june july august september october november december
+jan feb mar apr jun jul aug sep sept oct nov dec
+due because driven result reflecting attributable owing thanks back
+primarily mainly largely mostly chiefly principally predominantly large part partly partially
+cost costs spend spending expense expenses fee fees total balance
+""".split())
+
+_NEGATION = re.compile(
+    r"\b(?:not|no|never|nor|neither|without|except|excluding|despite|unrelated|versus|vs"
+    r"|rather\s+than|instead\s+of|other\s+than|as\s+opposed\s+to)\b|n't", re.IGNORECASE)
+_WORDED_AMOUNT = re.compile(
+    r"\b(?:hundred|thousand|million|billion|grand|doubled?|tripled?|halved|twice|twofold)\b",
+    re.IGNORECASE)
+_WORD = re.compile(r"[a-z][a-z&'\-]*")
+
+
+def unread(claim: "Claim", ledger: Ledger) -> list[str]:
+    """Reasons this sentence cannot be passed: what it says that no check read.
+
+    A FAIL needs one thing shown wrong. A PASS needs everything the sentence asserts
+    to have been looked at, so this is consulted only before a PASS."""
+    quote = claim.quote
+    problems: list[str] = []
+    for conflict in claim.figure_conflicts:
+        problems.append(f"a figure's role is ambiguous ({conflict})")
+
+    checked = {f.text for f in (claim.change, claim.percent, claim.prior, claim.current) if f}
+    stray = [f.text for f in find_money(quote) + find_percents(quote) if f.text not in checked]
+    if stray:
+        problems.append(f"a figure in the sentence was not checked ({', '.join(stray)})")
+    worded = _WORDED_AMOUNT.search(quote)
+    if worded:
+        problems.append(f"an amount is written in words (“{worded.group(0)}”)")
+
+    rest = quote
+    if claim.driver:
+        rest = quote.replace(claim.driver, " ", 1)
+        negation = _NEGATION.search(claim.driver)
+        if negation:
+            problems.append(f"the stated reason contains a negation or contrast "
+                            f"(“{negation.group(0)}”) that is not read")
+    else:
+        problems.append("no stated reason was read")
+    if claim.direction is None:
+        problems.append("no direction word was read, so the amount was compared without its sign")
+    elif _UP.search(rest) and _DOWN.search(rest):
+        problems.append("the sentence uses both a rise word and a fall word")
+
+    for figure in find_money(rest) + find_percents(rest):
+        rest = rest.replace(figure.text, " ")
+    lower = rest.lower()
+    named: set[str] = set()
+    known = set(READ_WORDS)
+    candidates = [(alias, TOTAL) for alias in TOTAL_ALIASES]
+    for account in ledger.accounts:
+        candidates.append((account.name, account.name))
+        candidates.extend((alias, account.name) for alias in account.aliases)
+    for alias, name in candidates:
+        known.update(_WORD.findall(alias.lower()))
+        if re.search(rf"(?<![a-z0-9]){re.escape(alias.lower())}(?![a-z0-9])", lower):
+            named.add(name)
+    if len(named) > 1:
+        problems.append(f"the sentence names more than one account ({', '.join(sorted(named))})")
+    if re.search(r"\d", re.sub(r"\b(?:19|20)\d\d\b|\b[qh][1-4]\b", " ", lower)):
+        problems.append("a number in the sentence was not read as a figure")
+    words = [w.strip("-'") for w in _WORD.findall(lower)]
+    unknown = sorted({w for w in words if w and w not in known})
+    if unknown:
+        problems.append(f"words outside the stated reason were not read ({', '.join(unknown)})")
+    return problems
 
 
 def _figure_in(quote: str, text: str | None, parser) -> tuple[Figure | None, str | None]:
@@ -379,16 +546,6 @@ def admit(proposal: ClaimProposal, text: str, ledger: Ledger, claim_id: str,
     reading = read_sentence(quote, ledger)
     notes: list[str] = []
 
-    figures = {}
-    for name, parser in (("change", parse_money), ("percent", parse_percent),
-                         ("prior", parse_money), ("current", parse_money)):
-        figure, problem = _figure_in(quote, getattr(proposal, f"{name}_text"), parser)
-        if problem and name in ("change", "percent"):
-            return Rejection(quote, "figure_not_in_quote", proposal.extractor)
-        if problem:
-            notes.append(f"{name} figure dropped: {problem}")
-        figures[name] = figure
-
     names = set(ledger.account_names) | {TOTAL}
     account, origin = reading.account, ("alias" if reading.account else None)
     if proposal.account and proposal.account not in names:
@@ -399,6 +556,50 @@ def admit(proposal: ClaimProposal, text: str, ledger: Ledger, claim_id: str,
     elif proposal.account and account is None:
         account, origin = proposal.account, "model"
 
+    roles = ("change", "percent", "prior", "current")
+    parsers = {"change": parse_money, "percent": parse_percent, "prior": parse_money,
+               "current": parse_money}
+    proposed: dict[str, Figure | None] = {}
+    for name in roles:
+        figure, problem = _figure_in(quote, getattr(proposal, f"{name}_text"), parsers[name])
+        if problem and name in ("change", "percent"):
+            return Rejection(quote, "figure_not_in_quote", proposal.extractor)
+        if problem:
+            notes.append(f"{name} figure dropped: {problem}")
+        if figure is not None and belongs_elsewhere(quote, figure.start, account, ledger):
+            notes.append(f"{name} figure {figure.text} dropped: its clause names another account")
+            figure = None
+        proposed[name] = figure
+
+    # A proposal may add to what the sentence plainly says, never take away from it: a
+    # figure the model leaves out would otherwise go unchecked. But one written figure has
+    # one role. When the proposal and the deterministic reading put the same figure in
+    # different roles ("flat at about $9K": balance or change?), neither reading is checked
+    # and the claim cannot pass: a person decides which was meant.
+    def span(f: Figure) -> tuple[int, int]:
+        return f.start, f.end
+
+    roles_of: dict[tuple[int, int], set[str]] = {}
+    for name in roles:
+        for figure in (proposed[name], getattr(reading, name)):
+            if figure is not None:
+                roles_of.setdefault(span(figure), set()).add(name)
+    conflicted = {s for s, rs in roles_of.items() if len(rs) > 1}
+    conflicts: list[str] = []
+    for s_ in sorted(conflicted):
+        conflicts.append(f"{quote[s_[0]:s_[1]]} is read as {' and as '.join(sorted(roles_of[s_]))}")
+    figures: dict[str, Figure | None] = {}
+    for name in roles:
+        figure = proposed[name]
+        if figure is None and getattr(reading, name) is not None:
+            figure = getattr(reading, name)
+            notes.append(f"{name} figure written in the sentence was left out of the proposal; kept")
+        if figure is not None and span(figure) in conflicted:
+            notes.append(f"{name} figure {figure.text} not checked: the proposal and the "
+                         f"sentence put it in different roles")
+            figure = None
+        figures[name] = figure
+
     if proposal.direction and reading.direction is None:
         notes.append("proposed direction dropped: no direction word in the sentence")
 
@@ -406,6 +607,9 @@ def admit(proposal: ClaimProposal, text: str, ledger: Ledger, claim_id: str,
     if driver and driver not in quote:
         notes.append(f"proposed reason {driver!r} dropped: not a span of the sentence")
         driver = None
+    if driver is None and reading.driver:
+        driver = reading.driver
+        notes.append("the sentence states a reason the proposal left out; kept as written")
 
     terms: list[Term] = []
     if driver:
@@ -429,4 +633,5 @@ def admit(proposal: ClaimProposal, text: str, ledger: Ledger, claim_id: str,
         change=figures["change"], percent=figures["percent"], prior=figures["prior"],
         current=figures["current"], driver=driver, terms=tuple(terms),
         strength=reading.strength, extractor=proposal.extractor, notes=tuple(notes),
+        figure_conflicts=tuple(conflicts),
     )

@@ -1,0 +1,708 @@
+{
+ "slug": "nursing-school",
+ "industry": "nursing school",
+ "entities": [
+  "Harborview College of Nursing",
+  "Cedar Ridge School of Nursing",
+  "Meridian Health Sciences Institute",
+  "Larkspur Nursing Academy",
+  "Northgate School of Practical Nursing"
+ ],
+ "accounts": [
+  {
+   "name": "Clinical Placement Fees",
+   "aliases": [
+    "clinical placements",
+    "placement fees",
+    "rotation fees",
+    "clinical site costs",
+    "hospital rotation spend"
+   ],
+   "narrative": [
+    "Clinical placements",
+    "Placement fees",
+    "Rotation fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Regional Medical Center",
+     "base": 14500,
+     "memo": "Clinical rotation fee — medical-surgical unit"
+    },
+    {
+     "vendor": "Brookside Community Hospital",
+     "base": 9800,
+     "memo": "Clinical rotation fee — pediatrics"
+    },
+    {
+     "vendor": "Eastgate Home Health Partners",
+     "base": 3200,
+     "memo": "Community health practicum fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "geriatric",
+     "vendor": "Summit Regional Medical Center",
+     "memos": [
+      "Geriatric ward expansion — added student cohorts",
+      "Geriatric ward expansion — supervisor stipends"
+     ],
+     "cross_memo": "Geriatric ward expansion — gerontology simulation supplies",
+     "plain": [
+      "the geriatric ward expansion",
+      "the geriatric ward expansion cohorts",
+      "added geriatric ward expansion capacity"
+     ],
+     "oblique": [
+      "extra seats we bought for the older-patient unit",
+      "a late request from the dean for more senior-care training slots",
+      "more students sent to the aging population wing",
+      "the surge in elderly care placements",
+      "what the hospital charged to host additional learners",
+      "an enlarged footprint at our biggest partner",
+      "terse extra cohort billing",
+      "the new wing opening up for our trainees",
+      "expanded hosting arrangements negotiated mid-year",
+      "more bodies on the floor under supervision",
+      "added headcount at the main teaching site",
+      "the sudden need to place overflow students",
+      "a bigger slice of the partner's bed capacity",
+      "the accreditation push to widen patient mix",
+      "senior-focused training capacity",
+      "additional preceptor coverage for the wing"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "telehealth",
+     "vendor": "Lakeshore Virtual Care Network",
+     "memos": [
+      "Telehealth practicum pilot — platform seats",
+      "Telehealth practicum pilot — remote preceptors"
+     ],
+     "cross_memo": "Telehealth practicum pilot — webcam kits",
+     "plain": [
+      "the telehealth practicum pilot",
+      "telehealth practicum pilot seats",
+      "the telehealth practicum pilot preceptors"
+     ],
+     "oblique": [
+      "a trial of seeing patients through screens",
+      "the remote care experiment for upper-level students",
+      "virtual visits for learners who cannot travel",
+      "a new partner we tried this term",
+      "training delivered over video links",
+      "the pilot the faculty council approved",
+      "alternative site for students stuck without rotations",
+      "screen-based patient encounters",
+      "a low-travel option for rural cohorts",
+      "the experiment with distance supervision",
+      "a stopgap when physical sites ran full",
+      "new vendor onboarding for distance learning",
+      "online encounters instead of bedside ones",
+      "the dean's push for modern delivery",
+      "short-term arrangement with an outside network",
+      "rural student access initiative"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Simulation Lab Supplies",
+   "aliases": [
+    "sim lab",
+    "simulation supplies",
+    "lab consumables",
+    "sim lab supplies",
+    "mannequin costs"
+   ],
+   "narrative": [
+    "Sim lab spend",
+    "Simulation supplies",
+    "Lab consumables"
+   ],
+   "recurring": [
+    {
+     "vendor": "MedSim Training Supply",
+     "base": 6200,
+     "memo": "Consumables restock — injection pads and wound kits"
+    },
+    {
+     "vendor": "Pinecrest Medical Distributors",
+     "base": 4100,
+     "memo": "IV start kits and catheters"
+    }
+   ],
+   "events": [
+    {
+     "key": "mannequin",
+     "vendor": "MedSim Training Supply",
+     "memos": [
+      "Birthing mannequin replacement — Lucina unit",
+      "Birthing mannequin replacement — freight and setup"
+     ],
+     "cross_memo": "Birthing mannequin replacement — extended warranty",
+     "plain": [
+      "the birthing mannequin replacement",
+      "birthing mannequin replacement unit",
+      "the birthing mannequin replacement setup"
+     ],
+     "oblique": [
+      "swapping out the worn-out patient simulator",
+      "a high-fidelity doll that finally died",
+      "the obstetrics teaching device we retired",
+      "a big-ticket piece of lab hardware",
+      "replacing the equipment instructors complained about",
+      "a unit that failed during an exam week",
+      "new gear for labor and delivery practice",
+      "an asset written off and rebought",
+      "the expensive item the lab manager flagged",
+      "capital-sized purchase run through expenses",
+      "our oldest simulator going out of service",
+      "the upgrade after repeated breakdowns",
+      "something that cannot be repaired anymore",
+      "a delivery-room training dummy",
+      "terse hardware swap",
+      "the replacement for the broken model"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "cadaver",
+     "vendor": "Willowmere Anatomical Services",
+     "memos": [
+      "Cadaver lab term lease — specimen delivery",
+      "Cadaver lab term lease — disposal handling"
+     ],
+     "cross_memo": "Cadaver lab term lease — protective gowns",
+     "plain": [
+      "the cadaver lab term lease",
+      "cadaver lab term lease specimens",
+      "the cadaver lab term lease disposal"
+     ],
+     "oblique": [
+      "bringing in real human tissue for anatomy classes",
+      "a one-semester arrangement for dissection work",
+      "the biology department's special request",
+      "hands-on study material for the spring term",
+      "specimen access we do not usually buy",
+      "a temporary add-on to the anatomy curriculum",
+      "fresh vendor providing teaching tissue",
+      "what we paid to let students dissect",
+      "a short-term hire of specialist materials",
+      "the anatomy faculty's wish list item",
+      "an outside provider for body-based learning",
+      "brief but pricey instructional resource",
+      "dissection access for one cohort",
+      "new supplier with stringent handling rules",
+      "the term-long hands-on anatomy option",
+      "cadaveric learning sessions"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Accreditation and Licensure Fees",
+   "aliases": [
+    "accreditation",
+    "licensure fees",
+    "accreditation costs",
+    "board fees",
+    "regulatory fees"
+   ],
+   "narrative": [
+    "Accreditation costs",
+    "Licensure fees",
+    "Regulatory fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "National League for Nursing Accrediting",
+     "base": 2800,
+     "memo": "Annual program accreditation dues"
+    },
+    {
+     "vendor": "State Board of Nursing",
+     "base": 1900,
+     "memo": "Program approval maintenance fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "sitevisit",
+     "vendor": "National League for Nursing Accrediting",
+     "memos": [
+      "Reaccreditation site visit — evaluator travel",
+      "Reaccreditation site visit — review panel fee"
+     ],
+     "cross_memo": "Reaccreditation site visit — binder printing",
+     "plain": [
+      "the reaccreditation site visit",
+      "reaccreditation site visit evaluators",
+      "the reaccreditation site visit panel"
+     ],
+     "oblique": [
+      "hosting the outside inspectors on campus",
+      "the periodic external quality review",
+      "visitors who graded our whole program",
+      "the multi-day audit by peer educators",
+      "something that only happens every few years",
+      "the inspection team's stay and fees",
+      "proving we still meet standards",
+      "the review the board scheduled",
+      "an onsite evaluation week",
+      "charges tied to the cyclical program check",
+      "the team that walked our halls and classrooms",
+      "what it cost to be examined",
+      "external reviewers interviewing faculty",
+      "the once-in-a-cycle credentialing event",
+      "peer assessors arriving from out of state",
+      "the big compliance milestone"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "nclex",
+     "vendor": "Pearson Testing Partners",
+     "memos": [
+      "NCLEX pass-rate remediation — proctored mock exams",
+      "NCLEX pass-rate remediation — score reporting"
+     ],
+     "cross_memo": "NCLEX pass-rate remediation — tutor stipends",
+     "plain": [
+      "the NCLEX pass-rate remediation",
+      "NCLEX pass-rate remediation mock exams",
+      "the NCLEX pass-rate remediation reporting"
+     ],
+     "oblique": [
+      "our response to graduates failing the licensing test",
+      "extra practice sittings for struggling seniors",
+      "the plan the state required after weak results",
+      "a fix for lagging first-time scores",
+      "paying an outside firm to simulate exam day",
+      "tests we ran to catch weak spots early",
+      "the improvement program for exit exams",
+      "a corrective effort after the dip",
+      "new provider brought in by the dean",
+      "help for students about to graduate",
+      "trial runs of the final credentialing assessment",
+      "analytics on how cohorts performed",
+      "pressure from regulators about outcomes",
+      "structured catch-up for borderline students",
+      "the push to restore our standing",
+      "timed rehearsals under exam conditions"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Faculty Credentialing and Development",
+   "aliases": [
+    "faculty development",
+    "faculty credentials",
+    "instructor training",
+    "faculty certification costs",
+    "teaching staff development"
+   ],
+   "narrative": [
+    "Faculty development",
+    "Instructor training",
+    "Faculty credentials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Academic Nurse Educators Guild",
+     "base": 3500,
+     "memo": "Faculty membership and CNE prep"
+    },
+    {
+     "vendor": "Clearpath Continuing Education",
+     "base": 2400,
+     "memo": "CE credit subscriptions"
+    },
+    {
+     "vendor": "Redwood Pedagogy Institute",
+     "base": 1800,
+     "memo": "Teaching methods workshops"
+    }
+   ],
+   "events": [
+    {
+     "key": "doctoral",
+     "vendor": "Academic Nurse Educators Guild",
+     "memos": [
+      "DNP tuition assistance — faculty cohort",
+      "DNP tuition assistance — residency stipends"
+     ],
+     "cross_memo": "DNP tuition assistance — payroll tax",
+     "plain": [
+      "the DNP tuition assistance",
+      "DNP tuition assistance cohort",
+      "the DNP tuition assistance stipends"
+     ],
+     "oblique": [
+      "helping our teachers earn terminal degrees",
+      "a push to raise the share of doctorate-holding staff",
+      "schooling paid for instructors going back to class",
+      "an investment demanded by the accrediting standards",
+      "advanced degrees for current employees",
+      "the retention package for senior educators",
+      "money to keep people from leaving",
+      "upskilling the teaching bench",
+      "a promise made during hiring talks",
+      "the doctoral pipeline initiative",
+      "funding for staff pursuing higher credentials",
+      "an incentive to stay and study",
+      "a group of professors enrolled in grad programs",
+      "the plan to close the qualification gap",
+      "the benefits our staff negotiated",
+      "backfilling for people on residency"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "simtrain",
+     "vendor": "Cobalt Immersive Learning",
+     "memos": [
+      "Debriefing certification bootcamp — facilitator seats",
+      "Debriefing certification bootcamp — travel"
+     ],
+     "cross_memo": "Debriefing certification bootcamp — materials kit",
+     "plain": [
+      "the debriefing certification bootcamp",
+      "debriefing certification bootcamp seats",
+      "the debriefing certification bootcamp travel"
+     ],
+     "oblique": [
+      "sending lab staff off for a specialty course",
+      "a short intensive for those who run scenarios",
+      "a trip several instructors took together",
+      "an outside academy teaching how to lead reflections",
+      "a week away for skill-building",
+      "the training our simulation coordinator requested",
+      "credentials for the people guiding exercises",
+      "new provider the faculty chose",
+      "teaching the teachers a new method",
+      "a one-time course with certification at the end",
+      "off-site learning for the lab team",
+      "an investment in better post-scenario coaching",
+      "what our educators needed to qualify",
+      "a pricey but brief professional program",
+      "a skills push for scenario leaders",
+      "the instructors' away session"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Student Health and Compliance Screening",
+   "aliases": [
+    "student screening",
+    "compliance screening",
+    "health clearances",
+    "immunization tracking",
+    "background check costs"
+   ],
+   "narrative": [
+    "Student screening",
+    "Compliance screening",
+    "Health clearances"
+   ],
+   "recurring": [
+    {
+     "vendor": "CertifiedBackground Services",
+     "base": 2600,
+     "memo": "Student background checks"
+    },
+    {
+     "vendor": "Valley Occupational Health",
+     "base": 3900,
+     "memo": "Titer testing and TB screening"
+    }
+   ],
+   "events": [
+    {
+     "key": "fluclinic",
+     "vendor": "Valley Occupational Health",
+     "memos": [
+      "Mandatory influenza campaign — vaccine doses",
+      "Mandatory influenza campaign — onsite nurses"
+     ],
+     "cross_memo": "Mandatory influenza campaign — signage and sharps bins",
+     "plain": [
+      "the mandatory influenza campaign",
+      "mandatory influenza campaign doses",
+      "the mandatory influenza campaign nurses"
+     ],
+     "oblique": [
+      "the seasonal shots hospitals required before rotations",
+      "a requirement imposed by our partners this autumn",
+      "getting every learner protected against the winter bug",
+      "an onsite event with needles and clipboards",
+      "something the clinical sites insisted on",
+      "the yearly flu-season push",
+      "jabs for the entire student body",
+      "a large group appointment day",
+      "the public-health requirement that hit all cohorts",
+      "a one-day clinic in our hallway",
+      "partner-driven prevention drive",
+      "extra staffing for a single day of injections",
+      "protecting patients from our trainees",
+      "vaccination drive before hospital placement",
+      "the requirement that doubled headcount handled",
+      "outbreak prevention measures"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "portal",
+     "vendor": "Verity Credential Systems",
+     "memos": [
+      "Compliance portal migration — data conversion",
+      "Compliance portal migration — user onboarding"
+     ],
+     "cross_memo": "Compliance portal migration — legacy export fees",
+     "plain": [
+      "the compliance portal migration",
+      "compliance portal migration conversion",
+      "the compliance portal migration onboarding"
+     ],
+     "oblique": [
+      "moving all student records to a new platform",
+      "replacing the system hospitals complained about",
+      "a switch of record-keeping vendors",
+      "cleaning up and transferring years of files",
+      "what we paid to change our tracking tool",
+      "a new supplier handling our paperwork",
+      "the project that consolidated document storage",
+      "training staff on the replacement system",
+      "an IT-flavored change in how we prove readiness",
+      "the cutover weekend and its aftermath",
+      "the one-time effort to digitize clearances",
+      "a vendor switch driven by partner requests",
+      "migrating certificates and expirations",
+      "a system overhaul led by the registrar",
+      "new software for readiness documents",
+      "upfront work to bring records over"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Student Practicum Insurance",
+   "aliases": [
+    "practicum insurance",
+    "liability coverage",
+    "malpractice premiums",
+    "student insurance",
+    "professional liability"
+   ],
+   "narrative": [
+    "Practicum insurance",
+    "Liability coverage",
+    "Malpractice premiums"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Professional Underwriters",
+     "base": 8700,
+     "memo": "Student professional liability premium"
+    },
+    {
+     "vendor": "Harbor Mutual Group",
+     "base": 4500,
+     "memo": "General liability — clinical programs"
+    }
+   ],
+   "events": [
+    {
+     "key": "claim",
+     "vendor": "Sentinel Professional Underwriters",
+     "memos": [
+      "Needlestick incident settlement — deductible",
+      "Needlestick incident settlement — claims adjuster"
+     ],
+     "cross_memo": "Needlestick incident settlement — counseling services",
+     "plain": [
+      "the needlestick incident settlement",
+      "needlestick incident settlement deductible",
+      "the needlestick incident settlement adjuster"
+     ],
+     "oblique": [
+      "a student getting injured during a placement",
+      "the payout after a workplace mishap",
+      "what we owed when a trainee was hurt",
+      "our share of a claim last quarter",
+      "an accident that involved a hospital partner",
+      "the unlucky event that triggered paperwork",
+      "a covered loss we had to front",
+      "the out-of-pocket piece of a casualty",
+      "resolving a dispute over a patient-care accident",
+      "a safety lapse and what followed",
+      "an exposure event on the ward",
+      "the share the carrier passed back to us",
+      "cost of closing out a complaint",
+      "the incident that made the board meeting",
+      "a rare but pricey bad day",
+      "reimbursement for treatment and follow-up"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "cyber",
+     "vendor": "Aegis Risk Advisors",
+     "memos": [
+      "Cyber coverage rider — breach endorsement",
+      "Cyber coverage rider — broker fee"
+     ],
+     "cross_memo": "Cyber coverage rider — security audit",
+     "plain": [
+      "the cyber coverage rider",
+      "cyber coverage rider endorsement",
+      "the cyber coverage rider broker"
+     ],
+     "oblique": [
+      "added protection for student data leaks",
+      "a policy extension our lender wanted",
+      "insurance against hackers",
+      "a new broker we engaged for a gap",
+      "something the board asked after news of other schools",
+      "protection for records holding personal details",
+      "a mid-term addition to our policies",
+      "the paperwork we added after an audit",
+      "coverage for ransom and recovery costs",
+      "a new line item on the risk register",
+      "a rider that came with an inspection",
+      "digital exposure we had left uncovered",
+      "a defensive purchase from the CFO",
+      "what we bought after peers were attacked",
+      "safeguards for online systems",
+      "the extra layer atop existing policies"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Learning Management and Testing Platforms",
+   "aliases": [
+    "lms costs",
+    "testing platforms",
+    "exam software",
+    "e-learning platforms",
+    "adaptive learning subscriptions"
+   ],
+   "narrative": [
+    "LMS costs",
+    "Testing platforms",
+    "Exam software"
+   ],
+   "recurring": [
+    {
+     "vendor": "Canvasly Education Cloud",
+     "base": 11500,
+     "memo": "LMS annual license — monthly allocation"
+    },
+    {
+     "vendor": "ExamGuard Proctoring",
+     "base": 5200,
+     "memo": "Remote proctoring usage"
+    },
+    {
+     "vendor": "AdaptiveRN Learning",
+     "base": 7400,
+     "memo": "Adaptive quizzing subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "ehr",
+     "vendor": "AdaptiveRN Learning",
+     "memos": [
+      "Academic EHR simulator rollout — charting licenses",
+      "Academic EHR simulator rollout — implementation sprint"
+     ],
+     "cross_memo": "Academic EHR simulator rollout — classroom tablets",
+     "plain": [
+      "the academic EHR simulator rollout",
+      "academic EHR simulator rollout licenses",
+      "the academic EHR simulator rollout sprint"
+     ],
+     "oblique": [
+      "teaching students on a mock patient chart system",
+      "a software package that mirrors hospital records",
+      "licenses for every learner to practice documentation",
+      "the project to modernize bedside charting lessons",
+      "an outfit helping faculty set up the new tool",
+      "paperwork practice in a safe environment",
+      "what we paid to teach digital documentation",
+      "a curriculum change requested by employers",
+      "a technology introduction for lab courses",
+      "seat licenses added mid-year",
+      "the rollout that took a month of effort",
+      "hospitals demanding graduates who can chart",
+      "new training environment for records",
+      "a practicing sandbox for charts",
+      "the big software change in clinicals",
+      "implementation help from the vendor"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "proctor",
+     "vendor": "Lockstep Secure Testing",
+     "memos": [
+      "Secure exam center buildout — kiosk stations",
+      "Secure exam center buildout — network cabling"
+     ],
+     "cross_memo": "Secure exam center buildout — keycard readers",
+     "plain": [
+      "the secure exam center buildout",
+      "secure exam center buildout kiosks",
+      "the secure exam center buildout cabling"
+     ],
+     "oblique": [
+      "turning a classroom into a controlled testing room",
+      "a dedicated place for sitting high-stakes assessments",
+      "hardware for in-person test integrity",
+      "the room we outfitted after cheating concerns",
+      "new vendor building a locked-down space",
+      "what we spent to stop remote cheating",
+      "installing stations and wiring",
+      "a facility project for exit examinations",
+      "a quiet space with monitored seating",
+      "onsite testing ability we lacked",
+      "an upgrade that let us bring tests back home",
+      "the answer to online proctoring complaints",
+      "construction-like work inside the building",
+      "a space reserved for finals",
+      "protecting exam integrity physically",
+      "equipment for the new room"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

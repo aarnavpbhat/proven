@@ -1,0 +1,830 @@
+{
+ "slug": "outdoor-advertising-company",
+ "industry": "outdoor advertising company",
+ "entities": [
+  "Skyline Signage Collective",
+  "Roadside Reach Media",
+  "Highway Horizon Displays",
+  "Prime Panel Outdoor",
+  "Metro Mile Billboards"
+ ],
+ "accounts": [
+  {
+   "name": "Billboard Structure Maintenance",
+   "aliases": [
+    "structure maintenance",
+    "billboard upkeep",
+    "structure repairs",
+    "billboard maintenance spend",
+    "panel upkeep costs"
+   ],
+   "narrative": [
+    "Structure maintenance",
+    "Billboard upkeep",
+    "Panel upkeep costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "SteelWorks Fabrication",
+     "base": 14500,
+     "memo": "Monthly steel frame repairs - bulletin inventory"
+    },
+    {
+     "vendor": "Apex Paint and Coatings",
+     "base": 6200,
+     "memo": "Panel face repainting - routine rotation"
+    },
+    {
+     "vendor": "Summit Hardware Supply",
+     "base": 2900,
+     "memo": "Fasteners and cabling - stock replenishment"
+    }
+   ],
+   "events": [
+    {
+     "key": "monopole",
+     "vendor": "SteelWorks Fabrication",
+     "memos": [
+      "Monopole foundation retrofit - Route 9 East",
+      "Monopole foundation retrofit - anchor bolt replacement"
+     ],
+     "cross_memo": "Monopole foundation retrofit - traffic control permit",
+     "plain": [
+      "the monopole foundation retrofit",
+      "the monopole retrofit work",
+      "the Route 9 monopole retrofit"
+     ],
+     "oblique": [
+      "reinforcing the tall single-column displays",
+      "work to keep the highway giants standing upright",
+      "strengthening the base of our tallest roadside structures",
+      "the engineering fix after the soil study came back",
+      "upgrades the county inspector insisted on",
+      "shoring up the towers near the interchange",
+      "the safety remediation on the oldest tall units",
+      "what we spent making the big freestanding units compliant",
+      "ground-level strengthening",
+      "the structural fix ordered after the survey",
+      "reinforcement of our highest-risk displays",
+      "making aging towers pass the engineer's review",
+      "the foundation work at the eastern corridor",
+      "stabilizing the units that had begun to lean",
+      "the retrofit the insurer required",
+      "anchoring work on the tall roadside displays"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "hailstorm",
+     "vendor": "Redline Storm Restoration",
+     "memos": [
+      "Hailstorm damage restoration - Dunmore bulletin cluster",
+      "Hailstorm damage restoration - torn vinyl and cracked catwalks"
+     ],
+     "cross_memo": "Hailstorm damage restoration - emergency crane rental",
+     "plain": [
+      "the hailstorm damage restoration",
+      "the hailstorm restoration crews",
+      "the Dunmore hailstorm damage"
+     ],
+     "oblique": [
+      "cleanup after the severe weather in the northern county",
+      "getting battered displays back to presentable",
+      "the aftermath of that nasty afternoon sky event",
+      "crews sent out to patch up the weather casualties",
+      "emergency fixes on the displays that took a beating",
+      "repairs to the cluster that got pelted",
+      "what the freak weather cost us",
+      "rush work to get advertisers' copy visible again",
+      "the insured loss from the late spring front",
+      "patching up faces that were shredded overnight",
+      "walkway repairs after the ice stones fell",
+      "recovery work in the Dunmore area",
+      "the claim-related fixes on damaged units",
+      "restoring the cluster after the front rolled through",
+      "storm recovery",
+      "putting damaged displays back on the road to revenue"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Digital Display Operations",
+   "aliases": [
+    "digital ops",
+    "digital screens",
+    "led operations",
+    "screen operations costs",
+    "digital network spend"
+   ],
+   "narrative": [
+    "Digital ops",
+    "Digital screens",
+    "Screen operations costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "BrightPixel Content Systems",
+     "base": 11800,
+     "memo": "Ad server licensing and scheduling platform"
+    },
+    {
+     "vendor": "GridPower Utilities",
+     "base": 9400,
+     "memo": "Electricity - LED bulletin network"
+    },
+    {
+     "vendor": "NetLink Wireless",
+     "base": 3300,
+     "memo": "Cellular data - screen controllers"
+    }
+   ],
+   "events": [
+    {
+     "key": "modules",
+     "vendor": "BrightPixel Content Systems",
+     "memos": [
+      "LED module changeout - Harbor Boulevard spectacular",
+      "LED module changeout - dead pixel panel batch"
+     ],
+     "cross_memo": "LED module changeout - lift truck rental",
+     "plain": [
+      "the LED module changeout",
+      "the Harbor Boulevard module changeout",
+      "the LED module batch"
+     ],
+     "oblique": [
+      "swapping out the faded screen tiles",
+      "fixing the display that looked like static",
+      "replacement of failing light grids on the flagship board",
+      "what it cost to restore picture quality downtown",
+      "warranty-expired hardware renewals",
+      "the refresh of the aging waterfront screen",
+      "getting the blotchy faces fully lit again",
+      "parts for the unit advertisers complained about",
+      "hardware renewal on our best-known display",
+      "the replacement of burnt-out sections",
+      "bringing the brightest location back to spec",
+      "tile swaps ahead of the holiday campaign",
+      "the clearing of dark patches on the big sign",
+      "new light arrays for the tired screen",
+      "the screen refresh",
+      "rebuilding the picture surface at the harbor"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "cyber",
+     "vendor": "Sentinel Cyberdefense Group",
+     "memos": [
+      "Ransomware recovery response - ad server lockout",
+      "Ransomware recovery response - forensic investigation retainer"
+     ],
+     "cross_memo": "Ransomware recovery response - outside counsel fees",
+     "plain": [
+      "the ransomware recovery response",
+      "the ransomware lockout recovery",
+      "the ransomware forensic investigation"
+     ],
+     "oblique": [
+      "getting the network back after the intrusion",
+      "specialists hired after the hackers froze our systems",
+      "the security incident cleanup",
+      "outside experts brought in during the outage",
+      "the attack that blanked our screens for a weekend",
+      "emergency help after unauthorized access",
+      "restoring scheduling after the breach",
+      "what the criminal attack cost us",
+      "incident handling by an external firm",
+      "the weekend the network went dark",
+      "expenses from the cyber event",
+      "the rebuild of compromised servers",
+      "paying for specialists after the hijacking",
+      "the investigation into how they got in",
+      "breach response",
+      "work to recover locked-up campaign files"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Fleet and Installation Vehicles",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "fleet maintenance spend",
+    "installer trucks",
+    "vehicle costs"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Installer trucks",
+    "Vehicle costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northway Fuel Cards",
+     "base": 8700,
+     "memo": "Fuel - installation crew trucks"
+    },
+    {
+     "vendor": "Ironhorse Truck Service",
+     "base": 5600,
+     "memo": "Scheduled maintenance - bucket truck fleet"
+    },
+    {
+     "vendor": "Keystone Fleet Insurance",
+     "base": 4100,
+     "memo": "Commercial auto premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "boom",
+     "vendor": "Ironhorse Truck Service",
+     "memos": [
+      "Boom lift hydraulic rebuild - unit 14",
+      "Boom lift hydraulic rebuild - cylinder reseal and hose set"
+     ],
+     "cross_memo": "Boom lift hydraulic rebuild - substitute crane hire",
+     "plain": [
+      "the boom lift hydraulic rebuild",
+      "the unit 14 hydraulic rebuild",
+      "the boom lift cylinder reseal"
+     ],
+     "oblique": [
+      "getting the tall-reach truck working again",
+      "fixing the machine crews use to reach the catwalk",
+      "the overhaul on our oldest aerial vehicle",
+      "the repair that kept installers grounded",
+      "work on the arm that stopped extending",
+      "rebuild of the lifting gear after it leaked",
+      "what the high-reach workhorse cost to revive",
+      "the mechanical fix on the vehicle with the bucket",
+      "parts and labor for the truck that wouldn't raise",
+      "restoring our elevated-work platform",
+      "the big mechanical repair on the crew vehicle",
+      "the failed lifting equipment",
+      "bringing the aerial truck back",
+      "rebuilding the arm on the oldest rig",
+      "down-time repair on installer equipment",
+      "the pump-and-ram fix"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "wrap",
+     "vendor": "Gloss Lane Graphics",
+     "memos": [
+      "Vehicle livery rebranding - rolling billboard trucks",
+      "Vehicle livery rebranding - full wrap film and install"
+     ],
+     "cross_memo": "Vehicle livery rebranding - design agency fee",
+     "plain": [
+      "the vehicle livery rebranding",
+      "the livery rebranding of the rolling billboard trucks",
+      "the livery film and install"
+     ],
+     "oblique": [
+      "giving the trucks a new look",
+      "the repainting of company vehicles to match the new logo",
+      "updating how our vans appear on the road",
+      "cosmetic work after the corporate identity change",
+      "the makeover of the mobile advertising units",
+      "fresh graphics on everything with wheels",
+      "outfitting the mobile units with the updated brand",
+      "the visual refresh of our moving displays",
+      "the new look decided by leadership",
+      "decals and film across the whole lot",
+      "getting every truck to match the new identity",
+      "the marketing-driven makeover",
+      "refreshing the appearance of the road units",
+      "what the new company image cost on wheels",
+      "brand update on vehicles",
+      "the wrap project"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Site Lease and Ground Rent",
+   "aliases": [
+    "site leases",
+    "ground rent",
+    "land leases",
+    "lease payments",
+    "site rent costs"
+   ],
+   "narrative": [
+    "Site leases",
+    "Ground rent",
+    "Land leases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hargrove Land Holdings",
+     "base": 28500,
+     "memo": "Monthly ground lease - interstate bulletin sites"
+    },
+    {
+     "vendor": "Pinecrest Farm Family Trust",
+     "base": 9800,
+     "memo": "Ground lease - rural highway parcels"
+    },
+    {
+     "vendor": "City of Maplewood Property Office",
+     "base": 4200,
+     "memo": "Municipal right-of-way lease - downtown posters"
+    }
+   ],
+   "events": [
+    {
+     "key": "escalator",
+     "vendor": "Hargrove Land Holdings",
+     "memos": [
+      "Lease escalation settlement - interstate 40 exits",
+      "Lease escalation settlement - retroactive rate adjustment"
+     ],
+     "cross_memo": "Lease escalation settlement - attorney review fee",
+     "plain": [
+      "the lease escalation settlement",
+      "the interstate lease escalation",
+      "the retroactive lease escalation"
+     ],
+     "oblique": [
+      "catch-up payment after the landlord's rate revision",
+      "a true-up for past months at a higher rate",
+      "the negotiated resolution of a pricing dispute",
+      "the back-dated increase on our priciest parcels",
+      "what we owed after the contract formula kicked in",
+      "the agreed payoff on the rent disagreement",
+      "additional money to the biggest landowner for prior periods",
+      "the one-time makeup on underbilled months",
+      "the outcome of the dispute over how much to pay",
+      "paying more for sites near the exits",
+      "a cumulative adjustment owed to the property owner",
+      "the late-recognized increase",
+      "reconciling what had been under-accrued",
+      "the ruling on an old contract clause",
+      "settlement with the lessor",
+      "the true-up on our largest rent commitment"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "relocation",
+     "vendor": "Birchwood Estates LLC",
+     "memos": [
+      "Sign relocation lease buyout - Birchwood Parkway",
+      "Sign relocation lease buyout - early termination and restoration"
+     ],
+     "cross_memo": "Sign relocation lease buyout - site clearing contractor",
+     "plain": [
+      "the sign relocation lease buyout",
+      "the Birchwood Parkway relocation buyout",
+      "the early termination and restoration payment"
+     ],
+     "oblique": [
+      "paying to leave a site before the term ended",
+      "moving a display to a better stretch of road",
+      "the exit fee on a parcel that stopped performing",
+      "cost of vacating an underperforming plot",
+      "clearing out of a location the owner wanted back",
+      "the price of getting released from a long agreement",
+      "money paid to a new landlord to take over the spot",
+      "the move away from the suburban frontage",
+      "compensation to the owner for ending things early",
+      "returning the ground to its original condition",
+      "giving up a weak position",
+      "a one-time fee to walk away",
+      "the cost of shifting a unit across the county",
+      "what the owner charged to let us out",
+      "the pullout from the parkway",
+      "reversing a poor siting decision"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Permits and Regulatory Compliance",
+   "aliases": [
+    "permits",
+    "permit fees",
+    "regulatory costs",
+    "compliance spend",
+    "licensing costs"
+   ],
+   "narrative": [
+    "Permit fees",
+    "Regulatory costs",
+    "Licensing costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "State Department of Transportation",
+     "base": 5200,
+     "memo": "Outdoor advertising permit renewals"
+    },
+    {
+     "vendor": "Cascade Permit Services",
+     "base": 3600,
+     "memo": "Permit filing and tracking - multi-county"
+    },
+    {
+     "vendor": "County Zoning Board",
+     "base": 1900,
+     "memo": "Annual sign license fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "variance",
+     "vendor": "Cascade Permit Services",
+     "memos": [
+      "Zoning variance hearing package - Ridgeway Avenue digital",
+      "Zoning variance hearing package - expert witness and survey"
+     ],
+     "cross_memo": "Zoning variance hearing package - public notice mailing",
+     "plain": [
+      "the zoning variance hearing package",
+      "the Ridgeway variance hearing",
+      "the variance survey and expert witness"
+     ],
+     "oblique": [
+      "winning approval for a screen the city doubted",
+      "the case we made to the board for the new location",
+      "preparing materials for the commission meeting",
+      "getting an exception to the height limit",
+      "the effort to legalize our planned display",
+      "specialists testifying on our behalf",
+      "paperwork and presentations for neighborhood approval",
+      "the application that went before the council",
+      "cost of persuading local officials",
+      "obtaining a waiver for the avenue site",
+      "the approval process for the contested structure",
+      "fees tied to the public meeting",
+      "the bid to get a rule bent for one site",
+      "argument before the planning panel",
+      "the entitlement push",
+      "documentation requested by the municipality"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "billfine",
+     "vendor": "Tri-County Code Enforcement",
+     "memos": [
+      "Code violation penalty - unpermitted illumination Delmar Road",
+      "Code violation penalty - citation settlement and fines"
+     ],
+     "cross_memo": "Code violation penalty - legal defense retainer",
+     "plain": [
+      "the code violation penalty",
+      "the unpermitted illumination penalty",
+      "the citation settlement and fines"
+     ],
+     "oblique": [
+      "the bill for breaking a local rule",
+      "what we paid after an inspector's visit",
+      "fines imposed for lighting a sign too brightly",
+      "the government's charge for our oversight",
+      "money owed after being cited",
+      "the resolution of an enforcement action",
+      "cost of a mistake that got noticed",
+      "amounts levied by the county",
+      "the price of not having the right clearance",
+      "the sanction on one stretch of road",
+      "paying up to close out a notice",
+      "a one-time governmental charge",
+      "the penalty for operating before approval",
+      "what the authorities assessed us",
+      "enforcement settlement",
+      "the consequence of an inspection finding"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Poster Printing and Vinyl Production",
+   "aliases": [
+    "printing",
+    "print production",
+    "vinyl costs",
+    "poster production",
+    "creative production spend"
+   ],
+   "narrative": [
+    "Print production",
+    "Vinyl costs",
+    "Poster production"
+   ],
+   "recurring": [
+    {
+     "vendor": "Vivid Wide Format Printing",
+     "base": 16800,
+     "memo": "Bulletin vinyl printing - monthly campaigns"
+    },
+    {
+     "vendor": "PaperTrail Poster Co",
+     "base": 7400,
+     "memo": "Paper poster runs - transit shelters"
+    },
+    {
+     "vendor": "Inkwell Adhesives",
+     "base": 2500,
+     "memo": "Paste and adhesive supplies"
+    }
+   ],
+   "events": [
+    {
+     "key": "reprint",
+     "vendor": "Vivid Wide Format Printing",
+     "memos": [
+      "Color mismatch reprint - Lakeshore Brewing campaign",
+      "Color mismatch reprint - replacement vinyl rush order"
+     ],
+     "cross_memo": "Color mismatch reprint - overnight freight",
+     "plain": [
+      "the color mismatch reprint",
+      "the Lakeshore Brewing reprint",
+      "the replacement vinyl rush order"
+     ],
+     "oblique": [
+      "redoing a job the client rejected",
+      "second pass at faces that looked wrong",
+      "the do-over on a beer advertiser's artwork",
+      "producing a batch again after quality complaints",
+      "hues that didn't match the approved proof",
+      "cost of the botched first run",
+      "a rush to replace what had been hung incorrectly",
+      "correcting an error that was our own",
+      "faces redone ahead of the launch date",
+      "the scrapped first batch",
+      "work repeated at our expense",
+      "fixing a production slip",
+      "expedited second delivery to the installers",
+      "the redo requested by the advertiser",
+      "absorbing the error",
+      "a campaign produced twice"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "mural",
+     "vendor": "Palette and Brush Studio",
+     "memos": [
+      "Hand-painted mural series - Old Town brick walls",
+      "Hand-painted mural series - artist commissions and scaffolding"
+     ],
+     "cross_memo": "Hand-painted mural series - wall owner access fees",
+     "plain": [
+      "the hand-painted mural series",
+      "the Old Town mural commissions",
+      "the mural artist scaffolding"
+     ],
+     "oblique": [
+      "artwork done by hand on building sides",
+      "the premium neighborhood walls for a big client",
+      "commissioned painters at work downtown",
+      "a showpiece campaign made without machines",
+      "the special project in the historic district",
+      "artisans hired for the flagship buy",
+      "the tall brick canvases",
+      "a bespoke creative job for a luxury advertiser",
+      "labor-intensive wall work in the old quarter",
+      "something done the traditional way",
+      "the standout campaign that stopped pedestrians",
+      "the hand-crafted promotion",
+      "creative showpiece for the anchor customer",
+      "the oversized artistic installation",
+      "commissioned street art",
+      "the painters and their lifts"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Installation and Field Labor",
+   "aliases": [
+    "field labor",
+    "installation labor",
+    "install crews",
+    "posting labor",
+    "field crew costs"
+   ],
+   "narrative": [
+    "Field labor",
+    "Install crews",
+    "Field crew costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crestline Staffing",
+     "base": 19500,
+     "memo": "Contract poster hangers and climbers"
+    },
+    {
+     "vendor": "Ridgeback Rigging Crews",
+     "base": 9100,
+     "memo": "Bulletin installation subcontract - weekly route"
+    },
+    {
+     "vendor": "SafeHarbor Safety Training",
+     "base": 1800,
+     "memo": "Fall protection certification - crew rotation"
+    }
+   ],
+   "events": [
+    {
+     "key": "blitz",
+     "vendor": "Crestline Staffing",
+     "memos": [
+      "Election season posting blitz - overtime crews statewide",
+      "Election season posting blitz - weekend premium labor"
+     ],
+     "cross_memo": "Election season posting blitz - extra paste supplies",
+     "plain": [
+      "the election season posting blitz",
+      "the election overtime crews",
+      "the weekend premium labor"
+     ],
+     "oblique": [
+      "the political advertising rush",
+      "extra hands for the autumn campaign surge",
+      "labor needed when candidates all bought at once",
+      "a short period of intense demand for hanging copy",
+      "working nights to meet the ballot deadline",
+      "the short-notice crush of new orders",
+      "premium pay to get everything up on time",
+      "all the added crews around voting time",
+      "the busiest stretch of the year for posting",
+      "a flood of orders with tight deadlines",
+      "cost of covering the whole region quickly",
+      "hustle to finish before the vote",
+      "additional shifts from the temp agency",
+      "the political spending wave",
+      "seasonal surge labor",
+      "crews paid extra to hit the date"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "windfarm",
+     "vendor": "Highline Tower Specialists",
+     "memos": [
+      "Tower climb certification program - wind corridor bulletins",
+      "Tower climb certification program - rescue gear and instructors"
+     ],
+     "cross_memo": "Tower climb certification program - classroom venue",
+     "plain": [
+      "the tower climb certification program",
+      "the wind corridor tower program",
+      "the rescue gear and instructors"
+     ],
+     "oblique": [
+      "qualifying staff to work at great heights",
+      "the safety program rolled out after an incident",
+      "training for tall-structure access",
+      "equipment and instruction for rescue readiness",
+      "new qualification requirements for the crews",
+      "the schooling our insurer asked for",
+      "getting everyone approved to ascend",
+      "learning how to work in the gusty region",
+      "the harness and lifeline investment",
+      "preparation for sites far above ground",
+      "the credentialing of our climbers",
+      "a one-time education push",
+      "the new standard for high-altitude work",
+      "what we spent on keeping workers safe aloft",
+      "instructor fees for the crews",
+      "rescue readiness"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Sales and Media Research",
+   "aliases": [
+    "sales research",
+    "audience research",
+    "media research",
+    "traffic studies",
+    "audience measurement spend"
+   ],
+   "narrative": [
+    "Audience research",
+    "Media research",
+    "Traffic studies"
+   ],
+   "recurring": [
+    {
+     "vendor": "RoadCount Analytics",
+     "base": 8900,
+     "memo": "Traffic count data subscription - all markets"
+    },
+    {
+     "vendor": "Mobility Insights Partners",
+     "base": 6300,
+     "memo": "Mobile location audience measurement"
+    },
+    {
+     "vendor": "AdProof Verification",
+     "base": 2700,
+     "memo": "Proof-of-posting photography service"
+    }
+   ],
+   "events": [
+    {
+     "key": "pitch",
+     "vendor": "RoadCount Analytics",
+     "memos": [
+      "National account pitch study - Coastal Motors bid",
+      "National account pitch study - custom reach model"
+     ],
+     "cross_memo": "National account pitch study - travel for client presentation",
+     "plain": [
+      "the national account pitch study",
+      "the Coastal Motors pitch study",
+      "the custom reach model"
+     ],
+     "oblique": [
+      "research built to win a big automaker",
+      "analysis assembled for a competitive proposal",
+      "tailored numbers for a prospective client",
+      "the work behind our biggest sales pursuit",
+      "data crunched for one specific buyer",
+      "a bespoke study to land the account",
+      "homework done before the beauty contest",
+      "custom modeling for a bid",
+      "the investment made to convince a large customer",
+      "figures prepared for a boardroom presentation",
+      "analytics for the new business push",
+      "costs we took on speculatively",
+      "supporting numbers for the proposal",
+      "what it took to compete for the contract",
+      "an exploratory study for sales",
+      "the pre-sale analysis"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "eyetrack",
+     "vendor": "Gazelab Consumer Science",
+     "memos": [
+      "Eye tracking viewership trial - Central Station digital",
+      "Eye tracking viewership trial - panel recruitment and equipment"
+     ],
+     "cross_memo": "Eye tracking viewership trial - incentive gift cards",
+     "plain": [
+      "the eye tracking viewership trial",
+      "the Central Station eye tracking trial",
+      "the viewership panel recruitment"
+     ],
+     "oblique": [
+      "an experiment on what passersby actually notice",
+      "testing how long people look at our faces",
+      "a pilot to prove attention value",
+      "research on gaze behavior near the terminal",
+      "the scientific study to back up our rates",
+      "measuring real attention at the transit hub",
+      "a trial with volunteers wearing special glasses",
+      "studying whether commuters pay heed",
+      "evidence-gathering to justify pricing",
+      "the one-time study of consumer attention",
+      "paying people to take part in research",
+      "novel proof of audience engagement",
+      "an effort to quantify glances",
+      "the lab-style test in a public place",
+      "the attention pilot",
+      "gear and participants for the observation test"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

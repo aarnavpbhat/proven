@@ -1,0 +1,708 @@
+{
+ "slug": "fireworks-display-company",
+ "industry": "fireworks display company",
+ "entities": [
+  "Skyburst Pyrotechnics LLC",
+  "Ember & Arc Displays Inc",
+  "Crimson Meridian Fireworks Co",
+  "Thunderline Aerial Shows Ltd",
+  "Gilded Nova Productions"
+ ],
+ "accounts": [
+  {
+   "name": "Aerial Shell Inventory Purchases",
+   "aliases": [
+    "shells",
+    "shell purchases",
+    "aerial shells",
+    "shell stock",
+    "shell inventory spend"
+   ],
+   "narrative": [
+    "Shell purchases",
+    "Aerial shells",
+    "Shell stock"
+   ],
+   "recurring": [
+    {
+     "vendor": "Dragonfly Pyro Imports",
+     "base": 28000,
+     "memo": "Monthly 3-inch to 6-inch shell consignment"
+    },
+    {
+     "vendor": "Hartwell Black Powder Supply",
+     "base": 9500,
+     "memo": "Lift charge and bulk powder replenishment"
+    },
+    {
+     "vendor": "Pacific Rim Fuse & Cord",
+     "base": 2400,
+     "memo": "Visco fuse and quickmatch restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "megafinale",
+     "vendor": "Dragonfly Pyro Imports",
+     "memos": [
+      "Titan Salvo Cakes — 500-gram finale order",
+      "Titan Salvo Cakes — expedited air freight allotment"
+     ],
+     "cross_memo": "Titan Salvo Cakes — hazmat customs brokerage",
+     "plain": [
+      "the Titan Salvo Cakes order",
+      "the Titan Salvo finale cakes",
+      "the Titan Salvo purchase"
+     ],
+     "oblique": [
+      "the big closing barrages for the stadium contract",
+      "a rush buy of multi-shot racks for the signature show",
+      "the grand finale pieces the client asked us to upsize",
+      "extra high-count boxes ordered after the bid was won",
+      "the loud ending segment for the anniversary gala",
+      "bigger closers requested by the city",
+      "a last-minute stock-up for the marquee performance",
+      "the climactic sequence hardware",
+      "finale boxes",
+      "upsized closing sequence",
+      "what the festival committee wanted for the final minutes",
+      "the spectacle-ending items flown in early",
+      "a splurge on show-stopping closers",
+      "extra grand-ending product",
+      "the closing-act buy",
+      "additional crescendo material for the headline night"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "recallrepl",
+     "vendor": "Meridian Ordnance Wholesale",
+     "memos": [
+      "Lot 47-B Recall — replacement mortar shells",
+      "Lot 47-B Recall — supplier credit offset"
+     ],
+     "cross_memo": "Lot 47-B Recall — disposal manifest fees",
+     "plain": [
+      "the Lot 47-B recall",
+      "the Lot 47-B replacement shells",
+      "the Lot 47-B recall replacement"
+     ],
+     "oblique": [
+      "swapping out the batch that failed testing",
+      "the manufacturer pulling a bad production run",
+      "replacements for duds the importer flagged",
+      "restocking after a defective shipment was quarantined",
+      "product we had to re-buy mid-season",
+      "the safety notice on one batch of stock",
+      "unplanned reorders to cover condemned inventory",
+      "covering a gap left by withdrawn goods",
+      "the faulty run",
+      "a quality problem upstream",
+      "making shows whole after a bad delivery",
+      "fresh supply for what could not be fired",
+      "the do-over purchase",
+      "substitute product for a pulled consignment",
+      "the regulator-prompted turnover of stock",
+      "buying again what we already paid for"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Licensed Pyrotechnician Labor",
+   "aliases": [
+    "pyro labor",
+    "crew pay",
+    "shooter labor",
+    "technician wages",
+    "show crew costs"
+   ],
+   "narrative": [
+    "Pyro labor",
+    "Crew pay",
+    "Shooter labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Staffing Partners",
+     "base": 18000,
+     "memo": "Weekly licensed shooter staffing"
+    },
+    {
+     "vendor": "Blue Ridge Payroll Services",
+     "base": 6200,
+     "memo": "Crew payroll processing and burden"
+    }
+   ],
+   "events": [
+    {
+     "key": "harborfest",
+     "vendor": "Summit Staffing Partners",
+     "memos": [
+      "Harborfest Barge Show — overtime shooters",
+      "Harborfest Barge Show — night differential premium"
+     ],
+     "cross_memo": "Harborfest Barge Show — crew lodging per diem",
+     "plain": [
+      "the Harborfest barge show",
+      "the Harborfest overtime",
+      "the Harborfest barge crew"
+     ],
+     "oblique": [
+      "the waterfront spectacle on the weekend",
+      "a multi-night run on the floating platform",
+      "premium hours the crew put in downtown",
+      "the extended engagement with the port authority",
+      "extra shifts for the largest booking of summer",
+      "working late on the dock",
+      "the pay bump for the overnight setup",
+      "heavy staffing on the riverfront job",
+      "overtime on the marquee gig",
+      "the harbour production",
+      "a three-night commitment out on the water",
+      "bigger headcount for the city's flagship event",
+      "double-time for the big weekend",
+      "the floating launch site engagement",
+      "additional hands for the bay performance",
+      "crew hours beyond schedule at the marina"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "certdrive",
+     "vendor": "Cascade Safety Academy",
+     "memos": [
+      "Class B Recertification — instructor tuition",
+      "Class B Recertification — exam proctor fees"
+     ],
+     "cross_memo": "Class B Recertification — course materials",
+     "plain": [
+      "the Class B recertification",
+      "the Class B exam round",
+      "the Class B recert drive"
+     ],
+     "oblique": [
+      "getting everyone's licenses renewed",
+      "the training week for the whole crew",
+      "a regulatory refresher for the shooters",
+      "classroom time the state requires",
+      "keeping credentials current before the season",
+      "the compliance courses",
+      "sending staff back to school",
+      "the annual permit upkeep for personnel",
+      "qualification renewals",
+      "testing our people again",
+      "the knowledge refresh mandated by the fire marshal",
+      "getting the team legally cleared to fire",
+      "the education push before busy months",
+      "credential maintenance for technicians",
+      "schooling that lets us keep working",
+      "the retraining session"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Magazine and Storage Compliance",
+   "aliases": [
+    "magazine",
+    "storage costs",
+    "bunker costs",
+    "magazine compliance",
+    "explosives storage"
+   ],
+   "narrative": [
+    "Magazine costs",
+    "Storage costs",
+    "Bunker costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironclad Magazine Leasing",
+     "base": 7800,
+     "memo": "Type 4 magazine lease"
+    },
+    {
+     "vendor": "Redline ATF Compliance Advisors",
+     "base": 3200,
+     "memo": "Monthly licensing and recordkeeping retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "bunkerroof",
+     "vendor": "Ironclad Magazine Leasing",
+     "memos": [
+      "Bunker Row Reinforcement — blast-wall retrofit",
+      "Bunker Row Reinforcement — structural engineer sign-off"
+     ],
+     "cross_memo": "Bunker Row Reinforcement — site grading equipment",
+     "plain": [
+      "the Bunker Row reinforcement",
+      "the Bunker Row retrofit",
+      "the Bunker Row wall work"
+     ],
+     "oblique": [
+      "strengthening the structures after the inspector's visit",
+      "upgrades to the concrete shelters out back",
+      "fixes demanded at the last audit",
+      "hardening the on-site vaults",
+      "construction at the far end of the compound",
+      "masonry improvements the landlord required",
+      "making the sheds safer against an accident",
+      "the buildout the fire district insisted on",
+      "extra thickness on the barrier",
+      "beefing up the protective enclosures",
+      "the building project at the yard",
+      "work to keep our permit alive",
+      "capital-style repairs on the powder sheds",
+      "reinforcing what holds the product",
+      "the shelter upgrade program",
+      "remedial construction after a failed walkthrough"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "swampfire",
+     "vendor": "Ridgeback Fire Prevention Group",
+     "memos": [
+      "Drought Season Suppression — sprinkler deluge install",
+      "Drought Season Suppression — fire watch patrol hours"
+     ],
+     "cross_memo": "Drought Season Suppression — water tender standby",
+     "plain": [
+      "the Drought Season suppression",
+      "the Drought Season fire watch",
+      "the Drought Season deluge system"
+     ],
+     "oblique": [
+      "extra protection while the region was parched",
+      "guards posted around the clock near the stockpile",
+      "a burn-ban response at the yard",
+      "sprinklers and patrols the insurer wanted",
+      "dry-weather precautions",
+      "keeping flames away from the stored goods",
+      "the wildfire risk measures",
+      "overnight sentries on the property",
+      "water-based defenses",
+      "guarding against sparks in a hot summer",
+      "safety steps during the red-flag period",
+      "the county's emergency restrictions",
+      "an anti-blaze package for the lot",
+      "standing watch over the compound",
+      "temporary vigilance staffing",
+      "heat-wave safeguards at the depot"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Launch Truck and Trailer Fleet",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "trucks",
+    "trailer expenses",
+    "vehicle operating costs"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Truck expenses",
+    "Trailer expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadbound Fuel Cards",
+     "base": 5400,
+     "memo": "Diesel fuel card statement"
+    },
+    {
+     "vendor": "Hazmat Fleet Insurance Co",
+     "base": 4100,
+     "memo": "Placarded vehicle coverage premium"
+    },
+    {
+     "vendor": "Alder Tire & Brake",
+     "base": 1800,
+     "memo": "Scheduled vehicle servicing"
+    }
+   ],
+   "events": [
+    {
+     "key": "liftgate",
+     "vendor": "Alder Tire & Brake",
+     "memos": [
+      "Unit 14 Powertrain Rebuild — transmission replacement",
+      "Unit 14 Powertrain Rebuild — tow to shop"
+     ],
+     "cross_memo": "Unit 14 Powertrain Rebuild — substitute box truck rental",
+     "plain": [
+      "the Unit 14 powertrain rebuild",
+      "the Unit 14 transmission job",
+      "the Unit 14 rebuild"
+     ],
+     "oblique": [
+      "our biggest truck dying on the highway",
+      "getting the heavy hauler running again",
+      "a breakdown that sidelined the main rig",
+      "the gearbox failure",
+      "the repair that kept the lead vehicle in the shop",
+      "an unexpected garage bill on the flagship vehicle",
+      "bringing the old workhorse back to life",
+      "a mechanical disaster before a big show",
+      "the major drivetrain repair",
+      "the vehicle that wouldn't shift",
+      "fixing what stranded the driver",
+      "the costly overhaul to our oldest hauler",
+      "engine-room trouble on the primary carrier",
+      "getting the stalled vehicle on the road",
+      "a heavy-duty fix",
+      "downtime on the lead hauler"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "rampwrap",
+     "vendor": "Brightline Vehicle Graphics",
+     "memos": [
+      "Fourth Fest Livery Wrap — full vinyl application",
+      "Fourth Fest Livery Wrap — design proofing"
+     ],
+     "cross_memo": "Fourth Fest Livery Wrap — permit sign-off",
+     "plain": [
+      "the Fourth Fest livery wrap",
+      "the Fourth Fest vinyl wrap",
+      "the Fourth Fest vehicle livery"
+     ],
+     "oblique": [
+      "new artwork across the haulers",
+      "rebranding how our vehicles look",
+      "a fresh paint-like skin for the convoy",
+      "the marketing makeover on wheels",
+      "visual refresh of the whole convoy",
+      "dressing up the vehicles for the sponsor",
+      "color and logos on the vans",
+      "advertising space on our rolling stock",
+      "a cosmetic project requested by the client",
+      "the sponsor's artwork on every side panel",
+      "spiffing up the vehicles before the holiday",
+      "looking sharp on the road",
+      "the decal project",
+      "an image upgrade for the fleet",
+      "the exterior makeover",
+      "branding applied to the haulers"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Show Design and Choreography Software",
+   "aliases": [
+    "design software",
+    "choreography",
+    "show software",
+    "firing software",
+    "script licenses"
+   ],
+   "narrative": [
+    "Design software",
+    "Choreography costs",
+    "Show software"
+   ],
+   "recurring": [
+    {
+     "vendor": "PyroSync Technologies",
+     "base": 2800,
+     "memo": "Show scripting platform subscription"
+    },
+    {
+     "vendor": "AudioLoom Licensing",
+     "base": 1200,
+     "memo": "Synchronized soundtrack licensing"
+    }
+   ],
+   "events": [
+    {
+     "key": "wirelessfire",
+     "vendor": "PyroSync Technologies",
+     "memos": [
+      "Radio Cue Network — module activation",
+      "Radio Cue Network — custom firmware package"
+     ],
+     "cross_memo": "Radio Cue Network — field transmitter hardware",
+     "plain": [
+      "the Radio Cue network",
+      "the Radio Cue module",
+      "the Radio Cue firmware"
+     ],
+     "oblique": [
+      "going cable-free at the venue",
+      "an upgrade so shows trigger without wires",
+      "a tech leap in how we ignite",
+      "the add-on that lets us start from afar",
+      "a premium tier unlocked for large shows",
+      "the new capability for remote ignition",
+      "software that talks over the air",
+      "extra features bought for the big contract",
+      "a digital expansion",
+      "the licensing step-up",
+      "new functionality for synchronized timing",
+      "the airwaves approach to firing",
+      "the unlock fee for the advanced edition",
+      "tech investment for tighter synchronization",
+      "the cutting-edge package",
+      "buying more capability from the platform maker"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "musicrights",
+     "vendor": "Stagecoast Music Clearance",
+     "memos": [
+      "Symphony Night Rights Bundle — sync license fee",
+      "Symphony Night Rights Bundle — orchestral master use"
+     ],
+     "cross_memo": "Symphony Night Rights Bundle — performance royalty prepayment",
+     "plain": [
+      "the Symphony Night rights bundle",
+      "the Symphony Night sync license",
+      "the Symphony Night master use"
+     ],
+     "oblique": [
+      "permission to play the orchestra recordings",
+      "clearing the live-score numbers for the concert",
+      "royalty paperwork for the classical program",
+      "the licensing on the pops evening",
+      "paying composers for the pairing with music",
+      "legal clearance for the soundtrack of the gala",
+      "the copyright side of the concert show",
+      "fees to the rights holders",
+      "securing songs for the big pairing",
+      "the tune permissions",
+      "audio clearance for the philharmonic event",
+      "an artistic permissions bill",
+      "the arrangement royalties",
+      "music usage charges for one evening",
+      "getting the score cleared",
+      "payments owed to the publishers"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Event Permits and Insurance",
+   "aliases": [
+    "permits",
+    "permit fees",
+    "show insurance",
+    "liability coverage",
+    "event licensing"
+   ],
+   "narrative": [
+    "Permit fees",
+    "Show insurance",
+    "Liability coverage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Underwriters of Sparkline Mutual",
+     "base": 9000,
+     "memo": "Pyrotechnic general liability premium"
+    },
+    {
+     "vendor": "Municipal Permit Clearinghouse",
+     "base": 2600,
+     "memo": "Standing display permit processing"
+    }
+   ],
+   "events": [
+    {
+     "key": "airspace",
+     "vendor": "Municipal Permit Clearinghouse",
+     "memos": [
+      "Skyline Corridor Waiver — airspace authorization",
+      "Skyline Corridor Waiver — expedited review premium"
+     ],
+     "cross_memo": "Skyline Corridor Waiver — aviation notice publication",
+     "plain": [
+      "the Skyline Corridor waiver",
+      "the Skyline Corridor authorization",
+      "the Skyline Corridor review"
+     ],
+     "oblique": [
+      "clearance to fire near the flight paths",
+      "the approval needed for a show close to the airport",
+      "a rush fee to get the go-ahead in time",
+      "getting the aviation authority to say yes",
+      "special permission for a tall launch",
+      "paperwork for firing above the usual ceiling",
+      "a regulatory exception for a high-altitude show",
+      "the approval that nearly missed the deadline",
+      "aircraft-related clearance",
+      "a notice process for pilots",
+      "the federal sign-off",
+      "permission for something taller than normal",
+      "an expedited agency request",
+      "the clearance obtained on short notice",
+      "getting the green light for height",
+      "a skyward approval cost"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "claimsettle",
+     "vendor": "Pinnacle Risk Adjusters",
+     "memos": [
+      "Oakmont Fairgrounds Incident — deductible payment",
+      "Oakmont Fairgrounds Incident — adjuster investigation fee"
+     ],
+     "cross_memo": "Oakmont Fairgrounds Incident — damaged tent reimbursement",
+     "plain": [
+      "the Oakmont Fairgrounds incident",
+      "the Oakmont Fairgrounds deductible",
+      "the Oakmont Fairgrounds claim"
+     ],
+     "oblique": [
+      "the mishap at the show that led to a claim",
+      "our share of a settled accident",
+      "a stray shell that landed badly",
+      "paying out for property harm from a display",
+      "what we owed after the insurer paid",
+      "an unfortunate event during a performance",
+      "the out-of-pocket piece of a loss",
+      "compensating a neighbor for damage",
+      "a bad night at the venue",
+      "the costs from something going wrong on site",
+      "covering our part of an accident",
+      "the investigation after an errant burst",
+      "a liability event",
+      "the self-insured portion of a mishap",
+      "the aftermath of a misfire",
+      "settling up for what a show broke"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Site Setup and Safety Equipment",
+   "aliases": [
+    "site setup",
+    "safety gear",
+    "mortar racks",
+    "setup equipment",
+    "field supplies"
+   ],
+   "narrative": [
+    "Site setup",
+    "Safety gear",
+    "Setup equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Steelhaven Rack & Rail",
+     "base": 4600,
+     "memo": "Mortar rack and tube maintenance"
+    },
+    {
+     "vendor": "Guardian Fire Gear Outfitters",
+     "base": 2200,
+     "memo": "Protective clothing and extinguisher servicing"
+    },
+    {
+     "vendor": "Hollis Generator Rentals",
+     "base": 3400,
+     "memo": "Field power rental"
+    }
+   ],
+   "events": [
+    {
+     "key": "tubereplace",
+     "vendor": "Steelhaven Rack & Rail",
+     "memos": [
+      "HDPE Tube Retirement — 4-inch mortar set",
+      "HDPE Tube Retirement — fiberglass reload racks"
+     ],
+     "cross_memo": "HDPE Tube Retirement — hazardous disposal",
+     "plain": [
+      "the HDPE tube retirement",
+      "the HDPE mortar set",
+      "the HDPE reload racks"
+     ],
+     "oblique": [
+      "replacing the launchers that wore out",
+      "new barrels for the oldest equipment",
+      "gear reaching the end of its life",
+      "what we shoot shells from being swapped",
+      "a refresh of the worn kit",
+      "the aging plastic pieces needing to go",
+      "buying fresh hardware to hold the product",
+      "equipment turnover after years of use",
+      "the mass swap-out",
+      "modernizing what sits in the field",
+      "the cracked units we scrapped",
+      "a wholesale replacement of the launch hardware",
+      "capital refresh of the firing line",
+      "restoring the inventory of holders",
+      "new tubes across the board",
+      "gear we aged out"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "stormtent",
+     "vendor": "Northwind Shelter Systems",
+     "memos": [
+      "Wet Weather Canopy Kit — rated pop-up structures",
+      "Wet Weather Canopy Kit — ballast weights and tie-downs"
+     ],
+     "cross_memo": "Wet Weather Canopy Kit — shipping and freight",
+     "plain": [
+      "the Wet Weather canopy kit",
+      "the Wet Weather canopy structures",
+      "the Wet Weather tie-downs"
+     ],
+     "oblique": [
+      "covering the control station against rain",
+      "shelter that keeps the console dry",
+      "tents bought after a soggy show",
+      "protecting electronics from the elements",
+      "getting our firing desk out of the downpour",
+      "structures for the operators in bad conditions",
+      "a purchase after a near-cancellation",
+      "overhead cover at remote locations",
+      "staying dry on the lot",
+      "rain-proofing the operations area",
+      "the storm-readiness buy",
+      "gear so the show goes on in drizzle",
+      "weatherproofing for the shooters' table",
+      "outdoor cover for the crew",
+      "protection from drizzle",
+      "a response to wet nights"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

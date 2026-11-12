@@ -1,0 +1,796 @@
+{
+ "slug": "funeral-home-group",
+ "industry": "funeral home group",
+ "entities": [
+  "Stillwater Memorial Partners",
+  "Hollowbrook Funeral Homes Inc.",
+  "Graceline Chapels LLC",
+  "Ashford & Vale Mortuary Group",
+  "Quiet Harbor Cremation Services"
+ ],
+ "accounts": [
+  {
+   "name": "Embalming Supplies",
+   "aliases": [
+    "embalming supplies",
+    "prep room supplies",
+    "embalming chemicals",
+    "prep supplies",
+    "embalming spend"
+   ],
+   "narrative": [
+    "Embalming supplies",
+    "Prep room supplies",
+    "Embalming chemicals"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harlow Mortuary Chemical Co.",
+     "base": 6200,
+     "memo": "Monthly arterial fluid order"
+    },
+    {
+     "vendor": "Bellwether Prep Supply",
+     "base": 2400,
+     "memo": "Gloves gowns cavity sundries"
+    }
+   ],
+   "events": [
+    {
+     "key": "formaldehyde_recall",
+     "vendor": "Harlow Mortuary Chemical Co.",
+     "memos": [
+      "Formaldehyde recall — replacement stock",
+      "Formaldehyde recall — disposal fee"
+     ],
+     "cross_memo": "Formaldehyde recall — hazmat courier",
+     "plain": [
+      "the formaldehyde recall",
+      "formaldehyde recall costs",
+      "the formaldehyde recall charges"
+     ],
+     "oblique": [
+      "the bad preservative lot",
+      "refilling shelves after the manufacturer's safety notice",
+      "the defective solution batch",
+      "throwing out contaminated product",
+      "a supplier safety withdrawal",
+      "buying every bottle again",
+      "the tainted batch",
+      "getting rid of the flagged jugs safely",
+      "the manufacturer's quality failure",
+      "rebuying preservatives the maker pulled",
+      "the product withdrawal",
+      "clearing suspect embalming solution out of every location",
+      "the quality alert on preservatives",
+      "a forced repurchase",
+      "the lot that failed inspection",
+      "swapping flagged preservative across all chapels"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "downdraft_table",
+     "vendor": "Stillwater Ventilation Group",
+     "memos": [
+      "Downdraft table install — unit",
+      "Downdraft table install — ductwork"
+     ],
+     "cross_memo": "Downdraft table install — electrical",
+     "plain": [
+      "the downdraft table",
+      "the downdraft table install",
+      "downdraft table costs"
+     ],
+     "oblique": [
+      "the new airflow workstation",
+      "upgrading the embalming room's fume extraction",
+      "fume control upgrades",
+      "the OSHA air handling project",
+      "better exhaust for the embalmers",
+      "the new extraction station",
+      "meeting the inspector's air quality findings",
+      "the vapor exposure fix",
+      "a workroom upgrade",
+      "putting in proper fume capture",
+      "the exhaust retrofit",
+      "the workroom air upgrade",
+      "swapping out the old porcelain slab",
+      "the airflow project at the flagship location",
+      "reducing employee vapor exposure",
+      "the fume hood work"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Removal & Transfer Services",
+   "aliases": [
+    "removals",
+    "removal services",
+    "transfer services",
+    "first call costs",
+    "body transport",
+    "removal spend"
+   ],
+   "narrative": [
+    "Removal services",
+    "Transfer services",
+    "First call costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Nightingale First Call LLC",
+     "base": 9800,
+     "memo": "Overnight residence removals"
+    },
+    {
+     "vendor": "Keystone Livery Transfers",
+     "base": 5400,
+     "memo": "Hospital to chapel transfers"
+    }
+   ],
+   "events": [
+    {
+     "key": "airport_shipping",
+     "vendor": "Keystone Livery Transfers",
+     "memos": [
+      "Airport shipping — air tray",
+      "Airport shipping — cargo handling"
+     ],
+     "cross_memo": "Airport shipping — consular paperwork",
+     "plain": [
+      "the airport shipping",
+      "airport shipping costs",
+      "the airport shipping charges"
+     ],
+     "oblique": [
+      "repatriation for an overseas family",
+      "the international repatriation",
+      "sending a loved one home to another country",
+      "flying a deceased relative back to Mexico",
+      "the out-of-country burial request",
+      "terminal fees on an international case",
+      "the overseas case",
+      "embassy-required documentation",
+      "sending remains abroad",
+      "a family's request to bury in their native country",
+      "the repatriation job",
+      "freight for a foreign burial",
+      "getting remains onto an outbound flight",
+      "export of human remains",
+      "the international family's arrangements",
+      "outbound flight costs"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "county_overflow",
+     "vendor": "Tri-Valley Coroner Support",
+     "memos": [
+      "County overflow — decedent pickups",
+      "County overflow — mileage"
+     ],
+     "cross_memo": "County overflow — cooler rental",
+     "plain": [
+      "the county overflow",
+      "county overflow work",
+      "the county overflow contract"
+     ],
+     "oblique": [
+      "helping the medical examiner during the flu surge",
+      "the examiner's backlog",
+      "extra bodies from the public morgue",
+      "covering the morgue's capacity crunch",
+      "the government recovery work",
+      "a public-sector backlog contract",
+      "the examiner's surge",
+      "taking cases the morgue couldn't hold",
+      "pandemic-level case volume",
+      "emergency recovery work for local authorities",
+      "the morgue backlog",
+      "added recovery runs",
+      "assisting authorities after the highway pileup",
+      "the mass casualty response",
+      "extra recovery trips",
+      "the public morgue crunch"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Crematory Operations",
+   "aliases": [
+    "crematory",
+    "crematory ops",
+    "cremation costs",
+    "retort operations",
+    "crematory spend"
+   ],
+   "narrative": [
+    "Crematory ops",
+    "Cremation costs",
+    "Retort operations"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Natural Gas",
+     "base": 7600,
+     "memo": "Retort fuel usage"
+    },
+    {
+     "vendor": "Emberline Crematory Services",
+     "base": 3200,
+     "memo": "Scheduled retort servicing"
+    }
+   ],
+   "events": [
+    {
+     "key": "hearth_reline",
+     "vendor": "Emberline Crematory Services",
+     "memos": [
+      "Hearth reline — refractory brick",
+      "Hearth reline — kiln labor"
+     ],
+     "cross_memo": "Hearth reline — outsourced cremations",
+     "plain": [
+      "the hearth reline",
+      "hearth reline costs",
+      "the hearth reline work"
+     ],
+     "oblique": [
+      "rebuilding the chamber floor",
+      "the worn-out chamber lining",
+      "tearing out the cracked heat-resistant lining",
+      "the furnace rebuild",
+      "downtime on the main unit",
+      "the cracked chamber floor",
+      "redoing the furnace interior",
+      "the chamber rebuild",
+      "sending families' cases elsewhere during the shutdown",
+      "the furnace shutdown",
+      "heat-damaged masonry",
+      "a major furnace overhaul",
+      "the overdue chamber rebuild",
+      "heat damage inside the furnace",
+      "getting the furnace back online",
+      "the chamber floor collapse"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "stack_emissions",
+     "vendor": "Clearsky Emissions Testing",
+     "memos": [
+      "Stack emissions — annual test",
+      "Stack emissions — opacity monitor"
+     ],
+     "cross_memo": "Stack emissions — permit filing",
+     "plain": [
+      "the stack emissions work",
+      "stack emissions costs",
+      "the stack emissions charges"
+     ],
+     "oblique": [
+      "the air-quality compliance check",
+      "the regulator's smoke review",
+      "proving compliance to the air district",
+      "the yearly environmental check",
+      "a new smoke-density meter",
+      "air district compliance",
+      "the environmental audit",
+      "satisfying the state air board",
+      "the smoke compliance work",
+      "chimney exhaust certification",
+      "environmental compliance",
+      "the regulator's visit",
+      "a required pollution review",
+      "keeping the operating license current",
+      "the clean-air certification",
+      "the pollution compliance cycle"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Funeral Coach Fleet",
+   "aliases": [
+    "coach fleet",
+    "hearse costs",
+    "funeral coaches",
+    "limo fleet",
+    "coach and limo spend"
+   ],
+   "narrative": [
+    "Coach fleet",
+    "Hearse costs",
+    "Limo fleet"
+   ],
+   "recurring": [
+    {
+     "vendor": "Monarch Coachworks",
+     "base": 8400,
+     "memo": "Coach lease payment"
+    },
+    {
+     "vendor": "Benton Fuel Cards",
+     "base": 2900,
+     "memo": "Fleet fuel cards"
+    }
+   ],
+   "events": [
+    {
+     "key": "rear_deck_rollers",
+     "vendor": "Monarch Coachworks",
+     "memos": [
+      "Rear deck rollers — rebuild",
+      "Rear deck rollers — casket rails"
+     ],
+     "cross_memo": "Rear deck rollers — loaner hearse",
+     "plain": [
+      "the rear deck rollers",
+      "rear deck roller work",
+      "the rear deck rollers job"
+     ],
+     "oblique": [
+      "fixing the loading mechanism",
+      "the jammed loading platform",
+      "the back-end loading gear",
+      "worn loading hardware on the lead vehicle",
+      "a borrowed vehicle while ours was down",
+      "the platform mechanism overhaul",
+      "loading equipment that failed mid-service",
+      "the vehicle's loading system",
+      "keeping the lead vehicle in service",
+      "loading platform parts",
+      "the stuck platform",
+      "worn bearings in the loading bay",
+      "making the procession vehicle safe to load",
+      "the loading gear fix",
+      "a temporary procession vehicle",
+      "the mechanical loading failure"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "collision_repair",
+     "vendor": "Silverline Auto Body",
+     "memos": [
+      "Collision repair — limousine bumper",
+      "Collision repair — paint match"
+     ],
+     "cross_memo": "Collision repair — insurance deductible",
+     "plain": [
+      "the collision repair",
+      "collision repair costs",
+      "the collision repair bill"
+     ],
+     "oblique": [
+      "the parking lot fender bender",
+      "the accident in the cemetery lane",
+      "damage from the procession accident",
+      "fixing the dented family car",
+      "the minor crash",
+      "the dented stretch car",
+      "accident damage",
+      "the crash at the cemetery gate",
+      "refinishing the damaged door panels",
+      "our share of the claim",
+      "the vehicle accident",
+      "a scrape with a delivery truck",
+      "restoring the family car's finish",
+      "the out-of-pocket portion of the claim",
+      "the damaged family car",
+      "the procession crash"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Obituary & Memorial Printing",
+   "aliases": [
+    "memorial printing",
+    "obituary costs",
+    "printed stationery",
+    "program printing",
+    "obit spend"
+   ],
+   "narrative": [
+    "Memorial printing",
+    "Obituary costs",
+    "Program printing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gazette Media Group",
+     "base": 4300,
+     "memo": "Newspaper death notices"
+    },
+    {
+     "vendor": "Willowpress Print Shop",
+     "base": 2600,
+     "memo": "Service folders prayer cards"
+    }
+   ],
+   "events": [
+    {
+     "key": "photo_tribute_books",
+     "vendor": "Willowpress Print Shop",
+     "memos": [
+      "Photo tribute books — layout",
+      "Photo tribute books — binding"
+     ],
+     "cross_memo": "Photo tribute books — scanning labor",
+     "plain": [
+      "the photo tribute books",
+      "photo tribute book costs",
+      "the photo tribute books order"
+     ],
+     "oblique": [
+      "the keepsake album launch",
+      "premium keepsake albums",
+      "bound picture memorials for families",
+      "the new memorial album package",
+      "hardcover keepsakes",
+      "picture albums sold with the premium package",
+      "keepsake album production",
+      "the album program",
+      "picture keepsakes for several large families",
+      "memorial albums",
+      "the keepsake upsell",
+      "digitizing family pictures for albums",
+      "hardcover memorial keepsakes",
+      "the premium album offering",
+      "album production for the spring rush",
+      "family picture keepsakes"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "rebrand_rollout",
+     "vendor": "Brightway Signage Studio",
+     "memos": [
+      "Rebrand rollout — easel signs",
+      "Rebrand rollout — envelopes"
+     ],
+     "cross_memo": "Rebrand rollout — website refresh",
+     "plain": [
+      "the rebrand rollout",
+      "rebrand rollout costs",
+      "the rebrand rollout materials"
+     ],
+     "oblique": [
+      "the new brand identity",
+      "swapping in the new logo everywhere",
+      "the name change across locations",
+      "updating stationery to the new brand",
+      "the brand overhaul",
+      "new visual identity",
+      "replacing materials with the old logo",
+      "the post-acquisition identity change",
+      "the logo change",
+      "corporate identity materials",
+      "aligning all locations under one brand",
+      "the marketing overhaul",
+      "new branded collateral",
+      "retiring the legacy logo",
+      "brand standardization",
+      "the identity project"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Chapel & Visitation Facilities",
+   "aliases": [
+    "chapel upkeep",
+    "visitation facilities",
+    "chapel facilities",
+    "viewing room upkeep",
+    "chapel spend"
+   ],
+   "narrative": [
+    "Chapel upkeep",
+    "Visitation facilities",
+    "Viewing room upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Evergreen Janitorial",
+     "base": 5200,
+     "memo": "Nightly cleaning"
+    },
+    {
+     "vendor": "Hollis Floral Contracts",
+     "base": 1800,
+     "memo": "Lobby arrangements weekly"
+    },
+    {
+     "vendor": "Summit HVAC Partners",
+     "base": 2200,
+     "memo": "Monthly HVAC maintenance plan"
+    }
+   ],
+   "events": [
+    {
+     "key": "rooftop_compressor",
+     "vendor": "Summit HVAC Partners",
+     "memos": [
+      "Rooftop compressor — replacement",
+      "Rooftop compressor — crane lift"
+     ],
+     "cross_memo": "Rooftop compressor — portable chiller",
+     "plain": [
+      "the rooftop compressor",
+      "rooftop compressor costs",
+      "the rooftop compressor job"
+     ],
+     "oblique": [
+      "the failed cooling unit",
+      "keeping viewing rooms cool in the heat wave",
+      "air conditioning failure",
+      "the broken AC on the roof",
+      "restoring air conditioning before visitations",
+      "the cooling outage",
+      "the dead AC unit",
+      "a summer cooling breakdown",
+      "the new AC unit",
+      "hoisting new equipment onto the roof",
+      "temporary cooling during the outage",
+      "the climate control failure",
+      "getting the AC back",
+      "the main chapel's cooling system",
+      "heat complaints from families",
+      "cooling equipment"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "livestream_booth",
+     "vendor": "Oakhaven Audio Visual",
+     "memos": [
+      "Livestream booth — cameras",
+      "Livestream booth — wiring"
+     ],
+     "cross_memo": "Livestream booth — streaming licence",
+     "plain": [
+      "the livestream booth",
+      "livestream booth costs",
+      "the livestream booth build"
+     ],
+     "oblique": [
+      "broadcasting services for remote mourners",
+      "the webcast setup",
+      "letting distant relatives watch online",
+      "online memorial broadcasts",
+      "remote attendance capability",
+      "the video setup in the main chapel",
+      "virtual attendance",
+      "the webcast rollout",
+      "equipment so families can watch remotely",
+      "online funeral broadcasting",
+      "the remote viewing project",
+      "broadcast gear",
+      "adding webcast capability",
+      "the virtual funeral offering",
+      "video and sound installs",
+      "the family-requested webcasts"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Occupancy Rent",
+   "aliases": [
+    "rent",
+    "occupancy",
+    "premises rent",
+    "lease costs",
+    "occupancy costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Premises rent"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborview Property Trust",
+     "base": 24000,
+     "memo": "Main home base rent"
+    },
+    {
+     "vendor": "Larkspur Realty Holdings",
+     "base": 14500,
+     "memo": "Westside location base rent"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam_reconciliation",
+     "vendor": "Harborview Property Trust",
+     "memos": [
+      "CAM reconciliation — prior year",
+      "CAM reconciliation — tax true-up"
+     ],
+     "cross_memo": "CAM reconciliation — parking lot resurfacing",
+     "plain": [
+      "the CAM reconciliation",
+      "CAM reconciliation charges",
+      "the CAM reconciliation bill"
+     ],
+     "oblique": [
+      "the landlord's common-area catch-up",
+      "shared-area charges billed late",
+      "the landlord's annual settle-up",
+      "back-billed common area costs",
+      "higher assessed levies passed through",
+      "common area overages",
+      "the landlord's settle-up",
+      "last period's shared expenses",
+      "pass-through expense adjustments",
+      "the landlord catch-up bill",
+      "underbilled common charges",
+      "shared upkeep billed after the fact",
+      "the operating expense settle-up",
+      "assessment increases",
+      "common area charges",
+      "the annual landlord adjustment"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "satellite_warehouse",
+     "vendor": "Fairmont Storage Partners",
+     "memos": [
+      "Satellite warehouse — first month",
+      "Satellite warehouse — move-in fee"
+     ],
+     "cross_memo": "Satellite warehouse — racking install",
+     "plain": [
+      "the satellite warehouse",
+      "satellite warehouse costs",
+      "the satellite warehouse lease"
+     ],
+     "oblique": [
+      "extra space for casket inventory",
+      "a new spot for merchandise inventory",
+      "the offsite inventory space",
+      "holding casket stock offsite",
+      "additional square footage",
+      "leasing an outbuilding for merchandise",
+      "space for urns and vault inventory",
+      "the offsite merchandise space",
+      "more room for caskets",
+      "expanding square footage",
+      "the new offsite space",
+      "surplus casket inventory",
+      "shelving out the offsite space",
+      "keeping merchandise off the showroom floor",
+      "the extra building",
+      "inventory space"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Software Subscriptions",
+   "aliases": [
+    "software",
+    "saas",
+    "software subscriptions",
+    "case management software",
+    "tech subscriptions"
+   ],
+   "narrative": [
+    "Software",
+    "Software subscriptions",
+    "Tech subscriptions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Passage Case Systems",
+     "base": 5600,
+     "memo": "Arrangement software seats"
+    },
+    {
+     "vendor": "Ledgerline Cloud",
+     "base": 1900,
+     "memo": "Accounting platform subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "data_migration",
+     "vendor": "Passage Case Systems",
+     "memos": [
+      "Data migration — records import",
+      "Data migration — onboarding"
+     ],
+     "cross_memo": "Data migration — temp keying staff",
+     "plain": [
+      "the data migration",
+      "data migration costs",
+      "the data migration project"
+     ],
+     "oblique": [
+      "moving acquired homes onto our tools",
+      "converting the acquired home's history",
+      "bringing the newly bought locations online",
+      "the conversion project",
+      "loading decades of family files",
+      "integrating the acquisition",
+      "getting the new locations onto one tool",
+      "the conversion",
+      "historical file conversion",
+      "retiring the old funeral program",
+      "the acquisition integration",
+      "consolidating legacy family files",
+      "transferring old family histories",
+      "the cutover",
+      "switching the acquired locations over",
+      "legacy file conversion"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "ransomware_recovery",
+     "vendor": "Vigil Secure IT",
+     "memos": [
+      "Ransomware recovery — forensics",
+      "Ransomware recovery — backup restore"
+     ],
+     "cross_memo": "Ransomware recovery — breach notices",
+     "plain": [
+      "the ransomware recovery",
+      "ransomware recovery costs",
+      "the ransomware recovery work"
+     ],
+     "oblique": [
+      "the cyberattack",
+      "cleaning up after the hack",
+      "the security incident",
+      "investigating the intrusion",
+      "getting locked files back",
+      "the cyber incident response",
+      "the hacker cleanup",
+      "responding to the extortion attack",
+      "the network intrusion",
+      "emergency security work",
+      "the lockout attack",
+      "regaining access after the attack",
+      "the attack cleanup",
+      "the encrypted file crisis",
+      "incident response",
+      "the security emergency"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

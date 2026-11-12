@@ -1,0 +1,346 @@
+{
+  "company": "brightline",
+  "claims": [
+    {
+      "id": "BRT-01",
+      "quote": "Total opex was $857K, up 10% on September.",
+      "account": "TOTAL",
+      "stated": {
+        "direction": "up",
+        "pct": 10,
+        "current": 857000
+      },
+      "strength": "none",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Total went from $777,963.30 to $856,945.84: +$78,982.54, +10.2%. Balance and percent are right at their written precision; no cause is stated.",
+      "evidence": [],
+      "cause_txns": [],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "BRT-02",
+      "quote": "Hosting & infrastructure was up ~$31k (roughly 50%) as onboarding the Meridian Health account drove both compute and warehouse usage.",
+      "account": "Hosting & Infrastructure",
+      "stated": {
+        "direction": "up",
+        "change": 31000,
+        "pct": 50
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Hosting went from $60,360.69 to $91,594.77: +$31,234.08, +51.7%. The compute bill (Nimbus Cloud, +$21,832.32) and the data-warehouse bill (Glacier Data Cloud, +$9,264.00) together are +$31,096.32, 99.6% of the change. The cause is split across two vendors and named in business terms: no memo says 'Meridian'.",
+      "evidence": [
+        "JE-104614",
+        "JE-104718",
+        "JE-104620",
+        "JE-104723"
+      ],
+      "cause_txns": [
+        "JE-104614",
+        "JE-104718",
+        "JE-104620",
+        "JE-104723"
+      ],
+      "mess": [
+        "split_across_vendors",
+        "business_language"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "BRT-03",
+      "quote": "Software subscriptions increased $14.9K, nearly all of it the Voxly annual license, which was expensed on payment; we will move it to prepaid in November.",
+      "account": "Software Subscriptions",
+      "stated": {
+        "direction": "up",
+        "change": 14900
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Software went from $18,576.00 to $33,511.50: +$14,935.50. The Voxly annual license of $14,400 (expensed on payment instead of prepaid) is 96% of it; the rest is the Pipeline CRM renewal uplift in the prepaid amortisation (+$445.50) and seats (+$90).",
+      "evidence": [
+        "JE-104730"
+      ],
+      "cause_txns": [
+        "JE-104730"
+      ],
+      "mess": [
+        "one_off",
+        "prepaid_amortisation"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "BRT-04",
+      "quote": "payroll was up about $9K, almost entirely the two backend engineers who started Oct 13.",
+      "account": "Salaries & Wages",
+      "stated": {
+        "direction": "up",
+        "change": 9000
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Salaries went from $424,807.64 to $433,530.65: +$8,723.01. The Engineering payroll lines rose +$9,070.68 (the new hires' partial first run and full second run); the other departments moved -$347.67. Payroll memos name departments, not hires.",
+      "evidence": [
+        "JE-104650",
+        "JE-104692",
+        "JE-104757",
+        "JE-104805"
+      ],
+      "cause_txns": [
+        "JE-104650",
+        "JE-104692",
+        "JE-104757",
+        "JE-104805"
+      ],
+      "mess": [
+        "business_language"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "BRT-05",
+      "quote": "Recruiting jumped $34.5K: two agency placement fees for the backend hires, against one in September.",
+      "account": "Recruiting",
+      "stated": {
+        "direction": "up",
+        "change": 34500
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Recruiting went from $27,550.00 to $62,050.00: +$34,500.00. Talent Bridge placement fees: one in September ($24,000, an AE), two in October ($30,000 and $28,500, backend engineers). Net +$34,500, 100% of the change.",
+      "evidence": [
+        "JE-104667",
+        "JE-104755",
+        "JE-104790"
+      ],
+      "cause_txns": [
+        "JE-104667",
+        "JE-104755",
+        "JE-104790"
+      ],
+      "mess": [],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "BRT-06",
+      "quote": "Contractor spend ticked up about $2.8K with Polaris QA coming on.",
+      "account": "Contractors",
+      "stated": {
+        "direction": "up",
+        "change": 2800
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_direction",
+      "why": "Contractors went from $18,649.75 to $15,855.50: -$2,794.25, a fall of the stated size. Polaris QA ($3,800) is new, but the Ana Ribeiro design contract ($6,200) ended and the GBP retainer cost $394.25 less at the October rate.",
+      "evidence": [
+        "JE-104682",
+        "JE-104791",
+        "JE-104671",
+        "JE-104783"
+      ],
+      "cause_txns": [
+        "JE-104791"
+      ],
+      "mess": [
+        "fx"
+      ],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "BRT-07",
+      "quote": "Commissions fell $25K because the Q3 accelerator true-up hit in September and did not repeat.",
+      "account": "Sales Commissions",
+      "stated": {
+        "direction": "down",
+        "change": -25000
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Commissions went from $44,400.00 to $19,150.00: -$25,250.00. The September 'Q3 accelerator true-up' of $26,400 did not recur: 105% of the fall, offset by base commissions +$1,150.",
+      "evidence": [
+        "JE-104704"
+      ],
+      "cause_txns": [
+        "JE-104704"
+      ],
+      "mess": [
+        "one_off",
+        "prior_period_cause"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "BRT-08",
+      "quote": "Marketing programs rose $18K on the DataOps World sponsorship.",
+      "account": "Marketing Programs",
+      "stated": {
+        "direction": "up",
+        "change": 18000
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "wrong_amount",
+      "why": "Marketing went from $21,280.00 to $49,530.00: +$28,250.00, not $18K (36% short). The cause is real: the DataOps World sponsorship ($24,000) and booth ($6,850) are $30,850, partly offset by September's $3,000 webinar series.",
+      "evidence": [
+        "JE-104738",
+        "JE-104780"
+      ],
+      "cause_txns": [
+        "JE-104738",
+        "JE-104780"
+      ],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "BRT-09",
+      "quote": "T&E dropped roughly $24K, or about 60%, with no repeat of September's Sonoma offsite.",
+      "account": "Travel & Entertainment",
+      "stated": {
+        "direction": "down",
+        "change": -24000,
+        "pct": -60
+      },
+      "strength": "whole",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "T&E went from $39,642.48 to $15,797.41: -$23,845.07, -60.2%. September's offsite (resort $21,300, shuttle $2,400; memos say 'Q4 SKO offsite', not 'Sonoma') is $23,700, 99% of the fall.",
+      "evidence": [
+        "JE-104680",
+        "JE-104681"
+      ],
+      "cause_txns": [
+        "JE-104680",
+        "JE-104681"
+      ],
+      "mess": [
+        "prior_period_cause",
+        "business_language"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "BRT-10",
+      "quote": "Legal and professional fees rose $8.3K, driven by the first SOC 2 progress billing; the September Haldane Pryce accrual reversed and was replaced by the actual invoice.",
+      "account": "Legal & Professional",
+      "stated": {
+        "direction": "up",
+        "change": 8300
+      },
+      "strength": "most",
+      "truth": "CORRECT",
+      "defect": null,
+      "why": "Legal & professional went from $19,500.00 to $27,800.00: +$8,300.00. The SOC 2 progress bill ($12,500) is the driver; Haldane Pryce's line moved -$4,200 (September accrual $15,000; October reversal -$15,000, actual invoice $16,800 and a new $9,000 accrual).",
+      "evidence": [
+        "JE-104794",
+        "JE-104706",
+        "JE-104711",
+        "JE-104770",
+        "JE-104817"
+      ],
+      "cause_txns": [
+        "JE-104794"
+      ],
+      "mess": [
+        "accrual_reversal"
+      ],
+      "ideal": "PASS",
+      "acceptable": [
+        "PASS",
+        "REVIEW"
+      ]
+    },
+    {
+      "id": "BRT-11",
+      "quote": "Rent & facilities were up $2.6K for the new 4th-floor storage lease.",
+      "account": "Rent & Facilities",
+      "stated": {
+        "direction": "up",
+        "change": 2600
+      },
+      "strength": "whole",
+      "truth": "WRONG",
+      "defect": "fabricated_cause",
+      "why": "Rent & facilities went from $21,124.90 to $23,727.33: +$2,602.43, so the amount is right. There is no storage lease: rent to Pier 70 is flat. The increase is a one-time carpet extraction and window washing ($1,950) and a higher electric bill (+$652.43).",
+      "evidence": [
+        "JE-104795",
+        "JE-104749"
+      ],
+      "cause_txns": [],
+      "absent_terms": [
+        "storage",
+        "lease",
+        "4th"
+      ],
+      "mess": [],
+      "ideal": "FAIL",
+      "acceptable": [
+        "FAIL",
+        "REVIEW"
+      ]
+    }
+  ],
+  "non_claims": [
+    {
+      "quote": "October was a strong month: we closed the Meridian Health expansion and ARR ended at $14.2M.",
+      "why": "ARR is not a ledger account."
+    },
+    {
+      "quote": "We expect hosting to step down once the Meridian historical backfill completes in November.",
+      "why": "A forecast."
+    },
+    {
+      "quote": "Insurance, merchant fees and office costs were immaterial.",
+      "why": "No figure or direction; a materiality remark."
+    },
+    {
+      "quote": "Headcount ended the month at 63.",
+      "why": "Headcount is not in the ledger."
+    }
+  ]
+}

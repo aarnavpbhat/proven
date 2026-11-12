@@ -1,0 +1,830 @@
+{
+ "slug": "planetarium-and-science-center",
+ "industry": "planetarium and science center",
+ "entities": [
+  "Celestia Dome & Science Center",
+  "Northern Lights Discovery Museum",
+  "Orionfield Planetarium Trust",
+  "Bluewater Science & Space Center",
+  "Starhaven Planetarium Group"
+ ],
+ "accounts": [
+  {
+   "name": "Dome Projection Maintenance",
+   "aliases": [
+    "projection",
+    "dome projection",
+    "projector upkeep",
+    "dome maintenance",
+    "projection costs"
+   ],
+   "narrative": [
+    "Projection costs",
+    "Dome projection",
+    "Projector upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Starfield Optics Service Co.",
+     "base": 14500,
+     "memo": "Monthly projector service contract — Main Dome"
+    },
+    {
+     "vendor": "Lumenvault Lamp Supply",
+     "base": 3200,
+     "memo": "Laser light source consumables — Main Dome"
+    },
+    {
+     "vendor": "Calibra AV Technicians",
+     "base": 2800,
+     "memo": "Edge-blend alignment visit — Theater B"
+    }
+   ],
+   "events": [
+    {
+     "key": "pixel_rebuild",
+     "vendor": "Starfield Optics Service Co.",
+     "memos": [
+      "Pixel engine rebuild — unit 4 parts, Main Dome",
+      "Pixel engine rebuild — field technician labor"
+     ],
+     "cross_memo": "Pixel engine rebuild — temporary show cancellation refunds",
+     "plain": [
+      "the pixel engine rebuild",
+      "pixel engine rebuild work",
+      "the pixel engine rebuild on unit four"
+     ],
+     "oblique": [
+      "fixing the failed imaging hardware",
+      "the burned-out imaging block",
+      "restoring picture quality overhead",
+      "repairs after the planetarium went dark mid-program",
+      "the image chip failure",
+      "replacing worn-out display electronics",
+      "getting the fourth imager back online",
+      "the emergency hardware fix",
+      "the overdue display repair",
+      "restoring the blank segment of the sky",
+      "the sky-image outage repair",
+      "work requested by the operations director after the outage",
+      "the electronics swap ahead of the gala",
+      "hardware failure fixes",
+      "bringing the darkened quadrant back",
+      "the warranty-expired component swap"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "panel_recoat",
+     "vendor": "Helion Seamless Screens",
+     "memos": [
+      "Perforated panel recoat — north hemisphere sections",
+      "Perforated panel recoat — scaffold and crew"
+     ],
+     "cross_memo": "Perforated panel recoat — air handler filter swap",
+     "plain": [
+      "the perforated panel recoat",
+      "perforated panel recoat work",
+      "the perforated panel recoat project"
+     ],
+     "oblique": [
+      "repainting the overhead canvas",
+      "the ceiling refinish",
+      "fixing stains and seams on the sky surface",
+      "the reflectivity restoration",
+      "cleaning up the water-damaged ceiling",
+      "the shell refinishing job",
+      "making the overhead canvas uniform again",
+      "the coating refresh the board approved",
+      "repairs to the stained ceiling after the leak",
+      "lifts and painters inside the planetarium",
+      "the once-a-decade surface refresh",
+      "fixing visible seams overhead",
+      "the brightness uniformity work",
+      "repainting before the new season",
+      "the acoustic shell touch-up",
+      "the sky surface repaint"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Exhibit Fabrication & Upkeep",
+   "aliases": [
+    "exhibits",
+    "exhibit upkeep",
+    "exhibit fabrication",
+    "gallery exhibits",
+    "exhibit maintenance"
+   ],
+   "narrative": [
+    "Exhibit upkeep",
+    "Exhibit fabrication",
+    "Gallery exhibits"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kinetic Gallery Works",
+     "base": 9800,
+     "memo": "Interactive exhibit repairs — Discovery Hall"
+    },
+    {
+     "vendor": "Brightwood Millwork",
+     "base": 4200,
+     "memo": "Display case carpentry — Earth Sciences wing"
+    },
+    {
+     "vendor": "Signal Craft Graphics",
+     "base": 2100,
+     "memo": "Label and graphic panel reprints — Lobby"
+    }
+   ],
+   "events": [
+    {
+     "key": "vortex_chamber",
+     "vendor": "Kinetic Gallery Works",
+     "memos": [
+      "Tornado vortex chamber — fan motor and fog system, Weather Zone",
+      "Tornado vortex chamber — install labor"
+     ],
+     "cross_memo": "Tornado vortex chamber — dedicated electrical circuit",
+     "plain": [
+      "the tornado vortex chamber",
+      "tornado vortex chamber build",
+      "the new tornado vortex chamber"
+     ],
+     "oblique": [
+      "the twister demo",
+      "a new storm simulation for kids",
+      "the spinning-cloud attraction",
+      "replacing the retired hurricane station",
+      "the meteorology hands-on piece",
+      "building the swirling mist column",
+      "the atmospheric science centerpiece",
+      "a cyclone model the education team requested",
+      "the new climate attraction",
+      "funnel-cloud demonstration build",
+      "the storm-themed addition",
+      "the summer headline attraction",
+      "upgrades for the severe-skies area",
+      "the whirlwind showpiece",
+      "a rebuilt atmospheric demo near the entrance",
+      "the twister rebuild"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "mammoth_replica",
+     "vendor": "Paleo Cast Studios",
+     "memos": [
+      "Mammoth skeleton replica — resin casting, Ice Age room",
+      "Mammoth skeleton replica — armature mounting"
+     ],
+     "cross_memo": "Mammoth skeleton replica — freight crating",
+     "plain": [
+      "the mammoth skeleton replica",
+      "mammoth skeleton replica costs",
+      "the mammoth skeleton replica mount"
+     ],
+     "oblique": [
+      "the new fossil centerpiece",
+      "a prehistoric elephant reproduction",
+      "the woolly beast for the natural history area",
+      "bones for the glacial-era corner",
+      "the extinct megafauna model",
+      "a donor-requested fossil reproduction",
+      "the tusked giant in the atrium",
+      "the big bone build",
+      "the paleontology centerpiece",
+      "that fossil reproduction the curator wanted",
+      "the Pleistocene showpiece",
+      "the frozen-era creature model",
+      "the life-size extinct animal",
+      "the prehistoric acquisition",
+      "the woolly behemoth",
+      "the replacement for the old dinosaur model"
+     ],
+     "low": 30000,
+     "high": 60000
+    }
+   ]
+  },
+  {
+   "name": "Show Content Licensing",
+   "aliases": [
+    "show licensing",
+    "content licensing",
+    "show licenses",
+    "fulldome content",
+    "show rights"
+   ],
+   "narrative": [
+    "Show licensing",
+    "Content licensing",
+    "Fulldome content"
+   ],
+   "recurring": [
+    {
+     "vendor": "Orbital Story Distribution",
+     "base": 7600,
+     "memo": "Fulldome show license — Cosmic Origins, Main Theater"
+    },
+    {
+     "vendor": "Nebula Sound Library",
+     "base": 1800,
+     "memo": "Music and soundtrack rights — planetarium shows"
+    },
+    {
+     "vendor": "Skyward Media Partners",
+     "base": 5200,
+     "memo": "Feature film license — Giant Screen Theater"
+    }
+   ],
+   "events": [
+    {
+     "key": "eclipse_premiere",
+     "vendor": "Orbital Story Distribution",
+     "memos": [
+      "Eclipse premiere package — exclusive first-run fee",
+      "Eclipse premiere package — marketing trailer assets"
+     ],
+     "cross_memo": "Eclipse premiere package — opening night catering",
+     "plain": [
+      "the eclipse premiere package",
+      "eclipse premiere package costs",
+      "the eclipse premiere package deal"
+     ],
+     "oblique": [
+      "the solar-shadow program debut",
+      "launching the new totality presentation",
+      "the headline attraction for the sun-and-moon season",
+      "early access to a new production",
+      "the debut deal for the new season",
+      "getting the new astronomy title before competitors",
+      "the launch bundle",
+      "the totality title",
+      "a new production the director pushed for",
+      "the debut promotional kit",
+      "the big programming launch",
+      "the celestial-alignment title debut",
+      "securing the season's headline presentation",
+      "a new astronomy program rollout",
+      "the regional debut agreement",
+      "the lunar-shadow presentation"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "spanish_dubbing",
+     "vendor": "Aurora Translation Collective",
+     "memos": [
+      "Spanish narration dubbing — voice talent",
+      "Spanish narration dubbing — studio mix session"
+     ],
+     "cross_memo": "Spanish narration dubbing — bilingual signage",
+     "plain": [
+      "the spanish narration dubbing",
+      "spanish narration dubbing work",
+      "the spanish narration dubbing project"
+     ],
+     "oblique": [
+      "the second-language audio track",
+      "localizing programs for Latino visitors",
+      "an outreach effort for non-English audiences",
+      "the language accessibility upgrade",
+      "the community-requested Hispanic version",
+      "multilingual audio",
+      "foreign-language versions of our programs",
+      "the accessibility grant deliverable",
+      "adding a second audio language",
+      "the localization work",
+      "the localized audio",
+      "hiring actors to reread the script in another tongue",
+      "the en español version",
+      "new-language audio production",
+      "the multilingual accessibility push",
+      "the dual-language upgrade"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Observatory & Telescope Operations",
+   "aliases": [
+    "observatory",
+    "telescope ops",
+    "observatory operations",
+    "telescope costs",
+    "rooftop observatory"
+   ],
+   "narrative": [
+    "Observatory operations",
+    "Telescope costs",
+    "Telescope ops"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearsky Instrument Care",
+     "base": 3600,
+     "memo": "Telescope collimation and cleaning — Rooftop Observatory"
+    },
+    {
+     "vendor": "Polaris Remote Networks",
+     "base": 1400,
+     "memo": "Remote telescope data link — Ridge Station"
+    },
+    {
+     "vendor": "Highgate Weather Services",
+     "base": 950,
+     "memo": "Sky conditions forecasting subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "mirror_realuminizing",
+     "vendor": "Clearsky Instrument Care",
+     "memos": [
+      "Primary mirror realuminizing — 24-inch reflector coating",
+      "Primary mirror realuminizing — removal and reinstall"
+     ],
+     "cross_memo": "Primary mirror realuminizing — crane lift at roof hatch",
+     "plain": [
+      "the primary mirror realuminizing",
+      "primary mirror realuminizing work",
+      "the primary mirror realuminizing job"
+     ],
+     "oblique": [
+      "recoating the big optics",
+      "restoring the scope's brightness",
+      "the main optic refresh",
+      "fixing tarnished optics",
+      "the overdue glass resurfacing",
+      "sending the large optic away for treatment",
+      "the once-a-decade optics refresh",
+      "bringing image sharpness back for public nights",
+      "the big glass job",
+      "resurfacing the light-gathering element",
+      "the optical refurbishment the astronomer flagged",
+      "the tarnish fix",
+      "the silvering work",
+      "getting the flagship scope back to spec",
+      "the vacuum deposition job",
+      "renewing the scope's optics before meteor season"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "shutter_motor",
+     "vendor": "Meridian Rotation Engineering",
+     "memos": [
+      "Shutter drive motor — gearbox replacement",
+      "Shutter drive motor — emergency call-out"
+     ],
+     "cross_memo": "Shutter drive motor — temporary tarp over opening",
+     "plain": [
+      "the shutter drive motor",
+      "shutter drive motor repair",
+      "the shutter drive motor failure"
+     ],
+     "oblique": [
+      "the stuck observing slit",
+      "fixing the jammed enclosure",
+      "getting the cupola turning again",
+      "the broken aperture mechanism",
+      "repairs to the domed housing that wouldn't close",
+      "the rain exposure scare up top",
+      "the seized mechanism",
+      "fixing the jammed slit door",
+      "the cupola breakdown",
+      "keeping the enclosure sealed",
+      "the failed electric mechanism up top",
+      "a repair the facilities chief rushed",
+      "the jammed cupola",
+      "making the slit close again",
+      "the enclosure mechanism fix",
+      "the rainy-night cupola failure"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Education Program Supplies",
+   "aliases": [
+    "education supplies",
+    "program supplies",
+    "classroom supplies",
+    "school program materials",
+    "edu supplies"
+   ],
+   "narrative": [
+    "Education supplies",
+    "Program supplies",
+    "Classroom supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lab Ready Science Supply",
+     "base": 5400,
+     "memo": "Hands-on lab kits — school field trip program"
+    },
+    {
+     "vendor": "Rocketry Hobby Wholesale",
+     "base": 2300,
+     "memo": "Model rocket engines — summer camp"
+    },
+    {
+     "vendor": "Little Explorer Print Co.",
+     "base": 1600,
+     "memo": "Activity workbooks — homeschool series"
+    }
+   ],
+   "events": [
+    {
+     "key": "robotics_bundle",
+     "vendor": "Lab Ready Science Supply",
+     "memos": [
+      "Robotics competition bundle — 30 starter sets, Teen Makers Club",
+      "Robotics competition bundle — spare servos and batteries"
+     ],
+     "cross_memo": "Robotics competition bundle — team travel to regional meet",
+     "plain": [
+      "the robotics competition bundle",
+      "robotics competition bundle purchases",
+      "the robotics competition bundle order"
+     ],
+     "oblique": [
+      "gear for the youth robot league",
+      "equipping the young engineers",
+      "the bot-building hardware",
+      "outfitting high schoolers for the tournament",
+      "the STEM challenge equipment",
+      "a grant-funded engineering push for adolescents",
+      "programmable machine parts",
+      "the tournament hardware",
+      "outfitting the new coding cohort",
+      "replacing worn-out bot components",
+      "the engineering contest gear",
+      "the youth tournament equipment",
+      "a buy for the student engineers",
+      "gear the youth coordinator requested",
+      "the programmable-machine buy",
+      "prep for the state tournament"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "meteorite_collection",
+     "vendor": "Stellar Specimen Traders",
+     "memos": [
+      "Meteorite touch collection — iron and stony samples, Outreach Van",
+      "Meteorite touch collection — certification and cases"
+     ],
+     "cross_memo": "Meteorite touch collection — insurance rider",
+     "plain": [
+      "the meteorite touch collection",
+      "meteorite touch collection purchase",
+      "the meteorite touch collection buy"
+     ],
+     "oblique": [
+      "space rocks kids can handle",
+      "a handling set of fallen space debris",
+      "authentic extraterrestrial rocks for the mobile unit",
+      "the space-rock teaching set",
+      "genuine fragments from asteroids",
+      "tactile space rocks",
+      "the asteroid fragment purchase",
+      "pieces of fallen stars for visiting groups",
+      "the extraterrestrial mineral buy",
+      "a curator-vetted rock acquisition",
+      "space debris for traveling lessons",
+      "the handle-it asteroid set",
+      "authenticated asteroid pieces",
+      "a new tactile teaching aid",
+      "the fallen-star acquisition",
+      "rocks from beyond Earth"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Facility Utilities",
+   "aliases": [
+    "utilities",
+    "utility costs",
+    "power and water",
+    "utility bills",
+    "energy costs"
+   ],
+   "narrative": [
+    "Utility costs",
+    "Utility bills",
+    "Energy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-County Power & Light",
+     "base": 18500,
+     "memo": "Electric service — Main Building"
+    },
+    {
+     "vendor": "Valley Municipal Water",
+     "base": 2400,
+     "memo": "Water and sewer — Main Building"
+    },
+    {
+     "vendor": "Northgate Gas Utility",
+     "base": 3100,
+     "memo": "Natural gas heating — Main Building and annex"
+    }
+   ],
+   "events": [
+    {
+     "key": "demand_surcharge",
+     "vendor": "Tri-County Power & Light",
+     "memos": [
+      "Peak demand surcharge — chiller plant spike",
+      "Peak demand surcharge — meter 2 reconciliation"
+     ],
+     "cross_memo": "Peak demand surcharge — chiller controls tuning",
+     "plain": [
+      "the peak demand surcharge",
+      "peak demand surcharge billing",
+      "the peak demand surcharge on the bill"
+     ],
+     "oblique": [
+      "the heat wave cooling load",
+      "running the air conditioning flat out",
+      "the penalty for our highest usage hour",
+      "a cooling-related penalty",
+      "the hottest week's kilowatt hit",
+      "the rate tier jump",
+      "max-load billing",
+      "the penalty for simultaneous equipment startup",
+      "kilowatt overage",
+      "the air conditioning overload",
+      "a penalty imposed after the hot spell",
+      "the cooling crunch",
+      "higher capacity billing",
+      "the load-based penalty",
+      "running every cooling unit at once",
+      "the heat-wave penalty"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "generator_rental",
+     "vendor": "Brightline Generator Rentals",
+     "memos": [
+      "Backup generator rental — 500 kW unit, loading dock",
+      "Backup generator rental — diesel refuel"
+     ],
+     "cross_memo": "Backup generator rental — event staff overtime during outage",
+     "plain": [
+      "the backup generator rental",
+      "backup generator rental charges",
+      "the backup generator rental for the outage"
+     ],
+     "oblique": [
+      "keeping things running when the grid failed",
+      "temporary on-site juice through the blackout",
+      "the blackout contingency",
+      "the storm-related blackout response",
+      "the grid failure workaround",
+      "keeping exhibits alive through the blackout",
+      "the emergency fuel-burning equipment",
+      "the blackout",
+      "hauling in trailer-mounted equipment",
+      "contingency equipment for the grid failure",
+      "the storm blackout fix",
+      "a stopgap feed while the substation was repaired",
+      "the substation failure response",
+      "keeping the freezers and servers going",
+      "the outside hookup the ops manager ordered",
+      "hired emergency equipment"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Janitorial & Custodial Services",
+   "aliases": [
+    "janitorial",
+    "custodial",
+    "janitorial contract",
+    "custodial services",
+    "custodial spend"
+   ],
+   "narrative": [
+    "Janitorial contract",
+    "Custodial services",
+    "Custodial spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Spotless Commons Janitorial",
+     "base": 11200,
+     "memo": "Nightly custodial contract — Main Building"
+    },
+    {
+     "vendor": "Greenleaf Sanitation Supply",
+     "base": 1900,
+     "memo": "Restroom paper and soap — public areas"
+    },
+    {
+     "vendor": "ClearPane Window Co.",
+     "base": 1300,
+     "memo": "Lobby glass and atrium windows"
+    }
+   ],
+   "events": [
+    {
+     "key": "gala_scrub",
+     "vendor": "Spotless Commons Janitorial",
+     "memos": [
+      "Gala deep scrub — rotunda and ballroom carpets",
+      "Gala deep scrub — overnight crew"
+     ],
+     "cross_memo": "Gala deep scrub — linen and table rental returns",
+     "plain": [
+      "the gala deep scrub",
+      "gala deep scrub charges",
+      "the gala deep scrub after the fundraiser"
+     ],
+     "oblique": [
+      "cleanup after the fundraiser",
+      "restoring the venue after the donor party",
+      "the post-benefit turnaround",
+      "getting the place ready for morning visitors after the soirée",
+      "shampooing floors after the benefit",
+      "the fundraiser aftermath",
+      "extra hands after the black-tie evening",
+      "the benefit-night mess",
+      "after-party cleanup the events office booked",
+      "stain removal after the donor dinner",
+      "the reset after the annual benefit",
+      "the donor-dinner cleanup",
+      "wine spills and confetti removal",
+      "the big-night tidy",
+      "restoring floors after the celebration",
+      "the post-fundraiser tidy-up"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "mold_abatement",
+     "vendor": "BioShield Remediation",
+     "memos": [
+      "Mold abatement — basement storage, Collections vault",
+      "Mold abatement — air clearance testing"
+     ],
+     "cross_memo": "Mold abatement — dehumidifier purchase",
+     "plain": [
+      "the mold abatement",
+      "mold abatement work",
+      "the mold abatement project"
+     ],
+     "oblique": [
+      "the fungus problem downstairs",
+      "removing spores from the archive",
+      "the damp cellar fix",
+      "a health hazard cleanup below ground",
+      "the musty lower-level issue",
+      "the fungal growth response",
+      "dealing with the leak's aftermath underground",
+      "spore removal the insurer required",
+      "the moisture contamination cleanup",
+      "making the archive safe for staff",
+      "the hazmat team visit",
+      "fixing the musty smell below",
+      "the lower-level contamination",
+      "the indoor hazard response",
+      "the fungus outbreak",
+      "protecting stored artifacts from moisture"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Ticketing & Admissions Systems",
+   "aliases": [
+    "ticketing",
+    "admissions systems",
+    "ticketing systems",
+    "box office tech",
+    "pos and ticketing"
+   ],
+   "narrative": [
+    "Ticketing systems",
+    "Admissions systems",
+    "Box office tech"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gatepass Software",
+     "base": 4800,
+     "memo": "Online ticketing platform fee — all venues"
+    },
+    {
+     "vendor": "Turnstile Retail Tech",
+     "base": 1700,
+     "memo": "Point-of-sale terminals lease — admissions desk"
+    },
+    {
+     "vendor": "Merchant Clearing Partners",
+     "base": 3200,
+     "memo": "Card processing fees — box office"
+    }
+   ],
+   "events": [
+    {
+     "key": "timed_entry",
+     "vendor": "Gatepass Software",
+     "memos": [
+      "Timed entry module — setup and configuration",
+      "Timed entry module — staff training"
+     ],
+     "cross_memo": "Timed entry module — new entrance scanners",
+     "plain": [
+      "the timed entry module",
+      "timed entry module costs",
+      "the timed entry module rollout"
+     ],
+     "oblique": [
+      "reservation slots for crowd control",
+      "scheduling visitors in half-hour windows",
+      "capacity-based booking",
+      "the crowding fix the fire marshal wanted",
+      "limiting how many guests arrive at once",
+      "the reserved arrival time feature",
+      "spreading out weekend crowds",
+      "the booking-window add-on",
+      "an attendance-pacing tool",
+      "teaching employees the reservation tool",
+      "the crowd-management upgrade",
+      "the arrival scheduling feature",
+      "capacity controls for the blockbuster exhibit",
+      "the slot-booking functionality",
+      "the reservations overhaul",
+      "visitor pacing"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "pci_audit",
+     "vendor": "Keystone Payment Security",
+     "memos": [
+      "PCI compliance audit — cardholder environment scan",
+      "PCI compliance audit — assessor fieldwork"
+     ],
+     "cross_memo": "PCI compliance audit — firewall hardware",
+     "plain": [
+      "the pci compliance audit",
+      "pci compliance audit work",
+      "the annual pci compliance audit"
+     ],
+     "oblique": [
+      "the yearly data-protection review for credit transactions",
+      "proving we protect customer financial details",
+      "the bank-mandated certification",
+      "an outside examiner checking our checkout safeguards",
+      "the acquirer's annual requirement",
+      "the regulatory review of transaction handling",
+      "the data-protection certification",
+      "the vulnerability assessment the bank required",
+      "the cyber review",
+      "the annual standards check",
+      "certifying our checkout process",
+      "the bank's information-safety requirement",
+      "a third-party review of how we store customer details",
+      "penetration testing",
+      "the standards recertification",
+      "the risk review the bank demanded"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

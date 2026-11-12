@@ -1,0 +1,810 @@
+{
+ "slug": "semiconductor-equipment-maker",
+ "industry": "semiconductor equipment maker",
+ "entities": [
+  "Waferline Dynamics Inc.",
+  "Quantaplex Process Systems",
+  "Ionbridge Semiconductor Tools",
+  "Helixgate Fabrication Equipment",
+  "Nanovance Instruments Corp."
+ ],
+ "accounts": [
+  {
+   "name": "Cleanroom Facility Operations",
+   "aliases": [
+    "cleanroom",
+    "cleanroom costs",
+    "cleanroom operations",
+    "cleanroom upkeep",
+    "cleanroom facility spend"
+   ],
+   "narrative": [
+    "Cleanroom costs",
+    "Cleanroom upkeep",
+    "Cleanroom operations"
+   ],
+   "recurring": [
+    {
+     "vendor": "PureAire Filtration Services",
+     "base": 14500,
+     "memo": "Monthly HEPA filter servicing — Bay A"
+    },
+    {
+     "vendor": "Meridian Facility Services",
+     "base": 9800,
+     "memo": "Janitorial and gowning supplies — Fab floor"
+    },
+    {
+     "vendor": "Corvane Utilities",
+     "base": 22000,
+     "memo": "Chilled water and process air — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "hepa_retrofit",
+     "vendor": "PureAire Filtration Services",
+     "memos": [
+      "Ceiling grid retrofit — particle containment",
+      "Ceiling grid retrofit — fan module installation"
+     ],
+     "cross_memo": "Ceiling grid retrofit — temporary scaffolding rental",
+     "plain": [
+      "the ceiling grid retrofit",
+      "the grid retrofit work",
+      "the ceiling grid retrofit project"
+     ],
+     "oblique": [
+      "the upgrade to the overhead air system",
+      "cutting the dust count in the assembly hall",
+      "work done above the production floor",
+      "the particle-level improvement",
+      "what the customer audit demanded",
+      "a new air delivery setup",
+      "the overhaul of the airflow layout",
+      "tighter cleanliness classification",
+      "replacing the old overhead panels",
+      "upgrading the room to a stricter class",
+      "the dust-control rebuild",
+      "an upgrade requested after the quality review",
+      "retrofitting the overhead",
+      "the air handling rework",
+      "reconfiguring how clean air enters the space",
+      "getting the room certified to a higher standard"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "cryo_leak",
+     "vendor": "Zenith Vacuum Remediation",
+     "memos": [
+      "Cryogenic line leak — emergency pipe welding",
+      "Cryogenic line leak — nitrogen purge and recertification"
+     ],
+     "cross_memo": "Cryogenic line leak — expedited replacement valves",
+     "plain": [
+      "the cryogenic line leak",
+      "the cryogenic leak repair",
+      "the cryogenic line leak response"
+     ],
+     "oblique": [
+      "the emergency pipe fix",
+      "an unplanned shutdown of a supply loop",
+      "a rupture that halted the line",
+      "the overnight callout for the cold gas piping",
+      "fixing what failed in the utility corridor",
+      "a burst in the supply plumbing",
+      "the urgent welding job",
+      "getting the gas lines safe again",
+      "an incident that stopped tool installs",
+      "the remediation after the alarm went off",
+      "repairs to the frozen supply pipework",
+      "a sudden failure in the plant services",
+      "the emergency contractor visit",
+      "mending the damaged conduit",
+      "the safety stand-down repair",
+      "restoring service after the pipe failure"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Vacuum Pump & Chamber Maintenance",
+   "aliases": [
+    "vacuum maintenance",
+    "pump upkeep",
+    "chamber maintenance",
+    "vacuum systems",
+    "pump and chamber spend"
+   ],
+   "narrative": [
+    "Vacuum maintenance",
+    "Pump upkeep",
+    "Chamber maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Torrline Vacuum Technologies",
+     "base": 18500,
+     "memo": "Dry pump service contract — monthly"
+    },
+    {
+     "vendor": "Sealwright Components",
+     "base": 7200,
+     "memo": "O-ring and seal kits — standard resupply"
+    }
+   ],
+   "events": [
+    {
+     "key": "turbo_rebuild",
+     "vendor": "Torrline Vacuum Technologies",
+     "memos": [
+      "Turbomolecular rotor rebuild — bearing replacement",
+      "Turbomolecular rotor rebuild — balancing and test"
+     ],
+     "cross_memo": "Turbomolecular rotor rebuild — loaner unit freight",
+     "plain": [
+      "the turbomolecular rotor rebuild",
+      "the rotor rebuild",
+      "the turbomolecular rebuild"
+     ],
+     "oblique": [
+      "bringing the high-speed spinner back to spec",
+      "the refurbishment of a worn core part",
+      "a repair to the pumping heart of the line",
+      "what the vibration alarm triggered",
+      "restoring a failing evacuation unit",
+      "the overhaul after the noise complaints",
+      "getting the stalled test cell running",
+      "replacing worn internals on a key pump",
+      "the fix that kept the demo rig alive",
+      "a major repair on lab equipment",
+      "the work that followed the pressure drift",
+      "refurbishing a unit near end of life",
+      "the specialist repair job",
+      "a costly mechanical restoration",
+      "resurrecting a dead pumping stage",
+      "the service call on the failing machine"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "gasket_recall",
+     "vendor": "Argent Fluid Dynamics",
+     "memos": [
+      "Flange gasket recall — defective batch replacement",
+      "Flange gasket recall — field technician dispatch"
+     ],
+     "cross_memo": "Flange gasket recall — customer site credits",
+     "plain": [
+      "the flange gasket recall",
+      "the gasket recall campaign",
+      "the flange gasket recall effort"
+     ],
+     "oblique": [
+      "swapping out a bad lot of parts in the field",
+      "the supplier mistake we had to clean up",
+      "a quality escape that reached installed tools",
+      "visits to customers to fix a faulty component",
+      "remedying a manufacturing defect from upstream",
+      "the corrective action on shipped units",
+      "what the failure analysis uncovered",
+      "replacing suspect hardware at client fabs",
+      "an expensive vendor quality problem",
+      "the campaign to retrofit installed systems",
+      "making customers whole after a defect",
+      "technicians on the road for a parts issue",
+      "correcting a flaw that slipped through inspection",
+      "the proactive swap-out program",
+      "undoing a bad purchasing batch",
+      "the product safety notice follow-up"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Process Gas & Specialty Chemicals",
+   "aliases": [
+    "process gases",
+    "specialty chemicals",
+    "gas and chemicals",
+    "chemical supplies",
+    "gas spend"
+   ],
+   "narrative": [
+    "Process gases",
+    "Specialty chemicals",
+    "Gas and chemicals"
+   ],
+   "recurring": [
+    {
+     "vendor": "Halcyon Industrial Gases",
+     "base": 26000,
+     "memo": "Bulk argon and nitrogen — monthly delivery"
+    },
+    {
+     "vendor": "Veridian Chemical Supply",
+     "base": 11500,
+     "memo": "Etchant and solvent drums — standard order"
+    },
+    {
+     "vendor": "Kestrel Cylinder Rental",
+     "base": 3200,
+     "memo": "Cylinder rental fees — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "silane_surge",
+     "vendor": "Halcyon Industrial Gases",
+     "memos": [
+      "Silane supply surge — expedited tube trailer",
+      "Silane supply surge — hazmat handling premium"
+     ],
+     "cross_memo": "Silane supply surge — gas cabinet rental",
+     "plain": [
+      "the silane supply surge",
+      "the silane surge",
+      "the silane supply surge order"
+     ],
+     "oblique": [
+      "the rush order for a pyrophoric feedstock",
+      "stockpiling ahead of a price jump",
+      "a big one-time pull of deposition feed",
+      "supplying the extended qualification run",
+      "the extra volume for a customer pilot",
+      "securing material before the allocation cut",
+      "ordering in bulk on short notice",
+      "the premium paid for fast delivery",
+      "the buildup requested by process engineering",
+      "a large unplanned replenishment",
+      "getting enough raw input for the demo campaign",
+      "the dangerous-goods shipment",
+      "the emergency top-up",
+      "more reactant than usual for the test wafers",
+      "the special-handling consignment",
+      "a heavy single draw on the feed supply"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "ultrapure_switch",
+     "vendor": "Luminary Reagents Ltd",
+     "memos": [
+      "Photoresist stripper changeover — initial fill",
+      "Photoresist stripper changeover — waste disposal"
+     ],
+     "cross_memo": "Photoresist stripper changeover — line flush labor",
+     "plain": [
+      "the photoresist stripper changeover",
+      "the stripper changeover",
+      "the photoresist changeover"
+     ],
+     "oblique": [
+      "moving to a different cleaning formula",
+      "the transition away from the old wet process",
+      "what the environmental team pushed for",
+      "the new supplier's first order",
+      "retiring a solvent that regulators flagged",
+      "the switch to a greener recipe",
+      "one-time costs of altering the strip step",
+      "replacing the legacy cleaning agent",
+      "the process change signed off by engineering",
+      "clearing out the old inventory",
+      "the cutover on the wet bench",
+      "a reformulation that touched several tools",
+      "the initial load of the new fluid",
+      "disposing of the leftover stock",
+      "the adjustment of the lines to suit new media",
+      "the shift in how we remove coatings"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Metrology & Calibration Services",
+   "aliases": [
+    "metrology",
+    "calibration",
+    "calibration services",
+    "metrology spend",
+    "measurement services"
+   ],
+   "narrative": [
+    "Metrology",
+    "Calibration services",
+    "Calibration"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precisium Calibration Labs",
+     "base": 12800,
+     "memo": "Quarterly instrument calibration — accrued monthly"
+    },
+    {
+     "vendor": "Optiscan Measurement Group",
+     "base": 8600,
+     "memo": "Interferometer service plan — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "nist_audit",
+     "vendor": "Precisium Calibration Labs",
+     "memos": [
+      "Traceability audit remediation — standards recertification",
+      "Traceability audit remediation — reference artifact replacement"
+     ],
+     "cross_memo": "Traceability audit remediation — consulting hours",
+     "plain": [
+      "the traceability audit remediation",
+      "the traceability remediation",
+      "the audit remediation recertification"
+     ],
+     "oblique": [
+      "fixing the gaps an outside examiner found",
+      "getting our reference tools re-approved",
+      "the compliance cleanup after the inspection",
+      "proving our readings match national standards",
+      "work triggered by a failed review",
+      "the paperwork and hardware needed to pass",
+      "replacing worn master samples",
+      "the catch-up on lapsed approvals",
+      "what the accreditation body asked for",
+      "restoring our credentials",
+      "the corrective plan after the findings",
+      "making the lab defensible again",
+      "the push to satisfy the assessor",
+      "one-time upgrades to our reference set",
+      "re-certifying the benchmark equipment",
+      "the expense of passing the follow-up visit"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "ellipsometer_buy",
+     "vendor": "Spectra-Nova Instruments",
+     "memos": [
+      "Spectroscopic ellipsometer lease buyout — final payment",
+      "Spectroscopic ellipsometer lease buyout — install and alignment"
+     ],
+     "cross_memo": "Spectroscopic ellipsometer lease buyout — software license transfer",
+     "plain": [
+      "the spectroscopic ellipsometer lease buyout",
+      "the ellipsometer lease buyout",
+      "the ellipsometer buyout"
+     ],
+     "oblique": [
+      "taking ownership of a film-thickness tool",
+      "ending the rental on a measuring station",
+      "the purchase that closed out a long agreement",
+      "a capital-style payment for thin-layer gear",
+      "bringing a leased analyzer in-house",
+      "the optics asset we finally acquired",
+      "settling the contract on the lab bench unit",
+      "the one-time transfer of title",
+      "the final installment on borrowed equipment",
+      "what we paid to keep the coating gauge",
+      "setting up the unit after the changeover of ownership",
+      "moving a rented analyzer onto our books",
+      "the closeout of the lease schedule",
+      "paying off the instrument",
+      "the deal that let us stop renting",
+      "the acquisition of the layer-measurement device"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Prototype Wafer & Substrate Procurement",
+   "aliases": [
+    "prototype wafers",
+    "test wafers",
+    "substrate purchases",
+    "wafer procurement",
+    "wafer spend"
+   ],
+   "narrative": [
+    "Prototype wafers",
+    "Test wafers",
+    "Wafer procurement"
+   ],
+   "recurring": [
+    {
+     "vendor": "Silicon Meadow Materials",
+     "base": 28000,
+     "memo": "300mm prime test wafers — monthly lot"
+    },
+    {
+     "vendor": "Crestline Substrates",
+     "base": 9500,
+     "memo": "Reclaim wafer service — monthly"
+    },
+    {
+     "vendor": "Tessera Epitaxy",
+     "base": 5400,
+     "memo": "Epi-layer blanks — standing order"
+    }
+   ],
+   "events": [
+    {
+     "key": "sic_pilot",
+     "vendor": "Silicon Meadow Materials",
+     "memos": [
+      "Silicon carbide pilot lot — 200mm boules",
+      "Silicon carbide pilot lot — polish and slicing"
+     ],
+     "cross_memo": "Silicon carbide pilot lot — expedited air freight",
+     "plain": [
+      "the silicon carbide pilot lot",
+      "the carbide pilot lot",
+      "the silicon carbide pilot"
+     ],
+     "oblique": [
+      "a trial run on a new wide-bandgap material",
+      "material for the power device demo",
+      "the experimental batch for an emerging market",
+      "stock ordered to qualify a fresh process",
+      "an expensive exotic substrate buy",
+      "feeding the new-product feasibility study",
+      "the first order for the hard crystal",
+      "wafers requested by the roadmap team",
+      "a speculative materials purchase",
+      "samples for a prospective customer",
+      "the diversification test material",
+      "pricey blanks for the research line",
+      "our foray into automotive-grade stock",
+      "the early-stage order for a novel platform",
+      "what R&D needed to prove the concept",
+      "the premium crystal shipment"
+     ],
+     "low": 24000,
+     "high": 48000
+    },
+    {
+     "key": "scrap_event",
+     "vendor": "Atlas Wafer Recovery",
+     "memos": [
+      "Breakage write-off recovery — cassette crash salvage",
+      "Breakage write-off recovery — fragment sorting"
+     ],
+     "cross_memo": "Breakage write-off recovery — replacement handler parts",
+     "plain": [
+      "the breakage write-off recovery",
+      "the cassette crash salvage",
+      "the breakage recovery work"
+     ],
+     "oblique": [
+      "the mishap on the transfer robot",
+      "what was lost when the loader failed",
+      "salvaging what we could from a bad drop",
+      "cleaning up after the handling accident",
+      "replacing stock destroyed in the incident",
+      "the damage from an operator error",
+      "an expensive afternoon on the load port",
+      "the fallout from the dropped carrier",
+      "the cost of a robotics glitch",
+      "remnants collected after the crash",
+      "re-buying product we shattered",
+      "the recovery effort from the line stoppage",
+      "a one-time loss of finished material",
+      "getting something back from the wreckage",
+      "the aftermath of the transport fault",
+      "the insurance-style cleanup"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Field Service & Customer Site Support",
+   "aliases": [
+    "field service",
+    "site support",
+    "customer support travel",
+    "field engineers",
+    "service dispatch"
+   ],
+   "narrative": [
+    "Field service",
+    "Site support",
+    "Service dispatch"
+   ],
+   "recurring": [
+    {
+     "vendor": "Aerostride Travel Management",
+     "base": 19000,
+     "memo": "Engineer airfare and lodging — monthly"
+    },
+    {
+     "vendor": "Pacific Rim Logistics",
+     "base": 8200,
+     "memo": "Spare parts air freight — standard lanes"
+    },
+    {
+     "vendor": "Fieldwise Contract Techs",
+     "base": 15500,
+     "memo": "Contract technician hours — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "taiwan_rampup",
+     "vendor": "Fieldwise Contract Techs",
+     "memos": [
+      "Hsinchu fab ramp support — surge staffing",
+      "Hsinchu fab ramp support — overtime and per diem"
+     ],
+     "cross_memo": "Hsinchu fab ramp support — temporary housing",
+     "plain": [
+      "the Hsinchu fab ramp support",
+      "the Hsinchu ramp support",
+      "the Hsinchu fab support surge"
+     ],
+     "oblique": [
+      "a big customer's production start overseas",
+      "extra people sent to an Asian plant",
+      "the intensive weeks after a tool went live",
+      "staffing up for the client's launch",
+      "the push to meet a factory opening date",
+      "engineers living abroad for a stretch",
+      "overseas commissioning of our systems",
+      "the heavy lift at a key account",
+      "covering a large order's installation",
+      "reinforcements on a distant job",
+      "the ramp-up of a major buyer",
+      "a spike in hands-on help abroad",
+      "the intensive qualification period at the client",
+      "the demand from our largest customer's expansion",
+      "a tool-install wave on another continent",
+      "the extended deployment of the crew"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "hazmat_incident",
+     "vendor": "Bluewater Environmental Response",
+     "memos": [
+      "Tool decontamination dispatch — arsenic residue cleanup",
+      "Tool decontamination dispatch — certified disposal"
+     ],
+     "cross_memo": "Tool decontamination dispatch — protective gear purchase",
+     "plain": [
+      "the tool decontamination dispatch",
+      "the arsenic residue cleanup",
+      "the decontamination dispatch work"
+     ],
+     "oblique": [
+      "clearing a toxic mess at a client's floor",
+      "the safety-driven recall of a returned system",
+      "what the returned machine brought with it",
+      "a specialist team sent to handle contaminated hardware",
+      "the incident when a unit came back dirty",
+      "scrubbing equipment before it could be inspected",
+      "making a dangerous machine safe to touch",
+      "an unplanned hazard response off-site",
+      "the protective protocols we had to invoke",
+      "cleaning up after a customer return",
+      "the carefully managed handling of a bad unit",
+      "sanitizing a retired system",
+      "the compliance-driven treatment of a toxic return",
+      "the special crew for risky material",
+      "the expense of making a failed install safe",
+      "the contamination event in the field"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Engineering Prototyping & Test Fixtures",
+   "aliases": [
+    "prototyping",
+    "test fixtures",
+    "engineering builds",
+    "prototype machining",
+    "fixture costs"
+   ],
+   "narrative": [
+    "Prototyping",
+    "Test fixtures",
+    "Engineering builds"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Forge Machining",
+     "base": 16500,
+     "memo": "CNC machined chamber parts — monthly"
+    },
+    {
+     "vendor": "Anodyne Surface Finishing",
+     "base": 6100,
+     "memo": "Anodizing and electropolish — standing job"
+    }
+   ],
+   "events": [
+    {
+     "key": "plasma_source",
+     "vendor": "Precision Forge Machining",
+     "memos": [
+      "Plasma source housing respin — revised alloy blanks",
+      "Plasma source housing respin — five-axis programming"
+     ],
+     "cross_memo": "Plasma source housing respin — tooling fixtures",
+     "plain": [
+      "the plasma source housing respin",
+      "the housing respin",
+      "the plasma housing respin"
+     ],
+     "oblique": [
+      "a redesign of the energy-generating enclosure",
+      "another iteration after the first design failed",
+      "the do-over on a critical component",
+      "engineering changes to the heart of the reactor",
+      "parts made twice because of a flaw",
+      "the improved version of the main shell",
+      "adjusting dimensions after thermal trouble",
+      "new material choice for the heated assembly",
+      "the revision requested after test results",
+      "cutting metal again for the updated concept",
+      "the second attempt at the radiating module",
+      "the reworked casing",
+      "what the design review sent back",
+      "redoing the core module from scratch",
+      "the cost of a failed first build",
+      "the refinement of an important assembly"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "emc_chamber",
+     "vendor": "Quietwave Test Labs",
+     "memos": [
+      "Anechoic chamber rental — pre-compliance sweep",
+      "Anechoic chamber rental — engineer standby hours"
+     ],
+     "cross_memo": "Anechoic chamber rental — antenna calibration",
+     "plain": [
+      "the anechoic chamber rental",
+      "the anechoic chamber sweep",
+      "the anechoic chamber booking"
+     ],
+     "oblique": [
+      "renting a shielded room for emissions checking",
+      "the regulatory pre-test of the new tool",
+      "verifying we won't interfere with other equipment",
+      "external lab time before certification",
+      "the electrical noise assessment",
+      "a rented facility for radiated testing",
+      "readiness testing ahead of the formal approval",
+      "outsourced signal-quality evaluation",
+      "hours spent proving electromagnetic behavior",
+      "the compliance rehearsal at a third-party site",
+      "getting the product cleared for sale abroad",
+      "the radio-frequency screening",
+      "the prelude to the certification mark",
+      "a short but pricey lab booking",
+      "what the CE process required",
+      "testing in a room built to block outside waves"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Intellectual Property & Patent Prosecution",
+   "aliases": [
+    "patent costs",
+    "ip spend",
+    "patent prosecution",
+    "intellectual property",
+    "ip legal"
+   ],
+   "narrative": [
+    "Patent costs",
+    "IP spend",
+    "Patent prosecution"
+   ],
+   "recurring": [
+    {
+     "vendor": "Larkin & Voss IP Counsel",
+     "base": 13500,
+     "memo": "Patent prosecution retainer — monthly"
+    },
+    {
+     "vendor": "Globaltrademark Services",
+     "base": 2400,
+     "memo": "Annuity and maintenance fees — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "ipr_challenge",
+     "vendor": "Larkin & Voss IP Counsel",
+     "memos": [
+      "Inter partes review defense — expert declarations",
+      "Inter partes review defense — oral hearing preparation"
+     ],
+     "cross_memo": "Inter partes review defense — technical consultant fees",
+     "plain": [
+      "the inter partes review defense",
+      "the partes review defense",
+      "the inter partes defense"
+     ],
+     "oblique": [
+      "fighting a rival's attempt to invalidate our key claims",
+      "the contest before the patent tribunal",
+      "answering a competitor's attack on our rights",
+      "the dispute over whether our invention stands",
+      "hearings in front of administrative judges",
+      "the legal battle to keep a core patent alive",
+      "expert witnesses retained for the challenge",
+      "protecting our crown-jewel filing",
+      "the adversarial proceeding at the agency",
+      "what a challenger forced us to spend",
+      "defending the validity of our technology",
+      "the high-stakes contest over a granted right",
+      "preparation for the panel's decision",
+      "the tribunal fight",
+      "the effort to avoid losing exclusivity",
+      "responding to the petition against us"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "china_filing",
+     "vendor": "Dragonscribe Patent Agents",
+     "memos": [
+      "Mainland filing wave — translation of specifications",
+      "Mainland filing wave — local agent filing fees"
+     ],
+     "cross_memo": "Mainland filing wave — notarization and legalization",
+     "plain": [
+      "the mainland filing wave",
+      "the mainland filing campaign",
+      "the mainland filing wave translation"
+     ],
+     "oblique": [
+      "a burst of new applications in a big overseas market",
+      "protecting inventions where customers are growing",
+      "the batch of foreign-language submissions",
+      "extending coverage to another jurisdiction",
+      "converting our documents for a distant office",
+      "the geographic expansion of our protection",
+      "what the portfolio review recommended",
+      "bulk filings timed to a deadline",
+      "securing rights near key manufacturing partners",
+      "a one-time push to broaden territorial reach",
+      "local representatives engaged for the rollout",
+      "the cluster of applications lodged abroad",
+      "the cost of rendering technical text in another tongue",
+      "getting our claims on record overseas",
+      "the international cleanup of unfiled families",
+      "a priority-date driven submission spree"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

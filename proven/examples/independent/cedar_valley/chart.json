@@ -1,0 +1,132 @@
+{
+  "entity": "Cedar Valley Family Medicine, PC",
+  "industry": "Medical practice (6-provider family medicine)",
+  "history_periods": [
+    "2026-08"
+  ],
+  "prior_period": "2026-09",
+  "current_period": "2026-10",
+  "accounts": [
+    {
+      "name": "Medical Supplies",
+      "aliases": [
+        "medical supplies",
+        "clinical supplies",
+        "supplies"
+      ]
+    },
+    {
+      "name": "Vaccines",
+      "aliases": [
+        "vaccines",
+        "vaccine purchases",
+        "immunizations"
+      ]
+    },
+    {
+      "name": "Reference Lab Fees",
+      "aliases": [
+        "reference lab fees",
+        "lab fees",
+        "reference lab"
+      ]
+    },
+    {
+      "name": "Clinical Wages",
+      "aliases": [
+        "clinical wages",
+        "clinical staff wages",
+        "clinical staff"
+      ]
+    },
+    {
+      "name": "Front Office Wages",
+      "aliases": [
+        "front office wages",
+        "front office"
+      ]
+    },
+    {
+      "name": "Provider Compensation",
+      "aliases": [
+        "provider compensation",
+        "provider comp",
+        "physician compensation"
+      ]
+    },
+    {
+      "name": "Locum Tenens",
+      "aliases": [
+        "locum tenens",
+        "locum costs",
+        "locums",
+        "locum coverage"
+      ]
+    },
+    {
+      "name": "Payroll Taxes & Benefits",
+      "aliases": [
+        "payroll taxes & benefits",
+        "payroll taxes",
+        "benefits"
+      ]
+    },
+    {
+      "name": "Billing Service",
+      "aliases": [
+        "billing service fees",
+        "billing service",
+        "billing fees",
+        "rcm fees"
+      ]
+    },
+    {
+      "name": "EHR & IT",
+      "aliases": [
+        "ehr & it",
+        "ehr and it",
+        "ehr",
+        "it"
+      ]
+    },
+    {
+      "name": "Malpractice Insurance",
+      "aliases": [
+        "malpractice insurance",
+        "malpractice",
+        "med mal"
+      ]
+    },
+    {
+      "name": "Rent & CAM",
+      "aliases": [
+        "rent & cam",
+        "rent",
+        "occupancy"
+      ]
+    },
+    {
+      "name": "Medical Waste & Janitorial",
+      "aliases": [
+        "medical waste & janitorial",
+        "medical waste",
+        "janitorial"
+      ]
+    },
+    {
+      "name": "Continuing Education",
+      "aliases": [
+        "continuing education",
+        "cme"
+      ]
+    },
+    {
+      "name": "Office & Admin",
+      "aliases": [
+        "office & admin",
+        "office expense",
+        "admin"
+      ]
+    }
+  ]
+}

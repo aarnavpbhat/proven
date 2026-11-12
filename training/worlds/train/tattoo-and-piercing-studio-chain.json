@@ -1,0 +1,728 @@
+{
+ "slug": "tattoo-and-piercing-studio-chain",
+ "industry": "tattoo and piercing studio chain",
+ "entities": [
+  "Inkwell Ironworks Studios",
+  "Black Lantern Tattoo Collective",
+  "Needlepoint & Jewel Co.",
+  "Sable Rose Body Arts",
+  "Ironvine Ink and Piercing Group"
+ ],
+ "accounts": [
+  {
+   "name": "Tattoo Inks and Needles",
+   "aliases": [
+    "ink and needles",
+    "consumables",
+    "needle cartridges",
+    "tattoo supplies",
+    "ink spend"
+   ],
+   "narrative": [
+    "Ink and needles",
+    "Consumables",
+    "Tattoo supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Vantablack Pigment Supply",
+     "base": 9800,
+     "memo": "Pigment restock PO 44120"
+    },
+    {
+     "vendor": "Precision Cartridge Works",
+     "base": 7400,
+     "memo": "Needle cartridges assorted"
+    },
+    {
+     "vendor": "Studio Barrier Depot",
+     "base": 2600,
+     "memo": "Barrier film and gloves"
+    }
+   ],
+   "events": [
+    {
+     "key": "pigmentrecall",
+     "vendor": "Vantablack Pigment Supply",
+     "memos": [
+      "Lot 7731 recall replacement — red pigment",
+      "Lot 7731 recall replacement — expedited freight WO 5519"
+     ],
+     "cross_memo": "Lot 7731 recall replacement — client touch-up credits",
+     "plain": [
+      "the lot 7731 recall replacement",
+      "the recall replacement pigment",
+      "the 7731 recall replacement"
+     ],
+     "oblique": [
+      "swapping out batches the manufacturer pulled",
+      "safety notice on a color line",
+      "reissuing stock that failed a purity check",
+      "what the supplier made us return",
+      "a reaction scare on one shade",
+      "emergency reorder of bright shades",
+      "the contaminated batch fallout",
+      "regulator-flagged product",
+      "pulling bottles off every shelf",
+      "a bad run from the factory",
+      "making studios whole after a defect",
+      "fresh bottles shipped overnight",
+      "the quality notice from our supplier",
+      "clearing out tainted stock",
+      "artists reporting skin problems on one line",
+      "replacing what the health office flagged"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "stencilthermal",
+     "vendor": "Linework Thermal Labs",
+     "memos": [
+      "Thermal stencil rollout — printer units PO 44388",
+      "Thermal stencil rollout — transfer paper pallets"
+     ],
+     "cross_memo": "Thermal stencil rollout — artist training day",
+     "plain": [
+      "the thermal stencil rollout",
+      "the stencil rollout",
+      "the thermal stencil program"
+     ],
+     "oblique": [
+      "moving off hand-traced designs",
+      "new gear for transferring artwork onto skin",
+      "chainwide switch in how outlines get applied",
+      "equipment pilot for faster setup",
+      "standardizing the drawing step",
+      "machines that copy art onto carbon sheets",
+      "upgrading how artists prep a design",
+      "the pilot at our flagship shops",
+      "modernizing the prep bench",
+      "faster outlines for walk-ins",
+      "replacing the old tracing method",
+      "a tooling change requested by the artists",
+      "buying printers for every station",
+      "a new method for getting art onto clients",
+      "the prep workflow overhaul",
+      "equipment bought to cut chair setup time"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Piercing Jewelry Inventory",
+   "aliases": [
+    "jewelry",
+    "body jewelry",
+    "jewelry purchases",
+    "titanium stock",
+    "jewelry inventory buys"
+   ],
+   "narrative": [
+    "Body jewelry",
+    "Jewelry purchases",
+    "Titanium stock"
+   ],
+   "recurring": [
+    {
+     "vendor": "Anodized Aura Wholesale",
+     "base": 14500,
+     "memo": "Implant-grade titanium labrets PO 51002"
+    },
+    {
+     "vendor": "Gilded Septum Imports",
+     "base": 9100,
+     "memo": "Gold hoops and clickers"
+    },
+    {
+     "vendor": "Opal Stud Exchange",
+     "base": 5200,
+     "memo": "Threadless ends assorted"
+    }
+   ],
+   "events": [
+    {
+     "key": "fallcollection",
+     "vendor": "Anodized Aura Wholesale",
+     "memos": [
+      "Autumn gemstone capsule — opal barbells PO 51377",
+      "Autumn gemstone capsule — display cards"
+     ],
+     "cross_memo": "Autumn gemstone capsule — launch event refreshments",
+     "plain": [
+      "the autumn gemstone capsule",
+      "the gemstone capsule line",
+      "the autumn capsule"
+     ],
+     "oblique": [
+      "a limited seasonal drop",
+      "special pieces for the holiday rush",
+      "a premium line we tested at three shops",
+      "one-time buy of showy stones",
+      "a collection built to sell out",
+      "the featured display at the counters",
+      "a curated release for repeat clients",
+      "splurge on rare finishes",
+      "a higher-end assortment we trialed",
+      "inventory meant for gift buyers",
+      "the marketing push on fancy pieces",
+      "stocking up ahead of a promotion",
+      "a themed set with its own packaging",
+      "unusually large order of stones",
+      "product launch with a short shelf life",
+      "the premium range"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "nickelrecall",
+     "vendor": "Pureform Alloy Traders",
+     "memos": [
+      "Nickel-free requalification — assay fees WO 6120",
+      "Nickel-free requalification — replacement posts"
+     ],
+     "cross_memo": "Nickel-free requalification — lab shipping",
+     "plain": [
+      "the nickel-free requalification",
+      "the requalification replacement posts",
+      "the nickel requalification"
+     ],
+     "oblique": [
+      "proving our metal is safe for sensitive skin",
+      "retesting what came in last quarter",
+      "scrapping pieces that failed a skin-allergy screen",
+      "certifications we had to redo",
+      "clients breaking out in rashes",
+      "paperwork the state licensing office wanted",
+      "tossing a shipment that did not pass",
+      "outside lab work on our stock",
+      "replacing questionable studs chainwide",
+      "compliance scare over alloys",
+      "the metallurgy audit",
+      "proof of material grade for inspectors",
+      "pulling anything that touched cheap alloy",
+      "a customer complaint that escalated",
+      "sending samples out for analysis",
+      "making sure every post meets spec"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Autoclave and Sterilization",
+   "aliases": [
+    "sterilization",
+    "autoclave costs",
+    "sterile processing",
+    "autoclave spend",
+    "sterilization services"
+   ],
+   "narrative": [
+    "Sterilization",
+    "Autoclave costs",
+    "Sterile processing"
+   ],
+   "recurring": [
+    {
+     "vendor": "SteriPure Service Co.",
+     "base": 6200,
+     "memo": "Autoclave maintenance contract"
+    },
+    {
+     "vendor": "BioSeal Pouch Supply",
+     "base": 3100,
+     "memo": "Sterilization pouches"
+    },
+    {
+     "vendor": "SporeCheck Labs",
+     "base": 1800,
+     "memo": "Monthly spore testing"
+    }
+   ],
+   "events": [
+    {
+     "key": "chamberreplace",
+     "vendor": "SteriPure Service Co.",
+     "memos": [
+      "Chamber gasket failure — unit 4 replacement WO 7204",
+      "Chamber gasket failure — emergency tech callout"
+     ],
+     "cross_memo": "Chamber gasket failure — loaner sterilizer rental",
+     "plain": [
+      "the chamber gasket failure",
+      "the gasket failure replacement",
+      "the chamber failure callout"
+     ],
+     "oblique": [
+      "a machine going down mid-week",
+      "buying a new heat unit for the Eastside shop",
+      "appointments we had to move",
+      "scrambling to keep instruments clean",
+      "the equipment that gave out",
+      "borrowed equipment while ours was dead",
+      "urgent visit from a technician",
+      "a shop that nearly closed for a day",
+      "hardware that reached end of life",
+      "replacing the big steel box in back",
+      "a breakdown on a Friday",
+      "the outage that delayed bookings",
+      "stand-in machines for two weeks",
+      "fixing what the health inspector noticed",
+      "a unit that would not hold pressure",
+      "the emergency repair"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "validationaudit",
+     "vendor": "Meridian Compliance Auditors",
+     "memos": [
+      "Biological indicator audit — third-party review PO 7301",
+      "Biological indicator audit — retest cycles"
+     ],
+     "cross_memo": "Biological indicator audit — consultant travel",
+     "plain": [
+      "the biological indicator audit",
+      "the indicator audit review",
+      "the biological audit retests"
+     ],
+     "oblique": [
+      "an outside review of our cleaning records",
+      "proof that instruments come out safe",
+      "extra scrutiny after a failed test",
+      "paperwork demanded by the county",
+      "a consultant walking each shop",
+      "documenting every cycle",
+      "something our insurer insisted on",
+      "a once-a-year deep check",
+      "rechecking results we already had",
+      "the inspection prep scramble",
+      "verifying logs across all locations",
+      "an independent opinion on our process",
+      "evidence for the licensing board",
+      "making the records airtight",
+      "a follow-up after a flagged shop",
+      "the third-party sign-off"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Artist Booth Rent and Commissions",
+   "aliases": [
+    "booth rent",
+    "artist commissions",
+    "artist payouts",
+    "commission payouts",
+    "chair rental"
+   ],
+   "narrative": [
+    "Booth rent",
+    "Artist commissions",
+    "Commission payouts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Resident Artist Payroll Clearing",
+     "base": 28000,
+     "memo": "Commission split payout cycle"
+    },
+    {
+     "vendor": "Guest Spot Settlement",
+     "base": 8600,
+     "memo": "Guest artist booth fees"
+    },
+    {
+     "vendor": "Chair Lease Holdings",
+     "base": 12400,
+     "memo": "Station lease allocation"
+    }
+   ],
+   "events": [
+    {
+     "key": "conventionbonus",
+     "vendor": "Resident Artist Payroll Clearing",
+     "memos": [
+      "Expo award bonus pool — top seller tier PO 8802",
+      "Expo award bonus pool — retention payments"
+     ],
+     "cross_memo": "Expo award bonus pool — booth signage",
+     "plain": [
+      "the expo award bonus pool",
+      "the award bonus pool",
+      "the expo bonus tier"
+     ],
+     "oblique": [
+      "rewarding people who brought in the most work",
+      "a one-time thank you to our best talent",
+      "money to keep key artists from leaving",
+      "payouts tied to a big weekend show",
+      "recognition for strong sales",
+      "a competing shop trying to poach staff",
+      "extra pay for a record quarter",
+      "the incentive the owners approved",
+      "a retention gesture",
+      "trophy money for winners",
+      "bonuses promised in the spring",
+      "compensation above the normal split",
+      "the payout after a crowded event",
+      "what we owed top performers",
+      "a morale investment",
+      "special pay for headliners"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "guestresidency",
+     "vendor": "Nightjar Visiting Artists",
+     "memos": [
+      "Visiting master residency — Tokyo irezumi series PO 8855",
+      "Visiting master residency — stipend and lodging"
+     ],
+     "cross_memo": "Visiting master residency — gallery wall install",
+     "plain": [
+      "the visiting master residency",
+      "the irezumi residency series",
+      "the master residency stipend"
+     ],
+     "oblique": [
+      "a famous overseas artist working our shop",
+      "a month-long guest we advertised heavily",
+      "bringing in a name that fills the calendar",
+      "the booking that sold out in a day",
+      "a specialist from abroad",
+      "the headline talent",
+      "special clients flying in to be tattooed",
+      "a prestige draw for the downtown location",
+      "what we paid to host an acclaimed visitor",
+      "a partnership with a renowned studio",
+      "buzz we wanted for the flagship",
+      "the traveling guest program",
+      "time-limited appearance by a star",
+      "a showcase for traditional styles",
+      "bespoke work only available briefly",
+      "paying a legend to sit in our chair"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Aftercare and Retail Merchandise",
+   "aliases": [
+    "aftercare",
+    "retail merch",
+    "aftercare products",
+    "merchandise costs",
+    "retail goods"
+   ],
+   "narrative": [
+    "Aftercare",
+    "Retail merch",
+    "Aftercare products"
+   ],
+   "recurring": [
+    {
+     "vendor": "HealWell Balm Co.",
+     "base": 4800,
+     "memo": "Aftercare balm cases PO 9100"
+    },
+    {
+     "vendor": "Threadbare Print House",
+     "base": 3900,
+     "memo": "Shop tees and hoodies"
+    },
+    {
+     "vendor": "Saline Spray Partners",
+     "base": 2200,
+     "memo": "Piercing saline sprays"
+    }
+   ],
+   "events": [
+    {
+     "key": "collabhoodie",
+     "vendor": "Threadbare Print House",
+     "memos": [
+      "Skate crew collab drop — embroidered jackets PO 9244",
+      "Skate crew collab drop — numbered stickers"
+     ],
+     "cross_memo": "Skate crew collab drop — photographer fee",
+     "plain": [
+      "the skate crew collab drop",
+      "the collab drop jackets",
+      "the skate collab merchandise"
+     ],
+     "oblique": [
+      "a limited release with a local brand",
+      "gear we made with outside partners",
+      "stuff that sold out online in hours",
+      "a cross-promotion with another business",
+      "premium outerwear for superfans",
+      "the capsule we pre-announced",
+      "inventory built for a single weekend",
+      "a branded giveaway with a famous crew",
+      "apparel quantities beyond our usual",
+      "the design partnership",
+      "a hype product that needed rush printing",
+      "exclusive items for followers",
+      "what we ordered ahead of the social media push",
+      "one-off apparel run",
+      "a team-up that boosted traffic",
+      "special edition clothing"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "vegancream",
+     "vendor": "Aloe Frontier Labs",
+     "memos": [
+      "Plant-based ointment reformulation — pilot batches WO 9301",
+      "Plant-based ointment reformulation — dermatology testing"
+     ],
+     "cross_memo": "Plant-based ointment reformulation — label redesign",
+     "plain": [
+      "the plant-based ointment reformulation",
+      "the ointment reformulation pilot",
+      "the plant ointment testing"
+     ],
+     "oblique": [
+      "a gentler recipe for the cream we sell",
+      "clients asking for animal-free options",
+      "developing our own house formula",
+      "trial runs of a new healing product",
+      "skin-doctor review of the next version",
+      "replacing what a supplier discontinued",
+      "a switch in ingredients",
+      "new packaging for our signature jar",
+      "product development we kicked off",
+      "testing for sensitive skin",
+      "what research cost",
+      "the shift to cleaner ingredients",
+      "our private-label upgrade",
+      "small production runs to see if it works",
+      "a formula change requested by customers",
+      "the reformulated balm"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Studio Build-Out and Chair Equipment",
+   "aliases": [
+    "build-out",
+    "chair equipment",
+    "studio fit-out",
+    "station equipment",
+    "furniture and fixtures"
+   ],
+   "narrative": [
+    "Build-out",
+    "Studio fit-out",
+    "Station equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ergo Recline Furnishings",
+     "base": 6800,
+     "memo": "Client bench replacements"
+    },
+    {
+     "vendor": "Brightline Task Lighting",
+     "base": 2400,
+     "memo": "LED station lamps"
+    },
+    {
+     "vendor": "Wipeable Surfaces Inc.",
+     "base": 1900,
+     "memo": "Medical-grade upholstery repair"
+    }
+   ],
+   "events": [
+    {
+     "key": "eastsidebuildout",
+     "vendor": "Ergo Recline Furnishings",
+     "memos": [
+      "Eastside location buildout — hydraulic chairs PO 9610",
+      "Eastside location buildout — workstation carts"
+     ],
+     "cross_memo": "Eastside location buildout — permit expediter",
+     "plain": [
+      "the eastside location buildout",
+      "the eastside hydraulic chairs",
+      "the eastside buildout carts"
+     ],
+     "oblique": [
+      "opening our newest storefront",
+      "furnishing a shop that did not exist last year",
+      "the sixth location",
+      "equipping every booth in the new space",
+      "a launch that had to be ready by grand opening",
+      "the expansion across the river",
+      "a landlord handing us an empty shell",
+      "new square footage",
+      "outfitting a larger floor plan",
+      "the growth project the board approved",
+      "the fresh shop",
+      "what it cost to get doors open",
+      "a ribbon-cutting deadline",
+      "starting from bare concrete",
+      "furniture for added capacity",
+      "the newest studio"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "ventilationretrofit",
+     "vendor": "CleanAir Mechanical",
+     "memos": [
+      "Fume extraction retrofit — ducting install WO 9733",
+      "Fume extraction retrofit — HEPA filter banks"
+     ],
+     "cross_memo": "Fume extraction retrofit — after-hours electrician",
+     "plain": [
+      "the fume extraction retrofit",
+      "the extraction ducting install",
+      "the HEPA filter retrofit"
+     ],
+     "oblique": [
+      "improving the air quality in older shops",
+      "a fire marshal request",
+      "staff complaining about stuffy rooms",
+      "work done on weekends so we stayed open",
+      "breathing easier in the back rooms",
+      "upgrades demanded when we renewed our lease",
+      "cleaner air for laser sessions",
+      "the climate project",
+      "modernizing what the building came with",
+      "new vents above the stations",
+      "a health and safety initiative",
+      "retrofitting what was installed decades ago",
+      "equipment hidden above the ceiling tiles",
+      "a code requirement in one city",
+      "the overhaul of airflow",
+      "making rooms safer for long sessions"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Licensing and Health Compliance",
+   "aliases": [
+    "licensing",
+    "health permits",
+    "compliance fees",
+    "permit renewals",
+    "regulatory costs"
+   ],
+   "narrative": [
+    "Licensing",
+    "Health permits",
+    "Compliance fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "County Health Department",
+     "base": 2900,
+     "memo": "Facility permit renewals"
+    },
+    {
+     "vendor": "Bloodborne Training Institute",
+     "base": 1500,
+     "memo": "Staff certification seats"
+    },
+    {
+     "vendor": "Biowaste Haulers LLC",
+     "base": 3400,
+     "memo": "Sharps container pickup"
+    }
+   ],
+   "events": [
+    {
+     "key": "minorconsent",
+     "vendor": "County Health Department",
+     "memos": [
+      "Age verification mandate — scanner compliance fee PO 9901",
+      "Age verification mandate — re-inspection"
+     ],
+     "cross_memo": "Age verification mandate — ID scanner hardware",
+     "plain": [
+      "the age verification mandate",
+      "the verification mandate fee",
+      "the age mandate re-inspection"
+     ],
+     "oblique": [
+      "a new rule about checking client documents",
+      "something the city council passed",
+      "making sure nobody underage gets served",
+      "fines avoided by buying the right gadgets",
+      "a statute that took effect midyear",
+      "tighter ID checks at the front desk",
+      "our legal counsel's recommendation",
+      "a regulation change in two states",
+      "new paperwork at every counter",
+      "the law that surprised everyone",
+      "proving we turn away minors",
+      "front-door procedures",
+      "an update from the licensing board",
+      "what the ordinance required",
+      "a policy shift imposed on us",
+      "stricter entry requirements"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "liabilitysettle",
+     "vendor": "Harlow & Finch Legal",
+     "memos": [
+      "Infection claim settlement — outside counsel retainer WO 9950",
+      "Infection claim settlement — mediation fees"
+     ],
+     "cross_memo": "Infection claim settlement — claimant reimbursement",
+     "plain": [
+      "the infection claim settlement",
+      "the claim settlement retainer",
+      "the infection settlement mediation"
+     ],
+     "oblique": [
+      "a client who said they got sick",
+      "lawyers resolving a dispute",
+      "closing out a complaint before trial",
+      "an incident at one of our shops",
+      "money paid to make a problem go away",
+      "a grievance that went to mediation",
+      "what our insurance would not cover",
+      "a legal matter finally behind us",
+      "the outcome of a demand letter",
+      "paying attorneys to handle an accusation",
+      "an old case that came to a head",
+      "resolving a customer injury allegation",
+      "a quiet agreement with the other side",
+      "the lawsuit we avoided",
+      "professional help with a nasty situation",
+      "the negotiated resolution"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

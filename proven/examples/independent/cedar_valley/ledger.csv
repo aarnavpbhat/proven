@@ -1,0 +1,258 @@
+id,date,account,vendor,memo,amount
+CV10001,2026-08-01,Office & Admin,Breakroom Co,Coffee + water service,98.28
+CV10002,2026-08-01,Payroll Taxes & Benefits,Cascadia Health Plan,Group health Aug,14300.00
+CV10003,2026-08-01,EHR & IT,ChartWell EHR,EHR subscription - 6 providers,2700.00
+CV10004,2026-08-01,EHR & IT,Bluestone IT,Managed IT - Aug,2950.00
+CV10005,2026-08-01,Rent & CAM,Cedar Crossing Medical Plaza,Suite 210 rent + CAM est.,24800.00
+CV10006,2026-08-02,Office & Admin,Officemart,Paper + folders,77.20
+CV10007,2026-08-02,Medical Waste & Janitorial,BrightPath Janitorial,Nightly cleaning - Aug,2400.00
+CV10008,2026-08-03,Medical Supplies,Bridgewell Medical Supply,Weekly supply order,1214.31
+CV10009,2026-08-03,Office & Admin,Breakroom Co,Coffee + water service,23.87
+CV10010,2026-08-03,Office & Admin,Breakroom Co,Coffee + water service,128.22
+CV10011,2026-08-04,Continuing Education,MedEd Online,CME subscription,150.00
+CV10012,2026-08-05,Office & Admin,Officemart,Label printer rolls,182.15
+CV10013,2026-08-05,Office & Admin,Officemart,Toner,102.52
+CV10014,2026-08-05,Office & Admin,Breakroom Co,Coffee + water service,137.98
+CV10015,2026-08-05,EHR & IT,Faxline Cloud,eFax + phone tree,189.00
+CV10016,2026-08-06,Medical Supplies,Clinica Direct,Point-of-care test kits + specimen cups,321.79
+CV10017,2026-08-06,Medical Waste & Janitorial,SafeCycle Medical Waste,Regulated waste pickup (2x/mo),780.00
+CV10018,2026-08-08,Office & Admin,Officemart,Toner,98.73
+CV10019,2026-08-08,Office & Admin,Breakroom Co,Coffee + water service,87.90
+CV10020,2026-08-08,Vaccines,Pinnacle Vaccine Distributors,VFC-ineligible pediatric restock,6178.96
+CV10021,2026-08-10,Medical Supplies,Bridgewell Medical Supply,Weekly supply order,1169.22
+CV10022,2026-08-10,Office & Admin,Officemart,Paper + folders,46.26
+CV10023,2026-08-10,Billing Service,MedBill Partners,"5.5% of Jul collections ($281,400)",15477.00
+CV10024,2026-08-11,Office & Admin,Breakroom Co,Coffee + water service,161.78
+CV10025,2026-08-12,Reference Lab Fees,Valley Reference Laboratories,Inv 87990 - Jul client bill,6150.00
+CV10026,2026-08-13,Medical Supplies,Clinica Direct,Point-of-care test kits + specimen cups,313.29
+CV10027,2026-08-13,Office & Admin,Breakroom Co,Coffee + water service,115.82
+CV10028,2026-08-15,Medical Supplies,Bridgewell Medical Supply,Exam table paper + gowns (case),423.27
+CV10029,2026-08-15,Office & Admin,Breakroom Co,Coffee + water service,51.74
+CV10030,2026-08-15,Office & Admin,Breakroom Co,Coffee + water service,162.01
+CV10031,2026-08-15,Provider Compensation,Clearwater Payroll,Provider pay 8/15 - Dr. Alvarez,11500.00
+CV10032,2026-08-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/15 - Dr. Alvarez,713.00
+CV10033,2026-08-15,Provider Compensation,Clearwater Payroll,Provider pay 8/15 - Dr. Kim,11500.00
+CV10034,2026-08-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/15 - Dr. Kim,713.00
+CV10035,2026-08-15,Provider Compensation,Clearwater Payroll,Provider pay 8/15 - Dr. Osei,11200.00
+CV10036,2026-08-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/15 - Dr. Osei,694.40
+CV10037,2026-08-15,Provider Compensation,Clearwater Payroll,Provider pay 8/15 - Dr. Brandt,10800.00
+CV10038,2026-08-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/15 - Dr. Brandt,669.60
+CV10039,2026-08-15,Provider Compensation,Clearwater Payroll,Provider pay 8/15 - J. Moreno PA-C,6400.00
+CV10040,2026-08-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/15 - J. Moreno PA-C,396.80
+CV10041,2026-08-15,Provider Compensation,Clearwater Payroll,Provider pay 8/15 - L. Huang NP,6300.00
+CV10042,2026-08-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/15 - L. Huang NP,390.60
+CV10043,2026-08-15,Clinical Wages,Clearwater Payroll,Payroll 8/15 - clinical staff (RN),17386.66
+CV10044,2026-08-15,Clinical Wages,Clearwater Payroll,Payroll 8/15 - clinical staff (MA),15820.04
+CV10045,2026-08-15,Clinical Wages,Clearwater Payroll,Payroll 8/15 - clinical staff (lab/x-ray tech),4806.50
+CV10046,2026-08-15,Front Office Wages,Clearwater Payroll,Payroll 8/15 - front office (front desk),9809.17
+CV10047,2026-08-15,Front Office Wages,Clearwater Payroll,Payroll 8/15 - front office (referrals/prior auth),4306.93
+CV10048,2026-08-15,Front Office Wages,Clearwater Payroll,Payroll 8/15 - front office (practice manager),3502.03
+CV10049,2026-08-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/15 - staff,4255.80
+CV10050,2026-08-16,Office & Admin,Breakroom Co,Coffee + water service,61.47
+CV10051,2026-08-17,Medical Supplies,Bridgewell Medical Supply,Weekly supply order,1149.81
+CV10052,2026-08-18,Office & Admin,Officemart,Label printer rolls,23.34
+CV10053,2026-08-18,Office & Admin,Postal Annex,Postage - statements,178.46
+CV10054,2026-08-18,Office & Admin,Officemart,Toner,58.49
+CV10055,2026-08-20,Medical Supplies,Clinica Direct,Point-of-care test kits + specimen cups,302.78
+CV10056,2026-08-22,Office & Admin,Officemart,Paper + folders,117.58
+CV10057,2026-08-23,Office & Admin,Officemart,Toner,149.65
+CV10058,2026-08-24,Medical Supplies,Bridgewell Medical Supply,Weekly supply order,1374.15
+CV10059,2026-08-25,Office & Admin,Postal Annex,Certified mail,151.76
+CV10060,2026-08-27,Medical Supplies,Clinica Direct,Point-of-care test kits + specimen cups,324.36
+CV10061,2026-08-28,Office & Admin,Breakroom Co,Coffee + water service,197.58
+CV10062,2026-08-31,Provider Compensation,Clearwater Payroll,Provider pay 8/31 - Dr. Alvarez,11500.00
+CV10063,2026-08-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/31 - Dr. Alvarez,713.00
+CV10064,2026-08-31,Provider Compensation,Clearwater Payroll,Provider pay 8/31 - Dr. Kim,11500.00
+CV10065,2026-08-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/31 - Dr. Kim,713.00
+CV10066,2026-08-31,Provider Compensation,Clearwater Payroll,Provider pay 8/31 - Dr. Osei,11200.00
+CV10067,2026-08-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/31 - Dr. Osei,694.40
+CV10068,2026-08-31,Provider Compensation,Clearwater Payroll,Provider pay 8/31 - Dr. Brandt,10800.00
+CV10069,2026-08-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/31 - Dr. Brandt,669.60
+CV10070,2026-08-31,Provider Compensation,Clearwater Payroll,Provider pay 8/31 - J. Moreno PA-C,6400.00
+CV10071,2026-08-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/31 - J. Moreno PA-C,396.80
+CV10072,2026-08-31,Provider Compensation,Clearwater Payroll,Provider pay 8/31 - L. Huang NP,6300.00
+CV10073,2026-08-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/31 - L. Huang NP,390.60
+CV10074,2026-08-31,Clinical Wages,Clearwater Payroll,Payroll 8/31 - clinical staff (RN),17352.86
+CV10075,2026-08-31,Clinical Wages,Clearwater Payroll,Payroll 8/31 - clinical staff (MA),15855.36
+CV10076,2026-08-31,Clinical Wages,Clearwater Payroll,Payroll 8/31 - clinical staff (lab/x-ray tech),4811.64
+CV10077,2026-08-31,Front Office Wages,Clearwater Payroll,Payroll 8/31 - front office (front desk),9762.80
+CV10078,2026-08-31,Front Office Wages,Clearwater Payroll,Payroll 8/31 - front office (referrals/prior auth),4292.29
+CV10079,2026-08-31,Front Office Wages,Clearwater Payroll,Payroll 8/31 - front office (practice manager),3487.48
+CV10080,2026-08-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 8/31 - staff,4250.53
+CV10081,2026-08-31,Malpractice Insurance,Sentinel Physicians Mutual,Prepaid amort - med mal policy 25-26,9350.00
+CV10082,2026-09-01,Office & Admin,Postal Annex,Postage - statements,126.11
+CV10083,2026-09-01,Payroll Taxes & Benefits,Cascadia Health Plan,Group health Sep,14300.00
+CV10084,2026-09-01,EHR & IT,ChartWell EHR,EHR subscription - 6 providers,2700.00
+CV10085,2026-09-01,EHR & IT,Bluestone IT,Managed IT - Sep,2950.00
+CV10086,2026-09-01,Rent & CAM,Cedar Crossing Medical Plaza,Suite 210 rent + CAM est.,24800.00
+CV10087,2026-09-02,Office & Admin,Officemart,Label printer rolls,139.97
+CV10088,2026-09-02,Medical Waste & Janitorial,BrightPath Janitorial,Nightly cleaning - Sep,2400.00
+CV10089,2026-09-03,Medical Supplies,Bridgewell Medical Supply,Weekly supply order,1272.93
+CV10090,2026-09-04,Continuing Education,MedEd Online,CME subscription,150.00
+CV10091,2026-09-05,EHR & IT,Faxline Cloud,eFax + phone tree,189.00
+CV10092,2026-09-06,Medical Supplies,Clinica Direct,Point-of-care test kits + specimen cups,288.61
+CV10093,2026-09-06,Office & Admin,Breakroom Co,Coffee + water service,150.99
+CV10094,2026-09-06,Medical Waste & Janitorial,SafeCycle Medical Waste,Regulated waste pickup (2x/mo),780.00
+CV10095,2026-09-07,Office & Admin,Breakroom Co,Coffee + water service,164.55
+CV10096,2026-09-08,Vaccines,Pinnacle Vaccine Distributors,VFC-ineligible pediatric restock,6130.29
+CV10097,2026-09-09,Office & Admin,Breakroom Co,Coffee + water service,74.58
+CV10098,2026-09-10,Medical Supplies,Bridgewell Medical Supply,Weekly supply order,1334.36
+CV10099,2026-09-10,Office & Admin,Postal Annex,Postage - statements,66.62
+CV10100,2026-09-10,Billing Service,MedBill Partners,"5.5% of Aug collections ($284,900)",15669.50
+CV10101,2026-09-11,Office & Admin,Postal Annex,Postage - statements,61.11
+CV10102,2026-09-11,Reference Lab Fees,Valley Reference Laboratories,Inv 88213 - Aug client bill,6400.00
+CV10103,2026-09-12,Office & Admin,Breakroom Co,Coffee + water service,142.71
+CV10104,2026-09-13,Medical Supplies,Clinica Direct,Point-of-care test kits + specimen cups,288.29
+CV10105,2026-09-13,Office & Admin,Postal Annex,Certified mail,180.87
+CV10106,2026-09-14,Vaccines,Pinnacle Vaccine Distributors,Flu pre-book shipment 1 of 2 (HD + QIV),21600.00
+CV10107,2026-09-15,Medical Supplies,Bridgewell Medical Supply,Exam table paper + gowns (case),417.45
+CV10108,2026-09-15,Provider Compensation,Clearwater Payroll,Provider pay 9/15 - Dr. Alvarez,11500.00
+CV10109,2026-09-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/15 - Dr. Alvarez,713.00
+CV10110,2026-09-15,Provider Compensation,Clearwater Payroll,Provider pay 9/15 - Dr. Kim,11500.00
+CV10111,2026-09-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/15 - Dr. Kim,713.00
+CV10112,2026-09-15,Provider Compensation,Clearwater Payroll,Provider pay 9/15 - Dr. Osei,11200.00
+CV10113,2026-09-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/15 - Dr. Osei,694.40
+CV10114,2026-09-15,Provider Compensation,Clearwater Payroll,Provider pay 9/15 - Dr. Brandt,10800.00
+CV10115,2026-09-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/15 - Dr. Brandt,669.60
+CV10116,2026-09-15,Provider Compensation,Clearwater Payroll,Provider pay 9/15 - J. Moreno PA-C,6400.00
+CV10117,2026-09-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/15 - J. Moreno PA-C,396.80
+CV10118,2026-09-15,Provider Compensation,Clearwater Payroll,Provider pay 9/15 - L. Huang NP,6300.00
+CV10119,2026-09-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/15 - L. Huang NP,390.60
+CV10120,2026-09-15,Clinical Wages,Clearwater Payroll,Payroll 9/15 - clinical staff (RN),17446.19
+CV10121,2026-09-15,Clinical Wages,Clearwater Payroll,Payroll 9/15 - clinical staff (MA),15777.43
+CV10122,2026-09-15,Clinical Wages,Clearwater Payroll,Payroll 9/15 - clinical staff (lab/x-ray tech),4791.69
+CV10123,2026-09-15,Front Office Wages,Clearwater Payroll,Payroll 9/15 - front office (front desk),9833.42
+CV10124,2026-09-15,Front Office Wages,Clearwater Payroll,Payroll 9/15 - front office (referrals/prior auth),4292.85
+CV10125,2026-09-15,Front Office Wages,Clearwater Payroll,Payroll 9/15 - front office (practice manager),3494.01
+CV10126,2026-09-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/15 - staff,4256.12
+CV10127,2026-09-16,Office & Admin,Officemart,Label printer rolls,63.34
+CV10128,2026-09-16,Office & Admin,Officemart,Paper + folders,32.98
+CV10129,2026-09-16,Office & Admin,Postal Annex,Certified mail,29.78
+CV10130,2026-09-17,Medical Supplies,Bridgewell Medical Supply,Weekly supply order,1298.47
+CV10131,2026-09-18,Office & Admin,Officemart,Label printer rolls,132.09
+CV10132,2026-09-18,Reference Lab Fees,Valley Reference Laboratories,Inv 88213 - Aug client bill,6400.00
+CV10133,2026-09-20,Medical Supplies,Clinica Direct,Point-of-care test kits + specimen cups,323.84
+CV10134,2026-09-20,Office & Admin,Postal Annex,Postage - statements,119.46
+CV10135,2026-09-20,Office & Admin,Postal Annex,Postage - statements,169.31
+CV10136,2026-09-20,Office & Admin,Postal Annex,Certified mail,61.95
+CV10137,2026-09-21,Office & Admin,Officemart,Toner,112.34
+CV10138,2026-09-23,Office & Admin,Postal Annex,Postage - statements,37.56
+CV10139,2026-09-24,Medical Supplies,Bridgewell Medical Supply,Weekly supply order,1351.79
+CV10140,2026-09-24,Office & Admin,Breakroom Co,Coffee + water service,168.07
+CV10141,2026-09-27,Medical Supplies,Clinica Direct,Point-of-care test kits + specimen cups,289.39
+CV10142,2026-09-27,Office & Admin,Breakroom Co,Coffee + water service,156.30
+CV10143,2026-09-30,Provider Compensation,Clearwater Payroll,Provider pay 9/30 - Dr. Alvarez,11500.00
+CV10144,2026-09-30,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/30 - Dr. Alvarez,713.00
+CV10145,2026-09-30,Provider Compensation,Clearwater Payroll,Provider pay 9/30 - Dr. Kim,11500.00
+CV10146,2026-09-30,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/30 - Dr. Kim,713.00
+CV10147,2026-09-30,Provider Compensation,Clearwater Payroll,Provider pay 9/30 - Dr. Osei,11200.00
+CV10148,2026-09-30,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/30 - Dr. Osei,694.40
+CV10149,2026-09-30,Provider Compensation,Clearwater Payroll,Provider pay 9/30 - Dr. Brandt,10800.00
+CV10150,2026-09-30,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/30 - Dr. Brandt,669.60
+CV10151,2026-09-30,Provider Compensation,Clearwater Payroll,Provider pay 9/30 - J. Moreno PA-C,6400.00
+CV10152,2026-09-30,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/30 - J. Moreno PA-C,396.80
+CV10153,2026-09-30,Provider Compensation,Clearwater Payroll,Provider pay 9/30 - L. Huang NP,6300.00
+CV10154,2026-09-30,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/30 - L. Huang NP,390.60
+CV10155,2026-09-30,Clinical Wages,Clearwater Payroll,Payroll 9/30 - clinical staff (RN),17339.78
+CV10156,2026-09-30,Clinical Wages,Clearwater Payroll,Payroll 9/30 - clinical staff (MA),15770.21
+CV10157,2026-09-30,Clinical Wages,Clearwater Payroll,Payroll 9/30 - clinical staff (lab/x-ray tech),4802.79
+CV10158,2026-09-30,Front Office Wages,Clearwater Payroll,Payroll 9/30 - front office (front desk),9773.04
+CV10159,2026-09-30,Front Office Wages,Clearwater Payroll,Payroll 9/30 - front office (referrals/prior auth),4312.94
+CV10160,2026-09-30,Front Office Wages,Clearwater Payroll,Payroll 9/30 - front office (practice manager),3501.32
+CV10161,2026-09-30,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 9/30 - staff,4245.76
+CV10162,2026-09-30,Clinical Wages,Clearwater Payroll,OT - Saturday flu clinic 9/26,900.00
+CV10163,2026-09-30,Malpractice Insurance,Sentinel Physicians Mutual,Prepaid amort - med mal policy 25-26,9350.00
+CV10164,2026-10-01,Payroll Taxes & Benefits,Cascadia Health Plan,Group health Oct,14300.00
+CV10165,2026-10-01,EHR & IT,ChartWell EHR,EHR subscription - 6 providers,2700.00
+CV10166,2026-10-01,EHR & IT,Bluestone IT,Managed IT - Oct,2950.00
+CV10167,2026-10-01,Rent & CAM,Cedar Crossing Medical Plaza,Suite 210 rent + CAM est.,24800.00
+CV10168,2026-10-02,Office & Admin,Officemart,Label printer rolls,78.92
+CV10169,2026-10-02,Medical Waste & Janitorial,BrightPath Janitorial,Nightly cleaning - Oct,2400.00
+CV10170,2026-10-02,Continuing Education,Family Medicine Assembly,FMX 2026 registration - Dr. Kim,1195.00
+CV10171,2026-10-03,Medical Supplies,Bridgewell Medical Supply,Weekly supply order,1296.40
+CV10172,2026-10-03,Office & Admin,Officemart,Toner,76.77
+CV10173,2026-10-03,Continuing Education,Westwind Airlines,DEN-ORD rt - Dr. Kim,640.00
+CV10174,2026-10-04,Office & Admin,Postal Annex,Certified mail,89.96
+CV10175,2026-10-04,Continuing Education,MedEd Online,CME subscription,150.00
+CV10176,2026-10-05,EHR & IT,Faxline Cloud,eFax + phone tree,189.00
+CV10177,2026-10-06,Medical Supplies,Clinica Direct,Point-of-care test kits + specimen cups,332.75
+CV10178,2026-10-06,Office & Admin,Postal Annex,Certified mail,48.64
+CV10179,2026-10-06,Vaccines,Pinnacle Vaccine Distributors,Flu pre-book shipment 2 of 2 (HD + QIV),34800.00
+CV10180,2026-10-06,Medical Waste & Janitorial,SafeCycle Medical Waste,Regulated waste pickup (2x/mo),780.00
+CV10181,2026-10-08,Office & Admin,Officemart,Toner,177.11
+CV10182,2026-10-08,Vaccines,Pinnacle Vaccine Distributors,VFC-ineligible pediatric restock,6130.63
+CV10183,2026-10-09,Office & Admin,Officemart,Paper + folders,35.72
+CV10184,2026-10-09,Locum Tenens,Summit Locums Group,Locum coverage wk ending 10/09 - Dr. R. Ingram (for Dr. Alvarez),7200.00
+CV10185,2026-10-09,Medical Waste & Janitorial,SafeCycle Medical Waste,Sharps mail-back program - setup + 40 containers,3100.00
+CV10186,2026-10-10,Medical Supplies,Bridgewell Medical Supply,Weekly supply order,1286.23
+CV10187,2026-10-10,Billing Service,MedBill Partners,"5.5% of Sep collections ($312,600)",17193.00
+CV10188,2026-10-11,Office & Admin,Postal Annex,Postage - statements,55.09
+CV10189,2026-10-12,Office & Admin,Breakroom Co,Coffee + water service,35.30
+CV10190,2026-10-12,Office & Admin,Postal Annex,Postage - statements,155.52
+CV10191,2026-10-12,Reference Lab Fees,Valley Reference Laboratories,Inv 88541 - Sep client bill,6700.00
+CV10192,2026-10-13,Medical Supplies,Clinica Direct,Point-of-care test kits + specimen cups,331.14
+CV10193,2026-10-13,Office & Admin,Breakroom Co,Coffee + water service,24.78
+CV10194,2026-10-13,Office & Admin,Postal Annex,Certified mail,48.87
+CV10195,2026-10-14,EHR & IT,ChartWell EHR,Patient portal module - implementation (one-time),4500.00
+CV10196,2026-10-15,Medical Supplies,Bridgewell Medical Supply,Exam table paper + gowns (case),400.39
+CV10197,2026-10-15,Provider Compensation,Clearwater Payroll,Provider pay 10/15 - Dr. Alvarez,4200.00
+CV10198,2026-10-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/15 - Dr. Alvarez,260.40
+CV10199,2026-10-15,Provider Compensation,Clearwater Payroll,Provider pay 10/15 - Dr. Kim,11500.00
+CV10200,2026-10-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/15 - Dr. Kim,713.00
+CV10201,2026-10-15,Provider Compensation,Clearwater Payroll,Provider pay 10/15 - Dr. Osei,11200.00
+CV10202,2026-10-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/15 - Dr. Osei,694.40
+CV10203,2026-10-15,Provider Compensation,Clearwater Payroll,Provider pay 10/15 - Dr. Brandt,10800.00
+CV10204,2026-10-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/15 - Dr. Brandt,669.60
+CV10205,2026-10-15,Provider Compensation,Clearwater Payroll,Provider pay 10/15 - J. Moreno PA-C,6400.00
+CV10206,2026-10-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/15 - J. Moreno PA-C,396.80
+CV10207,2026-10-15,Provider Compensation,Clearwater Payroll,Provider pay 10/15 - L. Huang NP,6300.00
+CV10208,2026-10-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/15 - L. Huang NP,390.60
+CV10209,2026-10-15,Clinical Wages,Clearwater Payroll,Payroll 10/15 - clinical staff (RN),17430.46
+CV10210,2026-10-15,Clinical Wages,Clearwater Payroll,Payroll 10/15 - clinical staff (MA),15784.04
+CV10211,2026-10-15,Clinical Wages,Clearwater Payroll,Payroll 10/15 - clinical staff (lab/x-ray tech),4817.33
+CV10212,2026-10-15,Front Office Wages,Clearwater Payroll,Payroll 10/15 - front office (front desk),9790.09
+CV10213,2026-10-15,Front Office Wages,Clearwater Payroll,Payroll 10/15 - front office (referrals/prior auth),4309.91
+CV10214,2026-10-15,Front Office Wages,Clearwater Payroll,Payroll 10/15 - front office (practice manager),3502.80
+CV10215,2026-10-15,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/15 - staff,4256.05
+CV10216,2026-10-15,Clinical Wages,Clearwater Payroll,"OT - Saturday flu clinics 10/03, 10/10",2300.00
+CV10217,2026-10-16,Locum Tenens,Summit Locums Group,Locum coverage wk ending 10/16 - Dr. R. Ingram (for Dr. Alvarez),7200.00
+CV10218,2026-10-17,Medical Supplies,Bridgewell Medical Supply,Weekly supply order,1117.85
+CV10219,2026-10-17,Office & Admin,Breakroom Co,Coffee + water service,24.87
+CV10220,2026-10-18,Office & Admin,Breakroom Co,Coffee + water service,54.14
+CV10221,2026-10-18,Office & Admin,Officemart,Paper + folders,140.54
+CV10222,2026-10-19,Office & Admin,Postal Annex,Postage - statements,96.99
+CV10223,2026-10-20,Medical Supplies,Clinica Direct,Point-of-care test kits + specimen cups,292.38
+CV10224,2026-10-20,Office & Admin,Postal Annex,Postage - statements,120.25
+CV10225,2026-10-20,Reference Lab Fees,Valley Reference Laboratories,Credit memo - duplicate posting inv 88213,-6400.00
+CV10226,2026-10-20,EHR & IT,Bluestone IT,SLA credit - 9/18 network outage,-900.00
+CV10227,2026-10-22,Billing Service,MedBill Partners,Payer credentialing - 2 new plans,800.00
+CV10228,2026-10-23,Office & Admin,Breakroom Co,Coffee + water service,108.12
+CV10229,2026-10-23,Locum Tenens,Summit Locums Group,Locum coverage wk ending 10/23 - Dr. R. Ingram (for Dr. Alvarez),7200.00
+CV10230,2026-10-24,Medical Supplies,Bridgewell Medical Supply,Weekly supply order,1335.29
+CV10231,2026-10-24,Office & Admin,Breakroom Co,Coffee + water service,89.44
+CV10232,2026-10-24,Office & Admin,Officemart,Paper + folders,114.70
+CV10233,2026-10-26,Office & Admin,Breakroom Co,Coffee + water service,23.02
+CV10234,2026-10-27,Medical Supplies,Clinica Direct,Point-of-care test kits + specimen cups,324.03
+CV10235,2026-10-27,Office & Admin,Postal Annex,Postage - statements,181.34
+CV10236,2026-10-28,Continuing Education,Lakeshore Grand Hotel,Lodging 3 nts - Dr. Kim,1410.00
+CV10237,2026-10-30,Locum Tenens,Summit Locums Group,Locum coverage wk ending 10/30 - Dr. R. Ingram (for Dr. Alvarez),7200.00
+CV10238,2026-10-31,Provider Compensation,Clearwater Payroll,Provider pay 10/31 - Dr. Kim,11500.00
+CV10239,2026-10-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/31 - Dr. Kim,713.00
+CV10240,2026-10-31,Provider Compensation,Clearwater Payroll,Provider pay 10/31 - Dr. Osei,11200.00
+CV10241,2026-10-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/31 - Dr. Osei,694.40
+CV10242,2026-10-31,Provider Compensation,Clearwater Payroll,Provider pay 10/31 - Dr. Brandt,10800.00
+CV10243,2026-10-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/31 - Dr. Brandt,669.60
+CV10244,2026-10-31,Provider Compensation,Clearwater Payroll,Provider pay 10/31 - J. Moreno PA-C,6400.00
+CV10245,2026-10-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/31 - J. Moreno PA-C,396.80
+CV10246,2026-10-31,Provider Compensation,Clearwater Payroll,Provider pay 10/31 - L. Huang NP,6300.00
+CV10247,2026-10-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/31 - L. Huang NP,390.60
+CV10248,2026-10-31,Clinical Wages,Clearwater Payroll,Payroll 10/31 - clinical staff (RN),17422.90
+CV10249,2026-10-31,Clinical Wages,Clearwater Payroll,Payroll 10/31 - clinical staff (MA),15789.88
+CV10250,2026-10-31,Clinical Wages,Clearwater Payroll,Payroll 10/31 - clinical staff (lab/x-ray tech),4789.29
+CV10251,2026-10-31,Front Office Wages,Clearwater Payroll,Payroll 10/31 - front office (front desk),9825.62
+CV10252,2026-10-31,Front Office Wages,Clearwater Payroll,Payroll 10/31 - front office (referrals/prior auth),4284.91
+CV10253,2026-10-31,Front Office Wages,Clearwater Payroll,Payroll 10/31 - front office (practice manager),3503.11
+CV10254,2026-10-31,Payroll Taxes & Benefits,Clearwater Payroll,ER taxes 10/31 - staff,4254.60
+CV10255,2026-10-31,Provider Compensation,Clearwater Payroll,Q3 quality incentive - providers,9600.00
+CV10256,2026-10-31,Clinical Wages,Clearwater Payroll,"OT - Saturday flu clinics 10/17, 10/24",2450.00
+CV10257,2026-10-31,Malpractice Insurance,Sentinel Physicians Mutual,Prepaid amort - med mal policy 26-27,10120.00

@@ -1,0 +1,795 @@
+{
+ "slug": "archaeological-survey-consultancy",
+ "industry": "archaeological survey consultancy",
+ "entities": [
+  "Stratafield Heritage Consultants",
+  "Ochre Line Archaeology",
+  "Cairnstone Survey Group",
+  "Bluemesa Cultural Resources",
+  "Sedgewick Trowel & Transect LLC"
+ ],
+ "accounts": [
+  {
+   "name": "Field Survey Subcontractors",
+   "aliases": [
+    "field crews",
+    "subcontract crews",
+    "crew subcontracts",
+    "field survey labor",
+    "survey subs"
+   ],
+   "narrative": [
+    "Field crews",
+    "Subcontract crews",
+    "Survey subs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Field Services",
+     "base": 18000,
+     "memo": "Monthly crew technicians"
+    },
+    {
+     "vendor": "Stratum Staffing Co",
+     "base": 9500,
+     "memo": "Crew chief day rates"
+    }
+   ],
+   "events": [
+    {
+     "key": "pipeline_corridor_push",
+     "vendor": "Ridgeline Field Services",
+     "memos": [
+      "Pipeline corridor walkover — extra technicians",
+      "Pipeline corridor walkover — overtime"
+     ],
+     "cross_memo": "Pipeline corridor walkover — motel lodging",
+     "plain": [
+      "the pipeline corridor walkover",
+      "extra pipeline corridor work",
+      "the pipeline corridor overtime"
+     ],
+     "oblique": [
+      "the gas line route survey",
+      "walking the new energy right-of-way",
+      "a bigger team for the utility client",
+      "additional surveyors on the energy job",
+      "the rushed route clearance",
+      "longer hours to hit the client deadline",
+      "the transmission route push",
+      "more boots on the ground",
+      "the utility project surge",
+      "gearing up for the linear project",
+      "the long linear transect job",
+      "the energy client's accelerated schedule",
+      "pedestrian coverage of the proposed route",
+      "the gas company job",
+      "weekend shifts on the line survey",
+      "covering miles of proposed trench"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "burial_find_monitoring",
+     "vendor": "Osteo Response Partners",
+     "memos": [
+      "Human remains discovery — osteologist standby",
+      "Human remains discovery — site security"
+     ],
+     "cross_memo": "Human remains discovery — coroner liaison mileage",
+     "plain": [
+      "the human remains discovery",
+      "the human remains standby",
+      "handling the human remains discovery"
+     ],
+     "oblique": [
+      "the unexpected burial",
+      "the skeletal find",
+      "bones turning up in a test pit",
+      "the grave uncovered on the housing project",
+      "keeping specialists on call after the burial find",
+      "guarding the grave",
+      "the bone specialist",
+      "the forensic hold",
+      "the tribal notification process",
+      "pausing work over the burial",
+      "the unmarked grave",
+      "the cemetery surprise",
+      "after-hours watch over exposed bones",
+      "the skeleton in the trench",
+      "the sheriff's inquiry into the bones",
+      "the burial protocol"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Laboratory Dating & Analysis",
+   "aliases": [
+    "lab analysis",
+    "dating costs",
+    "lab fees",
+    "radiocarbon spend",
+    "specimen analysis"
+   ],
+   "narrative": [
+    "Lab analysis",
+    "Dating costs",
+    "Lab fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Coastal Isotope Lab",
+     "base": 6200,
+     "memo": "Radiocarbon samples batch"
+    },
+    {
+     "vendor": "Meridian Paleo Lab",
+     "base": 3400,
+     "memo": "Pollen and phytolith counts"
+    }
+   ],
+   "events": [
+    {
+     "key": "charcoal_backlog",
+     "vendor": "Coastal Isotope Lab",
+     "memos": [
+      "Rush AMS dates — hearth charcoal",
+      "Rush AMS dates — expedite surcharge"
+     ],
+     "cross_memo": "Rush AMS dates — courier dry ice shipping",
+     "plain": [
+      "the rush AMS dates",
+      "rush AMS testing",
+      "the rush AMS turnaround"
+     ],
+     "oblique": [
+      "fast-tracked age determinations",
+      "getting fireplace chronology back in a hurry",
+      "the accelerated carbon testing",
+      "jumping the queue at the accelerator",
+      "speeding up the chronology results",
+      "the client wanting ages before the hearing",
+      "quick turnaround on the burned material",
+      "the urgent chronology",
+      "priority age results",
+      "testing the fire pit fragments fast",
+      "a hurry-up chronology request",
+      "age testing ahead of the regulator meeting",
+      "paying a premium for speed",
+      "faster turnaround fees",
+      "the urgent carbon work",
+      "carbon testing on a deadline"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "residue_study",
+     "vendor": "Northfork Archaeometry",
+     "memos": [
+      "Ceramic residue study — lipid extraction",
+      "Ceramic residue study — report"
+     ],
+     "cross_memo": "Ceramic residue study — potsherd export permit",
+     "plain": [
+      "the ceramic residue study",
+      "ceramic residue testing",
+      "the ceramic residue report"
+     ],
+     "oblique": [
+      "the cooking-pot chemistry",
+      "figuring out what was stored in the pottery",
+      "food-trace analysis on the vessels",
+      "specialist chemistry work",
+      "testing the pots for ancient fats",
+      "the university chemistry contract",
+      "the vessel contents investigation",
+      "a one-off chemistry project",
+      "the museum's request to analyse the jars",
+      "fat and oil traces in the pottery",
+      "the dietary chemistry",
+      "gas chromatography on pottery",
+      "the new chemistry partner",
+      "the vessel testing",
+      "an outside specialist on the pots",
+      "the jar contents work"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Geophysical Equipment Hire",
+   "aliases": [
+    "geophysics hire",
+    "gpr rental",
+    "instrument hire",
+    "geophys kit",
+    "magnetometer rental"
+   ],
+   "narrative": [
+    "Geophysics hire",
+    "Instrument hire",
+    "GPR rental"
+   ],
+   "recurring": [
+    {
+     "vendor": "Subsurface Instruments Rental",
+     "base": 7800,
+     "memo": "GPR unit monthly hire"
+    },
+    {
+     "vendor": "Fluxgate Supply Co",
+     "base": 4100,
+     "memo": "Gradiometer array hire"
+    }
+   ],
+   "events": [
+    {
+     "key": "sled_damage",
+     "vendor": "Subsurface Instruments Rental",
+     "memos": [
+      "Antenna sled replacement — cracked housing",
+      "Antenna sled replacement — recalibration"
+     ],
+     "cross_memo": "Antenna sled replacement — freight back to depot",
+     "plain": [
+      "the antenna sled replacement",
+      "replacing the antenna sled",
+      "the cracked antenna sled"
+     ],
+     "oblique": [
+      "the broken radar cart",
+      "fixing kit a technician dropped",
+      "damage to the ground radar",
+      "the equipment we broke in the field",
+      "a new transmitter carriage",
+      "the damaged scanner",
+      "repairs after the trailer accident",
+      "making good the vendor's damaged gear",
+      "the radar mishap",
+      "equipment damage charges",
+      "the dropped scanner",
+      "paying for the busted radar cart",
+      "returning the radar to spec",
+      "the shattered casing",
+      "kit breakage",
+      "the radar repair bill"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "lidar_flight",
+     "vendor": "Skyward Terrain Imaging",
+     "memos": [
+      "LiDAR overflight — forest tract",
+      "LiDAR overflight — point cloud processing"
+     ],
+     "cross_memo": "LiDAR overflight — pilot per diem",
+     "plain": [
+      "the LiDAR overflight",
+      "the forest LiDAR overflight",
+      "flying the LiDAR overflight"
+     ],
+     "oblique": [
+      "the aerial scan",
+      "the drone and aircraft mapping",
+      "laser mapping from the air",
+      "mapping the wooded parcel from above",
+      "the airborne survey",
+      "seeing through the canopy",
+      "the aerial elevation model",
+      "flying the woodland site",
+      "a plane-based elevation model",
+      "the aircraft charter",
+      "airborne laser scanning",
+      "the bare-earth model for the client",
+      "remote sensing over the woods",
+      "the flyover",
+      "the canopy-penetrating survey",
+      "aerial mapping requested by the state agency"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Artifact Curation & Repository Fees",
+   "aliases": [
+    "curation",
+    "curation fees",
+    "repository fees",
+    "collections storage",
+    "artifact storage"
+   ],
+   "narrative": [
+    "Curation fees",
+    "Repository fees",
+    "Collections storage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hollins County Museum Trust",
+     "base": 2600,
+     "memo": "Box storage fees"
+    },
+    {
+     "vendor": "Archival Boxworks",
+     "base": 1100,
+     "memo": "Acid-free boxes and bags"
+    }
+   ],
+   "events": [
+    {
+     "key": "backlog_accession",
+     "vendor": "Hollins County Museum Trust",
+     "memos": [
+      "Legacy accession — rehousing old excavation",
+      "Legacy accession — catalog fee"
+     ],
+     "cross_memo": "Legacy accession — cataloging labor",
+     "plain": [
+      "the legacy accession",
+      "legacy accession work",
+      "the legacy accession rehousing"
+     ],
+     "oblique": [
+      "taking in a decades-old dig",
+      "the orphaned material from the eighties project",
+      "processing an inherited assemblage",
+      "formally transferring a past project's finds",
+      "the inherited finds",
+      "cleaning up a predecessor's artifacts",
+      "intake of a forgotten dig",
+      "the backlog the state made us deposit",
+      "repackaging decades of finds",
+      "the repository's intake charge",
+      "a regulator-ordered deposit",
+      "the archive transfer",
+      "closing out the abandoned project",
+      "the historic dig handover",
+      "resorting the inherited artifacts",
+      "the long-overdue deposit"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "conservation_treatment",
+     "vendor": "Patina Conservation Studio",
+     "memos": [
+      "Metal conservation — iron stabilization",
+      "Metal conservation — desiccant cabinets"
+     ],
+     "cross_memo": "Metal conservation — x-ray imaging",
+     "plain": [
+      "the metal conservation",
+      "metal conservation treatment",
+      "the metal conservation work"
+     ],
+     "oblique": [
+      "treating the corroding nails",
+      "saving the rusting hardware",
+      "the corrosion treatment",
+      "stopping rust on the cannonball",
+      "the specialist treatment of the fort finds",
+      "dry cases for the rusting objects",
+      "the specialist's treatment contract",
+      "rust mitigation",
+      "the radiography of the blades",
+      "protecting the fragile hardware",
+      "the corroded artifacts project",
+      "humidity control for unstable finds",
+      "preserving the battlefield objects",
+      "the outside treatment lab",
+      "the rust problem",
+      "keeping the musket parts from crumbling"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Field Vehicle Operations",
+   "aliases": [
+    "vehicles",
+    "truck costs",
+    "4x4 fleet",
+    "vehicle running costs",
+    "truck spend"
+   ],
+   "narrative": [
+    "Vehicle running costs",
+    "Truck costs",
+    "Truck spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-Valley Fuel Cards",
+     "base": 5200,
+     "memo": "Diesel fuel cards"
+    },
+    {
+     "vendor": "Backroad Auto Repair",
+     "base": 2300,
+     "memo": "Routine servicing"
+    },
+    {
+     "vendor": "Highmark Truck Leasing",
+     "base": 6800,
+     "memo": "Pickup lease payments"
+    }
+   ],
+   "events": [
+    {
+     "key": "gearbox_rebuild",
+     "vendor": "Backroad Auto Repair",
+     "memos": [
+      "Gearbox rebuild — unit 14",
+      "Gearbox rebuild — tow from ranch road"
+     ],
+     "cross_memo": "Gearbox rebuild — loaner SUV",
+     "plain": [
+      "the gearbox rebuild",
+      "rebuilding the gearbox",
+      "the unit 14 gearbox rebuild"
+     ],
+     "oblique": [
+      "the transmission failure",
+      "fixing the broken drivetrain",
+      "the blown transmission on a field vehicle",
+      "getting the dead 4x4 back running",
+      "major mechanical work",
+      "the breakdown at the remote site",
+      "a substitute vehicle while the shop worked",
+      "the drivetrain overhaul",
+      "the stranded vehicle and its fix",
+      "the big mechanical bill",
+      "replacing the failed transmission",
+      "the clutch and transmission job",
+      "the engine-bay failure",
+      "a breakdown in the backcountry",
+      "keeping the team mobile during the breakdown",
+      "the transmission overhaul"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "winch_recovery",
+     "vendor": "Mesa Heavy Haul",
+     "memos": [
+      "Winch out — stuck flatbed in wash",
+      "Winch out — after-hours callout"
+     ],
+     "cross_memo": "Winch out — crew overtime standby",
+     "plain": [
+      "the winch out",
+      "the flatbed winch out",
+      "the after-hours winch out"
+     ],
+     "oblique": [
+      "pulling a bogged trailer free",
+      "the arroyo recovery",
+      "rescuing the mired vehicle",
+      "the flash-flood mishap",
+      "a big-rig rescue",
+      "freeing the trapped trailer",
+      "the night rescue after the storm",
+      "the vehicle trapped in sand",
+      "emergency recovery",
+      "getting the equipment trailer free",
+      "the dry creek incident",
+      "the bogged-down trailer",
+      "the rescue operation",
+      "recovering the mired rig",
+      "the storm recovery job",
+      "a costly rescue in the desert"
+     ],
+     "low": 10000,
+     "high": 21000
+    }
+   ]
+  },
+  {
+   "name": "Office & Lab Space Rent",
+   "aliases": [
+    "rent",
+    "office rent",
+    "premises",
+    "occupancy",
+    "space rent"
+   ],
+   "narrative": [
+    "Office rent",
+    "Occupancy",
+    "Space rent"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Row Properties",
+     "base": 14500,
+     "memo": "Office suite base rent"
+    },
+    {
+     "vendor": "Pinecrest Utilities Board",
+     "base": 1300,
+     "memo": "Building utilities"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam_true_up",
+     "vendor": "Granite Row Properties",
+     "memos": [
+      "Annual CAM reconciliation — shortfall billed",
+      "CAM reconciliation — snow removal share"
+     ],
+     "cross_memo": "CAM reconciliation — HVAC common area",
+     "plain": [
+      "the CAM reconciliation",
+      "the annual CAM reconciliation",
+      "the CAM reconciliation shortfall"
+     ],
+     "oblique": [
+      "the landlord's year-end true-up",
+      "the landlord catching up on maintenance charges",
+      "passed-through operating expenses",
+      "our slice of the plowing bill",
+      "the landlord's expense true-up",
+      "the yearly operating cost settlement",
+      "winter plowing pass-through",
+      "back-billed maintenance",
+      "the landlord's catch-up invoice",
+      "shared-cost settlement",
+      "the property manager's true-up",
+      "under-recovered operating costs",
+      "plowing after the heavy winter",
+      "the premises cost adjustment",
+      "the year-end landlord charge",
+      "extra landlord charges for the parking lot"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "flotation_room",
+     "vendor": "Keystone Fitout Builders",
+     "memos": [
+      "Flotation lab buildout — sink trap install",
+      "Flotation lab buildout — drainage permit"
+     ],
+     "cross_memo": "Flotation lab buildout — sieve stands",
+     "plain": [
+      "the flotation lab buildout",
+      "the flotation lab",
+      "flotation lab construction"
+     ],
+     "oblique": [
+      "the new wet-processing room",
+      "fitting out space for floating soil samples",
+      "plumbing work for seed recovery",
+      "the soil-processing room",
+      "the tenant improvement work",
+      "a room for separating seeds from dirt",
+      "new plumbing in the back room",
+      "the archaeobotany setup",
+      "the wet room construction",
+      "converting the storeroom",
+      "the contractor's renovation",
+      "plumbing for the botanist",
+      "the remodel",
+      "the processing room renovation",
+      "the sediment-washing room",
+      "renovations requested by the paleobotany team"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Professional Liability Insurance",
+   "aliases": [
+    "insurance",
+    "insurance premiums",
+    "e&o cover",
+    "liability cover",
+    "policy costs"
+   ],
+   "narrative": [
+    "Insurance premiums",
+    "Liability cover",
+    "Policy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborline Insurance Brokers",
+     "base": 4300,
+     "memo": "E&O premium installment"
+    },
+    {
+     "vendor": "Summit Mutual Casualty",
+     "base": 2100,
+     "memo": "General liability installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "offshore_rider",
+     "vendor": "Harborline Insurance Brokers",
+     "memos": [
+      "Marine endorsement — offshore wind survey",
+      "Marine endorsement — vessel charter add-on"
+     ],
+     "cross_memo": "Marine endorsement — dive team medical",
+     "plain": [
+      "the marine endorsement",
+      "the offshore marine endorsement",
+      "adding the marine endorsement"
+     ],
+     "oblique": [
+      "coverage for the seabed job",
+      "extending our policy to work at sea",
+      "the ocean-floor project rider",
+      "the boat-based fieldwork policy",
+      "protecting the divers",
+      "the sea-going job's extra coverage",
+      "nautical coverage",
+      "coverage required by the energy developer",
+      "the ocean turbine project",
+      "insuring the boat crew",
+      "the underwater archaeology coverage",
+      "a policy rider for the coastal client",
+      "the seabed contract's requirements",
+      "adding coverage for work afloat",
+      "the shipwreck assessment rider",
+      "extra protection for the at-sea program"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "claim_deductible",
+     "vendor": "Bellweather Claims Adjusting",
+     "memos": [
+      "Utility strike deductible — water main",
+      "Utility strike — adjuster fee"
+     ],
+     "cross_memo": "Utility strike — legal review",
+     "plain": [
+      "the utility strike",
+      "the utility strike deductible",
+      "the water main utility strike"
+     ],
+     "oblique": [
+      "the busted pipe during augering",
+      "our share of the trench mishap",
+      "the excavator hitting a line",
+      "the burst pipe incident",
+      "paying our portion of the damage",
+      "the auger accident",
+      "the out-of-pocket on the property damage",
+      "hitting a buried line",
+      "the flooding we caused at the site",
+      "the backhoe incident",
+      "the damage settlement",
+      "the auger hole that flooded the street",
+      "the city's repair bill",
+      "the excavation accident",
+      "the retention we owed",
+      "the broken line in the test trench"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Heritage Permits & Consultation Fees",
+   "aliases": [
+    "permits",
+    "permit fees",
+    "heritage permits",
+    "consultation fees",
+    "tribal consultation"
+   ],
+   "narrative": [
+    "Permit fees",
+    "Heritage permits",
+    "Consultation fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tallgrass Tribal Heritage Council",
+     "base": 3200,
+     "memo": "Monitor coordination fee"
+    },
+    {
+     "vendor": "Westbrook Records Search Bureau",
+     "base": 1800,
+     "memo": "Site file searches"
+    }
+   ],
+   "events": [
+    {
+     "key": "monitor_surge",
+     "vendor": "Tallgrass Tribal Heritage Council",
+     "memos": [
+      "Ceremonial blessing — elders honoraria",
+      "Ceremonial blessing — ground opening"
+     ],
+     "cross_memo": "Ceremonial blessing — catering",
+     "plain": [
+      "the ceremonial blessing",
+      "the ceremonial blessing honoraria",
+      "holding the ceremonial blessing"
+     ],
+     "oblique": [
+      "the traditional rite before digging",
+      "the prayer event before construction",
+      "the sacred observance",
+      "a ritual the nation requested",
+      "the community gathering at the start",
+      "gifts to the knowledge keepers",
+      "the start-of-work prayer",
+      "the smudging ceremony",
+      "the cultural protocol before excavation",
+      "hosting the descendant community",
+      "food and gifts for the visitors",
+      "the requested spiritual observance",
+      "the tribe's prayer gathering",
+      "honoring the ancestors before digging",
+      "the kickoff ritual",
+      "the dedication event"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "data_recovery_permit",
+     "vendor": "Ostrander Regulatory Counsel",
+     "memos": [
+      "Federal nexus filing — Section 106 package",
+      "Federal nexus filing — agency review"
+     ],
+     "cross_memo": "Federal nexus filing — mapping exhibits",
+     "plain": [
+      "the federal nexus filing",
+      "the federal nexus package",
+      "preparing the federal nexus filing"
+     ],
+     "oblique": [
+      "the outside lawyers",
+      "the historic preservation compliance work",
+      "the consultation required once the army got involved",
+      "the lawyer on the dam project",
+      "the compliance paperwork",
+      "the government-funded trigger",
+      "the legal help on the dam permit",
+      "the bridge project's compliance hurdle",
+      "the compliance submission",
+      "the national register paperwork",
+      "the attorneys for the highway job",
+      "preparing the compliance submittal for the corps",
+      "the washington-level approval",
+      "the lawyers' compliance bill",
+      "the extra layer of government sign-off",
+      "the documentation the corps demanded"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

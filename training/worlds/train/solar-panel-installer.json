@@ -1,0 +1,830 @@
+{
+ "slug": "solar-panel-installer",
+ "industry": "solar panel installer",
+ "entities": [
+  "Sunrise Ridge Solar",
+  "Bluepeak Energy Installers",
+  "Copperline Solar Works",
+  "Helio Harbor Power",
+  "Meadowbrook Solar Co"
+ ],
+ "accounts": [
+  {
+   "name": "Fleet Vehicles",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "truck costs",
+    "vehicle spend",
+    "van expenses"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Truck costs",
+    "Vehicle spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Fuel Cards",
+     "base": 9000,
+     "memo": "Monthly fuel card statement"
+    },
+    {
+     "vendor": "Summit Fleet Leasing",
+     "base": 14000,
+     "memo": "Van lease installments"
+    },
+    {
+     "vendor": "Cobalt Tire & Brake",
+     "base": 2200,
+     "memo": "Routine tire service"
+    }
+   ],
+   "events": [
+    {
+     "key": "liftgate",
+     "vendor": "Summit Fleet Leasing",
+     "memos": [
+      "Lift gate retrofit — hydraulic gate fitting",
+      "Lift gate retrofit — wiring harness"
+     ],
+     "cross_memo": "Lift gate retrofit — crane operator training",
+     "plain": [
+      "the lift gate retrofit",
+      "lift gate retrofit work",
+      "the lift gate retrofit program"
+     ],
+     "oblique": [
+      "adding loading equipment to the trucks",
+      "truck bed upgrades",
+      "getting panels off trucks without hand carrying",
+      "the safety push for crew back injuries",
+      "modifications to the work trucks",
+      "powered unloading gear",
+      "equipping crews to unload heavy pallets",
+      "mechanical help for moving modules",
+      "outfitting the crew trucks",
+      "the insurer requested truck changes",
+      "bolt-on cargo lifting hardware",
+      "reducing strain on field crews",
+      "vehicle modifications ordered by operations",
+      "post-injury changes to delivery trucks",
+      "conversion of the older trucks",
+      "gear that lowers loads to the ground"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "hailstorm",
+     "vendor": "Delmar Collision Works",
+     "memos": [
+      "Hailstorm damage — windshield replacement",
+      "Hailstorm damage — dent removal bodywork"
+     ],
+     "cross_memo": "Hailstorm damage — rental vehicles",
+     "plain": [
+      "the hailstorm damage",
+      "hailstorm damage repairs",
+      "the hailstorm damage claims"
+     ],
+     "oblique": [
+      "the freak weather event",
+      "storm-related body shop bills",
+      "trucks pummeled by ice pellets",
+      "fixing cracked glass on the trucks",
+      "the insurance deductible on the storm",
+      "bodyshop invoices after the weather",
+      "a bad weather incident at the yard",
+      "restoring pitted trucks to good shape",
+      "the parking lot ice storm",
+      "cosmetic fixes after severe weather",
+      "unexpected weather losses",
+      "the cleanup after the yard got pelted",
+      "weather-related fixes to the work trucks",
+      "getting the dinged trucks back on the road",
+      "the bad storm last week",
+      "insurance excess on the truck lot incident"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Installation Subcontractors",
+   "aliases": [
+    "subs",
+    "subcontractors",
+    "install labor",
+    "subcontract labor",
+    "crew subs"
+   ],
+   "narrative": [
+    "Subs",
+    "Subcontractors",
+    "Install labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "Apex Roofing Crews",
+     "base": 18000,
+     "memo": "Rooftop mounting crews"
+    },
+    {
+     "vendor": "Bright Wire Electric",
+     "base": 15000,
+     "memo": "Electrical tie-in labor"
+    },
+    {
+     "vendor": "Keystone Trenching",
+     "base": 6000,
+     "memo": "Ground mount trenching"
+    }
+   ],
+   "events": [
+    {
+     "key": "leakback",
+     "vendor": "Apex Roofing Crews",
+     "memos": [
+      "Leak callback — flashing resealing",
+      "Leak callback — attic drywall patch"
+     ],
+     "cross_memo": "Leak callback — ceiling paint",
+     "plain": [
+      "the leak callback",
+      "leak callback visits",
+      "the leak callback jobs"
+     ],
+     "oblique": [
+      "going back to fix homeowner complaints",
+      "warranty visits to finished jobs",
+      "water getting into customer homes",
+      "redoing penetrations that failed",
+      "unhappy customers after completion",
+      "returning to sites we already closed out",
+      "free repairs on completed systems",
+      "moisture problems after installation",
+      "rework of earlier workmanship",
+      "fixing the damp spots upstairs",
+      "service calls on past projects",
+      "quality fixes at customer houses",
+      "the wet weather complaints",
+      "sealing problems on finished homes",
+      "making good on our workmanship promise",
+      "repeat trips to old jobs"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "steeppitch",
+     "vendor": "Northgate Scaffold Rental",
+     "memos": [
+      "Steep pitch access — scaffold erection",
+      "Steep pitch access — harness anchors"
+     ],
+     "cross_memo": "Steep pitch access — fall arrest training",
+     "plain": [
+      "the steep pitch access",
+      "steep pitch access costs",
+      "the steep pitch access setup"
+     ],
+     "oblique": [
+      "a hard to reach hillside job",
+      "temporary platforms around the building",
+      "getting workers onto the sharp slope",
+      "one very tall home",
+      "extra gear for working at height",
+      "the three storey customer job",
+      "equipment keeping workers safe on tall homes",
+      "temporary staging for one job",
+      "the difficult hillside project",
+      "special setup for a dangerous slope",
+      "safe footing on a tilted surface",
+      "contractor mobilization to a cliffside property",
+      "the unusually angled building",
+      "temporary structures put up at the site",
+      "jobsite preparations for very tall work",
+      "gear that let workers get up there"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Permits & Interconnection",
+   "aliases": [
+    "permits",
+    "permit fees",
+    "interconnection",
+    "utility fees",
+    "inspection costs"
+   ],
+   "narrative": [
+    "Permits",
+    "Permit fees",
+    "Interconnection"
+   ],
+   "recurring": [
+    {
+     "vendor": "City Permit Expediters",
+     "base": 7000,
+     "memo": "Permit filing fees"
+    },
+    {
+     "vendor": "Gridlink Utility Services",
+     "base": 5500,
+     "memo": "Interconnection application fees"
+    },
+    {
+     "vendor": "Metro Inspection Group",
+     "base": 3500,
+     "memo": "Final inspection fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "feederstudy",
+     "vendor": "Gridlink Utility Services",
+     "memos": [
+      "Feeder upgrade study — transformer deposit",
+      "Feeder upgrade study — load analysis"
+     ],
+     "cross_memo": "Feeder upgrade study — subpanel change order",
+     "plain": [
+      "the feeder upgrade study",
+      "feeder upgrade study charges",
+      "the feeder upgrade study deposit"
+     ],
+     "oblique": [
+      "the power company demanding grid reinforcement",
+      "neighborhood line capacity problems",
+      "what the electric provider required before approval",
+      "pole mounted equipment capacity limits",
+      "the local grid being maxed out",
+      "pre-approval engineering demanded by the power company",
+      "a prerequisite for connecting the big project",
+      "capacity checks on the street circuit",
+      "the provider's technical screening",
+      "overloaded neighborhood wires",
+      "up-front money to the power provider",
+      "determining whether the local network can take more generation",
+      "required pre-hookup engineering",
+      "grid capacity screening",
+      "the commercial site's hookup hurdles",
+      "early-stage grid review costs"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "historic",
+     "vendor": "Old Town Preservation Board",
+     "memos": [
+      "Historic district review — design board hearing",
+      "Historic district review — facade rendering"
+     ],
+     "cross_memo": "Historic district review — homeowner association appeal",
+     "plain": [
+      "the historic district review",
+      "historic district review fees",
+      "the historic district review hearing"
+     ],
+     "oblique": [
+      "extra approvals in the heritage neighborhood",
+      "aesthetic approvals for protected homes",
+      "making panels look acceptable to local authorities",
+      "visual impact paperwork",
+      "special rules for protected streets",
+      "getting approval to touch landmark houses",
+      "committee meetings about appearance",
+      "mockup drawings for the authorities",
+      "sensitive neighborhood approvals",
+      "extra scrutiny on landmark properties",
+      "cosmetic sign-off requirements",
+      "convincing local officials about looks",
+      "the heritage area approval process",
+      "slow approvals in the protected quarter",
+      "applications to a special municipal panel",
+      "proof that arrays are hidden from the street"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Warehousing & Logistics",
+   "aliases": [
+    "warehouse",
+    "warehousing",
+    "freight",
+    "logistics",
+    "inbound shipping"
+   ],
+   "narrative": [
+    "Warehouse",
+    "Freight",
+    "Logistics"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-State Freight Lines",
+     "base": 12000,
+     "memo": "Inbound module freight"
+    },
+    {
+     "vendor": "Pallet Pros Storage",
+     "base": 8500,
+     "memo": "Racking and pallet storage"
+    },
+    {
+     "vendor": "Redline Last Mile Delivery",
+     "base": 4000,
+     "memo": "Jobsite delivery runs"
+    }
+   ],
+   "events": [
+    {
+     "key": "portsurcharge",
+     "vendor": "Tri-State Freight Lines",
+     "memos": [
+      "Port congestion surcharge — container demurrage",
+      "Port congestion surcharge — chassis fees"
+     ],
+     "cross_memo": "Port congestion surcharge — emergency trucking",
+     "plain": [
+      "the port congestion surcharge",
+      "port congestion surcharge costs",
+      "the port congestion surcharge bills"
+     ],
+     "oblique": [
+      "ships sitting at the harbor too long",
+      "backlog at the docks",
+      "inventory stuck offshore waiting to unload",
+      "late imports piling up",
+      "overseas shipments delayed at arrival",
+      "extra charges for holding imported cargo",
+      "the dockside logjam",
+      "slow customs clearing for imported goods",
+      "delays unloading ships from Asia",
+      "waiting charges at the terminal",
+      "the shipping bottleneck",
+      "penalties on late pickups of imports",
+      "our overseas supplier's cargo sitting idle",
+      "the harbor traffic jam",
+      "supply chain slowdowns abroad",
+      "fines for leaving boxes at the terminal"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "hazmat",
+     "vendor": "Greenfield Hazmat Carriers",
+     "memos": [
+      "Battery hazmat handling — lithium placards",
+      "Battery hazmat handling — certified driver premium"
+     ],
+     "cross_memo": "Battery hazmat handling — spill kit",
+     "plain": [
+      "the battery hazmat handling",
+      "battery hazmat handling costs",
+      "the battery hazmat handling rules"
+     ],
+     "oblique": [
+      "home backup power packs that can ignite",
+      "dangerous goods rules",
+      "special shipping rules for energy cells",
+      "regulations on moving flammable products",
+      "compliance for transporting power packs",
+      "the fire risk cargo",
+      "extra safety paperwork on shipments",
+      "specialist hauling for volatile items",
+      "licensing demands on the hauler",
+      "transport rules for charged units",
+      "stricter handling of backup power products",
+      "keeping flammable goods compliant on the road",
+      "the regulated shipment requirements",
+      "dangerous cargo certification",
+      "specially trained haulers",
+      "legal requirements on carrying power cells"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Safety & Fall Protection",
+   "aliases": [
+    "safety",
+    "safety spend",
+    "fall protection",
+    "ppe",
+    "osha compliance"
+   ],
+   "narrative": [
+    "Safety",
+    "Safety spend",
+    "Fall protection"
+   ],
+   "recurring": [
+    {
+     "vendor": "Anchor Point Equipment",
+     "base": 4500,
+     "memo": "Harness and lanyard replacements"
+    },
+    {
+     "vendor": "SafeSite Training Co",
+     "base": 3000,
+     "memo": "Crew safety classes"
+    },
+    {
+     "vendor": "Vitalis Occupational Clinic",
+     "base": 1800,
+     "memo": "Drug screening and physicals"
+    }
+   ],
+   "events": [
+    {
+     "key": "investigation",
+     "vendor": "SafeSite Training Co",
+     "memos": [
+      "Incident investigation audit — consultant interviews",
+      "Incident investigation audit — corrective action plan"
+     ],
+     "cross_memo": "Incident investigation audit — legal counsel retainer",
+     "plain": [
+      "the incident investigation audit",
+      "incident investigation audit fees",
+      "the incident investigation audit findings"
+     ],
+     "oblique": [
+      "the regulator showing up after an accident",
+      "a worker getting hurt on a job",
+      "government inspectors looking into the injury",
+      "outside experts brought in after the mishap",
+      "figuring out what went wrong",
+      "the aftermath of the ladder accident",
+      "workplace agency follow-up",
+      "the accident review",
+      "a formal probe of an on-site injury",
+      "post-accident compliance work",
+      "fixing procedures after an employee was hurt",
+      "federal workplace inquiry",
+      "root cause work after a near miss",
+      "the mishap on the Henderson job",
+      "paying specialists to examine a jobsite mishap",
+      "reporting obligations after an accident"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "aerial",
+     "vendor": "Skyreach Operator Institute",
+     "memos": [
+      "Aerial lift certification — operator exams",
+      "Aerial lift certification — boom inspection"
+     ],
+     "cross_memo": "Aerial lift certification — rental boom",
+     "plain": [
+      "the aerial lift certification",
+      "aerial lift certification fees",
+      "the aerial lift certification exams"
+     ],
+     "oblique": [
+      "licenses for people running cherry pickers",
+      "qualifying drivers of tall machines",
+      "mandatory credentials for heavy machinery staff",
+      "tickets for elevated work platforms",
+      "making employees legally permitted to use basket trucks",
+      "new customer contract requirement for qualified personnel",
+      "getting staff approved for high reach machinery",
+      "proof of competence for platform vehicles",
+      "a general contractor demanding credentials",
+      "the cherry picker program",
+      "teaching staff to use bucket trucks",
+      "official papers for working up high",
+      "accreditation of our technicians on tall machinery",
+      "testing fees for machinery handlers",
+      "legal sign-off to elevate workers",
+      "elevated platform credentials"
+     ],
+     "low": 10000,
+     "high": 19000
+    }
+   ]
+  },
+  {
+   "name": "Sales Lead Generation",
+   "aliases": [
+    "lead gen",
+    "marketing",
+    "advertising",
+    "customer acquisition",
+    "lead costs"
+   ],
+   "narrative": [
+    "Lead gen",
+    "Marketing",
+    "Customer acquisition"
+   ],
+   "recurring": [
+    {
+     "vendor": "SunLead Network",
+     "base": 11000,
+     "memo": "Purchased homeowner leads"
+    },
+    {
+     "vendor": "Clearview Digital Ads",
+     "base": 9000,
+     "memo": "Search and social ad spend"
+    },
+    {
+     "vendor": "Doorstep Canvassing Co",
+     "base": 6500,
+     "memo": "Door knocking commissions"
+    }
+   ],
+   "events": [
+    {
+     "key": "streaming",
+     "vendor": "Clearview Digital Ads",
+     "memos": [
+      "Streaming video campaign — production shoot",
+      "Streaming video campaign — airtime placement"
+     ],
+     "cross_memo": "Streaming video campaign — landing page rebuild",
+     "plain": [
+      "the streaming video campaign",
+      "streaming video campaign costs",
+      "the streaming video campaign launch"
+     ],
+     "oblique": [
+      "our first television style push",
+      "a brand awareness splash",
+      "commercials aimed at living rooms",
+      "the big promotional burst",
+      "filming spots featuring our crews",
+      "reaching customers on their TVs",
+      "an expensive push to raise name recognition",
+      "the broadcast style outreach",
+      "pitching ourselves to cord-cutters",
+      "mass-market promotion",
+      "the new brand spots",
+      "marketing aimed at a whole region",
+      "a splashy visibility experiment",
+      "on-screen exposure",
+      "creative agency fees for commercials",
+      "paying for eyeballs in the evening"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "expobooth",
+     "vendor": "Bluebird Trade Shows",
+     "memos": [
+      "Home expo booth — display construction",
+      "Home expo booth — exhibitor registration"
+     ],
+     "cross_memo": "Home expo booth — staff hotel",
+     "plain": [
+      "the home expo booth",
+      "home expo booth costs",
+      "the home expo booth setup"
+     ],
+     "oblique": [
+      "the regional convention weekend",
+      "meeting prospects at a fair",
+      "a stand at the consumer fair",
+      "face-to-face promotion at a convention hall",
+      "the annual fair appearance",
+      "events where visitors walk past our table",
+      "our presence at the fair",
+      "pop-up promotion in a convention center",
+      "an in-person event push",
+      "giveaways plus brochures for attendees",
+      "temporary showroom at a convention",
+      "live event sponsorship",
+      "fairground presence",
+      "meeting people at community gatherings",
+      "the weekend fair",
+      "hand-to-hand promotion at a public event"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Design Software Subscriptions",
+   "aliases": [
+    "software",
+    "saas",
+    "design tools",
+    "subscriptions",
+    "licenses"
+   ],
+   "narrative": [
+    "Software",
+    "SaaS",
+    "Design tools"
+   ],
+   "recurring": [
+    {
+     "vendor": "Aurora Layout Cloud",
+     "base": 3200,
+     "memo": "Design software seats"
+    },
+    {
+     "vendor": "Crewbridge CRM",
+     "base": 2800,
+     "memo": "CRM subscription"
+    },
+    {
+     "vendor": "Ledgerline Payroll",
+     "base": 1500,
+     "memo": "Payroll platform fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "migration",
+     "vendor": "Crewbridge CRM",
+     "memos": [
+      "Data migration cleanup — record import",
+      "Data migration cleanup — duplicate merge"
+     ],
+     "cross_memo": "Data migration cleanup — consultant hours",
+     "plain": [
+      "the data migration cleanup",
+      "data migration cleanup costs",
+      "the data migration cleanup project"
+     ],
+     "oblique": [
+      "moving customer information to a new system",
+      "tidying up old contact lists",
+      "switching systems midyear",
+      "rescuing messy customer files",
+      "the transfer of historical customer info",
+      "the switchover from spreadsheets",
+      "fixing bad entries after the changeover",
+      "bringing years of prospects into one place",
+      "scrubbing contact lists",
+      "consolidating sales files",
+      "the system changeover support",
+      "getting the old tool's contents loaded",
+      "untangling repeated customers",
+      "outside help with the changeover",
+      "carrying over our pipeline history",
+      "the one-time information transfer"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "phishing",
+     "vendor": "Pinnacle Forensics Group",
+     "memos": [
+      "Phishing breach response — forensic analysis",
+      "Phishing breach response — credential reset"
+     ],
+     "cross_memo": "Phishing breach response — credit monitoring",
+     "plain": [
+      "the phishing breach response",
+      "phishing breach response costs",
+      "the phishing breach response team"
+     ],
+     "oblique": [
+      "a hacked email account",
+      "criminals tricking an employee",
+      "the security scare",
+      "stolen logins and cleanup",
+      "outside experts after the cyber attack",
+      "an intruder getting into our network",
+      "dealing with the fraudulent message that fooled staff",
+      "locking down accounts after a compromise",
+      "protecting customers whose details leaked",
+      "an online attack",
+      "the digital break-in",
+      "tightening security after a scam email",
+      "specialists investigating how hackers got in",
+      "wire fraud attempt fallout",
+      "unauthorized access to company mailboxes",
+      "a malicious email incident"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Warranty & Defect Costs",
+   "aliases": [
+    "warranty",
+    "warranty costs",
+    "defect claims",
+    "replacement costs",
+    "warranty expense"
+   ],
+   "narrative": [
+    "Warranty",
+    "Warranty costs",
+    "Defect claims"
+   ],
+   "recurring": [
+    {
+     "vendor": "Voltwise Inverter Service",
+     "base": 7000,
+     "memo": "Inverter swap labor"
+    },
+    {
+     "vendor": "Sunshield Warranty Admin",
+     "base": 4000,
+     "memo": "Third party coverage administration"
+    },
+    {
+     "vendor": "Clearcell Module Returns",
+     "base": 3500,
+     "memo": "Returned module handling"
+    }
+   ],
+   "events": [
+    {
+     "key": "firmware",
+     "vendor": "Voltwise Inverter Service",
+     "memos": [
+      "Firmware recall — truck rolls",
+      "Firmware recall — technician overtime"
+     ],
+     "cross_memo": "Firmware recall — customer credits",
+     "plain": [
+      "the firmware recall",
+      "firmware recall costs",
+      "the firmware recall program"
+     ],
+     "oblique": [
+      "a software bug in the power converters",
+      "manufacturer ordered fix for a batch of units",
+      "visiting hundreds of homes to apply an update",
+      "the vendor defect affecting converters in the field",
+      "a design flaw in the conversion boxes",
+      "overtime from the manufacturer's mandatory fix",
+      "the faulty batch",
+      "updating systems already running on rooftops",
+      "safety notice from the equipment maker",
+      "site visits to correct a supplier error",
+      "on-site correction campaign",
+      "the widespread unit glitch",
+      "after-sale fixes demanded by the maker",
+      "fixing a bad code release",
+      "compensating homeowners for a faulty product",
+      "extra field visits for one bad product line"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "microcrack",
+     "vendor": "Meridian Materials Lab",
+     "memos": [
+      "Microcrack claim settlement — lab testing",
+      "Microcrack claim settlement — array replacement credit"
+     ],
+     "cross_memo": "Microcrack claim settlement — shipping reimbursement",
+     "plain": [
+      "the microcrack claim settlement",
+      "microcrack claim settlement costs",
+      "the microcrack claim settlement payout"
+     ],
+     "oblique": [
+      "tiny fractures in the glass of delivered products",
+      "a supplier lot that degraded early",
+      "outputs falling short of promises",
+      "an independent expert verifying product failure",
+      "customers whose systems underperform",
+      "making a group of homeowners whole",
+      "hidden manufacturing flaws",
+      "a bad production run",
+      "scientific proof that cells cracked",
+      "paying customers for lost generation",
+      "defective units found after years on roofs",
+      "the cracked-cell dispute",
+      "resolving the quality complaints from one supplier",
+      "compensation for weak output",
+      "the supplier lot that failed early",
+      "restitution for underperforming systems"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

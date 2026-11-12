@@ -1,0 +1,126 @@
+{
+  "entity": "Brightline Analytics, Inc.",
+  "industry": "B2B SaaS (data analytics platform)",
+  "history_periods": [
+    "2026-08"
+  ],
+  "prior_period": "2026-09",
+  "current_period": "2026-10",
+  "accounts": [
+    {
+      "name": "Hosting & Infrastructure",
+      "aliases": [
+        "hosting & infrastructure",
+        "hosting and infrastructure",
+        "hosting",
+        "infrastructure",
+        "cloud costs"
+      ]
+    },
+    {
+      "name": "Software Subscriptions",
+      "aliases": [
+        "software subscriptions",
+        "software",
+        "subscriptions"
+      ]
+    },
+    {
+      "name": "Salaries & Wages",
+      "aliases": [
+        "salaries & wages",
+        "salaries and wages",
+        "salaries",
+        "wages",
+        "payroll"
+      ]
+    },
+    {
+      "name": "Benefits & Payroll Taxes",
+      "aliases": [
+        "benefits & payroll taxes",
+        "benefits",
+        "payroll taxes"
+      ]
+    },
+    {
+      "name": "Contractors",
+      "aliases": [
+        "contractors",
+        "contractor spend",
+        "contract labor"
+      ]
+    },
+    {
+      "name": "Sales Commissions",
+      "aliases": [
+        "sales commissions",
+        "commissions"
+      ]
+    },
+    {
+      "name": "Marketing Programs",
+      "aliases": [
+        "marketing programs",
+        "marketing",
+        "demand gen"
+      ]
+    },
+    {
+      "name": "Travel & Entertainment",
+      "aliases": [
+        "travel & entertainment",
+        "travel and entertainment",
+        "t&e",
+        "travel"
+      ]
+    },
+    {
+      "name": "Recruiting",
+      "aliases": [
+        "recruiting"
+      ]
+    },
+    {
+      "name": "Legal & Professional",
+      "aliases": [
+        "legal & professional",
+        "legal and professional fees",
+        "legal and professional",
+        "professional fees",
+        "legal"
+      ]
+    },
+    {
+      "name": "Rent & Facilities",
+      "aliases": [
+        "rent & facilities",
+        "rent and facilities",
+        "rent",
+        "facilities"
+      ]
+    },
+    {
+      "name": "Insurance",
+      "aliases": [
+        "insurance"
+      ]
+    },
+    {
+      "name": "Merchant & Bank Fees",
+      "aliases": [
+        "merchant & bank fees",
+        "merchant fees",
+        "bank fees"
+      ]
+    },
+    {
+      "name": "Office & Supplies",
+      "aliases": [
+        "office & supplies",
+        "office supplies",
+        "office"
+      ]
+    }
+  ]
+}

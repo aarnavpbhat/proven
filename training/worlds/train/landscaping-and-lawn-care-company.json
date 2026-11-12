@@ -1,0 +1,815 @@
+{
+ "slug": "landscaping-and-lawn-care-company",
+ "industry": "landscaping and lawn care company",
+ "entities": [
+  "Evergreen Turf Works LLC",
+  "Palmetto Grounds & Garden Co",
+  "Ridgeline Lawn Services Inc",
+  "Cedar Hollow Landscape Group",
+  "Bluestem Outdoor Care Ltd"
+ ],
+ "accounts": [
+  {
+   "name": "Fleet Fuel and Mowing Equipment Fuel",
+   "aliases": [
+    "fuel",
+    "fuel costs",
+    "gas and diesel",
+    "fuel spend",
+    "pump costs"
+   ],
+   "narrative": [
+    "Fuel costs",
+    "Gas and diesel",
+    "Fuel spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Fuel Card Services",
+     "base": 14200,
+     "memo": "Inv fleet fuel card monthly statement"
+    },
+    {
+     "vendor": "Dunmore Bulk Petroleum",
+     "base": 6800,
+     "memo": "Svc bulk diesel yard tank refill"
+    }
+   ],
+   "events": [
+    {
+     "key": "hurricane",
+     "vendor": "Summit Fuel Card Services",
+     "memos": [
+      "Emergency Storm Cleanup — extra fuel card draw",
+      "Emergency Storm Cleanup — generator and chipper fuel"
+     ],
+     "cross_memo": "Emergency Storm Cleanup — temp crew overtime",
+     "plain": [
+      "the emergency storm cleanup",
+      "the storm cleanup fuel draw",
+      "emergency storm cleanup work"
+     ],
+     "oblique": [
+      "the week after the high winds came through",
+      "clearing downed limbs for municipal clients",
+      "all hands responding to the wind damage",
+      "a surge of urgent callouts",
+      "the weather event",
+      "round the clock crews",
+      "roads blocked by fallen trees",
+      "the call from the county office",
+      "the extra shifts after the front passed",
+      "hauling away broken timber",
+      "the unplanned rush of emergency calls",
+      "the aftermath of the squall line",
+      "residents flooding the phone lines",
+      "work no one had scheduled",
+      "clearing neighborhoods quickly",
+      "the damage from the overnight gusts"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "cityhall",
+     "vendor": "Marlow Municipal Fueling Depot",
+     "memos": [
+      "Civic Plaza Contract — onsite fueling truck",
+      "Civic Plaza Contract — Svc mobile pump rental"
+     ],
+     "cross_memo": "Civic Plaza Contract — subcontract crew labor",
+     "plain": [
+      "the civic plaza contract",
+      "civic plaza contract fueling",
+      "the civic plaza fueling setup"
+     ],
+     "oblique": [
+      "the new government job downtown",
+      "a large public site far from our yard",
+      "serving a client with no nearby station",
+      "the big win from the bid season",
+      "a daily commute that was too long",
+      "refueling machines where they worked",
+      "the sprawling campus we took on",
+      "an account that required constant mowing",
+      "the property with hundreds of acres",
+      "keeping equipment running without trips back",
+      "the tender we were awarded",
+      "a customer with strict hours",
+      "work spread across a wide footprint",
+      "the added crew posted at the site",
+      "the municipal landscape program",
+      "the long haul to the worksite"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Repairs and Blade Sharpening",
+   "aliases": [
+    "repairs",
+    "equipment repairs",
+    "mower maintenance",
+    "shop costs",
+    "maintenance spend"
+   ],
+   "narrative": [
+    "Equipment repairs",
+    "Mower maintenance",
+    "Shop costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hartwell Small Engine Supply",
+     "base": 7400,
+     "memo": "Inv parts mower deck belts and filters"
+    },
+    {
+     "vendor": "Keen Edge Sharpening",
+     "base": 2600,
+     "memo": "Svc blade grinding monthly route"
+    },
+    {
+     "vendor": "Torque Masters Repair",
+     "base": 5100,
+     "memo": "Mnt hydraulic hose and seal repairs"
+    }
+   ],
+   "events": [
+    {
+     "key": "zeroturn",
+     "vendor": "Hartwell Small Engine Supply",
+     "memos": [
+      "Gravely Zero-Turn Overhaul — engine rebuild kit",
+      "Gravely Zero-Turn Overhaul — transmission rebuild"
+     ],
+     "cross_memo": "Gravely Zero-Turn Overhaul — loaner machine rental",
+     "plain": [
+      "the gravely zero-turn overhaul",
+      "gravely zero-turn overhaul work",
+      "the zero-turn overhaul"
+     ],
+     "oblique": [
+      "bringing the flagship rider back to life",
+      "a machine that quit mid season",
+      "the costly breakdown of our best asset",
+      "getting a core piece running again",
+      "a tired unit that finally gave out",
+      "swapping in worn internals",
+      "the work on the unit crews fight over",
+      "nursing an older machine along",
+      "a stand-in unit while ours was down",
+      "repairs the foreman pushed for",
+      "the machine that kept stalling",
+      "rebuilding rather than replacing",
+      "an aging workhorse",
+      "a refurbishment of our priciest mower",
+      "a piece of kit sidelined for weeks",
+      "the decision to fix rather than buy"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "trailerfire",
+     "vendor": "Ironvale Welding and Fabrication",
+     "memos": [
+      "Trailer Axle Recall — weld reinforcement",
+      "Trailer Axle Recall — Inv replacement hubs"
+     ],
+     "cross_memo": "Trailer Axle Recall — DOT inspection fee",
+     "plain": [
+      "the trailer axle recall",
+      "trailer axle recall repairs",
+      "the axle recall work"
+     ],
+     "oblique": [
+      "the safety notice from the manufacturer",
+      "reinforcing our haul rigs after a bulletin",
+      "the regulators asking us to fix hauling gear",
+      "a defect found on a batch of rigs",
+      "getting every rolling unit signed off",
+      "work that was not optional",
+      "the notice that grounded our carriers",
+      "an inspector's findings",
+      "a flaw traced back to the builder",
+      "getting the haulers road legal again",
+      "checks demanded after the incident elsewhere",
+      "the fix we had to complete by deadline",
+      "a rushed shop schedule for the haulers",
+      "the compliance push for towing gear",
+      "metalwork on the load carriers",
+      "an unwelcome letter in the mail"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Seed, Sod and Mulch Materials",
+   "aliases": [
+    "materials",
+    "landscape materials",
+    "seed and sod",
+    "mulch spend",
+    "plant materials"
+   ],
+   "narrative": [
+    "Landscape materials",
+    "Seed and sod",
+    "Mulch spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenfield Turf Farms",
+     "base": 18500,
+     "memo": "Inv sod pallets delivered per job"
+    },
+    {
+     "vendor": "Pinecrest Mulch and Stone",
+     "base": 12300,
+     "memo": "Svc bulk mulch and gravel delivery"
+    },
+    {
+     "vendor": "Sowell Seed Company",
+     "base": 4700,
+     "memo": "Inv overseed blend and starter fertilizer"
+    }
+   ],
+   "events": [
+    {
+     "key": "countryclub",
+     "vendor": "Greenfield Turf Farms",
+     "memos": [
+      "Heron Bay Golf Renovation — bentgrass sod",
+      "Heron Bay Golf Renovation — Svc greens topdressing"
+     ],
+     "cross_memo": "Heron Bay Golf Renovation — irrigation trenching sub",
+     "plain": [
+      "the heron bay golf renovation",
+      "heron bay golf renovation sod",
+      "the heron bay renovation"
+     ],
+     "oblique": [
+      "redoing the fairways for the private club",
+      "a premium client's complete overhaul",
+      "the course that wanted a fresh look",
+      "a prestige account with exacting standards",
+      "the members' complaints about turf quality",
+      "a sprawling recreation facility makeover",
+      "the biggest single install of the year",
+      "a high profile reseeding project",
+      "work for the club's board",
+      "the ground-up redesign of playing surfaces",
+      "a customer who demanded perfection",
+      "the green fees that depended on our work",
+      "a facility reopening on a tight date",
+      "the all-season sports surface project",
+      "a contract worth bragging about",
+      "our first big sports turf win"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "droughtseed",
+     "vendor": "Alder Ridge Native Plants",
+     "memos": [
+      "Meadow Restoration Grant — native plug flats",
+      "Meadow Restoration Grant — Inv wildflower seed mix"
+     ],
+     "cross_memo": "Meadow Restoration Grant — conservation consultant fee",
+     "plain": [
+      "the meadow restoration grant",
+      "meadow restoration grant plantings",
+      "the meadow restoration"
+     ],
+     "oblique": [
+      "a conservation program funded by the state",
+      "turning old pasture into habitat",
+      "pollinator friendly planting for a land trust",
+      "work paid for by an outside agency",
+      "a non-profit client with a mission",
+      "ecological replanting on open acreage",
+      "the wildlife corridor project",
+      "the agency that wanted natives only",
+      "a landscape meant to attract bees",
+      "returning farmland to its original state",
+      "paperwork and planting for a public cause",
+      "a project with environmental reporting duties",
+      "seedlings by the thousands",
+      "the habitat initiative we bid on",
+      "an unusual nature minded engagement",
+      "grassland rebuilt from scratch"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Irrigation Parts and Service",
+   "aliases": [
+    "irrigation",
+    "sprinkler costs",
+    "irrigation parts",
+    "watering systems",
+    "irrigation spend"
+   ],
+   "narrative": [
+    "Irrigation",
+    "Sprinkler costs",
+    "Irrigation spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Aquaflow Distributors",
+     "base": 8900,
+     "memo": "Inv sprinkler heads valves and fittings"
+    },
+    {
+     "vendor": "Rainwise Controls",
+     "base": 3200,
+     "memo": "Svc smart controller subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "mainbreak",
+     "vendor": "Aquaflow Distributors",
+     "memos": [
+      "Northgate HOA Mainline Failure — PVC mainline pipe",
+      "Northgate HOA Mainline Failure — Inv pressure valves"
+     ],
+     "cross_memo": "Northgate HOA Mainline Failure — excavation equipment rental",
+     "plain": [
+      "the northgate hoa mainline failure",
+      "northgate mainline failure repairs",
+      "the northgate mainline failure"
+     ],
+     "oblique": [
+      "a burst pipe at the residential community",
+      "water gushing across the lawn for days",
+      "the neighborhood association's angry call",
+      "digging up a street frontage",
+      "an underground line that gave way",
+      "a flooded common area",
+      "the board demanding it be fixed today",
+      "pipes that had aged out",
+      "a pressure spike that cracked the buried line",
+      "a property manager's emergency request",
+      "the leak that drained the reservoir",
+      "tearing up turf to reach the break",
+      "a sudden shutdown of watering for hundreds of homes",
+      "the repair that could not wait",
+      "trenches across the entrance",
+      "the soaked median"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "drip",
+     "vendor": "Verdant Drip Systems",
+     "memos": [
+      "Orchard Terrace Drip Retrofit — emitter tubing",
+      "Orchard Terrace Drip Retrofit — Svc pressure regulators"
+     ],
+     "cross_memo": "Orchard Terrace Drip Retrofit — design consultation",
+     "plain": [
+      "the orchard terrace drip retrofit",
+      "orchard terrace drip retrofit tubing",
+      "the orchard terrace retrofit"
+     ],
+     "oblique": [
+      "converting a client to water saving lines",
+      "a customer's push to cut their utility bill",
+      "swapping out overhead spray for low flow",
+      "the rebate program that made it attractive",
+      "an upgrade sold to a hillside property",
+      "new plumbing for the planted beds",
+      "a conservation minded redo",
+      "water restrictions pushing a client to change",
+      "a one time modernization of the old setup",
+      "the slope that kept eroding",
+      "plants getting targeted watering",
+      "a sustainability pitch we won",
+      "pulling out the old spray heads",
+      "a residential upgrade with big margins",
+      "the community garden's request",
+      "an efficiency project"
+     ],
+     "low": 8500,
+     "high": 17000
+    }
+   ]
+  },
+  {
+   "name": "Subcontractor and Seasonal Labor",
+   "aliases": [
+    "subs",
+    "subcontractors",
+    "seasonal labor",
+    "crew labor",
+    "temp labor spend"
+   ],
+   "narrative": [
+    "Subcontractors",
+    "Seasonal labor",
+    "Temp labor spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hired Hands Staffing",
+     "base": 22000,
+     "memo": "Inv seasonal crew weekly billing"
+    },
+    {
+     "vendor": "Tree Pro Subcontracting",
+     "base": 9500,
+     "memo": "Svc pruning and removal sub work"
+    },
+    {
+     "vendor": "Lawnstar Labor Solutions",
+     "base": 6400,
+     "memo": "Inv day laborers per timesheet"
+    }
+   ],
+   "events": [
+    {
+     "key": "snow",
+     "vendor": "Hired Hands Staffing",
+     "memos": [
+      "Blizzard Season Plow Crew — overnight shifts",
+      "Blizzard Season Plow Crew — Inv holiday premium"
+     ],
+     "cross_memo": "Blizzard Season Plow Crew — salt spreader lease",
+     "plain": [
+      "the blizzard season plow crew",
+      "blizzard plow crew shifts",
+      "the blizzard season crew"
+     ],
+     "oblique": [
+      "clearing lots after the heavy white weather",
+      "winter work to keep payroll busy",
+      "commercial clients wanting open driveways by dawn",
+      "a cold snap that kept crews out all night",
+      "off season hours we agreed to cover",
+      "the freeze that slammed the whole region",
+      "shoveling and scraping for retail centers",
+      "a contract that guaranteed response times",
+      "crews on call through the holidays",
+      "the deep accumulation we did not expect",
+      "extra bodies for the frozen months",
+      "a diversification into cold weather work",
+      "parking areas that needed attention at 3am",
+      "the unusually harsh winter",
+      "property managers calling at all hours",
+      "bundled up crews"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "treecrane",
+     "vendor": "Skyline Crane and Rigging",
+     "memos": [
+      "Old Oak Removal — crane day rate",
+      "Old Oak Removal — Svc rigging crew"
+     ],
+     "cross_memo": "Old Oak Removal — stump grinding sub",
+     "plain": [
+      "the old oak removal",
+      "old oak removal crane work",
+      "the old oak removal job"
+     ],
+     "oblique": [
+      "taking down a massive hardwood near a house",
+      "a specialty lift too big for our own gear",
+      "a homeowner's dying giant",
+      "hiring outside muscle for a risky job",
+      "a specimen that had been there a century",
+      "work that insurance made us outsource",
+      "a tricky drop over a roofline",
+      "the neighbor's worry about falling limbs",
+      "an arborist's recommendation to take it out",
+      "a one time job requiring heavy hoisting",
+      "a towering problem in a tight yard",
+      "cutting something enormous in sections",
+      "an expensive single afternoon",
+      "the specialist team we brought in",
+      "a tree that threatened the garage",
+      "a permit heavy operation"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Chemicals and Fertilizer Programs",
+   "aliases": [
+    "chemicals",
+    "fertilizer",
+    "turf chemicals",
+    "treatment products",
+    "application costs"
+   ],
+   "narrative": [
+    "Chemicals",
+    "Fertilizer",
+    "Treatment products"
+   ],
+   "recurring": [
+    {
+     "vendor": "AgriPro Turf Supply",
+     "base": 16800,
+     "memo": "Inv granular fertilizer and herbicide"
+    },
+    {
+     "vendor": "Bayfield Pest Solutions",
+     "base": 5300,
+     "memo": "Svc insecticide and fungicide liquids"
+    }
+   ],
+   "events": [
+    {
+     "key": "grubs",
+     "vendor": "AgriPro Turf Supply",
+     "memos": [
+      "Grub Infestation Treatment — curative insecticide",
+      "Grub Infestation Treatment — Inv surfactant adjuvant"
+     ],
+     "cross_memo": "Grub Infestation Treatment — customer credits issued",
+     "plain": [
+      "the grub infestation treatment",
+      "grub infestation treatment products",
+      "the grub infestation"
+     ],
+     "oblique": [
+      "a pest outbreak that chewed up yards",
+      "brown patches that appeared across our routes",
+      "the wave of damaged lawns last summer",
+      "customers complaining about dead turf",
+      "larvae feeding on roots underground",
+      "an unplanned round of applications",
+      "the extra pass we made at no charge",
+      "a regional problem with soil dwelling bugs",
+      "lawns that peeled back like carpet",
+      "treatments we had not budgeted for",
+      "the scramble to save client yards",
+      "an invasion from beneath the soil",
+      "warranty work on turf programs",
+      "the spike in service calls about thinning grass",
+      "a plague of root feeders",
+      "blanket coverage across our accounts"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "certification",
+     "vendor": "Cornerstone Applicator Training",
+     "memos": [
+      "Restricted Use License Renewal — exam prep course",
+      "Restricted Use License Renewal — Inv state filing fees"
+     ],
+     "cross_memo": "Restricted Use License Renewal — crew time in class",
+     "plain": [
+      "the restricted use license renewal",
+      "restricted use license renewal fees",
+      "the license renewal course"
+     ],
+     "oblique": [
+      "keeping our applicators legal for another cycle",
+      "the state's requirement for credentialing",
+      "sending the team back to the classroom",
+      "paperwork that must be filed every few years",
+      "credentials that were about to lapse",
+      "regulatory housekeeping",
+      "testing our technicians on safe handling",
+      "a compliance deadline",
+      "the agency's periodic recertification",
+      "staff earning their permits again",
+      "an administrative must do",
+      "fees the licensing board collects",
+      "the whole crew sitting exams",
+      "a cost of staying in business",
+      "a mandatory refresher",
+      "proof that our people are qualified"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Safety Compliance",
+   "aliases": [
+    "insurance",
+    "liability coverage",
+    "safety costs",
+    "coverage and compliance",
+    "premium spend"
+   ],
+   "narrative": [
+    "Insurance",
+    "Liability coverage",
+    "Premium spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Guardian Contractors Insurance",
+     "base": 11800,
+     "memo": "Qtr general liability premium installment"
+    },
+    {
+     "vendor": "SafeStep Compliance Group",
+     "base": 2900,
+     "memo": "Svc OSHA training and PPE audits"
+    },
+    {
+     "vendor": "Northfield Workers Comp Trust",
+     "base": 9700,
+     "memo": "Mnt workers comp monthly payroll based"
+    }
+   ],
+   "events": [
+    {
+     "key": "claim",
+     "vendor": "Guardian Contractors Insurance",
+     "memos": [
+      "Windshield Shatter Claim — deductible payment",
+      "Windshield Shatter Claim — Inv adjuster fee"
+     ],
+     "cross_memo": "Windshield Shatter Claim — glass replacement",
+     "plain": [
+      "the windshield shatter claim",
+      "windshield shatter claim deductible",
+      "the windshield shatter incident"
+     ],
+     "oblique": [
+      "a flying stone that hit a neighbor's car",
+      "the customer's complaint about property damage",
+      "paying out of pocket for an accident",
+      "a rock thrown from a rotating blade",
+      "a policyholder's mishap on a job site",
+      "the amount we owe before coverage starts",
+      "a third party demanding reimbursement",
+      "damage to a parked vehicle during mowing",
+      "an incident report filed by a foreman",
+      "the owner of the sedan",
+      "paperwork after a mishap at a school lot",
+      "the cost of an avoidable accident",
+      "an angry phone call about a cracked pane",
+      "the claim that raised our loss history",
+      "a small loss that became a headache",
+      "debris striking something it should not"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "audit",
+     "vendor": "Redstone Premium Audit Services",
+     "memos": [
+      "Payroll Classification Audit — back premium assessment",
+      "Payroll Classification Audit — Svc consultant review"
+     ],
+     "cross_memo": "Payroll Classification Audit — legal counsel fees",
+     "plain": [
+      "the payroll classification audit",
+      "payroll classification audit assessment",
+      "the classification audit"
+     ],
+     "oblique": [
+      "the carrier checking how we coded our workers",
+      "a bill for coverage we underpaid",
+      "an examiner combing through our books",
+      "a determination that crews were misrouted",
+      "retroactive charges from the underwriter",
+      "the year end review that went badly",
+      "a dispute over job category rates",
+      "money owed for previous periods",
+      "an outside reviewer's finding",
+      "the letter from the insurer",
+      "reclassifying employees at higher risk",
+      "a look backward at what we reported",
+      "a true up we did not anticipate",
+      "the reconciliation of old payroll records",
+      "paperwork requests from the carrier",
+      "a retroactive adjustment"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Lead Generation",
+   "aliases": [
+    "marketing",
+    "advertising",
+    "lead gen",
+    "promotion costs",
+    "ad spend"
+   ],
+   "narrative": [
+    "Marketing",
+    "Lead gen",
+    "Ad spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearview Digital Ads",
+     "base": 7200,
+     "memo": "Svc search and social ad management"
+    },
+    {
+     "vendor": "Doorhanger Print Co",
+     "base": 2400,
+     "memo": "Inv flyers and door hangers"
+    },
+    {
+     "vendor": "Neighbor Referral Network",
+     "base": 1800,
+     "memo": "Svc lead fees per booked estimate"
+    }
+   ],
+   "events": [
+    {
+     "key": "truckwrap",
+     "vendor": "Doorhanger Print Co",
+     "memos": [
+      "Fleet Rebrand Wraps — vinyl truck graphics",
+      "Fleet Rebrand Wraps — Inv trailer decals"
+     ],
+     "cross_memo": "Fleet Rebrand Wraps — installer labor",
+     "plain": [
+      "the fleet rebrand wraps",
+      "fleet rebrand wraps graphics",
+      "the rebrand wraps"
+     ],
+     "oblique": [
+      "putting our new look on every vehicle",
+      "a fresh identity rolled out on the road",
+      "the refresh the owner wanted",
+      "rolling billboards for the company",
+      "a redesign of how our trucks appear",
+      "the logo change announced in spring",
+      "visual updates for the whole lineup",
+      "a new color scheme across the yard",
+      "making crews recognizable in neighborhoods",
+      "a one time image project",
+      "the agency's design recommendation",
+      "vehicles dropped off for a day each",
+      "an investment in brand awareness",
+      "trucks that turned heads downtown",
+      "a coordinated visual refresh",
+      "the look of the company changing"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "homeshow",
+     "vendor": "Expo Hall Productions",
+     "memos": [
+      "Spring Home Expo Booth — display space",
+      "Spring Home Expo Booth — Svc staffing fee"
+     ],
+     "cross_memo": "Spring Home Expo Booth — giveaway swag order",
+     "plain": [
+      "the spring home expo booth",
+      "spring home expo booth space",
+      "the home expo booth"
+     ],
+     "oblique": [
+      "a weekend meeting prospects face to face",
+      "the convention hall where homeowners browse",
+      "setting up a stand with a model garden",
+      "an event that drew thousands of visitors",
+      "a sales push aimed at new subdivisions",
+      "the trade gathering downtown",
+      "handing out brochures to a crowd",
+      "a flashy display we built for the weekend",
+      "networking with other local contractors",
+      "the annual showcase for remodelers",
+      "staff pulled off jobs to talk to attendees",
+      "a push for fresh residential leads",
+      "the large indoor fair",
+      "a calculated bet on foot traffic",
+      "samples and sign ups at a table",
+      "a one off promotional appearance"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

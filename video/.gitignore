@@ -1,0 +1,10 @@
+node_modules/
+.scratch/
+out/*
+!out/proven-demo-2min.mp4
+public/facecam/
+public/voice/
+public/contact-frames/
+reference/
+.DS_Store
+__pycache__/

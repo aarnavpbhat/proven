@@ -1,0 +1,830 @@
+{
+ "slug": "online-tutoring-marketplace",
+ "industry": "online tutoring marketplace",
+ "entities": [
+  "BrightPath Tutoring Exchange",
+  "Lumen Learning Marketplace",
+  "Scholarbridge Inc",
+  "TutorNest Collective",
+  "Pinnacle Peer Learning Co"
+ ],
+ "accounts": [
+  {
+   "name": "Tutor Payouts",
+   "aliases": [
+    "tutor payouts",
+    "tutor pay",
+    "educator earnings",
+    "instructor payments",
+    "payout spend"
+   ],
+   "narrative": [
+    "Tutor pay",
+    "Educator earnings",
+    "Payout spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stripe Connect Payouts",
+     "base": 30000,
+     "memo": "Weekly tutor payout batch - core subjects"
+    },
+    {
+     "vendor": "Payoneer Global Disbursements",
+     "base": 18000,
+     "memo": "Intl tutor disbursement - EMEA cohort"
+    },
+    {
+     "vendor": "Wise Business Transfers",
+     "base": 9000,
+     "memo": "Intl tutor disbursement - APAC cohort"
+    }
+   ],
+   "events": [
+    {
+     "key": "surgebonus",
+     "vendor": "Stripe Connect Payouts",
+     "memos": [
+      "Peak season surge bonus - math tutors",
+      "Peak season surge bonus - SAT prep tutors"
+     ],
+     "cross_memo": "Peak season surge bonus - payment processing uplift",
+     "plain": [
+      "the peak season surge bonus",
+      "the surge bonus for math tutors",
+      "the peak season bonus program"
+     ],
+     "oblique": [
+      "extra money to keep instructors online during the crunch",
+      "incentives that kept enough teachers on shift",
+      "the top-up we offered educators when demand spiked",
+      "extra pay for the busiest weeks",
+      "retention payments for teachers",
+      "a temporary rate lift for instructors",
+      "what we paid people to take more sessions",
+      "the premium offered to hold capacity",
+      "bumped hourly earnings for the faculty",
+      "cash sweeteners for the teaching bench",
+      "an incentive scheme for staying available",
+      "added compensation during finals crunch",
+      "the stay-on-shift perk",
+      "paying educators above the normal rate",
+      "the supply-side incentive",
+      "enhanced rates for scarce teachers"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "fxadjust",
+     "vendor": "Currencycloud Settlement Services",
+     "memos": [
+      "Legacy settlement reconciliation - Currencycloud backlog",
+      "Legacy settlement reconciliation - stranded balances"
+     ],
+     "cross_memo": "Legacy settlement reconciliation - banking fee write-off",
+     "plain": [
+      "the legacy settlement reconciliation",
+      "the Currencycloud backlog clearing",
+      "the stranded balances cleanup"
+     ],
+     "oblique": [
+      "finally squaring away old unpaid amounts",
+      "cleaning up money that got stuck last year",
+      "catching up on payments that never landed",
+      "settling what we owed from the old system",
+      "tidying leftovers from the previous setup",
+      "a long-overdue true-up",
+      "closing out forgotten amounts owed to teachers abroad",
+      "the one-time sweep of aged items",
+      "clearing the backlog of unreleased funds",
+      "getting old obligations off the books",
+      "resolving orphaned amounts",
+      "the cleanup of unresolved transfers",
+      "a catch-up on delayed international pay",
+      "paying out what was held up for ages",
+      "the old-balance tidy",
+      "wrapping up unfinished transfers"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Student Acquisition Marketing",
+   "aliases": [
+    "acquisition marketing",
+    "student acquisition",
+    "paid acquisition",
+    "growth marketing",
+    "marketing spend"
+   ],
+   "narrative": [
+    "Acquisition marketing",
+    "Paid acquisition",
+    "Growth marketing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Google Ads",
+     "base": 26000,
+     "memo": "Search campaign - tutoring keywords"
+    },
+    {
+     "vendor": "Meta Platforms Advertising",
+     "base": 15000,
+     "memo": "Social campaign - parents lookalike audiences"
+    },
+    {
+     "vendor": "Impact Affiliate Network",
+     "base": 6000,
+     "memo": "Affiliate commissions - education bloggers"
+    }
+   ],
+   "events": [
+    {
+     "key": "backtoschool",
+     "vendor": "Google Ads",
+     "memos": [
+      "Autumn semester launch - YouTube pre-roll flight",
+      "Autumn semester launch - display retargeting burst"
+     ],
+     "cross_memo": "Autumn semester launch - landing page build contractor",
+     "plain": [
+      "the autumn semester launch",
+      "the autumn semester launch flight",
+      "the semester launch burst"
+     ],
+     "oblique": [
+      "the big push when classes resume",
+      "our seasonal land grab for families",
+      "extra reach in the weeks parents start searching",
+      "the annual enrollment-season blitz",
+      "heavier spend as schools reopen",
+      "a push timed to the new academic year",
+      "the short window of intense promotion",
+      "a flight aimed at new households",
+      "the campaign tied to fall term kickoff",
+      "the effort to capture early planners",
+      "a limited-run awareness drive",
+      "how we welcomed returning households",
+      "the yearly seasonal spike",
+      "a concentrated burst of reach",
+      "the big seasonal promotional wave",
+      "our once-a-year attention grab"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "podcastsponsor",
+     "vendor": "Redwood Audio Partners",
+     "memos": [
+      "Parenting podcast sponsorship - Raising Readers series",
+      "Parenting podcast sponsorship - host-read spots"
+     ],
+     "cross_memo": "Parenting podcast sponsorship - production tagline recording",
+     "plain": [
+      "the parenting podcast sponsorship",
+      "the Raising Readers sponsorship",
+      "the host-read podcast spots"
+     ],
+     "oblique": [
+      "a new audio channel test",
+      "paying to be on shows moms and dads listen to",
+      "an experiment outside digital banners",
+      "spots read out by trusted voices",
+      "a trial in a medium we hadn't used",
+      "reaching commuters and carpool listeners",
+      "an on-air endorsement deal",
+      "the commitment to a talk-show partner",
+      "a brand play aimed at caregivers",
+      "buying airtime with a niche audience",
+      "the voice-driven awareness test",
+      "a new top-of-funnel bet",
+      "sponsored mentions during episodes",
+      "our first foray into spoken-word media",
+      "the audio partnership",
+      "a trial with a media publisher"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Video Classroom Infrastructure",
+   "aliases": [
+    "classroom infrastructure",
+    "video infrastructure",
+    "live session hosting",
+    "virtual classroom costs",
+    "session streaming"
+   ],
+   "narrative": [
+    "Classroom infrastructure",
+    "Live session hosting",
+    "Virtual classroom costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Twilio Video Services",
+     "base": 28000,
+     "memo": "Live session video minutes - production"
+    },
+    {
+     "vendor": "Amazon Web Services",
+     "base": 22000,
+     "memo": "Media relay compute - us-east cluster"
+    },
+    {
+     "vendor": "Cloudflare Edge",
+     "base": 7500,
+     "memo": "CDN delivery - whiteboard assets"
+    }
+   ],
+   "events": [
+    {
+     "key": "recordingarchive",
+     "vendor": "Amazon Web Services",
+     "memos": [
+      "Session replay archive migration - cold tier transfer",
+      "Session replay archive migration - Glacier restore"
+     ],
+     "cross_memo": "Session replay archive migration - consultant hours",
+     "plain": [
+      "the session replay archive migration",
+      "the replay archive cold tier transfer",
+      "the Glacier restore"
+     ],
+     "oblique": [
+      "moving old lesson footage to cheaper storage",
+      "a one-time shift of historical recordings",
+      "relocating backlog content for parents to rewatch",
+      "getting past lessons into a new home",
+      "the big lift of stored media",
+      "shuffling years of captured classes",
+      "a lump transfer of old content",
+      "reorganizing where past material lives",
+      "cost-cutting through data relocation",
+      "the project to retire expensive disks",
+      "bringing aged files down in price tier",
+      "a bulk movement of stale files",
+      "an overdue storage tidy-up",
+      "pulling old lessons out of expensive hosting",
+      "our house-cleaning of video assets",
+      "the one-off data haul"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "regionpilot",
+     "vendor": "Agora Realtime Labs",
+     "memos": [
+      "Latency pilot - Mumbai Singapore edge nodes",
+      "Latency pilot - Agora SD-RTN trial"
+     ],
+     "cross_memo": "Latency pilot - field testing stipends",
+     "plain": [
+      "the latency pilot",
+      "the Mumbai Singapore edge nodes",
+      "the SD-RTN trial"
+     ],
+     "oblique": [
+      "a trial to make Asian sessions feel snappier",
+      "testing a second provider for lag complaints",
+      "an experiment aimed at choppy lessons overseas",
+      "the test of a rival network",
+      "work to smooth the picture for far-flung students",
+      "a proof of concept for faster connection",
+      "checking whether another carrier beats ours",
+      "a limited run in new territories",
+      "what we spent to cut delays",
+      "a bake-off against the incumbent",
+      "an evaluation of alternate delivery",
+      "improving the feel of sessions abroad",
+      "trying out a different pipeline",
+      "a short-term test of rival tech",
+      "the performance experiment",
+      "a regional quality trial"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Trust and Safety Operations",
+   "aliases": [
+    "trust and safety",
+    "safety operations",
+    "tutor vetting",
+    "background checks",
+    "safety and compliance"
+   ],
+   "narrative": [
+    "Trust and safety",
+    "Tutor vetting",
+    "Safety operations"
+   ],
+   "recurring": [
+    {
+     "vendor": "Checkr Screening",
+     "base": 14000,
+     "memo": "Tutor background checks - new applicant volume"
+    },
+    {
+     "vendor": "Persona Identity",
+     "base": 8000,
+     "memo": "ID verification - onboarding flow"
+    },
+    {
+     "vendor": "Hive Moderation",
+     "base": 9500,
+     "memo": "Chat moderation API - session messaging"
+    }
+   ],
+   "events": [
+    {
+     "key": "incidentaudit",
+     "vendor": "Checkr Screening",
+     "memos": [
+      "Rescreen campaign - annual recheck of active roster",
+      "Rescreen campaign - expanded county records search"
+     ],
+     "cross_memo": "Rescreen campaign - tutor notification mailings",
+     "plain": [
+      "the rescreen campaign",
+      "the annual recheck of active roster",
+      "the expanded county records search"
+     ],
+     "oblique": [
+      "a second look at everyone already teaching",
+      "a sweep prompted by a policy tightening",
+      "rechecking people we had already cleared",
+      "the extra layer insurers wanted",
+      "a deeper look at current staff history",
+      "revalidating our teaching bench",
+      "a one-time vetting refresh",
+      "going back over approved instructors",
+      "the heightened scrutiny initiative",
+      "looking again at the people on the platform",
+      "a broader net on existing educators",
+      "the once-a-year diligence pass",
+      "reconfirming who is allowed to teach minors",
+      "a thoroughness upgrade after a scare",
+      "the full-roster verification wave",
+      "a compliance-driven revisit"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "minorpolicy",
+     "vendor": "Guardian Legal Advisory",
+     "memos": [
+      "Child safeguarding review - outside counsel policy audit",
+      "Child safeguarding review - mandatory reporter training"
+     ],
+     "cross_memo": "Child safeguarding review - printed handbooks",
+     "plain": [
+      "the child safeguarding review",
+      "the outside counsel policy audit",
+      "the mandatory reporter training"
+     ],
+     "oblique": [
+      "lawyers examining how we protect kids",
+      "an expert look at our minors rules",
+      "tightening practices around young learners",
+      "an independent opinion on our protections",
+      "outside experts grading our approach",
+      "a regulatory-minded overhaul of procedures",
+      "what we paid to prove our rules hold up",
+      "external eyes on student wellbeing policy",
+      "a formal evaluation of how we guard children",
+      "training staff on spotting abuse",
+      "upgrading procedures for underage users",
+      "the diligence work for partners and regulators",
+      "specialist advice on duty of care",
+      "a defensive legal exercise",
+      "the work that satisfied school district partners",
+      "a professional policy checkup"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Curriculum and Content",
+   "aliases": [
+    "curriculum",
+    "content development",
+    "lesson content",
+    "learning materials",
+    "curriculum spend"
+   ],
+   "narrative": [
+    "Curriculum spend",
+    "Content development",
+    "Learning materials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pearson Licensing",
+     "base": 12000,
+     "memo": "Textbook excerpt licensing - grades 6-12"
+    },
+    {
+     "vendor": "Khan Collaborative Content",
+     "base": 6000,
+     "memo": "Practice problem bank subscription"
+    },
+    {
+     "vendor": "Freelance Editors Guild",
+     "base": 4500,
+     "memo": "Lesson plan editing - monthly retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "apalignment",
+     "vendor": "Pearson Licensing",
+     "memos": [
+      "Advanced placement refresh - new exam framework rights",
+      "Advanced placement refresh - biology unit relicensing"
+     ],
+     "cross_memo": "Advanced placement refresh - tutor briefing webinar",
+     "plain": [
+      "the advanced placement refresh",
+      "the new exam framework rights",
+      "the biology unit relicensing"
+     ],
+     "oblique": [
+      "updating our test-prep catalog after the board changed things",
+      "new rules for the college credit exams",
+      "keeping our offerings current with what is on the test",
+      "rights we had to buy again for revised syllabi",
+      "the annual overhaul of exam prep",
+      "aligning lessons to what examiners now want",
+      "a redo of our high school flagship material",
+      "legal permissions for updated science units",
+      "the scramble after the testing body revised itself",
+      "refreshing our top-selling course line",
+      "adapting to a changed college-credit curriculum",
+      "reissuing licenses for tougher standards",
+      "responding to the exam makers",
+      "an update cycle triggered by outside authority",
+      "re-papering our advanced courses",
+      "the rewrite our best sellers required"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "codingtrack",
+     "vendor": "Pixelforge Studios",
+     "memos": [
+      "Beginner coding track - interactive sandbox build",
+      "Beginner coding track - animated explainer series"
+     ],
+     "cross_memo": "Beginner coding track - beta tester gift cards",
+     "plain": [
+      "the beginner coding track",
+      "the interactive sandbox build",
+      "the animated explainer series"
+     ],
+     "oblique": [
+      "a brand new subject line for younger kids",
+      "our expansion into programming lessons",
+      "building something from scratch for a new category",
+      "a product bet outside traditional school subjects",
+      "creating programs for aspiring developers",
+      "the debut of a technology-flavored offering",
+      "a fresh vertical we hadn't covered",
+      "work to open a different customer segment",
+      "a first-of-its-kind course launch",
+      "games and animations for new learners",
+      "developing a showcase offering",
+      "a fresh catalog line aimed at tinkerers",
+      "studio work on engaging visuals",
+      "the bet on teaching logic to children",
+      "an entirely new syllabus we authored",
+      "assets for the newest category"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Customer Support",
+   "aliases": [
+    "customer support",
+    "support operations",
+    "help desk",
+    "family support",
+    "support staffing"
+   ],
+   "narrative": [
+    "Customer support",
+    "Help desk",
+    "Support staffing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Zendesk Suite",
+     "base": 5200,
+     "memo": "Support platform seats - tier 2"
+    },
+    {
+     "vendor": "TaskUs Outsourced Agents",
+     "base": 19000,
+     "memo": "Outsourced chat agents - Manila team"
+    },
+    {
+     "vendor": "Intercom Messaging",
+     "base": 3800,
+     "memo": "In-app messenger licenses"
+    }
+   ],
+   "events": [
+    {
+     "key": "outagecredits",
+     "vendor": "TaskUs Outsourced Agents",
+     "memos": [
+      "Platform outage surge staffing - overnight escalation desk",
+      "Platform outage surge staffing - weekend overflow queue"
+     ],
+     "cross_memo": "Platform outage surge staffing - refund processing credits",
+     "plain": [
+      "the platform outage surge staffing",
+      "the overnight escalation desk",
+      "the weekend overflow queue"
+     ],
+     "oblique": [
+      "extra hands when the site went dark",
+      "a flood of angry messages from families",
+      "temporary headcount after the breakdown",
+      "coverage for the spike in complaints",
+      "a crew brought in around the clock",
+      "people we added to handle the fallout",
+      "reactive capacity after an incident",
+      "absorbing the wave of tickets",
+      "emergency manpower",
+      "triage for upset customers",
+      "the short-term crowd answering worried parents",
+      "additional responders during the crisis",
+      "help staffed outside normal hours",
+      "the stopgap team for the rush of inquiries",
+      "temporary workers handling backlog",
+      "after-hours coverage following the failure"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "voiceline",
+     "vendor": "Aircall Telephony",
+     "memos": [
+      "Phone support launch - premium family hotline numbers",
+      "Phone support launch - IVR flow design"
+     ],
+     "cross_memo": "Phone support launch - headset hardware",
+     "plain": [
+      "the phone support launch",
+      "the premium family hotline numbers",
+      "the IVR flow design"
+     ],
+     "oblique": [
+      "letting parents talk to a person live",
+      "a new way to reach us beyond typing",
+      "offering callers a direct line",
+      "adding a channel for the less tech-savvy",
+      "a premium service for upset households",
+      "the first time we answered the ringing",
+      "a new contact option for subscribers",
+      "a pilot of speaking rather than chatting",
+      "extending service to people who prefer talking",
+      "a high-touch tier for top customers",
+      "an upgrade in how families can reach us",
+      "a human voice for escalations",
+      "a customer-experience enhancement",
+      "the call-in service we stood up",
+      "a conversation channel for paying members",
+      "an expansion of ways to get help"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Payment Processing Fees",
+   "aliases": [
+    "processing fees",
+    "payment fees",
+    "card fees",
+    "merchant fees",
+    "payments cost"
+   ],
+   "narrative": [
+    "Processing fees",
+    "Card fees",
+    "Merchant fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stripe Payments",
+     "base": 24000,
+     "memo": "Card processing fees - US checkout"
+    },
+    {
+     "vendor": "Adyen Global",
+     "base": 12000,
+     "memo": "Card processing fees - international checkout"
+    },
+    {
+     "vendor": "PayPal Merchant",
+     "base": 6500,
+     "memo": "Wallet processing fees - PayPal checkout"
+    }
+   ],
+   "events": [
+    {
+     "key": "chargebackwave",
+     "vendor": "Stripe Payments",
+     "memos": [
+      "Fraud ring chargebacks - stolen card sessions",
+      "Fraud ring chargebacks - dispute fee assessments"
+     ],
+     "cross_memo": "Fraud ring chargebacks - tutor payout clawbacks",
+     "plain": [
+      "the fraud ring chargebacks",
+      "the stolen card sessions",
+      "the dispute fee assessments"
+     ],
+     "oblique": [
+      "a burst of reversed purchases from bad actors",
+      "criminals using hijacked credentials to book lessons",
+      "a wave of disputed transactions",
+      "money pulled back by issuing banks",
+      "a coordinated attack on our checkout",
+      "penalties from illegitimate purchasing",
+      "an ugly month of reversals",
+      "losses from people who never intended to pay",
+      "the fallout when thieves found our site",
+      "clawed-back revenue from scammers",
+      "an organized abuse episode",
+      "forced refunds to cardholders",
+      "the charges banks refused to honor",
+      "a spike in contested payments",
+      "the cost of being targeted",
+      "reversals after unauthorized activity"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "gatewayswitch",
+     "vendor": "Braintree Migration Desk",
+     "memos": [
+      "Gateway diversification - Braintree onboarding",
+      "Gateway diversification - dual-rail routing setup"
+     ],
+     "cross_memo": "Gateway diversification - legacy contract exit fee",
+     "plain": [
+      "the gateway diversification",
+      "the Braintree onboarding",
+      "the dual-rail routing setup"
+     ],
+     "oblique": [
+      "not relying on a single payments partner",
+      "adding a backup way to take money",
+      "a hedge against concentration risk",
+      "bringing a second provider online",
+      "spreading volume across carriers",
+      "the resilience project for checkout",
+      "building a fallback route for transactions",
+      "protection against a provider going down",
+      "a negotiating lever with our main vendor",
+      "work to improve approval rates",
+      "a redundancy initiative",
+      "adding optionality to how customers pay",
+      "diversifying where money flows",
+      "engineering effort around revenue collection",
+      "a structural change to the checkout stack",
+      "insurance against downtime in collections"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Office and Occupancy",
+   "aliases": [
+    "office costs",
+    "occupancy",
+    "rent and facilities",
+    "office rent",
+    "facilities spend"
+   ],
+   "narrative": [
+    "Office costs",
+    "Rent and facilities",
+    "Facilities spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Parkview Properties",
+     "base": 16000,
+     "memo": "Monthly rent - Austin HQ suite 400"
+    },
+    {
+     "vendor": "ABM Facility Services",
+     "base": 2800,
+     "memo": "Janitorial and supplies - Austin HQ"
+    },
+    {
+     "vendor": "Spectrum Business Internet",
+     "base": 1200,
+     "memo": "Office internet - Austin HQ"
+    }
+   ],
+   "events": [
+    {
+     "key": "sublease",
+     "vendor": "Parkview Properties",
+     "memos": [
+      "Floor expansion buildout - suite 450 tenant improvements",
+      "Floor expansion buildout - cabling and partitions"
+     ],
+     "cross_memo": "Floor expansion buildout - moving crew weekend",
+     "plain": [
+      "the floor expansion buildout",
+      "the suite 450 tenant improvements",
+      "the cabling and partitions"
+     ],
+     "oblique": [
+      "taking over the neighboring space",
+      "construction for our growing headcount",
+      "carving out room for newcomers",
+      "a landlord-managed renovation",
+      "walls and wiring for extra desks",
+      "prepping additional square footage",
+      "a one-time fit-out for staff growth",
+      "the work needed before we could expand",
+      "physical changes after signing for more room",
+      "adding capacity for new hires",
+      "remodeling the adjacent unit",
+      "contractors reshaping our floor plate",
+      "the capital-style outlay for space",
+      "making the empty suite usable",
+      "an enlargement of our workplace",
+      "a construction project for the team"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "studiobuild",
+     "vendor": "Soundproof Interiors LLC",
+     "memos": [
+      "Recording studio installation - acoustic panels",
+      "Recording studio installation - soundproof booth"
+     ],
+     "cross_memo": "Recording studio installation - lighting rig lease",
+     "plain": [
+      "the recording studio installation",
+      "the acoustic panels",
+      "the soundproof booth"
+     ],
+     "oblique": [
+      "a place to film our own lessons",
+      "an in-house production room",
+      "creating a space for shooting educational clips",
+      "a build to support original programming",
+      "equipment-friendly rooms for creators",
+      "a facility for making course videos",
+      "our own filming space",
+      "enabling higher quality instructional footage",
+      "a quiet room for narrators",
+      "bringing video creation under one roof",
+      "space dedicated to making media",
+      "a workplace amenity for content teams",
+      "a purpose-built production nook",
+      "outfitting a corner for creators",
+      "construction for the media team",
+      "a quiet set for taping"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

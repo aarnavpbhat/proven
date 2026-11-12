@@ -1,0 +1,91 @@
+{
+  "about": "Hand-written answer key for the Tidewater Coffee Roasters October 2026 close. Written from the ledger before Proven was run on it. Requirement is what an ideal checker should say: PASS (sentence is right and the ledger supports its stated cause), FAIL (the ledger contradicts the sentence), NOT_PASS (the sentence cannot be passed; FAIL or REVIEW both acceptable), NO_CLAIM (nothing to check). Culprits are the transactions that prove the defect, or for a correct sentence the transactions that carry the stated cause.",
+  "ledger": "tidewater_ledger.csv",
+  "commentary": "tidewater_commentary.txt",
+  "prior_period": "2026-09",
+  "current_period": "2026-10",
+  "sentences": [
+    {
+      "quote": "Total operating expenses rose $43.1K (57%) in October to $119.1K.",
+      "requirement": "PASS",
+      "defective": false,
+      "why": "Total went from $75,990.18 to $119,069.23: +$43,079.05, +56.7%. All three figures are right at their written precision. No cause is stated.",
+      "culprits": []
+    },
+    {
+      "quote": "Freight and delivery rose $10.6K, mainly due to the holiday gift box shipments.",
+      "requirement": "PASS",
+      "defective": false,
+      "why": "Freight went from $6,696.45 to $17,298.85: +$10,602.40. The FedEx 'Holiday gift box program' invoice ($5,940) and the Pacific Coast Freight 'HGB LTL' invoice ($1,720; HGB is the memo abbreviation for holiday gift box) total $7,660, which is 72% of the change; 'mainly' needs more than half. The $112.40 FedEx credit note is a small offset.",
+      "culprits": ["GL-0095", "GL-0105"]
+    },
+    {
+      "quote": "Roaster maintenance increased $11.9K because of the drum bearing replacement on roaster #2.",
+      "requirement": "PASS",
+      "defective": false,
+      "why": "Roaster Maintenance went from $927.15 to $12,828.60: +$11,901.45. The Probat invoice 'ROASTER #2 DRUM BEARING REPL' is $11,480, 96% of the change. The memo is upper case and abbreviates 'replacement'.",
+      "culprits": ["GL-0098"]
+    },
+    {
+      "quote": "Utilities rose $3.4K on higher gas usage as the weather turned cold.",
+      "requirement": "FAIL",
+      "defective": true,
+      "defect": "wrong_amount",
+      "why": "Utilities went from $5,072.32 to $7,073.95: +$2,001.63, not $3.4K (70% too high). The cause is right: the Puget Sound Energy gas bill rose $1,751.85, 88% of the change. Electricity rose only $243.43 and water rose $6.35, so no combination of the lines gives $3.4K.",
+      "culprits": ["GL-0086"]
+    },
+    {
+      "quote": "Professional services fell $6.4K, mainly because the September trademark office action response did not recur.",
+      "requirement": "PASS",
+      "defective": false,
+      "why": "Professional Services went from $10,700.00 to $4,300.00: -$6,400.00. The Norris Brand Counsel 'TM office action response' invoice of $3,800 was in September and not in October: 59% of the fall, enough for 'mainly'. The rest is the accrual of $3,000 booked 9/30 and reversed 10/01, replaced by a $3,400 invoice. The memo says 'TM', not 'trademark'.",
+      "culprits": ["GL-0054"]
+    },
+    {
+      "quote": "Packaging rose $10.3K due to the switch to compostable bags.",
+      "requirement": "FAIL",
+      "defective": true,
+      "defect": "partial_explanation",
+      "why": "Packaging went from $5,435.00 to $15,710.00: +$10,275.00, so the amount is right. But the compostable bag order is $4,150, only 40% of the change, and the old kraft pouches were still bought in October. The rest is a $3,950 label reprint and $3,100 of holiday cartons. 'Due to' claims the whole movement.",
+      "culprits": ["GL-0093", "GL-0099"]
+    },
+    {
+      "quote": "Marketing rose $8.8K, driven by the Cascadia cyclists sponsorship.",
+      "requirement": "FAIL",
+      "defective": true,
+      "defect": "wrong_cause",
+      "why": "Marketing went from $3,460.00 to $12,210.00: +$8,750.00, so the amount is right. The Cascadia Cyclists sponsorship is $1,500 every month, so it moved nothing. The increase is Blue Heron Creative: a $6,200 catalog design and print invoice and a $2,400 holiday email retainer.",
+      "culprits": ["GL-0090", "GL-0100"]
+    },
+    {
+      "quote": "Software and IT spend rose $2.1K because of the new Cin7 inventory system.",
+      "requirement": "PASS",
+      "defective": false,
+      "why": "Software & IT went from $695.00 to $2,844.00: +$2,149.00. The two Cin7 Core transactions (subscription $349 and one-time onboarding $1,800) are the whole change.",
+      "culprits": ["GL-0080", "GL-0081"]
+    },
+    {
+      "quote": "Rent and occupancy was flat at $10.4K.",
+      "requirement": "FAIL",
+      "defective": true,
+      "defect": "wrong_balance",
+      "why": "Rent & Occupancy was $10,440.00 in September but $12,090.00 in October: a $1,650 'CAM reconciliation 2025 true-up' from Harlan Properties hit on 10/20. 'Flat at $10.4K' restates September; the October balance is 14% higher.",
+      "culprits": ["GL-0096"]
+    },
+    {
+      "quote": "Insurance rose $1.2K due to the annual premium audit adjustment.",
+      "requirement": "NOT_PASS",
+      "defective": true,
+      "defect": "cause_not_in_ledger",
+      "why": "Insurance went from $1,380.00 to $2,620.00: +$1,240.00, so the amount is right. But no transaction is a premium audit adjustment: the increase is a Pemberton Mutual 'Endorsement - added location rider' of $1,240. A person has to decide whether that is the same thing; a checker must not pass it.",
+      "culprits": ["GL-0094"]
+    },
+    {
+      "quote": "We expect freight to stay elevated through the holiday season.",
+      "requirement": "NO_CLAIM",
+      "defective": false,
+      "why": "A forecast with no figure. There is nothing in the ledger to check it against.",
+      "culprits": []
+    }
+  ]
+}

@@ -1,0 +1,728 @@
+{
+ "slug": "fitness-club-chain",
+ "industry": "fitness club chain",
+ "entities": [
+  "Ironline Athletic Clubs",
+  "Pulsepoint Fitness Co.",
+  "Summit Strength & Wellness",
+  "Harborview Health Clubs",
+  "Northgate Fitness Group"
+ ],
+ "accounts": [
+  {
+   "name": "Equipment Maintenance & Repair",
+   "aliases": [
+    "equipment maintenance",
+    "gym equipment repair",
+    "machine upkeep",
+    "equipment repair costs",
+    "maintenance and repair spend"
+   ],
+   "narrative": [
+    "Equipment maintenance",
+    "Machine upkeep",
+    "Equipment repair costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Torque Fitness Service Co.",
+     "base": 14500,
+     "memo": "Monthly PM service contract — cardio and strength"
+    },
+    {
+     "vendor": "Bearing & Belt Supply",
+     "base": 3200,
+     "memo": "Replacement parts — belts and cables"
+    },
+    {
+     "vendor": "CleanGrip Upholstery Works",
+     "base": 1800,
+     "memo": "Pad and bench recovering — routine"
+    }
+   ],
+   "events": [
+    {
+     "key": "treadmill",
+     "vendor": "Torque Fitness Service Co.",
+     "memos": [
+      "Treadmill motor retrofit — drive board swap",
+      "Treadmill motor retrofit — deck replacement labor"
+     ],
+     "cross_memo": "Treadmill motor retrofit — freight and crating",
+     "plain": [
+      "the treadmill motor retrofit",
+      "the treadmill motor retrofit program",
+      "the retrofit of treadmill motors"
+     ],
+     "oblique": [
+      "getting the running machines back on the floor",
+      "the cardio fleet fix after the recall notice",
+      "work on the aging fleet of walking belts",
+      "a safety campaign on the cardio line",
+      "keeping members off idle equipment",
+      "the manufacturer defect remediation",
+      "replacing worn engines in the front-row machines",
+      "the repair push before peak season",
+      "cardio floor downtime we had to cure",
+      "an overhaul of the cardio area",
+      "the fix for machines that kept tripping breakers",
+      "the repairs the regional managers escalated",
+      "what it took to restore the cardio zone",
+      "quality fixes on the oldest running units",
+      "the remedy for the member complaints about broken machines",
+      "a one-time rebuild of the exercise machinery"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "cableline",
+     "vendor": "Redwood Biomech Specialists",
+     "memos": [
+      "Cable stack rebuild — Redwood Biomech pulley kits",
+      "Cable stack rebuild — Redwood Biomech installation"
+     ],
+     "cross_memo": "Cable stack rebuild — Redwood Biomech travel fees",
+     "plain": [
+      "the cable stack rebuild",
+      "the Redwood Biomech cable stack rebuild",
+      "the rebuild of cable stacks"
+     ],
+     "oblique": [
+      "restoring the weight-training towers",
+      "the refresh of the pulley-driven strength stations",
+      "work on the functional trainers that kept jamming",
+      "a specialist crew visiting several clubs",
+      "the tower overhaul the trainers requested",
+      "bringing the old selectorized gear up to standard",
+      "replacing frayed lines on the strength side",
+      "a vendor team swapping out worn hardware",
+      "the fix to the crossover stations",
+      "a planned renewal of the lifting area gear",
+      "corrections after the failed safety walk-through",
+      "the upgrade of tired resistance stations",
+      "repairs on the weight stack machines",
+      "renewing the strength floor's wear items",
+      "the specialist visit for heavy-use stations",
+      "getting the muscle-building area compliant"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Group Fitness Instructor Fees",
+   "aliases": [
+    "instructor fees",
+    "class instructor pay",
+    "group fitness talent",
+    "instructor contractor costs",
+    "teaching staff fees"
+   ],
+   "narrative": [
+    "Instructor fees",
+    "Class instructor pay",
+    "Group fitness talent"
+   ],
+   "recurring": [
+    {
+     "vendor": "Studio Collective Staffing",
+     "base": 22000,
+     "memo": "Contract instructors — weekly class schedule"
+    },
+    {
+     "vendor": "Cadence Cycling Coaches LLC",
+     "base": 9500,
+     "memo": "Indoor cycling coaching — monthly"
+    },
+    {
+     "vendor": "Flow Yoga Guild",
+     "base": 6800,
+     "memo": "Yoga and mobility instructors — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "bootcamp",
+     "vendor": "Studio Collective Staffing",
+     "memos": [
+      "Summer bootcamp series — extra coach shifts",
+      "Summer bootcamp series — outdoor session premiums"
+     ],
+     "cross_memo": "Summer bootcamp series — park permit fees",
+     "plain": [
+      "the summer bootcamp series",
+      "the summer bootcamp coach shifts",
+      "the bootcamp series premiums"
+     ],
+     "oblique": [
+      "the seasonal outdoor training push",
+      "extra coaching hours for the warm-weather promotion",
+      "the park-based workouts members loved",
+      "a limited-run program that needed more bodies",
+      "the high-intensity event run outside the buildings",
+      "weekend sessions we added for new sign-ups",
+      "the sunrise training offering",
+      "additional trainers hired for a campaign",
+      "a themed series sold to prospects",
+      "the promotion that filled the lawns",
+      "the campaign marketing asked us to staff",
+      "paying coaches extra to work off-site",
+      "temporary class expansion for the busy season",
+      "the outdoor workout initiative",
+      "an add-on schedule aimed at new joiners",
+      "the limited eight-week training block"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "celebrity",
+     "vendor": "Marquee Talent Partners",
+     "memos": [
+      "Guest presenter weekend — Marquee Talent appearance fee",
+      "Guest presenter weekend — Marquee Talent rider and lodging"
+     ],
+     "cross_memo": "Guest presenter weekend — Marquee Talent banner printing",
+     "plain": [
+      "the guest presenter weekend",
+      "the Marquee Talent appearance",
+      "the guest presenter appearance fee"
+     ],
+     "oblique": [
+      "bringing in a famous trainer for a special event",
+      "the headline name we booked for members",
+      "a star coach visiting our flagship",
+      "the premium event marketing pushed for",
+      "a celebrity-led masterclass",
+      "paying a well-known personality to teach",
+      "the VIP workshop for top-tier members",
+      "the big-name draw at the downtown club",
+      "an invited expert teaching two days only",
+      "the special guest fee plus hospitality",
+      "the high-profile visit that sold out",
+      "what we paid the fitness influencer",
+      "the showcase event for retention",
+      "a one-time star booking",
+      "the marquee experience for premium members",
+      "the exclusive session with an outside personality"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Pool & Spa Operations",
+   "aliases": [
+    "pool operations",
+    "spa and pool upkeep",
+    "aquatics costs",
+    "pool chemicals and service",
+    "wet area operations"
+   ],
+   "narrative": [
+    "Pool operations",
+    "Aquatics costs",
+    "Wet area operations"
+   ],
+   "recurring": [
+    {
+     "vendor": "BlueWave Aquatic Services",
+     "base": 8600,
+     "memo": "Weekly pool service — water testing and cleaning"
+    },
+    {
+     "vendor": "ChemPure Supply",
+     "base": 4100,
+     "memo": "Pool chemicals — chlorine and balancing agents"
+    },
+    {
+     "vendor": "Steam & Sauna Techs",
+     "base": 2300,
+     "memo": "Sauna and steam room service — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "heater",
+     "vendor": "BlueWave Aquatic Services",
+     "memos": [
+      "Boiler replacement — commercial heater unit",
+      "Boiler replacement — plumbing and gas hookup"
+     ],
+     "cross_memo": "Boiler replacement — electrical permit and inspection",
+     "plain": [
+      "the boiler replacement",
+      "the commercial boiler replacement",
+      "the boiler replacement hookup"
+     ],
+     "oblique": [
+      "the new warming system for the lap pool",
+      "swapping out the dead water warmer",
+      "the cold-water complaints finally fixed",
+      "the major mechanical swap in the mechanical room",
+      "getting the temperature back up for swimmers",
+      "equipment that failed in the cold months",
+      "the capital-like replacement in the aquatics area",
+      "what it cost to heat the water again",
+      "the emergency fix after the pool went chilly",
+      "a big install the engineer recommended",
+      "replacing the unit that had run twenty years",
+      "work the health inspector required",
+      "the heating plant overhaul",
+      "restoring comfortable swim conditions",
+      "the equipment failure that closed the natatorium",
+      "the big-ticket warming upgrade"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "tiling",
+     "vendor": "Marlin Surface Restoration",
+     "memos": [
+      "Pool deck resurfacing — Marlin anti-slip coating",
+      "Pool deck resurfacing — Marlin demolition and prep"
+     ],
+     "cross_memo": "Pool deck resurfacing — Marlin temporary barriers",
+     "plain": [
+      "the pool deck resurfacing",
+      "the Marlin anti-slip coating",
+      "the pool deck resurfacing prep"
+     ],
+     "oblique": [
+      "making the walkway around the water safer",
+      "the slipping hazard remedy",
+      "a floor refresh in the swim area",
+      "the contractor who redid the surrounding concrete",
+      "the liability fix after the member fall",
+      "closing part of the area for a couple of weeks",
+      "new grippy finish for wet feet",
+      "the insurer's recommended surface upgrade",
+      "renewing the worn flooring beside the water",
+      "the cosmetic and safety project at the natatorium",
+      "what the flooring crew billed us",
+      "the project that kept swimmers on one side",
+      "replacing the cracked slab surface",
+      "restoring the footing near the lanes",
+      "the refinishing job in the aquatics hall",
+      "upgrading the traction on the wet floors"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Member Acquisition & Promotions",
+   "aliases": [
+    "member acquisition",
+    "membership marketing",
+    "promotional spend",
+    "sign-up campaigns",
+    "joining promotions"
+   ],
+   "narrative": [
+    "Member acquisition",
+    "Membership marketing",
+    "Promotional spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightside Digital Media",
+     "base": 16000,
+     "memo": "Paid search and social — monthly retainer"
+    },
+    {
+     "vendor": "Local Reach Print & Mail",
+     "base": 5200,
+     "memo": "Direct mail and flyers — monthly drops"
+    },
+    {
+     "vendor": "FreeTrial Pass Network",
+     "base": 3400,
+     "memo": "Guest pass distribution — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "newyear",
+     "vendor": "Brightside Digital Media",
+     "memos": [
+      "Resolution rush campaign — video ad production",
+      "Resolution rush campaign — boosted media buy"
+     ],
+     "cross_memo": "Resolution rush campaign — staffing overtime for sign-ups",
+     "plain": [
+      "the resolution rush campaign",
+      "the resolution rush video production",
+      "the resolution rush media buy"
+     ],
+     "oblique": [
+      "the January enrollment drive",
+      "our biggest seasonal push for joiners",
+      "the annual surge ads aimed at new starters",
+      "a flood of advertising after the holidays",
+      "the peak-demand sales season",
+      "what we spent chasing the new-habit crowd",
+      "getting prospects through the door in the cold months",
+      "the big marketing flight of the year",
+      "the front-loaded promotion for fresh memberships",
+      "the all-hands sales blitz",
+      "video creative and heavy buying on screens",
+      "the big seasonal membership drive",
+      "the pitch to people with fitness goals",
+      "bumped-up advertising at year start",
+      "the annual sign-up season investment",
+      "the intense recruitment period"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "rebrand",
+     "vendor": "Kindle & Co. Creative",
+     "memos": [
+      "Brand refresh launch — Kindle logo and identity system",
+      "Brand refresh launch — Kindle signage artwork"
+     ],
+     "cross_memo": "Brand refresh launch — Kindle storefront decals",
+     "plain": [
+      "the brand refresh launch",
+      "the Kindle identity system",
+      "the brand refresh signage artwork"
+     ],
+     "oblique": [
+      "the new look for all locations",
+      "a redesign of how the company presents itself",
+      "the visual overhaul the new CMO championed",
+      "changing our image across the chain",
+      "an agency we hired for a fresh style",
+      "the updated graphics and look",
+      "what the creative studio delivered",
+      "a modernized corporate appearance",
+      "the project that touched every storefront",
+      "redoing the logo and colors",
+      "the stylistic reset ahead of expansion",
+      "new creative for every club's exterior",
+      "the designer's work on our public face",
+      "repositioning the chain's image",
+      "the one-time identity project",
+      "getting all the clubs to match visually"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Member Towels & Laundry",
+   "aliases": [
+    "towels and laundry",
+    "linen service",
+    "laundry costs",
+    "towel service",
+    "locker room linens"
+   ],
+   "narrative": [
+    "Towels and laundry",
+    "Linen service",
+    "Laundry costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "FreshFold Linen Supply",
+     "base": 18500,
+     "memo": "Towel rental and laundering — weekly route"
+    },
+    {
+     "vendor": "SoapStock Dispensers Inc.",
+     "base": 2900,
+     "memo": "Soap and amenity refills — monthly"
+    },
+    {
+     "vendor": "Rinse Cycle Equipment Leasing",
+     "base": 3600,
+     "memo": "On-site washer lease — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "towelrate",
+     "vendor": "FreshFold Linen Supply",
+     "memos": [
+      "Fuel surcharge adjustment — route cost pass-through",
+      "Fuel surcharge adjustment — expedited restock delivery"
+     ],
+     "cross_memo": "Fuel surcharge adjustment — courier backup route",
+     "plain": [
+      "the fuel surcharge adjustment",
+      "the fuel surcharge pass-through",
+      "the expedited restock delivery surcharge"
+     ],
+     "oblique": [
+      "the supplier passing along higher pump prices",
+      "a delivery cost increase from the vendor",
+      "the trucking-related price bump",
+      "what the provider added to every invoice",
+      "costs of getting clean goods to the doors",
+      "the vendor's mid-contract pricing change",
+      "a transport add-on we did not budget",
+      "extra charges tied to the energy markets",
+      "the supplier's route economics",
+      "emergency drops after we ran short",
+      "paying more for last-minute deliveries",
+      "the carrier cost creeping up",
+      "the cost of speeding up restocks",
+      "logistics fees the contract allowed",
+      "the delivery premium for rush orders",
+      "what the hauler billed on top"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "premiumtowel",
+     "vendor": "Plush Linen Atelier",
+     "memos": [
+      "Luxe towel upgrade — Plush Atelier initial stock",
+      "Luxe towel upgrade — Plush Atelier embroidery"
+     ],
+     "cross_memo": "Luxe towel upgrade — Plush Atelier display shelving",
+     "plain": [
+      "the luxe towel upgrade",
+      "the Plush Atelier initial stock",
+      "the luxe towel embroidery"
+     ],
+     "oblique": [
+      "the thicker cotton we rolled out for top members",
+      "a nicer product for the premium tier",
+      "the softer goods at the flagship clubs",
+      "a pilot of higher-end amenities",
+      "monogrammed items for elite memberships",
+      "what we spent making locker rooms feel like a hotel",
+      "a step up in the quality of what members dry with",
+      "the first order from a new supplier",
+      "branded finishing touches",
+      "the bigger initial purchase to stock new inventory",
+      "the upscale experience initiative",
+      "getting the upgraded stuff onto the shelves",
+      "an investment aimed at reducing cancellations",
+      "the upmarket hand-feel project",
+      "one-time pricey fabric order",
+      "the spa-grade materials we introduced"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Club Utilities",
+   "aliases": [
+    "utilities",
+    "club utilities",
+    "power and water",
+    "energy costs",
+    "electric and gas"
+   ],
+   "narrative": [
+    "Utilities",
+    "Energy costs",
+    "Power and water"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Power & Light",
+     "base": 28000,
+     "memo": "Electricity — all clubs"
+    },
+    {
+     "vendor": "CityGas Distribution",
+     "base": 9400,
+     "memo": "Natural gas — heating and hot water"
+    },
+    {
+     "vendor": "Municipal Water Authority",
+     "base": 11200,
+     "memo": "Water and sewer — all clubs"
+    }
+   ],
+   "events": [
+    {
+     "key": "hvacfail",
+     "vendor": "Metro Power & Light",
+     "memos": [
+      "Demand charge true-up — peak load penalty",
+      "Demand charge true-up — meter reconciliation"
+     ],
+     "cross_memo": "Demand charge true-up — consulting audit",
+     "plain": [
+      "the demand charge true-up",
+      "the peak load penalty true-up",
+      "the demand charge meter reconciliation"
+     ],
+     "oblique": [
+      "the utility's retroactive billing correction",
+      "a spike in the highest usage reading",
+      "what the power company clawed back",
+      "a heat wave's effect on the bill",
+      "the true-up for unusually intense draw",
+      "running every machine at once",
+      "the corrected invoice for prior months",
+      "a billing adjustment after a meter check",
+      "the cost of hitting our high-water usage mark",
+      "summer cooling load penalties",
+      "the catch-up charge on our supply",
+      "the provider's reconciliation notice",
+      "an outsized reading during the afternoon rush",
+      "the sticker shock on that statement",
+      "what the grid operator assessed us",
+      "the adjustment for previous underbilling"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "solar",
+     "vendor": "Sunrail Energy Partners",
+     "memos": [
+      "Rooftop array commissioning — Sunrail interconnection",
+      "Rooftop array commissioning — Sunrail inverter setup"
+     ],
+     "cross_memo": "Rooftop array commissioning — Sunrail crane rental",
+     "plain": [
+      "the rooftop array commissioning",
+      "the Sunrail interconnection",
+      "the rooftop array inverter setup"
+     ],
+     "oblique": [
+      "bringing the new panels online",
+      "the green energy project going live",
+      "the cost to switch on our own generation",
+      "a sustainability initiative's startup fees",
+      "the installation that lets us cut grid reliance",
+      "the first month of the renewable system",
+      "connecting the new equipment to the grid",
+      "costs tied to the ribbon-cutting on clean power",
+      "a vendor getting the sun-powered system working",
+      "the trial run of self-generated electricity",
+      "expenses to start the environmental program",
+      "what the energy startup billed for activation",
+      "the eco project's transition costs",
+      "one-time work to harness daylight",
+      "the go-live of our power project",
+      "technical turn-on of the roof installation"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Personal Training Commissions",
+   "aliases": [
+    "trainer commissions",
+    "personal training pay",
+    "PT commissions",
+    "training sales incentives",
+    "trainer payouts"
+   ],
+   "narrative": [
+    "Trainer commissions",
+    "Personal training pay",
+    "Training sales incentives"
+   ],
+   "recurring": [
+    {
+     "vendor": "Payroll Partners Inc.",
+     "base": 26000,
+     "memo": "Trainer commissions — package sales payout"
+    },
+    {
+     "vendor": "CertifyPro Education",
+     "base": 2400,
+     "memo": "Trainer certification renewals — monthly"
+    },
+    {
+     "vendor": "Session Tracker Software",
+     "base": 1900,
+     "memo": "Session booking and tracking — subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "spiff",
+     "vendor": "Payroll Partners Inc.",
+     "memos": [
+      "Quarterly sales contest — top seller bonus pool",
+      "Quarterly sales contest — team tier payouts"
+     ],
+     "cross_memo": "Quarterly sales contest — prize trip travel",
+     "plain": [
+      "the quarterly sales contest",
+      "the sales contest bonus pool",
+      "the quarterly contest team payouts"
+     ],
+     "oblique": [
+      "the incentive race among our coaches",
+      "rewards for the best performers",
+      "a competition that pushed package sales",
+      "extra cash for those who hit stretch goals",
+      "the friendly rivalry we sponsored",
+      "one-time prizes for the winners",
+      "a motivational push by the regional director",
+      "bonus money tied to a target",
+      "what we paid to top the leaderboard",
+      "the extra pay for exceeding quota",
+      "a burst in earnings during the contest window",
+      "a performance carrot",
+      "the reward pot at quarter close",
+      "extra compensation for the highest closers",
+      "the stretch-goal giveaway",
+      "the payout for a short-term challenge"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "hiring",
+     "vendor": "Apex Talent Recruiters",
+     "memos": [
+      "Trainer hiring drive — Apex placement fees",
+      "Trainer hiring drive — Apex signing bonus reimbursement"
+     ],
+     "cross_memo": "Trainer hiring drive — Apex relocation allowance",
+     "plain": [
+      "the trainer hiring drive",
+      "the Apex placement fees",
+      "the trainer hiring signing bonus reimbursement"
+     ],
+     "oblique": [
+      "filling open coaching spots quickly",
+      "an agency bringing in experienced coaches",
+      "the cost of staffing up before expansion",
+      "finder's fees for new employees",
+      "welcome payments for incoming staff",
+      "the recruiting campaign for the new location",
+      "bringing on talent from competitors",
+      "what the headhunters billed",
+      "the onboarding wave of coaches",
+      "hiring bonuses to close candidates",
+      "the effort to fill vacancies",
+      "one-time costs to build the team",
+      "the placement firm's invoices",
+      "an extra burst of sourcing activity",
+      "the push to add experienced professionals",
+      "staffing cost for the club opening"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

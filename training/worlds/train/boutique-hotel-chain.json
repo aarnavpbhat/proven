@@ -1,0 +1,830 @@
+{
+ "slug": "boutique-hotel-chain",
+ "industry": "boutique hotel chain",
+ "entities": [
+  "Harborlight Hotel Group",
+  "Juniper & Vale Hospitality",
+  "Copperleaf Inns",
+  "Marlowe House Collection",
+  "Saltmarsh Stays"
+ ],
+ "accounts": [
+  {
+   "name": "Guest Room Linens and Amenities",
+   "aliases": [
+    "linens",
+    "linen spend",
+    "room amenities",
+    "guest supplies",
+    "linen and amenities cost"
+   ],
+   "narrative": [
+    "Linen spend",
+    "Room amenities",
+    "Guest supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinecrest Textile Supply",
+     "base": 14500,
+     "memo": "Monthly bed linen replenishment"
+    },
+    {
+     "vendor": "Larkspur Toiletries Co",
+     "base": 9200,
+     "memo": "Bath amenity restock"
+    },
+    {
+     "vendor": "Brightwell Laundry Services",
+     "base": 18800,
+     "memo": "Commercial laundry processing"
+    }
+   ],
+   "events": [
+    {
+     "key": "duvetswap",
+     "vendor": "Pinecrest Textile Supply",
+     "memos": [
+      "Duvet insert changeout — down alternative",
+      "Duvet insert changeout — cover sets"
+     ],
+     "cross_memo": "Duvet insert changeout — disposal haulage",
+     "plain": [
+      "the duvet insert changeout",
+      "the duvet changeout",
+      "the down alternative duvet program"
+     ],
+     "oblique": [
+      "the bedding refresh across all properties",
+      "new comforters that guests had complained about",
+      "replacing the old bedding stock",
+      "what we bought after the allergy complaints",
+      "the sleep quality initiative",
+      "a one-time bedding upgrade",
+      "the fluffier beds",
+      "softer sleeping surfaces",
+      "the response to review scores",
+      "an upgrade the brand team requested",
+      "retiring the worn-out bedding",
+      "the bigger beds push",
+      "what replaced the old comforters",
+      "the overnight comfort project",
+      "a purchase tied to guest surveys",
+      "new bedding for the flagship properties"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "turndownkits",
+     "vendor": "Wildfern Botanical Goods",
+     "memos": [
+      "Evening ritual kits — lavender pillow mist",
+      "Evening ritual kits — herbal tea sachets"
+     ],
+     "cross_memo": "Evening ritual kits — branded tray printing",
+     "plain": [
+      "the evening ritual kits",
+      "the ritual kit rollout",
+      "the lavender pillow mist kits"
+     ],
+     "oblique": [
+      "the nightly gift left on the bed",
+      "a bedtime perk for guests",
+      "the small bedside surprise",
+      "what we started leaving after service",
+      "the new evening gesture",
+      "extras tucked in during the late visit",
+      "a loyalty program give-away",
+      "the wellness-themed bedside offering",
+      "the premium guest touch launched this spring",
+      "fragrant extras for the suites",
+      "a campaign from the guest experience team",
+      "the soothing bedtime items",
+      "a new in-room treat",
+      "what housekeeping now places after dusk",
+      "the sleep-themed freebies",
+      "a pilot for the luxury floors"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Food and Beverage Purchases",
+   "aliases": [
+    "f&b",
+    "f&b purchases",
+    "food cost",
+    "food and beverage",
+    "kitchen purchasing"
+   ],
+   "narrative": [
+    "F&B purchases",
+    "Food cost",
+    "Kitchen purchasing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tidewater Produce Wholesale",
+     "base": 22000,
+     "memo": "Weekly fresh produce"
+    },
+    {
+     "vendor": "Bluestem Meat and Seafood",
+     "base": 27500,
+     "memo": "Protein deliveries"
+    },
+    {
+     "vendor": "Ironbark Dry Goods",
+     "base": 8400,
+     "memo": "Pantry staples"
+    }
+   ],
+   "events": [
+    {
+     "key": "truffleweek",
+     "vendor": "Bluestem Meat and Seafood",
+     "memos": [
+      "Truffle tasting dinner — imported black truffle",
+      "Truffle tasting dinner — wagyu allocation"
+     ],
+     "cross_memo": "Truffle tasting dinner — sommelier honorarium",
+     "plain": [
+      "the truffle tasting dinner",
+      "the truffle dinner series",
+      "the imported black truffle order"
+     ],
+     "oblique": [
+      "the chef's special evening for top guests",
+      "a premium dining event",
+      "the invitation-only supper",
+      "what the executive chef proposed last quarter",
+      "a high-end night for repeat visitors",
+      "the showpiece meal for the anniversary",
+      "an expensive one-night menu",
+      "the indulgent evening we hosted",
+      "a splurge to boost restaurant buzz",
+      "the exclusive culinary night",
+      "a marketing-led feast",
+      "the pricey seasonal ingredients",
+      "a luxury tasting for press",
+      "the gala-style meal",
+      "a lavish night in the dining room",
+      "the special-occasion spread"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "rooftopgarden",
+     "vendor": "Sunhaven Greenhouse Partners",
+     "memos": [
+      "Rooftop herb program — seedling trays",
+      "Rooftop herb program — raised bed supplies"
+     ],
+     "cross_memo": "Rooftop herb program — irrigation install",
+     "plain": [
+      "the rooftop herb program",
+      "the rooftop herb beds",
+      "the herb program seedlings"
+     ],
+     "oblique": [
+      "growing our own greens above the kitchen",
+      "a farm-to-table initiative",
+      "the sustainability project the chef championed",
+      "fresh cuttings harvested on site",
+      "a local sourcing pilot",
+      "what the green team launched",
+      "the plan to cut delivery trips",
+      "homegrown garnishes",
+      "a project meant to lower long-run produce costs",
+      "the eco-friendly sourcing experiment",
+      "planting ahead of summer",
+      "the outdoor growing space",
+      "an environmental pledge",
+      "fresher flavors from our own building",
+      "the garden effort for the restaurant",
+      "a cultivation trial"
+     ],
+     "low": 10000,
+     "high": 21000
+    }
+   ]
+  },
+  {
+   "name": "Front Desk and Reservation Systems",
+   "aliases": [
+    "reservation systems",
+    "booking platform",
+    "front desk tech",
+    "pms costs",
+    "reservations tech"
+   ],
+   "narrative": [
+    "Reservation systems",
+    "Booking platform",
+    "Front desk tech"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Property Cloud",
+     "base": 12500,
+     "memo": "PMS subscription"
+    },
+    {
+     "vendor": "Roamly Channel Manager",
+     "base": 6800,
+     "memo": "OTA distribution fees"
+    },
+    {
+     "vendor": "Doorlatch Digital Keys",
+     "base": 4300,
+     "memo": "Mobile key licensing"
+    }
+   ],
+   "events": [
+    {
+     "key": "kioskrollout",
+     "vendor": "Keystone Property Cloud",
+     "memos": [
+      "Self check-in pods — hardware shipment",
+      "Self check-in pods — configuration services"
+     ],
+     "cross_memo": "Self check-in pods — lobby millwork",
+     "plain": [
+      "the self check-in pods",
+      "the check-in pod hardware",
+      "the pod configuration work"
+     ],
+     "oblique": [
+      "letting guests skip the line",
+      "touchless arrival technology",
+      "a lobby modernization effort",
+      "what operations wanted for peak weekends",
+      "machines in the entry hall",
+      "the staffing-relief initiative",
+      "arrival without a clerk",
+      "the new way guests get their cards",
+      "an answer to long waits",
+      "the unmanned arrival lane",
+      "a digital front-of-house upgrade",
+      "the gear installed near the doors",
+      "an efficiency project at the lobbies",
+      "our response to understaffing",
+      "a rollout across flagship locations",
+      "the faster arrival experience"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "cyberaudit",
+     "vendor": "Gatewarden Security Advisors",
+     "memos": [
+      "Payment compliance review — penetration testing",
+      "Payment compliance review — remediation workshop"
+     ],
+     "cross_memo": "Payment compliance review — card terminal replacement",
+     "plain": [
+      "the payment compliance review",
+      "the compliance review testing",
+      "the penetration testing engagement"
+     ],
+     "oblique": [
+      "the outside experts we hired to poke at our defenses",
+      "an assessment demanded by the card networks",
+      "what the lender asked us to certify",
+      "the safety check on guest data",
+      "a protective exercise after an industry breach",
+      "the examiners who probed our networks",
+      "an annual obligation we met early",
+      "a security health check",
+      "the hired hackers",
+      "a requirement from our insurer",
+      "hardening our systems",
+      "the quick-turn attestation",
+      "an independent look at our exposure",
+      "the risk-reduction project",
+      "what legal pushed for after the news",
+      "a protective engagement"
+     ],
+     "low": 12000,
+     "high": 25000
+    }
+   ]
+  },
+  {
+   "name": "Property Maintenance and Grounds",
+   "aliases": [
+    "maintenance",
+    "property upkeep",
+    "grounds",
+    "building maintenance",
+    "grounds and upkeep"
+   ],
+   "narrative": [
+    "Property upkeep",
+    "Building maintenance",
+    "Grounds spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Anchorpoint Facility Services",
+     "base": 16000,
+     "memo": "Monthly HVAC service contract"
+    },
+    {
+     "vendor": "Greenmantle Landscaping",
+     "base": 7500,
+     "memo": "Grounds care"
+    },
+    {
+     "vendor": "Sparkwright Electric",
+     "base": 5200,
+     "memo": "Lighting maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "poolresurface",
+     "vendor": "Anchorpoint Facility Services",
+     "memos": [
+      "Courtyard plunge pool — replastering",
+      "Courtyard plunge pool — tile restoration"
+     ],
+     "cross_memo": "Courtyard plunge pool — guest closure signage",
+     "plain": [
+      "the courtyard plunge pool",
+      "the plunge pool replastering",
+      "the pool tile restoration"
+     ],
+     "oblique": [
+      "bringing the swimming area back to life",
+      "the amenity guests kept complaining about",
+      "a refresh of the outdoor water feature",
+      "what the inspector flagged near the cabanas",
+      "the long-postponed splash zone fix",
+      "a fix to the cracked surface",
+      "the leisure area overhaul",
+      "an aging fixture we finally tackled",
+      "the wet deck renovation",
+      "repairs on the cool-off spot",
+      "a safety-driven renovation",
+      "the fixture that stayed closed all spring",
+      "a restoration the owners approved",
+      "the sun-terrace attraction",
+      "what shut down the courtyard for weeks",
+      "a fix before peak season"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "roofleak",
+     "vendor": "Highgable Roofing Contractors",
+     "memos": [
+      "Mansard slate repair — flashing replacement",
+      "Mansard slate repair — scaffold rental"
+     ],
+     "cross_memo": "Mansard slate repair — water-damaged ceiling plaster",
+     "plain": [
+      "the mansard slate repair",
+      "the slate flashing replacement",
+      "the mansard scaffold rental"
+     ],
+     "oblique": [
+      "stopping the drip in the top-floor rooms",
+      "what the storm did to the building",
+      "an emergency on the upper level",
+      "the fix after guests found wet carpets",
+      "the weather damage we had to patch",
+      "an urgent job overhead",
+      "work high above the street",
+      "the top of the historic building",
+      "what the insurance adjuster inspected",
+      "the leak that cost us bookings",
+      "a rainy-season casualty",
+      "emergency work on the uppermost structure",
+      "an unplanned patch job",
+      "the repairs after the gale",
+      "a heritage-building fix",
+      "securing the building against the elements"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Utilities and Energy",
+   "aliases": [
+    "utilities",
+    "energy costs",
+    "power and water",
+    "utility bills",
+    "energy spend"
+   ],
+   "narrative": [
+    "Energy costs",
+    "Utility bills",
+    "Power and water"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northgrid Electric",
+     "base": 26000,
+     "memo": "Electric service"
+    },
+    {
+     "vendor": "Clearbrook Water Authority",
+     "base": 9800,
+     "memo": "Water and sewer"
+    },
+    {
+     "vendor": "Emberline Gas",
+     "base": 11200,
+     "memo": "Natural gas service"
+    }
+   ],
+   "events": [
+    {
+     "key": "heatwave",
+     "vendor": "Northgrid Electric",
+     "memos": [
+      "Peak demand surcharge — extreme heat event",
+      "Peak demand surcharge — emergency load tier"
+     ],
+     "cross_memo": "Peak demand surcharge — portable chiller rental",
+     "plain": [
+      "the peak demand surcharge",
+      "the extreme heat surcharge",
+      "the emergency load tier charge"
+     ],
+     "oblique": [
+      "the scorching week when the air conditioning ran nonstop",
+      "a penalty for using power at the wrong hour",
+      "what the weather did to our meters",
+      "the sweltering stretch",
+      "a rate spike that hit all properties",
+      "the cooling frenzy",
+      "the grid operator's extra fee",
+      "an unusual atmospheric episode",
+      "the days when every unit blasted",
+      "a temperature-related pricing event",
+      "the spike nobody budgeted",
+      "the busiest hours on the line",
+      "the cost of keeping guests comfortable in July",
+      "the climate surprise",
+      "the punitive tariff tier",
+      "the stretch of record readings"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "solarlease",
+     "vendor": "Suncrest Renewable Partners",
+     "memos": [
+      "Rooftop photovoltaic array — commissioning fee",
+      "Rooftop photovoltaic array — interconnection study"
+     ],
+     "cross_memo": "Rooftop photovoltaic array — structural engineering",
+     "plain": [
+      "the rooftop photovoltaic array",
+      "the photovoltaic commissioning fee",
+      "the photovoltaic interconnection study"
+     ],
+     "oblique": [
+      "generating our own electricity",
+      "the panels going up on the roofs",
+      "a green power initiative",
+      "what the sustainability pledge required",
+      "an upfront cost to cut future bills",
+      "the clean-energy launch",
+      "a switch toward self-supply",
+      "setup charges for the sun-powered project",
+      "a long-term savings bet",
+      "the ESG commitment we made to investors",
+      "harnessing daylight",
+      "what the brand's environmental report promised",
+      "the carbon reduction push",
+      "an energy independence step",
+      "an installation that took months to approve",
+      "the alternative supply program"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Spa and Wellness Operations",
+   "aliases": [
+    "spa",
+    "spa operations",
+    "wellness costs",
+    "spa and wellness",
+    "treatment room spend"
+   ],
+   "narrative": [
+    "Spa operations",
+    "Wellness costs",
+    "Treatment room spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Serenova Skincare Supply",
+     "base": 8900,
+     "memo": "Treatment products"
+    },
+    {
+     "vendor": "Stillwater Contract Therapists",
+     "base": 21000,
+     "memo": "Therapist services"
+    },
+    {
+     "vendor": "Cedarbloom Spa Linens",
+     "base": 3600,
+     "memo": "Robe and towel service"
+    }
+   ],
+   "events": [
+    {
+     "key": "hammamfitout",
+     "vendor": "Serenova Skincare Supply",
+     "memos": [
+      "Steam hammam suite — marble basin set",
+      "Steam hammam suite — black soap inventory"
+     ],
+     "cross_memo": "Steam hammam suite — ventilation retrofit",
+     "plain": [
+      "the steam hammam suite",
+      "the hammam marble basins",
+      "the hammam black soap inventory"
+     ],
+     "oblique": [
+      "a new traditional bathing ritual",
+      "the vapor room addition",
+      "the signature experience we launched at the flagship",
+      "a showpiece for the wellness menu",
+      "an Eastern-inspired offering",
+      "what the spa director pitched to ownership",
+      "a hot-room expansion",
+      "the upscale package for couples",
+      "the cleansing ceremony",
+      "an amenity that differentiates us from rivals",
+      "new treatment capacity",
+      "a service line we hadn't offered before",
+      "the heated tile area",
+      "a premium experience for loyalty members",
+      "an addition behind the sauna",
+      "the cultural-themed expansion"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "retreatweek",
+     "vendor": "Mindfield Retreat Collective",
+     "memos": [
+      "Guest yoga residency — master instructor fees",
+      "Guest yoga residency — mat and prop stock"
+     ],
+     "cross_memo": "Guest yoga residency — promotional photography",
+     "plain": [
+      "the guest yoga residency",
+      "the yoga instructor fees",
+      "the residency mat and prop stock"
+     ],
+     "oblique": [
+      "the visiting teacher who stayed for a fortnight",
+      "an invited expert drawing out-of-town guests",
+      "a seasonal stretch-and-breathe program",
+      "what the wellness manager arranged for the shoulder season",
+      "a guest-facing mindfulness event",
+      "a collaboration with an outside studio",
+      "the fortnight of morning classes",
+      "a draw for off-peak occupancy",
+      "the celebrity instructor's booking",
+      "a packaged getaway for health seekers",
+      "a partnership we trialed this autumn",
+      "paid experts leading sessions",
+      "an ambassador-style visit",
+      "the programming that filled the lawn",
+      "an enrichment offering",
+      "a special calendar of classes"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Guest Acquisition",
+   "aliases": [
+    "marketing",
+    "guest acquisition",
+    "advertising",
+    "promo spend",
+    "marketing and promotion"
+   ],
+   "narrative": [
+    "Marketing spend",
+    "Guest acquisition",
+    "Promo spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightline Digital Media",
+     "base": 19500,
+     "memo": "Paid search and social campaigns"
+    },
+    {
+     "vendor": "Quillmark Creative Studio",
+     "base": 7200,
+     "memo": "Content retainer"
+    },
+    {
+     "vendor": "Wayfarer Loyalty Platform",
+     "base": 5800,
+     "memo": "Rewards program administration"
+    }
+   ],
+   "events": [
+    {
+     "key": "influencerstay",
+     "vendor": "Quillmark Creative Studio",
+     "memos": [
+      "Creator hosting campaign — complimentary suite nights",
+      "Creator hosting campaign — content licensing"
+     ],
+     "cross_memo": "Creator hosting campaign — airport transfer vouchers",
+     "plain": [
+      "the creator hosting campaign",
+      "the creator suite nights",
+      "the content licensing fees"
+     ],
+     "oblique": [
+      "bringing social personalities to the properties",
+      "free stays in exchange for posts",
+      "an online-fame partnership",
+      "what the digital team arranged for spring",
+      "paying people with big followings",
+      "the buzz-building invitations",
+      "a reach-expansion tactic",
+      "visitors who photographed our rooms",
+      "a younger-audience push",
+      "the sponsored weekend getaways",
+      "our attempt to go viral",
+      "a bet on personalities",
+      "the posts that followed their visits",
+      "an awareness drive among travelers under thirty",
+      "giving away nights to get exposure",
+      "a brand-heat experiment"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "conciergeguide",
+     "vendor": "Inkwell Print and Binding",
+     "memos": [
+      "Neighborhood atlas edition — hardcover printing",
+      "Neighborhood atlas edition — cartography licensing"
+     ],
+     "cross_memo": "Neighborhood atlas edition — in-room display stands",
+     "plain": [
+      "the neighborhood atlas edition",
+      "the atlas hardcover printing",
+      "the atlas cartography licensing"
+     ],
+     "oblique": [
+      "a keepsake book for guests",
+      "an illustrated local guide placed in every room",
+      "the coffee-table item we commissioned",
+      "what the concierge team wanted to hand out",
+      "a printed souvenir",
+      "paper material about nearby attractions",
+      "a tactile alternative to apps",
+      "the gift-worthy publication",
+      "a heritage-style booklet",
+      "a publishing project",
+      "the glossy volume left on nightstands",
+      "a branded giveaway with maps",
+      "an old-fashioned touch we revived",
+      "what the creative director insisted on",
+      "bound pages with our logo",
+      "a project that took a year to finalize"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Guest Transportation and Valet",
+   "aliases": [
+    "valet",
+    "guest transportation",
+    "shuttle costs",
+    "valet and shuttle",
+    "guest transfers"
+   ],
+   "narrative": [
+    "Valet costs",
+    "Shuttle costs",
+    "Guest transfers"
+   ],
+   "recurring": [
+    {
+     "vendor": "Parkwell Valet Services",
+     "base": 13500,
+     "memo": "Valet staffing"
+    },
+    {
+     "vendor": "Roadrunner Shuttle Lines",
+     "base": 10500,
+     "memo": "Airport shuttle contract"
+    },
+    {
+     "vendor": "Garageworks Insurance Brokers",
+     "base": 3800,
+     "memo": "Garage liability premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "classiccarfleet",
+     "vendor": "Roadrunner Shuttle Lines",
+     "memos": [
+      "Vintage limousine fleet — lease deposit",
+      "Vintage limousine fleet — chauffeur uniforms"
+     ],
+     "cross_memo": "Vintage limousine fleet — restoration workshop",
+     "plain": [
+      "the vintage limousine fleet",
+      "the vintage limousine lease deposit",
+      "the limousine chauffeur uniforms"
+     ],
+     "oblique": [
+      "old-fashioned luxury cars ferrying guests",
+      "a nostalgic ride offering",
+      "what the brand team wanted for the retro theme",
+      "chauffeured arrivals in antique style",
+      "a statement vehicle program",
+      "the showy pickups at the airport",
+      "period cars with drivers in livery",
+      "an exclusive way to arrive",
+      "the throwback transport experience",
+      "costly vehicles that photograph well",
+      "an image-driven choice",
+      "a signature entrance to the hotels",
+      "a package for honeymooners",
+      "an extra ride tier for premium bookings",
+      "heritage motor transport",
+      "the glamorous pickup service"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "evchargers",
+     "vendor": "Voltpath Charging Solutions",
+     "memos": [
+      "Charging bay installation — dual-port stations",
+      "Charging bay installation — trenching and conduit"
+     ],
+     "cross_memo": "Charging bay installation — signage and striping",
+     "plain": [
+      "the charging bay installation",
+      "the dual-port stations",
+      "the trenching and conduit work"
+     ],
+     "oblique": [
+      "plugs for guests who drive electric cars",
+      "an amenity for green travelers",
+      "what the parking structure needed for the new fleet",
+      "a facility meant to attract eco-minded visitors",
+      "the power points near the garage",
+      "a response to guest requests",
+      "infrastructure for battery-powered vehicles",
+      "excavation in the lower level",
+      "an environmental incentive project",
+      "a utility grant we matched",
+      "gear installed beside the valet stand",
+      "spaces reserved for zero-emission vehicles",
+      "a modernization of the garage",
+      "what the sustainability committee approved",
+      "the project cutting across the parking deck",
+      "a differentiator for corporate travelers"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

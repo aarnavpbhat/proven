@@ -1,0 +1,830 @@
+{
+ "slug": "childcare-center-chain",
+ "industry": "childcare center chain",
+ "entities": [
+  "Little Oaks Learning Centers",
+  "BrightNest Early Education",
+  "Tumbleweed Kids Academy",
+  "Sunbeam Childcare Group",
+  "Maple Path Preschools"
+ ],
+ "accounts": [
+  {
+   "name": "Food & Nutrition Program",
+   "aliases": [
+    "food program",
+    "meals",
+    "nutrition costs",
+    "snack and meal spend",
+    "food service"
+   ],
+   "narrative": [
+    "Food program",
+    "Nutrition costs",
+    "Food service"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harvest Table Provisions",
+     "base": 14200,
+     "memo": "Inv - weekly meal delivery all sites"
+    },
+    {
+     "vendor": "Little Sprout Dairy Co",
+     "base": 3800,
+     "memo": "Milk & yogurt standing order"
+    },
+    {
+     "vendor": "Brightwell Produce",
+     "base": 5100,
+     "memo": "Fresh fruit/veg Mnt delivery"
+    }
+   ],
+   "events": [
+    {
+     "key": "allergen_menu",
+     "vendor": "Harvest Table Provisions",
+     "memos": [
+      "Allergen menu reformulation - nut-free recipes",
+      "Allergen menu reformulation - dietitian review"
+     ],
+     "cross_memo": "Allergen menu reformulation - staff EpiPen training",
+     "plain": [
+      "the allergen menu reformulation",
+      "allergen menu reformulation work",
+      "an allergen menu reformulation"
+     ],
+     "oblique": [
+      "peanut-safe cooking",
+      "rewriting what the kids eat",
+      "the new peanut-safe lunch plans",
+      "a parent-requested overhaul of lunches",
+      "food sensitivity changes",
+      "reworking dishes after a reaction scare",
+      "the nutritionist sign-off on lunches",
+      "safer lunch planning",
+      "swapping ingredients chainwide",
+      "the dish changes licensors asked about",
+      "cleaner ingredient lists",
+      "a full rethink of breakfasts and lunches",
+      "safeguarding kids with severe sensitivities",
+      "new cook cards",
+      "the peanut ban rollout",
+      "consultant time on safe eating"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "freezer_failure",
+     "vendor": "Coldline Kitchen Repair",
+     "memos": [
+      "Walk-in freezer failure - compressor replacement",
+      "Walk-in freezer failure - spoiled stock writeoff"
+     ],
+     "cross_memo": "Walk-in freezer failure - emergency electrician",
+     "plain": [
+      "the walk-in freezer failure",
+      "a walk-in freezer failure",
+      "walk-in freezer failure costs"
+     ],
+     "oblique": [
+      "the broken cooler",
+      "tossing thawed groceries",
+      "a chiller breakdown at one center",
+      "after-hours cooler fixes",
+      "restocking lost perishables",
+      "the refrigeration outage",
+      "thawed inventory",
+      "getting chilled storage running again",
+      "a dead cooling unit",
+      "food thrown out over a weekend outage",
+      "the cooler motor swap",
+      "a costly refrigeration breakdown",
+      "fixing chilled storage",
+      "lost perishables plus urgent fixes",
+      "repairs to refrigerated storage",
+      "the frozen-goods loss"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Classroom Materials & Curriculum",
+   "aliases": [
+    "classroom materials",
+    "curriculum",
+    "learning materials",
+    "classroom supplies",
+    "curriculum spend"
+   ],
+   "narrative": [
+    "Classroom materials",
+    "Curriculum spend",
+    "Learning materials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tiny Scholars Supply Co",
+     "base": 6200,
+     "memo": "Art paper paint crayons - Mnt restock"
+    },
+    {
+     "vendor": "BrightPath Curriculum Licensing",
+     "base": 4500,
+     "memo": "Monthly lesson plan license"
+    },
+    {
+     "vendor": "Block & Bead Educational",
+     "base": 2800,
+     "memo": "Manipulatives replenishment"
+    }
+   ],
+   "events": [
+    {
+     "key": "stem_kits",
+     "vendor": "BrightPath Curriculum Licensing",
+     "memos": [
+      "STEM kit rollout - preschool rooms",
+      "STEM kit rollout - Inv 4471 teacher guides"
+     ],
+     "cross_memo": "STEM kit rollout - trainer travel",
+     "plain": [
+      "the STEM kit rollout",
+      "a STEM kit rollout",
+      "STEM kit rollout costs"
+     ],
+     "oblique": [
+      "science activity boxes",
+      "hands-on science for four-year-olds",
+      "new engineering play sets",
+      "the early-science program launch",
+      "robotics and magnet sets for pre-K",
+      "launching early science learning",
+      "buying experiment bundles",
+      "educator handbooks for the new science unit",
+      "the math-and-science push",
+      "construction toys for engineering play",
+      "upgraded discovery centers",
+      "the science expansion",
+      "magnifiers microscopes and sensory bins",
+      "early tech exposure",
+      "a franchise-wide science upgrade",
+      "investigation tubs for toddlers"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "bilingual_books",
+     "vendor": "Readwell Library Services",
+     "memos": [
+      "Bilingual book collection - Spanish titles",
+      "Bilingual book collection - shelving labels"
+     ],
+     "cross_memo": "Bilingual book collection - parent night printing",
+     "plain": [
+      "the bilingual book collection",
+      "a bilingual book collection",
+      "bilingual book collection purchases"
+     ],
+     "oblique": [
+      "dual-language reading",
+      "two-language storybooks",
+      "expanding reading corners",
+      "multilingual picture stories",
+      "new reading nooks for dual-language families",
+      "diverse read-aloud stock",
+      "reading material in two languages",
+      "the dual-language reading push",
+      "story time diversity",
+      "translated picture stories",
+      "growing each center's reading corner",
+      "heritage-language reading resources",
+      "more inclusive storytime",
+      "dual-language read-alouds",
+      "a reading-room refresh",
+      "stories reflecting enrolled families"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Sanitation & Janitorial Services",
+   "aliases": [
+    "janitorial",
+    "cleaning",
+    "sanitation",
+    "custodial services",
+    "cleaning contract"
+   ],
+   "narrative": [
+    "Janitorial",
+    "Cleaning",
+    "Sanitation"
+   ],
+   "recurring": [
+    {
+     "vendor": "SparkleNest Custodial",
+     "base": 11800,
+     "memo": "Nightly cleaning svc - all centers"
+    },
+    {
+     "vendor": "PureHands Hygiene Supply",
+     "base": 2400,
+     "memo": "Hand soap sanitizer refills"
+    },
+    {
+     "vendor": "Greenleaf Diaper Disposal",
+     "base": 1900,
+     "memo": "Diaper pail pickup Mnt"
+    }
+   ],
+   "events": [
+    {
+     "key": "norovirus",
+     "vendor": "SparkleNest Custodial",
+     "memos": [
+      "Norovirus deep disinfection - 3 classrooms",
+      "Norovirus deep disinfection - weekend crew OT"
+     ],
+     "cross_memo": "Norovirus deep disinfection - substitute teachers",
+     "plain": [
+      "the norovirus deep disinfection",
+      "a norovirus deep disinfection",
+      "norovirus deep disinfection work"
+     ],
+     "oblique": [
+      "the stomach bug outbreak",
+      "an illness outbreak cleanup",
+      "sickness-related scrubbing",
+      "health department-ordered scrubbing",
+      "the virus scare",
+      "extra scrubbing after kids got sick",
+      "outbreak response",
+      "a gastro outbreak at one site",
+      "containing the tummy bug",
+      "intensive surface treatment after an outbreak",
+      "the illness cleanup",
+      "post-outbreak decontamination",
+      "the stomach flu response",
+      "emergency bleach treatment",
+      "scrubbing every toy after the bug",
+      "regulator-mandated decontamination"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "floor_reseal",
+     "vendor": "Ironclad Floor Restoration",
+     "memos": [
+      "Floor strip reseal - infant wing",
+      "Floor strip reseal - Inv 2209 materials"
+     ],
+     "cross_memo": "Floor strip reseal - furniture moving labor",
+     "plain": [
+      "the floor strip reseal",
+      "a floor strip reseal",
+      "floor strip reseal work"
+     ],
+     "oblique": [
+      "refinishing the baby room",
+      "new coating on worn surfaces",
+      "resurfacing the nursery",
+      "the annual hard-surface refinish",
+      "removing old wax buildup",
+      "baby-room surface work",
+      "a licensing-prep refinish",
+      "tile refinishing",
+      "renewing worn linoleum",
+      "making crawling areas safer",
+      "slip-resistant coating",
+      "the nursery refinish",
+      "wax removal and recoating",
+      "work underfoot in the baby room",
+      "a once-a-year surface renewal",
+      "prep before inspectors visited"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Playground & Outdoor Maintenance",
+   "aliases": [
+    "playground",
+    "outdoor maintenance",
+    "play yard upkeep",
+    "grounds",
+    "playground upkeep"
+   ],
+   "narrative": [
+    "Playground upkeep",
+    "Outdoor maintenance",
+    "Grounds"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sunny Acres Landscaping",
+     "base": 3600,
+     "memo": "Mnt lawn mowing trimming"
+    },
+    {
+     "vendor": "SafeSurface Play Services",
+     "base": 2200,
+     "memo": "Monthly safety inspection - play structures"
+    },
+    {
+     "vendor": "Mulchmasters Supply",
+     "base": 1400,
+     "memo": "Rubber mulch top-up"
+    }
+   ],
+   "events": [
+    {
+     "key": "slide_replacement",
+     "vendor": "SafeSurface Play Services",
+     "memos": [
+      "Climber slide replacement - toddler yard",
+      "Climber slide replacement - Inv 8812 install"
+     ],
+     "cross_memo": "Climber slide replacement - temporary fencing rental",
+     "plain": [
+      "the climber slide replacement",
+      "a climber slide replacement",
+      "climber slide replacement work"
+     ],
+     "oblique": [
+      "a cracked piece of equipment swapped out",
+      "new climbing gear for the little ones",
+      "the broken jungle gym",
+      "a failed audit of the climbing frame",
+      "replacing a cracked tube chute",
+      "jungle gym repairs",
+      "a new climbing tower",
+      "fixing a hazard flagged by a parent",
+      "swapping out aging equipment",
+      "the damaged apparatus",
+      "a hazard removal outdoors",
+      "new equipment for two-year-olds",
+      "the climbing frame swap",
+      "an equipment upgrade outside",
+      "retiring a worn-out climbing unit",
+      "child-injury prevention work"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "shade_sail",
+     "vendor": "Canopy Shade Systems",
+     "memos": [
+      "Shade sail project - east lot",
+      "Shade sail project - steel posts"
+     ],
+     "cross_memo": "Shade sail project - city permit fee",
+     "plain": [
+      "the shade sail project",
+      "a shade sail project",
+      "shade sail project work"
+     ],
+     "oblique": [
+      "sun protection outside",
+      "covering the outdoor area",
+      "UV cover for recess",
+      "keeping kids out of direct sun",
+      "the overhead covering",
+      "heat mitigation for summer recess",
+      "a fabric awning",
+      "new sun cover",
+      "protecting kids from heat",
+      "a parent-requested sun barrier",
+      "the awning build",
+      "outdoor cooling measures",
+      "putting up overhead cover",
+      "sunburn prevention",
+      "fabric overhead protection",
+      "a sun-blocking cover"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Staff Training & Credentialing",
+   "aliases": [
+    "training",
+    "credentialing",
+    "staff development",
+    "professional development",
+    "teacher certification"
+   ],
+   "narrative": [
+    "Training",
+    "Staff development",
+    "Professional development"
+   ],
+   "recurring": [
+    {
+     "vendor": "Early Learning Institute",
+     "base": 4800,
+     "memo": "CDA coursework tuition"
+    },
+    {
+     "vendor": "Heartstart CPR Partners",
+     "base": 2100,
+     "memo": "Pediatric first aid recert - Mnt"
+    },
+    {
+     "vendor": "ClearCheck Screening",
+     "base": 1600,
+     "memo": "Background checks new hires"
+    }
+   ],
+   "events": [
+    {
+     "key": "director_academy",
+     "vendor": "Early Learning Institute",
+     "memos": [
+      "Director leadership academy - cohort 2",
+      "Director leadership academy - workbooks"
+     ],
+     "cross_memo": "Director leadership academy - hotel stay",
+     "plain": [
+      "the director leadership academy",
+      "a director leadership academy",
+      "director leadership academy fees"
+     ],
+     "oblique": [
+      "management courses for site heads",
+      "grooming future site managers",
+      "a program for center managers",
+      "building the bench of managers",
+      "succession planning for site leads",
+      "coaching our site heads",
+      "the manager development track",
+      "an executive course for administrators",
+      "upskilling site supervisors",
+      "supervisor coaching",
+      "investing in our people managers",
+      "a multi-day management retreat",
+      "preparing supervisors to run sites",
+      "the operations team's management course",
+      "management upskilling",
+      "head-of-site development"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "trauma_workshop",
+     "vendor": "Bridgeway Behavior Consulting",
+     "memos": [
+      "Trauma informed workshop - 40 attendees",
+      "Trauma informed workshop - facilitator fee"
+     ],
+     "cross_memo": "Trauma informed workshop - sub coverage",
+     "plain": [
+      "the trauma informed workshop",
+      "a trauma informed workshop",
+      "trauma informed workshop fees"
+     ],
+     "oblique": [
+      "teaching caregivers to handle meltdowns",
+      "a session on childhood adversity",
+      "emotional-support techniques",
+      "de-escalation instruction",
+      "helping teachers support struggling kids",
+      "the adversity seminar",
+      "outside experts on child stress",
+      "a resilience course for caregivers",
+      "calming techniques",
+      "the meltdown-response session",
+      "social-emotional coaching",
+      "floater pay while staff learned",
+      "a licensing-recommended mental health session",
+      "caregiver resilience instruction",
+      "child stress response skills",
+      "an all-staff seminar on adversity"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Child Transportation",
+   "aliases": [
+    "transportation",
+    "van program",
+    "school pickup runs",
+    "bus service",
+    "shuttle costs"
+   ],
+   "narrative": [
+    "Transportation",
+    "Bus service",
+    "Shuttle costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kidway Shuttle Lines",
+     "base": 8900,
+     "memo": "After-school pickup route svc"
+    },
+    {
+     "vendor": "Pinecrest Fuel Card",
+     "base": 2600,
+     "memo": "Fuel - center vans"
+    },
+    {
+     "vendor": "RoadSure Fleet Care",
+     "base": 1500,
+     "memo": "Van preventive Mnt"
+    }
+   ],
+   "events": [
+    {
+     "key": "zoo_trip",
+     "vendor": "Kidway Shuttle Lines",
+     "memos": [
+      "Zoo field trip - charter coach",
+      "Zoo field trip - extra driver"
+     ],
+     "cross_memo": "Zoo field trip - admission tickets",
+     "plain": [
+      "the zoo field trip",
+      "a zoo field trip",
+      "zoo field trip busing"
+     ],
+     "oblique": [
+      "the animal park outing",
+      "busing kids to the wildlife park",
+      "an end-of-year excursion",
+      "a big outing",
+      "rented buses for an outing",
+      "the excursion",
+      "taking every classroom to see animals",
+      "a parent-requested outing",
+      "hiring buses for an outing",
+      "an educational excursion",
+      "the wildlife outing",
+      "a day away at the animal park",
+      "group outing logistics",
+      "a special day out",
+      "busing preschoolers off site",
+      "the yearly excursion"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "seat_retrofit",
+     "vendor": "Northgate Seat Safety",
+     "memos": [
+      "Car seat retrofit - five-point harnesses",
+      "Car seat retrofit - Inv 3307 brackets"
+     ],
+     "cross_memo": "Car seat retrofit - DMV reinspection",
+     "plain": [
+      "the car seat retrofit",
+      "a car seat retrofit",
+      "car seat retrofit work"
+     ],
+     "oblique": [
+      "restraint upgrades",
+      "child restraint upgrades on buses",
+      "updating restraints to current standards",
+      "the crash-protection upgrade",
+      "bringing restraints up to code",
+      "a compliance fix on our buses",
+      "booster replacements",
+      "the regulatory restraint change",
+      "buckle upgrades",
+      "safer restraints for riders",
+      "meeting updated passenger rules",
+      "a state-ordered restraint change",
+      "occupant protection work",
+      "toddler restraint upgrades",
+      "crashworthiness improvements",
+      "re-equipping buses for younger riders"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Rent & Occupancy",
+   "aliases": [
+    "rent",
+    "occupancy",
+    "lease costs",
+    "facility rent",
+    "occupancy costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Lease costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Maplegrove Property Group",
+     "base": 24500,
+     "memo": "Base rent - 6 locations"
+    },
+    {
+     "vendor": "Riverside Commons LLC",
+     "base": 6800,
+     "memo": "Monthly lease - Riverside site"
+    },
+    {
+     "vendor": "Cityline CAM Services",
+     "base": 2900,
+     "memo": "CAM charges Qtr allocation"
+    }
+   ],
+   "events": [
+    {
+     "key": "rent_escalation",
+     "vendor": "Maplegrove Property Group",
+     "memos": [
+      "Escalation clause true-up - prior year",
+      "Escalation clause true-up - interest"
+     ],
+     "cross_memo": "Escalation clause true-up - legal review",
+     "plain": [
+      "the escalation clause true-up",
+      "an escalation clause true-up",
+      "escalation clause true-up billing"
+     ],
+     "oblique": [
+      "a landlord catch-up bill",
+      "retroactive increases from the landlord",
+      "back-billing on last period's increase",
+      "the landlord's annual reconciliation",
+      "a contractual bump billed late",
+      "catching up on an inflation adjustment",
+      "CPI-linked increases billed retroactively",
+      "a retroactive landlord adjustment",
+      "the late-billed annual increase",
+      "an indexed hike",
+      "settling an under-billed increase",
+      "landlord reconciliation",
+      "a backdated increase",
+      "the inflation-indexed adjustment",
+      "a catch-up invoice from our landlord",
+      "contractual increases nobody accrued"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "holdover",
+     "vendor": "Harborview Realty Partners",
+     "memos": [
+      "Holdover overlap - old Elm St space",
+      "Holdover overlap - double occupancy wk"
+     ],
+     "cross_memo": "Holdover overlap - moving van",
+     "plain": [
+      "the holdover overlap",
+      "a holdover overlap",
+      "holdover overlap charges"
+     ],
+     "oblique": [
+      "paying two landlords at once",
+      "the relocation",
+      "carrying the vacated building",
+      "an overstay at the previous building",
+      "delays opening the replacement building",
+      "the relocation lag",
+      "staying past our exit date",
+      "a slow handover",
+      "dual payments during relocation",
+      "the relocation gap",
+      "a late exit from the previous building",
+      "paying through the transition",
+      "keeping the vacated building",
+      "a premium for staying on",
+      "transition costs",
+      "the stalled relocation"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Software & Subscriptions",
+   "aliases": [
+    "software",
+    "subscriptions",
+    "saas",
+    "tech stack",
+    "software licenses"
+   ],
+   "narrative": [
+    "Software",
+    "Subscriptions",
+    "Tech stack"
+   ],
+   "recurring": [
+    {
+     "vendor": "KinderLink Parent App",
+     "base": 5400,
+     "memo": "Parent comms platform - per child"
+    },
+    {
+     "vendor": "TallyCare Billing Suite",
+     "base": 3100,
+     "memo": "Tuition billing SaaS Mnt"
+    },
+    {
+     "vendor": "Cloudnest Workspace",
+     "base": 1200,
+     "memo": "Email seats"
+    }
+   ],
+   "events": [
+    {
+     "key": "camera_module",
+     "vendor": "KinderLink Parent App",
+     "memos": [
+      "Classroom camera module - activation",
+      "Classroom camera module - Inv 5520 hardware"
+     ],
+     "cross_memo": "Classroom camera module - network cabling",
+     "plain": [
+      "the classroom camera module",
+      "a classroom camera module",
+      "classroom camera module fees"
+     ],
+     "oblique": [
+      "live video for families",
+      "letting families watch the day",
+      "the livestream add-on",
+      "streaming video from rooms",
+      "a family viewing feature",
+      "remote viewing for moms and dads",
+      "the video add-on",
+      "webcam access for families",
+      "a requested transparency feature",
+      "turning on video feeds",
+      "the livestream launch",
+      "video monitoring",
+      "watch-from-work access",
+      "a premium video tier",
+      "enrollment-boosting video access",
+      "putting eyes in every room"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "attendance_migration",
+     "vendor": "Verity Records Systems",
+     "memos": [
+      "Attendance data migration - historical import",
+      "Attendance data migration - onboarding"
+     ],
+     "cross_memo": "Attendance data migration - overtime admin",
+     "plain": [
+      "the attendance data migration",
+      "an attendance data migration",
+      "attendance data migration fees"
+     ],
+     "oblique": [
+      "moving off our old sign-in system",
+      "switching check-in tools",
+      "the check-in system switchover",
+      "porting years of sign-in logs",
+      "a state-mandated logging upgrade",
+      "retiring the paper sign-in sheets",
+      "getting check-in logs into one tool",
+      "the sign-in conversion",
+      "converting old logs",
+      "setup of the check-in tool",
+      "a regulator-friendly sign-in tool",
+      "consolidating check-in history",
+      "implementation fees",
+      "cutover to digital sign-in",
+      "replacing clipboards",
+      "the conversion project"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

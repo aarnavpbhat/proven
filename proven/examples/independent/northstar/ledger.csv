@@ -1,0 +1,295 @@
+id,date,account,vendor,memo,amount
+NSF-55001,2026-08-01,Fuel,Interstate Fuel Network,Fuel card daily summary 8/1,4992.69
+NSF-55002,2026-08-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2201,2150.00
+NSF-55003,2026-08-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2202,2150.00
+NSF-55004,2026-08-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2203,2150.00
+NSF-55005,2026-08-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2204,2150.00
+NSF-55006,2026-08-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2205,2150.00
+NSF-55007,2026-08-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2206,2150.00
+NSF-55008,2026-08-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2207,2150.00
+NSF-55009,2026-08-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2208,2150.00
+NSF-55010,2026-08-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2209,2150.00
+NSF-55011,2026-08-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2210,2150.00
+NSF-55012,2026-08-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2211,2150.00
+NSF-55013,2026-08-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2212,2150.00
+NSF-55014,2026-08-01,Equipment Leases,Great Plains Trailer Pool,Trailer pool - 30 units,6400.00
+NSF-55015,2026-08-01,Dispatch & ELD Software,RouteMax TMS,TMS subscription,2950.00
+NSF-55016,2026-08-01,Dispatch & ELD Software,LogBook ELD,ELD units,980.00
+NSF-55017,2026-08-01,Terminal Rent,Red River Terminal Properties,Terminal + yard lease,14800.00
+NSF-55018,2026-08-01,Compliance & Testing,ClearPath Testing,DOT drug screen,356.37
+NSF-55019,2026-08-02,Fuel,Interstate Fuel Network,Fuel card daily summary 8/2,5307.63
+NSF-55020,2026-08-03,Fuel,Interstate Fuel Network,Fuel card daily summary 8/3,5084.11
+NSF-55021,2026-08-03,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,349.43 @0.7290",1712.73
+NSF-55022,2026-08-04,Fuel,Interstate Fuel Network,Fuel card daily summary 8/4,5326.14
+NSF-55023,2026-08-05,Fuel,Interstate Fuel Network,Fuel card daily summary 8/5,5302.59
+NSF-55024,2026-08-05,Purchased Transportation,Ridgeback Carriers LLC,Weekly settlement - loads per rate cons,9048.82
+NSF-55025,2026-08-05,Purchased Transportation,J&M Haulage,Weekly settlement - loads per rate cons,7706.88
+NSF-55026,2026-08-05,Purchased Transportation,Prairie Star Transport,Weekly settlement - loads per rate cons,11162.44
+NSF-55027,2026-08-05,Purchased Transportation,Kestrel Logistics (broker),Weekly settlement - loads per rate cons,8626.91
+NSF-55028,2026-08-05,Insurance,Plains Mutual WC,Workers comp installment,6900.00
+NSF-55029,2026-08-06,Fuel,Interstate Fuel Network,Fuel card daily summary 8/6,5188.29
+NSF-55030,2026-08-06,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,493.93 @0.7290",1818.07
+NSF-55031,2026-08-06,Driver Recruiting,HaulHire Job Board,Job board campaign,1550.00
+NSF-55032,2026-08-06,Compliance & Testing,MVR Direct,MVR pulls,212.57
+NSF-55033,2026-08-07,Fuel,Interstate Fuel Network,Fuel card daily summary 8/7,5179.82
+NSF-55034,2026-08-07,Tractor & Trailer Maintenance,Midstate Truck Service,PM-B service,789.42
+NSF-55035,2026-08-08,Fuel,Interstate Fuel Network,Fuel card daily summary 8/8,4913.92
+NSF-55036,2026-08-09,Fuel,Interstate Fuel Network,Fuel card daily summary 8/9,5349.94
+NSF-55037,2026-08-09,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,409.01 @0.7290",1756.17
+NSF-55038,2026-08-09,Tractor & Trailer Maintenance,Midstate Truck Service,Air leak repair,1278.65
+NSF-55039,2026-08-09,Tractor & Trailer Maintenance,Midstate Truck Service,PM-A service,1100.42
+NSF-55040,2026-08-10,Fuel,Interstate Fuel Network,Fuel card daily summary 8/10,5312.26
+NSF-55041,2026-08-10,Tolls & Permits,Manitoba Infrastructure,Oversize/IRP permits,180.00
+NSF-55042,2026-08-11,Fuel,Interstate Fuel Network,Fuel card daily summary 8/11,5082.08
+NSF-55043,2026-08-12,Fuel,Interstate Fuel Network,Fuel card daily summary 8/12,4928.98
+NSF-55044,2026-08-12,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,264.28 @0.7290",1650.66
+NSF-55045,2026-08-12,Purchased Transportation,Ridgeback Carriers LLC,Weekly settlement - loads per rate cons,8896.85
+NSF-55046,2026-08-12,Purchased Transportation,J&M Haulage,Weekly settlement - loads per rate cons,7591.87
+NSF-55047,2026-08-12,Purchased Transportation,Prairie Star Transport,Weekly settlement - loads per rate cons,11108.82
+NSF-55048,2026-08-12,Purchased Transportation,Kestrel Logistics (broker),Weekly settlement - loads per rate cons,8627.61
+NSF-55049,2026-08-12,Tractor & Trailer Maintenance,Midstate Truck Service,Trailer lights,868.61
+NSF-55050,2026-08-13,Fuel,Interstate Fuel Network,Fuel card daily summary 8/13,5118.01
+NSF-55051,2026-08-14,Fuel,Interstate Fuel Network,Fuel card daily summary 8/14,5238.93
+NSF-55052,2026-08-14,Cargo Claims,Dakota Home Goods,"Claim C-2270 - shortage, 2 cartons",380.00
+NSF-55053,2026-08-15,Fuel,Interstate Fuel Network,Fuel card daily summary 8/15,5315.82
+NSF-55054,2026-08-15,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,401.34 @0.7290",1750.58
+NSF-55055,2026-08-15,Driver Wages,Plainsview Payroll,Driver settlements 8/15 - mileage + accessorials,90880.92
+NSF-55056,2026-08-15,Tractor & Trailer Maintenance,Midstate Truck Service,PM-B service,665.12
+NSF-55057,2026-08-15,Office Salaries,Plainsview Payroll,Office/dispatch payroll 8/15,22800.00
+NSF-55058,2026-08-16,Fuel,Interstate Fuel Network,Fuel card daily summary 8/16,5017.27
+NSF-55059,2026-08-16,Tolls & Permits,TollLink,Tolls 1st-15th,4380.00
+NSF-55060,2026-08-16,Tractor & Trailer Maintenance,Midstate Truck Service,Trailer lights,907.02
+NSF-55061,2026-08-17,Fuel,Interstate Fuel Network,Fuel card daily summary 8/17,5049.86
+NSF-55062,2026-08-18,Fuel,Interstate Fuel Network,Fuel card daily summary 8/18,5022.44
+NSF-55063,2026-08-18,Compliance & Testing,ClearPath Testing,DOT drug screen,163.58
+NSF-55064,2026-08-19,Fuel,Interstate Fuel Network,Fuel card daily summary 8/19,5104.74
+NSF-55065,2026-08-19,Purchased Transportation,Ridgeback Carriers LLC,Weekly settlement - loads per rate cons,8918.43
+NSF-55066,2026-08-19,Purchased Transportation,J&M Haulage,Weekly settlement - loads per rate cons,7662.74
+NSF-55067,2026-08-19,Purchased Transportation,Prairie Star Transport,Weekly settlement - loads per rate cons,11149.94
+NSF-55068,2026-08-19,Purchased Transportation,Kestrel Logistics (broker),Weekly settlement - loads per rate cons,8760.59
+NSF-55069,2026-08-20,Fuel,Interstate Fuel Network,Fuel card daily summary 8/20,4989.20
+NSF-55070,2026-08-21,Fuel,Interstate Fuel Network,Fuel card daily summary 8/21,5336.86
+NSF-55071,2026-08-21,Tractor & Trailer Maintenance,Midstate Truck Service,Trailer lights,1599.88
+NSF-55072,2026-08-22,Fuel,Interstate Fuel Network,Fuel card daily summary 8/22,5013.24
+NSF-55073,2026-08-22,Tractor & Trailer Maintenance,Midstate Truck Service,PM-A service,794.37
+NSF-55074,2026-08-23,Fuel,Interstate Fuel Network,Fuel card daily summary 8/23,5173.07
+NSF-55075,2026-08-23,Compliance & Testing,MVR Direct,MVR pulls,100.62
+NSF-55076,2026-08-24,Fuel,Interstate Fuel Network,Fuel card daily summary 8/24,4926.16
+NSF-55077,2026-08-25,Fuel,Interstate Fuel Network,Fuel card daily summary 8/25,5277.87
+NSF-55078,2026-08-25,Tractor & Trailer Maintenance,Midstate Truck Service,Trailer lights,947.17
+NSF-55079,2026-08-25,Tires,Northland Tire,Road service + repairs,2650.00
+NSF-55080,2026-08-26,Fuel,Interstate Fuel Network,Fuel card daily summary 8/26,4948.80
+NSF-55081,2026-08-26,Purchased Transportation,Ridgeback Carriers LLC,Weekly settlement - loads per rate cons,9104.39
+NSF-55082,2026-08-26,Purchased Transportation,J&M Haulage,Weekly settlement - loads per rate cons,7557.98
+NSF-55083,2026-08-26,Purchased Transportation,Prairie Star Transport,Weekly settlement - loads per rate cons,11047.08
+NSF-55084,2026-08-26,Purchased Transportation,Kestrel Logistics (broker),Weekly settlement - loads per rate cons,8657.26
+NSF-55085,2026-08-27,Fuel,Interstate Fuel Network,Fuel card daily summary 8/27,4925.62
+NSF-55086,2026-08-27,Tractor & Trailer Maintenance,Midstate Truck Service,Trailer lights,1588.16
+NSF-55087,2026-08-28,Fuel,Interstate Fuel Network,Fuel card daily summary 8/28,5166.42
+NSF-55088,2026-08-28,Tolls & Permits,TollLink,Tolls 16th-EOM,4410.00
+NSF-55089,2026-08-28,Tractor & Trailer Maintenance,Midstate Truck Service,Air leak repair,521.17
+NSF-55090,2026-08-28,Compliance & Testing,ClearPath Testing,DOT drug screen,100.14
+NSF-55091,2026-08-29,Fuel,Interstate Fuel Network,Fuel card daily summary 8/29,5359.62
+NSF-55092,2026-08-30,Fuel,Interstate Fuel Network,Fuel card daily summary 8/30,5212.34
+NSF-55093,2026-08-31,Fuel,Interstate Fuel Network,Fuel card daily summary 8/31,5275.20
+NSF-55094,2026-08-31,Driver Wages,Plainsview Payroll,Driver settlements 8/31 - mileage + accessorials,90878.14
+NSF-55095,2026-08-31,Insurance,Prepaid JE,Prepaid amort - auto liab/cargo (policy 10/1/25),31200.00
+NSF-55096,2026-08-31,Office Salaries,Plainsview Payroll,Office/dispatch payroll 8/31,22800.00
+NSF-55097,2026-09-01,Fuel,Interstate Fuel Network,Fuel card daily summary 9/1,5274.99
+NSF-55098,2026-09-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2201,2150.00
+NSF-55099,2026-09-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2202,2150.00
+NSF-55100,2026-09-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2203,2150.00
+NSF-55101,2026-09-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2204,2150.00
+NSF-55102,2026-09-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2205,2150.00
+NSF-55103,2026-09-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2206,2150.00
+NSF-55104,2026-09-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2207,2150.00
+NSF-55105,2026-09-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2208,2150.00
+NSF-55106,2026-09-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2209,2150.00
+NSF-55107,2026-09-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2210,2150.00
+NSF-55108,2026-09-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2211,2150.00
+NSF-55109,2026-09-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2212,2150.00
+NSF-55110,2026-09-01,Equipment Leases,Great Plains Trailer Pool,Trailer pool - 30 units,6400.00
+NSF-55111,2026-09-01,Dispatch & ELD Software,RouteMax TMS,TMS subscription,2950.00
+NSF-55112,2026-09-01,Dispatch & ELD Software,LogBook ELD,ELD units,980.00
+NSF-55113,2026-09-01,Terminal Rent,Red River Terminal Properties,Terminal + yard lease,14800.00
+NSF-55114,2026-09-02,Fuel,Interstate Fuel Network,Fuel card daily summary 9/2,5553.22
+NSF-55115,2026-09-03,Fuel,Interstate Fuel Network,Fuel card daily summary 9/3,5162.18
+NSF-55116,2026-09-03,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,546.90 @0.7215",1837.59
+NSF-55117,2026-09-03,Tractor & Trailer Maintenance,Midstate Truck Service,Trailer lights,1261.81
+NSF-55118,2026-09-04,Fuel,Interstate Fuel Network,Fuel card daily summary 9/4,5046.01
+NSF-55119,2026-09-04,Tractor & Trailer Maintenance,Midstate Truck Service,Brake job,1026.55
+NSF-55120,2026-09-05,Fuel,Interstate Fuel Network,Fuel card daily summary 9/5,5343.95
+NSF-55121,2026-09-05,Purchased Transportation,Ridgeback Carriers LLC,Weekly settlement - loads per rate cons,9282.29
+NSF-55122,2026-09-05,Purchased Transportation,J&M Haulage,Weekly settlement - loads per rate cons,7881.18
+NSF-55123,2026-09-05,Purchased Transportation,Prairie Star Transport,Weekly settlement - loads per rate cons,11283.33
+NSF-55124,2026-09-05,Purchased Transportation,Kestrel Logistics (broker),Weekly settlement - loads per rate cons,8825.99
+NSF-55125,2026-09-05,Insurance,Plains Mutual WC,Workers comp installment,6900.00
+NSF-55126,2026-09-06,Fuel,Interstate Fuel Network,Fuel card daily summary 9/6,5303.56
+NSF-55127,2026-09-06,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,376.11 @0.7215",1714.36
+NSF-55128,2026-09-06,Driver Recruiting,HaulHire Job Board,Job board campaign,1600.00
+NSF-55129,2026-09-07,Fuel,Interstate Fuel Network,Fuel card daily summary 9/7,5139.80
+NSF-55130,2026-09-07,Tractor & Trailer Maintenance,Midstate Truck Service,PM-A service,544.25
+NSF-55131,2026-09-07,Compliance & Testing,MVR Direct,MVR pulls,117.19
+NSF-55132,2026-09-08,Fuel,Interstate Fuel Network,Fuel card daily summary 9/8,5076.91
+NSF-55133,2026-09-08,Tractor & Trailer Maintenance,Midstate Truck Service,Trailer lights,1037.86
+NSF-55134,2026-09-08,Tractor & Trailer Maintenance,Midstate Truck Service,PM-B service,899.25
+NSF-55135,2026-09-09,Fuel,Interstate Fuel Network,Fuel card daily summary 9/9,5349.59
+NSF-55136,2026-09-09,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,406.86 @0.7215",1736.55
+NSF-55137,2026-09-10,Fuel,Interstate Fuel Network,Fuel card daily summary 9/10,5164.25
+NSF-55138,2026-09-10,Tolls & Permits,Manitoba Infrastructure,Oversize/IRP permits,180.00
+NSF-55139,2026-09-10,Tractor & Trailer Maintenance,Midstate Truck Service,Brake job,1396.71
+NSF-55140,2026-09-10,Tractor & Trailer Maintenance,Midstate Truck Service,Trailer lights,602.47
+NSF-55141,2026-09-11,Fuel,Interstate Fuel Network,Fuel card daily summary 9/11,5109.60
+NSF-55142,2026-09-12,Fuel,Interstate Fuel Network,Fuel card daily summary 9/12,5554.03
+NSF-55143,2026-09-12,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,374.05 @0.7215",1712.88
+NSF-55144,2026-09-12,Purchased Transportation,Ridgeback Carriers LLC,Weekly settlement - loads per rate cons,9174.53
+NSF-55145,2026-09-12,Purchased Transportation,J&M Haulage,Weekly settlement - loads per rate cons,7683.56
+NSF-55146,2026-09-12,Purchased Transportation,Prairie Star Transport,Weekly settlement - loads per rate cons,11362.17
+NSF-55147,2026-09-12,Purchased Transportation,Kestrel Logistics (broker),Weekly settlement - loads per rate cons,8916.25
+NSF-55148,2026-09-13,Fuel,Interstate Fuel Network,Fuel card daily summary 9/13,5552.10
+NSF-55149,2026-09-14,Fuel,Interstate Fuel Network,Fuel card daily summary 9/14,5117.55
+NSF-55150,2026-09-15,Fuel,Interstate Fuel Network,Fuel card daily summary 9/15,5039.89
+NSF-55151,2026-09-15,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,576.67 @0.7215",1859.07
+NSF-55152,2026-09-15,Driver Wages,Plainsview Payroll,Driver settlements 9/15 - mileage + accessorials,91135.56
+NSF-55153,2026-09-15,Office Salaries,Plainsview Payroll,Office/dispatch payroll 9/15,22800.00
+NSF-55154,2026-09-16,Fuel,Interstate Fuel Network,Fuel card daily summary 9/16,5425.84
+NSF-55155,2026-09-16,Tolls & Permits,TollLink,Tolls 1st-15th,4420.00
+NSF-55156,2026-09-16,Compliance & Testing,ClearPath Testing,DOT drug screen,318.76
+NSF-55157,2026-09-17,Fuel,Interstate Fuel Network,Fuel card daily summary 9/17,5285.12
+NSF-55158,2026-09-17,Tractor & Trailer Maintenance,Midstate Truck Service,In-frame overhaul - unit 2207,18500.00
+NSF-55159,2026-09-18,Fuel,Interstate Fuel Network,Fuel card daily summary 9/18,5430.28
+NSF-55160,2026-09-19,Fuel,Interstate Fuel Network,Fuel card daily summary 9/19,5060.63
+NSF-55161,2026-09-19,Purchased Transportation,Ridgeback Carriers LLC,Weekly settlement - loads per rate cons,9205.69
+NSF-55162,2026-09-19,Purchased Transportation,J&M Haulage,Weekly settlement - loads per rate cons,7906.65
+NSF-55163,2026-09-19,Purchased Transportation,Prairie Star Transport,Weekly settlement - loads per rate cons,11474.43
+NSF-55164,2026-09-19,Purchased Transportation,Kestrel Logistics (broker),Weekly settlement - loads per rate cons,9013.94
+NSF-55165,2026-09-19,Compliance & Testing,ClearPath Testing,DOT drug screen,155.45
+NSF-55166,2026-09-20,Fuel,Interstate Fuel Network,Fuel card daily summary 9/20,5523.86
+NSF-55167,2026-09-20,Tractor & Trailer Maintenance,Midstate Truck Service,PM-A service,1047.61
+NSF-55168,2026-09-21,Fuel,Interstate Fuel Network,Fuel card daily summary 9/21,5424.69
+NSF-55169,2026-09-22,Fuel,Interstate Fuel Network,Fuel card daily summary 9/22,5504.66
+NSF-55170,2026-09-22,Tractor & Trailer Maintenance,Midstate Truck Service,Trailer lights,424.57
+NSF-55171,2026-09-22,Cargo Claims,Lindqvist Appliance,Claim C-2284 - forklift damage,600.00
+NSF-55172,2026-09-23,Fuel,Interstate Fuel Network,Fuel card daily summary 9/23,5058.76
+NSF-55173,2026-09-24,Fuel,Interstate Fuel Network,Fuel card daily summary 9/24,5316.41
+NSF-55174,2026-09-25,Fuel,Interstate Fuel Network,Fuel card daily summary 9/25,5479.20
+NSF-55175,2026-09-25,Tires,Northland Tire,Road service + repairs,2800.00
+NSF-55176,2026-09-26,Fuel,Interstate Fuel Network,Fuel card daily summary 9/26,5060.45
+NSF-55177,2026-09-26,Purchased Transportation,Ridgeback Carriers LLC,Weekly settlement - loads per rate cons,9169.89
+NSF-55178,2026-09-26,Purchased Transportation,J&M Haulage,Weekly settlement - loads per rate cons,7824.66
+NSF-55179,2026-09-26,Purchased Transportation,Prairie Star Transport,Weekly settlement - loads per rate cons,11483.10
+NSF-55180,2026-09-26,Purchased Transportation,Kestrel Logistics (broker),Weekly settlement - loads per rate cons,9023.68
+NSF-55181,2026-09-27,Fuel,Interstate Fuel Network,Fuel card daily summary 9/27,5391.78
+NSF-55182,2026-09-27,Tractor & Trailer Maintenance,Midstate Truck Service,Air leak repair,1415.15
+NSF-55183,2026-09-28,Fuel,Interstate Fuel Network,Fuel card daily summary 9/28,5320.67
+NSF-55184,2026-09-28,Tolls & Permits,TollLink,Tolls 16th-EOM,4460.00
+NSF-55185,2026-09-29,Fuel,Interstate Fuel Network,Fuel card daily summary 9/29,5333.19
+NSF-55186,2026-09-30,Fuel,Interstate Fuel Network,Fuel card daily summary 9/30,5325.42
+NSF-55187,2026-09-30,Driver Wages,Plainsview Payroll,Driver settlements 9/30 - mileage + accessorials,91322.25
+NSF-55188,2026-09-30,Insurance,Prepaid JE,Prepaid amort - auto liab/cargo (policy 10/1/25),31200.00
+NSF-55189,2026-09-30,Office Salaries,Plainsview Payroll,Office/dispatch payroll 9/30,22800.00
+NSF-55190,2026-10-01,Fuel,Interstate Fuel Network,Fuel card daily summary 10/1,5508.96
+NSF-55191,2026-10-01,Tractor & Trailer Maintenance,Midstate Truck Service,Air leak repair,564.29
+NSF-55192,2026-10-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2201,2150.00
+NSF-55193,2026-10-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2202,2150.00
+NSF-55194,2026-10-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2203,2150.00
+NSF-55195,2026-10-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2204,2150.00
+NSF-55196,2026-10-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2205,2150.00
+NSF-55197,2026-10-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2206,2150.00
+NSF-55198,2026-10-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2207,2150.00
+NSF-55199,2026-10-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2208,2150.00
+NSF-55200,2026-10-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2209,2150.00
+NSF-55201,2026-10-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2210,2150.00
+NSF-55202,2026-10-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2211,2150.00
+NSF-55203,2026-10-01,Equipment Leases,Ironhorse Leasing,Tractor lease - unit 2212,2150.00
+NSF-55204,2026-10-01,Equipment Leases,Great Plains Trailer Pool,Trailer pool - 30 units,6400.00
+NSF-55205,2026-10-01,Dispatch & ELD Software,RouteMax TMS,TMS subscription,2950.00
+NSF-55206,2026-10-01,Dispatch & ELD Software,LogBook ELD,ELD units,1050.00
+NSF-55207,2026-10-01,Terminal Rent,Red River Terminal Properties,Terminal + yard lease,14800.00
+NSF-55208,2026-10-01,Compliance & Testing,MVR Direct,MVR pulls,174.15
+NSF-55209,2026-10-02,Fuel,Interstate Fuel Network,Fuel card daily summary 10/2,5714.29
+NSF-55210,2026-10-02,Tractor & Trailer Maintenance,Midstate Truck Service,PM-B service,434.49
+NSF-55211,2026-10-02,Compliance & Testing,ClearPath Testing,DOT drug screen,360.44
+NSF-55212,2026-10-02,Compliance & Testing,ClearPath Testing,Random pool fees,256.09
+NSF-55213,2026-10-03,Fuel,Interstate Fuel Network,Fuel card daily summary 10/3,5527.05
+NSF-55214,2026-10-03,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,276.48 @0.7340",1670.94
+NSF-55215,2026-10-03,Tractor & Trailer Maintenance,Midstate Truck Service,PM-A service,637.86
+NSF-55216,2026-10-04,Fuel,Interstate Fuel Network,Fuel card daily summary 10/4,5624.94
+NSF-55217,2026-10-05,Fuel,Interstate Fuel Network,Fuel card daily summary 10/5,5715.90
+NSF-55218,2026-10-05,Purchased Transportation,Ridgeback Carriers LLC,Weekly settlement - loads per rate cons,11019.85
+NSF-55219,2026-10-05,Purchased Transportation,J&M Haulage,Weekly settlement - loads per rate cons,9355.45
+NSF-55220,2026-10-05,Purchased Transportation,Prairie Star Transport,Weekly settlement - loads per rate cons,13421.68
+NSF-55221,2026-10-05,Purchased Transportation,Kestrel Logistics (broker),Weekly settlement - loads per rate cons,10509.93
+NSF-55222,2026-10-05,Tractor & Trailer Maintenance,Midstate Truck Service,Trailer lights,543.30
+NSF-55223,2026-10-05,Insurance,Plains Mutual WC,Workers comp installment,6900.00
+NSF-55224,2026-10-06,Fuel,Interstate Fuel Network,Fuel card daily summary 10/6,5617.03
+NSF-55225,2026-10-06,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,388.70 @0.7340",1753.31
+NSF-55226,2026-10-06,Driver Recruiting,HaulHire Job Board,Job board campaign,4500.00
+NSF-55227,2026-10-07,Fuel,Interstate Fuel Network,Fuel card daily summary 10/7,5438.71
+NSF-55228,2026-10-08,Fuel,Interstate Fuel Network,Fuel card daily summary 10/8,5775.23
+NSF-55229,2026-10-09,Fuel,Interstate Fuel Network,Fuel card daily summary 10/9,5828.74
+NSF-55230,2026-10-09,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,512.53 @0.7340",1844.20
+NSF-55231,2026-10-09,Cargo Claims,Harlow Foods Inc,"Claim C-2291 - water-damaged pallets, load 88412",12400.00
+NSF-55232,2026-10-09,Compliance & Testing,MVR Direct,MVR pulls,317.87
+NSF-55233,2026-10-10,Fuel,Interstate Fuel Network,Fuel card daily summary 10/10,5416.16
+NSF-55234,2026-10-10,Tolls & Permits,Manitoba Infrastructure,Oversize/IRP permits,240.00
+NSF-55235,2026-10-11,Fuel,Interstate Fuel Network,Fuel card daily summary 10/11,5386.13
+NSF-55236,2026-10-11,Tractor & Trailer Maintenance,Midstate Truck Service,PM-A service,1210.82
+NSF-55237,2026-10-12,Fuel,Interstate Fuel Network,Fuel card daily summary 10/12,5446.17
+NSF-55238,2026-10-12,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,534.20 @0.7340",1860.10
+NSF-55239,2026-10-12,Purchased Transportation,Ridgeback Carriers LLC,Weekly settlement - loads per rate cons,10912.55
+NSF-55240,2026-10-12,Purchased Transportation,J&M Haulage,Weekly settlement - loads per rate cons,9273.77
+NSF-55241,2026-10-12,Purchased Transportation,Prairie Star Transport,Weekly settlement - loads per rate cons,13632.24
+NSF-55242,2026-10-12,Purchased Transportation,Kestrel Logistics (broker),Weekly settlement - loads per rate cons,10528.07
+NSF-55243,2026-10-12,Tractor & Trailer Maintenance,Midstate Truck Service,Brake job,647.71
+NSF-55244,2026-10-13,Fuel,Interstate Fuel Network,Fuel card daily summary 10/13,5561.93
+NSF-55245,2026-10-13,Tires,Northland Tire,Steer tire replacement - 14 tractors (winter program),9940.00
+NSF-55246,2026-10-14,Fuel,Interstate Fuel Network,Fuel card daily summary 10/14,5562.77
+NSF-55247,2026-10-15,Fuel,Interstate Fuel Network,Fuel card daily summary 10/15,5834.58
+NSF-55248,2026-10-15,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,350.59 @0.7340",1725.33
+NSF-55249,2026-10-15,Driver Wages,Plainsview Payroll,Driver settlements 10/15 - mileage + accessorials,96750.16
+NSF-55250,2026-10-15,Tractor & Trailer Maintenance,Midstate Truck Service,PM-A service,1219.67
+NSF-55251,2026-10-15,Office Salaries,Plainsview Payroll,Office/dispatch payroll 10/15,22800.00
+NSF-55252,2026-10-16,Fuel,Interstate Fuel Network,Fuel card daily summary 10/16,5669.50
+NSF-55253,2026-10-16,Tolls & Permits,TollLink,Tolls 1st-15th,4510.00
+NSF-55254,2026-10-16,Tractor & Trailer Maintenance,Midstate Truck Service,Brake job,1345.46
+NSF-55255,2026-10-17,Fuel,Interstate Fuel Network,Fuel card daily summary 10/17,5602.69
+NSF-55256,2026-10-18,Fuel,Interstate Fuel Network,Fuel card daily summary 10/18,5398.47
+NSF-55257,2026-10-18,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,319.48 @0.7340",1702.50
+NSF-55258,2026-10-18,Equipment Leases,TrackPoint Telematics,Trailer tracker install (40) + Oct svc,3300.00
+NSF-55259,2026-10-19,Fuel,Interstate Fuel Network,Fuel card daily summary 10/19,5550.96
+NSF-55260,2026-10-19,Purchased Transportation,Ridgeback Carriers LLC,Weekly settlement - loads per rate cons,11046.55
+NSF-55261,2026-10-19,Purchased Transportation,J&M Haulage,Weekly settlement - loads per rate cons,9376.68
+NSF-55262,2026-10-19,Purchased Transportation,Prairie Star Transport,Weekly settlement - loads per rate cons,13657.93
+NSF-55263,2026-10-19,Purchased Transportation,Kestrel Logistics (broker),Weekly settlement - loads per rate cons,10681.75
+NSF-55264,2026-10-20,Fuel,Interstate Fuel Network,Fuel card daily summary 10/20,5770.88
+NSF-55265,2026-10-20,Tractor & Trailer Maintenance,Midstate Truck Service,PM-A service,434.22
+NSF-55266,2026-10-21,Fuel,Interstate Fuel Network,Fuel card daily summary 10/21,5588.52
+NSF-55267,2026-10-21,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,552.61 @0.7340",1873.62
+NSF-55268,2026-10-21,Tractor & Trailer Maintenance,Prairie Diesel Emissions,DPF clean x 22 units,6600.00
+NSF-55269,2026-10-22,Fuel,Interstate Fuel Network,Fuel card daily summary 10/22,5293.35
+NSF-55270,2026-10-23,Fuel,Interstate Fuel Network,Fuel card daily summary 10/23,5445.08
+NSF-55271,2026-10-24,Fuel,Interstate Fuel Network,Fuel card daily summary 10/24,5304.28
+NSF-55272,2026-10-24,Fuel,Prairie Fuels Ltd (MB),"Brandon MB - CAD 2,275.04 @0.7340",1669.88
+NSF-55273,2026-10-24,Tractor & Trailer Maintenance,Midstate Truck Service,Trailer lights,1338.09
+NSF-55274,2026-10-24,Tractor & Trailer Maintenance,Midstate Truck Service,PM-B service,1360.31
+NSF-55275,2026-10-24,Driver Recruiting,Plainsview CDL Academy,CDL school tuition reimbursement - 2 hires,4700.00
+NSF-55276,2026-10-25,Fuel,Interstate Fuel Network,Fuel card daily summary 10/25,5580.90
+NSF-55277,2026-10-25,Tires,Northland Tire,Road service + repairs,2900.00
+NSF-55278,2026-10-26,Fuel,Interstate Fuel Network,Fuel card daily summary 10/26,5793.94
+NSF-55279,2026-10-26,Purchased Transportation,Ridgeback Carriers LLC,Weekly settlement - loads per rate cons,10901.00
+NSF-55280,2026-10-26,Purchased Transportation,J&M Haulage,Weekly settlement - loads per rate cons,9235.86
+NSF-55281,2026-10-26,Purchased Transportation,Prairie Star Transport,Weekly settlement - loads per rate cons,13392.49
+NSF-55282,2026-10-26,Purchased Transportation,Kestrel Logistics (broker),Weekly settlement - loads per rate cons,10454.20
+NSF-55283,2026-10-27,Fuel,Interstate Fuel Network,Fuel card daily summary 10/27,5753.21
+NSF-55284,2026-10-27,Cargo Claims,Bluewater Cargo Underwriters,"Recovery - claim C-2291 (net of $3,000 deductible)",-9400.00
+NSF-55285,2026-10-28,Fuel,Interstate Fuel Network,Fuel card daily summary 10/28,5299.85
+NSF-55286,2026-10-28,Tolls & Permits,TollLink,Tolls 16th-EOM,4450.00
+NSF-55287,2026-10-28,Tractor & Trailer Maintenance,Midstate Truck Service,Brake job,826.20
+NSF-55288,2026-10-28,Compliance & Testing,MVR Direct,MVR pulls,193.16
+NSF-55289,2026-10-29,Fuel,Interstate Fuel Network,Fuel card daily summary 10/29,5762.90
+NSF-55290,2026-10-30,Fuel,Interstate Fuel Network,Fuel card daily summary 10/30,5432.12
+NSF-55291,2026-10-31,Fuel,Interstate Fuel Network,Fuel card daily summary 10/31,5793.53
+NSF-55292,2026-10-31,Driver Wages,Plainsview Payroll,Driver settlements 10/31 - mileage + accessorials,96797.37
+NSF-55293,2026-10-31,Insurance,Prepaid JE,Prepaid amort - auto liab/cargo (renewal 10/1/26),36800.00
+NSF-55294,2026-10-31,Office Salaries,Plainsview Payroll,Office/dispatch payroll 10/31,22800.00

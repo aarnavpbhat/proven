@@ -1,0 +1,718 @@
+{
+ "slug": "custom-cabinet-maker",
+ "industry": "custom cabinet maker",
+ "entities": [
+  "Millbrook Custom Cabinetry",
+  "Harlow & Finch Woodworks",
+  "Copperleaf Cabinet Co.",
+  "Northgate Millwork Studio",
+  "Alder Ridge Casework"
+ ],
+ "accounts": [
+  {
+   "name": "Hardwood & Sheet Goods",
+   "aliases": [
+    "lumber",
+    "hardwood spend",
+    "plywood and panels",
+    "sheet goods",
+    "raw stock"
+   ],
+   "narrative": [
+    "Lumber",
+    "Hardwood spend",
+    "Sheet goods"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-State Hardwoods",
+     "base": 14500,
+     "memo": "Kiln-dried hardwood stock order"
+    },
+    {
+     "vendor": "Pacific Panel Supply",
+     "base": 9800,
+     "memo": "Birch plywood and MDF panels"
+    },
+    {
+     "vendor": "Veneer Source Inc.",
+     "base": 3200,
+     "memo": "Edge banding and veneer rolls"
+    }
+   ],
+   "events": [
+    {
+     "key": "walnut",
+     "vendor": "Tri-State Hardwoods",
+     "memos": [
+      "Hartwell Residence — figured walnut slabs",
+      "Hartwell Residence — book-matched walnut flitches"
+     ],
+     "cross_memo": "Hartwell Residence — walnut crating and insured freight",
+     "plain": [
+      "the Hartwell walnut slabs",
+      "the figured walnut for Hartwell",
+      "the Hartwell book-matched walnut"
+     ],
+     "oblique": [
+      "the premium dark timber the client insisted on",
+      "a showpiece island top for the lake house",
+      "imported lumber for one demanding homeowner",
+      "the splurge on rare boards",
+      "special-order stock",
+      "the kitchen with the sculptural feature wall",
+      "a one-client material upgrade",
+      "the exotic species request",
+      "the big-ticket residential commission",
+      "wood we had to source overseas",
+      "the designer-specified grain pattern",
+      "that one lavish kitchen",
+      "boards bought ahead of the install",
+      "the upscale custom job",
+      "the rich brown stock for the library built-ins",
+      "the client-driven material change"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "stavewood",
+     "vendor": "Cascadia Reclaimed Timber",
+     "memos": [
+      "Dunmore Brewpub — reclaimed barnwood planks",
+      "Dunmore Brewpub — reclaimed barnwood de-nailing and milling"
+     ],
+     "cross_memo": "Dunmore Brewpub — reclaimed barnwood trucking",
+     "plain": [
+      "the Dunmore reclaimed barnwood",
+      "the reclaimed barnwood planks",
+      "the Dunmore barnwood milling"
+     ],
+     "oblique": [
+      "salvaged old-growth boards for the taproom",
+      "weathered material pulled from a demolished farm structure",
+      "the rustic bar front",
+      "recycled timber for a hospitality client",
+      "aged boards with history",
+      "the pub bar and shelving package",
+      "stock with nail holes that needed cleaning up",
+      "the character-grade lumber order",
+      "a restaurant fit-out using secondhand wood",
+      "the distressed look the owner wanted",
+      "antique beams turned into counters",
+      "the salvage purchase",
+      "the commercial tavern project",
+      "reused wood from a century-old building",
+      "the patina-driven material buy",
+      "the craft-brewery install"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Finishing & Coatings",
+   "aliases": [
+    "finishing",
+    "finish materials",
+    "coatings",
+    "stains and lacquers",
+    "spray booth supplies"
+   ],
+   "narrative": [
+    "Finishing",
+    "Finish materials",
+    "Coatings"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sherwin Lacquer Supply",
+     "base": 6400,
+     "memo": "Catalyzed lacquer and sealer"
+    },
+    {
+     "vendor": "Colorwerks Stain Co.",
+     "base": 2800,
+     "memo": "Wiping stains and glazes"
+    },
+    {
+     "vendor": "CleanAir Filter Service",
+     "base": 1500,
+     "memo": "Spray booth filter replacement"
+    }
+   ],
+   "events": [
+    {
+     "key": "hvlp",
+     "vendor": "Sherwin Lacquer Supply",
+     "memos": [
+      "Fairmont Hotel — waterborne conversion varnish trial",
+      "Fairmont Hotel — waterborne conversion varnish rework"
+     ],
+     "cross_memo": "Fairmont Hotel — waterborne varnish sample doors",
+     "plain": [
+      "the Fairmont waterborne varnish",
+      "the waterborne conversion varnish rework",
+      "the Fairmont varnish trial"
+     ],
+     "oblique": [
+      "redoing a hotel corridor's surfaces after the first pass failed",
+      "the low-odor alternative the property required",
+      "a coat that would not cure properly",
+      "stripping and respraying the lobby panels",
+      "the green-certified product switch",
+      "a client rejecting the sheen",
+      "the hospitality job that went back through the booth",
+      "experimenting with a new topcoat system",
+      "the second go at the lobby millwork",
+      "chemistry changes mandated by the owner",
+      "fixing blushing on the reception desk",
+      "a do-over on the guest-room casework",
+      "the trial batches that burned through product",
+      "an environmental spec we had to meet",
+      "the revised protective layer",
+      "the redo on the high-traffic surfaces"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "boothfire",
+     "vendor": "Ironclad Fire Systems",
+     "memos": [
+      "Shop Facility — suppression nozzle replacement and recharge",
+      "Shop Facility — suppression system inspection overhaul"
+     ],
+     "cross_memo": "Shop Facility — suppression system fire marshal reinspection fee",
+     "plain": [
+      "the suppression system overhaul",
+      "the suppression nozzle replacement",
+      "the suppression recharge and inspection"
+     ],
+     "oblique": [
+      "the safety work the inspector flagged",
+      "a compliance scramble in the paint room",
+      "upgrades after the near miss",
+      "insurer-mandated equipment fixes",
+      "making the sprayroom legal again",
+      "an expensive code citation follow-up",
+      "protection gear that expired",
+      "the shutdown until sign-off",
+      "the discharge that emptied the tanks",
+      "hazard remediation in the coating area",
+      "keeping our policy from lapsing",
+      "what the fire official required",
+      "equipment tests we failed",
+      "the emergency retrofit",
+      "prevention hardware for volatile fumes",
+      "the overdue life-safety work"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Hardware & Fittings",
+   "aliases": [
+    "hardware",
+    "hinges and slides",
+    "fittings",
+    "drawer hardware",
+    "cabinet hardware spend"
+   ],
+   "narrative": [
+    "Hardware",
+    "Hinges and slides",
+    "Fittings"
+   ],
+   "recurring": [
+    {
+     "vendor": "Blumline Distribution",
+     "base": 8700,
+     "memo": "Soft-close hinges and drawer slides"
+    },
+    {
+     "vendor": "Knobwright Supply",
+     "base": 3900,
+     "memo": "Pulls and knobs assortment"
+    },
+    {
+     "vendor": "Lift-Mech Systems",
+     "base": 2100,
+     "memo": "Lift-up door mechanisms"
+    }
+   ],
+   "events": [
+    {
+     "key": "brassplate",
+     "vendor": "Knobwright Supply",
+     "memos": [
+      "Oakmont Estate — unlacquered brass pulls custom run",
+      "Oakmont Estate — unlacquered brass backplates"
+     ],
+     "cross_memo": "Oakmont Estate — unlacquered brass sample finishes",
+     "plain": [
+      "the Oakmont unlacquered brass",
+      "the unlacquered brass custom run",
+      "the Oakmont brass backplates"
+     ],
+     "oblique": [
+      "a bespoke metal order for the estate",
+      "hand-cast trim pieces",
+      "jewelry for the cabinets",
+      "the designer's signature accents",
+      "a minimum-quantity factory run",
+      "gold-toned details across forty doors",
+      "a special foundry commission",
+      "the pieces that develop a patina",
+      "the high-end handle package",
+      "an upscale add-on to the mansion job",
+      "custom-molded accessories",
+      "ornamental items made to order",
+      "the big metalwork purchase",
+      "the shiny upgrade from standard stock",
+      "the premium finish choice",
+      "a limited production batch"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "recall",
+     "vendor": "Quietglide Components",
+     "memos": [
+      "Warranty Program — replacement drawer slide recall kits",
+      "Warranty Program — recall kit field retrofit parts"
+     ],
+     "cross_memo": "Warranty Program — recall kit installer callbacks",
+     "plain": [
+      "the drawer slide recall kits",
+      "the warranty recall retrofit",
+      "the recall kit parts"
+     ],
+     "oblique": [
+      "replacing faulty runners across past installs",
+      "a manufacturer defect we had to remedy",
+      "fixing sticking drawers at old jobs",
+      "corrective parts for finished kitchens",
+      "a batch that failed in service",
+      "making customers whole after complaints",
+      "the supplier's bad lot",
+      "going back to homes we already finished",
+      "components pulled after a safety notice",
+      "the do-over for earlier completions",
+      "remedies for gliding mechanisms that jammed",
+      "an upstream quality problem",
+      "the rework on shipped product",
+      "unplanned replacements for installed work",
+      "the defect cleanup",
+      "parts we shipped out for free"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Countertop & Stone Subcontract",
+   "aliases": [
+    "stone subs",
+    "countertops",
+    "stone fabrication",
+    "slab subcontract",
+    "countertop subcontractors"
+   ],
+   "narrative": [
+    "Stone subs",
+    "Countertops",
+    "Stone fabrication"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Edge Fabricators",
+     "base": 15500,
+     "memo": "Quartz and granite fabrication"
+    },
+    {
+     "vendor": "Summit Solid Surface",
+     "base": 7200,
+     "memo": "Solid surface countertop fabrication"
+    }
+   ],
+   "events": [
+    {
+     "key": "quartzite",
+     "vendor": "Granite Edge Fabricators",
+     "memos": [
+      "Lindqvist Penthouse — Taj Mahal quartzite waterfall island",
+      "Lindqvist Penthouse — quartzite waterfall mitered ends"
+     ],
+     "cross_memo": "Lindqvist Penthouse — quartzite waterfall crane lift",
+     "plain": [
+      "the Lindqvist quartzite waterfall",
+      "the quartzite waterfall island",
+      "the Lindqvist mitered quartzite"
+     ],
+     "oblique": [
+      "a showpiece slab for the high-rise client",
+      "the oversized counter that needed a hoist",
+      "stone draped down both sides of the base",
+      "a piece that had to go up through the window",
+      "the stunning centerpiece",
+      "unusually heavy natural material",
+      "that luxury kitchen island",
+      "a tricky cut with zero margin for error",
+      "the top-floor unit's marquee feature",
+      "the rare-stone request",
+      "fabrication of an extravagant monolith",
+      "the glamorous slab selection",
+      "an item that took a crane to place",
+      "the pricey stone the designer picked",
+      "a seamless wraparound look",
+      "the single priciest countertop of the year"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "templaterecut",
+     "vendor": "Precision Template Laser",
+     "memos": [
+      "Brightwater Condos — laser digital templating recut",
+      "Brightwater Condos — laser templating site remeasure"
+     ],
+     "cross_memo": "Brightwater Condos — laser templating rush courier",
+     "plain": [
+      "the Brightwater laser templating",
+      "the laser templating recut",
+      "the Brightwater site remeasure"
+     ],
+     "oblique": [
+      "redoing measurements after walls were moved",
+      "a revision when the builder shifted plans",
+      "fixing tops that did not fit",
+      "remaking pieces after a framing change",
+      "a costly mismatch between drawings and field conditions",
+      "the second trip to the units",
+      "dimension errors that had to be corrected",
+      "slabs that came out too short",
+      "an overhaul of cut files across a building",
+      "the tight timeline correction",
+      "scrapped fabrication from bad numbers",
+      "the fix across thirty-two units",
+      "rework when the contractor altered openings",
+      "the do-over on dimensions",
+      "the remeasure that cascaded into new cuts",
+      "the multifamily coordination failure"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Installation Crew Labor",
+   "aliases": [
+    "install labor",
+    "installers",
+    "field crew",
+    "install crew costs",
+    "installation subs"
+   ],
+   "narrative": [
+    "Install labor",
+    "Installers",
+    "Field crew"
+   ],
+   "recurring": [
+    {
+     "vendor": "Plumb & Level Installers",
+     "base": 22000,
+     "memo": "Cabinet installation crew labor"
+    },
+    {
+     "vendor": "Finish Carpentry Partners",
+     "base": 9500,
+     "memo": "Trim and scribe carpentry"
+    }
+   ],
+   "events": [
+    {
+     "key": "highrise",
+     "vendor": "Plumb & Level Installers",
+     "memos": [
+      "Harborview Tower — overnight union installation shifts",
+      "Harborview Tower — overnight installation premium pay"
+     ],
+     "cross_memo": "Harborview Tower — overnight installation freight elevator booking",
+     "plain": [
+      "the Harborview overnight installation",
+      "the overnight union installation shifts",
+      "the Harborview installation premium"
+     ],
+     "oblique": [
+      "working after hours in a downtown building",
+      "the extra pay for graveyard work",
+      "crews stationed in the skyscraper for weeks",
+      "building-management rules that limited access",
+      "a project with restricted hours",
+      "time-and-a-half for late nights",
+      "the tenant-occupied floors that could not be disrupted",
+      "labor rates inflated by the site schedule",
+      "the city center job with tight windows",
+      "working while the offices were empty",
+      "the pricey staffing for off-peak hours",
+      "the unusual shift pattern",
+      "sleep-deprived crews on the thirtieth floor",
+      "an accelerated schedule demanded by the owner",
+      "the commercial tower fit-out",
+      "the work we could only do after dark"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "flood",
+     "vendor": "Reliant Restoration Carpentry",
+     "memos": [
+      "Maple Court — water damage tear-out reinstall",
+      "Maple Court — water damage reinstall carpentry"
+     ],
+     "cross_memo": "Maple Court — water damage dehumidifier rental",
+     "plain": [
+      "the Maple Court water damage reinstall",
+      "the water damage tear-out",
+      "the Maple Court reinstall carpentry"
+     ],
+     "oblique": [
+      "taking out finished work after a burst pipe",
+      "redoing a kitchen that got soaked",
+      "a customer's plumbing mishap",
+      "ripping out swollen boxes",
+      "putting back what the leak ruined",
+      "an insurance-adjacent redo",
+      "cleanup after somebody else's accident",
+      "the home where everything got wet",
+      "a second installation of the same job",
+      "warped bases that came off the wall",
+      "unplanned return trip to a completed site",
+      "moisture-related teardown",
+      "our crew coming back to repeat the job",
+      "the claim that landed on our books",
+      "the swollen panels we replaced",
+      "the mess left by the failed supply line"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Shop Equipment & Tooling",
+   "aliases": [
+    "tooling",
+    "shop equipment",
+    "machine maintenance",
+    "cnc and saw upkeep",
+    "blades and bits"
+   ],
+   "narrative": [
+    "Tooling",
+    "Shop equipment",
+    "Machine maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Carbide Edge Tooling",
+     "base": 5800,
+     "memo": "Router bits and saw blades"
+    },
+    {
+     "vendor": "Weinig Service Group",
+     "base": 4200,
+     "memo": "Panel saw and edgebander service contract"
+    },
+    {
+     "vendor": "Dust Control Solutions",
+     "base": 1900,
+     "memo": "Dust collector bag replacement"
+    }
+   ],
+   "events": [
+    {
+     "key": "cncspindle",
+     "vendor": "Weinig Service Group",
+     "memos": [
+      "Shop Floor — nesting router spindle rebuild",
+      "Shop Floor — nesting router spindle bearing kit"
+     ],
+     "cross_memo": "Shop Floor — nesting router spindle idle-day temp labor",
+     "plain": [
+      "the nesting router spindle rebuild",
+      "the nesting router spindle bearing kit",
+      "the router spindle repair"
+     ],
+     "oblique": [
+      "the machine that carves sheet parts going down",
+      "a breakdown of our main cutting center",
+      "the vibration problem that scrapped panels",
+      "parts replaced inside the heart of the CNC",
+      "the unit that burned out mid-run",
+      "a repair that halted production",
+      "our busiest piece of automation failing",
+      "a worn rotating assembly",
+      "the emergency fix on the big machine",
+      "manufacturer-technician callout",
+      "what happened to the cut-to-size line",
+      "heavy-duty replacement internals",
+      "the equipment that ground to a stop",
+      "a spare we did not have",
+      "the trouble with the automated cutter",
+      "getting the machine humming again"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "edgebander",
+     "vendor": "Holzbau Machinery Sales",
+     "memos": [
+      "Shop Floor — used edgebander purchase",
+      "Shop Floor — used edgebander installation and wiring"
+     ],
+     "cross_memo": "Shop Floor — used edgebander rigging and delivery",
+     "plain": [
+      "the used edgebander purchase",
+      "the used edgebander installation",
+      "the edgebander wiring"
+     ],
+     "oblique": [
+      "a secondhand banding line to add capacity",
+      "equipment bought at auction",
+      "the machine we picked up to speed up tape application",
+      "expanding the shop floor's throughput",
+      "an asset acquisition to cut outsourcing",
+      "the preowned unit from a closing shop",
+      "getting more finished panel edges done in-house",
+      "a capital-style outlay expensed this period",
+      "new-to-us gear that needed electrical work",
+      "the capacity addition",
+      "a machine moved in with a forklift",
+      "the faster-lead-time investment",
+      "the purchase approved by the owner",
+      "bringing a function inside",
+      "the dock-to-floor install",
+      "the upgrade from hand-applied methods"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Showroom & Design Services",
+   "aliases": [
+    "showroom",
+    "design services",
+    "sample displays",
+    "design software and drafting",
+    "marketing and samples"
+   ],
+   "narrative": [
+    "Showroom",
+    "Design services",
+    "Sample displays"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kitchen Vision 3D",
+     "base": 2400,
+     "memo": "Cabinet design software licenses"
+    },
+    {
+     "vendor": "Sample Door Co.",
+     "base": 3100,
+     "memo": "Showroom sample doors and finish chips"
+    },
+    {
+     "vendor": "Brightside Photography",
+     "base": 1200,
+     "memo": "Project photography retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "tradeshow",
+     "vendor": "Sample Door Co.",
+     "memos": [
+      "Regional Home Expo — display booth sample vignette",
+      "Regional Home Expo — display booth sample build"
+     ],
+     "cross_memo": "Regional Home Expo — display booth exhibitor fee",
+     "plain": [
+      "the Regional Home Expo booth",
+      "the expo display booth vignette",
+      "the Regional Home Expo sample build"
+     ],
+     "oblique": [
+      "our spring presence at the consumer event",
+      "the exhibit hall appearance",
+      "a lead-generation push",
+      "fabricating a mini kitchen to show off",
+      "the weekend we put the brand in front of homeowners",
+      "a promotional splash",
+      "cabinet doors dressed up for a crowd",
+      "the annual marketing outing",
+      "the walk-through display for prospects",
+      "a full-scale mock-up for visitors",
+      "the event that filled the pipeline",
+      "the expensive pop-up exhibit",
+      "our stand at the convention center",
+      "the scale model we hauled to the fairgrounds",
+      "buying visibility with potential clients",
+      "the sales campaign centerpiece"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "showroomreno",
+     "vendor": "Lumen Interior Builders",
+     "memos": [
+      "Showroom Remodel — Lumen lighting and display wall refresh",
+      "Showroom Remodel — Lumen gallery wall demolition and rebuild"
+     ],
+     "cross_memo": "Showroom Remodel — Lumen permit and signage",
+     "plain": [
+      "the Lumen showroom remodel",
+      "the Lumen display wall refresh",
+      "the showroom gallery wall rebuild"
+     ],
+     "oblique": [
+      "freshening up the space where clients visit",
+      "a facelift for the customer-facing floor",
+      "upgrades to how we present our work",
+      "tearing out dated vignettes",
+      "new spotlights and a feature backdrop",
+      "the retail area redo",
+      "an overdue cosmetic update",
+      "remodeling the front of the building",
+      "the bright new look for walk-ins",
+      "contractor work on our storefront",
+      "a rebrand of the physical space",
+      "the lobby makeover",
+      "construction to modernize the sales area",
+      "reworking the layout of our samples",
+      "the investment in first impressions",
+      "the lights and walls project"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

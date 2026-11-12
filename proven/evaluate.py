@@ -29,11 +29,15 @@ correct flag.
 from __future__ import annotations
 
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor
+from collections.abc import Callable
 from dataclasses import dataclass
 
 from proven import __version__
-from proven.report import run
-from proven.synth import FAMILIES, FAMILY_BY_NAME, Label, generate_split
+from proven.claims import ClaimProposal
+from proven.ledger import Ledger
+from proven.report import Extractor, run
+from proven.synth import FAMILIES, FAMILY_BY_NAME, Label, Scenario, generate_split
 from proven.verify import Policy
 
 UNSAFE_PASS = -1.0
@@ -101,20 +105,64 @@ def score_claim(label: Label, result: dict | None) -> dict:
             "reward": reward(verdict, cited, label)}
 
 
+class OracleExtractor:
+    """Returns the generator's gold proposals: the ceiling a perfect model extractor reaches.
+
+    Its search terms are admitted with origin "model", exactly as a real model's would be,
+    so the guard treats it like any other model. It never sees the ledger."""
+
+    name = "oracle"
+    version = "0.1"
+
+    def __init__(self, scenario: Scenario):
+        self.scenario = scenario
+
+    def propose(self, text: str, ledger: Ledger) -> list[ClaimProposal]:
+        return [proposal_from_gold(label.gold) for label in self.scenario.labels]
+
+
+def proposal_from_gold(gold: dict) -> ClaimProposal:
+    """A gold object (the JSON schema in llm.py) as the ClaimProposal llm.py would build."""
+    return ClaimProposal(
+        quote=gold["quote"], account=gold["account"] or None,
+        change_text=gold["change_text"] or None, percent_text=gold["percent_text"] or None,
+        prior_text=gold["prior_text"] or None, current_text=gold["current_text"] or None,
+        driver_text=gold["reason_text"] or None,
+        driver_terms=tuple(gold["search_terms"]), direction=gold["direction"] or None,
+        extractor="oracle")
+
+
 def evaluate(split: str = "test", n: int = 220, policy: Policy | None = None,
-             phrasing: str = "seen") -> dict:
+             phrasing: str = "seen", extractor=None, workers: int = 1,
+             extractor_for: Callable[[Scenario], Extractor] | None = None) -> dict:
     """Run the benchmark over `n` synthetic closes of one split and phrasing.
 
     Returns per-family rows plus controls, defects and coverage, each reported
     separately; there is deliberately no single overall score.
-    """
+
+    `extractor` defaults to the rules; `extractor_for` builds one per close (the oracle).
+    With `workers` > 1 the extractor is called for every close up front, in parallel; that
+    only helps one that caches its proposals."""
     scenarios = generate_split(split, n, phrasing)
+    per_scenario = extractor
+    if extractor is not None and workers > 1:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            fetched = list(pool.map(lambda s: extractor.propose(s.explanation, s.ledger), scenarios))
+        # Reuse what was fetched: calling the extractor again would re-send every close
+        # whose answer the cache does not keep (an empty one).
+        per_scenario = _Prefetched(extractor, {id(s): p for s, p in zip(scenarios, fetched)})
     tallies: dict[str, _Tally] = defaultdict(_Tally)
     failures: list[dict] = []
+    rejected: dict[str, int] = defaultdict(int)
     claims = decided = 0
 
     for scenario in scenarios:
-        report = run(scenario.explanation, scenario.ledger, policy=policy)
+        if isinstance(per_scenario, _Prefetched):
+            per_scenario.current = id(scenario)
+        report = run(scenario.explanation, scenario.ledger, policy=policy,
+                     extractor=extractor_for(scenario) if extractor_for else per_scenario)
+        for rejection in report["rejected"]:
+            rejected[rejection["reason"]] += 1
         by_quote = {c["claim"]["quote"]: c for c in report["claims"]}
         for label in scenario.labels:
             result = by_quote.get(label.quote)
@@ -160,6 +208,7 @@ def evaluate(split: str = "test", n: int = 220, policy: Policy | None = None,
     total_reward = sum(t.reward for t in tallies.values())
     return {
         "version": __version__, "split": split, "phrasing": phrasing,
+        "extractor": f"{extractor.name}/{extractor.version}" if extractor else "rules/0.1",
         "scenarios": len(scenarios), "claims": claims,
         "policy": (policy or Policy()).to_dict(),
         "families": rows,
@@ -179,5 +228,21 @@ def evaluate(split: str = "test", n: int = 220, policy: Policy | None = None,
         "coverage": {"claims": claims, "decided": decided,
                      "decided_share": round(decided / claims, 4) if claims else 0.0},
         "mean_reward": round(total_reward / claims, 4) if claims else 0.0,
+        "rejected": dict(sorted(rejected.items())),
         "failures": failures,
     }
+
+
+class _Prefetched:
+    """Hands `run()` the proposals already fetched for the scenario being scored."""
+
+    def __init__(self, inner, proposals: dict[int, list]):
+        self.inner, self.proposals, self.current = inner, proposals, 0
+        self.name, self.version = inner.name, inner.version
+
+    @property
+    def transmissions(self) -> list[dict]:
+        return list(getattr(self.inner, "transmissions", []))
+
+    def propose(self, text, ledger):
+        return list(self.proposals[self.current])

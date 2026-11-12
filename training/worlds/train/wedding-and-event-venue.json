@@ -1,0 +1,838 @@
+{
+ "slug": "wedding-and-event-venue",
+ "industry": "wedding and event venue",
+ "entities": [
+  "Willow Ridge Estates",
+  "Harborlight Pavilion",
+  "Cedar & Vine Events",
+  "Marigold Hall Collective",
+  "Silverbrook Manor"
+ ],
+ "accounts": [
+  {
+   "name": "Floral and Decor",
+   "aliases": [
+    "floral and decor",
+    "flowers and decor",
+    "decor spend",
+    "florals",
+    "floral costs",
+    "centerpiece budget"
+   ],
+   "narrative": [
+    "Floral and decor",
+    "Decor spend",
+    "Florals"
+   ],
+   "recurring": [
+    {
+     "vendor": "Petal & Stem Wholesale",
+     "base": 9500,
+     "memo": "Weekly fresh-cut stems standing order"
+    },
+    {
+     "vendor": "Gilded Occasions Rentals",
+     "base": 6200,
+     "memo": "Linen and chair cover rental program"
+    },
+    {
+     "vendor": "Brightwick Candle Supply",
+     "base": 1800,
+     "memo": "Taper and votive restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "arbor",
+     "vendor": "Petal & Stem Wholesale",
+     "memos": [
+      "Rosewood Arbor Installation — custom floral canopy",
+      "Rosewood Arbor Installation — specialty orchid import"
+     ],
+     "cross_memo": "Rosewood Arbor Installation — crane lift permit",
+     "plain": [
+      "the Rosewood arbor installation",
+      "the Rosewood arbor canopy",
+      "the arbor installation project"
+     ],
+     "oblique": [
+      "the oversized ceremony backdrop one couple wanted",
+      "a showpiece structure built over the aisle",
+      "the grand entrance piece for a single high-profile wedding",
+      "that tall hand-built centerpiece of the season",
+      "special flowers flown in from overseas for a client",
+      "the one-time feature that dominated the ceremony lawn",
+      "a signature installation requested by the bride",
+      "the lavish ceremony set piece",
+      "the stunning archway commission",
+      "an extravagant custom build for the big Saturday",
+      "what the planner asked us to construct for the vows",
+      "the dramatic overhead blooms",
+      "a bespoke focal structure for one booking",
+      "the oversized floral commission",
+      "the showstopper we built for the couple",
+      "an elaborate one-off ceremony feature"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "gala",
+     "vendor": "Lumen Drapery Studio",
+     "memos": [
+      "Ironwood Charity Gala — ceiling drape rigging",
+      "Ironwood Charity Gala — fabric fabrication"
+     ],
+     "cross_memo": "Ironwood Charity Gala — extra security staffing",
+     "plain": [
+      "the Ironwood charity gala",
+      "the Ironwood gala drapery",
+      "the charity gala buildout"
+     ],
+     "oblique": [
+      "the fundraiser for the hospital foundation",
+      "transforming the ballroom for a nonprofit dinner",
+      "an elaborate room makeover for a benefit evening",
+      "the black-tie philanthropy night",
+      "the big donor dinner",
+      "work done for a nonprofit client",
+      "turning the warehouse into a showroom of fabric",
+      "the evening that raised money for the children's ward",
+      "a once-a-year community fundraiser",
+      "the hosted benefit with auction items",
+      "a large party for a cause",
+      "the formal dinner that sold out in days",
+      "overhead fabric for an upscale benefit",
+      "the lavish room dressing for donors",
+      "the one night our ballroom looked like a theater",
+      "a charity client's request for dramatic ceilings"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Catering Food Cost",
+   "aliases": [
+    "catering food cost",
+    "food cost",
+    "catering costs",
+    "kitchen spend",
+    "food and beverage cost",
+    "f&b cost"
+   ],
+   "narrative": [
+    "Food cost",
+    "Catering costs",
+    "Kitchen spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harvest Table Provisions",
+     "base": 28000,
+     "memo": "Weekly produce and protein delivery"
+    },
+    {
+     "vendor": "Copperline Dairy & Bakery",
+     "base": 7400,
+     "memo": "Bread and pastry standing order"
+    },
+    {
+     "vendor": "Tidewater Seafood Co",
+     "base": 9800,
+     "memo": "Fresh catch weekly delivery"
+    }
+   ],
+   "events": [
+    {
+     "key": "tasting",
+     "vendor": "Harvest Table Provisions",
+     "memos": [
+      "Autumn Menu Launch — prototype ingredient order",
+      "Autumn Menu Launch — plated sampler proteins"
+     ],
+     "cross_memo": "Autumn Menu Launch — printed menu cards",
+     "plain": [
+      "the autumn menu launch",
+      "the autumn menu prototype run",
+      "the launch of the autumn menu"
+     ],
+     "oblique": [
+      "recipe testing before the new season began",
+      "the chef's experimental dishes for prospects",
+      "trial plates built for couples touring the property",
+      "dishes we cooked but never sold",
+      "the refresh of what we offer guests",
+      "chef development work ahead of peak",
+      "sample portions poured for open house visitors",
+      "rolling out different dishes for fall weddings",
+      "kitchen experiments for the sales team",
+      "the new lineup chefs worked on",
+      "what the culinary director wanted to showcase",
+      "special tastings we hosted for engaged couples",
+      "an effort to update our offerings",
+      "the product development sprint",
+      "the chef's seasonal rework",
+      "getting the kitchen ready for new bookings"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "vintner",
+     "vendor": "Oakmere Vineyard Estates",
+     "memos": [
+      "Heritage Pairing Dinner — reserve wine allocation",
+      "Heritage Pairing Dinner — cellar courier fee"
+     ],
+     "cross_memo": "Heritage Pairing Dinner — sommelier labor",
+     "plain": [
+      "the Heritage pairing dinner",
+      "the Heritage dinner wine allocation",
+      "the Heritage pairing event"
+     ],
+     "oblique": [
+      "a high-end multi-course evening with matched drinks",
+      "the exclusive dinner for our top referral partners",
+      "a premium tasting night hosted for VIP clients",
+      "vintage bottles brought in for a milestone anniversary",
+      "the special evening where each course came with a glass",
+      "a private client's anniversary banquet",
+      "the upscale evening we hosted for the wine club",
+      "rare bottles for the corporate anniversary",
+      "a bespoke dinner request from a repeat client",
+      "the sophisticated dinner service for forty guests",
+      "a one-night vintage showcase",
+      "an elegant meal with a curated cellar selection",
+      "the prestige dinner for the board",
+      "the evening where the cellar came out",
+      "a hosted collectors' evening",
+      "the premium wine service for a private party"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Grounds and Landscaping",
+   "aliases": [
+    "grounds and landscaping",
+    "landscaping",
+    "grounds upkeep",
+    "lawn care",
+    "garden maintenance",
+    "grounds spend"
+   ],
+   "narrative": [
+    "Grounds upkeep",
+    "Landscaping",
+    "Garden maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenfield Turf Services",
+     "base": 6800,
+     "memo": "Mowing and edging contract"
+    },
+    {
+     "vendor": "Arbor Guard Tree Care",
+     "base": 3200,
+     "memo": "Pruning and tree health plan"
+    },
+    {
+     "vendor": "Clearwater Irrigation Co",
+     "base": 2400,
+     "memo": "Sprinkler system monitoring"
+    }
+   ],
+   "events": [
+    {
+     "key": "stormcleanup",
+     "vendor": "Arbor Guard Tree Care",
+     "memos": [
+      "Windfall Recovery — downed oak removal",
+      "Windfall Recovery — stump grinding crew"
+     ],
+     "cross_memo": "Windfall Recovery — pavilion roof patch",
+     "plain": [
+      "the windfall recovery",
+      "the windfall recovery cleanup",
+      "the windfall recovery crew"
+     ],
+     "oblique": [
+      "clearing the property after the overnight gale",
+      "getting the lawn usable again after the weather event",
+      "hauling away what the wind knocked over",
+      "urgent work after the late-season squall",
+      "restoring access to the ceremony site after bad weather",
+      "the emergency response when trees fell across paths",
+      "a rapid cleanup before the weekend booking",
+      "what the insurance adjuster walked through",
+      "the aftermath of the severe weather warning",
+      "bringing the grounds back to wedding-ready",
+      "damage from the night the power went out",
+      "unplanned crews called in at dawn",
+      "rescuing the garden from the storm",
+      "the mess left across the back acreage",
+      "dealing with branches on the guest walkway",
+      "the expensive sweep after the high winds"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "ponddredge",
+     "vendor": "Bluewater Aquatic Solutions",
+     "memos": [
+      "Swan Pond Revival — silt dredging",
+      "Swan Pond Revival — liner repair"
+     ],
+     "cross_memo": "Swan Pond Revival — fountain pump replacement",
+     "plain": [
+      "the Swan Pond revival",
+      "the Swan Pond dredging",
+      "the Swan Pond repair project"
+     ],
+     "oblique": [
+      "restoring the reflective water feature guests photograph",
+      "clearing murky water that clients complained about",
+      "the overdue fix for the pretty water at the entrance",
+      "rehabilitating the centerpiece of our wedding photos",
+      "a capital improvement to the waterfront backdrop",
+      "cleaning out what had built up on the bottom",
+      "the project to keep the ceremony view appealing",
+      "a facelift for the signature water element",
+      "work on the bit of the property everyone sees first",
+      "bringing back clear water before the busy season",
+      "a deferred maintenance item that finally got done",
+      "the scenic amenity makeover",
+      "fixing what leaked",
+      "the long-delayed refresh of the picturesque spot",
+      "an upgrade near the cocktail terrace",
+      "the reflecting pool project"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Event Staffing",
+   "aliases": [
+    "event staffing",
+    "servers and bartenders",
+    "service labor",
+    "staffing costs",
+    "banquet staff",
+    "hourly event labor"
+   ],
+   "narrative": [
+    "Event staffing",
+    "Service labor",
+    "Banquet staff"
+   ],
+   "recurring": [
+    {
+     "vendor": "Premier Hospitality Staffing",
+     "base": 22000,
+     "memo": "Weekly server and bartender placements"
+    },
+    {
+     "vendor": "Evergreen Setup Crew",
+     "base": 9600,
+     "memo": "Setup and breakdown labor"
+    },
+    {
+     "vendor": "Sterling Valet Partners",
+     "base": 4100,
+     "memo": "Guest parking attendants"
+    }
+   ],
+   "events": [
+    {
+     "key": "expo",
+     "vendor": "Premier Hospitality Staffing",
+     "memos": [
+      "Bridal Showcase Weekend — extra floor staff",
+      "Bridal Showcase Weekend — overtime premium"
+     ],
+     "cross_memo": "Bridal Showcase Weekend — booth rental",
+     "plain": [
+      "the bridal showcase weekend",
+      "the bridal showcase staffing",
+      "the showcase weekend overtime"
+     ],
+     "oblique": [
+      "our annual open house for engaged couples",
+      "a marketing weekend that drew record crowds",
+      "extra hands for the sales push",
+      "a lead-generation event we hosted ourselves",
+      "the two days when every room was open to tours",
+      "double shifts for a weekend promotion",
+      "when hundreds of prospective clients toured the venue",
+      "a promotional event with vendors on site",
+      "bodies on the floor for a recruiting event",
+      "staffing up to impress future customers",
+      "the weekend with an unusual headcount",
+      "additional crews called in for visitors",
+      "the weekend we put on a show to attract bookings",
+      "a busy promotional stretch",
+      "what sales wanted for the spring push",
+      "the heavy two-day schedule for walk-ins"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "holiday",
+     "vendor": "Candlelight Event Partners",
+     "memos": [
+      "Midwinter Gala Series — emergency temp coverage",
+      "Midwinter Gala Series — holiday pay differential"
+     ],
+     "cross_memo": "Midwinter Gala Series — shuttle service",
+     "plain": [
+      "the Midwinter gala series",
+      "the Midwinter gala coverage",
+      "the Midwinter series staffing"
+     ],
+     "oblique": [
+      "a run of parties during the coldest stretch",
+      "the crowded corporate party calendar at year end",
+      "a flurry of company celebrations booked back to back",
+      "higher wages for working over the holidays",
+      "calling in outside help when regular teams were off",
+      "the festive season rush",
+      "stacked bookings in the darkest weeks",
+      "a surge in demand for end-of-year parties",
+      "extra bodies for the busiest nights of winter",
+      "shifts nobody wanted at that time of year",
+      "the seasonal crush",
+      "a packed December of corporate clients",
+      "premium rates to cover family holidays",
+      "emergency help when staff called out",
+      "the back-to-back celebrations before new year",
+      "a calendar so full we hired anyone we could"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Rental",
+   "aliases": [
+    "equipment rental",
+    "rental equipment",
+    "tents and tables",
+    "rentals",
+    "event rentals",
+    "furniture rental"
+   ],
+   "narrative": [
+    "Equipment rental",
+    "Rentals",
+    "Event rentals"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Tent & Table Co",
+     "base": 11500,
+     "memo": "Monthly tent and table fleet lease"
+    },
+    {
+     "vendor": "ClearSound Audio Rentals",
+     "base": 5200,
+     "memo": "Sound system rental program"
+    },
+    {
+     "vendor": "Dancefloor Direct",
+     "base": 2900,
+     "memo": "Portable dance floor lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "clearspan",
+     "vendor": "Summit Tent & Table Co",
+     "memos": [
+      "Meadow Marquee Build — clearspan structure lease",
+      "Meadow Marquee Build — flooring and sidewalls"
+     ],
+     "cross_memo": "Meadow Marquee Build — site engineer inspection",
+     "plain": [
+      "the Meadow marquee build",
+      "the Meadow marquee structure",
+      "the marquee build lease"
+     ],
+     "oblique": [
+      "a huge temporary pavilion for five hundred guests",
+      "the outdoor wedding that outgrew our indoor spaces",
+      "a giant shelter erected in the field",
+      "a large-scale celebration with no building big enough",
+      "the roofed dining area we assembled on the lawn",
+      "a major outdoor party for a famous family",
+      "the temporary hall that took three days to raise",
+      "a major capacity expansion for one weekend",
+      "the oversized outdoor venue we had to create",
+      "what we put up when the guest list ballooned",
+      "a structure we took down on Monday",
+      "covering an enormous crowd from the weather",
+      "the big top for the reception",
+      "a one-weekend pop-up building",
+      "the huge canopy over the dance area",
+      "expanded seating under cover for the mega wedding"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "stagelight",
+     "vendor": "Aurora Stage Lighting",
+     "memos": [
+      "Starlit Concert Weekend — truss and fixtures",
+      "Starlit Concert Weekend — lighting operator crew"
+     ],
+     "cross_memo": "Starlit Concert Weekend — noise permit",
+     "plain": [
+      "the Starlit concert weekend",
+      "the Starlit concert lighting",
+      "the Starlit weekend fixtures"
+     ],
+     "oblique": [
+      "a live music festival on the grounds",
+      "when a touring band played the back lawn",
+      "the ticketed performance we hosted",
+      "a rare departure from weddings",
+      "illumination for evening shows",
+      "a big show for the public",
+      "the concert fans flooded the property",
+      "entertainment for hundreds of strangers",
+      "a different type of crowd altogether",
+      "bright effects for the headliner",
+      "the paid-admission night",
+      "a partnership with a promoter",
+      "a music-driven weekend",
+      "equipment brought in to light up the performers",
+      "the rock show",
+      "what the promoter asked for the weekend"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Utilities",
+   "aliases": [
+    "utilities",
+    "power and water",
+    "electric and gas",
+    "utility bills",
+    "energy costs",
+    "utility spend"
+   ],
+   "narrative": [
+    "Utilities",
+    "Energy costs",
+    "Utility spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northgrid Electric",
+     "base": 8800,
+     "memo": "Monthly electric service"
+    },
+    {
+     "vendor": "Hearthline Gas",
+     "base": 3100,
+     "memo": "Kitchen and heating gas"
+    },
+    {
+     "vendor": "Pinecrest Water District",
+     "base": 2600,
+     "memo": "Water and sewer"
+    }
+   ],
+   "events": [
+    {
+     "key": "generator",
+     "vendor": "Northgrid Electric",
+     "memos": [
+      "Outage Readiness Upgrade — standby generator tie-in",
+      "Outage Readiness Upgrade — transfer switch install"
+     ],
+     "cross_memo": "Outage Readiness Upgrade — electrician callout",
+     "plain": [
+      "the outage readiness upgrade",
+      "the outage readiness tie-in",
+      "the readiness transfer switch"
+     ],
+     "oblique": [
+      "insurance against losing power on a wedding night",
+      "a backup for the grid so receptions never go dark",
+      "the project prompted by a blackout last summer",
+      "protecting the kitchen from a failing supply",
+      "making sure the lights stay on",
+      "what the owner wanted after a near miss",
+      "a resilience project for the whole campus",
+      "the hookup that lets us run independently",
+      "a safeguard the insurer encouraged",
+      "reliable service no matter what the utility does",
+      "protection for refrigerated inventory",
+      "the contingency work in the mechanical room",
+      "a precaution for peak season",
+      "the stand-alone supply we added",
+      "a fix so no event is ever cancelled for darkness",
+      "spending to avoid a repeat of the dark evening"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "hvac",
+     "vendor": "Polar Breeze Mechanical",
+     "memos": [
+      "Ballroom Comfort Retrofit — rooftop chiller rental",
+      "Ballroom Comfort Retrofit — emergency coolant refill"
+     ],
+     "cross_memo": "Ballroom Comfort Retrofit — ceiling tile replacement",
+     "plain": [
+      "the ballroom comfort retrofit",
+      "the ballroom comfort chiller",
+      "the comfort retrofit refill"
+     ],
+     "oblique": [
+      "keeping guests cool during the heat wave",
+      "the air that stopped working before a big reception",
+      "temporary cooling while the permanent system was down",
+      "an emergency fix during the hottest week",
+      "the unit that gave out in July",
+      "what we did when guests complained about sweating",
+      "a stopgap until the replacement arrived",
+      "climate control for the biggest room",
+      "relief from the sweltering weekend",
+      "a rented solution to an aging system",
+      "the cooling crisis",
+      "the uncomfortable weekend that prompted a refund",
+      "a replacement of worn-out temperature equipment",
+      "paying to chill the main hall",
+      "a costly workaround for the aging plant",
+      "the system that couldn't keep up"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Licensing",
+   "aliases": [
+    "insurance and licensing",
+    "insurance",
+    "liability coverage",
+    "permits and licenses",
+    "licensing costs",
+    "coverage and permits"
+   ],
+   "narrative": [
+    "Insurance",
+    "Liability coverage",
+    "Licensing costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Event Underwriters",
+     "base": 7200,
+     "memo": "Monthly liability premium installment"
+    },
+    {
+     "vendor": "County Licensing Bureau",
+     "base": 1100,
+     "memo": "Business license fees"
+    },
+    {
+     "vendor": "Redstone Property Coverage",
+     "base": 4800,
+     "memo": "Property and casualty installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "liquor",
+     "vendor": "County Licensing Bureau",
+     "memos": [
+      "Banquet Permit Expansion — extended-hours endorsement",
+      "Banquet Permit Expansion — capacity recertification"
+     ],
+     "cross_memo": "Banquet Permit Expansion — legal counsel review",
+     "plain": [
+      "the banquet permit expansion",
+      "the banquet permit endorsement",
+      "the permit expansion recertification"
+     ],
+     "oblique": [
+      "the paperwork needed to serve alcohol later at night",
+      "authorization for bigger crowds on the lawn",
+      "what the city required before we could grow",
+      "official approval for longer receptions",
+      "a regulatory hurdle for the new pavilion",
+      "government sign-off for a larger guest limit",
+      "the application process that took months",
+      "a formal request to extend our operating window",
+      "bureaucratic fees to enlarge the business",
+      "compliance work for adding a second room",
+      "what the inspector told us we needed",
+      "the charge to legalize a bigger crowd",
+      "clearance to host after eleven",
+      "the approvals for expansion",
+      "making our credentials match our new footprint",
+      "the authorization tied to the capital plan"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "claim",
+     "vendor": "Ashford Claims Adjusters",
+     "memos": [
+      "Terrace Collapse Claim — structural assessment",
+      "Terrace Collapse Claim — deductible payment"
+     ],
+     "cross_memo": "Terrace Collapse Claim — temporary fencing",
+     "plain": [
+      "the Terrace collapse claim",
+      "the Terrace collapse assessment",
+      "the Terrace claim deductible"
+     ],
+     "oblique": [
+      "the accident that injured a guest",
+      "a loss our carrier had to investigate",
+      "what we owed before the insurer would pay",
+      "the incident that closed an outdoor area",
+      "a mishap during a reception",
+      "the mandatory out-of-pocket share after the damage",
+      "the aftermath of the structural failure",
+      "an unfortunate event that required engineers",
+      "the professional review after the fall",
+      "money we had to front before reimbursement",
+      "the claim filed after the deck gave way",
+      "the part insurance would not cover",
+      "what we paid so repairs could begin",
+      "the risky night that became a legal matter",
+      "an unexpected liability event",
+      "the costly mishap on the upper level"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Client Acquisition",
+   "aliases": [
+    "marketing and client acquisition",
+    "marketing",
+    "advertising spend",
+    "lead generation",
+    "bridal marketing",
+    "client acquisition"
+   ],
+   "narrative": [
+    "Marketing",
+    "Advertising spend",
+    "Lead generation"
+   ],
+   "recurring": [
+    {
+     "vendor": "Blushbook Wedding Directory",
+     "base": 3400,
+     "memo": "Premium listing subscription"
+    },
+    {
+     "vendor": "Brightfolio Photography",
+     "base": 2800,
+     "memo": "Monthly content photography retainer"
+    },
+    {
+     "vendor": "Clickbloom Digital",
+     "base": 5200,
+     "memo": "Search and social ad management"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "Brightfolio Photography",
+     "memos": [
+      "Heritage Rebrand Shoot — drone and aerial coverage",
+      "Heritage Rebrand Shoot — styled model fees"
+     ],
+     "cross_memo": "Heritage Rebrand Shoot — website redesign",
+     "plain": [
+      "the Heritage rebrand shoot",
+      "the Heritage rebrand aerial coverage",
+      "the rebrand shoot model fees"
+     ],
+     "oblique": [
+      "the new look we gave the company",
+      "refreshing our visual identity for the website",
+      "a campaign to update how couples see us",
+      "a facelift for the brand",
+      "the glossy new imagery we commissioned",
+      "pictures taken for the revamped portfolio",
+      "a new aesthetic direction",
+      "work to modernize our public image",
+      "the creative overhaul the owners requested",
+      "a costly set of photos with actors",
+      "aerial footage of the property",
+      "what marketing did to rebrand before the season",
+      "the visuals that replaced our dated brochures",
+      "high-gloss content for the new site",
+      "the repositioning effort",
+      "a bold refresh in how we present ourselves"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "influencer",
+     "vendor": "Velvet Ribbon Media",
+     "memos": [
+      "Spring Creator Stay — influencer hosting package",
+      "Spring Creator Stay — sponsored reel production"
+     ],
+     "cross_memo": "Spring Creator Stay — guest suite comp",
+     "plain": [
+      "the Spring creator stay",
+      "the Spring creator hosting package",
+      "the creator stay reel production"
+     ],
+     "oblique": [
+      "bringing social media personalities to the property",
+      "paying online celebrities to share our venue",
+      "a partnership with people who have large followings",
+      "the trial of word-of-mouth through screens",
+      "exposure gained from a famous couple's posts",
+      "free visits in return for publicity",
+      "getting our name in front of new audiences",
+      "the experiment with digital storytellers",
+      "a promotional collaboration with online stars",
+      "work that earned views rather than leads",
+      "what the agency recommended for reach",
+      "content produced by outsiders",
+      "an attempt to go viral",
+      "a campaign targeting younger couples",
+      "the buzz-building weekend",
+      "sponsorships to tap new followers"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

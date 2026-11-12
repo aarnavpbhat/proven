@@ -1,0 +1,805 @@
+{
+ "slug": "mining-exploration-company",
+ "industry": "mining exploration company",
+ "entities": [
+  "Ridgeback Exploration Ltd",
+  "Copperline Resources Inc",
+  "Northfold Minerals Corp",
+  "Basalt Meridian Exploration",
+  "Tallgrass Geoscience Holdings"
+ ],
+ "accounts": [
+  {
+   "name": "Drilling Contractor Services",
+   "aliases": [
+    "drilling",
+    "drill contractors",
+    "drilling services",
+    "contract drilling",
+    "drill program spend"
+   ],
+   "narrative": [
+    "Drilling",
+    "Drill contractors",
+    "Contract drilling"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kestrel Drilling Co",
+     "base": 28000,
+     "memo": "Diamond core drilling - monthly metres PO 4417"
+    },
+    {
+     "vendor": "Anvil Rig Services",
+     "base": 9500,
+     "memo": "Rig crew standby and shift allowance"
+    },
+    {
+     "vendor": "Greywater Mud & Bit Supply",
+     "base": 6200,
+     "memo": "Drill bits and additives WO 2231"
+    }
+   ],
+   "events": [
+    {
+     "key": "hydrofrac",
+     "vendor": "Kestrel Drilling Co",
+     "memos": [
+      "Artesian flow remediation - grout plugging PO 4502",
+      "Artesian flow remediation - casing reset"
+     ],
+     "cross_memo": "Artesian flow remediation - water haul trucks",
+     "plain": [
+      "the artesian flow remediation",
+      "artesian flow remediation work",
+      "the artesian flow plugging"
+     ],
+     "oblique": [
+      "sealing a hole that started gushing water",
+      "the emergency fix on the flooded hole",
+      "stopping uncontrolled water coming up the bore",
+      "cleanup after pressurized groundwater surprised the crew",
+      "work to cap a runaway well",
+      "the fix for a hole that would not stay dry",
+      "mitigating the geyser incident",
+      "remedial work ordered by the site geologist after the breach",
+      "unplanned sealing job",
+      "getting a flowing hole under control",
+      "what we spent taming the water",
+      "the hole that had to be abandoned and capped",
+      "a pressure problem encountered underground",
+      "the safety stand-down fix",
+      "plugging a leaking borehole",
+      "regulator-mandated hole closure"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "sonic",
+     "vendor": "Pinecrest Sonic Boring Ltd",
+     "memos": [
+      "Pinecrest sonic overburden campaign - mobilisation PO 4560",
+      "Pinecrest sonic overburden campaign - metres drilled"
+     ],
+     "cross_memo": "Pinecrest sonic overburden campaign - sample tubes",
+     "plain": [
+      "the Pinecrest sonic campaign",
+      "the sonic overburden campaign",
+      "sonic overburden drilling"
+     ],
+     "oblique": [
+      "testing the loose surface layers",
+      "the extra shallow program the board requested",
+      "probing soft ground above bedrock",
+      "a one-time side project on the northern flats",
+      "vibration-based holes for the geotech team",
+      "the add-on programme near the creek",
+      "shallow work outside the main plan",
+      "gathering data on unconsolidated cover",
+      "a second rig type brought in briefly",
+      "the specialist crew we hired for glacial till",
+      "extra holes to support the permit application",
+      "the pilot study on the loose ground",
+      "a short engagement with a different driller",
+      "cover-depth investigation",
+      "the overburden question the engineers raised",
+      "new contractor trial run"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Geochemical Assay Fees",
+   "aliases": [
+    "assays",
+    "assay fees",
+    "lab assays",
+    "assay costs",
+    "geochem lab spend"
+   ],
+   "narrative": [
+    "Assays",
+    "Assay fees",
+    "Lab assays"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northern Analytical Labs",
+     "base": 14500,
+     "memo": "Fire assay Au 50g batch fees"
+    },
+    {
+     "vendor": "Summit Geochem Services",
+     "base": 7800,
+     "memo": "ICP multi-element package"
+    }
+   ],
+   "events": [
+    {
+     "key": "rerun",
+     "vendor": "Northern Analytical Labs",
+     "memos": [
+      "Umpire recheck program - pulp resubmission WO 3310",
+      "Umpire recheck program - check standards"
+     ],
+     "cross_memo": "Umpire recheck program - courier freight",
+     "plain": [
+      "the umpire recheck program",
+      "umpire recheck work",
+      "the umpire pulp resubmission"
+     ],
+     "oblique": [
+      "double-checking earlier results at another lab",
+      "validation of questionable numbers",
+      "the quality review after odd readings",
+      "samples sent back for a second opinion",
+      "confirming the high grades we reported",
+      "a QA exercise requested by the auditors",
+      "redoing a batch that looked suspicious",
+      "verifying data before the resource update",
+      "the cross-lab comparison",
+      "resubmitted material from last quarter",
+      "extra testing to satisfy the technical report author",
+      "an independent confirmation effort",
+      "what it cost to prove the numbers",
+      "reassurance work for the investors",
+      "sample retesting after a flagged discrepancy",
+      "control checks on old pulps"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "metallurgy",
+     "vendor": "Redfern Process Testing Inc",
+     "memos": [
+      "Redfern bottle roll leach tests PO 3355",
+      "Redfern bottle roll leach tests - reagent consumption"
+     ],
+     "cross_memo": "Redfern bottle roll leach tests - ore shipping",
+     "plain": [
+      "the Redfern bottle roll tests",
+      "bottle roll leach testing",
+      "the bottle roll leach program"
+     ],
+     "oblique": [
+      "finding out how well the gold dissolves",
+      "recovery studies on the oxide zone",
+      "process work for the prefeasibility study",
+      "lab trials on how the rock behaves in treatment",
+      "a request from the engineering firm",
+      "testing extraction rates",
+      "bench-scale work using bulk material",
+      "a new supplier brought in for processing questions",
+      "checking whether the ore is economic to treat",
+      "the pilot extraction study",
+      "work to inform plant design",
+      "a one-off investigation into recoverability",
+      "exploring cyanide response",
+      "the treatability question",
+      "trial runs on composite samples",
+      "studies that feed the economic model"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Helicopter and Aircraft Charter",
+   "aliases": [
+    "helicopter",
+    "heli charter",
+    "air charter",
+    "aviation costs",
+    "flight costs"
+   ],
+   "narrative": [
+    "Helicopter",
+    "Heli charter",
+    "Aviation costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Skyline Rotor Air",
+     "base": 22000,
+     "memo": "AS350 charter hours - crew shuttle"
+    },
+    {
+     "vendor": "Boreal Fuel Cache Ltd",
+     "base": 5400,
+     "memo": "Jet A fuel supply remote strip"
+    }
+   ],
+   "events": [
+    {
+     "key": "airmag",
+     "vendor": "Skyline Rotor Air",
+     "memos": [
+      "Aeromagnetic survey flight lines PO 5101",
+      "Aeromagnetic survey - ferry and standby"
+     ],
+     "cross_memo": "Aeromagnetic survey - sensor rental",
+     "plain": [
+      "the aeromagnetic survey",
+      "aeromagnetic survey flights",
+      "the aeromagnetic flight lines"
+     ],
+     "oblique": [
+      "flying a grid over the new claims",
+      "geophysics from the air",
+      "the sweep that mapped hidden structures",
+      "a low-altitude data-gathering project",
+      "target generation work on the western block",
+      "the survey that picked our next drill holes",
+      "a contractor-towed instrument on the machine",
+      "special flying with equipment slung beneath",
+      "mapping the subsurface without touching the ground",
+      "the early-stage coverage of unexplored land",
+      "a regional program ordered by the chief geologist",
+      "flights dedicated to data collection",
+      "what we spent finding anomalies",
+      "survey hours separate from crew moves",
+      "a campaign over the whole property",
+      "a magnetic mapping effort"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "medevac",
+     "vendor": "Alder Air Rescue Services",
+     "memos": [
+      "Alder emergency evacuation - patient transfer WO 5190",
+      "Alder emergency evacuation - standby fee"
+     ],
+     "cross_memo": "Alder emergency evacuation - camp medic overtime",
+     "plain": [
+      "the Alder emergency evacuation",
+      "emergency evacuation flight",
+      "the Alder evacuation standby"
+     ],
+     "oblique": [
+      "getting an injured worker out of the field",
+      "an urgent flight to the hospital",
+      "the rescue after the accident on the ridge",
+      "a health scare at remote camp",
+      "unplanned aircraft call-out for a casualty",
+      "the incident that triggered a safety review",
+      "an unscheduled flight with a medical crew",
+      "transport of a sick crew member",
+      "paying a third party in a crisis",
+      "a night-time response to an injury",
+      "the worst day of the field season",
+      "taking a person with a broken leg to care",
+      "help that arrived within hours",
+      "a quick-response flight nobody budgeted for",
+      "the day the camp radioed for help",
+      "a human emergency in the bush"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Camp and Field Logistics",
+   "aliases": [
+    "camp costs",
+    "field camp",
+    "camp logistics",
+    "remote camp spend",
+    "field logistics"
+   ],
+   "narrative": [
+    "Camp costs",
+    "Field camp",
+    "Camp logistics"
+   ],
+   "recurring": [
+    {
+     "vendor": "Wolfpine Catering Services",
+     "base": 16500,
+     "memo": "Camp catering - person-days invoiced"
+    },
+    {
+     "vendor": "Tundra Tent & Structures",
+     "base": 6800,
+     "memo": "Wall tent frame rental"
+    },
+    {
+     "vendor": "Clearwater Sanitation Ltd",
+     "base": 2900,
+     "memo": "Waste removal and potable water"
+    }
+   ],
+   "events": [
+    {
+     "key": "bearfence",
+     "vendor": "Wolfpine Catering Services",
+     "memos": [
+      "Grizzly deterrent upgrade - electric fencing PO 6020",
+      "Grizzly deterrent upgrade - bear-proof lockers"
+     ],
+     "cross_memo": "Grizzly deterrent upgrade - wildlife monitor wages",
+     "plain": [
+      "the grizzly deterrent upgrade",
+      "grizzly deterrent installation",
+      "the grizzly electric fencing"
+     ],
+     "oblique": [
+      "keeping wildlife out of the kitchen area",
+      "protection after a close encounter",
+      "the safety response to an animal visit",
+      "securing the site against large predators",
+      "a change recommended by the insurer",
+      "hardening the compound after the sighting",
+      "measures to stop animals raiding food",
+      "an upgrade the permit conditions required",
+      "guarding the sleeping area at night",
+      "a wildlife-safety project at camp",
+      "spend triggered by a nuisance visitor",
+      "extra barriers around the cookhouse",
+      "what it took to feel safe in bear country",
+      "a response to the incident report",
+      "the perimeter work",
+      "a precaution requested by the crew"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "winterize",
+     "vendor": "Frostline Modular Camps Inc",
+     "memos": [
+      "Frostline modular dorm install - four-season units PO 6044",
+      "Frostline modular dorm install - crane lift"
+     ],
+     "cross_memo": "Frostline modular dorm install - foundation pads",
+     "plain": [
+      "the Frostline modular dorm install",
+      "modular dorm installation",
+      "the four-season dorm units"
+     ],
+     "oblique": [
+      "moving from tents to proper buildings",
+      "extending the field season into winter",
+      "housing that can take deep cold",
+      "a permanent upgrade to where staff sleep",
+      "the shift to year-round operations",
+      "new accommodation for the drilling push",
+      "replacing canvas with insulated shelters",
+      "a capital-style purchase booked as expense",
+      "the bunkhouse we put in before freeze-up",
+      "a change that will outlast this program",
+      "a new supplier for sleeping quarters",
+      "what we spent to keep crews comfortable",
+      "the upgrade the drill contractor demanded",
+      "buildings delivered by heavy lift",
+      "accommodation for the larger team",
+      "the structures that replaced the old setup"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Environmental and Permitting",
+   "aliases": [
+    "environmental",
+    "permitting",
+    "environmental compliance",
+    "permit costs",
+    "baseline studies"
+   ],
+   "narrative": [
+    "Environmental",
+    "Permitting",
+    "Environmental compliance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Larchwood Environmental Consulting",
+     "base": 8900,
+     "memo": "Monthly compliance monitoring retainer"
+    },
+    {
+     "vendor": "Provincial Mines Branch",
+     "base": 1200,
+     "memo": "Claim maintenance fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "fishsurvey",
+     "vendor": "Larchwood Environmental Consulting",
+     "memos": [
+      "Watershed fish habitat survey - electrofishing crew WO 7015",
+      "Watershed fish habitat survey - report drafting"
+     ],
+     "cross_memo": "Watershed fish habitat survey - boat charter",
+     "plain": [
+      "the watershed fish habitat survey",
+      "fish habitat survey work",
+      "the watershed electrofishing crew"
+     ],
+     "oblique": [
+      "counting what lives in the creek",
+      "a study demanded by the regulator before approval",
+      "baseline work on the aquatic side",
+      "getting data on trout and salmon",
+      "science needed to support the application",
+      "the summer fieldwork by biologists",
+      "an assessment of the stream downstream of the pit",
+      "evidence for the permit review",
+      "an ecological snapshot of the river system",
+      "work responding to a comment from the agency",
+      "a seasonal survey by wading crews",
+      "documenting what swims near the property",
+      "a precondition for drilling near the water",
+      "environmental homework that came due",
+      "the consultants' on-water effort",
+      "a requirement from the First Nation consultation"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "closureplan",
+     "vendor": "Ironbark Reclamation Advisors",
+     "memos": [
+      "Ironbark reclamation bond assessment PO 7077",
+      "Ironbark reclamation bond assessment - cost model"
+     ],
+     "cross_memo": "Ironbark reclamation bond assessment - legal review",
+     "plain": [
+      "the Ironbark reclamation bond assessment",
+      "reclamation bond assessment",
+      "the reclamation bond cost model"
+     ],
+     "oblique": [
+      "working out what we owe the government for cleanup",
+      "a guarantee the province wants posted",
+      "estimating future restoration costs",
+      "paperwork for the security deposit",
+      "the figure that sets how much cash gets locked up",
+      "a new adviser engaged on the closure question",
+      "financial assurance homework",
+      "calculating the price of putting the land back",
+      "a requirement attached to the drilling approval",
+      "advice on what regulators will accept",
+      "planning for the day the site is left",
+      "the closure estimate",
+      "a one-time engagement with a specialist firm",
+      "what the mines inspector asked us to prepare",
+      "numbers for a posted guarantee",
+      "costing the restoration of trails and pads"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Geophysical and Geological Consulting",
+   "aliases": [
+    "geophysics",
+    "geological consultants",
+    "technical consulting",
+    "geo consulting",
+    "modelling services"
+   ],
+   "narrative": [
+    "Geophysics",
+    "Geological consultants",
+    "Technical consulting"
+   ],
+   "recurring": [
+    {
+     "vendor": "Quartzite Geoscience Partners",
+     "base": 18000,
+     "memo": "Senior geologist time - monthly retainer"
+    },
+    {
+     "vendor": "Datum Modelling Group",
+     "base": 7500,
+     "memo": "3D modelling licence and support"
+    }
+   ],
+   "events": [
+    {
+     "key": "ip",
+     "vendor": "Quartzite Geoscience Partners",
+     "memos": [
+      "Induced polarization survey - Block C WO 8120",
+      "Induced polarization survey - line cutting"
+     ],
+     "cross_memo": "Induced polarization survey - crew accommodation",
+     "plain": [
+      "the induced polarization survey",
+      "induced polarization fieldwork",
+      "the induced polarization line cutting"
+     ],
+     "oblique": [
+      "an electrical ground survey over the best target",
+      "sending current through the rock to find sulphides",
+      "the follow-up on last year's anomaly",
+      "a ground-based geophysics push",
+      "cut lines and instrument work in the north",
+      "work to rank drill targets",
+      "a second look at the buried zone",
+      "the extra mapping the team lobbied for",
+      "data gathered on foot rather than by air",
+      "a programme meant to guide the next holes",
+      "a field crew with receivers and cables",
+      "what the geophysicist recommended after the review",
+      "the targeting exercise",
+      "electrical measurements across the grid",
+      "a survey that preceded the drill plan",
+      "work scheduled before snowfall"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "resource",
+     "vendor": "Halden Resource Estimation Ltd",
+     "memos": [
+      "Halden NI 43-101 resource estimate PO 8155",
+      "Halden NI 43-101 resource estimate - peer review"
+     ],
+     "cross_memo": "Halden NI 43-101 resource estimate - data room fees",
+     "plain": [
+      "the Halden resource estimate",
+      "the NI 43-101 resource estimate",
+      "the 43-101 peer review"
+     ],
+     "oblique": [
+      "the formal tonnage and grade calculation",
+      "a technical report for the market",
+      "numbers investors will rely on",
+      "an independent qualified person's sign-off",
+      "the document that supports our financing",
+      "an outside firm's calculation of the deposit size",
+      "publication-grade statements about the ore",
+      "work required before the next raise",
+      "the update to what we say we have",
+      "a regulated disclosure exercise",
+      "calculations done by a third-party expert",
+      "the big paper the lawyers asked for",
+      "quantifying the discovery",
+      "an arm's-length estimate of contained metal",
+      "the report that went to the exchange",
+      "what it cost to turn drilling into a stated figure"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Rental and Fuel",
+   "aliases": [
+    "equipment rental",
+    "rental equipment",
+    "fuel and equipment",
+    "machinery hire",
+    "heavy equipment"
+   ],
+   "narrative": [
+    "Equipment rental",
+    "Rental equipment",
+    "Heavy equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bedrock Equipment Rentals",
+     "base": 12000,
+     "memo": "Excavator and skid steer rental"
+    },
+    {
+     "vendor": "Northway Fuel Distributors",
+     "base": 8700,
+     "memo": "Diesel delivery bulk tank"
+    },
+    {
+     "vendor": "Axle & Track Fleet Services",
+     "base": 3100,
+     "memo": "ATV and side-by-side leases"
+    }
+   ],
+   "events": [
+    {
+     "key": "roadbuild",
+     "vendor": "Bedrock Equipment Rentals",
+     "memos": [
+      "Winter access road grading - dozer D8 PO 9201",
+      "Winter access road grading - gravel haul"
+     ],
+     "cross_memo": "Winter access road grading - culvert supply",
+     "plain": [
+      "the winter access road grading",
+      "access road grading work",
+      "the winter road gravel haul"
+     ],
+     "oblique": [
+      "building a way in for the heavy trucks",
+      "making the trail passable before freeze-up",
+      "a route to the new drill pads",
+      "earthmoving to reach the far claim",
+      "clearing and levelling the track",
+      "the connection to the main highway",
+      "preparing ground for the ice season",
+      "a push to open the property to vehicles",
+      "bulldozer time that wasn't on the plan",
+      "laying a surface so rigs could roll in",
+      "the access problem the logistics manager raised",
+      "work on the path leading to the deposit",
+      "a one-off project involving big machines",
+      "what it cost to get equipment to site",
+      "a rough road turned into a usable one",
+      "the trail upgrade ahead of the program"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "corestorage",
+     "vendor": "Cobalt Ridge Storage Solutions",
+     "memos": [
+      "Cobalt Ridge core shack lease - 40ft containers PO 9244",
+      "Cobalt Ridge core shack lease - racking"
+     ],
+     "cross_memo": "Cobalt Ridge core shack lease - delivery trucking",
+     "plain": [
+      "the Cobalt Ridge core shack lease",
+      "core shack container lease",
+      "the core shack racking"
+     ],
+     "oblique": [
+      "somewhere to keep the rock samples dry",
+      "a place for logging and splitting cylinders",
+      "a new supplier for storage steel boxes",
+      "space for the growing library of drilled material",
+      "a temporary building leased to hold results",
+      "the answer to overflowing shelves",
+      "protecting the physical record of the program",
+      "a contractor we hadn't used before",
+      "boxes with shelving delivered to town",
+      "sheltering the evidence of what we found",
+      "a short-term lease with an unfamiliar company",
+      "a facility for geologists to examine material",
+      "housing for tonnes of cylinders",
+      "what we did when the old shed filled up",
+      "the storage crunch",
+      "a holding area for the winter"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Land and Community Relations",
+   "aliases": [
+    "land costs",
+    "community relations",
+    "claims and land",
+    "land access",
+    "stakeholder engagement"
+   ],
+   "narrative": [
+    "Land costs",
+    "Community relations",
+    "Land access"
+   ],
+   "recurring": [
+    {
+     "vendor": "Eagleview Land Services",
+     "base": 5600,
+     "memo": "Claim staking and tenure management"
+    },
+    {
+     "vendor": "Cedar Bay Community Liaison",
+     "base": 4200,
+     "memo": "Community liaison officer - monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "consultation",
+     "vendor": "Cedar Bay Community Liaison",
+     "memos": [
+      "Elders gathering - hosting and travel WO 1105",
+      "Elders gathering - interpreter fees"
+     ],
+     "cross_memo": "Elders gathering - venue catering",
+     "plain": [
+      "the elders gathering",
+      "elders gathering hosting",
+      "the elders gathering interpreter"
+     ],
+     "oblique": [
+      "a meeting with the people who live near the project",
+      "relationship-building with the local nation",
+      "a face-to-face session at the band hall",
+      "outreach we owed under the agreement",
+      "sitting down with those whose land we work on",
+      "a trust-building event",
+      "engagement requested by the chief",
+      "the feast and discussion about our plans",
+      "gathering the community to hear concerns",
+      "money spent on goodwill",
+      "an open house for neighbours",
+      "an invitation to the traditional owners",
+      "a consultation milestone",
+      "the community event before the permit hearing",
+      "hosting a day of dialogue",
+      "a formal duty-to-consult step"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "titledispute",
+     "vendor": "Blackstone Mining Law LLP",
+     "memos": [
+      "Blackstone claim overlap arbitration - counsel fees PO 1166",
+      "Blackstone claim overlap arbitration - filing costs"
+     ],
+     "cross_memo": "Blackstone claim overlap arbitration - surveyor affidavit",
+     "plain": [
+      "the Blackstone claim overlap arbitration",
+      "claim overlap arbitration",
+      "the claim overlap filing costs"
+     ],
+     "oblique": [
+      "a legal fight over who owns a boundary strip",
+      "lawyers resolving a neighbour's competing stake",
+      "the tenure disagreement",
+      "a dispute that went to a hearing",
+      "protecting our right to the ground",
+      "attorneys on a case nobody expected",
+      "a rival prospector's challenge",
+      "resolving whose staking came first",
+      "the lawsuit over adjoining ground",
+      "paying counsel to defend our position",
+      "a contested corner of the property",
+      "a new law firm hired to represent us",
+      "the argument with a competitor about the border",
+      "the court-adjacent process",
+      "legal work after the registry flagged a conflict",
+      "settling who holds the mineral rights"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

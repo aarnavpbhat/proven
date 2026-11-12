@@ -1,0 +1,713 @@
+{
+ "slug": "public-library-system",
+ "industry": "public library system",
+ "entities": [
+  "Harborview Public Library Network",
+  "Cedar Ridge Library District",
+  "Meridian County Library System",
+  "Lakeshore Regional Libraries",
+  "Pinecrest Community Library Group"
+ ],
+ "accounts": [
+  {
+   "name": "Print Collection Acquisitions",
+   "aliases": [
+    "print books",
+    "book purchasing",
+    "physical collection",
+    "print acquisitions",
+    "book buys"
+   ],
+   "narrative": [
+    "Print books",
+    "Book purchasing",
+    "Physical collection"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ashgrove Book Distributors",
+     "base": 22000,
+     "memo": "Monthly adult and juvenile title shipment"
+    },
+    {
+     "vendor": "Larkspur Periodicals Inc",
+     "base": 4800,
+     "memo": "Magazine and newspaper subscriptions"
+    },
+    {
+     "vendor": "Birchwood Large Print Supply",
+     "base": 3200,
+     "memo": "Standing order large print releases"
+    }
+   ],
+   "events": [
+    {
+     "key": "oakmoor",
+     "vendor": "Ashgrove Book Distributors",
+     "memos": [
+      "Oakmoor Branch Opening Stock — initial shelf fill",
+      "Oakmoor Branch Opening Stock — reference titles"
+     ],
+     "cross_memo": "Oakmoor Branch Opening Stock — shelving carts",
+     "plain": [
+      "the Oakmoor branch opening stock",
+      "Oakmoor opening stock purchases",
+      "the Oakmoor branch stock order"
+     ],
+     "oblique": [
+      "stocking the brand-new neighborhood location",
+      "filling empty racks at the new site",
+      "the grand opening buildout for the eastern site",
+      "first-day inventory for a facility that had nothing",
+      "getting a freshly built location ready for patrons",
+      "the expansion site's start-up order",
+      "outfitting the newest outpost",
+      "initial supply for the new facility",
+      "the ribbon-cutting preparations",
+      "populating the new building with something to lend",
+      "what we needed before the doors could open",
+      "launch inventory for the added location",
+      "the new location's starting load",
+      "equipping the site that the board approved last year",
+      "bringing a just-completed space up to a working state",
+      "the new neighborhood facility's first wave"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "vellum",
+     "vendor": "Quillfeather Rare Books LLC",
+     "memos": [
+      "Vellum Bequest Appraisal — antiquarian lot",
+      "Vellum Bequest Appraisal — conservation review"
+     ],
+     "cross_memo": "Vellum Bequest Appraisal — insurance rider",
+     "plain": [
+      "the Vellum bequest appraisal",
+      "Vellum bequest lot purchases",
+      "the Vellum bequest acquisition"
+     ],
+     "oblique": [
+      "the estate gift that needed expert valuation",
+      "old manuscripts left to us by a donor",
+      "a deceased patron's generous donation",
+      "a benefactor's centuries-old holdings",
+      "the heirloom volumes we took in",
+      "rare items from a local family",
+      "specialist review of aged materials",
+      "what the trustees accepted from the estate",
+      "precious one-of-a-kind items",
+      "a collector's legacy to the system",
+      "a windfall of antique printed works",
+      "archival treasures from a private owner",
+      "documents of historical interest",
+      "the late resident's treasured shelf",
+      "irreplaceable older pieces under evaluation",
+      "the heritage donation we now steward"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Digital Lending Licenses",
+   "aliases": [
+    "ebooks",
+    "digital lending",
+    "e-collection",
+    "digital licenses",
+    "online lending"
+   ],
+   "narrative": [
+    "Ebooks",
+    "Digital lending",
+    "Digital licenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Nimbus Reader Platform",
+     "base": 18000,
+     "memo": "Monthly ebook and audiobook license fee"
+    },
+    {
+     "vendor": "Tallis Streaming Media",
+     "base": 9500,
+     "memo": "Music and film streaming access"
+    }
+   ],
+   "events": [
+    {
+     "key": "bestseller",
+     "vendor": "Nimbus Reader Platform",
+     "memos": [
+      "Bestseller Surge Holds — additional concurrent copies",
+      "Bestseller Surge Holds — expedited metered licenses"
+     ],
+     "cross_memo": "Bestseller Surge Holds — extended patron notifications",
+     "plain": [
+      "the bestseller surge holds",
+      "bestseller surge hold copies",
+      "the bestseller surge licenses"
+     ],
+     "oblique": [
+      "a flood of patrons waiting on one hot title",
+      "wait lists that ballooned overnight",
+      "cutting queue times for the popular release",
+      "reader demand outrunning supply",
+      "an author's new release catching fire",
+      "the line of people eager for a single novel",
+      "extra access to relieve frustrated borrowers",
+      "a TV adaptation sending everyone to the shelf",
+      "meeting the rush for the season's top read",
+      "trimming the backlog of waiting members",
+      "popular fiction that everyone wanted at once",
+      "the craze over one celebrated novel",
+      "buying our way out of a long queue",
+      "what the book club phenomenon cost",
+      "immediate relief for impatient borrowers",
+      "the viral recommendation effect"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "kidspark",
+     "vendor": "Brightkite Learning Games Co",
+     "memos": [
+      "KidSpark Homework Portal — annual site license",
+      "KidSpark Homework Portal — teacher dashboard"
+     ],
+     "cross_memo": "KidSpark Homework Portal — staff onboarding webinar",
+     "plain": [
+      "the KidSpark homework portal",
+      "KidSpark portal licensing",
+      "the KidSpark site license"
+     ],
+     "oblique": [
+      "an after-school tool for students",
+      "the new service for youngsters and their teachers",
+      "classroom partnership with the school district",
+      "supporting kids who need study help",
+      "an interactive resource for the young crowd",
+      "what the school board asked us to add",
+      "tutoring offered through our catalog",
+      "a program aimed at grade schoolers",
+      "enrichment content for families",
+      "the educational add-on for minors",
+      "learning support parents requested",
+      "a youth-oriented subscription",
+      "something to keep children engaged after class",
+      "our response to district requests",
+      "the new academic aid for the youngest members",
+      "a pilot for elementary pupils"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Branch Facilities Maintenance",
+   "aliases": [
+    "branch maintenance",
+    "building upkeep",
+    "facilities",
+    "branch repairs",
+    "site upkeep"
+   ],
+   "narrative": [
+    "Branch maintenance",
+    "Building upkeep",
+    "Facilities"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenfield Janitorial Services",
+     "base": 14000,
+     "memo": "Nightly cleaning contract"
+    },
+    {
+     "vendor": "Stonebridge HVAC Partners",
+     "base": 6500,
+     "memo": "Quarterly filter and system service"
+    },
+    {
+     "vendor": "Summit Elevator Co",
+     "base": 2200,
+     "memo": "Monthly elevator inspection"
+    }
+   ],
+   "events": [
+    {
+     "key": "skylight",
+     "vendor": "Stonebridge HVAC Partners",
+     "memos": [
+      "Atrium Skylight Reseal — flashing replacement",
+      "Atrium Skylight Reseal — membrane install"
+     ],
+     "cross_memo": "Atrium Skylight Reseal — scaffolding rental",
+     "plain": [
+      "the atrium skylight reseal",
+      "atrium skylight flashing work",
+      "the atrium skylight membrane job"
+     ],
+     "oblique": [
+      "stopping the drip over the reading area",
+      "a roof leak that soaked the carpet",
+      "keeping rain out of the main hall",
+      "the glass ceiling problem",
+      "water damage from the storm",
+      "fixing what let moisture inside",
+      "the overhead glazing trouble",
+      "patching up the leaky top of the building",
+      "repairs after buckets lined the floor",
+      "weatherproofing the sunlit lobby",
+      "a ceiling emergency during the wet season",
+      "what the inspector flagged above the stacks",
+      "the seal that finally failed",
+      "protecting the collection from drips",
+      "upper-level waterproofing",
+      "the wet weather fix"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "lockdown",
+     "vendor": "Ironwatch Security Systems",
+     "memos": [
+      "Lockdown Door Retrofit — magnetic locks",
+      "Lockdown Door Retrofit — panic hardware"
+     ],
+     "cross_memo": "Lockdown Door Retrofit — electrician hours",
+     "plain": [
+      "the lockdown door retrofit",
+      "lockdown door magnetic locks",
+      "the lockdown door hardware"
+     ],
+     "oblique": [
+      "safety upgrades after the staff survey",
+      "a response to the emergency drill findings",
+      "hardening entry points",
+      "what the insurer recommended",
+      "making the building safer for everyone inside",
+      "new protections at the entrances",
+      "the security audit follow-up",
+      "steps to secure patrons during an incident",
+      "readiness for a worst-case scenario",
+      "the board's safety mandate",
+      "improvements prompted by a nearby incident",
+      "protecting staff and visitors",
+      "upgraded entry controls at several sites",
+      "keeping intruders out when needed",
+      "compliance with the new safety policy",
+      "the protective overhaul at main entrances"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Programming and Events",
+   "aliases": [
+    "programs",
+    "events",
+    "public programming",
+    "library events",
+    "program spend"
+   ],
+   "narrative": [
+    "Programs",
+    "Events",
+    "Public programming"
+   ],
+   "recurring": [
+    {
+     "vendor": "Storyhour Performers Guild",
+     "base": 3800,
+     "memo": "Weekly children's story time performers"
+    },
+    {
+     "vendor": "Pagewise Workshop Series",
+     "base": 2600,
+     "memo": "Monthly adult learning workshops"
+    }
+   ],
+   "events": [
+    {
+     "key": "authorfest",
+     "vendor": "Pagewise Workshop Series",
+     "memos": [
+      "Authorfest Weekend — keynote honorarium",
+      "Authorfest Weekend — signing tent setup"
+     ],
+     "cross_memo": "Authorfest Weekend — printed banners",
+     "plain": [
+      "the Authorfest weekend",
+      "Authorfest keynote honorarium",
+      "the Authorfest signing tent"
+     ],
+     "oblique": [
+      "the big literary gathering downtown",
+      "a famous writer visiting town",
+      "a crowd-drawing celebration of writing",
+      "the annual outdoor festival",
+      "hosting novelists for two days",
+      "an appearance that filled the plaza",
+      "the community's marquee cultural draw",
+      "a weekend of readings and autographs",
+      "a star speaker we booked",
+      "the headline attraction of the season",
+      "an event that packed the grounds",
+      "bringing a bestselling name to the neighborhood",
+      "our largest public spectacle",
+      "a celebrity guest and all that came with it",
+      "a signature gathering for book lovers",
+      "the two-day showcase"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "stemcamp",
+     "vendor": "Gearloop Youth Labs",
+     "memos": [
+      "Summer Robotics Camp — kit supplies",
+      "Summer Robotics Camp — instructor stipends"
+     ],
+     "cross_memo": "Summer Robotics Camp — shuttle transport",
+     "plain": [
+      "the summer robotics camp",
+      "robotics camp kit supplies",
+      "the robotics camp instructors"
+     ],
+     "oblique": [
+      "a vacation program for tweens",
+      "hands-on engineering for school-age participants",
+      "a grant-funded youth initiative",
+      "building little machines with local students",
+      "the seasonal enrichment series for older kids",
+      "technical learning during the break",
+      "what the partnership with the science museum required",
+      "a hot-ticket offering for teenagers",
+      "tinkering sessions that sold out",
+      "a week of programming and circuits",
+      "equipment and coaches for junior makers",
+      "the long-awaited technical offering",
+      "a new tradition for curious young minds",
+      "workshops aimed at future engineers",
+      "an outreach effort to underserved youth",
+      "the warm-weather program for children"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Interlibrary Loan and Courier",
+   "aliases": [
+    "interlibrary loan",
+    "courier",
+    "ILL",
+    "book transport",
+    "delivery costs"
+   ],
+   "narrative": [
+    "Interlibrary loan",
+    "Courier",
+    "Book transport"
+   ],
+   "recurring": [
+    {
+     "vendor": "Swiftpage Courier Co",
+     "base": 8200,
+     "memo": "Daily inter-branch courier routes"
+    },
+    {
+     "vendor": "Regional Lending Consortium",
+     "base": 3500,
+     "memo": "Monthly borrowing fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "floodrelief",
+     "vendor": "Swiftpage Courier Co",
+     "memos": [
+      "Riverbend Flood Recovery — emergency pickups",
+      "Riverbend Flood Recovery — salvage transfers"
+     ],
+     "cross_memo": "Riverbend Flood Recovery — freezer storage",
+     "plain": [
+      "the Riverbend flood recovery",
+      "Riverbend emergency pickups",
+      "the Riverbend salvage transfers"
+     ],
+     "oblique": [
+      "rescuing materials from the damaged location",
+      "moving things out before the water rose",
+      "a disaster that closed a neighborhood site",
+      "relocating holdings after the storm",
+      "urgent hauling of soaked inventory",
+      "clearing out a building that took on water",
+      "the emergency response nobody budgeted",
+      "saving what we could from the overflow",
+      "extra trips triggered by the natural calamity",
+      "evacuating the lower shelves",
+      "a crisis that disrupted a whole district",
+      "getting stranded stock to safety",
+      "the unplanned relocation effort",
+      "hauling away what the creek swallowed",
+      "an unforeseen catastrophe's logistics",
+      "last month's severe weather aftermath"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "unionlist",
+     "vendor": "Meridian Union Catalog Services",
+     "memos": [
+      "Union Catalog Migration — record conversion",
+      "Union Catalog Migration — holdings reconciliation"
+     ],
+     "cross_memo": "Union Catalog Migration — training sessions",
+     "plain": [
+      "the union catalog migration",
+      "union catalog record conversion",
+      "the union catalog reconciliation"
+     ],
+     "oblique": [
+      "merging our listings with partner systems",
+      "a shared database project",
+      "making every member's inventory searchable together",
+      "the consortium's unified lookup effort",
+      "combining separate indexes into one",
+      "cleaning up duplicate entries across partners",
+      "a joint tech undertaking",
+      "aligning how titles are described regionally",
+      "the big data cleanup for the alliance",
+      "a long-planned consolidation of records",
+      "letting patrons search everyone's shelves at once",
+      "standardizing our metadata with neighbors",
+      "the behind-the-scenes consolidation",
+      "an initiative championed by the regional board",
+      "a systems integration among peers",
+      "bringing our listings in line with the group"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Library Systems and Cataloging Software",
+   "aliases": [
+    "library software",
+    "catalog system",
+    "ILS",
+    "systems costs",
+    "cataloging tools"
+   ],
+   "narrative": [
+    "Library software",
+    "Catalog system",
+    "Systems costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Archway ILS Hosting",
+     "base": 16000,
+     "memo": "Monthly integrated library system hosting"
+    },
+    {
+     "vendor": "Cardstack Discovery Tools",
+     "base": 5200,
+     "memo": "Patron search interface subscription"
+    },
+    {
+     "vendor": "Pinpoint Barcode Labs",
+     "base": 1800,
+     "memo": "Label and barcode services"
+    }
+   ],
+   "events": [
+    {
+     "key": "rfid",
+     "vendor": "Pinpoint Barcode Labs",
+     "memos": [
+      "Tagwave Self-Checkout Rollout — RFID tags",
+      "Tagwave Self-Checkout Rollout — kiosk licensing"
+     ],
+     "cross_memo": "Tagwave Self-Checkout Rollout — signage",
+     "plain": [
+      "the Tagwave self-checkout rollout",
+      "Tagwave RFID tags",
+      "the Tagwave kiosk licensing"
+     ],
+     "oblique": [
+      "letting patrons borrow without staff help",
+      "automating the front desk process",
+      "faster lines at the exit",
+      "a technology push to free up employees",
+      "do-it-yourself lending stations",
+      "modernizing how items leave the building",
+      "the efficiency project championed by management",
+      "stickers inside every volume",
+      "reducing wait at the counter",
+      "equipment that reads items in a stack",
+      "the labor-saving initiative",
+      "what makes walk-out borrowing possible",
+      "tools that speed up circulation",
+      "an upgrade members will notice immediately",
+      "unattended transactions at several sites",
+      "the touch-and-go lending upgrade"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "migrate",
+     "vendor": "Foxglove Data Partners",
+     "memos": [
+      "Patron Privacy Audit — penetration testing",
+      "Patron Privacy Audit — compliance report"
+     ],
+     "cross_memo": "Patron Privacy Audit — legal counsel review",
+     "plain": [
+      "the patron privacy audit",
+      "privacy audit penetration testing",
+      "the patron privacy compliance report"
+     ],
+     "oblique": [
+      "checking that borrower records stay protected",
+      "an outside review of our data safeguards",
+      "the response to a regulator's inquiry",
+      "hiring specialists to probe for weaknesses",
+      "proving we handle sensitive information properly",
+      "what the state required after the breach scare",
+      "an independent examination of our defenses",
+      "confidentiality verification for the board",
+      "assurance that reading histories remain secret",
+      "the cyber check requested by trustees",
+      "hackers hired to find holes",
+      "a third-party inspection of security practices",
+      "meeting new legal standards for personal details",
+      "a deep look at who could see what",
+      "the safeguards study",
+      "demonstrating trustworthiness to the public"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Outreach and Bookmobile Services",
+   "aliases": [
+    "outreach",
+    "bookmobile",
+    "mobile library",
+    "community outreach",
+    "mobile services"
+   ],
+   "narrative": [
+    "Outreach",
+    "Bookmobile",
+    "Mobile services"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadrunner Fleet Fuel",
+     "base": 2400,
+     "memo": "Bookmobile fuel cards"
+    },
+    {
+     "vendor": "Wayside Vehicle Care",
+     "base": 1900,
+     "memo": "Routine bookmobile servicing"
+    },
+    {
+     "vendor": "Hilltop Community Partners",
+     "base": 2100,
+     "memo": "Senior center and school visit coordination"
+    }
+   ],
+   "events": [
+    {
+     "key": "axle",
+     "vendor": "Wayside Vehicle Care",
+     "memos": [
+      "Bookmobile Two Drivetrain Rebuild — transmission overhaul",
+      "Bookmobile Two Drivetrain Rebuild — axle assembly"
+     ],
+     "cross_memo": "Bookmobile Two Drivetrain Rebuild — loaner van rental",
+     "plain": [
+      "the Bookmobile Two drivetrain rebuild",
+      "Bookmobile Two transmission overhaul",
+      "the Bookmobile Two axle assembly"
+     ],
+     "oblique": [
+      "getting the older rig rolling again",
+      "a breakdown that parked a route for weeks",
+      "the big mechanical repair on the aging truck",
+      "what it took to revive the van",
+      "a failure that stranded the rural stops",
+      "an expensive fix we put off too long",
+      "restoring service to remote neighborhoods",
+      "the heavy-duty shop work",
+      "motor and wheel trouble",
+      "keeping the traveling branch on the road",
+      "the vehicle that wouldn't go",
+      "our most costly garage visit this year",
+      "a major repair on the rolling unit",
+      "bringing a stalled vehicle back to life",
+      "what the mechanic quoted us",
+      "the substantial work on the old coach"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "wifi",
+     "vendor": "Skyhook Connectivity Labs",
+     "memos": [
+      "Hotspot Lending Expansion — cellular data plans",
+      "Hotspot Lending Expansion — loaner devices"
+     ],
+     "cross_memo": "Hotspot Lending Expansion — protective cases",
+     "plain": [
+      "the hotspot lending expansion",
+      "hotspot cellular data plans",
+      "the hotspot loaner devices"
+     ],
+     "oblique": [
+      "getting internet access into households without it",
+      "narrowing the digital divide",
+      "a pandemic-era program that kept growing",
+      "helping families who lack a connection at home",
+      "bringing the web to people on the road",
+      "what the city grant covered",
+      "devices for students to finish assignments",
+      "equity-minded connectivity push",
+      "letting job seekers get online",
+      "an offering that never stays on the shelf",
+      "portable signal for underserved homes",
+      "a service the council wanted to scale",
+      "coverage for residents with no broadband",
+      "ways to keep people linked from anywhere",
+      "the take-home internet program",
+      "an expanded lending pool for connectivity"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

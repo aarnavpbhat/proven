@@ -1,0 +1,800 @@
+{
+ "slug": "law-firm",
+ "industry": "law firm",
+ "entities": [
+  "Harborview Legal Group LLP",
+  "Pinecrest & Alder Attorneys",
+  "Meridian Stone Law Partners",
+  "Calloway Reyes Counsel PC",
+  "Northgate Trial Advocates LLP"
+ ],
+ "accounts": [
+  {
+   "name": "Outside Counsel and Local Counsel Fees",
+   "aliases": [
+    "outside counsel",
+    "local counsel fees",
+    "co-counsel spend",
+    "referral counsel costs",
+    "local counsel"
+   ],
+   "narrative": [
+    "Outside counsel",
+    "Local counsel fees",
+    "Co-counsel spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brennan Whitlock LLP",
+     "base": 14500,
+     "memo": "Inv Local counsel svc - monthly retainer"
+    },
+    {
+     "vendor": "Torres & Imani Attorneys",
+     "base": 9200,
+     "memo": "Co-counsel hours - Qtr accrual"
+    }
+   ],
+   "events": [
+    {
+     "key": "arbitration",
+     "vendor": "Brennan Whitlock LLP",
+     "memos": [
+      "Singapore arbitration support - filing prep",
+      "Singapore arbitration support - hearing attendance"
+     ],
+     "cross_memo": "Singapore arbitration support - interpreter",
+     "plain": [
+      "the Singapore arbitration support",
+      "the Singapore arbitration work",
+      "Singapore arbitration support costs"
+     ],
+     "oblique": [
+      "the overseas tribunal matter",
+      "the dispute that went to a foreign panel",
+      "the cross-border hearing",
+      "a client case heard on another continent",
+      "the neutral forum proceedings",
+      "work for the shipper in its contract fight",
+      "the panel date in Asia",
+      "the tribunal engagement",
+      "the offshore dispute resolution effort",
+      "a hearing held abroad",
+      "the case our largest client escalated",
+      "extra attorneys abroad",
+      "the foreign tribunal",
+      "what the managing partner approved for the shipping client",
+      "staffing the overseas hearing",
+      "the contract showdown abroad"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "cocounsel_trial",
+     "vendor": "Kessler Dunmore Trial Group",
+     "memos": [
+      "Pemberton wrongful death - trial co-counsel",
+      "Pemberton wrongful death - second chair Inv"
+     ],
+     "cross_memo": "Pemberton wrongful death - jury consultant",
+     "plain": [
+      "the Pemberton wrongful death trial",
+      "Pemberton wrongful death co-counsel",
+      "the Pemberton wrongful death case"
+     ],
+     "oblique": [
+      "the high-profile courtroom matter",
+      "bringing in an outside trial team",
+      "the case that finally reached a jury",
+      "help for our litigators at the courthouse",
+      "the family's lawsuit",
+      "an added senior advocate",
+      "the verdict-seeking effort",
+      "the matter we could not settle",
+      "borrowed courtroom talent",
+      "the lead-up to the panel of twelve",
+      "the damages claim that went forward",
+      "extra seats at counsel table",
+      "the case the insurer refused to resolve",
+      "specialists hired for the showdown",
+      "the weeks spent in court",
+      "a large personal injury dispute"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Court Reporting and Transcripts",
+   "aliases": [
+    "court reporting",
+    "transcripts",
+    "deposition transcripts",
+    "transcript costs",
+    "reporter fees"
+   ],
+   "narrative": [
+    "Court reporting",
+    "Transcript costs",
+    "Deposition transcripts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lakeshore Reporting Services",
+     "base": 6800,
+     "memo": "Inv Reporter attendance - Dep schedule"
+    },
+    {
+     "vendor": "Veritext Plains Transcription",
+     "base": 3100,
+     "memo": "Svc Certified copies - monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "videosync",
+     "vendor": "Lakeshore Reporting Services",
+     "memos": [
+      "Hartwell antitrust - synchronized video capture",
+      "Hartwell antitrust - realtime feed licensing"
+     ],
+     "cross_memo": "Hartwell antitrust - exhibit digitization",
+     "plain": [
+      "the Hartwell antitrust synchronized video",
+      "Hartwell antitrust video capture",
+      "the Hartwell antitrust realtime feed"
+     ],
+     "oblique": [
+      "the monopoly case recordings",
+      "filming witnesses for the jury",
+      "picture-and-sound for testimony",
+      "the live text streamed to the team",
+      "the competition suit's recorded sessions",
+      "a request from the lead partner for moving images",
+      "the case with dozens of executives questioned",
+      "what the judge allowed for playback",
+      "footage of the questioning",
+      "the high-stakes market dominance claim",
+      "technology so remote lawyers could watch",
+      "the opposing side's insistence on motion pictures",
+      "extra gear in the conference rooms",
+      "the recorded interrogations",
+      "the big regulatory-flavored litigation",
+      "sessions captured for trial clips"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "rushappeal",
+     "vendor": "Gable & Finch Stenography",
+     "memos": [
+      "Dunmore appeal - expedited daily record",
+      "Dunmore appeal - overnight page rush"
+     ],
+     "cross_memo": "Dunmore appeal - bound volumes",
+     "plain": [
+      "the Dunmore appeal expedited record",
+      "Dunmore appeal overnight rush",
+      "the Dunmore appeal daily record"
+     ],
+     "oblique": [
+      "the court's shortened schedule",
+      "getting pages by morning",
+      "the higher court's tight deadline",
+      "a speedy turnaround premium",
+      "the review panel's calendar",
+      "the loser's challenge to the verdict",
+      "paying extra for next-day paper",
+      "the squeeze before the filing date",
+      "the reversal attempt",
+      "what the senior associate demanded on timing",
+      "the fast-tracked review",
+      "hurry charges on the written proceedings",
+      "the second-level courtroom effort",
+      "the clock pressure after judgment",
+      "working through weekends for the record",
+      "the challenge to last quarter's ruling"
+     ],
+     "low": 10000,
+     "high": 21000
+    }
+   ]
+  },
+  {
+   "name": "Expert Witness and Consulting Fees",
+   "aliases": [
+    "expert witnesses",
+    "expert fees",
+    "consulting experts",
+    "expert witness spend",
+    "testifying experts"
+   ],
+   "narrative": [
+    "Expert witnesses",
+    "Expert fees",
+    "Consulting experts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sterling Forensic Associates",
+     "base": 11000,
+     "memo": "Inv Expert consulting - Dec hours"
+    },
+    {
+     "vendor": "Quantum Damages Advisors",
+     "base": 8500,
+     "memo": "Svc Economic analysis - monthly"
+    },
+    {
+     "vendor": "Dr. Elena Marsh Consulting",
+     "base": 4200,
+     "memo": "Medical review - Mnt retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "patentlab",
+     "vendor": "Sterling Forensic Associates",
+     "memos": [
+      "Orion semiconductor patent - lab replication",
+      "Orion semiconductor patent - chip teardown"
+     ],
+     "cross_memo": "Orion semiconductor patent - lab facility rental",
+     "plain": [
+      "the Orion semiconductor patent replication",
+      "Orion semiconductor patent teardown",
+      "the Orion semiconductor patent lab work"
+     ],
+     "oblique": [
+      "proving the invention works as claimed",
+      "rebuilding the device from scratch",
+      "the infringement theory testing",
+      "dismantling the rival's product",
+      "scientists running experiments for us",
+      "the technology dispute our biggest client filed",
+      "hands-on engineering evidence",
+      "what opposing counsel's challenge forced us to demonstrate",
+      "benchwork supporting the claims",
+      "the microscopic examination",
+      "specialists in a rented workspace",
+      "the invention-ownership lawsuit",
+      "verifying how the gadget behaves",
+      "work the technical judge asked to see",
+      "the intellectual property showdown",
+      "getting engineers to confirm our argument"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "accidentreco",
+     "vendor": "Redline Reconstruction Group",
+     "memos": [
+      "Alvarez highway collision - crash modeling",
+      "Alvarez highway collision - drone survey"
+     ],
+     "cross_memo": "Alvarez highway collision - site traffic control",
+     "plain": [
+      "the Alvarez highway collision modeling",
+      "Alvarez highway collision survey",
+      "the Alvarez highway collision reconstruction"
+     ],
+     "oblique": [
+      "recreating how the wreck happened",
+      "the roadway incident analysis",
+      "animation of the vehicles' paths",
+      "aerial pictures of the scene",
+      "specialists in speed and impact",
+      "the injured plaintiffs' trucking claim",
+      "the jury demonstration we planned",
+      "figuring out who was at fault",
+      "a physics-based explanation",
+      "the freeway pileup litigation",
+      "mapping skid marks and debris",
+      "the insurer's challenge to our timeline",
+      "a visual story for the courtroom",
+      "engineers measuring the stretch of asphalt",
+      "the fatal crash lawsuit",
+      "computer simulations of the crash"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "E-Discovery and Document Review",
+   "aliases": [
+    "e-discovery",
+    "document review",
+    "discovery hosting",
+    "review platform costs",
+    "ediscovery spend"
+   ],
+   "narrative": [
+    "E-discovery",
+    "Document review",
+    "Discovery hosting"
+   ],
+   "recurring": [
+    {
+     "vendor": "Relativity Cloud Partners",
+     "base": 19500,
+     "memo": "Inv Platform hosting - per GB Mnt"
+    },
+    {
+     "vendor": "ProReview Staffing Solutions",
+     "base": 12000,
+     "memo": "Svc Contract reviewers - weekly timesheets"
+    }
+   ],
+   "events": [
+    {
+     "key": "clawback",
+     "vendor": "Relativity Cloud Partners",
+     "memos": [
+      "Kingsley merger - privilege clawback remediation",
+      "Kingsley merger - re-production batch"
+     ],
+     "cross_memo": "Kingsley merger - privilege log attorney overtime",
+     "plain": [
+      "the Kingsley merger privilege clawback",
+      "Kingsley merger remediation",
+      "the Kingsley merger re-production"
+     ],
+     "oblique": [
+      "the inadvertent disclosure mess",
+      "fixing what went out the door by mistake",
+      "the confidentiality slip",
+      "pulling back documents we should not have sent",
+      "redoing a delivery to the other side",
+      "an embarrassing error the court noticed",
+      "protecting secrets after the fact",
+      "the corporate combination dispute",
+      "cleaning up a sloppy handover",
+      "a judge's order to undo it",
+      "opposing counsel's discovery of our oversight",
+      "work to restore lawyer-client protection",
+      "the second send of everything",
+      "mistakes in the earlier release",
+      "an apology tour for the client",
+      "what the general counsel demanded we correct"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "foreignlang",
+     "vendor": "Lingua Prime Review Services",
+     "memos": [
+      "Santos supply fraud - Portuguese linguists",
+      "Santos supply fraud - translation QC Inv"
+     ],
+     "cross_memo": "Santos supply fraud - certified translations",
+     "plain": [
+      "the Santos supply fraud Portuguese linguists",
+      "Santos supply fraud translation QC",
+      "the Santos supply fraud linguist team"
+     ],
+     "oblique": [
+      "reading emails written overseas",
+      "bilingual reviewers",
+      "documents not in our working language",
+      "the Brazilian side of the investigation",
+      "staff who could read the originals",
+      "the procurement scam inquiry",
+      "a language barrier in the evidence",
+      "specialists fluent in another tongue",
+      "the foreign subsidiary's records",
+      "accuracy checks on converted text",
+      "the kickback allegations abroad",
+      "help our contract attorneys lacked",
+      "the cross-border paper trail",
+      "vendors with native speakers",
+      "the big pile of non-English files",
+      "the supplier cheating case"
+     ],
+     "low": 11000,
+     "high": 23000
+    }
+   ]
+  },
+  {
+   "name": "Bar Dues and Attorney Licensing",
+   "aliases": [
+    "bar dues",
+    "attorney licensing",
+    "licensing fees",
+    "bar association dues",
+    "admissions costs"
+   ],
+   "narrative": [
+    "Bar dues",
+    "Attorney licensing",
+    "Licensing fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "State Bar Association",
+     "base": 5200,
+     "memo": "Inv Annual dues - installment"
+    },
+    {
+     "vendor": "National Lawyers Registry",
+     "base": 1800,
+     "memo": "Svc Directory listing - monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "proHacVice",
+     "vendor": "State Bar Association",
+     "memos": [
+      "Pro hac vice admissions - six attorneys",
+      "Pro hac vice admissions - sponsor filing fees"
+     ],
+     "cross_memo": "Pro hac vice admissions - local sponsor stipend",
+     "plain": [
+      "the pro hac vice admissions",
+      "pro hac vice filing fees",
+      "the pro hac vice sponsor filings"
+     ],
+     "oblique": [
+      "letting visiting lawyers appear in another state",
+      "temporary court permission for our team",
+      "a case outside our home jurisdiction",
+      "the out-of-state trial staffing",
+      "paperwork so associates could argue",
+      "approvals needed before stepping into the courtroom",
+      "a multistate class action requirement",
+      "getting credentials recognized elsewhere",
+      "half a dozen lawyers needing court access",
+      "the clearance for our litigators",
+      "the guest appearance permissions",
+      "what the clerk's office required of newcomers",
+      "the trial that crossed state lines",
+      "entering appearances in a distant forum",
+      "the credentialing wave before filing",
+      "authorization to practice just for one matter"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "cle_mandate",
+     "vendor": "Pacific Ethics Institute",
+     "memos": [
+      "Mandatory ethics seminar - cybersecurity track",
+      "Mandatory ethics seminar - 40 seat block"
+     ],
+     "cross_memo": "Mandatory ethics seminar - ballroom catering",
+     "plain": [
+      "the mandatory ethics seminar",
+      "mandatory ethics seminar seats",
+      "the mandatory ethics cybersecurity track"
+     ],
+     "oblique": [
+      "the continuing education requirement",
+      "a new rule from the state supreme court",
+      "training every lawyer had to complete",
+      "compliance classes before the deadline",
+      "the firmwide learning day",
+      "a regulator's push on data safety",
+      "credit hours we all owed",
+      "the annual credit crunch",
+      "instruction on protecting client information",
+      "a block purchase of course places",
+      "the partners' decision to do it together",
+      "an off-site day of lectures",
+      "avoiding discipline for missing coursework",
+      "the professionalism program",
+      "one big sign-up instead of individual ones",
+      "education to keep everyone in good standing"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Malpractice and Professional Liability Insurance",
+   "aliases": [
+    "malpractice insurance",
+    "professional liability",
+    "lawyers liability coverage",
+    "E&O premiums",
+    "liability insurance"
+   ],
+   "narrative": [
+    "Malpractice insurance",
+    "Professional liability",
+    "Liability insurance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Fidelis Lawyers Mutual",
+     "base": 16500,
+     "memo": "Inv Primary LPL premium - Mnt installment"
+    },
+    {
+     "vendor": "Cambridge Brokerage Group",
+     "base": 2400,
+     "memo": "Svc Broker fee - monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "cyberrider",
+     "vendor": "Fidelis Lawyers Mutual",
+     "memos": [
+      "Cyber extortion rider - endorsement premium",
+      "Cyber extortion rider - retro date extension"
+     ],
+     "cross_memo": "Cyber extortion rider - forensic audit prerequisite",
+     "plain": [
+      "the cyber extortion rider",
+      "cyber extortion rider premium",
+      "the cyber extortion endorsement"
+     ],
+     "oblique": [
+      "added protection against hackers demanding payment",
+      "the policy extension after the industry breach news",
+      "coverage we bought on the broker's advice",
+      "the ransomware scare",
+      "a new layer of protection for client files",
+      "what the underwriter suggested",
+      "the carrier's request for more safeguards",
+      "extra security on the policy",
+      "the wave of attacks on competitors",
+      "hedging against locked-up servers",
+      "the upgrade after the board meeting",
+      "an add-on to existing protection",
+      "insurance against digital blackmail",
+      "the board's concern about data theft",
+      "retroactive cover we asked for",
+      "a bump in the annual agreement for online threats"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "tailcover",
+     "vendor": "Westmark Run-off Underwriters",
+     "memos": [
+      "Departed partners tail coverage - three year",
+      "Departed partners tail coverage - extended reporting"
+     ],
+     "cross_memo": "Departed partners tail coverage - broker placement fee",
+     "plain": [
+      "the departed partners tail coverage",
+      "departed partners extended reporting",
+      "the departed partners tail policy"
+     ],
+     "oblique": [
+      "the group that left to start their own shop",
+      "protection for claims arising after exits",
+      "the lateral defection fallout",
+      "the old matters still exposed",
+      "an obligation in the separation agreement",
+      "the practice group that split off",
+      "lingering exposure after people walked out",
+      "paying to cover the past work",
+      "the three lawyers who resigned",
+      "closing out risk on former colleagues",
+      "a one-time purchase after the break-up",
+      "the spin-off team's former files",
+      "the gap the carrier would not cover",
+      "what the managing committee negotiated on the way out",
+      "a price for letting them go cleanly",
+      "the departures from the litigation department"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Client Development and Business Entertainment",
+   "aliases": [
+    "client development",
+    "business entertainment",
+    "client events",
+    "marketing and entertainment",
+    "rainmaking spend"
+   ],
+   "narrative": [
+    "Client development",
+    "Business entertainment",
+    "Client events"
+   ],
+   "recurring": [
+    {
+     "vendor": "Capstone Events & Hospitality",
+     "base": 7800,
+     "memo": "Inv Client dinners - Mnt"
+    },
+    {
+     "vendor": "Brightline Legal Marketing",
+     "base": 5600,
+     "memo": "Svc Website and newsletter - monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "gcsummit",
+     "vendor": "Capstone Events & Hospitality",
+     "memos": [
+      "General Counsel Summit - ski lodge retreat",
+      "General Counsel Summit - speaker honoraria"
+     ],
+     "cross_memo": "General Counsel Summit - chartered shuttle",
+     "plain": [
+      "the General Counsel Summit retreat",
+      "General Counsel Summit honoraria",
+      "the General Counsel Summit lodge"
+     ],
+     "oblique": [
+      "the annual gathering of in-house lawyers",
+      "a mountain weekend for prospective clients",
+      "the invitation-only networking trip",
+      "hosting corporate legal heads",
+      "the relationship-building getaway",
+      "an event the marketing partner championed",
+      "fancy venues for our best contacts",
+      "the two-day offsite for decision makers",
+      "what we spent wooing big accounts",
+      "the winter getaway",
+      "speakers and lodging for clients",
+      "the push to win panel placements",
+      "courting the largest buyers of legal services",
+      "an expensive weekend away",
+      "the high-end retreat for referral sources",
+      "our flagship hospitality weekend"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "rebrand",
+     "vendor": "Lumen & Quill Creative",
+     "memos": [
+      "Firm rebrand - identity system and logo",
+      "Firm rebrand - signage rollout"
+     ],
+     "cross_memo": "Firm rebrand - stationery reprint",
+     "plain": [
+      "the firm rebrand identity",
+      "firm rebrand signage",
+      "the firm rebrand logo work"
+     ],
+     "oblique": [
+      "the new look we unveiled",
+      "the name change after the merger announcement",
+      "a fresh visual identity",
+      "redoing everything with our name on it",
+      "the creative agency's project",
+      "new lobbies and door plaques",
+      "the managing partner's modernization push",
+      "updating how we appear to the public",
+      "the design overhaul",
+      "a company-wide visual refresh",
+      "the colors and typeface decision",
+      "what we paid to look contemporary",
+      "new materials for all offices",
+      "the campaign to shed the old image",
+      "launch of our updated appearance",
+      "the agency's invoice for the makeover"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Records Storage and Legal Library",
+   "aliases": [
+    "records storage",
+    "legal library",
+    "research subscriptions",
+    "file storage",
+    "law library costs"
+   ],
+   "narrative": [
+    "Records storage",
+    "Legal library",
+    "Research subscriptions"
+   ],
+   "recurring": [
+    {
+     "vendor": "IronVault Records Management",
+     "base": 4800,
+     "memo": "Inv Offsite box storage - Mnt"
+    },
+    {
+     "vendor": "LexNova Research Online",
+     "base": 9600,
+     "memo": "Svc Research subscription - seats"
+    },
+    {
+     "vendor": "Statute & Case Publishing",
+     "base": 2100,
+     "memo": "Inv Print reporters - Qtr"
+    }
+   ],
+   "events": [
+    {
+     "key": "officeclose",
+     "vendor": "IronVault Records Management",
+     "memos": [
+      "Legacy matter destruction - certified shredding",
+      "Legacy matter destruction - retrieval labor"
+     ],
+     "cross_memo": "Legacy matter destruction - chain of custody audit",
+     "plain": [
+      "the legacy matter destruction",
+      "legacy matter shredding",
+      "the legacy matter retrieval"
+     ],
+     "oblique": [
+      "clearing out closed files after the retention period",
+      "purging decades of paper",
+      "the cleanup of old client folders",
+      "what the records committee finally authorized",
+      "freeing up warehouse space",
+      "getting rid of dead cases",
+      "the clean-slate project",
+      "a seven-year sweep",
+      "tossing boxes nobody needed",
+      "an end to the stockpile",
+      "work under the document retention policy",
+      "cost of finally letting go of old paper",
+      "the big pickup truck run",
+      "the partners' decision on housekeeping",
+      "confidential waste disposal",
+      "annual hygiene we had skipped"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "aiplatform",
+     "vendor": "Precedent Insight Labs",
+     "memos": [
+      "Contract analytics pilot - enterprise licence",
+      "Contract analytics pilot - onboarding Svc"
+     ],
+     "cross_memo": "Contract analytics pilot - data migration",
+     "plain": [
+      "the contract analytics pilot",
+      "contract analytics licence",
+      "the contract analytics onboarding"
+     ],
+     "oblique": [
+      "the machine learning trial",
+      "a tool that reads agreements automatically",
+      "the innovation committee's experiment",
+      "a new way to research faster",
+      "technology to speed up associates",
+      "the software the managing partner wanted to test",
+      "automating clause comparison",
+      "an unproven product we took a chance on",
+      "the artificial intelligence initiative",
+      "a six-month test with select teams",
+      "what the knowledge officer championed",
+      "a platform to mine our past work",
+      "the emerging tool our competitors adopted",
+      "a subscription outside our usual vendors",
+      "efficiency tooling for the deal group",
+      "the technology trial after the retreat"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

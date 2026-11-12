@@ -1,0 +1,790 @@
+{
+ "slug": "cemetery-and-crematorium-operator",
+ "industry": "cemetery and crematorium operator",
+ "entities": [
+  "Stillmeadow Memorial Group",
+  "Cedar Hollow Cemetery Association",
+  "Lanternfield Crematory Services",
+  "Quietbrook Memorial Parks",
+  "Harrowgate Rest Gardens"
+ ],
+ "accounts": [
+  {
+   "name": "Cremation Fuel",
+   "aliases": [
+    "cremation fuel",
+    "retort gas",
+    "crematory fuel",
+    "fuel for cremations",
+    "burner gas spend"
+   ],
+   "narrative": [
+    "Cremation fuel",
+    "Retort gas",
+    "Crematory fuel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-County Natural Gas",
+     "base": 14000,
+     "memo": "Monthly natural gas service — crematory meter"
+    },
+    {
+     "vendor": "Pinecrest Propane Supply",
+     "base": 2200,
+     "memo": "Propane delivery — backup tank"
+    }
+   ],
+   "events": [
+    {
+     "key": "pipeline_upgrade",
+     "vendor": "Tri-County Natural Gas",
+     "memos": [
+      "Pipeline upgrade — high-pressure line install",
+      "Pipeline upgrade — regulator station"
+     ],
+     "cross_memo": "Pipeline upgrade — trench restoration",
+     "plain": [
+      "the pipeline upgrade",
+      "pipeline upgrade work",
+      "the pipeline upgrade charges"
+     ],
+     "oblique": [
+      "the utility hookup expansion",
+      "boosting flow to the furnaces",
+      "the utility company's capacity work",
+      "bringing more energy to the retorts",
+      "the main feed replacement",
+      "work the utility required ahead of adding a third furnace",
+      "capacity expansion at the hookup",
+      "the utility-side improvements",
+      "upsizing the street connection",
+      "the connection rework the fire marshal asked about",
+      "more throughput for the cremation units",
+      "the utility capital project",
+      "the feed capacity job",
+      "work so all retorts can fire at once",
+      "the curbside connection project",
+      "the utility-mandated infrastructure work"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "stack_emissions",
+     "vendor": "Hollister Emissions Testing",
+     "memos": [
+      "Stack emissions test — annual compliance run",
+      "Stack emissions test — lab analysis"
+     ],
+     "cross_memo": "Stack emissions test — consultant report",
+     "plain": [
+      "the stack emissions test",
+      "stack emissions test fees",
+      "the stack emissions test work"
+     ],
+     "oblique": [
+      "the air permit review",
+      "chimney sampling",
+      "the air-quality audit the state requires",
+      "proving the furnaces meet pollution limits",
+      "the smoke measurement visit",
+      "the agency-ordered sampling",
+      "exhaust certification",
+      "checking what comes out of the chimney",
+      "the permit renewal sampling",
+      "the environmental inspection",
+      "the pollution check",
+      "air permit paperwork and sampling",
+      "verifying flue output for the state",
+      "the outside environmental specialists",
+      "the periodic air audit",
+      "measurements needed to keep the operating permit"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Grounds Maintenance",
+   "aliases": [
+    "grounds",
+    "grounds maintenance",
+    "groundskeeping",
+    "landscaping",
+    "lawn care"
+   ],
+   "narrative": [
+    "Grounds maintenance",
+    "Groundskeeping",
+    "Landscaping"
+   ],
+   "recurring": [
+    {
+     "vendor": "Evergreen Turf Partners",
+     "base": 11000,
+     "memo": "Mowing contract — sections A-F"
+    },
+    {
+     "vendor": "Riverbend Irrigation Co",
+     "base": 1800,
+     "memo": "Sprinkler service call"
+    }
+   ],
+   "events": [
+    {
+     "key": "storm_cleanup",
+     "vendor": "Evergreen Turf Partners",
+     "memos": [
+      "Storm cleanup — fallen oak removal",
+      "Storm cleanup — debris haul"
+     ],
+     "cross_memo": "Storm cleanup — headstone resetting",
+     "plain": [
+      "the storm cleanup",
+      "storm cleanup work",
+      "the storm cleanup charges"
+     ],
+     "oblique": [
+      "clearing up after the wind event",
+      "the hurricane aftermath",
+      "getting the grounds back after the big blow",
+      "emergency crews after the gale",
+      "branches down across the burial areas",
+      "the weather damage response",
+      "carting away limbs",
+      "post-hurricane recovery",
+      "the extra crews after the squall",
+      "making the property safe for visitors again",
+      "weather recovery",
+      "the emergency outdoor work after severe weather",
+      "clearing blocked roadways after high winds",
+      "the gale damage",
+      "restoring the property after the tempest",
+      "unplanned weather-related labor"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "canopy_pruning",
+     "vendor": "Ashgrove Arborists",
+     "memos": [
+      "Tree canopy pruning — Old Chapel lawn",
+      "Tree canopy pruning — crane rental"
+     ],
+     "cross_memo": "Tree canopy pruning — permit fee",
+     "plain": [
+      "the tree canopy pruning",
+      "tree canopy pruning work",
+      "the tree canopy pruning program"
+     ],
+     "oblique": [
+      "trimming the overhanging limbs",
+      "the specialist branch work",
+      "thinning the mature shade cover",
+      "the scheduled branch trimming",
+      "work to keep limbs off monuments",
+      "the safety trimming the insurer wanted",
+      "branch thinning",
+      "the cyclical woodland care",
+      "hazard limb reduction near the cemetery entrance",
+      "elevating branches over the roads",
+      "the outside forestry crew",
+      "trimming the historic plantings",
+      "keeping overhead limbs clear of mourners",
+      "the multi-year shade management cycle",
+      "the forestry work",
+      "lifting the crowns over the driveways"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Interment Excavation",
+   "aliases": [
+    "excavation",
+    "grave opening",
+    "opening and closing",
+    "digging costs",
+    "interment excavation"
+   ],
+   "narrative": [
+    "Excavation",
+    "Grave opening",
+    "Digging costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kessler Backhoe Services",
+     "base": 9000,
+     "memo": "Opening/closing labor"
+    },
+    {
+     "vendor": "Granite Valley Equipment",
+     "base": 2500,
+     "memo": "Excavator lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "frost_thaw",
+     "vendor": "Kessler Backhoe Services",
+     "memos": [
+      "Winter frost thaw — ground heaters",
+      "Winter frost thaw — overtime crew"
+     ],
+     "cross_memo": "Winter frost thaw — propane refill",
+     "plain": [
+      "the winter frost thaw",
+      "winter frost thaw charges",
+      "the winter frost thaw work"
+     ],
+     "oblique": [
+      "cold-weather digging",
+      "getting through frozen soil",
+      "warming the earth before burials",
+      "the deep-freeze surcharge",
+      "extra hours in icy conditions",
+      "the freeze",
+      "burials delayed by the cold snap",
+      "cold snap catch-up",
+      "heating blankets on frozen plots",
+      "the hard freeze",
+      "frozen-earth premiums",
+      "keeping funerals on schedule through the cold",
+      "seasonal cold surcharges",
+      "the subzero stretch",
+      "softening the topsoil ahead of funerals",
+      "weekend digging to clear the cold backlog"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "trench_shoring",
+     "vendor": "Delmar Shoring Specialists",
+     "memos": [
+      "Trench shoring — box rental",
+      "Trench shoring — safety engineer"
+     ],
+     "cross_memo": "Trench shoring — OSHA training",
+     "plain": [
+      "the trench shoring",
+      "trench shoring costs",
+      "the trench shoring work"
+     ],
+     "oblique": [
+      "cave-in protection",
+      "the collapse prevention gear",
+      "bracing for deep graves",
+      "the double-depth burial supports",
+      "wall supports the inspector demanded",
+      "protecting diggers in unstable soil",
+      "the workplace hazard review",
+      "certifying staff on cave-in rules",
+      "sandy-soil reinforcement",
+      "the federal workplace citation response",
+      "keeping grave walls from slumping",
+      "the new structural supports",
+      "hiring outside experts on collapse risk",
+      "reinforcement in the sandy section",
+      "the inspector follow-up",
+      "compliance after the near-miss"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Memorial Markers & Monuments",
+   "aliases": [
+    "markers",
+    "monuments",
+    "memorial markers",
+    "headstone costs",
+    "marker inventory"
+   ],
+   "narrative": [
+    "Markers",
+    "Monuments",
+    "Memorial markers"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stillwater Stoneworks",
+     "base": 12000,
+     "memo": "Granite blanks"
+    },
+    {
+     "vendor": "Northfield Bronze Foundry",
+     "base": 6000,
+     "memo": "Bronze plaques"
+    }
+   ],
+   "events": [
+    {
+     "key": "veterans_section",
+     "vendor": "Stillwater Stoneworks",
+     "memos": [
+      "Veterans section — upright tablets",
+      "Veterans section — engraving"
+     ],
+     "cross_memo": "Veterans section — flagpole install",
+     "plain": [
+      "the veterans section",
+      "veterans section work",
+      "the veterans section order"
+     ],
+     "oblique": [
+      "the military memorial area",
+      "honoring service members",
+      "the new memorial row for those who served",
+      "the Legion-requested memorial row",
+      "military grave stones",
+      "lettering for the armed forces plots",
+      "the patriotic memorial expansion",
+      "markers for the military burial ground",
+      "the armed forces plots",
+      "the Memorial Day dedication project",
+      "headstones for military families",
+      "the military burial expansion",
+      "a new field of honor",
+      "the uniformed services memorial",
+      "stones the VFW post asked for",
+      "military markers"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "historic_conservation",
+     "vendor": "Lindqvist Restoration Guild",
+     "memos": [
+      "Historic conservation — marble cleaning",
+      "Historic conservation — epoxy repairs"
+     ],
+     "cross_memo": "Historic conservation — survey drawings",
+     "plain": [
+      "the historic conservation",
+      "historic conservation work",
+      "the historic conservation project"
+     ],
+     "oblique": [
+      "fixing the old pioneer graves",
+      "the nineteenth-century stone mending",
+      "preserving century-old monuments",
+      "the heritage stone work",
+      "bringing weathered gravestones back",
+      "the preservation project the county funded",
+      "heritage preservation",
+      "stabilizing leaning nineteenth-century stones",
+      "the pioneer burial ground",
+      "the landmark designation work",
+      "work on the oldest graves",
+      "reviving faded inscriptions",
+      "the preservation specialists",
+      "the heritage society project",
+      "resetting antique headstones",
+      "the old-yard preservation"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Retort Maintenance",
+   "aliases": [
+    "retort maintenance",
+    "cremator upkeep",
+    "furnace repairs",
+    "cremation equipment maintenance",
+    "retort service"
+   ],
+   "narrative": [
+    "Retort maintenance",
+    "Cremator upkeep",
+    "Furnace repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironside Thermal Systems",
+     "base": 5500,
+     "memo": "Preventive maintenance agreement"
+    },
+    {
+     "vendor": "Calderwood Controls",
+     "base": 1500,
+     "memo": "Control panel support"
+    }
+   ],
+   "events": [
+    {
+     "key": "refractory_reline",
+     "vendor": "Ironside Thermal Systems",
+     "memos": [
+      "Refractory reline — hearth bricks",
+      "Refractory reline — kiln cure labor"
+     ],
+     "cross_memo": "Refractory reline — temporary outsourced cremations",
+     "plain": [
+      "the refractory reline",
+      "refractory reline costs",
+      "the refractory reline work"
+     ],
+     "oblique": [
+      "rebuilding the furnace lining",
+      "the heat-resistant interior rebuild",
+      "replacing the worn insulating interior",
+      "the scheduled furnace rebuild",
+      "a full interior rebuild on unit two",
+      "the lining job",
+      "restoring the floor of the cremator",
+      "the five-year furnace rebuild",
+      "the furnace refurbishment",
+      "fixing cracked interior masonry",
+      "the downtime rebuild on the older unit",
+      "the masonry overhaul",
+      "rebuilding the hot zone",
+      "the overdue interior refurbishment",
+      "work to keep the cremator from cracking",
+      "the major furnace overhaul"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "afterburner_chamber",
+     "vendor": "Brightwater Afterburner Co",
+     "memos": [
+      "Afterburner chamber — burner replacement",
+      "Afterburner chamber — fan motor"
+     ],
+     "cross_memo": "Afterburner chamber — electrical rewiring",
+     "plain": [
+      "the afterburner chamber",
+      "afterburner chamber work",
+      "the afterburner chamber fix"
+     ],
+     "oblique": [
+      "the secondary combustion fix",
+      "new smoke-reduction equipment",
+      "the second-stage combustion overhaul",
+      "replacing the failed igniter",
+      "fixing the pollution-control zone",
+      "the blower failure",
+      "restoring secondary combustion",
+      "the clean-air component swap",
+      "parts for the upper combustion stage",
+      "the igniter and blower job",
+      "work after the smoke complaint",
+      "the combustion upgrade",
+      "a failed blower on unit one",
+      "keeping smoke out of the neighborhood",
+      "the secondary-stage parts",
+      "the pollution-control repair"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Burial Vaults & Urns",
+   "aliases": [
+    "vaults",
+    "vaults and urns",
+    "burial containers",
+    "outer containers",
+    "urn stock"
+   ],
+   "narrative": [
+    "Vaults",
+    "Burial containers",
+    "Urn stock"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Concrete Vaults",
+     "base": 18000,
+     "memo": "Standard vault deliveries"
+    },
+    {
+     "vendor": "Harbor Urn Company",
+     "base": 3500,
+     "memo": "Urn replenishment"
+    }
+   ],
+   "events": [
+    {
+     "key": "lawn_crypt",
+     "vendor": "Keystone Concrete Vaults",
+     "memos": [
+      "Lawn crypt rows — precast units",
+      "Lawn crypt rows — crane setting"
+     ],
+     "cross_memo": "Lawn crypt rows — drainage gravel",
+     "plain": [
+      "the lawn crypt rows",
+      "lawn crypt rows purchase",
+      "the lawn crypt rows install"
+     ],
+     "oblique": [
+      "the pre-installed double-depth spaces",
+      "below-ground entombment inventory",
+      "a new garden mausoleum field",
+      "pre-placed underground chambers",
+      "the presold entombment expansion",
+      "stocking the new section with pre-placed chambers",
+      "underground mausoleum spaces",
+      "the pre-sold plot development",
+      "the entombment field",
+      "stock for the pre-need sales push",
+      "the new subterranean entombment block",
+      "pre-built resting chambers",
+      "the development of the east section",
+      "entombment capacity",
+      "the turnkey plot build",
+      "chambers ahead of the pre-need campaign"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "woodland_eco",
+     "vendor": "Meridian Earthcare Goods",
+     "memos": [
+      "Woodland eco line — shroud inventory",
+      "Woodland eco line — wicker caskets"
+     ],
+     "cross_memo": "Woodland eco line — meadow seeding",
+     "plain": [
+      "the woodland eco line",
+      "woodland eco line stock",
+      "the woodland eco launch"
+     ],
+     "oblique": [
+      "the natural funeral offering",
+      "biodegradable products",
+      "stock for environmentally conscious families",
+      "the new conservation-grade option",
+      "launching the natural funeral product range",
+      "the sustainable funeral launch",
+      "embalming-free funeral supplies",
+      "the environmental offering families asked for",
+      "natural fiber coffins and cloths",
+      "the sustainable product rollout",
+      "the natural option launch",
+      "products for the conservation ground",
+      "plant-based coffins",
+      "the earth-friendly funeral range",
+      "new natural-fiber stock",
+      "the sustainability initiative"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Software Subscriptions",
+   "aliases": [
+    "software",
+    "saas",
+    "software subscriptions",
+    "subscriptions",
+    "licenses"
+   ],
+   "narrative": [
+    "Software",
+    "Software subscriptions",
+    "Subscriptions"
+   ],
+   "recurring": [
+    {
+     "vendor": "PlotKeeper Cloud",
+     "base": 4200,
+     "memo": "Cemetery records platform"
+    },
+    {
+     "vendor": "Ledgerline Accounting",
+     "base": 1200,
+     "memo": "Accounting suite seats"
+    }
+   ],
+   "events": [
+    {
+     "key": "gis_mapping",
+     "vendor": "PlotKeeper Cloud",
+     "memos": [
+      "GIS mapping module — drone flyover",
+      "GIS mapping module — data migration"
+     ],
+     "cross_memo": "GIS mapping module — tablet hardware",
+     "plain": [
+      "the GIS mapping module",
+      "GIS mapping module fees",
+      "the GIS mapping rollout"
+     ],
+     "oblique": [
+      "digitizing the paper plot charts",
+      "the aerial survey of the grounds",
+      "geospatial location features",
+      "an interactive grave locator",
+      "putting every plot on a searchable chart",
+      "the grave-finder add-on",
+      "aerial imaging",
+      "moving old plot books into the new system",
+      "the location-search feature families asked for",
+      "the geographic add-on",
+      "plot locator tools",
+      "converting the hand-drawn section charts",
+      "satellite-style imagery",
+      "the visitor wayfinding feature",
+      "the geospatial add-on",
+      "scanning the historical plot ledgers"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "memorial_webcasting",
+     "vendor": "Candlewick Digital",
+     "memos": [
+      "Memorial webcasting — studio cameras",
+      "Memorial webcasting — streaming plan"
+     ],
+     "cross_memo": "Memorial webcasting — chapel bandwidth",
+     "plain": [
+      "the memorial webcasting",
+      "memorial webcasting costs",
+      "the memorial webcasting launch"
+     ],
+     "oblique": [
+      "online funeral broadcasts",
+      "broadcasting services online for remote mourners",
+      "the virtual attendance option",
+      "letting distant relatives watch services",
+      "the remote viewing offering",
+      "video equipment for funerals",
+      "the online viewing launch",
+      "broadcasts for relatives abroad",
+      "virtual funeral attendance",
+      "the video broadcast setup",
+      "remote mourner access",
+      "the new internet broadcast product",
+      "video for graveside services",
+      "online ceremony viewing",
+      "the remote attendance package",
+      "broadcasting ceremonies"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Facility Rent",
+   "aliases": [
+    "rent",
+    "facility rent",
+    "leases",
+    "occupancy",
+    "premises rent"
+   ],
+   "narrative": [
+    "Rent",
+    "Facility rent",
+    "Occupancy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Oakmont Property Trust",
+     "base": 8500,
+     "memo": "Office lease — Main St"
+    },
+    {
+     "vendor": "Ridgefield Storage Yards",
+     "base": 1400,
+     "memo": "Equipment yard lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam_reconciliation",
+     "vendor": "Oakmont Property Trust",
+     "memos": [
+      "CAM reconciliation — prior year true-up",
+      "CAM reconciliation — tax pass-through"
+     ],
+     "cross_memo": "CAM reconciliation — utility rebill",
+     "plain": [
+      "the CAM reconciliation",
+      "CAM reconciliation charges",
+      "the CAM reconciliation bill"
+     ],
+     "oblique": [
+      "the landlord's common-area catch-up",
+      "shared-cost settlement",
+      "the annual building expense settle-up",
+      "the landlord's back-billing",
+      "shared maintenance charges from the landlord",
+      "the common-area expense adjustment",
+      "back charges",
+      "the landlord's operating-cost settle-up",
+      "higher assessed levies passed on",
+      "landlord back-charges for shared costs",
+      "the common-area settle-up",
+      "a retroactive building-cost adjustment",
+      "the delayed landlord statement",
+      "common-area overruns",
+      "the shared operating costs catch-up",
+      "the building owner's annual adjustment"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "temporary_chapel",
+     "vendor": "Fairhaven Modular Spaces",
+     "memos": [
+      "Temporary chapel trailer — setup",
+      "Temporary chapel trailer — rental"
+     ],
+     "cross_memo": "Temporary chapel trailer — portable restrooms",
+     "plain": [
+      "the temporary chapel trailer",
+      "temporary chapel trailer costs",
+      "the temporary chapel"
+     ],
+     "oblique": [
+      "a stopgap service venue",
+      "the interim ceremony space while the hall is renovated",
+      "hiring a mobile ceremony building",
+      "a stand-in venue for funerals",
+      "the interim mourning hall",
+      "short-term ceremony space",
+      "keeping services running during the renovation",
+      "a stopgap venue",
+      "the mobile ceremony unit",
+      "the interim funeral hall",
+      "space for services while the old hall is closed",
+      "the renovation workaround",
+      "an interim ceremony building",
+      "short-term worship space",
+      "the stand-in ceremony building",
+      "the mobile mourning hall"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

@@ -1,0 +1,713 @@
+{
+ "slug": "hair-salon-franchise",
+ "industry": "hair salon franchise",
+ "entities": [
+  "Shearline Salon Group",
+  "Velvet Parlor Franchising",
+  "Crowning Glory Holdings",
+  "Mane Street Brands",
+  "Luxe Strand Partners"
+ ],
+ "accounts": [
+  {
+   "name": "Professional Hair Color Supplies",
+   "aliases": [
+    "color supplies",
+    "hair color spend",
+    "dye and developer",
+    "color product costs",
+    "professional color"
+   ],
+   "narrative": [
+    "Color supplies",
+    "Hair color spend",
+    "Professional color"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pigmenta Professional Distribution",
+     "base": 18500,
+     "memo": "Monthly color tube and developer replenishment"
+    },
+    {
+     "vendor": "Brightside Beauty Wholesale",
+     "base": 9200,
+     "memo": "Lightener and toner standing order"
+    },
+    {
+     "vendor": "Orchid Chemical Supply",
+     "base": 3100,
+     "memo": "Gloves, foils and mixing bowls"
+    }
+   ],
+   "events": [
+    {
+     "key": "balayage",
+     "vendor": "Pigmenta Professional Distribution",
+     "memos": [
+      "Balayage kit launch — starter inventory",
+      "Balayage kit launch — brush and board sets"
+     ],
+     "cross_memo": "Balayage kit launch — stylist demo materials",
+     "plain": [
+      "the balayage kit launch",
+      "the balayage kit rollout",
+      "the balayage kit inventory"
+     ],
+     "oblique": [
+      "stocking every chair for the new painted-highlight service",
+      "the sun-kissed look we added to the menu",
+      "the promotion that sent every location scrambling for product",
+      "what head office pushed out to all the stores",
+      "a seasonal service we had never offered before",
+      "the initial fill of shelves for a brand new offering",
+      "the new lightening technique clients were asking for",
+      "the menu expansion in the summer",
+      "getting the franchisees ready for the trend",
+      "an opening order for freehand highlighting",
+      "extra stock ahead of the new service",
+      "the corporate-mandated service addition",
+      "front-loading shelves for a trend",
+      "what we bought to support the new highlighting option",
+      "the freehand lightening push",
+      "stocking up on a fashionable service"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "recall",
+     "vendor": "Hairwell Laboratories",
+     "memos": [
+      "Ammonia developer recall — replacement cases",
+      "Ammonia developer recall — disposal handling"
+     ],
+     "cross_memo": "Ammonia developer recall — freight returns",
+     "plain": [
+      "the ammonia developer recall",
+      "the ammonia developer replacement",
+      "the ammonia developer disposal"
+     ],
+     "oblique": [
+      "pulling a defective batch off every shelf",
+      "the manufacturer problem with a mixing liquid",
+      "swapping out product that failed a safety notice",
+      "the supplier mistake we had to clean up",
+      "what we replaced after the safety bulletin",
+      "removing tainted stock from all the stores",
+      "the batch that never should have shipped",
+      "an urgent substitution of oxidizer stock",
+      "the bad lot that clients could have been harmed by",
+      "destroying and replacing a faulty lot",
+      "the compliance scramble over a faulty shipment",
+      "what the vendor owed us but we paid up front",
+      "making stores whole after a safety warning",
+      "the quarantined inventory",
+      "a regulator-flagged product problem",
+      "clearing out stock that was unfit to use"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Stylist Commissions and Booth Rental Payouts",
+   "aliases": [
+    "stylist commissions",
+    "commission payouts",
+    "stylist pay",
+    "commission expense",
+    "booth payouts"
+   ],
+   "narrative": [
+    "Stylist commissions",
+    "Commission payouts",
+    "Stylist pay"
+   ],
+   "recurring": [
+    {
+     "vendor": "ShearPay Payroll Services",
+     "base": 26000,
+     "memo": "Biweekly commission run"
+    },
+    {
+     "vendor": "ChairShare Settlement Co",
+     "base": 12500,
+     "memo": "Booth renter settlement"
+    }
+   ],
+   "events": [
+    {
+     "key": "tipsurge",
+     "vendor": "ShearPay Payroll Services",
+     "memos": [
+      "Holiday bridal weekend — premium commission tier",
+      "Holiday bridal weekend — overtime stylist hours"
+     ],
+     "cross_memo": "Holiday bridal weekend — updo trial supplies",
+     "plain": [
+      "the holiday bridal weekend",
+      "the holiday bridal premium tier",
+      "the holiday bridal overtime"
+     ],
+     "oblique": [
+      "a flood of wedding parties in December",
+      "the weekend every chair was booked solid",
+      "extra pay for staff who gave up their days off",
+      "the premium rate we offered to cover demand",
+      "a once-a-year rush of formal appointments",
+      "people filling the calendar for a big celebration",
+      "all hands on deck for the busiest stretch",
+      "bonus incentives to keep the best talent on the floor",
+      "the surge in upscale styling requests",
+      "a short window when demand outran staffing",
+      "paying more to fill every slot",
+      "the seasonal crush of formal events",
+      "our most lucrative three days",
+      "pay bumps for the peak of the festive period",
+      "an unusually dense appointment book",
+      "extra labor for the high-end ceremonies"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "recruiting",
+     "vendor": "Talentcomb Staffing",
+     "memos": [
+      "Senior colorist recruitment — placement fees",
+      "Senior colorist recruitment — signing guarantees"
+     ],
+     "cross_memo": "Senior colorist recruitment — relocation stipend",
+     "plain": [
+      "the senior colorist recruitment",
+      "the senior colorist placement fees",
+      "the senior colorist signing guarantees"
+     ],
+     "oblique": [
+      "hiring experienced people from competitors",
+      "the poaching campaign for top talent",
+      "bringing in veterans to anchor the new stores",
+      "upfront money to lure seasoned hands",
+      "the guaranteed minimums we offered to win people over",
+      "a hiring drive for our most skilled technicians",
+      "the headhunter bills for filling key vacancies",
+      "staffing the flagship before it opened",
+      "enticing established professionals to switch",
+      "outside agency fees for experienced hires",
+      "what it cost to land the best people",
+      "the push to fill vacant high-skill roles",
+      "guaranteed income promised to newcomers",
+      "building out the expert bench",
+      "recruiter charges for hard-to-fill posts",
+      "paying to attract proven professionals"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Salon Chair and Equipment Maintenance",
+   "aliases": [
+    "equipment maintenance",
+    "chair repairs",
+    "salon equipment upkeep",
+    "fixture maintenance",
+    "station maintenance"
+   ],
+   "narrative": [
+    "Equipment maintenance",
+    "Chair repairs",
+    "Station maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hydraulix Chair Service",
+     "base": 4800,
+     "memo": "Hydraulic chair pump servicing"
+    },
+    {
+     "vendor": "Dryer Doctors Inc",
+     "base": 3600,
+     "memo": "Hooded dryer and steamer upkeep"
+    },
+    {
+     "vendor": "Fixture Fit Repairs",
+     "base": 2200,
+     "memo": "Station and mirror repairs"
+    }
+   ],
+   "events": [
+    {
+     "key": "shampoo",
+     "vendor": "Hydraulix Chair Service",
+     "memos": [
+      "Backwash bowl replacement — porcelain units",
+      "Backwash bowl replacement — plumbing hookups"
+     ],
+     "cross_memo": "Backwash bowl replacement — water damage cleanup",
+     "plain": [
+      "the backwash bowl replacement",
+      "the backwash bowl plumbing",
+      "the backwash bowl units"
+     ],
+     "oblique": [
+      "swapping out the sinks where clients lean back",
+      "the leaking washing stations",
+      "the wet area upgrade across several stores",
+      "tearing out cracked basins",
+      "new fixtures for the rinse area",
+      "a plumbing failure that sidelined the back of the shop",
+      "the ceramic fixtures that wore out",
+      "all the sinks reaching end of life",
+      "the rinse stations that cracked",
+      "upgrading where the hair gets washed",
+      "the wet-side refit",
+      "what we replaced after the floors flooded",
+      "modernizing the place clients recline",
+      "the washing area overhaul",
+      "new basins and the pipes behind them",
+      "the leaks that kept stylists from serving customers"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "flooring",
+     "vendor": "Gleam Floor Contractors",
+     "memos": [
+      "Vinyl plank relay — hair-resistant flooring",
+      "Vinyl plank relay — subfloor prep"
+     ],
+     "cross_memo": "Vinyl plank relay — temporary closure signage",
+     "plain": [
+      "the vinyl plank relay",
+      "the vinyl plank flooring",
+      "the vinyl plank subfloor"
+     ],
+     "oblique": [
+      "replacing the worn surfaces underfoot",
+      "a floor redo at the busiest location",
+      "new surfaces that clean up faster",
+      "the old covering that kept peeling",
+      "a facelift for the walking areas",
+      "what we put down after a slip incident",
+      "ripping up damaged boards and starting fresh",
+      "the ground-level refresh",
+      "a safety-driven update below knee height",
+      "the refit that closed a store for a weekend",
+      "tearing out what the insurer flagged",
+      "modern underfoot materials",
+      "cleaner surfaces for stylists on their feet all day",
+      "the renovation of the walking surface",
+      "swapping out damaged coverings",
+      "a surface upgrade the landlord pushed for"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Retail Product Inventory Shrink and Write-offs",
+   "aliases": [
+    "inventory shrink",
+    "retail write-offs",
+    "product shrinkage",
+    "retail losses",
+    "shelf write-offs"
+   ],
+   "narrative": [
+    "Inventory shrink",
+    "Retail write-offs",
+    "Product shrinkage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stocktake Partners",
+     "base": 2800,
+     "memo": "Monthly cycle count adjustment"
+    },
+    {
+     "vendor": "Shelfguard Loss Prevention",
+     "base": 1900,
+     "memo": "Tag and display security service"
+    }
+   ],
+   "events": [
+    {
+     "key": "expiry",
+     "vendor": "Stocktake Partners",
+     "memos": [
+      "Expired serum lots — destruction certificate",
+      "Expired serum lots — adjustment entry"
+     ],
+     "cross_memo": "Expired serum lots — vendor credit shortfall",
+     "plain": [
+      "the expired serum lots",
+      "the expired serum adjustment",
+      "the expired serum destruction"
+     ],
+     "oblique": [
+      "bottles that passed their shelf life",
+      "unsold luxury treatments that spoiled",
+      "stock we could not move in time",
+      "a purchase that overshot what customers wanted",
+      "product that sat in the back room too long",
+      "goods we had to throw away",
+      "the overbuy from the last promotion",
+      "items past their sell-by date",
+      "leftover premium bottles nobody bought",
+      "a forecasting miss on slow movers",
+      "what the auditors made us pull from the shelves",
+      "stale merchandise we finally cleared",
+      "inventory that lost its value",
+      "the dated treatments in the stockroom",
+      "the glut left over from a flop",
+      "unsellable beauty items"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "theft",
+     "vendor": "Sentinel Audit Group",
+     "memos": [
+      "Organized retail theft — loss investigation",
+      "Organized retail theft — police report filing"
+     ],
+     "cross_memo": "Organized retail theft — replacement security cameras",
+     "plain": [
+      "the organized retail theft",
+      "the organized theft investigation",
+      "the organized theft loss"
+     ],
+     "oblique": [
+      "a crew emptying the shelves at several shops",
+      "the coordinated lifting of premium bottles",
+      "a string of grab-and-run incidents",
+      "what a ring of shoplifters took",
+      "the break-in spree on our storefronts",
+      "walk-outs with armfuls of product",
+      "the targeted raids on high-value items",
+      "an insider job we later uncovered",
+      "the weekend when stock disappeared",
+      "a pattern of missing goods across locations",
+      "a crime wave hitting our stores",
+      "bottles that left without being paid for",
+      "the hit on our best-selling lines",
+      "stolen goods from the front displays",
+      "the losses that triggered an inquiry",
+      "a coordinated sweep of expensive merchandise"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Brand Fund and Local Advertising",
+   "aliases": [
+    "brand fund",
+    "local advertising",
+    "franchise marketing",
+    "promo spend",
+    "advertising contributions"
+   ],
+   "narrative": [
+    "Brand fund",
+    "Local advertising",
+    "Franchise marketing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Glossmedia Agency",
+     "base": 14000,
+     "memo": "Social content and paid campaigns"
+    },
+    {
+     "vendor": "Neighborhood Mailers",
+     "base": 6500,
+     "memo": "Direct mail postcards"
+    },
+    {
+     "vendor": "Reviewlift Reputation Co",
+     "base": 2400,
+     "memo": "Review management subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "influencer",
+     "vendor": "Glossmedia Agency",
+     "memos": [
+      "Spring makeover campaign — creator stipends",
+      "Spring makeover campaign — video production"
+     ],
+     "cross_memo": "Spring makeover campaign — model casting fees",
+     "plain": [
+      "the spring makeover campaign",
+      "the spring makeover creators",
+      "the spring makeover production"
+     ],
+     "oblique": [
+      "paying online personalities to showcase our work",
+      "a big push to attract new faces",
+      "the seasonal transformation promotion",
+      "videos featuring before and after reveals",
+      "what we spent to get social feeds buzzing",
+      "the festival of fresh looks we advertised",
+      "a splashy outreach to younger clients",
+      "the shoot we staged in the flagship",
+      "influence-based marketing for the warm season",
+      "an expensive burst of visibility",
+      "cash for personalities with large followings",
+      "a rebrand-style awareness drive",
+      "the glamorous clips we commissioned",
+      "a new-customer acquisition blitz",
+      "the content our agency produced for the season",
+      "a high-profile reveal series"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "billboard",
+     "vendor": "Skyline Outdoor Media",
+     "memos": [
+      "Grand reopening billboards — highway placements",
+      "Grand reopening billboards — printing and install"
+     ],
+     "cross_memo": "Grand reopening billboards — ribbon event signage",
+     "plain": [
+      "the grand reopening billboards",
+      "the grand reopening placements",
+      "the grand reopening install"
+     ],
+     "oblique": [
+      "large roadside ads announcing a revived location",
+      "big signs along the commuter route",
+      "the push to bring back lapsed clients after the remodel",
+      "outdoor advertising for the relaunch",
+      "towering messages for drivers",
+      "announcing the shop was open again",
+      "what we paid to be seen from the freeway",
+      "oversized posters near the interchange",
+      "the awareness effort for the refreshed store",
+      "public displays promoting the return",
+      "street-level promotion of a comeback",
+      "pricey visibility for a single site",
+      "signage that went up along the highway",
+      "a mass-reach move for a local store",
+      "the message we put in front of drivers",
+      "the roadside buy tied to a remodel"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Franchise Royalties and Technology Fees",
+   "aliases": [
+    "royalty fees",
+    "franchisor royalties",
+    "technology fees",
+    "brand royalties",
+    "platform fees"
+   ],
+   "narrative": [
+    "Royalty fees",
+    "Franchisor royalties",
+    "Technology fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shearline Franchisor LLC",
+     "base": 29000,
+     "memo": "Monthly percentage royalty"
+    },
+    {
+     "vendor": "BookWise Scheduling",
+     "base": 7800,
+     "memo": "Appointment platform licenses"
+    },
+    {
+     "vendor": "Tillpoint POS",
+     "base": 5200,
+     "memo": "Point of sale subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "audit",
+     "vendor": "Shearline Franchisor LLC",
+     "memos": [
+      "Royalty underreporting audit — true-up assessment",
+      "Royalty underreporting audit — late interest"
+     ],
+     "cross_memo": "Royalty underreporting audit — external accountant fees",
+     "plain": [
+      "the royalty underreporting audit",
+      "the royalty underreporting true-up",
+      "the royalty underreporting interest"
+     ],
+     "oblique": [
+      "a catch-up payment after the franchisor reviewed our books",
+      "what we owed for past sales we had not reported",
+      "the corrective bill from head office",
+      "money we underpaid earlier in the year",
+      "a retroactive adjustment demanded by the brand",
+      "penalties for earlier reporting gaps",
+      "the review that found we were short",
+      "settling an old discrepancy",
+      "a make-good for earlier months",
+      "the reconciliation that went against us",
+      "the shortfall plus the charge for lateness",
+      "what the examiners asked us to repay",
+      "amounts we should have remitted before",
+      "the outcome of the brand's inspection of our figures",
+      "cleaning up earlier underpayments",
+      "a back-billing for past periods"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "migration",
+     "vendor": "Cloudstyle Systems",
+     "memos": [
+      "Salon app migration — data conversion",
+      "Salon app migration — staff training modules"
+     ],
+     "cross_memo": "Salon app migration — legacy contract termination",
+     "plain": [
+      "the salon app migration",
+      "the salon app conversion",
+      "the salon app training"
+     ],
+     "oblique": [
+      "moving all client records onto the new platform",
+      "switching to the franchisor's newest software",
+      "the changeover that required retraining every stylist",
+      "porting customer histories into a different system",
+      "the cutover weekend",
+      "replacing the old booking tool",
+      "a mandatory move to a different program",
+      "what it cost to get everyone onto the new system",
+      "onboarding the teams to unfamiliar screens",
+      "the upgrade head office required",
+      "transferring decades of customer notes",
+      "the forced technology changeover",
+      "getting off the legacy tool",
+      "converting the database and teaching users",
+      "a mandated tooling swap",
+      "the new platform rollout across stores"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Towels, Linens and Laundry Services",
+   "aliases": [
+    "laundry services",
+    "towel costs",
+    "linen spend",
+    "laundry and linens",
+    "towel service"
+   ],
+   "narrative": [
+    "Laundry services",
+    "Towel costs",
+    "Linen spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "FreshFold Linen Service",
+     "base": 8400,
+     "memo": "Weekly towel and cape rental"
+    },
+    {
+     "vendor": "SpinCycle Commercial Laundry",
+     "base": 4300,
+     "memo": "Smock and apron laundering"
+    }
+   ],
+   "events": [
+    {
+     "key": "bedbug",
+     "vendor": "FreshFold Linen Service",
+     "memos": [
+      "Plush towel upgrade — bulk microfiber order",
+      "Plush towel upgrade — monogramming charges"
+     ],
+     "cross_memo": "Plush towel upgrade — old stock donation freight",
+     "plain": [
+      "the plush towel upgrade",
+      "the plush towel order",
+      "the plush towel monogramming"
+     ],
+     "oblique": [
+      "softer products we introduced for a premium feel",
+      "an elevated touch for the clientele",
+      "new cloths with our logo stitched on",
+      "a luxury refresh of what touches the customer",
+      "the move to a higher grade of fabric",
+      "a branded experience improvement",
+      "what we bought to match the spa image",
+      "the first full replenishment with a better material",
+      "the upscale texture change",
+      "upgraded supplies for the neck and shoulders",
+      "a classier feel for the guests",
+      "a one-time purchase of nicer cloth",
+      "the decision to impress customers in a small way",
+      "a step up in comfort",
+      "replacing worn items with finer ones",
+      "embroidered goods for all locations"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "mold",
+     "vendor": "Aquaclean Restoration",
+     "memos": [
+      "Washer flood remediation — water extraction",
+      "Washer flood remediation — mold treatment"
+     ],
+     "cross_memo": "Washer flood remediation — ruined cape replacements",
+     "plain": [
+      "the washer flood remediation",
+      "the washer flood extraction",
+      "the washer flood mold treatment"
+     ],
+     "oblique": [
+      "cleanup after a burst pipe in the back room",
+      "drying out a soaked utility area",
+      "the damp problem that spread behind the walls",
+      "an emergency response to standing water",
+      "what the insurer would not cover",
+      "repairs after a hose failed overnight",
+      "the unexpected soaking of a service area",
+      "salvage work on a ruined space",
+      "treating growth that appeared after the leak",
+      "a calamity on a Sunday night",
+      "the mess we found when we arrived Monday",
+      "urgent drying and disinfecting",
+      "fixing the aftermath of a plumbing mishap",
+      "what we paid for water damage cleanup",
+      "restoration after an overflow",
+      "the catastrophe in the utility corner"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

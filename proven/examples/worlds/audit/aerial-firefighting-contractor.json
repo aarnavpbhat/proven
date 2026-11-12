@@ -1,0 +1,825 @@
+{
+ "slug": "aerial-firefighting-contractor",
+ "industry": "aerial firefighting contractor",
+ "entities": [
+  "Cinder Ridge Aerial Suppression",
+  "Northfork Air Tanker Company",
+  "Blackpine Helitack Services",
+  "Tallsmoke Aviation Group",
+  "Sierra Ember Airborne LLC"
+ ],
+ "accounts": [
+  {
+   "name": "Aircraft Maintenance",
+   "aliases": [
+    "maintenance",
+    "aircraft maintenance",
+    "mx costs",
+    "maintenance spend",
+    "airframe upkeep"
+   ],
+   "narrative": [
+    "Maintenance",
+    "Mx costs",
+    "Maintenance spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cascade Turbine Services",
+     "base": 24000,
+     "memo": "Monthly engine inspection program — Tanker 41 / Tanker 44"
+    },
+    {
+     "vendor": "Ridgeline Avionics Repair",
+     "base": 6500,
+     "memo": "Avionics bench check — Air Attack 12"
+    },
+    {
+     "vendor": "Northwest Aero Parts Supply",
+     "base": 9000,
+     "memo": "Consumable parts restock — Redding base"
+    }
+   ],
+   "events": [
+    {
+     "key": "gearbox_teardown",
+     "vendor": "Cascade Turbine Services",
+     "memos": [
+      "Gearbox teardown — Helitack 7 main rotor",
+      "Gearbox teardown — bearing kit"
+     ],
+     "cross_memo": "Gearbox teardown — ferry flight fuel",
+     "plain": [
+      "the gearbox teardown",
+      "the Helitack 7 gearbox teardown",
+      "gearbox teardown charges"
+     ],
+     "oblique": [
+      "the transmission overhaul",
+      "pulling apart the helicopter's drivetrain",
+      "opening up the transmission on the medium helicopter",
+      "the drivetrain rebuild",
+      "chasing metal chips found in the oil",
+      "the chip-light investigation",
+      "fixing the drivetrain problem the chip detector flagged",
+      "transmission work",
+      "the helicopter's unscheduled overhaul",
+      "a costly drivetrain fix",
+      "grounding the bucket helicopter for transmission work",
+      "the metal contamination finding",
+      "getting the bucket ship back on contract",
+      "the overdue drivetrain overhaul",
+      "replacing worn transmission components",
+      "the shop's quote on the transmission"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "windscreen_replacement",
+     "vendor": "Sierra Canopy Glassworks",
+     "memos": [
+      "Windscreen replacement — Lead Plane 3 cockpit",
+      "Windscreen replacement — installation labor"
+     ],
+     "cross_memo": "Windscreen replacement — bird strike report",
+     "plain": [
+      "the windscreen replacement",
+      "the Lead Plane 3 windscreen replacement",
+      "windscreen replacement costs"
+     ],
+     "oblique": [
+      "the cracked front glass",
+      "new glazing for the spotter aircraft",
+      "fixing damage from the wildlife hit",
+      "the shattered windshield",
+      "windshield work",
+      "the glazing swap",
+      "repairing the spotter's damaged forward pane",
+      "a wildlife collision on approach",
+      "the cracked glass",
+      "getting the spotter aircraft cleared to operate again",
+      "the hawk collision damage",
+      "the front pane",
+      "unplanned glazing costs",
+      "the damaged windshield on the spotter",
+      "fixing what the hawk broke",
+      "the shop visit after the hawk collision"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Fire Retardant & Suppressants",
+   "aliases": [
+    "retardant",
+    "retardant costs",
+    "suppressants",
+    "chemical spend",
+    "slurry"
+   ],
+   "narrative": [
+    "Retardant costs",
+    "Chemical spend",
+    "Slurry"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ember Shield Chemical Co",
+     "base": 28000,
+     "memo": "Long-term retardant concentrate — Redding reload base"
+    },
+    {
+     "vendor": "Valley Foam Supply",
+     "base": 4200,
+     "memo": "Class A foam concentrate — Chico tanker base"
+    },
+    {
+     "vendor": "Hatfield Water Hauling",
+     "base": 3500,
+     "memo": "Mix water delivery — Chico reload"
+    }
+   ],
+   "events": [
+    {
+     "key": "emergency_resupply",
+     "vendor": "Ember Shield Chemical Co",
+     "memos": [
+      "Emergency resupply — Paradise fire surge order",
+      "Emergency resupply — overnight freight"
+     ],
+     "cross_memo": "Emergency resupply — overtime mixing crew",
+     "plain": [
+      "the emergency resupply",
+      "emergency resupply shipments",
+      "the Paradise emergency resupply"
+     ],
+     "oblique": [
+      "the rush shipments during the big blaze",
+      "running through stock faster than planned",
+      "the extra loads bought mid-incident",
+      "restocking after the Butte County complex",
+      "the incident spike",
+      "rush restocking",
+      "keeping the drops going during the worst week",
+      "the heavy drop volume",
+      "expedited trucking of extra product",
+      "an unplanned stockpile top-up",
+      "the Butte County complex",
+      "heavier drop activity",
+      "the extra product the incident commander requested",
+      "accelerated consumption",
+      "the spike in sorties",
+      "replenishing inventory ahead of schedule"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "sludge_cleanout",
+     "vendor": "Pyramid Industrial Cleaning",
+     "memos": [
+      "Sludge cleanout — Chico batch plant",
+      "Sludge cleanout — hazardous disposal manifest"
+     ],
+     "cross_memo": "Sludge cleanout — lab sample testing",
+     "plain": [
+      "the sludge cleanout",
+      "sludge cleanout costs",
+      "the batch plant sludge cleanout"
+     ],
+     "oblique": [
+      "scrubbing out the storage vessels",
+      "the contaminated holding vessels",
+      "removing the settled residue",
+      "the environmental compliance job",
+      "a regulator-requested vessel scrub",
+      "the residue issue",
+      "getting the storage clean before inspection",
+      "the state environmental finding",
+      "vessel scrubbing",
+      "clearing gunk out of the storage system",
+      "the cleanup the county required",
+      "the residue removal",
+      "environmental remediation",
+      "a messy storage problem",
+      "pumping out the holding vessels",
+      "the compliance scrub"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Aviation Fuel",
+   "aliases": [
+    "fuel",
+    "jet fuel",
+    "fuel burn",
+    "jet-a",
+    "fuel costs"
+   ],
+   "narrative": [
+    "Fuel",
+    "Fuel burn",
+    "Fuel costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Aviation Fuels",
+     "base": 26000,
+     "memo": "Jet-A uplift — Redding base"
+    },
+    {
+     "vendor": "Prairie Wing FBO",
+     "base": 8000,
+     "memo": "Jet-A uplift — Lancaster tanker base"
+    },
+    {
+     "vendor": "Highdesert Fuel Truck Co",
+     "base": 2500,
+     "memo": "Into-plane fueling fee — Prescott"
+    }
+   ],
+   "events": [
+    {
+     "key": "spot_pricing",
+     "vendor": "Summit Aviation Fuels",
+     "memos": [
+      "Spot pricing adjustment — Redding allocation shortfall",
+      "Spot pricing adjustment — contract variance"
+     ],
+     "cross_memo": "Spot pricing adjustment — hedge settlement",
+     "plain": [
+      "spot pricing",
+      "the spot pricing adjustment",
+      "spot pricing charges"
+     ],
+     "oblique": [
+      "the market price spike",
+      "paying above the agreed rate",
+      "the supplier's emergency markup",
+      "higher per-gallon costs",
+      "the refinery outage passing through",
+      "short supply at the main field",
+      "a premium for gallons beyond our quota",
+      "the price jump",
+      "buying at market instead of our negotiated rate",
+      "the refinery disruption",
+      "costlier gallons",
+      "a gap between quota and need",
+      "the supplier passing through its own higher costs",
+      "the West Coast supply squeeze",
+      "elevated per-gallon charges",
+      "the rate premium"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "remote_staging",
+     "vendor": "Bonanza Mobile Refueling",
+     "memos": [
+      "Remote staging — Klamath helibase bowser",
+      "Remote staging — standby truck days"
+     ],
+     "cross_memo": "Remote staging — crew camp lodging",
+     "plain": [
+      "remote staging",
+      "the Klamath remote staging",
+      "remote staging costs"
+     ],
+     "oblique": [
+      "getting gallons out to the backcountry",
+      "the forward operating site",
+      "the bush deployment",
+      "keeping the helicopters topped up away from the airport",
+      "the field deployment in the Siskiyous",
+      "hauled-in gallons at the forward site",
+      "the off-airport operation",
+      "the forward site",
+      "a temporary bush helispot",
+      "supporting the Siskiyou assignment",
+      "the backcountry setup",
+      "the portable tank hire",
+      "keeping helicopters supplied in the mountains",
+      "the Forest Service's request for a forward site",
+      "the field operation",
+      "the mountain deployment"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Crew Lodging & Per Diem",
+   "aliases": [
+    "per diem",
+    "crew lodging",
+    "lodging",
+    "per diems",
+    "crew housing"
+   ],
+   "narrative": [
+    "Per diem",
+    "Crew lodging",
+    "Crew housing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinecrest Inn & Suites",
+     "base": 12000,
+     "memo": "Crew rooms — Redding base"
+    },
+    {
+     "vendor": "Basecamp Catering Group",
+     "base": 7000,
+     "memo": "Crew meals — Chico tanker base"
+    },
+    {
+     "vendor": "Timberline Extended Stay",
+     "base": 5500,
+     "memo": "Mechanic housing — Prescott"
+    }
+   ],
+   "events": [
+    {
+     "key": "evacuation_block",
+     "vendor": "Pinecrest Inn & Suites",
+     "memos": [
+      "Evacuation block booking — 14 rooms Weaverville",
+      "Evacuation block booking — cancellation penalty"
+     ],
+     "cross_memo": "Evacuation block booking — rental cars",
+     "plain": [
+      "the evacuation block booking",
+      "evacuation block charges",
+      "the Weaverville evacuation block"
+     ],
+     "oblique": [
+      "moving everyone out ahead of the advancing flames",
+      "the forced move out of town",
+      "having to relocate when the sheriff cleared the area",
+      "the last-minute relocation",
+      "paying for nights we couldn't use",
+      "the wasted reservations",
+      "the sheriff's clearance order",
+      "relocating staff away from the threatened town",
+      "the relocation",
+      "unused reservations plus new ones elsewhere",
+      "the hasty move to safer accommodation",
+      "double-paying for accommodation during the move",
+      "fleeing the advancing fire",
+      "the town being cleared",
+      "accommodation chaos during the Trinity incident",
+      "the scramble for new accommodation"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "surge_deployment",
+     "vendor": "Golden Spur Hotel",
+     "memos": [
+      "Surge deployment — 22 pilot rooms Boise",
+      "Surge deployment — mechanic team meals"
+     ],
+     "cross_memo": "Surge deployment — positioning airfare",
+     "plain": [
+      "the surge deployment",
+      "the Boise surge deployment",
+      "surge deployment costs"
+     ],
+     "oblique": [
+      "sending extra aviators to Idaho",
+      "the Idaho ramp-up",
+      "the larger Idaho contingent",
+      "staffing up for the Great Basin assignment",
+      "bringing in reinforcements",
+      "added headcount on assignment",
+      "the interagency request for more aircraft",
+      "the extra people we sent north",
+      "the Idaho callout",
+      "more aviators on the road",
+      "the bigger Idaho footprint",
+      "doubling staffing at the Idaho airfield",
+      "reinforcements",
+      "the Great Basin dispatch",
+      "an expanded contingent in Idaho",
+      "keeping additional aviators fed and sheltered"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Hull & Liability Insurance",
+   "aliases": [
+    "insurance",
+    "hull insurance",
+    "liability cover",
+    "premiums",
+    "insurance premiums"
+   ],
+   "narrative": [
+    "Insurance",
+    "Premiums",
+    "Hull insurance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Peak Underwriters",
+     "base": 18000,
+     "memo": "Hull premium installment — fleet policy"
+    },
+    {
+     "vendor": "Aerial Risk Brokers",
+     "base": 2500,
+     "memo": "Broker service fee — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "schedule_endorsement",
+     "vendor": "Granite Peak Underwriters",
+     "memos": [
+      "Schedule endorsement — leased Tanker N822FW added",
+      "Schedule endorsement — pro-rata hull"
+     ],
+     "cross_memo": "Schedule endorsement — registration filing",
+     "plain": [
+      "the schedule endorsement",
+      "schedule endorsement charges",
+      "the leased tanker schedule endorsement"
+     ],
+     "oblique": [
+      "covering the newly acquired airtanker",
+      "bringing the new airframe onto cover",
+      "insuring the extra aircraft",
+      "the mid-year airframe acquisition",
+      "the new airtanker",
+      "putting the rented airframe on our cover",
+      "the extra airframe",
+      "coverage for the aircraft we brought on mid-season",
+      "insuring the summer surge aircraft",
+      "the bigger roster of aircraft",
+      "the new Very Large Airtanker",
+      "the carrier's charge for the new aircraft",
+      "extending coverage to another aircraft",
+      "the acquisition of a third airtanker",
+      "the coverage top-up",
+      "a bigger insured roster"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "deductible_payment",
+     "vendor": "Ironclad Loss Adjusting",
+     "memos": [
+      "Deductible payment — Tanker 41 hard landing claim",
+      "Deductible payment — adjuster survey"
+     ],
+     "cross_memo": "Deductible payment — runway damage repair",
+     "plain": [
+      "the deductible payment",
+      "deductible payment on the hard landing",
+      "the hard landing deductible payment"
+     ],
+     "oblique": [
+      "our share of the touchdown accident",
+      "the botched arrival at Chico",
+      "the out-of-pocket portion of the accident",
+      "the touchdown incident",
+      "what the carrier didn't pay",
+      "the gear collapse",
+      "our retention on the accident",
+      "the accident",
+      "the uninsured portion of the gear collapse",
+      "the self-funded share",
+      "the Chico touchdown accident",
+      "our part of the accident bill",
+      "the retained portion",
+      "the out-of-pocket hit",
+      "the gear collapse at Chico",
+      "settling our share after the accident"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Hangar & Base Rent",
+   "aliases": [
+    "rent",
+    "hangar rent",
+    "facilities",
+    "base rent",
+    "occupancy"
+   ],
+   "narrative": [
+    "Rent",
+    "Hangar rent",
+    "Facilities"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shasta Regional Airport Authority",
+     "base": 14000,
+     "memo": "Hangar 3 lease — Redding"
+    },
+    {
+     "vendor": "Foothill Properties LLC",
+     "base": 6000,
+     "memo": "Office suite lease — Chico ops"
+    },
+    {
+     "vendor": "Lancaster Airpark Holdings",
+     "base": 4500,
+     "memo": "Ramp space — Lancaster tanker base"
+    }
+   ],
+   "events": [
+    {
+     "key": "apron_extension",
+     "vendor": "Shasta Regional Airport Authority",
+     "memos": [
+      "Apron extension — temporary parking spots",
+      "Apron extension — security deposit"
+     ],
+     "cross_memo": "Apron extension — lighting electrician",
+     "plain": [
+      "the apron extension",
+      "apron extension charges",
+      "the apron extension deposit"
+     ],
+     "oblique": [
+      "more tie-down room for the visiting aircraft",
+      "the extra pad area",
+      "room for the surge aircraft",
+      "paying for additional paved area",
+      "the added tie-downs",
+      "the bigger footprint at the field",
+      "accommodating the out-of-region aircraft",
+      "the extra tie-down area",
+      "more paved area",
+      "the field's upfront refundable charge",
+      "the larger aircraft footprint",
+      "room for the visiting fleet",
+      "the pad enlargement",
+      "an upfront refundable sum",
+      "the field's terms for more room",
+      "the airfield expansion"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "fabric_shelter",
+     "vendor": "Bluebird Modular Structures",
+     "memos": [
+      "Fabric shelter — Klamath helibase erection",
+      "Fabric shelter — monthly rental"
+     ],
+     "cross_memo": "Fabric shelter — anchoring concrete",
+     "plain": [
+      "the fabric shelter",
+      "the Klamath fabric shelter",
+      "fabric shelter costs"
+     ],
+     "oblique": [
+      "the tent at the forward site",
+      "putting up cover for the helicopters in the woods",
+      "the big tent",
+      "weather protection out at the forward site",
+      "the field tent",
+      "covering the helicopters during the Siskiyou assignment",
+      "a soft-sided building",
+      "the prefab tent",
+      "keeping the helicopters out of the weather",
+      "the forward site's new tent",
+      "the soft-sided building at the forward site",
+      "the tent",
+      "putting up weather cover in the backcountry",
+      "the Forest Service-requested tent",
+      "a stretch tent for the helicopters",
+      "the mountain tent"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Flight Operations Software",
+   "aliases": [
+    "software",
+    "subscriptions",
+    "saas",
+    "it subscriptions",
+    "software licenses"
+   ],
+   "narrative": [
+    "Software",
+    "Subscriptions",
+    "Software licenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "SkyTrace Telemetry",
+     "base": 3200,
+     "memo": "Satellite tracking — 9 aircraft"
+    },
+    {
+     "vendor": "Hangarlog Systems",
+     "base": 2400,
+     "memo": "Maintenance tracking license"
+    },
+    {
+     "vendor": "Dispatchly Cloud",
+     "base": 1100,
+     "memo": "Crew scheduling seats"
+    }
+   ],
+   "events": [
+    {
+     "key": "hardware_retrofit",
+     "vendor": "SkyTrace Telemetry",
+     "memos": [
+      "Hardware retrofit — Tanker 44 transceiver",
+      "Hardware retrofit — install bench"
+     ],
+     "cross_memo": "Hardware retrofit — avionics shop labor",
+     "plain": [
+      "the hardware retrofit",
+      "the Tanker 44 hardware retrofit",
+      "hardware retrofit charges"
+     ],
+     "oblique": [
+      "new tracker boxes for the airtanker",
+      "upgrading the onboard position units",
+      "the onboard gear upgrade",
+      "putting new position reporters in the airtanker",
+      "the agency-mandated position reporting upgrade",
+      "swapping out obsolete onboard units",
+      "the position reporter swap",
+      "replacing the units that failed contract compliance",
+      "the onboard equipment refresh",
+      "a mandated reporting upgrade",
+      "new boxes",
+      "the airtanker's reporting kit",
+      "meeting the new Forest Service position reporting rule",
+      "the upgrade of onboard units",
+      "replacing old position boxes",
+      "the airtanker gear refresh"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "records_migration",
+     "vendor": "Corvid Data Migration",
+     "memos": [
+      "Records migration — legacy logbook conversion",
+      "Records migration — FAA audit prep"
+     ],
+     "cross_memo": "Records migration — temp scanning clerks",
+     "plain": [
+      "the records migration",
+      "records migration work",
+      "the logbook records migration"
+     ],
+     "oblique": [
+      "digitising the old paper history",
+      "moving historical paperwork into the new platform",
+      "the paper-to-digital project",
+      "getting ready for the regulator's review",
+      "the regulator review",
+      "cleaning up historical airframe paperwork",
+      "the digitisation project",
+      "the paperwork cleanup",
+      "consultants digitising old paperwork",
+      "readiness for the inspector's visit",
+      "the one-time digitisation",
+      "bringing paper history online",
+      "getting ready for the federal review",
+      "the historical paperwork project",
+      "the inspector's visit",
+      "digitising decades of paperwork"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Pilot Training & Certification",
+   "aliases": [
+    "training",
+    "pilot training",
+    "certification",
+    "checkrides",
+    "training costs"
+   ],
+   "narrative": [
+    "Training",
+    "Pilot training",
+    "Training costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sundance Simulator Center",
+     "base": 9500,
+     "memo": "Sim sessions — S-2T recurrent"
+    },
+    {
+     "vendor": "Western Fire Aviation Academy",
+     "base": 6000,
+     "memo": "Ground school — Redding cohort"
+    },
+    {
+     "vendor": "Cal Flight Check Services",
+     "base": 2000,
+     "memo": "Proficiency checks — Air Attack pilots"
+    }
+   ],
+   "events": [
+    {
+     "key": "night_vision",
+     "vendor": "Sundance Simulator Center",
+     "memos": [
+      "Night vision goggle course — helicopter crews",
+      "Night vision goggle course — goggle rental"
+     ],
+     "cross_memo": "Night vision goggle course — aircraft lighting mod",
+     "plain": [
+      "the night vision goggle course",
+      "night vision goggle training",
+      "the night vision goggle program"
+     ],
+     "oblique": [
+      "getting the rotor-wing team cleared for after-dark missions",
+      "the after-dark ops rating",
+      "dark-hours capability",
+      "the agency push for after-dark missions",
+      "the NVG rating",
+      "the after-dark program",
+      "equipping for nocturnal missions",
+      "the nocturnal capability",
+      "after-dark ops",
+      "the NVG upgrade",
+      "meeting the new after-dark contract requirement",
+      "the NVG endorsement",
+      "readying the helo team for twilight work",
+      "nocturnal missions",
+      "the NVG rollout",
+      "the dark-hours rating for the helo team"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "drop_qualification",
+     "vendor": "Kestrel Scooper Instruction",
+     "memos": [
+      "Drop qualification — scooper pickups Lake Shasta",
+      "Drop qualification — evaluator day rate"
+     ],
+     "cross_memo": "Drop qualification — practice fuel burn",
+     "plain": [
+      "drop qualification",
+      "the scooper drop qualification",
+      "drop qualification fees"
+     ],
+     "oblique": [
+      "the amphibian certification",
+      "teaching new captains to skim the reservoir",
+      "reservoir pickup training",
+      "getting the new amphibian captains signed off",
+      "the amphibian sign-offs",
+      "the reservoir sign-offs",
+      "on-water skimming training",
+      "the external examiner",
+      "carding the new amphibian captains",
+      "the amphibian program",
+      "skim training",
+      "the reservoir work",
+      "the new-hire amphibian captains",
+      "the examiner's fees",
+      "readying the amphibians for the season",
+      "on-water certification"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

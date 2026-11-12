@@ -1,0 +1,790 @@
+{
+ "slug": "offshore-salmon-farm",
+ "industry": "offshore salmon farm",
+ "entities": [
+  "Nordkapp Sea Farms AS",
+  "Havblikk Salmon Group",
+  "Skjoldvik Aquaculture Ltd",
+  "Outer Reef Salmon Co",
+  "Tidestrand Marine Harvest Holdings"
+ ],
+ "accounts": [
+  {
+   "name": "Fish Feed",
+   "aliases": [
+    "feed",
+    "feed costs",
+    "feed spend",
+    "pellet feed",
+    "feed purchases"
+   ],
+   "narrative": [
+    "Feed costs",
+    "Feed spend",
+    "Pellet feed"
+   ],
+   "recurring": [
+    {
+     "vendor": "Nordhavn Aquafeeds",
+     "base": 28000,
+     "memo": "Grower pellets — monthly delivery"
+    },
+    {
+     "vendor": "Skerry Marine Nutrition",
+     "base": 9500,
+     "memo": "Starter crumble — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "medicated_ration",
+     "vendor": "Nordhavn Aquafeeds",
+     "memos": [
+      "Medicated ration — lice treatment batch",
+      "Medicated ration — freight surcharge"
+     ],
+     "cross_memo": "Medicated ration — vet prescription fee",
+     "plain": [
+      "the medicated ration",
+      "medicated ration batches",
+      "the medicated ration order"
+     ],
+     "oblique": [
+      "the parasite outbreak",
+      "parasite control",
+      "drug-dosed diets",
+      "therapeutic diets for the infested pens",
+      "the antiparasitic program",
+      "emergency dosing",
+      "in-diet drugs for the stock",
+      "the infestation at the outer cages",
+      "dosing fish the health team flagged",
+      "pharmaceutical additives",
+      "the parasite flare-up",
+      "a drug course given with food",
+      "tackling the sea parasites",
+      "dosed food",
+      "the drug course the fish doctor ordered",
+      "pharma for the affected fish"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "krill_meal",
+     "vendor": "Lofoten Krill Supply",
+     "memos": [
+      "Krill meal — spot purchase",
+      "Krill meal — bulk tote"
+     ],
+     "cross_memo": "Krill meal — silo cleaning",
+     "plain": [
+      "the krill meal purchase",
+      "krill meal",
+      "the bulk krill meal"
+     ],
+     "oblique": [
+      "the pigment boost",
+      "flesh color enhancement",
+      "a crustacean protein top-up",
+      "pushing fillet redness before harvest",
+      "extra protein the buyers asked for",
+      "the astaxanthin source",
+      "richer diets ahead of slaughter",
+      "a one-time ingredient buy",
+      "boosting growth with shellfish protein",
+      "the color program",
+      "pinker flesh",
+      "the new northern ingredient source",
+      "a premium diet ingredient",
+      "the opportunistic raw material buy",
+      "protein inclusion for faster growth",
+      "the ingredient switch production wanted"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Net Pen Maintenance",
+   "aliases": [
+    "nets",
+    "net pens",
+    "pen maintenance",
+    "net maintenance",
+    "cage upkeep"
+   ],
+   "narrative": [
+    "Net maintenance",
+    "Pen maintenance",
+    "Cage upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Fjordline Net Services",
+     "base": 14000,
+     "memo": "Net cleaning — scheduled rotation"
+    },
+    {
+     "vendor": "Havbruk Rope & Twine",
+     "base": 4200,
+     "memo": "Mooring line inspection — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "storm_damage",
+     "vendor": "Fjordline Net Services",
+     "memos": [
+      "Storm damage — mesh repair",
+      "Storm damage — diver hours"
+     ],
+     "cross_memo": "Storm damage — vessel standby",
+     "plain": [
+      "the storm damage",
+      "storm damage repairs",
+      "storm damage fixes"
+     ],
+     "oblique": [
+      "the gale aftermath",
+      "fixing torn enclosures",
+      "patching holes the weather tore open",
+      "restoring cages after the winter blow",
+      "bad weather",
+      "the hurricane-force winds at the exposed site",
+      "underwater patching",
+      "the escape-prevention fixes",
+      "sealing the breaches before fish got out",
+      "wave-battered cages",
+      "the tempest cleanup",
+      "emergency subsea mending",
+      "rough seas at the outer site",
+      "making the enclosures whole again",
+      "the weather event",
+      "restitching what the swell shredded"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "anchor_replacement",
+     "vendor": "Brattvag Anchor Works",
+     "memos": [
+      "Anchor replacement — chain and shackles",
+      "Anchor replacement — crane barge"
+     ],
+     "cross_memo": "Anchor replacement — survey report",
+     "plain": [
+      "the anchor replacement",
+      "new anchor replacement",
+      "the anchor replacement job"
+     ],
+     "oblique": [
+      "new seabed holdings for the cages",
+      "the ground tackle swap",
+      "resetting the seafloor fixings",
+      "heavier holding gear",
+      "the grid upgrade the insurer required",
+      "securing the farm to the bottom",
+      "a sea-floor hardware refresh",
+      "the holding system overhaul",
+      "swapping worn-out bottom gear",
+      "lifting operations at sea",
+      "the dragging problem at site three",
+      "keeping the cages from drifting",
+      "new deadweights",
+      "the grid refit",
+      "upgrading the attachment points",
+      "seabed hardware"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Vessel Fuel",
+   "aliases": [
+    "fuel",
+    "marine fuel",
+    "bunkering",
+    "diesel spend",
+    "boat fuel"
+   ],
+   "narrative": [
+    "Marine fuel",
+    "Bunkering",
+    "Diesel spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Westfjord Bunkers",
+     "base": 17000,
+     "memo": "MGO delivery — workboat fleet"
+    },
+    {
+     "vendor": "Solund Energy",
+     "base": 2100,
+     "memo": "Lube oil — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "smolt_transfer",
+     "vendor": "Westfjord Bunkers",
+     "memos": [
+      "Smolt transfer — wellboat refuel",
+      "Smolt transfer — after-hours callout"
+     ],
+     "cross_memo": "Smolt transfer — crew overtime",
+     "plain": [
+      "the smolt transfer",
+      "smolt transfer runs",
+      "the smolt transfer refuel"
+     ],
+     "oblique": [
+      "moving juveniles from the hatchery",
+      "stocking the new cages",
+      "the young fish run out to sea",
+      "restocking",
+      "the hatchery-to-site trips",
+      "extra sailings to seed the empty site",
+      "putting out the spring generation",
+      "juvenile shipments",
+      "the stocking voyages",
+      "a big restocking push",
+      "ferrying fingerlings offshore",
+      "seeding the fallowed location",
+      "live-fish haulage",
+      "the new generation going to sea",
+      "longer runs to the far site",
+      "late-day sailings for the stocking"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "tow_assistance",
+     "vendor": "Kystvakt Towage",
+     "memos": [
+      "Tow assistance — disabled feed barge",
+      "Tow assistance — standby tug"
+     ],
+     "cross_memo": "Tow assistance — engine diagnostics",
+     "plain": [
+      "the tow assistance",
+      "tow assistance for the barge",
+      "the emergency tow assistance"
+     ],
+     "oblique": [
+      "hauling the broken-down platform",
+      "rescuing the stricken pontoon",
+      "the breakdown at site two",
+      "pulling the dead platform into port",
+      "a salvage operation",
+      "getting the immobilised raft back to harbour",
+      "the powerplant failure",
+      "a harbour pull",
+      "a rescue",
+      "salvage work",
+      "outside marine help",
+      "bringing in the drifting platform",
+      "the powerless pontoon",
+      "a hired pulling boat",
+      "the stranded raft",
+      "recovery of the crippled unit"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Veterinary & Fish Health",
+   "aliases": [
+    "fish health",
+    "vet costs",
+    "health services",
+    "veterinary",
+    "biosecurity spend"
+   ],
+   "narrative": [
+    "Fish health",
+    "Vet costs",
+    "Biosecurity spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Aquavet Diagnostics",
+     "base": 6200,
+     "memo": "Gill sampling — monthly"
+    },
+    {
+     "vendor": "Saltwater Health Partners",
+     "base": 4800,
+     "memo": "Welfare audit — retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "algal_bloom",
+     "vendor": "Aquavet Diagnostics",
+     "memos": [
+      "Algal bloom — plankton counts",
+      "Algal bloom — lab rush"
+     ],
+     "cross_memo": "Algal bloom — aeration hire",
+     "plain": [
+      "the algal bloom",
+      "algal bloom testing",
+      "the algal bloom response"
+     ],
+     "oblique": [
+      "the toxic water event",
+      "testing after the red tide",
+      "harmful microorganisms",
+      "the oxygen crisis",
+      "monitoring the water toxicity",
+      "urgent microscopy work",
+      "the red tide",
+      "fast-tracked analyses during the die-off scare",
+      "the jellyfish scare",
+      "tracking the poisonous water",
+      "daily water tests during the event",
+      "the mortality scare",
+      "expedited test results",
+      "checking for toxins",
+      "the low-oxygen episode at the inner site",
+      "water quality analysis"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "vaccination_round",
+     "vendor": "Nordic Vaccine Crew",
+     "memos": [
+      "Vaccination round — injection team",
+      "Vaccination round — vaccine doses"
+     ],
+     "cross_memo": "Vaccination round — lodging",
+     "plain": [
+      "the vaccination round",
+      "a vaccination round",
+      "the autumn vaccination round"
+     ],
+     "oblique": [
+      "immunizing the autumn intake",
+      "jabbing the new stock",
+      "the immunization program",
+      "protecting juveniles before sea transfer",
+      "outside jab specialists",
+      "shots for the new generation",
+      "disease prevention",
+      "the pre-stocking immunization",
+      "inoculating two million fish",
+      "a contract immunization squad",
+      "the jab campaign",
+      "preventive shots",
+      "inoculations",
+      "the program the insurer insisted on",
+      "protecting stock against virus outbreaks",
+      "the mass inoculation"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Sea Site Lease & Licensing",
+   "aliases": [
+    "site lease",
+    "licence fees",
+    "concession fees",
+    "seabed rent",
+    "licensing"
+   ],
+   "narrative": [
+    "Site lease",
+    "Licence fees",
+    "Concession fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hordaland Marine Estate",
+     "base": 12000,
+     "memo": "Seabed lease — monthly"
+    },
+    {
+     "vendor": "Fjord Permit Office",
+     "base": 5500,
+     "memo": "Biomass permit — monthly levy"
+    }
+   ],
+   "events": [
+    {
+     "key": "capacity_uplift",
+     "vendor": "Fjord Permit Office",
+     "memos": [
+      "Capacity uplift — application fee",
+      "Capacity uplift — tonnage charge"
+     ],
+     "cross_memo": "Capacity uplift — legal review",
+     "plain": [
+      "the capacity uplift",
+      "the capacity uplift application",
+      "capacity uplift charges"
+     ],
+     "oblique": [
+      "growing the allowed stocking limit",
+      "the bigger production quota",
+      "a higher standing-stock ceiling",
+      "the expansion bid",
+      "the request to farm more fish",
+      "more allowed volume",
+      "the growth licence",
+      "the quota increase",
+      "regulator paperwork for the expansion",
+      "a larger production allowance",
+      "the licence upgrade",
+      "the expansion filing",
+      "growth approvals",
+      "raising the site's maximum",
+      "the authorities' expansion process",
+      "extra production rights"
+     ],
+     "low": 30000,
+     "high": 60000
+    },
+    {
+     "key": "benthic_study",
+     "vendor": "Brekke Environmental Consulting",
+     "memos": [
+      "Benthic study — ROV footage",
+      "Benthic study — sediment cores"
+     ],
+     "cross_memo": "Benthic study — boat charter",
+     "plain": [
+      "the benthic study",
+      "a benthic study",
+      "the benthic study work"
+     ],
+     "oblique": [
+      "the seafloor impact assessment",
+      "checking the mud under the cages",
+      "bottom monitoring",
+      "an underwater camera inspection",
+      "the regulator's ecological check",
+      "grab samples beneath the farm",
+      "ecological monitoring",
+      "proving the ocean floor is healthy",
+      "the waste impact assessment",
+      "the ecology assessment",
+      "measuring organic buildup below the pens",
+      "the compliance dive",
+      "the condition report the regulator demanded",
+      "floor sampling",
+      "the ecology contractor",
+      "documenting impact on the sea floor"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Harvest & Processing Services",
+   "aliases": [
+    "harvest costs",
+    "slaughter fees",
+    "processing",
+    "harvest services",
+    "packing costs"
+   ],
+   "narrative": [
+    "Harvest costs",
+    "Slaughter fees",
+    "Packing costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Vikna Harvest Station",
+     "base": 24000,
+     "memo": "Slaughter — per tonne contract"
+    },
+    {
+     "vendor": "Isfjord Packhouse",
+     "base": 7800,
+     "memo": "Ice and boxes — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "weekend_shifts",
+     "vendor": "Isfjord Packhouse",
+     "memos": [
+      "Weekend shifts — gutting line",
+      "Weekend shifts — supervisor premium"
+     ],
+     "cross_memo": "Weekend shifts — trucking",
+     "plain": [
+      "the weekend shifts",
+      "extra weekend shifts",
+      "weekend shifts at the plant"
+     ],
+     "oblique": [
+      "running the plant seven days a week",
+      "Saturday and Sunday staffing",
+      "extra processing time",
+      "the backlog clearance",
+      "working through the glut",
+      "seven-day operations",
+      "additional crews to clear the queue",
+      "the overtime push",
+      "clearing fish waiting at the plant",
+      "extended plant operations",
+      "the throughput push",
+      "staffing up for the big catch",
+      "round-the-clock processing",
+      "the peak volume surge",
+      "keeping the plant open on rest days",
+      "the extra days of evisceration"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "airfreight_consignment",
+     "vendor": "Polar Reefer Logistics",
+     "memos": [
+      "Airfreight consignment — fresh fillets Asia",
+      "Airfreight consignment — handling"
+     ],
+     "cross_memo": "Airfreight consignment — insurance",
+     "plain": [
+      "the airfreight consignment",
+      "an airfreight consignment",
+      "the airfreight consignment to Asia"
+     ],
+     "oblique": [
+      "flying salmon to Tokyo buyers",
+      "the air shipment",
+      "the first Japanese order",
+      "shipping by plane",
+      "a rush overseas order",
+      "getting chilled product onto a cargo jet",
+      "the new Far East customer",
+      "an export trial",
+      "jet cargo",
+      "the Shanghai sample order",
+      "sending product overseas by air",
+      "the premium export run",
+      "a trial order from a sushi chain",
+      "overseas market entry",
+      "the cargo flight",
+      "a new export channel"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Software & Systems",
+   "aliases": [
+    "software",
+    "it costs",
+    "systems",
+    "subscriptions",
+    "tech spend"
+   ],
+   "narrative": [
+    "Software",
+    "Tech spend",
+    "Subscriptions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tidewise Software",
+     "base": 5200,
+     "memo": "Farm management SaaS — monthly"
+    },
+    {
+     "vendor": "Kystnett Telecom",
+     "base": 3600,
+     "memo": "Satellite link — sites"
+    }
+   ],
+   "events": [
+    {
+     "key": "camera_analytics",
+     "vendor": "Tidewise Software",
+     "memos": [
+      "Camera analytics — module activation",
+      "Camera analytics — onboarding"
+     ],
+     "cross_memo": "Camera analytics — hardware",
+     "plain": [
+      "the camera analytics module",
+      "camera analytics",
+      "the camera analytics rollout"
+     ],
+     "oblique": [
+      "the AI lice-counting tool",
+      "machine vision",
+      "the biomass estimation add-on",
+      "turning on video fish counting",
+      "automated weight estimates",
+      "the new imaging features",
+      "setup and training for the vision tool",
+      "computer vision rollout",
+      "the underwater video upgrade",
+      "image-based monitoring",
+      "the AI add-on",
+      "an upsell from the platform provider",
+      "automating the fish counts",
+      "the pilot the production director pushed",
+      "smart video",
+      "the vision system go-live"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "ransomware_incident",
+     "vendor": "Bjorkvik Cyber Response",
+     "memos": [
+      "Ransomware incident — forensics",
+      "Ransomware incident — recovery"
+     ],
+     "cross_memo": "Ransomware incident — legal",
+     "plain": [
+      "the ransomware incident",
+      "ransomware incident response",
+      "the ransomware incident cleanup"
+     ],
+     "oblique": [
+      "the hack",
+      "the breach cleanup",
+      "restoring encrypted servers",
+      "the security breach",
+      "an attack on the office network",
+      "outside security specialists",
+      "malware remediation",
+      "the extortion attempt",
+      "rebuilding the servers after the attack",
+      "emergency IT security work",
+      "a hacker break-in",
+      "investigating how attackers got in",
+      "the data lockout",
+      "malware",
+      "the systems outage",
+      "getting back online after the attack"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Travel & Crew Transport",
+   "aliases": [
+    "travel",
+    "crew travel",
+    "staff transport",
+    "rotation travel",
+    "commuting costs"
+   ],
+   "narrative": [
+    "Travel",
+    "Crew travel",
+    "Staff transport"
+   ],
+   "recurring": [
+    {
+     "vendor": "Helgeland Air Shuttle",
+     "base": 8400,
+     "memo": "Crew rotation flights"
+    },
+    {
+     "vendor": "Seaside Lodge Bronnoy",
+     "base": 3900,
+     "memo": "Crew accommodation — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "medical_evacuation",
+     "vendor": "Helgeland Air Shuttle",
+     "memos": [
+      "Medical evacuation — injured deckhand",
+      "Medical evacuation — night callout"
+     ],
+     "cross_memo": "Medical evacuation — clinic invoice",
+     "plain": [
+      "the medical evacuation",
+      "a medical evacuation",
+      "the deckhand medical evacuation"
+     ],
+     "oblique": [
+      "getting a hurt worker to hospital",
+      "the accident",
+      "an emergency helicopter lift",
+      "the rescue airlift",
+      "the workplace accident at the outer site",
+      "lifting a hurt colleague ashore",
+      "the emergency helicopter",
+      "the hospital transfer",
+      "the on-site accident",
+      "an emergency",
+      "the hurt worker's transport",
+      "an ambulance helicopter",
+      "the safety incident",
+      "a crushed hand on the barge",
+      "the rescue",
+      "emergency transport for an employee"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "industry_summit",
+     "vendor": "Ostvik Conference Bureau",
+     "memos": [
+      "Industry summit — delegate passes",
+      "Industry summit — hotel block"
+     ],
+     "cross_memo": "Industry summit — booth build",
+     "plain": [
+      "the industry summit",
+      "industry summit passes",
+      "the industry summit trip"
+     ],
+     "oblique": [
+      "the aquaculture trade show",
+      "sending managers to Bergen",
+      "the trade fair",
+      "the expo in Trondheim",
+      "registration for the sector gathering",
+      "the stand at the show",
+      "networking with buyers",
+      "the annual trade event",
+      "exhibition costs",
+      "the seafood expo",
+      "the sector meetup",
+      "sales and marketing at the fair",
+      "the expo trip",
+      "rooms for the expo team",
+      "the investor and buyer event",
+      "representing the company at the fair"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

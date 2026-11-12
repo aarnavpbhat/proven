@@ -1,0 +1,708 @@
+{
+ "slug": "towing-and-roadside-assistance",
+ "industry": "towing and roadside assistance",
+ "entities": [
+  "Redline Recovery Group",
+  "Ironhook Towing & Roadside",
+  "Northgate Wrecker Services",
+  "Blue Mile Roadside Assist",
+  "Summit Road Rescue"
+ ],
+ "accounts": [
+  {
+   "name": "Fleet Maintenance & Repairs",
+   "aliases": [
+    "fleet maintenance",
+    "fleet repairs",
+    "truck upkeep",
+    "shop costs",
+    "fleet upkeep spend"
+   ],
+   "narrative": [
+    "Fleet maintenance",
+    "Fleet repairs",
+    "Truck upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Axle & Anchor Truck Service",
+     "base": 14500,
+     "memo": "Svc PM inspections - tow fleet"
+    },
+    {
+     "vendor": "Tri-County Tire Supply",
+     "base": 8200,
+     "memo": "Inv tires and mounting - flatbeds"
+    },
+    {
+     "vendor": "Pioneer Parts Depot",
+     "base": 6100,
+     "memo": "Inv brake and filter stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "hydraulic",
+     "vendor": "Axle & Anchor Truck Service",
+     "memos": [
+      "Hydraulic boom rebuild - cylinder reseal",
+      "Hydraulic boom rebuild - hose replacement"
+     ],
+     "cross_memo": "Hydraulic boom rebuild - loaner wrecker",
+     "plain": [
+      "the hydraulic boom rebuild",
+      "the boom rebuild",
+      "hydraulic boom rebuild costs"
+     ],
+     "oblique": [
+      "getting the heavy-lift trucks working again",
+      "the overhaul of the big wreckers' lifting arms",
+      "rework on the equipment that pulls semis out of ditches",
+      "lifting gear repairs",
+      "fixing the arms that failed their load test",
+      "the heavy rig refurbishment",
+      "restoring our largest recovery trucks",
+      "work on the lifting mechanisms",
+      "the leaking arm repair job",
+      "getting the semi-recovery units certified again",
+      "corrective work after the failed safety check",
+      "overhauling our biggest haulers' lifting systems",
+      "the heavy-duty unit refurb",
+      "repairs on gear that moves oversize loads",
+      "a major refit of the top-capacity trucks",
+      "the mechanical work on lifting equipment"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "transmission",
+     "vendor": "Delmar Drivetrain Specialists",
+     "memos": [
+      "Fleet transmission campaign - Allison units",
+      "Fleet transmission campaign - remanufactured cores"
+     ],
+     "cross_memo": "Fleet transmission campaign - towing of units to shop",
+     "plain": [
+      "the fleet transmission campaign",
+      "the transmission campaign",
+      "fleet transmission campaign costs"
+     ],
+     "oblique": [
+      "swapping out gearboxes across the older trucks",
+      "the recall-style gear replacement program",
+      "work prompted by a manufacturer defect notice",
+      "proactive replacement of worn power-train parts",
+      "the mass changeout of drive components",
+      "getting ahead of a known failure pattern",
+      "the multi-truck gearbox project",
+      "replacing parts before they failed on the road",
+      "the power-train refresh",
+      "a batch of rebuilt gear assemblies",
+      "the preventive swap on aging units",
+      "the defect-driven replacement effort",
+      "work on the shifting hardware in a dozen trucks",
+      "the push to avoid roadside breakdowns of our own trucks",
+      "replacement of the parts between engine and wheels",
+      "the drivetrain refresh program"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Fuel & Fluids",
+   "aliases": [
+    "fuel",
+    "fuel costs",
+    "diesel spend",
+    "fluids",
+    "fuel and fluids spend"
+   ],
+   "narrative": [
+    "Fuel costs",
+    "Diesel spend",
+    "Fuel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Fleet Fuel Card",
+     "base": 29000,
+     "memo": "Inv fuel card settlement - diesel"
+    },
+    {
+     "vendor": "Brightline Lubricants",
+     "base": 3200,
+     "memo": "Inv motor oil and DEF"
+    }
+   ],
+   "events": [
+    {
+     "key": "surcharge",
+     "vendor": "Keystone Fleet Fuel Card",
+     "memos": [
+      "Pipeline disruption surcharge - Gulf region",
+      "Pipeline disruption surcharge - rack differential"
+     ],
+     "cross_memo": "Pipeline disruption surcharge - dispatch fee credit",
+     "plain": [
+      "the pipeline disruption surcharge",
+      "pipeline disruption charges",
+      "the pipeline surcharge"
+     ],
+     "oblique": [
+      "a price spike after a supply outage",
+      "extra per-gallon charges from the distributor",
+      "the regional shortage premium",
+      "what we paid when deliveries ran dry",
+      "the temporary markup on every tank",
+      "higher pump rates after a refinery issue",
+      "the cost of scarce supply",
+      "emergency pricing on bulk purchases",
+      "the supplier's added fee",
+      "an upcharge passed down by our card provider",
+      "the market squeeze on energy prices",
+      "the price shock from a supply interruption",
+      "a premium triggered by a downstream bottleneck",
+      "extra cents on every gallon",
+      "the shortage-related markup",
+      "costs from the upstream logistics problem"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "bulktank",
+     "vendor": "Cardinal Petroleum Equipment",
+     "memos": [
+      "Yard bulk tank install - 10K gal diesel",
+      "Yard bulk tank install - containment pad"
+     ],
+     "cross_memo": "Yard bulk tank install - permit filing",
+     "plain": [
+      "the yard bulk tank install",
+      "the bulk tank install",
+      "yard bulk tank costs"
+     ],
+     "oblique": [
+      "putting our own pump on the property",
+      "building fueling capacity at the depot",
+      "the storage we added at the lot",
+      "bringing refueling in-house",
+      "the on-site filling station project",
+      "a new way to avoid retail pumps",
+      "the capital project for self-service fueling",
+      "getting a private supply point",
+      "the setup of our own gas island",
+      "installing storage so trucks stop queuing at stations",
+      "the fueling facility buildout",
+      "the concrete and steel for stocking our own supply",
+      "our first owned supply depot",
+      "the facility upgrade to buy in bulk",
+      "the pad and vessel project",
+      "the infrastructure behind cheaper purchasing"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Tow Equipment & Rigging",
+   "aliases": [
+    "rigging",
+    "tow equipment",
+    "winch and chain spend",
+    "recovery gear",
+    "equipment supplies"
+   ],
+   "narrative": [
+    "Rigging",
+    "Tow equipment",
+    "Recovery gear"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hollis Chain & Cable",
+     "base": 4800,
+     "memo": "Inv chains, straps, cable"
+    },
+    {
+     "vendor": "Dolly Works Supply",
+     "base": 3600,
+     "memo": "Inv wheel lifts and dolly parts"
+    }
+   ],
+   "events": [
+    {
+     "key": "airbag",
+     "vendor": "Hollis Chain & Cable",
+     "memos": [
+      "Air cushion lift kit - rollover recovery",
+      "Air cushion lift kit - compressor pack"
+     ],
+     "cross_memo": "Air cushion lift kit - operator certification",
+     "plain": [
+      "the air cushion lift kit",
+      "air cushion kit purchases",
+      "the cushion lift kit"
+     ],
+     "oblique": [
+      "gear to raise overturned trucks without a crane",
+      "new inflatable recovery equipment",
+      "the purchase that lets us handle rollovers",
+      "equipment aimed at big-rig upsets",
+      "a capability add for upright-restoring jobs",
+      "the lifting bags we bought",
+      "tools for vehicles lying on their sides",
+      "a big-ticket recovery toy",
+      "the investment in heavy salvage ability",
+      "what we spent to win highway cleanup contracts",
+      "gear for freeing crashed haulers",
+      "the inflatable set for tipped trailers",
+      "new kit for the toughest jobs",
+      "the equipment that cuts crane rentals",
+      "a specialty purchase for large-vehicle incidents",
+      "the tools bought after losing a bid"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "wheelset",
+     "vendor": "Granger Industrial Rigs",
+     "memos": [
+      "Self-loader body order - four units",
+      "Self-loader body order - install labor"
+     ],
+     "cross_memo": "Self-loader body order - upfit financing fee",
+     "plain": [
+      "the self-loader body order",
+      "self-loader body costs",
+      "the self-loader order"
+     ],
+     "oblique": [
+      "new beds for the light-duty trucks",
+      "the shipment of platforms we ordered",
+      "expansion of our small-vehicle capacity",
+      "upgrades for the trucks that carry cars",
+      "a four-unit purchase for the lineup",
+      "the upfit of chassis we already owned",
+      "what we paid to put more cars on the road",
+      "additions to the hauling side",
+      "the batch of vehicle carriers",
+      "new carrying decks for the motor club contract",
+      "renewing the older passenger-car haulers",
+      "equipment arriving to serve higher call volume",
+      "the order placed to meet demand",
+      "the platform bodies mounted last quarter",
+      "the carrier refresh",
+      "bodies bolted to new cabs"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Dispatch & Call Center",
+   "aliases": [
+    "dispatch",
+    "call center",
+    "dispatch costs",
+    "answering services",
+    "dispatch operations"
+   ],
+   "narrative": [
+    "Dispatch",
+    "Call center",
+    "Dispatch costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Relay Dispatch Software",
+     "base": 7400,
+     "memo": "Mnt dispatch platform subscription"
+    },
+    {
+     "vendor": "NightOwl Answering",
+     "base": 9800,
+     "memo": "Svc after-hours call handling"
+    },
+    {
+     "vendor": "Clearwave Telecom",
+     "base": 2900,
+     "memo": "Inv lines and SIP trunks"
+    }
+   ],
+   "events": [
+    {
+     "key": "stormsurge",
+     "vendor": "NightOwl Answering",
+     "memos": [
+      "Blizzard overflow staffing - extra agents",
+      "Blizzard overflow staffing - weekend premium"
+     ],
+     "cross_memo": "Blizzard overflow staffing - driver standby pay",
+     "plain": [
+      "the blizzard overflow staffing",
+      "blizzard overflow costs",
+      "the blizzard staffing"
+     ],
+     "oblique": [
+      "handling a flood of stranded motorists",
+      "the winter call surge",
+      "extra headcount when phones lit up",
+      "the weather event's phone traffic",
+      "a spike in calls from icy highways",
+      "temporary hands on the lines",
+      "the premium paid for short-notice help",
+      "our worst demand week",
+      "coverage for the unusual weekend rush",
+      "additional operators during the cold snap",
+      "what it took to answer every distress call",
+      "the peak-volume period",
+      "costs from the freeze-up",
+      "the emergency bump in people on the phones",
+      "crews added when roads turned to glass",
+      "staffing for the storm"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "gpsmigr",
+     "vendor": "Veritrack Systems",
+     "memos": [
+      "Telematics migration - vehicle tracker swap",
+      "Telematics migration - data cutover"
+     ],
+     "cross_memo": "Telematics migration - cellular plan true-up",
+     "plain": [
+      "the telematics migration",
+      "telematics migration costs",
+      "the tracker migration"
+     ],
+     "oblique": [
+      "moving to a new location-reporting system",
+      "replacing devices in every cab",
+      "the cutover to better truck visibility",
+      "changing providers for live positions",
+      "the project to see where drivers are",
+      "new hardware in the dashboard of each unit",
+      "the switch away from our old map feed",
+      "a platform change for locating vehicles",
+      "swapping out aging boxes under the dash",
+      "the transition to a modern fleet-view tool",
+      "upgrading how dispatchers see the trucks",
+      "the changeover finished before year-end",
+      "onboarding the replacement location service",
+      "getting live position data on a new vendor",
+      "the dash-unit replacement effort",
+      "the conversion of our vehicle-locating setup"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Insurance & Claims",
+   "aliases": [
+    "insurance",
+    "claims",
+    "insurance costs",
+    "liability spend",
+    "premiums and claims"
+   ],
+   "narrative": [
+    "Insurance",
+    "Claims",
+    "Insurance costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harbor Mutual Commercial",
+     "base": 24000,
+     "memo": "Qtr auto liability premium installment"
+    },
+    {
+     "vendor": "Stonebridge Cargo Cover",
+     "base": 6500,
+     "memo": "Qtr garagekeepers and hook coverage"
+    }
+   ],
+   "events": [
+    {
+     "key": "cargoloss",
+     "vendor": "Stonebridge Cargo Cover",
+     "memos": [
+      "Impound lot hail loss - deductible payment",
+      "Impound lot hail loss - appraisal fee"
+     ],
+     "cross_memo": "Impound lot hail loss - body shop temp storage",
+     "plain": [
+      "the impound lot hail loss",
+      "hail loss deductible",
+      "the hail loss"
+     ],
+     "oblique": [
+      "damage to customer cars sitting in our care",
+      "the weather claim on stored vehicles",
+      "our share of a big storm payout",
+      "what we owed after ice fell from the sky",
+      "vehicles dented while parked with us",
+      "the settlement on dozens of dinged autos",
+      "the out-of-pocket slice of the policy payout",
+      "a payout tied to property we were holding",
+      "the one-day event that hit the lot",
+      "the amount we eat before the carrier pays",
+      "dents on cars awaiting owners",
+      "the damage assessment bills",
+      "the claim from an afternoon thunderstorm",
+      "costs after an outdoor storage mishap",
+      "repair obligations for others' property",
+      "an act-of-nature incident at the yard"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "auditadj",
+     "vendor": "Lindqvist Risk Advisors",
+     "memos": [
+      "Workers comp audit adjustment - class code review",
+      "Workers comp audit adjustment - payroll reclass"
+     ],
+     "cross_memo": "Workers comp audit adjustment - consultant hours",
+     "plain": [
+      "the workers comp audit adjustment",
+      "comp audit adjustment",
+      "the audit adjustment"
+     ],
+     "oblique": [
+      "a retroactive true-up from the carrier",
+      "the bill that arrived after the policy year ended",
+      "extra premium for driver headcount we underreported",
+      "the reclassification of how jobs were rated",
+      "the catch-up charge on last year's payroll",
+      "an invoice following the insurer's review",
+      "the correction of our injury-coverage rating",
+      "additional coverage cost for prior months",
+      "what the underwriter said we owed",
+      "the delayed premium reconciliation",
+      "an after-the-fact bump for on-road staff",
+      "the adjustment on employee injury protection",
+      "a balance due once the books were examined",
+      "the rate change applied backward",
+      "the shortfall flagged by the carrier's examiners",
+      "the late cost on staff protection coverage"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Driver Payroll & Benefits",
+   "aliases": [
+    "driver pay",
+    "payroll",
+    "driver wages",
+    "operator compensation",
+    "labor costs"
+   ],
+   "narrative": [
+    "Driver pay",
+    "Payroll",
+    "Operator compensation"
+   ],
+   "recurring": [
+    {
+     "vendor": "Paylane Payroll Services",
+     "base": 30000,
+     "memo": "Inv bi-weekly driver payroll funding"
+    },
+    {
+     "vendor": "Carewell Benefits Group",
+     "base": 12500,
+     "memo": "Mnt health plan employer share"
+    }
+   ],
+   "events": [
+    {
+     "key": "retention",
+     "vendor": "Paylane Payroll Services",
+     "memos": [
+      "Driver retention bonus - tenure tier payout",
+      "Driver retention bonus - employer tax"
+     ],
+     "cross_memo": "Driver retention bonus - recruiting ad credit",
+     "plain": [
+      "the driver retention bonus",
+      "retention bonus payouts",
+      "the retention bonus"
+     ],
+     "oblique": [
+      "a reward for staying on the team",
+      "the cash handed out to keep our people",
+      "incentives to stop turnover",
+      "a loyalty payment to veteran staff",
+      "money paid to those who passed an anniversary",
+      "the one-time thank-you for experienced operators",
+      "what we spent to hold on to talent",
+      "a payout after a rival poached staff",
+      "the stay-with-us award",
+      "extra wages for long-serving employees",
+      "the lump sums that kept crews from leaving",
+      "a response to a tight labor market",
+      "the special check at year-end for seniors",
+      "pay to discourage resignations",
+      "a lump-sum for keeping seats filled",
+      "the payout tied to length of service"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "cdltrain",
+     "vendor": "Roadmark Training Institute",
+     "memos": [
+      "CDL class B training cohort - tuition",
+      "CDL class B training cohort - road test fees"
+     ],
+     "cross_memo": "CDL class B training cohort - trainee stipend",
+     "plain": [
+      "the CDL class B training cohort",
+      "CDL cohort tuition",
+      "the class B cohort"
+     ],
+     "oblique": [
+      "schooling for new hires to drive heavier trucks",
+      "the licensing push for entry-level staff",
+      "getting rookies legally behind the wheel of big rigs",
+      "a group of trainees working toward credentials",
+      "the program that expands who can drive our trucks",
+      "tuition we covered for people we are building up",
+      "investment in qualifying more operators",
+      "the pipeline of newly licensed drivers",
+      "what it cost to upskill helpers",
+      "a batch of learners and their exam fees",
+      "the cohort we sponsored",
+      "bringing groundlings up to commercial permits",
+      "the pay for people not yet on the schedule",
+      "a development program for future haulers",
+      "expenses for the apprentices",
+      "the credential drive"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Yard & Facility Costs",
+   "aliases": [
+    "yard costs",
+    "facility",
+    "rent and utilities",
+    "yard lease",
+    "depot spend"
+   ],
+   "narrative": [
+    "Yard costs",
+    "Facility",
+    "Depot spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Eastfield Industrial Properties",
+     "base": 18500,
+     "memo": "Inv monthly yard lease - Depot 1"
+    },
+    {
+     "vendor": "Metro Power & Light",
+     "base": 3400,
+     "memo": "Inv electric - shop and office"
+    },
+    {
+     "vendor": "CleanSweep Facility Svc",
+     "base": 1800,
+     "memo": "Svc janitorial and trash"
+    }
+   ],
+   "events": [
+    {
+     "key": "repave",
+     "vendor": "Eastfield Industrial Properties",
+     "memos": [
+      "Lot resurfacing - asphalt overlay",
+      "Lot resurfacing - striping and drainage"
+     ],
+     "cross_memo": "Lot resurfacing - temporary vehicle relocation",
+     "plain": [
+      "the lot resurfacing",
+      "lot resurfacing costs",
+      "the resurfacing project"
+     ],
+     "oblique": [
+      "fixing the cratered ground where trucks park",
+      "a new driving surface on the property",
+      "work to stop puddles and potholes",
+      "the ground improvement the landlord passed through",
+      "repairs to where wheels roll",
+      "a fresh top layer for the grounds",
+      "correcting rutted and flooded areas",
+      "the paving project",
+      "the surface work that closed half the grounds",
+      "what our landlord billed after the roadwork",
+      "a cost shared for the rebuilt outdoors",
+      "the tarmac refresh",
+      "tearing up and relaying the hard standing",
+      "fresh blacktop and painted lines",
+      "the site-improvement pass-through",
+      "work after a safety complaint about holes"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "fenceinstall",
+     "vendor": "Sentinel Security Systems",
+     "memos": [
+      "Perimeter security upgrade - fencing and gates",
+      "Perimeter security upgrade - camera install"
+     ],
+     "cross_memo": "Perimeter security upgrade - guard patrol interim",
+     "plain": [
+      "the perimeter security upgrade",
+      "perimeter security costs",
+      "the security upgrade"
+     ],
+     "oblique": [
+      "locking down the property after thefts",
+      "new barriers around the grounds",
+      "the response to catalytic converter theft",
+      "protection for what we store overnight",
+      "the hardening of the site boundary",
+      "new eyes watching the back lot",
+      "a project that followed break-ins",
+      "gates and watchers added after a loss",
+      "the anti-trespass improvements",
+      "equipment to keep intruders out",
+      "spending prompted by the insurer's recommendation",
+      "tighter control over who enters",
+      "the safeguard package for impounded vehicles",
+      "the cost of making the depot harder to enter",
+      "walls and lenses installed this quarter",
+      "the theft-prevention buildout"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,703 @@
+{
+ "slug": "dance-studio-network",
+ "industry": "dance studio network",
+ "entities": [
+  "Cadence Collective Studios",
+  "Pirouette Partners Group",
+  "Barre & Beyond Network",
+  "Jete Row Dance Holdings",
+  "Tendu Lane Studios Inc"
+ ],
+ "accounts": [
+  {
+   "name": "Studio Floor Maintenance",
+   "aliases": [
+    "floors",
+    "floor maintenance",
+    "studio floors",
+    "floor upkeep",
+    "sprung floor costs"
+   ],
+   "narrative": [
+    "Floor maintenance",
+    "Studio floors",
+    "Floor upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hartwell Floor Care",
+     "base": 4200,
+     "memo": "Monthly floor cleaning and buffing"
+    },
+    {
+     "vendor": "Marlow Surface Supply",
+     "base": 1800,
+     "memo": "Floor cleaner and mop supplies"
+    }
+   ],
+   "events": [
+    {
+     "key": "subfloor",
+     "vendor": "Hartwell Floor Care",
+     "memos": [
+      "Subfloor moisture remediation — foam layer replacement",
+      "Subfloor moisture remediation — dehumidifier labor"
+     ],
+     "cross_memo": "Subfloor moisture remediation — temporary class relocation fees",
+     "plain": [
+      "the subfloor moisture remediation",
+      "the subfloor remediation work",
+      "the moisture remediation project"
+     ],
+     "oblique": [
+      "pulling up the rotted layers beneath the dance surface",
+      "fixing the damp problem under the main room",
+      "the crew that dried out the lower construction",
+      "getting the downtown room usable again after the leak",
+      "tear-out and rebuild below the visible surface",
+      "the wet-basement fallout",
+      "repairs after the pipe burst overnight",
+      "emergency drying and rebuild",
+      "what we spent making the room safe for jumps",
+      "the soggy foundation fix",
+      "redoing what sits beneath the top boards",
+      "post-flood restoration",
+      "the water damage cleanup",
+      "work the landlord refused to cover",
+      "reviving the room that flooded",
+      "a fix for the spongy spots dancers complained about"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "vinyl",
+     "vendor": "Dovetail Dance Surfaces",
+     "memos": [
+      "Marley vinyl installation — Studio C",
+      "Marley vinyl installation — seam welding and adhesive"
+     ],
+     "cross_memo": "Marley vinyl installation — old surface hauling and disposal",
+     "plain": [
+      "the marley vinyl installation",
+      "the marley vinyl surface",
+      "the studio C marley vinyl"
+     ],
+     "oblique": [
+      "a new top layer for the tap-free ballet room",
+      "resurfacing the room for pointe classes",
+      "the grippy covering the teachers requested",
+      "replacing the worn covering in the third room",
+      "a roll-out surface for the new ballet program",
+      "swapping the torn sheets for fresh ones",
+      "the upgrade that stopped dancers slipping",
+      "fresh covering for the busiest room",
+      "what went down before the recital season",
+      "the glossy black covering our instructors wanted",
+      "a facelift for the room with the peeling top",
+      "new covering ahead of the audition workshops",
+      "sheet goods for the ballet space",
+      "the covering we ordered from the dance flooring specialist",
+      "laying down something less slippery",
+      "replacing the patched and taped surface"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Costume and Recital Production",
+   "aliases": [
+    "costumes",
+    "recital costs",
+    "costume spend",
+    "recital production",
+    "show production"
+   ],
+   "narrative": [
+    "Costume spend",
+    "Recital production",
+    "Costumes"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sequin Sisters Wholesale",
+     "base": 6500,
+     "memo": "Costume fabric and trims"
+    },
+    {
+     "vendor": "Stitchwell Alterations",
+     "base": 3200,
+     "memo": "Alterations and fittings"
+    },
+    {
+     "vendor": "Opal Garment Storage",
+     "base": 900,
+     "memo": "Costume rack storage"
+    }
+   ],
+   "events": [
+    {
+     "key": "nutcracker",
+     "vendor": "Sequin Sisters Wholesale",
+     "memos": [
+      "Nutcracker holiday production — snow scene tutus",
+      "Nutcracker holiday production — rush fabric order"
+     ],
+     "cross_memo": "Nutcracker holiday production — rehearsal pizza and snacks",
+     "plain": [
+      "the nutcracker holiday production",
+      "the nutcracker production costumes",
+      "the nutcracker holiday show"
+     ],
+     "oblique": [
+      "the winter classic our youngest students perform",
+      "the December ballet everyone buys tickets for",
+      "our annual seasonal crowd-pleaser",
+      "the show with the dancing mice and the sugar plum",
+      "last-minute orders for the big family performance",
+      "the blockbuster of our performance calendar",
+      "the story ballet the whole network joins",
+      "tutus for the snowflake corps",
+      "the end-of-year tradition parents love",
+      "the performance that sold out the theater",
+      "adding cast members meant extra outfits",
+      "the yearly staging at the civic hall",
+      "the holiday spectacle",
+      "what we built for the festive ballet",
+      "the cast-of-hundreds undertaking",
+      "the production that eats November and December"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "regional",
+     "vendor": "Glitterdome Productions",
+     "memos": [
+      "Regional competition team — custom group costumes",
+      "Regional competition team — rhinestone application labor"
+     ],
+     "cross_memo": "Regional competition team — entry fees and hotel block",
+     "plain": [
+      "the regional competition team",
+      "the regional competition costumes",
+      "the regional team outfits"
+     ],
+     "oblique": [
+      "outfits for the squad heading to the tournament",
+      "the traveling group's matching looks",
+      "getting our best dancers dressed for the judges",
+      "stage wear for the contest circuit",
+      "bedazzling the performance group gear",
+      "the statewide showdown wardrobe",
+      "matching sparkle for the elite troupe",
+      "what the senior crew wore on stage out of town",
+      "one-off garments for the award-hunting ensemble",
+      "the glam team's new look",
+      "hand-stoned pieces made just for our top group",
+      "wardrobe for the weekend away with judges",
+      "the contest ensemble's custom gear",
+      "sparkly pieces ordered for the touring group",
+      "our showpiece group's stage clothes",
+      "made-to-measure pieces for the trophy chasers"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Instructor Contractor Fees",
+   "aliases": [
+    "instructors",
+    "teacher pay",
+    "contractor instructors",
+    "instructor fees",
+    "teaching staff costs"
+   ],
+   "narrative": [
+    "Instructor fees",
+    "Teacher pay",
+    "Teaching staff costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Corps Staffing Collective",
+     "base": 22000,
+     "memo": "Contract instructor payroll"
+    },
+    {
+     "vendor": "Gracenote Teaching Artists",
+     "base": 8500,
+     "memo": "Guest teaching artist retainers"
+    }
+   ],
+   "events": [
+    {
+     "key": "intensive",
+     "vendor": "Gracenote Teaching Artists",
+     "memos": [
+      "Summer intensive faculty — master teacher stipends",
+      "Summer intensive faculty — travel buyouts"
+     ],
+     "cross_memo": "Summer intensive faculty — housing for visiting teachers",
+     "plain": [
+      "the summer intensive faculty",
+      "the summer intensive teachers",
+      "the summer intensive stipends"
+     ],
+     "oblique": [
+      "bringing in famous names for the vacation program",
+      "extra pay for the school-break boot camp",
+      "the two-week deep dive for serious students",
+      "specialists we flew in for the hot months",
+      "a lineup of big-name guests",
+      "the bonus staffing for the long training block",
+      "visiting luminaries and their fees",
+      "the season of premium workshops",
+      "extra hands for the daylong sessions in July",
+      "the guest roster for the advanced camp",
+      "pay for the stars we booked for vacation weeks",
+      "what we spent staffing the pre-professional program",
+      "the workshop series with the retired principal dancers",
+      "visiting coaches for the big seasonal program",
+      "the high-level camp teachers",
+      "extra teaching bodies needed when school lets out"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "covering",
+     "vendor": "Plie Placement Agency",
+     "memos": [
+      "Emergency substitute coverage — flu outbreak",
+      "Emergency substitute coverage — agency placement fee"
+     ],
+     "cross_memo": "Emergency substitute coverage — overtime for front desk",
+     "plain": [
+      "the emergency substitute coverage",
+      "the emergency substitute fees",
+      "the emergency coverage placements"
+     ],
+     "oblique": [
+      "filling in when half the staff was out sick",
+      "scrambling to keep classes from being cancelled",
+      "temporary bodies at the barre",
+      "the illness wave that emptied the teacher roster",
+      "stopgap hires during the bad week",
+      "paying a premium for last-minute stand-ins",
+      "the winter bug and its fallout",
+      "keeping every timetable slot staffed",
+      "fees for people we found overnight",
+      "the week nobody could teach",
+      "rush replacements at the front of the room",
+      "cover for the absent faculty",
+      "a surge of short-notice hires",
+      "what we paid to avoid refunding students",
+      "walk-in help during the sickness spike",
+      "gap-filling when the schedule fell apart"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Music Licensing and Audio",
+   "aliases": [
+    "music licensing",
+    "licensing fees",
+    "audio costs",
+    "music rights",
+    "sound spend"
+   ],
+   "narrative": [
+    "Music licensing",
+    "Licensing fees",
+    "Audio costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tempo Rights Society",
+     "base": 2400,
+     "memo": "Public performance license"
+    },
+    {
+     "vendor": "Beatbox Streaming Business",
+     "base": 1100,
+     "memo": "Class playlist subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "soundsystem",
+     "vendor": "Beatbox Streaming Business",
+     "memos": [
+      "Speaker rewiring project — studio amplifier upgrade",
+      "Speaker rewiring project — ceiling mount labor"
+     ],
+     "cross_memo": "Speaker rewiring project — electrician overtime",
+     "plain": [
+      "the speaker rewiring project",
+      "the speaker rewiring upgrade",
+      "the amplifier upgrade project"
+     ],
+     "oblique": [
+      "making the rooms sound better for teachers",
+      "replacing the crackling gear in the back rooms",
+      "the work that fixed the tinny audio",
+      "new hardware to get music evenly through the room",
+      "the fix for dead spots in the music",
+      "installing equipment the instructors kept asking for",
+      "cables behind the walls and fresh components",
+      "an overhaul of what the students hear",
+      "upgrading what blasts the warm-up tracks",
+      "gear swap in the largest room",
+      "the boom-and-crackle cure",
+      "redoing the setup after complaints about volume",
+      "modernizing the audio setup",
+      "sound that finally reaches the back row",
+      "the project with the ladder and the drill",
+      "new hardware for the music in every classroom"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "copyright",
+     "vendor": "Harmon & Vale Rights Clearance",
+     "memos": [
+      "Original score commission — composer fee",
+      "Original score commission — recording session"
+     ],
+     "cross_memo": "Original score commission — printing sheet music copies",
+     "plain": [
+      "the original score commission",
+      "the original score recording",
+      "the original score composer fee"
+     ],
+     "oblique": [
+      "paying someone to write music just for our showcase",
+      "a one-of-a-kind soundtrack for the spring performance",
+      "dues for an artist who wrote new pieces",
+      "tracks we own outright now",
+      "the arrangement made exclusively for us",
+      "cutting the cost of renting songs by owning one",
+      "the musician we hired for a fresh piece",
+      "studio time to capture something custom",
+      "clearing our own tunes for future use",
+      "what the hired songwriter charged",
+      "fees to put a signature piece behind our choreography",
+      "the bespoke accompaniment",
+      "tailor-made music for the anniversary show",
+      "a work no one else can perform",
+      "the new composition behind the finale",
+      "sounds we commissioned from a local writer"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Studio Insurance and Safety",
+   "aliases": [
+    "insurance",
+    "studio insurance",
+    "safety costs",
+    "liability coverage",
+    "injury and safety spend"
+   ],
+   "narrative": [
+    "Insurance",
+    "Studio insurance",
+    "Safety costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Mutual Coverage",
+     "base": 5600,
+     "memo": "General liability premium"
+    },
+    {
+     "vendor": "SafeStep Compliance",
+     "base": 1300,
+     "memo": "Fire extinguisher and AED service"
+    }
+   ],
+   "events": [
+    {
+     "key": "claim",
+     "vendor": "Keystone Mutual Coverage",
+     "memos": [
+      "Student injury claim — deductible payment",
+      "Student injury claim — legal review"
+     ],
+     "cross_memo": "Student injury claim — medical transport reimbursement",
+     "plain": [
+      "the student injury claim",
+      "the student injury deductible",
+      "the student injury legal review"
+     ],
+     "oblique": [
+      "the fall in the advanced class that ended in the ER",
+      "our out-of-pocket share when a dancer got hurt",
+      "a mishap in the pre-pointe session",
+      "the incident that triggered a call to the carrier",
+      "the sprain that became a dispute",
+      "what we owed before coverage kicked in",
+      "the accident parents asked questions about",
+      "lawyers looking over the hallway slip",
+      "a mishap during partner lifts",
+      "costs once the family's paperwork arrived",
+      "the broken ankle bill",
+      "our share of an unfortunate afternoon",
+      "the cleanup after someone landed badly",
+      "fees tied to a hurt teenager",
+      "the accident file",
+      "what followed the ambulance visit"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "sprinkler",
+     "vendor": "Redline Fire Services",
+     "memos": [
+      "Sprinkler recertification — annual inspection overdue",
+      "Sprinkler recertification — head replacement"
+     ],
+     "cross_memo": "Sprinkler recertification — fire marshal re-inspection fee",
+     "plain": [
+      "the sprinkler recertification",
+      "the sprinkler head replacement",
+      "the overdue sprinkler inspection"
+     ],
+     "oblique": [
+      "bringing the water-spray system up to code",
+      "what the municipal inspector flagged",
+      "fixing the overhead gear that failed its test",
+      "a citation that turned into a purchase order",
+      "the red tag we had to clear",
+      "the ceiling hardware that expired",
+      "fees to avoid being shut down",
+      "work the city required before reopening",
+      "replacing the corroded nozzles",
+      "paperwork and parts for the building authorities",
+      "the compliance scramble after a surprise visit",
+      "new fittings above the ballroom",
+      "the marshal's punch list",
+      "overdue upkeep of the fire protection setup",
+      "the mandated upgrade nobody budgeted",
+      "getting the permit back in good standing"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Class Registration and Student Software",
+   "aliases": [
+    "registration platform",
+    "enrollment software",
+    "student software",
+    "booking system",
+    "class management tools"
+   ],
+   "narrative": [
+    "Registration platform",
+    "Enrollment software",
+    "Booking system"
+   ],
+   "recurring": [
+    {
+     "vendor": "Enrollio Systems",
+     "base": 3800,
+     "memo": "Class registration platform subscription"
+    },
+    {
+     "vendor": "PayPointe Merchant Services",
+     "base": 2900,
+     "memo": "Card processing fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "migration",
+     "vendor": "Enrollio Systems",
+     "memos": [
+      "Parent portal migration — data conversion",
+      "Parent portal migration — onboarding consultant"
+     ],
+     "cross_memo": "Parent portal migration — staff overtime for data cleanup",
+     "plain": [
+      "the parent portal migration",
+      "the parent portal data conversion",
+      "the portal migration consultant"
+     ],
+     "oblique": [
+      "moving every family's records to the new login site",
+      "the switchover families had to relearn",
+      "shifting from the old website to the new one",
+      "a consultant to teach front-desk staff the ropes",
+      "the lift-and-shift of our customer database",
+      "rolling out the new face for parents",
+      "retiring the legacy site",
+      "work to port years of history",
+      "the project that changed how families sign in",
+      "the changeover weekend",
+      "fees to make accounts carry over",
+      "the cutover that annoyed everyone for a week",
+      "rebuilding family profiles in the new place",
+      "the transition from the old setup",
+      "the new customer-facing website rollout",
+      "untangling duplicate guardian entries"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "chargeback",
+     "vendor": "Vaultline Fraud Recovery",
+     "memos": [
+      "Card fraud chargeback wave — dispute fees",
+      "Card fraud chargeback wave — recovery agent charges"
+     ],
+     "cross_memo": "Card fraud chargeback wave — refunded tuition reversals",
+     "plain": [
+      "the card fraud chargeback wave",
+      "the card fraud dispute fees",
+      "the fraud recovery agent charges"
+     ],
+     "oblique": [
+      "stolen numbers used to buy class packs",
+      "a rash of bogus enrollments",
+      "the criminals who bought unlimited passes",
+      "money clawed back by banks after fake sign-ups",
+      "someone abusing our online checkout",
+      "contested payments that piled up",
+      "the flurry of reversals from card issuers",
+      "the bad actors in the spring registration",
+      "paying outsiders to fight the reversals",
+      "penalties from the bank for suspicious sales",
+      "the ring that bought gift cards",
+      "recovering funds from impostors",
+      "a month of angry notices from the processor",
+      "what it cost to dispute the bogus orders",
+      "the scam that hit our checkout page",
+      "reversed sales we had to absorb"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Studio Rent and Occupancy",
+   "aliases": [
+    "rent",
+    "occupancy",
+    "lease costs",
+    "studio rent",
+    "facility costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Lease costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightwater Properties",
+     "base": 28000,
+     "memo": "Monthly base rent — flagship studio"
+    },
+    {
+     "vendor": "Eastgate Commercial Realty",
+     "base": 14500,
+     "memo": "Monthly base rent — satellite studios"
+    },
+    {
+     "vendor": "Municipal Utilities Authority",
+     "base": 3100,
+     "memo": "Electric water and gas"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam",
+     "vendor": "Brightwater Properties",
+     "memos": [
+      "Common area reconciliation — prior year true-up",
+      "Common area reconciliation — parking lot resurfacing share"
+     ],
+     "cross_memo": "Common area reconciliation — late payment interest",
+     "plain": [
+      "the common area reconciliation",
+      "the common area true-up",
+      "the common area parking share"
+     ],
+     "oblique": [
+      "the bill the landlord sent after tallying last year",
+      "a catch-up charge for shared expenses",
+      "our slice of the asphalt job",
+      "what we owed after the annual statement arrived",
+      "the surprise invoice from the property owner",
+      "retroactive charges for the building we share",
+      "costs split among all tenants",
+      "a year-end adjustment nobody forecast",
+      "our portion of the repaving",
+      "the extra amount the lessor demanded",
+      "lump sum for the previous twelve months",
+      "fees that arrived with a spreadsheet",
+      "a settlement of shared bills",
+      "the delayed charge for the complex",
+      "what the building manager said we owed",
+      "additional billing from the owner"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "expansion",
+     "vendor": "Lakeshore Build-Out Contractors",
+     "memos": [
+      "Fourth studio buildout — mirror wall installation",
+      "Fourth studio buildout — barre mounting and lighting"
+     ],
+     "cross_memo": "Fourth studio buildout — signage and permits",
+     "plain": [
+      "the fourth studio buildout",
+      "the fourth studio mirror wall",
+      "the fourth studio barre mounting"
+     ],
+     "oblique": [
+      "turning an empty suite into a new location",
+      "getting the newest site ready to open",
+      "the construction crew's invoice for the grand opening",
+      "work on the space we leased for growth",
+      "glass walls and railings at the new address",
+      "carpentry and lights for the opening",
+      "fitting out the shell we signed for",
+      "the expansion we announced last fall",
+      "the contractor who made rooms from raw space",
+      "what it took to open another branch",
+      "the opening-week preparations",
+      "cabinetry and finish carpentry for the new place",
+      "the newest outpost's construction",
+      "converting a former retail shop into classrooms",
+      "outfitting the latest addition",
+      "the capital project that added capacity"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

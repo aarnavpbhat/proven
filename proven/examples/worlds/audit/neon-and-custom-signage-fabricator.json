@@ -1,0 +1,795 @@
+{
+ "slug": "neon-and-custom-signage-fabricator",
+ "industry": "neon and custom signage fabricator",
+ "entities": [
+  "Brightwire Neon Signworks",
+  "Halo & Hue Sign Co",
+  "Marquee Glassline Fabrication",
+  "Ember Street Signcraft",
+  "Lumen Alley Custom Signs"
+ ],
+ "accounts": [
+  {
+   "name": "Glass Tubing & Gas Supplies",
+   "aliases": [
+    "glass tubing",
+    "tubing and gas",
+    "neon supplies",
+    "gas and glass",
+    "bending supplies"
+   ],
+   "narrative": [
+    "Glass tubing",
+    "Neon supplies",
+    "Tubing and gas"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lumenhaus Glassworks",
+     "base": 9200,
+     "memo": "Lead glass sticks — monthly stock"
+    },
+    {
+     "vendor": "Noble Fill Gases",
+     "base": 3400,
+     "memo": "Argon cylinders — exchange"
+    }
+   ],
+   "events": [
+    {
+     "key": "bombarder_rebuild",
+     "vendor": "Noble Fill Gases",
+     "memos": [
+      "Bombarder manifold rebuild — parts",
+      "Bombarder manifold rebuild — service call"
+     ],
+     "cross_memo": "Bombarder manifold rebuild — electrician hookup",
+     "plain": [
+      "the bombarder manifold rebuild",
+      "bombarder manifold repairs",
+      "rebuilding the bombarder manifold"
+     ],
+     "oblique": [
+      "the vacuum station fix",
+      "repairs to the pumping bench",
+      "getting the evacuation rig back online",
+      "the leaking vacuum pump",
+      "a worn-out pumping system",
+      "restoring the bench that purges new units",
+      "fixing the equipment that kept losing pressure",
+      "pump repairs",
+      "the processing bench outage",
+      "replacing corroded valves on the pumping rig",
+      "the overdue vacuum maintenance",
+      "downtime on the impurity purge setup",
+      "new valves and seals",
+      "the failed pressure gauge and plumbing",
+      "work the shop foreman flagged on the pumping station",
+      "keeping the processing room productive"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "krypton_order",
+     "vendor": "Halcyon Rare Atmospherics",
+     "memos": [
+      "Krypton bulk order — casino marquee",
+      "Krypton bulk order — freight"
+     ],
+     "cross_memo": "Krypton bulk order — marquee tube labor",
+     "plain": [
+      "the krypton bulk order",
+      "krypton bulk purchasing",
+      "a krypton bulk buy"
+     ],
+     "oblique": [
+      "the specialty inert supply for the gaming client",
+      "buying ahead on the pricier inert element",
+      "the resort sign's special inert charge",
+      "premium inert supply",
+      "the expensive element for the resort job",
+      "a large purchase of specialty inert element",
+      "material for the hotel entrance sign",
+      "the pale-white lettering material",
+      "shipping the specialty canisters",
+      "the upfront buy for the entertainment venue",
+      "what the resort client specified for its lettering",
+      "specialty inert material",
+      "a one-time premium element purchase",
+      "the costlier tint the designer asked for",
+      "supply for the strip venue project",
+      "inert element"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Transformers & Electrical Components",
+   "aliases": [
+    "transformers",
+    "electrical components",
+    "electrical parts",
+    "transformer spend",
+    "wiring and ballasts"
+   ],
+   "narrative": [
+    "Transformers",
+    "Electrical components",
+    "Electrical parts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Voltaris Supply Co",
+     "base": 7800,
+     "memo": "GTO wire and electrodes — restock"
+    },
+    {
+     "vendor": "Brightline Power Systems",
+     "base": 5600,
+     "memo": "Neon power units — standing order"
+    }
+   ],
+   "events": [
+    {
+     "key": "ul_recert",
+     "vendor": "Brightline Power Systems",
+     "memos": [
+      "Listing recertification batch — test fees",
+      "Listing recertification batch — replacement units"
+     ],
+     "cross_memo": "Listing recertification batch — inspector travel",
+     "plain": [
+      "the listing recertification batch",
+      "listing recertification fees",
+      "the listing recertification"
+     ],
+     "oblique": [
+      "getting the safety certification renewed",
+      "the safety-lab requalification",
+      "requalifying our sign packages with the safety lab",
+      "safety compliance retesting",
+      "the lab's sample requirements",
+      "swapping out models that lost approval",
+      "the compliance audit",
+      "renewed safety approval",
+      "the underwriter's periodic review",
+      "sample sets the lab destroyed in evaluation",
+      "keeping our approval marks current",
+      "lab evaluation charges",
+      "what insurers require for code compliance",
+      "the triennial safety signoff",
+      "requalification",
+      "new samples for the certifying body"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "led_retrofit",
+     "vendor": "Kestrel Diode Works",
+     "memos": [
+      "Flex strip conversion — reels",
+      "Flex strip conversion — drivers"
+     ],
+     "cross_memo": "Flex strip conversion — install labor",
+     "plain": [
+      "the flex strip conversion",
+      "flex strip reels",
+      "switching to flex strip"
+     ],
+     "oblique": [
+      "moving clients off traditional glass to modern lighting",
+      "the modern lighting changeover",
+      "a big retrofit job",
+      "replacing old tubing with low-voltage lighting",
+      "the low-voltage upgrade",
+      "the chain restaurant relighting project",
+      "the energy-efficient relamp",
+      "new lighting for the dealership",
+      "the efficiency upgrade the client requested",
+      "relamping",
+      "solid-state lighting materials",
+      "bendable lighting tape",
+      "the shift away from gas-filled tubing",
+      "a retrofit for the franchise rollout",
+      "low-energy lighting inventory",
+      "the brighter cheaper-to-run lighting"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Acrylic & Sheet Substrates",
+   "aliases": [
+    "acrylic",
+    "substrates",
+    "sheet stock",
+    "acrylic sheet",
+    "backer panels"
+   ],
+   "narrative": [
+    "Acrylic",
+    "Substrates",
+    "Sheet stock"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearform Plastics",
+     "base": 8400,
+     "memo": "Cast acrylic sheets — monthly"
+    },
+    {
+     "vendor": "Panelcraft Distribution",
+     "base": 4200,
+     "memo": "ACM panels — backer stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "mirror_run",
+     "vendor": "Clearform Plastics",
+     "memos": [
+      "Mirrored lettering run — gold sheets",
+      "Mirrored lettering run — cutting"
+     ],
+     "cross_memo": "Mirrored lettering run — router bits",
+     "plain": [
+      "the mirrored lettering run",
+      "mirrored lettering",
+      "the mirrored lettering job"
+     ],
+     "oblique": [
+      "the reflective signage for the jewelry store",
+      "shiny metallic letters",
+      "reflective channel faces",
+      "the boutique hotel's reflective logo",
+      "a reflective-finish job",
+      "metallic letter faces for the salon",
+      "the luxury retailer's storefront logo",
+      "premium reflective material",
+      "material for the champagne bar",
+      "the high-gloss logo pieces",
+      "what the boutique ordered for its facade",
+      "reflective faces",
+      "wasted material on a tricky finish",
+      "the upscale storefront project",
+      "laser-shaped reflective characters",
+      "an especially fussy finish request"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "dichroic_film",
+     "vendor": "Prismatic Films Ltd",
+     "memos": [
+      "Dichroic overlay film — rolls",
+      "Dichroic overlay film — expedite"
+     ],
+     "cross_memo": "Dichroic overlay film — lamination labor",
+     "plain": [
+      "the dichroic overlay film",
+      "dichroic overlay rolls",
+      "the dichroic overlay"
+     ],
+     "oblique": [
+      "the color-shifting treatment",
+      "iridescent sign faces",
+      "rainbow-effect coating",
+      "the museum's color-changing facade",
+      "a rushed shipment of iridescent material",
+      "the architect's color-shift spec",
+      "paying for faster delivery on the iridescent order",
+      "iridescent material",
+      "the special-effect finish",
+      "shimmer treatment for the gallery",
+      "the color-shift glazing",
+      "rush delivery charges",
+      "the effect the designer wanted for the atrium",
+      "the hue-changing finish",
+      "material the architect insisted on",
+      "faster shipping to hit the opening"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Crane & Lift Equipment Rental",
+   "aliases": [
+    "crane rental",
+    "lift rental",
+    "boom truck costs",
+    "install equipment",
+    "lifts and cranes"
+   ],
+   "narrative": [
+    "Crane rental",
+    "Lift rental",
+    "Install equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Skyreach Equipment Hire",
+     "base": 6200,
+     "memo": "Boom lift — monthly hire"
+    },
+    {
+     "vendor": "Atlas Crane Services",
+     "base": 9800,
+     "memo": "Crane operator hours — installs"
+    }
+   ],
+   "events": [
+    {
+     "key": "pylon_install",
+     "vendor": "Atlas Crane Services",
+     "memos": [
+      "Highway pylon set — night shift",
+      "Highway pylon set — rigging"
+     ],
+     "cross_memo": "Highway pylon set — traffic control",
+     "plain": [
+      "the highway pylon set",
+      "highway pylon work",
+      "the highway pylon"
+     ],
+     "oblique": [
+      "the freeway sign raising",
+      "erecting the interstate monument sign",
+      "the tall roadside sign for the truck stop",
+      "after-dark work on the freeway sign",
+      "the big roadside structure",
+      "hoisting the fuel stop's tower sign",
+      "overnight heavy hoisting",
+      "the interstate project",
+      "the truck stop's tower sign",
+      "a heavy pick near the expressway",
+      "work the state permit limited to overnight windows",
+      "the tall freestanding sign",
+      "raising the travel plaza tower",
+      "heavy hoisting",
+      "the expressway job",
+      "standing up the tower sign by the interchange"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "spider_unit",
+     "vendor": "Tallgrass Access Partners",
+     "memos": [
+      "Atrium spider unit — weekly",
+      "Atrium spider unit — delivery"
+     ],
+     "cross_memo": "Atrium spider unit — floor protection",
+     "plain": [
+      "the atrium spider unit",
+      "atrium spider rental",
+      "the atrium spider"
+     ],
+     "oblique": [
+      "reaching the mall's indoor ceiling",
+      "the indoor ceiling work",
+      "compact tracked machinery for the concourse",
+      "getting up to the skylight",
+      "the indoor suspended sign",
+      "the convention center's hanging display",
+      "a narrow-footprint machine for indoors",
+      "the mall concourse hang",
+      "reaching high ceilings without damaging tile",
+      "the airport terminal suspended sign",
+      "indoor high-reach work",
+      "the hanging sculpture",
+      "a tracked machine that fits through doorways",
+      "the lobby chandelier sign",
+      "ceiling hang",
+      "the indoor elevated job"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Sign Permits & Engineering",
+   "aliases": [
+    "permits",
+    "permit fees",
+    "engineering stamps",
+    "permitting",
+    "structural engineering"
+   ],
+   "narrative": [
+    "Permits",
+    "Permit fees",
+    "Permitting"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cityline Permit Expediters",
+     "base": 2800,
+     "memo": "Permit filings — monthly"
+    },
+    {
+     "vendor": "Keystone Structural Group",
+     "base": 4500,
+     "memo": "Wind load calcs — stamped drawings"
+    }
+   ],
+   "events": [
+    {
+     "key": "historic_review",
+     "vendor": "Keystone Structural Group",
+     "memos": [
+      "Historic district variance — hearing prep",
+      "Historic district variance — revised elevations"
+     ],
+     "cross_memo": "Historic district variance — mockup sample",
+     "plain": [
+      "the historic district variance",
+      "historic district hearing prep",
+      "the historic district review"
+     ],
+     "oblique": [
+      "satisfying the preservation commission",
+      "the old-town approval process",
+      "preservation review",
+      "redesigning the facade sign for the landmarks panel",
+      "landmark commission requirements",
+      "the heritage-area exemption request",
+      "getting the theater sign approved in the old quarter",
+      "extra architectural renderings",
+      "the preservation office's objections",
+      "the downtown heritage approval",
+      "presentations to the landmarks commission",
+      "an exemption from heritage-area design rules",
+      "the old theater marquee approval",
+      "commission-mandated design changes",
+      "heritage compliance",
+      "the preservationists' pushback"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "zoning_appeal",
+     "vendor": "Marlowe & Pratt Land Use Counsel",
+     "memos": [
+      "Height limit appeal — counsel retainer",
+      "Height limit appeal — board filing"
+     ],
+     "cross_memo": "Height limit appeal — drawing revisions",
+     "plain": [
+      "the height limit appeal",
+      "height limit legal work",
+      "the height limit dispute"
+     ],
+     "oblique": [
+      "fighting the zoning cap on our pylon",
+      "legal fees on the zoning fight",
+      "contesting the city's sign size ceiling",
+      "the zoning dispute",
+      "an attorney for the tall-sign case",
+      "challenging the planning department's denial",
+      "the zoning challenge",
+      "lawyers",
+      "outside legal help on the oversized sign",
+      "pushing back on the municipal size cap",
+      "the dispute over how tall the sign could be",
+      "the attorney's upfront fee",
+      "legal representation before the zoning panel",
+      "the dealership's oversized sign fight",
+      "zoning litigation",
+      "the contested sign approval"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Paint & Finishing Materials",
+   "aliases": [
+    "paint",
+    "finishing",
+    "coatings",
+    "paint and finishing",
+    "finish materials"
+   ],
+   "narrative": [
+    "Paint",
+    "Finishing",
+    "Coatings"
+   ],
+   "recurring": [
+    {
+     "vendor": "Chromaline Industrial",
+     "base": 3900,
+     "memo": "Automotive enamel — gallons"
+    },
+    {
+     "vendor": "Ridgeway Abrasives",
+     "base": 1600,
+     "memo": "Sanding discs and primer — restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "booth_refit",
+     "vendor": "Chromaline Industrial",
+     "memos": [
+      "Spray booth refit — exhaust filters",
+      "Spray booth refit — fan motor"
+     ],
+     "cross_memo": "Spray booth refit — electrical tie-in",
+     "plain": [
+      "the spray booth refit",
+      "spray booth repairs",
+      "the spray booth"
+     ],
+     "oblique": [
+      "upgrading the paint room ventilation",
+      "ventilation work",
+      "the fire marshal's ventilation findings",
+      "fixing airflow in the finishing room",
+      "new air handling for the paint room",
+      "a clogged ventilation system",
+      "replacing the worn blower",
+      "the paint room overhaul",
+      "bringing the coating area up to code",
+      "airflow repairs",
+      "what the fire inspector cited",
+      "the clogged intake media",
+      "a burned-out blower",
+      "keeping fumes out of the shop",
+      "the finishing room upgrade",
+      "air quality fixes the insurer asked for"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "powder_outsource",
+     "vendor": "Ironvale Powder Finishers",
+     "memos": [
+      "Outsourced powder batch — cabinets",
+      "Outsourced powder batch — pickup"
+     ],
+     "cross_memo": "Outsourced powder batch — rework labor",
+     "plain": [
+      "the outsourced powder batch",
+      "the outsourced powder work",
+      "outsourced powder coating"
+     ],
+     "oblique": [
+      "sending the sign housings out for baked-on finish",
+      "third-party coating work",
+      "overflow finishing at an outside shop",
+      "farming out the housing finish",
+      "the backlog our painters couldn't absorb",
+      "baked finishes done offsite",
+      "an outside coater for the franchise housings",
+      "subcontracted finishing",
+      "the durable finish the client specified",
+      "capacity overflow",
+      "offsite coating for the retail rollout",
+      "having a partner shop finish the enclosures",
+      "the electrostatic finish work",
+      "the volume our own crew couldn't handle",
+      "subcontracted coating",
+      "the weather-resistant finish on the enclosures"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Shop Rent & Occupancy",
+   "aliases": [
+    "rent",
+    "occupancy",
+    "shop rent",
+    "facility costs",
+    "building costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Shop rent"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborview Industrial Properties",
+     "base": 18500,
+     "memo": "Warehouse lease — base rent"
+    },
+    {
+     "vendor": "Metro Utility Board",
+     "base": 3200,
+     "memo": "Electric and water — shop"
+    },
+    {
+     "vendor": "Cleanpoint Facility Care",
+     "base": 1100,
+     "memo": "Janitorial — weekly"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam_trueup",
+     "vendor": "Harborview Industrial Properties",
+     "memos": [
+      "Annual reconciliation true-up — common area",
+      "Annual reconciliation true-up — tax pass-through"
+     ],
+     "cross_memo": "Annual reconciliation true-up — insurance share",
+     "plain": [
+      "the reconciliation true-up",
+      "the annual reconciliation true-up",
+      "reconciliation true-up charges"
+     ],
+     "oblique": [
+      "the landlord's year-end catch-up bill",
+      "the year-end landlord adjustment",
+      "underestimated operating cost recoveries from the landlord",
+      "higher property levies charged back",
+      "the landlord's catch-up invoice",
+      "under-billed maintenance charges from prior months",
+      "the building owner's yearly adjustment",
+      "a year-end landlord bill",
+      "parking lot and landscaping cost recoveries",
+      "the landlord settling up prior-year expenses",
+      "property levy increases",
+      "the catch-up charge",
+      "what the landlord under-collected last year",
+      "the owner's expense recovery",
+      "contractual cost recoveries",
+      "the landlord's prior-year billing adjustment"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "roof_leak",
+     "vendor": "Summit Roofing Contractors",
+     "memos": [
+      "Roof membrane patch — emergency",
+      "Roof membrane patch — flashing"
+     ],
+     "cross_memo": "Roof membrane patch — damaged stock",
+     "plain": [
+      "the roof membrane patch",
+      "roof membrane repairs",
+      "the roof membrane"
+     ],
+     "oblique": [
+      "the leak over the bending room",
+      "storm damage overhead",
+      "fixing the ceiling leak",
+      "the leak repair",
+      "urgent repairs after the storm",
+      "keeping rain off the inventory",
+      "the overhead leak above the paint room",
+      "storm repairs",
+      "sealing the building top after the hailstorm",
+      "the hail damage",
+      "the crew we called in after the hailstorm",
+      "the ceiling leak",
+      "repairs above the fabrication floor",
+      "the after-hours leak response",
+      "sealing up the building after the storm",
+      "the leaking overhead"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Design Software Subscriptions",
+   "aliases": [
+    "software",
+    "design software",
+    "subscriptions",
+    "software licenses",
+    "cad tools"
+   ],
+   "narrative": [
+    "Software",
+    "Design software",
+    "Subscriptions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Vectorline Software",
+     "base": 2400,
+     "memo": "CAD seats — monthly"
+    },
+    {
+     "vendor": "Pixelforge Cloud",
+     "base": 1300,
+     "memo": "Rendering suite — license"
+    }
+   ],
+   "events": [
+    {
+     "key": "plotter_bundle",
+     "vendor": "Vectorline Software",
+     "memos": [
+      "Plotter driver bundle — add-on",
+      "Plotter driver bundle — onboarding"
+     ],
+     "cross_memo": "Plotter driver bundle — training hours",
+     "plain": [
+      "the plotter driver bundle",
+      "plotter driver onboarding",
+      "the plotter driver add-on"
+     ],
+     "oblique": [
+      "connecting the design files to the cutting table",
+      "the module that runs the router table",
+      "getting the new cutter talking to our design tools",
+      "the large-format printer integration",
+      "machine-control extras",
+      "setup for the new router",
+      "the vendor's machine-connectivity package",
+      "output tools for the new cutter",
+      "the CNC connection module",
+      "making the new router usable",
+      "machine integration",
+      "the cutter's companion package",
+      "getting the shop floor machines linked to design",
+      "connectivity extras",
+      "the router-control upgrade",
+      "what we needed to run the new cutter"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "estimating_platform",
+     "vendor": "Quotient Estimating Systems",
+     "memos": [
+      "Estimating platform migration — implementation",
+      "Estimating platform migration — data import"
+     ],
+     "cross_memo": "Estimating platform migration — staff overtime",
+     "plain": [
+      "the estimating platform migration",
+      "estimating platform implementation",
+      "the new estimating platform"
+     ],
+     "oblique": [
+      "moving off the old quoting spreadsheets",
+      "the new quoting tool",
+      "switching how we price jobs",
+      "the quoting tool rollout",
+      "replacing spreadsheet-based bids",
+      "consultants setting up job costing",
+      "the bid-pricing overhaul",
+      "new job-costing tools",
+      "loading our historical jobs into the quoting tool",
+      "the sales team's pricing upgrade",
+      "a new way to price signs",
+      "quoting changeover",
+      "the job-costing project",
+      "retiring the legacy bid sheets",
+      "pricing tool setup fees",
+      "what the owner wanted for faster bids"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

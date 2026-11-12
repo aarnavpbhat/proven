@@ -1,0 +1,703 @@
+{
+ "slug": "craft-brewery",
+ "industry": "craft brewery",
+ "entities": [
+  "Ironkettle Brewing Collective",
+  "Saltmarsh Fermentation Works",
+  "Copperhill Ales & Lagers",
+  "Gullwing Barrel House",
+  "Foxglove Brewing Company"
+ ],
+ "accounts": [
+  {
+   "name": "Hops & Malt Procurement",
+   "aliases": [
+    "raw ingredients",
+    "hops and malt",
+    "grain bill spend",
+    "ingredient purchasing",
+    "brewing inputs"
+   ],
+   "narrative": [
+    "Raw ingredients",
+    "Hops and malt",
+    "Ingredient purchasing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Yakima Valley Hop Growers",
+     "base": 14200,
+     "memo": "Hop pellets contract lot PO-4471"
+    },
+    {
+     "vendor": "Prairie Gold Maltsters",
+     "base": 18500,
+     "memo": "Base malt 2-row bulk delivery"
+    }
+   ],
+   "events": [
+    {
+     "key": "mosaic",
+     "vendor": "Yakima Valley Hop Growers",
+     "memos": [
+      "Mosaic spot buy — crop shortfall lot",
+      "Mosaic spot buy — air freight surcharge"
+     ],
+     "cross_memo": "Mosaic spot buy — cold storage intake",
+     "plain": [
+      "the Mosaic spot buy",
+      "the Mosaic spot purchase",
+      "the Mosaic spot buy lot"
+     ],
+     "oblique": [
+      "scrambling for a scarce aromatic variety",
+      "a short harvest forcing us onto the open market",
+      "replacing the contracted flagship variety that never arrived",
+      "emergency sourcing of the signature IPA flavoring",
+      "paying up for last-minute supply",
+      "the harvest shortfall",
+      "securing enough of the citrusy cultivar for the summer seasonal",
+      "a gap in what our grower could deliver",
+      "buying off-contract at premium rates",
+      "the scarcity pricing on our star ingredient",
+      "filling the hole left by a failed yield",
+      "urgent sourcing for the flagship beer",
+      "chasing inventory the farm could not ship",
+      "the weather-hit crop",
+      "pricey replacement of the fruity cultivar",
+      "an unplanned scramble for aroma material"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "rye",
+     "vendor": "Highfield Specialty Grains",
+     "memos": [
+      "Heritage rye malting trial — WO-2290",
+      "Heritage rye malting trial — kilning run"
+     ],
+     "cross_memo": "Heritage rye malting trial — sample freight",
+     "plain": [
+      "the heritage rye malting trial",
+      "the heritage rye trial",
+      "the rye malting trial"
+     ],
+     "oblique": [
+      "an experiment with a spicy old-world cereal",
+      "the pilot for a new seasonal lager",
+      "a custom small-batch kilning project",
+      "testing an unusual cereal for the taproom exclusive",
+      "the R&D batch for next autumn's release",
+      "a speculative recipe development effort",
+      "the brewer's pet project",
+      "trying out a regional farm-grown crop",
+      "a limited release concept",
+      "the one-off specialty recipe work",
+      "a new flavor line we are prototyping",
+      "sourcing a local farmer's unusual crop",
+      "what the head brewer asked for in a trial",
+      "the experimental release pipeline",
+      "a curiosity batch for tap takeover",
+      "early work on a niche product"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Cellar Yeast & Fermentation Supplies",
+   "aliases": [
+    "yeast",
+    "fermentation supplies",
+    "cellar consumables",
+    "yeast and nutrients",
+    "cellar costs"
+   ],
+   "narrative": [
+    "Yeast",
+    "Fermentation supplies",
+    "Cellar consumables"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightcell Yeast Labs",
+     "base": 5200,
+     "memo": "Liquid yeast propagation packs"
+    },
+    {
+     "vendor": "Fermwell Supply Co",
+     "base": 3100,
+     "memo": "Nutrient, fining agents, PO-7752"
+    }
+   ],
+   "events": [
+    {
+     "key": "lacto",
+     "vendor": "Brightcell Yeast Labs",
+     "memos": [
+      "Lactobacillus restock — sour program expansion",
+      "Lactobacillus restock — cultures rush order"
+     ],
+     "cross_memo": "Lactobacillus restock — dedicated cold bags",
+     "plain": [
+      "the lactobacillus restock",
+      "the sour program expansion",
+      "the lactobacillus culture restock"
+     ],
+     "oblique": [
+      "growing the tart beer lineup",
+      "a new line of puckery offerings",
+      "the tangy beer push",
+      "stocking up for the barrel-aged acidic releases",
+      "bigger batches of the funky seasonal series",
+      "what the marketing team wanted in the tart category",
+      "ramping a style that sells out fast",
+      "the expansion into mouth-puckering brews",
+      "a bigger commitment to wild-style fermentation",
+      "the demand for something sharper",
+      "supplies for the cherry gose launch",
+      "replenishing the bugs for souring",
+      "scaling the acidic side of the menu",
+      "fuel for the tasting room's tart tap list",
+      "a larger pipeline of low-pH beers",
+      "readying more batches for the summer rotation"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "infection",
+     "vendor": "Cleanroom Biosolutions",
+     "memos": [
+      "Cellar contamination response — sanitizer purge",
+      "Cellar contamination response — lab swabs"
+     ],
+     "cross_memo": "Cellar contamination response — dumped wort disposal",
+     "plain": [
+      "the cellar contamination response",
+      "the contamination response",
+      "the cellar contamination cleanup"
+     ],
+     "oblique": [
+      "a rogue microbe forcing us to dump beer",
+      "the outbreak that spoiled several tanks",
+      "a quality scare in the production room",
+      "scrubbing everything after a bad batch",
+      "the spoiled batches and what followed",
+      "getting rid of ruined product",
+      "chasing down an unwanted bug",
+      "the emergency deep sanitation",
+      "an unwelcome surprise in the tanks",
+      "what happened when beer turned off-flavor",
+      "the stop-everything cleanup",
+      "dealing with a spoilage event",
+      "the lab work after a tasting panel rejected product",
+      "restoring confidence in our process",
+      "fighting a wild organism",
+      "the batch that had to be poured out"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Packaging & Canning Materials",
+   "aliases": [
+    "packaging",
+    "cans and labels",
+    "canning materials",
+    "packaging materials",
+    "can line supplies"
+   ],
+   "narrative": [
+    "Packaging",
+    "Cans and labels",
+    "Canning materials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Aluminum Containers",
+     "base": 26000,
+     "memo": "12oz can shells pallet release"
+    },
+    {
+     "vendor": "Pressmark Labels",
+     "base": 8400,
+     "memo": "Shrink sleeves and carton stock"
+    },
+    {
+     "vendor": "Kegworks Distribution",
+     "base": 4800,
+     "memo": "Keg collars and caps"
+    }
+   ],
+   "events": [
+    {
+     "key": "redesign",
+     "vendor": "Pressmark Labels",
+     "memos": [
+      "Brand refresh artwork — plate setup",
+      "Brand refresh artwork — first print run"
+     ],
+     "cross_memo": "Brand refresh artwork — agency design fee",
+     "plain": [
+      "the brand refresh artwork",
+      "the brand refresh",
+      "the refresh artwork rollout"
+     ],
+     "oblique": [
+      "the new look for our whole lineup",
+      "a visual overhaul of the entire range",
+      "what marketing wanted after the rebrand decision",
+      "new graphics hitting the shelves",
+      "redoing how every product appears to shoppers",
+      "the makeover of our shelf presence",
+      "a creative reboot",
+      "switching to updated imagery",
+      "the design project that touched every SKU",
+      "writing off old inventory of outdated artwork",
+      "retooling for fresh visuals",
+      "the logo and color change",
+      "re-launching all products in new dress",
+      "designers' vision going to press",
+      "a bold change in appearance",
+      "new visual identity costs"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "shortage",
+     "vendor": "Tallgate Metals Brokers",
+     "memos": [
+      "Can shortage bridge buy — spot market lot",
+      "Can shortage bridge buy — expedited truckload"
+     ],
+     "cross_memo": "Can shortage bridge buy — line downtime idle labor",
+     "plain": [
+      "the can shortage bridge buy",
+      "the shortage bridge buy",
+      "the can shortage bridge"
+     ],
+     "oblique": [
+      "the nationwide metal squeeze",
+      "scrambling when our usual source ran dry",
+      "paying brokers to keep the line fed",
+      "avoiding a stoppage on the filling floor",
+      "what we paid to avoid empty production slots",
+      "the supply crunch hitting small producers",
+      "keeping product flowing despite an industry-wide gap",
+      "premium pricing for emergency containers",
+      "covering a gap in our contracted deliveries",
+      "a stopgap that kept shipments on schedule",
+      "the supplier's inability to deliver on time",
+      "buying whatever we could find",
+      "the scramble to keep the filler running",
+      "an unexpected supply crisis",
+      "bridging until normal shipments resumed",
+      "protecting delivery commitments to distributors"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Taproom Operations",
+   "aliases": [
+    "taproom",
+    "taproom costs",
+    "tasting room spend",
+    "taproom operations",
+    "front of house"
+   ],
+   "narrative": [
+    "Taproom",
+    "Taproom costs",
+    "Tasting room spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Barrelhead Staffing",
+     "base": 19000,
+     "memo": "Taproom bartender payroll service"
+    },
+    {
+     "vendor": "Smokestack Kitchen Partners",
+     "base": 7200,
+     "memo": "Food truck residency fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "festival",
+     "vendor": "Smokestack Kitchen Partners",
+     "memos": [
+      "Oktoberfest weekend — extra vendor crew",
+      "Oktoberfest weekend — tent catering"
+     ],
+     "cross_memo": "Oktoberfest weekend — beer tent rental",
+     "plain": [
+      "the Oktoberfest weekend",
+      "the Oktoberfest weekend event",
+      "Oktoberfest weekend crowds"
+     ],
+     "oblique": [
+      "the autumn celebration that packed the lot",
+      "our biggest annual party",
+      "the seasonal bash with live polka",
+      "a long weekend of lederhosen and steins",
+      "the annual fall gathering",
+      "heavy traffic from our flagship community event",
+      "the day when lines stretched around the block",
+      "extra hands for the busiest stretch of the year",
+      "the harvest-themed celebration",
+      "a three-day crowd magnet",
+      "the party we throw each fall",
+      "seasonal revelry",
+      "what happens when thousands show up for lager",
+      "the signature fall happening",
+      "our yearly big-tent gathering",
+      "the German-style festivities"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "remodel",
+     "vendor": "Oakline Interiors",
+     "memos": [
+      "Bar top replacement — walnut slab install",
+      "Bar top replacement — finishing crew"
+     ],
+     "cross_memo": "Bar top replacement — closed-day lost sales support",
+     "plain": [
+      "the bar top replacement",
+      "the walnut bar top replacement",
+      "the bar top replacement install"
+     ],
+     "oblique": [
+      "refreshing the main counter guests lean on",
+      "a furniture upgrade in the public room",
+      "the long wooden surface customers see first",
+      "an aesthetic improvement to the guest area",
+      "replacing worn fixtures",
+      "the facelift of our front-of-house centerpiece",
+      "the carpenters coming in on a Monday",
+      "what the old surface looked like after years of spills",
+      "a hospitality upgrade",
+      "a craftsman's installation project",
+      "modernizing where patrons sit and sip",
+      "the physical improvement to the visitor area",
+      "a piece of furniture finally past its life",
+      "the investment in how the room feels",
+      "new woodwork in the pour area",
+      "a capital-style improvement that hit expense"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Brewhouse Utilities",
+   "aliases": [
+    "utilities",
+    "brewhouse utilities",
+    "energy and water",
+    "water and gas",
+    "plant utilities"
+   ],
+   "narrative": [
+    "Utilities",
+    "Brewhouse utilities",
+    "Energy and water"
+   ],
+   "recurring": [
+    {
+     "vendor": "Riverbend Water Authority",
+     "base": 9800,
+     "memo": "Water and sewer usage"
+    },
+    {
+     "vendor": "Northgrid Gas & Power",
+     "base": 13500,
+     "memo": "Natural gas steam boiler, electric"
+    },
+    {
+     "vendor": "CO2 Direct Supply",
+     "base": 3900,
+     "memo": "Bulk carbon dioxide tank fill"
+    }
+   ],
+   "events": [
+    {
+     "key": "surcharge",
+     "vendor": "Riverbend Water Authority",
+     "memos": [
+      "High-strength effluent surcharge — BOD overage",
+      "High-strength effluent surcharge — municipal notice"
+     ],
+     "cross_memo": "High-strength effluent surcharge — pretreatment testing",
+     "plain": [
+      "the high-strength effluent surcharge",
+      "the effluent surcharge",
+      "the high-strength surcharge"
+     ],
+     "oblique": [
+      "a penalty from the city for what we send down the drain",
+      "the extra fee on our wastewater",
+      "regulators noticing the organic load we discharge",
+      "sewer authority billing us for strong waste",
+      "the fine for exceeding limits on runoff",
+      "fallout from a big brew-day dump",
+      "the municipal letter about pollution levels",
+      "paying for how dirty our outflow was",
+      "the cost of letting too much yeast and sugar into the pipes",
+      "a charge tied to our environmental footprint",
+      "city enforcement of discharge limits",
+      "what the local authority assessed",
+      "the result of dumping spoiled batches",
+      "extra billing from the public works department",
+      "an overage on what the treatment plant must handle",
+      "consequences of releasing strong liquid waste"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "chiller",
+     "vendor": "Polar Edge Mechanical",
+     "memos": [
+      "Glycol chiller emergency — compressor failure WO-5518",
+      "Glycol chiller emergency — after-hours callout"
+     ],
+     "cross_memo": "Glycol chiller emergency — rented portable cooling",
+     "plain": [
+      "the glycol chiller emergency",
+      "the chiller emergency",
+      "the glycol chiller failure"
+     ],
+     "oblique": [
+      "the night the cooling loop quit",
+      "a breakdown that threatened every fermenting tank",
+      "scrambling to keep temperatures down",
+      "the weekend service call nobody wanted",
+      "fixing the equipment that keeps the beer cold",
+      "a mechanical failure at the worst moment",
+      "the repair crew arriving at midnight",
+      "protecting product when the temperature climbed",
+      "keeping our batches from warming up",
+      "the failed machine in the back room",
+      "a rescue operation for the tanks",
+      "a heat crisis in the production hall",
+      "the unplanned fix that saved the inventory",
+      "when the refrigeration system died",
+      "the urgent mechanical job",
+      "technicians rushing in during a heat wave"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Distribution & Freight",
+   "aliases": [
+    "freight",
+    "distribution",
+    "delivery costs",
+    "outbound freight",
+    "logistics"
+   ],
+   "narrative": [
+    "Freight",
+    "Distribution",
+    "Delivery costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Longhaul Beverage Logistics",
+     "base": 17500,
+     "memo": "LTL pallet shipments to distributors"
+    },
+    {
+     "vendor": "Metro Keg Courier",
+     "base": 6300,
+     "memo": "Local keg delivery routes"
+    }
+   ],
+   "events": [
+    {
+     "key": "recall",
+     "vendor": "Longhaul Beverage Logistics",
+     "memos": [
+      "Lot 24-118 pull-back — reverse freight",
+      "Lot 24-118 pull-back — return pallets"
+     ],
+     "cross_memo": "Lot 24-118 pull-back — destruction manifest",
+     "plain": [
+      "the lot 24-118 pull-back",
+      "the 24-118 pull-back",
+      "the lot pull-back"
+     ],
+     "oblique": [
+      "bringing product back from retailers",
+      "retrieving beer that should not have been sold",
+      "an unwelcome reversal of the supply chain",
+      "the quality problem that sent trucks the wrong way",
+      "taking inventory off shelves across the region",
+      "what happens when a batch fails a check after shipping",
+      "a voluntary withdrawal of product",
+      "trucks heading toward us instead of away",
+      "the aftermath of a packaging defect",
+      "clawing back cases from wholesalers",
+      "the recovery mission after a faulty fill",
+      "reclaiming cases from store coolers",
+      "the steps to protect consumers from flawed cans",
+      "retrieval operations in several states",
+      "the messy unwinding of a delivery",
+      "a retrieval campaign"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "expansion",
+     "vendor": "Frontier Reefer Lines",
+     "memos": [
+      "Neighboring state launch — refrigerated trailer haul",
+      "Neighboring state launch — first-wave pallets"
+     ],
+     "cross_memo": "Neighboring state launch — distributor onboarding samples",
+     "plain": [
+      "the neighboring state launch",
+      "the state launch haul",
+      "the neighboring state launch shipments"
+     ],
+     "oblique": [
+      "entering a new market across the border",
+      "our geographic reach growing",
+      "the new territory opening",
+      "serving customers farther from the brewery",
+      "a push beyond home turf",
+      "new accounts in a market we never served",
+      "stocking unfamiliar shelves",
+      "the first wave of long-distance orders",
+      "what it takes to open a new region",
+      "longer routes than we normally run",
+      "the sales team's expansion win",
+      "extending our footprint",
+      "a big step in growth strategy",
+      "the long trucking runs to unfamiliar towns",
+      "initial deliveries to a fresh set of buyers",
+      "a new sales area coming online"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Barrel Program",
+   "aliases": [
+    "barrels",
+    "barrel program",
+    "wood aging",
+    "barrel aging costs",
+    "oak program"
+   ],
+   "narrative": [
+    "Barrels",
+    "Barrel program",
+    "Wood aging"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stillwater Cooperage",
+     "base": 11000,
+     "memo": "Used bourbon barrels PO-3380"
+    },
+    {
+     "vendor": "Oakmist Warehousing",
+     "base": 4500,
+     "memo": "Barrel rack storage lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "wine",
+     "vendor": "Stillwater Cooperage",
+     "memos": [
+      "Pinot cask lot — red wine barrel purchase",
+      "Pinot cask lot — drayage and rinsing"
+     ],
+     "cross_memo": "Pinot cask lot — cellar rack extension",
+     "plain": [
+      "the pinot cask lot",
+      "the pinot cask purchase",
+      "the red wine barrel lot"
+     ],
+     "oblique": [
+      "wood that once held grape juice",
+      "a vintner's cast-offs becoming our vessels",
+      "a new flavor direction for the cellar",
+      "vessels with a fruity past",
+      "an addition to the aging lineup",
+      "a purchase to start a wild ale series",
+      "the idea to age something differently",
+      "a deal made with a local vineyard",
+      "a lineup of previously used containers from a winery",
+      "what the barrel manager brokered",
+      "a buy to broaden the maturing options",
+      "a stock of seasoned vessels arriving",
+      "the wine country connection",
+      "new containers for slow maturation",
+      "a delivery by flatbed of vessels with stained staves",
+      "an investment in aged beers' character"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "fire",
+     "vendor": "Emberguard Restoration",
+     "memos": [
+      "Warehouse water damage — flooded rack remediation",
+      "Warehouse water damage — mold abatement"
+     ],
+     "cross_memo": "Warehouse water damage — insurance deductible",
+     "plain": [
+      "the warehouse water damage",
+      "the flooded rack remediation",
+      "the warehouse flood cleanup"
+     ],
+     "oblique": [
+      "a burst pipe in the storage building",
+      "the cleanup after the leak",
+      "the nasty surprise in the aging room",
+      "a catastrophe for sitting inventory",
+      "drying out rows of oak",
+      "when the ceiling failed",
+      "the insurance claim follow-through",
+      "a weather event that came inside",
+      "damage to product that had been maturing for years",
+      "the crew with dehumidifiers and fans",
+      "an unexpected disaster in the back building",
+      "salvaging what we could from standing water",
+      "the restoration crew's invoice",
+      "protecting aging beer from spoilage after the soaking",
+      "an accident that cost us dearly",
+      "the mess left after the plumbing gave out"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

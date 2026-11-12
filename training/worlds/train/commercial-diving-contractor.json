@@ -1,0 +1,711 @@
+{
+ "slug": "commercial-diving-contractor",
+ "industry": "commercial diving contractor",
+ "entities": [
+  "Harborline Subsea Services",
+  "Tidewrought Marine Contractors",
+  "Blue Meridian Diving Corp",
+  "Kestrel Bay Underwater Works",
+  "Ironkelp Commercial Divers"
+ ],
+ "accounts": [
+  {
+   "name": "Dive Support Vessel Charter",
+   "aliases": [
+    "vessel charter",
+    "vessel hire",
+    "charter spend",
+    "boat charters"
+   ],
+   "narrative": [
+    "Vessel charter",
+    "Vessel hire",
+    "Charter spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gulfstream Marine Leasing",
+     "base": 28000,
+     "memo": "DSV Southern Cross monthly charter"
+    },
+    {
+     "vendor": "Pelican Harbor Dockage",
+     "base": 3200,
+     "memo": "Berth rental pier 4 monthly"
+    },
+    {
+     "vendor": "Carraway Crewboat Co",
+     "base": 9500,
+     "memo": "Crewboat shuttle service PO 7741"
+    }
+   ],
+   "events": [
+    {
+     "key": "typhoon",
+     "vendor": "Gulfstream Marine Leasing",
+     "memos": [
+      "Standby day rate hurricane Delta — PO 8810",
+      "Hurricane Delta standby — extended hold WO 2217"
+     ],
+     "cross_memo": "Hurricane Delta standby — crew lodging",
+     "plain": [
+      "the hurricane Delta standby",
+      "hurricane Delta standby costs",
+      "the Delta hurricane hold"
+     ],
+     "oblique": [
+      "the storm that kept the ship tied up",
+      "weather delays at the offshore site",
+      "idle days while seas were too rough",
+      "the forced pause on the northern job",
+      "waiting out the bad forecast",
+      "paying for a boat that could not sail",
+      "the gale",
+      "lost working days on the Gulf contract",
+      "the extended wait at anchor",
+      "a week of sitting still",
+      "ship time burned with no work done",
+      "the squall disruption",
+      "days lost to heavy swells",
+      "the sea conditions that stopped operations",
+      "unproductive hire during rough water",
+      "the blow"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "barge",
+     "vendor": "Rosario Heavy Lift Barges",
+     "memos": [
+      "Derrick barge mobilization Rosario HL — PO 8922",
+      "Rosario HL barge demob and tow WO 2301"
+     ],
+     "cross_memo": "Rosario HL barge mobilization — fuel surcharge",
+     "plain": [
+      "the Rosario HL barge mobilization",
+      "Rosario HL barge towing",
+      "the Rosario barge demobilization"
+     ],
+     "oblique": [
+      "bringing in the big floating crane",
+      "the heavy lift support for the pier job",
+      "a second platform brought to the site",
+      "the lifting equipment hired for one project",
+      "the craft that hoisted the caisson",
+      "extra floating capacity for the bridge repair",
+      "the crane ship we needed once",
+      "hauling the oversized components",
+      "the lift campaign at the terminal",
+      "a temporary work platform on the water",
+      "moving the huge steel sections",
+      "hired muscle for the heaviest picks",
+      "the floating derrick engagement",
+      "getting the tow out and back",
+      "the one-off lifting spread",
+      "the heavy equipment that arrived by sea"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Breathing Gas and Compressor Supplies",
+   "aliases": [
+    "gas supplies",
+    "breathing gas",
+    "helium and oxygen",
+    "gas costs"
+   ],
+   "narrative": [
+    "Gas supplies",
+    "Breathing gas",
+    "Gas costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Industrial Gases",
+     "base": 14500,
+     "memo": "Heliox and nitrox bulk fill monthly"
+    },
+    {
+     "vendor": "AirPure Compressor Service",
+     "base": 2400,
+     "memo": "Compressor filter exchange contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "heliumspike",
+     "vendor": "Summit Industrial Gases",
+     "memos": [
+      "Helium allocation surcharge shortage — INV 55120",
+      "Helium shortage premium lot 88 — PO 9034"
+     ],
+     "cross_memo": "Helium shortage premium — expedited cylinder freight",
+     "plain": [
+      "the helium shortage premium",
+      "helium allocation surcharges",
+      "the helium shortage"
+     ],
+     "oblique": [
+      "the scarcity pricing on the light stuff",
+      "what suppliers charged when stock ran dry",
+      "a global supply crunch hitting our deep jobs",
+      "the price jump on the lifting-gas component",
+      "paying up for hard-to-find product",
+      "the market squeeze on the mix we need",
+      "the rationing by our supplier",
+      "surge pricing on the deep-dive blend",
+      "costlier cylinders during the tight market",
+      "the scramble for scarce supply",
+      "premium rates for the rare element",
+      "the pinch in the wholesale market",
+      "the deep-mix cost bump",
+      "a spike from upstream shortages",
+      "emergency buying of the gas for saturation work",
+      "the shortage-driven markup"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "banksystem",
+     "vendor": "Coralgate Cryogenics",
+     "memos": [
+      "Mixing bank skid purchase Coralgate — PO 9101",
+      "Coralgate gas blending skid install WO 2355"
+     ],
+     "cross_memo": "Coralgate blending skid — electrical hookup",
+     "plain": [
+      "the Coralgate blending skid",
+      "the gas blending skid install",
+      "Coralgate skid purchase"
+     ],
+     "oblique": [
+      "the new onsite mixing station",
+      "equipment letting us make our own blends",
+      "the unit that cut our dependence on outside fills",
+      "a capital-style buy expensed in the month",
+      "the fresh production gear for the yard",
+      "installing a self-sufficiency rig",
+      "the machine that replaced bought-in mixes",
+      "the new yard-based setup",
+      "our own blend-making capability",
+      "the arrival of the new apparatus",
+      "the facility upgrade for fills",
+      "what we bought to stop outsourcing blends",
+      "the tank-filling gear that went live",
+      "the plant-side addition",
+      "the investment aimed at lowering unit costs",
+      "the shiny new yard machinery"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Diver Wages and Saturation Pay",
+   "aliases": [
+    "diver pay",
+    "dive crew wages",
+    "saturation pay",
+    "diver labor"
+   ],
+   "narrative": [
+    "Diver pay",
+    "Dive crew wages",
+    "Diver labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Payroll Services",
+     "base": 30000,
+     "memo": "Bi-weekly diver payroll run"
+    },
+    {
+     "vendor": "Anchorage Staffing Partners",
+     "base": 8500,
+     "memo": "Contract tender and supervisor labor"
+    },
+    {
+     "vendor": "Seaboard Benefits Trust",
+     "base": 6400,
+     "memo": "Diver health benefit contribution"
+    }
+   ],
+   "events": [
+    {
+     "key": "satbonus",
+     "vendor": "Meridian Payroll Services",
+     "memos": [
+      "Saturation campaign bell bonus payout — PR 4471",
+      "Bell run completion bonus Kestrel field — PR 4502"
+     ],
+     "cross_memo": "Saturation campaign bonus — payroll tax true-up",
+     "plain": [
+      "the saturation campaign bonus",
+      "bell run completion bonuses",
+      "the saturation bonus payout"
+     ],
+     "oblique": [
+      "extra money for the long deep deployment",
+      "the reward for finishing the offshore stint",
+      "incentive pay after the pipeline work wrapped",
+      "one-time pay to the crew on the lockdown job",
+      "what we paid people who lived under pressure for weeks",
+      "the thank-you money for hard assignments",
+      "special compensation for the extended mission",
+      "a lump sum after the successful tie-in",
+      "top-ups for the people who stayed down",
+      "the extra earnings from the long rotation",
+      "hazard-style premium on a marquee job",
+      "celebratory payments to the deep team",
+      "the payout for hitting the milestone",
+      "what the client's deadline cost us in pay",
+      "additional wages for living in the chamber",
+      "payments recognizing the grueling schedule"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "medic",
+     "vendor": "Lowtide Hyperbaric Staffing",
+     "memos": [
+      "Hyperbaric physician locum coverage — INV 7782",
+      "Lowtide HB doctor on-call WO 2410"
+     ],
+     "cross_memo": "Lowtide HB doctor coverage — travel and lodging",
+     "plain": [
+      "the Lowtide hyperbaric physician coverage",
+      "hyperbaric doctor on-call",
+      "the Lowtide HB doctor"
+     ],
+     "oblique": [
+      "a temporary medical specialist on site",
+      "the clinician we borrowed while ours was out",
+      "bringing in outside health expertise",
+      "medical cover for the extended job",
+      "the doctor the client insisted we have",
+      "stand-in healthcare for the rotation",
+      "coverage while our own physician was away",
+      "a contracted treating professional",
+      "the extra pair of medical hands",
+      "specialist support for decompression emergencies",
+      "the person ready to treat bends",
+      "contract caregiving during peak work",
+      "hiring a stand-by treatment expert",
+      "the interim chamber-side medic",
+      "clinical backup we rented",
+      "paying for a physician by the shift"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Dive Equipment Maintenance and Certification",
+   "aliases": [
+    "equipment maintenance",
+    "gear upkeep",
+    "dive gear service",
+    "certification costs"
+   ],
+   "narrative": [
+    "Equipment maintenance",
+    "Gear upkeep",
+    "Dive gear service"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tritonworks Helmet Repair",
+     "base": 5200,
+     "memo": "Helmet and regulator service monthly"
+    },
+    {
+     "vendor": "Cascade Hydrostatic Testing",
+     "base": 2800,
+     "memo": "Cylinder hydro test batch PO 6620"
+    },
+    {
+     "vendor": "Oceanic Umbilical Supply",
+     "base": 4100,
+     "memo": "Umbilical and hose replacement stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "chamberrefit",
+     "vendor": "Tritonworks Helmet Repair",
+     "memos": [
+      "Recompression chamber door seal refit — WO 2488",
+      "Chamber refit viewport replacement Tritonworks — PO 9188"
+     ],
+     "cross_memo": "Chamber refit viewport — safety inspection fee",
+     "plain": [
+      "the recompression chamber refit",
+      "chamber refit viewport work",
+      "the chamber door seal refit"
+     ],
+     "oblique": [
+      "overhauling the pressure vessel on deck",
+      "the work to keep the life-saving box compliant",
+      "repairs after the surveyor flagged leaks",
+      "getting the medical lock-out unit certified again",
+      "refurbishing the habitat that holds divers",
+      "making the oldest asset safe to use",
+      "the fix demanded by the flag state",
+      "restoring the decompression facility",
+      "the long-overdue renewal of the steel shell",
+      "upgrading the equipment that treats injured divers",
+      "work on the sealed compartment",
+      "a major service on the pressurized room",
+      "rebuilding the safety hardware aboard",
+      "putting the treatment unit back on line",
+      "the compliance-driven refurbishment",
+      "parts swapped to pass the audit"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "rovtether",
+     "vendor": "Nautilux Robotics",
+     "memos": [
+      "ROV tether management system rebuild — INV 3309",
+      "Nautilux TMS winch overhaul WO 2512"
+     ],
+     "cross_memo": "Nautilux TMS winch — spare slip ring",
+     "plain": [
+      "the ROV tether management rebuild",
+      "Nautilux TMS winch overhaul",
+      "the ROV tether system rebuild"
+     ],
+     "oblique": [
+      "repairing the unmanned sub's lifeline spool",
+      "restoring the robotic eyes below the ship",
+      "fixing the machine that pays out cable",
+      "getting the remote vehicle working again",
+      "a failure in the camera platform's drive",
+      "rework on the inspection drone gear",
+      "the cable-handling unit we had to rebuild",
+      "repairs to the thing that tows our camera",
+      "bringing the survey machine back",
+      "the repair on equipment that replaces divers in deep spots",
+      "a breakdown of the robotic launch gear",
+      "a fault in the spool handling the robot's cord",
+      "what we paid after the winch seized",
+      "the specialist rebuild by the maker",
+      "hours of bench work on the robotic kit",
+      "the post-failure restoration of the vehicle's link"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Project Mobilization and Demobilization",
+   "aliases": [
+    "mobilization",
+    "mob and demob",
+    "job setup costs",
+    "project mobilization spend"
+   ],
+   "narrative": [
+    "Mobilization",
+    "Mob and demob",
+    "Job setup costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeway Freight Forwarding",
+     "base": 7800,
+     "memo": "Container freight to site monthly"
+    },
+    {
+     "vendor": "Dockside Rigging and Crane",
+     "base": 4600,
+     "memo": "Quayside crane hire PO 7005"
+    }
+   ],
+   "events": [
+    {
+     "key": "arcticspread",
+     "vendor": "Ridgeway Freight Forwarding",
+     "memos": [
+      "Arctic spread air freight Prudhoe — INV 90211",
+      "Ridgeway north slope charter cargo WO 2560"
+     ],
+     "cross_memo": "Arctic spread Prudhoe — cold weather gear",
+     "plain": [
+      "the arctic spread Prudhoe freight",
+      "north slope charter cargo",
+      "the Prudhoe arctic spread"
+     ],
+     "oblique": [
+      "flying everything to the frozen job",
+      "the remote far-north contract setup",
+      "moving equipment to a location with no roads",
+      "the expense of working near the pole",
+      "getting people and kit above the circle",
+      "a once-off logistics push to icy waters",
+      "the polar assignment's transport bill",
+      "hauling gear by air because nothing else reached",
+      "the cold-climate project start-up",
+      "hauling a whole operation to the ice",
+      "the pricey journey to the edge of the map",
+      "airlifted equipment for a bleak location",
+      "the cost of reaching a distant client",
+      "shipping in winter conditions",
+      "fast cargo to a place with short seasons",
+      "the frontier job's upfront logistics"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "decomm",
+     "vendor": "Halyard Salvage Recovery",
+     "memos": [
+      "Wellhead decommission recovery Halyard — PO 9266",
+      "Halyard Salvage debris retrieval WO 2599"
+     ],
+     "cross_memo": "Halyard wellhead recovery — disposal manifest",
+     "plain": [
+      "the Halyard wellhead decommission",
+      "Halyard debris retrieval",
+      "the wellhead decommission recovery"
+     ],
+     "oblique": [
+      "taking an old oil installation off the seabed",
+      "retiring a legacy offshore asset",
+      "clearing junk the operator left behind",
+      "the cleanup of an abandoned field",
+      "removing the leftover steel from the bottom",
+      "the end-of-life job for a producing site",
+      "hauling up scrap the client wanted gone",
+      "restoring a seafloor to its original state",
+      "a regulatory requirement to pull equipment out",
+      "lifting dead hardware to the surface",
+      "the sunset of an aging platform's footprint",
+      "getting rid of what the last contractor stranded",
+      "the reclamation scope on the lease",
+      "retrieving wreckage from the bottom",
+      "a recovery of discarded structures",
+      "the closing chapter on an old well"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Underwater Inspection and NDT Services",
+   "aliases": [
+    "inspection services",
+    "ndt spend",
+    "underwater testing",
+    "survey work"
+   ],
+   "narrative": [
+    "Inspection services",
+    "NDT spend",
+    "Underwater testing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sonarpoint Survey Systems",
+     "base": 9200,
+     "memo": "Multibeam survey subcontract monthly"
+    },
+    {
+     "vendor": "Weldcheck NDT Labs",
+     "base": 6100,
+     "memo": "Ultrasonic thickness testing subcontract"
+    },
+    {
+     "vendor": "Pixelreef Imaging",
+     "base": 2900,
+     "memo": "Photogrammetry data processing"
+    }
+   ],
+   "events": [
+    {
+     "key": "cpsurvey",
+     "vendor": "Weldcheck NDT Labs",
+     "memos": [
+      "Cathodic protection potential survey jetty — WO 2641",
+      "CP survey anode readout Weldcheck — INV 6012"
+     ],
+     "cross_memo": "CP survey jetty — anode inventory",
+     "plain": [
+      "the cathodic protection survey",
+      "the CP survey anode readout",
+      "the jetty CP survey"
+     ],
+     "oblique": [
+      "checking the rust-prevention sacrificial blocks",
+      "the corrosion control review at the pier",
+      "a health check on the steel's electrical shield",
+      "verifying the metal-saving system still works",
+      "measuring the voltage on the submerged legs",
+      "the audit that told us what to replace",
+      "an engineer's look at how fast steel was wearing",
+      "the pier maintenance diagnostic",
+      "testing whether sacrificial metal was spent",
+      "the contract that confirmed our fix lasted",
+      "a requirement from the port authority",
+      "preventing decay in the waterfront structure",
+      "the readings taken beside the wharf",
+      "finding out which zinc needed swapping",
+      "the structural longevity study",
+      "the numbers that justified the follow-up repairs"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "damfault",
+     "vendor": "Kelpline Geotechnical",
+     "memos": [
+      "Dam intake stability inspection Kelpline — PO 9377",
+      "Kelpline geotech scour assessment WO 2670"
+     ],
+     "cross_memo": "Kelpline dam intake — access scaffolding",
+     "plain": [
+      "the Kelpline dam intake inspection",
+      "Kelpline geotech scour assessment",
+      "the dam intake stability inspection"
+     ],
+     "oblique": [
+      "looking at the reservoir outlet after the flood",
+      "a hydropower owner's request for a safety check",
+      "ensuring the water-retaining wall was sound",
+      "the soil erosion study near the spillway",
+      "a utility's worry about undermining",
+      "determining if the base had washed away",
+      "the engineering opinion on the concrete wall",
+      "what the dam operator demanded after heavy rain",
+      "investigating erosion at the foundation",
+      "an assessment to protect the downstream town",
+      "the review of the underwater structure at the lake",
+      "the regulator's mandated check",
+      "gauging ground movement beneath the intake",
+      "the study after the high-water event",
+      "the emergency look at the barrier",
+      "proof for the owner that the structure would hold"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Safety, Insurance and Compliance",
+   "aliases": [
+    "safety costs",
+    "insurance premiums",
+    "compliance spend",
+    "hse costs"
+   ],
+   "narrative": [
+    "Safety costs",
+    "Insurance premiums",
+    "Compliance spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightwater Marine Underwriters",
+     "base": 18500,
+     "memo": "Marine liability and hull premium monthly"
+    },
+    {
+     "vendor": "Lifeline Safety Training",
+     "base": 3300,
+     "memo": "Diver refresher and first aid courses"
+    },
+    {
+     "vendor": "ClearView Audit Partners",
+     "base": 2200,
+     "memo": "ADCI compliance documentation support"
+    }
+   ],
+   "events": [
+    {
+     "key": "incident",
+     "vendor": "Brightwater Marine Underwriters",
+     "memos": [
+      "Claim deductible umbilical entanglement incident — CL 4455",
+      "Entanglement incident deductible Brightwater — INV 7120"
+     ],
+     "cross_memo": "Entanglement incident — investigation consultant",
+     "plain": [
+      "the umbilical entanglement incident",
+      "entanglement incident deductible",
+      "the entanglement claim deductible"
+     ],
+     "oblique": [
+      "the accident on the Hartley project",
+      "our share of the loss when a diver got caught",
+      "what we paid out of pocket after the mishap",
+      "the cost of the near-fatal event",
+      "the out-of-pocket on the claim",
+      "the problem underwater that led to an insurer payout",
+      "the first-dollar exposure on the claim",
+      "what policy terms made us absorb",
+      "the unfortunate event at the dive site",
+      "an injury scare and its financial aftermath",
+      "the retained amount on the mishap",
+      "the loss event we reported to the carrier",
+      "the deductible triggered by the crew mishap",
+      "paying before coverage kicked in",
+      "the aftermath of a serious accident",
+      "self-insured portion of the claim"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "imoaudit",
+     "vendor": "Plimsoll Class Surveyors",
+     "memos": [
+      "IMCA DP trials audit Plimsoll — PO 9400",
+      "Plimsoll Class annual vessel audit WO 2688"
+     ],
+     "cross_memo": "Plimsoll DP trials — surveyor travel",
+     "plain": [
+      "the Plimsoll class audit",
+      "the IMCA DP trials audit",
+      "Plimsoll annual vessel audit"
+     ],
+     "oblique": [
+      "the independent check on our ship's station-keeping",
+      "a third party examining how we keep position",
+      "the yearly review required by clients",
+      "paperwork and tests demanded by the industry body",
+      "proof that our automated steering was reliable",
+      "the examiner who came aboard",
+      "an outside party certifying our practices",
+      "the exam our vessel had to pass",
+      "demonstrating competence to charterers",
+      "the scheduled inspection that renews a credential",
+      "the periodic assessment by a classification society",
+      "evidence for oil majors that we meet standards",
+      "a review of our thruster control capability",
+      "the sign-off that kept our contracts alive",
+      "the visiting assessor's fee",
+      "the formal vetting process"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,825 @@
+{
+ "slug": "bottled-water-distributor",
+ "industry": "bottled water distributor",
+ "entities": [
+  "Clearspring Beverage Distribution",
+  "Glacier Peak Water Supply",
+  "Bluecrest Hydration Partners",
+  "Northfield Aqua Logistics",
+  "Silver Basin Bottling & Delivery"
+ ],
+ "accounts": [
+  {
+   "name": "Fleet Maintenance & Repairs",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "fleet maintenance spend",
+    "truck upkeep",
+    "vehicle repairs"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Truck upkeep",
+    "Vehicle repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Redline Truck Service",
+     "base": 9800,
+     "memo": "Scheduled PM service — route trucks"
+    },
+    {
+     "vendor": "Tri-State Tire & Axle",
+     "base": 4200,
+     "memo": "Tire replacement — delivery fleet"
+    },
+    {
+     "vendor": "Brightway Collision Works",
+     "base": 2600,
+     "memo": "Body repair — minor damage"
+    }
+   ],
+   "events": [
+    {
+     "key": "reefer",
+     "vendor": "Redline Truck Service",
+     "memos": [
+      "Reefer unit overhaul — compressor swap",
+      "Reefer unit overhaul — labor"
+     ],
+     "cross_memo": "Reefer unit overhaul — rental trailer",
+     "plain": [
+      "the reefer unit overhaul",
+      "reefer unit overhaul costs",
+      "the overhaul of the reefer units"
+     ],
+     "oblique": [
+      "getting the cold-chain trailers back in service",
+      "the refrigeration repairs",
+      "fixing the cooling equipment that failed inspection",
+      "chilled trailer rebuilds",
+      "temperature-control repairs on the long-haul rigs",
+      "the cooling work",
+      "emergency work on trailers that could not hold temperature",
+      "a batch of cold-box fixes",
+      "restoring climate control on the big rigs",
+      "the cooling systems the state inspector flagged",
+      "getting heat-sensitive loads moving again",
+      "keeping product cold on the highway runs",
+      "the chilled trailer rescue",
+      "bringing the cold units up to standard",
+      "rework on the units that kept tripping alarms",
+      "the heavy refrigeration project"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "liftgate",
+     "vendor": "Harlan Hydraulic Mobile",
+     "memos": [
+      "Liftgate retrofit — hydraulic actuators",
+      "Liftgate retrofit — install labor"
+     ],
+     "cross_memo": "Liftgate retrofit — driver safety training",
+     "plain": [
+      "the liftgate retrofit",
+      "liftgate retrofit work",
+      "the retrofit of the liftgates"
+     ],
+     "oblique": [
+      "lifting platforms on the box trucks",
+      "upgrading the tailgate lifts",
+      "the load-assist equipment upgrade",
+      "new powered ramps on the delivery vans",
+      "making heavy case drops easier on drivers",
+      "the injury-prevention hardware program",
+      "modernizing the rear loading gear",
+      "the lifting mechanism swap",
+      "gear that raises pallets to the curb",
+      "hydraulic platform replacements",
+      "the response to the workers comp claims",
+      "equipment so drivers stop hauling cases by hand",
+      "the safety committee request for lifts",
+      "the lift upgrade across the older trucks",
+      "overdue loading-hardware replacements",
+      "the platform modernization"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Fuel & Lubricants",
+   "aliases": [
+    "fuel",
+    "diesel",
+    "fuel spend",
+    "fuel costs",
+    "fuel and oil"
+   ],
+   "narrative": [
+    "Fuel spend",
+    "Diesel",
+    "Fuel costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinnacle Fleet Fuel Cards",
+     "base": 24500,
+     "memo": "Fuel card settlement — diesel"
+    },
+    {
+     "vendor": "Kestrel Lubricants",
+     "base": 1900,
+     "memo": "Engine oil and filters — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "surcharge",
+     "vendor": "Pinnacle Fleet Fuel Cards",
+     "memos": [
+      "Hurricane supply surcharge — emergency fuel premium",
+      "Hurricane supply surcharge — spot pricing"
+     ],
+     "cross_memo": "Hurricane supply surcharge — dispatch overtime",
+     "plain": [
+      "the hurricane supply surcharge",
+      "hurricane supply surcharge billing",
+      "the surcharge from the hurricane supply disruption"
+     ],
+     "oblique": [
+      "the storm-related price spike",
+      "emergency pricing after the coastal terminals shut",
+      "paying extra to keep trucks rolling during the evacuation",
+      "the pump premium when stations ran dry",
+      "costs from the regional shortage",
+      "the weather event at the gulf refineries",
+      "scrambling for supply on the southern routes",
+      "the markup we absorbed to keep deliveries moving",
+      "higher rates during the shortage week",
+      "a temporary jump in price per gallon",
+      "the disaster-related premium",
+      "unplanned buying from alternate stations",
+      "relief runs that needed any fuel we could find",
+      "the supply crunch along the coast",
+      "the premium paid to stay on schedule",
+      "the emergency fill-ups"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "bulktank",
+     "vendor": "Ironbank Storage Systems",
+     "memos": [
+      "On-site diesel depot — tank installation",
+      "On-site diesel depot — permit fees"
+     ],
+     "cross_memo": "On-site diesel depot — containment berm",
+     "plain": [
+      "the on-site diesel depot",
+      "on-site diesel depot setup",
+      "the depot installation"
+     ],
+     "oblique": [
+      "our own filling station at the yard",
+      "fueling trucks overnight without leaving the lot",
+      "the private pump project",
+      "a storage tank for our own supply",
+      "cutting out trips to public stations",
+      "the yard-side refueling setup",
+      "installing a self-serve pump for drivers",
+      "bulk purchasing infrastructure",
+      "the capital move to buy wholesale",
+      "a standing reserve of product for the fleet",
+      "the new refueling point behind the warehouse",
+      "permits and hardware to stockpile energy",
+      "the plan to lock in cheaper rates",
+      "a tank farm in miniature",
+      "the project that lets us buy by the tanker load",
+      "the inventory of road product we now hold"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Bottle & Cap Supplies",
+   "aliases": [
+    "bottles",
+    "packaging",
+    "bottle supply",
+    "caps and closures",
+    "container costs"
+   ],
+   "narrative": [
+    "Bottle supply",
+    "Packaging",
+    "Container costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "PolyForm Containers",
+     "base": 27000,
+     "memo": "5-gallon bottle purchases — monthly"
+    },
+    {
+     "vendor": "SealTight Closures",
+     "base": 6500,
+     "memo": "Caps and tamper seals — monthly"
+    },
+    {
+     "vendor": "Labelcraft Printing",
+     "base": 3800,
+     "memo": "Label stock — standard"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "Labelcraft Printing",
+     "memos": [
+      "Spring relaunch — redesigned labels",
+      "Spring relaunch — die cutting"
+     ],
+     "cross_memo": "Spring relaunch — trade show signage",
+     "plain": [
+      "the spring relaunch",
+      "spring relaunch printing",
+      "the relaunch of the spring line"
+     ],
+     "oblique": [
+      "the new look for the product line",
+      "a fresh visual identity on every unit",
+      "the marketing refresh of our packaging",
+      "swapping out the old artwork",
+      "what the brand agency delivered",
+      "new graphics going on the shelves",
+      "the redesign we rolled out to retail accounts",
+      "a cosmetic overhaul of the product",
+      "updated artwork at the printer",
+      "the creative direction change",
+      "reprinting everything with the new design",
+      "the face-lift on the line",
+      "customer-facing design changes",
+      "the identity project",
+      "the new visual standard",
+      "a one-time artwork switch"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "recall",
+     "vendor": "Meridian Resin Partners",
+     "memos": [
+      "Lot 7 contamination — replacement preforms",
+      "Lot 7 contamination — expedited freight"
+     ],
+     "cross_memo": "Lot 7 contamination — disposal charges",
+     "plain": [
+      "the lot 7 contamination",
+      "lot 7 contamination replacement",
+      "the contamination in lot 7"
+     ],
+     "oblique": [
+      "a bad batch from the supplier",
+      "defective plastic that failed the incoming check",
+      "tossing a shipment that smelled off",
+      "a quality escape upstream",
+      "the material we had to pull from the line",
+      "a rush reorder after the failed inspection",
+      "a manufacturing flaw we found at receiving",
+      "product that could not be used",
+      "the shipment that never made it to the filling floor",
+      "a quarantined pallet situation",
+      "the scramble to replace spoiled raw material",
+      "a vendor mistake that cost us a week",
+      "unusable stock sent back",
+      "the batch that tested badly",
+      "a supplier lapse with plastic stock",
+      "getting clean material in on short notice"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Water Sourcing & Treatment",
+   "aliases": [
+    "water sourcing",
+    "source water",
+    "treatment costs",
+    "purification",
+    "water supply costs"
+   ],
+   "narrative": [
+    "Source water",
+    "Treatment costs",
+    "Purification"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cedar Ridge Spring Rights",
+     "base": 18500,
+     "memo": "Spring extraction fees — monthly"
+    },
+    {
+     "vendor": "AquaPure Chemical",
+     "base": 5400,
+     "memo": "Treatment chemicals — monthly"
+    },
+    {
+     "vendor": "Municipal Water Authority",
+     "base": 3100,
+     "memo": "Process water usage — plant"
+    }
+   ],
+   "events": [
+    {
+     "key": "ozone",
+     "vendor": "AquaPure Chemical",
+     "memos": [
+      "Ozone generator replacement — reactor core",
+      "Ozone generator replacement — commissioning"
+     ],
+     "cross_memo": "Ozone generator replacement — downtime rental",
+     "plain": [
+      "the ozone generator replacement",
+      "ozone generator replacement work",
+      "the replacement of the ozone generator"
+     ],
+     "oblique": [
+      "swapping the sanitizing machine at the plant",
+      "new disinfection equipment on the line",
+      "the unit that finally gave out",
+      "the sterilizing gear upgrade",
+      "a critical piece of the plant that quit",
+      "the replacement of worn purification hardware",
+      "equipment failure in the final treatment stage",
+      "the install that took the filling line offline briefly",
+      "the machine that kills microbes",
+      "a capital part for the clean room",
+      "the old unit hitting end of life",
+      "a major plant component exchange",
+      "the fix to the disinfecting step",
+      "the installation crew visit",
+      "our sanitation equipment change-out",
+      "the failed gear in the treatment room"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "drought",
+     "vendor": "Dry Creek Tanker Haulers",
+     "memos": [
+      "Drought supplemental haul — tanker loads",
+      "Drought supplemental haul — standby fees"
+     ],
+     "cross_memo": "Drought supplemental haul — emergency permit",
+     "plain": [
+      "the drought supplemental haul",
+      "drought supplemental haul charges",
+      "the supplemental hauling during the drought"
+     ],
+     "oblique": [
+      "trucking in raw product from outside the region",
+      "a dry season shortfall at the spring",
+      "buying water we normally get free of charge",
+      "imports of source supply by road",
+      "the low aquifer problem",
+      "the stretch when our own wells fell short",
+      "emergency deliveries from a distant source",
+      "the rainfall deficit",
+      "hauling by tanker to cover the gap",
+      "paying for supply from elsewhere",
+      "the shortage at the wellhead",
+      "rationing at the primary site",
+      "the arid summer's effect",
+      "the work-around when the springs slowed",
+      "a temporary external source arrangement",
+      "nature cutting our output"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse & Cooler Equipment",
+   "aliases": [
+    "warehouse",
+    "cooler equipment",
+    "dispenser costs",
+    "equipment leases",
+    "depot equipment"
+   ],
+   "narrative": [
+    "Warehouse costs",
+    "Cooler equipment",
+    "Dispenser costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stackwell Forklift Rental",
+     "base": 4600,
+     "memo": "Forklift lease — three units"
+    },
+    {
+     "vendor": "CoolServe Dispensers",
+     "base": 7200,
+     "memo": "Dispenser parts and sanitizing kits"
+    },
+    {
+     "vendor": "Granite Industrial Racking",
+     "base": 2300,
+     "memo": "Racking maintenance — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "sanitizer",
+     "vendor": "CoolServe Dispensers",
+     "memos": [
+      "Dispenser sanitation campaign — ultraviolet modules",
+      "Dispenser sanitation campaign — field tech hours"
+     ],
+     "cross_memo": "Dispenser sanitation campaign — customer notices",
+     "plain": [
+      "the dispenser sanitation campaign",
+      "dispenser sanitation campaign charges",
+      "the sanitation campaign for dispensers"
+     ],
+     "oblique": [
+      "cleaning up units at customer offices",
+      "the germ-control push in the field",
+      "the health inspection follow-up",
+      "retrofitting taps with disinfection lamps",
+      "an outbreak scare at a client site",
+      "the hygiene initiative aimed at the installed base",
+      "service calls to scrub coolers across the territory",
+      "making the units safer to drink from",
+      "the response to a customer complaint about taste",
+      "a sweeping refurbishment of what we placed",
+      "visits by technicians to every account",
+      "the biofilm worry",
+      "new lights inside the reservoirs",
+      "the proactive clean-up of leased machines",
+      "the purity assurance effort",
+      "the visits that kept us out of a lawsuit"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "racking",
+     "vendor": "Vantage Warehouse Builders",
+     "memos": [
+      "Mezzanine buildout — steel framing",
+      "Mezzanine buildout — floor decking"
+     ],
+     "cross_memo": "Mezzanine buildout — sprinkler relocation",
+     "plain": [
+      "the mezzanine buildout",
+      "mezzanine buildout construction",
+      "the buildout of the mezzanine"
+     ],
+     "oblique": [
+      "adding a second level to the stockroom",
+      "extra storage floor space",
+      "the expansion inside the existing walls",
+      "putting a platform over the packing area",
+      "room for the new customer wave",
+      "the structure we erected for overflow inventory",
+      "more square footage without moving",
+      "the construction crew in the back bay",
+      "a raised deck for pallets",
+      "the project that doubled shelf capacity",
+      "capacity to store the summer rush",
+      "carpenters and ironworkers on site",
+      "the upper-tier storage addition",
+      "making space for holiday stock",
+      "a structural addition to the facility",
+      "the build that eased the crowding"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Delivery Driver Costs",
+   "aliases": [
+    "driver costs",
+    "driver pay",
+    "delivery labor",
+    "route labor",
+    "driver expenses"
+   ],
+   "narrative": [
+    "Driver costs",
+    "Delivery labor",
+    "Route labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadwise Staffing",
+     "base": 14500,
+     "memo": "Temporary driver staffing — weekly"
+    },
+    {
+     "vendor": "SafeHaul Training",
+     "base": 1800,
+     "memo": "CDL compliance training — monthly"
+    },
+    {
+     "vendor": "Metro Uniform Service",
+     "base": 1200,
+     "memo": "Driver uniforms — rental"
+    }
+   ],
+   "events": [
+    {
+     "key": "strike",
+     "vendor": "Roadwise Staffing",
+     "memos": [
+      "Teamsters walkout coverage — replacement drivers",
+      "Teamsters walkout coverage — premium rate"
+     ],
+     "cross_memo": "Teamsters walkout coverage — security detail",
+     "plain": [
+      "the teamsters walkout coverage",
+      "teamsters walkout coverage billing",
+      "the coverage during the teamsters walkout"
+     ],
+     "oblique": [
+      "the labor dispute at the depot",
+      "paying outsiders to run the routes",
+      "the union stoppage",
+      "drivers who crossed in from other firms",
+      "the week our own crews stayed home",
+      "a work action by the regular staff",
+      "premium pay to keep customers supplied",
+      "the labor standoff",
+      "agency workers filling empty cabs",
+      "protest-line disruption",
+      "the negotiation impasse",
+      "a short-notice scramble for people",
+      "wage premiums during the stoppage",
+      "contract talks that broke down",
+      "the picket situation",
+      "hiring bodies to cover shifts"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "telematics",
+     "vendor": "Waypoint Fleet Tech",
+     "memos": [
+      "Route optimizer rollout — in-cab tablets",
+      "Route optimizer rollout — onboarding"
+     ],
+     "cross_memo": "Route optimizer rollout — data plan",
+     "plain": [
+      "the route optimizer rollout",
+      "route optimizer rollout costs",
+      "the rollout of the route optimizer"
+     ],
+     "oblique": [
+      "giving drivers a navigation upgrade",
+      "software that plans stops automatically",
+      "the move to smarter dispatching",
+      "gadgets mounted on every dashboard",
+      "technology meant to shorten delivery days",
+      "the digital transition for the routes",
+      "an efficiency project for the delivery side",
+      "handing out new handheld devices",
+      "learning a new scheduling system",
+      "the pilot that lowered miles driven",
+      "training time for the new gear",
+      "a modernization push from operations",
+      "our shift away from paper manifests",
+      "tools that reorder the stops",
+      "the tablets that arrived in the spring",
+      "the new way drivers get their daily plan"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Insurance & Compliance",
+   "aliases": [
+    "insurance",
+    "compliance",
+    "regulatory costs",
+    "licensing and permits",
+    "insurance and permits"
+   ],
+   "narrative": [
+    "Insurance",
+    "Compliance",
+    "Regulatory costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Heartland Commercial Insurance",
+     "base": 12500,
+     "memo": "Fleet and liability premium — monthly"
+    },
+    {
+     "vendor": "State Health Dept",
+     "base": 1100,
+     "memo": "Bottling plant license fee"
+    },
+    {
+     "vendor": "CleanLab Testing",
+     "base": 3300,
+     "memo": "Quarterly water analysis — accrual"
+    }
+   ],
+   "events": [
+    {
+     "key": "audit",
+     "vendor": "CleanLab Testing",
+     "memos": [
+      "Certification re-audit — full panel testing",
+      "Certification re-audit — auditor travel"
+     ],
+     "cross_memo": "Certification re-audit — corrective action plan",
+     "plain": [
+      "the certification re-audit",
+      "certification re-audit expenses",
+      "the re-audit for certification"
+     ],
+     "oblique": [
+      "the follow-up inspection after we missed a mark",
+      "a second round from the standards body",
+      "retesting after the surprise visit",
+      "the inspector's return trip",
+      "proving we fixed the findings",
+      "the check that kept our seal of approval",
+      "a second look from the regulators",
+      "expanded sampling to satisfy the agency",
+      "an extra round of paperwork and sampling",
+      "the government visit that went poorly",
+      "getting the stamp renewed",
+      "a deeper review of how we run the plant",
+      "the repeat visit nobody budgeted for",
+      "what we paid to stay licensed",
+      "the fix-it list from last quarter's inspection",
+      "chemists working through the full menu"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "claim",
+     "vendor": "Pacific Risk Advisors",
+     "memos": [
+      "Cargo spill settlement — deductible",
+      "Cargo spill settlement — legal review"
+     ],
+     "cross_memo": "Cargo spill settlement — cleanup crew",
+     "plain": [
+      "the cargo spill settlement",
+      "cargo spill settlement payment",
+      "the settlement of the cargo spill"
+     ],
+     "oblique": [
+      "the accident on the interstate",
+      "a truck incident that went to the lawyers",
+      "what we owed after the crash",
+      "a loss event that touched a third party",
+      "the out-of-pocket portion of a claim",
+      "our share of the damages",
+      "a highway mishap with a stack of pallets",
+      "closing out a dispute with another motorist",
+      "the overturned load",
+      "paying our part after the insurer agreed to cover",
+      "resolving an injury complaint",
+      "a rollover that stopped traffic",
+      "the aftermath of a delivery gone wrong",
+      "our portion of a payout",
+      "the uninsured slice of a collision",
+      "the case we settled quickly"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Facilities & Utilities",
+   "aliases": [
+    "facilities",
+    "utilities",
+    "plant utilities",
+    "power and gas",
+    "building costs"
+   ],
+   "narrative": [
+    "Utilities",
+    "Plant utilities",
+    "Building costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Valley Power & Light",
+     "base": 16500,
+     "memo": "Electricity — bottling plant"
+    },
+    {
+     "vendor": "SouthGas Energy",
+     "base": 2900,
+     "memo": "Natural gas — heating"
+    },
+    {
+     "vendor": "Ridgeline Property Management",
+     "base": 8500,
+     "memo": "Warehouse lease — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "roof",
+     "vendor": "Ridgeline Property Management",
+     "memos": [
+      "Warehouse roof replacement — membrane install",
+      "Warehouse roof replacement — drainage work"
+     ],
+     "cross_memo": "Warehouse roof replacement — temporary tarping",
+     "plain": [
+      "the warehouse roof replacement",
+      "warehouse roof replacement charges",
+      "the roof replacement at the warehouse"
+     ],
+     "oblique": [
+      "the leak problem over the stockroom",
+      "a landlord pass-through for the building envelope",
+      "new covering overhead after the storm damage",
+      "keeping rain off the pallets",
+      "the top-of-building project",
+      "the structural fix our lease made us share",
+      "water coming through the ceiling",
+      "the property owner's major repair",
+      "work from crews on the high scaffolding",
+      "a once-in-twenty-years capital item at the site",
+      "the failing cover that damaged inventory",
+      "the contractor who spent weeks above us",
+      "re-sealing the top of the facility",
+      "the overhead repair bill",
+      "the dripping problem finally resolved",
+      "the big project the building manager billed us for"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "solar",
+     "vendor": "Sunvale Energy Solutions",
+     "memos": [
+      "Rooftop solar array — panel mounting",
+      "Rooftop solar array — inverter hookup"
+     ],
+     "cross_memo": "Rooftop solar array — interconnection fee",
+     "plain": [
+      "the rooftop solar array",
+      "rooftop solar array installation",
+      "the installation of the solar array"
+     ],
+     "oblique": [
+      "generating our own electricity",
+      "the green energy initiative",
+      "panels catching sunshine over the plant",
+      "a plan to cut the monthly power bill",
+      "the sustainability project the board approved",
+      "clean power on the premises",
+      "onsite generation equipment",
+      "the investment to reduce grid dependence",
+      "a utility-scale commitment to renewables",
+      "what the energy consultant recommended",
+      "tax credit driven building improvements",
+      "our move toward self-supplied energy",
+      "the carbon reduction pledge",
+      "the metered output we now feed back",
+      "the environmental upgrade",
+      "photovoltaic equipment going up"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

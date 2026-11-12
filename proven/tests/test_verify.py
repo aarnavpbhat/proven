@@ -191,6 +191,49 @@ def test_policy_is_applied_and_reported():
     assert report["run"]["policy"]["amount_rel_tolerance"] == 0.0
 
 
+# ── model terms: never a FAIL; a PASS only when the policy allows and they are specific ──
+
+def _travel(terms, policy=None):
+    from proven import showcase
+    from proven.extract import RuleExtractor
+
+    class WithTerms:
+        name, version = "fake", "0"
+
+        def propose(self, text, book):
+            return [ClaimProposal(**{**p.__dict__, "driver_terms": terms, "extractor": "model"})
+                    if p.quote.startswith("Travel") else p
+                    for p in RuleExtractor().propose(text, book)]
+
+    report = run(showcase.EXPLANATION, showcase.ledger(), extractor=WithTerms(), policy=policy)
+    return next(c for c in report["claims"] if c["claim"]["quote"].startswith("Travel"))
+
+
+def test_model_terms_alone_never_fail_a_claim():
+    # "flights" and "hotel" match recurring travel that did not move; before the guard
+    # this was a confirmed WRONG_CAUSE decided by the model's vocabulary alone.
+    for policy in (Policy(), Policy(model_terms_anchor=True)):
+        claim = _travel(("flights", "hotel"), policy)
+        assert claim["verdict"] == "REVIEW"
+        assert [f["code"] for f in claim["findings"]] == ["REASON_FOUND_ONLY_BY_MODEL_TERMS"]
+
+
+def test_specific_model_terms_pass_only_when_the_policy_allows():
+    # The sentence says "fewer customer visits"; the ledger shows a company offsite. A model
+    # that proposed "offsite" would be wrong about the cause, and the default keeps a person
+    # in the loop. With the flag on, the term is specific and the movement is explained.
+    assert _travel(("offsite",))["verdict"] == "REVIEW"
+    allowed = _travel(("offsite",), Policy(model_terms_anchor=True))
+    assert allowed["verdict"] == "PASS"
+    assert allowed["reconstruction"]["driver"]["anchored_by_model_terms"] == ["offsite"]
+
+
+def test_a_generic_model_term_is_not_specific():
+    # "travel" is the account's own name; it must not anchor anything.
+    claim = _travel(("travel", "entertainment"), Policy(model_terms_anchor=True))
+    assert claim["verdict"] == "REVIEW"
+
+
 def test_a_reason_made_only_of_generic_words_is_review():
     result = check("Legal costs rose $91K due to higher costs.", ledger(series_b(91_240)))
     assert result["verdict"] == "REVIEW" and codes(result) == ["REASON_NOT_SEARCHABLE"]

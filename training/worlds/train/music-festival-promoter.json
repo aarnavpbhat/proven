@@ -1,0 +1,700 @@
+{
+ "slug": "music-festival-promoter",
+ "industry": "music festival promoter",
+ "entities": [
+  "Stagewave Productions LLC",
+  "Ridgeback Live Holdings",
+  "Coastline Sound & Vision Inc",
+  "Brightfield Festival Group",
+  "Undertow Events Ltd"
+ ],
+ "accounts": [
+  {
+   "name": "Stage Rigging & Structures",
+   "aliases": [
+    "rigging",
+    "stage build",
+    "truss and staging",
+    "structures spend",
+    "rigging costs",
+    "stage hardware"
+   ],
+   "narrative": [
+    "Rigging",
+    "Stage build",
+    "Truss and staging"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Truss Leasing",
+     "base": 14250,
+     "memo": "Truss lease - Main Stage PO 88412"
+    },
+    {
+     "vendor": "Keystone Staging Crew",
+     "base": 6800,
+     "memo": "Stage crew labor - weekly rate"
+    }
+   ],
+   "events": [
+    {
+     "key": "scaffold_recert",
+     "vendor": "Summit Truss Leasing",
+     "memos": [
+      "Truss recert - load test PO 90155",
+      "Truss recert - cert filing"
+     ],
+     "cross_memo": "Truss recert - inspection crane hire",
+     "plain": [
+      "the truss recert",
+      "truss recertification charge",
+      "recert load testing"
+     ],
+     "oblique": [
+      "getting the rig cleared by the structural engineer",
+      "the inspector sign-off before doors",
+      "passing the weight checks on the hanging frames",
+      "the engineer's stamp on the lighting bars",
+      "a load certificate for the main hanging points",
+      "documentation the venue insurer demanded",
+      "the spring safety audit paperwork",
+      "bringing the overhead gear up to code",
+      "recertifying the aluminum towers",
+      "the paperwork that let the rig go up",
+      "a fresh bill of health for the hoists",
+      "the pre-season structural review",
+      "satisfying the county building office",
+      "re-approval of the scaffold system",
+      "the signed load plan for the stage",
+      "unlocking permission to fly the canopy"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "barge_stage",
+     "vendor": "Tidewater Floatstage Co",
+     "memos": [
+      "Floating stage barge - dock hire PO 90321",
+      "Floating stage barge - tow and moor"
+     ],
+     "cross_memo": "Floating stage barge - harbor permit",
+     "plain": [
+      "the floating stage barge",
+      "barge stage hire",
+      "floating stage barge rental"
+     ],
+     "oblique": [
+      "the harbor platform for the waterfront set",
+      "a sunken-pad performance deck moored offshore",
+      "renting the pontoon the crowd could wade toward",
+      "the river-facing platform nobody had built before",
+      "a moored performance raft for the opening night",
+      "extra hull time for the bay concert",
+      "the water-based showcase the sponsor wanted",
+      "a drifting bandstand brought in by boat",
+      "the nautical set piece for the closing act",
+      "boat-borne staging over the inlet",
+      "the anchored deck used for the surprise guest",
+      "a pontoon bandstand for the evening slot",
+      "the floating platform hauled in overnight",
+      "bringing a pier-free stage onto the bay",
+      "hiring the vessel that hosted the headliner",
+      "the waterborne deck built for the finale"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Reefer Cold-Chain Logistics",
+   "aliases": [
+    "cold chain",
+    "refrigerated freight",
+    "reefer costs",
+    "cold storage hauling",
+    "chilled logistics",
+    "reefer spend"
+   ],
+   "narrative": [
+    "Cold chain",
+    "Refrigerated freight",
+    "Reefer costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Frostline Trucking",
+     "base": 9100,
+     "memo": "Reefer freight - F-line runs"
+    },
+    {
+     "vendor": "Polar Haul Dispatch",
+     "base": 2400,
+     "memo": "Dispatch fee - cold routes"
+    }
+   ],
+   "events": [
+    {
+     "key": "reefer_overhaul",
+     "vendor": "Frostline Trucking",
+     "memos": [
+      "Reefer unit overhaul - compressor swap",
+      "Reefer unit overhaul - labor"
+     ],
+     "cross_memo": "Reefer unit overhaul - rental trailer",
+     "plain": [
+      "the reefer unit overhaul",
+      "reefer overhaul work",
+      "the overhaul of reefer units"
+     ],
+     "oblique": [
+      "getting the cold-chain trailers back in service",
+      "the refrigeration repairs after the failed inspection",
+      "fixing the cooling equipment that broke down",
+      "the mechanical rebuild the drivers complained about",
+      "the chilled box work the fleet manager requested",
+      "restoring the trailer cooling after the breakdown",
+      "replacing the worn-out climate hardware",
+      "the temperature system rebuild at the depot",
+      "the unit rebuild that let the trucks roll again",
+      "fixing the coolers that died on the highway",
+      "the climate kit replacement ordered in spring",
+      "the trailer refit that followed the audit",
+      "a full cooling system tune-up for the crew",
+      "the hauler's emergency mechanical job",
+      "repairing the freezer boxes before tour season",
+      "the unit replacement that cut the spoilage"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "dry_ice_rush",
+     "vendor": "Glacier Gas Supply",
+     "memos": [
+      "Dry ice rush order - PO 91077",
+      "Dry ice rush order - same-day delivery"
+     ],
+     "cross_memo": "Dry ice rush order - courier surcharge",
+     "plain": [
+      "the dry ice rush order",
+      "rush dry ice delivery",
+      "the dry ice order"
+     ],
+     "oblique": [
+      "an emergency block of frozen carbon for the stage fog",
+      "a same-day top-up of the coolant for the artist rider",
+      "the sublimating blocks bought for the afternoon set",
+      "emergency chilling for the backstage catering",
+      "a last-minute pallet of supercold product for the greenroom",
+      "the frozen material trucked in after the freezer failed",
+      "stocking the effects team on short notice",
+      "a crisis supply of cold pellets for the pyrotechnics",
+      "buying chilled stock after the generator tripped",
+      "a weekend run of frozen blocks for the bar",
+      "urgent gas delivery for the smoke machines",
+      "topping up the stage chillers at midnight",
+      "a surprise order of extreme-cold product",
+      "the courier run that rescued the sponsor sampling",
+      "frozen cylinders brought in overnight",
+      "emergency subzero supplies for the headline set"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Artist Hospitality & Riders",
+   "aliases": [
+    "hospitality",
+    "rider spend",
+    "green room",
+    "artist catering",
+    "backstage hospitality",
+    "rider costs"
+   ],
+   "narrative": [
+    "Hospitality",
+    "Rider spend",
+    "Green room"
+   ],
+   "recurring": [
+    {
+     "vendor": "Golden Table Catering",
+     "base": 11200,
+     "memo": "Catering - artist green room"
+    },
+    {
+     "vendor": "Crescent Linen Rentals",
+     "base": 1600,
+     "memo": "Linen rental - hospitality tents"
+    }
+   ],
+   "events": [
+    {
+     "key": "rider_upgrade",
+     "vendor": "Golden Table Catering",
+     "memos": [
+      "Rider upgrade - headliner PO 90888",
+      "Rider upgrade - imported spirits"
+     ],
+     "cross_memo": "Rider upgrade - private chef",
+     "plain": [
+      "the rider upgrade",
+      "headliner rider upgrade",
+      "the upgraded rider"
+     ],
+     "oblique": [
+      "the extra demands the headline act sent over",
+      "imported drinks the star's manager insisted on",
+      "a fancier spread after the contract renegotiation",
+      "the upgraded fare the agent requested",
+      "catering the top-billed name asked for at the last minute",
+      "the premium provisions written into the new clause",
+      "extras the tour manager added to the list",
+      "the pricier menu that the agent approved",
+      "upscale snacks requested for the closing performer",
+      "the bumped-up spread from the promoter's concession",
+      "luxury supplies requested by the headliner's camp",
+      "elevated refreshments for the vip performer",
+      "premium bar stock ordered for the star",
+      "the extended provisions after the negotiation",
+      "a richer green room the agent demanded",
+      "the gourmet specials delivered before showtime"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "vip_dinner",
+     "vendor": "Lantern Private Dining",
+     "memos": [
+      "Artist dinner - private hall PO 91404",
+      "Artist dinner - service staff"
+     ],
+     "cross_memo": "Artist dinner - table linens",
+     "plain": [
+      "the artist dinner",
+      "private artist dinner",
+      "the dinner for the artists"
+     ],
+     "oblique": [
+      "a seated meal reserved for the acts after soundcheck",
+      "a sit-down supper in a separate room off the grounds",
+      "an evening table booked in the restaurant upstairs",
+      "the banquet the sponsors hosted for the performers",
+      "a formal feast laid on for the bands",
+      "a reserved room for the lineup after the show",
+      "a plated evening for the touring party",
+      "a candlelit spread for the visiting stars",
+      "the private hall booking for the headliners",
+      "a gala-style supper the agency arranged",
+      "an exclusive dining event with waitstaff",
+      "the reserved tables for the crew leaders",
+      "a special late meal set up in the lounge",
+      "the separate dining room hired for the night",
+      "a catered sit-down for the artist party",
+      "the hosted evening the label paid for"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Permits & Municipal Fees",
+   "aliases": [
+    "permits",
+    "city fees",
+    "licensing",
+    "permit costs",
+    "municipal charges",
+    "permit spend"
+   ],
+   "narrative": [
+    "Permits",
+    "City fees",
+    "Licensing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Municipal Events Office",
+     "base": 4200,
+     "memo": "Event permit - recurring fee"
+    },
+    {
+     "vendor": "Hartwell Noise Board",
+     "base": 900,
+     "memo": "Noise variance - standing"
+    }
+   ],
+   "events": [
+    {
+     "key": "road_closure",
+     "vendor": "Municipal Events Office",
+     "memos": [
+      "Road closure permit - Harbor Ave PO 89234",
+      "Road closure permit - traffic plan"
+     ],
+     "cross_memo": "Road closure permit - police detail",
+     "plain": [
+      "the road closure permit",
+      "road closure fees",
+      "the closure permit"
+     ],
+     "oblique": [
+      "getting the boulevard shut for the crowds",
+      "clearing the street for the march to the gates",
+      "the traffic control paperwork for the parade route",
+      "the city sign-off for blocking the avenue",
+      "the approval to close the main thoroughfare",
+      "shutting down the lanes outside the venue",
+      "paying the city to reroute the vehicles",
+      "the sanctioned barricade request for the entrance",
+      "the street use approval for the opening day",
+      "the council's pass to halt the buses",
+      "authorization to block the lane near the stage",
+      "the municipal nod for the detour",
+      "the fee for keeping cars off the bridge",
+      "the civic order for the crowd corridor",
+      "the mayor's office signature on the route",
+      "the district go-ahead for the late closure"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "fire_inspection",
+     "vendor": "Ashgrove Fire Marshal Desk",
+     "memos": [
+      "Fire marshal inspection - re-review PO 90519",
+      "Fire marshal inspection - retest fee"
+     ],
+     "cross_memo": "Fire marshal inspection - egress signage",
+     "plain": [
+      "the fire marshal inspection",
+      "fire inspection re-review",
+      "the marshal re-inspection"
+     ],
+     "oblique": [
+      "the safety walkthrough that failed on the first pass",
+      "a second look at the exits before the gates opened",
+      "the official check of the tents for flammables",
+      "the compliance visit that followed the complaint",
+      "getting the crowd capacity signed off by the authorities",
+      "the rescheduled audit of the grounds",
+      "the reinspection of the temporary structures",
+      "the public safety certification for the main field",
+      "the outside examiner who returned to the site",
+      "the additional scrutiny on the pyrotechnic zones",
+      "clearance from the regional safety officer",
+      "the follow-up visit to the lighting towers",
+      "the repeat assessment for the occupancy limit",
+      "the hearing for the non-compliant generator",
+      "sign-off from the local hazard reviewer",
+      "the second round of safety approvals"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Freight & Equipment Shipping",
+   "aliases": [
+    "freight",
+    "shipping",
+    "equipment transport",
+    "gear haulage",
+    "freight spend",
+    "logistics"
+   ],
+   "narrative": [
+    "Freight",
+    "Shipping",
+    "Equipment transport"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightline Haulers",
+     "base": 16800,
+     "memo": "Gear freight - touring rigs"
+    },
+    {
+     "vendor": "Mercer Freight Brokerage",
+     "base": 3100,
+     "memo": "Brokerage fee - freight leg"
+    }
+   ],
+   "events": [
+    {
+     "key": "airfreight_rush",
+     "vendor": "Brightline Haulers",
+     "memos": [
+      "Airfreight rush - sound desk PO 90611",
+      "Airfreight rush - crate handling"
+     ],
+     "cross_memo": "Airfreight rush - customs broker",
+     "plain": [
+      "the airfreight rush",
+      "rush airfreight charges",
+      "the airfreight shipment"
+     ],
+     "oblique": [
+      "flying the mixing console in from overseas",
+      "the emergency aerial move of the audio gear",
+      "expedited shipping over the ocean for the front-of-house kit",
+      "the premium air leg for the sound system",
+      "getting the board across the border by plane",
+      "the crash shipment of the equipment the engineer needed",
+      "paying extra to fly the rig instead of trucking it",
+      "the overnight plane route for the mixing hardware",
+      "the fast-tracked haul of the stage monitors",
+      "speeding the console to the site on a cargo flight",
+      "the express delivery that saved the opening night",
+      "the priority aerial dispatch for the desk",
+      "the expedited import of the audio package",
+      "the rushed transport of the sound equipment across the sea",
+      "the plane fare for the front-end gear",
+      "the upgraded delivery of the mixer from abroad"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "port_demurrage",
+     "vendor": "Anchorage Port Authority",
+     "memos": [
+      "Port demurrage - container hold PO 91290",
+      "Port demurrage - storage days"
+     ],
+     "cross_memo": "Port demurrage - documentation",
+     "plain": [
+      "the port demurrage",
+      "demurrage charges at the port",
+      "port container demurrage"
+     ],
+     "oblique": [
+      "the penalty for the crates sitting at the dock too long",
+      "storage fees piling up while the cargo waited for release",
+      "paying the terminal for holding the containers past the deadline",
+      "the late fee for leaving gear on the wharf",
+      "charges for the boxes stuck in the customs yard",
+      "the holdover fee on the shipment at the quay",
+      "the dockside rental for the unclaimed equipment",
+      "penalty days racked up in the harbor compound",
+      "extra terminal time on the gear",
+      "the late pickup penalty at the marine yard",
+      "the charge for keeping the cases on the pier",
+      "the overdue holding bill from the wharf office",
+      "the surcharge for the delayed release of the rig",
+      "fees accumulated at the waterfront depot",
+      "the outstanding dock bill on the load",
+      "the cost of cargo idling at the terminal"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Crowd Security & Stewarding",
+   "aliases": [
+    "security",
+    "stewarding",
+    "guard costs",
+    "crowd control",
+    "steward staffing",
+    "security spend"
+   ],
+   "narrative": [
+    "Security",
+    "Stewarding",
+    "Guard costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bulwark Guard Services",
+     "base": 22500,
+     "memo": "Security staffing - gate and perimeter"
+    },
+    {
+     "vendor": "Vigil Radio Systems",
+     "base": 1300,
+     "memo": "Radio lease - steward channels"
+    }
+   ],
+   "events": [
+    {
+     "key": "extra_guards",
+     "vendor": "Bulwark Guard Services",
+     "memos": [
+      "Extra guards - overtime shift PO 91002",
+      "Extra guards - holiday premium"
+     ],
+     "cross_memo": "Extra guards - transport van",
+     "plain": [
+      "the extra guards",
+      "extra guard shifts",
+      "the guard overtime"
+     ],
+     "oblique": [
+      "the additional bodies at the entrance during the surge",
+      "more people standing watch after the ticket rush",
+      "the surplus manpower brought in for the crowd peak",
+      "the late-night gatekeepers added to the schedule",
+      "the reinforcement of the perimeter for the headliner",
+      "the call-in staff for the surge at the gates",
+      "the bolstered coverage on the final night",
+      "the extra hands at the barriers for the rush",
+      "paying the premium rate for the watch",
+      "the augmented patrol the event team requested",
+      "the emergency roster for the entrance lines",
+      "the additional sentries posted after the incident",
+      "the beefed-up cover for the closing set",
+      "the surge team sent out at short notice",
+      "the temporary coverage at the back gate",
+      "the widened detail for the festival weekend"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "drone_surveillance",
+     "vendor": "Skyward Aerial Watch",
+     "memos": [
+      "Drone surveillance - perimeter flights PO 91356",
+      "Drone surveillance - operator fee"
+     ],
+     "cross_memo": "Drone surveillance - insurance rider",
+     "plain": [
+      "the drone surveillance",
+      "drone surveillance hire",
+      "the surveillance drones"
+     ],
+     "oblique": [
+      "the eye in the sky over the grounds",
+      "a camera aircraft circling the venue at dusk",
+      "aerial monitoring of the crowd from above",
+      "the remote-piloted flights that scanned the fence line",
+      "a flying lookout over the parking lots",
+      "the overhead watch the chief of security wanted",
+      "hovering cameras that tracked the crowd flow",
+      "the high-altitude viewing of the entrances",
+      "the unmanned look at the campsite perimeter",
+      "a rotor-powered sweep of the outer field",
+      "the air patrol that covered the blind corners",
+      "the sky watch the insurer required",
+      "the quadcopter coverage of the gate lines",
+      "a lookout that flew above the midway",
+      "the autonomous patrol over the backstage",
+      "the remote sweep of the grounds at night"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Insurance & Event Cancellation Cover",
+   "aliases": [
+    "insurance",
+    "event cover",
+    "cancellation insurance",
+    "risk premiums",
+    "insurance premiums",
+    "policy costs"
+   ],
+   "narrative": [
+    "Insurance",
+    "Event cover",
+    "Cancellation insurance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harrow & Finch Underwriters",
+     "base": 18700,
+     "memo": "Liability premium - monthly installment"
+    },
+    {
+     "vendor": "Lakeshore Broker Group",
+     "base": 2100,
+     "memo": "Broker commission - policy service"
+    }
+   ],
+   "events": [
+    {
+     "key": "weather_endorsement",
+     "vendor": "Harrow & Finch Underwriters",
+     "memos": [
+      "Weather endorsement - rain cover PO 90774",
+      "Weather endorsement - rider adjustment"
+     ],
+     "cross_memo": "Weather endorsement - premium audit",
+     "plain": [
+      "the weather endorsement",
+      "weather cover endorsement",
+      "the endorsement for weather"
+     ],
+     "oblique": [
+      "extra protection against the forecast storms",
+      "adding the clause that covers washouts",
+      "the coverage added after the meteorologist's warning",
+      "the protection against the rain that stopped the gates",
+      "expanded cover for the outdoor days",
+      "the rider that pays if the skies open",
+      "the policy addition the board wanted for the summer run",
+      "the clause for losses from bad skies",
+      "the broader storm cover signed in spring",
+      "extra indemnity for the outdoor stage",
+      "the rain guarantee the investors insisted on",
+      "the additional risk layer for the open-air dates",
+      "the storm rider negotiated with the carrier",
+      "the weather-linked add-on the agent proposed",
+      "the upgraded policy for the open field",
+      "the expanded hazard protection for the weekend"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "headliner_cancel_cover",
+     "vendor": "Pinecrest Specialty Risk",
+     "memos": [
+      "Headliner cancellation cover - artist PO 91188",
+      "Headliner cancellation cover - underwriting fee"
+     ],
+     "cross_memo": "Headliner cancellation cover - medical exam",
+     "plain": [
+      "the headliner cancellation cover",
+      "artist cancellation cover",
+      "the headliner cover"
+     ],
+     "oblique": [
+      "protection if the top act backs out",
+      "the policy that pays when the star cannot perform",
+      "coverage for the main name dropping out",
+      "the guarantee against the lead performer's illness",
+      "the contingency for the marquee artist's absence",
+      "the cover the label asked us to buy for the star",
+      "the premium for the lineup's biggest name",
+      "insurance against the closing act failing to appear",
+      "the risk shield around the top booking",
+      "the contract protection for the big act",
+      "the policy the agent insisted on for the lead",
+      "a payout if the anchor booking falls through",
+      "the safety net for the featured performer",
+      "a safeguard for the flagship artist's schedule",
+      "the coverage for the star's medical situation",
+      "the backstop if the main attraction withdraws"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-haiku-5-5"
+}

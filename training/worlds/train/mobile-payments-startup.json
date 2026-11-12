@@ -1,0 +1,723 @@
+{
+ "slug": "mobile-payments-startup",
+ "industry": "mobile payments startup",
+ "entities": [
+  "Tapwave Payments Inc.",
+  "Brightpay Mobile Ltd.",
+  "Zippr Wallet Co.",
+  "Ledgerly Pay Holdings",
+  "Novapay Labs LLC"
+ ],
+ "accounts": [
+  {
+   "name": "Payment Processing Fees",
+   "aliases": [
+    "processing fees",
+    "processor costs",
+    "card network fees",
+    "interchange spend",
+    "payment rails costs"
+   ],
+   "narrative": [
+    "Processing fees",
+    "Processor costs",
+    "Interchange spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Acquiring Services",
+     "base": 28000,
+     "memo": "Monthly card processing and interchange settlement"
+    },
+    {
+     "vendor": "Halcyon Gateway Corp",
+     "base": 9500,
+     "memo": "Payment gateway transaction fees"
+    },
+    {
+     "vendor": "Corvid Network Access",
+     "base": 3200,
+     "memo": "Card network assessment fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "scheme_repricing",
+     "vendor": "Meridian Acquiring Services",
+     "memos": [
+      "Tier repricing adjustment — volume band reset",
+      "Tier repricing adjustment — true-up invoice"
+     ],
+     "cross_memo": "Tier repricing adjustment — gateway surcharge",
+     "plain": [
+      "the tier repricing adjustment",
+      "the volume band reset",
+      "the repricing true-up invoice"
+     ],
+     "oblique": [
+      "the new rate card our bank partner imposed",
+      "higher unit costs after crossing a threshold",
+      "a retroactive pricing change from the acquirer",
+      "the reset of our discount schedule",
+      "what the sponsor bank charged after our growth",
+      "extra cost per swipe starting midyear",
+      "a contract step-up we did not negotiate",
+      "the penalty for outgrowing our old agreement",
+      "terms rewritten by the party that settles our cards",
+      "a catch-up bill for undercharged earlier activity",
+      "the pricing we got moved onto",
+      "upward revision of our per-transaction economics",
+      "a lookback bill covering several quarters",
+      "the cost of being bumped to a different bracket",
+      "our provider reworking what we pay on each purchase",
+      "settlement costs jumping after the renegotiation"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "chargeback_wave",
+     "vendor": "Pinnacle Dispute Resolution",
+     "memos": [
+      "Holiday chargeback wave — dispute handling fees",
+      "Holiday chargeback wave — representment charges"
+     ],
+     "cross_memo": "Holiday chargeback wave — fraud analyst overtime",
+     "plain": [
+      "the holiday chargeback wave",
+      "the holiday dispute handling fees",
+      "the chargeback wave representment charges"
+     ],
+     "oblique": [
+      "customers contesting purchases after the seasonal rush",
+      "a spike in contested transactions",
+      "the flood of cardholder disputes",
+      "buyers reversing payments in bulk",
+      "fighting claims that purchases were not authorized",
+      "the cleanup after a burst of reversed sales",
+      "cases opened by banks on our merchants",
+      "an unusual number of challenged payments",
+      "handling customers who say they never bought",
+      "the end-of-year surge in reversed orders",
+      "paying outside specialists to contest claims",
+      "a rash of disputed purchases from one campaign",
+      "money lost on contested payments we had to answer",
+      "the wave of complaints filed with issuers",
+      "cost of defending ourselves against payment reversals",
+      "the fallout from a promotional period gone sideways"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Fraud Prevention & KYC",
+   "aliases": [
+    "fraud and kyc",
+    "kyc costs",
+    "identity verification spend",
+    "fraud tooling",
+    "compliance screening costs"
+   ],
+   "narrative": [
+    "Fraud and KYC",
+    "Identity verification spend",
+    "Compliance screening costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "VeriTrace Identity",
+     "base": 12000,
+     "memo": "Per-check ID document verification"
+    },
+    {
+     "vendor": "Sentinel Risk Analytics",
+     "base": 8000,
+     "memo": "Fraud scoring engine subscription"
+    },
+    {
+     "vendor": "ClearList Screening",
+     "base": 4500,
+     "memo": "Sanctions and watchlist screening"
+    }
+   ],
+   "events": [
+    {
+     "key": "biometric_rollout",
+     "vendor": "VeriTrace Identity",
+     "memos": [
+      "Selfie liveness rollout — integration setup",
+      "Selfie liveness rollout — onboarding batch fees"
+     ],
+     "cross_memo": "Selfie liveness rollout — mobile SDK licence",
+     "plain": [
+      "the selfie liveness rollout",
+      "the liveness integration setup",
+      "the selfie rollout batch fees"
+     ],
+     "oblique": [
+      "adding face matching to signup",
+      "a stronger gate against fake accounts",
+      "the new step users face when joining",
+      "stopping people from using stolen photos",
+      "a tougher check at account opening",
+      "a regulator-driven upgrade of how we confirm customers",
+      "extra screening that slowed new enrolments",
+      "the feature that proves a real person is present",
+      "what our sponsor bank demanded before expansion",
+      "protection against synthetic applicants",
+      "a one-time project to confirm users are alive",
+      "the camera step we bolted onto registration",
+      "new friction in the join flow",
+      "the upgrade after a wave of impersonators",
+      "work to meet a stricter customer-confirmation standard",
+      "what we paid to harden enrolment"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "synthetic_ring",
+     "vendor": "Graywolf Forensics",
+     "memos": [
+      "Mule account ring investigation — forensic review",
+      "Mule account ring investigation — case retainer"
+     ],
+     "cross_memo": "Mule account ring investigation — frozen funds legal hold",
+     "plain": [
+      "the mule account ring investigation",
+      "the mule ring forensic review",
+      "the mule ring case retainer"
+     ],
+     "oblique": [
+      "tracking down a group laundering money through our users",
+      "outside experts untangling a criminal network",
+      "the probe after suspicious clusters of new wallets",
+      "cost of a criminal scheme discovered in the spring",
+      "the specialists we hired when losses appeared",
+      "unwinding a coordinated abuse of referral bonuses",
+      "an external team reconstructing who moved what",
+      "the incident that made the board ask questions",
+      "paying detectives to map the connected users",
+      "our response to an organised abuse pattern",
+      "outside analysis of a suspicious cash-out pattern",
+      "the engagement after law enforcement called",
+      "the hunt for the people behind coordinated misuse",
+      "a specialist team hired after alerts piled up",
+      "cleanup after criminals exploited our signup bonus",
+      "expert help tracing a pattern of linked profiles"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Cloud & Payment Infrastructure",
+   "aliases": [
+    "cloud hosting",
+    "infrastructure costs",
+    "cloud spend",
+    "hosting and compute",
+    "platform infrastructure"
+   ],
+   "narrative": [
+    "Cloud hosting",
+    "Infrastructure costs",
+    "Hosting and compute"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stratus Compute Cloud",
+     "base": 30000,
+     "memo": "Production compute and storage"
+    },
+    {
+     "vendor": "EdgeRelay CDN",
+     "base": 5200,
+     "memo": "Content delivery and API edge routing"
+    },
+    {
+     "vendor": "Datavault Backup Services",
+     "base": 2800,
+     "memo": "Encrypted database backups"
+    }
+   ],
+   "events": [
+    {
+     "key": "failover_region",
+     "vendor": "Stratus Compute Cloud",
+     "memos": [
+      "Second region failover build — reserved capacity",
+      "Second region failover build — data replication charges"
+     ],
+     "cross_memo": "Second region failover build — contractor hours",
+     "plain": [
+      "the second region failover build",
+      "the failover reserved capacity",
+      "the failover data replication charges"
+     ],
+     "oblique": [
+      "making sure an outage in one place cannot stop payments",
+      "our insurance against a regional blackout",
+      "duplicating the whole stack in another geography",
+      "the resilience project the bank partner required",
+      "standing up a spare environment that sits idle",
+      "what we paid after last winter's downtime",
+      "building a safety net for the platform",
+      "mirroring production far from the original",
+      "the redundancy demanded after the incident",
+      "a copy of everything kept warm elsewhere",
+      "spend aimed at never going dark again",
+      "extra capacity sitting ready for a disaster",
+      "the project to survive losing a data center",
+      "cost of being able to switch locations quickly",
+      "a continuity mandate from regulators",
+      "paying twice to run in two places"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "promo_surge",
+     "vendor": "Burstline Elastic Hosting",
+     "memos": [
+      "Super bowl cashback promo — burst compute",
+      "Super bowl cashback promo — load balancer overage"
+     ],
+     "cross_memo": "Super bowl cashback promo — push notification blast fees",
+     "plain": [
+      "the super bowl cashback promo",
+      "the cashback promo burst compute",
+      "the promo load balancer overage"
+     ],
+     "oblique": [
+      "the traffic spike from our big marketing push",
+      "servers straining when everyone opened the app at once",
+      "temporary muscle rented for a one-night rush",
+      "a viral moment that overwhelmed our systems",
+      "scaling up for a single game day",
+      "the sudden crowd of users chasing a reward",
+      "extra horsepower we needed for one weekend",
+      "capacity bought for a short burst of demand",
+      "the surge from a televised campaign",
+      "paying for headroom during a giveaway",
+      "a single evening of unusually heavy usage",
+      "the cost of a sports-event advertising tie-in",
+      "unplanned demand from a reward offer",
+      "the rush after a celebrity ad aired",
+      "short-term computing for a spike in logins",
+      "handling the crowd from a national broadcast"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Regulatory & Licensing",
+   "aliases": [
+    "licensing",
+    "money transmitter licences",
+    "regulatory fees",
+    "compliance filings",
+    "state licence costs"
+   ],
+   "narrative": [
+    "Licensing",
+    "Money transmitter licences",
+    "Regulatory fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite State Licensing Bureau",
+     "base": 3500,
+     "memo": "Money transmitter licence renewals"
+    },
+    {
+     "vendor": "Whitfield & Ames Regulatory Counsel",
+     "base": 9000,
+     "memo": "Monthly regulatory counsel retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "canada_expansion",
+     "vendor": "Whitfield & Ames Regulatory Counsel",
+     "memos": [
+      "Ontario market entry — registration filings",
+      "Ontario market entry — counsel project fees"
+     ],
+     "cross_memo": "Ontario market entry — local bank account setup",
+     "plain": [
+      "the Ontario market entry",
+      "the Ontario registration filings",
+      "the Ontario entry counsel project fees"
+     ],
+     "oblique": [
+      "opening up our first foreign territory",
+      "paperwork to start serving northern customers",
+      "legal groundwork for operating across the border",
+      "the expansion that needed a new regulator's blessing",
+      "getting permission to onboard people abroad",
+      "a new country on our roadmap",
+      "the effort to be allowed to sell there",
+      "registering with authorities outside our home market",
+      "the cost of taking the product international",
+      "lawyers preparing for launch overseas",
+      "first steps toward foreign revenue",
+      "permits for a geography we had never served",
+      "the project to enter a neighbouring jurisdiction",
+      "approvals the board wanted before launch",
+      "work to make the app legal in another nation",
+      "the push to grow beyond domestic users"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "audit_finding",
+     "vendor": "Halvorsen Assurance Group",
+     "memos": [
+      "Consent order remediation — independent assessor",
+      "Consent order remediation — policy rewrite"
+     ],
+     "cross_memo": "Consent order remediation — staff retraining sessions",
+     "plain": [
+      "the consent order remediation",
+      "the remediation independent assessor",
+      "the consent order policy rewrite"
+     ],
+     "oblique": [
+      "fixing what examiners flagged in their report",
+      "the outside reviewer a regulator made us hire",
+      "correcting weaknesses found during an inspection",
+      "an agreement with authorities after a poor finding",
+      "redoing our written procedures under supervision",
+      "penance for gaps in our oversight program",
+      "work that a government agency required of us",
+      "the third party checking our corrections",
+      "cleanup after the official criticism",
+      "a mandated overhaul of how we run controls",
+      "the price of satisfying our overseers",
+      "obligatory repairs after a failed review",
+      "an independent checker we did not choose",
+      "what we owed after the authorities settled with us",
+      "the formal commitment to repair our weaknesses",
+      "rewriting the rulebook at the supervisor's insistence"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Bank Partner & Sponsor Fees",
+   "aliases": [
+    "sponsor bank fees",
+    "bank partner costs",
+    "banking fees",
+    "settlement bank charges",
+    "partner bank spend"
+   ],
+   "narrative": [
+    "Sponsor bank fees",
+    "Bank partner costs",
+    "Settlement bank charges"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cornerstone Trust Bank",
+     "base": 18000,
+     "memo": "Sponsor bank program management fee"
+    },
+    {
+     "vendor": "Ridgeline ACH Services",
+     "base": 6000,
+     "memo": "ACH origination and return fees"
+    },
+    {
+     "vendor": "Pacific Reserve Custody",
+     "base": 2500,
+     "memo": "Safeguarding account maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "wire_outage",
+     "vendor": "Cornerstone Trust Bank",
+     "memos": [
+      "Failed payout batch — expedited wire fees",
+      "Failed payout batch — manual reconciliation charge"
+     ],
+     "cross_memo": "Failed payout batch — customer goodwill credits",
+     "plain": [
+      "the failed payout batch",
+      "the failed batch expedited wire fees",
+      "the failed batch manual reconciliation charge"
+     ],
+     "oblique": [
+      "a payday that did not arrive on time",
+      "rushing money to people who were left waiting",
+      "the glitch that stranded merchant deposits",
+      "paying extra to make late transfers land",
+      "cleaning up after a transfer file got rejected",
+      "the scramble to deliver funds a day late",
+      "an error in a weekly disbursement run",
+      "hand-fixing money that went missing in transit",
+      "the cost of an incident affecting seller payouts",
+      "emergency movement of cash after a systems fault",
+      "unplanned fees to make customers whole",
+      "the day our deposits never reached anyone",
+      "an overnight failure in moving funds",
+      "the premium we paid to speed up remedies",
+      "a bungled run that needed human intervention",
+      "fixing a transmission that stalled"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "reserve_top_up",
+     "vendor": "Lakeshore Capital Reserve Trust",
+     "memos": [
+      "Liquidity buffer facility — commitment fee",
+      "Liquidity buffer facility — legal documentation"
+     ],
+     "cross_memo": "Liquidity buffer facility — treasury advisory",
+     "plain": [
+      "the liquidity buffer facility",
+      "the buffer facility commitment fee",
+      "the liquidity facility legal documentation"
+     ],
+     "oblique": [
+      "a standby line the sponsor required for peace of mind",
+      "a cushion we arranged against a cash crunch",
+      "the credit arrangement behind our float",
+      "what lenders charged for readiness to cover shortfalls",
+      "securing emergency borrowing capacity",
+      "a backstop we hope never to touch",
+      "paying to have money available if needed",
+      "the safety net for payout timing gaps",
+      "a financing arrangement we signed in the autumn",
+      "our partner's demand for extra protection",
+      "unused borrowing power that still costs us",
+      "the guarantee of funds on a bad day",
+      "fees for money we are not drawing",
+      "setting aside capacity for peak settlement days",
+      "the arrangement that lets us pay out before cash lands",
+      "what it costs to keep a reserve line open"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Customer Support & Disputes",
+   "aliases": [
+    "support costs",
+    "customer care",
+    "help desk spend",
+    "support outsourcing",
+    "contact center costs"
+   ],
+   "narrative": [
+    "Support costs",
+    "Customer care",
+    "Contact center costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Beacon BPO Solutions",
+     "base": 22000,
+     "memo": "Outsourced tier-one support agents"
+    },
+    {
+     "vendor": "HelpDeskly",
+     "base": 3800,
+     "memo": "Ticketing platform seats"
+    },
+    {
+     "vendor": "Linguabridge Interpreters",
+     "base": 1800,
+     "memo": "Multilingual chat coverage"
+    }
+   ],
+   "events": [
+    {
+     "key": "app_outage_support",
+     "vendor": "Beacon BPO Solutions",
+     "memos": [
+      "Wallet lockout incident — surge staffing",
+      "Wallet lockout incident — weekend agent premium"
+     ],
+     "cross_memo": "Wallet lockout incident — refund goodwill payments",
+     "plain": [
+      "the wallet lockout incident",
+      "the lockout surge staffing",
+      "the lockout weekend agent premium"
+     ],
+     "oblique": [
+      "a flood of angry people who could not open their accounts",
+      "extra hands to answer a wave of complaints",
+      "the day a software release locked users out",
+      "handling the queue after a login failure",
+      "a temporary army of agents for an emergency",
+      "overtime after a bad update reached customers",
+      "answering thousands asking where their money was",
+      "the phone lines melting after a bug",
+      "paying people to calm upset users",
+      "extra coverage needed once access broke",
+      "the crush of tickets following a faulty deploy",
+      "a few days of unmanageable inbound volume",
+      "reacting to frustrated customers shut out of the app",
+      "a short but costly spike in inquiries",
+      "staffing up overnight to field worried messages",
+      "the aftermath of users being unable to sign in"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "fraud_victim_program",
+     "vendor": "Safeharbor Victim Services",
+     "memos": [
+      "Scam victim assistance pilot — case managers",
+      "Scam victim assistance pilot — outreach materials"
+     ],
+     "cross_memo": "Scam victim assistance pilot — reimbursement fund top-up",
+     "plain": [
+      "the scam victim assistance pilot",
+      "the victim assistance pilot case managers",
+      "the scam assistance pilot outreach materials"
+     ],
+     "oblique": [
+      "a trial program to help people tricked out of their money",
+      "a new service for customers who were cheated",
+      "an experiment in handholding the defrauded",
+      "the humane response we launched for conned users",
+      "specialists guiding people through recovery steps",
+      "a goodwill initiative the executive team championed",
+      "support aimed at those who sent funds to impostors",
+      "our attempt to treat victims better than competitors do",
+      "a small team dedicated to scammed customers",
+      "what we spent trying a more caring approach",
+      "helping people who fell for romance and invoice tricks",
+      "a pilot that reduced angry social media posts",
+      "guidance for those who authorised a bad payment",
+      "a pilot meant to improve retention after losses",
+      "assistance for the swindled",
+      "a new offering responding to press criticism"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Growth & Referral Incentives",
+   "aliases": [
+    "referral bonuses",
+    "growth marketing",
+    "user acquisition",
+    "signup incentives",
+    "promo spend"
+   ],
+   "narrative": [
+    "Referral bonuses",
+    "User acquisition",
+    "Signup incentives"
+   ],
+   "recurring": [
+    {
+     "vendor": "InviteLoop Rewards",
+     "base": 15000,
+     "memo": "Referral bonus payouts to existing users"
+    },
+    {
+     "vendor": "Pixelcast Performance Ads",
+     "base": 24000,
+     "memo": "Paid social and search acquisition"
+    },
+    {
+     "vendor": "Campus Ambassador Network",
+     "base": 4000,
+     "memo": "Student ambassador stipends"
+    }
+   ],
+   "events": [
+    {
+     "key": "merchant_bounty",
+     "vendor": "InviteLoop Rewards",
+     "memos": [
+      "Coffee chain launch bonus — double reward weeks",
+      "Coffee chain launch bonus — merchant bounty payout"
+     ],
+     "cross_memo": "Coffee chain launch bonus — in-store signage",
+     "plain": [
+      "the coffee chain launch bonus",
+      "the double reward weeks",
+      "the coffee chain merchant bounty payout"
+     ],
+     "oblique": [
+      "a partnership with a national retailer that wooed new users",
+      "cash handed out to win over a big retail brand's customers",
+      "a limited-time offer tied to a beverage retailer",
+      "the temporary doubling of what newcomers earned",
+      "payments to entice shoppers in line for a morning drink",
+      "a marquee deal that put us in thousands of stores",
+      "an enticement for the first customers of a new alliance",
+      "rewarding customers at the counter",
+      "incentives aimed at brand loyalists",
+      "a seasonal push with a big-name merchant",
+      "the cost of our first national retail tie-up",
+      "handing over rewards for scanning at the register",
+      "the sweetener offered to patrons of one chain",
+      "a short burst of generosity at partnered shops",
+      "money paid to people who tried us at checkout",
+      "launch-week giveaways in one retail partnership"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "creator_campaign",
+     "vendor": "Vibehouse Creator Collective",
+     "memos": [
+      "Streamer sponsorship series — creator fees",
+      "Streamer sponsorship series — affiliate code payouts"
+     ],
+     "cross_memo": "Streamer sponsorship series — production studio rental",
+     "plain": [
+      "the streamer sponsorship series",
+      "the streamer series creator fees",
+      "the streamer series affiliate code payouts"
+     ],
+     "oblique": [
+      "paying online personalities to talk about our app",
+      "a run of influencer deals aimed at younger users",
+      "video celebrities recommending us to fans",
+      "the social media push on gaming channels",
+      "a bet on live broadcasters to reach new demographics",
+      "endorsements recorded over several weeks",
+      "buying attention through popular internet hosts",
+      "what we spent on people with big followings",
+      "a youth-oriented brand awareness effort",
+      "engagements with content makers",
+      "getting famous gamers to mention us on air",
+      "the campaign built around personalities with loyal audiences",
+      "fees to talent who promote us to their viewers",
+      "spending on online fame instead of billboards",
+      "a series of paid shout-outs",
+      "a partnership with people who entertain on the web"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

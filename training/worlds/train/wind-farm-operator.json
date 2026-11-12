@@ -1,0 +1,728 @@
+{
+ "slug": "wind-farm-operator",
+ "industry": "wind farm operator",
+ "entities": [
+  "Ridgeline Wind Partners LLC",
+  "Prairie Gale Energy Inc",
+  "Stonecrest Renewables Corp",
+  "Highmesa Power Holdings",
+  "Cinder Valley Wind Co"
+ ],
+ "accounts": [
+  {
+   "name": "Turbine Maintenance",
+   "aliases": [
+    "turbine maintenance",
+    "turbine upkeep",
+    "wtg maintenance",
+    "turbine service costs",
+    "turbine servicing spend"
+   ],
+   "narrative": [
+    "Turbine maintenance",
+    "Turbine upkeep",
+    "Turbine service costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Windward Service Partners",
+     "base": 28000,
+     "memo": "WTG scheduled service contract"
+    },
+    {
+     "vendor": "Tallgrass Lubricants Inc",
+     "base": 4200,
+     "memo": "Lubricants and filters PO 44102"
+    },
+    {
+     "vendor": "Bladeline Inspections LLC",
+     "base": 6500,
+     "memo": "Monthly site inspection fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "gearbox",
+     "vendor": "Windward Service Partners",
+     "memos": [
+      "Gearbox swap — unit 14 WO 88231",
+      "Gearbox swap — crane mobilization WO 88232"
+     ],
+     "cross_memo": "Gearbox swap — freight surcharge ocean",
+     "plain": [
+      "the gearbox swap",
+      "the unit 14 gearbox swap",
+      "the gearbox swap work"
+     ],
+     "oblique": [
+      "replacing the drivetrain component on the failed machine",
+      "the big mechanical repair on one tower",
+      "fixing the machine that stopped turning",
+      "the repair that took a turbine offline for weeks",
+      "swapping out the part that wore out early",
+      "the heavy lift to replace a failed internal part",
+      "the unplanned major repair",
+      "the repair after the vibration alarms",
+      "getting the broken machine spinning again",
+      "the warranty-expired repair on the oldest unit",
+      "the costly mechanical fix",
+      "the replacement of the worn power-transfer assembly",
+      "the repair that required a lifting rig on site",
+      "the one machine that was down",
+      "an expensive component failure on a single tower",
+      "the repair we did not budget for"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "bladerepair",
+     "vendor": "Skyhook Rope Access Ltd",
+     "memos": [
+      "Blade leading-edge erosion repair rope crew WO 90417",
+      "Blade leading-edge erosion repair — resin kit"
+     ],
+     "cross_memo": "Blade leading-edge erosion repair — access road matting",
+     "plain": [
+      "the blade leading-edge erosion repair",
+      "the leading-edge erosion repair",
+      "the blade erosion repair"
+     ],
+     "oblique": [
+      "patching the rotor surfaces worn by years of weather",
+      "the technicians hanging off the towers",
+      "fixing the damaged edges on the spinning arms",
+      "the cosmetic and aerodynamic restoration work",
+      "repairs we did to recover lost output",
+      "the climbing crew's work",
+      "work on the outer surfaces of the rotors",
+      "the roughened surfaces that were costing us production",
+      "the sanding and coating campaign",
+      "the specialized height-work contractor",
+      "restoring smooth airflow over the arms",
+      "the weather damage fixes aloft",
+      "the touch-up program on the turbines",
+      "the crew that worked without a crane",
+      "the repair to stop efficiency slipping",
+      "the work done to the long white arms"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Substation and Grid Interconnection",
+   "aliases": [
+    "substation",
+    "interconnection",
+    "grid costs",
+    "grid interconnection spend",
+    "substation upkeep"
+   ],
+   "narrative": [
+    "Substation costs",
+    "Interconnection spend",
+    "Grid costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Transmission Services",
+     "base": 9500,
+     "memo": "Interconnection O&M agreement"
+    },
+    {
+     "vendor": "Voltline Testing Co",
+     "base": 3800,
+     "memo": "Relay calibration monthly"
+    },
+    {
+     "vendor": "Gridwell Utility Billing",
+     "base": 7200,
+     "memo": "Transmission wheeling charges"
+    }
+   ],
+   "events": [
+    {
+     "key": "transformer",
+     "vendor": "Meridian Transmission Services",
+     "memos": [
+      "Main step-up transformer oil reclamation WO 71045",
+      "Main step-up transformer oil reclamation — dielectric testing"
+     ],
+     "cross_memo": "Main step-up transformer oil reclamation — hazmat disposal",
+     "plain": [
+      "the main step-up transformer oil reclamation",
+      "the transformer oil reclamation",
+      "the step-up transformer reclamation"
+     ],
+     "oblique": [
+      "cleaning up the big power box at the yard",
+      "restoring the fluid in the voltage-raising equipment",
+      "the work after the lab results came back bad",
+      "processing the contaminated liquid from the large unit",
+      "keeping the biggest piece of kit in the yard healthy",
+      "the maintenance on the equipment that sends power out",
+      "the fix prompted by the dissolved gas readings",
+      "an overdue treatment of the main fluid-filled apparatus",
+      "the environmental cleanup in the fenced yard",
+      "the specialist crew in the high-voltage compound",
+      "the work that avoided a replacement of the whole unit",
+      "the treatment of aging insulating liquid",
+      "the careful servicing of our most expensive asset",
+      "getting the export equipment back within spec",
+      "the planned outage for the high-voltage work",
+      "the lab-driven remediation"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "relayupgrade",
+     "vendor": "Sentinel Protection Systems",
+     "memos": [
+      "Protection relay firmware retrofit PO 55820",
+      "Protection relay firmware retrofit — commissioning labor"
+     ],
+     "cross_memo": "Protection relay firmware retrofit — licence seats",
+     "plain": [
+      "the protection relay firmware retrofit",
+      "the relay firmware retrofit",
+      "the protection retrofit"
+     ],
+     "oblique": [
+      "the utility's new requirement for our tripping gear",
+      "bringing the safety devices up to the operator's standard",
+      "the compliance work the grid owner asked for",
+      "updating the logic that shields the line",
+      "what we had to do to keep the connection agreement",
+      "the engineers' mandated upgrade",
+      "the change to how faults are detected",
+      "the update the transmission owner required by deadline",
+      "the modernization of the equipment that opens breakers",
+      "a regulatory-driven change at the yard",
+      "the new settings forced on us by the system operator",
+      "the project nobody wanted but everybody needed",
+      "the upgrade of aging protective electronics",
+      "the engineering visit to reprogram devices",
+      "the late-year compliance deliverable",
+      "the work to avoid a curtailment penalty"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Land Lease and Royalties",
+   "aliases": [
+    "land leases",
+    "landowner royalties",
+    "lease payments",
+    "royalty costs",
+    "landowner payments"
+   ],
+   "narrative": [
+    "Land leases",
+    "Landowner royalties",
+    "Lease payments"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hartwell Family Trust",
+     "base": 18500,
+     "memo": "Turbine site lease — section 12"
+    },
+    {
+     "vendor": "Orchard Ridge Farms",
+     "base": 14200,
+     "memo": "Turbine site lease — section 19"
+    },
+    {
+     "vendor": "County Road Easement Authority",
+     "base": 2100,
+     "memo": "Easement fee monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "crossdamage",
+     "vendor": "Hartwell Family Trust",
+     "memos": [
+      "Crop damage settlement — soybean acreage claim 2207",
+      "Crop damage settlement — agronomist assessment"
+     ],
+     "cross_memo": "Crop damage settlement — legal review fee",
+     "plain": [
+      "the crop damage settlement",
+      "the soybean crop damage settlement",
+      "the crop damage claim settlement"
+     ],
+     "oblique": [
+      "paying the farmer for the harvest we trampled",
+      "compensation for the fields our trucks crossed",
+      "what we owed after the heavy equipment rolled through",
+      "making the neighbour whole",
+      "the payout to a landowner after construction traffic",
+      "the agreed amount for lost yield",
+      "an adjuster-approved payment to the grower",
+      "the goodwill payment that kept the relationship intact",
+      "the cost of heavy vehicles on planted ground",
+      "the claim that the owner filed in the summer",
+      "money handed over for ruined plantings",
+      "what the landowner asked for after the work",
+      "the amount settled outside court",
+      "the reimbursement for a season's lost income",
+      "the farmer's complaint that we resolved",
+      "the cost of rolling cranes over cultivated rows"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "easementbuy",
+     "vendor": "Pinecone Title and Survey LLC",
+     "memos": [
+      "Parcel 31 easement buyout — deed recording",
+      "Parcel 31 easement buyout — surveyor stakeout"
+     ],
+     "cross_memo": "Parcel 31 easement buyout — closing counsel",
+     "plain": [
+      "the parcel 31 easement buyout",
+      "the parcel 31 buyout",
+      "the easement buyout"
+     ],
+     "oblique": [
+      "acquiring permanent rights over a neighbouring tract",
+      "the one-time purchase that replaced an annual fee",
+      "the paperwork to own the access strip outright",
+      "converting a rental arrangement into something permanent",
+      "the deal to stop paying rent on the road",
+      "the land transaction we closed with the neighbour",
+      "the survey crew's stakes in the ground",
+      "the title work for the strip beside the substation",
+      "a lump sum that ends a recurring obligation",
+      "the real estate piece of the quarter",
+      "buying out the other side's claim",
+      "the purchase that tidies up our property rights",
+      "the outright acquisition of the right of way",
+      "what we paid to settle the access question",
+      "the one-time cost of securing the crane path",
+      "the closing that took place at the county office"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Site Operations and Control Room",
+   "aliases": [
+    "site operations",
+    "control room",
+    "scada costs",
+    "operations center",
+    "remote monitoring spend"
+   ],
+   "narrative": [
+    "Site operations",
+    "Control room costs",
+    "SCADA costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northstar SCADA Hosting",
+     "base": 8800,
+     "memo": "SCADA hosting and licence"
+    },
+    {
+     "vendor": "Apex Remote Monitoring",
+     "base": 6400,
+     "memo": "24x7 remote monitoring service"
+    },
+    {
+     "vendor": "Basin Telecom Fiber",
+     "base": 2900,
+     "memo": "Fiber backhaul circuit"
+    }
+   ],
+   "events": [
+    {
+     "key": "cyberaudit",
+     "vendor": "Northstar SCADA Hosting",
+     "memos": [
+      "NERC CIP penetration test — scope 2 PO 61177",
+      "NERC CIP penetration test — remediation hours"
+     ],
+     "cross_memo": "NERC CIP penetration test — auditor travel",
+     "plain": [
+      "the NERC CIP penetration test",
+      "the CIP penetration test",
+      "the NERC penetration test"
+     ],
+     "oblique": [
+      "the mandatory security review of our control network",
+      "hiring people to try to break into our systems",
+      "the regulator-required cyber exercise",
+      "probing our networks for weaknesses on purpose",
+      "the findings that sent us scrambling to patch",
+      "the annual hacker simulation",
+      "proving to the reliability authority that we are secure",
+      "the compliance assessment of our digital defences",
+      "what we spent on the outside security firm",
+      "ethical intrusion work against the plant systems",
+      "the audit that found open ports",
+      "a bulk-power-system obligation",
+      "the exercise that tested our firewalls",
+      "the test that produced a long fix list",
+      "the work to satisfy the standards body",
+      "the cost of showing we could withstand an attack"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "controlmigr",
+     "vendor": "Quillon Integration Group",
+     "memos": [
+      "Historian database cutover — data migration WO 33901",
+      "Historian database cutover — weekend support"
+     ],
+     "cross_memo": "Historian database cutover — storage appliance",
+     "plain": [
+      "the historian database cutover",
+      "the historian cutover",
+      "the database cutover"
+     ],
+     "oblique": [
+      "moving years of production records onto a newer platform",
+      "the weekend our old archive was retired",
+      "replacing the system that stores the turbine trends",
+      "the migration nobody noticed when it went well",
+      "relocating decade-old operating data",
+      "the changeover of the plant's record keeper",
+      "an IT project that ran over two nights",
+      "the retirement of unsupported software",
+      "the cost of moving the numbers to new servers",
+      "the transition of our long-term data store",
+      "the project that cleared an end-of-life warning",
+      "the contractors on call while the switch happened",
+      "a refresh of how readings are kept",
+      "the technical move our vendor stopped supporting",
+      "the freeze on changes while the new platform came up",
+      "the project to preserve historic output data"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Vegetation and Wildlife Management",
+   "aliases": [
+    "vegetation management",
+    "wildlife management",
+    "environmental compliance",
+    "habitat costs",
+    "bird and bat monitoring"
+   ],
+   "narrative": [
+    "Vegetation management",
+    "Wildlife monitoring",
+    "Environmental compliance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenway Land Care",
+     "base": 5200,
+     "memo": "Road and pad mowing contract"
+    },
+    {
+     "vendor": "Avian Survey Associates",
+     "base": 7800,
+     "memo": "Bird and bat carcass survey"
+    },
+    {
+     "vendor": "Clearwater Stormwater Inspect",
+     "base": 1900,
+     "memo": "SWPPP inspection monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "curtailstudy",
+     "vendor": "Avian Survey Associates",
+     "memos": [
+      "Eagle take permit radar study — season 3 WO 20844",
+      "Eagle take permit radar study — observer overtime"
+     ],
+     "cross_memo": "Eagle take permit radar study — turbine curtailment",
+     "plain": [
+      "the eagle take permit radar study",
+      "the eagle permit radar study",
+      "the eagle radar study"
+     ],
+     "oblique": [
+      "tracking big raptors flying near the towers",
+      "the federal agency's request for more data",
+      "the monitoring that backs up our operating licence",
+      "watching the skies for protected predators",
+      "the specialist observation campaign at dawn and dusk",
+      "studies demanded by the wildlife regulator",
+      "the extra fieldwork before the permit renewal",
+      "what we spent proving the birds were safe",
+      "equipment that follows flying animals on a screen",
+      "the scientists posted on the ridge",
+      "the research that let us keep running at full tilt",
+      "the data collection tied to our permission to operate",
+      "observers sitting on hilltops with binoculars",
+      "a condition of our authorization",
+      "the survey to document large birds of prey",
+      "the cost of staying on the right side of conservation law"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "wildfire",
+     "vendor": "Redline Fire Mitigation",
+     "memos": [
+      "Firebreak disc and mow — north ridge WO 77015",
+      "Firebreak disc and mow — water truck standby"
+     ],
+     "cross_memo": "Firebreak disc and mow — burn permit fee",
+     "plain": [
+      "the firebreak disc and mow",
+      "the north ridge firebreak",
+      "the firebreak mowing work"
+     ],
+     "oblique": [
+      "clearing strips of ground so flames cannot spread",
+      "what we did after the dry spell warnings",
+      "the insurer's request for defensible space",
+      "scraping bare earth around the high-risk slope",
+      "preparations for the hot, windy season",
+      "the safety buffer cut across the hillside",
+      "work to stop a spark becoming a blaze",
+      "the crew that came with a tanker truck",
+      "the county's order after a red-flag declaration",
+      "making a bare perimeter around the equipment",
+      "protecting the assets from a grass fire",
+      "a precaution carried out before late summer",
+      "the barrier that we carved into the terrain",
+      "keeping the slope from carrying embers",
+      "the risk-reduction job requested by underwriters",
+      "the ground-clearing effort on the exposed side"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Warranty",
+   "aliases": [
+    "insurance",
+    "property insurance",
+    "warranty costs",
+    "insurance premiums",
+    "coverage spend"
+   ],
+   "narrative": [
+    "Insurance",
+    "Property coverage",
+    "Warranty costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Mutual Underwriters",
+     "base": 26000,
+     "memo": "Property and BI premium installment"
+    },
+    {
+     "vendor": "Keystone Surety Bonds",
+     "base": 3100,
+     "memo": "Decommissioning bond fee"
+    },
+    {
+     "vendor": "Larkspur Risk Advisors",
+     "base": 2400,
+     "memo": "Broker retainer monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "hailclaim",
+     "vendor": "Summit Mutual Underwriters",
+     "memos": [
+      "Hailstorm deductible — claim 55-1190",
+      "Hailstorm deductible — adjuster inspection fee"
+     ],
+     "cross_memo": "Hailstorm deductible — tarp and temporary repair",
+     "plain": [
+      "the hailstorm deductible",
+      "the hailstorm claim deductible",
+      "the hailstorm claim costs"
+     ],
+     "oblique": [
+      "our share of the loss after the violent spring weather",
+      "what we paid out of pocket on the insured event",
+      "the portion the carrier did not cover",
+      "the cost of falling ice on equipment",
+      "the out-of-pocket amount on the storm claim",
+      "damage from the afternoon the sky turned green",
+      "the threshold we had to clear before coverage kicked in",
+      "a weather event that triggered the policy",
+      "what the claims team asked us to fund first",
+      "the storm that dented the nacelles and vehicles",
+      "our retained portion of a natural disaster",
+      "the amount stuck with us after the settlement",
+      "the cost of an insured act of nature",
+      "the self-insured slice",
+      "the part of the claim that fell on our books",
+      "the excess we owed on a bad weather day"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "extwarranty",
+     "vendor": "Ironclad Warranty Services",
+     "memos": [
+      "Extended OEM coverage — years 6-10 PO 98123",
+      "Extended OEM coverage — fleet enrollment"
+     ],
+     "cross_memo": "Extended OEM coverage — administrative surcharge",
+     "plain": [
+      "the extended OEM coverage",
+      "the extended OEM warranty",
+      "the OEM coverage extension"
+     ],
+     "oblique": [
+      "keeping the manufacturer's promise alive after it expired",
+      "buying protection for the turbines as they age",
+      "the contract that shifts repair risk off our balance sheet",
+      "a prepayment for future breakdown protection",
+      "what we committed to once the original guarantee ended",
+      "the policy that picks up costly component failures",
+      "the fleet-wide hedge against old-age failures",
+      "an agreement signed to avoid big surprise repairs",
+      "the add-on cover for the aging machines",
+      "paying a third party to absorb part of the repair risk",
+      "the document the lenders asked to see",
+      "the new multi-year protection plan",
+      "the upfront cost of peace of mind",
+      "the continuation of coverage on the oldest assets",
+      "stepping up our guarantee package for the later years",
+      "the arrangement that caps our major repair exposure"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Fleet and Site Equipment",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "vehicle expense",
+    "site vehicles",
+    "equipment rental spend"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Vehicle expense",
+    "Site vehicles"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeback Truck Leasing",
+     "base": 9800,
+     "memo": "Service truck lease installment"
+    },
+    {
+     "vendor": "Fuelmaster Card Services",
+     "base": 4600,
+     "memo": "Fuel card statement"
+    },
+    {
+     "vendor": "Hilltop Tire and Brake",
+     "base": 1500,
+     "memo": "Fleet tire and brake service"
+    }
+   ],
+   "events": [
+    {
+     "key": "snowcat",
+     "vendor": "Ridgeback Truck Leasing",
+     "memos": [
+      "Tracked snow vehicle lease — winter access WO 12098",
+      "Tracked snow vehicle lease — operator certification"
+     ],
+     "cross_memo": "Tracked snow vehicle lease — cold-weather fuel additive",
+     "plain": [
+      "the tracked snow vehicle lease",
+      "the snow vehicle lease",
+      "the tracked vehicle lease"
+     ],
+     "oblique": [
+      "getting crews up the ridge after the blizzard",
+      "the winter machine that crawls over deep drifts",
+      "what we hired when the roads were impassable",
+      "keeping technicians able to reach the towers in January",
+      "equipment that could climb in the worst conditions",
+      "the seasonal solution to blocked service tracks",
+      "an unusual rental for an unusually harsh season",
+      "the vehicle that kept the site reachable",
+      "the machine with continuous belts instead of wheels",
+      "mobility for staff during the long cold stretch",
+      "the contingency we triggered when plows were not enough",
+      "the cold season's special transport",
+      "our answer to the unpassable access track",
+      "the workaround for the buried approach",
+      "the rented gear that let us keep servicing turbines",
+      "emergency winter transport for crews"
+     ],
+     "low": 8000,
+     "high": 16000
+    },
+    {
+     "key": "cranerental",
+     "vendor": "Titan Heavy Lift Rentals",
+     "memos": [
+      "Mobile crane 300T rental — hub bolt retorque WO 66120",
+      "Mobile crane 300T rental — rigging crew"
+     ],
+     "cross_memo": "Mobile crane 300T rental — pilot car escort",
+     "plain": [
+      "the mobile crane 300T rental",
+      "the 300T crane rental",
+      "the mobile crane rental"
+     ],
+     "oblique": [
+      "the giant lifting machine we brought to site",
+      "hoisting equipment that arrived on multiple trucks",
+      "the tall rig needed for work high in the air",
+      "what we paid for the biggest piece of equipment on the ridge",
+      "the short but expensive lifting job",
+      "the bolts we had to tighten at the top of a tower",
+      "the campaign that required reaching hub height",
+      "the boom that stood beside the turbine for days",
+      "the day-rate machine and its operator",
+      "heavy equipment hired for a single task",
+      "the hired giant that dwarfed our pickups",
+      "rigging and lifting for a maintenance campaign",
+      "the temporary tower-height access solution",
+      "the mobilization of a very large vehicle",
+      "an equipment hire that exceeded the monthly budget",
+      "the lift we planned around the weather window"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

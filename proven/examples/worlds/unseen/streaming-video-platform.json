@@ -1,0 +1,790 @@
+{
+ "slug": "streaming-video-platform",
+ "industry": "streaming video platform",
+ "entities": [
+  "Lumivista Streaming Inc.",
+  "Nightowl Media Holdings",
+  "Reelcrest Digital",
+  "Parallax Play Networks",
+  "Silverframe TV Co."
+ ],
+ "accounts": [
+  {
+   "name": "Content Delivery Network",
+   "aliases": [
+    "cdn",
+    "cdn costs",
+    "delivery network",
+    "cdn spend",
+    "edge delivery"
+   ],
+   "narrative": [
+    "CDN costs",
+    "Delivery network",
+    "Edge delivery"
+   ],
+   "recurring": [
+    {
+     "vendor": "Fastlane Edge Networks",
+     "base": 24000,
+     "memo": "Edge egress — monthly commit"
+    },
+    {
+     "vendor": "Northpeak Cache Systems",
+     "base": 9500,
+     "memo": "Cache node hosting — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "premiere_surge",
+     "vendor": "Fastlane Edge Networks",
+     "memos": [
+      "Premiere surge — burst egress overage",
+      "Premiere surge — origin shield capacity"
+     ],
+     "cross_memo": "Premiere surge — on-call engineering overtime",
+     "plain": [
+      "the premiere surge",
+      "premiere surge overages",
+      "the premiere surge burst capacity"
+     ],
+     "oblique": [
+      "the big series launch traffic spike",
+      "viewers piling in on launch night",
+      "extra bandwidth for the tentpole release",
+      "launch-weekend traffic",
+      "record concurrent viewership",
+      "the flagship show debut",
+      "a spike in simultaneous streams",
+      "the blockbuster opening weekend",
+      "absorbing launch demand",
+      "temporary headroom for heavy viewing",
+      "the tentpole release",
+      "the viewer rush on the new season",
+      "keeping playback smooth during the big debut",
+      "peak-night streaming load",
+      "the season drop",
+      "finale-night demand"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "latam_peering",
+     "vendor": "Skyroute Peering Partners",
+     "memos": [
+      "Latam peering buildout — port fees",
+      "Latam peering buildout — cross-connects"
+     ],
+     "cross_memo": "Latam peering buildout — legal review of interconnect agreements",
+     "plain": [
+      "the latam peering buildout",
+      "latam peering buildout costs",
+      "the latam peering buildout work"
+     ],
+     "oblique": [
+      "expanding into South America",
+      "direct links with Brazilian carriers",
+      "the South American expansion",
+      "local ISP handoffs in Brazil",
+      "lower-latency routes for Mexican viewers",
+      "the Brazil and Mexico rollout",
+      "direct carrier links",
+      "connecting to Latin American ISPs",
+      "new carrier handoffs",
+      "settlement-free links with regional providers",
+      "the Sao Paulo point of presence",
+      "bypassing transit for regional viewers",
+      "the Mexico City exchange point",
+      "carrier relationships in new markets",
+      "regional ISP connections",
+      "local carrier hookups"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Video Transcoding and Encoding",
+   "aliases": [
+    "transcoding",
+    "encoding",
+    "transcode costs",
+    "encoding spend",
+    "transcoding pipeline"
+   ],
+   "narrative": [
+    "Transcoding",
+    "Encoding spend",
+    "Transcode costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cirrus Encode Labs",
+     "base": 14000,
+     "memo": "Adaptive bitrate ladder — monthly processing"
+    },
+    {
+     "vendor": "Vantagrid Compute",
+     "base": 7800,
+     "memo": "GPU instance reservation — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "catalog_remaster",
+     "vendor": "Cirrus Encode Labs",
+     "memos": [
+      "Back catalog remaster — 4K reprocessing",
+      "Back catalog remaster — HDR grading pass"
+     ],
+     "cross_memo": "Back catalog remaster — archive tape retrieval",
+     "plain": [
+      "the back catalog remaster",
+      "back catalog remaster work",
+      "the back catalog remaster project"
+     ],
+     "oblique": [
+      "upgrading older films to ultra high definition",
+      "refreshing the library titles",
+      "making legacy shows look modern",
+      "restoring old movies",
+      "the library refresh",
+      "bringing vintage titles up to current picture standards",
+      "the old-film restoration",
+      "richer color on classic movies",
+      "polishing legacy content",
+      "the classics upgrade",
+      "redoing decades-old titles",
+      "the vintage library project",
+      "sharper picture on older series",
+      "updating the film vault",
+      "a licensor request to modernize classics",
+      "the legacy title upgrade"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "av1_migration",
+     "vendor": "Quillwave Codec Studio",
+     "memos": [
+      "AV1 migration — reference stream validation",
+      "AV1 migration — profile tuning"
+     ],
+     "cross_memo": "AV1 migration — device certification lab",
+     "plain": [
+      "the AV1 migration",
+      "AV1 migration work",
+      "the AV1 migration effort"
+     ],
+     "oblique": [
+      "switching to a more efficient compression format",
+      "the next-gen format switch",
+      "cutting bandwidth with newer compression",
+      "moving off older formats",
+      "the compression upgrade",
+      "royalty-free format adoption",
+      "testing the new format on smart TVs",
+      "the format changeover",
+      "efficiency work on file sizes",
+      "smaller files at equal quality",
+      "player compatibility checks for the new standard",
+      "the move to open compression",
+      "future-proofing the playback stack",
+      "newer compression rollout",
+      "trimming bandwidth per viewer",
+      "replacing the aging H.264 setup"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Localization - Subtitling and Dubbing",
+   "aliases": [
+    "localization",
+    "subtitling",
+    "dubbing",
+    "localization costs",
+    "subs and dubs"
+   ],
+   "narrative": [
+    "Localization",
+    "Localization costs",
+    "Subtitling"
+   ],
+   "recurring": [
+    {
+     "vendor": "Polyglot Voiceworks",
+     "base": 18500,
+     "memo": "Dubbing sessions — monthly slate"
+    },
+    {
+     "vendor": "Captionry Services",
+     "base": 6200,
+     "memo": "Subtitle files — monthly volume"
+    }
+   ],
+   "events": [
+    {
+     "key": "anime_rush",
+     "vendor": "Polyglot Voiceworks",
+     "memos": [
+      "Anime rush order — Japanese voice cast",
+      "Anime rush order — weekend studio booking"
+     ],
+     "cross_memo": "Anime rush order — expedited QC review",
+     "plain": [
+      "the anime rush order",
+      "anime rush order costs",
+      "that anime rush order"
+     ],
+     "oblique": [
+      "fast-tracking the Tokyo cartoon series",
+      "getting the animated import ready on short notice",
+      "a compressed turnaround on the animated import",
+      "extra actors for the cartoon launch",
+      "the accelerated animation localization",
+      "hurried work on the manga adaptation",
+      "the tight deadline on the Tokyo series",
+      "a simulcast-ready animated title",
+      "speeding up the cartoon import",
+      "meeting the licensor's same-week release demand",
+      "the compressed animated schedule",
+      "last-minute performers for the cartoon",
+      "the animated series crunch",
+      "premium rates to hit launch",
+      "the Tokyo import",
+      "an accelerated delivery on animation"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "audio_description",
+     "vendor": "Signbridge Access Media",
+     "memos": [
+      "Audio description compliance — narration scripts",
+      "Audio description compliance — accessibility mixes"
+     ],
+     "cross_memo": "Audio description compliance — regulatory counsel",
+     "plain": [
+      "the audio description compliance work",
+      "audio description compliance costs",
+      "the audio description compliance push"
+     ],
+     "oblique": [
+      "new legal requirements for blind viewers",
+      "making shows usable for visually impaired subscribers",
+      "the vision-impairment mandate",
+      "spoken scene explanations for blind audiences",
+      "the disability law deadline",
+      "meeting broadcast-style rules for sight-impaired users",
+      "extra soundtrack explaining onscreen action",
+      "the blind-viewer mandate",
+      "a new government rule on inclusive viewing",
+      "inclusive viewing obligations",
+      "keeping regulators happy on disability rules",
+      "the sight-loss mandate",
+      "filings demanded by the communications authority",
+      "help for low-vision viewers",
+      "the inclusivity law",
+      "an extra track explaining what happens onscreen"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Music Licensing Royalties",
+   "aliases": [
+    "music royalties",
+    "music rights",
+    "sync licensing",
+    "royalty costs",
+    "music licensing"
+   ],
+   "narrative": [
+    "Music royalties",
+    "Music rights",
+    "Royalty costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harmonia Rights Collective",
+     "base": 12000,
+     "memo": "Performance royalties — monthly statement"
+    },
+    {
+     "vendor": "Tracklane Library",
+     "base": 3400,
+     "memo": "Production music subscription — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "holiday_concert",
+     "vendor": "Harmonia Rights Collective",
+     "memos": [
+      "Holiday concert sync — catalog tracks",
+      "Holiday concert sync — master use fees"
+     ],
+     "cross_memo": "Holiday concert sync — orchestra recording",
+     "plain": [
+      "the holiday concert sync",
+      "holiday concert sync costs",
+      "the holiday concert sync licenses"
+     ],
+     "oblique": [
+      "the Christmas music show",
+      "songs for the year-end musical broadcast",
+      "the festive live event",
+      "the seasonal special",
+      "classic songs in the festive program",
+      "carols for the year-end special",
+      "the winter musical",
+      "licensing hits for the Christmas telecast",
+      "the yuletide variety show",
+      "standards featured in the seasonal broadcast",
+      "festive tunes",
+      "the year-end gala",
+      "songs the producers picked for the Christmas show",
+      "the seasonal variety hour",
+      "carol licensing",
+      "chart hits in the winter gala"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "underreporting_settlement",
+     "vendor": "Brightmeter Audit Partners",
+     "memos": [
+      "Underreporting settlement — prior period true-up",
+      "Underreporting settlement — interest charge"
+     ],
+     "cross_memo": "Underreporting settlement — outside counsel fees",
+     "plain": [
+      "the underreporting settlement",
+      "underreporting settlement payments",
+      "the underreporting settlement charge"
+     ],
+     "oblique": [
+      "paying what an inspection said we owed",
+      "making good on past underpayment",
+      "the songwriters' claim from earlier years",
+      "past-due amounts flagged by the publishers",
+      "the publisher dispute",
+      "closing out the back-years claim",
+      "a shortfall found in old play reports",
+      "resolving the publishers' complaint",
+      "the songwriter payout",
+      "catch-up payments to publishers",
+      "fixing years of under-counted plays",
+      "the negotiated payout to composers",
+      "an agreed amount to end the dispute",
+      "the play-count gap",
+      "late payments plus penalties",
+      "the composer claim"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Content Moderation Services",
+   "aliases": [
+    "content moderation",
+    "moderation",
+    "trust and safety",
+    "moderation costs",
+    "t&s spend"
+   ],
+   "narrative": [
+    "Moderation",
+    "Trust and safety",
+    "Moderation costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Safety Ops",
+     "base": 16000,
+     "memo": "Upload screening — monthly queue"
+    },
+    {
+     "vendor": "Veritrust Labeling",
+     "base": 5200,
+     "memo": "Classifier tagging — monthly batch"
+    }
+   ],
+   "events": [
+    {
+     "key": "election_integrity",
+     "vendor": "Sentinel Safety Ops",
+     "memos": [
+      "Election integrity sprint — temporary moderators",
+      "Election integrity sprint — overnight coverage"
+     ],
+     "cross_memo": "Election integrity sprint — policy team travel",
+     "plain": [
+      "the election integrity sprint",
+      "election integrity sprint staffing",
+      "the election integrity sprint costs"
+     ],
+     "oblique": [
+      "the political season scrutiny",
+      "watching for false claims around the vote",
+      "extra reviewers during campaign season",
+      "the ballot-season push",
+      "policing political deepfakes",
+      "round-the-clock watch on campaign content",
+      "the voting-period crackdown",
+      "fact-checking campaign clips",
+      "a request from public affairs before the vote",
+      "keeping propaganda off the platform",
+      "the campaign-season staffing",
+      "flagging fake political ads",
+      "heightened vigilance ahead of polling day",
+      "the democracy safeguards",
+      "added eyes on political clips",
+      "the vote-period watch"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "age_gating",
+     "vendor": "Agerail Verification",
+     "memos": [
+      "Age gating rollout — identity checks",
+      "Age gating rollout — vendor integration"
+     ],
+     "cross_memo": "Age gating rollout — privacy assessment",
+     "plain": [
+      "the age gating rollout",
+      "age gating rollout costs",
+      "the age gating rollout work"
+     ],
+     "oblique": [
+      "verifying viewers are adults",
+      "keeping minors off mature titles",
+      "the adult-content restriction",
+      "proof-of-birthdate prompts",
+      "the youth protection measures",
+      "blocking kids from explicit shows",
+      "complying with the new child-protection law",
+      "the mature-title lock",
+      "ID scans at signup",
+      "parental-control enforcement",
+      "restricting adult programming",
+      "the underage access block",
+      "birthdate confirmation at signup",
+      "the minors restriction",
+      "keeping teens out of adult content",
+      "a regulator-requested adult lock"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Subscriber Payment Processing",
+   "aliases": [
+    "payment processing",
+    "card fees",
+    "billing fees",
+    "processor costs",
+    "merchant fees"
+   ],
+   "narrative": [
+    "Payment processing",
+    "Card fees",
+    "Merchant fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Paybridge Merchant Services",
+     "base": 27000,
+     "memo": "Card acquiring — monthly interchange"
+    },
+    {
+     "vendor": "Renewa Billing Cloud",
+     "base": 4800,
+     "memo": "Subscription billing platform — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "chargeback_wave",
+     "vendor": "Paybridge Merchant Services",
+     "memos": [
+      "Chargeback dispute wave — representment fees",
+      "Chargeback dispute wave — case handling"
+     ],
+     "cross_memo": "Chargeback dispute wave — fraud analyst contractors",
+     "plain": [
+      "the chargeback dispute wave",
+      "chargeback dispute wave costs",
+      "the chargeback dispute wave handling"
+     ],
+     "oblique": [
+      "customers contesting renewals with their banks",
+      "contested renewals",
+      "bank reversals after the price hike",
+      "a spike in reversed payments",
+      "subscribers clawing back charges",
+      "fighting bank reversals",
+      "the price-increase backlash",
+      "unrecognized-charge complaints",
+      "pushback from account holders",
+      "the reversal spike",
+      "issuer reclaims after the rate increase",
+      "defending contested payments",
+      "customers denying renewals they forgot",
+      "the bank-reversal surge",
+      "clawbacks",
+      "the flood of reversed renewals"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "operator_wallet",
+     "vendor": "Coinvale Wallet Gateway",
+     "memos": [
+      "Operator wallet launch — integration setup",
+      "Operator wallet launch — certification"
+     ],
+     "cross_memo": "Operator wallet launch — partner marketing",
+     "plain": [
+      "the operator wallet launch",
+      "operator wallet launch costs",
+      "the operator wallet launch work"
+     ],
+     "oblique": [
+      "letting subscribers pay through their phone bill",
+      "the telco pay option in Southeast Asia",
+      "phone-bill payments",
+      "direct carrier pay",
+      "adding a mobile-network checkout",
+      "pay-by-phone for unbanked markets",
+      "the telco checkout",
+      "carrier-funded payments in Indonesia",
+      "a new way to pay via mobile providers",
+      "the Indonesian telco tie-up",
+      "airtime-based payments",
+      "connecting to mobile providers",
+      "the prepaid-phone payment option",
+      "letting users charge streaming to their mobile account",
+      "the telco deal",
+      "airtime checkout"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Customer Support Outsourcing",
+   "aliases": [
+    "customer support",
+    "support outsourcing",
+    "contact center",
+    "cx costs",
+    "help desk"
+   ],
+   "narrative": [
+    "Customer support",
+    "Contact center",
+    "Help desk"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightdesk Contact Solutions",
+     "base": 21000,
+     "memo": "Tier 1 agents — monthly seats"
+    },
+    {
+     "vendor": "Talkpoint Chat",
+     "base": 3900,
+     "memo": "Live chat licenses — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "password_backlog",
+     "vendor": "Brightdesk Contact Solutions",
+     "memos": [
+      "Password reset backlog — overflow staffing",
+      "Password reset backlog — extended hours"
+     ],
+     "cross_memo": "Password reset backlog — SMS verification credits",
+     "plain": [
+      "the password reset backlog",
+      "password reset backlog staffing",
+      "the password reset backlog cleanup"
+     ],
+     "oblique": [
+      "the login lockout fallout",
+      "users locked out after the security change",
+      "a pile of account-access tickets",
+      "sign-in trouble after the forced logout",
+      "the lockout ticket spike",
+      "helping subscribers get back into accounts",
+      "the forced credential change",
+      "extra people on the phones after the breach scare",
+      "account recovery requests",
+      "the security-change aftermath",
+      "clearing stuck access tickets",
+      "complaint volume after the forced sign-out",
+      "the lockout",
+      "credential recovery calls",
+      "longer coverage for locked-out users",
+      "fallout from the authentication update"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "spanish_queue",
+     "vendor": "Lingualine Callcare",
+     "memos": [
+      "Spanish queue launch — bilingual hiring",
+      "Spanish queue launch — training"
+     ],
+     "cross_memo": "Spanish queue launch — IVR prompt recording",
+     "plain": [
+      "the Spanish queue launch",
+      "Spanish queue launch costs",
+      "the Spanish queue launch setup"
+     ],
+     "oblique": [
+      "serving Hispanic subscribers in their language",
+      "the Latin America expansion help line",
+      "a new language line",
+      "native-speaker reps for Mexico",
+      "the Mexico customer line",
+      "help for Hispanic customers",
+      "adding a Latin American service line",
+      "the Hispanic market rollout",
+      "native-language help",
+      "the new language team",
+      "staff for the regional expansion",
+      "onboarding reps for Mexican viewers",
+      "localized customer care",
+      "the Hispanic help line",
+      "in-language help for new markets",
+      "the Latin market service team"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Office Rent and Facilities",
+   "aliases": [
+    "rent",
+    "office rent",
+    "facilities",
+    "occupancy",
+    "office costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Office rent",
+    "Facilities"
+   ],
+   "recurring": [
+    {
+     "vendor": "Mercer Plaza Holdings",
+     "base": 19000,
+     "memo": "HQ lease — monthly base rent"
+    },
+    {
+     "vendor": "Tidewell Janitorial",
+     "base": 2800,
+     "memo": "Cleaning contract — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "screening_fitout",
+     "vendor": "Mercer Plaza Holdings",
+     "memos": [
+      "Screening room fitout — acoustic panels",
+      "Screening room fitout — projector install"
+     ],
+     "cross_memo": "Screening room fitout — furniture",
+     "plain": [
+      "the screening room fitout",
+      "screening room fitout costs",
+      "the screening room fitout project"
+     ],
+     "oblique": [
+      "the new viewing theater",
+      "an in-house cinema for executives",
+      "the private theater build",
+      "soundproofing the content-review space",
+      "a place to watch dailies",
+      "the executive cinema",
+      "a studio-grade viewing suite",
+      "fitting out the theater",
+      "the dailies suite",
+      "converting a conference area into a cinema",
+      "the content team's theater request",
+      "soundproofing work",
+      "the mini cinema",
+      "audiovisual gear for the viewing suite",
+      "building the review theater",
+      "the in-office cinema"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "floor_nine",
+     "vendor": "Crestline Movers",
+     "memos": [
+      "Floor nine expansion — move labor",
+      "Floor nine expansion — crate rental"
+     ],
+     "cross_memo": "Floor nine expansion — network cabling",
+     "plain": [
+      "the floor nine expansion",
+      "floor nine expansion costs",
+      "the floor nine expansion work"
+     ],
+     "oblique": [
+      "taking on more space upstairs",
+      "relocating the engineering team upstairs",
+      "the office growth",
+      "extra square footage",
+      "the upstairs relocation",
+      "making space for new hires",
+      "the headcount growth",
+      "an additional level",
+      "packing up desks",
+      "settling teams into new space",
+      "the upstairs build",
+      "the office enlargement",
+      "shifting staff onto another story",
+      "relocating desks upstairs",
+      "the space increase",
+      "new workspace for growing teams"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

@@ -1,0 +1,820 @@
+{
+ "slug": "scrap-metal-recycler",
+ "industry": "scrap metal recycler",
+ "entities": [
+  "Ironvale Metals Recycling",
+  "Copperline Salvage Group",
+  "Steelbend Reclamation Co",
+  "Redhawk Scrap & Alloy",
+  "Tidewater Ferrous Partners"
+ ],
+ "accounts": [
+  {
+   "name": "Shredder Wear Parts",
+   "aliases": [
+    "shredder parts",
+    "wear parts",
+    "shredder wear spend",
+    "hammer and grate costs",
+    "shredder consumables"
+   ],
+   "narrative": [
+    "Shredder parts",
+    "Wear parts",
+    "Shredder consumables"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cobalt Ridge Manufacturing",
+     "base": 14500,
+     "memo": "Hammers and pins monthly lot"
+    },
+    {
+     "vendor": "Anvil Point Supply",
+     "base": 6200,
+     "memo": "Grate bars and liners standard order"
+    },
+    {
+     "vendor": "Brightfield Lubricants",
+     "base": 2300,
+     "memo": "Bearing grease and oil"
+    }
+   ],
+   "events": [
+    {
+     "key": "rotorrebuild",
+     "vendor": "Cobalt Ridge Manufacturing",
+     "memos": [
+      "Rotor rebuild — balancing and welding",
+      "Rotor rebuild — replacement end discs"
+     ],
+     "cross_memo": "Rotor rebuild — crane rental for lift",
+     "plain": [
+      "the rotor rebuild",
+      "the rotor rebuild work",
+      "the rotor rebuild project"
+     ],
+     "oblique": [
+      "the main spinning assembly being restored",
+      "getting the mill back to full throughput",
+      "work on the heart of the machine",
+      "the heavy overhaul of the big shredder",
+      "an unplanned restoration after vibration trouble",
+      "the machine that turns cars into fist-sized chunks coming apart",
+      "the big mid-year teardown",
+      "restoring balance to the drum",
+      "a long outage fix on the primary line",
+      "the component that spins at high speed",
+      "a once-in-years reconstruction",
+      "the unit our operators flagged as shaking",
+      "refitting the main assembly",
+      "the shutdown to renew the core of the plant",
+      "the expensive repair on the processing line",
+      "fresh internals for the grinder"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "manganese",
+     "vendor": "Pinnacle Castings Ltd",
+     "memos": [
+      "Manganese upgrade — premium alloy hammer set",
+      "Manganese upgrade — trial run tooling"
+     ],
+     "cross_memo": "Manganese upgrade — freight surcharge expedited",
+     "plain": [
+      "the manganese upgrade",
+      "the manganese upgrade order",
+      "the manganese upgrade trial"
+     ],
+     "oblique": [
+      "a harder grade of cutting tips",
+      "the switch to longer-lasting steel",
+      "a trial of tougher material",
+      "testing something that outlasts the old stock",
+      "our attempt to cut change-out frequency",
+      "the tougher metal the plant manager asked us to test",
+      "an experiment in durability",
+      "the premium version of the swing tools",
+      "a pilot of stronger components",
+      "paying more upfront to replace less often",
+      "the new specification for the beaters",
+      "a trial lot of enhanced material",
+      "the better-grade tooling the supervisor requested",
+      "an investment in fewer stoppages",
+      "the expensive new composition we are evaluating",
+      "a stronger alternative to the old tips"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Scale and Weighbridge Operations",
+   "aliases": [
+    "scales",
+    "weighbridge",
+    "scale costs",
+    "weighbridge operations",
+    "scale house spend"
+   ],
+   "narrative": [
+    "Scales",
+    "Weighbridge costs",
+    "Scale house spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "TrueWeigh Services",
+     "base": 3800,
+     "memo": "Monthly calibration contract"
+    },
+    {
+     "vendor": "Gatehouse Data Systems",
+     "base": 2100,
+     "memo": "Ticketing software license"
+    },
+    {
+     "vendor": "Ridgeline Electric",
+     "base": 1200,
+     "memo": "Scale house power"
+    }
+   ],
+   "events": [
+    {
+     "key": "loadcell",
+     "vendor": "TrueWeigh Services",
+     "memos": [
+      "Load cell replacement — four sensor units",
+      "Load cell replacement — junction box rewiring"
+     ],
+     "cross_memo": "Load cell replacement — temporary truck weights at neighbor yard",
+     "plain": [
+      "the load cell replacement",
+      "the load cell replacement work",
+      "the load cell replacement project"
+     ],
+     "oblique": [
+      "new sensing hardware under the platform",
+      "fixing the readings that drifted",
+      "the failed state inspection",
+      "getting the deck accurate again",
+      "parts beneath the truck deck",
+      "the equipment that tells us tonnage",
+      "the readings regulators flagged",
+      "swapping out worn electronics under the deck",
+      "an urgent repair after inaccurate tickets",
+      "what the inspector made us redo",
+      "restoring trust in the numbers",
+      "the hardware that measures incoming loads",
+      "a compliance-driven fix",
+      "the sensors that went bad in the freeze",
+      "new gear beneath the pad",
+      "the correction after suppliers questioned payouts"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "kiosk",
+     "vendor": "Sentinel Self-Serve Kiosks",
+     "memos": [
+      "Driver kiosk rollout — two check-in stands",
+      "Driver kiosk rollout — touchscreen install"
+     ],
+     "cross_memo": "Driver kiosk rollout — network cabling",
+     "plain": [
+      "the driver kiosk rollout",
+      "the driver kiosk rollout phase",
+      "the driver kiosk rollout install"
+     ],
+     "oblique": [
+      "self-service check-in for haulers",
+      "shorter lines at the gate",
+      "automating the arrival process",
+      "a way to cut queue time",
+      "stands where truckers register themselves",
+      "the new front-gate experience",
+      "the project to speed up unloading intake",
+      "less paperwork at the entrance",
+      "machines that replace the window clerk",
+      "a customer-facing technology push",
+      "what we installed to ease morning backups",
+      "faster processing of incoming drivers",
+      "the modernization of the entry lane",
+      "touch-based registration for visitors",
+      "an effort to reduce idle trucks",
+      "the front-end automation initiative"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Torch and Cutting Supplies",
+   "aliases": [
+    "torch supplies",
+    "cutting gas",
+    "torch and cutting",
+    "oxygen and acetylene",
+    "cutting consumables"
+   ],
+   "narrative": [
+    "Torch supplies",
+    "Cutting gas",
+    "Cutting consumables"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Industrial Gases",
+     "base": 7800,
+     "memo": "Oxygen and acetylene cylinders"
+    },
+    {
+     "vendor": "Hotline Welding Supply",
+     "base": 3400,
+     "memo": "Cutting tips and hoses"
+    }
+   ],
+   "events": [
+    {
+     "key": "plasma",
+     "vendor": "Summit Industrial Gases",
+     "memos": [
+      "Plasma table conversion — bulk argon tank",
+      "Plasma table conversion — regulator manifold"
+     ],
+     "cross_memo": "Plasma table conversion — operator retraining",
+     "plain": [
+      "the plasma table conversion",
+      "the plasma table conversion tank",
+      "the plasma table conversion setup"
+     ],
+     "oblique": [
+      "moving to an electric cutting method",
+      "a cleaner way to slice heavy plate",
+      "retiring the flame equipment",
+      "the newer technique for processing thick steel",
+      "a safety-driven change in how we cut",
+      "shifting away from open fire",
+      "faster slicing of oversized pieces",
+      "the upgrade the insurer encouraged",
+      "a different process for demolition steel",
+      "new capability on the cutting floor",
+      "the push to reduce fuel handling",
+      "what replaced the old burning stations",
+      "a bulk supply setup for the new method",
+      "the technology change on the dismantling line",
+      "something the safety committee championed",
+      "gas storage for the modern approach"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "railcut",
+     "vendor": "Ironclad Demolition Rentals",
+     "memos": [
+      "Railcar teardown — rented cutting crew",
+      "Railcar teardown — shear attachment hire"
+     ],
+     "cross_memo": "Railcar teardown — scrap hauling fuel",
+     "plain": [
+      "the railcar teardown",
+      "the railcar teardown crew",
+      "the railcar teardown hire"
+     ],
+     "oblique": [
+      "the big dismantling contract",
+      "processing retired freight equipment",
+      "the job we won from the railroad",
+      "a one-time breakup of oversized rolling stock",
+      "outside specialists for a huge disposal",
+      "the long boxy units on the siding",
+      "hired muscle for an unusual job",
+      "a bid we won last quarter",
+      "the heavy decommissioning project",
+      "reducing giant units into sellable pieces",
+      "contract labor for the sidetrack work",
+      "what the railway sent us to dismantle",
+      "extra hands brought in for the yard job",
+      "the tear-down that required outside equipment",
+      "something we do rarely",
+      "the oversized job on the spur"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Yard Equipment Fuel",
+   "aliases": [
+    "yard fuel",
+    "diesel",
+    "equipment fuel",
+    "loader fuel",
+    "yard diesel spend"
+   ],
+   "narrative": [
+    "Yard fuel",
+    "Diesel",
+    "Equipment fuel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northgate Fuel Distributors",
+     "base": 19500,
+     "memo": "Bulk diesel delivery"
+    },
+    {
+     "vendor": "Greenfield Propane",
+     "base": 2800,
+     "memo": "Propane for forklifts"
+    }
+   ],
+   "events": [
+    {
+     "key": "generator",
+     "vendor": "Northgate Fuel Distributors",
+     "memos": [
+      "Generator backup — emergency tank fill",
+      "Generator backup — outage standby diesel"
+     ],
+     "cross_memo": "Generator backup — temporary lighting rental",
+     "plain": [
+      "the generator backup",
+      "the generator backup fill",
+      "the generator backup standby"
+     ],
+     "oblique": [
+      "running on our own power during the grid failure",
+      "the storm that took out the lines",
+      "keeping operations alive without the utility",
+      "the blackout week",
+      "self-supplied electricity during an outage",
+      "a surge in consumption after the ice storm",
+      "what we burned to stay open",
+      "the extended loss of mains supply",
+      "power we made ourselves",
+      "the days the substation was down",
+      "fuel for keeping the lights on",
+      "the emergency that shut the neighborhood",
+      "staying online through a regional failure",
+      "our contingency during the weather event",
+      "the unplanned off-grid stretch",
+      "coverage for the long interruption"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "winterblend",
+     "vendor": "Polar Fuel Additives Inc",
+     "memos": [
+      "Winter blend treatment — anti-gel additive",
+      "Winter blend treatment — heated tank service"
+     ],
+     "cross_memo": "Winter blend treatment — frozen line repair",
+     "plain": [
+      "the winter blend treatment",
+      "the winter blend treatment additive",
+      "the winter blend treatment service"
+     ],
+     "oblique": [
+      "protecting engines from the deep freeze",
+      "cold weather conditioning of our supply",
+      "the chemical we add when temperatures plunge",
+      "keeping machines starting on subzero mornings",
+      "seasonal prep for the cold snap",
+      "an extra step the mechanics requested",
+      "preventing jelled supply in the tanks",
+      "what the shop did before the first hard frost",
+      "the seasonal defense against thickening",
+      "additive costs from the freezing spell",
+      "precautions for the arctic stretch",
+      "stopping loaders from stalling at dawn",
+      "the winter readiness program",
+      "the thickening problem we had last year",
+      "a treatment the fleet foreman insisted on",
+      "the cold-climate safeguard"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Environmental Compliance",
+   "aliases": [
+    "environmental",
+    "compliance costs",
+    "stormwater",
+    "environmental compliance spend",
+    "permits and testing"
+   ],
+   "narrative": [
+    "Environmental costs",
+    "Compliance costs",
+    "Stormwater spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "ClearStream Testing Labs",
+     "base": 4600,
+     "memo": "Monthly water sampling"
+    },
+    {
+     "vendor": "Greenleaf Waste Haulers",
+     "base": 5200,
+     "memo": "Fluff and residue disposal"
+    },
+    {
+     "vendor": "Regal Permit Consultants",
+     "base": 1900,
+     "memo": "Permit filing retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "basinliner",
+     "vendor": "ClearStream Testing Labs",
+     "memos": [
+      "Retention basin remediation — sediment survey",
+      "Retention basin remediation — lab panel extended"
+     ],
+     "cross_memo": "Retention basin remediation — excavation contractor",
+     "plain": [
+      "the retention basin remediation",
+      "the retention basin remediation survey",
+      "the retention basin remediation panel"
+     ],
+     "oblique": [
+      "cleanup of the pond behind the yard",
+      "what the state notice required us to fix",
+      "contamination found near the drainage",
+      "the inspector's finding after heavy rain",
+      "sludge removal at the low corner",
+      "the overflow area regulators cited",
+      "a corrective order from the agency",
+      "work on the holding pit at the back lot",
+      "the runoff problem on the south side",
+      "digging out what had settled",
+      "a penalty-avoidance effort",
+      "the water-quality violation response",
+      "a cleanup the consent agreement demanded",
+      "tests proving the site was clean again",
+      "the notice letter from the district",
+      "the low-lying section that failed sampling"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "mercury",
+     "vendor": "SafeHarbor Hazmat Services",
+     "memos": [
+      "Mercury switch recovery — abatement crew",
+      "Mercury switch recovery — certified disposal"
+     ],
+     "cross_memo": "Mercury switch recovery — containment drums",
+     "plain": [
+      "the mercury switch recovery",
+      "the mercury switch recovery crew",
+      "the mercury switch recovery disposal"
+     ],
+     "oblique": [
+      "pulling toxic components out of old autos",
+      "a special program for a hazardous element",
+      "the trade group's removal initiative",
+      "certified handling of dangerous liquid parts",
+      "a one-off cleanup of a contaminated stockpile",
+      "what we found in a batch of end-of-life vehicles",
+      "the dangerous material a supplier slipped in",
+      "specialists brought in for a risky pile",
+      "the safety response to an unexpected hazard",
+      "getting the poisonous bits out",
+      "the hazard that stopped a line for a week",
+      "an outside team in protective suits",
+      "the required removal under our permit",
+      "an incident discovered during sorting",
+      "the licensed crew we had to call",
+      "hazard work on a shipment we regretted taking"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Mobile Fleet Maintenance",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "fleet maintenance spend",
+    "truck maintenance",
+    "roll-off fleet"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Truck maintenance",
+    "Roll-off fleet spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmaster Truck Repair",
+     "base": 9200,
+     "memo": "Routine service on roll-off trucks"
+    },
+    {
+     "vendor": "Lakeshore Tire Center",
+     "base": 4100,
+     "memo": "Tire replacement and rotation"
+    },
+    {
+     "vendor": "Hydro-Pro Hydraulics",
+     "base": 3300,
+     "memo": "Hoist hose and cylinder repairs"
+    }
+   ],
+   "events": [
+    {
+     "key": "hoistfleet",
+     "vendor": "Roadmaster Truck Repair",
+     "memos": [
+      "Cable hoist retrofit — six trucks upgraded",
+      "Cable hoist retrofit — winch assemblies"
+     ],
+     "cross_memo": "Cable hoist retrofit — temporary driver overtime",
+     "plain": [
+      "the cable hoist retrofit",
+      "the cable hoist retrofit upgrade",
+      "the cable hoist retrofit assemblies"
+     ],
+     "oblique": [
+      "modernizing the container-loading gear",
+      "new lifting mechanisms across half the trucks",
+      "a safety directive for dumping equipment",
+      "the arms that pull bins aboard",
+      "replacing aging mechanisms on the haulers",
+      "a recall-style correction",
+      "something the insurer required",
+      "the mechanism the drivers complained about",
+      "upgrading how bins get loaded",
+      "a half-fleet project over two weeks",
+      "what the safety officer mandated",
+      "a mid-life refresh of the pulling gear",
+      "the equipment behind the cab",
+      "parts that were past service life",
+      "a standardization effort across vehicles",
+      "the improvement the safety audit demanded"
+     ],
+     "low": 24000,
+     "high": 48000
+    },
+    {
+     "key": "dotinspect",
+     "vendor": "Federal Inspection Partners",
+     "memos": [
+      "DOT audit remediation — brake compliance",
+      "DOT audit remediation — logbook review fee"
+     ],
+     "cross_memo": "DOT audit remediation — parts for failed units",
+     "plain": [
+      "the DOT audit remediation",
+      "the DOT audit remediation fee",
+      "the DOT audit remediation brakes"
+     ],
+     "oblique": [
+      "fixing what the roadside officers flagged",
+      "the surprise check on our vehicles",
+      "a regulator-driven correction list",
+      "violations we had to clear to keep running",
+      "the out-of-service orders last month",
+      "getting the trucks legal again",
+      "what the highway patrol found",
+      "the review that went badly",
+      "penalty avoidance on the road side",
+      "paperwork and repairs after a bad inspection",
+      "the corrective plan for the transport authority",
+      "safety defects on the haulers",
+      "an enforcement action response",
+      "the checklist of failures we had to cure",
+      "bringing vehicles up to standard",
+      "a hit from the government's roadside sweep"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Metal Sorting and Assay",
+   "aliases": [
+    "sorting",
+    "assay",
+    "sorting costs",
+    "metal analysis",
+    "alloy testing spend"
+   ],
+   "narrative": [
+    "Sorting costs",
+    "Assay spend",
+    "Alloy testing spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "SpectraScan Analytics",
+     "base": 5400,
+     "memo": "XRF analyzer lease"
+    },
+    {
+     "vendor": "Meridian Magnet Works",
+     "base": 3900,
+     "memo": "Magnet and eddy current upkeep"
+    },
+    {
+     "vendor": "Opal Sampling Services",
+     "base": 2600,
+     "memo": "Third-party assay samples"
+    }
+   ],
+   "events": [
+    {
+     "key": "opticalsort",
+     "vendor": "SpectraScan Analytics",
+     "memos": [
+      "Laser sorter commissioning — calibration visits",
+      "Laser sorter commissioning — software license upgrade"
+     ],
+     "cross_memo": "Laser sorter commissioning — conveyor realignment",
+     "plain": [
+      "the laser sorter commissioning",
+      "the laser sorter commissioning visits",
+      "the laser sorter commissioning license"
+     ],
+     "oblique": [
+      "bringing the new high-tech separator online",
+      "tuning the machine that picks metals by light",
+      "the startup phase of our newest line",
+      "getting recoveries up on mixed material",
+      "the purchase that finally arrived",
+      "technician visits during the break-in period",
+      "the system that identifies alloys at speed",
+      "what we spent making the machine accurate",
+      "a ramp-up of the premium equipment",
+      "the capital project entering service",
+      "vendor engineers on our floor for weeks",
+      "dialing in the sensors",
+      "the new line's teething pains",
+      "a purity improvement project",
+      "the start-up of the flagship purchase",
+      "the stage between delivery and production"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "stainless",
+     "vendor": "Duralloy Verification Group",
+     "memos": [
+      "Stainless dispute — independent verification",
+      "Stainless dispute — retest of rejected lot"
+     ],
+     "cross_memo": "Stainless dispute — customer credit memo",
+     "plain": [
+      "the stainless dispute",
+      "the stainless dispute verification",
+      "the stainless dispute retest"
+     ],
+     "oblique": [
+      "the argument over a shipped lot grade",
+      "a buyer rejecting our load",
+      "proving the contents of a contested container",
+      "third-party arbitration of quality",
+      "the claim from the mill customer",
+      "a disagreement over nickel content",
+      "outside referees on a shipment we sold",
+      "the rejection that came back from overseas",
+      "what we paid to defend our paperwork",
+      "a quality complaint turned expensive",
+      "the lot that failed the buyer's chemistry",
+      "tests ordered by both sides",
+      "a commercial disagreement over composition",
+      "the returned material fight",
+      "sorting out who was right about a shipment",
+      "a customer's challenge to our grading"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Yard Safety and Security",
+   "aliases": [
+    "safety",
+    "security",
+    "yard security",
+    "safety and security spend",
+    "site protection"
+   ],
+   "narrative": [
+    "Security costs",
+    "Safety spend",
+    "Site protection"
+   ],
+   "recurring": [
+    {
+     "vendor": "Watchtower Monitoring",
+     "base": 3100,
+     "memo": "Camera monitoring and alarm"
+    },
+    {
+     "vendor": "Guardian PPE Supply",
+     "base": 4500,
+     "memo": "Gloves, vests and respirators"
+    },
+    {
+     "vendor": "Firebreak Systems",
+     "base": 1700,
+     "memo": "Extinguisher and sprinkler inspections"
+    }
+   ],
+   "events": [
+    {
+     "key": "batteryfire",
+     "vendor": "Firebreak Systems",
+     "memos": [
+      "Lithium fire response — suppression recharge",
+      "Lithium fire response — thermal imaging survey"
+     ],
+     "cross_memo": "Lithium fire response — fire department fee",
+     "plain": [
+      "the lithium fire response",
+      "the lithium fire response recharge",
+      "the lithium fire response survey"
+     ],
+     "oblique": [
+      "the blaze in the pile last month",
+      "what followed the smoke at the stockpile",
+      "the flare-up from discarded power cells",
+      "an incident that brought trucks with sirens",
+      "restoring our defenses after the flames",
+      "the heat event in the electronics heap",
+      "hidden energy storage igniting",
+      "what the insurer asked about after the fire",
+      "the emergency that closed the yard for a day",
+      "repairs to our protection gear after the event",
+      "the reason we now scan incoming piles",
+      "a near-disaster at the back section",
+      "our reaction to a spontaneous burn",
+      "the costly night the sprinklers ran",
+      "a fire scare that changed procedures",
+      "the smoldering pile that got out of hand"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "fencing",
+     "vendor": "Bastion Perimeter Contractors",
+     "memos": [
+      "Perimeter upgrade — razor fence extension",
+      "Perimeter upgrade — gate operator install"
+     ],
+     "cross_memo": "Perimeter upgrade — night patrol surge",
+     "plain": [
+      "the perimeter upgrade",
+      "the perimeter upgrade extension",
+      "the perimeter upgrade gates"
+     ],
+     "oblique": [
+      "stopping thieves who cut in for copper",
+      "the break-ins on the east side",
+      "a response to metal theft",
+      "walls going up where people had been climbing in",
+      "hardening the edges of the property",
+      "what we built after the burglary",
+      "keeping outsiders away from the stock",
+      "the insurer's condition for renewing coverage",
+      "barriers where the lot was exposed",
+      "the theft spree last quarter",
+      "new barriers on the vulnerable side",
+      "the response to trespass incidents",
+      "restricting unauthorized entry",
+      "physical defenses after losing inventory",
+      "the project the police recommended",
+      "closing off the weak spots in our boundary"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,601 @@
+{
+ "slug": "physical-therapy-clinics",
+ "industry": "physical therapy clinics",
+ "entities": [
+  "Crestline Movement Partners",
+  "Harbor Point Rehab Holdings",
+  "Ironwood Physical Therapy Group",
+  "Maple Ridge Therapy Collective",
+  "Sunfield Recovery Clinics"
+ ],
+ "accounts": [
+  {
+   "name": "Clinical Supplies Expense",
+   "aliases": [
+    "clinic supplies",
+    "supplies spend",
+    "treatment consumables",
+    "gauze and tape",
+    "supply closet costs"
+   ],
+   "narrative": [
+    "Clinic supplies",
+    "Supplies spend",
+    "Treatment consumables"
+   ],
+   "recurring": [
+    {
+     "vendor": "MedLine Consumables Co",
+     "base": 9200,
+     "memo": "Monthly consumables order, gauze, tape, ultrasound gel"
+    },
+    {
+     "vendor": "Pinnacle Surgical Distributors",
+     "base": 4100,
+     "memo": "Replenishment, exam gloves and sanitizer"
+    }
+   ],
+   "events": [
+    {
+     "key": "ultrasoundgelrecall",
+     "vendor": "MedLine Consumables Co",
+     "memos": [
+      "Gel recall replacement — bulk ultrasound gel",
+      "Gel recall replacement — restock credit reversal"
+     ],
+     "cross_memo": "Gel recall replacement — biomed freight",
+     "plain": [
+      "the gel recall replacement",
+      "the ultrasound gel recall",
+      "the recall replacement stock"
+     ],
+     "oblique": [
+      "swapping out the contaminated coupling product across every site",
+      "the emergency restock after the regulator pulled a batch",
+      "buying replacement stock for what inspectors pulled from shelves",
+      "a forced reorder nobody budgeted for",
+      "the bulk reship clinics requested after the withdrawal",
+      "covering the sudden shortfall in the coupling product",
+      "terse: the recall restock",
+      "replacing product quarantined by the safety office",
+      "the rushed resupply of treatment gel",
+      "what we paid to swap out tainted stock",
+      "the emergency coupling order from corporate",
+      "make-good stock for the withdrawn lots",
+      "wordy: buying fresh coupling product so no clinic ran dry",
+      "the unplanned reorder following the withdrawal",
+      "refilling the gel stations after the pull",
+      "a one-time resupply during the safety action"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "hipkitloadcampaign",
+     "vendor": "Corvane Orthopedic Supply",
+     "memos": [
+      "Hip kit loading program — trochanter bolsters",
+      "Hip kit loading program — assembly labor"
+     ],
+     "cross_memo": "Hip kit loading program — warehouse racking",
+     "plain": [
+      "the hip kit loading program",
+      "the hip kit program",
+      "the loading program kits"
+     ],
+     "oblique": [
+      "stocking the new hip brace bundles for the spring rollout",
+      "the one-time kit assembly for the rehab push",
+      "getting the bundles packed before the referral surge",
+      "a sudden buildout of the hip support sets",
+      "the packaging run that clinics asked for",
+      "outfitting every site with the new brace sets",
+      "terse: the bundle build",
+      "a wordy effort to prepare orthopedic starter packs",
+      "assembling extra sets for the new referral partners",
+      "the warehouse crew's overtime packing supports",
+      "kitting the joint supports at the central depot",
+      "a one-off order for the expanded service line",
+      "prepping sets so therapists have gear on day one",
+      "the surge in brace assembly",
+      "readying the equipment bundles for launch",
+      "the special purchase that equipped the expansion"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Repair and Maintenance",
+   "aliases": [
+    "equipment repairs",
+    "maintenance costs",
+    "machine upkeep",
+    "tables and ultrasound repairs",
+    "biomed service"
+   ],
+   "narrative": [
+    "Equipment repairs",
+    "Maintenance costs",
+    "Machine upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightwater Biomedical Service",
+     "base": 6800,
+     "memo": "Quarterly preventive service, treatment tables and e-stim units"
+    },
+    {
+     "vendor": "Keystone Calibration Labs",
+     "base": 1500,
+     "memo": "Monthly calibration checks on dynamometers"
+    },
+    {
+     "vendor": "Tri-County Equipment Repair",
+     "base": 2300,
+     "memo": "On-call repair visits, misc equipment"
+    }
+   ],
+   "events": [
+    {
+     "key": "tablehydraulicfleet",
+     "vendor": "Brightwater Biomedical Service",
+     "memos": [
+      "Hydraulic table overhaul — cylinder seals",
+      "Hydraulic table overhaul — pump rebuild"
+     ],
+     "cross_memo": "Hydraulic table overhaul — loaner tables",
+     "plain": [
+      "the hydraulic table overhaul",
+      "the table overhaul work",
+      "the hydraulic overhaul bill"
+     ],
+     "oblique": [
+      "fixing the adjustable beds that kept sinking mid-session",
+      "the mass service on lifting platforms across the group",
+      "getting patient beds to hold height again",
+      "a lump-sum rebuild of the lift mechanisms",
+      "the work after therapists reported the lifts drifting",
+      "restoring the motorized treatment surfaces",
+      "terse: the lift rebuild",
+      "wordy: bringing every adjustable bed back to spec after the drift complaints",
+      "replacing worn pistons in the height-adjust beds",
+      "the crew that came out to overhaul the platforms",
+      "what it cost to revive the patient couches",
+      "a one-time rebuild of the table lifts at each site",
+      "the big service after the lifts started failing",
+      "making the adjustable couches safe again",
+      "the mechanical refit for the patient furniture",
+      "lift repairs that were not on the service plan"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "dynamometerrecalibration",
+     "vendor": "Summit Metrology Partners",
+     "memos": [
+      "Dynamometer recalibration — force transducers",
+      "Dynamometer recalibration — certification fee"
+     ],
+     "cross_memo": "Dynamometer recalibration — travel and onsite",
+     "plain": [
+      "the dynamometer recalibration",
+      "the force meter recalibration",
+      "the recalibration certification"
+     ],
+     "oblique": [
+      "the external lab sent in to re-zero the strength gauges",
+      "certifying the grip testers after the audit flagged them",
+      "a rush check of the measurement devices across sites",
+      "paying an outside firm to bring the gauges back in tolerance",
+      "the accredited verification the insurer demanded",
+      "terse: the gauge recheck",
+      "wordy: having an outside shop certify every strength rig before the payer review",
+      "bringing the force instruments back to the required standard",
+      "the surprise lab visit that re-zeroed the testers",
+      "the off-cycle validation of the strength rigs",
+      "paying for an accredited metrology pass after the complaint",
+      "a one-time verification for the measurement fleet",
+      "the instrument audit the group ordered",
+      "making the strength readings defensible again",
+      "the external calibration that payers requested",
+      "the unscheduled certification of the test rigs"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Patient Transportation Expense",
+   "aliases": [
+    "patient transport",
+    "shuttle costs",
+    "mileage reimbursement",
+    "transport spend",
+    "fleet of vans"
+   ],
+   "narrative": [
+    "Patient transport",
+    "Shuttle costs",
+    "Transport spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Ride Share Services",
+     "base": 5400,
+     "memo": "Monthly patient shuttle contract, standard routes"
+    },
+    {
+     "vendor": "Fuelgate Card Services",
+     "base": 1800,
+     "memo": "Fleet fuel card charges, shuttle vans"
+    }
+   ],
+   "events": [
+    {
+     "key": "vanfleetrefit",
+     "vendor": "Metro Ride Share Services",
+     "memos": [
+      "Van refit — wheelchair lift retrofit",
+      "Van refit — accessibility inspection"
+     ],
+     "cross_memo": "Van refit — temporary rental vans",
+     "plain": [
+      "the van refit",
+      "the shuttle refit work",
+      "the van retrofit program"
+     ],
+     "oblique": [
+      "installing ramps in the patient vehicles for wheelchair users",
+      "the modification the state transit board required",
+      "making the shuttles usable for everyone who needs a ramp",
+      "retrofitting the fleet so mobility users can board",
+      "the one-time upgrades to the passenger vans",
+      "wordy: adding lifts to every shuttle so disabled patients can ride without help",
+      "terse: the lift install",
+      "the conversion work that brought vehicles up to code",
+      "the accessibility upgrade paid to the shuttle operator",
+      "outfitting the vans so no patient is left at the curb",
+      "the modification ordered after the complaint",
+      "a one-off rebuild of the passenger interiors",
+      "making rides accessible for every patient group",
+      "the fleet compliance job",
+      "the lift work carried out in the depot",
+      "adapting the vehicles to the new access rules"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "shuttlebrakeservice",
+     "vendor": "Ridgeline Commercial Auto Repair",
+     "memos": [
+      "Shuttle brake service — rotors and pads",
+      "Shuttle brake service — brake fluid flush"
+     ],
+     "cross_memo": "Shuttle brake service — towing",
+     "plain": [
+      "the shuttle brake service",
+      "the brake service work",
+      "the brake repair bill"
+     ],
+     "oblique": [
+      "getting the vans stopping properly again after complaints",
+      "the wear work on the mini buses",
+      "a rush mechanical job on the driver fleet",
+      "replacing worn friction parts across the shuttles",
+      "the garage bill after the brake warnings lit up",
+      "terse: the brake job",
+      "wordy: fixing the stopping systems on every passenger van before the winter routes",
+      "the mechanic visit that restored the vehicles to safe use",
+      "replacing components that failed the depot inspection",
+      "the emergency fix to the braking hardware",
+      "what we paid to get the vans back on the road",
+      "a one-off overhaul of the shuttle stopping gear",
+      "the repairs the operator flagged as unsafe",
+      "bringing the minibuses back up to standard",
+      "the unplanned mechanical work in the garage",
+      "the stopping hardware overhaul ordered by fleet management"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Insurance Premiums — Professional Liability",
+   "aliases": [
+    "malpractice premiums",
+    "liability insurance",
+    "professional coverage",
+    "insurance costs",
+    "policy premiums"
+   ],
+   "narrative": [
+    "Malpractice premiums",
+    "Liability insurance",
+    "Professional coverage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northgate Mutual Underwriters",
+     "base": 12500,
+     "memo": "Monthly installment, professional liability policy"
+    },
+    {
+     "vendor": "Cobalt Risk Brokers",
+     "base": 900,
+     "memo": "Broker service fee, coverage administration"
+    }
+   ],
+   "events": [
+    {
+     "key": "auditpremiumtrueup",
+     "vendor": "Northgate Mutual Underwriters",
+     "memos": [
+      "Premium true-up — payroll audit adjustment",
+      "Premium true-up — audit reconciliation"
+     ],
+     "cross_memo": "Premium true-up — audit fee schedule",
+     "plain": [
+      "the premium true-up",
+      "the audit adjustment",
+      "the payroll audit true-up"
+     ],
+     "oblique": [
+      "the catch-up owed after the carrier recounted staff hours",
+      "a bill from the insurer once headcount was verified",
+      "paying the difference the underwriter found on review",
+      "the back charge after the annual verification came in high",
+      "the reconciliation the carrier demanded at year end",
+      "terse: the back charge",
+      "wordy: settling what the underwriter says we owed once our clinician headcount was recounted",
+      "the extra premium after the insurer rechecked our workforce",
+      "the true-up that followed the carrier's review of our payroll",
+      "the adjustment for clinicians we had under-reported",
+      "the carrier invoice for the year's coverage gap",
+      "the surprise balance from the annual exam",
+      "the reconciled premium the auditor settled",
+      "a one-time catch-up on the policy",
+      "the unexpected balance the insurer assessed",
+      "what the carrier recalculated for the prior period"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "cyberriderendorsement",
+     "vendor": "Halvorsen Specialty Risk",
+     "memos": [
+      "Cyber rider endorsement — patient records coverage",
+      "Cyber rider endorsement — underwriting fee"
+     ],
+     "cross_memo": "Cyber rider endorsement — policy amendment",
+     "plain": [
+      "the cyber rider endorsement",
+      "the cyber endorsement",
+      "the endorsement rider fee"
+     ],
+     "oblique": [
+      "adding breach coverage for our electronic charts",
+      "the extra protection for stored health data",
+      "buying added cover after the regulator's letter",
+      "the new digital exposure protection for the group",
+      "a one-time add-on to the policy for data incidents",
+      "terse: the data add-on",
+      "wordy: extending the policy to cover digital health information stolen from our systems",
+      "the specialty rider that guards against online intrusions",
+      "the endorsement the board bought after the scare",
+      "paying the underwriter for expanded electronic cover",
+      "the rider covering electronic patient files",
+      "insuring our records systems against outside attack",
+      "the amendment that added technology coverage",
+      "the new policy language for information loss",
+      "the one-off coverage expansion the bank required",
+      "protection for the electronic systems that hold charts"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Contract Therapist Staffing",
+   "aliases": [
+    "locum therapists",
+    "agency staff",
+    "temp therapists",
+    "contract labor",
+    "per diem clinicians"
+   ],
+   "narrative": [
+    "Locum therapists",
+    "Agency staff",
+    "Contract labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stride Clinical Staffing",
+     "base": 16000,
+     "memo": "Weekly locum coverage invoice, per diem PTs"
+    },
+    {
+     "vendor": "Bridgepoint Health Recruiters",
+     "base": 3200,
+     "memo": "Placement fees, contract clinician onboarding"
+    }
+   ],
+   "events": [
+    {
+     "key": "coveragesurgeweek",
+     "vendor": "Stride Clinical Staffing",
+     "memos": [
+      "Coverage surge — holiday weekend shifts",
+      "Coverage surge — overtime differential"
+     ],
+     "cross_memo": "Coverage surge — housing stipends",
+     "plain": [
+      "the coverage surge",
+      "the surge shifts",
+      "the surge differential"
+     ],
+     "oblique": [
+      "paying extra for the clinicians who worked the holiday",
+      "the premium rates for the extra hours that week",
+      "covering the gap when regulars were out",
+      "the spike in hourly billing for the busy stretch",
+      "buying the surplus shifts we did not plan",
+      "terse: the holiday premium",
+      "wordy: paying the top rate for therapists willing to cover open shifts during the peak weeks",
+      "the bonus pay that drew outside clinicians in",
+      "what agencies charged to fill the schedule over the break",
+      "the extra hours we bought when the roster ran thin",
+      "an unscheduled spike in relief staffing",
+      "the rush hourly rates during the long weekend",
+      "emergency rostering at a higher price",
+      "the one-off premium on relief staff",
+      "the added invoices for cover at peak",
+      "the crunch-week staffing charge"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "credentialingsprint",
+     "vendor": "Apex Clinician Credentialing",
+     "memos": [
+      "Credentialing sprint — license verification",
+      "Credentialing sprint — background screening"
+     ],
+     "cross_memo": "Credentialing sprint — expedited processing",
+     "plain": [
+      "the credentialing sprint",
+      "the credential sprint",
+      "the sprint verification work"
+     ],
+     "oblique": [
+      "checking every new hire's permits before they treat patients",
+      "the rush paperwork to get clinicians cleared to practice",
+      "the background vetting of the incoming group",
+      "the crash clearance run for the onboarding wave",
+      "a one-time approval push for the new starters",
+      "terse: the clearance rush",
+      "wordy: getting every incoming therapist's state permits and criminal checks finished before the first shift",
+      "the expedited approvals the board needed to sign off",
+      "the paid review of practitioner records in a hurry",
+      "the sudden vetting job for the hiring class",
+      "the accelerated screening that let us onboard the crew",
+      "making sure the new clinicians could legally work",
+      "the outside firm that verified the hiring batch",
+      "the urgent document review on the recruits",
+      "the compressed onboarding paperwork",
+      "the fast track clearance for staff"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Facility Utilities and Janitorial",
+   "aliases": [
+    "utilities",
+    "cleaning costs",
+    "janitorial spend",
+    "electric and water",
+    "building services"
+   ],
+   "narrative": [
+    "Utilities",
+    "Cleaning costs",
+    "Janitorial spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lakeshore Power and Light",
+     "base": 7600,
+     "memo": "Monthly electric, multi-site"
+    },
+    {
+     "vendor": "Spotless Building Services",
+     "base": 5100,
+     "memo": "Recurring janitorial contract, all clinics"
+    }
+   ],
+   "events": [
+    {
+     "key": "hvacfilterdeepclean",
+     "vendor": "Spotless Building Services",
+     "memos": [
+      "Deep clean — duct and vent restoration",
+      "Deep clean — air handler service"
+     ],
+     "cross_memo": "Deep clean — lift rental",
+     "plain": [
+      "the deep clean",
+      "the duct restoration",
+      "the vent cleaning work"
+     ],
+     "oblique": [
+      "clearing dust out of the clinic air systems after the contractor's report",
+      "the thorough sweep that followed the air quality complaint",
+      "getting the ventilation back to clean standard",
+      "the one-time scrub of the building air paths",
+      "paying for the air system tidy-up before inspection",
+      "terse: the vent scrub",
+      "wordy: having outside crews pull dust from every ceiling duct so the clinics passed the air review",
+      "the restoration work on the building ventilation",
+      "what the cleaners billed to scour the airways",
+      "the intensive cleaning the landlord requested",
+      "a major cleaning job on the building plant",
+      "the special wash of the ceiling systems",
+      "removing buildup from the forced air network",
+      "making the rooms breathe clean again",
+      "the air hygiene project the owner approved",
+      "the big tidy on the mechanical ductwork"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "roofleakrepair",
+     "vendor": "Summit Ridge Roofing",
+     "memos": [
+      "Roof leak repair — membrane patch",
+      "Roof leak repair — flashing replacement"
+     ],
+     "cross_memo": "Roof leak repair — scaffolding",
+     "plain": [
+      "the roof leak repair",
+      "the roofing repair",
+      "the leak patch job"
+     ],
+     "oblique": [
+      "fixing the water getting into the upstairs ceiling",
+      "the emergency work on the building top after the storm",
+      "a contractor sealing the rooftop seams",
+      "stopping the drip that stained the treatment rooms",
+      "a one-off envelope repair on the structure",
+      "terse: the roof fix",
+      "wordy: sealing up the building top so rain stops reaching the treatment bays",
+      "the sealing work the landlord had to authorize",
+      "what the crew billed to close the open seams overhead",
+      "the weatherproofing job after the storm damage",
+      "restoring the building shell against water",
+      "the overhead patching done in the rain",
+      "the outside crew that covered the top of the clinic",
+      "stopping the moisture from the overhead",
+      "the envelope rehab on the flat section",
+      "a rapid waterproofing effort"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  }
+ ],
+ "author": "claude-haiku-5-5"
+}

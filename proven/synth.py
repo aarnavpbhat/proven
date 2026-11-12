@@ -42,9 +42,11 @@ never sees a `test` scenario.
 """
 from __future__ import annotations
 
+import json
 import random
 from dataclasses import asdict, dataclass, field
 
+from proven.claims import STOPWORDS, _TOKEN
 from proven.ledger import Account, Ledger, Transaction
 
 PERIODS = ("2026-08", "2026-09", "2026-10")   # history, prior, current
@@ -253,6 +255,238 @@ HELDOUT: dict[str, tuple[str, ...]] = {
     "d_and_o": ("board coverage", "protecting our directors"),
     "cyber": ("the new breach policy", "protection against hacks"),
 }
+
+#: A third phrasing tier. About a dozen new ways of describing each cause, written
+#: after HELDOUT was fixed and disjoint from it. The train split draws only from
+#: PARAPHRASE_TRAIN and the test split only from PARAPHRASE_TEST, so a proposer tuned
+#: on train paraphrases has never seen a test phrase. They obey the HELDOUT rule (no
+#: content word shared with the lexicon or that cause's own memos, vendor and cross
+#: memo; enforced in test_synth.py) and are deliberately uneven: terse, wordy, oblique.
+PARAPHRASE_TRAIN: dict[str, tuple[str, ...]] = {
+    "financing": ("the equity round we wrapped up last month",
+                  "bringing the new backers onboard",
+                  "the money we took in from outside shareholders",
+                  "the run-up to our priced round",
+                  "all the paperwork around taking on fresh equity",
+                  "the cap table work that came with the new round",
+                  "our growth equity deal",
+                  "welcoming a new lead into the cap table"),
+    "litigation": ("the infringement suit we were named in",
+                   "clearing up the IP matter with a rival",
+                   "making a competitor's claim go away",
+                   "the courtroom side of the competitor fight",
+                   "the claim brought against us last spring",
+                   "that long-running fight over who invented what",
+                   "outside trial counsel's bills",
+                   "the infringement claim we agreed to resolve"),
+    "campaign": ("getting the word out about the new release",
+                 "our fall brand awareness drive",
+                 "buying more eyeballs ahead of the holidays",
+                 "the big demand-generation push",
+                 "spend to promote the new offering",
+                 "the October promotional blitz",
+                 "ramping up outreach to prospects",
+                 "all the go-live announcement activity"),
+    "conference": ("showing up at the big developer gathering",
+                   "the exhibit hall presence we paid for",
+                   "putting our name on the developer industry event",
+                   "the October developer exhibition",
+                   "the stand and swag we shipped to Las Vegas",
+                   "participating in the developer fair",
+                   "pressing the flesh with developers in person",
+                   "our stall at the annual tech gathering"),
+    "migration": ("the move off our old datacenter",
+                  "porting the platform to the new environment",
+                  "the big replatforming project",
+                  "the transfer of our workloads",
+                  "standing up the new environment alongside the old one",
+                  "the one-time lift-and-shift",
+                  "decommissioning the legacy servers",
+                  "relocating the platform to new hardware"),
+    "training": ("the machine learning workload",
+                 "our AI research push",
+                 "heavy number crunching for the data science team",
+                 "the neural network experiments",
+                 "the team's deep learning work",
+                 "the accelerators we booked for research",
+                 "teaching our systems on much larger inputs",
+                 "the overnight jobs our researchers kicked off"),
+    "renewal": ("contracts coming up for another term",
+                "agreements that came due again",
+                "the seats we re-committed to for next year",
+                "locking in next year's pricing with our vendors",
+                "our yearly agreement anniversaries",
+                "the uplift on our enterprise agreements",
+                "paying for another twelve months of access",
+                "extending the revenue team's platform commitment"),
+    "compliance": ("meeting our customers' security questionnaires",
+                   "the certification our enterprise buyers keep asking for",
+                   "tooling for the controls framework",
+                   "becoming certified for big-company deals",
+                   "our assurance program for buyers",
+                   "the regulatory readiness work",
+                   "evidence collection automation",
+                   "the independent attestation process"),
+    "roadshow": ("the leadership tour of key accounts",
+                 "flying the team out to see prospects",
+                 "the face-to-face meetings with big prospects",
+                 "last-minute rebooking after the weather delays",
+                 "trips to the East Coast to close deals",
+                 "the multi-city swing",
+                 "taking the AEs on the road",
+                 "airfare for the deal team"),
+    "offsite": ("the leadership gathering out of town",
+                "team-building week",
+                "the staff gathering at the lake house",
+                "time away to plan the year",
+                "getting the whole crew together in person",
+                "a few days of planning away from the desks",
+                "the annual get-together",
+                "the all-hands week in the mountains"),
+    "lease": ("moving into a second site in the Southwest",
+              "the extra square footage we signed for",
+              "opening a branch in Texas",
+              "our regional hub",
+              "the new location's up-front charges",
+              "expanding our physical footprint",
+              "getting keys to the new premises",
+              "the rent on the space we added"),
+    "buildout": ("preparing the new storey for staff",
+                 "contractors tearing down walls",
+                 "the interior construction",
+                 "refurbishing the upper level",
+                 "turning bare space into desks and meeting rooms",
+                 "the remodel of our workspace",
+                 "carpentry and wiring on the top level",
+                 "the tenant improvements"),
+    "mobile": ("the iPhone and Android rewrite",
+               "outside developers for the phone front end",
+               "the native software we are building",
+               "the pocket-sized version of our software",
+               "extra hands on the handheld experience",
+               "the external team writing our phone software",
+               "the Android release",
+               "freelance developers on the handset work"),
+    "redesign": ("a new look and feel for our public pages",
+                 "the creative refresh of our web presence",
+                 "revamping how we show up online",
+                 "the rebrand rollout",
+                 "freelance artists producing new graphics",
+                 "polishing the public-facing site",
+                 "the homepage makeover",
+                 "a visual overhaul of the front end"),
+    "search": ("bringing in a head of technology",
+               "the headhunter's bill for our new CTO",
+               "hiring a seasoned technology chief",
+               "the outside help we used to find a new technology chief",
+               "the C-level hire",
+               "paying to land a top leader for the tech org",
+               "the leadership appointment",
+               "the successful hire for our top technical seat"),
+    "campus": ("visiting schools to find graduates",
+               "intern recruitment season",
+               "the early-career pipeline",
+               "meeting seniors at their colleges",
+               "the entry-level talent drive",
+               "our new-grad outreach",
+               "the fall graduate program",
+               "tabling at technical schools"),
+    "d_and_o": ("liability cover for our board members",
+                "the board's protection plan coming up for reinstatement",
+                "management liability cover",
+                "the leadership protection program",
+                "cover for leaders against personal claims",
+                "the yearly rollover of our governance cover",
+                "insuring our board against personal exposure",
+                "protection for those who sit on our board"),
+    "cyber": ("protection against ransomware and data theft",
+              "insurance against hackers",
+              "the new policy covering network intrusions",
+              "being covered if our systems are breached",
+              "the digital risk protection we hadn't carried before",
+              "the online-threat protection we added",
+              "our front line of defense against data theft",
+              "protection for ransomware events"),
+}
+
+PARAPHRASE_TEST: dict[str, tuple[str, ...]] = {
+    "financing": ("the transaction that put fresh money in the bank",
+                  "the deal with our new lead backer",
+                  "the valuation negotiation and its aftermath",
+                  "the new-money deal signed in October"),
+    "litigation": ("getting the competitor to drop its suit",
+                   "the intellectual property showdown",
+                   "the IP clash that finally ended",
+                   "a rival's accusations of copying our technology"),
+    "campaign": ("the awareness drive around our new release",
+                 "splashy promotion of the new tier",
+                 "a heavier acquisition budget this month",
+                 "the seasonal lead-gen surge"),
+    "conference": ("our table at the developers' gathering",
+                   "the annual gathering of developers where we exhibited",
+                   "being visible at the community event",
+                   "exhibiting in front of the developer crowd"),
+    "migration": ("shifting production over to the new setup",
+                  "the platform overhaul we finished in October",
+                  "running two environments side by side during the switch",
+                  "getting off the old servers"),
+    "training": ("the research team's big overnight jobs",
+                 "the AI team's hardware needs",
+                 "experiments on the next-generation algorithms",
+                 "scaling up the data science effort"),
+    "renewal": ("the platform contracts that rolled over",
+                "the vendor price uplift on rollover",
+                "keeping our tools for another year",
+                "next year's seat commitments"),
+    "compliance": ("buying the software that tracks our controls",
+                   "the vendor risk reviews our largest prospects require",
+                   "proving our security posture to buyers",
+                   "the assurance report procurement teams ask for"),
+    "roadshow": ("the string of in-person pitches",
+                 "the road trips by our account executives",
+                 "face time with prospective buyers across several cities",
+                 "the seller-side junket"),
+    "offsite": ("the quarterly planning getaway",
+                "getting the distributed team in one room",
+                "the staff bonding trip",
+                "our strategy days somewhere else"),
+    "lease": ("the satellite site that opened",
+              "adding a second workplace",
+              "the premises we took on in the south",
+              "our real estate growth"),
+    "buildout": ("getting the unfinished level ready for staff",
+                 "the interior works that wrapped up in October",
+                 "hard hats on the top level",
+                 "refitting the shell space"),
+    "mobile": ("the on-phone experience we are shipping",
+               "temporary developers for the handheld version",
+               "staff augmentation for the phone work",
+               "the iOS and Android effort"),
+    "redesign": ("our new visual identity online",
+                 "the update to the public-facing pages",
+                 "the rebuild of how our brand looks on screen",
+                 "a fresh coat of paint on the front page"),
+    "search": ("the headhunting assignment we completed",
+               "finding our next CTO",
+               "the agency's bill for the leader we landed",
+               "staffing the top tech role"),
+    "campus": ("the intern class we are courting",
+               "going to where the students are",
+               "junior talent events at the schools",
+               "building relationships with graduating classes"),
+    "d_and_o": ("the cover that shields our senior leaders personally",
+                "what we pay so board members can sleep at night",
+                "management-liability protection",
+                "the liability protection for our governance team"),
+    "cyber": ("financial protection from a systems compromise",
+              "the new hacker-related protection",
+              "shielding us from the cost of an intrusion",
+              "the add-on that responds to online attacks"),
+}
+
+PHRASINGS = ("seen", "heldout", "paraphrase")
+
+
 ENTITIES = ("Arcadia Labs", "Brightfield Health", "Cobalt Freight", "Driftwood Analytics",
             "Ember Payments", "Fathom Bio", "Granite Data", "Halcyon Energy", "Ironwood Systems",
             "Juniper Logistics")
@@ -285,6 +519,39 @@ DISTRACTOR = Family("control_distractor", "control", "PASS", ())
 FAMILY_BY_NAME = {f.name: f for f in FAMILIES + (DISTRACTOR,)}
 
 
+@dataclass(frozen=True)
+class World:
+    """Everything the generator draws on: the accounts, who bills them, what can happen to
+    them and how a writer may describe it. `DEFAULT` is the world this module was built
+    around; `proven.worlds` loads others (different accounts, vendors, memos and causes),
+    so a result can be checked somewhere the checker's author did not write."""
+    name: str
+    specs: tuple[AccountSpec, ...]
+    entities: tuple[str, ...]
+    heldout: dict[str, tuple[str, ...]] = field(hash=False)
+    paraphrase_train: dict[str, tuple[str, ...]] = field(hash=False)
+    paraphrase_test: dict[str, tuple[str, ...]] = field(hash=False)
+
+    @property
+    def chart(self) -> tuple[Account, ...]:
+        return tuple(Account(spec.name, spec.aliases) for spec in self.specs)
+
+    def phrases_for(self, event: Event, phrasing: str, split: str) -> tuple[str, ...]:
+        if phrasing == "heldout":
+            return self.heldout[event.key]
+        if phrasing == "paraphrase":
+            return (self.paraphrase_test if split == "test" else self.paraphrase_train)[event.key]
+        return event.phrases
+
+
+DEFAULT = World("default", WORLD, ENTITIES, HELDOUT, PARAPHRASE_TRAIN, PARAPHRASE_TEST)
+
+
+def phrases_for(event: Event, phrasing: str, split: str, world: World = DEFAULT) -> tuple[str, ...]:
+    """The phrases a writer may use for `event` under a phrasing tier and split."""
+    return world.phrases_for(event, phrasing, split)
+
+
 @dataclass
 class Label:
     """The answer key for one claim: its family, requirement, expected findings and culprits."""
@@ -295,6 +562,9 @@ class Label:
     expected_codes: list[str]
     culprits: list[str]
     account: str
+    #: What a perfect extractor returns for this sentence, in the shape of the
+    #: JSON schema in `llm.py`. Not part of the label's identity (see the pinned test).
+    gold: dict = field(default_factory=dict)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -310,6 +580,7 @@ class Scenario:
     ledger: Ledger
     explanation: str
     labels: list[Label] = field(default_factory=list)
+    world: str = "default"
 
     def to_dict(self, include_labels: bool = True) -> dict:
         data = {"scenario_id": self.scenario_id, "seed": self.seed, "split": self.split,
@@ -318,6 +589,62 @@ class Scenario:
         if include_labels:
             data["labels"] = [label.to_dict() for label in self.labels]
         return data
+
+    def gold_claims(self) -> list[dict]:
+        """Gold proposals in the order their sentences appear in the explanation."""
+        return [l.gold for l in sorted(self.labels, key=lambda l: self.explanation.find(l.quote))]
+
+    def to_chat(self) -> dict:
+        """One supervised example: the same system prompt and user payload `llm.py` sends,
+        and the gold proposals as the assistant's JSON."""
+        from proven.llm import SYSTEM, payload
+        return {"messages": [
+            {"role": "system", "content": SYSTEM},
+            {"role": "user", "content": payload(self.explanation, self.ledger)},
+            {"role": "assistant", "content": json.dumps({"claims": self.gold_claims()},
+                                                        ensure_ascii=False)},
+        ]}
+
+
+def cause_terms(spec: AccountSpec, event: Event, limit: int = 6) -> list[str]:
+    """Words `event` really leaves in vendor and memo fields, and its sibling and the
+    account's recurring spend do not: what a model should propose for a sentence about it."""
+    def tokens(text: str) -> list[str]:
+        return [t.strip("-'") for t in _TOKEN.findall(text.lower())]
+
+    sibling = next(e for e in spec.events if e is not event)
+    shared = {t for text in [sibling.vendor, *sibling.memos]
+              + [x for r in spec.recurring for x in (r.vendor, r.memo)] for t in tokens(text)}
+    counts: dict[str, int] = {}
+    for memo in event.memos:
+        for token in set(tokens(memo)):
+            counts[token] = counts.get(token, 0) + 1
+    order: list[str] = []
+    for memo in event.memos:
+        for token in tokens(memo):
+            if token not in order:
+                order.append(token)
+    if event.vendor not in {r.vendor for r in spec.recurring}:
+        for token in tokens(event.vendor):
+            if token not in order:
+                order.append(token)
+                counts[token] = len(event.memos)
+    usable = [t for t in order if len(t) >= 3 and t not in STOPWORDS and t not in shared
+              and not any(c.isdigit() for c in t)]
+    usable.sort(key=lambda t: -counts[t])      # stable: ties keep memo order
+    return usable[:limit]
+
+
+def gold_for(quote: str, account: str, direction: int, amount: str, percent: str | None,
+             phrase: str, terms: list[str]) -> dict:
+    """The proposal a perfect extractor makes for a sentence this generator wrote."""
+    return {
+        "quote": quote, "account": account, "direction": "up" if direction > 0 else "down",
+        "change_text": amount.removeprefix("approximately "),
+        "percent_text": percent if percent and f"({percent})" in quote else "",
+        "prior_text": "", "current_text": "", "reason_text": phrase,
+        "search_terms": list(terms),
+    }
 
 
 def split_of(seed: int) -> str:
@@ -353,7 +680,7 @@ class _Builder:
         self.rows.append((f"{period}-{day:02d}", account, vendor, memo, round(amount, 2)))
         return len(self.rows) - 1
 
-    def build(self, entity: str) -> tuple[Ledger, list[str]]:
+    def build(self, entity: str, chart: tuple[Account, ...] = CHART) -> tuple[Ledger, list[str]]:
         order = sorted(range(len(self.rows)), key=lambda i: (self.rows[i][0], i))
         ids = [""] * len(self.rows)
         transactions = []
@@ -361,11 +688,11 @@ class _Builder:
             ids[index] = f"TX-{1001 + n}"
             date, account, vendor, memo, amount = self.rows[index]
             transactions.append(Transaction(ids[index], date, account, vendor, memo, amount))
-        return (Ledger(entity, PRIOR, CURRENT, CHART, tuple(transactions)), ids)
+        return (Ledger(entity, PRIOR, CURRENT, chart, tuple(transactions)), ids)
 
 
-def _baseline(builder: _Builder) -> None:
-    for spec in WORLD:
+def _baseline(builder: _Builder, specs: tuple[AccountSpec, ...] = WORLD) -> None:
+    for spec in specs:
         for item in spec.recurring:
             for period in PERIODS:
                 builder.add(period, spec.name, item.vendor, item.memo,
@@ -416,20 +743,23 @@ def sentence(rng: random.Random, alias: str, direction: int, amount: str, phrase
 
 # ── the generator ────────────────────────────────────────────────────────
 
-def generate(seed: int, family: Family | None = None, phrasing: str = "seen") -> Scenario:
+def generate(seed: int, family: Family | None = None, phrasing: str = "seen",
+             world: World | None = None) -> Scenario:
     """One reproducible synthetic close: the same seed always gives the same ledger and text.
 
     `phrasing='heldout'` describes each cause in words the lexicon has never seen.
     """
+    world = world or DEFAULT
+    specs = world.specs
     rng = random.Random(seed)
     family = family or family_of(seed)
     builder = _Builder(rng)
-    _baseline(builder)
+    _baseline(builder, specs)
 
-    order = list(range(len(WORLD)))
+    order = list(range(len(specs)))
     rng.shuffle(order)
-    target = WORLD[order[0]]
-    spare = [WORLD[i] for i in order[1:]]
+    target = specs[order[0]]
+    spare = [specs[i] for i in order[1:]]
     other = spare.pop()                     # receives a misbooking or a cross-account charge
     distractors = spare[:rng.choice((1, 2))]
 
@@ -479,7 +809,7 @@ def generate(seed: int, family: Family | None = None, phrasing: str = "seen") ->
         _inject(builder, spec.name, chosen, rng.uniform(chosen.low, chosen.high), CURRENT)
         distractor_events.append((spec, chosen))
 
-    ledger, ids = builder.build(rng.choice(ENTITIES))
+    ledger, ids = builder.build(rng.choice(world.entities), world.chart)
     culprit_ids = [ids[i] for i in culprits]
 
     # ── the commentary ──
@@ -496,32 +826,42 @@ def generate(seed: int, family: Family | None = None, phrasing: str = "seen") ->
         stated_change = change + ledger.txn(culprit_ids[0]).amount
     pct = ledger.variance(target.name).change_pct
     percent = f"{abs(pct):.0f}%" if pct is not None and family.name != "wrong_amount" else None
-    phrase = rng.choice(HELDOUT[cited.key] if phrasing == "heldout" else cited.phrases)
+    split = split_of(seed)
+    phrase = rng.choice(world.phrases_for(cited, phrasing, split))
     alias = rng.choice(target.narrative)
-    main = sentence(rng, alias, direction, money_text(stated_change, rng, mode), phrase,
+    main_amount = money_text(stated_change, rng, mode)
+    main = sentence(rng, alias, direction, main_amount, phrase,
                     strength=strength, percent=percent, prior_period=(period == PRIOR))
 
     labels = [Label(main, family.name, family.kind, family.requirement,
                     list(family.expected_codes),
-                    culprit_ids if family.kind == "defect" else [], target.name)]
+                    culprit_ids if family.kind == "defect" else [], target.name,
+                    gold_for(main, target.name, direction, main_amount, percent, phrase,
+                             cause_terms(target, cited)))]
     lines = [main]
     for spec, chosen in distractor_events:
         dchange = ledger.variance(spec.name).change
-        text = sentence(rng, rng.choice(spec.narrative), 1 if dchange >= 0 else -1,
-                        money_text(dchange, rng, rng.choice(("exact", "rounded"))),
-                        rng.choice(HELDOUT[chosen.key] if phrasing == "heldout" else chosen.phrases))
+        dphrase_direction = 1 if dchange >= 0 else -1
+        dalias = rng.choice(spec.narrative)       # draw order matters: it is the pinned stream
+        damount = money_text(dchange, rng, rng.choice(("exact", "rounded")))
+        dphrase = rng.choice(world.phrases_for(chosen, phrasing, split))
+        text = sentence(rng, dalias, dphrase_direction, damount, dphrase)
         labels.append(Label(text, DISTRACTOR.name, DISTRACTOR.kind, DISTRACTOR.requirement,
-                            [], [], spec.name))
+                            [], [], spec.name,
+                            gold_for(text, spec.name, dphrase_direction, damount, None, dphrase,
+                                     cause_terms(spec, chosen))))
         lines.append(text)
     rng.shuffle(lines)
     explanation = "\n".join(
         [f"October 2026 close — operating expense commentary for {ledger.entity}."]
         + lines + ["All other accounts were broadly in line with September."])
 
-    return Scenario(f"syn-{seed:05d}", seed, split_of(seed), family.name, ledger,
-                    explanation, labels)
+    prefix = "syn" if world is DEFAULT else world.name
+    return Scenario(f"{prefix}-{seed:05d}", seed, split_of(seed), family.name, ledger,
+                    explanation, labels, world.name)
 
 
-def generate_split(split: str, n: int, phrasing: str = "seen") -> list[Scenario]:
+def generate_split(split: str, n: int, phrasing: str = "seen",
+                   world: World | None = None) -> list[Scenario]:
     """`n` closes from one split, in seed order."""
-    return [generate(seed, phrasing=phrasing) for seed in seeds(split, n)]
+    return [generate(seed, phrasing=phrasing, world=world) for seed in seeds(split, n)]

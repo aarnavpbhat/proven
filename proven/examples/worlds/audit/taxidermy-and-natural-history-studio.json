@@ -1,0 +1,795 @@
+{
+ "slug": "taxidermy-and-natural-history-studio",
+ "industry": "taxidermy and natural history studio",
+ "entities": [
+  "Antler & Quill Studios",
+  "Fernhollow Natural History Works",
+  "Bramblewood Taxidermy Co",
+  "Larkspur Specimen Atelier",
+  "Stonebrook Wildlife Artistry"
+ ],
+ "accounts": [
+  {
+   "name": "Tanning & Hide Processing",
+   "aliases": [
+    "tanning",
+    "hide processing",
+    "tannery costs",
+    "tanning spend",
+    "hide work"
+   ],
+   "narrative": [
+    "Tanning",
+    "Hide processing",
+    "Tannery costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeback Tannery Co",
+     "base": 14500,
+     "memo": "Monthly tan lot — cape skins PO 4411"
+    },
+    {
+     "vendor": "Saltmarsh Fleshing Works",
+     "base": 6200,
+     "memo": "Fleshing/salting svc — wk batches"
+    }
+   ],
+   "events": [
+    {
+     "key": "elk_backlog_rush",
+     "vendor": "Ridgeback Tannery Co",
+     "memos": [
+      "Elk backlog rush — 38 hides WO-2217",
+      "Elk backlog rush — expedite surcharge"
+     ],
+     "cross_memo": "Elk backlog rush — overnight courier",
+     "plain": [
+      "the elk backlog rush",
+      "an elk backlog rush order",
+      "the rush on the elk backlog"
+     ],
+     "oblique": [
+      "catching up on the wapiti queue",
+      "speed fees",
+      "paying extra to jump the line",
+      "the hunter-season pileup",
+      "getting big-game clients their trophies sooner",
+      "faster turnaround on antlered animals",
+      "the fall harvest overflow",
+      "a premium to shorten lead times",
+      "the late-season crunch",
+      "working down the waiting list of game animals",
+      "accelerated turnaround fees",
+      "client pressure over delayed trophies",
+      "the bulge in wapiti orders",
+      "priority handling charges",
+      "outfitter complaints about wait times",
+      "doubling throughput on client trophies"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "pickle_bath_retest",
+     "vendor": "Brightwater Analytical Lab",
+     "memos": [
+      "Pickle bath retest — pH panel",
+      "Pickle bath retest — rejected pelts"
+     ],
+     "cross_memo": "Pickle bath retest — replacement chemicals",
+     "plain": [
+      "the pickle bath retest",
+      "a pickle bath retest",
+      "retesting the pickle bath"
+     ],
+     "oblique": [
+      "acidity checks after slipping hair",
+      "the hair-slip scare",
+      "outside testing of solution strength",
+      "redoing spoiled hair-on stock",
+      "water quality analysis",
+      "a contamination investigation",
+      "chemistry verification",
+      "the hair loss problem",
+      "independent solution sampling requested by our insurer",
+      "scrapping damaged furs",
+      "the acid concentration issue",
+      "quality failures in the vats",
+      "proving the solution was safe",
+      "investigating why fur was falling out",
+      "third-party solution assays",
+      "the vat problem"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Forms & Mannequins",
+   "aliases": [
+    "forms",
+    "mannequins",
+    "form costs",
+    "mannequin spend",
+    "body forms"
+   ],
+   "narrative": [
+    "Forms",
+    "Mannequins",
+    "Body forms"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northfork Form Supply",
+     "base": 9800,
+     "memo": "Foam mannequins std sizes PO 5120"
+    },
+    {
+     "vendor": "Grayling Carving Studio",
+     "base": 4300,
+     "memo": "Custom sculpted manikins — retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "bison_lifesize_order",
+     "vendor": "Northfork Form Supply",
+     "memos": [
+      "Bison lifesize order — 2 pcs PO 5188",
+      "Bison lifesize order — oversize crating"
+     ],
+     "cross_memo": "Bison lifesize order — inbound flatbed",
+     "plain": [
+      "the bison lifesize order",
+      "a bison lifesize order",
+      "that bison lifesize order"
+     ],
+     "oblique": [
+      "two full-body buffalo",
+      "the giant buffalo commission",
+      "outsized ungulate skeletons",
+      "the museum's prairie diorama request",
+      "big-animal shells",
+      "buying for a pair of buffalo mounts",
+      "the plains exhibit centerpiece",
+      "extra-large torsos",
+      "a visitor-center commission",
+      "packaging big enough to hold a pickup",
+      "two enormous herbivore bodies",
+      "the heritage-park buffalo job",
+      "heavy-duty substrate for a herd display",
+      "full-scale prairie animals",
+      "a one-time buffalo build",
+      "the plains-mammal project"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "bird_armature_recall",
+     "vendor": "Kestrel Polymer Works",
+     "memos": [
+      "Bird armature recall — defective wire cores",
+      "Bird armature recall — remake labor"
+     ],
+     "cross_memo": "Bird armature recall — return freight",
+     "plain": [
+      "the bird armature recall",
+      "a bird armature recall",
+      "that bird armature recall"
+     ],
+     "oblique": [
+      "faulty avian frames",
+      "the songbird mount failures",
+      "rebuilding feathered pieces",
+      "a supplier quality lapse on raptor bodies",
+      "replacing botched perching-pose skeletons",
+      "the owl and hawk redo",
+      "flawed internal supports",
+      "having to start over on avian pieces",
+      "the raptor problem",
+      "corroded metal inside the mounts",
+      "the bad batch of fowl skeletons",
+      "fixing waterfowl that sagged",
+      "a vendor defect on feathered specimens",
+      "redoing the duck collection",
+      "warped flight-pose supports",
+      "avian rework"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Specimen Freight & Cold Storage",
+   "aliases": [
+    "specimen freight",
+    "cold storage",
+    "freezer costs",
+    "shipping",
+    "freight and storage"
+   ],
+   "narrative": [
+    "Specimen freight",
+    "Cold storage",
+    "Freezer costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tundra Line Cold Logistics",
+     "base": 7600,
+     "memo": "Reefer LTL — client carcass pickups"
+    },
+    {
+     "vendor": "Pinecrest Freezer Lockers",
+     "base": 3100,
+     "memo": "Locker rental — 12 chest units"
+    }
+   ],
+   "events": [
+    {
+     "key": "alaska_moose_haul",
+     "vendor": "Tundra Line Cold Logistics",
+     "memos": [
+      "Alaska moose haul — reefer 3200mi",
+      "Alaska moose haul — fuel adj"
+     ],
+     "cross_memo": "Alaska moose haul — permit filing",
+     "plain": [
+      "the Alaska moose haul",
+      "an Alaska moose haul",
+      "the long Alaska moose haul"
+     ],
+     "oblique": [
+      "bringing a northern trophy down by truck",
+      "a cross-country chilled run",
+      "shipping a giant deer from up north",
+      "long-distance transport",
+      "the far-north delivery",
+      "trucking an outfitter's kill thousands of miles",
+      "diesel costs on a marathon trip",
+      "the Yukon-border shipment",
+      "an extended frozen transit",
+      "a hunter's trophy coming south",
+      "one very long truck trip",
+      "transporting antlers from the arctic",
+      "the subarctic collection run",
+      "mileage on a northern route",
+      "the big northern shipment",
+      "getting a frozen bull down from Anchorage"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "compressor_failure_salvage",
+     "vendor": "Glacier Point Refrigeration",
+     "memos": [
+      "Compressor failure salvage — emergency dry ice",
+      "Compressor failure salvage — temp storage"
+     ],
+     "cross_memo": "Compressor failure salvage — spoiled specimens writeoff",
+     "plain": [
+      "the compressor failure salvage",
+      "a compressor failure salvage",
+      "compressor failure salvage work"
+     ],
+     "oblique": [
+      "the walk-in breakdown",
+      "saving thawing inventory",
+      "a weekend cooling outage",
+      "rescuing defrosting animals",
+      "moving stock offsite when the chiller died",
+      "the chiller crash",
+      "a mechanical breakdown in our deep-freeze room",
+      "keeping thawing animals viable",
+      "after-hours callouts",
+      "the cooling scramble",
+      "inventory losses after the outage",
+      "backup chilling at an outside facility",
+      "the unplanned defrost",
+      "temporary overflow space after the meltdown",
+      "the equipment breakdown",
+      "keeping hunters' trophies from rotting"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Wildlife Permits & Compliance",
+   "aliases": [
+    "permits",
+    "compliance",
+    "permit fees",
+    "wildlife compliance",
+    "licensing"
+   ],
+   "narrative": [
+    "Permits",
+    "Wildlife compliance",
+    "Permit fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeway Compliance Partners",
+     "base": 2400,
+     "memo": "Fed/state possession docs — monthly"
+    },
+    {
+     "vendor": "Harlan Permit Expediters",
+     "base": 1200,
+     "memo": "Possession tag renewals"
+    }
+   ],
+   "events": [
+    {
+     "key": "migratory_feather_audit",
+     "vendor": "Ridgeway Compliance Partners",
+     "memos": [
+      "Migratory feather audit — records review WO-88",
+      "Migratory feather audit — counsel hrs"
+     ],
+     "cross_memo": "Migratory feather audit — catalog relabel",
+     "plain": [
+      "the migratory feather audit",
+      "a migratory feather audit",
+      "that migratory feather audit"
+     ],
+     "oblique": [
+      "the regulators' look at our bird collection",
+      "a government inspection of plumage holdings",
+      "proving every songbird was legally obtained",
+      "lawyers' time",
+      "the treaty-bird investigation",
+      "an agency examination of avian specimens",
+      "documenting the provenance of our plumes",
+      "legal costs on the wildlife inquiry",
+      "the plumage paperwork crunch",
+      "a federal agent visit",
+      "defending our avian inventory",
+      "outside attorneys on the bird question",
+      "the provenance scramble",
+      "regulatory scrutiny of plumed pieces",
+      "an enforcement inquiry",
+      "the waterfowl legality check"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "hartebeest_import_hold",
+     "vendor": "Sable & Crane Import Brokers",
+     "memos": [
+      "Hartebeest import hold — demurrage",
+      "Hartebeest import hold — broker fees"
+     ],
+     "cross_memo": "Hartebeest import hold — bonded warehouse",
+     "plain": [
+      "the hartebeest import hold",
+      "a hartebeest import hold",
+      "that hartebeest import hold"
+     ],
+     "oblique": [
+      "an African trophy stuck at customs",
+      "the port delay on a safari shipment",
+      "customs detention of an antelope",
+      "a safari client's mount held at the border",
+      "the customs snag",
+      "paperwork problems on overseas game",
+      "clearing an antelope through the port",
+      "storage while inspectors deliberated",
+      "the stalled overseas trophy",
+      "a seized safari piece",
+      "intermediary charges on African game",
+      "border clearance trouble",
+      "a detained shipment from Namibia",
+      "the African antelope delay",
+      "getting a plains-game trophy released",
+      "inspection backlog at the port"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Studio Consumables",
+   "aliases": [
+    "consumables",
+    "studio supplies",
+    "shop supplies",
+    "materials",
+    "consumable spend"
+   ],
+   "narrative": [
+    "Consumables",
+    "Studio supplies",
+    "Shop supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Amberglass Eye Co",
+     "base": 3600,
+     "memo": "Glass eyes assorted PO 6031"
+    },
+    {
+     "vendor": "Fenwick Taxidermy Supply",
+     "base": 8200,
+     "memo": "Clay epoxy hide paste restock"
+    },
+    {
+     "vendor": "Marlow Paint Works",
+     "base": 1900,
+     "memo": "Airbrush paints solvents"
+    }
+   ],
+   "events": [
+    {
+     "key": "fish_skin_replica",
+     "vendor": "Fenwick Taxidermy Supply",
+     "memos": [
+      "Fish skin replica kits — 40 units",
+      "Fish skin replica molds — PO 6077"
+     ],
+     "cross_memo": "Fish skin replica — lodge install",
+     "plain": [
+      "the fish skin replica kits",
+      "fish skin replica supplies",
+      "the fish skin replica work"
+     ],
+     "oblique": [
+      "reproduction trout and bass",
+      "the switch to cast angling trophies",
+      "fake marlin",
+      "a catch-and-release program for anglers",
+      "synthetic gamefish",
+      "artificial trout blanks",
+      "the sportfishing replication line",
+      "moving anglers off real specimens",
+      "the walleye copies",
+      "fiberglass sportfish",
+      "a fishing-resort promotion",
+      "cast salmon",
+      "the new angler service",
+      "reproductions for a fishing tournament",
+      "plastic trophy trout",
+      "duplicating caught bass"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "borax_shortage_stockpile",
+     "vendor": "Coldwater Chemical Distributors",
+     "memos": [
+      "Borax shortage stockpile — 60 bags",
+      "Borax shortage stockpile — spot premium"
+     ],
+     "cross_memo": "Borax shortage stockpile — pallet racking",
+     "plain": [
+      "the borax shortage stockpile",
+      "a borax shortage stockpile",
+      "building the borax shortage stockpile"
+     ],
+     "oblique": [
+      "hoarding preservative powder",
+      "buying ahead of a market squeeze",
+      "the preservative run-up",
+      "inflated mineral prices",
+      "laying in a year of drying agent",
+      "a scarcity scramble",
+      "locking in preservative before prices rose further",
+      "the powder panic",
+      "extra inventory of curing mineral",
+      "a hedge against scarce preservative",
+      "sodium borate buying",
+      "advance purchasing of desiccant",
+      "the curing-salt crunch",
+      "surge pricing on preservative",
+      "the mineral squeeze",
+      "bulk buying ahead of scarcity"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Exhibit Fabrication",
+   "aliases": [
+    "exhibit fabrication",
+    "habitat bases",
+    "diorama build",
+    "exhibit builds",
+    "fabrication"
+   ],
+   "narrative": [
+    "Exhibit fabrication",
+    "Habitat bases",
+    "Diorama build"
+   ],
+   "recurring": [
+    {
+     "vendor": "Quarry Hill Scenic",
+     "base": 11500,
+     "memo": "Rockwork groundwork scenic bases"
+    },
+    {
+     "vendor": "Driftwood Glass & Case",
+     "base": 5400,
+     "memo": "Display vitrines — monthly batch"
+    }
+   ],
+   "events": [
+    {
+     "key": "wetland_mural_backdrop",
+     "vendor": "Quarry Hill Scenic",
+     "memos": [
+      "Wetland mural backdrop — panels 1-6",
+      "Wetland mural backdrop — artist travel"
+     ],
+     "cross_memo": "Wetland mural backdrop — lighting rig",
+     "plain": [
+      "the wetland mural backdrop",
+      "a wetland mural backdrop",
+      "that wetland mural backdrop"
+     ],
+     "oblique": [
+      "a painted marsh scene",
+      "the swamp painting behind the ducks",
+      "background art for the waterfowl hall",
+      "a large painted wall for the nature center",
+      "the marsh scenery commission",
+      "painted horizon work",
+      "the bog-scene canvas",
+      "flying in a painter",
+      "the backwater diorama painting",
+      "landscape painting for a museum client",
+      "the reed-bed wall",
+      "a curved painted cyclorama",
+      "bringing the marsh exhibit to life",
+      "the painted wall",
+      "an expensive commissioned landscape",
+      "the heron exhibit surround"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "grizzly_pedestal_steel",
+     "vendor": "Ironleaf Metalcraft",
+     "memos": [
+      "Grizzly pedestal steel — welded frame",
+      "Grizzly pedestal steel — seismic anchors"
+     ],
+     "cross_memo": "Grizzly pedestal steel — crane lift",
+     "plain": [
+      "the grizzly pedestal steel",
+      "grizzly pedestal steel work",
+      "the grizzly pedestal steel package"
+     ],
+     "oblique": [
+      "a standing bear's support structure",
+      "the earthquake-proof base for the bear",
+      "mounting hardware for an upright brown bear",
+      "the bear plinth",
+      "a heavy metal stand",
+      "engineering the bear to stay upright",
+      "the airport bear installation",
+      "structural work under the big bruin",
+      "bolting down a half-ton bear",
+      "the bear's iron footing",
+      "a fabricated stand for the lodge bear",
+      "making the bear exhibit code-compliant",
+      "custom metalwork",
+      "the bruin support",
+      "quake bracing",
+      "a reinforced riser for the brown bear"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Facility Rent",
+   "aliases": [
+    "rent",
+    "facility rent",
+    "occupancy",
+    "lease",
+    "building costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Facility rent",
+    "Occupancy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cedarline Properties",
+     "base": 12000,
+     "memo": "Studio warehouse lease — base rent"
+    },
+    {
+     "vendor": "Ashby Common Area Mgmt",
+     "base": 1600,
+     "memo": "CAM charges"
+    }
+   ],
+   "events": [
+    {
+     "key": "showroom_expansion_buildout",
+     "vendor": "Cedarline Properties",
+     "memos": [
+      "Showroom expansion buildout — TI pass-through",
+      "Showroom expansion buildout — holdover"
+     ],
+     "cross_memo": "Showroom expansion buildout — signage",
+     "plain": [
+      "the showroom expansion buildout",
+      "a showroom expansion buildout",
+      "that showroom expansion buildout"
+     ],
+     "oblique": [
+      "fitting out the new retail space",
+      "the gallery addition",
+      "landlord improvement costs on the front unit",
+      "enlarging where customers view finished pieces",
+      "the storefront refit",
+      "tenant improvements",
+      "a bigger client gallery",
+      "the retail fit-out",
+      "opening up the adjacent bay",
+      "construction on the public-facing room",
+      "the gallery project",
+      "growing the sales floor",
+      "renovating next door",
+      "the front-of-house remodel",
+      "doubling our customer viewing room",
+      "landlord-billed improvements"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "dermestid_infestation_fumigation",
+     "vendor": "Brookhaven Pest Solutions",
+     "memos": [
+      "Dermestid infestation fumigation — tent",
+      "Dermestid infestation fumigation — retreat"
+     ],
+     "cross_memo": "Dermestid infestation fumigation — freezer quarantine",
+     "plain": [
+      "the dermestid infestation fumigation",
+      "a dermestid infestation fumigation",
+      "that dermestid infestation fumigation"
+     ],
+     "oblique": [
+      "the beetle outbreak",
+      "gassing the building",
+      "killing hide beetles in the workroom",
+      "a bug problem in finished work",
+      "the insect treatment",
+      "clearing beetles out of the collection",
+      "the exterminator",
+      "carpet beetle eradication",
+      "a bug outbreak that threatened client trophies",
+      "sealing and gassing the shop",
+      "the larvae discovery",
+      "the vermin cleanup",
+      "insect eradication",
+      "a follow-up bug treatment",
+      "the beetle emergency",
+      "protecting stock from flesh-eating bugs"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Property & Liability Insurance",
+   "aliases": [
+    "insurance",
+    "premiums",
+    "coverage",
+    "insurance spend",
+    "policy costs"
+   ],
+   "narrative": [
+    "Insurance",
+    "Premiums",
+    "Coverage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harrowgate Mutual",
+     "base": 4800,
+     "memo": "Property/inland marine premium — monthly"
+    },
+    {
+     "vendor": "Bellweather Specialty Underwriters",
+     "base": 2100,
+     "memo": "Bailee coverage — client goods"
+    }
+   ],
+   "events": [
+    {
+     "key": "museum_loan_rider",
+     "vendor": "Harrowgate Mutual",
+     "memos": [
+      "Museum loan rider — exhibition period",
+      "Museum loan rider — appraisal fee"
+     ],
+     "cross_memo": "Museum loan rider — courier escort",
+     "plain": [
+      "the museum loan rider",
+      "a museum loan rider",
+      "that museum loan rider"
+     ],
+     "oblique": [
+      "insuring pieces lent to a natural history institution",
+      "the borrowed-collection policy add-on",
+      "cover for a touring show",
+      "valuing specimens before they traveled",
+      "an extra endorsement for lent trophies",
+      "cover on our pieces at the science center",
+      "the travelling show",
+      "an add-on for off-site displays",
+      "protecting items on view elsewhere",
+      "the science-center endorsement",
+      "valuation work",
+      "cover requested by the borrowing institution",
+      "the gallery-partner add-on",
+      "nail-to-nail insurance for lent mounts",
+      "temporary cover off premises",
+      "an endorsement for the touring diorama"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "hailstorm_roof_claim",
+     "vendor": "Talon Ridge Adjusters",
+     "memos": [
+      "Hailstorm roof claim — deductible",
+      "Hailstorm roof claim — adjuster inspection"
+     ],
+     "cross_memo": "Hailstorm roof claim — tarp contractor",
+     "plain": [
+      "the hailstorm roof claim",
+      "a hailstorm roof claim",
+      "that hailstorm roof claim"
+     ],
+     "oblique": [
+      "the storm damage",
+      "our share of the weather loss",
+      "ice pellets through the ceiling",
+      "the severe-weather event",
+      "out-of-pocket costs after the storm",
+      "the leaking ceiling",
+      "water coming through overhead",
+      "the summer storm",
+      "a self-insured portion of the weather loss",
+      "storm cleanup",
+      "the big storm",
+      "damage from falling ice",
+      "a ceiling breach over the workroom",
+      "weather repairs",
+      "assessing the storm hit",
+      "the thunderstorm"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

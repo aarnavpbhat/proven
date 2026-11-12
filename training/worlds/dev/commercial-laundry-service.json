@@ -1,0 +1,815 @@
+{
+ "slug": "commercial-laundry-service",
+ "industry": "commercial laundry service",
+ "entities": [
+  "Brightline Linen Services",
+  "Harborview Commercial Laundry",
+  "Crestmont Textile Care",
+  "Pinnacle Wash & Linen",
+  "Ironbridge Laundry Group"
+ ],
+ "accounts": [
+  {
+   "name": "Linen Replacement & Textile Stock",
+   "aliases": [
+    "linen replacement",
+    "textile stock",
+    "linen stock",
+    "replacement linens",
+    "new linens"
+   ],
+   "narrative": [
+    "Linen replacement",
+    "Textile stock",
+    "Replacement linens"
+   ],
+   "recurring": [
+    {
+     "vendor": "Mercer Mills Textile Co",
+     "base": 18500,
+     "memo": "Flat sheet and pillowcase restock PO 44102"
+    },
+    {
+     "vendor": "Lakeshore Terry Supply",
+     "base": 9200,
+     "memo": "Bath towel replenishment monthly standing order"
+    },
+    {
+     "vendor": "Ostrander Apparel Works",
+     "base": 4100,
+     "memo": "Uniform shirt stock WO 7731"
+    }
+   ],
+   "events": [
+    {
+     "key": "casino",
+     "vendor": "Mercer Mills Textile Co",
+     "memos": [
+      "Westgate Casino Hotel opening inventory PO 51877",
+      "Westgate Casino Hotel opening par build-out PO 51878"
+     ],
+     "cross_memo": "Westgate Casino Hotel opening storage racking install",
+     "plain": [
+      "the Westgate Casino Hotel opening",
+      "the Westgate Casino par build-out",
+      "the Westgate casino hotel inventory"
+     ],
+     "oblique": [
+      "the new resort client's launch",
+      "the big hospitality win",
+      "a fresh high-volume gaming property",
+      "stocking up for a customer that just signed",
+      "the onboarding of our largest new account",
+      "initial supply for a property that hadn't opened yet",
+      "the casino contract",
+      "getting ready for a grand opening",
+      "a large new overnight-stay customer",
+      "the account we landed in the spring",
+      "building starting inventory from zero",
+      "the ramp for a brand new site",
+      "opening-week supply needs",
+      "equipping an entire new building",
+      "the major client launch",
+      "a customer start-up order"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "stainrecall",
+     "vendor": "Harlan Dye & Finishing LLC",
+     "memos": [
+      "Navy tablecloth dye lot rejection reorder PO 52044",
+      "Navy tablecloth dye lot rejection credit shortfall PO 52045"
+     ],
+     "cross_memo": "Navy tablecloth dye lot rejection expedited courier",
+     "plain": [
+      "the navy tablecloth dye lot rejection",
+      "the navy dye lot reorder",
+      "the tablecloth dye lot rejection"
+     ],
+     "oblique": [
+      "the batch that came back the wrong shade",
+      "reordering goods the restaurant group refused",
+      "a color mismatch on a big order",
+      "replacing product that failed inspection",
+      "the supplier's off-spec production run",
+      "redoing an order for dining customers",
+      "the shade problem",
+      "remaking items nobody would accept",
+      "a quality failure upstream",
+      "the rejected shipment",
+      "the redo on formal dining pieces",
+      "goods that didn't match the swatch",
+      "fixing a manufacturing miss",
+      "the second pass at an order",
+      "supplier error on a banquet order",
+      "an order we had to buy twice"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Detergent & Wash Chemicals",
+   "aliases": [
+    "detergent",
+    "wash chemicals",
+    "chemicals",
+    "chem spend",
+    "wash chem"
+   ],
+   "narrative": [
+    "Wash chemicals",
+    "Detergent costs",
+    "Chem spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sudsworth Chemical Supply",
+     "base": 14800,
+     "memo": "Alkali builder bulk delivery drum PO 33120"
+    },
+    {
+     "vendor": "Pureflow Industrial Surfactants",
+     "base": 8600,
+     "memo": "Liquid detergent tote refill monthly"
+    },
+    {
+     "vendor": "Brightex Bleach & Sour",
+     "base": 3900,
+     "memo": "Chlorine bleach and sour concentrate"
+    }
+   ],
+   "events": [
+    {
+     "key": "hospitalwash",
+     "vendor": "Sudsworth Chemical Supply",
+     "memos": [
+      "Antimicrobial hospital protocol conversion PO 34415",
+      "Antimicrobial hospital protocol trial formula"
+     ],
+     "cross_memo": "Antimicrobial hospital protocol conversion dosing pump retrofit",
+     "plain": [
+      "the antimicrobial hospital protocol conversion",
+      "the antimicrobial protocol",
+      "the hospital protocol conversion"
+     ],
+     "oblique": [
+      "a stricter infection-control standard",
+      "the switch for healthcare customers",
+      "new requirements from the medical wing",
+      "upgrading how we treat clinical goods",
+      "a regulatory tightening",
+      "the move to a harsher formula",
+      "what the health system demanded",
+      "the germ-kill upgrade",
+      "a certification we needed to keep",
+      "revised cleaning rules for patient-care items",
+      "the change auditors insisted on",
+      "raising our sanitation level",
+      "the clinical contract's terms",
+      "switching recipes for medical clients",
+      "a compliance-driven formula change",
+      "the stronger treatment program"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "pricespike",
+     "vendor": "Tidecrest Specialty Chemicals",
+     "memos": [
+      "Optical brightener emergency spot buy PO 34502",
+      "Optical brightener emergency spot buy freight surcharge"
+     ],
+     "cross_memo": "Optical brightener emergency spot buy storage tank rental",
+     "plain": [
+      "the optical brightener emergency spot buy",
+      "the optical brightener spot buy",
+      "the emergency brightener purchase"
+     ],
+     "oblique": [
+      "scrambling when the usual source ran dry",
+      "paying up on short notice",
+      "an unplanned market purchase",
+      "the shortage we had to cover",
+      "buying off contract at a premium",
+      "a supply gap in the middle of the month",
+      "getting product wherever we could find it",
+      "the scramble for inventory",
+      "a last-minute procurement",
+      "rush buying after a delay",
+      "filling the hole when deliveries stalled",
+      "pricey stopgap purchasing",
+      "the supplier's failure to ship",
+      "covering a stockout",
+      "an unbudgeted open-market order",
+      "panic purchasing"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Utilities - Natural Gas & Water",
+   "aliases": [
+    "utilities",
+    "gas and water",
+    "utility bills",
+    "water and gas",
+    "utility spend"
+   ],
+   "narrative": [
+    "Utilities",
+    "Gas and water",
+    "Utility spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Gas & Electric",
+     "base": 29000,
+     "memo": "Natural gas service plant 1 meter 8841"
+    },
+    {
+     "vendor": "Riverbend Municipal Water",
+     "base": 17500,
+     "memo": "Water and sewer usage billing cycle"
+    }
+   ],
+   "events": [
+    {
+     "key": "boilerleak",
+     "vendor": "Riverbend Municipal Water",
+     "memos": [
+      "Underground main rupture overage adjustment",
+      "Underground main rupture leak surcharge acct 7120"
+     ],
+     "cross_memo": "Underground main rupture excavation crew invoice",
+     "plain": [
+      "the underground main rupture",
+      "the main rupture overage",
+      "the underground rupture surcharge"
+     ],
+     "oblique": [
+      "a pipe that failed beneath the lot",
+      "water we paid for but never used",
+      "an undetected loss for weeks",
+      "the break nobody noticed",
+      "a hidden loss on the property",
+      "the flooding incident",
+      "metered volume that went straight into the ground",
+      "the dig-up outside the building",
+      "a line failure outside the plant",
+      "wasted consumption",
+      "the busted line",
+      "an unexpected spike in the meter reading",
+      "the emergency shutoff",
+      "what the city billed us after the failure",
+      "a leak that ran for days",
+      "the cost of the burst"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "coldsnap",
+     "vendor": "Northfield Propane Partners",
+     "memos": [
+      "Cold snap supplemental propane fill WO 9120",
+      "Cold snap supplemental propane fill delivery fee"
+     ],
+     "cross_memo": "Cold snap supplemental propane tank heater rental",
+     "plain": [
+      "the cold snap supplemental propane fill",
+      "the cold snap propane",
+      "the supplemental propane fill"
+     ],
+     "oblique": [
+      "the freezing weather",
+      "extra fuel to keep dryers running",
+      "a deep-freeze week",
+      "heating demand we hadn't planned for",
+      "winter's early arrival",
+      "backup fuel for the boilers",
+      "a stretch of arctic temperatures",
+      "the extended chill",
+      "keeping the plant warm",
+      "a seasonal weather event",
+      "fuel to cover a pipeline curtailment",
+      "the storm week",
+      "keeping operations going when it iced over",
+      "an unusually harsh stretch",
+      "extra heat output needed",
+      "the January-type weather"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Delivery Fleet Operations",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "fleet operations",
+    "route trucks",
+    "delivery fleet"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Route trucks",
+    "Delivery fleet"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmark Fuel Cards",
+     "base": 21500,
+     "memo": "Diesel fuel card statement"
+    },
+    {
+     "vendor": "Axle & Anchor Truck Service",
+     "base": 7800,
+     "memo": "Preventive maintenance route vans WO 6620"
+    },
+    {
+     "vendor": "Keystone Fleet Insurance",
+     "base": 6400,
+     "memo": "Commercial auto premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "liftgate",
+     "vendor": "Axle & Anchor Truck Service",
+     "memos": [
+      "Hydraulic liftgate retrofit program WO 6788",
+      "Hydraulic liftgate retrofit labor WO 6789"
+     ],
+     "cross_memo": "Hydraulic liftgate retrofit loaner van rental",
+     "plain": [
+      "the hydraulic liftgate retrofit",
+      "the liftgate retrofit program",
+      "the hydraulic liftgate labor"
+     ],
+     "oblique": [
+      "equipping trucks so drivers stop lifting carts",
+      "the safety upgrade for the rear of our vehicles",
+      "a workers' comp driven change",
+      "modifications that cut back injuries",
+      "the loading-assist project",
+      "what the insurer recommended",
+      "upgrading half the vehicles",
+      "hardware added to the back of the vans",
+      "the ergonomic improvement",
+      "protecting drivers' backs",
+      "making heavy bundles easier to unload",
+      "the injury-reduction initiative",
+      "fitting the older units",
+      "an equipment add-on across the route vans",
+      "the lifting aid installation",
+      "the retrofit batch"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "collision",
+     "vendor": "Redline Collision & Body",
+     "memos": [
+      "Dock collision bodywork unit 14 claim 3391",
+      "Dock collision bodywork repaint claim 3391"
+     ],
+     "cross_memo": "Dock collision bodywork temporary van lease",
+     "plain": [
+      "the dock collision bodywork",
+      "the dock collision repair",
+      "the collision bodywork on unit 14"
+     ],
+     "oblique": [
+      "the accident at the loading area",
+      "a truck that got hit",
+      "damage a driver caused",
+      "the crash",
+      "an insurance-related repair",
+      "the van that was out of service",
+      "fixing a banged-up vehicle",
+      "the fender-bender",
+      "a mishap on site",
+      "an incident with another vehicle",
+      "damage that happened while backing up",
+      "the claim we filed",
+      "getting the damaged truck back on the road",
+      "a body shop job",
+      "what the driver ran into",
+      "vehicle damage we had to absorb"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Plant Equipment Repairs & Maintenance",
+   "aliases": [
+    "equipment repairs",
+    "plant maintenance",
+    "machine repairs",
+    "r&m",
+    "equipment maintenance"
+   ],
+   "narrative": [
+    "Equipment repairs",
+    "Plant maintenance",
+    "Machine repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironclad Machine Service",
+     "base": 12500,
+     "memo": "Washer extractor service contract"
+    },
+    {
+     "vendor": "Flatwork Parts Depot",
+     "base": 5600,
+     "memo": "Ironer belts and bearings PO 28810"
+    },
+    {
+     "vendor": "Thermal Dynamics Boiler Care",
+     "base": 4800,
+     "memo": "Boiler inspection and tuning monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "tunnelwasher",
+     "vendor": "Ironclad Machine Service",
+     "memos": [
+      "Continuous batch tunnel module 3 rebuild WO 8802",
+      "Continuous batch tunnel module 3 bearing replacement"
+     ],
+     "cross_memo": "Continuous batch tunnel module 3 temporary processing outsourced",
+     "plain": [
+      "the continuous batch tunnel rebuild",
+      "the batch tunnel module 3 rebuild",
+      "the continuous tunnel module repair"
+     ],
+     "oblique": [
+      "overhauling our biggest production line",
+      "a major breakdown on the main processing equipment",
+      "the work on the centerpiece machine",
+      "a failure that halted throughput",
+      "the capital-sized repair",
+      "getting the high-capacity line running again",
+      "a worn-out component swap",
+      "the downtime on our primary wash line",
+      "fixing what slowed the whole floor",
+      "the heavy repair job",
+      "a mechanical failure on the big machine",
+      "the rebuild after years of use",
+      "the plant's main workhorse",
+      "work the manufacturer's tech performed",
+      "what stopped production for several days",
+      "restoring capacity"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "steamline",
+     "vendor": "Cobalt Pipe & Insulation",
+     "memos": [
+      "Steam header insulation replacement WO 8855",
+      "Steam header insulation scaffolding rental"
+     ],
+     "cross_memo": "Steam header insulation replacement energy audit fee",
+     "plain": [
+      "the steam header insulation replacement",
+      "the steam header insulation",
+      "the insulation replacement project"
+     ],
+     "oblique": [
+      "the project that cut heat loss",
+      "wrapping the hot pipes",
+      "something the energy audit flagged",
+      "the efficiency fix on the piping",
+      "reducing wasted thermal output",
+      "a safety fix for burn hazards",
+      "replacing worn coverings on the pipes",
+      "the work above the machines",
+      "a rebate-eligible improvement",
+      "what keeps the pressure up",
+      "the upgrade nobody sees",
+      "an overdue piping job",
+      "reducing what we burn to make steam",
+      "the overhead pipe work",
+      "the heat-retention project",
+      "a facility improvement"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Route Driver & Plant Labor Overtime",
+   "aliases": [
+    "overtime",
+    "ot pay",
+    "labor overtime",
+    "premium pay",
+    "overtime labor"
+   ],
+   "narrative": [
+    "Overtime",
+    "Premium pay",
+    "Labor overtime"
+   ],
+   "recurring": [
+    {
+     "vendor": "Payroll Services Inc",
+     "base": 24000,
+     "memo": "Overtime premium pay run weekly"
+    },
+    {
+     "vendor": "ShiftPlus Workforce",
+     "base": 11500,
+     "memo": "Temp agency weekend coverage"
+    }
+   ],
+   "events": [
+    {
+     "key": "flushift",
+     "vendor": "Payroll Services Inc",
+     "memos": [
+      "Influenza absence coverage premium pay",
+      "Influenza absence coverage shift differential"
+     ],
+     "cross_memo": "Influenza absence coverage onsite clinic visits",
+     "plain": [
+      "the influenza absence coverage",
+      "the influenza coverage premium",
+      "the influenza absence shift differential"
+     ],
+     "oblique": [
+      "a wave of sick calls",
+      "staff out with illness",
+      "the seasonal bug that hit the crew",
+      "filling in for people who stayed home",
+      "a health crisis on the floor",
+      "a dozen empty positions to cover",
+      "double shifts to make up the gap",
+      "the sickness outbreak",
+      "absences that stacked up",
+      "the thin staffing week",
+      "employees laid up",
+      "cover for those who were out",
+      "the contagion that went through the plant",
+      "extra hours worked by those who remained",
+      "a stretch where half the team was down",
+      "manpower shortages from people being unwell"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "hotelconv",
+     "vendor": "Quickstaff Labor Solutions",
+     "memos": [
+      "Convention weekend surge crew PO 61220",
+      "Convention weekend surge crew supervisor fee"
+     ],
+     "cross_memo": "Convention weekend surge crew meal stipends",
+     "plain": [
+      "the convention weekend surge crew",
+      "the convention surge crew",
+      "the convention weekend crew"
+     ],
+     "oblique": [
+      "a spike in hotel volume",
+      "the big event in town",
+      "every room being booked",
+      "a one-time influx of soiled goods",
+      "the trade show crowd",
+      "extra hands for a few days",
+      "heavy workload from a citywide gathering",
+      "visitors packing the properties",
+      "the busiest weekend of the quarter",
+      "the conference rush",
+      "a flood of pickups",
+      "bringing in outside workers short term",
+      "an unusual demand peak",
+      "the guests who overwhelmed our schedule",
+      "the temporary workforce",
+      "catching up on a mountain of laundry"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Packaging, Bags & Route Supplies",
+   "aliases": [
+    "packaging",
+    "bags and supplies",
+    "route supplies",
+    "poly bags",
+    "packaging supplies"
+   ],
+   "narrative": [
+    "Packaging",
+    "Route supplies",
+    "Poly bags"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearpack Poly Products",
+     "base": 6800,
+     "memo": "Poly bag rolls and ties"
+    },
+    {
+     "vendor": "Hanger Wholesale Co",
+     "base": 3400,
+     "memo": "Wire hangers and garment covers"
+    },
+    {
+     "vendor": "Tagline Label Systems",
+     "base": 1800,
+     "memo": "RFID and barcode tags monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "cartprogram",
+     "vendor": "Clearpack Poly Products",
+     "memos": [
+      "Reusable cart tote pilot program PO 70331",
+      "Reusable cart tote pilot program printing"
+     ],
+     "cross_memo": "Reusable cart tote pilot program driver training",
+     "plain": [
+      "the reusable cart tote pilot program",
+      "the reusable tote pilot",
+      "the cart tote pilot program"
+     ],
+     "oblique": [
+      "the green initiative for customers",
+      "swapping disposables for something durable",
+      "a sustainability trial",
+      "what a corporate client requested",
+      "the experiment to cut waste",
+      "moving away from single-use",
+      "an environmental commitment",
+      "a test on selected routes",
+      "the eco-friendly rollout",
+      "the packaging overhaul for one customer set",
+      "a trial of a new delivery method",
+      "replacing throwaway materials",
+      "a pilot meant to reduce landfill",
+      "the reuse trial",
+      "something marketing pushed",
+      "the zero-waste experiment"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "labelrecall",
+     "vendor": "Printwell Graphics",
+     "memos": [
+      "Relabeling rework allergen notice stickers PO 70388",
+      "Relabeling rework allergen notice stickers rush charge"
+     ],
+     "cross_memo": "Relabeling rework allergen notice stickers pest audit follow-up",
+     "plain": [
+      "the relabeling rework allergen notice stickers",
+      "the allergen notice stickers",
+      "the allergen sticker rework"
+     ],
+     "oblique": [
+      "a compliance printing job",
+      "new wording required by inspectors",
+      "redoing marks on finished bundles",
+      "the sticker project",
+      "what the regulator asked us to add",
+      "fixing documentation on products already packed",
+      "a notification we had to affix",
+      "the warning labels",
+      "a rush print order",
+      "changes to what the bundles say",
+      "the redo on packaging information",
+      "a requirement for kitchen clients",
+      "adding statements to outgoing goods",
+      "the paperwork that went on the bags",
+      "the retroactive marking",
+      "a printing scramble"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Facility Rent & Occupancy",
+   "aliases": [
+    "rent",
+    "occupancy",
+    "facility rent",
+    "lease costs",
+    "occupancy costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Lease costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Ridge Properties",
+     "base": 26000,
+     "memo": "Main plant lease monthly rent"
+    },
+    {
+     "vendor": "Eastside Industrial Realty",
+     "base": 9500,
+     "memo": "Satellite depot lease rent"
+    }
+   ],
+   "events": [
+    {
+     "key": "campexpand",
+     "vendor": "Granite Ridge Properties",
+     "memos": [
+      "Annex bay buildout tenant improvement allowance true-up",
+      "Annex bay buildout lease amendment fee"
+     ],
+     "cross_memo": "Annex bay buildout electrical permit costs",
+     "plain": [
+      "the annex bay buildout",
+      "the annex bay buildout true-up",
+      "the annex bay lease amendment"
+     ],
+     "oblique": [
+      "the extra space we took on",
+      "expanding our footprint",
+      "adding square footage next door",
+      "the landlord's charge for the growth",
+      "more room for production",
+      "what we owe for the larger layout",
+      "the added warehouse area",
+      "a lease change to fit more machines",
+      "the expansion",
+      "a bigger building arrangement",
+      "taking over the neighboring unit",
+      "the reconfigured floor plan",
+      "what came with growing the site",
+      "the build-out we agreed to",
+      "extra floor area",
+      "landlord paperwork for the increase"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "taxreassess",
+     "vendor": "County Assessor Escrow Services",
+     "memos": [
+      "Property tax reassessment catch-up escrow",
+      "Property tax reassessment catch-up penalty interest"
+     ],
+     "cross_memo": "Property tax reassessment catch-up appeal counsel fee",
+     "plain": [
+      "the property tax reassessment catch-up",
+      "the reassessment catch-up escrow",
+      "the property tax reassessment"
+     ],
+     "oblique": [
+      "the county's revaluation of our building",
+      "a retroactive charge from local government",
+      "what the municipality decided we owed",
+      "the higher valuation",
+      "back charges levied after a review",
+      "the government's adjustment",
+      "a bill reaching back over prior periods",
+      "the authority's new numbers",
+      "an unwelcome notice from the county",
+      "levies that hit all at once",
+      "what the assessor changed",
+      "a revised obligation",
+      "paying up on the old balance",
+      "the correction to our obligations",
+      "a pass-through of the landlord's higher bill",
+      "the official re-appraisal"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

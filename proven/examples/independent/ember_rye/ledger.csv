@@ -1,0 +1,475 @@
+id,date,account,vendor,memo,amount
+ER26-00001,2026-05-01,Payroll Taxes & Benefits,Northgate Health Plan,Group health - mgmt + FT,9850.00
+ER26-00002,2026-05-01,Occupancy,Ridgeway Property Mgmt,Rent - Fremont,14500.00
+ER26-00003,2026-05-01,Occupancy,Ballard Ave Partners LLC,Rent - Ballard,12800.00
+ER26-00004,2026-05-01,Occupancy,Ridgeway Property Mgmt,Rent - Capitol Hill,13950.00
+ER26-00005,2026-05-01,Marketing,Lantern Social,Social retainer - May,3000.00
+ER26-00006,2026-05-01,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00007,2026-05-02,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2224.91
+ER26-00008,2026-05-02,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1877.58
+ER26-00009,2026-05-02,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1710.44
+ER26-00010,2026-05-03,Food Cost,Puget Produce Co,Produce - Fremont,600.58
+ER26-00011,2026-05-03,Food Cost,Puget Produce Co,Produce - Ballard,558.33
+ER26-00012,2026-05-03,Food Cost,Puget Produce Co,Produce - Capitol Hill,482.31
+ER26-00013,2026-05-03,Repairs & Maintenance,Rapid Kitchen Repair,Ice machine service,544.39
+ER26-00014,2026-05-03,Card Processing Fees,Tillpoint Merchant Services,Merchant statement - Fremont,5895.21
+ER26-00015,2026-05-03,Card Processing Fees,Tillpoint Merchant Services,Merchant statement - Ballard,5144.07
+ER26-00016,2026-05-03,Card Processing Fees,Tillpoint Merchant Services,Merchant statement - Capitol Hill,4616.25
+ER26-00017,2026-05-04,Food Cost,Salish Sea Seafood,Seafood order Fremont,981.98
+ER26-00018,2026-05-04,Food Cost,Salish Sea Seafood,Seafood order Ballard,862.00
+ER26-00019,2026-05-04,Food Cost,Salish Sea Seafood,Seafood order Capitol Hill,799.11
+ER26-00020,2026-05-04,Smallwares & Supplies,Restaurant Depot Supply,Gloves + film,318.04
+ER26-00021,2026-05-05,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2231.89
+ER26-00022,2026-05-05,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1828.53
+ER26-00023,2026-05-05,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1568.20
+ER26-00024,2026-05-05,Smallwares & Supplies,Restaurant Depot Supply,Smallwares,164.11
+ER26-00025,2026-05-06,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Fremont,1481.08
+ER26-00026,2026-05-06,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Ballard,1198.06
+ER26-00027,2026-05-06,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Capitol Hill,1478.96
+ER26-00028,2026-05-07,Food Cost,Puget Produce Co,Produce - Fremont,632.91
+ER26-00029,2026-05-07,Food Cost,Puget Produce Co,Produce - Ballard,568.07
+ER26-00030,2026-05-07,Food Cost,Puget Produce Co,Produce - Capitol Hill,486.19
+ER26-00031,2026-05-07,Beverage Cost,Rainier Beverage Distributing,Beer - Fremont,660.47
+ER26-00032,2026-05-07,Beverage Cost,Rainier Beverage Distributing,Beer - Ballard,601.73
+ER26-00033,2026-05-07,Beverage Cost,Rainier Beverage Distributing,Beer - Capitol Hill,755.86
+ER26-00034,2026-05-07,Smallwares & Supplies,Restaurant Depot Supply,Gloves + film,355.42
+ER26-00035,2026-05-07,Smallwares & Supplies,ChefLine Supply,Hotel pans,386.10
+ER26-00036,2026-05-08,Hourly Labor,Paystream Payroll,Payroll 5/8 - Fremont hourly,21638.34
+ER26-00037,2026-05-08,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 5/8 - Fremont,2055.64
+ER26-00038,2026-05-08,Hourly Labor,Paystream Payroll,Payroll 5/8 - Ballard hourly,18227.52
+ER26-00039,2026-05-08,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 5/8 - Ballard,1731.61
+ER26-00040,2026-05-08,Hourly Labor,Paystream Payroll,Payroll 5/8 - Capitol Hill hourly,16957.09
+ER26-00041,2026-05-08,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 5/8 - Capitol Hill,1610.92
+ER26-00042,2026-05-08,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00043,2026-05-09,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2215.38
+ER26-00044,2026-05-09,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1845.93
+ER26-00045,2026-05-09,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1549.55
+ER26-00046,2026-05-10,Food Cost,Puget Produce Co,Produce - Fremont,604.29
+ER26-00047,2026-05-10,Food Cost,Puget Produce Co,Produce - Ballard,529.97
+ER26-00048,2026-05-10,Food Cost,Puget Produce Co,Produce - Capitol Hill,478.08
+ER26-00049,2026-05-11,Food Cost,Salish Sea Seafood,Seafood order Fremont,1016.72
+ER26-00050,2026-05-11,Food Cost,Salish Sea Seafood,Seafood order Ballard,799.92
+ER26-00051,2026-05-11,Food Cost,Salish Sea Seafood,Seafood order Capitol Hill,789.73
+ER26-00052,2026-05-12,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,1977.56
+ER26-00053,2026-05-12,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1836.59
+ER26-00054,2026-05-12,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1545.95
+ER26-00055,2026-05-12,Utilities,Cascade Public Power,Electric - Fremont,1872.01
+ER26-00056,2026-05-12,Utilities,Cascade Public Power,Electric - Ballard,1822.07
+ER26-00057,2026-05-12,Utilities,Cascade Public Power,Electric - Capitol Hill,1739.17
+ER26-00058,2026-05-12,Smallwares & Supplies,Restaurant Depot Supply,Gloves + film,559.13
+ER26-00059,2026-05-13,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Fremont,1323.17
+ER26-00060,2026-05-13,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Ballard,1244.23
+ER26-00061,2026-05-13,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Capitol Hill,1616.10
+ER26-00062,2026-05-14,Food Cost,Puget Produce Co,Produce - Fremont,634.24
+ER26-00063,2026-05-14,Food Cost,Puget Produce Co,Produce - Ballard,504.80
+ER26-00064,2026-05-14,Food Cost,Puget Produce Co,Produce - Capitol Hill,479.71
+ER26-00065,2026-05-14,Beverage Cost,Rainier Beverage Distributing,Beer - Fremont,673.96
+ER26-00066,2026-05-14,Beverage Cost,Rainier Beverage Distributing,Beer - Ballard,597.60
+ER26-00067,2026-05-14,Beverage Cost,Rainier Beverage Distributing,Beer - Capitol Hill,687.77
+ER26-00068,2026-05-14,Utilities,Sound Gas & Energy,Gas - Fremont,1641.73
+ER26-00069,2026-05-14,Utilities,Sound Gas & Energy,Gas - Ballard,1563.48
+ER26-00070,2026-05-14,Utilities,Sound Gas & Energy,Gas - Capitol Hill,1463.84
+ER26-00071,2026-05-15,Management Salaries,Paystream Payroll,Salaried mgmt 5/15 - Fremont,6250.00
+ER26-00072,2026-05-15,Management Salaries,Paystream Payroll,Salaried mgmt 5/15 - Ballard,6250.00
+ER26-00073,2026-05-15,Management Salaries,Paystream Payroll,Salaried mgmt 5/15 - Capitol Hill,6250.00
+ER26-00074,2026-05-15,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00075,2026-05-16,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2127.06
+ER26-00076,2026-05-16,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1925.02
+ER26-00077,2026-05-16,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1532.27
+ER26-00078,2026-05-16,Third-Party Delivery,DashCart,Commissions 5/01-5/15 - Fremont (15%),1177.80
+ER26-00079,2026-05-16,Third-Party Delivery,DashCart,Commissions 5/01-5/15 - Ballard (15%),1003.23
+ER26-00080,2026-05-16,Third-Party Delivery,DashCart,Commissions 5/01-5/15 - Capitol Hill (15%),1609.83
+ER26-00081,2026-05-17,Food Cost,Puget Produce Co,Produce - Fremont,579.17
+ER26-00082,2026-05-17,Food Cost,Puget Produce Co,Produce - Ballard,547.55
+ER26-00083,2026-05-17,Food Cost,Puget Produce Co,Produce - Capitol Hill,526.91
+ER26-00084,2026-05-18,Food Cost,Salish Sea Seafood,Seafood order Fremont,957.89
+ER26-00085,2026-05-18,Food Cost,Salish Sea Seafood,Seafood order Ballard,799.45
+ER26-00086,2026-05-18,Food Cost,Salish Sea Seafood,Seafood order Capitol Hill,804.58
+ER26-00087,2026-05-18,Marketing,Hearthside Print,Menu reprints,380.00
+ER26-00088,2026-05-19,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2077.58
+ER26-00089,2026-05-19,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1771.31
+ER26-00090,2026-05-19,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1586.53
+ER26-00091,2026-05-20,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Fremont,1362.31
+ER26-00092,2026-05-20,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Ballard,1228.71
+ER26-00093,2026-05-20,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Capitol Hill,1451.13
+ER26-00094,2026-05-20,Utilities,City Water & Sewer,Water/sewer - Fremont,619.72
+ER26-00095,2026-05-20,Utilities,City Water & Sewer,Water/sewer - Ballard,583.35
+ER26-00096,2026-05-20,Utilities,City Water & Sewer,Water/sewer - Capitol Hill,555.46
+ER26-00097,2026-05-20,Smallwares & Supplies,Restaurant Depot Supply,Deli containers,488.66
+ER26-00098,2026-05-20,Third-Party Delivery,Plated Delivery,Marketplace fees - Fremont,420.99
+ER26-00099,2026-05-20,Third-Party Delivery,Plated Delivery,Marketplace fees - Ballard,409.95
+ER26-00100,2026-05-20,Third-Party Delivery,Plated Delivery,Marketplace fees - Capitol Hill,438.70
+ER26-00101,2026-05-21,Food Cost,Puget Produce Co,Produce - Fremont,586.98
+ER26-00102,2026-05-21,Food Cost,Puget Produce Co,Produce - Ballard,574.39
+ER26-00103,2026-05-21,Food Cost,Puget Produce Co,Produce - Capitol Hill,504.09
+ER26-00104,2026-05-21,Beverage Cost,Rainier Beverage Distributing,Beer - Fremont,639.26
+ER26-00105,2026-05-21,Beverage Cost,Rainier Beverage Distributing,Beer - Ballard,555.40
+ER26-00106,2026-05-21,Beverage Cost,Rainier Beverage Distributing,Beer - Capitol Hill,724.52
+ER26-00107,2026-05-21,Repairs & Maintenance,Rapid Kitchen Repair,Range igniter,270.37
+ER26-00108,2026-05-22,Hourly Labor,Paystream Payroll,Payroll 5/22 - Fremont hourly,21515.65
+ER26-00109,2026-05-22,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 5/22 - Fremont,2043.99
+ER26-00110,2026-05-22,Hourly Labor,Paystream Payroll,Payroll 5/22 - Ballard hourly,18244.80
+ER26-00111,2026-05-22,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 5/22 - Ballard,1733.26
+ER26-00112,2026-05-22,Hourly Labor,Paystream Payroll,Payroll 5/22 - Capitol Hill hourly,16775.69
+ER26-00113,2026-05-22,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 5/22 - Capitol Hill,1593.69
+ER26-00114,2026-05-22,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00115,2026-05-23,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2108.85
+ER26-00116,2026-05-23,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1871.68
+ER26-00117,2026-05-23,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1654.70
+ER26-00118,2026-05-24,Food Cost,Puget Produce Co,Produce - Fremont,666.88
+ER26-00119,2026-05-24,Food Cost,Puget Produce Co,Produce - Ballard,560.37
+ER26-00120,2026-05-24,Food Cost,Puget Produce Co,Produce - Capitol Hill,475.08
+ER26-00121,2026-05-24,Repairs & Maintenance,Pacific Plumbing & Drain,Grease trap pump,290.57
+ER26-00122,2026-05-25,Food Cost,Salish Sea Seafood,Seafood order Fremont,910.62
+ER26-00123,2026-05-25,Food Cost,Salish Sea Seafood,Seafood order Ballard,818.99
+ER26-00124,2026-05-25,Food Cost,Salish Sea Seafood,Seafood order Capitol Hill,732.36
+ER26-00125,2026-05-25,Repairs & Maintenance,Rapid Kitchen Repair,Ice machine service,597.72
+ER26-00126,2026-05-25,Repairs & Maintenance,Rapid Kitchen Repair,Dish machine service,589.32
+ER26-00127,2026-05-25,Smallwares & Supplies,ChefLine Supply,Hotel pans,466.90
+ER26-00128,2026-05-26,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,1991.31
+ER26-00129,2026-05-26,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1772.80
+ER26-00130,2026-05-26,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1711.53
+ER26-00131,2026-05-26,Smallwares & Supplies,Restaurant Depot Supply,Smallwares,366.81
+ER26-00132,2026-05-27,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Fremont,1340.63
+ER26-00133,2026-05-27,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Ballard,1322.77
+ER26-00134,2026-05-27,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Capitol Hill,1473.32
+ER26-00135,2026-05-27,Smallwares & Supplies,Restaurant Depot Supply,Smallwares,231.09
+ER26-00136,2026-05-27,Smallwares & Supplies,Restaurant Depot Supply,Gloves + film,470.62
+ER26-00137,2026-05-28,Food Cost,Puget Produce Co,Produce - Fremont,629.92
+ER26-00138,2026-05-28,Food Cost,Puget Produce Co,Produce - Ballard,544.62
+ER26-00139,2026-05-28,Food Cost,Puget Produce Co,Produce - Capitol Hill,459.98
+ER26-00140,2026-05-28,Beverage Cost,Rainier Beverage Distributing,Beer - Fremont,676.32
+ER26-00141,2026-05-28,Beverage Cost,Rainier Beverage Distributing,Beer - Ballard,595.86
+ER26-00142,2026-05-28,Beverage Cost,Rainier Beverage Distributing,Beer - Capitol Hill,734.90
+ER26-00143,2026-05-28,Repairs & Maintenance,Rapid Kitchen Repair,Range igniter,782.83
+ER26-00144,2026-05-28,Linen & Laundry,Unitex Linen Service,Inv - May svc - Fremont,2140.00
+ER26-00145,2026-05-28,Linen & Laundry,Unitex Linen Service,Inv - May svc - Ballard,2060.00
+ER26-00146,2026-05-28,Linen & Laundry,Unitex Linen Service,Inv - May svc - Capitol Hill,1930.00
+ER26-00147,2026-05-29,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00148,2026-05-31,Management Salaries,Paystream Payroll,Salaried mgmt 5/31 - Fremont,6250.00
+ER26-00149,2026-05-31,Management Salaries,Paystream Payroll,Salaried mgmt 5/31 - Ballard,6250.00
+ER26-00150,2026-05-31,Management Salaries,Paystream Payroll,Salaried mgmt 5/31 - Capitol Hill,6250.00
+ER26-00151,2026-05-31,Third-Party Delivery,DashCart,Commissions 5/16-5/31 - Fremont (15%),1140.70
+ER26-00152,2026-05-31,Third-Party Delivery,DashCart,Commissions 5/16-5/31 - Ballard (15%),999.54
+ER26-00153,2026-05-31,Third-Party Delivery,DashCart,Commissions 5/16-5/31 - Capitol Hill (15%),1630.16
+ER26-00154,2026-06-01,Payroll Taxes & Benefits,Northgate Health Plan,Group health - mgmt + FT,9850.00
+ER26-00155,2026-06-01,Repairs & Maintenance,Handy Pro Services,Patio door hinge,788.58
+ER26-00156,2026-06-01,Occupancy,Ridgeway Property Mgmt,Rent - Fremont,14500.00
+ER26-00157,2026-06-01,Occupancy,Ballard Ave Partners LLC,Rent - Ballard,12800.00
+ER26-00158,2026-06-01,Occupancy,Ridgeway Property Mgmt,Rent - Capitol Hill,13950.00
+ER26-00159,2026-06-01,Marketing,Lantern Social,Social retainer - Jun,3000.00
+ER26-00160,2026-06-02,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2176.77
+ER26-00161,2026-06-02,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1780.31
+ER26-00162,2026-06-02,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1731.49
+ER26-00163,2026-06-02,Smallwares & Supplies,ChefLine Supply,Knives sharpening,404.11
+ER26-00164,2026-06-03,Food Cost,Puget Produce Co,Produce - Fremont,596.36
+ER26-00165,2026-06-03,Food Cost,Puget Produce Co,Produce - Ballard,570.20
+ER26-00166,2026-06-03,Food Cost,Puget Produce Co,Produce - Capitol Hill,542.11
+ER26-00167,2026-06-03,Beverage Cost,Cascade Wine & Spirits,Rose allocation - 25 cs Cotes de Provence (summer promo),4375.00
+ER26-00168,2026-06-03,Smallwares & Supplies,Restaurant Depot Supply,Gloves + film,287.55
+ER26-00169,2026-06-03,Card Processing Fees,Tillpoint Merchant Services,Merchant statement - Fremont,6114.69
+ER26-00170,2026-06-03,Card Processing Fees,Tillpoint Merchant Services,Merchant statement - Ballard,5358.50
+ER26-00171,2026-06-03,Card Processing Fees,Tillpoint Merchant Services,Merchant statement - Capitol Hill,4805.67
+ER26-00172,2026-06-04,Food Cost,Salish Sea Seafood,Seafood order Fremont,1049.62
+ER26-00173,2026-06-04,Food Cost,Salish Sea Seafood,Seafood order Ballard,846.25
+ER26-00174,2026-06-04,Food Cost,Salish Sea Seafood,Seafood order Capitol Hill,829.58
+ER26-00175,2026-06-05,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2289.80
+ER26-00176,2026-06-05,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1749.73
+ER26-00177,2026-06-05,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1666.50
+ER26-00178,2026-06-05,Hourly Labor,Paystream Payroll,Payroll 6/5 - Fremont hourly,21546.56
+ER26-00179,2026-06-05,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 6/5 - Fremont,2046.92
+ER26-00180,2026-06-05,Hourly Labor,Paystream Payroll,Payroll 6/5 - Ballard hourly,18352.46
+ER26-00181,2026-06-05,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 6/5 - Ballard,1743.48
+ER26-00182,2026-06-05,Hourly Labor,Paystream Payroll,Payroll 6/5 - Capitol Hill hourly,16961.71
+ER26-00183,2026-06-05,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 6/5 - Capitol Hill,1611.36
+ER26-00184,2026-06-05,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00185,2026-06-06,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Fremont,1394.77
+ER26-00186,2026-06-06,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Ballard,1204.67
+ER26-00187,2026-06-06,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Capitol Hill,1606.35
+ER26-00188,2026-06-06,Smallwares & Supplies,Restaurant Depot Supply,Deli containers,275.06
+ER26-00189,2026-06-07,Food Cost,Puget Produce Co,Produce - Fremont,700.01
+ER26-00190,2026-06-07,Food Cost,Puget Produce Co,Produce - Ballard,529.46
+ER26-00191,2026-06-07,Food Cost,Puget Produce Co,Produce - Capitol Hill,520.05
+ER26-00192,2026-06-07,Beverage Cost,Rainier Beverage Distributing,Beer - Fremont,666.31
+ER26-00193,2026-06-07,Beverage Cost,Rainier Beverage Distributing,Beer - Ballard,556.39
+ER26-00194,2026-06-07,Beverage Cost,Rainier Beverage Distributing,Beer - Capitol Hill,709.51
+ER26-00195,2026-06-09,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2191.07
+ER26-00196,2026-06-09,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1851.31
+ER26-00197,2026-06-09,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1732.73
+ER26-00198,2026-06-09,Repairs & Maintenance,Northwest Hood & Duct,Quarterly hood cleaning - Fremont,1350.00
+ER26-00199,2026-06-09,Repairs & Maintenance,Northwest Hood & Duct,Quarterly hood cleaning - Ballard,1350.00
+ER26-00200,2026-06-09,Repairs & Maintenance,Northwest Hood & Duct,Quarterly hood cleaning - Capitol Hill,1350.00
+ER26-00201,2026-06-10,Food Cost,Puget Produce Co,Produce - Fremont,683.88
+ER26-00202,2026-06-10,Food Cost,Puget Produce Co,Produce - Ballard,571.86
+ER26-00203,2026-06-10,Food Cost,Puget Produce Co,Produce - Capitol Hill,519.31
+ER26-00204,2026-06-10,Smallwares & Supplies,ChefLine Supply,Hotel pans,514.94
+ER26-00205,2026-06-11,Food Cost,Salish Sea Seafood,Seafood order Fremont,984.55
+ER26-00206,2026-06-11,Food Cost,Salish Sea Seafood,Seafood order Ballard,922.58
+ER26-00207,2026-06-11,Food Cost,Salish Sea Seafood,Seafood order Capitol Hill,755.63
+ER26-00208,2026-06-12,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2297.90
+ER26-00209,2026-06-12,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1781.18
+ER26-00210,2026-06-12,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1765.04
+ER26-00211,2026-06-12,Utilities,Cascade Public Power,Electric - Fremont,2012.74
+ER26-00212,2026-06-12,Utilities,Cascade Public Power,Electric - Ballard,1912.12
+ER26-00213,2026-06-12,Utilities,Cascade Public Power,Electric - Capitol Hill,1809.13
+ER26-00214,2026-06-12,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00215,2026-06-13,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Fremont,1411.72
+ER26-00216,2026-06-13,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Ballard,1313.97
+ER26-00217,2026-06-13,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Capitol Hill,1514.48
+ER26-00218,2026-06-13,Smallwares & Supplies,ChefLine Supply,Knives sharpening,478.31
+ER26-00219,2026-06-14,Food Cost,Puget Produce Co,Produce - Fremont,721.66
+ER26-00220,2026-06-14,Food Cost,Puget Produce Co,Produce - Ballard,602.38
+ER26-00221,2026-06-14,Food Cost,Puget Produce Co,Produce - Capitol Hill,547.76
+ER26-00222,2026-06-14,Beverage Cost,Rainier Beverage Distributing,Beer - Fremont,671.12
+ER26-00223,2026-06-14,Beverage Cost,Rainier Beverage Distributing,Beer - Ballard,564.37
+ER26-00224,2026-06-14,Beverage Cost,Rainier Beverage Distributing,Beer - Capitol Hill,727.97
+ER26-00225,2026-06-14,Utilities,Sound Gas & Energy,Gas - Fremont,1515.50
+ER26-00226,2026-06-14,Utilities,Sound Gas & Energy,Gas - Ballard,1397.52
+ER26-00227,2026-06-14,Utilities,Sound Gas & Energy,Gas - Capitol Hill,1357.88
+ER26-00228,2026-06-15,Management Salaries,Paystream Payroll,Salaried mgmt 6/15 - Fremont,6250.00
+ER26-00229,2026-06-15,Management Salaries,Paystream Payroll,Salaried mgmt 6/15 - Ballard,6250.00
+ER26-00230,2026-06-15,Management Salaries,Paystream Payroll,Salaried mgmt 6/15 - Capitol Hill,6250.00
+ER26-00231,2026-06-15,Smallwares & Supplies,Restaurant Depot Supply,Gloves + film,502.97
+ER26-00232,2026-06-16,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2062.24
+ER26-00233,2026-06-16,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1973.09
+ER26-00234,2026-06-16,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1720.09
+ER26-00235,2026-06-16,Third-Party Delivery,DashCart,Commissions 6/01-6/15 - Fremont (15%),1129.36
+ER26-00236,2026-06-16,Third-Party Delivery,DashCart,Commissions 6/01-6/15 - Ballard (15%),960.72
+ER26-00237,2026-06-16,Third-Party Delivery,DashCart,Commissions 6/01-6/15 - Capitol Hill (15%),1646.38
+ER26-00238,2026-06-17,Food Cost,Puget Produce Co,Produce - Fremont,699.41
+ER26-00239,2026-06-17,Food Cost,Puget Produce Co,Produce - Ballard,538.91
+ER26-00240,2026-06-17,Food Cost,Puget Produce Co,Produce - Capitol Hill,473.91
+ER26-00241,2026-06-18,Food Cost,Salish Sea Seafood,Seafood order Fremont,1086.02
+ER26-00242,2026-06-18,Food Cost,Salish Sea Seafood,Seafood order Ballard,911.66
+ER26-00243,2026-06-18,Food Cost,Salish Sea Seafood,Seafood order Capitol Hill,844.21
+ER26-00244,2026-06-18,Marketing,Hearthside Print,Menu reprints,410.00
+ER26-00245,2026-06-19,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2306.84
+ER26-00246,2026-06-19,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1977.49
+ER26-00247,2026-06-19,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1625.36
+ER26-00248,2026-06-19,Hourly Labor,Paystream Payroll,Payroll 6/19 - Fremont hourly,21569.21
+ER26-00249,2026-06-19,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 6/19 - Fremont,2049.07
+ER26-00250,2026-06-19,Hourly Labor,Paystream Payroll,Payroll 6/19 - Ballard hourly,18174.61
+ER26-00251,2026-06-19,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 6/19 - Ballard,1726.59
+ER26-00252,2026-06-19,Hourly Labor,Paystream Payroll,Payroll 6/19 - Capitol Hill hourly,16653.06
+ER26-00253,2026-06-19,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 6/19 - Capitol Hill,1582.04
+ER26-00254,2026-06-19,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00255,2026-06-20,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Fremont,1454.03
+ER26-00256,2026-06-20,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Ballard,1248.90
+ER26-00257,2026-06-20,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Capitol Hill,1585.24
+ER26-00258,2026-06-20,Utilities,City Water & Sewer,Water/sewer - Fremont,618.05
+ER26-00259,2026-06-20,Utilities,City Water & Sewer,Water/sewer - Ballard,580.65
+ER26-00260,2026-06-20,Utilities,City Water & Sewer,Water/sewer - Capitol Hill,567.83
+ER26-00261,2026-06-20,Third-Party Delivery,Plated Delivery,Marketplace fees - Fremont,412.50
+ER26-00262,2026-06-20,Third-Party Delivery,Plated Delivery,Marketplace fees - Ballard,431.40
+ER26-00263,2026-06-20,Third-Party Delivery,Plated Delivery,Marketplace fees - Capitol Hill,416.15
+ER26-00264,2026-06-21,Food Cost,Puget Produce Co,Produce - Fremont,718.37
+ER26-00265,2026-06-21,Food Cost,Puget Produce Co,Produce - Ballard,558.04
+ER26-00266,2026-06-21,Food Cost,Puget Produce Co,Produce - Capitol Hill,527.67
+ER26-00267,2026-06-21,Beverage Cost,Rainier Beverage Distributing,Beer - Fremont,658.03
+ER26-00268,2026-06-21,Beverage Cost,Rainier Beverage Distributing,Beer - Ballard,572.14
+ER26-00269,2026-06-21,Beverage Cost,Rainier Beverage Distributing,Beer - Capitol Hill,751.50
+ER26-00270,2026-06-22,Repairs & Maintenance,Rapid Kitchen Repair,Fryer thermostat,716.34
+ER26-00271,2026-06-23,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2028.52
+ER26-00272,2026-06-23,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1786.21
+ER26-00273,2026-06-23,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1638.78
+ER26-00274,2026-06-23,Repairs & Maintenance,Pacific Plumbing & Drain,Drain clear - bar sink,511.34
+ER26-00275,2026-06-24,Food Cost,Puget Produce Co,Produce - Fremont,664.29
+ER26-00276,2026-06-24,Food Cost,Puget Produce Co,Produce - Ballard,612.36
+ER26-00277,2026-06-24,Food Cost,Puget Produce Co,Produce - Capitol Hill,496.95
+ER26-00278,2026-06-25,Food Cost,Salish Sea Seafood,Seafood order Fremont,989.53
+ER26-00279,2026-06-25,Food Cost,Salish Sea Seafood,Seafood order Ballard,922.97
+ER26-00280,2026-06-25,Food Cost,Salish Sea Seafood,Seafood order Capitol Hill,734.24
+ER26-00281,2026-06-25,Smallwares & Supplies,Restaurant Depot Supply,Smallwares,480.19
+ER26-00282,2026-06-25,Smallwares & Supplies,Restaurant Depot Supply,Smallwares,326.76
+ER26-00283,2026-06-26,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2137.63
+ER26-00284,2026-06-26,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1756.92
+ER26-00285,2026-06-26,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1665.79
+ER26-00286,2026-06-26,Repairs & Maintenance,Handy Pro Services,Booth reupholster,440.40
+ER26-00287,2026-06-26,Repairs & Maintenance,Handy Pro Services,Patio door hinge,228.76
+ER26-00288,2026-06-26,Smallwares & Supplies,ChefLine Supply,Hotel pans,303.99
+ER26-00289,2026-06-26,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00290,2026-06-27,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Fremont,1415.35
+ER26-00291,2026-06-27,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Ballard,1278.09
+ER26-00292,2026-06-27,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Capitol Hill,1505.23
+ER26-00293,2026-06-28,Food Cost,Puget Produce Co,Produce - Fremont,723.57
+ER26-00294,2026-06-28,Food Cost,Puget Produce Co,Produce - Ballard,560.64
+ER26-00295,2026-06-28,Food Cost,Puget Produce Co,Produce - Capitol Hill,520.28
+ER26-00296,2026-06-28,Beverage Cost,Rainier Beverage Distributing,Beer - Fremont,636.50
+ER26-00297,2026-06-28,Beverage Cost,Rainier Beverage Distributing,Beer - Ballard,587.34
+ER26-00298,2026-06-28,Beverage Cost,Rainier Beverage Distributing,Beer - Capitol Hill,748.16
+ER26-00299,2026-06-28,Linen & Laundry,Unitex Linen Service,Inv - Jun svc - Fremont,2140.00
+ER26-00300,2026-06-28,Linen & Laundry,Unitex Linen Service,Inv - Jun svc - Capitol Hill,1930.00
+ER26-00301,2026-06-30,Management Salaries,Paystream Payroll,Salaried mgmt 6/30 - Fremont,6250.00
+ER26-00302,2026-06-30,Management Salaries,Paystream Payroll,Salaried mgmt 6/30 - Ballard,6250.00
+ER26-00303,2026-06-30,Management Salaries,Paystream Payroll,Salaried mgmt 6/30 - Capitol Hill,6250.00
+ER26-00304,2026-06-30,Third-Party Delivery,DashCart,Commissions 6/16-6/30 - Fremont (15%),1130.26
+ER26-00305,2026-06-30,Third-Party Delivery,DashCart,Commissions 6/16-6/30 - Ballard (15%),982.22
+ER26-00306,2026-06-30,Third-Party Delivery,DashCart,Commissions 6/16-6/30 - Capitol Hill (15%),1599.21
+ER26-00307,2026-07-01,Beverage Cost,Rainier Beverage Distributing,Kegs + CO2 - 7/4 Ballard block party,3980.00
+ER26-00308,2026-07-01,Payroll Taxes & Benefits,Northgate Health Plan,Group health - mgmt + FT,9850.00
+ER26-00309,2026-07-01,Occupancy,Ridgeway Property Mgmt,Rent - Fremont,14500.00
+ER26-00310,2026-07-01,Occupancy,Ballard Ave Partners LLC,Rent - Ballard,12800.00
+ER26-00311,2026-07-01,Occupancy,Ridgeway Property Mgmt,Rent - Capitol Hill,13950.00
+ER26-00312,2026-07-01,Smallwares & Supplies,Restaurant Depot Supply,Smallwares,544.95
+ER26-00313,2026-07-01,Marketing,Lantern Social,Social retainer - Jul,3000.00
+ER26-00314,2026-07-01,Entertainment & Events,City of Seattle - SDOT,Street use permit SU-26-0718 (7/4 event),1050.00
+ER26-00315,2026-07-02,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2361.83
+ER26-00316,2026-07-02,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,2066.97
+ER26-00317,2026-07-02,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1805.80
+ER26-00318,2026-07-02,Repairs & Maintenance,Handy Pro Services,Booth reupholster,389.49
+ER26-00319,2026-07-02,Linen & Laundry,Unitex Linen Service,Inv 4091223 - Jun svc - Ballard,2060.00
+ER26-00320,2026-07-03,Food Cost,Puget Produce Co,Produce - Fremont,696.07
+ER26-00321,2026-07-03,Food Cost,Puget Produce Co,Produce - Ballard,658.31
+ER26-00322,2026-07-03,Food Cost,Puget Produce Co,Produce - Capitol Hill,530.32
+ER26-00323,2026-07-03,Hourly Labor,Paystream Payroll,Payroll 7/3 - Fremont hourly,22512.14
+ER26-00324,2026-07-03,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 7/3 - Fremont,2138.65
+ER26-00325,2026-07-03,Hourly Labor,Paystream Payroll,Payroll 7/3 - Ballard hourly,18886.90
+ER26-00326,2026-07-03,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 7/3 - Ballard,1794.26
+ER26-00327,2026-07-03,Hourly Labor,Paystream Payroll,Payroll 7/3 - Capitol Hill hourly,17430.92
+ER26-00328,2026-07-03,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 7/3 - Capitol Hill,1655.94
+ER26-00329,2026-07-03,Card Processing Fees,Tillpoint Merchant Services,Merchant statement - Fremont,6522.67
+ER26-00330,2026-07-03,Card Processing Fees,Tillpoint Merchant Services,Merchant statement - Ballard,5602.12
+ER26-00331,2026-07-03,Card Processing Fees,Tillpoint Merchant Services,Merchant statement - Capitol Hill,5287.34
+ER26-00332,2026-07-03,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00333,2026-07-04,Food Cost,Salish Sea Seafood,Seafood order Fremont,1079.16
+ER26-00334,2026-07-04,Food Cost,Salish Sea Seafood,Seafood order Ballard,909.98
+ER26-00335,2026-07-04,Food Cost,Salish Sea Seafood,Seafood order Capitol Hill,901.16
+ER26-00336,2026-07-04,Repairs & Maintenance,Pacific Plumbing & Drain,Grease trap pump,818.54
+ER26-00337,2026-07-04,Entertainment & Events,Soundstage Rentals,Stage + PA rental 7/4 Ballard,2350.00
+ER26-00338,2026-07-04,Entertainment & Events,The Larkin Brothers Band,Band - Independence Day set 7/4,2200.00
+ER26-00339,2026-07-05,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2355.21
+ER26-00340,2026-07-05,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,2024.72
+ER26-00341,2026-07-05,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1907.29
+ER26-00342,2026-07-06,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Fremont,1703.01
+ER26-00343,2026-07-06,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Ballard,1487.98
+ER26-00344,2026-07-06,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Capitol Hill,1839.63
+ER26-00345,2026-07-06,Marketing,Emerald City Restaurant Week,RW listing - Ballard (Jul 19-Aug 1),2750.00
+ER26-00346,2026-07-07,Food Cost,Puget Produce Co,Produce - Fremont,754.36
+ER26-00347,2026-07-07,Food Cost,Puget Produce Co,Produce - Ballard,613.43
+ER26-00348,2026-07-07,Food Cost,Puget Produce Co,Produce - Capitol Hill,595.82
+ER26-00349,2026-07-07,Beverage Cost,Rainier Beverage Distributing,Beer - Fremont,790.77
+ER26-00350,2026-07-07,Beverage Cost,Rainier Beverage Distributing,Beer - Ballard,693.60
+ER26-00351,2026-07-07,Beverage Cost,Rainier Beverage Distributing,Beer - Capitol Hill,831.06
+ER26-00352,2026-07-09,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2254.66
+ER26-00353,2026-07-09,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,2029.44
+ER26-00354,2026-07-09,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1820.68
+ER26-00355,2026-07-10,Food Cost,Puget Produce Co,Produce - Fremont,662.49
+ER26-00356,2026-07-10,Food Cost,Puget Produce Co,Produce - Ballard,647.69
+ER26-00357,2026-07-10,Food Cost,Puget Produce Co,Produce - Capitol Hill,556.88
+ER26-00358,2026-07-10,Repairs & Maintenance,Arctic Air Refrigeration,Walk-in cooler compressor replacement - Fremont,7450.00
+ER26-00359,2026-07-10,Repairs & Maintenance,Arctic Air Refrigeration,Emergency call-out 7/09 after-hours - Fremont,685.00
+ER26-00360,2026-07-10,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00361,2026-07-11,Food Cost,Salish Sea Seafood,Seafood order Fremont,1019.59
+ER26-00362,2026-07-11,Food Cost,Salish Sea Seafood,Seafood order Ballard,1008.84
+ER26-00363,2026-07-11,Food Cost,Salish Sea Seafood,Seafood order Capitol Hill,819.48
+ER26-00364,2026-07-12,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2361.45
+ER26-00365,2026-07-12,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,2021.06
+ER26-00366,2026-07-12,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1840.11
+ER26-00367,2026-07-12,Utilities,Cascade Public Power,Electric - Fremont,2806.47
+ER26-00368,2026-07-12,Utilities,Cascade Public Power,Electric - Ballard,2659.64
+ER26-00369,2026-07-12,Utilities,Cascade Public Power,Electric - Capitol Hill,2541.98
+ER26-00370,2026-07-13,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Fremont,1538.36
+ER26-00371,2026-07-13,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Ballard,1455.10
+ER26-00372,2026-07-13,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Capitol Hill,1752.80
+ER26-00373,2026-07-13,Smallwares & Supplies,ChefLine Supply,Knives sharpening,592.62
+ER26-00374,2026-07-13,Smallwares & Supplies,ChefLine Supply,Knives sharpening,269.68
+ER26-00375,2026-07-14,Food Cost,Puget Produce Co,Produce - Fremont,766.03
+ER26-00376,2026-07-14,Food Cost,Puget Produce Co,Produce - Ballard,634.97
+ER26-00377,2026-07-14,Food Cost,Puget Produce Co,Produce - Capitol Hill,513.24
+ER26-00378,2026-07-14,Food Cost,Evergreen Foodservice,"CM 77120 - product loss, walk-in failure 7/09 (Fremont)",-1840.00
+ER26-00379,2026-07-14,Beverage Cost,Rainier Beverage Distributing,Beer - Fremont,736.75
+ER26-00380,2026-07-14,Beverage Cost,Rainier Beverage Distributing,Beer - Ballard,649.38
+ER26-00381,2026-07-14,Beverage Cost,Rainier Beverage Distributing,Beer - Capitol Hill,797.18
+ER26-00382,2026-07-14,Repairs & Maintenance,Handy Pro Services,Patio door hinge,854.17
+ER26-00383,2026-07-14,Utilities,Sound Gas & Energy,Gas - Fremont,1212.64
+ER26-00384,2026-07-14,Utilities,Sound Gas & Energy,Gas - Ballard,1128.53
+ER26-00385,2026-07-14,Utilities,Sound Gas & Energy,Gas - Capitol Hill,1051.06
+ER26-00386,2026-07-14,Smallwares & Supplies,Restaurant Depot Supply,Deli containers,157.64
+ER26-00387,2026-07-15,Management Salaries,Paystream Payroll,Salaried mgmt 7/15 - Fremont,6250.00
+ER26-00388,2026-07-15,Management Salaries,Paystream Payroll,Salaried mgmt 7/15 - Ballard,6250.00
+ER26-00389,2026-07-15,Management Salaries,Paystream Payroll,Salaried mgmt 7/15 - Capitol Hill,6250.00
+ER26-00390,2026-07-15,Marketing,Lantern Social,Photo shoot - summer menu,2400.00
+ER26-00391,2026-07-16,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2331.90
+ER26-00392,2026-07-16,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1956.68
+ER26-00393,2026-07-16,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1763.85
+ER26-00394,2026-07-16,Third-Party Delivery,DashCart,Commissions 7/01-7/15 - Fremont (15%),1141.04
+ER26-00395,2026-07-16,Third-Party Delivery,DashCart,Commissions 7/01-7/15 - Ballard (15%),975.66
+ER26-00396,2026-07-16,Third-Party Delivery,DashCart,Commissions 7/01-7/15 - Capitol Hill (Premier 25%),2689.29
+ER26-00397,2026-07-17,Food Cost,Puget Produce Co,Produce - Fremont,671.30
+ER26-00398,2026-07-17,Food Cost,Puget Produce Co,Produce - Ballard,626.59
+ER26-00399,2026-07-17,Food Cost,Puget Produce Co,Produce - Capitol Hill,552.46
+ER26-00400,2026-07-17,Hourly Labor,Paystream Payroll,Payroll 7/17 - Fremont hourly,22811.94
+ER26-00401,2026-07-17,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 7/17 - Fremont,2167.13
+ER26-00402,2026-07-17,Hourly Labor,Paystream Payroll,Payroll 7/17 - Ballard hourly,19401.64
+ER26-00403,2026-07-17,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 7/17 - Ballard,1843.16
+ER26-00404,2026-07-17,Hourly Labor,Paystream Payroll,Payroll 7/17 - Capitol Hill hourly,18083.75
+ER26-00405,2026-07-17,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 7/17 - Capitol Hill,1717.96
+ER26-00406,2026-07-17,Smallwares & Supplies,ChefLine Supply,Knives sharpening,595.01
+ER26-00407,2026-07-17,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00408,2026-07-18,Food Cost,Salish Sea Seafood,Seafood order Fremont,1127.60
+ER26-00409,2026-07-18,Food Cost,Salish Sea Seafood,Seafood order Ballard,915.86
+ER26-00410,2026-07-18,Food Cost,Salish Sea Seafood,Seafood order Capitol Hill,900.15
+ER26-00411,2026-07-18,Smallwares & Supplies,ChefLine Supply,Hotel pans,556.08
+ER26-00412,2026-07-18,Marketing,Hearthside Print,Menu reprints,395.00
+ER26-00413,2026-07-19,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2324.98
+ER26-00414,2026-07-19,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,2126.11
+ER26-00415,2026-07-19,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1769.62
+ER26-00416,2026-07-20,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Fremont,1662.93
+ER26-00417,2026-07-20,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Ballard,1432.80
+ER26-00418,2026-07-20,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Capitol Hill,1731.74
+ER26-00419,2026-07-20,Utilities,City Water & Sewer,Water/sewer - Fremont,607.81
+ER26-00420,2026-07-20,Utilities,City Water & Sewer,Water/sewer - Ballard,583.96
+ER26-00421,2026-07-20,Utilities,City Water & Sewer,Water/sewer - Capitol Hill,550.56
+ER26-00422,2026-07-20,Third-Party Delivery,Plated Delivery,Marketplace fees - Fremont,423.83
+ER26-00423,2026-07-20,Third-Party Delivery,Plated Delivery,Marketplace fees - Ballard,429.89
+ER26-00424,2026-07-20,Third-Party Delivery,Plated Delivery,Marketplace fees - Capitol Hill,401.73
+ER26-00425,2026-07-21,Food Cost,Puget Produce Co,Produce - Fremont,739.45
+ER26-00426,2026-07-21,Food Cost,Puget Produce Co,Produce - Ballard,588.12
+ER26-00427,2026-07-21,Food Cost,Puget Produce Co,Produce - Capitol Hill,514.41
+ER26-00428,2026-07-21,Beverage Cost,Rainier Beverage Distributing,Beer - Fremont,777.19
+ER26-00429,2026-07-21,Beverage Cost,Rainier Beverage Distributing,Beer - Ballard,637.11
+ER26-00430,2026-07-21,Beverage Cost,Rainier Beverage Distributing,Beer - Capitol Hill,839.10
+ER26-00431,2026-07-21,Marketing,Emerald City Restaurant Week,Credit - RW listing cancelled (Ballard withdrew),-2750.00
+ER26-00432,2026-07-22,Smallwares & Supplies,ChefLine Supply,Knives sharpening,184.26
+ER26-00433,2026-07-23,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2413.09
+ER26-00434,2026-07-23,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,1897.09
+ER26-00435,2026-07-23,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1721.30
+ER26-00436,2026-07-23,Smallwares & Supplies,ChefLine Supply,Hotel pans,146.13
+ER26-00437,2026-07-24,Food Cost,Puget Produce Co,Produce - Fremont,666.95
+ER26-00438,2026-07-24,Food Cost,Puget Produce Co,Produce - Ballard,591.56
+ER26-00439,2026-07-24,Food Cost,Puget Produce Co,Produce - Capitol Hill,563.96
+ER26-00440,2026-07-24,Repairs & Maintenance,Rapid Kitchen Repair,Ice machine service,917.03
+ER26-00441,2026-07-24,Repairs & Maintenance,Rapid Kitchen Repair,Fryer thermostat,685.87
+ER26-00442,2026-07-24,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00
+ER26-00443,2026-07-25,Food Cost,Salish Sea Seafood,Seafood order Fremont,1089.23
+ER26-00444,2026-07-25,Food Cost,Salish Sea Seafood,Seafood order Ballard,922.81
+ER26-00445,2026-07-25,Food Cost,Salish Sea Seafood,Seafood order Capitol Hill,817.89
+ER26-00446,2026-07-26,Food Cost,Evergreen Foodservice,Inv - Fremont delivery,2178.89
+ER26-00447,2026-07-26,Food Cost,Evergreen Foodservice,Inv - Ballard delivery,2119.86
+ER26-00448,2026-07-26,Food Cost,Evergreen Foodservice,Inv - Capitol Hill delivery,1754.08
+ER26-00449,2026-07-27,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Fremont,1521.03
+ER26-00450,2026-07-27,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Ballard,1416.95
+ER26-00451,2026-07-27,Beverage Cost,Cascade Wine & Spirits,Wine/spirits - Capitol Hill,1759.41
+ER26-00452,2026-07-27,Smallwares & Supplies,Restaurant Depot Supply,Smallwares,562.59
+ER26-00453,2026-07-28,Food Cost,Puget Produce Co,Produce - Fremont,706.37
+ER26-00454,2026-07-28,Food Cost,Puget Produce Co,Produce - Ballard,595.21
+ER26-00455,2026-07-28,Food Cost,Puget Produce Co,Produce - Capitol Hill,550.17
+ER26-00456,2026-07-28,Beverage Cost,Rainier Beverage Distributing,Beer - Fremont,738.09
+ER26-00457,2026-07-28,Beverage Cost,Rainier Beverage Distributing,Beer - Ballard,666.89
+ER26-00458,2026-07-28,Beverage Cost,Rainier Beverage Distributing,Beer - Capitol Hill,790.00
+ER26-00459,2026-07-28,Linen & Laundry,Unitex Linen Service,Inv - Jul svc - Fremont,2140.00
+ER26-00460,2026-07-28,Linen & Laundry,Unitex Linen Service,Inv - Jul svc - Ballard,2060.00
+ER26-00461,2026-07-28,Linen & Laundry,Unitex Linen Service,Inv - Jul svc - Capitol Hill,1930.00
+ER26-00462,2026-07-31,Hourly Labor,Paystream Payroll,Payroll 7/31 - Fremont hourly,22572.30
+ER26-00463,2026-07-31,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 7/31 - Fremont,2144.37
+ER26-00464,2026-07-31,Hourly Labor,Paystream Payroll,Payroll 7/31 - Ballard hourly,19019.07
+ER26-00465,2026-07-31,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 7/31 - Ballard,1806.81
+ER26-00466,2026-07-31,Hourly Labor,Paystream Payroll,Payroll 7/31 - Capitol Hill hourly,17544.96
+ER26-00467,2026-07-31,Payroll Taxes & Benefits,Paystream Payroll,ER taxes 7/31 - Capitol Hill,1666.77
+ER26-00468,2026-07-31,Management Salaries,Paystream Payroll,Salaried mgmt 7/31 - Fremont,6250.00
+ER26-00469,2026-07-31,Management Salaries,Paystream Payroll,Salaried mgmt 7/31 - Ballard,6250.00
+ER26-00470,2026-07-31,Management Salaries,Paystream Payroll,Salaried mgmt 7/31 - Capitol Hill,6250.00
+ER26-00471,2026-07-31,Third-Party Delivery,DashCart,Commissions 7/16-7/31 - Fremont (15%),1130.77
+ER26-00472,2026-07-31,Third-Party Delivery,DashCart,Commissions 7/16-7/31 - Ballard (15%),994.39
+ER26-00473,2026-07-31,Third-Party Delivery,DashCart,Commissions 7/16-7/31 - Capitol Hill (Premier 25%),2713.32
+ER26-00474,2026-07-31,Entertainment & Events,Quartet Collective,Jazz Friday - Ballard,450.00

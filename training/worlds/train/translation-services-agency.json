@@ -1,0 +1,703 @@
+{
+ "slug": "translation-services-agency",
+ "industry": "translation services agency",
+ "entities": [
+  "Lexbridge Language Partners",
+  "Meridian Linguistic Group",
+  "Polyglot Harbor Inc.",
+  "Verbatim Global Services",
+  "Kestrel Translation Co."
+ ],
+ "accounts": [
+  {
+   "name": "Freelance Linguist Fees",
+   "aliases": [
+    "freelance linguists",
+    "linguist fees",
+    "contractor translators",
+    "freelance translation spend",
+    "linguist payouts"
+   ],
+   "narrative": [
+    "Freelance linguists",
+    "Linguist fees",
+    "Contractor translators"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lingua Talent Network",
+     "base": 24000,
+     "memo": "Freelance translator payouts — monthly batch"
+    },
+    {
+     "vendor": "Atlas Proofreading Collective",
+     "base": 9500,
+     "memo": "Proofreading and editing — monthly batch"
+    },
+    {
+     "vendor": "Orbis Interpreter Guild",
+     "base": 7200,
+     "memo": "On-call interpreter fees — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "patentbacklog",
+     "vendor": "Lingua Talent Network",
+     "memos": [
+      "Patent dossier surge — Korean specialists",
+      "Patent dossier surge — claim review premium"
+     ],
+     "cross_memo": "Patent dossier surge — rush courier filing",
+     "plain": [
+      "the patent dossier surge",
+      "the patent dossier surge specialists",
+      "the patent dossier surge premium"
+     ],
+     "oblique": [
+      "a flood of intellectual property filings from one law firm",
+      "the legal department's sudden multilingual workload",
+      "specialist rates for scarce technical talent",
+      "extra hands for the inventor paperwork",
+      "last-minute work from the outside counsel",
+      "the rush on technology applications",
+      "premium pay for hard-to-find subject experts",
+      "an unexpected pile of legal filings",
+      "urgent technology paperwork for an overseas office",
+      "overtime-level rates for niche experts",
+      "the legal client's deadline crunch",
+      "the wave of invention registrations",
+      "a big drop of filings from the law firm",
+      "scarce expert availability for engineering texts",
+      "paying extra to get specialists onboard quickly",
+      "the counsel-driven crunch on technical submissions"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "vidlocal",
+     "vendor": "Sable Voice Studio",
+     "memos": [
+      "Anthem rebrand voiceover — Mandarin talent",
+      "Anthem rebrand voiceover — studio session"
+     ],
+     "cross_memo": "Anthem rebrand voiceover — licensing buyout",
+     "plain": [
+      "the anthem rebrand voiceover",
+      "the anthem rebrand voiceover talent",
+      "the anthem rebrand voiceover sessions"
+     ],
+     "oblique": [
+      "spoken-word work for the insurance client's relaunch",
+      "recording actors for the new corporate identity",
+      "narration for the customer's refreshed look",
+      "sound talent hired for the campaign overhaul",
+      "audio versions of the client's new messaging",
+      "the booth time for the launch spots",
+      "paying performers to speak the new slogans",
+      "dubbing work tied to a client's image refresh",
+      "the vocal side of the big relaunch",
+      "hired voices for the marketing push",
+      "recorded narration in several markets",
+      "studio hours for the advertising rollout",
+      "actors engaged for the brand refresh",
+      "the speaking parts for the commercial series",
+      "audio production requested by the marketing head",
+      "one-time performer fees for the identity change"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Translation Memory Software",
+   "aliases": [
+    "tm software",
+    "cat tools",
+    "translation memory licences",
+    "cat tool subscriptions",
+    "tm platform costs"
+   ],
+   "narrative": [
+    "Cat tools",
+    "Tm software",
+    "Translation memory licences"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cortexa Systems",
+     "base": 12500,
+     "memo": "CAT platform subscription — monthly seats"
+    },
+    {
+     "vendor": "TermBase Cloud",
+     "base": 4800,
+     "memo": "Terminology database hosting — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "neuralengine",
+     "vendor": "Cortexa Systems",
+     "memos": [
+      "Adaptive engine pilot — premium module",
+      "Adaptive engine pilot — training credits"
+     ],
+     "cross_memo": "Adaptive engine pilot — consultant workshop",
+     "plain": [
+      "the adaptive engine pilot",
+      "the adaptive engine pilot modules",
+      "the adaptive engine pilot credits"
+     ],
+     "oblique": [
+      "trying out automated drafting on live projects",
+      "the experiment with machine-first workflows",
+      "an upgrade the production team asked to trial",
+      "extra compute for testing automation",
+      "early access to smarter drafting features",
+      "the innovation team's test run",
+      "paying for the add-on that speeds first drafts",
+      "a trial of the newer generation tooling",
+      "the pilot group's expanded toolkit",
+      "a short-term test of faster turnaround methods",
+      "credits consumed while teaching the system our style",
+      "an experimental feature the delivery lead wanted",
+      "testing whether machines can cut our hours",
+      "the proof-of-concept for automated first passes",
+      "an optional add-on bought for evaluation",
+      "the leadership push to modernise production"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "migration",
+     "vendor": "Quillport Data Services",
+     "memos": [
+      "Legacy archive conversion — segment cleanup",
+      "Legacy archive conversion — format mapping"
+     ],
+     "cross_memo": "Legacy archive conversion — temporary storage",
+     "plain": [
+      "the legacy archive conversion",
+      "the legacy archive conversion cleanup",
+      "the legacy archive conversion mapping"
+     ],
+     "oblique": [
+      "moving old client files into the current platform",
+      "rescuing years of stored sentence pairs",
+      "untangling the pre-merger databases",
+      "salvaging reference material from an old system",
+      "consolidating records inherited from an acquisition",
+      "getting ancient files readable again",
+      "the housekeeping on our historical stock",
+      "a one-time effort to retire the old server",
+      "cleaning up decade-old reuse data",
+      "bringing the older holdings into line",
+      "making obsolete formats usable",
+      "the project to decommission outdated infrastructure",
+      "fixing messy imports from the previous owner",
+      "the data rescue the operations manager approved",
+      "reformatting past work for modern tools",
+      "sorting out inherited content libraries"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Certified Translation Notary Fees",
+   "aliases": [
+    "notary fees",
+    "certification costs",
+    "sworn translation fees",
+    "attestation expenses",
+    "notarisation spend"
+   ],
+   "narrative": [
+    "Notary fees",
+    "Certification costs",
+    "Attestation expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crown Notary Associates",
+     "base": 3200,
+     "memo": "Notary stamps — monthly volume"
+    },
+    {
+     "vendor": "Consular Docs Express",
+     "base": 2600,
+     "memo": "Document legalisation — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "immigrationwave",
+     "vendor": "Crown Notary Associates",
+     "memos": [
+      "Visa campaign batch — bulk affidavits",
+      "Visa campaign batch — witness signings"
+     ],
+     "cross_memo": "Visa campaign batch — courier returns",
+     "plain": [
+      "the visa campaign batch",
+      "the visa campaign batch affidavits",
+      "the visa campaign batch signings"
+     ],
+     "oblique": [
+      "a staffing firm relocating dozens of employees",
+      "the corporate client's mass relocation",
+      "hundreds of personal records needing official seals",
+      "an employer sponsoring a large cohort",
+      "the surge of people moving abroad for work",
+      "family paperwork arriving in bulk",
+      "a single customer's workforce transfer",
+      "official sign-off for many individuals at once",
+      "the relocation programme from the engineering client",
+      "a wave of residency applications",
+      "stamping work tied to one employer's hiring spree",
+      "an unusually big stack of personal documents",
+      "the sponsor's group application",
+      "clients moving countries all at once",
+      "the HR partner's international transfers",
+      "personal records processed for one sponsor"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "courtcase",
+     "vendor": "Harlow Judicial Services",
+     "memos": [
+      "Arbitration exhibits — sworn declarations",
+      "Arbitration exhibits — judicial seal fees"
+     ],
+     "cross_memo": "Arbitration exhibits — expert witness hours",
+     "plain": [
+      "the arbitration exhibits",
+      "the arbitration exhibits declarations",
+      "the arbitration exhibits seal fees"
+     ],
+     "oblique": [
+      "a high-stakes dispute between two manufacturers",
+      "evidence prepared for a tribunal hearing",
+      "formal proof demanded by a foreign panel",
+      "the litigation support for the shipping client",
+      "paperwork for a cross-border legal fight",
+      "a courtroom matter with tight deadlines",
+      "verification demanded by opposing lawyers",
+      "the commercial dispute needing sworn versions",
+      "a lawsuit's supporting records",
+      "official authentication for contested files",
+      "the legal team's request ahead of the hearing",
+      "proof required to settle a contract quarrel",
+      "documents headed to a judge overseas",
+      "the case file authentication push",
+      "a conflict that needed every page verified",
+      "the client's legal showdown abroad"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Interpreter Travel and Onsite Costs",
+   "aliases": [
+    "interpreter travel",
+    "onsite interpreting",
+    "interpreter logistics",
+    "event interpreting costs",
+    "interpreter per diems"
+   ],
+   "narrative": [
+    "Interpreter travel",
+    "Onsite interpreting",
+    "Interpreter logistics"
+   ],
+   "recurring": [
+    {
+     "vendor": "Skyline Corporate Travel",
+     "base": 6800,
+     "memo": "Interpreter airfare and lodging — monthly"
+    },
+    {
+     "vendor": "Parkside Ground Transport",
+     "base": 2100,
+     "memo": "Local transfers — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "summit",
+     "vendor": "Skyline Corporate Travel",
+     "memos": [
+      "Harbor summit deployment — team flights",
+      "Harbor summit deployment — extended hotel block"
+     ],
+     "cross_memo": "Harbor summit deployment — booth equipment freight",
+     "plain": [
+      "the harbor summit deployment",
+      "the harbor summit deployment flights",
+      "the harbor summit deployment hotel block"
+     ],
+     "oblique": [
+      "sending a large team to a multi-day diplomatic gathering",
+      "the trade delegation's week abroad",
+      "moving linguists across continents for one event",
+      "a conference needing every language covered",
+      "the government client's big meeting",
+      "long stays for staff at the host city",
+      "the international forum we staffed heavily",
+      "a high-profile assembly that required many specialists",
+      "accommodation for the whole booth crew",
+      "the ministerial conference we supported",
+      "relocating our best people for several days",
+      "the large multilateral event",
+      "a major assignment abroad for the public sector",
+      "getting everyone to the foreign venue",
+      "the long-running multinational meeting",
+      "staff housed far from home for the congress"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "cancelfees",
+     "vendor": "Meridian Convention Hotels",
+     "memos": [
+      "Postponed medical congress — hotel cancellation",
+      "Postponed medical congress — attrition penalty"
+     ],
+     "cross_memo": "Postponed medical congress — rebooked airfare",
+     "plain": [
+      "the postponed medical congress",
+      "the postponed medical congress cancellation",
+      "the postponed medical congress penalty"
+     ],
+     "oblique": [
+      "a client delaying its physician gathering",
+      "contracts we could not walk away from cleanly",
+      "paying for rooms nobody used",
+      "the healthcare event that moved to a later date",
+      "fees for pulling out of reserved space",
+      "a schedule change forced by the sponsor",
+      "wasted bookings after the organisers pivoted",
+      "the cost of unwinding commitments",
+      "the doctors' meeting that slipped",
+      "penalties from a calendar reshuffle",
+      "reservations we could not refund",
+      "non-refundable deposits on a rescheduled gathering",
+      "change fees after the host's announcement",
+      "sunk costs from an event that shifted",
+      "the client's decision to hold off",
+      "charges for space we had already secured"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Subtitling and Media Production",
+   "aliases": [
+    "subtitling",
+    "media localisation",
+    "captioning costs",
+    "video localisation spend",
+    "dubbing and subtitles"
+   ],
+   "narrative": [
+    "Subtitling",
+    "Media localisation",
+    "Captioning costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Framelight Captions",
+     "base": 8700,
+     "memo": "Subtitle timing and QC — monthly"
+    },
+    {
+     "vendor": "Echo Mix Audio",
+     "base": 5400,
+     "memo": "Audio post-production — monthly"
+    },
+    {
+     "vendor": "Clearview Render Farm",
+     "base": 3900,
+     "memo": "Video rendering — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "streamingseries",
+     "vendor": "Framelight Captions",
+     "memos": [
+      "Nightfall series season — episode subtitling",
+      "Nightfall series season — forced narrative tracks"
+     ],
+     "cross_memo": "Nightfall series season — accessibility review",
+     "plain": [
+      "the nightfall series season",
+      "the nightfall series season episodes",
+      "the nightfall series season tracks"
+     ],
+     "oblique": [
+      "a streaming platform's new drama release",
+      "an entire season delivered in many languages",
+      "the entertainment client's big drop",
+      "hours of scripted content on a tight premiere date",
+      "the binge-ready programme for global audiences",
+      "a studio's flagship production",
+      "dozens of episodes handled together",
+      "the series launch for the platform customer",
+      "episodic content sent in a single batch",
+      "the broadcaster's headline show",
+      "a long-form project from the content giant",
+      "the premiere that needed every market covered",
+      "scripted television localised at scale",
+      "a big-budget show with a fixed air date",
+      "the platform's priority title",
+      "the large entertainment contract"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "elearning",
+     "vendor": "Brightpath Studios",
+     "memos": [
+      "Compliance curriculum rebuild — animated modules",
+      "Compliance curriculum rebuild — narration retakes"
+     ],
+     "cross_memo": "Compliance curriculum rebuild — LMS packaging",
+     "plain": [
+      "the compliance curriculum rebuild",
+      "the compliance curriculum rebuild modules",
+      "the compliance curriculum rebuild retakes"
+     ],
+     "oblique": [
+      "training videos for a bank's staff worldwide",
+      "redoing the regulatory courses for the finance client",
+      "new instructional content after a policy change",
+      "lessons recreated for employees abroad",
+      "the corporate learning refresh",
+      "an overhaul of staff education material",
+      "workforce training in local languages",
+      "the client's mandatory courses made over",
+      "revised teaching clips after audit findings",
+      "updating internal education for every office",
+      "the HR department's refreshed programme",
+      "reworking old lessons for new rules",
+      "learning content rebuilt from scratch",
+      "the redesign of required employee instruction",
+      "courses reshot after the legal update",
+      "the onboarding videos for the multinational"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Machine Translation API Usage",
+   "aliases": [
+    "mt api",
+    "api usage",
+    "machine translation usage",
+    "engine consumption",
+    "neural api spend"
+   ],
+   "narrative": [
+    "Mt api",
+    "Api usage",
+    "Machine translation usage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Neuronet Cloud",
+     "base": 11000,
+     "memo": "Machine translation API calls — monthly metered"
+    },
+    {
+     "vendor": "Quantum Compute Hosting",
+     "base": 6500,
+     "memo": "Inference server hosting — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "ecomfeed",
+     "vendor": "Neuronet Cloud",
+     "memos": [
+      "Catalog refresh batch — overage characters",
+      "Catalog refresh batch — burst throughput tier"
+     ],
+     "cross_memo": "Catalog refresh batch — post-edit crew",
+     "plain": [
+      "the catalog refresh batch",
+      "the catalog refresh batch characters",
+      "the catalog refresh batch throughput"
+     ],
+     "oblique": [
+      "an online retailer's seasonal product listings",
+      "millions of item descriptions in a single run",
+      "the shop client's inventory update",
+      "huge volumes of short product copy",
+      "the retail customer's holiday assortment",
+      "fast turnaround on a giant merchandise list",
+      "automated handling of storefront text",
+      "the marketplace seller's bulk upload",
+      "an unusually large data drop from the client",
+      "the web store's range expansion",
+      "a surge in machine-handled listings",
+      "extra capacity for peak shopping season",
+      "the customer's sprawling merchandise feed",
+      "thousands of items needing quick local versions",
+      "the commerce partner's big push",
+      "high-volume automation for the retailer"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "sovereign",
+     "vendor": "Vaultline Secure Hosting",
+     "memos": [
+      "Private enclave deployment — dedicated cluster",
+      "Private enclave deployment — encryption audit"
+     ],
+     "cross_memo": "Private enclave deployment — security consultant",
+     "plain": [
+      "the private enclave deployment",
+      "the private enclave deployment cluster",
+      "the private enclave deployment audit"
+     ],
+     "oblique": [
+      "keeping a defence client's text off shared systems",
+      "a confidentiality demand from the ministry",
+      "isolated infrastructure for sensitive work",
+      "the government contract's data restrictions",
+      "a walled-off environment for classified content",
+      "the customer's insistence on local processing",
+      "separate machines reserved for one account",
+      "protection for highly restricted material",
+      "compliance with the agency's handling rules",
+      "a closed setup nobody else can touch",
+      "the security-conscious client's requirements",
+      "infrastructure built to satisfy an inspector",
+      "a locked-down environment for patient records",
+      "special handling for secret documents",
+      "the legal demand to keep information on-premises",
+      "hardware set aside for one confidential contract"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Quality Assurance and Certification",
+   "aliases": [
+    "qa costs",
+    "quality audits",
+    "iso certification",
+    "accreditation spend",
+    "quality assurance"
+   ],
+   "narrative": [
+    "Qa costs",
+    "Quality audits",
+    "Accreditation spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Standards Assurance Board",
+     "base": 4200,
+     "memo": "Quality system surveillance — monthly retainer"
+    },
+    {
+     "vendor": "Proof Metrics Lab",
+     "base": 3100,
+     "memo": "Sample scoring and error typology — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "medicaliso",
+     "vendor": "Standards Assurance Board",
+     "memos": [
+      "Clinical devices accreditation — gap assessment",
+      "Clinical devices accreditation — onsite auditors"
+     ],
+     "cross_memo": "Clinical devices accreditation — process rewrite",
+     "plain": [
+      "the clinical devices accreditation",
+      "the clinical devices accreditation assessment",
+      "the clinical devices accreditation auditors"
+     ],
+     "oblique": [
+      "qualifying to handle regulated healthcare product literature",
+      "a credential the pharma customer insisted on",
+      "proving we can serve the life sciences sector",
+      "the inspectors visiting our offices",
+      "an extra stamp of approval for a medical contract",
+      "readiness checks before a big hospital client",
+      "meeting the manufacturer's supplier requirements",
+      "a new standard for medicine-related work",
+      "the examination of our procedures by outsiders",
+      "paying to be eligible for a lucrative sector",
+      "an upgrade to our credentials",
+      "a prerequisite for winning device-maker business",
+      "the third-party review of our workflow",
+      "fulfilling the client's vendor checklist",
+      "what it cost to be approved for sensitive health content",
+      "certification demanded before work could start"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "errorrework",
+     "vendor": "Redwood Review Partners",
+     "memos": [
+      "Rejected manual recall — reviewer rework",
+      "Rejected manual recall — reissue proofing"
+     ],
+     "cross_memo": "Rejected manual recall — client credit note",
+     "plain": [
+      "the rejected manual recall",
+      "the rejected manual recall rework",
+      "the rejected manual recall proofing"
+     ],
+     "oblique": [
+      "redoing instruction booklets a client sent back",
+      "mistakes that slipped past our checks",
+      "fixing a delivery the customer refused",
+      "a costly do-over on equipment guides",
+      "the embarrassing correction of shipped work",
+      "reviewers brought in to repair faulty output",
+      "a complaint from the machinery manufacturer",
+      "work that failed the client's inspection",
+      "second-pass labour after a bad handoff",
+      "cleaning up errors found by end users",
+      "the corrective effort after a quality escape",
+      "an apology project for a key account",
+      "wrongly rendered safety wording that had to be redone",
+      "extra checking to win back trust",
+      "the unplanned repair of a defective deliverable",
+      "a redo ordered by the customer's engineers"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

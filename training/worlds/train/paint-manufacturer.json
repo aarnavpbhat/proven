@@ -1,0 +1,728 @@
+{
+ "slug": "paint-manufacturer",
+ "industry": "paint manufacturer",
+ "entities": [
+  "Brightline Coatings Inc.",
+  "Harborview Paint Works",
+  "Meridian Pigment & Finish Co.",
+  "Keystone Coatings Group",
+  "Redwood Surface Products"
+ ],
+ "accounts": [
+  {
+   "name": "Raw Material Freight & Logistics",
+   "aliases": [
+    "inbound freight",
+    "freight costs",
+    "raw material freight",
+    "logistics spend",
+    "inbound logistics"
+   ],
+   "narrative": [
+    "Inbound freight",
+    "Freight costs",
+    "Logistics spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-State Bulk Carriers",
+     "base": 18500,
+     "memo": "Inbound bulk resin freight - monthly"
+    },
+    {
+     "vendor": "Great Lakes Rail Services",
+     "base": 12200,
+     "memo": "Rail freight - pigment shipments"
+    },
+    {
+     "vendor": "Summit Drayage LLC",
+     "base": 6400,
+     "memo": "Port drayage - drum containers"
+    }
+   ],
+   "events": [
+    {
+     "key": "hazmat",
+     "vendor": "Tri-State Bulk Carriers",
+     "memos": [
+      "Placarded solvent haul - WO 44718",
+      "Placarded solvent haul - escort fee"
+     ],
+     "cross_memo": "Placarded solvent haul - warehouse segregation labor",
+     "plain": [
+      "the placarded solvent haul",
+      "the placarded solvent shipments",
+      "that placarded solvent haul"
+     ],
+     "oblique": [
+      "moving flammable liquids under special permits",
+      "an emergency supply run for the flammables",
+      "the regulated cargo we had to get across state lines",
+      "transport of volatile chemicals with a police escort",
+      "getting the thinner stock in before the plant ran dry",
+      "a one-time shipment that needed special handling",
+      "the dangerous goods move",
+      "shipping the volatile inputs on short notice",
+      "a rush delivery of restricted materials",
+      "the permit-heavy transport job",
+      "hauling the high-risk cargo",
+      "special compliance trucking",
+      "the urgent chemical delivery",
+      "transporting the combustible stock",
+      "a convoy of regulated tankers",
+      "moving the hazardous inventory"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "titanium",
+     "vendor": "Cascade Spot Freight Brokers",
+     "memos": [
+      "Expedited titanium dioxide airlift - PO 90321",
+      "Expedited titanium dioxide airlift - customs brokerage"
+     ],
+     "cross_memo": "Expedited titanium dioxide airlift - cold storage hold",
+     "plain": [
+      "the expedited titanium dioxide airlift",
+      "the titanium dioxide airlift",
+      "that expedited airlift of titanium dioxide"
+     ],
+     "oblique": [
+      "flying in the white pigment after the mill outage",
+      "rushed overseas delivery of our key whitener",
+      "an air shipment to avoid a line stoppage",
+      "paying up to skip the ocean transit",
+      "the emergency supply of the main opacifier",
+      "getting the base ingredient here in days instead of weeks",
+      "a supply chain scramble",
+      "the premium delivery from abroad",
+      "a stopgap shipment of the whitening agent",
+      "the rescue shipment",
+      "speeding up the arrival of our top ingredient",
+      "the costly overnight import",
+      "a short-notice international cargo",
+      "fast-tracking the pigment order",
+      "what we paid to avoid a shutdown",
+      "the faster-than-normal import"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Plant Utilities",
+   "aliases": [
+    "utilities",
+    "plant power",
+    "energy costs",
+    "electric and gas",
+    "plant energy"
+   ],
+   "narrative": [
+    "Plant power",
+    "Energy costs",
+    "Utilities"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northern Grid Electric",
+     "base": 29000,
+     "memo": "Electric service - main plant"
+    },
+    {
+     "vendor": "Clearwater Gas Co.",
+     "base": 9800,
+     "memo": "Natural gas - curing ovens"
+    },
+    {
+     "vendor": "Municipal Water Authority",
+     "base": 3600,
+     "memo": "Water and sewer - process"
+    }
+   ],
+   "events": [
+    {
+     "key": "boiler",
+     "vendor": "Clearwater Gas Co.",
+     "memos": [
+      "Steam loop retube - WO 51207",
+      "Steam loop retube - emergency gas surcharge"
+     ],
+     "cross_memo": "Steam loop retube - contractor scaffolding",
+     "plain": [
+      "the steam loop retube",
+      "the steam loop retube work",
+      "that steam loop retube"
+     ],
+     "oblique": [
+      "replacing failing heat-exchange tubing",
+      "the repair that kept the mixing vats warm",
+      "fixing the plant's heating backbone",
+      "a mid-winter breakdown of our thermal system",
+      "the fix for the leaking pipework",
+      "an unplanned shutdown of heating",
+      "keeping batches at temperature after a failure",
+      "the urgent mechanical repair",
+      "getting the heat distribution running again",
+      "work on the aging heating infrastructure",
+      "the overhaul we could not defer",
+      "the repair of our hot-water circuit",
+      "keeping reactors warm through a cold snap",
+      "what it took to restore thermal output",
+      "a failure in the heating network",
+      "replacement of worn pipe bundles"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "demand",
+     "vendor": "Peakline Energy Advisors",
+     "memos": [
+      "Curtailment penalty settlement - ref 7742",
+      "Curtailment penalty settlement - peak tariff true-up"
+     ],
+     "cross_memo": "Curtailment penalty settlement - generator rental",
+     "plain": [
+      "the curtailment penalty settlement",
+      "the curtailment penalty",
+      "that curtailment penalty settlement"
+     ],
+     "oblique": [
+      "a fine for using too much at the wrong hour",
+      "charges after we exceeded our allotment",
+      "the surcharge from running during a grid emergency",
+      "a billing adjustment for overuse in the heat wave",
+      "what the supplier assessed after we ignored the alert",
+      "extra cost from the summer crunch",
+      "paying for exceeding our agreed ceiling",
+      "an after-the-fact bill from the provider",
+      "the true-up for our load spike",
+      "a penalty for not scaling back",
+      "fallout from the grid alert",
+      "the unexpected supplier invoice",
+      "a charge for missing the reduction target",
+      "the late adjustment for high-draw hours",
+      "overage fees from the hot weeks",
+      "what we owed for the usage spike"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Packaging Supplies",
+   "aliases": [
+    "packaging",
+    "cans and pails",
+    "container costs",
+    "packaging materials",
+    "pail and lid spend"
+   ],
+   "narrative": [
+    "Packaging",
+    "Container costs",
+    "Cans and pails"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironclad Can Company",
+     "base": 27500,
+     "memo": "Steel paint cans - 1 gal"
+    },
+    {
+     "vendor": "PolyForm Pail Supply",
+     "base": 15800,
+     "memo": "HDPE pails and lids - 5 gal"
+    },
+    {
+     "vendor": "Allied Label & Print",
+     "base": 7200,
+     "memo": "Pressure-sensitive labels"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "Allied Label & Print",
+     "memos": [
+      "Heritage line relaunch art plates - PO 66014",
+      "Heritage line relaunch obsolete label scrap"
+     ],
+     "cross_memo": "Heritage line relaunch - agency design fee",
+     "plain": [
+      "the heritage line relaunch",
+      "the heritage relaunch labels",
+      "that heritage line relaunch"
+     ],
+     "oblique": [
+      "redesigned artwork on our flagship products",
+      "a refreshed look for the best-selling range",
+      "throwing out the old printed stock",
+      "the visual overhaul of the shelf presence",
+      "new graphics rolled out across the line",
+      "a makeover that made old inventory worthless",
+      "marketing's redesign project",
+      "the updated look for retail",
+      "what we spent on changing the appearance",
+      "replacing stickers that were suddenly outdated",
+      "the brand refresh",
+      "a cosmetic update to the top sellers",
+      "write-offs of the previous artwork",
+      "switching to a new visual identity",
+      "the creative refresh for stores",
+      "tooling for the redesigned graphics"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "liner",
+     "vendor": "Barrier Pack Technologies",
+     "memos": [
+      "Epoxy-lined can pilot run - WO 30982",
+      "Epoxy-lined can pilot run - sample tooling"
+     ],
+     "cross_memo": "Epoxy-lined can pilot run - lab compatibility testing",
+     "plain": [
+      "the epoxy-lined can pilot run",
+      "the epoxy-lined can pilot",
+      "that epoxy-lined can pilot run"
+     ],
+     "oblique": [
+      "a trial of a new corrosion-resistant container for acidic formulas",
+      "testing sturdier vessels for the aggressive products",
+      "a small batch of upgraded metal vessels",
+      "an experiment to stop rust spoilage in storage",
+      "the shelf-life improvement trial",
+      "a test order for a premium vessel option",
+      "working out whether a better inner coating pays off",
+      "a pilot to cut customer returns from spoilage",
+      "evaluating a sturdier way to hold harsh chemistry",
+      "a limited test of enhanced containment",
+      "the trial for longer-lasting stock",
+      "what we spent proving out a new vessel",
+      "the experimental order",
+      "a prototype run for tougher containers",
+      "trying a protective inner surface",
+      "an R and D packaging experiment"
+     ],
+     "low": 9500,
+     "high": 19000
+    }
+   ]
+  },
+  {
+   "name": "Color Lab & Quality Testing",
+   "aliases": [
+    "lab costs",
+    "color lab",
+    "quality testing",
+    "qc spend",
+    "lab supplies"
+   ],
+   "narrative": [
+    "Lab costs",
+    "Quality testing",
+    "QC spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Spectra Instruments Service",
+     "base": 6100,
+     "memo": "Spectrophotometer service contract"
+    },
+    {
+     "vendor": "ChromaTest Reagents",
+     "base": 4800,
+     "memo": "Lab reagents and standards"
+    },
+    {
+     "vendor": "Accutint Calibration Labs",
+     "base": 2300,
+     "memo": "Colorimeter calibration"
+    }
+   ],
+   "events": [
+    {
+     "key": "weather",
+     "vendor": "Spectra Instruments Service",
+     "memos": [
+      "Xenon arc chamber replacement - PO 80415",
+      "Xenon arc chamber replacement - install and validation"
+     ],
+     "cross_memo": "Xenon arc chamber replacement - outsourced exposure testing",
+     "plain": [
+      "the xenon arc chamber replacement",
+      "the xenon arc chamber",
+      "that xenon arc chamber replacement"
+     ],
+     "oblique": [
+      "a new machine that simulates years of sunshine on samples",
+      "swapping the accelerated aging equipment",
+      "replacement of the device that fades test panels",
+      "a failed durability tester that had to go",
+      "sending panels out while ours was down",
+      "the fix for our outdoor-exposure simulator",
+      "a capital item for lifespan testing",
+      "new gear for checking how coatings hold up outdoors",
+      "the broken weathering rig",
+      "getting product warranty testing back online",
+      "an instrument that gave out",
+      "the substitute for our worn-out test unit",
+      "what it cost to resume durability work",
+      "the big-ticket lab machine",
+      "a rig used for lightfastness claims",
+      "equipment that mimics sun and rain"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "voc",
+     "vendor": "Envirotox Analytical",
+     "memos": [
+      "Low-emission certification batch retest - ref 5521",
+      "Low-emission certification batch retest - third-party lab fee"
+     ],
+     "cross_memo": "Low-emission certification batch retest - reformulation trial",
+     "plain": [
+      "the low-emission certification batch retest",
+      "the low-emission certification retest",
+      "that low-emission certification batch retest"
+     ],
+     "oblique": [
+      "redoing the air-quality compliance sampling",
+      "a regulator-driven repeat of product analysis",
+      "proving our green claims again",
+      "a failed audit that forced another round",
+      "outside experts rechecking fumes data",
+      "the second pass on environmental paperwork",
+      "what we spent to keep the eco label",
+      "a compliance rework",
+      "re-verification of our clean-air status",
+      "an agency requirement to run the numbers over",
+      "the do-over on emissions paperwork",
+      "retesting after a questionable result",
+      "the extra round of independent analysis",
+      "a cleanup of our certification file",
+      "paying specialists to confirm vapor limits",
+      "an official recheck"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Maintenance & Repairs",
+   "aliases": [
+    "plant maintenance",
+    "equipment repairs",
+    "maintenance spend",
+    "mro costs",
+    "production maintenance"
+   ],
+   "narrative": [
+    "Plant maintenance",
+    "Equipment repairs",
+    "Maintenance spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Industrial Services",
+     "base": 14200,
+     "memo": "Preventive maintenance - mixing floor"
+    },
+    {
+     "vendor": "Dynamo Motor & Pump",
+     "base": 7700,
+     "memo": "Pump and motor repair - routine"
+    },
+    {
+     "vendor": "Apex Filling Line Support",
+     "base": 5600,
+     "memo": "Filler line parts and labor"
+    }
+   ],
+   "events": [
+    {
+     "key": "disperser",
+     "vendor": "Ridgeline Industrial Services",
+     "memos": [
+      "High-speed disperser rebuild - WO 72205",
+      "High-speed disperser rebuild - shaft and seal kit"
+     ],
+     "cross_memo": "High-speed disperser rebuild - temporary toll blending",
+     "plain": [
+      "the high-speed disperser rebuild",
+      "the disperser rebuild",
+      "that high-speed disperser rebuild"
+     ],
+     "oblique": [
+      "restoring the big blade mixer that grinds pigment into liquid",
+      "an overhaul of our primary dispersion machine",
+      "a seized agitator that stalled production",
+      "fixing the heart of batch making",
+      "the repair on the machine behind every gallon",
+      "outsourcing some batches while the mixer was down",
+      "a costly mechanical failure on the main line",
+      "getting the grinding station back running",
+      "the downtime fix for our core process",
+      "the rebuild that cleared a backlog",
+      "a breakdown in the central blending equipment",
+      "what it took to revive the mixer",
+      "parts for the main production machine",
+      "overhauling the heavy-duty mixing unit",
+      "a worn-out drive and housing",
+      "the unplanned repair of the key batching asset"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "conveyor",
+     "vendor": "Vantage Automation Group",
+     "memos": [
+      "Palletizer conveyor retrofit - PO 41873",
+      "Palletizer conveyor retrofit - controls programming"
+     ],
+     "cross_memo": "Palletizer conveyor retrofit - safety guarding install",
+     "plain": [
+      "the palletizer conveyor retrofit",
+      "the palletizer retrofit",
+      "that palletizer conveyor retrofit"
+     ],
+     "oblique": [
+      "upgrading how finished cases get stacked for shipping",
+      "modernizing the end-of-line handling",
+      "an automation project in the warehouse",
+      "new controls on the stacking robot",
+      "work to speed up outbound loading",
+      "a modification to reduce manual lifting",
+      "the packout upgrade",
+      "changes made after a safety recommendation",
+      "an equipment improvement near the dock",
+      "making the shipping area less labor-intensive",
+      "retooling the loading side of the plant",
+      "an overhaul of how cartons reach trucks",
+      "the project that cut injury risk",
+      "a capital improvement at the back of the line",
+      "reworking the stacking station",
+      "a throughput boost on the final stage"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Environmental Compliance & Waste Disposal",
+   "aliases": [
+    "waste disposal",
+    "environmental costs",
+    "compliance spend",
+    "hazardous waste",
+    "disposal fees"
+   ],
+   "narrative": [
+    "Waste disposal",
+    "Environmental costs",
+    "Hazardous waste"
+   ],
+   "recurring": [
+    {
+     "vendor": "CleanCycle Waste Solutions",
+     "base": 11800,
+     "memo": "Hazardous liquid waste pickup"
+    },
+    {
+     "vendor": "Greenfield Solvent Recovery",
+     "base": 8400,
+     "memo": "Solvent reclamation service"
+    },
+    {
+     "vendor": "State Environmental Permits Office",
+     "base": 1900,
+     "memo": "Air permit annual installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "spill",
+     "vendor": "CleanCycle Waste Solutions",
+     "memos": [
+      "Tank farm overflow remediation - WO 63390",
+      "Tank farm overflow remediation - contaminated soil haul"
+     ],
+     "cross_memo": "Tank farm overflow remediation - consultant site survey",
+     "plain": [
+      "the tank farm overflow remediation",
+      "the tank farm overflow cleanup",
+      "that tank farm overflow remediation"
+     ],
+     "oblique": [
+      "cleaning up after a release at the storage yard",
+      "a leak that reached the ground",
+      "the dig-out of tainted dirt",
+      "responding to a containment failure",
+      "hauling away stained earth after an incident",
+      "the response to an accident at our outdoor vessels",
+      "what it took to make the site clean again",
+      "an environmental incident that needed professional crews",
+      "the soil work after a rupture",
+      "the mess from a storage failure",
+      "a cleanup order from the state",
+      "emergency crews on the grounds",
+      "restoring the lot after liquid got loose",
+      "the incident response bill",
+      "an offsite disposal run for impacted material",
+      "correcting damage at the bulk storage area"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "audit",
+     "vendor": "Terrapoint Compliance Partners",
+     "memos": [
+      "Stormwater discharge permit audit - ref 3318",
+      "Stormwater discharge permit audit - corrective action plan"
+     ],
+     "cross_memo": "Stormwater discharge permit audit - retention basin repair",
+     "plain": [
+      "the stormwater discharge permit audit",
+      "the stormwater permit audit",
+      "that stormwater discharge permit audit"
+     ],
+     "oblique": [
+      "an inspection of rainwater runoff handling",
+      "a regulator visit that found gaps",
+      "consultants reviewing our drainage paperwork",
+      "the review that triggered fixes",
+      "an outside examination of our site's runoff controls",
+      "a deep dive on our paperwork for the state",
+      "remedial work after an official finding",
+      "the evaluation of how rain leaves the property",
+      "getting our records in order for an inspector",
+      "a formal look at our outflow practices",
+      "work to avoid a notice of violation",
+      "hiring experts to check our drains",
+      "the exercise to prove we meet the rules",
+      "examining how water exits the yard",
+      "cleaning up after a rule-compliance review",
+      "an assessment of the grounds' discharge"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Sales Samples & Marketing Programs",
+   "aliases": [
+    "marketing spend",
+    "sample program",
+    "dealer promotions",
+    "sales samples",
+    "trade marketing"
+   ],
+   "narrative": [
+    "Marketing spend",
+    "Dealer promotions",
+    "Sample program"
+   ],
+   "recurring": [
+    {
+     "vendor": "Showroom Display Partners",
+     "base": 9300,
+     "memo": "Color fan decks and swatch books"
+    },
+    {
+     "vendor": "Pinnacle Digital Media",
+     "base": 6800,
+     "memo": "Paid search and social - contractor channel"
+    },
+    {
+     "vendor": "Dealer Co-op Program",
+     "base": 12500,
+     "memo": "Co-op advertising reimbursements"
+    }
+   ],
+   "events": [
+    {
+     "key": "expo",
+     "vendor": "Showroom Display Partners",
+     "memos": [
+      "National coatings trade show booth - PO 25590",
+      "National coatings trade show booth - freight and drayage"
+     ],
+     "cross_memo": "National coatings trade show - sales team travel",
+     "plain": [
+      "the national coatings trade show booth",
+      "the coatings trade show booth",
+      "that national trade show booth"
+     ],
+     "oblique": [
+      "our presence at the big industry gathering",
+      "a convention where we exhibited",
+      "setting up a stand in front of buyers",
+      "the annual event with distributors from every region",
+      "the exhibit hall appearance",
+      "an in-person push to meet customers",
+      "spending to be seen at the sector's biggest conference",
+      "a booth build and staffing for the expo",
+      "our spot on the show floor",
+      "the yearly industry showcase",
+      "the expense of the convention center space",
+      "a week of demos for contractors",
+      "the event where we launch new colors",
+      "taking the road show to a convention hall",
+      "getting our name out at a major gathering",
+      "what we spent on walking the exhibition"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "loyalty",
+     "vendor": "Brushstroke Promotions Inc.",
+     "memos": [
+      "Painter rewards rebate campaign - PO 47746",
+      "Painter rewards rebate campaign - fulfillment cards"
+     ],
+     "cross_memo": "Painter rewards rebate campaign - platform setup fee",
+     "plain": [
+      "the painter rewards rebate campaign",
+      "the painter rewards campaign",
+      "that painter rewards rebate campaign"
+     ],
+     "oblique": [
+      "a cash-back offer to professional applicators",
+      "incentives we handed out to the trades",
+      "a points scheme that rewarded repeat buyers",
+      "giving money back to loyal contractors",
+      "the promotion to win share from competitors",
+      "a push to lock in the pros who buy by the pallet",
+      "prepaid cards mailed to customers",
+      "an offer that boosted contractor purchases",
+      "our program to thank repeat purchasers",
+      "what we gave away to encourage volume",
+      "a customer retention drive",
+      "the incentive plan for tradespeople",
+      "money returned to buyers who hit targets",
+      "a promotional giveaway for installers",
+      "the scheme to drive sell-through",
+      "amounts earned by the people who apply our product"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

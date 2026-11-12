@@ -1,0 +1,815 @@
+{
+ "slug": "hardware-store-cooperative",
+ "industry": "hardware store cooperative",
+ "entities": [
+  "Harvest Ridge Hardware Cooperative",
+  "Tri-County Builders Supply Co-op",
+  "Cedar Hollow Member Hardware",
+  "Northfield Tool & Lumber Cooperative",
+  "Prairie Gate Home Supply Co-op"
+ ],
+ "accounts": [
+  {
+   "name": "Member Rebate Programs",
+   "aliases": [
+    "member rebates",
+    "patronage rebates",
+    "rebate programs",
+    "member rebate accruals",
+    "dividend rebates"
+   ],
+   "narrative": [
+    "Member rebates",
+    "Patronage rebates",
+    "Rebate programs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Coop Rebate Services LLC",
+     "base": 14500,
+     "memo": "Monthly patronage rebate administration"
+    },
+    {
+     "vendor": "Ledgerline Payment Processing",
+     "base": 3200,
+     "memo": "Rebate check issuance fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "anniversary",
+     "vendor": "Coop Rebate Services LLC",
+     "memos": [
+      "Anniversary Bonus Payout — member tier match",
+      "Anniversary Bonus Payout — vendor split"
+     ],
+     "cross_memo": "Anniversary Bonus Payout — printed mailers",
+     "plain": [
+      "the anniversary bonus payout",
+      "the anniversary bonus program",
+      "the anniversary bonus match"
+     ],
+     "oblique": [
+      "a one-time thank-you for loyal shoppers",
+      "the extra credit handed to long-standing owners",
+      "a celebration of decades in business",
+      "goodwill gesture to the ownership base",
+      "double credit for a limited window",
+      "the bump in what we owe our shareholders",
+      "a promotion tied to the founding date",
+      "bigger payouts than the usual formula",
+      "a special round of credits for our oldest accounts",
+      "what the board approved at the spring meeting",
+      "making the owners whole after a rough year",
+      "extra giveback to the people who own us",
+      "a milestone gift",
+      "the surprise on top of the standard return",
+      "a boosted return for the owner base",
+      "the one-off enhancement approved by directors"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "overstock_clearance",
+     "vendor": "Meridian Loyalty Partners",
+     "memos": [
+      "Overstock Clearance Credits — gift card float",
+      "Overstock Clearance Credits — scan data audit"
+     ],
+     "cross_memo": "Overstock Clearance Credits — freight allowance",
+     "plain": [
+      "the overstock clearance credits",
+      "the overstock clearance event",
+      "the overstock clearance scan audit"
+     ],
+     "oblique": [
+      "cleaning out slow-moving stock",
+      "credits given to move aging goods",
+      "getting shelves ready for the new line",
+      "markdown support for the retailers",
+      "cutting leftover inventory loose",
+      "supporting stores stuck with too much merchandise",
+      "the push to unload what did not sell",
+      "help for members sitting on excess units",
+      "a promotional drive to turn over old product",
+      "relief for locations carrying heavy surplus",
+      "deeper discounts on last season's lines",
+      "the sell-down campaign",
+      "making room for fresh arrivals",
+      "the discount program for dead weight",
+      "what we offered to reduce bloated holdings",
+      "write-down assistance for the stores"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse Racking and Handling",
+   "aliases": [
+    "warehouse handling",
+    "racking costs",
+    "dock equipment",
+    "material handling",
+    "warehouse equipment spend"
+   ],
+   "narrative": [
+    "Warehouse handling",
+    "Racking costs",
+    "Material handling"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Lift Truck Rentals",
+     "base": 9800,
+     "memo": "Forklift fleet monthly rental"
+    },
+    {
+     "vendor": "Dockside Safety Inspections",
+     "base": 2100,
+     "memo": "Monthly dock and rack inspection"
+    },
+    {
+     "vendor": "PalletWorks Supply",
+     "base": 4600,
+     "memo": "Pallet replacement and repair"
+    }
+   ],
+   "events": [
+    {
+     "key": "mezzanine",
+     "vendor": "Summit Lift Truck Rentals",
+     "memos": [
+      "Mezzanine Expansion Phase Two — lift cage install",
+      "Mezzanine Expansion Phase Two — platform decking"
+     ],
+     "cross_memo": "Mezzanine Expansion Phase Two — fire code consultant",
+     "plain": [
+      "the mezzanine expansion phase two",
+      "the mezzanine expansion",
+      "the mezzanine expansion buildout"
+     ],
+     "oblique": [
+      "adding a second level to the building",
+      "more storage without a bigger footprint",
+      "the upper floor project",
+      "building up instead of out",
+      "extra shelving height for small parts",
+      "a stairway-accessed addition above the pick area",
+      "doubling usable space in the back",
+      "the structural addition approved last year",
+      "a raised work area for slow movers",
+      "carving out room for new categories",
+      "getting more cubic feet from the same lot",
+      "the elevated storage platform",
+      "the construction crew in the east bay",
+      "a capacity project",
+      "the second tier for bin goods",
+      "what the growth plan required inside the building"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "racking_collapse",
+     "vendor": "Ironclad Structural Repair",
+     "memos": [
+      "Aisle Seven Collapse — beam replacement",
+      "Aisle Seven Collapse — debris hauling"
+     ],
+     "cross_memo": "Aisle Seven Collapse — insurance adjuster fee",
+     "plain": [
+      "the aisle seven collapse",
+      "the aisle seven collapse cleanup",
+      "the aisle seven collapse beam work"
+     ],
+     "oblique": [
+      "the shelving failure over the holidays",
+      "a rack giving way under heavy load",
+      "rebuilding after a bad day on the floor",
+      "the accident that closed off part of the warehouse",
+      "getting damaged storage back to standard",
+      "emergency steel work",
+      "what happened when the pallets came down",
+      "the mess we cleaned up before reopening",
+      "repairs after an overloaded bay failed",
+      "the incident that triggered a safety stand-down",
+      "replacing bent uprights",
+      "the cleanup crew we brought in overnight",
+      "restoring the lane to service",
+      "a structural failure and its aftermath",
+      "fixing what gave out near the loading doors",
+      "the unplanned reconstruction"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Lumber Yard Operations",
+   "aliases": [
+    "lumber yard",
+    "yard operations",
+    "lumber handling",
+    "yard costs",
+    "timber yard spend"
+   ],
+   "narrative": [
+    "Lumber yard",
+    "Yard operations",
+    "Yard costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenline Yard Services",
+     "base": 8700,
+     "memo": "Yard labor and grounds upkeep"
+    },
+    {
+     "vendor": "Pinecrest Fuel Supply",
+     "base": 5200,
+     "memo": "Diesel for yard equipment"
+    },
+    {
+     "vendor": "Allied Sawblade and Tooling",
+     "base": 2400,
+     "memo": "Mill blade sharpening"
+    }
+   ],
+   "events": [
+    {
+     "key": "kiln",
+     "vendor": "Greenline Yard Services",
+     "memos": [
+      "Kiln Retrofit Project — burner controls",
+      "Kiln Retrofit Project — insulation panels"
+     ],
+     "cross_memo": "Kiln Retrofit Project — gas line permit",
+     "plain": [
+      "the kiln retrofit project",
+      "the kiln retrofit",
+      "the kiln retrofit controls"
+     ],
+     "oblique": [
+      "upgrading how we dry boards",
+      "new equipment for curing wood",
+      "a modernization of the drying shed",
+      "making cured stock more consistent",
+      "cutting the energy used in seasoning",
+      "the overhaul of the heat chamber",
+      "getting our product to spec faster",
+      "a project that shortened drying cycles",
+      "the improved process for moisture content",
+      "reworking the building where planks dry",
+      "the efficiency upgrade out back",
+      "drying capacity we added",
+      "a retrofit approved after quality complaints",
+      "the heat-treatment equipment replacement",
+      "what we did to meet export standards",
+      "the dryer rebuild"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "flood_cleanup",
+     "vendor": "Riverbend Restoration Group",
+     "memos": [
+      "Creek Overflow Recovery — mud removal",
+      "Creek Overflow Recovery — stack relocation"
+     ],
+     "cross_memo": "Creek Overflow Recovery — pump rental",
+     "plain": [
+      "the creek overflow recovery",
+      "the creek overflow cleanup",
+      "the creek overflow mud removal"
+     ],
+     "oblique": [
+      "storm damage to the back lot",
+      "water coming over the bank after heavy rain",
+      "moving stock out of harm's way",
+      "drying out the property after the downpour",
+      "the weather event in spring",
+      "getting the grounds usable again",
+      "cleanup after the high water",
+      "relocating inventory to higher ground",
+      "what the saturated soil cost us",
+      "the emergency response after the deluge",
+      "sandbags and pumps",
+      "the acreage that went under",
+      "restoring the lower yard",
+      "removing silt from the storage area",
+      "the natural disaster that hit our property",
+      "work crews hired right after the storm"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Delivery Fleet Costs",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "fleet maintenance spend",
+    "delivery trucks",
+    "truck expenses"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Delivery trucks",
+    "Truck expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Rolling Stock Leasing",
+     "base": 16200,
+     "memo": "Flatbed and box truck lease"
+    },
+    {
+     "vendor": "Highway Fuel Cards",
+     "base": 11800,
+     "memo": "Monthly fuel card statement"
+    },
+    {
+     "vendor": "Axle & Tire Service",
+     "base": 3900,
+     "memo": "Routine tire and brake service"
+    }
+   ],
+   "events": [
+    {
+     "key": "liftgate",
+     "vendor": "Axle & Tire Service",
+     "memos": [
+      "Liftgate Recall Campaign — hydraulic ram swap",
+      "Liftgate Recall Campaign — safety latch kits"
+     ],
+     "cross_memo": "Liftgate Recall Campaign — loaner truck rental",
+     "plain": [
+      "the liftgate recall campaign",
+      "the liftgate recall",
+      "the liftgate recall repairs"
+     ],
+     "oblique": [
+      "a manufacturer notice on the rear platforms",
+      "fixing something the maker told us to fix",
+      "unloading equipment that had to be replaced",
+      "the safety bulletin that grounded some units",
+      "parts swapped on every vehicle in the group",
+      "a defect found by regulators",
+      "the mandated correction on our haulers",
+      "work done for compliance on the back ends",
+      "the notice that arrived from the builder",
+      "an issue affecting the whole model line",
+      "getting trucks cleared to deliver heavy goods again",
+      "retrofits ordered from above",
+      "downtime while we waited for components",
+      "the problem with the hoists at the tail",
+      "the corrective action for a flawed assembly",
+      "a fleet-wide inspection and fix"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "wrap_rebrand",
+     "vendor": "BrightCoat Graphics",
+     "memos": [
+      "Heritage Livery Refresh — vinyl wraps",
+      "Heritage Livery Refresh — logo decals"
+     ],
+     "cross_memo": "Heritage Livery Refresh — design studio fee",
+     "plain": [
+      "the heritage livery refresh",
+      "the heritage livery wraps",
+      "the heritage livery decals"
+     ],
+     "oblique": [
+      "new look for the vehicles",
+      "repainting our rolling billboards",
+      "the updated brand on the sides of the haulers",
+      "a visual identity change on the road",
+      "making the whole lineup match",
+      "fresh graphics after the logo changed",
+      "the marketing push on wheels",
+      "cosmetic work on the exteriors",
+      "covering the old name with the new one",
+      "what we spent to look sharper in town",
+      "making our presence obvious on delivery routes",
+      "the redesign applied to every body panel",
+      "the cooperative's updated image",
+      "the sticker and film job",
+      "a branding makeover for the vehicles",
+      "the project that unified our appearance"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Seasonal Inventory Carrying",
+   "aliases": [
+    "seasonal inventory",
+    "carrying costs",
+    "seasonal stock",
+    "inventory carrying",
+    "off-season storage"
+   ],
+   "narrative": [
+    "Seasonal inventory",
+    "Carrying costs",
+    "Seasonal stock"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stackhouse Storage Solutions",
+     "base": 12400,
+     "memo": "Off-site storage rent"
+    },
+    {
+     "vendor": "Sentinel Property Insurance",
+     "base": 6100,
+     "memo": "Stock insurance premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "snowblower",
+     "vendor": "Stackhouse Storage Solutions",
+     "memos": [
+      "Snowthrower Early Buy — extra bay lease",
+      "Snowthrower Early Buy — handling surcharge"
+     ],
+     "cross_memo": "Snowthrower Early Buy — supplier prepay interest",
+     "plain": [
+      "the snowthrower early buy",
+      "the snowthrower early buy lease",
+      "the snowthrower early buy surcharge"
+     ],
+     "oblique": [
+      "a bet on a harsh winter",
+      "ordering winter goods far ahead of the weather",
+      "extra warehouse space for cold-weather machines",
+      "committing to volume before the forecast firmed up",
+      "a purchase we made to lock in pricing",
+      "storing equipment months before it would sell",
+      "the early commitment on clearing machines",
+      "stocking up for a season that had not started",
+      "a big order placed over the summer",
+      "paying to hold machines until the first frost",
+      "the advance order that outgrew our shelves",
+      "the discount-driven purchase for cold months",
+      "overbuying in hopes of snowfall",
+      "product sitting around until the fall",
+      "the pre-season order we later regretted",
+      "an aggressive position taken by the buyers"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "garden_shortfall",
+     "vendor": "Greenhouse Logistics Inc",
+     "memos": [
+      "Perennial Overrun Holdover — cold storage",
+      "Perennial Overrun Holdover — plant care crew"
+     ],
+     "cross_memo": "Perennial Overrun Holdover — spoilage write-off",
+     "plain": [
+      "the perennial overrun holdover",
+      "the perennial overrun storage",
+      "the perennial overrun plant care"
+     ],
+     "oblique": [
+      "live goods that did not sell in spring",
+      "keeping flowering stock alive through winter",
+      "a surplus of potted greenery",
+      "nursery items we could not return",
+      "tending leftovers until the next season",
+      "a buying miss on the garden side",
+      "the living merchandise stuck on our hands",
+      "keeping the shrubs healthy while they waited",
+      "weather that depressed garden demand",
+      "paying a crew to water unsold greenery",
+      "the carryover from a cool wet season",
+      "protected space for things that grow",
+      "lost opportunity in the outdoor category",
+      "an oversupply of landscaping stock",
+      "what we did with plants nobody bought",
+      "a cold-weather hold on perishable inventory"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Member Store Support",
+   "aliases": [
+    "store support",
+    "member support",
+    "field services",
+    "retailer support",
+    "member services spend"
+   ],
+   "narrative": [
+    "Store support",
+    "Member support",
+    "Field services"
+   ],
+   "recurring": [
+    {
+     "vendor": "Fieldline Merchandising Group",
+     "base": 13800,
+     "memo": "Field merchandiser contract labor"
+    },
+    {
+     "vendor": "Shelfsmart Planogram Services",
+     "base": 4400,
+     "memo": "Planogram updates"
+    },
+    {
+     "vendor": "Trailhead Training Associates",
+     "base": 3000,
+     "memo": "Monthly staff training modules"
+    }
+   ],
+   "events": [
+    {
+     "key": "remodel_grant",
+     "vendor": "Fieldline Merchandising Group",
+     "memos": [
+      "Orchard Lane Remodel — fixture package",
+      "Orchard Lane Remodel — reset labor"
+     ],
+     "cross_memo": "Orchard Lane Remodel — grand reopening ads",
+     "plain": [
+      "the orchard lane remodel",
+      "the orchard lane remodel fixtures",
+      "the orchard lane remodel reset"
+     ],
+     "oblique": [
+      "helping one owner modernize the sales floor",
+      "a makeover of a single location",
+      "new display units and a reorganized layout",
+      "investing in a struggling shop",
+      "a facelift for a member in a growing suburb",
+      "the interior overhaul funded centrally",
+      "support for a store reopening",
+      "a showpiece location we assisted",
+      "reworking aisles to match the template",
+      "what we contributed toward one owner's renovation",
+      "a pilot for the next-generation format",
+      "the team we sent to rearrange a shop",
+      "the capital assistance for one outlet",
+      "one member's expansion that we backed",
+      "a store-level project with our fingerprints",
+      "upgrading the look of a flagship site"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "software_migration",
+     "vendor": "Pointbridge Retail Systems",
+     "memos": [
+      "Register Cutover Wave Two — terminal imaging",
+      "Register Cutover Wave Two — onsite trainers"
+     ],
+     "cross_memo": "Register Cutover Wave Two — data conversion",
+     "plain": [
+      "the register cutover wave two",
+      "the register cutover wave",
+      "the register cutover terminals"
+     ],
+     "oblique": [
+      "moving checkout stations to a new platform",
+      "switching the point-of-sale at several stores",
+      "replacing the old tills with updated ones",
+      "trainers deployed to ringers at member stores",
+      "the second group of stores to change systems",
+      "technology transition at the front counter",
+      "getting cashiers comfortable with new screens",
+      "the conversion of transaction software",
+      "a hardware and software swap at the front end",
+      "changing how sales are rung up",
+      "specialists traveling to install new machines",
+      "the rollout that kept some stores offline overnight",
+      "an upgrade to the way we scan barcodes",
+      "the technology refresh across the membership",
+      "a staged replacement of the old setup",
+      "new equipment where customers pay"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Hazmat and Compliance",
+   "aliases": [
+    "hazmat",
+    "compliance costs",
+    "regulatory compliance",
+    "safety compliance",
+    "chemical handling"
+   ],
+   "narrative": [
+    "Hazmat costs",
+    "Compliance costs",
+    "Chemical handling"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenpath Waste Disposal",
+     "base": 5800,
+     "memo": "Hazardous waste pickup"
+    },
+    {
+     "vendor": "Veridian Environmental Testing",
+     "base": 2700,
+     "memo": "Quarterly air and soil sampling"
+    },
+    {
+     "vendor": "SafeShelf Regulatory Consulting",
+     "base": 3500,
+     "memo": "Label and SDS compliance retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "propane_audit",
+     "vendor": "SafeShelf Regulatory Consulting",
+     "memos": [
+      "Cylinder Exchange Audit — site walkthroughs",
+      "Cylinder Exchange Audit — remediation plan"
+     ],
+     "cross_memo": "Cylinder Exchange Audit — fine settlement",
+     "plain": [
+      "the cylinder exchange audit",
+      "the cylinder exchange audit walkthroughs",
+      "the cylinder exchange audit plan"
+     ],
+     "oblique": [
+      "an inspector's visit to the gas bottle cages",
+      "a surprise review of our fuel canister program",
+      "regulators looking at how we store pressurized fuel",
+      "correcting findings from a government check",
+      "documentation fixes after an official inspection",
+      "a penalty and the work to avoid another",
+      "outside experts tracing how tanks are tracked",
+      "making sure stored gas met the code",
+      "paperwork and physical changes ordered by the fire marshal",
+      "tightening procedures after a citation",
+      "what authorities required us to improve",
+      "the compliance scare at the exchange cages",
+      "an agency finding that drew in consultants",
+      "the investigation of how we handle canisters",
+      "upgrading cages and logs in response",
+      "a review that ended in corrective action"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "paint_recall",
+     "vendor": "Blue Heron Disposal & Recovery",
+     "memos": [
+      "Solvent Stripper Recall — returned pallets",
+      "Solvent Stripper Recall — drum incineration"
+     ],
+     "cross_memo": "Solvent Stripper Recall — customer refunds",
+     "plain": [
+      "the solvent stripper recall",
+      "the solvent stripper recall pallets",
+      "the solvent stripper recall incineration"
+     ],
+     "oblique": [
+      "pulling a product off the shelves for safety",
+      "a supplier's notice about a harmful formula",
+      "destroying goods that could no longer be sold",
+      "reclaiming containers from member stores",
+      "the cost of retrieving something we had distributed",
+      "a defective batch that had to be destroyed",
+      "handling returns of a product the maker withdrew",
+      "special disposal of banned inventory",
+      "the withdrawal of an item flagged by regulators",
+      "trucking dangerous leftovers to a licensed facility",
+      "taking back what we sold and burning it",
+      "an item that failed a toxicity review",
+      "the clean break from a problem supplier",
+      "retrieving cans from every location",
+      "the stop-sale order that hit our catalog",
+      "getting dangerous product out of circulation"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Trade Show and Member Events",
+   "aliases": [
+    "trade show",
+    "member events",
+    "market week",
+    "annual meeting costs",
+    "convention spend"
+   ],
+   "narrative": [
+    "Trade show",
+    "Member events",
+    "Market week"
+   ],
+   "recurring": [
+    {
+     "vendor": "Expo Hall Rentals",
+     "base": 4800,
+     "memo": "Booth space and deposit installments"
+    },
+    {
+     "vendor": "Gatherwell Catering",
+     "base": 2200,
+     "memo": "Member meeting catering"
+    }
+   ],
+   "events": [
+    {
+     "key": "dealer_summit",
+     "vendor": "Expo Hall Rentals",
+     "memos": [
+      "Dealer Summit Keynote Weekend — ballroom hire",
+      "Dealer Summit Keynote Weekend — stage production"
+     ],
+     "cross_memo": "Dealer Summit Keynote Weekend — speaker travel",
+     "plain": [
+      "the dealer summit keynote weekend",
+      "the dealer summit keynote",
+      "the dealer summit keynote ballroom"
+     ],
+     "oblique": [
+      "our biggest gathering of owners this year",
+      "a multi-day meeting with a famous speaker",
+      "the flagship convention for the cooperative",
+      "lights and sound for a large audience",
+      "bringing every store together under one roof",
+      "the annual celebration for the membership",
+      "a headline address and the setup around it",
+      "a sprawling off-site conference",
+      "the production values at the main session",
+      "the venue we booked for hundreds of attendees",
+      "the event where new initiatives were announced",
+      "a show that dwarfed our usual meetings",
+      "the weekend retreat for shareholders",
+      "bigger staging than in prior years",
+      "the premium venue chosen this time",
+      "the showpiece event on the calendar"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "vendor_fair",
+     "vendor": "Harborview Convention Services",
+     "memos": [
+      "Tool Showcase Pavilion — booth fabrication",
+      "Tool Showcase Pavilion — demo inventory"
+     ],
+     "cross_memo": "Tool Showcase Pavilion — shipping crates",
+     "plain": [
+      "the tool showcase pavilion",
+      "the tool showcase pavilion booth",
+      "the tool showcase pavilion demo stock"
+     ],
+     "oblique": [
+      "a custom exhibit for our suppliers' wares",
+      "hands-on displays at a regional fair",
+      "building a space where members try power equipment",
+      "a temporary structure that vendors helped fund",
+      "getting product in front of buyers at an expo",
+      "the custom-built stand",
+      "units we gave away to attract visitors",
+      "a display that traveled across the region",
+      "the exhibit we assembled for the trade audience",
+      "carpentry for a one-time display",
+      "samples set up for hands-on testing",
+      "what we showed off to prospective members",
+      "the footprint we took at the fair",
+      "a promotional space with working demonstrations",
+      "our presence at the industry gathering",
+      "a temporary storefront inside a hall"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

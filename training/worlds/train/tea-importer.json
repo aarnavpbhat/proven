@@ -1,0 +1,725 @@
+{
+ "slug": "tea-importer",
+ "industry": "tea importer",
+ "entities": [
+  "Verdant Leaf Imports",
+  "Kettle & Crane Trading Co",
+  "Silkroad Steeping Partners",
+  "Highland Chest Tea Merchants",
+  "Amber Pavilion Importers"
+ ],
+ "accounts": [
+  {
+   "name": "Ocean Freight & Container Charges",
+   "aliases": [
+    "ocean freight",
+    "container charges",
+    "sea freight",
+    "freight in",
+    "shipping lines",
+    "inbound freight"
+   ],
+   "narrative": [
+    "Ocean freight",
+    "Container charges",
+    "Sea freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pacific Meridian Lines",
+     "base": 24000,
+     "memo": "Inv Ocean frt - 40ft FCL Colombo/Oakland"
+    },
+    {
+     "vendor": "Harbor Gate Drayage",
+     "base": 9500,
+     "memo": "Svc Port drayage and chassis"
+    },
+    {
+     "vendor": "Tidewater Forwarding",
+     "base": 6200,
+     "memo": "Inv Forwarder handling fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "typhoon",
+     "vendor": "Pacific Meridian Lines",
+     "memos": [
+      "Inv Rerouting surcharge - Typhoon Haishen diversion",
+      "Inv Emergency bunker adj - Typhoon Haishen diversion"
+     ],
+     "cross_memo": "Typhoon Haishen diversion - extra warehouse storage days",
+     "plain": [
+      "the Typhoon Haishen diversion",
+      "the Haishen diversion surcharges",
+      "the Typhoon Haishen rerouting"
+     ],
+     "oblique": [
+      "the storm that pushed our vessels off course",
+      "the weather event in the East Asian sea lanes",
+      "ships taking the long way around",
+      "the severe cyclone disrupting our sailings",
+      "extra days at sea for the Taiwan-area cargo",
+      "the unplanned change to the vessel route",
+      "carriers passing the cost of detours on to us",
+      "the tropical storm that closed ports",
+      "the emergency fuel adjustment for the longer voyage",
+      "the weather delay on the Asian leg",
+      "the carrier's storm-related add-on charges",
+      "a cyclone season shipping disruption",
+      "the rerouted autumn sailings",
+      "the cost of dodging dangerous seas",
+      "the lengthened crossing for the spring pickings",
+      "unexpected storm-related transit costs"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "labelstrike",
+     "vendor": "Gulf Anchor Stevedoring",
+     "memos": [
+      "Svc Dockworker walkout - Gulf Anchor standby labor",
+      "Inv Gulf Anchor strike premium - vessel unload"
+     ],
+     "cross_memo": "Dockworker walkout - Gulf Anchor demurrage at terminal",
+     "plain": [
+      "the dockworker walkout",
+      "the Gulf Anchor walkout premiums",
+      "the Gulf Anchor strike standby"
+     ],
+     "oblique": [
+      "the labor dispute at the port",
+      "work stoppage among the longshore crews",
+      "containers stuck waiting at the terminal",
+      "paying crews to stand by",
+      "the picket line at the harbor",
+      "delays unloading our ships",
+      "the union action that froze cargo handling",
+      "overtime to clear the backlog afterward",
+      "the days our boxes sat untouched",
+      "the industrial action on the waterfront",
+      "the premium rates to get vessels worked",
+      "a standoff between the port workers and their employer",
+      "the queue of ships that could not be emptied",
+      "the bargaining impasse affecting our unloading",
+      "extra fees while the quay was shut",
+      "the labor unrest hitting our arrivals"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Cold Storage & Bonded Warehousing",
+   "aliases": [
+    "cold storage",
+    "bonded warehouse",
+    "warehousing",
+    "storage costs",
+    "bonded storage",
+    "warehouse costs"
+   ],
+   "narrative": [
+    "Cold storage",
+    "Bonded warehousing",
+    "Storage costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northgate Bonded Logistics",
+     "base": 18500,
+     "memo": "Mnt Bonded whse rent - Bays 4-9"
+    },
+    {
+     "vendor": "Polar Shelf Storage",
+     "base": 7800,
+     "memo": "Svc Climate-ctrl pallet storage"
+    },
+    {
+     "vendor": "Dockside Inventory Services",
+     "base": 4300,
+     "memo": "Inv Cycle count labor"
+    }
+   ],
+   "events": [
+    {
+     "key": "humidor",
+     "vendor": "Polar Shelf Storage",
+     "memos": [
+      "Inv Dehumidifier retrofit - Aisle C moisture control",
+      "Svc Moisture sensor install - Aisle C dehumidifier"
+     ],
+     "cross_memo": "Dehumidifier retrofit - electrician contract labor",
+     "plain": [
+      "the dehumidifier retrofit",
+      "the Aisle C dehumidifier work",
+      "the moisture sensor install"
+     ],
+     "oblique": [
+      "keeping the air dry around the leaf",
+      "the damp problem that threatened the stock",
+      "upgrading the climate gear after a mold scare",
+      "spoilage prevention measures",
+      "new equipment so the tea stops absorbing wetness",
+      "the humidity excursion we had to correct",
+      "protecting inventory from going stale",
+      "the fix for the musty smell in the racks",
+      "an insurer-requested environment upgrade",
+      "the monitoring kit and drying units",
+      "the work to stabilize the room conditions",
+      "the quality hold triggered by damp pallets",
+      "getting the building to hold a safe dryness level",
+      "the remedial work on the leaf environment",
+      "the response to the moldy sample report",
+      "the capital-style improvement to our dry room"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "overflow",
+     "vendor": "Cascadia Overflow Vault",
+     "memos": [
+      "Inv Cascadia Overflow Vault - Q4 peak pallet lease",
+      "Svc Overflow pallet lease - Cascadia holiday surge"
+     ],
+     "cross_memo": "Cascadia holiday surge - trucking between sites",
+     "plain": [
+      "the Cascadia overflow lease",
+      "the Cascadia holiday surge",
+      "the peak pallet lease"
+     ],
+     "oblique": [
+      "extra space rented for the gifting season",
+      "a second building when ours filled up",
+      "the seasonal inventory bulge",
+      "more room for the autumn arrivals",
+      "renting someone else's racks temporarily",
+      "the crush of stock before year end",
+      "capacity we did not own",
+      "the temporary site for surplus tins",
+      "a short-term footprint expansion",
+      "the stockpile built ahead of demand",
+      "hauling the extra goods to an outside facility",
+      "the holiday buying ramp-up",
+      "overflow from the fall shipments",
+      "space crunch at our main facility",
+      "the short-notice square footage",
+      "the seasonal buildup of gift sets"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Customs Duties & Brokerage Fees",
+   "aliases": [
+    "customs",
+    "duties",
+    "customs brokerage",
+    "brokerage fees",
+    "import duties",
+    "tariff costs"
+   ],
+   "narrative": [
+    "Customs",
+    "Import duties",
+    "Brokerage fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sterling Customs Brokers",
+     "base": 8800,
+     "memo": "Inv Entry filing fees - monthly"
+    },
+    {
+     "vendor": "Federal Entry Bond Agency",
+     "base": 3100,
+     "memo": "Qtr Continuous bond premium accrual"
+    }
+   ],
+   "events": [
+    {
+     "key": "reclass",
+     "vendor": "Sterling Customs Brokers",
+     "memos": [
+      "Inv HTS reclassification - oolong blend audit",
+      "Svc Prior-entry amendment - oolong blend audit"
+     ],
+     "cross_memo": "HTS reclassification - outside trade counsel retainer",
+     "plain": [
+      "the HTS reclassification",
+      "the oolong blend audit",
+      "the prior-entry amendments"
+     ],
+     "oblique": [
+      "the agency disagreeing with how we categorized the product",
+      "paperwork redone for earlier shipments",
+      "a government review of our paperwork",
+      "the rate dispute on flavored leaf",
+      "correcting what we declared last year",
+      "the retroactive true-up with the authorities",
+      "lawyers and filers sorting out the tariff code",
+      "the official challenge to our paperwork",
+      "revisiting how the mixes were declared",
+      "back-dated corrections to past filings",
+      "the inspector's finding on our product category",
+      "the resubmission of old import documents",
+      "a higher bracket applied after review",
+      "cleanup of earlier declarations",
+      "the compliance exercise on blended products",
+      "the tax authority's second look at our imports"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "antidump",
+     "vendor": "Meridian Trade Remedies LLP",
+     "memos": [
+      "Inv Meridian Trade Remedies - antidumping deposit review",
+      "Svc Antidumping deposit true-up - Meridian review"
+     ],
+     "cross_memo": "Antidumping deposit review - supplemental bond top-up",
+     "plain": [
+      "the antidumping deposit review",
+      "the Meridian review deposits",
+      "the antidumping true-up"
+     ],
+     "oblique": [
+      "extra levies imposed on certain origins",
+      "the trade remedy case affecting our supplier country",
+      "the government's finding against foreign pricing",
+      "cash posted against a possible penalty tax",
+      "the retaliatory tariff exposure",
+      "a ruling that raised our landed cost",
+      "the official inquiry into low-priced imports",
+      "deposits that may be refunded or kept",
+      "the trade dispute spillover",
+      "a punitive rate on one sourcing region",
+      "the fine print of a sanctions-style action",
+      "security we had to pledge",
+      "the dumping petition by domestic growers",
+      "the regulatory squeeze on one supplier base",
+      "additional collateral for the border agency",
+      "the policy shift raising our import costs"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Tea Quality Testing & Certifications",
+   "aliases": [
+    "quality testing",
+    "tea testing",
+    "certifications",
+    "lab fees",
+    "quality assurance",
+    "organic certification"
+   ],
+   "narrative": [
+    "Quality testing",
+    "Lab fees",
+    "Certifications"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenbridge Analytical Labs",
+     "base": 5600,
+     "memo": "Svc Pesticide residue panel - monthly lots"
+    },
+    {
+     "vendor": "Taster's Guild Cupping Panel",
+     "base": 3400,
+     "memo": "Inv Sensory cupping evaluation"
+    },
+    {
+     "vendor": "OrganiCert Services",
+     "base": 2200,
+     "memo": "Qtr Organic cert surveillance accrual"
+    }
+   ],
+   "events": [
+    {
+     "key": "heavymetal",
+     "vendor": "Greenbridge Analytical Labs",
+     "memos": [
+      "Svc Retest program - lead arsenic screening",
+      "Inv Expanded lead arsenic screening - all Darjeeling lots"
+     ],
+     "cross_memo": "Lead arsenic screening - quarantine pallet handling",
+     "plain": [
+      "the lead arsenic screening",
+      "the expanded arsenic screening",
+      "the lead arsenic retest program"
+     ],
+     "oblique": [
+      "checking for toxic trace elements in the leaf",
+      "the contaminant scare at a customer",
+      "testing every lot from the hill region",
+      "safety verification demanded by buyers",
+      "the heavy element concern raised by a retailer",
+      "the broader sweep of incoming batches",
+      "a consumer safety inquiry",
+      "reassuring our wholesale accounts about purity",
+      "the investigation into possible poisons in the stock",
+      "extra sampling after a news report",
+      "the wider net for harmful residues",
+      "proof of safety for the big-box customer",
+      "holding suspect product until cleared",
+      "the health-agency-driven inspection",
+      "double-checking the mountain harvests",
+      "screening for dangerous metals"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "fairtrade",
+     "vendor": "Equitas Standards Council",
+     "memos": [
+      "Inv Equitas Standards Council - Fair Harvest audit fee",
+      "Svc Fair Harvest onsite audit - Equitas travel"
+     ],
+     "cross_memo": "Fair Harvest audit - translator and field coordinator",
+     "plain": [
+      "the Fair Harvest audit",
+      "the Equitas onsite audit",
+      "the Fair Harvest audit fee"
+     ],
+     "oblique": [
+      "the ethical sourcing inspection at the estates",
+      "proof that workers are treated fairly",
+      "a new social-compliance label we pursued",
+      "visiting the farms to verify wages",
+      "the badge our retail partners now require",
+      "an outside review of grower practices",
+      "certification of humane labor conditions",
+      "a stamp for the shelf packaging",
+      "the overseas visit by the assessors",
+      "the first-time approval process for the label",
+      "demonstrating responsible purchasing",
+      "sustainability paperwork for a supermarket chain",
+      "interviews with pickers on the plantations",
+      "the credential that unlocked a new account",
+      "the third-party check of supplier conduct",
+      "an expansion of our ethical program"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Packaging & Tin Supplies",
+   "aliases": [
+    "packaging",
+    "tin supplies",
+    "packaging materials",
+    "tins and tea bags",
+    "packaging costs",
+    "pouch and tin spend"
+   ],
+   "narrative": [
+    "Packaging",
+    "Tin supplies",
+    "Packaging materials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightcan Metal Works",
+     "base": 14200,
+     "memo": "Inv Lacquered tins 100g - monthly order"
+    },
+    {
+     "vendor": "Folio Print & Label",
+     "base": 6700,
+     "memo": "Inv Retail labels and cartons"
+    },
+    {
+     "vendor": "Pure Pulp Filter Co",
+     "base": 4900,
+     "memo": "Inv Unbleached sachet paper"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "Folio Print & Label",
+     "memos": [
+      "Inv Rebrand art plates - Heritage line relaunch",
+      "Svc Heritage line relaunch - die-cut proofs"
+     ],
+     "cross_memo": "Heritage line relaunch - agency design fee",
+     "plain": [
+      "the Heritage line relaunch",
+      "the Heritage rebrand art plates",
+      "the relaunch die-cut proofs"
+     ],
+     "oblique": [
+      "the fresh look for our flagship products",
+      "a visual identity overhaul",
+      "new artwork on everything we sell",
+      "the redesign of our best-known range",
+      "scrapping old stock of printed materials",
+      "the marketing-led makeover of our shelf presence",
+      "reprinting after the logo change",
+      "the updated graphics rolled out to stores",
+      "a face-lift for the premium collection",
+      "the creative refresh we commissioned",
+      "obsolete printed inventory written off",
+      "launching the new look",
+      "changing how our boxes appear",
+      "a brand-driven print run",
+      "the new design system applied to our goods",
+      "trial prints of the revised look"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "bamboo",
+     "vendor": "Ecoweave Fibre Supply",
+     "memos": [
+      "Inv Ecoweave Fibre Supply - bamboo canister trial",
+      "Svc Bamboo canister trial run - Ecoweave tooling"
+     ],
+     "cross_memo": "Bamboo canister trial - sample freight from Hanoi",
+     "plain": [
+      "the bamboo canister trial",
+      "the Ecoweave trial run",
+      "the bamboo canister tooling"
+     ],
+     "oblique": [
+      "an experiment with plant-based containers",
+      "the pilot of a greener vessel for the leaf",
+      "testing a replacement for metal",
+      "samples of a renewable alternative",
+      "the sustainability pilot at the packing line",
+      "a plastic-free packaging experiment",
+      "prototype runs for an environmental initiative",
+      "tooling for a new type of holder",
+      "the trial batch of eco-friendly casings",
+      "an innovation project in our packing materials",
+      "new moulds ordered for a pilot",
+      "responding to customers who want less waste",
+      "the small production test with a novel material",
+      "evaluating a different canister concept",
+      "overseas samples for the green project",
+      "the first shipment of experimental holders"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Sourcing Trips & Estate Relations",
+   "aliases": [
+    "sourcing trips",
+    "estate relations",
+    "origin travel",
+    "buying trips",
+    "grower relations",
+    "estate visits"
+   ],
+   "narrative": [
+    "Sourcing trips",
+    "Estate relations",
+    "Origin travel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Air Corporate Travel",
+     "base": 11200,
+     "memo": "Inv Airfare - buyer travel to origin"
+    },
+    {
+     "vendor": "Hillview Lodge & Guesthouses",
+     "base": 3800,
+     "memo": "Inv Lodging - estate visits"
+    }
+   ],
+   "events": [
+    {
+     "key": "auction",
+     "vendor": "Meridian Air Corporate Travel",
+     "memos": [
+      "Inv Kolkata auction week - buyer team airfare",
+      "Svc Kolkata auction week - catalog and bidding fees"
+     ],
+     "cross_memo": "Kolkata auction week - bonded sample courier",
+     "plain": [
+      "the Kolkata auction week",
+      "the Kolkata bidding fees",
+      "the Kolkata auction airfare"
+     ],
+     "oblique": [
+      "the annual flush sale where we bid on lots",
+      "sending the whole purchasing group abroad",
+      "competing for the best first-harvest leaf",
+      "the big buying event in eastern India",
+      "the competitive sale of the spring crop",
+      "registration to take part in the live bidding",
+      "the buyers' trip for the premium picks",
+      "securing allocation of top lots",
+      "the seasonal marketplace attendance",
+      "several people flying out for the sale",
+      "the once-a-year chance to purchase rare lots",
+      "tasting and bidding on the newly plucked leaf",
+      "cost of showing up at the trading floor",
+      "the catalog access needed to compete",
+      "our team at the open outcry sale",
+      "the travel for the main procurement event"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "landslide",
+     "vendor": "Kandy Highlands Relief Fund",
+     "memos": [
+      "Inv Kandy Highlands Relief Fund - Ridgeway landslide aid",
+      "Svc Ridgeway landslide aid - road repair contribution"
+     ],
+     "cross_memo": "Ridgeway landslide aid - emergency supplier advance",
+     "plain": [
+      "the Ridgeway landslide aid",
+      "the landslide road repair contribution",
+      "the Ridgeway relief fund"
+     ],
+     "oblique": [
+      "our help for a partner estate after a disaster",
+      "money given when a hillside collapsed",
+      "support for the growers hit by the slope failure",
+      "a goodwill gesture to a long-time supplier",
+      "humanitarian assistance in the plantation district",
+      "rebuilding the access route to the factory",
+      "keeping a key source afloat after the mudslide",
+      "emergency aid for the pluckers' village",
+      "standing by our farmers during a crisis",
+      "a donation that protects our supply",
+      "restoring the path trucks use to collect leaf",
+      "assistance after the heavy monsoon damage",
+      "our share of the recovery effort",
+      "relief spending for the community we buy from",
+      "the contribution to clear and repair the track",
+      "a gift to speed the estate's reopening"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Maintenance & Blending Operations",
+   "aliases": [
+    "blending operations",
+    "equipment maintenance",
+    "plant maintenance",
+    "blending room costs",
+    "machine upkeep",
+    "production maintenance"
+   ],
+   "narrative": [
+    "Blending operations",
+    "Equipment maintenance",
+    "Plant maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Tumbler Service",
+     "base": 5200,
+     "memo": "Mnt Blender and tumbler PM contract"
+    },
+    {
+     "vendor": "Clearwater Sanitation Co",
+     "base": 2900,
+     "memo": "Svc Food-grade sanitation - weekly"
+    },
+    {
+     "vendor": "Metro Industrial Electric",
+     "base": 1800,
+     "memo": "Inv Utilities and power - blend room"
+    }
+   ],
+   "events": [
+    {
+     "key": "sortline",
+     "vendor": "Precision Tumbler Service",
+     "memos": [
+      "Inv Optical sorter recalibration - Line 2 laser module",
+      "Svc Line 2 laser module replacement - optical sorter"
+     ],
+     "cross_memo": "Optical sorter recalibration - production downtime temp labor",
+     "plain": [
+      "the optical sorter recalibration",
+      "the Line 2 laser module",
+      "the optical sorter replacement"
+     ],
+     "oblique": [
+      "the machine that removes stems and defects went down",
+      "repairs to the leaf grading equipment",
+      "getting the inspection gear back to accuracy",
+      "a breakdown that slowed production",
+      "fixing a key piece of the processing line",
+      "the replacement of a failed component",
+      "temporary hands while the automated line was idle",
+      "restoring the quality-control machinery",
+      "a malfunction in our cleaning process",
+      "the costly repair of precision hardware",
+      "manual work to cover for a broken device",
+      "the vendor's fix for faulty detection",
+      "bringing the sifting station back online",
+      "an unplanned outage on the second production line",
+      "the new part for the camera-based sorting unit",
+      "stoppage on the line that sorts leaf by look"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "pestcontrol",
+     "vendor": "Sentinel Pest Solutions",
+     "memos": [
+      "Inv Sentinel Pest Solutions - moth fumigation treatment",
+      "Svc Moth fumigation treatment - Sentinel sealed-room"
+     ],
+     "cross_memo": "Moth fumigation treatment - destroyed stock disposal",
+     "plain": [
+      "the moth fumigation treatment",
+      "the Sentinel fumigation",
+      "the moth fumigation sealed-room"
+     ],
+     "oblique": [
+      "the insect infestation in the stored leaf",
+      "bugs found in the production area",
+      "treating the building for pests",
+      "the infestation that forced a shutdown",
+      "throwing out goods the vermin touched",
+      "an outbreak of winged intruders",
+      "the exterminator's emergency visit",
+      "containing the bug problem before it spread",
+      "clearing the facility of unwanted creatures",
+      "the health-inspection-driven cleanup",
+      "a sealed-off area during the eradication",
+      "stock that had to be scrapped after contamination",
+      "the aggressive treatment to stop the spread",
+      "tackling the critters in the blend room",
+      "an invasion that required chemical treatment",
+      "the cost of getting rid of the pests"
+     ],
+     "low": 9500,
+     "high": 19000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

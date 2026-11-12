@@ -1,0 +1,830 @@
+{
+ "slug": "video-game-studio",
+ "industry": "video game studio",
+ "entities": [
+  "Pixel Harbor Interactive",
+  "Gloomwood Games",
+  "Brightfall Studios",
+  "Tidal Fox Entertainment",
+  "Ember Quill Interactive"
+ ],
+ "accounts": [
+  {
+   "name": "Cloud Server Hosting",
+   "aliases": [
+    "servers",
+    "server costs",
+    "hosting",
+    "cloud bill",
+    "hosting spend"
+   ],
+   "narrative": [
+    "Server costs",
+    "Hosting spend",
+    "Cloud bill"
+   ],
+   "recurring": [
+    {
+     "vendor": "Nimbus Compute",
+     "base": 18000,
+     "memo": "Compute instances — multiplayer fleet"
+    },
+    {
+     "vendor": "Stratus CDN",
+     "base": 6000,
+     "memo": "Content delivery — patch downloads"
+    },
+    {
+     "vendor": "Gridlock Databases",
+     "base": 4500,
+     "memo": "Managed database — player profiles"
+    }
+   ],
+   "events": [
+    {
+     "key": "betasurge",
+     "vendor": "Nimbus Compute",
+     "memos": [
+      "Open beta surge — burst capacity",
+      "Open beta surge — added zones"
+     ],
+     "cross_memo": "Open beta surge — support staffing",
+     "plain": [
+      "the open beta surge",
+      "open beta surge load",
+      "open beta surge usage"
+     ],
+     "oblique": [
+      "a flood of early testers logging in",
+      "the pre-release traffic spike",
+      "a crush of early testers",
+      "unexpected demand before launch",
+      "the public trial weekend",
+      "more machines spun up in Europe",
+      "overnight scaling to meet sign-ups",
+      "the waitlist being let in",
+      "a viral streamer sending crowds our way",
+      "queues of eager newcomers",
+      "the free-access preview weekend",
+      "keeping login lines short",
+      "temporary headroom for the early-access crowd",
+      "the traffic we did not forecast",
+      "pre-launch crowds",
+      "emergency scale-up requested by engineering"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "failover",
+     "vendor": "Ironvault Recovery Ltd",
+     "memos": [
+      "Datacenter failover rehearsal — standby cluster",
+      "Datacenter failover rehearsal — replication test"
+     ],
+     "cross_memo": "Datacenter failover rehearsal — overtime pay",
+     "plain": [
+      "the datacenter failover rehearsal",
+      "datacenter failover rehearsal work",
+      "datacenter failover rehearsal invoices"
+     ],
+     "oblique": [
+      "proving we can survive an outage",
+      "the resilience exercise ordered by the board",
+      "a dry run of the worst case",
+      "insurance-mandated resilience checks",
+      "pulling the plug on purpose to see what breaks",
+      "backup site readiness",
+      "business continuity checks",
+      "simulated blackout of our primary site",
+      "keeping a spare environment warm",
+      "the auditor's request to prove redundancy",
+      "mock crisis drills",
+      "contingency planning work",
+      "a spare copy of production switched on briefly",
+      "resilience certification prep",
+      "survivability trials",
+      "what we did to satisfy the risk committee"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Contract Art & Animation",
+   "aliases": [
+    "outsourced art",
+    "art contractors",
+    "external art",
+    "art outsourcing",
+    "contract art"
+   ],
+   "narrative": [
+    "Outsourced art",
+    "Art contractors",
+    "External art"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pixelforge Studios",
+     "base": 22000,
+     "memo": "Environment art — retainer"
+    },
+    {
+     "vendor": "Rigline Animation",
+     "base": 14000,
+     "memo": "Character animation — contract hours"
+    },
+    {
+     "vendor": "Concept Harbor",
+     "base": 5000,
+     "memo": "Concept sketches — batch"
+    }
+   ],
+   "events": [
+    {
+     "key": "trailer",
+     "vendor": "Pixelforge Studios",
+     "memos": [
+      "Reveal trailer cinematic — shot polish",
+      "Reveal trailer cinematic — render farm"
+     ],
+     "cross_memo": "Reveal trailer cinematic — festival booth",
+     "plain": [
+      "the reveal trailer cinematic",
+      "reveal trailer cinematic work",
+      "the reveal trailer cinematic push"
+     ],
+     "oblique": [
+      "the announcement video",
+      "our showcase film for the big expo",
+      "a minute and a half of scripted footage",
+      "the video that debuts the game to press",
+      "high-end promo footage",
+      "what the marketing lead asked for before the showcase",
+      "the opening-night teaser",
+      "pre-announcement video work",
+      "movie-quality sequences",
+      "the promotional film",
+      "frame-by-frame finishing on our debut spot",
+      "the big unveiling clip",
+      "overtime by the lighting team on the teaser",
+      "sizzle footage for investors",
+      "the debut spot",
+      "late changes to the announcement piece"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "mascot",
+     "vendor": "Lantern Hollow Collective",
+     "memos": [
+      "Mascot redesign sprint — turnaround sheets",
+      "Mascot redesign sprint — color variants"
+     ],
+     "cross_memo": "Mascot redesign sprint — trademark filing",
+     "plain": [
+      "the mascot redesign sprint",
+      "mascot redesign sprint work",
+      "the mascot redesign sprint invoices"
+     ],
+     "oblique": [
+      "giving our hero a fresh look",
+      "the face of the brand getting updated",
+      "new look for the franchise icon",
+      "a makeover of our flagship figure",
+      "the beloved figure's new appearance",
+      "reworking our logo creature",
+      "the studio's emblem refresh",
+      "post-feedback visual overhaul",
+      "fans disliked the old look",
+      "a quick turn on the new identity",
+      "the brand refresh",
+      "rethinking how our star looks",
+      "licensing-ready style update",
+      "the new face of the series",
+      "updated look requested by the publisher",
+      "emblem facelift"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Voice & Audio Production",
+   "aliases": [
+    "voiceover",
+    "audio production",
+    "voice work",
+    "sound spend",
+    "audio costs"
+   ],
+   "narrative": [
+    "Voiceover",
+    "Audio production",
+    "Voice work"
+   ],
+   "recurring": [
+    {
+     "vendor": "Echoline Sound",
+     "base": 9000,
+     "memo": "Sound design — retainer"
+    },
+    {
+     "vendor": "Castwell Talent",
+     "base": 7000,
+     "memo": "Voice actor sessions — scheduled"
+    },
+    {
+     "vendor": "Harmonic Score Co",
+     "base": 3000,
+     "memo": "Music licensing — library tracks"
+    }
+   ],
+   "events": [
+    {
+     "key": "cameo",
+     "vendor": "Castwell Talent",
+     "memos": [
+      "Celebrity cameo recording — studio day",
+      "Celebrity cameo recording — agent fee"
+     ],
+     "cross_memo": "Celebrity cameo recording — travel flights",
+     "plain": [
+      "the celebrity cameo recording",
+      "celebrity cameo recording fees",
+      "the celebrity cameo recording day"
+     ],
+     "oblique": [
+      "a famous face joining the cast",
+      "bringing in a household name",
+      "the star hire",
+      "a well-known performer lending their speech",
+      "A-list guest appearance",
+      "the big-name guest spot",
+      "the headline casting coup",
+      "a famous personality in a minor role",
+      "what we paid to land a known name",
+      "getting a famous person into the booth",
+      "the guest star line reads",
+      "marketing-friendly casting",
+      "a big-name performer's visit",
+      "the surprise casting announcement",
+      "premium casting for the villain",
+      "the high-profile hire"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "dubbing",
+     "vendor": "Wavefront Localization House",
+     "memos": [
+      "Brazilian dubbing pass — mixing",
+      "Brazilian dubbing pass — lip sync fixes"
+     ],
+     "cross_memo": "Brazilian dubbing pass — subtitle review",
+     "plain": [
+      "the brazilian dubbing pass",
+      "brazilian dubbing pass work",
+      "the brazilian dubbing pass invoices"
+     ],
+     "oblique": [
+      "the Portuguese-language version",
+      "adapting speech for a South American launch",
+      "translated spoken lines",
+      "the regional-language release",
+      "reaching our new Latin market",
+      "foreign-language performance work",
+      "the version for our largest overseas audience",
+      "swapping in another language",
+      "a second-language version of every line",
+      "international rollout of spoken content",
+      "region-specific spoken dialogue",
+      "the overseas edition",
+      "getting every line redone in another tongue",
+      "publisher-requested market expansion",
+      "our new territory",
+      "the translation of dialogue into a fresh market"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Platform Fees & Certification",
+   "aliases": [
+    "platform fees",
+    "certification",
+    "console fees",
+    "store fees",
+    "submission costs"
+   ],
+   "narrative": [
+    "Platform fees",
+    "Console fees",
+    "Submission costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Steamlane Distribution",
+     "base": 12000,
+     "memo": "Storefront revenue share — digital sales"
+    },
+    {
+     "vendor": "Consolekeys Dev Programs",
+     "base": 3000,
+     "memo": "Dev program seats — monthly"
+    },
+    {
+     "vendor": "Appmart Services",
+     "base": 4000,
+     "memo": "Listing admin — payout fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "agerating",
+     "vendor": "Steamlane Distribution",
+     "memos": [
+      "Age rating resubmission — board review",
+      "Age rating resubmission — expedite charge"
+     ],
+     "cross_memo": "Age rating resubmission — legal counsel",
+     "plain": [
+      "the age rating resubmission",
+      "age rating resubmission work",
+      "the age rating resubmission push"
+     ],
+     "oblique": [
+      "the content classification redo",
+      "a regulator pushing back on violence",
+      "re-clearing the game for minors",
+      "the mature-content label dispute",
+      "getting our suitability label approved again",
+      "a stricter classification in Europe",
+      "the rework after a flagged scene",
+      "the label we were forced to appeal",
+      "regulatory pushback on the build",
+      "an official content verdict",
+      "reclassification paperwork",
+      "the censorship dispute",
+      "re-clearing the shipped version",
+      "the watchdog's objections",
+      "a ruling on our content descriptors",
+      "the appeal over what teenagers may buy"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "goldmaster",
+     "vendor": "Greenlight Compliance Labs",
+     "memos": [
+      "Gold master recert — failed checklist",
+      "Gold master recert — retest slot"
+     ],
+     "cross_memo": "Gold master recert — weekend crunch meals",
+     "plain": [
+      "the gold master recert",
+      "gold master recert work",
+      "the gold master recert bill"
+     ],
+     "oblique": [
+      "the final build bouncing back from the console maker",
+      "a rejected release candidate",
+      "bugs caught at the last gate",
+      "the second attempt at approval",
+      "missing the technical bar",
+      "a go-live delay",
+      "the launch-week scramble to pass approval",
+      "late-night fixes to hit the ship date",
+      "rework demanded by the console gatekeepers",
+      "fixing what the gatekeepers rejected",
+      "the reapproval cycle",
+      "an overnight scramble before shipping",
+      "late technical corrections",
+      "approval round two",
+      "the release-candidate rejection",
+      "extra approval cycles"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "QA & Playtesting",
+   "aliases": [
+    "qa",
+    "qa costs",
+    "playtesting",
+    "testing spend",
+    "test vendors"
+   ],
+   "narrative": [
+    "QA costs",
+    "Playtesting",
+    "Testing spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bugnet QA Partners",
+     "base": 15000,
+     "memo": "Outsourced QA — regression passes"
+    },
+    {
+     "vendor": "Focuscircle Research",
+     "base": 5000,
+     "memo": "Playtest panels — recruited participants"
+    },
+    {
+     "vendor": "Devicebarn",
+     "base": 3000,
+     "memo": "Device lab rental — handsets"
+    }
+   ],
+   "events": [
+    {
+     "key": "controllers",
+     "vendor": "Bugnet QA Partners",
+     "memos": [
+      "Controller compatibility sweep — extra headcount",
+      "Controller compatibility sweep — peripheral matrix"
+     ],
+     "cross_memo": "Controller compatibility sweep — shipping hardware",
+     "plain": [
+      "the controller compatibility sweep",
+      "controller compatibility sweep hours",
+      "the controller compatibility sweep work"
+     ],
+     "oblique": [
+      "making sure every gamepad works",
+      "checking accessories from many brands",
+      "the input-gear verification",
+      "a surge of temp checkers",
+      "joysticks and wheels coverage",
+      "hands-on work with third-party gear",
+      "the plug-in accessory problems",
+      "a big batch of unusual add-ons",
+      "temporary staffing to cover odd gear",
+      "validating arcade sticks and pads",
+      "the plug-and-play audit",
+      "short-term bodies on the floor",
+      "support for obscure input gadgets",
+      "the add-on gear checkout",
+      "making older pads behave",
+      "a pile of accessory-related glitches"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "colorblind",
+     "vendor": "Nightowl Accessibility Consultants",
+     "memos": [
+      "Colorblind mode audit — contrast findings",
+      "Colorblind mode audit — remediation plan"
+     ],
+     "cross_memo": "Colorblind mode audit — UI revisions",
+     "plain": [
+      "the colorblind mode audit",
+      "colorblind mode audit findings",
+      "the colorblind mode audit work"
+     ],
+     "oblique": [
+      "making the game usable by players with vision differences",
+      "inclusive design review by outside experts",
+      "an outside expert's look at our visuals",
+      "disability-friendly options",
+      "the inclusion push",
+      "feedback from impaired users",
+      "hues that clash for some viewers",
+      "outside specialists examining our menus",
+      "being usable for everyone",
+      "a request from advocacy groups",
+      "making sure red and green are not confused",
+      "the equal-access review",
+      "the sight-impairment evaluation",
+      "a rating body's recommendation",
+      "specialist advice on inclusive options",
+      "readability checks"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "User Acquisition Marketing",
+   "aliases": [
+    "ua",
+    "user acquisition",
+    "ad spend",
+    "paid media",
+    "install campaigns"
+   ],
+   "narrative": [
+    "UA",
+    "User acquisition",
+    "Ad spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Adbridge Networks",
+     "base": 20000,
+     "memo": "Paid social — performance buys"
+    },
+    {
+     "vendor": "Clickharbor Video",
+     "base": 12000,
+     "memo": "Video ads — rewarded placements"
+    },
+    {
+     "vendor": "Streamfluence Agency",
+     "base": 6000,
+     "memo": "Creator partnerships — retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "wintersale",
+     "vendor": "Adbridge Networks",
+     "memos": [
+      "Winter sale blitz — bid increase",
+      "Winter sale blitz — banner inventory"
+     ],
+     "cross_memo": "Winter sale blitz — price markdown credit",
+     "plain": [
+      "the winter sale blitz",
+      "winter sale blitz push",
+      "the winter sale blitz run"
+     ],
+     "oblique": [
+      "the seasonal discount promotion",
+      "festive-period push",
+      "chasing shoppers during the holidays",
+      "year-end promotional burst",
+      "aggressive outlay when the storefront runs promotions",
+      "gift-season campaign",
+      "the cold-weather promotion",
+      "capturing holiday demand",
+      "a big seasonal discount event",
+      "end-of-year traffic chase",
+      "the festive promo run",
+      "boosting visibility while discounts ran",
+      "outsized exposure over the gifting period",
+      "a shopping-season surge",
+      "promotional weeks at year end",
+      "the discount-event marketing"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "streamer",
+     "vendor": "Polaris Influence Group",
+     "memos": [
+      "Streamer showcase weekend — sponsorships",
+      "Streamer showcase weekend — gifted keys"
+     ],
+     "cross_memo": "Streamer showcase weekend — hotel block",
+     "plain": [
+      "the streamer showcase weekend",
+      "streamer showcase weekend costs",
+      "the streamer showcase weekend push"
+     ],
+     "oblique": [
+      "funding broadcasters to play our title live",
+      "live-broadcast personalities trying the build",
+      "the online celebrities we hosted",
+      "free copies handed to online personalities",
+      "a two-day in-person gathering for content makers",
+      "getting famous gamers on camera",
+      "the live-play promotion",
+      "personalities with big followings",
+      "an invite-only meetup",
+      "reach through online personalities",
+      "the live play sessions we backed",
+      "promotional play-throughs",
+      "buzz from people with big audiences",
+      "live-play coverage we financed",
+      "freebies for people with big audiences",
+      "a content-maker get-together"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Software & Engine Licenses",
+   "aliases": [
+    "licenses",
+    "software",
+    "engine licenses",
+    "tooling",
+    "software subscriptions"
+   ],
+   "narrative": [
+    "Licenses",
+    "Software",
+    "Engine licenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Unitron Engine",
+     "base": 11000,
+     "memo": "Engine seats — per developer"
+    },
+    {
+     "vendor": "Polyline Tools",
+     "base": 4000,
+     "memo": "Asset pipeline suite — subscription"
+    },
+    {
+     "vendor": "Gitvault",
+     "base": 2500,
+     "memo": "Source control — hosted"
+    }
+   ],
+   "events": [
+    {
+     "key": "royalty",
+     "vendor": "Unitron Engine",
+     "memos": [
+      "Retroactive royalty settlement — prior quarters",
+      "Retroactive royalty settlement — revenue tier"
+     ],
+     "cross_memo": "Retroactive royalty settlement — outside lawyers",
+     "plain": [
+      "the retroactive royalty settlement",
+      "retroactive royalty settlement payment",
+      "the retroactive royalty settlement bill"
+     ],
+     "oblique": [
+      "back-billing for earlier periods",
+      "the vendor catching up on what we owed",
+      "an unexpected true-up invoice",
+      "crossing a sales threshold we had missed",
+      "making good on underpaid amounts",
+      "the catch-up payment after their review",
+      "a bill landing for years gone by",
+      "the owed difference after an inspection",
+      "the maker's claim",
+      "a surprise demand from the supplier",
+      "our success pushing us into a higher bracket",
+      "the dispute we closed out quietly",
+      "an agreement resolving old shortfalls",
+      "back charges",
+      "the true-up of past usage",
+      "the lump sum that ended the disagreement"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "telemetry",
+     "vendor": "Kestrel Analytics Works",
+     "memos": [
+      "Telemetry dashboard rollout — annual platform",
+      "Telemetry dashboard rollout — onboarding"
+     ],
+     "cross_memo": "Telemetry dashboard rollout — data engineer training",
+     "plain": [
+      "the telemetry dashboard rollout",
+      "telemetry dashboard rollout fees",
+      "the telemetry dashboard rollout work"
+     ],
+     "oblique": [
+      "a new way to see player behavior",
+      "metrics visibility for the live team",
+      "the business intelligence purchase",
+      "tracking how people play",
+      "charts for the producers",
+      "the reporting upgrade",
+      "better insight into retention",
+      "a yearly contract with a number-crunching vendor",
+      "instrumentation requested by product management",
+      "getting numbers in front of leadership",
+      "the stats package the studio adopted",
+      "usage insight package",
+      "a measurement system for live operations",
+      "the number-tracking initiative",
+      "decision-support reporting",
+      "KPI visibility"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Office Rent & Facilities",
+   "aliases": [
+    "rent",
+    "office rent",
+    "facilities",
+    "office costs",
+    "studio space"
+   ],
+   "narrative": [
+    "Office rent",
+    "Facilities",
+    "Studio space"
+   ],
+   "recurring": [
+    {
+     "vendor": "Riverside Properties",
+     "base": 28000,
+     "memo": "Office lease — monthly base rent"
+    },
+    {
+     "vendor": "Brightway Utilities",
+     "base": 3000,
+     "memo": "Electricity — main floor"
+    },
+    {
+     "vendor": "Cleanwell Services",
+     "base": 2000,
+     "memo": "Janitorial — nightly"
+    }
+   ],
+   "events": [
+    {
+     "key": "mezzanine",
+     "vendor": "Riverside Properties",
+     "memos": [
+      "Mezzanine annex buildout — framing",
+      "Mezzanine annex buildout — permits"
+     ],
+     "cross_memo": "Mezzanine annex buildout — workstation furniture",
+     "plain": [
+      "the mezzanine annex buildout",
+      "mezzanine annex buildout work",
+      "the mezzanine annex buildout invoices"
+     ],
+     "oblique": [
+      "carving out room for new hires",
+      "the growth in team size",
+      "extra square footage",
+      "construction for added seating",
+      "the new wing",
+      "making space for the second team",
+      "walls going up in our unit",
+      "a construction project for bigger capacity",
+      "the landlord-approved renovation",
+      "converting storage into working space",
+      "contractors modifying the premises",
+      "the room we added for the new project team",
+      "the physical expansion",
+      "hammering and drywall",
+      "carpentry and wiring for extra desks",
+      "renovation costs approved by the CFO"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "badge",
+     "vendor": "Aegis Safeguard Systems",
+     "memos": [
+      "Badge access upgrade — door controllers",
+      "Badge access upgrade — camera install"
+     ],
+     "cross_memo": "Badge access upgrade — IT integration",
+     "plain": [
+      "the badge access upgrade",
+      "badge access upgrade work",
+      "the badge access upgrade invoices"
+     ],
+     "oblique": [
+      "locking down the premises",
+      "keeping unreleased builds from leaking",
+      "the new entry-control setup",
+      "a break-in scare prompting changes",
+      "tighter physical protection",
+      "protection requested by the publisher",
+      "surveillance for the server room",
+      "employee entry cards",
+      "keycards replacing old keys",
+      "after-hours intruder prevention",
+      "the protection overhaul",
+      "keeping outsiders out",
+      "the confidentiality requirement from partners",
+      "monitoring of entrances",
+      "the lock replacement project",
+      "guarding the studio"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

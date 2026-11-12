@@ -1,0 +1,718 @@
+{
+ "slug": "commercial-construction-contractor",
+ "industry": "commercial construction contractor",
+ "entities": [
+  "Ironvale Builders Inc",
+  "Copperline Construction Group",
+  "Harborview Contracting LLC",
+  "Summit Ridge General Contractors",
+  "Bluestone Commercial Builders"
+ ],
+ "accounts": [
+  {
+   "name": "Equipment Rental",
+   "aliases": [
+    "equipment rental",
+    "rental equipment",
+    "heavy equipment rentals",
+    "rented machinery",
+    "rental fleet spend"
+   ],
+   "narrative": [
+    "Equipment rental",
+    "Rental equipment",
+    "Heavy equipment rentals"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite State Equipment Rentals",
+     "base": 18500,
+     "memo": "Monthly rental - 20T excavator and skid steer"
+    },
+    {
+     "vendor": "Apex Lift & Access",
+     "base": 9200,
+     "memo": "Boom lift and scissor lift rental"
+    },
+    {
+     "vendor": "Redline Compaction Supply",
+     "base": 3400,
+     "memo": "Plate compactor and trench roller rental"
+    }
+   ],
+   "events": [
+    {
+     "key": "cranelift",
+     "vendor": "Granite State Equipment Rentals",
+     "memos": [
+      "Harbor Point Tower - Tower crane mobilization",
+      "Harbor Point Tower - Tower crane erection standby"
+     ],
+     "cross_memo": "Harbor Point Tower - Tower crane permit fee",
+     "plain": [
+      "the tower crane mobilization",
+      "the tower crane erection",
+      "the tower crane standby"
+     ],
+     "oblique": [
+      "getting the big hoist onto the downtown site",
+      "the tall lifting machine we brought in",
+      "what it cost to get steel overhead moving",
+      "the high-rise hoisting setup",
+      "bringing in equipment that reaches the upper floors",
+      "the skyline machine the owner required",
+      "lifting gear for the upper stories",
+      "setting up for vertical material handling",
+      "a one-time install of the tallest piece of jobsite machinery",
+      "the hoist we stood up before framing began",
+      "getting materials up past the tenth level",
+      "the specialty lift package for the new building",
+      "the tall rig that arrived on flatbeds",
+      "preparing the site for steel going vertical",
+      "the overhead lifting setup on the waterfront job",
+      "the heavy hoist that now towers over the lot"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "dewater",
+     "vendor": "Basin Pump & Drainage Co",
+     "memos": [
+      "Riverside Medical Annex - Dewatering wellpoint system",
+      "Riverside Medical Annex - Wellpoint pump rental"
+     ],
+     "cross_memo": "Riverside Medical Annex - Wellpoint discharge permit",
+     "plain": [
+      "the dewatering wellpoint system",
+      "the wellpoint pump rental",
+      "the dewatering wellpoint"
+     ],
+     "oblique": [
+      "keeping the excavation dry",
+      "handling the high water table at the clinic site",
+      "pulling groundwater out of the hole",
+      "the soggy conditions we hit below grade",
+      "the extra work after the rain filled the pit",
+      "pumping out the foundation area",
+      "managing water seeping into the dig",
+      "what it took to keep the footings workable",
+      "the wet ground surprise at the medical job",
+      "a temporary fix for flooding below the slab",
+      "the specialty setup that lowered the groundwater",
+      "gear brought in when the soil turned to mud",
+      "keeping the basement dig from filling up",
+      "the water problem that stalled excavation",
+      "drying out the site so work could continue",
+      "what the geotech report failed to anticipate"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Subcontractor Payments",
+   "aliases": [
+    "subcontractors",
+    "sub payments",
+    "subcontractor costs",
+    "subs",
+    "trade partner spend"
+   ],
+   "narrative": [
+    "Subcontractors",
+    "Sub payments",
+    "Subcontractor costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Electrical Contractors",
+     "base": 28000,
+     "memo": "Progress billing - electrical rough-in"
+    },
+    {
+     "vendor": "Meridian Mechanical Services",
+     "base": 25000,
+     "memo": "Progress billing - HVAC ductwork"
+    },
+    {
+     "vendor": "Clearwater Plumbing Group",
+     "base": 16500,
+     "memo": "Progress billing - plumbing and fixtures"
+    }
+   ],
+   "events": [
+    {
+     "key": "firestop",
+     "vendor": "Keystone Electrical Contractors",
+     "memos": [
+      "Lakeshore Office Park - Firestopping remediation",
+      "Lakeshore Office Park - Penetration sealing rework"
+     ],
+     "cross_memo": "Lakeshore Office Park - Firestopping inspection retest",
+     "plain": [
+      "the firestopping remediation",
+      "the penetration sealing rework",
+      "the firestopping rework"
+     ],
+     "oblique": [
+      "fixing what the fire marshal flagged",
+      "redoing gaps found during the walkthrough",
+      "the failed life-safety inspection",
+      "closing holes in the walls that should have been sealed",
+      "corrective work after the code review",
+      "the rework the inspector demanded",
+      "patching openings between floors",
+      "the deficiency list from the municipality",
+      "making the building pass its safety sign-off",
+      "repairing what was missed behind the drywall",
+      "the second pass through every shaft and chase",
+      "what it took to clear the occupancy hold",
+      "work we redid to satisfy the authority",
+      "the punch items tied to smoke and flame barriers",
+      "closing out the safety citation",
+      "cleanup of the unsealed openings"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "curtainwall",
+     "vendor": "Vantage Glazing Systems",
+     "memos": [
+      "Northgate Corporate Center - Curtainwall glazing installation",
+      "Northgate Corporate Center - Unitized glass panel erection"
+     ],
+     "cross_memo": "Northgate Corporate Center - Glazing scaffold rental",
+     "plain": [
+      "the curtainwall glazing installation",
+      "the unitized glass panel erection",
+      "the curtainwall glazing"
+     ],
+     "oblique": [
+      "the all-glass front of the new tower",
+      "enclosing the building envelope with windows",
+      "the specialty facade crew we brought on",
+      "what the architect wanted on the street side",
+      "the transparent exterior wall package",
+      "closing in the structure so interiors could start",
+      "the shiny outer skin of the office building",
+      "a new trade on the job for the exterior",
+      "the large pane delivery and hanging",
+      "the weathertight enclosure milestone",
+      "hiring a specialist for the outside surface",
+      "the wall system that went up floor by floor",
+      "the exterior package awarded late",
+      "dressing the building in reflective panels",
+      "making the shell watertight before winter",
+      "the outer wall subcontract that kicked off"
+     ],
+     "low": 30000,
+     "high": 60000
+    }
+   ]
+  },
+  {
+   "name": "Jobsite Safety and Compliance",
+   "aliases": [
+    "safety",
+    "jobsite safety",
+    "safety costs",
+    "compliance spend",
+    "safety and compliance"
+   ],
+   "narrative": [
+    "Safety",
+    "Jobsite safety",
+    "Safety costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Guardian Safety Supply",
+     "base": 4800,
+     "memo": "PPE restock - hard hats, vests, glasses"
+    },
+    {
+     "vendor": "Sentinel Site Inspections",
+     "base": 3600,
+     "memo": "Monthly OSHA compliance audit"
+    }
+   ],
+   "events": [
+    {
+     "key": "fallprotect",
+     "vendor": "Guardian Safety Supply",
+     "memos": [
+      "Eastbank Parking Structure - Guardrail netting installation",
+      "Eastbank Parking Structure - Perimeter tie-off anchors"
+     ],
+     "cross_memo": "Eastbank Parking Structure - Netting installer overtime",
+     "plain": [
+      "the guardrail netting installation",
+      "the perimeter tie-off anchors",
+      "the guardrail netting"
+     ],
+     "oblique": [
+      "keeping crews from going over the edge",
+      "the barrier work on the open decks",
+      "protection for people working at height",
+      "what the insurer asked us to add after the close call",
+      "preventing drops from the upper levels",
+      "the edge protection upgrade",
+      "making the open sides safe",
+      "work done after the near miss",
+      "catching anyone who slips off the slab",
+      "the harness hookup points we bolted in",
+      "the extra measures on the elevated floors",
+      "a response to the carrier's loss-control visit",
+      "safeguards along the unfinished perimeter",
+      "cover for the exposed outer boundary",
+      "the fix after the inspector cited our elevated work",
+      "what it cost to protect ironworkers up high"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "silica",
+     "vendor": "AirWise Environmental Testing",
+     "memos": [
+      "Union Street Renovation - Silica exposure monitoring",
+      "Union Street Renovation - Respirable dust sampling program"
+     ],
+     "cross_memo": "Union Street Renovation - Silica lab analysis fees",
+     "plain": [
+      "the silica exposure monitoring",
+      "the respirable dust sampling",
+      "the silica monitoring program"
+     ],
+     "oblique": [
+      "checking what workers were breathing during demolition",
+      "the air quality study on the old building",
+      "testing the haze from cutting concrete",
+      "a health-driven requirement from the owner",
+      "measuring particles in the work zone",
+      "the occupational health review of the tear-out",
+      "proof that the crew was not being harmed",
+      "clearing the air in the gutted building",
+      "the lung safety paperwork the agency wanted",
+      "what the union rep insisted on",
+      "sensors worn by the masons all month",
+      "the results we had to file with the state",
+      "gauging the fine powder from saw cutting",
+      "extra diligence on the old downtown job",
+      "the study triggered by the grinding work",
+      "checking the air around the cutting crew"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Project Insurance and Bonding",
+   "aliases": [
+    "bonding",
+    "insurance and bonding",
+    "surety costs",
+    "project insurance",
+    "bond premiums"
+   ],
+   "narrative": [
+    "Bonding",
+    "Surety costs",
+    "Bond premiums"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinnacle Surety Partners",
+     "base": 11000,
+     "memo": "Performance and payment bond amortization"
+    },
+    {
+     "vendor": "Cornerstone Risk Advisors",
+     "base": 8500,
+     "memo": "General liability premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "wrapup",
+     "vendor": "Cornerstone Risk Advisors",
+     "memos": [
+      "Westfield Hospital Wing - OCIP enrollment administration",
+      "Westfield Hospital Wing - Wrap-up program setup fee"
+     ],
+     "cross_memo": "Westfield Hospital Wing - OCIP safety consultant",
+     "plain": [
+      "the OCIP enrollment administration",
+      "the wrap-up program setup",
+      "the OCIP wrap-up"
+     ],
+     "oblique": [
+      "the owner's single policy for the whole job",
+      "coverage the client placed over all trades",
+      "enrolling every company on the project in one plan",
+      "paperwork to join the owner's umbrella",
+      "the hospital's centralized protection arrangement",
+      "getting each sub signed onto the master coverage",
+      "the admin load of a client-run program",
+      "what the health system required before mobilizing",
+      "an unusual coverage structure on the new wing",
+      "credits and fees tied to the owner's plan",
+      "enrollment of all the crews at the medical job",
+      "the program the owner placed instead of ours",
+      "the cost of joining a controlled policy",
+      "the setup work for the owner-provided protection",
+      "the master policy onboarding",
+      "registering every worker under the client's umbrella"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "cyberrider",
+     "vendor": "Tidewater Specialty Underwriters",
+     "memos": [
+      "Corporate - Pollution legal liability endorsement",
+      "Corporate - Contractors environmental rider"
+     ],
+     "cross_memo": "Corporate - Pollution liability broker fee",
+     "plain": [
+      "the pollution legal liability endorsement",
+      "the contractors environmental rider",
+      "the pollution liability rider"
+     ],
+     "oblique": [
+      "coverage for spills and contamination on brownfield work",
+      "protection against cleanup claims",
+      "a new policy add-on for dirty sites",
+      "what the lender asked us to carry",
+      "the extra shield for soil and groundwater risks",
+      "insurance for hazardous material surprises",
+      "a requirement from the redevelopment client",
+      "the added protection for old industrial lots",
+      "what we bought before taking the former factory job",
+      "cover for unexpected buried tanks",
+      "an upgrade to our umbrella for environmental exposure",
+      "the pricey addition we negotiated at renewal",
+      "safeguarding against toxic discovery",
+      "the clause the underwriter insisted on",
+      "the add-on tied to the contaminated land project",
+      "risk transfer for harmful substances in the ground"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Materials and Supplies",
+   "aliases": [
+    "materials",
+    "jobsite materials",
+    "building supplies",
+    "consumables",
+    "materials and supplies"
+   ],
+   "narrative": [
+    "Materials",
+    "Jobsite materials",
+    "Building supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Foundation Ready-Mix",
+     "base": 29000,
+     "memo": "Concrete deliveries - various pours"
+    },
+    {
+     "vendor": "Allied Lumber & Fastener",
+     "base": 12500,
+     "memo": "Framing lumber and hardware"
+    },
+    {
+     "vendor": "Summit Rebar & Wire",
+     "base": 9800,
+     "memo": "Reinforcing steel and tie wire"
+    }
+   ],
+   "events": [
+    {
+     "key": "winterpour",
+     "vendor": "Foundation Ready-Mix",
+     "memos": [
+      "Cedar Heights Apartments - Heated concrete surcharge",
+      "Cedar Heights Apartments - Accelerator admixture upcharge"
+     ],
+     "cross_memo": "Cedar Heights Apartments - Heated blanket rental",
+     "plain": [
+      "the heated concrete surcharge",
+      "the accelerator admixture upcharge",
+      "the heated concrete"
+     ],
+     "oblique": [
+      "pouring in freezing weather",
+      "the premium for cold-season placements",
+      "keeping slabs from freezing before they cure",
+      "what it cost to build through the deep chill",
+      "extra charges for working below freezing",
+      "the seasonal markup on foundation work",
+      "protecting fresh pours from frost",
+      "temperature-related price bumps",
+      "the schedule choice to keep going in January",
+      "special mix delivered on icy mornings",
+      "a fee for warm delivery in bad weather",
+      "the cost of not waiting for spring",
+      "the winter-only line on the pour tickets",
+      "cold snap pricing on the apartment slabs",
+      "modifications that let the crew pour at low temperatures",
+      "staying on schedule despite the freeze"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "steelsurge",
+     "vendor": "Ridgeline Metals Distribution",
+     "memos": [
+      "Delta Logistics Center - Structural steel price escalation",
+      "Delta Logistics Center - Mill surcharge on W-shapes"
+     ],
+     "cross_memo": "Delta Logistics Center - Steel freight expedite",
+     "plain": [
+      "the structural steel price escalation",
+      "the mill surcharge on W-shapes",
+      "the structural steel escalation"
+     ],
+     "oblique": [
+      "the market jump in beam costs",
+      "what the supplier added after the commodity spike",
+      "the higher price of the big iron",
+      "tariff-driven increases on the warehouse frame",
+      "mid-contract pricing changes on the building skeleton",
+      "a pricing clause that kicked in",
+      "the added charge when mills raised their rates",
+      "inflation on the heavy framing members",
+      "the premium we absorbed on the distribution center",
+      "what the vendor passed along after quoting",
+      "the unexpected markup on the main frame",
+      "cost growth in the metal package",
+      "the jump in what we paid for columns and girders",
+      "the global shortage hitting our bottom line",
+      "price movement between bid and delivery",
+      "a surprise from the steel market"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Project Site Overhead",
+   "aliases": [
+    "site overhead",
+    "jobsite overhead",
+    "general conditions",
+    "site costs",
+    "field office expenses"
+   ],
+   "narrative": [
+    "Site overhead",
+    "General conditions",
+    "Field office expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Basecamp Trailer Leasing",
+     "base": 6200,
+     "memo": "Field office trailer lease"
+    },
+    {
+     "vendor": "Metro Temp Power & Utilities",
+     "base": 4100,
+     "memo": "Temporary power and water usage"
+    },
+    {
+     "vendor": "CleanSweep Site Services",
+     "base": 2800,
+     "memo": "Dumpsters and site cleanup"
+    }
+   ],
+   "events": [
+    {
+     "key": "nightshift",
+     "vendor": "Metro Temp Power & Utilities",
+     "memos": [
+      "Crossroads Transit Hub - Temporary light tower array",
+      "Crossroads Transit Hub - Generator fuel for overnight work"
+     ],
+     "cross_memo": "Crossroads Transit Hub - Light tower operator wages",
+     "plain": [
+      "the temporary light tower array",
+      "the generator fuel for overnight work",
+      "the light tower array"
+     ],
+     "oblique": [
+      "working after dark on the transit job",
+      "the schedule that ran past sunset",
+      "illuminating the site so crews could keep going",
+      "what the city required for off-hours construction",
+      "the accelerated hours the client demanded",
+      "lamps and engines for the graveyard shift",
+      "making up lost days by working later",
+      "the evening operation at the station",
+      "keeping the lot bright for the late crews",
+      "the power we needed when the sun went down",
+      "costs from extending the workday",
+      "the push to finish before the service restart",
+      "a sequence change that moved work to the early morning",
+      "the lights we trucked in for the dark hours",
+      "what it took to run through the night",
+      "equipment to see by after hours"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "neighbor",
+     "vendor": "Quietside Community Relations",
+     "memos": [
+      "Harbor Lofts - Vibration monitoring and neighbor survey",
+      "Harbor Lofts - Pre-condition photo documentation"
+     ],
+     "cross_memo": "Harbor Lofts - Vibration seismograph rental",
+     "plain": [
+      "the vibration monitoring and neighbor survey",
+      "the pre-condition photo documentation",
+      "the vibration monitoring"
+     ],
+     "oblique": [
+      "keeping the adjacent owners from filing claims",
+      "recording how nearby buildings looked before we started",
+      "the paperwork protecting us from complaints next door",
+      "what the city asked for before pile driving",
+      "documentation to defend against settlement disputes",
+      "outreach to the people living around the dig",
+      "evidence of existing cracks in surrounding structures",
+      "safeguarding us against abutter lawsuits",
+      "the baseline record on the properties around the lot",
+      "goodwill work with the surrounding block",
+      "proof that shaking stayed within limits",
+      "the survey of nearby homes and shops",
+      "protection from damage allegations by the neighborhood",
+      "the condition report on the buildings across the street",
+      "the public relations side of heavy construction",
+      "a precaution demanded by the permit"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Fleet and Field Vehicles",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "field vehicles",
+    "truck expenses",
+    "vehicle spend"
+   ],
+   "narrative": [
+    "Fleet",
+    "Fleet costs",
+    "Truck expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmaster Fuel Cards",
+     "base": 14500,
+     "memo": "Diesel and gasoline - fleet fuel cards"
+    },
+    {
+     "vendor": "Ironhorse Truck Service",
+     "base": 7800,
+     "memo": "Scheduled maintenance - pickups and dump trucks"
+    },
+    {
+     "vendor": "Dependable Auto Insurance Group",
+     "base": 5200,
+     "memo": "Commercial auto premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "dumpengine",
+     "vendor": "Ironhorse Truck Service",
+     "memos": [
+      "Unit 14 Tri-Axle Dump Truck - Engine rebuild",
+      "Unit 14 Tri-Axle Dump Truck - Crankshaft and bearing replacement"
+     ],
+     "cross_memo": "Unit 14 Tri-Axle Dump Truck - Loaner truck rental",
+     "plain": [
+      "the Unit 14 engine rebuild",
+      "the Unit 14 crankshaft and bearing replacement",
+      "the tri-axle engine rebuild"
+     ],
+     "oblique": [
+      "bringing the oldest hauler back to life",
+      "the major mechanical overhaul on our biggest truck",
+      "what it cost to keep the heavy hauler running",
+      "a breakdown that sidelined the material truck",
+      "the power unit that gave out on the highway",
+      "an expensive repair instead of buying new",
+      "getting the aging workhorse back on the road",
+      "the shop work that took three weeks",
+      "the big repair on the truck that hauls spoils",
+      "the failure deep inside the motor",
+      "a costly decision to fix rather than replace",
+      "downtime on the vehicle we rely on most",
+      "the mechanical failure that stopped haul-off",
+      "what the mechanic found after it seized",
+      "work that gave the old rig another few years",
+      "heavy repairs on the one that moves dirt"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "telematics",
+     "vendor": "RouteSense Fleet Systems",
+     "memos": [
+      "Corporate Fleet - GPS tracking hardware install",
+      "Corporate Fleet - Driver behavior camera rollout"
+     ],
+     "cross_memo": "Corporate Fleet - GPS installer travel",
+     "plain": [
+      "the GPS tracking hardware install",
+      "the driver behavior camera rollout",
+      "the GPS tracking rollout"
+     ],
+     "oblique": [
+      "knowing where every pickup is at all times",
+      "the devices we added after the insurance review",
+      "watching how our drivers handle the roads",
+      "an initiative to cut accident claims",
+      "in-cab gadgets installed across the vehicles",
+      "the monitoring program for our people behind the wheel",
+      "hardware on every truck in the yard",
+      "what safety management recommended after the crash",
+      "tools to prove who was driving when",
+      "the technology upgrade on the vehicles",
+      "a premium reduction effort that cost upfront",
+      "dashboard units placed fleetwide",
+      "the rollout that took two weekends in the yard",
+      "keeping tabs on idling and speeding",
+      "one-time equipment to coach the crews",
+      "the electronic oversight we put in place"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

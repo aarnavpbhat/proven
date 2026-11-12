@@ -1,0 +1,830 @@
+{
+ "slug": "cruise-line",
+ "industry": "cruise line",
+ "entities": [
+  "Meridian Seas Cruises",
+  "Azure Horizon Voyages",
+  "Coralwake Cruise Holdings",
+  "Northstar Ocean Lines",
+  "Halcyon Isles Cruise Co"
+ ],
+ "accounts": [
+  {
+   "name": "Port Fees & Harbor Dues",
+   "aliases": [
+    "port fees",
+    "port charges",
+    "harbor dues",
+    "berthing costs",
+    "port spend"
+   ],
+   "narrative": [
+    "Port fees",
+    "Port charges",
+    "Harbor dues"
+   ],
+   "recurring": [
+    {
+     "vendor": "Caldera Bay Port Authority",
+     "base": 24000,
+     "memo": "Mnt berth dues - Caldera terminal"
+    },
+    {
+     "vendor": "Meridian Pilotage Svcs",
+     "base": 9500,
+     "memo": "Pilotage Svc Inv - monthly calls"
+    },
+    {
+     "vendor": "Seabright Line Handlers",
+     "base": 4200,
+     "memo": "Line handling Svc - Qtr contract monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "tender_pontoon",
+     "vendor": "Caldera Bay Port Authority",
+     "memos": [
+      "Tender pontoon rental - Inv 4471",
+      "Tender pontoon rental - setup"
+     ],
+     "cross_memo": "Tender pontoon rental - crew overtime",
+     "plain": [
+      "the tender pontoon rental",
+      "tender pontoon rental charges",
+      "the extra tender pontoon rental"
+     ],
+     "oblique": [
+      "the floating landing stage",
+      "getting guests ashore at anchorage stops",
+      "temporary shore access equipment",
+      "the anchorage day logistics",
+      "boats ferrying passengers to the pier",
+      "the leased jetty extension",
+      "ashore transfers at the shallow island stop",
+      "the anchored itinerary change",
+      "extra gangway hardware",
+      "floating platform hire",
+      "the island stop without a quay",
+      "keeping guests moving onto land",
+      "the makeshift dock",
+      "landing equipment the harbormaster required",
+      "shuttling people off the ship",
+      "the shallow-draft workaround"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "ballast_inspection",
+     "vendor": "Larkspur Environmental Marine",
+     "memos": [
+      "Ballast water inspection - sampling",
+      "Ballast water inspection - lab report"
+     ],
+     "cross_memo": "Ballast water inspection - engineering hours",
+     "plain": [
+      "the ballast water inspection",
+      "ballast water inspection fees",
+      "the required ballast water inspection"
+     ],
+     "oblique": [
+      "the regulator's discharge check",
+      "proving our tanks were clean",
+      "the compliance audit at the new home base",
+      "testing what we pump overboard",
+      "the invasive species compliance review",
+      "the treatment system verification",
+      "a coast guard spot check",
+      "the eco compliance visit",
+      "certifying the treatment plant",
+      "regulatory discharge testing",
+      "the surprise government audit",
+      "documentation the flag state asked for",
+      "the tank sediment survey",
+      "proving compliance before the season",
+      "the third-party discharge audit",
+      "an unscheduled regulatory review"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Marine Fuel & Lubricants",
+   "aliases": [
+    "marine fuel",
+    "bunker costs",
+    "bunkering",
+    "fuel spend",
+    "lube oil"
+   ],
+   "narrative": [
+    "Marine fuel",
+    "Bunker costs",
+    "Fuel spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pelagos Bunker Supply",
+     "base": 30000,
+     "memo": "Bunker delivery Inv - VLSFO"
+    },
+    {
+     "vendor": "Northcape Lubricants",
+     "base": 6800,
+     "memo": "Lube oil Mnt supply"
+    },
+    {
+     "vendor": "Harlow Fuel Testing",
+     "base": 1800,
+     "memo": "Fuel sample analysis Svc"
+    }
+   ],
+   "events": [
+    {
+     "key": "barge_topup",
+     "vendor": "Pelagos Bunker Supply",
+     "memos": [
+      "Emergency barge top-up - Inv 8812",
+      "Emergency barge top-up - surcharge"
+     ],
+     "cross_memo": "Emergency barge top-up - deck overtime",
+     "plain": [
+      "the emergency barge top-up",
+      "emergency barge top-up charges",
+      "the unplanned emergency barge top-up"
+     ],
+     "oblique": [
+      "the last-minute refuel at sea",
+      "refilling tanks mid-voyage",
+      "running short before the crossing",
+      "the rush replenishment",
+      "a premium-priced extra stem",
+      "the unscheduled offshore refuel",
+      "covering the shortfall after the reroute",
+      "extra tonnage taken on at anchor",
+      "the hurried storm-avoidance refill",
+      "replenishing outside the normal schedule",
+      "the spot-price purchase",
+      "a stopgap tank fill",
+      "keeping the ship from running dry",
+      "the off-cycle replenishment vessel",
+      "an urgent mid-route refill",
+      "the reroute's extra consumption"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "caustic_soda",
+     "vendor": "Solent Scrubber Chemicals",
+     "memos": [
+      "Scrubber caustic soda - drums",
+      "Scrubber caustic soda - freight"
+     ],
+     "cross_memo": "Scrubber caustic soda - disposal",
+     "plain": [
+      "the scrubber caustic soda",
+      "scrubber caustic soda purchases",
+      "the extra scrubber caustic soda"
+     ],
+     "oblique": [
+      "exhaust cleaning reagents",
+      "the alkali for emissions compliance",
+      "keeping sulfur output within limits",
+      "reagent restocking",
+      "the emissions system consumables",
+      "sodium hydroxide stock",
+      "meeting the sulfur cap in the new zone",
+      "the wash-water neutralizer",
+      "restocking exhaust treatment inputs",
+      "the emission control area itinerary",
+      "compliance consumables for the stack",
+      "neutralizing agent for the exhaust system",
+      "the sulfur cap restock",
+      "alkaline reagent purchases",
+      "the stack treatment refill",
+      "low-emission sailing costs"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Food & Beverage Provisioning",
+   "aliases": [
+    "provisioning",
+    "f&b provisions",
+    "galley stores",
+    "food costs",
+    "catering supplies"
+   ],
+   "narrative": [
+    "Provisioning",
+    "Galley stores",
+    "Food costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Azure Coast Foods",
+     "base": 28000,
+     "memo": "Provisions Inv - weekly galley load"
+    },
+    {
+     "vendor": "Tidewell Beverage Dist",
+     "base": 12000,
+     "memo": "Bar stock Mnt replenishment"
+    },
+    {
+     "vendor": "Brightfin Seafood",
+     "base": 7500,
+     "memo": "Seafood delivery Svc"
+    }
+   ],
+   "events": [
+    {
+     "key": "champagne_gala",
+     "vendor": "Tidewell Beverage Dist",
+     "memos": [
+      "Champagne gala order - Inv 3390",
+      "Champagne gala order - cases"
+     ],
+     "cross_memo": "Champagne gala order - glassware",
+     "plain": [
+      "the champagne gala order",
+      "champagne gala order costs",
+      "the larger champagne gala order"
+     ],
+     "oblique": [
+      "the sparkling wine for the captain's party",
+      "bubbly for the formal night",
+      "the celebration toast",
+      "the anniversary sailing festivities",
+      "premium fizz",
+      "the captain's reception",
+      "extra wine for the black-tie evening",
+      "the milestone voyage party",
+      "toasting the inaugural sailing",
+      "sparkling wine purchases",
+      "the welcome party upgrade",
+      "celebration drinks",
+      "the formal evening pour",
+      "what we poured at the big reception",
+      "the premium toast",
+      "festive wine for the charter group"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "holiday_pastry",
+     "vendor": "Coralline Pastry Atelier",
+     "memos": [
+      "Holiday pastry program - ingredients",
+      "Holiday pastry program - chef fee"
+     ],
+     "cross_memo": "Holiday pastry program - decor",
+     "plain": [
+      "the holiday pastry program",
+      "holiday pastry program costs",
+      "the new holiday pastry program"
+     ],
+     "oblique": [
+      "the seasonal desserts",
+      "the festive bakery menu",
+      "christmas sweets",
+      "gingerbread and yule logs",
+      "the visiting confectioner",
+      "seasonal baking",
+      "the year-end dessert spread",
+      "specialty cakes for the festive sailings",
+      "a guest patissier's residency",
+      "themed sweets for families aboard",
+      "the winter dessert buffet",
+      "confectionery for the festive cruises",
+      "the yule bakery push",
+      "imported butter and chocolate",
+      "the dessert upgrade",
+      "sugar work displays"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Dry Dock & Hull Maintenance",
+   "aliases": [
+    "dry dock",
+    "hull maintenance",
+    "shipyard costs",
+    "drydocking",
+    "hull upkeep"
+   ],
+   "narrative": [
+    "Dry dock",
+    "Hull maintenance",
+    "Shipyard costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ostrava Shipyard Svcs",
+     "base": 22000,
+     "memo": "Hull Mnt retainer - yard"
+    },
+    {
+     "vendor": "Bluekeel Diving",
+     "base": 5200,
+     "memo": "Underwater hull clean Svc"
+    },
+    {
+     "vendor": "Ferrant Coatings",
+     "base": 3800,
+     "memo": "Antifouling paint supply"
+    }
+   ],
+   "events": [
+    {
+     "key": "propeller_repair",
+     "vendor": "Ostrava Shipyard Svcs",
+     "memos": [
+      "Propeller blade repair - Inv 5520",
+      "Propeller blade repair - balancing"
+     ],
+     "cross_memo": "Propeller blade repair - tug assist",
+     "plain": [
+      "the propeller blade repair",
+      "propeller blade repair work",
+      "the urgent propeller blade repair"
+     ],
+     "oblique": [
+      "fixing the damaged screw",
+      "the prop strike aftermath",
+      "grounding damage to the drive",
+      "restoring thrust after the reef contact",
+      "the vibration fix",
+      "smoothing out the shaft vibration",
+      "propulsion damage",
+      "the debris strike",
+      "getting full speed back",
+      "the bent screw replacement",
+      "post-incident propulsion work",
+      "the reef contact",
+      "repairs after hitting a submerged log",
+      "the drivetrain fix the class surveyor ordered",
+      "propulsion remediation",
+      "the speed-loss problem"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "stabilizer_overhaul",
+     "vendor": "Kestrel Stabilizer Works",
+     "memos": [
+      "Stabilizer fin overhaul - parts",
+      "Stabilizer fin overhaul - labor"
+     ],
+     "cross_memo": "Stabilizer fin overhaul - technician travel",
+     "plain": [
+      "the stabilizer fin overhaul",
+      "stabilizer fin overhaul costs",
+      "the scheduled stabilizer fin overhaul"
+     ],
+     "oblique": [
+      "the anti-roll system rebuild",
+      "smoother sailing gear",
+      "fixing the seasickness complaints",
+      "the roll damping refurbishment",
+      "hydraulic seal replacement on the wings",
+      "the motion control upgrade",
+      "rebuilding the retractable foils",
+      "guest comfort equipment",
+      "the rough-weather comfort fix",
+      "the hydraulic actuator rebuild",
+      "foil seal renewal",
+      "the roll reduction gear",
+      "motion complaints remediation",
+      "the five-year foil teardown",
+      "keeping the ship steady",
+      "anti-roll hardware"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Shore Excursion Costs",
+   "aliases": [
+    "shore excursions",
+    "excursion costs",
+    "tour operator fees",
+    "excursions",
+    "shorex"
+   ],
+   "narrative": [
+    "Shore excursions",
+    "Excursion costs",
+    "Tour operator fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sunreach Tours",
+     "base": 18000,
+     "memo": "Excursion Inv - guided tours"
+    },
+    {
+     "vendor": "Isla Verde Transport",
+     "base": 8500,
+     "memo": "Coach transfers Svc"
+    },
+    {
+     "vendor": "Tradewind Snorkel Co",
+     "base": 4400,
+     "memo": "Snorkel trips Mnt settlement"
+    }
+   ],
+   "events": [
+    {
+     "key": "glacier_flights",
+     "vendor": "Sunreach Tours",
+     "memos": [
+      "Helicopter glacier flights - Inv 7740",
+      "Helicopter glacier flights - fuel levy"
+     ],
+     "cross_memo": "Helicopter glacier flights - marketing flyers",
+     "plain": [
+      "the helicopter glacier flights",
+      "helicopter glacier flights costs",
+      "added helicopter glacier flights"
+     ],
+     "oblique": [
+      "the ice field sightseeing by air",
+      "aerial sightseeing over the ice",
+      "the premium Alaska add-on",
+      "rotorcraft seat purchases",
+      "the chopper rides",
+      "airborne ice viewing",
+      "the high-end Juneau option",
+      "seats on the heli outings",
+      "landing on the ice cap",
+      "the scenic air packages",
+      "extra capacity on the aerial outings",
+      "the luxury ice-cap experience",
+      "airborne sightseeing demand",
+      "the chopper allotment",
+      "aerial outings for suite guests",
+      "the ice cap landings"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "canopy_zipline",
+     "vendor": "Canopia Adventure Park",
+     "memos": [
+      "Rainforest canopy zipline - safety gear",
+      "Rainforest canopy zipline - permits"
+     ],
+     "cross_memo": "Rainforest canopy zipline - liability rider",
+     "plain": [
+      "the rainforest canopy zipline",
+      "rainforest canopy zipline costs",
+      "the new rainforest canopy zipline"
+     ],
+     "oblique": [
+      "the jungle treetop ride",
+      "a new Costa Rica outing",
+      "cable-slide outings",
+      "the treetop launch",
+      "insurance for the high-wire outing",
+      "the treetop thrill product",
+      "launching the jungle outing",
+      "high-wire experiences",
+      "the new Central American offering",
+      "harnesses and helmets",
+      "the cloud forest ride",
+      "getting the treetop product approved",
+      "the jungle cable ride",
+      "new active-traveler options",
+      "the Puntarenas treetop debut",
+      "aerial cable experiences"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Onboard Entertainment",
+   "aliases": [
+    "entertainment",
+    "onboard shows",
+    "show costs",
+    "production costs",
+    "entertainment spend"
+   ],
+   "narrative": [
+    "Entertainment",
+    "Onboard shows",
+    "Show costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Starlit Talent Agency",
+     "base": 16000,
+     "memo": "Cast fees Inv - resident performers"
+    },
+    {
+     "vendor": "Harbourlight Sound & Light",
+     "base": 5600,
+     "memo": "AV equipment Mnt lease"
+    },
+    {
+     "vendor": "Gilded Note Musicians",
+     "base": 7200,
+     "memo": "Band contract Svc"
+    }
+   ],
+   "events": [
+    {
+     "key": "headliner_comedian",
+     "vendor": "Starlit Talent Agency",
+     "memos": [
+      "Headliner comedian booking - Inv 2201",
+      "Headliner comedian booking - rider"
+     ],
+     "cross_memo": "Headliner comedian booking - stateroom upgrade",
+     "plain": [
+      "the headliner comedian booking",
+      "headliner comedian booking costs",
+      "the extra headliner comedian booking"
+     ],
+     "oblique": [
+      "the big-name standup act",
+      "a celebrity stand-up guest",
+      "the marquee humor act",
+      "star billing for the theme cruise",
+      "the famous funnyman",
+      "a guest star for the humor week",
+      "the television personality we flew in",
+      "the star act",
+      "top-billed standup",
+      "the celebrity set",
+      "a name act for the charter",
+      "the late-night star",
+      "laughs from a famous name",
+      "the sold-out standup nights",
+      "the celebrity premium",
+      "a famous joke-teller"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "revue_relaunch",
+     "vendor": "Velvet Curtain Productions",
+     "memos": [
+      "Broadway revue relaunch - costumes",
+      "Broadway revue relaunch - choreography"
+     ],
+     "cross_memo": "Broadway revue relaunch - rehearsal lodging",
+     "plain": [
+      "the broadway revue relaunch",
+      "broadway revue relaunch costs",
+      "the planned broadway revue relaunch"
+     ],
+     "oblique": [
+      "the refreshed main-stage musical",
+      "new wardrobe for the theater show",
+      "restaging the flagship musical",
+      "the theater refresh",
+      "the new dance numbers",
+      "re-mounting the signature musical",
+      "outfits for the theater company",
+      "the main-stage overhaul",
+      "the musical theater revamp",
+      "new staging",
+      "the creative team's fee for the new routines",
+      "the show refresh",
+      "a revamped evening spectacle",
+      "sets and outfits",
+      "the theater investment",
+      "updating the marquee musical"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Crew Travel & Repatriation",
+   "aliases": [
+    "crew travel",
+    "crew flights",
+    "repatriation",
+    "sign-on travel",
+    "crew rotation travel"
+   ],
+   "narrative": [
+    "Crew travel",
+    "Crew flights",
+    "Repatriation"
+   ],
+   "recurring": [
+    {
+     "vendor": "Wayfarer Crew Logistics",
+     "base": 20000,
+     "memo": "Crew flights Inv - rotation"
+    },
+    {
+     "vendor": "Anchorline Hotels",
+     "base": 6000,
+     "memo": "Crew lodging Mnt block"
+    },
+    {
+     "vendor": "Portside Visa Agents",
+     "base": 2400,
+     "memo": "Visa processing Svc"
+    }
+   ],
+   "events": [
+    {
+     "key": "medevac_charter",
+     "vendor": "Wayfarer Crew Logistics",
+     "memos": [
+      "Medical evacuation charter - Inv 6610",
+      "Medical evacuation charter - escort"
+     ],
+     "cross_memo": "Medical evacuation charter - hospital deposit",
+     "plain": [
+      "the medical evacuation charter",
+      "medical evacuation charter costs",
+      "the unexpected medical evacuation charter"
+     ],
+     "oblique": [
+      "flying an injured seafarer home",
+      "the air ambulance",
+      "getting a sick sailor ashore fast",
+      "the urgent casualty airlift",
+      "the onboard injury",
+      "airlifting a deckhand to care",
+      "the emergency flight off the ship",
+      "the cardiac case in the Caribbean",
+      "a chartered jet for an ill engineer",
+      "the stroke patient transfer",
+      "flying a seafarer to surgery",
+      "the airlift",
+      "the injured deckhand",
+      "the clinic-to-airport dash",
+      "urgent care transport",
+      "the private jet for the patient"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "galley_recruitment",
+     "vendor": "Tessaro Manning Partners",
+     "memos": [
+      "Galley staff recruitment - placement fees",
+      "Galley staff recruitment - interview trips"
+     ],
+     "cross_memo": "Galley staff recruitment - training wages",
+     "plain": [
+      "the galley staff recruitment",
+      "galley staff recruitment costs",
+      "the larger galley staff recruitment"
+     ],
+     "oblique": [
+      "hiring new cooks",
+      "the kitchen hiring drive",
+      "replacing the chefs who quit",
+      "agency costs to fill kitchen vacancies",
+      "sourcing culinary hires from Manila",
+      "the new-ship kitchen team",
+      "filling empty cook berths",
+      "headhunting for the restaurants",
+      "the culinary hiring push",
+      "bringing on extra cooks",
+      "the kitchen vacancies",
+      "onboarding kitchen hires",
+      "the cook shortage",
+      "screening candidates abroad",
+      "replacing departed kitchen workers",
+      "the culinary team buildout"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Reservation & IT Systems",
+   "aliases": [
+    "it systems",
+    "booking software",
+    "reservation systems",
+    "software subscriptions",
+    "tech stack"
+   ],
+   "narrative": [
+    "Booking software",
+    "Reservation systems",
+    "Software subscriptions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Nautilink Booking Cloud",
+     "base": 14000,
+     "memo": "Reservation platform Mnt subscription"
+    },
+    {
+     "vendor": "Seawave Satellite Comms",
+     "base": 11000,
+     "memo": "Shipboard internet bandwidth"
+    },
+    {
+     "vendor": "Clearbridge IT Support",
+     "base": 3500,
+     "memo": "Helpdesk Svc Inv"
+    }
+   ],
+   "events": [
+    {
+     "key": "antenna_dome",
+     "vendor": "Seawave Satellite Comms",
+     "memos": [
+      "Antenna dome replacement - Inv 9105",
+      "Antenna dome replacement - install crew"
+     ],
+     "cross_memo": "Antenna dome replacement - crane hire",
+     "plain": [
+      "the antenna dome replacement",
+      "antenna dome replacement costs",
+      "the antenna dome replacement project"
+     ],
+     "oblique": [
+      "the storm-damaged connectivity hardware",
+      "restoring Wi-Fi at sea",
+      "the radome swap",
+      "fixing the dish knocked out in the storm",
+      "new mast-top hardware",
+      "getting guests back online",
+      "the connectivity outage fix",
+      "the dish swap",
+      "the rooftop signal gear",
+      "repairing the lightning-struck receiver",
+      "the uplink hardware",
+      "the connectivity outage",
+      "new tracking hardware on the mast",
+      "ending the guest Wi-Fi blackout",
+      "the weather-damaged dish",
+      "the mast-mounted gear"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "ransomware_response",
+     "vendor": "Quillon Cyber Defense",
+     "memos": [
+      "Ransomware incident response - forensics",
+      "Ransomware incident response - retainer"
+     ],
+     "cross_memo": "Ransomware incident response - legal counsel",
+     "plain": [
+      "the ransomware incident response",
+      "ransomware incident response fees",
+      "the urgent ransomware incident response"
+     ],
+     "oblique": [
+      "the hack",
+      "the breach cleanup",
+      "recovering from the attack",
+      "the security breach",
+      "outside investigators after the hack",
+      "restoring encrypted servers",
+      "the attack recovery",
+      "the data breach",
+      "locking the hackers out",
+      "the extortion attempt",
+      "rebuilding compromised systems",
+      "the breach investigation",
+      "malware cleanup",
+      "the systems lockout",
+      "the intrusion",
+      "recovering the locked files"
+     ],
+     "low": 30000,
+     "high": 60000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

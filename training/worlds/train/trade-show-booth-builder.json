@@ -1,0 +1,830 @@
+{
+ "slug": "trade-show-booth-builder",
+ "industry": "trade show booth builder",
+ "entities": [
+  "Exhibit Forge Works",
+  "Showfloor Fabricators",
+  "Crate & Canvas Exhibits",
+  "Boothwright Studios",
+  "Pavilion Craft Co."
+ ],
+ "accounts": [
+  {
+   "name": "Freight & Drayage",
+   "aliases": [
+    "freight",
+    "drayage",
+    "freight and drayage",
+    "shipping costs",
+    "material handling spend"
+   ],
+   "narrative": [
+    "Freight",
+    "Drayage",
+    "Shipping costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Haul Logistics",
+     "base": 18500,
+     "memo": "Outbound LTL freight — booth crates"
+    },
+    {
+     "vendor": "Coastline Drayage Partners",
+     "base": 9200,
+     "memo": "Convention center drayage — monthly"
+    },
+    {
+     "vendor": "Redline Freight Brokers",
+     "base": 6400,
+     "memo": "Truckload brokerage — fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "lastminute",
+     "vendor": "Summit Haul Logistics",
+     "memos": [
+      "Expedited air charter — deadline run",
+      "Expedited air charter — overnight pallets"
+     ],
+     "cross_memo": "Expedited air charter — hotel storage fee",
+     "plain": [
+      "the expedited air charter",
+      "the air charter run",
+      "expedited air charter costs"
+     ],
+     "oblique": [
+      "getting the booth to the hall in time",
+      "a rush shipment after a late order",
+      "the scramble to beat the install deadline",
+      "the late-arriving display shipped overnight",
+      "flying components in",
+      "a pricey rescue delivery",
+      "what we paid to hit the opening bell",
+      "an emergency move of materials",
+      "the premium for speed",
+      "shipping we did not plan for",
+      "the client's last-minute change forcing a fast move",
+      "paying extra to avoid missing the show",
+      "an urgent transport request",
+      "the crunch before doors opened",
+      "getting stuff there overnight",
+      "a delivery that could not wait"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "overseas",
+     "vendor": "Harborlight Ocean Cargo",
+     "memos": [
+      "Harborlight Ocean Cargo — container transit",
+      "Harborlight Ocean Cargo — port clearance"
+     ],
+     "cross_memo": "Harborlight Ocean Cargo — customs insurance",
+     "plain": [
+      "the Harborlight container transit",
+      "the ocean cargo port clearance",
+      "Harborlight ocean shipment costs"
+     ],
+     "oblique": [
+      "bringing in the Asian-built exhibit",
+      "a shipment from across the Pacific",
+      "the imported display pieces",
+      "getting foreign-made structures here",
+      "a big sea-borne delivery",
+      "transporting the overseas client's show assets",
+      "what it cost to land goods from abroad",
+      "the long-haul import for the flagship show",
+      "moving materials between continents",
+      "the international leg of a project",
+      "paperwork and fees at the border",
+      "a bulky consignment from another country",
+      "goods arriving by boat",
+      "the cross-ocean move",
+      "an import-heavy project",
+      "shipping from the factory overseas"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Lumber & Sheet Goods",
+   "aliases": [
+    "lumber",
+    "sheet goods",
+    "raw wood",
+    "plywood spend",
+    "wood materials"
+   ],
+   "narrative": [
+    "Lumber",
+    "Sheet goods",
+    "Wood materials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northfield Timber Supply",
+     "base": 14200,
+     "memo": "Birch plywood — stock replenishment"
+    },
+    {
+     "vendor": "Apex MDF & Panel",
+     "base": 7800,
+     "memo": "MDF panels — shop stock"
+    },
+    {
+     "vendor": "Greenleaf Hardwoods",
+     "base": 4100,
+     "memo": "Hardwood trim — standard order"
+    }
+   ],
+   "events": [
+    {
+     "key": "tradeprice",
+     "vendor": "Northfield Timber Supply",
+     "memos": [
+      "Walnut veneer surcharge — rush mill run",
+      "Walnut veneer surcharge — premium grade"
+     ],
+     "cross_memo": "Walnut veneer surcharge — finishing labor",
+     "plain": [
+      "the walnut veneer surcharge",
+      "walnut veneer premium",
+      "the veneer mill run"
+     ],
+     "oblique": [
+      "a client who wanted a rich executive look",
+      "the upscale finish on the flagship build",
+      "a luxury material request",
+      "the fancy surfaces for the showpiece",
+      "a costly aesthetic upgrade",
+      "what the designer insisted on",
+      "the high-end look for the tech launch",
+      "materials priced well above normal",
+      "a premium spec from the customer",
+      "the swanky lounge area",
+      "rarer stock we had to special order",
+      "a splurge on appearance",
+      "the boardroom-style walls",
+      "a pricey upgrade for one account",
+      "the top-shelf selection",
+      "a decorative choice that cost more"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "fireretard",
+     "vendor": "Pyroguard Coatings",
+     "memos": [
+      "Pyroguard Coatings — flame retardant treatment",
+      "Pyroguard Coatings — fire code certification"
+     ],
+     "cross_memo": "Pyroguard Coatings — inspector re-test fee",
+     "plain": [
+      "the Pyroguard flame retardant treatment",
+      "fire code certification work",
+      "the Pyroguard coating job"
+     ],
+     "oblique": [
+      "making the wood pass the marshal",
+      "safety compliance for the venue",
+      "the new rule from the convention authority",
+      "treating stock so it could be used indoors",
+      "a regulatory requirement we had to meet",
+      "getting materials approved for the hall",
+      "protection against ignition",
+      "a mandate that hit every build",
+      "the inspector's demand",
+      "making everything legal to install",
+      "the extra step for hazards",
+      "a batch we had to treat before use",
+      "what the venue's rulebook required",
+      "preparing panels for official sign-off",
+      "the safety upgrade across our inventory",
+      "a one-time safeguard push"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Graphics & Large-Format Printing",
+   "aliases": [
+    "graphics",
+    "large-format printing",
+    "print spend",
+    "signage printing",
+    "banner costs"
+   ],
+   "narrative": [
+    "Graphics",
+    "Large-format printing",
+    "Banner costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "VividWide Print Co.",
+     "base": 16800,
+     "memo": "Large-format prints — monthly jobs"
+    },
+    {
+     "vendor": "InkBridge Textiles",
+     "base": 8900,
+     "memo": "Fabric tension graphics — standard"
+    },
+    {
+     "vendor": "Sharpline Vinyl",
+     "base": 3600,
+     "memo": "Vinyl lettering — stock orders"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "VividWide Print Co.",
+     "memos": [
+      "Logo refresh reprint — client rebrand",
+      "Logo refresh reprint — replacement panels"
+     ],
+     "cross_memo": "Logo refresh reprint — storage of old stock",
+     "plain": [
+      "the logo refresh reprint",
+      "the rebrand panel redo",
+      "logo refresh costs"
+     ],
+     "oblique": [
+      "a customer changing its identity midstream",
+      "scrapping what we had just made",
+      "redoing artwork the client rejected",
+      "the new look an account adopted",
+      "a corporate makeover that hit us",
+      "wasted output from the old design",
+      "starting graphics over from scratch",
+      "the redesign requested after approval",
+      "a change of mind from marketing",
+      "what we reprinted for the new brand",
+      "duplicate work caused by a client switch",
+      "replacing outdated visuals",
+      "a customer's new image",
+      "the version two of the artwork",
+      "pieces thrown away and remade",
+      "the ripple of someone else's decision"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "backlit",
+     "vendor": "Lumagraph Displays",
+     "memos": [
+      "Lumagraph Displays — backlit fabric wall",
+      "Lumagraph Displays — LED edge frames"
+     ],
+     "cross_memo": "Lumagraph Displays — install crew overtime",
+     "plain": [
+      "the Lumagraph backlit fabric wall",
+      "LED edge frames",
+      "Lumagraph display frames"
+     ],
+     "oblique": [
+      "the glowing centerpiece for the big client",
+      "a wall that lights up from within",
+      "the eye-catching feature we built",
+      "a showstopper installation",
+      "illuminated visuals for the keynote space",
+      "an ambitious signature element",
+      "a technical flourish for the booth",
+      "the dazzling hero piece",
+      "what made the stand stand out",
+      "a tricky build with embedded lights",
+      "the project that required specialty parts",
+      "one customer's request for something dramatic",
+      "a standout visual we sourced outside",
+      "the glowing structure",
+      "an elaborate focal point",
+      "a premium attraction"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Show Floor Labor",
+   "aliases": [
+    "floor labor",
+    "show labor",
+    "install and dismantle labor",
+    "union labor",
+    "installation crews"
+   ],
+   "narrative": [
+    "Floor labor",
+    "Show labor",
+    "Union labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "Teamwork Install Services",
+     "base": 28000,
+     "memo": "I&D crew — monthly show labor"
+    },
+    {
+     "vendor": "Ironbridge Stagehands Local",
+     "base": 12500,
+     "memo": "Union stagehand hours — scheduled"
+    },
+    {
+     "vendor": "QuickRig Supervisors",
+     "base": 5500,
+     "memo": "Onsite supervision — standard"
+    }
+   ],
+   "events": [
+    {
+     "key": "weekend",
+     "vendor": "Teamwork Install Services",
+     "memos": [
+      "Holiday weekend premium — double time",
+      "Holiday weekend premium — extra crew"
+     ],
+     "cross_memo": "Holiday weekend premium — hotel for crew",
+     "plain": [
+      "the holiday weekend premium",
+      "double time holiday hours",
+      "the holiday weekend crew"
+     ],
+     "oblique": [
+      "working through a time most people were off",
+      "paying staff more for awkward days",
+      "an install that fell on a break",
+      "the calendar working against us",
+      "penalty rates on a tight schedule",
+      "timing that forced overtime",
+      "the show opening right after a break",
+      "people called in when others rested",
+      "a bad stretch on the schedule",
+      "extra hands needed on short notice",
+      "a compressed build window",
+      "pay bumps for unsocial hours",
+      "the cost of an unlucky date",
+      "a deadline stacked on days off",
+      "wages above the norm for one stretch",
+      "a lot of hours in a short span"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "unionfine",
+     "vendor": "Metroline Labor Relations",
+     "memos": [
+      "Metroline Labor Relations — jurisdiction dispute settlement",
+      "Metroline Labor Relations — grievance arbitration"
+     ],
+     "cross_memo": "Metroline Labor Relations — back pay adjustment",
+     "plain": [
+      "the Metroline jurisdiction dispute settlement",
+      "the grievance arbitration",
+      "Metroline arbitration costs"
+     ],
+     "oblique": [
+      "a disagreement over who may touch what",
+      "resolving a conflict with the trades",
+      "an unexpected legal wrangle",
+      "paying to settle a workplace argument",
+      "the fallout from a rules misunderstanding",
+      "a ruling that went against us",
+      "an outside mediator brought in",
+      "a dispute from a past exhibition",
+      "the cost of staying on good terms with the locals",
+      "settling a claim",
+      "an official complaint that got resolved",
+      "a ruling on work assignments",
+      "retroactive money owed",
+      "trouble over a work-rule interpretation",
+      "a formal process to end a standoff",
+      "the price of a disagreement"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Lighting & AV Rentals",
+   "aliases": [
+    "av rentals",
+    "lighting rentals",
+    "audio visual rentals",
+    "screens and lighting",
+    "equipment rentals"
+   ],
+   "narrative": [
+    "AV rentals",
+    "Lighting rentals",
+    "Audio visual rentals"
+   ],
+   "recurring": [
+    {
+     "vendor": "BrightStage Rentals",
+     "base": 15500,
+     "memo": "Truss lighting rental — monthly"
+    },
+    {
+     "vendor": "ClearView Display Hire",
+     "base": 11200,
+     "memo": "LED screen rental — scheduled shows"
+    },
+    {
+     "vendor": "SoundPath Audio",
+     "base": 3900,
+     "memo": "Speaker package — routine"
+    }
+   ],
+   "events": [
+    {
+     "key": "videowall",
+     "vendor": "ClearView Display Hire",
+     "memos": [
+      "Curved video wall upgrade — 4K panels",
+      "Curved video wall upgrade — processor rental"
+     ],
+     "cross_memo": "Curved video wall upgrade — rigging labor",
+     "plain": [
+      "the curved video wall upgrade",
+      "4K panel upgrade",
+      "video wall processor rental"
+     ],
+     "oblique": [
+      "the giant wraparound screen a client wanted",
+      "a sharper picture at the flagship exhibit",
+      "moving up from our standard monitors",
+      "a dramatic visual centerpiece",
+      "what the marketing team requested at the last meeting",
+      "a bigger and better display than usual",
+      "technology beyond the basic package",
+      "the upgrade that stole the show",
+      "a high-resolution showpiece",
+      "pixel-heavy hardware for one customer",
+      "an ambitious installation",
+      "a larger format than we normally run",
+      "the showcase moving image feature",
+      "an impressive backdrop of moving pictures",
+      "a leap in resolution",
+      "hardware for a premium client"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "moving",
+     "vendor": "Stagecraft Robotics",
+     "memos": [
+      "Stagecraft Robotics — automated moving heads",
+      "Stagecraft Robotics — programmed cue show"
+     ],
+     "cross_memo": "Stagecraft Robotics — control desk operator",
+     "plain": [
+      "the Stagecraft automated moving heads",
+      "the programmed cue show",
+      "Stagecraft Robotics fixtures"
+     ],
+     "oblique": [
+      "choreographed beams sweeping the space",
+      "a performance-style effect for a launch",
+      "lights that dance on their own",
+      "a theatrical touch at the pavilion",
+      "an entertainment piece for a big reveal",
+      "a sophisticated light display",
+      "effects you would expect at a concert",
+      "a rented spectacle",
+      "the scripted spectacle on the hall ceiling",
+      "a one-off crowd-pleaser",
+      "the fancy overhead feature",
+      "tech that tracks and turns",
+      "an elaborate evening presentation",
+      "a visual show we outsourced",
+      "rented gear with a specialist",
+      "a dramatic opening feature"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Booth Storage & Warehousing",
+   "aliases": [
+    "storage",
+    "warehousing",
+    "booth storage",
+    "warehouse costs",
+    "exhibit storage"
+   ],
+   "narrative": [
+    "Storage",
+    "Warehousing",
+    "Booth storage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stackwell Warehousing",
+     "base": 13800,
+     "memo": "Warehouse space — monthly lease"
+    },
+    {
+     "vendor": "SafeKeep Climate Storage",
+     "base": 4800,
+     "memo": "Climate-controlled bay — monthly"
+    },
+    {
+     "vendor": "PalletPoint Handling",
+     "base": 2400,
+     "memo": "Forklift handling — routine"
+    }
+   ],
+   "events": [
+    {
+     "key": "mold",
+     "vendor": "Stackwell Warehousing",
+     "memos": [
+      "Moisture remediation — roof leak cleanup",
+      "Moisture remediation — dehumidifier rental"
+     ],
+     "cross_memo": "Moisture remediation — damaged carpet disposal",
+     "plain": [
+      "the moisture remediation",
+      "roof leak cleanup",
+      "the dehumidifier rental"
+     ],
+     "oblique": [
+      "a damp problem in the building",
+      "stuff getting wet after a storm",
+      "salvaging what the weather ruined",
+      "a building defect hitting our inventory",
+      "drying out the stock",
+      "a nasty surprise in the facility",
+      "water getting where it should not",
+      "restoring order after an incident",
+      "cleanup after bad conditions",
+      "the mess from a failed seal",
+      "protecting items from decay",
+      "an issue our landlord never fixed",
+      "what we spent to save the display pieces",
+      "the aftermath of heavy rain",
+      "a building problem that became ours",
+      "getting the space usable again"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "cleanout",
+     "vendor": "Rebound Asset Recovery",
+     "memos": [
+      "Rebound Asset Recovery — obsolete booth liquidation",
+      "Rebound Asset Recovery — scrap hauling"
+     ],
+     "cross_memo": "Rebound Asset Recovery — recycling certificate",
+     "plain": [
+      "the Rebound obsolete booth liquidation",
+      "scrap hauling",
+      "Rebound asset recovery fees"
+     ],
+     "oblique": [
+      "clearing out old inventory nobody wanted",
+      "a spring cleaning for the back lot",
+      "getting rid of exhibits from past years",
+      "freeing up floor space",
+      "a purge of leftovers",
+      "what we paid to throw things away",
+      "disposing of forgotten builds",
+      "downsizing the stockpile",
+      "the overdue tidy up",
+      "retiring structures that were out of use",
+      "making room for new projects",
+      "dumping what had no resale value",
+      "a decluttering exercise",
+      "the end of the road for dated displays",
+      "hauling off dead weight",
+      "a big cleanup initiative"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Subcontracted Fabrication",
+   "aliases": [
+    "subcontract fab",
+    "outside fabrication",
+    "subcontracted fabrication",
+    "outsourced builds",
+    "metal and fabrication vendors"
+   ],
+   "narrative": [
+    "Subcontract fab",
+    "Outside fabrication",
+    "Outsourced builds"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeback Metalworks",
+     "base": 22500,
+     "memo": "Aluminum extrusion frames — monthly"
+    },
+    {
+     "vendor": "Foundry Row CNC",
+     "base": 10800,
+     "memo": "CNC cut parts — standard jobs"
+    },
+    {
+     "vendor": "Castleton Powder Coat",
+     "base": 3700,
+     "memo": "Powder coat finishing — routine"
+    }
+   ],
+   "events": [
+    {
+     "key": "cantilever",
+     "vendor": "Ridgeback Metalworks",
+     "memos": [
+      "Cantilever double-deck structure — engineered steel",
+      "Cantilever double-deck structure — stamped drawings"
+     ],
+     "cross_memo": "Cantilever double-deck structure — crane rental",
+     "plain": [
+      "the cantilever double-deck structure",
+      "engineered steel for the cantilever",
+      "stamped drawings for the double-deck"
+     ],
+     "oblique": [
+      "the two-story exhibit for the big name",
+      "a build reaching up and out",
+      "an ambitious architectural project",
+      "a structure that needed an engineer's seal",
+      "the tallest thing we made this year",
+      "a showpiece with real weight to carry",
+      "the ambitious vertical display",
+      "a project with extra safety review",
+      "a complex build for a major account",
+      "the oversized pavilion",
+      "something that had to be certified before use",
+      "a gravity-defying design",
+      "a heavy duty custom job",
+      "the multi-level creation",
+      "our most demanding project",
+      "a structure that turned heads"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "rework",
+     "vendor": "Kestrel Precision Fab",
+     "memos": [
+      "Kestrel Precision Fab — warped panel remake",
+      "Kestrel Precision Fab — tolerance correction"
+     ],
+     "cross_memo": "Kestrel Precision Fab — freight on rejected parts",
+     "plain": [
+      "the Kestrel warped panel remake",
+      "tolerance correction work",
+      "Kestrel precision fab fixes"
+     ],
+     "oblique": [
+      "parts that did not fit and had to be redone",
+      "a quality failure by an outside shop",
+      "paying twice for the same item",
+      "what we fixed after inspection",
+      "work sent back as unacceptable",
+      "mistakes that cost us time and money",
+      "a faulty batch we had to replace",
+      "the fallout of a poor production run",
+      "redoing something that was wrong",
+      "remaking pieces that came in off spec",
+      "pieces that missed the drawings",
+      "a miss by a supplier",
+      "the cleanup after a bad delivery",
+      "costly redo",
+      "a defect we only caught on site",
+      "paying to correct someone else's error"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Travel & Show Site Expenses",
+   "aliases": [
+    "travel",
+    "show travel",
+    "onsite expenses",
+    "crew travel",
+    "per diem and lodging"
+   ],
+   "narrative": [
+    "Travel",
+    "Show travel",
+    "Crew travel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmap Corporate Travel",
+     "base": 9600,
+     "memo": "Airfare — crew deployments"
+    },
+    {
+     "vendor": "StayWell Lodging Group",
+     "base": 7400,
+     "memo": "Hotel blocks — show weeks"
+    },
+    {
+     "vendor": "Mileage Reimbursements",
+     "base": 1800,
+     "memo": "Staff mileage — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "vegas",
+     "vendor": "Roadmap Corporate Travel",
+     "memos": [
+      "Las Vegas mega-expo — 40 crew airfare",
+      "Las Vegas mega-expo — peak-week fares"
+     ],
+     "cross_memo": "Las Vegas mega-expo — extra shuttle vans",
+     "plain": [
+      "the Las Vegas mega-expo",
+      "Las Vegas crew airfare",
+      "the Vegas peak-week fares"
+     ],
+     "oblique": [
+      "sending a huge team to the desert",
+      "the largest trade event of the season",
+      "a gathering that drew everyone at once",
+      "the flagship convention out west",
+      "a major gathering of our industry",
+      "the annual blowout that needs bodies",
+      "moving dozens of staff across the country",
+      "the one show we always overspend on",
+      "a very large exposition",
+      "the biggest booking on the calendar",
+      "fares priced at the top of the market",
+      "the big-city extravaganza",
+      "getting everyone to the nation's busiest hall",
+      "a big presence requiring many people",
+      "our heaviest deployment",
+      "an event where demand pushed prices up"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "cancelrebook",
+     "vendor": "Airspan Charter Group",
+     "memos": [
+      "Airspan Charter Group — storm cancellation rebooking",
+      "Airspan Charter Group — alternate routing fees"
+     ],
+     "cross_memo": "Airspan Charter Group — stranded crew meals",
+     "plain": [
+      "the Airspan storm cancellation rebooking",
+      "alternate routing fees",
+      "Airspan charter changes"
+     ],
+     "oblique": [
+      "weather wrecking the original itineraries",
+      "getting people there despite disruption",
+      "a blizzard throwing off the plan",
+      "paying again to reach the same place",
+      "unforeseen transport trouble",
+      "rerouting staff after bad conditions",
+      "the cost of nature's interference",
+      "an unplanned detour for the team",
+      "reshuffling arrangements at the last moment",
+      "flights that never left",
+      "delays that cost real money",
+      "fixing travel plans after a mess",
+      "a cascade of schedule failures",
+      "paying extra to get home",
+      "the aftermath of an airport shutdown",
+      "unexpected rescheduling"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,107 @@
+{
+  "entity": "Halvorsen Precision Components, Inc.",
+  "industry": "Manufacturing (CNC machining job shop)",
+  "history_periods": [
+    "2026-07"
+  ],
+  "prior_period": "2026-08",
+  "current_period": "2026-09",
+  "accounts": [
+    {
+      "name": "Raw Materials",
+      "aliases": [
+        "raw materials",
+        "bar stock"
+      ]
+    },
+    {
+      "name": "Direct Labor",
+      "aliases": [
+        "direct labor"
+      ]
+    },
+    {
+      "name": "Indirect Labor",
+      "aliases": [
+        "indirect labor"
+      ]
+    },
+    {
+      "name": "Tooling & Inserts",
+      "aliases": [
+        "tooling & inserts",
+        "tooling",
+        "cutting tools"
+      ]
+    },
+    {
+      "name": "Machine Maintenance",
+      "aliases": [
+        "machine maintenance",
+        "maintenance"
+      ]
+    },
+    {
+      "name": "Shop Supplies",
+      "aliases": [
+        "shop supplies"
+      ]
+    },
+    {
+      "name": "Plant Utilities",
+      "aliases": [
+        "plant utilities",
+        "utilities"
+      ]
+    },
+    {
+      "name": "Freight In",
+      "aliases": [
+        "freight in",
+        "inbound freight"
+      ]
+    },
+    {
+      "name": "Freight Out",
+      "aliases": [
+        "freight out",
+        "outbound freight"
+      ]
+    },
+    {
+      "name": "Quality & Certification",
+      "aliases": [
+        "quality & certification",
+        "quality costs",
+        "quality",
+        "certification"
+      ]
+    },
+    {
+      "name": "Outside Processing",
+      "aliases": [
+        "outside processing"
+      ]
+    },
+    {
+      "name": "Equipment Leases",
+      "aliases": [
+        "equipment leases",
+        "leases"
+      ]
+    },
+    {
+      "name": "Plant Rent",
+      "aliases": [
+        "plant rent",
+        "rent"
+      ]
+    },
+    {
+      "name": "Insurance",
+      "aliases": [
+        "insurance"
+      ]
+    }
+  ]
+}

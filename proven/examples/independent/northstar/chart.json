@@ -1,0 +1,114 @@
+{
+  "entity": "Northstar Freightways, Inc.",
+  "industry": "Logistics (regional truckload carrier)",
+  "history_periods": [
+    "2026-08"
+  ],
+  "prior_period": "2026-09",
+  "current_period": "2026-10",
+  "accounts": [
+    {
+      "name": "Fuel",
+      "aliases": [
+        "fuel",
+        "diesel"
+      ]
+    },
+    {
+      "name": "Driver Wages",
+      "aliases": [
+        "driver wages",
+        "driver pay"
+      ]
+    },
+    {
+      "name": "Purchased Transportation",
+      "aliases": [
+        "purchased transportation",
+        "owner-operator settlements",
+        "brokered freight"
+      ]
+    },
+    {
+      "name": "Tolls & Permits",
+      "aliases": [
+        "tolls & permits",
+        "tolls and permits",
+        "tolls",
+        "permits"
+      ]
+    },
+    {
+      "name": "Tractor & Trailer Maintenance",
+      "aliases": [
+        "tractor & trailer maintenance",
+        "maintenance",
+        "repairs"
+      ]
+    },
+    {
+      "name": "Tires",
+      "aliases": [
+        "tires"
+      ]
+    },
+    {
+      "name": "Equipment Leases",
+      "aliases": [
+        "equipment leases",
+        "tractor leases",
+        "leases"
+      ]
+    },
+    {
+      "name": "Insurance",
+      "aliases": [
+        "insurance"
+      ]
+    },
+    {
+      "name": "Cargo Claims",
+      "aliases": [
+        "cargo claims",
+        "claims"
+      ]
+    },
+    {
+      "name": "Dispatch & ELD Software",
+      "aliases": [
+        "dispatch & eld software",
+        "dispatch software",
+        "eld",
+        "software"
+      ]
+    },
+    {
+      "name": "Terminal Rent",
+      "aliases": [
+        "terminal rent",
+        "rent"
+      ]
+    },
+    {
+      "name": "Driver Recruiting",
+      "aliases": [
+        "driver recruiting",
+        "recruiting"
+      ]
+    },
+    {
+      "name": "Compliance & Testing",
+      "aliases": [
+        "compliance & testing",
+        "compliance",
+        "drug testing"
+      ]
+    },
+    {
+      "name": "Office Salaries",
+      "aliases": [
+        "office salaries"
+      ]
+    }
+  ]
+}

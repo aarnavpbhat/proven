@@ -1,0 +1,810 @@
+{
+ "slug": "medical-device-manufacturer",
+ "industry": "medical device manufacturer",
+ "entities": [
+  "Meridian Orthopedics Inc",
+  "Halcyon Cardiac Systems",
+  "Northbridge Surgical Technologies",
+  "Lumina Diagnostics Corp",
+  "Caldera Implant Works"
+ ],
+ "accounts": [
+  {
+   "name": "Clinical Trial Expenses",
+   "aliases": [
+    "clinical trials",
+    "trial costs",
+    "study spend",
+    "clinical studies",
+    "trial program"
+   ],
+   "narrative": [
+    "Clinical trials",
+    "Trial costs",
+    "Study spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Apex Clinical Research Org",
+     "base": 28000,
+     "memo": "CRO monthly mgmt fee - Study CT-204"
+    },
+    {
+     "vendor": "BioStat Analytics LLC",
+     "base": 9500,
+     "memo": "Biostatistics support PO 44721"
+    },
+    {
+     "vendor": "Meridian Site Services",
+     "base": 6200,
+     "memo": "Investigator site payments"
+    }
+   ],
+   "events": [
+    {
+     "key": "protocol_amendment",
+     "vendor": "Apex Clinical Research Org",
+     "memos": [
+      "Protocol amendment 3 - IRB resubmission WO 8812",
+      "Protocol amendment 3 - site retraining"
+     ],
+     "cross_memo": "Protocol amendment 3 - regulatory counsel review",
+     "plain": [
+      "the protocol amendment 3",
+      "the amendment 3 resubmission",
+      "protocol amendment 3 retraining"
+     ],
+     "oblique": [
+      "changes to the study design that regulators asked for",
+      "redoing the paperwork for the ethics board",
+      "the revised study plan",
+      "retraining the hospital staff on new procedures",
+      "extra work after the study rules changed",
+      "the mid-study redesign",
+      "getting the whole trial approved a second time",
+      "a late change the agency requested",
+      "updating every participating hospital on the new rules",
+      "the rewrite of how patients are enrolled",
+      "what it cost to alter the study midway",
+      "the new version of the study blueprint",
+      "extra oversight when the plan was modified",
+      "the rework our medical team requested",
+      "reapproval work across all participating hospitals",
+      "adjusting the trial after the reviewers weighed in"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "adjudication_panel",
+     "vendor": "Cardinal Endpoint Review Partners",
+     "memos": [
+      "Endpoint adjudication committee - panel honoraria",
+      "Endpoint adjudication committee - blinded case packets PO 51033"
+     ],
+     "cross_memo": "Endpoint adjudication committee - travel and lodging",
+     "plain": [
+      "the endpoint adjudication committee",
+      "adjudication committee honoraria",
+      "the endpoint adjudication panel"
+     ],
+     "oblique": [
+      "paying outside physicians to review patient outcomes",
+      "independent doctors judging whether events counted",
+      "the expert reviewers we brought in",
+      "an outside medical jury",
+      "getting second opinions on patient results",
+      "the specialists who graded the results",
+      "blind review of the difficult patient files",
+      "extra clinicians hired for scoring",
+      "the evaluation board for patient events",
+      "confirming results with neutral experts",
+      "fees to the physicians who weighed in",
+      "the independent medical examiners",
+      "outside experts verifying the findings",
+      "staffing a neutral review team",
+      "the panel convened ahead of the submission",
+      "clinicians assessing the disputed cases"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Regulatory Affairs & Submissions",
+   "aliases": [
+    "regulatory",
+    "regulatory affairs",
+    "submission costs",
+    "regulatory spend",
+    "fda filings"
+   ],
+   "narrative": [
+    "Regulatory affairs",
+    "Submission costs",
+    "Regulatory spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sterling Regulatory Consulting",
+     "base": 14000,
+     "memo": "RA retainer - 510(k) program support"
+    },
+    {
+     "vendor": "Veritas Notified Body Services",
+     "base": 7800,
+     "memo": "Notified body annual surveillance accrual"
+    }
+   ],
+   "events": [
+    {
+     "key": "mdr_recert",
+     "vendor": "Veritas Notified Body Services",
+     "memos": [
+      "MDR technical file recertification - audit fee WO 3390",
+      "MDR technical file recertification - gap remediation"
+     ],
+     "cross_memo": "MDR technical file recertification - translation services",
+     "plain": [
+      "the MDR technical file recertification",
+      "MDR recertification audit fees",
+      "the technical file recertification"
+     ],
+     "oblique": [
+      "keeping our European market access alive",
+      "the new European rulebook compliance push",
+      "proving to auditors that our documentation holds up",
+      "renewing our right to sell overseas",
+      "fixing the holes inspectors found in our paperwork",
+      "the continental regulations overhaul",
+      "what it took to stay on the European market",
+      "a bigger review than the usual annual check",
+      "rewriting product dossiers for EU standards",
+      "the stricter standards from Brussels",
+      "getting our credentials renewed abroad",
+      "preparing for the auditor visit",
+      "upgrading old files to current law",
+      "meeting the newer overseas requirements",
+      "the compliance sprint for export markets",
+      "re-earning our overseas selling license"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "pma_supplement",
+     "vendor": "Quillon Premarket Advisors",
+     "memos": [
+      "PMA supplement 7 - clinical section drafting",
+      "PMA supplement 7 - user fee PO 60418"
+     ],
+     "cross_memo": "PMA supplement 7 - courier and filing logistics",
+     "plain": [
+      "the PMA supplement 7",
+      "PMA supplement 7 drafting",
+      "the supplement 7 user fee"
+     ],
+     "oblique": [
+      "the filing for our design change on the pacemaker line",
+      "paperwork for the modified product",
+      "asking the agency to approve a tweak",
+      "writers we hired for the big application",
+      "the federal fee for a product update",
+      "getting the revised device cleared",
+      "the dossier for the updated model",
+      "approval request after the redesign",
+      "contract authors preparing the submission",
+      "what we paid Washington to review the change",
+      "the application that follows an engineering change",
+      "outside drafters for the clinical write-up",
+      "the government charge on our resubmission",
+      "an approval request for the new version",
+      "the update package sent to the agency",
+      "clearing the improved model for sale"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Sterilization Services",
+   "aliases": [
+    "sterilization",
+    "sterilization costs",
+    "sterile processing",
+    "ebeam and eto spend",
+    "sterilization services spend"
+   ],
+   "narrative": [
+    "Sterilization costs",
+    "Sterile processing",
+    "Sterilization services spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "PureCycle Sterilization Inc",
+     "base": 22000,
+     "memo": "EtO contract sterilization - monthly lots"
+    },
+    {
+     "vendor": "RadiaTech Irradiation",
+     "base": 9000,
+     "memo": "Gamma irradiation batches"
+    }
+   ],
+   "events": [
+    {
+     "key": "eto_validation",
+     "vendor": "PureCycle Sterilization Inc",
+     "memos": [
+      "Cycle requalification run - half-cycle study WO 7741",
+      "Cycle requalification run - biological indicator testing"
+     ],
+     "cross_memo": "Cycle requalification run - product hold storage",
+     "plain": [
+      "the cycle requalification run",
+      "cycle requalification testing",
+      "the requalification half-cycle study"
+     ],
+     "oblique": [
+      "proving the process still kills everything",
+      "re-proving the germ-kill process",
+      "tests run after the chamber was changed",
+      "the quality team's demand to recheck the process",
+      "confirming the sterile result is still reliable",
+      "additional microbe challenge testing",
+      "the retest triggered by an equipment change",
+      "showing auditors the process still works",
+      "verifying the setup after the facility move",
+      "extra lab work on live spore strips",
+      "what we spent proving the method is sound",
+      "the large revalidation effort",
+      "re-demonstrating that products come out clean",
+      "a round of confirmatory trials",
+      "reconfirming the settings with test loads",
+      "justifying the parameters to our quality auditors"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "resin_recall_lot",
+     "vendor": "Bluewater Decontamination Group",
+     "memos": [
+      "Lot 22-118 reprocessing - emergency resterilization",
+      "Lot 22-118 reprocessing - expedited freight PO 29904"
+     ],
+     "cross_memo": "Lot 22-118 reprocessing - replacement packaging",
+     "plain": [
+      "the lot 22-118 reprocessing",
+      "lot 22-118 emergency resterilization",
+      "the 22-118 reprocessing"
+     ],
+     "oblique": [
+      "a batch that had to be processed twice",
+      "redoing a shipment that failed inspection",
+      "the rush job on a bad production run",
+      "pulling a batch back and treating it again",
+      "a quality escape we had to clean up",
+      "the redo of a rejected group of units",
+      "what we paid a second vendor to rescue inventory",
+      "urgent rework for an out-of-spec shipment",
+      "treating the same units over again",
+      "the fix for a batch that missed its release test",
+      "emergency handling of a disputed production run",
+      "salvaging product we had already shipped out",
+      "a second pass on suspect inventory",
+      "the cleanup after the failed release",
+      "a panic order from the quality department",
+      "saving a customer commitment by redoing the work"
+     ],
+     "low": 10000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Biocompatibility & Lab Testing",
+   "aliases": [
+    "biocompatibility",
+    "lab testing",
+    "testing costs",
+    "bench testing",
+    "test lab spend"
+   ],
+   "narrative": [
+    "Lab testing",
+    "Testing costs",
+    "Bench testing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Orion Materials Testing Labs",
+     "base": 11500,
+     "memo": "ISO 10993 testing - monthly accrual"
+    },
+    {
+     "vendor": "Fatigue Dynamics Lab",
+     "base": 8200,
+     "memo": "Durability and fatigue bench tests"
+    },
+    {
+     "vendor": "Calibra Metrology Services",
+     "base": 3400,
+     "memo": "Calibration of test fixtures"
+    }
+   ],
+   "events": [
+    {
+     "key": "cytotox_retest",
+     "vendor": "Orion Materials Testing Labs",
+     "memos": [
+      "Cytotoxicity retest - elution assay WO 5520",
+      "Cytotoxicity retest - extended incubation series"
+     ],
+     "cross_memo": "Cytotoxicity retest - sample shipping",
+     "plain": [
+      "the cytotoxicity retest",
+      "cytotoxicity elution assay retest",
+      "the cytotoxicity series"
+     ],
+     "oblique": [
+      "running the cell-safety checks a second time",
+      "repeating studies after an odd result",
+      "the do-over on the material safety work",
+      "confirming a surprise failure was not real",
+      "extra studies after reviewers raised a flag",
+      "proving the polymer does not harm tissue",
+      "longer experiments than we had budgeted",
+      "what it took to clear up an ambiguous finding",
+      "redoing work the reviewers rejected",
+      "additional laboratory runs on the new coating",
+      "the follow-up on an unexpected reading",
+      "investigating why a sample looked toxic",
+      "a doubled round of safety studies",
+      "reconfirming our earlier results",
+      "extended experiments at the lab",
+      "cell-culture work we had to repeat"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "accelerated_aging",
+     "vendor": "Chronos Shelf-Life Laboratories",
+     "memos": [
+      "Accelerated aging study 36-month - chamber lease PO 33871",
+      "Accelerated aging study 36-month - package integrity testing"
+     ],
+     "cross_memo": "Accelerated aging study 36-month - sample prep labor",
+     "plain": [
+      "the accelerated aging study 36-month",
+      "aging study chamber lease",
+      "the 36-month aging study"
+     ],
+     "oblique": [
+      "proving the product survives years on a shelf",
+      "the expiry-date justification work",
+      "simulating three years in storage",
+      "heat-and-humidity exposure of finished units",
+      "backing up our labeled expiration claim",
+      "a long experiment that fast-forwards time",
+      "tests that let us print a longer use-by date",
+      "the durability-over-time evidence package",
+      "renting an environmental oven for the year",
+      "checking seals still hold after storage",
+      "what we paid to age samples artificially",
+      "data to extend how long customers can keep stock",
+      "shelf stability proof demanded by the agency",
+      "stress exposure of packaged inventory",
+      "the multi-year storage simulation",
+      "documenting how long units stay usable"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Cleanroom & Facility Operations",
+   "aliases": [
+    "cleanroom",
+    "cleanroom costs",
+    "facility operations",
+    "controlled environment spend",
+    "clean manufacturing space"
+   ],
+   "narrative": [
+    "Cleanroom costs",
+    "Facility operations",
+    "Controlled environment spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "AirPure HVAC Services",
+     "base": 12500,
+     "memo": "ISO 7 cleanroom HVAC maintenance"
+    },
+    {
+     "vendor": "Sterile Garb Laundry Co",
+     "base": 4600,
+     "memo": "Gowning supplies and laundering"
+    },
+    {
+     "vendor": "Metro Power & Gas",
+     "base": 15500,
+     "memo": "Utilities - production facility"
+    }
+   ],
+   "events": [
+    {
+     "key": "hepa_replacement",
+     "vendor": "AirPure HVAC Services",
+     "memos": [
+      "HEPA filter bank changeout - Suite B WO 9904",
+      "HEPA filter bank changeout - particle recount certification"
+     ],
+     "cross_memo": "HEPA filter bank changeout - production downtime crew",
+     "plain": [
+      "the HEPA filter bank changeout",
+      "HEPA changeout certification",
+      "the Suite B filter bank"
+     ],
+     "oblique": [
+      "swapping out the air scrubbers after they clogged",
+      "particle counts that would not pass inspection",
+      "restoring the room's air quality rating",
+      "the ceiling units that wore out",
+      "new media for the air handling equipment",
+      "what it cost to get the room recertified",
+      "cleaning up after the airborne contamination scare",
+      "replacing the part that traps dust",
+      "the rating we lost and had to win back",
+      "a failed air test last quarter",
+      "overhauling the breathable-air equipment",
+      "a scheduled repair that came due early",
+      "fresh cartridges for the overhead system",
+      "bringing the room back to spec",
+      "the particle excursion fix",
+      "work in the manufacturing suite after the failed audit"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "flooring_epoxy",
+     "vendor": "Glacier Surface Systems",
+     "memos": [
+      "Epoxy floor resurfacing - Suite C WO 4127",
+      "Epoxy floor resurfacing - coving and seam sealing"
+     ],
+     "cross_memo": "Epoxy floor resurfacing - temporary production relocation",
+     "plain": [
+      "the epoxy floor resurfacing",
+      "epoxy resurfacing of Suite C",
+      "the coving and seam sealing"
+     ],
+     "oblique": [
+      "redoing the ground surface in the new wing",
+      "a damaged walking surface that cracked",
+      "fixing where the foundation shifted",
+      "the weekend crew who sealed the cracks",
+      "making the room easy to wipe down again",
+      "a repair auditors flagged in their findings",
+      "surface work that halted output for days",
+      "moving operations temporarily while contractors worked",
+      "where the material was lifting and flaking",
+      "upgrading the worn walkways inside production",
+      "what we paid to remove the old coating",
+      "addressing a finding from last year's inspection",
+      "patching a worn spot in the production area",
+      "a facilities project we had postponed",
+      "new coating on the factory ground",
+      "relocating the assemblers while the surface cured"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Quality Systems & Audits",
+   "aliases": [
+    "quality",
+    "quality systems",
+    "audit costs",
+    "qms spend",
+    "quality assurance"
+   ],
+   "narrative": [
+    "Quality systems",
+    "Audit costs",
+    "QMS spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "TrueNorth QMS Software",
+     "base": 6800,
+     "memo": "eQMS license - document control"
+    },
+    {
+     "vendor": "Pinnacle Supplier Audits",
+     "base": 5200,
+     "memo": "Supplier audit program"
+    }
+   ],
+   "events": [
+    {
+     "key": "capa_remediation",
+     "vendor": "TrueNorth QMS Software",
+     "memos": [
+      "CAPA backlog remediation - contract quality engineers WO 6615",
+      "CAPA backlog remediation - root cause workshop"
+     ],
+     "cross_memo": "CAPA backlog remediation - overtime accrual",
+     "plain": [
+      "the CAPA backlog remediation",
+      "CAPA backlog contract engineers",
+      "the CAPA root cause workshop"
+     ],
+     "oblique": [
+      "clearing a pile of open complaints",
+      "extra headcount to close outstanding issues",
+      "fixing our own paperwork gaps from the inspection",
+      "the team brought in to get caught up",
+      "long-overdue corrective work finally getting done",
+      "temporary engineers for the investigation queue",
+      "what the regulator's observation forced us to do",
+      "a push to resolve stale problems",
+      "contractors helping us catch up",
+      "correcting the issues that had piled up",
+      "a cleanup sprint before the follow-up visit",
+      "finishing what we had left open too long",
+      "bringing in outside help for unresolved cases",
+      "a response to the warning letter",
+      "closing the findings from the last visit",
+      "the investigative effort on repeated nonconformances"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "fda_mock_inspection",
+     "vendor": "Redstone Compliance Advisors",
+     "memos": [
+      "Mock FDA inspection - three-day readiness assessment PO 40258",
+      "Mock FDA inspection - findings report"
+     ],
+     "cross_memo": "Mock FDA inspection - staff backfill labor",
+     "plain": [
+      "the mock FDA inspection",
+      "mock inspection readiness assessment",
+      "the mock inspection findings report"
+     ],
+     "oblique": [
+      "a rehearsal before the government visit",
+      "practicing for the real thing",
+      "outside experts playing the role of the authorities",
+      "a dry run ahead of the surprise visit",
+      "stress-testing our preparedness",
+      "consultants who grilled our staff",
+      "an internal drill with external graders",
+      "getting ready for the regulators to walk in",
+      "a pretend visit with real consequences",
+      "simulated review by former agency personnel",
+      "the trial run of our facility walkthrough",
+      "external veterans quizzing our teams",
+      "a preview of what the officials would find",
+      "the readiness exercise our board demanded",
+      "benchmarking ourselves against federal expectations",
+      "three days of outsiders poking around the plant"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Contract Manufacturing & Components",
+   "aliases": [
+    "contract manufacturing",
+    "component sourcing",
+    "outsourced machining",
+    "supplier spend",
+    "outsourced production"
+   ],
+   "narrative": [
+    "Contract manufacturing",
+    "Component sourcing",
+    "Outsourced machining"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Titanium Machining",
+     "base": 30000,
+     "memo": "Machined implant blanks - monthly PO"
+    },
+    {
+     "vendor": "MicroMold Plastics LLC",
+     "base": 18500,
+     "memo": "Injection molded housings"
+    },
+    {
+     "vendor": "CircuitCore Assembly",
+     "base": 14200,
+     "memo": "PCBA for monitor line"
+    }
+   ],
+   "events": [
+    {
+     "key": "tooling_rebuild",
+     "vendor": "MicroMold Plastics LLC",
+     "memos": [
+      "Cavity block rebuild - mold tool 14 WO 2208",
+      "Cavity block rebuild - first article inspection"
+     ],
+     "cross_memo": "Cavity block rebuild - expedited air freight",
+     "plain": [
+      "the cavity block rebuild",
+      "mold tool 14 cavity block",
+      "the cavity block first article"
+     ],
+     "oblique": [
+      "restoring the die that wore out",
+      "a worn production fixture that needed replacing",
+      "getting the stamping equipment back in shape",
+      "the engineering fee for repairing our dies",
+      "pieces coming out undersized from the old equipment",
+      "reconstruction of the heavy steel apparatus",
+      "the retooling the supplier invoiced separately",
+      "what we paid so parts would fit again",
+      "a major repair on the shaping equipment",
+      "correcting defects traced back to the press",
+      "the expense of keeping output on schedule",
+      "new inserts for the forming station",
+      "inspection of the first pieces from the repaired unit",
+      "a one-time charge from our molder",
+      "bringing the production fixtures to spec",
+      "the tooling rework that stopped shipments"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "alloy_shortage",
+     "vendor": "Sentinel Specialty Alloys",
+     "memos": [
+      "Spot buy Ti-6Al-4V ELI bar - shortage premium PO 71192",
+      "Spot buy Ti-6Al-4V ELI bar - mill cert verification"
+     ],
+     "cross_memo": "Spot buy Ti-6Al-4V ELI bar - expedited customs brokerage",
+     "plain": [
+      "the Ti-6Al-4V ELI spot buy",
+      "spot buy shortage premium",
+      "the ELI bar mill cert verification"
+     ],
+     "oblique": [
+      "paying extra because raw metal was hard to find",
+      "a scramble for scarce inputs",
+      "the premium for buying off-contract",
+      "securing supply when our usual mill ran dry",
+      "a purchase made in a hurry at a high price",
+      "metal we had to grab on the open market",
+      "the shortfall in available stock",
+      "what it cost to keep the lathes running",
+      "sourcing from an unplanned supplier",
+      "paperwork that proved the material was genuine",
+      "clearing imported goods quickly through the port",
+      "a gap in deliveries from our normal source",
+      "overpaying to avoid a production stoppage",
+      "the emergency order of raw stock",
+      "a bridging purchase until the contract resumed",
+      "hunting for material during the worldwide squeeze"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Product Liability & IP",
+   "aliases": [
+    "legal",
+    "legal costs",
+    "patent and liability",
+    "ip spend",
+    "litigation reserve"
+   ],
+   "narrative": [
+    "Legal costs",
+    "IP spend",
+    "Patent and liability"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hargrove & Whitlock LLP",
+     "base": 16000,
+     "memo": "Patent prosecution retainer"
+    },
+    {
+     "vendor": "Shield Mutual Insurance",
+     "base": 11000,
+     "memo": "Product liability premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "patent_infringement",
+     "vendor": "Hargrove & Whitlock LLP",
+     "memos": [
+      "Infringement defense - Kestrel v. Meridian discovery WO 1187",
+      "Infringement defense - expert witness retainer"
+     ],
+     "cross_memo": "Infringement defense - e-discovery hosting",
+     "plain": [
+      "the Kestrel infringement defense",
+      "infringement defense discovery",
+      "the Kestrel expert witness retainer"
+     ],
+     "oblique": [
+      "fighting a competitor's claim over our spinal design",
+      "a lawsuit about who invented the mechanism",
+      "lawyers digging through our email archives",
+      "a rival accusing us of copying",
+      "the courtroom battle with the other manufacturer",
+      "paying a specialist to testify on our side",
+      "responding to demands for our documents",
+      "a dispute over who owns an idea",
+      "what it cost to answer the complaint",
+      "outside attorneys working the case",
+      "the claim from a competitor",
+      "proving our device is not a copy",
+      "defending the design we launched last year",
+      "preparing evidence for the judge",
+      "the legal fight over the new anchor system",
+      "a patent fight that dragged into this period"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "field_action_counsel",
+     "vendor": "Bellamy Crisis Communications",
+     "memos": [
+      "Voluntary field correction - customer notification mailing PO 88231",
+      "Voluntary field correction - media response retainer"
+     ],
+     "cross_memo": "Voluntary field correction - call center surge staffing",
+     "plain": [
+      "the voluntary field correction",
+      "field correction customer notification",
+      "the field correction media response"
+     ],
+     "oblique": [
+      "telling hospitals about a safety concern with shipped units",
+      "the public messaging around a product problem",
+      "letters to every customer who bought the affected model",
+      "handling reporters asking about the issue",
+      "the notice we sent after finding a defect",
+      "answering the flood of worried phone calls",
+      "spokespeople hired for a rough week",
+      "a recall-style announcement without the full recall",
+      "protecting our reputation after the discovery",
+      "getting the word out about the faulty batch",
+      "alerting surgeons who had the device in inventory",
+      "managing the fallout from a malfunction report",
+      "outreach to clinics holding the suspect product",
+      "crisis help once the agency was notified",
+      "extra staff on the support line",
+      "what we spent to inform the market of the fix"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

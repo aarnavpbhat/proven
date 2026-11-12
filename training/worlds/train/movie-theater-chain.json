@@ -1,0 +1,830 @@
+{
+ "slug": "movie-theater-chain",
+ "industry": "movie theater chain",
+ "entities": [
+  "Starlight Cinemas Group",
+  "Marquee Row Theatres",
+  "Reelhouse Entertainment Corp",
+  "Silverscreen Circuit Holdings",
+  "Lumen Picture Palaces Inc"
+ ],
+ "accounts": [
+  {
+   "name": "Film Rental and Licensing Fees",
+   "aliases": [
+    "film rental",
+    "film rentals",
+    "studio rental fees",
+    "distributor payments",
+    "licensing fees"
+   ],
+   "narrative": [
+    "Film rental",
+    "Studio rental fees",
+    "Distributor payments"
+   ],
+   "recurring": [
+    {
+     "vendor": "Paramount Ridge Distribution",
+     "base": 30000,
+     "memo": "Weekly feature film rental settlement"
+    },
+    {
+     "vendor": "Evergreen Pictures Booking",
+     "base": 22000,
+     "memo": "Studio film license fee - monthly"
+    },
+    {
+     "vendor": "Northlight Releasing",
+     "base": 14500,
+     "memo": "Film rental percentage settlement"
+    }
+   ],
+   "events": [
+    {
+     "key": "tentpole",
+     "vendor": "Paramount Ridge Distribution",
+     "memos": [
+      "Summer Spectacle Premiere - guaranteed minimum payment",
+      "Summer Spectacle Premiere - extended run settlement"
+     ],
+     "cross_memo": "Summer Spectacle Premiere - promotional standee freight",
+     "plain": [
+      "the Summer Spectacle premiere",
+      "the Summer Spectacle guarantee",
+      "the Summer Spectacle run"
+     ],
+     "oblique": [
+      "the big superhero opener",
+      "a blockbuster guarantee",
+      "the franchise sequel",
+      "a huge opening weekend",
+      "the comic-book sequel everyone wanted",
+      "an extended engagement of our biggest draw",
+      "terms the studio demanded for the top release",
+      "the must-have family sequel",
+      "a record opener",
+      "the guaranteed floor on the year's biggest title",
+      "holding the hit over for extra weeks",
+      "top-grossing title",
+      "the studio's minimum commitment on the marquee release",
+      "the sequel that sold out midnight shows",
+      "a megahit's payout",
+      "the opening-week frenzy"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "festival",
+     "vendor": "Cobalt Independent Films LLC",
+     "memos": [
+      "Harvest Indie Showcase - festival film licensing",
+      "Harvest Indie Showcase - archive print fees"
+     ],
+     "cross_memo": "Harvest Indie Showcase - guest speaker travel",
+     "plain": [
+      "the Harvest Indie Showcase",
+      "the Harvest Indie licensing",
+      "the Harvest Showcase prints"
+     ],
+     "oblique": [
+      "the art-house weekend",
+      "small-budget films we booked",
+      "the lineup of independent features",
+      "a boutique series for cinephiles",
+      "the director-led screenings",
+      "limited-release titles",
+      "the autumn series of niche movies",
+      "arranging rights for lesser-known pictures",
+      "the foreign-language program",
+      "the curated slate for film buffs",
+      "screenings of award-circuit titles",
+      "specialty programming",
+      "the underdog film series",
+      "rights to older restored classics",
+      "a tribute week for filmmakers",
+      "the low-budget slate"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Concession Cost of Goods",
+   "aliases": [
+    "concessions cogs",
+    "concession costs",
+    "snack inventory",
+    "food and beverage cost",
+    "concession supplies"
+   ],
+   "narrative": [
+    "Concession costs",
+    "Snack inventory",
+    "Food and beverage cost"
+   ],
+   "recurring": [
+    {
+     "vendor": "Golden Kernel Popcorn Supply",
+     "base": 18000,
+     "memo": "Popcorn kernels and oil - monthly delivery"
+    },
+    {
+     "vendor": "Fizzwell Beverage Distributors",
+     "base": 15500,
+     "memo": "Fountain syrup and cups restock"
+    },
+    {
+     "vendor": "Sweet Tooth Candy Wholesale",
+     "base": 9000,
+     "memo": "Candy and snack resale inventory"
+    }
+   ],
+   "events": [
+    {
+     "key": "butter",
+     "vendor": "Golden Kernel Popcorn Supply",
+     "memos": [
+      "Butterfly Topping Recall - replacement shipment",
+      "Butterfly Topping Recall - disposal handling"
+     ],
+     "cross_memo": "Butterfly Topping Recall - hazmat waste pickup",
+     "plain": [
+      "the Butterfly Topping recall",
+      "the Butterfly Topping replacement",
+      "the Butterfly recall handling"
+     ],
+     "oblique": [
+      "tossing a tainted batch",
+      "the safety withdrawal of a product",
+      "reordering after a contamination scare",
+      "pulled stock that failed a lab check",
+      "the health department notice",
+      "restocking what we had to discard",
+      "the flavoring that went bad",
+      "a supplier's quality problem",
+      "emergency replenishment of the pump dispensers",
+      "scrapped inventory across every location",
+      "a batch the regulator flagged",
+      "buying product twice",
+      "an expensive do-over on the movie-snack staple",
+      "the yellow goo shortfall",
+      "recalled pantry stock",
+      "the quality failure at the source"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "collectible",
+     "vendor": "Plushworks Novelty Imports",
+     "memos": [
+      "Dragon Quest Collector Cups - initial purchase order",
+      "Dragon Quest Collector Cups - expedited sea freight"
+     ],
+     "cross_memo": "Dragon Quest Collector Cups - display kiosk fabrication",
+     "plain": [
+      "the Dragon Quest collector cups",
+      "the Dragon Quest cup order",
+      "the Dragon Quest cups freight"
+     ],
+     "oblique": [
+      "the souvenir drink buckets",
+      "a limited-edition keepsake",
+      "the merchandise tie-in for the animated release",
+      "premium vessels that fans lined up for",
+      "a collectible craze",
+      "the gimmick that sold out in a day",
+      "novelty items for the fantasy franchise",
+      "the souvenir sipper program",
+      "extra stock of the hot-selling memento",
+      "a licensed gadget",
+      "the fan-favorite plastic item",
+      "reordering the sellout trinket",
+      "our best merchandise promotion",
+      "the geek-culture giveaway",
+      "items resellers snapped up",
+      "the premium-priced souvenir"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Projection and Sound Equipment Maintenance",
+   "aliases": [
+    "projection maintenance",
+    "projector upkeep",
+    "auditorium equipment",
+    "sound system repairs",
+    "booth maintenance"
+   ],
+   "narrative": [
+    "Projection maintenance",
+    "Projector upkeep",
+    "Booth maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightbeam Technical Services",
+     "base": 12000,
+     "memo": "Monthly projector service contract"
+    },
+    {
+     "vendor": "Clearwave Audio Systems",
+     "base": 6500,
+     "memo": "Surround audio calibration visits"
+    },
+    {
+     "vendor": "Arcline Lamp and Lens Co",
+     "base": 4200,
+     "memo": "Xenon lamp and lens replacements"
+    }
+   ],
+   "events": [
+    {
+     "key": "laser",
+     "vendor": "Brightbeam Technical Services",
+     "memos": [
+      "Laser Upgrade Initiative - light engine installation",
+      "Laser Upgrade Initiative - alignment technician labor"
+     ],
+     "cross_memo": "Laser Upgrade Initiative - electrical panel upgrade",
+     "plain": [
+      "the Laser Upgrade Initiative",
+      "the Laser Upgrade installation",
+      "the Laser Upgrade labor"
+     ],
+     "oblique": [
+      "swapping out bulbs for a newer light source",
+      "the picture-quality refresh",
+      "a brighter image across the flagship screens",
+      "retiring the old lamp houses",
+      "modernizing the booth",
+      "the premium-format conversion",
+      "a new way of lighting the big screen",
+      "the hardware overhaul that sharpened our picture",
+      "switching to longer-lasting illumination",
+      "technicians crawling through the booths for weeks",
+      "equipment that makes the colors pop",
+      "the flagship auditorium refresh",
+      "an expensive visual upgrade",
+      "what we did to compete with streaming at home",
+      "the high-end projection retrofit",
+      "getting rid of lamps that burned out"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "flood",
+     "vendor": "Aquaguard Restoration Experts",
+     "memos": [
+      "Basement Flood Recovery - subfloor drying and mold treatment",
+      "Basement Flood Recovery - speaker rewiring"
+     ],
+     "cross_memo": "Basement Flood Recovery - emergency water extraction",
+     "plain": [
+      "the Basement Flood recovery",
+      "the Basement Flood rewiring",
+      "the Basement Flood treatment"
+     ],
+     "oblique": [
+      "the burst pipe incident",
+      "water damage in the lower level",
+      "drying out after the storm",
+      "the weekend a sewer line backed up",
+      "repairs after the deluge",
+      "saved equipment from soaking",
+      "the wet carpet crisis",
+      "restoring a room that took on water",
+      "a plumbing disaster",
+      "what the insurance adjuster came to see",
+      "a ruined auditorium that had to close",
+      "after the rain got into the building",
+      "the downpour cleanup",
+      "sopping wires that needed replacement",
+      "a closed screen for two weeks",
+      "mopping up the storm damage"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Theater Lease and Occupancy",
+   "aliases": [
+    "theater rent",
+    "lease costs",
+    "occupancy",
+    "mall rent",
+    "site leases"
+   ],
+   "narrative": [
+    "Theater rent",
+    "Lease costs",
+    "Site leases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crestview Mall Properties",
+     "base": 30000,
+     "memo": "Monthly base rent - mall locations"
+    },
+    {
+     "vendor": "Harborside Development Trust",
+     "base": 24000,
+     "memo": "Monthly base rent - downtown flagship"
+    },
+    {
+     "vendor": "Pinecrest Realty Partners",
+     "base": 11000,
+     "memo": "Common area maintenance charges"
+    }
+   ],
+   "events": [
+    {
+     "key": "escalation",
+     "vendor": "Crestview Mall Properties",
+     "memos": [
+      "Lakeshore Mall Reconciliation - prior-year percentage rent true-up",
+      "Lakeshore Mall Reconciliation - tax assessment pass-through"
+     ],
+     "cross_memo": "Lakeshore Mall Reconciliation - legal review fees",
+     "plain": [
+      "the Lakeshore Mall reconciliation",
+      "the Lakeshore Mall true-up",
+      "the Lakeshore Mall pass-through"
+     ],
+     "oblique": [
+      "a landlord's catch-up bill",
+      "the annual audit the property owner sent",
+      "retroactive charges nobody budgeted for",
+      "settling a disagreement over last year's sales",
+      "what the lessor claimed we owed",
+      "an invoice covering the prior twelve months",
+      "the surprise statement from the shopping center",
+      "additional amounts demanded after the books were reviewed",
+      "the reconciliation of overlooked obligations",
+      "a big back-bill",
+      "extra payments tied to our box office results",
+      "the owner's clawback",
+      "underbilled periods finally collected",
+      "the accounting clean-up on the property side",
+      "charges a lawyer had to review",
+      "amounts that came due after the audit"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "expansion",
+     "vendor": "Summit Peak Leasing Group",
+     "memos": [
+      "Eastgate Annex Buildout - security deposit and first month",
+      "Eastgate Annex Buildout - tenant improvement allowance repayment"
+     ],
+     "cross_memo": "Eastgate Annex Buildout - signage permit fees",
+     "plain": [
+      "the Eastgate Annex buildout",
+      "the Eastgate Annex deposit",
+      "the Eastgate Annex improvements"
+     ],
+     "oblique": [
+      "the new location we signed",
+      "taking on extra square footage",
+      "opening a screen cluster across town",
+      "an additional site in the portfolio",
+      "the upfront money for a fresh property",
+      "growth into a neighboring suburb",
+      "a space we agreed to take",
+      "the lease we signed in the spring",
+      "putting down cash before the doors opened",
+      "the new venue's startup costs",
+      "our expansion bet",
+      "claiming another storefront",
+      "what we paid to get the keys",
+      "front-loaded payments on a new address",
+      "the opening of another complex",
+      "a deal for more room"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Premiere Promotions",
+   "aliases": [
+    "marketing",
+    "promotions",
+    "advertising spend",
+    "premiere events",
+    "loyalty marketing"
+   ],
+   "narrative": [
+    "Marketing",
+    "Promotions",
+    "Advertising spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Spotlight Media Buyers",
+     "base": 16000,
+     "memo": "Local radio and digital ad placements"
+    },
+    {
+     "vendor": "Popstream Social Agency",
+     "base": 8500,
+     "memo": "Social media management retainer"
+    },
+    {
+     "vendor": "Printwell Poster Co",
+     "base": 3200,
+     "memo": "Lobby poster and standee printing"
+    }
+   ],
+   "events": [
+    {
+     "key": "redcarpet",
+     "vendor": "Spotlight Media Buyers",
+     "memos": [
+      "Midnight Gala Launch - billboard campaign",
+      "Midnight Gala Launch - influencer media buy"
+     ],
+     "cross_memo": "Midnight Gala Launch - security staffing",
+     "plain": [
+      "the Midnight Gala launch",
+      "the Midnight Gala billboards",
+      "the Midnight Gala media buy"
+     ],
+     "oblique": [
+      "the celebrity-studded evening",
+      "rolling out the carpet for stars",
+      "a splashy night with photographers",
+      "the VIP opening spectacle",
+      "hyping a local debut",
+      "the flashy event that got us on the news",
+      "tickets for cast members and their guests",
+      "a big night of glamour",
+      "putting our name in lights downtown",
+      "the invitation-only party",
+      "bringing famous faces to town",
+      "the paparazzi evening",
+      "an expensive publicity stunt that worked",
+      "the awards-season style reception",
+      "the opening night extravaganza",
+      "buzz generated before the first showing"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "loyalty",
+     "vendor": "Pixelcraft Digital Studio",
+     "memos": [
+      "Popcorn Pass Relaunch - mobile app development",
+      "Popcorn Pass Relaunch - subscriber email campaign"
+     ],
+     "cross_memo": "Popcorn Pass Relaunch - point-of-sale integration",
+     "plain": [
+      "the Popcorn Pass relaunch",
+      "the Popcorn Pass app",
+      "the Popcorn Pass campaign"
+     ],
+     "oblique": [
+      "the subscription program refresh",
+      "our members club overhaul",
+      "a new phone application for moviegoers",
+      "rewards for frequent visitors",
+      "the rebuilt customer retention scheme",
+      "monthly ticket plan revamp",
+      "giving regulars a reason to return",
+      "the digital membership push",
+      "emails to the subscriber list",
+      "the rebrand of our perks program",
+      "a smarter way to keep fans coming",
+      "technology for tracking repeat visits",
+      "the discount club relaunch",
+      "what we built to compete with streaming subscriptions",
+      "the points and perks refresh",
+      "gamified incentives for guests"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Theater Staffing and Contract Labor",
+   "aliases": [
+    "contract labor",
+    "temp staffing",
+    "usher staffing",
+    "labor agency fees",
+    "seasonal staffing"
+   ],
+   "narrative": [
+    "Contract labor",
+    "Temp staffing",
+    "Seasonal staffing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Frontline Staffing Solutions",
+     "base": 19000,
+     "memo": "Temporary usher and concession staff"
+    },
+    {
+     "vendor": "Nightowl Janitorial Services",
+     "base": 10500,
+     "memo": "Overnight auditorium cleaning contract"
+    },
+    {
+     "vendor": "Guardian Door Security",
+     "base": 7200,
+     "memo": "Event security guard coverage"
+    }
+   ],
+   "events": [
+    {
+     "key": "holiday",
+     "vendor": "Frontline Staffing Solutions",
+     "memos": [
+      "Yuletide Surge Coverage - extra shift staffing",
+      "Yuletide Surge Coverage - overtime premium"
+     ],
+     "cross_memo": "Yuletide Surge Coverage - uniform rush order",
+     "plain": [
+      "the Yuletide surge coverage",
+      "the Yuletide shift staffing",
+      "the Yuletide overtime"
+     ],
+     "oblique": [
+      "the winter holiday crowds",
+      "extra hands for the busiest weeks of the year",
+      "covering lines that stretched out the door",
+      "the end-of-year rush",
+      "additional bodies during school break",
+      "time-and-a-half for peak days",
+      "the crush after Thanksgiving",
+      "guest volume nobody predicted",
+      "working through the festive season",
+      "staffing up when families came in droves",
+      "the late-December ticket stampede",
+      "all those extra shifts",
+      "premium pay for the high-traffic stretch",
+      "the seasonal wave",
+      "a lot more people at the registers",
+      "the year-end turnout"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "strike",
+     "vendor": "Steadfast Workforce Partners",
+     "memos": [
+      "Picket Line Contingency - replacement crew deployment",
+      "Picket Line Contingency - temporary housing and meals"
+     ],
+     "cross_memo": "Picket Line Contingency - legal counsel retainer",
+     "plain": [
+      "the Picket Line contingency",
+      "the Picket Line crew",
+      "the Picket Line deployment"
+     ],
+     "oblique": [
+      "the walkout by our own employees",
+      "bringing in outside people to keep doors open",
+      "a labor dispute",
+      "the negotiation that broke down",
+      "keeping shows running while workers stayed away",
+      "importing temporary staff from other cities",
+      "the union standoff",
+      "hotel rooms for fill-in workers",
+      "what we spent to avoid closing",
+      "covering for absent theater crews",
+      "a stoppage at three locations",
+      "the contract fight with the employees",
+      "emergency manpower",
+      "the work action",
+      "bridging the gap until a deal was reached",
+      "labor unrest"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Utilities and Climate Control",
+   "aliases": [
+    "utilities",
+    "electricity",
+    "hvac costs",
+    "energy bills",
+    "climate control"
+   ],
+   "narrative": [
+    "Utilities",
+    "Electricity",
+    "Energy bills"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Power and Light",
+     "base": 28000,
+     "memo": "Monthly electricity - all sites"
+    },
+    {
+     "vendor": "CityGas Utility Co",
+     "base": 5500,
+     "memo": "Natural gas heating service"
+    },
+    {
+     "vendor": "Clearflow Water Authority",
+     "base": 3800,
+     "memo": "Water and sewer charges"
+    }
+   ],
+   "events": [
+    {
+     "key": "heatwave",
+     "vendor": "Metro Power and Light",
+     "memos": [
+      "Dog Days Peak Demand - surcharge billing",
+      "Dog Days Peak Demand - overage kilowatt charges"
+     ],
+     "cross_memo": "Dog Days Peak Demand - emergency portable cooling rental",
+     "plain": [
+      "the Dog Days peak demand",
+      "the Dog Days surcharge",
+      "the Dog Days overage"
+     ],
+     "oblique": [
+      "the scorching August stretch",
+      "cranking the air conditioners nonstop",
+      "record temperatures outdoors",
+      "the utility's penalty rate for heavy usage",
+      "keeping auditoriums cool in the swelter",
+      "a brutal run of triple-digit days",
+      "consumption that spiked on the grid",
+      "the bill after the long hot spell",
+      "extra power drawn by the cooling plants",
+      "fees for using too much at once",
+      "sweltering crowds that needed relief",
+      "an unusually warm season",
+      "the summer cooling load",
+      "the utility's heavy-use penalty",
+      "blasting cold air for packed houses",
+      "a spike on the meter"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "solar",
+     "vendor": "Sunbridge Energy Partners",
+     "memos": [
+      "Rooftop Array Commissioning - inverter installation",
+      "Rooftop Array Commissioning - interconnection study"
+     ],
+     "cross_memo": "Rooftop Array Commissioning - structural engineer review",
+     "plain": [
+      "the Rooftop Array commissioning",
+      "the Rooftop Array installation",
+      "the Rooftop Array study"
+     ],
+     "oblique": [
+      "the green energy project",
+      "panels on top of the building",
+      "our sustainability initiative",
+      "generating our own power",
+      "a long-term bet to cut the electric bill",
+      "the clean-energy retrofit",
+      "connecting to the grid after construction",
+      "engineers checking whether the roof could hold it",
+      "the renewable power pilot",
+      "one-time costs for going solar",
+      "the environmental pledge we funded",
+      "turning sunlight into savings",
+      "new equipment on the roof",
+      "the carbon-reduction effort",
+      "the upfront cost of lowering future bills",
+      "a corporate eco program"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Technology and Ticketing Systems",
+   "aliases": [
+    "ticketing systems",
+    "pos software",
+    "technology costs",
+    "booking platform",
+    "box office tech"
+   ],
+   "narrative": [
+    "Ticketing systems",
+    "Technology costs",
+    "Booking platform"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tixwave Online Ticketing",
+     "base": 14000,
+     "memo": "Online ticketing platform fees"
+    },
+    {
+     "vendor": "Kioskline POS Systems",
+     "base": 8200,
+     "memo": "Point-of-sale licensing and support"
+    },
+    {
+     "vendor": "Cloudvault Hosting",
+     "base": 4800,
+     "memo": "Website and app hosting"
+    }
+   ],
+   "events": [
+    {
+     "key": "cyber",
+     "vendor": "Tixwave Online Ticketing",
+     "memos": [
+      "Nightfall Breach Response - forensic investigation",
+      "Nightfall Breach Response - credential reset services"
+     ],
+     "cross_memo": "Nightfall Breach Response - customer notification mailing",
+     "plain": [
+      "the Nightfall breach response",
+      "the Nightfall forensic work",
+      "the Nightfall credential reset"
+     ],
+     "oblique": [
+      "the hacking incident",
+      "unauthorized access to guest records",
+      "a data theft scare",
+      "the intruders who got into our systems",
+      "clean-up after criminals stole information",
+      "experts brought in to trace the attack",
+      "locking everything down after a leak",
+      "a security failure that made headlines",
+      "notifying customers that data was exposed",
+      "the digital break-in",
+      "the cyberattack on the website",
+      "protecting patrons after an exposure",
+      "the compromised accounts",
+      "investigators examining what was taken",
+      "the weekend our servers were attacked",
+      "passwords that all had to change"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "selfserve",
+     "vendor": "Autoserve Kiosk Innovations",
+     "memos": [
+      "Express Lobby Rollout - self-service kiosk units",
+      "Express Lobby Rollout - touchscreen software license"
+     ],
+     "cross_memo": "Express Lobby Rollout - lobby floor cabling",
+     "plain": [
+      "the Express Lobby rollout",
+      "the Express Lobby kiosks",
+      "the Express Lobby license"
+     ],
+     "oblique": [
+      "machines that let guests skip the line",
+      "self-checkout screens for tickets",
+      "fewer cashiers needed at the counter",
+      "the automated ordering stations",
+      "faster service for moviegoers in a hurry",
+      "touchscreens in the entrance area",
+      "a plan to cut waiting times",
+      "technology replacing the front-of-house register",
+      "new devices guests tap to buy",
+      "modernizing how people buy popcorn",
+      "walk-up ordering terminals",
+      "an automation push in the foyer",
+      "gear for customers who prefer no conversation",
+      "the queue-busting hardware",
+      "the hands-free purchasing experiment",
+      "shorter lines at peak showtimes"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,790 @@
+{
+ "slug": "circus-and-touring-acrobatics-troupe",
+ "industry": "circus and touring acrobatics troupe",
+ "entities": [
+  "Cirque Vellamar Touring Co.",
+  "Brightwater Big Top Productions",
+  "Aerial Meridian Troupe LLC",
+  "Hollins & Fray Traveling Circus",
+  "Starfall Acrobatic Company"
+ ],
+ "accounts": [
+  {
+   "name": "Rigging & Aerial Equipment",
+   "aliases": [
+    "rigging",
+    "rigging costs",
+    "aerial gear",
+    "aerial equipment spend",
+    "rigging spend"
+   ],
+   "narrative": [
+    "Rigging costs",
+    "Aerial gear",
+    "Rigging spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Highwire Hardware Co",
+     "base": 6200,
+     "memo": "Monthly carabiner shackle inspection"
+    },
+    {
+     "vendor": "Skyline Cordage Supply",
+     "base": 3400,
+     "memo": "Silks lanyard restock — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "trapeze_truss",
+     "vendor": "Highwire Hardware Co",
+     "memos": [
+      "Trapeze truss retrofit — steel beams",
+      "Trapeze truss retrofit — welding labor"
+     ],
+     "cross_memo": "Trapeze truss retrofit — crane hire",
+     "plain": [
+      "the trapeze truss retrofit",
+      "trapeze truss retrofit work",
+      "a trapeze truss retrofit"
+     ],
+     "oblique": [
+      "overhead frame work",
+      "the flying rig rebuild",
+      "strengthening the structure flyers swing from",
+      "replacing worn overhead girders",
+      "a structural fix above the ring",
+      "the engineer-ordered frame rework",
+      "new metal framing over center ring",
+      "reinforcement work the venue engineer demanded",
+      "fixing the sagging aerial framework",
+      "the flying act's structural overhaul",
+      "load-bearing repairs up top",
+      "swapping out fatigued overhead members",
+      "the rig rebuild ahead of tour",
+      "making the flyers' frame sturdier",
+      "structural reinforcement",
+      "girder work"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "safety_net",
+     "vendor": "Catchnet Safety Systems",
+     "memos": [
+      "Safety net upgrade — mesh panels",
+      "Safety net upgrade — install crew"
+     ],
+     "cross_memo": "Safety net upgrade — performer training",
+     "plain": [
+      "the safety net upgrade",
+      "safety net upgrade work",
+      "a safety net upgrade"
+     ],
+     "oblique": [
+      "better fall protection under the flyers",
+      "replacing the old fall-arrest webbing",
+      "fall protection",
+      "the landing cushion overhaul",
+      "a regulator-requested protective barrier",
+      "protecting artists who miss a catch",
+      "the new fall-arrest rig below the ring",
+      "padding below the high acts",
+      "the insurer-mandated fall protection",
+      "replacing frayed protective webbing",
+      "cushioning beneath the flying act",
+      "a sturdier catching surface",
+      "fall-arrest improvements",
+      "keeping flyers from hitting the floor",
+      "bringing fall protection up to code",
+      "protective padding"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Big Top Canvas & Site Setup",
+   "aliases": [
+    "big top",
+    "tent costs",
+    "canvas spend",
+    "site setup",
+    "big top expense"
+   ],
+   "narrative": [
+    "Big top expense",
+    "Tent costs",
+    "Site setup"
+   ],
+   "recurring": [
+    {
+     "vendor": "Midway Tent Works",
+     "base": 9800,
+     "memo": "Canvas patching — monthly lot"
+    },
+    {
+     "vendor": "Groundstake Rentals",
+     "base": 4500,
+     "memo": "Generator lease — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "storm_damage",
+     "vendor": "Midway Tent Works",
+     "memos": [
+      "Storm damage repair — roof sections",
+      "Storm damage repair — seam stitching"
+     ],
+     "cross_memo": "Storm damage repair — show cancellation refunds",
+     "plain": [
+      "the storm damage repair",
+      "storm damage repair work",
+      "a storm damage repair"
+     ],
+     "oblique": [
+      "fixing what the gale tore open",
+      "wind-related fixes",
+      "restoring the big top after high winds",
+      "the weather cleanup",
+      "mending the torn covering after a squall",
+      "gale aftermath",
+      "rebuilding the shelter the wind ripped",
+      "emergency mending ordered by the site manager",
+      "the hurricane-season fixes",
+      "restoring the ripped overhead fabric",
+      "putting the venue back together after severe weather",
+      "squall cleanup",
+      "the weather fixes",
+      "re-sewing fabric torn by wind",
+      "getting the structure watertight again",
+      "weather-related restoration"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "grandstand_expansion",
+     "vendor": "Bleacherline Seating Ltd",
+     "memos": [
+      "Grandstand expansion — bleacher risers",
+      "Grandstand expansion — delivery"
+     ],
+     "cross_memo": "Grandstand expansion — usher staffing",
+     "plain": [
+      "the grandstand expansion",
+      "grandstand expansion work",
+      "a grandstand expansion"
+     ],
+     "oblique": [
+      "more audience capacity",
+      "adding rows of spectator benches",
+      "the extra seats promoters asked for",
+      "a bigger house",
+      "growing capacity ahead of the holiday run",
+      "additional tiered benches",
+      "room for several hundred more guests",
+      "the capacity increase",
+      "new spectator stands",
+      "meeting sell-out demand with more benches",
+      "enlarging the audience area",
+      "tiered viewing additions",
+      "the promoter-requested capacity boost",
+      "putting more patrons inside",
+      "extra bench rows",
+      "scaling up the spectator area"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Costumes & Wardrobe",
+   "aliases": [
+    "wardrobe",
+    "costumes",
+    "costume spend",
+    "wardrobe costs",
+    "costume department"
+   ],
+   "narrative": [
+    "Wardrobe costs",
+    "Costume spend",
+    "Costumes"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sequin Street Atelier",
+     "base": 5200,
+     "memo": "Leotard alterations — monthly"
+    },
+    {
+     "vendor": "Dyehouse Fabrics",
+     "base": 2800,
+     "memo": "Spandex yardage order"
+    }
+   ],
+   "events": [
+    {
+     "key": "gala_premiere",
+     "vendor": "Sequin Street Atelier",
+     "memos": [
+      "Gala premiere — headdress builds",
+      "Gala premiere — rush fittings"
+     ],
+     "cross_memo": "Gala premiere — red carpet hire",
+     "plain": [
+      "the gala premiere",
+      "gala premiere looks",
+      "a gala premiere"
+     ],
+     "oblique": [
+      "opening-night outfits",
+      "dressing the cast for the launch evening",
+      "new show-opening attire",
+      "elaborate opening ensembles",
+      "the launch-night costume push",
+      "last-minute tailoring before opening",
+      "glamour pieces the director wanted for debut night",
+      "debut costumes",
+      "outfitting performers for the big opening",
+      "the opening spectacle getup",
+      "bespoke pieces ahead of launch",
+      "dress work for the season debut",
+      "VIP-night attire",
+      "the debut gown sewing",
+      "extra sewing hours before curtain-up",
+      "showpiece garments"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "ostrich_plume",
+     "vendor": "Feathercraft Plumage House",
+     "memos": [
+      "Ostrich plume batch — finale capes",
+      "Ostrich plume batch — air freight"
+     ],
+     "cross_memo": "Ostrich plume batch — import duty",
+     "plain": [
+      "the ostrich plume batch",
+      "an ostrich plume batch",
+      "ostrich plume batch costs"
+     ],
+     "oblique": [
+      "imported trimmings",
+      "decorative bird trim",
+      "trim for the closing-number cloaks",
+      "the exotic trim shipment",
+      "replacing moulted showgirl accents",
+      "fluffy embellishments from overseas",
+      "the last act's dramatic trimmings",
+      "costly natural embellishments",
+      "bird-sourced trim",
+      "restocking the closing number's flourish",
+      "overseas trim purchases",
+      "decorative accents the designer specified",
+      "extravagant cloak trim",
+      "natural ornamentation from abroad",
+      "embellishment supplies",
+      "the trim shortage fix"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Performer Medical & Physiotherapy",
+   "aliases": [
+    "physio",
+    "medical",
+    "physio costs",
+    "performer health",
+    "medical spend"
+   ],
+   "narrative": [
+    "Physio costs",
+    "Medical spend",
+    "Performer health"
+   ],
+   "recurring": [
+    {
+     "vendor": "Limberline Physio Group",
+     "base": 7400,
+     "memo": "Weekly sports massage sessions"
+    },
+    {
+     "vendor": "Ringside Clinic",
+     "base": 3900,
+     "memo": "On-call doctor retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "shoulder_surgery",
+     "vendor": "Ringside Clinic",
+     "memos": [
+      "Shoulder surgery — flyer rehab",
+      "Shoulder surgery — MRI scans"
+     ],
+     "cross_memo": "Shoulder surgery — understudy cover",
+     "plain": [
+      "the shoulder surgery",
+      "a shoulder surgery",
+      "shoulder surgery bills"
+     ],
+     "oblique": [
+      "an injured aerialist's operation",
+      "getting our injured catcher back",
+      "post-op care",
+      "the torn rotator cuff",
+      "an orthopedic procedure",
+      "imaging plus therapy after a fall",
+      "treating a dislocated joint",
+      "the trapeze artist's operation",
+      "orthopedic follow-up care",
+      "fixing an artist's torn joint",
+      "the cuff repair",
+      "return-to-ring therapy for a hurt artist",
+      "medical bills from a bad landing",
+      "an arm injury",
+      "the orthopedist's work on our lead",
+      "hospital costs after a training fall"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "baseline_testing",
+     "vendor": "Northpoint Concussion Lab",
+     "memos": [
+      "Baseline testing — neuro screens",
+      "Baseline testing — tumbler cohort"
+     ],
+     "cross_memo": "Baseline testing — rehearsal downtime",
+     "plain": [
+      "the baseline testing",
+      "baseline testing program",
+      "new baseline testing"
+     ],
+     "oblique": [
+      "head-injury checks",
+      "brain health assessments for acrobats",
+      "pre-season cognitive exams",
+      "the insurer-required head checks",
+      "cognitive benchmarks",
+      "screening acrobats against head trauma",
+      "pre-tour brain exams",
+      "establishing reference scores for every acrobat",
+      "head trauma protocols",
+      "new cognitive assessment program",
+      "the league-style brain checks",
+      "mandatory pre-season evaluations",
+      "head-knock precautions",
+      "brain evaluations",
+      "the safety officer's cognitive exams",
+      "mental sharpness assessments"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Tour Trucking & Haulage",
+   "aliases": [
+    "trucking",
+    "haulage",
+    "tour freight",
+    "trucking costs",
+    "haulage spend"
+   ],
+   "narrative": [
+    "Trucking costs",
+    "Haulage spend",
+    "Tour freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Caravan Road Logistics",
+     "base": 18500,
+     "memo": "Route leg haul — tractor units"
+    },
+    {
+     "vendor": "Fifthwheel Fuel Cards",
+     "base": 9200,
+     "memo": "Diesel card statement"
+    }
+   ],
+   "events": [
+    {
+     "key": "border_crossing",
+     "vendor": "Caravan Road Logistics",
+     "memos": [
+      "Border crossing — customs bonds",
+      "Border crossing — escort convoy"
+     ],
+     "cross_memo": "Border crossing — visa fees",
+     "plain": [
+      "the border crossing",
+      "a border crossing",
+      "border crossing charges"
+     ],
+     "oblique": [
+      "taking the show into Canada",
+      "international entry paperwork",
+      "clearing equipment through a foreign frontier",
+      "the international move",
+      "getting our trucks past immigration",
+      "the overseas entry formalities",
+      "frontier clearance",
+      "moving the company abroad",
+      "the jump into a neighboring country",
+      "duty guarantees plus police accompaniment",
+      "foreign entry costs",
+      "taking the tour international",
+      "the Mexico engagement paperwork",
+      "clearing the rigs at the frontier",
+      "cross-national movement of our trailers",
+      "frontier formalities"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "island_ferry",
+     "vendor": "Lowboy Heavy Transport",
+     "memos": [
+      "Island ferry transfer — vehicle deck",
+      "Island ferry transfer — demurrage"
+     ],
+     "cross_memo": "Island ferry transfer — crew lodging",
+     "plain": [
+      "the island ferry transfer",
+      "an island ferry transfer",
+      "island ferry transfer costs"
+     ],
+     "oblique": [
+      "sailing the trucks to the next stop",
+      "a sea passage",
+      "shipping our rigs over water",
+      "the boat trip",
+      "getting the trailers across open water",
+      "the maritime hop to an offshore date",
+      "waterborne relocation",
+      "an offshore booking's shipping",
+      "boat charges for the trailers",
+      "the overwater move",
+      "port waiting charges",
+      "taking the trailers by sea",
+      "the sailing to an offshore engagement",
+      "a seagoing relocation",
+      "harbor costs",
+      "the boat passage"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Liability Insurance",
+   "aliases": [
+    "insurance",
+    "liability cover",
+    "insurance premiums",
+    "premiums",
+    "liability insurance spend"
+   ],
+   "narrative": [
+    "Insurance premiums",
+    "Liability cover",
+    "Premiums"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tightrope Mutual Assurance",
+     "base": 11000,
+     "memo": "General liability premium — installment"
+    },
+    {
+     "vendor": "Ringmaster Brokers",
+     "base": 1500,
+     "memo": "Broker service fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "pyrotechnic_endorsement",
+     "vendor": "Tightrope Mutual Assurance",
+     "memos": [
+      "Pyrotechnic endorsement — rider",
+      "Pyrotechnic endorsement — audit"
+     ],
+     "cross_memo": "Pyrotechnic endorsement — extinguisher kit",
+     "plain": [
+      "the pyrotechnic endorsement",
+      "a pyrotechnic endorsement",
+      "pyrotechnic endorsement charges"
+     ],
+     "oblique": [
+      "adding fire effects to the show",
+      "coverage for flame acts",
+      "the fireworks finale's risk",
+      "insuring the new fire-breathing number",
+      "flame-act coverage",
+      "extending protection to onstage explosives",
+      "the fireworks add-on",
+      "an insurer review of our flame stunts",
+      "fire-eater coverage",
+      "the sparkler-heavy closing number",
+      "insuring explosive effects",
+      "coverage the fire inspector insisted on",
+      "flame stunt protection",
+      "extra protection once we added fireworks",
+      "the fire-act extension",
+      "insurance for the flaming hoops"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "weather_abandonment",
+     "vendor": "Harborline Underwriters",
+     "memos": [
+      "Weather abandonment policy — stadium dates",
+      "Weather abandonment policy — binder"
+     ],
+     "cross_memo": "Weather abandonment policy — promoter surcharge",
+     "plain": [
+      "the weather abandonment policy",
+      "a weather abandonment policy",
+      "weather abandonment policy costs"
+     ],
+     "oblique": [
+      "rain-out protection",
+      "insuring outdoor shows against storms",
+      "coverage for open-air arena bookings",
+      "rain-out insurance",
+      "protection if bad skies cancel performances",
+      "the open-air booking safeguard",
+      "storm cancellation coverage",
+      "the backer-requested rain protection",
+      "outdoor engagement insurance",
+      "guarding against washed-out shows",
+      "a one-off rainfall safeguard",
+      "coverage tied to the arena run",
+      "insuring against lost gate receipts",
+      "rain risk",
+      "open-air run protection",
+      "the washout safeguard"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Winter Quarters Rent",
+   "aliases": [
+    "winter quarters",
+    "quarters rent",
+    "rent",
+    "facility rent",
+    "base rent"
+   ],
+   "narrative": [
+    "Quarters rent",
+    "Facility rent",
+    "Winter quarters"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sawdust Acres Properties",
+     "base": 14000,
+     "memo": "Barn compound lease"
+    },
+    {
+     "vendor": "Prairie Utilities Co-op",
+     "base": 2600,
+     "memo": "Utility bill — compound"
+    }
+   ],
+   "events": [
+    {
+     "key": "hangar_annex",
+     "vendor": "Sawdust Acres Properties",
+     "memos": [
+      "Hangar annex — extra bays",
+      "Hangar annex — CAM true-up"
+     ],
+     "cross_memo": "Hangar annex — heater rental",
+     "plain": [
+      "the hangar annex",
+      "a hangar annex",
+      "hangar annex charges"
+     ],
+     "oblique": [
+      "more practice space",
+      "taking on an additional building",
+      "the second rehearsal shed",
+      "space to rehearse the new aerial act",
+      "landlord's common-area reconciliation",
+      "expanded off-season footprint",
+      "a bigger practice hall",
+      "renting the adjacent warehouse",
+      "added square footage",
+      "the high-ceiling practice space the director wanted",
+      "growing our home base",
+      "a larger creation studio",
+      "additional off-season room",
+      "the neighboring hall",
+      "more indoor training room",
+      "landlord reconciliation charges"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "fairground_pavilion",
+     "vendor": "Silverlake Fairgrounds",
+     "memos": [
+      "Fairground pavilion — short-term booking",
+      "Fairground pavilion — cleaning deposit"
+     ],
+     "cross_memo": "Fairground pavilion — shuttle buses",
+     "plain": [
+      "the fairground pavilion",
+      "a fairground pavilion",
+      "fairground pavilion charges"
+     ],
+     "oblique": [
+      "a temporary practice venue",
+      "rehearsing offsite",
+      "borrowed space while ours was flooded",
+      "an offsite rehearsal hall",
+      "a stopgap venue",
+      "renting a county exhibition hall",
+      "temporary relocation",
+      "the interim rehearsal home",
+      "a stand-in venue during renovations",
+      "the offsite rehearsal stint",
+      "practicing at a showground across town",
+      "a temporary hall",
+      "moving rehearsals elsewhere",
+      "the overflow venue",
+      "an interim exhibition hall",
+      "displacement costs"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Ticketing & Box Office Systems",
+   "aliases": [
+    "ticketing",
+    "box office",
+    "ticketing software",
+    "box office systems",
+    "ticketing fees"
+   ],
+   "narrative": [
+    "Ticketing fees",
+    "Box office",
+    "Ticketing software"
+   ],
+   "recurring": [
+    {
+     "vendor": "Turnstile Cloud Inc",
+     "base": 4800,
+     "memo": "Seat-map platform subscription"
+    },
+    {
+     "vendor": "Spotlight Payments",
+     "base": 2200,
+     "memo": "Card processing — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "dynamic_pricing",
+     "vendor": "Turnstile Cloud Inc",
+     "memos": [
+      "Dynamic pricing module — activation",
+      "Dynamic pricing module — onboarding"
+     ],
+     "cross_memo": "Dynamic pricing module — analyst contractor",
+     "plain": [
+      "the dynamic pricing module",
+      "a dynamic pricing module",
+      "dynamic pricing module fees"
+     ],
+     "oblique": [
+      "surge-based fares",
+      "letting prices float with demand",
+      "yield management",
+      "the variable fare tool",
+      "automated price adjustments",
+      "smarter fare setting",
+      "a revenue optimization add-on",
+      "the price-flexing feature marketing requested",
+      "going live with demand-based fares",
+      "fare automation",
+      "a yield tool for peak shows",
+      "real-time fare optimization",
+      "the revenue team's new fare engine",
+      "variable fares",
+      "price optimization software",
+      "demand-based fares"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "barcode_scanner",
+     "vendor": "Gatekeep Scanning Ltd",
+     "memos": [
+      "Barcode scanner rollout — handhelds",
+      "Barcode scanner rollout — setup"
+     ],
+     "cross_memo": "Barcode scanner rollout — temp door staff",
+     "plain": [
+      "the barcode scanner rollout",
+      "a barcode scanner rollout",
+      "barcode scanner rollout costs"
+     ],
+     "oblique": [
+      "faster entry lines",
+      "new gate devices",
+      "electronic admission at the entrance",
+      "replacing paper stubs",
+      "contactless entry gear",
+      "mobile ticket readers",
+      "speeding guests through admission",
+      "the entrance hardware refresh",
+      "digital check-in at the gate",
+      "retiring the torn-stub method",
+      "admission devices",
+      "the paperless entry switch",
+      "equipping ushers with readers",
+      "gate validation equipment",
+      "quicker admissions",
+      "entry readers ahead of the busy season"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

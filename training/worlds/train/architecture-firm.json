@@ -1,0 +1,830 @@
+{
+ "slug": "architecture-firm",
+ "industry": "architecture firm",
+ "entities": [
+  "Meridian Architecture Studio",
+  "Larkspur & Voss Architects",
+  "Northlight Design Partners",
+  "Copperfield Architecture Group",
+  "Alder Row Architects"
+ ],
+ "accounts": [
+  {
+   "name": "Studio Lease & Occupancy",
+   "aliases": [
+    "rent",
+    "studio rent",
+    "lease costs",
+    "occupancy",
+    "premises spend"
+   ],
+   "narrative": [
+    "Rent",
+    "Lease costs",
+    "Occupancy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harbor Point Properties",
+     "base": 18000,
+     "memo": "Monthly base lease Suite 400"
+    },
+    {
+     "vendor": "Civic Facilities Mgmt",
+     "base": 3200,
+     "memo": "CAM charges Qtr accrual"
+    },
+    {
+     "vendor": "Brightline Janitorial",
+     "base": 1400,
+     "memo": "Janitorial Svc nightly"
+    }
+   ],
+   "events": [
+    {
+     "key": "buildout",
+     "vendor": "Harbor Point Properties",
+     "memos": [
+      "Mezzanine buildout — drywall framing",
+      "Mezzanine buildout — electrical drops"
+     ],
+     "cross_memo": "Mezzanine buildout — furniture install",
+     "plain": [
+      "the mezzanine buildout",
+      "mezzanine buildout costs",
+      "the mezzanine buildout work"
+     ],
+     "oblique": [
+      "adding a second level of workstations",
+      "expanding into the loft area",
+      "extra room for incoming hires",
+      "construction inside our offices",
+      "tenant improvements",
+      "walls going up in the unused space",
+      "the growth-driven reconfiguration",
+      "making room for twelve new people",
+      "carving out space upstairs",
+      "alterations the landlord approved",
+      "the headcount expansion project",
+      "contractor work on our floor",
+      "our overflow area conversion",
+      "fitting out vacant square footage",
+      "the upstairs conversion",
+      "renovating idle space"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "archive",
+     "vendor": "Tallgrass Moving & Storage",
+     "memos": [
+      "Plan archive relocation — crate packing",
+      "Plan archive relocation — climate vault intake"
+     ],
+     "cross_memo": "Plan archive relocation — shelving rental",
+     "plain": [
+      "the plan archive relocation",
+      "plan archive relocation costs",
+      "the archive relocation"
+     ],
+     "oblique": [
+      "hauling old drawings to offsite",
+      "clearing out decades of paper",
+      "getting old project files out of the building",
+      "the records purge",
+      "boxes of past projects leaving",
+      "freeing up the back room",
+      "offloading legacy documents",
+      "the file clean-out",
+      "transferring historic drawings elsewhere",
+      "shifting paper records offsite",
+      "tidying up the back office",
+      "decommissioning the file room",
+      "old blueprints sent away",
+      "closing out dusty cabinets",
+      "the paper decluttering effort",
+      "a truck taking legacy drawings away"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Design Software Licenses",
+   "aliases": [
+    "software",
+    "cad licenses",
+    "design software",
+    "bim subscriptions",
+    "licensing spend"
+   ],
+   "narrative": [
+    "Software",
+    "CAD licenses",
+    "Design software"
+   ],
+   "recurring": [
+    {
+     "vendor": "Parametrix CAD Systems",
+     "base": 9500,
+     "memo": "Seat subscription BIM platform"
+    },
+    {
+     "vendor": "Cloudrender Labs",
+     "base": 4200,
+     "memo": "Render farm Svc usage"
+    },
+    {
+     "vendor": "Docuvault Inc",
+     "base": 1800,
+     "memo": "Document mgmt subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "tier",
+     "vendor": "Parametrix CAD Systems",
+     "memos": [
+      "Enterprise tier migration — seat true-up",
+      "Enterprise tier migration — onboarding"
+     ],
+     "cross_memo": "Enterprise tier migration — training seats",
+     "plain": [
+      "the enterprise tier migration",
+      "enterprise tier migration fees",
+      "the migration to enterprise tier"
+     ],
+     "oblique": [
+      "the vendor's bigger package",
+      "moving to the premium plan",
+      "a contract bump after the audit",
+      "catching up on unlicensed users",
+      "a higher pricing level",
+      "the plan change our vendor required",
+      "switching to a pricier agreement",
+      "extra users we hadn't paid for",
+      "the compliance catch-up",
+      "the contract renegotiation",
+      "consolidating departments under one agreement",
+      "bringing every designer onto the same package",
+      "the vendor audit settlement",
+      "an expanded agreement covering all staff",
+      "what we owed after headcount grew",
+      "the upgraded vendor agreement"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "pointcloud",
+     "vendor": "Scanwright Digital",
+     "memos": [
+      "Point cloud pilot — registration module",
+      "Point cloud pilot — reality capture add-on"
+     ],
+     "cross_memo": "Point cloud pilot — handheld lidar scanner",
+     "plain": [
+      "the point cloud pilot",
+      "point cloud pilot costs",
+      "the point cloud trial"
+     ],
+     "oblique": [
+      "testing a new way to document existing buildings",
+      "the as-built measuring experiment",
+      "trying out laser-based site documentation",
+      "an experimental survey toolkit",
+      "a trial of three-dimensional existing-condition tools",
+      "the retrofit documentation trial",
+      "evaluating tech for renovation jobs",
+      "the proof-of-concept for old structures",
+      "a test run on a historic building",
+      "the digital twin experiment",
+      "new tools for measuring renovation sites",
+      "an innovation initiative in the studio",
+      "the R&D effort on existing buildings",
+      "an experiment with new tools on one project",
+      "the emerging-technology evaluation",
+      "a measurement technology tryout"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Professional Liability Insurance",
+   "aliases": [
+    "insurance",
+    "pl insurance",
+    "liability coverage",
+    "e&o premiums",
+    "insurance costs"
+   ],
+   "narrative": [
+    "Insurance",
+    "Liability coverage",
+    "Insurance costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sterling Design Underwriters",
+     "base": 12000,
+     "memo": "PL policy premium Mnt installment"
+    },
+    {
+     "vendor": "Ridgeway Brokerage",
+     "base": 2500,
+     "memo": "Broker fee Svc retainer"
+    },
+    {
+     "vendor": "Keystone Surety",
+     "base": 1600,
+     "memo": "Bond premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "priors",
+     "vendor": "Sterling Design Underwriters",
+     "memos": [
+      "Prior acts endorsement — retro date extension",
+      "Prior acts endorsement — surcharge"
+     ],
+     "cross_memo": "Prior acts endorsement — broker placement fee",
+     "plain": [
+      "the prior acts endorsement",
+      "prior acts endorsement costs",
+      "the prior acts endorsement charge"
+     ],
+     "oblique": [
+      "covering work done before the renewal",
+      "protection for past projects after a carrier change",
+      "closing a gap in our history of protection",
+      "the switch of carriers",
+      "protection reaching backward",
+      "stretching how far back claims can reach",
+      "the carrier's add-on after we changed insurers",
+      "a rider for earlier jobs",
+      "the rider our lender requested",
+      "a cost for continuity with the old insurer",
+      "shielding us from old-project claims",
+      "the added cost for legacy exposure",
+      "the renewal add-on",
+      "a longer lookback window",
+      "making sure old jobs stay protected",
+      "the carrier change cost"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "curtainwall",
+     "vendor": "Pembrook Legal Partners",
+     "memos": [
+      "Curtain wall dispute — outside counsel Inv",
+      "Curtain wall dispute — expert witness deposition"
+     ],
+     "cross_memo": "Curtain wall dispute — deductible reserve",
+     "plain": [
+      "the curtain wall dispute",
+      "curtain wall dispute costs",
+      "the curtain wall dispute defense"
+     ],
+     "oblique": [
+      "the lawsuit over a leaking facade",
+      "litigation with a client over glazing",
+      "a contractor's claim about water intrusion",
+      "fighting an allegation on a tower project",
+      "attorneys' bills from the building envelope matter",
+      "the suit about a defective exterior",
+      "defending our drawings in court",
+      "the case a developer brought",
+      "courtroom costs on the high-rise job",
+      "an owner's complaint about leaks",
+      "the envelope failure lawsuit",
+      "the fight over who caused the water damage",
+      "a settlement negotiation on the tower",
+      "litigation on the glass skin",
+      "a claim against us over the exterior cladding",
+      "defending a claim on a completed high-rise"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Model Making & Prototyping",
+   "aliases": [
+    "models",
+    "model shop",
+    "physical models",
+    "maquettes",
+    "model fabrication spend"
+   ],
+   "narrative": [
+    "Models",
+    "Model shop",
+    "Maquettes"
+   ],
+   "recurring": [
+    {
+     "vendor": "Foamline Fabrication",
+     "base": 6500,
+     "memo": "Presentation model Svc basswood"
+    },
+    {
+     "vendor": "Laserworks Cutting",
+     "base": 3800,
+     "memo": "Laser cutting Inv sheet stock"
+    },
+    {
+     "vendor": "Plaster & Resin Supply",
+     "base": 1900,
+     "memo": "Casting materials Mnt order"
+    }
+   ],
+   "events": [
+    {
+     "key": "stadium",
+     "vendor": "Foamline Fabrication",
+     "memos": [
+      "Stadium competition — oversize massing model",
+      "Stadium competition — rush weekend labor"
+     ],
+     "cross_memo": "Stadium competition — courier crating",
+     "plain": [
+      "the stadium competition",
+      "the stadium competition entry",
+      "the stadium competition push"
+     ],
+     "oblique": [
+      "the bid for a sports arena commission",
+      "the pitch for a large venue",
+      "an all-hands effort to win a big job",
+      "last-minute overtime on a tender",
+      "the huge piece for the jury",
+      "an invited design contest",
+      "the arena bid",
+      "a deadline crunch for a public client",
+      "our entry in the open design contest",
+      "extra hours ahead of the submission",
+      "the big-ticket proposal",
+      "the sports venue pursuit",
+      "a high-stakes pitch",
+      "jury-bound display pieces",
+      "the contest crunch",
+      "a marketing push for a major commission"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "gallery",
+     "vendor": "Orchard Hill Woodcraft",
+     "memos": [
+      "Gallery wall mockup — full-scale plywood",
+      "Gallery wall mockup — finish samples"
+     ],
+     "cross_memo": "Gallery wall mockup — site delivery",
+     "plain": [
+      "the gallery wall mockup",
+      "gallery wall mockup costs",
+      "the gallery wall mockup build"
+     ],
+     "oblique": [
+      "a life-size piece for the client walkthrough",
+      "building a real-size section of the exhibit hall",
+      "the physical test of the interior detail",
+      "something the owner could touch",
+      "a one-to-one prototype of a feature",
+      "the approval piece for the client",
+      "proving the joinery to the museum client",
+      "a trial assembly of a signature element",
+      "the piece the board asked to see",
+      "a built example for design approval",
+      "testing surfaces in real dimensions",
+      "the carpentry done to win sign-off",
+      "constructing a detail at actual size",
+      "our cultural-client demonstration piece",
+      "a displayed section at true proportions",
+      "the hands-on review item"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Plotting & Large-Format Printing",
+   "aliases": [
+    "plotting",
+    "printing",
+    "large-format printing",
+    "plan reproduction",
+    "print shop spend"
+   ],
+   "narrative": [
+    "Plotting",
+    "Printing",
+    "Plan reproduction"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metroblue Reprographics",
+     "base": 5200,
+     "memo": "Bond plot sets Svc"
+    },
+    {
+     "vendor": "InkStream Supply",
+     "base": 2400,
+     "memo": "Plotter ink cartridges Inv"
+    },
+    {
+     "vendor": "Parcel Courier Co",
+     "base": 900,
+     "memo": "Set delivery runs"
+    }
+   ],
+   "events": [
+    {
+     "key": "hospital",
+     "vendor": "Metroblue Reprographics",
+     "memos": [
+      "Hospital bid reissue — complete reprint",
+      "Hospital bid reissue — addendum sheets"
+     ],
+     "cross_memo": "Hospital bid reissue — overnight shipping",
+     "plain": [
+      "the hospital bid reissue",
+      "hospital bid reissue costs",
+      "the hospital bid addenda"
+     ],
+     "oblique": [
+      "redoing paperwork after the owner changed requirements",
+      "the revised construction documents for a medical project",
+      "reissuing documents to contractors after a scope change",
+      "an amended package sent to tenderers",
+      "clinic project revisions going back out",
+      "the second round of paper for the builders",
+      "updates the health client demanded",
+      "replacing superseded pages",
+      "the last-minute change to the medical campus job",
+      "what it cost to redo the contractor packages",
+      "correcting the documents after an error",
+      "revisions hitting the street again",
+      "the healthcare scope change",
+      "fresh copies for every subcontractor",
+      "the redo of tender documents",
+      "an owner-driven revision cycle"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "gala",
+     "vendor": "Spectra Exhibit Graphics",
+     "memos": [
+      "Award gala display — mounted boards",
+      "Award gala display — foamcore panels"
+     ],
+     "cross_memo": "Award gala display — easel rental",
+     "plain": [
+      "the award gala display",
+      "award gala display costs",
+      "the award gala display pieces"
+     ],
+     "oblique": [
+      "posters for the industry dinner",
+      "showing our projects at a ceremony",
+      "big images for the annual celebration",
+      "a marketing event we sponsored",
+      "oversize photos of finished buildings",
+      "the evening where we were honored",
+      "promotional prints for a banquet",
+      "visuals shown to peers",
+      "pieces for the chapter's yearly event",
+      "the recognition event materials",
+      "portfolio pieces on stands",
+      "glossy showcase of completed work",
+      "materials for the black-tie night",
+      "the publicity push",
+      "artwork for the evening we were shortlisted",
+      "branded visuals for a gathering"
+     ],
+     "low": 10000,
+     "high": 19000
+    }
+   ]
+  },
+  {
+   "name": "Outside Consultant Fees",
+   "aliases": [
+    "consultants",
+    "sub-consultants",
+    "engineering fees",
+    "outside engineers",
+    "consultant spend"
+   ],
+   "narrative": [
+    "Consultants",
+    "Sub-consultants",
+    "Engineering fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Aldergate Structural Engineers",
+     "base": 14000,
+     "memo": "Structural design Svc progress billing"
+    },
+    {
+     "vendor": "Northbeam MEP Consulting",
+     "base": 11000,
+     "memo": "MEP coordination Inv"
+    },
+    {
+     "vendor": "Greenfield Landscape Studio",
+     "base": 4500,
+     "memo": "Landscape Svc retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "seismic",
+     "vendor": "Aldergate Structural Engineers",
+     "memos": [
+      "Seismic peer review — independent calcs",
+      "Seismic peer review — shake analysis"
+     ],
+     "cross_memo": "Seismic peer review — city plan check",
+     "plain": [
+      "the seismic peer review",
+      "seismic peer review fees",
+      "the seismic review"
+     ],
+     "oblique": [
+      "a second opinion on earthquake safety",
+      "an outside look at the building's resilience",
+      "verifying the lateral system for the municipality",
+      "a requirement from the jurisdiction",
+      "third-party validation of the frame",
+      "an extra signoff for a tall building",
+      "quake-resistance verification",
+      "an audit of our calculations by a rival firm",
+      "proving the building stays up in a tremor",
+      "what the authority required before approval",
+      "an auditor's examination of our numbers",
+      "cross-checking the load path",
+      "the ground-motion double-check",
+      "an outside verification demanded by the permit office",
+      "certifying the earthquake safety",
+      "the team brought in by the municipality"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "sound",
+     "vendor": "Baxter Acoustic Consultants",
+     "memos": [
+      "Auditorium sound isolation — noise modeling",
+      "Auditorium sound isolation — field measurements"
+     ],
+     "cross_memo": "Auditorium sound isolation — resilient channel supplies",
+     "plain": [
+      "the auditorium sound isolation",
+      "auditorium sound isolation fees",
+      "the auditorium isolation study"
+     ],
+     "oblique": [
+      "making the performance space quiet",
+      "keeping street rumble out of the theater",
+      "a specialist who tunes rooms",
+      "the echo problem in the hall",
+      "hearing-related advice for a venue",
+      "quiet-building studies",
+      "an expert on reverberation",
+      "the extra specialist the school asked for",
+      "preventing neighbors' complaints about loud events",
+      "the decibel study",
+      "testing how loud the next room gets",
+      "the room-tuning specialist",
+      "tuning the stage space",
+      "vibration and echo control advice",
+      "a niche subcontractor for the music building",
+      "reducing leakage between rooms"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Permit & Regulatory Filing Fees",
+   "aliases": [
+    "permits",
+    "permit fees",
+    "filing fees",
+    "regulatory fees",
+    "entitlement costs"
+   ],
+   "narrative": [
+    "Permits",
+    "Permit fees",
+    "Entitlement costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Municipal Expediters LLC",
+     "base": 5500,
+     "memo": "Expediting Svc retainer"
+    },
+    {
+     "vendor": "Zoning Advisory Group",
+     "base": 3400,
+     "memo": "Land use advisory Svc"
+    },
+    {
+     "vendor": "Filemark Records Agency",
+     "base": 1200,
+     "memo": "Plan filing Mnt agent fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "hearing",
+     "vendor": "Municipal Expediters LLC",
+     "memos": [
+      "Historic district hearing — appearance prep",
+      "Historic district hearing — commission continuance"
+     ],
+     "cross_memo": "Historic district hearing — notice mailing",
+     "plain": [
+      "the historic district hearing",
+      "historic district hearing costs",
+      "the historic district appearance"
+     ],
+     "oblique": [
+      "convincing the preservation board",
+      "a public meeting about an old neighborhood",
+      "the landmark panel's review",
+      "neighbors weighing in on our facade",
+      "an extra session before approval",
+      "delays at the heritage authority",
+      "a rescheduled appointment with officials",
+      "presenting a century-old streetscape project",
+      "getting past the preservationists",
+      "the extra trip downtown for approvals",
+      "testimony at city hall",
+      "the cultural-heritage board process",
+      "defending alterations near protected buildings",
+      "the postponed vote",
+      "time spent winning over local landmark volunteers",
+      "an older-quarter approval battle"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "wetland",
+     "vendor": "Brightwater Environmental Services",
+     "memos": [
+      "Wetland delineation study — field survey",
+      "Wetland delineation study — habitat report"
+     ],
+     "cross_memo": "Wetland delineation study — state review packet",
+     "plain": [
+      "the wetland delineation study",
+      "wetland delineation study costs",
+      "the wetland study"
+     ],
+     "oblique": [
+      "proving a marsh doesn't block the project",
+      "ecological clearance for a waterfront parcel",
+      "the biologist's work on the lot",
+      "nature mapping demanded by regulators",
+      "a swamp-boundary determination",
+      "flora and fauna evaluation",
+      "protecting a creek on the property",
+      "the green-space condition for approval",
+      "water-related land constraints",
+      "the conservation office's precondition",
+      "mapping where soggy ground begins",
+      "an ecologist walking the acreage",
+      "the riparian buffer question",
+      "clearing a nature obstacle",
+      "what the natural-resources office required",
+      "proof the dirt was buildable"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Site Visits & Field Surveys",
+   "aliases": [
+    "site visits",
+    "field costs",
+    "site travel",
+    "construction administration travel",
+    "field work spend"
+   ],
+   "narrative": [
+    "Site visits",
+    "Field costs",
+    "Site travel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Surveying Partners",
+     "base": 7000,
+     "memo": "Topographic Svc monthly"
+    },
+    {
+     "vendor": "Corridor Mileage Reimbursement",
+     "base": 1800,
+     "memo": "Staff mileage reimbursement"
+    },
+    {
+     "vendor": "Hardhat Safety Supply",
+     "base": 900,
+     "memo": "PPE resupply Inv"
+    }
+   ],
+   "events": [
+    {
+     "key": "quarry",
+     "vendor": "Summit Surveying Partners",
+     "memos": [
+      "Quarry parcel resurvey — iron pin recovery",
+      "Quarry parcel resurvey — crew standby"
+     ],
+     "cross_memo": "Quarry parcel resurvey — access road grading",
+     "plain": [
+      "the quarry parcel resurvey",
+      "quarry parcel resurvey costs",
+      "the quarry resurvey"
+     ],
+     "oblique": [
+      "remeasuring an old mining lot",
+      "locating lost property markers",
+      "the lot line dispute with the neighbor",
+      "redoing measurements that didn't match records",
+      "a gravel pit redevelopment",
+      "re-establishing limits of the land",
+      "the second field campaign on the industrial tract",
+      "digging up buried corner markers",
+      "the extra day waiting on equipment",
+      "sorting out a legal description discrepancy",
+      "reconfirming acreage before purchase",
+      "a deed that didn't match the ground",
+      "the excavation site's lines",
+      "getting the title lines right",
+      "rework after a mismatch with county records",
+      "teams on the redevelopment tract"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "thermal",
+     "vendor": "Skyline Airborne Imaging",
+     "memos": [
+      "Rooftop thermal inspection — infrared flights",
+      "Rooftop thermal inspection — pilot certification"
+     ],
+     "cross_memo": "Rooftop thermal inspection — lift rental",
+     "plain": [
+      "the rooftop thermal inspection",
+      "rooftop thermal inspection costs",
+      "the thermal inspection"
+     ],
+     "oblique": [
+      "using an unmanned aircraft over an existing building",
+      "heat-leak detection on an old building",
+      "finding where a structure loses energy",
+      "the camera-in-the-sky effort",
+      "checking an old building's top surface for moisture",
+      "an overhead look at a retrofit candidate",
+      "the energy audit visit",
+      "photographing hard-to-reach areas from above",
+      "a licensed operator's visit",
+      "capturing conditions on a tall existing building",
+      "the diagnostic of a leaking envelope",
+      "a hovering camera assessment",
+      "insulation problem hunting",
+      "what we paid for the drone operator",
+      "photos taken from the sky",
+      "an evaluation before the renovation bid"
+     ],
+     "low": 10000,
+     "high": 21000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

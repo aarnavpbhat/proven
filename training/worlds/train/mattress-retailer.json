@@ -1,0 +1,825 @@
+{
+ "slug": "mattress-retailer",
+ "industry": "mattress retailer",
+ "entities": [
+  "Restwell Mattress Co",
+  "Dreamhaven Sleep Shops",
+  "Cloudnine Bedding Outlet",
+  "Nightfall Mattress Gallery",
+  "Slumberline Retail Group"
+ ],
+ "accounts": [
+  {
+   "name": "Showroom Lease",
+   "aliases": [
+    "showroom lease",
+    "store rent",
+    "showroom rent",
+    "lease costs",
+    "store occupancy"
+   ],
+   "narrative": [
+    "Showroom lease",
+    "Store rent",
+    "Lease costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Parkside Retail Holdings",
+     "base": 24000,
+     "memo": "Monthly base rent — flagship store"
+    },
+    {
+     "vendor": "Eastgate Plaza LLC",
+     "base": 14500,
+     "memo": "Monthly base rent — outlet location"
+    },
+    {
+     "vendor": "Granite Mall Properties",
+     "base": 9800,
+     "memo": "Mall kiosk rent — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam_reconciliation",
+     "vendor": "Parkside Retail Holdings",
+     "memos": [
+      "CAM reconciliation true-up — prior year escrow",
+      "CAM reconciliation true-up — snow removal surcharge"
+     ],
+     "cross_memo": "CAM reconciliation true-up — legal review fee",
+     "plain": [
+      "the CAM reconciliation true-up",
+      "the CAM reconciliation charge",
+      "the CAM reconciliation bill"
+     ],
+     "oblique": [
+      "a landlord's catch-up bill for last year's shared upkeep",
+      "extra shared-space costs billed after the fact",
+      "the retroactive common-area assessment",
+      "a year-end settlement from the property owner",
+      "the belated billing for parking lot and hallway maintenance",
+      "back charges from the landlord",
+      "a surprise assessment on shared facilities",
+      "the landlord's adjustment for prior-period operating costs",
+      "unexpected shared-building expenses",
+      "what the plaza owner claimed was underpaid",
+      "a lookback true-up from ownership",
+      "the winter plowing and lighting share",
+      "catch-up escrow billing",
+      "trailing facility charges",
+      "an adjustment covering twelve months of upkeep",
+      "the property manager's corrected estimate"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "hargrove_buildout",
+     "vendor": "Hargrove Interiors",
+     "memos": [
+      "Hargrove showroom refresh — display platforms",
+      "Hargrove showroom refresh — accent lighting"
+     ],
+     "cross_memo": "Hargrove showroom refresh — signage install",
+     "plain": [
+      "the Hargrove showroom refresh",
+      "the Hargrove refresh project",
+      "the Hargrove showroom work"
+     ],
+     "oblique": [
+      "giving the flagship floor a new look",
+      "the remodel of our main selling space",
+      "updated staging for the bed displays",
+      "a facelift for the store ahead of the spring push",
+      "new platforms and spotlights on the floor",
+      "cosmetic upgrades requested by marketing",
+      "redoing the walkthrough area customers see first",
+      "the contractor's makeover of the sales floor",
+      "what we spent making the store feel modern",
+      "the interior redesign",
+      "fresh presentation for the sleeping models",
+      "a cosmetic overhaul of the main site",
+      "the brand-standard upgrade",
+      "improvements to how product is staged",
+      "the renovation crew's invoice",
+      "sprucing up where shoppers try beds"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Delivery Fleet Operations",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "delivery fleet",
+    "truck operations",
+    "fleet maintenance spend"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Delivery fleet spend",
+    "Truck operations"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Fuel Cards",
+     "base": 11000,
+     "memo": "Fuel card charges — monthly"
+    },
+    {
+     "vendor": "Roadrunner Fleet Service",
+     "base": 6500,
+     "memo": "Preventive maintenance — box trucks"
+    },
+    {
+     "vendor": "Keystone Auto Insurance",
+     "base": 8200,
+     "memo": "Commercial auto premium — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "liftgate",
+     "vendor": "Roadrunner Fleet Service",
+     "memos": [
+      "Liftgate retrofit program — hydraulic pumps",
+      "Liftgate retrofit program — platform decks"
+     ],
+     "cross_memo": "Liftgate retrofit program — driver certification",
+     "plain": [
+      "the liftgate retrofit program",
+      "the liftgate retrofit",
+      "the liftgate retrofit work"
+     ],
+     "oblique": [
+      "equipping the vans to lower heavy cartons safely",
+      "the safety push after the back injury claims",
+      "gear that saves our crews from hauling by hand",
+      "upgrades demanded by the insurer",
+      "making the trucks easier on the delivery team",
+      "the modification of the whole box-truck lineup",
+      "what it took to cut workers comp incidents",
+      "new lowering mechanisms on every vehicle",
+      "the equipment add-on for curbside drop-offs",
+      "hardware installed on each rear door",
+      "a loss-prevention project",
+      "the safety committee's top request",
+      "mechanical help for oversized loads",
+      "the vehicle modifications that followed the audit",
+      "changes aimed at fewer strains on the road crews",
+      "the retrofits finished by the shop"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "cascade_lease",
+     "vendor": "Cascade Truck Rentals",
+     "memos": [
+      "Cascade temporary rentals — 26ft box trucks",
+      "Cascade temporary rentals — weekly surcharge"
+     ],
+     "cross_memo": "Cascade temporary rentals — damage waiver",
+     "plain": [
+      "the Cascade temporary rentals",
+      "the Cascade rental trucks",
+      "the Cascade temporary trucks"
+     ],
+     "oblique": [
+      "borrowed vehicles while ours sat idle",
+      "stopgap wheels during the holiday surge",
+      "extra capacity for the delivery crunch",
+      "outside vehicles hired for the peak weekend",
+      "coverage for our own units being down",
+      "short-term haulage we did not budget",
+      "what we paid to keep deliveries on schedule",
+      "vehicles brought in to cover the backlog",
+      "hired transport during the sale event",
+      "stand-in equipment for the busy stretch",
+      "temporary capacity from a third party",
+      "trucks we used only for a few weeks",
+      "the overflow from our regular routes",
+      "scrambling for vehicles at the last minute",
+      "the cost of not having enough of our own units",
+      "emergency substitutes on the road"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse and Storage",
+   "aliases": [
+    "warehouse",
+    "warehouse costs",
+    "storage",
+    "distribution center",
+    "inventory storage"
+   ],
+   "narrative": [
+    "Warehouse costs",
+    "Storage spend",
+    "Distribution center costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironbridge Logistics Park",
+     "base": 28000,
+     "memo": "Warehouse lease — monthly"
+    },
+    {
+     "vendor": "Bluewater Utilities",
+     "base": 4200,
+     "memo": "Electric and water — warehouse"
+    },
+    {
+     "vendor": "Sentinel Pest Control",
+     "base": 900,
+     "memo": "Monthly pest prevention service"
+    }
+   ],
+   "events": [
+    {
+     "key": "rackspace",
+     "vendor": "Ironbridge Logistics Park",
+     "memos": [
+      "Mezzanine rack expansion — steel framing",
+      "Mezzanine rack expansion — decking permits"
+     ],
+     "cross_memo": "Mezzanine rack expansion — forklift attachments",
+     "plain": [
+      "the mezzanine rack expansion",
+      "the mezzanine rack build",
+      "the mezzanine rack project"
+     ],
+     "oblique": [
+      "room for more stock overhead",
+      "the added second level for cartons",
+      "fitting extra inventory in the same footprint",
+      "building upward since we ran out of floor",
+      "capacity for the fall assortment",
+      "the second tier installed in the back",
+      "more pallet positions than before",
+      "the structural work to hold bigger inbound shipments",
+      "the footprint stretch without moving buildings",
+      "a vertical solution to crowding",
+      "what we did instead of leasing another site",
+      "new elevated space for product",
+      "the overflow fix",
+      "steel put in to hold the backstock",
+      "getting more storage out of the same building",
+      "the buildout that cleared the aisles"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "mold_remediation",
+     "vendor": "Clearair Restoration",
+     "memos": [
+      "Clearair mold remediation — containment and scrubbing",
+      "Clearair mold remediation — dehumidifier rental"
+     ],
+     "cross_memo": "Clearair mold remediation — inventory write-off handling",
+     "plain": [
+      "the Clearair mold remediation",
+      "the Clearair mold cleanup",
+      "the Clearair mold job"
+     ],
+     "oblique": [
+      "the damp problem in the back dock",
+      "cleanup after the roof leak",
+      "treating the spore outbreak on stored goods",
+      "an unplanned environmental scrub",
+      "the specialist crew we called after the inspection",
+      "the moisture fiasco in the corner bay",
+      "getting the building safe after the storm",
+      "what the water damage required",
+      "an emergency decontamination",
+      "the air-quality fix",
+      "the unwelcome growth found behind the pallets",
+      "the abatement crew's invoice",
+      "remedies for the musty smell complaint",
+      "drying out and sanitizing the unit",
+      "a hazard the safety officer flagged",
+      "restoring the affected section"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Foam and Materials Freight",
+   "aliases": [
+    "inbound freight",
+    "freight in",
+    "materials freight",
+    "foam freight",
+    "inbound shipping"
+   ],
+   "narrative": [
+    "Inbound freight",
+    "Freight in",
+    "Materials freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Interstate Flatbed Co",
+     "base": 17500,
+     "memo": "Truckload freight — foam rolls"
+    },
+    {
+     "vendor": "Pacific Container Lines",
+     "base": 13000,
+     "memo": "Ocean freight — imported innersprings"
+    },
+    {
+     "vendor": "Gateway Customs Brokers",
+     "base": 2400,
+     "memo": "Customs clearance fees — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "tariff_surcharge",
+     "vendor": "Pacific Container Lines",
+     "memos": [
+      "Emergency bunker surcharge — Red Sea routing",
+      "Emergency bunker surcharge — extended transit"
+     ],
+     "cross_memo": "Emergency bunker surcharge — demurrage at port",
+     "plain": [
+      "the emergency bunker surcharge",
+      "the emergency bunker fee",
+      "the emergency bunker charge"
+     ],
+     "oblique": [
+      "extra carrier fees after the shipping lanes changed",
+      "costs from vessels going the long way around",
+      "a levy added by the ocean carrier overnight",
+      "the detour penalty on imported goods",
+      "what the shipping line passed along for rerouting",
+      "a mid-quarter increase from the sea carrier",
+      "charges tied to geopolitical disruption",
+      "fuel-related add-ons from overseas haulers",
+      "longer voyages costing us more",
+      "the premium on cargo coming across water",
+      "an unbudgeted rate change from the line",
+      "extra costs from conflict near the trade routes",
+      "expense from the ships taking a longer path",
+      "the global shipping shock",
+      "a supplement billed on every container",
+      "delays at sea turning into dollars"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "spring_coil_rush",
+     "vendor": "Velocity Air Cargo",
+     "memos": [
+      "Velocity expedited air — pocketed coil units",
+      "Velocity expedited air — weekend handling"
+     ],
+     "cross_memo": "Velocity expedited air — customs overtime",
+     "plain": [
+      "the Velocity expedited air",
+      "the Velocity air shipment",
+      "the Velocity expedited cargo"
+     ],
+     "oblique": [
+      "flying in parts to avoid a stockout",
+      "speed over savings on a key component",
+      "the rush order to beat the promotion date",
+      "paying extra for a plane instead of a boat",
+      "getting components here in days not weeks",
+      "the scramble when the supplier slipped",
+      "a premium route for urgent materials",
+      "covering a gap in our production schedule",
+      "the airborne fix for the late shipment",
+      "emergency transport of a critical input",
+      "what it cost to hit the launch",
+      "the costly shortcut around ocean delays",
+      "urgent inbound arranged at the last minute",
+      "jetting in the inputs our assembly line needed",
+      "the cost of avoiding an empty factory floor",
+      "the high-speed alternative"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Sales Commissions and Incentives",
+   "aliases": [
+    "commissions",
+    "sales commissions",
+    "sales incentives",
+    "spiffs",
+    "rep bonuses"
+   ],
+   "narrative": [
+    "Commissions",
+    "Sales incentives",
+    "Rep bonuses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightpath Payroll Services",
+     "base": 29000,
+     "memo": "Base commission payout — retail associates"
+    },
+    {
+     "vendor": "Northstar Sales Consulting",
+     "base": 3500,
+     "memo": "Commission plan administration"
+    }
+   ],
+   "events": [
+    {
+     "key": "holiday_spiff",
+     "vendor": "Brightpath Payroll Services",
+     "memos": [
+      "Presidents Day spiff — premium hybrid models",
+      "Presidents Day spiff — tiered volume bonus"
+     ],
+     "cross_memo": "Presidents Day spiff — banner printing",
+     "plain": [
+      "the Presidents Day spiff",
+      "the Presidents Day spiff payout",
+      "the Presidents Day spiff program"
+     ],
+     "oblique": [
+      "extra pay to push the pricier beds in winter",
+      "the holiday weekend sales contest",
+      "rewards for reps who moved the top-shelf units",
+      "the February promotion's bonus pool",
+      "what we gave staff during the long weekend rush",
+      "a short burst of extra payout",
+      "incentives built around the three-day sale",
+      "seasonal pay kickers for associates",
+      "the prize money for hitting the volume tiers",
+      "additional earnings for the busy weekend",
+      "money used to motivate the floor team",
+      "the premium for steering shoppers upmarket",
+      "what the sales team earned beyond base",
+      "payouts tied to a calendar event",
+      "the temporary boost in rep earnings",
+      "extra rewards linked to the national holiday"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "aurora_training",
+     "vendor": "Aurora Sales Academy",
+     "memos": [
+      "Aurora sleep-specialist certification — instructor fees",
+      "Aurora sleep-specialist certification — workbooks"
+     ],
+     "cross_memo": "Aurora sleep-specialist certification — travel stipends",
+     "plain": [
+      "the Aurora sleep-specialist certification",
+      "the Aurora certification program",
+      "the Aurora sleep-specialist course"
+     ],
+     "oblique": [
+      "credentialing for the floor team",
+      "a learning initiative for new hires",
+      "classroom time for associates",
+      "upskilling the people who talk to shoppers",
+      "the knowledge course management mandated",
+      "an educational push to improve close rates",
+      "professional development for the sales force",
+      "training dollars spent on associate expertise",
+      "the program meant to make reps more consultative",
+      "courses attended by the whole showroom team",
+      "teaching staff how bodies and beds interact",
+      "formal instruction for the stores",
+      "a stipend-heavy education effort",
+      "the expertise-building project",
+      "the classes that came with a diploma",
+      "sessions run by outside instructors"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Returns and Comfort Guarantee",
+   "aliases": [
+    "returns",
+    "returns handling",
+    "comfort guarantee",
+    "trial returns",
+    "return logistics"
+   ],
+   "narrative": [
+    "Returns handling",
+    "Comfort guarantee costs",
+    "Trial returns"
+   ],
+   "recurring": [
+    {
+     "vendor": "Renew Mattress Recovery",
+     "base": 8500,
+     "memo": "Returned mattress pickup — monthly"
+    },
+    {
+     "vendor": "GreenLoop Recycling",
+     "base": 3200,
+     "memo": "Foam and spring recycling fees"
+    },
+    {
+     "vendor": "Halo Sanitizing Services",
+     "base": 2700,
+     "memo": "Return sanitization — monthly batch"
+    }
+   ],
+   "events": [
+    {
+     "key": "bedbug_recall",
+     "vendor": "Halo Sanitizing Services",
+     "memos": [
+      "Heat treatment sweep — infested returns",
+      "Heat treatment sweep — quarantine bay setup"
+     ],
+     "cross_memo": "Heat treatment sweep — customer credit reimbursements",
+     "plain": [
+      "the heat treatment sweep",
+      "the heat treatment effort",
+      "the heat treatment batch"
+     ],
+     "oblique": [
+      "dealing with the pest scare in our returns",
+      "cleanup after critters were found in used goods",
+      "protocols after a customer complaint went viral",
+      "the emergency response to an infestation report",
+      "extra care for bedding that came back crawling",
+      "what we did to keep bugs out of the showroom",
+      "special handling of suspect items",
+      "the sudden quarantine measures",
+      "the unwelcome discovery in the dock",
+      "a health-department-driven response",
+      "safeguarding the building from unwanted guests",
+      "kill-off work on tainted units",
+      "precautions the safety team insisted on",
+      "the infestation incident",
+      "an expensive bout of sterilization",
+      "the response when insects turned up"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "trial_extension",
+     "vendor": "Meridian Reverse Logistics",
+     "memos": [
+      "Meridian 120-night trial pilot — return label program",
+      "Meridian 120-night trial pilot — regional hubs"
+     ],
+     "cross_memo": "Meridian 120-night trial pilot — refund processing",
+     "plain": [
+      "the Meridian 120-night trial pilot",
+      "the Meridian trial pilot",
+      "the Meridian 120-night pilot"
+     ],
+     "oblique": [
+      "a longer test-drive window for shoppers",
+      "the extended sleep-on-it experiment",
+      "an offer that let people keep beds longer before deciding",
+      "the competitive response to a rival's promise",
+      "a marketing bet that raised our pickup volume",
+      "what it cost to give customers extra months",
+      "the lengthened evaluation period",
+      "a promotion that moved risk onto us",
+      "our experiment with generosity",
+      "the policy change that grew our returned inventory",
+      "expanded buyer protection in two regions",
+      "a limited rollout of a friendlier policy",
+      "the new customer-confidence program",
+      "more nights to decide means more pickups",
+      "the pilot ordered by the commercial team",
+      "regional logistics for the softer terms"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Local Advertising and Promotions",
+   "aliases": [
+    "advertising",
+    "local advertising",
+    "promotions",
+    "marketing spend",
+    "media buys"
+   ],
+   "narrative": [
+    "Advertising spend",
+    "Local advertising",
+    "Promotional costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearview Radio Group",
+     "base": 12000,
+     "memo": "Radio spots — monthly flight"
+    },
+    {
+     "vendor": "Beacon Digital Agency",
+     "base": 9500,
+     "memo": "Paid search management — monthly"
+    },
+    {
+     "vendor": "Metro Outdoor Media",
+     "base": 6800,
+     "memo": "Billboard lease — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "stadium_sponsorship",
+     "vendor": "Clearview Radio Group",
+     "memos": [
+      "Hometown Hoops sponsorship — courtside signage",
+      "Hometown Hoops sponsorship — halftime promo reads"
+     ],
+     "cross_memo": "Hometown Hoops sponsorship — ticket giveaway fulfillment",
+     "plain": [
+      "the Hometown Hoops sponsorship",
+      "the Hometown Hoops partnership",
+      "the Hometown Hoops deal"
+     ],
+     "oblique": [
+      "putting our name in front of the arena crowd",
+      "a local team tie-in",
+      "visibility at the college games",
+      "backing the neighborhood squad",
+      "the winter athletics deal",
+      "brand exposure at live events",
+      "a community goodwill investment",
+      "money spent where fans gather",
+      "the courtside presence",
+      "our spot among the game-night advertisers",
+      "a sports-flavored branding commitment",
+      "the season-long affiliation",
+      "how we got seen by thousands of spectators",
+      "the on-court branding contract",
+      "an arena presence we hadn't had before",
+      "the campaign anchored to the home schedule"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "grand_reopening",
+     "vendor": "Lumen Event Marketing",
+     "memos": [
+      "Lumen grand reopening blitz — mailers",
+      "Lumen grand reopening blitz — street team"
+     ],
+     "cross_memo": "Lumen grand reopening blitz — balloon arch rental",
+     "plain": [
+      "the Lumen grand reopening blitz",
+      "the Lumen reopening blitz",
+      "the Lumen grand reopening campaign"
+     ],
+     "oblique": [
+      "announcing our relaunched downtown location",
+      "the push to get neighbors back through the doors",
+      "a burst of outreach after construction wrapped",
+      "drawing crowds to the refreshed store",
+      "the weekend celebration to win foot traffic",
+      "handing out flyers around the district",
+      "what we spent telling the community we were open again",
+      "a splashy reintroduction",
+      "promotion tied to the end of renovations",
+      "the invitation to shoppers after the closure",
+      "a one-time awareness spike",
+      "energy and noise around the store's return",
+      "an announcement drive in the surrounding blocks",
+      "the party we threw for the location",
+      "outreach by hired promoters on foot",
+      "the ribbon-cutting weekend effort"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Store Software and Systems",
+   "aliases": [
+    "software",
+    "store systems",
+    "pos systems",
+    "it subscriptions",
+    "tech stack"
+   ],
+   "narrative": [
+    "Software costs",
+    "Store systems",
+    "Technology subscriptions"
+   ],
+   "recurring": [
+    {
+     "vendor": "RegisterPro POS",
+     "base": 5200,
+     "memo": "POS subscription — all stores"
+    },
+    {
+     "vendor": "Stockwise Inventory Cloud",
+     "base": 3800,
+     "memo": "Inventory platform — monthly"
+    },
+    {
+     "vendor": "Pulse CRM",
+     "base": 2900,
+     "memo": "Customer database seats — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "pos_migration",
+     "vendor": "RegisterPro POS",
+     "memos": [
+      "Terminal swap-out program — EMV readers",
+      "Terminal swap-out program — onsite installation"
+     ],
+     "cross_memo": "Terminal swap-out program — network cabling",
+     "plain": [
+      "the terminal swap-out program",
+      "the terminal swap-out",
+      "the terminal swap-out project"
+     ],
+     "oblique": [
+      "new checkout hardware in every store",
+      "replacing aging card machines",
+      "the compliance deadline for payment gear",
+      "modernizing where customers tap and pay",
+      "technicians visiting each location",
+      "a refresh of the front-counter equipment",
+      "what the processor required for security",
+      "the rollout of chip-capable devices",
+      "upgraded equipment at the cash wrap",
+      "a mandated change on the sales floor",
+      "the devices that took the place of the old ones",
+      "a fleet of readers delivered to branches",
+      "the expense of staying current on payment standards",
+      "a hardware cycle we couldn't postpone",
+      "the swap done over three weekends",
+      "fresh machines for the registers"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "data_breach_audit",
+     "vendor": "Fortis Security Advisors",
+     "memos": [
+      "Fortis forensic review — log analysis",
+      "Fortis forensic review — penetration testing"
+     ],
+     "cross_memo": "Fortis forensic review — notification mailing",
+     "plain": [
+      "the Fortis forensic review",
+      "the Fortis forensic audit",
+      "the Fortis forensic investigation"
+     ],
+     "oblique": [
+      "checking whether intruders got into our systems",
+      "the outside experts hired after the phishing scare",
+      "a deep look at who touched customer records",
+      "investigators combing through our network",
+      "the response to a suspicious login pattern",
+      "what counsel advised after the scare",
+      "proving our environment was clean",
+      "the examination ordered by our insurer",
+      "a security check prompted by an alert",
+      "expert hours spent on possible exposure",
+      "testing our defenses from the outside",
+      "reassurance we bought for regulators",
+      "the cyber incident's price tag",
+      "an urgent probe into unauthorized access",
+      "the independent assessment after the false alarm",
+      "verification work after a vendor's own compromise"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

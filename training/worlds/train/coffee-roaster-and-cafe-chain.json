@@ -1,0 +1,728 @@
+{
+ "slug": "coffee-roaster-and-cafe-chain",
+ "industry": "coffee roaster and cafe chain",
+ "entities": [
+  "Ember & Oak Coffee Co",
+  "Lantern Hill Roasters",
+  "Copper Kettle Cafe Group",
+  "Tidewater Bean Company",
+  "Juniper Row Coffee House"
+ ],
+ "accounts": [
+  {
+   "name": "Green Coffee Purchases",
+   "aliases": [
+    "green coffee",
+    "raw beans",
+    "green bean spend",
+    "coffee sourcing",
+    "bean purchases"
+   ],
+   "narrative": [
+    "Green coffee",
+    "Raw beans",
+    "Coffee sourcing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Altiplano Origin Traders",
+     "base": 28000,
+     "memo": "Green coffee lot — monthly contract allocation"
+    },
+    {
+     "vendor": "Rift Valley Export Cooperative",
+     "base": 19000,
+     "memo": "Washed arabica — standing order"
+    },
+    {
+     "vendor": "Santa Rosalia Estates",
+     "base": 12500,
+     "memo": "Single-estate micro lot — monthly release"
+    }
+   ],
+   "events": [
+    {
+     "key": "frost",
+     "vendor": "Altiplano Origin Traders",
+     "memos": [
+      "Highland frost shortfall — spot replacement lots",
+      "Highland frost shortfall — expedited ocean freight"
+     ],
+     "cross_memo": "Highland frost shortfall — extra warehouse storage",
+     "plain": [
+      "the highland frost shortfall",
+      "the highland frost replacement lots",
+      "the highland frost freight premium"
+     ],
+     "oblique": [
+      "scrambling to replace a failed harvest",
+      "the cold snap at origin",
+      "emergency buying when supply dried up",
+      "prices spiking on the open market",
+      "a crop that came in far below forecast",
+      "sourcing from a different growing region",
+      "covering the gap in contracted volume",
+      "a weather event hitting our main supplier",
+      "paying up for beans we could not get under contract",
+      "tight availability of our core offering",
+      "the sudden scarcity of our flagship blend",
+      "rush purchases to keep roasting schedules intact",
+      "a shortfall that forced last-minute buying",
+      "growers losing part of their yield",
+      "topping up inventory at premium rates",
+      "the production loss at our largest source"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "decaf",
+     "vendor": "Meridian Swiss Water Processing",
+     "memos": [
+      "Decaf program launch — decaffeination toll processing",
+      "Decaf program launch — initial lot conversion"
+     ],
+     "cross_memo": "Decaf program launch — sample bags and cuppings",
+     "plain": [
+      "the decaf program launch",
+      "the decaf program conversion lots",
+      "the decaf program toll processing"
+     ],
+     "oblique": [
+      "a new offering for evening customers",
+      "expanding the menu to caffeine-free drinkers",
+      "the product line we introduced this quarter",
+      "chemical-free treatment of our beans",
+      "a request from the wholesale accounts",
+      "opening a category we had never served",
+      "stocking up for a brand new item",
+      "the outside processing of beans before roasting",
+      "what the marketing team asked us to add",
+      "building inventory for a first-time offering",
+      "getting a fresh product onto shelves",
+      "the vendor handling the treatment step",
+      "testing demand with an initial batch",
+      "a line extension aimed at late-day sales",
+      "entering a segment our competitors already had",
+      "pilot volumes for something we had not sold before"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Roasting Plant Operations",
+   "aliases": [
+    "roastery",
+    "roastery operations",
+    "plant operations",
+    "roasting costs",
+    "production facility"
+   ],
+   "narrative": [
+    "Roastery operations",
+    "Plant operations",
+    "Roasting costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Natural Gas",
+     "base": 9500,
+     "memo": "Natural gas — roaster burners"
+    },
+    {
+     "vendor": "Cascade Industrial Supply",
+     "base": 3800,
+     "memo": "Plant consumables — burlap and liners"
+    },
+    {
+     "vendor": "Brightline Pest and Sanitation",
+     "base": 1800,
+     "memo": "Monthly sanitation service — production floor"
+    }
+   ],
+   "events": [
+    {
+     "key": "afterburner",
+     "vendor": "Summit Natural Gas",
+     "memos": [
+      "Afterburner retrofit — emissions catalyst install",
+      "Afterburner retrofit — gas line upgrade"
+     ],
+     "cross_memo": "Afterburner retrofit — permit consultant",
+     "plain": [
+      "the afterburner retrofit",
+      "the afterburner catalyst install",
+      "the afterburner gas line upgrade"
+     ],
+     "oblique": [
+      "bringing smoke output under the new limits",
+      "the regulator's demand on our exhaust",
+      "clean-air compliance work at the plant",
+      "what the county made us change",
+      "reducing what leaves the chimney",
+      "a mandated upgrade to pollution controls",
+      "modifications to keep our operating license",
+      "the fix after the failed air quality check",
+      "environmental requirements on the roasting floor",
+      "hardware to scrub the fumes",
+      "upgrading how the machines vent",
+      "work the city required before renewal",
+      "keeping the neighbors from complaining about odor",
+      "bringing the facility up to code",
+      "a legal obligation tied to emissions",
+      "new equipment to meet the cleaner standard"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "drumfire",
+     "vendor": "Pinecrest Industrial Restoration",
+     "memos": [
+      "Roaster drum fire — smoke damage cleanup",
+      "Roaster drum fire — scorched panel replacement"
+     ],
+     "cross_memo": "Roaster drum fire — lost production overtime",
+     "plain": [
+      "the roaster drum fire",
+      "the roaster drum smoke cleanup",
+      "the roaster drum scorched panels"
+     ],
+     "oblique": [
+      "the blaze on the production floor",
+      "an incident that shut the line for days",
+      "damage after something ignited overnight",
+      "restoring the building after the accident",
+      "the emergency response in the roasting hall",
+      "an unplanned shutdown of our biggest machine",
+      "repairs following the alarm going off",
+      "the aftermath of chaff catching alight",
+      "getting the plant clean and safe again",
+      "an event the insurer is reviewing",
+      "replacing parts that were charred",
+      "the crew brought in to scrub soot",
+      "a safety incident that halted output",
+      "what happened when the equipment overheated",
+      "recovering from an unexpected disaster",
+      "the cost of putting the facility right"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Cafe Equipment and Maintenance",
+   "aliases": [
+    "cafe equipment",
+    "espresso equipment",
+    "equipment maintenance",
+    "store equipment",
+    "machine upkeep"
+   ],
+   "narrative": [
+    "Cafe equipment",
+    "Espresso equipment",
+    "Machine upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Barista Bench Service Co",
+     "base": 6200,
+     "memo": "Preventive service visits — espresso machines"
+    },
+    {
+     "vendor": "Frostline Refrigeration",
+     "base": 2900,
+     "memo": "Walk-in cooler service contract"
+    },
+    {
+     "vendor": "Clearwater Filtration Systems",
+     "base": 1700,
+     "memo": "Water filter cartridges — all stores"
+    }
+   ],
+   "events": [
+    {
+     "key": "grinderswap",
+     "vendor": "Barista Bench Service Co",
+     "memos": [
+      "Grinder fleet swap — burr set replacement",
+      "Grinder fleet swap — calibration labor"
+     ],
+     "cross_memo": "Grinder fleet swap — old unit haul-away",
+     "plain": [
+      "the grinder fleet swap",
+      "the grinder fleet burr sets",
+      "the grinder fleet calibration"
+     ],
+     "oblique": [
+      "replacing the machines that crush the beans",
+      "new hardware for dialing in shots",
+      "retiring worn-out gear across the stores",
+      "an upgrade that improved taste consistency",
+      "hardware turnover at every location",
+      "swapping old units for newer models",
+      "the reason shots were tasting uneven",
+      "what baristas had asked for all year",
+      "the rollout of fresher components",
+      "refreshing the tools at the espresso bar",
+      "a chain-wide changeout of aging gear",
+      "units that had reached end of life",
+      "the project to standardize our setup",
+      "equipment that kept drifting out of spec",
+      "installing replacements on a schedule",
+      "a capital-style refresh booked as upkeep"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "flood",
+     "vendor": "Harborview Water Mitigation",
+     "memos": [
+      "Downtown store flood — water extraction",
+      "Downtown store flood — dehumidifier rental"
+     ],
+     "cross_memo": "Downtown store flood — damaged milk fridge",
+     "plain": [
+      "the downtown store flood",
+      "the downtown store water extraction",
+      "the downtown store dehumidifier rental"
+     ],
+     "oblique": [
+      "a burst pipe at our busiest location",
+      "the water that came through the ceiling",
+      "what happened after the storm drain backed up",
+      "drying out the shop after the overnight leak",
+      "an emergency call at the flagship site",
+      "the closure while crews pumped out the room",
+      "wet floors and ruined appliances",
+      "a plumbing failure we did not see coming",
+      "the mess left behind by rising water",
+      "restoration work at the city center shop",
+      "a location forced shut for several days",
+      "damage that was not covered right away",
+      "the crew that arrived in the middle of the night",
+      "a sudden accident at a high-traffic store",
+      "clearing moisture from walls and flooring",
+      "what the insurer asked us to document"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Packaging and Dry Goods",
+   "aliases": [
+    "packaging",
+    "dry goods",
+    "bags and cups",
+    "packaging supplies",
+    "cups and lids"
+   ],
+   "narrative": [
+    "Packaging",
+    "Dry goods",
+    "Bags and cups"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kraftwell Packaging",
+     "base": 14500,
+     "memo": "Valve bags — twelve ounce retail"
+    },
+    {
+     "vendor": "Sipwell Disposables",
+     "base": 10800,
+     "memo": "Hot cups and lids — all stores"
+    },
+    {
+     "vendor": "Greenfold Paper Goods",
+     "base": 4200,
+     "memo": "Sleeves and carry trays"
+    }
+   ],
+   "events": [
+    {
+     "key": "compostable",
+     "vendor": "Kraftwell Packaging",
+     "memos": [
+      "Compostable bag transition — certified film stock",
+      "Compostable bag transition — new printing plates"
+     ],
+     "cross_memo": "Compostable bag transition — legacy stock write-off",
+     "plain": [
+      "the compostable bag transition",
+      "the compostable bag film stock",
+      "the compostable bag printing plates"
+     ],
+     "oblique": [
+      "moving to a greener wrapper",
+      "the sustainability pledge we made to customers",
+      "what the board approved after the survey",
+      "swapping materials to lower our footprint",
+      "a rebrand of how our product is sold",
+      "a change that made old inventory obsolete",
+      "the eco-friendly overhaul of our retail goods",
+      "redesigned artwork for the shelf",
+      "a commitment to cut landfill waste",
+      "a one-time changeover of what we sell in",
+      "our answer to customer feedback on waste",
+      "switching to a plant-based material",
+      "the cost of leaving the old design behind",
+      "something marketing wanted before the holidays",
+      "new materials that cost more per unit",
+      "a policy shift on what touches the product"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "holiday",
+     "vendor": "Evergreen Seasonal Print",
+     "memos": [
+      "Winter gift box program — custom tins",
+      "Winter gift box program — ribbon and inserts"
+     ],
+     "cross_memo": "Winter gift box program — fulfillment labor",
+     "plain": [
+      "the winter gift box program",
+      "the winter gift box custom tins",
+      "the winter gift box inserts"
+     ],
+     "oblique": [
+      "seasonal items for year-end shoppers",
+      "presentation pieces for the festive rush",
+      "what we built for the busiest sales stretch",
+      "limited-run goods for corporate gifting",
+      "special edition items on the shelf in December",
+      "a promotion aimed at people buying for others",
+      "decorative extras ahead of the holidays",
+      "the premium offering we launched for gifts",
+      "a temporary line that sold out quickly",
+      "the effort to capture end-of-year spending",
+      "branded keepsakes for loyal customers",
+      "festive extras that were not in the baseline",
+      "an annual push that peaks late in the year",
+      "wrapping and presentation for the gift set",
+      "something that only exists for a few weeks",
+      "the fourth-quarter sales initiative"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Cafe Labor and Training",
+   "aliases": [
+    "barista labor",
+    "store labor",
+    "labor and training",
+    "cafe payroll",
+    "staffing costs"
+   ],
+   "narrative": [
+    "Barista labor",
+    "Store labor",
+    "Staffing costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crewline Staffing",
+     "base": 18000,
+     "memo": "Temp shift coverage — all stores"
+    },
+    {
+     "vendor": "Pillar Payroll Services",
+     "base": 2600,
+     "memo": "Payroll processing fees"
+    },
+    {
+     "vendor": "Hearth Benefits Group",
+     "base": 9200,
+     "memo": "Employer health contribution"
+    }
+   ],
+   "events": [
+    {
+     "key": "latteart",
+     "vendor": "Crewline Staffing",
+     "memos": [
+      "Competition team bootcamp — coverage backfill",
+      "Competition team bootcamp — stipend payments"
+     ],
+     "cross_memo": "Competition team bootcamp — judging fee",
+     "plain": [
+      "the competition team bootcamp",
+      "the competition team backfill",
+      "the competition team stipends"
+     ],
+     "oblique": [
+      "sending our best staff to a contest",
+      "covering shifts while people were away practicing",
+      "the prestige push in the industry circuit",
+      "paying employees to prepare for a showcase",
+      "time off the floor for skill sharpening",
+      "an intensive effort to win recognition",
+      "pulling top performers out of regular rotation",
+      "what it cost to field a squad at the event",
+      "the brand-building stunt with our people",
+      "extra hours worked by those left behind",
+      "compensation for those who trained after hours",
+      "an investment in reputation more than in sales",
+      "the weeks our stars were unavailable",
+      "a competitive circuit we entered this year",
+      "workers prepping for a head-to-head showdown",
+      "cover costs while the team trained"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "minwage",
+     "vendor": "Statewide Wage Advisory LLC",
+     "memos": [
+      "Minimum wage increase — retroactive adjustment",
+      "Minimum wage increase — compliance audit"
+     ],
+     "cross_memo": "Minimum wage increase — tip pool reconfiguration",
+     "plain": [
+      "the minimum wage increase",
+      "the minimum wage retroactive adjustment",
+      "the minimum wage compliance audit"
+     ],
+     "oblique": [
+      "the new floor on hourly pay",
+      "a law that took effect at the start of the period",
+      "raising rates for entry-level staff",
+      "the legislature's decision on base compensation",
+      "catching up what employees were owed",
+      "the rule change affecting every store",
+      "an across-the-board bump to the lowest tier",
+      "what government mandated for workers",
+      "a higher baseline we had to meet",
+      "the review confirming we followed the statute",
+      "pay scales shifting upward by decree",
+      "a retroactive true-up for earlier weeks",
+      "mandatory raises that hit all locations",
+      "the consultant who checked our rates",
+      "regulatory change in what we owe our crews",
+      "the cost of keeping pay legal"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Store Occupancy",
+   "aliases": [
+    "rent",
+    "store rent",
+    "occupancy",
+    "lease costs",
+    "occupancy costs"
+   ],
+   "narrative": [
+    "Store rent",
+    "Occupancy",
+    "Lease costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Parkside Property Holdings",
+     "base": 30000,
+     "memo": "Base rent — retail locations"
+    },
+    {
+     "vendor": "Metro Utilities Authority",
+     "base": 7400,
+     "memo": "Electric and water — stores"
+    },
+    {
+     "vendor": "Granite Janitorial",
+     "base": 3100,
+     "memo": "Nightly cleaning service"
+    }
+   ],
+   "events": [
+    {
+     "key": "patio",
+     "vendor": "Parkside Property Holdings",
+     "memos": [
+      "Riverside patio buildout — landlord construction charge",
+      "Riverside patio buildout — outdoor seating allowance"
+     ],
+     "cross_memo": "Riverside patio buildout — heater purchase",
+     "plain": [
+      "the riverside patio buildout",
+      "the riverside patio construction charge",
+      "the riverside patio seating allowance"
+     ],
+     "oblique": [
+      "extra space for guests outdoors",
+      "adding tables beyond our original footprint",
+      "the landlord's work on the shop frontage",
+      "expanding seating capacity at the waterfront site",
+      "a build that gave us more room for customers",
+      "modifications to the exterior of one store",
+      "what we negotiated to serve people outside",
+      "a project that raised our rent obligation",
+      "growth in how many we can host at once",
+      "the capital the owner passed along to us",
+      "transforming unused ground into revenue space",
+      "an improvement tied to a lease amendment",
+      "reworking the entrance and surrounding area",
+      "something that took weeks to complete",
+      "a layout expansion we paid for over time",
+      "an enhancement meant to lift foot traffic"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "camera",
+     "vendor": "Sentinel Security Systems",
+     "memos": [
+      "Break-in response — door replacement",
+      "Break-in response — alarm monitoring upgrade"
+     ],
+     "cross_memo": "Break-in response — glass repair",
+     "plain": [
+      "the break-in response",
+      "the break-in door replacement",
+      "the break-in alarm upgrade"
+     ],
+     "oblique": [
+      "securing a shop after an overnight theft",
+      "a crime at one of our locations",
+      "what we did after the police report",
+      "hardening the premises against another visit",
+      "the incident at the corner store",
+      "fixing what thieves left behind",
+      "a safety measure prompted by a burglary",
+      "upgrades demanded by the insurer afterward",
+      "protection against future trespass",
+      "replacing the entry the intruders damaged",
+      "extra surveillance for a vulnerable site",
+      "a security overhaul at the affected shop",
+      "the day we arrived to find forced access",
+      "the guards and locksmith we called in",
+      "closing gaps in how the building was protected",
+      "damage from someone who should not have been inside"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Loyalty",
+   "aliases": [
+    "marketing",
+    "loyalty program",
+    "advertising",
+    "promotions",
+    "customer rewards"
+   ],
+   "narrative": [
+    "Marketing",
+    "Loyalty program",
+    "Promotions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brewhaus Creative",
+     "base": 8500,
+     "memo": "Retainer — social content and photography"
+    },
+    {
+     "vendor": "PerkPoint Loyalty Platform",
+     "base": 4800,
+     "memo": "Rewards app subscription"
+    },
+    {
+     "vendor": "Citywide Outdoor Media",
+     "base": 6000,
+     "memo": "Transit shelter placements"
+    }
+   ],
+   "events": [
+    {
+     "key": "anniversary",
+     "vendor": "Brewhaus Creative",
+     "memos": [
+      "Twentieth anniversary campaign — video production",
+      "Twentieth anniversary campaign — commemorative artwork"
+     ],
+     "cross_memo": "Twentieth anniversary campaign — free drink redemptions",
+     "plain": [
+      "the twentieth anniversary campaign",
+      "the twentieth anniversary video production",
+      "the twentieth anniversary artwork"
+     ],
+     "oblique": [
+      "celebrating two decades in business",
+      "a milestone we marked with customers",
+      "the big birthday push",
+      "commemorating how long we have been open",
+      "nostalgia-driven content about our history",
+      "a once-in-a-generation brand moment",
+      "events honoring the founders",
+      "a retrospective piece shown across channels",
+      "the party we threw for our community",
+      "a theme that ran for weeks",
+      "reflecting on where we started",
+      "giveaways tied to a significant date",
+      "the story of our origins retold",
+      "an occasion that merited special creative",
+      "what leadership wanted to commemorate",
+      "a public celebration of longevity"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "viral",
+     "vendor": "Pulsewave Influencer Network",
+     "memos": [
+      "Creator partnership burst — paid posts",
+      "Creator partnership burst — product seeding"
+     ],
+     "cross_memo": "Creator partnership burst — extra stock for demand",
+     "plain": [
+      "the creator partnership burst",
+      "the creator partnership paid posts",
+      "the creator partnership product seeding"
+     ],
+     "oblique": [
+      "paying personalities with large followings",
+      "a social media blitz to reach younger buyers",
+      "what we spent to get talked about online",
+      "sponsored mentions on popular feeds",
+      "sending free product to online personalities",
+      "an experiment in digital word of mouth",
+      "the attempt to go viral",
+      "outreach to people with big audiences",
+      "a short intense effort on the internet",
+      "compensating those who spoke about us",
+      "a push on platforms where teens spend time",
+      "free goods mailed to dozens of accounts",
+      "an agency we hired for buzz",
+      "what the growth team called a test",
+      "engagement spending that peaked in one period",
+      "an approach we had not tried before"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

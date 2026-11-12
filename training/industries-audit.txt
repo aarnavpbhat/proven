@@ -1,0 +1,19 @@
+# A third measured suite, registered before it was written: docs/finetune.md, section 9.
+# It exists to test the two kill criteria on worlds the lesson rules were not written from.
+# The checker and lesson rules are frozen at commit 468605b. Disjoint from every other list here.
+lighthouse and maritime pilot service
+piano restoration workshop
+sign language interpreting agency
+cemetery and crematorium operator
+bail bonds agency
+observatory and telescope maker
+hot air balloon ride company
+taxidermy and natural history studio
+maple syrup producer
+circus and touring acrobatics troupe
+kidney dialysis clinic network
+aerial firefighting contractor
+neon and custom signage fabricator
+auction house for fine art
+archaeological survey consultancy
+pipe organ builder

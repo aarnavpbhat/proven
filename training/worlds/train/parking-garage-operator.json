@@ -1,0 +1,816 @@
+{
+ "slug": "parking-garage-operator",
+ "industry": "parking garage operator",
+ "entities": [
+  "Metrogate Parking Partners",
+  "Lotline Urban Garages",
+  "Carport Crown Holdings",
+  "Stackpark Operating Co",
+  "Harborview Garage Services"
+ ],
+ "accounts": [
+  {
+   "name": "Garage Facility Maintenance",
+   "aliases": [
+    "facility maintenance",
+    "garage maintenance",
+    "structure upkeep",
+    "facility repairs",
+    "garage repair spend"
+   ],
+   "narrative": [
+    "Facility maintenance",
+    "Garage maintenance",
+    "Structure upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Elevator Service",
+     "base": 6200,
+     "memo": "Mnt contract - elevators"
+    },
+    {
+     "vendor": "Brightway Lighting Supply",
+     "base": 2400,
+     "memo": "Inv lamps and fixtures"
+    },
+    {
+     "vendor": "Tidyline Sweeping Co",
+     "base": 3800,
+     "memo": "Svc sweeping and pressure wash"
+    }
+   ],
+   "events": [
+    {
+     "key": "deckresurf",
+     "vendor": "Summit Elevator Service",
+     "memos": [
+      "Inv Level 3 membrane recoat - Deckguard",
+      "Svc Level 3 membrane recoat - crack routing"
+     ],
+     "cross_memo": "Level 3 membrane recoat - temp traffic signage",
+     "plain": [
+      "the membrane recoat",
+      "the Level 3 membrane recoat",
+      "the recoat of Level 3"
+     ],
+     "oblique": [
+      "restoring the waterproof surface on the third floor",
+      "the slab sealing project",
+      "stopping leaks into the level below",
+      "the coating job on the upper deck",
+      "surface rehab",
+      "what the engineer flagged after the winter",
+      "fixing the cracked driving surface",
+      "the sealing work the insurer pushed for",
+      "slab protection",
+      "the waterproofing project",
+      "repairs to the drive lanes",
+      "the deck coating contractor",
+      "preventing further concrete damage",
+      "the structural surface treatment",
+      "the third level overhaul",
+      "work to stop water getting through the floor"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "stairfire",
+     "vendor": "Pyrowatch Safety Systems",
+     "memos": [
+      "Inv sprinkler standpipe retrofit - Pyrowatch",
+      "Svc standpipe retrofit - hydrant tie-in"
+     ],
+     "cross_memo": "Sprinkler standpipe retrofit - fire marshal reinspection fee",
+     "plain": [
+      "the sprinkler standpipe retrofit",
+      "the standpipe retrofit",
+      "the sprinkler retrofit"
+     ],
+     "oblique": [
+      "bringing the building up to the new fire code",
+      "the water line project for emergency crews",
+      "what the inspector required",
+      "upgrades after the marshal's visit",
+      "life safety compliance work",
+      "getting the stairwell piping approved",
+      "the code mandated plumbing job",
+      "work needed to keep our occupancy permit",
+      "new firefighting connections",
+      "the safety upgrade on the stair towers",
+      "the compliance project the city ordered",
+      "emergency response equipment installation",
+      "the pipe installation in the stairwells",
+      "meeting the municipal safety deadline",
+      "the upgrade that passed final sign-off",
+      "the retrofit demanded by authorities"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Revenue Control Equipment",
+   "aliases": [
+    "revenue control",
+    "gate equipment",
+    "pay station costs",
+    "parking hardware",
+    "ticketing equipment"
+   ],
+   "narrative": [
+    "Revenue control",
+    "Gate equipment",
+    "Pay station costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gatewise Systems",
+     "base": 5400,
+     "memo": "Qtr svc agreement - gate arms"
+    },
+    {
+     "vendor": "PayPoint Kiosk Care",
+     "base": 3100,
+     "memo": "Mnt pay-on-foot units"
+    },
+    {
+     "vendor": "Ticketroll Supply",
+     "base": 1200,
+     "memo": "Inv ticket stock and RFID tags"
+    }
+   ],
+   "events": [
+    {
+     "key": "lprcams",
+     "vendor": "Gatewise Systems",
+     "memos": [
+      "Inv plate-reader camera install - entry lanes",
+      "Svc plate-reader camera calibration"
+     ],
+     "cross_memo": "Plate-reader camera install - network cabling",
+     "plain": [
+      "the plate-reader camera install",
+      "the plate-reader cameras",
+      "the plate-reader rollout"
+     ],
+     "oblique": [
+      "going ticketless at the entrances",
+      "automatic vehicle recognition",
+      "what replaced the paper tickets",
+      "the license scanning upgrade",
+      "new lane technology",
+      "the project to speed up entry queues",
+      "hands-free entry",
+      "the vision system at the front doors",
+      "modernizing how cars get in",
+      "scanners that read the number on the car",
+      "the rollout the client requested",
+      "the optical recognition project",
+      "tech that lets monthly parkers drive straight through",
+      "the tracking cameras",
+      "the contract to eliminate stubs"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "kioskreplace",
+     "vendor": "Nexus Payment Terminals",
+     "memos": [
+      "Inv contactless terminal swap - Nexus",
+      "Svc contactless terminal activation"
+     ],
+     "cross_memo": "Contactless terminal swap - old unit disposal",
+     "plain": [
+      "the contactless terminal swap",
+      "the contactless terminals",
+      "the terminal swap"
+     ],
+     "oblique": [
+      "tap-to-pay readiness",
+      "retiring the coin machines",
+      "what the card networks required",
+      "replacing worn out cash acceptors",
+      "the payment upgrade across the stalls",
+      "mobile wallet support",
+      "the machines that drivers kept complaining about",
+      "a fresh set of cashier devices",
+      "chip and tap compliance",
+      "the swap of aging fee collectors",
+      "updated checkout units",
+      "the project after repeated failures at exit",
+      "modern checkout hardware",
+      "phasing out bill acceptors",
+      "new devices at the exits"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Valet Operations Labor",
+   "aliases": [
+    "valet labor",
+    "valet payroll",
+    "attendant wages",
+    "valet staffing",
+    "valet team costs"
+   ],
+   "narrative": [
+    "Valet labor",
+    "Valet payroll",
+    "Attendant wages"
+   ],
+   "recurring": [
+    {
+     "vendor": "Curbside Staffing Group",
+     "base": 24000,
+     "memo": "Inv weekly attendant hours"
+    },
+    {
+     "vendor": "Keystone Payroll Services",
+     "base": 4200,
+     "memo": "Svc payroll processing and taxes"
+    },
+    {
+     "vendor": "Polished Uniforms",
+     "base": 1500,
+     "memo": "Mnt uniform lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "gala",
+     "vendor": "Curbside Staffing Group",
+     "memos": [
+      "Inv Ballroom charity gala - overtime shifts",
+      "Svc charity gala - extra valet crew"
+     ],
+     "cross_memo": "Ballroom charity gala - cone and stanchion rental",
+     "plain": [
+      "the ballroom charity gala",
+      "the charity gala",
+      "the gala shifts"
+     ],
+     "oblique": [
+      "the big Saturday evening event",
+      "additional hands for a one-night crush",
+      "the fundraiser at the hotel next door",
+      "late night pay for the crew",
+      "the black-tie crowd",
+      "the banquet that filled every stall",
+      "the surge for a single evening",
+      "the event that overwhelmed the drop-off",
+      "staff we borrowed for one night",
+      "extra bodies at the curb",
+      "the donor dinner",
+      "a sold-out party downtown",
+      "a one-off rush",
+      "after-hours premium pay",
+      "the evening that ran past midnight"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "unionretro",
+     "vendor": "Atlas Labor Counsel",
+     "memos": [
+      "Inv wage settlement - Atlas Labor Counsel",
+      "Svc wage settlement - back pay arbitration"
+     ],
+     "cross_memo": "Wage settlement - arbitrator filing fees",
+     "plain": [
+      "the wage settlement",
+      "the wage settlement arbitration",
+      "the Atlas wage settlement"
+     ],
+     "oblique": [
+      "retroactive pay owed to the crew",
+      "the dispute with the workers' organization",
+      "catching up on rates the contract required",
+      "money owed from last year",
+      "the negotiated resolution with staff",
+      "what the labor board ordered",
+      "the legal fight over hourly rates",
+      "the outcome of the grievance",
+      "lump sums paid to former employees",
+      "the pay correction",
+      "the agreement we reached after mediation",
+      "backdated increases",
+      "settling the claim from the attendants",
+      "underpayment cleanup",
+      "resolution of the pay complaint"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Garage Insurance and Claims",
+   "aliases": [
+    "insurance",
+    "garage insurance",
+    "liability coverage",
+    "claims spend",
+    "insurance and claims"
+   ],
+   "narrative": [
+    "Insurance",
+    "Garage insurance",
+    "Claims spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northfield Underwriters",
+     "base": 14500,
+     "memo": "Qtr premium - garage keepers liability"
+    },
+    {
+     "vendor": "Bondwell Surety",
+     "base": 2200,
+     "memo": "Mnt surety and fidelity bond"
+    },
+    {
+     "vendor": "Clearpath Risk Advisors",
+     "base": 1800,
+     "memo": "Svc broker retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "hailclaim",
+     "vendor": "Northfield Underwriters",
+     "memos": [
+      "Inv hailstorm vehicle damage - deductible",
+      "Svc hailstorm vehicle damage - claims adjuster"
+     ],
+     "cross_memo": "Hailstorm vehicle damage - dent repair reimbursements",
+     "plain": [
+      "the hailstorm vehicle damage",
+      "the hailstorm damage",
+      "the hailstorm claims"
+     ],
+     "oblique": [
+      "customer cars pitted by the weather",
+      "the storm last quarter",
+      "what we paid owners for scratched paint",
+      "reimbursing drivers for ruined finishes",
+      "the top level losses",
+      "the weather event that hit the open roof",
+      "out-of-pocket on the policy",
+      "after the ice fell on the rooftop",
+      "bodywork compensation",
+      "the deductible we absorbed",
+      "the natural disaster payout",
+      "cars that were parked up top",
+      "the costly afternoon",
+      "the settlement of motorists' complaints",
+      "compensating patrons after the squall"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "slipfall",
+     "vendor": "Redstone Claims Administrators",
+     "memos": [
+      "Inv stairwell slip-and-fall - Redstone",
+      "Svc stairwell slip-and-fall - medical settlement"
+     ],
+     "cross_memo": "Stairwell slip-and-fall - defense counsel retainer",
+     "plain": [
+      "the stairwell slip-and-fall",
+      "the slip-and-fall settlement",
+      "the slip-and-fall case"
+     ],
+     "oblique": [
+      "the pedestrian injury",
+      "a visitor hurt on the way down",
+      "the lawsuit from a customer",
+      "what we paid the injured shopper",
+      "the personal injury resolution",
+      "an accident involving a patron",
+      "the medical bills we covered",
+      "litigation over someone's tumble",
+      "the payout to the person who got hurt",
+      "the matter our lawyers closed",
+      "a liability event in the east tower",
+      "the injury dispute",
+      "resolving the harm to a guest",
+      "the case that finally settled",
+      "compensation to the hurt visitor"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Utilities and Garage Power",
+   "aliases": [
+    "utilities",
+    "garage power",
+    "electricity costs",
+    "power and water",
+    "utility spend"
+   ],
+   "narrative": [
+    "Utilities",
+    "Garage power",
+    "Electricity costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Citywide Electric",
+     "base": 18500,
+     "memo": "Inv electric service - all sites"
+    },
+    {
+     "vendor": "Aquaflow Municipal Water",
+     "base": 3600,
+     "memo": "Inv water and sewer"
+    },
+    {
+     "vendor": "Heatline Gas",
+     "base": 1500,
+     "memo": "Inv natural gas - ramp heaters"
+    }
+   ],
+   "events": [
+    {
+     "key": "evcharge",
+     "vendor": "Citywide Electric",
+     "memos": [
+      "Inv Level 2 charger bank - demand surcharge",
+      "Svc charger bank - transformer upgrade"
+     ],
+     "cross_memo": "Level 2 charger bank - permit and inspection",
+     "plain": [
+      "the Level 2 charger bank",
+      "the charger bank",
+      "the charger bank surcharge"
+     ],
+     "oblique": [
+      "plug-in vehicle support",
+      "the new stalls for electric cars",
+      "what the grid operator billed for higher load",
+      "capacity upgrade at the substation",
+      "the green mobility offering",
+      "juice for drivers of battery cars",
+      "the peak draw penalty",
+      "expanding service to zero-emission drivers",
+      "the installation requested by tenants",
+      "the line upgrade the utility insisted on",
+      "the sustainability project",
+      "power infrastructure for new amenities",
+      "an increase in connected load",
+      "the amenity we added for guests",
+      "extra capacity for the building"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "pipeburst",
+     "vendor": "Rapidflood Restoration",
+     "memos": [
+      "Inv water main rupture - Rapidflood",
+      "Svc water main rupture - pump-out and drying"
+     ],
+     "cross_memo": "Water main rupture - emergency plumbing callout",
+     "plain": [
+      "the water main rupture",
+      "the main rupture",
+      "the Rapidflood rupture"
+     ],
+     "oblique": [
+      "flooding in the basement",
+      "the deluge on the lowest level",
+      "an emergency overnight",
+      "the line that gave way",
+      "pumping out the bottom floor",
+      "the cleanup after the leak",
+      "water damage response",
+      "the sudden outage of the supply line",
+      "a failure beneath the street",
+      "drying out the sublevel",
+      "the crew called at three in the morning",
+      "the mess in the lower parking area",
+      "the city pipe failure",
+      "remediation after the burst",
+      "restoring the cellar"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Customer Programs",
+   "aliases": [
+    "marketing",
+    "customer programs",
+    "promotions",
+    "loyalty spend",
+    "advertising"
+   ],
+   "narrative": [
+    "Marketing",
+    "Customer programs",
+    "Promotions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightpost Digital",
+     "base": 4800,
+     "memo": "Mnt search and social ads"
+    },
+    {
+     "vendor": "ParkPerks Loyalty Platform",
+     "base": 2900,
+     "memo": "Qtr loyalty app license"
+    },
+    {
+     "vendor": "Signal Print Shop",
+     "base": 900,
+     "memo": "Inv flyers and rate cards"
+    }
+   ],
+   "events": [
+    {
+     "key": "stadiumdeal",
+     "vendor": "Brightpost Digital",
+     "memos": [
+      "Inv arena season sponsorship - banner package",
+      "Svc arena sponsorship - digital screens"
+     ],
+     "cross_memo": "Arena season sponsorship - hospitality tickets",
+     "plain": [
+      "the arena season sponsorship",
+      "the arena sponsorship",
+      "the sponsorship banners"
+     ],
+     "oblique": [
+      "our name at the ballpark",
+      "the deal with the home team venue",
+      "visibility among game-day crowds",
+      "the partnership with local sports",
+      "signage inside the big building",
+      "courting fans before kickoff",
+      "the multi-month commitment to the stadium",
+      "exposure at home games",
+      "a pitch to drivers heading to events",
+      "the naming arrangement",
+      "the brand placement downtown",
+      "tickets we gave to clients",
+      "what we signed with the franchise",
+      "fan outreach",
+      "advertising where thousands gather"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "rebrand",
+     "vendor": "Lumen Creative Studio",
+     "memos": [
+      "Inv wayfinding refresh - Lumen Creative",
+      "Svc wayfinding refresh - logo redesign"
+     ],
+     "cross_memo": "Wayfinding refresh - sign fabrication",
+     "plain": [
+      "the wayfinding refresh",
+      "the Lumen wayfinding refresh",
+      "the wayfinding redesign"
+     ],
+     "oblique": [
+      "a new look for the company",
+      "updated identity across sites",
+      "the design agency's engagement",
+      "fresh colors and fonts",
+      "the visual overhaul",
+      "making the garages easier to navigate",
+      "rethinking our image",
+      "the creative project the CEO championed",
+      "new lettering on the walls",
+      "what the branding firm delivered",
+      "the identity project",
+      "modernizing how we present ourselves",
+      "a cleaner appearance for the entrances",
+      "the facelift for our public image",
+      "redrawing our logo and arrows"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Garage Lease and Concession Fees",
+   "aliases": [
+    "lease fees",
+    "concession fees",
+    "garage rent",
+    "ground lease",
+    "site lease costs"
+   ],
+   "narrative": [
+    "Lease fees",
+    "Concession fees",
+    "Garage rent"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Property Trust",
+     "base": 28000,
+     "memo": "Inv monthly ground rent - Site 4"
+    },
+    {
+     "vendor": "City Transit Authority",
+     "base": 9500,
+     "memo": "Mnt concession fee - airport garage"
+    },
+    {
+     "vendor": "Oakridge Realty Partners",
+     "base": 6200,
+     "memo": "Inv monthly rent - Site 7"
+    }
+   ],
+   "events": [
+    {
+     "key": "percentrent",
+     "vendor": "City Transit Authority",
+     "memos": [
+      "Inv gross receipts true-up - TA audit",
+      "Svc gross receipts true-up - prior period"
+     ],
+     "cross_memo": "Gross receipts true-up - audit interest",
+     "plain": [
+      "the gross receipts true-up",
+      "the receipts true-up",
+      "the true-up audit"
+     ],
+     "oblique": [
+      "the landlord's review of our takings",
+      "additional amounts owed on revenue share",
+      "what the examiners found",
+      "catch-up payment on earlier periods",
+      "the percentage rent reconciliation",
+      "a bill for past underreporting",
+      "the settlement after the books were checked",
+      "the shortfall owed to the public agency",
+      "the review of last year's collections",
+      "extra money due from strong sales",
+      "an audit finding",
+      "retroactive charges",
+      "the difference between estimates and actual",
+      "the reconciliation with our landlord",
+      "funds owed following the inspection of records"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "cam",
+     "vendor": "Harbor Tower Associates",
+     "memos": [
+      "Inv shared-lobby renovation - Harbor Tower",
+      "Svc shared-lobby renovation - tenant allocation"
+     ],
+     "cross_memo": "Shared-lobby renovation - signage reimbursement",
+     "plain": [
+      "the shared-lobby renovation",
+      "the lobby renovation",
+      "the Harbor Tower renovation"
+     ],
+     "oblique": [
+      "our share of the building's makeover",
+      "the owner's project we had to chip in on",
+      "pass-through costs from the property manager",
+      "improvements to the entrance hall upstairs",
+      "what the landlord billed everyone",
+      "a proportion of the capital project",
+      "the redecoration of common areas",
+      "costs allocated by the building",
+      "the neighbors' upgrade",
+      "a cost-sharing charge",
+      "the owner's face-lift of the atrium",
+      "tenant contribution to the remodel",
+      "our slice of the improvement",
+      "the property's refresh",
+      "the assessment from the upstairs owner"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Security and Patrol Services",
+   "aliases": [
+    "security",
+    "patrol services",
+    "guard costs",
+    "security services",
+    "site security"
+   ],
+   "narrative": [
+    "Security",
+    "Patrol services",
+    "Guard costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironwatch Guard Co",
+     "base": 15500,
+     "memo": "Inv overnight patrol hours"
+    },
+    {
+     "vendor": "Eyeline Monitoring",
+     "base": 3300,
+     "memo": "Mnt CCTV remote monitoring"
+    },
+    {
+     "vendor": "Locksmith Rapid Response",
+     "base": 700,
+     "memo": "Svc lock and gate repairs"
+    }
+   ],
+   "events": [
+    {
+     "key": "breakin",
+     "vendor": "Ironwatch Guard Co",
+     "memos": [
+      "Inv vandalism spree - added roving guards",
+      "Svc vandalism spree - weekend posts"
+     ],
+     "cross_memo": "Vandalism spree - window glass replacement",
+     "plain": [
+      "the vandalism spree",
+      "the spree of vandalism",
+      "the vandalism guards"
+     ],
+     "oblique": [
+      "a string of car break-ins",
+      "the crime wave at the north site",
+      "extra people walking the decks",
+      "after the thefts",
+      "additional eyes through the weekend",
+      "the spike in property crime",
+      "what the police recommended",
+      "temporary beefed-up presence",
+      "the response to smashed windows",
+      "a wave of mischief",
+      "guards we added until things calmed down",
+      "protection after the incidents",
+      "the stretch of late-night trouble",
+      "heightened coverage",
+      "the burglary problem"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "cameraupg",
+     "vendor": "Sentinel Vision Labs",
+     "memos": [
+      "Inv analytics camera upgrade - Sentinel Vision",
+      "Svc analytics camera upgrade - install labor"
+     ],
+     "cross_memo": "Analytics camera upgrade - server licensing",
+     "plain": [
+      "the analytics camera upgrade",
+      "the Sentinel camera upgrade",
+      "the camera analytics upgrade"
+     ],
+     "oblique": [
+      "smarter surveillance",
+      "replacing the grainy video system",
+      "what the insurer asked for",
+      "modernized monitoring hardware",
+      "the sharper picture project",
+      "detection software for suspicious activity",
+      "a technology refresh in the guard office",
+      "new lenses on every floor",
+      "the equipment we bought to cut incidents",
+      "an overhaul of how we watch the building",
+      "the security tech project",
+      "upgrading how we see the property",
+      "recording gear with better resolution",
+      "digital oversight improvements",
+      "the project to reduce staffing needs"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

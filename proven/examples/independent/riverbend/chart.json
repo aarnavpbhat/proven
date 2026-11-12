@@ -1,0 +1,122 @@
+{
+  "entity": "Riverbend Community Food Network",
+  "industry": "Non-profit (regional food bank)",
+  "history_periods": [
+    "2026-04"
+  ],
+  "prior_period": "2026-05",
+  "current_period": "2026-06",
+  "accounts": [
+    {
+      "name": "Food Purchases",
+      "aliases": [
+        "food purchases",
+        "purchased food",
+        "program food"
+      ]
+    },
+    {
+      "name": "Program Supplies",
+      "aliases": [
+        "program supplies"
+      ]
+    },
+    {
+      "name": "Program Salaries",
+      "aliases": [
+        "program salaries",
+        "program staff"
+      ]
+    },
+    {
+      "name": "Admin Salaries",
+      "aliases": [
+        "admin salaries",
+        "administrative salaries"
+      ]
+    },
+    {
+      "name": "Benefits & Payroll Taxes",
+      "aliases": [
+        "benefits & payroll taxes",
+        "benefits",
+        "payroll taxes"
+      ]
+    },
+    {
+      "name": "Fleet & Fuel",
+      "aliases": [
+        "fleet & fuel",
+        "fleet costs",
+        "fleet",
+        "fuel"
+      ]
+    },
+    {
+      "name": "Warehouse Occupancy",
+      "aliases": [
+        "warehouse occupancy",
+        "warehouse rent",
+        "warehouse"
+      ]
+    },
+    {
+      "name": "Utilities",
+      "aliases": [
+        "utilities"
+      ]
+    },
+    {
+      "name": "Special Events",
+      "aliases": [
+        "special events",
+        "events"
+      ]
+    },
+    {
+      "name": "Printing & Postage",
+      "aliases": [
+        "printing & postage",
+        "printing and postage",
+        "printing",
+        "postage"
+      ]
+    },
+    {
+      "name": "Partner Agency Grants",
+      "aliases": [
+        "partner agency grants",
+        "grants to partner agencies",
+        "partner grants",
+        "agency grants"
+      ]
+    },
+    {
+      "name": "Professional Fees",
+      "aliases": [
+        "professional fees"
+      ]
+    },
+    {
+      "name": "Technology",
+      "aliases": [
+        "technology",
+        "it"
+      ]
+    },
+    {
+      "name": "Volunteer Program",
+      "aliases": [
+        "volunteer program",
+        "volunteer costs"
+      ]
+    },
+    {
+      "name": "Office & Admin",
+      "aliases": [
+        "office & admin",
+        "office expense"
+      ]
+    }
+  ]
+}

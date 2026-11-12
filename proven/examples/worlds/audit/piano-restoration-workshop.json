@@ -1,0 +1,830 @@
+{
+ "slug": "piano-restoration-workshop",
+ "industry": "piano restoration workshop",
+ "entities": [
+  "Keystone Piano Restoration Works",
+  "Hammerfell Piano Atelier",
+  "Old Cedar Keyboard Restorers",
+  "Brassbridge Piano Rebuilders",
+  "Soundpost Heritage Pianos"
+ ],
+ "accounts": [
+  {
+   "name": "Action Parts & Hammers",
+   "aliases": [
+    "action parts",
+    "hammer and action costs",
+    "action supplies",
+    "regulation parts",
+    "action hardware"
+   ],
+   "narrative": [
+    "Action parts",
+    "Action supplies",
+    "Action hardware"
+   ],
+   "recurring": [
+    {
+     "vendor": "Feldmark Action Works",
+     "base": 6200,
+     "memo": "Hammer felt sets — monthly stock"
+    },
+    {
+     "vendor": "Coastline Piano Supply",
+     "base": 3400,
+     "memo": "Shanks flanges knuckles replenish"
+    },
+    {
+     "vendor": "Brightwood Keytops",
+     "base": 1800,
+     "memo": "Keytop replacement stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "ballroom_grand_restack",
+     "vendor": "Feldmark Action Works",
+     "memos": [
+      "Ballroom grand restack — WO 4471 complete action",
+      "Ballroom grand restack — custom whippens"
+     ],
+     "cross_memo": "Ballroom grand restack — crating",
+     "plain": [
+      "the ballroom grand restack",
+      "ballroom grand restack work",
+      "a ballroom grand restack order"
+     ],
+     "oblique": [
+      "new innards for a concert instrument",
+      "the hotel's big instrument overhaul",
+      "rebuilding a nine-foot showpiece",
+      "parts for one large client job",
+      "a single heavy rebuild",
+      "the event-venue commission",
+      "replacing every moving part on a concert model",
+      "the banquet hall instrument job",
+      "outfitting a venue's showpiece",
+      "an unusually large rebuild",
+      "the big hotel commission",
+      "fresh internals for one flagship instrument",
+      "one client's top-to-bottom restoration",
+      "bespoke parts ordered for a showpiece",
+      "the oversized concert job",
+      "a once-a-year flagship project"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "player_mechanism_retrofit",
+     "vendor": "Pellham Pneumatics",
+     "memos": [
+      "Player mechanism retrofit — PO 8812 pneumatic stack",
+      "Player mechanism retrofit — install"
+     ],
+     "cross_memo": "Player mechanism retrofit — electrical hookup",
+     "plain": [
+      "the player mechanism retrofit",
+      "player mechanism retrofit costs",
+      "a player mechanism retrofit job"
+     ],
+     "oblique": [
+      "making an upright perform on its own",
+      "an automated roll system for a client",
+      "the self-operating upright conversion",
+      "adding paper-roll capability",
+      "a roll-operated conversion",
+      "turning a parlor upright into an automatic instrument",
+      "the antique reproducing system",
+      "bellows and tubing work",
+      "vacuum-powered upgrade",
+      "a collector's automation request",
+      "the nickelodeon-style conversion",
+      "automation hardware for one upright",
+      "a bar owner's novelty request",
+      "the roll-reading upgrade",
+      "bringing back a century-old automatic system",
+      "air-powered reproduction gear"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Music Wire & Tuning Pins",
+   "aliases": [
+    "music wire",
+    "stringing supplies",
+    "wire and pins",
+    "tuning pin stock",
+    "stringing costs"
+   ],
+   "narrative": [
+    "Music wire",
+    "Stringing supplies",
+    "Stringing costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Halvorsen Wire Mill",
+     "base": 4800,
+     "memo": "Steel treble wire coils"
+    },
+    {
+     "vendor": "Duquette Bass Strings",
+     "base": 3900,
+     "memo": "Wound bass strings custom wind"
+    },
+    {
+     "vendor": "Tri-County Fastener",
+     "base": 1100,
+     "memo": "Bridge pins agraffes"
+    }
+   ],
+   "events": [
+    {
+     "key": "hamburg_scale_copy",
+     "vendor": "Duquette Bass Strings",
+     "memos": [
+      "Hamburg scale copy — full bass set INV 2290",
+      "Hamburg scale copy — rush winding"
+     ],
+     "cross_memo": "Hamburg scale copy — scale design consult",
+     "plain": [
+      "the hamburg scale copy",
+      "hamburg scale copy charges",
+      "a hamburg scale copy run"
+     ],
+     "oblique": [
+      "matching a German maker's original layout",
+      "a European factory pattern reproduction",
+      "low-register restringing to factory spec",
+      "reproducing an old-world blueprint",
+      "the German-pattern job",
+      "a faithful factory-spec rebuild",
+      "expedited copper-wrapped orders",
+      "deep-register replacement",
+      "a historically accurate restringing",
+      "the client wanting original-spec tone",
+      "reproducing period-correct tension",
+      "a rebuild done to European blueprints",
+      "the low-end restring",
+      "imitating an heirloom's original layout",
+      "factory-faithful restoration work",
+      "the authenticity rework"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "torque_testing_rig",
+     "vendor": "Marlow Gauge Works",
+     "memos": [
+      "Torque testing rig — fabrication PO 5530",
+      "Torque testing rig — calibration"
+     ],
+     "cross_memo": "Torque testing rig — bench space",
+     "plain": [
+      "the torque testing rig",
+      "torque testing rig costs",
+      "a new torque testing rig"
+     ],
+     "oblique": [
+      "new quality-control equipment",
+      "a device to check how tightly pegs hold",
+      "measuring grip strength in blocks",
+      "the QC fixture build",
+      "shop instrumentation upgrade",
+      "verifying peg tightness before shipping",
+      "a homemade measurement station",
+      "tooling for tighter quality checks",
+      "an engineering project the shop foreman wanted",
+      "gear to stop loose-peg warranty claims",
+      "the inspection apparatus",
+      "equipment for proving holding strength",
+      "a one-time tooling investment",
+      "building a peg-grip checker",
+      "precision measuring gear",
+      "quality assurance hardware"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Finishing & Lacquer Materials",
+   "aliases": [
+    "finishing materials",
+    "lacquer costs",
+    "finish supplies",
+    "refinishing spend",
+    "spray booth materials"
+   ],
+   "narrative": [
+    "Finishing materials",
+    "Lacquer costs",
+    "Finish supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Orchard Coatings",
+     "base": 5200,
+     "memo": "Nitro lacquer drums"
+    },
+    {
+     "vendor": "Gainsboro Abrasives",
+     "base": 2100,
+     "memo": "Sanding discs grits"
+    },
+    {
+     "vendor": "Pellucid Shellac Co",
+     "base": 1600,
+     "memo": "Shellac flakes french polish"
+    }
+   ],
+   "events": [
+    {
+     "key": "ebony_gloss_matching",
+     "vendor": "Orchard Coatings",
+     "memos": [
+      "Ebony gloss matching — tinted batch #7712",
+      "Ebony gloss matching — sample panels"
+     ],
+     "cross_memo": "Ebony gloss matching — touchup labor",
+     "plain": [
+      "the ebony gloss matching",
+      "ebony gloss matching costs",
+      "an ebony gloss matching effort"
+     ],
+     "oblique": [
+      "a black high-shine color match",
+      "getting a jet-black case to look uniform",
+      "custom-mixed dark topcoat",
+      "redoing a mirror finish to blend repairs",
+      "the piano-black color work",
+      "matching an owner's original black case",
+      "special-order pigment",
+      "the dark mirror refinish",
+      "test boards for shade approval",
+      "a fussy client's shade requirements",
+      "blending new coats into old",
+      "hand-mixed pigmented coats",
+      "color correction on a black case",
+      "high-shine shade work",
+      "reproducing a factory jet finish",
+      "the color-approval rounds"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "exhaust_scrubber_install",
+     "vendor": "Westbrook Fume Systems",
+     "memos": [
+      "Exhaust scrubber install — PO 6620 unit",
+      "Exhaust scrubber install — ducting"
+     ],
+     "cross_memo": "Exhaust scrubber install — electrician callout",
+     "plain": [
+      "the exhaust scrubber install",
+      "exhaust scrubber install charges",
+      "an exhaust scrubber install project"
+     ],
+     "oblique": [
+      "air quality compliance work",
+      "meeting the fire marshal's ventilation demands",
+      "cleaner spray-room air",
+      "new ventilation equipment",
+      "the air-handling project",
+      "vapor control for the spray room",
+      "an environmental permit requirement",
+      "solvent emissions controls",
+      "keeping finishers out of solvent vapor",
+      "the county air-permit fix",
+      "improved extraction for the refinish room",
+      "an overdue ventilation overhaul",
+      "regulatory airflow upgrades",
+      "VOC capture hardware",
+      "safety airflow work",
+      "the insurer's ventilation demand"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Soundboard Lumber & Veneer",
+   "aliases": [
+    "soundboard lumber",
+    "tonewood",
+    "veneer and lumber",
+    "wood stock",
+    "soundboard materials"
+   ],
+   "narrative": [
+    "Soundboard lumber",
+    "Tonewood",
+    "Wood stock"
+   ],
+   "recurring": [
+    {
+     "vendor": "Alpine Spruce Traders",
+     "base": 6800,
+     "memo": "Quartersawn spruce billets"
+    },
+    {
+     "vendor": "Hartwell Hardwoods",
+     "base": 3300,
+     "memo": "Maple pinblock stock"
+    },
+    {
+     "vendor": "Veridian Veneer House",
+     "base": 2400,
+     "memo": "Rosewood walnut veneer sheets"
+    }
+   ],
+   "events": [
+    {
+     "key": "master_grade_allotment",
+     "vendor": "Alpine Spruce Traders",
+     "memos": [
+      "Master grade allotment — lot 19 premium",
+      "Master grade allotment — kiln surcharge"
+     ],
+     "cross_memo": "Master grade allotment — inbound freight",
+     "plain": [
+      "the master grade allotment",
+      "master grade allotment spending",
+      "a master grade allotment buy"
+     ],
+     "oblique": [
+      "top-tier tonewood",
+      "the best boards the supplier had",
+      "securing a rare high-quality wood shipment",
+      "buying ahead of a price hike",
+      "concert-quality soundboard blanks",
+      "an elite tonewood reservation",
+      "drying fees on special boards",
+      "the luthier-quality wood buy",
+      "a once-a-year pick of the finest boards",
+      "hoarding the highest-quality boards",
+      "a select-quality tonewood order",
+      "tight-ring mountain wood",
+      "the top-shelf soundboard order",
+      "an exceptional wood selection",
+      "buying the cream of the harvest",
+      "first-pick tonewood"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "reclaimed_beam_purchase",
+     "vendor": "Coldwater Sawmill Salvage",
+     "memos": [
+      "Reclaimed beam purchase — old-growth lot",
+      "Reclaimed beam purchase — resaw"
+     ],
+     "cross_memo": "Reclaimed beam purchase — haulage",
+     "plain": [
+      "the reclaimed beam purchase",
+      "reclaimed beam purchase costs",
+      "a reclaimed beam purchase deal"
+     ],
+     "oblique": [
+      "timber from a demolished factory",
+      "century-old wood rescued from a teardown",
+      "repurposed structural timber",
+      "the barn-wood find",
+      "an opportunistic antique timber buy",
+      "wood pulled from an old warehouse",
+      "recycled heart pine",
+      "re-cutting giant timbers into usable boards",
+      "the demolition-site lumber",
+      "vintage structural wood",
+      "a sustainability-minded sourcing move",
+      "timber rescued from a razed building",
+      "aged rafters",
+      "the teardown wood",
+      "history-rich timber for custom cases",
+      "old joists for custom cabinets"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Instrument Moving & Rigging",
+   "aliases": [
+    "moving costs",
+    "rigging",
+    "piano transport",
+    "pickup and delivery",
+    "move fees"
+   ],
+   "narrative": [
+    "Moving costs",
+    "Rigging",
+    "Piano transport"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironside Piano Movers",
+     "base": 7400,
+     "memo": "Pickup delivery runs"
+    },
+    {
+     "vendor": "Bluegate Freight",
+     "base": 2900,
+     "memo": "LTL crated shipments"
+    },
+    {
+     "vendor": "Summit Liftgate Rentals",
+     "base": 1300,
+     "memo": "Truck liftgate rental"
+    }
+   ],
+   "events": [
+    {
+     "key": "crane_hoist_extraction",
+     "vendor": "Ironside Piano Movers",
+     "memos": [
+      "Crane hoist extraction — third floor WO 3318",
+      "Crane hoist extraction — street permit"
+     ],
+     "cross_memo": "Crane hoist extraction — window reglazing",
+     "plain": [
+      "the crane hoist extraction",
+      "crane hoist extraction charges",
+      "a crane hoist extraction job"
+     ],
+     "oblique": [
+      "lifting a grand out of an apartment",
+      "the upstairs removal",
+      "getting an instrument out through a building facade",
+      "a heavy-lift job downtown",
+      "an aerial lift for a stuck instrument",
+      "the high-rise retrieval",
+      "city sign-off for blocking a lane",
+      "a removal the stairwell couldn't handle",
+      "the overhead lift",
+      "specialty rigging for a walk-up",
+      "a balcony retrieval",
+      "the tricky downtown pull",
+      "a mechanical lift over the sidewalk",
+      "hauling an instrument out from upstairs",
+      "a job too big for stairs",
+      "the apartment rescue"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "museum_loan_return",
+     "vendor": "Tidewater Expedite",
+     "memos": [
+      "Museum loan return — air ride trailer",
+      "Museum loan return — climate escort"
+     ],
+     "cross_memo": "Museum loan return — condition report",
+     "plain": [
+      "the museum loan return",
+      "museum loan return costs",
+      "a museum loan return trip"
+     ],
+     "oblique": [
+      "bringing a borrowed instrument back from an exhibition",
+      "the gallery repatriation",
+      "a white-glove cross-country haul",
+      "returning a historic instrument to its owner",
+      "the exhibit wrap-up",
+      "insured transport after a showcase",
+      "a curator-requested move",
+      "temperature-controlled long-haul",
+      "the end of an exhibition",
+      "shipping a heritage piece home",
+      "special-handling transit",
+      "the institution's return request",
+      "cross-country specialty transit",
+      "an exhibition send-back",
+      "humidity-controlled long-distance carriage",
+      "a heritage instrument's journey home"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Climate Control & Humidity",
+   "aliases": [
+    "humidity control",
+    "climate costs",
+    "dehumidification",
+    "hvac upkeep",
+    "climate control spend"
+   ],
+   "narrative": [
+    "Humidity control",
+    "Climate costs",
+    "Dehumidification"
+   ],
+   "recurring": [
+    {
+     "vendor": "Polar Bear Mechanical",
+     "base": 2600,
+     "memo": "HVAC service contract"
+    },
+    {
+     "vendor": "Dampchek Systems",
+     "base": 1400,
+     "memo": "Humidistat monitoring sub"
+    },
+    {
+     "vendor": "Riverbend Water Co",
+     "base": 900,
+     "memo": "Distilled water humidifier refill"
+    }
+   ],
+   "events": [
+    {
+     "key": "chiller_coil_failure",
+     "vendor": "Polar Bear Mechanical",
+     "memos": [
+      "Chiller coil failure — emergency callout",
+      "Chiller coil failure — compressor part"
+     ],
+     "cross_memo": "Chiller coil failure — damaged felt write-off",
+     "plain": [
+      "the chiller coil failure",
+      "chiller coil failure repairs",
+      "a chiller coil failure"
+     ],
+     "oblique": [
+      "a cooling breakdown in midsummer",
+      "the air conditioner dying",
+      "after-hours repairs on the cooling plant",
+      "a refrigeration breakdown",
+      "fixing the AC before instruments warped",
+      "the cooling outage",
+      "an unplanned rebuild of the cooling unit",
+      "the broken air conditioning",
+      "urgent cooling repairs",
+      "a busted heat exchanger",
+      "warped-wood risk from a cooling outage",
+      "the summer AC crisis",
+      "keeping stored instruments from cracking",
+      "a major cooling-system fault",
+      "rush cooling fixes",
+      "the shop overheating"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "storage_vault_zoning",
+     "vendor": "Stratus Envirotech",
+     "memos": [
+      "Storage vault zoning — sensors PO 7740",
+      "Storage vault zoning — dampers"
+     ],
+     "cross_memo": "Storage vault zoning — racking",
+     "plain": [
+      "the storage vault zoning",
+      "storage vault zoning project",
+      "new storage vault zoning"
+     ],
+     "oblique": [
+      "separate humidity areas for customer instruments",
+      "climate-segmented warehousing",
+      "dividing the back room into controlled rooms",
+      "per-room environmental control",
+      "the inventory room upgrade",
+      "better conditions for consigned instruments",
+      "an insurer-requested environment upgrade",
+      "new probes and airflow controls",
+      "multi-area climate work",
+      "the warehouse microclimate project",
+      "protecting stored grands",
+      "segmented airflow",
+      "independent humidity rooms",
+      "the back-room climate retrofit",
+      "tighter environmental tolerances",
+      "a holding-room modernization"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Workshop Rent & Occupancy",
+   "aliases": [
+    "rent",
+    "occupancy",
+    "lease costs",
+    "facility rent",
+    "building costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Lease costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborview Properties LLC",
+     "base": 14500,
+     "memo": "Base rent bldg B"
+    },
+    {
+     "vendor": "Quarry Lane Utilities",
+     "base": 2100,
+     "memo": "Electric gas utilities"
+    },
+    {
+     "vendor": "CleanSweep Janitorial",
+     "base": 950,
+     "memo": "Nightly janitorial"
+    }
+   ],
+   "events": [
+    {
+     "key": "annual_reconciliation_trueup",
+     "vendor": "Harborview Properties LLC",
+     "memos": [
+      "Annual reconciliation true-up — CAM",
+      "Annual reconciliation true-up — tax pass-through"
+     ],
+     "cross_memo": "Annual reconciliation true-up — insurance pass-through",
+     "plain": [
+      "the annual reconciliation true-up",
+      "annual reconciliation true-up billing",
+      "an annual reconciliation true-up"
+     ],
+     "oblique": [
+      "the landlord's year-end catch-up bill",
+      "common-area charges settling up",
+      "a property levy adjustment",
+      "the landlord billing shortfalls from last year",
+      "back-billed shared-area expenses",
+      "a once-a-year owner settlement",
+      "higher municipal assessments passed along",
+      "the yearly lessor settlement",
+      "underbilled maintenance from prior periods",
+      "a catch-up invoice",
+      "the owner's expense recovery",
+      "settling shared operating expenses",
+      "a retroactive occupancy charge",
+      "the lessor's year-end adjustment",
+      "parking-lot and roof upkeep billed back",
+      "prior-year expense recapture"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "mezzanine_buildout",
+     "vendor": "Brickline Builders",
+     "memos": [
+      "Mezzanine buildout — framing draw 1",
+      "Mezzanine buildout — stair permit"
+     ],
+     "cross_memo": "Mezzanine buildout — lighting",
+     "plain": [
+      "the mezzanine buildout",
+      "mezzanine buildout costs",
+      "a mezzanine buildout"
+     ],
+     "oblique": [
+      "a second-level storage platform",
+      "adding upstairs floor space",
+      "construction of an upper deck in the shop",
+      "more square footage without moving",
+      "the loft project",
+      "contractor work on raised storage",
+      "expanding vertically",
+      "an upper storage level",
+      "the new overhead floor",
+      "carving extra space out of the high ceiling",
+      "a raised platform for parts storage",
+      "the expansion construction",
+      "leasehold improvements upstairs",
+      "the elevated workspace",
+      "a contractor's progress billing",
+      "going up instead of out"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Contract Technician Fees",
+   "aliases": [
+    "contract techs",
+    "subcontract tuners",
+    "outside technicians",
+    "tuner fees",
+    "freelance tech labor"
+   ],
+   "narrative": [
+    "Contract techs",
+    "Outside technicians",
+    "Tuner fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Marguerite Ostrowski RPT",
+     "base": 4200,
+     "memo": "Field tuning visits"
+    },
+    {
+     "vendor": "Delacroix Regulation Services",
+     "base": 3600,
+     "memo": "Bench regulation hours"
+    },
+    {
+     "vendor": "Ashgrove Tech Collective",
+     "base": 2800,
+     "memo": "Overflow voicing shifts"
+    }
+   ],
+   "events": [
+    {
+     "key": "conservatory_summer_prep",
+     "vendor": "Delacroix Regulation Services",
+     "memos": [
+      "Conservatory summer prep — 40 uprights WO 5102",
+      "Conservatory summer prep — practice rooms"
+     ],
+     "cross_memo": "Conservatory summer prep — mileage",
+     "plain": [
+      "the conservatory summer prep",
+      "conservatory summer prep work",
+      "a conservatory summer prep push"
+     ],
+     "oblique": [
+      "getting a music school's instruments ready for term",
+      "the academy's off-season tune-up",
+      "readying dozens of student instruments",
+      "a college's annual maintenance blitz",
+      "school instrument servicing",
+      "the campus job",
+      "readying a teaching studio's instruments",
+      "a big institutional client's yearly request",
+      "outside help for the school contract",
+      "between-semester instrument care",
+      "the university's maintenance order",
+      "student-instrument upkeep",
+      "an education client's seasonal work",
+      "keeping a music academy on schedule",
+      "the semester-break job",
+      "a large school tune-up order"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "backlog_surge_crew",
+     "vendor": "Wexford Rebuild Specialists",
+     "memos": [
+      "Backlog surge crew — weekly invoice",
+      "Backlog surge crew — per diem"
+     ],
+     "cross_memo": "Backlog surge crew — tool rental",
+     "plain": [
+      "the backlog surge crew",
+      "backlog surge crew charges",
+      "a backlog surge crew"
+     ],
+     "oblique": [
+      "temporary help to clear the queue",
+      "extra hands for overdue jobs",
+      "catching up on late customer orders",
+      "a temporary restoration team",
+      "short-term staffing",
+      "hired help after the holiday rush",
+      "clearing a pile of waiting instruments",
+      "agency technicians on short contracts",
+      "the catch-up effort",
+      "added capacity for late jobs",
+      "an all-hands push on delayed work",
+      "temp staffing",
+      "bringing in outside restorers",
+      "a staffing stopgap",
+      "working down overdue orders",
+      "the queue-clearing push"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

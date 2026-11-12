@@ -1,0 +1,794 @@
+{
+ "slug": "stadium-and-arena-operator",
+ "industry": "stadium and arena operator",
+ "entities": [
+  "Grandstand Venue Holdings",
+  "Ironbridge Arena Group",
+  "Lakefront Stadium Partners",
+  "Summit Coliseum Management",
+  "Redline Events & Venues"
+ ],
+ "accounts": [
+  {
+   "name": "Turf & Field Maintenance",
+   "aliases": [
+    "turf",
+    "turf maintenance",
+    "field maintenance",
+    "grounds crew spend",
+    "pitch care"
+   ],
+   "narrative": [
+    "Turf maintenance",
+    "Field maintenance",
+    "Pitch care"
+   ],
+   "recurring": [
+    {
+     "vendor": "Verdant Sports Turf LLC",
+     "base": 14000,
+     "memo": "Mnt svc — mowing/aeration Inv"
+    },
+    {
+     "vendor": "Hollis Agronomy Group",
+     "base": 4200,
+     "memo": "Soil testing/fertilizer Mnt"
+    }
+   ],
+   "events": [
+    {
+     "key": "sod_replacement",
+     "vendor": "Verdant Sports Turf LLC",
+     "memos": [
+      "Sod replacement — midfield Inv 4471",
+      "Sod replacement — install labor"
+     ],
+     "cross_memo": "Sod replacement — forklift rental",
+     "plain": [
+      "the sod replacement",
+      "sod replacement work",
+      "the midfield sod replacement"
+     ],
+     "oblique": [
+      "regrassing",
+      "new grass",
+      "relaying grass after the concert damage",
+      "repairing the worn playing surface",
+      "a fresh playing surface ahead of the playoffs",
+      "the damaged centre of the pitch",
+      "patching up stage-load damage",
+      "putting down new grass where the stage sat",
+      "the post-concert surface repair",
+      "restoring the playing surface",
+      "fixing the bare patches",
+      "a league-mandated surface upgrade",
+      "the groundskeeper's emergency resurfacing",
+      "worn grass",
+      "getting the surface match-ready again",
+      "the cleanup after the festival weekend"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "drainage_retrofit",
+     "vendor": "Brightwater Irrigation Partners",
+     "memos": [
+      "Drainage retrofit — subsurface pipe Inv 0912",
+      "Drainage retrofit — trenching"
+     ],
+     "cross_memo": "Drainage retrofit — permit fee",
+     "plain": [
+      "the drainage retrofit",
+      "drainage retrofit work",
+      "the subsurface drainage retrofit"
+     ],
+     "oblique": [
+      "standing water on the pitch",
+      "fixing waterlogging",
+      "new underground plumbing beneath the field",
+      "the flooding fix",
+      "getting rainwater off the playing area faster",
+      "work to stop puddling after storms",
+      "digging up the north end to improve runoff",
+      "the waterlogging remedy the league demanded",
+      "an upgrade so games aren't rained out",
+      "the wet-weather project",
+      "runoff improvements",
+      "clearing clogged lines under the surface",
+      "storm-proofing the grass",
+      "the soggy-field problem",
+      "rerouting rainwater to the storm sewer",
+      "a contractor dig after the spring floods"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Event Day Staffing",
+   "aliases": [
+    "event staffing",
+    "ushers",
+    "part-time staff",
+    "event day staffing"
+   ],
+   "narrative": [
+    "Event staffing",
+    "Ushers",
+    "Part-time staff"
+   ],
+   "recurring": [
+    {
+     "vendor": "Linewise Event Staffing",
+     "base": 21000,
+     "memo": "Usher/greeter svc — wkly Inv"
+    },
+    {
+     "vendor": "Paycrest Payroll Services",
+     "base": 1900,
+     "memo": "Payroll processing Mnt fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "overtime_surge",
+     "vendor": "Linewise Event Staffing",
+     "memos": [
+      "Overtime surge — playoff game shifts",
+      "Overtime surge — supervisor premiums"
+     ],
+     "cross_memo": "Overtime surge — extra shuttle buses",
+     "plain": [
+      "the overtime surge",
+      "overtime surge billing",
+      "the playoff overtime surge"
+     ],
+     "oblique": [
+      "time-and-a-half pay",
+      "postseason hours",
+      "keeping crews late after the doubleheader",
+      "longer hours for the home stand",
+      "the double-header weekend",
+      "people working past their scheduled hours",
+      "holiday pay rates",
+      "the late finish on the championship night",
+      "added pay for leads running the gates",
+      "the postseason run",
+      "crews kept on after the rain delay",
+      "higher hourly rates for the title series",
+      "the long weekend of back-to-back dates",
+      "a busier schedule than budgeted",
+      "hours beyond the roster",
+      "the extended closing hours"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "crowd_certification",
+     "vendor": "Northgate Training Academy",
+     "memos": [
+      "Crowd certification course — cohort A",
+      "Crowd certification — exam fees"
+     ],
+     "cross_memo": "Crowd certification — classroom rental",
+     "plain": [
+      "the crowd certification",
+      "crowd certification costs",
+      "the crowd certification course"
+     ],
+     "oblique": [
+      "onboarding new hires",
+      "teaching staff to manage big audiences",
+      "the mandatory licensing for gate workers",
+      "a state requirement for credentialed attendants",
+      "qualifying the new season's hires",
+      "safety schooling",
+      "the instruction sessions the insurer asked for",
+      "getting attendants accredited",
+      "new-hire orientation",
+      "the licensing push before opening day",
+      "upskilling the part-timers",
+      "compliance tutoring",
+      "the accreditation program",
+      "teaching evacuation procedures",
+      "workshops on managing large gatherings",
+      "qualifications for the incoming hires"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Concessions Food Cost",
+   "aliases": [
+    "concessions",
+    "food cost",
+    "concessions cost of goods",
+    "f&b product",
+    "concession stand supplies"
+   ],
+   "narrative": [
+    "Concessions",
+    "Food cost",
+    "Concession stand supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harbor Point Foodservice",
+     "base": 28000,
+     "memo": "Food product delivery Inv"
+    },
+    {
+     "vendor": "Cascade Beverage Distributors",
+     "base": 18000,
+     "memo": "Beer/soda kegs — wkly"
+    },
+    {
+     "vendor": "Pinnacle Paper Goods",
+     "base": 3500,
+     "memo": "Cups/napkins/trays"
+    }
+   ],
+   "events": [
+    {
+     "key": "freezer_failure",
+     "vendor": "Harbor Point Foodservice",
+     "memos": [
+      "Freezer failure — emergency restock",
+      "Freezer failure — rush delivery chg"
+     ],
+     "cross_memo": "Freezer failure — refrigeration tech call",
+     "plain": [
+      "the freezer failure",
+      "freezer failure restock",
+      "the emergency freezer failure"
+     ],
+     "oblique": [
+      "replacing stock that thawed",
+      "the thawed inventory",
+      "spoiled hot dogs and ice cream",
+      "a cold-storage breakdown",
+      "tossing melted stock",
+      "the power cut in the commissary",
+      "buying again what went bad",
+      "lost perishables",
+      "the walk-in cooler outage",
+      "spoiled meat",
+      "a compressor dying over the weekend",
+      "replenishing ruined stock at short notice",
+      "spoilage",
+      "the stock lost when the cold room warmed up",
+      "same-day resupply after the outage",
+      "write-off of perished items"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "popup_menu",
+     "vendor": "Lakeshore Specialty Provisions",
+     "memos": [
+      "Pop-up menu — chef collab ingredients",
+      "Pop-up menu — specialty smoker rental"
+     ],
+     "cross_memo": "Pop-up menu — signage print",
+     "plain": [
+      "the pop-up menu",
+      "pop-up menu costs",
+      "the chef pop-up menu"
+     ],
+     "oblique": [
+      "the celebrity cook partnership",
+      "a limited-time barbecue offering",
+      "guest restaurant tie-in at section 112",
+      "the local restaurateur's takeover stand",
+      "new dishes for opening weekend",
+      "brisket and craft offerings",
+      "the barbecue promotion",
+      "a marketing-led dining experiment",
+      "upscale fare in the club level",
+      "premium dining items",
+      "the gourmet trial",
+      "the themed eats launch",
+      "a one-off culinary feature",
+      "the guest cook residency",
+      "new premium plates",
+      "fancier offerings marketing wanted"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Ticketing & Access Control",
+   "aliases": [
+    "ticketing",
+    "access control",
+    "gate scanning",
+    "ticket platform fees"
+   ],
+   "narrative": [
+    "Ticketing",
+    "Access control",
+    "Gate scanning"
+   ],
+   "recurring": [
+    {
+     "vendor": "Turnstyle Ticketing Systems",
+     "base": 9500,
+     "memo": "Platform svc fee Mnt"
+    },
+    {
+     "vendor": "Scanwell Devices",
+     "base": 2600,
+     "memo": "Handheld scanner lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "chargeback_dispute",
+     "vendor": "Turnstyle Ticketing Systems",
+     "memos": [
+      "Chargeback dispute — fraud batch",
+      "Chargeback dispute — processor penalty"
+     ],
+     "cross_memo": "Chargeback dispute — legal review hrs",
+     "plain": [
+      "the chargeback dispute",
+      "chargeback dispute fees",
+      "the fraud batch chargeback dispute"
+     ],
+     "oblique": [
+      "stolen card purchases",
+      "reversed sales from bad cards",
+      "the counterfeit-card spree",
+      "fines from the card networks",
+      "refunds clawed back by banks",
+      "a wave of contested purchases",
+      "bogus orders on the concert onsale",
+      "the card-testing attack",
+      "bank reversals",
+      "money pulled back by cardholders' banks",
+      "the bot purchasing spree",
+      "losses on scam orders",
+      "card network sanctions",
+      "contested resale transactions",
+      "the onsale scam fallout",
+      "cleanup after the stolen-card wave"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "biometric_lanes",
+     "vendor": "Keystone Entry Hardware",
+     "memos": [
+      "Biometric lanes — face reader install",
+      "Biometric lanes — config/commissioning"
+     ],
+     "cross_memo": "Biometric lanes — electrical run",
+     "plain": [
+      "the biometric lanes",
+      "biometric lanes rollout",
+      "the new biometric lanes"
+     ],
+     "oblique": [
+      "facial entry",
+      "letting fans walk in without phones",
+      "the touchless entry pilot",
+      "new frictionless entrances at the north plaza",
+      "the express-entry project marketing championed",
+      "recognition cameras at the doors",
+      "faster entry for season holders",
+      "the identity-based admission pilot",
+      "shorter lines at the doors",
+      "the hands-free admission trial",
+      "camera-based check-in",
+      "the league's paperless admission push",
+      "speeding up entry",
+      "doors that know who you are",
+      "a pilot to cut queue times",
+      "season-holder fast track"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Security Services",
+   "aliases": [
+    "security",
+    "security services",
+    "guard services",
+    "event security"
+   ],
+   "narrative": [
+    "Security",
+    "Guard services",
+    "Event security"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironside Protective Group",
+     "base": 24000,
+     "memo": "Guard svc hrs Inv"
+    },
+    {
+     "vendor": "Sentra Monitoring",
+     "base": 1500,
+     "memo": "Alarm monitoring Mnt"
+    }
+   ],
+   "events": [
+    {
+     "key": "dignitary_detail",
+     "vendor": "Ironside Protective Group",
+     "memos": [
+      "Dignitary detail — advance team",
+      "Dignitary detail — K9 sweep"
+     ],
+     "cross_memo": "Dignitary detail — barricade rental",
+     "plain": [
+      "the dignitary detail",
+      "dignitary detail coverage",
+      "the K9 dignitary detail"
+     ],
+     "oblique": [
+      "the governor's visit",
+      "a VIP appearance",
+      "protection for the visiting head of state",
+      "bomb dogs before the rally",
+      "the political rally",
+      "close protection for the halftime guest",
+      "extra officers for the president's visit",
+      "the motorcade arrival",
+      "VIP protection",
+      "a heads-of-state security perimeter",
+      "the secret service requirements",
+      "bodyguards for the celebrity anthem singer",
+      "the high-profile guest",
+      "the canine search",
+      "coverage the state police requested",
+      "the official's appearance"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "weapons_screening",
+     "vendor": "Redoubt Threat Analytics",
+     "memos": [
+      "Weapons screening — walk-through detectors",
+      "Weapons screening — operator training"
+     ],
+     "cross_memo": "Weapons screening — power drops",
+     "plain": [
+      "the weapons screening",
+      "weapons screening equipment",
+      "new weapons screening"
+     ],
+     "oblique": [
+      "metal detection at entrances",
+      "magnetometers",
+      "the new gun-check gates",
+      "keeping firearms out after the league mandate",
+      "AI-assisted bag checks",
+      "the league's mandated entry checks",
+      "magnetometer leases",
+      "pat-down alternatives",
+      "the bag-check overhaul",
+      "contraband detection",
+      "airport-style entry checks",
+      "upgraded checkpoints at every gate",
+      "the firearm-detection rollout",
+      "teaching staff to run the new scanners",
+      "knife and gun detection",
+      "the post-incident checkpoint upgrade"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Utilities",
+   "aliases": [
+    "utilities",
+    "power and water",
+    "electric bill",
+    "utility costs"
+   ],
+   "narrative": [
+    "Utilities",
+    "Utility costs",
+    "Electric bill"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Grid Electric",
+     "base": 26000,
+     "memo": "Electric svc — acct 7720"
+    },
+    {
+     "vendor": "Riverbend Water Authority",
+     "base": 5200,
+     "memo": "Water/sewer svc"
+    },
+    {
+     "vendor": "Coastal Gas Co",
+     "base": 2100,
+     "memo": "Natural gas Mnt bill"
+    }
+   ],
+   "events": [
+    {
+     "key": "demand_charge",
+     "vendor": "Metro Grid Electric",
+     "memos": [
+      "Demand charge — peak kW",
+      "Demand charge — concert load"
+     ],
+     "cross_memo": "Demand charge — generator fuel",
+     "plain": [
+      "the demand charge",
+      "demand charge billing",
+      "the peak demand charge"
+     ],
+     "oblique": [
+      "the stadium-wide lighting at full tilt",
+      "maximum draw during the light show",
+      "a spike in usage on the big tour night",
+      "the highest-usage hour pricing",
+      "running every light rig at once",
+      "the utility's top-tier rate",
+      "heavy draw from the stage production",
+      "the spike tariff",
+      "power-hungry production rigs",
+      "the headliner's lighting rig",
+      "simultaneous LED and HVAC usage",
+      "a tariff penalty for the busiest hour",
+      "kilowatt spikes",
+      "the stadium tour's draw",
+      "usage spikes",
+      "high consumption during the show"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "main_break",
+     "vendor": "Hydrofix Leak Services",
+     "memos": [
+      "Main break — leak detection",
+      "Main break — excavation/repair"
+     ],
+     "cross_memo": "Main break — lot repaving",
+     "plain": [
+      "the main break",
+      "main break repairs",
+      "the underground main break"
+     ],
+     "oblique": [
+      "a burst pipe under the concourse",
+      "the flooded parking structure",
+      "digging up the plaza",
+      "the ruptured supply line",
+      "a pipe burst",
+      "fixing the burst line under gate C",
+      "the overnight flood",
+      "a cracked underground line",
+      "plumbers on emergency call-out",
+      "the plaza flood",
+      "the ruptured line the city flagged",
+      "lost supply from the burst pipe",
+      "a flood near the north entrance",
+      "the plumbing emergency",
+      "jackhammering to reach the pipe",
+      "high metered usage before the rupture was found"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Insurance",
+   "aliases": [
+    "insurance",
+    "insurance premiums",
+    "liability cover",
+    "policy costs"
+   ],
+   "narrative": [
+    "Insurance",
+    "Insurance premiums",
+    "Liability cover"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bastion Mutual Underwriters",
+     "base": 16000,
+     "memo": "GL policy — Mnt installment"
+    },
+    {
+     "vendor": "Harrowgate Brokerage",
+     "base": 1200,
+     "memo": "Broker svc fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "event_rider",
+     "vendor": "Bastion Mutual Underwriters",
+     "memos": [
+      "Event rider — festival endorsement",
+      "Event rider — pyrotechnics surcharge"
+     ],
+     "cross_memo": "Event rider — fire marshal standby",
+     "plain": [
+      "the event rider",
+      "event rider surcharge",
+      "the festival event rider"
+     ],
+     "oblique": [
+      "extra cover for the music weekend",
+      "fireworks coverage",
+      "the add-on the promoter required",
+      "temporary coverage for the three-day concert",
+      "coverage for the halftime fireworks",
+      "the one-off concert add-on",
+      "a short-term liability bump",
+      "special coverage for the stunt show",
+      "the motocross weekend coverage",
+      "an extension for the monster truck show",
+      "the promoter's insurance requirement",
+      "additional insured certificates",
+      "explosives-related cover",
+      "the add-on for the open-air concerts",
+      "one-time coverage extensions",
+      "the stunt-show cover"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "slip_claim",
+     "vendor": "Clearwater Claims Adjusters",
+     "memos": [
+      "Slip claim — deductible",
+      "Slip claim — adjuster field visit"
+     ],
+     "cross_memo": "Slip claim — floor coating repair",
+     "plain": [
+      "the slip claim",
+      "slip claim deductible",
+      "the slip claim settlement"
+     ],
+     "oblique": [
+      "the fan who fell on the wet ramp",
+      "a spectator injury",
+      "the lawsuit from the concourse fall",
+      "our share of the injury payout",
+      "the out-of-pocket portion of the loss",
+      "a guest injury settlement",
+      "the fall on the stairs",
+      "liability from a patron tumble",
+      "the injured spectator's case",
+      "a personal injury matter",
+      "the self-insured layer on the fall",
+      "the wet-ramp accident",
+      "a premises liability loss",
+      "the stairway fall",
+      "investigating the patron's fall",
+      "costs from the guest accident"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Scoreboard & AV Production",
+   "aliases": [
+    "scoreboard",
+    "video board",
+    "av production",
+    "in-game production"
+   ],
+   "narrative": [
+    "Scoreboard",
+    "Video board",
+    "In-game production"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lumenwall Display Systems",
+     "base": 11000,
+     "memo": "LED board Mnt contract"
+    },
+    {
+     "vendor": "Replay Crew Productions",
+     "base": 7500,
+     "memo": "Control room crew Inv"
+    }
+   ],
+   "events": [
+    {
+     "key": "module_swap",
+     "vendor": "Lumenwall Display Systems",
+     "memos": [
+      "Module swap — dead pixel tiles",
+      "Module swap — lift truck hrs"
+     ],
+     "cross_memo": "Module swap — spare parts freight",
+     "plain": [
+      "the module swap",
+      "module swap costs",
+      "the emergency module swap"
+     ],
+     "oblique": [
+      "the dark section of the big screen",
+      "blacked-out screen sections",
+      "fixing the burned-out corner of the main screen",
+      "replacement screen hardware",
+      "the screen outage on opening night",
+      "repairing the scoreboard",
+      "the broken video wall",
+      "hardware failures on the main screen",
+      "the storm-damaged screen",
+      "restoring the end-zone screen",
+      "the black patches fans complained about",
+      "screen repairs",
+      "rehanging damaged screen sections",
+      "getting the big screen fully lit again",
+      "the hail-hit screen",
+      "new screen hardware"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "intro_package",
+     "vendor": "Halcyon Motion Graphics",
+     "memos": [
+      "Intro package — player headshots",
+      "Intro package — animation render"
+     ],
+     "cross_memo": "Intro package — music licensing",
+     "plain": [
+      "the intro package",
+      "intro package costs",
+      "the new intro package"
+     ],
+     "oblique": [
+      "new hype videos",
+      "the season-opener video",
+      "a refreshed starting-lineup sequence",
+      "the rebrand content marketing ordered",
+      "fresh walk-out visuals",
+      "the lineup announcement video",
+      "photo shoots of the roster",
+      "new in-game content",
+      "the hype reel",
+      "a reworked opening sequence for home games",
+      "the creative refresh",
+      "pregame visuals",
+      "the new-season video assets",
+      "starting-lineup visuals",
+      "a hype video the team requested",
+      "the rebrand's screen content"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

@@ -1,0 +1,790 @@
+{
+ "slug": "cold-storage-warehouse-operator",
+ "industry": "cold-storage warehouse operator",
+ "entities": [
+  "Polarspan Cold Logistics",
+  "Frostgate Storage Partners",
+  "Icebridge Terminals LLC",
+  "Northmere Cold Chain Co",
+  "Coldhaven Warehousing Group"
+ ],
+ "accounts": [
+  {
+   "name": "Refrigeration Maintenance",
+   "aliases": [
+    "refrigeration maintenance",
+    "refrigeration",
+    "refrig maintenance",
+    "refrigeration upkeep",
+    "cooling plant maintenance"
+   ],
+   "narrative": [
+    "Refrigeration maintenance",
+    "Refrigeration",
+    "Refrigeration upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Polar Mechanical Services",
+     "base": 18500,
+     "memo": "Monthly PM contract — engine room"
+    },
+    {
+     "vendor": "Frostline Controls Inc",
+     "base": 4200,
+     "memo": "Controls monitoring — remote telemetry"
+    }
+   ],
+   "events": [
+    {
+     "key": "compressor_rebuild",
+     "vendor": "Polar Mechanical Services",
+     "memos": [
+      "Screw compressor rebuild — parts",
+      "Screw compressor rebuild — labor"
+     ],
+     "cross_memo": "Screw compressor rebuild — crane lift",
+     "plain": [
+      "the screw compressor rebuild",
+      "screw compressor rebuild work",
+      "the screw compressor rebuild job"
+     ],
+     "oblique": [
+      "the ammonia plant overhaul",
+      "restoring cooling capacity",
+      "the main chiller teardown",
+      "fixing the unit that kept tripping",
+      "the overdue major machine teardown",
+      "bringing the high-stage machine back online",
+      "the bearing failure on the main machine",
+      "a failed machine in the ammonia plant",
+      "rotor and bearing work",
+      "the plant shutdown repair",
+      "the vibration problem the techs found",
+      "getting full tonnage back",
+      "an unplanned overhaul",
+      "the teardown insurance would not cover",
+      "keeping product frozen through the repair",
+      "the machinery overhaul the plant manager requested"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "evaporator_coils",
+     "vendor": "Northgate Coil Works",
+     "memos": [
+      "Evaporator coil replacement — Freezer 3",
+      "Evaporator coil replacement — refrigerant recovery"
+     ],
+     "cross_memo": "Evaporator coil replacement — racking removal",
+     "plain": [
+      "the evaporator coil replacement",
+      "evaporator coil replacement work",
+      "the Freezer 3 evaporator coil replacement"
+     ],
+     "oblique": [
+      "new cooling surfaces in the blast cell",
+      "swapping out the corroded air units",
+      "the leaking fan units",
+      "fixing the frost buildup problem",
+      "the ceiling unit swap",
+      "new air handlers in the deep-cold cell",
+      "the corroded tubing",
+      "new heat exchangers",
+      "the gas capture during the swap",
+      "stopping the ice-up in the low-temp chamber",
+      "the defrost issue on the far side",
+      "a full changeout in one chamber",
+      "the corrosion fix",
+      "the ceiling hardware upgrade",
+      "new fan-and-tube assemblies the auditors flagged",
+      "the airflow upgrade in the minus-twenty chamber"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Electricity & Power",
+   "aliases": [
+    "power",
+    "electricity",
+    "power bill",
+    "electric costs",
+    "utility power"
+   ],
+   "narrative": [
+    "Power",
+    "Electricity",
+    "Electric costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Midland Grid Energy",
+     "base": 28000,
+     "memo": "Electric service — main meter"
+    },
+    {
+     "vendor": "Coldwater Demand Partners",
+     "base": 2100,
+     "memo": "Demand response fee — peak program"
+    }
+   ],
+   "events": [
+    {
+     "key": "transformer_upgrade",
+     "vendor": "Midland Grid Energy",
+     "memos": [
+      "Substation transformer upgrade — install",
+      "Substation transformer upgrade — outage crew"
+     ],
+     "cross_memo": "Substation transformer upgrade — trench excavation",
+     "plain": [
+      "the substation transformer upgrade",
+      "substation transformer upgrade work",
+      "the substation transformer upgrade project"
+     ],
+     "oblique": [
+      "the utility hookup expansion",
+      "bigger incoming capacity for the new freezer wing",
+      "the step-down equipment swap",
+      "beefing up the site's incoming feed",
+      "the high-voltage work",
+      "the utility's equipment charge",
+      "added capacity for the expansion",
+      "the switchgear project",
+      "replacing the overloaded yard equipment",
+      "the hookup the utility required",
+      "higher amperage at the dock side",
+      "the yard switchgear job",
+      "a utility-side capacity charge",
+      "the overdue utility equipment project",
+      "bringing the high-voltage yard up to load",
+      "the work the landlord's engineer pushed for"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "generator_rental",
+     "vendor": "Brightfield Generator Rental",
+     "memos": [
+      "Diesel generator rental — 2MW unit",
+      "Diesel generator rental — fuel delivery"
+     ],
+     "cross_memo": "Diesel generator rental — permit filing",
+     "plain": [
+      "the diesel generator rental",
+      "diesel generator rental costs",
+      "the 2MW diesel generator rental"
+     ],
+     "oblique": [
+      "backup power during the shutdown",
+      "the temporary standby set",
+      "keeping the freezers running through the cutover",
+      "the portable backup",
+      "hired standby capacity",
+      "the temporary power plant in the yard",
+      "emergency backup while the utility worked",
+      "the trailer-mounted backup set",
+      "protecting inventory during the cutover",
+      "the stopgap power source",
+      "temporary on-site power",
+      "the backup the insurer insisted on",
+      "standby equipment for the cutover week",
+      "keeping product frozen during the switchover",
+      "the hired backup",
+      "contingency power for the cold rooms"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Material Handling Equipment",
+   "aliases": [
+    "forklifts",
+    "material handling",
+    "mhe",
+    "lift trucks",
+    "forklift costs"
+   ],
+   "narrative": [
+    "Forklifts",
+    "Material handling",
+    "Lift trucks"
+   ],
+   "recurring": [
+    {
+     "vendor": "Arctic Lift Leasing",
+     "base": 14500,
+     "memo": "Truck lease — 24 units"
+    },
+    {
+     "vendor": "Keystone Battery Supply",
+     "base": 3200,
+     "memo": "Battery service — charging room"
+    }
+   ],
+   "events": [
+    {
+     "key": "mast_repair",
+     "vendor": "Arctic Lift Leasing",
+     "memos": [
+      "Mast assembly repair — hydraulics",
+      "Mast assembly repair — tech hours"
+     ],
+     "cross_memo": "Mast assembly repair — safety inspection",
+     "plain": [
+      "the mast assembly repair",
+      "mast assembly repair work",
+      "the mast assembly repair job"
+     ],
+     "oblique": [
+      "the reach machine breakdown",
+      "a damaged lifting column",
+      "the cylinder leak on the high-bay machine",
+      "fixing the machine that dropped a load",
+      "the warranty-excluded breakdown",
+      "getting the high-bay picker back to work",
+      "the oil leak in the high bay",
+      "a damaged chain and cylinder",
+      "the collision damage on a picker",
+      "the leak the shift lead reported",
+      "restoring a down machine in the freezer aisle",
+      "the picker breakdown",
+      "chains and cylinders",
+      "the downtime fix on the turret machine",
+      "out-of-warranty damage",
+      "keeping the narrow-aisle machines moving"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "impact_sensors",
+     "vendor": "Glacier Fleet Telematics",
+     "memos": [
+      "Impact sensor retrofit — hardware",
+      "Impact sensor retrofit — activation"
+     ],
+     "cross_memo": "Impact sensor retrofit — operator training",
+     "plain": [
+      "the impact sensor retrofit",
+      "impact sensor retrofit costs",
+      "the impact sensor retrofit rollout"
+     ],
+     "oblique": [
+      "collision detection on the machines",
+      "the crash-alert devices",
+      "rack damage prevention gear",
+      "the shock monitors insurers asked for",
+      "new collision alerts",
+      "the bump-tracking program",
+      "driver accountability devices",
+      "cutting rack strikes",
+      "the anti-collision add-ons",
+      "onboard crash detection",
+      "accountability tracking for drivers",
+      "the gadgets that log every bump",
+      "a loss-prevention initiative on the dock",
+      "installing crash detectors across the floor",
+      "fewer racking hits",
+      "the collision-logging rollout"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Sanitation & Pest Control",
+   "aliases": [
+    "sanitation",
+    "pest control",
+    "cleaning",
+    "sanitation costs",
+    "hygiene"
+   ],
+   "narrative": [
+    "Sanitation",
+    "Pest control",
+    "Cleaning"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bluewater Sanitation Group",
+     "base": 6800,
+     "memo": "Nightly cleaning — dock and aisles"
+    },
+    {
+     "vendor": "Sentinel Pest Management",
+     "base": 1900,
+     "memo": "Monthly bait stations — perimeter"
+    }
+   ],
+   "events": [
+    {
+     "key": "rodent_exclusion",
+     "vendor": "Sentinel Pest Management",
+     "memos": [
+      "Rodent exclusion sealing — materials",
+      "Rodent exclusion sealing — labor"
+     ],
+     "cross_memo": "Rodent exclusion sealing — door seals",
+     "plain": [
+      "the rodent exclusion sealing",
+      "rodent exclusion sealing work",
+      "the rodent exclusion sealing job"
+     ],
+     "oblique": [
+      "keeping mice out",
+      "the mouse problem in the freezer wing",
+      "closing gaps the auditor flagged",
+      "plugging entry points in the building envelope",
+      "the critter-proofing job",
+      "the audit finding on gaps at the bays",
+      "fixing the rat issue",
+      "a food-safety audit corrective action",
+      "blocking wall penetrations",
+      "the infestation response",
+      "the gap-filling work around the loading bays",
+      "mouse-proofing",
+      "what the customer's auditor demanded",
+      "the SQF corrective action",
+      "stopping the vermin coming in",
+      "the building-envelope fix"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "drain_jetting",
+     "vendor": "Purecore Drain Specialists",
+     "memos": [
+      "Floor drain jetting — trench lines",
+      "Floor drain jetting — camera survey"
+     ],
+     "cross_memo": "Floor drain jetting — disposal haul",
+     "plain": [
+      "the floor drain jetting",
+      "floor drain jetting work",
+      "the floor drain jetting job"
+     ],
+     "oblique": [
+      "clearing the blocked sewers under the slab",
+      "the backed-up wastewater",
+      "flooding in the wash-down area",
+      "pipe flushing under the slab",
+      "the standing water problem",
+      "high-pressure flushing",
+      "the clogged outlets",
+      "the ice buildup from pooling water",
+      "unblocking the wastewater system",
+      "a sewer backup",
+      "the inspection of underground pipes",
+      "the wash-down overflow",
+      "flushing out years of grease",
+      "the plumbing emergency",
+      "the clog the night shift found",
+      "removing sludge from the pipes"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Pallets & Packaging",
+   "aliases": [
+    "pallets",
+    "packaging",
+    "pallet costs",
+    "wrap and pallets",
+    "packaging supplies"
+   ],
+   "narrative": [
+    "Pallets",
+    "Packaging",
+    "Pallet costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Timberline Pallet Exchange",
+     "base": 9500,
+     "memo": "Pallet rental — pooled program"
+    },
+    {
+     "vendor": "Northwind Wrap Supply",
+     "base": 4300,
+     "memo": "Stretch film — hand rolls"
+    }
+   ],
+   "events": [
+    {
+     "key": "ispm_export",
+     "vendor": "Timberline Pallet Exchange",
+     "memos": [
+      "ISPM export batch — heat-treated stock",
+      "ISPM export batch — stamping"
+     ],
+     "cross_memo": "ISPM export batch — fumigation certificate",
+     "plain": [
+      "the ISPM export batch",
+      "ISPM export batch costs",
+      "the ISPM export batch order"
+     ],
+     "oblique": [
+      "the overseas shipment requirements",
+      "kiln-dried skids for an international customer",
+      "phytosanitary compliance",
+      "skids that meet foreign rules",
+      "the international seafood account's demands",
+      "a one-time overseas job",
+      "compliant platforms for the Asia lane",
+      "customs-ready skids",
+      "the offshore customer's requirements",
+      "special skids for a cross-border load",
+      "pest-free wood for abroad",
+      "the outbound container job",
+      "certified wooden platforms",
+      "meeting import rules overseas",
+      "kiln-dried wood",
+      "the international customer's skid spec"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "thermal_blankets",
+     "vendor": "Coldseal Liner Co",
+     "memos": [
+      "Thermal blanket order — 400 covers",
+      "Thermal blanket order — freight"
+     ],
+     "cross_memo": "Thermal blanket order — storage cage",
+     "plain": [
+      "the thermal blanket order",
+      "thermal blanket order costs",
+      "the 400-piece thermal blanket order"
+     ],
+     "oblique": [
+      "insulating loads on the dock",
+      "quilts for temperature-sensitive loads",
+      "protecting product during cross-docking",
+      "insulated quilts",
+      "keeping pharma loads cold on the apron",
+      "temperature protection gear",
+      "a new pharmaceutical client's requirements",
+      "the insulation kits",
+      "cold-chain protection for the pharma account",
+      "reusable insulating quilts",
+      "padding for chilled loads",
+      "what the vaccine customer required",
+      "dock-side temperature protection",
+      "the quilted shrouds",
+      "excursion prevention gear",
+      "keeping loads within spec on the apron"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Insurance",
+   "aliases": [
+    "insurance",
+    "premiums",
+    "insurance premiums",
+    "coverage costs",
+    "policy costs"
+   ],
+   "narrative": [
+    "Insurance",
+    "Premiums",
+    "Insurance premiums"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborline Mutual",
+     "base": 12000,
+     "memo": "Property policy — installment"
+    },
+    {
+     "vendor": "Keel & Ash Brokers",
+     "base": 1500,
+     "memo": "Broker fee — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "spoilage_endorsement",
+     "vendor": "Harborline Mutual",
+     "memos": [
+      "Spoilage endorsement — midterm premium",
+      "Spoilage endorsement — rating adjustment"
+     ],
+     "cross_memo": "Spoilage endorsement — sensor survey",
+     "plain": [
+      "the spoilage endorsement",
+      "spoilage endorsement charges",
+      "the midterm spoilage endorsement"
+     ],
+     "oblique": [
+      "extra cover for thawed inventory",
+      "the add-on the new customer demanded",
+      "stock-throughput cover",
+      "protection against temperature excursions",
+      "the mid-year coverage bump",
+      "a bigger insured limit for stored goods",
+      "contamination cover",
+      "the coverage extension for customer inventory",
+      "higher limits after the new contract",
+      "insuring goods in our custody",
+      "the coverage expansion",
+      "cover for breakdown-related thaw",
+      "the pro-rated mid-year charge",
+      "an expanded cover for frozen inventory",
+      "the underwriter's surcharge",
+      "goods-in-custody cover the lender required"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "ammonia_claim",
+     "vendor": "Ridgemark Loss Consultants",
+     "memos": [
+      "Ammonia release claim — deductible",
+      "Ammonia release claim — loss assessment"
+     ],
+     "cross_memo": "Ammonia release claim — product disposal",
+     "plain": [
+      "the ammonia release claim",
+      "ammonia release claim costs",
+      "the deductible on the ammonia release claim"
+     ],
+     "oblique": [
+      "the leak incident",
+      "our share of the gas incident",
+      "the out-of-pocket hit from the spill",
+      "the self-insured portion of the incident",
+      "paying the retention on the leak",
+      "the hazmat incident in the engine house",
+      "the gas escape in the machine room",
+      "condemned inventory from the leak",
+      "our retention on the incident",
+      "the spill aftermath",
+      "the uninsured part of the leak",
+      "the evacuation incident",
+      "cleanup from the gas leak",
+      "the accident in the compressor area",
+      "the hazmat event",
+      "the retention on the leak the fire department attended"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Software & Systems",
+   "aliases": [
+    "software",
+    "wms",
+    "systems",
+    "software subscriptions",
+    "it systems"
+   ],
+   "narrative": [
+    "Software",
+    "Systems",
+    "Software subscriptions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stackwise WMS Inc",
+     "base": 7800,
+     "memo": "WMS subscription — 60 seats"
+    },
+    {
+     "vendor": "Kelvin Track Cloud",
+     "base": 2400,
+     "memo": "Temperature logging — SaaS tier"
+    }
+   ],
+   "events": [
+    {
+     "key": "dock_scheduling",
+     "vendor": "Stackwise WMS Inc",
+     "memos": [
+      "Dock scheduling module — license",
+      "Dock scheduling module — configuration"
+     ],
+     "cross_memo": "Dock scheduling module — handheld scanners",
+     "plain": [
+      "the dock scheduling module",
+      "dock scheduling module fees",
+      "the dock scheduling module rollout"
+     ],
+     "oblique": [
+      "the appointment booking add-on",
+      "letting truckers book their own slots",
+      "the yard appointment tool",
+      "cutting detention charges at the doors",
+      "a booking portal for inbound loads",
+      "the slot-booking rollout",
+      "fixing the morning truck pileups",
+      "the appointment system",
+      "a new booking feature",
+      "self-service slot reservations",
+      "the add-on the transport team asked for",
+      "reducing wait times for drivers",
+      "inbound appointment booking",
+      "the receiving calendar tool",
+      "a feature to stop trucks queueing outside",
+      "the yard flow upgrade"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "edi_mapping",
+     "vendor": "Bitlane Integration Partners",
+     "memos": [
+      "EDI mapping project — carrier onboarding",
+      "EDI mapping project — testing"
+     ],
+     "cross_memo": "EDI mapping project — overtime",
+     "plain": [
+      "the EDI mapping project",
+      "EDI mapping project fees",
+      "the EDI mapping project work"
+     ],
+     "oblique": [
+      "connecting the new customer's systems",
+      "electronic order exchange setup",
+      "the trading partner connections",
+      "hooking up the grocery chain's ordering",
+      "data feeds for the new retailer",
+      "the order message setup",
+      "linking our systems to the shipper's",
+      "automated order intake",
+      "the retailer's electronic ordering requirement",
+      "wiring up the new account",
+      "outside developers",
+      "the interface build",
+      "electronic advance ship notices",
+      "connections the new shipper required",
+      "the transaction-set work",
+      "getting the new account's orders flowing"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Dock & Door Maintenance",
+   "aliases": [
+    "dock doors",
+    "door maintenance",
+    "dock equipment",
+    "doors",
+    "dock and door costs"
+   ],
+   "narrative": [
+    "Dock doors",
+    "Door maintenance",
+    "Dock equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironbay Door Systems",
+     "base": 5200,
+     "memo": "Door PM — monthly visit"
+    },
+    {
+     "vendor": "Coastal Leveler Service",
+     "base": 1800,
+     "memo": "Leveler inspection — quarterly prorate"
+    }
+   ],
+   "events": [
+    {
+     "key": "rapid_roll",
+     "vendor": "Ironbay Door Systems",
+     "memos": [
+      "Rapid-roll curtain — panel",
+      "Rapid-roll curtain — motor"
+     ],
+     "cross_memo": "Rapid-roll curtain — electrician",
+     "plain": [
+      "the rapid-roll curtain",
+      "rapid-roll curtain work",
+      "the rapid-roll curtain replacement"
+     ],
+     "oblique": [
+      "the fast-acting freezer entrance",
+      "fixing the torn barrier on the blast freezer",
+      "the forklift strike on the freezer opening",
+      "the fabric that got ripped by a lift truck",
+      "replacing the damaged fast-cycle opening",
+      "stopping cold air loss at the freezer entrance",
+      "the collision damage at the freezer opening",
+      "the torn fabric",
+      "the drive unit burnout",
+      "a busted freezer entry",
+      "repairs at the freezer threshold",
+      "the frost-up at the freezer entrance",
+      "a damaged high-cycle opening",
+      "the operations manager's urgent fix",
+      "restoring the air barrier",
+      "the freezer entry breakdown"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "inflatable_shelters",
+     "vendor": "Seawall Shelter Co",
+     "memos": [
+      "Inflatable shelter install — bays 4-6",
+      "Inflatable shelter install — blowers"
+     ],
+     "cross_memo": "Inflatable shelter install — dock bumper",
+     "plain": [
+      "the inflatable shelter install",
+      "inflatable shelter install costs",
+      "the inflatable shelter install project"
+     ],
+     "oblique": [
+      "sealing the gaps around trailers",
+      "new trailer seals at the loading face",
+      "cutting condensation at the loading positions",
+      "stopping warm air from getting in during loading",
+      "the trailer-interface upgrade",
+      "energy savings on the loading face",
+      "the air-tight trailer connections",
+      "ice buildup prevention at the loading face",
+      "the condensation fix",
+      "better trailer interfaces",
+      "the upgrade the energy audit recommended",
+      "cushioned trailer seals",
+      "weatherproofing the loading positions",
+      "the frost-control project",
+      "keeping humidity off the loading face",
+      "new seals at three loading positions"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  }
+ ],
+ "author": "claude-opus-5-5"
+}

@@ -1,0 +1,828 @@
+{
+ "slug": "property-management-company",
+ "industry": "property management company",
+ "entities": [
+  "Harborline Property Management",
+  "Cedarvale Residential Partners",
+  "Northfield Asset Managers",
+  "Bluestone Realty Operations",
+  "Maplecrest Building Services"
+ ],
+ "accounts": [
+  {
+   "name": "Building Repairs",
+   "aliases": [
+    "building repairs",
+    "repairs",
+    "r&m",
+    "upkeep costs",
+    "r&m spend"
+   ],
+   "narrative": [
+    "Building repairs",
+    "Repairs",
+    "Upkeep costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightline Plumbing Supply",
+     "base": 4200,
+     "memo": "Inv monthly plumbing parts"
+    },
+    {
+     "vendor": "Keystone HVAC Mnt",
+     "base": 6800,
+     "memo": "Svc HVAC filter change"
+    },
+    {
+     "vendor": "Ridgeway Handyman Crew",
+     "base": 3100,
+     "memo": "Svc work orders tickets"
+    }
+   ],
+   "events": [
+    {
+     "key": "chiller",
+     "vendor": "Keystone HVAC Mnt",
+     "memos": [
+      "Rooftop chiller replacement — crane lift",
+      "Rooftop chiller replacement — unit install"
+     ],
+     "cross_memo": "Rooftop chiller replacement — temporary cooling rental",
+     "plain": [
+      "the rooftop chiller replacement",
+      "the rooftop chiller replacement bill",
+      "rooftop chiller replacement costs"
+     ],
+     "oblique": [
+      "the air conditioning machine swap",
+      "tenant heat complaints",
+      "swapping out the failed climate plant",
+      "a big mechanical equipment purchase",
+      "the capital item the engineers recommended",
+      "new machinery for tower B",
+      "keeping offices comfortable after a breakdown",
+      "end of life equipment",
+      "the twenty year old machine finally quitting",
+      "emergency mechanical effort on the top deck",
+      "lease-mandated temperature compliance",
+      "what the engineer flagged at inspection",
+      "the big-ticket mechanical item",
+      "tower B comfort fix",
+      "swapping out a dead air handler",
+      "the major equipment failure"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "parapet",
+     "vendor": "Orrin Waterproofing Ltd",
+     "memos": [
+      "Parapet flashing rebuild — mason labor",
+      "Parapet flashing rebuild — sealant"
+     ],
+     "cross_memo": "Parapet flashing rebuild — scaffold permit",
+     "plain": [
+      "the parapet flashing rebuild",
+      "the parapet flashing rebuild project",
+      "parapet flashing rebuild costs"
+     ],
+     "oblique": [
+      "leak stoppage at the top edge of tower A",
+      "water coming in during storms",
+      "the tenant flooding complaints",
+      "keeping rain out of the upper floors",
+      "an envelope repair on the east side",
+      "fixing the weather barrier",
+      "insurer-requested envelope fixes",
+      "stopping ceiling stains",
+      "damage from the winter storms",
+      "the exterior wall job",
+      "a leak claim follow-up",
+      "the wet ceiling tiles on floor nine",
+      "exterior care on the older tower",
+      "overdue edge repairs",
+      "water intrusion",
+      "the leaky corner"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Elevator & Life Safety",
+   "aliases": [
+    "elevators",
+    "elevator costs",
+    "life safety",
+    "safety systems"
+   ],
+   "narrative": [
+    "Elevator costs",
+    "Life safety",
+    "Safety systems"
+   ],
+   "recurring": [
+    {
+     "vendor": "Halvorsen Lift Service",
+     "base": 9500,
+     "memo": "Qtr traction maintenance contract"
+    },
+    {
+     "vendor": "Pinnacle Fire Alarm Monitoring",
+     "base": 3800,
+     "memo": "Mnt panel monitoring"
+    },
+    {
+     "vendor": "Safeguard Extinguisher Co",
+     "base": 1400,
+     "memo": "Svc annual tags"
+    }
+   ],
+   "events": [
+    {
+     "key": "sprinkler",
+     "vendor": "Pinnacle Fire Alarm Monitoring",
+     "memos": [
+      "Sprinkler riser retrofit — backflow valves",
+      "Sprinkler riser retrofit — pipe fittings"
+     ],
+     "cross_memo": "Sprinkler riser retrofit — water shutoff fee",
+     "plain": [
+      "the sprinkler riser retrofit",
+      "the sprinkler riser retrofit project",
+      "sprinkler riser retrofit costs"
+     ],
+     "oblique": [
+      "the city-ordered code upgrade",
+      "bringing the garage into compliance",
+      "what the marshal cited",
+      "the inspection violation cleanup",
+      "mandated upgrade to the old standpipe network",
+      "a deadline from the municipality",
+      "tower C compliance push",
+      "an insurer recommendation we finally acted on",
+      "overhauling the aging pump room",
+      "the code citation",
+      "required safety improvement in the basement",
+      "the suppression infrastructure upgrade",
+      "new hardware on every floor",
+      "the one-time compliance bill",
+      "an overdue regulatory fix",
+      "getting the certificate of occupancy renewed"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "cabrefit",
+     "vendor": "Vantage Cab Modernization",
+     "memos": [
+      "Cab interior refurbishment — wall cladding",
+      "Cab interior refurbishment — flooring"
+     ],
+     "cross_memo": "Cab interior refurbishment — lobby signage",
+     "plain": [
+      "the cab interior refurbishment",
+      "the cab interior refurbishment project",
+      "cab interior refurbishment costs"
+     ],
+     "oblique": [
+      "a cosmetic upgrade riders will notice",
+      "the appearance project in tower A",
+      "complaints about scuffed finishes",
+      "tenant request for a fresher look",
+      "a leasing-driven refresh",
+      "new finishes for the vertical transport",
+      "the high-traffic passenger cars",
+      "brightening the ride for visitors",
+      "a marketing push for the flagship building",
+      "the glossy upgrade",
+      "decor refresh",
+      "an aesthetic overhaul requested by ownership",
+      "improving first impressions",
+      "the one-time beautification item",
+      "new surfaces for tower B cars",
+      "owner-approved cosmetic spend"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Grounds & Landscaping",
+   "aliases": [
+    "grounds",
+    "landscaping",
+    "grounds upkeep",
+    "lawn and garden costs"
+   ],
+   "narrative": [
+    "Grounds",
+    "Landscaping",
+    "Grounds upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenfield Lawn Crew",
+     "base": 7200,
+     "memo": "Svc mowing edging"
+    },
+    {
+     "vendor": "Northgate Snow Removal",
+     "base": 5400,
+     "memo": "Svc plowing salting retainer"
+    },
+    {
+     "vendor": "Fernhill Irrigation Mnt",
+     "base": 1900,
+     "memo": "Inv irrigation zone checks"
+    }
+   ],
+   "events": [
+    {
+     "key": "felling",
+     "vendor": "Greenfield Lawn Crew",
+     "memos": [
+      "Oak canopy felling — stump grinding",
+      "Oak canopy felling — bucket truck"
+     ],
+     "cross_memo": "Oak canopy felling — fence repair",
+     "plain": [
+      "the oak canopy felling",
+      "the oak canopy felling job",
+      "oak canopy felling costs"
+     ],
+     "oblique": [
+      "big tree trouble after the windstorm",
+      "storm damage to mature trees",
+      "dangerous limbs over the walkway",
+      "an arborist's recommendation",
+      "clearing fallen timber",
+      "insurance-required hazard cleanup",
+      "the old trees by the entrance",
+      "cutting down diseased giants",
+      "the cleanup after the gale",
+      "safety work near the playground",
+      "a resident complaint about branches",
+      "emergency tree team callout",
+      "timber hauled off site",
+      "the downed tree incident",
+      "hazard abatement on the east side",
+      "taking down the dead hardwoods"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "pavers",
+     "vendor": "Tamarack Hardscape Studio",
+     "memos": [
+      "Courtyard paver reset — sand base",
+      "Courtyard paver reset — edge restraint"
+     ],
+     "cross_memo": "Courtyard paver reset — trip claim settlement",
+     "plain": [
+      "the courtyard paver reset",
+      "the courtyard paver reset project",
+      "courtyard paver reset costs"
+     ],
+     "oblique": [
+      "uneven walkways that hurt a resident",
+      "the liability scare near the entrance",
+      "levelling the sunken stone surfaces",
+      "a pedestrian safety fix",
+      "heaved paving on the plaza",
+      "after the insurer's letter about walkways",
+      "the plaza repair",
+      "the amenity area facelift",
+      "ADA path corrections",
+      "making the pathways flat again",
+      "an accessibility complaint",
+      "frost heave damage",
+      "relaying the entrance surface",
+      "resident fall follow-up",
+      "outdoor surface remediation",
+      "the pedestrian area redo"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Janitorial & Cleaning",
+   "aliases": [
+    "janitorial",
+    "cleaning",
+    "custodial",
+    "janitorial spend",
+    "cleaning contracts"
+   ],
+   "narrative": [
+    "Janitorial",
+    "Custodial",
+    "Cleaning contracts"
+   ],
+   "recurring": [
+    {
+     "vendor": "BrightPath Custodial Co",
+     "base": 14000,
+     "memo": "Svc nightly suite cleaning"
+    },
+    {
+     "vendor": "Clearview Window Washers",
+     "base": 2600,
+     "memo": "Mnt glass exterior wash"
+    },
+    {
+     "vendor": "Sanitrex Supply",
+     "base": 2100,
+     "memo": "Inv restroom consumables"
+    }
+   ],
+   "events": [
+    {
+     "key": "norovirus",
+     "vendor": "Sanitrex Supply",
+     "memos": [
+      "Norovirus response protocol — disinfectant fogging",
+      "Norovirus response protocol — extra PPE"
+     ],
+     "cross_memo": "Norovirus response protocol — tenant notice mailing",
+     "plain": [
+      "the norovirus response protocol",
+      "the norovirus response protocol bill",
+      "norovirus response protocol costs"
+     ],
+     "oblique": [
+      "the stomach bug outbreak",
+      "an illness scare in the atrium",
+      "health department guidance",
+      "deep sanitizing after sick occupants",
+      "the contagion cleanup",
+      "elevated hygiene measures",
+      "emergency germ-killing visits",
+      "the infection scare at tower B",
+      "protective gear purchases",
+      "the sickness incident",
+      "outbreak handling",
+      "a public health episode",
+      "decontamination of shared areas",
+      "hospital-grade treatment of common spaces",
+      "the virus situation",
+      "the flu-like wave among residents"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "marble",
+     "vendor": "Meridian Floor Restoration",
+     "memos": [
+      "Marble honing polish — diamond pads",
+      "Marble honing polish — slurry disposal"
+     ],
+     "cross_memo": "Marble honing polish — lobby closure signage",
+     "plain": [
+      "the marble honing polish",
+      "the marble honing polish job",
+      "marble honing polish costs"
+     ],
+     "oblique": [
+      "restoring the entrance stonework",
+      "scuffed surfaces that tenants noticed",
+      "a once-a-decade refinishing job",
+      "the grand foyer facelift",
+      "making the main hall gleam",
+      "ownership's request before the open house",
+      "a cosmetic fix for worn stone",
+      "the reflective surface project",
+      "mirror-like finish work",
+      "revitalizing the ground-level stone",
+      "prep for the leasing tour",
+      "heavy-traffic wear repair",
+      "overnight stone grinding",
+      "the lustre project",
+      "tenant comments about dingy entrance areas",
+      "the sparkle upgrade"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Common Area Utilities",
+   "aliases": [
+    "utilities",
+    "common area utilities",
+    "house meter costs",
+    "power and water",
+    "utility bills"
+   ],
+   "narrative": [
+    "Utilities",
+    "Common area utilities",
+    "Power and water"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lakeshore Electric Cooperative",
+     "base": 11000,
+     "memo": "Inv house meter electricity"
+    },
+    {
+     "vendor": "Tri-County Water Authority",
+     "base": 6000,
+     "memo": "Svc water sewer"
+    },
+    {
+     "vendor": "Summit Gas Utility",
+     "base": 2800,
+     "memo": "Inv boiler gas"
+    }
+   ],
+   "events": [
+    {
+     "key": "demand",
+     "vendor": "Lakeshore Electric Cooperative",
+     "memos": [
+      "Demand ratchet charge — peak kW reset",
+      "Demand ratchet charge — tariff adjustment"
+     ],
+     "cross_memo": "Demand ratchet charge — submeter audit",
+     "plain": [
+      "the demand ratchet charge",
+      "the demand ratchet charge item",
+      "demand ratchet charge billing"
+     ],
+     "oblique": [
+      "that one brutal afternoon of usage",
+      "everything running at once on a hot day",
+      "the penalty rate we are locked into",
+      "the annual billing hangover",
+      "a surge in consumption",
+      "high load on the rate schedule",
+      "the provider's punitive pricing tier",
+      "air conditioners all running at once",
+      "the eleven month penalty",
+      "an expensive spike in usage",
+      "what the rate structure does to us after a hot spell",
+      "capacity fees",
+      "the extreme weather hit",
+      "the extra fees carried forward",
+      "overuse at one moment",
+      "a bad day on the grid"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "mainbreak",
+     "vendor": "Kestrel Leak Detection",
+     "memos": [
+      "Underground main break — excavation",
+      "Underground main break — pipe clamp"
+     ],
+     "cross_memo": "Underground main break — street patching",
+     "plain": [
+      "the underground main break",
+      "the underground main break repair",
+      "underground main break costs"
+     ],
+     "oblique": [
+      "a burst line under the parking area",
+      "the gushing under the lot",
+      "a huge unexplained consumption jump",
+      "the city's notice about lost volume",
+      "digging up the driveway",
+      "an emergency plumber callout",
+      "unusually high usage readings for weeks",
+      "the flooding on the lower level",
+      "a hidden failure in buried infrastructure",
+      "a pavement-side emergency",
+      "the sinkhole scare",
+      "a gusher nobody saw for weeks",
+      "the supply-side rupture",
+      "mid-winter emergency repair",
+      "the tenant complaint about low pressure",
+      "restoring service to the campus"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Unit Turnover",
+   "aliases": [
+    "turnover",
+    "make-ready",
+    "unit turns",
+    "turn costs",
+    "vacancy prep"
+   ],
+   "narrative": [
+    "Turnover",
+    "Make-ready",
+    "Unit turns"
+   ],
+   "recurring": [
+    {
+     "vendor": "Fresh Coat Painters",
+     "base": 8500,
+     "memo": "Svc unit paint"
+    },
+    {
+     "vendor": "Loomwright Flooring",
+     "base": 5200,
+     "memo": "Inv carpet vinyl"
+    },
+    {
+     "vendor": "Doorstep Appliance Parts",
+     "base": 2400,
+     "memo": "Inv appliance repair parts"
+    }
+   ],
+   "events": [
+    {
+     "key": "ranges",
+     "vendor": "Doorstep Appliance Parts",
+     "memos": [
+      "Stainless range upgrade — oven units",
+      "Stainless range upgrade — bulk order"
+     ],
+     "cross_memo": "Stainless range upgrade — freight delivery",
+     "plain": [
+      "the stainless range upgrade",
+      "the stainless range upgrade program",
+      "stainless range upgrade costs"
+     ],
+     "oblique": [
+      "modernizing kitchens to win higher rents",
+      "premium finishes for leasing",
+      "the renter-appeal program",
+      "new cooking equipment across floors",
+      "an owner-approved amenity push",
+      "kitchen refresh in vacant homes",
+      "chasing rent growth",
+      "competitive pressure from the new building next door",
+      "the shiny-appliance initiative",
+      "better kitchens for incoming tenants",
+      "a capital project in the apartments",
+      "swapping out the old almond-colored cookers",
+      "the premium-package rollout",
+      "kitchen modernization",
+      "a leasing-team request",
+      "the value-add plan"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "mold",
+     "vendor": "Gantry Environmental",
+     "memos": [
+      "Mold abatement — containment barriers",
+      "Mold abatement — air scrubbers"
+     ],
+     "cross_memo": "Mold abatement — tenant relocation hotel",
+     "plain": [
+      "the mold abatement",
+      "the mold abatement project",
+      "mold abatement costs"
+     ],
+     "oblique": [
+      "fungus in the bathroom walls",
+      "health complaints from a resident",
+      "the moisture problem in building C",
+      "a damp apartment that sat empty",
+      "a lab result that failed",
+      "cleanup after the leaky pipe",
+      "the black spore discovery",
+      "putting a family up elsewhere",
+      "an unexpected hazard behind drywall",
+      "a lawsuit-avoidance measure",
+      "remediation of a flooded bathroom",
+      "the insurer-reviewed contamination case",
+      "sealing off the affected rooms",
+      "a wet-wall surprise at move-out inspection",
+      "unsafe living conditions finding",
+      "the spore cleanup"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Property Insurance",
+   "aliases": [
+    "insurance",
+    "property insurance",
+    "premiums",
+    "coverage costs",
+    "risk spend"
+   ],
+   "narrative": [
+    "Insurance",
+    "Premiums",
+    "Coverage costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Atlas Mutual Underwriters",
+     "base": 18000,
+     "memo": "Inv premium installment package policy"
+    },
+    {
+     "vendor": "Crestline Liability Brokers",
+     "base": 7500,
+     "memo": "Inv GL umbrella premium"
+    },
+    {
+     "vendor": "Harbor Risk Advisors",
+     "base": 2500,
+     "memo": "Svc broker fee loss runs"
+    }
+   ],
+   "events": [
+    {
+     "key": "hail",
+     "vendor": "Crestline Liability Brokers",
+     "memos": [
+      "Hailstorm claim deductible — roof damage",
+      "Hailstorm claim deductible — adjuster visit"
+     ],
+     "cross_memo": "Hailstorm claim deductible — glazing replacement",
+     "plain": [
+      "the hailstorm claim deductible",
+      "the hailstorm claim deductible amount",
+      "hailstorm claim deductible costs"
+     ],
+     "oblique": [
+      "our out-of-pocket on the storm event",
+      "the self-insured retention we absorbed",
+      "ice pellets pounding the tower",
+      "what the carrier left us to pay",
+      "the weather event last spring",
+      "cost-sharing on the big payout",
+      "the amount below the coverage threshold",
+      "the bad weather settlement",
+      "uninsured portion of the casualty",
+      "retained exposure on the recent catastrophe",
+      "damaged shingles",
+      "the first dollars of the recovery",
+      "the carrier's required copay",
+      "pellet impact",
+      "insured event we partly funded",
+      "skylight and siding casualties"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "thermography",
+     "vendor": "Pelham Inspection Labs",
+     "memos": [
+      "Wiring thermography survey — panel scans",
+      "Wiring thermography survey — infrared report"
+     ],
+     "cross_memo": "Wiring thermography survey — electrician callback",
+     "plain": [
+      "the wiring thermography survey",
+      "the wiring thermography survey item",
+      "wiring thermography survey costs"
+     ],
+     "oblique": [
+      "a condition the carrier required to renew",
+      "heat-camera checks of the breaker rooms",
+      "preventing fires in old buildings",
+      "a renewal prerequisite",
+      "the carrier's safety request",
+      "pre-renewal testing",
+      "a hot-spot hunt in the basements",
+      "a check demanded by our insurer's engineer",
+      "preventive diagnostics",
+      "finding overheated connections",
+      "the condition set by our renewal reviewer",
+      "looking for faults before they ignite",
+      "a one-time diagnostic sweep",
+      "keeping our rates from rising",
+      "the building safety assessment",
+      "proof of safe systems for the carrier"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Software & Licenses",
+   "aliases": [
+    "software",
+    "software licenses",
+    "saas",
+    "tech subscriptions",
+    "systems spend"
+   ],
+   "narrative": [
+    "Software",
+    "Software licenses",
+    "Tech subscriptions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Rentalytix Platform",
+     "base": 9000,
+     "memo": "Inv property accounting seats"
+    },
+    {
+     "vendor": "Portalwave Tenant Portal",
+     "base": 3500,
+     "memo": "Inv resident app hosting"
+    },
+    {
+     "vendor": "Cobalt Endpoint Security",
+     "base": 1800,
+     "memo": "Mnt device protection"
+    }
+   ],
+   "events": [
+    {
+     "key": "conversion",
+     "vendor": "Rentalytix Platform",
+     "memos": [
+      "Ledger data conversion — legacy export",
+      "Ledger data conversion — mapping sprint"
+     ],
+     "cross_memo": "Ledger data conversion — temp contractor",
+     "plain": [
+      "the ledger data conversion",
+      "the ledger data conversion project",
+      "ledger data conversion costs"
+     ],
+     "oblique": [
+      "moving the old records into the new system",
+      "the switchover project",
+      "onboarding fees for the new modules",
+      "implementation help",
+      "transferring history from the old vendor",
+      "the cutover weekend",
+      "getting books to balance after the move",
+      "one-time setup charges",
+      "the migration",
+      "bringing in consultants to import files",
+      "reconciling imported balances",
+      "retiring the old bookkeeping engine",
+      "the go-live effort",
+      "launch support for the upgrade",
+      "cleaning up historical numbers",
+      "the big systems change"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "breach",
+     "vendor": "Sentinel Incident Response",
+     "memos": [
+      "Breach forensic review — log analysis",
+      "Breach forensic review — credential reset"
+     ],
+     "cross_memo": "Breach forensic review — counsel retainer",
+     "plain": [
+      "the breach forensic review",
+      "the breach forensic review bill",
+      "breach forensic review costs"
+     ],
+     "oblique": [
+      "the phishing attack on the finance team",
+      "hackers getting into mailboxes",
+      "an intrusion discovered by the bank",
+      "the stolen passwords episode",
+      "the digital break-in cleanup",
+      "our insurer-appointed investigators",
+      "notifying affected renters",
+      "the compromised mailbox situation",
+      "outside experts hired after the hack",
+      "a wire fraud attempt",
+      "unauthorized access to owner files",
+      "the one thing nobody wanted to happen",
+      "post-attack investigation",
+      "emergency IT experts on call",
+      "the cyber event",
+      "regulatory notification work"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

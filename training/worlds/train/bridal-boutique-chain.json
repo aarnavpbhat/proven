@@ -1,0 +1,825 @@
+{
+ "slug": "bridal-boutique-chain",
+ "industry": "bridal boutique chain",
+ "entities": [
+  "Veiled Lane Bridal Group",
+  "Silk and Sterling Bridal Co",
+  "Tulle & Thistle Boutiques",
+  "Ivory Aisle Collective",
+  "Gilded Hem Bridal Holdings"
+ ],
+ "accounts": [
+  {
+   "name": "Gown Alterations Labor",
+   "aliases": [
+    "alterations",
+    "alteration labor",
+    "seamstress costs",
+    "fitting room labor",
+    "tailoring spend"
+   ],
+   "narrative": [
+    "Alterations",
+    "Alteration labor",
+    "Tailoring spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Needlepoint Tailoring Studio",
+     "base": 14500,
+     "memo": "Contract seamstress hours - Scottsdale store"
+    },
+    {
+     "vendor": "Hemline Atelier Services",
+     "base": 9800,
+     "memo": "Hem and bustle work - Denver store"
+    },
+    {
+     "vendor": "Stitchwell Staffing",
+     "base": 6200,
+     "memo": "Part-time fitter wages - Austin store"
+    }
+   ],
+   "events": [
+    {
+     "key": "pearlbeading",
+     "vendor": "Needlepoint Tailoring Studio",
+     "memos": [
+      "Hand pearl beading rework - Scottsdale couture line",
+      "Hand pearl beading rework - bodice restoration batch"
+     ],
+     "cross_memo": "Hand pearl beading rework - loose pearl supplies",
+     "plain": [
+      "the hand pearl beading rework",
+      "the pearl beading rework batch",
+      "the hand pearl beading project"
+     ],
+     "oblique": [
+      "restoring the damaged embellishments on the flagship collection",
+      "a one-time repair push on ornate bodices",
+      "the salvage job for gowns that arrived defective",
+      "delicate handwork on the premium line",
+      "fixing the sparkle detailing",
+      "rescue of a shipment that came in flawed",
+      "extra craftsmanship on high-end pieces",
+      "the cleanup after a supplier quality problem",
+      "specialist needlework for the showpiece dresses",
+      "remedial decoration repairs",
+      "a backlog of embellishment fixes",
+      "bespoke restoration of designer inventory",
+      "the fix for gowns shedding their decorations",
+      "emergency detail repairs before the spring season",
+      "reworking the ornate front panels",
+      "salvaging expensive stock"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "gownrecall",
+     "vendor": "Rosewater Couture Finishing",
+     "memos": [
+      "Silhouette recall fixes - Portland store lace panels",
+      "Silhouette recall fixes - Charlotte store zipper replacement"
+     ],
+     "cross_memo": "Silhouette recall fixes - courier returns to designer",
+     "plain": [
+      "the silhouette recall fixes",
+      "the silhouette recall program",
+      "the silhouette recall panel work"
+     ],
+     "oblique": [
+      "correcting a manufacturer's sizing mistake",
+      "the remedial program for a faulty production run",
+      "repairs ordered after the designer admitted an error",
+      "unwinding a bad batch of delivered dresses",
+      "mass corrections across several locations",
+      "work the supplier agreed to reimburse later",
+      "the cleanup after mislabeled measurements",
+      "fixing every unit from one defective lot",
+      "a company-wide corrective effort",
+      "the retrofit of seams that were cut wrong",
+      "rescue work on mis-sized orders",
+      "one-time correction of shipped inventory",
+      "putting right what the factory got wrong",
+      "remedial tailoring for brides already measured",
+      "the batch that needed reconstruction",
+      "setting right a production flaw"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Bridal Salon Rent",
+   "aliases": [
+    "rent",
+    "salon rent",
+    "store rent",
+    "lease costs",
+    "occupancy"
+   ],
+   "narrative": [
+    "Rent",
+    "Salon rent",
+    "Occupancy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lakeshore Retail Properties",
+     "base": 28000,
+     "memo": "Monthly base rent - Chicago flagship"
+    },
+    {
+     "vendor": "Crestview Mall Holdings",
+     "base": 19500,
+     "memo": "Monthly base rent - Atlanta mall salon"
+    },
+    {
+     "vendor": "Parkside Plaza LLC",
+     "base": 12500,
+     "memo": "Monthly base rent - Nashville boutique"
+    }
+   ],
+   "events": [
+    {
+     "key": "camreconcile",
+     "vendor": "Lakeshore Retail Properties",
+     "memos": [
+      "Annual CAM true-up - Chicago flagship shared corridors",
+      "Annual CAM true-up - Chicago flagship snow removal"
+     ],
+     "cross_memo": "Annual CAM true-up - audit consultant fee",
+     "plain": [
+      "the annual CAM true-up",
+      "the CAM true-up charge",
+      "the annual CAM true-up bill"
+     ],
+     "oblique": [
+      "the landlord's year-end catch-up billing",
+      "shared-space costs billed after the fact",
+      "a retroactive charge for common areas",
+      "the settlement of last year's estimates",
+      "an invoice reconciling building expenses",
+      "the landlord's corrected tally",
+      "extra amounts owed from prior twelve months",
+      "a one-time adjustment from the property owner",
+      "charges the lessor underestimated earlier",
+      "the corridor and plowing share",
+      "back-billing from the building manager",
+      "the difference between budgeted and actual operating pass-throughs",
+      "a lump sum demanded by the owner",
+      "settling up for hallway upkeep",
+      "the lessor's annual reckoning",
+      "unexpected landlord paperwork charges"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "popupspace",
+     "vendor": "Harborwalk Event Spaces",
+     "memos": [
+      "Wedding expo kiosk lease - Seattle convention hall",
+      "Wedding expo kiosk lease - Seattle weekend booth deposit"
+     ],
+     "cross_memo": "Wedding expo kiosk lease - banner printing",
+     "plain": [
+      "the wedding expo kiosk lease",
+      "the expo kiosk lease",
+      "the wedding expo kiosk booth"
+     ],
+     "oblique": [
+      "a temporary presence at the big bridal fair",
+      "short-term floor space for a showcase weekend",
+      "renting a stall to meet engaged couples",
+      "a pop-up outpost in a new city",
+      "testing a market without a permanent store",
+      "the trade show footprint",
+      "a three-day sales push at the convention center",
+      "space taken to attract new clients",
+      "a one-off retail stand",
+      "the seasonal showcase booth",
+      "paying for a weekend selling spot",
+      "an outreach presence for brides-to-be",
+      "our temporary stand at a regional gathering",
+      "the pilot for a possible new location",
+      "exhibit area for the engagement season",
+      "a short lease to display collections"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Gown Inventory Freight",
+   "aliases": [
+    "freight",
+    "inbound freight",
+    "gown shipping",
+    "delivery costs",
+    "logistics spend"
+   ],
+   "narrative": [
+    "Freight",
+    "Inbound freight",
+    "Logistics spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Whitebox Garment Logistics",
+     "base": 11000,
+     "memo": "Hanging garment freight - designer to warehouse"
+    },
+    {
+     "vendor": "Metro Courier Cooperative",
+     "base": 4800,
+     "memo": "Same-day store transfers - Dallas region"
+    },
+    {
+     "vendor": "Skyline Air Parcel",
+     "base": 7200,
+     "memo": "Standard air freight - overseas gowns"
+    }
+   ],
+   "events": [
+    {
+     "key": "rushair",
+     "vendor": "Skyline Air Parcel",
+     "memos": [
+      "Expedited charter gowns - Milan designer wedding season",
+      "Expedited charter gowns - customs overtime fees"
+     ],
+     "cross_memo": "Expedited charter gowns - warehouse overtime labor",
+     "plain": [
+      "the expedited charter gowns",
+      "the expedited charter shipment",
+      "the expedited charter gowns run"
+     ],
+     "oblique": [
+      "flying in dresses that missed the boat",
+      "last-minute transport for late production",
+      "an urgent delivery to meet ceremony dates",
+      "paying extra for speed after a factory delay",
+      "the emergency airlift for stranded orders",
+      "getting merchandise here before weddings",
+      "costly overnight movement of dresses",
+      "the premium for beating a deadline",
+      "shipping that bypassed normal timelines",
+      "a scramble to rescue delayed couture",
+      "rushing garments past a port holdup",
+      "the special flight for urgent deliveries",
+      "moving stock in a hurry",
+      "delivery speed upgrades on a late batch",
+      "getting wedding attire across the ocean fast",
+      "an unplanned premium on transit"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "storeopening",
+     "vendor": "Pinnacle Fixture Movers",
+     "memos": [
+      "Boston relocation freight - mannequin and rack transport",
+      "Boston relocation freight - white glove crating"
+     ],
+     "cross_memo": "Boston relocation freight - storage unit rental",
+     "plain": [
+      "the Boston relocation freight",
+      "the Boston relocation transport",
+      "the Boston relocation crating"
+     ],
+     "oblique": [
+      "moving the northeast store to its new home",
+      "shifting fixtures and display pieces",
+      "the hauling that came with changing addresses",
+      "packing up a closing location",
+      "relocating the entire showroom",
+      "transporting our floor displays",
+      "the company's move out of the old space",
+      "carrying dresses to the new site",
+      "one-time hauling for a store move",
+      "white-glove handling of the showroom contents",
+      "the removal crew for the old shop",
+      "getting the old store's assets across town",
+      "delicate transport of salon furnishings",
+      "the pack and haul job",
+      "logistics tied to a new storefront",
+      "shifting the display racks"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Bridal Show Marketing",
+   "aliases": [
+    "marketing",
+    "advertising",
+    "wedding marketing",
+    "campaign spend",
+    "promotions"
+   ],
+   "narrative": [
+    "Marketing",
+    "Campaign spend",
+    "Promotions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightvow Digital Agency",
+     "base": 16500,
+     "memo": "Retainer - paid social and search"
+    },
+    {
+     "vendor": "Petalprint Press",
+     "base": 5400,
+     "memo": "Lookbook and postcard printing"
+    },
+    {
+     "vendor": "Engaged Magazine Media",
+     "base": 8200,
+     "memo": "Regional print ad placement"
+    }
+   ],
+   "events": [
+    {
+     "key": "influencer",
+     "vendor": "Brightvow Digital Agency",
+     "memos": [
+      "Runway reel sponsorship - creator collaboration fee",
+      "Runway reel sponsorship - video production crew"
+     ],
+     "cross_memo": "Runway reel sponsorship - travel for creator shoot",
+     "plain": [
+      "the runway reel sponsorship",
+      "the runway reel collaboration",
+      "the runway reel video sponsorship"
+     ],
+     "oblique": [
+      "paying popular online personalities to feature our dresses",
+      "a social media blitz with famous faces",
+      "the endorsement deal with web celebrities",
+      "spending on followers-driven promotion",
+      "a splashy partnership for the fall launch",
+      "hiring well-known wedding bloggers",
+      "content produced with outside personalities",
+      "a short film starring paid ambassadors",
+      "the viral push for the new collection",
+      "cultivating buzz through public figures",
+      "a one-off promotion with online stars",
+      "fees for creators who showcased our gowns",
+      "influence-based advertising",
+      "the glossy video effort",
+      "outsourced storytelling with talent",
+      "exposure bought from digital personalities"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "billboard",
+     "vendor": "Skyward Outdoor Displays",
+     "memos": [
+      "Highway billboard flight - Phoenix interstate spectacular",
+      "Highway billboard flight - Phoenix design setup"
+     ],
+     "cross_memo": "Highway billboard flight - permit filing",
+     "plain": [
+      "the highway billboard flight",
+      "the highway billboard spectacular",
+      "the highway billboard campaign"
+     ],
+     "oblique": [
+      "a giant roadside ad near the metro",
+      "big-format outdoor visibility for the grand reopening",
+      "advertising seen by commuters at speed",
+      "the oversized sign along the freeway",
+      "paying for eyes on the road",
+      "a splashy outdoor placement",
+      "large-scale exposure in the desert market",
+      "the towering advertisement",
+      "a quarter-long sign rental",
+      "traffic-facing promotion",
+      "the outdoor push for the new location",
+      "high-visibility signage for brides driving by",
+      "space leased above the roadway",
+      "heavyweight outdoor exposure",
+      "a roadside announcement of our store",
+      "a splurge on huge signs"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Fitting Room Supplies",
+   "aliases": [
+    "supplies",
+    "fitting supplies",
+    "salon consumables",
+    "garment care",
+    "store consumables"
+   ],
+   "narrative": [
+    "Supplies",
+    "Fitting supplies",
+    "Garment care"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cloudsoft Garment Care Co",
+     "base": 3800,
+     "memo": "Steaming and cleaning solutions - all stores"
+    },
+    {
+     "vendor": "Satin Hanger Wholesale",
+     "base": 2400,
+     "memo": "Padded hangers and garment bags"
+    },
+    {
+     "vendor": "Bubbly Hospitality Goods",
+     "base": 2900,
+     "memo": "Champagne flutes and refreshments - salons"
+    }
+   ],
+   "events": [
+    {
+     "key": "mirrorrefit",
+     "vendor": "Satin Hanger Wholesale",
+     "memos": [
+      "Three-way mirror upgrade - Denver salon glass panels",
+      "Three-way mirror upgrade - Denver lighting kits"
+     ],
+     "cross_memo": "Three-way mirror upgrade - installer labor",
+     "plain": [
+      "the three-way mirror upgrade",
+      "the three-way mirror refit",
+      "the three-way mirror glass order"
+     ],
+     "oblique": [
+      "a facelift for how brides view themselves",
+      "new reflective surfaces in the try-on area",
+      "the showroom refresh in the Rockies",
+      "replacing the old looking glass",
+      "redesign of the client viewing experience",
+      "brighter, more flattering setups",
+      "an upgrade to the visual fixtures",
+      "modernizing the place where clients pose",
+      "glass and illumination changes",
+      "freshening the dressing suite look",
+      "improving how gowns appear to customers",
+      "a cosmetic investment for the mountain location",
+      "swapping out cloudy fixtures",
+      "a redo of the viewing nook",
+      "outfitting the suite with sleeker reflections",
+      "the makeover of client-facing glass"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "scentdiffuser",
+     "vendor": "Lumen Ambience Studio",
+     "memos": [
+      "Signature fragrance rollout - all salon diffuser units",
+      "Signature fragrance rollout - scent oil starter stock"
+     ],
+     "cross_memo": "Signature fragrance rollout - branded candle gift sets",
+     "plain": [
+      "the signature fragrance rollout",
+      "the signature fragrance diffusers",
+      "the signature fragrance stock"
+     ],
+     "oblique": [
+      "a branded smell for every location",
+      "atmosphere enhancement across all stores",
+      "an olfactory identity initiative",
+      "the aroma project for the chain",
+      "sensory upgrades to client visits",
+      "a unified ambient experience",
+      "investing in how our stores feel",
+      "creating a memorable environment",
+      "the company-wide ambiance push",
+      "the pleasant air program",
+      "fresh air treatments for all boutiques",
+      "a smell-based brand effort",
+      "setting the mood in every salon",
+      "sensory consistency across sites",
+      "the atmosphere standardization",
+      "an aromatic identity effort"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Bridal Salon Utilities",
+   "aliases": [
+    "utilities",
+    "power and water",
+    "energy costs",
+    "climate control",
+    "salon utilities spend"
+   ],
+   "narrative": [
+    "Utilities",
+    "Energy costs",
+    "Climate control"
+   ],
+   "recurring": [
+    {
+     "vendor": "Valley Power and Light",
+     "base": 6800,
+     "memo": "Electricity - Phoenix stores"
+    },
+    {
+     "vendor": "Northgate Gas Company",
+     "base": 2100,
+     "memo": "Natural gas heating - Chicago flagship"
+    },
+    {
+     "vendor": "Clearflow Water Authority",
+     "base": 1400,
+     "memo": "Water and sewer - all stores"
+    }
+   ],
+   "events": [
+    {
+     "key": "hvacfail",
+     "vendor": "Valley Power and Light",
+     "memos": [
+      "Demand surge penalty - Phoenix heatwave peak",
+      "Demand surge penalty - Phoenix emergency cooling load"
+     ],
+     "cross_memo": "Demand surge penalty - portable chiller rental",
+     "plain": [
+      "the demand surge penalty",
+      "the Phoenix heatwave penalty",
+      "the demand surge billing"
+     ],
+     "oblique": [
+      "extra utility fees during record temperatures",
+      "the cost of keeping dresses cool in extreme weather",
+      "a summer spike at the desert locations",
+      "penalties for overusing the grid",
+      "hot-spell consumption charges",
+      "climate-driven billing",
+      "what the utility assessed during peak days",
+      "additional charges for running air all day",
+      "the weather event bill",
+      "electric fees tied to scorching days",
+      "the penalty for heavy cooling needs",
+      "the cost of staying comfortable in the sun",
+      "a seasonal surcharge from the supplier",
+      "grid-stress assessments",
+      "the high-heat premium",
+      "the toll of an unusually hot stretch"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "pipeburst",
+     "vendor": "Rapidflow Restoration Services",
+     "memos": [
+      "Pipe burst remediation - Nashville boutique dress storage",
+      "Pipe burst remediation - Nashville drywall and carpet"
+     ],
+     "cross_memo": "Pipe burst remediation - garment dry cleaning claim",
+     "plain": [
+      "the pipe burst remediation",
+      "the Nashville pipe burst cleanup",
+      "the pipe burst remediation work"
+     ],
+     "oblique": [
+      "recovering from an overnight flood",
+      "drying out the store after plumbing failed",
+      "the cleanup after water got into inventory",
+      "damage control following a leak",
+      "repairs to a soaked back room",
+      "restoring the shop to usable condition",
+      "the aftermath of unexpected flooding",
+      "salvage and rebuilding work",
+      "emergency response to a wet disaster",
+      "fixing damage to flooring and walls",
+      "the insurance-related fix-up",
+      "getting the store open again after the soaking",
+      "the mess that came from a failed line",
+      "mopping up and rebuilding",
+      "cleanup after an unforeseen accident",
+      "restoration effort in the boutique"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Bridal Registry Technology",
+   "aliases": [
+    "technology",
+    "point of sale",
+    "bridal software",
+    "appointment platform",
+    "systems spend"
+   ],
+   "narrative": [
+    "Technology",
+    "Point of sale",
+    "Systems spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Swiftring POS Systems",
+     "base": 7500,
+     "memo": "Point-of-sale subscription - all stores"
+    },
+    {
+     "vendor": "Calendarly Bookings Pro",
+     "base": 3200,
+     "memo": "Appointment scheduling platform"
+    },
+    {
+     "vendor": "Cirrusbyte Cloud Hosting",
+     "base": 4100,
+     "memo": "Website and inventory database hosting"
+    }
+   ],
+   "events": [
+    {
+     "key": "dataloss",
+     "vendor": "Cirrusbyte Cloud Hosting",
+     "memos": [
+      "Database restoration incident - lost customer measurement records",
+      "Database restoration incident - forensic recovery engineers"
+     ],
+     "cross_memo": "Database restoration incident - legal notification mailing",
+     "plain": [
+      "the database restoration incident",
+      "the database restoration engineers",
+      "the database restoration recovery"
+     ],
+     "oblique": [
+      "rebuilding records after a system crash",
+      "retrieving client information that vanished",
+      "the cleanup after an outage wiped files",
+      "specialists brought in after data went missing",
+      "reconstructing what the servers lost",
+      "the cost of an unexpected technical breakdown",
+      "getting back the bride profiles we couldn't access",
+      "an emergency rescue of digital archives",
+      "expert help after a corrupted backup",
+      "the incident response bill",
+      "paying to retrieve vanished files",
+      "reconstructing order histories",
+      "the recovery effort after the outage",
+      "outside engineers working on lost information",
+      "fixing the damage from a failure",
+      "the digital disaster aftermath"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "kioskrollout",
+     "vendor": "Tablet Touch Retail Solutions",
+     "memos": [
+      "Self-service gown browser rollout - tablet kiosks for 6 stores",
+      "Self-service gown browser rollout - mounting hardware"
+     ],
+     "cross_memo": "Self-service gown browser rollout - staff training sessions",
+     "plain": [
+      "the self-service gown browser rollout",
+      "the gown browser tablet kiosks",
+      "the self-service gown browser hardware"
+     ],
+     "oblique": [
+      "letting brides explore styles on their own",
+      "a digital catalog installation across locations",
+      "interactive screens for client browsing",
+      "the touchscreen pilot program",
+      "modernizing how customers see our selection",
+      "purchase of devices for shoppers",
+      "a customer-facing technology debut",
+      "tablets placed around our showrooms",
+      "an effort to digitize the showroom",
+      "the new browsing stations",
+      "equipment so clients can flip through designs",
+      "the front-of-house screens project",
+      "upgrading the shopping experience with devices",
+      "hardware for shoppers to use unassisted",
+      "bringing the catalog onto screens",
+      "the in-store gadget initiative"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Bridesmaid Sample Stock Write-Offs",
+   "aliases": [
+    "sample write-offs",
+    "stock write-offs",
+    "sample shrink",
+    "markdown costs",
+    "inventory losses"
+   ],
+   "narrative": [
+    "Sample write-offs",
+    "Sample shrink",
+    "Inventory losses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenline Liquidation Partners",
+     "base": 5500,
+     "memo": "Discontinued sample sales settlement"
+    },
+    {
+     "vendor": "Sample Closet Consignment",
+     "base": 3300,
+     "memo": "Consignment shortfall - older gowns"
+    }
+   ],
+   "events": [
+    {
+     "key": "stylerefresh",
+     "vendor": "Greenline Liquidation Partners",
+     "memos": [
+      "Sample sale clearance loss - Charlotte warehouse overstock",
+      "Sample sale clearance loss - Charlotte mislabeled lot"
+     ],
+     "cross_memo": "Sample sale clearance loss - auction house commission",
+     "plain": [
+      "the sample sale clearance loss",
+      "the Charlotte clearance loss",
+      "the sample sale clearance overstock"
+     ],
+     "oblique": [
+      "dumping dresses nobody wanted at deep discounts",
+      "the markdown hit from clearing the warehouse",
+      "selling excess stock below what we paid",
+      "moving unsold merchandise out at a loss",
+      "the penalty for buying too many",
+      "giving away last season's collection cheaply",
+      "the drop in value from outdated fashion",
+      "cutting prices to make shelf space",
+      "taking a haircut on leftover inventory",
+      "the cost of getting rid of surplus",
+      "a reset of unwanted racks",
+      "what we absorbed unloading old styles",
+      "the discount cost to make room for new arrivals",
+      "writing down stale merchandise",
+      "clearing out the backroom for pennies",
+      "getting out from under an overbuy"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "waterdamage",
+     "vendor": "Safeguard Claims Adjusters",
+     "memos": [
+      "Showroom theft inventory loss - Miami store after-hours break-in",
+      "Showroom theft inventory loss - Miami security audit"
+     ],
+     "cross_memo": "Showroom theft inventory loss - police report copies",
+     "plain": [
+      "the showroom theft inventory loss",
+      "the Miami theft loss",
+      "the showroom theft security audit"
+     ],
+     "oblique": [
+      "gowns that disappeared overnight",
+      "losses after criminals got inside",
+      "the missing dresses from a late-night intrusion",
+      "stolen merchandise that wasn't insured in full",
+      "the write-down for items taken",
+      "what the break-in cost us",
+      "vanished stock we had to remove from the books",
+      "the shortfall after an unauthorized entry",
+      "goods walked out the door",
+      "an unfortunate incident at the southern shop",
+      "the crime-related inventory hit",
+      "replacing what thieves carried off",
+      "the uninsured portion of a burglary",
+      "absorbing loss from a security failure",
+      "the tally of stolen designer samples",
+      "the missing merchandise after the incident"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,728 @@
+{
+ "slug": "flower-wholesaler",
+ "industry": "flower wholesaler",
+ "entities": [
+  "Petalcrest Wholesale Flowers",
+  "Meridian Bloom Distributors",
+  "Harborview Floral Supply",
+  "Greenhollow Cut Flower Co",
+  "Summitgate Blooms Wholesale"
+ ],
+ "accounts": [
+  {
+   "name": "Cold Chain Equipment",
+   "aliases": [
+    "cold chain",
+    "cooler costs",
+    "refrigeration spend",
+    "cooler maintenance",
+    "cold room costs"
+   ],
+   "narrative": [
+    "Cold chain",
+    "Cooler costs",
+    "Refrigeration spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Polar Ridge Refrigeration",
+     "base": 9500,
+     "memo": "Monthly cooler service contract - Miami warehouse"
+    },
+    {
+     "vendor": "Arctic Line Power",
+     "base": 6200,
+     "memo": "Cold room electricity surcharge - Dock B"
+    },
+    {
+     "vendor": "Frostway Sensors",
+     "base": 1400,
+     "memo": "Temperature monitoring subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "evaporator",
+     "vendor": "Polar Ridge Refrigeration",
+     "memos": [
+      "Evaporator coil replacement - Cooler 3 Miami",
+      "Evaporator coil replacement - Cooler 3 labor and refrigerant"
+     ],
+     "cross_memo": "Evaporator coil replacement - emergency product relocation",
+     "plain": [
+      "the evaporator coil replacement",
+      "the Cooler 3 evaporator coil work",
+      "the evaporator coil swap"
+     ],
+     "oblique": [
+      "getting the main chilled storage space working again",
+      "the unit that had been icing up all spring",
+      "a failed heat exchange component",
+      "the fix after flowers started wilting overnight",
+      "work on the big chilled room",
+      "a breakdown in the room holding our roses",
+      "the warehouse chiller that quit",
+      "parts and labor on the failed chilling gear",
+      "an urgent repair that insurers asked us to document",
+      "what the technicians did over the long weekend",
+      "replacing worn internals in the cold storage",
+      "the repair after the inspector flagged temperature drift",
+      "fixing the room that could not hold temperature",
+      "the shutdown of our largest chilled space",
+      "a mid-season mechanical failure",
+      "the overhaul of the equipment keeping stems fresh"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "glycol",
+     "vendor": "Tundra Thermal Services",
+     "memos": [
+      "Glycol loop flush - Tundra Thermal Services Houston",
+      "Glycol loop flush - pump rebuild and fluid refill"
+     ],
+     "cross_memo": "Glycol loop flush - temporary ice storage",
+     "plain": [
+      "the glycol loop flush",
+      "the Houston glycol loop flush",
+      "the glycol loop flush project"
+     ],
+     "oblique": [
+      "cleaning out the liquid circuit at the southern site",
+      "the maintenance our insurer made a condition of renewal",
+      "servicing the fluid lines that carry heat away",
+      "a scheduled deep clean of the Texas chilling system",
+      "the work that kept the Gulf site compliant",
+      "a preventive job on the pumps behind our chilled rooms",
+      "refreshing the fluid that moves heat out of the building",
+      "the southern facility's annual system purge",
+      "a contractor visit at the Texas warehouse",
+      "what we owed the new service provider for the Gulf site",
+      "the long-delayed upkeep on the Houston plumbing for cold",
+      "draining and refilling the closed cooling circuit",
+      "a vendor we had not used before at the Texas location",
+      "flushing out sludge before peak season",
+      "the maintenance window we scheduled before Valentine's",
+      "a one-time cleanse of the cooling loop"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Fleet and Delivery Vehicles",
+   "aliases": [
+    "fleet",
+    "delivery fleet",
+    "truck costs",
+    "vehicle spend",
+    "fleet maintenance spend"
+   ],
+   "narrative": [
+    "Fleet",
+    "Truck costs",
+    "Vehicle spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmaster Fuel Cards",
+     "base": 18500,
+     "memo": "Diesel and fuel card charges - all routes"
+    },
+    {
+     "vendor": "Lakeshore Fleet Leasing",
+     "base": 14200,
+     "memo": "Monthly lease - 12 refrigerated box trucks"
+    },
+    {
+     "vendor": "Axle & Anchor Tire Service",
+     "base": 2600,
+     "memo": "Tire rotation and replacement - Route trucks"
+    }
+   ],
+   "events": [
+    {
+     "key": "transmission",
+     "vendor": "Lakeshore Fleet Leasing",
+     "memos": [
+      "Transmission rebuild - Truck 14 Orlando route",
+      "Transmission rebuild - lease pass-through damage fee"
+     ],
+     "cross_memo": "Transmission rebuild - loaner van rental",
+     "plain": [
+      "the Truck 14 transmission rebuild",
+      "the transmission rebuild",
+      "the Orlando transmission rebuild"
+     ],
+     "oblique": [
+      "getting our busiest delivery vehicle back on the road",
+      "the gearbox failure on one unit",
+      "a breakdown that stranded a load of lilies",
+      "the leasing company billing us for mechanical damage",
+      "downtime on the central Florida run",
+      "a major drivetrain repair",
+      "what it cost to fix the truck that died on the highway",
+      "the damage charge the lessor passed on",
+      "replacing the guts of a worn-out vehicle",
+      "an unplanned shop visit for one box truck",
+      "the repair on a unit past its service life",
+      "a costly mechanical fix on one of our trucks",
+      "work done after the driver reported grinding noises",
+      "the vehicle that sat in the garage for two weeks",
+      "a failure we could not push to next quarter",
+      "the biggest single repair on our rolling stock"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "telematics",
+     "vendor": "Routewise Analytics",
+     "memos": [
+      "Telematics rollout - Routewise Analytics install 40 units",
+      "Telematics rollout - dashboard onboarding and training"
+     ],
+     "cross_memo": "Telematics rollout - handheld scanner licenses",
+     "plain": [
+      "the telematics rollout",
+      "the Routewise telematics rollout",
+      "the fleet telematics rollout"
+     ],
+     "oblique": [
+      "putting tracking devices in every cab",
+      "the new visibility we gave dispatch into where drivers are",
+      "a technology project the operations chief pushed",
+      "equipping the whole delivery group with GPS gear",
+      "the effort to cut idle time and late arrivals",
+      "a pilot the insurer encouraged for safer driving",
+      "installing monitors across our rolling stock",
+      "a first-time engagement with a software and hardware provider",
+      "what we spent teaching drivers a new system",
+      "the project meant to shrink our fuel burn",
+      "connected sensors for each vehicle",
+      "a large one-time install across all routes",
+      "the modernization of how routes get supervised",
+      "outfitting every vehicle with reporting hardware",
+      "a rollout that touched every depot",
+      "the initiative to monitor driver behavior"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Packaging and Floral Supplies",
+   "aliases": [
+    "packaging",
+    "supplies",
+    "boxes and sleeves",
+    "packaging costs",
+    "floral supplies spend"
+   ],
+   "narrative": [
+    "Packaging",
+    "Supplies",
+    "Boxes and sleeves"
+   ],
+   "recurring": [
+    {
+     "vendor": "Corrugated Crown Box Co",
+     "base": 11800,
+     "memo": "Shipping boxes - assorted sizes, all warehouses"
+    },
+    {
+     "vendor": "Sleeve & Wrap Partners",
+     "base": 5400,
+     "memo": "Bouquet sleeves and cellophane"
+    },
+    {
+     "vendor": "Hydrate Pro Supply",
+     "base": 3100,
+     "memo": "Flower food packets and hydration tubes"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "Sleeve & Wrap Partners",
+     "memos": [
+      "Brand refresh sleeves - printed kraft run Miami",
+      "Brand refresh sleeves - new logo plates and setup"
+     ],
+     "cross_memo": "Brand refresh sleeves - obsolete stock write-off",
+     "plain": [
+      "the brand refresh sleeves",
+      "the new brand refresh sleeve run",
+      "the printed brand refresh sleeves"
+     ],
+     "oblique": [
+      "the redesigned look we rolled out to customers",
+      "new artwork on everything leaving the dock",
+      "the marketing team's identity update",
+      "a one-time print order after the logo changed",
+      "throwing out old stock bearing the previous design",
+      "the setup fee for new printing plates",
+      "what we spent making our shipments look different",
+      "the visual overhaul that sales requested",
+      "a wave of fresh printed wrapping",
+      "an upfront cost for the updated corporate look",
+      "the transition away from the old design",
+      "an order timed with our new storefront launch",
+      "the cost of changing how our product appears",
+      "a bulk printing job for the spring season",
+      "the retiring of old inventory with the former mark",
+      "the creative direction change reaching our materials"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "insulated",
+     "vendor": "Glacier Pack Industries",
+     "memos": [
+      "Insulated liner purchase - Glacier Pack Industries summer shipments",
+      "Insulated liner purchase - gel pack bulk order"
+     ],
+     "cross_memo": "Insulated liner purchase - expedited air freight",
+     "plain": [
+      "the insulated liner purchase",
+      "the summer insulated liner purchase",
+      "the insulated liner order"
+     ],
+     "oblique": [
+      "extra protection for stems traveling through hot weather",
+      "a bulk buy to keep orders fresh on long hauls",
+      "what the heat wave forced us to stock",
+      "the new supplier chosen for warm-season protection",
+      "preparing for customers in distant states",
+      "an order placed after complaints of wilted arrivals",
+      "materials that keep contents cool without a truck",
+      "the shift toward long-distance shipping needs",
+      "a seasonal stocking decision",
+      "cold-weather gear for the hottest months",
+      "a first-time order from a thermal products maker",
+      "the answer to spoilage claims from retail clients",
+      "stocking up before peak wedding season",
+      "a precaution against damaged shipments",
+      "the stuff we tucked around boxes to hold temperature",
+      "a large one-off materials buy for summer"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Grower and Import Fees",
+   "aliases": [
+    "import fees",
+    "grower fees",
+    "sourcing fees",
+    "customs spend",
+    "import costs"
+   ],
+   "narrative": [
+    "Import fees",
+    "Grower fees",
+    "Customs spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Andes Bloom Brokerage",
+     "base": 22000,
+     "memo": "Colombian grower broker commissions"
+    },
+    {
+     "vendor": "Customs Clear Partners",
+     "base": 7600,
+     "memo": "Customs entry filings - Miami airport"
+    },
+    {
+     "vendor": "AgriCheck Inspection Services",
+     "base": 4200,
+     "memo": "USDA phytosanitary inspections"
+    }
+   ],
+   "events": [
+    {
+     "key": "quarantine",
+     "vendor": "AgriCheck Inspection Services",
+     "memos": [
+      "Thrips quarantine fumigation - Lot 8841 rose shipment",
+      "Thrips quarantine fumigation - hold fees at airport cold dock"
+     ],
+     "cross_memo": "Thrips quarantine fumigation - destroyed product credit denied",
+     "plain": [
+      "the thrips quarantine fumigation",
+      "the Lot 8841 thrips fumigation",
+      "the thrips fumigation hold"
+     ],
+     "oblique": [
+      "an agriculture agency flagging a delivery for bugs",
+      "the pests found on arriving stems",
+      "a delay holding one container at the border",
+      "treating a shipment before it could be released",
+      "the insect problem we did not anticipate",
+      "a rare enforcement action against a single load",
+      "what the government made us do before release",
+      "the infestation notice on a pallet of roses",
+      "an inspector's finding that cost us a week",
+      "a pest discovery that tied up inventory",
+      "the response to a contamination alert",
+      "an unplanned treatment charge at the airport",
+      "a stoppage that kept product off the shelves",
+      "the rules we had to follow after a failed screen",
+      "an incident with live organisms in a box",
+      "the shipment that got held up on arrival"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "tariff",
+     "vendor": "Pacific Rim Duty Advisors",
+     "memos": [
+      "Ecuador tariff reclassification - Pacific Rim Duty Advisors audit",
+      "Ecuador tariff reclassification - back duties assessed"
+     ],
+     "cross_memo": "Ecuador tariff reclassification - legal counsel retainer",
+     "plain": [
+      "the Ecuador tariff reclassification",
+      "the tariff reclassification audit",
+      "the Ecuador tariff reclassification dispute"
+     ],
+     "oblique": [
+      "a ruling that changed how our goods are taxed at the border",
+      "the government revisiting what category our product belongs in",
+      "a retroactive bill for prior shipments",
+      "the review that went back eighteen months",
+      "hiring outside experts to contest a trade ruling",
+      "a surprise assessment from the customs authority",
+      "the correction owed on earlier imports",
+      "a one-time catch-up on duties",
+      "the advisers we brought in to challenge a finding",
+      "a paperwork issue with how items were coded",
+      "what the regulators said we underpaid",
+      "the cost of getting a trade classification overturned",
+      "a new consultant relationship tied to the audit",
+      "a settlement tied to historical entries",
+      "the border agency's reassessment of earlier loads",
+      "an expensive lesson in tax coding"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse Labor and Temp Staffing",
+   "aliases": [
+    "warehouse labor",
+    "temp labor",
+    "staffing costs",
+    "seasonal labor",
+    "labor spend"
+   ],
+   "narrative": [
+    "Warehouse labor",
+    "Temp labor",
+    "Staffing costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "BloomForce Staffing",
+     "base": 26000,
+     "memo": "Weekly temp associates - sorting and bunching"
+    },
+    {
+     "vendor": "Dockhand Payroll Services",
+     "base": 3800,
+     "memo": "Payroll processing - warehouse hourly staff"
+    },
+    {
+     "vendor": "SafeStep Training",
+     "base": 1200,
+     "memo": "Forklift certification renewals"
+    }
+   ],
+   "events": [
+    {
+     "key": "valentine",
+     "vendor": "BloomForce Staffing",
+     "memos": [
+      "Valentine surge crew - 60 extra associates Miami hub",
+      "Valentine surge crew - overtime premium weeks 5 and 6"
+     ],
+     "cross_memo": "Valentine surge crew - catered meals for night shifts",
+     "plain": [
+      "the Valentine surge crew",
+      "the Valentine surge crew overtime",
+      "the extra Valentine surge crew"
+     ],
+     "oblique": [
+      "the mid-winter rush that doubled our headcount",
+      "extra hands for the busiest stretch of the year",
+      "the push before the romantic holiday",
+      "bringing on dozens of short-term workers",
+      "the added bodies keeping loading docks moving",
+      "the overtime that ran through two weekends",
+      "what the peak sales weeks demanded",
+      "our annual scramble to keep up with demand",
+      "a temporary expansion of the team",
+      "the pay premium we offered for late shifts",
+      "a seasonal spike we budget for but not exactly",
+      "the cost of staying open around the clock",
+      "hiring surge tied to the February calendar",
+      "feeding and paying the night teams",
+      "the crowd of workers on the floor",
+      "the staffing peak that comes every winter"
+     ],
+     "low": 22000,
+     "high": 40000
+    },
+    {
+     "key": "relocation",
+     "vendor": "Harbor Moves Logistics",
+     "memos": [
+      "Racking relocation - Harbor Moves Logistics Dock C reconfiguration",
+      "Racking relocation - pallet jack rentals and crew"
+     ],
+     "cross_memo": "Racking relocation - weekend lost productivity",
+     "plain": [
+      "the racking relocation",
+      "the Dock C racking relocation",
+      "the racking relocation crew"
+     ],
+     "oblique": [
+      "moving the shelving around to fit more product",
+      "a floor plan redo at one end of the warehouse",
+      "the weekend project to reshape our storage layout",
+      "hiring an outside crew to shift heavy equipment",
+      "the change that let us handle larger orders",
+      "a facilities project the operations head proposed",
+      "what we paid to rearrange the building",
+      "reorganizing where goods sit before peak",
+      "a one-time labor charge from a mover",
+      "the construction-style task inside our building",
+      "the effort to improve pick efficiency",
+      "a layout overhaul at the loading area",
+      "the weekend when everything got moved",
+      "a contractor we had never used before",
+      "clearing and resetting a section of the floor",
+      "an operational redesign carried out by outsiders"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Trade Shows",
+   "aliases": [
+    "marketing",
+    "trade shows",
+    "promotion spend",
+    "advertising",
+    "trade show costs"
+   ],
+   "narrative": [
+    "Marketing",
+    "Trade shows",
+    "Promotion spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bright Petal Creative",
+     "base": 8500,
+     "memo": "Monthly retainer - catalog and social content"
+    },
+    {
+     "vendor": "Growers Weekly Media",
+     "base": 2800,
+     "memo": "Trade publication advertising"
+    },
+    {
+     "vendor": "Floralytics CRM",
+     "base": 1900,
+     "memo": "Customer relationship platform subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "expo",
+     "vendor": "Growers Weekly Media",
+     "memos": [
+      "Atlanta floral expo sponsorship - Growers Weekly Media booth package",
+      "Atlanta floral expo sponsorship - banner and lanyard placement"
+     ],
+     "cross_memo": "Atlanta floral expo sponsorship - travel for sales team",
+     "plain": [
+      "the Atlanta floral expo sponsorship",
+      "the floral expo sponsorship package",
+      "the Atlanta expo sponsorship"
+     ],
+     "oblique": [
+      "a big industry gathering in the South",
+      "our presence at the annual buyers conference",
+      "the booth we took to meet retail chains",
+      "a sponsorship deal our sales director signed",
+      "getting our name in front of florists in one room",
+      "an event the whole commercial team attended",
+      "the premium placement at a major convention",
+      "the splash we made at the yearly industry meet",
+      "what we paid to be seen by buyers",
+      "a visibility push in the peninsula's northern neighbor",
+      "the fee for the conference floor space",
+      "an annual event we decided to upgrade",
+      "a three-day showcase",
+      "the sponsorship tier our competitors also bought",
+      "brand exposure at a professional gathering",
+      "our investment in face time with customers"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "photoshoot",
+     "vendor": "Lumen Lane Studios",
+     "memos": [
+      "Spring catalog photoshoot - Lumen Lane Studios Orlando location",
+      "Spring catalog photoshoot - styling and prop rentals"
+     ],
+     "cross_memo": "Spring catalog photoshoot - flower inventory consumed",
+     "plain": [
+      "the spring catalog photoshoot",
+      "the Lumen Lane photoshoot",
+      "the catalog photoshoot styling"
+     ],
+     "oblique": [
+      "new imagery for our seasonal offering book",
+      "a professional creative session shot over several days",
+      "pictures of our arrangements for customers",
+      "the images our sales reps wanted for months",
+      "hiring photographers who had not worked with us",
+      "sets and props for a visual production",
+      "the stems we sacrificed for the camera",
+      "a creative shoot at an outside venue",
+      "fresh pictures for the printed book and website",
+      "a production that took place in central Florida",
+      "what the art director requested",
+      "the visuals refresh for the new season",
+      "a one-time creative expense",
+      "a day spent arranging flowers to be photographed",
+      "work by a studio that was new to us",
+      "content creation outside our normal retainer"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Spoilage Reserve",
+   "aliases": [
+    "insurance",
+    "spoilage",
+    "shrink",
+    "loss reserve",
+    "product loss"
+   ],
+   "narrative": [
+    "Insurance",
+    "Spoilage",
+    "Shrink"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shield Harbor Insurance",
+     "base": 12500,
+     "memo": "Property and inventory coverage premium"
+    },
+    {
+     "vendor": "Greenline Claims Management",
+     "base": 2200,
+     "memo": "Claims administration fee"
+    },
+    {
+     "vendor": "Perishable Cargo Underwriters",
+     "base": 6800,
+     "memo": "Transit cargo policy installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "hurricane",
+     "vendor": "Shield Harbor Insurance",
+     "memos": [
+      "Hurricane deductible - Shield Harbor Insurance Miami warehouse roof damage",
+      "Hurricane deductible - storm named loss assessment"
+     ],
+     "cross_memo": "Hurricane deductible - discarded inventory after power outage",
+     "plain": [
+      "the hurricane deductible",
+      "the named storm hurricane deductible",
+      "the Miami hurricane deductible"
+     ],
+     "oblique": [
+      "the portion we paid out of pocket after the weather event",
+      "the big blow that damaged our roof",
+      "what the carrier would not cover",
+      "an unusually costly season for tropical systems",
+      "our share of the damage from the late summer disaster",
+      "a loss that stemmed from high winds and rain",
+      "the amount we absorbed before the payout started",
+      "the coverage gap after the wind event",
+      "a bill tied to the declared emergency",
+      "the thing that closed us for several days",
+      "storm repair responsibility landing on us",
+      "the financial hit from damaged roofing",
+      "the assessment the underwriter delivered",
+      "an act of nature affecting the warehouse",
+      "weather-related costs that insurance did not take on",
+      "the exposure we had chosen to retain"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "recall",
+     "vendor": "Pinnacle Risk Advisors",
+     "memos": [
+      "Pesticide residue recall - Pinnacle Risk Advisors lot tracing",
+      "Pesticide residue recall - customer credit memos"
+     ],
+     "cross_memo": "Pesticide residue recall - disposal and hazmat hauling",
+     "plain": [
+      "the pesticide residue recall",
+      "the pesticide residue recall credits",
+      "the pesticide residue lot tracing"
+     ],
+     "oblique": [
+      "pulling a batch back from customers after a lab finding",
+      "the chemical traces found on imported stems",
+      "a safety event that required contacting every buyer",
+      "refunds we issued to clients who got affected goods",
+      "an investigation into where the contaminated product went",
+      "a compliance matter with a new consulting firm",
+      "the scramble to trace everything shipped that week",
+      "what we paid a specialist to untangle the paper trail",
+      "an incident the grower's lab report triggered",
+      "the cost of making buyers whole",
+      "disposing of material we could not sell",
+      "the problem that hit our reputation with grocers",
+      "a testing result that forced a halt",
+      "an urgent case involving health rules",
+      "the cleanup after an upstream supplier's failure",
+      "a product withdrawal that dominated the month"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}
