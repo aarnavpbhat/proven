@@ -29,15 +29,26 @@ stated cause actually accounts for the movement. Every flag cites the transactio
 Team **Oski's Back Office** (UC Berkeley): Julien Bergeron-Palmer (data generation
 infrastructure), Aarnav Bhat (ML / RL architecture), Arun Yama.
 
-**Live demo: <https://proven-lac.vercel.app>**: opens on the demo close; nothing to install.
-The [review guide](#how-to-review-on-the-website) below walks through the screen.
+| | |
+|---|---|
+| **Live demo** | <https://proven-lac.vercel.app> (opens on the demo close; nothing to install) |
+| **Demo video** | [`video/out/proven-demo-2min.mp4`](video/out/proven-demo-2min.mp4) (2 minutes) |
+| **Console reference** | [`docs/review-guide.md`](docs/review-guide.md) |
+| **Fine-tuning write-up** | [`docs/finetune.md`](docs/finetune.md) |
 
 ![The review console on the demo close](docs/review.png)
 
-**Contents:** [Try it](#try-it) · [How to review on the website](#how-to-review-on-the-website) ·
-[How it works](#how-it-works) · [The decisions behind it](#the-decisions-behind-it) ·
-[Results](#results) · [The RL plan](#the-rl-plan-and-what-exists-today) ·
-[Running and deploying](#running-and-deploying) · [Layout and API](#layout-and-api)
+## Contents
+
+1. [Try it](#try-it)
+2. [A three-minute walkthrough](#a-three-minute-walkthrough)
+3. [How it works](#how-it-works)
+4. [The decisions behind it](#the-decisions-behind-it)
+5. [Results](#results)
+6. [Training a proposer](#training-a-proposer)
+7. [Running and deploying](#running-and-deploying)
+8. [Layout and API](#layout-and-api)
+9. [Further reading](#further-reading)
 
 ---
 
@@ -58,199 +69,9 @@ under [Running and deploying](#running-and-deploying).
 
 ---
 
-## How to review on the website
+## A three-minute walkthrough
 
-The console is built for one job: a reviewer deciding the exceptions in an explanation, with the
-claim, the ledger evidence, the reconstruction, the verdict and the reason on one screen.
-
-### The screen at a glance
-
-| Area | What it shows |
-|---|---|
-| **Sidebar** | The four sections: **Review**, **Ledger**, **Learned** (with the number of active lessons) and **Benchmark**. |
-| **Top bar** | The **Close** menu: which month-end close to check (the showcase, a hand-written example with an answer key, or a synthetic close), then the section you are in. On the right, the network status ("Network off") and the version. |
-| **Review header** | The close's name and, under it, the run ID, the extractor and verifier versions, the time taken, and "nothing left this machine". On the right, **Extractor**: how sentences are read ("Rules (offline)"; the Claude and open-weight options show as unavailable unless enabled, with the reason on the line below). **Verify** re-runs the check. |
-| **Coverage** | **Claims checked** (out of sentences with figures), **Pass**, **Fail**, **Need review** (with any sentences not extracted) and **Decided** (the share that reached PASS or FAIL without a person). The bar beneath shows the same counts as proportions. |
-| **Claims list** (left card) | One row per claim: verdict, claim number (C1, C2, …), account, the ledger's change, the sentence and a one-line reason. **Exceptions** (the default) shows FAIL rows first, then REVIEW; **All** adds the passes. Below the rows: sentences that were not extracted, and any proposals the extractor made that the text did not support. |
-| **Explanation** (tab of the left card) | The commentary being checked. Each checked sentence is underlined in its verdict's colour and tagged with its claim number. A dashed underline marks a sentence that states a figure but could not be checked. Click any underlined sentence to select its claim. |
-| **Claim detail** (right card) | The working for the selected claim: the reason, the verdict, the sentence, then Reconstruction, Checks, Findings, the largest movements and Resolve. The arrows in its header step to the previous and next claim. |
-| **Ledger** (its own section) | Every account's balance in the prior and current month, the change and the % change, plus a total row. The account of the claim you selected is highlighted. Above it: the company, the transaction count and the ledger's fingerprint (sha256), with **Download CSV** and **Upload CSV**. |
-| **Learned** (its own section) | **Teach next**, the queue of lessons waiting for a confirmation, and **Lessons**, the vocabulary already taught. |
-
-On a laptop, the claim detail stays in view while you scroll the list, so the working is always
-beside the claim you picked.
-
-### Reviewing a close, step by step
-
-1. **Choose a close and let it run.** The page checks the selected close as soon as it loads. To
-   check another, pick it in the **Close** menu in the top bar; it verifies automatically.
-2. **Read Coverage before the verdicts.** It tells you how much of the explanation was actually
-   checked. On the showcase: 9 claims out of 10 sentences with figures, 4 pass, 3 fail,
-   2 need review, 1 sentence not extracted, and 77.8% decided (7 of 9).
-3. **Work through the exceptions.** The Claims list opens on **Exceptions**, FAILs first, with
-   the first one selected and its working shown in the claim detail. Each row shows the
-   verdict, the account, the sentence and a one-line reason. Click a row to select it, or use
-   the arrows in the detail header ("1 of 5").
-4. **Read the claim detail top to bottom.** Under the reason, the verdict and the quoted
-   sentence, it always has the same sections:
-   - **Reconstruction**: what the sentence claimed beside what the ledger shows (row by row
-     below).
-   - **Checks**: each check that ran, with its outcome, and the ones that were skipped and why.
-   - **Findings**: what is wrong or uncertain, with a table of the evidence transactions (ID,
-     date, account, vendor, memo, amount). A transaction booked outside the claim's account is
-     marked "(other account)".
-   - **Largest movements in** the account: which vendors moved it, by how much.
-   - **Adjustments and notes**: anything the guards changed, and anything the reading dropped.
-   - **Resolve**: your decision (FAIL and REVIEW cards only).
-5. **Check the evidence against the source.** The transaction IDs in a finding are real rows of
-   the ledger. The **Ledger** section shows every account, with the row of the selected claim's
-   account highlighted. The **Explanation** tab shows the sentence in context: clicking an
-   underlined sentence selects its claim, and clicking a PASS sentence switches the list to
-   **All** so you can audit it.
-6. **Record a decision.** In **Resolve**, choose what is true, write *why* (at least 10
-   characters; a decision nobody can re-read cannot become a test), and press **Record**. The
-   section confirms "Recorded: …". The time you spent on the claim is recorded with it.
-7. **Change the inputs and re-check.** On the **Explanation** tab, **Edit text** turns the
-   explanation into an editable box; change a figure or a reason, then press **Verify** (or
-   Ctrl/Cmd+Enter). **Show checked text** returns to the underlined view without re-checking.
-   In the **Ledger** section, **Upload CSV** checks the explanation against your own ledger
-   export, **Use scenario ledger** switches back, and **Download CSV** gives you the selected
-   close's ledger, which doubles as a template for the format.
-
-### What each verdict asks of you
-
-| Verdict | Means | What to do |
-|---|---|---|
-| **PASS** | Every check that ran agrees with the ledger, and at least one check ran. | Nothing. Audit a few with **All** if you like. |
-| **FAIL** | The ledger contradicts the sentence: wrong amount or direction, a cause that did not move, or a cause that explains less than the wording claims. | Confirm it, or record why Proven is wrong. |
-| **REVIEW** | The ledger cannot settle it: the cause was not found, the match is weak, an expense may be misbooked, or the amount is close but outside tolerance. | Look at the evidence and decide. |
-
-Underline colours follow the verdict (lime green PASS, red FAIL, amber REVIEW). The verdict is
-always also written out in text, so nothing relies on colour alone.
-
-### The Reconstruction rows
-
-| Row | Shows |
-|---|---|
-| **Account** | The account the sentence is about. "mapped by the model" means no alias in the sentence named it, so the claim cannot be decided without you. |
-| **Ledger** | Prior balance → current balance, the change and the % change. |
-| **Stated** | What the sentence claims: rose/fell, the change, a percentage, "to" a balance, "from" a balance. |
-| **Reason** | The stated cause, and how much of the movement the wording claims for it: "the whole movement" (*because of*, *due to*), "most of the movement" (*primarily*) or "part of the movement" (*partly*). |
-| **Searched** | The words looked for in vendor names and memos, labelled by origin: *written* (in the sentence), *lexicon* (declared synonyms), *learned* (a lesson a reviewer confirmed) or *model* (proposed by a model extractor). |
-| **Matched** | How many transactions matched, how much they moved, and what share of the account's change that is, against the share the wording needs (75% for *because of*, 50% for *primarily*, 10% for *partly*). |
-| **If reclassified** | The account's change if the possibly misbooked expenses were moved back. |
-
-### The Checks list
-
-| Check | Outcomes |
-|---|---|
-| **direction** | *agree* / *disagree* |
-| **change**, **percent**, **current**, **prior** | *agree* (within 5%, or within the precision the figure was written to) / *near* (5–10% off: REVIEW) / *disagree* (more than 10% off: FAIL) |
-| **attribution** | *supported* / *partial* / *wrong cause* / *not found* / *weak match* / *model only* |
-| **classification** | *clear* / *flagged* |
-
-A check shown as *skipped* did not run, with the reason beside it: for example "no percent
-stated", or a movement below the $1,000 materiality threshold.
-
-### Finding codes
-
-| Code | Severity | Meaning | What to look at |
-|---|---|---|---|
-| `WRONG_AMOUNT` | confirmed → FAIL | The stated change is more than 10% off the ledger's. | The largest movements; whether something is misbooked. |
-| `WRONG_DIRECTION` | confirmed → FAIL | It says "rose" and the account fell, or the reverse. | The ledger row. |
-| `WRONG_PERCENT` | confirmed → FAIL | The stated percentage change is off. | The ledger's % column. |
-| `WRONG_BALANCE` | confirmed → FAIL | A stated "to"/"from" balance is off. | The ledger row. |
-| `…_NEAR` | advisory → REVIEW | Any of the four above, 5–10% off: close, but outside tolerance. | Whether the rounding is acceptable. |
-| `WRONG_CAUSE` | confirmed → FAIL | The cause's transactions moved less than 25% of the change (10% when the sentence says *partly*). | The evidence: the cause's flat transactions, then the real movers. |
-| `PARTIAL_EXPLANATION` | confirmed → FAIL | The cause explains some, but less than the wording claims. | The unexplained movers in the evidence. |
-| `REASON_NOT_FOUND` | advisory → REVIEW | No transaction mentions the stated cause. | The real movers listed; the cause may be recorded in other words. |
-| `WEAK_REASON_MATCH` | advisory → REVIEW | Only part of the reason's wording matched, so the matched transactions may belong to another cause. | Whether the matched memos really are this cause. |
-| `REASON_NOT_SEARCHABLE` | advisory → REVIEW | The reason contains only generic words. | The movers. |
-| `SUPPORT_RESTS_ON_MODEL_TERMS` | advisory → REVIEW | The cause is supported only by words the model proposed. | Whether those transactions belong to the cause. |
-| `POSSIBLE_MISCLASSIFICATION` | advisory → REVIEW | An expense of this cause sits in an account its vendor does not normally use: missing from this account, or inflating it. | The vendor's usual account; the reclassified change. |
-| `ACCOUNT_NOT_FOUND` | advisory → REVIEW | The sentence names no account in the chart. | Which account is meant. |
-
-### Resolve actions
-
-| Action | Use when | Teaches Proven something? |
-|---|---|---|
-| **Confirm defect** | The explanation is wrong. This is the product working. | No: it is the value delivered. |
-| **Wrong evidence** | The explanation is right; Proven matched the wrong transactions. | Yes |
-| **Misread sentence** | Proven read the account, amount or reason wrongly. | Yes |
-| **Accept convention** | Rounding, wording or a booking convention Proven should learn. | Yes |
-| **Out of scope** | It is a judgement, not something the ledger can settle. | No, by design |
-| **Missing evidence** | The ledger supplied does not contain what is needed. | No: it is a data request |
-
-Locally, resolutions are appended to `.proven/resolutions.jsonl`. On the hosted demo they are
-temporary.
-
-### Teaching Proven, and the lesson check
-
-Choosing one of the three teaching actions on a claim with a stated reason opens **Teach
-Proven** under the Resolve menu. A lesson is a phrase and the ledger words it stands for:
-"When the stated reason says" (filled in with the claim's reason) and "search the ledger for"
-(your words, comma separated). Leave the words empty to record the decision without teaching.
-
-- **Check before you confirm.** **Check with the safety gate** replays the lesson against
-  explanations known to be wrong or right, and stores nothing. The answer is in words:
-  **Gate: safe** (with how many known claims it replayed), **Gate refuses** (with an example
-  sentence that would wrongly pass or fail) or **Not tested** (nothing known uses the phrase,
-  so check the transactions yourself). It ends with the effect here: "This claim: REVIEW →
-  PASS".
-- **Record.** The same check runs again when you press **Record**; a refused lesson is not
-  stored, and the refusal appears in the form. A lesson that turns the claim into a PASS also
-  needs the tick box confirming you checked the matched transactions. A sentence you recorded
-  as **Confirm defect** becomes a known-wrong case: no later lesson may make it pass. A lesson
-  is also refused when one of its words matches only this account's routine, unmoved lines or
-  is not needed for the claim to pass, and when its words cover only some of a vendor's new
-  charges that month; the refusal names the words
-  ([why](docs/teaching.md#lessons-keep-only-the-words-their-cause-needs)).
-- **Lessons.** **Learned → Lessons** lists what was taught, with the sentence it came from and
-  **Remove**. A lesson applies to every close until it is removed.
-- **Teach next.** When a model extractor's words are the only support for a claim's reason, the
-  claim waits in REVIEW and its run is stored. **Learned → Teach next** groups these pending
-  claims by the lesson that would settle them, the one reaching the most waiting claims first.
-  Each row shows the phrase and proposed words, how many claims wait, how many the rules would
-  then decide, and the gate's verdict. **Open** loads the run into Review with the Teach form
-  filled in; it does not confirm anything. With the Rules extractor alone the queue is empty
-  ("Nothing waits yet.").
-
-Locally, lessons are kept in `.proven/lexicon.jsonl` and pending runs in `.proven/pending.jsonl`.
-The gate's method and its measured limits are in [docs/teaching.md](docs/teaching.md).
-
-### Checking Proven against an answer key
-
-The **Close** menu also lists synthetic closes from the held-out test split, one per error type.
-Each has a line under the text on the **Explanation** tab, for example:
-
-> Ground truth (synthetic): wrong cause — must fail; culprit transactions TX-1057, TX-1046. The
-> other 2 claim(s) are correct.
-
-Check that the target claim got the required verdict, that its finding cites those transaction
-IDs, and that the other claims passed.
-
-The hand-written example (Tidewater Coffee Roasters) adds an **Answer key** tab beside Claims
-and Explanation. For each sentence it shows Proven's verdict, what the key requires, whether
-the two agree ("agrees" / "differs"), the key's reasoning, and a button to open the claim.
-
-### The Benchmark tab
-
-It runs the full synthetic benchmark on the server: choose the **Split** (the held-out test
-split by default), the number of **Closes** (440 by default) and the **Extractor** (Rules, or
-the Oracle, which is handed the generator's own claims), then **Run all phrasings**. It runs
-automatically the first time you open the tab and takes a few seconds.
-
-- **Summary** compares *seen* phrasing (wording the lexicon covers), *held-out* phrasing (the
-  same causes in words it has never seen) and *paraphrase* (the sentences themselves
-  rewritten). The rows to watch are **Controls failed** and **Unsafe PASS**, which must both
-  be 0. **Decided without a person** is coverage, reported separately on purpose.
-- **By family** breaks the results down by error type. Use **Seen** / **Held-out** /
-  **Paraphrase** to switch phrasing. **Met** is the share meeting the family's requirement,
-  shown in red below 90%.
-  **Finding raised** is whether the expected finding appeared, and **Evidence recall** is
-  whether the culprit transactions were cited.
-
-### A three-minute walkthrough of the demo close
+On the demo close, in the live demo or locally:
 
 1. **Coverage:** 9 claims, 4 PASS, 3 FAIL, 2 REVIEW, and one sentence ("…$1.2M quarterly
    run-rate") listed under the claims as not extracted rather than hidden.
@@ -273,6 +94,17 @@ automatically the first time you open the tab and takes a few seconds.
    amount matches the books, but the misbooked invoice is still flagged.
 8. **Benchmark:** 0 unsafe PASS and 0 failed controls under all three phrasings, and coverage
    falling from 90% to 11% on unseen wording, which is what the model-assisted extractor is for.
+
+Each claim gets one of three verdicts:
+
+| Verdict | Means | What to do |
+|---|---|---|
+| **PASS** | Every check that ran agrees with the ledger, and at least one check ran. | Nothing. Audit a few with **All** if you like. |
+| **FAIL** | The ledger contradicts the sentence: wrong amount or direction, a cause that did not move, or a cause that explains less than the wording claims. | Confirm it, or record why Proven is wrong. |
+| **REVIEW** | The ledger cannot settle it: the cause was not found, the match is weak, an expense may be misbooked, or the amount is close but outside tolerance. | Look at the evidence and decide. |
+
+Every part of the screen (the reconstruction rows, the checks, the finding codes, the resolve
+actions, teaching and the safety gate) is described in [`docs/review-guide.md`](docs/review-guide.md).
 
 ---
 
@@ -428,44 +260,14 @@ amount and direction checks still decide. Binding a reason to transactions by wo
 decides almost nothing. It degrades *safely*: everything goes to REVIEW, with zero unsafe PASSes
 and zero false FAILs.
 
-That gap is the case for the model-assisted extractor. The next section measures how much of
+That gap is the case for the model-assisted extractor. The next two tables measure how much of
 it a model can close.
 
-### With a model proposing
+### With a model drafting lessons
 
-Same 440-close test split, held-out phrasing. The Claude rows replay cached answers from one
-live run of `claude-sonnet-5-5` (`--extractor claude --model claude-sonnet-5-5`). The oracle
-(`--extractor oracle`) feeds the generator's own gold proposals through the checker, so it is the
-ceiling for any model.
-
-| Proposer | Guard | Decided | Mean reward | Correct passed | Correct **failed** | **Unsafe PASS** |
-|---|---|---:|---:|---:|---:|---:|
-| Rules | default | 11.0% | 0.164 | 0 / 810 | 0 | 0 |
-| Claude Sonnet | default | 11.0% | 0.180 | 0 / 810 | 0 | 0 |
-| Oracle | default | 11.0% | 0.186 | 0 / 810 | 0 | 0 |
-| Claude Sonnet | `--anchor-model-terms` | 38.1% | 0.431 | 283 / 810 | 0 | **12** |
-| Oracle | `--anchor-model-terms` | 60.7% | 0.690 | 542 / 810 | 0 | 0 |
-
-Three things follow.
-
-- **A model's terms may not fail a claim either.** Before the guard covered FAIL, the same Sonnet
-  run failed 68 correct explanations, every one on model-proposed terms that caught only one of
-  a cause's two invoices. Those claims now go to REVIEW (`REASON_FOUND_ONLY_BY_MODEL_TERMS`).
-- **Letting model terms anchor a PASS is unsafe with a real model.** The experimental
-  `--anchor-model-terms` policy is clean on gold terms and produces 12 unsafe PASSes on Sonnet's:
-  six where a vague reason ("the second location") drew a term that matched a neighbouring
-  cause's invoices, six where the terms covered the change and hid a misbooked transaction. It is
-  off by default and should stay off.
-- **A model must not be able to remove what a sentence says.** A local 7B model sometimes returned
-  a claim with the stated reason left out; the claim was then checked on its amount alone, and two
-  wrong explanations passed. `admit()` now keeps any reason or figure the rules can read in the
-  sentence when a proposal omits it. A proposal can add to the reading, never subtract from it.
-- **The route across the gap is a person, once.** In the Sonnet run 710 of the 810 correct
-  explanations sit in REVIEW only because their support rests on model terms. A reviewer who
-  confirms such a term teaches it to the learned lexicon (`learned.py`, "Teach Proven" in the
-  console); from then on the written words bind and the ledger decides.
-
-### What confirmed lessons buy
+A model's search terms alone can never turn a claim into a PASS or a FAIL: such a claim waits in
+REVIEW until a reviewer confirms the terms once, as a lesson. From then on the written rules
+bind those words, and no model runs at check time.
 
 `python3 -m proven teach-sim` plays that reviewer. It teaches from the first 220 test closes and
 measures the other 220 with the **rules alone**: no model runs at check time. A claim is taught
@@ -491,37 +293,30 @@ held-out reasons), so the curve saturates far sooner than real commentary would.
 is the shape of the system: the model's job is to draft lessons, a person confirms each once, and
 after that the deterministic rules decide.
 
-Local open-weight models, through Ollama on an M5 Pro, on 40 held-out closes (77 controls, 24
-defects). No model run broke a kill criterion; what differs is how many usable lessons each
-drafts from the same 40 closes, and what those lessons do on the next 40:
+The runs behind this (a model proposing with and without the guard, untuned local models
+through Ollama, and the incidents that tightened the lesson rules) are in
+[`docs/results.md`](docs/results.md).
 
-| Proposer | Decided, default guard | Control FAIL | Unsafe PASS | Lessons from 40 closes | Decided on the next 40 after teaching |
-|---|---|---|---|---|---|
-| llama3.1:8b | 10.9% | 0 | 0 | 1 | 10.6% |
-| qwen2.5:7b | 10.9% | 0 | 0 | 4 | 17.3% |
-| qwen2.5:14b | 10.9% | 0 | 0 | 7 | 22.1% |
-| qwen3.5:9b (q4) | 9.9% | 0 | 0 | 7 | 24.0% |
-| Claude Sonnet | 10.9% | 0 | 0 | 31 | 71.2% |
+### On companies it has never seen
 
-(Untaught, the next 40 closes sit at 9.6% decided. qwen3.5:9b failed to extract 3 of the 24
-defective claims at all; those count as missed, not passed.) So the proposer's quality matters
-after all, but as a drafter of lessons rather than as a judge: that is the place a stronger or
-fine-tuned model would pay.
+The same loop on worlds no proposer was built around: new industries, each with its own chart,
+vendors and memo wording, written by a different model from the training worlds, with the
+protocol fixed before any model was scored. Held-out phrasing, 50 closes taught from and 50
+measured per world:
 
-The first run of this simulation passed three wrong explanations. A correct lesson
-("board coverage" → d&o) left the stray word "coverage" free to match an unrelated cyber-coverage
-invoice, and together they covered a movement the stated reason only half explained. A lesson now
-replaces its trigger's words instead of adding to them (`claims.anchored_terms`). It also keeps
-only the ledger words its own claim's PASS needs (`learned.trim_terms`), after a guessed vendor
-name, confirmed along with the right word, later carried two wrong explanations to PASS on a
-new suite. A third rule refuses a lesson whose words cover only part of a vendor's new charges.
-The rules, the incidents behind them and their cost are in
-[docs/teaching.md](docs/teaching.md#lessons-keep-only-the-words-their-cause-needs).
+| Suite | Proposer | Decided | Control FAIL | Unsafe PASS |
+|---|---|---:|---:|---:|
+| Unseen (11 worlds) | Oracle (ceiling) | 89.3% | 0 | 0 |
+| Unseen (11 worlds) | Claude Sonnet 5.5 | 81.7% | 0 | 0 |
+| Unseen (11 worlds) | Fine-tuned Qwen2.5-3B, vote of 4 | 61.3% | 0 | 0 |
+| Sealed (9 worlds) | Claude Sonnet 5.5 | 80.5% | 0 | 0 |
+| Sealed (9 worlds) | Fine-tuned Qwen2.5-3B | 57.8% | 0 | 0 |
+| Audit (pre-registered) | Claude Sonnet 5.5 | 78.5% | 0 of 1,193 | 0 of 429 |
 
-There is also a `paraphrase` tier (`--phrasing paraphrase`) whose train and test phrases are
-disjoint from each other and from the held-out tier, and a hand-written close
-(`proven/examples/`, a coffee roaster) whose answer key was committed before Proven ran on it.
-No defective sentence in it passes; several correct ones go to REVIEW over one unmatched word.
+The audit suite was run once, with the checker frozen beforehand. Zero unsafe PASS in 429 wrong
+explanations bounds the true rate at 0.70% with 95% confidence, counting claims; counting
+worlds, the bound is 20.6%. Details and every other row are in
+[`docs/finetune.md`](docs/finetune.md).
 
 **What this does not show.** The generator, the lexicon and the checker share an author, so the
 seen-phrasing numbers are a **consistency check, not evidence of accuracy** on real commentary.
@@ -532,12 +327,13 @@ Other limits:
 - One claim per sentence.
 - Two periods.
 - Expense accounts only; no accruals or reversals logic.
-- The Claude extractor has been run live once (Haiku, Sonnet and Opus on 40 closes; Sonnet on
-  440). The open-weight extractor has been run on 40 closes per model, which is a small sample.
+- Every world is synthetic, and the simulated reviewer reads the answer key, so every
+  "decided" figure is an upper bound on a careful person.
+- No run was repeated, so no variance is known.
 
 ---
 
-## The RL plan, and what exists today
+## Training a proposer
 
 The application proposed training on synthetic examples with known causes, rewarding accurate
 judgements backed by the right evidence. Given decision 1, what gets trained is the **proposer**,
@@ -739,7 +535,9 @@ proven/
   tests/        370 tests
 api/index.py    the Vercel function (wraps the same request handler)
 vercel.json     static console from the CDN, /api/* to the function
-docs/           the screenshots in this README
+training/       fine-tuning tools: datasets, world authoring, constrained decoding, RL, 55 tests
+video/          the demo video: Remotion source, script and the final cut
+docs/           write-ups and the screenshots in this README
 ```
 
 | Method | Path | Does |
@@ -753,3 +551,18 @@ docs/           the screenshots in this README
 | GET | `/api/lexicon` | reviewer-confirmed vocabulary |
 | POST | `/api/lexicon/remove` | `{id}` → forget one lesson |
 | GET, POST | `/api/resolutions` | list or record reviewer decisions |
+
+---
+
+## Further reading
+
+| Document | What it covers |
+|---|---|
+| [`docs/review-guide.md`](docs/review-guide.md) | Every part of the review console, with the finding codes and resolve actions |
+| [`docs/results.md`](docs/results.md) | A model proposing with and without the guard; untuned local models |
+| [`docs/teaching.md`](docs/teaching.md) | Lessons, the safety gate, and the incidents behind each lesson rule |
+| [`docs/finetune.md`](docs/finetune.md) | Fine-tuning a local proposer: data, the unseen-worlds benchmark, results, failures and limits |
+| [`docs/redteam.md`](docs/redteam.md) | Wrong explanations reworded by hand and by a fuzzer until they pass: what was fixed and what is open |
+| [`docs/independent.md`](docs/independent.md) | Eight hand-designed companies written blind to the checker's code, scored against an answer key |
+| [`training/README.md`](training/README.md) | How to reproduce the training runs |
+| [`video/README.md`](video/README.md) | How the demo video is built |
