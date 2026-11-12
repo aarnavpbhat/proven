@@ -308,10 +308,14 @@ measured per world:
 |---|---|---:|---:|---:|
 | Unseen (11 worlds) | Oracle (ceiling) | 89.3% | 0 | 0 |
 | Unseen (11 worlds) | Claude Sonnet 5.5 | 81.7% | 0 | 0 |
-| Unseen (11 worlds) | Fine-tuned Qwen2.5-3B, vote of 4 | 61.3% | 0 | 0 |
+| Unseen (11 worlds) | Two fine-tuned Qwen2.5-3B models, wide pool | 69.4% | 0 | 0 |
 | Sealed (9 worlds) | Claude Sonnet 5.5 | 80.5% | 0 | 0 |
-| Sealed (9 worlds) | Fine-tuned Qwen2.5-3B | 57.8% | 0 | 0 |
+| Sealed (9 worlds) | Two fine-tuned Qwen2.5-3B models, wide pool | 75.1% | 0 | 0 |
 | Audit (pre-registered) | Claude Sonnet 5.5 | 78.5% | 0 of 1,193 | 0 of 429 |
+
+The local rows send about 26 search terms a claim where Sonnet sends up to 8, and show a
+reviewer more wrong claims to turn down; within the same limit of 8 the local model decides
+61.3% and 57.8% ([`docs/finetune.md`](docs/finetune.md), section 8a).
 
 The audit suite was run once, with the checker frozen beforehand. Zero unsafe PASS in 429 wrong
 explanations bounds the true rate at 0.70% with 95% confidence, counting claims; counting
@@ -380,6 +384,13 @@ The full account, with every table and the commands, is in
   replies are pooled). Claude Sonnet's leave 81.7%,
   and the ceiling is 89.3%. It loses in all eleven worlds. Control FAIL and unsafe PASS are 0
   for every proposer.
+- **Two small models and a wider net get closer, at a cost.** A second 3B adapter trained
+  only to guess search terms, pooled over four samples with the first model's terms (about
+  26 terms a claim where the prompt asks for 3 to 8), decides 69.4% on the unseen suite and
+  75.1% on the sealed one, against Sonnet's 81.7% and 80.5%. It shows a reviewer about half
+  again as many wrong claims marked "supported" as Sonnet does, and a fixed list of 60 common
+  words with no model at all decides 59.3% on the dev worlds, so part of that score is the
+  net and not the model.
 - **In the one world it was first trained on it scores at the ceiling, by memorising.** 92.5%
   against Sonnet's 88.3%, and an ablation with four cause families removed shows the model
   had learned which words go with which of that world's causes. On the unseen worlds that

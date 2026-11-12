@@ -31,6 +31,8 @@ counts, the fine-tuned models lose to Claude Sonnet by a wide margin.
 | `constrain.py`, `test_constrain.py` | constrained decoding: a byte-level automaton and a vocabulary-trie mask that make every reply admissible by construction |
 | `consensus.py`, `repool.py` | pooling several sampled replies by a ledger-blind vote, and re-pooling saved samples offline |
 | `hit_rate.py` | how often a cached proposer's blind terms find a true cause (what checkpoints and policies are compared on, dev worlds only) |
+| `build_terms_dataset.py`, `two_stage.py` | a terms-only training set (one stated reason in, search terms out), and a proposer made of a copy model plus that term model |
+| `breadth_cost.py` | what a wider term list costs: wrong claims a reviewer is shown as supported |
 | `term_probe.py` | the same question for an untuned model asked for terms only: a way to choose a base model before training it |
 | `lora_clip.py` | `mlx_lm.lora` with the gradient norm clipped (written for the 7B attempt) |
 | `recall_experiment.py` | a rejected experiment: re-offering an account's confirmed words to the proposer (breaks the kill criteria with a weak proposer) |
