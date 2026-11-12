@@ -11,7 +11,16 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
   advance) the best local model, a 3B model with LoRA adapters, leaves 54.4% of held claims
   decided on held-out phrasing and 40.7% on the paraphrase tier (61.3% on held-out when four
   sampled replies are pooled). Sonnet leaves 81.7% and 63.3%;
-  the ceiling is 89.3% and 76.0%. The local model loses in all eleven worlds. No run of any
+  the ceiling is 89.3% and 76.0%. The local model loses in all eleven worlds.
+- **The closest local result is two 3B models and a wide net, and it has a cost.** A second
+  adapter trained only to guess search terms, pooled over four samples with the first model's
+  own terms and no cap (about 26 terms a claim where the prompt asks for 3 to 8), decides
+  69.4% and 54.8% on the unseen suite and 75.1% and 56.9% on the sealed one, where Sonnet
+  decides 80.5% and 62.2%. It still loses 10 of 11 unseen worlds and 6 of 9 sealed ones on
+  held-out phrasing, and it shows a reviewer more wrong claims marked "supported" than Sonnet
+  does (16% to 21% of them against 11% to 13%). A fixed list of 60 common words with no model
+  decides 59.3% on the dev worlds, so part of any wide-net score is the net (section 8a).
+- **Safety held in every run.** No run of any
   proposer has a control FAIL or an unsafe PASS under the current lesson rules, which were
   tightened twice during this work because runs on new worlds did have them (section 9).
 - **In the world it was trained on, the same base model scores at the ceiling, and that is
@@ -38,8 +47,9 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
 - **Constrained decoding** makes every reply admissible by construction (valid schema, copied
   fields are substrings of the explanation, accounts come from the chart) at 0.73 ms per
   decoding step (section 7).
-- **Also measured, and small or null:** pooling four sampled replies by a blind vote adds 6.9
-  points on the unseen suite at five times the inference cost (section 8); twenty steps of multi-world RL
+- **Also measured, and small or null:** pooling four sampled replies by a blind vote within
+  the eight-term limit adds 6.9 points on the unseen suite at five times the inference cost
+  (section 8); twenty steps of multi-world RL
   changed nothing measurable (section 11); re-offering confirmed words to the proposer helps a
   lot and breaks the kill criteria, so it was rejected (section 10).
 - Not done: a 7B result, RL at any scale that would mean something, a real company's books.
@@ -462,6 +472,73 @@ greedy reply, 0 control FAIL and 0 unsafe PASS at every teaching step. That is t
 result in this note, and it is 20.5 points under Sonnet (95% interval -26.2 to -15.3), losing
 all 11 worlds. The paraphrase tier and the sealed suite were not run with pooling.
 
+## 8a. A separate term model, and what a wider net buys
+
+Section 6 ends on a split: copying the sentence, account and figures is a format task the 3B
+model does perfectly, and guessing the bookkeeper's words is a knowledge task. The two were
+then trained apart.
+
+**Stage 2, a term model.** `training/build_terms_dataset.py` writes one row per labelled
+phrase of the 91 training worlds: the teacher's own question (`teacher_terms.BRIEF`: the
+chart's account names and ONE stated reason) and that reason's rebuilt targets (section 6).
+That is 18,095 rows of about 300 tokens (11,060 with a teacher guess the cause's own lines
+contain), against whole closes of about 1,000 tokens before. The same leakage rules apply: no
+transaction in any prompt, measured suites refused, 50 phrases a measured world uses word for
+word dropped, dev worlds for validation only. A LoRA adapter on the same 3B base, 2,000
+iterations at batch 4 (112 minutes), took validation loss from 3.55 to 1.54.
+
+**Two stages together** (`training/two_stage.py`). Stage 1 is the section 6 model's saved
+reply: its quote, account, figures and stated reason are kept. Stage 2 is asked for terms for
+each distinct (account, stated reason). Neither stage sees a transaction, vendor or memo.
+
+On the dev worlds (382 true held-out claims; "wrong shown" is `training/breadth_cost.py`: of
+the 120 claims that must not pass, how many reach the reviewer marked "supported by terms a
+model proposed", untaught; "decided" is the full teaching run):
+
+| Proposer | Terms per claim | Cause found | Wrong shown | Decided |
+|---|---:|---:|---:|---:|
+| Claude Sonnet 5.5 | up to 8 | 80.1% | 16 of 120 | 82.8% |
+| Section 6 model, greedy | up to 8 | 37.7% | 8 of 120 | 55.2% |
+| Section 6 model, vote of 4 (section 8) | up to 8 | 41.6% | 8 of 120 | 61.4% |
+| Two-stage, greedy | up to 8 | 53.4% | 9 of 120 | 55.4% |
+| Two-stage, vote of 4 | up to 8 | 53.9% | 10 of 120 | 56.0% |
+| Two-stage, pool of 4, no cap | about 23 | 68.3% | 14 of 120 | 69.2% |
+| Two-stage, pool of 4 plus stage 1's terms, no cap | about 27 | 75.9% | 16 of 120 | 78.3% |
+| Control: the 24 commonest training-world cause words, every claim | 24 | 47.6% | 25 of 120 | 45.5% |
+| Control: the 60 commonest, every claim | 60 | 62.8% | 32 of 120 | 59.3% |
+
+Every row has 0 control FAIL and 0 unsafe PASS. Three things follow.
+
+- **At the prompt's limit of eight terms the term model is no gain.** It finds the cause for
+  16 points more claims than the section 6 model and the teaching run decides the same
+  share. Finding a cause once is not what teaching needs; the lessons that carry the held
+  half come from the breadth of what was found.
+- **Breadth is most of the gain, and breadth alone scores.** A list of 60 words, the same for
+  every claim, with no model, decides 59.3%: more than the section 6 model. Any "decided"
+  figure from a proposer that sends many terms has to be read against that.
+- **The model's breadth is better than a list's.** At about the same number of terms the pool
+  decides 69.2% where the 24-word list decides 45.5%, and shows the reviewer 14 wrong claims
+  as supported where the list shows 25. The cost of breadth lands on the reviewer: nothing
+  passes on model terms, but a reviewer who confirmed everything would teach a false lesson.
+
+The last configuration was chosen on the dev worlds and run once on each measured suite
+(four samples, 22 minutes of generation per suite on top of stage 1):
+
+| Suite, tier | Section 6 model | Two-stage pool | Sonnet | Worlds won against Sonnet |
+|---|---:|---:|---:|---:|
+| Unseen, held-out | 54.4% | 69.4% | 81.7% | 1 of 11 |
+| Unseen, paraphrase | 40.7% | 54.8% | 63.3% | 0 of 11 |
+| Sealed, held-out | 57.8% | 75.1% | 80.5% | 3 of 9 |
+| Sealed, paraphrase | 44.0% | 56.9% | 62.2% | 3 of 9 |
+
+Control FAIL and unsafe PASS are 0 at every teaching step of all four runs. On the measured
+suites the pool's cost is higher than Sonnet's, which the dev worlds did not show: wrong
+claims shown as supported are 54 and 68 of 330 on the unseen tiers (Sonnet 40 and 39) and 54
+and 46 of 270 on the sealed tiers (Sonnet 35 and 29). So the honest reading is: two 3B models
+on a laptop, sending three times the terms, get within 5 to 12 points of Sonnet and are still
+behind it, with a reviewer shown about half again as many wrong claims to turn down. Sonnet
+was not given the wider net; with one it would presumably also score higher.
+
 ## 9. Two safety gaps the second suite exposed, and the fixes
 
 The first score on the sealed suite was Sonnet's, and it broke a kill criterion: 2 unsafe
@@ -739,6 +816,20 @@ PROVEN_WORLDS_DIR=training/worlds $MLX_PY training/term_probe.py \
     --model mlx-community/Qwen2.5-7B-Instruct-4bit --claims-from proven-qwen3b-worlds2 --samples 4
 PROVEN_WORLDS_DIR=training/worlds $PY training/recall_experiment.py --suite dev --phrasings heldout \
     --models proven-qwen3b-worlds2 claude-sonnet-5-5 oracle
+```
+
+The term model and the two-stage proposer (section 8a). Stage 1's replies are a
+`batch_propose.py --replies` file; choose on the dev worlds, then run a measured suite once:
+
+```sh
+$PY training/build_terms_dataset.py --out $FT/data/terms --worlds training/worlds/train \
+    --dev training/worlds/dev --teacher <teacher_terms.py output>
+$MLX_PY training/lora_clip.py --config <lora-config with batch 4, 2000 iters, max_seq_length 640> \
+    --model $BASE --data $FT/data/terms --adapter-path $FT/adapters/terms
+$MLX_PY training/two_stage.py --keep --claims <stage-1 replies for the suite> --suite unseen \
+    --model $BASE --adapter $FT/adapters/terms --name proven-two-stage --samples 4 --max-terms 99
+$PY -m proven teach-sim --extractor openweight --model proven-two-stage --worlds unseen --phrasing heldout
+$PY training/breadth_cost.py --suite unseen --models claude-sonnet-5-5 proven-two-stage
 ```
 
 RL (section 11):
