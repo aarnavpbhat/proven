@@ -318,9 +318,9 @@ measured per world:
 The local rows send about 26 and about 50 search terms a claim where Sonnet sends up to 8, and
 show a reviewer more wrong claims to turn down (about 2.3 times Sonnet's for the widest pool).
 On the harder paraphrase tier the widest pool decides 68.2% and 69.6% against Sonnet's 63.3%
-and 62.2%. It is not a like-for-like win: held near Sonnet's reviewer cost the local pool is
-4 to 8 points behind on held-out phrasing, and within 8 terms the local models decide about
-60% ([`docs/finetune.md`](docs/finetune.md), sections 8a to 8c).
+and 62.2%. It is not a like-for-like win: cut to Sonnet's 8 terms and Sonnet's reviewer cost,
+the same three-model vote decides 69.2% and 71.4%, 9 to 12 points behind
+([`docs/finetune.md`](docs/finetune.md), sections 8a to 8c).
 
 ![Claims decided against wrong claims shown to the reviewer, local pools and Claude Sonnet](docs/frontier.svg)
 
@@ -403,9 +403,9 @@ The full account, with every table and the commands, is in
   claim), the local proposer decides 81.0% and 68.2% on the unseen suite and 84.4% and 69.6%
   on the sealed one; Sonnet decides 81.7%, 63.3%, 80.5% and 62.2%. No control FAIL, no unsafe
   PASS. The reviewer is shown about 2.3 times as many wrong claims as with Sonnet, and Sonnet
-  was not given the wider net; held near Sonnet's reviewer cost the local pool is behind on
-  held-out phrasing and level or behind on paraphrase. A result about breadth on a laptop, not a
-  like-for-like win.
+  was not given the wider net. Cut to Sonnet's 8 terms and Sonnet's reviewer cost the same vote
+  decides 69.2%, 53.9%, 71.4% and 58.6%, 4 to 12 points behind. A result about breadth on a
+  laptop, not a like-for-like win.
 - **In the one world it was first trained on it scores at the ceiling, by memorising.** 92.5%
   against Sonnet's 88.3%, and an ablation with four cause families removed shows the model
   had learned which words go with which of that world's causes. On the unseen worlds that
