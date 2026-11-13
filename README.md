@@ -309,17 +309,18 @@ measured per world:
 | Unseen (11 worlds) | Oracle (ceiling) | 89.3% | 0 | 0 |
 | Unseen (11 worlds) | Claude Sonnet 5.5 | 81.7% | 0 | 0 |
 | Unseen (11 worlds) | Two fine-tuned Qwen2.5-3B models, wide pool | 69.4% | 0 | 0 |
-| Unseen (11 worlds) | Fine-tuned 3B + 14B term model, wider pool | 77.0% | 0 | 0 |
+| Unseen (11 worlds) | Fine-tuned 3B + 14B term models, widest pool | 81.0% | 0 | 0 |
 | Sealed (9 worlds) | Claude Sonnet 5.5 | 80.5% | 0 | 0 |
 | Sealed (9 worlds) | Two fine-tuned Qwen2.5-3B models, wide pool | 75.1% | 0 | 0 |
-| Sealed (9 worlds) | Fine-tuned 3B + 14B term model, wider pool | **82.3%** | 0 | 0 |
+| Sealed (9 worlds) | Fine-tuned 3B + 14B term models, widest pool | **84.4%** | 0 | 0 |
 | Audit (pre-registered) | Claude Sonnet 5.5 | 78.5% | 0 of 1,193 | 0 of 429 |
 
-The local rows send about 26 and about 39 search terms a claim where Sonnet sends up to 8, and
-show a reviewer more wrong claims to turn down (about twice Sonnet's for the wider pool).
-On the harder paraphrase tier the wider pool decides 64.1% and 66.2% against Sonnet's 63.3%
-and 62.2%. It is not a like-for-like win: within the same limit of 8 terms the local models
-decide about 60% ([`docs/finetune.md`](docs/finetune.md), sections 8a and 8b).
+The local rows send about 26 and about 50 search terms a claim where Sonnet sends up to 8, and
+show a reviewer more wrong claims to turn down (about 2.3 times Sonnet's for the widest pool).
+On the harder paraphrase tier the widest pool decides 68.2% and 69.6% against Sonnet's 63.3%
+and 62.2%. It is not a like-for-like win: held near Sonnet's reviewer cost the local pool is
+4 to 8 points behind on held-out phrasing, and within 8 terms the local models decide about
+60% ([`docs/finetune.md`](docs/finetune.md), sections 8a to 8c).
 
 The audit suite was run once, with the checker frozen beforehand. Zero unsafe PASS in 429 wrong
 explanations bounds the true rate at 0.70% with 95% confidence, counting claims; counting
@@ -395,12 +396,14 @@ The full account, with every table and the commands, is in
   again as many wrong claims marked "supported" as Sonnet does, and a fixed list of 60 common
   words with no model at all decides 59.3% on the dev worlds, so part of that score is the
   net and not the model.
-- **A 14B term model and a wider net pass Sonnet on three of four measured tiers.** With the
-  term guesser trained on Qwen2.5-14B and pooled with the 3B one (about 39 terms a claim), the
-  local proposer decides 77.0% and 64.1% on the unseen suite and 82.3% and 66.2% on the sealed
-  one; Sonnet decides 81.7%, 63.3%, 80.5% and 62.2%. No control FAIL, no unsafe PASS. The
-  reviewer is shown about twice as many wrong claims as with Sonnet, and Sonnet was not given
-  the wider net, so this is a result about breadth on a laptop, not a like-for-like win.
+- **14B term models and a much wider net pass Sonnet on three of four measured tiers.** With
+  the term guesser trained on Qwen2.5-14B and three term models pooled (about 50 terms a
+  claim), the local proposer decides 81.0% and 68.2% on the unseen suite and 84.4% and 69.6%
+  on the sealed one; Sonnet decides 81.7%, 63.3%, 80.5% and 62.2%. No control FAIL, no unsafe
+  PASS. The reviewer is shown about 2.3 times as many wrong claims as with Sonnet, and Sonnet
+  was not given the wider net; held near Sonnet's reviewer cost the local pool is behind on
+  held-out phrasing and level or behind on paraphrase. A result about breadth on a laptop, not a
+  like-for-like win.
 - **In the one world it was first trained on it scores at the ceiling, by memorising.** 92.5%
   against Sonnet's 88.3%, and an ablation with four cause families removed shows the model
   had learned which words go with which of that world's causes. On the unseen worlds that
