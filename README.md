@@ -432,8 +432,8 @@ The full account, with every table and the commands, is in
 - **Reinforcement learning** against the checker's reward (`training/rl.py`, RLOO) runs on
   multi-world episodes. A 20-step run changed nothing measurable. No RL result is claimed.
 
-What does not exist yet: a fine-tuned model that is worth using in place of the hosted one,
-and any measurement on a real company's books.
+What does not exist yet: a local proposer that matches the hosted one at the same cost to the
+reviewer, and any measurement on a real company's books.
 
 ---
 
@@ -561,7 +561,7 @@ proven/
   tests/        370 tests
 api/index.py    the Vercel function (wraps the same request handler)
 vercel.json     static console from the CDN, /api/* to the function
-training/       fine-tuning tools: datasets, world authoring, constrained decoding, RL, 55 tests
+training/       fine-tuning tools: datasets, world authoring, constrained decoding, RL, 60 tests
 video/          the demo video: Remotion source, script and the final cut
 docs/           write-ups and the screenshots in this README
 ```
