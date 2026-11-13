@@ -18,6 +18,10 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
   82.3% and 66.2% on the sealed one, against Sonnet's 81.7%, 63.3%, 80.5% and 62.2%, with no
   control FAIL or unsafe PASS. It shows a reviewer about twice as many wrong claims marked
   "supported" as Sonnet does, and Sonnet was not given the wider net (section 8b).
+  Pooling a third term model (about 50 terms) gives 81.0%, 68.2%, 84.4% and 69.6% at about
+  2.3 times Sonnet's wrong claims shown; held near Sonnet's cost the local pool is 4 to 8
+  points behind on held-out phrasing, and 3 behind and level on the two paraphrase tiers
+  (section 8c).
 - **Two 3B models and a wide net get most of the way, and it has a cost.** A second
   adapter trained only to guess search terms, pooled over four samples with the first model's
   own terms and no cap (about 26 terms a claim where the prompt asks for 3 to 8), decides
@@ -601,6 +605,67 @@ worlds from a single seed are small; and the reviewer is simulated, so the extra
 cost nothing here that they would cost a person. Nothing passes on a model's terms in any
 case: the checker decides, and the wider net only changes what a reviewer is asked.
 
+## 8c. Continued training on 56 more worlds, and a three-model pool
+
+Two further steps, again chosen on the dev worlds and run once on each measured suite.
+
+**More training worlds.** 56 new training worlds were written (Sonnet, industries disjoint
+from every other list, `training/industries-train-d.txt`; $4.08 to write, $5.95 for teacher
+terms), taking the terms set from 18,095 rows over 91 worlds to 29,126 over 147. The 14B term
+adapter of section 8b was trained for 1,400 more iterations on the larger set (1 h 28 min).
+The overlap audit of section 5 moves with it: of the unseen suite's 965 distinguishing memo
+words, 248 are now new to training (288 before) and 38 of 168 causes have no new term (28
+before); 66 phrases a measured world uses were dropped from the rows, as before.
+
+**A three-model pool.** The first 14B adapter's answers were already saved, so pooling them
+with the continued adapter's and the 3B one's costs no generation: twelve sampled answers and
+stage 1's terms, about 50 terms a claim. A second row keeps only the terms at least two
+answers agree on (`--min-votes 2`), about 17 terms a claim.
+
+On the dev worlds (held-out phrasing; Sonnet 82.8% decided, 16 of 120 wrong claims shown):
+
+| Term proposer | Terms a claim | Wrong claims shown | Decided |
+|---|---:|---:|---:|
+| Continued 14B, greedy | up to 8 | 15 of 120 | 64.5% |
+| Continued 14B pool + stage 1's terms | about 30 | 21 of 120 | 85.3% |
+| Continued 14B + 3B pools (the 8b configuration) | about 47 | 23 of 120 | 86.8% |
+| Three-model pool | about 58 | 27 of 120 | 88.6% |
+| Three-model pool, terms two answers agree on | about 20 | 20 of 120 | 84.3% |
+
+Measured suites, decided when fully taught (worlds won against Sonnet in brackets):
+
+| Suite, tier | Sonnet | 8b headline | Same, continued 14B | Three-model pool | Three-model, two agree | Continued 14B, greedy 8 |
+|---|---:|---:|---:|---:|---:|---:|
+| Unseen, held-out | **81.7%** | 77.0% | 79.1% (3 of 11) | 81.0% (5, 2 tied) | 73.9% (1) | 61.9% |
+| Unseen, paraphrase | 63.3% | 64.1% | 64.2% (6, 1 tied) | **68.2%** (10) | 59.9% (2, 1 tied) | 49.2% |
+| Sealed, held-out | 80.5% | 82.3% | 80.8% (4 of 9, 1 tied) | **84.4%** (6, 1 tied) | 76.7% (2, 1 tied) | 59.5% |
+| Sealed, paraphrase | 62.2% | 66.2% | 66.9% (7) | **69.6%** (7) | 62.5% (5) | 49.5% |
+
+Wrong claims shown to the reviewer as supported:
+
+| Suite, tier | Sonnet | Continued 14B + 3B | Three-model pool | Three-model, two agree |
+|---|---:|---:|---:|---:|
+| Unseen, held-out (of 330) | 40 | 79 | 89 | 54 |
+| Unseen, paraphrase (of 330) | 39 | 87 | 99 | 62 |
+| Sealed, held-out (of 270) | 35 | 64 | 71 | 43 |
+| Sealed, paraphrase (of 270) | 29 | 63 | 71 | 45 |
+
+Control FAIL and unsafe PASS are 0 at every teaching step of all 24 runs.
+
+Reading it:
+
+- **More worlds did not move the term model much.** The same configuration with the
+  continued adapter is 2 points up on one tier, 1.5 down on another and level on two: noise
+  at this sample size. Within eight terms it is unchanged. More worlds of the same kind are
+  not what separates a 14B model from Sonnet here.
+- **The three-model pool is ahead of Sonnet on three tiers and 0.7 points behind on the
+  fourth,** by 4 to 7 points on the two paraphrase tiers and on sealed held-out. It does so
+  with about 50 terms a claim and 2 to 2.5 times Sonnet's count of wrong claims shown.
+- **Held near Sonnet's cost it is behind.** Keeping only agreed terms (17 a claim, 1.2 to 1.6
+  times Sonnet's wrong claims shown) it decides 4 to 8 points fewer on held-out phrasing, 3
+  fewer on the unseen paraphrase tier and the same on the sealed one. Section 8b's caveats all still apply: Sonnet was
+  not given a wider net, one seed, a simulated reviewer.
+
 ## 9. Two safety gaps the second suite exposed, and the fixes
 
 The first score on the sealed suite was Sonnet's, and it broke a kill criterion: 2 unsafe
@@ -799,7 +864,8 @@ larger untuned model, pooled with no cap, find fewer than half the causes.
   weaker separation than a different company's real books.
 - **Sentences come from templates.** A world changes the accounts, vendors, memos and phrases,
   not the sentence frames or the ledger generator. A proposer can still learn the frames.
-- **Vocabulary overlaps** (section 5): 28 of 168 measured causes have no term new to training.
+- **Vocabulary overlaps** (section 5): 28 of 168 measured causes have no term new to training
+  (38 once the 56 worlds of section 8c are added).
 - **The hand-written suite is tiny**, and no fine-tuned model has been run on it. No real
   company's commentary has been checked.
 - **The safety gate cannot test words its regression set has never seen** (section 9).
