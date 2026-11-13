@@ -1,0 +1,800 @@
+{
+ "slug": "emergency-restoration-and-flood-cleanup-company",
+ "industry": "emergency restoration and flood cleanup company",
+ "entities": [
+  "Tidewater Restoration Works",
+  "Highwater Recovery Partners",
+  "DryLine Emergency Services",
+  "Blue Basin Flood Response",
+  "Ironclad Restoration Group"
+ ],
+ "accounts": [
+  {
+   "name": "Equipment Rental",
+   "aliases": [
+    "equipment rental",
+    "rental equipment",
+    "rented gear",
+    "equipment hire",
+    "rental fleet spend"
+   ],
+   "narrative": [
+    "Equipment rental",
+    "Rental equipment",
+    "Rented gear"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Equipment Rentals",
+     "base": 14500,
+     "memo": "Monthly rental — air movers and dehumidifiers"
+    },
+    {
+     "vendor": "Keystone Rental Supply",
+     "base": 6200,
+     "memo": "Monthly rental — scaffolding and lifts"
+    }
+   ],
+   "events": [
+    {
+     "key": "pumpsurge",
+     "vendor": "Summit Equipment Rentals",
+     "memos": [
+      "Trash pump surge order — hurricane staging",
+      "Trash pump surge order — hose and fuel kits"
+     ],
+     "cross_memo": "Trash pump surge order — emergency freight",
+     "plain": [
+      "the trash pump surge order",
+      "the hurricane staging pumps",
+      "the trash pump surge"
+     ],
+     "oblique": [
+      "extra machines hauled in ahead of the storm",
+      "the big water-moving push",
+      "hardware we had to grab for the coastal event",
+      "a rush on heavy dewatering capacity",
+      "gear pulled in before landfall",
+      "the storm-week scramble for machinery",
+      "emergency capacity for the downtown basements",
+      "the equipment we staged early",
+      "a one-time ramp-up in muscle",
+      "units brought in for the overflow neighborhoods",
+      "pre-positioned machinery",
+      "the surge in field machinery",
+      "what we leased to keep pace with calls",
+      "the spike in loaner machines",
+      "rushed machinery for the river crest",
+      "added capacity for the weekend onslaught"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "gensets",
+     "vendor": "Gridline Power Rentals",
+     "memos": [
+      "Gridline generator deployment — Marlow hospital wing",
+      "Gridline generator deployment — fuel and cabling"
+     ],
+     "cross_memo": "Gridline generator deployment — after-hours technician",
+     "plain": [
+      "the Gridline generator deployment",
+      "the Marlow hospital wing generators",
+      "the Gridline generator job"
+     ],
+     "oblique": [
+      "keeping the lights on at the medical site",
+      "backup electricity for a client with no grid",
+      "portable electricity at the care facility",
+      "a power outage workaround for a big customer",
+      "the stand-in electrical supply",
+      "juice for the clinic during the blackout",
+      "temporary current for the sensitive ward",
+      "the standby supply we sent downtown",
+      "electricity we had to bring ourselves",
+      "the outage coverage we provided",
+      "emergency voltage for patients",
+      "a lengthy blackout at a key account",
+      "the self-contained supply at the wing",
+      "the need to run drying without utility service",
+      "powering the job site off-grid",
+      "a client who lost mains service"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Fleet and Vehicle Costs",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "vehicle costs",
+    "truck expenses",
+    "fleet maintenance spend"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Vehicle costs",
+    "Truck expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "RoadReady Fleet Services",
+     "base": 9800,
+     "memo": "Monthly maintenance — service trucks"
+    },
+    {
+     "vendor": "Northway Fuel Cards",
+     "base": 11200,
+     "memo": "Fuel card charges — field vehicles"
+    },
+    {
+     "vendor": "CityLink Insurance Agency",
+     "base": 4100,
+     "memo": "Commercial auto premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "boxtruck",
+     "vendor": "RoadReady Fleet Services",
+     "memos": [
+      "Box truck transmission rebuild — unit 14",
+      "Box truck transmission rebuild — parts and labor"
+     ],
+     "cross_memo": "Box truck transmission rebuild — loaner van",
+     "plain": [
+      "the box truck transmission rebuild",
+      "the unit 14 transmission rebuild",
+      "the box truck rebuild"
+     ],
+     "oblique": [
+      "getting the big hauler moving again",
+      "a gearbox failure on our biggest vehicle",
+      "the mechanical overhaul of a workhorse",
+      "repairs after the drivetrain gave out",
+      "sidelined heavy vehicle fixes",
+      "a breakdown on the haul route",
+      "what it cost to revive the large rig",
+      "the shop bill for the stalled lorry",
+      "an unexpected powertrain job",
+      "bringing the cargo unit back from the dead",
+      "the costly repair on our main carrier",
+      "a vehicle that quit on the highway",
+      "restoring the load-carrying asset",
+      "the unplanned drivetrain work",
+      "a major shop visit for one vehicle",
+      "reviving the oldest hauler"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "wrapfleet",
+     "vendor": "BrightSkin Graphics",
+     "memos": [
+      "BrightSkin vehicle rebrand — decal removal",
+      "BrightSkin vehicle rebrand — new livery install"
+     ],
+     "cross_memo": "BrightSkin vehicle rebrand — design proofs",
+     "plain": [
+      "the BrightSkin vehicle rebrand",
+      "the new livery install",
+      "the BrightSkin livery rebrand"
+     ],
+     "oblique": [
+      "giving the trucks a fresh look",
+      "the new corporate colors on the vans",
+      "repainting our image on wheels",
+      "a visual refresh across the motor pool",
+      "the change in how our vans appear",
+      "stripping off the old look and applying the new",
+      "outward-facing updates on the vehicles",
+      "making every van match the new identity",
+      "the cosmetic overhaul of the lineup",
+      "the new appearance after the acquisition",
+      "redoing the exterior graphics",
+      "a uniform look for all rolling stock",
+      "marketing on the sides of our trucks",
+      "the look-and-feel project for the vans",
+      "signage changes on moving assets",
+      "the corporate makeover of the vehicles"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Drying Supplies and Consumables",
+   "aliases": [
+    "drying supplies",
+    "consumables",
+    "job supplies",
+    "field supplies",
+    "restoration materials"
+   ],
+   "narrative": [
+    "Drying supplies",
+    "Consumables",
+    "Job supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "DryPro Wholesale",
+     "base": 12800,
+     "memo": "Desiccant, plastic sheeting, and tape"
+    },
+    {
+     "vendor": "Anchor Safety Supply",
+     "base": 5400,
+     "memo": "Respirators, gloves, and Tyvek suits"
+    }
+   ],
+   "events": [
+    {
+     "key": "antimicrobial",
+     "vendor": "DryPro Wholesale",
+     "memos": [
+      "Antimicrobial treatment bulk order — Delmar apartments",
+      "Antimicrobial treatment bulk order — sprayer rental"
+     ],
+     "cross_memo": "Antimicrobial treatment bulk order — hazmat disposal",
+     "plain": [
+      "the antimicrobial treatment bulk order",
+      "the Delmar apartments treatment",
+      "the bulk antimicrobial order"
+     ],
+     "oblique": [
+      "the large chemical purchase for the apartment complex",
+      "stopping spores from spreading through the building",
+      "sanitizing product for the multi-unit job",
+      "a heavy buy of disinfecting liquid",
+      "the sanitation push across many units",
+      "what we used to fight growth in the walls",
+      "germ-killing stock for the tenant job",
+      "pallets of cleaner for the residential block",
+      "the wholesale buy for the housing project",
+      "a stockpile of decontamination fluid",
+      "treatment of the whole complex",
+      "the cleanup of a sewage-affected property",
+      "protective chemistry for the big address",
+      "a bulk buy to keep occupants safe",
+      "the mass application job",
+      "the volume purchase for one large client"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "hepafilters",
+     "vendor": "Cleanair Filtration Co",
+     "memos": [
+      "Cleanair HEPA stockpile — Ridgeview warehouse fire",
+      "Cleanair HEPA stockpile — negative air kits"
+     ],
+     "cross_memo": "Cleanair HEPA stockpile — expedited shipping",
+     "plain": [
+      "the Cleanair HEPA stockpile",
+      "the Ridgeview warehouse fire filters",
+      "the HEPA stockpile"
+     ],
+     "oblique": [
+      "scrubbing soot from the air at the burned site",
+      "breathing protection for the blaze aftermath",
+      "air-purification stock after the industrial incident",
+      "what we bought to clear smoke particles",
+      "the particulate control for a torched building",
+      "stock purchased once the flames were out",
+      "ventilation items for the charred facility",
+      "a large buy of air scrubbers for one site",
+      "the smoke residue response",
+      "sealing off contaminated zones during cleanup",
+      "filter inventory for the burn cleanup",
+      "fire-damage air quality work",
+      "clean air gear for a destroyed storage building",
+      "the commercial fire aftermath supplies",
+      "gear to keep dust contained",
+      "the filters we burned through at the blaze"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Subcontractor Labor",
+   "aliases": [
+    "subcontractors",
+    "sub labor",
+    "subcontractor labor",
+    "outside labor",
+    "contract crews"
+   ],
+   "narrative": [
+    "Subcontractors",
+    "Sub labor",
+    "Outside labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinnacle Demo Crews",
+     "base": 22000,
+     "memo": "Demolition and debris removal labor"
+    },
+    {
+     "vendor": "Redline Plumbing and Electric",
+     "base": 16500,
+     "memo": "Licensed trade work on active jobs"
+    },
+    {
+     "vendor": "Cornerstone Drywall Finishers",
+     "base": 13400,
+     "memo": "Rebuild drywall and paint labor"
+    }
+   ],
+   "events": [
+    {
+     "key": "asbestos",
+     "vendor": "Pinnacle Demo Crews",
+     "memos": [
+      "Asbestos abatement crew — Wexford school gym",
+      "Asbestos abatement crew — containment buildout"
+     ],
+     "cross_memo": "Asbestos abatement crew — air clearance testing",
+     "plain": [
+      "the asbestos abatement crew",
+      "the Wexford school gym abatement",
+      "the asbestos abatement work"
+     ],
+     "oblique": [
+      "handling hazardous insulation found mid-job",
+      "specialist removal at the educational building",
+      "a surprise discovery behind the walls",
+      "regulated material that stopped the schedule",
+      "licensed teams for the dangerous find",
+      "the legacy building material problem",
+      "work we hadn't scoped at the gymnasium",
+      "unexpected hazard remediation for the district",
+      "the extra permitting-heavy removal",
+      "cleanup of old toxic construction products",
+      "a delay while experts sealed the area",
+      "the environmental surprise at the campus",
+      "specially certified labor",
+      "pulling out outdated hazardous fibers",
+      "the unplanned safety mitigation",
+      "what the inspector made us do before rebuilding"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "moldremed",
+     "vendor": "Greenfield Environmental",
+     "memos": [
+      "Greenfield mold remediation — Oakhaven townhomes",
+      "Greenfield mold remediation — lab sampling"
+     ],
+     "cross_memo": "Greenfield mold remediation — containment materials",
+     "plain": [
+      "the Greenfield mold remediation",
+      "the Oakhaven townhomes remediation",
+      "the Greenfield mold job"
+     ],
+     "oblique": [
+      "clearing fungal growth across several homes",
+      "a lingering dampness problem in the row houses",
+      "the outsourced cleanup of spreading spores",
+      "specialists for the stubborn fuzzy growth",
+      "the residential block with the musty smell",
+      "bringing in an outside firm for the green stuff",
+      "the contamination that outgrew our own crews",
+      "work on homes that sat wet too long",
+      "a health-related cleanup contract",
+      "the neighborhood project we couldn't staff alone",
+      "teams called in for the townhouse complex",
+      "the lab-verified decontamination",
+      "the property owners' complaint about air quality",
+      "handing the biggest cleanup to experts",
+      "the dark patches on the ceilings",
+      "a multi-unit contamination case"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Disposal and Dumpster Fees",
+   "aliases": [
+    "disposal fees",
+    "dumpster fees",
+    "waste hauling",
+    "debris disposal",
+    "landfill costs"
+   ],
+   "narrative": [
+    "Disposal fees",
+    "Dumpster fees",
+    "Waste hauling"
+   ],
+   "recurring": [
+    {
+     "vendor": "BinMasters Roll-Off",
+     "base": 8700,
+     "memo": "Roll-off dumpster hauls"
+    },
+    {
+     "vendor": "County Transfer Station",
+     "base": 4300,
+     "memo": "Tipping fees — construction debris"
+    }
+   ],
+   "events": [
+    {
+     "key": "sewagehaul",
+     "vendor": "BinMasters Roll-Off",
+     "memos": [
+      "Biohazard sewage haul-out — Lakeshore pump failure",
+      "Biohazard sewage haul-out — tanker surcharge"
+     ],
+     "cross_memo": "Biohazard sewage haul-out — spill containment",
+     "plain": [
+      "the biohazard sewage haul-out",
+      "the Lakeshore pump failure haul",
+      "the sewage haul-out"
+     ],
+     "oblique": [
+      "removing contaminated liquid from the waterfront",
+      "the backup that overwhelmed the treatment line",
+      "special transport for the nasty stuff",
+      "what it took to carry away raw effluent",
+      "the regulated carting after the lift station quit",
+      "the foul overflow cleanup",
+      "moving untreated liquid off the property",
+      "the premium we paid for hazardous transport",
+      "the messy aftermath on the shoreline",
+      "getting rid of a pipeline mishap",
+      "the municipal infrastructure breakdown",
+      "disposal that required a licensed tanker",
+      "removing category three contamination",
+      "the stinky emergency near the lake",
+      "a trucking bill for liquid waste",
+      "the load nobody wanted to touch"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "carpetpurge",
+     "vendor": "EcoCycle Materials",
+     "memos": [
+      "EcoCycle flooring recycle program — Harbor Plaza retail",
+      "EcoCycle flooring recycle program — sorting labor"
+     ],
+     "cross_memo": "EcoCycle flooring recycle program — pickup scheduling",
+     "plain": [
+      "the EcoCycle flooring recycle program",
+      "the Harbor Plaza retail flooring",
+      "the flooring recycle program"
+     ],
+     "oblique": [
+      "diverting ruined rugs from the landfill",
+      "a greener route for ripped-out coverings",
+      "the shopping center's request to reduce waste",
+      "sustainability reporting for a commercial client",
+      "reclaiming soaked materials from the stores",
+      "a customer mandate on environmental goals",
+      "reusing what the flood destroyed",
+      "taking old underfoot materials to be repurposed",
+      "the retail landlord's eco requirement",
+      "processing hundreds of yards of ruined material",
+      "shifting where the trash went",
+      "separating textile material for reuse",
+      "the commitment to a certification target",
+      "handling the mall's cleanup differently",
+      "salvage rather than dumping",
+      "recovering value from torn-up surfaces"
+     ],
+     "low": 8000,
+     "high": 16000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Claims Costs",
+   "aliases": [
+    "insurance",
+    "claims costs",
+    "liability coverage",
+    "insurance and claims",
+    "risk costs"
+   ],
+   "narrative": [
+    "Insurance",
+    "Claims costs",
+    "Liability coverage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborstone Insurance Brokers",
+     "base": 18500,
+     "memo": "General liability premium installment"
+    },
+    {
+     "vendor": "SafeHands Workers Comp",
+     "base": 14200,
+     "memo": "Workers compensation premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "pollution",
+     "vendor": "Harborstone Insurance Brokers",
+     "memos": [
+      "Pollution liability rider — mid-term endorsement",
+      "Pollution liability rider — underwriting surcharge"
+     ],
+     "cross_memo": "Pollution liability rider — broker commission",
+     "plain": [
+      "the pollution liability rider",
+      "the mid-term pollution endorsement",
+      "the pollution rider"
+     ],
+     "oblique": [
+      "expanded protection for contamination exposure",
+      "a policy change our lender insisted on",
+      "extra cover after we took chemical jobs",
+      "paying more for broader safeguards",
+      "the mid-year addition to our paper",
+      "what the underwriter asked for after the audit",
+      "the new clause for environmental incidents",
+      "a higher charge for riskier work",
+      "the policy tweak before the big contract",
+      "the demand from a municipal customer",
+      "insurance paperwork for hazardous work scope",
+      "the premium step-up from our expanded service line",
+      "covering spills we might cause",
+      "the amendment our carrier required",
+      "bigger umbrella for the new contract",
+      "the broker's recommendation on gaps"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "slipclaim",
+     "vendor": "Meridian Claims Adjusters",
+     "memos": [
+      "Meridian third-party injury settlement — Cobb Street job",
+      "Meridian third-party injury settlement — legal review"
+     ],
+     "cross_memo": "Meridian third-party injury settlement — deductible reimbursement",
+     "plain": [
+      "the Meridian third-party injury settlement",
+      "the Cobb Street job settlement",
+      "the third-party injury settlement"
+     ],
+     "oblique": [
+      "resolving a bystander's fall at a work site",
+      "paying out a neighbor who got hurt",
+      "closing out a dispute from a customer's visitor",
+      "what we paid to end the lawsuit threat",
+      "the slip incident outside the property",
+      "an accident involving someone not on our payroll",
+      "the negotiated payoff after the mishap",
+      "the attorney-brokered conclusion",
+      "funds that made the complaint go away",
+      "a visitor who tripped on our hoses",
+      "compensation for a person on the premises",
+      "the amount we agreed to avoid court",
+      "a wrongdoing allegation put to rest",
+      "the resolution of an on-site injury claim",
+      "an outside party's medical bills",
+      "settling up after the stumble"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Emergency Response Labor and Overtime",
+   "aliases": [
+    "overtime",
+    "response labor",
+    "on-call pay",
+    "after-hours labor",
+    "emergency staffing"
+   ],
+   "narrative": [
+    "Overtime",
+    "Response labor",
+    "On-call pay"
+   ],
+   "recurring": [
+    {
+     "vendor": "ProStaff Temp Services",
+     "base": 19500,
+     "memo": "Temporary technician staffing"
+    },
+    {
+     "vendor": "NightOwl Dispatch Center",
+     "base": 7600,
+     "memo": "24-hour call center and dispatch"
+    }
+   ],
+   "events": [
+    {
+     "key": "blizzard",
+     "vendor": "ProStaff Temp Services",
+     "memos": [
+      "Winter storm surge staffing — frozen pipe burst wave",
+      "Winter storm surge staffing — double-time premiums"
+     ],
+     "cross_memo": "Winter storm surge staffing — hotel lodging",
+     "plain": [
+      "the winter storm surge staffing",
+      "the frozen pipe burst wave",
+      "the winter surge staffing"
+     ],
+     "oblique": [
+      "a cold snap that flooded our phones",
+      "burst plumbing across the whole region",
+      "extra bodies needed when temperatures plunged",
+      "the freeze that kept everyone working nights",
+      "holiday-week demand we couldn't predict",
+      "technicians flown in and housed locally",
+      "an avalanche of calls after the deep chill",
+      "the icy week that overran the schedule",
+      "paying premium rates to cover the weather",
+      "labor for the sudden calamity",
+      "the cold emergency that overloaded us",
+      "all-hands response during subzero days",
+      "the wave of ruptured lines",
+      "seasonal spike in water damage jobs",
+      "crews working around the clock for ten days",
+      "the unexpected winter rush"
+     ],
+     "low": 24000,
+     "high": 48000
+    },
+    {
+     "key": "certtrain",
+     "vendor": "Apex Certification Institute",
+     "memos": [
+      "Apex IICRC certification cohort — water damage technician",
+      "Apex IICRC certification cohort — exam fees"
+     ],
+     "cross_memo": "Apex IICRC certification cohort — paid classroom hours",
+     "plain": [
+      "the Apex IICRC certification cohort",
+      "the water damage technician cohort",
+      "the IICRC certification cohort"
+     ],
+     "oblique": [
+      "sending new hires to get their credentials",
+      "paid hours spent in the classroom",
+      "investing in staff qualifications",
+      "the onboarding class for the recruits",
+      "what we spend to make rookies field-ready",
+      "a round of professional licensing for crews",
+      "time away from jobs for study",
+      "upskilling the junior technicians",
+      "the standards program our clients require",
+      "getting people formally approved to work",
+      "an industry credential drive",
+      "the training push before busy season",
+      "a batch of employees sitting for tests",
+      "teaching the new class the trade",
+      "the cost of formal qualifications",
+      "wages paid for time spent learning"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Facilities and Warehouse",
+   "aliases": [
+    "facilities",
+    "warehouse costs",
+    "shop rent",
+    "yard and warehouse",
+    "facility costs"
+   ],
+   "narrative": [
+    "Facilities",
+    "Warehouse costs",
+    "Shop rent"
+   ],
+   "recurring": [
+    {
+     "vendor": "Eastgate Industrial Properties",
+     "base": 15000,
+     "memo": "Warehouse and yard lease"
+    },
+    {
+     "vendor": "Metro Utilities",
+     "base": 3900,
+     "memo": "Electric, water, and gas — main shop"
+    }
+   ],
+   "events": [
+    {
+     "key": "roofrepair",
+     "vendor": "Eastgate Industrial Properties",
+     "memos": [
+      "Roof membrane replacement — building B storm damage",
+      "Roof membrane replacement — tenant cost share"
+     ],
+     "cross_memo": "Roof membrane replacement — interior ceiling repair",
+     "plain": [
+      "the roof membrane replacement",
+      "the building B storm damage",
+      "the membrane replacement"
+     ],
+     "oblique": [
+      "ironically fixing our own leaky ceiling",
+      "the landlord passing along a capital repair",
+      "water coming in at our own depot",
+      "the top of the building giving out",
+      "our share of an overhead structural fix",
+      "a rainy-season failure at headquarters",
+      "covering a portion of the owner's project",
+      "the cover over our inventory area",
+      "patching what the gale peeled off",
+      "a bill from the property owner for upkeep",
+      "protection for the stock room from above",
+      "the repair no one budgeted at the base",
+      "hail damage at our home site",
+      "the house we work from needing its own fix",
+      "the topside work at the depot",
+      "our building's own weather event"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "racking",
+     "vendor": "Steelwise Storage Systems",
+     "memos": [
+      "Steelwise pallet racking expansion — second bay",
+      "Steelwise pallet racking expansion — forklift certification"
+     ],
+     "cross_memo": "Steelwise pallet racking expansion — floor anchoring",
+     "plain": [
+      "the Steelwise pallet racking expansion",
+      "the second bay racking",
+      "the pallet racking expansion"
+     ],
+     "oblique": [
+      "more shelving for the growing inventory",
+      "room to stock extra drying gear",
+      "the growth of our storage footprint",
+      "vertical space added at the depot",
+      "a reorganization of where we keep the gear",
+      "preparing the building for a bigger stockpile",
+      "upgrades that let us hold more machines",
+      "the capacity project on the warehouse floor",
+      "adding places to put the equipment",
+      "the layout change to speed up loadouts",
+      "extending our staging area",
+      "investment in the storage area",
+      "the build-out to cut turnaround time",
+      "metal frames for the new inventory",
+      "making space for the expanded fleet",
+      "a better way to organize heavy items"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

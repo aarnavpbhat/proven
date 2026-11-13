@@ -1,0 +1,713 @@
+{
+ "slug": "ceramics-and-pottery-studio",
+ "industry": "ceramics and pottery studio",
+ "entities": [
+  "Claybound Collective",
+  "Fired Earth Studios",
+  "Kiln & Wheel Co.",
+  "Glazeworks Atelier",
+  "Terracotta Row Pottery"
+ ],
+ "accounts": [
+  {
+   "name": "Kiln Operations",
+   "aliases": [
+    "kiln costs",
+    "firing costs",
+    "kiln operations spend",
+    "kiln running costs",
+    "firing expenses"
+   ],
+   "narrative": [
+    "Kiln costs",
+    "Firing costs",
+    "Kiln operations spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Gas & Power",
+     "base": 4200,
+     "memo": "Natural gas - kiln room, main studio"
+    },
+    {
+     "vendor": "Ironbark Kiln Service",
+     "base": 1800,
+     "memo": "Monthly kiln maintenance contract"
+    },
+    {
+     "vendor": "Pyro Supply House",
+     "base": 950,
+     "memo": "Cones and kiln wash - firing room"
+    }
+   ],
+   "events": [
+    {
+     "key": "elementswap",
+     "vendor": "Ironbark Kiln Service",
+     "memos": [
+      "Heating coil replacement - Skutt unit 3",
+      "Heating coil replacement - labor, downtown studio"
+     ],
+     "cross_memo": "Heating coil replacement - temporary outsourced firing",
+     "plain": [
+      "the heating coil replacement",
+      "the Skutt heating coil work",
+      "the heating coil replacement job"
+     ],
+     "oblique": [
+      "getting the big electric oven running at full heat again",
+      "the burned-out parts inside the third unit",
+      "what the technician swapped out last month",
+      "repairs on our largest piece of firing equipment",
+      "new innards for the workhorse",
+      "the equipment that stopped reaching temperature",
+      "fixing the unit that kept tripping the breaker",
+      "parts and labor for the dead machine",
+      "the overhaul of the most-used oven",
+      "keeping production moving after a mid-load failure",
+      "the worn-out components finally replaced",
+      "the repair the studio manager pushed for",
+      "getting unit three back online",
+      "what it cost to restore peak temperature",
+      "a pricey fix on the older equipment",
+      "the work that stopped our shelf-ware backlog"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "hightemp",
+     "vendor": "Cobalt Ridge Thermal",
+     "memos": [
+      "Salt-glaze chamber retrofit - Cobalt Ridge install",
+      "Salt-glaze chamber retrofit - brick and burners"
+     ],
+     "cross_memo": "Salt-glaze chamber retrofit - permit and ventilation study",
+     "plain": [
+      "the salt-glaze chamber retrofit",
+      "the Cobalt Ridge retrofit",
+      "the salt-glaze chamber build"
+     ],
+     "oblique": [
+      "the new specialty oven for our signature finish",
+      "adding a capability we previously outsourced",
+      "the build-out the owner championed",
+      "a one-time capital-like project in the back yard",
+      "construction behind the main building",
+      "the install that lets us offer a textured surface",
+      "something we never had before this year",
+      "the expansion into a new style of production",
+      "the fabricator's invoices for the new structure",
+      "what we spent to launch the premium line",
+      "the project that took three weeks on site",
+      "a special-purpose firing structure",
+      "the thing the master potter requested for years",
+      "an upgrade tied to the gallery commission",
+      "new masonry and burner work",
+      "the addition that changes what we can sell"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Clay and Raw Materials",
+   "aliases": [
+    "clay purchases",
+    "raw materials",
+    "clay and glaze stock",
+    "material costs",
+    "clay spend"
+   ],
+   "narrative": [
+    "Clay purchases",
+    "Raw materials",
+    "Material costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Redbank Clay Co.",
+     "base": 9800,
+     "memo": "Stoneware clay bodies - 50 lb bags, studio stock"
+    },
+    {
+     "vendor": "Feldspar & Flux Ltd.",
+     "base": 3100,
+     "memo": "Glaze chemicals - feldspar, silica, frits"
+    },
+    {
+     "vendor": "Porcelain Source Inc.",
+     "base": 2400,
+     "memo": "Porcelain slip casting stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "bulkcobalt",
+     "vendor": "Feldspar & Flux Ltd.",
+     "memos": [
+      "Cobalt oxide stockpile - pre-tariff buy",
+      "Cobalt oxide stockpile - warehouse allocation"
+     ],
+     "cross_memo": "Cobalt oxide stockpile - secure storage cabinets",
+     "plain": [
+      "the cobalt oxide stockpile",
+      "the pre-tariff cobalt buy",
+      "the cobalt oxide purchase"
+     ],
+     "oblique": [
+      "stocking up on the blue colorant ahead of price hikes",
+      "the forward purchase the buyer recommended",
+      "a year's supply bought in one go",
+      "the hedge against a duty increase",
+      "what we laid in before costs went up",
+      "the oversized order for our best-selling hue",
+      "buying early to lock the rate",
+      "inventory we will draw down through next year",
+      "a one-time bulk order at the supplier",
+      "the decision to buy twelve months ahead",
+      "stock for the signature indigo line",
+      "the supplier's volume invoice",
+      "a purchase timed to a pending levy",
+      "pantry-loading on a mineral powder",
+      "the big shipment that filled the shelf",
+      "front-loaded supply for the premium glazes"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "newbody",
+     "vendor": "Kestrel Earthworks",
+     "memos": [
+      "Custom porcelain body trial - Kestrel batch 7",
+      "Custom porcelain body trial - test tiles and shipping"
+     ],
+     "cross_memo": "Custom porcelain body trial - lab shrinkage analysis",
+     "plain": [
+      "the custom porcelain body trial",
+      "the Kestrel batch trial",
+      "the custom porcelain trial"
+     ],
+     "oblique": [
+      "developing a whiter paste for the tableware collab",
+      "the experiment on a bespoke recipe",
+      "samples from a new supplier we tried once",
+      "what we spent testing a formula for the hotel order",
+      "the prototype run for the restaurant client",
+      "R&D on a translucent material",
+      "a supplier we only used for the pilot",
+      "trial lots before committing to volume",
+      "the test pallets that arrived in spring",
+      "work toward a finer finish for the new line",
+      "the sampling that preceded the large contract",
+      "an exploratory purchase from a boutique mill",
+      "the pilot material for the dinnerware commission",
+      "the formulation project the head potter led",
+      "small batches to prove out a recipe",
+      "what it took to qualify a new composition"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Glaze Lab and Finishing",
+   "aliases": [
+    "glaze lab",
+    "glazing costs",
+    "finishing supplies",
+    "glaze room spend",
+    "finishing costs"
+   ],
+   "narrative": [
+    "Glaze lab",
+    "Glazing costs",
+    "Finishing supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Spectrum Spray Supply",
+     "base": 2200,
+     "memo": "Spray booth filters and nozzles"
+    },
+    {
+     "vendor": "Brushwork Sundries",
+     "base": 1100,
+     "memo": "Brushes, sponges, wax resist - glaze room"
+    }
+   ],
+   "events": [
+    {
+     "key": "boothrebuild",
+     "vendor": "Spectrum Spray Supply",
+     "memos": [
+      "Spray booth exhaust rebuild - blower and ducting",
+      "Spray booth exhaust rebuild - installer labor"
+     ],
+     "cross_memo": "Spray booth exhaust rebuild - fire inspection fee",
+     "plain": [
+      "the spray booth exhaust rebuild",
+      "the booth exhaust rebuild",
+      "the exhaust rebuild project"
+     ],
+     "oblique": [
+      "making the airflow system pass the safety audit",
+      "the work the insurer insisted on",
+      "replacing the fans that were failing",
+      "what the fire marshal flagged",
+      "a compliance fix for the glazing area",
+      "pulling fumes out of the workspace properly",
+      "the install crew's invoice for the vents",
+      "upgrades after the failed walkthrough",
+      "ventilation we should have done years ago",
+      "the project that closed the glaze room for a week",
+      "protecting staff from airborne particulates",
+      "the contractor who rerouted the pipework",
+      "a safety-driven overhaul in the back room",
+      "new fans and metal channels",
+      "what it took to reopen the finishing area",
+      "an expense our broker required"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "matteline",
+     "vendor": "Opaline Colorworks",
+     "memos": [
+      "Matte glaze reformulation - Opaline consulting",
+      "Matte glaze reformulation - test firings"
+     ],
+     "cross_memo": "Matte glaze reformulation - wasted seconds writeoff",
+     "plain": [
+      "the matte glaze reformulation",
+      "the Opaline reformulation",
+      "the matte reformulation project"
+     ],
+     "oblique": [
+      "fixing the surface that kept crazing",
+      "a specialist hired to solve a defect",
+      "the consultant who diagnosed our flat-finish problem",
+      "what we paid to stop the customer returns",
+      "advice from an outside chemist",
+      "correcting a recipe that stopped working after a supplier change",
+      "the troubleshooting engagement on our best seller",
+      "a defect hunt that took two months",
+      "the expert's fee for the dull-surface range",
+      "work to rescue a flagship product",
+      "the outside lab who rebuilt the formula",
+      "quality repair on the velvet-look line",
+      "resolving pinholes across many pieces",
+      "the audit of our surface chemistry",
+      "money spent making the batch consistent again",
+      "the specialist engagement after complaints"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Studio Rent and Facilities",
+   "aliases": [
+    "studio rent",
+    "facilities",
+    "studio occupancy",
+    "rent and utilities",
+    "building costs"
+   ],
+   "narrative": [
+    "Studio rent",
+    "Facilities",
+    "Building costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harbor Row Properties",
+     "base": 14500,
+     "memo": "Monthly lease - main studio and gallery"
+    },
+    {
+     "vendor": "CityWater Utility",
+     "base": 900,
+     "memo": "Water and sewer - clay reclaim sinks"
+    }
+   ],
+   "events": [
+    {
+     "key": "floorreseal",
+     "vendor": "Harbor Row Properties",
+     "memos": [
+      "Concrete slab regrade - wheel room",
+      "Concrete slab regrade - landlord pass-through"
+     ],
+     "cross_memo": "Concrete slab regrade - slip-resistant coating",
+     "plain": [
+      "the concrete slab regrade",
+      "the wheel room slab regrade",
+      "the slab regrade pass-through"
+     ],
+     "oblique": [
+      "the landlord's bill for fixing the uneven ground surface",
+      "levelling work in the throwing area",
+      "a charge passed along by the building owner",
+      "repairs after water pooled by the wheels",
+      "the structural fix underfoot",
+      "what we owe for the leaning workspace",
+      "a lease-mandated improvement we split",
+      "the contractor visit that closed the area for days",
+      "correcting a slope that damaged the equipment",
+      "the cost share the property manager sent",
+      "stabilising the base of the building",
+      "work that stopped the standing puddles",
+      "the facilities project nobody budgeted",
+      "a capital repair billed through to tenants",
+      "fixing the foundation problem near the drains",
+      "one-off work on the room where we spin pots"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "gallerywall",
+     "vendor": "Lumen Interiors",
+     "memos": [
+      "Gallery track lighting install - Lumen Interiors",
+      "Gallery track lighting install - electrical subcontractor"
+     ],
+     "cross_memo": "Gallery track lighting install - display plinths",
+     "plain": [
+      "the gallery track lighting install",
+      "the Lumen track lighting install",
+      "the gallery lighting install"
+     ],
+     "oblique": [
+      "brightening the retail showroom before the opening",
+      "the refit of the front-of-house space",
+      "what we spent making the shop floor look premium",
+      "a redesign of how customers see the work",
+      "the fit-out for the autumn exhibition",
+      "fixtures that show off the glazes properly",
+      "the designer's invoice for the sales area",
+      "a visual upgrade ahead of the holiday season",
+      "the electricians who rewired the display zone",
+      "an investment aimed at lifting walk-in sales",
+      "new fixtures above the shelves",
+      "the front room makeover",
+      "work done so buyers can judge colour accurately",
+      "the exhibition space refresh",
+      "what we paid to relight the showroom",
+      "the display improvement the marketing lead wanted"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Instruction and Workshop Costs",
+   "aliases": [
+    "class costs",
+    "instruction",
+    "workshop expenses",
+    "teaching costs",
+    "class program spend"
+   ],
+   "narrative": [
+    "Class costs",
+    "Workshop expenses",
+    "Teaching costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Guest Potters Network",
+     "base": 5200,
+     "memo": "Adjunct instructor fees - evening classes"
+    },
+    {
+     "vendor": "Studio Aprons & Tools",
+     "base": 1300,
+     "memo": "Student tool kits and aprons"
+    },
+    {
+     "vendor": "Ceramics Insurance Group",
+     "base": 1700,
+     "memo": "Class liability coverage - monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "visitingmaster",
+     "vendor": "Guest Potters Network",
+     "memos": [
+      "Visiting master residency - Hanami week",
+      "Visiting master residency - travel and lodging"
+     ],
+     "cross_memo": "Visiting master residency - promotional printing",
+     "plain": [
+      "the visiting master residency",
+      "the Hanami residency week",
+      "the master residency"
+     ],
+     "oblique": [
+      "bringing in a celebrated artist from overseas",
+      "the headline teacher we hosted for a week",
+      "what the marquee guest cost us",
+      "a famed craftsperson's stay at the studio",
+      "the sold-out masterclass series",
+      "a special event that filled every seat",
+      "paying a big name to demonstrate technique",
+      "the premium course the owner championed",
+      "an internationally known instructor's fee",
+      "the one-time draw that brought in new members",
+      "a short intensive led by a legend",
+      "the expensive guest who taught our advanced students",
+      "fees and flights for the featured teacher",
+      "an appearance by a revered practitioner",
+      "the high-profile teaching engagement",
+      "a splurge on a star of the field"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "kidscamp",
+     "vendor": "Little Hands Learning",
+     "memos": [
+      "Summer youth camp staffing - Little Hands Learning",
+      "Summer youth camp staffing - background checks"
+     ],
+     "cross_memo": "Summer youth camp staffing - child safety training",
+     "plain": [
+      "the summer youth camp staffing",
+      "the Little Hands camp staffing",
+      "the youth camp staffing"
+     ],
+     "oblique": [
+      "the children's holiday program",
+      "temporary supervisors for the school break",
+      "hiring monitors for under-age participants",
+      "the agency who supplied helpers for the young crowd",
+      "a seasonal programme aimed at families",
+      "paying outside people to watch the kids",
+      "screening and onboarding for the junior sessions",
+      "what we spent to run mornings for youngsters",
+      "a new offering the community manager pitched",
+      "extra headcount through July and August",
+      "the vendor providing adult supervision",
+      "the youth offering that sold out quickly",
+      "a short-term workforce for the small students",
+      "cover for the school-holiday classes",
+      "the temp crew handling the little ones",
+      "a pilot for the under-twelve audience"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Packaging and Shipping",
+   "aliases": [
+    "shipping costs",
+    "packaging",
+    "freight",
+    "fulfillment costs",
+    "outbound shipping"
+   ],
+   "narrative": [
+    "Shipping costs",
+    "Packaging",
+    "Freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "BoxCraft Packaging",
+     "base": 3400,
+     "memo": "Double-wall cartons and foam inserts"
+    },
+    {
+     "vendor": "Swift Parcel Freight",
+     "base": 6100,
+     "memo": "Parcel shipping - online orders"
+    },
+    {
+     "vendor": "Padded Crate Works",
+     "base": 1500,
+     "memo": "Wooden crates for large vases"
+    }
+   ],
+   "events": [
+    {
+     "key": "museumcrating",
+     "vendor": "Padded Crate Works",
+     "memos": [
+      "Museum loan crating - Torrence exhibition",
+      "Museum loan crating - climate-controlled transit"
+     ],
+     "cross_memo": "Museum loan crating - fine art insurance rider",
+     "plain": [
+      "the museum loan crating",
+      "the Torrence exhibition crating",
+      "the museum crating job"
+     ],
+     "oblique": [
+      "getting our showpieces safely to the institution",
+      "the special handling for pieces on display elsewhere",
+      "an art-grade move for the touring show",
+      "what it cost to lend work to the curators",
+      "specialist movers for irreplaceable items",
+      "a one-time shipment with extra protection",
+      "the delicate transport for the retrospective",
+      "bespoke boxes for the borrowed works",
+      "a premium courier run to the other city",
+      "the logistics around the guest exhibition",
+      "wrapping the heirloom collection for travel",
+      "an expensive trip for our most fragile pieces",
+      "the curator-requested packing standard",
+      "moving pottery for a public showing",
+      "the secure delivery to the gallery",
+      "protective builds for the loaned masterworks"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "returnsurge",
+     "vendor": "Reversal Logistics Co.",
+     "memos": [
+      "Holiday breakage reship program - Reversal Logistics",
+      "Holiday breakage reship program - replacement pieces"
+     ],
+     "cross_memo": "Holiday breakage reship program - claims processing",
+     "plain": [
+      "the holiday breakage reship program",
+      "the Reversal reship program",
+      "the breakage reship program"
+     ],
+     "oblique": [
+      "replacing orders that arrived smashed in December",
+      "the wave of damaged deliveries at year end",
+      "free redos for unhappy customers",
+      "goodwill shipments after the carrier mishandled loads",
+      "making buyers whole after a bad peak season",
+      "a seasonal spike in redone deliveries",
+      "an outside team to handle the broken-order mess",
+      "what we paid to send second copies",
+      "cleaning up after the rough shipping stretch",
+      "extra freight for pieces that never survived transit",
+      "customer-service costs after the rush",
+      "a surge of make-good packages",
+      "the fallout from fragile goods arriving in bits",
+      "resending items to angry shoppers",
+      "a third-party firm dealing with the damaged goods backlog",
+      "the cost of fixing a poor delivery season"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Events",
+   "aliases": [
+    "marketing",
+    "events spend",
+    "promotion costs",
+    "craft fair costs",
+    "marketing and shows"
+   ],
+   "narrative": [
+    "Marketing",
+    "Events spend",
+    "Promotion costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pixel & Press Agency",
+     "base": 4800,
+     "memo": "Social media management retainer"
+    },
+    {
+     "vendor": "Craftlink Directory",
+     "base": 600,
+     "memo": "Online maker directory listing"
+    }
+   ],
+   "events": [
+    {
+     "key": "tradeshow",
+     "vendor": "Pixel & Press Agency",
+     "memos": [
+      "Atlanta Made trade show booth - Pixel & Press design",
+      "Atlanta Made trade show booth - banners and displays"
+     ],
+     "cross_memo": "Atlanta Made trade show booth - freight to venue",
+     "plain": [
+      "the Atlanta Made trade show booth",
+      "the Atlanta Made booth",
+      "the Atlanta trade show booth"
+     ],
+     "oblique": [
+      "our presence at the wholesale buying event",
+      "the stand where retailers placed orders",
+      "what we spent to meet boutique buyers",
+      "a big industry gathering in the south",
+      "the display we built for the buyers' market",
+      "a bid to land new stockists",
+      "showcasing the line to store owners",
+      "a one-off outlay for a three-day expo",
+      "the fair where we pitched to shops",
+      "designer fees for our exhibit space",
+      "the push for wholesale accounts",
+      "a booth we staffed all weekend",
+      "the convention outlay the sales head signed off",
+      "exhibiting alongside other makers",
+      "money to be seen by gift-store buyers",
+      "a marquee appearance at the trade fair"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "potterytrail",
+     "vendor": "Tidewater Film Co.",
+     "memos": [
+      "Studio documentary shoot - Tidewater Film Co.",
+      "Studio documentary shoot - editing and licensing"
+     ],
+     "cross_memo": "Studio documentary shoot - premiere screening rental",
+     "plain": [
+      "the studio documentary shoot",
+      "the Tidewater documentary shoot",
+      "the documentary shoot"
+     ],
+     "oblique": [
+      "the short film about how we make things",
+      "a video piece for the streaming platform",
+      "our brand story on camera",
+      "a crew filming the artists at work",
+      "the content push aimed at attracting new customers",
+      "professional footage for the website relaunch",
+      "a production the founder wanted for the anniversary",
+      "what the videographers charged",
+      "behind-the-scenes storytelling for our audience",
+      "a cinematic project in the wheel room",
+      "the media partner's invoice",
+      "footage rights and post-production work",
+      "an image-building piece for the festival circuit",
+      "our first venture into longform video",
+      "the cameras that followed us for a fortnight",
+      "a narrative project to lift the brand"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

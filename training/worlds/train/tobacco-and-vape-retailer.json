@@ -1,0 +1,830 @@
+{
+ "slug": "tobacco-and-vape-retailer",
+ "industry": "tobacco and vape retailer",
+ "entities": [
+  "Ember & Ash Tobacconists LLC",
+  "Cloudline Vape Supply Co",
+  "Harbor Smoke Shops Inc",
+  "Blue Leaf Tobacco Outlets",
+  "Ironwood Vapor Emporium"
+ ],
+ "accounts": [
+  {
+   "name": "Excise Tax Compliance",
+   "aliases": [
+    "excise compliance",
+    "tax compliance",
+    "tobacco tax filings",
+    "excise filings",
+    "stamp and tax costs"
+   ],
+   "narrative": [
+    "Excise compliance",
+    "Tax compliance",
+    "Tobacco tax filings"
+   ],
+   "recurring": [
+    {
+     "vendor": "Statewide Tax Stamp Bureau",
+     "base": 14500,
+     "memo": "Monthly cigarette tax stamp purchase"
+    },
+    {
+     "vendor": "Meridian Compliance Services",
+     "base": 3200,
+     "memo": "Monthly excise return preparation"
+    },
+    {
+     "vendor": "Allied Licensing Group",
+     "base": 1100,
+     "memo": "Retail license maintenance fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "pactfiling",
+     "vendor": "Meridian Compliance Services",
+     "memos": [
+      "Federal PACT Act registration — attorney review",
+      "Federal PACT Act registration — filing fees"
+     ],
+     "cross_memo": "Federal PACT Act registration — courier shipments",
+     "plain": [
+      "the PACT Act registration",
+      "the federal PACT filing",
+      "the PACT registration work"
+     ],
+     "oblique": [
+      "the new federal rules covering mail-order shipments",
+      "getting cleared to ship products across state lines",
+      "paperwork the government now demands for distance sales",
+      "the legal sign-off on our online fulfillment",
+      "new regulatory enrollment for remote customers",
+      "the lawyers' review of delivery sales rules",
+      "registering with the national authorities",
+      "staying legal on parcel orders",
+      "the federal requirement for out-of-state selling",
+      "clearing our web store with regulators",
+      "a one-time government enrollment process",
+      "outside counsel hours on interstate deliveries",
+      "what Washington now expects from direct-to-consumer sellers",
+      "the permit package for shipping nationwide",
+      "regulator-mandated enrollment for our ecommerce channel",
+      "the compliance scramble over shipped orders"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "stateaudit",
+     "vendor": "Harlan Forensic Accountants",
+     "memos": [
+      "Revenue department audit defense — forensic accountants",
+      "Revenue department audit defense — records retrieval"
+     ],
+     "cross_memo": "Revenue department audit defense — storage boxes",
+     "plain": [
+      "the revenue department audit defense",
+      "the audit defense engagement",
+      "the revenue audit defense costs"
+     ],
+     "oblique": [
+      "the state's examination of our past returns",
+      "outside accountants digging through old paperwork",
+      "a government inquiry into prior reporting",
+      "responding to the examiners' questions",
+      "the review that auditors opened on us",
+      "hired experts sorting years of old records",
+      "the inspection of our historical filings",
+      "a tax authority probe of earlier periods",
+      "professional help answering the state's requests",
+      "the examination we had to staff up for",
+      "pulling years of files for the examiners",
+      "the agency's deep dive into our reporting",
+      "defending our past numbers",
+      "specialists engaged to face the examiners",
+      "the retroactive review by the taxing body",
+      "proving our earlier filings were correct"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Vape Hardware Inventory Shrink",
+   "aliases": [
+    "hardware shrink",
+    "device shrink",
+    "vape shrinkage",
+    "hardware losses",
+    "device write-offs"
+   ],
+   "narrative": [
+    "Hardware shrink",
+    "Device shrink",
+    "Vape shrinkage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pioneer Loss Recovery",
+     "base": 2400,
+     "memo": "Monthly shrink reconciliation service"
+    },
+    {
+     "vendor": "Sterling Inventory Counts",
+     "base": 3800,
+     "memo": "Cycle count labor"
+    },
+    {
+     "vendor": "Defect Return Logistics",
+     "base": 1900,
+     "memo": "Return to vendor freight"
+    }
+   ],
+   "events": [
+    {
+     "key": "batteryrecall",
+     "vendor": "Defect Return Logistics",
+     "memos": [
+      "Lithium cell recall — quarantine and disposal",
+      "Lithium cell recall — hazmat freight"
+     ],
+     "cross_memo": "Lithium cell recall — customer refund credits",
+     "plain": [
+      "the lithium cell recall",
+      "the lithium recall disposal",
+      "the lithium cell quarantine"
+     ],
+     "oblique": [
+      "pulling unsafe power packs off the shelves",
+      "the safety notice on rechargeable parts",
+      "getting dangerous stock out of customers' hands",
+      "a manufacturer warning about overheating units",
+      "special handling of fire-risk merchandise",
+      "what it cost to destroy flagged devices",
+      "the alert that forced us to stop selling a batch",
+      "the scrap of units that could ignite",
+      "pulling a faulty production run",
+      "disposing of products deemed hazardous",
+      "the safety scare on a popular model",
+      "removal of risky electronics from every location",
+      "certified disposal of dangerous goods",
+      "the supplier's urgent safety bulletin",
+      "reclaiming product that might catch fire",
+      "a defective batch we had to retire"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "breakin",
+     "vendor": "Northgate Loss Adjusters",
+     "memos": [
+      "Armed burglary loss — Northgate adjusters",
+      "Armed burglary loss — stolen stock count"
+     ],
+     "cross_memo": "Armed burglary loss — emergency door repair",
+     "plain": [
+      "the armed burglary loss",
+      "the burglary stock count",
+      "the armed burglary adjustment"
+     ],
+     "oblique": [
+      "the overnight theft at the Elm Street store",
+      "what thieves took from the back room",
+      "the police report incident",
+      "the stolen merchandise write-down",
+      "a crime that emptied our display cases",
+      "the night someone forced their way in",
+      "goods that walked out the door after hours",
+      "the insurer's visit following a robbery",
+      "shelves cleared by criminals",
+      "product lost to intruders",
+      "the break-in that made local news",
+      "replacing what was carried off",
+      "the theft claim we filed",
+      "an after-hours raid on one location",
+      "tallying what was missing the next morning",
+      "the loss event at our busiest shop"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Age Verification and Retail Compliance",
+   "aliases": [
+    "age verification",
+    "id checking costs",
+    "compliance training",
+    "underage sales controls",
+    "verification systems"
+   ],
+   "narrative": [
+    "Age verification",
+    "ID checking costs",
+    "Compliance training"
+   ],
+   "recurring": [
+    {
+     "vendor": "CheckRight ID Scanners",
+     "base": 2800,
+     "memo": "Monthly ID scanner lease"
+    },
+    {
+     "vendor": "Responsible Seller Academy",
+     "base": 1500,
+     "memo": "Clerk certification subscription"
+    },
+    {
+     "vendor": "Secret Shopper Partners",
+     "base": 2100,
+     "memo": "Monthly mystery shopper audits"
+    }
+   ],
+   "events": [
+    {
+     "key": "sting",
+     "vendor": "Secret Shopper Partners",
+     "memos": [
+      "Minor sales citation — penalty assessment",
+      "Minor sales citation — corrective retraining"
+     ],
+     "cross_memo": "Minor sales citation — legal consult",
+     "plain": [
+      "the minor sales citation",
+      "the citation penalty assessment",
+      "the minor sales citation retraining"
+     ],
+     "oblique": [
+      "a clerk who sold to a teenager during an inspection",
+      "the fine from the city's enforcement operation",
+      "a failed check by undercover officers",
+      "retraining everyone after a bad result",
+      "the penalty that followed a decoy purchase",
+      "punishment for a lapse at the register",
+      "a regulator's sting at one outlet",
+      "the embarrassing slip by a cashier",
+      "what we paid after the authorities tested us",
+      "re-educating all counter staff",
+      "the sanction levied by local officials",
+      "a lapse in carding that got noticed",
+      "the enforcement action against our shop",
+      "reaction to being caught by decoys",
+      "the ticket we received for a checkout mistake",
+      "the fallout of a failed compliance sweep"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "kioskrollout",
+     "vendor": "Verity Biometrics Ltd",
+     "memos": [
+      "Face-estimation kiosks — Verity install",
+      "Face-estimation kiosks — network cabling"
+     ],
+     "cross_memo": "Face-estimation kiosks — staff orientation",
+     "plain": [
+      "the face-estimation kiosks",
+      "the Verity kiosk install",
+      "the face-estimation kiosk cabling"
+     ],
+     "oblique": [
+      "self-service machines that guess a shopper's age",
+      "new hardware at the entrance of each store",
+      "the camera gear we mounted near the doors",
+      "automated screening for walk-in customers",
+      "technology that replaces a human glance at licenses",
+      "the upgrade pitched by our insurance carrier",
+      "scanning stations for the whole chain",
+      "a pilot of machine-based checking",
+      "the equipment we wired into every shop",
+      "modernizing how customers prove their age",
+      "tablets facing shoppers at the counter",
+      "the capital project for smarter checkout screening",
+      "what we spent to automate the carding step",
+      "freestanding devices installed this spring",
+      "the new gadgets customers step up to",
+      "an artificial intelligence screening program"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Flavor Ban Transition Costs",
+   "aliases": [
+    "flavor ban costs",
+    "flavor transition",
+    "product phase-out",
+    "regulatory product changes",
+    "sell-through costs"
+   ],
+   "narrative": [
+    "Flavor ban costs",
+    "Flavor transition",
+    "Product phase-out"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightline Regulatory Consulting",
+     "base": 4200,
+     "memo": "Retainer for product regulation tracking"
+    },
+    {
+     "vendor": "Compliant Labels Inc",
+     "base": 1800,
+     "memo": "Relabeling supplies"
+    },
+    {
+     "vendor": "Shelf Reset Crews",
+     "base": 2600,
+     "memo": "Planogram resets"
+    }
+   ],
+   "events": [
+    {
+     "key": "menthol",
+     "vendor": "Shelf Reset Crews",
+     "memos": [
+      "Menthol prohibition — emergency shelf strip",
+      "Menthol prohibition — overtime crews"
+     ],
+     "cross_memo": "Menthol prohibition — signage replacement",
+     "plain": [
+      "the menthol prohibition",
+      "the menthol shelf strip",
+      "the menthol prohibition overtime"
+     ],
+     "oblique": [
+      "a sudden mint-cooled product ban",
+      "clearing a category overnight",
+      "the order that took a bestseller off sale",
+      "crews working weekends to empty displays",
+      "a rule change that hit our top seller",
+      "the legislature's decision on cooling flavors",
+      "stripping fixtures before the deadline",
+      "what the new statute forced us to pull",
+      "labor spent reorganizing the wall of cigarettes",
+      "a new law that rewrote our assortment",
+      "the abrupt end of a popular line",
+      "extra hours to meet the cutoff date",
+      "rebuilding the display after the legislation",
+      "a mandated removal at all stores",
+      "getting compliant before inspectors arrived",
+      "the legal change affecting a top category"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "fruitseize",
+     "vendor": "Cascade Waste Handlers",
+     "memos": [
+      "Fruit pod destruction — Cascade hauling",
+      "Fruit pod destruction — witnessed incineration"
+     ],
+     "cross_memo": "Fruit pod destruction — inventory credit memo",
+     "plain": [
+      "the fruit pod destruction",
+      "the Cascade pod hauling",
+      "the fruit pod incineration"
+     ],
+     "oblique": [
+      "burning stock we could no longer legally sell",
+      "a truck taking away sweet-flavored cartridges",
+      "disposal of goods rendered worthless by regulation",
+      "the certificate proving we got rid of banned items",
+      "paying to eliminate product we paid to buy",
+      "the scrap of unsellable berry and candy items",
+      "a supervised bonfire of old merchandise",
+      "the haulers who carted away prohibited flavors",
+      "destroying remaining stock under official watch",
+      "the cost of eliminating goods the state barred",
+      "pallets sent for permanent disposal",
+      "legally required elimination of leftover units",
+      "what it took to dispose of the banned lines",
+      "the final chapter for a discontinued assortment",
+      "getting rid of dead inventory the proper way",
+      "witnessed disposal paperwork for the authorities"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Merchant Processing and High-Risk Fees",
+   "aliases": [
+    "merchant fees",
+    "card processing",
+    "high-risk processing",
+    "payment fees",
+    "processor charges"
+   ],
+   "narrative": [
+    "Merchant fees",
+    "Card processing",
+    "Payment fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Redwater Payments",
+     "base": 18500,
+     "memo": "Monthly card processing fees"
+    },
+    {
+     "vendor": "SafeGate Gateway",
+     "base": 2300,
+     "memo": "Online payment gateway fees"
+    },
+    {
+     "vendor": "Chargeback Shield",
+     "base": 1400,
+     "memo": "Dispute management subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "reserve",
+     "vendor": "Redwater Payments",
+     "memos": [
+      "Rolling reserve holdback — underwriting review",
+      "Rolling reserve holdback — term adjustment"
+     ],
+     "cross_memo": "Rolling reserve holdback — wire fees",
+     "plain": [
+      "the rolling reserve holdback",
+      "the reserve holdback underwriting",
+      "the rolling holdback adjustment"
+     ],
+     "oblique": [
+      "the bank tying up part of our sales",
+      "a retained percentage the acquirer now keeps",
+      "cash we cannot touch for six months",
+      "the lender's new view of our risk level",
+      "stricter terms imposed after a review",
+      "money parked by the institution as protection",
+      "a penalty for operating in a touchy category",
+      "the revised contract we had little choice on",
+      "funds withheld against future disputes",
+      "an unwelcome change in our merchant agreement",
+      "the cost of being labeled a risky merchant",
+      "what the underwriters demanded after a re-evaluation",
+      "a slice of daily deposits we no longer receive",
+      "the tougher conditions on our account",
+      "security the payment company wants us to post",
+      "their reassessment of how safe we are"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "gatewaymigrate",
+     "vendor": "Lumen Checkout Systems",
+     "memos": [
+      "Gateway migration — Lumen onboarding",
+      "Gateway migration — token conversion"
+     ],
+     "cross_memo": "Gateway migration — website developer hours",
+     "plain": [
+      "the gateway migration",
+      "the Lumen onboarding",
+      "the gateway token conversion"
+     ],
+     "oblique": [
+      "moving our online store to a new payment partner",
+      "the switch after our old provider dropped us",
+      "re-platforming how web orders get paid",
+      "converting saved customer cards to a new system",
+      "the project forced by a terminated agreement",
+      "a new back end for checkout",
+      "lining up a replacement after being dropped",
+      "the changeover that took all spring",
+      "setting up a fresh company to take web payments",
+      "rebuilding the buy button",
+      "the scramble to keep the web shop taking cards",
+      "transferring stored customer credentials",
+      "the technical project behind our new processor",
+      "relocating payment handling elsewhere",
+      "the work after our prior vendor cut us off",
+      "swapping the plumbing behind online sales"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Store Security and Loss Prevention",
+   "aliases": [
+    "store security",
+    "loss prevention",
+    "guard services",
+    "security costs",
+    "shop protection"
+   ],
+   "narrative": [
+    "Store security",
+    "Loss prevention",
+    "Guard services"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bulwark Alarm Monitoring",
+     "base": 3100,
+     "memo": "Alarm monitoring all stores"
+    },
+    {
+     "vendor": "Evening Watch Guards",
+     "base": 9800,
+     "memo": "Evening guard coverage"
+    },
+    {
+     "vendor": "ClearView Camera Services",
+     "base": 2200,
+     "memo": "Camera maintenance contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "cagedwall",
+     "vendor": "Bulwark Alarm Monitoring",
+     "memos": [
+      "Locked cigarette cage buildout — steel fabrication",
+      "Locked cigarette cage buildout — alarm tie-in"
+     ],
+     "cross_memo": "Locked cigarette cage buildout — display fixtures",
+     "plain": [
+      "the locked cigarette cage buildout",
+      "the cigarette cage fabrication",
+      "the cage buildout alarm tie-in"
+     ],
+     "oblique": [
+      "putting valuable stock behind bars",
+      "ironwork around the product wall",
+      "hardening the area behind the counter",
+      "a physical barrier our insurer asked for",
+      "reinforcing how we hold our priciest goods",
+      "metalworkers on site for two weeks",
+      "securing what thieves target most",
+      "the lockup project at three stores",
+      "enclosures installed after repeated shoplifting",
+      "a fortress treatment for the highest-risk shelves",
+      "fabricated enclosures for premium merchandise",
+      "the carrier's condition for renewing coverage",
+      "construction that keeps customers away from the product",
+      "a retrofit meant to slow down grab-and-run theft",
+      "locked access to our best-selling lines",
+      "the barrier work done last quarter"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "parkinglot",
+     "vendor": "Nightfall Patrol Partners",
+     "memos": [
+      "Parking lot patrol surge — Nightfall mobile units",
+      "Parking lot patrol surge — extra weekend shifts"
+     ],
+     "cross_memo": "Parking lot patrol surge — lighting rental",
+     "plain": [
+      "the parking lot patrol surge",
+      "the Nightfall mobile units",
+      "the patrol surge weekend shifts"
+     ],
+     "oblique": [
+      "extra eyes outside after dark",
+      "vehicles circling our lots at night",
+      "a response to customer safety complaints",
+      "added coverage requested by the landlord",
+      "the temporary boost in outdoor presence",
+      "men in cars watching the front of the shop",
+      "the neighborhood's rising crime spell",
+      "a showing of force outside our doors",
+      "more bodies posted beyond the entrance",
+      "coverage for the troubled strip mall",
+      "what we added after loitering got worse",
+      "a stopgap approach to a bad stretch",
+      "sending in reinforcements for the lot",
+      "the shopping center's push for visible deterrence",
+      "uniformed presence on the exterior",
+      "the stepped-up watch we agreed to for a few weeks"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Distributor Freight and Delivery",
+   "aliases": [
+    "inbound freight",
+    "distributor freight",
+    "delivery costs",
+    "wholesale shipping",
+    "logistics spend"
+   ],
+   "narrative": [
+    "Inbound freight",
+    "Distributor freight",
+    "Delivery costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Wholesale Haulers",
+     "base": 11200,
+     "memo": "Weekly distributor delivery freight"
+    },
+    {
+     "vendor": "Parcel Ridge Express",
+     "base": 4600,
+     "memo": "Store-to-store transfer shipments"
+    },
+    {
+     "vendor": "Dockside Cartage",
+     "base": 2900,
+     "memo": "Warehouse cartage"
+    }
+   ],
+   "events": [
+    {
+     "key": "pallethold",
+     "vendor": "Keystone Wholesale Haulers",
+     "memos": [
+      "Customs hold on imported cigars — demurrage",
+      "Customs hold on imported cigars — storage days"
+     ],
+     "cross_memo": "Customs hold on imported cigars — broker fee",
+     "plain": [
+      "the customs hold on imported cigars",
+      "the cigar customs demurrage",
+      "the imported cigar storage days"
+     ],
+     "oblique": [
+      "a shipment stuck at the port",
+      "goods sitting in a bonded yard waiting for clearance",
+      "our container's long wait at the border",
+      "delays on a foreign order",
+      "a stalled consignment from overseas",
+      "what it cost while officials examined our cargo",
+      "paperwork snags on arrival from abroad",
+      "fees piling up while freight sat idle",
+      "the inspection that held up a premium order",
+      "pallets stranded behind a government gate",
+      "an international delivery that could not be released",
+      "charges for time the load spent waiting",
+      "the clearance bottleneck at the harbor",
+      "a dispute over tariff classification",
+      "our Caribbean import held for review",
+      "extra days of waiting before we got our goods"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "coldchain",
+     "vendor": "Glacier Freight Lines",
+     "memos": [
+      "Humidor cargo expedite — Glacier temperature-controlled truck",
+      "Humidor cargo expedite — climate monitoring"
+     ],
+     "cross_memo": "Humidor cargo expedite — spoiled stock credit",
+     "plain": [
+      "the humidor cargo expedite",
+      "the Glacier temperature-controlled truck",
+      "the humidor cargo climate monitoring"
+     ],
+     "oblique": [
+      "rush delivery of premium goods needing careful conditions",
+      "special transport for fragile leaf products",
+      "speeding up a shipment that could not sit in heat",
+      "a truck with controlled atmosphere for our best items",
+      "moving delicate merchandise before it dried out",
+      "urgent handling for the high-end launch",
+      "an express run to beat a summer heatwave",
+      "the need to keep the product moist en route",
+      "priority carriage for items that spoil easily",
+      "an emergency shipment for the flagship location",
+      "extra spend to protect valuable stock in transit",
+      "environmentally managed transport for one event",
+      "the pricey way we chose to get product in time",
+      "a specialty carrier we hired once",
+      "our response to a delayed supplier before a holiday",
+      "guaranteeing quality on a time-sensitive order"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Store Occupancy and Utilities",
+   "aliases": [
+    "occupancy",
+    "store rent",
+    "occupancy and utilities",
+    "lease costs",
+    "premises spend"
+   ],
+   "narrative": [
+    "Occupancy",
+    "Store rent",
+    "Lease costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Prairie Commercial Properties",
+     "base": 28000,
+     "memo": "Monthly retail lease payments"
+    },
+    {
+     "vendor": "Metro Power and Light",
+     "base": 6400,
+     "memo": "Electric service all stores"
+    },
+    {
+     "vendor": "CleanSweep Janitorial",
+     "base": 3200,
+     "memo": "Janitorial services"
+    }
+   ],
+   "events": [
+    {
+     "key": "ventilation",
+     "vendor": "Metro Power and Light",
+     "memos": [
+      "Lounge exhaust retrofit — utility upgrade charge",
+      "Lounge exhaust retrofit — meter relocation"
+     ],
+     "cross_memo": "Lounge exhaust retrofit — HVAC contractor",
+     "plain": [
+      "the lounge exhaust retrofit",
+      "the exhaust retrofit utility upgrade",
+      "the lounge exhaust meter relocation"
+     ],
+     "oblique": [
+      "clearing smoke out of the sampling room",
+      "air handling work for the cigar parlor",
+      "a fire marshal's requirement for the seating area",
+      "new ductwork carrying fumes outdoors",
+      "construction needed to keep the back room open",
+      "the city's mandate on indoor air quality",
+      "making the customer lounge legally breathable",
+      "work done above the ceiling tiles",
+      "a power company's fee for bigger service",
+      "the upgrade that let us keep the smoking section",
+      "the ventilation order from inspectors",
+      "changes so patrons can light up inside",
+      "reworking airflow in our flagship location",
+      "the capital job tied to our occupancy permit",
+      "what it took to satisfy the health department",
+      "our parlor's overdue air-quality fix"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "relocate",
+     "vendor": "Summit Relocation Movers",
+     "memos": [
+      "School distance relocation — Summit moving crew",
+      "School distance relocation — lease termination penalty"
+     ],
+     "cross_memo": "School distance relocation — new store signage",
+     "plain": [
+      "the school distance relocation",
+      "the Summit moving crew",
+      "the school relocation lease penalty"
+     ],
+     "oblique": [
+      "moving a shop that sat too near a classroom",
+      "the zoning order forcing us to shift locations",
+      "leaving a spot the city no longer allowed",
+      "an early exit from a lease we could not keep",
+      "relocating to satisfy a new buffer rule",
+      "packing out a store on short notice",
+      "the penalty for walking away from a contract",
+      "a legally mandated change of address",
+      "closing down one site and reopening nearby",
+      "the municipal distance requirement",
+      "uprooting a profitable outlet",
+      "trucks and crews for a forced move",
+      "the cost of obeying a new setback law",
+      "shifting inventory to a different storefront",
+      "the local ordinance that ended our tenancy",
+      "a mandatory migration across town"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

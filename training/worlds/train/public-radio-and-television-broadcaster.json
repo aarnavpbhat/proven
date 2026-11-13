@@ -1,0 +1,718 @@
+{
+ "slug": "public-radio-and-television-broadcaster",
+ "industry": "public radio and television broadcaster",
+ "entities": [
+  "Harborlight Public Media",
+  "Prairie Crest Broadcasting Trust",
+  "Cobalt Ridge Public Television",
+  "Meridian Valley Public Radio",
+  "Larkspur Sound & Vision Foundation"
+ ],
+ "accounts": [
+  {
+   "name": "Program Acquisition & Licensing",
+   "aliases": [
+    "programming",
+    "program licensing",
+    "acquired programming",
+    "content licensing",
+    "programming spend"
+   ],
+   "narrative": [
+    "Programming",
+    "Program licensing",
+    "Content licensing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northfield Program Exchange",
+     "base": 24000,
+     "memo": "Monthly syndication fee PO-4410"
+    },
+    {
+     "vendor": "Sterling Documentary Distributors",
+     "base": 13500,
+     "memo": "Doc series license installment"
+    },
+    {
+     "vendor": "Beacon Audio Features",
+     "base": 6200,
+     "memo": "Audio feature subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "orchard_festival",
+     "vendor": "Northfield Program Exchange",
+     "memos": [
+      "Orchard Jazz Festival — broadcast rights PO-5521",
+      "Orchard Jazz Festival — encore rights window"
+     ],
+     "cross_memo": "Orchard Jazz Festival — promo spot production",
+     "plain": [
+      "the Orchard Jazz Festival rights",
+      "the Orchard Jazz Festival package",
+      "the Orchard Jazz Festival broadcast"
+     ],
+     "oblique": [
+      "the summer concert series we picked up",
+      "a live music event carried statewide",
+      "the outdoor performance weekend",
+      "a one-time arts special",
+      "the extra concert coverage the board wanted",
+      "music programming added late in the quarter",
+      "the live weekend lineup",
+      "what we paid to air the headliners",
+      "a marquee entertainment event",
+      "a seasonal showcase",
+      "the festival-style airing",
+      "new live performances on the schedule",
+      "an event tied to the regional tourism push",
+      "the special we slotted into prime evenings",
+      "a pop-up concert block",
+      "the one-off music deal"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "kestrel_wars",
+     "vendor": "Kestrel Heritage Films",
+     "memos": [
+      "Kestrel Heritage Films — Tidewater Wars archive license PO-5588",
+      "Kestrel Heritage Films — Tidewater Wars restoration surcharge"
+     ],
+     "cross_memo": "Tidewater Wars archive license — legal clearance review",
+     "plain": [
+      "the Tidewater Wars archive license",
+      "the Tidewater Wars restoration",
+      "the Kestrel Heritage Tidewater Wars deal"
+     ],
+     "oblique": [
+      "a historical miniseries we bought",
+      "the period documentary acquisition",
+      "old footage we had to clear",
+      "a history project for the fall lineup",
+      "what the curators asked us to secure",
+      "the military history piece",
+      "a multi-part film about the past",
+      "the archival purchase",
+      "a deal with a film library",
+      "the history block",
+      "a nonfiction series from a rights holder",
+      "footage cleaned up for broadcast",
+      "the one-time heritage purchase",
+      "a prestige history title",
+      "the veterans-month programming",
+      "an old-footage licensing deal"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Transmitter Site & Tower Costs",
+   "aliases": [
+    "transmitter",
+    "tower costs",
+    "transmission sites",
+    "site operations",
+    "tower and transmitter spend"
+   ],
+   "narrative": [
+    "Transmitter",
+    "Tower costs",
+    "Transmission sites"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Tower Leasing",
+     "base": 19000,
+     "memo": "Monthly tower lease PO-3302"
+    },
+    {
+     "vendor": "Ridgeline Power Co-op",
+     "base": 8800,
+     "memo": "Electric service mountain sites"
+    },
+    {
+     "vendor": "AeroNav Site Maintenance",
+     "base": 4300,
+     "memo": "Scheduled site inspections"
+    }
+   ],
+   "events": [
+    {
+     "key": "antenna_array",
+     "vendor": "Summit Tower Leasing",
+     "memos": [
+      "Mount Calloway antenna array replacement WO-7714",
+      "Mount Calloway antenna array — crane mobilization"
+     ],
+     "cross_memo": "Mount Calloway antenna array — temporary low-power rental",
+     "plain": [
+      "the Mount Calloway antenna array",
+      "the Mount Calloway array replacement",
+      "the Mount Calloway crane work"
+     ],
+     "oblique": [
+      "swapping out what sends the signal skyward",
+      "the work after the ice storm",
+      "a major hardware change on the peak",
+      "getting coverage back to the valley",
+      "the lift operation on the summit",
+      "the emergency broadcast hardware swap",
+      "what the engineers flagged as failing",
+      "a replacement of aging gear at altitude",
+      "the signal-restoration effort",
+      "a safety-driven upgrade up high",
+      "a costly day with heavy lifting equipment",
+      "the stopgap that kept us on air",
+      "an unplanned capital-style repair",
+      "rebuilding our reach in the north",
+      "the winter damage fix",
+      "the outage recovery"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "lakeshore_gen",
+     "vendor": "Lakeshore Standby Systems",
+     "memos": [
+      "Lakeshore Standby Systems — Pinecrest backup generator install PO-7790",
+      "Pinecrest backup generator — fuel tank commissioning"
+     ],
+     "cross_memo": "Pinecrest backup generator — air permit filing",
+     "plain": [
+      "the Pinecrest backup generator",
+      "the Pinecrest generator install",
+      "the Pinecrest backup generator commissioning"
+     ],
+     "oblique": [
+      "insurance against blackouts at the remote site",
+      "the resiliency project the regulators encouraged",
+      "power we can count on when the grid fails",
+      "a new source of emergency electricity",
+      "the storm-readiness upgrade",
+      "a purchase after last year's extended outage",
+      "keeping the lights on at the hilltop facility",
+      "a safeguard for continuous airing",
+      "the fuel-burning standby equipment",
+      "the continuity project",
+      "something to prevent dead air",
+      "a one-time installation out in the pines",
+      "the disaster preparedness item",
+      "engineering's top reliability request",
+      "the grid-independence work",
+      "a new emergency power setup"
+     ],
+     "low": 12000,
+     "high": 25000
+    }
+   ]
+  },
+  {
+   "name": "Music Licensing & Royalties",
+   "aliases": [
+    "royalties",
+    "music licensing",
+    "performance rights",
+    "music rights",
+    "licensing fees"
+   ],
+   "narrative": [
+    "Royalties",
+    "Music licensing",
+    "Performance rights"
+   ],
+   "recurring": [
+    {
+     "vendor": "Allegro Performance Rights Society",
+     "base": 11200,
+     "memo": "Blanket performance license monthly"
+    },
+    {
+     "vendor": "Cadence Mechanical Royalties",
+     "base": 5600,
+     "memo": "Mechanical royalty remittance"
+    }
+   ],
+   "events": [
+    {
+     "key": "audit_settlement",
+     "vendor": "Allegro Performance Rights Society",
+     "memos": [
+      "Allegro Performance Rights Society — catalog audit settlement CA-2207",
+      "Catalog audit settlement — back royalties"
+     ],
+     "cross_memo": "Catalog audit settlement — outside counsel review",
+     "plain": [
+      "the catalog audit settlement",
+      "the catalog audit back royalties",
+      "the catalog audit true-up"
+     ],
+     "oblique": [
+      "what we owed after the review of our logs",
+      "a retroactive payment for earlier years",
+      "the catch-up the society demanded",
+      "a reconciliation of prior playlists",
+      "money owed for unreported plays",
+      "a one-time cleanup of past underpayments",
+      "the dispute that finally closed",
+      "a charge reaching back several seasons",
+      "resolving the claim about our reporting",
+      "the settlement of old discrepancies",
+      "a bill for music we aired but never logged",
+      "what the examiners found",
+      "the correction on historical usage",
+      "an adjustment covering missed periods",
+      "paying up on a long-running disagreement",
+      "the closure of a compliance matter"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "podcast_clearance",
+     "vendor": "Tern Sync Clearances",
+     "memos": [
+      "Tern Sync Clearances — Night Signals podcast sync clearance PO-6603",
+      "Night Signals podcast — sync clearance extension"
+     ],
+     "cross_memo": "Night Signals podcast — editing for removed tracks",
+     "plain": [
+      "the Night Signals podcast sync clearance",
+      "the Night Signals podcast clearance",
+      "the Night Signals sync extension"
+     ],
+     "oblique": [
+      "permissions for songs used in on-demand shows",
+      "getting old episodes cleared for streaming",
+      "rights for the new audio series soundtrack",
+      "what it took to keep the show online",
+      "clearing tunes for the digital feed",
+      "the catch from moving broadcasts to downloads",
+      "a licensing gap in our archive",
+      "a first-time arrangement for the new format",
+      "securing the right to reuse the background tunes",
+      "the late-found permissions problem",
+      "clearing songs for global listeners",
+      "a cost nobody budgeted for the digital launch",
+      "the extra step for on-demand audio",
+      "what the lawyers said we needed",
+      "a long list of tracks to approve",
+      "the internet release hurdle"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Satellite & Distribution Fees",
+   "aliases": [
+    "satellite",
+    "distribution",
+    "satellite fees",
+    "network distribution",
+    "feed costs"
+   ],
+   "narrative": [
+    "Satellite",
+    "Distribution",
+    "Network distribution"
+   ],
+   "recurring": [
+    {
+     "vendor": "Orbitlink Transponder Services",
+     "base": 21000,
+     "memo": "Transponder lease monthly"
+    },
+    {
+     "vendor": "Fiberspan Content Delivery",
+     "base": 9400,
+     "memo": "Terrestrial backhaul circuits"
+    },
+    {
+     "vendor": "Relay Uplink Partners",
+     "base": 3800,
+     "memo": "Uplink operations"
+    }
+   ],
+   "events": [
+    {
+     "key": "skyfall_migration",
+     "vendor": "Orbitlink Transponder Services",
+     "memos": [
+      "Orbitlink — Skyfall C-band migration PO-8011",
+      "Skyfall C-band migration — dual-carry period"
+     ],
+     "cross_memo": "Skyfall C-band migration — receiver retune labor",
+     "plain": [
+      "the Skyfall C-band migration",
+      "the Skyfall migration dual-carry",
+      "the Skyfall C-band transition"
+     ],
+     "oblique": [
+      "the forced move to a new frequency slot",
+      "regulators clearing our old spectrum",
+      "paying for two paths at once during the cutover",
+      "an industry-wide relocation of our signal",
+      "the mandated change",
+      "what the repack required",
+      "the overlap while stations switched",
+      "a one-time shift in how we reach affiliates",
+      "the transition that ate up a quarter",
+      "running parallel feeds until everyone moved",
+      "the government-ordered switch",
+      "a major rework of our delivery path",
+      "the dual-running cost",
+      "the affiliate cutover",
+      "something we had no say in",
+      "the spectrum auction aftermath"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "cobalt_cdn",
+     "vendor": "Cobalt Edge Streaming",
+     "memos": [
+      "Cobalt Edge Streaming — Election Night surge capacity PO-8055",
+      "Election Night surge capacity — overage bandwidth"
+     ],
+     "cross_memo": "Election Night surge capacity — monitoring staff overtime",
+     "plain": [
+      "the Election Night surge capacity",
+      "the Election Night overage bandwidth",
+      "the Election Night surge streaming"
+     ],
+     "oblique": [
+      "the huge spike in online viewers",
+      "handling traffic the night the results came in",
+      "a temporary jump in internet audience",
+      "the extra pipes we rented for one evening",
+      "covering demand from the vote count",
+      "keeping the website from crashing",
+      "a short burst of heavy usage",
+      "the web traffic from the political event",
+      "what it cost to stay up under load",
+      "an unusually large digital crowd",
+      "the one-night scale-up",
+      "bandwidth for a civic moment",
+      "a planned peak in streaming demand",
+      "the live results coverage online",
+      "extra headroom for the big evening",
+      "the audience flood"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Pledge Drive & Membership Services",
+   "aliases": [
+    "pledge drive",
+    "membership",
+    "fundraising ops",
+    "donor services",
+    "membership services"
+   ],
+   "narrative": [
+    "Pledge drive",
+    "Membership",
+    "Donor services"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hearthside Donor Systems",
+     "base": 7800,
+     "memo": "CRM subscription and support"
+    },
+    {
+     "vendor": "Bluebird Call Center",
+     "base": 12500,
+     "memo": "Pledge line staffing"
+    },
+    {
+     "vendor": "Parcel & Post Mailworks",
+     "base": 5100,
+     "memo": "Renewal mailings"
+    }
+   ],
+   "events": [
+    {
+     "key": "tote_premium",
+     "vendor": "Bluebird Call Center",
+     "memos": [
+      "Bluebird Call Center — Canvas Tote premium fulfillment PO-9102",
+      "Canvas Tote premium — extra phone staffing"
+     ],
+     "cross_memo": "Canvas Tote premium — warehouse storage",
+     "plain": [
+      "the Canvas Tote premium",
+      "the Canvas Tote fulfillment",
+      "the Canvas Tote premium staffing"
+     ],
+     "oblique": [
+      "the thank-you gift we sent supporters",
+      "giveaway items for people who gave early",
+      "the swag that went out to new members",
+      "a popular reward that outsold forecasts",
+      "the bag everyone wanted",
+      "items shipped to contributors",
+      "what we mailed to anyone pledging over a threshold",
+      "a branded perk",
+      "the incentive that worked too well",
+      "goods for donors",
+      "a physical reward for generosity",
+      "our most requested incentive",
+      "the gift catalog's top item",
+      "the item donors received in the post",
+      "a promotional giveaway",
+      "the premium that pulled in more callers"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "matching_gift",
+     "vendor": "Quill & Ledger Consulting",
+     "memos": [
+      "Quill & Ledger Consulting — Harvest Match campaign strategy PO-9140",
+      "Harvest Match campaign — creative development"
+     ],
+     "cross_memo": "Harvest Match campaign — matching-fund legal review",
+     "plain": [
+      "the Harvest Match campaign strategy",
+      "the Harvest Match campaign",
+      "the Harvest Match creative development"
+     ],
+     "oblique": [
+      "an outside firm hired to boost giving",
+      "the consultants brought in before the fall drive",
+      "a challenge grant promotion",
+      "planning for the biggest fundraising push",
+      "a donor appeal built around a benefactor's offer",
+      "the agency we engaged for messaging",
+      "a doubling-your-gift effort",
+      "advice on how to ask for money",
+      "an expert-led campaign design",
+      "the creative team for appeals",
+      "a strategy engagement",
+      "the effort to double every contribution",
+      "a one-time marketing partner",
+      "the on-air ask redesign",
+      "the campaign for lapsed supporters",
+      "a special appeal with a sponsor behind it"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Studio & Production Equipment",
+   "aliases": [
+    "studio equipment",
+    "production equipment",
+    "studio costs",
+    "equipment maintenance",
+    "production gear"
+   ],
+   "narrative": [
+    "Studio equipment",
+    "Production equipment",
+    "Studio costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lumen Broadcast Supply",
+     "base": 8600,
+     "memo": "Consumables and small gear"
+    },
+    {
+     "vendor": "Soundstage Service Group",
+     "base": 6900,
+     "memo": "Maintenance contract studios A-C"
+    }
+   ],
+   "events": [
+    {
+     "key": "console_refresh",
+     "vendor": "Soundstage Service Group",
+     "memos": [
+      "Soundstage Service Group — Studio B mixing console refresh WO-6620",
+      "Studio B console refresh — firmware and fader modules"
+     ],
+     "cross_memo": "Studio B console refresh — acoustic panel rework",
+     "plain": [
+      "the Studio B mixing console refresh",
+      "the Studio B console modules",
+      "the Studio B console firmware"
+     ],
+     "oblique": [
+      "replacing the board our hosts use daily",
+      "a long-overdue gear swap in the newsroom booth",
+      "the audio desk that kept failing",
+      "an upgrade the technicians begged for",
+      "retiring equipment from the previous decade",
+      "the control surface we finally modernized",
+      "the on-air workspace overhaul",
+      "keeping a key room operational",
+      "new hardware for the morning show",
+      "what the engineering team said was end of life",
+      "a planned replacement of aging electronics",
+      "the room where talk programs originate",
+      "a boost in sound quality",
+      "an investment in reliability for live shows",
+      "the overhaul of the broadcast desk",
+      "upgrading the faders and knobs"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "drone_unit",
+     "vendor": "Skyview Aerial Productions",
+     "memos": [
+      "Skyview Aerial Productions — Delta Flood drone coverage PO-6677",
+      "Delta Flood drone coverage — pilot and insurance rider"
+     ],
+     "cross_memo": "Delta Flood drone coverage — editing suite overtime",
+     "plain": [
+      "the Delta Flood drone coverage",
+      "the Delta Flood drone pilot",
+      "the Delta Flood aerial coverage"
+     ],
+     "oblique": [
+      "overhead footage of the disaster",
+      "hiring a flying camera operator",
+      "pictures from above during the high water",
+      "a news emergency requiring special shots",
+      "the breaking story that needed unusual angles",
+      "the rented aircraft crew",
+      "coverage of the river crest",
+      "something the news director requested",
+      "aerial shots for the evening broadcast",
+      "a temporary crew for the weather crisis",
+      "specialized imagery of the affected towns",
+      "the extra team brought in on short notice",
+      "hazardous-condition filming",
+      "what it took to show viewers the damage",
+      "an unplanned production expense",
+      "the storm-related shoot"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "News Bureau & Field Operations",
+   "aliases": [
+    "news bureau",
+    "field operations",
+    "newsgathering",
+    "bureau costs",
+    "field reporting"
+   ],
+   "narrative": [
+    "News bureau",
+    "Field operations",
+    "Newsgathering"
+   ],
+   "recurring": [
+    {
+     "vendor": "Capitol Wire Services",
+     "base": 14500,
+     "memo": "Wire service subscription"
+    },
+    {
+     "vendor": "Roadrunner Fleet Lease",
+     "base": 9100,
+     "memo": "News vehicle leases"
+    },
+    {
+     "vendor": "Statehouse Press Office Rent",
+     "base": 6400,
+     "memo": "Capitol bureau office"
+    }
+   ],
+   "events": [
+    {
+     "key": "summit_travel",
+     "vendor": "Capitol Wire Services",
+     "memos": [
+      "Capitol Wire Services — Governors Summit pool coverage PO-7301",
+      "Governors Summit pool coverage — credentialing fees"
+     ],
+     "cross_memo": "Governors Summit pool coverage — hotel block",
+     "plain": [
+      "the Governors Summit pool coverage",
+      "the Governors Summit credentialing",
+      "the Governors Summit coverage"
+     ],
+     "oblique": [
+      "sending reporters to the out-of-state gathering",
+      "a three-day political conference",
+      "press passes for the big meeting",
+      "what it cost to be in the room",
+      "the multi-state leaders event",
+      "a week of dispatches from another city",
+      "our share of shared coverage",
+      "lodging and access for the news team",
+      "a high-profile assignment",
+      "the trip the managing editor approved",
+      "covering policymakers on their turf",
+      "the once-a-year convening",
+      "a roving assignment out of town",
+      "the delegation we followed",
+      "credentials for the press section",
+      "the travel-heavy news event"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "foia_litigation",
+     "vendor": "Marlowe & Pike LLP",
+     "memos": [
+      "Marlowe & Pike LLP — Port Authority records suit retainer PO-7344",
+      "Port Authority records suit — filing costs"
+     ],
+     "cross_memo": "Port Authority records suit — court reporter transcripts",
+     "plain": [
+      "the Port Authority records suit",
+      "the Port Authority records suit retainer",
+      "the Port Authority records filing"
+     ],
+     "oblique": [
+      "a legal fight for public documents",
+      "an attorney hired to pry loose government files",
+      "the open-government lawsuit",
+      "fees for taking an agency to court",
+      "a journalism access case",
+      "what the investigative team asked counsel to pursue",
+      "outside lawyers on a transparency matter",
+      "a case we brought on behalf of the public",
+      "the battle over withheld information",
+      "litigation our news chief championed",
+      "pursuing disclosure through the courts",
+      "the long-running paperwork dispute",
+      "a one-time legal action in the public interest",
+      "the cost of an accountability story",
+      "an advance on a courtroom effort",
+      "legal help for a big exposé"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

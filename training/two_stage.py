@@ -46,13 +46,18 @@ def claims_of(text: str) -> list[dict]:
     return [c for c in items or [] if isinstance(c, dict)]
 
 
-def vote(answers: list[list[str]], cap: int) -> list[str]:
-    """Terms by how many answers proposed them; ties keep the greedy answer's order."""
+def vote(answers: list[list[str]], cap: int, min_votes: int = 1) -> list[str]:
+    """Terms by how many answers proposed them; ties keep the greedy answer's order.
+
+    With `min_votes` above 1 a term needs that many answers behind it, unless that would
+    leave nothing, in which case every term stands."""
     counts: dict[str, int] = {}
     for terms in answers:
         for term in dict.fromkeys(terms):
             counts[term] = counts.get(term, 0) + 1
-    return [t for t, _ in sorted(counts.items(), key=lambda kv: -kv[1])][:cap]
+    ranked = [t for t, _ in sorted(counts.items(), key=lambda kv: -kv[1])]
+    agreed = [t for t in ranked if counts[t] >= min_votes]
+    return (agreed or ranked)[:cap]
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -67,6 +72,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--samples", type=int, default=1)
     p.add_argument("--temp", type=float, default=0.8)
     p.add_argument("--max-terms", type=int, default=8)
+    p.add_argument("--min-votes", type=int, default=1, help="drop a term fewer answers proposed")
     p.add_argument("--keep", action="store_true", help="pool stage 1's own terms in as one more answer")
     p.add_argument("--batch", type=int, default=16)
     p.add_argument("--terms", type=Path, default=None, help="save every answer here")
@@ -147,7 +153,7 @@ def main(argv: list[str] | None = None) -> int:
             pool = list((mine or [])[:args.samples])
             if args.keep or not pool:        # a claim the term model never saw keeps what it had
                 pool.append([t for t in claim.get("search_terms") or [] if isinstance(t, str)])
-            out.append({**claim, "search_terms": vote(pool, args.max_terms)})
+            out.append({**claim, "search_terms": vote(pool, args.max_terms, args.min_votes)})
         replies[content] = json.dumps({"claims": out}, ensure_ascii=False)
         empty += not extractor.propose(scenario.explanation, scenario.ledger)
     print(f"{len(closes)} closes stored as {args.name} (samples {args.samples}, max terms {args.max_terms}); "

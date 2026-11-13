@@ -1,0 +1,830 @@
+{
+ "slug": "olive-oil-producer",
+ "industry": "olive oil producer",
+ "entities": [
+  "Golden Grove Olive Oil Co.",
+  "Silverleaf Press & Estate",
+  "Terra Verde Olive Growers",
+  "Mistral Hill Oleoteca",
+  "Amphora Valley Oils"
+ ],
+ "accounts": [
+  {
+   "name": "Grove & Orchard Maintenance",
+   "aliases": [
+    "grove upkeep",
+    "orchard maintenance",
+    "tree care",
+    "grove costs",
+    "orchard spend"
+   ],
+   "narrative": [
+    "Grove upkeep",
+    "Orchard maintenance",
+    "Tree care"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sierra Pruning Crews",
+     "base": 9500,
+     "memo": "Monthly pruning and canopy crew services"
+    },
+    {
+     "vendor": "Vega Soil Amendments",
+     "base": 4200,
+     "memo": "Compost and soil conditioner delivery"
+    },
+    {
+     "vendor": "Hillside Weed Control",
+     "base": 2600,
+     "memo": "Row mowing and vegetation management"
+    }
+   ],
+   "events": [
+    {
+     "key": "frostrecovery",
+     "vendor": "Sierra Pruning Crews",
+     "memos": [
+      "Frost damage recovery — emergency limb removal",
+      "Frost damage recovery — sapling replanting crew"
+     ],
+     "cross_memo": "Frost damage recovery — smudge pot fuel",
+     "plain": [
+      "the frost damage recovery",
+      "the frost damage recovery work",
+      "frost damage recovery costs"
+     ],
+     "oblique": [
+      "the cold snap cleanup",
+      "bringing the blocks back after the freeze",
+      "unplanned work after the January weather",
+      "clearing dead wood from the east terraces",
+      "the winter weather aftermath",
+      "replacing trees that did not survive",
+      "what the overnight temperatures did to us",
+      "crews called out on short notice after the storm",
+      "emergency labor in the lower blocks",
+      "the cold event",
+      "salvaging the young plantings",
+      "damage from the hard freeze",
+      "extra hands for the weather mess",
+      "restoring the affected terraces",
+      "nature's surprise",
+      "getting the damaged trees off the slope"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "fruitfly",
+     "vendor": "Cascade Biocontrol Partners",
+     "memos": [
+      "Fruit fly suppression — pheromone trap network",
+      "Fruit fly suppression — aerial bait application"
+     ],
+     "cross_memo": "Fruit fly suppression — regulatory inspection fee",
+     "plain": [
+      "the fruit fly suppression",
+      "fruit fly suppression program",
+      "the fruit fly suppression campaign"
+     ],
+     "oblique": [
+      "the pest outbreak response",
+      "protecting the crop from insects",
+      "bug pressure this season",
+      "the infestation push",
+      "treatments after the county advisory",
+      "keeping larvae out of the olives",
+      "the insect problem in the north blocks",
+      "spraying and monitoring for the pest",
+      "what the agricultural commissioner required",
+      "defending the harvest",
+      "the trapping effort",
+      "a bad year for crop pests",
+      "the biological defense program",
+      "stopping the spread between blocks",
+      "the bait runs over the hills",
+      "dealing with the invaders"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Irrigation & Water",
+   "aliases": [
+    "water costs",
+    "irrigation",
+    "water and irrigation spend",
+    "watering",
+    "irrigation expense"
+   ],
+   "narrative": [
+    "Water costs",
+    "Irrigation",
+    "Watering"
+   ],
+   "recurring": [
+    {
+     "vendor": "Basin Water District",
+     "base": 12500,
+     "memo": "Metered agricultural water delivery"
+    },
+    {
+     "vendor": "Drip Line Services",
+     "base": 3800,
+     "memo": "Emitter and line servicing"
+    },
+    {
+     "vendor": "Pumpworks Energy",
+     "base": 5400,
+     "memo": "Well pump electricity"
+    }
+   ],
+   "events": [
+    {
+     "key": "wellrehab",
+     "vendor": "Drip Line Services",
+     "memos": [
+      "Well rehabilitation — casing liner install",
+      "Well rehabilitation — downhole camera survey"
+     ],
+     "cross_memo": "Well rehabilitation — temporary water haul",
+     "plain": [
+      "the well rehabilitation",
+      "well rehabilitation project",
+      "the well rehabilitation work"
+     ],
+     "oblique": [
+      "getting the deep supply working again",
+      "the borehole repair",
+      "restoring our own groundwater source",
+      "fixing what collapsed underground",
+      "work on the failing source",
+      "the hole in the ground that stopped producing",
+      "reviving the old supply",
+      "the diagnostic dive and the patch",
+      "bringing back pumping capacity",
+      "the underground fix",
+      "what the hydrologist recommended",
+      "reopening the dry source",
+      "repairs below the pump house",
+      "saving the original supply",
+      "the contractor who went down the shaft",
+      "recovering lost flow"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "meterdispute",
+     "vendor": "Alder Hydrology Consulting",
+     "memos": [
+      "Allocation audit — tiered rate appeal",
+      "Allocation audit — historical usage reconstruction"
+     ],
+     "cross_memo": "Allocation audit — legal filing fees",
+     "plain": [
+      "the allocation audit",
+      "allocation audit engagement",
+      "the allocation audit appeal"
+     ],
+     "oblique": [
+      "contesting the surcharge",
+      "the fight over our billing tier",
+      "proving our past consumption",
+      "the paperwork battle with the authority",
+      "arguing we were overcharged",
+      "the reassessment of what we were allowed",
+      "the rate challenge",
+      "reconstructing years of records",
+      "expert help in the billing dispute",
+      "the tiered pricing protest",
+      "clearing our name on overuse",
+      "the review we requested",
+      "defending against the penalty tier",
+      "the formal objection",
+      "the hearing preparation",
+      "challenging the penalty notice"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Milling & Pressing Operations",
+   "aliases": [
+    "milling",
+    "press costs",
+    "pressing operations",
+    "mill operations",
+    "milling expense"
+   ],
+   "narrative": [
+    "Milling",
+    "Press costs",
+    "Mill operations"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pieralisi Parts Direct",
+     "base": 6800,
+     "memo": "Crusher and malaxer wear parts"
+    },
+    {
+     "vendor": "Harvest Temp Labor",
+     "base": 14500,
+     "memo": "Seasonal mill floor labor"
+    },
+    {
+     "vendor": "Centrifuge Care Co",
+     "base": 3100,
+     "memo": "Decanter service contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "decanterswap",
+     "vendor": "Centrifuge Care Co",
+     "memos": [
+      "Decanter bowl replacement — scroll assembly",
+      "Decanter bowl replacement — balancing and commissioning"
+     ],
+     "cross_memo": "Decanter bowl replacement — crane rental",
+     "plain": [
+      "the decanter bowl replacement",
+      "decanter bowl replacement project",
+      "the decanter bowl replacement job"
+     ],
+     "oblique": [
+      "swapping out the heart of the line",
+      "the big machine that wore through",
+      "getting extraction yield back up",
+      "the equipment failure at peak crush",
+      "replacing the spinning separator core",
+      "downtime fix on the main line",
+      "the vibration problem finally solved",
+      "the overhaul our technician insisted on",
+      "restoring throughput in the mill",
+      "what stopped us during harvest",
+      "the major component change",
+      "fixing the unit that lost efficiency",
+      "new internals for the oldest machine",
+      "the repair that took a crane",
+      "a costly mid-season fix",
+      "the machine that kept tripping"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "coldpress",
+     "vendor": "Tuscan Steelworks Imports",
+     "memos": [
+      "Cold extraction upgrade — stainless malaxer tanks",
+      "Cold extraction upgrade — temperature control skid"
+     ],
+     "cross_memo": "Cold extraction upgrade — electrical rewiring",
+     "plain": [
+      "the cold extraction upgrade",
+      "cold extraction upgrade project",
+      "the cold extraction upgrade install"
+     ],
+     "oblique": [
+      "the quality capital push",
+      "new vessels for gentler processing",
+      "chasing a premium label designation",
+      "the investment in lower heat handling",
+      "what the head miller wanted for better flavor",
+      "retrofitting the paste stage",
+      "the project aimed at a higher grade",
+      "new tanks and chillers",
+      "improving the product at the front of the line",
+      "modernizing the early stage",
+      "the competition medal strategy",
+      "gear bought to protect aroma",
+      "the premium tier enabler",
+      "upgrading how we handle the fruit",
+      "the miller's wish list item",
+      "tanks that came in by sea"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Bottling & Packaging",
+   "aliases": [
+    "bottling",
+    "packaging costs",
+    "bottling line",
+    "packaging spend",
+    "bottle and label costs"
+   ],
+   "narrative": [
+    "Bottling",
+    "Packaging costs",
+    "Bottling line"
+   ],
+   "recurring": [
+    {
+     "vendor": "Verallia Glassworks",
+     "base": 18500,
+     "memo": "Dark glass bottles and closures"
+    },
+    {
+     "vendor": "Pressmark Labels",
+     "base": 4800,
+     "memo": "Front and back label stock"
+    },
+    {
+     "vendor": "Corrugate Partners",
+     "base": 3900,
+     "memo": "Shipping cartons and dividers"
+    }
+   ],
+   "events": [
+    {
+     "key": "giftbox",
+     "vendor": "Pressmark Labels",
+     "memos": [
+      "Holiday gift collection — embossed tin sleeves",
+      "Holiday gift collection — foil stamped inserts"
+     ],
+     "cross_memo": "Holiday gift collection — seasonal temp assemblers",
+     "plain": [
+      "the holiday gift collection",
+      "holiday gift collection run",
+      "the holiday gift collection packaging"
+     ],
+     "oblique": [
+      "the festive limited edition",
+      "special presentation sets for year end",
+      "what marketing dreamed up for retailers",
+      "the fancy sets for department stores",
+      "seasonal premium items",
+      "the boxed sets that sold out",
+      "extra decorative materials",
+      "the Q4 specialty run",
+      "upscale presentation for corporate buyers",
+      "the limited release for the shopping season",
+      "dressed up bottles for gifting",
+      "the glossy extras",
+      "the special sets sales requested",
+      "gift buyers' favorite",
+      "the pretty package project",
+      "presents for the big accounts"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "linejam",
+     "vendor": "Rotary Filler Technologies",
+     "memos": [
+      "Filler valve recall — replacement nozzle kits",
+      "Filler valve recall — technician site visit"
+     ],
+     "cross_memo": "Filler valve recall — wasted product write off",
+     "plain": [
+      "the filler valve recall",
+      "filler valve recall repairs",
+      "the filler valve recall kits"
+     ],
+     "oblique": [
+      "the manufacturer's safety notice",
+      "parts the supplier forced us to swap",
+      "drips and underfills on the line",
+      "the dispensing head problem",
+      "fixing the machine that kept short pouring",
+      "the corrective action on the line",
+      "components that failed inspection",
+      "the fault that sent bottles back",
+      "the vendor's defect admission",
+      "mislabeled fill volumes",
+      "calibration trouble on the main line",
+      "swapping out a faulty batch of parts",
+      "what the weights and measures office flagged",
+      "the underfilled cases",
+      "the fix that was not our fault",
+      "getting accurate volumes again"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Cold Storage & Warehousing",
+   "aliases": [
+    "warehousing",
+    "storage costs",
+    "cold storage",
+    "warehouse spend",
+    "inventory storage"
+   ],
+   "narrative": [
+    "Warehousing",
+    "Storage costs",
+    "Cold storage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Coastal Cold Logistics",
+     "base": 11000,
+     "memo": "Temperature controlled pallet storage"
+    },
+    {
+     "vendor": "Inox Tank Leasing",
+     "base": 6200,
+     "memo": "Bulk stainless storage tank rental"
+    },
+    {
+     "vendor": "Dockside Forklift Services",
+     "base": 2400,
+     "memo": "Forklift lease and maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "nitrogenblanket",
+     "vendor": "Inox Tank Leasing",
+     "memos": [
+      "Inert gas retrofit — nitrogen blanketing manifold",
+      "Inert gas retrofit — tank headspace sensors"
+     ],
+     "cross_memo": "Inert gas retrofit — gas cylinder rental",
+     "plain": [
+      "the inert gas retrofit",
+      "inert gas retrofit project",
+      "the inert gas retrofit install"
+     ],
+     "oblique": [
+      "keeping air away from the stored product",
+      "the freshness protection upgrade",
+      "stopping oxidation in the big vessels",
+      "the shelf life initiative",
+      "what quality assurance asked for after the complaints",
+      "preventing rancid notes",
+      "tank improvements for aging inventory",
+      "the preservation fix",
+      "protecting last season's lots",
+      "the add-on for the holding vessels",
+      "guarding flavor over the long haul",
+      "the response to the stale taste returns",
+      "new sensors and plumbing on the vessels",
+      "extending how long stock keeps",
+      "the oxygen problem solution",
+      "the upgrade the lab pushed for"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "overflowwarehouse",
+     "vendor": "Redwood Overflow Depot",
+     "memos": [
+      "Surplus inventory lease — pallet bay rental",
+      "Surplus inventory lease — handling surcharge"
+     ],
+     "cross_memo": "Surplus inventory lease — extra freight shuttles",
+     "plain": [
+      "the surplus inventory lease",
+      "surplus inventory lease space",
+      "the surplus inventory lease charges"
+     ],
+     "oblique": [
+      "running out of room at the main site",
+      "the bumper crop spillover",
+      "a second location for the extra product",
+      "space we rented because we overproduced",
+      "where the extra pallets went",
+      "renting shelves from a neighbor",
+      "the temporary home for excess stock",
+      "a bigger harvest than we planned for",
+      "the unsold backlog parked elsewhere",
+      "emergency square footage",
+      "too many cases and nowhere to put them",
+      "the stopgap space",
+      "off-site parking for finished goods",
+      "the good-problem expense",
+      "extra room until sales catch up",
+      "holding the overflow across town"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Freight & Distribution",
+   "aliases": [
+    "freight",
+    "shipping costs",
+    "distribution",
+    "outbound freight",
+    "delivery spend"
+   ],
+   "narrative": [
+    "Freight",
+    "Shipping costs",
+    "Distribution"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pacific Parcel Express",
+     "base": 9200,
+     "memo": "Direct to consumer parcel shipping"
+    },
+    {
+     "vendor": "Summit LTL Carriers",
+     "base": 13500,
+     "memo": "Wholesale pallet freight"
+    },
+    {
+     "vendor": "Harborline Customs Brokers",
+     "base": 2800,
+     "memo": "Export documentation and brokerage"
+    }
+   ],
+   "events": [
+    {
+     "key": "expeditedair",
+     "vendor": "Summit LTL Carriers",
+     "memos": [
+      "Rush restock program — expedited air pallets",
+      "Rush restock program — weekend driver premium"
+     ],
+     "cross_memo": "Rush restock program — retailer chargeback",
+     "plain": [
+      "the rush restock program",
+      "rush restock program shipments",
+      "the rush restock program premium"
+     ],
+     "oblique": [
+      "getting shelves refilled fast",
+      "the stockout scramble",
+      "paying extra to beat a deadline",
+      "what we did when the grocery chain ran dry",
+      "speeding things up for a key account",
+      "the emergency replenishment",
+      "moving product by the quickest means",
+      "a customer who could not wait",
+      "the premium we paid for speed",
+      "overnight everything",
+      "the supply gap we had to plug",
+      "how we avoided losing the shelf space",
+      "expensive but necessary transport",
+      "the last minute demand spike response",
+      "the fire drill shipments",
+      "saving the reorder"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "exportpermit",
+     "vendor": "Meridian Trade Compliance",
+     "memos": [
+      "Japan market entry — phytosanitary certification",
+      "Japan market entry — labeling translation review"
+     ],
+     "cross_memo": "Japan market entry — sample air freight",
+     "plain": [
+      "the Japan market entry",
+      "Japan market entry filings",
+      "the Japan market entry certification"
+     ],
+     "oblique": [
+      "opening up a new overseas buyer",
+      "the Asian expansion paperwork",
+      "regulatory hurdles abroad",
+      "what the importer required before the first order",
+      "clearing the border for the launch",
+      "approvals for the far east customer",
+      "the compliance cost of going global",
+      "the new territory kickoff",
+      "documents the foreign authority demanded",
+      "preparing for the first overseas container",
+      "the paperwork behind the international deal",
+      "entering a new country",
+      "the red tape for the new region",
+      "proving the product meets foreign rules",
+      "the trade expansion initiative",
+      "getting listed with the distributor abroad"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Lab Testing & Certification",
+   "aliases": [
+    "lab fees",
+    "testing and certification",
+    "quality testing",
+    "certification costs",
+    "lab and compliance spend"
+   ],
+   "narrative": [
+    "Lab fees",
+    "Quality testing",
+    "Certification costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Olivia Analytical Labs",
+     "base": 4600,
+     "memo": "Free fatty acid and peroxide panel testing"
+    },
+    {
+     "vendor": "Organic Standards Council",
+     "base": 1800,
+     "memo": "Annual organic program dues"
+    },
+    {
+     "vendor": "Sensory Panel Services",
+     "base": 2200,
+     "memo": "Trained tasting panel sessions"
+    }
+   ],
+   "events": [
+    {
+     "key": "pdoaudit",
+     "vendor": "Organic Standards Council",
+     "memos": [
+      "Provenance seal renewal — origin traceability audit",
+      "Provenance seal renewal — lot genealogy review"
+     ],
+     "cross_memo": "Provenance seal renewal — auditor travel",
+     "plain": [
+      "the provenance seal renewal",
+      "provenance seal renewal audit",
+      "the provenance seal renewal fees"
+     ],
+     "oblique": [
+      "proving where every drop came from",
+      "the geographic designation review",
+      "the inspector's multi day visit",
+      "keeping our protected label status",
+      "the annual recertification effort",
+      "documentation of our supply chain",
+      "the check that lets us print the badge",
+      "staying on the official register",
+      "tracing batches back to the field",
+      "what the inspection board asked for",
+      "maintaining the regional credential",
+      "the verification of our fruit sources",
+      "the stamp we cannot do without",
+      "the auditing round",
+      "being allowed to use the name",
+      "the paper trail examination"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "adulterationretest",
+     "vendor": "Helix Forensic Chemistry",
+     "memos": [
+      "Blend integrity study — isotope ratio analysis",
+      "Blend integrity study — DNA varietal screening"
+     ],
+     "cross_memo": "Blend integrity study — outside counsel review",
+     "plain": [
+      "the blend integrity study",
+      "blend integrity study results",
+      "the blend integrity study costs"
+     ],
+     "oblique": [
+      "the competitor's accusation",
+      "clearing up a rumor about our product",
+      "expensive science to prove purity",
+      "the response to the magazine exposé",
+      "showing we are exactly what the label says",
+      "independent proof for the retailer",
+      "the investigation a buyer demanded",
+      "specialist chemistry beyond routine work",
+      "answering doubts about authenticity",
+      "protecting our reputation with evidence",
+      "the unusual battery of tests",
+      "what the grocer's quality team required",
+      "defending against a mislabeling claim",
+      "the extraordinary analysis",
+      "scientists brought in from outside",
+      "the credibility project"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Tasting Room & Agritourism",
+   "aliases": [
+    "tasting room",
+    "agritourism",
+    "visitor center costs",
+    "hospitality spend",
+    "tours and tastings"
+   ],
+   "narrative": [
+    "Tasting room",
+    "Agritourism",
+    "Hospitality spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Grove Table Catering",
+     "base": 5200,
+     "memo": "Tasting flight bread and charcuterie supplies"
+    },
+    {
+     "vendor": "Estate Hosts Staffing",
+     "base": 8400,
+     "memo": "Tasting room associates and tour guides"
+    },
+    {
+     "vendor": "Vineyard Row Insurance",
+     "base": 1900,
+     "memo": "Visitor liability coverage premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "harvestfestival",
+     "vendor": "Grove Table Catering",
+     "memos": [
+      "Pressing Day festival — chef demonstration stations",
+      "Pressing Day festival — live music and staging"
+     ],
+     "cross_memo": "Pressing Day festival — parking shuttle service",
+     "plain": [
+      "the Pressing Day festival",
+      "Pressing Day festival costs",
+      "the Pressing Day festival weekend"
+     ],
+     "oblique": [
+      "the big autumn open house",
+      "the annual community party",
+      "hosting thousands on the property",
+      "the crowd drawing event for locals",
+      "food and entertainment for guests",
+      "the weekend we throw open the gates",
+      "our signature seasonal gathering",
+      "a day of music and cooking",
+      "the marketing event of the year",
+      "what brings in new customers each fall",
+      "the tents and the band",
+      "the event the owners love",
+      "a celebration of the crush",
+      "the family friendly fair",
+      "the high attendance weekend",
+      "entertaining the public"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "patiobuild",
+     "vendor": "Stonehaven Landscape & Build",
+     "memos": [
+      "Terrace pavilion expansion — flagstone patio",
+      "Terrace pavilion expansion — pergola and lighting"
+     ],
+     "cross_memo": "Terrace pavilion expansion — county permit fees",
+     "plain": [
+      "the terrace pavilion expansion",
+      "terrace pavilion expansion build",
+      "the terrace pavilion expansion phase"
+     ],
+     "oblique": [
+      "more seating for visitors",
+      "the outdoor space improvement",
+      "construction at the guest area",
+      "what we built to host bigger groups",
+      "the new view deck",
+      "a capital project for the front of the property",
+      "adding room for weddings and tours",
+      "the masonry and woodwork job",
+      "enlarging where guests sit",
+      "making the visitor experience nicer",
+      "the contractor on the hillside",
+      "the outdoor addition",
+      "a place to hold private events",
+      "landscaping with a purpose",
+      "the hospitality build out",
+      "the construction near the entrance"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

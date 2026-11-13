@@ -1,0 +1,718 @@
+{
+ "slug": "window-blinds-and-curtain-manufacturer",
+ "industry": "window blinds and curtain manufacturer",
+ "entities": [
+  "Loomline Shade Works",
+  "Harborview Blinds & Drapery",
+  "Cedar Ridge Window Fashions",
+  "Brightpane Shade Co.",
+  "Northgate Textile & Blind Mfg."
+ ],
+ "accounts": [
+  {
+   "name": "Fabric & Textile Purchases",
+   "aliases": [
+    "fabric",
+    "fabric spend",
+    "textile purchases",
+    "fabric costs",
+    "raw textiles"
+   ],
+   "narrative": [
+    "Fabric spend",
+    "Textile purchases",
+    "Fabric costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Calloway Mills",
+     "base": 24000,
+     "memo": "Woven polyester roll goods - Plant 1"
+    },
+    {
+     "vendor": "Sunbelt Weavers",
+     "base": 18500,
+     "memo": "Cotton blend panel stock - Plant 1"
+    },
+    {
+     "vendor": "Riverbend Textile Supply",
+     "base": 9500,
+     "memo": "Lining and interlining rolls"
+    }
+   ],
+   "events": [
+    {
+     "key": "blackout",
+     "vendor": "Calloway Mills",
+     "memos": [
+      "Triple-weave blackout laminate - Hotel Meridian order",
+      "Blackout laminate trim ends - Hotel Meridian order"
+     ],
+     "cross_memo": "Triple-weave blackout laminate - expedited customs brokerage",
+     "plain": [
+      "the triple-weave blackout laminate",
+      "the blackout laminate purchase",
+      "the triple-weave blackout order"
+     ],
+     "oblique": [
+      "the big hospitality project we landed",
+      "stock bought for the 400-room property",
+      "material for the lodging chain rollout",
+      "one customer's oversized order",
+      "a single large contract's raw material",
+      "what the sales team promised the resort developer",
+      "the light-proofing material for the new build",
+      "an order from overseas that needed light control",
+      "the bulk buy for the guest rooms",
+      "inventory ahead of the winter installs",
+      "the specialty yardage we had to stock deep",
+      "material that the hotel client specified",
+      "the one-time stock-up on opaque goods",
+      "cloth for the large commercial win",
+      "a purchase tied to one marquee client",
+      "the premium goods we pulled forward"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "fireretardant",
+     "vendor": "Ashford Flameguard Textiles",
+     "memos": [
+      "Class A flameguard treated fabric - Lakeside School District",
+      "Flameguard fabric reorder - Lakeside School District"
+     ],
+     "cross_memo": "Flameguard fabric - certification testing lab fees",
+     "plain": [
+      "the flameguard treated fabric",
+      "the flameguard fabric reorder",
+      "the Lakeside flameguard purchase"
+     ],
+     "oblique": [
+      "goods bought to meet the fire code",
+      "material the school bid required",
+      "a safety-rated cloth requirement",
+      "the compliance-driven yardage",
+      "stock we needed for the public contract",
+      "material that had to pass inspection",
+      "the code-mandated roll goods",
+      "what the district's specs forced us to buy",
+      "the specialty goods for institutional buyers",
+      "treated material from a new supplier",
+      "the buy that the fire marshal's rules created",
+      "a one-off supplier for regulated cloth",
+      "cloth from a vendor we rarely use",
+      "the safety-compliant stock",
+      "new vendor material for the municipal job",
+      "the regulated product line's input"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Aluminum & Hardware Components",
+   "aliases": [
+    "hardware",
+    "components",
+    "headrail hardware",
+    "aluminum components",
+    "hardware components spend"
+   ],
+   "narrative": [
+    "Hardware spend",
+    "Component costs",
+    "Headrail hardware"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pioneer Extrusions",
+     "base": 21000,
+     "memo": "Aluminum headrail and bottom rail extrusions"
+    },
+    {
+     "vendor": "Tilt-Rite Mechanisms",
+     "base": 8800,
+     "memo": "Tilt wands and cord lock assemblies"
+    },
+    {
+     "vendor": "Brackwell Fasteners",
+     "base": 3200,
+     "memo": "Mounting brackets and screws"
+    }
+   ],
+   "events": [
+    {
+     "key": "motorization",
+     "vendor": "Tilt-Rite Mechanisms",
+     "memos": [
+      "Smart motor retrofit kits - Skyline Tower lobby order",
+      "Motor kit expedite surcharge - Skyline Tower order"
+     ],
+     "cross_memo": "Smart motor retrofit kits - firmware licensing fee",
+     "plain": [
+      "the smart motor retrofit kits",
+      "the Skyline Tower motor order",
+      "the motor kit expedite"
+     ],
+     "oblique": [
+      "powered shade conversions",
+      "the remote-control upgrade program",
+      "units that open themselves",
+      "a high-rise client's automation request",
+      "the electronics side of the business",
+      "gear that lets people skip the pull cord",
+      "the push-button product launch",
+      "a rush to deliver for the office tower",
+      "the add-on that ties into building controls",
+      "an early shipment that cost extra to hurry",
+      "hardware for the tech-forward line",
+      "battery-and-motor assemblies",
+      "a pilot of our automated offering",
+      "what the architect added to the spec",
+      "the premium convenience feature",
+      "the order that needed everything faster"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "copper",
+     "vendor": "Delmar Brassworks",
+     "memos": [
+      "Solid brass finial and rod sets - Whitfield Estate commission",
+      "Brass finial tooling charge - Whitfield Estate commission"
+     ],
+     "cross_memo": "Brass finial and rod sets - hand polishing subcontract",
+     "plain": [
+      "the solid brass finial sets",
+      "the Whitfield Estate commission",
+      "the brass finial tooling"
+     ],
+     "oblique": [
+      "decorative metal for a private mansion",
+      "ornamental ends for custom drapery poles",
+      "a luxury residential one-off",
+      "the bespoke rod work",
+      "a wealthy client's custom request",
+      "upscale trim pieces",
+      "tooling for a single prestige job",
+      "an estate project that needed special casting",
+      "a boutique supplier we tried once",
+      "fancy end caps for the grand house",
+      "the handcrafted metalwork",
+      "something our standard catalog can't do",
+      "a new foundry relationship",
+      "the heirloom-style pole hardware",
+      "custom pieces made to a designer's drawing",
+      "a showcase residence's fittings"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Cut-and-Sew Direct Labor",
+   "aliases": [
+    "sewing labor",
+    "cut and sew",
+    "direct labor",
+    "production labor",
+    "sewing floor wages"
+   ],
+   "narrative": [
+    "Sewing labor",
+    "Direct labor",
+    "Cut-and-sew costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Staffing Partners",
+     "base": 26000,
+     "memo": "Temp seamstress staffing - Plant 1 sewing floor"
+    },
+    {
+     "vendor": "Northfield Payroll Services",
+     "base": 14500,
+     "memo": "Direct labor payroll processing - Plant 1"
+    }
+   ],
+   "events": [
+    {
+     "key": "holidayrush",
+     "vendor": "Meridian Staffing Partners",
+     "memos": [
+      "Overtime premium crew - Bigbox Home Depot-style national rollout",
+      "Weekend overtime premium - national rollout crew"
+     ],
+     "cross_memo": "Overtime premium crew - forklift operator night shift",
+     "plain": [
+      "the national rollout overtime crew",
+      "the overtime premium crew",
+      "the weekend rollout overtime"
+     ],
+     "oblique": [
+      "extra hours to hit a retailer deadline",
+      "the push to fill shelves before the season",
+      "staff working Saturdays and Sundays",
+      "our biggest customer's compressed schedule",
+      "time-and-a-half for a few weeks",
+      "the all-hands stretch to ship early",
+      "a surge in stores we agreed to supply",
+      "labor premiums to meet a launch date",
+      "the scramble for a chain's reset",
+      "people pulled in after normal hours",
+      "a promise we made to a big-box buyer",
+      "the crunch before the promotion window",
+      "the temporary spike in headcount hours",
+      "paying up to finish ahead of schedule",
+      "the rush that followed the large purchase order",
+      "the premium rates our crews earned"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "trainingacademy",
+     "vendor": "Stitchcraft Skills Institute",
+     "memos": [
+      "Industrial machine certification course - new hire cohort",
+      "Sewing technique workshop - new hire cohort"
+     ],
+     "cross_memo": "Industrial machine certification course - instructor travel",
+     "plain": [
+      "the industrial machine certification course",
+      "the new hire cohort workshop",
+      "the sewing technique workshop"
+     ],
+     "oblique": [
+      "getting recruits up to speed",
+      "an outside program for fresh staff",
+      "the classroom side of onboarding",
+      "investing in people who just joined",
+      "a skills push after a hiring wave",
+      "outsourced instruction for beginners",
+      "what we paid to turn rookies into operators",
+      "an educational outlay for the floor",
+      "the learning curve we bought down",
+      "a third-party school we hired once",
+      "qualification of the latest batch",
+      "credentialing for incoming workers",
+      "teaching the newcomers the trade",
+      "a hiring-related ramp expense",
+      "outside experts brought in to coach",
+      "formal preparation for the new group"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Freight & Distribution",
+   "aliases": [
+    "freight",
+    "shipping",
+    "outbound freight",
+    "distribution costs",
+    "delivery spend"
+   ],
+   "narrative": [
+    "Freight costs",
+    "Outbound shipping",
+    "Distribution costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Redline Freight Lines",
+     "base": 19500,
+     "memo": "LTL outbound deliveries - dealer network"
+    },
+    {
+     "vendor": "ParcelWorks Express",
+     "base": 7200,
+     "memo": "Small parcel sample shipments"
+    },
+    {
+     "vendor": "Granite State Warehousing",
+     "base": 11000,
+     "memo": "Finished goods storage - Dock B"
+    }
+   ],
+   "events": [
+    {
+     "key": "oceanfreight",
+     "vendor": "Redline Freight Lines",
+     "memos": [
+      "Ocean container drayage - Port Newark import fabric",
+      "Container demurrage - Port Newark import fabric"
+     ],
+     "cross_memo": "Ocean container drayage - customs bond renewal",
+     "plain": [
+      "the ocean container drayage",
+      "the Port Newark import fabric",
+      "the container demurrage"
+     ],
+     "oblique": [
+      "boxes sitting at the dock too long",
+      "a shipment from overseas that got stuck",
+      "charges from a congested harbor",
+      "the delay on the imported goods",
+      "storage fees on a vessel's cargo",
+      "trucking from the terminal to our plant",
+      "penalties for slow pickup",
+      "the imported material's journey inland",
+      "time lost waiting for clearance",
+      "what we paid when the boat arrived late",
+      "fees for equipment held past the free days",
+      "a batch that landed from abroad",
+      "the port-side handling",
+      "extra days the cargo stayed unclaimed",
+      "hauling the arrival to the facility",
+      "a supply chain hiccup at the waterfront"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "expansionwarehouse",
+     "vendor": "Summit Cold Dock Logistics",
+     "memos": [
+      "Overflow pallet storage - Midvale annex",
+      "Annex receiving labor - Midvale annex"
+     ],
+     "cross_memo": "Overflow pallet storage - racking installation",
+     "plain": [
+      "the overflow pallet storage",
+      "the Midvale annex",
+      "the annex receiving labor"
+     ],
+     "oblique": [
+      "extra space rented on short notice",
+      "where the surplus inventory sat",
+      "a temporary spillover location",
+      "room for stock we couldn't fit",
+      "a second building we leaned on",
+      "the cost of holding more than planned",
+      "a stopgap facility",
+      "handling at the satellite site",
+      "an unplanned footprint increase",
+      "somewhere to put the seasonal build",
+      "extra square footage on a short lease",
+      "the lack of capacity at our main dock",
+      "staging for goods ahead of demand",
+      "a third party that absorbed our overage",
+      "off-site holding of finished product",
+      "the interim arrangement for stock"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Showroom & Sample Programs",
+   "aliases": [
+    "showroom",
+    "samples",
+    "sample books",
+    "sample program",
+    "showroom costs"
+   ],
+   "narrative": [
+    "Showroom costs",
+    "Sample program",
+    "Sample book spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bindwell Print & Swatch",
+     "base": 9800,
+     "memo": "Fabric swatch card printing"
+    },
+    {
+     "vendor": "Prestige Displays Inc.",
+     "base": 4500,
+     "memo": "Showroom fixture maintenance - Atlanta Design Center"
+    }
+   ],
+   "events": [
+    {
+     "key": "tradeshow",
+     "vendor": "Prestige Displays Inc.",
+     "memos": [
+      "Booth build-out - Heimtextil Frankfurt exhibition",
+      "Booth freight and drayage - Heimtextil Frankfurt exhibition"
+     ],
+     "cross_memo": "Booth build-out - exhibition travel for sales team",
+     "plain": [
+      "the Heimtextil Frankfurt exhibition",
+      "the Frankfurt booth build-out",
+      "the booth freight and drayage"
+     ],
+     "oblique": [
+      "our presence at the big European fair",
+      "the stand we put up abroad",
+      "a global buyers' gathering",
+      "where we showed the new collection",
+      "the annual industry meetup overseas",
+      "making a splash in front of international buyers",
+      "a temporary pavilion",
+      "the showcase that opens doors to distributors",
+      "a once-a-year marketing push",
+      "the spectacle with the lights and carpet",
+      "an international expo appearance",
+      "the new-line unveiling",
+      "the trip to display our range",
+      "selling at a continental trade event",
+      "the stand construction and shipping",
+      "a high-visibility promotional outing"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "catalogrefresh",
+     "vendor": "Quillon Photographic Studios",
+     "memos": [
+      "Lifestyle photo shoot - spring catalog refresh",
+      "Set styling and prop rental - spring catalog refresh"
+     ],
+     "cross_memo": "Lifestyle photo shoot - image licensing and retouching",
+     "plain": [
+      "the spring catalog refresh",
+      "the lifestyle photo shoot",
+      "the set styling and prop rental"
+     ],
+     "oblique": [
+      "new pictures of our products in rooms",
+      "the visual overhaul of our marketing",
+      "staged interiors for the brochure",
+      "a creative studio's day rate",
+      "the glossy imagery update",
+      "a fresh look for the dealer literature",
+      "models and furniture in a rented space",
+      "redoing our visual assets",
+      "the art direction bill",
+      "an outside agency's creative work",
+      "new photography for the website and print",
+      "the upgrade to how we present ourselves",
+      "a seasonal refresh of the selling tools",
+      "the visuals buyers flip through",
+      "a shoot to replace tired imagery",
+      "stylists and photographers for a day"
+     ],
+     "low": 8000,
+     "high": 16000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Maintenance & Tooling",
+   "aliases": [
+    "maintenance",
+    "equipment repair",
+    "tooling",
+    "machine upkeep",
+    "plant maintenance"
+   ],
+   "narrative": [
+    "Equipment maintenance",
+    "Tooling costs",
+    "Machine upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironclad Machine Service",
+     "base": 8500,
+     "memo": "Preventive maintenance contract - cutting tables"
+    },
+    {
+     "vendor": "Knife & Die Supply Co.",
+     "base": 4200,
+     "memo": "Replacement blades and cutting dies"
+    },
+    {
+     "vendor": "Metroline Lubricants",
+     "base": 1800,
+     "memo": "Machine lubricants and cleaning supplies"
+    }
+   ],
+   "events": [
+    {
+     "key": "cuttingtable",
+     "vendor": "Ironclad Machine Service",
+     "memos": [
+      "Gerber-style cutter gantry rebuild - Plant 1 line 3",
+      "Cutter servo motor replacement - Plant 1 line 3"
+     ],
+     "cross_memo": "Cutter gantry rebuild - line 3 production downtime labor",
+     "plain": [
+      "the cutter gantry rebuild",
+      "the line 3 servo motor replacement",
+      "the Plant 1 line 3 rebuild"
+     ],
+     "oblique": [
+      "the breakdown that halted a production line",
+      "an emergency fix on key equipment",
+      "what failed during peak output",
+      "restoring a machine to operation",
+      "the overhaul of a worn-out workhorse",
+      "a major repair nobody budgeted",
+      "the stoppage that stalled orders",
+      "parts and service for a crippled asset",
+      "the drive system that gave out",
+      "a one-time repair on core machinery",
+      "an outage that cost us several shifts",
+      "the fix that got the floor moving again",
+      "service on a machine past its life",
+      "what the technicians did over the weekend",
+      "a costly mechanical failure",
+      "a rebuild of the automated cutter"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "laserengraver",
+     "vendor": "Photon Edge Industrial",
+     "memos": [
+      "Laser perforation head install - roller shade line",
+      "Laser head calibration - roller shade line"
+     ],
+     "cross_memo": "Laser perforation head install - exhaust ventilation upgrade",
+     "plain": [
+      "the laser perforation head install",
+      "the laser head calibration",
+      "the roller shade line laser head"
+     ],
+     "oblique": [
+      "new equipment for sheer product patterning",
+      "a capability we added for solar screens",
+      "an upgrade from a vendor we hadn't used",
+      "technology to burn tiny holes in cloth",
+      "expanding what the plant can make",
+      "the installation of a precision tool",
+      "a new product line's enabling gear",
+      "setup work that preceded a launch",
+      "capital-like spending expensed to maintenance",
+      "adding a process to the factory",
+      "a specialist crew on site",
+      "what it took to start a new offering",
+      "the addition of advanced machinery",
+      "tuning a recently installed device",
+      "something unfamiliar to our own technicians",
+      "the investment in finer cutting capability"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Installation & Field Service",
+   "aliases": [
+    "installation",
+    "field service",
+    "install crews",
+    "installer costs",
+    "field installs"
+   ],
+   "narrative": [
+    "Installation costs",
+    "Field service",
+    "Install crew spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Trueline Install Crews",
+     "base": 15500,
+     "memo": "Subcontract installers - residential jobs"
+    },
+    {
+     "vendor": "Fleetwise Vehicle Leasing",
+     "base": 6800,
+     "memo": "Install van lease - fleet units 4 through 9"
+    },
+    {
+     "vendor": "ToolBelt Outfitters",
+     "base": 1500,
+     "memo": "Installer tools and consumables"
+    }
+   ],
+   "events": [
+    {
+     "key": "hotelinstall",
+     "vendor": "Trueline Install Crews",
+     "memos": [
+      "Night shift install crew - Grand Meridian hotel 380 rooms",
+      "Lift rental and scaffold - Grand Meridian hotel"
+     ],
+     "cross_memo": "Night shift install crew - hotel parking and permit fees",
+     "plain": [
+      "the Grand Meridian hotel install crew",
+      "the night shift hotel install",
+      "the lift rental and scaffold at Grand Meridian"
+     ],
+     "oblique": [
+      "a huge multi-floor job done after dark",
+      "the commercial project's labor peak",
+      "hanging products in hundreds of guest rooms",
+      "working around the guests",
+      "the biggest single install we booked",
+      "extra crews dispatched for one site",
+      "equipment hired to reach tall windows",
+      "the high-profile building rollout",
+      "an installation marathon",
+      "sub crews brought in to meet a deadline",
+      "the cost of finishing before the grand opening",
+      "logistics for a skyscraper style job",
+      "the tough access conditions",
+      "the multi-week deployment",
+      "a client site that demanded special arrangements",
+      "the flagship commercial deployment"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "warrantyredo",
+     "vendor": "Evergreen Home Services",
+     "memos": [
+      "Warranty remeasure and reinstall - Hollis Park subdivision",
+      "Defective bracket replacement visits - Hollis Park subdivision"
+     ],
+     "cross_memo": "Warranty remeasure and reinstall - credit memo for homeowner association",
+     "plain": [
+      "the Hollis Park warranty reinstall",
+      "the defective bracket replacement visits",
+      "the warranty remeasure and reinstall"
+     ],
+     "oblique": [
+      "going back to fix homes we already served",
+      "redoing work for a housing development",
+      "callbacks to an entire neighborhood",
+      "the cost of our own mistakes",
+      "remedies for a faulty batch",
+      "a series of return trips",
+      "making customers whole after a flaw",
+      "correcting a measurement problem",
+      "a rework campaign",
+      "an outside firm sent to repair our product",
+      "truck rolls that earned no revenue",
+      "the problem the builder complained about",
+      "the cleanup after a quality escape",
+      "visits that undid earlier installs",
+      "a pile of corrective appointments",
+      "the price of getting it right the second time"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

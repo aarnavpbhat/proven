@@ -1,0 +1,815 @@
+{
+ "slug": "tailoring-and-dry-cleaning-chain",
+ "industry": "tailoring and dry cleaning chain",
+ "entities": [
+  "Pressline Garment Care",
+  "Needle & Hanger Cleaners",
+  "Crestmont Tailors & Dry Cleaning",
+  "Silverthread Fabric Care",
+  "Harborlight Cleaners"
+ ],
+ "accounts": [
+  {
+   "name": "Dry Cleaning Solvents & Chemicals",
+   "aliases": [
+    "solvents",
+    "cleaning chemicals",
+    "solvent spend",
+    "chemical supplies",
+    "cleaning solvent costs"
+   ],
+   "narrative": [
+    "Solvents",
+    "Cleaning chemicals",
+    "Solvent spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightwell Chemical Supply",
+     "base": 9800,
+     "memo": "Inv monthly solvent drum delivery"
+    },
+    {
+     "vendor": "Pure Fiber Detergents",
+     "base": 4200,
+     "memo": "Svc wet-clean detergent and spotting agents"
+    }
+   ],
+   "events": [
+    {
+     "key": "hydrocarbon",
+     "vendor": "Brightwell Chemical Supply",
+     "memos": [
+      "Hydrocarbon solvent changeover — initial fill",
+      "Hydrocarbon solvent changeover — drum surcharge"
+     ],
+     "cross_memo": "Hydrocarbon solvent changeover — machine retrofit kit",
+     "plain": [
+      "the hydrocarbon solvent changeover",
+      "the hydrocarbon changeover fill",
+      "the hydrocarbon solvent switch"
+     ],
+     "oblique": [
+      "moving off the old cleaning fluid",
+      "the phase-out of the legacy process",
+      "a regulatory-driven process switch",
+      "the new eco-friendly cleaning method",
+      "what we had to buy to stop using the banned fluid",
+      "the compliance switch at the plants",
+      "replacing the fluid the county restricted",
+      "the greener formula rollout",
+      "the conversion at the production sites",
+      "a one-time fill of the new stuff",
+      "the rule change that forced our hand",
+      "swapping what goes into the machines",
+      "the environmental mandate",
+      "stocking up on the replacement liquid",
+      "the transition to the approved formula",
+      "getting ahead of the emissions deadline"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "stainlab",
+     "vendor": "Lumora Textile Sciences",
+     "memos": [
+      "Enzyme stain protocol trial — pilot batch",
+      "Enzyme stain protocol trial — lab testing fee"
+     ],
+     "cross_memo": "Enzyme stain protocol trial — trainer visit travel",
+     "plain": [
+      "the enzyme stain protocol trial",
+      "the enzyme stain pilot",
+      "the stain protocol trial"
+     ],
+     "oblique": [
+      "the experiment on tougher spots",
+      "testing a new way to lift wine and ink",
+      "the product pilot at two stores",
+      "our attempt to cut redo rates",
+      "a trial of fancier spotting methods",
+      "the research into better results on delicates",
+      "what we spent to see if complaints would drop",
+      "the lab work on difficult marks",
+      "the vendor-led test run",
+      "a small-scale experiment",
+      "figuring out why customers kept bringing items back",
+      "the trial in the flagship shops",
+      "an R&D style effort",
+      "the quality experiment",
+      "working on fewer rewashes",
+      "a test of something new for tricky fabrics"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Garment Packaging & Hanger Supplies",
+   "aliases": [
+    "packaging",
+    "poly bags and hangers",
+    "packaging supplies",
+    "hanger costs",
+    "bagging supplies"
+   ],
+   "narrative": [
+    "Packaging",
+    "Poly bags and hangers",
+    "Packaging supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearpack Films",
+     "base": 5600,
+     "memo": "Inv garment poly roll shipment"
+    },
+    {
+     "vendor": "Wireform Hanger Co",
+     "base": 3100,
+     "memo": "Inv wire and plastic hanger order"
+    },
+    {
+     "vendor": "Tidyfold Paper Goods",
+     "base": 1900,
+     "memo": "Svc tissue and shirt board stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "compostbag",
+     "vendor": "Clearpack Films",
+     "memos": [
+      "Compostable sleeve launch — first print run",
+      "Compostable sleeve launch — die tooling"
+     ],
+     "cross_memo": "Compostable sleeve launch — signage reprint",
+     "plain": [
+      "the compostable sleeve launch",
+      "the compostable sleeve print run",
+      "the compostable sleeve tooling"
+     ],
+     "oblique": [
+      "the shift to greener wrapping",
+      "swapping out the plastic customers see",
+      "an eco rollout at the counters",
+      "what it cost to retool our branded covers",
+      "the sustainability push",
+      "the change in how finished orders go home",
+      "new materials the board wanted",
+      "the environmental commitment we announced",
+      "the redesign of what garments leave in",
+      "the pilot of lower-waste wrapping",
+      "a customer-facing green initiative",
+      "the one-time setup for the new covers",
+      "replacing a product we used for years",
+      "the corporate responsibility project",
+      "the branding refresh on takeaway items",
+      "the rollout across all locations"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "monogram",
+     "vendor": "Stitchmark Labels",
+     "memos": [
+      "Woven monogram tag program — setup fee",
+      "Woven monogram tag program — initial roll"
+     ],
+     "cross_memo": "Woven monogram tag program — loom sample alterations",
+     "plain": [
+      "the woven monogram tag program",
+      "the monogram tag setup",
+      "the woven monogram tags"
+     ],
+     "oblique": [
+      "the personalized label offering",
+      "a premium add-on for loyal clients",
+      "identifying items that belong to hotels",
+      "the custom ID service",
+      "what we spent on the new corporate account",
+      "marking uniforms for the hospitality client",
+      "a branded insert for repeat patrons",
+      "the name-labeling service",
+      "the new line of customized goods",
+      "upfront cost for the uniform contract",
+      "a boutique feature we introduced",
+      "the upsell we are testing",
+      "the stitched identifiers",
+      "customer-specific marking",
+      "the labeling arrangement for the large account",
+      "getting ready for the first client order"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Plant Utilities & Steam",
+   "aliases": [
+    "utilities",
+    "steam and power",
+    "plant utilities",
+    "boiler costs",
+    "energy costs"
+   ],
+   "narrative": [
+    "Utilities",
+    "Steam and power",
+    "Plant utilities"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Gas & Electric",
+     "base": 18500,
+     "memo": "Inv monthly plant electric and gas"
+    },
+    {
+     "vendor": "Clearstream Water Authority",
+     "base": 6400,
+     "memo": "Svc water and sewer usage"
+    },
+    {
+     "vendor": "Thermal Loop Energy",
+     "base": 4800,
+     "memo": "Qtr steam loop service accrual"
+    }
+   ],
+   "events": [
+    {
+     "key": "boilerreplace",
+     "vendor": "Thermal Loop Energy",
+     "memos": [
+      "Boiler feedwater economizer retrofit — parts",
+      "Boiler feedwater economizer retrofit — install labor"
+     ],
+     "cross_memo": "Boiler feedwater economizer retrofit — permit and inspection",
+     "plain": [
+      "the boiler feedwater economizer retrofit",
+      "the economizer retrofit",
+      "the boiler economizer parts"
+     ],
+     "oblique": [
+      "the equipment upgrade to save on heat",
+      "an efficiency project at the main plant",
+      "the work to waste less energy",
+      "what the engineers recommended last year",
+      "the capital-style improvement run through expenses",
+      "the heat recovery project",
+      "an upgrade that should pay back over time",
+      "the plumbing and metalwork at the central site",
+      "the project to lower our burn rate on fuel",
+      "a modernization of old hardware",
+      "the savings initiative",
+      "the production floor improvement",
+      "the work done during the shutdown week",
+      "the retrofit the utility rebate required",
+      "reducing consumption at the biggest facility",
+      "the project finished before winter"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "heatwave",
+     "vendor": "Arcticair Mechanical",
+     "memos": [
+      "Emergency chiller rental — heat advisory week",
+      "Emergency chiller rental — temporary cooling units"
+     ],
+     "cross_memo": "Emergency chiller rental — overtime crew meals",
+     "plain": [
+      "the emergency chiller rental",
+      "the temporary cooling units",
+      "the heat advisory chiller"
+     ],
+     "oblique": [
+      "the weather event that stressed the plants",
+      "keeping staff safe in the hot spell",
+      "what we scrambled to bring in",
+      "the record temperatures",
+      "stopgap equipment while the building struggled",
+      "an unplanned outlay for comfort and safety",
+      "the sudden need for relief on the floor",
+      "the week nobody could work comfortably",
+      "a short-term fix for an uncomfortable stretch",
+      "the fix that kept the presses running",
+      "temporary gear we returned afterward",
+      "the climate problem on the production line",
+      "protecting workers from overheating",
+      "the emergency response to the forecast",
+      "what it took to avoid sending people home",
+      "an unbudgeted rush purchase"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Delivery & Pickup Fleet",
+   "aliases": [
+    "fleet",
+    "route vans",
+    "delivery fleet",
+    "fleet maintenance spend",
+    "pickup routes"
+   ],
+   "narrative": [
+    "Fleet",
+    "Route vans",
+    "Delivery fleet"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmaster Fuel Cards",
+     "base": 11200,
+     "memo": "Inv fuel card statement route vans"
+    },
+    {
+     "vendor": "Garment Route Leasing",
+     "base": 8700,
+     "memo": "Svc monthly van lease payments"
+    },
+    {
+     "vendor": "Axle & Co Repair",
+     "base": 3400,
+     "memo": "Mnt scheduled van servicing"
+    }
+   ],
+   "events": [
+    {
+     "key": "evconversion",
+     "vendor": "Garment Route Leasing",
+     "memos": [
+      "Electric van pilot lease — five cargo units",
+      "Electric van pilot lease — charger deposit"
+     ],
+     "cross_memo": "Electric van pilot lease — depot wiring upgrade",
+     "plain": [
+      "the electric van pilot lease",
+      "the electric cargo units",
+      "the electric van charger deposit"
+     ],
+     "oblique": [
+      "the zero-tailpipe trial on city routes",
+      "our first step toward cleaner driving",
+      "the greener vehicles we tried out",
+      "what the sustainability committee approved",
+      "a test of plug-in transportation",
+      "the downtown low-emission experiment",
+      "new vehicles the mayor's office encouraged",
+      "the green logistics test",
+      "moving away from gasoline on short routes",
+      "the trial run of different vehicles",
+      "our environmental showcase",
+      "the upfront cost of the new way to deliver",
+      "the program that earned us a city incentive",
+      "a small group of cleaner trucks",
+      "the subsidized experiment",
+      "the pilot we hope to scale"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "vanwreck",
+     "vendor": "Redline Collision Works",
+     "memos": [
+      "Collision repair claim — van 14 front end",
+      "Collision repair claim — body panel and paint"
+     ],
+     "cross_memo": "Collision repair claim — loaner transport hire",
+     "plain": [
+      "the collision repair claim",
+      "the van 14 collision",
+      "the collision body panel work"
+     ],
+     "oblique": [
+      "the accident on the interstate",
+      "what happened to one of our trucks",
+      "the incident that sidelined a driver",
+      "the insurance deductible and then some",
+      "the crash on the Tuesday route",
+      "getting the damaged vehicle back on the road",
+      "the unexpected bodywork",
+      "a fender-bender gone expensive",
+      "the mishap that took a unit offline",
+      "the repair after the other driver hit us",
+      "an unplanned shop visit",
+      "the claim we filed afterward",
+      "the road incident",
+      "keeping routes covered while one was out",
+      "cleanup after the collision",
+      "the smashed front of the unit"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Pressing & Finishing Equipment Maintenance",
+   "aliases": [
+    "equipment maintenance",
+    "press repairs",
+    "finishing equipment",
+    "machine upkeep",
+    "maintenance contracts"
+   ],
+   "narrative": [
+    "Equipment maintenance",
+    "Press repairs",
+    "Machine upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Steamline Service Partners",
+     "base": 7300,
+     "memo": "Qtr preventive maintenance contract presses"
+    },
+    {
+     "vendor": "Tumbler Tech Repair",
+     "base": 4100,
+     "memo": "Mnt dryer and washer servicing"
+    }
+   ],
+   "events": [
+    {
+     "key": "tunnelfinisher",
+     "vendor": "Steamline Service Partners",
+     "memos": [
+      "Tunnel finisher belt overhaul — conveyor rebuild",
+      "Tunnel finisher belt overhaul — drive motor"
+     ],
+     "cross_memo": "Tunnel finisher belt overhaul — freight and crating",
+     "plain": [
+      "the tunnel finisher belt overhaul",
+      "the tunnel finisher conveyor rebuild",
+      "the tunnel finisher drive motor"
+     ],
+     "oblique": [
+      "getting the big shirt line running again",
+      "the breakdown at the flagship plant",
+      "what was wrong with the long machine",
+      "the outage that backed up orders",
+      "the major repair on the production floor",
+      "a rebuild nobody planned for",
+      "the equipment that finally gave out",
+      "the work that took days to complete",
+      "fixing the machine that handles hundreds of items an hour",
+      "the worn parts we replaced",
+      "the core line going dark",
+      "the biggest mechanical repair this year",
+      "the shutdown that hurt turnaround",
+      "what the technicians found when they opened it up",
+      "restoring capacity at the main site",
+      "the long-overdue rebuild"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "laserspot",
+     "vendor": "Precisionwerks Industrial",
+     "memos": [
+      "Ultrasonic spotting table install — calibration visit",
+      "Ultrasonic spotting table install — vacuum pump"
+     ],
+     "cross_memo": "Ultrasonic spotting table install — floor reinforcement",
+     "plain": [
+      "the ultrasonic spotting table install",
+      "the ultrasonic spotting calibration",
+      "the ultrasonic spotting table pump"
+     ],
+     "oblique": [
+      "the new station for removing stains",
+      "an upgrade at the delicate-fabric bench",
+      "what we put in at the specialty counter",
+      "the new workstation the staff asked for",
+      "a machine we added to improve quality",
+      "equipment for the high-end line",
+      "the unit that arrived on a pallet",
+      "the stain-fighting addition",
+      "investment in better results on couture items",
+      "the new fixture for the wedding gown work",
+      "a technology upgrade at one location",
+      "setting up something new on the floor",
+      "the purchase the plant manager championed",
+      "the first of its kind in our network",
+      "getting the new workstation certified",
+      "what the supplier sent technicians to do"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Alterations Labor & Seamstress Wages",
+   "aliases": [
+    "alterations labor",
+    "tailor wages",
+    "seamstress payroll",
+    "sewing staff",
+    "alterations payroll"
+   ],
+   "narrative": [
+    "Alterations labor",
+    "Tailor wages",
+    "Seamstress payroll"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shopfloor Staffing Services",
+     "base": 24000,
+     "memo": "Inv temp seamstress agency billing"
+    },
+    {
+     "vendor": "Pinwheel Payroll Solutions",
+     "base": 15500,
+     "memo": "Svc payroll processing alterations dept"
+    },
+    {
+     "vendor": "Bespoke Benefits Group",
+     "base": 6200,
+     "memo": "Inv worker comp and benefits accrual"
+    }
+   ],
+   "events": [
+    {
+     "key": "prom",
+     "vendor": "Shopfloor Staffing Services",
+     "memos": [
+      "Formalwear season surge crew — overtime block",
+      "Formalwear season surge crew — weekend shifts"
+     ],
+     "cross_memo": "Formalwear season surge crew — fitting room lighting",
+     "plain": [
+      "the formalwear season surge crew",
+      "the formalwear surge overtime",
+      "the formalwear weekend shifts"
+     ],
+     "oblique": [
+      "the spring rush of dresses and suits",
+      "the busiest stretch of the year",
+      "extra hands for the dance season",
+      "staffing up for all the last-minute hemming",
+      "the seasonal volume spike",
+      "the weeks when the queue was out the door",
+      "covering the demand from graduations",
+      "bringing in people for the crush",
+      "the added headcount for a short window",
+      "the annual crunch",
+      "the long days during high season",
+      "the temporary hires we needed in April",
+      "what it took to hit promised pickup dates",
+      "the surge in teenagers needing fittings",
+      "handling the workload we see every year",
+      "the peak period"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "mastertailor",
+     "vendor": "Atelier Recruiters Ltd",
+     "memos": [
+      "Master cutter placement fee — executive search",
+      "Master cutter placement fee — relocation stipend"
+     ],
+     "cross_memo": "Master cutter placement fee — signing bonus reserve",
+     "plain": [
+      "the master cutter placement fee",
+      "the master cutter relocation stipend",
+      "the master cutter search"
+     ],
+     "oblique": [
+      "bringing in a senior craftsman from overseas",
+      "hiring the person who will run bespoke",
+      "the recruiting effort for a key role",
+      "the new leader of our custom suits line",
+      "what the headhunter charged",
+      "a senior hire the owner insisted on",
+      "moving someone across the country to join us",
+      "finding talent for the made-to-measure launch",
+      "the cost of landing a specialist",
+      "filling a position that stayed open for months",
+      "the expert who trains the others",
+      "the permanent addition at the top of the craft",
+      "the search firm engagement",
+      "the person we poached from a rival",
+      "getting the right person in the door",
+      "an expensive but necessary addition to the team"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Store Occupancy & Rent",
+   "aliases": [
+    "rent",
+    "store rent",
+    "occupancy",
+    "lease costs",
+    "retail space costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Store rent",
+    "Occupancy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Corner Plaza Properties",
+     "base": 28000,
+     "memo": "Inv monthly retail lease storefronts"
+    },
+    {
+     "vendor": "Midtown Realty Holdings",
+     "base": 19500,
+     "memo": "Inv monthly lease production plant"
+    },
+    {
+     "vendor": "Brickstone CAM Services",
+     "base": 3600,
+     "memo": "Qtr common area maintenance charge"
+    }
+   ],
+   "events": [
+    {
+     "key": "camreconcile",
+     "vendor": "Brickstone CAM Services",
+     "memos": [
+      "Annual CAM true-up — prior year shortfall",
+      "Annual CAM true-up — roof and lot repairs"
+     ],
+     "cross_memo": "Annual CAM true-up — landlord audit fee",
+     "plain": [
+      "the annual CAM true-up",
+      "the CAM true-up shortfall",
+      "the CAM true-up roof and lot repairs"
+     ],
+     "oblique": [
+      "the landlord's year-end catch-up bill",
+      "what the property manager said we owed",
+      "charges that had been underestimated",
+      "the shared-space reconciliation",
+      "the invoice for repairs we did not choose",
+      "the retroactive adjustment",
+      "what showed up after the books were reviewed",
+      "fixing the parking surface at the center",
+      "the bill from the shopping center operator",
+      "costs split among all tenants",
+      "the delayed charge for last year",
+      "a catch-up the lease allows",
+      "the assessment on the strip",
+      "the unexpected statement from the owner's agent",
+      "bringing last year's estimates in line",
+      "the tenants' shared burden"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "newstorefit",
+     "vendor": "Larkspur Interiors",
+     "memos": [
+      "Grand opening buildout — counter millwork",
+      "Grand opening buildout — garment conveyor rail"
+     ],
+     "cross_memo": "Grand opening buildout — permit expediting",
+     "plain": [
+      "the grand opening buildout",
+      "the grand opening counter millwork",
+      "the grand opening conveyor rail"
+     ],
+     "oblique": [
+      "opening our newest location",
+      "the new shop on the east side",
+      "what it took to get a branch ready for customers",
+      "the expansion into another neighborhood",
+      "preparing a storefront we just leased",
+      "the fixtures for the latest site",
+      "launching a location",
+      "the work finished before the ribbon cutting",
+      "setting up a space from scratch",
+      "the carpenters and installers at the new address",
+      "the cost to open the doors",
+      "growth in our footprint",
+      "a branch that was an empty shell",
+      "getting the interior ready",
+      "the build-out the real estate team managed",
+      "the site we signed in the spring"
+     ],
+     "low": 24000,
+     "high": 48000
+    }
+   ]
+  },
+  {
+   "name": "Marketing & Customer Loyalty",
+   "aliases": [
+    "marketing",
+    "advertising",
+    "loyalty program",
+    "promotions",
+    "customer outreach"
+   ],
+   "narrative": [
+    "Marketing",
+    "Advertising",
+    "Loyalty program"
+   ],
+   "recurring": [
+    {
+     "vendor": "Neighborly Print & Mail",
+     "base": 5200,
+     "memo": "Inv direct mail postcards"
+    },
+    {
+     "vendor": "Clickbridge Digital",
+     "base": 3800,
+     "memo": "Svc search and social ad management"
+    }
+   ],
+   "events": [
+    {
+     "key": "suitdrive",
+     "vendor": "Neighborly Print & Mail",
+     "memos": [
+      "Career suit donation drive — flyer print run",
+      "Career suit donation drive — drop box signage"
+     ],
+     "cross_memo": "Career suit donation drive — charity event booth",
+     "plain": [
+      "the career suit donation drive",
+      "the career suit drive flyers",
+      "the career suit drive signage"
+     ],
+     "oblique": [
+      "our community giving campaign",
+      "collecting used clothing for job seekers",
+      "the goodwill effort in the neighborhoods",
+      "outreach to local nonprofits",
+      "what we spent on the charity push",
+      "helping people get ready for interviews",
+      "a campaign that earned us press",
+      "the public-spirited project",
+      "the giveaway the owner champions",
+      "the effort tied to the holiday season",
+      "getting the word out about the collection",
+      "partnering with a local shelter",
+      "the reputation-building initiative",
+      "giving back to the neighborhoods",
+      "the cause the staff organized",
+      "an outreach program with a social purpose"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "rewardsapp",
+     "vendor": "Tapstitch Mobile Labs",
+     "memos": [
+      "Loyalty app rebuild — iOS and Android release",
+      "Loyalty app rebuild — push notification platform"
+     ],
+     "cross_memo": "Loyalty app rebuild — in-store tablet pilot",
+     "plain": [
+      "the loyalty app rebuild",
+      "the loyalty app release",
+      "the loyalty app push platform"
+     ],
+     "oblique": [
+      "the new phone experience for customers",
+      "redoing how people earn points",
+      "the technology refresh that front desk staff requested",
+      "a digital project that took the whole quarter",
+      "what the developers delivered",
+      "giving regulars a modern way to track orders",
+      "the overhaul of the old program",
+      "a mobile-first initiative",
+      "the replacement for a clunky tool",
+      "the work to bring back lapsed customers",
+      "what the contractor built",
+      "an upgrade to our online presence",
+      "the project we promised to finish by summer",
+      "the redesign that tracks pickups",
+      "rebuilding what customers carry in their pockets",
+      "the software the marketing team pushed for"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

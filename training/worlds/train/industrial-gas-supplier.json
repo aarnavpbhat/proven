@@ -1,0 +1,713 @@
+{
+ "slug": "industrial-gas-supplier",
+ "industry": "industrial gas supplier",
+ "entities": [
+  "Cryoline Industrial Gases",
+  "Meridian Cryogenics Supply",
+  "Ironwood Gas & Welding Co",
+  "Tidewater Specialty Gases",
+  "Summit Peak Air Products"
+ ],
+ "accounts": [
+  {
+   "name": "Bulk Liquid Transport",
+   "aliases": [
+    "bulk transport",
+    "liquid hauling",
+    "tanker freight",
+    "bulk delivery costs",
+    "cryogenic trucking"
+   ],
+   "narrative": [
+    "Bulk transport",
+    "Liquid hauling",
+    "Tanker freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northline Tanker Carriers",
+     "base": 24000,
+     "memo": "Liquid oxygen tanker runs - Plant 2 to customer sites"
+    },
+    {
+     "vendor": "Rockhaven Dispatch Services",
+     "base": 6500,
+     "memo": "Driver dispatch and routing - bulk fleet"
+    },
+    {
+     "vendor": "Allgate Fuel Cards",
+     "base": 9800,
+     "memo": "Diesel fuel cards - cryogenic tractors"
+    }
+   ],
+   "events": [
+    {
+     "key": "surcharge",
+     "vendor": "Northline Tanker Carriers",
+     "memos": [
+      "Hazmat reroute surcharge - Route 9 closure Plant 2",
+      "Hazmat reroute surcharge - detour mileage bulk runs"
+     ],
+     "cross_memo": "Hazmat reroute surcharge - overnight driver lodging",
+     "plain": [
+      "the hazmat reroute surcharge",
+      "the hazmat reroute charges",
+      "the Route 9 hazmat reroute surcharge"
+     ],
+     "oblique": [
+      "extra miles from the bridge shutdown",
+      "the detour around the closed highway",
+      "longer trips to reach our customers",
+      "the road closure workaround",
+      "added mileage on delivery runs",
+      "rerouting trucks after the state shut a corridor",
+      "unplanned lengthy driving on liquid loads",
+      "the diversion forced by officials",
+      "having to go the long way around",
+      "extra distance covered by the tanker drivers",
+      "the highway closure fallout",
+      "the alternate path our drivers took",
+      "extended trip times on the busiest lane",
+      "costs of working around the blocked road",
+      "the detour premium",
+      "longer hauls after the roadway was blocked"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "gantry",
+     "vendor": "Pinecrest Loading Systems",
+     "memos": [
+      "Gantry coupling replacement - Loading Bay 3",
+      "Gantry coupling replacement - Pinecrest crew Station 3"
+     ],
+     "cross_memo": "Gantry coupling replacement - spare hose assemblies",
+     "plain": [
+      "the gantry coupling replacement",
+      "the Bay 3 gantry coupling replacement",
+      "the gantry coupling swap"
+     ],
+     "oblique": [
+      "replacing worn fittings where trucks fill up",
+      "new connectors at the filling station",
+      "the retrofit at the dock where tankers are loaded",
+      "swapping out leaking connection hardware",
+      "upgrading the fill point equipment",
+      "work on the platform used to load trailers",
+      "safety driven repair of the transfer apparatus",
+      "the overdue hardware change at the third bay",
+      "renewing the parts that link tanker to plant",
+      "fixing the leaks found during an inspection",
+      "the fill station repair",
+      "new joints for the loading platform",
+      "the contractor visit at the dock",
+      "replacing aging transfer connectors",
+      "the loading area refit",
+      "upgrading the equipment that links trucks to storage"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Cylinder Fleet Maintenance",
+   "aliases": [
+    "cylinder upkeep",
+    "cylinder maintenance",
+    "cylinder fleet",
+    "cylinder repairs",
+    "cylinder servicing"
+   ],
+   "narrative": [
+    "Cylinder upkeep",
+    "Cylinder maintenance",
+    "Cylinder fleet"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harlow Valve & Regulator",
+     "base": 8200,
+     "memo": "Valve replacement parts - returned high pressure units"
+    },
+    {
+     "vendor": "Brightwater Paint & Label",
+     "base": 3100,
+     "memo": "Repainting and relabeling - Depot A"
+    }
+   ],
+   "events": [
+    {
+     "key": "retest",
+     "vendor": "Harlow Valve & Regulator",
+     "memos": [
+      "Hydrostatic retest campaign - Depot A backlog",
+      "Hydrostatic retest campaign - expired inspection tags"
+     ],
+     "cross_memo": "Hydrostatic retest campaign - temporary storage racks",
+     "plain": [
+      "the hydrostatic retest campaign",
+      "the Depot A hydrostatic retest campaign",
+      "the hydrostatic retest backlog"
+     ],
+     "oblique": [
+      "catching up on overdue pressure vessel certifications",
+      "clearing the pile of expired tags",
+      "the compliance push on aging containers",
+      "getting old inventory legal to refill",
+      "testing that the regulator told us to finish",
+      "the inspection drive at the first depot",
+      "requalifying older stock",
+      "the certification catch-up",
+      "work needed to keep old containers in rotation",
+      "a large batch checked for safety",
+      "re-approving units past their dates",
+      "the regulatory sweep of the yard",
+      "the safety audit follow-up on stored units",
+      "bringing the backlog current",
+      "the mass recertification effort",
+      "proving that aged vessels could still hold pressure"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "sandblast",
+     "vendor": "Cobalt Surface Finishing",
+     "memos": [
+      "Abrasive blasting contract - Plant 4 rusted stock",
+      "Abrasive blasting contract - Cobalt crew coating"
+     ],
+     "cross_memo": "Abrasive blasting contract - protective tarps",
+     "plain": [
+      "the abrasive blasting contract",
+      "the Plant 4 abrasive blasting contract",
+      "the abrasive blasting job"
+     ],
+     "oblique": [
+      "stripping corrosion off aging steel",
+      "restoring badly weathered containers",
+      "an outside crew grinding off decay",
+      "the cleanup of rusty inventory",
+      "refurbishing stock left outdoors too long",
+      "contractors resurfacing the yard stock",
+      "getting old bottles looking presentable again",
+      "the surface restoration push",
+      "rescuing units damaged by humidity",
+      "cosmetic and protective rework on the oldest units",
+      "removing years of buildup from steel",
+      "a vendor hired to renew the finish",
+      "the coastal weather damage cleanup",
+      "reconditioning the neglected pile",
+      "fresh protective coating after the strip",
+      "the outsourced renewal of worn exteriors"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Air Separation Plant Power",
+   "aliases": [
+    "plant power",
+    "electricity",
+    "plant electricity",
+    "power costs",
+    "energy spend"
+   ],
+   "narrative": [
+    "Plant power",
+    "Electricity",
+    "Power costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greatlakes Utility Cooperative",
+     "base": 29000,
+     "memo": "Industrial electricity - Air Separation Unit 1"
+    },
+    {
+     "vendor": "Voltwise Demand Management",
+     "base": 2800,
+     "memo": "Peak demand monitoring - ASU 1 and 2"
+    }
+   ],
+   "events": [
+    {
+     "key": "peakdemand",
+     "vendor": "Greatlakes Utility Cooperative",
+     "memos": [
+      "Coincident peak penalty - heat wave grid alert",
+      "Coincident peak penalty - ASU 1 curtailment miss"
+     ],
+     "cross_memo": "Coincident peak penalty - standby generator rental",
+     "plain": [
+      "the coincident peak penalty",
+      "the coincident peak penalty charge",
+      "the heat wave coincident peak penalty"
+     ],
+     "oblique": [
+      "a pricey stretch during the scorching week",
+      "the grid operator's fee for hitting the limit",
+      "having to pay for running hard on the hottest days",
+      "the surcharge from the extreme temperatures",
+      "extra billing from exceeding our allowance",
+      "a spike triggered by the regional emergency",
+      "consumption during the worst afternoon",
+      "the utility's punishment for missing our power-down window",
+      "the cost of not shedding load fast enough",
+      "cooling demand across the whole region",
+      "a hot spell premium",
+      "the price of staying online during the alert",
+      "extra fees imposed by the cooperative",
+      "what we owed for drawing too much at the wrong hour",
+      "the summer emergency bill",
+      "missed reduction targets"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "transformer",
+     "vendor": "Redline Electrical Contractors",
+     "memos": [
+      "Substation transformer repair - ASU 2 outage",
+      "Substation transformer repair - Redline emergency callout"
+     ],
+     "cross_memo": "Substation transformer repair - lost production credit",
+     "plain": [
+      "the substation transformer repair",
+      "the ASU 2 substation transformer repair",
+      "the substation transformer outage repair"
+     ],
+     "oblique": [
+      "restoring electrical feed after the failure",
+      "an unplanned fix to the equipment that steps down voltage",
+      "the emergency crew visit at night",
+      "getting the second unit running again",
+      "fixing the burnt out power gear",
+      "the outage that halted output",
+      "after hours contractors on the electrical side",
+      "the breakdown of the main supply hardware",
+      "rapid response work after a blackout at the site",
+      "bringing the unit back online",
+      "the urgent call to the electricians",
+      "patching the high voltage failure",
+      "the downtime repair bill",
+      "a tripped feed that needed immediate attention",
+      "emergency work on our power intake",
+      "the fault that knocked a unit offline"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Specialty Gas Purification",
+   "aliases": [
+    "purification",
+    "gas purification",
+    "purity systems",
+    "specialty gas processing",
+    "purifier spend"
+   ],
+   "narrative": [
+    "Purification",
+    "Gas purification",
+    "Purity systems"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sterling Getter Materials",
+     "base": 11500,
+     "memo": "Purifier cartridges - ultra high purity line"
+    },
+    {
+     "vendor": "Calix Analytical Labs",
+     "base": 4800,
+     "memo": "Monthly impurity assay - Lab B"
+    },
+    {
+     "vendor": "Orion Filter Media",
+     "base": 3900,
+     "memo": "Molecular sieve media - dryer beds"
+    }
+   ],
+   "events": [
+    {
+     "key": "palladium",
+     "vendor": "Sterling Getter Materials",
+     "memos": [
+      "Palladium membrane rebuild - Hydrogen Line 2",
+      "Palladium membrane rebuild - metal price adjustment"
+     ],
+     "cross_memo": "Palladium membrane rebuild - interim cylinder purchases",
+     "plain": [
+      "the palladium membrane rebuild",
+      "the Hydrogen Line 2 palladium membrane rebuild",
+      "the palladium membrane replacement"
+     ],
+     "oblique": [
+      "precious metal costs for the clean hydrogen stream",
+      "redoing the filter that separates the lightest element",
+      "the expensive element we needed to restock",
+      "renewing the core of the gas cleaning train",
+      "a commodity driven bill on the second line",
+      "the worn out separator element swap",
+      "rebuilding the heart of the cleanup skid",
+      "the pricey refresh of our thinnest barrier",
+      "mining market price pressure on the second stream",
+      "replacing the key piece in the cleanup unit",
+      "fresh barrier material",
+      "the high cost refit at the second line",
+      "a costly overhaul of the permeation hardware",
+      "the metal that went up in price",
+      "restoring the stage that makes pure fuel gas",
+      "the re-fabrication of the separating layer"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "audit",
+     "vendor": "Vantage Quality Certifiers",
+     "memos": [
+      "ISO 9001 recertification audit - Lab B purity records",
+      "ISO 9001 recertification audit - Vantage assessor travel"
+     ],
+     "cross_memo": "ISO 9001 recertification audit - document control upgrade",
+     "plain": [
+      "the ISO 9001 recertification audit",
+      "the Lab B ISO 9001 recertification audit",
+      "the ISO 9001 audit"
+     ],
+     "oblique": [
+      "the outside examiners visit",
+      "our standards body review",
+      "proving to a third party that our process is sound",
+      "the three year quality credential renewal",
+      "paperwork and inspections demanded by customers",
+      "the review needed to keep our certificate",
+      "external assessors on site for days",
+      "the credential check",
+      "preparation for the quality inspectors",
+      "a formal examination of how we document things",
+      "keeping our accreditation alive",
+      "the periodic outside scrutiny",
+      "what it cost to stay certified",
+      "the visit from independent reviewers",
+      "the standards renewal cycle",
+      "the requirement from our biggest buyers"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Safety and Hazmat Compliance",
+   "aliases": [
+    "safety",
+    "hazmat compliance",
+    "safety compliance",
+    "hazmat costs",
+    "regulatory safety spend"
+   ],
+   "narrative": [
+    "Safety",
+    "Hazmat compliance",
+    "Safety compliance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Firewatch Safety Training",
+     "base": 5200,
+     "memo": "Driver hazmat training - monthly cohort"
+    },
+    {
+     "vendor": "Guardian PPE Supply",
+     "base": 4100,
+     "memo": "Respirators and cryogenic gloves - all plants"
+    }
+   ],
+   "events": [
+    {
+     "key": "leakdrill",
+     "vendor": "Firewatch Safety Training",
+     "memos": [
+      "Emergency response exercise - chlorine release scenario",
+      "Emergency response exercise - joint county responders"
+     ],
+     "cross_memo": "Emergency response exercise - plant shutdown overtime",
+     "plain": [
+      "the emergency response exercise",
+      "the chlorine emergency response exercise",
+      "the county emergency response exercise"
+     ],
+     "oblique": [
+      "a full scale rehearsal of a worst day",
+      "practicing with the local fire department",
+      "simulating a toxic gas accident",
+      "the mock incident staged for regulators",
+      "a large drill involving outside agencies",
+      "readiness testing at the site",
+      "the staged disaster practice",
+      "training for a gas escape",
+      "preparing crews for a catastrophe",
+      "the all hands rehearsal",
+      "a joint run-through with first responders",
+      "pretending the worst had happened",
+      "our annual readiness rehearsal",
+      "the tabletop turned live event",
+      "what it cost to rehearse a crisis",
+      "the multi agency practice day"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "fine",
+     "vendor": "Delmar Environmental Consulting",
+     "memos": [
+      "Consent order remediation plan - Plant 3 stack emissions",
+      "Consent order remediation plan - Delmar sampling study"
+     ],
+     "cross_memo": "Consent order remediation plan - monitoring equipment lease",
+     "plain": [
+      "the consent order remediation plan",
+      "the Plant 3 consent order remediation plan",
+      "the consent order remediation work"
+     ],
+     "oblique": [
+      "the agreement reached after air quality regulators visited",
+      "settling an environmental dispute with the state",
+      "consultants hired to fix a smokestack problem",
+      "cleanup commitments we agreed to make",
+      "the corrective program a government agency required",
+      "measuring what comes out of the chimney",
+      "penalty avoidance work on the third facility",
+      "the promise made to the environmental agency",
+      "outside experts studying our discharge",
+      "the follow up to a violation notice",
+      "the improvement plan imposed from outside",
+      "resolving the emissions complaint",
+      "technical studies demanded by authorities",
+      "the mandated fix after a notice",
+      "the settlement driven program",
+      "what the agency ordered us to do"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Medical Gas Distribution",
+   "aliases": [
+    "medical gas",
+    "hospital deliveries",
+    "healthcare distribution",
+    "medical distribution",
+    "clinical gas supply"
+   ],
+   "narrative": [
+    "Medical gas",
+    "Hospital deliveries",
+    "Healthcare distribution"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lifeline Courier Network",
+     "base": 13500,
+     "memo": "Hospital oxygen cylinder deliveries - metro region"
+    },
+    {
+     "vendor": "Medisafe Packaging",
+     "base": 3600,
+     "memo": "Medical grade cylinder tags and caps"
+    },
+    {
+     "vendor": "CareTrack Telematics",
+     "base": 2400,
+     "memo": "Delivery tracking subscription - hospital routes"
+    }
+   ],
+   "events": [
+    {
+     "key": "surge",
+     "vendor": "Lifeline Courier Network",
+     "memos": [
+      "Respiratory surge deliveries - Mercy General ICU",
+      "Respiratory surge deliveries - weekend double runs"
+     ],
+     "cross_memo": "Respiratory surge deliveries - temporary driver staffing",
+     "plain": [
+      "the respiratory surge deliveries",
+      "the Mercy General respiratory surge deliveries",
+      "the respiratory surge runs"
+     ],
+     "oblique": [
+      "a flu season spike in patient need",
+      "extra weekend trips to the biggest hospital",
+      "the wave of lung illness admissions",
+      "emergency stockpiling by clinical customers",
+      "more frequent drop offs to intensive care",
+      "demand from a seasonal outbreak",
+      "urgent top ups for patients on ventilators",
+      "the crush of sick people at the ward",
+      "unscheduled deliveries after the peak in cases",
+      "crowded wards needing refills",
+      "a community health crisis",
+      "the unexpected increase in bed occupancy",
+      "the winter illness peak",
+      "rushing supplies to critical care",
+      "doubling up trips on days off",
+      "the strain on local medical facilities"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "recall",
+     "vendor": "Pharmalink Regulatory Services",
+     "memos": [
+      "FDA lot recall response - Oxygen USP batch 4417",
+      "FDA lot recall response - Pharmalink hotline staffing"
+     ],
+     "cross_memo": "FDA lot recall response - customer credit memos",
+     "plain": [
+      "the FDA lot recall response",
+      "the Oxygen USP FDA lot recall response",
+      "the FDA lot recall handling"
+     ],
+     "oblique": [
+      "pulling a batch of product back from clinics",
+      "the government ordered withdrawal",
+      "notifying every buyer about a bad shipment",
+      "a labelling problem found after delivery",
+      "retrieving product already sitting in wards",
+      "the paperwork storm after a quality escape",
+      "calls to customers about a faulty production run",
+      "unwinding a shipment that should not have gone out",
+      "the federal notice about one production day",
+      "tracing where each tank ended up",
+      "the reversal of a sale of bad stock",
+      "a contamination scare handled with outside help",
+      "what it took to reclaim a defective run",
+      "the quality incident with a federal agency",
+      "the recovery effort for suspect inventory",
+      "returning the affected shipment"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Welding Supply Branch Operations",
+   "aliases": [
+    "branch operations",
+    "retail branches",
+    "welding supply stores",
+    "branch costs",
+    "counter sales sites"
+   ],
+   "narrative": [
+    "Branch operations",
+    "Retail branches",
+    "Branch costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Eastgate Property Holdings",
+     "base": 16500,
+     "memo": "Lease - Welding Supply Branch Dayton"
+    },
+    {
+     "vendor": "Anvil Equipment Rental",
+     "base": 3700,
+     "memo": "Forklift and cylinder cart rental - branches"
+    },
+    {
+     "vendor": "Shopfront Security Monitoring",
+     "base": 1200,
+     "memo": "Alarm monitoring - all branch locations"
+    }
+   ],
+   "events": [
+    {
+     "key": "relocation",
+     "vendor": "Eastgate Property Holdings",
+     "memos": [
+      "Branch relocation buildout - Dayton Annex tenant improvements",
+      "Branch relocation buildout - landlord construction fee"
+     ],
+     "cross_memo": "Branch relocation buildout - moving crew and racking",
+     "plain": [
+      "the branch relocation buildout",
+      "the Dayton Annex branch relocation buildout",
+      "the branch relocation tenant improvements"
+     ],
+     "oblique": [
+      "moving the store to a bigger building",
+      "fitting out the new storefront",
+      "the expansion across town",
+      "construction work at the replacement location",
+      "outfitting the larger premises",
+      "the shift into a roomier spot",
+      "landlord charges for finishing the interior",
+      "opening in a different part of the city",
+      "setting up shelves and counters at the new site",
+      "the upgrade from our cramped old store",
+      "a new address for our local customers",
+      "walls and flooring for the incoming shop",
+      "improvements to the space we moved into",
+      "the transition between two sites",
+      "the capital outlay for a better storefront",
+      "relocating the walk in sales point"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "theft",
+     "vendor": "Ironclad Fence and Gate",
+     "memos": [
+      "Perimeter fencing upgrade - Toledo yard copper theft",
+      "Perimeter fencing upgrade - Ironclad razor wire install"
+     ],
+     "cross_memo": "Perimeter fencing upgrade - overnight guard patrol",
+     "plain": [
+      "the perimeter fencing upgrade",
+      "the Toledo perimeter fencing upgrade",
+      "the perimeter fencing install"
+     ],
+     "oblique": [
+      "hardening the yard after thieves struck",
+      "stopping break ins at the lot",
+      "a response to stolen metal",
+      "securing the property boundary",
+      "protection following a burglary",
+      "barriers added after intruders got in",
+      "the lockdown of the outdoor storage area",
+      "keeping trespassers away",
+      "extra defences after a crime",
+      "a break in that prompted new barriers",
+      "walls against future losses",
+      "the reaction to the overnight incident",
+      "keeping people out of our compound",
+      "the new barrier after vandals visited",
+      "making the lot harder to enter",
+      "spending to deter another loss"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,830 @@
+{
+ "slug": "carpet-and-flooring-installer",
+ "industry": "carpet and flooring installer",
+ "entities": [
+  "Loomline Flooring Works",
+  "Ridgeback Carpet & Tile Installers",
+  "Cornerstone Floorcraft LLC",
+  "Plumb & Level Flooring Co",
+  "Northgate Surface Installations"
+ ],
+ "accounts": [
+  {
+   "name": "Installation Subcontract Labor",
+   "aliases": [
+    "subcontract labor",
+    "sub labor",
+    "installer subs",
+    "install crews",
+    "contract installers"
+   ],
+   "narrative": [
+    "Subcontract labor",
+    "Installer subs",
+    "Install crews"
+   ],
+   "recurring": [
+    {
+     "vendor": "Medina Crew Services",
+     "base": 18500,
+     "memo": "Install crew labor wk ending - residential"
+    },
+    {
+     "vendor": "Okafor & Sons Tile Setting",
+     "base": 12200,
+     "memo": "Tile setting labor - per sq ft billing"
+    },
+    {
+     "vendor": "Lindqvist Stair Installers",
+     "base": 6400,
+     "memo": "Stair runner install labor"
+    }
+   ],
+   "events": [
+    {
+     "key": "hospital",
+     "vendor": "Medina Crew Services",
+     "memos": [
+      "Night shift premium - Westbrook Hospital wing WO-4471",
+      "Overnight install crew - Westbrook Hospital wing"
+     ],
+     "cross_memo": "Night shift premium - Westbrook Hospital wing floor protection",
+     "plain": [
+      "the Westbrook Hospital wing night shift premium",
+      "the Westbrook Hospital overnight crew",
+      "the Westbrook Hospital night shift work"
+     ],
+     "oblique": [
+      "the medical campus job done after hours",
+      "working around patients in the evening",
+      "the clinic expansion we had to finish while the building slept",
+      "extra pay for crews on graveyard hours",
+      "the healthcare project with restricted access windows",
+      "the infection control schedule at the care facility",
+      "people working through the dark hours",
+      "the sick-ward renovation",
+      "a job where daytime access was off limits",
+      "the weekend and late-hour surcharge on the care center",
+      "the project that could not disturb patients",
+      "additional wages for unsociable hours",
+      "the medical client's timing restrictions",
+      "crews brought in once visitors had gone home",
+      "the premium we paid to keep staff on late schedules",
+      "the sterile-environment rollout"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "torrance",
+     "vendor": "Torrance Rapid Labor",
+     "memos": [
+      "Torrance Rapid Labor - emergency crew surge PO-8812",
+      "Torrance Rapid Labor - Harborview condo flood restoration"
+     ],
+     "cross_memo": "Torrance Rapid Labor - Harborview condo flood restoration debris haul",
+     "plain": [
+      "the Torrance Rapid Labor emergency crew surge",
+      "the Harborview condo flood restoration crew",
+      "the Torrance emergency surge on Harborview"
+     ],
+     "oblique": [
+      "the waterlogged building cleanup",
+      "a burst pipe aftermath on the coast",
+      "extra hands for the insurance claim job",
+      "the storm damage rebuild",
+      "labor rushed in when a deadline slipped",
+      "an unplanned wave of temporary workers",
+      "getting a soaked apartment block livable",
+      "the sudden need for more bodies on site",
+      "temp staffing for the disaster job",
+      "the water event that wrecked the lower units",
+      "a short-notice call for additional installers",
+      "bringing in outside help for an urgent job",
+      "the insurance-funded restoration project",
+      "a rush effort after a plumbing failure",
+      "crews we did not plan to hire",
+      "the damp-floor rescue effort"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Carpet and Roll Goods Purchases",
+   "aliases": [
+    "carpet purchases",
+    "roll goods",
+    "carpet materials",
+    "broadloom spend",
+    "carpet stock"
+   ],
+   "narrative": [
+    "Carpet purchases",
+    "Roll goods",
+    "Broadloom spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shaw Valley Mills",
+     "base": 28500,
+     "memo": "Broadloom carpet rolls - stock replenishment"
+    },
+    {
+     "vendor": "Pacific Weave Distributors",
+     "base": 15800,
+     "memo": "Commercial carpet tile cartons"
+    },
+    {
+     "vendor": "Birchfield Cushion Supply",
+     "base": 4200,
+     "memo": "Carpet pad rolls 8lb rebond"
+    }
+   ],
+   "events": [
+    {
+     "key": "wool",
+     "vendor": "Pacific Weave Distributors",
+     "memos": [
+      "Wool berber custom dye lot - Ashcroft Lodge PO-3390",
+      "Custom wool dye lot freight - Ashcroft Lodge"
+     ],
+     "cross_memo": "Wool berber custom dye lot - Ashcroft Lodge sample sets",
+     "plain": [
+      "the Ashcroft Lodge wool berber dye lot",
+      "the custom wool dye lot",
+      "the Ashcroft Lodge custom wool order"
+     ],
+     "oblique": [
+      "the hospitality client's special-order natural fiber",
+      "a one-of-a-kind color run for the mountain resort",
+      "the premium material ordered to a designer's spec",
+      "a bespoke textile commitment",
+      "the upscale lodging order",
+      "material made to order with long lead times",
+      "the high-end specification carpet",
+      "a color match requested by the architect",
+      "the pricey natural-fiber upgrade",
+      "goods produced just for one customer",
+      "the designer-driven product choice",
+      "the luxury finish chosen for the guest rooms",
+      "fiber that cost far more than our usual stock",
+      "the mill's special production run",
+      "what the interior designer insisted on",
+      "a non-stock item with a minimum run"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "nylon",
+     "vendor": "Kestrel Fibers Direct",
+     "memos": [
+      "Kestrel Fibers Direct - solution-dyed nylon bulk buy PO-5521",
+      "Kestrel Fibers Direct - Apex Towers nylon pre-order"
+     ],
+     "cross_memo": "Kestrel Fibers Direct - Apex Towers nylon warehouse storage",
+     "plain": [
+      "the Kestrel Fibers solution-dyed nylon bulk buy",
+      "the Apex Towers nylon pre-order",
+      "the Kestrel nylon bulk purchase"
+     ],
+     "oblique": [
+      "locking in price ahead of an announced increase",
+      "the large forward purchase for the office high-rise",
+      "stocking up before the supplier raised rates",
+      "an early commitment for next quarter's tower job",
+      "buying ahead of the tariff change",
+      "the volume deal we negotiated with a new source",
+      "inventory built up for a big commercial contract",
+      "a stockpile for the downtown skyscraper",
+      "the discount we got for ordering a lot at once",
+      "material pulled forward from future months",
+      "the hedge against rising fiber costs",
+      "an advance order for the corporate tenant fit-out",
+      "the unusually large inbound shipment",
+      "a new supplier relationship for synthetic fiber",
+      "goods bought months before they would be installed",
+      "the one-time quantity purchase"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Hard Surface and Tile Materials",
+   "aliases": [
+    "hard surface",
+    "tile materials",
+    "hardwood and tile",
+    "lvp and tile",
+    "hard surface materials"
+   ],
+   "narrative": [
+    "Hard surface",
+    "Tile materials",
+    "Hardwood and tile"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Ridge Tile Co",
+     "base": 19800,
+     "memo": "Porcelain tile pallets - assorted"
+    },
+    {
+     "vendor": "Heartland Hardwood Supply",
+     "base": 14500,
+     "memo": "Engineered oak planks 5in"
+    },
+    {
+     "vendor": "Summit LVP Wholesale",
+     "base": 9700,
+     "memo": "Luxury vinyl plank cartons"
+    }
+   ],
+   "events": [
+    {
+     "key": "marble",
+     "vendor": "Granite Ridge Tile Co",
+     "memos": [
+      "Carrara marble slabs - Delacroix Estate foyer PO-2214",
+      "Carrara marble slab crating - Delacroix Estate"
+     ],
+     "cross_memo": "Carrara marble slabs - Delacroix Estate sealer and setting kit",
+     "plain": [
+      "the Carrara marble slabs",
+      "the Delacroix Estate marble foyer",
+      "the Delacroix Estate Carrara order"
+     ],
+     "oblique": [
+      "the stone entry for the private residence",
+      "imported material for a wealthy homeowner",
+      "the showpiece lobby floor",
+      "a natural stone upgrade the client chose",
+      "heavy slabs shipped from overseas",
+      "the luxury entrance that cost a fortune",
+      "the architect's centerpiece finish",
+      "a mansion's grand hall",
+      "expensive quarried goods",
+      "the single high-end residential project",
+      "the polished floor that anchors the house",
+      "a rare custom stone selection",
+      "the opulent front hall",
+      "what the estate owner insisted upon",
+      "fragile freight needing special crating",
+      "the top-tier finishing material"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "bamboo",
+     "vendor": "Evergreen Strand Imports",
+     "memos": [
+      "Evergreen Strand Imports - strand bamboo flooring PO-7706",
+      "Evergreen Strand Imports - Maple Court school bamboo gym"
+     ],
+     "cross_memo": "Evergreen Strand Imports - Maple Court school bamboo moisture barrier",
+     "plain": [
+      "the Evergreen Strand bamboo flooring",
+      "the Maple Court school bamboo gym",
+      "the Evergreen Strand bamboo order"
+     ],
+     "oblique": [
+      "the athletic hall resurfacing for the district",
+      "a sustainable material the board requested",
+      "the gymnasium refit over the summer break",
+      "a green-building credit project",
+      "environmentally friendly planks for the education client",
+      "the public sector job with an eco mandate",
+      "the campus sports floor",
+      "a municipal tender we won",
+      "renewable-source product on a government contract",
+      "the youth sports facility upgrade",
+      "the building program funded by a bond",
+      "what the facilities director specified for eco goals",
+      "the large order for the learning institution",
+      "a new product line we had not stocked",
+      "the court-style surface for students",
+      "the shipment arriving by sea from Asia"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Subfloor Prep and Adhesives",
+   "aliases": [
+    "subfloor prep",
+    "adhesives",
+    "prep materials",
+    "leveling and adhesives",
+    "underlayment and glue"
+   ],
+   "narrative": [
+    "Subfloor prep",
+    "Adhesives",
+    "Prep materials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stanhope Adhesives",
+     "base": 6800,
+     "memo": "Carpet and VCT adhesive pails"
+    },
+    {
+     "vendor": "LevelRight Compounds",
+     "base": 5200,
+     "memo": "Self-leveling underlayment bags"
+    },
+    {
+     "vendor": "Foundry Moisture Control",
+     "base": 3100,
+     "memo": "Moisture barrier primer drums"
+    }
+   ],
+   "events": [
+    {
+     "key": "asbestos",
+     "vendor": "Stanhope Adhesives",
+     "memos": [
+      "Mastic abatement solvent - Pinecrest Annex WO-6638",
+      "Abatement-grade remover drums - Pinecrest Annex"
+     ],
+     "cross_memo": "Mastic abatement solvent - Pinecrest Annex containment sheeting",
+     "plain": [
+      "the Pinecrest Annex mastic abatement",
+      "the Pinecrest Annex abatement solvent",
+      "the Pinecrest mastic abatement remover"
+     ],
+     "oblique": [
+      "stripping old black glue from a vintage building",
+      "the discovery under the old tile",
+      "hazardous legacy material in the old wing",
+      "the unforeseen condition found during demolition",
+      "cleanup of a decades-old floor layer",
+      "the regulatory-compliant removal work",
+      "what the inspector flagged before we could proceed",
+      "the cost of dealing with a nasty surprise underneath",
+      "specialty chemicals for an outdated installation",
+      "the older structure's buried problem",
+      "a scope change after opening up the floor",
+      "safe removal of what previous owners left behind",
+      "the heavy-duty stripping job",
+      "the sixties-era subfloor issue",
+      "the compliance hurdle on the renovation",
+      "the extra products needed once we saw what was below"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "gypcrete",
+     "vendor": "Ironwood Pour Systems",
+     "memos": [
+      "Ironwood Pour Systems - gypsum pour crew and pump PO-9013",
+      "Ironwood Pour Systems - Lakeshore Lofts radiant pour"
+     ],
+     "cross_memo": "Ironwood Pour Systems - Lakeshore Lofts radiant pour curing monitor",
+     "plain": [
+      "the Ironwood Pour Systems gypsum pour",
+      "the Lakeshore Lofts radiant pour",
+      "the Ironwood gypsum pour crew"
+     ],
+     "oblique": [
+      "heating tubes embedded under the new floor",
+      "the condo conversion's warm-floor package",
+      "a liquid-applied base layer on upper stories",
+      "the pump truck visit to the lake apartments",
+      "covering in-floor warmth lines before finishing",
+      "a heavy-duty leveling operation",
+      "the loft project's thermal system",
+      "the engineered base poured by outside specialists",
+      "a thick topping across multiple units",
+      "the specialty contractor's equipment day",
+      "what we needed before tile could go down",
+      "the heated-slab coordination",
+      "a mass application on an upper deck",
+      "the high-rise leveling job",
+      "the large-volume placement across the whole level",
+      "extra work added by the mechanical engineer"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Fleet and Installation Vehicles",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "van expenses",
+    "vehicle upkeep",
+    "truck and van costs"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Van expenses",
+    "Vehicle upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Blue Ridge Fuel Cards",
+     "base": 7400,
+     "memo": "Fleet fuel card statement"
+    },
+    {
+     "vendor": "Allied Truck Lease",
+     "base": 9200,
+     "memo": "Cargo van lease payments x6"
+    },
+    {
+     "vendor": "Corner Tire & Brake",
+     "base": 2300,
+     "memo": "Routine tire rotation and brake service"
+    }
+   ],
+   "events": [
+    {
+     "key": "liftgate",
+     "vendor": "Allied Truck Lease",
+     "memos": [
+      "Box truck liftgate retrofit - unit 14 WO-1187",
+      "Liftgate hydraulic install labor - unit 14"
+     ],
+     "cross_memo": "Box truck liftgate retrofit - unit 14 loaner rental",
+     "plain": [
+      "the box truck liftgate retrofit",
+      "the unit 14 liftgate install",
+      "the liftgate hydraulic retrofit"
+     ],
+     "oblique": [
+      "making it easier to unload heavy roll goods",
+      "a modification to the big delivery vehicle",
+      "the equipment that saves our backs",
+      "a safety upgrade after a worker injury",
+      "the addition to the largest vehicle in the yard",
+      "mechanized loading ability",
+      "a change recommended by the insurance carrier",
+      "the conversion that lets one person move a pallet",
+      "what the driver requested for rolling cargo",
+      "the alteration to the vehicle's rear end",
+      "an investment to reduce lifting claims",
+      "the platform on the back of the truck",
+      "the hydraulics project",
+      "the modification done at the lessor's shop",
+      "the rental we took while it was down",
+      "the improvement for handling heavy loads"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "recall",
+     "vendor": "Hartwell Fleet Services",
+     "memos": [
+      "Hartwell Fleet Services - transmission replacement van 3 PO-4402",
+      "Hartwell Fleet Services - van 3 drivetrain rebuild"
+     ],
+     "cross_memo": "Hartwell Fleet Services - van 3 transmission tow and rental",
+     "plain": [
+      "the Hartwell transmission replacement on van 3",
+      "the van 3 drivetrain rebuild",
+      "the Hartwell Fleet van 3 transmission job"
+     ],
+     "oblique": [
+      "the vehicle that quit on the highway",
+      "a breakdown of our oldest cargo carrier",
+      "the unplanned mechanical failure",
+      "a big repair on a high-mileage workhorse",
+      "the gearbox giving out",
+      "getting a crew vehicle back on the road",
+      "the shop bill nobody expected",
+      "a major component failure past warranty",
+      "the aging unit's catastrophic problem",
+      "power-train work done at an outside garage",
+      "the repair that cost more than the book value",
+      "a dead vehicle blocking an installer's route",
+      "the heavy mechanical overhaul",
+      "the rig that needed a new center section",
+      "a truck that stranded a crew midday",
+      "the costly shop visit"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Tools and Equipment Maintenance",
+   "aliases": [
+    "tools and equipment",
+    "tool upkeep",
+    "equipment repairs",
+    "machine maintenance",
+    "installer tools"
+   ],
+   "narrative": [
+    "Tool upkeep",
+    "Equipment repairs",
+    "Installer tools"
+   ],
+   "recurring": [
+    {
+     "vendor": "Apex Tool Rental",
+     "base": 4600,
+     "memo": "Floor stripper and roller rental"
+    },
+    {
+     "vendor": "Keystone Blade & Bit",
+     "base": 2100,
+     "memo": "Cutting blades and knee kicker parts"
+    },
+    {
+     "vendor": "Mason Equipment Service",
+     "base": 1800,
+     "memo": "Power stretcher calibration"
+    }
+   ],
+   "events": [
+    {
+     "key": "grinder",
+     "vendor": "Apex Tool Rental",
+     "memos": [
+      "Planetary concrete grinder 30in - Dockside Warehouse WO-5509",
+      "Diamond tooling set grinder - Dockside Warehouse"
+     ],
+     "cross_memo": "Planetary concrete grinder 30in - Dockside Warehouse dust extractor",
+     "plain": [
+      "the planetary concrete grinder",
+      "the Dockside Warehouse grinder rental",
+      "the 30in grinder diamond tooling"
+     ],
+     "oblique": [
+      "smoothing a rough slab before coverings go down",
+      "the industrial floor surface remediation",
+      "a bulky machine hauled to the shipping facility",
+      "what it took to remove old coatings from the base",
+      "the dusty prep work",
+      "the heavy rental for a large flat area",
+      "the equipment needed for polished finish prep",
+      "the contractor-grade surface machine",
+      "getting the base ready for epoxy",
+      "a warehouse project's preparation tool",
+      "the loud machine that ran all week",
+      "grit-and-diamond consumables",
+      "the item we did not own and had to borrow",
+      "the abrasive process on bare cement",
+      "a big space with a huge square footage",
+      "the machine the foreman requested"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "laser",
+     "vendor": "Precision Survey Instruments",
+     "memos": [
+      "Precision Survey Instruments - rotary laser level set PO-3175",
+      "Precision Survey Instruments - tripod and receiver kit for Meridian Plaza"
+     ],
+     "cross_memo": "Precision Survey Instruments - Meridian Plaza laser calibration contract",
+     "plain": [
+      "the Precision Survey laser level set",
+      "the Meridian Plaza tripod and receiver kit",
+      "the Precision Survey rotary laser purchase"
+     ],
+     "oblique": [
+      "measuring tools for checking flatness",
+      "the high-tech gear that confirms the slab is true",
+      "an equipment buy tied to a tight tolerance spec",
+      "what the general contractor required on the plaza job",
+      "the investment that replaced our old string lines",
+      "precision gauging devices",
+      "the ability to certify our own work",
+      "gear we purchased rather than borrowed",
+      "the surveyor-grade add-on",
+      "a capital purchase expensed in the month",
+      "a check on floor evenness",
+      "equipment bought for quality control",
+      "the devices that beam a line across the room",
+      "the shiny new instruments",
+      "a specification demanded by the owner's rep",
+      "tools to document the floor's condition"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Showroom and Warehouse Rent",
+   "aliases": [
+    "rent",
+    "facility rent",
+    "showroom lease",
+    "warehouse lease",
+    "rent and occupancy"
+   ],
+   "narrative": [
+    "Facility rent",
+    "Showroom lease",
+    "Warehouse lease"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crestview Property Partners",
+     "base": 16500,
+     "memo": "Showroom lease monthly"
+    },
+    {
+     "vendor": "Eastside Industrial Holdings",
+     "base": 11800,
+     "memo": "Warehouse lease monthly"
+    },
+    {
+     "vendor": "Metro Utilities Co",
+     "base": 2900,
+     "memo": "Electric and water - shop"
+    }
+   ],
+   "events": [
+    {
+     "key": "cam",
+     "vendor": "Crestview Property Partners",
+     "memos": [
+      "Annual CAM reconciliation true-up - suite 100 INV-2290",
+      "Common area true-up prior year - suite 100"
+     ],
+     "cross_memo": "Annual CAM reconciliation true-up - suite 100 late fee",
+     "plain": [
+      "the annual CAM reconciliation true-up",
+      "the suite 100 common area true-up",
+      "the CAM true-up"
+     ],
+     "oblique": [
+      "the landlord's year-end adjustment",
+      "a catch-up bill for shared costs",
+      "what the property manager finally settled",
+      "the retroactive charge from last year",
+      "the bill that arrived once audits closed",
+      "our share of the shopping center's upkeep",
+      "a one-time correction on occupancy expenses",
+      "the balance the owner said we owed",
+      "the parking lot and landscaping share",
+      "an invoice for twelve months of overages",
+      "costs the lessor passed through late",
+      "the adjustment to estimated payments",
+      "a notice we got in the mail from the landlord",
+      "the stragglers on the lease statement",
+      "unexpected after-the-fact assessments",
+      "a reconciliation letter"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "expansion",
+     "vendor": "Redstone Storage Solutions",
+     "memos": [
+      "Redstone Storage Solutions - overflow container lease PO-6648",
+      "Redstone Storage Solutions - 40ft container delivery to yard"
+     ],
+     "cross_memo": "Redstone Storage Solutions - container lease security lock set",
+     "plain": [
+      "the Redstone Storage overflow container lease",
+      "the Redstone 40ft container delivery",
+      "the Redstone Storage container rental"
+     ],
+     "oblique": [
+      "space for the excess inventory",
+      "a temporary steel box in the back lot",
+      "what we did when the shelves ran out",
+      "the stopgap for a crowded building",
+      "housing extra rolls until the big job started",
+      "the short-term capacity solution",
+      "a place to put stock we could not return",
+      "the lot's new metal occupant",
+      "off-site holding while we negotiated a bigger building",
+      "additional square footage on demand",
+      "the answer to a packed warehouse",
+      "a month-to-month arrangement outside the main lease",
+      "sheltering bulk goods outdoors",
+      "an addition we expect to end soon",
+      "the yard footprint growing",
+      "where the pre-ordered material sat"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Insurance, Bonding and Safety",
+   "aliases": [
+    "insurance and bonding",
+    "safety and insurance",
+    "bonds and coverage",
+    "risk costs",
+    "workers comp and bonds"
+   ],
+   "narrative": [
+    "Insurance and bonding",
+    "Risk costs",
+    "Safety and insurance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite State Underwriters",
+     "base": 8700,
+     "memo": "Workers comp premium installment"
+    },
+    {
+     "vendor": "Surety Partners LLC",
+     "base": 3400,
+     "memo": "Contractor license bond annual amortized"
+    },
+    {
+     "vendor": "SafeSite Training",
+     "base": 1500,
+     "memo": "OSHA 10 refresher and PPE"
+    }
+   ],
+   "events": [
+    {
+     "key": "audit",
+     "vendor": "Granite State Underwriters",
+     "memos": [
+      "Workers comp premium audit adjustment - policy WC-77120",
+      "Payroll classification audit additional premium - WC-77120"
+     ],
+     "cross_memo": "Workers comp premium audit adjustment - policy WC-77120 interest charge",
+     "plain": [
+      "the workers comp premium audit adjustment",
+      "the payroll classification audit premium",
+      "the WC-77120 audit adjustment"
+     ],
+     "oblique": [
+      "the carrier's review of how we categorize employees",
+      "an insurer's after-the-fact bill",
+      "the true-up on last year's headcount",
+      "what we owed after the examiner visited",
+      "the retroactive increase in our coverage price",
+      "a reclassification of crew job codes",
+      "the result of the policy examination",
+      "a letter from the insurance company demanding more",
+      "the compliance review outcome",
+      "the underwriter's correction of our estimates",
+      "a bill that grew once wages were verified",
+      "the annual reconciliation with our provider",
+      "the higher-rate bucket they moved installers into",
+      "charges stemming from the remittance report",
+      "an adjustment based on actual hours worked",
+      "the examiner's findings"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "claim",
+     "vendor": "Harbor Claims Adjusters",
+     "memos": [
+      "Harbor Claims Adjusters - deductible reimbursement claim 4471-B",
+      "Harbor Claims Adjusters - Willow Creek damaged hardwood claim"
+     ],
+     "cross_memo": "Harbor Claims Adjusters - Willow Creek damaged hardwood claim photo documentation",
+     "plain": [
+      "the Harbor Claims deductible reimbursement",
+      "the Willow Creek damaged hardwood claim",
+      "the Harbor Claims Willow Creek settlement"
+     ],
+     "oblique": [
+      "the customer's complaint over ruined planks",
+      "our out-of-pocket share on a loss",
+      "what we paid because a floor was marred",
+      "a dispute resolved with a homeowner",
+      "the portion not covered by the carrier",
+      "damage our crew caused on a residence",
+      "the settlement of a warranty issue",
+      "an incident requiring third-party review",
+      "the cost of making a client whole",
+      "the aftermath of a mishap at the house",
+      "our share when the policy kicked in",
+      "a failure that required an investigator",
+      "the unfortunate accident at the homeowner's property",
+      "a payment to cover a scratched surface",
+      "the bill from the claims handler",
+      "a liability event we had to absorb"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

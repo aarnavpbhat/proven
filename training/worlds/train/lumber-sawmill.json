@@ -1,0 +1,728 @@
+{
+ "slug": "lumber-sawmill",
+ "industry": "lumber sawmill",
+ "entities": [
+  "Cedar Ridge Timber Works",
+  "Northfork Sawmill Co.",
+  "Blackwater Lumber Mills",
+  "Pinecrest Forest Products",
+  "Halvorsen Milling Group"
+ ],
+ "accounts": [
+  {
+   "name": "Saw Blade & Tooling",
+   "aliases": [
+    "saw blades",
+    "blade costs",
+    "tooling spend",
+    "cutting tools",
+    "blade and tooling"
+   ],
+   "narrative": [
+    "Saw blades",
+    "Blade costs",
+    "Tooling spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kestrel Saw Supply",
+     "base": 9800,
+     "memo": "Band saw blades — monthly replenishment"
+    },
+    {
+     "vendor": "Ironwood Carbide Tooling",
+     "base": 6200,
+     "memo": "Carbide tips — standing order"
+    },
+    {
+     "vendor": "Redline Sharpening Services",
+     "base": 3400,
+     "memo": "Blade sharpening — monthly service"
+    }
+   ],
+   "events": [
+    {
+     "key": "gangsaw",
+     "vendor": "Kestrel Saw Supply",
+     "memos": [
+      "Gang assembly retrofit — arbor sleeves",
+      "Gang assembly retrofit — guide plates"
+     ],
+     "cross_memo": "Gang assembly retrofit — crane rental",
+     "plain": [
+      "the gang assembly retrofit",
+      "the gang assembly retrofit parts",
+      "the retrofit of the gang assembly"
+     ],
+     "oblique": [
+      "upgrading the primary breakdown line",
+      "the multi-blade conversion",
+      "a line change to boost throughput",
+      "the equipment swap on the main cutting line",
+      "new sleeves and plates for the big machine",
+      "the rebuild that let us cut more boards per pass",
+      "machinery modernization",
+      "the capacity upgrade",
+      "what the plant manager pushed for over the winter",
+      "hardware to run thinner kerf",
+      "the changeover in the front end of the mill",
+      "a one-time overhaul of the primary cutter",
+      "refitting the heart of the operation",
+      "the reconfiguration requested by operations",
+      "replacing worn mounting hardware on the main saw",
+      "the project to raise yield per log"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "stellite",
+     "vendor": "Tamarack Hardfacing Labs",
+     "memos": [
+      "Stellite overlay program — trial tips",
+      "Stellite overlay program — lab testing"
+     ],
+     "cross_memo": "Stellite overlay program — consultant travel",
+     "plain": [
+      "the stellite overlay program",
+      "the stellite overlay trial",
+      "the overlay program for stellite"
+     ],
+     "oblique": [
+      "an experiment with longer-lasting cutting edges",
+      "the pilot to cut downtime between changes",
+      "metallurgy trials",
+      "testing a harder alloy on teeth",
+      "the durability study",
+      "outside engineers evaluating our edges",
+      "a test run of premium cutters",
+      "the effort to stretch the life of what we run",
+      "R&D on wear resistance",
+      "a trial that may reduce future purchases",
+      "the lab work on sample teeth",
+      "evaluation of an alternative metal coating",
+      "a one-time pilot requested by the maintenance lead",
+      "studying why our cutters dull so fast",
+      "samples sent out for analysis",
+      "the trial batch of upgraded edges"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Kiln Fuel & Energy",
+   "aliases": [
+    "kiln fuel",
+    "drying energy",
+    "kiln energy costs",
+    "fuel and energy",
+    "drying fuel"
+   ],
+   "narrative": [
+    "Kiln fuel",
+    "Drying energy",
+    "Kiln energy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Propane Distributors",
+     "base": 24000,
+     "memo": "Propane delivery — monthly kiln supply"
+    },
+    {
+     "vendor": "Valley Power Cooperative",
+     "base": 15500,
+     "memo": "Electricity — plant service"
+    },
+    {
+     "vendor": "Hollis Natural Gas",
+     "base": 8800,
+     "memo": "Natural gas — boiler line"
+    }
+   ],
+   "events": [
+    {
+     "key": "coldsnap",
+     "vendor": "Summit Propane Distributors",
+     "memos": [
+      "Emergency tanker refill — arctic surcharge",
+      "Emergency tanker refill — after-hours dispatch"
+     ],
+     "cross_memo": "Emergency tanker refill — driver overtime",
+     "plain": [
+      "the emergency tanker refill",
+      "the arctic surcharge refill",
+      "the emergency refill tanker"
+     ],
+     "oblique": [
+      "the deep freeze last week",
+      "unplanned fuel runs when storage ran low",
+      "extra deliveries during the weather event",
+      "paying premium rates to keep the dryers going",
+      "a stretch of brutal temperatures",
+      "fuel we had to rush in over a weekend",
+      "the shortfall in our tank levels",
+      "unexpected consumption from the cold",
+      "getting product to the dryers at any price",
+      "the supplier's rush charges",
+      "what we burned through ahead of the forecast",
+      "a night-and-weekend scramble for supply",
+      "the winter spike",
+      "last-minute hauling to avoid a shutdown",
+      "topping up tanks on short notice",
+      "demand that outran our scheduled drops"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "biomass",
+     "vendor": "Greenleaf Biomass Haulers",
+     "memos": [
+      "Bark boiler trial — hog fuel loads",
+      "Bark boiler trial — chip blend testing"
+     ],
+     "cross_memo": "Bark boiler trial — stack emissions test",
+     "plain": [
+      "the bark boiler trial",
+      "the bark boiler fuel loads",
+      "the boiler trial with bark"
+     ],
+     "oblique": [
+      "switching part of our heat source to waste material",
+      "an experiment in burning what we normally discard",
+      "the pilot to lower our purchased fuel bill",
+      "testing a cheaper way to make steam",
+      "a sustainability initiative from the owners",
+      "a new supplier running loads of residue",
+      "the changeover to a different heat input",
+      "trial runs of an alternative energy mix",
+      "a move to cut dependence on gas and propane",
+      "the green-energy experiment",
+      "measuring what comes out of the smokestack",
+      "an engineering pilot on the heating plant",
+      "a short-term test of home-grown fuel",
+      "an effort backed by the environmental manager",
+      "bringing in unfamiliar material for the furnace",
+      "the evaluation of a lower-cost energy path"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Log Procurement & Hauling",
+   "aliases": [
+    "log hauling",
+    "log purchases",
+    "timber procurement",
+    "log freight",
+    "wood supply"
+   ],
+   "narrative": [
+    "Log hauling",
+    "Timber procurement",
+    "Log freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeback Trucking",
+     "base": 28000,
+     "memo": "Log truck freight — weekly loads"
+    },
+    {
+     "vendor": "Stumpage Partners LLC",
+     "base": 19500,
+     "memo": "Stumpage fees — standing timber"
+    },
+    {
+     "vendor": "Eastbank Log Brokers",
+     "base": 7200,
+     "memo": "Broker commissions — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "washout",
+     "vendor": "Ridgeback Trucking",
+     "memos": [
+      "Culvert washout detour — extended haul miles",
+      "Culvert washout detour — flagger standby"
+     ],
+     "cross_memo": "Culvert washout detour — road grading",
+     "plain": [
+      "the culvert washout detour",
+      "the culvert washout haul miles",
+      "the detour after the culvert washout"
+     ],
+     "oblique": [
+      "the storm damage on the forest access route",
+      "longer trips because a way in was impassable",
+      "flooding that cut off our usual path",
+      "the extra mileage after the downpour",
+      "repairs to a failed drainage crossing",
+      "a rerouting nobody budgeted",
+      "weather that closed the main track",
+      "the longer way around to reach the landing",
+      "paying people to stand by while crews worked",
+      "the road incident near the harvest site",
+      "emergency work on the approach to the cut block",
+      "an unplanned stretch of slower deliveries",
+      "the highway closure that lasted several weeks",
+      "a creek that took out the road",
+      "getting trucks past a washed-out section",
+      "what the wet spring did to our supply lines"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "saltlake",
+     "vendor": "Pacific Barge & Raft",
+     "memos": [
+      "Lakeside raft towing — boom assembly",
+      "Lakeside raft towing — tug charter"
+     ],
+     "cross_memo": "Lakeside raft towing — moorage fees",
+     "plain": [
+      "the lakeside raft towing",
+      "the raft towing boom assembly",
+      "the lakeside towing charter"
+     ],
+     "oblique": [
+      "moving timber across open water",
+      "floating the harvest to the mill",
+      "a one-time shipment by water",
+      "the alternative to the closed highway",
+      "bringing in a vessel for the season",
+      "a waterborne delivery of cut stems",
+      "the marine option for a remote parcel",
+      "boats and floating gear hired for a short run",
+      "the lake crossing",
+      "a different mode of transport for a distant tract",
+      "hiring a tug crew to deliver bundles",
+      "shipping logs without trucks",
+      "a waterway solution to our access problem",
+      "the maritime leg of a big purchase",
+      "a special logistics arrangement for the north stand",
+      "getting wood to us from the far shore"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Maintenance",
+   "aliases": [
+    "equipment maintenance",
+    "mill repairs",
+    "machinery upkeep",
+    "repair costs",
+    "maintenance spend"
+   ],
+   "narrative": [
+    "Mill repairs",
+    "Machinery upkeep",
+    "Repair costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ashby Industrial Supply",
+     "base": 8600,
+     "memo": "Bearings and belts — monthly stock"
+    },
+    {
+     "vendor": "Northline Hydraulics",
+     "base": 6400,
+     "memo": "Hydraulic hose and fittings — monthly"
+    },
+    {
+     "vendor": "Cobalt Millwright Services",
+     "base": 12500,
+     "memo": "Millwright labor — standing contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "debarker",
+     "vendor": "Cobalt Millwright Services",
+     "memos": [
+      "Ring debarker rebuild — rotor realignment",
+      "Ring debarker rebuild — feed roll replacement"
+     ],
+     "cross_memo": "Ring debarker rebuild — rental loader",
+     "plain": [
+      "the ring debarker rebuild",
+      "the debarker rotor realignment",
+      "the rebuild of the ring debarker"
+     ],
+     "oblique": [
+      "bringing back the machine that strips outer layers",
+      "a major repair on the front-end equipment",
+      "the breakdown that halted intake",
+      "getting the peeling station running again",
+      "the heavy rebuild scheduled over the long weekend",
+      "what failed on the first processing step",
+      "a shutdown to restore a worn rotating assembly",
+      "the overhaul of the unit upstream of the saws",
+      "parts and labor for the big stripping machine",
+      "the unplanned stop that backed up the yard",
+      "a once-in-years repair",
+      "refurbishing a key mill component",
+      "the work crews did over the holiday",
+      "remedying the failure on the log intake side",
+      "the largest repair of the year",
+      "restoring capacity at the head of the line"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "forklift",
+     "vendor": "Summerset Lift Trucks",
+     "memos": [
+      "Forklift fleet refresh — mast rebuilds",
+      "Forklift fleet refresh — tire sets"
+     ],
+     "cross_memo": "Forklift fleet refresh — operator training",
+     "plain": [
+      "the forklift fleet refresh",
+      "the forklift mast rebuilds",
+      "the refresh of the forklift fleet"
+     ],
+     "oblique": [
+      "bringing the yard movers up to standard",
+      "a catch-up on neglected material handlers",
+      "getting the lifting equipment through safety inspection",
+      "work on the machines that stack lumber",
+      "the lifting gear renewal",
+      "a program to keep the pickers dependable",
+      "new rubber and refurbished uprights",
+      "the safety auditor's recommendations on the yard vehicles",
+      "revitalizing aging units",
+      "a vendor visit to service all the movers at once",
+      "the batch of overdue work on mobile lifters",
+      "the push to reduce near-miss incidents in the yard",
+      "getting load-handling machines road-ready",
+      "a fleet-wide attention project",
+      "the older trucks finally getting attention",
+      "the upgrade of equipment that moves bundles"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Safety & Compliance",
+   "aliases": [
+    "safety costs",
+    "compliance spend",
+    "safety and compliance",
+    "regulatory costs",
+    "safety program"
+   ],
+   "narrative": [
+    "Safety costs",
+    "Compliance spend",
+    "Regulatory costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironside Safety Equipment",
+     "base": 3800,
+     "memo": "PPE restock — monthly"
+    },
+    {
+     "vendor": "Clearwater Environmental",
+     "base": 5600,
+     "memo": "Water discharge monitoring — monthly"
+    },
+    {
+     "vendor": "Brandt Occupational Health",
+     "base": 2400,
+     "memo": "Hearing and respirator testing — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "dustaudit",
+     "vendor": "Clearwater Environmental",
+     "memos": [
+      "Combustible dust audit — sampling campaign",
+      "Combustible dust audit — hazard report"
+     ],
+     "cross_memo": "Combustible dust audit — vacuum equipment",
+     "plain": [
+      "the combustible dust audit",
+      "the dust audit sampling campaign",
+      "the audit of combustible dust"
+     ],
+     "oblique": [
+      "the insurer's inspection findings",
+      "an investigation of airborne particles after the near miss",
+      "an outside review of fire risk",
+      "the examination of what settles on beams and ledges",
+      "cleanup demanded by the underwriter",
+      "a study required to keep our coverage",
+      "the fire marshal's visit",
+      "work to reduce ignition hazards in the plant",
+      "the consultant's survey of shavings buildup",
+      "a safety push after the incident down the road",
+      "assessing explosion exposure",
+      "an assessment ordered by head office",
+      "what the inspector flagged",
+      "an evaluation of our housekeeping practices",
+      "remediation of the findings from the inspection",
+      "a one-time hazard study"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "guarding",
+     "vendor": "Pinnacle Machine Safeguards",
+     "memos": [
+      "Conveyor guarding upgrade — interlock switches",
+      "Conveyor guarding upgrade — light curtains"
+     ],
+     "cross_memo": "Conveyor guarding upgrade — installation labor",
+     "plain": [
+      "the conveyor guarding upgrade",
+      "the guarding upgrade interlock switches",
+      "the upgrade of conveyor guarding"
+     ],
+     "oblique": [
+      "the order from the state inspector",
+      "fixing citations we received after the visit",
+      "barriers and sensors around moving belts",
+      "protection for people working near transfer lines",
+      "an injury prevention project",
+      "new devices that stop equipment when someone gets close",
+      "closing out items from the workplace safety notice",
+      "updating older machines to current rules",
+      "a retrofit demanded by regulators",
+      "the corrective plan after the accident report",
+      "electrical hardware that halts the line",
+      "keeping hands away from pinch points",
+      "a deadline-driven modification project",
+      "shielding installed around rotating parts",
+      "an investment to meet new standards",
+      "the response to the penalty notice"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Yard & Dry Kiln Operations",
+   "aliases": [
+    "yard operations",
+    "kiln operations",
+    "lumber yard costs",
+    "dry kiln costs",
+    "yard and kiln spend"
+   ],
+   "narrative": [
+    "Yard operations",
+    "Kiln operations",
+    "Lumber yard costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stackwell Sticker Supply",
+     "base": 4200,
+     "memo": "Kiln stickers and banding — monthly"
+    },
+    {
+     "vendor": "Brightfield Moisture Systems",
+     "base": 3100,
+     "memo": "Moisture meter calibration — monthly"
+    },
+    {
+     "vendor": "Granite Yard Services",
+     "base": 9400,
+     "memo": "Yard grading and gravel — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "vacuumkiln",
+     "vendor": "Brightfield Moisture Systems",
+     "memos": [
+      "Vacuum drying chamber commissioning — control panel",
+      "Vacuum drying chamber commissioning — startup tuning"
+     ],
+     "cross_memo": "Vacuum drying chamber commissioning — power drop install",
+     "plain": [
+      "the vacuum drying chamber commissioning",
+      "the drying chamber commissioning panel",
+      "the commissioning of the vacuum chamber"
+     ],
+     "oblique": [
+      "bringing a new unit online",
+      "faster turnaround for premium hardwood orders",
+      "the first steps with newly purchased equipment",
+      "settings and software for a different drying method",
+      "startup of the shiny addition at the back of the plant",
+      "technicians setting up the latest technology",
+      "the new process for specialty customers",
+      "work to qualify an alternative curing approach",
+      "a capital project finishing its final phase",
+      "teaching the system how to behave",
+      "the tuning needed before first production",
+      "getting the pilot machine to hit its targets",
+      "tests on the freshly delivered chamber",
+      "what we paid to turn on the new asset",
+      "the ramp-up of an expansion project",
+      "calibrating the newest piece of the plant"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "mudseason",
+     "vendor": "Hartwell Excavation",
+     "memos": [
+      "Log deck regrade — haul road fill",
+      "Log deck regrade — drainage trenching"
+     ],
+     "cross_memo": "Log deck regrade — gravel delivery",
+     "plain": [
+      "the log deck regrade",
+      "the deck regrade haul road fill",
+      "the regrade of the log deck"
+     ],
+     "oblique": [
+      "the soggy ground that trapped loaders",
+      "a rebuilt surface for the storage area",
+      "earthwork after the spring thaw",
+      "repairing ruts that swallowed equipment",
+      "a contractor and his dozers on site for a week",
+      "reshaping the lot so water runs off",
+      "stabilizing the area where timber is piled",
+      "soft spots that slowed every machine",
+      "the project to get rid of standing puddles",
+      "a ground-level fix for a drainage problem",
+      "rock and soil brought in to firm things up",
+      "surfacing work that was overdue",
+      "the muddy conditions finally getting addressed",
+      "moving dirt around the stockpile area",
+      "leveling the place we park the big inventory",
+      "a seasonal remedy that cost more than expected"
+     ],
+     "low": 9500,
+     "high": 19000
+    }
+   ]
+  },
+  {
+   "name": "Sawdust & Byproduct Handling",
+   "aliases": [
+    "byproduct handling",
+    "sawdust handling",
+    "chip hauling",
+    "residue disposal",
+    "wood waste costs"
+   ],
+   "narrative": [
+    "Byproduct handling",
+    "Chip hauling",
+    "Residue disposal"
+   ],
+   "recurring": [
+    {
+     "vendor": "Whitepine Chip Haulers",
+     "base": 11200,
+     "memo": "Chip trailer hauling — weekly"
+    },
+    {
+     "vendor": "Dustline Pneumatics",
+     "base": 4800,
+     "memo": "Cyclone and blower service — monthly"
+    },
+    {
+     "vendor": "Evergreen Mulch Partners",
+     "base": 5400,
+     "memo": "Bark and mulch pickup — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "pelletline",
+     "vendor": "Whitepine Chip Haulers",
+     "memos": [
+      "Pellet mill feedstock surge — extra trailer runs",
+      "Pellet mill feedstock surge — weekend dispatch"
+     ],
+     "cross_memo": "Pellet mill feedstock surge — scale tickets audit",
+     "plain": [
+      "the pellet mill feedstock surge",
+      "the pellet feedstock extra trailer runs",
+      "the surge in pellet mill feedstock"
+     ],
+     "oblique": [
+      "a neighboring buyer suddenly needing far more material",
+      "extra loads leaving the property",
+      "a rush order for compressed fuel makers",
+      "demand from a customer that outstripped normal shipments",
+      "more trucks than we usually see in a month",
+      "moving a backlog of fibre off site",
+      "a short-term contract that swelled volumes",
+      "clearing piles that had grown too high",
+      "working Saturdays to keep up with a purchaser",
+      "the bump in outbound tonnage",
+      "a downstream customer's ramp-up",
+      "emptying the storage bins on request",
+      "a sales agreement that required quick fulfillment",
+      "a temporary jump in tonnage hauled away",
+      "orders from the energy sector",
+      "the spike in shipments of milled leftovers"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "landfill",
+     "vendor": "Cascade Reclamation Services",
+     "memos": [
+      "Legacy bark pile cleanup — grinding crew",
+      "Legacy bark pile cleanup — tipping fees"
+     ],
+     "cross_memo": "Legacy bark pile cleanup — site survey",
+     "plain": [
+      "the legacy bark pile cleanup",
+      "the bark pile grinding crew",
+      "the cleanup of the legacy bark pile"
+     ],
+     "oblique": [
+      "removing the mountain behind the shop",
+      "an old stockpile that finally had to go",
+      "the order to tidy up the back lot",
+      "years of accumulated material being dealt with",
+      "a county notice about an eyesore",
+      "a contractor with heavy grinders on site",
+      "clearing the property before the appraisal",
+      "paying to dispose of what nobody wanted",
+      "a one-time purge of stored waste",
+      "the project to free up land for expansion",
+      "bringing in specialists to reduce a very large heap",
+      "the neighbors' complaints leading to action",
+      "hauling away material that sat for a decade",
+      "a decluttering effort across the property edge",
+      "the fire inspector's concern about the old heap",
+      "what it cost to finally get rid of it"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

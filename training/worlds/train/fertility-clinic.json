@@ -1,0 +1,713 @@
+{
+ "slug": "fertility-clinic",
+ "industry": "fertility clinic",
+ "entities": [
+  "Harborlight Fertility Group",
+  "Willowbrook Reproductive Center",
+  "Meridian Family Beginnings",
+  "Evergreen Conception Partners",
+  "Larkspur Fertility Institute"
+ ],
+ "accounts": [
+  {
+   "name": "Embryology Lab Consumables",
+   "aliases": [
+    "lab consumables",
+    "embryology supplies",
+    "lab supplies",
+    "culture media spend",
+    "embryology consumables"
+   ],
+   "narrative": [
+    "Lab consumables",
+    "Embryology supplies",
+    "Culture media spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Corvane Biosciences",
+     "base": 14200,
+     "memo": "Culture media and oil — monthly standing order"
+    },
+    {
+     "vendor": "Pellucid Labware",
+     "base": 6800,
+     "memo": "Dishes pipettes and catheters — monthly replenishment"
+    },
+    {
+     "vendor": "Nuvia Cryogenics Supply",
+     "base": 4100,
+     "memo": "Straws and goblets — monthly stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "mediarecall",
+     "vendor": "Corvane Biosciences",
+     "memos": [
+      "Lot 4471 replacement program — sterility batch swap",
+      "Lot 4471 replacement program — expedited reship"
+     ],
+     "cross_memo": "Lot 4471 replacement program — courier overnight freight",
+     "plain": [
+      "the lot 4471 replacement program",
+      "the lot 4471 batch swap",
+      "the lot 4471 reship"
+     ],
+     "oblique": [
+      "the manufacturer pulling a bad shipment",
+      "re-buying product we had already paid for",
+      "a contamination scare in the incubators",
+      "the supplier notice that forced us to replace stock",
+      "redoing a month of dishes",
+      "urgent restocking",
+      "the product withdrawal from the vendor",
+      "tossing and replacing everything from one production run",
+      "the scare over whether cultures were safe",
+      "a quality notice from upstream",
+      "emergency reorders after the alert",
+      "the swapped-out inventory",
+      "an unplanned second purchase of the same items",
+      "the vendor's own mistake",
+      "clearing out suspect inventory",
+      "getting clean product on the shelves fast"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "timelapse",
+     "vendor": "Aurelian Imaging Systems",
+     "memos": [
+      "Embryoscope cartridge trial — time-lapse slides",
+      "Embryoscope cartridge trial — consumable kits"
+     ],
+     "cross_memo": "Embryoscope cartridge trial — training travel",
+     "plain": [
+      "the embryoscope cartridge trial",
+      "the embryoscope slide kits",
+      "the embryoscope trial"
+     ],
+     "oblique": [
+      "piloting a new way to watch cell development",
+      "the camera-equipped incubator experiment",
+      "trying out continuous monitoring on a few cases",
+      "a test run of hands-off observation",
+      "the pilot our lead scientist pushed for",
+      "evaluating a new grading approach",
+      "a trial with special culture slides",
+      "the experiment with imaging every few minutes",
+      "single-use items for the monitoring pilot",
+      "a proof of concept for the lab director",
+      "testing whether we should upgrade the incubators",
+      "the evaluation period for new tech",
+      "extra disposables for the pilot",
+      "a small-scale test of automated embryo assessment",
+      "consumables for an evaluation we may not keep",
+      "the sampling of an imaging platform"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Egg Donor Compensation",
+   "aliases": [
+    "donor compensation",
+    "donor payments",
+    "donor fees",
+    "donor program costs",
+    "egg donor spend"
+   ],
+   "narrative": [
+    "Donor compensation",
+    "Donor payments",
+    "Donor program costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kestrel Donor Services",
+     "base": 22000,
+     "memo": "Donor stipends — monthly cycle payments"
+    },
+    {
+     "vendor": "Silverbrook Screening Lab",
+     "base": 7500,
+     "memo": "Donor panels — routine genetic screening"
+    }
+   ],
+   "events": [
+    {
+     "key": "donorbonus",
+     "vendor": "Kestrel Donor Services",
+     "memos": [
+      "Priority matching surcharge — expedited cohort",
+      "Priority matching surcharge — rush stipends"
+     ],
+     "cross_memo": "Priority matching surcharge — legal review fees",
+     "plain": [
+      "the priority matching surcharge",
+      "the priority matching rush",
+      "the priority matching cohort"
+     ],
+     "oblique": [
+      "paying more to fill a backlog",
+      "recruiting faster than usual",
+      "a waitlist we needed to clear",
+      "the scramble to find candidates for waiting patients",
+      "extra incentives to bring people in",
+      "getting ahead of the holiday slowdown",
+      "the sudden spike in patient requests",
+      "a premium to move people through quicker",
+      "the push to shorten wait times",
+      "cutting the line for urgent families",
+      "accelerated sourcing",
+      "a hurry-up on supply",
+      "the faster onboarding we asked for",
+      "rewarding people for saying yes quickly",
+      "a surge in demand from intended parents",
+      "speeding up the roster"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "agencyaudit",
+     "vendor": "Pinecrest Compliance Associates",
+     "memos": [
+      "Registry accreditation audit — documentation review",
+      "Registry accreditation audit — onsite assessor"
+     ],
+     "cross_memo": "Registry accreditation audit — software license",
+     "plain": [
+      "the registry accreditation audit",
+      "the registry assessor visit",
+      "the registry documentation review"
+     ],
+     "oblique": [
+      "the outside inspection of our files",
+      "proving our records are in order",
+      "the regulator's visit",
+      "an external body checking our paperwork",
+      "the review that keeps our credentials",
+      "a third-party look at how we run things",
+      "the once-in-a-while certification check",
+      "getting our process signed off",
+      "a scrutiny of how we vet people",
+      "the oversight exercise",
+      "preparing for the inspectors",
+      "a formal check of our practices",
+      "the examiners who came through",
+      "the periodic seal of approval",
+      "an independent assessment",
+      "staying in good standing"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Cryostorage and Liquid Nitrogen",
+   "aliases": [
+    "cryostorage",
+    "liquid nitrogen",
+    "cryo storage costs",
+    "nitrogen supply",
+    "cryo bank spend"
+   ],
+   "narrative": [
+    "Cryostorage",
+    "Liquid nitrogen",
+    "Cryo storage costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Polarforge Gases",
+     "base": 9800,
+     "memo": "Bulk liquid nitrogen fill — scheduled delivery"
+    },
+    {
+     "vendor": "Vaultline Tank Monitoring",
+     "base": 3200,
+     "memo": "Remote alarm and level monitoring — monthly"
+    },
+    {
+     "vendor": "Frostgate Storage Services",
+     "base": 5400,
+     "memo": "Offsite backup vault rental — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "dewarfail",
+     "vendor": "Polarforge Gases",
+     "memos": [
+      "Vessel 12 vacuum failure — emergency transfer",
+      "Vessel 12 vacuum failure — extra nitrogen fills"
+     ],
+     "cross_memo": "Vessel 12 vacuum failure — overnight security staffing",
+     "plain": [
+      "the vessel 12 vacuum failure",
+      "the vessel 12 emergency transfer",
+      "the vessel 12 failure"
+     ],
+     "oblique": [
+      "moving specimens out of a tank that was losing cold",
+      "the middle-of-the-night scare",
+      "a container that could not hold temperature",
+      "getting patient samples to safety",
+      "the near miss with stored material",
+      "rescuing what was inside",
+      "an overnight emergency",
+      "the unit that gave out",
+      "a leak nobody saw coming",
+      "extra refills to keep everything frozen",
+      "the all-hands response",
+      "racing to prevent thawing",
+      "the equipment problem that threatened inventory",
+      "a hurried relocation of frozen items",
+      "the breakdown of our holding equipment",
+      "a crisis that was thankfully contained"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "expansionbank",
+     "vendor": "Glacier Mill Fabrication",
+     "memos": [
+      "Rack expansion project — stainless carousels",
+      "Rack expansion project — installation crew"
+     ],
+     "cross_memo": "Rack expansion project — floor reinforcement",
+     "plain": [
+      "the rack expansion project",
+      "the rack carousels",
+      "the rack installation"
+     ],
+     "oblique": [
+      "making room for more patient samples",
+      "a capacity upgrade",
+      "running out of space",
+      "adding slots to hold growing inventory",
+      "the build-out we planned last year",
+      "new shelving for the storage room",
+      "more holding capacity",
+      "accommodating the growth in banked material",
+      "a project to fit additional inventory",
+      "the physical enlargement of the bank",
+      "outgrowing what we had",
+      "extra places to put things",
+      "a retrofit that added room",
+      "the larger footprint for storage",
+      "bulking up our holding space",
+      "readying the room for next year's volume"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Reproductive Endocrinology Locum Coverage",
+   "aliases": [
+    "locum coverage",
+    "locum physicians",
+    "physician coverage",
+    "temp physician spend",
+    "locum fees"
+   ],
+   "narrative": [
+    "Locum coverage",
+    "Locum physicians",
+    "Temp physician spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightwater Medical Staffing",
+     "base": 18500,
+     "memo": "Locum reproductive endocrinologist — weekend rota"
+    },
+    {
+     "vendor": "Summit Anesthesia Group",
+     "base": 8200,
+     "memo": "Retrieval sedation coverage — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "surgeonleave",
+     "vendor": "Brightwater Medical Staffing",
+     "memos": [
+      "Dr. Okonkwo sabbatical backfill — full-week blocks",
+      "Dr. Okonkwo sabbatical backfill — travel and lodging"
+     ],
+     "cross_memo": "Dr. Okonkwo sabbatical backfill — credentialing fees",
+     "plain": [
+      "the okonkwo sabbatical backfill",
+      "the okonkwo backfill blocks",
+      "the okonkwo sabbatical coverage"
+     ],
+     "oblique": [
+      "our senior doctor being away for a stretch",
+      "filling in for a physician on extended time off",
+      "keeping the schedule full while someone was gone",
+      "the long absence of a partner",
+      "finding replacements for a vacancy",
+      "covering the clinic floor",
+      "a physician's planned break",
+      "a leave that ran longer than expected",
+      "stand-ins for our founder",
+      "the gap in the call roster",
+      "clinicians brought in from elsewhere",
+      "making sure patients still had appointments",
+      "a key provider out of the office",
+      "importing talent for several weeks",
+      "someone's extended leave",
+      "medical staff on short assignment"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "sedationvendor",
+     "vendor": "Larchmont Perioperative Partners",
+     "memos": [
+      "Second retrieval suite launch — anesthesia staffing",
+      "Second retrieval suite launch — recovery nurses"
+     ],
+     "cross_memo": "Second retrieval suite launch — drug cabinet install",
+     "plain": [
+      "the second retrieval suite launch",
+      "the second suite anesthesia staffing",
+      "the second suite recovery nurses"
+     ],
+     "oblique": [
+      "opening more procedure capacity",
+      "a new room coming online",
+      "adding a second operating area",
+      "staffing for expansion",
+      "getting a new space operational",
+      "growth in daily case counts",
+      "running two rooms at once",
+      "the ramp-up of procedure volume",
+      "bringing on people for a larger footprint",
+      "a build-out that needed clinical hands",
+      "the reason we can do more cases per day",
+      "extra people for the new area",
+      "early-stage costs of a bigger setup",
+      "adding to throughput",
+      "stocking the new space with talent",
+      "a facility addition that required clinicians"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Fertility Medication Purchasing",
+   "aliases": [
+    "medication purchasing",
+    "fertility drugs",
+    "drug spend",
+    "pharmacy purchases",
+    "injectables spend"
+   ],
+   "narrative": [
+    "Medication purchasing",
+    "Fertility drugs",
+    "Pharmacy purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Marlow Specialty Pharmacy",
+     "base": 26000,
+     "memo": "Gonadotropin and trigger inventory — monthly"
+    },
+    {
+     "vendor": "Tidewater Compounding",
+     "base": 4500,
+     "memo": "Progesterone in oil — monthly batch"
+    },
+    {
+     "vendor": "Redfern Biologics Wholesale",
+     "base": 9100,
+     "memo": "Antagonist and adjunct stock — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "drugshortage",
+     "vendor": "Marlow Specialty Pharmacy",
+     "memos": [
+      "Menopur allocation spot buy — grey market premium",
+      "Menopur allocation spot buy — expedited cold shipping"
+     ],
+     "cross_memo": "Menopur allocation spot buy — courier insurance",
+     "plain": [
+      "the menopur allocation spot buy",
+      "the menopur grey market premium",
+      "the menopur spot buy"
+     ],
+     "oblique": [
+      "a national supply squeeze",
+      "paying up because the usual channel dried up",
+      "the manufacturer not shipping our normal volume",
+      "scrambling to keep patients on protocol",
+      "getting product from wherever we could",
+      "a gap in availability",
+      "the scarcity that hit every clinic",
+      "covering cycles that were already scheduled",
+      "an urgent search for inventory",
+      "a short-term workaround for a drought",
+      "premium pricing for something hard to find",
+      "not letting anyone miss a cycle start",
+      "the shortage that nobody predicted",
+      "extra cost to bridge the gap",
+      "sourcing outside the normal channels",
+      "a pinch in wholesale supply"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "pgtkit",
+     "vendor": "Helix Reference Diagnostics",
+     "memos": [
+      "Pilot payor bundle program — kit prepurchase",
+      "Pilot payor bundle program — cold pack shipping"
+     ],
+     "cross_memo": "Pilot payor bundle program — contract legal fees",
+     "plain": [
+      "the pilot payor bundle program",
+      "the payor bundle kits",
+      "the payor bundle prepurchase"
+     ],
+     "oblique": [
+      "a pricing experiment with an insurer",
+      "buying in advance to lock in a deal",
+      "an arrangement that included all-in packages",
+      "stocking up for a new commercial agreement",
+      "an upfront commitment to a partner",
+      "inventory for a negotiated rate",
+      "the early order tied to a contract",
+      "a trial of a different billing model",
+      "a one-time stocking purchase for an employer plan",
+      "buying ahead on a promise of volume",
+      "the new coverage relationship",
+      "front-loaded product orders",
+      "material we bought for a special arrangement",
+      "a purchasing commitment with strings attached",
+      "what we stocked for the new payer deal",
+      "advance buys to support a negotiated package"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Patient Financing and Merchant Fees",
+   "aliases": [
+    "merchant fees",
+    "card processing",
+    "financing fees",
+    "patient financing costs",
+    "payment processing"
+   ],
+   "narrative": [
+    "Merchant fees",
+    "Card processing",
+    "Patient financing costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearpath Payments",
+     "base": 11800,
+     "memo": "Card processing fees — monthly settlement"
+    },
+    {
+     "vendor": "Nestwell Patient Lending",
+     "base": 13500,
+     "memo": "Loan program merchant discount — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "refundwave",
+     "vendor": "Clearpath Payments",
+     "memos": [
+      "Dispute wave settlement — chargeback fees",
+      "Dispute wave settlement — reserve true-up"
+     ],
+     "cross_memo": "Dispute wave settlement — outside counsel",
+     "plain": [
+      "the dispute wave settlement",
+      "the dispute wave chargebacks",
+      "the dispute wave reserve"
+     ],
+     "oblique": [
+      "a spike in customers contesting charges",
+      "reversals piling up at the bank",
+      "unhappy payers going to their card issuers",
+      "a batch of reversed transactions",
+      "the processor taking money back",
+      "a clean-up of old billing disagreements",
+      "the aftermath of a mailing error",
+      "the cluster of contested bills",
+      "money clawed back after an invoicing mix-up",
+      "fallout from one bad statement run",
+      "our acquirer holding funds",
+      "the penalty side of unhappy customers",
+      "a pile of complaints that hit our merchant account",
+      "the processor tightening terms on us",
+      "the correction after a billing glitch",
+      "extra holdbacks after a rough quarter"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "lenderpromo",
+     "vendor": "Oakhaven Credit Partners",
+     "memos": [
+      "Zero percent promo campaign — buydown subsidy",
+      "Zero percent promo campaign — origination points"
+     ],
+     "cross_memo": "Zero percent promo campaign — marketing collateral",
+     "plain": [
+      "the zero percent promo campaign",
+      "the zero percent buydown subsidy",
+      "the zero percent origination points"
+     ],
+     "oblique": [
+      "us picking up the interest for families",
+      "a limited-time offer to patients",
+      "subsidizing borrowers to drive bookings",
+      "the incentive that made treatment feel cheaper",
+      "paying the lender to give customers a break",
+      "a seasonal enrollment drive",
+      "sweetening the deal for new cycles",
+      "buying down what patients owe",
+      "the offer we ran to fill the calendar",
+      "covering finance charges on behalf of clients",
+      "a promotion that moved volume",
+      "a price cut hidden inside the loan",
+      "absorbing cost so patients would sign up",
+      "the lender's fee for waiving customer interest",
+      "a discount funded through the financing partner",
+      "an acquisition lever for new patients"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Genetic Counseling and Testing Services",
+   "aliases": [
+    "genetic testing",
+    "pgt costs",
+    "counseling services",
+    "genetics lab fees",
+    "testing spend"
+   ],
+   "narrative": [
+    "Genetic testing",
+    "Genetics lab fees",
+    "Testing spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Genovia Diagnostics",
+     "base": 24500,
+     "memo": "Embryo biopsy analysis — monthly batch"
+    },
+    {
+     "vendor": "Kinlight Counseling Group",
+     "base": 6200,
+     "memo": "Genetic counselor sessions — monthly retainer"
+    },
+    {
+     "vendor": "Orchard Carrier Labs",
+     "base": 5600,
+     "memo": "Expanded carrier screening — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "retestbatch",
+     "vendor": "Genovia Diagnostics",
+     "memos": [
+      "Inconclusive sample reanalysis — repeat biopsy batch",
+      "Inconclusive sample reanalysis — rush turnaround"
+     ],
+     "cross_memo": "Inconclusive sample reanalysis — patient credit memos",
+     "plain": [
+      "the inconclusive sample reanalysis",
+      "the inconclusive repeat batch",
+      "the inconclusive rush turnaround"
+     ],
+     "oblique": [
+      "results that came back unreadable",
+      "doing work over because the first pass failed",
+      "paying twice for the same specimens",
+      "an unusually high number of no-calls",
+      "samples that had to be run again",
+      "the lab flagging poor data quality",
+      "the redo that nobody budgeted",
+      "a technical problem at the testing house",
+      "an elevated rate of uncertain readouts",
+      "reprocessing a month of results",
+      "the quality hiccup upstream",
+      "fast reruns for waiting patients",
+      "a chunk of tests that did not yield answers",
+      "paying for a second look",
+      "an issue with how specimens were handled",
+      "a batch that needed to be repeated"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "wholegenome",
+     "vendor": "Quillon Genomics Research",
+     "memos": [
+      "Research collaboration study — sequencing runs",
+      "Research collaboration study — data storage"
+     ],
+     "cross_memo": "Research collaboration study — IRB submission fees",
+     "plain": [
+      "the research collaboration study",
+      "the research sequencing runs",
+      "the research collaboration data"
+     ],
+     "oblique": [
+      "a project with a university partner",
+      "an academic partnership we agreed to",
+      "studying outcomes beyond routine care",
+      "a scientific undertaking for publication",
+      "something our medical director wanted to pursue",
+      "a joint effort with outside scientists",
+      "generating data for a paper",
+      "a long-range inquiry into our patients",
+      "an initiative separate from patient billing",
+      "an investigation of treatment results",
+      "the scholarly side of the practice",
+      "work done for the sake of knowledge",
+      "a collaboration that will not pay off immediately",
+      "our part in a larger investigation",
+      "the data gathering effort for investigators",
+      "an undertaking that builds our reputation"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,723 @@
+{
+ "slug": "botanical-garden-and-conservatory",
+ "industry": "botanical garden and conservatory",
+ "entities": [
+  "Halcyon Glasshouse Botanical Trust",
+  "Meridian Arboretum & Conservatory Co",
+  "Fernhollow Gardens LLC",
+  "Alder Crest Botanic Society Inc",
+  "Willowmere Conservatory Group"
+ ],
+ "accounts": [
+  {
+   "name": "Conservatory Climate Control",
+   "aliases": [
+    "climate control",
+    "greenhouse climate",
+    "conservatory hvac",
+    "environmental controls",
+    "climate systems spend"
+   ],
+   "narrative": [
+    "Climate control",
+    "Greenhouse climate",
+    "Conservatory HVAC"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northfield Boiler & Mechanical",
+     "base": 9800,
+     "memo": "PM boiler service contract"
+    },
+    {
+     "vendor": "Cascade Natural Gas Supply",
+     "base": 14200,
+     "memo": "Natural gas - glasshouse heating"
+    },
+    {
+     "vendor": "Aerotrend Controls Inc",
+     "base": 2600,
+     "memo": "Controller monitoring subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "misting",
+     "vendor": "Northfield Boiler & Mechanical",
+     "memos": [
+      "Fogwell retrofit - nozzle manifold WO 44718",
+      "Fogwell retrofit - pump skid install"
+     ],
+     "cross_memo": "Fogwell retrofit - electrical permit fees",
+     "plain": [
+      "the fogwell retrofit",
+      "the fogwell nozzle manifold",
+      "the fogwell pump skid"
+     ],
+     "oblique": [
+      "the new humidity system for the tropical house",
+      "upgrading how we keep rainforest plants damp",
+      "replacing the old sprayers over the orchids",
+      "a fresh moisture setup in the big dome",
+      "the airborne water project",
+      "what facilities asked for after the fern losses",
+      "the tropical wing humidity upgrade",
+      "new equipment to hold moisture levels steady",
+      "the dampness overhaul",
+      "work to stop leaf scorch in the jungle room",
+      "the horticulture team's request for wetter air",
+      "swapping out the aging spray lines",
+      "a mist-making installation",
+      "the plant health fix for dry spells",
+      "modernizing how the rainforest room stays humid",
+      "the project replacing the hand-watered cloud effect"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "vents",
+     "vendor": "Skyline Louver Specialists",
+     "memos": [
+      "Ridgevent actuator replacement PO 20931",
+      "Ridgevent actuator replacement - rack and pinion kits"
+     ],
+     "cross_memo": "Ridgevent actuator replacement - scaffold rental",
+     "plain": [
+      "the ridgevent actuator replacement",
+      "the ridgevent actuator kits",
+      "the ridgevent rack and pinion"
+     ],
+     "oblique": [
+      "getting the roof openings working again",
+      "fixing the windows that wouldn't open",
+      "the ceiling hatches that jammed",
+      "repairs to what lets hot air escape overhead",
+      "replacing the motors on the upper panels",
+      "the stuck skylight problem",
+      "emergency work after the heat spike",
+      "restoring natural cooling in the palm house",
+      "the fix for panels frozen shut all summer",
+      "parts for the opening mechanisms up top",
+      "the high-level ventilation repairs",
+      "a swap of worn drive gear on the roof",
+      "work that kept the glass house from overheating",
+      "the crew on ladders adjusting the tops",
+      "what the inspector flagged near the apex",
+      "new drives for the openable glazing"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Plant Acquisition and Propagation",
+   "aliases": [
+    "plant purchases",
+    "propagation",
+    "plant acquisition",
+    "nursery stock",
+    "plant material costs"
+   ],
+   "narrative": [
+    "Plant purchases",
+    "Propagation",
+    "Nursery stock"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tidewater Wholesale Nursery",
+     "base": 11500,
+     "memo": "Perennial and shrub stock - standing order"
+    },
+    {
+     "vendor": "Greenmark Seed & Bulb Co",
+     "base": 4200,
+     "memo": "Seed and bulb restock"
+    },
+    {
+     "vendor": "Pottery Lane Growing Media",
+     "base": 3100,
+     "memo": "Substrate and potting mix"
+    }
+   ],
+   "events": [
+    {
+     "key": "cycad",
+     "vendor": "Tidewater Wholesale Nursery",
+     "memos": [
+      "Cycad collection acquisition - 14 specimens PO 7720",
+      "Cycad collection acquisition - CITES documentation"
+     ],
+     "cross_memo": "Cycad collection acquisition - crating and freight",
+     "plain": [
+      "the cycad collection acquisition",
+      "the cycad specimens",
+      "the cycad documentation"
+     ],
+     "oblique": [
+      "the prehistoric plants we bought",
+      "a purchase of living fossils for the new exhibit",
+      "the rare palm-like arrivals",
+      "the big ticket stock from the collector",
+      "what the curators wanted for the ancient plant display",
+      "a one-time buy of slow-growing exotics",
+      "the endangered plants we added",
+      "the paperwork-heavy shipment from overseas",
+      "new additions to the Jurassic corner",
+      "the acquisition the board approved in spring",
+      "trophy plants for the entry hall",
+      "the estate sale haul of old specimens",
+      "an expensive group of roughly fourteen trunks",
+      "the rarities purchase",
+      "stock that took decades to grow elsewhere",
+      "the display's headline plants"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "orchidlab",
+     "vendor": "Phalaris Tissue Culture Labs",
+     "memos": [
+      "Meristem batch - Paphiopedilum flasks WO 5518",
+      "Meristem batch - sterile lab processing fee"
+     ],
+     "cross_memo": "Meristem batch - cold storage hold",
+     "plain": [
+      "the meristem batch",
+      "the paphiopedilum flasks",
+      "the meristem lab processing"
+     ],
+     "oblique": [
+      "outsourced cloning of slipper orchids",
+      "the lab work on our rare flowers",
+      "a contract growing run for show plants",
+      "baby plants raised in glass jars offsite",
+      "the multiplication of our prize bloom",
+      "a special order for the spring exhibition",
+      "growing hundreds of copies of one species",
+      "the outside lab's invoice for starter plants",
+      "sterile-room production we can't do in house",
+      "the order to replace lost collection plants",
+      "what the orchid curator requested",
+      "miniature seedlings from the specialist",
+      "the clonal run for the fundraiser sale",
+      "propagation farmed out to scientists",
+      "the tiny-plant production contract",
+      "stock we couldn't raise on our own benches"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Grounds and Arboriculture",
+   "aliases": [
+    "grounds",
+    "arboriculture",
+    "tree care",
+    "grounds maintenance",
+    "landscape upkeep"
+   ],
+   "narrative": [
+    "Grounds",
+    "Tree care",
+    "Landscape upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Redbark Tree Service",
+     "base": 7400,
+     "memo": "Routine pruning and canopy inspection"
+    },
+    {
+     "vendor": "Meadowline Turf & Mulch",
+     "base": 6800,
+     "memo": "Mowing and mulch program"
+    },
+    {
+     "vendor": "Brookside Irrigation Supply",
+     "base": 2300,
+     "memo": "Irrigation parts and repair"
+    }
+   ],
+   "events": [
+    {
+     "key": "elmremoval",
+     "vendor": "Redbark Tree Service",
+     "memos": [
+      "Heritage elm takedown - crane day WO 3392",
+      "Heritage elm takedown - stump grinding"
+     ],
+     "cross_memo": "Heritage elm takedown - road closure permit",
+     "plain": [
+      "the heritage elm takedown",
+      "the heritage elm crane day",
+      "the heritage elm stump grinding"
+     ],
+     "oblique": [
+      "removing the giant dying tree by the gate",
+      "the hazard the arborist flagged after the storm",
+      "taking down a century-old shade giant",
+      "the emergency cut near the visitor path",
+      "a crane lift over the main walkway",
+      "clearing the diseased specimen",
+      "what we did about the leaning trunk",
+      "the big removal before it fell on guests",
+      "the safety work on the oldest tree",
+      "the lost landmark in the east lawn",
+      "a one-day heavy-lift job",
+      "work forced by the fungal rot report",
+      "the insurer's demand about the old giant",
+      "clearing space where the canopy collapsed",
+      "the cleanup of the old shade provider",
+      "the removal that opened the sightline"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "floodrepair",
+     "vendor": "Stonebridge Earthworks",
+     "memos": [
+      "Lower terrace washout - regrade WO 3410",
+      "Lower terrace washout - gravel and geotextile"
+     ],
+     "cross_memo": "Lower terrace washout - drainage consultant",
+     "plain": [
+      "the lower terrace washout",
+      "the lower terrace regrade",
+      "the lower terrace gravel"
+     ],
+     "oblique": [
+      "repairs after the heavy rain event",
+      "rebuilding the path that slid downhill",
+      "fixing the eroded slope near the pond",
+      "what the storm left behind on the hillside",
+      "earth moving to restore the walkway",
+      "the mudslide cleanup",
+      "reshaping the ground that collapsed",
+      "work to keep the hill from washing out again",
+      "the contractor with the excavator",
+      "the wet-weather damage to the garden rooms",
+      "restoring paths guests couldn't use",
+      "a rebuild of the sloped beds",
+      "stabilizing the bank above the fern walk",
+      "grading and stone to hold soil in place",
+      "the post-flood restoration",
+      "the emergency work on the slope"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Exhibit Design and Installation",
+   "aliases": [
+    "exhibits",
+    "exhibit design",
+    "exhibit installation",
+    "display costs",
+    "seasonal exhibits"
+   ],
+   "narrative": [
+    "Exhibits",
+    "Exhibit design",
+    "Display costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lumen & Leaf Studio",
+     "base": 8500,
+     "memo": "Lighting and signage maintenance"
+    },
+    {
+     "vendor": "Parkwright Fabrication",
+     "base": 5200,
+     "memo": "Display fixtures and props"
+    }
+   ],
+   "events": [
+    {
+     "key": "butterflyhall",
+     "vendor": "Parkwright Fabrication",
+     "memos": [
+      "Winged Season build - mesh enclosure PO 8841",
+      "Winged Season build - vestibule airlock doors"
+     ],
+     "cross_memo": "Winged Season build - live pupae shipments",
+     "plain": [
+      "the winged season build",
+      "the winged season enclosure",
+      "the winged season airlock"
+     ],
+     "oblique": [
+      "the summer attraction with fluttering insects",
+      "the walk-through habitat for guests",
+      "a temporary netted room for the special show",
+      "what marketing wanted for the family season",
+      "the seasonal showpiece construction",
+      "building a room where creatures roam free",
+      "the crowd-pleasing summer installation",
+      "the carpentry and netting for the big draw",
+      "entry doors that keep the residents inside",
+      "the flagship summer project",
+      "the project the director pushed for visitors",
+      "the construction behind the headline event",
+      "an enclosed habitat built from scratch",
+      "the structure we assembled before opening day",
+      "a hall for delicate flying guests",
+      "work to host the seasonal live display"
+     ],
+     "low": 22000,
+     "high": 40000
+    },
+    {
+     "key": "nightlights",
+     "vendor": "Aurora Projection Works",
+     "memos": [
+      "Lantern Nights - projection mapping WO 6120",
+      "Lantern Nights - LED lantern fabrication"
+     ],
+     "cross_memo": "Lantern Nights - temporary power distribution",
+     "plain": [
+      "the lantern nights projection",
+      "the lantern nights LED fabrication",
+      "the lantern nights show"
+     ],
+     "oblique": [
+      "the after-dark winter event",
+      "glowing displays for evening visitors",
+      "what we built to sell tickets in December",
+      "the illuminated trail for holiday crowds",
+      "the nighttime spectacle",
+      "art installations that light up the paths",
+      "the special evening programming",
+      "colored light shows across the glasshouse",
+      "the cold-season revenue idea",
+      "the seasonal fundraiser's decor",
+      "visual effects shown on the glass",
+      "handmade glowing figures along the walk",
+      "the production company's invoice for the nightly show",
+      "an after-hours attraction",
+      "what we installed for the late-opening weeks",
+      "the lit-up trail experiment"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Glasshouse Facilities and Repairs",
+   "aliases": [
+    "glasshouse repairs",
+    "glazing",
+    "facility repairs",
+    "building maintenance",
+    "glass maintenance"
+   ],
+   "narrative": [
+    "Glasshouse repairs",
+    "Glazing",
+    "Building maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearpane Glazing Services",
+     "base": 6900,
+     "memo": "Panel replacement - routine breakage"
+    },
+    {
+     "vendor": "Ironwood Facility Services",
+     "base": 9100,
+     "memo": "Janitorial and facility upkeep"
+    },
+    {
+     "vendor": "Summit Pest & Safety",
+     "base": 1800,
+     "memo": "Quarterly safety and fire inspection"
+    }
+   ],
+   "events": [
+    {
+     "key": "hail",
+     "vendor": "Clearpane Glazing Services",
+     "memos": [
+      "Palm house hailstorm claim - tempered panes WO 9034",
+      "Palm house hailstorm claim - emergency tarping"
+     ],
+     "cross_memo": "Palm house hailstorm claim - deductible adjustment",
+     "plain": [
+      "the palm house hailstorm claim",
+      "the palm house tempered panes",
+      "the palm house emergency tarping"
+     ],
+     "oblique": [
+      "damage from the freak weather",
+      "the ice-pellet event that shattered the roof",
+      "repairs the insurer is partly covering",
+      "the cleanup after the afternoon sky turned violent",
+      "hundreds of cracked roof sheets",
+      "replacing what the weather destroyed",
+      "the urgent covering we put over broken sections",
+      "the act-of-nature loss",
+      "work after the summer thunderstorm",
+      "the broken ceiling in the tallest building",
+      "protecting plants from the open sky",
+      "the claims paperwork project",
+      "the glass that fell in the tropical wing",
+      "the emergency response after the weather",
+      "the sky-fall losses",
+      "what the adjuster visited to inspect"
+     ],
+     "low": 25000,
+     "high": 40000
+    },
+    {
+     "key": "paintseal",
+     "vendor": "Fairhaven Restoration Coatings",
+     "memos": [
+      "Ridgeline resealing - silicone glazing bead PO 4477",
+      "Ridgeline resealing - lift rental and crew"
+     ],
+     "cross_memo": "Ridgeline resealing - interior drop cloths",
+     "plain": [
+      "the ridgeline resealing",
+      "the ridgeline silicone bead",
+      "the ridgeline lift crew"
+     ],
+     "oblique": [
+      "stopping the leaks in the old building",
+      "weatherproofing the historic frame",
+      "the roof drip problem finally getting fixed",
+      "caulking work along the top",
+      "what the facilities manager scheduled before winter",
+      "the maintenance backlog item",
+      "keeping rain out of the display rooms",
+      "a restoration crew working at height",
+      "sealant along the aging metal ribs",
+      "the preservation work on the Victorian structure",
+      "the contractor with the cherry picker",
+      "the long-deferred weatherproofing",
+      "plugging seepage over the cactus room",
+      "the water-intrusion fix",
+      "tightening up the building envelope",
+      "the annual-cycle upkeep we finally funded"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Visitor Programs and Education",
+   "aliases": [
+    "education",
+    "visitor programs",
+    "school programs",
+    "public programs",
+    "workshops and tours"
+   ],
+   "narrative": [
+    "Education",
+    "Visitor programs",
+    "School programs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Oakleaf Educators Cooperative",
+     "base": 5400,
+     "memo": "Docent training and curriculum"
+    },
+    {
+     "vendor": "Greenbus Charter",
+     "base": 3900,
+     "memo": "School field trip shuttle"
+    },
+    {
+     "vendor": "Craftroot Supply",
+     "base": 1600,
+     "memo": "Workshop materials"
+    }
+   ],
+   "events": [
+    {
+     "key": "summerlab",
+     "vendor": "Oakleaf Educators Cooperative",
+     "memos": [
+      "Seed Savers Summit - speaker honoraria PO 1288",
+      "Seed Savers Summit - panel travel"
+     ],
+     "cross_memo": "Seed Savers Summit - catering",
+     "plain": [
+      "the seed savers summit",
+      "the seed savers speakers",
+      "the seed savers panel"
+     ],
+     "oblique": [
+      "the conference we hosted in the spring",
+      "fees for the guest experts",
+      "the gathering of heirloom growers",
+      "a multi-day event for hobbyists nationwide",
+      "the lecture series with outside names",
+      "paying the invited presenters",
+      "the gardening world's annual meeting here",
+      "the weekend program that drew out-of-towners",
+      "the professional development event",
+      "flying in the panelists",
+      "the event our members asked for",
+      "an expensive weekend of talks",
+      "the visiting authorities",
+      "an outreach event for the plant community",
+      "the speakers' travel and fees",
+      "the symposium we sponsored"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "mobileclass",
+     "vendor": "Trailhead Mobile Learning",
+     "memos": [
+      "Greenhouse on Wheels - van wrap and fitout WO 7001",
+      "Greenhouse on Wheels - classroom kits"
+     ],
+     "cross_memo": "Greenhouse on Wheels - fleet insurance rider",
+     "plain": [
+      "the greenhouse on wheels",
+      "the greenhouse on wheels van",
+      "the greenhouse on wheels kits"
+     ],
+     "oblique": [
+      "the outreach vehicle for rural schools",
+      "taking lessons to classrooms off site",
+      "a rolling teaching lab",
+      "the grant-funded traveling program",
+      "bringing plants to kids who can't visit",
+      "the new vehicle outfitted for teaching",
+      "the mobile classroom initiative",
+      "equipment for off-campus lessons",
+      "the program launched with the foundation's money",
+      "teaching supplies loaded for the road",
+      "the customized truck build",
+      "the community access project",
+      "what the education director launched",
+      "hands-on materials for the visiting program",
+      "a classroom that travels",
+      "the vehicle conversion work"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Conservation and Research",
+   "aliases": [
+    "conservation",
+    "research",
+    "seed bank",
+    "botanical research",
+    "field science"
+   ],
+   "narrative": [
+    "Conservation",
+    "Research",
+    "Seed bank"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cryovault Storage Systems",
+     "base": 4800,
+     "memo": "Seed bank liquid nitrogen supply"
+    },
+    {
+     "vendor": "Herbarium Supply Partners",
+     "base": 2200,
+     "memo": "Specimen mounting and archival supplies"
+    },
+    {
+     "vendor": "Helix Genomics Services",
+     "base": 6300,
+     "memo": "DNA barcoding - standing contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "expedition",
+     "vendor": "Helix Genomics Services",
+     "memos": [
+      "Andean cloud forest survey - sequencing run PO 5503",
+      "Andean cloud forest survey - sample couriers"
+     ],
+     "cross_memo": "Andean cloud forest survey - field permits",
+     "plain": [
+      "the andean cloud forest survey",
+      "the andean survey sequencing",
+      "the andean survey couriers"
+     ],
+     "oblique": [
+      "the collecting trip to South America",
+      "analysis of what the team brought home",
+      "the grant deliverable for the mountain study",
+      "a scientific outing to high-altitude habitat",
+      "lab work on the newly gathered leaves",
+      "shipping fragile samples across borders",
+      "the partnership with the foreign university",
+      "the botanists' overseas project",
+      "genetic work on previously unrecorded species",
+      "the research the foundation underwrote",
+      "an international fieldwork effort",
+      "the specimens packed from the trek",
+      "the study of vanishing slopes",
+      "the fieldwork follow-up analysis",
+      "what the curator led abroad",
+      "the science team's big project"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "freezerfail",
+     "vendor": "Polarbridge Cryogenics",
+     "memos": [
+      "Vault chiller failure - emergency compressor PO 5560",
+      "Vault chiller failure - backup dewar rental"
+     ],
+     "cross_memo": "Vault chiller failure - lost inventory audit",
+     "plain": [
+      "the vault chiller failure",
+      "the vault chiller compressor",
+      "the vault chiller dewar rental"
+     ],
+     "oblique": [
+      "the cold storage breakdown",
+      "rescuing the stored collection when the cooling quit",
+      "equipment that died over a holiday weekend",
+      "the scramble to protect frozen genetic resources",
+      "a new unit to keep specimens safe",
+      "the outage that threatened decades of work",
+      "urgent hardware replaced in the basement",
+      "the stopgap while the main machine was down",
+      "what the seed curator reported at midnight",
+      "rented containers holding the saved material",
+      "the emergency purchase in the lab",
+      "protecting banked material from thawing",
+      "the incident review that followed",
+      "the failure the board asked about",
+      "keeping the irreplaceable collection frozen",
+      "the repair nobody budgeted"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

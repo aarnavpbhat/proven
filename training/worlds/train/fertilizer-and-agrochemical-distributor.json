@@ -1,0 +1,830 @@
+{
+ "slug": "fertilizer-and-agrochemical-distributor",
+ "industry": "fertilizer and agrochemical distributor",
+ "entities": [
+  "Prairie Crop Inputs LLC",
+  "Northfield Agri Supply Co",
+  "Harvest Ridge Nutrients Inc",
+  "Greenfurrow Distribution Group",
+  "Summit Acre Agrochemicals Ltd"
+ ],
+ "accounts": [
+  {
+   "name": "Bulk Fleet Operations",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "trucking spend",
+    "hauling costs",
+    "truck operations"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Trucking spend",
+    "Hauling costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Plainsline Diesel Supply",
+     "base": 14200,
+     "memo": "Fuel card charges — bulk diesel"
+    },
+    {
+     "vendor": "Cornbelt Tire & Axle",
+     "base": 4800,
+     "memo": "Tire service — spreader tenders"
+    },
+    {
+     "vendor": "Midland Truck Insurance Group",
+     "base": 9600,
+     "memo": "Commercial auto premium — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "hopper",
+     "vendor": "Cornbelt Tire & Axle",
+     "memos": [
+      "Hopper trailer rebuild — gate assemblies",
+      "Hopper trailer rebuild — liner replacement"
+     ],
+     "cross_memo": "Hopper trailer rebuild — loaner rental unit",
+     "plain": [
+      "the hopper trailer rebuild",
+      "the hopper trailer rebuild work",
+      "the trailer rebuild on the hoppers"
+     ],
+     "oblique": [
+      "getting the dry-bulk haulers back on the road",
+      "repairs to the fertilizer-carrying rigs",
+      "the rehab of our oldest granular haulers",
+      "work on rigs that kept jamming at the unloading stage",
+      "refurbishing equipment that moves product to farms",
+      "shop time for the aging bulk carriers",
+      "the overhaul of the units that deliver to growers",
+      "fixing gates that would not close",
+      "a fleet refurb we put off all winter",
+      "reconditioning of the load-bearing trailers",
+      "the shop visit that sidelined several rigs",
+      "upgrades to the older delivery units",
+      "a big maintenance push on the carriers",
+      "restoring trailers after the spring rush wore them down",
+      "the repair program for our granular delivery gear",
+      "getting delivery units certified again"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "scalecert",
+     "vendor": "Tri-County Weighbridge Services",
+     "memos": [
+      "Axle scale recertification — state inspection",
+      "Axle scale recertification — calibration weights"
+     ],
+     "cross_memo": "Axle scale recertification — permit filing fee",
+     "plain": [
+      "the axle scale recertification",
+      "the scale recertification project",
+      "the axle scale recertification process"
+     ],
+     "oblique": [
+      "the regulator-mandated weighing checkup",
+      "compliance work on how we measure loads",
+      "the annual government sign-off on our load measurement",
+      "getting the inspectors to bless our platform equipment",
+      "keeping our load readings legal",
+      "the audit of how heavy our deliveries are",
+      "a required retest of our weighing gear",
+      "paperwork and testing to prove loads are accurate",
+      "the state requirement for measuring shipments",
+      "making sure the loaded weights hold up to scrutiny",
+      "the periodic accuracy test on our weighing station",
+      "the check that lets us keep hauling at legal limits",
+      "the inspector visit at the yard",
+      "proving our weight tickets are honest",
+      "the compliance exercise before peak season",
+      "the yearly legal verification of load numbers"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse and Storage Facilities",
+   "aliases": [
+    "warehouse",
+    "warehouse costs",
+    "storage facilities",
+    "bin and shed costs",
+    "facility spend"
+   ],
+   "narrative": [
+    "Warehouse costs",
+    "Storage facilities",
+    "Facility spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeway Industrial Landlord LP",
+     "base": 22000,
+     "memo": "Warehouse lease — main depot"
+    },
+    {
+     "vendor": "Heartland Power Cooperative",
+     "base": 6400,
+     "memo": "Electric service — depot and sheds"
+    },
+    {
+     "vendor": "Clearwater Pest Control",
+     "base": 1100,
+     "memo": "Monthly pest service — storage buildings"
+    }
+   ],
+   "events": [
+    {
+     "key": "roofing",
+     "vendor": "Ridgeway Industrial Landlord LP",
+     "memos": [
+      "Shed roof membrane — reroofing recharge",
+      "Shed roof membrane — tenant improvement share"
+     ],
+     "cross_memo": "Shed roof membrane — emergency tarping",
+     "plain": [
+      "the shed roof membrane",
+      "the shed roof membrane project",
+      "the shed roof membrane replacement"
+     ],
+     "oblique": [
+      "keeping rain off the stockpiled product",
+      "the overhead repair at the main depot",
+      "fixing leaks that threatened inventory",
+      "a landlord pass-through for the building top",
+      "the project to stop water getting in",
+      "protection for goods stored under the old covering",
+      "work above the loading bays",
+      "the capital repair our landlord billed back",
+      "dealing with the storm that exposed the old covering",
+      "a weatherproofing job on the biggest building",
+      "the cost split with the property owner for the upper structure",
+      "preventing moisture damage to hygroscopic stock",
+      "the repair after winter damage to the building",
+      "a lease-required fix to the building envelope",
+      "the cover over the dry goods",
+      "overhead work done before planting season"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "dustcollect",
+     "vendor": "Airgate Environmental Systems",
+     "memos": [
+      "Dust collector install — baghouse unit",
+      "Dust collector install — ductwork and filters"
+     ],
+     "cross_memo": "Dust collector install — electrical permit",
+     "plain": [
+      "the dust collector install",
+      "the dust collector installation",
+      "the new dust collector install"
+     ],
+     "oblique": [
+      "air-quality equipment for the blending area",
+      "a safety upgrade after the insurer's recommendation",
+      "the project to keep particulates down indoors",
+      "cleaner air for workers handling powders",
+      "addressing the complaint from the neighbors",
+      "equipment that captures airborne product",
+      "the regulatory push on emissions at the plant",
+      "a health-and-safety capital addition",
+      "something the fire marshal wanted in place",
+      "keeping airborne fines from settling on everything",
+      "the new filtration setup",
+      "upgrades required to stay in compliance",
+      "the work done around the mixing floor",
+      "reducing fine particles near the loading dock",
+      "the response to a workplace safety audit",
+      "the environmental retrofit at the blending line"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Product Handling and Blending",
+   "aliases": [
+    "blending",
+    "blending costs",
+    "handling costs",
+    "blend plant spend",
+    "granular handling"
+   ],
+   "narrative": [
+    "Blending costs",
+    "Handling costs",
+    "Blend plant spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Bag & Tote Co",
+     "base": 11500,
+     "memo": "Poly bags and bulk totes"
+    },
+    {
+     "vendor": "Allgrain Conveyor Parts",
+     "base": 3900,
+     "memo": "Conveyor belt and idler supplies"
+    },
+    {
+     "vendor": "Staffright Temp Labor",
+     "base": 8700,
+     "memo": "Seasonal warehouse labor"
+    }
+   ],
+   "events": [
+    {
+     "key": "blendline",
+     "vendor": "Allgrain Conveyor Parts",
+     "memos": [
+      "Blender drum retrofit — paddle assembly",
+      "Blender drum retrofit — gearbox swap"
+     ],
+     "cross_memo": "Blender drum retrofit — contractor labor",
+     "plain": [
+      "the blender drum retrofit",
+      "the blender drum retrofit work",
+      "the drum retrofit on the blender"
+     ],
+     "oblique": [
+      "upgrading how we mix custom grower orders",
+      "the machine that makes our tailored nutrient mixes",
+      "a rebuild of core production equipment",
+      "improving batch consistency for customers",
+      "the capital refresh on our mixing operation",
+      "work that was supposed to speed up custom orders",
+      "new internals for the machine that makes our house formulas",
+      "the push to reduce uneven product",
+      "the shutdown of the mixing line for a week",
+      "parts and labor on the heart of the plant",
+      "the overdue refit of our largest production asset",
+      "a throughput improvement project",
+      "the investment to meet bigger order volumes",
+      "fixing the machine that kept producing off-spec batches",
+      "retooling what makes custom fertilizer",
+      "keeping the production floor competitive"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "sizestain",
+     "vendor": "Redwing Calibration Labs",
+     "memos": [
+      "Sieve analysis audit — lab testing",
+      "Sieve analysis audit — sample shipping"
+     ],
+     "cross_memo": "Sieve analysis audit — retained samples",
+     "plain": [
+      "the sieve analysis audit",
+      "the sieve analysis audit program",
+      "the audit of sieve analysis"
+     ],
+     "oblique": [
+      "third-party checks on product quality",
+      "verifying our granule size claims",
+      "the outside review prompted by a customer dispute",
+      "independent lab work on what we ship",
+      "testing that backs up our spec sheets",
+      "proof for a big buyer that our goods meet standards",
+      "the quality review a major account demanded",
+      "checking whether product matches the label",
+      "laboratory verification before a large contract",
+      "the study of particle consistency",
+      "the investigation into a complaint about uneven spreading",
+      "a credibility exercise with an outside tester",
+      "documentation needed to keep a key account",
+      "the quality assurance push after returns",
+      "outside testing to settle a farmer claim",
+      "the sampling program run by a neutral party"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Agronomy and Field Services",
+   "aliases": [
+    "agronomy",
+    "agronomy costs",
+    "field services",
+    "crop advisory spend",
+    "scouting costs"
+   ],
+   "narrative": [
+    "Agronomy costs",
+    "Field services",
+    "Crop advisory spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Soilwise Testing Lab",
+     "base": 5200,
+     "memo": "Soil sample analysis — grower program"
+    },
+    {
+     "vendor": "Skyview Drone Mapping",
+     "base": 3300,
+     "memo": "Aerial imagery subscription"
+    },
+    {
+     "vendor": "Fieldstone Crop Consultants",
+     "base": 7800,
+     "memo": "Contract agronomist retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "nutrientplan",
+     "vendor": "Fieldstone Crop Consultants",
+     "memos": [
+      "Nutrient management plans — grower workshops",
+      "Nutrient management plans — certified planner hours"
+     ],
+     "cross_memo": "Nutrient management plans — printing and binding",
+     "plain": [
+      "the nutrient management plans",
+      "the nutrient management plans rollout",
+      "the nutrient management plans effort"
+     ],
+     "oblique": [
+      "helping farmers meet new runoff rules",
+      "the paperwork program for growers facing regulation",
+      "a service we bundled for customers worried about compliance",
+      "the education sessions for our biggest accounts",
+      "expert time spent writing farm-specific documents",
+      "the response to the state watershed requirement",
+      "customer-facing work to keep acreage loyal",
+      "the push to help farms stay within environmental limits",
+      "a value-add program for the top growers",
+      "consulting hours spent on regulatory homework",
+      "the series of meetings with cooperatives",
+      "the effort to retain acres by helping them comply",
+      "preparing growers for inspections",
+      "advisory work that came out of the new law",
+      "the stack of documents we prepared for clients",
+      "environmental guidance given to farm customers"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "trialplots",
+     "vendor": "Greenhaven Research Farms",
+     "memos": [
+      "Demonstration plots — seed and application",
+      "Demonstration plots — harvest data collection"
+     ],
+     "cross_memo": "Demonstration plots — signage and field days",
+     "plain": [
+      "the demonstration plots",
+      "the demonstration plots program",
+      "the demonstration plots expense"
+     ],
+     "oblique": [
+      "side-by-side crop comparisons for customers",
+      "growing proof that our recommendations work",
+      "the outdoor showcase for new products",
+      "a sales tool set up in farmers' own fields",
+      "test acres we planted to win over skeptics",
+      "the head-to-head trials against the competition",
+      "visible results shown at the summer open house",
+      "the experiment that supports next year's pitch",
+      "working with a university-affiliated farm to compare yields",
+      "something the new product line needed to launch",
+      "field evidence for an upcoming sales season",
+      "real-world results we can point to",
+      "the investment in trials that growers can walk through",
+      "growing acres purely to demonstrate performance",
+      "the cost of showing growers actual yields",
+      "comparative field research for marketing"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Regulatory and Hazmat Compliance",
+   "aliases": [
+    "compliance",
+    "compliance costs",
+    "hazmat",
+    "safety and regulatory",
+    "permitting spend"
+   ],
+   "narrative": [
+    "Compliance costs",
+    "Hazmat spend",
+    "Permitting spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stateline Environmental Consulting",
+     "base": 6100,
+     "memo": "Monthly EHS advisory retainer"
+    },
+    {
+     "vendor": "SafeHaul Placarding Services",
+     "base": 1800,
+     "memo": "Hazmat placards and shipping papers"
+    },
+    {
+     "vendor": "Meridian Training Institute",
+     "base": 2400,
+     "memo": "Applicator licensing and safety training"
+    }
+   ],
+   "events": [
+    {
+     "key": "spillplan",
+     "vendor": "Stateline Environmental Consulting",
+     "memos": [
+      "Spill prevention plan — containment engineering",
+      "Spill prevention plan — certified review"
+     ],
+     "cross_memo": "Spill prevention plan — secondary berm materials",
+     "plain": [
+      "the spill prevention plan",
+      "the spill prevention plan update",
+      "the spill prevention plan work"
+     ],
+     "oblique": [
+      "a required document for the liquid storage area",
+      "engineering that stops leaks reaching the creek",
+      "the agency demand for tank safeguards",
+      "paperwork and concrete for the chemical yard",
+      "the response to the inspection finding",
+      "what the regulators asked for after the site visit",
+      "designing barriers around the tanks",
+      "making our liquid inventory safe from runoff",
+      "the formal plan the environmental agency wanted",
+      "engineering work to satisfy an enforcement letter",
+      "a protective setup for stored liquids",
+      "the review that kept our permit alive",
+      "preventing contamination of nearby water",
+      "the update that came with higher tank capacity",
+      "retaining a licensed engineer for site safeguards",
+      "compliance engineering for the bulk liquid depot"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "fineabate",
+     "vendor": "Landmark Regulatory Counsel PC",
+     "memos": [
+      "Label violation settlement — legal fees",
+      "Label violation settlement — corrective relabeling"
+     ],
+     "cross_memo": "Label violation settlement — recall notices",
+     "plain": [
+      "the label violation settlement",
+      "the label violation settlement costs",
+      "the label violation settlement matter"
+     ],
+     "oblique": [
+      "resolving an inspector's complaint about our packaging",
+      "the agreement that closed an enforcement case",
+      "outside lawyers on the regulator dispute",
+      "correcting what was printed on the containers",
+      "the penalty-related resolution with the agency",
+      "making right what the state flagged on our products",
+      "the legal fix for an informational mistake",
+      "the cost of settling with the department of agriculture",
+      "work to avoid a bigger fine",
+      "the retained attorney working the state matter",
+      "redoing product markings after the finding",
+      "closing out the enforcement action",
+      "the cleanup after an agency audit",
+      "fees to resolve the matter quietly",
+      "the negotiated end to a state investigation",
+      "the price of correcting what we shipped wrong"
+     ],
+     "low": 10000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Crop Protection Inventory Services",
+   "aliases": [
+    "inventory services",
+    "inventory costs",
+    "chemical storage",
+    "cold storage",
+    "crop protection logistics"
+   ],
+   "narrative": [
+    "Inventory services",
+    "Chemical storage",
+    "Crop protection logistics"
+   ],
+   "recurring": [
+    {
+     "vendor": "Frostline Climate Storage",
+     "base": 9200,
+     "memo": "Temperature-controlled storage — crop protection"
+    },
+    {
+     "vendor": "Cardinal Inventory Count Co",
+     "base": 2700,
+     "memo": "Cycle count services"
+    },
+    {
+     "vendor": "Secureguard Chemical Disposal",
+     "base": 3500,
+     "memo": "Waste container pickup"
+    }
+   ],
+   "events": [
+    {
+     "key": "expiredstock",
+     "vendor": "Secureguard Chemical Disposal",
+     "memos": [
+      "Expired herbicide disposal — incineration manifest",
+      "Expired herbicide disposal — drum repacking"
+     ],
+     "cross_memo": "Expired herbicide disposal — hazardous freight",
+     "plain": [
+      "the expired herbicide disposal",
+      "the expired herbicide disposal job",
+      "the herbicide disposal haul"
+     ],
+     "oblique": [
+      "getting rid of product past its shelf life",
+      "the cleanup of the back warehouse corner",
+      "inventory that never sold and could not be kept",
+      "the write-off that required physical removal",
+      "clearing out slow-moving chemical stock",
+      "the leftover goods from a failed season",
+      "paying to dispose of unsold goods",
+      "a disposal cost after a product line was discontinued",
+      "removing aged weed-killing stock",
+      "the purge of items nobody wanted",
+      "handling what a dry year left on our shelves",
+      "a one-time sweep of outdated goods",
+      "the cost of tidying up the chemical room",
+      "the stuff we couldn't return to the manufacturer",
+      "disposing of goods that lost potency",
+      "a cleanout ahead of the annual audit"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "fumigation",
+     "vendor": "Northgate Cold Chain Retrofit",
+     "memos": [
+      "Chiller room expansion — refrigeration panels",
+      "Chiller room expansion — insulation install"
+     ],
+     "cross_memo": "Chiller room expansion — power upgrade",
+     "plain": [
+      "the chiller room expansion",
+      "the chiller room expansion build",
+      "the expanded chiller room project"
+     ],
+     "oblique": [
+      "extra space for temperature-sensitive products",
+      "building out room for new biologicals",
+      "the capacity addition for heat-averse goods",
+      "the capital project to hold more inoculants",
+      "a request from sales to stock more cool goods",
+      "adding room because the old space was full",
+      "space for a new supplier's line",
+      "the construction that lets us carry a new category",
+      "enlarging the area that keeps goods from spoiling",
+      "the build we promised a vendor to win distribution",
+      "the added footprint for perishable crop inputs",
+      "increasing how much we can safely hold in summer",
+      "what we added when biological sales grew",
+      "the shelving and cooling addition",
+      "preparing for a new product agreement",
+      "a buildout driven by customer demand for live products"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Seasonal Customer Programs",
+   "aliases": [
+    "customer programs",
+    "rebates",
+    "growers programs",
+    "early order programs",
+    "seasonal incentives"
+   ],
+   "narrative": [
+    "Customer programs",
+    "Seasonal incentives",
+    "Early order programs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Agri Rewards Processing",
+     "base": 8500,
+     "memo": "Loyalty program administration"
+    },
+    {
+     "vendor": "Farmgate Credit Services",
+     "base": 5900,
+     "memo": "Grower financing fees"
+    },
+    {
+     "vendor": "Valley Radio Network",
+     "base": 4200,
+     "memo": "Regional ag radio spots"
+    }
+   ],
+   "events": [
+    {
+     "key": "prebuy",
+     "vendor": "Agri Rewards Processing",
+     "memos": [
+      "Winter prebuy promotion — rebate payout",
+      "Winter prebuy promotion — program administration"
+     ],
+     "cross_memo": "Winter prebuy promotion — extended credit terms",
+     "plain": [
+      "the winter prebuy promotion",
+      "the winter prebuy promotion payouts",
+      "the winter prebuy promotion program"
+     ],
+     "oblique": [
+      "discounts to lock in orders before planting",
+      "the incentive that pulled sales into the slow season",
+      "a sweetener for early commitments",
+      "what we offered to get farmers to commit sooner",
+      "the cash-back deal for customers who bought ahead",
+      "a promotion to smooth out our cash flow",
+      "getting growers to order months early",
+      "the offer that filled the order book",
+      "a rewards push on pre-season volume",
+      "the special pricing that drew in big accounts",
+      "an early-commitment incentive",
+      "money paid out for purchases made out of season",
+      "the deal designed to beat the competition's offer",
+      "a marketing push to book volume",
+      "benefits handed to farmers who ordered in advance",
+      "the seasonal sales stimulus"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "fieldday",
+     "vendor": "Cedar Hollow Event Venue",
+     "memos": [
+      "Customer appreciation expo — venue rental",
+      "Customer appreciation expo — catering and staging"
+     ],
+     "cross_memo": "Customer appreciation expo — printed invitations",
+     "plain": [
+      "the customer appreciation expo",
+      "the customer appreciation expo event",
+      "the customer appreciation expo weekend"
+     ],
+     "oblique": [
+      "the big gathering for our best growers",
+      "a thank-you event for loyal buyers",
+      "the annual get-together with farm customers",
+      "hosting farmers over a meal and presentations",
+      "a relationship-building weekend",
+      "the party we throw for top accounts",
+      "an occasion to introduce new products in person",
+      "entertaining the customers who matter most",
+      "a hospitality outlay tied to the busiest sales stretch",
+      "the in-person event that costs a lot every year",
+      "a gathering where suppliers meet growers",
+      "the one day we put our brand in front of everyone",
+      "food and staging for a crowd of farmers",
+      "a goodwill event timed before the season",
+      "our yearly customer outreach occasion",
+      "hosting the area's agricultural community"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Technology and Software",
+   "aliases": [
+    "software",
+    "it costs",
+    "systems spend",
+    "technology",
+    "tech spend"
+   ],
+   "narrative": [
+    "Software costs",
+    "Technology spend",
+    "Systems spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cloudledger Systems",
+     "base": 4800,
+     "memo": "ERP subscription — monthly"
+    },
+    {
+     "vendor": "RouteWise Logistics Software",
+     "base": 2900,
+     "memo": "Delivery routing platform license"
+    },
+    {
+     "vendor": "SecureNet Managed IT",
+     "base": 3600,
+     "memo": "Managed IT services and helpdesk"
+    }
+   ],
+   "events": [
+    {
+     "key": "erpmigrate",
+     "vendor": "Cloudledger Systems",
+     "memos": [
+      "Inventory module migration — data conversion",
+      "Inventory module migration — consultant hours"
+     ],
+     "cross_memo": "Inventory module migration — parallel run licenses",
+     "plain": [
+      "the inventory module migration",
+      "the inventory module migration work",
+      "the inventory module migration phase"
+     ],
+     "oblique": [
+      "moving our stock records onto the new platform",
+      "the cutover that kept staff up late",
+      "a systems project that replaced spreadsheets",
+      "outside consultants cleaning up our item records",
+      "the switch from the old way of tracking goods",
+      "a big change in how products are counted in the system",
+      "the effort to get lot tracking working",
+      "the go-live preparation",
+      "something the auditors had asked us to fix",
+      "a data cleanup before the changeover",
+      "a project to modernize our back-office records",
+      "the consultants brought in for the conversion",
+      "retiring a legacy way of keeping count",
+      "the transition off the homegrown tracker",
+      "upgrading how we trace products for recalls",
+      "the rollout that finally standardized item codes"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "ransomware",
+     "vendor": "Bastion Cyber Response Group",
+     "memos": [
+      "Phishing incident response — forensic investigation",
+      "Phishing incident response — credential reset support"
+     ],
+     "cross_memo": "Phishing incident response — breach counsel fees",
+     "plain": [
+      "the phishing incident response",
+      "the phishing incident response work",
+      "the phishing incident response engagement"
+     ],
+     "oblique": [
+      "an outside team called in after a staff member clicked something bad",
+      "the security scare that locked users out",
+      "cleaning up after the fraudulent email",
+      "experts hired to find out what was exposed",
+      "the aftermath of a hack attempt",
+      "emergency help from specialists",
+      "the investigation after someone's mailbox was compromised",
+      "the scramble to secure our accounts",
+      "a hired crew to confirm no data left the building",
+      "the fallout from criminals getting into one login",
+      "urgent services we did not budget for",
+      "attorneys and technicians dealing with a security event",
+      "what it cost to be sure the intruder was gone",
+      "the weekend we spent locking everything down",
+      "a cyber event handled by outside responders",
+      "protecting the company after the breach attempt"
+     ],
+     "low": 12000,
+     "high": 26000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,825 @@
+{
+ "slug": "spice-and-seasoning-importer",
+ "industry": "spice and seasoning importer",
+ "entities": [
+  "Saffron Harbor Imports",
+  "Tamarind Row Trading Co",
+  "Cardamom Coast Provisions",
+  "Juniper & Vale Spice Merchants",
+  "Sumac Ridge Importers"
+ ],
+ "accounts": [
+  {
+   "name": "Ocean Freight & Container Charges",
+   "aliases": [
+    "ocean freight",
+    "container costs",
+    "sea freight spend",
+    "inbound shipping",
+    "freight in"
+   ],
+   "narrative": [
+    "Ocean freight",
+    "Container costs",
+    "Inbound shipping"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pacific Meridian Lines",
+     "base": 24000,
+     "memo": "Container freight - Kochi to Newark"
+    },
+    {
+     "vendor": "Harborgate Drayage",
+     "base": 6500,
+     "memo": "Port pickup and delivery to warehouse"
+    },
+    {
+     "vendor": "Tidewater Customs Brokerage",
+     "base": 3200,
+     "memo": "Entry filing fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "transshipment",
+     "vendor": "Pacific Meridian Lines",
+     "memos": [
+      "Rerouted via Colombo transshipment - extra leg",
+      "Rerouted via Colombo transshipment - handling fee"
+     ],
+     "cross_memo": "Rerouted via Colombo transshipment - cargo insurance rider",
+     "plain": [
+      "the Colombo transshipment",
+      "the rerouted transshipment leg",
+      "the transshipment handling"
+     ],
+     "oblique": [
+      "the detour the cargo took after the original sailing was cancelled",
+      "a longer voyage for the pepper shipment",
+      "the extra stop in the Indian Ocean",
+      "switching the boat mid-journey",
+      "the vessel change",
+      "carrier scheduling troubles",
+      "a cancelled sailing",
+      "getting goods to port by another path",
+      "the longer way around",
+      "changes to how the cargo travelled",
+      "the second ship",
+      "an unplanned stopover",
+      "the disruption on the Asia lane",
+      "the lengthened transit",
+      "replacing the original sailing",
+      "a diverted voyage"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "hazmatfumigation",
+     "vendor": "Bayline Fumigation Services",
+     "memos": [
+      "Port fumigation treatment - methyl bromide",
+      "Port fumigation treatment - quarantine hold"
+     ],
+     "cross_memo": "Port fumigation treatment - warehouse quarantine labor",
+     "plain": [
+      "the port fumigation treatment",
+      "the methyl bromide fumigation",
+      "the fumigation quarantine hold"
+     ],
+     "oblique": [
+      "the agriculture inspector's order on the cinnamon lot",
+      "pest-control work required at the dock",
+      "a government-mandated treatment",
+      "clearing the shipment for release",
+      "the insect finding on arrival",
+      "the regulator's demand",
+      "getting the bags cleared to leave the pier",
+      "the bugs found in the cargo",
+      "treatment the authorities required",
+      "the delay holding up the lot",
+      "gassing the pallets",
+      "the compliance step on the imported bark",
+      "cleanup after an infestation notice",
+      "the order issued by the inspectors",
+      "a sanitary requirement at entry",
+      "the extermination job"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse & Cold Storage",
+   "aliases": [
+    "warehouse",
+    "storage costs",
+    "cold storage",
+    "warehousing spend",
+    "storage and handling"
+   ],
+   "narrative": [
+    "Warehouse costs",
+    "Cold storage",
+    "Storage and handling"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northfield Logistics Park",
+     "base": 18500,
+     "memo": "Monthly pallet storage and handling"
+    },
+    {
+     "vendor": "CoolVault Storage",
+     "base": 7200,
+     "memo": "Temperature-controlled bay lease"
+    },
+    {
+     "vendor": "Brightline Pest Control",
+     "base": 900,
+     "memo": "Monthly pest monitoring"
+    }
+   ],
+   "events": [
+    {
+     "key": "humidityrack",
+     "vendor": "Northfield Logistics Park",
+     "memos": [
+      "Humidity control retrofit - dehumidifier install",
+      "Humidity control retrofit - racking relocation"
+     ],
+     "cross_memo": "Humidity control retrofit - electrical upgrade",
+     "plain": [
+      "the humidity control retrofit",
+      "the dehumidifier install",
+      "the racking relocation retrofit"
+     ],
+     "oblique": [
+      "keeping the paprika from clumping",
+      "the damp problem in aisle four",
+      "moisture damage to stock",
+      "making the building drier",
+      "the mold scare last quarter",
+      "protecting bagged goods from the summer air",
+      "a facility improvement after spoilage",
+      "upgrading the climate setup",
+      "the clumped goods write-up",
+      "fixing conditions that ruined a batch",
+      "the rebuild after the leaks",
+      "air quality work for the stockroom",
+      "changes to keep product dry",
+      "the project after the insurance warning",
+      "soggy cartons",
+      "the work our landlord pushed on us"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "overflowlease",
+     "vendor": "Granite Peak Overflow Storage",
+     "memos": [
+      "Seasonal overflow lease - Granite Peak annex",
+      "Seasonal overflow lease - extra pallet positions"
+     ],
+     "cross_memo": "Seasonal overflow lease - trucking between sites",
+     "plain": [
+      "the seasonal overflow lease",
+      "the Granite Peak annex",
+      "the extra pallet positions lease"
+     ],
+     "oblique": [
+      "running out of room before the holidays",
+      "a second building rented for the rush",
+      "too much inventory for our space",
+      "the busy-season spillover",
+      "where we put the surplus stock",
+      "a short-term home for the bulk order",
+      "the stockpile ahead of peak demand",
+      "space we borrowed from a neighbor",
+      "the glut of arriving containers",
+      "a temporary site for the overstock",
+      "the squeeze on floor space",
+      "a stopgap for the pre-holiday buying",
+      "where the late shipments went",
+      "additional room for the clove purchase",
+      "the temporary location across town",
+      "the crowding in our main building"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Packaging & Labeling Supplies",
+   "aliases": [
+    "packaging",
+    "labels and packaging",
+    "packaging supplies",
+    "jar and pouch costs",
+    "packaging spend"
+   ],
+   "narrative": [
+    "Packaging",
+    "Labels and packaging",
+    "Packaging supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearview Glass & Jar Co",
+     "base": 14000,
+     "memo": "Glass spice jars - standard sizes"
+    },
+    {
+     "vendor": "Stonebridge Label Printing",
+     "base": 5500,
+     "memo": "Product label rolls"
+    },
+    {
+     "vendor": "Kraftline Pouch Supply",
+     "base": 8800,
+     "memo": "Resealable stand-up pouches"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "Stonebridge Label Printing",
+     "memos": [
+      "Brand refresh relaunch - new label artwork",
+      "Brand refresh relaunch - plate setup charges"
+     ],
+     "cross_memo": "Brand refresh relaunch - agency design retainer",
+     "plain": [
+      "the brand refresh relaunch",
+      "the new label artwork relaunch",
+      "the relaunch plate setup"
+     ],
+     "oblique": [
+      "the new look for the whole line",
+      "a facelift for the shelf products",
+      "the redesign the owners approved",
+      "changing how our products appear",
+      "the makeover customers will notice",
+      "the visual overhaul at retail",
+      "updated artwork across the range",
+      "what the creative team delivered",
+      "the identity project",
+      "reprinting everything with a different design",
+      "the cosmetic change to our goods",
+      "the fresh appearance rollout",
+      "work to modernize how we present",
+      "the redo of the visual identity",
+      "the update the grocery buyers requested",
+      "launching the sharper style"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "allergenreprint",
+     "vendor": "Bluefin Compliance Printing",
+     "memos": [
+      "Allergen statement reprint - recalled stock relabel",
+      "Allergen statement reprint - sticker overlay run"
+     ],
+     "cross_memo": "Allergen statement reprint - relabeling temp crew",
+     "plain": [
+      "the allergen statement reprint",
+      "the recalled stock relabel",
+      "the sticker overlay run"
+     ],
+     "oblique": [
+      "correcting what the packages said about nuts",
+      "the notice from the food safety agency",
+      "fixing wording on thousands of units",
+      "covering up an incorrect warning",
+      "the regulatory correction",
+      "stickers slapped over the old text",
+      "the label mistake we caught late",
+      "the compliance fix on the curry blends",
+      "redoing text customers rely on",
+      "the oversight in the ingredient disclosure",
+      "getting the right language onto the product",
+      "remediation after the retailer's complaint",
+      "a fast patch to printed material",
+      "the government-required wording update",
+      "what we had to redo after the audit",
+      "correcting the cartons already shipped"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Quality Testing & Food Safety",
+   "aliases": [
+    "lab testing",
+    "quality testing",
+    "food safety",
+    "testing costs",
+    "qa and lab fees"
+   ],
+   "narrative": [
+    "Lab testing",
+    "Food safety",
+    "Testing costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Analytical Labs",
+     "base": 9500,
+     "memo": "Routine microbial and moisture testing"
+    },
+    {
+     "vendor": "SafeHarvest Auditors",
+     "base": 4200,
+     "memo": "Supplier audit program fee"
+    },
+    {
+     "vendor": "Ironwood Certification",
+     "base": 2800,
+     "memo": "Organic certification maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "pesticidepanel",
+     "vendor": "Meridian Analytical Labs",
+     "memos": [
+      "Expanded pesticide residue panel - retest batch",
+      "Expanded pesticide residue panel - rush turnaround"
+     ],
+     "cross_memo": "Expanded pesticide residue panel - courier overnight samples",
+     "plain": [
+      "the expanded pesticide residue panel",
+      "the pesticide panel retest batch",
+      "the residue panel rush turnaround"
+     ],
+     "oblique": [
+      "checking chemicals on the chili shipment",
+      "a customer's demand for extra proof of purity",
+      "the repeated screening after a failed result",
+      "the heightened scrutiny on imported leaf",
+      "extra scientific scans of the crop",
+      "verifying farm practices after a warning",
+      "the retailer asking for more evidence",
+      "a broader look at contaminants",
+      "double-checking a suspicious lot",
+      "the tougher requirements from the European buyer",
+      "analysis we paid extra to expedite",
+      "reassurance work for the big account",
+      "the wider screen on one origin",
+      "additional clearance steps for the turmeric",
+      "the investigation into the supplier's fields",
+      "proving the goods were clean"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "recallmock",
+     "vendor": "Pinnacle Risk Advisors",
+     "memos": [
+      "Mock recall drill - consultant facilitation",
+      "Mock recall drill - traceability software audit"
+     ],
+     "cross_memo": "Mock recall drill - staff overtime",
+     "plain": [
+      "the mock recall drill",
+      "the consultant facilitation drill",
+      "the traceability audit drill"
+     ],
+     "oblique": [
+      "practicing what we would do if product went bad",
+      "the fire drill for our supply chain",
+      "an exercise our insurer required",
+      "proving we can trace a lot in hours",
+      "simulation of a worst-case day",
+      "the outside experts we hired to test us",
+      "a rehearsal of the emergency plan",
+      "what the certification body asked us to demonstrate",
+      "testing our readiness",
+      "the pretend crisis",
+      "the scenario planning event",
+      "a stress test of our procedures",
+      "showing auditors our response works",
+      "the staged emergency",
+      "preparedness work before the renewal",
+      "the practice run the board wanted"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Import Duties & Customs Compliance",
+   "aliases": [
+    "duties",
+    "customs",
+    "import duties",
+    "tariffs and duties",
+    "customs compliance spend"
+   ],
+   "narrative": [
+    "Duties",
+    "Import duties",
+    "Customs spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "U.S. Customs Remittance Account",
+     "base": 28000,
+     "memo": "Monthly duty and entry payments"
+    },
+    {
+     "vendor": "Beacon Trade Consultants",
+     "base": 3500,
+     "memo": "Tariff classification advisory retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "tariffreclass",
+     "vendor": "Beacon Trade Consultants",
+     "memos": [
+      "Tariff reclassification dispute - protest filing",
+      "Tariff reclassification dispute - legal review hours"
+     ],
+     "cross_memo": "Tariff reclassification dispute - back duties assessed",
+     "plain": [
+      "the tariff reclassification dispute",
+      "the protest filing dispute",
+      "the legal review hours dispute"
+     ],
+     "oblique": [
+      "the government saying our blend belonged in a pricier category",
+      "arguing over how a product gets taxed",
+      "a ruling that went against us",
+      "paying more on goods already sold",
+      "the agency changing its mind on a code",
+      "contesting an assessment",
+      "the bill that arrived after an audit",
+      "a disagreement with the border authority",
+      "retroactive charges on old shipments",
+      "fighting a decision about a seasoning mix",
+      "the correction of previous entries",
+      "specialist time spent defending our position",
+      "the officer's different reading of the rules",
+      "the surprise from the revenue side",
+      "sorting out what category cumin blends fit",
+      "costs from an official reversal"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "bondincrease",
+     "vendor": "Sentinel Surety Group",
+     "memos": [
+      "Continuous bond increase - surety premium",
+      "Continuous bond increase - underwriting fee"
+     ],
+     "cross_memo": "Continuous bond increase - collateral letter of credit fee",
+     "plain": [
+      "the continuous bond increase",
+      "the surety premium increase",
+      "the bond underwriting fee"
+     ],
+     "oblique": [
+      "the guarantee we had to raise after volumes grew",
+      "a bigger promise to the government",
+      "the larger financial pledge for importing",
+      "security the authorities wanted on file",
+      "the insurance-like backing for our entries",
+      "what the agency required as we scaled up",
+      "paperwork assuring we will pay what we owe",
+      "the higher coverage level",
+      "an annual guarantee that got pricier",
+      "extending our borrowing capacity to cover imports",
+      "protection for the treasury",
+      "a requirement tied to bigger purchases",
+      "the credit-based safeguard",
+      "the new limit on what we can bring in",
+      "raising the ceiling on our guarantees",
+      "the step up after last year's volume"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Sourcing Trips & Supplier Relations",
+   "aliases": [
+    "sourcing travel",
+    "supplier visits",
+    "origin trips",
+    "buying trips",
+    "sourcing and supplier costs"
+   ],
+   "narrative": [
+    "Sourcing travel",
+    "Origin trips",
+    "Buying trips"
+   ],
+   "recurring": [
+    {
+     "vendor": "Wanderlight Corporate Travel",
+     "base": 9000,
+     "memo": "Airfare and hotels for buyers"
+    },
+    {
+     "vendor": "Spicebelt Local Guides",
+     "base": 2400,
+     "memo": "In-country driver and interpreter"
+    },
+    {
+     "vendor": "Farmgate Sample Couriers",
+     "base": 1800,
+     "memo": "Air courier of crop samples"
+    }
+   ],
+   "events": [
+    {
+     "key": "harvestsummit",
+     "vendor": "Wanderlight Corporate Travel",
+     "memos": [
+      "Annual growers summit - Zanzibar delegation airfare",
+      "Annual growers summit - conference lodging block"
+     ],
+     "cross_memo": "Annual growers summit - sponsorship booth fee",
+     "plain": [
+      "the annual growers summit",
+      "the Zanzibar delegation airfare",
+      "the summit lodging block"
+     ],
+     "oblique": [
+      "the gathering of farmers and buyers",
+      "sending the leadership team abroad to meet producers",
+      "the yearly industry meetup",
+      "relationship building with our clove suppliers",
+      "the big event on the island",
+      "a face-to-face with growers",
+      "our company's presence at the conference",
+      "the delegation we sent overseas",
+      "networking with the people who grow our goods",
+      "the trade meeting that comes once a year",
+      "the group excursion to the farms",
+      "a show of support for our growers",
+      "where our executives went in the spring",
+      "the formal assembly in East Africa",
+      "the week our team spent with producers",
+      "the convention attended by procurement"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "vanillacontract",
+     "vendor": "Madagascar Highlands Cooperative",
+     "memos": [
+      "Vanilla cooperative advance - crop financing deposit",
+      "Vanilla cooperative advance - field inspection stipend"
+     ],
+     "cross_memo": "Vanilla cooperative advance - bank wire fees",
+     "plain": [
+      "the vanilla cooperative advance",
+      "the crop financing deposit",
+      "the field inspection stipend advance"
+     ],
+     "oblique": [
+      "money handed over before the beans were picked",
+      "early payment to secure next season's pods",
+      "the up-front commitment to the growers",
+      "helping farmers cover costs ahead of harvest",
+      "locking in supply from the island",
+      "a prepayment for orchids that hadn't matured",
+      "the pledge we made to lock in scarce product",
+      "backing a partner whose crop was uncertain",
+      "cash sent ahead of the season",
+      "our bet on next year's pods",
+      "what we gave the farmers' group in advance",
+      "an investment in a risky source",
+      "the deposit tied to a future delivery",
+      "the gesture that guaranteed our allocation",
+      "funds to keep a supplier afloat",
+      "securing priority access to the harvest"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Sales Samples & Trade Promotion",
+   "aliases": [
+    "samples",
+    "trade promotion",
+    "sample costs",
+    "promo spend",
+    "samples and promotions"
+   ],
+   "narrative": [
+    "Samples",
+    "Trade promotion",
+    "Promo spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sampleworks Fulfillment",
+     "base": 5600,
+     "memo": "Mini sample kits assembled and shipped"
+    },
+    {
+     "vendor": "Marketbridge Brokers",
+     "base": 11000,
+     "memo": "Retail broker commissions"
+    },
+    {
+     "vendor": "Shelfside Merchandising",
+     "base": 3800,
+     "memo": "In-store demo staffing"
+    }
+   ],
+   "events": [
+    {
+     "key": "fancyfoodshow",
+     "vendor": "Marketbridge Brokers",
+     "memos": [
+      "Specialty Food Expo - booth buildout",
+      "Specialty Food Expo - exhibitor registration"
+     ],
+     "cross_memo": "Specialty Food Expo - freight of display inventory",
+     "plain": [
+      "the Specialty Food Expo",
+      "the expo booth buildout",
+      "the exhibitor registration"
+     ],
+     "oblique": [
+      "our stand at the big industry fair",
+      "the annual trade fair in New York",
+      "meeting buyers under one roof",
+      "the showcase we paid to attend",
+      "displaying products to the retail trade",
+      "the convention hall presence",
+      "the week of tastings for prospective accounts",
+      "where we launched the new blends",
+      "the four-day event with the booth",
+      "courting the grocery chains in person",
+      "an exhibit hall presence",
+      "the largest gathering in our sector",
+      "our spot on the show floor",
+      "the splashy appearance for buyers",
+      "a major event for finding new customers",
+      "the trade event our sales director pushed for"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "influencerlaunch",
+     "vendor": "Brightspoon Creative Collective",
+     "memos": [
+      "Chef partnership campaign - recipe video production",
+      "Chef partnership campaign - talent fees"
+     ],
+     "cross_memo": "Chef partnership campaign - ad boost placement",
+     "plain": [
+      "the chef partnership campaign",
+      "the recipe video production campaign",
+      "the chef talent fees"
+     ],
+     "oblique": [
+      "a famous cook cooking with our blends online",
+      "social content featuring a kitchen personality",
+      "the online push with a well-known name",
+      "videos aimed at home cooks",
+      "getting a celebrity to endorse the line",
+      "the streaming series we sponsored",
+      "a media-friendly effort for the younger crowd",
+      "the filming days in a studio kitchen",
+      "paying someone with a large following",
+      "our digital outreach this quarter",
+      "the sponsored content that went live",
+      "a splash on video platforms",
+      "the ambassador we hired",
+      "reaching new customers through screens",
+      "the endorsement deal",
+      "the creative production for the summer push"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Equipment & Blending Facility Maintenance",
+   "aliases": [
+    "equipment maintenance",
+    "blending equipment",
+    "plant maintenance",
+    "grinder and mixer upkeep",
+    "facility upkeep"
+   ],
+   "narrative": [
+    "Equipment maintenance",
+    "Plant maintenance",
+    "Facility upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Industrial Service",
+     "base": 4800,
+     "memo": "Preventive maintenance contract - mixers and grinders"
+    },
+    {
+     "vendor": "Pureflow Sanitation Supply",
+     "base": 3100,
+     "memo": "Food-grade cleaning chemicals"
+    },
+    {
+     "vendor": "Quarry Hill Electric",
+     "base": 1500,
+     "memo": "Standby electrician callouts"
+    }
+   ],
+   "events": [
+    {
+     "key": "millreplace",
+     "vendor": "Ridgeline Industrial Service",
+     "memos": [
+      "Cryogenic mill replacement - unit removal and install",
+      "Cryogenic mill replacement - commissioning labor"
+     ],
+     "cross_memo": "Cryogenic mill replacement - crane rental",
+     "plain": [
+      "the cryogenic mill replacement",
+      "the mill removal and install",
+      "the mill commissioning labor"
+     ],
+     "oblique": [
+      "swapping out the machine that makes our fine powders",
+      "the big machine that gave out in the spring",
+      "the breakdown on the production floor",
+      "bringing in a newer unit for pulverizing",
+      "what happened after the old equipment seized",
+      "the major capital repair",
+      "a failure that stopped the line for a week",
+      "installing a machine that runs colder",
+      "the failed core of our operation",
+      "a heavy piece of gear finally giving up",
+      "replacing the heart of the grinding area",
+      "the downtime that cost us orders",
+      "the new machine arriving on a truck",
+      "the retirement of a twenty-year-old workhorse",
+      "work done over the long weekend shutdown",
+      "getting production going again after it stalled"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "metaldetector",
+     "vendor": "Vantage Inspection Systems",
+     "memos": [
+      "X-ray inspection unit install - line three",
+      "X-ray inspection unit install - calibration and validation"
+     ],
+     "cross_memo": "X-ray inspection unit install - conveyor modification",
+     "plain": [
+      "the X-ray inspection unit install",
+      "the line three X-ray unit",
+      "the X-ray calibration and validation"
+     ],
+     "oblique": [
+      "a scanner that spots stray debris in finished product",
+      "the foreign-object screening gadget",
+      "the customer requirement for better detection",
+      "new technology watching the packaging line",
+      "what the big retailer made us add",
+      "spotting stones and fragments before shipping",
+      "the safety upgrade to the end of the line",
+      "gear to catch contamination",
+      "an upgrade over our old detector",
+      "the system that looks inside sealed containers",
+      "protection against complaints about gritty product",
+      "the compliance purchase for the new contract",
+      "a device that peers through the jars",
+      "hardware to satisfy the quality auditors",
+      "what we bolted on to the output conveyor",
+      "the inspection gear the buyers insisted on"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,830 @@
+{
+ "slug": "chocolate-confectionery-maker",
+ "industry": "chocolate confectionery maker",
+ "entities": [
+  "Cocoa Bough Confections",
+  "Velvet Nib Chocolatiers",
+  "Harbor Truffle Works",
+  "Copper Kettle Cacao Co",
+  "Maple Ridge Sweets"
+ ],
+ "accounts": [
+  {
+   "name": "Cocoa & Raw Ingredients",
+   "aliases": [
+    "cocoa",
+    "raw ingredients",
+    "ingredient purchases",
+    "cacao spend",
+    "bean and sugar costs"
+   ],
+   "narrative": [
+    "Cocoa",
+    "Raw ingredients",
+    "Ingredient purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Equator Bean Traders",
+     "base": 28000,
+     "memo": "Cocoa liquor and butter monthly order"
+    },
+    {
+     "vendor": "Prairie Sugar Cooperative",
+     "base": 9500,
+     "memo": "Bulk granulated sugar delivery"
+    },
+    {
+     "vendor": "Meadowlark Dairy Supply",
+     "base": 6200,
+     "memo": "Milk powder and cream"
+    }
+   ],
+   "events": [
+    {
+     "key": "hazelnut",
+     "vendor": "Prairie Sugar Cooperative",
+     "memos": [
+      "Hazelnut paste spot buy — Piedmont lot",
+      "Hazelnut paste spot buy — extra pallets"
+     ],
+     "cross_memo": "Hazelnut paste spot buy — cold storage fee",
+     "plain": [
+      "the hazelnut paste spot buy",
+      "the Piedmont hazelnut paste lot",
+      "the hazelnut paste pallets"
+     ],
+     "oblique": [
+      "the nut shortage scramble",
+      "stocking up for the new gianduja bar",
+      "a one-time pantry fill for the holiday filling line",
+      "securing supply after a crop failure overseas",
+      "the emergency sourcing for our spread line",
+      "buying ahead of a price spike",
+      "extra inventory for the autumn launch",
+      "the rush order the product team requested",
+      "the filling ingredient we ran short on",
+      "stockpiling for a seasonal promotion",
+      "an off-cycle purchase to avoid a stockout",
+      "what we paid to keep the praline line running",
+      "the supplier we had to find on short notice",
+      "a bulk commitment made before prices climbed",
+      "the ingredient we bought in surplus",
+      "material for the limited edition collection"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "vanilla",
+     "vendor": "Madagascar Pod Imports",
+     "memos": [
+      "Madagascar vanilla pod shortfall — Bourbon grade",
+      "Madagascar vanilla pod shortfall — freight surcharge"
+     ],
+     "cross_memo": "Madagascar vanilla pod shortfall — customs broker",
+     "plain": [
+      "the Madagascar vanilla pod shortfall",
+      "the Bourbon grade vanilla",
+      "the vanilla pod freight surcharge"
+     ],
+     "oblique": [
+      "the flavoring crunch",
+      "a harvest that came in thin",
+      "paying up for scarce aromatics",
+      "the premium we paid to finish the season",
+      "replacement supply after a cancelled shipment",
+      "a tropical weather problem at origin",
+      "covering the gap in our extract inventory",
+      "the rush air shipment of spice",
+      "an upgrade in quality we did not plan on",
+      "securing enough for the ganache recipes",
+      "a supplier default we had to cover",
+      "the sourcing fix for our signature bars",
+      "stretching dollars on an imported crop",
+      "the premium on a short supply item",
+      "scarcity pricing at the source",
+      "what it cost to keep recipes unchanged"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Packaging & Wrapping Supplies",
+   "aliases": [
+    "packaging",
+    "wrapping supplies",
+    "boxes and foil",
+    "packaging materials",
+    "wrapper costs"
+   ],
+   "narrative": [
+    "Packaging",
+    "Wrapping supplies",
+    "Boxes and foil"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northfield Carton Company",
+     "base": 14500,
+     "memo": "Folding cartons and shipper boxes"
+    },
+    {
+     "vendor": "BrightFoil Converters",
+     "base": 7800,
+     "memo": "Aluminum foil wrap rolls"
+    },
+    {
+     "vendor": "ClearView Film Corp",
+     "base": 4300,
+     "memo": "Window film and bags"
+    }
+   ],
+   "events": [
+    {
+     "key": "valentine",
+     "vendor": "Northfield Carton Company",
+     "memos": [
+      "Heart gift tin run — Valentine rush",
+      "Heart gift tin run — embossing dies"
+     ],
+     "cross_memo": "Heart gift tin run — warehouse overtime",
+     "plain": [
+      "the heart gift tin run",
+      "the Valentine rush tins",
+      "the heart tin embossing dies"
+     ],
+     "oblique": [
+      "the February seasonal push",
+      "a special edition for the gifting calendar",
+      "what the retail buyers asked for in January",
+      "a short-run holiday presentation piece",
+      "the keepsake container project",
+      "rapid-turn work for a romantic occasion",
+      "custom metalwork for the spring set",
+      "a seasonal item that sold out fast",
+      "the premium presentation upgrade",
+      "an order tied to the big gifting weekend",
+      "specialty containers for department stores",
+      "the limited collection we dressed up",
+      "a rush job for the sweetheart season",
+      "the decorative extras for gift shoppers",
+      "a one-time die investment",
+      "the keepsake line we launched late"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "recyclable",
+     "vendor": "GreenLeaf Pulp Works",
+     "memos": [
+      "Compostable sleeve pilot — molded fiber trays",
+      "Compostable sleeve pilot — sample runs"
+     ],
+     "cross_memo": "Compostable sleeve pilot — design consultant",
+     "plain": [
+      "the compostable sleeve pilot",
+      "the molded fiber trays",
+      "the compostable sleeve sample runs"
+     ],
+     "oblique": [
+      "our sustainability trial",
+      "the eco-friendly switch a retailer requested",
+      "testing a greener way to ship",
+      "a trial that replaced the plastic inserts",
+      "the environmental certification effort",
+      "what we spent on a green initiative",
+      "the experiment to cut landfill waste",
+      "a request from our biggest grocery account",
+      "early-stage work toward a carbon goal",
+      "the low-impact alternative we evaluated",
+      "a customer mandate on materials",
+      "prototyping something plant-based",
+      "the pilot to phase out old inserts",
+      "research into earth-friendly options",
+      "a corporate responsibility project",
+      "the test batches for the new look"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Production Energy & Utilities",
+   "aliases": [
+    "utilities",
+    "plant energy",
+    "power and gas",
+    "production utilities",
+    "energy costs"
+   ],
+   "narrative": [
+    "Utilities",
+    "Plant energy",
+    "Power and gas"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lakeshore Electric Cooperative",
+     "base": 19000,
+     "memo": "Plant electricity monthly"
+    },
+    {
+     "vendor": "Summit Natural Gas",
+     "base": 8200,
+     "memo": "Gas for boilers and ovens"
+    },
+    {
+     "vendor": "Riverbend Water Authority",
+     "base": 2400,
+     "memo": "Process water and sewer"
+    }
+   ],
+   "events": [
+    {
+     "key": "chiller",
+     "vendor": "Lakeshore Electric Cooperative",
+     "memos": [
+      "Glycol chiller failure — emergency rental power",
+      "Glycol chiller failure — demand charge spike"
+     ],
+     "cross_memo": "Glycol chiller failure — spoiled batch writeoff",
+     "plain": [
+      "the glycol chiller failure",
+      "the emergency rental power",
+      "the chiller demand charge spike"
+     ],
+     "oblique": [
+      "the cooling breakdown on the line",
+      "a heat wave that overwhelmed the plant",
+      "running temporary systems for days",
+      "the outage that halted tempering",
+      "what the heavy draw cost us in July",
+      "a mechanical failure nobody saw coming",
+      "the penalty from the peak-load tariff",
+      "scrambling to keep product firm",
+      "an equipment crisis during a hot spell",
+      "a week of backup generation",
+      "the surge that hit the meter",
+      "stopgap measures to protect inventory",
+      "the unplanned cost of staying cold",
+      "a failure at the worst possible time",
+      "the spike in our peak consumption",
+      "the bill for riding out the breakdown"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "solar",
+     "vendor": "SunCrest Energy Partners",
+     "memos": [
+      "Rooftop array interconnect — inspection fees",
+      "Rooftop array interconnect — transformer upgrade"
+     ],
+     "cross_memo": "Rooftop array interconnect — permit filing",
+     "plain": [
+      "the rooftop array interconnect",
+      "the array interconnect inspection fees",
+      "the interconnect transformer upgrade"
+     ],
+     "oblique": [
+      "going partly solar",
+      "the grid hookup work for panels",
+      "an upgrade the utility required",
+      "our renewable energy project",
+      "the capital project that cuts future bills",
+      "getting the new generation online",
+      "work the municipality demanded",
+      "preparing the roof for a clean power plan",
+      "what we paid to flip the switch on solar",
+      "the compliance steps before activation",
+      "an infrastructure change at the plant",
+      "the green power startup costs",
+      "the electrical work behind the sustainability push",
+      "paperwork and hardware for self-generation",
+      "the connection to feed power back",
+      "a step toward lower long-term energy cost"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Repair & Maintenance",
+   "aliases": [
+    "equipment repair",
+    "line maintenance",
+    "machine upkeep",
+    "repairs and maintenance",
+    "plant repairs"
+   ],
+   "narrative": [
+    "Equipment repair",
+    "Line maintenance",
+    "Machine upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Mechanical Services",
+     "base": 11500,
+     "memo": "Preventive maintenance contract"
+    },
+    {
+     "vendor": "Sweetline Parts Depot",
+     "base": 5200,
+     "memo": "Belts bearings and spare parts"
+    },
+    {
+     "vendor": "CleanRoom Sanitation Crew",
+     "base": 6800,
+     "memo": "Weekly deep clean of production floor"
+    }
+   ],
+   "events": [
+    {
+     "key": "enrober",
+     "vendor": "Precision Mechanical Services",
+     "memos": [
+      "Enrober belt replacement — wire mesh rebuild",
+      "Enrober belt replacement — weekend crew"
+     ],
+     "cross_memo": "Enrober belt replacement — idle line wages",
+     "plain": [
+      "the enrober belt replacement",
+      "the enrober wire mesh rebuild",
+      "the enrober weekend crew"
+     ],
+     "oblique": [
+      "the coating machine overhaul",
+      "a breakdown on our busiest line",
+      "getting the dipping line moving again",
+      "the fix that ate a whole weekend",
+      "the worn conveyor we finally swapped out",
+      "an unplanned stoppage in the coating area",
+      "bringing a key unit back to full speed",
+      "the repair that backed up orders",
+      "what it cost to resurrect the line",
+      "a mechanical failure during peak season",
+      "the retrofit we had been putting off",
+      "the rebuild that required extra hands",
+      "replacing a part that had given out",
+      "a shutdown of the finishing equipment",
+      "the emergency job on the glazing station",
+      "a big repair on aging machinery"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "temper",
+     "vendor": "Alpine Thermal Controls",
+     "memos": [
+      "Tempering machine recalibration — sensor package",
+      "Tempering machine recalibration — technician travel"
+     ],
+     "cross_memo": "Tempering machine recalibration — reworked product",
+     "plain": [
+      "the tempering machine recalibration",
+      "the recalibration sensor package",
+      "the tempering technician travel"
+     ],
+     "oblique": [
+      "the bloom problem fix",
+      "a quality issue that gave chocolate a dull finish",
+      "the specialist we flew in",
+      "an adjustment after customer complaints",
+      "correcting the sheen on finished bars",
+      "a fix to the temperature sensing",
+      "the factory visit from the manufacturer's expert",
+      "work that followed a failed quality audit",
+      "the retooling for consistent snap",
+      "remedying a defect found at inspection",
+      "a calibration job that ran long",
+      "the diagnostics on our crystallization process",
+      "a corrective project after a bad batch",
+      "what we paid to get the texture right",
+      "new instruments to control heat",
+      "the technical visit about our glossy finish"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Food Safety & Quality Assurance",
+   "aliases": [
+    "food safety",
+    "quality assurance",
+    "qa and testing",
+    "lab testing",
+    "compliance testing"
+   ],
+   "narrative": [
+    "Food safety",
+    "Quality assurance",
+    "Lab testing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northgate Analytical Labs",
+     "base": 5600,
+     "memo": "Monthly microbial and allergen testing"
+    },
+    {
+     "vendor": "SafeBite Audit Group",
+     "base": 3800,
+     "memo": "Third-party GMP audit retainer"
+    },
+    {
+     "vendor": "PestAway Services",
+     "base": 1400,
+     "memo": "Pest control monthly service"
+    }
+   ],
+   "events": [
+    {
+     "key": "allergen",
+     "vendor": "Northgate Analytical Labs",
+     "memos": [
+      "Peanut cross-contact investigation — swab panels",
+      "Peanut cross-contact investigation — expedited results"
+     ],
+     "cross_memo": "Peanut cross-contact investigation — recalled pallets",
+     "plain": [
+      "the peanut cross-contact investigation",
+      "the peanut swab panels",
+      "the expedited peanut results"
+     ],
+     "oblique": [
+      "a scare on the line",
+      "the labeling concern a customer flagged",
+      "the retest of everything we shipped last week",
+      "an incident that triggered a hold",
+      "what we spent to prove the product was clean",
+      "the inquiry after an angry email",
+      "a possible mix-up between products",
+      "urgent verification of finished goods",
+      "the paper trail for the regulator",
+      "resolving a worry about allergy warnings",
+      "the sweep of the production area",
+      "a precautionary hold on shipments",
+      "clearing our name after a complaint",
+      "the rush to confirm nothing was contaminated",
+      "an investigation we had to run in a hurry",
+      "the scrutiny that followed a consumer report"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "kosher",
+     "vendor": "Shield Certification Bureau",
+     "memos": [
+      "Kosher certification expansion — rabbinic inspection",
+      "Kosher certification expansion — plant visit fees"
+     ],
+     "cross_memo": "Kosher certification expansion — label reprint",
+     "plain": [
+      "the kosher certification expansion",
+      "the rabbinic inspection visit",
+      "the kosher plant visit fees"
+     ],
+     "oblique": [
+      "a credential a new customer required",
+      "opening up a new buyer segment",
+      "the stamp of approval for expanded distribution",
+      "a religious dietary approval",
+      "what it took to land the supermarket contract",
+      "the endorsement we added to the portfolio",
+      "an outside review of our recipes",
+      "qualifying more products for sale",
+      "the standards body that came to inspect",
+      "getting approval for the holiday assortment",
+      "a market access investment",
+      "documentation for community retailers",
+      "the expansion of our approved list",
+      "the paperwork behind a new account",
+      "a trust mark for our wrappers",
+      "an annual approval upgrade"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Freight & Cold Chain Logistics",
+   "aliases": [
+    "freight",
+    "cold chain",
+    "shipping and delivery",
+    "outbound logistics",
+    "distribution costs"
+   ],
+   "narrative": [
+    "Freight",
+    "Cold chain",
+    "Outbound logistics"
+   ],
+   "recurring": [
+    {
+     "vendor": "ChillHaul Transport",
+     "base": 24000,
+     "memo": "Refrigerated LTL shipments"
+    },
+    {
+     "vendor": "Pinnacle Parcel Express",
+     "base": 9800,
+     "memo": "Direct-to-consumer parcel shipping"
+    },
+    {
+     "vendor": "DockSide Warehousing",
+     "base": 12500,
+     "memo": "Temperature-controlled storage"
+    }
+   ],
+   "events": [
+    {
+     "key": "summer",
+     "vendor": "ChillHaul Transport",
+     "memos": [
+      "Heatwave expedite lanes — insulated liners",
+      "Heatwave expedite lanes — dry ice packs"
+     ],
+     "cross_memo": "Heatwave expedite lanes — melted claim credit",
+     "plain": [
+      "the heatwave expedite lanes",
+      "the heatwave insulated liners",
+      "the heatwave dry ice packs"
+     ],
+     "oblique": [
+      "extra protection for shipments in the hot stretch",
+      "the August delivery troubles",
+      "guarding product against a record temperature",
+      "faster trucks for fragile cargo",
+      "the costs of keeping goods solid en route",
+      "a customer complaint about soft product",
+      "the upgrade we made for sweltering routes",
+      "the peak summer surcharge on key lanes",
+      "safeguards we added to prevent damage",
+      "the scramble to beat the weather",
+      "rerouting to reach stores sooner",
+      "what we spent so nothing arrived deformed",
+      "special handling for the warmest weeks",
+      "the premium to keep deliveries on time",
+      "additional cooling on every box",
+      "a protective measure after a bad week"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "popup",
+     "vendor": "Metro Pop Logistics",
+     "memos": [
+      "Holiday kiosk restock — mall pop-up runs",
+      "Holiday kiosk restock — courier surge"
+     ],
+     "cross_memo": "Holiday kiosk restock — display crates",
+     "plain": [
+      "the holiday kiosk restock",
+      "the mall pop-up runs",
+      "the kiosk courier surge"
+     ],
+     "oblique": [
+      "feeding our seasonal retail stands",
+      "the December scramble to replenish shelves",
+      "same-day top-ups for temporary stores",
+      "running goods to storefronts that sold through",
+      "a flood of small urgent deliveries",
+      "the demand from shoppers in cold weather",
+      "our short-term retail footprint",
+      "keeping temporary counters full",
+      "the gift season supply chase",
+      "a wave of last-minute refills",
+      "trips made to stay in stock",
+      "the rush that came with crowd traffic",
+      "extra drivers for the busy weeks",
+      "the cost of a temporary sales channel",
+      "the retail experiment we ran late in the year",
+      "a seasonal selling venture"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Brand Marketing & Promotions",
+   "aliases": [
+    "marketing",
+    "brand promotions",
+    "advertising spend",
+    "trade promotions",
+    "promo costs"
+   ],
+   "narrative": [
+    "Marketing",
+    "Brand promotions",
+    "Advertising spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightside Creative Agency",
+     "base": 10500,
+     "memo": "Monthly creative retainer"
+    },
+    {
+     "vendor": "ShelfPush Retail Marketing",
+     "base": 8600,
+     "memo": "In-store display program"
+    },
+    {
+     "vendor": "Sprout Social Media Co",
+     "base": 3200,
+     "memo": "Paid social campaigns"
+    }
+   ],
+   "events": [
+    {
+     "key": "expo",
+     "vendor": "ShelfPush Retail Marketing",
+     "memos": [
+      "Sweets and Snacks Expo booth — build and shipping",
+      "Sweets and Snacks Expo booth — sample inventory"
+     ],
+     "cross_memo": "Sweets and Snacks Expo booth — staff lodging",
+     "plain": [
+      "the Sweets and Snacks Expo booth",
+      "the expo booth build and shipping",
+      "the expo sample inventory"
+     ],
+     "oblique": [
+      "our trade show presence",
+      "the annual industry gathering",
+      "meeting buyers face to face in Chicago",
+      "a showcase for new products",
+      "the conference where we pitched retailers",
+      "the event that generated leads",
+      "the display we trucked across the country",
+      "handing out tastings to prospects",
+      "a big-ticket appearance for the sales team",
+      "the yearly confectionery convention",
+      "what we spent to be seen by distributors",
+      "a booth that drew a crowd",
+      "our annual push to win new shelf space",
+      "the buyer meetings we scheduled",
+      "a high-visibility week for the brand",
+      "the flagship event on our sales calendar"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "influencer",
+     "vendor": "Glow Collective Media",
+     "memos": [
+      "Dark chocolate challenge campaign — creator fees",
+      "Dark chocolate challenge campaign — boosted posts"
+     ],
+     "cross_memo": "Dark chocolate challenge campaign — sample kits",
+     "plain": [
+      "the dark chocolate challenge campaign",
+      "the challenge creator fees",
+      "the challenge boosted posts"
+     ],
+     "oblique": [
+      "a viral push online",
+      "paying personalities to rave about us",
+      "a short-form video burst",
+      "the social buzz we tried to spark",
+      "a campaign aimed at younger shoppers",
+      "the hashtag effort that took off",
+      "the internet celebrities we hired",
+      "a bet on word of mouth",
+      "content that spread across feeds",
+      "what we spent chasing a trend",
+      "the stunt that drove web traffic",
+      "the digital splash for our premium range",
+      "a limited-time awareness drive",
+      "the partnership with online tastemakers",
+      "a spike in screen-based advertising",
+      "the one-off attention grab"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Facility Rent & Occupancy",
+   "aliases": [
+    "rent",
+    "facility lease",
+    "occupancy costs",
+    "plant rent",
+    "lease expense"
+   ],
+   "narrative": [
+    "Rent",
+    "Facility lease",
+    "Occupancy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Industrial Properties",
+     "base": 30000,
+     "memo": "Production plant lease"
+    },
+    {
+     "vendor": "Foxglove Office Park",
+     "base": 4500,
+     "memo": "Front office suite rent"
+    },
+    {
+     "vendor": "TrustLock Storage",
+     "base": 2100,
+     "memo": "Overflow dry storage unit"
+    }
+   ],
+   "events": [
+    {
+     "key": "annex",
+     "vendor": "Granite Industrial Properties",
+     "memos": [
+      "East bay annex buildout — dock leveler install",
+      "East bay annex buildout — floor sealing"
+     ],
+     "cross_memo": "East bay annex buildout — rack anchoring",
+     "plain": [
+      "the east bay annex buildout",
+      "the annex dock leveler install",
+      "the annex floor sealing"
+     ],
+     "oblique": [
+      "the extra space we took on",
+      "growth that outran our footprint",
+      "the added square footage",
+      "preparing a new wing for production",
+      "a landlord project to expand capacity",
+      "the work to open up more floor area",
+      "an addition we agreed to share cost on",
+      "readying the next section of the building",
+      "what it took to move in more machinery",
+      "an expansion tied to a major contract",
+      "the tenant improvements we funded",
+      "room for the second shift",
+      "a construction effort next door",
+      "the improvements needed for a lease amendment",
+      "a larger plant for rising demand",
+      "the buildout that went with our new deal"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "roofrepair",
+     "vendor": "Ironclad Roofing Contractors",
+     "memos": [
+      "Storm damage membrane patch — hail claim deductible",
+      "Storm damage membrane patch — leak survey"
+     ],
+     "cross_memo": "Storm damage membrane patch — ceiling tile replacement",
+     "plain": [
+      "the storm damage membrane patch",
+      "the hail claim deductible",
+      "the membrane leak survey"
+     ],
+     "oblique": [
+      "water getting in after the weather event",
+      "a severe afternoon that left holes overhead",
+      "the insurance gap we had to cover",
+      "fixing the top of the building",
+      "buckets on the production floor",
+      "damage from a violent spring front",
+      "what was left for us to pay after the adjuster",
+      "emergency work on the overhead surface",
+      "a leak that threatened inventory",
+      "the aftermath of a nasty squall",
+      "protecting stock from a drip",
+      "the unbudgeted building repair",
+      "a calamity from the sky",
+      "work done above our heads",
+      "covering what coverage would not",
+      "the cleanup after the sudden downpour"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

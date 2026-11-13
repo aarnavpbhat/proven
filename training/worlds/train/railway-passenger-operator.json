@@ -1,0 +1,810 @@
+{
+ "slug": "railway-passenger-operator",
+ "industry": "railway passenger operator",
+ "entities": [
+  "Ironvale Rail Services",
+  "Meridian Line Transit",
+  "Brightwater Passenger Railway",
+  "Cobalt Ridge Rail Co",
+  "Harborlight Intercity Rail"
+ ],
+ "accounts": [
+  {
+   "name": "Rolling Stock Maintenance",
+   "aliases": [
+    "rolling stock",
+    "fleet maintenance",
+    "fleet costs",
+    "train maintenance",
+    "carriage upkeep"
+   ],
+   "narrative": [
+    "Rolling stock",
+    "Fleet maintenance",
+    "Fleet costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kestrel Railcar Services",
+     "base": 28000,
+     "memo": "Svc Inv - scheduled railcar mnt"
+    },
+    {
+     "vendor": "Dunmore Wheelset Supply",
+     "base": 9500,
+     "memo": "Inv - wheelset and brake pad stock"
+    },
+    {
+     "vendor": "Larkfield Depot Services",
+     "base": 4200,
+     "memo": "Svc Inv - depot cleaning and inspection bay"
+    }
+   ],
+   "events": [
+    {
+     "key": "bogie",
+     "vendor": "Kestrel Railcar Services",
+     "memos": [
+      "Bogie frame overhaul - weld repair Inv",
+      "Bogie frame overhaul - axle box refit"
+     ],
+     "cross_memo": "Bogie frame overhaul - replacement coach lease",
+     "plain": [
+      "the bogie frame overhaul",
+      "the bogie frame weld repair",
+      "the bogie frame axle box refit"
+     ],
+     "oblique": [
+      "getting the undercarriage back to spec",
+      "the running gear rebuild",
+      "fixing the cracked structural parts under the coaches",
+      "work on what the carriages ride on",
+      "the suspension-side rebuild",
+      "a safety-driven rebuild of load-bearing underparts",
+      "the cracked metalwork fix",
+      "what the engineers flagged during inspection",
+      "restoring the chassis units",
+      "the structural fault program",
+      "pulling units off the line for heavy repairs",
+      "the undercarriage fix",
+      "rework on how the vehicles carry their weight",
+      "the mid-life rebuild of running components",
+      "heavy rebuild of failed structural components",
+      "the engineering team's safety rework"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "hvac_retrofit",
+     "vendor": "Coldstream Climate Systems",
+     "memos": [
+      "Cabin climate retrofit - compressor units Inv",
+      "Cabin climate retrofit - ductwork install"
+     ],
+     "cross_memo": "Cabin climate retrofit - temporary fan hire",
+     "plain": [
+      "the cabin climate retrofit",
+      "the cabin climate compressor units",
+      "the cabin climate ductwork install"
+     ],
+     "oblique": [
+      "keeping riders comfortable in summer",
+      "the cooling upgrade",
+      "new air handling inside the coaches",
+      "passenger complaints about heat getting addressed",
+      "the comfort project",
+      "swapping out the old chillers",
+      "the temperature control refresh",
+      "a response to hot-weather service failures",
+      "the interior environment upgrade",
+      "modernizing how carriages stay cool",
+      "work that followed rider surveys",
+      "the cool-air installation program",
+      "replacing worn-out cooling gear",
+      "the summer readiness upgrade",
+      "bringing the older cars up to standard for comfort",
+      "upgrades requested by the customer experience team"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Traction Power and Fuel",
+   "aliases": [
+    "traction power",
+    "fuel",
+    "diesel and electricity",
+    "energy costs",
+    "power and fuel"
+   ],
+   "narrative": [
+    "Traction power",
+    "Energy costs",
+    "Fuel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northgrid Electric Supply",
+     "base": 30000,
+     "memo": "Inv - overhead line electricity usage"
+    },
+    {
+     "vendor": "Petrel Fuel Distributors",
+     "base": 22000,
+     "memo": "Inv - ULSD diesel fill, depot tanks"
+    }
+   ],
+   "events": [
+    {
+     "key": "substation",
+     "vendor": "Northgrid Electric Supply",
+     "memos": [
+      "Substation 14 outage - emergency feeder charge",
+      "Substation 14 outage - peak demand surcharge Inv"
+     ],
+     "cross_memo": "Substation 14 outage - bus replacement service",
+     "plain": [
+      "the substation 14 outage",
+      "the substation 14 emergency feeder charge",
+      "the substation 14 peak demand surcharge"
+     ],
+     "oblique": [
+      "the grid failure last month",
+      "losing our usual power source",
+      "a utility-side breakdown",
+      "backup supply at premium rates",
+      "the blackout on the eastern corridor",
+      "scrambling to keep trains moving without normal supply",
+      "the electrical hiccup",
+      "penalty rates for pulling extra load",
+      "the supply interruption",
+      "paying more because the normal feed went dark",
+      "the unplanned power event",
+      "the rerouted electricity arrangement",
+      "an emergency supply arrangement with the utility",
+      "the line-side power failure",
+      "the loss of a key electrical node",
+      "extra charges after the energy network faltered"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "hedge",
+     "vendor": "Quillon Energy Brokers",
+     "memos": [
+      "Forward hedge settlement - Q3 diesel contract",
+      "Forward hedge settlement - basis adjustment Inv"
+     ],
+     "cross_memo": "Forward hedge settlement - storage tank lease",
+     "plain": [
+      "the forward hedge settlement",
+      "the forward hedge diesel contract",
+      "the forward hedge basis adjustment"
+     ],
+     "oblique": [
+      "locking in prices earlier in the year",
+      "the price protection deal coming due",
+      "our commodity risk arrangement",
+      "the treasury team's cost-fixing trade",
+      "paying out on a bet against rising prices",
+      "the financial contract with the broker",
+      "protection against market swings",
+      "the pricing agreement we signed in spring",
+      "a one-time true-up on our price lock",
+      "the market-exposure cover",
+      "settling the price-certainty instrument",
+      "the contract that capped our unit costs",
+      "a treasury decision from last quarter",
+      "the broker's quarterly settlement",
+      "what finance negotiated to smooth costs",
+      "the arrangement meant to stabilize our rates"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Track Access Charges",
+   "aliases": [
+    "track access",
+    "network charges",
+    "infrastructure fees",
+    "access charges",
+    "line usage fees"
+   ],
+   "narrative": [
+    "Track access",
+    "Network charges",
+    "Infrastructure fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "National Rail Infrastructure Authority",
+     "base": 30000,
+     "memo": "Qtr accrual - network usage charge"
+    },
+    {
+     "vendor": "Stonebridge Terminal Holdings",
+     "base": 12000,
+     "memo": "Inv - station platform access fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "possession",
+     "vendor": "National Rail Infrastructure Authority",
+     "memos": [
+      "Possession overrun - Eastgate viaduct compensation",
+      "Possession overrun - late handback penalty Inv"
+     ],
+     "cross_memo": "Possession overrun - replacement coach hire",
+     "plain": [
+      "the possession overrun",
+      "the possession overrun compensation",
+      "the possession overrun late handback penalty"
+     ],
+     "oblique": [
+      "the engineering works that ran long",
+      "delays to the bridge reopening",
+      "our share of the owner's scheduling failure",
+      "trains being kept off the corridor longer than planned",
+      "the closure that stretched past its window",
+      "the extended shutdown of the viaduct section",
+      "compensation for lost paths",
+      "a penalty for the line coming back late",
+      "when the contractor missed the deadline",
+      "the weekend project that ran into Monday",
+      "the blocked route",
+      "what we owed after the closure extended",
+      "service gaps while crews were still on site",
+      "the overrunning structural job on the river crossing",
+      "reimbursement tied to cancelled departures",
+      "the lengthened closure"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "charter_path",
+     "vendor": "Halden Timetable Services",
+     "memos": [
+      "Special event paths - festival charter slots",
+      "Special event paths - timetable planning Inv"
+     ],
+     "cross_memo": "Special event paths - marshalling yard rental",
+     "plain": [
+      "the special event paths",
+      "the special event festival charter slots",
+      "the special event timetable planning"
+     ],
+     "oblique": [
+      "the extra weekend departures for the music crowd",
+      "added trains for large gatherings",
+      "the one-off high-demand service plan",
+      "slots reserved for crowds heading out of town",
+      "the surge schedule",
+      "extra trains booked for big crowds",
+      "paths we bought for a seasonal spectacle",
+      "the short-notice timetable additions",
+      "our response to a ticketed outing",
+      "the added capacity for fans",
+      "carrying visitors to the weekend attraction",
+      "the booked supplementary services",
+      "a promotional run on busy days",
+      "slots secured for the stadium traffic",
+      "the bolt-on services for mass attendance",
+      "the extra scheduling work for large groups"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Train Crew Wages",
+   "aliases": [
+    "crew wages",
+    "driver pay",
+    "train crew",
+    "onboard staff costs",
+    "crew payroll"
+   ],
+   "narrative": [
+    "Crew wages",
+    "Driver pay",
+    "Train crew"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Payroll Partners",
+     "base": 30000,
+     "memo": "Svc Inv - payroll processing, driver grades"
+    },
+    {
+     "vendor": "Redwater Crew Rostering",
+     "base": 6500,
+     "memo": "Inv - rostering platform licence"
+    },
+    {
+     "vendor": "Elmstead Uniform Supply",
+     "base": 1800,
+     "memo": "Inv - crew uniforms"
+    }
+   ],
+   "events": [
+    {
+     "key": "strike",
+     "vendor": "Summit Payroll Partners",
+     "memos": [
+      "Rest day working - industrial action cover",
+      "Rest day working - premium overtime Inv"
+     ],
+     "cross_memo": "Rest day working - hotel block for relief crews",
+     "plain": [
+      "the rest day working",
+      "the rest day working industrial action cover",
+      "the rest day working premium overtime"
+     ],
+     "oblique": [
+      "the labor dispute",
+      "keeping some trains running during the walkout",
+      "extra hours paid at a higher rate",
+      "coverage while staff stayed away",
+      "the standoff with the union",
+      "the stoppage response",
+      "paying people to fill gaps",
+      "the weekend shifts we had to staff",
+      "the dispute-related extra shifts",
+      "the pay premium for covering absentees",
+      "the negotiation fallout",
+      "staffing the picket-affected days",
+      "double-time pay to maintain service",
+      "the bargaining impasse",
+      "what it cost to keep a skeleton timetable",
+      "the shortfall in available hands"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "training",
+     "vendor": "Pinecrest Simulator Academy",
+     "memos": [
+      "Signalling retraining - cab simulator course",
+      "Signalling retraining - trainer secondment Inv"
+     ],
+     "cross_memo": "Signalling retraining - backfill agency cover",
+     "plain": [
+      "the signalling retraining",
+      "the signalling retraining cab simulator course",
+      "the signalling retraining trainer secondment"
+     ],
+     "oblique": [
+      "getting drivers certified on the new system",
+      "the competence refresh",
+      "classroom and practice time for the workforce",
+      "the safety regulator's requirement",
+      "courses after the new control system arrived",
+      "skills upgrades for the people at the front of the train",
+      "the mandatory refresher program",
+      "pulling staff off duty to learn",
+      "a response to the incident review",
+      "qualification work for the operating grades",
+      "the new-technology readiness effort",
+      "teaching crews the revised procedures",
+      "hands-on practice sessions for the workforce",
+      "compliance learning for frontline employees",
+      "the upskilling push",
+      "preparing for the changeover to updated equipment"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Station Operations",
+   "aliases": [
+    "station ops",
+    "station costs",
+    "stations",
+    "station running costs",
+    "platform operations"
+   ],
+   "narrative": [
+    "Station ops",
+    "Station costs",
+    "Stations"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightline Facility Cleaning",
+     "base": 14000,
+     "memo": "Svc Inv - station cleaning contract"
+    },
+    {
+     "vendor": "Ashgrove Security Group",
+     "base": 16000,
+     "memo": "Inv - station security guarding"
+    },
+    {
+     "vendor": "Marlow Lift and Escalator",
+     "base": 5500,
+     "memo": "Qtr Mnt - lift and escalator servicing"
+    }
+   ],
+   "events": [
+    {
+     "key": "concourse",
+     "vendor": "Brightline Facility Cleaning",
+     "memos": [
+      "Flood remediation - concourse deep clean Inv",
+      "Flood remediation - dehumidifier hire"
+     ],
+     "cross_memo": "Flood remediation - ticket office relocation",
+     "plain": [
+      "the flood remediation",
+      "the flood remediation concourse deep clean",
+      "the flood remediation dehumidifier hire"
+     ],
+     "oblique": [
+      "the burst main in the main hall",
+      "drying out after the water damage",
+      "the storm aftermath at the biggest terminal",
+      "repairs after the building got soaked",
+      "the water incident",
+      "restoring the public space after heavy rain",
+      "the basement overflow cleanup",
+      "what happened after the drains backed up",
+      "returning the building to usable condition",
+      "the waterlogged hall",
+      "the wet-weather emergency",
+      "clean-up after the sodden weekend",
+      "pumping and sanitizing work",
+      "the unplanned wet damage fix",
+      "recovery from the deluge",
+      "getting the hall reopened to riders"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "wayfinding",
+     "vendor": "Kitebrook Signage Works",
+     "memos": [
+      "New wayfinding rollout - platform signs Inv",
+      "New wayfinding rollout - installation labor"
+     ],
+     "cross_memo": "New wayfinding rollout - printing of maps",
+     "plain": [
+      "the new wayfinding rollout",
+      "the new wayfinding platform signs",
+      "the new wayfinding installation labor"
+     ],
+     "oblique": [
+      "replacing the old directional boards",
+      "helping lost travelers find their way",
+      "the accessibility improvement project",
+      "the brand refresh in public areas",
+      "new boards hung through the terminals",
+      "the customer information overhaul",
+      "a rider-feedback driven makeover",
+      "the updated look for passenger guidance",
+      "fresh visuals across the stations",
+      "what the access committee requested",
+      "redoing the displays that point people places",
+      "the regulator-backed clarity upgrade",
+      "modernizing how travelers get oriented",
+      "the visible refresh in public areas",
+      "fixtures installed over several weeks",
+      "the project to reduce confusion on platforms"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Ticketing and Revenue Systems",
+   "aliases": [
+    "ticketing",
+    "fare systems",
+    "revenue systems",
+    "ticket platform",
+    "fare collection"
+   ],
+   "narrative": [
+    "Ticketing",
+    "Fare systems",
+    "Revenue systems"
+   ],
+   "recurring": [
+    {
+     "vendor": "Farepoint Technologies",
+     "base": 24000,
+     "memo": "Mnt Inv - fare gate and validator support"
+    },
+    {
+     "vendor": "Clearwater Payments Gateway",
+     "base": 9000,
+     "memo": "Svc - card processing fees"
+    },
+    {
+     "vendor": "Tallis Mobile Apps",
+     "base": 7500,
+     "memo": "Inv - mobile ticketing app hosting"
+    }
+   ],
+   "events": [
+    {
+     "key": "contactless",
+     "vendor": "Farepoint Technologies",
+     "memos": [
+      "Tap-in pilot - reader hardware Inv",
+      "Tap-in pilot - integration engineering"
+     ],
+     "cross_memo": "Tap-in pilot - station staff briefing",
+     "plain": [
+      "the tap-in pilot",
+      "the tap-in pilot reader hardware",
+      "the tap-in pilot integration engineering"
+     ],
+     "oblique": [
+      "letting riders pay with their bank cards",
+      "the trial of cardless entry",
+      "the experiment at the gateline",
+      "the new way of paying that we are testing",
+      "the payment modernization trial",
+      "a small-scale test on two routes",
+      "the convenience initiative",
+      "what the board approved for pay-as-you-go",
+      "the touch-to-travel concept",
+      "a scheme to cut paper tickets",
+      "the early phase of a wider payments change",
+      "the trial on commuter lines",
+      "new devices fitted at barriers",
+      "a proof-of-concept for simpler fares",
+      "the project meant to speed boarding",
+      "the digital fare experiment"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "fraud",
+     "vendor": "Vantage Forensic Analytics",
+     "memos": [
+      "Fare evasion audit - data review Inv",
+      "Fare evasion audit - inspector deployment"
+     ],
+     "cross_memo": "Fare evasion audit - legal filing fees",
+     "plain": [
+      "the fare evasion audit",
+      "the fare evasion audit data review",
+      "the fare evasion audit inspector deployment"
+     ],
+     "oblique": [
+      "the crackdown on unpaid journeys",
+      "an investigation into lost income",
+      "a revenue protection exercise",
+      "checking where riders were skipping payment",
+      "the leakage study",
+      "an external review of missing receipts",
+      "the board-requested look at shortfalls",
+      "a campaign to catch people who rode free",
+      "our examination of ticket abuse",
+      "the inquiry into why takings fell",
+      "a purge of illicit travel",
+      "outside analysts examining sales gaps",
+      "the enforcement drive",
+      "looking into where money was going missing",
+      "the probe into suspicious patterns",
+      "the effort to recover leaked income"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Signalling and Track Maintenance",
+   "aliases": [
+    "signalling",
+    "track maintenance",
+    "permanent way",
+    "signals and track",
+    "infrastructure upkeep"
+   ],
+   "narrative": [
+    "Signalling",
+    "Track maintenance",
+    "Permanent way"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironwood Permanent Way Ltd",
+     "base": 26000,
+     "memo": "Svc Inv - routine track inspection and tamping"
+    },
+    {
+     "vendor": "Beacon Signal Engineering",
+     "base": 15000,
+     "memo": "Qtr Mnt - signal equipment servicing"
+    }
+   ],
+   "events": [
+    {
+     "key": "landslip",
+     "vendor": "Ironwood Permanent Way Ltd",
+     "memos": [
+      "Embankment slip stabilisation - soil nailing Inv",
+      "Embankment slip stabilisation - emergency crew"
+     ],
+     "cross_memo": "Embankment slip stabilisation - rail replacement coaches",
+     "plain": [
+      "the embankment slip stabilisation",
+      "the embankment slip soil nailing",
+      "the embankment slip emergency crew"
+     ],
+     "oblique": [
+      "the hillside giving way near the cutting",
+      "securing the ground beside the line",
+      "the earth movement after heavy rainfall",
+      "a geological problem on the western route",
+      "shoring up the slope",
+      "the collapse of the bank next to the rails",
+      "emergency ground repairs",
+      "work to stop the land from moving",
+      "the sliding earth incident",
+      "what happened after the storm weakened the cutting",
+      "reinforcing the soil next to the corridor",
+      "the weather-triggered slope failure",
+      "the urgent civil works beside the tracks",
+      "a stability problem in the cutting",
+      "holding the hillside back",
+      "the response to land movement"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "interlocking",
+     "vendor": "Quarry Hill Controls",
+     "memos": [
+      "Interlocking renewal - relay room cutover Inv",
+      "Interlocking renewal - software validation"
+     ],
+     "cross_memo": "Interlocking renewal - night possession lighting",
+     "plain": [
+      "the interlocking renewal",
+      "the interlocking relay room cutover",
+      "the interlocking software validation"
+     ],
+     "oblique": [
+      "replacing the old control logic at the junction",
+      "the modernization of safety logic near the terminus",
+      "moving off life-expired equipment",
+      "the switchover to the newer control cabinet",
+      "the digital replacement of electromechanical gear",
+      "upgrade of the brains behind the points",
+      "the project to retire obsolete controllers",
+      "testing the new safety system before go-live",
+      "installing the successor to 1970s hardware",
+      "the conversion of the junction's control",
+      "the planned changeover over a long weekend",
+      "the engineering team's modernization milestone",
+      "validation work on the junction's new system",
+      "the point-control upgrade",
+      "a replacement scheduled years ago",
+      "the handover from the legacy installation"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Claims",
+   "aliases": [
+    "insurance",
+    "claims",
+    "passenger claims",
+    "insurance and claims costs",
+    "liability cover"
+   ],
+   "narrative": [
+    "Insurance",
+    "Passenger claims",
+    "Liability cover"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harbourgate Underwriters",
+     "base": 18000,
+     "memo": "Qtr - public liability premium instalment"
+    },
+    {
+     "vendor": "Penrose Risk Advisory",
+     "base": 3500,
+     "memo": "Svc Inv - broker retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "levelcrossing",
+     "vendor": "Harbourgate Underwriters",
+     "memos": [
+      "Level crossing incident - excess payment Inv",
+      "Level crossing incident - third party settlement"
+     ],
+     "cross_memo": "Level crossing incident - service cancellation refunds",
+     "plain": [
+      "the level crossing incident",
+      "the level crossing excess payment",
+      "the level crossing third party settlement"
+     ],
+     "oblique": [
+      "the collision with a road vehicle",
+      "what we owe after the accident on the rural road",
+      "the deductible on that serious event",
+      "the payout tied to the vehicle strike",
+      "the settlement with the other party",
+      "the accident investigation outcome",
+      "the mishap involving a truck",
+      "our share of the loss from the crash",
+      "a legal resolution following the crash",
+      "the bill from last season's collision",
+      "cost-sharing with the insurer after the impact",
+      "the claim that closed this month",
+      "what the carrier asked us to cover",
+      "the bump on the barrier-protected road",
+      "the conclusion of the road-rail accident file",
+      "the retained portion of a major loss"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "cyber",
+     "vendor": "Sentinel Breach Response",
+     "memos": [
+      "Data breach response - forensic investigation Inv",
+      "Data breach response - customer notification mailing"
+     ],
+     "cross_memo": "Data breach response - credit monitoring subscriptions",
+     "plain": [
+      "the data breach response",
+      "the data breach forensic investigation",
+      "the data breach customer notification mailing"
+     ],
+     "oblique": [
+      "the hacking incident",
+      "cleanup after outsiders got into our servers",
+      "the security lapse involving rider records",
+      "the intrusion by unknown parties",
+      "what the regulators required after the leak",
+      "outside experts examining the compromised systems",
+      "informing affected travelers",
+      "the cyber event",
+      "the incident that exposed personal details",
+      "the expert team brought in after the attack",
+      "our legal duty to tell customers",
+      "the unauthorized access episode",
+      "the exposure of loyalty program accounts",
+      "the digital security failure",
+      "the emergency specialist engagement",
+      "dealing with stolen information"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,825 @@
+{
+ "slug": "perfume-and-fragrance-house",
+ "industry": "perfume and fragrance house",
+ "entities": [
+  "Maison Valdoré Parfums",
+  "Orchard & Ambergris Fragrance Co.",
+  "Sillage Atelier Group",
+  "Noctiflore Perfumers Ltd.",
+  "Verdant Musk Fragrance House"
+ ],
+ "accounts": [
+  {
+   "name": "Raw Aromatic Materials",
+   "aliases": [
+    "raw materials",
+    "aromatics",
+    "raw aromatic spend",
+    "essence purchases",
+    "raw material costs"
+   ],
+   "narrative": [
+    "Raw materials",
+    "Aromatics",
+    "Essence purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Grasse Absolutes Cooperative",
+     "base": 24000,
+     "memo": "Jasmine and rose absolute standing order — Grasse lab"
+    },
+    {
+     "vendor": "Kerala Spice Distillers",
+     "base": 9500,
+     "memo": "Cardamom and pepper essential oils — monthly lot"
+    },
+    {
+     "vendor": "Synthara Aroma Chemicals",
+     "base": 14000,
+     "memo": "Aroma molecule replenishment — compounding room"
+    }
+   ],
+   "events": [
+    {
+     "key": "oudharvest",
+     "vendor": "Grasse Absolutes Cooperative",
+     "memos": [
+      "Agarwood resin allotment — Assam reserve lot",
+      "Agarwood resin allotment — customs-cleared drums"
+     ],
+     "cross_memo": "Agarwood resin allotment — climate crate surcharge",
+     "plain": [
+      "the agarwood resin allotment",
+      "the agarwood allotment",
+      "the Assam reserve resin lot"
+     ],
+     "oblique": [
+      "a once-a-decade wild-harvest windfall",
+      "the scarce smoky wood we locked in early",
+      "stocking up on a rare dark ingredient before the price spiked",
+      "a speculative buy on a limited natural supply",
+      "the heavy buy for the flagship launch",
+      "an opportunistic bulk purchase from the forest growers",
+      "pre-buying for next year's prestige line",
+      "the premium wood we secured at auction",
+      "a one-time inventory build",
+      "the rare lot our perfumer begged for",
+      "securing supply of a vanishing material",
+      "the expensive stockpile for the winter collection",
+      "something the creative director insisted on",
+      "an unusually large single purchase",
+      "the exclusive harvest we reserved",
+      "a hedge against a poor growing season"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "vanillacrop",
+     "vendor": "Madagascar Pod Brokers",
+     "memos": [
+      "Bourbon vanilla bean shortfall buy — Antananarivo spot market",
+      "Bourbon vanilla bean shortfall buy — expedited curing"
+     ],
+     "cross_memo": "Bourbon vanilla bean shortfall buy — air freight to Lyon",
+     "plain": [
+      "the bourbon vanilla bean shortfall buy",
+      "the vanilla bean shortfall",
+      "the Antananarivo spot market buy"
+     ],
+     "oblique": [
+      "scrambling after the storm wiped out a supplier",
+      "replacing a cancelled contract at emergency prices",
+      "paying up for a sweet ingredient on short notice",
+      "the cyclone-related sourcing scramble",
+      "covering a gap in our gourmand base",
+      "an urgent top-up when our usual grower failed",
+      "buying from the open market instead of our contract",
+      "the rush order that kept the dessert-note line running",
+      "filling a hole left by a bad harvest",
+      "the premium we paid to avoid a stockout",
+      "a supply crisis on the island",
+      "the replacement lot at inflated rates",
+      "a fast reorder after a delivery fell through",
+      "sourcing from a second grower in a hurry",
+      "the costly stopgap for our bestselling scent",
+      "topping up after weather damage to the crop"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Bottles and Packaging Components",
+   "aliases": [
+    "packaging",
+    "glass and packaging",
+    "bottle costs",
+    "packaging components",
+    "flacon spend"
+   ],
+   "narrative": [
+    "Packaging",
+    "Bottle costs",
+    "Flacon spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Verrerie Lumière Glassworks",
+     "base": 28000,
+     "memo": "Flacon glass 50ml and 100ml — Lyon fill line"
+    },
+    {
+     "vendor": "Capsule & Cord Atelier",
+     "base": 7200,
+     "memo": "Caps, ribbons and tassels — assembly floor"
+    },
+    {
+     "vendor": "Écrin Boxmakers",
+     "base": 11500,
+     "memo": "Rigid gift cartons — monthly call-off"
+    }
+   ],
+   "events": [
+    {
+     "key": "crystalcollab",
+     "vendor": "Verrerie Lumière Glassworks",
+     "memos": [
+      "Hand-cut crystal decanter run — Baccarat-style limited edition",
+      "Hand-cut crystal decanter run — mould tooling"
+     ],
+     "cross_memo": "Hand-cut crystal decanter run — velvet presentation chests",
+     "plain": [
+      "the hand-cut crystal decanter run",
+      "the crystal decanter run",
+      "the decanter mould tooling"
+     ],
+     "oblique": [
+      "the numbered collector series",
+      "a luxury vessel for the anniversary scent",
+      "the special-edition holiday gift",
+      "what the boutique buyers requested for the flagship",
+      "a one-off showpiece container",
+      "the artisan-made vessels for the top tier",
+      "our most ornate release this year",
+      "something heavier and more handmade than usual",
+      "the lavish limited pressing",
+      "a small run for high-end clients",
+      "the extravagant presentation for the jubilee",
+      "a prestige collaboration piece",
+      "the costly vessel for the signature extrait",
+      "artisanal work for the VIP list",
+      "a boutique-only treasure",
+      "the showpiece line for the Paris flagship"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "recalllabel",
+     "vendor": "Printwell Label Works",
+     "memos": [
+      "Relabel campaign — allergen declaration reprint",
+      "Relabel campaign — Hamburg warehouse rework"
+     ],
+     "cross_memo": "Relabel campaign — regulatory counsel review",
+     "plain": [
+      "the relabel campaign",
+      "the allergen declaration reprint",
+      "the Hamburg warehouse rework"
+     ],
+     "oblique": [
+      "fixing what the EU inspectors flagged",
+      "correcting the text on stock already shipped",
+      "a compliance fix on finished goods",
+      "the paperwork error we had to undo",
+      "the regulator's demand on ingredient disclosure",
+      "a costly redo of printed material",
+      "stickers we had to replace by hand",
+      "the mistake found in an audit",
+      "the safety wording update",
+      "meeting the new regional rules",
+      "something legal made us redo",
+      "reworking inventory sitting in our distribution centre",
+      "the corrective run on boxes already filled",
+      "a labelling slip that needed urgent repair",
+      "the redo after a failed review",
+      "handling the notice from the authorities"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Compounding Lab Operations",
+   "aliases": [
+    "lab ops",
+    "laboratory costs",
+    "compounding lab",
+    "lab operations spend",
+    "perfumery lab"
+   ],
+   "narrative": [
+    "Lab ops",
+    "Laboratory costs",
+    "Compounding lab"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Scales & Metrology",
+     "base": 3800,
+     "memo": "Balance calibration contract — Grasse lab"
+    },
+    {
+     "vendor": "Solvantis Ethanol Supply",
+     "base": 12500,
+     "memo": "Perfumer's alcohol bulk delivery — maceration tanks"
+    },
+    {
+     "vendor": "CleanRoom Textile Services",
+     "base": 2400,
+     "memo": "Lab coat and glove laundering — compounding floor"
+    }
+   ],
+   "events": [
+    {
+     "key": "gcms",
+     "vendor": "Precision Scales & Metrology",
+     "memos": [
+      "GC-MS instrument replacement — headspace analyser install",
+      "GC-MS instrument replacement — vacuum pump retrofit"
+     ],
+     "cross_memo": "GC-MS instrument replacement — IT data integration",
+     "plain": [
+      "the GC-MS instrument replacement",
+      "the headspace analyser install",
+      "the GC-MS vacuum retrofit"
+     ],
+     "oblique": [
+      "swapping out the machine that reads scent composition",
+      "upgrading our analytical capability",
+      "the aging equipment that finally gave out",
+      "a purchase the quality team pushed for",
+      "the new device for fingerprinting formulas",
+      "retiring the old workhorse in the back room",
+      "the capital item that landed in the wrong bucket",
+      "gear for competitor benchmarking",
+      "what the head chemist requested",
+      "replacement of a failing unit",
+      "a major equipment refresh in the lab",
+      "investment in better detection of impurities",
+      "a machine nobody wanted to pay for",
+      "getting accurate readings again",
+      "something expensive on wheels delivered in crates",
+      "hardware that tells us what's in a sample"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "stabilitychamber",
+     "vendor": "Thermoguard Climate Testing",
+     "memos": [
+      "Accelerated stability trial — humidity chamber hire",
+      "Accelerated stability trial — Reformulation batch R-47"
+     ],
+     "cross_memo": "Accelerated stability trial — sample courier to Osaka",
+     "plain": [
+      "the accelerated stability trial",
+      "the humidity chamber hire",
+      "the reformulation batch R-47 trial"
+     ],
+     "oblique": [
+      "checking how a scent ages in heat",
+      "proving a new formula survives shipping",
+      "outside testing on shelf life",
+      "the experiment that decides if we can launch",
+      "simulating two years in a few weeks",
+      "rented space for long-duration trials",
+      "the pass-or-fail run on the revised blend",
+      "verifying the revised composition holds up",
+      "renting time on someone else's equipment",
+      "a mandatory test before the retailer signs off",
+      "the external screening of a modified recipe",
+      "evidence for the customer's quality team",
+      "the trial that the buyer's lab required",
+      "putting a new batch through the wringer",
+      "a temporary rental while ours was full",
+      "the durability study"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Fragrance Sampling and Testers",
+   "aliases": [
+    "sampling",
+    "testers",
+    "sample vials",
+    "tester program",
+    "sampling spend"
+   ],
+   "narrative": [
+    "Sampling",
+    "Testers",
+    "Tester program"
+   ],
+   "recurring": [
+    {
+     "vendor": "MiniVial Fillers",
+     "base": 8600,
+     "memo": "2ml spray vial filling — DTC sample sets"
+    },
+    {
+     "vendor": "Blotter & Co Papergoods",
+     "base": 2100,
+     "memo": "Scent strips printed — retail counter stock"
+    },
+    {
+     "vendor": "Counterline Display Fulfilment",
+     "base": 5400,
+     "memo": "Tester unit kitting — department store rollout"
+    }
+   ],
+   "events": [
+    {
+     "key": "discoverybox",
+     "vendor": "MiniVial Fillers",
+     "memos": [
+      "Discovery coffret relaunch — twelve-scent assortment",
+      "Discovery coffret relaunch — gift sleeve overprint"
+     ],
+     "cross_memo": "Discovery coffret relaunch — influencer mailing house",
+     "plain": [
+      "the discovery coffret relaunch",
+      "the twelve-scent assortment",
+      "the coffret gift sleeve overprint"
+     ],
+     "oblique": [
+      "a boxed trial kit for newcomers",
+      "the bundle meant to hook new customers",
+      "a reissue of our entry-level offering",
+      "the starter set we brought back",
+      "something the marketing team revived",
+      "a collection of small bottles in one pack",
+      "the beginner's selection",
+      "re-promoting our try-before-you-buy line",
+      "a bigger run than last year's",
+      "the sampler that returned by popular demand",
+      "the promotional assortment for the winter",
+      "the compact version of the whole range",
+      "a gateway product for new fans",
+      "what the e-commerce team asked us to restock",
+      "the mini edition of every signature",
+      "a revived sales driver"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "nordstromtest",
+     "vendor": "Lacquerline Display Studio",
+     "memos": [
+      "Flagship counter fit-out testers — Galeries Lafayette refresh",
+      "Flagship counter fit-out testers — lit acrylic shelves"
+     ],
+     "cross_memo": "Flagship counter fit-out testers — installer travel Paris",
+     "plain": [
+      "the flagship counter fit-out testers",
+      "the Galeries Lafayette refresh",
+      "the lit acrylic shelves"
+     ],
+     "oblique": [
+      "revamping our space in the big department store",
+      "the department store's mandatory remodel",
+      "fresh fixtures where shoppers try the scents",
+      "what the retailer's visual team requested",
+      "refitting our spot on the beauty floor",
+      "new shelving at the premium retail partner",
+      "the counter makeover before the holiday rush",
+      "an overhaul of our in-store presence",
+      "a retailer-driven upgrade",
+      "the glowing display units",
+      "a showcase upgrade in the city centre",
+      "a prestige location's new look",
+      "our contribution to the mall's renovation",
+      "the sales-floor revamp",
+      "fixtures delivered to Paris",
+      "a splashy new home for the testers"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Perfumer and Nose Fees",
+   "aliases": [
+    "perfumer fees",
+    "nose fees",
+    "creative fees",
+    "formula commissions",
+    "perfumer retainers"
+   ],
+   "narrative": [
+    "Perfumer fees",
+    "Nose fees",
+    "Creative fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Atelier Hélène Marchetti",
+     "base": 18000,
+     "memo": "Senior perfumer retainer — house signature line"
+    },
+    {
+     "vendor": "Jules Okonkwo Creative",
+     "base": 9000,
+     "memo": "Freelance nose retainer — niche collection"
+    }
+   ],
+   "events": [
+    {
+     "key": "celebrityscent",
+     "vendor": "Atelier Hélène Marchetti",
+     "memos": [
+      "Bespoke signature scent commission — Duchess client",
+      "Bespoke signature scent commission — private fitting sessions"
+     ],
+     "cross_memo": "Bespoke signature scent commission — client dinner Monaco",
+     "plain": [
+      "the bespoke signature scent commission",
+      "the Duchess client commission",
+      "the private fitting sessions"
+     ],
+     "oblique": [
+      "a custom blend made for one wealthy person",
+      "a one-of-a-kind creation for a royal",
+      "work that required many consultations",
+      "the discreet project nobody outside discusses",
+      "an exclusive formula never to be sold",
+      "a personalised fragrance for a high-profile patron",
+      "the long-lead private job",
+      "a custom order that took months",
+      "an individual's personal perfume",
+      "the aristocrat's request",
+      "a confidential assignment",
+      "the ultimate bespoke job",
+      "a labour-intensive piece for a VIP",
+      "creation of a private blend",
+      "what the concierge team pitched",
+      "the royal-grade project"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "collabnose",
+     "vendor": "Studio Amara Olfactif",
+     "memos": [
+      "Guest perfumer collaboration — capsule concept development",
+      "Guest perfumer collaboration — accord workshop in Kyoto"
+     ],
+     "cross_memo": "Guest perfumer collaboration — travel and lodging Kyoto",
+     "plain": [
+      "the guest perfumer collaboration",
+      "the capsule concept development",
+      "the accord workshop in Kyoto"
+     ],
+     "oblique": [
+      "bringing in an outside creator for a limited release",
+      "an external talent's fee for the joint line",
+      "working with an artist from abroad",
+      "the partnership that expanded our creative reach",
+      "time spent with an outsider on new ideas",
+      "the collaboration announced to the press",
+      "a visiting expert on a short project",
+      "what we pay for fresh perspectives",
+      "a new face on a seasonal range",
+      "the team-up with a celebrated name",
+      "the outside designer's invoice",
+      "our international co-creation",
+      "paying for a trip to learn from a master",
+      "a pilot for a future partnership",
+      "an experiment in co-branding",
+      "the cross-border project"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Regulatory and Safety Compliance",
+   "aliases": [
+    "compliance",
+    "regulatory costs",
+    "safety assessments",
+    "ifra compliance",
+    "compliance spend"
+   ],
+   "narrative": [
+    "Compliance",
+    "Regulatory costs",
+    "Safety assessments"
+   ],
+   "recurring": [
+    {
+     "vendor": "Dermasafe Toxicology Labs",
+     "base": 6800,
+     "memo": "Safety assessment dossiers — new formulations"
+    },
+    {
+     "vendor": "EuroCosmetic Notifications",
+     "base": 2900,
+     "memo": "CPNP portal filings — monthly batch"
+    },
+    {
+     "vendor": "Allergen Index Consulting",
+     "base": 3500,
+     "memo": "Allergen threshold review — IFRA amendments"
+    }
+   ],
+   "events": [
+    {
+     "key": "fdafacility",
+     "vendor": "Dermasafe Toxicology Labs",
+     "memos": [
+      "US facility registration audit — mock inspection prep",
+      "US facility registration audit — documentation gap remediation"
+     ],
+     "cross_memo": "US facility registration audit — regulatory affairs retainer",
+     "plain": [
+      "the US facility registration audit",
+      "the mock inspection prep",
+      "the documentation gap remediation"
+     ],
+     "oblique": [
+      "getting ready for American oversight",
+      "the review before the official visit",
+      "clearing the path to sell in the States",
+      "what the retailer demanded before listing",
+      "readiness for the foreign authority",
+      "tidying our records for outside examiners",
+      "the effort to enter a new market",
+      "paperwork fixes ahead of the visit",
+      "preparing for the surprise walkthrough",
+      "a pre-launch hurdle",
+      "proving we meet transatlantic rules",
+      "legal housekeeping across the ocean",
+      "the big push to satisfy a distant regulator",
+      "an overhaul of our files",
+      "a market-entry prerequisite",
+      "the cost of crossing the Atlantic"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "microbial",
+     "vendor": "Bacterium Analytica",
+     "memos": [
+      "Preservative challenge retest — contaminated lot investigation",
+      "Preservative challenge retest — batch hold at Lyon"
+     ],
+     "cross_memo": "Preservative challenge retest — product disposal fees",
+     "plain": [
+      "the preservative challenge retest",
+      "the contaminated lot investigation",
+      "the batch hold at Lyon"
+     ],
+     "oblique": [
+      "a quality scare in the production run",
+      "investigating something that went wrong on the floor",
+      "what we did after an alarm from the lab",
+      "the investigation that stopped shipments",
+      "finding the root of a microbe problem",
+      "a scare that cost us stock",
+      "verifying a questionable group of units",
+      "re-checking product that failed a screen",
+      "handling a bad result",
+      "an incident the quality director escalated",
+      "digging into a worrying finding",
+      "a precaution that froze inventory",
+      "the outside experts brought in after a failure",
+      "tests we hadn't budgeted",
+      "an unplanned examination of a whole production",
+      "the response to a failed screen"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Cold Storage and Logistics",
+   "aliases": [
+    "logistics",
+    "cold storage",
+    "freight and storage",
+    "warehousing",
+    "distribution costs"
+   ],
+   "narrative": [
+    "Logistics",
+    "Cold storage",
+    "Warehousing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Rhône Valley Bonded Storage",
+     "base": 16000,
+     "memo": "Temperature-controlled bonded warehouse — Lyon"
+    },
+    {
+     "vendor": "Meridian Hazmat Freight",
+     "base": 13500,
+     "memo": "Flammable goods road freight — EU lanes"
+    },
+    {
+     "vendor": "Pallet Harbour Fulfilment",
+     "base": 7800,
+     "memo": "Pick and pack — e-commerce orders"
+    }
+   ],
+   "events": [
+    {
+     "key": "portstrike",
+     "vendor": "Meridian Hazmat Freight",
+     "memos": [
+      "Le Havre dock stoppage reroute — container diversion Rotterdam",
+      "Le Havre dock stoppage reroute — demurrage charges"
+     ],
+     "cross_memo": "Le Havre dock stoppage reroute — emergency trucking",
+     "plain": [
+      "the Le Havre dock stoppage reroute",
+      "the container diversion to Rotterdam",
+      "the demurrage charges"
+     ],
+     "oblique": [
+      "the labour action that closed the harbour",
+      "getting shipments around a walkout",
+      "what we paid when the gates shut",
+      "the delay that stranded our stock",
+      "sailing to another port instead",
+      "a surprise disruption in the supply chain",
+      "fees piling up on boxes waiting to move",
+      "the picket line's effect on deliveries",
+      "a changed route at the last minute",
+      "penalties for cargo stuck on the quay",
+      "the cost of a strike we couldn't foresee",
+      "the workaround for blocked access",
+      "extra days our goods spent in limbo",
+      "paying more to get product to customers",
+      "the shipping chaos in the north",
+      "the stoppage affecting imports"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "summerreefer",
+     "vendor": "Glacier Transit Solutions",
+     "memos": [
+      "Heatwave climate-controlled fleet surge — July peak lanes",
+      "Heatwave climate-controlled fleet surge — insulated trailer hire"
+     ],
+     "cross_memo": "Heatwave climate-controlled fleet surge — spoilage write-off",
+     "plain": [
+      "the heatwave climate-controlled fleet surge",
+      "the July peak lanes",
+      "the insulated trailer hire"
+     ],
+     "oblique": [
+      "keeping scents from cooking in transit",
+      "protecting stock from record temperatures",
+      "the extra cool vehicles we needed",
+      "an unusual spike in demand for chilled hauling",
+      "what we did to prevent damaged goods",
+      "our answer to the scorching weather",
+      "precautions for sensitive shipments",
+      "last-minute rentals when the mercury soared",
+      "the seasonal squeeze on specialist carriers",
+      "safeguarding product on long routes",
+      "a rented fleet for a short window",
+      "the premium for shaded transport",
+      "the response to a forecast",
+      "ensuring formulas stayed stable on the road",
+      "emergency capacity for the hottest weeks",
+      "the heat-related hauling premium"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Brand Advertising and Launch Events",
+   "aliases": [
+    "advertising",
+    "launch events",
+    "brand marketing",
+    "campaign spend",
+    "media and launches"
+   ],
+   "narrative": [
+    "Advertising",
+    "Launch events",
+    "Campaign spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lumen Social Agency",
+     "base": 15000,
+     "memo": "Paid social campaign management — always-on"
+    },
+    {
+     "vendor": "Vogue Allure Media Partners",
+     "base": 22000,
+     "memo": "Print and digital placements — editorial calendar"
+    },
+    {
+     "vendor": "Petal & Press PR",
+     "base": 8500,
+     "memo": "Press relations retainer — beauty editors"
+    }
+   ],
+   "events": [
+    {
+     "key": "galaparfum",
+     "vendor": "Petal & Press PR",
+     "memos": [
+      "Private gala evening launch — Palais Garnier salon",
+      "Private gala evening launch — orchestral quartet and florals"
+     ],
+     "cross_memo": "Private gala evening launch — guest hospitality and travel",
+     "plain": [
+      "the private gala evening launch",
+      "the Palais Garnier salon",
+      "the orchestral quartet and florals"
+     ],
+     "oblique": [
+      "the lavish party to unveil the new scent",
+      "an invitation-only night for the press and buyers",
+      "a big-ticket evening showcasing our latest release",
+      "what the CEO wanted for the debut",
+      "an elegant soirée with live music",
+      "a glamorous reveal for tastemakers",
+      "our opulent unveiling",
+      "entertaining top clients in a historic venue",
+      "a night to remember for influencers",
+      "hosting the cream of the industry",
+      "a champagne-soaked debut",
+      "the extravagant reveal",
+      "a sophisticated reception",
+      "an exclusive event for VIP guests",
+      "the premiere that required a grand space",
+      "a celebratory showcase"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "billboardtakeover",
+     "vendor": "Metroscape Outdoor Media",
+     "memos": [
+      "Times Square digital billboard takeover — holiday campaign",
+      "Times Square digital billboard takeover — creative resizing"
+     ],
+     "cross_memo": "Times Square digital billboard takeover — production studio fees",
+     "plain": [
+      "the Times Square digital billboard takeover",
+      "the holiday billboard campaign",
+      "the billboard creative resizing"
+     ],
+     "oblique": [
+      "a giant screen presence in Manhattan",
+      "the splashy outdoor push before gifting season",
+      "a high-visibility placement in the big city",
+      "what the brand director was determined to buy",
+      "a flashy display aimed at American shoppers",
+      "our bold bid for attention",
+      "the huge public ad we ran",
+      "a showy flight of awareness",
+      "looming overhead for the crowds",
+      "the premium spot for the winter push",
+      "a moment of mass exposure",
+      "the costly burst of exposure",
+      "something visible from blocks away",
+      "a stunt meant to get people talking",
+      "our most conspicuous buy",
+      "the big-city spectacle"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

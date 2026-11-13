@@ -1,0 +1,805 @@
+{
+ "slug": "opera-and-symphony-company",
+ "industry": "opera and symphony company",
+ "entities": [
+  "Meridian Lyric Opera and Symphony",
+  "Harborlight Philharmonic and Opera Guild",
+  "Cedar Ridge Symphony and Lyric Theatre",
+  "Northgate Opera and Orchestra Society",
+  "Silverbrook Symphony and Opera Association"
+ ],
+ "accounts": [
+  {
+   "name": "Guest Artist Fees",
+   "aliases": [
+    "guest artists",
+    "soloist fees",
+    "guest artist costs",
+    "visiting performer fees",
+    "principal engagements"
+   ],
+   "narrative": [
+    "Guest artists",
+    "Soloist fees",
+    "Guest artist costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Allegra Artists Management",
+     "base": 24000,
+     "memo": "Agency fees for contracted soloists"
+    },
+    {
+     "vendor": "Corvino Talent Partners",
+     "base": 15500,
+     "memo": "Principal singer engagement installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "tenor_replacement",
+     "vendor": "Allegra Artists Management",
+     "memos": [
+      "Emergency tenor substitution — premiere run",
+      "Emergency tenor substitution — premium buyout"
+     ],
+     "cross_memo": "Emergency tenor substitution — airfare and hotel",
+     "plain": [
+      "the emergency tenor substitution",
+      "the tenor substitution premium",
+      "the emergency substitution for the premiere"
+     ],
+     "oblique": [
+      "a last-minute cast change for the lead male role",
+      "replacing the headliner who fell ill",
+      "the stand-in we had to hire on short notice",
+      "the lead's withdrawal",
+      "a rushed casting fix",
+      "paying more to secure a replacement star",
+      "covering for the singer who cancelled days before opening",
+      "an urgent swap in the top role",
+      "the sudden vacancy in the cast",
+      "a late-breaking illness in the principal cast",
+      "finding someone to take over the title part",
+      "booking a new headliner under deadline pressure",
+      "the understudy scramble",
+      "our scramble to fill the leading part",
+      "the performer who pulled out",
+      "the unplanned recasting of the male lead"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "conductor_debut",
+     "vendor": "Bellweather Podium Associates",
+     "memos": [
+      "Maestro Voss guest conducting — gala weekend",
+      "Maestro Voss guest conducting — rehearsal supplement"
+     ],
+     "cross_memo": "Maestro Voss guest conducting — program printing",
+     "plain": [
+      "the Maestro Voss guest conducting",
+      "the Voss gala weekend",
+      "the Maestro Voss rehearsal supplement"
+     ],
+     "oblique": [
+      "a celebrated baton-wielder visiting for our biggest weekend",
+      "the high-profile visitor leading the orchestra",
+      "bringing in a famous name for the fundraiser",
+      "the headline appearance on the podium",
+      "extra practice sessions for the visiting leader",
+      "a star from overseas directing our players",
+      "the marquee booking for the benefit event",
+      "a big-name director for the special evening",
+      "the visiting leader's extended preparation",
+      "paying for a household name to lead the ensemble",
+      "our splashy appearance by an international figure",
+      "the premium for a top-tier director",
+      "a guest with a long list of demands",
+      "the draw we booked to sell tickets",
+      "an expensive celebrity booking",
+      "the one-time engagement of a renowned director"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Orchestra Musician Payroll",
+   "aliases": [
+    "musician payroll",
+    "orchestra payroll",
+    "player wages",
+    "orchestra wages",
+    "musician pay"
+   ],
+   "narrative": [
+    "Musician payroll",
+    "Orchestra payroll",
+    "Player wages"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinnacle Payroll Services",
+     "base": 29000,
+     "memo": "Core orchestra salaries processing"
+    },
+    {
+     "vendor": "Local 47 Musicians Benefit Trust",
+     "base": 12500,
+     "memo": "Pension and health contributions"
+    },
+    {
+     "vendor": "Sterling Extra Musician Pool",
+     "base": 9000,
+     "memo": "Per-service extra players"
+    }
+   ],
+   "events": [
+    {
+     "key": "overtime_mahler",
+     "vendor": "Sterling Extra Musician Pool",
+     "memos": [
+      "Resurrection symphony — expanded brass section",
+      "Resurrection symphony — offstage band overage"
+     ],
+     "cross_memo": "Resurrection symphony — chorus risers rental",
+     "plain": [
+      "the Resurrection symphony expanded brass",
+      "the Resurrection symphony offstage band",
+      "the Resurrection symphony overage"
+     ],
+     "oblique": [
+      "a mammoth late-romantic work needing a huge ensemble",
+      "hiring dozens of added players for one concert",
+      "the oversized forces demanded by the score",
+      "a piece that required far more bodies on stage",
+      "the unusually large lineup for the season finale",
+      "additional hands for the grandest program",
+      "staffing a work written for a giant platform",
+      "the headcount bulge for that monumental piece",
+      "extra chairs we had to fill",
+      "the extended roster for the closing program",
+      "bringing in dozens of freelancers",
+      "the scale of the personnel for one weekend",
+      "a program that outgrew our regular roster",
+      "paying outsiders to flesh out the sections",
+      "the swollen personnel list for the big finale",
+      "a score that called for a cast of hundreds"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "strike_settlement",
+     "vendor": "Harlan Labor Counsel LLP",
+     "memos": [
+      "Contract arbitration — retroactive scale adjustment",
+      "Contract arbitration — mediator award payout"
+     ],
+     "cross_memo": "Contract arbitration — legal filing fees",
+     "plain": [
+      "the contract arbitration retroactive adjustment",
+      "the contract arbitration mediator award",
+      "the contract arbitration payout"
+     ],
+     "oblique": [
+      "the ruling that bumped everyone's pay backward in time",
+      "a neutral third party deciding the dispute",
+      "settling the standoff with the players",
+      "back pay owed after the negotiation stalled",
+      "the outcome of the labor disagreement",
+      "a lump sum to close out last season's wage fight",
+      "the decision that reset what we owe the ensemble",
+      "money owed for months already worked",
+      "the resolution of the bargaining impasse",
+      "a catch-up check for the whole roster",
+      "the referee's decision on compensation",
+      "resolving the dispute over scale",
+      "the adjustment dating back to the prior fiscal year",
+      "retroactive money the panel ordered",
+      "the final settlement of the pay dispute",
+      "a one-time true-up ordered after the hearing"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Production Costumes and Wigs",
+   "aliases": [
+    "costumes",
+    "wardrobe",
+    "costume shop",
+    "costumes and wigs",
+    "wardrobe spend"
+   ],
+   "narrative": [
+    "Costumes",
+    "Wardrobe",
+    "Costume shop"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bergamot Textile Supply",
+     "base": 4200,
+     "memo": "Fabric and trim for wardrobe stock"
+    },
+    {
+     "vendor": "Marchetti Wig Studio",
+     "base": 3100,
+     "memo": "Wig maintenance and styling"
+    }
+   ],
+   "events": [
+    {
+     "key": "fire_retardant",
+     "vendor": "Bergamot Textile Supply",
+     "memos": [
+      "Flameproofing treatment — velvet drapery yardage",
+      "Flameproofing treatment — reapplication batch"
+     ],
+     "cross_memo": "Flameproofing treatment — inspector certification",
+     "plain": [
+      "the flameproofing treatment of velvet",
+      "the flameproofing reapplication batch",
+      "the velvet drapery flameproofing"
+     ],
+     "oblique": [
+      "making the heavy cloth pass the fire marshal",
+      "safety coating on the stage fabric",
+      "the compliance work on the heavy curtains",
+      "chemical treatment demanded after the walkthrough",
+      "getting materials approved for the venue",
+      "the code upgrade for the fabric stock",
+      "protecting the heavy material from ignition",
+      "the mandated safety finish",
+      "bringing our textiles up to fire code",
+      "a rule change that forced us to retreat the goods",
+      "the officials' requirement for the stage cloth",
+      "the cost of passing the safety review",
+      "a treatment the venue insisted on",
+      "sprayed protection for the big drapes",
+      "the redo after the first coating failed",
+      "an inspector's demand for the heavy goods"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "bridal_gowns",
+     "vendor": "Delacroix Couture Atelier",
+     "memos": [
+      "Coronation scene gowns — beaded bodice commission",
+      "Coronation scene gowns — hand embroidery"
+     ],
+     "cross_memo": "Coronation scene gowns — dressing room steamers",
+     "plain": [
+      "the coronation scene gowns",
+      "the coronation beaded bodice commission",
+      "the coronation gown embroidery"
+     ],
+     "oblique": [
+      "the lavish outfits for the royal ceremony",
+      "custom-made finery for the court sequence",
+      "an outside house sewing for the leading ladies",
+      "ornate dresses we could not build in-house",
+      "hand-finished garments for the climax of act two",
+      "the elaborate formal wear for the crowd scene",
+      "a high-end maker producing our showpiece attire",
+      "the commissioned regal clothing",
+      "costly dresses for the big procession",
+      "jeweled bodices sewn by specialists",
+      "an outsourced order for the grandest dresses",
+      "the sumptuous clothing for the sovereign's big moment",
+      "pricey handwork on the principal women's outfits",
+      "the showpiece dresses from an outside atelier",
+      "gorgeous tailoring contracted outside",
+      "the splurge on the ceremonial frocks"
+     ],
+     "low": 22000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Set Construction and Scenic Art",
+   "aliases": [
+    "scenery",
+    "sets",
+    "set construction",
+    "scenic shop",
+    "scenic builds"
+   ],
+   "narrative": [
+    "Scenery",
+    "Set construction",
+    "Scenic builds"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironwood Scenic Fabrication",
+     "base": 11000,
+     "memo": "Scenic carpentry and steel work"
+    },
+    {
+     "vendor": "Pallas Paint and Coatings",
+     "base": 2800,
+     "memo": "Scenic paint and supplies"
+    },
+    {
+     "vendor": "Redline Freight Lines",
+     "base": 3500,
+     "memo": "Set piece hauling"
+    }
+   ],
+   "events": [
+    {
+     "key": "revolving_stage",
+     "vendor": "Ironwood Scenic Fabrication",
+     "memos": [
+      "Turntable platform rebuild — motor housing",
+      "Turntable platform rebuild — bearing ring fabrication"
+     ],
+     "cross_memo": "Turntable platform rebuild — electrician overtime",
+     "plain": [
+      "the turntable platform rebuild",
+      "the turntable motor housing",
+      "the turntable bearing ring fabrication"
+     ],
+     "oblique": [
+      "making the spinning floor work again",
+      "repairing the rotating part of the stage",
+      "the mechanism that carries scenery in a circle",
+      "fixing what seized up during tech week",
+      "a machinery failure on the main floor",
+      "rebuilding the moving deck",
+      "getting the revolving piece safe for performers",
+      "the mechanical overhaul before opening",
+      "work on the part that swings scenery around",
+      "restoring the motion-driven floor",
+      "the big engineered repair backstage",
+      "the apparatus that stopped mid-rehearsal",
+      "the circular deck that wouldn't turn",
+      "parts and welding for the rotating set",
+      "the emergency fix to the moving stage",
+      "a failed drive on the main platform"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "forest_projection",
+     "vendor": "Lumen Atelier Digital",
+     "memos": [
+      "Enchanted woodland backdrops — projection mapping",
+      "Enchanted woodland backdrops — animated loops"
+     ],
+     "cross_memo": "Enchanted woodland backdrops — projector lamps",
+     "plain": [
+      "the enchanted woodland backdrops",
+      "the woodland projection mapping",
+      "the woodland animated loops"
+     ],
+     "oblique": [
+      "moving images replacing painted flats",
+      "the digital scenery for the fairy-tale production",
+      "light-based visuals instead of built trees",
+      "a modern approach to the outdoor setting",
+      "animated imagery projected behind singers",
+      "the screen-based scenery we tried this year",
+      "virtual landscapes for the magical scenes",
+      "visuals that stood in for physical scenery",
+      "the high-tech alternative to carpentry",
+      "pixels where timber used to be",
+      "computer-generated environment for act three",
+      "the video artist's contribution",
+      "the technology-forward look for the fantasy piece",
+      "an outside studio's animated scenery",
+      "imagery that changes with the music",
+      "our first experiment with digital settings"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Hall and Theater Rental",
+   "aliases": [
+    "venue rental",
+    "hall rental",
+    "theater rental",
+    "rental of venues",
+    "performance space costs"
+   ],
+   "narrative": [
+    "Venue rental",
+    "Hall rental",
+    "Theater rental"
+   ],
+   "recurring": [
+    {
+     "vendor": "Grand Civic Auditorium Authority",
+     "base": 26000,
+     "memo": "Main stage performance dates"
+    },
+    {
+     "vendor": "St. Anselm Cathedral Trust",
+     "base": 3000,
+     "memo": "Chamber series space"
+    }
+   ],
+   "events": [
+    {
+     "key": "outdoor_festival",
+     "vendor": "Grand Civic Auditorium Authority",
+     "memos": [
+      "Riverfront amphitheater extension — added matinee dates",
+      "Riverfront amphitheater extension — overtime stagehands"
+     ],
+     "cross_memo": "Riverfront amphitheater extension — portable restrooms",
+     "plain": [
+      "the riverfront amphitheater extension",
+      "the riverfront added matinee dates",
+      "the riverfront amphitheater stagehands"
+     ],
+     "oblique": [
+      "a run we lengthened after tickets sold out",
+      "extra afternoon shows by the water",
+      "adding performances because demand surged",
+      "a summer outdoor stretch that kept growing",
+      "more days booked than we first planned",
+      "the open-air series we extended",
+      "additional dates for the popular outdoor event",
+      "a hit that earned bonus performances",
+      "the crowds that justified a longer run",
+      "stretching the engagement past the original schedule",
+      "strong sales leading to added shows",
+      "the open-air expansion",
+      "the weekend bonus performances",
+      "the unplanned run of afternoon concerts",
+      "a crowd-pleaser that got held over",
+      "more calendar days for the outdoor program"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "acoustic_shell",
+     "vendor": "Whitcombe Acoustic Rentals",
+     "memos": [
+      "Portable concert shell — six week lease",
+      "Portable concert shell — crane installation"
+     ],
+     "cross_memo": "Portable concert shell — floor protection",
+     "plain": [
+      "the portable concert shell lease",
+      "the portable concert shell installation",
+      "the portable shell six week lease"
+     ],
+     "oblique": [
+      "the sound-reflecting enclosure for the borrowed space",
+      "temporary walls that project music outward",
+      "gear that let us play in an unsuited room",
+      "the equipment that made a gymnasium sound like a hall",
+      "improving how the ensemble sounded away from home",
+      "a rented structure behind the players",
+      "the surround that fixed the poor sound",
+      "hauling in an enormous reflective structure",
+      "the acoustic fix while our home was closed",
+      "a short-term setup for the displaced season",
+      "lumber and panels craned into place",
+      "gear that shaped the sound in an awkward venue",
+      "the temporary curved backdrop",
+      "the big rented apparatus for the guest venue",
+      "what we hired so audiences could hear properly",
+      "the resonance solution for the interim location"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Ticketing",
+   "aliases": [
+    "marketing",
+    "advertising",
+    "ticketing costs",
+    "promotion",
+    "audience development"
+   ],
+   "narrative": [
+    "Marketing",
+    "Advertising",
+    "Promotion"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightnote Creative Agency",
+     "base": 8500,
+     "memo": "Retainer for campaign design"
+    },
+    {
+     "vendor": "TicketHarbor Systems",
+     "base": 5200,
+     "memo": "Box office platform fees"
+    },
+    {
+     "vendor": "Metro Transit Media",
+     "base": 4000,
+     "memo": "Bus shelter advertising"
+    }
+   ],
+   "events": [
+    {
+     "key": "season_brochure",
+     "vendor": "Brightnote Creative Agency",
+     "memos": [
+      "Anniversary season brochure — photo shoot",
+      "Anniversary season brochure — commissioned illustrations"
+     ],
+     "cross_memo": "Anniversary season brochure — mail house postage",
+     "plain": [
+      "the anniversary season brochure",
+      "the anniversary brochure photo shoot",
+      "the anniversary brochure illustrations"
+     ],
+     "oblique": [
+      "the glossy printed piece celebrating a milestone year",
+      "a keepsake mailer to subscribers",
+      "the special publication for the big birthday",
+      "shooting portraits of the whole ensemble",
+      "original artwork for the mailing",
+      "the collectible piece sent to patrons",
+      "a commemorative mailer",
+      "the lavish catalog for the jubilee",
+      "pictures and drawings for the signature mailing",
+      "our oversized announcement booklet",
+      "the fancier-than-usual season guide",
+      "an upgraded print piece for donors",
+      "creative work for the milestone year's launch",
+      "the premium piece sent to the mailing list",
+      "the visual refresh of how we announce programs",
+      "the showcase piece for the landmark year"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "viral_campaign",
+     "vendor": "Pulsepoint Social Studio",
+     "memos": [
+      "Backstage reel series — influencer partnerships",
+      "Backstage reel series — paid boosts"
+     ],
+     "cross_memo": "Backstage reel series — equipment rental",
+     "plain": [
+      "the backstage reel series",
+      "the backstage reel influencer partnerships",
+      "the backstage reel paid boosts"
+     ],
+     "oblique": [
+      "short videos aimed at younger audiences",
+      "paying personalities with big followings",
+      "an online push to reach people who never attend",
+      "clips showing behind-the-curtain life",
+      "our attempt to go viral",
+      "the outreach effort on phones",
+      "sponsored posts to widen the audience",
+      "a creator-focused digital initiative",
+      "money spent promoting content on apps",
+      "the new-audience experiment online",
+      "courting social media celebrities",
+      "video snippets for the feed",
+      "our first serious online outreach",
+      "the clip series that drew new faces",
+      "funding an internet campaign to fill seats",
+      "the social push we tested this season"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Instrument Maintenance and Piano Services",
+   "aliases": [
+    "instrument upkeep",
+    "piano services",
+    "instrument repairs",
+    "instrument maintenance",
+    "tuning and repair"
+   ],
+   "narrative": [
+    "Instrument upkeep",
+    "Piano services",
+    "Instrument repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Concordia Piano Technicians",
+     "base": 2600,
+     "memo": "Concert grand tuning and regulation"
+    },
+    {
+     "vendor": "Hartwell Strings and Bows",
+     "base": 1800,
+     "memo": "String replacement and bow rehair"
+    }
+   ],
+   "events": [
+    {
+     "key": "harp_restoration",
+     "vendor": "Hartwell Strings and Bows",
+     "memos": [
+      "Concert harp restoration — soundboard replacement",
+      "Concert harp restoration — gilding and refinish"
+     ],
+     "cross_memo": "Concert harp restoration — insured crating",
+     "plain": [
+      "the concert harp restoration",
+      "the concert harp soundboard replacement",
+      "the concert harp gilding and refinish"
+     ],
+     "oblique": [
+      "bringing the aging plucked instrument back to life",
+      "a major workshop job on a treasured antique",
+      "the largest repair in our inventory",
+      "renewing an old instrument's body and finish",
+      "work that kept a century-old piece playable",
+      "the expensive fix for our prized item",
+      "a specialist rebuilding the oldest string instrument we own",
+      "overhauling the pedal-driven instrument",
+      "its cracked wooden panel and tarnished decoration",
+      "the rescue of a vintage item from the shop",
+      "a full rebuild of the instrument by the stage left",
+      "the long workshop stay for the principal's instrument",
+      "the restoration our player begged for",
+      "reviving something decades past its prime",
+      "bringing a damaged heirloom up to concert standard",
+      "the overdue renewal of the old instrument"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "timpani_heads",
+     "vendor": "Kessler Percussion Works",
+     "memos": [
+      "Kettledrum set replacement — calfskin heads",
+      "Kettledrum set replacement — pedal mechanism rebuild"
+     ],
+     "cross_memo": "Kettledrum set replacement — road case",
+     "plain": [
+      "the kettledrum set replacement",
+      "the kettledrum calfskin heads",
+      "the kettledrum pedal mechanism rebuild"
+     ],
+     "oblique": [
+      "new skins and hardware for the big drums",
+      "the percussion section's overhaul",
+      "replacing the low-pitched instruments the section relies on",
+      "a refit of the instruments the tympanist uses",
+      "outfitting the rear of the stage with fresh gear",
+      "the drummer's long-awaited upgrade",
+      "parts that finally wore out after decades",
+      "new tuning hardware for the booming instruments",
+      "the specialty maker's work on our rhythm section",
+      "the swap of the oldest large instruments",
+      "a significant purchase for the back row",
+      "revamping the ensemble's thundering equipment",
+      "fresh coverings plus mechanical rebuilds",
+      "the section's equipment renewal",
+      "pitch-changing gear that kept slipping",
+      "the percussion renovation"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Choral and Chorus Operations",
+   "aliases": [
+    "chorus costs",
+    "choral operations",
+    "chorus expenses",
+    "choir costs",
+    "chorus program"
+   ],
+   "narrative": [
+    "Chorus costs",
+    "Choral operations",
+    "Chorus expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Evensong Vocal Coaching",
+     "base": 3400,
+     "memo": "Language and diction coaching"
+    },
+    {
+     "vendor": "Capitol Rehearsal Rooms",
+     "base": 2200,
+     "memo": "Weekly rehearsal space"
+    }
+   ],
+   "events": [
+    {
+     "key": "children_chorus_tour",
+     "vendor": "Evensong Vocal Coaching",
+     "memos": [
+      "Youth chorus school tour — chaperone stipends",
+      "Youth chorus school tour — songbook licensing"
+     ],
+     "cross_memo": "Youth chorus school tour — charter bus",
+     "plain": [
+      "the youth chorus school tour",
+      "the youth chorus chaperone stipends",
+      "the youth chorus songbook licensing"
+     ],
+     "oblique": [
+      "taking young singers into classrooms",
+      "adults paid to supervise the kids",
+      "an outreach effort with local students",
+      "sheet music rights for the young performers",
+      "visits to campuses around the region",
+      "the education program's travelling component",
+      "the outing for our junior ensemble",
+      "paying for the grown-ups who watched the minors",
+      "community engagement with the next generation",
+      "printed music permissions for the children's group",
+      "the learning initiative that left the building",
+      "getting the kids in front of other kids",
+      "our educational road trip",
+      "the schoolhouse visits we added",
+      "reaching young people where they study",
+      "the program that sends children out to perform"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "supertitle_translation",
+     "vendor": "Lingua Libretto Services",
+     "memos": [
+      "New English supertitles — Czech libretto translation",
+      "New English supertitles — timing and cueing"
+     ],
+     "cross_memo": "New English supertitles — projection screen",
+     "plain": [
+      "the new English supertitles",
+      "the Czech libretto translation",
+      "the supertitles timing and cueing"
+     ],
+     "oblique": [
+      "words on the screen above the stage so audiences follow along",
+      "converting a foreign text for the audience",
+      "a fresh rendering of the sung language",
+      "the person running the lines overhead",
+      "a linguist's work on an unfamiliar text",
+      "helping patrons understand the sung words",
+      "the text-display project for the rarely performed piece",
+      "scripting captions to match the singing",
+      "an expert fluent in an obscure language",
+      "the written translation we commissioned",
+      "captions synchronized to the score",
+      "making the foreign work accessible",
+      "a specialist converting the original words",
+      "the operator pressing the button on each line",
+      "readable words for the unfamiliar production",
+      "our commissioned version of the original text"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,713 @@
+{
+ "slug": "mobile-home-park-operator",
+ "industry": "mobile home park operator",
+ "entities": [
+  "Harborview Communities LLC",
+  "Pinecrest Manufactured Homes Inc",
+  "Sunset Ridge Park Partners",
+  "Willow Bend MHP Holdings",
+  "Cedar Hollow Estates Co"
+ ],
+ "accounts": [
+  {
+   "name": "Water and Sewer Utilities",
+   "aliases": [
+    "water and sewer",
+    "utilities",
+    "water costs",
+    "sewer charges",
+    "utility spend"
+   ],
+   "narrative": [
+    "Water and sewer",
+    "Utility spend",
+    "Water costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-County Water District",
+     "base": 14200,
+     "memo": "Monthly water service - all parks"
+    },
+    {
+     "vendor": "Marlow Sanitary Authority",
+     "base": 9800,
+     "memo": "Monthly sewer treatment fee"
+    },
+    {
+     "vendor": "Greenfield Public Utilities",
+     "base": 3100,
+     "memo": "Common area irrigation water"
+    }
+   ],
+   "events": [
+    {
+     "key": "mainbreak",
+     "vendor": "Tri-County Water District",
+     "memos": [
+      "Emergency main break - excavation crew",
+      "Emergency main break - pipe replacement"
+     ],
+     "cross_memo": "Emergency main break - resident hotel vouchers",
+     "plain": [
+      "the emergency main break",
+      "the main break excavation",
+      "the emergency main break repairs"
+     ],
+     "oblique": [
+      "the pipe that burst under the entry road",
+      "unplanned digging near the clubhouse",
+      "the weekend the whole east loop lost pressure",
+      "a ruptured line",
+      "getting residents their taps back",
+      "the street we had to tear up",
+      "a failure in the buried supply line",
+      "the crew called out at midnight",
+      "an urgent fix to the line feeding forty lots",
+      "the flooded intersection near lot 12",
+      "restoring service after the outage",
+      "the hole in the pavement",
+      "the cracked trunk pipe",
+      "urgent subsurface work",
+      "what the neighbors saw gushing out of the ground",
+      "patching the old iron pipe"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "lagoon",
+     "vendor": "Pelican Septic and Lagoon Services",
+     "memos": [
+      "Lagoon desludging - settling pond B",
+      "Lagoon desludging - haul and disposal"
+     ],
+     "cross_memo": "Lagoon desludging - state discharge permit",
+     "plain": [
+      "the lagoon desludging",
+      "the lagoon desludging haul",
+      "the settling pond B desludging"
+     ],
+     "oblique": [
+      "cleaning out the treatment basin",
+      "the muck removed from the back pond",
+      "what the state inspector flagged at the plant",
+      "scooping out years of buildup",
+      "the overdue pond cleanout",
+      "keeping our onsite treatment compliant",
+      "the trucks hauling away the sediment",
+      "a once-a-decade maintenance project",
+      "the odor complaints from the south end",
+      "restoring capacity in the holding basin",
+      "the pond nobody had touched since the acquisition",
+      "emptying the wastewater pits",
+      "the regulator's follow-up visit",
+      "bringing the treatment area up to standard",
+      "the gunk dredged from the bottom",
+      "a backlog item finally scheduled"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Roads and Pavement Maintenance",
+   "aliases": [
+    "roads",
+    "pavement",
+    "road repair",
+    "paving",
+    "asphalt upkeep"
+   ],
+   "narrative": [
+    "Road repair",
+    "Paving",
+    "Asphalt upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironwood Paving Co",
+     "base": 6500,
+     "memo": "Pothole patching - monthly route"
+    },
+    {
+     "vendor": "Brightline Striping",
+     "base": 1200,
+     "memo": "Speed bump and stall line repainting"
+    }
+   ],
+   "events": [
+    {
+     "key": "sealcoat",
+     "vendor": "Ironwood Paving Co",
+     "memos": [
+      "Loop D sealcoat - crack fill",
+      "Loop D sealcoat - emulsion application"
+     ],
+     "cross_memo": "Loop D sealcoat - temporary signage rental",
+     "plain": [
+      "the loop D sealcoat",
+      "the loop D sealcoat crack fill",
+      "the loop D sealcoat application"
+     ],
+     "oblique": [
+      "refreshing the surface on the northern drive",
+      "protecting the blacktop before winter",
+      "the weekend residents parked on the street",
+      "a coating to stretch pavement life",
+      "the black sheen on the back lane",
+      "preventing water from getting under the surface",
+      "the cure time that closed one section",
+      "an overdue surface treatment",
+      "what the tenants complained about tracking into their homes",
+      "the freshly darkened lane",
+      "extending the life of the oldest section",
+      "sealing the hairline cracks",
+      "the work that blocked driveways for a day",
+      "a preventive treatment on the worn road",
+      "the tar smell last week",
+      "resurfacing prep before the rainy season"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "rootheave",
+     "vendor": "Stonebridge Concrete and Grading",
+     "memos": [
+      "Oak root heave - sidewalk demolition",
+      "Oak root heave - regrading and new slab"
+     ],
+     "cross_memo": "Oak root heave - arborist consultation",
+     "plain": [
+      "the oak root heave",
+      "the oak root heave demolition",
+      "the oak root heave regrading"
+     ],
+     "oblique": [
+      "lifted walkways near the big trees",
+      "a trip hazard that led to a resident claim",
+      "the buckled path by the mailboxes",
+      "uneven concrete that tripped a tenant",
+      "tearing out a tilted walkway",
+      "the lawsuit threat over a fall",
+      "pouring fresh concrete where it cracked",
+      "growth underground pushing things upward",
+      "the stretch outside lot 31",
+      "a safety fix the insurer asked for",
+      "the heaving near the playground",
+      "leveling the lanes for wheelchair access",
+      "what the tenant's attorney photographed",
+      "the ripped-up footpath",
+      "ground shifted by old timber",
+      "fixing the tilted slabs"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Home Set and Skirting Costs",
+   "aliases": [
+    "home set",
+    "skirting",
+    "set-up costs",
+    "home prep",
+    "tie-down work"
+   ],
+   "narrative": [
+    "Home set costs",
+    "Skirting",
+    "Home prep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Redline Home Setters",
+     "base": 11500,
+     "memo": "Pad prep and leveling - vacant lots"
+    },
+    {
+     "vendor": "Vinyl Edge Skirting",
+     "base": 4200,
+     "memo": "Skirting installs and replacements"
+    },
+    {
+     "vendor": "Anchor Point Tie-Down",
+     "base": 2600,
+     "memo": "Ground anchor and strap inspections"
+    }
+   ],
+   "events": [
+    {
+     "key": "hailskirt",
+     "vendor": "Vinyl Edge Skirting",
+     "memos": [
+      "Hailstorm claim - skirting panels replaced",
+      "Hailstorm claim - corner trim and fasteners"
+     ],
+     "cross_memo": "Hailstorm claim - roof tarping",
+     "plain": [
+      "the hailstorm claim",
+      "the hailstorm claim skirting panels",
+      "the hailstorm claim trim work"
+     ],
+     "oblique": [
+      "the afternoon sky dumped ice on us",
+      "damage from the severe weather in the spring",
+      "the pockmarked siding around the units",
+      "what the adjuster counted door to door",
+      "a storm that dented half the park",
+      "replacing what the frozen pellets shattered",
+      "the insurance recovery project",
+      "the cracked panels along the east row",
+      "the surge of calls from residents after the front passed",
+      "the storm cleanup crew",
+      "broken pieces strewn on the lawns",
+      "the week the adjusters crowded the office",
+      "fixing weather wreckage",
+      "the deductible we absorbed",
+      "hundreds of splintered pieces",
+      "what the sky did on the fourteenth"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "flood9",
+     "vendor": "Delta Lift and Crib Works",
+     "memos": [
+      "Pad 9 elevation - pier raising",
+      "Pad 9 elevation - hydraulic lift crew"
+     ],
+     "cross_memo": "Pad 9 elevation - engineer stamp",
+     "plain": [
+      "the pad 9 elevation",
+      "the pad 9 elevation pier raising",
+      "the pad 9 elevation lift crew"
+     ],
+     "oblique": [
+      "jacking one home up after the standing water",
+      "the unit that sits lowest on the property",
+      "the corner that kept flooding",
+      "raising a house above the drainage line",
+      "a single stubborn low spot",
+      "the resident whose floor got soaked",
+      "getting one coach out of the water's reach",
+      "the lift that took two days",
+      "the family that had to move out temporarily",
+      "the hole where the runoff collects",
+      "a structural adjustment on the back row",
+      "lifting the home to code",
+      "what the floodplain map required",
+      "the stilts under the unit",
+      "an elevated foundation on one site",
+      "the home that hovers a foot higher now"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Resident Turnover and Eviction Costs",
+   "aliases": [
+    "turnover",
+    "evictions",
+    "lot turnover",
+    "move-out costs",
+    "delinquency costs"
+   ],
+   "narrative": [
+    "Turnover",
+    "Eviction costs",
+    "Move-out costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Keystone Legal Process",
+     "base": 3400,
+     "memo": "Eviction filing and service fees"
+    },
+    {
+     "vendor": "Sparkle Turn Cleaning",
+     "base": 2800,
+     "memo": "Move-out cleaning and trash-out"
+    }
+   ],
+   "events": [
+    {
+     "key": "abandoned",
+     "vendor": "Keystone Legal Process",
+     "memos": [
+      "Abandoned coach title action - court filing",
+      "Abandoned coach title action - lien search"
+     ],
+     "cross_memo": "Abandoned coach title action - towing quote",
+     "plain": [
+      "the abandoned coach title action",
+      "the abandoned coach title filing",
+      "the abandoned coach lien search"
+     ],
+     "oblique": [
+      "the derelict home nobody claimed",
+      "paperwork to take ownership of a vacated unit",
+      "the rusting trailer on lot 44",
+      "clearing a legal cloud off a stranded property",
+      "the tenant who vanished owing everything",
+      "a judge's order to take possession",
+      "the old mobile unit with no owner of record",
+      "untangling who owned the shell",
+      "the unit the neighbors kept calling about",
+      "the lengthy hearing process",
+      "what the county clerk required",
+      "reclaiming a lot that sat blocked",
+      "a long-running dispute over a dead unit",
+      "the occupant who left the keys and nothing else",
+      "the search through registry records",
+      "getting the lot back on the market"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "hoarder",
+     "vendor": "Bluebird Remediation Crew",
+     "memos": [
+      "Biohazard unit cleanup - sanitation crew",
+      "Biohazard unit cleanup - dumpster hauls"
+     ],
+     "cross_memo": "Biohazard unit cleanup - air quality testing",
+     "plain": [
+      "the biohazard unit cleanup",
+      "the biohazard unit sanitation crew",
+      "the biohazard unit dumpster hauls"
+     ],
+     "oblique": [
+      "the home so filled with junk we needed hazmat suits",
+      "clearing out a trashed residence",
+      "what code enforcement cited",
+      "the awful smell on lot 18",
+      "stripping a unit to the studs",
+      "the tenant who left floor-to-ceiling debris",
+      "hauling away a dozen truckloads",
+      "the health department's visit",
+      "a cleanout that took nine workers",
+      "the abandoned unit full of rot",
+      "getting the foul odor out for good",
+      "the place nobody wanted to enter",
+      "scrubbing away the squalor",
+      "a gutted interior",
+      "what we found when we opened the door",
+      "restoring a ruined home to rentable condition"
+     ],
+     "low": 8000,
+     "high": 16000
+    }
+   ]
+  },
+  {
+   "name": "Landscaping and Common Areas",
+   "aliases": [
+    "landscaping",
+    "grounds",
+    "common areas",
+    "lawn care",
+    "grounds upkeep"
+   ],
+   "narrative": [
+    "Landscaping",
+    "Grounds upkeep",
+    "Common areas"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenleaf Grounds Crew",
+     "base": 8200,
+     "memo": "Weekly mowing and edging"
+    },
+    {
+     "vendor": "Parkside Pool and Spa",
+     "base": 2400,
+     "memo": "Clubhouse pool chemicals and service"
+    },
+    {
+     "vendor": "Evergreen Tree Care",
+     "base": 1500,
+     "memo": "Routine pruning"
+    }
+   ],
+   "events": [
+    {
+     "key": "tornado",
+     "vendor": "Evergreen Tree Care",
+     "memos": [
+      "Windstorm debris - fallen pecan removal",
+      "Windstorm debris - stump grinding"
+     ],
+     "cross_memo": "Windstorm debris - fence repair",
+     "plain": [
+      "the windstorm debris",
+      "the windstorm pecan removal",
+      "the windstorm stump grinding"
+     ],
+     "oblique": [
+      "the gale that toppled the old orchard",
+      "clearing the lanes after the squall",
+      "trees lying across the access road",
+      "the night the gusts hit sixty miles an hour",
+      "cleanup after the big blow",
+      "the crane that lifted giant limbs",
+      "chainsaw crews working through the weekend",
+      "what the storm left on the lawn",
+      "the huge trunk that blocked the entrance",
+      "sawing up what came down",
+      "the damaged canopy near the office",
+      "tearing out the uprooted giants",
+      "the sudden hazard to the homes",
+      "limbs on rooftops",
+      "the shattered timber",
+      "removing fallen woodwork"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "playground",
+     "vendor": "Kidspace Play Systems",
+     "memos": [
+      "Playground renovation - new climbing structure",
+      "Playground renovation - rubber surfacing"
+     ],
+     "cross_memo": "Playground renovation - safety inspection",
+     "plain": [
+      "the playground renovation",
+      "the playground climbing structure",
+      "the playground rubber surfacing"
+     ],
+     "oblique": [
+      "a refresh for the kids' area",
+      "the swing set that failed inspection",
+      "new equipment for the youngsters",
+      "what the residents' committee requested",
+      "an amenity upgrade to keep families here",
+      "the splintered old jungle gym",
+      "a soft landing zone beneath the slides",
+      "the corner where children gather after school",
+      "replacing rusted equipment",
+      "a liability concern turned into a project",
+      "the tot lot makeover",
+      "the lawsuit risk from a skinned knee",
+      "something for the neighborhood families",
+      "a bright new addition by the clubhouse",
+      "pulling out the decades-old swings",
+      "the grand opening with balloons"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Park Insurance and Claims",
+   "aliases": [
+    "insurance",
+    "property insurance",
+    "liability premiums",
+    "claims costs",
+    "coverage"
+   ],
+   "narrative": [
+    "Insurance",
+    "Property insurance",
+    "Claims costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Mutual Property Group",
+     "base": 19500,
+     "memo": "Master property policy installment"
+    },
+    {
+     "vendor": "Beacon Liability Partners",
+     "base": 7600,
+     "memo": "General liability premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "cyber",
+     "vendor": "Beacon Liability Partners",
+     "memos": [
+      "Mid-term endorsement - added pollution coverage",
+      "Mid-term endorsement - premium true-up"
+     ],
+     "cross_memo": "Mid-term endorsement - broker fee",
+     "plain": [
+      "the mid-term endorsement",
+      "the mid-term endorsement pollution coverage",
+      "the mid-term endorsement true-up"
+     ],
+     "oblique": [
+      "extra protection against contamination claims",
+      "a policy change after the lender's request",
+      "adding a rider halfway through the year",
+      "what the bank demanded before refinancing",
+      "the broader umbrella we bought",
+      "a gap the underwriter spotted",
+      "the additional line we tacked onto the contract",
+      "fuel tank leak exposure",
+      "a catch-up charge from the carrier",
+      "protection for the old storage tank",
+      "what the auditors recommended",
+      "the lender-driven upgrade",
+      "the revised schedule of covered perils",
+      "the bump in annual cost from the change",
+      "environmental risk insurance",
+      "the retroactive adjustment"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "fireclaim",
+     "vendor": "Cinder Ridge Adjusters",
+     "memos": [
+      "Unit fire loss - independent adjuster fee",
+      "Unit fire loss - salvage inspection"
+     ],
+     "cross_memo": "Unit fire loss - fire marshal report",
+     "plain": [
+      "the unit fire loss",
+      "the unit fire loss adjuster fee",
+      "the unit fire loss salvage inspection"
+     ],
+     "oblique": [
+      "the blaze on lot 52",
+      "the home that burned in the night",
+      "a kitchen incident that spread to a neighbor",
+      "the smoke damage along the row",
+      "what the firefighters left behind",
+      "a total write-off on a single dwelling",
+      "the displaced family",
+      "the investigator who walked through the ashes",
+      "the charred shell by the playground",
+      "valuing what was lost",
+      "the blackened skeleton of a coach",
+      "the fund set up for the tenant",
+      "the property carrier's inquiry",
+      "a heater left running",
+      "the aftermath of the emergency call",
+      "the scorched carport"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Office and Management Payroll",
+   "aliases": [
+    "payroll",
+    "office staff",
+    "management payroll",
+    "on-site staff",
+    "wages"
+   ],
+   "narrative": [
+    "Payroll",
+    "On-site staff costs",
+    "Wages"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crestline Payroll Services",
+     "base": 24800,
+     "memo": "Semi-monthly payroll - park managers"
+    },
+    {
+     "vendor": "Northgate Staffing",
+     "base": 6200,
+     "memo": "Temp maintenance labor"
+    },
+    {
+     "vendor": "HarborPoint Benefits Admin",
+     "base": 3900,
+     "memo": "Employer benefit contributions"
+    }
+   ],
+   "events": [
+    {
+     "key": "searchfee",
+     "vendor": "Northgate Staffing",
+     "memos": [
+      "Regional director recruitment - placement fee",
+      "Regional director recruitment - candidate travel"
+     ],
+     "cross_memo": "Regional director recruitment - relocation package",
+     "plain": [
+      "the regional director recruitment",
+      "the regional director placement fee",
+      "the regional director candidate travel"
+     ],
+     "oblique": [
+      "hiring a senior leader for the territory",
+      "the headhunter's invoice",
+      "filling the vacancy at the top",
+      "finding someone to oversee six properties",
+      "the opening that sat vacant for months",
+      "an executive search that wrapped up",
+      "bringing in outside talent",
+      "the interviews flown in from other states",
+      "replacing the person who retired",
+      "a new face running the district",
+      "the leadership gap we closed",
+      "what the owners signed off on",
+      "adding a boss above the managers",
+      "the candidate who accepted in the fall",
+      "the contingency fee on a big hire",
+      "adding oversight to the portfolio"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "overtime",
+     "vendor": "Ridgeline Temp Crews",
+     "memos": [
+      "Snow season callouts - overtime crews",
+      "Snow season callouts - after-hours plowing labor"
+     ],
+     "cross_memo": "Snow season callouts - road salt purchase",
+     "plain": [
+      "the snow season callouts",
+      "the snow season overtime crews",
+      "the snow season plowing labor"
+     ],
+     "oblique": [
+      "the blizzard that stranded everyone",
+      "staff working through the night in the freeze",
+      "clearing the lanes at dawn",
+      "extra hands during the deep cold",
+      "the holiday weekend nobody could leave",
+      "the unusually harsh winter",
+      "paying people to dig out the entrances",
+      "what the cold snap demanded",
+      "emergency shifts when the temperature plunged",
+      "double time for the storm weekend",
+      "the weeks we couldn't keep up",
+      "keeping elderly residents accessible",
+      "the call at four in the morning",
+      "icy conditions throughout January",
+      "extra bodies on the clock",
+      "crews on standby for the forecast"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

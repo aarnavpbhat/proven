@@ -1,0 +1,728 @@
+{
+ "slug": "shipbuilding-yard",
+ "industry": "shipbuilding yard",
+ "entities": [
+  "Harborline Shipworks",
+  "Anchorage Marine Fabricators",
+  "Tidewater Hull & Dock Co",
+  "Ironkeel Shipyards",
+  "Brinegate Vessel Builders"
+ ],
+ "accounts": [
+  {
+   "name": "Steel Plate & Structural Materials",
+   "aliases": [
+    "steel",
+    "plate steel",
+    "hull steel",
+    "structural materials",
+    "steel purchases"
+   ],
+   "narrative": [
+    "Hull steel",
+    "Plate steel",
+    "Steel purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Calder Ridge Steel Service",
+     "base": 28000,
+     "memo": "Mill plate — grade A36 monthly release"
+    },
+    {
+     "vendor": "Northfork Section Supply",
+     "base": 14500,
+     "memo": "Angles and channels — stock replenishment"
+    },
+    {
+     "vendor": "Sable Fastener Wholesale",
+     "base": 3200,
+     "memo": "Structural bolts and washers — monthly order"
+    }
+   ],
+   "events": [
+    {
+     "key": "duplex",
+     "vendor": "Calder Ridge Steel Service",
+     "memos": [
+      "Duplex stainless coil — chemical tanker order",
+      "Duplex stainless coil — mill test certs"
+     ],
+     "cross_memo": "Duplex stainless coil — specialist welding wire",
+     "plain": [
+      "the duplex stainless coil",
+      "the duplex stainless order",
+      "the duplex coil purchase"
+     ],
+     "oblique": [
+      "the corrosion-resistant metal bought for the chemical carrier",
+      "an expensive special alloy the customer specified",
+      "material for the vessel that hauls aggressive liquids",
+      "the premium sheet we had to source overseas",
+      "the one-time exotic stock",
+      "a client-mandated alloy",
+      "metal that resists acids and brine",
+      "a rush purchase of high-grade sheet",
+      "the special order for the product carrier",
+      "stock that cost triple the usual",
+      "the upgraded material spec on the new hull",
+      "an unusual grade nobody keeps on the shelf",
+      "the pricey feedstock for the tank sections",
+      "what the owner insisted we use for the cargo spaces",
+      "the imported high-alloy supply",
+      "that costly speciality material"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "vanadium",
+     "vendor": "Tessin Heavy Alloys",
+     "memos": [
+      "Vanadium bulkhead forgings — ice class batch",
+      "Vanadium bulkhead forgings — freight surcharge"
+     ],
+     "cross_memo": "Vanadium bulkhead forgings — dockside crane hire",
+     "plain": [
+      "the vanadium bulkhead forgings",
+      "the vanadium forging batch",
+      "the vanadium bulkhead order"
+     ],
+     "oblique": [
+      "heavy cast parts for the polar-rated ship",
+      "the reinforced partitions for arctic service",
+      "extra-tough components for the northern contract",
+      "the cold-water vessel's strengthened sections",
+      "pieces that had to survive floating ice",
+      "a pile of dense castings arriving by rail",
+      "the strengthened internal walls",
+      "parts for the vessel headed to high latitudes",
+      "specialty components with long lead times",
+      "the one-time buy of rugged structural pieces",
+      "what the icebreaking spec required us to buy",
+      "the oversized shipment from the foundry",
+      "tough castings for the frozen-sea build",
+      "an out-of-pattern purchase for the polar hull",
+      "the freight-heavy forged order",
+      "unplanned buying for the frost-rated design"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Dry Dock & Slipway Operations",
+   "aliases": [
+    "dry dock",
+    "slipway",
+    "dock operations",
+    "dock costs",
+    "graving dock"
+   ],
+   "narrative": [
+    "Dock operations",
+    "Slipway costs",
+    "Dry dock spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pierhead Pump & Dewater",
+     "base": 9800,
+     "memo": "Dock pumping — monthly service contract"
+    },
+    {
+     "vendor": "Keelblock Rigging Co",
+     "base": 6400,
+     "memo": "Keel blocks and shoring — positioning labor"
+    },
+    {
+     "vendor": "Estuary Power Authority",
+     "base": 11200,
+     "memo": "Dock gate and winch electricity — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "caisson",
+     "vendor": "Pierhead Pump & Dewater",
+     "memos": [
+      "Caisson gate reseal — diver inspection",
+      "Caisson gate reseal — gasket replacement"
+     ],
+     "cross_memo": "Caisson gate reseal — temporary cofferdam",
+     "plain": [
+      "the caisson gate reseal",
+      "the caisson reseal job",
+      "the caisson gate gasket work"
+     ],
+     "oblique": [
+      "stopping water from seeping into the basin",
+      "repairs to the big floating door",
+      "fixing the leak at the entrance",
+      "the emergency at the harbor-side barrier",
+      "getting the chamber watertight again",
+      "an unplanned stoppage before a launch",
+      "the seal failure that delayed the ship",
+      "a divers-in-the-water repair",
+      "the entrance gate leaking badly",
+      "the weeks of seepage we had to stop",
+      "a problem with the moveable plug at the mouth",
+      "what the surveyor flagged at the entrance",
+      "unexpected underwater remediation",
+      "fixing what let the sea come in",
+      "the barrier that stopped holding",
+      "a costly waterproofing fix"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "sandblast",
+     "vendor": "Gullwing Abrasive Services",
+     "memos": [
+      "Grit blasting contractor — full hull surface prep",
+      "Grit blasting contractor — spent abrasive disposal"
+     ],
+     "cross_memo": "Grit blasting contractor — respirator and suit rental",
+     "plain": [
+      "the grit blasting contractor",
+      "the grit blasting campaign",
+      "the contract grit blasting"
+     ],
+     "oblique": [
+      "stripping the old coating off the bottom of the vessel",
+      "an outside crew scouring the exterior",
+      "surface cleaning on the large tanker",
+      "a rush to get the plating bare before inspection",
+      "hiring extra hands for the heavy cleanup",
+      "the abrasive scouring of the underwater area",
+      "outsourced scraping to bare metal",
+      "clearing years of growth and rust off a refit",
+      "the dusty cleaning marathon",
+      "what the class surveyor required before painting",
+      "the outside team that scoured the tanker",
+      "a temporary crew on the dock floor",
+      "removing the old finish from the hull",
+      "a labor-heavy preparation of the bottom",
+      "the big refit's first stage",
+      "the contractor who got us paint-ready"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Welding Consumables & Gases",
+   "aliases": [
+    "welding",
+    "welding supplies",
+    "consumables",
+    "gases",
+    "welding consumables"
+   ],
+   "narrative": [
+    "Welding supplies",
+    "Consumables",
+    "Welding spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Arcline Industrial Gases",
+     "base": 12500,
+     "memo": "Argon and CO2 mix — cylinder rental and fill"
+    },
+    {
+     "vendor": "Fusewell Wire & Rod",
+     "base": 8700,
+     "memo": "Flux-cored wire — monthly shipment"
+    },
+    {
+     "vendor": "Brightspark Safety Supply",
+     "base": 2100,
+     "memo": "Welding lenses and gloves — restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "orbital",
+     "vendor": "Arcline Industrial Gases",
+     "memos": [
+      "Orbital pipe welder — helium trial supply",
+      "Orbital pipe welder — purge gas manifold"
+     ],
+     "cross_memo": "Orbital pipe welder — operator certification course",
+     "plain": [
+      "the orbital pipe welder",
+      "the orbital welder trial",
+      "the orbital pipe welding rig"
+     ],
+     "oblique": [
+      "a pilot of automated seam joining on tubing",
+      "testing a machine that joins pipes on its own",
+      "the experiment to speed up the piping crews",
+      "an unusual gas we do not normally stock",
+      "the trial run for robotic joining",
+      "what we spent to see if the new process works",
+      "equipment tried out on the engine room runs",
+      "an evaluation of hands-free fabrication",
+      "special inert supply for a one-off test",
+      "the automation pilot in the pipe shop",
+      "a new method we wanted to try",
+      "gear and gas for the proof-of-concept",
+      "the machine that replaced manual seams",
+      "an investment in faster pipework",
+      "the novel technique trial",
+      "experiment funding for tube fabrication"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "underwater",
+     "vendor": "Neptune Hyperbaric Services",
+     "memos": [
+      "Wet welding habitat — thruster tunnel patch",
+      "Wet welding habitat — certified diver weld"
+     ],
+     "cross_memo": "Wet welding habitat — standby decompression chamber",
+     "plain": [
+      "the wet welding habitat",
+      "the wet welding patch",
+      "the wet welding habitat job"
+     ],
+     "oblique": [
+      "a repair made below the waterline without drydocking",
+      "specialists who worked submerged",
+      "the fix to the propulsion opening done afloat",
+      "an urgent patch where the ship could not be lifted",
+      "work carried out by people in dive gear",
+      "a job that avoided pulling the ship out",
+      "the contractor with the pressurized chamber",
+      "emergency steelwork beneath the surface",
+      "the rescue fix on the visiting ship",
+      "a hull repair done while she floated",
+      "an expensive alternative to a haul-out",
+      "the submerged weld that saved a schedule",
+      "the one-off job for a ferry owner",
+      "a stopgap that stayed in the water",
+      "pressurised work at the stern tunnel",
+      "the costly specialist crew"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Marine Coatings & Paint",
+   "aliases": [
+    "paint",
+    "coatings",
+    "marine paint",
+    "hull paint",
+    "coating materials"
+   ],
+   "narrative": [
+    "Marine coatings",
+    "Paint costs",
+    "Hull paint"
+   ],
+   "recurring": [
+    {
+     "vendor": "Seabright Coatings Ltd",
+     "base": 19500,
+     "memo": "Epoxy primer and topcoat — monthly drawdown"
+    },
+    {
+     "vendor": "Corvane Thinners & Solvents",
+     "base": 3800,
+     "memo": "Thinners and cleaning solvent — drums"
+    },
+    {
+     "vendor": "Pellam Masking Supply",
+     "base": 1900,
+     "memo": "Masking tape and sheeting — restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "foulrelease",
+     "vendor": "Seabright Coatings Ltd",
+     "memos": [
+      "Silicone foul release system — ferry hull application",
+      "Silicone foul release system — tie coat batches"
+     ],
+     "cross_memo": "Silicone foul release system — spray equipment lease",
+     "plain": [
+      "the silicone foul release system",
+      "the silicone foul release coating",
+      "the silicone foul release application"
+     ],
+     "oblique": [
+      "a slippery finish that keeps barnacles off",
+      "the premium bottom treatment on the ferry",
+      "a smooth layer so marine growth cannot cling",
+      "the fuel-saving finish for the passenger vessel",
+      "an upscale option the operator picked",
+      "the nonstick lower-hull finish",
+      "what let the owner skip frequent scrubbing",
+      "pricey slick finish with a long guarantee",
+      "the efficiency-minded underwater treatment",
+      "the layered system for lower drag",
+      "the swap away from the traditional toxic type",
+      "a specialist underwater covering",
+      "the upgrade the customer asked for below the waterline",
+      "the clever slippery skin",
+      "a product that sheds fouling by itself",
+      "the costly alternative to the usual bottom paint"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "intumescent",
+     "vendor": "Halvard Fireproofing Systems",
+     "memos": [
+      "Intumescent barrier coat — accommodation decks",
+      "Intumescent barrier coat — thickness testing"
+     ],
+     "cross_memo": "Intumescent barrier coat — scaffold erection",
+     "plain": [
+      "the intumescent barrier coat",
+      "the intumescent coat application",
+      "the intumescent barrier work"
+     ],
+     "oblique": [
+      "a protective layer that swells when heated",
+      "the passive blaze protection for living quarters",
+      "a requirement from the flag state inspectors",
+      "coverings meant to buy time in an emergency",
+      "the safety finish applied inside the superstructure",
+      "what the regulator wanted on the crew decks",
+      "a flame-delaying layer on steel surfaces",
+      "a late spec change after the safety review",
+      "the measured thickness checks",
+      "insulating treatment sprayed on bulkheads",
+      "the blaze-resistance upgrade",
+      "a compliance item that surprised us",
+      "the heat-reactive film inside the ship",
+      "the stuff that keeps steel from buckling in a fire",
+      "extra work after the classification visit",
+      "the passive safety application"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Crane & Heavy Lift Equipment",
+   "aliases": [
+    "cranes",
+    "heavy lift",
+    "crane costs",
+    "lifting equipment",
+    "crane maintenance"
+   ],
+   "narrative": [
+    "Crane costs",
+    "Heavy lift spend",
+    "Lifting equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Goliath Crane Rentals",
+     "base": 24000,
+     "memo": "Mobile crane hire — monthly standing rental"
+    },
+    {
+     "vendor": "Torquemaster Hoist Service",
+     "base": 5600,
+     "memo": "Hoist inspection and lubrication — routine"
+    },
+    {
+     "vendor": "Wirelay Cable & Sling",
+     "base": 4100,
+     "memo": "Slings and shackles — replacement stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "gantry",
+     "vendor": "Torquemaster Hoist Service",
+     "memos": [
+      "Gantry bogie rebuild — wheel bearing set",
+      "Gantry bogie rebuild — rail alignment"
+     ],
+     "cross_memo": "Gantry bogie rebuild — temporary load testing",
+     "plain": [
+      "the gantry bogie rebuild",
+      "the gantry bogie overhaul",
+      "the gantry bogie bearing job"
+     ],
+     "oblique": [
+      "restoring the giant overhead traveler",
+      "repairs to the running gear of the big frame",
+      "what kept the main lifter out of action for weeks",
+      "rebuilding the undercarriage of the shipyard's largest machine",
+      "tracks that had to be straightened",
+      "a breakdown that held up block assembly",
+      "the heavy rolling assembly we had to rework",
+      "the long outage on the principal hoisting machine",
+      "an overhaul that was overdue",
+      "the wheels beneath the largest hoist",
+      "the steel monster that stopped rolling",
+      "maintenance deferred for too many years",
+      "the work on the travelling structure",
+      "getting the main mover back on its rails",
+      "the major mechanical fix",
+      "a repair the insurer questioned"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "tandem",
+     "vendor": "Atlas Tandem Lifts",
+     "memos": [
+      "Tandem lift engineering — engine module placement",
+      "Tandem lift engineering — spreader beam fabrication"
+     ],
+     "cross_memo": "Tandem lift engineering — road closure permit",
+     "plain": [
+      "the tandem lift engineering",
+      "the tandem lift engine module",
+      "the tandem lift spreader beam"
+     ],
+     "oblique": [
+      "a delicate two-machine operation to set the power plant",
+      "the careful placement of a massive component",
+      "planning work for putting the motor block aboard",
+      "special rigging made for one awkward load",
+      "a complicated hoist that needed outside experts",
+      "the job of lowering the heaviest piece into the hull",
+      "a custom beam built for a unique load",
+      "the day the whole yard stopped to watch",
+      "an outside consultant who calculated the loads",
+      "the single hardest operation of the quarter",
+      "setting the propulsion unit in position",
+      "a rigging plan that required government sign-off",
+      "the one-time combined hoisting exercise",
+      "bespoke gear for a one-off placement",
+      "what it took to move the oversize assembly",
+      "the costly planning for a heavy installation"
+     ],
+     "low": 17000,
+     "high": 34000
+    }
+   ]
+  },
+  {
+   "name": "Naval Architecture & Engineering Services",
+   "aliases": [
+    "design",
+    "engineering services",
+    "naval architecture",
+    "design fees",
+    "engineering fees"
+   ],
+   "narrative": [
+    "Design fees",
+    "Engineering services",
+    "Naval architecture"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Hull Design Associates",
+     "base": 18000,
+     "memo": "Detail design drawings — monthly retainer"
+    },
+    {
+     "vendor": "Lofthouse CAD Services",
+     "base": 6500,
+     "memo": "CAD seat licences and drafting support"
+    },
+    {
+     "vendor": "Bowline Class Liaison",
+     "base": 4800,
+     "memo": "Class society plan review — monthly submissions"
+    }
+   ],
+   "events": [
+    {
+     "key": "stability",
+     "vendor": "Meridian Hull Design Associates",
+     "memos": [
+      "Inclining experiment support — stability booklet revision",
+      "Inclining experiment support — ballast water plan"
+     ],
+     "cross_memo": "Inclining experiment support — test weights haulage",
+     "plain": [
+      "the inclining experiment support",
+      "the inclining experiment work",
+      "the inclining experiment booklet"
+     ],
+     "oblique": [
+      "proving the vessel does not tip over",
+      "a test that measures how the ship leans under weights",
+      "paperwork showing she stays upright",
+      "the post-delivery balance verification",
+      "extra analysis after the owner moved equipment",
+      "tilting trials that the flag authority demanded",
+      "calculations repeated after a design change",
+      "the heel check on the finished craft",
+      "a rerun of the buoyancy documentation",
+      "the exercise with weights shifted across the deck",
+      "what regulators required before issuing papers",
+      "the redo after the weight estimate drifted",
+      "the work done on the balance booklet",
+      "the steadiness assessment",
+      "an overlooked certification step",
+      "the study of how she behaves at angle"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "cfd",
+     "vendor": "Wavecrest Simulation Lab",
+     "memos": [
+      "Resistance tank study — scale model testing",
+      "Resistance tank study — propeller cavitation report"
+     ],
+     "cross_memo": "Resistance tank study — model hull machining",
+     "plain": [
+      "the resistance tank study",
+      "the resistance tank testing",
+      "the resistance tank report"
+     ],
+     "oblique": [
+      "checking how much drag a miniature version creates",
+      "experiments using a small copy in a long pool",
+      "the fuel economy analysis for the new design",
+      "tests that told us the screw would make noise",
+      "a research package ordered by the shipowner",
+      "work to prove the speed guarantee",
+      "the outside lab that dragged a model through water",
+      "what the owner wanted to see before signing",
+      "evidence that the engine size was right",
+      "the small-scale trials of the underwater shape",
+      "a bill from the university-style facility",
+      "the performance validation requested by the customer",
+      "a study to shave fuel burn",
+      "the physical experiments behind the speed claim",
+      "outsourced hydrodynamic investigation",
+      "a data-gathering exercise on propulsion efficiency"
+     ],
+     "low": 19000,
+     "high": 38000
+    }
+   ]
+  },
+  {
+   "name": "Yard Safety, Environmental & Waste",
+   "aliases": [
+    "safety",
+    "environmental",
+    "waste disposal",
+    "yard safety",
+    "hazmat"
+   ],
+   "narrative": [
+    "Yard safety",
+    "Environmental costs",
+    "Waste disposal"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenfern Waste Haulage",
+     "base": 7800,
+     "memo": "Skip bins and scrap hauling — monthly"
+    },
+    {
+     "vendor": "Ironshield PPE Supply",
+     "base": 5200,
+     "memo": "Hard hats, harnesses and boots — restock"
+    },
+    {
+     "vendor": "Clearwater Spill Response",
+     "base": 2800,
+     "memo": "Spill kit refills and drill support"
+    }
+   ],
+   "events": [
+    {
+     "key": "asbestos",
+     "vendor": "Greenfern Waste Haulage",
+     "memos": [
+      "Legacy insulation abatement — licensed removal crew",
+      "Legacy insulation abatement — sealed container disposal"
+     ],
+     "cross_memo": "Legacy insulation abatement — air monitoring survey",
+     "plain": [
+      "the legacy insulation abatement",
+      "the legacy insulation removal",
+      "the legacy insulation disposal"
+     ],
+     "oblique": [
+      "clearing out old hazardous material from the refit",
+      "a discovery behind the walls of the older ship",
+      "specialist crews in sealed suits",
+      "what we found when we opened up the engine room",
+      "the dangerous fibrous material that stopped work",
+      "a surprise during the conversion job",
+      "safe removal of something banned decades ago",
+      "the cleanup that delayed the schedule",
+      "a regulated disposal we had not planned for",
+      "the unwelcome find in the old vessel",
+      "contractors in full protective gear",
+      "an unplanned dig-out of contaminated lining",
+      "the licensed team that took it away",
+      "remediation of a vintage ship's hidden problem",
+      "the clean air testing after the stripout",
+      "the costly hazard we inherited"
+     ],
+     "low": 23000,
+     "high": 46000
+    },
+    {
+     "key": "stormwater",
+     "vendor": "Bluecurrent Environmental",
+     "memos": [
+      "Stormwater discharge remediation — settling basin dredging",
+      "Stormwater discharge remediation — sediment lab analysis"
+     ],
+     "cross_memo": "Stormwater discharge remediation — regulator penalty filing",
+     "plain": [
+      "the stormwater discharge remediation",
+      "the stormwater discharge cleanup",
+      "the stormwater discharge basin work"
+     ],
+     "oblique": [
+      "fixing runoff that left the property dirty",
+      "a notice from the environmental agency",
+      "digging out the pond where rainfall collects",
+      "what happened after the heavy downpour carried residue",
+      "muck removal required by the authorities",
+      "an enforcement action over what flowed to the bay",
+      "testing the mud for contaminants",
+      "a fine and a cleanup rolled into one",
+      "the compliance headache after the inspector visited",
+      "drainage trouble that attracted regulators",
+      "the sludge that had to be hauled off",
+      "a spill of yard dust into the harbor",
+      "the lab results that triggered more work",
+      "work forced on us by the state",
+      "the overflow that crossed the fence line",
+      "a regulatory fix we could not defer"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

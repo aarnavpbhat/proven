@@ -1,0 +1,713 @@
+{
+ "slug": "martial-arts-academy-chain",
+ "industry": "martial arts academy chain",
+ "entities": [
+  "Ironcrest Martial Arts Group",
+  "Silent Crane Academies",
+  "Tidewater Dojo Holdings",
+  "Black Lotus Fight Co",
+  "Summit Fist Academies"
+ ],
+ "accounts": [
+  {
+   "name": "Studio Rent & Occupancy",
+   "aliases": [
+    "rent",
+    "studio rent",
+    "occupancy costs",
+    "facility leases",
+    "lease expense"
+   ],
+   "narrative": [
+    "Studio rent",
+    "Occupancy costs",
+    "Facility leases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborline Property Trust",
+     "base": 24500,
+     "memo": "Monthly base rent flagship studios"
+    },
+    {
+     "vendor": "Eastgate Commercial Realty",
+     "base": 18200,
+     "memo": "Monthly base rent suburban studios"
+    },
+    {
+     "vendor": "CityGrid Utilities",
+     "base": 6400,
+     "memo": "Electric water gas studios"
+    }
+   ],
+   "events": [
+    {
+     "key": "landlordtrueup",
+     "vendor": "Harborline Property Trust",
+     "memos": [
+      "Common area true-up — prior year reconciliation",
+      "Common area true-up — catch-up billing"
+     ],
+     "cross_memo": "Common area true-up — legal review fee",
+     "plain": [
+      "the common area true-up",
+      "the true-up reconciliation",
+      "the prior year true-up"
+     ],
+     "oblique": [
+      "a landlord bill for last year's shared costs",
+      "retroactive charges from the property owner",
+      "the building owner settling old estimates",
+      "an annual settlement on shared spaces",
+      "a late invoice covering twelve months of overages",
+      "what the lessor claimed after auditing its books",
+      "adjustments reaching back into the previous year",
+      "a one-time catch-up from the landlord",
+      "the true cost of shared hallways and lots",
+      "a surprise statement from property management",
+      "reconciled estimates for upkeep of shared areas",
+      "backdated assessments",
+      "a lump settlement with the owner",
+      "shortfalls the owner recovered after year end",
+      "catch-up on estimated pass-through charges",
+      "the lessor's yearly accounting differences"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "hvacreplace",
+     "vendor": "Pinecone Climate Services",
+     "memos": [
+      "Rooftop furnace swap — Downtown location",
+      "Rooftop furnace swap — crane hire and install"
+     ],
+     "cross_memo": "Rooftop furnace swap — permit and inspection",
+     "plain": [
+      "the rooftop furnace swap",
+      "the furnace swap project",
+      "the downtown rooftop furnace"
+     ],
+     "oblique": [
+      "replacing the heating gear that quit in winter",
+      "new climate equipment at the flagship",
+      "getting the unit upstairs working again",
+      "keeping students warm on the mats",
+      "an unplanned mechanical replacement",
+      "emergency work on the building's warmth system",
+      "the old equipment finally giving out",
+      "a major comfort system installation",
+      "hoisting new machinery onto the top of the building",
+      "fixing temperature control at our busiest site",
+      "a heater that could not be repaired any longer",
+      "the cold snap emergency",
+      "capital-sized work on the ventilation setup",
+      "what the landlord refused to cover inside the space",
+      "swapping out the aging heating plant",
+      "a new heating and cooling installation"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Instructor Compensation",
+   "aliases": [
+    "instructor pay",
+    "coaching payroll",
+    "sensei wages",
+    "teaching staff cost",
+    "instructor comp"
+   ],
+   "narrative": [
+    "Instructor pay",
+    "Coaching payroll",
+    "Sensei wages"
+   ],
+   "recurring": [
+    {
+     "vendor": "Blue Belt Payroll Services",
+     "base": 28000,
+     "memo": "Semi-monthly instructor payroll"
+    },
+    {
+     "vendor": "Dojo Staffing Partners",
+     "base": 9500,
+     "memo": "Part-time class coverage"
+    },
+    {
+     "vendor": "Kinetic Benefits Group",
+     "base": 7200,
+     "memo": "Instructor health premiums"
+    }
+   ],
+   "events": [
+    {
+     "key": "blackbeltcamp",
+     "vendor": "Dojo Staffing Partners",
+     "memos": [
+      "Instructor certification bootcamp — overtime stipend",
+      "Instructor certification bootcamp — weekend coverage"
+     ],
+     "cross_memo": "Instructor certification bootcamp — lodging block",
+     "plain": [
+      "the instructor certification bootcamp",
+      "the certification bootcamp stipends",
+      "the bootcamp weekend coverage"
+     ],
+     "oblique": [
+      "a training push for teaching staff credentials",
+      "extra pay for staff to earn new rank qualifications",
+      "sending coaches to upgrade their credentials",
+      "the intensive session our teachers attended",
+      "additional shifts while regulars were away learning",
+      "a skills refresh for everyone leading classes",
+      "backfilling classes during a mandatory program",
+      "a compliance requirement from the governing federation",
+      "extra hours to keep schedules running during development",
+      "professional upskilling of the teaching roster",
+      "a mid-year push to get coaches accredited",
+      "paying for cover while the team studied",
+      "the federation-mandated refresher",
+      "investment in our teachers' qualifications",
+      "a cluster of weekend shifts nobody budgeted",
+      "getting every lead teacher recertified"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "signonbonus",
+     "vendor": "Redwood Talent Recruiters",
+     "memos": [
+      "Head coach recruitment — placement fee",
+      "Head coach recruitment — relocation bonus"
+     ],
+     "cross_memo": "Head coach recruitment — job board postings",
+     "plain": [
+      "the head coach recruitment",
+      "the recruitment placement fee",
+      "the head coach relocation bonus"
+     ],
+     "oblique": [
+      "hiring a champion to lead our newest site",
+      "bringing in a nationally known fighter",
+      "the search for a senior hire",
+      "a big-name addition to the teaching bench",
+      "paying a premium to land one person",
+      "moving a star athlete across the country",
+      "a headhunter's cut on a key addition",
+      "incentives to win over a top candidate",
+      "filling the vacancy at the top of the new studio",
+      "the outside firm that found our new leader",
+      "an upfront package to secure a marquee name",
+      "what it cost to poach talent from a rival",
+      "the search that took half a year",
+      "a one-time package for the person running the opening",
+      "securing a decorated competitor to anchor a site",
+      "finder's fees for a leadership position"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Mats & Training Equipment",
+   "aliases": [
+    "mats",
+    "training equipment",
+    "gear and mats",
+    "dojo equipment",
+    "sparring supplies"
+   ],
+   "narrative": [
+    "Mats",
+    "Training equipment",
+    "Sparring supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "TatamiWorks Supply",
+     "base": 5200,
+     "memo": "Mat cleaning and patch kits"
+    },
+    {
+     "vendor": "Striker Gear Wholesale",
+     "base": 8800,
+     "memo": "Pads gloves and bags restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "matreplace",
+     "vendor": "TatamiWorks Supply",
+     "memos": [
+      "Interlocking floor overhaul — foam tiles Northside",
+      "Interlocking floor overhaul — edging and adhesive"
+     ],
+     "cross_memo": "Interlocking floor overhaul — old surface disposal",
+     "plain": [
+      "the interlocking floor overhaul",
+      "the floor overhaul foam tiles",
+      "the interlocking tile project"
+     ],
+     "oblique": [
+      "resurfacing where students train",
+      "new padded surfaces after safety complaints",
+      "pulling up the worn out flooring",
+      "a full redo of the practice area underfoot",
+      "an injury-prevention upgrade",
+      "what we spent after a student slipped",
+      "tearing out the cracked old surface",
+      "refreshing the ground under every class",
+      "a ground-level renovation at our busiest studio",
+      "the insurer's recommendation on the training floor",
+      "replacing floor coverings that had flattened",
+      "a big install over a long weekend",
+      "the safer base our kids now practice on",
+      "swapping everything students stand on",
+      "an upgrade nobody could postpone any longer",
+      "covering the entire room with fresh padding"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "tournamentrings",
+     "vendor": "Arena Pro Fabrication",
+     "memos": [
+      "Championship ring buildout — modular platforms",
+      "Championship ring buildout — scoring towers"
+     ],
+     "cross_memo": "Championship ring buildout — transport and setup crew",
+     "plain": [
+      "the championship ring buildout",
+      "the ring buildout platforms",
+      "the championship scoring towers"
+     ],
+     "oblique": [
+      "hosting our first big regional competition",
+      "staging for the annual showcase",
+      "fabricated stages for visiting fighters",
+      "getting ready to host guest academies",
+      "portable structures for the weekend event",
+      "the competition we held in a rented hall",
+      "things built so judges could see the action",
+      "an arena setup for our biggest day",
+      "equipment we purchased to host others",
+      "a tournament that put us on the map",
+      "elevated areas for bouts",
+      "what we invested to run a major event",
+      "display structures sized for crowds",
+      "the matches our network organized this spring",
+      "hardware for an inter-club fight card",
+      "assembling a venue from scratch"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Student Acquisition Marketing",
+   "aliases": [
+    "marketing",
+    "student acquisition",
+    "lead generation",
+    "enrollment advertising",
+    "promo spend"
+   ],
+   "narrative": [
+    "Marketing",
+    "Lead generation",
+    "Enrollment advertising"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roundhouse Digital Ads",
+     "base": 14500,
+     "memo": "Search and social ad spend"
+    },
+    {
+     "vendor": "Kata Creative Studio",
+     "base": 4800,
+     "memo": "Monthly creative retainer"
+    },
+    {
+     "vendor": "LocalReach Mailers",
+     "base": 3600,
+     "memo": "Direct mail postcards"
+    }
+   ],
+   "events": [
+    {
+     "key": "summerkidscamp",
+     "vendor": "Roundhouse Digital Ads",
+     "memos": [
+      "Summer youth camp blitz — video campaign",
+      "Summer youth camp blitz — boosted placements"
+     ],
+     "cross_memo": "Summer youth camp blitz — camp supply kits",
+     "plain": [
+      "the summer youth camp blitz",
+      "the youth camp video campaign",
+      "the camp blitz placements"
+     ],
+     "oblique": [
+      "a push to fill seats while school was out",
+      "recruiting children for the vacation program",
+      "a seasonal drive aimed at parents",
+      "promotion for warm weather offerings",
+      "reaching families before the break began",
+      "the program for young beginners over the holidays",
+      "an advertising surge ahead of the quiet months",
+      "getting kids through our doors in July",
+      "a short intense burst aimed at new families",
+      "ads for the program that runs when classrooms close",
+      "our attempt to turn vacations into enrollments",
+      "a seasonal promotion with a hard start date",
+      "paid exposure for the youngest students",
+      "a burst of outreach to moms and dads",
+      "the campaign for our annual break offering",
+      "drumming up business for the slow stretch"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "celebritysponsor",
+     "vendor": "Gold Gi Talent Agency",
+     "memos": [
+      "Champion ambassador deal — appearance fee",
+      "Champion ambassador deal — signed merchandise"
+     ],
+     "cross_memo": "Champion ambassador deal — photo shoot",
+     "plain": [
+      "the champion ambassador deal",
+      "the ambassador appearance fee",
+      "the champion signed merchandise"
+     ],
+     "oblique": [
+      "a famous athlete lending their face to us",
+      "paying a name people recognize",
+      "an endorsement from a local hero",
+      "a star visiting our studios for the day",
+      "what we paid for celebrity attention",
+      "the personality fronting our spring pitch",
+      "rights to use a well-known fighter's image",
+      "a famous face on our posters",
+      "an arrangement with a title holder",
+      "buying credibility from someone admired",
+      "a personal appearance that drew crowds",
+      "the public figure who vouched for us",
+      "our big swing on star power",
+      "an agent's invoice for talent exposure",
+      "hiring a household name for a promotion",
+      "the signed memorabilia handed to new members"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Belt Testing & Rank Programs",
+   "aliases": [
+    "belt testing",
+    "rank programs",
+    "grading costs",
+    "promotion events",
+    "testing expenses"
+   ],
+   "narrative": [
+    "Belt testing",
+    "Grading costs",
+    "Promotion events"
+   ],
+   "recurring": [
+    {
+     "vendor": "Obi Embroidery Works",
+     "base": 3900,
+     "memo": "Belts and rank patches"
+    },
+    {
+     "vendor": "Federation Dues Office",
+     "base": 2800,
+     "memo": "Student registry fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "masterseminar",
+     "vendor": "Federation Dues Office",
+     "memos": [
+      "Grandmaster visit seminar — honorarium",
+      "Grandmaster visit seminar — hall rental"
+     ],
+     "cross_memo": "Grandmaster visit seminar — guest airfare",
+     "plain": [
+      "the grandmaster visit seminar",
+      "the grandmaster honorarium",
+      "the seminar hall rental"
+     ],
+     "oblique": [
+      "a legendary teacher coming to evaluate us",
+      "hosting the founder's representative",
+      "a once a decade guest from overseas",
+      "the elder who judged our top students",
+      "special sessions with a revered figure",
+      "an honored visitor leading workshops",
+      "bringing in a living legend for a weekend",
+      "a prestigious guest presiding over promotions",
+      "what we paid to welcome the head of the style",
+      "the esteemed instructor's tour of our branches",
+      "a rare chance for students to train with the source",
+      "the senior master's stopover",
+      "a memorable weekend for advanced members",
+      "hosting the highest authority in our lineage",
+      "an appearance by the organization's figurehead",
+      "the honored guest who signed our diplomas"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "blackbeltgala",
+     "vendor": "Lantern Banquet Hall",
+     "memos": [
+      "Annual dan graduation gala — ballroom booking",
+      "Annual dan graduation gala — catering"
+     ],
+     "cross_memo": "Annual dan graduation gala — trophies and plaques",
+     "plain": [
+      "the annual dan graduation gala",
+      "the graduation gala ballroom",
+      "the gala catering"
+     ],
+     "oblique": [
+      "the formal dinner honoring our top achievers",
+      "an evening celebrating new senior ranks",
+      "a ceremony with families in dress clothes",
+      "our yearly night of recognition",
+      "feeding a few hundred guests at a celebration",
+      "the party at the end of the testing season",
+      "a black tie event for members and relatives",
+      "rented space for our proudest evening",
+      "toasts and speeches for those who earned the top rank",
+      "a banquet that marked the year",
+      "honoring members who finished a decade of training",
+      "a celebration that outgrew our own studio",
+      "the award night",
+      "an evening of food and applause",
+      "our formal salute to long-serving students",
+      "a dinner that ran far over the plan"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Insurance & Injury Liability",
+   "aliases": [
+    "insurance",
+    "liability coverage",
+    "injury claims",
+    "risk and insurance",
+    "waiver and coverage costs"
+   ],
+   "narrative": [
+    "Insurance",
+    "Liability coverage",
+    "Injury claims"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shieldpoint Insurance Brokers",
+     "base": 11800,
+     "memo": "General liability premium installment"
+    },
+    {
+     "vendor": "SafeStance Risk Consulting",
+     "base": 2600,
+     "memo": "Safety audit subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "concussionclaim",
+     "vendor": "Shieldpoint Insurance Brokers",
+     "memos": [
+      "Head trauma settlement — deductible payment",
+      "Head trauma settlement — claim adjuster charge"
+     ],
+     "cross_memo": "Head trauma settlement — medical records review",
+     "plain": [
+      "the head trauma settlement",
+      "the trauma deductible payment",
+      "the head trauma adjuster charge"
+     ],
+     "oblique": [
+      "a member's serious accident at a sparring session",
+      "the claim a family brought against us",
+      "our share of an expensive payout",
+      "an incident that resulted in a hospital stay",
+      "what the carrier made us cover out of pocket",
+      "a lawsuit that ended in an agreement",
+      "the cost of a student getting badly hurt",
+      "closing out a dispute with an injured participant",
+      "a legal matter we chose to resolve quietly",
+      "paying the first portion of a major claim",
+      "the unfortunate event at one of our studios",
+      "retention on a large loss",
+      "money owed after a mishap on the mats",
+      "a serious injury that became a case",
+      "resolving a family's complaint",
+      "our out of pocket portion once the insurer stepped in"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "policyaudit",
+     "vendor": "Northwind Actuarial Partners",
+     "memos": [
+      "Premium reclassification review — payroll audit",
+      "Premium reclassification review — surcharge"
+     ],
+     "cross_memo": "Premium reclassification review — consultant hours",
+     "plain": [
+      "the premium reclassification review",
+      "the reclassification payroll audit",
+      "the reclassification surcharge"
+     ],
+     "oblique": [
+      "the carrier deciding we were riskier than thought",
+      "a rate change after an examination of our books",
+      "an adjustment because our staff count had grown",
+      "what the underwriter found when it checked",
+      "a bill reflecting how we are now categorized",
+      "retroactive pricing on last year's exposure",
+      "a higher bracket for our line of work",
+      "recalculating what we owe for cover",
+      "an outside examiner reviewing our numbers",
+      "the result of a coverage inspection",
+      "additional cost after our operations were reassessed",
+      "a notice that our category had changed",
+      "the difference between estimated and actual exposure",
+      "a charge that arrived with an auditor's letter",
+      "paying more for the same protection",
+      "a year-end true-up on what we owe the insurer"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Uniforms & Retail Merchandise",
+   "aliases": [
+    "uniforms",
+    "retail merchandise",
+    "pro shop costs",
+    "apparel and merch",
+    "gi inventory"
+   ],
+   "narrative": [
+    "Uniforms",
+    "Pro shop costs",
+    "Apparel and merch"
+   ],
+   "recurring": [
+    {
+     "vendor": "Karategi Textile Mills",
+     "base": 12600,
+     "memo": "Student uniform inventory"
+    },
+    {
+     "vendor": "Fightwear Direct",
+     "base": 7400,
+     "memo": "Branded rashguards and shorts"
+    },
+    {
+     "vendor": "Dojo Print & Pack",
+     "base": 2300,
+     "memo": "Merch packaging and labels"
+    }
+   ],
+   "events": [
+    {
+     "key": "logorebrand",
+     "vendor": "Karategi Textile Mills",
+     "memos": [
+      "Crest redesign rollout — reissued uniforms",
+      "Crest redesign rollout — patch reorder"
+     ],
+     "cross_memo": "Crest redesign rollout — signage vinyl",
+     "plain": [
+      "the crest redesign rollout",
+      "the crest reissued uniforms",
+      "the crest patch reorder"
+     ],
+     "oblique": [
+      "changing our look across every location",
+      "a fresh identity that touched everything we wear",
+      "the new emblem replacing the old one",
+      "outfitting everyone again with updated markings",
+      "swapping out what students were wearing",
+      "the visual refresh announced at the anniversary",
+      "scrapping inventory that carried the former symbol",
+      "a brand update that forced new orders",
+      "the reason closets full of old stock went to waste",
+      "a redesign launched across the chain",
+      "what it took to modernize our image",
+      "our decision to retire the old badge",
+      "a coordinated switch to new insignia",
+      "a one-time wardrobe change for members",
+      "relaunching our identity",
+      "the transition away from the older design"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "holidaybulk",
+     "vendor": "Ember Novelty Imports",
+     "memos": [
+      "Holiday gift set order — plush mascots",
+      "Holiday gift set order — boxed keychains"
+     ],
+     "cross_memo": "Holiday gift set order — freight and duties",
+     "plain": [
+      "the holiday gift set order",
+      "the gift set plush mascots",
+      "the boxed keychain gift sets"
+     ],
+     "oblique": [
+      "stocking up for the year-end shopping rush",
+      "small items parents buy for children in December",
+      "a large purchase from overseas suppliers",
+      "goods that tempted families at the front desk",
+      "inventory aimed at seasonal shoppers",
+      "cute things sold near the entrance",
+      "a bet on year-end gift buying",
+      "merchandise we hoped would sell out by New Year",
+      "an import shipment of trinkets",
+      "novelties ordered months ahead of demand",
+      "what we loaded the pro shop with before the rush",
+      "a seasonal buy that was bigger than last time",
+      "impulse items for the checkout counter",
+      "our wager on holiday spending",
+      "a container of small collectibles",
+      "cheerful extras for the retail shelves"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

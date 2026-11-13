@@ -1,0 +1,830 @@
+{
+ "slug": "karaoke-bar-and-nightclub-group",
+ "industry": "karaoke bar and nightclub group",
+ "entities": [
+  "Neon Mic Hospitality Group",
+  "Velvet Reverb Entertainment LLC",
+  "Afterglow Nightlife Holdings",
+  "Encore Room Collective",
+  "Midnight Chorus Venues Inc"
+ ],
+ "accounts": [
+  {
+   "name": "Music Licensing and Royalties",
+   "aliases": [
+    "music licensing",
+    "licensing fees",
+    "royalty costs",
+    "song rights",
+    "performance rights"
+   ],
+   "narrative": [
+    "Music licensing",
+    "Licensing fees",
+    "Royalty costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harmonic Rights Bureau",
+     "base": 9200,
+     "memo": "Monthly PRO blanket license Inv"
+    },
+    {
+     "vendor": "Stagecopy Catalog Services",
+     "base": 4100,
+     "memo": "Karaoke track library subscription Svc"
+    },
+    {
+     "vendor": "Clearnote Licensing Group",
+     "base": 2600,
+     "memo": "Sync and public performance fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "catalogaudit",
+     "vendor": "Harmonic Rights Bureau",
+     "memos": [
+      "Catalog audit settlement — backdated tier",
+      "Catalog audit settlement — retro usage true-up"
+     ],
+     "cross_memo": "Catalog audit settlement — outside counsel fees",
+     "plain": [
+      "the catalog audit settlement",
+      "the catalog audit true-up",
+      "the backdated catalog audit charge"
+     ],
+     "oblique": [
+      "a bill for songs we played without proper clearance years ago",
+      "the licensor catching up on past underpayments",
+      "a retroactive charge after their compliance review",
+      "back-dated rate adjustments",
+      "what we owed for earlier usage",
+      "a one-time make-good to the rights holders",
+      "the claim that we had been under-reporting plays",
+      "the dispute with the rights organization finally closing",
+      "catching up on old shortfalls",
+      "a lump payment to close out prior periods",
+      "the result of their inspection of our play logs",
+      "a past-due true-up",
+      "paying for what the venues had already sung",
+      "a settlement with the music owners",
+      "the licensor's review of our historical reporting",
+      "retro billing"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "duetpack",
+     "vendor": "Lyricvault Media Partners",
+     "memos": [
+      "Duet Pack bundle — exclusive duet catalog",
+      "Duet Pack bundle — launch license advance"
+     ],
+     "cross_memo": "Duet Pack bundle — promo screen content",
+     "plain": [
+      "the duet pack bundle",
+      "the exclusive duet pack catalog",
+      "the duet pack launch advance"
+     ],
+     "oblique": [
+      "a new partner arrangement for paired singing songs",
+      "the deal that gave us songs no other bar has",
+      "an upfront payment to lock in a content exclusive",
+      "the new premium song offering for guests",
+      "the content tie-up that launched in spring",
+      "buying early access to a fresh set of tracks",
+      "an advance against future song usage",
+      "the exclusivity we paid to secure",
+      "a headline feature for the singing rooms",
+      "a one-off commitment to a new media supplier",
+      "the marquee addition to the song list",
+      "guaranteed first rights to new releases",
+      "a signing payment for a content partner",
+      "what we put down to differentiate the song offering",
+      "the new bundle that guests keep requesting",
+      "an upfront outlay to a catalog partner"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Bar Inventory and Spirits",
+   "aliases": [
+    "bar inventory",
+    "liquor purchases",
+    "spirits cost",
+    "beverage purchasing",
+    "alcohol spend"
+   ],
+   "narrative": [
+    "Bar inventory",
+    "Liquor purchases",
+    "Spirits cost"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crestline Distributing",
+     "base": 28000,
+     "memo": "Weekly liquor delivery Inv batch"
+    },
+    {
+     "vendor": "Brightwater Beverage Co",
+     "base": 11500,
+     "memo": "Mixers, beer and draft Svc"
+    },
+    {
+     "vendor": "Ice House Supply",
+     "base": 3200,
+     "memo": "Bagged ice and garnish"
+    }
+   ],
+   "events": [
+    {
+     "key": "tequilaallocation",
+     "vendor": "Crestline Distributing",
+     "memos": [
+      "Reserva tequila allocation — barrel pick",
+      "Reserva tequila allocation — case prepay"
+     ],
+     "cross_memo": "Reserva tequila allocation — branded glassware",
+     "plain": [
+      "the reserva tequila allocation",
+      "the reserva tequila barrel pick",
+      "the reserva tequila case prepay"
+     ],
+     "oblique": [
+      "a limited release we pre-bought for the big weekend",
+      "the premium agave order secured ahead of demand",
+      "an early commitment to scarce top-shelf stock",
+      "the special bottles we reserved well in advance",
+      "a bulk buy of high-end product before prices climbed",
+      "what we spent to guarantee the signature cocktail supply",
+      "a one-time stock-up on the hard-to-get brand",
+      "the supplier giving us first call on rare product",
+      "paying up front to hold the good stuff",
+      "the premium shelf expansion",
+      "an advance purchase for the anniversary party",
+      "a pricey single order from our main distributor",
+      "securing scarce bottles for the VIP section",
+      "the brand partner's limited drop",
+      "pre-buying a special release",
+      "a large forward order of top-shelf product"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "cellarspill",
+     "vendor": "Northgate Wine Cellars",
+     "memos": [
+      "Cellar flood loss — replacement wine stock",
+      "Cellar flood loss — restock rush freight"
+     ],
+     "cross_memo": "Cellar flood loss — remediation drying crew",
+     "plain": [
+      "the cellar flood loss",
+      "the cellar flood restock",
+      "the cellar flood replacement stock"
+     ],
+     "oblique": [
+      "replacing product ruined when the pipe burst downstairs",
+      "emergency rebuying after we lost the storage room",
+      "the water damage that wiped out our reserves",
+      "refilling shelves after the overnight incident",
+      "rush orders to cover what was destroyed",
+      "the basement mishap at the flagship",
+      "an unplanned restock after a facilities failure",
+      "bottles we had to write off and rebuy",
+      "getting back to full stock after the damage",
+      "the burst line below the main bar",
+      "stock lost to the building problem",
+      "a hurried reorder with expedited delivery",
+      "the cost of the incident that emptied our storage",
+      "making up for ruined inventory",
+      "urgent replenishment from a backup supplier",
+      "what it took to reopen with a full back bar"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Sound and Lighting Equipment",
+   "aliases": [
+    "sound and lighting",
+    "av equipment",
+    "stage gear",
+    "audio costs",
+    "lighting spend"
+   ],
+   "narrative": [
+    "Sound and lighting",
+    "AV equipment",
+    "Stage gear"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pulsewave AV Rentals",
+     "base": 6800,
+     "memo": "Monthly PA and mic rental Inv"
+    },
+    {
+     "vendor": "Brightstage Lighting Svc",
+     "base": 3900,
+     "memo": "Fixture maintenance contract"
+    },
+    {
+     "vendor": "Echo Alley Repair",
+     "base": 1800,
+     "memo": "Mic and cable repairs"
+    }
+   ],
+   "events": [
+    {
+     "key": "ledwall",
+     "vendor": "Brightstage Lighting Svc",
+     "memos": [
+      "LED wall install — panel modules",
+      "LED wall install — rigging labor Svc"
+     ],
+     "cross_memo": "LED wall install — electrical permit",
+     "plain": [
+      "the LED wall install",
+      "the LED wall panel modules",
+      "the LED wall rigging labor"
+     ],
+     "oblique": [
+      "the big video backdrop behind the stage",
+      "a visual upgrade for the main room",
+      "the new screen guests see from the door",
+      "an overhaul of the stage's look",
+      "the showpiece we hung before the relaunch",
+      "that giant display project",
+      "new visuals to compete with the club down the street",
+      "a one-time buildout over the dance floor",
+      "the glowing panel project",
+      "an upgrade the owners wanted for the grand reopening",
+      "fixed screens replacing the old projector",
+      "the installation crew's multi-day job",
+      "what we added to modernize the stage",
+      "the headline capital refresh",
+      "a major visual build in the flagship",
+      "hardware that lights up the whole back wall"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "subwoofer",
+     "vendor": "Lowend Acoustics Group",
+     "memos": [
+      "Subwoofer array swap — cabinet units",
+      "Subwoofer array swap — amp racks Inv"
+     ],
+     "cross_memo": "Subwoofer array swap — noise abatement panels",
+     "plain": [
+      "the subwoofer array swap",
+      "the subwoofer cabinet units",
+      "the subwoofer amp racks"
+     ],
+     "oblique": [
+      "replacing the bass system that kept blowing out",
+      "a fix for the thumping that failed after Saturday",
+      "new low-frequency gear for the dance floor",
+      "the neighbors' complaints leading to new hardware",
+      "what we bought after the old units gave out",
+      "swapping out worn-out gear in the club room",
+      "a punchier sound package",
+      "the equipment overhaul after the failed soundcheck",
+      "the new rig that replaced the old one",
+      "a big-ticket audio refresh",
+      "bass gear that finally died",
+      "an upgrade that cut the rumble in the building next door",
+      "the DJ booth's request for stronger output",
+      "an unplanned replacement of core audio equipment",
+      "the amplification project at the club",
+      "the heavy-duty audio refit"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Entertainment and Talent",
+   "aliases": [
+    "entertainment",
+    "talent costs",
+    "performer fees",
+    "dj and host pay",
+    "booking spend"
+   ],
+   "narrative": [
+    "Entertainment",
+    "Talent costs",
+    "Performer fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Spotlight Booking Agency",
+     "base": 14500,
+     "memo": "Resident DJ and host fees Inv"
+    },
+    {
+     "vendor": "Karaoke Jockey Staffing",
+     "base": 8700,
+     "memo": "KJ weekly staffing Svc"
+    },
+    {
+     "vendor": "Open Stage Productions",
+     "base": 3400,
+     "memo": "Themed night production"
+    }
+   ],
+   "events": [
+    {
+     "key": "headlinerresidency",
+     "vendor": "Spotlight Booking Agency",
+     "memos": [
+      "Headliner residency — guest star fee",
+      "Headliner residency — rider and hospitality"
+     ],
+     "cross_memo": "Headliner residency — street team promo",
+     "plain": [
+      "the headliner residency",
+      "the headliner residency star fee",
+      "the headliner residency rider"
+     ],
+     "oblique": [
+      "a famous name playing our room for several weeks",
+      "the big booking that packed the house",
+      "a celebrity run we marketed heavily",
+      "paying a major act to appear at the flagship",
+      "the marquee performer we flew in",
+      "a splashy guest series",
+      "bringing in a household name",
+      "the star power we bought for the season",
+      "a limited engagement from a well-known artist",
+      "the booking that sold out the weekends",
+      "the VIP attraction for the holidays",
+      "a top-dollar appearance",
+      "the act everyone was talking about",
+      "a premium guest slot for the relaunch",
+      "a celebrity takeover of the lineup",
+      "the high-profile engagement"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "karaokechamp",
+     "vendor": "Grand Prix Events LLC",
+     "memos": [
+      "Sing-off championship — prize pool",
+      "Sing-off championship — judges and emcee Inv"
+     ],
+     "cross_memo": "Sing-off championship — trophy and staging",
+     "plain": [
+      "the sing-off championship",
+      "the sing-off championship prize pool",
+      "the sing-off championship judges"
+     ],
+     "oblique": [
+      "the citywide contest finale we hosted",
+      "cash prizes awarded to winning guests",
+      "a competition that drew crowds from all venues",
+      "the tournament our brand sponsored",
+      "paying out to the winners of the big contest",
+      "the finale event with panelists on stage",
+      "an annual tradition that came with real stakes",
+      "a bracket-style contest across all our rooms",
+      "what we paid to run the final showdown",
+      "the contest that ended the season",
+      "the marketing stunt with a trophy",
+      "a one-night competition with a purse",
+      "the championship night production",
+      "the top singers' final round",
+      "the regional final we staged",
+      "a prize-driven contest with outside emcees"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Security and Door Staffing",
+   "aliases": [
+    "security",
+    "door staff",
+    "bouncer costs",
+    "crowd control spend",
+    "safety staffing"
+   ],
+   "narrative": [
+    "Security",
+    "Door staff",
+    "Bouncer costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironclad Guard Services",
+     "base": 19500,
+     "memo": "Door and floor security Svc"
+    },
+    {
+     "vendor": "Safe Exit Consulting",
+     "base": 2800,
+     "memo": "Monthly compliance review"
+    },
+    {
+     "vendor": "Checkpoint ID Systems",
+     "base": 1500,
+     "memo": "ID scanner lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "nyeextra",
+     "vendor": "Ironclad Guard Services",
+     "memos": [
+      "Holiday surge detail — added guards",
+      "Holiday surge detail — overtime premium Inv"
+     ],
+     "cross_memo": "Holiday surge detail — barricade rental",
+     "plain": [
+      "the holiday surge detail",
+      "the holiday surge added guards",
+      "the holiday surge overtime premium"
+     ],
+     "oblique": [
+      "extra bodies at the door for the busiest night",
+      "staffing up for the year-end crowd",
+      "the premium pay for a packed evening",
+      "more people on the line for the countdown party",
+      "what we paid to keep a huge crowd orderly",
+      "additional coverage for the seasonal peak",
+      "a one-night beef-up of the team",
+      "the bonus rates for working a holiday",
+      "increased headcount for the big party",
+      "the crowd we expected and planned for",
+      "extra hands on the velvet rope",
+      "manning the venue for the largest night",
+      "the surge in demand for staff on the busiest date",
+      "staffing for the sold-out party",
+      "a larger-than-usual crew",
+      "time-and-a-half for a peak night"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "incidentreview",
+     "vendor": "Bridgewell Risk Advisors",
+     "memos": [
+      "Incident review — independent investigation",
+      "Incident review — policy rewrite Svc"
+     ],
+     "cross_memo": "Incident review — legal retainer",
+     "plain": [
+      "the incident review",
+      "the incident review investigation",
+      "the incident review policy rewrite"
+     ],
+     "oblique": [
+      "the outside look at what happened that Saturday",
+      "an examination triggered by an altercation",
+      "new procedures following the fight",
+      "a consultant's findings about our weak spots",
+      "the response to the insurer's concerns",
+      "the formal inquiry after the injury",
+      "redoing our rules after a bad night",
+      "hiring experts to find out what went wrong",
+      "the aftermath of the scuffle at the flagship",
+      "a third party reviewing our practices",
+      "revised guest-conduct guidelines",
+      "the cost of learning from an unfortunate event",
+      "outside advisors brought in after the complaint",
+      "an independent probe",
+      "a written overhaul of how we handle trouble",
+      "the study ordered by the owners"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Venue Rent and Occupancy",
+   "aliases": [
+    "rent",
+    "occupancy",
+    "venue lease",
+    "rent and cam",
+    "space costs"
+   ],
+   "narrative": [
+    "Rent",
+    "Occupancy",
+    "Venue lease"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborview Properties",
+     "base": 30000,
+     "memo": "Flagship base rent Inv"
+    },
+    {
+     "vendor": "Eastside Realty Trust",
+     "base": 16500,
+     "memo": "Second venue base rent"
+    },
+    {
+     "vendor": "Metro CAM Services",
+     "base": 4200,
+     "memo": "Common area maintenance Qtr"
+    }
+   ],
+   "events": [
+    {
+     "key": "campreconcile",
+     "vendor": "Metro CAM Services",
+     "memos": [
+      "CAM reconciliation — prior year shortfall",
+      "CAM reconciliation — tax pass-through Inv"
+     ],
+     "cross_memo": "CAM reconciliation — audit fee",
+     "plain": [
+      "the CAM reconciliation",
+      "the CAM reconciliation shortfall",
+      "the CAM reconciliation tax pass-through"
+     ],
+     "oblique": [
+      "the landlord's annual true-up of shared expenses",
+      "a catch-up bill for the building's operating costs",
+      "the year-end adjustment from the property manager",
+      "extra charges after they tallied the real numbers",
+      "a lump sum covering what we underpaid",
+      "the assessment on last year's building upkeep",
+      "the statement that came in higher than estimates",
+      "the property's bill for shared services",
+      "unbudgeted pass-through charges",
+      "what the owner said we still owed",
+      "the annual settlement with the lessor",
+      "a retroactive charge for shared areas",
+      "the larger-than-expected adjustment",
+      "a landlord demand for the past twelve months",
+      "the final accounting of building costs",
+      "higher actuals than the estimates we paid"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "popupexpansion",
+     "vendor": "Lantern Row Landlords",
+     "memos": [
+      "Patio lease addition — deposit and first month",
+      "Patio lease addition — buildout allowance Inv"
+     ],
+     "cross_memo": "Patio lease addition — signage permit",
+     "plain": [
+      "the patio lease addition",
+      "the patio lease deposit",
+      "the patio lease buildout allowance"
+     ],
+     "oblique": [
+      "taking on outdoor space for the warm season",
+      "the additional footprint we signed for",
+      "a new area guests can use after dark",
+      "extra square footage next to the venue",
+      "the expansion that added seating capacity",
+      "what we put down to secure the adjoining space",
+      "moving into the neighboring area",
+      "a deposit for the new section",
+      "space we leased to relieve the lines",
+      "the beer garden project's upfront cost",
+      "an upfront payment on the outdoor addition",
+      "growth into the lot beside the club",
+      "the overflow area we added",
+      "a deposit and advance on new space",
+      "the outdoor extension",
+      "securing room for more guests"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Promotions",
+   "aliases": [
+    "marketing",
+    "promotions",
+    "advertising spend",
+    "social and promo",
+    "guest acquisition"
+   ],
+   "narrative": [
+    "Marketing",
+    "Promotions",
+    "Advertising spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hype Loop Digital",
+     "base": 6500,
+     "memo": "Social ads management Inv"
+    },
+    {
+     "vendor": "Nightlife Flyer Co",
+     "base": 2200,
+     "memo": "Printed flyers and posters"
+    },
+    {
+     "vendor": "Local Radio Network",
+     "base": 3800,
+     "memo": "Weekly spot package Svc"
+    }
+   ],
+   "events": [
+    {
+     "key": "influencertour",
+     "vendor": "Hype Loop Digital",
+     "memos": [
+      "Creator crawl campaign — influencer fees",
+      "Creator crawl campaign — content production Inv"
+     ],
+     "cross_memo": "Creator crawl campaign — ticketed shuttle",
+     "plain": [
+      "the creator crawl campaign",
+      "the creator crawl influencer fees",
+      "the creator crawl content production"
+     ],
+     "oblique": [
+      "paying online personalities to visit all our rooms",
+      "a video-heavy push across social channels",
+      "the sponsored posts that went viral",
+      "the program that put us in front of younger followers",
+      "what we spent to be seen by new audiences",
+      "posts by well-known local accounts",
+      "the endorsement deals we signed for a month",
+      "a burst of social-first outreach",
+      "getting famous feeds to tag us",
+      "the content shoots at every venue",
+      "a one-off blitz aimed at new guests",
+      "the campaign everybody saw on their phones",
+      "influence-driven outreach",
+      "an experiment with paid personalities",
+      "the digital push for the spring season",
+      "costly collaborations with popular accounts"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "billboardwrap",
+     "vendor": "Skyline Outdoor Media",
+     "memos": [
+      "Transit wrap blitz — bus shelters",
+      "Transit wrap blitz — printing and install Inv"
+     ],
+     "cross_memo": "Transit wrap blitz — design agency fee",
+     "plain": [
+      "the transit wrap blitz",
+      "the transit wrap bus shelters",
+      "the transit wrap printing and install"
+     ],
+     "oblique": [
+      "ads plastered all over the city's commuter vehicles",
+      "an outdoor presence along main streets",
+      "the big visible campaign on buses",
+      "a push to be seen by everyone downtown",
+      "paying for space in public transportation",
+      "a citywide visibility play",
+      "the exposure we bought around the venues",
+      "giant ads on moving vehicles",
+      "a media buy aimed at the commute",
+      "what we spent to put our name on streets",
+      "a splashy outdoor ad program",
+      "the old-school promotion",
+      "the placements near stations",
+      "a hard-to-miss effort during the launch",
+      "space rented on public routes",
+      "one-month saturation advertising"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Licenses, Permits and Insurance",
+   "aliases": [
+    "licenses and permits",
+    "permits",
+    "insurance costs",
+    "liquor license",
+    "regulatory spend"
+   ],
+   "narrative": [
+    "Licenses and permits",
+    "Insurance costs",
+    "Regulatory spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Statewide Alcohol Control Board",
+     "base": 2400,
+     "memo": "Monthly license installment Svc"
+    },
+    {
+     "vendor": "Barrelhouse Insurance Brokers",
+     "base": 9800,
+     "memo": "Liquor liability premium Inv"
+    },
+    {
+     "vendor": "City Cabaret Permits Office",
+     "base": 1100,
+     "memo": "Entertainment permit fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "noiseviolation",
+     "vendor": "City Cabaret Permits Office",
+     "memos": [
+      "Sound ordinance fine — repeat citation",
+      "Sound ordinance fine — compliance hearing Inv"
+     ],
+     "cross_memo": "Sound ordinance fine — acoustic survey",
+     "plain": [
+      "the sound ordinance fine",
+      "the sound ordinance repeat citation",
+      "the sound ordinance compliance hearing"
+     ],
+     "oblique": [
+      "a penalty after the neighbors kept calling",
+      "what the city charged for being too loud",
+      "a ticket we could not avoid",
+      "the municipal sanction after repeat complaints",
+      "an official action over late-night volume",
+      "paying the authorities after warnings",
+      "the fine that came after a hearing",
+      "a penalty for breaking the quiet rules",
+      "a citation that stuck",
+      "the charge from the city for nighttime disturbances",
+      "a government-issued bill we did not budget",
+      "the consequence of a noise complaint",
+      "an after-hours enforcement action",
+      "a fee imposed after an inspection",
+      "the cost of a run-in with the authorities",
+      "a penalty that required a formal appearance"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "liquorlicenseupgrade",
+     "vendor": "Summit Hospitality Legal",
+     "memos": [
+      "Late-hour license upgrade — application filing",
+      "Late-hour license upgrade — attorney fees Svc"
+     ],
+     "cross_memo": "Late-hour license upgrade — zoning petition",
+     "plain": [
+      "the late-hour license upgrade",
+      "the late-hour license application filing",
+      "the late-hour license attorney fees"
+     ],
+     "oblique": [
+      "permission to stay open past the old cutoff",
+      "the paperwork that extended our operating window",
+      "what we paid lawyers to win extra hours",
+      "an upgrade letting us serve into the early morning",
+      "a new tier of authorization from the board",
+      "the approval process for longer nights",
+      "fees for getting later closing times",
+      "a petition to extend how long we operate",
+      "the legal push for additional trading time",
+      "an application to run later on weekends",
+      "advancing our permission level",
+      "costs to expand when we can pour",
+      "a filing to open later at the flagship",
+      "the effort to stay open until sunrise",
+      "getting regulators to approve a longer evening",
+      "counsel's work on the extended-hours approval"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,728 @@
+{
+ "slug": "catering-and-banquet-company",
+ "industry": "catering and banquet company",
+ "entities": [
+  "Gilded Fork Catering Co.",
+  "Harborview Banquet & Events",
+  "Saffron Table Hospitality",
+  "Linden Hall Event Catering",
+  "Copperleaf Banquet Group"
+ ],
+ "accounts": [
+  {
+   "name": "Food & Ingredient Costs",
+   "aliases": [
+    "food costs",
+    "ingredient spend",
+    "food purchasing",
+    "ingredients",
+    "kitchen food spend"
+   ],
+   "narrative": [
+    "Food costs",
+    "Ingredient spend",
+    "Food purchasing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Produce Wholesale",
+     "base": 18500,
+     "memo": "Inv weekly fresh produce delivery"
+    },
+    {
+     "vendor": "Blue Harbor Seafood Co",
+     "base": 14200,
+     "memo": "Inv fresh fish and shellfish order"
+    },
+    {
+     "vendor": "Prairie Gate Meats",
+     "base": 16800,
+     "memo": "Inv beef poultry and pork supply"
+    }
+   ],
+   "events": [
+    {
+     "key": "truffle",
+     "vendor": "Meridian Produce Wholesale",
+     "memos": [
+      "Inv Perigord truffle allocation — gala tasting menu",
+      "Svc Perigord truffle allocation — rush airfreight"
+     ],
+     "cross_memo": "Perigord truffle allocation — insulated courier packaging",
+     "plain": [
+      "the Perigord truffle allocation",
+      "the truffle allocation airfreight",
+      "the Perigord truffle purchase"
+     ],
+     "oblique": [
+      "the luxury fungi we sourced for the donor dinner",
+      "an extravagant seasonal garnish for the headline event",
+      "the pricey underground delicacy the client insisted on",
+      "rare imported delicacies",
+      "the premium add-on for the top-tier tasting",
+      "a one-time splurge on shaved luxury toppings",
+      "what the foundation chairman requested for the final course",
+      "costly specialty items flown in on short notice",
+      "the ultra-premium ingredient order",
+      "gourmet extravagance for the benefit evening",
+      "the exotic earthy shavings",
+      "a very expensive finishing touch",
+      "the high-end sourcing for the black-tie evening",
+      "one celebrity-chef request",
+      "delicacies that cost more than the entrees",
+      "the indulgent course the host demanded"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "vanilla",
+     "vendor": "Sunridge Specialty Imports",
+     "memos": [
+      "Inv Tahitian vanilla bean lot — wedding season prebuy",
+      "Inv Tahitian vanilla bean lot — customs brokerage"
+     ],
+     "cross_memo": "Tahitian vanilla bean lot — climate storage locker",
+     "plain": [
+      "the Tahitian vanilla bean lot",
+      "the vanilla bean lot prebuy",
+      "the Tahitian vanilla purchase"
+     ],
+     "oblique": [
+      "stocking up on pastry flavoring ahead of peak weddings",
+      "the early bulk buy of dessert aromatics",
+      "a hedge against a price spike in baking supplies",
+      "the sweet-scented imports we locked in early",
+      "securing flavor supply for the busy bridal months",
+      "a big advance order for the pastry team",
+      "cured pods from the South Pacific",
+      "the forward purchase the pastry chef pushed for",
+      "an inventory bet on dessert essentials",
+      "buying ahead before the harvest shortfall hit prices",
+      "the pastry kitchen's stockpile",
+      "a bulk order from an island grower",
+      "the tropical flavoring commitment",
+      "a prepayment for next season's cake work",
+      "the fragrant shipment sitting in storage",
+      "protecting dessert margins from supplier increases"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Event Staffing & Labor",
+   "aliases": [
+    "event labor",
+    "staffing costs",
+    "banquet staff spend",
+    "labor costs",
+    "temp staffing"
+   ],
+   "narrative": [
+    "Event labor",
+    "Staffing costs",
+    "Banquet staff spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crescent Staffing Partners",
+     "base": 28000,
+     "memo": "Svc banquet server and bartender hours"
+    },
+    {
+     "vendor": "Anchor Payroll Services",
+     "base": 9500,
+     "memo": "Mnt payroll processing and fees"
+    },
+    {
+     "vendor": "ChefLine Culinary Temps",
+     "base": 15200,
+     "memo": "Inv line cook temp hours"
+    }
+   ],
+   "events": [
+    {
+     "key": "marathon",
+     "vendor": "Crescent Staffing Partners",
+     "memos": [
+      "Svc Riverside Marathon hydration village — overnight crews",
+      "Inv Riverside Marathon hydration village — premium holiday rate"
+     ],
+     "cross_memo": "Riverside Marathon hydration village — barricade permits",
+     "plain": [
+      "the Riverside Marathon hydration village",
+      "the marathon hydration village crews",
+      "the Riverside Marathon village staffing"
+     ],
+     "oblique": [
+      "the road race refreshment stations",
+      "a sports weekend with huge headcount",
+      "the runners' fueling points",
+      "dawn-to-dusk coverage along the course",
+      "a city-sponsored athletic event",
+      "hundreds of extra bodies for a weekend",
+      "the charity run catering contract",
+      "staffing a moving crowd across miles",
+      "the pre-sunrise crews we had to field",
+      "an outdoor contract with municipal oversight",
+      "the footrace support operation",
+      "a surge in hands needed on a Sunday",
+      "the large civic fitness event",
+      "extra people to feed athletes and spectators",
+      "the sprawling outdoor assignment",
+      "a one-weekend headcount spike"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "bonus",
+     "vendor": "Keystone Workforce Solutions",
+     "memos": [
+      "Inv retention incentive program — captain tier payout",
+      "Svc retention incentive program — administration fee"
+     ],
+     "cross_memo": "Retention incentive program — payroll tax true-up",
+     "plain": [
+      "the retention incentive program",
+      "the retention incentive payout",
+      "the captain tier incentive program"
+     ],
+     "oblique": [
+      "keeping our best floor leaders from leaving",
+      "a payout to stop poaching by competitors",
+      "the loyalty money for veteran supervisors",
+      "extra pay to hold on to experienced hands",
+      "a response to a tight hiring market",
+      "what we paid to keep the senior crew",
+      "the stay-put payments",
+      "sweeteners for top performers before peak season",
+      "compensation we agreed to after resignations",
+      "a one-time reward for the core team",
+      "money meant to reduce turnover",
+      "an outside firm's handling of special pay",
+      "the bump for our most reliable managers",
+      "reward dollars tied to the busy season",
+      "the pay package approved by ownership",
+      "cash to protect the bench of leads"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Rental",
+   "aliases": [
+    "rentals",
+    "rental equipment",
+    "linen and rental spend",
+    "equipment hire",
+    "rental costs"
+   ],
+   "narrative": [
+    "Rentals",
+    "Rental equipment",
+    "Equipment hire"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Party Rentals",
+     "base": 12400,
+     "memo": "Inv tables chairs and tenting"
+    },
+    {
+     "vendor": "Fine Linen Supply Co",
+     "base": 8700,
+     "memo": "Svc linen rental and laundering"
+    },
+    {
+     "vendor": "Crystal Ware Rentals",
+     "base": 6100,
+     "memo": "Inv glassware china and flatware"
+    }
+   ],
+   "events": [
+    {
+     "key": "tent",
+     "vendor": "Summit Party Rentals",
+     "memos": [
+      "Inv clearspan pavilion build — Whitmore estate",
+      "Svc clearspan pavilion build — flooring and climate"
+     ],
+     "cross_memo": "Clearspan pavilion build — engineered site survey",
+     "plain": [
+      "the clearspan pavilion build",
+      "the Whitmore pavilion build",
+      "the clearspan pavilion flooring"
+     ],
+     "oblique": [
+      "the giant temporary structure on the lawn",
+      "an outdoor venue we erected from scratch",
+      "the oversize shelter for a country wedding",
+      "a custom enclosure for hundreds of guests",
+      "what the family asked us to put up on their grounds",
+      "a weeklong construction project for one party",
+      "the walls and roof we provided on private land",
+      "a big-ticket installation for the weekend",
+      "the temporary ballroom",
+      "an elaborate setup requiring engineers",
+      "the sprawling canopy job",
+      "the heated and floored outdoor space",
+      "a venue that did not exist until we made it",
+      "the estate's celebration shelter",
+      "the unusually large installation",
+      "a signature outdoor build for a premium client"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "chiller",
+     "vendor": "Polar Edge Mobile Cooling",
+     "memos": [
+      "Inv walk-in cooler trailer lease — compressor failure backup",
+      "Svc walk-in cooler trailer lease — generator fuel"
+     ],
+     "cross_memo": "Walk-in cooler trailer lease — emergency hookup electrician",
+     "plain": [
+      "the walk-in cooler trailer lease",
+      "the cooler trailer generator fuel",
+      "the walk-in cooler trailer"
+     ],
+     "oblique": [
+      "a stopgap while our refrigeration was down",
+      "temporary cold storage after an equipment breakdown",
+      "the emergency chilling arrangement",
+      "a mobile box that saved the food inventory",
+      "what we rented when the commissary lost power to its units",
+      "short-term refrigeration on wheels",
+      "a loaner fix for spoiled-product risk",
+      "the unplanned cold capacity",
+      "a crisis purchase to protect perishables",
+      "stand-in cooling parked behind the kitchen",
+      "the substitute for broken storage",
+      "rental help during a mechanical failure",
+      "the weeks we spent without proper refrigeration",
+      "a scramble to keep inventory safe",
+      "the rush hire of chilled space",
+      "an unexpected outage workaround"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Delivery & Fleet",
+   "aliases": [
+    "fleet",
+    "delivery costs",
+    "vehicle spend",
+    "fleet operations",
+    "transport costs"
+   ],
+   "narrative": [
+    "Fleet",
+    "Delivery costs",
+    "Vehicle spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmark Fuel Cards",
+     "base": 9800,
+     "memo": "Inv fleet fuel card statement"
+    },
+    {
+     "vendor": "Torque Auto Service",
+     "base": 5400,
+     "memo": "Mnt van oil tires and brakes"
+    },
+    {
+     "vendor": "Shield Commercial Insurance",
+     "base": 4200,
+     "memo": "Qtr commercial auto premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "wrap",
+     "vendor": "Torque Auto Service",
+     "memos": [
+      "Svc vinyl livery rebrand — full van wrap",
+      "Inv vinyl livery rebrand — decal removal labor"
+     ],
+     "cross_memo": "Vinyl livery rebrand — design studio proofs",
+     "plain": [
+      "the vinyl livery rebrand",
+      "the full van wrap rebrand",
+      "the vinyl livery decal removal"
+     ],
+     "oblique": [
+      "the new look for our delivery vehicles",
+      "repainting the company image on every truck",
+      "a marketing refresh that touched the whole motor pool",
+      "the updated logo going out on the road",
+      "making all our vans match the new identity",
+      "a cosmetic overhaul to mobile billboards",
+      "what the owners wanted after the name change",
+      "the exterior graphics project",
+      "getting the logo off the old design",
+      "a visual refresh for vehicles",
+      "branding on wheels",
+      "new artwork across the entire lineup",
+      "the appearance upgrade for transport units",
+      "a project the sales team championed",
+      "changing how our vehicles look to customers",
+      "the big visual change"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "hybrid",
+     "vendor": "Greenmile Motors",
+     "memos": [
+      "Inv sprinter cargo van purchase — deposit installment",
+      "Inv sprinter cargo van purchase — upfit shelving"
+     ],
+     "cross_memo": "Sprinter cargo van purchase — title and registration",
+     "plain": [
+      "the sprinter cargo van purchase",
+      "the sprinter van upfit shelving",
+      "the sprinter cargo van deposit"
+     ],
+     "oblique": [
+      "adding two more vehicles to the lineup",
+      "expanding how many drops we can run at once",
+      "growth in our hauling capacity",
+      "the newest additions to the motor pool",
+      "what we bought to handle the bigger contract",
+      "new wheels to serve the northern suburbs",
+      "outfitting fresh vehicles with racks",
+      "investment in a larger delivery footprint",
+      "vehicles replacing the worn-out ones",
+      "the capacity jump we approved last quarter",
+      "freshly acquired transport",
+      "a purchase meant to relieve overbooked drivers",
+      "steel and shelving for the new routes",
+      "upgrading how much we can carry per trip",
+      "the delivery expansion",
+      "additional units for peak weekends"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Venue Fees & Permits",
+   "aliases": [
+    "venue fees",
+    "permits",
+    "site fees",
+    "venue costs",
+    "licensing and permits"
+   ],
+   "narrative": [
+    "Venue fees",
+    "Permits",
+    "Site fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "City Health Dept Licensing",
+     "base": 2400,
+     "memo": "Mnt food handler and facility permits"
+    },
+    {
+     "vendor": "Grand Meridian Hotel Partnership",
+     "base": 11000,
+     "memo": "Inv ballroom commission and room fees"
+    },
+    {
+     "vendor": "State Liquor Authority",
+     "base": 1800,
+     "memo": "Qtr alcohol service license fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "stadium",
+     "vendor": "Grand Meridian Hotel Partnership",
+     "memos": [
+      "Inv Ironwood Arena concession takeover — exclusivity buyout",
+      "Svc Ironwood Arena concession takeover — loading dock fees"
+     ],
+     "cross_memo": "Ironwood Arena concession takeover — union steward overtime",
+     "plain": [
+      "the Ironwood Arena concession takeover",
+      "the Ironwood Arena exclusivity buyout",
+      "the arena concession takeover"
+     ],
+     "oblique": [
+      "the sports venue food contract",
+      "the right to serve at the big stadium",
+      "paying to push out the incumbent vendor",
+      "an exclusive deal at the home team's building",
+      "what it cost to win the game-day business",
+      "the buy-in for the new tenant program",
+      "a prestigious location with steep entry costs",
+      "the arena foodservice opportunity",
+      "getting a foot in the door at the coliseum",
+      "the fee to secure a marquee account",
+      "entry cost for a major sporting facility",
+      "the privilege of feeding fans",
+      "an up-front price for the largest account we pursued",
+      "gaining access to a high-traffic facility",
+      "the hockey and basketball crowd contract",
+      "the large public venue win"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "vineyard",
+     "vendor": "Oakhill Vineyard Estates",
+     "memos": [
+      "Inv exclusive weekend buyout — harvest festival",
+      "Svc exclusive weekend buyout — grounds crew overage"
+     ],
+     "cross_memo": "Exclusive weekend buyout — liability rider endorsement",
+     "plain": [
+      "the exclusive weekend buyout",
+      "the harvest festival buyout",
+      "the exclusive buyout grounds crew"
+     ],
+     "oblique": [
+      "renting an entire winery for a corporate retreat",
+      "the countryside site we booked for a client's party",
+      "paying a premium so nobody else could be on property",
+      "a rural location chosen by the sponsor",
+      "the grapes-and-hills setting",
+      "a private estate reserved for one group",
+      "securing the whole property for two days",
+      "what the incentive trip required in site costs",
+      "a scenic location far from the city",
+      "the autumn celebration at the farm",
+      "the fee to close the grounds to the public",
+      "taking over a working agricultural estate",
+      "the picturesque venue the executive selected",
+      "a location surcharge on a premium client",
+      "the pastoral booking",
+      "space we reserved exclusively for one guest list"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Beverage & Bar Supplies",
+   "aliases": [
+    "bar costs",
+    "beverage spend",
+    "bar supplies",
+    "liquor and mixers",
+    "beverage purchasing"
+   ],
+   "narrative": [
+    "Bar costs",
+    "Beverage spend",
+    "Bar supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Capital Wine & Spirits Distributors",
+     "base": 13600,
+     "memo": "Inv wine beer and spirits order"
+    },
+    {
+     "vendor": "Fizzworks Mixers",
+     "base": 3900,
+     "memo": "Inv sodas mixers and juices"
+    },
+    {
+     "vendor": "Frostline Ice Co",
+     "base": 2200,
+     "memo": "Svc bagged and block ice delivery"
+    }
+   ],
+   "events": [
+    {
+     "key": "whisky",
+     "vendor": "Capital Wine & Spirits Distributors",
+     "memos": [
+      "Inv single-cask Speyside pour — founders dinner",
+      "Inv single-cask Speyside pour — allocation surcharge"
+     ],
+     "cross_memo": "Single-cask Speyside pour — engraved decanter set",
+     "plain": [
+      "the single-cask Speyside pour",
+      "the Speyside allocation surcharge",
+      "the single-cask founders dinner pour"
+     ],
+     "oblique": [
+      "the ultra-rare amber spirit served to VIP guests",
+      "a bottle collector's prize poured by the glass",
+      "what the company's founders were toasted with",
+      "a trophy item for an anniversary dinner",
+      "costly aged liquor requested by the host",
+      "the scarce import behind the head table",
+      "a top-shelf indulgence for a handful of guests",
+      "vintage spirits with a waiting list",
+      "a premium dram the client asked for by name",
+      "the luxury drink order",
+      "ceremonial toast supplies",
+      "a celebratory splurge from the cellar",
+      "an exceptional bottle we had to special-order",
+      "the very expensive after-dinner offering",
+      "what the principal investor wanted in his glass",
+      "rarefied pours for a milestone dinner"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "mocktail",
+     "vendor": "Verdant Craft Beverage Lab",
+     "memos": [
+      "Inv zero-proof cocktail program — signature syrups",
+      "Svc zero-proof cocktail program — bartender training"
+     ],
+     "cross_memo": "Zero-proof cocktail program — menu card printing",
+     "plain": [
+      "the zero-proof cocktail program",
+      "the zero-proof signature syrups",
+      "the zero-proof bartender training"
+     ],
+     "oblique": [
+      "alcohol-free drinks for health-minded clients",
+      "the new non-drinking menu for wellness events",
+      "a response to guests who skip the open bar",
+      "crafted beverages for sober guests",
+      "a program the sales team launched this spring",
+      "teaching staff to build fancy drinks without spirits",
+      "the sophisticated option for nondrinkers",
+      "an offering aimed at corporate wellness accounts",
+      "the mixology expansion for the dry crowd",
+      "the trend we decided to chase",
+      "new recipes and instruction for the bar team",
+      "a menu category that did not exist before",
+      "investment in a growing customer preference",
+      "the teetotaler-friendly lineup",
+      "the clean-living drink initiative",
+      "a product launch for the bar side"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Kitchen Repairs & Maintenance",
+   "aliases": [
+    "kitchen maintenance",
+    "repairs",
+    "commissary upkeep",
+    "equipment repairs",
+    "kitchen repair spend"
+   ],
+   "narrative": [
+    "Kitchen maintenance",
+    "Repairs",
+    "Commissary upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hearth & Flame Appliance Service",
+     "base": 4800,
+     "memo": "Mnt oven and range service contract"
+    },
+    {
+     "vendor": "CleanSweep Hood Services",
+     "base": 2600,
+     "memo": "Svc hood and exhaust cleaning"
+    },
+    {
+     "vendor": "PestGuard Environmental",
+     "base": 1200,
+     "memo": "Mnt monthly pest control visit"
+    }
+   ],
+   "events": [
+    {
+     "key": "floor",
+     "vendor": "Hearth & Flame Appliance Service",
+     "memos": [
+      "Inv quarry tile regrout — dish pit slab",
+      "Svc quarry tile regrout — drain line reroute"
+     ],
+     "cross_memo": "Quarry tile regrout — health inspection recheck fee",
+     "plain": [
+      "the quarry tile regrout",
+      "the dish pit slab regrout",
+      "the quarry tile drain reroute"
+     ],
+     "oblique": [
+      "fixing the surface people walk on in the back of house",
+      "a flooring problem flagged by the inspector",
+      "the wet-area surface that was crumbling",
+      "work on the ground under the sinks",
+      "a hazardous condition we had to correct",
+      "slippery conditions near the washing station",
+      "the ground-level repair nobody wanted to see",
+      "restoring the base of the production area",
+      "a sanitation citation follow-up",
+      "what the county told us to fix before reopening",
+      "masonry work in the dishwashing zone",
+      "the leaking underfloor plumbing job",
+      "addressing pooled water in the kitchen",
+      "the structural issue beneath our feet",
+      "the kitchen's worst-looking corner",
+      "a mandated corrective project"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "blast",
+     "vendor": "Arctic Chill Commercial Repair",
+     "memos": [
+      "Inv blast chiller replacement — control board failure",
+      "Svc blast chiller replacement — crane lift and install"
+     ],
+     "cross_memo": "Blast chiller replacement — disposal of failed unit",
+     "plain": [
+      "the blast chiller replacement",
+      "the blast chiller crane install",
+      "the blast chiller control board failure"
+     ],
+     "oblique": [
+      "swapping out the machine that cools cooked food fast",
+      "a dead unit that stopped our batch prep",
+      "new gear for rapid temperature drops",
+      "the critical appliance that gave out in the middle of peak",
+      "equipment that had to be hoisted through the roof hatch",
+      "what the food safety plan depends on",
+      "replacing something we could not work without",
+      "an unplanned capital-style fix",
+      "the apparatus used after roasting and braising",
+      "a new unit to restore production capacity",
+      "the failure that halted prepping ahead of events",
+      "an aging machine finally quitting",
+      "the large stainless box we replaced",
+      "a breakdown that forced a purchase",
+      "the device that protects cooked product",
+      "what the commissary needed back immediately"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

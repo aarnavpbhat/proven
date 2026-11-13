@@ -1,0 +1,708 @@
+{
+ "slug": "locksmith-and-safe-company",
+ "industry": "locksmith and safe company",
+ "entities": [
+  "Keystone Lock & Vault",
+  "Ironwood Security Services",
+  "Tumbler & Bolt Co.",
+  "Harborside Safe & Lock",
+  "Sentinel Key Works"
+ ],
+ "accounts": [
+  {
+   "name": "Key Blanks and Cylinder Inventory",
+   "aliases": [
+    "key blanks",
+    "cylinders",
+    "cylinder stock",
+    "blank inventory",
+    "keyway stock"
+   ],
+   "narrative": [
+    "Key blanks",
+    "Cylinder stock",
+    "Blank inventory"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brassline Key Supply",
+     "base": 9200,
+     "memo": "Brassline Key Supply — monthly key blank replenishment"
+    },
+    {
+     "vendor": "Pinwell Cylinder Works",
+     "base": 7400,
+     "memo": "Pinwell Cylinder Works — standard cylinder restock"
+    },
+    {
+     "vendor": "Cutwright Distribution",
+     "base": 3100,
+     "memo": "Cutwright Distribution — keyway assortment"
+    }
+   ],
+   "events": [
+    {
+     "key": "hospitality_rekey",
+     "vendor": "Pinwell Cylinder Works",
+     "memos": [
+      "Pinwell Cylinder Works — Grandview Hotel rekey — master pin kits",
+      "Pinwell Cylinder Works — Grandview Hotel rekey — bulk cores"
+     ],
+     "cross_memo": "Grandview Hotel rekey — overnight freight",
+     "plain": [
+      "the Grandview Hotel rekey",
+      "the Grandview rekey project",
+      "the Grandview Hotel rekey order"
+     ],
+     "oblique": [
+      "a big order from a downtown lodging client",
+      "swapping every guest room mechanism in one property",
+      "the lodging account that wanted new keys fast",
+      "a large hospitality job",
+      "hundreds of doors changed over at once",
+      "the hotel chain contract",
+      "an unusually large single customer order",
+      "a client reopening after renovation",
+      "a one-time bulk conversion for a lodging customer",
+      "the overnight push to meet an opening deadline",
+      "a sizable multi-floor changeover",
+      "our biggest commercial order of the quarter",
+      "a customer who needed every lock refreshed",
+      "stock pulled forward for a major tourism client",
+      "a sudden surge in demand from one account",
+      "the guest-room conversion"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "transponder_recall",
+     "vendor": "Siliconkey Wholesale",
+     "memos": [
+      "Siliconkey Wholesale — transponder chip recall — replacement fobs",
+      "Siliconkey Wholesale — transponder chip recall — reprogramming credits"
+     ],
+     "cross_memo": "Transponder chip recall — technician reflash hours",
+     "plain": [
+      "the transponder chip recall",
+      "the transponder recall",
+      "the chip recall replacements"
+     ],
+     "oblique": [
+      "a manufacturer defect forcing us to replace sold products",
+      "remaking automotive remotes that stopped working",
+      "a faulty batch from an overseas maker",
+      "replacing parts we had already delivered",
+      "a quality problem upstream",
+      "customers coming back with dead car keys",
+      "the defective lot we had to make good on",
+      "goodwill replacements for vehicle owners",
+      "a supplier mistake we absorbed",
+      "fixing something we had already sold",
+      "a batch that failed in the field",
+      "remakes for dealership customers",
+      "the faulty production run",
+      "warranty-style replacements",
+      "an upstream defect that landed on our books",
+      "redoing work for unhappy drivers"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Safe Parts and Hardware",
+   "aliases": [
+    "safe parts",
+    "safe hardware",
+    "vault hardware",
+    "lock bodies",
+    "safe components"
+   ],
+   "narrative": [
+    "Safe parts",
+    "Vault hardware",
+    "Safe components"
+   ],
+   "recurring": [
+    {
+     "vendor": "Anvilgate Steel Components",
+     "base": 14500,
+     "memo": "Anvilgate Steel Components — relocker and bolt work assemblies"
+    },
+    {
+     "vendor": "Dialtech Mechanisms",
+     "base": 6800,
+     "memo": "Dialtech Mechanisms — combination dial units"
+    }
+   ],
+   "events": [
+    {
+     "key": "bank_vault_door",
+     "vendor": "Anvilgate Steel Components",
+     "memos": [
+      "Anvilgate Steel Components — Lakeshore Credit Union vault door — hinge forgings",
+      "Anvilgate Steel Components — Lakeshore Credit Union vault door — time lock housing"
+     ],
+     "cross_memo": "Lakeshore Credit Union vault door — crane rigging",
+     "plain": [
+      "the Lakeshore Credit Union vault door",
+      "the Lakeshore vault door",
+      "the Credit Union vault door job"
+     ],
+     "oblique": [
+      "a heavy custom fabrication for a financial client",
+      "a one-off installation that needed a crane",
+      "a major build for a savings institution",
+      "an oversized steel project",
+      "replacing an aging entry barrier at a local lender",
+      "a bespoke high-security order",
+      "the largest custom piece we built this year",
+      "a project that took months of lead time",
+      "a branch renovation by a regional bank",
+      "specialty metalwork ordered by a lender",
+      "a rare commission requiring engineering sign-off",
+      "the fabricated entry system for a money client",
+      "a structural upgrade at a financial branch",
+      "unusually heavy freight and fittings",
+      "a custom order outside our normal catalog",
+      "the cash-handling customer's secure room"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "gunsafe_liquidation",
+     "vendor": "Redfield Cabinet Liquidators",
+     "memos": [
+      "Redfield Cabinet Liquidators — gun cabinet closeout lot — pallet purchase",
+      "Redfield Cabinet Liquidators — gun cabinet closeout lot — latch assemblies"
+     ],
+     "cross_memo": "Gun cabinet closeout lot — warehouse racking",
+     "plain": [
+      "the gun cabinet closeout lot",
+      "the cabinet closeout lot",
+      "the gun cabinet closeout purchase"
+     ],
+     "oblique": [
+      "a bulk bargain buy from a retailer exiting the business",
+      "picking up discounted units from a shuttered dealer",
+      "a one-time opportunistic purchase",
+      "stocking up while prices were low",
+      "a distressed seller offloading product",
+      "buying a whole pallet load at once",
+      "inventory we acquired below normal cost",
+      "an offer we could not pass up",
+      "extra stock for the spring selling season",
+      "a deal with a closing storefront",
+      "a large block of goods bought in one go",
+      "resale units secured at a steep discount",
+      "a surprise chance to add to our shelves",
+      "product bought ahead of demand",
+      "a one-off wholesale windfall",
+      "the seller who needed cash quickly"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Field Technician Vehicles",
+   "aliases": [
+    "fleet",
+    "van fleet",
+    "service vans",
+    "fleet costs",
+    "vehicle upkeep"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Service vans",
+    "Vehicle upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadrunner Fuel Cards",
+     "base": 11800,
+     "memo": "Roadrunner Fuel Cards — monthly fuel statement"
+    },
+    {
+     "vendor": "Metro Fleet Leasing",
+     "base": 16500,
+     "memo": "Metro Fleet Leasing — van lease payments"
+    },
+    {
+     "vendor": "Axlebridge Tire and Brake",
+     "base": 3900,
+     "memo": "Axlebridge Tire and Brake — routine maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "hailstorm",
+     "vendor": "Axlebridge Tire and Brake",
+     "memos": [
+      "Axlebridge Tire and Brake — hailstorm damage — body panel repair",
+      "Axlebridge Tire and Brake — hailstorm damage — windshield replacement"
+     ],
+     "cross_memo": "Hailstorm damage — insurance deductible",
+     "plain": [
+      "the hailstorm damage",
+      "the hailstorm repairs",
+      "the hailstorm body work"
+     ],
+     "oblique": [
+      "weather that dented a dozen vehicles overnight",
+      "a freak spring event in the parking lot",
+      "getting the dented work trucks presentable again",
+      "an act of nature at the depot",
+      "cosmetic and glass repairs after the weather",
+      "the afternoon when ice fell from the sky",
+      "a claim we partly paid ourselves",
+      "several vehicles sidelined at once",
+      "damage nobody could have prevented",
+      "pulling units off the road for panel work",
+      "the storm that hit our yard",
+      "repairing what the clouds did to our trucks",
+      "a sudden cluster of repair orders",
+      "covered losses with a deductible attached",
+      "the bad-weather incident",
+      "vans out of rotation for body shops"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "gps_rollout",
+     "vendor": "Wayfinder Telematics",
+     "memos": [
+      "Wayfinder Telematics — dispatch tracker rollout — hardware units",
+      "Wayfinder Telematics — dispatch tracker rollout — installation labor"
+     ],
+     "cross_memo": "Dispatch tracker rollout — monthly platform subscription",
+     "plain": [
+      "the dispatch tracker rollout",
+      "the tracker rollout hardware",
+      "the dispatch tracker installation"
+     ],
+     "oblique": [
+      "putting location devices in every truck",
+      "a push to see where crews are at all times",
+      "a new system the operations manager requested",
+      "equipment to improve route efficiency",
+      "a pilot that became companywide",
+      "technology bought to cut idle time",
+      "gadgets wired under dashboards",
+      "a one-time installation across the whole group",
+      "visibility into daily driving habits",
+      "an initiative to reduce overtime",
+      "tools for dispatchers to reassign jobs",
+      "a project championed by operations",
+      "hardware plus labor for every vehicle",
+      "the upgrade to how we send crews out",
+      "a response to customer complaints about arrival windows",
+      "the monitoring project"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Technician Training and Licensing",
+   "aliases": [
+    "training",
+    "licensing",
+    "certifications",
+    "tech training",
+    "license fees"
+   ],
+   "narrative": [
+    "Training",
+    "Licensing",
+    "Certifications"
+   ],
+   "recurring": [
+    {
+     "vendor": "Guildhall Locksmith Association",
+     "base": 2400,
+     "memo": "Guildhall Locksmith Association — membership and exam fees"
+    },
+    {
+     "vendor": "State Board Licensing Office",
+     "base": 1800,
+     "memo": "State Board Licensing Office — technician license renewals"
+    }
+   ],
+   "events": [
+    {
+     "key": "safecracking_course",
+     "vendor": "Guildhall Locksmith Association",
+     "memos": [
+      "Guildhall Locksmith Association — advanced manipulation workshop — tuition",
+      "Guildhall Locksmith Association — advanced manipulation workshop — lab materials"
+     ],
+     "cross_memo": "Advanced manipulation workshop — travel stipend",
+     "plain": [
+      "the advanced manipulation workshop",
+      "the manipulation workshop tuition",
+      "the advanced manipulation course"
+     ],
+     "oblique": [
+      "sending senior staff to learn a rare skill",
+      "a week-long intensive for our best people",
+      "an investment in opening difficult containers without damage",
+      "specialized schooling in another state",
+      "the upskilling push for veteran crews",
+      "a course that lets us bid on premium jobs",
+      "education that unlocks higher-margin work",
+      "several employees away for a full week",
+      "a hands-on seminar with practice equipment",
+      "expertise we previously outsourced",
+      "a credential our competitors lack",
+      "classroom time for the top technicians",
+      "a skills expansion program",
+      "coaching from a nationally known instructor",
+      "the cohort that attended together",
+      "learning a craft that few people practice"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "compliance_audit",
+     "vendor": "Bridgewater Regulatory Consulting",
+     "memos": [
+      "Bridgewater Regulatory Consulting — bonding compliance audit — onsite review",
+      "Bridgewater Regulatory Consulting — bonding compliance audit — remediation plan"
+     ],
+     "cross_memo": "Bonding compliance audit — surety renewal premium",
+     "plain": [
+      "the bonding compliance audit",
+      "the compliance audit review",
+      "the bonding audit remediation"
+     ],
+     "oblique": [
+      "an outside examiner checking our paperwork",
+      "a regulator's surprise request for documentation",
+      "making sure we meet requirements for working in schools",
+      "an inspection that found gaps to close",
+      "an engagement our insurer insisted on",
+      "a review of how we handle sensitive customer records",
+      "the examiner who spent days at our office",
+      "consultants brought in to fix our processes",
+      "a government-mandated checkup",
+      "proof we needed to keep our standing",
+      "a gap analysis followed by cleanup",
+      "the assessment that preceded a renewal",
+      "hiring outsiders to grade our practices",
+      "a requirement for keeping public contracts",
+      "paperwork overhaul after an external review",
+      "the third-party review of our procedures"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Emergency Lockout Dispatch",
+   "aliases": [
+    "lockout dispatch",
+    "after-hours calls",
+    "emergency calls",
+    "call center",
+    "dispatch services"
+   ],
+   "narrative": [
+    "Lockout dispatch",
+    "After-hours calls",
+    "Emergency calls"
+   ],
+   "recurring": [
+    {
+     "vendor": "Nightowl Answering Service",
+     "base": 8700,
+     "memo": "Nightowl Answering Service — overnight call handling"
+    },
+    {
+     "vendor": "Rapidcall Dispatch Software",
+     "base": 4200,
+     "memo": "Rapidcall Dispatch Software — monthly platform license"
+    },
+    {
+     "vendor": "Lockline Lead Partners",
+     "base": 12400,
+     "memo": "Lockline Lead Partners — per-call lead fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "blizzard_surge",
+     "vendor": "Nightowl Answering Service",
+     "memos": [
+      "Nightowl Answering Service — blizzard weekend surge — overflow agents",
+      "Nightowl Answering Service — blizzard weekend surge — holiday premium"
+     ],
+     "cross_memo": "Blizzard weekend surge — technician overtime meals",
+     "plain": [
+      "the blizzard weekend surge",
+      "the blizzard surge overflow",
+      "the blizzard weekend premium"
+     ],
+     "oblique": [
+      "a flood of stranded people needing entry",
+      "an unusually busy stretch caused by awful conditions",
+      "phones ringing nonstop for two days",
+      "extra headcount to handle the rush",
+      "a spike in calls from frozen car doors",
+      "the weekend nobody wanted to work",
+      "demand far above anything we planned for",
+      "customers locked out in the cold",
+      "temporary staffing to catch every call",
+      "a short burst of premium-priced coverage",
+      "road closures that multiplied requests",
+      "the unusual peak in requests",
+      "hours of overflow that we paid extra for",
+      "an emergency staffing decision",
+      "the hectic period when lines were jammed",
+      "more calls than the normal team could take"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "ppc_campaign",
+     "vendor": "Clickharbor Marketing",
+     "memos": [
+      "Clickharbor Marketing — summer search blitz — keyword bidding",
+      "Clickharbor Marketing — summer search blitz — landing page build"
+     ],
+     "cross_memo": "Summer search blitz — call tracking numbers",
+     "plain": [
+      "the summer search blitz",
+      "the search blitz bidding",
+      "the summer blitz landing pages"
+     ],
+     "oblique": [
+      "a push to appear first when people look online",
+      "advertising meant to win customers from rivals",
+      "a seasonal campaign the owner approved",
+      "paying to be seen at the top of results",
+      "an experiment in generating more inbound requests",
+      "outside agency work to boost call volume",
+      "a trial of paid promotion",
+      "spend aimed at the busiest months",
+      "a temporary marketing burst",
+      "the agency we hired for a few weeks",
+      "buying visibility during peak season",
+      "a campaign with a fixed end date",
+      "promotion designed to fill technician schedules",
+      "web advertising tied to a launch",
+      "an attempt to grow share in two zip codes",
+      "the outreach effort to new neighborhoods"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Shop Tooling and Equipment",
+   "aliases": [
+    "shop tooling",
+    "key machines",
+    "equipment purchases",
+    "workshop tools",
+    "tool and die spend"
+   ],
+   "narrative": [
+    "Shop tooling",
+    "Key machines",
+    "Workshop tools"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Cutter Supply",
+     "base": 5600,
+     "memo": "Precision Cutter Supply — cutter wheels and jaws"
+    },
+    {
+     "vendor": "Benchmark Tool Rental",
+     "base": 2900,
+     "memo": "Benchmark Tool Rental — drill and press rental"
+    }
+   ],
+   "events": [
+    {
+     "key": "laser_cutter",
+     "vendor": "Precision Cutter Supply",
+     "memos": [
+      "Precision Cutter Supply — laser key duplicator purchase — machine unit",
+      "Precision Cutter Supply — laser key duplicator purchase — calibration kit"
+     ],
+     "cross_memo": "Laser key duplicator purchase — extended service plan",
+     "plain": [
+      "the laser key duplicator purchase",
+      "the laser duplicator machine",
+      "the laser duplicator calibration"
+     ],
+     "oblique": [
+      "a major capital item for the back room",
+      "a machine that cuts high-security keys faster",
+      "an upgrade replacing equipment from the last decade",
+      "a purchase that will pay for itself over time",
+      "new gear the shop foreman had requested",
+      "the expensive device we finally approved",
+      "equipment enabling work we used to turn away",
+      "a step up in what we can produce",
+      "the machine that arrived on a pallet",
+      "a financing decision for a big-ticket asset",
+      "an addition to the production floor",
+      "modern equipment replacing a worn-out unit",
+      "the shiny new centerpiece of the workshop",
+      "a single costly acquisition",
+      "the investment the partners debated for a year",
+      "a faster way to produce complicated blanks"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "bench_flood",
+     "vendor": "Dryline Restoration Services",
+     "memos": [
+      "Dryline Restoration Services — basement pipe burst — water extraction",
+      "Dryline Restoration Services — basement pipe burst — dehumidifier rental"
+     ],
+     "cross_memo": "Basement pipe burst — ruined workbench replacement",
+     "plain": [
+      "the basement pipe burst",
+      "the pipe burst extraction",
+      "the basement pipe burst cleanup"
+     ],
+     "oblique": [
+      "an overnight plumbing failure in the lower level",
+      "a mess that soaked the storage area",
+      "emergency cleanup after something broke inside the wall",
+      "a facility accident that halted work for days",
+      "specialists drying out the building",
+      "an unexpected event that nobody budgeted",
+      "getting the damp space usable again",
+      "a failure of aging infrastructure",
+      "the morning we found standing water",
+      "remediation crews on short notice",
+      "a sudden disaster at the shop",
+      "restoration work with rental equipment on site",
+      "an insurance claim still in process",
+      "tools and benches that could not be saved",
+      "repair of what the leak ruined",
+      "the water incident"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Bonding",
+   "aliases": [
+    "insurance",
+    "bonding",
+    "liability coverage",
+    "surety premiums",
+    "policy premiums"
+   ],
+   "narrative": [
+    "Insurance",
+    "Bonding",
+    "Liability coverage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shieldpoint Insurance Group",
+     "base": 9800,
+     "memo": "Shieldpoint Insurance Group — general liability premium"
+    },
+    {
+     "vendor": "Surety Anchor Bonding",
+     "base": 3300,
+     "memo": "Surety Anchor Bonding — blanket fidelity bond"
+    }
+   ],
+   "events": [
+    {
+     "key": "claim_settlement",
+     "vendor": "Shieldpoint Insurance Group",
+     "memos": [
+      "Shieldpoint Insurance Group — Oakmont warehouse burglary claim — deductible",
+      "Shieldpoint Insurance Group — Oakmont warehouse burglary claim — adjuster fees"
+     ],
+     "cross_memo": "Oakmont warehouse burglary claim — forensic locksmith review",
+     "plain": [
+      "the Oakmont warehouse burglary claim",
+      "the Oakmont burglary claim deductible",
+      "the Oakmont warehouse claim"
+     ],
+     "oblique": [
+      "a customer alleging our work failed to protect them",
+      "an incident at a client's building that came back on us",
+      "a payout tied to a break-in",
+      "an uncomfortable dispute with a policyholder",
+      "money we had to put up before coverage kicked in",
+      "a legal matter involving a stolen inventory",
+      "the case that landed on the owner's desk",
+      "a dispute settled out of court",
+      "a loss at a customer site we were blamed for",
+      "paperwork from an unfortunate theft",
+      "the claim that took months to resolve",
+      "a third party's property that disappeared",
+      "what we owed before the insurer paid",
+      "a situation with attorneys involved",
+      "an expensive disagreement over responsibility",
+      "a single event that tested our coverage"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "cyber_policy",
+     "vendor": "Firewall Underwriters",
+     "memos": [
+      "Firewall Underwriters — data breach rider — first year premium",
+      "Firewall Underwriters — data breach rider — risk assessment fee"
+     ],
+     "cross_memo": "Data breach rider — security scan subscription",
+     "plain": [
+      "the data breach rider",
+      "the breach rider premium",
+      "the data breach rider assessment"
+     ],
+     "oblique": [
+      "a new type of protection our broker pushed",
+      "coverage for something we never insured before",
+      "protection against hackers going after customer files",
+      "an add-on prompted by a competitor's incident",
+      "a policy that surprised us with its cost",
+      "a precaution about stolen digital records",
+      "a lender's requirement for new coverage",
+      "an agent's recommendation after a conversation",
+      "safeguards for the electronic key-code database",
+      "fresh protection for information we store",
+      "an annual payment for a risk previously ignored",
+      "a hedge against online threats",
+      "the first-time purchase of a brand new cover",
+      "an extension requested by a major commercial customer",
+      "a step toward satisfying a client contract",
+      "coverage for the computers rather than the vans"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

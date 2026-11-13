@@ -1,0 +1,708 @@
+{
+ "slug": "scuba-dive-shop-and-training-center",
+ "industry": "scuba dive shop and training center",
+ "entities": [
+  "Blue Fathom Dive Collective",
+  "Coral Ledge Divers LLC",
+  "Reefside Scuba & Training Inc",
+  "Tidewater Aquatics Group",
+  "Kelpline Dive Academy"
+ ],
+ "accounts": [
+  {
+   "name": "Air Fills and Gas Supply",
+   "aliases": [
+    "gas",
+    "gas supply",
+    "air and gas costs",
+    "tank fills",
+    "breathing gas spend"
+   ],
+   "narrative": [
+    "Gas supply",
+    "Air and gas costs",
+    "Breathing gas spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pelagic Gas & Welding",
+     "base": 6200,
+     "memo": "Monthly oxygen and helium cylinder rental"
+    },
+    {
+     "vendor": "Summit Industrial Gases",
+     "base": 3400,
+     "memo": "Nitrox blending stock replenishment"
+    }
+   ],
+   "events": [
+    {
+     "key": "hydrotest",
+     "vendor": "Pelagic Gas & Welding",
+     "memos": [
+      "Hydrostatic cylinder retest batch — pressure vessel certification",
+      "Hydrostatic cylinder retest batch — valve replacement kits"
+     ],
+     "cross_memo": "Hydrostatic cylinder retest batch — loaner steel tanks",
+     "plain": [
+      "the hydrostatic cylinder retest batch",
+      "the hydrostatic retest batch",
+      "the cylinder retest batch certification"
+     ],
+     "oblique": [
+      "getting the old steel inventory legal to fill again",
+      "the five-year inspection cycle coming due",
+      "tanks that could not be filled until they passed testing",
+      "the safety recertification push",
+      "compliance work on the aging rental fleet",
+      "stamped dates expiring on our stock",
+      "the mandatory periodic safety check",
+      "re-qualifying equipment before the busy season",
+      "regulatory paperwork on the pressure inventory",
+      "a big batch of items pulled for inspection",
+      "what the inspector required",
+      "renewing the shelf life of rental stock",
+      "the overdue checkup",
+      "keeping the rental racks fillable",
+      "regulation-driven upkeep on aging steel",
+      "the inspection backlog we finally cleared"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "quarryfill",
+     "vendor": "Granite Rim Compression Services",
+     "memos": [
+      "Granite quarry gas contract — trimix banking",
+      "Granite quarry gas contract — emergency supply drop"
+     ],
+     "cross_memo": "Granite quarry gas contract — boat transport charter",
+     "plain": [
+      "the granite quarry gas contract",
+      "the granite quarry trimix banking",
+      "the granite quarry supply drop"
+     ],
+     "oblique": [
+      "the deep technical course we ran offsite",
+      "a specialty program needing exotic mixes",
+      "extra supply for the advanced students",
+      "the weeklong inland expedition",
+      "gear and mixes hauled to a distant site",
+      "a one-time course with unusual requirements",
+      "the depth-certification cohort",
+      "supporting the advanced trainees",
+      "a short-notice demand for rare blends",
+      "the technical diving week",
+      "stocking up for the instructor-led trip",
+      "an unusual request from the course director",
+      "the special session for experienced divers",
+      "the remote training weekend",
+      "the big offsite class",
+      "a premium program run away from the shop"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Rental Fleet Maintenance",
+   "aliases": [
+    "rental gear",
+    "rental fleet",
+    "fleet upkeep",
+    "gear servicing",
+    "rental maintenance spend"
+   ],
+   "narrative": [
+    "Rental gear",
+    "Fleet upkeep",
+    "Gear servicing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Abyss Regulator Service Co",
+     "base": 4800,
+     "memo": "Regulator annual service kits"
+    },
+    {
+     "vendor": "Seaworthy Wetsuit Repair",
+     "base": 1900,
+     "memo": "Neoprene repair and glue supplies"
+    },
+    {
+     "vendor": "Divemaster Parts Depot",
+     "base": 2600,
+     "memo": "O-rings and hose replacements"
+    }
+   ],
+   "events": [
+    {
+     "key": "bcdrecall",
+     "vendor": "Abyss Regulator Service Co",
+     "memos": [
+      "Inflator recall campaign — manufacturer retrofit labor",
+      "Inflator recall campaign — replacement dump valves"
+     ],
+     "cross_memo": "Inflator recall campaign — customer notification mailing",
+     "plain": [
+      "the inflator recall campaign",
+      "the inflator recall retrofit",
+      "the inflator recall valves"
+     ],
+     "oblique": [
+      "a safety notice from the maker",
+      "pulling jackets off the floor for a fix",
+      "an unplanned product defect response",
+      "the urgent swap on vest hardware",
+      "a manufacturer-mandated repair",
+      "customers' buoyancy gear needing attention",
+      "an issue we did not cause but had to resolve",
+      "the defect bulletin",
+      "taking gear out of service for modification",
+      "a faulty component across our stock",
+      "the corrective work the maker required",
+      "unexpected fixes on dozens of units",
+      "the notice that landed in our inbox",
+      "what the supplier told us to replace",
+      "the mass fix on flotation equipment",
+      "keeping the shop compliant with a defect alert"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "stormwash",
+     "vendor": "Harborline Restoration Group",
+     "memos": [
+      "Typhoon flooding cleanup — storage bay dehumidification",
+      "Typhoon flooding cleanup — mold remediation"
+     ],
+     "cross_memo": "Typhoon flooding cleanup — emergency pump rental",
+     "plain": [
+      "the typhoon flooding cleanup",
+      "the typhoon flooding remediation",
+      "the typhoon flooding dehumidification"
+     ],
+     "oblique": [
+      "the weather event that soaked the back room",
+      "drying out the gear storage area",
+      "damage from the big storm last quarter",
+      "salvaging equipment after the surge",
+      "the rain that got into the building",
+      "an act of nature hitting our inventory",
+      "restoring the warehouse to usable condition",
+      "water damage from an outside force",
+      "recovering stock that sat in water",
+      "the cleanup crew we had to call",
+      "getting the back rooms habitable again",
+      "what the storm did to our racks",
+      "a rough week at the shop",
+      "emergency work after the deluge",
+      "environmental damage to the storage space",
+      "the post-storm recovery effort"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Dive Boat Operations",
+   "aliases": [
+    "boat",
+    "boat ops",
+    "vessel costs",
+    "charter operations",
+    "boat running costs"
+   ],
+   "narrative": [
+    "Boat ops",
+    "Vessel costs",
+    "Boat running costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Dockside Marine Fuel",
+     "base": 9500,
+     "memo": "Diesel fuel for dive vessels"
+    },
+    {
+     "vendor": "Anchorage Harbor Authority",
+     "base": 3800,
+     "memo": "Mooring and slip fees"
+    },
+    {
+     "vendor": "Saltwater Marine Insurance",
+     "base": 4200,
+     "memo": "Hull and liability premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "repower",
+     "vendor": "Dockside Marine Fuel",
+     "memos": [
+      "Starboard outboard repower — fuel system flush",
+      "Starboard outboard repower — polishing and filtration"
+     ],
+     "cross_memo": "Starboard outboard repower — new engine mounts",
+     "plain": [
+      "the starboard outboard repower",
+      "the starboard repower fuel flush",
+      "the starboard repower filtration"
+     ],
+     "oblique": [
+      "swapping out the tired motor on the big boat",
+      "the propulsion upgrade",
+      "a new heart for the main vessel",
+      "replacing the unit that kept stalling",
+      "getting the primary boat running reliably",
+      "the engine decision we put off for years",
+      "what the captain pushed for",
+      "the mechanical overhaul at the dock",
+      "an investment in dependability on the water",
+      "taking the vessel out of rotation for work",
+      "the equipment that finally gave out",
+      "the retrofit that cut our breakdowns",
+      "refitting the working boat",
+      "propulsion work during the slow season",
+      "the big-ticket item at the marina",
+      "the powerplant replacement"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "hullhaul",
+     "vendor": "Keelhaul Shipyard & Drydock",
+     "memos": [
+      "Coastal survey haul-out — hull blasting and antifouling",
+      "Coastal survey haul-out — zinc anode replacement"
+     ],
+     "cross_memo": "Coastal survey haul-out — crane lift fees",
+     "plain": [
+      "the coastal survey haul-out",
+      "the coastal survey antifouling",
+      "the coastal survey hull blasting"
+     ],
+     "oblique": [
+      "the boat being out of the water for a stretch",
+      "the scheduled yard stay",
+      "the regulatory inspection of the vessel bottom",
+      "scraping and repainting below the waterline",
+      "the periodic out-of-service period",
+      "work only possible on dry land",
+      "the insurance-required examination",
+      "a stint in the yard",
+      "preparing the vessel for recertification",
+      "the hull attention we owed",
+      "maintenance that cannot happen afloat",
+      "the extended stay ashore",
+      "pulling the boat for its checkup",
+      "the bottom job",
+      "what the surveyor flagged",
+      "the cyclical yard visit"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Instructor Compensation and Certification",
+   "aliases": [
+    "instructors",
+    "instructor pay",
+    "teaching staff costs",
+    "certification fees",
+    "instructor compensation"
+   ],
+   "narrative": [
+    "Instructor pay",
+    "Teaching staff costs",
+    "Certification fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Open Water Staffing Partners",
+     "base": 22000,
+     "memo": "Contract instructor payroll"
+    },
+    {
+     "vendor": "Global Dive Education Board",
+     "base": 5400,
+     "memo": "Instructor membership and liability dues"
+    }
+   ],
+   "events": [
+    {
+     "key": "idcprogram",
+     "vendor": "Global Dive Education Board",
+     "memos": [
+      "Instructor development intensive — candidate exam fees",
+      "Instructor development intensive — examiner travel stipends"
+     ],
+     "cross_memo": "Instructor development intensive — lodging block",
+     "plain": [
+      "the instructor development intensive",
+      "the instructor intensive exam fees",
+      "the development intensive examiner stipends"
+     ],
+     "oblique": [
+      "moving staff up to the next rung",
+      "the career-ladder program for our crew",
+      "growing our own teachers",
+      "the promotion pathway several people took",
+      "an investment in bench strength",
+      "the weeklong qualification event",
+      "readying divemasters to lead classes",
+      "the skills upgrade for junior staff",
+      "examinations our people sat for",
+      "the leadership pipeline we funded",
+      "building capacity for next season",
+      "getting more people authorized to teach",
+      "what the trainees needed to pass",
+      "a cohort advancing in their credentials",
+      "the staff-development push",
+      "developing talent in-house"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "seasonhire",
+     "vendor": "Tropic Seasonal Talent Agency",
+     "memos": [
+      "Peak summer surge staffing — temporary guide placement",
+      "Peak summer surge staffing — agency placement fee"
+     ],
+     "cross_memo": "Peak summer surge staffing — uniform and kit issue",
+     "plain": [
+      "the peak summer surge staffing",
+      "the summer surge guide placement",
+      "the surge staffing agency fee"
+     ],
+     "oblique": [
+      "bringing in extra hands for the crowded months",
+      "covering the tourist rush",
+      "short-term bodies for the busy stretch",
+      "the headcount bump for high season",
+      "filling gaps when bookings exploded",
+      "the outside recruiters we leaned on",
+      "temporary guides for the holiday crush",
+      "the seasonal boost in people",
+      "handling demand beyond our regular crew",
+      "a sprint of hiring that wound down",
+      "the cost of meeting a booking spike",
+      "borrowed labor for a few weeks",
+      "reinforcements for the waterfront",
+      "the extra crew we onboarded fast",
+      "the agency we called when we were short",
+      "scaling up for visitors"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Training Materials and Curriculum",
+   "aliases": [
+    "course materials",
+    "training supplies",
+    "curriculum costs",
+    "student kits",
+    "educational materials spend"
+   ],
+   "narrative": [
+    "Course materials",
+    "Curriculum costs",
+    "Student kits"
+   ],
+   "recurring": [
+    {
+     "vendor": "Certify Press Publishing",
+     "base": 2100,
+     "memo": "Student manuals and logbooks"
+    },
+    {
+     "vendor": "Pixel Dive Media",
+     "base": 1500,
+     "memo": "E-learning access codes"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "Certify Press Publishing",
+     "memos": [
+      "Revised edition rollout — reprinted manuals",
+      "Revised edition rollout — updated dive tables"
+     ],
+     "cross_memo": "Revised edition rollout — instructor guide upgrades",
+     "plain": [
+      "the revised edition rollout",
+      "the revised edition manuals",
+      "the revised edition dive tables"
+     ],
+     "oblique": [
+      "the agency changing its standards",
+      "replacing all the old books on the shelf",
+      "new content we were required to adopt",
+      "the outdated stock we had to scrap",
+      "a program-wide refresh",
+      "what the governing body updated",
+      "getting everyone onto the current version",
+      "the obsolete inventory write-off",
+      "reprinting what changed",
+      "the teaching syllabus overhaul",
+      "material that no longer matched the rules",
+      "an upgrade nobody asked us about",
+      "fresh text for every student",
+      "the refresh cycle that came around",
+      "new releases replacing legacy handouts",
+      "the content change from headquarters"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "pooldeck",
+     "vendor": "AquaVision Simulation Labs",
+     "memos": [
+      "Virtual reef simulator pilot — headset licensing",
+      "Virtual reef simulator pilot — scenario authoring"
+     ],
+     "cross_memo": "Virtual reef simulator pilot — classroom hardware",
+     "plain": [
+      "the virtual reef simulator pilot",
+      "the virtual reef headset licensing",
+      "the virtual reef scenario authoring"
+     ],
+     "oblique": [
+      "experimenting with high-tech teaching tools",
+      "the digital immersion trial",
+      "trying a futuristic way to train beginners",
+      "the technology bet in the classroom",
+      "a tryout of screen-based learning",
+      "an innovation project for the education team",
+      "testing whether students like goggles with displays",
+      "the gadget initiative",
+      "modernizing how we introduce newcomers",
+      "a trial run of software-driven instruction",
+      "the experiment the owner championed",
+      "dry-land practice in an artificial world",
+      "evaluating new learning technology",
+      "the pilot nobody had budgeted",
+      "a forward-looking classroom experiment",
+      "the tech trial for first-timers"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Compressor and Fill Station Upkeep",
+   "aliases": [
+    "compressors",
+    "fill station",
+    "compressor maintenance",
+    "air plant upkeep",
+    "fill room costs"
+   ],
+   "narrative": [
+    "Compressors",
+    "Fill station costs",
+    "Air plant upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bauer Breeze Compressor Service",
+     "base": 3200,
+     "memo": "Scheduled compressor oil and filter service"
+    },
+    {
+     "vendor": "Clearflow Air Quality Labs",
+     "base": 900,
+     "memo": "Quarterly air purity sampling"
+    },
+    {
+     "vendor": "Stackpole Electric Utility",
+     "base": 2700,
+     "memo": "Fill station power usage"
+    }
+   ],
+   "events": [
+    {
+     "key": "airend",
+     "vendor": "Bauer Breeze Compressor Service",
+     "memos": [
+      "High-pressure block replacement — rebuild kit",
+      "High-pressure block replacement — technician overtime"
+     ],
+     "cross_memo": "High-pressure block replacement — temporary fill outsourcing",
+     "plain": [
+      "the high-pressure block replacement",
+      "the high-pressure block rebuild kit",
+      "the block replacement overtime"
+     ],
+     "oblique": [
+      "the machine that stopped pumping",
+      "the core component failing after years of use",
+      "a breakdown at the heart of the fill room",
+      "the unit that quit during a busy weekend",
+      "a sudden failure with a hefty fix",
+      "replacing the main wearing part",
+      "the downtime that cost us",
+      "what went wrong in the back room",
+      "the expensive component reaching end of life",
+      "repairs after the unit seized",
+      "an unexpected equipment death",
+      "getting the pumps back online",
+      "the emergency fix on critical machinery",
+      "the part that wore out",
+      "a failure that halted our fills",
+      "the mechanical casualty"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "coolinglab",
+     "vendor": "Zephyr Environmental Engineering",
+     "memos": [
+      "Ventilation retrofit — exhaust ducting installation",
+      "Ventilation retrofit — carbon monoxide monitoring system"
+     ],
+     "cross_memo": "Ventilation retrofit — electrical subpanel",
+     "plain": [
+      "the ventilation retrofit",
+      "the ventilation retrofit ducting",
+      "the ventilation retrofit monitoring system"
+     ],
+     "oblique": [
+      "improving the airflow in the pump room",
+      "a safety upgrade after the audit",
+      "the building work the fire marshal wanted",
+      "making the workspace healthier for staff",
+      "the facility improvement we were told to make",
+      "tightening up how the room handles fumes",
+      "construction in the machinery area",
+      "the sensors and piping we installed",
+      "regulatory improvements to the premises",
+      "a renovation prompted by inspection results",
+      "the cost of passing the safety review",
+      "reducing hazards where tanks get filled",
+      "an enhancement for worker protection",
+      "what the insurer wanted fixed",
+      "physical changes to the plant room",
+      "the compliance build-out"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Travel and Dive Excursions",
+   "aliases": [
+    "trips",
+    "excursions",
+    "group travel costs",
+    "dive trips",
+    "destination expenses"
+   ],
+   "narrative": [
+    "Trips",
+    "Group travel costs",
+    "Destination expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Island Hopper Charters",
+     "base": 8000,
+     "memo": "Local boat charter day-trip fees"
+    },
+    {
+     "vendor": "Marlin Lodge Partners",
+     "base": 5600,
+     "memo": "Guest lodging block bookings"
+    }
+   ],
+   "events": [
+    {
+     "key": "wreckweek",
+     "vendor": "Marlin Lodge Partners",
+     "memos": [
+      "Wreck explorer expedition — resort buyout deposit",
+      "Wreck explorer expedition — guide gratuities"
+     ],
+     "cross_memo": "Wreck explorer expedition — airfare consolidation",
+     "plain": [
+      "the wreck explorer expedition",
+      "the wreck explorer resort deposit",
+      "the wreck explorer guide gratuities"
+     ],
+     "oblique": [
+      "the flagship overseas adventure",
+      "a signature once-a-year journey",
+      "taking members to a famous site abroad",
+      "the premium getaway we sold out",
+      "a big group heading far from home",
+      "our marquee tour",
+      "the trip customers had been asking for",
+      "sunken history in a distant harbor",
+      "the long-haul voyage",
+      "a marketing showcase on the open ocean",
+      "the destination event for loyal clients",
+      "an elaborate outing for enthusiasts",
+      "what the sales team promoted all spring",
+      "the week our best customers traveled",
+      "a once-in-a-while ambitious tour",
+      "the international group outing"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "permitfees",
+     "vendor": "Marine Sanctuary Trust",
+     "memos": [
+      "Protected reserve access program — annual research permit",
+      "Protected reserve access program — ranger escort fees"
+     ],
+     "cross_memo": "Protected reserve access program — mooring buoy lease",
+     "plain": [
+      "the protected reserve access program",
+      "the protected reserve research permit",
+      "the reserve ranger escort fees"
+     ],
+     "oblique": [
+      "government permission to visit restricted waters",
+      "the fee for entering a conservation zone",
+      "authorization costs from the park authority",
+      "rules governing sensitive habitats",
+      "what it takes to dive where few are allowed",
+      "officials accompanying our groups",
+      "the license that opened new sites",
+      "environmental stewardship obligations",
+      "the toll for pristine locations",
+      "paying for the right to be there",
+      "sanctuary entry requirements",
+      "a regulatory gate to special places",
+      "the supervised access arrangement",
+      "costs imposed by the managing agency",
+      "permission paperwork and chaperones",
+      "the price of exclusive underwater real estate"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

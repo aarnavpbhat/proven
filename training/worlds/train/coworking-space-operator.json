@@ -1,0 +1,830 @@
+{
+ "slug": "coworking-space-operator",
+ "industry": "coworking space operator",
+ "entities": [
+  "Hivemark Workspaces Inc.",
+  "Cardinal Commons LLC",
+  "Tidewater Flex Offices",
+  "Lumen Desk Collective",
+  "Northgate Shared Offices"
+ ],
+ "accounts": [
+  {
+   "name": "Member Hospitality & Pantry",
+   "aliases": [
+    "pantry",
+    "member hospitality",
+    "coffee and snacks",
+    "kitchen supplies",
+    "pantry spend"
+   ],
+   "narrative": [
+    "Pantry",
+    "Member hospitality",
+    "Coffee and snacks"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roastline Coffee Supply",
+     "base": 6200,
+     "memo": "Monthly whole bean and filter delivery"
+    },
+    {
+     "vendor": "FreshCrate Provisions",
+     "base": 4100,
+     "memo": "Weekly fruit and snack restock"
+    },
+    {
+     "vendor": "Brightwell Water Co.",
+     "base": 1300,
+     "memo": "Filtered water cooler service"
+    }
+   ],
+   "events": [
+    {
+     "key": "taproom",
+     "vendor": "Roastline Coffee Supply",
+     "memos": [
+      "Cold Brew Taproom — keg system install",
+      "Cold Brew Taproom — nitro line hardware"
+     ],
+     "cross_memo": "Cold Brew Taproom — electrician permit fee",
+     "plain": [
+      "the cold brew taproom",
+      "the cold brew taproom build",
+      "the taproom keg system"
+     ],
+     "oblique": [
+      "a new drinks bar for members",
+      "the cafe-style upgrade on the ground floor",
+      "beverage amenity we launched",
+      "that nitrogen-infused coffee setup",
+      "the self-serve drinks station",
+      "something to lure tenants out of cheaper rivals",
+      "the perk added after the survey feedback",
+      "a draft-style amenity for the lounge",
+      "equipment so people could pour their own drinks",
+      "the lounge refresh centered on caffeine",
+      "a bar-like feature off the kitchen",
+      "the cafe corner",
+      "members asking for fancier beverages",
+      "new dispensing hardware",
+      "the buildout by the community lounge",
+      "the iced coffee program"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "allergen",
+     "vendor": "SafePlate Culinary Audits",
+     "memos": [
+      "Allergen Compliance Overhaul — kitchen audit",
+      "Allergen Compliance Overhaul — labeling stock"
+     ],
+     "cross_memo": "Allergen Compliance Overhaul — staff certification courses",
+     "plain": [
+      "the allergen compliance overhaul",
+      "the allergen compliance audit",
+      "the allergen labeling program"
+     ],
+     "oblique": [
+      "the health inspector's findings",
+      "getting our food handling up to code",
+      "new rules for shared food areas",
+      "what the county flagged on the last visit",
+      "retraining the front desk on food safety",
+      "relabeling everything that members eat",
+      "a regulatory scare in the lounge",
+      "the cleanup after the failed inspection",
+      "outside experts reviewing how we serve snacks",
+      "paperwork the city demanded",
+      "a hazard review of the shared kitchens",
+      "making the snack program legally safe",
+      "the fix for the citation",
+      "safeguards for people with dietary restrictions",
+      "new signage and stickers across floors",
+      "the certifications our staff had to earn"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Cleaning & Janitorial",
+   "aliases": [
+    "cleaning",
+    "janitorial",
+    "custodial costs",
+    "housekeeping",
+    "cleaning services"
+   ],
+   "narrative": [
+    "Cleaning",
+    "Janitorial",
+    "Custodial costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "SparkleStaff Facility Services",
+     "base": 14500,
+     "memo": "Nightly janitorial contract"
+    },
+    {
+     "vendor": "GreenSweep Supplies",
+     "base": 2600,
+     "memo": "Paper goods and cleaning chemicals"
+    },
+    {
+     "vendor": "PureAir Restroom Care",
+     "base": 1900,
+     "memo": "Restroom sanitation service"
+    }
+   ],
+   "events": [
+    {
+     "key": "flooddry",
+     "vendor": "SparkleStaff Facility Services",
+     "memos": [
+      "Level Four Flood Response — water extraction",
+      "Level Four Flood Response — carpet drying crews"
+     ],
+     "cross_memo": "Level Four Flood Response — temporary desk relocation",
+     "plain": [
+      "the level four flood response",
+      "the level four flood cleanup",
+      "the flood extraction crews"
+     ],
+     "oblique": [
+      "the pipe burst upstairs",
+      "getting the soaked floors usable again",
+      "emergency work after the plumbing failure",
+      "drying out the wet carpets",
+      "damage from the overnight leak",
+      "the incident that closed half a floor",
+      "urgent remediation over a weekend",
+      "the mess from the broken main",
+      "a sudden water problem",
+      "bringing in extra hands at short notice",
+      "the cleanup crews called in at midnight",
+      "what happened after the sprinkler line gave way",
+      "restoring the space for tenants",
+      "the catastrophe near the elevators",
+      "the wet-vac marathon",
+      "emergency labor for the soggy offices"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "deepclean",
+     "vendor": "Crestline Restoration Pros",
+     "memos": [
+      "Pressure Wash Revival — facade scrubbing",
+      "Pressure Wash Revival — lobby stone sealing"
+     ],
+     "cross_memo": "Pressure Wash Revival — scaffold rental",
+     "plain": [
+      "the pressure wash revival",
+      "the pressure wash facade work",
+      "the lobby stone sealing"
+     ],
+     "oblique": [
+      "the exterior refresh before the investor tour",
+      "making the entrance look new again",
+      "a one-time brightening of the outside",
+      "prepping the building for the anniversary event",
+      "getting years of grime off the front",
+      "the curb appeal push",
+      "stonework treatment by the main doors",
+      "a visible spruce-up for prospects",
+      "the project that made the entry sparkle",
+      "outdoor scrubbing ahead of the open house",
+      "the face-lift for street view",
+      "a restoration of the old stone",
+      "work requested by the landlord",
+      "sidewalk and wall brightening",
+      "what the new marketing lead wanted done outside",
+      "the weekend blitz on the exterior"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Furniture & Workspace Fit-Out",
+   "aliases": [
+    "furniture",
+    "fit-out",
+    "desk and chair replacement",
+    "workspace furnishings",
+    "furniture spend"
+   ],
+   "narrative": [
+    "Furniture",
+    "Fit-out",
+    "Workspace furnishings"
+   ],
+   "recurring": [
+    {
+     "vendor": "ErgoForm Seating",
+     "base": 7800,
+     "memo": "Task chair replacement lot"
+    },
+    {
+     "vendor": "Timberline Desk Works",
+     "base": 9400,
+     "memo": "Hot desk surface refresh"
+    },
+    {
+     "vendor": "Softspace Acoustics",
+     "base": 3200,
+     "memo": "Acoustic panel and divider upkeep"
+    }
+   ],
+   "events": [
+    {
+     "key": "phonepods",
+     "vendor": "Softspace Acoustics",
+     "memos": [
+      "Quiet Booth Rollout — soundproof pod units",
+      "Quiet Booth Rollout — ventilation kits"
+     ],
+     "cross_memo": "Quiet Booth Rollout — freight and crane lift",
+     "plain": [
+      "the quiet booth rollout",
+      "the quiet booth units",
+      "the soundproof pod purchase"
+     ],
+     "oblique": [
+      "private call spaces for members",
+      "enclosures people could take meetings in",
+      "requests from sales teams for calm corners",
+      "something to fix the noise complaints",
+      "small rooms inside the open floor",
+      "the amenity added to compete with a rival",
+      "units delivered by crane to the sixth floor",
+      "stand-alone cabins for video calls",
+      "what the survey said was most wanted",
+      "an open-plan problem solver",
+      "insulated mini offices",
+      "the capital push on call privacy",
+      "modular rooms dropped onto the floor",
+      "hardware that stops echo",
+      "the trending add-on tenants asked for",
+      "freestanding cubicle-like shells"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "studio",
+     "vendor": "Foundry & Oak Millwork",
+     "memos": [
+      "Podcast Studio Suite — built-in cabinetry",
+      "Podcast Studio Suite — custom door set"
+     ],
+     "cross_memo": "Podcast Studio Suite — recording console lease",
+     "plain": [
+      "the podcast studio suite",
+      "the podcast studio cabinetry",
+      "the podcast studio door set"
+     ],
+     "oblique": [
+      "a room for creators to record audio",
+      "the media amenity on the top floor",
+      "a new revenue idea for hourly bookings",
+      "carpentry for the creator space",
+      "a space aimed at influencers",
+      "the bookable room with sound treatment",
+      "wood and fixtures for the content area",
+      "what the partnerships team pitched",
+      "a premium room we can rent by the hour",
+      "the broadcast corner",
+      "custom shelving for the recording nook",
+      "an upscale add-on for freelancers",
+      "the room built for interviews",
+      "joinery work to support the new offering",
+      "an amenity for people who make shows",
+      "the studio-style space"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Internet & Network Infrastructure",
+   "aliases": [
+    "internet",
+    "network",
+    "connectivity costs",
+    "bandwidth",
+    "wifi and networking"
+   ],
+   "narrative": [
+    "Internet",
+    "Network",
+    "Connectivity costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Fibrelink Business",
+     "base": 11200,
+     "memo": "Dedicated fiber circuits"
+    },
+    {
+     "vendor": "MeshWorks Wireless",
+     "base": 4800,
+     "memo": "Managed access point service"
+    },
+    {
+     "vendor": "CoreStack Managed IT",
+     "base": 5600,
+     "memo": "Network monitoring retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "redundancy",
+     "vendor": "Fibrelink Business",
+     "memos": [
+      "Failover Circuit Upgrade — secondary carrier turn-up",
+      "Failover Circuit Upgrade — burst capacity buy-in"
+     ],
+     "cross_memo": "Failover Circuit Upgrade — router hardware",
+     "plain": [
+      "the failover circuit upgrade",
+      "the failover secondary carrier",
+      "the failover burst capacity"
+     ],
+     "oblique": [
+      "a backup path in case the main line dies",
+      "insurance against another outage",
+      "what we did after members lost service for hours",
+      "a second route out to the internet",
+      "the resilience project",
+      "redundant connectivity demanded by enterprise tenants",
+      "extra headroom for peak days",
+      "keeping the lights on for video calls",
+      "the response to complaints about dropped meetings",
+      "a safety net for uptime guarantees",
+      "spare capacity we bought on a contract",
+      "the fix for the single point of failure",
+      "assurance clauses in a big client deal",
+      "the alternative provider we added",
+      "a standby link",
+      "a promise made in the sales cycle"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "rewire",
+     "vendor": "Cableright Contractors",
+     "memos": [
+      "Floor Seven Recabling — structured cable runs",
+      "Floor Seven Recabling — patch panel labor"
+     ],
+     "cross_memo": "Floor Seven Recabling — ceiling tile repair",
+     "plain": [
+      "the floor seven recabling",
+      "the floor seven cable runs",
+      "the floor seven patch panel work"
+     ],
+     "oblique": [
+      "wiring work on the newly leased level",
+      "getting an expansion floor connected",
+      "the pulled wires above the ceiling",
+      "the physical layer for the added suites",
+      "what the electricians did in the plenum",
+      "hooking up the space we just took over",
+      "drops to every desk and office",
+      "the pre-opening buildout of data lines",
+      "laying lines before move-in day",
+      "the copper and conduit project",
+      "work that let the latest tenants plug in",
+      "the install on the annex level",
+      "connectivity groundwork before the grand opening",
+      "the network side of the expansion",
+      "termination work in the closets",
+      "the old runs we ripped out and replaced"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Community Events & Programming",
+   "aliases": [
+    "events",
+    "community events",
+    "member programming",
+    "networking nights",
+    "event spend"
+   ],
+   "narrative": [
+    "Events",
+    "Community events",
+    "Member programming"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tapfolio Caterers",
+     "base": 5400,
+     "memo": "Monthly member mixer catering"
+    },
+    {
+     "vendor": "Lanternlight Speakers Bureau",
+     "base": 3800,
+     "memo": "Workshop facilitator fees"
+    },
+    {
+     "vendor": "Pennant Print & Signage",
+     "base": 900,
+     "memo": "Event posters and badges"
+    }
+   ],
+   "events": [
+    {
+     "key": "summit",
+     "vendor": "Tapfolio Caterers",
+     "memos": [
+      "Founders Summit 2025 — banquet catering",
+      "Founders Summit 2025 — keynote reception bar"
+     ],
+     "cross_memo": "Founders Summit 2025 — venue AV rental",
+     "plain": [
+      "the founders summit",
+      "the founders summit banquet",
+      "the founders summit reception"
+     ],
+     "oblique": [
+      "our flagship annual gathering",
+      "the big conference for startup tenants",
+      "the one event of the year that draws press",
+      "a daylong affair with hundreds of attendees",
+      "the signature meetup we host each fall",
+      "dinner for the guests of honor",
+      "the headline gathering at the downtown venue",
+      "the showcase that sponsors paid to join",
+      "that sprawling members-only conference",
+      "the evening after the main talks",
+      "the jam-packed anniversary program",
+      "what we do instead of a booth at trade shows",
+      "our marquee community moment",
+      "a major networking production",
+      "food and drink for the keynote crowd",
+      "the largest crowd we host all year"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "hackathon",
+     "vendor": "Gridlock Game Jams",
+     "memos": [
+      "Civic Hackathon Weekend — prize pool",
+      "Civic Hackathon Weekend — mentor stipends"
+     ],
+     "cross_memo": "Civic Hackathon Weekend — overnight security staffing",
+     "plain": [
+      "the civic hackathon weekend",
+      "the civic hackathon prizes",
+      "the civic hackathon mentors"
+     ],
+     "oblique": [
+      "a sponsored coding marathon",
+      "the city partnership weekend",
+      "a build-something-in-48-hours contest",
+      "an overnight tech contest with awards",
+      "our collaboration with the mayor's office",
+      "the competition that drew student teams",
+      "the contest where teams pitched at dawn",
+      "a weekend of programmers in the building",
+      "the public-facing tech jam",
+      "an outreach project with the municipality",
+      "cash awards for winning teams",
+      "coaches who volunteered but got paid",
+      "the late-night coding session",
+      "the community goodwill play",
+      "an event aimed at local developers",
+      "what the economic development grant partly covered"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Meeting Room Technology & AV",
+   "aliases": [
+    "av",
+    "meeting room tech",
+    "conference room equipment",
+    "room booking systems",
+    "av and displays"
+   ],
+   "narrative": [
+    "AV",
+    "Meeting room tech",
+    "Conference room equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearview Display Leasing",
+     "base": 8600,
+     "memo": "Conference display lease payments"
+    },
+    {
+     "vendor": "Roomwise Booking Platform",
+     "base": 2400,
+     "memo": "Room scheduling subscription"
+    },
+    {
+     "vendor": "Sonicpoint AV Support",
+     "base": 3700,
+     "memo": "On-call AV technician hours"
+    }
+   ],
+   "events": [
+    {
+     "key": "videowall",
+     "vendor": "Clearview Display Leasing",
+     "memos": [
+      "Atrium Video Wall — LED panel array",
+      "Atrium Video Wall — mounting frame"
+     ],
+     "cross_memo": "Atrium Video Wall — content licensing",
+     "plain": [
+      "the atrium video wall",
+      "the atrium led panels",
+      "the atrium wall mounting"
+     ],
+     "oblique": [
+      "the giant screen in the entrance hall",
+      "a showpiece display visitors see first",
+      "digital signage on the grand scale",
+      "a lobby centerpiece",
+      "what the brand team wanted for first impressions",
+      "the glowing backdrop behind reception",
+      "a splashy installation for the common area",
+      "a statement piece for tours",
+      "the big pixels project",
+      "the high-ceilinged area's new focal point",
+      "sponsor messaging on a huge canvas",
+      "a screen that fills the whole wall",
+      "an upgrade pitched to enterprise prospects",
+      "the visual wow factor for open house nights",
+      "a flashy tech showcase",
+      "lights and images that greet guests"
+     ],
+     "low": 22000,
+     "high": 40000
+    },
+    {
+     "key": "hybrid",
+     "vendor": "Castlegate Conferencing",
+     "memos": [
+      "Boardroom Hybrid Kit — ceiling mic array",
+      "Boardroom Hybrid Kit — auto-tracking cameras"
+     ],
+     "cross_memo": "Boardroom Hybrid Kit — integration programming",
+     "plain": [
+      "the boardroom hybrid kit",
+      "the boardroom ceiling mic array",
+      "the boardroom tracking cameras"
+     ],
+     "oblique": [
+      "gear that lets remote participants join well",
+      "the equipment so far-away attendees can see everyone",
+      "an upgrade for our biggest meeting space",
+      "cameras that follow whoever is speaking",
+      "a request from a large anchor tenant",
+      "video-call readiness for executive meetings",
+      "the push to host board gatherings",
+      "speakerphone replacement on a grand scale",
+      "making virtual attendees feel in the room",
+      "audio pickup overhead",
+      "a premium conference experience",
+      "the reason the top-tier room can be priced higher",
+      "hardware tuned for people dialing in",
+      "tools for half-remote teams",
+      "the tech behind the flagship meeting space",
+      "smart lenses and microphones"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Security & Access Control",
+   "aliases": [
+    "security",
+    "access control",
+    "building security",
+    "badge and door systems",
+    "guard services"
+   ],
+   "narrative": [
+    "Security",
+    "Access control",
+    "Building security"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bastion Guard Services",
+     "base": 12800,
+     "memo": "Lobby guard staffing"
+    },
+    {
+     "vendor": "KeyCircuit Access Systems",
+     "base": 3500,
+     "memo": "Badge platform hosting"
+    },
+    {
+     "vendor": "Watchtower Camera Monitoring",
+     "base": 2200,
+     "memo": "CCTV remote monitoring"
+    }
+   ],
+   "events": [
+    {
+     "key": "turnstiles",
+     "vendor": "KeyCircuit Access Systems",
+     "memos": [
+      "Speedgate Entry Retrofit — optical turnstiles",
+      "Speedgate Entry Retrofit — reader integration"
+     ],
+     "cross_memo": "Speedgate Entry Retrofit — lobby floor cutting",
+     "plain": [
+      "the speedgate entry retrofit",
+      "the speedgate optical turnstiles",
+      "the speedgate reader integration"
+     ],
+     "oblique": [
+      "controlled gates at the front door",
+      "stopping tailgaters",
+      "after unauthorized people wandered upstairs",
+      "a lobby hardware overhaul",
+      "making entry quicker for rush hour",
+      "the barriers by the elevators",
+      "a landlord requirement for the building",
+      "flow control for visitors",
+      "the glass paddles that open on a badge",
+      "what insurers asked for after the audit",
+      "upgrading from the old swipe doors",
+      "a modern way in",
+      "the gates that count people",
+      "tightening up at street level",
+      "one-person-at-a-time entry",
+      "the high-traffic doorway fix"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "breakin",
+     "vendor": "Ironclad Locksmiths",
+     "memos": [
+      "Storage Cage Incident — lock rekeying",
+      "Storage Cage Incident — reinforced mesh panels"
+     ],
+     "cross_memo": "Storage Cage Incident — police report copies",
+     "plain": [
+      "the storage cage incident",
+      "the storage cage rekeying",
+      "the storage cage mesh panels"
+     ],
+     "oblique": [
+      "the theft over the holiday weekend",
+      "securing the basement lockers after a loss",
+      "replacing locks all over after keys vanished",
+      "an episode that members complained about",
+      "the intrusion into the lower level",
+      "hardening the area where tenants keep gear",
+      "things went missing so we reacted",
+      "stronger barriers around stored equipment",
+      "the response to a burglary",
+      "insurance paperwork following the incident",
+      "measures taken after a break-in",
+      "new fasteners on the metal enclosures",
+      "a tenant's claim that led to upgrades",
+      "fix for the weak spot downstairs",
+      "what we did after the alarm went off",
+      "emergency lock changes"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Landlord Charges & Common Area Costs",
+   "aliases": [
+    "common area charges",
+    "landlord charges",
+    "cam charges",
+    "building operating costs",
+    "pass-through costs"
+   ],
+   "narrative": [
+    "Common area charges",
+    "Landlord charges",
+    "CAM charges"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Property Holdings",
+     "base": 28500,
+     "memo": "Monthly CAM estimate"
+    },
+    {
+     "vendor": "CityGrid Utilities",
+     "base": 9800,
+     "memo": "Electric and gas for premises"
+    },
+    {
+     "vendor": "Parkside Garage Partners",
+     "base": 4300,
+     "memo": "Reserved garage spaces"
+    }
+   ],
+   "events": [
+    {
+     "key": "trueup",
+     "vendor": "Meridian Property Holdings",
+     "memos": [
+      "Annual Reconciliation Statement — prior year true-up",
+      "Annual Reconciliation Statement — tax escalation share"
+     ],
+     "cross_memo": "Annual Reconciliation Statement — late fee",
+     "plain": [
+      "the annual reconciliation statement",
+      "the annual reconciliation true-up",
+      "the annual reconciliation tax share"
+     ],
+     "oblique": [
+      "the bill covering last year's shortfall",
+      "what the landlord said we underpaid",
+      "a catch-up charge from the property owner",
+      "the year-end adjustment letter",
+      "higher real estate taxes passed through",
+      "the surprise in the mailbox from the building owner",
+      "settling up on estimates that were too low",
+      "an invoice that looked backward",
+      "a retroactive adjustment",
+      "what the lease allows them to recoup",
+      "the delayed statement we only just received",
+      "last year's costs finally landing",
+      "an assessment passed downstream",
+      "the clause we forgot about",
+      "amounts the owner decided we owed",
+      "the overdue difference"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "rooftop",
+     "vendor": "Skyline Terrace Builders",
+     "memos": [
+      "Roof Deck Lounge — decking and railing",
+      "Roof Deck Lounge — weatherproof seating"
+     ],
+     "cross_memo": "Roof Deck Lounge — structural engineer sign-off",
+     "plain": [
+      "the roof deck lounge",
+      "the roof deck decking",
+      "the roof deck seating"
+     ],
+     "oblique": [
+      "an outdoor area at the top of the building",
+      "a space under the sky for members",
+      "the amenity that needed landlord consent",
+      "a hangout we opened for summer",
+      "terrace work requiring an engineer",
+      "what the new leasing push highlighted",
+      "the open-air gathering spot",
+      "building out space no one used before",
+      "the lofty perk",
+      "an upgrade designed to boost renewals",
+      "furniture rated for rain and wind",
+      "the project above the penthouse floor",
+      "a seasonal social spot",
+      "a place for sunset mixers",
+      "the patio-style offering",
+      "turning unused roof into revenue"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

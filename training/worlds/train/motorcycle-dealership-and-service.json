@@ -1,0 +1,708 @@
+{
+ "slug": "motorcycle-dealership-and-service",
+ "industry": "motorcycle dealership and service",
+ "entities": [
+  "Ridgeline Powersports Group",
+  "Copperhead Cycle & Service Co.",
+  "Blackwater Motorsports LLC",
+  "Summit Throttle Holdings",
+  "Iron Delta Moto Works"
+ ],
+ "accounts": [
+  {
+   "name": "Floorplan Interest",
+   "aliases": [
+    "floorplan",
+    "floorplan interest",
+    "inventory financing",
+    "floor financing",
+    "curtailment interest"
+   ],
+   "narrative": [
+    "Floorplan interest",
+    "Inventory financing",
+    "Floor financing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northgate Wholesale Credit",
+     "base": 14200,
+     "memo": "FLOORPLAN INT - MONTHLY STMT"
+    },
+    {
+     "vendor": "Keystone Dealer Finance",
+     "base": 9800,
+     "memo": "CURTAILMENT FEE - AGED UNITS"
+    }
+   ],
+   "events": [
+    {
+     "key": "recallhold",
+     "vendor": "Northgate Wholesale Credit",
+     "memos": [
+      "Stop-sale unit carry — recall hold PO 7731",
+      "Stop-sale unit carry — extended interest WO 4402"
+     ],
+     "cross_memo": "Stop-sale unit carry — storage lot rental",
+     "plain": [
+      "the stop-sale unit carry",
+      "the stop-sale carry costs",
+      "the recall hold carry"
+     ],
+     "oblique": [
+      "bikes we could not sell for weeks",
+      "inventory frozen by the manufacturer",
+      "a safety notice on a popular model",
+      "units sitting idle on the lot",
+      "the manufacturer's order to halt deliveries",
+      "financing on motorcycles that were off limits to buyers",
+      "a defect bulletin",
+      "idle stock",
+      "the sales freeze on one product line",
+      "interest on machines nobody could take home",
+      "a factory-mandated pause",
+      "the unsellable batch",
+      "carrying costs during the embargo",
+      "a hold placed by headquarters in another country",
+      "motorcycles tied up while a fix was developed",
+      "the delay before showroom floor models could move"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "autumnauction",
+     "vendor": "Cascade Remarketing Capital",
+     "memos": [
+      "Autumn auction payoff — bulk lien release INV 55810",
+      "Autumn auction payoff — early settlement fee"
+     ],
+     "cross_memo": "Autumn auction payoff — transport to sale yard",
+     "plain": [
+      "the autumn auction payoff",
+      "the autumn auction settlement",
+      "the bulk lien release"
+     ],
+     "oblique": [
+      "clearing out last year's leftovers",
+      "dumping slow sellers at a wholesale event",
+      "getting old stock off the books",
+      "a one-time liquidation of aged units",
+      "selling the dusty bikes in the back",
+      "the year-end purge of unwanted machines",
+      "reducing what we owe lenders on stale inventory",
+      "a big wholesale disposal",
+      "cutting our debt load before the audit",
+      "the quick sale of units that had overstayed",
+      "moving the unloved inventory in one shot",
+      "a sell-down at steep discounts",
+      "the cleanup of the aging portfolio",
+      "paying off lenders ahead of schedule",
+      "shedding the problem units",
+      "a seasonal wholesale dump"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Technician Wages and Training",
+   "aliases": [
+    "tech labor",
+    "technician payroll",
+    "shop wages",
+    "wrench payroll",
+    "tech training"
+   ],
+   "narrative": [
+    "Tech labor",
+    "Shop wages",
+    "Technician payroll"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gearhead Staffing Partners",
+     "base": 18500,
+     "memo": "TEMP TECH HOURS - WEEKLY BILLING"
+    },
+    {
+     "vendor": "Lathrop Payroll Services",
+     "base": 6200,
+     "memo": "PAYROLL PROCESSING FEE"
+    },
+    {
+     "vendor": "Brannock Benefits Group",
+     "base": 11400,
+     "memo": "EMPLOYER HEALTH PREMIUM"
+    }
+   ],
+   "events": [
+    {
+     "key": "certsprint",
+     "vendor": "Lathrop Payroll Services",
+     "memos": [
+      "Master certification sprint — overtime accrual PR 0924",
+      "Master certification sprint — exam stipends"
+     ],
+     "cross_memo": "Master certification sprint — classroom hotel block",
+     "plain": [
+      "the master certification sprint",
+      "the certification sprint overtime",
+      "the master certification stipends"
+     ],
+     "oblique": [
+      "getting the crew credentialed for the new brand",
+      "paying people to study on weekends",
+      "the push to qualify everyone for factory work",
+      "extra hours before the manufacturer's deadline",
+      "bonuses for passing the manufacturer's tests",
+      "a requirement from the franchise agreement",
+      "the scramble to meet the brand's standards",
+      "credential drive",
+      "the exams our mechanics sat",
+      "incentives for earning advanced ratings",
+      "unusually long days at the benches",
+      "preparing for the corporate inspection",
+      "the qualification deadline",
+      "teaching the team new electric drivetrains",
+      "making sure nobody lost warranty authorization",
+      "the licensing crunch"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "strikecover",
+     "vendor": "Harborline Contract Mechanics",
+     "memos": [
+      "Harborline surge crew — backlog clearance WO 3318",
+      "Harborline surge crew — weekend premium"
+     ],
+     "cross_memo": "Harborline surge crew — tool rental",
+     "plain": [
+      "the Harborline surge crew",
+      "the surge crew backlog clearance",
+      "the Harborline weekend premium"
+     ],
+     "oblique": [
+      "outside hands brought in during a walkout",
+      "covering for people who left abruptly",
+      "the spring rush on repairs",
+      "extra help when three employees quit",
+      "a crisis in the service lane",
+      "bringing in freelancers to avoid delays",
+      "the sudden shortage of skilled workers",
+      "a wave of customers all wanting work done",
+      "patching holes in the schedule",
+      "paying a premium for quick coverage",
+      "rented muscle for the busy stretch",
+      "the pile of waiting jobs",
+      "an unplanned staffing gap",
+      "emergency help for the repair queue",
+      "the flood of riders after the warm weather arrived",
+      "temporary replacements at inflated rates"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Parts Freight and Expedite",
+   "aliases": [
+    "parts freight",
+    "inbound freight",
+    "expedite charges",
+    "parts shipping",
+    "oem freight"
+   ],
+   "narrative": [
+    "Parts freight",
+    "Inbound freight",
+    "Expedite charges"
+   ],
+   "recurring": [
+    {
+     "vendor": "Redline Logistics Co.",
+     "base": 8900,
+     "memo": "INBOUND LTL - OEM PARTS"
+    },
+    {
+     "vendor": "Pacer Air Cargo",
+     "base": 4300,
+     "memo": "AIR EXPEDITE - RUSH ORDERS"
+    }
+   ],
+   "events": [
+    {
+     "key": "portstrike",
+     "vendor": "Redline Logistics Co.",
+     "memos": [
+      "Harbor congestion reroute — container demurrage BL 88213",
+      "Harbor congestion reroute — trucking surcharge"
+     ],
+     "cross_memo": "Harbor congestion reroute — customs broker fee",
+     "plain": [
+      "the harbor congestion reroute",
+      "the harbor reroute demurrage",
+      "the congestion reroute surcharge"
+     ],
+     "oblique": [
+      "ships waiting offshore for weeks",
+      "a labor dispute at the docks",
+      "containers stuck far from where we needed them",
+      "the longer route our goods had to take",
+      "delays that hit every importer",
+      "the backup overseas",
+      "pallets arriving late and costing more",
+      "the logjam affecting the whole industry",
+      "paying to store boxes we could not collect",
+      "a disruption beyond our control",
+      "cargo that went the long way around",
+      "the bottleneck on the coast",
+      "fees for sitting containers",
+      "rerouting through a different city",
+      "a supply chain snarl",
+      "the wait for goods that were physically close but inaccessible"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "swapmeet",
+     "vendor": "Tallgrass Event Haulers",
+     "memos": [
+      "Tallgrass swap meet haul — vendor booth freight PO 6120",
+      "Tallgrass swap meet haul — pallet jack rental"
+     ],
+     "cross_memo": "Tallgrass swap meet haul — booth permit",
+     "plain": [
+      "the Tallgrass swap meet haul",
+      "the swap meet booth freight",
+      "the Tallgrass pallet rental"
+     ],
+     "oblique": [
+      "bringing used inventory to a weekend show",
+      "a trip to sell leftover accessories to hobbyists",
+      "moving a trailer of goods to a fairground",
+      "the outdoor sale we attended",
+      "a pop-up retail effort off premises",
+      "hauling stock to a crowd of enthusiasts",
+      "the traveling clearance",
+      "getting product in front of collectors",
+      "a regional gathering where we set up a stall",
+      "transport for the vintage parts we sold",
+      "the field trip with our merchandise",
+      "an event where we moved old gear",
+      "loading and unloading at a rural lot",
+      "the one-off selling trip",
+      "shipping crates to a rally",
+      "the seasonal gathering of riders"
+     ],
+     "low": 10000,
+     "high": 19000
+    }
+   ]
+  },
+  {
+   "name": "Demo Fleet Expense",
+   "aliases": [
+    "demo fleet",
+    "demo bikes",
+    "loaner fleet",
+    "test ride fleet",
+    "demo unit costs"
+   ],
+   "narrative": [
+    "Demo fleet",
+    "Demo bikes",
+    "Test ride fleet"
+   ],
+   "recurring": [
+    {
+     "vendor": "Allied Fleet Insurance",
+     "base": 3600,
+     "memo": "DEMO UNIT LIABILITY PREMIUM"
+    },
+    {
+     "vendor": "Torque Lease Services",
+     "base": 7400,
+     "memo": "DEMO BIKE LEASE - MONTHLY"
+    }
+   ],
+   "events": [
+    {
+     "key": "dropdamage",
+     "vendor": "Torque Lease Services",
+     "memos": [
+      "Showroom drop incident — body panel replacement CLM 2207",
+      "Showroom drop incident — return damage fee"
+     ],
+     "cross_memo": "Showroom drop incident — insurance deductible",
+     "plain": [
+      "the showroom drop incident",
+      "the showroom drop panel replacement",
+      "the drop incident damage fee"
+     ],
+     "oblique": [
+      "a motorcycle that fell over and got scratched",
+      "costs from a mishap with a customer",
+      "a bike returned looking worse than it left",
+      "the ride that ended badly",
+      "fixing cosmetic harm on a leased unit",
+      "paying the lessor for abuse",
+      "a clumsy moment",
+      "the repair bill after the tumble",
+      "a rider who lost control",
+      "an accident involving a borrowed machine",
+      "damage nobody noticed until the end of the term",
+      "penalties for wear beyond normal",
+      "the unit that needed new plastic",
+      "a crash in the parking lot",
+      "the cost of one rider's mistake",
+      "a lessor's invoice for flaws"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "rallydemo",
+     "vendor": "Sturgeon Bay Rally Group",
+     "memos": [
+      "Sturgeon rally demo tent — ride-along program INV 4411",
+      "Sturgeon rally demo tent — staff lodging"
+     ],
+     "cross_memo": "Sturgeon rally demo tent — fuel and shuttle",
+     "plain": [
+      "the Sturgeon rally demo tent",
+      "the Sturgeon ride-along program",
+      "the rally demo tent lodging"
+     ],
+     "oblique": [
+      "a week at a big gathering of enthusiasts",
+      "letting strangers try our new models",
+      "marketing at a lakeside event",
+      "the road trip with a trailer full of bikes",
+      "crowds testing the lineup",
+      "brand exposure at a festival",
+      "our presence at a famous annual meetup",
+      "sending a team out of town to promote",
+      "where prospects came to throw a leg over a machine",
+      "a sales push in a distant resort area",
+      "hospitality for the people who staffed the booth",
+      "a trade show with engines",
+      "the outing that ran past midnight",
+      "building leads among spectators",
+      "the long weekend of outreach",
+      "the promotional trip up north"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Warranty Reserve and Chargebacks",
+   "aliases": [
+    "warranty reserve",
+    "warranty chargebacks",
+    "claim chargebacks",
+    "oem clawbacks",
+    "warranty adjustments"
+   ],
+   "narrative": [
+    "Warranty reserve",
+    "Claim chargebacks",
+    "Warranty adjustments"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Warranty Administrators",
+     "base": 12600,
+     "memo": "EXTENDED WARRANTY ADMIN FEE"
+    },
+    {
+     "vendor": "Foxhall Claims Processing",
+     "base": 5100,
+     "memo": "CLAIM PROCESSING - MONTHLY"
+    }
+   ],
+   "events": [
+    {
+     "key": "auditclawback",
+     "vendor": "Meridian Warranty Administrators",
+     "memos": [
+      "Factory audit recoupment — denied labor claims AUD 2291",
+      "Factory audit recoupment — parts markup reversal"
+     ],
+     "cross_memo": "Factory audit recoupment — legal review fee",
+     "plain": [
+      "the factory audit recoupment",
+      "the audit recoupment of denied claims",
+      "the factory recoupment reversal"
+     ],
+     "oblique": [
+      "the manufacturer taking back money it had paid",
+      "an examiner finding that we billed too much",
+      "a review of old paperwork that went against us",
+      "refunds demanded after an inspection",
+      "overpayments we had to return",
+      "scrutiny of past repair orders",
+      "the discovery that some work did not qualify",
+      "a letter from headquarters asking for money back",
+      "retroactive corrections",
+      "reimbursement we never should have received",
+      "a reckoning for sloppy documentation",
+      "the bill from the brand's compliance team",
+      "the clawing back of earlier credits",
+      "an outside review of our submissions",
+      "penalties for errors years old",
+      "getting caught on old claims"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "helmetrecall",
+     "vendor": "Quillon Safety Remedies",
+     "memos": [
+      "Quillon helmet retrofit — customer notification mailing PO 9054",
+      "Quillon helmet retrofit — replacement shells"
+     ],
+     "cross_memo": "Quillon helmet retrofit — returned goods freight",
+     "plain": [
+      "the Quillon helmet retrofit",
+      "the helmet retrofit mailing",
+      "the Quillon replacement shells"
+     ],
+     "oblique": [
+      "head protection that failed a safety test",
+      "customers who had to be contacted about gear",
+      "a defect in something riders wear on top",
+      "a campaign to swap out faulty equipment",
+      "a letter sent to everyone who bought the item",
+      "the supplier's mistake that we absorbed",
+      "protective equipment pulled from circulation",
+      "a regulatory notice about accessories",
+      "fixing something people bought off our shelves",
+      "reaching out to owners about a hazard",
+      "a product safety issue unrelated to the engines",
+      "the swap program for defective products",
+      "remedies for buyers of one accessory",
+      "an advisory affecting a single batch",
+      "what we owed customers for a bad shipment",
+      "a safety campaign on merchandise"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Showroom Facility Costs",
+   "aliases": [
+    "showroom costs",
+    "facility costs",
+    "building upkeep",
+    "store facilities",
+    "premises expense"
+   ],
+   "narrative": [
+    "Showroom costs",
+    "Facility costs",
+    "Building upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironwood Property Management",
+     "base": 22000,
+     "memo": "SHOWROOM LEASE - MONTHLY"
+    },
+    {
+     "vendor": "Clearwater Utilities",
+     "base": 3900,
+     "memo": "ELECTRIC AND WATER"
+    },
+    {
+     "vendor": "Brightpath Janitorial",
+     "base": 1800,
+     "memo": "NIGHTLY CLEANING SERVICE"
+    }
+   ],
+   "events": [
+    {
+     "key": "liftfloor",
+     "vendor": "Ironwood Property Management",
+     "memos": [
+      "Service bay slab repair — epoxy resurfacing WO 5513",
+      "Service bay slab repair — drain trench rework"
+     ],
+     "cross_memo": "Service bay slab repair — temporary bay closure signage",
+     "plain": [
+      "the service bay slab repair",
+      "the slab epoxy resurfacing",
+      "the bay drain trench rework"
+     ],
+     "oblique": [
+      "the cracked ground where mechanics work",
+      "a floor that had started to crumble",
+      "resurfacing the concrete beneath the lifts",
+      "a safety concern about uneven ground",
+      "construction in the back of the building",
+      "patching what heavy equipment had worn down",
+      "a landlord-managed project in the garage area",
+      "the noisy weeks of grinding and pouring",
+      "restoring a surface damaged over a decade",
+      "work that disrupted the shop schedule",
+      "the groundwork nobody sees",
+      "upgrading the floor under the tools",
+      "a structural fix after an inspection",
+      "the dust and the closures",
+      "trenching to improve water flow",
+      "fixing what bikes and jacks had chewed up"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "neonsign",
+     "vendor": "Lumen Signcraft",
+     "memos": [
+      "Lumen rooftop sign — illuminated channel letters PO 2287",
+      "Lumen rooftop sign — crane lift permit"
+     ],
+     "cross_memo": "Lumen rooftop sign — electrical hookup",
+     "plain": [
+      "the Lumen rooftop sign",
+      "the illuminated channel letters",
+      "the Lumen crane lift permit"
+     ],
+     "oblique": [
+      "a glowing logo visible from the highway",
+      "new branding installed on top of the building",
+      "the franchise's mandated exterior refresh",
+      "a big visual upgrade for drive-by traffic",
+      "hoisting something heavy to the roof",
+      "replacing the old lettering that faded",
+      "an advertising investment you can see at night",
+      "lighting that announces our name",
+      "the marketing sign on the highway side",
+      "our storefront redesign",
+      "what customers see first when they arrive",
+      "an image refresh demanded by the brand",
+      "a brighter presence along the road",
+      "the installation that blocked a lane for a morning",
+      "the oversized exterior display",
+      "a beacon for riders passing by"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Accessory Merchandising and Apparel",
+   "aliases": [
+    "apparel buys",
+    "accessory merchandising",
+    "gear inventory",
+    "riding gear costs",
+    "merch purchasing"
+   ],
+   "narrative": [
+    "Apparel buys",
+    "Gear inventory",
+    "Merch purchasing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmark Apparel Wholesale",
+     "base": 9700,
+     "memo": "JACKETS AND GLOVES - REPLEN"
+    },
+    {
+     "vendor": "Vanguard Helmet Supply",
+     "base": 8200,
+     "memo": "HELMET INVENTORY - MONTHLY"
+    },
+    {
+     "vendor": "Spoke & Chain Distributors",
+     "base": 4600,
+     "memo": "ACCESSORIES - MIXED PO"
+    }
+   ],
+   "events": [
+    {
+     "key": "leathercollab",
+     "vendor": "Roadmark Apparel Wholesale",
+     "memos": [
+      "Limited edition leather line — pre-season stocking PO 8807",
+      "Limited edition leather line — signature series deposit"
+     ],
+     "cross_memo": "Limited edition leather line — display mannequins",
+     "plain": [
+      "the limited edition leather line",
+      "the leather line pre-season stocking",
+      "the signature series deposit"
+     ],
+     "oblique": [
+      "a premium collection we committed to early",
+      "buying ahead for the cold months",
+      "a collaboration with a famous rider",
+      "the capsule release that sold out fast",
+      "high-end garments for collectors",
+      "an advance commitment on exclusive goods",
+      "stocking up on products with a short shelf life",
+      "a fashion bet that required cash upfront",
+      "the numbered collection",
+      "what we paid to secure scarce merchandise",
+      "a luxury product launch",
+      "the early order that locked in supply",
+      "a gamble on a trendy item",
+      "our largest single pre-order of the year",
+      "upscale items placed on racks near the entrance",
+      "the seasonal exclusive"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "tirewall",
+     "vendor": "Gripstone Tire Imports",
+     "memos": [
+      "Gripstone tire wall — touring set opening order PO 3345",
+      "Gripstone tire wall — rack installation"
+     ],
+     "cross_memo": "Gripstone tire wall — tire mounting machine",
+     "plain": [
+      "the Gripstone tire wall",
+      "the touring set opening order",
+      "the Gripstone rack installation"
+     ],
+     "oblique": [
+      "rubber for long-distance riders",
+      "a new product category launched this year",
+      "a display of round black goods",
+      "a second supplier for something we used to source elsewhere",
+      "the shelves of treads along the back wall",
+      "expanding what we offer for highway travelers",
+      "a stocking decision to capture more repeat business",
+      "the first shipment from an unfamiliar brand",
+      "inventory aimed at cross-country trips",
+      "a fresh line of consumables",
+      "what we added to compete with online sellers",
+      "the wall of wheels covering",
+      "a broader selection for customers who ride far",
+      "our entry into a crowded segment",
+      "the order that filled an empty section",
+      "metal racks and the goods they hold"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}
