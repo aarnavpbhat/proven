@@ -310,16 +310,19 @@ measured per world:
 | Unseen (11 worlds) | Claude Sonnet 5.5 | 81.7% | 0 | 0 |
 | Unseen (11 worlds) | Two fine-tuned Qwen2.5-3B models, wide pool | 69.4% | 0 | 0 |
 | Unseen (11 worlds) | Fine-tuned 3B + 14B term models, widest pool | 81.0% | 0 | 0 |
+| Unseen (11 worlds) | Same plus a fine-tuned Phi-4 term model | **83.8%** | 0 | 0 |
 | Sealed (9 worlds) | Claude Sonnet 5.5 | 80.5% | 0 | 0 |
 | Sealed (9 worlds) | Two fine-tuned Qwen2.5-3B models, wide pool | 75.1% | 0 | 0 |
-| Sealed (9 worlds) | Fine-tuned 3B + 14B term models, widest pool | **84.4%** | 0 | 0 |
+| Sealed (9 worlds) | Fine-tuned 3B + 14B term models, widest pool | 84.4% | 0 | 0 |
+| Sealed (9 worlds) | Same plus a fine-tuned Phi-4 term model | **85.9%** | 0 | 0 |
 | Audit (pre-registered) | Claude Sonnet 5.5 | 78.5% | 0 of 1,193 | 0 of 429 |
 
-The local rows send about 26 and about 50 search terms a claim where Sonnet sends up to 8, and
-show a reviewer more wrong claims to turn down (about 2.3 times Sonnet's for the widest pool).
-On the harder paraphrase tier the widest pool decides 68.2% and 69.6% against Sonnet's 63.3%
-and 62.2%. It is not a like-for-like win: cut to Sonnet's 8 terms and Sonnet's reviewer cost,
-the same three-model vote decides 69.2% and 71.4%, 9 to 12 points behind
+The local rows send about 26, 50 and 60 search terms a claim where Sonnet sends up to 8, and
+show a reviewer more wrong claims to turn down (2.1 to 2.8 times Sonnet's for the four-model
+pool). On the harder paraphrase tier the four-model pool decides 70.5% and 71.4% against
+Sonnet's 63.3% and 62.2%. It is not a like-for-like win: cut to Sonnet's 8 terms and Sonnet's
+reviewer cost, the four-model vote decides 71.0% and 71.3%, 9 to 11 points behind, and Sonnet
+was not given the wider net
 ([`docs/finetune.md`](docs/finetune.md), sections 8a to 8c).
 
 ![Claims decided against wrong claims shown to the reviewer, local pools and Claude Sonnet](docs/frontier.svg)
@@ -404,8 +407,10 @@ The full account, with every table and the commands, is in
   on the sealed one; Sonnet decides 81.7%, 63.3%, 80.5% and 62.2%. No control FAIL, no unsafe
   PASS. The reviewer is shown about 2.3 times as many wrong claims as with Sonnet, and Sonnet
   was not given the wider net. Cut to Sonnet's 8 terms and Sonnet's reviewer cost the same vote
-  decides 69.2%, 53.9%, 71.4% and 58.6%, 4 to 12 points behind. A result about breadth on a
-  laptop, not a like-for-like win.
+  decides 69.2%, 53.9%, 71.4% and 58.6%, 4 to 12 points behind. A fourth term model from
+  another family (Phi-4, about 60 terms) puts the pool ahead on all four tiers (83.8%, 70.5%,
+  85.9%, 71.4%) at 2.1 to 2.8 times Sonnet's wrong claims shown, and leaves the 8-term vote 5
+  to 11 points behind. A result about breadth on a laptop, not a like-for-like win.
 - **In the one world it was first trained on it scores at the ceiling, by memorising.** 92.5%
   against Sonnet's 88.3%, and an ablation with four cause families removed shows the model
   had learned which words go with which of that world's causes. On the unseen worlds that
