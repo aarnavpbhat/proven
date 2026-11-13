@@ -1,0 +1,830 @@
+{
+ "slug": "document-shredding-and-records-storage",
+ "industry": "document shredding and records storage",
+ "entities": [
+  "IronVault Records Management",
+  "ClearPath Shred & Storage",
+  "Summit Secure Archive Co",
+  "Bluegate Document Destruction",
+  "Harbor Lane Records Group"
+ ],
+ "accounts": [
+  {
+   "name": "Shred Truck Fleet Maintenance",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "fleet maintenance spend",
+    "truck maintenance",
+    "shred truck upkeep"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Truck maintenance",
+    "Shred truck upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Truck Service",
+     "base": 9800,
+     "memo": "Scheduled PM service - route trucks"
+    },
+    {
+     "vendor": "Apex Tire & Brake",
+     "base": 4200,
+     "memo": "Tires and brake pads - Depot A"
+    },
+    {
+     "vendor": "Roadline Fleet Fuel Cards",
+     "base": 12500,
+     "memo": "Diesel fuel cards - all depots"
+    }
+   ],
+   "events": [
+    {
+     "key": "hydraulic",
+     "vendor": "Meridian Truck Service",
+     "memos": [
+      "Hydraulic lift rebuild - Truck 14 Depot B",
+      "Hydraulic lift rebuild - cylinder seals Truck 22"
+     ],
+     "cross_memo": "Hydraulic lift rebuild - loaner vehicle rental",
+     "plain": [
+      "the hydraulic lift rebuild",
+      "hydraulic lift rebuild costs",
+      "the hydraulic lift rebuild on the route trucks"
+     ],
+     "oblique": [
+      "getting the bin tipping gear working again",
+      "repairs to the arms that raise customer containers",
+      "restoring the lifting equipment on two vehicles",
+      "the mechanical overhaul after the operators complained",
+      "work on the part that empties the carts",
+      "two vehicles sidelined by a lifting failure",
+      "fixing what stopped the carts from emptying",
+      "the rebuild ordered after the safety write-up",
+      "tipping mechanism repairs",
+      "a failed arm on the older units",
+      "bringing the heavy-duty gear back to spec",
+      "emergency work on the container dumping system",
+      "the overhaul of the power lifting assemblies",
+      "getting stranded pickup vehicles rolling again",
+      "parts and labor on the loading mechanism",
+      "the repair bill from the breakdown last week"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "cabwrap",
+     "vendor": "Ridgeback Graphics & Wraps",
+     "memos": [
+      "Vehicle rebrand wrap - Truck 03 Depot A",
+      "Vehicle rebrand wrap - fleet decal refresh Depot C"
+     ],
+     "cross_memo": "Vehicle rebrand wrap - design agency proofs",
+     "plain": [
+      "the vehicle rebrand wrap",
+      "vehicle rebrand wrap costs",
+      "the vehicle rebrand wrap program"
+     ],
+     "oblique": [
+      "repainting the look of our vehicles",
+      "the new logo going onto every cab",
+      "a fresh image for the vans on the road",
+      "the marketing refresh applied to the vehicles",
+      "updated livery after the merger",
+      "cosmetic changes requested by the executive team",
+      "new colors and lettering outside",
+      "the visual identity project for the street-facing assets",
+      "a branding facelift for the roadside units",
+      "applying the new corporate look",
+      "exterior artwork across the vehicle count",
+      "the sales team's request for sharper curb appeal",
+      "what we paid to make the trucks match the new signage",
+      "the outside makeover",
+      "new graphics",
+      "the image overhaul rolled out to all depots"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Offsite Vault Facility Costs",
+   "aliases": [
+    "vault",
+    "vault costs",
+    "vault facility spend",
+    "storage facility",
+    "warehouse vaults"
+   ],
+   "narrative": [
+    "Vault costs",
+    "Storage facility",
+    "Warehouse vaults"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite Peak Properties",
+     "base": 28000,
+     "memo": "Monthly lease - Vault 2 Aurora"
+    },
+    {
+     "vendor": "Tri-County Utilities",
+     "base": 6400,
+     "memo": "Electric and water - Vault 2"
+    },
+    {
+     "vendor": "Sentinel Pest Control",
+     "base": 900,
+     "memo": "Monthly pest service - vault sites"
+    }
+   ],
+   "events": [
+    {
+     "key": "sprinkler",
+     "vendor": "Granite Peak Properties",
+     "memos": [
+      "Sprinkler retrofit - Vault 2 Aurora zone C",
+      "Sprinkler retrofit - pipe upgrade and permits Vault 2"
+     ],
+     "cross_memo": "Sprinkler retrofit - fire marshal inspection fee",
+     "plain": [
+      "the sprinkler retrofit",
+      "sprinkler retrofit costs",
+      "the sprinkler retrofit at the Aurora vault"
+     ],
+     "oblique": [
+      "bringing fire suppression up to code",
+      "the landlord's required safety upgrade",
+      "what the insurer demanded before renewal",
+      "new overhead water protection for the shelving",
+      "compliance work after the annual walkthrough",
+      "the building's protective piping project",
+      "meeting the latest life-safety rules",
+      "upgrading the system that douses flames",
+      "a mandated improvement to the warehouse",
+      "the capital work our lessor passed through",
+      "the fix that cleared the municipal citation",
+      "extra protection for the records racks",
+      "pipes and heads in the ceiling",
+      "the code-driven building project",
+      "the cost of satisfying the authorities",
+      "the work that kept our occupancy certificate"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "racking",
+     "vendor": "Cornerstone Shelving Solutions",
+     "memos": [
+      "Pallet racking expansion - Vault 3 Denver bay 12",
+      "Pallet racking expansion - seismic anchors and install"
+     ],
+     "cross_memo": "Pallet racking expansion - forklift operator training",
+     "plain": [
+      "the pallet racking expansion",
+      "pallet racking expansion costs",
+      "the pallet racking expansion in Denver"
+     ],
+     "oblique": [
+      "room for more customer cartons",
+      "adding capacity because the floor was full",
+      "new steel shelving for the incoming accounts",
+      "the build-out that let us take on the hospital contract",
+      "extra storage positions for boxes",
+      "growing the usable footprint",
+      "putting up more tiers to hold inventory",
+      "the expansion we needed to onboard new clients",
+      "additional bays for archived files",
+      "a bigger holding area for client material",
+      "vertical space we hadn't been using",
+      "shelves for the overflow",
+      "the project behind our higher box count",
+      "steel and installation for the new section",
+      "getting more cartons under one roof",
+      "the buildout supporting growth"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Shredding Equipment and Blades",
+   "aliases": [
+    "shredders",
+    "shredder costs",
+    "equipment and blades",
+    "shredding equipment",
+    "blade spend"
+   ],
+   "narrative": [
+    "Shredder costs",
+    "Shredding equipment",
+    "Blade spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "EdgeMaster Industrial Blades",
+     "base": 7800,
+     "memo": "Replacement cutter blades - plant shredders"
+    },
+    {
+     "vendor": "Lubrico Industrial Supply",
+     "base": 2100,
+     "memo": "Hydraulic oil and grease - Plant 1"
+    },
+    {
+     "vendor": "Torque Dynamics Repair",
+     "base": 5200,
+     "memo": "Monthly motor service - Plant 1 and 2"
+    }
+   ],
+   "events": [
+    {
+     "key": "baler",
+     "vendor": "Torque Dynamics Repair",
+     "memos": [
+      "Paper baler gearbox replacement - Plant 2 line B",
+      "Paper baler gearbox replacement - crane lift and install"
+     ],
+     "cross_memo": "Paper baler gearbox replacement - overtime crew",
+     "plain": [
+      "the paper baler gearbox replacement",
+      "baler gearbox replacement costs",
+      "the paper baler gearbox replacement at Plant 2"
+     ],
+     "oblique": [
+      "a major drivetrain failure on the compactor",
+      "the machine that bundles our output going down",
+      "replacing the heart of the compression unit",
+      "an unplanned capital repair on the press",
+      "the big mechanical swap on line two",
+      "what it cost to get the bundling unit running",
+      "a breakdown that backed up the shred floor",
+      "the transmission that seized",
+      "heavy machinery work needing a crane",
+      "getting our output packed again",
+      "the machine that squeezes the confetti into cubes",
+      "emergency parts for the compression line",
+      "the downtime fix on the second plant",
+      "work on the equipment that ties up the waste",
+      "the repair that stopped the backlog",
+      "a gear failure on the press"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "dustcollect",
+     "vendor": "CleanAir Systems Inc",
+     "memos": [
+      "Dust collector replacement - Plant 1 shred hall",
+      "Dust collector replacement - ducting and filters CleanAir"
+     ],
+     "cross_memo": "Dust collector replacement - air quality testing",
+     "plain": [
+      "the dust collector replacement",
+      "dust collector replacement costs",
+      "the dust collector replacement at Plant 1"
+     ],
+     "oblique": [
+      "a new system for cleaning the air on the floor",
+      "the ventilation upgrade after the safety complaint",
+      "keeping particles out of the workers' lungs",
+      "fresh filtration equipment for the production hall",
+      "what the inspector required for paper particulates",
+      "the airborne debris control project",
+      "new extraction gear overhead",
+      "improving breathing conditions for operators",
+      "an environmental health upgrade",
+      "the exhaust and filter project",
+      "replacing the old suction machinery",
+      "the compliance spend on air handling",
+      "something to clear the haze in the building",
+      "the occupational safety purchase",
+      "cleaner air in the processing area",
+      "the equipment the regulators pushed us toward"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Secure Chain of Custody Compliance",
+   "aliases": [
+    "compliance",
+    "compliance costs",
+    "certification spend",
+    "custody compliance",
+    "audit costs"
+   ],
+   "narrative": [
+    "Compliance costs",
+    "Certification spend",
+    "Audit costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "NAID Certification Services",
+     "base": 3800,
+     "memo": "Annual AAA certification fee amortized"
+    },
+    {
+     "vendor": "Lockstep GPS Tracking",
+     "base": 5600,
+     "memo": "Truck GPS and scan logging subscription"
+    },
+    {
+     "vendor": "Veritas Background Screening",
+     "base": 1900,
+     "memo": "Employee background checks - all sites"
+    }
+   ],
+   "events": [
+    {
+     "key": "breachdrill",
+     "vendor": "Lockstep GPS Tracking",
+     "memos": [
+      "Data breach tabletop exercise - Lockstep scenario build",
+      "Data breach tabletop exercise - facilitator Denver office"
+     ],
+     "cross_memo": "Data breach tabletop exercise - catering and venue",
+     "plain": [
+      "the data breach tabletop exercise",
+      "breach tabletop exercise costs",
+      "the data breach tabletop exercise with clients"
+     ],
+     "oblique": [
+      "the simulation of a security incident",
+      "a practice run for the worst case",
+      "rehearsing our response with key customers",
+      "what we spent on the mock emergency",
+      "a fire drill for leaked information",
+      "the readiness test requested by a banking client",
+      "staging a pretend crisis",
+      "scenario planning with outside facilitators",
+      "the exercise our largest account insisted on",
+      "a day spent war-gaming a loss event",
+      "preparedness training for management",
+      "the drill that satisfied the contract language",
+      "a rehearsal of our escalation steps",
+      "a rehearsal with outside experts",
+      "what we paid to run through disaster steps",
+      "the simulated incident for leadership"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "isoaudit",
+     "vendor": "Brightline Assurance LLP",
+     "memos": [
+      "ISO 27001 surveillance audit - Brightline site review",
+      "ISO 27001 surveillance audit - gap remediation report"
+     ],
+     "cross_memo": "ISO 27001 surveillance audit - internal staff backfill",
+     "plain": [
+      "the ISO 27001 surveillance audit",
+      "ISO 27001 surveillance audit fees",
+      "the ISO 27001 surveillance audit cycle"
+     ],
+     "oblique": [
+      "the outside examiners' visit",
+      "our annual information security review",
+      "keeping the international standard stamp",
+      "assessors walking all our facilities",
+      "proving our controls to a third party",
+      "the review that lets us bid on federal work",
+      "the examination of our policies and records",
+      "an independent look at how we protect customer material",
+      "paying for the badge that wins tenders",
+      "the external checkup of our processes",
+      "recertification work with consultants",
+      "a clean opinion from the reviewers",
+      "fixing the shortcomings the examiners listed",
+      "the periodic verification our customers demand",
+      "the inspection of our management system",
+      "the credential upkeep"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Pickup Route Labor and Driver Costs",
+   "aliases": [
+    "route labor",
+    "driver costs",
+    "driver labor",
+    "pickup crew spend",
+    "route payroll"
+   ],
+   "narrative": [
+    "Route labor",
+    "Driver costs",
+    "Pickup crew spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "StaffRight Temporary Labor",
+     "base": 14500,
+     "memo": "Temp loaders and helpers - route crews"
+    },
+    {
+     "vendor": "DriveSafe Training Institute",
+     "base": 1800,
+     "memo": "CDL refresher and safety training"
+    },
+    {
+     "vendor": "Uniform Works Rental",
+     "base": 2900,
+     "memo": "Weekly uniform service - drivers"
+    }
+   ],
+   "events": [
+    {
+     "key": "nightshift",
+     "vendor": "StaffRight Temporary Labor",
+     "memos": [
+      "Overnight surge crew - hospital purge Depot B",
+      "Overnight surge crew - premium shift differential"
+     ],
+     "cross_memo": "Overnight surge crew - security escort detail",
+     "plain": [
+      "the overnight surge crew",
+      "overnight surge crew costs",
+      "the overnight surge crew at Depot B"
+     ],
+     "oblique": [
+      "extra people working after dark",
+      "a one-time cleanout for a medical customer",
+      "the premium we paid for late-hour staffing",
+      "bringing in bodies for a sudden volume spike",
+      "the large job that couldn't wait until morning",
+      "additional hands for a rush engagement",
+      "worker pay for unusual hours",
+      "the temporary headcount for the clinic closure",
+      "a staffing burst around one client",
+      "wages above normal for a short stretch",
+      "the crunch to empty a building quickly",
+      "off-hours labor on a deadline",
+      "crew we rented for a single weekend",
+      "a spike in hours at the second depot",
+      "the surge in manpower on one account",
+      "pay for the graveyard hours"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "cdlhire",
+     "vendor": "Pinnacle Driver Recruiters",
+     "memos": [
+      "Driver sign-on bonuses - Pinnacle placement batch",
+      "Driver sign-on bonuses - relocation stipends Phoenix"
+     ],
+     "cross_memo": "Driver sign-on bonuses - recruiter placement fees",
+     "plain": [
+      "the driver sign-on bonuses",
+      "driver sign-on bonus costs",
+      "the driver sign-on bonuses for the Phoenix hires"
+     ],
+     "oblique": [
+      "paying up to attract licensed operators",
+      "the cost of filling empty seats behind the wheel",
+      "incentives to win scarce commercial license holders",
+      "hiring costs for the new market",
+      "what it took to staff the southwest launch",
+      "cash offered to new hires for joining",
+      "the recruiting push after attrition",
+      "competing for qualified people",
+      "upfront money for people we onboarded",
+      "the expense of building out the Arizona team",
+      "enticements to sign on",
+      "a hiring wave we funded",
+      "relocation help and welcome payments",
+      "what we spent chasing talent",
+      "the vacancy fill campaign",
+      "a labor-market response"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Customer Box and Supply Inventory",
+   "aliases": [
+    "supplies",
+    "box costs",
+    "consumables",
+    "carton spend",
+    "storage supplies"
+   ],
+   "narrative": [
+    "Box costs",
+    "Consumables",
+    "Carton spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kraftline Packaging",
+     "base": 8900,
+     "memo": "Records cartons 1.2 cu ft - bulk order"
+    },
+    {
+     "vendor": "SecureSeal Labels",
+     "base": 2300,
+     "memo": "Barcode labels and tamper tape"
+    },
+    {
+     "vendor": "Binworks Plastics",
+     "base": 6700,
+     "memo": "Locking console bins - replacements"
+    }
+   ],
+   "events": [
+    {
+     "key": "biohazard",
+     "vendor": "Binworks Plastics",
+     "memos": [
+      "Medical waste-rated bins - clinic rollout Binworks",
+      "Medical waste-rated bins - lids and liners Denver"
+     ],
+     "cross_memo": "Medical waste-rated bins - freight and handling",
+     "plain": [
+      "the medical waste-rated bins",
+      "medical waste-rated bin costs",
+      "the medical waste-rated bins for clinics"
+     ],
+     "oblique": [
+      "containers for the healthcare sector launch",
+      "special receptacles our hospital customers asked for",
+      "the purchase tied to the new patient-data contract",
+      "inventory built for one vertical",
+      "gear specific to doctors' offices",
+      "bins meeting stricter handling standards",
+      "a product line we added this year",
+      "stocking up for a regional health network",
+      "fresh receptacles for the sanitized environment",
+      "containers certified for sensitive settings",
+      "the supply order behind the healthcare win",
+      "new vessels for hospital hallways",
+      "an inventory step for a bigger customer type",
+      "stock that meets the clinical rules",
+      "specialty holders",
+      "the purchasing push for medical accounts"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "tapeshortage",
+     "vendor": "Gulfstream Paper Brokers",
+     "memos": [
+      "Emergency carton sourcing - Gulfstream spot buy",
+      "Emergency carton sourcing - air freight surcharge"
+     ],
+     "cross_memo": "Emergency carton sourcing - expedite handling",
+     "plain": [
+      "the emergency carton sourcing",
+      "emergency carton sourcing costs",
+      "the emergency carton sourcing spot buy"
+     ],
+     "oblique": [
+      "a scramble to find stock after our usual supplier ran dry",
+      "premium prices paid under time pressure",
+      "the rush purchase from an unfamiliar seller",
+      "what we paid because the shipment never came",
+      "a stockout we had to fix fast",
+      "buying at the worst possible rate",
+      "an urgent buy to keep customers supplied",
+      "the markup from a last-minute vendor",
+      "a shortage that cost extra to cure",
+      "scrambling to cover a missed delivery",
+      "paying up to avoid running out",
+      "an unplanned purchase at inflated rates",
+      "filling a gap in the warehouse",
+      "a hurried replenishment",
+      "the pricey stopgap",
+      "supply chain trouble that hit the budget"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Recycled Paper Processing and Disposal",
+   "aliases": [
+    "paper processing",
+    "disposal costs",
+    "pulp disposal",
+    "recycling costs",
+    "paper haul-away"
+   ],
+   "narrative": [
+    "Disposal costs",
+    "Recycling costs",
+    "Paper haul-away"
+   ],
+   "recurring": [
+    {
+     "vendor": "GreenLoop Mills",
+     "base": 3200,
+     "memo": "Mill tipping and handling fees"
+    },
+    {
+     "vendor": "Continental Bale Hauling",
+     "base": 9400,
+     "memo": "Bale transport to mill - weekly loads"
+    },
+    {
+     "vendor": "Evergreen Landfill Services",
+     "base": 1500,
+     "memo": "Non-recyclable residue disposal"
+    }
+   ],
+   "events": [
+    {
+     "key": "commodityslump",
+     "vendor": "GreenLoop Mills",
+     "memos": [
+      "Mill rejection surcharge - contaminated bales GreenLoop",
+      "Mill rejection surcharge - sort and reload fees"
+     ],
+     "cross_memo": "Mill rejection surcharge - reroute freight",
+     "plain": [
+      "the mill rejection surcharge",
+      "mill rejection surcharge costs",
+      "the mill rejection surcharge on bales"
+     ],
+     "oblique": [
+      "a buyer sending back material that failed their quality check",
+      "penalties after impurities were found in a shipment",
+      "the shipment that didn't pass inspection",
+      "handling fees from a customer who refused delivery",
+      "dirty loads that cost us extra",
+      "what the pulp buyer charged us for unacceptable product",
+      "a quality dispute with the receiving party",
+      "paying to clean up a rejected batch",
+      "contamination fallout",
+      "fees from an angry downstream buyer",
+      "a load that was turned away at the gate",
+      "the charge for substandard cargo",
+      "the penalty on bad output",
+      "tainted batches that had to be reworked",
+      "trouble with what we sold onward",
+      "costs from product that missed specs"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "ewaste",
+     "vendor": "Cyclone Electronics Recovery",
+     "memos": [
+      "Hard drive destruction batch - Cyclone pickup Denver",
+      "Hard drive destruction batch - certified degauss and shred"
+     ],
+     "cross_memo": "Hard drive destruction batch - chain of custody audit",
+     "plain": [
+      "the hard drive destruction batch",
+      "hard drive destruction batch costs",
+      "the hard drive destruction batch from Denver"
+     ],
+     "oblique": [
+      "destroying a bank's retired computing hardware",
+      "a large one-time decommission of old machines",
+      "wiping out the storage devices from the data center move",
+      "the project for a customer's office closure",
+      "processing a pallet of obsolete devices",
+      "a big job on spinning disks",
+      "electronics that needed to disappear for good",
+      "the secure end-of-life project for a client",
+      "the volume of old tech we took on",
+      "an unusually large technology retirement",
+      "certified disposal of outdated gear",
+      "a client's server room cleanout",
+      "scrapping equipment after the merger",
+      "the special project outside our paper work",
+      "one customer's hardware cleanup",
+      "devices pulled from a retired facility"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Security and Surveillance Systems",
+   "aliases": [
+    "security",
+    "security costs",
+    "surveillance spend",
+    "alarm and cameras",
+    "site security"
+   ],
+   "narrative": [
+    "Security costs",
+    "Surveillance spend",
+    "Site security"
+   ],
+   "recurring": [
+    {
+     "vendor": "Watchtower Monitoring",
+     "base": 4800,
+     "memo": "24/7 alarm monitoring - all vaults"
+    },
+    {
+     "vendor": "IronGate Guard Services",
+     "base": 16500,
+     "memo": "Armed guard coverage - Vault 2 and 3"
+    },
+    {
+     "vendor": "Clearview Camera Maintenance",
+     "base": 2700,
+     "memo": "CCTV service contract - Plants 1 and 2"
+    }
+   ],
+   "events": [
+    {
+     "key": "badgeupgrade",
+     "vendor": "Watchtower Monitoring",
+     "memos": [
+      "Biometric access upgrade - Watchtower Vault 3 doors",
+      "Biometric access upgrade - fingerprint readers Plant 2"
+     ],
+     "cross_memo": "Biometric access upgrade - badge reprinting",
+     "plain": [
+      "the biometric access upgrade",
+      "biometric access upgrade costs",
+      "the biometric access upgrade at Vault 3"
+     ],
+     "oblique": [
+      "replacing keycards with something harder to copy",
+      "a stronger way to confirm who enters",
+      "entry control improvements after the audit finding",
+      "modernizing how employees get through doors",
+      "a hardware change at the secure entrances",
+      "what we installed to tighten who gets inside",
+      "the project that ended shared passes",
+      "new gadgets on the door frames",
+      "scanner purchases for restricted zones",
+      "the overhaul of identity checks at the gate",
+      "tightening the front-door controls",
+      "hardware to block tailgating",
+      "personnel verification equipment",
+      "an investment prompted by a client questionnaire",
+      "the swap away from plastic cards",
+      "improving physical entry safeguards"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "breakin",
+     "vendor": "Falconeye Investigations",
+     "memos": [
+      "Forensic review - attempted burglary Vault 2 Falconeye",
+      "Forensic review - report and police liaison"
+     ],
+     "cross_memo": "Forensic review - emergency door repair",
+     "plain": [
+      "the attempted burglary forensic review",
+      "burglary forensic review costs",
+      "the attempted burglary forensic review at Vault 2"
+     ],
+     "oblique": [
+      "the investigation after someone tried to get in overnight",
+      "what we paid after the incident at the loading dock",
+      "outside experts looking into the intrusion",
+      "costs from the night the alarm triggered",
+      "a security event that required consultants",
+      "the aftermath of a late-night trespass",
+      "hiring specialists to work out what happened",
+      "the breach attempt response",
+      "the inquiry into the suspicious entry",
+      "handling the police matter",
+      "fallout from an unwelcome visitor",
+      "detective work on the failed intrusion",
+      "post-incident fact finding",
+      "the unplanned review of how it unfolded",
+      "the expense of the investigation we didn't expect",
+      "figuring out how they got to the fence"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

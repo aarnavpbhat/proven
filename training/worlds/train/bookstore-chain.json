@@ -1,0 +1,810 @@
+{
+ "slug": "bookstore-chain",
+ "industry": "bookstore chain",
+ "entities": [
+  "Pageturn Books Group",
+  "Inkwell & Spine Booksellers",
+  "Harbor Lantern Books",
+  "Marginalia Book Co.",
+  "Foxglove Reads"
+ ],
+ "accounts": [
+  {
+   "name": "Inventory Freight & Distribution",
+   "aliases": [
+    "freight",
+    "inbound freight",
+    "distribution costs",
+    "book shipping",
+    "freight spend"
+   ],
+   "narrative": [
+    "Freight",
+    "Distribution costs",
+    "Inbound freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northline Freight Lines",
+     "base": 18500,
+     "memo": "Inbound LTL freight - Columbus DC to stores"
+    },
+    {
+     "vendor": "Redwood Parcel Express",
+     "base": 9200,
+     "memo": "Parcel shipping - store replenishment cartons"
+    },
+    {
+     "vendor": "Brightway Pallet Services",
+     "base": 3100,
+     "memo": "Pallet handling - Columbus DC dock"
+    }
+   ],
+   "events": [
+    {
+     "key": "holidayair",
+     "vendor": "Northline Freight Lines",
+     "memos": [
+      "Holiday air surge - expedited cartons Store 114",
+      "Holiday air surge - overnight pallets Store 207"
+     ],
+     "cross_memo": "Holiday air surge - temp dock staffing",
+     "plain": [
+      "the holiday air surge",
+      "holiday air surge shipments",
+      "the holiday air surge freight"
+     ],
+     "oblique": [
+      "rush deliveries before the gift season",
+      "speeding stock to stores for peak shopping",
+      "last-minute replenishment by plane",
+      "premium shipping to cover seasonal demand",
+      "getting bestsellers onto shelves before the rush",
+      "emergency restocking ahead of the busy weeks",
+      "paying extra to beat the calendar",
+      "urgent shipments after forecasts were missed",
+      "expensive transport for late purchase orders",
+      "quick-turn delivery for the biggest sales weeks",
+      "stock moved by the fastest possible route",
+      "covering shortfalls in the run-up to gifting season",
+      "faster transit for thin shelves",
+      "buying speed for the year-end crunch",
+      "last-mile scrambling when shelves ran bare",
+      "costly rush lanes for popular titles"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "flooddc",
+     "vendor": "Cinderbrook Recovery Logistics",
+     "memos": [
+      "Basement flood salvage - Dayton warehouse transfer",
+      "Basement flood salvage - damaged pallets rehoused"
+     ],
+     "cross_memo": "Basement flood salvage - dehumidifier rental",
+     "plain": [
+      "the basement flood salvage",
+      "basement flood salvage moves",
+      "the Dayton basement flood salvage"
+     ],
+     "oblique": [
+      "relocating stock after water got in",
+      "rescuing inventory from the damaged building",
+      "moving books out of the soaked space",
+      "emergency relocation of wet goods",
+      "clearing out the site that took on water",
+      "saving what could be saved after the storm",
+      "shifting product to a dry facility",
+      "the cleanup after the plumbing disaster",
+      "hauling out ruined and recoverable goods",
+      "the scramble to protect stock from moisture",
+      "temporary housing for displaced inventory",
+      "recovery work after the pipe burst",
+      "getting merchandise away from the damp",
+      "mitigation after the overnight deluge",
+      "transferring pallets to safer ground",
+      "the response to unexpected water damage"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Author Event Expenses",
+   "aliases": [
+    "author events",
+    "events spend",
+    "signings",
+    "event costs",
+    "book tour costs"
+   ],
+   "narrative": [
+    "Author events",
+    "Signings",
+    "Event costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lumen Event Rentals",
+     "base": 4200,
+     "memo": "Chair and stage rental - in-store readings"
+    },
+    {
+     "vendor": "Parsley Lane Catering",
+     "base": 2800,
+     "memo": "Refreshments - weekly store events"
+    }
+   ],
+   "events": [
+    {
+     "key": "mysterycon",
+     "vendor": "Lumen Event Rentals",
+     "memos": [
+      "Mystery Weekend Gala - ballroom staging Chicago",
+      "Mystery Weekend Gala - lighting and AV rigs"
+     ],
+     "cross_memo": "Mystery Weekend Gala - shuttle transport",
+     "plain": [
+      "the mystery weekend gala",
+      "mystery weekend gala staging",
+      "the mystery weekend gala setup"
+     ],
+     "oblique": [
+      "the big sleuth fiction celebration",
+      "a multi-day crime novel festival",
+      "hosting dozens of suspense writers",
+      "our biggest fan gathering of the season",
+      "a ticketed whodunit showcase",
+      "the flagship autumn fan convention",
+      "sponsoring a showcase for thriller readers",
+      "a splashy evening for detective fiction lovers",
+      "the crowd-pulling outing for crime authors",
+      "a venue takeover for genre devotees",
+      "our headline fan celebration downtown",
+      "entertaining collectors of whodunits",
+      "the large format spectacle for readers",
+      "a weekend of programming for suspense fans",
+      "staging a ticketed night out for readers",
+      "the grand production at the hotel"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "celebchef",
+     "vendor": "Saffron & Quill Talent Agency",
+     "memos": [
+      "Celebrity cookbook tour - appearance fee Portland",
+      "Celebrity cookbook tour - security detail"
+     ],
+     "cross_memo": "Celebrity cookbook tour - signing line barriers",
+     "plain": [
+      "the celebrity cookbook tour",
+      "celebrity cookbook tour fees",
+      "the celebrity cookbook tour stops"
+     ],
+     "oblique": [
+      "a famous television cook visiting stores",
+      "a star appearance that drew huge lines",
+      "bringing a well-known personality to town",
+      "the high-profile promotion of a food title",
+      "paying for a headliner to sign copies",
+      "the guest who packed the sidewalk",
+      "an A-list visit tied to a new release",
+      "fees for a household name on the road",
+      "the crowd control for a popular guest",
+      "a marquee visitor stopping at our shops",
+      "the traveling promotion of a bestselling chef",
+      "a media darling meeting readers",
+      "the pricey guest booked for launch week",
+      "a broadcast personality at the register",
+      "the headline visit that sold out copies",
+      "a major name making the rounds"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Store Merchandising & Displays",
+   "aliases": [
+    "merchandising",
+    "displays",
+    "visual merchandising",
+    "fixtures and signage",
+    "store displays"
+   ],
+   "narrative": [
+    "Merchandising",
+    "Displays",
+    "Visual merchandising"
+   ],
+   "recurring": [
+    {
+     "vendor": "Shelfwright Fixtures",
+     "base": 6400,
+     "memo": "Shelving and fixture upkeep - all stores"
+    },
+    {
+     "vendor": "Clearview Signage Co.",
+     "base": 3900,
+     "memo": "Shelf talkers and category signage"
+    },
+    {
+     "vendor": "Table Stack Creative",
+     "base": 2600,
+     "memo": "Front table display kits"
+    }
+   ],
+   "events": [
+    {
+     "key": "cafeinstall",
+     "vendor": "Shelfwright Fixtures",
+     "memos": [
+      "Reading nook buildout - Maple Grove corner seating",
+      "Reading nook buildout - custom oak shelving"
+     ],
+     "cross_memo": "Reading nook buildout - electrical permits",
+     "plain": [
+      "the reading nook buildout",
+      "reading nook buildout work",
+      "the Maple Grove reading nook buildout"
+     ],
+     "oblique": [
+      "creating a cozy sitting area for customers",
+      "the lounge corner project at one location",
+      "adding comfy chairs where shoppers linger",
+      "a new space for browsing in comfort",
+      "the renovation meant to boost dwell time",
+      "carpentry for a customer hangout area",
+      "the makeover of an underused corner",
+      "furniture and millwork for a relaxation zone",
+      "a design refresh to keep visitors longer",
+      "building out a quiet area for patrons",
+      "the remodel that added couches and lamps",
+      "a carved out spot to sit with a title",
+      "the contractor work on seating and cabinetry",
+      "a pilot layout to encourage lingering",
+      "the customized sofa area project",
+      "an experiment in atmosphere at one shop"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "pridewall",
+     "vendor": "Lattice & Loom Printworks",
+     "memos": [
+      "Spring banned titles wall - large format vinyl graphics",
+      "Spring banned titles wall - install crew all stores"
+     ],
+     "cross_memo": "Spring banned titles wall - shipping tubes",
+     "plain": [
+      "the spring banned titles wall",
+      "spring banned titles wall graphics",
+      "the spring banned titles wall rollout"
+     ],
+     "oblique": [
+      "a chainwide campaign about free expression",
+      "oversized printed walls promoting censored reads",
+      "the freedom to read promotion across locations",
+      "giant graphics for a controversial literature theme",
+      "coordinated installation of a statement exhibit",
+      "the awareness push on suppressed books",
+      "wall-sized artwork for a social cause",
+      "the company-wide display about challenged literature",
+      "a national campaign at every register",
+      "big vinyl prints for a values-driven showcase",
+      "the sitewide visual message about reading rights",
+      "a headline display crew visiting every shop",
+      "print production for a mission-led theme",
+      "the painted and pasted tribute to open access",
+      "a coordinated visual statement in all stores",
+      "the ambitious graphic push at each branch"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Used Book Acquisition",
+   "aliases": [
+    "used book buying",
+    "trade-in purchases",
+    "used acquisitions",
+    "secondhand buys",
+    "buyback spend"
+   ],
+   "narrative": [
+    "Used book buying",
+    "Trade-in purchases",
+    "Used acquisitions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Dustjacket Estate Buyers",
+     "base": 7800,
+     "memo": "Bulk used lots - estate buyouts"
+    },
+    {
+     "vendor": "Quarto Trade-In Network",
+     "base": 5400,
+     "memo": "Customer trade-in credits settled"
+    }
+   ],
+   "events": [
+    {
+     "key": "librarysale",
+     "vendor": "Dustjacket Estate Buyers",
+     "memos": [
+      "Eastwood Library liquidation - 40 pallet purchase",
+      "Eastwood Library liquidation - reference set lot"
+     ],
+     "cross_memo": "Eastwood Library liquidation - pallet drayage",
+     "plain": [
+      "the Eastwood library liquidation",
+      "Eastwood library liquidation pallets",
+      "the Eastwood library liquidation purchase"
+     ],
+     "oblique": [
+      "buying a closing institution's whole collection",
+      "a municipal clearance that we snapped up",
+      "the windfall of stacks from a shuttered branch",
+      "taking on thousands of volumes at once",
+      "a bargain bulk lot from a public body",
+      "the cleared-out shelves we bought wholesale",
+      "a surprise opportunity to stock deep catalog",
+      "acquiring a town's retired holdings",
+      "the massive lot offered by the county",
+      "a once-in-a-while deal on bulk volumes",
+      "purchasing leftover stacks from a school district",
+      "the big haul that arrived on pallets",
+      "scooping up discards from a civic institution",
+      "buying in volume at a fire-sale price",
+      "a lot so large it needed its own trucks",
+      "the unplanned mass purchase of old stock"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "firstedition",
+     "vendor": "Marlowe & Finch Rare Brokers",
+     "memos": [
+      "Signed first editions collection - Hartwell estate",
+      "Signed first editions collection - appraisal fee"
+     ],
+     "cross_memo": "Signed first editions collection - insured courier",
+     "plain": [
+      "the signed first editions collection",
+      "signed first editions collection buy",
+      "the signed first editions collection purchase"
+     ],
+     "oblique": [
+      "a collector's private holdings bought outright",
+      "high-value autographed volumes from a deceased owner",
+      "the prestige acquisition for our rare room",
+      "pricey items acquired for the locked case",
+      "buying inscribed copies from a family",
+      "the appraised treasures purchased at once",
+      "expensive vintage titles for the showpiece shelf",
+      "a dealer-brokered deal on valuables",
+      "the one-time trove of authenticated items",
+      "gems added to the premium section",
+      "a collection that required a specialist's eye",
+      "big-ticket purchases for connoisseurs",
+      "the estate lot of coveted antiquarian pieces",
+      "the select purchase to attract serious buyers",
+      "investment-grade volumes bought from a widow",
+      "a curated buy that needed insurance"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Book Returns Processing",
+   "aliases": [
+    "returns",
+    "returns processing",
+    "publisher returns",
+    "return handling",
+    "returns costs"
+   ],
+   "narrative": [
+    "Returns",
+    "Returns processing",
+    "Publisher returns"
+   ],
+   "recurring": [
+    {
+     "vendor": "Backroom Returns Handling",
+     "base": 8600,
+     "memo": "Return authorization processing - all stores"
+    },
+    {
+     "vendor": "Greyhound Reverse Logistics",
+     "base": 6900,
+     "memo": "Reverse freight to publisher warehouses"
+    }
+   ],
+   "events": [
+    {
+     "key": "remainder",
+     "vendor": "Greyhound Reverse Logistics",
+     "memos": [
+      "Backlist cull - Q2 overstock outbound to remainder house",
+      "Backlist cull - pulping certificates"
+     ],
+     "cross_memo": "Backlist cull - temp pickers",
+     "plain": [
+      "the backlist cull",
+      "backlist cull shipments",
+      "the backlist cull outbound"
+     ],
+     "oblique": [
+      "clearing out titles that stopped selling",
+      "a purge of slow movers from shelves",
+      "shedding old inventory we could not move",
+      "the large cleanup of stale merchandise",
+      "sending away years of unsold copies",
+      "a decision to free up space",
+      "the wholesale offloading of dead stock",
+      "a house-cleaning of forgotten volumes",
+      "reclaiming square footage from dusty rows",
+      "the big sweep of languishing items",
+      "the removal of surplus nobody wanted",
+      "unwinding past overbuying",
+      "trimming the long tail of poor sellers",
+      "the sweeping pull of tired merchandise",
+      "the culling that emptied a warehouse aisle",
+      "the end of life treatment for old copies"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "recallnotice",
+     "vendor": "Pennant Compliance Partners",
+     "memos": [
+      "Defective printing recall - Harlow Press edition pulled",
+      "Defective printing recall - customer refund processing"
+     ],
+     "cross_memo": "Defective printing recall - notification mailers",
+     "plain": [
+      "the defective printing recall",
+      "defective printing recall costs",
+      "the defective printing recall refunds"
+     ],
+     "oblique": [
+      "a bad batch pulled from every shelf",
+      "the misprinted copies that had to go back",
+      "a quality problem traced to one publisher",
+      "taking back flawed volumes from buyers",
+      "the fix for pages that came out wrong",
+      "a vendor mistake that cost us handling",
+      "reversing sales of a faulty release",
+      "the supplier's error and our cleanup",
+      "the manufacturing slip that reached customers",
+      "the sweep for copies with missing pages",
+      "giving money back for substandard goods",
+      "an urgent withdrawal of a single title",
+      "the hassle of defective stock on the floor",
+      "unwinding a flawed production run",
+      "the retraction of an imperfect release",
+      "handling a faulty shipment from the press"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Cafe & Coffee Bar Operations",
+   "aliases": [
+    "cafe",
+    "coffee bar",
+    "cafe operations",
+    "in-store cafe costs",
+    "beverage program"
+   ],
+   "narrative": [
+    "Cafe",
+    "Coffee bar",
+    "Cafe operations"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roastery Nine Coffee Supply",
+     "base": 11200,
+     "memo": "Espresso beans and milk - in-store cafes"
+    },
+    {
+     "vendor": "Pastry Parlor Wholesale",
+     "base": 6300,
+     "memo": "Daily baked goods delivery"
+    },
+    {
+     "vendor": "Cupsleeve Packaging Co.",
+     "base": 1800,
+     "memo": "Cups, lids and sleeves"
+    }
+   ],
+   "events": [
+    {
+     "key": "espressoline",
+     "vendor": "Roastery Nine Coffee Supply",
+     "memos": [
+      "Barista machine upgrade - dual boiler units Austin flagship",
+      "Barista machine upgrade - grinder replacement"
+     ],
+     "cross_memo": "Barista machine upgrade - technician training",
+     "plain": [
+      "the barista machine upgrade",
+      "barista machine upgrade units",
+      "the barista machine upgrade install"
+     ],
+     "oblique": [
+      "new brewing hardware at the biggest shop",
+      "replacing worn equipment behind the counter",
+      "a capital refresh for drink service",
+      "gear that finally replaced the old setup",
+      "the investment to speed up drink orders",
+      "modern appliances for the cafe line",
+      "equipment swap after repeated breakdowns",
+      "the shiny new machines on the bar",
+      "bringing the beverage station up to standard",
+      "the overhaul of the drink-making station",
+      "purchase of faster hardware for peak hours",
+      "updating the tools our staff pour with",
+      "a sizable outlay for better espresso",
+      "the apparatus refresh at the flagship",
+      "fixing chronic slowdowns at the counter",
+      "new kit to cut wait times"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "healthinspect",
+     "vendor": "Cleanwave Sanitation Group",
+     "memos": [
+      "Pest control remediation - Seattle cafe closure",
+      "Pest control remediation - deep clean and recheck"
+     ],
+     "cross_memo": "Pest control remediation - discarded perishables",
+     "plain": [
+      "the pest control remediation",
+      "pest control remediation work",
+      "the Seattle pest control remediation"
+     ],
+     "oblique": [
+      "shutting a location until it passed inspection",
+      "an unwelcome discovery in the kitchen area",
+      "the emergency scrub after a failed visit",
+      "getting the pantry safe to reopen",
+      "the response to a citation from the county",
+      "dealing with unwanted critters at one shop",
+      "the closing and reopening of a food counter",
+      "cleanup that the regulators demanded",
+      "a nasty surprise behind the cabinets",
+      "restoring a damaged reputation in the storeroom",
+      "specialists called in after a complaint",
+      "the costly pause in beverage service",
+      "getting cleared by the health department",
+      "the hygiene crisis at a single branch",
+      "clearing the site of infestation",
+      "the corrective work ordered after a visit"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Loyalty Program & Marketing",
+   "aliases": [
+    "loyalty",
+    "loyalty program",
+    "marketing",
+    "member rewards",
+    "promotions spend"
+   ],
+   "narrative": [
+    "Loyalty",
+    "Marketing",
+    "Member rewards"
+   ],
+   "recurring": [
+    {
+     "vendor": "Rewardstack Platform",
+     "base": 9500,
+     "memo": "Loyalty platform monthly fee"
+    },
+    {
+     "vendor": "Paperbird Direct Mail",
+     "base": 7400,
+     "memo": "Monthly catalog and postcard mailings"
+    },
+    {
+     "vendor": "Sparkline Social Agency",
+     "base": 5200,
+     "memo": "Social media management retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "anniversary",
+     "vendor": "Paperbird Direct Mail",
+     "memos": [
+      "Twentieth anniversary mailer - 400K household drop",
+      "Twentieth anniversary mailer - commemorative bookmarks"
+     ],
+     "cross_memo": "Twentieth anniversary mailer - bonus points credit",
+     "plain": [
+      "the twentieth anniversary mailer",
+      "twentieth anniversary mailer drop",
+      "the twentieth anniversary mailer campaign"
+     ],
+     "oblique": [
+      "celebrating two decades in business",
+      "a milestone marketing blast to members",
+      "the party promotion we sent to homes",
+      "a commemorative push across the customer list",
+      "a birthday-themed outreach to patrons",
+      "the nostalgic campaign for loyal shoppers",
+      "a big envelope-stuffing push for the occasion",
+      "honoring our long history with a promotion",
+      "the keepsake giveaways for fans",
+      "a landmark year celebration sent by post",
+      "reaching every household on our rolls",
+      "a sentimental campaign marking our founding",
+      "the outreach to thank longtime readers",
+      "an extended greeting card to our community",
+      "a one-time generosity campaign for members",
+      "paper-based festivities for a big birthday"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "influencer",
+     "vendor": "Glimmerwave Creator Network",
+     "memos": [
+      "BookTok creator partnership - sponsored unboxings",
+      "BookTok creator partnership - affiliate payouts"
+     ],
+     "cross_memo": "BookTok creator partnership - sample titles shipped",
+     "plain": [
+      "the BookTok creator partnership",
+      "BookTok creator partnership posts",
+      "the BookTok creator partnership payouts"
+     ],
+     "oblique": [
+      "paying online personalities to talk up titles",
+      "video storytellers hyping releases to young readers",
+      "the social push aimed at a younger crowd",
+      "fees to popular reviewers with big followings",
+      "sponsored clips that sent shoppers to stores",
+      "courting the internet's favorite readers",
+      "a digital word of mouth experiment",
+      "influencers receiving cash and free copies",
+      "the new channel for reaching Gen Z",
+      "commissions for those who drove online sales",
+      "the bet on short form video storytelling",
+      "trendsetters recommending our shelves",
+      "a viral marketing gamble",
+      "outsourced buzz generation on handheld screens",
+      "promotional content from online fans",
+      "the spend aimed at the scrolling generation"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Store Security & Shrink",
+   "aliases": [
+    "security",
+    "shrink",
+    "loss prevention",
+    "theft losses",
+    "shrink control"
+   ],
+   "narrative": [
+    "Security",
+    "Shrink",
+    "Loss prevention"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentry Shield Monitoring",
+     "base": 4800,
+     "memo": "Alarm and camera monitoring - all stores"
+    },
+    {
+     "vendor": "Ironclad Guard Services",
+     "base": 8200,
+     "memo": "Contract guards - high-traffic stores"
+    }
+   ],
+   "events": [
+    {
+     "key": "tagsystem",
+     "vendor": "Sentry Shield Monitoring",
+     "memos": [
+      "RFID gate retrofit - entrance pedestals 22 stores",
+      "RFID gate retrofit - tag encoding stations"
+     ],
+     "cross_memo": "RFID gate retrofit - cabling rework",
+     "plain": [
+      "the RFID gate retrofit",
+      "RFID gate retrofit pedestals",
+      "the RFID gate retrofit rollout"
+     ],
+     "oblique": [
+      "new exit detectors at the front doors",
+      "swapping out the old anti-theft towers",
+      "upgrading how we catch walkouts",
+      "technology to deter shoplifting at entrances",
+      "replacement of aging sensors by the exits",
+      "the chainwide installation of smarter alarms",
+      "equipment that beeps when unpaid items leave",
+      "modernizing defenses near the doors",
+      "a project aimed at reducing missing inventory",
+      "the capital push to curb pilferage",
+      "retrofitting every doorway with new electronics",
+      "the front entry refresh at two dozen locations",
+      "a response to rising loss figures",
+      "new barriers against light fingers",
+      "the update to our checkpoint hardware",
+      "an anti-theft modernization effort"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "flashmob",
+     "vendor": "Bluecoat Investigations",
+     "memos": [
+      "Organized retail theft inquiry - Denver investigation",
+      "Organized retail theft inquiry - surveillance review hours"
+     ],
+     "cross_memo": "Organized retail theft inquiry - police report copies",
+     "plain": [
+      "the organized retail theft inquiry",
+      "organized retail theft inquiry fees",
+      "the Denver organized retail theft inquiry"
+     ],
+     "oblique": [
+      "hiring detectives after a coordinated grab",
+      "a probe into a gang hitting our shelves",
+      "sleuthing for a ring that cleaned out displays",
+      "paid investigators tracing missing stock",
+      "a follow-up on a brazen group heist",
+      "the private team examining footage",
+      "tracking down those behind a big loss",
+      "looking into suspicious crews at one mall",
+      "the outside experts we engaged after an incident",
+      "an effort to identify repeat offenders",
+      "research on who emptied the high-value case",
+      "the specialist hours spent on a cluster of thefts",
+      "a forensic review of a sudden inventory hole",
+      "the effort to build a case for authorities",
+      "consultants assigned to a theft pattern",
+      "a pursuit of those who cleaned us out"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

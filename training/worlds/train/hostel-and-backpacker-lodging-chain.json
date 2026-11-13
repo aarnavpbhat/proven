@@ -1,0 +1,830 @@
+{
+ "slug": "hostel-and-backpacker-lodging-chain",
+ "industry": "hostel and backpacker lodging chain",
+ "entities": [
+  "Wanderbunk Hostels Group",
+  "Driftwood Dormitories Ltd",
+  "Trailhead Stays Inc",
+  "Rucksack Roost Hospitality",
+  "Nomad Nest Lodging Co"
+ ],
+ "accounts": [
+  {
+   "name": "Linen and Laundry Services",
+   "aliases": [
+    "linen",
+    "laundry",
+    "linen and laundry",
+    "bedding costs",
+    "laundry spend"
+   ],
+   "narrative": [
+    "Linen costs",
+    "Laundry spend",
+    "Bedding costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "CleanSheet Commercial Laundry",
+     "base": 14200,
+     "memo": "Monthly bed linen wash and pressing"
+    },
+    {
+     "vendor": "Fluff & Fold Textile Rental",
+     "base": 6800,
+     "memo": "Towel rental program"
+    },
+    {
+     "vendor": "Hostel Supply Depot",
+     "base": 2400,
+     "memo": "Laundry detergent and softener"
+    }
+   ],
+   "events": [
+    {
+     "key": "duvetswap",
+     "vendor": "CleanSheet Commercial Laundry",
+     "memos": [
+      "Duvet replacement program — hypoallergenic comforters",
+      "Duvet replacement program — retired comforter disposal"
+     ],
+     "cross_memo": "Duvet replacement program — storage racks",
+     "plain": [
+      "the duvet replacement program",
+      "the hypoallergenic comforters",
+      "the duvet replacement"
+     ],
+     "oblique": [
+      "new bedding for every bunk",
+      "swapping out the old covers across all dorms",
+      "what guests complained about in the reviews",
+      "the allergy-friendly refresh",
+      "a full top-to-bottom upgrade of sleeping gear",
+      "stuff the guests sleep under",
+      "the rollout approved by the regional director",
+      "replacing worn-out stock",
+      "a sleeping-comfort initiative",
+      "the overhaul of what goes on beds",
+      "the quilt refresh",
+      "getting rid of the scratchy old ones",
+      "an upgrade after a bad survey score",
+      "fresh warm layers for winter season",
+      "the product change ahead of peak travel",
+      "the switch to allergen-safe filling"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "bedbug",
+     "vendor": "Pristine Pest Response LLC",
+     "memos": [
+      "Bedbug remediation — heat treatment dorm 4",
+      "Bedbug remediation — mattress encasements"
+     ],
+     "cross_memo": "Bedbug remediation — guest refunds",
+     "plain": [
+      "the bedbug remediation",
+      "the bedbug heat treatment",
+      "the bedbug outbreak"
+     ],
+     "oblique": [
+      "the infestation scare",
+      "bringing in specialists after guests found bites",
+      "the emergency in the upper-floor dorm",
+      "a pest incident that closed rooms",
+      "clearing out unwanted critters",
+      "the sanitation emergency",
+      "getting rooms back on the booking calendar",
+      "an urgent response to a traveler complaint",
+      "the biological contamination problem",
+      "what forced us to quarantine rooms",
+      "insects that showed up in the sleeping quarters",
+      "the crawling-pest cleanup",
+      "a health-department follow-up",
+      "the unwelcome visitors in the mattresses",
+      "the incident that hit our online ratings",
+      "exterminating whatever was in the bunks"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Guest Amenities and Consumables",
+   "aliases": [
+    "amenities",
+    "guest amenities",
+    "consumables",
+    "guest supplies",
+    "welcome supplies"
+   ],
+   "narrative": [
+    "Guest amenities",
+    "Consumables",
+    "Welcome supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bunkside Provisions",
+     "base": 5200,
+     "memo": "Toiletries and soap dispensers refill"
+    },
+    {
+     "vendor": "Brewhouse Coffee Roasters",
+     "base": 3100,
+     "memo": "Common room coffee and tea"
+    },
+    {
+     "vendor": "PaperGoods Wholesale",
+     "base": 1900,
+     "memo": "Toilet paper and paper towels"
+    }
+   ],
+   "events": [
+    {
+     "key": "locker",
+     "vendor": "Bunkside Provisions",
+     "memos": [
+      "Padlock giveaway — brass combination locks",
+      "Padlock giveaway — branded keytags"
+     ],
+     "cross_memo": "Padlock giveaway — locker repairs",
+     "plain": [
+      "the padlock giveaway",
+      "the brass combination locks",
+      "the padlock promotion"
+     ],
+     "oblique": [
+      "free security gear for new arrivals",
+      "a freebie for everyone checking in",
+      "the theft-prevention handout",
+      "what we hand over at the front desk",
+      "a goodwill gesture after the stolen-belongings complaints",
+      "the safeguard for personal belongings",
+      "the marketing giveaway tied to the spring campaign",
+      "protecting backpacks in the dorms",
+      "something small and metal for each guest",
+      "the trinket that reassures solo travelers",
+      "an item we gave away by the thousands",
+      "the check-in gift",
+      "the response to guest anxiety about valuables",
+      "the little gift in the welcome bag",
+      "keeping bags safe overnight",
+      "the give-away that went with the anniversary offer"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "festival",
+     "vendor": "Sunburst Event Supply Co",
+     "memos": [
+      "Midsummer festival — wristbands and banners",
+      "Midsummer festival — party cups"
+     ],
+     "cross_memo": "Midsummer festival — bartender overtime",
+     "plain": [
+      "the midsummer festival",
+      "the festival wristbands",
+      "the midsummer party"
+     ],
+     "oblique": [
+      "the big seasonal bash",
+      "a celebration for guests and locals",
+      "the annual social night",
+      "decorations for the courtyard evening",
+      "what we hosted on the longest day of the year",
+      "the outdoor gathering that sold out",
+      "a party that filled every bed",
+      "the event we advertised on social media",
+      "the summer shindig",
+      "festivities that drew neighborhood crowds",
+      "the themed night with live music",
+      "a gathering to boost occupancy",
+      "the street-party tie-in",
+      "the courtyard celebration",
+      "the get-together marking peak season",
+      "an evening that doubled our walk-ins"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Property Rent and Leases",
+   "aliases": [
+    "rent",
+    "leases",
+    "property rent",
+    "occupancy costs",
+    "building leases"
+   ],
+   "narrative": [
+    "Rent",
+    "Leases",
+    "Occupancy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborview Properties",
+     "base": 28500,
+     "memo": "Old town hostel monthly lease"
+    },
+    {
+     "vendor": "Granite Peak Realty Trust",
+     "base": 19800,
+     "memo": "Mountain lodge ground lease"
+    },
+    {
+     "vendor": "Bayfront Holdings LLC",
+     "base": 12400,
+     "memo": "Annex building lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "camelcase",
+     "vendor": "Harborview Properties",
+     "memos": [
+      "Lease amendment — rooftop terrace addition",
+      "Lease amendment — legal review fee"
+     ],
+     "cross_memo": "Lease amendment — terrace railing permit",
+     "plain": [
+      "the lease amendment",
+      "the rooftop terrace addition",
+      "the amended lease"
+     ],
+     "oblique": [
+      "extra space we negotiated upstairs",
+      "the landlord's one-time charge for the expansion",
+      "paperwork that added usable area",
+      "the outdoor space deal",
+      "a catch-up payment for the new footprint",
+      "the higher-up addition to the contract",
+      "what the owner billed us for the extra square footage",
+      "the change in our agreement with the owner",
+      "a retroactive adjustment",
+      "the open-air lounge arrangement",
+      "the sky-high new hangout spot",
+      "the building owner's request",
+      "space for sunset drinks",
+      "the deal that let us use the roof",
+      "charges to formalize the added area",
+      "the negotiated extra"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "popup",
+     "vendor": "Cobblestone Commercial Realty",
+     "memos": [
+      "Pop-up hostel — Lisbon short-term sublet",
+      "Pop-up hostel — security deposit forfeit"
+     ],
+     "cross_memo": "Pop-up hostel — temporary signage",
+     "plain": [
+      "the pop-up hostel",
+      "the Lisbon sublet",
+      "the pop-up property"
+     ],
+     "oblique": [
+      "our temporary outpost abroad",
+      "the trial run in a new city",
+      "a short experiment in a different market",
+      "the seasonal test location",
+      "the market-entry pilot",
+      "a few months of extra beds overseas",
+      "space we rented to test demand",
+      "the venture that lasted one summer",
+      "the foreign short stay",
+      "testing whether travelers would come",
+      "a limited-time presence",
+      "the expansion probe",
+      "what the board approved as a feasibility study",
+      "the transient location",
+      "an exploratory site",
+      "the stopgap lodging overseas"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Utilities",
+   "aliases": [
+    "utilities",
+    "energy and water",
+    "power and water",
+    "utility bills",
+    "heating and cooling"
+   ],
+   "narrative": [
+    "Utilities",
+    "Energy and water",
+    "Utility bills"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Electric Cooperative",
+     "base": 11800,
+     "memo": "Electricity usage all properties"
+    },
+    {
+     "vendor": "CityWater Authority",
+     "base": 6400,
+     "memo": "Water and sewer charges"
+    },
+    {
+     "vendor": "BlueFlame Gas Services",
+     "base": 4900,
+     "memo": "Natural gas for water heaters"
+    }
+   ],
+   "events": [
+    {
+     "key": "boiler",
+     "vendor": "BlueFlame Gas Services",
+     "memos": [
+      "Boiler retrofit — condensing unit install",
+      "Boiler retrofit — flue inspection"
+     ],
+     "cross_memo": "Boiler retrofit — insulation wrap",
+     "plain": [
+      "the boiler retrofit",
+      "the condensing unit install",
+      "the boiler upgrade"
+     ],
+     "oblique": [
+      "the hot-water overhaul",
+      "an efficiency project at the main property",
+      "getting showers back to full temperature",
+      "the heat plant replacement",
+      "what the inspector flagged",
+      "the mandated environmental upgrade",
+      "a capital-style fix booked to operating",
+      "swapping the old heater",
+      "the winter warmth emergency",
+      "the cost of cutting our carbon footprint",
+      "machinery in the basement",
+      "the retrofit the sustainability committee championed",
+      "the furnace room project",
+      "new equipment to lower monthly bills",
+      "keeping the dorms warm",
+      "the thermal system replacement"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "solar",
+     "vendor": "Radiant Rooftop Energy",
+     "memos": [
+      "Solar array commissioning — panel mounting",
+      "Solar array commissioning — grid interconnect fee"
+     ],
+     "cross_memo": "Solar array commissioning — monitoring portal",
+     "plain": [
+      "the solar array commissioning",
+      "the solar panel mounting",
+      "the solar array"
+     ],
+     "oblique": [
+      "generating our own electricity",
+      "sun-powered savings project",
+      "the green energy investment",
+      "panels on the roof",
+      "reducing what we buy from the grid",
+      "the clean power initiative",
+      "a project meant to pay for itself in years",
+      "the renewable switch",
+      "getting off the utility's meter",
+      "what the eco-certification required",
+      "the power-generation installation",
+      "converting daylight into savings",
+      "the environmental pledge we made to guests",
+      "a long-term energy play",
+      "self-sufficiency on the electric side",
+      "the roofline build-out"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Front Desk and Housekeeping Payroll",
+   "aliases": [
+    "front desk payroll",
+    "housekeeping payroll",
+    "staff wages",
+    "hourly labor",
+    "frontline labor"
+   ],
+   "narrative": [
+    "Front desk payroll",
+    "Staff wages",
+    "Hourly labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "PayStream Payroll Services",
+     "base": 29500,
+     "memo": "Hourly wages front desk and housekeeping"
+    },
+    {
+     "vendor": "TempWorks Staffing",
+     "base": 7200,
+     "memo": "Seasonal temp coverage"
+    },
+    {
+     "vendor": "Gateway Benefits Group",
+     "base": 4300,
+     "memo": "Employer health contributions"
+    }
+   ],
+   "events": [
+    {
+     "key": "orientation",
+     "vendor": "TempWorks Staffing",
+     "memos": [
+      "Peak season onboarding — extra night auditors",
+      "Peak season onboarding — uniform issue"
+     ],
+     "cross_memo": "Peak season onboarding — background checks",
+     "plain": [
+      "the peak season onboarding",
+      "the extra night auditors",
+      "the onboarding push"
+     ],
+     "oblique": [
+      "ramping up headcount before the rush",
+      "new hires for the busy months",
+      "covering the graveyard shift gap",
+      "what we spent staffing up for tourists",
+      "the summer hiring wave",
+      "people we brought on short notice",
+      "the surge in rostered bodies",
+      "extra pairs of hands after midnight",
+      "preparing teams for full houses",
+      "the recruitment drive",
+      "plugging holes in the schedule",
+      "staffing for the holiday crowds",
+      "getting the desk covered around the clock",
+      "a hiring blitz",
+      "the spring ramp",
+      "newcomers who needed training"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "strike",
+     "vendor": "Harbor Union Mediation Services",
+     "memos": [
+      "Wage dispute settlement — arbitration award",
+      "Wage dispute settlement — back pay adjustment"
+     ],
+     "cross_memo": "Wage dispute settlement — counsel fees",
+     "plain": [
+      "the wage dispute settlement",
+      "the arbitration award",
+      "the wage dispute"
+     ],
+     "oblique": [
+      "resolving the argument with staff about pay",
+      "a retroactive correction owed to employees",
+      "the ruling that went against us",
+      "what the labor board decided",
+      "payments after a complaint was filed",
+      "making things right for the housekeepers",
+      "the outcome of a grievance",
+      "money owed from prior months",
+      "the fix after the employee representatives pushed back",
+      "a legal outcome involving the team",
+      "the compensation catch-up",
+      "resolving a disagreement over hours",
+      "the claim we chose to close out",
+      "what we paid to avoid court",
+      "the neutral third party's decision",
+      "an agreement reached after weeks of talks"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Booking Platform Commissions",
+   "aliases": [
+    "commissions",
+    "booking fees",
+    "ota commissions",
+    "platform fees",
+    "distribution costs"
+   ],
+   "narrative": [
+    "Commissions",
+    "Booking fees",
+    "Platform fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "StayHub Online Travel",
+     "base": 24500,
+     "memo": "Reservation commissions"
+    },
+    {
+     "vendor": "RoamBook Marketplace",
+     "base": 13800,
+     "memo": "Marketplace booking fees"
+    },
+    {
+     "vendor": "Payzen Merchant Services",
+     "base": 5600,
+     "memo": "Card processing fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "featured",
+     "vendor": "StayHub Online Travel",
+     "memos": [
+      "Premier placement campaign — top listing boost",
+      "Premier placement campaign — visibility surcharge"
+     ],
+     "cross_memo": "Premier placement campaign — photo shoot",
+     "plain": [
+      "the premier placement campaign",
+      "the top listing boost",
+      "the premier placement"
+     ],
+     "oblique": [
+      "paying to appear first in search",
+      "a push to rank higher",
+      "the paid-visibility experiment",
+      "what we spent to beat the competition online",
+      "being the first thing travelers saw",
+      "the promotional spot on the homepage",
+      "an attempt to fill empty beds",
+      "the upgrade to our profile prominence",
+      "higher exposure during a slow stretch",
+      "the sponsored slot",
+      "a bid for more eyeballs",
+      "a marketing lever with the channel partner",
+      "moving up the rankings",
+      "the extra we paid to stand out",
+      "the spotlight treatment",
+      "the ad-like boost"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "chargeback",
+     "vendor": "Nimbus Dispute Recovery",
+     "memos": [
+      "Fraud chargeback wave — stolen card reversals",
+      "Fraud chargeback wave — recovery agent fee"
+     ],
+     "cross_memo": "Fraud chargeback wave — bank penalty",
+     "plain": [
+      "the fraud chargeback wave",
+      "the stolen card reversals",
+      "the chargeback wave"
+     ],
+     "oblique": [
+      "money clawed back by card issuers",
+      "bad reservations paid with illegitimate plastic",
+      "the criminal bookings",
+      "what the bank reversed on us",
+      "losses from impostor customers",
+      "charges that were later disputed",
+      "the wave of reversed payments",
+      "cybercrime hitting our reservations",
+      "the unauthorized purchases",
+      "payments that turned out not to be real",
+      "a spike in contested transactions",
+      "revenue we booked then lost",
+      "the scam that targeted last-minute bookings",
+      "the cardholder disputes",
+      "payments that bounced back",
+      "money we had to return after the fact"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Repairs and Maintenance",
+   "aliases": [
+    "repairs",
+    "maintenance",
+    "repairs and maintenance",
+    "building upkeep",
+    "facility maintenance"
+   ],
+   "narrative": [
+    "Repairs",
+    "Maintenance",
+    "Building upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "FixIt Facility Services",
+     "base": 9800,
+     "memo": "Routine plumbing and electrical calls"
+    },
+    {
+     "vendor": "Spotless Janitorial Supply",
+     "base": 3700,
+     "memo": "Cleaning equipment and chemicals"
+    },
+    {
+     "vendor": "Ladderback Handyman Co",
+     "base": 4400,
+     "memo": "Bunk bed and furniture repair"
+    }
+   ],
+   "events": [
+    {
+     "key": "roofleak",
+     "vendor": "FixIt Facility Services",
+     "memos": [
+      "Roof membrane repair — storm damage patching",
+      "Roof membrane repair — ceiling drywall replacement"
+     ],
+     "cross_memo": "Roof membrane repair — water-damaged bedding",
+     "plain": [
+      "the roof membrane repair",
+      "the storm damage patching",
+      "the roof membrane"
+     ],
+     "oblique": [
+      "the leak that came through after the weather",
+      "drips in the top-floor rooms",
+      "fixing what the downpour broke",
+      "the emergency over our heads",
+      "keeping rain off the guests",
+      "an insurance claim in progress",
+      "water coming in where it shouldn't",
+      "the covering that gave out",
+      "the wet-ceiling fiasco",
+      "the high-up fix",
+      "a closure of upstairs beds until things dried",
+      "what the contractor found after the gale",
+      "protection from the elements",
+      "the cost of a sodden hallway",
+      "the problem no one noticed until it poured",
+      "the overhead damage"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "fireexit",
+     "vendor": "Sentinel Life Safety Systems",
+     "memos": [
+      "Fire code compliance — alarm panel replacement",
+      "Fire code compliance — emergency exit signage"
+     ],
+     "cross_memo": "Fire code compliance — re-inspection fee",
+     "plain": [
+      "the fire code compliance",
+      "the alarm panel replacement",
+      "the emergency exit signage"
+     ],
+     "oblique": [
+      "what the marshal required",
+      "getting our occupancy permit renewed",
+      "a regulatory upgrade",
+      "avoiding a shutdown order",
+      "safety equipment mandated by the city",
+      "the inspector's punch list",
+      "making the building legal to sleep in",
+      "the government-ordered fixes",
+      "protecting guests if something went wrong",
+      "bringing the property up to standard",
+      "a deadline from the authorities",
+      "the citation follow-up",
+      "life-safety work",
+      "the audit finding we had to remedy",
+      "upgrades that kept our license",
+      "the safety overhaul"
+     ],
+     "low": 17000,
+     "high": 34000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Community Events",
+   "aliases": [
+    "marketing",
+    "community events",
+    "promotions",
+    "advertising",
+    "guest events"
+   ],
+   "narrative": [
+    "Marketing",
+    "Promotions",
+    "Advertising"
+   ],
+   "recurring": [
+    {
+     "vendor": "Social Spark Agency",
+     "base": 8900,
+     "memo": "Monthly social media management"
+    },
+    {
+     "vendor": "Trailmap Digital Advertising",
+     "base": 6300,
+     "memo": "Search and display ad spend"
+    },
+    {
+     "vendor": "Pennant Print Studio",
+     "base": 1500,
+     "memo": "Brochures and flyers"
+    }
+   ],
+   "events": [
+    {
+     "key": "influencer",
+     "vendor": "Social Spark Agency",
+     "memos": [
+      "Backpacker ambassador tour — creator stipends",
+      "Backpacker ambassador tour — drone video production"
+     ],
+     "cross_memo": "Backpacker ambassador tour — complimentary stays",
+     "plain": [
+      "the backpacker ambassador tour",
+      "the creator stipends",
+      "the ambassador tour"
+     ],
+     "oblique": [
+      "paying travel personalities to post about us",
+      "sponsored content from wanderers",
+      "the online celebrity push",
+      "videos shot from the sky",
+      "a campaign aimed at younger audiences",
+      "what we spent to get featured in feeds",
+      "the buzz-building effort",
+      "a blitz with people who have big followings",
+      "reaching viewers who book on impulse",
+      "the promotional journey across multiple properties",
+      "a social reach experiment",
+      "the storytelling project",
+      "getting famous faces in our dorms",
+      "the footage we commissioned",
+      "a travel-blogger partnership",
+      "a push for brand awareness"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "awards",
+     "vendor": "Globetrot Travel Media",
+     "memos": [
+      "Best Hostel Awards — sponsorship package",
+      "Best Hostel Awards — gala table"
+     ],
+     "cross_memo": "Best Hostel Awards — trophy engraving",
+     "plain": [
+      "the Best Hostel Awards",
+      "the awards sponsorship",
+      "the awards gala"
+     ],
+     "oblique": [
+      "an industry recognition ceremony",
+      "buying our way into a prestige event",
+      "networking with peers over dinner",
+      "a trade-show style evening",
+      "the competition we hoped to win",
+      "rubbing elbows with other operators",
+      "a formal night out for management",
+      "what we paid to be seen at the ceremony",
+      "the reputation play",
+      "a seat at the glitzy banquet",
+      "being named among the best",
+      "the brand-boosting evening",
+      "recognition from the trade press",
+      "a sponsorship tied to credibility",
+      "the prestige package",
+      "our presence at the sector's big night"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

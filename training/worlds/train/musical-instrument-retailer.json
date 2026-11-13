@@ -1,0 +1,728 @@
+{
+ "slug": "musical-instrument-retailer",
+ "industry": "musical instrument retailer",
+ "entities": [
+  "Harmony Lane Music Co.",
+  "Crescendo Row Instruments",
+  "Brass & Birch Music Supply",
+  "Tuning Fork Traders",
+  "Downbeat Depot Inc."
+ ],
+ "accounts": [
+  {
+   "name": "Showroom Instrument Display & Fixtures",
+   "aliases": [
+    "showroom fixtures",
+    "display costs",
+    "floor merchandising",
+    "fixtures and display",
+    "store displays"
+   ],
+   "narrative": [
+    "Showroom fixtures",
+    "Display costs",
+    "Floor merchandising"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stagewall Display Systems",
+     "base": 4200,
+     "memo": "Monthly guitar wall rail leasing — slatwall panels"
+    },
+    {
+     "vendor": "Brightline Lighting Services",
+     "base": 2600,
+     "memo": "Showroom track lighting upkeep — monthly service"
+    },
+    {
+     "vendor": "Velvet Rack Supply",
+     "base": 1500,
+     "memo": "Instrument stand and hanger replenishment — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "pianogallery",
+     "vendor": "Stagewall Display Systems",
+     "memos": [
+      "Grand piano gallery buildout — platform risers",
+      "Grand piano gallery buildout — acoustic panels"
+     ],
+     "cross_memo": "Grand piano gallery buildout — freight insurance",
+     "plain": [
+      "the grand piano gallery buildout",
+      "the piano gallery buildout",
+      "the grand gallery buildout"
+     ],
+     "oblique": [
+      "the new room for our biggest instruments",
+      "the premium keyboard showcase",
+      "carving out space for high-end pianos",
+      "the upscale area where customers try expensive models",
+      "an expansion of the sales floor",
+      "the dedicated space the owner wanted for flagship sales",
+      "renovating the back half of the store",
+      "the project to attract serious buyers",
+      "the construction behind the showroom wall",
+      "what we built to display our priciest inventory",
+      "the redesign of the retail floor",
+      "the premium sales zone",
+      "a lounge-style area for testing costly items",
+      "the remodel that finished before the holiday push",
+      "the platforms and sound treatment for the big room",
+      "the high-end sales space"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "vinylwall",
+     "vendor": "Corkboard & Crate Fabrication",
+     "memos": [
+      "Vintage vinyl feature wall — custom shelving",
+      "Vintage vinyl feature wall — mural install"
+     ],
+     "cross_memo": "Vintage vinyl feature wall — signage permit",
+     "plain": [
+      "the vintage vinyl feature wall",
+      "the vinyl feature wall",
+      "the vintage vinyl wall"
+     ],
+     "oblique": [
+      "the retro record section",
+      "a nostalgic corner for browsing albums",
+      "the new area meant to draw younger shoppers",
+      "custom woodwork along the east side",
+      "the artwork and shelving near the entrance",
+      "the throwback attraction for walk-in traffic",
+      "a themed merchandising project",
+      "the decorative wall by the front door",
+      "a crowd-pleasing photo spot",
+      "the project marketing asked for",
+      "what we installed to boost foot traffic",
+      "the album-themed showpiece",
+      "the painted backdrop and shelves",
+      "the style refresh near the registers",
+      "a lifestyle display of old music media",
+      "the colorful addition to the lobby"
+     ],
+     "low": 10000,
+     "high": 21000
+    }
+   ]
+  },
+  {
+   "name": "Repair Shop Parts & Materials",
+   "aliases": [
+    "repair parts",
+    "luthier supplies",
+    "shop materials",
+    "repair shop spend",
+    "workshop parts"
+   ],
+   "narrative": [
+    "Repair parts",
+    "Luthier supplies",
+    "Shop materials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Fretwire Wholesale",
+     "base": 3800,
+     "memo": "Fret wire and nut blanks — monthly replenishment"
+    },
+    {
+     "vendor": "Tonewood Trading Post",
+     "base": 5200,
+     "memo": "Bridge and saddle stock — monthly order"
+    },
+    {
+     "vendor": "Pickup Parts Direct",
+     "base": 2900,
+     "memo": "Electronics and wiring harnesses — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "tubeamp",
+     "vendor": "Fretwire Wholesale",
+     "memos": [
+      "Vacuum tube amp recall — matched tube sets",
+      "Vacuum tube amp recall — output transformers"
+     ],
+     "cross_memo": "Vacuum tube amp recall — customer loaner units",
+     "plain": [
+      "the vacuum tube amp recall",
+      "the tube amp recall",
+      "the vacuum amp recall"
+     ],
+     "oblique": [
+      "a manufacturer notice on a popular combo",
+      "fixing faulty glass components in customer gear",
+      "the safety fix a supplier asked us to carry out",
+      "warranty work on one amplifier line",
+      "units that came back for a defect",
+      "the bulletin about overheating guitar equipment",
+      "a batch of failing electronics",
+      "an obligation we took on for the maker",
+      "reworking amplifiers sold last spring",
+      "repairs we did on someone else's mistake",
+      "the corrective campaign on a boutique model",
+      "swapping out parts under a vendor notice",
+      "what the factory told us to fix",
+      "the defective lot returned by shoppers",
+      "an unplanned burst of bench work",
+      "the product defect cleanup"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "pianoaction",
+     "vendor": "Hammerhead Restoration Supply",
+     "memos": [
+      "Upright piano rebuild — hammer felt kits",
+      "Upright piano rebuild — soundboard shims"
+     ],
+     "cross_memo": "Upright piano rebuild — crating and cartage",
+     "plain": [
+      "the upright piano rebuild",
+      "the piano rebuild project",
+      "the upright rebuild"
+     ],
+     "oblique": [
+      "a full restoration of a donated heirloom",
+      "the school's old instrument we took in",
+      "a one-time contract for the music academy",
+      "bringing a century-old keyboard back to life",
+      "the big job for the church",
+      "a restoration the shop took on at a fixed price",
+      "the oversized repair order",
+      "reviving a dusty instrument from an estate",
+      "the biggest bench project of the quarter",
+      "a charity commission",
+      "work on a vintage item with no manual",
+      "the felts and shims for one customer's treasure",
+      "a historic keyboard returned to playing condition",
+      "the single large restoration job",
+      "a labor-of-love project for a local theater",
+      "the heirloom revival"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Instrument Rental Fleet Maintenance",
+   "aliases": [
+    "rental fleet",
+    "rental maintenance",
+    "rental program upkeep",
+    "school rental costs",
+    "rental inventory care"
+   ],
+   "narrative": [
+    "Rental fleet",
+    "Rental maintenance",
+    "Rental program upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Reedsmith Sanitizing Services",
+     "base": 3100,
+     "memo": "Mouthpiece sanitizing — monthly rental turnover"
+    },
+    {
+     "vendor": "Orchestra Care Partners",
+     "base": 4700,
+     "memo": "Student violin setup and restringing — monthly"
+    },
+    {
+     "vendor": "Case Courier Logistics",
+     "base": 2200,
+     "memo": "Rental pickup and delivery — monthly route"
+    }
+   ],
+   "events": [
+    {
+     "key": "bandrefresh",
+     "vendor": "Orchestra Care Partners",
+     "memos": [
+      "Clarinet fleet refurbishment — pad replacement",
+      "Clarinet fleet refurbishment — key regulation"
+     ],
+     "cross_memo": "Clarinet fleet refurbishment — replacement cases",
+     "plain": [
+      "the clarinet fleet refurbishment",
+      "the clarinet refurbishment",
+      "the clarinet fleet refresh"
+     ],
+     "oblique": [
+      "bringing the woodwind lineup back to shape",
+      "overhauling the school-year inventory",
+      "getting the older stock ready for returns",
+      "the maintenance backlog on single-reed models",
+      "a pre-fall tune-up of the horn lineup",
+      "the work before band season opens",
+      "reconditioning what students handed back",
+      "renewing worn pads across a big batch",
+      "the annual push before enrollment",
+      "the district's complaint about leaky keys",
+      "refurbishing dozens of units at once",
+      "the catch-up on deferred upkeep",
+      "a mass reset of student loaner stock",
+      "keeping the beginner offerings playable",
+      "the post-summer return cleanup",
+      "restoring a lot of used units in one go"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "drumcorps",
+     "vendor": "Rimshot Percussion Services",
+     "memos": [
+      "Marching drum line refresh — head and hoop sets",
+      "Marching drum line refresh — tension rod kits"
+     ],
+     "cross_memo": "Marching drum line refresh — snare stand upgrades",
+     "plain": [
+      "the marching drum line refresh",
+      "the drum line refresh",
+      "the marching line refresh"
+     ],
+     "oblique": [
+      "gearing up the high school parade unit",
+      "the percussion order from the athletic department",
+      "new skins and hardware for a contract customer",
+      "equipping a team ahead of football season",
+      "the loud half of the band contract",
+      "upgrading the beat section of a rental account",
+      "a big percussion package for the district",
+      "the stadium season preparation",
+      "keeping the field ensemble outfitted",
+      "outfitting a group of teenagers with striking gear",
+      "the budget the school approved in August",
+      "a substantial equipment swap",
+      "renewing worn rental gear for a single client",
+      "the drummers' hardware overhaul",
+      "what the band director requested",
+      "the stick-and-skin replacement program"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Consignment & Trade-In Reconditioning",
+   "aliases": [
+    "trade-in prep",
+    "consignment reconditioning",
+    "used gear prep",
+    "pre-owned costs",
+    "trade-in refurb"
+   ],
+   "narrative": [
+    "Trade-in prep",
+    "Used gear prep",
+    "Pre-owned costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Polishworks Detailing",
+     "base": 3300,
+     "memo": "Used gear cleaning and polishing — monthly"
+    },
+    {
+     "vendor": "Appraisal Pros Network",
+     "base": 2400,
+     "memo": "Third-party valuation services — monthly"
+    },
+    {
+     "vendor": "Setup Bench Contractors",
+     "base": 6800,
+     "memo": "Used guitar setup labor — monthly contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "estatelot",
+     "vendor": "Appraisal Pros Network",
+     "memos": [
+      "Collector estate purchase — inventory cataloging",
+      "Collector estate purchase — provenance research"
+     ],
+     "cross_memo": "Collector estate purchase — secure transport",
+     "plain": [
+      "the collector estate purchase",
+      "the estate purchase",
+      "the collector estate lot"
+     ],
+     "oblique": [
+      "a widow selling her late husband's instruments",
+      "a huge acquisition from one household",
+      "the garage full of vintage gear we bought",
+      "documenting several hundred items at once",
+      "an unusually large inflow of used stock",
+      "authenticating rare pieces",
+      "the buy that required a truck and a weekend",
+      "research on who owned what",
+      "a one-time windfall of used inventory",
+      "sorting a basement of old guitars",
+      "sourcing a whole shop's worth from one seller",
+      "the single biggest buy of the year",
+      "cataloging goods we had never seen before",
+      "identifying serial numbers on rarities",
+      "the mass intake of secondhand merchandise",
+      "a retiring player's lifetime collection"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "flooddamage",
+     "vendor": "Dryline Restoration Group",
+     "memos": [
+      "Water-damaged inventory salvage — humidity treatment",
+      "Water-damaged inventory salvage — finish repair"
+     ],
+     "cross_memo": "Water-damaged inventory salvage — insurance adjuster fee",
+     "plain": [
+      "the water-damaged inventory salvage",
+      "the inventory salvage",
+      "the water damage salvage"
+     ],
+     "oblique": [
+      "the pipe burst in the stockroom",
+      "rescuing guitars that got soaked",
+      "an insurance claim after the storm",
+      "drying out the basement storage",
+      "a plumbing failure that hit our backstock",
+      "repairs to warped necks and ruined finishes",
+      "the overnight leak",
+      "what the storm did to our reserve stock",
+      "recovering merchandise the adjuster flagged",
+      "a flooded cellar in early winter",
+      "the unexpected cleanup after heavy rain",
+      "restoring goods that sat in standing liquid",
+      "a facilities accident that spilled into inventory",
+      "the loss we are trying to recoup",
+      "treating wood that swelled",
+      "the emergency response to a leak"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Lesson Studio Operations",
+   "aliases": [
+    "lesson program",
+    "teaching studio costs",
+    "instructor costs",
+    "music lessons spend",
+    "studio operations"
+   ],
+   "narrative": [
+    "Lesson program",
+    "Teaching studio costs",
+    "Instructor costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Maestro Staffing Collective",
+     "base": 18500,
+     "memo": "Contract instructor fees — monthly"
+    },
+    {
+     "vendor": "Soundproof Spaces LLC",
+     "base": 3600,
+     "memo": "Practice room maintenance — monthly"
+    },
+    {
+     "vendor": "Sheet Music Distributors",
+     "base": 1800,
+     "memo": "Method books and student materials — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "recital",
+     "vendor": "Maestro Staffing Collective",
+     "memos": [
+      "Spring student showcase — hall rental",
+      "Spring student showcase — sound crew"
+     ],
+     "cross_memo": "Spring student showcase — printed programs",
+     "plain": [
+      "the spring student showcase",
+      "the student showcase",
+      "the spring showcase"
+     ],
+     "oblique": [
+      "the concert our learners put on for families",
+      "an evening where beginners performed",
+      "the public performance at the community theater",
+      "what we staged for proud parents",
+      "the annual event closing the school year",
+      "renting a venue for kids to play on stage",
+      "the performance night",
+      "hiring technicians for an amateur concert",
+      "a celebration of the youngest musicians",
+      "the yearly gathering with refreshments",
+      "bringing students before an audience",
+      "the end-of-term gala",
+      "the production that needed microphones",
+      "the show for enrolled kids",
+      "our biggest community outreach evening",
+      "the family recital night"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "accreditation",
+     "vendor": "Conservatory Standards Board",
+     "memos": [
+      "Pedagogy certification program — curriculum audit",
+      "Pedagogy certification program — instructor training"
+     ],
+     "cross_memo": "Pedagogy certification program — exam fees",
+     "plain": [
+      "the pedagogy certification program",
+      "the certification program",
+      "the pedagogy certification"
+     ],
+     "oblique": [
+      "getting our teachers credentialed",
+      "a formal stamp of approval for the school",
+      "meeting requirements for a state program",
+      "the external review of what we teach",
+      "upskilling the teaching roster",
+      "qualifying for a higher tier of recognition",
+      "the paperwork and training mandated this year",
+      "an investment to attract serious students",
+      "proving our staff are qualified",
+      "an outside body's review",
+      "the standards process",
+      "professional development for instructors",
+      "the credentialing push",
+      "what it took to earn the seal",
+      "a bid for prestige in the local market",
+      "evaluating the whole course of study"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Inbound Freight & Instrument Logistics",
+   "aliases": [
+    "inbound freight",
+    "freight in",
+    "shipping costs",
+    "logistics spend",
+    "delivery and freight"
+   ],
+   "narrative": [
+    "Inbound freight",
+    "Freight in",
+    "Shipping costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northway Freight Lines",
+     "base": 9800,
+     "memo": "LTL inbound freight — monthly manufacturer pickups"
+    },
+    {
+     "vendor": "Parcel Forward Express",
+     "base": 4100,
+     "memo": "Small parcel accessory shipping — monthly"
+    },
+    {
+     "vendor": "Dockside Warehousing",
+     "base": 5400,
+     "memo": "Cross-dock handling fees — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "pianoimport",
+     "vendor": "Northway Freight Lines",
+     "memos": [
+      "Overseas concert grand shipment — ocean container",
+      "Overseas concert grand shipment — customs brokerage"
+     ],
+     "cross_memo": "Overseas concert grand shipment — climate crate",
+     "plain": [
+      "the overseas concert grand shipment",
+      "the concert grand shipment",
+      "the overseas grand shipment"
+     ],
+     "oblique": [
+      "bringing in a flagship instrument from abroad",
+      "the tariffs and paperwork on a huge purchase",
+      "a single expensive arrival by sea",
+      "the container that took weeks to clear",
+      "moving our most costly item across an ocean",
+      "the special order for a wealthy buyer",
+      "what the border agents required",
+      "a one-time import of a marquee product",
+      "delivering something the size of a car",
+      "the showpiece acquisition",
+      "specialty handling for an irreplaceable item",
+      "the long-haul trip for a premium purchase",
+      "the foreign factory's order",
+      "the port delays and fees",
+      "a rare arrival that needed careful padding",
+      "getting our headline piece into the building"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "portstrike",
+     "vendor": "Harborline Expedite",
+     "memos": [
+      "Dockworker walkout rerouting — air freight upgrade",
+      "Dockworker walkout rerouting — rail transfer"
+     ],
+     "cross_memo": "Dockworker walkout rerouting — extra storage days",
+     "plain": [
+      "the dockworker walkout rerouting",
+      "the walkout rerouting",
+      "the dockworker rerouting"
+     ],
+     "oblique": [
+      "a labor dispute that stalled our shipments",
+      "paying more to get holiday stock on time",
+      "alternative routes when the terminal closed",
+      "expediting goods that were stuck",
+      "the disruption at the coast",
+      "rush charges for a delayed vendor order",
+      "getting around a blocked harbor",
+      "a supply chain scramble in November",
+      "the surcharge for faster delivery",
+      "an unavoidable premium to hit the season",
+      "the slowdown nobody planned for",
+      "redirecting cargo mid-journey",
+      "what we spent to beat the shipping delays",
+      "emergency arrangements for seasonal merchandise",
+      "the strike that held up pallets",
+      "making up for lost transit time"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Online Storefront & Fulfillment",
+   "aliases": [
+    "ecommerce costs",
+    "online store spend",
+    "web fulfillment",
+    "digital storefront",
+    "online orders spend"
+   ],
+   "narrative": [
+    "Ecommerce costs",
+    "Online store spend",
+    "Web fulfillment"
+   ],
+   "recurring": [
+    {
+     "vendor": "CartCraft Platforms",
+     "base": 2800,
+     "memo": "Storefront platform subscription — monthly"
+    },
+    {
+     "vendor": "PickPack Fulfillment",
+     "base": 8600,
+     "memo": "Pick and pack labor — monthly"
+    },
+    {
+     "vendor": "Packaging Pro Supply",
+     "base": 3500,
+     "memo": "Boxes and padding materials — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "liveauction",
+     "vendor": "CartCraft Platforms",
+     "memos": [
+      "Livestream gear auction — streaming integration",
+      "Livestream gear auction — bidder verification"
+     ],
+     "cross_memo": "Livestream gear auction — studio camera rental",
+     "plain": [
+      "the livestream gear auction",
+      "the gear auction livestream",
+      "the livestream auction"
+     ],
+     "oblique": [
+      "the online sale where bids ticked up in real time",
+      "a video event for rare equipment",
+      "broadcasting a sale to buyers across the country",
+      "the experiment with interactive selling",
+      "a promotion that went viral",
+      "the tech setup for competitive offers",
+      "a special web happening for collectors",
+      "engaging remote shoppers",
+      "the internet sales stunt",
+      "an unusual way to move premium stock",
+      "the digital sales night",
+      "the marketing team's pet project",
+      "what we built so strangers could compete on bids",
+      "a one-night selling spree on camera",
+      "fan-favorite entertainment that doubled as sales",
+      "the on-camera clearance"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "returnsurge",
+     "vendor": "Reverse Lane Logistics",
+     "memos": [
+      "Holiday gift returns processing — restocking labor",
+      "Holiday gift returns processing — inspection bench"
+     ],
+     "cross_memo": "Holiday gift returns processing — prepaid return labels",
+     "plain": [
+      "the holiday gift returns processing",
+      "the gift returns processing",
+      "the holiday returns processing"
+     ],
+     "oblique": [
+      "the flood of unwanted presents coming back",
+      "what followed the season's peak",
+      "inspecting packages that arrived after December",
+      "the January wave of refunds",
+      "handling items customers decided against",
+      "a temporary crew for incoming boxes",
+      "the cleanup after the rush",
+      "buyers changing their minds en masse",
+      "sorting through opened merchandise",
+      "dealing with wrong-size or wrong-color purchases",
+      "extra hands brought in for the lull",
+      "the seasonal reversal in volume",
+      "the tail end of the sales season",
+      "refunds and re-shelving after the new year",
+      "reconciling a mountain of cardboard",
+      "the spike in sent-back orders"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

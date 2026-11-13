@@ -6,13 +6,19 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
 
 ## Summary
 
-- **No fine-tuned model here beats Claude Sonnet 5.5 on worlds it was not trained on.** On
-  eleven unseen worlds (new industries, written by a different model, protocol fixed in
-  advance) the best local model, a 3B model with LoRA adapters, leaves 54.4% of held claims
-  decided on held-out phrasing and 40.7% on the paraphrase tier (61.3% on held-out when four
-  sampled replies are pooled). Sonnet leaves 81.7% and 63.3%;
+- **Like for like, no fine-tuned model here beats Claude Sonnet 5.5 on worlds it was not
+  trained on.** On eleven unseen worlds (new industries, written by a different model,
+  protocol fixed in advance) the best single local model, a 3B model with LoRA adapters,
+  leaves 54.4% of held claims decided on held-out phrasing and 40.7% on the paraphrase tier
+  (61.3% on held-out when four sampled replies are pooled). Sonnet leaves 81.7% and 63.3%;
   the ceiling is 89.3% and 76.0%. The local model loses in all eleven worlds.
-- **The closest local result is two 3B models and a wide net, and it has a cost.** A second
+- **With a much wider net, three local models pass Sonnet on three of four measured tiers.**
+  A 14B adapter trained only to guess search terms, pooled with the 3B one (about 39 terms a
+  claim where the prompt asks for 3 to 8), decides 77.0% and 64.1% on the unseen suite and
+  82.3% and 66.2% on the sealed one, against Sonnet's 81.7%, 63.3%, 80.5% and 62.2%, with no
+  control FAIL or unsafe PASS. It shows a reviewer about twice as many wrong claims marked
+  "supported" as Sonnet does, and Sonnet was not given the wider net (section 8b).
+- **Two 3B models and a wide net get most of the way, and it has a cost.** A second
   adapter trained only to guess search terms, pooled over four samples with the first model's
   own terms and no cap (about 26 terms a claim where the prompt asks for 3 to 8), decides
   69.4% and 54.8% on the unseen suite and 75.1% and 56.9% on the sealed one, where Sonnet
@@ -539,6 +545,62 @@ on a laptop, sending three times the terms, get within 5 to 12 points of Sonnet 
 behind it, with a reviewer shown about half again as many wrong claims to turn down. Sonnet
 was not given the wider net; with one it would presumably also score higher.
 
+## 8b. A larger term model: ahead of Sonnet on three of four measured tiers, at a reviewer cost
+
+Section 8a's term model is 3B. The same terms-only rows were used to train a LoRA adapter on
+Qwen2.5-14B (4-bit, batch 2, 1,200 iterations, 2 h 47 min on the same laptop; validation loss
+3.06 to 1.25). Stage 1 is unchanged: the 3B copy model's saved replies. Only the model that
+guesses terms for each (account, stated reason) changed. Everything below was chosen on the
+four dev worlds; the measured suites were run once, with the headline row named beforehand.
+
+On the dev worlds, held-out phrasing (Sonnet: cause found 80.1%, 16 of 120 wrong claims
+shown, 82.8% decided):
+
+| Term proposer | Terms a claim | True claims, cause found | Wrong claims shown as supported | Decided, fully taught |
+|---|---:|---:|---:|---:|
+| 3B term model, pool of 4 plus stage 1's terms (8a) | about 27 | 75.9% | 16 of 120 | 78.3% |
+| 14B term model, greedy | up to 8 | 64.7% | 15 of 120 | 66.1% |
+| 14B, pool of 4 plus stage 1's terms | about 30 | 81.4% | 20 of 120 | 82.8% |
+| 14B pool of 4 + 3B pool of 4 + stage 1's terms | about 46 | 89.5% | 24 of 120 | 86.2% |
+| The same, keeping only terms two answers agree on | about 16 | 75.7% | 16 of 120 | 77.1% |
+
+The larger model is the first change that helps inside the prompt's limit of eight terms
+(66.1% decided against 55.4% for the 3B term model). The last row is the like-for-like
+reading: held to Sonnet's reviewer cost on the dev worlds, the local pair decides 77.1% to
+Sonnet's 82.8%. An earlier checkpoint (600 iterations) was within noise of the final one and
+was not used.
+
+The measured suites, run once (3 h 45 min and 3 h of term generation). Headline: the 14B and
+3B term models' pools with stage 1's terms, no cap, about 39 terms a claim.
+
+| Suite, tier | Two 3B models (8a) | 14B greedy, 8 terms | 14B pool | Headline | Sonnet | Worlds won against Sonnet |
+|---|---:|---:|---:|---:|---:|---:|
+| Unseen, held-out | 69.4% | 60.8% | 74.4% | 77.0% | **81.7%** | 3 of 11 |
+| Unseen, paraphrase | 54.8% | 47.6% | 61.5% | **64.1%** | 63.3% | 6 of 11, 1 tied |
+| Sealed, held-out | 75.1% | 59.2% | 78.9% | **82.3%** | 80.5% | 5 of 9 |
+| Sealed, paraphrase | 56.9% | 50.8% | 62.9% | **66.2%** | 62.2% | 6 of 9 |
+
+Control FAIL and unsafe PASS are 0 at every teaching step of all twelve runs.
+
+What it costs, as wrong claims shown to the reviewer as supported:
+
+| Suite, tier | Headline | 14B pool | 14B greedy | Sonnet |
+|---|---:|---:|---:|---:|
+| Unseen, held-out (of 330) | 72 | 60 | 31 | 40 |
+| Unseen, paraphrase (of 330) | 90 | 76 | 33 | 39 |
+| Sealed, held-out (of 270) | 67 | 56 | 36 | 35 |
+| Sealed, paraphrase (of 270) | 59 | 51 | 31 | 29 |
+
+So the claim that can be made is narrow. Three local models on a laptop (3B copy, 14B and 3B
+term), sending about five times the terms Sonnet is asked for, leave more claims decided than
+Sonnet on three of the four measured tiers and fewer on the fourth, with no unsafe result,
+while showing a reviewer about twice as many wrong claims to turn down. It is not a
+like-for-like win: within eight terms the 14B model decides 59% to 61% where Sonnet decides
+80% to 82%; Sonnet was not given the wider net; margins of one to four points on 9 and 11
+worlds from a single seed are small; and the reviewer is simulated, so the extra wrong claims
+cost nothing here that they would cost a person. Nothing passes on a model's terms in any
+case: the checker decides, and the wider net only changes what a reviewer is asked.
+
 ## 9. Two safety gaps the second suite exposed, and the fixes
 
 The first score on the sealed suite was Sonnet's, and it broke a kill criterion: 2 unsafe
@@ -830,6 +892,18 @@ $MLX_PY training/two_stage.py --keep --claims <stage-1 replies for the suite> --
     --model $BASE --adapter $FT/adapters/terms --name proven-two-stage --samples 4 --max-terms 99
 $PY -m proven teach-sim --extractor openweight --model proven-two-stage --worlds unseen --phrasing heldout
 $PY training/breadth_cost.py --suite unseen --models claude-sonnet-5-5 proven-two-stage
+```
+
+The larger term model (section 8b) is the same recipe on `mlx-community/Qwen2.5-14B-Instruct-4bit`
+(batch 2, learning rate 5e-5, 1,200 iterations). Its answers and the 3B term model's are
+saved with `--terms` and pooled without the GPU:
+
+```sh
+$MLX_PY training/two_stage.py --keep --claims <stage-1 replies> --suite unseen --model $BASE14 \
+    --adapter $FT/adapters/terms14 --name proven-ts14b --samples 4 --max-terms 99 --terms t14.json
+# t-both.json: for each key, the 14B answers followed by the 3B answers
+$PY training/two_stage.py --keep --claims <stage-1 replies> --suite unseen --from-terms t-both.json \
+    --name proven-ts14b-both --samples 8 --max-terms 99 [--min-votes 2]
 ```
 
 RL (section 11):

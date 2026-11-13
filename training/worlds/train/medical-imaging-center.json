@@ -1,0 +1,708 @@
+{
+ "slug": "medical-imaging-center",
+ "industry": "medical imaging center",
+ "entities": [
+  "Meridian Diagnostic Imaging",
+  "Clearview Radiology Partners",
+  "Northgate Imaging Associates",
+  "Harborlight Scan Centers",
+  "Summit Ridge Medical Imaging"
+ ],
+ "accounts": [
+  {
+   "name": "Imaging Equipment Service Contracts",
+   "aliases": [
+    "equipment service",
+    "scanner service contracts",
+    "service agreements",
+    "imaging maintenance",
+    "equipment maintenance spend"
+   ],
+   "narrative": [
+    "Equipment service",
+    "Scanner service contracts",
+    "Imaging maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Altavion Medical Systems",
+     "base": 24500,
+     "memo": "Qtr svc agmt MRI suite A"
+    },
+    {
+     "vendor": "Corvex Healthcare Technologies",
+     "base": 18200,
+     "memo": "Mnt contract CT scanners"
+    },
+    {
+     "vendor": "Brightwell Service Partners",
+     "base": 6400,
+     "memo": "Ultrasound & X-ray preventive Mnt"
+    }
+   ],
+   "events": [
+    {
+     "key": "gradient",
+     "vendor": "Altavion Medical Systems",
+     "memos": [
+      "Gradient coil replacement — parts Inv",
+      "Gradient coil replacement — field engineer labor"
+     ],
+     "cross_memo": "Gradient coil replacement — loaner chiller rental",
+     "plain": [
+      "the gradient coil replacement",
+      "gradient coil swap costs",
+      "the gradient coil work"
+     ],
+     "oblique": [
+      "getting the main MRI back online after it went dark",
+      "the magnet room outage fix",
+      "an emergency repair on our busiest machine",
+      "restoring scan capacity after the failure",
+      "the unplanned hardware swap inside the magnet suite",
+      "urgent work so patients stopped being rescheduled",
+      "what it took to revive the downed unit",
+      "the high-field system breakdown",
+      "parts and technicians flown in overnight",
+      "the fix that ended a two-week backlog",
+      "the part that burned out during peak season",
+      "an unexpected overhaul of the flagship scanner",
+      "the repair authorized by the medical director",
+      "getting the imaging suite functioning again",
+      "a failure that cancelled dozens of appointments",
+      "the emergency call-out for the large magnet"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "orthanc",
+     "vendor": "Orthanc Biomedical Calibration",
+     "memos": [
+      "Phantom recalibration sweep — Inv 4471",
+      "Phantom recalibration sweep — dosimetry check Svc"
+     ],
+     "cross_memo": "Phantom recalibration sweep — travel & lodging",
+     "plain": [
+      "the phantom recalibration sweep",
+      "phantom recalibration charges",
+      "the phantom recalibration project"
+     ],
+     "oblique": [
+      "the accreditation re-test across all rooms",
+      "what the surveyors required of us",
+      "bringing image quality back within tolerance",
+      "the audit-driven quality check",
+      "the one-time quality verification of every scanner",
+      "work demanded after the failed inspection",
+      "proving our equipment meets the standard again",
+      "the compliance push before the review board visit",
+      "outside specialists validating the output",
+      "the corrective step after a flagged finding",
+      "testing that keeps our certification alive",
+      "the regulator-prompted accuracy checkup",
+      "a sweeping check requested by the accrediting body",
+      "documentation-heavy verification of our units",
+      "the standards review we had to pass",
+      "an external team measuring all our devices"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Contrast Agents & Radiopharmaceuticals",
+   "aliases": [
+    "contrast",
+    "contrast media",
+    "isotopes",
+    "nuclear supplies",
+    "contrast and tracer spend"
+   ],
+   "narrative": [
+    "Contrast media",
+    "Nuclear supplies",
+    "Contrast and tracer spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lumigen Pharma Supply",
+     "base": 14800,
+     "memo": "Iodinated contrast Inv monthly"
+    },
+    {
+     "vendor": "Vantor Nuclear Pharmacy",
+     "base": 19600,
+     "memo": "FDG & Tc-99m unit doses"
+    },
+    {
+     "vendor": "Pellucid Gadolinium Co",
+     "base": 8300,
+     "memo": "Gadolinium agent restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "gallium",
+     "vendor": "Vantor Nuclear Pharmacy",
+     "memos": [
+      "Ga-68 generator expedite — rush lot",
+      "Ga-68 generator expedite — hazmat courier Svc"
+     ],
+     "cross_memo": "Ga-68 generator expedite — lead shielding case",
+     "plain": [
+      "the Ga-68 generator expedite",
+      "Ga-68 generator rush charges",
+      "the Ga-68 generator order"
+     ],
+     "oblique": [
+      "a last-minute scramble to keep the tracer supply flowing",
+      "the premium we paid to avoid cancelling scans",
+      "emergency sourcing after the regular shipment failed",
+      "speeding up delivery of a short-lived agent",
+      "the cost of not running out midweek",
+      "urgent procurement for the prostate program",
+      "overnight handling of a radioactive shipment",
+      "the rush surcharge on a perishable product",
+      "expedited logistics for a time-sensitive compound",
+      "protecting the schedule for referred oncology patients",
+      "a panic purchase when stock ran dry",
+      "what it cost to bridge a supplier delay",
+      "fast-tracked material for newly added exams",
+      "the pricey emergency order",
+      "special freight for decaying material",
+      "covering a gap in our usual allocation"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "vitreo",
+     "vendor": "Vitreo Biologics Recall Services",
+     "memos": [
+      "Lot Q-recall reimbursement — returned vials",
+      "Lot Q-recall reimbursement — replacement shipment"
+     ],
+     "cross_memo": "Lot Q-recall reimbursement — disposal manifest",
+     "plain": [
+      "the lot Q-recall reimbursement",
+      "Q-recall reimbursement costs",
+      "the lot Q-recall replacement"
+     ],
+     "oblique": [
+      "replacing product pulled from the shelves by the manufacturer",
+      "the safety notice that forced us to restock",
+      "discarding and reordering after a purity concern",
+      "a batch we could no longer use",
+      "the substitution after the defect announcement",
+      "stock that had to be quarantined and swapped",
+      "the pharmacy alert that emptied our cabinets",
+      "covering the gap when a whole shipment was pulled",
+      "fresh inventory after a withdrawal notice",
+      "what we paid to make patients whole after the pullback",
+      "the supply interruption from the manufacturer's notice",
+      "one-time repurchasing following a contamination scare",
+      "the reorder prompted by a safety bulletin",
+      "expenses tied to a compromised production run",
+      "the unplanned second purchase of the same material",
+      "cleanup of unusable inventory and its replacement"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Radiologist Professional Fees",
+   "aliases": [
+    "reads",
+    "radiologist fees",
+    "professional reads",
+    "reading physicians",
+    "interpretation costs"
+   ],
+   "narrative": [
+    "Radiologist fees",
+    "Professional reads",
+    "Interpretation costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Evergreen Radiology Group PLLC",
+     "base": 29000,
+     "memo": "Monthly pro read fee — general"
+    },
+    {
+     "vendor": "Kestrel Neuroradiology Associates",
+     "base": 15500,
+     "memo": "Neuro/MSK subspecialty reads"
+    }
+   ],
+   "events": [
+    {
+     "key": "nighthawk",
+     "vendor": "Kestrel Neuroradiology Associates",
+     "memos": [
+      "Overnight teleread surge — stroke protocol",
+      "Overnight teleread surge — added coverage Inv"
+     ],
+     "cross_memo": "Overnight teleread surge — secure VPN licenses",
+     "plain": [
+      "the overnight teleread surge",
+      "overnight teleread coverage",
+      "the teleread surge"
+     ],
+     "oblique": [
+      "staffing a doctor around the clock for emergency brain scans",
+      "a new hospital partnership requiring quick turnaround",
+      "covering after-hours demand from the trauma center",
+      "specialists on call while the contract ramped up",
+      "the sudden volume from our neighboring facility",
+      "an agreement with the regional hospital for fast answers",
+      "rapid reporting for acute cases at all hours",
+      "the premium tier of response time we committed to",
+      "extra doctors for the weekend flood of urgent studies",
+      "service-level commitments to the emergency department",
+      "filling the gap on late shifts",
+      "a spike in urgent referrals after another provider closed",
+      "paying for immediate availability",
+      "expanded hours promised in the new agreement",
+      "sub-hour turnaround for critical findings",
+      "the on-demand reading arrangement"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "lexcorp",
+     "vendor": "Lexcorp Locum Physicians",
+     "memos": [
+      "Locum placement — vacation backfill Inv",
+      "Locum placement — credentialing fee"
+     ],
+     "cross_memo": "Locum placement — housing allowance",
+     "plain": [
+      "the locum placement",
+      "locum placement charges",
+      "the locum backfill"
+     ],
+     "oblique": [
+      "a temporary substitute while our partner was away",
+      "covering a long leave of absence",
+      "an agency-supplied doctor for a few weeks",
+      "the stopgap staffing after a resignation",
+      "bringing in someone from outside to keep reports moving",
+      "the interim solution for an open seat",
+      "a visiting physician filling the vacant chair",
+      "short-term help from a staffing firm",
+      "paperwork and onboarding for a temporary clinician",
+      "the premium for a one-time substitute",
+      "keeping turnaround steady with a borrowed doctor",
+      "what it cost to plug the holiday gap",
+      "cover during a medical leave",
+      "the placement agency's invoice for filling in",
+      "a rented clinician while hiring dragged on",
+      "the fees to have a stand-in credentialed"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Radiation Safety & Shielding",
+   "aliases": [
+    "shielding",
+    "radiation safety",
+    "lead and shielding costs",
+    "rad safety",
+    "dosimetry"
+   ],
+   "narrative": [
+    "Radiation safety",
+    "Shielding",
+    "Dosimetry"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Dosimetry Services",
+     "base": 2100,
+     "memo": "Monthly badge monitoring Svc"
+    },
+    {
+     "vendor": "Plumbline Health Physics",
+     "base": 3800,
+     "memo": "Qtr physicist consult retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "bunker",
+     "vendor": "Plumbline Health Physics",
+     "memos": [
+      "Vault door retrofit — lead lining design",
+      "Vault door retrofit — shielding survey Inv"
+     ],
+     "cross_memo": "Vault door retrofit — contractor permit",
+     "plain": [
+      "the vault door retrofit",
+      "vault door retrofit costs",
+      "the vault door project"
+     ],
+     "oblique": [
+      "upgrading the room where the new cyclotron-grade equipment lives",
+      "making an old space safe for a heavier machine",
+      "walls and entry points redone to meet code",
+      "the structural change required before installation",
+      "reinforcement of a room after the layout changed",
+      "construction needed so inspectors would approve",
+      "modifications to protect staff next door",
+      "the engineering study for a repurposed room",
+      "built-in protection for the neighboring suite",
+      "what the state required before we could switch on",
+      "a redesign of the barrier around the entrance",
+      "getting a converted room ready for operation",
+      "the heavy-duty containment improvements",
+      "blueprint work and site measurements for the barrier",
+      "securing sign-off on the revised floor plan",
+      "one-time construction for a safe operating space"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "tungsten",
+     "vendor": "Tungsten Ridge Fabricators",
+     "memos": [
+      "Mobile barrier fabrication — custom panels",
+      "Mobile barrier fabrication — install labor Svc"
+     ],
+     "cross_memo": "Mobile barrier fabrication — freight crating",
+     "plain": [
+      "the mobile barrier fabrication",
+      "mobile barrier fabrication charges",
+      "the mobile barrier panels"
+     ],
+     "oblique": [
+      "portable protection for the new bedside unit",
+      "equipment on wheels that keeps radiation off the hallway",
+      "made-to-order screens for the surgical suite",
+      "custom-built gear that employees can push around",
+      "protective gear for the mobile C-arm program",
+      "one-off metalwork for the outpatient wing",
+      "moveable shielding so techs can work at the bedside",
+      "a purchase driven by the new procedural offering",
+      "specialty construction delivered on pallets",
+      "stuff built to our measurements by a machine shop",
+      "the new safeguards for ambulatory imaging",
+      "heavy panels that arrived by truck",
+      "portable defenses installed by the vendor's crew",
+      "tailor-made protection for a mobile service line",
+      "fabricated partitions for temporary imaging spaces",
+      "the shop order for roll-away protection"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "PACS & Image Archive Hosting",
+   "aliases": [
+    "pacs",
+    "image archive",
+    "imaging storage",
+    "pacs hosting",
+    "archive hosting costs"
+   ],
+   "narrative": [
+    "PACS hosting",
+    "Image archive",
+    "Imaging storage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stratus Medical Cloud",
+     "base": 11400,
+     "memo": "Monthly archive hosting TB tier"
+    },
+    {
+     "vendor": "Nimbus Viewer Systems",
+     "base": 4900,
+     "memo": "Mnt & license zero-footprint viewer"
+    },
+    {
+     "vendor": "Datavault Backup Corp",
+     "base": 3200,
+     "memo": "Offsite replication Svc"
+    }
+   ],
+   "events": [
+    {
+     "key": "migration",
+     "vendor": "Stratus Medical Cloud",
+     "memos": [
+      "Legacy study migration — bulk ingest",
+      "Legacy study migration — egress fees Inv"
+     ],
+     "cross_memo": "Legacy study migration — extra tape reader rental",
+     "plain": [
+      "the legacy study migration",
+      "legacy study migration charges",
+      "the legacy study ingest"
+     ],
+     "oblique": [
+      "moving a decade of old patient pictures into the new system",
+      "consolidating records inherited from the acquired clinic",
+      "the one-time transfer of historical files",
+      "bringing the previous owner's archive over",
+      "retiring the old servers and copying their contents",
+      "a lump-sum project to bring forward old exams",
+      "getting past scans searchable alongside current ones",
+      "digitizing and relocating the earlier collection",
+      "the cost of absorbing another practice's records",
+      "the cutover from the former platform",
+      "pulling years of stored images across",
+      "charges for hauling data out of the retired setup",
+      "the big copy job after the merger",
+      "data relocation requested by compliance",
+      "one-time work to unify two image libraries",
+      "the transfer that lets radiologists compare with prior studies"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "quantum",
+     "vendor": "Quantum Forensics Response",
+     "memos": [
+      "Ransomware recovery engagement — incident team",
+      "Ransomware recovery engagement — decryption Inv"
+     ],
+     "cross_memo": "Ransomware recovery engagement — credit monitoring notice",
+     "plain": [
+      "the ransomware recovery engagement",
+      "ransomware recovery costs",
+      "the ransomware recovery team"
+     ],
+     "oblique": [
+      "outside experts called in after the breach",
+      "the cyber attack that locked up our files",
+      "emergency help from a security firm",
+      "what we spent after criminals hit our network",
+      "getting patient data back from hostile hands",
+      "the incident that forced a weekend of firefighting",
+      "investigating how intruders got inside",
+      "restoring systems after a malicious lockout",
+      "specialists restoring access to scrambled studies",
+      "the response to an extortion attempt",
+      "cleanup following the security event",
+      "a crisis consultant engaged by our counsel",
+      "the aftermath of a hack on the scheduling servers",
+      "notifying affected patients and rebuilding systems",
+      "the unplanned investigation into compromised machines",
+      "the attackers' fallout bill"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Patient Transport & Sedation Services",
+   "aliases": [
+    "transport",
+    "sedation",
+    "anesthesia support",
+    "patient transport",
+    "sedation staffing"
+   ],
+   "narrative": [
+    "Patient transport",
+    "Sedation staffing",
+    "Anesthesia support"
+   ],
+   "recurring": [
+    {
+     "vendor": "Calm Harbor Anesthesia Partners",
+     "base": 9800,
+     "memo": "Monthly sedation coverage MRI peds"
+    },
+    {
+     "vendor": "Rapid Carry Medical Transit",
+     "base": 3600,
+     "memo": "Wheelchair van trips Inv"
+    }
+   ],
+   "events": [
+    {
+     "key": "bariatric",
+     "vendor": "Rapid Carry Medical Transit",
+     "memos": [
+      "Bariatric lift transport — specialty crew",
+      "Bariatric lift transport — hoist rental Svc"
+     ],
+     "cross_memo": "Bariatric lift transport — table reinforcement kit",
+     "plain": [
+      "the bariatric lift transport",
+      "bariatric lift transport costs",
+      "the bariatric lift crew"
+     ],
+     "oblique": [
+      "moving heavier patients safely onto the tables",
+      "equipment and extra hands for larger clients",
+      "a new referral program for weight-loss surgery candidates",
+      "special handling that regular vans couldn't provide",
+      "an arrangement for patients above standard limits",
+      "accommodations for people who exceed typical capacity",
+      "the specialized team added for a hospital contract",
+      "extra staff to avoid injuries during transfers",
+      "a one-time response to a surge in those appointments",
+      "reinforced gear needed before accepting such cases",
+      "protecting both patients and technologists during moves",
+      "the oversized-patient accessibility push",
+      "purpose-built vehicles hired for a client group",
+      "a requirement from the referring surgeon's office",
+      "gear purchased to widen who we can scan",
+      "the cost of making the suite accessible to everyone"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "pedsline",
+     "vendor": "Pediatric Dreamscape Specialists",
+     "memos": [
+      "Child life program launch — sedation-free kit",
+      "Child life program launch — coordinator training"
+     ],
+     "cross_memo": "Child life program launch — mural installation",
+     "plain": [
+      "the child life program launch",
+      "child life program costs",
+      "the child life launch"
+     ],
+     "oblique": [
+      "making scans less scary for the youngest patients",
+      "an initiative to reduce reliance on medication",
+      "distraction tools and trained helpers for kids",
+      "the family-friendly overhaul of the waiting area",
+      "a pilot meant to shorten appointment times for little ones",
+      "specialists who coach children through the exam",
+      "goggles and games that keep small patients still",
+      "the effort to win over the pediatric referral base",
+      "new staff trained to calm anxious families",
+      "an investment in a gentler experience",
+      "reduced need for putting children under",
+      "decor and tools that ease fear",
+      "the community outreach tied to the children's hospital",
+      "a start-up expense for the kids' service line",
+      "one-time kit purchases and instruction",
+      "the program that cut repeat scans for restless toddlers"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Accreditation & Regulatory Compliance",
+   "aliases": [
+    "accreditation",
+    "compliance",
+    "regulatory",
+    "licensing",
+    "credentialing"
+   ],
+   "narrative": [
+    "Accreditation",
+    "Compliance",
+    "Licensing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Compass Quality Institute",
+     "base": 1800,
+     "memo": "Qtr accreditation program dues"
+    },
+    {
+     "vendor": "Statewide Radiologic Licensing Board",
+     "base": 950,
+     "memo": "Facility license renewal Inv"
+    }
+   ],
+   "events": [
+    {
+     "key": "hipaa",
+     "vendor": "Compass Quality Institute",
+     "memos": [
+      "Mock survey readiness audit — onsite assessors",
+      "Mock survey readiness audit — corrective action plan"
+     ],
+     "cross_memo": "Mock survey readiness audit — staff overtime backfill",
+     "plain": [
+      "the mock survey readiness audit",
+      "mock survey readiness costs",
+      "the mock survey audit"
+     ],
+     "oblique": [
+      "a dress rehearsal for the real inspectors",
+      "paying people to find our weaknesses before the authorities do",
+      "preparing for the upcoming site visit",
+      "outsiders walking the floors with checklists",
+      "pre-inspection fixes we were told to make",
+      "the practice run that exposed gaps",
+      "remediation items recorded after the trial visit",
+      "getting ready for an unannounced examination",
+      "extra hours so everything would be spotless",
+      "the trial evaluation that cost more than expected",
+      "preparations to protect our standing",
+      "an assessment arranged by leadership",
+      "documentation scrambles ahead of the deadline",
+      "the review we ordered to avoid penalties",
+      "a dry-run of the official evaluation",
+      "tidying procedures flagged by consultants"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "stateaudit",
+     "vendor": "Halvorsen Healthcare Counsel LLP",
+     "memos": [
+      "Billing inquiry response — document production",
+      "Billing inquiry response — attorney hours Inv"
+     ],
+     "cross_memo": "Billing inquiry response — records copying service",
+     "plain": [
+      "the billing inquiry response",
+      "billing inquiry response fees",
+      "the billing inquiry production"
+     ],
+     "oblique": [
+      "lawyers answering a letter from the payer",
+      "a request for records from the insurer",
+      "responding to a government query about past claims",
+      "outside attorneys sorting through old charts",
+      "a probe into how some exams were coded",
+      "legal help after a reimbursement question",
+      "gathering evidence at a regulator's request",
+      "time spent defending our documentation",
+      "the formal questions from the health plan",
+      "a lengthy back-and-forth over medical necessity",
+      "counsel's invoice for handling the letter",
+      "pulling thousands of files for reviewers",
+      "the dispute over what was owed",
+      "one-time legal work tied to an external review",
+      "retained advisors guiding our reply",
+      "professionals preparing our written response"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

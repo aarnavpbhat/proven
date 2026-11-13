@@ -1,0 +1,718 @@
+{
+ "slug": "stock-photo-and-footage-agency",
+ "industry": "stock photo and footage agency",
+ "entities": [
+  "Lumen Harbor Stock Media",
+  "Brightfield Footage Collective",
+  "Parallax Pixel Exchange",
+  "Kestrel Frame & Motion",
+  "Orchard Lane Imagery"
+ ],
+ "accounts": [
+  {
+   "name": "Contributor Royalties",
+   "aliases": [
+    "royalties",
+    "contributor payouts",
+    "contributor royalties",
+    "creator payouts",
+    "royalty expense"
+   ],
+   "narrative": [
+    "Royalties",
+    "Contributor payouts",
+    "Creator payouts"
+   ],
+   "recurring": [
+    {
+     "vendor": "PayStream Global Disbursements",
+     "base": 28000,
+     "memo": "Monthly contributor royalty run - photo licenses"
+    },
+    {
+     "vendor": "ClipVault Partner Network",
+     "base": 14500,
+     "memo": "Footage partner revenue share - monthly settlement"
+    },
+    {
+     "vendor": "Meridian Tax Withholding Services",
+     "base": 2400,
+     "memo": "Contributor tax withholding remittance"
+    }
+   ],
+   "events": [
+    {
+     "key": "estate",
+     "vendor": "PayStream Global Disbursements",
+     "memos": [
+      "Heritage archive backpay - estate claim PO 4471",
+      "Heritage archive backpay - retro royalties WO 4472"
+     ],
+     "cross_memo": "Heritage archive backpay - legal review fee",
+     "plain": [
+      "the heritage archive backpay",
+      "the heritage archive claim",
+      "the heritage archive settlement"
+     ],
+     "oblique": [
+      "a lump payment to a deceased photographer's family",
+      "catching up on years of unpaid earnings",
+      "the late shooter's heirs getting paid",
+      "retroactive money owed to an old collection",
+      "a one-time catch-up for historic sales",
+      "settling what a rights holder was never paid",
+      "payments covering decades of unclaimed sales",
+      "the estate payout",
+      "money finally released to descendants",
+      "clearing an old balance owed to a legacy creator",
+      "the back-dated sums for a famous lensman's catalog",
+      "an unusual payout reaching relatives",
+      "making good on earnings never distributed",
+      "a big true-up for a long-dormant portfolio",
+      "what we owed from the old days",
+      "the catch-up on forgotten sales"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "bonus",
+     "vendor": "Quillon Incentive Partners",
+     "memos": [
+      "Top seller bounty program - Q award batch PO 5530",
+      "Top seller bounty program - payout tranche WO 5531"
+     ],
+     "cross_memo": "Top seller bounty program - gift card fulfillment",
+     "plain": [
+      "the top seller bounty program",
+      "the top seller bounty awards",
+      "the top seller bounty payouts"
+     ],
+     "oblique": [
+      "extra cash for our most productive shooters",
+      "a reward push to boost submissions",
+      "incentives to lure in star creators",
+      "the campaign to keep prolific talent loyal",
+      "bonus money for best performers",
+      "paying people for hitting volume targets",
+      "a retention gesture for headline contributors",
+      "the contest prizes handed out",
+      "a spending push to win back top talent",
+      "extra rewards approved by the content chief",
+      "the performance perks",
+      "money meant to spur more uploads",
+      "a thank-you scheme for heavy hitters",
+      "competing for the best shooters with sweeteners",
+      "cash prizes for leaders",
+      "an effort to stop defections"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Content Acquisition & Commissioning",
+   "aliases": [
+    "commissioned shoots",
+    "content acquisition",
+    "commissioning spend",
+    "original production",
+    "shoot budget"
+   ],
+   "narrative": [
+    "Commissioned shoots",
+    "Content acquisition",
+    "Original production"
+   ],
+   "recurring": [
+    {
+     "vendor": "Foxglove Talent Booking",
+     "base": 9500,
+     "memo": "Model and talent booking fees - standing roster"
+    },
+    {
+     "vendor": "Redline Location Permits",
+     "base": 4200,
+     "memo": "Location permit fees - monthly shoots"
+    },
+    {
+     "vendor": "Tandem Crew Staffing",
+     "base": 16000,
+     "memo": "Freelance crew day rates - commissioned shoots"
+    }
+   ],
+   "events": [
+    {
+     "key": "drone",
+     "vendor": "Redline Location Permits",
+     "memos": [
+      "Alpine glacier flyover series - aerial clearance PO 6102",
+      "Alpine glacier flyover series - waiver filing WO 6103"
+     ],
+     "cross_memo": "Alpine glacier flyover series - helicopter standby",
+     "plain": [
+      "the alpine glacier flyover series",
+      "the alpine glacier flyover shoot",
+      "the alpine glacier flyover clearances"
+     ],
+     "oblique": [
+      "a high-altitude remote expedition for new scenery",
+      "permissions to film from the air in protected terrain",
+      "an ambitious nature capture trip",
+      "sky-based filming in a restricted zone",
+      "the mountain trip for fresh landscape clips",
+      "paperwork for shooting from above in the wilderness",
+      "a one-off excursion to cold remote peaks",
+      "the aerial project the footage team requested",
+      "getting regulators to approve overhead filming",
+      "an adventurous commission for premium scenery",
+      "the expedition our editors pushed for",
+      "remote wilderness filming costs",
+      "approvals to film where few can go",
+      "the frozen terrain capture effort",
+      "a risky outdoor project",
+      "a special trek to fill a gap in nature coverage"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "studio",
+     "vendor": "Ostrander Soundstage Rentals",
+     "memos": [
+      "Neon diner set build - stage rental PO 6240",
+      "Neon diner set build - carpentry WO 6241"
+     ],
+     "cross_memo": "Neon diner set build - prop storage",
+     "plain": [
+      "the neon diner set build",
+      "the neon diner set rental",
+      "the neon diner set carpentry"
+     ],
+     "oblique": [
+      "a retro lifestyle backdrop constructed from scratch",
+      "a constructed indoor scene for ad-friendly imagery",
+      "the themed environment erected for a week of filming",
+      "a fabricated location mimicking a classic eatery",
+      "a shoot staged indoors with built scenery",
+      "the elaborate setting our art lead designed",
+      "a pop-culture inspired production space",
+      "manufacturing a location instead of finding one",
+      "building a fake restaurant for lifestyle clips",
+      "a set created for the advertising category push",
+      "the temporary construction at the soundstage",
+      "a staged environment for a client-driven series",
+      "a big indoor production",
+      "constructing scenery for nostalgic content",
+      "the carpentry and space for a themed series",
+      "a custom-built stage scene"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Rights Clearance & Licensing Legal",
+   "aliases": [
+    "clearance costs",
+    "rights clearance",
+    "licensing legal",
+    "legal clearance",
+    "release management"
+   ],
+   "narrative": [
+    "Clearance costs",
+    "Rights clearance",
+    "Licensing legal"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brandt & Calloway LLP",
+     "base": 11000,
+     "memo": "Retainer - IP and licensing counsel"
+    },
+    {
+     "vendor": "ReleaseTrack Verification",
+     "base": 3800,
+     "memo": "Model and property release audit - monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "takedown",
+     "vendor": "Brandt & Calloway LLP",
+     "memos": [
+      "Sunset Boulevard mural dispute - counsel hours PO 7015",
+      "Sunset Boulevard mural dispute - demand response WO 7016"
+     ],
+     "cross_memo": "Sunset Boulevard mural dispute - court filing agent",
+     "plain": [
+      "the sunset boulevard mural dispute",
+      "the sunset boulevard mural counsel",
+      "the sunset boulevard mural response"
+     ],
+     "oblique": [
+      "an artist objecting to a painted wall appearing in our images",
+      "a copyright complaint over street art in pictures",
+      "lawyers answering a creator's angry letter",
+      "the fight over artwork visible in a catalog photo",
+      "a challenge from someone claiming ownership of public imagery",
+      "defending against a demand from an outside painter",
+      "the outside claimant's threat",
+      "a dispute about an artwork showing up in licensed shots",
+      "attorney time on an infringement allegation",
+      "the claim we had to answer",
+      "a contested piece of visual art in the library",
+      "an unexpected demand letter",
+      "protecting ourselves against an ownership complaint",
+      "legal wrangling over a wall painting",
+      "handling a grievance from a street artist",
+      "a clash over visible artwork"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "audit",
+     "vendor": "Whitlock Compliance Review",
+     "memos": [
+      "Biometric consent backlog - face release audit PO 7102",
+      "Biometric consent backlog - re-papering WO 7103"
+     ],
+     "cross_memo": "Biometric consent backlog - notice mailing",
+     "plain": [
+      "the biometric consent backlog",
+      "the biometric consent audit",
+      "the biometric consent re-papering"
+     ],
+     "oblique": [
+      "tracking down paperwork for people recognizable in old images",
+      "a regulator-driven cleanup of subject permissions",
+      "revisiting archive pictures where identity approvals were thin",
+      "a privacy rule change forcing us to recheck the catalog",
+      "a sweep for missing sign-offs from faces in photos",
+      "retroactive documentation demanded by a new statute",
+      "chasing down models' signatures from years back",
+      "the compliance sweep the general counsel ordered",
+      "a purge-and-refile exercise for human subjects",
+      "the legislative change cleanup",
+      "reviewing the older catalog against tougher privacy standards",
+      "outside reviewers combing through legacy collections",
+      "closing gaps in subject permissions",
+      "a temporary army of reviewers for old assets",
+      "the effort to satisfy new privacy law",
+      "documentation catch-up on faces"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Cloud Storage & Delivery",
+   "aliases": [
+    "asset hosting",
+    "cloud storage",
+    "storage and delivery",
+    "cdn costs",
+    "media hosting"
+   ],
+   "narrative": [
+    "Asset hosting",
+    "Cloud storage",
+    "CDN costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stratus Object Storage Co",
+     "base": 27000,
+     "memo": "Object storage - master asset library"
+    },
+    {
+     "vendor": "EdgeWave CDN",
+     "base": 19000,
+     "memo": "CDN egress - preview and download delivery"
+    },
+    {
+     "vendor": "Coldline Archive Services",
+     "base": 6500,
+     "memo": "Archive tier storage - 4K and RAW masters"
+    }
+   ],
+   "events": [
+    {
+     "key": "migration",
+     "vendor": "Stratus Object Storage Co",
+     "memos": [
+      "Legacy tape vault ingest - bulk transfer PO 8210",
+      "Legacy tape vault ingest - egress surge WO 8211"
+     ],
+     "cross_memo": "Legacy tape vault ingest - courier of drives",
+     "plain": [
+      "the legacy tape vault ingest",
+      "the legacy tape vault transfer",
+      "the legacy tape vault surge"
+     ],
+     "oblique": [
+      "moving decades-old physical media into the digital library",
+      "a one-time upload of boxed-up historical film reels",
+      "digitizing what sat on shelves for years",
+      "the push to get old material online",
+      "transferring antique recordings to modern systems",
+      "bringing the dusty collection into our servers",
+      "a temporary spike while old stock got converted",
+      "the project to retire physical vault storage",
+      "bulk loading of older holdings",
+      "a mass import of heritage footage",
+      "getting rid of the shelved media",
+      "the one-off load of aging masters",
+      "an archival rescue effort",
+      "capacity consumed while the old library came across",
+      "a huge intake of pre-digital holdings",
+      "emptying out the warehouse of old media"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "viral",
+     "vendor": "Nimbus Burst Compute",
+     "memos": [
+      "Election week demand spike - burst capacity PO 8305",
+      "Election week demand spike - overage WO 8306"
+     ],
+     "cross_memo": "Election week demand spike - support surcharge",
+     "plain": [
+      "the election week demand spike",
+      "the election week burst capacity",
+      "the election week overage"
+     ],
+     "oblique": [
+      "a sudden flood of news customers downloading pictures",
+      "an unexpected rush of publisher traffic",
+      "extra capacity bought to survive a rush of buyers",
+      "a surge in editorial downloads during a political event",
+      "visitors pouring in faster than we planned",
+      "emergency computing to keep the site up",
+      "the heavy newsroom demand",
+      "a news-cycle traffic wave",
+      "temporary servers rented for a rush of media buyers",
+      "unplanned scaling when headlines drove searches",
+      "staying online while publishers hammered the site",
+      "the burst of editorial buyers",
+      "the extra horsepower for one hectic week",
+      "a traffic crush from journalists",
+      "paying to handle a short-lived stampede",
+      "scaling up fast for breaking news interest"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Metadata & Keywording",
+   "aliases": [
+    "keywording",
+    "metadata costs",
+    "tagging and curation",
+    "catalog curation",
+    "search tagging"
+   ],
+   "narrative": [
+    "Keywording",
+    "Metadata costs",
+    "Catalog curation"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tagwise Annotation Team",
+     "base": 13500,
+     "memo": "Manual keywording and caption review - monthly"
+    },
+    {
+     "vendor": "VisionLabel AI Services",
+     "base": 5200,
+     "memo": "Auto-tagging API usage"
+    }
+   ],
+   "events": [
+    {
+     "key": "taxonomy",
+     "vendor": "Tagwise Annotation Team",
+     "memos": [
+      "Multilingual taxonomy rollout - translation pass PO 9120",
+      "Multilingual taxonomy rollout - QA sprint WO 9121"
+     ],
+     "cross_memo": "Multilingual taxonomy rollout - glossary licensing",
+     "plain": [
+      "the multilingual taxonomy rollout",
+      "the multilingual taxonomy translation",
+      "the multilingual taxonomy sprint"
+     ],
+     "oblique": [
+      "making our search work for non-English buyers",
+      "expanding the catalog's vocabulary for overseas markets",
+      "a push to reach customers who search in other languages",
+      "rewriting labels so foreign users can find pictures",
+      "the international discoverability project",
+      "converting our descriptive terms for global audiences",
+      "localizing how images are found",
+      "the language expansion the sales team requested",
+      "adapting the library for new regions",
+      "overseas-oriented relabeling",
+      "a big relabeling effort for worldwide buyers",
+      "retooling labels for non-native audiences",
+      "the market-entry preparation work",
+      "making every asset findable abroad",
+      "the cross-border search overhaul",
+      "work in support of entering new countries"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "cleanup",
+     "vendor": "Sieve Data Hygiene",
+     "memos": [
+      "Duplicate purge campaign - near-match review PO 9205",
+      "Duplicate purge campaign - removal pass WO 9206"
+     ],
+     "cross_memo": "Duplicate purge campaign - contributor notices",
+     "plain": [
+      "the duplicate purge campaign",
+      "the duplicate purge review",
+      "the duplicate purge removals"
+     ],
+     "oblique": [
+      "weeding out redundant near-identical images",
+      "a housekeeping drive to thin out clutter",
+      "getting rid of repetitive submissions",
+      "trimming a bloated catalog",
+      "the quality push to remove copycat uploads",
+      "pruning stale and overlapping content",
+      "a one-time tidy of the library",
+      "contractors sifting for lookalike pictures",
+      "improving search results by removing noise",
+      "the editorial director's cleanup mandate",
+      "reducing the pile of near-twins",
+      "paying people to find sameness",
+      "an effort to sharpen the catalog's quality",
+      "clearing out unneeded repeats",
+      "scrubbing the collection",
+      "narrowing down the overstuffed archive"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Customer Acquisition & Licensing Marketing",
+   "aliases": [
+    "performance marketing",
+    "customer acquisition",
+    "licensing marketing",
+    "demand generation",
+    "buyer marketing"
+   ],
+   "narrative": [
+    "Performance marketing",
+    "Customer acquisition",
+    "Demand generation"
+   ],
+   "recurring": [
+    {
+     "vendor": "SearchLift Paid Media",
+     "base": 24000,
+     "memo": "Paid search and shopping ads - monthly"
+    },
+    {
+     "vendor": "Pinewood Email Studio",
+     "base": 3600,
+     "memo": "Lifecycle email platform and design"
+    },
+    {
+     "vendor": "Anchor Affiliate Network",
+     "base": 8800,
+     "memo": "Affiliate commissions - design tool partners"
+    }
+   ],
+   "events": [
+    {
+     "key": "campaign",
+     "vendor": "SearchLift Paid Media",
+     "memos": [
+      "Back-to-school creative blitz - boosted spend PO 3310",
+      "Back-to-school creative blitz - retargeting WO 3311"
+     ],
+     "cross_memo": "Back-to-school creative blitz - landing page build",
+     "plain": [
+      "the back-to-school creative blitz",
+      "the back-to-school creative blitz spend",
+      "the back-to-school creative blitz retargeting"
+     ],
+     "oblique": [
+      "a seasonal advertising surge aimed at educators and students",
+      "extra budget to catch a predictable autumn rush",
+      "a push to win classroom-related buyers",
+      "the fall promotion marketing asked for",
+      "a short intense ad burst for one audience",
+      "buying more attention ahead of a busy season",
+      "increased ad budgets for a targeted time of year",
+      "the timely promotion we ran against competitors",
+      "amplified spend while schools reopened",
+      "a limited-run advertising drive",
+      "heavier bidding during a key buying window",
+      "an annual promotional peak",
+      "an expensive but brief ad push",
+      "paying to be seen at the start of term",
+      "a calendar-driven campaign",
+      "the seasonal boost"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "conference",
+     "vendor": "Halcyon Expo Services",
+     "memos": [
+      "Visual Media Summit booth - exhibit package PO 3402",
+      "Visual Media Summit booth - shipping WO 3403"
+     ],
+     "cross_memo": "Visual Media Summit booth - hotel block",
+     "plain": [
+      "the visual media summit booth",
+      "the visual media summit exhibit",
+      "the visual media summit shipping"
+     ],
+     "oblique": [
+      "a trade show presence in front of art directors",
+      "our in-person showing at an industry gathering",
+      "the display space where we met agency buyers",
+      "going face to face with prospective accounts",
+      "an event the sales leadership wanted us at",
+      "a physical booth to meet creative buyers",
+      "the annual industry meetup",
+      "paying to stand where decision makers walk",
+      "a flagship event appearance",
+      "meeting prospects in person",
+      "the pavilion and the freight to get it there",
+      "networking with agencies at a big gathering",
+      "a relationship-building outing",
+      "our stand at the sector's biggest convention",
+      "an investment in showing up live",
+      "the exhibition costs"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Equipment & Studio Operations",
+   "aliases": [
+    "studio operations",
+    "equipment costs",
+    "gear and studio",
+    "camera equipment",
+    "production facilities"
+   ],
+   "narrative": [
+    "Studio operations",
+    "Equipment costs",
+    "Camera equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lensworks Rental House",
+     "base": 7800,
+     "memo": "Camera and lens rental - in-house studio"
+    },
+    {
+     "vendor": "Brightbox Lighting Supply",
+     "base": 2900,
+     "memo": "Lighting consumables and grip"
+    },
+    {
+     "vendor": "Kilroy Facilities Maintenance",
+     "base": 4600,
+     "memo": "Studio utilities and upkeep"
+    }
+   ],
+   "events": [
+    {
+     "key": "cinema",
+     "vendor": "Lensworks Rental House",
+     "memos": [
+      "Anamorphic cinema package - 6K body lease PO 4120",
+      "Anamorphic cinema package - prime set WO 4121"
+     ],
+     "cross_memo": "Anamorphic cinema package - insurance rider",
+     "plain": [
+      "the anamorphic cinema package",
+      "the anamorphic cinema lease",
+      "the anamorphic cinema prime set"
+     ],
+     "oblique": [
+      "top-end filmmaking tools for a premium footage line",
+      "a high-resolution kit leased for upscale clips",
+      "wide-screen movie-style glass",
+      "gear to compete in the high-end video market",
+      "an expensive camera rig borrowed for a quarter",
+      "leasing professional movie equipment",
+      "the upmarket capture setup",
+      "hardware aimed at studio-quality footage",
+      "a deliberate step up in image quality",
+      "premium rental gear that the head of video chose",
+      "cinematic equipment for a special collection",
+      "high-grade optics on loan",
+      "the big-budget look",
+      "gear typically seen on feature productions",
+      "leased hardware for the flagship series",
+      "the elite filming outfit"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "hvac",
+     "vendor": "Cobalt Climate Systems",
+     "memos": [
+      "Server room chiller replacement - unit install PO 4205",
+      "Server room chiller replacement - electrical WO 4206"
+     ],
+     "cross_memo": "Server room chiller replacement - temporary cooling",
+     "plain": [
+      "the server room chiller replacement",
+      "the server room chiller install",
+      "the server room chiller electrical"
+     ],
+     "oblique": [
+      "swapping out broken climate gear in the equipment closet",
+      "keeping on-site machines from overheating",
+      "a facility fix that could not wait",
+      "new cooling hardware after the old one died",
+      "protecting the editing workstations from heat",
+      "an emergency building system upgrade",
+      "landlord-style infrastructure work we had to cover",
+      "the cold-air unit that gave out",
+      "mechanical replacement in the technical room",
+      "an unplanned capital-style repair",
+      "restoring temperature control for the edit bays",
+      "a breakdown that forced a purchase",
+      "the airflow equipment failure",
+      "fresh climate equipment and the wiring to run it",
+      "a facilities surprise",
+      "getting the machine room back to a safe temperature"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,728 @@
+{
+ "slug": "paper-and-pulp-mill",
+ "industry": "paper and pulp mill",
+ "entities": [
+  "Northfork Pulp & Paper Co.",
+  "Tamarack Fiber Mills Inc.",
+  "Greywater Paperboard Corp.",
+  "Cedar Ridge Kraft Holdings",
+  "Lakeshore Tissue & Pulp LLC"
+ ],
+ "accounts": [
+  {
+   "name": "Wood Fiber Procurement",
+   "aliases": [
+    "fiber",
+    "wood costs",
+    "chip purchases",
+    "fiber procurement spend",
+    "wood supply"
+   ],
+   "narrative": [
+    "Fiber costs",
+    "Wood costs",
+    "Chip purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinecrest Timber Supply",
+     "base": 28000,
+     "memo": "Softwood chips delivered PO 44120"
+    },
+    {
+     "vendor": "Allagash Log Brokers",
+     "base": 21000,
+     "memo": "Pulpwood logs contract load tickets"
+    },
+    {
+     "vendor": "Birchline Sawmill Residuals",
+     "base": 9500,
+     "memo": "Hardwood sawdust and slab residuals"
+    }
+   ],
+   "events": [
+    {
+     "key": "beetle",
+     "vendor": "Pinecrest Timber Supply",
+     "memos": [
+      "Salvage lodgepole harvest — beetle kill premium PO 45377",
+      "Salvage lodgepole harvest — expedited haul WO 8812"
+     ],
+     "cross_memo": "Salvage lodgepole harvest — log yard overflow lease",
+     "plain": [
+      "the salvage lodgepole harvest",
+      "the salvage harvest premium",
+      "the salvage lodgepole haul"
+     ],
+     "oblique": [
+      "wood from the infested stands we had to take quickly",
+      "emergency timber from dying forest",
+      "trees killed by insects that had to come down fast",
+      "the early-cutting program the forestry team pushed",
+      "stands the state flagged as at risk",
+      "premium paid to grab doomed timber before it lost value",
+      "the rush order on damaged woodland",
+      "extra pay to loggers for steep infested ground",
+      "timber we pulled ahead of schedule",
+      "stock from the forest health emergency",
+      "the hurry to harvest before the bugs ruined it",
+      "logs from sick trees",
+      "the unplanned cut in the northern tract",
+      "wood bought at a premium after the infestation report",
+      "the damaged-forest sourcing push",
+      "the rescue cut"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "railspur",
+     "vendor": "Tundra Rail Logistics",
+     "memos": [
+      "Chip rail spur reroute — trestle detour WO 9034",
+      "Chip rail spur reroute — switching crew charges"
+     ],
+     "cross_memo": "Chip rail spur reroute — track inspection engineer",
+     "plain": [
+      "the chip rail spur reroute",
+      "the rail spur reroute charges",
+      "the chip rail spur detour"
+     ],
+     "oblique": [
+      "moving fiber on a longer path after the washout",
+      "the added mileage on inbound shipments",
+      "freight fallout from the broken bridge",
+      "the workaround for the damaged line",
+      "getting wood to the yard another way",
+      "extra handling when the usual route closed",
+      "the flood damage logistics",
+      "detour costs on incoming material",
+      "the longer way in",
+      "crews working weekends to shuttle cars",
+      "temporary routing after the storm",
+      "the closure of our normal delivery path",
+      "extra switching to reach the dock",
+      "cost of the interrupted supply line",
+      "the bypass arrangement",
+      "transport workaround for the collapsed crossing"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Process Chemicals",
+   "aliases": [
+    "chemicals",
+    "chem spend",
+    "pulping chemicals",
+    "bleach plant chemicals",
+    "chemical purchases"
+   ],
+   "narrative": [
+    "Chemical spend",
+    "Pulping chemicals",
+    "Chemicals"
+   ],
+   "recurring": [
+    {
+     "vendor": "Halvorsen Caustic Co.",
+     "base": 26000,
+     "memo": "Caustic soda bulk delivery PO 51022"
+    },
+    {
+     "vendor": "Cascade Chlorate Partners",
+     "base": 18500,
+     "memo": "Sodium chlorate railcar"
+    },
+    {
+     "vendor": "Brightwater Defoamer Inc.",
+     "base": 6200,
+     "memo": "Defoamer totes monthly standing order"
+    }
+   ],
+   "events": [
+    {
+     "key": "peroxide",
+     "vendor": "Halvorsen Caustic Co.",
+     "memos": [
+      "Hydrogen peroxide trial lot — brightness boost PO 51610",
+      "Hydrogen peroxide trial lot — expedited drum freight"
+     ],
+     "cross_memo": "Hydrogen peroxide trial lot — lab analysis fee",
+     "plain": [
+      "the hydrogen peroxide trial lot",
+      "the peroxide trial lot purchase",
+      "the hydrogen peroxide trial"
+     ],
+     "oblique": [
+      "the experiment to get whiter sheets",
+      "a test run for a premium customer spec",
+      "extra reagent bought to hit the new shade target",
+      "the pilot to satisfy a picky buyer",
+      "additional oxidizer for the quality push",
+      "what we spent chasing higher reflectance",
+      "a one-time stock for the whitening experiment",
+      "the sample batch for the new grade",
+      "product tweak requested by sales",
+      "the market-driven chemistry test",
+      "brightness work for the new account",
+      "limited-run material for a customer trial",
+      "the whiter-paper project",
+      "stock brought in to try a new recipe",
+      "cost of proving the upgraded formula",
+      "the short test of an alternate bleaching approach"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "tankspill",
+     "vendor": "Redfern Environmental Response",
+     "memos": [
+      "Liquor tank cleanup — containment berm remediation WO 7721",
+      "Liquor tank cleanup — vacuum truck hours"
+     ],
+     "cross_memo": "Liquor tank cleanup — regulatory sampling",
+     "plain": [
+      "the liquor tank cleanup",
+      "the liquor tank remediation",
+      "the liquor tank cleanup crew"
+     ],
+     "oblique": [
+      "handling the overflow near the storage area",
+      "the environmental incident response",
+      "what it took to make the site compliant again",
+      "the release we reported to the state",
+      "specialists called in after the leak",
+      "containing the mess on the east pad",
+      "the regulator-required remediation",
+      "cleanup after the tank failure",
+      "work to restore the soil",
+      "the emergency crew on the weekend",
+      "the spill that happened during the transfer",
+      "making the ground safe after the seepage",
+      "the incident that triggered an inspection",
+      "contractors hauling away contaminated material",
+      "the unplanned environmental job",
+      "the accident at the storage farm"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Boiler Fuel and Steam",
+   "aliases": [
+    "boiler fuel",
+    "steam costs",
+    "energy fuel",
+    "power boiler spend",
+    "fuel and steam"
+   ],
+   "narrative": [
+    "Boiler fuel",
+    "Steam costs",
+    "Energy fuel"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Natural Gas Utility",
+     "base": 29000,
+     "memo": "Natural gas usage PO 60311"
+    },
+    {
+     "vendor": "Ridgeback Hog Fuel Supply",
+     "base": 14500,
+     "memo": "Hog fuel bark delivery"
+    },
+    {
+     "vendor": "Clearflow Water Treatment",
+     "base": 4800,
+     "memo": "Boiler feedwater treatment program"
+    }
+   ],
+   "events": [
+    {
+     "key": "economizer",
+     "vendor": "Summit Natural Gas Utility",
+     "memos": [
+      "Economizer tube failure — emergency gas burn WO 6620",
+      "Economizer tube failure — peak rate surcharge"
+     ],
+     "cross_memo": "Economizer tube failure — contract welders",
+     "plain": [
+      "the economizer tube failure",
+      "the economizer failure gas burn",
+      "the economizer tube surcharge"
+     ],
+     "oblique": [
+      "running on backup after the heat recovery unit went down",
+      "burning more premium energy while a component was out",
+      "the penalty for lost efficiency",
+      "what we paid to keep making steam during the outage",
+      "an unplanned shutdown of the exhaust heat captor",
+      "the stretch with reduced thermal performance",
+      "the leak found during the winter run",
+      "extra consumption while repairs waited on parts",
+      "the cost of the component that quit",
+      "a damaged heat exchanger forcing a bigger burn",
+      "keeping the plant warm with the more expensive option",
+      "the breakdown in the stack area",
+      "the repair window that stretched on",
+      "the equipment failure we hadn't planned for",
+      "energy waste from the ruptured tubes",
+      "the weeks the recovery section was offline"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "biomass",
+     "vendor": "Evergreen Biomass Partners",
+     "memos": [
+      "Sawmill wood waste spot buy — curtailed gas contract PO 61007",
+      "Sawmill wood waste spot buy — truck demurrage"
+     ],
+     "cross_memo": "Sawmill wood waste spot buy — scale ticket audit",
+     "plain": [
+      "the sawmill wood waste spot buy",
+      "the wood waste spot purchase",
+      "the sawmill waste spot buy"
+     ],
+     "oblique": [
+      "alternative combustibles bought when the utility cut us back",
+      "scrambling for something to burn",
+      "the stopgap energy source",
+      "what we purchased once the supplier limited our allocation",
+      "substitute material from neighboring operations",
+      "extra truckloads on short notice",
+      "the market purchase to cover the shortage",
+      "replacement for the interrupted supply",
+      "unscheduled deliveries of low-grade stock",
+      "the scramble when volumes were capped",
+      "bought outside the usual contract",
+      "emergency feedstock for the burner",
+      "the quick fix for a curtailment notice",
+      "filling the gap in the energy mix",
+      "truck waiting fees at the gate",
+      "the temporary switch away from our regular source"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Paper Machine Clothing and Felts",
+   "aliases": [
+    "machine clothing",
+    "felts and wires",
+    "forming fabrics",
+    "press felts",
+    "clothing spend"
+   ],
+   "narrative": [
+    "Machine clothing",
+    "Felts and wires",
+    "Forming fabrics"
+   ],
+   "recurring": [
+    {
+     "vendor": "Albany Weave Technologies",
+     "base": 24000,
+     "memo": "Forming fabric replacement schedule PO 70418"
+    },
+    {
+     "vendor": "Moorland Felt Works",
+     "base": 17000,
+     "memo": "Press felt set PM2"
+    },
+    {
+     "vendor": "Kestrel Doctor Blade Co.",
+     "base": 3900,
+     "memo": "Doctor blades and holders"
+    }
+   ],
+   "events": [
+    {
+     "key": "dryerfabric",
+     "vendor": "Albany Weave Technologies",
+     "memos": [
+      "Dryer screen seam blowout — rush replacement PO 70990",
+      "Dryer screen seam blowout — air freight WO 3347"
+     ],
+     "cross_memo": "Dryer screen seam blowout — downtime crew overtime",
+     "plain": [
+      "the dryer screen seam blowout",
+      "the dryer screen rush replacement",
+      "the dryer screen blowout freight"
+     ],
+     "oblique": [
+      "the unplanned swap on the back end of the machine",
+      "what it cost to get a part flown in overnight",
+      "the tear that stopped production",
+      "an early replacement of something that gave out",
+      "the expedited order after the sheet breaks",
+      "quick shipping for the failed item",
+      "the shift that ran with the machine down",
+      "the damaged belt we had to substitute",
+      "a sudden failure on the drying section",
+      "the replacement we hadn't scheduled",
+      "paying premium to restart faster",
+      "the accident during the weekend run",
+      "urgent replenishment of a worn-out part",
+      "the burst that sent crews scrambling",
+      "hasty procurement after the incident",
+      "overnight delivery of the substitute"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "trialwire",
+     "vendor": "Ostrander Fabric Labs",
+     "memos": [
+      "Wire trial — low-drainage prototype PO 71203",
+      "Wire trial — technical rep onsite WO 3410"
+     ],
+     "cross_memo": "Wire trial — lost production sampling",
+     "plain": [
+      "the low-drainage wire trial",
+      "the wire trial prototype",
+      "the wire trial technical rep"
+     ],
+     "oblique": [
+      "the test of an experimental design from a new supplier",
+      "the engineering evaluation of a different product",
+      "a pilot installed to see if we could save energy",
+      "trying something unproven on the machine",
+      "the supplier-sponsored experiment",
+      "an evaluation requested by the operations director",
+      "a comparison against our standard setup",
+      "the research item for next year's budget",
+      "the new vendor audition",
+      "the one-off installation to gather data",
+      "the engineers' wishlist project",
+      "a controlled test during the planned outage",
+      "what we paid to try the new concept",
+      "the technology scouting effort",
+      "sample installation with a specialist watching",
+      "the experimental fitting"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Mill Maintenance and Repairs",
+   "aliases": [
+    "maintenance",
+    "mill repairs",
+    "repair and maintenance",
+    "mechanical upkeep",
+    "maintenance spend"
+   ],
+   "narrative": [
+    "Mill maintenance",
+    "Repair costs",
+    "Maintenance spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironbark Industrial Services",
+     "base": 27000,
+     "memo": "Contract mechanics monthly PO 80215"
+    },
+    {
+     "vendor": "Delmar Bearing & Seal",
+     "base": 8600,
+     "memo": "Bearings and mechanical seals stock"
+    },
+    {
+     "vendor": "Vantage Lube Supply",
+     "base": 5200,
+     "memo": "Lubricants and grease"
+    }
+   ],
+   "events": [
+    {
+     "key": "digester",
+     "vendor": "Ironbark Industrial Services",
+     "memos": [
+      "Digester shell weld repair — crack inspection WO 5580",
+      "Digester shell weld repair — scaffolding crew"
+     ],
+     "cross_memo": "Digester shell weld repair — inspector certification",
+     "plain": [
+      "the digester shell weld repair",
+      "the digester weld repair crew",
+      "the digester shell weld scaffolding"
+     ],
+     "oblique": [
+      "fixing the cracked vessel where wood gets cooked",
+      "the pressure-vessel fix that required a certificate",
+      "tradespeople patching the big cooking tank",
+      "the safety-critical job at the front of the process",
+      "work that the insurer insisted on",
+      "the discovery during the routine walkthrough",
+      "specialist welders in confined spaces",
+      "the hairline defect we found",
+      "a repair that held up the start of the line",
+      "cutting and patching on a huge steel shell",
+      "the high-pressure equipment repair",
+      "inspection findings turned into a job",
+      "the crack in the main cooking unit",
+      "hot work in tight quarters",
+      "the fix that needed a code-stamped contractor",
+      "the compliance-driven mend"
+     ],
+     "low": 24000,
+     "high": 48000
+    },
+    {
+     "key": "flood",
+     "vendor": "Basin Pump & Dewater",
+     "memos": [
+      "Basement sump pump rental — storm inflow WO 5612",
+      "Basement sump pump rental — 24hr operator"
+     ],
+     "cross_memo": "Basement sump pump rental — motor rewind",
+     "plain": [
+      "the basement sump pump rental",
+      "the sump pump storm rental",
+      "the basement sump pump operator"
+     ],
+     "oblique": [
+      "dealing with water in the lower level after the downpour",
+      "draining the flooded underground rooms",
+      "the equipment hired to keep the cellar dry",
+      "heavy rain that overwhelmed our drains",
+      "the weather event at the old wing",
+      "pumping out what came in overnight",
+      "around-the-clock attendants during the cloudburst",
+      "the inundation under the machine hall",
+      "the rented gear for rising groundwater",
+      "the emergency after the creek overflowed",
+      "keeping electrical rooms from going under",
+      "the saturated lower floor",
+      "an attendant watching the water level",
+      "the soaked-basement response",
+      "temporary drainage after the deluge",
+      "the stormwater problem"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Effluent Treatment and Environmental Compliance",
+   "aliases": [
+    "effluent",
+    "wastewater treatment",
+    "environmental compliance",
+    "water discharge costs",
+    "treatment plant spend"
+   ],
+   "narrative": [
+    "Effluent costs",
+    "Wastewater treatment",
+    "Environmental compliance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearbrook Sludge Hauling",
+     "base": 15500,
+     "memo": "Secondary sludge disposal tickets PO 90144"
+    },
+    {
+     "vendor": "Riverbend Lab Services",
+     "base": 4400,
+     "memo": "Monthly discharge permit sampling"
+    },
+    {
+     "vendor": "Polymer Dynamics Ltd.",
+     "base": 9800,
+     "memo": "Flocculant polymer totes"
+    }
+   ],
+   "events": [
+    {
+     "key": "clarifier",
+     "vendor": "Clearbrook Sludge Hauling",
+     "memos": [
+      "Primary clarifier rake dredge — solids backlog PO 90502",
+      "Primary clarifier rake dredge — dewatering polymer bags"
+     ],
+     "cross_memo": "Primary clarifier rake dredge — crane rental",
+     "plain": [
+      "the primary clarifier rake dredge",
+      "the clarifier rake dredge backlog",
+      "the primary clarifier dredging"
+     ],
+     "oblique": [
+      "clearing out the settling basin that had silted up",
+      "removing years of buildup from the big round tank",
+      "the cleaning that was long overdue",
+      "hauling away the thick bottom layer",
+      "the job we kept postponing until the level got high",
+      "emptying a unit that was nearly full",
+      "sediment extraction by heavy equipment",
+      "the periodic deep clean nobody enjoys",
+      "scraper mechanism trouble from all that matter",
+      "the backlog of settled waste",
+      "a major purge of the first-stage process",
+      "the heavy-duty excavation inside the pond",
+      "getting the treatment circle running properly again",
+      "the massive solids load we finally dealt with",
+      "clearing the choke point in wastewater flow",
+      "the long-delayed deep cleaning"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "permit",
+     "vendor": "Whitlock Environmental Counsel",
+     "memos": [
+      "Discharge permit renewal — legal drafting PO 90611",
+      "Discharge permit renewal — hearing prep WO 4101"
+     ],
+     "cross_memo": "Discharge permit renewal — consultant study",
+     "plain": [
+      "the discharge permit renewal",
+      "the permit renewal legal drafting",
+      "the discharge permit renewal hearing"
+     ],
+     "oblique": [
+      "the paperwork to keep our license to release water",
+      "lawyers working with the state agency",
+      "five-year authorization process",
+      "the regulator's public meeting",
+      "outside advisors handling the application",
+      "defending our limits before officials",
+      "the renewal cycle that came due",
+      "legal fees for the government filing",
+      "what it cost to keep the right to operate",
+      "advisors preparing testimony",
+      "the review that the agency opened",
+      "negotiating the new terms with the state",
+      "the formal reapplication",
+      "counsel's work on the license",
+      "the engagement with the permitting authority",
+      "the multi-year approval process"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Finishing and Converting Supplies",
+   "aliases": [
+    "converting supplies",
+    "finishing costs",
+    "roll wrap and cores",
+    "packaging supplies",
+    "converting spend"
+   ],
+   "narrative": [
+    "Converting supplies",
+    "Finishing costs",
+    "Packaging supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-State Core Company",
+     "base": 13500,
+     "memo": "Fiber cores 3in and 6in PO 95020"
+    },
+    {
+     "vendor": "Packwell Wrap Films",
+     "base": 10800,
+     "memo": "Stretch wrap and roll wrap"
+    },
+    {
+     "vendor": "Brandmark Label Printing",
+     "base": 3100,
+     "memo": "Roll labels and tags"
+    }
+   ],
+   "events": [
+    {
+     "key": "export",
+     "vendor": "Tri-State Core Company",
+     "memos": [
+      "Heavy-duty ocean cores — overseas order spec PO 95344",
+      "Heavy-duty ocean cores — steel end caps"
+     ],
+     "cross_memo": "Heavy-duty ocean cores — container blocking",
+     "plain": [
+      "the heavy-duty ocean cores",
+      "the ocean cores overseas order",
+      "the heavy-duty ocean core end caps"
+     ],
+     "oblique": [
+      "sturdier hardware for the long voyage abroad",
+      "specialized shipping needs from the foreign buyer",
+      "extra reinforcement requested by the customer",
+      "the order bound for another continent",
+      "stronger spools so rolls survive transit",
+      "buyer-mandated preparation",
+      "the overseas contract's special requirements",
+      "upgraded items for rough handling",
+      "materials for the first shipment to the new market",
+      "the added protection for sea freight",
+      "the customer's strict specification sheet",
+      "one-time fortified supply",
+      "the large export win",
+      "special-purpose stock for far-away delivery",
+      "the sturdy alternative for the harbor trip",
+      "the demanding international account"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "pallets",
+     "vendor": "Greenpath Pallet Recovery",
+     "memos": [
+      "Chemical-treated pallets — fumigation certified lot PO 95410",
+      "Chemical-treated pallets — customs paperwork fee"
+     ],
+     "cross_memo": "Chemical-treated pallets — storage yard rental",
+     "plain": [
+      "the chemical-treated pallets",
+      "the fumigation certified pallets",
+      "the treated pallets customs fee"
+     ],
+     "oblique": [
+      "wooden platforms needed to clear the border",
+      "crates meeting the agricultural inspection rule",
+      "load carriers with a stamped seal",
+      "the shipping bases foreign officials insisted on",
+      "goods-handling items required by the destination country",
+      "a scramble for approved skids",
+      "the quarantine-compliant supports",
+      "required carriers for the shipment abroad",
+      "the inspection standard that stopped a load",
+      "items we had to source quickly for the customs agent",
+      "an unusual spec on the bill of lading",
+      "stamped bases for international freight",
+      "the alternative to our usual flats",
+      "the mandate from the port authority",
+      "the rejected load that led to a purchase",
+      "the stand-ins that satisfy overseas biosecurity"
+     ],
+     "low": 9500,
+     "high": 19000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

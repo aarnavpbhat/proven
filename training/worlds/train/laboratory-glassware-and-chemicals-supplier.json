@@ -1,0 +1,728 @@
+{
+ "slug": "laboratory-glassware-and-chemicals-supplier",
+ "industry": "laboratory glassware and chemicals supplier",
+ "entities": [
+  "Meridian Labware Supply",
+  "Halvorsen Scientific Glass & Reagents",
+  "Brightwater Lab Chemicals",
+  "Ostrander Analytical Supply",
+  "Cobalt Ridge Laboratory Products"
+ ],
+ "accounts": [
+  {
+   "name": "Hazardous Materials Handling",
+   "aliases": [
+    "hazmat handling",
+    "hazmat costs",
+    "hazardous freight",
+    "dangerous goods spend",
+    "hazmat compliance"
+   ],
+   "narrative": [
+    "Hazmat handling",
+    "Hazmat costs",
+    "Dangerous goods spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Corrigan Hazardous Freight",
+     "base": 14200,
+     "memo": "Monthly Class 8 corrosives line-haul - Newark DC"
+    },
+    {
+     "vendor": "Veridian Waste Services",
+     "base": 6800,
+     "memo": "Spent solvent drum pickup - Dock 3"
+    },
+    {
+     "vendor": "SafeLabel Placard Co",
+     "base": 1900,
+     "memo": "GHS label and placard stock - outbound packing"
+    }
+   ],
+   "events": [
+    {
+     "key": "acidspill",
+     "vendor": "Corrigan Hazardous Freight",
+     "memos": [
+      "Trailer 14 nitric leak response - Newark DC",
+      "Trailer 14 nitric leak response - decon crew"
+     ],
+     "cross_memo": "Trailer 14 nitric leak response - replacement cartons",
+     "plain": [
+      "the trailer 14 nitric leak response",
+      "the nitric leak response",
+      "the trailer 14 nitric leak"
+     ],
+     "oblique": [
+      "the incident where a carrier truck started dripping at our dock",
+      "cleanup after a corrosive release outside",
+      "the emergency crew callout",
+      "a container that failed in transit",
+      "the evacuation of the loading area",
+      "outside specialists in protective suits",
+      "mopping up after the transport mishap",
+      "the spill",
+      "regulator-mandated remediation",
+      "an unplanned stoppage of outbound shipping",
+      "the day the warehouse was cordoned off",
+      "making the yard safe again",
+      "what happened to the rig that arrived leaking",
+      "a pricey afternoon of emergency work",
+      "the mishap involving the incoming load",
+      "reimbursing customers for ruined orders"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "stagedepot",
+     "vendor": "Pinecrest Bonded Storage",
+     "memos": [
+      "Pinecrest overflow bonded storage - Reno depot",
+      "Pinecrest overflow bonded storage - segregation cages"
+     ],
+     "cross_memo": "Pinecrest overflow bonded storage - inventory audit",
+     "plain": [
+      "the Pinecrest overflow bonded storage",
+      "the Pinecrest bonded storage",
+      "the Reno bonded storage overflow"
+     ],
+     "oblique": [
+      "renting space elsewhere for stock we could not fit",
+      "the western holding site",
+      "extra room for the peak season inventory",
+      "a temporary home for pallets",
+      "the stockpile we built ahead of the price hike",
+      "keeping flammables apart from everything else",
+      "third-party shelving in another state",
+      "the surge in volume that outgrew our walls",
+      "parking product off-premises",
+      "a short-term lease on caged space",
+      "the spillover from a bulk purchase",
+      "where we put the excess",
+      "space booked for the year-end rush",
+      "the satellite facility",
+      "holding costs on the extra lots",
+      "a deal for temporary capacity"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Borosilicate Glass Raw Materials",
+   "aliases": [
+    "glass blanks",
+    "glass raw materials",
+    "borosilicate input",
+    "glass stock purchases",
+    "tubing and blanks"
+   ],
+   "narrative": [
+    "Glass blanks",
+    "Glass raw materials",
+    "Tubing and blanks"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kestrel Glassworks",
+     "base": 28500,
+     "memo": "Borosilicate 3.3 tubing - monthly contract draw"
+    },
+    {
+     "vendor": "Altamira Quartz Supply",
+     "base": 9400,
+     "memo": "Fused silica rod stock - Plant 2"
+    },
+    {
+     "vendor": "Dunmore Annealing Services",
+     "base": 4300,
+     "memo": "Contract annealing of finished blanks"
+    }
+   ],
+   "events": [
+    {
+     "key": "furnacerelining",
+     "vendor": "Kestrel Glassworks",
+     "memos": [
+      "Kestrel tank 2 furnace relining - emergency surcharge",
+      "Kestrel tank 2 furnace relining - expedited tubing"
+     ],
+     "cross_memo": "Kestrel tank 2 furnace relining - air freight",
+     "plain": [
+      "the tank 2 furnace relining",
+      "the Kestrel furnace relining",
+      "the furnace relining surcharge"
+     ],
+     "oblique": [
+      "our main supplier going offline for a rebuild",
+      "paying extra to jump the queue",
+      "the shortage that hit the market",
+      "a premium on rush deliveries",
+      "the interruption at the upstream plant",
+      "scrambling for tubing from alternate sources",
+      "the supplier's brick and refractory project",
+      "a short supply of the standard grade",
+      "emergency buying",
+      "lead times that suddenly doubled",
+      "covering a gap in the pipeline",
+      "faster shipping to avoid running dry",
+      "what we paid to keep production alive",
+      "the vendor's planned shutdown",
+      "a pricing bump while capacity was limited",
+      "pulling forward orders"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "lotrejection",
+     "vendor": "Zenith Optical Glass",
+     "memos": [
+      "Zenith Optical replacement melt - Lot 7731",
+      "Zenith Optical replacement melt - rework tooling"
+     ],
+     "cross_memo": "Zenith Optical replacement melt - lot inspection",
+     "plain": [
+      "the Zenith Optical replacement melt",
+      "the Lot 7731 replacement melt",
+      "the Zenith replacement melt"
+     ],
+     "oblique": [
+      "scrapping a batch that failed QC",
+      "buying again after bad material arrived",
+      "cloudy glass we could not use",
+      "the defective shipment",
+      "a do-over on an order",
+      "stones and bubbles in the first delivery",
+      "a quality escape from a new supplier",
+      "the purchase we had to repeat",
+      "material that missed spec",
+      "trial order with an unfamiliar source",
+      "making good on a faulty delivery",
+      "a second round of buying",
+      "inclusions found at incoming inspection",
+      "the new sourcing experiment that went sideways",
+      "paying twice for the same volume",
+      "the batch we sent back"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Reagent Quality Control Testing",
+   "aliases": [
+    "qc testing",
+    "reagent qc",
+    "assay and certification",
+    "lot testing spend",
+    "quality lab costs"
+   ],
+   "narrative": [
+    "QC testing",
+    "Reagent QC",
+    "Lot testing spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ardent Analytical Labs",
+     "base": 11800,
+     "memo": "Third-party ICP-MS trace metals testing"
+    },
+    {
+     "vendor": "NorthStar Reference Standards",
+     "base": 5200,
+     "memo": "NIST-traceable calibration standards"
+    },
+    {
+     "vendor": "Calibra Instrument Service",
+     "base": 3600,
+     "memo": "HPLC and balance service contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "isoaudit",
+     "vendor": "Ardent Analytical Labs",
+     "memos": [
+      "Ardent ISO 17025 accreditation audit - Austin QC lab",
+      "Ardent ISO 17025 accreditation audit - proficiency panels"
+     ],
+     "cross_memo": "Ardent ISO 17025 accreditation audit - travel for assessors",
+     "plain": [
+      "the ISO 17025 accreditation audit",
+      "the Austin accreditation audit",
+      "the ISO 17025 proficiency panels"
+     ],
+     "oblique": [
+      "the outside inspectors' visit",
+      "renewing our credentials",
+      "an exam of our quality system",
+      "the once-every-few-years review",
+      "paperwork and sample rounds for the certifying body",
+      "proving our lab competence",
+      "a big-ticket compliance exercise",
+      "the review that lets us keep our certificate",
+      "external scrutiny of our procedures",
+      "what customers demand before they will buy",
+      "evaluators who came to site",
+      "the periodic demonstration of capability",
+      "prep work for a pass-or-fail event",
+      "a recurring but infrequent assessment",
+      "the cost of staying certified",
+      "a formal grading of our methods"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "recallretest",
+     "vendor": "Westbrook Toxicology Group",
+     "memos": [
+      "Westbrook acetonitrile Lot 4410 recall retest - Austin",
+      "Westbrook acetonitrile Lot 4410 recall retest - stability study"
+     ],
+     "cross_memo": "Westbrook acetonitrile Lot 4410 recall retest - customer notification",
+     "plain": [
+      "the acetonitrile Lot 4410 recall retest",
+      "the Lot 4410 recall retest",
+      "the acetonitrile recall retest"
+     ],
+     "oblique": [
+      "pulling a solvent batch back from customers",
+      "checking whether a shipped product was still good",
+      "the contamination scare",
+      "analysis of material already in the field",
+      "a complaint that turned into an investigation",
+      "an outside firm brought in to settle the question",
+      "retrieving product and proving it was safe",
+      "the batch that drew a customer complaint",
+      "a defensive round of lab work",
+      "assurance for clients who had already received it",
+      "proving the lot met purity claims",
+      "the withdrawn shipment",
+      "unplanned measurements on old inventory",
+      "the day a buyer reported an off result",
+      "a reputational firefight",
+      "verifying a questionable lot"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Cold Chain Logistics",
+   "aliases": [
+    "cold chain",
+    "refrigerated shipping",
+    "temperature-controlled freight",
+    "reefer costs",
+    "cold storage and transit"
+   ],
+   "narrative": [
+    "Cold chain",
+    "Refrigerated shipping",
+    "Temperature-controlled freight"
+   ],
+   "recurring": [
+    {
+     "vendor": "Polar Arc Transport",
+     "base": 16500,
+     "memo": "Refrigerated LTL - 2-8C biologics lanes"
+    },
+    {
+     "vendor": "CryoVault Storage",
+     "base": 8700,
+     "memo": "Walk-in cold room lease - Memphis hub"
+    },
+    {
+     "vendor": "Thermologix Monitoring",
+     "base": 2400,
+     "memo": "Data logger rental and calibration"
+    }
+   ],
+   "events": [
+    {
+     "key": "dryice",
+     "vendor": "Polar Arc Transport",
+     "memos": [
+      "Dry ice replenishment surge - heat wave shipments",
+      "Dry ice replenishment surge - overnight packouts"
+     ],
+     "cross_memo": "Dry ice replenishment surge - extra insulated shippers",
+     "plain": [
+      "the dry ice replenishment surge",
+      "the dry ice surge",
+      "the dry ice packout surge"
+     ],
+     "oblique": [
+      "the scorching weather that threatened parcels",
+      "extra coolant for every outbound box",
+      "a streak of record temperatures",
+      "protecting customer samples in transit",
+      "late-night packing to beat the sun",
+      "more cooling material per shipment than usual",
+      "summer spike in spoilage risk",
+      "what it cost to keep orders chilled",
+      "doubling up on protection",
+      "the stretch where deliveries sat on hot docks",
+      "weather-related insurance against spoilage",
+      "oversized packaging for a hot week",
+      "the emergency stock of frozen blocks",
+      "guarding against thawed product",
+      "seasonal protection for fragile cargo",
+      "a week of broiling temperatures"
+     ],
+     "low": 9000,
+     "high": 18000
+    },
+    {
+     "key": "freezerfail",
+     "vendor": "Alpenglow Refrigeration Repair",
+     "memos": [
+      "Alpenglow minus-80 freezer bank failure - Memphis hub",
+      "Alpenglow minus-80 freezer bank failure - product transfer"
+     ],
+     "cross_memo": "Alpenglow minus-80 freezer bank failure - lost inventory writeoff",
+     "plain": [
+      "the minus-80 freezer bank failure",
+      "the Memphis freezer bank failure",
+      "the minus-80 bank failure"
+     ],
+     "oblique": [
+      "the night the power glitch hit the warehouse",
+      "a breakdown that put stock at risk",
+      "moving frozen goods to a backup site",
+      "emergency repairs on the deep-cold units",
+      "the alarm at three in the morning",
+      "stuff we had to throw out",
+      "an outage that nobody caught in time",
+      "what a compressor trip cost us",
+      "a sudden loss of temperature control",
+      "hurried relocation of fragile material",
+      "the equipment casualty",
+      "the cleanup after things thawed",
+      "technicians called in on a weekend",
+      "the unexpected failure of old kit",
+      "salvaging what we could",
+      "an insurance claim in the making"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Specialty Packaging",
+   "aliases": [
+    "packaging",
+    "packaging materials",
+    "bottles and closures",
+    "amber glass packaging",
+    "pack and ship supplies"
+   ],
+   "narrative": [
+    "Packaging",
+    "Packaging materials",
+    "Bottles and closures"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brannock Container Corp",
+     "base": 12400,
+     "memo": "Amber bottles and PTFE-lined caps - monthly release"
+    },
+    {
+     "vendor": "Lindqvist Corrugated",
+     "base": 7600,
+     "memo": "Shipper cartons and dividers"
+    },
+    {
+     "vendor": "Tamper-Seal Industries",
+     "base": 2900,
+     "memo": "Induction seals and tamper bands"
+    }
+   ],
+   "events": [
+    {
+     "key": "labelredesign",
+     "vendor": "Brannock Container Corp",
+     "memos": [
+      "Brannock GHS label redesign - bottle relabel run",
+      "Brannock GHS label redesign - obsolete cap writeoff"
+     ],
+     "cross_memo": "Brannock GHS label redesign - regulatory review",
+     "plain": [
+      "the GHS label redesign",
+      "the bottle relabel run",
+      "the Brannock label redesign"
+     ],
+     "oblique": [
+      "the new hazard-communication rules",
+      "reprinting everything on the shelf",
+      "updated pictograms on every product",
+      "a rule change from the agency",
+      "scrapping old stock that no longer complied",
+      "the facelift for our entire catalog",
+      "making products legal again",
+      "new warnings and symbols",
+      "a compliance-driven refresh",
+      "redoing artwork across hundreds of items",
+      "the deadline set by regulators",
+      "what the standards body made us change",
+      "relabeling inventory in the warehouse",
+      "the rewrite of our printed information",
+      "an unavoidable overhaul of our look",
+      "cleaning out outdated supplies"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "hdpeshortage",
+     "vendor": "Corvane Polymer Distribution",
+     "memos": [
+      "Corvane HDPE resin spot buy - jug shortage",
+      "Corvane HDPE resin spot buy - expedite fee"
+     ],
+     "cross_memo": "Corvane HDPE resin spot buy - extra pallet storage",
+     "plain": [
+      "the HDPE resin spot buy",
+      "the jug shortage spot buy",
+      "the Corvane resin spot buy"
+     ],
+     "oblique": [
+      "a plastics scarcity upstream",
+      "buying at unfavorable market prices",
+      "the refinery outage that rippled through",
+      "a scramble for raw plastic",
+      "paying a premium to avoid stockouts",
+      "the supply crunch in containers",
+      "an unplanned purchase at the going rate",
+      "jugs we could not otherwise get",
+      "the disruption at a molder",
+      "hedging against running out",
+      "a sudden hike in feedstock cost",
+      "filling the gap with a new source",
+      "the market squeeze",
+      "emergency purchasing of containers",
+      "a price spike on gallon-size bottles",
+      "unscheduled buying outside the contract"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Customer Sample and Demo Programs",
+   "aliases": [
+    "sample program",
+    "demo costs",
+    "free samples",
+    "trial kits",
+    "customer sampling"
+   ],
+   "narrative": [
+    "Sample program",
+    "Demo costs",
+    "Customer sampling"
+   ],
+   "recurring": [
+    {
+     "vendor": "ParcelPoint Express",
+     "base": 4800,
+     "memo": "Courier charges for sample shipments"
+    },
+    {
+     "vendor": "Kitwell Assembly",
+     "base": 3500,
+     "memo": "Starter kit assembly and fulfillment"
+    },
+    {
+     "vendor": "InkLeaf Print",
+     "base": 1200,
+     "memo": "Sample catalogs and data sheets"
+    }
+   ],
+   "events": [
+    {
+     "key": "universitybid",
+     "vendor": "Kitwell Assembly",
+     "memos": [
+      "Kitwell Purdue chemistry department bid kits - pilot lot",
+      "Kitwell Purdue chemistry department bid kits - custom inserts"
+     ],
+     "cross_memo": "Kitwell Purdue chemistry department bid kits - sales engineer travel",
+     "plain": [
+      "the Purdue chemistry department bid kits",
+      "the Purdue bid kits",
+      "the chemistry department bid kits"
+     ],
+     "oblique": [
+      "the campus tender we wanted to win",
+      "giving a large academic buyer free product to try",
+      "a big institutional proposal",
+      "handouts for the faculty evaluating us",
+      "a multiyear contract pursuit",
+      "the competitive procurement",
+      "goodwill gestures to a prospective client",
+      "trial product for decision makers",
+      "a pitch aimed at a university system",
+      "what we spent chasing a major account",
+      "the bake-off against rival distributors",
+      "free goods for the evaluation committee",
+      "the opportunity worth millions",
+      "an investment in a single large prospect",
+      "customized goodies for a bidding process",
+      "courting the state school"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "tradeshow",
+     "vendor": "Summit Expo Services",
+     "memos": [
+      "Summit Expo Pittcon booth sampling - Chicago",
+      "Summit Expo Pittcon booth sampling - giveaway kits"
+     ],
+     "cross_memo": "Summit Expo Pittcon booth sampling - freight and drayage",
+     "plain": [
+      "the Pittcon booth sampling",
+      "the Pittcon giveaway kits",
+      "the Chicago Pittcon booth"
+     ],
+     "oblique": [
+      "the annual industry gathering",
+      "a convention floor presence",
+      "free product handed out to passersby",
+      "our appearance at the big conference",
+      "exhibition hall expenses",
+      "meeting buyers face to face",
+      "the stand we rented for a few days",
+      "branded freebies for attendees",
+      "the marketing push in the Midwest",
+      "the annual scientific exposition",
+      "lead generation at a crowded venue",
+      "what it costs to be seen by the trade",
+      "giveaways for people walking the aisles",
+      "our spring appearance among competitors",
+      "booth staff and swag",
+      "the yearly show"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse Equipment and Safety",
+   "aliases": [
+    "warehouse safety",
+    "warehouse equipment",
+    "fume hood and safety gear",
+    "facility safety spend",
+    "dock equipment costs"
+   ],
+   "narrative": [
+    "Warehouse safety",
+    "Warehouse equipment",
+    "Facility safety spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Torvald Industrial Rental",
+     "base": 6900,
+     "memo": "Forklift and pallet jack rental - Newark DC"
+    },
+    {
+     "vendor": "ShieldPoint PPE",
+     "base": 3100,
+     "memo": "Gloves, goggles and respirator cartridges"
+    },
+    {
+     "vendor": "AirPure Ventilation Service",
+     "base": 4400,
+     "memo": "Quarterly fume extraction filter service"
+    }
+   ],
+   "events": [
+    {
+     "key": "eyewash",
+     "vendor": "ShieldPoint PPE",
+     "memos": [
+      "ShieldPoint OSHA eyewash station retrofit - Newark DC",
+      "ShieldPoint OSHA eyewash station retrofit - plumbing install"
+     ],
+     "cross_memo": "ShieldPoint OSHA eyewash station retrofit - inspector fee",
+     "plain": [
+      "the OSHA eyewash station retrofit",
+      "the eyewash station retrofit",
+      "the Newark eyewash retrofit"
+     ],
+     "oblique": [
+      "the citation we had to correct",
+      "fixing a deficiency flagged by an inspector",
+      "upgrades demanded after a site visit",
+      "emergency rinse fixtures for workers",
+      "a safety finding that required action",
+      "the agency's follow-up on our facility",
+      "bringing the building up to code",
+      "remedial work with a deadline",
+      "what the regulators asked us to install",
+      "an injury-prevention project",
+      "plumbing work on the warehouse floor",
+      "a corrective action plan",
+      "making amends for a violation",
+      "the cost of an unfavorable inspection report",
+      "new fixtures along the aisles",
+      "legally mandated improvements"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "racking",
+     "vendor": "Granite State Storage Systems",
+     "memos": [
+      "Granite State seismic racking install - Reno depot",
+      "Granite State seismic racking install - anchor bolts"
+     ],
+     "cross_memo": "Granite State seismic racking install - inventory relocation labor",
+     "plain": [
+      "the seismic racking install",
+      "the Reno racking install",
+      "the Granite State seismic racking"
+     ],
+     "oblique": [
+      "a new shelving system for the western site",
+      "earthquake-proofing our heavy glass stock",
+      "structural steel for storing breakables",
+      "the insurer's condition for renewal",
+      "reconfiguring the depot floor",
+      "bolting everything to the slab",
+      "a capacity expansion on the coast",
+      "taller storage for the growing catalog",
+      "moving thousands of cases to make room",
+      "an upgrade prompted by the risk assessment",
+      "the construction crew in the warehouse",
+      "safer ways to stack fragile product",
+      "a capital-like project expensed this period",
+      "contractors working in the aisles",
+      "our response to a tremor scare",
+      "reshaping how pallets are held"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,820 @@
+{
+ "slug": "home-appliance-repair-service",
+ "industry": "home appliance repair service",
+ "entities": [
+  "Hearthfix Appliance Service",
+  "Brightwater Home Repair Co.",
+  "Copperline Appliance Pros",
+  "Maple & Vane Repair Works",
+  "Northgate Appliance Care"
+ ],
+ "accounts": [
+  {
+   "name": "Service Fleet Operations",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "van fleet spend",
+    "service vans",
+    "truck expenses"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Van fleet spend",
+    "Service vans"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadmark Fuel Cards",
+     "base": 14200,
+     "memo": "Monthly fuel card statement — service vans"
+    },
+    {
+     "vendor": "Tallgrass Auto Maintenance",
+     "base": 6800,
+     "memo": "Scheduled van maintenance — oil and tires"
+    },
+    {
+     "vendor": "Pinecrest Fleet Insurance",
+     "base": 4100,
+     "memo": "Commercial auto premium — monthly installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "hoistfailure",
+     "vendor": "Tallgrass Auto Maintenance",
+     "memos": [
+      "Lift gate hoist replacement — vans 7 and 9",
+      "Lift gate hoist replacement — hydraulic cylinders"
+     ],
+     "cross_memo": "Lift gate hoist replacement — temporary hired cargo van",
+     "plain": [
+      "the lift gate hoist replacement",
+      "lift gate hoist replacement work",
+      "the lift gate hoist failures"
+     ],
+     "oblique": [
+      "getting the heavy-appliance delivery vans working again",
+      "fixing the lifting gear on two trucks",
+      "the mechanical breakdown that kept bulky loads off the road",
+      "emergency repairs on the equipment that raises washers into the truck bed",
+      "two vehicles sidelined by a hydraulic problem",
+      "the repairs our drivers kept complaining about",
+      "restoring the ability to haul big units",
+      "parts and shop time on the load-assist systems",
+      "the equipment that failed during a customer delivery",
+      "work to get trucks safe for dryers and refrigerators",
+      "the mechanical overhaul of two vehicles",
+      "a breakdown that left technicians without proper lifting capability",
+      "the repair bill for the vans that could not carry heavy units",
+      "fixing what broke on two service trucks",
+      "keeping stranded jobs from piling up",
+      "the fix for the equipment that handles heavy lifting"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "wrapdecal",
+     "vendor": "Vividedge Graphics",
+     "memos": [
+      "Vividedge Graphics — rebrand decal wrap — 14 vans",
+      "Vividedge Graphics — rebrand decal wrap — vinyl install"
+     ],
+     "cross_memo": "Vividedge Graphics — rebrand decal wrap — uniform patches",
+     "plain": [
+      "the rebrand decal wrap",
+      "the decal wrap on fourteen vans",
+      "rebrand decal wrap installation"
+     ],
+     "oblique": [
+      "the new look on the trucks",
+      "changing how our vehicles appear on the street",
+      "the visual refresh our owner approved last quarter",
+      "redoing the outside of the fleet",
+      "the marketing-driven makeover of our rolling advertisements",
+      "new logos and colors going onto the vehicles",
+      "the project that came out of the name change",
+      "the cosmetic work on every service truck",
+      "making the whole lineup match the new identity",
+      "a branding push that touched each vehicle",
+      "the outward-facing update to what customers see in their driveways",
+      "the bill from the sign shop",
+      "the new paint scheme that replaced the old one",
+      "the identity project handled by the graphics studio",
+      "putting fresh artwork on the trucks",
+      "the change that made our vehicles look new"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Replacement Parts & Components",
+   "aliases": [
+    "parts",
+    "parts spend",
+    "component purchases",
+    "parts inventory buys",
+    "appliance parts"
+   ],
+   "narrative": [
+    "Parts spend",
+    "Component purchases",
+    "Appliance parts"
+   ],
+   "recurring": [
+    {
+     "vendor": "Allied Appliance Supply",
+     "base": 28000,
+     "memo": "Stock replenishment — assorted OEM parts"
+    },
+    {
+     "vendor": "Greenfield Motors & Controls",
+     "base": 9500,
+     "memo": "Motors and control boards — monthly order"
+    },
+    {
+     "vendor": "Ridgeway Seals & Gaskets",
+     "base": 3200,
+     "memo": "Door seals and gaskets — bulk order"
+    }
+   ],
+   "events": [
+    {
+     "key": "recallkit",
+     "vendor": "Allied Appliance Supply",
+     "memos": [
+      "Thermal fuse recall kits — batch pull",
+      "Thermal fuse recall kits — dryer models"
+     ],
+     "cross_memo": "Thermal fuse recall kits — expedited freight surcharge",
+     "plain": [
+      "the thermal fuse recall kits",
+      "thermal fuse recall kit purchases",
+      "the dryer thermal fuse recall"
+     ],
+     "oblique": [
+      "the manufacturer safety campaign",
+      "stocking up for a nationwide product warning",
+      "units that had to be fixed free for homeowners",
+      "the heavy wave of identical repairs after the announcement",
+      "inventory we had to buy fast when the notice went out",
+      "a flood of one particular fix",
+      "the safety notice that sent customers calling",
+      "a purchase driven by a regulator's attention",
+      "the sudden surge in demand for one small component",
+      "the stockpile for households with affected machines",
+      "what the manufacturer told every shop to do",
+      "small protective items bought by the thousand",
+      "a huge order placed after a hazard bulletin",
+      "cheap pieces we needed in volume",
+      "the campaign that kept our counter busy",
+      "an urgent bulk buy tied to a public warning"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "gaspilot",
+     "vendor": "Sunbeam Burner Wholesale",
+     "memos": [
+      "Sunbeam Burner Wholesale — igniter assemblies — range line",
+      "Sunbeam Burner Wholesale — igniter assemblies — pallet order"
+     ],
+     "cross_memo": "Sunbeam Burner Wholesale — igniter assemblies — hazmat shipping fee",
+     "plain": [
+      "the Sunbeam igniter assemblies",
+      "igniter assemblies from Sunbeam",
+      "the Sunbeam burner wholesale pallet"
+     ],
+     "oblique": [
+      "a new source for cooktop starting parts",
+      "the cold-weather spike in stove repairs",
+      "switching away from our usual supplier for one product family",
+      "supply for gas ranges that would not light",
+      "the winter rush on kitchen heat sources",
+      "a one-time pallet purchase to cover shortages",
+      "our attempt to fix a backorder",
+      "parts that our main distributor could not ship",
+      "the second source we opened for range components",
+      "buying direct from a specialist",
+      "the stock-out that forced us to look elsewhere",
+      "hundreds of small flame-starting pieces",
+      "a wholesale deal negotiated mid-month",
+      "filling a gap in the shelves",
+      "the quick sourcing job for a hot-selling fix",
+      "ordering in bulk when regular channels dried up"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Technician Certification & Training",
+   "aliases": [
+    "training",
+    "tech training",
+    "certifications",
+    "technician courses",
+    "licensing and training"
+   ],
+   "narrative": [
+    "Tech training",
+    "Certifications",
+    "Technician courses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Applied Trades Institute",
+     "base": 2400,
+     "memo": "Monthly e-learning seats — technician library"
+    },
+    {
+     "vendor": "Statewide Contractor Board",
+     "base": 900,
+     "memo": "License renewals — monthly batch"
+    }
+   ],
+   "events": [
+    {
+     "key": "epa608",
+     "vendor": "Applied Trades Institute",
+     "memos": [
+      "Refrigerant handling cohort — Type II exam prep",
+      "Refrigerant handling cohort — proctor fees"
+     ],
+     "cross_memo": "Refrigerant handling cohort — overtime backfill",
+     "plain": [
+      "the refrigerant handling cohort",
+      "refrigerant handling cohort fees",
+      "the refrigerant handling exam prep"
+     ],
+     "oblique": [
+      "getting a dozen techs qualified to touch cooling systems",
+      "a compliance requirement for sealed-system work",
+      "the class every new hire had to sit",
+      "a credential gap our insurer flagged",
+      "moving people from basic to advanced job eligibility",
+      "the group sent off for a federal credential",
+      "paying for exams and the days out of the field",
+      "qualifying the crew for work on freezers and air units",
+      "the classroom push after an audit finding",
+      "making sure staff could legally handle certain gases",
+      "a batch enrollment prompted by regulators",
+      "what it cost to upskill the junior team",
+      "a requirement that stood between us and a service contract",
+      "time off the road plus testing charges",
+      "the program that opens up higher-margin repairs",
+      "a one-time push to widen the services we may perform"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "smartwave",
+     "vendor": "Lumina Learning Partners",
+     "memos": [
+      "Lumina Learning Partners — connected appliance workshop — onsite",
+      "Lumina Learning Partners — connected appliance workshop — materials"
+     ],
+     "cross_memo": "Lumina Learning Partners — connected appliance workshop — venue rental",
+     "plain": [
+      "the connected appliance workshop",
+      "Lumina connected appliance workshop",
+      "the onsite connected appliance sessions"
+     ],
+     "oblique": [
+      "teaching the crew about wifi-enabled machines",
+      "a hands-on seminar brought to our own building",
+      "coaching on devices that talk to phones",
+      "an outside instructor spending three days with us",
+      "preparing for the new generation of kitchen gear",
+      "the internal event that pulled everyone off routes",
+      "a skills push for gadgets with software",
+      "learning how to diagnose app-linked washers",
+      "a vendor-led session at our shop",
+      "training prompted by the growth of high-tech models",
+      "the crash course in modern controls",
+      "teaching technicians what the manuals now assume",
+      "an investment in staying current with the market",
+      "the gathering that took the whole team off the schedule",
+      "bringing in an expert for a long weekend",
+      "preparing the team for newer product lines"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Customer Warranty Claims & Goodwill",
+   "aliases": [
+    "warranty",
+    "warranty claims",
+    "goodwill credits",
+    "rework costs",
+    "callback expenses"
+   ],
+   "narrative": [
+    "Warranty claims",
+    "Goodwill credits",
+    "Callback expenses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Covenant Home Warranty Admin",
+     "base": 8800,
+     "memo": "Warranty administration fee — monthly"
+    },
+    {
+     "vendor": "Clearpoint Claims Processing",
+     "base": 3500,
+     "memo": "Claims processing — monthly retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "floodsettle",
+     "vendor": "Covenant Home Warranty Admin",
+     "memos": [
+      "Basement leak settlement — dishwasher hose failure",
+      "Basement leak settlement — flooring restoration"
+     ],
+     "cross_memo": "Basement leak settlement — drying equipment rental",
+     "plain": [
+      "the basement leak settlement",
+      "basement leak settlement payout",
+      "the dishwasher hose settlement"
+     ],
+     "oblique": [
+      "a customer's water damage that we ended up paying for",
+      "the claim that followed a faulty installation",
+      "making a homeowner whole after their lower level got soaked",
+      "the one big payout to an unhappy household",
+      "a mistake by one of our crews that turned expensive",
+      "repairing the harm done to a floor",
+      "an insurance-style resolution we handled ourselves",
+      "the incident that required a check to a client",
+      "covering damages after a hose let go",
+      "the cost of a single bad job",
+      "resolving a dispute without going to court",
+      "the cleanup bill for something we caused",
+      "a large one-off made right for one family",
+      "compensation we agreed to after the complaint",
+      "the damage from a connection that came loose",
+      "restoring a customer's property after a mishap"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "rebatecoupon",
+     "vendor": "Fairhaven Customer Care Group",
+     "memos": [
+      "Fairhaven Customer Care Group — service apology voucher campaign",
+      "Fairhaven Customer Care Group — voucher fulfillment"
+     ],
+     "cross_memo": "Fairhaven Customer Care Group — apology voucher postage",
+     "plain": [
+      "the service apology voucher campaign",
+      "apology voucher fulfillment",
+      "the Fairhaven apology vouchers"
+     ],
+     "oblique": [
+      "credits mailed to clients after scheduling failures",
+      "making amends for missed appointments",
+      "the outreach to customers we let down in the spring",
+      "gift offers meant to win back unhappy households",
+      "a mass gesture of goodwill",
+      "the program that followed a wave of bad reviews",
+      "discounts sent to people who waited too long",
+      "an effort to stop complaints from spreading",
+      "a peace offering to a large list of accounts",
+      "the retention push after the backlog",
+      "what we spent to repair our reputation",
+      "outside help writing and sending the credits",
+      "redeemable offers for those we kept waiting",
+      "the campaign our manager started to calm customers",
+      "paying for forgiveness at scale",
+      "an organized response to widespread frustration"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Diagnostic Tools & Shop Equipment",
+   "aliases": [
+    "tools",
+    "shop equipment",
+    "diagnostic gear",
+    "tooling spend",
+    "equipment purchases"
+   ],
+   "narrative": [
+    "Tooling spend",
+    "Diagnostic gear",
+    "Shop equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Meter Rentals",
+     "base": 2800,
+     "memo": "Meter calibration and rental — monthly"
+    },
+    {
+     "vendor": "Torquewell Hand Tools",
+     "base": 4300,
+     "memo": "Hand tool replacement — assorted"
+    },
+    {
+     "vendor": "Benchline Shop Supply",
+     "base": 3100,
+     "memo": "Consumables — solder flux and wire"
+    }
+   ],
+   "events": [
+    {
+     "key": "leakdetector",
+     "vendor": "Precision Meter Rentals",
+     "memos": [
+      "Helium sniffer purchase — sealed system analyzer",
+      "Helium sniffer purchase — calibration certificate"
+     ],
+     "cross_memo": "Helium sniffer purchase — extended warranty",
+     "plain": [
+      "the helium sniffer purchase",
+      "helium sniffer analyzer",
+      "the helium sniffer calibration certificate"
+     ],
+     "oblique": [
+      "a new instrument for finding tiny escapes",
+      "the device that lets us skip guesswork on cooling faults",
+      "buying our own rather than renting for each job",
+      "a major tool our lead tech had been requesting",
+      "the gadget that pays off in fewer return visits",
+      "capital spent on a piece of precision electronics",
+      "an upgrade to how we locate hidden failures",
+      "the single priciest item in the cart this period",
+      "moving diagnostics from an outside lab to our bench",
+      "a one-off purchase meant to boost accuracy",
+      "the handheld unit that detects invisible problems",
+      "equipment bought after repeated misdiagnoses",
+      "what the shop foreman signed off on",
+      "a major step up in testing capability",
+      "the instrument that came with its own paperwork",
+      "investing in better detection of faults"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "benchlift",
+     "vendor": "Ironvale Workshop Systems",
+     "memos": [
+      "Ironvale Workshop Systems — adjustable workbench install — bay 2",
+      "Ironvale Workshop Systems — adjustable workbench install — anchors"
+     ],
+     "cross_memo": "Ironvale Workshop Systems — adjustable workbench install — electrical drop",
+     "plain": [
+      "the adjustable workbench install",
+      "Ironvale adjustable workbench",
+      "the bay 2 workbench installation"
+     ],
+     "oblique": [
+      "rebuilding the repair area for bigger machines",
+      "a furniture upgrade for the back of the building",
+      "making the shop easier on technicians' backs",
+      "the renovation of one work station",
+      "fixtures that raise and lower to suit the task",
+      "the construction crew's visit to the warehouse",
+      "a layout change in the rear workspace",
+      "where the new heavy-duty surface went in",
+      "the ergonomic improvement that came from an injury report",
+      "a permanent addition to our floor",
+      "installing something sturdier for washing machine teardowns",
+      "the physical expansion of our repair capacity",
+      "what replaced the old plywood tables",
+      "an overhaul of one corner of the facility",
+      "the build-out that made room for oversized units",
+      "a capital project in the service bay"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Dispatch & Customer Scheduling Systems",
+   "aliases": [
+    "dispatch",
+    "scheduling software",
+    "field service platform",
+    "dispatch tech",
+    "routing and booking"
+   ],
+   "narrative": [
+    "Dispatch costs",
+    "Scheduling software",
+    "Routing and booking"
+   ],
+   "recurring": [
+    {
+     "vendor": "Routewise Field Software",
+     "base": 6200,
+     "memo": "Field service platform — per-seat subscription"
+    },
+    {
+     "vendor": "Callbridge Telecom",
+     "base": 3400,
+     "memo": "Call center lines — monthly"
+    },
+    {
+     "vendor": "Textly Messaging",
+     "base": 1500,
+     "memo": "Appointment reminder texts — usage"
+    }
+   ],
+   "events": [
+    {
+     "key": "gpsmigrate",
+     "vendor": "Routewise Field Software",
+     "memos": [
+      "Telematics integration — live map module",
+      "Telematics integration — data migration services"
+     ],
+     "cross_memo": "Telematics integration — dashboard tablets",
+     "plain": [
+      "the telematics integration",
+      "telematics integration services",
+      "the live map module"
+     ],
+     "oblique": [
+      "letting the office see where every truck is",
+      "connecting vehicle trackers to our booking system",
+      "the project that moved years of old records into the new view",
+      "the work to link road data with job tickets",
+      "a one-time implementation fee for smarter routing",
+      "the upgrade dispatchers asked for after missed arrival windows",
+      "real-time location awareness on the schedule board",
+      "technical consulting that tied two systems together",
+      "an enhancement that shortens drive time between homes",
+      "paying for the plumbing between our software tools",
+      "the setup bill for tracking each driver",
+      "the change that lets customers see an arrival estimate",
+      "bringing historical data over to the fancier product",
+      "a rollout managed by the vendor's engineers",
+      "the add-on that makes the board show movement",
+      "putting position data into the daily plan"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "cyberbreach",
+     "vendor": "Shieldpoint Security Response",
+     "memos": [
+      "Shieldpoint Security Response — phishing incident forensics",
+      "Shieldpoint Security Response — credential reset program"
+     ],
+     "cross_memo": "Shieldpoint Security Response — breach notification mailing",
+     "plain": [
+      "the phishing incident forensics",
+      "Shieldpoint phishing incident response",
+      "the credential reset program"
+     ],
+     "oblique": [
+      "the unwelcome email that tricked an office employee",
+      "hiring outsiders to figure out what an intruder touched",
+      "forcing every login in the company to change",
+      "the emergency after someone got into our accounts",
+      "specialists called in at the worst moment",
+      "a hacking scare that interrupted bookings",
+      "paying to learn how far a bad actor got",
+      "the weekend we spent locking everything down",
+      "the security fire drill that turned out real",
+      "the response to stolen passwords",
+      "the investigation that cost more than the damage",
+      "a protective sweep after suspicious activity",
+      "the cleanup after a fraudulent message got through",
+      "consultants who combed through our systems",
+      "an unplanned expense from a digital attack",
+      "getting back to a trusted state"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Facilities & Warehouse",
+   "aliases": [
+    "warehouse",
+    "facilities",
+    "building costs",
+    "shop premises",
+    "warehouse and utilities"
+   ],
+   "narrative": [
+    "Warehouse costs",
+    "Building costs",
+    "Facilities spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Eastbrook Industrial Properties",
+     "base": 18500,
+     "memo": "Warehouse and shop lease — monthly rent"
+    },
+    {
+     "vendor": "Cascade Utility District",
+     "base": 2900,
+     "memo": "Electric and water — monthly"
+    },
+    {
+     "vendor": "Brightpath Janitorial",
+     "base": 1200,
+     "memo": "Cleaning service — monthly"
+    }
+   ],
+   "events": [
+    {
+     "key": "roofpatch",
+     "vendor": "Eastbrook Industrial Properties",
+     "memos": [
+      "Membrane roof patch — storm damage section",
+      "Membrane roof patch — insulation replacement"
+     ],
+     "cross_memo": "Membrane roof patch — emergency tarping",
+     "plain": [
+      "the membrane roof patch",
+      "membrane roof patch repairs",
+      "the roof patch insulation work"
+     ],
+     "oblique": [
+      "fixing the ceiling after the big storm",
+      "the leak that threatened our parts shelves",
+      "a repair the landlord passed through to us",
+      "weather harm to the top of the building",
+      "protecting inventory from dripping water",
+      "the contractor on the rooftop for a week",
+      "what the wind and rain did to the shop",
+      "an unplanned structural expense",
+      "the problem that showed up as stains inside",
+      "making the building watertight again",
+      "a charge for the part of the lease we cover",
+      "the emergency call after a downpour",
+      "work high above the work floor",
+      "the mess left by a severe weather event",
+      "preventing wet cardboard and ruined stock",
+      "a building repair nobody budgeted"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "rackrefit",
+     "vendor": "Highline Storage Solutions",
+     "memos": [
+      "Highline Storage Solutions — pallet racking expansion — aisle 4",
+      "Highline Storage Solutions — pallet racking expansion — safety guards"
+     ],
+     "cross_memo": "Highline Storage Solutions — pallet racking expansion — permit fee",
+     "plain": [
+      "the pallet racking expansion",
+      "Highline racking expansion",
+      "the aisle 4 racking guards"
+     ],
+     "oblique": [
+      "more shelving for the growing parts catalog",
+      "making space to hold bulky inventory",
+      "adding vertical storage to avoid leasing a second building",
+      "the reorganization of the stockroom",
+      "steel frames that went up in the back",
+      "the answer to our overflowing floor",
+      "a warehouse build-out ahead of the busy season",
+      "new places to put full pallets",
+      "the project that cleared walkways again",
+      "safer storage after a near miss",
+      "capacity for the extra stock we now carry",
+      "what the operations lead requested last quarter",
+      "structural additions inside the leased space",
+      "tidying up by building upward",
+      "putting a lid on the clutter problem",
+      "a layout project handled by outside installers"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Insurance & Liability Coverage",
+   "aliases": [
+    "insurance",
+    "liability coverage",
+    "risk premiums",
+    "insurance costs",
+    "coverage spend"
+   ],
+   "narrative": [
+    "Insurance costs",
+    "Coverage spend",
+    "Risk premiums"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sterling Mutual Underwriters",
+     "base": 7600,
+     "memo": "General liability premium — monthly installment"
+    },
+    {
+     "vendor": "Workmen's Shield Insurance",
+     "base": 9200,
+     "memo": "Workers compensation premium — monthly"
+    },
+    {
+     "vendor": "Ledgerline Surety",
+     "base": 900,
+     "memo": "License bond — monthly allocation"
+    }
+   ],
+   "events": [
+    {
+     "key": "auditadjust",
+     "vendor": "Workmen's Shield Insurance",
+     "memos": [
+      "Payroll audit true-up — prior policy year",
+      "Payroll audit true-up — reclassified technician codes"
+     ],
+     "cross_memo": "Payroll audit true-up — late payment penalty",
+     "plain": [
+      "the payroll audit true-up",
+      "payroll audit true-up charge",
+      "the reclassified technician codes"
+     ],
+     "oblique": [
+      "the carrier deciding we owed more for last year",
+      "a retroactive bill after an examiner's visit",
+      "different risk categories assigned to our field staff",
+      "an adjustment that arrived long after the fact",
+      "paying the difference between estimate and reality",
+      "what happens when headcount grew faster than reported",
+      "a surprise invoice from the underwriters",
+      "the catch-up charge on a closed period",
+      "the finding that our people do riskier work than assumed",
+      "a correction to prior premiums",
+      "the carrier's review of how many people we employed",
+      "a balance due on last year's policy",
+      "reclassifying who does what in the field",
+      "the consequence of an inspection of our records",
+      "extra premium nobody had accrued",
+      "a true-up that landed in a busy month"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "cyberpolicy",
+     "vendor": "Meridian Specialty Risk",
+     "memos": [
+      "Meridian Specialty Risk — new cyber policy — first-year premium",
+      "Meridian Specialty Risk — new cyber policy — binder fee"
+     ],
+     "cross_memo": "Meridian Specialty Risk — new cyber policy — broker commission",
+     "plain": [
+      "the new cyber policy",
+      "Meridian cyber policy premium",
+      "the cyber policy binder fee"
+     ],
+     "oblique": [
+      "protection against hackers we did not carry before",
+      "coverage added after a competitor was attacked",
+      "a policy the bank asked us to buy",
+      "insuring our customer records for the first time",
+      "a new line of protection from a specialty carrier",
+      "the premium for something we used to go without",
+      "shielding the business from digital extortion",
+      "what our lender required before renewing credit",
+      "a first-time purchase from a different underwriter",
+      "covering the loss of customer data",
+      "the kind of cover that did not exist on last year's schedule",
+      "an addition to our insurance stack",
+      "paying for peace of mind about online threats",
+      "a policy requested by our largest commercial client",
+      "new risk transfer for the computer side of the business",
+      "a fresh annual commitment"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

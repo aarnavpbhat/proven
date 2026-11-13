@@ -1,0 +1,703 @@
+{
+ "slug": "escape-room-franchise",
+ "industry": "escape room franchise",
+ "entities": [
+  "Locked Door Ventures",
+  "Cipher Cellar Franchising",
+  "Crowbar and Clue Holdings",
+  "Deadbolt Adventures Group",
+  "Skeleton Key Experiences"
+ ],
+ "accounts": [
+  {
+   "name": "Set Construction and Props",
+   "aliases": [
+    "set builds",
+    "props",
+    "set construction",
+    "prop spend",
+    "build costs"
+   ],
+   "narrative": [
+    "Set builds",
+    "Prop spend",
+    "Build costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gearwork Fabrication LLC",
+     "base": 9500,
+     "memo": "Prop fabrication - monthly PO 4412"
+    },
+    {
+     "vendor": "Hollow Oak Millwork",
+     "base": 6200,
+     "memo": "Millwork supplies - stock replenishment"
+    },
+    {
+     "vendor": "Brightspark Electronics Supply",
+     "base": 3100,
+     "memo": "Electronics components - standard order"
+    }
+   ],
+   "events": [
+    {
+     "key": "pirate",
+     "vendor": "Gearwork Fabrication LLC",
+     "memos": [
+      "Galleon Mutiny retheme - cannon mechanism WO 7781",
+      "Galleon Mutiny retheme - rigging install WO 7782"
+     ],
+     "cross_memo": "Galleon Mutiny retheme - promo banners",
+     "plain": [
+      "the galleon mutiny retheme",
+      "the galleon mutiny rebuild",
+      "the galleon mutiny room"
+     ],
+     "oblique": [
+      "the nautical room makeover",
+      "swapping out an old storyline",
+      "a brand new storyline for a tired room",
+      "the seafaring overhaul",
+      "new theme at the downtown location",
+      "replacing a stale adventure",
+      "the big renovation of our flagship space",
+      "buying a fresh narrative",
+      "the ship-themed refresh",
+      "a room that had stopped selling",
+      "an expensive reinvention",
+      "the makeover our creative lead pushed",
+      "a full redo of one game",
+      "swashbuckling update",
+      "the redecoration project",
+      "retiring the old scenario"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "vaultmaze",
+     "vendor": "Tessellate Scenic Studios",
+     "memos": [
+      "Obsidian Archive buildout - rotating wall panels PO 5530",
+      "Obsidian Archive buildout - hidden door hardware PO 5531"
+     ],
+     "cross_memo": "Obsidian Archive buildout - opening night catering",
+     "plain": [
+      "the obsidian archive buildout",
+      "the obsidian archive room",
+      "the obsidian archive project"
+     ],
+     "oblique": [
+      "our newest flagship game",
+      "the launch of a sixth room",
+      "an added attraction at the suburban site",
+      "expansion of the room lineup",
+      "the premium new experience",
+      "a sophisticated mechanical showpiece",
+      "capacity growth for weekend demand",
+      "the room investors asked for",
+      "freshly built game space",
+      "new capital project in the pipeline",
+      "moving walls and secret passages",
+      "a debut scenario",
+      "extra inventory to sell",
+      "the ambitious new puzzle space",
+      "construction of something from scratch",
+      "our biggest creative bet this year"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Puzzle Tech Maintenance",
+   "aliases": [
+    "puzzle maintenance",
+    "tech upkeep",
+    "puzzle repairs",
+    "mechanism upkeep",
+    "tech maintenance"
+   ],
+   "narrative": [
+    "Puzzle maintenance",
+    "Tech upkeep",
+    "Mechanism upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Latchwell Controls Inc",
+     "base": 4800,
+     "memo": "Controller service contract"
+    },
+    {
+     "vendor": "Nimbus Sensor Repair",
+     "base": 2900,
+     "memo": "Sensor calibration - routine"
+    }
+   ],
+   "events": [
+    {
+     "key": "magnet",
+     "vendor": "Latchwell Controls Inc",
+     "memos": [
+      "Maglock array replacement - Wing B WO 9021",
+      "Maglock array replacement - power supplies WO 9022"
+     ],
+     "cross_memo": "Maglock array replacement - temporary room closure signage",
+     "plain": [
+      "the maglock array replacement",
+      "the maglock array swap",
+      "the maglock array work"
+     ],
+     "oblique": [
+      "doors that would not stay shut",
+      "replacing the locking gear",
+      "a rash of escapes from the wrong rooms",
+      "safety inspector flagged the hardware",
+      "hardware failure across one wing",
+      "emergency swap of latching equipment",
+      "the failures that stopped bookings",
+      "gear that wore out early",
+      "the upgrade ops requested after complaints",
+      "fixing doors guests could force",
+      "replacing the electromagnetic holders",
+      "security of the game rooms",
+      "hardware that quit mid-session",
+      "unplanned work on entry points",
+      "the lock problem on the east side",
+      "parts we should have replaced sooner"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "servers",
+     "vendor": "Quanta Rackworks",
+     "memos": [
+      "Show-control server migration - rack install PO 6102",
+      "Show-control server migration - data cutover PO 6103"
+     ],
+     "cross_memo": "Show-control server migration - overnight contractor shifts",
+     "plain": [
+      "the show-control server migration",
+      "the show-control server move",
+      "the show-control server cutover"
+     ],
+     "oblique": [
+      "moving our brains to new machines",
+      "the central computing upgrade",
+      "retiring aging hardware that ran every game",
+      "consolidating onto one platform",
+      "the IT project finished over a weekend",
+      "upgrade so rooms stop freezing",
+      "replacing the old back-end boxes",
+      "the infrastructure overhaul",
+      "change in where the game logic lives",
+      "modernizing what runs the clues",
+      "cutting over to newer equipment",
+      "the switch our CTO scheduled",
+      "a one-time systems transition",
+      "reliability work behind the scenes",
+      "relocating the software that drives every room",
+      "the platform change"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Game Master Payroll",
+   "aliases": [
+    "gm payroll",
+    "game master wages",
+    "host labor",
+    "gm labor",
+    "floor staff pay"
+   ],
+   "narrative": [
+    "GM payroll",
+    "Host labor",
+    "Floor staff pay"
+   ],
+   "recurring": [
+    {
+     "vendor": "Steadfast Staffing Partners",
+     "base": 28000,
+     "memo": "Part-time GM payroll - biweekly batch"
+    },
+    {
+     "vendor": "Payline Workforce Services",
+     "base": 3400,
+     "memo": "Payroll processing fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "peak",
+     "vendor": "Steadfast Staffing Partners",
+     "memos": [
+      "Haunted Season surge staffing - extra shifts batch 31",
+      "Haunted Season surge staffing - overtime premium batch 32"
+     ],
+     "cross_memo": "Haunted Season surge staffing - costume allowance",
+     "plain": [
+      "the haunted season surge staffing",
+      "the haunted season shifts",
+      "the haunted season overtime"
+     ],
+     "oblique": [
+      "the October rush",
+      "extra hands for the busiest weeks",
+      "more bodies on the floor",
+      "time-and-a-half for crowded weekends",
+      "scrambling to cover sellouts",
+      "the autumn demand spike",
+      "staffing up for scary-themed bookings",
+      "late nights and long lines",
+      "the seasonal crunch",
+      "covering more games than usual",
+      "premium pay during our peak",
+      "the stretch where every slot sold",
+      "bringing in additional people",
+      "working through the holiday run",
+      "a few frantic weeks of coverage",
+      "the demand we hadn't forecast"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "training",
+     "vendor": "Riddlecraft Academy",
+     "memos": [
+      "Certified facilitator bootcamp - cohort 7 tuition",
+      "Certified facilitator bootcamp - instructor travel"
+     ],
+     "cross_memo": "Certified facilitator bootcamp - training room rental",
+     "plain": [
+      "the certified facilitator bootcamp",
+      "the certified facilitator cohort",
+      "the certified facilitator program"
+     ],
+     "oblique": [
+      "teaching new hires to run sessions",
+      "onboarding a large class",
+      "the education push for new employees",
+      "a course our franchisor mandated",
+      "skills development for the front line",
+      "sending recruits to be taught",
+      "investing in better hosting quality",
+      "standardized instruction across locations",
+      "the learning program for staff",
+      "hiring wave that needed schooling",
+      "outside instructors for our people",
+      "the credential everyone now needs",
+      "upskilling after guest feedback",
+      "getting rookies ready",
+      "a one-off round of coaching",
+      "the tuition we paid for the new crop"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Franchise Royalties and Fees",
+   "aliases": [
+    "royalties",
+    "franchise fees",
+    "brand fees",
+    "royalty expense",
+    "franchisor charges"
+   ],
+   "narrative": [
+    "Royalties",
+    "Franchise fees",
+    "Brand fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Puzzle Vault Brands Corp",
+     "base": 22000,
+     "memo": "Royalty - percent of gross revenue"
+    },
+    {
+     "vendor": "Vault Collective Marketing Fund",
+     "base": 7500,
+     "memo": "Brand fund contribution"
+    }
+   ],
+   "events": [
+    {
+     "key": "audit",
+     "vendor": "Puzzle Vault Brands Corp",
+     "memos": [
+      "Royalty true-up - prior period audit adj INV 8800",
+      "Royalty true-up - late reporting penalty INV 8801"
+     ],
+     "cross_memo": "Royalty true-up - CPA response fees",
+     "plain": [
+      "the royalty true-up",
+      "the royalty true-up adjustment",
+      "the royalty true-up charge"
+     ],
+     "oblique": [
+      "what the franchisor claimed we owed",
+      "a catch-up bill for older sales",
+      "the correction after a review",
+      "penalty for reporting late",
+      "underpaid amounts from last year",
+      "the franchisor's examination findings",
+      "a retroactive charge",
+      "settling a disagreement over revenue",
+      "what the home office found in our numbers",
+      "a nasty surprise from corporate",
+      "money owed for earlier quarters",
+      "the fix after discovering a miscalculation",
+      "backdated assessment",
+      "an expense we hadn't accrued",
+      "a penalty nobody budgeted",
+      "the result of the head office's review"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "rebrand",
+     "vendor": "Lumenform Design Group",
+     "memos": [
+      "Brand refresh compliance - signage package PO 7240",
+      "Brand refresh compliance - lobby wrap install PO 7241"
+     ],
+     "cross_memo": "Brand refresh compliance - uniform reprint",
+     "plain": [
+      "the brand refresh compliance",
+      "the brand refresh signage",
+      "the brand refresh package"
+     ],
+     "oblique": [
+      "mandated new look from corporate",
+      "updating our storefront to the new style",
+      "the logo change everyone had to adopt",
+      "new visual identity rollout",
+      "forced cosmetic upgrade",
+      "matching the parent company's latest image",
+      "exterior changes required by contract",
+      "the design standards memo",
+      "reprinting everything with the fresh emblem",
+      "a deadline set by the franchisor",
+      "the new corporate palette",
+      "redoing the entrance",
+      "image overhaul across all sites",
+      "aligning with head office aesthetics",
+      "replacing outdated lettering",
+      "compliance with the new style guide"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Guest Experience Supplies",
+   "aliases": [
+    "guest supplies",
+    "experience consumables",
+    "photo and souvenir costs",
+    "guest extras",
+    "experience supplies"
+   ],
+   "narrative": [
+    "Guest supplies",
+    "Guest extras",
+    "Experience supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Snapshot Prints Direct",
+     "base": 2400,
+     "memo": "Team photo printing - monthly"
+    },
+    {
+     "vendor": "Keepsake Novelty Wholesale",
+     "base": 1800,
+     "memo": "Souvenir stock - standard reorder"
+    }
+   ],
+   "events": [
+    {
+     "key": "birthday",
+     "vendor": "Snapshot Prints Direct",
+     "memos": [
+      "Party package relaunch - custom banners PO 3305",
+      "Party package relaunch - balloon arches PO 3306"
+     ],
+     "cross_memo": "Party package relaunch - social ad spend",
+     "plain": [
+      "the party package relaunch",
+      "the party package banners",
+      "the party package decor"
+     ],
+     "oblique": [
+      "pushing celebrations for kids",
+      "decorations for group events",
+      "the push to win more private bookings",
+      "festive trimmings",
+      "an initiative to fill weekday afternoons",
+      "dressing up the waiting area for events",
+      "the campaign for youth gatherings",
+      "extras for children's get-togethers",
+      "themed decor we bought in bulk",
+      "the offering sales wanted to promote",
+      "streamers and signs for special bookings",
+      "celebration-focused promotion",
+      "a new product line for families",
+      "supplies for the new event tier",
+      "what we spent to attract larger groups",
+      "the festive revamp"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "hints",
+     "vendor": "Clueline Devices Ltd",
+     "memos": [
+      "Wearable hint band rollout - 400 units PO 3411",
+      "Wearable hint band rollout - charging docks PO 3412"
+     ],
+     "cross_memo": "Wearable hint band rollout - staff demo day",
+     "plain": [
+      "the wearable hint band rollout",
+      "the wearable hint band units",
+      "the wearable hint band order"
+     ],
+     "oblique": [
+      "gadgets players put on their wrists",
+      "new guest-facing technology",
+      "replacing the walkie-talkie system",
+      "devices that deliver nudges silently",
+      "the electronics every team now carries",
+      "a bulk hardware purchase for players",
+      "our answer to complaints about hints",
+      "equipment we hand out at check-in",
+      "a tech purchase aimed at satisfaction scores",
+      "battery-powered accessories for groups",
+      "the handout gadgets",
+      "what replaced the old call buttons",
+      "the large device order",
+      "docking stations for the fleet of gadgets",
+      "a pilot that turned into a full purchase",
+      "items guests wear during play"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Facility Safety and Compliance",
+   "aliases": [
+    "safety spend",
+    "compliance costs",
+    "fire safety",
+    "safety and compliance",
+    "code compliance"
+   ],
+   "narrative": [
+    "Safety spend",
+    "Compliance costs",
+    "Fire safety"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ember Guard Fire Systems",
+     "base": 3800,
+     "memo": "Alarm monitoring - monthly"
+    },
+    {
+     "vendor": "Clearpath Inspection Services",
+     "base": 1900,
+     "memo": "Quarterly inspection accrual"
+    }
+   ],
+   "events": [
+    {
+     "key": "egress",
+     "vendor": "Ember Guard Fire Systems",
+     "memos": [
+      "Emergency egress retrofit - exit signs WO 5120",
+      "Emergency egress retrofit - panic release hardware WO 5121"
+     ],
+     "cross_memo": "Emergency egress retrofit - permit expediting",
+     "plain": [
+      "the emergency egress retrofit",
+      "the emergency egress hardware",
+      "the emergency egress work"
+     ],
+     "oblique": [
+      "making sure guests can leave quickly",
+      "what the fire marshal required",
+      "a citation we had to clear",
+      "new rules about leaving the rooms",
+      "remediation after a walkthrough by the city",
+      "modifications so every room releases",
+      "the life-safety upgrade",
+      "something regulators insisted on",
+      "altering the doors so people get out",
+      "the order from the authorities",
+      "work to pass reinspection",
+      "retrofitting older locations",
+      "what the insurer demanded",
+      "ensuring escape from our escape rooms",
+      "upgrades prompted by a near miss",
+      "the code-driven rebuild of exits"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "cameras",
+     "vendor": "Argus Eye Monitoring",
+     "memos": [
+      "Room camera system upgrade - 24 cameras PO 2290",
+      "Room camera system upgrade - storage appliance PO 2291"
+     ],
+     "cross_memo": "Room camera system upgrade - cabling crew",
+     "plain": [
+      "the room camera system upgrade",
+      "the room camera installation",
+      "the room camera storage"
+     ],
+     "oblique": [
+      "watching players more closely",
+      "new video surveillance",
+      "footage we keep for disputes",
+      "monitoring equipment across all game spaces",
+      "replacing blurry recording gear",
+      "the response to a liability claim",
+      "visual oversight for game masters",
+      "lenses mounted in every room",
+      "installing eyes on the action",
+      "a security investment",
+      "electronics that stream to the control desk",
+      "recording hardware refresh",
+      "gear that lets staff see from the booth",
+      "the upgrade insurance recommended",
+      "a purchase tied to guest safety",
+      "storage for what the lenses capture"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Local Marketing and Promotions",
+   "aliases": [
+    "local marketing",
+    "promo spend",
+    "advertising",
+    "guest acquisition",
+    "marketing and promos"
+   ],
+   "narrative": [
+    "Local marketing",
+    "Promo spend",
+    "Guest acquisition"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinpoint Local Ads",
+     "base": 6800,
+     "memo": "Search and map ads - monthly"
+    },
+    {
+     "vendor": "Chirp Social Agency",
+     "base": 3500,
+     "memo": "Social media retainer"
+    },
+    {
+     "vendor": "Crowdpulse Review Management",
+     "base": 1200,
+     "memo": "Review platform subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "influencer",
+     "vendor": "Chirp Social Agency",
+     "memos": [
+      "Streamer takeover weekend - creator fees INV 6610",
+      "Streamer takeover weekend - sponsored posts INV 6611"
+     ],
+     "cross_memo": "Streamer takeover weekend - booth giveaways",
+     "plain": [
+      "the streamer takeover weekend",
+      "the streamer takeover fees",
+      "the streamer takeover posts"
+     ],
+     "oblique": [
+      "paying online personalities to visit",
+      "a splash with internet celebrities",
+      "content creators playing our games",
+      "the viral attempt",
+      "a short burst of paid exposure",
+      "sponsorships with people who have followers",
+      "reaching younger audiences",
+      "the buzz we tried to buy",
+      "a weekend of broadcast play-throughs",
+      "outsiders filming our rooms",
+      "the big awareness play",
+      "a gamble on online fame",
+      "what we paid people with large audiences",
+      "a stunt aimed at going viral",
+      "an experiment in digital celebrity",
+      "fees to personalities for exposure"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "transit",
+     "vendor": "Metroline Outdoor Media",
+     "memos": [
+      "Bus shelter campaign - 40 panels PO 8803",
+      "Bus shelter campaign - printing and install PO 8804"
+     ],
+     "cross_memo": "Bus shelter campaign - creative design fee",
+     "plain": [
+      "the bus shelter campaign",
+      "the bus shelter panels",
+      "the bus shelter placements"
+     ],
+     "oblique": [
+      "posters along city streets",
+      "advertising where commuters wait",
+      "outdoor ads in the metro area",
+      "a physical presence around town",
+      "billboard-style exposure",
+      "buying space on public property",
+      "our traditional awareness push",
+      "visuals seen from the sidewalk",
+      "the out-of-home buy",
+      "spending to be noticed by passersby",
+      "the high-visibility push in the winter lull",
+      "street-level promotion",
+      "display ads in the neighborhood",
+      "poster runs for the new season",
+      "paid placements near transit stops",
+      "the offline campaign leadership wanted"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

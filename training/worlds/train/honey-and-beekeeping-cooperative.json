@@ -1,0 +1,708 @@
+{
+ "slug": "honey-and-beekeeping-cooperative",
+ "industry": "honey and beekeeping cooperative",
+ "entities": [
+  "Goldencomb Growers Cooperative",
+  "Clover Ridge Apiaries Co-op",
+  "Amberfield Honey Collective",
+  "Meadowhive Producers Alliance",
+  "Sunbarrow Beekeepers Cooperative"
+ ],
+ "accounts": [
+  {
+   "name": "Hive Stock & Queen Replacement",
+   "aliases": [
+    "queens",
+    "queen purchases",
+    "colony stock",
+    "hive stock spend",
+    "bee replacement"
+   ],
+   "narrative": [
+    "Queen purchases",
+    "Colony stock",
+    "Bee replacement"
+   ],
+   "recurring": [
+    {
+     "vendor": "Larkspur Queen Rearing",
+     "base": 9200,
+     "memo": "Mated queens monthly standing order"
+    },
+    {
+     "vendor": "Pinewood Nucleus Colonies",
+     "base": 14500,
+     "memo": "Nuc colonies PO 4471 monthly allotment"
+    }
+   ],
+   "events": [
+    {
+     "key": "wintercull",
+     "vendor": "Pinewood Nucleus Colonies",
+     "memos": [
+      "Pinewood Nucleus Colonies — frost loss restock PO 5120",
+      "Pinewood Nucleus Colonies — frost loss restock WO 5121"
+     ],
+     "cross_memo": "Frost loss restock — insulated transport crates",
+     "plain": [
+      "the frost loss restock",
+      "frost loss restock costs",
+      "the restock after frost loss"
+     ],
+     "oblique": [
+      "replacing hives that did not survive the cold snap",
+      "the rebuilding of dead apiaries",
+      "what we paid to refill empty boxes after the freeze",
+      "winter casualties",
+      "getting the yards back to full strength",
+      "the colony rebuild after a harsh January",
+      "new bees to fill the gaps",
+      "the freeze aftermath at the outlying yards",
+      "topping up yards that came through poorly",
+      "replenishment after the cold killed off colonies",
+      "bringing stock levels back to plan",
+      "the emergency repopulation effort",
+      "what the hard winter cost us in bees",
+      "refilling the northern sites",
+      "covering the heavy overwintering losses",
+      "the recovery purchase for depleted yards"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "africanized",
+     "vendor": "Redhollow Breeder Services",
+     "memos": [
+      "Redhollow Breeder Services — Varroa-tolerant stock trial PO 5207",
+      "Redhollow Breeder Services — Varroa-tolerant stock trial genetics fee"
+     ],
+     "cross_memo": "Varroa-tolerant stock trial — lab screening",
+     "plain": [
+      "the Varroa-tolerant stock trial",
+      "Varroa-tolerant stock trial costs",
+      "the Varroa-tolerant trial"
+     ],
+     "oblique": [
+      "the pilot for hardier genetics",
+      "an experiment with a new bloodline",
+      "the board-approved breeding experiment",
+      "testing bees that resist mites on their own",
+      "the research colonies at the north farm",
+      "a small genetics project",
+      "the investment in better lineages",
+      "the trial lines we agreed to evaluate",
+      "a long-term bet on healthier colonies",
+      "paying for sample colonies from outside breeders",
+      "the line-comparison study",
+      "the new strain evaluation",
+      "our attempt to cut treatment needs",
+      "the experimental yards",
+      "what the breeding program asked for",
+      "the side-by-side performance study"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Extraction & Bottling Supplies",
+   "aliases": [
+    "jars",
+    "bottling supplies",
+    "packaging materials",
+    "extraction supplies",
+    "containers and lids"
+   ],
+   "narrative": [
+    "Bottling supplies",
+    "Packaging materials",
+    "Containers and lids"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightglass Container Supply",
+     "base": 11800,
+     "memo": "Glass jars 12oz monthly release"
+    },
+    {
+     "vendor": "Capwell Closures",
+     "base": 3400,
+     "memo": "Lids and tamper seals blanket PO"
+    },
+    {
+     "vendor": "Stickyfinger Label Works",
+     "base": 2900,
+     "memo": "Honey labels standard run"
+    }
+   ],
+   "events": [
+    {
+     "key": "relabel",
+     "vendor": "Stickyfinger Label Works",
+     "memos": [
+      "Stickyfinger Label Works — organic seal reprint PO 6032",
+      "Stickyfinger Label Works — organic seal reprint rush fee"
+     ],
+     "cross_memo": "Organic seal reprint — pallet re-wrap",
+     "plain": [
+      "the organic seal reprint",
+      "organic seal reprint costs",
+      "the reprint of the organic seal"
+     ],
+     "oblique": [
+      "redoing the packaging after the certifier flagged it",
+      "new artwork that regulators wanted",
+      "scrapping printed stock that failed review",
+      "the compliance redo of our shelf goods",
+      "fixing what the inspector objected to",
+      "a rush order to replace rejected printing",
+      "pulling product to correct the markings",
+      "the audit finding on our retail goods",
+      "replacing printed material we could no longer ship",
+      "what the certifying body made us redo",
+      "last-minute reprinting for a retail deadline",
+      "a correction to what customers see on shelves",
+      "the do-over on package graphics",
+      "redoing the front of the jar",
+      "the paperwork-driven fix for finished stock",
+      "replacing outdated panels on finished goods"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "squeeze",
+     "vendor": "Tallowmere Pouch Packaging",
+     "memos": [
+      "Tallowmere Pouch Packaging — squeeze pouch launch PO 6118",
+      "Tallowmere Pouch Packaging — squeeze pouch launch tooling"
+     ],
+     "cross_memo": "Squeeze pouch launch — filling line adapter",
+     "plain": [
+      "the squeeze pouch launch",
+      "squeeze pouch launch costs",
+      "the pouch launch"
+     ],
+     "oblique": [
+      "a new retail format for the spring season",
+      "the soft-sided product line debut",
+      "what we spent introducing a lighter offering",
+      "the kid-friendly format rollout",
+      "an additional shelf option for grocers",
+      "the new consumer line we promised a chain",
+      "tooling for a different way to sell honey",
+      "the format our largest buyer asked for",
+      "the extension of the product family",
+      "getting ready for the first shipment of the new item",
+      "a bet on convenience shoppers",
+      "the product diversification push",
+      "the new package shape",
+      "the first run of an untested style",
+      "what it took to offer something besides jars",
+      "the pilot item for supermarkets"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Apiary Equipment & Hive Maintenance",
+   "aliases": [
+    "hive equipment",
+    "apiary equipment",
+    "woodenware",
+    "hive maintenance",
+    "equipment repairs"
+   ],
+   "narrative": [
+    "Hive equipment",
+    "Woodenware",
+    "Hive maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Dovetail Woodenware Co",
+     "base": 7600,
+     "memo": "Supers and frames monthly"
+    },
+    {
+     "vendor": "Smokestack Tools & Supply",
+     "base": 2100,
+     "memo": "Smokers and hive tools replenishment"
+    }
+   ],
+   "events": [
+    {
+     "key": "extractorline",
+     "vendor": "Smokestack Tools & Supply",
+     "memos": [
+      "Smokestack Tools & Supply — centrifuge rebuild WO 7710",
+      "Smokestack Tools & Supply — centrifuge rebuild bearings"
+     ],
+     "cross_memo": "Centrifuge rebuild — contract machinist",
+     "plain": [
+      "the centrifuge rebuild",
+      "centrifuge rebuild costs",
+      "the rebuild of the centrifuge"
+     ],
+     "oblique": [
+      "getting the spinning machine running again after it seized",
+      "the repair of the main honey-pulling gear",
+      "keeping the plant from shutting down mid-harvest",
+      "what we paid to revive aging machinery",
+      "an overhaul that could not wait",
+      "fixing the heart of the processing room",
+      "the breakdown during peak flow",
+      "restoring capacity after a mechanical failure",
+      "parts and labor on the oldest machine we own",
+      "the work that kept the crews from sitting idle",
+      "the emergency fix before the big flow",
+      "bringing the workhorse equipment back",
+      "what it cost to stop the shaking and grinding",
+      "a major repair on the production floor",
+      "the failed machine we had to resurrect",
+      "returning our key equipment to service"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "hivetool",
+     "vendor": "Foxglove Fabrication",
+     "memos": [
+      "Foxglove Fabrication — pallet jack hive loader PO 7755",
+      "Foxglove Fabrication — pallet jack hive loader install"
+     ],
+     "cross_memo": "Pallet jack hive loader — safety training",
+     "plain": [
+      "the pallet jack hive loader",
+      "pallet jack hive loader costs",
+      "the hive loader purchase"
+     ],
+     "oblique": [
+      "a lifting aid so workers stop straining their backs",
+      "equipment to move heavy boxes onto trucks",
+      "the injury-prevention purchase",
+      "what insurance recommended we buy",
+      "a mechanical helper for loading",
+      "the ergonomics improvement for field crews",
+      "the machine that replaces manual hoisting",
+      "a capital item for moving colonies",
+      "the response to the workers comp claims",
+      "a labor-saving machine at the loading dock",
+      "our investment in safer handling",
+      "the thing that lets two people do the work of four",
+      "the lifting solution for migratory moves",
+      "upgrading how we shift boxes",
+      "the new rig for transport days",
+      "the muscle-saving purchase"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Pollination Services & Transport",
+   "aliases": [
+    "pollination",
+    "pollination contracts",
+    "hive trucking",
+    "colony transport",
+    "fleet costs"
+   ],
+   "narrative": [
+    "Pollination",
+    "Colony transport",
+    "Fleet costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Redbarn Livestock Hauling",
+     "base": 18500,
+     "memo": "Hive freight monthly settlement"
+    },
+    {
+     "vendor": "Orchard Alliance Growers",
+     "base": 12400,
+     "memo": "Pollination site fees PO 8003"
+    },
+    {
+     "vendor": "Roadrunner Fuel Card",
+     "base": 6700,
+     "memo": "Fuel card statement"
+    }
+   ],
+   "events": [
+    {
+     "key": "almondrush",
+     "vendor": "Redbarn Livestock Hauling",
+     "memos": [
+      "Redbarn Livestock Hauling — almond bloom surge PO 8211",
+      "Redbarn Livestock Hauling — almond bloom surge extra loads"
+     ],
+     "cross_memo": "Almond bloom surge — night netting crew",
+     "plain": [
+      "the almond bloom surge",
+      "almond bloom surge costs",
+      "the surge for almond bloom"
+     ],
+     "oblique": [
+      "the early-season rush to California",
+      "moving every available colony west in a hurry",
+      "the biggest contract of the year kicking in",
+      "a tight window for placing boxes in orchards",
+      "the most demanding stretch of our calendar",
+      "extra trips to meet the grower deadline",
+      "the cross-country migration push",
+      "getting thousands of hives into position at once",
+      "the late-winter orchard commitment",
+      "delivering on a big grower agreement",
+      "the spike in trucking when the trees flower",
+      "the annual westward haul",
+      "what the early bloom demanded of the fleet",
+      "the logistics crunch before the blossoms opened",
+      "staging colonies near the groves",
+      "the short and expensive orchard window"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "quarantine",
+     "vendor": "Ironbridge Inspection Services",
+     "memos": [
+      "Ironbridge Inspection Services — beetle hold order PO 8290",
+      "Ironbridge Inspection Services — beetle hold order inspector fees"
+     ],
+     "cross_memo": "Beetle hold order — holding yard lease",
+     "plain": [
+      "the beetle hold order",
+      "beetle hold order costs",
+      "the hold order for beetles"
+     ],
+     "oblique": [
+      "a state agency stopping our shipments at the border",
+      "the pest scare that froze our moves",
+      "regulators keeping loads parked for days",
+      "the mandated wait before entering another state",
+      "an official delay that idled trucks and drivers",
+      "extra inspections that someone required of us",
+      "the detention of colonies pending clearance",
+      "a government-imposed standstill",
+      "what the agriculture department demanded",
+      "the crackdown on outside hives",
+      "being forced to park boxes in a lot",
+      "the interruption to scheduled deliveries",
+      "the paperwork and waiting from authorities",
+      "an enforced pause on interstate movement",
+      "the compliance hurdle at a crossing",
+      "the stalled convoy"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Bee Health & Treatments",
+   "aliases": [
+    "mite treatments",
+    "bee health",
+    "colony treatments",
+    "disease control",
+    "health supplies"
+   ],
+   "narrative": [
+    "Mite treatments",
+    "Bee health",
+    "Disease control"
+   ],
+   "recurring": [
+    {
+     "vendor": "Vitality Apiary Supply",
+     "base": 8800,
+     "memo": "Oxalic strips and acids monthly"
+    },
+    {
+     "vendor": "Syrup Source Feed Co",
+     "base": 10300,
+     "memo": "Sugar syrup and pollen patties"
+    }
+   ],
+   "events": [
+    {
+     "key": "foulbrood",
+     "vendor": "Vitality Apiary Supply",
+     "memos": [
+      "Vitality Apiary Supply — foulbrood outbreak antibiotics PO 9012",
+      "Vitality Apiary Supply — foulbrood outbreak extra dosing"
+     ],
+     "cross_memo": "Foulbrood outbreak — equipment irradiation",
+     "plain": [
+      "the foulbrood outbreak",
+      "foulbrood outbreak costs",
+      "the outbreak of foulbrood"
+     ],
+     "oblique": [
+      "a contagion tearing through several yards",
+      "the bacterial scare among our colonies",
+      "medicine for sick larvae across sites",
+      "a sudden spread that demanded fast action",
+      "the herd-health emergency",
+      "what we spent containing an infection",
+      "burning and treating affected boxes",
+      "the disease flare-up in late summer",
+      "the inspector-confirmed infestation",
+      "fighting off a deadly infection",
+      "the unplanned battle against illness",
+      "the wave of sickness at the west yards",
+      "protecting healthy apiaries from a spreading threat",
+      "the urgent medicated response",
+      "cleaning up after an epidemic",
+      "the costly sanitation effort"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "drought",
+     "vendor": "Hollowbrook Nutrition Labs",
+     "memos": [
+      "Hollowbrook Nutrition Labs — dearth feeding program PO 9144",
+      "Hollowbrook Nutrition Labs — dearth feeding program protein blend"
+     ],
+     "cross_memo": "Dearth feeding program — extra feeder pails",
+     "plain": [
+      "the dearth feeding program",
+      "dearth feeding program costs",
+      "the feeding program for the dearth"
+     ],
+     "oblique": [
+      "keeping bees alive when no flowers were blooming",
+      "supplemental food during the dry spell",
+      "the parched summer's demand on our stores",
+      "what the weather forced us to hand out",
+      "nourishing hungry colonies through a lean stretch",
+      "the scarcity of natural forage",
+      "paying to substitute for missing nectar",
+      "the rainfall shortfall's price tag",
+      "sustenance we had to supply ourselves",
+      "the lean-season rescue",
+      "covering for fields that produced nothing",
+      "the extra rations through the scorching weeks",
+      "the cost of a poor flowering year",
+      "feeding what nature failed to provide",
+      "the weeks when yards had nothing to forage",
+      "the hot dry stretch's toll"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Cooperative Member Services",
+   "aliases": [
+    "member payouts",
+    "member services",
+    "grower support",
+    "member relations",
+    "patronage costs"
+   ],
+   "narrative": [
+    "Member payouts",
+    "Grower support",
+    "Member relations"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hivemind Accounting Partners",
+     "base": 4800,
+     "memo": "Member statement processing monthly"
+    },
+    {
+     "vendor": "Ledgerleaf Payments",
+     "base": 2600,
+     "memo": "ACH member advance fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "summit",
+     "vendor": "Hivemind Accounting Partners",
+     "memos": [
+      "Hivemind Accounting Partners — regional beekeeper summit PO 3301",
+      "Hivemind Accounting Partners — regional beekeeper summit logistics"
+     ],
+     "cross_memo": "Regional beekeeper summit — venue deposit",
+     "plain": [
+      "the regional beekeeper summit",
+      "regional beekeeper summit costs",
+      "the beekeeper summit"
+     ],
+     "oblique": [
+      "the annual gathering of growers",
+      "hosting our members for a two-day meeting",
+      "the event where producers swap ideas",
+      "bringing everyone together in person",
+      "what the membership convention cost",
+      "the get-together that the board sponsors",
+      "the educational conference for our people",
+      "meals and rooms for attendees",
+      "the yearly assembly in the valley",
+      "hospitality for the whole network",
+      "the industry meetup we organize",
+      "the community event on the calendar",
+      "a gathering with speakers and workshops",
+      "the big annual meeting",
+      "what we pay to host the faithful",
+      "welcoming growers from neighboring states"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "audit",
+     "vendor": "Stonebridge Cooperative Counsel",
+     "memos": [
+      "Stonebridge Cooperative Counsel — bylaw restatement PO 3388",
+      "Stonebridge Cooperative Counsel — bylaw restatement filing"
+     ],
+     "cross_memo": "Bylaw restatement — member ballot mailing",
+     "plain": [
+      "the bylaw restatement",
+      "bylaw restatement costs",
+      "the restatement of the bylaws"
+     ],
+     "oblique": [
+      "lawyers rewriting our governing rules",
+      "the governance overhaul the board approved",
+      "modernizing the founding documents",
+      "a legal cleanup that members voted on",
+      "the formal changes to how the group is run",
+      "attorney time spent on constitutional language",
+      "what it cost to update the rulebook",
+      "the charter revision",
+      "redrafting the foundational paperwork",
+      "a once-a-decade legal tune-up",
+      "the counsel work behind a member vote",
+      "fixing outdated governance provisions",
+      "the state filing for our new rules",
+      "the professional fees for revised statutes",
+      "changes to voting and membership terms",
+      "the legal housekeeping nobody enjoys"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Honey House & Storage Facilities",
+   "aliases": [
+    "honey house",
+    "warehouse costs",
+    "storage and cold room",
+    "facility utilities",
+    "plant overhead"
+   ],
+   "narrative": [
+    "Honey house",
+    "Warehouse costs",
+    "Facility utilities"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cascade Power & Light",
+     "base": 9400,
+     "memo": "Electric service honey house meter"
+    },
+    {
+     "vendor": "Evergreen Property Holdings",
+     "base": 15800,
+     "memo": "Warehouse lease monthly"
+    },
+    {
+     "vendor": "Clearstream Water District",
+     "base": 1900,
+     "memo": "Water and sewer"
+    }
+   ],
+   "events": [
+    {
+     "key": "roofleak",
+     "vendor": "Cascade Power & Light",
+     "memos": [
+      "Cascade Power & Light — transformer replacement WO 2204",
+      "Cascade Power & Light — transformer replacement crane hire"
+     ],
+     "cross_memo": "Transformer replacement — temporary generator rental",
+     "plain": [
+      "the transformer replacement",
+      "transformer replacement costs",
+      "the replacement of the transformer"
+     ],
+     "oblique": [
+      "a blown power unit at the plant",
+      "the outage that shut the line down",
+      "new electrical gear after the surge",
+      "getting current flowing back into the building",
+      "the utility's mandated upgrade",
+      "what the lightning strike left us with",
+      "restoring service to the processing floor",
+      "a failure at the pole outside",
+      "hardware for stepping down voltage",
+      "the electrical emergency in July",
+      "the box that burned out and had to be swapped",
+      "bringing the lights and motors back",
+      "heavy equipment lifted onto the pad",
+      "the blackout fix",
+      "the supply-side repair we could not defer",
+      "power infrastructure at the site"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "coldroom",
+     "vendor": "Glacier Mechanical Contractors",
+     "memos": [
+      "Glacier Mechanical Contractors — dehumidifier retrofit WO 2290",
+      "Glacier Mechanical Contractors — dehumidifier retrofit ductwork"
+     ],
+     "cross_memo": "Dehumidifier retrofit — moisture sensors",
+     "plain": [
+      "the dehumidifier retrofit",
+      "dehumidifier retrofit costs",
+      "the retrofit of the dehumidifier"
+     ],
+     "oblique": [
+      "drying out the room where honey rests",
+      "controlling the damp in the drum area",
+      "a fix for product fermenting in storage",
+      "making the air in the building drier",
+      "what we paid to protect stock from spoilage",
+      "the climate-control upgrade for barrels",
+      "moisture problems that caused a quality claim",
+      "the humid summer's lesson",
+      "equipment pulling water from the air",
+      "keeping product within a safe water content",
+      "the lost batch that prompted a change",
+      "an environmental improvement at the plant",
+      "what the quality manager insisted upon",
+      "preventing a repeat of the wet-honey problem",
+      "the damp-air solution in the back room",
+      "changes to how the storage area breathes"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

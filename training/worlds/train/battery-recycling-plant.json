@@ -1,0 +1,830 @@
+{
+ "slug": "battery-recycling-plant",
+ "industry": "battery recycling plant",
+ "entities": [
+  "Voltloop Materials Recovery",
+  "Ampere Reclaim Partners",
+  "Ferrocell Recycling Corp",
+  "Greenstack Battery Renewal",
+  "Kilowatt Salvage Industries"
+ ],
+ "accounts": [
+  {
+   "name": "Furnace and Smelting Operations",
+   "aliases": [
+    "furnace",
+    "furnace costs",
+    "smelting",
+    "smelter spend",
+    "pyro line"
+   ],
+   "narrative": [
+    "Furnace costs",
+    "Smelter spend",
+    "Pyro line"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hearthline Industrial Gas",
+     "base": 18500,
+     "memo": "Inv oxygen and nitrogen supply - Mnt cycle"
+    },
+    {
+     "vendor": "Corbel Thermal Services",
+     "base": 9200,
+     "memo": "Svc burner tuning and thermocouple checks"
+    },
+    {
+     "vendor": "Pyrovane Flux Supply",
+     "base": 6400,
+     "memo": "Inv flux and slag conditioner"
+    }
+   ],
+   "events": [
+    {
+     "key": "refractory",
+     "vendor": "Corbel Thermal Services",
+     "memos": [
+      "Refractory relining - brick crew labor",
+      "Refractory relining - castable material Inv"
+     ],
+     "cross_memo": "Refractory relining - crane rental for shell lift",
+     "plain": [
+      "the refractory relining",
+      "the refractory relining work",
+      "the relining project"
+     ],
+     "oblique": [
+      "rebuilding the heat-proof lining inside the main vessel",
+      "the vessel rebuild after the lining wore thin",
+      "getting the big melter back after its scheduled teardown",
+      "the interior rebuild",
+      "a full redo of what protects the steel shell",
+      "the furnace shutdown for inner repairs",
+      "work done while the unit sat cold",
+      "replacing the worn protective layer",
+      "the extended outage on the primary melter",
+      "masons and crane crews on the main vessel",
+      "reconstruction of the inner surface",
+      "the overdue interior renovation",
+      "what the maintenance planners scheduled for the cold stop",
+      "restoring the vessel so it can hold molten charge",
+      "the teardown and rebuild of the heat shield",
+      "the planned outage for the main melter"
+     ],
+     "low": 22000,
+     "high": 44000
+    },
+    {
+     "key": "scrubber",
+     "vendor": "Aerowell Emissions Engineering",
+     "memos": [
+      "Baghouse retrofit - filter media Inv",
+      "Baghouse retrofit - ductwork modification Svc"
+     ],
+     "cross_memo": "Baghouse retrofit - permit amendment filing fee",
+     "plain": [
+      "the baghouse retrofit",
+      "the baghouse retrofit project",
+      "the baghouse retrofit invoices"
+     ],
+     "oblique": [
+      "cleaning up what leaves the stack",
+      "the regulator-driven upgrade to exhaust treatment",
+      "new equipment to catch fine dust before release",
+      "work prompted by the air quality inspector",
+      "the pollution control upgrade",
+      "tightening what we emit to the atmosphere",
+      "a fix for the exceedance notice we received",
+      "the outside engineers brought in for exhaust",
+      "compliance work on the smokestack side",
+      "capturing particulates from the melt line",
+      "the environmental agency's request",
+      "making the emissions numbers pass again",
+      "upgrading how we treat furnace off-gas",
+      "the cleaner-air installation",
+      "new filtering gear for the exit gases",
+      "the engineering firm hired after the notice"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Hydrometallurgy Reagents",
+   "aliases": [
+    "reagents",
+    "reagent costs",
+    "leach chemicals",
+    "wet chemistry",
+    "hydromet spend"
+   ],
+   "narrative": [
+    "Reagent costs",
+    "Wet chemistry",
+    "Hydromet spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Brightfield Chemical Supply",
+     "base": 24000,
+     "memo": "Inv sulfuric acid bulk delivery"
+    },
+    {
+     "vendor": "Nordal Process Chemicals",
+     "base": 11500,
+     "memo": "Inv sodium hydroxide and peroxide"
+    },
+    {
+     "vendor": "Clearbrook Filter Aids",
+     "base": 3800,
+     "memo": "Svc filter cake aids Qtr order"
+    }
+   ],
+   "events": [
+    {
+     "key": "cobaltspike",
+     "vendor": "Brightfield Chemical Supply",
+     "memos": [
+      "Emergency lithium carbonate precipitant - rush freight",
+      "Emergency lithium carbonate precipitant - expedite fee"
+     ],
+     "cross_memo": "Emergency lithium carbonate precipitant - hazmat courier surcharge",
+     "plain": [
+      "the emergency lithium carbonate precipitant",
+      "the lithium carbonate rush order",
+      "the emergency precipitant buy"
+     ],
+     "oblique": [
+      "a last-minute scramble for material to finish a customer batch",
+      "the shortage that forced premium shipping",
+      "buying fast because the usual stock ran dry",
+      "an unplanned purchase to keep the line moving",
+      "the cost of not waiting for the regular truck",
+      "supply that had to arrive overnight",
+      "paying extra to avoid a stoppage",
+      "what we bought after the tank came up short",
+      "the rushed replenishment",
+      "urgent stock to hit a delivery deadline",
+      "the stockout we had to fix",
+      "ordering outside the normal schedule",
+      "the scramble to avoid idle shifts",
+      "a purchase made under time pressure",
+      "the premium we paid for speed",
+      "material flown in to save a contract"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "solventswitch",
+     "vendor": "Tarnwick Extraction Solutions",
+     "memos": [
+      "Solvent trial - organic extractant pilot lot Inv",
+      "Solvent trial - mixer settler test runs Svc"
+     ],
+     "cross_memo": "Solvent trial - lab assay analysis",
+     "plain": [
+      "the solvent trial",
+      "the organic extractant pilot",
+      "the solvent trial runs"
+     ],
+     "oblique": [
+      "testing a new way to separate the valuable metals",
+      "an experiment aimed at better recovery yields",
+      "the pilot that might replace our current process",
+      "the research run on the processing floor",
+      "trying an alternative to what we use today",
+      "small-scale tests before any commitment",
+      "evaluating a different separation approach",
+      "the outside supplier we are vetting",
+      "work on improving purity of the output",
+      "the side project from the technical group",
+      "a process improvement test campaign",
+      "what the chemists asked to evaluate",
+      "the dry runs with unfamiliar materials",
+      "the investigation into higher recoveries",
+      "the sandbox runs ahead of a possible change",
+      "the trial the engineering lead sponsored"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Battery Feedstock Logistics",
+   "aliases": [
+    "inbound freight",
+    "feedstock freight",
+    "hazmat hauling",
+    "cell transport",
+    "inbound logistics"
+   ],
+   "narrative": [
+    "Inbound freight",
+    "Hazmat hauling",
+    "Inbound logistics"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeway Hazmat Carriers",
+     "base": 29000,
+     "memo": "Inv Class 9 lithium battery loads"
+    },
+    {
+     "vendor": "Transvolt Drum and Pallet",
+     "base": 7600,
+     "memo": "Svc UN-rated packaging and pallets"
+    },
+    {
+     "vendor": "Northgate Rail Drayage",
+     "base": 8800,
+     "memo": "Inv intermodal drayage Mnt"
+    }
+   ],
+   "events": [
+    {
+     "key": "recallpickup",
+     "vendor": "Ridgeway Hazmat Carriers",
+     "memos": [
+      "Scooter pack campaign - swollen cell collection",
+      "Scooter pack campaign - isolation crate handling"
+     ],
+     "cross_memo": "Scooter pack campaign - fire watch standby",
+     "plain": [
+      "the scooter pack campaign",
+      "the scooter pack collection",
+      "the scooter pack campaign loads"
+     ],
+     "oblique": [
+      "a manufacturer's request to retrieve damaged units from retailers",
+      "pickups of units that were swelling in storage",
+      "the safety-driven collection from stores nationwide",
+      "a one-time sweep of risky inventory",
+      "the product withdrawal our client announced",
+      "hauling dangerous returns that had to move fast",
+      "the special handling for deformed packs",
+      "the retrieval effort for defective stock",
+      "what the brand owner asked us to gather up",
+      "an urgent clearing of retail back rooms",
+      "the push to get bad units out of circulation",
+      "an abnormal volume of unstable material",
+      "transport tied to a customer's safety notice",
+      "the extra trucks for compromised inventory",
+      "pickups organized around a fire risk",
+      "the unusual intake from a withdrawal"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "portclose",
+     "vendor": "Seabrook Marine Forwarding",
+     "memos": [
+      "Harbor strike diversion - ocean container reroute",
+      "Harbor strike diversion - transload fee Inv"
+     ],
+     "cross_memo": "Harbor strike diversion - demurrage charge",
+     "plain": [
+      "the harbor strike diversion",
+      "the harbor strike reroute",
+      "the harbor strike diversion costs"
+     ],
+     "oblique": [
+      "labor action at the dock that kept our containers from landing",
+      "sending imported scrap through another gateway",
+      "the stoppage that stranded overseas shipments",
+      "a walkout that disrupted arrivals",
+      "paying to route around a blocked terminal",
+      "delays that forced us onto an alternate route",
+      "boxes that sat idle waiting to be released",
+      "the workers' dispute that upset our schedule",
+      "rerouting inbound loads to a different coast",
+      "a supply chain interruption outside our control",
+      "getting overseas material in despite the blockade",
+      "the penalties for containers stuck at the waterfront",
+      "a slowdown that pushed us to a backup plan",
+      "extra handling to bypass the disruption",
+      "what we paid to keep imports flowing",
+      "the knock-on cost of the dockworkers' action"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Safety and Fire Suppression",
+   "aliases": [
+    "safety",
+    "fire protection",
+    "thermal runaway control",
+    "suppression systems",
+    "fire and safety spend"
+   ],
+   "narrative": [
+    "Fire protection",
+    "Suppression systems",
+    "Fire and safety spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Emberguard Fire Systems",
+     "base": 8400,
+     "memo": "Qtr sprinkler and deluge system Mnt"
+    },
+    {
+     "vendor": "Sentinel Gas Detection",
+     "base": 4200,
+     "memo": "Svc calibration of off-gas sensors"
+    },
+    {
+     "vendor": "Halvorsen Safety Training",
+     "base": 2800,
+     "memo": "Inv monthly operator PPE and drills"
+    }
+   ],
+   "events": [
+    {
+     "key": "sprinklerfail",
+     "vendor": "Emberguard Fire Systems",
+     "memos": [
+      "Deluge valve failure - emergency pump replacement",
+      "Deluge valve failure - impairment fire watch labor"
+     ],
+     "cross_memo": "Deluge valve failure - insurer re-inspection fee",
+     "plain": [
+      "the deluge valve failure",
+      "the deluge valve failure repairs",
+      "the deluge valve failure response"
+     ],
+     "oblique": [
+      "the water system that would not trip during the test",
+      "equipment that failed when the inspector checked it",
+      "getting protection back online after it quit",
+      "the repair prompted by a failed drill",
+      "having people patrol while the system was down",
+      "a breakdown in the thing that is supposed to save us",
+      "the urgent fix to the plant's last line of defense",
+      "the insurance carrier's follow-up visit",
+      "a critical malfunction found on a routine walkthrough",
+      "restoring coverage for the storage bay",
+      "the unplanned replacement of a key mechanical part",
+      "extra staff on guard until it was repaired",
+      "what happened when the test came back red",
+      "the lapse in our protection that we had to close",
+      "the immediate remedy after a failed trial",
+      "the lost-coverage scramble"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "thermalcam",
+     "vendor": "Pyrosense Monitoring Labs",
+     "memos": [
+      "Infrared camera rollout - storage yard thermal imaging Inv",
+      "Infrared camera rollout - network install Svc"
+     ],
+     "cross_memo": "Infrared camera rollout - monitoring software license",
+     "plain": [
+      "the infrared camera rollout",
+      "the infrared camera install",
+      "the infrared camera rollout invoices"
+     ],
+     "oblique": [
+      "watching stockpiles for hot spots before anything ignites",
+      "early warning gear for the outdoor piles",
+      "the insurer's condition for renewing our coverage",
+      "new eyes on the material stored outside",
+      "a detection upgrade for stacked inventory",
+      "spotting heat in pallets of damaged units",
+      "the capital-like spend for visual monitoring",
+      "surveillance of the yard after a near miss",
+      "the new vendor brought in by the risk manager",
+      "technology to catch trouble early",
+      "equipment that sees temperature differences at night",
+      "the project that followed the underwriter's survey",
+      "an added layer of watchfulness",
+      "the investment in advance warning",
+      "gear to keep an eye on the piles around the clock",
+      "the response to last year's smoldering incident"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Mechanical Shredding and Sorting",
+   "aliases": [
+    "shredder",
+    "shredding costs",
+    "size reduction",
+    "sorting line",
+    "crusher spend"
+   ],
+   "narrative": [
+    "Shredder costs",
+    "Size reduction",
+    "Sorting line"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granitex Wear Parts",
+     "base": 13500,
+     "memo": "Inv shredder hammers and grates"
+    },
+    {
+     "vendor": "Ironvale Conveyor Service",
+     "base": 6800,
+     "memo": "Svc belt and idler Mnt"
+    },
+    {
+     "vendor": "Magnasort Equipment",
+     "base": 5200,
+     "memo": "Qtr magnet and eddy separator tune-up"
+    }
+   ],
+   "events": [
+    {
+     "key": "rotorrebuild",
+     "vendor": "Granitex Wear Parts",
+     "memos": [
+      "Main rotor replacement - forged shaft Inv",
+      "Main rotor replacement - bearing housing machining"
+     ],
+     "cross_memo": "Main rotor replacement - millwright overtime crew",
+     "plain": [
+      "the main rotor replacement",
+      "the main rotor replacement parts",
+      "the main rotor replacement job"
+     ],
+     "oblique": [
+      "the big spinning heart of the line wearing out",
+      "a drivetrain overhaul that took the line offline",
+      "swapping the heaviest moving assembly",
+      "the long-lead component we had to order",
+      "the breakdown that idled throughput for days",
+      "a catastrophic wear failure",
+      "the component that finally gave out",
+      "parts that were machined to spec off-site",
+      "the crew working through nights on the line",
+      "what the mechanics did during the stoppage",
+      "a major mechanical casualty",
+      "replacement of the part that turns the cutters",
+      "a repair that had been postponed too long",
+      "the machine's central rotating element",
+      "restoring capacity after the breakdown",
+      "work that cost us production hours"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "dustexplosion",
+     "vendor": "Lumen Hazard Consulting",
+     "memos": [
+      "Combustible dust study - NFPA hazard analysis Svc",
+      "Combustible dust study - sampling and lab testing Inv"
+     ],
+     "cross_memo": "Combustible dust study - housekeeping cleanup crew",
+     "plain": [
+      "the combustible dust study",
+      "the combustible dust study fees",
+      "the combustible dust study work"
+     ],
+     "oblique": [
+      "a specialist's review of whether fine powder could ignite",
+      "the engineering opinion on our airborne fines risk",
+      "what the insurer wanted assessed after the incident",
+      "the paper trail for a regulator's inquiry",
+      "consultants evaluating hazards in the processing hall",
+      "an assessment of what settles on beams and ledges",
+      "the formal evaluation of our fire and blast exposure",
+      "an outside firm on site for a few weeks",
+      "the report that will shape our capital plan",
+      "sampling of residue from rafters and ducts",
+      "deep cleaning requested by the reviewers",
+      "an expert investigation into hidden risk",
+      "the follow-up to a small flash event",
+      "the compliance deliverable for the safety committee",
+      "the analytical work on our plant atmosphere",
+      "hired experts reviewing how we handle powder"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Environmental Compliance and Waste Disposal",
+   "aliases": [
+    "environmental",
+    "compliance costs",
+    "waste disposal",
+    "residue disposal",
+    "permits and disposal"
+   ],
+   "narrative": [
+    "Compliance costs",
+    "Waste disposal",
+    "Permits and disposal"
+   ],
+   "recurring": [
+    {
+     "vendor": "Marlow Secure Landfill",
+     "base": 21000,
+     "memo": "Inv slag and filter residue tipping fees"
+    },
+    {
+     "vendor": "Eastbay Wastewater Treatment",
+     "base": 9600,
+     "memo": "Svc effluent treatment and discharge Mnt"
+    },
+    {
+     "vendor": "Veridian Environmental Labs",
+     "base": 4600,
+     "memo": "Qtr stack and groundwater sampling"
+    }
+   ],
+   "events": [
+    {
+     "key": "lagoonclean",
+     "vendor": "Marlow Secure Landfill",
+     "memos": [
+      "Settling pond dredging - sludge haul-off Inv",
+      "Settling pond dredging - dewatering polymer"
+     ],
+     "cross_memo": "Settling pond dredging - excavator and operator rental",
+     "plain": [
+      "the settling pond dredging",
+      "the settling pond dredging hauls",
+      "the settling pond dredging project"
+     ],
+     "oblique": [
+      "clearing out the basin that had been filling for years",
+      "removing accumulated muck from the holding area",
+      "the once-every-few-years cleanout of the lagoon",
+      "heavy equipment working on the wet side of the site",
+      "trucks carrying away semi-solid material",
+      "restoring capacity in the water management system",
+      "the backlog of sediment finally addressed",
+      "a project we put off for several budget cycles",
+      "the excavation crew near the water",
+      "taking out what had settled to the bottom",
+      "maintenance of the basin before it overflowed",
+      "a bulky one-time disposal batch",
+      "the cleanup after the rainy season strained us",
+      "making room in the containment area",
+      "the big haul that the engineers scheduled",
+      "getting the pond back to design depth"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "consentorder",
+     "vendor": "Whitcomb and Reyes Environmental Counsel",
+     "memos": [
+      "Agency notice of violation - legal defense retainer",
+      "Agency notice of violation - settlement negotiation Svc"
+     ],
+     "cross_memo": "Agency notice of violation - civil penalty payment",
+     "plain": [
+      "the agency notice of violation",
+      "the agency notice of violation legal fees",
+      "the agency notice of violation settlement"
+     ],
+     "oblique": [
+      "the regulator's formal complaint about our discharge",
+      "lawyers handling a dispute with the government",
+      "the outcome of a surprise site visit by inspectors",
+      "a fine and the attorneys needed to contest it",
+      "paperwork and talks to resolve an enforcement action",
+      "outside advisors engaged after an unpleasant letter",
+      "the cost of settling with the authorities",
+      "a one-time legal matter tied to past releases",
+      "the penalty we agreed to pay to close the file",
+      "the negotiation over what we owed the state",
+      "a formal accusation of exceeding limits",
+      "counsel on retainer for the investigation",
+      "money paid to put an inspection finding behind us",
+      "the legal response to a reported exceedance",
+      "the price of resolving a public agency's claim",
+      "the dispute our general counsel escalated"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Plant Utilities and Power",
+   "aliases": [
+    "utilities",
+    "power costs",
+    "electricity",
+    "plant energy",
+    "energy spend"
+   ],
+   "narrative": [
+    "Power costs",
+    "Plant energy",
+    "Energy spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-County Electric Cooperative",
+     "base": 30000,
+     "memo": "Inv industrial demand and consumption charges"
+    },
+    {
+     "vendor": "Summit Natural Gas",
+     "base": 14500,
+     "memo": "Inv process heat gas supply"
+    },
+    {
+     "vendor": "Riverbend Water Authority",
+     "base": 3900,
+     "memo": "Mnt service and cooling water usage"
+    }
+   ],
+   "events": [
+    {
+     "key": "demandpeak",
+     "vendor": "Tri-County Electric Cooperative",
+     "memos": [
+      "Coincident peak surcharge - ratchet demand adjustment",
+      "Coincident peak surcharge - true-up Inv"
+     ],
+     "cross_memo": "Coincident peak surcharge - backup generator fuel",
+     "plain": [
+      "the coincident peak surcharge",
+      "the coincident peak surcharge adjustment",
+      "the coincident peak surcharge true-up"
+     ],
+     "oblique": [
+      "a spike in draw during the hottest afternoon of the summer",
+      "being billed at the highest rate for one brief interval",
+      "what happens when every machine starts together",
+      "a utility penalty for hitting a record load",
+      "the grid operator's top usage window",
+      "paying for a short burst of consumption",
+      "a single high-demand reading that sets rates for months",
+      "the day the whole plant ran at once",
+      "the cost of an uncoordinated restart",
+      "being caught using power at the wrong moment",
+      "an annual charge based on our busiest slot",
+      "a rate adjustment tied to a thirty-minute window",
+      "the extra bill after the heat wave",
+      "energy charges that follow one peak event",
+      "the pricing consequence of a rush to catch up",
+      "load management we failed to do"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "solarppa",
+     "vendor": "Brightarc Renewables",
+     "memos": [
+      "Rooftop solar interconnection - utility study Inv",
+      "Rooftop solar interconnection - switchgear upgrade Svc"
+     ],
+     "cross_memo": "Rooftop solar interconnection - engineer stamp and permit",
+     "plain": [
+      "the rooftop solar interconnection",
+      "the rooftop solar interconnection study",
+      "the rooftop solar interconnection upgrade"
+     ],
+     "oblique": [
+      "tying our new green generation into the grid",
+      "a sustainability initiative the board approved",
+      "the paperwork to feed our own electrons into the system",
+      "a power project aimed at lowering future bills",
+      "upfront costs before panels start producing",
+      "an agreement to buy electricity from a new source",
+      "equipment required by the local distributor",
+      "what the sustainability team championed",
+      "the groundwork for cleaner energy sourcing",
+      "preparing the electrical room for a second supply",
+      "studies ordered by the grid operator",
+      "a long-term savings play with near-term expense",
+      "connecting an on-site renewable asset",
+      "the green energy pilot",
+      "hookup work for self-generated power",
+      "the early spending on our decarbonization plan"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Plant Maintenance and Spares",
+   "aliases": [
+    "maintenance",
+    "plant repairs",
+    "spares",
+    "mro",
+    "spare parts spend"
+   ],
+   "narrative": [
+    "Plant repairs",
+    "Spare parts spend",
+    "MRO"
+   ],
+   "recurring": [
+    {
+     "vendor": "Kestrel Industrial Supply",
+     "base": 11800,
+     "memo": "Inv MRO consumables and fasteners"
+    },
+    {
+     "vendor": "Dunmore Pump and Valve",
+     "base": 6700,
+     "memo": "Svc pump seals and valve packing"
+    },
+    {
+     "vendor": "Calloway Millwright Services",
+     "base": 14200,
+     "memo": "Mnt contract labor hours"
+    }
+   ],
+   "events": [
+    {
+     "key": "pumpskid",
+     "vendor": "Dunmore Pump and Valve",
+     "memos": [
+      "Leach circuit pump skid - duplex alloy impeller set",
+      "Leach circuit pump skid - mechanical seal kit Inv"
+     ],
+     "cross_memo": "Leach circuit pump skid - crane and rigging",
+     "plain": [
+      "the leach circuit pump skid",
+      "the leach circuit pump skid parts",
+      "the leach circuit pump skid install"
+     ],
+     "oblique": [
+      "replacing the corroded assemblies that move acidic slurry",
+      "hardware for the wet side that finally pitted through",
+      "a skid-mounted set of fluid movers",
+      "new machinery to push liquids through the tanks",
+      "the corrosion-driven swap on the process floor",
+      "equipment that wore out ahead of schedule",
+      "what was installed after the leaks started",
+      "metal that could not withstand the chemistry",
+      "the bundle of rotating equipment we bought",
+      "hardware lifted into place by a rented hoist",
+      "a major component package for the processing area",
+      "materials that had to be rated for harsh service",
+      "the upgrade to something more durable",
+      "an unplanned buy after repeated seal failures",
+      "machines that keep the tanks circulating",
+      "the corrosion-resistant replacement set"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "turnaround",
+     "vendor": "Bluestone Outage Contractors",
+     "memos": [
+      "Annual shutdown - scaffold erection and tear-down Svc",
+      "Annual shutdown - confined space crew Inv"
+     ],
+     "cross_memo": "Annual shutdown - temporary power and lighting",
+     "plain": [
+      "the annual shutdown",
+      "the annual shutdown crew",
+      "the annual shutdown scaffolding"
+     ],
+     "oblique": [
+      "the scheduled stop when everything gets inspected",
+      "a yearly window for major work across the site",
+      "contractors brought in for the planned pause",
+      "the week when production halts on purpose",
+      "dozens of temporary workers on site",
+      "a once-a-year reset of the whole plant",
+      "the period set aside for heavy upkeep",
+      "outside labor to complete a long task list",
+      "platforms built around tall equipment",
+      "entering vessels for inspection and cleaning",
+      "a planned downtime event for all departments",
+      "the seasonal slowdown used for repairs",
+      "work completed while the lines were off",
+      "the big maintenance window on the calendar",
+      "extra hands hired to compress the outage",
+      "the planned stand-down for preventive care"
+     ],
+     "low": 24000,
+     "high": 48000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

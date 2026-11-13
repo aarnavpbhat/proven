@@ -1,0 +1,805 @@
+{
+ "slug": "cattle-ranch-and-feedlot",
+ "industry": "cattle ranch and feedlot",
+ "entities": [
+  "Prairie Crest Cattle Co.",
+  "Red Mesa Feeders LLC",
+  "Cottonwood Bend Ranch & Feedyard",
+  "Iron Gate Livestock Holdings",
+  "Harlan Ridge Beef Partners"
+ ],
+ "accounts": [
+  {
+   "name": "Feed Grain and Commodities",
+   "aliases": [
+    "feed",
+    "feed costs",
+    "grain spend",
+    "ration commodities",
+    "feed commodities"
+   ],
+   "narrative": [
+    "Feed costs",
+    "Grain spend",
+    "Ration commodities"
+   ],
+   "recurring": [
+    {
+     "vendor": "Plains Grain Elevator Co-op",
+     "base": 28000,
+     "memo": "Inv rolled corn - monthly delivery"
+    },
+    {
+     "vendor": "Sunbelt Protein Supply",
+     "base": 14500,
+     "memo": "Svc protein supplement load"
+    },
+    {
+     "vendor": "Dakota Roughage Traders",
+     "base": 9200,
+     "memo": "Inv alfalfa hay bales"
+    }
+   ],
+   "events": [
+    {
+     "key": "droughtsilage",
+     "vendor": "Plains Grain Elevator Co-op",
+     "memos": [
+      "Emergency silage purchase - drought shortfall",
+      "Silage haul premium - drought shortfall"
+     ],
+     "cross_memo": "Emergency silage purchase - drought trucking",
+     "plain": [
+      "the emergency silage purchase",
+      "the drought shortfall silage",
+      "the emergency silage buy"
+     ],
+     "oblique": [
+      "replacing pasture that dried up in July",
+      "bridging the gap while the fields burned off",
+      "a short crop year forcing outside purchases",
+      "keeping bunks full when local supply failed",
+      "the weather-related forage scramble",
+      "stretching rations through a poor harvest",
+      "covering for fields that never greened up",
+      "extra tonnage bought off-farm",
+      "rain that never arrived",
+      "scrambling for roughage in a bad growing season",
+      "a hurried fix for an empty storage pit",
+      "the dry-year supply hole",
+      "filling bunks from distant sellers",
+      "a crop failure workaround",
+      "the parched-summer fallback",
+      "surprise forage bought at spot prices"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "byproduct",
+     "vendor": "Orrin Distillery Residuals LLC",
+     "memos": [
+      "Wet distillers grain trial - Orrin lot",
+      "Distillers grain trial - freight Orrin"
+     ],
+     "cross_memo": "Wet distillers grain trial - bunker tarps",
+     "plain": [
+      "the wet distillers grain trial",
+      "the distillers grain trial",
+      "the Orrin distillers grain trial"
+     ],
+     "oblique": [
+      "testing a cheaper ethanol leftover in the ration",
+      "an experiment to cut cost per pound of gain",
+      "nutritionist-requested alternative ingredient",
+      "a pilot swapping part of the corn blend",
+      "trying a plant-waste ingredient on two pens",
+      "a ration cost-saving experiment",
+      "the nutrition consultant's pilot",
+      "a side-stream ingredient test",
+      "evaluating a lower-priced energy source",
+      "a small-scale diet reformulation test",
+      "an alternative feedstuff pilot",
+      "a margin-improvement ration test",
+      "the diet tweak proposed by the nutritionist",
+      "an ingredient substitution pilot",
+      "a trial of leftovers from fuel production",
+      "sampling a cheaper blend component"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Veterinary and Animal Health",
+   "aliases": [
+    "vet",
+    "vet costs",
+    "animal health",
+    "health spend",
+    "vet and medicine"
+   ],
+   "narrative": [
+    "Vet costs",
+    "Animal health",
+    "Health spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Blue Sage Veterinary Group",
+     "base": 7800,
+     "memo": "Svc herd health visits"
+    },
+    {
+     "vendor": "Heartland Vaccine Distributors",
+     "base": 6400,
+     "memo": "Inv vaccines and antibiotics"
+    }
+   ],
+   "events": [
+    {
+     "key": "pinkeye",
+     "vendor": "Blue Sage Veterinary Group",
+     "memos": [
+      "Pinkeye outbreak - pen treatment",
+      "Pinkeye outbreak - extra vet callouts"
+     ],
+     "cross_memo": "Pinkeye outbreak - fly control spray",
+     "plain": [
+      "the pinkeye outbreak",
+      "the pinkeye treatment",
+      "the pinkeye callouts"
+     ],
+     "oblique": [
+      "an eye infection spreading through the yearlings",
+      "a contagious condition in the north pens",
+      "sick animals needing daily checks",
+      "unplanned weekend visits from the doctor",
+      "an illness that moved pen to pen",
+      "a herd flare-up in late summer",
+      "treating watery-eyed calves",
+      "the outbreak among young stock",
+      "an infectious problem we had to contain",
+      "emergency attention for affected animals",
+      "a disease scare on the east side",
+      "extra treatment rounds for a sick group",
+      "a spreading ailment in the weaned group",
+      "quarantine and treatment of one lot",
+      "the sudden wave of sick cattle",
+      "an illness that needed repeat care"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "bovinetb",
+     "vendor": "Meridian Diagnostic Labs",
+     "memos": [
+      "Brucellosis surveillance testing - state mandate",
+      "Brucellosis surveillance lab fees - state mandate"
+     ],
+     "cross_memo": "Brucellosis surveillance testing - chute rental",
+     "plain": [
+      "the brucellosis surveillance testing",
+      "the brucellosis lab fees",
+      "the brucellosis state mandate testing"
+     ],
+     "oblique": [
+      "a regulator-required screening of the whole herd",
+      "paperwork and sampling the state insisted on",
+      "compliance checks before shipping animals",
+      "blood draws on every breeding female",
+      "government-ordered herd screening",
+      "proving the herd is clean to authorities",
+      "mandatory sampling ahead of interstate sales",
+      "an official inspection requirement",
+      "lab work demanded by regulators",
+      "clearing the herd for movement permits",
+      "sampling every animal in the corrals",
+      "the one-time compliance screening",
+      "testing required to keep our shipping status",
+      "the agency-ordered health survey",
+      "documentation needed to sell across borders",
+      "state-directed sampling program"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Pasture Lease and Grazing Fees",
+   "aliases": [
+    "pasture",
+    "grazing",
+    "grazing leases",
+    "pasture rent",
+    "range costs"
+   ],
+   "narrative": [
+    "Grazing leases",
+    "Pasture rent",
+    "Range costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Whitaker Family Land Trust",
+     "base": 18500,
+     "memo": "Qtr pasture lease accrual"
+    },
+    {
+     "vendor": "Bureau Range Allotment Fund",
+     "base": 6200,
+     "memo": "Mnt federal grazing permit"
+    }
+   ],
+   "events": [
+    {
+     "key": "leasebump",
+     "vendor": "Whitaker Family Land Trust",
+     "memos": [
+      "Lease escalation - Section 14 acreage add",
+      "Lease escalation - Section 14 survey"
+     ],
+     "cross_memo": "Lease escalation - Section 14 fencing",
+     "plain": [
+      "the Section 14 lease escalation",
+      "the Section 14 acreage add",
+      "the Section 14 lease survey"
+     ],
+     "oblique": [
+      "the landlord's offer of more ground",
+      "extra land taken on for summer",
+      "a bigger footprint on the neighbor's property",
+      "expanding where the herd can roam",
+      "additional turnout space",
+      "a new parcel added to the arrangement",
+      "room for a larger cow-calf group",
+      "the extension of our holdings",
+      "more ground secured before the season",
+      "growth in the territory we use",
+      "a step up in the property we operate",
+      "taking over a bordering parcel",
+      "the boundary expansion",
+      "landowner terms that went up with the added area",
+      "an enlarged summer range",
+      "the extra tract we agreed to take"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "waterrights",
+     "vendor": "Cutbank Irrigation District",
+     "memos": [
+      "Water assessment - ditch company true-up",
+      "Water assessment - ditch company arrears"
+     ],
+     "cross_memo": "Water assessment - ditch company headgate repair",
+     "plain": [
+      "the ditch company water assessment",
+      "the water assessment true-up",
+      "the ditch company arrears"
+     ],
+     "oblique": [
+      "a catch-up bill for the canal association",
+      "back charges from the irrigation people",
+      "an adjustment for earlier seasons",
+      "delivery rights we had underpaid",
+      "what the district said we still owed",
+      "a retroactive levy on our shares",
+      "the overdue balance for moving liquid to the fields",
+      "settling up with the neighbors who share the channel",
+      "prior-year shortfall finally invoiced",
+      "a late reconciliation on our allotment",
+      "charges from the shared canal users",
+      "a corrected statement from the district",
+      "unpaid dues from earlier years",
+      "the true-up nobody budgeted",
+      "rights charges recalculated upward",
+      "a backdated usage invoice"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Livestock Hauling and Freight",
+   "aliases": [
+    "hauling",
+    "freight",
+    "cattle hauling",
+    "trucking",
+    "livestock transport"
+   ],
+   "narrative": [
+    "Cattle hauling",
+    "Livestock transport",
+    "Trucking"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-State Cattle Carriers",
+     "base": 16500,
+     "memo": "Inv pot load freight - weekly runs"
+    },
+    {
+     "vendor": "Longhorn Fuel and Tire",
+     "base": 5400,
+     "memo": "Svc trailer fuel and tires"
+    },
+    {
+     "vendor": "Mesa Dispatch Services",
+     "base": 2100,
+     "memo": "Mnt dispatch and load scheduling"
+    }
+   ],
+   "events": [
+    {
+     "key": "sale_surge",
+     "vendor": "Tri-State Cattle Carriers",
+     "memos": [
+      "Auction consignment surge - extra pot loads",
+      "Auction consignment surge - overtime drivers"
+     ],
+     "cross_memo": "Auction consignment surge - yardage fees",
+     "plain": [
+      "the auction consignment surge",
+      "the consignment surge pot loads",
+      "the auction surge overtime"
+     ],
+     "oblique": [
+      "moving a big batch of finished animals at once",
+      "a rush to ship out before prices dipped",
+      "the sudden volume leaving the property",
+      "a heavy sell-off week",
+      "more departures than the normal schedule",
+      "clearing pens ahead of a market move",
+      "an unusually large shipment window",
+      "getting a lot of head off the place quickly",
+      "the push to market fat steers",
+      "a spike in outbound movements",
+      "heavy marketing activity",
+      "emptying the lots on short notice",
+      "a compressed shipping calendar",
+      "a big week at the sale barn",
+      "more trips than we planned for",
+      "the sell-down of the finished group"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "ferrycross",
+     "vendor": "Redwater River Barge Lines",
+     "memos": [
+      "Detour barge crossing - bridge closure",
+      "Detour barge crossing - load permit fees"
+     ],
+     "cross_memo": "Detour barge crossing - lodging for drivers",
+     "plain": [
+      "the detour barge crossing",
+      "the bridge closure barge",
+      "the barge crossing permits"
+     ],
+     "oblique": [
+      "a route change after a road was shut",
+      "going around a structure that was unsafe",
+      "a longer way to reach the buyers",
+      "infrastructure outage on the main highway",
+      "shipping by an unusual path",
+      "a workaround for a blocked span",
+      "the roadwork that cut off our usual route",
+      "a costly alternative way to deliver",
+      "getting animals across the water",
+      "a temporary reroute for several weeks",
+      "the county's decision to close the way",
+      "delivery over a river instead of pavement",
+      "a diversion that added expense",
+      "a travel path forced on us",
+      "losing our normal corridor",
+      "the shutdown of the crossing we rely on"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Repair and Maintenance",
+   "aliases": [
+    "equipment",
+    "repairs",
+    "machinery upkeep",
+    "equipment repairs",
+    "ranch equipment"
+   ],
+   "narrative": [
+    "Equipment repairs",
+    "Machinery upkeep",
+    "Ranch equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "Anvil Ag Service",
+     "base": 8400,
+     "memo": "Svc tractor and loader maintenance"
+    },
+    {
+     "vendor": "Prairie Parts and Welding",
+     "base": 4300,
+     "memo": "Inv parts, welding and fabrication"
+    }
+   ],
+   "events": [
+    {
+     "key": "millrebuild",
+     "vendor": "Anvil Ag Service",
+     "memos": [
+      "Feed mill gearbox rebuild - bearing set",
+      "Feed mill gearbox rebuild - machinist labor"
+     ],
+     "cross_memo": "Feed mill gearbox rebuild - crane rental",
+     "plain": [
+      "the feed mill gearbox rebuild",
+      "the gearbox rebuild",
+      "the mill gearbox bearing set"
+     ],
+     "oblique": [
+      "the grinder that seized up in the middle of rations",
+      "a breakdown of our ingredient processing line",
+      "getting the crusher running again",
+      "a big failure in the plant that mixes diets",
+      "the heavy drivetrain overhaul",
+      "machinery that stopped producing blends",
+      "an expensive fix on the processing equipment",
+      "the core piece of the mill that gave out",
+      "downtime in making daily meals for animals",
+      "a shop job on the largest stationary machine",
+      "parts and skilled work to restore the line",
+      "the repair keeping our grinding going",
+      "what it took to revive the old unit",
+      "a catastrophic wear failure",
+      "the overhaul of the central processing machine",
+      "machine-shop work on the milling station"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "tankroll",
+     "vendor": "Gruber Steel Fabricators",
+     "memos": [
+      "Squeeze chute replacement - hydraulic unit",
+      "Squeeze chute replacement - install crew"
+     ],
+     "cross_memo": "Squeeze chute replacement - concrete pad",
+     "plain": [
+      "the squeeze chute replacement",
+      "the hydraulic squeeze chute",
+      "the chute replacement install"
+     ],
+     "oblique": [
+      "a new restraining device for working animals",
+      "safer handling gear for the processing area",
+      "retiring the worn-out head-catch setup",
+      "equipment the crew complained about for months",
+      "the apparatus that holds animals still for treatment",
+      "an upgrade to our handling facilities",
+      "swapping out unsafe corral hardware",
+      "a replacement after an injury scare",
+      "the machine used when giving shots",
+      "purchase of modern handling equipment",
+      "a fix for a dangerous old setup",
+      "the install in the working alley",
+      "capital-style spend on the holding station",
+      "new gear for the processing barn",
+      "what we bought after the old one failed inspection",
+      "safety-driven replacement of the restraint"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Feedlot Labor and Contract Crews",
+   "aliases": [
+    "labor",
+    "ranch labor",
+    "crew costs",
+    "contract crews",
+    "hired hands"
+   ],
+   "narrative": [
+    "Ranch labor",
+    "Crew costs",
+    "Hired hands"
+   ],
+   "recurring": [
+    {
+     "vendor": "Rimrock Staffing Partners",
+     "base": 22000,
+     "memo": "Inv contract feedyard crew - monthly"
+    },
+    {
+     "vendor": "Valley Seasonal Workers Co.",
+     "base": 9800,
+     "memo": "Svc seasonal ranch hands"
+    },
+    {
+     "vendor": "Tanner Payroll Services",
+     "base": 1900,
+     "memo": "Mnt payroll processing fee"
+    }
+   ],
+   "events": [
+    {
+     "key": "calving_help",
+     "vendor": "Rimrock Staffing Partners",
+     "memos": [
+      "Night calving crew - heifer pen coverage",
+      "Night calving crew - premium shift pay"
+     ],
+     "cross_memo": "Night calving crew - heated shelter rental",
+     "plain": [
+      "the night calving crew",
+      "the calving crew shift pay",
+      "the night calving heifer coverage"
+     ],
+     "oblique": [
+      "round-the-clock watching of expectant mothers",
+      "staffing the barn after dark",
+      "extra bodies when births peaked",
+      "a short-term overnight workforce",
+      "people watching the first-time mothers",
+      "the lambing-season-style surge in people",
+      "wages for the late shifts",
+      "seasonal peak in newborn arrivals",
+      "weeks of added headcount",
+      "helpers pulling calves in the cold",
+      "the baby-season staffing bump",
+      "attention to deliveries at odd hours",
+      "premium pay for the graveyard hours",
+      "temporary bodies for the busiest stretch",
+      "cover for a spring rush",
+      "the extra hands during births"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "brandinghelp",
+     "vendor": "Sagebrush Roundup Outfitters",
+     "memos": [
+      "Spring branding roundup - mounted riders",
+      "Spring branding roundup - meals and lodging"
+     ],
+     "cross_memo": "Spring branding roundup - horse feed",
+     "plain": [
+      "the spring branding roundup",
+      "the branding roundup riders",
+      "the spring roundup meals"
+     ],
+     "oblique": [
+      "gathering neighbors on horseback",
+      "the annual marking-day gathering",
+      "hiring skilled riders for one weekend",
+      "a traditional day working calves",
+      "extra crew to sort and mark young stock",
+      "the old-fashioned ranch event",
+      "bringing in outside cowboys",
+      "a big community work day",
+      "providing food for the visiting crew",
+      "a short engagement of experienced hands",
+      "the day we process the new calf crop",
+      "lodging for helpers who travelled",
+      "what it cost to host the working party",
+      "an annual seasonal event",
+      "paying outfitters for a long weekend",
+      "the yearly event on the open range"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Manure and Environmental Compliance",
+   "aliases": [
+    "manure",
+    "waste handling",
+    "environmental",
+    "compliance spend",
+    "lagoon costs"
+   ],
+   "narrative": [
+    "Waste handling",
+    "Environmental spend",
+    "Lagoon costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenfield Nutrient Hauling",
+     "base": 7600,
+     "memo": "Svc manure scraping and spreading"
+    },
+    {
+     "vendor": "Clearwater Env Consulting",
+     "base": 3100,
+     "memo": "Mnt monthly runoff monitoring"
+    }
+   ],
+   "events": [
+    {
+     "key": "lagoondredge",
+     "vendor": "Greenfield Nutrient Hauling",
+     "memos": [
+      "Holding pond dredging - sludge removal",
+      "Holding pond dredging - agitator pumps"
+     ],
+     "cross_memo": "Holding pond dredging - dewatering bags",
+     "plain": [
+      "the holding pond dredging",
+      "the pond sludge removal",
+      "the dredging agitator pumps"
+     ],
+     "oblique": [
+      "clearing out the settled solids from the basin",
+      "a once-in-years cleanout of the catch basin",
+      "restoring capacity before rains arrived",
+      "the heavy buildup we could no longer ignore",
+      "scooping out the bottom of our storage",
+      "emptying the reservoir for effluent",
+      "a capacity problem finally addressed",
+      "dealing with muck that had accumulated",
+      "getting volume back in the retention area",
+      "work with pumps to stir and remove deposits",
+      "avoiding an overflow during storm season",
+      "a long-deferred cleanup of the basin floor",
+      "the engineering-recommended excavation",
+      "scraping years of buildup from the cell",
+      "maintenance we had put off",
+      "the deep clean of the wastewater storage"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "permitaudit",
+     "vendor": "Ridgeline Regulatory Advisors",
+     "memos": [
+      "NPDES permit renewal - consultant retainer",
+      "NPDES permit renewal - engineer plan review"
+     ],
+     "cross_memo": "NPDES permit renewal - filing fee",
+     "plain": [
+      "the NPDES permit renewal",
+      "the NPDES engineer plan review",
+      "the NPDES consultant retainer"
+     ],
+     "oblique": [
+      "renewing our discharge authorization",
+      "the five-year paperwork cycle with the state",
+      "hiring specialists to satisfy regulators",
+      "a document package for the water agency",
+      "keeping the right to operate our pens",
+      "professional help with a government application",
+      "the engineer's review of our drainage plan",
+      "licensing that came up for renewal",
+      "an updated plan demanded by officials",
+      "authorization to keep running at our size",
+      "the regulator's periodic renewal requirement",
+      "consultants who prepared our submission",
+      "the approval process for runoff controls",
+      "staying legal on discharges",
+      "what the agency required to continue operating",
+      "a filing that had to be redone"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Farm Insurance and Bonding",
+   "aliases": [
+    "insurance",
+    "farm insurance",
+    "coverage costs",
+    "premiums",
+    "livestock coverage"
+   ],
+   "narrative": [
+    "Insurance",
+    "Coverage costs",
+    "Premiums"
+   ],
+   "recurring": [
+    {
+     "vendor": "Western Plains Mutual",
+     "base": 11500,
+     "memo": "Qtr livestock mortality premium"
+    },
+    {
+     "vendor": "Homestead General Agency",
+     "base": 4800,
+     "memo": "Mnt property and liability premium"
+    }
+   ],
+   "events": [
+    {
+     "key": "hailclaim",
+     "vendor": "Western Plains Mutual",
+     "memos": [
+      "Premium adjustment - hail loss experience",
+      "Premium adjustment - surcharge hail claim"
+     ],
+     "cross_memo": "Premium adjustment - hail roof repair deductible",
+     "plain": [
+      "the hail loss premium adjustment",
+      "the hail claim surcharge",
+      "the premium adjustment for hail"
+     ],
+     "oblique": [
+      "the carrier reacting to a stormy year",
+      "a rate increase after frozen precipitation damaged buildings",
+      "higher charges following a weather claim",
+      "what the insurer added after the damage",
+      "a jump tied to last season's losses",
+      "coverage costs reset by recent claims history",
+      "the underwriter's response to our record",
+      "an uptick after the sky pelted the roofs",
+      "extra cost following a claim we filed",
+      "the loss-history penalty",
+      "premium rising from a damaging storm",
+      "repricing after the weather event",
+      "a surcharge tied to a prior payout",
+      "the insurer's reassessment of our risk",
+      "a rate bump after the pounding the barns took",
+      "fallout from a violent summer storm"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "cyberpolicy",
+     "vendor": "Lakeshore Specialty Underwriters",
+     "memos": [
+      "Crime and fidelity bond - new lender requirement",
+      "Crime and fidelity bond - initial premium"
+     ],
+     "cross_memo": "Crime and fidelity bond - agent placement fee",
+     "plain": [
+      "the crime and fidelity bond",
+      "the new fidelity bond premium",
+      "the lender requirement bond"
+     ],
+     "oblique": [
+      "protection against employee theft that the bank asked for",
+      "a condition attached to our credit line",
+      "coverage demanded before loan renewal",
+      "a new policy the financing partner insisted on",
+      "safeguarding money held by staff",
+      "assurance for the people who lend to us",
+      "a covenant we had to satisfy",
+      "a new line of protection for dishonesty losses",
+      "what the creditors required of us",
+      "a one-time purchase to keep funding intact",
+      "a guarantee tied to the loan package",
+      "the extra policy added this term",
+      "an obligation under the credit agreement",
+      "coverage no one had on the budget",
+      "a safeguard against internal misconduct",
+      "the fresh policy placed to satisfy the bank"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

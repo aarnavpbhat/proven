@@ -1,0 +1,718 @@
+{
+ "slug": "county-fairground-and-rodeo-operator",
+ "industry": "county fairground and rodeo operator",
+ "entities": [
+  "Red Mesa County Fairgrounds LLC",
+  "Blue Sage Rodeo & Expo Co.",
+  "High Plains Fair Association Inc.",
+  "Cottonwood Arena & Fairgrounds Corp.",
+  "Dry Creek Rodeo Operations LLC"
+ ],
+ "accounts": [
+  {
+   "name": "Livestock Care & Feed",
+   "aliases": [
+    "livestock care",
+    "feed and bedding",
+    "animal care costs",
+    "stock feed",
+    "livestock upkeep"
+   ],
+   "narrative": [
+    "Livestock care",
+    "Feed and bedding",
+    "Animal care costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sundown Feed & Grain",
+     "base": 9200,
+     "memo": "Monthly hay and grain delivery"
+    },
+    {
+     "vendor": "Bitterroot Veterinary Group",
+     "base": 4800,
+     "memo": "Contract vet retainer"
+    },
+    {
+     "vendor": "Clearwater Bedding Supply",
+     "base": 2600,
+     "memo": "Shavings and straw restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "pennedcalves",
+     "vendor": "Bitterroot Veterinary Group",
+     "memos": [
+      "Quarantine barn outbreak — isolation pen treatment",
+      "Quarantine barn outbreak — emergency herd testing"
+     ],
+     "cross_memo": "Quarantine barn outbreak — temporary fencing rental",
+     "plain": [
+      "the quarantine barn outbreak",
+      "the quarantine outbreak response",
+      "the barn outbreak testing"
+     ],
+     "oblique": [
+      "a sickness that swept through the youth show animals",
+      "keeping sick animals apart from healthy ones",
+      "the state inspector's demand for lab work",
+      "a contagious illness among the 4-H steers",
+      "emergency medical response on the cattle side",
+      "extra staff hours spent watching ailing stock",
+      "the scare that nearly cancelled the junior livestock sale",
+      "separating infected heifers from the herd",
+      "lab results that came back positive",
+      "an unplanned round of antibiotics",
+      "the disease scare in the show barns",
+      "clinic visits at odd hours",
+      "a health emergency among exhibited animals",
+      "safeguarding the animals before opening day",
+      "the isolation protocol ordered by the county",
+      "a cluster of coughing calves"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "stallionpurchase",
+     "vendor": "Lonesome Pine Genetics",
+     "memos": [
+      "Bucking bull bloodline program — semen and shipping",
+      "Bucking bull bloodline program — breeding consultant fee"
+     ],
+     "cross_memo": "Bucking bull bloodline program — arena pen reinforcement",
+     "plain": [
+      "the bucking bull bloodline program",
+      "the bloodline program shipping",
+      "the bull bloodline consultant"
+     ],
+     "oblique": [
+      "an effort to raise our own rough stock",
+      "investing in next season's headline animals",
+      "a long-term plan for stronger contractors' string",
+      "expert advice on breeding for the arena",
+      "frozen shipments arriving from out of state",
+      "growing the herd instead of renting animals",
+      "a bet on future crowd draws",
+      "the specialist we brought in from Texas",
+      "cultivating athletes of the four-legged kind",
+      "a multi-year livestock development push",
+      "our answer to a shortage of good animals",
+      "the sire selection process",
+      "raising animals that buck harder",
+      "a new line of product for the sanctioned events",
+      "what the board approved last winter for stock quality",
+      "upgrading what comes out of the chutes"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Arena Dirt & Grounds Maintenance",
+   "aliases": [
+    "arena dirt",
+    "grounds maintenance",
+    "arena prep",
+    "footing and grounds",
+    "turf and dirt work"
+   ],
+   "narrative": [
+    "Arena dirt",
+    "Grounds maintenance",
+    "Arena prep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tumbleweed Excavation",
+     "base": 7400,
+     "memo": "Arena disking and watering contract"
+    },
+    {
+     "vendor": "Coyote Ridge Landscaping",
+     "base": 5200,
+     "memo": "Mowing and parking lot upkeep"
+    },
+    {
+     "vendor": "Dustbowl Water Hauling",
+     "base": 3100,
+     "memo": "Water truck dust control"
+    }
+   ],
+   "events": [
+    {
+     "key": "sandtopping",
+     "vendor": "Tumbleweed Excavation",
+     "memos": [
+      "Silt loam resurfacing — imported footing mix",
+      "Silt loam resurfacing — laser grading crew"
+     ],
+     "cross_memo": "Silt loam resurfacing — equipment trucking surcharge",
+     "plain": [
+      "the silt loam resurfacing",
+      "the resurfacing footing mix",
+      "the silt loam grading"
+     ],
+     "oblique": [
+      "a complaint from riders about slippery ground",
+      "replacing the top layer of the main ring",
+      "what the sanctioning body demanded before sign-off",
+      "a fresh bed for the barrel racers",
+      "dozens of truckloads arriving at dawn",
+      "a safety concern raised by an injured competitor",
+      "the ground under the horses getting rebuilt",
+      "leveling out the low spots after a wet spring",
+      "the surface upgrade the board pushed for",
+      "making the ring safe again",
+      "hauling in material from a quarry",
+      "a crew running precision equipment for days",
+      "what the insurance carrier recommended",
+      "an overhaul of the floor of the arena",
+      "the new base laid before the big weekend",
+      "fixing ruts left behind by last year's crowds"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "floodcleanup",
+     "vendor": "Redwater Restoration Services",
+     "memos": [
+      "Creek overflow cleanup — silt removal and pumping",
+      "Creek overflow cleanup — fence line debris haul"
+     ],
+     "cross_memo": "Creek overflow cleanup — emergency generator rental",
+     "plain": [
+      "the creek overflow cleanup",
+      "the overflow silt removal",
+      "the creek debris haul"
+     ],
+     "oblique": [
+      "a storm that sent water across the south lot",
+      "mud caked on the vendor midway",
+      "a weekend of crews working around the clock",
+      "the stream jumping its banks",
+      "getting the lower pastures usable again",
+      "pumping out standing water before the weekend",
+      "damage from heavy rain in the hills",
+      "what the weather did to the campground",
+      "hauling away branches and trash left by the surge",
+      "a disaster declaration for our end of the county",
+      "clearing the washed-out service road",
+      "an unplanned scramble after the downpour",
+      "rescuing the stalls that sat underwater",
+      "recovery after the flash flood warning",
+      "a muddy mess nobody budgeted for",
+      "the cleanup crew we called at midnight"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Rodeo Production & Stock Contractors",
+   "aliases": [
+    "rodeo production",
+    "stock contractors",
+    "rodeo contract costs",
+    "event production spend",
+    "rodeo operations"
+   ],
+   "narrative": [
+    "Rodeo production",
+    "Stock contractors",
+    "Rodeo contract costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Frontier Rough Stock Co.",
+     "base": 18500,
+     "memo": "Stock contractor monthly performance fee"
+    },
+    {
+     "vendor": "Silver Spur Announcing",
+     "base": 2800,
+     "memo": "Announcer and clown services"
+    },
+    {
+     "vendor": "Western States Timing Systems",
+     "base": 1900,
+     "memo": "Electronic timing and scoring lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "champfinals",
+     "vendor": "Frontier Rough Stock Co.",
+     "memos": [
+      "Governor's Cup finals — added prize purse supplement",
+      "Governor's Cup finals — extra performance night"
+     ],
+     "cross_memo": "Governor's Cup finals — hospitality tent catering",
+     "plain": [
+      "the Governor's Cup finals",
+      "the Cup finals purse supplement",
+      "the Governor's Cup extra night"
+     ],
+     "oblique": [
+      "the marquee weekend the sponsors wanted",
+      "a bigger payout to attract top competitors",
+      "adding another evening to the schedule",
+      "the championship round everyone circled on the calendar",
+      "a deal struck to get televised coverage",
+      "raising the stakes for the best riders",
+      "the premier event of the season",
+      "a purse that doubled over last year",
+      "what we promised the sanctioning association",
+      "a headline showcase with state officials in the stands",
+      "paying more to draw the national stars",
+      "the bonus we put up for the winners",
+      "an extended program packed with ticket buyers",
+      "the high-profile finale",
+      "an additional performance that sold out fast",
+      "the top-tier competition we agreed to host"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "pyrotechnics",
+     "vendor": "Starfall Pyrotechnics",
+     "memos": [
+      "Grand opening spectacular — aerial shells and permits",
+      "Grand opening spectacular — licensed shooter crew"
+     ],
+     "cross_memo": "Grand opening spectacular — stage truss rigging",
+     "plain": [
+      "the grand opening spectacular",
+      "the spectacular aerial shells",
+      "the spectacular shooter crew"
+     ],
+     "oblique": [
+      "a show of lights over the grandstand",
+      "the sky display that closed out the first night",
+      "a stunt the new marketing director dreamed up",
+      "something loud and colorful for the crowd",
+      "fire marshal paperwork and inspection fees",
+      "a nighttime attraction to lift attendance",
+      "the licensed team who handled explosives",
+      "what we did to mark the centennial",
+      "bangs and flashes after the last bull ride",
+      "an entertainment add-on for opening night",
+      "the staff overtime tied to safety perimeters",
+      "a crowd-pleaser nobody had on the calendar",
+      "the booming finale",
+      "an extra attraction the chamber of commerce requested",
+      "a display visible from town",
+      "what kept spectators in their seats after dark"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Livestock Exhibition & Show Premiums",
+   "aliases": [
+    "show premiums",
+    "exhibitor awards",
+    "livestock exhibition",
+    "ribbon and premium payouts",
+    "junior show costs"
+   ],
+   "narrative": [
+    "Show premiums",
+    "Exhibitor awards",
+    "Livestock exhibition"
+   ],
+   "recurring": [
+    {
+     "vendor": "Blue Ribbon Trophy & Award",
+     "base": 2400,
+     "memo": "Ribbons rosettes and trophies"
+    },
+    {
+     "vendor": "County Youth Auction Fund",
+     "base": 6000,
+     "memo": "Junior market animal premium payout"
+    }
+   ],
+   "events": [
+    {
+     "key": "scholarship",
+     "vendor": "County Youth Auction Fund",
+     "memos": [
+      "Heritage scholarship drive — endowed award match",
+      "Heritage scholarship drive — winner stipends"
+     ],
+     "cross_memo": "Heritage scholarship drive — printed program ads",
+     "plain": [
+      "the heritage scholarship drive",
+      "the scholarship award match",
+      "the heritage stipends"
+     ],
+     "oblique": [
+      "helping local kids pay for college",
+      "a pledge made at the spring banquet",
+      "matching what donors gave",
+      "money set aside for graduating seniors",
+      "a gift to the next generation of ranchers",
+      "a promise from the board chair",
+      "a program launched in memory of a longtime volunteer",
+      "cash for students heading to agricultural programs",
+      "the community giving campaign",
+      "what we owed the families who earned top honors",
+      "an endowment topped up at year end",
+      "funding the young people who showed animals all summer",
+      "a new tradition of giving back",
+      "the fund that supports local teens",
+      "a charitable commitment announced from the announcer stand",
+      "dollars going out to deserving youngsters"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "swinefair",
+     "vendor": "Meadowlark Judging Services",
+     "memos": [
+      "Invitational breed classic — out-of-state judges panel",
+      "Invitational breed classic — travel and lodging"
+     ],
+     "cross_memo": "Invitational breed classic — extra show ring tent",
+     "plain": [
+      "the invitational breed classic",
+      "the breed classic judges panel",
+      "the classic lodging"
+     ],
+     "oblique": [
+      "a prestigious competition that drew entries from several states",
+      "experts flying in to evaluate the animals",
+      "a special contest added to our regular schedule",
+      "hotel rooms for visiting officials",
+      "an upgrade in show level the breeders association asked for",
+      "people we paid to pick the winners",
+      "a one-time contest aimed at serious breeders",
+      "the impartial evaluators brought from afar",
+      "a premium event that boosted entry counts",
+      "additional tent space for the extra classes",
+      "the visiting panel's flights and meals",
+      "raising our profile among purebred producers",
+      "a new marquee competition",
+      "what it cost to host the specialists",
+      "the judging crew that stayed all week",
+      "an expanded exhibition lineup"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Grandstand & Facility Repairs",
+   "aliases": [
+    "grandstand repairs",
+    "facility repairs",
+    "building maintenance",
+    "structure upkeep",
+    "facilities and repairs"
+   ],
+   "narrative": [
+    "Grandstand repairs",
+    "Facility repairs",
+    "Building maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironwood Structural Services",
+     "base": 6800,
+     "memo": "Quarterly grandstand inspection and minor repairs"
+    },
+    {
+     "vendor": "Summit Electrical Contractors",
+     "base": 3500,
+     "memo": "Lighting and electrical service calls"
+    },
+    {
+     "vendor": "Pioneer Plumbing & Heat",
+     "base": 2200,
+     "memo": "Restroom and plumbing maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "roofreplace",
+     "vendor": "Ironwood Structural Services",
+     "memos": [
+      "Exhibit hall roof replacement — steel panels and flashing",
+      "Exhibit hall roof replacement — crane and labor"
+     ],
+     "cross_memo": "Exhibit hall roof replacement — interior ceiling tile swap",
+     "plain": [
+      "the exhibit hall roof replacement",
+      "the hall roof steel panels",
+      "the roof replacement crane"
+     ],
+     "oblique": [
+      "leaks that ruined the quilt display",
+      "a covering overhead that finally gave out",
+      "the oldest building on the grounds getting a new lid",
+      "a hailstorm's lasting damage",
+      "heavy equipment parked outside for a week",
+      "the insurance adjuster's findings",
+      "something the maintenance crew warned about for years",
+      "drips falling on the craft booths",
+      "metal sheets hoisted into place",
+      "protecting the indoor show space from the weather",
+      "a major capital project squeezed into the off-season",
+      "the biggest repair of the year",
+      "water stains on the ceiling",
+      "the fix that stopped rain from coming in",
+      "what the engineer recommended after inspection",
+      "the top of the big building"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "bleacherfix",
+     "vendor": "Tallgrass Welding & Fabrication",
+     "memos": [
+      "East bleacher collapse repair — bracing and decking",
+      "East bleacher collapse repair — welding crew"
+     ],
+     "cross_memo": "East bleacher collapse repair — spectator safety fencing",
+     "plain": [
+      "the east bleacher collapse repair",
+      "the bleacher decking repair",
+      "the bleacher bracing"
+     ],
+     "oblique": [
+      "a section of seating giving way during an event",
+      "what the injury claim prompted us to fix",
+      "a closed seating area that cost us ticket revenue",
+      "metalwork done on short notice",
+      "the accident that made the local paper",
+      "new boards and supports for spectators",
+      "a county safety order after a mishap",
+      "crews working through the night before the next show",
+      "rebuilding where people sit",
+      "restoring capacity lost to damage",
+      "the incident no one saw coming",
+      "reinforcement demanded by the risk manager",
+      "an emergency rebuild of the sides of the arena",
+      "an urgent job at the grandstand wing",
+      "hardware and steel for the damaged section",
+      "getting fans safely back in their seats"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Concessions & Midway Contracts",
+   "aliases": [
+    "concessions",
+    "midway contracts",
+    "carnival costs",
+    "food service spend",
+    "midway and concessions"
+   ],
+   "narrative": [
+    "Concessions",
+    "Midway contracts",
+    "Carnival costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lucky Seven Amusements",
+     "base": 15000,
+     "memo": "Midway ride operator guarantee"
+    },
+    {
+     "vendor": "Plains Beverage Distributing",
+     "base": 8300,
+     "memo": "Concession beverage and ice supply"
+    },
+    {
+     "vendor": "Golden Fry Provisions",
+     "base": 5400,
+     "memo": "Concession food product and fryer oil"
+    }
+   ],
+   "events": [
+    {
+     "key": "ferriswheel",
+     "vendor": "Lucky Seven Amusements",
+     "memos": [
+      "Sky Tower attraction — transport and assembly",
+      "Sky Tower attraction — inspector certification"
+     ],
+     "cross_memo": "Sky Tower attraction — added generator fuel",
+     "plain": [
+      "the Sky Tower attraction",
+      "the Sky Tower assembly",
+      "the Sky Tower certification"
+     ],
+     "oblique": [
+      "a tall ride brought in for the anniversary",
+      "something visitors could see from the highway",
+      "a showpiece that required a special permit",
+      "a towering draw added to the midway lineup",
+      "what the carnival operator talked us into",
+      "heavy trailers rolling in a week early",
+      "the new thrill for the teenagers",
+      "a state inspector's sign-off on a big machine",
+      "an expensive crowd magnet",
+      "trucks, cranes and a crew of riggers",
+      "a marketing play to lift gate numbers",
+      "a centerpiece for the photos",
+      "the biggest ride we have ever hosted",
+      "the added spectacle on the carnival grounds",
+      "a draw for families from neighboring counties",
+      "a landmark that needed a fuel supply of its own"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "foodtruckrally",
+     "vendor": "Smokestack Street Eats Collective",
+     "memos": [
+      "Chuckwagon cook-off weekend — vendor stipends",
+      "Chuckwagon cook-off weekend — judging prizes"
+     ],
+     "cross_memo": "Chuckwagon cook-off weekend — banner printing",
+     "plain": [
+      "the chuckwagon cook-off weekend",
+      "the cook-off vendor stipends",
+      "the chuckwagon judging prizes"
+     ],
+     "oblique": [
+      "a culinary contest we added to draw foodies",
+      "cash to get outside cooks to show up",
+      "a tasting event that packed the picnic area",
+      "guests lining up for barbecue samples",
+      "the festival the tourism board encouraged",
+      "a gamble on attracting a different crowd",
+      "prizes handed out for the best brisket",
+      "guest chefs hauling their rigs onto the grounds",
+      "a stand-alone food celebration",
+      "incentives for mobile kitchens",
+      "a new side event with its own buzz",
+      "a crowd of hungry weekend visitors",
+      "the competition between smoke pits",
+      "something that put us in regional magazines",
+      "the hungry crowds in the south lot",
+      "a weekend built around grilled meat"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Insurance & Risk Management",
+   "aliases": [
+    "insurance",
+    "risk management",
+    "liability coverage",
+    "event insurance",
+    "coverage costs"
+   ],
+   "narrative": [
+    "Insurance",
+    "Risk management",
+    "Liability coverage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harvest Mutual Underwriters",
+     "base": 12500,
+     "memo": "General liability premium installment"
+    },
+    {
+     "vendor": "Stirrup & Associates Brokerage",
+     "base": 1800,
+     "memo": "Broker service retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "claimsurcharge",
+     "vendor": "Harvest Mutual Underwriters",
+     "memos": [
+      "Loss-history adjustment — retroactive premium true-up",
+      "Loss-history adjustment — additional rider endorsement"
+     ],
+     "cross_memo": "Loss-history adjustment — safety consultant audit",
+     "plain": [
+      "the loss-history adjustment",
+      "the loss-history true-up",
+      "the adjustment rider endorsement"
+     ],
+     "oblique": [
+      "a bill that arrived after the carrier reviewed our past incidents",
+      "a higher rate for a rougher year",
+      "an extra charge nobody saw coming in the budget",
+      "catching up on what we undercounted",
+      "what the underwriter said we owed",
+      "the price of last season's mishaps",
+      "a mid-term change in our policy terms",
+      "a letter from the carrier demanding more",
+      "paying more to keep the same protection",
+      "a consequence of the injury claims",
+      "our record catching up with us",
+      "a correction on the original estimate",
+      "extra paperwork attached to the policy",
+      "the carrier's reassessment of our exposure",
+      "what the actuaries decided about us",
+      "a late-year charge that surprised the board"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "stuntcover",
+     "vendor": "Pinnacle Specialty Risk",
+     "memos": [
+      "Mutton busting and bull riding waiver program — participant accident policy",
+      "Mutton busting and bull riding waiver program — single-event binder"
+     ],
+     "cross_memo": "Mutton busting and bull riding waiver program — legal review fees",
+     "plain": [
+      "the mutton busting waiver program",
+      "the bull riding waiver policy",
+      "the waiver program binder"
+     ],
+     "oblique": [
+      "extra protection for the kids' sheep-riding event",
+      "paperwork signed by every participant's parents",
+      "a one-time rider on top of our usual cover",
+      "coverage for the riskiest things we offer",
+      "a request from the board after a close call",
+      "what the lawyers told us to buy",
+      "protection for the most dangerous night of the year",
+      "a specialty carrier stepping in for a short window",
+      "shielding us from claims by contestants",
+      "a safeguard that went into effect before the weekend",
+      "the policy tied to individual competitors",
+      "what we needed before they would let us run the event",
+      "guarding against injuries in the arena",
+      "an add-on from a niche insurer",
+      "a stopgap that covered one night only",
+      "accident cover for entrants who get hurt"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

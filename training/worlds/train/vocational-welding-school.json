@@ -1,0 +1,805 @@
+{
+ "slug": "vocational-welding-school",
+ "industry": "vocational welding school",
+ "entities": [
+  "Ironbridge Welding Academy",
+  "Cinderfield Trade Institute",
+  "Sparkline Technical College",
+  "Forge Valley Vocational School",
+  "Northgate Fabrication Institute"
+ ],
+ "accounts": [
+  {
+   "name": "Welding Consumables",
+   "aliases": [
+    "consumables",
+    "welding rod and wire",
+    "weld supplies",
+    "shop consumables",
+    "electrode spend"
+   ],
+   "narrative": [
+    "Consumables",
+    "Welding rod and wire",
+    "Weld supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hartwell Weld Supply",
+     "base": 14200,
+     "memo": "Stick electrodes E7018 50lb - PO 44102"
+    },
+    {
+     "vendor": "Pinnacle Wire & Rod",
+     "base": 9800,
+     "memo": "MIG wire ER70S-6 spools - PO 44117"
+    },
+    {
+     "vendor": "Summit Abrasives Co",
+     "base": 4300,
+     "memo": "Grinding discs and flap wheels"
+    }
+   ],
+   "events": [
+    {
+     "key": "stainless",
+     "vendor": "Hartwell Weld Supply",
+     "memos": [
+      "Stainless filler rod 316L - WO 8821",
+      "Stainless pipe module filler - PO 45310"
+     ],
+     "cross_memo": "Stainless pipe module - freight surcharge",
+     "plain": [
+      "the stainless filler rod",
+      "the stainless pipe module",
+      "the stainless filler order"
+     ],
+     "oblique": [
+      "the new alloy training track",
+      "metal that resists corrosion for the advanced class",
+      "a more expensive material for senior students",
+      "the specialty pipe certification cohort",
+      "an upgrade to what students practice on",
+      "costlier material for the chemical plant course",
+      "the premium metals order",
+      "materials for the new petrochemical partnership",
+      "the advanced alloy workshop",
+      "what the instructors requested for exam prep",
+      "higher grade feedstock for the capstone",
+      "the corrosion resistant program launch",
+      "special metal for the employer sponsored class",
+      "the rarer material purchase",
+      "filler for the high end certification",
+      "the pricier rods for senior cohorts"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "helium_blend",
+     "vendor": "Gulfline Specialty Gases",
+     "memos": [
+      "Helium argon trimix cylinders - PO 45377",
+      "Trimix manifold refill - WO 8840"
+     ],
+     "cross_memo": "Trimix cylinder rental - overage",
+     "plain": [
+      "the helium argon trimix cylinders",
+      "the trimix manifold refill",
+      "the helium argon trimix order"
+     ],
+     "oblique": [
+      "the aerospace style shielding for the TIG lab",
+      "a special atmosphere for the precision classes",
+      "what the aluminum instructors insisted on",
+      "the gas change for thin sheet work",
+      "a premium mixture for the new lab",
+      "costly air for the advanced booth",
+      "the exotic blend for the contract with the airframe employer",
+      "supply for the aircraft repair elective",
+      "the elite shielding purchase",
+      "the specialized atmosphere request",
+      "what the TIG faculty requested for exams",
+      "the upgraded protective environment for welds",
+      "a rarer supply for the precision program",
+      "the experimental lab setup",
+      "fuel for the high spec practice sessions",
+      "the change in what flows through the booths"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Shop Gases and Cylinder Rental",
+   "aliases": [
+    "gases",
+    "cylinder rental",
+    "shop gas",
+    "gas and cylinders",
+    "argon and oxygen"
+   ],
+   "narrative": [
+    "Gases",
+    "Cylinder rental",
+    "Shop gas"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gulfline Specialty Gases",
+     "base": 11500,
+     "memo": "Argon CO2 bulk refill - monthly"
+    },
+    {
+     "vendor": "Tri-County Gas Depot",
+     "base": 6200,
+     "memo": "Oxygen acetylene cylinder lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "bulktank",
+     "vendor": "Tri-County Gas Depot",
+     "memos": [
+      "Bulk liquid argon tank install - WO 9012",
+      "Bulk argon tank pad and piping - PO 45501"
+     ],
+     "cross_memo": "Bulk argon tank install - permit fee",
+     "plain": [
+      "the bulk liquid argon tank",
+      "the bulk argon tank install",
+      "the bulk tank piping"
+     ],
+     "oblique": [
+      "moving off bottles to a central supply",
+      "the plumbing project behind the lab",
+      "a one time capital style setup",
+      "what the fire marshal wanted outside",
+      "the switch to a centralized system",
+      "getting out of the swap and haul routine",
+      "the outdoor installation near the loading dock",
+      "an investment meant to cut long term costs",
+      "the infrastructure change for the new wing",
+      "the new supply arrangement",
+      "work contractors did on the east side",
+      "the project that eliminated daily cylinder deliveries",
+      "a fixed installation instead of rentals",
+      "the large one off upgrade",
+      "cost of the permanent hookup",
+      "the conversion that students never see"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "hydrotest",
+     "vendor": "Keystone Pressure Testing",
+     "memos": [
+      "Hydrostatic retest of 60 cylinders - WO 9044",
+      "Hydrostatic requalification batch - PO 45588"
+     ],
+     "cross_memo": "Hydrostatic retest - hazmat haul",
+     "plain": [
+      "the hydrostatic retest",
+      "the hydrostatic requalification batch",
+      "the hydrostatic cylinder retest"
+     ],
+     "oblique": [
+      "the five year safety inspection of old bottles",
+      "compliance work on aging inventory",
+      "what the state inspector required",
+      "a regulatory deadline we could not miss",
+      "getting expired tanks certified again",
+      "the overdue certification of our stock",
+      "mandatory recertification of vessels",
+      "the audit finding about aging equipment",
+      "testing that keeps the insurer satisfied",
+      "the legal requirement catching up with us",
+      "proving old steel is still safe",
+      "a periodic obligation that came due together",
+      "the inspection cycle hitting a big batch",
+      "paperwork and pressure checks on tanks",
+      "the safety recertification project",
+      "a backlog the previous manager left"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Student Safety Gear",
+   "aliases": [
+    "ppe",
+    "safety gear",
+    "student ppe",
+    "protective equipment",
+    "gear issue"
+   ],
+   "narrative": [
+    "PPE",
+    "Safety gear",
+    "Student PPE"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bright Shield Safety",
+     "base": 7400,
+     "memo": "Auto-darkening helmets restock"
+    },
+    {
+     "vendor": "Cobalt Leatherworks",
+     "base": 5100,
+     "memo": "Welding gloves and jackets - PO 46001"
+    },
+    {
+     "vendor": "ClearView Optics",
+     "base": 1800,
+     "memo": "Lens covers and safety glasses"
+    }
+   ],
+   "events": [
+    {
+     "key": "respirator",
+     "vendor": "Bright Shield Safety",
+     "memos": [
+      "PAPR respirator units fit test - WO 9120",
+      "PAPR filter cartridges bulk - PO 46140"
+     ],
+     "cross_memo": "PAPR respirator fit test - training hours",
+     "plain": [
+      "the PAPR respirator units",
+      "the PAPR filter cartridges",
+      "the PAPR respirator fit test"
+     ],
+     "oblique": [
+      "the air quality citation response",
+      "breathing protection for fume heavy classes",
+      "what the insurer asked for after the audit",
+      "lungs protection upgrade",
+      "a mandated change in how students stay safe from smoke",
+      "the new exposure limits",
+      "the fix for the ventilation complaint",
+      "the health and safety order",
+      "equipment that supplies clean air to the face",
+      "the regulator driven purchase",
+      "the response to the instructor illness claim",
+      "expense tied to fume monitoring results",
+      "the upgrade nobody budgeted",
+      "cleaner air for the booths",
+      "after the inspection report came back",
+      "the compliance equipment bought for every cohort"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "flamejackets",
+     "vendor": "Redline Protective Apparel",
+     "memos": [
+      "FR jackets 9oz bulk order - PO 46188",
+      "FR jacket embroidery - WO 9133"
+     ],
+     "cross_memo": "FR jackets - rush shipping",
+     "plain": [
+      "the FR jackets bulk order",
+      "the FR jacket embroidery",
+      "the FR jackets"
+     ],
+     "oblique": [
+      "clothing for the entire incoming class",
+      "uniforms that carry the school logo",
+      "the larger enrollment wave",
+      "apparel that resists sparks for the extra students",
+      "the branded garment run",
+      "what the new campus needed on day one",
+      "outerwear bought ahead of the fall intake",
+      "the wardrobe for sponsored apprentices",
+      "the apparel refresh",
+      "garments the employer partners requested",
+      "upgraded outerwear for the whole cohort",
+      "the brand and safety clothing project",
+      "stock for the surge in sign ups",
+      "fabric that does not catch fire for new students",
+      "a one time outfitting of a bigger class",
+      "replacement of worn out wearables"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Equipment Repair and Calibration",
+   "aliases": [
+    "equipment repair",
+    "machine maintenance",
+    "calibration",
+    "welder service",
+    "repairs and calibration"
+   ],
+   "narrative": [
+    "Equipment repair",
+    "Machine maintenance",
+    "Welder service"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Arc Service",
+     "base": 8800,
+     "memo": "Welding machine PM - monthly contract"
+    },
+    {
+     "vendor": "Allied Calibration Labs",
+     "base": 3200,
+     "memo": "Meter and gauge calibration"
+    }
+   ],
+   "events": [
+    {
+     "key": "plasmatable",
+     "vendor": "Precision Arc Service",
+     "memos": [
+      "CNC plasma table gantry rebuild - WO 9201",
+      "CNC plasma table servo drives - PO 46300"
+     ],
+     "cross_memo": "CNC plasma table rebuild - rental cutter",
+     "plain": [
+      "the CNC plasma table gantry rebuild",
+      "the CNC plasma table servo drives",
+      "the CNC plasma table rebuild"
+     ],
+     "oblique": [
+      "the cutting machine that crashed mid semester",
+      "getting the big automated cutter running",
+      "what fabrication class could not do without",
+      "the downtime in the metal profiling lab",
+      "a motion system failure",
+      "the repair that restored the programming course",
+      "fixing the computer driven machine",
+      "the equipment that broke during the sponsor demo",
+      "the work on our most expensive tool",
+      "a breakdown affecting the capstone projects",
+      "restoring the shaping machine",
+      "the engineered fix from the manufacturer",
+      "after the collision on the rails",
+      "the large mechanical overhaul",
+      "the repair that kept the fab elective alive",
+      "the machine failure from last term"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "transformers",
+     "vendor": "Voltline Power Services",
+     "memos": [
+      "Phase converter replacement - WO 9230",
+      "Phase converter commissioning - PO 46355"
+     ],
+     "cross_memo": "Phase converter replacement - electrician OT",
+     "plain": [
+      "the phase converter replacement",
+      "the phase converter commissioning",
+      "the phase converter swap"
+     ],
+     "oblique": [
+      "the electrical supply fix for the east lab",
+      "power conditioning for the heavy machines",
+      "after the brownout damaged the equipment",
+      "the grid compatibility problem",
+      "what the utility said we needed",
+      "the voltage trouble that tripped the booths",
+      "unit that turns one kind of electricity into another",
+      "the swap made after the surge",
+      "the electrical failure behind the lab shutdown",
+      "power stability work for the new machines",
+      "the circuit upgrade that students never notice",
+      "a breaker panel era replacement",
+      "the reason booths went dark in March",
+      "the fix to the voltage dips",
+      "an unplanned electrical project",
+      "what made the welders run weak"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Instructor Certification and Training",
+   "aliases": [
+    "instructor training",
+    "faculty certification",
+    "cert and training",
+    "instructor development",
+    "teacher credentials"
+   ],
+   "narrative": [
+    "Instructor training",
+    "Faculty certification",
+    "Instructor development"
+   ],
+   "recurring": [
+    {
+     "vendor": "National Weld Standards Council",
+     "base": 3900,
+     "memo": "Instructor membership and exam fees"
+    },
+    {
+     "vendor": "Trade Faculty Institute",
+     "base": 2600,
+     "memo": "Pedagogy workshop seats"
+    }
+   ],
+   "events": [
+    {
+     "key": "cwi",
+     "vendor": "National Weld Standards Council",
+     "memos": [
+      "CWI inspector prep course 6 seats - PO 46410",
+      "CWI exam sitting fees - WO 9255"
+     ],
+     "cross_memo": "CWI prep course - travel and lodging",
+     "plain": [
+      "the CWI inspector prep course",
+      "the CWI exam sitting fees",
+      "the CWI prep seats"
+     ],
+     "oblique": [
+      "sending teachers for the top inspection credential",
+      "what accreditation reviewers asked of faculty",
+      "the senior qualification push",
+      "advanced licensing for staff",
+      "raising credentials of our teaching team",
+      "a requirement for the new employer contract",
+      "the elite exam attempt",
+      "getting our people certified to judge other welders",
+      "career ladder spending for instructors",
+      "the faculty upskilling initiative",
+      "the investment in teacher credentials",
+      "what the board wanted before expanding",
+      "backing staff through a hard test",
+      "the certification drive",
+      "the quality assurance qualification wave",
+      "the bump in staff education"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "aerospace",
+     "vendor": "Skyline Aerospace Training",
+     "memos": [
+      "Orbital welding instructor course - PO 46477",
+      "Orbital welding course materials - WO 9280"
+     ],
+     "cross_memo": "Orbital welding course - visiting trainer",
+     "plain": [
+      "the orbital welding instructor course",
+      "the orbital welding course materials",
+      "the orbital welding course"
+     ],
+     "oblique": [
+      "teaching staff learning automated tube joining",
+      "skills for the semiconductor partnership",
+      "a specialty taught by an outside expert",
+      "the instructors going back to school",
+      "what a new employer asked us to teach",
+      "the leap into automated precision work",
+      "upskilling for the clean room trades",
+      "the high tech teaching addition",
+      "preparing faculty for a fresh course offering",
+      "a niche field nobody on staff knew",
+      "expanding into industries beyond construction",
+      "the pilot program prep",
+      "the instruction that unlocks new contracts",
+      "staff education for the robotic side",
+      "the new curriculum readiness",
+      "the expertise we bought in"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Facility Ventilation and Utilities",
+   "aliases": [
+    "ventilation",
+    "utilities",
+    "shop utilities",
+    "fume extraction",
+    "power and exhaust"
+   ],
+   "narrative": [
+    "Ventilation",
+    "Utilities",
+    "Fume extraction"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Electric & Power",
+     "base": 18500,
+     "memo": "Electricity - shop meter"
+    },
+    {
+     "vendor": "AirFlow Environmental",
+     "base": 6700,
+     "memo": "Fume extractor filter service - monthly"
+    },
+    {
+     "vendor": "City Water & Sewer",
+     "base": 2400,
+     "memo": "Water and sewer"
+    }
+   ],
+   "events": [
+    {
+     "key": "ductwork",
+     "vendor": "AirFlow Environmental",
+     "memos": [
+      "Source capture arm install bays 7-12 - WO 9301",
+      "Source capture duct reroute - PO 46520"
+     ],
+     "cross_memo": "Source capture arms - roof curb work",
+     "plain": [
+      "the source capture arm install",
+      "the source capture duct reroute",
+      "the source capture arms"
+     ],
+     "oblique": [
+      "clearing smoke from the newest bays",
+      "the project that expanded how many students fit",
+      "extra stations in the back of the building",
+      "a larger layout for more trainees",
+      "the lab expansion",
+      "hoods that hover over the work",
+      "removing welding vapor at the point of origin",
+      "the airflow redesign",
+      "what the fire department flagged",
+      "the six station addition",
+      "new equipment hung from the ceiling",
+      "moving the pipe that carries the exhaust",
+      "the build out for the evening session",
+      "the retrofit behind the enrollment growth",
+      "a project opening more seats",
+      "the physical alteration to the training floor"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "rooftop",
+     "vendor": "Cascade Mechanical",
+     "memos": [
+      "Rooftop makeup air unit replacement - WO 9322",
+      "Rooftop MAU crane lift - PO 46561"
+     ],
+     "cross_memo": "Rooftop MAU replacement - roof patching",
+     "plain": [
+      "the rooftop makeup air unit replacement",
+      "the rooftop MAU crane lift",
+      "the rooftop makeup air unit"
+     ],
+     "oblique": [
+      "the heating failure in January",
+      "the machine on top of the building that died",
+      "cold classrooms last winter",
+      "a big mechanical item bought in an emergency",
+      "air coming into the building after the fans pull it out",
+      "the climate equipment that was beyond repair",
+      "a replacement that arrived by helicopter style lift",
+      "what the landlord would not cover",
+      "the comfort system overhaul",
+      "the unit that was twenty years old",
+      "fresh air supply change",
+      "the equipment aged out",
+      "the unexpected capital hit",
+      "the cold snap casualty",
+      "the heavy item lowered by crane",
+      "fixing the thing that keeps booths livable"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Student Project Materials",
+   "aliases": [
+    "project materials",
+    "student projects",
+    "steel stock",
+    "capstone materials",
+    "fabrication stock"
+   ],
+   "narrative": [
+    "Project materials",
+    "Student projects",
+    "Steel stock"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Steel Service",
+     "base": 16400,
+     "memo": "Plate and flat bar remnants - PO 47001"
+    },
+    {
+     "vendor": "Metalworks Direct",
+     "base": 5800,
+     "memo": "Tube and angle assortment"
+    }
+   ],
+   "events": [
+    {
+     "key": "trailerbuild",
+     "vendor": "Ridgeline Steel Service",
+     "memos": [
+      "Utility trailer build kit 4 units - PO 47090",
+      "Utility trailer axle and hitch components - WO 9400"
+     ],
+     "cross_memo": "Utility trailer build kit - paint and powder coat",
+     "plain": [
+      "the utility trailer build kit",
+      "the utility trailer axle and hitch components",
+      "the utility trailer build"
+     ],
+     "oblique": [
+      "the capstone that students sell to the public",
+      "rolling projects for fundraising",
+      "what the advanced cohort fabricated to order",
+      "vehicles built by trainees",
+      "the community partnership build",
+      "what customers ordered from the program",
+      "products made for resale",
+      "large project work in the back lot",
+      "hauling units made by classes",
+      "the commissioned job from the county",
+      "the bigger than usual shop project",
+      "a revenue producing assignment",
+      "the hands on build that finances scholarships",
+      "stock for something with wheels",
+      "a demonstration of what graduates can make",
+      "the largest class assignment of the year"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "sculpture",
+     "vendor": "Artisan Metals Collective",
+     "memos": [
+      "Corten steel plate public sculpture - PO 47122",
+      "Corten sculpture anchor bolts - WO 9415"
+     ],
+     "cross_memo": "Corten sculpture - crane install",
+     "plain": [
+      "the Corten steel public sculpture",
+      "the Corten sculpture anchor bolts",
+      "the Corten sculpture"
+     ],
+     "oblique": [
+      "the city art commission",
+      "a decorative piece for the courthouse square",
+      "the work that put our name in public view",
+      "a showpiece with rust colored finish",
+      "the joint effort with the arts council",
+      "outdoor art made by trainees",
+      "a marketing driven build",
+      "what the mayor unveiled in spring",
+      "the monument installed downtown",
+      "a goodwill project for enrollment",
+      "creative work for the sponsor gala",
+      "the aesthetic outlier among our classes",
+      "the installation that drew press coverage",
+      "a stand alone sponsored artwork",
+      "an artsy project in a trade school",
+      "the sculptural piece built by the advanced class"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Job Placement and Employer Outreach",
+   "aliases": [
+    "placement",
+    "employer outreach",
+    "job fairs",
+    "recruiting events",
+    "career services"
+   ],
+   "narrative": [
+    "Placement",
+    "Employer outreach",
+    "Career services"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hirewell Career Platform",
+     "base": 2800,
+     "memo": "Job board subscription - monthly"
+    },
+    {
+     "vendor": "Metro Event Rentals",
+     "base": 1500,
+     "memo": "Career center event supplies"
+    }
+   ],
+   "events": [
+    {
+     "key": "expo",
+     "vendor": "Hirewell Career Platform",
+     "memos": [
+      "Regional hiring expo booth and signage - PO 47210",
+      "Regional hiring expo employer lunch - WO 9450"
+     ],
+     "cross_memo": "Regional hiring expo - staff mileage",
+     "plain": [
+      "the regional hiring expo booth",
+      "the regional hiring expo employer lunch",
+      "the regional hiring expo"
+     ],
+     "oblique": [
+      "the big annual gathering of local fabricators",
+      "getting graduates in front of recruiters",
+      "an event where companies came to meet seniors",
+      "the one day showcase",
+      "our biggest placement push",
+      "what drives the graduation job rate",
+      "a trade show appearance",
+      "hosting hiring managers on campus",
+      "the spring networking day",
+      "where employers signed offer letters",
+      "outreach to the industrial belt",
+      "the visibility campaign",
+      "the attempt to improve our placement numbers",
+      "an annual fair that takes planning",
+      "the exhibit with banners and swag",
+      "a gathering with free meals for visitors"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "scholarshipdinner",
+     "vendor": "Grand Hall Catering",
+     "memos": [
+      "Foundation gala dinner 200 covers - PO 47244",
+      "Foundation gala dinner AV and decor - WO 9462"
+     ],
+     "cross_memo": "Foundation gala dinner - printing and invitations",
+     "plain": [
+      "the foundation gala dinner",
+      "the foundation gala dinner AV and decor",
+      "the foundation gala covers"
+     ],
+     "oblique": [
+      "the fundraiser for student aid",
+      "an evening with donors and alumni",
+      "black tie style night for supporters",
+      "money raising night in the ballroom",
+      "an event to court large gifts",
+      "the benefit supper",
+      "a night celebrating graduates",
+      "the event the board insists on yearly",
+      "a donor appreciation evening",
+      "what alumni relations organized",
+      "the formal dinner with speeches",
+      "the annual night that funds tuition help",
+      "hosting the sponsors",
+      "an occasion for pledges",
+      "the ballroom event",
+      "catered night to thank patrons"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

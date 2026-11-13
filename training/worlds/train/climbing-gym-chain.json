@@ -1,0 +1,830 @@
+{
+ "slug": "climbing-gym-chain",
+ "industry": "climbing gym chain",
+ "entities": [
+  "Summit Forge Climbing Co.",
+  "Granite Loop Gyms LLC",
+  "Chalkline Vertical Holdings",
+  "Boulder Hearth Fitness Inc.",
+  "Redpoint Collective Gyms"
+ ],
+ "accounts": [
+  {
+   "name": "Route Setting Labor",
+   "aliases": [
+    "route setting",
+    "setting labor",
+    "setter payroll",
+    "routesetting costs",
+    "setting crew spend"
+   ],
+   "narrative": [
+    "Route setting",
+    "Setting labor",
+    "Setter payroll"
+   ],
+   "recurring": [
+    {
+     "vendor": "Vertex Setting Services",
+     "base": 14500,
+     "memo": "Contract setters - weekly rotation"
+    },
+    {
+     "vendor": "Cairn Crew Staffing",
+     "base": 9200,
+     "memo": "Temp setter hours - PO 41822"
+    },
+    {
+     "vendor": "Anchor Payroll Partners",
+     "base": 6800,
+     "memo": "Setter payroll fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "nationals",
+     "vendor": "Vertex Setting Services",
+     "memos": [
+      "Nationals Qualifier Reset - overtime crew WO 7714",
+      "Nationals Qualifier Reset - weekend premium"
+     ],
+     "cross_memo": "Nationals Qualifier Reset - temporary wall rental",
+     "plain": [
+      "the nationals qualifier reset",
+      "the nationals qualifier overtime",
+      "the qualifier reset crew"
+     ],
+     "oblique": [
+      "the sanctioned competition prep",
+      "all the extra hours worked on the big contest",
+      "the rush to get walls ready for visiting athletes",
+      "the youth championship lead-up",
+      "stripping and rebuilding every problem in the main room",
+      "the federation event we hosted",
+      "extra shifts to meet the sanctioning body's specs",
+      "the regional athletes coming through",
+      "prepping the walls for judges",
+      "the contest weekend",
+      "last-minute round-the-clock work for the tournament",
+      "turning the gym into a venue",
+      "the event the national body asked us to host",
+      "competition-grade problems",
+      "getting the facility ready for spectators",
+      "our turn to host the circuit"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "overhang",
+     "vendor": "Highline Ropes Engineering",
+     "memos": [
+      "Cavern Overhang Install - structural bolting PO 5530",
+      "Cavern Overhang Install - panel fabrication"
+     ],
+     "cross_memo": "Cavern Overhang Install - lift rental",
+     "plain": [
+      "the cavern overhang install",
+      "the cavern overhang panels",
+      "the cavern overhang bolting"
+     ],
+     "oblique": [
+      "the new steep terrain at the flagship",
+      "adding a feature that curves out over the mats",
+      "the bigger-angle expansion members asked for",
+      "that tall roofed section",
+      "construction of the dramatic leaning wall",
+      "the addition for advanced climbers",
+      "carving out a new training zone",
+      "the steeper section going in",
+      "the expansion of the hardest area",
+      "what we built to attract elite members",
+      "the ceiling-hugging addition",
+      "new athletic terrain",
+      "fabricating angled wooden sections",
+      "the project to extend the wall upward and outward",
+      "the construction crew onsite for several weeks",
+      "the capital project at the main location"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Climbing Wall Maintenance",
+   "aliases": [
+    "wall maintenance",
+    "wall upkeep",
+    "hold cleaning",
+    "facility upkeep",
+    "wall repairs"
+   ],
+   "narrative": [
+    "Wall maintenance",
+    "Wall upkeep",
+    "Hold cleaning"
+   ],
+   "recurring": [
+    {
+     "vendor": "Grip Clean Industrial",
+     "base": 5400,
+     "memo": "Hold washing service - monthly"
+    },
+    {
+     "vendor": "Padwell Surfaces",
+     "base": 3900,
+     "memo": "Mat patching supplies"
+    },
+    {
+     "vendor": "Ironclad Facility Care",
+     "base": 7100,
+     "memo": "Janitorial - climbing floors PO 38810"
+    }
+   ],
+   "events": [
+    {
+     "key": "mildew",
+     "vendor": "Grip Clean Industrial",
+     "memos": [
+      "Spore Remediation Event - fungicidal treatment WO 2291",
+      "Spore Remediation Event - hold replacement"
+     ],
+     "cross_memo": "Spore Remediation Event - air testing",
+     "plain": [
+      "the spore remediation event",
+      "the spore remediation treatment",
+      "the spore remediation holds"
+     ],
+     "oblique": [
+      "the damp problem in the basement room",
+      "tackling the dark growth on the texture",
+      "what the health inspector flagged",
+      "an outbreak that closed a section",
+      "the humidity mess after the flood",
+      "a smell members complained about",
+      "scraping and treating the lower panels",
+      "the biological cleanup",
+      "the moisture issue in the old building",
+      "a stretch of walls we had to close",
+      "clearing out the growth that took over",
+      "a sanitation scare",
+      "the aftermath of the leaky roof",
+      "emergency decontamination of the older location",
+      "the environmental testing contractor visit",
+      "fixing what the wet season did"
+     ],
+     "low": 10500,
+     "high": 21000
+    },
+    {
+     "key": "fall",
+     "vendor": "Tensile Safety Inspections",
+     "memos": [
+      "Autobelay Recertification Sweep - annual testing PO 6602",
+      "Autobelay Recertification Sweep - unit replacement"
+     ],
+     "cross_memo": "Autobelay Recertification Sweep - certification fees",
+     "plain": [
+      "the autobelay recertification sweep",
+      "the autobelay recertification testing",
+      "the autobelay recertification units"
+     ],
+     "oblique": [
+      "the mandatory safety audit of the self-retracting devices",
+      "getting the auto-catch gear signed off",
+      "the insurer's demand for equipment checks",
+      "safety gear that failed its inspection",
+      "regulatory paperwork for the fall protection",
+      "replacing worn-out catch mechanisms",
+      "the annual compliance round",
+      "what the underwriter required before renewal",
+      "the gear inspection firm's visit",
+      "engineers testing the line-retraction hardware",
+      "swapping aging units across all locations",
+      "the tagging and certifying work",
+      "the safety review after a near miss",
+      "all the devices that had to be pulled and tested",
+      "third-party signoff on the safety equipment",
+      "closing the open compliance items"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Rental Gear and Shoe Replacement",
+   "aliases": [
+    "rental gear",
+    "rental shoes",
+    "shoe replacement",
+    "harness costs",
+    "rental fleet"
+   ],
+   "narrative": [
+    "Rental gear",
+    "Rental shoes",
+    "Shoe replacement"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sole Craft Footwear",
+     "base": 4800,
+     "memo": "Rental shoe resole program"
+    },
+    {
+     "vendor": "Belay Supply Co.",
+     "base": 3200,
+     "memo": "Harness and carabiner restock PO 29917"
+    },
+    {
+     "vendor": "Fresh Fit Sanitizing",
+     "base": 2100,
+     "memo": "Shoe deodorizing service"
+    }
+   ],
+   "events": [
+    {
+     "key": "fleet",
+     "vendor": "Sole Craft Footwear",
+     "memos": [
+      "Youth Camp Footwear Order - kids sizes 28-34 PO 7745",
+      "Youth Camp Footwear Order - velcro closure batch"
+     ],
+     "cross_memo": "Youth Camp Footwear Order - cubby shelving",
+     "plain": [
+      "the youth camp footwear order",
+      "the youth camp kids sizes",
+      "the youth camp velcro batch"
+     ],
+     "oblique": [
+      "gear for the summer programs",
+      "outfitting the junior participants",
+      "the smaller feet we had to cater to",
+      "what the after-school partnership needed",
+      "footwear for the school-age program",
+      "sizing up for the little ones",
+      "the programs for children that took off",
+      "stocking for the kids who signed up",
+      "equipping the birthday party crowd",
+      "tiny sizes we ran out of",
+      "the seasonal enrollment surge",
+      "filling the shelves for young beginners",
+      "the new school partnership",
+      "preparing for a wave of younger customers",
+      "scaling up the program for families",
+      "what the camp director requested"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "recall",
+     "vendor": "Kestrel Gear Recall Services",
+     "memos": [
+      "Quickdraw Defect Exchange - manufacturer lot 88-C",
+      "Quickdraw Defect Exchange - freight returns"
+     ],
+     "cross_memo": "Quickdraw Defect Exchange - staff training session",
+     "plain": [
+      "the quickdraw defect exchange",
+      "the quickdraw defect lot",
+      "the quickdraw defect returns"
+     ],
+     "oblique": [
+      "pulling hardware flagged by the maker",
+      "the safety bulletin that hit our inventory",
+      "swapping out connectors with a bad batch",
+      "the manufacturer's warning notice",
+      "taking gear off the floor overnight",
+      "what the industry alert required",
+      "replacing equipment we'd just bought",
+      "the faulty metal pieces",
+      "a supplier problem that cost us",
+      "the urgent replacement of hardware",
+      "a notice we got from overseas",
+      "pulling it all and starting over",
+      "the shipment that turned out defective",
+      "cleanup after the bad shipment",
+      "the stop-use order",
+      "gear withdrawn from every location"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Member Programs and Instruction",
+   "aliases": [
+    "instruction",
+    "coaching costs",
+    "member programs",
+    "class instructors",
+    "program staff"
+   ],
+   "narrative": [
+    "Instruction",
+    "Coaching costs",
+    "Member programs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pitch Academy Instructors",
+     "base": 11800,
+     "memo": "Instructor contract hours"
+    },
+    {
+     "vendor": "Crux Curriculum Group",
+     "base": 2600,
+     "memo": "Learn-to-climb curriculum license"
+    },
+    {
+     "vendor": "Peak Insurance Brokers",
+     "base": 3700,
+     "memo": "Program liability coverage PO 31550"
+    }
+   ],
+   "events": [
+    {
+     "key": "clinic",
+     "vendor": "Pitch Academy Instructors",
+     "memos": [
+      "Olympic Medalist Clinic - appearance fee WO 9908",
+      "Olympic Medalist Clinic - travel and lodging"
+     ],
+     "cross_memo": "Olympic Medalist Clinic - signage printing",
+     "plain": [
+      "the olympic medalist clinic",
+      "the olympic medalist appearance",
+      "the olympic medalist visit"
+     ],
+     "oblique": [
+      "bringing a famous athlete in for members",
+      "the celebrity guest weekend",
+      "a star's visit that sold out",
+      "our marquee guest",
+      "the headline draw for the season",
+      "what marketing pushed to get the buzz",
+      "hosting someone from the podium",
+      "the one-time big-name workshop",
+      "a high-profile coach who visited",
+      "the star power we paid for",
+      "an event that filled the waitlist",
+      "flying in a champion",
+      "the premium weekend programming",
+      "the guest who put us on the map",
+      "the exclusive session with a legend",
+      "the splashy member event"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "cert",
+     "vendor": "Alpine Guide Institute",
+     "memos": [
+      "Lead Instructor Credentialing - course tuition PO 7123",
+      "Lead Instructor Credentialing - exam proctoring"
+     ],
+     "cross_memo": "Lead Instructor Credentialing - backfill coverage",
+     "plain": [
+      "the lead instructor credentialing",
+      "the lead instructor tuition",
+      "the lead instructor exams"
+     ],
+     "oblique": [
+      "getting staff professionally qualified",
+      "the training investment in our coaches",
+      "the accreditation push for the team",
+      "sending the team to get licensed",
+      "the education push for the teaching staff",
+      "upskilling the people who teach",
+      "the formal qualification program",
+      "what the insurer wanted from our staff",
+      "professional development for the crew",
+      "a requirement for the new tier of classes",
+      "getting our people certified",
+      "the coursework that took people offline",
+      "standards imposed by the industry association",
+      "credentials for the full-time team",
+      "the school we paid for",
+      "making the staff officially capable"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Chalk and Consumables",
+   "aliases": [
+    "chalk",
+    "consumables",
+    "retail consumables",
+    "member supplies",
+    "supply costs"
+   ],
+   "narrative": [
+    "Chalk",
+    "Consumables",
+    "Supply costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Dust Devil Chalk Supply",
+     "base": 4100,
+     "memo": "Loose chalk bulk order"
+    },
+    {
+     "vendor": "Tape and Tag Wholesale",
+     "base": 1900,
+     "memo": "Route tape and tags PO 40233"
+    },
+    {
+     "vendor": "Bright Brush Co.",
+     "base": 1100,
+     "memo": "Hold brushes"
+    }
+   ],
+   "events": [
+    {
+     "key": "liquid",
+     "vendor": "Dust Devil Chalk Supply",
+     "memos": [
+      "Gel Formula Launch - pallet shipment PO 8844",
+      "Gel Formula Launch - dispenser units"
+     ],
+     "cross_memo": "Gel Formula Launch - counter display",
+     "plain": [
+      "the gel formula launch",
+      "the gel formula pallet",
+      "the gel formula dispensers"
+     ],
+     "oblique": [
+      "the new product we started stocking",
+      "a switch to a different type of grip aid",
+      "what members wanted instead of powder",
+      "the trial of a cleaner alternative",
+      "a bigger pallet than usual",
+      "the change that cut the dust in the air",
+      "our first stab at something new",
+      "the upgrade our customers requested",
+      "an alternate offering at the front desk",
+      "the experiment with fluid in bottles",
+      "phasing out the old stuff",
+      "a quick pivot on supplies",
+      "the new item we promoted heavily",
+      "the stockpile for the new rollout",
+      "extra inventory to support the change",
+      "what the buyers picked up at the trade show"
+     ],
+     "low": 10000,
+     "high": 19500
+    },
+    {
+     "key": "ban",
+     "vendor": "Evergreen Compliance Filters",
+     "memos": [
+      "Particulate Control Retrofit - HVAC filtration PO 5019",
+      "Particulate Control Retrofit - monitoring sensors"
+     ],
+     "cross_memo": "Particulate Control Retrofit - ductwork modification",
+     "plain": [
+      "the particulate control retrofit",
+      "the particulate control filtration",
+      "the particulate control sensors"
+     ],
+     "oblique": [
+      "the air quality fix after complaints",
+      "a regulator's request about what hangs in the room",
+      "cleaning up what floats around the gym",
+      "stopping the haze near the ceiling",
+      "equipment to catch what we kick up",
+      "what the neighbors and landlord asked",
+      "the ventilation upgrade",
+      "machines that scrub the room",
+      "the airborne cleanup",
+      "a response to a city citation",
+      "improvements that let people breathe easier",
+      "the project to stop the cloudy lighting",
+      "a fix for the grey film on every surface",
+      "the inspector's demand about the air",
+      "hardware added to the roof",
+      "the extra cleanliness measures"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Front Desk and Membership Systems",
+   "aliases": [
+    "front desk",
+    "membership systems",
+    "check-in tech",
+    "waiver software",
+    "pos and access"
+   ],
+   "narrative": [
+    "Front desk",
+    "Membership systems",
+    "Check-in tech"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clip Access Systems",
+     "base": 6300,
+     "memo": "Door access and turnstile subscription"
+    },
+    {
+     "vendor": "Waiver Wing Digital",
+     "base": 1700,
+     "memo": "E-waiver platform"
+    },
+    {
+     "vendor": "Swipe Point Payments",
+     "base": 3400,
+     "memo": "Card processing fees PO 36605"
+    }
+   ],
+   "events": [
+    {
+     "key": "kiosk",
+     "vendor": "Clip Access Systems",
+     "memos": [
+      "Self Serve Kiosk Rollout - hardware units WO 6671",
+      "Self Serve Kiosk Rollout - onsite install"
+     ],
+     "cross_memo": "Self Serve Kiosk Rollout - signage and wraps",
+     "plain": [
+      "the self serve kiosk rollout",
+      "the self serve kiosk hardware",
+      "the self serve kiosk install"
+     ],
+     "oblique": [
+      "letting members skip the line",
+      "automating the lobby",
+      "machines at the entry so staff can focus elsewhere",
+      "the plan to cut waiting time",
+      "what ops signed off for peak hours",
+      "touchscreens by the door",
+      "trimming the desk headcount",
+      "the front-end modernization",
+      "the change meant to speed up arrivals",
+      "technology purchased for the reception area",
+      "tablets mounted at the entrance",
+      "the pilot that grew into all sites",
+      "self-direction at arrival",
+      "the lobby redesign",
+      "the response to Saturday lines",
+      "upgrading how people get in"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "breach",
+     "vendor": "Sentinel Forensics Group",
+     "memos": [
+      "Credential Stuffing Incident - investigation retainer PO 9930",
+      "Credential Stuffing Incident - member notification mailing"
+     ],
+     "cross_memo": "Credential Stuffing Incident - credit monitoring offer",
+     "plain": [
+      "the credential stuffing incident",
+      "the credential stuffing investigation",
+      "the credential stuffing mailing"
+     ],
+     "oblique": [
+      "the security scare that hit member accounts",
+      "an attack on logins",
+      "outside specialists called in after hackers got in",
+      "the data problem we had to disclose",
+      "telling everyone their information was exposed",
+      "the legal-driven cleanup",
+      "a break-in to our online systems",
+      "the cyber event",
+      "consultants hired the week it happened",
+      "the unauthorized access to the customer list",
+      "the notice we mailed to thousands",
+      "what our counsel advised us to do",
+      "the breach response",
+      "the forensic work after the alert",
+      "a stolen-passwords episode",
+      "fallout from the compromised accounts"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Facility Utilities and Climate Control",
+   "aliases": [
+    "utilities",
+    "climate control",
+    "gym utilities",
+    "energy costs",
+    "hvac and power"
+   ],
+   "narrative": [
+    "Utilities",
+    "Climate control",
+    "Energy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Metro Power & Light",
+     "base": 18500,
+     "memo": "Electric - all sites"
+    },
+    {
+     "vendor": "Aquaflow Municipal",
+     "base": 4200,
+     "memo": "Water and sewer PO 35120"
+    },
+    {
+     "vendor": "Cozy Gas Co.",
+     "base": 7600,
+     "memo": "Natural gas - heating"
+    }
+   ],
+   "events": [
+    {
+     "key": "solar",
+     "vendor": "Metro Power & Light",
+     "memos": [
+      "Demand Surge Charge - peak tariff WO 4432",
+      "Demand Surge Charge - emergency load adjustment"
+     ],
+     "cross_memo": "Demand Surge Charge - generator rental",
+     "plain": [
+      "the demand surge charge",
+      "the demand surge tariff",
+      "the demand surge adjustment"
+     ],
+     "oblique": [
+      "the heat wave that pushed the meter",
+      "a penalty from the grid operator",
+      "extreme weather over a long stretch",
+      "a spike when everyone's AC ran",
+      "the premium we paid at the worst hour",
+      "what the utility billed after the cold snap",
+      "the storm that overloaded our circuits",
+      "a rate we couldn't control",
+      "a bill shock from the season",
+      "temporary fees when the grid was strained",
+      "power we pulled at the wrong time",
+      "the punishing summer",
+      "the utility's fine print kicking in",
+      "something the provider added on",
+      "the energy crunch",
+      "too many fans and lights all at once"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "boiler",
+     "vendor": "Furnace Ridge Mechanical",
+     "memos": [
+      "Chiller Plant Replacement - unit supply PO 7881",
+      "Chiller Plant Replacement - crane and rigging"
+     ],
+     "cross_memo": "Chiller Plant Replacement - temporary cooling tent",
+     "plain": [
+      "the chiller plant replacement",
+      "the chiller plant unit",
+      "the chiller plant rigging"
+     ],
+     "oblique": [
+      "swapping out the machine that keeps the room cool",
+      "a new rooftop system after the old one died",
+      "the equipment that finally gave out",
+      "moving heavy machinery by crane",
+      "the breakdown in July",
+      "the major mechanical overhaul",
+      "what the engineer said had to be replaced",
+      "the dead system that cost us a weekend",
+      "a big install on the roof",
+      "the end of life for our old setup",
+      "cooling the climbing floor again",
+      "comfortable temperatures restored",
+      "the high-ticket fix",
+      "the engineering firm's recommendation",
+      "replacing the plant that was twenty years old",
+      "the money spent so nobody sweated"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Community Events",
+   "aliases": [
+    "marketing",
+    "community events",
+    "member events",
+    "promotions",
+    "outreach spend"
+   ],
+   "narrative": [
+    "Marketing",
+    "Community events",
+    "Promotions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hype Social Media Studio",
+     "base": 5500,
+     "memo": "Social content retainer"
+    },
+    {
+     "vendor": "Brightside Print",
+     "base": 2300,
+     "memo": "Flyers and banners PO 33018"
+    },
+    {
+     "vendor": "Pulse Email Marketing",
+     "base": 1400,
+     "memo": "Newsletter platform"
+    }
+   ],
+   "events": [
+    {
+     "key": "grand",
+     "vendor": "Hype Social Media Studio",
+     "memos": [
+      "Flagship Reopening Gala - influencer campaign WO 5527",
+      "Flagship Reopening Gala - video production"
+     ],
+     "cross_memo": "Flagship Reopening Gala - catering deposit",
+     "plain": [
+      "the flagship reopening gala",
+      "the flagship reopening campaign",
+      "the flagship reopening video"
+     ],
+     "oblique": [
+      "the party celebrating the finished renovation",
+      "getting the word out about the relaunch",
+      "an expensive night to show off the upgrade",
+      "the buzz-building push",
+      "paid personalities posting about us",
+      "a big celebration with guests",
+      "the premiere we threw",
+      "a splash to win back lapsed members",
+      "filming the event for later promotion",
+      "the evening for press and VIPs",
+      "announcing we were back in business",
+      "the open house everyone was invited to",
+      "a milestone party",
+      "what the owners wanted for the occasion",
+      "media attention around the reveal",
+      "letting the neighborhood see the new space"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "sponsor",
+     "vendor": "Trailhead Sponsorships Inc.",
+     "memos": [
+      "Regional Bouldering Tour Title Sponsor - fee PO 8305",
+      "Regional Bouldering Tour Title Sponsor - banner activation"
+     ],
+     "cross_memo": "Regional Bouldering Tour Title Sponsor - athlete stipends",
+     "plain": [
+      "the regional bouldering tour title sponsor",
+      "the regional bouldering tour fee",
+      "the regional bouldering tour banners"
+     ],
+     "oblique": [
+      "our name on a series of competitions",
+      "paying to be the headline brand for the circuit",
+      "getting in front of climbers all season",
+      "what the sales team pitched to boost sign-ups",
+      "the naming rights deal",
+      "the partnership with a touring league",
+      "exposure at stops across the state",
+      "the season-long brand play",
+      "a commitment we made for visibility",
+      "branding at venues we do not own",
+      "a sponsorship we signed in the spring",
+      "the competition circuit we backed",
+      "advertising that did not run online",
+      "money spent to be seen at other gyms",
+      "an agreement with the promoters",
+      "being the presenting name"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,703 @@
+{
+ "slug": "shoe-manufacturer",
+ "industry": "shoe manufacturer",
+ "entities": [
+  "Stridecraft Footwear Works",
+  "Heelstone Manufacturing Co",
+  "Lastline Shoe Industries",
+  "Soleway Brands Inc",
+  "Brogan Ridge Footwear"
+ ],
+ "accounts": [
+  {
+   "name": "Leather & Hide Procurement",
+   "aliases": [
+    "leather",
+    "hides",
+    "hide purchasing",
+    "leather buying",
+    "raw leather spend"
+   ],
+   "narrative": [
+    "Leather",
+    "Hide purchasing",
+    "Raw leather spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tannery Row Supply",
+     "base": 28000,
+     "memo": "Inv full-grain cowhide Mnt lot"
+    },
+    {
+     "vendor": "Ostrander Hide Brokers",
+     "base": 19500,
+     "memo": "Svc split suede sides"
+    },
+    {
+     "vendor": "Calloway Skins LLC",
+     "base": 9200,
+     "memo": "Qtr calfskin allotment"
+    }
+   ],
+   "events": [
+    {
+     "key": "embossing",
+     "vendor": "Tannery Row Supply",
+     "memos": [
+      "Exotic grain embossing — plate setup",
+      "Exotic grain embossing — premium hides"
+     ],
+     "cross_memo": "Exotic grain embossing — die tooling",
+     "plain": [
+      "the exotic grain embossing",
+      "exotic grain embossing costs",
+      "the embossing plate setup"
+     ],
+     "oblique": [
+      "the fancy textured finish on the flagship boots",
+      "what the design team wanted for the holiday line",
+      "pressing patterns into the upper material",
+      "the pricier surface treatment",
+      "a look the creative director insisted on",
+      "stamped skin patterns",
+      "gator-style surface work",
+      "the premium texture program",
+      "upgrading how the uppers look on the top tier",
+      "the new stamped finish",
+      "patterned leather for the luxury range",
+      "a stylistic upgrade to the flagship line",
+      "the dressy surface effect",
+      "what we paid for the decorative finish",
+      "relief patterns in the material",
+      "the signature texture for fall"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "quarantine",
+     "vendor": "Redfield Agri Partners",
+     "memos": [
+      "Anthrax quarantine — rejected shipment",
+      "Anthrax quarantine — replacement lot Inv"
+     ],
+     "cross_memo": "Anthrax quarantine — disposal fees",
+     "plain": [
+      "the anthrax quarantine",
+      "anthrax quarantine replacement",
+      "the anthrax quarantine shipment"
+     ],
+     "oblique": [
+      "a contaminated overseas batch",
+      "the health scare on imported raw material",
+      "scrapping a lot that failed safety screening",
+      "what we had to reorder after the recall",
+      "a bad consignment from abroad",
+      "buying cover stock in a hurry",
+      "the pathogen incident",
+      "material that customs would not release",
+      "replacing a whole delivery that was condemned",
+      "the biohazard problem with an inbound load",
+      "an emergency restock from another source",
+      "a tainted pallet of raw skins",
+      "the government hold on our imports",
+      "the safety hold on foreign cowhides",
+      "scrapped inbound goods",
+      "the infected consignment"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Rubber Outsole Compounds",
+   "aliases": [
+    "outsoles",
+    "rubber compounds",
+    "sole rubber",
+    "outsole materials",
+    "rubber spend"
+   ],
+   "narrative": [
+    "Outsoles",
+    "Rubber compounds",
+    "Sole rubber"
+   ],
+   "recurring": [
+    {
+     "vendor": "Vulcan Polymer Group",
+     "base": 22000,
+     "memo": "Inv nitrile rubber batch"
+    },
+    {
+     "vendor": "Greenfield Elastomers",
+     "base": 14500,
+     "memo": "Svc carbon black additive Mnt"
+    }
+   ],
+   "events": [
+    {
+     "key": "devulcanizer",
+     "vendor": "Vulcan Polymer Group",
+     "memos": [
+      "Recycled crumb blend — trial run",
+      "Recycled crumb blend — extra batch Inv"
+     ],
+     "cross_memo": "Recycled crumb blend — lab testing",
+     "plain": [
+      "the recycled crumb blend",
+      "recycled crumb blend trials",
+      "the recycled crumb blend batch"
+     ],
+     "oblique": [
+      "the eco-friendly material pilot",
+      "using reclaimed scrap in new soles",
+      "the sustainability experiment on the factory floor",
+      "what we spent testing greener input",
+      "turning old tires into footwear bottoms",
+      "the green sourcing initiative",
+      "a pilot to cut landfill waste",
+      "trial production with salvaged stock",
+      "the environmental pledge from the board",
+      "a pilot for the climate-friendly line",
+      "reworking old material into new product",
+      "the pre-consumer waste program",
+      "the greener formulation test",
+      "a try at lower-footprint production",
+      "processing leftovers back into inventory",
+      "our first low-carbon run"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "antislip",
+     "vendor": "Kestrel Traction Labs",
+     "memos": [
+      "Wet-grip tread patent — licensing fee",
+      "Wet-grip tread patent — pilot molds Inv"
+     ],
+     "cross_memo": "Wet-grip tread patent — legal review",
+     "plain": [
+      "the wet-grip tread patent",
+      "wet-grip tread licensing",
+      "the wet-grip tread pilot"
+     ],
+     "oblique": [
+      "a safer sole design for kitchen workers",
+      "the slip-resistant product we licensed",
+      "paying to use someone else's invention",
+      "a traction technology bought from outside",
+      "the restaurant uniform footwear initiative",
+      "a deal for better floor purchase on soles",
+      "the intellectual property we borrowed",
+      "cleaner footing for hospital staff",
+      "buying the rights to a design",
+      "the nonskid concept for the work line",
+      "accessing a rival's engineering",
+      "a fee for using a protected pattern",
+      "permission to build a grippier bottom",
+      "an outside idea for the safety range",
+      "the floor-safety design deal",
+      "what the lawyers negotiated for the sole concept"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Last & Die Tooling",
+   "aliases": [
+    "lasts",
+    "tooling",
+    "die tooling",
+    "last maintenance",
+    "tooling spend"
+   ],
+   "narrative": [
+    "Lasts",
+    "Tooling",
+    "Die tooling"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hartwell Tool & Die",
+     "base": 16000,
+     "memo": "Svc die sharpening Mnt"
+    },
+    {
+     "vendor": "Birchwood Last Makers",
+     "base": 12500,
+     "memo": "Inv wooden last set Qtr"
+    }
+   ],
+   "events": [
+    {
+     "key": "widefit",
+     "vendor": "Birchwood Last Makers",
+     "memos": [
+      "Wide-width size run — new mold set",
+      "Wide-width size run — grading Inv"
+     ],
+     "cross_memo": "Wide-width size run — sample pairs",
+     "plain": [
+      "the wide-width size run",
+      "wide-width size run molds",
+      "the wide-width size grading"
+     ],
+     "oblique": [
+      "extending the range to broader feet",
+      "a customer request for roomier fits",
+      "accommodating shoppers who couldn't find their size",
+      "the inclusivity push from marketing",
+      "catering to a bigger market segment",
+      "new shapes in the catalog",
+      "what the retailers demanded after complaints",
+      "widening who we can sell to",
+      "adding sizes at the generous end",
+      "the fit expansion project",
+      "reaching customers we had turned away",
+      "the fuller-foot initiative",
+      "building for people who need more room",
+      "a bigger assortment for orthopedic buyers",
+      "a gap in our sizing chart",
+      "the broader-foot line"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "cnc",
+     "vendor": "Meridian Precision Works",
+     "memos": [
+      "Five-axis router install — spindle assembly",
+      "Five-axis router install — calibration Svc"
+     ],
+     "cross_memo": "Five-axis router install — operator training",
+     "plain": [
+      "the five-axis router install",
+      "five-axis router calibration",
+      "the five-axis router spindle"
+     ],
+     "oblique": [
+      "the new computer-driven carving machine",
+      "automation of how we shape forms",
+      "replacing hand-finishing with a robot",
+      "the capital upgrade on the shop floor",
+      "a machine that cuts forms by itself",
+      "the digital fabrication purchase",
+      "getting off manual shaping",
+      "a modern cutter for prototypes",
+      "the equipment our engineers lobbied for",
+      "moving production into the computer age",
+      "what it cost to bring the machine online",
+      "a faster way to carve patterns",
+      "new automated shaping gear",
+      "the high-tech arrival in the tool room",
+      "the expensive new cutting rig",
+      "the machine that the old crew resisted"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Adhesives & Cementing",
+   "aliases": [
+    "glue",
+    "adhesives",
+    "cementing",
+    "bonding agents",
+    "cement costs"
+   ],
+   "narrative": [
+    "Glue",
+    "Adhesives",
+    "Bonding agents"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bondrite Chemical",
+     "base": 8800,
+     "memo": "Inv solvent cement drums"
+    },
+    {
+     "vendor": "Flexweld Industries",
+     "base": 5400,
+     "memo": "Svc hot-melt cartridges Mnt"
+    }
+   ],
+   "events": [
+    {
+     "key": "waterbased",
+     "vendor": "Bondrite Chemical",
+     "memos": [
+      "Aqueous switchover — reformulated stock",
+      "Aqueous switchover — line flushing Svc"
+     ],
+     "cross_memo": "Aqueous switchover — vent retrofit",
+     "plain": [
+      "the aqueous switchover",
+      "aqueous switchover stock",
+      "the aqueous switchover flushing"
+     ],
+     "oblique": [
+      "moving away from the smelly old formula",
+      "a regulator's demand on fumes",
+      "cleaning out the system for a safer product",
+      "the emissions compliance project",
+      "what the inspector told us to change",
+      "a gentler chemistry for our workers",
+      "cutting volatile compounds in the plant",
+      "an air-quality mandate",
+      "replacing the harsh stuff with something mild",
+      "the environmental permit condition",
+      "getting the fume numbers down",
+      "a health-and-safety overhaul of the bonding area",
+      "the nontoxic transition",
+      "retooling for a rule change",
+      "a safer product for our people",
+      "the clean-air requirement"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "recall",
+     "vendor": "Ridgeback Coatings",
+     "memos": [
+      "Delamination rework — resin reapply",
+      "Delamination rework — adhesive tubs Inv"
+     ],
+     "cross_memo": "Delamination rework — customer credits",
+     "plain": [
+      "the delamination rework",
+      "delamination rework resin",
+      "the delamination rework tubs"
+     ],
+     "oblique": [
+      "soles peeling off in customers' hands",
+      "a bad batch of footwear coming back",
+      "fixing returned pairs that fell apart",
+      "a quality failure in the field",
+      "what we spent after the complaints piled up",
+      "reattaching bottoms on defective product",
+      "the warranty problem",
+      "redoing pairs that had separated",
+      "a flaw discovered after shipping",
+      "the retailer chargebacks for falling-apart product",
+      "redoing a run that didn't hold",
+      "an embarrassing manufacturing defect",
+      "a faulty production week",
+      "pairs that came undone in the store",
+      "correcting a production error",
+      "the failed-bond fallout"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Cutting Room Labor",
+   "aliases": [
+    "cutting labor",
+    "cutters",
+    "pattern cutting",
+    "cutting room payroll",
+    "cutting wages"
+   ],
+   "narrative": [
+    "Cutting labor",
+    "Cutters",
+    "Cutting room payroll"
+   ],
+   "recurring": [
+    {
+     "vendor": "Allied Stitch Staffing",
+     "base": 24000,
+     "memo": "Inv clicker operators wk"
+    },
+    {
+     "vendor": "Northgate Temp Services",
+     "base": 11000,
+     "memo": "Svc pattern graders Mnt"
+    }
+   ],
+   "events": [
+    {
+     "key": "rushorder",
+     "vendor": "Allied Stitch Staffing",
+     "memos": [
+      "Holiday surge shift — premium hours",
+      "Holiday surge shift — overtime Inv"
+     ],
+     "cross_memo": "Holiday surge shift — night differential",
+     "plain": [
+      "the holiday surge shift",
+      "holiday surge premium hours",
+      "the holiday surge overtime"
+     ],
+     "oblique": [
+      "a flood of end-of-year orders",
+      "staying late to meet a deadline",
+      "the seasonal rush on the floor",
+      "extra hands for a peak week",
+      "the Black Friday crunch",
+      "paying people extra to hurry",
+      "a big customer's last-minute demand",
+      "getting product out the door on time",
+      "weekend work for the shipping window",
+      "a spike in demand we couldn't staff for",
+      "overnight crews",
+      "the gift-season squeeze",
+      "the retailer's urgent restock",
+      "extended hours to fill the backlog",
+      "making up lost time before the cutoff",
+      "the busiest stretch of the year"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "training",
+     "vendor": "Pinecrest Skills Institute",
+     "memos": [
+      "Laser nesting certification — course fees",
+      "Laser nesting certification — instructor Svc"
+     ],
+     "cross_memo": "Laser nesting certification — lost hours",
+     "plain": [
+      "the laser nesting certification",
+      "laser nesting certification fees",
+      "the laser nesting course"
+     ],
+     "oblique": [
+      "teaching the crew to use new software",
+      "skill upgrades for the floor staff",
+      "a class our cutters had to attend",
+      "paying outsiders to educate employees",
+      "the credential program for operators",
+      "getting the team up to speed on the new equipment",
+      "an instructor visiting the plant",
+      "workforce development spending",
+      "the schooling our people received",
+      "what the union asked for in retraining",
+      "a program to minimize wasted material",
+      "the upskilling push",
+      "learning how to waste less hide",
+      "the classroom days",
+      "making sure staff know the machine",
+      "qualifying staff on the new system"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Inbound Freight & Customs",
+   "aliases": [
+    "freight",
+    "inbound freight",
+    "customs",
+    "import duties",
+    "shipping in"
+   ],
+   "narrative": [
+    "Freight",
+    "Inbound freight",
+    "Import duties"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harborline Logistics",
+     "base": 18000,
+     "memo": "Inv ocean container drayage"
+    },
+    {
+     "vendor": "Summit Customs Brokerage",
+     "base": 7500,
+     "memo": "Svc entry filing Qtr"
+    },
+    {
+     "vendor": "Tidewater Cargo Lines",
+     "base": 13000,
+     "memo": "Inv LCL consolidation Mnt"
+    }
+   ],
+   "events": [
+    {
+     "key": "portstrike",
+     "vendor": "Harborline Logistics",
+     "memos": [
+      "Dockworker stoppage — demurrage charges",
+      "Dockworker stoppage — storage Inv"
+     ],
+     "cross_memo": "Dockworker stoppage — rerouted trucking",
+     "plain": [
+      "the dockworker stoppage",
+      "dockworker stoppage demurrage",
+      "the dockworker stoppage storage"
+     ],
+     "oblique": [
+      "a labor dispute at the harbor",
+      "containers sitting idle at the terminal",
+      "what we paid while goods were stuck",
+      "the walkout that froze deliveries",
+      "waiting for the gates to reopen",
+      "penalties for boxes that wouldn't move",
+      "an industrial action on the coast",
+      "the standoff over contracts at the waterfront",
+      "inventory held up offshore",
+      "delays caused by workers elsewhere",
+      "the work action that backed up the terminal",
+      "time-based fees on parked cargo",
+      "a snarl at the gateway",
+      "what idle equipment cost us",
+      "unions halting loading",
+      "the shutdown at the pier"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "tariff",
+     "vendor": "Corvane Trade Advisors",
+     "memos": [
+      "Section reclassification — retroactive duty",
+      "Section reclassification — advisory fee Svc"
+     ],
+     "cross_memo": "Section reclassification — penalty interest",
+     "plain": [
+      "the section reclassification",
+      "section reclassification duty",
+      "the section reclassification advisory"
+     ],
+     "oblique": [
+      "the government changing our import category",
+      "a ruling that raised our tax on imports",
+      "back payments to the border agency",
+      "officials deciding our goods were something else",
+      "the reassessment by the authorities",
+      "a higher rate applied after the fact",
+      "what the agency said we owed",
+      "a rules change at the border",
+      "the trade policy hit",
+      "paying more on foreign-made components",
+      "an audit result from the customs office",
+      "the new classification of our materials",
+      "a surprise bill from the treasury",
+      "the levy on overseas inputs",
+      "our status under the tariff schedule",
+      "what we owed retroactively"
+     ],
+     "low": 17000,
+     "high": 34000
+    }
+   ]
+  },
+  {
+   "name": "Factory Utilities & Energy",
+   "aliases": [
+    "utilities",
+    "power",
+    "energy",
+    "plant energy",
+    "factory utilities spend"
+   ],
+   "narrative": [
+    "Utilities",
+    "Power",
+    "Plant energy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lakeshore Electric Cooperative",
+     "base": 21000,
+     "memo": "Inv kWh demand charge"
+    },
+    {
+     "vendor": "Prairie Gas & Steam",
+     "base": 9500,
+     "memo": "Svc boiler fuel Mnt"
+    }
+   ],
+   "events": [
+    {
+     "key": "compressor",
+     "vendor": "Lakeshore Electric Cooperative",
+     "memos": [
+      "Peak surcharge — curtailment penalty",
+      "Peak surcharge — demand ratchet Inv"
+     ],
+     "cross_memo": "Peak surcharge — standby generator fuel",
+     "plain": [
+      "the peak surcharge",
+      "peak surcharge penalties",
+      "the peak surcharge ratchet"
+     ],
+     "oblique": [
+      "running everything at once during the heat wave",
+      "the grid operator's emergency call",
+      "a premium rate for overusing the line",
+      "what we paid for pulling too much at a bad time",
+      "the summer heat spell",
+      "a spike in how much the plant drew",
+      "getting punished for our busiest hours",
+      "the utility's penalty for greedy usage",
+      "keeping the lights on during rolling shortages",
+      "a bill that reflected a single bad afternoon",
+      "consuming too much when everyone else did",
+      "the extra rate on top of regular service",
+      "ramping everything up on the hottest day",
+      "what the supplier charged for the crunch",
+      "an unwelcome shock on the statement",
+      "use during the regional crisis"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "solar",
+     "vendor": "Brightfield Renewables",
+     "memos": [
+      "Rooftop array commissioning — interconnect",
+      "Rooftop array commissioning — inverter Svc"
+     ],
+     "cross_memo": "Rooftop array commissioning — permit fees",
+     "plain": [
+      "the rooftop array commissioning",
+      "rooftop array interconnect",
+      "the rooftop array inverter"
+     ],
+     "oblique": [
+      "putting panels on the building",
+      "making our own electricity",
+      "the sustainability project on the plant roof",
+      "hooking up our own generation",
+      "the green power installation",
+      "what it took to go live with sunshine",
+      "self-supply of energy",
+      "switching on the new source",
+      "the renewable-energy rollout",
+      "connecting to the grid for the first time",
+      "cutting the bill with an on-site system",
+      "the clean-power startup",
+      "cells overhead",
+      "the plant's climate commitment",
+      "getting approvals to feed power back",
+      "the energy independence effort"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

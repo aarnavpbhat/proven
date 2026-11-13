@@ -1,0 +1,728 @@
+{
+ "slug": "adventure-travel-agency",
+ "industry": "adventure travel agency",
+ "entities": [
+  "Summit & Stone Expeditions",
+  "Wildcurrent Adventures Ltd",
+  "Ridgeline Outfitters Collective",
+  "Kestrel Peak Journeys",
+  "Northwind Trekking Co"
+ ],
+ "accounts": [
+  {
+   "name": "Guide Wages and Contractor Fees",
+   "aliases": [
+    "guide pay",
+    "guide wages",
+    "field staff cost",
+    "contract guiding spend",
+    "guide payroll"
+   ],
+   "narrative": [
+    "Guide pay",
+    "Guide wages",
+    "Field staff cost"
+   ],
+   "recurring": [
+    {
+     "vendor": "Alpine Guides Cooperative",
+     "base": 22000,
+     "memo": "Inv guide day rates - Svc period"
+    },
+    {
+     "vendor": "Basecamp Staffing Partners",
+     "base": 9500,
+     "memo": "Seasonal porter and cook placements"
+    },
+    {
+     "vendor": "Trailhead Payroll Services",
+     "base": 3200,
+     "memo": "Payroll processing fee - field staff"
+    }
+   ],
+   "events": [
+    {
+     "key": "avalanche",
+     "vendor": "Alpine Guides Cooperative",
+     "memos": [
+      "Avalanche certification surge — Level 2 instructors",
+      "Avalanche certification surge — recert stipends"
+     ],
+     "cross_memo": "Avalanche certification surge — course tuition",
+     "plain": [
+      "the avalanche certification surge",
+      "the avalanche certification stipends",
+      "the avalanche certification push"
+     ],
+     "oblique": [
+      "getting the whole mountain team re-qualified",
+      "the mandatory snow-safety retraining",
+      "what the insurer demanded of our winter leaders",
+      "keeping our ski-touring staff eligible to lead",
+      "the training requirement that hit every senior leader",
+      "upskilling for backcountry winter work",
+      "a compliance push before the cold season",
+      "the instructors we paid to run sessions",
+      "safety re-qualification",
+      "winter readiness courses",
+      "the paperwork that let leaders keep working above treeline",
+      "extra pay for staff who sat the exams",
+      "an insurer-mandated refresher for the crews",
+      "credentials renewal",
+      "time our people spent in classrooms instead of on slopes",
+      "the snow-hazard retraining program"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "typhoon",
+     "vendor": "Monsoon Relief Crews Inc",
+     "memos": [
+      "Typhoon reroute standby — emergency crew hire",
+      "Typhoon reroute standby — Monsoon Relief Crews hazard pay"
+     ],
+     "cross_memo": "Typhoon reroute standby — hotel holdover",
+     "plain": [
+      "the typhoon reroute standby",
+      "the typhoon reroute crews",
+      "the typhoon reroute hazard pay"
+     ],
+     "oblique": [
+      "stranded groups needing extra hands overnight",
+      "a storm that scrambled our island itineraries",
+      "bringing in outside people on short notice",
+      "premium wages for working in bad weather",
+      "covering for leaders who could not reach their posts",
+      "the scramble after flights were grounded",
+      "unplanned labor for a rerouted departure",
+      "extra bodies to shepherd travelers to safety",
+      "weather-driven staffing",
+      "the crisis crew we called in",
+      "paying a premium for last-minute leaders",
+      "an emergency that tripled our headcount in one region",
+      "looking after clients while roads were washed out",
+      "hurried coverage of a cancelled loop",
+      "the disruption in the Pacific",
+      "hands we needed when the forecast turned"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Gear and Equipment Rental",
+   "aliases": [
+    "gear costs",
+    "equipment rental",
+    "kit spend",
+    "outfitting costs",
+    "gear rental"
+   ],
+   "narrative": [
+    "Gear costs",
+    "Equipment rental",
+    "Kit spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Crestline Outfitters Supply",
+     "base": 14000,
+     "memo": "Monthly tent and pack rental Inv"
+    },
+    {
+     "vendor": "Frostbite Technical Rentals",
+     "base": 7800,
+     "memo": "Mnt of rental ropes and harnesses"
+    },
+    {
+     "vendor": "Ironwood Camp Kitchens",
+     "base": 4300,
+     "memo": "Stove and cookware lease"
+    }
+   ],
+   "events": [
+    {
+     "key": "crampon",
+     "vendor": "Frostbite Technical Rentals",
+     "memos": [
+      "Crampon fleet replacement — recall batch",
+      "Crampon fleet replacement — steel point sets"
+     ],
+     "cross_memo": "Crampon fleet replacement — freight surcharge",
+     "plain": [
+      "the crampon fleet replacement",
+      "the crampon replacement batch",
+      "the crampon steel point sets"
+     ],
+     "oblique": [
+      "spikes for walking on ice that had to be swapped out",
+      "a manufacturer notice about faulty traction gear",
+      "retiring footwear attachments that cracked",
+      "the safety notice we could not ignore",
+      "renewing a whole class of glacier hardware",
+      "what the maker told us to pull from service",
+      "a defect that forced a mass purchase",
+      "new traction hardware for the icy itineraries",
+      "product recall fallout",
+      "replacing cracked ice equipment",
+      "the stock we scrapped before the season",
+      "one-time capital style spend on mountaineering kit",
+      "an urgent resupply of boot add-ons",
+      "hardware pulled after failing a load test",
+      "the batch that did not pass inspection",
+      "refreshing gear nobody wanted to retire early"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "kayakfleet",
+     "vendor": "Tidewater Paddle Works",
+     "memos": [
+      "Sea kayak charter overflow — Tidewater Paddle Works extra hulls",
+      "Sea kayak charter overflow — dry bag packages"
+     ],
+     "cross_memo": "Sea kayak charter overflow — launch permits",
+     "plain": [
+      "the sea kayak charter overflow",
+      "the sea kayak extra hulls",
+      "the sea kayak overflow packages"
+     ],
+     "oblique": [
+      "more boats than our own stock could cover",
+      "a coastal departure that sold out fast",
+      "borrowing floating craft from a nearby shop",
+      "demand that outran what we owned",
+      "a surge of bookings on the water",
+      "renting vessels for a one-off big group",
+      "the fjord trip with too many signups",
+      "temporary additions to our flotilla",
+      "peak-week shortfall",
+      "an unexpectedly popular paddling date",
+      "the corporate retreat that wanted everyone afloat",
+      "filling a gap in our own inventory",
+      "waterborne capacity we lacked",
+      "hired hulls for a headline departure",
+      "stopgap supply for a crowded weekend",
+      "a bump in oar-powered demand"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Permits and Park Fees",
+   "aliases": [
+    "permit costs",
+    "park fees",
+    "access fees",
+    "land use charges",
+    "permit spend"
+   ],
+   "narrative": [
+    "Permit costs",
+    "Park fees",
+    "Access fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "National Parks Concession Office",
+     "base": 11500,
+     "memo": "Qtr backcountry entry fees"
+    },
+    {
+     "vendor": "Regional Forest Service Billing",
+     "base": 5200,
+     "memo": "Guided use permit monthly"
+    },
+    {
+     "vendor": "Coastal Authority Licensing",
+     "base": 2400,
+     "memo": "Marine landing permits"
+    }
+   ],
+   "events": [
+    {
+     "key": "lottery",
+     "vendor": "National Parks Concession Office",
+     "memos": [
+      "Inca corridor lottery slots — block purchase",
+      "Inca corridor lottery slots — porter registration"
+     ],
+     "cross_memo": "Inca corridor lottery slots — guide fees",
+     "plain": [
+      "the inca corridor lottery slots",
+      "the inca corridor block purchase",
+      "the inca corridor porter registration"
+     ],
+     "oblique": [
+      "a scarce allocation we grabbed in bulk",
+      "buying up entry rights before they vanished",
+      "the famous route everyone wanted to walk",
+      "securing spots a year ahead",
+      "a bet on next season selling out",
+      "reserved places on the most sought-after path",
+      "the release date when slots opened",
+      "paying upfront to hold dates for clients",
+      "advance admission purchases",
+      "one big block of coveted passes",
+      "locking in access to a heritage trek",
+      "demand-proofing our flagship departure",
+      "entry rights that cannot be refunded",
+      "the booking window that opens once a year",
+      "a land-access prepayment",
+      "the quota everyone fights over"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "fireban",
+     "vendor": "Highland Wildlife Trust",
+     "memos": [
+      "Wildfire closure rebooking — Highland Wildlife Trust alt-zone permits",
+      "Wildfire closure rebooking — reissue fees"
+     ],
+     "cross_memo": "Wildfire closure rebooking — shuttle change",
+     "plain": [
+      "the wildfire closure rebooking",
+      "the wildfire alt-zone permits",
+      "the wildfire reissue fees"
+     ],
+     "oblique": [
+      "smoke shutting the original trail",
+      "a fresh set of papers for a different valley",
+      "having to pay twice for the same departure",
+      "the land that was sealed off by authorities",
+      "relocating trips at the last minute",
+      "a swapped itinerary that needed new approvals",
+      "re-papering groups already booked",
+      "an area we could no longer enter",
+      "replacement access documents",
+      "the blaze that rewrote our calendar",
+      "duplicated entry charges",
+      "moving a departure to unburned terrain",
+      "the second round of approvals",
+      "clients redirected to another range",
+      "emergency paperwork after a closure",
+      "regulatory costs we paid a second time"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Group Transport and Logistics",
+   "aliases": [
+    "transport",
+    "ground transport",
+    "shuttle costs",
+    "logistics spend",
+    "transfer costs"
+   ],
+   "narrative": [
+    "Transport",
+    "Ground transport",
+    "Shuttle costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Highland Coach Lines",
+     "base": 19500,
+     "memo": "Monthly shuttle and transfer Inv"
+    },
+    {
+     "vendor": "Overland Truck Hire",
+     "base": 12000,
+     "memo": "Expedition truck lease and fuel"
+    },
+    {
+     "vendor": "Skyhop Charter Brokers",
+     "base": 8000,
+     "memo": "Bush flight seat blocks"
+    }
+   ],
+   "events": [
+    {
+     "key": "heli",
+     "vendor": "Skyhop Charter Brokers",
+     "memos": [
+      "Helicopter evacuation relay — rotor charter",
+      "Helicopter evacuation relay — fuel cache drop"
+     ],
+     "cross_memo": "Helicopter evacuation relay — medical escort",
+     "plain": [
+      "the helicopter evacuation relay",
+      "the helicopter rotor charter",
+      "the helicopter fuel cache drop"
+     ],
+     "oblique": [
+      "flying a hurt traveler out of a remote valley",
+      "an airborne rescue we arranged on the spot",
+      "getting someone off the mountain in a hurry",
+      "a one-time aerial bill from a bad day",
+      "a ride nobody budgeted for",
+      "bringing a client to a hospital fast",
+      "the day a trek turned into a rescue",
+      "paying for a flight above the clouds",
+      "an emergency in the high country",
+      "the aircraft that pulled our group out",
+      "air lift after an injury",
+      "an unplanned flight for safety reasons",
+      "a crisis response above the snowline",
+      "the costly call for help",
+      "urgent aerial extraction",
+      "a medical flight no one wanted to need"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "ferryblock",
+     "vendor": "Northern Isles Ferry Co",
+     "memos": [
+      "Ferry season block booking — Northern Isles Ferry Co vehicle decks",
+      "Ferry season block booking — deposit"
+     ],
+     "cross_memo": "Ferry season block booking — port handling",
+     "plain": [
+      "the ferry season block booking",
+      "the ferry vehicle decks",
+      "the ferry block deposit"
+     ],
+     "oblique": [
+      "reserving sea crossings months in advance",
+      "guaranteeing space for our island loops",
+      "committing early to avoid sellouts",
+      "prepaying for passage across the water",
+      "a deposit to secure summer sailings",
+      "hedging against crowded crossings",
+      "capacity we bought ahead of time",
+      "the boats that carry our vans",
+      "island-hopping reservations",
+      "a front-loaded travel commitment",
+      "early payment for waterborne legs",
+      "space held for the peak weeks",
+      "a contract for repeated crossings",
+      "buying certainty for the archipelago tours",
+      "upfront transport for the islands",
+      "the sailing schedule we locked in"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Field Insurance and Safety",
+   "aliases": [
+    "insurance",
+    "safety costs",
+    "liability cover",
+    "risk spend",
+    "safety and insurance"
+   ],
+   "narrative": [
+    "Insurance",
+    "Safety costs",
+    "Liability cover"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinnacle Risk Underwriters",
+     "base": 16000,
+     "memo": "Monthly liability premium installment"
+    },
+    {
+     "vendor": "Medic Remote Response",
+     "base": 6500,
+     "memo": "Satellite medic subscription Svc"
+    },
+    {
+     "vendor": "SafeTrek Audits LLC",
+     "base": 2800,
+     "memo": "Mnt of safety audit program"
+    }
+   ],
+   "events": [
+    {
+     "key": "renewalhike",
+     "vendor": "Pinnacle Risk Underwriters",
+     "memos": [
+      "Policy renewal repricing — claims loading",
+      "Policy renewal repricing — mid-term endorsement"
+     ],
+     "cross_memo": "Policy renewal repricing — broker fee",
+     "plain": [
+      "the policy renewal repricing",
+      "the policy claims loading",
+      "the policy mid-term endorsement"
+     ],
+     "oblique": [
+      "a worse quote after a tough year",
+      "the carrier raising our rate",
+      "paying more for the same protection",
+      "last season's incidents showing up in our bill",
+      "an upward reset when coverage came due",
+      "the cost of being seen as higher risk",
+      "a step up in what we owe each period",
+      "the underwriter revisiting our profile",
+      "premium inflation",
+      "a jump in what protection costs",
+      "terms that got stricter and pricier",
+      "the annual reset that stung",
+      "bigger payments for identical cover",
+      "our loss history catching up with us",
+      "the market hardening against adventure operators",
+      "a repriced contract for the new year"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "drone",
+     "vendor": "Aerowatch Monitoring",
+     "memos": [
+      "Avalanche beacon program — Aerowatch Monitoring tracker fleet",
+      "Avalanche beacon program — SIM and airtime"
+     ],
+     "cross_memo": "Avalanche beacon program — staff training",
+     "plain": [
+      "the avalanche beacon program",
+      "the avalanche tracker fleet",
+      "the avalanche beacon airtime"
+     ],
+     "oblique": [
+      "live location devices for every group",
+      "a new way to know where clients are",
+      "electronics that report positions from the field",
+      "a safety rollout our board approved",
+      "tracking technology for remote groups",
+      "investing in being able to find people fast",
+      "a technology response to an audit finding",
+      "the devices clipped to every pack",
+      "rolling out connected safety kit",
+      "a pilot for real-time visibility",
+      "a promise we made to our insurer",
+      "hardware plus monthly connectivity",
+      "a leap in monitoring capability",
+      "the system that pings headquarters",
+      "a response to a near miss",
+      "new safety electronics across departures"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Client Acquisition",
+   "aliases": [
+    "marketing",
+    "advertising",
+    "promo spend",
+    "client acquisition",
+    "campaign costs"
+   ],
+   "narrative": [
+    "Marketing",
+    "Advertising",
+    "Promo spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clickpath Digital Media",
+     "base": 9000,
+     "memo": "Paid search and social Inv"
+    },
+    {
+     "vendor": "Wanderlight Creative Studio",
+     "base": 4800,
+     "memo": "Content retainer - photo and copy"
+    },
+    {
+     "vendor": "Basecamp Email Platform",
+     "base": 1200,
+     "memo": "CRM and email subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "filmshoot",
+     "vendor": "Wanderlight Creative Studio",
+     "memos": [
+      "Patagonia film shoot — production crew",
+      "Patagonia film shoot — drone footage licensing"
+     ],
+     "cross_memo": "Patagonia film shoot — talent travel",
+     "plain": [
+      "the patagonia film shoot",
+      "the patagonia production crew",
+      "the patagonia drone footage"
+     ],
+     "oblique": [
+      "a brand video made on location",
+      "cinematic content for the new season",
+      "hiring camera people to follow a trip",
+      "a splashy piece we hoped would go viral",
+      "the hero reel for our southern departures",
+      "footage captured in a remote landscape",
+      "creative spend meant to lift bookings",
+      "a one-off showcase production",
+      "a marketing bet filmed in the wild",
+      "the video that anchors our campaign",
+      "a big-budget storytelling project",
+      "images shot at the end of the world",
+      "shooting our flagship itinerary for promotion",
+      "production work on a distant range",
+      "content investment for next year",
+      "a cinematic push for our top product"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "expo",
+     "vendor": "Global Adventure Travel Expo",
+     "memos": [
+      "Trade expo flagship booth — Global Adventure Travel Expo exhibit space",
+      "Trade expo flagship booth — display build"
+     ],
+     "cross_memo": "Trade expo flagship booth — staff airfare",
+     "plain": [
+      "the trade expo flagship booth",
+      "the trade expo exhibit space",
+      "the trade expo display build"
+     ],
+     "oblique": [
+      "a convention appearance with a large footprint",
+      "meeting agents face to face at an industry gathering",
+      "a stand built to turn heads",
+      "the annual show where partners shop for itineraries",
+      "paying for floor space in a hall",
+      "a splashy presence among competitors",
+      "the conference that fills our pipeline",
+      "a custom structure we shipped to the venue",
+      "the industry fair we headlined",
+      "wholesaler networking in person",
+      "an in-person sales push",
+      "a physical presence at a global gathering",
+      "display costs for a three-day event",
+      "courting travel sellers on their turf",
+      "the showcase for our new routes",
+      "an annual outlay to be seen by buyers"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Lodging and Camp Operations",
+   "aliases": [
+    "lodging",
+    "camp costs",
+    "accommodation spend",
+    "hut and lodge fees",
+    "camp operations"
+   ],
+   "narrative": [
+    "Lodging",
+    "Camp costs",
+    "Accommodation spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeview Mountain Lodges",
+     "base": 26000,
+     "memo": "Group room nights Inv"
+    },
+    {
+     "vendor": "Basecamp Provisions Co",
+     "base": 10500,
+     "memo": "Camp food and water supply"
+    },
+    {
+     "vendor": "Kilimani Hut Network",
+     "base": 7000,
+     "memo": "Hut bed reservations"
+    }
+   ],
+   "events": [
+    {
+     "key": "glamping",
+     "vendor": "Kilimani Hut Network",
+     "memos": [
+      "Savanna glamping upgrade — canvas suite conversion",
+      "Savanna glamping upgrade — linen and solar kits"
+     ],
+     "cross_memo": "Savanna glamping upgrade — vehicle modification",
+     "plain": [
+      "the savanna glamping upgrade",
+      "the savanna canvas suites",
+      "the savanna solar kits"
+     ],
+     "oblique": [
+      "making rustic stays feel luxurious",
+      "an elevated overnight experience for premium clients",
+      "comfort improvements at a remote site",
+      "turning basic tents into something fancier",
+      "a premium product we rolled out",
+      "pampering travelers under the stars",
+      "raising the standard of our overnight offer",
+      "a makeover aimed at higher-paying guests",
+      "upscale bedding and power for the bush",
+      "refreshed sleeping quarters",
+      "a bet on the luxury segment",
+      "enhancing creature comforts in the wild",
+      "the facelift for our flagship campsite",
+      "investing in a higher price point",
+      "a more indulgent night out in nature",
+      "renovations to justify a rate increase"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "sherpafest",
+     "vendor": "Khumbu Valley Teahouses",
+     "memos": [
+      "Festival season overflow — Khumbu Valley Teahouses bed buyout",
+      "Festival season overflow — dining hall hire"
+     ],
+     "cross_memo": "Festival season overflow — tent rental",
+     "plain": [
+      "the festival season overflow",
+      "the festival teahouse bed buyout",
+      "the festival dining hall hire"
+     ],
+     "oblique": [
+      "a local celebration filling every room in town",
+      "buying out beds to keep our groups together",
+      "a rush of visitors squeezing availability",
+      "paying inflated rates for scarce rooms",
+      "the week the valley hosted a big gathering",
+      "securing space when everyone wanted it",
+      "a cultural event driving up demand",
+      "hiring a hall to feed a large party",
+      "surge pricing on mountain sleeping spots",
+      "accommodating clients during the busiest days",
+      "holiday crowds that squeezed our supply",
+      "booking out entire houses",
+      "the crowd that arrived for the observance",
+      "temporary capacity at a premium",
+      "accommodation shortage solved with cash",
+      "a calendar clash that cost us extra"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

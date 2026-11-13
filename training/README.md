@@ -24,7 +24,7 @@ counts, the fine-tuned models lose to Claude Sonnet by a wide margin.
 | `by_cause.py` | teach-sim split by cause, for the held-out-cause ablation |
 | `author_worlds.py` | asks a hosted model for one world file per industry and keeps the ones `proven/worlds.py` validates (network, spends money, budget-capped) |
 | `industries-*.txt` | the industry lists: `train-a`, `train-b`, `train-c`, `dev`, and the disjoint `unseen` and `sealed` |
-| `worlds/train`, `worlds/dev` | the 91 training worlds and 4 dev worlds; the measured worlds live in `proven/examples/worlds/unseen/` (11) and `sealed/` (9) |
+| `worlds/train`, `worlds/dev` | 147 training worlds and 4 dev worlds (every result in `docs/finetune.md` up to section 8b used the first 91; the 56 from `industries-train-d.txt` were added afterwards); the measured worlds live in `proven/examples/worlds/unseen/` (11) and `sealed/` (9) |
 | `world_overlap.py` | audit of the vocabulary the measured worlds share with the training worlds |
 | `warm_worlds.py` | fills the proposal cache for a world suite through a served or hosted proposer, several closes at a time |
 | `batch_propose.py` | fills the same cache for a local MLX proposer in batches, without a server; `--taught-only`, `--constrain`, `--samples K` |

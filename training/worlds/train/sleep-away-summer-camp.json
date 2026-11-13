@@ -1,0 +1,815 @@
+{
+ "slug": "sleep-away-summer-camp",
+ "industry": "sleep-away summer camp",
+ "entities": [
+  "Whispering Pines Camp Co.",
+  "Lakeshore Adventures Inc.",
+  "Bear Hollow Summer Programs LLC",
+  "Silver Birch Camps Group",
+  "Redwood Trails Youth Camps"
+ ],
+ "accounts": [
+  {
+   "name": "Camp Food Service",
+   "aliases": [
+    "food service",
+    "dining hall costs",
+    "kitchen food spend",
+    "meals budget",
+    "camp food"
+   ],
+   "narrative": [
+    "Food service",
+    "Dining hall costs",
+    "Camp food"
+   ],
+   "recurring": [
+    {
+     "vendor": "Northfield Produce Co",
+     "base": 11000,
+     "memo": "Weekly fresh produce delivery"
+    },
+    {
+     "vendor": "Summit Dairy Supply",
+     "base": 6500,
+     "memo": "Milk and dairy standing order"
+    },
+    {
+     "vendor": "Granite State Provisions",
+     "base": 9000,
+     "memo": "Dry goods and pantry restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "walkin",
+     "vendor": "Northfield Produce Co",
+     "memos": [
+      "Walk-in cooler rescue — spoiled inventory replacement",
+      "Walk-in cooler rescue — emergency reorder"
+     ],
+     "cross_memo": "Walk-in cooler rescue — temporary refrigerated trailer",
+     "plain": [
+      "the walk-in cooler rescue",
+      "the cooler rescue spoilage",
+      "walk-in cooler rescue costs"
+     ],
+     "oblique": [
+      "throwing out thawed meat and dairy",
+      "replacing everything that went warm overnight",
+      "the freezer failure in July",
+      "food we lost when the power tripped",
+      "a restock after the kitchen outage",
+      "losing a week of perishables",
+      "emergency groceries",
+      "the fridge breakdown",
+      "buying back the whole inventory",
+      "stock that spoiled before anyone noticed",
+      "an overnight equipment failure in the pantry",
+      "rush deliveries to feed the campers",
+      "spoilage",
+      "replacement groceries at premium prices",
+      "the chilled storage failure that wiped out supplies",
+      "a big one-time restock"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "allergen",
+     "vendor": "Evergreen Allergy Foods LLC",
+     "memos": [
+      "Allergen-safe menu launch — specialty ingredients",
+      "Allergen-safe menu launch — gluten-free baking supplies"
+     ],
+     "cross_memo": "Allergen-safe menu launch — nutritionist consulting",
+     "plain": [
+      "the allergen-safe menu launch",
+      "allergen-safe menu ingredients",
+      "the allergen-safe launch"
+     ],
+     "oblique": [
+      "catering to campers with dietary restrictions",
+      "special meals for kids with food sensitivities",
+      "a separate prep line for medical diets",
+      "feeding the families who asked for safer options",
+      "nut-free alternatives",
+      "the new dietary program",
+      "premium substitutes for standard fare",
+      "accommodating parents who raised concerns",
+      "specialty items bought in small batches",
+      "a menu overhaul for health reasons",
+      "what the nurse requested for certain kids",
+      "a separate shelf of pricier staples",
+      "meal changes for sensitive eaters",
+      "the medical-diet initiative",
+      "dedicated supplies for restricted diets",
+      "extra cost to keep every child safe at meals"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Waterfront Operations",
+   "aliases": [
+    "waterfront",
+    "lake operations",
+    "swim area costs",
+    "waterfront spend",
+    "lakefront upkeep"
+   ],
+   "narrative": [
+    "Waterfront",
+    "Lake operations",
+    "Swim area costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "BlueWater Lake Services",
+     "base": 5200,
+     "memo": "Water testing and dock inspection"
+    },
+    {
+     "vendor": "Paddle Pro Supply",
+     "base": 3800,
+     "memo": "Canoe and kayak maintenance"
+    },
+    {
+     "vendor": "AquaGuard Safety Gear",
+     "base": 2400,
+     "memo": "Lifejacket and rescue equipment"
+    }
+   ],
+   "events": [
+    {
+     "key": "dock",
+     "vendor": "BlueWater Lake Services",
+     "memos": [
+      "Pier piling replacement — timber and hardware",
+      "Pier piling replacement — diving crew"
+     ],
+     "cross_memo": "Pier piling replacement — engineering permit",
+     "plain": [
+      "the pier piling replacement",
+      "pier piling replacement work",
+      "the piling replacement"
+     ],
+     "oblique": [
+      "rebuilding the structure that people walk out on",
+      "fixing the thing the inspector flagged",
+      "repairs after the ice damaged the structure",
+      "making the boat landing safe again",
+      "underwater carpentry",
+      "a rotted foundation we had to swap out",
+      "the project that closed the swim area for two weeks",
+      "new supports under the walkway",
+      "getting the lake structure certified",
+      "what the insurance company insisted on",
+      "work done below the waterline",
+      "a safety fix that could not wait",
+      "restoring access to the water",
+      "replacing what the spring thaw wrecked",
+      "a structural fix at the lake edge",
+      "the reason the swim test got delayed"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "algae",
+     "vendor": "ClearLake Environmental Inc",
+     "memos": [
+      "Cyanobacteria bloom response — water treatment",
+      "Cyanobacteria bloom response — lab sampling"
+     ],
+     "cross_memo": "Cyanobacteria bloom response — alternate pool rental",
+     "plain": [
+      "the cyanobacteria bloom response",
+      "cyanobacteria bloom treatment",
+      "the bloom response"
+     ],
+     "oblique": [
+      "green scum on the lake",
+      "closing the swim area for contamination",
+      "testing and treating the water",
+      "a health department order",
+      "the toxic growth in the shallows",
+      "keeping kids out of the lake for ten days",
+      "a surprise environmental cleanup",
+      "chemical dosing of the cove",
+      "what the county made us do",
+      "lab results we had to pay for",
+      "an outbreak in the water",
+      "swimming cancelled while it cleared",
+      "treating the lake after complaints",
+      "unexpected water quality work",
+      "a public health scare",
+      "the summer's biggest water problem"
+     ],
+     "low": 10000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Counselor Payroll",
+   "aliases": [
+    "counselor payroll",
+    "staff wages",
+    "counselor pay",
+    "seasonal staff payroll",
+    "camp staff wages"
+   ],
+   "narrative": [
+    "Counselor payroll",
+    "Staff wages",
+    "Counselor pay"
+   ],
+   "recurring": [
+    {
+     "vendor": "CampStaff Payroll Services",
+     "base": 28000,
+     "memo": "Bi-weekly seasonal staff payroll"
+    },
+    {
+     "vendor": "Hartwell Payroll Tax Agency",
+     "base": 9000,
+     "memo": "Employer payroll tax remittance"
+    }
+   ],
+   "events": [
+    {
+     "key": "bonus",
+     "vendor": "CampStaff Payroll Services",
+     "memos": [
+      "Retention stipend program — returning counselor bonus",
+      "Retention stipend program — midseason payout"
+     ],
+     "cross_memo": "Retention stipend program — payroll tax true-up",
+     "plain": [
+      "the retention stipend program",
+      "retention stipend payouts",
+      "the stipend program"
+     ],
+     "oblique": [
+      "extra money to keep people from quitting",
+      "rewards for coming back next year",
+      "a mid-summer thank-you to the team",
+      "keeping our best young leaders",
+      "pay we added after resignations",
+      "a sweetener for returning staff",
+      "the offer that stopped the exodus",
+      "cash incentives for loyalty",
+      "what we promised the veterans in June",
+      "a response to a competing camp poaching people",
+      "one-time pay for the senior team",
+      "money to stabilize the roster",
+      "bonuses",
+      "a raise we granted midstream",
+      "the incentive the director approved",
+      "making sure nobody left before August"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "ot",
+     "vendor": "Pinnacle Temp Staffing LLC",
+     "memos": [
+      "Emergency coverage surge — substitute lifeguards",
+      "Emergency coverage surge — overnight supervisors"
+     ],
+     "cross_memo": "Emergency coverage surge — agency placement fee",
+     "plain": [
+      "the emergency coverage surge",
+      "emergency coverage staffing",
+      "the coverage surge"
+     ],
+     "oblique": [
+      "hiring outside help when people got sick",
+      "filling gaps after a flu swept the cabins",
+      "agency workers in a pinch",
+      "last-minute fill-ins",
+      "shifts nobody could cover",
+      "paying a premium for short-notice labor",
+      "a staffing shortage in week three",
+      "temps brought in overnight",
+      "the stomach bug that took out our team",
+      "borrowed manpower",
+      "unplanned labor at inflated rates",
+      "stand-ins for absent leaders",
+      "the week we ran short-handed",
+      "outside people on the schedule",
+      "a scramble to keep ratios legal",
+      "external hires we did not budget"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Health Center",
+   "aliases": [
+    "health center",
+    "infirmary costs",
+    "nurse station",
+    "medical supplies spend",
+    "camp medical"
+   ],
+   "narrative": [
+    "Health center",
+    "Infirmary costs",
+    "Camp medical"
+   ],
+   "recurring": [
+    {
+     "vendor": "Lakeview Pediatric Partners",
+     "base": 8500,
+     "memo": "On-site nurse contract"
+    },
+    {
+     "vendor": "MedSource Camp Supply",
+     "base": 2200,
+     "memo": "First aid and pharmacy restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "norovirus",
+     "vendor": "Lakeview Pediatric Partners",
+     "memos": [
+      "Gastro outbreak containment — isolation ward staffing",
+      "Gastro outbreak containment — clinician surge hours"
+     ],
+     "cross_memo": "Gastro outbreak containment — deep sanitizing crew",
+     "plain": [
+      "the gastro outbreak containment",
+      "gastro outbreak staffing",
+      "the outbreak containment"
+     ],
+     "oblique": [
+      "a stomach illness running through the bunks",
+      "quarantining sick kids",
+      "extra nurses on overnight shifts",
+      "a contagious bug we had to stamp out",
+      "rooms set aside for the ill",
+      "the epidemic in session two",
+      "what the health department required",
+      "overtime for medical personnel",
+      "keeping sick campers away from the others",
+      "a week when half the camp felt unwell",
+      "parents being called to pick up children",
+      "a spike in infirmary visits",
+      "disease control",
+      "isolating bunks",
+      "clinical overtime",
+      "a public health response at camp"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "ambulance",
+     "vendor": "Ridgeway Rescue Squad",
+     "memos": [
+      "Standby rescue contract — event coverage",
+      "Standby rescue contract — rapid response unit"
+     ],
+     "cross_memo": "Standby rescue contract — helipad lighting",
+     "plain": [
+      "the standby rescue contract",
+      "standby rescue coverage",
+      "the rescue contract"
+     ],
+     "oblique": [
+      "paramedics parked on site for the big weekend",
+      "emergency responders hired for parents day",
+      "insurance requirement for large gatherings",
+      "having an ambulance nearby",
+      "a safety net for the overnight hike",
+      "medical personnel contracted by the day",
+      "a precaution for the tournament",
+      "first responders on call",
+      "what the carrier required before we could host",
+      "professionals ready for the worst",
+      "coverage for crowded events",
+      "a paid standby for risky activities",
+      "readiness for serious injuries",
+      "the county's condition for our permit",
+      "an extra layer of emergency readiness",
+      "on-site lifesavers"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Activity Equipment",
+   "aliases": [
+    "activity equipment",
+    "program gear",
+    "sports equipment spend",
+    "outdoor gear",
+    "activity supplies"
+   ],
+   "narrative": [
+    "Activity equipment",
+    "Program gear",
+    "Outdoor gear"
+   ],
+   "recurring": [
+    {
+     "vendor": "Summit Outfitters Wholesale",
+     "base": 6000,
+     "memo": "Camping gear replenishment"
+    },
+    {
+     "vendor": "Arrowhead Archery Supply",
+     "base": 2500,
+     "memo": "Archery range consumables"
+    },
+    {
+     "vendor": "PlayWorks Sports Distributors",
+     "base": 3800,
+     "memo": "Team sports equipment"
+    }
+   ],
+   "events": [
+    {
+     "key": "ropes",
+     "vendor": "Summit Outfitters Wholesale",
+     "memos": [
+      "High ropes course rebuild — harnesses and cabling",
+      "High ropes course rebuild — certified inspection"
+     ],
+     "cross_memo": "High ropes course rebuild — tree surgeon",
+     "plain": [
+      "the high ropes course rebuild",
+      "high ropes course harnesses",
+      "the ropes course rebuild"
+     ],
+     "oblique": [
+      "replacing the aerial challenge structure",
+      "cables that failed their annual check",
+      "a climbing attraction we nearly closed",
+      "what the safety auditor demanded",
+      "new overhead gear for the adventure park",
+      "fixing the tallest attraction",
+      "a certification failure",
+      "equipment retired after wear",
+      "rigging for heights",
+      "the thing kids climb in the pines",
+      "a major refit for liability reasons",
+      "switching out aging hardware",
+      "an upgrade requested by the insurer",
+      "the obstacle area makeover",
+      "getting the elevated course reopened",
+      "replacing worn-out safety lines"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "esports",
+     "vendor": "Pixel Forge Interactive",
+     "memos": [
+      "Rainy day arcade — gaming consoles",
+      "Rainy day arcade — projector and screens"
+     ],
+     "cross_memo": "Rainy day arcade — wiring electrician",
+     "plain": [
+      "the rainy day arcade",
+      "rainy day arcade consoles",
+      "the arcade setup"
+     ],
+     "oblique": [
+      "indoor entertainment for stormy afternoons",
+      "something for kids when the weather turns",
+      "screens in the rec hall",
+      "a response to complaints about bad-weather boredom",
+      "electronics for the lodge",
+      "a new attraction the older campers asked for",
+      "video games on the big wall",
+      "what we bought after the washed-out week",
+      "a technology experiment",
+      "backup programming for downpours",
+      "a fresh draw for returning families",
+      "devices for the common room",
+      "a competition setup for the oldest bunks",
+      "fun for when outdoor plans collapse",
+      "a purchase the board debated",
+      "tech toys for the clubhouse"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Bus and Transportation",
+   "aliases": [
+    "bus costs",
+    "camper transport",
+    "transportation",
+    "charter buses",
+    "shuttle spend"
+   ],
+   "narrative": [
+    "Bus costs",
+    "Camper transport",
+    "Charter buses"
+   ],
+   "recurring": [
+    {
+     "vendor": "Trailways Charter Lines",
+     "base": 14000,
+     "memo": "Camper arrival and departure charters"
+    },
+    {
+     "vendor": "Valley Fuel Depot",
+     "base": 4500,
+     "memo": "Diesel and gasoline for camp vehicles"
+    },
+    {
+     "vendor": "County Mile Garage",
+     "base": 3200,
+     "memo": "Vehicle maintenance contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "daytrip",
+     "vendor": "Trailways Charter Lines",
+     "memos": [
+      "Amusement park excursion — extra coaches",
+      "Amusement park excursion — chaperone shuttle"
+     ],
+     "cross_memo": "Amusement park excursion — group admission tickets",
+     "plain": [
+      "the amusement park excursion",
+      "amusement park excursion coaches",
+      "the park excursion"
+     ],
+     "oblique": [
+      "a field trip the whole camp took",
+      "a day away from the property",
+      "rides and roller coasters outing",
+      "moving every camper off site for the day",
+      "the big treat in week four",
+      "a one-day getaway",
+      "convoy of vehicles to a theme destination",
+      "the outing parents had requested",
+      "a special day for the oldest groups",
+      "a morale event",
+      "hauling everyone to a faraway attraction",
+      "the summer highlight outing",
+      "an extra run of motor coaches",
+      "a day of fun elsewhere",
+      "what we promised in the brochure",
+      "an away-day for the campers"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "breakdown",
+     "vendor": "Redline Towing and Recovery",
+     "memos": [
+      "Mountain pass breakdown — tow and recovery",
+      "Mountain pass breakdown — replacement driver"
+     ],
+     "cross_memo": "Mountain pass breakdown — stranded lodging",
+     "plain": [
+      "the mountain pass breakdown",
+      "mountain pass towing",
+      "the pass breakdown"
+     ],
+     "oblique": [
+      "a vehicle dying on a steep road",
+      "kids stuck on the roadside",
+      "a rescue mission for a failed engine",
+      "getting a stranded group home",
+      "a long delay on the way to camp",
+      "help after the transmission quit",
+      "the unexpected rescue run",
+      "an emergency during a hike transfer",
+      "calling in outside help for a stalled van",
+      "what happened on opening day",
+      "a roadside crisis",
+      "parents waiting for news",
+      "an incident far from the property",
+      "a failed drivetrain in the hills",
+      "hours lost on a remote highway",
+      "the van that never made it"
+     ],
+     "low": 10000,
+     "high": 19000
+    }
+   ]
+  },
+  {
+   "name": "Facilities Maintenance",
+   "aliases": [
+    "facilities",
+    "cabin upkeep",
+    "grounds maintenance",
+    "property maintenance",
+    "repairs and upkeep"
+   ],
+   "narrative": [
+    "Facilities",
+    "Cabin upkeep",
+    "Property maintenance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Oakridge Property Services",
+     "base": 12000,
+     "memo": "Grounds and cabin maintenance contract"
+    },
+    {
+     "vendor": "Granite Plumbing and Heating",
+     "base": 3500,
+     "memo": "Plumbing service retainer"
+    },
+    {
+     "vendor": "Timberline Waste Hauling",
+     "base": 2000,
+     "memo": "Trash and recycling pickup"
+    }
+   ],
+   "events": [
+    {
+     "key": "roof",
+     "vendor": "Oakridge Property Services",
+     "memos": [
+      "Lodge shingle replacement — roofing crew",
+      "Lodge shingle replacement — scaffolding rental"
+     ],
+     "cross_memo": "Lodge shingle replacement — interior ceiling repair",
+     "plain": [
+      "the lodge shingle replacement",
+      "lodge shingle roofing",
+      "the shingle replacement"
+     ],
+     "oblique": [
+      "a leaky top on the main building",
+      "stopping water from coming through the ceiling",
+      "what the hailstorm did",
+      "work overhead before the season opened",
+      "protecting the dining area from rain",
+      "a major exterior fix",
+      "fixing what the winter ruined",
+      "new covering for the big hall",
+      "an old building getting a new lid",
+      "the overdue repair to our oldest structure",
+      "weatherproofing the gathering space",
+      "a storm damage claim project",
+      "the structure everyone eats under",
+      "keeping the rain out",
+      "an insurance-related restoration",
+      "what we put off two years"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "septic",
+     "vendor": "Clearwater Septic Engineers",
+     "memos": [
+      "Leach field failure — excavation and pump-out",
+      "Leach field failure — tank replacement"
+     ],
+     "cross_memo": "Leach field failure — portable restroom rental",
+     "plain": [
+      "the leach field failure",
+      "leach field excavation",
+      "the leach field fix"
+     ],
+     "oblique": [
+      "a sewage problem behind the cabins",
+      "digging up the yard to fix waste lines",
+      "a smell nobody could ignore",
+      "emergency work underground",
+      "toilets that stopped working in a section of camp",
+      "a failed waste disposal system",
+      "what the county sanitation officer found",
+      "trenching across the lawn",
+      "a system that reached the end of its life",
+      "an unglamorous but unavoidable fix",
+      "rental restrooms for the week",
+      "a plumbing disaster outdoors",
+      "replacing buried infrastructure",
+      "an inspection failure",
+      "a messy repair",
+      "the project that tore up the field"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Enrollment",
+   "aliases": [
+    "marketing",
+    "enrollment costs",
+    "recruiting spend",
+    "advertising",
+    "camper acquisition"
+   ],
+   "narrative": [
+    "Marketing",
+    "Enrollment costs",
+    "Advertising"
+   ],
+   "recurring": [
+    {
+     "vendor": "BrightPath Digital Agency",
+     "base": 7000,
+     "memo": "Monthly digital advertising management"
+    },
+    {
+     "vendor": "Campfinder Listings",
+     "base": 1800,
+     "memo": "Directory listing subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "video",
+     "vendor": "BrightPath Digital Agency",
+     "memos": [
+      "Brand documentary shoot — drone and crew",
+      "Brand documentary shoot — post-production edit"
+     ],
+     "cross_memo": "Brand documentary shoot — talent releases and travel",
+     "plain": [
+      "the brand documentary shoot",
+      "brand documentary production",
+      "the documentary shoot"
+     ],
+     "oblique": [
+      "a professional film about the summer",
+      "footage to show prospective families",
+      "a cinematic piece for the website",
+      "a creative project aimed at winning enrollments",
+      "filming the lake from above",
+      "a promo that took weeks to cut",
+      "what the marketing director championed",
+      "a polished showcase",
+      "our biggest media production",
+      "a reaction to a competitor's slick video",
+      "visual storytelling",
+      "a project meant to fill next year's spots",
+      "the movie about us",
+      "aerial footage and interviews",
+      "an investment in how we look",
+      "a high-end promotional piece"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "fair",
+     "vendor": "Expo Hall Events Group",
+     "memos": [
+      "Family expo booth — spring showcase sponsorship",
+      "Family expo booth — display build and shipping"
+     ],
+     "cross_memo": "Family expo booth — staff travel",
+     "plain": [
+      "the family expo booth",
+      "family expo sponsorship",
+      "the expo booth"
+     ],
+     "oblique": [
+      "a table at a regional parent gathering",
+      "meeting prospective families face to face",
+      "a trade show appearance",
+      "a big presence at a weekend event",
+      "handing out brochures in a convention hall",
+      "our stand among competitors",
+      "an in-person recruiting push",
+      "the display we hauled to the city",
+      "a sponsorship that put our name on banners",
+      "a spring outreach weekend",
+      "the event where we signed up new campers",
+      "visibility among local parents",
+      "paying for floor space",
+      "an expensive way to find leads",
+      "a sales event",
+      "where we met next summer's families"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,830 @@
+{
+ "slug": "sugar-refinery",
+ "industry": "sugar refinery",
+ "entities": [
+  "Golden Ridge Sugar Refining Co.",
+  "Magnolia Bay Cane Processors",
+  "Delta Crystal Refinery Inc.",
+  "Harborlight Sweeteners LLC",
+  "Prairie Sun Beet and Cane Works"
+ ],
+ "accounts": [
+  {
+   "name": "Boiler Fuel and Steam",
+   "aliases": [
+    "steam",
+    "boiler fuel",
+    "steam generation costs",
+    "fuel and steam",
+    "energy for boilers"
+   ],
+   "narrative": [
+    "Steam",
+    "Boiler fuel",
+    "Steam generation costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gulfline Natural Gas Supply",
+     "base": 28000,
+     "memo": "Natural gas delivered - pipeline nominations"
+    },
+    {
+     "vendor": "Riverbend Bagasse Pellets",
+     "base": 9500,
+     "memo": "Biomass pellet delivery - weekly drops"
+    },
+    {
+     "vendor": "Cinder Creek Ash Hauling",
+     "base": 1800,
+     "memo": "Ash removal - scheduled pickups"
+    }
+   ],
+   "events": [
+    {
+     "key": "economizer",
+     "vendor": "Gulfline Natural Gas Supply",
+     "memos": [
+      "Economizer retube - emergency gas purchase",
+      "Economizer retube - spot market surcharge"
+     ],
+     "cross_memo": "Economizer retube - contractor welding crew",
+     "plain": [
+      "the economizer retube",
+      "the economizer retube gas purchase",
+      "the economizer retube surcharge"
+     ],
+     "oblique": [
+      "a leaking heat recovery section",
+      "the unplanned boiler outage",
+      "buying fuel at short notice",
+      "running on backup supply",
+      "the pressure vessel failure in March",
+      "an inspection finding on the exhaust side",
+      "making up lost steam",
+      "the unexpected shutdown of unit two",
+      "paying premium rates for replacement supply",
+      "what the state inspector flagged",
+      "tubes that wore through early",
+      "the week we ran at half capacity",
+      "a costly stopgap while parts were on order",
+      "the plant going dark on steam",
+      "scrambling to keep the pans hot",
+      "the failed pressure test"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "flueduct",
+     "vendor": "Ironwood Combustion Services",
+     "memos": [
+      "Flue duct realignment - burner tuning visit",
+      "Flue duct realignment - emissions retest"
+     ],
+     "cross_memo": "Flue duct realignment - scaffold rental",
+     "plain": [
+      "the flue duct realignment",
+      "the flue duct realignment tuning",
+      "the flue duct realignment retest"
+     ],
+     "oblique": [
+      "the air permit renewal work",
+      "getting stack readings back within limits",
+      "a consultant tuning the burners",
+      "the regulator visit",
+      "bringing emissions under the cap",
+      "cleanup after a notice of violation",
+      "the environmental audit follow-up",
+      "paying specialists to certify the stack",
+      "a compliance deadline we nearly missed",
+      "retesting after a failed reading",
+      "the county air quality complaint",
+      "work required to keep our operating permit",
+      "fine tuning combustion efficiency",
+      "the outside engineers we hired",
+      "adjustments demanded by the agency",
+      "proving we meet the pollution standard"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Raw Cane Freight and Unloading",
+   "aliases": [
+    "cane freight",
+    "raw sugar freight",
+    "inbound freight",
+    "unloading costs",
+    "cane hauling"
+   ],
+   "narrative": [
+    "Cane freight",
+    "Inbound freight",
+    "Cane hauling"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bayou Bulk Carriers",
+     "base": 22000,
+     "memo": "Raw sugar barge freight - weekly voyages"
+    },
+    {
+     "vendor": "Tidewater Dockhands Local",
+     "base": 8200,
+     "memo": "Vessel unloading labor - per shift"
+    },
+    {
+     "vendor": "Coastal Rail Spur Partners",
+     "base": 4500,
+     "memo": "Rail siding lease and switching fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "demurrage",
+     "vendor": "Bayou Bulk Carriers",
+     "memos": [
+      "Vessel Saint Aurelia - berth demurrage",
+      "Vessel Saint Aurelia - extended laytime claim"
+     ],
+     "cross_memo": "Vessel Saint Aurelia - customs broker overtime",
+     "plain": [
+      "the vessel Saint Aurelia demurrage",
+      "the Saint Aurelia laytime claim",
+      "the vessel Saint Aurelia delay"
+     ],
+     "oblique": [
+      "a ship that sat waiting for a free slot",
+      "the late arrival of the big shipment",
+      "penalties for holding the boat too long",
+      "the foreign-flagged delivery that ran over",
+      "a clogged waterfront",
+      "days lost while the crane was down",
+      "charges for idle time at the pier",
+      "the overseas supplier's schedule slipping",
+      "the largest single delivery this year",
+      "paying for a vessel that could not discharge",
+      "storm delays out in the gulf",
+      "the queue of arriving freighters",
+      "a shipment that overstayed its window",
+      "extra days the ship stayed tied up",
+      "the mix-up over when the load was due",
+      "lost time on the water"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "trestle",
+     "vendor": "Marlow Structural Inspection",
+     "memos": [
+      "Trestle conveyor 4 - load rating survey",
+      "Trestle conveyor 4 - girder crack assessment"
+     ],
+     "cross_memo": "Trestle conveyor 4 - temporary traffic detour",
+     "plain": [
+      "the trestle conveyor 4 survey",
+      "the trestle conveyor 4 assessment",
+      "the trestle conveyor 4 rating"
+     ],
+     "oblique": [
+      "engineers checking the elevated belt line",
+      "a safety scare on the old overhead span",
+      "fixing what the insurer asked us to check",
+      "the structure that carries raw material to the mill",
+      "an outside firm certifying the walkway",
+      "cracks spotted during a routine walkthrough",
+      "the review ordered after a near miss",
+      "work to prove the supports still hold weight",
+      "a stopgap while the span was restricted",
+      "reinforcement of the aging steelwork",
+      "the engineering opinion we had to buy",
+      "a precaution on the oldest part of the yard",
+      "closing a lane while experts looked it over",
+      "paperwork needed before we could reopen",
+      "the assessment from the structural people",
+      "checking whether the frame was sound"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Centrifuge and Pan Maintenance",
+   "aliases": [
+    "centrifuges",
+    "pan maintenance",
+    "process equipment repairs",
+    "crystallizer upkeep",
+    "centrifuge repairs"
+   ],
+   "narrative": [
+    "Centrifuges",
+    "Pan maintenance",
+    "Process equipment repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hollis Precision Bearings",
+     "base": 6800,
+     "memo": "Spindle bearings and seals - standing order"
+    },
+    {
+     "vendor": "Sterling Vacuum Pan Service",
+     "base": 11000,
+     "memo": "Vacuum pan inspection - monthly contract"
+    },
+    {
+     "vendor": "Ketterman Basket Screens",
+     "base": 3900,
+     "memo": "Perforated screen replacement stock"
+    }
+   ],
+   "events": [
+    {
+     "key": "spindle",
+     "vendor": "Hollis Precision Bearings",
+     "memos": [
+      "Spindle rebuild line 3 - rush rebore",
+      "Spindle rebuild line 3 - balancing service"
+     ],
+     "cross_memo": "Spindle rebuild line 3 - crane hire",
+     "plain": [
+      "the spindle rebuild line 3",
+      "the spindle rebuild rush rebore",
+      "the line 3 spindle balancing"
+     ],
+     "oblique": [
+      "a machine that started shaking badly",
+      "the drum that nearly tore loose",
+      "getting a spinning unit back online",
+      "parts machined overnight",
+      "the vibration alarm that tripped",
+      "a unit that would not hold speed",
+      "urgent shop work on a high-speed machine",
+      "the breakdown that backed up the whole station",
+      "fixing the thing that separates crystals from syrup",
+      "paying for a rushed turnaround",
+      "the sound that made operators stop the run",
+      "a wobble nobody could ignore",
+      "the repair that could not wait for the shutdown",
+      "an overhaul of one of the main workhorses",
+      "the hurried machining job",
+      "what went wrong on the third train"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "calandria",
+     "vendor": "Redfern Tube Cleaning Crew",
+     "memos": [
+      "Calandria descaling pan 6 - chemical wash",
+      "Calandria descaling pan 6 - hydroblast labor"
+     ],
+     "cross_memo": "Calandria descaling pan 6 - spent acid disposal",
+     "plain": [
+      "the calandria descaling pan 6",
+      "the pan 6 calandria chemical wash",
+      "the calandria hydroblast"
+     ],
+     "oblique": [
+      "scale that choked heat transfer",
+      "boiling times that crept up",
+      "the deep clean nobody scheduled",
+      "a buildup inside the heating element",
+      "the cleaning contractors who came in over the weekend",
+      "restoring throughput on the slowest vessel",
+      "crystals coming out smaller than spec",
+      "scrubbing the inside of a cooking unit",
+      "the crew with the high-pressure water lances",
+      "a slowdown traced to crusted deposits",
+      "taking one unit offline to scour it",
+      "work to get evaporation rates back to normal",
+      "the chemical treatment for stubborn residue",
+      "something the quality team flagged on yield",
+      "clearing out hardened sediment",
+      "a sluggish cooker finally getting attention"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Packaging Materials",
+   "aliases": [
+    "packaging",
+    "bags and film",
+    "packaging supplies",
+    "sack and liner costs",
+    "packaging materials spend"
+   ],
+   "narrative": [
+    "Packaging",
+    "Bags and film",
+    "Packaging supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pelham Paper Sack Co.",
+     "base": 18500,
+     "memo": "Multiwall paper sacks - 50 lb and 100 lb"
+    },
+    {
+     "vendor": "Brightwrap Polyfilm",
+     "base": 7400,
+     "memo": "Retail bag film and liners"
+    },
+    {
+     "vendor": "Lowcountry Pallet and Strap",
+     "base": 3100,
+     "memo": "Pallets and stretch wrap"
+    }
+   ],
+   "events": [
+    {
+     "key": "rebrand",
+     "vendor": "Pelham Paper Sack Co.",
+     "memos": [
+      "Heritage Gold relaunch - new plate engraving",
+      "Heritage Gold relaunch - first print run"
+     ],
+     "cross_memo": "Heritage Gold relaunch - agency design fee",
+     "plain": [
+      "the Heritage Gold relaunch",
+      "the Heritage Gold print run",
+      "the Heritage Gold engraving"
+     ],
+     "oblique": [
+      "the refreshed look on store shelves",
+      "a new retail line for the grocery chain",
+      "the marketing team's updated artwork",
+      "scrapping the old stock of printed material",
+      "the product we introduced for the holidays",
+      "a customer who demanded fresh graphics",
+      "the launch we promoted at the trade show",
+      "changing what the consumer sees",
+      "a label overhaul approved by the owners",
+      "the initial order for the new design",
+      "getting ready for the spring catalog",
+      "the design we showed the buyers",
+      "the shelf-set deadline from the supermarket",
+      "costs of switching to different artwork",
+      "the new consumer brand rollout",
+      "tooling for the redesigned line"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "foodsafe",
+     "vendor": "Zenith Barrier Laminates",
+     "memos": [
+      "Allergen-safe liner qualification - trial rolls",
+      "Allergen-safe liner qualification - lab migration test"
+     ],
+     "cross_memo": "Allergen-safe liner qualification - audit consultant",
+     "plain": [
+      "the allergen-safe liner qualification",
+      "the allergen-safe liner trial rolls",
+      "the allergen-safe liner migration test"
+     ],
+     "oblique": [
+      "a requirement from our biggest bakery customer",
+      "the certification the auditors wanted",
+      "switching suppliers to meet a new standard",
+      "trial runs before a major contract",
+      "lab work on whether the material could touch product",
+      "a food safety finding we had to close",
+      "samples shipped to the testing facility",
+      "what the inspector told us last quarter",
+      "the paperwork behind a customer approval",
+      "qualifying a replacement material",
+      "a supplier change driven by compliance",
+      "the pilot batches we ran on the line",
+      "proving nothing leaches into the sugar",
+      "the quality department's special project",
+      "testing done ahead of the renewal",
+      "a safeguard demanded by a buyer"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Syrup and Molasses Handling",
+   "aliases": [
+    "molasses",
+    "syrup handling",
+    "byproduct handling",
+    "molasses logistics",
+    "liquid byproduct costs"
+   ],
+   "narrative": [
+    "Molasses",
+    "Syrup handling",
+    "Byproduct handling"
+   ],
+   "recurring": [
+    {
+     "vendor": "Dunmore Tank Trucking",
+     "base": 12500,
+     "memo": "Molasses tanker loads - contract rate"
+    },
+    {
+     "vendor": "Cypress Terminal Storage",
+     "base": 9800,
+     "memo": "Bulk liquid tank rental"
+    },
+    {
+     "vendor": "Allgood Pump and Valve",
+     "base": 2900,
+     "memo": "Transfer pump maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "fermentspill",
+     "vendor": "Cypress Terminal Storage",
+     "memos": [
+      "Tank 12 overflow - containment cleanup",
+      "Tank 12 overflow - soil remediation sampling"
+     ],
+     "cross_memo": "Tank 12 overflow - fire marshal inspection fee",
+     "plain": [
+      "the tank 12 overflow",
+      "the tank 12 containment cleanup",
+      "the tank 12 remediation sampling"
+     ],
+     "oblique": [
+      "sticky mess outside the storage yard",
+      "a gauge that read wrong",
+      "the cleanup crews at the fence line",
+      "what leaked toward the drainage ditch",
+      "an incident the neighbors reported",
+      "a sweet flood on the gravel lot",
+      "a stuck float that lied to the operator",
+      "the call from the water authority",
+      "hauling away contaminated dirt",
+      "paying to make the lot safe again",
+      "the morning someone found the puddle",
+      "a mishap during the night shift",
+      "getting the site back to clean",
+      "the lost product that never reached customers",
+      "sampling the ground afterwards",
+      "an environmental report we owed the state"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "feedcontract",
+     "vendor": "Oakhaven Livestock Feed Mills",
+     "memos": [
+      "Cattle feed blend trial - rush loadout",
+      "Cattle feed blend trial - ration lab analysis"
+     ],
+     "cross_memo": "Cattle feed blend trial - bulk bin rental",
+     "plain": [
+      "the cattle feed blend trial",
+      "the cattle feed rush loadout",
+      "the cattle feed ration analysis"
+     ],
+     "oblique": [
+      "a new buyer for our leftover liquid",
+      "selling to ranchers instead of the distillery",
+      "a test shipment to an agricultural customer",
+      "a sideline that might become permanent",
+      "the trial order from a farm cooperative",
+      "finding another outlet for surplus",
+      "a different market for what we used to discard",
+      "samples sent to a nutrition specialist",
+      "the first delivery under a pilot deal",
+      "testing demand outside our usual customers",
+      "the opportunity the sales team found",
+      "a short-notice order from the countryside",
+      "working out a recipe with the buyer",
+      "efforts to diversify revenue",
+      "the one-time arrangement with a mill",
+      "what the commercial group arranged"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Wastewater and Environmental Compliance",
+   "aliases": [
+    "wastewater",
+    "effluent costs",
+    "environmental compliance",
+    "discharge treatment",
+    "water treatment spend"
+   ],
+   "narrative": [
+    "Wastewater",
+    "Effluent costs",
+    "Environmental compliance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearwater Biological Treatment",
+     "base": 14500,
+     "memo": "Effluent treatment operations - monthly"
+    },
+    {
+     "vendor": "Parish Sewer Authority",
+     "base": 6200,
+     "memo": "Industrial discharge surcharge"
+    },
+    {
+     "vendor": "Greenfield Lab Testing",
+     "base": 2400,
+     "memo": "Weekly discharge sampling"
+    }
+   ],
+   "events": [
+    {
+     "key": "lagoon",
+     "vendor": "Clearwater Biological Treatment",
+     "memos": [
+      "Lagoon 2 dredge - sludge dewatering",
+      "Lagoon 2 dredge - polymer dosing"
+     ],
+     "cross_memo": "Lagoon 2 dredge - landfill tipping fees",
+     "plain": [
+      "the lagoon 2 dredge",
+      "the lagoon 2 sludge dewatering",
+      "the lagoon 2 polymer dosing"
+     ],
+     "oblique": [
+      "years of settled solids finally removed",
+      "a pond that had lost most of its capacity",
+      "the heavy equipment working the shoreline",
+      "trucks hauling thick muck off site",
+      "clearing out what had piled up on the bottom",
+      "a project we kept putting off",
+      "the pond nearly at the brim",
+      "capacity lost to accumulated waste",
+      "what we paid to restore holding volume",
+      "work that finally got approved",
+      "the muddy excavation near the back lot",
+      "a backlog of material building for a decade",
+      "the cleanup before the rainy season",
+      "reclaiming space for next harvest",
+      "the contractor with the long-reach excavator",
+      "the biggest cleaning job on the grounds"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "odor",
+     "vendor": "Aerolux Scrubber Systems",
+     "memos": [
+      "Odor scrubber retrofit - fan and ducting install",
+      "Odor scrubber retrofit - carbon media fill"
+     ],
+     "cross_memo": "Odor scrubber retrofit - neighbor outreach mailing",
+     "plain": [
+      "the odor scrubber retrofit",
+      "the odor scrubber ducting install",
+      "the odor scrubber carbon fill"
+     ],
+     "oblique": [
+      "complaints from homes downwind",
+      "a smell that drifted across the highway",
+      "the town council meeting",
+      "residents who called the hotline",
+      "a good-neighbor commitment",
+      "air equipment added to the back of the plant",
+      "the promise we made to the parish",
+      "the stench in the summer heat",
+      "an upgrade nobody wanted to fund",
+      "trying to keep the community on our side",
+      "what we installed after the petition",
+      "filtering the air before it leaves the site",
+      "an agreement worked out with local officials",
+      "making the facility less noticeable",
+      "the fix demanded after repeated complaints",
+      "a pledge to reduce nuisance"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Quality Lab and Grading",
+   "aliases": [
+    "quality lab",
+    "grading costs",
+    "polarization testing",
+    "lab supplies",
+    "sugar quality testing"
+   ],
+   "narrative": [
+    "Quality lab",
+    "Grading costs",
+    "Lab supplies"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Scientific Supply",
+     "base": 5200,
+     "memo": "Reagents and glassware - standing order"
+    },
+    {
+     "vendor": "Prism Analytical Instruments",
+     "base": 3800,
+     "memo": "Polarimeter service contract"
+    },
+    {
+     "vendor": "Southern Assay Referee Labs",
+     "base": 2100,
+     "memo": "Third-party sample verification"
+    }
+   ],
+   "events": [
+    {
+     "key": "nirunit",
+     "vendor": "Prism Analytical Instruments",
+     "memos": [
+      "Spectrometer replacement - bench unit purchase",
+      "Spectrometer replacement - calibration standards"
+     ],
+     "cross_memo": "Spectrometer replacement - operator training course",
+     "plain": [
+      "the spectrometer replacement",
+      "the spectrometer bench unit",
+      "the spectrometer calibration standards"
+     ],
+     "oblique": [
+      "the old analyzer finally giving out",
+      "faster readings on incoming loads",
+      "gear the lab had outgrown",
+      "a capital item squeezed into operating spend",
+      "what the chemists asked for last year",
+      "an instrument that kept drifting",
+      "upgrading how we measure purity",
+      "the lab manager's long-standing request",
+      "a machine out of support from its maker",
+      "replacing equipment after repeated errors",
+      "the unit on the main bench",
+      "the new tool the technicians trained on",
+      "something the auditors noticed was outdated",
+      "measurement gear that would not stay accurate",
+      "keeping up with what customers expect from our data",
+      "the instrument that arrived in crates"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "retainsample",
+     "vendor": "Bellweather Independent Assay",
+     "memos": [
+      "Contamination dispute 7741 - umpire analysis",
+      "Contamination dispute 7741 - sample retention fee"
+     ],
+     "cross_memo": "Contamination dispute 7741 - customer credit memo handling",
+     "plain": [
+      "the contamination dispute 7741",
+      "the dispute 7741 umpire analysis",
+      "the contamination 7741 retention fee"
+     ],
+     "oblique": [
+      "a customer claiming specks in a shipment",
+      "the argument over who was at fault",
+      "a neutral party brought in to settle things",
+      "paying outsiders to confirm our numbers",
+      "a load that came back rejected",
+      "the legal letter from a buyer",
+      "evidence we had to preserve for months",
+      "the quarrel with a candy maker",
+      "an outside opinion on foreign matter",
+      "a claim that could have cost far more",
+      "samples locked away in case of a lawsuit",
+      "the third party both sides agreed to trust",
+      "clearing our name on a complaint",
+      "a disagreement that dragged on",
+      "what we spent defending the product",
+      "the buyer who said the batch was off"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Plant Insurance and Safety",
+   "aliases": [
+    "insurance",
+    "safety program",
+    "plant safety costs",
+    "dust control and safety",
+    "insurance and safety spend"
+   ],
+   "narrative": [
+    "Insurance",
+    "Safety program",
+    "Plant safety costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Anchor Mutual Property Underwriters",
+     "base": 26000,
+     "memo": "Property and business interruption premium installment"
+    },
+    {
+     "vendor": "Firebrand Suppression Services",
+     "base": 4600,
+     "memo": "Sprinkler and extinguisher inspections"
+    },
+    {
+     "vendor": "Safeguard Occupational Clinic",
+     "base": 2300,
+     "memo": "Employee screening and hearing tests"
+    }
+   ],
+   "events": [
+    {
+     "key": "dustexplosion",
+     "vendor": "Firebrand Suppression Services",
+     "memos": [
+      "Dust collector upgrade - explosion vent panels",
+      "Dust collector upgrade - suppression controller"
+     ],
+     "cross_memo": "Dust collector upgrade - hazard study fee",
+     "plain": [
+      "the dust collector upgrade",
+      "the dust collector vent panels",
+      "the dust collector suppression controller"
+     ],
+     "oblique": [
+      "the underwriter's condition for renewal",
+      "airborne powder hazards in the packing hall",
+      "lessons from an incident at another refinery",
+      "what the fire insurer demanded",
+      "protecting the building against a blast",
+      "a recommendation from the risk engineer",
+      "hardware to relieve pressure if something ignites",
+      "the finding from last year's loss prevention visit",
+      "making the bagging area safer",
+      "work to keep our coverage in force",
+      "a hazard assessment turned into construction",
+      "fine sugar floating in the air",
+      "a safeguard the corporate office pushed",
+      "the inspection report that listed priorities",
+      "equipment required by the national code",
+      "the worry about combustible particles"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "forklifttrain",
+     "vendor": "Pinnacle Workforce Training",
+     "memos": [
+      "Lockout program rollout - instructor-led sessions",
+      "Lockout program rollout - tag and lock kits"
+     ],
+     "cross_memo": "Lockout program rollout - overtime backfill",
+     "plain": [
+      "the lockout program rollout",
+      "the lockout instructor sessions",
+      "the lockout tag and lock kits"
+     ],
+     "oblique": [
+      "a workplace injury last winter",
+      "new procedures for servicing machines",
+      "the union's request after an accident",
+      "sessions pulling crews off the floor",
+      "what the regulator cited us for",
+      "retraining every maintenance technician",
+      "a corporate mandate on equipment isolation",
+      "hours spent in classrooms rather than on shift",
+      "a near miss that scared management",
+      "the materials handed to each mechanic",
+      "making sure nobody gets caught in moving parts",
+      "an incident report that changed our habits",
+      "updating how crews shut machinery down",
+      "the new rulebook for repair work",
+      "a promise made after the citation",
+      "the safety committee's top priority"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

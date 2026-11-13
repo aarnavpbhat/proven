@@ -1,0 +1,728 @@
+{
+ "slug": "roofing-contractor",
+ "industry": "roofing contractor",
+ "entities": [
+  "Summit Ridge Roofing LLC",
+  "Ironclad Roofing & Exteriors",
+  "Blue Heron Roofworks",
+  "Prairie Gable Roofing Co",
+  "Keystone Shingle & Sheet Metal"
+ ],
+ "accounts": [
+  {
+   "name": "Roofing Materials",
+   "aliases": [
+    "materials",
+    "roofing materials",
+    "shingle spend",
+    "material purchases",
+    "supplies"
+   ],
+   "narrative": [
+    "Materials",
+    "Roofing materials",
+    "Material purchases"
+   ],
+   "recurring": [
+    {
+     "vendor": "Tri-County Roofing Supply",
+     "base": 24000,
+     "memo": "Asphalt shingles and underlayment, weekly deliveries"
+    },
+    {
+     "vendor": "Northline Metal Distributors",
+     "base": 9500,
+     "memo": "Flashing, drip edge and fasteners"
+    },
+    {
+     "vendor": "Allied Sealants Wholesale",
+     "base": 3200,
+     "memo": "Caulk, roof cement and primer"
+    }
+   ],
+   "events": [
+    {
+     "key": "slatequarry",
+     "vendor": "Tri-County Roofing Supply",
+     "memos": [
+      "Quarry slate tile special order — Hargrove manor",
+      "Quarry slate tile special order — ridge cap pieces"
+     ],
+     "cross_memo": "Quarry slate tile special order — crane delivery",
+     "plain": [
+      "the quarry slate tile order",
+      "the quarry slate special order",
+      "the quarry slate tile purchase"
+     ],
+     "oblique": [
+      "the historic mansion reroof",
+      "the heirloom stone covering for the old estate",
+      "a premium natural-rock job",
+      "the heritage restoration for the wealthy client",
+      "the pricey imported mineral cladding",
+      "a showpiece luxury project",
+      "the landmark home's new top",
+      "what the architect specified for the manor",
+      "stone from overseas",
+      "an upscale custom order",
+      "the preservation board's requirement",
+      "the one-off high-end commission",
+      "the genuine rock alternative to composite",
+      "a prestige property upgrade",
+      "the quarried product the owner insisted on",
+      "the heavy natural covering"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "copperpanel",
+     "vendor": "Bellwether Architectural Metals",
+     "memos": [
+      "Standing seam copper panels — Westbrook library",
+      "Standing seam copper panels — custom trim coil"
+     ],
+     "cross_memo": "Standing seam copper panels — lift rental",
+     "plain": [
+      "the standing seam copper panels",
+      "the copper panel order",
+      "the standing seam copper job"
+     ],
+     "oblique": [
+      "the public building's reddish roof",
+      "the civic project's premium cladding",
+      "a municipal landmark commitment",
+      "the architect's pick for the town building",
+      "the gleaming rust-hued finish",
+      "a showy institutional contract",
+      "the shiny new covering for the reading house",
+      "the bid we won from the town",
+      "a costly decorative skin",
+      "the patina-bound installation",
+      "the city's heritage showpiece",
+      "an unusually dear specialty order",
+      "the green-aging exterior",
+      "the high-end government-funded build",
+      "what the committee chose over standard options",
+      "a one-time prestige commission"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Crew Labor",
+   "aliases": [
+    "labor",
+    "crew labor",
+    "field labor",
+    "installer wages",
+    "roofing crews"
+   ],
+   "narrative": [
+    "Labor",
+    "Crew labor",
+    "Field labor"
+   ],
+   "recurring": [
+    {
+     "vendor": "Payroll Services Direct",
+     "base": 29000,
+     "memo": "Roofing crew wages, biweekly runs"
+    },
+    {
+     "vendor": "Anchor Staffing Partners",
+     "base": 8500,
+     "memo": "Temp laborers for tear-off"
+    },
+    {
+     "vendor": "Foreman Benefits Group",
+     "base": 4800,
+     "memo": "Crew health and dental premiums"
+    }
+   ],
+   "events": [
+    {
+     "key": "stormsurge",
+     "vendor": "Anchor Staffing Partners",
+     "memos": [
+      "Hailstorm blitz overtime — Maple Heights",
+      "Hailstorm blitz overtime — weekend tarp crews"
+     ],
+     "cross_memo": "Hailstorm blitz overtime — hotel rooms for crews",
+     "plain": [
+      "the hailstorm blitz overtime",
+      "the hailstorm blitz crews",
+      "the hailstorm blitz weekends"
+     ],
+     "oblique": [
+      "the neighborhood-wide ice pellet damage",
+      "the rush after the weather event",
+      "all those extra Saturday shifts",
+      "the flood of insurance claims",
+      "the sudden wave of emergency calls",
+      "a week of nonstop covering-up work",
+      "the demand spike after the sky turned ugly",
+      "stretched hours for the whole workforce",
+      "a seasonal surge nobody planned for",
+      "the frantic temporary protection work",
+      "the sprint to beat the next front",
+      "homeowners all calling at once",
+      "the extra pay for working through weekends",
+      "the cleanup after the big front",
+      "an unexpected pile of urgent jobs",
+      "the crews we kept on the road"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "subcrewbonus",
+     "vendor": "Ridgeline Subcontract Crews",
+     "memos": [
+      "Deadline completion bonus — Oakmont townhomes",
+      "Deadline completion bonus — finish crew payout"
+     ],
+     "cross_memo": "Deadline completion bonus — supervisor stipend",
+     "plain": [
+      "the deadline completion bonus",
+      "the townhome deadline bonus",
+      "the deadline completion payout"
+     ],
+     "oblique": [
+      "finishing the complex ahead of the penalty clause",
+      "the incentive for beating the contract date",
+      "extra pay for wrapping up early",
+      "what we promised the outside team",
+      "the reward tied to the schedule",
+      "getting the HOA project done in time",
+      "an agreement to hurry up the last buildings",
+      "the premium for speed",
+      "cash for hitting the milestone",
+      "the carrot offered to the contractor",
+      "a sweetener negotiated with the builder",
+      "paying for faster turnaround",
+      "the one-time perk for the finishing group",
+      "avoiding liquidated damages on the development",
+      "the early-finish arrangement",
+      "the added pay to meet the owner's date"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Fleet and Trucks",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "truck expense",
+    "vehicle costs",
+    "truck fleet"
+   ],
+   "narrative": [
+    "Fleet",
+    "Fleet costs",
+    "Truck expense"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pilot Fuel Cards",
+     "base": 7800,
+     "memo": "Diesel and gas cards, all trucks"
+    },
+    {
+     "vendor": "Motorworks Fleet Leasing",
+     "base": 11500,
+     "memo": "Monthly truck lease payments"
+    },
+    {
+     "vendor": "Roadmaster Insurance Agency",
+     "base": 3600,
+     "memo": "Commercial auto premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "dumptrailer",
+     "vendor": "Motorworks Fleet Leasing",
+     "memos": [
+      "Tandem dump trailer repair — axle failure",
+      "Tandem dump trailer repair — tire set"
+     ],
+     "cross_memo": "Tandem dump trailer repair — landfill tipping fees",
+     "plain": [
+      "the tandem dump trailer repair",
+      "the tandem dump trailer fix",
+      "the tandem dump trailer axle"
+     ],
+     "oblique": [
+      "getting the debris hauler back on the road",
+      "the breakdown of the tear-off carrier",
+      "what failed on the way to the landfill",
+      "the rolling bin that gave out",
+      "replacing parts that wore through",
+      "the heavy-load equipment outage",
+      "fixing the thing we haul garbage in",
+      "the downtime that stalled crews",
+      "the cargo box that wouldn't roll",
+      "a mechanical failure on the hauling rig",
+      "the unit that carries old roofing away",
+      "emergency work on the towed equipment",
+      "what the mechanic found underneath",
+      "the breakdown that cost us a day",
+      "repairs on the rig behind the pickup",
+      "the failed running gear"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "ladderrack",
+     "vendor": "Gearhouse Truck Outfitters",
+     "memos": [
+      "Pickup upfit program — ladder racks",
+      "Pickup upfit program — toolbox installs"
+     ],
+     "cross_memo": "Pickup upfit program — decal wraps",
+     "plain": [
+      "the pickup upfit program",
+      "the pickup upfit installs",
+      "the pickup upfit order"
+     ],
+     "oblique": [
+      "kitting out the new crew vehicles",
+      "getting the added trucks job-ready",
+      "equipping the vans we just took on",
+      "what it cost to outfit the expansion",
+      "the setup for the second shift",
+      "the additions that let us haul more gear",
+      "readying vehicles for new hires",
+      "preparing the trucks for the busy season",
+      "bolt-on gear for the latest arrivals",
+      "the carriers for long climbing equipment",
+      "the branded look for the newest rigs",
+      "outfitting everything that came off the lot",
+      "the accessories package",
+      "the customization after the lease signing",
+      "the hardware we added to cabs and beds",
+      "the extra outfitting for growth"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Equipment and Tools",
+   "aliases": [
+    "equipment",
+    "tools",
+    "tool expense",
+    "small equipment",
+    "equipment rental"
+   ],
+   "narrative": [
+    "Equipment",
+    "Tools",
+    "Equipment rental"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sunbelt Rental Yard",
+     "base": 6200,
+     "memo": "Lift and scaffold rental, monthly"
+    },
+    {
+     "vendor": "Hardline Tool Supply",
+     "base": 2800,
+     "memo": "Nail guns, blades and hand tools"
+    },
+    {
+     "vendor": "Safeguard Fall Protection Co",
+     "base": 1500,
+     "memo": "Harness inspection and replacement lanyards"
+    }
+   ],
+   "events": [
+    {
+     "key": "hotairwelder",
+     "vendor": "Hardline Tool Supply",
+     "memos": [
+      "Heat welder fleet purchase — membrane seaming",
+      "Heat welder fleet purchase — spare nozzle kits"
+     ],
+     "cross_memo": "Heat welder fleet purchase — operator training",
+     "plain": [
+      "the heat welder fleet purchase",
+      "the heat welder purchase",
+      "the heat welder buy"
+     ],
+     "oblique": [
+      "gear for joining single-ply sheets",
+      "the new flat-roof capability",
+      "what we bought to chase commercial work",
+      "the machines that fuse seams",
+      "a bundle of powered kit for the warehouse job",
+      "expansion into low-slope work",
+      "the investment that opens a new service line",
+      "instruments for the big retail contract",
+      "replacing worn-out units across crews",
+      "the batch of electric units we ordered",
+      "the upgrade for membrane installers",
+      "the heated gadgets for seams",
+      "a one-time equipment outlay",
+      "the units our foremen asked for",
+      "tools to bid on shopping centers",
+      "the fresh round of machines"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "craneboom",
+     "vendor": "Skyreach Crane Services",
+     "memos": [
+      "Boom truck hire — Linden Mall unit swap",
+      "Boom truck hire — rooftop HVAC set"
+     ],
+     "cross_memo": "Boom truck hire — street closure permit",
+     "plain": [
+      "the boom truck hire",
+      "the boom truck rental",
+      "the Linden Mall boom truck"
+     ],
+     "oblique": [
+      "lifting heavy units onto the building",
+      "the oversized hoist for the retail center",
+      "getting machinery up four floors",
+      "an outside lift the shop couldn't provide",
+      "the big machine that moved the air handlers",
+      "help from a company with long arms",
+      "the day we shut the road for the heavy pick",
+      "raising equipment too weighty for our team",
+      "the tall reach we had to borrow",
+      "a single-day specialty lift",
+      "moving rooftop mechanical gear",
+      "what we paid to get units overhead",
+      "the borrowed muscle for tower work",
+      "the loading of cooling gear on top",
+      "the contractor with the giant arm",
+      "the elevated placement job"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Insurance and Bonding",
+   "aliases": [
+    "insurance",
+    "insurance and bonding",
+    "liability coverage",
+    "bonds",
+    "coverage costs"
+   ],
+   "narrative": [
+    "Insurance",
+    "Insurance and bonding",
+    "Coverage costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cornerstone General Liability",
+     "base": 9200,
+     "memo": "General liability premium installment"
+    },
+    {
+     "vendor": "Workwell Comp Carriers",
+     "base": 12500,
+     "memo": "Workers comp premium installment"
+    },
+    {
+     "vendor": "Surety Partners Bonding",
+     "base": 2400,
+     "memo": "Annual bid and performance bond fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "umbrellaaudit",
+     "vendor": "Workwell Comp Carriers",
+     "memos": [
+      "Payroll audit true-up — prior policy year",
+      "Payroll audit true-up — misclassified laborers"
+     ],
+     "cross_memo": "Payroll audit true-up — penalty interest",
+     "plain": [
+      "the payroll audit true-up",
+      "the payroll audit adjustment",
+      "the payroll audit charge"
+     ],
+     "oblique": [
+      "the carrier's review of last year's headcount",
+      "extra premium after the examiner visit",
+      "a bill for underreported wages",
+      "the insurer's finding about job classifications",
+      "what they said we owed retroactively",
+      "catching up on coverage we underpaid",
+      "the examination of our books by the underwriter",
+      "a surprise invoice for old exposure",
+      "the correction for how workers were coded",
+      "the make-up payment for twelve months back",
+      "an after-the-fact premium hike",
+      "the review that came out against us",
+      "the settlement on categories of employee",
+      "what the underwriters recalculated",
+      "the adjustment nobody budgeted",
+      "the reconciliation with the policy carrier"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "newstatebond",
+     "vendor": "Meridian Surety Group",
+     "memos": [
+      "Commercial license bond — Colorado expansion",
+      "Commercial license bond — reciprocity filing"
+     ],
+     "cross_memo": "Commercial license bond — attorney review",
+     "plain": [
+      "the commercial license bond",
+      "the Colorado license bond",
+      "the commercial license bond filing"
+     ],
+     "oblique": [
+      "the paperwork to work across the state line",
+      "the guarantee required by a new regulator",
+      "what the other jurisdiction demanded",
+      "our expansion into a neighboring market",
+      "the cost of being allowed to bid out west",
+      "a security posted for operating permits",
+      "the government's condition for doing business there",
+      "the deposit to open the second territory",
+      "an out-of-state entry requirement",
+      "the pledge that backs our work in the mountains",
+      "the mandatory backing to enter the market",
+      "the surety the licensing board asked for",
+      "what it took to legally take jobs elsewhere",
+      "a fee tied to going regional",
+      "the entry ticket for new territory",
+      "the guarantee put up for the permit"
+     ],
+     "low": 8000,
+     "high": 16000
+    }
+   ]
+  },
+  {
+   "name": "Disposal and Dump Fees",
+   "aliases": [
+    "disposal",
+    "dump fees",
+    "tear-off disposal",
+    "landfill costs",
+    "waste hauling"
+   ],
+   "narrative": [
+    "Disposal",
+    "Dump fees",
+    "Landfill costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Greenway Roll-Off Service",
+     "base": 8800,
+     "memo": "Dumpster rentals and hauls, monthly"
+    },
+    {
+     "vendor": "County Transfer Station",
+     "base": 4200,
+     "memo": "Tipping fees for shingle tear-off"
+    },
+    {
+     "vendor": "CleanSweep Debris Removal",
+     "base": 1800,
+     "memo": "Job-site cleanup and magnet sweeps"
+    }
+   ],
+   "events": [
+    {
+     "key": "asbestostest",
+     "vendor": "County Transfer Station",
+     "memos": [
+      "Hazardous abatement disposal — transite roofing",
+      "Hazardous abatement disposal — sealed bags"
+     ],
+     "cross_memo": "Hazardous abatement disposal — air monitoring",
+     "plain": [
+      "the hazardous abatement disposal",
+      "the hazardous abatement load",
+      "the hazardous abatement hauling"
+     ],
+     "oblique": [
+      "the old cement-fiber sheets at the school",
+      "tearing out dangerous legacy material",
+      "regulated stuff from the vintage warehouse",
+      "what the environmental rules required",
+      "specially handled waste from the dated building",
+      "the carcinogenic fibers we had to bag",
+      "the license-only portion of a demo",
+      "a job that needed protective suits",
+      "the contaminated old covering",
+      "the dangerous haul nobody wanted to touch",
+      "the special permit for toxic debris",
+      "the old building's nasty surprise",
+      "what the inspector flagged before we started",
+      "the dust-control portion of the demolition",
+      "the extra procedures for heritage roofing",
+      "the pricey cleanup of a past-era product"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "conversionbin",
+     "vendor": "Bluestone Recycling Partners",
+     "memos": [
+      "Shingle recycling pilot — grinder haul",
+      "Shingle recycling pilot — processing fee"
+     ],
+     "cross_memo": "Shingle recycling pilot — sorting labor",
+     "plain": [
+      "the shingle recycling pilot",
+      "the shingle recycling program",
+      "the shingle recycling trial"
+     ],
+     "oblique": [
+      "diverting old asphalt away from burial",
+      "our green initiative with the city",
+      "a test run on reusing tear-off",
+      "the road-paving partnership",
+      "trying something other than burying waste",
+      "the sustainability experiment for bigger clients",
+      "grinding old product for another life",
+      "what we spent to meet the eco-minded customer's ask",
+      "a trial arrangement with a processor",
+      "sending used material to be turned into pavement",
+      "the environmental credential project",
+      "the ground-up alternative",
+      "an effort to cut our landfill volume",
+      "paying to keep trash out of the pit",
+      "a voluntary diversion effort",
+      "the pilot that satisfied the contractor's greener goals"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Safety and Compliance",
+   "aliases": [
+    "safety",
+    "safety costs",
+    "compliance",
+    "osha spending",
+    "training and safety"
+   ],
+   "narrative": [
+    "Safety",
+    "Safety costs",
+    "Compliance"
+   ],
+   "recurring": [
+    {
+     "vendor": "Highmark Safety Training",
+     "base": 2600,
+     "memo": "Monthly toolbox talks and certifications"
+    },
+    {
+     "vendor": "Guardian PPE Wholesale",
+     "base": 3400,
+     "memo": "Hard hats, gloves, harnesses and vests"
+    },
+    {
+     "vendor": "Compliance Desk Consulting",
+     "base": 1900,
+     "memo": "Safety program documentation retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "fallcitation",
+     "vendor": "Compliance Desk Consulting",
+     "memos": [
+      "Citation abatement program — scaffold guardrails",
+      "Citation abatement program — corrective plan"
+     ],
+     "cross_memo": "Citation abatement program — fine payment",
+     "plain": [
+      "the citation abatement program",
+      "the citation abatement plan",
+      "the citation abatement work"
+     ],
+     "oblique": [
+      "fixing what the inspector flagged",
+      "the follow-up after the surprise site visit",
+      "satisfying the agency's order",
+      "the penalties and fixes after the visit",
+      "what we owed after the regulator's walkthrough",
+      "the remedial steps demanded by the government",
+      "cleaning up our act at the job site",
+      "the settlement over the unprotected edges",
+      "making things right with the authorities",
+      "the response to the notice we got",
+      "the expensive lesson from the visit",
+      "reworking our practices after the finding",
+      "meeting the agency's deadline",
+      "the paperwork and hardware that followed the warning",
+      "a mandated overhaul",
+      "the corrections ordered by the enforcement office"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "drone",
+     "vendor": "Aerialview Inspection Tech",
+     "memos": [
+      "Drone inspection rollout — pilot licensing",
+      "Drone inspection rollout — thermal camera kit"
+     ],
+     "cross_memo": "Drone inspection rollout — software subscription",
+     "plain": [
+      "the drone inspection rollout",
+      "the drone inspection program",
+      "the drone inspection kit"
+     ],
+     "oblique": [
+      "keeping people off steep surfaces",
+      "the flying cameras for estimating",
+      "getting eyes on the job without ladders",
+      "tech that reduces climbing risk",
+      "the gadgets that scan from above",
+      "the remote look at damaged areas",
+      "what we invested in to cut falls",
+      "the new way to survey without stepping up",
+      "an innovation aimed at fewer injuries",
+      "unmanned aircraft for estimators",
+      "the licensing and gear for sky surveys",
+      "a modernization of how we assess jobs",
+      "the gizmos that photograph from altitude",
+      "the shift away from walking the pitch",
+      "a pricey experiment in aerial scouting",
+      "the equipment that sees what crews can't reach"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,820 @@
+{
+ "slug": "toll-road-operator",
+ "industry": "toll road operator",
+ "entities": [
+  "Summit Pass Tollway Authority",
+  "Redhawk Turnpike Partners",
+  "Lakeshore Express Tolling",
+  "Ironbridge Parkway Operating Co",
+  "Harborline Toll Services"
+ ],
+ "accounts": [
+  {
+   "name": "Toll Plaza Maintenance",
+   "aliases": [
+    "plaza upkeep",
+    "plaza maintenance",
+    "toll booth upkeep",
+    "plaza repairs",
+    "toll plaza costs"
+   ],
+   "narrative": [
+    "Plaza upkeep",
+    "Plaza maintenance",
+    "Toll plaza costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Granite State Facility Services",
+     "base": 14500,
+     "memo": "Monthly plaza janitorial and grounds"
+    },
+    {
+     "vendor": "Brightpath Lighting Co",
+     "base": 6200,
+     "memo": "Plaza lighting inspection and bulb replacement"
+    },
+    {
+     "vendor": "Keystone Booth Supply",
+     "base": 3100,
+     "memo": "Booth consumables and cash drawer parts"
+    }
+   ],
+   "events": [
+    {
+     "key": "canopy",
+     "vendor": "Granite State Facility Services",
+     "memos": [
+      "Canopy recoat — steel beam repainting",
+      "Canopy recoat — corrosion treatment"
+     ],
+     "cross_memo": "Canopy recoat — temporary lane barriers",
+     "plain": [
+      "the canopy recoat",
+      "the canopy recoat work",
+      "the steel canopy recoat"
+     ],
+     "oblique": [
+      "restoring the overhead shelters over the lanes",
+      "repainting the big roof structures",
+      "fighting rust on the structures above the drive lanes",
+      "the weatherproofing project at the main gantry stations",
+      "protective finish on the overhead steelwork",
+      "rust remediation up high",
+      "a facelift for the roofs drivers pass beneath",
+      "work our asset manager pushed after the winter inspection",
+      "coating the beams before they degrade further",
+      "the shelter refurbishment at the busiest stations",
+      "keeping the weather off the lane covers",
+      "preventive treatment for aging overhead metal",
+      "what the engineers flagged on the annual structural walkthrough",
+      "refinishing the tall frames above the payment lanes",
+      "the exterior steel refresh",
+      "paint and prep on the upper framework"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "vaultbreach",
+     "vendor": "Sentinel Armor Works",
+     "memos": [
+      "Vault door replacement — Sentinel Armor Works",
+      "Vault door replacement — reinforced hinge assembly"
+     ],
+     "cross_memo": "Vault door replacement — armed escort transport",
+     "plain": [
+      "the vault door replacement",
+      "the vault door replacement project",
+      "the new vault door replacement"
+     ],
+     "oblique": [
+      "a stronger safe for the collected cash room",
+      "upgrading the secure storage after the attempted break-in",
+      "the heavy security door the insurer wanted",
+      "hardening where daily takings are held",
+      "replacing the steel barrier protecting the money room",
+      "what we did after the police report",
+      "a fix our underwriters made a condition of renewal",
+      "beefing up the cash holding area",
+      "security overhaul at the main counting office",
+      "the burglary aftermath",
+      "a sturdier entrance to the strongroom",
+      "the lock-up we had to modernize",
+      "protecting the cash that sits overnight",
+      "work triggered by the insurer audit",
+      "new hardware for the secure cash facility",
+      "the safer enclosure for collections"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Roadway Resurfacing",
+   "aliases": [
+    "paving",
+    "pavement work",
+    "road surface repairs",
+    "asphalt",
+    "resurfacing"
+   ],
+   "narrative": [
+    "Paving",
+    "Pavement work",
+    "Asphalt"
+   ],
+   "recurring": [
+    {
+     "vendor": "Blacktop Dynamics",
+     "base": 22000,
+     "memo": "Routine pothole patching and crack sealing"
+    },
+    {
+     "vendor": "LineRite Striping",
+     "base": 8500,
+     "memo": "Lane marking maintenance"
+    }
+   ],
+   "events": [
+    {
+     "key": "bridgedeck",
+     "vendor": "Blacktop Dynamics",
+     "memos": [
+      "Overpass membrane — waterproof deck layer",
+      "Overpass membrane — expansion joint seal"
+     ],
+     "cross_memo": "Overpass membrane — overnight flagging crew",
+     "plain": [
+      "the overpass membrane",
+      "the overpass membrane job",
+      "the overpass membrane installation"
+     ],
+     "oblique": [
+      "protecting the elevated span from water getting in",
+      "sealing the bridge surface before the rainy season",
+      "the elevated section repair the inspectors asked for",
+      "stopping leaks on the raised crossing",
+      "a barrier layer for the structure over the interchange",
+      "what the state bridge review demanded",
+      "keeping moisture from the concrete underneath",
+      "work on the flyover surface",
+      "a fix for the seepage found last fall",
+      "the long-life treatment for the high crossing",
+      "shielding the structure from salt and meltwater",
+      "the span preservation program",
+      "upgrade to the raised roadway beneath the tires",
+      "the interchange deck protection",
+      "what the engineers recommended after coring samples",
+      "making the flyover last another decade"
+     ],
+     "low": 25000,
+     "high": 50000
+    },
+    {
+     "key": "sinkhole",
+     "vendor": "Terrafirm Geotechnical",
+     "memos": [
+      "Subsidence repair — Terrafirm Geotechnical",
+      "Subsidence repair — grout injection and void fill"
+     ],
+     "cross_memo": "Subsidence repair — emergency lane closure signage",
+     "plain": [
+      "the subsidence repair",
+      "the subsidence repair emergency",
+      "the grout subsidence repair"
+     ],
+     "oblique": [
+      "the ground giving way near the southbound lanes",
+      "filling a cavity that opened under the carriageway",
+      "the dip that appeared after the storm drain failed",
+      "an unexpected hole we had to deal with fast",
+      "stabilizing the earth beneath the travel lanes",
+      "what happened after the culvert collapsed",
+      "shoring up the ground below the highway",
+      "the sudden depression in the roadbed",
+      "emergency work when the surface sank",
+      "fixing what lay under the pavement",
+      "the soil problem near the river crossing",
+      "a hazard crews found on a night patrol",
+      "reinforcing the foundation under the shoulder",
+      "unplanned earthwork on the eastbound side",
+      "the washout beneath the road",
+      "the void that engineers discovered"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Tolling Equipment and Transponders",
+   "aliases": [
+    "tag readers",
+    "transponder costs",
+    "tolling hardware",
+    "lane equipment",
+    "reader hardware"
+   ],
+   "narrative": [
+    "Tag readers",
+    "Transponder costs",
+    "Lane equipment"
+   ],
+   "recurring": [
+    {
+     "vendor": "RadioPass Systems",
+     "base": 18000,
+     "memo": "Transponder inventory replenishment"
+    },
+    {
+     "vendor": "LaneSense Technologies",
+     "base": 9500,
+     "memo": "Reader antenna service contract"
+    },
+    {
+     "vendor": "CircuitMend Repair",
+     "base": 2800,
+     "memo": "Board-level repairs"
+    }
+   ],
+   "events": [
+    {
+     "key": "gantryswap",
+     "vendor": "LaneSense Technologies",
+     "memos": [
+      "Gantry retrofit — open-road antenna array",
+      "Gantry retrofit — calibration and firmware"
+     ],
+     "cross_memo": "Gantry retrofit — crane rental and night crew",
+     "plain": [
+      "the gantry retrofit",
+      "the gantry retrofit program",
+      "the open-road gantry retrofit"
+     ],
+     "oblique": [
+      "moving to drive-through charging without booths",
+      "going cashless at the main corridor",
+      "the conversion that lets cars pay at highway speed",
+      "modernizing how vehicles get billed overhead",
+      "what replaced the stop-and-pay lanes",
+      "the project the board approved for faster throughput",
+      "removing the need to slow down at the stations",
+      "the barrier-free charging rollout",
+      "upgrading the overhead sensing structures",
+      "the changeover from old lanes to free-flow",
+      "what the commuters complained about being fixed",
+      "new overhead detection across all lanes",
+      "a big step toward no-stop collection",
+      "the speed-of-traffic payment capability",
+      "the structure that reads tags as cars pass",
+      "the new way of capturing every trip"
+     ],
+     "low": 28000,
+     "high": 56000
+    },
+    {
+     "key": "lightningstrike",
+     "vendor": "Stormguard Electrical",
+     "memos": [
+      "Surge damage — Stormguard Electrical",
+      "Surge damage — lane controller replacement"
+     ],
+     "cross_memo": "Surge damage — temporary manual collection staffing",
+     "plain": [
+      "the surge damage",
+      "the surge damage repairs",
+      "the storm surge damage"
+     ],
+     "oblique": [
+      "equipment fried during the thunderstorm",
+      "what the weather did to our electronics",
+      "units knocked out by a power spike",
+      "unplanned replacements after the outage",
+      "the night when half the lanes went dark",
+      "fixing gear that burned out",
+      "an act-of-nature event with an insurance claim",
+      "the electrical event last month",
+      "controllers that would not come back online",
+      "fallout from the grid disturbance",
+      "damage nobody budgeted for",
+      "replacing what the lightning took out",
+      "hardware losses after a severe weather night",
+      "the failure that took out several stations",
+      "getting the electronics up after the blackout",
+      "the burnt-out components"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Revenue Collection and Violation Processing",
+   "aliases": [
+    "collections",
+    "violation processing",
+    "enforcement costs",
+    "unpaid toll recovery",
+    "billing operations"
+   ],
+   "narrative": [
+    "Collections",
+    "Violation processing",
+    "Enforcement costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Clearline Mailing Services",
+     "base": 12000,
+     "memo": "Invoice and notice printing and postage"
+    },
+    {
+     "vendor": "PayPoint Processing",
+     "base": 15500,
+     "memo": "Card processing fees"
+    },
+    {
+     "vendor": "Recover Partners LLC",
+     "base": 7200,
+     "memo": "Delinquent account recovery commissions"
+    }
+   ],
+   "events": [
+    {
+     "key": "plateimage",
+     "vendor": "Recover Partners LLC",
+     "memos": [
+      "Backlog clearance — legacy account reconciliation",
+      "Backlog clearance — manual image review"
+     ],
+     "cross_memo": "Backlog clearance — temp data entry staff",
+     "plain": [
+      "the backlog clearance",
+      "the legacy backlog clearance",
+      "the backlog clearance effort"
+     ],
+     "oblique": [
+      "catching up on a pile of old unresolved trips",
+      "a push to clean the queue left from the system change",
+      "extra hands to work through photos nobody reviewed",
+      "the project to settle years of stale records",
+      "what we did about the large stack of unmatched passages",
+      "a one-time sweep of old files",
+      "getting current after months of delays",
+      "manual effort on the leftover cases",
+      "the cleanup the auditors asked for",
+      "purging the old pile of open items",
+      "making the aging report look healthier",
+      "work on records from before the migration",
+      "the temporary squad working the oldest items",
+      "tidying up inherited unfinished business",
+      "a catch-up project",
+      "resolving what was stuck in the pipeline"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "paymentgateway",
+     "vendor": "Vantage Settlement Group",
+     "memos": [
+      "Chargeback settlement — Vantage Settlement Group",
+      "Chargeback settlement — dispute resolution fee"
+     ],
+     "cross_memo": "Chargeback settlement — legal review",
+     "plain": [
+      "the chargeback settlement",
+      "the chargeback settlement fee",
+      "the card chargeback settlement"
+     ],
+     "oblique": [
+      "a payout to resolve cardholder disputes",
+      "money returned after customers contested charges",
+      "what we agreed to after a wave of reversed payments",
+      "the compromise with the bank over contested fees",
+      "reimbursing drivers who challenged their bills",
+      "closing out a pile of contested accounts",
+      "an arrangement with our acquirer",
+      "the cost of settling claims from motorists",
+      "what resulted from the fraud ring",
+      "negotiated resolution of reversed transactions",
+      "the amount we returned to the card networks",
+      "working out what we owed on disputed trips",
+      "the compromise reached on those reversed items",
+      "an agreement ending a long running dispute",
+      "the conclusion of the contested billing matter",
+      "funds we gave back to settle the issue"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Incident Response and Roadside Assistance",
+   "aliases": [
+    "incident response",
+    "roadside help",
+    "tow and patrol",
+    "highway patrol costs",
+    "emergency response"
+   ],
+   "narrative": [
+    "Incident response",
+    "Roadside help",
+    "Tow and patrol"
+   ],
+   "recurring": [
+    {
+     "vendor": "RapidHaul Towing",
+     "base": 16000,
+     "memo": "Contracted tow dispatch"
+    },
+    {
+     "vendor": "SafeRoute Patrol",
+     "base": 24000,
+     "memo": "Service patrol vehicle operations"
+    },
+    {
+     "vendor": "Beacon Medical Response",
+     "base": 5500,
+     "memo": "First aid standby"
+    }
+   ],
+   "events": [
+    {
+     "key": "tankerspill",
+     "vendor": "RapidHaul Towing",
+     "memos": [
+      "Chemical tanker rollover — hazmat cleanup",
+      "Chemical tanker rollover — heavy wrecker"
+     ],
+     "cross_memo": "Chemical tanker rollover — detour signage",
+     "plain": [
+      "the chemical tanker rollover",
+      "the tanker rollover cleanup",
+      "the chemical rollover"
+     ],
+     "oblique": [
+      "a truck carrying hazardous liquids went over on the ramp",
+      "the overturned big rig that closed the highway",
+      "an overnight accident with a leaking trailer",
+      "the crash that shut the northbound lanes for hours",
+      "spilled cargo that needed specialists",
+      "a severe wreck involving dangerous goods",
+      "what happened on the interstate connector",
+      "the heavy vehicle accident",
+      "the incident that made the evening news",
+      "a major collision and its fallout",
+      "an event requiring the fire department",
+      "the bad accident near the exit",
+      "the commercial truck that tipped",
+      "cleaning up after a crash with leaking drums",
+      "the freight truck tipping on the curve",
+      "a closure that lasted most of a day"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "snowstorm",
+     "vendor": "Polar Edge Contractors",
+     "memos": [
+      "Blizzard operations — Polar Edge Contractors",
+      "Blizzard operations — overnight plow crews"
+     ],
+     "cross_memo": "Blizzard operations — stranded motorist shelter",
+     "plain": [
+      "the blizzard operations",
+      "the blizzard operations crews",
+      "the blizzard operations surge"
+     ],
+     "oblique": [
+      "the unusually heavy winter storm",
+      "extra crews clearing the roadway of white stuff",
+      "an early season weather event",
+      "staff working through the night in freezing conditions",
+      "the stretch of days when nobody could drive",
+      "keeping lanes open despite the snowfall",
+      "extra personnel deployed during the cold snap",
+      "help we hired when drifts built up",
+      "what the forecast triggered",
+      "the response to ice and heavy accumulation",
+      "a winter emergency",
+      "calling in outside crews to clear lanes",
+      "the weekend we had to staff around the clock",
+      "winter weather that overwhelmed our own crews",
+      "the wintry mess that closed schools",
+      "emergency coverage when temperatures plunged"
+     ],
+     "low": 19000,
+     "high": 38000
+    }
+   ]
+  },
+  {
+   "name": "Traffic Management and Intelligent Transportation Systems",
+   "aliases": [
+    "traffic management",
+    "its systems",
+    "traffic control center",
+    "variable signs",
+    "traffic technology"
+   ],
+   "narrative": [
+    "Traffic management",
+    "ITS systems",
+    "Traffic technology"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Traffic Analytics",
+     "base": 11000,
+     "memo": "Traffic data subscription"
+    },
+    {
+     "vendor": "SignalWorks Communications",
+     "base": 8800,
+     "memo": "Fiber and network backhaul"
+    },
+    {
+     "vendor": "CamView Monitoring",
+     "base": 4200,
+     "memo": "CCTV maintenance contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "dynamicmsg",
+     "vendor": "SignalWorks Communications",
+     "memos": [
+      "Message board rollout — overhead sign units",
+      "Message board rollout — commissioning labor"
+     ],
+     "cross_memo": "Message board rollout — software license seats",
+     "plain": [
+      "the message board rollout",
+      "the message board rollout project",
+      "the overhead message board rollout"
+     ],
+     "oblique": [
+      "new electronic displays warning drivers ahead",
+      "signs that tell motorists about delays",
+      "the upgrade giving us the ability to show live alerts",
+      "extra variable displays along the corridor",
+      "what we installed to reduce secondary crashes",
+      "equipment that lets us speak to drivers on the road",
+      "the safety initiative funded by the grant",
+      "enhancements to how we communicate with travelers",
+      "giving control room staff more ways to warn people",
+      "illuminated panels over the carriageway",
+      "a project the regulators encouraged",
+      "upgrades to roadside communication hardware",
+      "expansion of driver advisory capabilities",
+      "what replaced the old static warning panels",
+      "a new set of notifications for the traveling public",
+      "bringing real-time messaging to more segments"
+     ],
+     "low": 24000,
+     "high": 48000
+    },
+    {
+     "key": "controlroom",
+     "vendor": "Aegis Command Interiors",
+     "memos": [
+      "Control room expansion — Aegis Command Interiors",
+      "Control room expansion — video wall installation"
+     ],
+     "cross_memo": "Control room expansion — console furniture",
+     "plain": [
+      "the control room expansion",
+      "the control room expansion build",
+      "the video wall control room expansion"
+     ],
+     "oblique": [
+      "a bigger operations center for monitoring the network",
+      "more screens for the watch staff",
+      "the room where dispatchers sit being enlarged",
+      "additional workstations for round the clock monitoring",
+      "the renovation of our nerve center",
+      "what we built to handle growth in traffic",
+      "adding capacity to the watch floor",
+      "the monitoring hub makeover",
+      "space for more operators on each shift",
+      "the buildout the board approved last spring",
+      "a project to centralize oversight",
+      "bringing dispatchers under one roof",
+      "expanded surveillance headquarters",
+      "the redesign of the command space",
+      "upgrading where decisions are made during incidents",
+      "housing the staff that watches every camera"
+     ],
+     "low": 21000,
+     "high": 42000
+    }
+   ]
+  },
+  {
+   "name": "Vegetation and Drainage Management",
+   "aliases": [
+    "roadside landscaping",
+    "mowing and drainage",
+    "vegetation control",
+    "drainage upkeep",
+    "right-of-way care"
+   ],
+   "narrative": [
+    "Roadside landscaping",
+    "Vegetation control",
+    "Drainage upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "GreenVerge Landscaping",
+     "base": 13000,
+     "memo": "Scheduled mowing and trimming"
+    },
+    {
+     "vendor": "ClearFlow Drain Services",
+     "base": 6800,
+     "memo": "Culvert and inlet cleaning"
+    }
+   ],
+   "events": [
+    {
+     "key": "invasive",
+     "vendor": "GreenVerge Landscaping",
+     "memos": [
+      "Knotweed eradication — herbicide application",
+      "Knotweed eradication — root excavation"
+     ],
+     "cross_memo": "Knotweed eradication — disposal haul",
+     "plain": [
+      "the knotweed eradication",
+      "the knotweed eradication program",
+      "the knotweed eradication treatment"
+     ],
+     "oblique": [
+      "a stubborn weed taking over the embankments",
+      "fighting an aggressive plant that damages pavement edges",
+      "the botanical pest the state ordered us to remove",
+      "an invasive species spreading along the shoulders",
+      "clearing a nuisance growth near the bridge approaches",
+      "treating a plant that spreads underground",
+      "what the environmental regulator required",
+      "the unwanted greenery crowding the right-of-way",
+      "a plant problem that got out of hand",
+      "dealing with overgrowth that undermines drainage structures",
+      "the weed outbreak",
+      "work needed to meet the agricultural department notice",
+      "an organic menace along the slopes",
+      "vegetation we had to kill and haul away",
+      "the infestation on the sloped banks",
+      "getting rid of a creeping green invader"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "retention",
+     "vendor": "Aquabend Civil Works",
+     "memos": [
+      "Retention pond dredging — Aquabend Civil Works",
+      "Retention pond dredging — sediment haul-off"
+     ],
+     "cross_memo": "Retention pond dredging — permit fees",
+     "plain": [
+      "the retention pond dredging",
+      "the retention pond dredging job",
+      "the retention pond dredging cost"
+     ],
+     "oblique": [
+      "removing silt from the water basin by the interchange",
+      "restoring capacity to the stormwater holding area",
+      "what the environmental permit required",
+      "clearing muck that built up over the years",
+      "the project that keeps runoff from flooding the road",
+      "digging out accumulated sludge",
+      "the basin that had filled with sediment",
+      "work to keep the regulators satisfied on runoff",
+      "a reservoir cleanout",
+      "excavating the low area where rainwater collects",
+      "the water quality compliance task",
+      "what we did to avoid fines from the water board",
+      "deepening the catch basin",
+      "hauling away tons of mud",
+      "a multi-week earthmoving project",
+      "reclaiming the pond's original volume"
+     ],
+     "low": 23000,
+     "high": 46000
+    }
+   ]
+  },
+  {
+   "name": "Customer Service and Account Operations",
+   "aliases": [
+    "customer service",
+    "call center",
+    "account support",
+    "contact center costs",
+    "customer operations"
+   ],
+   "narrative": [
+    "Customer service",
+    "Call center costs",
+    "Account support"
+   ],
+   "recurring": [
+    {
+     "vendor": "VoiceBridge Contact Centers",
+     "base": 28000,
+     "memo": "Outsourced call center agents"
+    },
+    {
+     "vendor": "Welcome Mat Retail Partners",
+     "base": 4800,
+     "memo": "Walk-in tag store commissions"
+    },
+    {
+     "vendor": "ChatPoint Software",
+     "base": 3200,
+     "memo": "Chat platform license"
+    }
+   ],
+   "events": [
+    {
+     "key": "rateincrease",
+     "vendor": "VoiceBridge Contact Centers",
+     "memos": [
+      "Fare change surge — overflow agent hours",
+      "Fare change surge — extended weekend coverage"
+     ],
+     "cross_memo": "Fare change surge — notification mailing",
+     "plain": [
+      "the fare change surge",
+      "the fare change surge staffing",
+      "the fare change surge hours"
+     ],
+     "oblique": [
+      "an unusually high wave of motorist inquiries after prices moved",
+      "extra staff when drivers phoned to complain",
+      "the spike in calls following the board vote",
+      "handling anger after the new schedule took effect",
+      "additional people answering questions from the public",
+      "the week the lines were jammed",
+      "what it cost to field the angry calls",
+      "temporary agents when the phones lit up",
+      "the rush of confused customers",
+      "people needed because our hold times doubled",
+      "the peak following the announcement",
+      "the burst of volume nobody forecast",
+      "extended coverage so callers could get through",
+      "answering everyone who wanted an explanation",
+      "the load on our help line",
+      "the flood of questions about higher charges"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "portalmigration",
+     "vendor": "Nimbus Web Studio",
+     "memos": [
+      "Portal relaunch — Nimbus Web Studio",
+      "Portal relaunch — account data migration"
+     ],
+     "cross_memo": "Portal relaunch — user acceptance testing",
+     "plain": [
+      "the portal relaunch",
+      "the portal relaunch project",
+      "the customer portal relaunch"
+     ],
+     "oblique": [
+      "a fresh website where drivers manage their accounts",
+      "the new online experience for motorists",
+      "replacing the dated self-service site",
+      "what we built so people could pay online",
+      "the digital overhaul customers asked for",
+      "modernizing the web presence",
+      "the redesign of how customers log in",
+      "a mobile friendly front door",
+      "moving everyone to the updated website",
+      "the effort to reduce phone volume",
+      "what the marketing team championed",
+      "the software project that finally launched",
+      "the revamp of our digital channel",
+      "giving drivers a better way to view trips",
+      "the screen-based service upgrade",
+      "the change that retired the old login page"
+     ],
+     "low": 26000,
+     "high": 52000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,713 @@
+{
+ "slug": "driving-school-network",
+ "industry": "driving school network",
+ "entities": [
+  "Roadwise Driving Academies",
+  "Safe Passage Driver Training",
+  "Cornerstone Learner Network",
+  "Pathfinder Driving Schools",
+  "Greenlight Driver Education Group"
+ ],
+ "accounts": [
+  {
+   "name": "Instructor Vehicle Fleet Costs",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "fleet maintenance spend",
+    "training car upkeep",
+    "vehicle costs"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Training car upkeep",
+    "Vehicle costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Midtown Fleet Services",
+     "base": 9500,
+     "memo": "Monthly preventive maintenance - training sedans, Dayton branch"
+    },
+    {
+     "vendor": "Allied Tire & Brake",
+     "base": 4200,
+     "memo": "Tire rotation and brake service - Route 9 yard"
+    },
+    {
+     "vendor": "Pinnacle Fuel Cards",
+     "base": 11800,
+     "memo": "Fuel card charges - all branches"
+    }
+   ],
+   "events": [
+    {
+     "key": "dualbrake",
+     "vendor": "Midtown Fleet Services",
+     "memos": [
+      "Dual-brake retrofit - Dayton branch Corolla group",
+      "Dual-brake retrofit - pedal assembly install, Akron lot"
+     ],
+     "cross_memo": "Dual-brake retrofit - loaner vehicle rental",
+     "plain": [
+      "the dual-brake retrofit",
+      "the dual-brake retrofit program",
+      "the Corolla group dual-brake retrofit"
+     ],
+     "oblique": [
+      "getting the older sedans fitted with instructor-side safety pedals",
+      "the equipment upgrade ordered by the insurer",
+      "work done to meet the new state requirement",
+      "the safety modification project",
+      "retrofitting half the cars",
+      "the insurance carrier's mandated hardware change",
+      "pedal installs on the older fleet",
+      "upgrades that kept the cars insurable",
+      "a compliance project on the vehicles",
+      "the modification work on training cars",
+      "what the underwriter required of us",
+      "bringing the aging vehicles up to standard",
+      "the instructor-side hardware project",
+      "a mandated safety add-on",
+      "the cars that sat in the shop for weeks",
+      "outfitting the legacy cars"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "hailstorm",
+     "vendor": "Summit Collision Works",
+     "memos": [
+      "Hailstorm damage repair - Toledo branch lot, 14 vehicles",
+      "Hailstorm damage repair - paintless dent removal, Toledo"
+     ],
+     "cross_memo": "Hailstorm damage repair - temporary lot rental",
+     "plain": [
+      "the hailstorm damage repair",
+      "the Toledo hailstorm damage repair",
+      "the hailstorm damage repair backlog"
+     ],
+     "oblique": [
+      "the weather event that pocked our cars",
+      "cosmetic fixes after the spring storm",
+      "bodywork on the vehicles parked outside",
+      "getting dented cars presentable again",
+      "the storm cleanup at the Toledo location",
+      "pitted hoods and roofs fixed up",
+      "a natural-disaster claim we fronted",
+      "repairs the deductible didn't cover",
+      "the aftermath of that nasty afternoon",
+      "dent removal across the lot",
+      "restoring the fleet's appearance",
+      "body shop work on a dozen-plus cars",
+      "cleaning up after severe weather",
+      "the roof and hood fixes",
+      "an act-of-nature expense",
+      "the cars that looked like golf balls"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Driving Range & Track Lease",
+   "aliases": [
+    "track lease",
+    "range lease",
+    "track costs",
+    "practice course rent",
+    "course lease expense"
+   ],
+   "narrative": [
+    "Track lease",
+    "Practice course rent",
+    "Course lease expense"
+   ],
+   "recurring": [
+    {
+     "vendor": "Hollis Industrial Properties",
+     "base": 22000,
+     "memo": "Monthly lease - closed-course skills pad, Hollis Park"
+    },
+    {
+     "vendor": "Eastgate Land Trust",
+     "base": 8500,
+     "memo": "Monthly lease - parallel parking lot, Eastgate"
+    }
+   ],
+   "events": [
+    {
+     "key": "skidpad",
+     "vendor": "Hollis Industrial Properties",
+     "memos": [
+      "Skid pad resurfacing - wet-surface coating, Hollis Park",
+      "Skid pad resurfacing - drainage regrade, Hollis Park"
+     ],
+     "cross_memo": "Skid pad resurfacing - barrier cone replacement",
+     "plain": [
+      "the skid pad resurfacing",
+      "the Hollis skid pad resurfacing",
+      "the skid pad resurfacing project"
+     ],
+     "oblique": [
+      "redoing the slick surface for emergency maneuvers",
+      "pavement work on the practice area",
+      "getting the slippery section usable again",
+      "the landlord's repaving charge passed through",
+      "work on the area where students learn to recover from spins",
+      "the coating job at the facility",
+      "grading and sealing the practice zone",
+      "a capital pass-through from the property owner",
+      "the worn asphalt fix",
+      "restoring the part of the lot with the water system",
+      "the surface rebuild",
+      "what we owed the landlord for the improvements",
+      "the contractor crew's work on the pad",
+      "a pavement overhaul",
+      "the lot project that closed it for a week",
+      "getting the traction course back to spec"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "lightingpole",
+     "vendor": "Brightway Electric Contractors",
+     "memos": [
+      "Night-lot lighting install - twelve pole fixtures, Eastgate",
+      "Night-lot lighting install - trenching and wiring, Eastgate"
+     ],
+     "cross_memo": "Night-lot lighting install - utility connection fee",
+     "plain": [
+      "the night-lot lighting install",
+      "the Eastgate night-lot lighting install",
+      "the night-lot lighting install work"
+     ],
+     "oblique": [
+      "letting us run evening sessions at the lot",
+      "illuminating the practice area after sunset",
+      "the electrical buildout for after-dark classes",
+      "new fixtures so students can train late",
+      "running power out to the far end of the property",
+      "the project that extended our teaching hours",
+      "an electrician's invoice for the outdoor site",
+      "adding evening capacity",
+      "the poles and cabling we put up",
+      "getting the parking area usable after dark",
+      "work requested by the operations team for winter schedules",
+      "wiring the open-air facility",
+      "the visibility project",
+      "trenching across the pavement",
+      "making winter-hour lessons possible",
+      "what the electrician charged for the outdoor work"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Instructor Licensing & Certification",
+   "aliases": [
+    "certification",
+    "instructor certs",
+    "licensing fees",
+    "credentialing",
+    "instructor licensing"
+   ],
+   "narrative": [
+    "Certification",
+    "Credentialing",
+    "Instructor licensing"
+   ],
+   "recurring": [
+    {
+     "vendor": "State Driver Safety Board",
+     "base": 3800,
+     "memo": "Instructor license renewals - monthly batch"
+    },
+    {
+     "vendor": "CertiPro Training Institute",
+     "base": 5600,
+     "memo": "Continuing education modules - instructor cohort"
+    }
+   ],
+   "events": [
+    {
+     "key": "defensive",
+     "vendor": "CertiPro Training Institute",
+     "memos": [
+      "Defensive driving recertification - full instructor staff, Columbus",
+      "Defensive driving recertification - course materials, exam proctoring"
+     ],
+     "cross_memo": "Defensive driving recertification - substitute instructor coverage",
+     "plain": [
+      "the defensive driving recertification",
+      "the Columbus defensive driving recertification",
+      "the defensive driving recertification cycle"
+     ],
+     "oblique": [
+      "the everybody-retakes-the-course requirement",
+      "a staff-wide refresher mandated from above",
+      "the exam round for all teaching personnel",
+      "the periodic retest the regulator requires",
+      "getting every coach back in compliance",
+      "the biennial credential cycle hitting all at once",
+      "time our people spent in classrooms",
+      "the retesting wave",
+      "the requirement that came due this year",
+      "proctored exams for the whole teaching roster",
+      "a licensing deadline that landed on every employee",
+      "the batch of coaches who had to sit for exams",
+      "what the state made us redo",
+      "the all-hands credential refresh",
+      "the quiz and seminar season",
+      "the compliance refresh for the team"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "truckendorse",
+     "vendor": "Keystone Commercial Licensing",
+     "memos": [
+      "Commercial truck endorsement launch - examiner fees, Dayton",
+      "Commercial truck endorsement launch - instructor upgrades"
+     ],
+     "cross_memo": "Commercial truck endorsement launch - trailer lease deposit",
+     "plain": [
+      "the commercial truck endorsement launch",
+      "the Dayton commercial truck endorsement launch",
+      "the commercial truck endorsement launch costs"
+     ],
+     "oblique": [
+      "starting up the big-rig training line",
+      "expanding into heavy vehicle instruction",
+      "qualifying our staff to teach larger classes of vehicle",
+      "the new service line for haulers",
+      "a growth initiative in the freight sector",
+      "getting approved to train professional drivers",
+      "the program that opened a new revenue stream",
+      "what it took to teach semi operators",
+      "fees to get the new offering approved",
+      "the diversification push",
+      "upgrading coaches so they can teach rigs",
+      "the career-driver curriculum startup",
+      "a launch the sales team was pushing",
+      "entering the cargo-hauling market",
+      "the added course category",
+      "the expansion that required new sign-offs"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Student Insurance & Liability",
+   "aliases": [
+    "insurance",
+    "liability coverage",
+    "insurance premiums",
+    "student coverage",
+    "risk costs"
+   ],
+   "narrative": [
+    "Insurance",
+    "Student coverage",
+    "Risk costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Harbor Mutual Auto Underwriters",
+     "base": 18500,
+     "memo": "Monthly premium - dual-control vehicle policy"
+    },
+    {
+     "vendor": "Lakeshore Surety Group",
+     "base": 4800,
+     "memo": "General liability premium - branch locations"
+    },
+    {
+     "vendor": "Praxis Workers Comp Services",
+     "base": 6200,
+     "memo": "Workers compensation premium - instructors"
+    }
+   ],
+   "events": [
+    {
+     "key": "claimsettle",
+     "vendor": "Harbor Mutual Auto Underwriters",
+     "memos": [
+      "Collision claim settlement - intersection incident, Parma student",
+      "Collision claim settlement - deductible reimbursement, Parma"
+     ],
+     "cross_memo": "Collision claim settlement - legal consult retainer",
+     "plain": [
+      "the collision claim settlement",
+      "the Parma collision claim settlement",
+      "the collision claim settlement payout"
+     ],
+     "oblique": [
+      "the accident we had to make good on",
+      "a crash that ended in a payout",
+      "what we owed after the fender bender went sideways",
+      "the incident with the other motorist",
+      "paying for damage to a third party",
+      "the lawsuit that finally closed",
+      "cost from a student's mishap",
+      "the insurer's bill-back for that wreck",
+      "a one-time hit from an on-road event",
+      "the settlement with the injured party",
+      "clearing the dispute over who was at fault",
+      "the reimbursement tied to the crossroads mishap",
+      "an expensive afternoon for one trainee",
+      "what the carrier passed along to us",
+      "the incident file we finally closed out",
+      "money sent to the other side"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "cyberpolicy",
+     "vendor": "Tamarack Specialty Risk",
+     "memos": [
+      "Cyber rider policy bind - student records breach cover",
+      "Cyber rider policy bind - broker fee, headquarters"
+     ],
+     "cross_memo": "Cyber rider policy bind - forensic audit prerequisite",
+     "plain": [
+      "the cyber rider policy bind",
+      "the headquarters cyber rider policy bind",
+      "the cyber rider policy bind premium"
+     ],
+     "oblique": [
+      "new protection against data theft",
+      "coverage for hackers taking learner information",
+      "a policy the board wanted after a vendor incident",
+      "insuring digital exposure",
+      "the first-year charge for online risk",
+      "protection for personal details we hold",
+      "extra cover our lender asked for",
+      "securing against electronic intrusion",
+      "the add-on that came out of the audit committee",
+      "a hedge against exposure of our enrollees' files",
+      "the newly purchased safeguard",
+      "what we paid to be covered if systems get compromised",
+      "risk transfer for our online systems",
+      "the rider requested by the auditors",
+      "a precaution over private information",
+      "the cover we lacked until this year"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Student Acquisition & Enrollment Marketing",
+   "aliases": [
+    "enrollment marketing",
+    "student acquisition",
+    "marketing",
+    "lead gen",
+    "advertising spend"
+   ],
+   "narrative": [
+    "Enrollment marketing",
+    "Student acquisition",
+    "Lead gen"
+   ],
+   "recurring": [
+    {
+     "vendor": "ClickRamp Digital Agency",
+     "base": 14500,
+     "memo": "Paid search and social campaigns - all regions"
+    },
+    {
+     "vendor": "Metro Transit Ads",
+     "base": 6800,
+     "memo": "Bus shelter placements - metro branches"
+    }
+   ],
+   "events": [
+    {
+     "key": "highschool",
+     "vendor": "ClickRamp Digital Agency",
+     "memos": [
+      "High school partnership drive - spring assembly sponsorships",
+      "High school partnership drive - banner and flyer print run"
+     ],
+     "cross_memo": "High school partnership drive - student ambassador stipends",
+     "plain": [
+      "the high school partnership drive",
+      "the spring high school partnership drive",
+      "the high school partnership drive push"
+     ],
+     "oblique": [
+      "outreach to teenagers before graduation",
+      "the campaign aimed at sixteen-year-olds",
+      "courting school counselors for referrals",
+      "an on-campus recruiting effort",
+      "the seasonal push for new learners",
+      "sponsoring events where kids gather",
+      "a targeted youth push",
+      "getting our name in front of future students",
+      "the education-sector outreach",
+      "work to fill summer classes",
+      "the effort to line up teen enrollments",
+      "what we spent on getting local students signed up",
+      "our appearance at campus events",
+      "the age-specific awareness effort",
+      "signing up the next batch of beginners",
+      "the pre-summer recruiting wave"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "rebrand",
+     "vendor": "Oakline Creative Studio",
+     "memos": [
+      "Brand refresh rollout - logo redesign, vehicle decals",
+      "Brand refresh rollout - signage replacement, flagship branch"
+     ],
+     "cross_memo": "Brand refresh rollout - website relaunch hosting",
+     "plain": [
+      "the brand refresh rollout",
+      "the flagship brand refresh rollout",
+      "the brand refresh rollout project"
+     ],
+     "oblique": [
+      "a whole new look for the company",
+      "the redesign of our identity",
+      "new graphics across the cars and storefronts",
+      "what the creative firm billed for the makeover",
+      "our visual overhaul",
+      "swapping out the old emblem everywhere",
+      "the image project the CEO championed",
+      "new colors on everything we own",
+      "the modernization of how we appear to the public",
+      "updated artwork on every surface",
+      "the new identity package",
+      "the project that changed what customers see",
+      "redoing our look from top to bottom",
+      "a restyle meant to attract younger clients",
+      "the creative agency's work",
+      "replacing worn signs and stickers"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Curriculum & Simulator Systems",
+   "aliases": [
+    "simulators",
+    "curriculum systems",
+    "simulator costs",
+    "training tech",
+    "classroom technology"
+   ],
+   "narrative": [
+    "Simulators",
+    "Training tech",
+    "Simulator costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "DriveSim Technologies",
+     "base": 12400,
+     "memo": "Simulator software license - all branches"
+    },
+    {
+     "vendor": "LearnPath Content Co",
+     "base": 5200,
+     "memo": "Online theory course content subscription"
+    },
+    {
+     "vendor": "Vireo Hardware Support",
+     "base": 3100,
+     "memo": "Simulator cabin maintenance contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "vrheadset",
+     "vendor": "DriveSim Technologies",
+     "memos": [
+      "VR headset module rollout - hazard perception lab, Cleveland",
+      "VR headset module rollout - headset fleet purchase"
+     ],
+     "cross_memo": "VR headset module rollout - lab room buildout",
+     "plain": [
+      "the VR headset module rollout",
+      "the Cleveland VR headset module rollout",
+      "the VR headset module rollout lab"
+     ],
+     "oblique": [
+      "immersive gear for teaching danger recognition",
+      "the goggles we bought for classroom practice",
+      "a virtual-environment upgrade",
+      "new gadgetry for the hazard-spotting course",
+      "the pilot of head-worn equipment",
+      "what the vendor billed for the next-generation setup",
+      "a purchase that modernized how students rehearse risky scenarios",
+      "wearable devices for lab sessions",
+      "the technology pilot at the largest site",
+      "the digital immersion trial",
+      "additional hardware for the labs",
+      "investing in more realistic practice",
+      "the equipment cart that arrived last month",
+      "a headline initiative from the product team",
+      "the gear for simulated emergencies",
+      "a futuristic teaching tool"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "examrewrite",
+     "vendor": "Pathway Assessment Labs",
+     "memos": [
+      "Written exam rewrite - question bank authoring, state update",
+      "Written exam rewrite - psychometric validation fee"
+     ],
+     "cross_memo": "Written exam rewrite - classroom handout reprint",
+     "plain": [
+      "the written exam rewrite",
+      "the state written exam rewrite",
+      "the written exam rewrite project"
+     ],
+     "oblique": [
+      "updating the knowledge test to match new laws",
+      "reworking the questions students face",
+      "the testing content overhaul",
+      "what we paid consultants to refresh the quiz material",
+      "changes forced by the legislature",
+      "aligning our assessments with the revised rules",
+      "new items for the pass-fail test",
+      "the authoring contract",
+      "revalidating the grading standards",
+      "the learner assessment update",
+      "a regulatory change that touched our materials",
+      "content rebuilt from scratch",
+      "reworking the paper test",
+      "the refreshed bank of queries",
+      "the specialist firm's engagement",
+      "the effort to stay current on the rules of the road"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Branch Facility Operations",
+   "aliases": [
+    "branch operations",
+    "facility costs",
+    "branch upkeep",
+    "office operations",
+    "location expenses"
+   ],
+   "narrative": [
+    "Branch operations",
+    "Facility costs",
+    "Branch upkeep"
+   ],
+   "recurring": [
+    {
+     "vendor": "Citywide Janitorial",
+     "base": 4600,
+     "memo": "Cleaning service - all branch offices"
+    },
+    {
+     "vendor": "Metro Utilities",
+     "base": 7900,
+     "memo": "Electric and water - branch offices"
+    },
+    {
+     "vendor": "Grayson Property Management",
+     "base": 15500,
+     "memo": "Monthly office lease - Cleveland and Dayton branches"
+    }
+   ],
+   "events": [
+    {
+     "key": "roofleak",
+     "vendor": "Citywide Janitorial",
+     "memos": [
+      "Roof leak remediation - water extraction, Dayton classroom wing",
+      "Roof leak remediation - mold treatment, ceiling tile replacement"
+     ],
+     "cross_memo": "Roof leak remediation - temporary classroom trailer",
+     "plain": [
+      "the roof leak remediation",
+      "the Dayton roof leak remediation",
+      "the roof leak remediation cleanup"
+     ],
+     "oblique": [
+      "the flooding that hit the training rooms",
+      "cleanup after the ceiling gave way",
+      "drying out and repairing the damaged wing",
+      "an unplanned building emergency",
+      "the water intrusion that cost us classes",
+      "fixing what the rainstorm did to the offices",
+      "a restoration job nobody budgeted for",
+      "the damp problem and the follow-up work",
+      "what we owed after the building failed",
+      "emergency work on the structure",
+      "getting the soggy space usable again",
+      "a mess that closed a section of the office",
+      "the cost of the failed top of the building",
+      "the contractor's bill after the downpour",
+      "repairs prompted by the property manager's inspection",
+      "the unexpected facilities fire drill"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "relocation",
+     "vendor": "Bridgeport Moving & Build-Out",
+     "memos": [
+      "Branch relocation - Akron office move, crating and transport",
+      "Branch relocation - new suite build-out, furniture install"
+     ],
+     "cross_memo": "Branch relocation - overlapping lease months",
+     "plain": [
+      "the branch relocation",
+      "the Akron branch relocation",
+      "the branch relocation move"
+     ],
+     "oblique": [
+      "packing up and shifting to a new address",
+      "the move to bigger premises",
+      "setting up shop in a different building",
+      "the transition out of the old space",
+      "what the movers and builders charged",
+      "a change of location for one of our offices",
+      "outfitting the replacement site",
+      "the shift we planned all winter",
+      "relocating staff and desks across town",
+      "the project that closed the office for two days",
+      "the new suite we fitted out",
+      "leaving the former storefront behind",
+      "the expansion that required a new home",
+      "the carpenters and haulers",
+      "a site change driven by the lease expiry",
+      "getting the staff settled in elsewhere"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

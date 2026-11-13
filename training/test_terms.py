@@ -59,6 +59,8 @@ def test_vote_orders_by_agreement_then_greedy_order_and_caps():
     assert vote([["a", "b", "c"], ["c", "d"], ["c", "b", "b"]], 3) == ["c", "b", "a"]
     assert vote([["a", "b"]], 8) == ["a", "b"]
     assert vote([], 8) == []
+    assert vote([["a", "b", "c"], ["c", "d"], ["c", "b"]], 8, min_votes=2) == ["c", "b"]
+    assert vote([["a", "b"], ["c"]], 8, min_votes=2) == ["a", "b", "c"]   # nothing agreed: all stand
 
 
 def test_claims_of_reads_a_reply_or_gives_nothing():

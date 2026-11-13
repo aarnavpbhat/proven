@@ -1,0 +1,815 @@
+{
+ "slug": "rice-mill-and-grain-elevator",
+ "industry": "rice mill and grain elevator",
+ "entities": [
+  "Golden Delta Rice & Grain Co.",
+  "Prairie Bend Milling Corp.",
+  "Riverbank Elevator Partners",
+  "Harvest Moon Rice Mills",
+  "Tallgrass Storage & Milling"
+ ],
+ "accounts": [
+  {
+   "name": "Mill Machinery Maintenance",
+   "aliases": [
+    "mill maintenance",
+    "machinery upkeep",
+    "mill repairs",
+    "milling equipment spend",
+    "plant maintenance"
+   ],
+   "narrative": [
+    "Mill maintenance",
+    "Machinery upkeep",
+    "Mill repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Delta Millwright Services",
+     "base": 9500,
+     "memo": "Monthly millwright labor and routine adjustments"
+    },
+    {
+     "vendor": "Keystone Bearing & Belt Supply",
+     "base": 4200,
+     "memo": "Belts, bearings and lubricants stock replenishment"
+    },
+    {
+     "vendor": "Southern Parts Depot",
+     "base": 2600,
+     "memo": "Misc fasteners and shop consumables"
+    }
+   ],
+   "events": [
+    {
+     "key": "huller",
+     "vendor": "Delta Millwright Services",
+     "memos": [
+      "Huller rebuild — rubber roll recovering",
+      "Huller rebuild — shaft realignment labor"
+     ],
+     "cross_memo": "Huller rebuild — temporary hauling of brown rice stock",
+     "plain": [
+      "the huller rebuild",
+      "the huller rebuild work",
+      "the huller rebuild project"
+     ],
+     "oblique": [
+      "getting the husking line running again",
+      "work on the first-stage grain processing station",
+      "the overhaul that followed a spike in broken kernels",
+      "restoring the stage that strips the outer layer",
+      "the major repair to the front end of the plant",
+      "what the plant manager approved after yield complaints",
+      "a line stoppage fix",
+      "the repair that kept the plant from missing orders",
+      "refurbishing worn rollers on the processing line",
+      "the work our lead technician flagged in the spring",
+      "re-covering the worn surfaces",
+      "the front-of-line fix",
+      "an unplanned equipment overhaul",
+      "replacing parts that had worn out from heavy harvest volume",
+      "the job that paused production over a weekend",
+      "getting the stripping equipment back to spec"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "sifter",
+     "vendor": "Prairie Precision Fabrication",
+     "memos": [
+      "Plansifter silk replacement — frame reconditioning",
+      "Plansifter silk replacement — new sieve cloth install"
+     ],
+     "cross_memo": "Plansifter silk replacement — outside lab sampling",
+     "plain": [
+      "the plansifter silk replacement",
+      "the plansifter silk job",
+      "the plansifter silk replacement project"
+     ],
+     "oblique": [
+      "swapping out the screens that grade the milled product",
+      "the grading equipment refit",
+      "the rework that came after a customer quality complaint",
+      "new mesh for the separating machinery",
+      "a fabric change on the sorting boxes",
+      "the job that tightened our particle size consistency",
+      "upgrading the screening section",
+      "the one-time refit our quality manager pushed for",
+      "reconditioning the oscillating frames",
+      "the sorting cloth overhaul",
+      "a repair to the stage that separates fine from coarse",
+      "what the head miller asked for in the fall",
+      "the project tied to a retailer spec change",
+      "the mesh swap",
+      "a fix for uneven product grading",
+      "the rebuild of the shaking sections"
+     ],
+     "low": 11000,
+     "high": 22000
+    }
+   ]
+  },
+  {
+   "name": "Grain Drying and Aeration",
+   "aliases": [
+    "drying costs",
+    "grain drying",
+    "aeration spend",
+    "dryer operations",
+    "drying and aeration"
+   ],
+   "narrative": [
+    "Drying costs",
+    "Grain drying",
+    "Dryer operations"
+   ],
+   "recurring": [
+    {
+     "vendor": "Bayou Propane & Fuel",
+     "base": 18500,
+     "memo": "LP gas delivery for column dryers"
+    },
+    {
+     "vendor": "Cypress Electric Cooperative",
+     "base": 7800,
+     "memo": "Aeration fan electricity"
+    },
+    {
+     "vendor": "ThermoSense Controls",
+     "base": 1200,
+     "memo": "Moisture sensor service contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "burner",
+     "vendor": "Bayou Propane & Fuel",
+     "memos": [
+      "Dryer burner retrofit — low-NOx nozzle assembly",
+      "Dryer burner retrofit — gas train piping"
+     ],
+     "cross_memo": "Dryer burner retrofit — permit and emissions testing fee",
+     "plain": [
+      "the dryer burner retrofit",
+      "the dryer burner retrofit project",
+      "the dryer burner retrofit charges"
+     ],
+     "oblique": [
+      "the upgrade regulators required for cleaner combustion",
+      "a heating equipment modernization",
+      "the compliance-driven hardware swap",
+      "what the environmental inspector told us to do",
+      "new firing hardware on the big column units",
+      "the capital-style project we expensed",
+      "replacing the old flame assemblies",
+      "the conversion that lowered our emissions",
+      "a one-time change to how the units heat",
+      "the fix for the failed air-quality audit",
+      "upgraded fuel delivery fittings",
+      "the improvement our insurer encouraged",
+      "work done before the harvest rush",
+      "the retrofit approved by the board in winter",
+      "a regulatory-mandated equipment change",
+      "the heat source overhaul"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "wetharvest",
+     "vendor": "Gulf Coast Mobile Drying LLC",
+     "memos": [
+      "Rented mobile dryer — wet harvest overflow",
+      "Rented mobile dryer — operator and setup"
+     ],
+     "cross_memo": "Rented mobile dryer — extra trucking to holding bins",
+     "plain": [
+      "the rented mobile dryer",
+      "the rented mobile dryer overflow",
+      "the rented mobile dryer rental"
+     ],
+     "oblique": [
+      "extra capacity brought in for the soggy season",
+      "the wet weather surge in incoming loads",
+      "temporary help keeping up with high moisture deliveries",
+      "the short-term equipment we leaned on during the rains",
+      "a bottleneck at intake that needed outside assistance",
+      "what we did when growers showed up with damp crop",
+      "the stopgap for a backlog of untreated loads",
+      "emergency drying capacity",
+      "overflow handling during the late harvest",
+      "the stopgap that avoided turning trucks away",
+      "outside units on loan for a few weeks",
+      "the cost of handling a rainy October",
+      "bringing in a temporary solution for peak intake",
+      "the extra gear parked by the east lot",
+      "relief for the main equipment during the crunch",
+      "the weather-related capacity crunch"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Elevator Leg and Conveyor Repairs",
+   "aliases": [
+    "elevator repairs",
+    "leg and conveyor",
+    "conveyor maintenance",
+    "bucket elevator spend",
+    "handling equipment repairs"
+   ],
+   "narrative": [
+    "Elevator repairs",
+    "Conveyor maintenance",
+    "Handling equipment repairs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Heartland Conveyor Supply",
+     "base": 5600,
+     "memo": "Conveyor belting and idlers monthly stock"
+    },
+    {
+     "vendor": "Riverton Electric Motor Repair",
+     "base": 3100,
+     "memo": "Motor servicing and rewinds"
+    }
+   ],
+   "events": [
+    {
+     "key": "buckets",
+     "vendor": "Heartland Conveyor Supply",
+     "memos": [
+      "Head pulley lagging replacement — ceramic lagging kit",
+      "Head pulley lagging replacement — belt re-splice labor"
+     ],
+     "cross_memo": "Head pulley lagging replacement — overtime crew for night shift",
+     "plain": [
+      "the head pulley lagging replacement",
+      "the head pulley lagging job",
+      "the head pulley lagging replacement cost"
+     ],
+     "oblique": [
+      "fixing the slipping belt at the top of the tall tower",
+      "traction repairs on the main lifting unit",
+      "the job that stopped product from sliding back",
+      "restoring grip on the big drive wheel",
+      "an emergency fix after loads started stalling",
+      "the repair the safety committee prioritized",
+      "a reliability upgrade on the vertical lift",
+      "what stopped us from losing grain throughput",
+      "the overnight work on the tallest structure",
+      "the coating swap on the drive end",
+      "the repair following an inspection finding",
+      "the one-off shutdown of the main hoist",
+      "the fix that cut wear on the belting",
+      "getting the vertical transport moving again",
+      "an upgrade to the surface the belt rides on",
+      "a fix to a stalling problem"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "dustcollector",
+     "vendor": "Clearair Industrial Services",
+     "memos": [
+      "Baghouse filter changeout — pleated bag set",
+      "Baghouse filter changeout — confined space crew"
+     ],
+     "cross_memo": "Baghouse filter changeout — hazardous waste disposal",
+     "plain": [
+      "the baghouse filter changeout",
+      "the baghouse filter changeout job",
+      "the baghouse filter changeout expense"
+     ],
+     "oblique": [
+      "the air quality system service",
+      "replacing the media that catches airborne particulates",
+      "new filtration for the dust control equipment",
+      "the job our safety auditor demanded before renewal",
+      "clearing the pollution capture setup",
+      "the work done during the planned shutdown",
+      "the cleanup of what keeps the building from filling with fines",
+      "a fire-prevention related refresh",
+      "the compliance servicing of the extraction system",
+      "what the insurance carrier required",
+      "an annual-style job that slipped into this period",
+      "a scheduled swap of worn-out components",
+      "the specialized crew that went inside the housing",
+      "the project to keep emissions within permit limits",
+      "the overdue servicing of the ventilation system",
+      "the dust handling refit"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Fumigation and Pest Control",
+   "aliases": [
+    "fumigation",
+    "pest control",
+    "insect management",
+    "stored grain treatment",
+    "fumigation spend"
+   ],
+   "narrative": [
+    "Fumigation",
+    "Pest control",
+    "Stored grain treatment"
+   ],
+   "recurring": [
+    {
+     "vendor": "SafeStore Pest Management",
+     "base": 3800,
+     "memo": "Monthly bait station and trap service"
+    },
+    {
+     "vendor": "Agri-Shield Chemicals",
+     "base": 2400,
+     "memo": "Residual spray and protectant supplies"
+    }
+   ],
+   "events": [
+    {
+     "key": "weevil",
+     "vendor": "SafeStore Pest Management",
+     "memos": [
+      "Weevil outbreak treatment — bin 7 phosphine application",
+      "Weevil outbreak treatment — sealing and monitoring labor"
+     ],
+     "cross_memo": "Weevil outbreak treatment — price concession to buyer",
+     "plain": [
+      "the weevil outbreak treatment",
+      "the weevil outbreak",
+      "the weevil outbreak response"
+     ],
+     "oblique": [
+      "the infestation we found in one of the older concrete silos",
+      "an emergency to protect stored inventory",
+      "tiny insects discovered during a routine check",
+      "the gas treatment on a single storage unit",
+      "the cleanup that kept a contract from being rejected",
+      "what we did after the inspector flagged live bugs",
+      "a quarantine-style response",
+      "the unexpected call-out to save a lot of crop",
+      "the treatment crew tenting and sealing a structure",
+      "a one-off pest crisis",
+      "the response after complaints from a customer",
+      "the storage unit that was taken out of service for days",
+      "keeping contaminated product from reaching shipment",
+      "the infestation scare",
+      "a costly pest surprise in the warehouse",
+      "remediation of an infested lot"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "rodent",
+     "vendor": "Meridian Wildlife Exclusion",
+     "memos": [
+      "Rodent exclusion program — foundation sealing",
+      "Rodent exclusion program — steel mesh door sweeps"
+     ],
+     "cross_memo": "Rodent exclusion program — third-party audit prep fee",
+     "plain": [
+      "the rodent exclusion program",
+      "the rodent exclusion project",
+      "the rodent exclusion work"
+     ],
+     "oblique": [
+      "the building-envelope project to keep animals out",
+      "a food safety audit readiness effort",
+      "closing gaps around the warehouse perimeter",
+      "what the quality auditor told us to fix",
+      "a one-time hardening of the facility against vermin",
+      "permanent barriers installed around the packing area",
+      "the sanitation upgrade before certification renewal",
+      "a project that grew out of a failed walkthrough",
+      "tightening up the shipping dock",
+      "the work a retailer's inspector requested",
+      "structural patching of the older block buildings",
+      "preparing for the annual hygiene review",
+      "a new protective measure at the loading doors",
+      "the one-off sealing job",
+      "the fix for entry points along the base of the walls",
+      "a defensive facility upgrade"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Bagging and Packaging Supplies",
+   "aliases": [
+    "packaging",
+    "bagging supplies",
+    "packaging materials",
+    "bags and totes",
+    "packing spend"
+   ],
+   "narrative": [
+    "Packaging",
+    "Bagging supplies",
+    "Packaging materials"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pinnacle Woven Sack Co.",
+     "base": 22000,
+     "memo": "Polypropylene woven sacks 25kg and 50kg"
+    },
+    {
+     "vendor": "Brightline Print & Label",
+     "base": 4800,
+     "memo": "Retail pouch film and labels"
+    },
+    {
+     "vendor": "Sterling Pallet & Stretch",
+     "base": 3500,
+     "memo": "Pallets and stretch wrap"
+    }
+   ],
+   "events": [
+    {
+     "key": "organicline",
+     "vendor": "Brightline Print & Label",
+     "memos": [
+      "Organic brand relaunch — new pouch artwork plates",
+      "Organic brand relaunch — recertified label stock"
+     ],
+     "cross_memo": "Organic brand relaunch — trade show sampling kits",
+     "plain": [
+      "the organic brand relaunch",
+      "the organic brand relaunch materials",
+      "the organic brand relaunch launch"
+     ],
+     "oblique": [
+      "the refreshed look for our premium line",
+      "new designs to win a big grocery account",
+      "the marketing-led change to what's on the shelf",
+      "a rebranding push our sales director championed",
+      "reprinted items after a certification renewal",
+      "the redesign of the consumer-facing pack",
+      "what we did to compete with a rival's new offering",
+      "a refresh meant to lift retail sales",
+      "the new graphics and wording",
+      "the one-time effort behind the health-food segment",
+      "an update to the way the product is presented",
+      "the revamped look approved by the owners",
+      "the plate and film changeover",
+      "work to reposition the top-priced item",
+      "the shelf appeal project",
+      "getting the specialty range ready for stores"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "exportbags",
+     "vendor": "Oceanic Container Liners Inc.",
+     "memos": [
+      "Export bulk liner order — 20ft container liners",
+      "Export bulk liner order — fumigation-rated seal tape"
+     ],
+     "cross_memo": "Export bulk liner order — customs documentation courier",
+     "plain": [
+      "the export bulk liner order",
+      "the export bulk liner purchase",
+      "the export bulk liner shipment"
+     ],
+     "oblique": [
+      "supplies for the overseas sale",
+      "what we needed to ship a big foreign contract",
+      "the one-time purchase for loading boxes bound for port",
+      "materials tied to a new buyer abroad",
+      "the lining that protected cargo during ocean transit",
+      "preparing a large shipment for the dock",
+      "a special-spec requirement from the importer",
+      "the opening of a new international customer",
+      "the extra material for the long-haul cargo",
+      "the unusual order that came with the tender win",
+      "the supplies behind the largest single sale of the year",
+      "meeting the destination country's requirements",
+      "stock bought just for the vessel booking",
+      "a surge tied to a foreign tender",
+      "the cost of containerized overseas orders",
+      "protective material for sea freight"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Fleet and Trucking",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "trucking",
+    "freight and hauling",
+    "truck operations"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Trucking",
+    "Truck operations"
+   ],
+   "recurring": [
+    {
+     "vendor": "Interstate Diesel & Fuel Card",
+     "base": 14500,
+     "memo": "Diesel fuel card statement"
+    },
+    {
+     "vendor": "Roadmaster Tire & Service",
+     "base": 3900,
+     "memo": "Tire service and routine truck repairs"
+    },
+    {
+     "vendor": "Continental Fleet Insurance",
+     "base": 6200,
+     "memo": "Monthly fleet insurance installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "hopperbottoms",
+     "vendor": "Roadmaster Tire & Service",
+     "memos": [
+      "Trailer axle replacement — hopper-bottom set of four",
+      "Trailer axle replacement — wheel-end rebuild labor"
+     ],
+     "cross_memo": "Trailer axle replacement — loaner trailer lease",
+     "plain": [
+      "the trailer axle replacement",
+      "the trailer axle replacement work",
+      "the trailer axle replacement bill"
+     ],
+     "oblique": [
+      "getting the grain haulers rolling on sound running gear",
+      "the heavy mechanical job on the long vehicles",
+      "a failure found during a state safety check",
+      "the undercarriage fix after a roadside breakdown",
+      "an unplanned shop visit for the biggest rigs",
+      "what kept four units off the road for weeks",
+      "the repairs to the under-body of the bulk units",
+      "parts that wore out sooner than expected",
+      "the repair our driver supervisor escalated",
+      "work to pass a regulatory vehicle inspection",
+      "the rolling stock overhaul",
+      "replacing the load-bearing components beneath the haulers",
+      "a hit to our hauling capacity during peak season",
+      "getting our carriers back into service",
+      "the cost of a mechanical failure across the older vehicles",
+      "the heavy repair bill"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "railspur",
+     "vendor": "Eastbound Short Line Railroad",
+     "memos": [
+      "Rail car spotting surcharge — demurrage on idle hoppers",
+      "Rail car spotting surcharge — switching fee"
+     ],
+     "cross_memo": "Rail car spotting surcharge — crew overtime at the siding",
+     "plain": [
+      "the rail car spotting surcharge",
+      "the rail car spotting surcharge fees",
+      "the rail car spotting surcharge charges"
+     ],
+     "oblique": [
+      "penalties for leaving the cars sitting too long",
+      "the cost of a delayed unload",
+      "what we paid when the buyer was slow to take delivery",
+      "extra charges from the carrier for idle equipment",
+      "a scheduling mismatch with the shipper",
+      "a fee linked to the late arrival of a vessel",
+      "the bill that followed a bottleneck at the siding",
+      "the price of not emptying the wagons on time",
+      "a logistics penalty",
+      "extra movement fees imposed by the line",
+      "a cost of missing the agreed pickup window",
+      "what the railway charged after a stalled shipment",
+      "the holdup at the sidetrack",
+      "a charge for equipment held past the free period",
+      "the penalty from a congested yard",
+      "costs from a transport backlog"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Utilities and Power",
+   "aliases": [
+    "utilities",
+    "power costs",
+    "electricity",
+    "energy spend",
+    "plant utilities"
+   ],
+   "narrative": [
+    "Utilities",
+    "Power costs",
+    "Energy spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cypress Electric Cooperative",
+     "base": 26000,
+     "memo": "Plant electricity main meter"
+    },
+    {
+     "vendor": "Riverside Municipal Water",
+     "base": 2900,
+     "memo": "Process water and sewer"
+    },
+    {
+     "vendor": "Bayou Natural Gas Utility",
+     "base": 3700,
+     "memo": "Boiler and building heat gas"
+    }
+   ],
+   "events": [
+    {
+     "key": "transformer",
+     "vendor": "Cypress Electric Cooperative",
+     "memos": [
+      "Substation transformer replacement — 1500 kVA pad unit",
+      "Substation transformer replacement — utility interconnect fee"
+     ],
+     "cross_memo": "Substation transformer replacement — standby generator rental",
+     "plain": [
+      "the substation transformer replacement",
+      "the substation transformer replacement project",
+      "the substation transformer replacement fees"
+     ],
+     "oblique": [
+      "the big electrical hardware swap at the edge of the property",
+      "restoring dependable supply after an outage",
+      "the failure that darkened the plant for a day",
+      "what we did after the power surged and burned out",
+      "the infrastructure change our utility demanded",
+      "a stopgap source of electricity during repairs",
+      "the major equipment that steps down incoming voltage",
+      "a fix to the thing that feeds every motor",
+      "the lights-out emergency",
+      "upgrading the gear that connects us to the grid",
+      "an outage that halted milling",
+      "the unexpected capital hit on the electrical side",
+      "getting reliable service back",
+      "the replacement of aging equipment on the power line",
+      "work after a storm knocked out supply",
+      "the cost of a grid-side breakdown"
+     ],
+     "low": 22000,
+     "high": 40000
+    },
+    {
+     "key": "solar",
+     "vendor": "SunRidge Energy Partners",
+     "memos": [
+      "Rooftop solar interconnection — inverter commissioning",
+      "Rooftop solar interconnection — engineering study"
+     ],
+     "cross_memo": "Rooftop solar interconnection — utility net-metering application",
+     "plain": [
+      "the rooftop solar interconnection",
+      "the rooftop solar interconnection work",
+      "the rooftop solar interconnection charges"
+     ],
+     "oblique": [
+      "bringing our own generation online",
+      "an initiative to cut our electricity bill over time",
+      "the clean-energy project the owners wanted",
+      "startup costs for self-produced electricity",
+      "a sustainability effort on the warehouse roofs",
+      "a hookup that lets us feed the grid",
+      "the one-time costs before the panels began producing",
+      "what we paid to switch on the green array",
+      "the project meant to hedge against rate hikes",
+      "preparing paperwork and testing for the new system",
+      "getting the sun-powered system approved",
+      "the commissioning stage of a renewable program",
+      "a long-term savings project",
+      "the energy independence initiative",
+      "work to link new equipment to the local network",
+      "one-off setup spending"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Scale and Weighing Compliance",
+   "aliases": [
+    "scale compliance",
+    "weighing costs",
+    "truck scale spend",
+    "calibration and certification",
+    "weights and measures"
+   ],
+   "narrative": [
+    "Scale compliance",
+    "Weighing costs",
+    "Truck scale spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Precision Scale Calibration",
+     "base": 1800,
+     "memo": "Quarterly truck scale calibration accrual"
+    },
+    {
+     "vendor": "State Weights & Measures Board",
+     "base": 900,
+     "memo": "Annual device registration accrual"
+    }
+   ],
+   "events": [
+    {
+     "key": "loadcells",
+     "vendor": "Precision Scale Calibration",
+     "memos": [
+      "Truck scale load cell replacement — four digital cells",
+      "Truck scale load cell replacement — junction box rewiring"
+     ],
+     "cross_memo": "Truck scale load cell replacement — manual weighing labor during downtime",
+     "plain": [
+      "the truck scale load cell replacement",
+      "the truck scale load cell replacement job",
+      "the truck scale load cell replacement cost"
+     ],
+     "oblique": [
+      "getting the drive-on platform reading true again",
+      "sensors that drifted and began to disagree",
+      "the repair after growers disputed their tickets",
+      "the failed accuracy test",
+      "a fix demanded by the state inspector",
+      "what restored trust in the numbers at the gate",
+      "the hardware swap beneath the deck",
+      "a precision problem at intake",
+      "the work to stop shorting or overpaying farmers",
+      "new sensing components under the weighbridge",
+      "a one-off correction after a failed audit",
+      "the unexpected weighing device overhaul",
+      "restoring legal-for-trade status",
+      "work to get certified for commerce again",
+      "the cost of inaccurate readings",
+      "an equipment failure at the entrance"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "software",
+     "vendor": "GrainTrak Systems",
+     "memos": [
+      "Scale ticketing system migration — new kiosk terminals",
+      "Scale ticketing system migration — data conversion services"
+     ],
+     "cross_memo": "Scale ticketing system migration — staff retraining sessions",
+     "plain": [
+      "the scale ticketing system migration",
+      "the scale ticketing system migration project",
+      "the scale ticketing system migration rollout"
+     ],
+     "oblique": [
+      "moving to a modern platform for receiving crop",
+      "a new setup for grower paperwork at the gate",
+      "replacing the old software that issued receipts",
+      "a digital upgrade of intake recordkeeping",
+      "the changeover our operations head championed",
+      "converting years of records to a new system",
+      "self-service stations for drivers",
+      "the project to end hand-written tickets",
+      "an overhaul of how deliveries are logged",
+      "what we paid to modernize the front office process",
+      "the one-time cost to adopt new technology",
+      "training and hardware for the new workflow",
+      "the effort to speed up truck turnaround",
+      "the replacement of an unsupported application",
+      "a switch away from the legacy program",
+      "a farmer-facing process improvement"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

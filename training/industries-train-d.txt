@@ -1,0 +1,59 @@
+# A fourth training list (added 2026-11-12), to widen the industries the term model learns from.
+# Disjoint from every other list here; industries close to a measured one were left out on purpose.
+lumber sawmill
+honey and beekeeping cooperative
+chocolate confectionery maker
+scuba dive shop and training center
+railway passenger operator
+bookstore chain
+shipbuilding yard
+escape room franchise
+mobile home park operator
+olive oil producer
+catering and banquet company
+driving school network
+locksmith and safe company
+carpet and flooring installer
+roofing contractor
+pawn shop chain
+karaoke bar and nightclub group
+ceramics and pottery studio
+fertilizer and agrochemical distributor
+stock photo and footage agency
+vending machine operator
+coworking space operator
+cattle ranch and feedlot
+perfume and fragrance house
+toll road operator
+public radio and television broadcaster
+martial arts academy chain
+sleep-away summer camp
+medical imaging center
+document shredding and records storage
+musical instrument retailer
+paper and pulp mill
+rice mill and grain elevator
+hostel and backpacker lodging chain
+tailoring and dry cleaning chain
+industrial gas supplier
+fertility clinic
+climbing gym chain
+comic book and collectibles publisher
+bus and coach manufacturer
+adventure travel agency
+window blinds and curtain manufacturer
+modular home builder
+motorcycle dealership and service
+opera and symphony company
+sugar refinery
+battery recycling plant
+cinema equipment and lighting rental house
+home appliance repair service
+botanical garden and conservatory
+tobacco and vape retailer
+county fairground and rodeo operator
+shoe manufacturer
+laboratory glassware and chemicals supplier
+emergency restoration and flood cleanup company
+vocational welding school
+spice and seasoning importer

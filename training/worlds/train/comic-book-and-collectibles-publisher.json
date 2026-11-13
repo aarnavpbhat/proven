@@ -1,0 +1,810 @@
+{
+ "slug": "comic-book-and-collectibles-publisher",
+ "industry": "comic book and collectibles publisher",
+ "entities": [
+  "Inkwell & Vault Publishing",
+  "Panelforge Comics Group",
+  "Gilded Spine Collectibles",
+  "Nightowl Press & Memorabilia",
+  "Crimson Gutter Media"
+ ],
+ "accounts": [
+  {
+   "name": "Printing and Binding",
+   "aliases": [
+    "printing",
+    "print costs",
+    "press runs",
+    "printing spend",
+    "print and bind"
+   ],
+   "narrative": [
+    "Printing",
+    "Print costs",
+    "Press runs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ridgeline Offset Printers",
+     "base": 28000,
+     "memo": "Monthly offset press run - monthly titles"
+    },
+    {
+     "vendor": "Saddlestitch Bindery Co",
+     "base": 9500,
+     "memo": "Saddle-stitch binding - monthly titles"
+    },
+    {
+     "vendor": "Brightcoat Cover Finishing",
+     "base": 4200,
+     "memo": "Cover gloss lamination"
+    }
+   ],
+   "events": [
+    {
+     "key": "hologram",
+     "vendor": "Ridgeline Offset Printers",
+     "memos": [
+      "Hologram foil cover run - anniversary issue",
+      "Hologram foil cover run - die plates"
+     ],
+     "cross_memo": "Hologram foil cover run - rush freight",
+     "plain": [
+      "the hologram foil cover run",
+      "the hologram foil covers",
+      "the anniversary hologram foil run"
+     ],
+     "oblique": [
+      "the shiny limited covers for the big milestone issue",
+      "special effect covers on the commemorative release",
+      "the premium cover upgrade for collectors",
+      "a one-time fancy cover treatment",
+      "the sparkly variant editions",
+      "upgraded cover stock for the landmark number",
+      "the glittery covers ordered by marketing",
+      "an expensive cover gimmick",
+      "the milestone edition extras",
+      "the eye-catching limited editions",
+      "the special cover project",
+      "the cover enhancement for the big anniversary",
+      "shimmering collector variants",
+      "the premium finish on the celebration issue",
+      "a deluxe cover job",
+      "the flashy variant run"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "waterdamage",
+     "vendor": "Tidewater Reprint Services",
+     "memos": [
+      "Flood reprint recovery - warehouse loss",
+      "Flood reprint recovery - replacement stock"
+     ],
+     "cross_memo": "Flood reprint recovery - emergency storage",
+     "plain": [
+      "the flood reprint recovery",
+      "the flood recovery reprints",
+      "the flood reprint recovery stock"
+     ],
+     "oblique": [
+      "redoing copies that got soaked",
+      "replacing ruined inventory",
+      "the storm damage replacement run",
+      "remaking the spoiled books",
+      "rebuilding lost stock after the leak",
+      "the do-over on damaged titles",
+      "reprints after the basement mishap",
+      "making up for ruined pallets",
+      "the unplanned second run",
+      "replacing what the weather destroyed",
+      "the insurance-related redo",
+      "restoring the ruined backlist",
+      "the salvage production job",
+      "fresh copies of waterlogged books",
+      "the emergency replacement batch",
+      "the unexpected duplicate production"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Freelance Creator Fees",
+   "aliases": [
+    "freelance",
+    "creator fees",
+    "artist payments",
+    "freelancer spend",
+    "talent costs"
+   ],
+   "narrative": [
+    "Freelance",
+    "Creator fees",
+    "Artist payments"
+   ],
+   "recurring": [
+    {
+     "vendor": "Penciller Pool Payroll",
+     "base": 22000,
+     "memo": "Page rates - pencils and inks"
+    },
+    {
+     "vendor": "Letterhouse Studio",
+     "base": 6500,
+     "memo": "Lettering and colouring services"
+    }
+   ],
+   "events": [
+    {
+     "key": "crossover",
+     "vendor": "Penciller Pool Payroll",
+     "memos": [
+      "Nebula Wars crossover - guest artists",
+      "Nebula Wars crossover - bonus pages"
+     ],
+     "cross_memo": "Nebula Wars crossover - promo art licensing",
+     "plain": [
+      "the Nebula Wars crossover",
+      "the Nebula Wars guest artists",
+      "the Nebula Wars bonus pages"
+     ],
+     "oblique": [
+      "the team-up event with another imprint",
+      "extra headline names brought in",
+      "the big shared-universe storyline",
+      "added pages for the tentpole story",
+      "star talent for the special series",
+      "the event miniseries staffing",
+      "extra hands for the blockbuster arc",
+      "the multi-title story push",
+      "additional talent for the flagship saga",
+      "the guest lineup we booked",
+      "the extended storyline workload",
+      "bringing in marquee illustrators",
+      "the fall event series",
+      "the oversized story arc",
+      "heavier page counts on the event",
+      "the headline storyline staffing"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "rushfix",
+     "vendor": "Quillpoint Rescue Studio",
+     "memos": [
+      "Quillpoint deadline rescue - fill-in inkers",
+      "Quillpoint deadline rescue - overnight colour"
+     ],
+     "cross_memo": "Quillpoint deadline rescue - courier proofs",
+     "plain": [
+      "the Quillpoint deadline rescue",
+      "the Quillpoint rescue inkers",
+      "the Quillpoint overnight colour"
+     ],
+     "oblique": [
+      "catching up on a late book",
+      "bringing in backup help to hit the ship date",
+      "covering for the missed schedule",
+      "the last-minute save",
+      "emergency staffing on a slipping title",
+      "the scramble to finish on time",
+      "extra hands after an artist dropped out",
+      "pulling an overdue issue across the line",
+      "the crunch-time help",
+      "a stopgap team",
+      "filling in for a no-show",
+      "the rescue of a delayed release",
+      "the weekend crunch work",
+      "the rush job to meet distribution",
+      "quick turnaround support",
+      "the fire drill on an overdue book"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Licensing and Royalties",
+   "aliases": [
+    "royalties",
+    "licensing",
+    "license fees",
+    "rights payments",
+    "licensor costs"
+   ],
+   "narrative": [
+    "Royalties",
+    "Licensing",
+    "License fees"
+   ],
+   "recurring": [
+    {
+     "vendor": "Starcrest Estate Trust",
+     "base": 18000,
+     "memo": "Character royalty - classic heroes"
+    },
+    {
+     "vendor": "Moonlit Film Rights LLC",
+     "base": 7000,
+     "memo": "Adaptation option payment"
+    },
+    {
+     "vendor": "Bluebird Brand Partners",
+     "base": 5200,
+     "memo": "Merchandise license share"
+    }
+   ],
+   "events": [
+    {
+     "key": "estate",
+     "vendor": "Starcrest Estate Trust",
+     "memos": [
+      "Silverhawk estate buyout - rights settlement",
+      "Silverhawk estate buyout - legal transfer"
+     ],
+     "cross_memo": "Silverhawk estate buyout - counsel fees",
+     "plain": [
+      "the Silverhawk estate buyout",
+      "the Silverhawk rights settlement",
+      "the Silverhawk estate transfer"
+     ],
+     "oblique": [
+      "acquiring a legacy character outright",
+      "the one-time purchase of an old property",
+      "settling with the creators heirs",
+      "owning the hero permanently",
+      "closing out an inherited claim",
+      "the final payment on a heritage franchise",
+      "a lump sum for an old character",
+      "the ownership deal we signed",
+      "ending the ongoing share arrangement",
+      "the family agreement",
+      "securing exclusive control of the hero",
+      "the negotiated lump payment",
+      "purchasing the character outright",
+      "the one-off acquisition payment",
+      "the permanent ownership transaction",
+      "the heritage property deal"
+     ],
+     "low": 25000,
+     "high": 40000
+    },
+    {
+     "key": "moviebump",
+     "vendor": "Lanternlight Studios Partners",
+     "memos": [
+      "Lanternlight premiere tie-in - guarantee payment",
+      "Lanternlight premiere tie-in - bonus tier"
+     ],
+     "cross_memo": "Lanternlight premiere tie-in - event promo",
+     "plain": [
+      "the Lanternlight premiere tie-in",
+      "the Lanternlight tie-in guarantee",
+      "the Lanternlight tie-in bonus"
+     ],
+     "oblique": [
+      "the on-screen version of our hero",
+      "payments tied to the picture opening",
+      "the cinematic release spillover",
+      "extra fees when the screen version launched",
+      "the studio guaranteed minimum",
+      "performance bonus on the big release",
+      "the adaptation hitting theaters",
+      "the opening weekend related payment",
+      "contractual extras from the screen deal",
+      "the blockbuster side agreement",
+      "sales milestone payouts",
+      "the screen partnership true-up",
+      "payments owed once the picture came out",
+      "the large-format release obligations",
+      "bonus tiers hit on the adaptation",
+      "the outside studio arrangement"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Convention and Events",
+   "aliases": [
+    "conventions",
+    "convention spend",
+    "events",
+    "trade show costs",
+    "booth costs"
+   ],
+   "narrative": [
+    "Conventions",
+    "Convention spend",
+    "Booth costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Showfloor Booth Rentals",
+     "base": 8500,
+     "memo": "Booth space and fittings"
+    },
+    {
+     "vendor": "Haulwell Event Logistics",
+     "base": 4800,
+     "memo": "Freight to show venues"
+    }
+   ],
+   "events": [
+    {
+     "key": "comiccon",
+     "vendor": "Showfloor Booth Rentals",
+     "memos": [
+      "Harborfront Expo flagship booth - double-size upgrade",
+      "Harborfront Expo flagship booth - lighting rig"
+     ],
+     "cross_memo": "Harborfront Expo flagship booth - staff lodging",
+     "plain": [
+      "the Harborfront Expo flagship booth",
+      "the Harborfront Expo booth upgrade",
+      "the Harborfront Expo lighting rig"
+     ],
+     "oblique": [
+      "our largest show presence of the year",
+      "the oversized display at the coastal show",
+      "a bigger footprint on the floor",
+      "the headline appearance",
+      "the premium spot we booked",
+      "the showpiece installation",
+      "expanded space at the biggest fan gathering",
+      "the splashy exhibit",
+      "the marquee fan event",
+      "a larger stand than usual",
+      "the extravagant showcase",
+      "the big-city fan weekend",
+      "the high-profile exhibit",
+      "visibility push at the major gathering",
+      "the elaborate display build",
+      "the expanded exhibit area"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "signing",
+     "vendor": "Pinnacle Signing Tours",
+     "memos": [
+      "Pinnacle author tour - bookstore signings",
+      "Pinnacle author tour - creator airfare"
+     ],
+     "cross_memo": "Pinnacle author tour - merchandise freight",
+     "plain": [
+      "the Pinnacle author tour",
+      "the Pinnacle bookstore signings",
+      "the Pinnacle creator airfare"
+     ],
+     "oblique": [
+      "sending writers on the road to meet readers",
+      "the multi-city meet and greet run",
+      "store visits by our headline names",
+      "a travelling promotional circuit",
+      "creators out meeting fans",
+      "the retail outreach trip",
+      "the regional appearances",
+      "the in-person reader events",
+      "autograph sessions around the country",
+      "the roving publicity campaign",
+      "the fan meet-ups we sponsored",
+      "the on-the-road promotion",
+      "our talent visiting local shops",
+      "the national store circuit",
+      "a series of personal appearances",
+      "the coast to coast promotion"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse and Fulfillment",
+   "aliases": [
+    "fulfillment",
+    "warehouse",
+    "shipping and storage",
+    "pick and pack",
+    "distribution costs"
+   ],
+   "narrative": [
+    "Fulfillment",
+    "Warehouse costs",
+    "Shipping and storage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Stackhouse Logistics",
+     "base": 19000,
+     "memo": "Pick and pack - monthly"
+    },
+    {
+     "vendor": "Parcelway Carriers",
+     "base": 12000,
+     "memo": "Parcel postage - direct orders"
+    },
+    {
+     "vendor": "Dockside Storage Partners",
+     "base": 6000,
+     "memo": "Pallet storage fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "preorder",
+     "vendor": "Stackhouse Logistics",
+     "memos": [
+      "Variant lottery surge - temporary packers",
+      "Variant lottery surge - overtime labor"
+     ],
+     "cross_memo": "Variant lottery surge - extra postage",
+     "plain": [
+      "the variant lottery surge",
+      "the variant lottery packers",
+      "the variant lottery overtime"
+     ],
+     "oblique": [
+      "a flood of orders on a hot release",
+      "the stampede for the scarce edition",
+      "seasonal-style crush of shipments",
+      "the demand spike on a limited item",
+      "extra hands for the rush",
+      "a sudden wave of customer orders",
+      "the big drop day workload",
+      "orders arriving all at once",
+      "the sell-out frenzy",
+      "the unexpectedly heavy launch",
+      "staffing up for the wave",
+      "the late-night packing push",
+      "the overwhelming first-day demand",
+      "the enthusiastic response from buyers",
+      "surge staffing on a popular release",
+      "the burst of purchases"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "relocate",
+     "vendor": "Ironbridge Moving Crew",
+     "memos": [
+      "Ironbridge archive relocation - rack dismantling",
+      "Ironbridge archive relocation - crating"
+     ],
+     "cross_memo": "Ironbridge archive relocation - climate storage",
+     "plain": [
+      "the Ironbridge archive relocation",
+      "the Ironbridge rack dismantling",
+      "the Ironbridge archive crating"
+     ],
+     "oblique": [
+      "moving the old inventory across town",
+      "the shift to a new building",
+      "relocating the back stock",
+      "the consolidation of storage sites",
+      "packing up and hauling the legacy material",
+      "the change of premises",
+      "transporting our long-term holdings",
+      "the lease-ending clear out",
+      "getting everything to the new space",
+      "the one-time move",
+      "shifting the whole stockroom",
+      "the physical migration of our materials",
+      "emptying the old facility",
+      "the big haul",
+      "reorganising where the inventory lives",
+      "the cross-town transfer"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Collectibles Manufacturing",
+   "aliases": [
+    "collectibles",
+    "figure production",
+    "merchandise manufacturing",
+    "toy and statue costs",
+    "collectible production"
+   ],
+   "narrative": [
+    "Collectibles",
+    "Figure production",
+    "Merchandise manufacturing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Jadewood Resin Works",
+     "base": 24000,
+     "memo": "Statue casting - monthly batch"
+    },
+    {
+     "vendor": "Pinhead Enamel Pins Ltd",
+     "base": 5500,
+     "memo": "Enamel pin production"
+    },
+    {
+     "vendor": "Boxwright Packaging",
+     "base": 7200,
+     "memo": "Display box packaging"
+    }
+   ],
+   "events": [
+    {
+     "key": "mold",
+     "vendor": "Jadewood Resin Works",
+     "memos": [
+      "Dragonlord statue retooling - new master sculpt",
+      "Dragonlord statue retooling - steel mold"
+     ],
+     "cross_memo": "Dragonlord statue retooling - sample shipping",
+     "plain": [
+      "the Dragonlord statue retooling",
+      "the Dragonlord master sculpt",
+      "the Dragonlord steel mold"
+     ],
+     "oblique": [
+      "redesigning the flagship figure from scratch",
+      "the fix for the flawed original design",
+      "rebuilding the tooling after complaints",
+      "the corrected version of the big piece",
+      "a fresh start on the top seller",
+      "the do-over on the large statue",
+      "new patterns after the first batch cracked",
+      "replacing the faulty production setup",
+      "the quality-driven rework",
+      "the updated version of our star product",
+      "tooling replaced before the next run",
+      "the redesign following buyer feedback",
+      "remaking the original templates",
+      "the improved edition of the centerpiece",
+      "starting the sculpture over",
+      "the engineering overhaul of the figure"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "safety",
+     "vendor": "Clearmark Compliance Labs",
+     "memos": [
+      "Clearmark toy safety certification - lab testing",
+      "Clearmark toy safety certification - retest fees"
+     ],
+     "cross_memo": "Clearmark toy safety certification - recall notice mailing",
+     "plain": [
+      "the Clearmark toy safety certification",
+      "the Clearmark lab testing",
+      "the Clearmark certification retest"
+     ],
+     "oblique": [
+      "proving our products meet the rules",
+      "the regulatory paperwork for kids items",
+      "passing the required checks for sale abroad",
+      "meeting the legal standard for retail",
+      "the external inspection requirement",
+      "getting approval to ship overseas",
+      "the mandated product vetting",
+      "the compliance hurdle",
+      "satisfying the big-box retailers demands",
+      "the pre-sale approval process",
+      "government-required product checks",
+      "the paperwork to keep selling",
+      "clearing the retailers audit",
+      "the standards check on small parts",
+      "the independent verification",
+      "the obligatory sign-off for the new line"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Marketing and Promotion",
+   "aliases": [
+    "marketing",
+    "promotion",
+    "advertising spend",
+    "ad costs",
+    "promo budget"
+   ],
+   "narrative": [
+    "Marketing",
+    "Advertising spend",
+    "Promo budget"
+   ],
+   "recurring": [
+    {
+     "vendor": "Glowpixel Digital Ads",
+     "base": 11000,
+     "memo": "Social and search ad buys"
+    },
+    {
+     "vendor": "Hype Street Newsletter Co",
+     "base": 3200,
+     "memo": "Email campaign platform"
+    }
+   ],
+   "events": [
+    {
+     "key": "trailer",
+     "vendor": "Glowpixel Digital Ads",
+     "memos": [
+      "Eclipse Saga launch trailer - video production",
+      "Eclipse Saga launch trailer - paid placement"
+     ],
+     "cross_memo": "Eclipse Saga launch trailer - voice cast fees",
+     "plain": [
+      "the Eclipse Saga launch trailer",
+      "the Eclipse Saga trailer production",
+      "the Eclipse Saga trailer placement"
+     ],
+     "oblique": [
+      "a cinematic teaser for our new series",
+      "the moving-picture announcement",
+      "the video push ahead of release",
+      "a polished promo reel",
+      "the pre-launch film spot",
+      "an animated preview we commissioned",
+      "the splashy reveal",
+      "the sneak peek video",
+      "teaser content for the big debut",
+      "the short film advertising the new book",
+      "the high-gloss announcement",
+      "the premiere video campaign",
+      "a clip to build anticipation",
+      "the screen-ready promo",
+      "the big reveal production",
+      "the debut teaser project"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "influencer",
+     "vendor": "Bannerwave Creator Network",
+     "memos": [
+      "Bannerwave streamer sponsorships - unboxing series",
+      "Bannerwave streamer sponsorships - affiliate bonuses"
+     ],
+     "cross_memo": "Bannerwave streamer sponsorships - sample kits",
+     "plain": [
+      "the Bannerwave streamer sponsorships",
+      "the Bannerwave unboxing series",
+      "the Bannerwave affiliate bonuses"
+     ],
+     "oblique": [
+      "paying online personalities to show our products",
+      "the social media personality deals",
+      "getting popular channels talking about us",
+      "partnerships with web celebrities",
+      "the paid word-of-mouth push",
+      "commissioned video reactions",
+      "endorsements from online fans",
+      "the live-broadcast tie-ins",
+      "the web personality outreach",
+      "buying exposure on popular channels",
+      "the sponsored content campaign",
+      "reaching younger audiences online",
+      "the online fan-community deals",
+      "payments to internet hosts",
+      "the viral push",
+      "the digital ambassador program"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Software and Subscriptions",
+   "aliases": [
+    "software",
+    "subscriptions",
+    "saas costs",
+    "tech licenses",
+    "software spend"
+   ],
+   "narrative": [
+    "Software",
+    "Subscriptions",
+    "SaaS costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Layerloft Design Suite",
+     "base": 2400,
+     "memo": "Creative software seats"
+    },
+    {
+     "vendor": "Cartwheel Commerce Platform",
+     "base": 3800,
+     "memo": "Online store hosting"
+    }
+   ],
+   "events": [
+    {
+     "key": "crm",
+     "vendor": "Cartwheel Commerce Platform",
+     "memos": [
+      "Storefront replatform - migration consulting",
+      "Storefront replatform - data import"
+     ],
+     "cross_memo": "Storefront replatform - checkout redesign",
+     "plain": [
+      "the storefront replatform",
+      "the storefront migration consulting",
+      "the storefront data import"
+     ],
+     "oblique": [
+      "switching our web shop to a new engine",
+      "the website overhaul",
+      "moving customer records to the new system",
+      "rebuilding how buyers check out online",
+      "the one-time technology changeover",
+      "the redesigned online experience",
+      "porting the product catalogue",
+      "the digital shop upgrade",
+      "a new e-commerce foundation",
+      "the move off the old site",
+      "the technology migration project",
+      "relaunching our web presence",
+      "consultants for the site move",
+      "transferring order history",
+      "the revamped buying flow",
+      "the retail website rebuild"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "scanner",
+     "vendor": "Vaultscan Archive Systems",
+     "memos": [
+      "Vaultscan art archive digitisation - scanning project",
+      "Vaultscan art archive digitisation - cloud storage"
+     ],
+     "cross_memo": "Vaultscan art archive digitisation - hardware lease",
+     "plain": [
+      "the Vaultscan art archive digitisation",
+      "the Vaultscan scanning project",
+      "the Vaultscan archive cloud storage"
+     ],
+     "oblique": [
+      "turning old original pages into digital files",
+      "preserving the vintage artwork electronically",
+      "the backlog conversion of physical pages",
+      "creating digital copies of our heritage material",
+      "protecting the original boards from decay",
+      "making the old library searchable",
+      "the effort to back up the historic pages",
+      "capturing high-resolution images of the past",
+      "the preservation initiative",
+      "scanning decades of original work",
+      "the electronic safeguarding of masters",
+      "the conversion of paper holdings",
+      "making reprints easier in future",
+      "the heritage backup effort",
+      "saving fragile originals as images",
+      "the long-term protection project"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,830 @@
+{
+ "slug": "pawn-shop-chain",
+ "industry": "pawn shop chain",
+ "entities": [
+  "Goldleaf Pawn & Loan",
+  "Cornerstone Pawn Exchange",
+  "Brightway Pawn Group",
+  "Iron Anchor Pawn Co.",
+  "Lucky Harbor Pawn & Jewelry"
+ ],
+ "accounts": [
+  {
+   "name": "Loan Collateral Storage",
+   "aliases": [
+    "collateral storage",
+    "vault costs",
+    "pledge storage",
+    "loan inventory warehousing",
+    "collateral holding costs"
+   ],
+   "narrative": [
+    "Collateral storage",
+    "Vault costs",
+    "Pledge storage"
+   ],
+   "recurring": [
+    {
+     "vendor": "Sentinel Vault Services",
+     "base": 14500,
+     "memo": "Monthly secure vault lease - Central branches"
+    },
+    {
+     "vendor": "Parcelkeep Logistics",
+     "base": 6200,
+     "memo": "Collateral transfer courier fees"
+    },
+    {
+     "vendor": "Tamperseal Supply Co.",
+     "base": 1800,
+     "memo": "Evidence bags and seals"
+    }
+   ],
+   "events": [
+    {
+     "key": "overflow",
+     "vendor": "Sentinel Vault Services",
+     "memos": [
+      "Overflow cage buildout - steel mesh partitions",
+      "Overflow cage buildout - biometric lock install"
+     ],
+     "cross_memo": "Overflow cage buildout - temporary shelving rental",
+     "plain": [
+      "the overflow cage buildout",
+      "the overflow cage project",
+      "the new overflow cage buildout"
+     ],
+     "oblique": [
+      "extra room for unredeemed pledges",
+      "the shortage of space for forfeited goods",
+      "expanding capacity after the holiday loan surge",
+      "a wall of locked enclosures going up in the back",
+      "getting unclaimed merchandise off the floor",
+      "the backlog of items nobody came back for",
+      "a lockable annex for high-value pieces",
+      "more secure square footage",
+      "the storage crunch at the flagship location",
+      "a build requested by the loss prevention team",
+      "room for the spring inventory glut",
+      "hardening the back room",
+      "new lockable areas for jewelry pledges",
+      "space freed up for incoming loan items",
+      "the capacity expansion ahead of audit season",
+      "protecting the pieces left past their maturity date"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "flood",
+     "vendor": "Dryline Restoration Inc.",
+     "memos": [
+      "Basement flood recovery - water extraction",
+      "Basement flood recovery - dehumidifier rental"
+     ],
+     "cross_memo": "Basement flood recovery - appraisal of damaged goods",
+     "plain": [
+      "the basement flood recovery",
+      "the flood recovery work",
+      "the basement flood cleanup"
+     ],
+     "oblique": [
+      "the burst pipe at the downtown store",
+      "getting soggy merchandise dried out",
+      "the aftermath of the storm overnight",
+      "emergency pumping work",
+      "salvaging pledged items from the lower level",
+      "the mess under the main branch",
+      "a plumbing failure that soaked the stockroom",
+      "mopping up after the weekend deluge",
+      "the insurer-approved drying effort",
+      "work that kept mold from spreading",
+      "the water event nobody saw coming",
+      "rescuing boxed collateral from rising water",
+      "the unplanned remediation at the older location",
+      "drying out the lower level",
+      "the damage report on affected pledges",
+      "an emergency crew called in on a Sunday"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Appraisal & Authentication Fees",
+   "aliases": [
+    "appraisal fees",
+    "authentication costs",
+    "gemologist fees",
+    "valuation services",
+    "appraisal spend"
+   ],
+   "narrative": [
+    "Appraisal fees",
+    "Authentication costs",
+    "Valuation services"
+   ],
+   "recurring": [
+    {
+     "vendor": "Carat & Co. Gemological Lab",
+     "base": 9800,
+     "memo": "Diamond grading certificates - monthly batch"
+    },
+    {
+     "vendor": "Timepiece Verification Group",
+     "base": 5400,
+     "memo": "Watch movement authentication"
+    },
+    {
+     "vendor": "Metalassay Partners",
+     "base": 3100,
+     "memo": "Precious metal purity testing"
+    }
+   ],
+   "events": [
+    {
+     "key": "estate",
+     "vendor": "Carat & Co. Gemological Lab",
+     "memos": [
+      "Hargrove estate lot - bulk gem certification",
+      "Hargrove estate lot - loose stone sorting"
+     ],
+     "cross_memo": "Hargrove estate lot - insurance rider",
+     "plain": [
+      "the Hargrove estate lot",
+      "the Hargrove estate certification",
+      "the Hargrove estate appraisal"
+     ],
+     "oblique": [
+      "a single large intake from a family clearing a house",
+      "one enormous batch of inherited pieces",
+      "the sudden volume of unfamiliar stones",
+      "a seller who showed up with a trunk full",
+      "grading hundreds of items in one go",
+      "the big walk-in deal from the old family",
+      "an unusual single-day acquisition",
+      "extra lab hours on a rush job",
+      "the collection that arrived unannounced",
+      "a purchase too large for the usual process",
+      "sorting through heirloom pieces",
+      "the windfall that needed verifying",
+      "one seller and a very long afternoon",
+      "paperwork for a mansion's worth of goods",
+      "the offer we had to vet before closing",
+      "a bulk buy that tied up the grading desk"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "counterfeit",
+     "vendor": "Fraudwatch Forensics LLC",
+     "memos": [
+      "Counterfeit handbag audit - serial number tracing",
+      "Counterfeit handbag audit - leather analysis"
+     ],
+     "cross_memo": "Counterfeit handbag audit - customer refund settlement",
+     "plain": [
+      "the counterfeit handbag audit",
+      "the counterfeit handbag review",
+      "the counterfeit handbag investigation"
+     ],
+     "oblique": [
+      "fake designer goods slipping onto the shelves",
+      "a review prompted by a customer complaint",
+      "checking luxury inventory for forgeries",
+      "the scare over bogus merchandise",
+      "an outside team picking through our purses",
+      "the hunt for knockoffs in stock",
+      "verifying everything bought from one seller",
+      "a quality scare at two locations",
+      "the legal team's request to sample stock",
+      "finding out how fakes got through",
+      "a dispute over a designer item sold online",
+      "double-checking pricey accessories",
+      "proof that our intake process had gaps",
+      "the sweep of high-end goods",
+      "an expert brought in after a chargeback",
+      "the vetting of anything with a famous logo"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Firearms Compliance & Licensing",
+   "aliases": [
+    "firearms compliance",
+    "licensing costs",
+    "ffl compliance",
+    "regulatory licensing",
+    "compliance spend"
+   ],
+   "narrative": [
+    "Firearms compliance",
+    "Licensing costs",
+    "Regulatory licensing"
+   ],
+   "recurring": [
+    {
+     "vendor": "Federal License Renewal Services",
+     "base": 4200,
+     "memo": "Annual license renewal fees - prorated"
+    },
+    {
+     "vendor": "BoundBook Systems",
+     "base": 2900,
+     "memo": "Acquisition and disposition log software"
+    },
+    {
+     "vendor": "Background Verify Network",
+     "base": 3600,
+     "memo": "Buyer background check fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "atf",
+     "vendor": "Federal License Renewal Services",
+     "memos": [
+      "ATF inspection readiness - records reconciliation",
+      "ATF inspection readiness - consultant onsite"
+     ],
+     "cross_memo": "ATF inspection readiness - overtime backfill",
+     "plain": [
+      "the ATF inspection readiness",
+      "the ATF inspection prep",
+      "the ATF inspection readiness push"
+     ],
+     "oblique": [
+      "getting ready for the agency visit",
+      "a surprise notice from the regulator",
+      "cleaning up paperwork before the auditors arrive",
+      "staff scrambling to match serial numbers",
+      "extra hands on the compliance desk",
+      "the government drop-in at the main store",
+      "a pre-audit tune-up",
+      "fixing gaps in the logbooks",
+      "an outside advisor walking the floor",
+      "the review that came after a late filing",
+      "a mock exam before the real one",
+      "making sure every transfer form lined up",
+      "the nervous stretch before the agents showed up",
+      "double-checking the gun counter files",
+      "the push to avoid a citation",
+      "preparation requested by legal"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "relocation",
+     "vendor": "Safeguard Cabinet Works",
+     "memos": [
+      "Gun safe relocation - rated cabinet purchase",
+      "Gun safe relocation - anchored floor installation"
+     ],
+     "cross_memo": "Gun safe relocation - freight and rigging",
+     "plain": [
+      "the gun safe relocation",
+      "the gun safe move",
+      "the gun safe relocation project"
+     ],
+     "oblique": [
+      "shifting the heavy steel lockers to the new store",
+      "a storefront move requiring reinforced storage",
+      "new locked cabinets for the east branch",
+      "anchoring display cases that hold long guns",
+      "a secured room for the branch that reopened",
+      "the heavy lifting at the expansion site",
+      "a licensing condition on the new address",
+      "upgrading how weapons are held overnight",
+      "equipment for the freshly leased space",
+      "the reinstall after the remodel",
+      "a requirement from the landlord's insurer",
+      "rigging crews and big trucks",
+      "getting the armory ready in time to open",
+      "the vault-grade fixtures bought for the move",
+      "a one-time outlay for the relocated counter",
+      "meeting the rules at the new address"
+     ],
+     "low": 16000,
+     "high": 32000
+    }
+   ]
+  },
+  {
+   "name": "Security & Loss Prevention",
+   "aliases": [
+    "security costs",
+    "loss prevention",
+    "alarm monitoring",
+    "guard services",
+    "security spend"
+   ],
+   "narrative": [
+    "Security costs",
+    "Loss prevention",
+    "Guard services"
+   ],
+   "recurring": [
+    {
+     "vendor": "Ironclad Alarm Monitoring",
+     "base": 7800,
+     "memo": "24/7 alarm monitoring - all branches"
+    },
+    {
+     "vendor": "Watchtower Guard Services",
+     "base": 16500,
+     "memo": "Armed guard coverage"
+    },
+    {
+     "vendor": "ClearView CCTV Maintenance",
+     "base": 3300,
+     "memo": "Camera system service contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "burglary",
+     "vendor": "Watchtower Guard Services",
+     "memos": [
+      "Midtown break-in response - overnight posting",
+      "Midtown break-in response - glass replacement"
+     ],
+     "cross_memo": "Midtown break-in response - stolen goods write-off",
+     "plain": [
+      "the Midtown break-in response",
+      "the Midtown break-in cleanup",
+      "the Midtown break-in security response"
+     ],
+     "oblique": [
+      "the smashed window incident",
+      "a thief getting in through the back",
+      "extra people stationed after the theft",
+      "the night someone walked off with the case contents",
+      "a police report and a scramble",
+      "coverage added at the hit location",
+      "replacing shattered storefront panels",
+      "what happened last weekend at one branch",
+      "the overnight loss that rattled staff",
+      "a surge in patrols after the crime",
+      "fixing the damage left by intruders",
+      "the unplanned watchmen after the robbery",
+      "hardening the place that got hit",
+      "temporary protection until repairs finished",
+      "an insurance claim in progress",
+      "the cost of making that store safe again"
+     ],
+     "low": 14000,
+     "high": 28000
+    },
+    {
+     "key": "cameras",
+     "vendor": "Lumina Optics Group",
+     "memos": [
+      "Facial recognition rollout - camera hardware",
+      "Facial recognition rollout - analytics license"
+     ],
+     "cross_memo": "Facial recognition rollout - network cabling",
+     "plain": [
+      "the facial recognition rollout",
+      "the facial recognition upgrade",
+      "the facial recognition camera rollout"
+     ],
+     "oblique": [
+      "smarter cameras at the entrances",
+      "technology that flags known shoplifters",
+      "an upgrade pushed by the insurance carrier",
+      "new eyes at every counter",
+      "identifying repeat offenders automatically",
+      "a pilot that grew to every location",
+      "modernizing how we watch the door",
+      "the surveillance refresh",
+      "smart devices wired into the ceilings",
+      "tracking returning troublemakers",
+      "a tech purchase from the risk committee",
+      "replacing the old grainy video setup",
+      "detecting people on the banned list",
+      "the leap beyond basic recording",
+      "a response to the string of thefts",
+      "the big investment in vision technology"
+     ],
+     "low": 25000,
+     "high": 50000
+    }
+   ]
+  },
+  {
+   "name": "Online Marketplace & Fulfillment",
+   "aliases": [
+    "online sales costs",
+    "marketplace fees",
+    "ecommerce fulfillment",
+    "shipping and listing costs",
+    "online channel spend"
+   ],
+   "narrative": [
+    "Marketplace fees",
+    "Online sales costs",
+    "Ecommerce fulfillment"
+   ],
+   "recurring": [
+    {
+     "vendor": "BayList Marketplace",
+     "base": 8900,
+     "memo": "Seller commissions and listing fees"
+    },
+    {
+     "vendor": "ShipSwift Carriers",
+     "base": 11200,
+     "memo": "Outbound parcel postage"
+    },
+    {
+     "vendor": "PhotoStage Studio",
+     "base": 2400,
+     "memo": "Product photography subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "sneakers",
+     "vendor": "BayList Marketplace",
+     "memos": [
+      "Limited sneaker drop - promoted listing boost",
+      "Limited sneaker drop - expedited seller fees"
+     ],
+     "cross_memo": "Limited sneaker drop - authentication tags",
+     "plain": [
+      "the limited sneaker drop",
+      "the limited sneaker listing push",
+      "the limited sneaker drop promotion"
+     ],
+     "oblique": [
+      "a hot shoe release we got ahead of",
+      "paying for visibility on rare footwear",
+      "a wave of buyers chasing one product",
+      "a hype cycle in resale",
+      "the featured placement for a trendy item",
+      "selling a stack of collectibles fast",
+      "a social media craze that sent orders flooding in",
+      "extra fees from a spike in demand",
+      "the sale that sold out in hours",
+      "what teenagers lined up for online",
+      "premium positioning for a few pairs",
+      "a week of unusually brisk web orders",
+      "promotion costs on a single viral item",
+      "a profitable but pricey weekend",
+      "putting a flashy product at the top of search",
+      "the trend we decided to ride"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "redesign",
+     "vendor": "Pixelcraft Web Studio",
+     "memos": [
+      "Storefront replatform - theme development",
+      "Storefront replatform - inventory sync integration"
+     ],
+     "cross_memo": "Storefront replatform - data migration services",
+     "plain": [
+      "the storefront replatform",
+      "the storefront replatform project",
+      "the storefront replatform build"
+     ],
+     "oblique": [
+      "rebuilding our website from scratch",
+      "moving the web shop to a new system",
+      "the contractor-led site overhaul",
+      "a technical rewrite of the buying experience",
+      "linking the register to the web catalog",
+      "the site that kept crashing on weekends",
+      "an agency engagement lasting a quarter",
+      "modernizing the customer-facing pages",
+      "a decision made after losing sales to slow load times",
+      "the digital makeover",
+      "a developer team on retainer",
+      "switching software behind the shopping cart",
+      "fixing the clumsy checkout",
+      "an overdue refresh of our web presence",
+      "work to sync stock between stores and internet",
+      "the relaunch scheduled for fall"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Customer Acquisition & Buying Promotions",
+   "aliases": [
+    "buying promotions",
+    "customer acquisition",
+    "gold buying ads",
+    "advertising spend",
+    "promo costs"
+   ],
+   "narrative": [
+    "Buying promotions",
+    "Customer acquisition",
+    "Advertising spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "BroadcastBeam Radio",
+     "base": 9400,
+     "memo": "Local radio spots - cash for gold"
+    },
+    {
+     "vendor": "Clickpath Digital",
+     "base": 6700,
+     "memo": "Search and social advertising"
+    },
+    {
+     "vendor": "Handbill Print Shop",
+     "base": 1900,
+     "memo": "Flyers and window posters"
+    }
+   ],
+   "events": [
+    {
+     "key": "goldrush",
+     "vendor": "BroadcastBeam Radio",
+     "memos": [
+      "Gold rush weekend - drive-time spot package",
+      "Gold rush weekend - sponsored remote broadcast"
+     ],
+     "cross_memo": "Gold rush weekend - premium payout bonuses",
+     "plain": [
+      "the gold rush weekend",
+      "the gold rush weekend campaign",
+      "the gold rush weekend promotion"
+     ],
+     "oblique": [
+      "an event timed to a spike in bullion prices",
+      "a short burst of ads urging people to sell jewelry",
+      "the surge when precious metal hit a record",
+      "a marketing blitz that filled the lobby",
+      "offering richer payouts for a limited window",
+      "a broadcast tied to the market rally",
+      "the stretch where lines went out the door",
+      "an intentional bump in outreach",
+      "a promotion that coincided with a price peak",
+      "the weekend we paid sellers extra",
+      "staffing up for foot traffic from the campaign",
+      "a bold bet on metal prices",
+      "short-term spending that brought in inventory",
+      "an advertising push with live remotes",
+      "an offer designed to beat nearby competitors",
+      "the stretch when everyone brought in old chains"
+     ],
+     "low": 13000,
+     "high": 26000
+    },
+    {
+     "key": "loyalty",
+     "vendor": "Rewardly Mobile",
+     "memos": [
+      "Pawn Pals loyalty app - development milestone",
+      "Pawn Pals loyalty app - launch campaign"
+     ],
+     "cross_memo": "Pawn Pals loyalty app - customer credit seeding",
+     "plain": [
+      "the Pawn Pals loyalty app",
+      "the Pawn Pals app launch",
+      "the Pawn Pals loyalty program"
+     ],
+     "oblique": [
+      "a points program for repeat borrowers",
+      "a phone-based club for returning customers",
+      "a digital perk system",
+      "rewarding people who renew their loans",
+      "an in-house mobile offering",
+      "the effort to keep clients from drifting to competitors",
+      "an initiative from the marketing director",
+      "coupons delivered through smartphones",
+      "building a relationship with regulars",
+      "a program that cost more to start than expected",
+      "a new way to bring borrowers back in",
+      "software built by an outside team",
+      "a freebie to get sign-ups going",
+      "the program rolled out chainwide",
+      "a retention tool",
+      "giving shoppers a reason to return"
+     ],
+     "low": 17000,
+     "high": 34000
+    }
+   ]
+  },
+  {
+   "name": "Facilities & Branch Occupancy",
+   "aliases": [
+    "facilities",
+    "branch occupancy",
+    "rent and utilities",
+    "store occupancy costs",
+    "occupancy spend"
+   ],
+   "narrative": [
+    "Facilities",
+    "Branch occupancy",
+    "Store occupancy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Redstone Commercial Properties",
+     "base": 28500,
+     "memo": "Monthly branch rent - strip center locations"
+    },
+    {
+     "vendor": "Metro Power & Light",
+     "base": 7200,
+     "memo": "Electric service - all branches"
+    },
+    {
+     "vendor": "BrightSweep Janitorial",
+     "base": 3800,
+     "memo": "Nightly cleaning contract"
+    }
+   ],
+   "events": [
+    {
+     "key": "signage",
+     "vendor": "Redstone Commercial Properties",
+     "memos": [
+      "Eastgate storefront rebrand - pylon sign replacement",
+      "Eastgate storefront rebrand - landlord approval fee"
+     ],
+     "cross_memo": "Eastgate storefront rebrand - permit expediting",
+     "plain": [
+      "the Eastgate storefront rebrand",
+      "the Eastgate storefront sign swap",
+      "the Eastgate storefront rebrand project"
+     ],
+     "oblique": [
+      "a new look for the street-facing exterior",
+      "swapping the big lit sign out front",
+      "a refreshed logo going up on the building",
+      "the facade update at one shopping plaza",
+      "a visual identity change in one market",
+      "getting the building to match the new brand",
+      "approvals required by the property owner",
+      "an exterior that no longer looks dated",
+      "the sign that came down after thirty years",
+      "a cosmetic investment to attract walk-ins",
+      "what drivers see from the highway",
+      "the lighting and lettering project",
+      "a lease obligation tied to exterior alterations",
+      "a one-time brand refresh at a flagship store",
+      "city paperwork for the new signage",
+      "modernizing curb appeal"
+     ],
+     "low": 19000,
+     "high": 38000
+    },
+    {
+     "key": "hvac",
+     "vendor": "Polar Edge Mechanical",
+     "memos": [
+      "Rooftop chiller replacement - unit purchase",
+      "Rooftop chiller replacement - crane lift and install"
+     ],
+     "cross_memo": "Rooftop chiller replacement - electrical upgrades",
+     "plain": [
+      "the rooftop chiller replacement",
+      "the rooftop chiller swap",
+      "the rooftop chiller replacement job"
+     ],
+     "oblique": [
+      "the air conditioning that gave out in July",
+      "a cooling failure at the busiest location",
+      "a heavy piece of equipment lifted onto the roof",
+      "comfort for customers during a heatwave",
+      "an old machine that wasn't worth fixing",
+      "retiring a twenty-year-old climate system",
+      "a sweltering showroom problem",
+      "the crane that blocked the parking lot for a morning",
+      "a capital repair we had been postponing",
+      "keeping jewelry cases from fogging up",
+      "getting temperatures down for staff",
+      "an emergency buy after repeated breakdowns",
+      "what the landlord declined to cover",
+      "the mechanical contractor's big invoice",
+      "a replacement sized for the larger floor plan",
+      "finally dealing with the failing cooling plant"
+     ],
+     "low": 21000,
+     "high": 42000
+    }
+   ]
+  },
+  {
+   "name": "Store Technology & POS",
+   "aliases": [
+    "pos systems",
+    "store technology",
+    "point of sale costs",
+    "it spend",
+    "branch tech"
+   ],
+   "narrative": [
+    "POS systems",
+    "Store technology",
+    "Point of sale costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "CounterLogic Software",
+     "base": 12400,
+     "memo": "Pawn management platform subscription"
+    },
+    {
+     "vendor": "Netspan Telecom",
+     "base": 5600,
+     "memo": "Branch internet and VPN"
+    },
+    {
+     "vendor": "HelpDeskHero IT",
+     "base": 4100,
+     "memo": "Managed IT support retainer"
+    }
+   ],
+   "events": [
+    {
+     "key": "ransomware",
+     "vendor": "HelpDeskHero IT",
+     "memos": [
+      "Ransom incident - forensic imaging",
+      "Ransom incident - emergency server rebuild"
+     ],
+     "cross_memo": "Ransom incident - legal counsel retainer",
+     "plain": [
+      "the ransom incident",
+      "the ransom incident recovery",
+      "the ransom incident response"
+     ],
+     "oblique": [
+      "a cyberattack that locked the back office",
+      "the weekend our files were encrypted",
+      "bringing systems back from a hostile takeover",
+      "the breach that forced paper tickets",
+      "hackers demanding payment",
+      "specialists working through the night",
+      "restoring loan records from backups",
+      "the worst week in IT history",
+      "an attack that froze every register",
+      "the data scare reported to the insurer",
+      "getting the stores trading again",
+      "damage from a malicious email",
+      "rebuilding machines wiped by criminals",
+      "an outage that cost sales too",
+      "the emergency call to outside experts",
+      "the digital break-in"
+     ],
+     "low": 24000,
+     "high": 48000
+    },
+    {
+     "key": "migration",
+     "vendor": "Cloudbridge Integrators",
+     "memos": [
+      "Cloud ledger migration - data conversion",
+      "Cloud ledger migration - parallel run support"
+     ],
+     "cross_memo": "Cloud ledger migration - staff training sessions",
+     "plain": [
+      "the cloud ledger migration",
+      "the cloud ledger migration project",
+      "the cloud ledger migration effort"
+     ],
+     "oblique": [
+      "moving loan records off the old server",
+      "retiring the closet full of aging hardware",
+      "a system change planned by the CFO",
+      "teaching clerks a new workflow",
+      "running two systems side by side for weeks",
+      "the cutover that ran past its deadline",
+      "switching to hosted software",
+      "an upgrade promised to the lenders",
+      "cleaning up decades of messy customer records",
+      "contractors embedded at headquarters",
+      "a modernization initiative",
+      "taking the data somewhere safer",
+      "the transition away from legacy software",
+      "a long-planned jump to remote hosting",
+      "a project with a nervous go-live weekend",
+      "consolidating separate branch databases"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

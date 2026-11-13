@@ -1,0 +1,830 @@
+{
+ "slug": "bus-and-coach-manufacturer",
+ "industry": "bus and coach manufacturer",
+ "entities": [
+  "Highroad Coachworks Inc.",
+  "Meridian Bus & Motorcoach Ltd.",
+  "Continental Transit Vehicles Corp.",
+  "Summit Coach Manufacturing Co.",
+  "Ironwood Motorbus Works"
+ ],
+ "accounts": [
+  {
+   "name": "Body Panel and Fabrication Materials",
+   "aliases": [
+    "body panels",
+    "fabrication materials",
+    "panel stock",
+    "body shop materials",
+    "aluminum and fiberglass spend"
+   ],
+   "narrative": [
+    "Body panels",
+    "Fabrication materials",
+    "Panel stock"
+   ],
+   "recurring": [
+    {
+     "vendor": "Alcast Metals Supply",
+     "base": 24000,
+     "memo": "Sheet aluminum monthly release"
+    },
+    {
+     "vendor": "Fibertek Composites",
+     "base": 13500,
+     "memo": "Fiberglass roof cap standing order"
+    },
+    {
+     "vendor": "Northgate Fasteners",
+     "base": 3200,
+     "memo": "Rivets and structural fasteners"
+    }
+   ],
+   "events": [
+    {
+     "key": "rollcage",
+     "vendor": "Alcast Metals Supply",
+     "memos": [
+      "Skyline rollover cert — extruded cage tubing",
+      "Skyline rollover cert — gusset plate lot"
+     ],
+     "cross_memo": "Skyline rollover cert — test fixture rental",
+     "plain": [
+      "the Skyline rollover cert",
+      "Skyline rollover certification tubing",
+      "the rollover cert gusset order"
+     ],
+     "oblique": [
+      "the structural safety certification push",
+      "extra reinforcement metal for the crash approval",
+      "getting the new model through the roof-crush regulator",
+      "the strength testing program",
+      "stronger framing for the flagship coach",
+      "what the safety agency asked us to prove",
+      "special order stock for the validation build",
+      "the compliance run on the new chassis",
+      "tougher hoops inside the body shell",
+      "the pass-or-fail destructive trial",
+      "reinforcement hardware for approval testing",
+      "regulatory sign-off materials",
+      "the new model's crash readiness work",
+      "heavier gauge material for the prototype",
+      "extra metal ordered by engineering",
+      "the federal approval effort"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "hailclaim",
+     "vendor": "Prairie Glassworks",
+     "memos": [
+      "Hailstorm replacement — windshield glass blanks",
+      "Hailstorm replacement — side window sets"
+     ],
+     "cross_memo": "Hailstorm replacement — yard debris hauling",
+     "plain": [
+      "the hailstorm replacement",
+      "hailstorm replacement glass",
+      "the hailstorm window sets"
+     ],
+     "oblique": [
+      "the storm that hit the lot",
+      "replacing damaged units sitting outside",
+      "weather losses at the staging yard",
+      "re-buying parts we already paid for once",
+      "the insurance-covered event in the spring",
+      "cracked inventory from the freak weather",
+      "storm cleanup and restocking",
+      "the overnight damage to finished stock",
+      "what the sky did to our parked buses",
+      "redoing work that got wrecked",
+      "the lot damage we had to make good",
+      "unplanned remake of nearly finished units",
+      "the event the adjuster visited for",
+      "ruined components needing a second order",
+      "the replenishment after the weather",
+      "the claim we filed after the weather"
+     ],
+     "low": 12000,
+     "high": 24000
+    }
+   ]
+  },
+  {
+   "name": "Powertrain and Engine Components",
+   "aliases": [
+    "powertrain",
+    "engines and drivetrains",
+    "drivetrain spend",
+    "engine components",
+    "propulsion parts"
+   ],
+   "narrative": [
+    "Powertrain",
+    "Engine components",
+    "Drivetrain spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Cummerton Diesel",
+     "base": 29000,
+     "memo": "Engine assemblies monthly allocation"
+    },
+    {
+     "vendor": "Allgear Transmissions",
+     "base": 21000,
+     "memo": "Automatic transmission units"
+    },
+    {
+     "vendor": "Driveline Dynamics",
+     "base": 6800,
+     "memo": "Driveshafts and axles"
+    }
+   ],
+   "events": [
+    {
+     "key": "batterypack",
+     "vendor": "Cummerton Diesel",
+     "memos": [
+      "Voltra pilot — battery module trays",
+      "Voltra pilot — inverter mounting kits"
+     ],
+     "cross_memo": "Voltra pilot — charger install labor",
+     "plain": [
+      "the Voltra pilot",
+      "Voltra pilot battery trays",
+      "the Voltra pilot inverter kits"
+     ],
+     "oblique": [
+      "the zero-emission prototype run",
+      "early electric experiments",
+      "the low-carbon demonstrator for a city client",
+      "non-diesel trial units",
+      "the plug-in program",
+      "what the sustainability committee wanted built",
+      "the first handful of cleaner buses",
+      "new technology samples for evaluation",
+      "power electronics for the test fleet",
+      "the trial for the municipal tender",
+      "the green proposal build",
+      "development hardware for the quiet buses",
+      "the grant-funded experiment",
+      "parts for the cord-powered demos",
+      "the future-fuel initiative",
+      "a bid-winning showpiece"
+     ],
+     "low": 20000,
+     "high": 40000
+    },
+    {
+     "key": "turbo",
+     "vendor": "Boreline Turbo Systems",
+     "memos": [
+      "Stage recall — turbocharger swap kits",
+      "Stage recall — wastegate actuators"
+     ],
+     "cross_memo": "Stage recall — field technician travel",
+     "plain": [
+      "the Stage recall",
+      "Stage recall turbocharger kits",
+      "the Stage recall actuators"
+     ],
+     "oblique": [
+      "the campaign to fix coaches already delivered",
+      "replacing a part that was failing out in service",
+      "a defect found after shipping",
+      "the notice we sent to operators",
+      "correcting a supplier quality escape",
+      "retrofit work on buses on the road",
+      "the safety bulletin follow-up",
+      "remedy parts for customers",
+      "making good on a faulty component batch",
+      "the fix we owe the fleets",
+      "an issue caught by warranty trends",
+      "the repair offering for earlier builds",
+      "the field correction effort",
+      "what the quality team escalated",
+      "the goodwill remedy for owners",
+      "mass repair of earlier deliveries"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Seating and Interior Trim",
+   "aliases": [
+    "seating",
+    "interior trim",
+    "seats and upholstery",
+    "interior fit-out",
+    "cabin interiors"
+   ],
+   "narrative": [
+    "Seating",
+    "Interior trim",
+    "Cabin interiors"
+   ],
+   "recurring": [
+    {
+     "vendor": "Comfortline Seating",
+     "base": 27000,
+     "memo": "Passenger seat frames and cushions"
+    },
+    {
+     "vendor": "Textilia Upholstery",
+     "base": 9400,
+     "memo": "Moquette fabric rolls"
+    },
+    {
+     "vendor": "Bright Interior Lighting",
+     "base": 2900,
+     "memo": "Cabin LED strips"
+    }
+   ],
+   "events": [
+    {
+     "key": "leatherline",
+     "vendor": "Comfortline Seating",
+     "memos": [
+      "Aurora executive — premium hide seat covers",
+      "Aurora executive — stitched headrest sets"
+     ],
+     "cross_memo": "Aurora executive — showroom display freight",
+     "plain": [
+      "the Aurora executive order",
+      "Aurora executive hide covers",
+      "the Aurora executive headrests"
+     ],
+     "oblique": [
+      "the luxury charter customer's special spec",
+      "upscale touches for a VIP client",
+      "the top-tier version of the coach",
+      "a high-end custom job",
+      "what the touring operator wanted for its flagship",
+      "the deluxe finish package",
+      "a one-off bespoke contract",
+      "pricey materials for a single buyer",
+      "the plush configuration",
+      "extras requested by a celebrity tour firm",
+      "the upgraded cabin for premium travelers",
+      "a customer's wishlist of finer finishes",
+      "a limited run with fancy details",
+      "the boutique build",
+      "the high-margin special",
+      "the upmarket variant"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "flamecode",
+     "vendor": "Pyrogard Textiles",
+     "memos": [
+      "Burnsafe retest — flame-retardant fabric lot",
+      "Burnsafe retest — foam substitute samples"
+     ],
+     "cross_memo": "Burnsafe retest — lab testing fees",
+     "plain": [
+      "the Burnsafe retest",
+      "Burnsafe retest fabric",
+      "the Burnsafe foam samples"
+     ],
+     "oblique": [
+      "the fire standard update",
+      "redoing materials that no longer met the rule",
+      "new flammability requirements",
+      "switching to compliant coverings",
+      "a regulator tightening its spec",
+      "what the lab failed last quarter",
+      "the ignition resistance requirement",
+      "requalifying our soft goods",
+      "the burn certification",
+      "swapping materials after the rule change",
+      "approved alternatives we had to source",
+      "proving the cabin won't catch fire",
+      "the new fire-safety mandate",
+      "replacing items that didn't pass",
+      "regulation-driven material change",
+      "the testing house findings"
+     ],
+     "low": 10000,
+     "high": 21000
+    }
+   ]
+  },
+  {
+   "name": "Paint and Finishing",
+   "aliases": [
+    "paint",
+    "paint shop",
+    "finishing costs",
+    "coatings and finishing",
+    "paint and coatings"
+   ],
+   "narrative": [
+    "Paint",
+    "Paint shop costs",
+    "Coatings spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Colorbond Coatings",
+     "base": 16500,
+     "memo": "Topcoat and primer drums"
+    },
+    {
+     "vendor": "Sandrite Abrasives",
+     "base": 2400,
+     "memo": "Sanding discs and masking supplies"
+    },
+    {
+     "vendor": "CleanAir Booth Services",
+     "base": 5100,
+     "memo": "Spray booth filter service"
+    }
+   ],
+   "events": [
+    {
+     "key": "liveries",
+     "vendor": "Colorbond Coatings",
+     "memos": [
+      "Metrolink fleet wrap — custom livery enamel",
+      "Metrolink fleet wrap — metallic accent pigment"
+     ],
+     "cross_memo": "Metrolink fleet wrap — decal design fee",
+     "plain": [
+      "the Metrolink fleet wrap",
+      "Metrolink livery enamel",
+      "the Metrolink metallic pigment"
+     ],
+     "oblique": [
+      "the transit agency's branding design",
+      "special colors for a city customer",
+      "matching a client's corporate look",
+      "the art-heavy order",
+      "a municipal identity scheme",
+      "the three-tone scheme on that contract",
+      "making each bus look like the client's brand",
+      "complicated multi-stage color work",
+      "the striking new appearance for the buyer",
+      "a custom visual identity job",
+      "the customer's signature look",
+      "extra layers for an elaborate finish",
+      "a design-heavy delivery",
+      "the colorful commission",
+      "the contract that wanted gradients",
+      "unusual shades for a large order"
+     ],
+     "low": 11000,
+     "high": 22000
+    },
+    {
+     "key": "boothrebuild",
+     "vendor": "Vaporex Environmental",
+     "memos": [
+      "Booth 3 upgrade — scrubber media replacement",
+      "Booth 3 upgrade — exhaust duct retrofit"
+     ],
+     "cross_memo": "Booth 3 upgrade — permit filing fee",
+     "plain": [
+      "the Booth 3 upgrade",
+      "Booth 3 scrubber media",
+      "the Booth 3 duct retrofit"
+     ],
+     "oblique": [
+      "the emissions control tightening",
+      "cleaning up what goes up the stack",
+      "an air-quality compliance project",
+      "the environmental agency's request",
+      "reducing fumes from the line",
+      "making the painting area greener",
+      "work our permit required",
+      "the regulator's new limits on vapors",
+      "venting improvements",
+      "air handling overhaul",
+      "fixing the odor complaints from neighbors",
+      "the ventilation fix",
+      "upgrades to keep our operating license",
+      "the clean-air retrofit",
+      "pollution abatement work",
+      "the municipal environmental inspection"
+     ],
+     "low": 13000,
+     "high": 26000
+    }
+   ]
+  },
+  {
+   "name": "Chassis and Axle Procurement",
+   "aliases": [
+    "chassis",
+    "axles and suspension",
+    "chassis procurement",
+    "running gear",
+    "suspension spend"
+   ],
+   "narrative": [
+    "Chassis",
+    "Axle and suspension spend",
+    "Running gear"
+   ],
+   "recurring": [
+    {
+     "vendor": "Steelspan Frames",
+     "base": 30000,
+     "memo": "Chassis frame rails monthly lot"
+    },
+    {
+     "vendor": "Airlift Suspension Co.",
+     "base": 14200,
+     "memo": "Air spring assemblies"
+    },
+    {
+     "vendor": "Stopwell Brake Systems",
+     "base": 8800,
+     "memo": "Disc brake sets"
+    }
+   ],
+   "events": [
+    {
+     "key": "lowfloor",
+     "vendor": "Steelspan Frames",
+     "memos": [
+      "Kestrel lowline — dropped frame sections",
+      "Kestrel lowline — kneeling axle brackets"
+     ],
+     "cross_memo": "Kestrel lowline — tooling amortization",
+     "plain": [
+      "the Kestrel lowline",
+      "Kestrel lowline frame sections",
+      "the Kestrel lowline brackets"
+     ],
+     "oblique": [
+      "the accessible entry model",
+      "a design with easier boarding",
+      "the wheelchair-friendly variant",
+      "the city order needing no steps",
+      "a ramp-ready configuration",
+      "lower deck requirements from the transit authority",
+      "the barrier-free version",
+      "what the disabilities act pushed us to offer",
+      "a re-engineered underside",
+      "the new suburban commuter shape",
+      "geometry changes for the ground-level floor",
+      "adapting our platform for easy access",
+      "a different frame profile",
+      "the city bus redesign",
+      "a customer spec for no-step boarding",
+      "reworked structure for kneeling buses"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "rustdefect",
+     "vendor": "Anvil Heat Treat",
+     "memos": [
+      "Corrosion rework — frame re-galvanizing batch",
+      "Corrosion rework — weld seam inspection"
+     ],
+     "cross_memo": "Corrosion rework — scrap disposal",
+     "plain": [
+      "the Corrosion rework",
+      "Corrosion rework galvanizing",
+      "the Corrosion rework weld inspection"
+     ],
+     "oblique": [
+      "oxidation showing up on stored frames",
+      "a surface problem found in the warehouse",
+      "damage from humidity in storage",
+      "salt air getting to bare steel",
+      "redoing treatment on finished pieces",
+      "the flaking we found during audit",
+      "a protective layer that failed",
+      "fixing rust before it spread",
+      "metal that had to be stripped and redone",
+      "a coating failure upstream",
+      "cleanup of items already received",
+      "the supplier's poor surface treatment",
+      "a quality hold on a delivery",
+      "unexpected extra processing of stock",
+      "the lot we couldn't use as shipped",
+      "remedial processing on rejected stock"
+     ],
+     "low": 9000,
+     "high": 19000
+    }
+   ]
+  },
+  {
+   "name": "Plant Utilities and Energy",
+   "aliases": [
+    "utilities",
+    "plant energy",
+    "power and gas",
+    "energy costs",
+    "factory utilities"
+   ],
+   "narrative": [
+    "Utilities",
+    "Plant energy",
+    "Energy costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Grid Valley Electric",
+     "base": 22000,
+     "memo": "Electricity — main assembly hall"
+    },
+    {
+     "vendor": "Basin Natural Gas",
+     "base": 9600,
+     "memo": "Gas — curing ovens and heating"
+    },
+    {
+     "vendor": "Riverside Water Authority",
+     "base": 1800,
+     "memo": "Water and sewer"
+    }
+   ],
+   "events": [
+    {
+     "key": "peakdemand",
+     "vendor": "Grid Valley Electric",
+     "memos": [
+      "Weld line surge — demand charge adjustment",
+      "Weld line surge — transformer overage fee"
+     ],
+     "cross_memo": "Weld line surge — temporary generator rental",
+     "plain": [
+      "the Weld line surge",
+      "Weld line surge demand charge",
+      "the Weld line transformer overage"
+     ],
+     "oblique": [
+      "the production ramp-up at peak hours",
+      "running all stations at once",
+      "a spike in consumption on the heaviest days",
+      "extra shifts straining our capacity",
+      "what the extra output cost us in power",
+      "the rush order weeks",
+      "exceeding our contracted level",
+      "cranking up the plant during a crunch",
+      "high intensity usage",
+      "an unusual burst of activity",
+      "the crunch to meet a delivery date",
+      "overtime weekends on the floor",
+      "stress on the electrical feed",
+      "heavy simultaneous machine use",
+      "penalties for pulling too much at once",
+      "the rush to hit shipping targets"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "coldsnap",
+     "vendor": "Pinecrest Propane",
+     "memos": [
+      "Deepfreeze backup — bulk propane fill",
+      "Deepfreeze backup — tank rental surcharge"
+     ],
+     "cross_memo": "Deepfreeze backup — emergency heater hire",
+     "plain": [
+      "the Deepfreeze backup",
+      "Deepfreeze backup propane",
+      "the Deepfreeze tank surcharge"
+     ],
+     "oblique": [
+      "the week the pipeline couldn't deliver",
+      "an unusually harsh winter stretch",
+      "keeping workers warm when supply faltered",
+      "the interruption in regular supply",
+      "a cold spell that outran the contract",
+      "fuel we bought from a second source",
+      "the freeze that shut down the main line",
+      "emergency heating for the halls",
+      "a fallback source during the outage",
+      "weather-related supply curtailment",
+      "buying from a spot supplier",
+      "keeping the curing process alive",
+      "the gas shortage",
+      "what we paid to stay running through the storm",
+      "an unplanned stopgap",
+      "the failure of normal supply"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Engineering and Prototype Testing",
+   "aliases": [
+    "engineering",
+    "prototype testing",
+    "r&d testing",
+    "design and validation",
+    "test track spend"
+   ],
+   "narrative": [
+    "Engineering",
+    "Prototype testing",
+    "Validation spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Proving Ground Services",
+     "base": 12500,
+     "memo": "Test track lease"
+    },
+    {
+     "vendor": "Vectorsim CAD Licensing",
+     "base": 7200,
+     "memo": "Simulation and CAD seats"
+    },
+    {
+     "vendor": "Torquelab Instruments",
+     "base": 4300,
+     "memo": "Dynamometer calibration"
+    }
+   ],
+   "events": [
+    {
+     "key": "windtunnel",
+     "vendor": "Proving Ground Services",
+     "memos": [
+      "Slipstream study — aerodynamic rig time",
+      "Slipstream study — scale model fabrication"
+     ],
+     "cross_memo": "Slipstream study — data analyst contract",
+     "plain": [
+      "the Slipstream study",
+      "Slipstream study rig time",
+      "the Slipstream scale model"
+     ],
+     "oblique": [
+      "the fuel economy improvement project",
+      "reducing drag on the highway coach",
+      "airflow experiments",
+      "a miniature version put through tests",
+      "chasing better mileage",
+      "the shape optimization",
+      "what the efficiency team requested",
+      "a look at how the roofline cuts the wind",
+      "range extension research",
+      "a smaller replica in a blowing chamber",
+      "an effort to trim operating costs for customers",
+      "body contour experiments",
+      "evaluating the nose redesign",
+      "the hunt for fewer gallons per mile",
+      "the research behind the sleeker front end",
+      "a rental of specialized facility time"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "nvhconsult",
+     "vendor": "Quietwave Acoustics",
+     "memos": [
+      "Hushcabin audit — interior noise mapping",
+      "Hushcabin audit — damping material trials"
+     ],
+     "cross_memo": "Hushcabin audit — microphone array lease",
+     "plain": [
+      "the Hushcabin audit",
+      "Hushcabin audit noise mapping",
+      "the Hushcabin damping trials"
+     ],
+     "oblique": [
+      "complaints about rattles from drivers",
+      "making rides more peaceful",
+      "an outside specialist's assessment",
+      "the sound level investigation",
+      "what the customer survey flagged",
+      "reducing drone at highway speed",
+      "a consultant we brought in",
+      "the passenger comfort review",
+      "hunting down buzzes in the cabin",
+      "experimental insulation tests",
+      "the ear-splitting prototype problem",
+      "a study to hush the ride",
+      "expert measurements inside the shell",
+      "complaints from the lead customer",
+      "the vibration puzzle",
+      "comfort scores we needed to raise"
+     ],
+     "low": 9000,
+     "high": 18000
+    }
+   ]
+  },
+  {
+   "name": "Warranty and Field Service",
+   "aliases": [
+    "warranty",
+    "field service",
+    "warranty claims",
+    "service and support",
+    "after-sales spend"
+   ],
+   "narrative": [
+    "Warranty",
+    "Field service costs",
+    "After-sales spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Roadside Repair Network",
+     "base": 18000,
+     "memo": "Authorized dealer repair reimbursements"
+    },
+    {
+     "vendor": "Partsline Logistics",
+     "base": 6400,
+     "memo": "Warranty parts shipping"
+    },
+    {
+     "vendor": "Claimwise Administration",
+     "base": 3100,
+     "memo": "Claims processing fees"
+    }
+   ],
+   "events": [
+    {
+     "key": "hvacfail",
+     "vendor": "Roadside Repair Network",
+     "memos": [
+      "Frostline campaign — compressor replacements",
+      "Frostline campaign — refrigerant recharge labor"
+     ],
+     "cross_memo": "Frostline campaign — customer loaner buses",
+     "plain": [
+      "the Frostline campaign",
+      "Frostline campaign compressors",
+      "the Frostline recharge labor"
+     ],
+     "oblique": [
+      "air conditioning breakdowns in a heatwave",
+      "passengers sweltering on summer routes",
+      "units that quit cooling",
+      "the climate control failures",
+      "a spate of complaints about warm cabins",
+      "fixes for a faulty batch of cooling gear",
+      "the hot weather service rush",
+      "a seasonal wave of breakdowns",
+      "getting comfort systems working again",
+      "operators demanding fast fixes",
+      "an overheated summer for our customers",
+      "cooling that couldn't keep up",
+      "the run on summer repairs",
+      "a component defect that surfaced in July heat",
+      "the claims spike from the south",
+      "replacement work at dealer shops"
+     ],
+     "low": 17000,
+     "high": 34000
+    },
+    {
+     "key": "softwareflash",
+     "vendor": "Datalink Diagnostics",
+     "memos": [
+      "Firmware patch rollout — dealer reflash kits",
+      "Firmware patch rollout — connectivity gateway units"
+     ],
+     "cross_memo": "Firmware patch rollout — technician training",
+     "plain": [
+      "the Firmware patch rollout",
+      "Firmware patch reflash kits",
+      "the Firmware patch gateway units"
+     ],
+     "oblique": [
+      "fixing the software glitch across the fleet",
+      "an electronic control issue",
+      "the update every operator had to install",
+      "a bug causing random warning lights",
+      "code corrections pushed to customers",
+      "a digital fix applied at each depot",
+      "the dashboard error",
+      "a remedy for erratic gauges",
+      "an electronics supplier's mistake",
+      "the module that misbehaved",
+      "plugging in laptops at customer garages",
+      "correcting what the onboard computer got wrong",
+      "the nuisance fault code",
+      "a vendor's flawed release",
+      "distributed corrections for the control units",
+      "the glitch that tripped limp mode"
+     ],
+     "low": 8000,
+     "high": 16000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}

@@ -1,0 +1,718 @@
+{
+ "slug": "vending-machine-operator",
+ "industry": "vending machine operator",
+ "entities": [
+  "Brightpath Vending Co",
+  "Summit Snack Systems",
+  "Coastline Micro Markets",
+  "Ironwood Refreshment Services",
+  "Harbor & Pine Vending"
+ ],
+ "accounts": [
+  {
+   "name": "Route Vehicle Operating Costs",
+   "aliases": [
+    "fleet",
+    "fleet costs",
+    "route trucks",
+    "truck operating spend",
+    "delivery vehicles"
+   ],
+   "narrative": [
+    "Fleet costs",
+    "Route trucks",
+    "Delivery vehicles"
+   ],
+   "recurring": [
+    {
+     "vendor": "Meridian Fuel Cards",
+     "base": 14200,
+     "memo": "Monthly fuel card statement"
+    },
+    {
+     "vendor": "Allied Truck Service",
+     "base": 6800,
+     "memo": "Scheduled oil change and tire rotation"
+    },
+    {
+     "vendor": "Keystone Fleet Insurance",
+     "base": 4100,
+     "memo": "Commercial auto premium installment"
+    }
+   ],
+   "events": [
+    {
+     "key": "liftgate",
+     "vendor": "Allied Truck Service",
+     "memos": [
+      "Liftgate hydraulic rebuild — pump replacement",
+      "Liftgate hydraulic rebuild — cylinder seals"
+     ],
+     "cross_memo": "Liftgate hydraulic rebuild — loaner van rental",
+     "plain": [
+      "the liftgate hydraulic rebuild",
+      "the liftgate rebuild",
+      "the liftgate hydraulic work"
+     ],
+     "oblique": [
+      "getting the tailgate lifting gear working again",
+      "the fix to the rear loading platform on the box trucks",
+      "repairs that stopped drivers hauling cases by hand",
+      "the powered ramp that quit on three trucks",
+      "emergency work on the heavy-lifting hardware",
+      "keeping the delivery crew from missing stops",
+      "the overhaul of the lowering mechanism",
+      "what the mechanics found when the platforms wouldn't descend",
+      "truck equipment that failed during peak weeks",
+      "the rear-door lifting system repair",
+      "parts for the equipment that raises cargo",
+      "the unplanned shop visits for stuck platforms",
+      "getting loading hardware back to spec",
+      "the lift system breakdown",
+      "fluid-powered loading repairs",
+      "the downtime fix for tailgate hardware"
+     ],
+     "low": 12000,
+     "high": 24000
+    },
+    {
+     "key": "telematics",
+     "vendor": "RouteSight Telematics",
+     "memos": [
+      "Telematics tracker rollout — hardware units",
+      "Telematics tracker rollout — install labor"
+     ],
+     "cross_memo": "Telematics tracker rollout — driver training session",
+     "plain": [
+      "the telematics tracker rollout",
+      "the telematics rollout",
+      "the tracker rollout"
+     ],
+     "oblique": [
+      "putting location devices in every vehicle",
+      "the safety initiative the insurer pushed",
+      "monitoring where drivers spend their shifts",
+      "the program to cut idling and unauthorized stops",
+      "gear that reports driving habits to dispatch",
+      "the pilot the owner requested after a missed delivery",
+      "wiring up the whole truck lineup",
+      "the new system for watching vehicle movement",
+      "the insurer-driven monitoring upgrade",
+      "onboarding the drivers to the new dashboards",
+      "small boxes under the dash of each van",
+      "the effort to prove routes are efficient",
+      "a one-time install across the entire lineup",
+      "visibility into where trucks sit all day",
+      "the data project for dispatch",
+      "hardware that streams position data"
+     ],
+     "low": 15000,
+     "high": 30000
+    }
+   ]
+  },
+  {
+   "name": "Machine Repair and Parts",
+   "aliases": [
+    "repairs",
+    "machine repairs",
+    "repair parts",
+    "parts and service",
+    "machine maintenance"
+   ],
+   "narrative": [
+    "Machine repairs",
+    "Repair parts",
+    "Parts and service"
+   ],
+   "recurring": [
+    {
+     "vendor": "Dixie Vend Parts Supply",
+     "base": 7400,
+     "memo": "Bill validators and coil motors restock"
+    },
+    {
+     "vendor": "Tri-County Service Techs",
+     "base": 9600,
+     "memo": "Technician service calls"
+    }
+   ],
+   "events": [
+    {
+     "key": "compressor",
+     "vendor": "Dixie Vend Parts Supply",
+     "memos": [
+      "Cooler compressor recall — replacement units",
+      "Cooler compressor recall — warranty gaps"
+     ],
+     "cross_memo": "Cooler compressor recall — spoiled product write-off",
+     "plain": [
+      "the cooler compressor recall",
+      "the compressor recall",
+      "the cooler compressor swaps"
+     ],
+     "oblique": [
+      "the manufacturer's notice on the chilling units",
+      "swapping out the cooling part across the glass-front fleet",
+      "a defect that forced us to open machines up",
+      "the safety bulletin for refrigerated models",
+      "replacements the maker only partly covered",
+      "a batch of units that overheated",
+      "the retrofit campaign on older cold-drink machines",
+      "urgent hardware changes on the beverage fleet",
+      "a faulty component discovered by the maker",
+      "the program that pulled machines offline for days",
+      "units that stopped keeping drinks cold",
+      "the correction ordered after complaints",
+      "the large parts order for the cold models",
+      "fixing the machines flagged by the vendor",
+      "the defect remediation on drink machines",
+      "the campaign to retrofit the cold units"
+     ],
+     "low": 18000,
+     "high": 36000
+    },
+    {
+     "key": "cashless",
+     "vendor": "TapPay Hardware Group",
+     "memos": [
+      "Card reader upgrade — contactless terminals",
+      "Card reader upgrade — mounting kits"
+     ],
+     "cross_memo": "Card reader upgrade — activation fees",
+     "plain": [
+      "the card reader upgrade",
+      "the card reader terminals",
+      "the contactless card reader upgrade"
+     ],
+     "oblique": [
+      "letting customers pay with phones",
+      "the shift away from coins and bills",
+      "new payment gear on every machine",
+      "the push to accept tap payments",
+      "what we installed after sales slipped",
+      "equipment to take plastic and wallets",
+      "modernizing how shoppers pay",
+      "the hardware that replaced aging coin mechanisms",
+      "the customer request for easier checkout",
+      "upgrades aimed at lifting transaction counts",
+      "the retrofit of older units with wireless pay",
+      "gear for taking digital wallets",
+      "the checkout modernization project",
+      "swapping outdated payment components",
+      "the rollout that let people skip carrying change",
+      "new gadgets bolted to the front panels"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  },
+  {
+   "name": "Cost of Goods Sold - Snacks",
+   "aliases": [
+    "snack cogs",
+    "snack product",
+    "snack purchases",
+    "snack inventory costs",
+    "chips and candy"
+   ],
+   "narrative": [
+    "Snack cogs",
+    "Snack purchases",
+    "Chips and candy"
+   ],
+   "recurring": [
+    {
+     "vendor": "Valley Wholesale Foods",
+     "base": 28000,
+     "memo": "Weekly snack case orders"
+    },
+    {
+     "vendor": "Crunchline Distributors",
+     "base": 15500,
+     "memo": "Chips and candy bulk order"
+    },
+    {
+     "vendor": "NutHouse Supply",
+     "base": 6200,
+     "memo": "Nuts and bars restock"
+    }
+   ],
+   "events": [
+    {
+     "key": "peanut",
+     "vendor": "Crunchline Distributors",
+     "memos": [
+      "Trail mix price surge — allergen substitution",
+      "Trail mix price surge — surcharge invoice"
+     ],
+     "cross_memo": "Trail mix price surge — freight surcharge",
+     "plain": [
+      "the trail mix price surge",
+      "the trail mix surcharge",
+      "the allergen substitution surge"
+     ],
+     "oblique": [
+      "a harvest shortfall that lifted wholesale quotes",
+      "suppliers passing along higher commodity rates",
+      "what happened when a key ingredient got scarce",
+      "having to switch recipes mid-quarter",
+      "the spike in costs for a top seller",
+      "an unplanned jump in what mixed packs cost",
+      "the supplier's extra charge on a best-selling bag",
+      "a sourcing problem upstream",
+      "the cost of replacing a pulled item",
+      "ingredient scarcity hitting our margins",
+      "an invoice bump the distributor announced late",
+      "the premium we paid to keep shelves full",
+      "a shortage that changed our purchase prices",
+      "upstream crop trouble",
+      "the cost of locating an alternate source",
+      "higher prices on a popular pouch"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "holiday",
+     "vendor": "Festive Treat Imports",
+     "memos": [
+      "Seasonal candy preorder — gift tins",
+      "Seasonal candy preorder — display allowance"
+     ],
+     "cross_memo": "Seasonal candy preorder — extra warehouse space",
+     "plain": [
+      "the seasonal candy preorder",
+      "the seasonal candy gift tins",
+      "the seasonal candy stock"
+     ],
+     "oblique": [
+      "stocking up ahead of the winter rush",
+      "the early buy for the year-end shopping period",
+      "limited-run assortments we ordered in advance",
+      "a bet on festive demand",
+      "the inventory build before cold weather",
+      "special packaging for office and lobby locations",
+      "one-off buying for the party season",
+      "the premium goods we brought in for gifting",
+      "what we loaded up on before the holidays",
+      "a big advance order from an overseas supplier",
+      "themed products for high-traffic sites",
+      "the pre-season purchase commitment",
+      "extra stock ordered months early",
+      "limited editions that sold through quickly",
+      "the early commitment to a specialty supplier",
+      "seasonal assortments for the machines"
+     ],
+     "low": 14000,
+     "high": 28000
+    }
+   ]
+  },
+  {
+   "name": "Cost of Goods Sold - Beverages",
+   "aliases": [
+    "drink cogs",
+    "beverage product",
+    "drink purchases",
+    "soda and water costs",
+    "beverage inventory"
+   ],
+   "narrative": [
+    "Drink cogs",
+    "Beverage product",
+    "Soda and water costs"
+   ],
+   "recurring": [
+    {
+     "vendor": "Pacific Bottling Wholesale",
+     "base": 26500,
+     "memo": "Soda and water pallet orders"
+    },
+    {
+     "vendor": "Cascade Energy Distributors",
+     "base": 11800,
+     "memo": "Energy drink and tea cases"
+    }
+   ],
+   "events": [
+    {
+     "key": "heatwave",
+     "vendor": "Pacific Bottling Wholesale",
+     "memos": [
+      "Emergency pallet rush — heat advisory",
+      "Emergency pallet rush — expedited delivery"
+     ],
+     "cross_memo": "Emergency pallet rush — overtime for warehouse crew",
+     "plain": [
+      "the emergency pallet rush",
+      "the heat advisory pallet rush",
+      "the expedited pallet rush"
+     ],
+     "oblique": [
+      "a spell of scorching weather that emptied machines",
+      "unusual demand during a sweltering week",
+      "restocking at triple the normal pace",
+      "orders placed on short notice to avoid sellouts",
+      "the surge when temperatures spiked",
+      "paying more for same-day supply",
+      "keeping stock on hand while the weather stayed brutal",
+      "the unplanned rebuy after shelves ran bare",
+      "a temperature-driven buying spree",
+      "extra trips to refill machines in a hurry",
+      "supply scrambling during unseasonable warmth",
+      "what we paid to avoid empty columns",
+      "the sudden jump in thirsty customers",
+      "last-minute inventory during the weather event",
+      "rush shipments to beat the sellout",
+      "demand from the weather outside"
+     ],
+     "low": 15000,
+     "high": 30000
+    },
+    {
+     "key": "kombucha",
+     "vendor": "Sprout & Sip Brewing",
+     "memos": [
+      "Craft kombucha trial — stainless kegs",
+      "Craft kombucha trial — launch samples"
+     ],
+     "cross_memo": "Craft kombucha trial — branded decals",
+     "plain": [
+      "the craft kombucha trial",
+      "the kombucha launch samples",
+      "the craft kombucha kegs"
+     ],
+     "oblique": [
+      "testing a fermented health drink in select sites",
+      "the new premium product pilot",
+      "an experiment aimed at wellness-minded locations",
+      "the gamble on a trendy line",
+      "introducing something unfamiliar to the offering",
+      "a limited test at gyms and offices",
+      "what we spent to see if shoppers would bite",
+      "sampling a new type of refreshment",
+      "our first foray into probiotic beverages",
+      "the trial that went into a few dozen machines",
+      "a small batch pilot from a local brewer",
+      "a product test requested by a client building",
+      "opening a new category on the menu",
+      "the startup costs of a specialty item",
+      "a taste-test program for fresh offerings",
+      "our pilot of a higher-priced drink"
+     ],
+     "low": 10000,
+     "high": 20000
+    }
+   ]
+  },
+  {
+   "name": "Location Commissions and Site Fees",
+   "aliases": [
+    "commissions",
+    "site fees",
+    "location payouts",
+    "host commissions",
+    "placement fees"
+   ],
+   "narrative": [
+    "Commissions",
+    "Site fees",
+    "Host commissions"
+   ],
+   "recurring": [
+    {
+     "vendor": "Riverside Medical Center",
+     "base": 9500,
+     "memo": "Monthly sales share — hospital sites"
+    },
+    {
+     "vendor": "Metro Logistics Park",
+     "base": 7200,
+     "memo": "Monthly commission — warehouse sites"
+    },
+    {
+     "vendor": "Northgate Business Campus",
+     "base": 5400,
+     "memo": "Monthly commission — office sites"
+    }
+   ],
+   "events": [
+    {
+     "key": "university",
+     "vendor": "Metro Logistics Park",
+     "memos": [
+      "Fall contract renewal — signing bonus",
+      "Fall contract renewal — guaranteed minimum true-up"
+     ],
+     "cross_memo": "Fall contract renewal — attorney review fee",
+     "plain": [
+      "the fall contract renewal",
+      "the fall renewal signing bonus",
+      "the fall contract minimum true-up"
+     ],
+     "oblique": [
+      "keeping the site from going to a rival",
+      "a sweetener to extend our agreement",
+      "the extra cash promised to retain the account",
+      "an upfront payment the landlord demanded",
+      "what we agreed to when the term expired",
+      "competitive pressure from another operator",
+      "the catch-up owed for a sales shortfall",
+      "terms renegotiated in the host's favor",
+      "the premium to stay on the premises",
+      "a negotiated lump sum at the end of the term",
+      "payments to lock in another multi-year stay",
+      "our response to a bidding process",
+      "the concession we granted to avoid losing the spot",
+      "cash handed over to extend access",
+      "the price of retaining a flagship location",
+      "a one-time promise to the property manager"
+     ],
+     "low": 16000,
+     "high": 32000
+    },
+    {
+     "key": "stadium",
+     "vendor": "Lakeshore Arena Group",
+     "memos": [
+      "Arena concourse exclusivity — season buy-in",
+      "Arena concourse exclusivity — kiosk buildout"
+     ],
+     "cross_memo": "Arena concourse exclusivity — permit costs",
+     "plain": [
+      "the arena concourse exclusivity",
+      "the arena exclusivity buy-in",
+      "the arena concourse kiosk buildout"
+     ],
+     "oblique": [
+      "winning the right to sell at the sports venue",
+      "the entry price for a high-traffic new site",
+      "what we paid to be the only operator in the building",
+      "a bid for crowds at ticketed events",
+      "securing a marquee location",
+      "the upfront cost of a showcase placement",
+      "an agreement with the venue operator",
+      "the premium for access to thousands of fans",
+      "the first-year price of a big-name site",
+      "gaining a foothold in the entertainment district",
+      "an expansion move toward event audiences",
+      "the upfront payment for a prime spot",
+      "our entrance fee for large gatherings",
+      "the deal that gave us sole rights",
+      "a splashy new account",
+      "the cost of getting in the door"
+     ],
+     "low": 22000,
+     "high": 44000
+    }
+   ]
+  },
+  {
+   "name": "Warehouse and Stocking Operations",
+   "aliases": [
+    "warehouse",
+    "warehouse costs",
+    "stocking operations",
+    "fulfillment spend",
+    "pick and pack"
+   ],
+   "narrative": [
+    "Warehouse costs",
+    "Stocking operations",
+    "Fulfillment spend"
+   ],
+   "recurring": [
+    {
+     "vendor": "Gateway Industrial Properties",
+     "base": 12500,
+     "memo": "Warehouse lease"
+    },
+    {
+     "vendor": "Summit Staffing Solutions",
+     "base": 8800,
+     "memo": "Temp pickers and loaders"
+    },
+    {
+     "vendor": "Brightline Utilities",
+     "base": 2400,
+     "memo": "Electric and water"
+    }
+   ],
+   "events": [
+    {
+     "key": "racking",
+     "vendor": "Summit Staffing Solutions",
+     "memos": [
+      "Inventory recount — overnight crew",
+      "Inventory recount — weekend premium hours"
+     ],
+     "cross_memo": "Inventory recount — auditor fees",
+     "plain": [
+      "the inventory recount",
+      "the overnight recount crew",
+      "the recount premium hours"
+     ],
+     "oblique": [
+      "the shelf-by-shelf check after numbers failed to match",
+      "an audit trigger that sent staff in at odd hours",
+      "reconciling what the system said against what was there",
+      "extra shifts to count every item",
+      "the lost product mystery we had to sort out",
+      "a scramble before year-end reporting",
+      "the overtime that came from missing stock",
+      "counting everything twice to find the gap",
+      "a mandatory physical tally",
+      "the effort to explain a shrink spike",
+      "night work to avoid stopping the routes",
+      "extra labor to verify the records",
+      "the check ordered by finance",
+      "an unplanned all-hands tally",
+      "the push to settle book-to-floor differences",
+      "clearing up the discrepancy"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "forklift",
+     "vendor": "Pinnacle Lift Rentals",
+     "memos": [
+      "Dock expansion project — forklift lease",
+      "Dock expansion project — pallet jack fleet"
+     ],
+     "cross_memo": "Dock expansion project — concrete pad repair",
+     "plain": [
+      "the dock expansion project",
+      "the dock expansion forklift lease",
+      "the dock expansion pallet jacks"
+     ],
+     "oblique": [
+      "adding a second loading bay",
+      "the build-out to handle more trucks at once",
+      "equipment brought in to widen our shipping capacity",
+      "what we leased to move heavier volume",
+      "the facility upgrade for growth",
+      "gear acquired to speed up trucks leaving the yard",
+      "more room for inbound deliveries",
+      "machines hired for the expansion work",
+      "the investment to reduce loading bottlenecks",
+      "temporary machinery while the building changed",
+      "moving freight faster at the back of the building",
+      "the capacity project the operations lead requested",
+      "what we rented to support new routes",
+      "the lease of heavy handling equipment",
+      "the growth-related change at the building edge",
+      "new wheels and lifts for the yard"
+     ],
+     "low": 18000,
+     "high": 36000
+    }
+   ]
+  },
+  {
+   "name": "Payment Processing and Telemetry",
+   "aliases": [
+    "processing fees",
+    "card fees",
+    "telemetry",
+    "payment costs",
+    "connectivity charges"
+   ],
+   "narrative": [
+    "Processing fees",
+    "Card fees",
+    "Telemetry"
+   ],
+   "recurring": [
+    {
+     "vendor": "ClearSwipe Merchant Services",
+     "base": 10800,
+     "memo": "Card processing fees"
+    },
+    {
+     "vendor": "CellLink Wireless",
+     "base": 3900,
+     "memo": "Machine cellular data plans"
+    },
+    {
+     "vendor": "VendCloud Software",
+     "base": 2700,
+     "memo": "Inventory telemetry subscription"
+    }
+   ],
+   "events": [
+    {
+     "key": "chargeback",
+     "vendor": "ClearSwipe Merchant Services",
+     "memos": [
+      "Fraud dispute batch — chargeback reversals",
+      "Fraud dispute batch — network penalty"
+     ],
+     "cross_memo": "Fraud dispute batch — refund goodwill credits",
+     "plain": [
+      "the fraud dispute batch",
+      "the fraud chargeback reversals",
+      "the fraud dispute penalty"
+     ],
+     "oblique": [
+      "a wave of stolen card usage that hit our machines",
+      "money clawed back by banks after bad transactions",
+      "what the card networks assessed us for suspicious activity",
+      "a cluster of unauthorized purchases",
+      "consumer disputes that went against us",
+      "a security incident at a few sites",
+      "reversals triggered by compromised accounts",
+      "the loss from criminals testing numbers",
+      "a penalty for crossing a threshold",
+      "funds pulled back by issuers",
+      "the aftermath of cloned plastic",
+      "a rash of contested sales",
+      "the cost of cleaning up bad payments",
+      "a spike in returned transactions",
+      "what criminal use of cards cost us",
+      "the network's response to unusual patterns"
+     ],
+     "low": 10000,
+     "high": 20000
+    },
+    {
+     "key": "fiveg",
+     "vendor": "SkyBand Networks",
+     "memos": [
+      "Modem migration — 5G swap kits",
+      "Modem migration — carrier shutdown fees"
+     ],
+     "cross_memo": "Modem migration — technician travel",
+     "plain": [
+      "the modem migration",
+      "the 5G modem swap kits",
+      "the modem migration shutdown fees"
+     ],
+     "oblique": [
+      "the older network going dark",
+      "replacing communication boards in the fleet",
+      "a carrier retiring the technology we relied on",
+      "keeping machines online after the sunset",
+      "the forced changeover of connectivity gear",
+      "what we bought so the units could still report sales",
+      "an industry-wide switch we had no say in",
+      "the upgrade imposed on every cabinet",
+      "hardware needed to avoid blackouts",
+      "technology expiring on a deadline",
+      "the cost of getting machines back on the air",
+      "the hardware refresh for wireless reporting",
+      "an unavoidable retrofit",
+      "replacing little boxes inside thousands of units",
+      "the network generation change",
+      "the push to move onto the new standard"
+     ],
+     "low": 20000,
+     "high": 40000
+    }
+   ]
+  }
+ ],
+ "author": "claude-sonnet-5-5"
+}
