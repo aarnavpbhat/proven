@@ -671,6 +671,17 @@ Reading it:
   fewer on the unseen paraphrase tier and the same on the sealed one. Section 8b's caveats all still apply: Sonnet was
   not given a wider net, one seed, a simulated reviewer.
 
+**Two voting schemes that did not move the frontier.** Both were tried on the dev worlds
+after the runs above. Eight samples from the continued 14B model alone, voted, were no better
+there than the three-model pool at any cost and were not measured. Keeping the terms at least
+two of the four proposers put forward (the three term models and stage 1, each counted once)
+looked better on dev: 83.7% decided at 18 of 120 wrong claims shown, against Sonnet's 82.8%
+at 16. Run once on the measured suites it decided 70.4% and 57.5% (unseen) and 72.5% and
+59.2% (sealed) at 49, 58, 39 and 36 wrong claims shown: on the same line as the other rows,
+4 to 11 points under Sonnet at 1.1 to 1.5 times its cost. Four dev worlds are too few to
+choose between configurations a point or two apart, and the gap to Sonnet at equal cost is
+real.
+
 ## 9. Two safety gaps the second suite exposed, and the fixes
 
 The first score on the sealed suite was Sonnet's, and it broke a kill criterion: 2 unsafe
