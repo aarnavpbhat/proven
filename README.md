@@ -322,6 +322,8 @@ and 62.2%. It is not a like-for-like win: held near Sonnet's reviewer cost the l
 4 to 8 points behind on held-out phrasing, and within 8 terms the local models decide about
 60% ([`docs/finetune.md`](docs/finetune.md), sections 8a to 8c).
 
+![Claims decided against wrong claims shown to the reviewer, local pools and Claude Sonnet](docs/frontier.svg)
+
 The audit suite was run once, with the checker frozen beforehand. Zero unsafe PASS in 429 wrong
 explanations bounds the true rate at 0.70% with 95% confidence, counting claims; counting
 worlds, the bound is 20.6%. Details and every other row are in

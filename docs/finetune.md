@@ -652,6 +652,11 @@ Wrong claims shown to the reviewer as supported:
 
 Control FAIL and unsafe PASS are 0 at every teaching step of all 24 runs.
 
+The same rows as a picture (`training/frontier_chart.py`): each tier's six local
+configurations from 8 terms to about 50, against Sonnet's single point.
+
+![Claims decided against wrong claims shown, local pools and Sonnet](frontier.svg)
+
 Reading it:
 
 - **More worlds did not move the term model much.** The same configuration with the
