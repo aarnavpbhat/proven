@@ -19,9 +19,8 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
   control FAIL or unsafe PASS. It shows a reviewer about twice as many wrong claims marked
   "supported" as Sonnet does, and Sonnet was not given the wider net (section 8b).
   Pooling a third term model (about 50 terms) gives 81.0%, 68.2%, 84.4% and 69.6% at about
-  2.3 times Sonnet's wrong claims shown; held near Sonnet's cost the local pool is 4 to 8
-  points behind on held-out phrasing, and 3 behind and level on the two paraphrase tiers
-  (section 8c).
+  2.3 times Sonnet's wrong claims shown. Cut to Sonnet's eight terms and Sonnet's cost the
+  same vote decides 69.2%, 53.9%, 71.4% and 58.6%: 4 to 12 points behind (section 8c).
 - **Two 3B models and a wide net get most of the way, and it has a cost.** A second
   adapter trained only to guess search terms, pooled over four samples with the first model's
   own terms and no cap (about 26 terms a claim where the prompt asks for 3 to 8), decides
@@ -681,6 +680,23 @@ at 16. Run once on the measured suites it decided 70.4% and 57.5% (unseen) and 7
 4 to 11 points under Sonnet at 1.1 to 1.5 times its cost. Four dev worlds are too few to
 choose between configurations a point or two apart, and the gap to Sonnet at equal cost is
 real.
+
+**Like for like: the same vote cut to eight terms.** The fairest row uses the prompt's own
+limit. The three-model vote (twelve answers and stage 1) is cut to its eight most-agreed
+terms per claim; this was chosen on dev (73.3% decided, 17 of 120 wrong claims shown) and run
+once per suite:
+
+| Suite, tier | 14B greedy, 8 terms | Three-model vote, 8 terms | Sonnet | Wrong claims shown: vote / Sonnet |
+|---|---:|---:|---:|---:|
+| Unseen, held-out | 61.9% | 69.2% | 81.7% | 41 / 40 of 330 |
+| Unseen, paraphrase | 49.2% | 53.9% | 63.3% | 47 / 39 of 330 |
+| Sealed, held-out | 59.5% | 71.4% | 80.5% | 32 / 35 of 270 |
+| Sealed, paraphrase | 49.5% | 58.6% | 62.2% | 31 / 29 of 270 |
+
+0 control FAIL and 0 unsafe PASS. At Sonnet's term count and Sonnet's cost to the reviewer,
+agreement between three local models is worth 5 to 12 points over one model's greedy answer,
+and the local proposer is 4 to 12 points behind Sonnet, winning 0, 0, 1 and 4 worlds. That
+is the like-for-like gap; everything above it in this section is bought with breadth.
 
 ## 9. Two safety gaps the second suite exposed, and the fixes
 
