@@ -12,7 +12,7 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
   leaves 54.4% of held claims decided on held-out phrasing and 40.7% on the paraphrase tier
   (61.3% on held-out when four sampled replies are pooled). Sonnet leaves 81.7% and 63.3%;
   the ceiling is 89.3% and 76.0%. The local model loses in all eleven worlds.
-- **With a much wider net, three local models pass Sonnet on three of four measured tiers.**
+- **With a much wider net, pooled local models pass Sonnet on the measured tiers: three of four with three models, all four with four.**
   A 14B adapter trained only to guess search terms, pooled with the 3B one (about 39 terms a
   claim where the prompt asks for 3 to 8), decides 77.0% and 64.1% on the unseen suite and
   82.3% and 66.2% on the sealed one, against Sonnet's 81.7%, 63.3%, 80.5% and 62.2%, with no
@@ -21,6 +21,9 @@ job Proven gives a model: propose. The code is in [`training/`](../training/READ
   Pooling a third term model (about 50 terms) gives 81.0%, 68.2%, 84.4% and 69.6% at about
   2.3 times Sonnet's wrong claims shown. Cut to Sonnet's eight terms and Sonnet's cost the
   same vote decides 69.2%, 53.9%, 71.4% and 58.6%: 4 to 12 points behind (section 8c).
+  A fourth term model from another family (Phi-4; about 60 terms) puts the wide pool ahead
+  on all four tiers, 83.8%, 70.5%, 85.9% and 71.4%, at 2.1 to 2.8 times Sonnet's wrong claims
+  shown; its eight-term vote, 71.0%, 55.3%, 71.3% and 57.1%, is still 5 to 11 points behind.
 - **Two 3B models and a wide net get most of the way, and it has a cost.** A second
   adapter trained only to guess search terms, pooled over four samples with the first model's
   own terms and no cap (about 26 terms a claim where the prompt asks for 3 to 8), decides
@@ -697,6 +700,39 @@ once per suite:
 agreement between three local models is worth 5 to 12 points over one model's greedy answer,
 and the local proposer is 4 to 12 points behind Sonnet, winning 0, 0, 1 and 4 worlds. That
 is the like-for-like gap; everything above it in this section is bought with breadth.
+
+**A fourth voter from a different model family.** The three term models above are all
+Qwen2.5. A Phi-4 adapter (`mlx-community/phi-4-4bit`, 1,200 iterations on the same 147-world
+term rows, validation loss 3.01 to 1.30) was added as a fourth, giving sixteen answers and
+stage 1. On dev the eight-term vote moved from 73.3% decided at 17 of 120 wrong claims shown
+to 76.2% at 16, and the uncapped pool from 88.6% at 27 to 89.7% at 33. Both rows were declared
+before one run per measured suite:
+
+| Suite, tier | Sonnet | Four-model vote, 8 terms | Four-model pool, about 60 terms |
+|---|---:|---:|---:|
+| Unseen, held-out | 81.7% | 71.0% | 83.8% |
+| Unseen, paraphrase | 63.3% | 55.3% | 70.5% |
+| Sealed, held-out | 80.5% | 71.3% | 85.9% |
+| Sealed, paraphrase | 62.2% | 57.1% | 71.4% |
+
+| Wrong claims shown as supported | Sonnet | Four-model vote, 8 terms | Four-model pool |
+|---|---:|---:|---:|
+| Unseen, held-out (of 330) | 40 | 40 | 102 |
+| Unseen, paraphrase (of 330) | 39 | 48 | 106 |
+| Sealed, held-out (of 270) | 35 | 37 | 75 |
+| Sealed, paraphrase (of 270) | 29 | 33 | 82 |
+
+0 control FAIL and 0 unsafe PASS in all eight runs.
+
+- **The wide pool is now ahead of Sonnet on all four tiers**, by 2.1, 7.2, 5.4 and 9.2
+  points, and wins 7 of 11, 11 of 11, 8 of 9 and 9 of 9 worlds. It sends about 60 terms a
+  claim and shows a reviewer 2.1 to 2.8 times as many wrong claims as Sonnet. Sonnet was not
+  given a wider net, so this is local breadth against Sonnet's default, not against the best
+  Sonnet could do.
+- **Like for like, the fourth voter changed little.** The eight-term vote moved by +1.8,
+  +1.4, -0.1 and -1.5 points: within what one seed can resolve. It is still 5 to 11 points
+  behind Sonnet at about Sonnet's cost and wins 0, 0, 2 and 4 worlds. A different model
+  family did not close the equal-cost gap.
 
 ## 9. Two safety gaps the second suite exposed, and the fixes
 
