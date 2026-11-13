@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 682 628" width="682" height="628" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Claims decided against wrong claims shown to the reviewer, local pools and Claude Sonnet">
+<rect width="682" height="628" fill="#fcfcfb"/>
+<text x="58" y="28" font-size="16" font-weight="600" fill="#0b0b0b">A wider net decides more claims and shows the reviewer more wrong ones</text>
+<text x="58" y="48" font-size="12" fill="#52514e">Each blue point is one local configuration, from 8 search terms a claim (left) to about 50 (right).</text>
+<text x="58" y="64" font-size="12" fill="#52514e">Up is better, left is cheaper for the reviewer. No unsafe result at any point.</text>
+<circle cx="63" cy="84" r="5" fill="#2a78d6"/><text x="74" y="88" font-size="12" fill="#0b0b0b">Fine-tuned local models (3B copy + 14B/3B term models)</text>
+<rect x="404" y="79" width="10" height="10" fill="#eb6834" transform="rotate(45 409 84)"/><text x="422" y="88" font-size="12" fill="#0b0b0b">Claude Sonnet 5.5 (up to 8 terms)</text>
+<text x="58" y="114" font-size="12" font-weight="600" fill="#0b0b0b">Unseen, held-out</text>
+<line x1="58" x2="338" y1="292.9" y2="292.9" stroke="#e4e3df"/>
+<text x="50" y="296.9" font-size="11" text-anchor="end" fill="#52514e">50%</text>
+<line x1="58" x2="338" y1="250.7" y2="250.7" stroke="#e4e3df"/>
+<text x="50" y="254.7" font-size="11" text-anchor="end" fill="#52514e">60%</text>
+<line x1="58" x2="338" y1="208.4" y2="208.4" stroke="#e4e3df"/>
+<text x="50" y="212.4" font-size="11" text-anchor="end" fill="#52514e">70%</text>
+<line x1="58" x2="338" y1="166.2" y2="166.2" stroke="#e4e3df"/>
+<text x="50" y="170.2" font-size="11" text-anchor="end" fill="#52514e">80%</text>
+<line x1="58" x2="338" y1="124.0" y2="124.0" stroke="#e4e3df"/>
+<text x="50" y="128.0" font-size="11" text-anchor="end" fill="#52514e">90%</text>
+<text x="104.7" y="330" font-size="11" text-anchor="middle" fill="#52514e">10%</text>
+<text x="198.0" y="330" font-size="11" text-anchor="middle" fill="#52514e">20%</text>
+<text x="291.3" y="330" font-size="11" text-anchor="middle" fill="#52514e">30%</text>
+<line x1="58" x2="338" y1="314" y2="314" stroke="#52514e"/>
+<path d="M104.7,242.6 L144.3,207.6 L164.1,192.0 L212.1,181.0 L234.8,170.0 L263.1,162.0" fill="none" stroke="#2a78d6" stroke-width="2"/>
+<circle cx="104.7" cy="242.6" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B greedy, 8 terms: 61.9% decided, 33 of 330 wrong claims shown</title></circle>
+<circle cx="144.3" cy="207.6" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B + 3B pools, two agree (~13 terms): 70.2% decided, 47 of 330 wrong claims shown</title></circle>
+<circle cx="164.1" cy="192.0" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>three-model pool, two agree (~17 terms): 73.9% decided, 54 of 330 wrong claims shown</title></circle>
+<circle cx="212.1" cy="181.0" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B pool (~25 terms): 76.5% decided, 71 of 330 wrong claims shown</title></circle>
+<circle cx="234.8" cy="170.0" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B + 3B pools (~40 terms): 79.1% decided, 79 of 330 wrong claims shown</title></circle>
+<circle cx="263.1" cy="162.0" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>three-model pool (~50 terms): 81.0% decided, 89 of 330 wrong claims shown</title></circle>
+<text x="113.7" y="246.6" font-size="11" fill="#52514e">8 terms: 61.9%</text>
+<text x="263.1" y="152.0" font-size="11" text-anchor="end" fill="#0b0b0b">~50 terms: 81.0%</text>
+<rect x="119.5" y="154.0" width="10" height="10" fill="#eb6834" stroke="#fcfcfb" stroke-width="2" transform="rotate(45 124.5 159.0)"><title>Claude Sonnet 5.5: 81.7% decided, 40 of 330 wrong claims shown</title></rect>
+<text x="124.5" y="148.0" font-size="11" text-anchor="middle" fill="#0b0b0b">Sonnet 81.7%</text>
+<text x="378" y="114" font-size="12" font-weight="600" fill="#0b0b0b">Unseen, paraphrase</text>
+<line x1="378" x2="658" y1="292.9" y2="292.9" stroke="#e4e3df"/>
+<line x1="378" x2="658" y1="250.7" y2="250.7" stroke="#e4e3df"/>
+<line x1="378" x2="658" y1="208.4" y2="208.4" stroke="#e4e3df"/>
+<line x1="378" x2="658" y1="166.2" y2="166.2" stroke="#e4e3df"/>
+<line x1="378" x2="658" y1="124.0" y2="124.0" stroke="#e4e3df"/>
+<text x="424.7" y="330" font-size="11" text-anchor="middle" fill="#52514e">10%</text>
+<text x="518.0" y="330" font-size="11" text-anchor="middle" fill="#52514e">20%</text>
+<text x="611.3" y="330" font-size="11" text-anchor="middle" fill="#52514e">30%</text>
+<line x1="378" x2="658" y1="314" y2="314" stroke="#52514e"/>
+<path d="M450.1,296.3 L484.1,270.1 L506.7,251.1 L540.6,243.5 L577.4,232.9 L611.3,216.0" fill="none" stroke="#2a78d6" stroke-width="2"/>
+<circle cx="450.1" cy="296.3" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B greedy, 8 terms: 49.2% decided, 42 of 330 wrong claims shown</title></circle>
+<circle cx="484.1" cy="270.1" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B + 3B pools, two agree (~13 terms): 55.4% decided, 54 of 330 wrong claims shown</title></circle>
+<circle cx="506.7" cy="251.1" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>three-model pool, two agree (~17 terms): 59.9% decided, 62 of 330 wrong claims shown</title></circle>
+<circle cx="540.6" cy="243.5" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B pool (~25 terms): 61.7% decided, 74 of 330 wrong claims shown</title></circle>
+<circle cx="577.4" cy="232.9" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B + 3B pools (~40 terms): 64.2% decided, 87 of 330 wrong claims shown</title></circle>
+<circle cx="611.3" cy="216.0" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>three-model pool (~50 terms): 68.2% decided, 99 of 330 wrong claims shown</title></circle>
+<text x="459.1" y="300.3" font-size="11" fill="#52514e">8 terms: 49.2%</text>
+<text x="611.3" y="206.0" font-size="11" text-anchor="end" fill="#0b0b0b">~50 terms: 68.2%</text>
+<rect x="436.6" y="231.7" width="10" height="10" fill="#eb6834" stroke="#fcfcfb" stroke-width="2" transform="rotate(45 441.6 236.7)"><title>Claude Sonnet 5.5: 63.3% decided, 39 of 330 wrong claims shown</title></rect>
+<text x="441.6" y="225.7" font-size="11" text-anchor="middle" fill="#0b0b0b">Sonnet 63.3%</text>
+<text x="58" y="376" font-size="12" font-weight="600" fill="#0b0b0b">Sealed, held-out</text>
+<line x1="58" x2="338" y1="554.9" y2="554.9" stroke="#e4e3df"/>
+<text x="50" y="558.9" font-size="11" text-anchor="end" fill="#52514e">50%</text>
+<line x1="58" x2="338" y1="512.7" y2="512.7" stroke="#e4e3df"/>
+<text x="50" y="516.7" font-size="11" text-anchor="end" fill="#52514e">60%</text>
+<line x1="58" x2="338" y1="470.4" y2="470.4" stroke="#e4e3df"/>
+<text x="50" y="474.4" font-size="11" text-anchor="end" fill="#52514e">70%</text>
+<line x1="58" x2="338" y1="428.2" y2="428.2" stroke="#e4e3df"/>
+<text x="50" y="432.2" font-size="11" text-anchor="end" fill="#52514e">80%</text>
+<line x1="58" x2="338" y1="386.0" y2="386.0" stroke="#e4e3df"/>
+<text x="50" y="390.0" font-size="11" text-anchor="end" fill="#52514e">90%</text>
+<text x="104.7" y="592" font-size="11" text-anchor="middle" fill="#52514e">10%</text>
+<text x="198.0" y="592" font-size="11" text-anchor="middle" fill="#52514e">20%</text>
+<text x="291.3" y="592" font-size="11" text-anchor="middle" fill="#52514e">30%</text>
+<line x1="58" x2="338" y1="576" y2="576" stroke="#52514e"/>
+<path d="M122.0,514.8 L142.7,458.6 L160.0,442.2 L187.6,440.9 L232.6,424.8 L256.8,409.6" fill="none" stroke="#2a78d6" stroke-width="2"/>
+<circle cx="122.0" cy="514.8" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B greedy, 8 terms: 59.5% decided, 32 of 270 wrong claims shown</title></circle>
+<circle cx="142.7" cy="458.6" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B + 3B pools, two agree (~13 terms): 72.8% decided, 38 of 270 wrong claims shown</title></circle>
+<circle cx="160.0" cy="442.2" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>three-model pool, two agree (~17 terms): 76.7% decided, 43 of 270 wrong claims shown</title></circle>
+<circle cx="187.6" cy="440.9" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B pool (~25 terms): 77.0% decided, 51 of 270 wrong claims shown</title></circle>
+<circle cx="232.6" cy="424.8" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B + 3B pools (~40 terms): 80.8% decided, 64 of 270 wrong claims shown</title></circle>
+<circle cx="256.8" cy="409.6" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>three-model pool (~50 terms): 84.4% decided, 71 of 270 wrong claims shown</title></circle>
+<text x="131.0" y="518.8" font-size="11" fill="#52514e">8 terms: 59.5%</text>
+<text x="256.8" y="399.6" font-size="11" text-anchor="end" fill="#0b0b0b">~50 terms: 84.4%</text>
+<rect x="127.3" y="421.1" width="10" height="10" fill="#eb6834" stroke="#fcfcfb" stroke-width="2" transform="rotate(45 132.3 426.1)"><title>Claude Sonnet 5.5: 80.5% decided, 35 of 270 wrong claims shown</title></rect>
+<text x="132.3" y="415.1" font-size="11" text-anchor="middle" fill="#0b0b0b">Sonnet 80.5%</text>
+<text x="378" y="376" font-size="12" font-weight="600" fill="#0b0b0b">Sealed, paraphrase</text>
+<line x1="378" x2="658" y1="554.9" y2="554.9" stroke="#e4e3df"/>
+<line x1="378" x2="658" y1="512.7" y2="512.7" stroke="#e4e3df"/>
+<line x1="378" x2="658" y1="470.4" y2="470.4" stroke="#e4e3df"/>
+<line x1="378" x2="658" y1="428.2" y2="428.2" stroke="#e4e3df"/>
+<line x1="378" x2="658" y1="386.0" y2="386.0" stroke="#e4e3df"/>
+<text x="424.7" y="592" font-size="11" text-anchor="middle" fill="#52514e">10%</text>
+<text x="518.0" y="592" font-size="11" text-anchor="middle" fill="#52514e">20%</text>
+<text x="611.3" y="592" font-size="11" text-anchor="middle" fill="#52514e">30%</text>
+<line x1="378" x2="658" y1="576" y2="576" stroke="#52514e"/>
+<path d="M421.2,557.0 L462.7,519.8 L486.9,502.1 L511.1,497.0 L549.1,483.5 L576.8,472.1" fill="none" stroke="#2a78d6" stroke-width="2"/>
+<circle cx="421.2" cy="557.0" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B greedy, 8 terms: 49.5% decided, 26 of 270 wrong claims shown</title></circle>
+<circle cx="462.7" cy="519.8" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B + 3B pools, two agree (~13 terms): 58.3% decided, 38 of 270 wrong claims shown</title></circle>
+<circle cx="486.9" cy="502.1" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>three-model pool, two agree (~17 terms): 62.5% decided, 45 of 270 wrong claims shown</title></circle>
+<circle cx="511.1" cy="497.0" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B pool (~25 terms): 63.7% decided, 52 of 270 wrong claims shown</title></circle>
+<circle cx="549.1" cy="483.5" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>14B + 3B pools (~40 terms): 66.9% decided, 63 of 270 wrong claims shown</title></circle>
+<circle cx="576.8" cy="472.1" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>three-model pool (~50 terms): 69.6% decided, 71 of 270 wrong claims shown</title></circle>
+<text x="430.2" y="561.0" font-size="11" fill="#52514e">8 terms: 49.5%</text>
+<text x="576.8" y="462.1" font-size="11" text-anchor="end" fill="#0b0b0b">~50 terms: 69.6%</text>
+<rect x="426.6" y="498.4" width="10" height="10" fill="#eb6834" stroke="#fcfcfb" stroke-width="2" transform="rotate(45 431.6 503.4)"><title>Claude Sonnet 5.5: 62.2% decided, 29 of 270 wrong claims shown</title></rect>
+<text x="431.6" y="492.4" font-size="11" text-anchor="middle" fill="#0b0b0b">Sonnet 62.2%</text>
+<text x="14" y="350.0" font-size="11" fill="#52514e" text-anchor="middle" transform="rotate(-90 14 350.0)">claims decided, fully taught</text>
+<text x="358.0" y="614" font-size="11" fill="#52514e" text-anchor="middle">wrong claims shown to the reviewer as supported (share of all wrong claims)</text>
+</svg>
